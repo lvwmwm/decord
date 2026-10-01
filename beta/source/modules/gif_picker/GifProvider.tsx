@@ -5,7 +5,7 @@
 // Exports: getSearchPlaceholder
 
 // Module 9828 (GifProvider)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gif_picker/GifProvider.tsx");
@@ -13,6 +13,6 @@ const result = size.fileFinishedImporting("modules/gif_picker/GifProvider.tsx");
 export const GIF_PROVIDER = "klipy";
 export const GIF_PROVIDER_EMBED_NAME = "Klipy";
 export const getSearchPlaceholder = function getSearchPlaceholder() {
-  const intl = util.intl;
-  return intl.string(util.t.T1Frnm);
+  const intl = intl2.intl;
+  return intl.string(intl2.t.T1Frnm);
 };

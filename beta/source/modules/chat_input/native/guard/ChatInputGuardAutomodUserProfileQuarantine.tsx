@@ -4,57 +4,66 @@
 // Dependencies: [19, 502, 2108, 4455, 21, 504, 4475, 11340, 1115, 11941, 11958, 2]
 
 // Module 11957 (ChatInputGuardAutomodUserProfileQuarantine)
+import Fragment from "Fragment" /* 21 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4455 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4475 */;
 import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 11340 */;
 import ChatInputGuardDefault from "ChatInputGuard" /* 11941 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const GuildMemberFlags = fn(4455).GuildMemberFlags;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardAutomodUserProfileQuarantine.tsx");
+let set;
 
-export default noop.memo(function ChatInputGuardAutomodUserProfileQuarantine(guildId) {
+const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function ChatInputGuardAutomodUserProfileQuarantine(guildId) {
+  let stringResult;
+  let stringResult1;
   guildId = guildId.guildId;
+  const tmp = guildId;
+  let obj = guildId(504);
   const items = [AuthenticationStore, GuildMemberStore];
   const items1 = [guildId];
   const items2 = [guildId];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, function() {
     if (null == guildId) {
       const _Set = Set;
-      const set = new Set();
+      const self = this;
+      const self2 = this;
+      set = new Set();
       return set;
     } else {
       const id = AuthenticationStore.getId();
-      return AutomodPermissionUtils.getAutomodQuarantinedGuildMemberFlags(GuildMemberStore.getMember(tmp, id));
+      const obj = AutomodPermissionUtils;
+      return obj.getAutomodQuarantinedGuildMemberFlags(GuildMemberStore.getMember(tmp, id));
     }
   }, items1);
-  const callback = noop.useCallback(() => {
-    const result = GuildAutomodActionActionCreators.openAutomodProfileQuarantineAlert(guildId);
+  const callback = react.useCallback(() => {
+    const obj = GuildAutomodActionActionCreators;
+    const result = obj.openAutomodProfileQuarantineAlert(guildId);
   }, items2);
-  const obj = guildId(504);
-  const automodReason = guildId(4475).getAutomodReason(stateFromStores);
+  const obj2 = guildId(4475);
+  const automodReason = obj2.getAutomodReason(stateFromStores);
+  const tmp6 = GuildMemberFlags;
   if (automodReason === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {
     const intl2 = tmp(1115).intl;
-    let stringResult = intl2.string(tmp(1115).t.Viksoo);
+    stringResult = intl2.string(tmp(1115).t.Viksoo);
   } else {
     const intl = tmp(1115).intl;
     stringResult = intl.string(tmp(1115).t["/PGQf0"]);
   }
   if (automodReason === tmp6.AUTOMOD_QUARANTINED_SERVER_TAG) {
     const intl4 = tmp(1115).intl;
-    let stringResult1 = intl4.string(tmp(1115).t.ml72ZU);
+    stringResult1 = intl4.string(tmp(1115).t.ml72ZU);
   } else {
     const intl3 = tmp(1115).intl;
     stringResult1 = intl3.string(tmp(1115).t["8HW7r9"]);
   }
-  const obj3 = { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null };
-  const obj2 = guildId(4475);
-  tmp6 = GuildMemberFlags;
-  obj3.icon = jsx(guildId(11958).ChatXIcon, {});
-  obj3.message = stringResult1;
-  return jsx(ChatInputGuardDefault, { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null });
+  ChatInputGuardDefault;
+  return <tmp9 type="simple-action" actionOnPress={callback} actionLabel={stringResult} icon={null} message={stringResult1} />;
 });
+let result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardAutomodUserProfileQuarantine.tsx");
+
+export default memoResult;

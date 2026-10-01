@@ -18,6 +18,8 @@ export const useYouBarTotalHeight = function useYouBarTotalHeight(arg0) {
   if (arg0 === undefined) {
     num = 0;
   }
-  const youBarBottomMargin = useYouBarMargins.useYouBarBottomMargin();
-  return youBarBottomMargin + YOU_BAR_HEIGHT + useConnectionBannerHeight.useConnectionBannerHeight() + num;
+  const obj = useYouBarMargins;
+  const youBarBottomMargin = obj.useYouBarBottomMargin();
+  const obj2 = useConnectionBannerHeight;
+  return youBarBottomMargin + YOU_BAR_HEIGHT + obj2.useConnectionBannerHeight() + num;
 };

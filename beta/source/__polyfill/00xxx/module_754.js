@@ -4,26 +4,28 @@
 // Exports: createClientReportEnvelope
 
 // Module 754
-import dateTimestampInSeconds from "dateTimestampInSeconds" /* 703 */;
-import forEachEnvelopeItem from "forEachEnvelopeItem" /* 729 */;
+import browserPerformanceTimeOrigin from "browserPerformanceTimeOrigin" /* 703 */;
+import _mod729 from "module_729" /* 729 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
+  let obj3;
   let result = arg2;
   const items = [{ type: "client_report" }, ];
   if (!arg2) {
-    result = dateTimestampInSeconds.dateTimestampInSeconds();
+    const obj = browserPerformanceTimeOrigin;
+    result = obj.dateTimestampInSeconds();
   }
   items[1] = { timestamp: result, discarded_events };
+  const createEnvelope = _mod729.createEnvelope;
+  _mod729;
   if (dsn) {
-    const obj3 = { dsn };
-    let obj4 = obj3;
+    obj3 = { dsn };
+    const obj2 = { dsn };
   } else {
-    obj4 = {};
+    obj3 = {};
   }
   const items1 = [items];
-  return forEachEnvelopeItem.createEnvelope(obj4, items1);
+  return createEnvelope(obj3, items1);
 };

@@ -4,28 +4,33 @@
 // Dependencies: [19, 2045, 2099, 2044, 21, 504, 4458, 1095, 16831, 16840, 2]
 
 // Module 16830 (ActivityPanelContainer)
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4458 */;
 import ActivityPanelControllerDefault from "ActivityPanelController" /* 16831 */;
-import ActivityPanelUIDefault from "ActivityPanelUI" /* 16840 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/activities/panel/native/ActivityPanelContainer.tsx");
+let channel, connectedActivityLocation;
 
-export default noop.memo(function ActivityPanelContainer() {
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function ActivityPanelContainer() {
+  let voiceChannelId;
   const items = [EmbeddedActivitiesStore, ChannelStore, SelectedChannelStore];
   let tmp2 = null;
+  const obj = get_initialized;
   if (obj.useStateFromStores(items, () => {
     connectedActivityLocation = connectedActivityLocation.getConnectedActivityLocation();
     if (null == connectedActivityLocation) {
       return false;
     } else {
-      const embeddedActivityLocationChannelId = embeddedActivityLocationUtils.getEmbeddedActivityLocationChannelId(connectedActivityLocation);
+      const obj2 = embeddedActivityLocationUtils;
+      const embeddedActivityLocationChannelId = obj2.getEmbeddedActivityLocationChannelId(connectedActivityLocation);
+      const tmp8 = require;
+      const tmp9 = dependencyMap;
       if (null == embeddedActivityLocationChannelId) {
         return false;
       } else {
@@ -48,12 +53,14 @@ export default noop.memo(function ActivityPanelContainer() {
         }
         return tmp4;
       }
-      tmp8 = require;
-      tmp9 = dependencyMap;
     }
   }, [])) {
-    let obj2 = { children: jsx(ActivityPanelUIDefault, {}) };
-    tmp2 = jsx(ActivityPanelControllerDefault, { children: jsx(ActivityPanelUIDefault, {}) });
+    let tmp4 = importDefault;
+    ActivityPanelControllerDefault;
+    tmp2 = <tmp5>{null}</tmp5>;
   }
   return tmp2;
 });
+const result = size.fileFinishedImporting("modules/activities/panel/native/ActivityPanelContainer.tsx");
+
+export default memoResult;

@@ -10,195 +10,201 @@ import GlobalUtils from "GlobalUtils" /* 1370 */;
 import StickersUtils from "StickersUtils" /* 5198 */;
 import SlowmodeUtils from "SlowmodeUtils" /* 7101 */;
 import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 11181 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import StickersStore from "StickersStore" /* 5814 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, id, nickname, user;
 
-require = fn;
-const ChannelRecord = fn(2049);
-({ ChannelRecordBase: hasOwnProperty, isGuildChannelType: metroRequire, createChannelRecord: closure_7 } = ChannelRecord);
-const Constants = fn(1074);
+let closure_12;
+let hasOwnProperty;
+let map1;
+let metroImportDefault;
+let metroRequire;
+({ ChannelRecordBase: hasOwnProperty, isGuildChannelType: metroRequire, createChannelRecord: metroImportDefault } = ChannelRecord);
 ({ MessageFlags: closure_12, Permissions: map1 } = Constants);
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
 
 export const useSelectedDestinationChannel = function useSelectedDestinationChannel(selectedDestinations) {
+  let found;
   const mapped = selectedDestinations.map(found(10444).getChannelIdFromDestinationId);
   found = mapped.find(found(1370).isNotNullish);
+  let obj = found(504);
   const items = [ChannelStore];
   const items1 = [found];
-  const stateFromStores = found(504).useStateFromStores(items, () => ChannelStore.getChannel(found), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(found), items1);
   const items2 = [stateFromStores];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     let tmp = stateFromStores;
     if (stateFromStores == null) {
       const obj = { id: "1", type: ChannelTypes.ChannelTypes.DM };
-      tmp = React5(obj);
+      tmp = metroImportDefault(obj);
     }
     return tmp;
   }, items2);
 };
 export const getDestinationIsUnavailable = function getDestinationIsUnavailable(components, channel, type, fn) {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
   _require = type;
+  const tmp2 = closure_5;
   if (null != fn) {
-    const tmp3 = fn(type);
-    if (null != tmp3) {
-      return tmp3;
+    const tmp4 = fn(type);
+    if (null != tmp4) {
+      return tmp4;
     }
   }
   if (null != components) {
-    let tmp6 = components.components.length > 0;
-    if (tmp6) {
-      tmp6 = components.components[0].type === require("Server").ComponentType.CHECKPOINT_CARD;
-    }
-    let tmp7 = components.messageSnapshots.length > 0;
+    let tmp7 = components.components.length > 0;
     if (tmp7) {
+      tmp7 = components.components[0].type === require("Server").ComponentType.CHECKPOINT_CARD;
+    }
+    let tmp8 = components.messageSnapshots.length > 0;
+    if (tmp8) {
       let message = components.messageSnapshots[0].message;
-      let tmp8 = message.components.length > 0;
-      if (tmp8) {
-        tmp8 = message.components[0].type === require("Server").ComponentType.CHECKPOINT_CARD;
-      }
-      tmp7 = tmp8;
+      tmp8 = message.components.length > 0 && message.components[0].type === require("Server").ComponentType.CHECKPOINT_CARD;
+      const tmp9 = message.components.length > 0 && message.components[0].type === require("Server").ComponentType.CHECKPOINT_CARD;
     }
     if (null != channel) {
+      let obj = require("AgeGateUtils");
       if (obj.isChannelOrGuildNSFW(channel)) {
-        if (tmp2) {
-          const tmp12Result = tmp12(5046);
+        if (type instanceof closure_5) {
+          require("AgeGateUtils");
         }
-        const obj2 = { label: null, lineClamp: 2 };
-        const intl = tmp12(1115).intl;
-        obj2.label = intl.string(tmp12(1115).t.KgPx1D);
+        const obj2 = { label: intl.string(require("intl").t.KgPx1D), lineClamp: 2 };
+        intl = tmp13(1115).intl;
         return obj2;
       }
       let flag2 = false;
-      if (type instanceof closure_5) {
+      if (type instanceof tmp2) {
         flag2 = false;
-        if (tmp12Result8.isChannelOrGuildNSFW(type)) {
+        const tmp13Result8 = require("AgeGateUtils");
+        if (tmp13Result8.isChannelOrGuildNSFW(type)) {
           const currentUser = UserStore.getCurrentUser();
           let nsfwAllowed;
           if (currentUser != null) {
             nsfwAllowed = currentUser.nsfwAllowed;
           }
-          let result = tmp12(5048).shouldShowTiggerPawtect();
+          const tmp13Result9 = require("AgeVerificationUtils");
+          let result = tmp13Result9.shouldShowTiggerPawtect();
           if (result) {
-            result = tmp12(5735).isFeatureAgeGated(tmp12(5736).AgeGatedFeature.AGE_GATED_SPACES);
-            const tmp12Result10 = tmp12(5735);
+            const tmp13Result10 = require("RegionalFeatureConfigUtils");
+            result = tmp13Result10.isFeatureAgeGated(tmp13(5736).AgeGatedFeature.AGE_GATED_SPACES);
           }
-          let tmp19 = !tmp18;
-          if (false !== nsfwAllowed) {
-            tmp19 = !result;
-          }
-          let disableAgeRestrictedDestinations = !tmp19;
-          if (!tmp19) {
-            disableAgeRestrictedDestinations = ForwardAgeRestrictedDestinationsExperimentDefault.getConfig({ location: "getDestinationIsUnavailable" }).disableAgeRestrictedDestinations;
+          let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !result);
+          if (disableAgeRestrictedDestinations) {
+            const obj7 = ForwardAgeRestrictedDestinationsExperimentDefault;
+            disableAgeRestrictedDestinations = obj7.getConfig({ location: "getDestinationIsUnavailable" }).disableAgeRestrictedDestinations;
           }
           flag2 = disableAgeRestrictedDestinations;
-          const tmp12Result9 = tmp12(5048);
         }
-        tmp12Result8 = tmp12(5046);
       }
       if (flag2) {
-        const obj3 = { label: null, lineClamp: 2 };
-        const intl7 = tmp12(1115).intl;
-        obj3.label = intl7.string(tmp12(1115).t.QHrFo6);
+        const obj3 = { label: intl7.string(require("intl").t.QHrFo6), lineClamp: 2 };
+        intl7 = tmp13(1115).intl;
         return obj3;
-      } else if (tmp2) {
+      } else if (type instanceof closure_5) {
         if (closure_6(type.type)) {
           if (components.attachments.length > 0) {
             if (!PermissionStore.can(constants2.ATTACH_FILES, type)) {
-              const obj4 = { label: null };
-              const intl2 = tmp12(1115).intl;
-              obj4.label = intl2.string(tmp12(1115).t.P7yvbm);
+              const obj4 = { label: intl2.string(require("intl").t.P7yvbm) };
+              intl2 = tmp13(1115).intl;
               return obj4;
             }
           } else {
             const messageSnapshots = components.messageSnapshots;
           }
           if (components.embeds.length > 0) {
-            if (!tmp12Result11.canEmbedLinks(type, PermissionStore)) {
-              if (!tmp12Result12.shouldStripEmbeds(components)) {
-                const obj5 = { label: null };
-                const intl3 = tmp12(1115).intl;
-                obj5.label = intl3.string(tmp12(1115).t.Wr4RIX);
+            const tmp13Result11 = require("EmbedUtils");
+            if (!tmp13Result11.canEmbedLinks(type, PermissionStore)) {
+              const tmp13Result12 = require("EmbedUtils");
+              if (!tmp13Result12.shouldStripEmbeds(components)) {
+                const obj5 = { label: intl3.string(require("intl").t.Wr4RIX) };
+                intl3 = tmp13(1115).intl;
                 return obj5;
               }
-              tmp12Result12 = tmp12(5196);
             }
-            tmp12Result11 = tmp12(5196);
           } else {
             const messageSnapshots2 = components.messageSnapshots;
           }
-          if (tmp6) {
-            if (!tmp12Result13.canEmbedLinks(type, PermissionStore)) {
-              const obj6 = { label: null };
-              const intl4 = tmp12(1115).intl;
-              obj6.label = intl4.string(tmp12(1115).t.Wr4RIX);
+          if (tmp7) {
+            const tmp13Result13 = require("EmbedUtils");
+            if (!tmp13Result13.canEmbedLinks(type, PermissionStore)) {
+              const obj6 = { label: intl4.string(require("intl").t.Wr4RIX) };
+              intl4 = tmp13(1115).intl;
               return obj6;
             }
-            tmp12Result13 = tmp12(5196);
           }
           const items = [];
           const messageSnapshots3 = components.messageSnapshots;
-          const tmp12Result14 = tmp12(5198);
-          HermesBuiltin.arraySpread(messageSnapshots3.flatMap((message) => type(dependencyMap[12]).getMessageStickers(message.message)), HermesBuiltin.arraySpread(tmp12(5198).getMessageStickers(components), 0));
+          const tmp13Result14 = require("StickersUtils");
+          const arraySpreadResult = HermesBuiltin.arraySpread(items, tmp13Result14.getMessageStickers(components), 0);
+          HermesBuiltin.arraySpread(items, messageSnapshots3.flatMap((message) => {
+            message = message.message;
+            const obj = type(dependencyMap[12]);
+            return obj.getMessageStickers(message);
+          }), arraySpreadResult);
           if (items.length > 0) {
             if (!PermissionStore.can(constants2.USE_EXTERNAL_STICKERS, type)) {
               if (items.some((id) => {
                 const stickerById = StickersStore.getStickerById(id.id);
                 let isGuildStickerResult = null != stickerById;
                 if (isGuildStickerResult) {
-                  isGuildStickerResult = StickersUtils.isGuildSticker(stickerById);
+                  const obj = StickersUtils;
+                  isGuildStickerResult = obj.isGuildSticker(stickerById);
                 }
                 if (isGuildStickerResult) {
-                  isGuildStickerResult = stickerById.guild_id !== type.guild_id || undefined;
-                  const tmp6 = stickerById.guild_id !== type.guild_id || undefined;
+                  isGuildStickerResult = stickerById.guild_id !== tmp.guild_id || undefined;
                 }
                 return isGuildStickerResult;
               })) {
-                const obj8 = { label: null };
-                const intl5 = tmp12(1115).intl;
-                obj8.label = intl5.string(tmp12(1115).t["0Yyrua"]);
+                const obj8 = { label: intl5.string(require("intl").t["0Yyrua"]) };
+                intl5 = tmp13(1115).intl;
                 return obj8;
               }
             }
           }
           if (components.hasFlag(constants.IS_VOICE_MESSAGE)) {
             if (!PermissionStore.can(constants2.SEND_VOICE_MESSAGES, type)) {
-              const obj9 = { label: null };
-              const intl6 = tmp12(1115).intl;
-              obj9.label = intl6.string(tmp12(1115).t.quj4DY);
+              const obj9 = { label: intl6.string(require("intl").t.quj4DY) };
+              intl6 = tmp13(1115).intl;
               return obj9;
             }
           } else {
             const messageSnapshots4 = components.messageSnapshots;
           }
-          const arraySpreadResult = HermesBuiltin.arraySpread(tmp12(5198).getMessageStickers(components), 0);
         }
       }
-      obj = require("AgeGateUtils");
     }
   }
 };
-export const isRatelimitedInChannel = function isRatelimitedInChannel(rateLimitPerUser, can) {
-  let tmp = null != rateLimitPerUser.rateLimitPerUser;
+export const isRatelimitedInChannel = function isRatelimitedInChannel(channel, can) {
+  let tmp = null != channel.rateLimitPerUser && channel.rateLimitPerUser > 0;
   if (tmp) {
-    tmp = rateLimitPerUser.rateLimitPerUser > 0;
-  }
-  if (tmp) {
-    tmp = !SlowmodeUtils.canBypassSlowmodeHelper(rateLimitPerUser, can);
+    const obj = SlowmodeUtils;
+    tmp = !obj.canBypassSlowmodeHelper(channel, can);
   }
   return tmp;
 };
 export const useSelectedDestinationNames = function useSelectedDestinationNames(arg0) {
+  let closure_0;
   _require = arg0;
+  let obj = require("get initialized");
   const items = [UserStore, ChannelStore, RelationshipStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStoresArray(items, () => {
+  return obj.useStateFromStoresArray(items, () => {
     const mapped = closure_0.map((id) => {
       id = id.id;
       if ("user" === id.type) {
@@ -207,8 +213,8 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
         if (null != user) {
           nickname = nickname.getNickname(user.id);
           if (nickname == null) {
-            nickname = closure_1_1(4678).getName(user);
-            const obj2 = closure_1_1(4678);
+            const obj2 = closure_1_1(closure_1_2[22]);
+            nickname = obj2.getName(user);
           }
           tmp13 = nickname;
         }
@@ -217,7 +223,7 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
         channel = channel.getChannel(id);
         let channelName = null;
         if (null != channel) {
-          const obj = closure_1_0(4989);
+          const obj = closure_1_0(closure_1_2[23]);
           channelName = obj.computeChannelName(channel, user, nickname, true);
         }
         return channelName;
@@ -228,9 +234,10 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
 };
 export const useDestinationNamesWithSlowmode = function useDestinationNamesWithSlowmode(selectedDestinations) {
   _require = selectedDestinations;
+  let obj = require("get initialized");
   const items = [ChannelStore, PermissionStore];
   const items1 = [selectedDestinations];
-  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => {
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     const mapped = selectedDestinations.map((type) => {
       channel = null;
       if ("channel" === type.type) {
@@ -241,18 +248,22 @@ export const useDestinationNamesWithSlowmode = function useDestinationNamesWithS
     const found = mapped.filter(GlobalUtils.isNotNullish);
     return found.filter((rateLimitPerUser) => {
       let tmp2 = null != rateLimitPerUser.rateLimitPerUser;
+      const tmp = closure_1_9;
       if (tmp2) {
         tmp2 = rateLimitPerUser.rateLimitPerUser > 0;
       }
       if (tmp2) {
-        tmp2 = !selectedDestinations(dependencyMap[21]).canBypassSlowmodeHelper(rateLimitPerUser, closure_1_9);
-        const obj = selectedDestinations(dependencyMap[21]);
+        const obj = selectedDestinations(closure_1_2[21]);
+        tmp2 = !obj.canBypassSlowmodeHelper(rateLimitPerUser, tmp);
       }
       return tmp2;
     });
   }, items1);
-  let obj = require("initialize");
   const items2 = [UserStore, RelationshipStore];
   const items3 = [stateFromStoresArray];
-  return require("initialize").useStateFromStoresArray(items2, () => stateFromStoresArray.map((item) => selectedDestinations(closure_1_2[23]).computeChannelName(item, closure_1_11, closure_1_10, true)), items3);
+  const obj2 = require("get initialized");
+  return obj2.useStateFromStoresArray(items2, () => stateFromStoresArray.map((item) => {
+    const obj = selectedDestinations(closure_1_2[23]);
+    return obj.computeChannelName(item, closure_1_11, closure_1_10, true);
+  }), items3);
 };

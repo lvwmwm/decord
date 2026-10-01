@@ -6,21 +6,21 @@
 // Module 17228 (ParentalConsentManager)
 import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 17229 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const prototype = function ParentalConsentManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.actions = {
-    CONNECTION_OPEN_SUPPLEMENTAL() {
-      return AppStoreAgeSignalReport.beginAppStoreAgeSignalReport();
-    }
-  };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+class ParentalConsentManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    applyArgumentsResult.actions = {
+      CONNECTION_OPEN_SUPPLEMENTAL() {
+        const obj = AppStoreAgeSignalReport;
+        return obj.beginAppStoreAgeSignalReport();
+      }
+    };
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const parentalConsentManager = new ParentalConsentManager();
 const result = size.fileFinishedImporting("modules/age_assurance/native/ParentalConsentManager.tsx");
 
-export default prototype1;
+export default parentalConsentManager;

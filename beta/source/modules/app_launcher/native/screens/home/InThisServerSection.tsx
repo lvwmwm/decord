@@ -6,56 +6,78 @@
 
 // Module 11592 (InThisServerSection)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import Text_Text from "Text/Text" /* 4832 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 8712 */;
 import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11570 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c2, dependencyMap;
+
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
 function AppInThisServer(onAppSelected) {
+  let items;
   onAppSelected = onAppSelected.onAppSelected;
-  const tmp = closure_7();
-  const application = onAppSelected.appItem.application;
-  const appLauncherIconSource = onAppSelected(11533).getAppLauncherIconSource(application);
+  const appItem = onAppSelected.appItem;
+  let tmp = closure_7();
+  const application = appItem.application;
+  let tmp2 = onAppSelected;
+  let obj = onAppSelected(11533);
+  const appLauncherIconSource = obj.getAppLauncherIconSource(application);
+  let tmp6 = null;
   const obj2 = {
     accessible: true,
     accessibilityLabel: application.name,
     accessibilityRole: "button",
     onPress() {
       let tmp2 = null != onAppSelected;
+      const tmp = onAppSelected;
       if (tmp2) {
         tmp2 = null != application;
       }
       if (tmp2) {
         const obj = { application, sectionName: AppLauncherTypes.AppLauncherSectionName.APPS_IN_THIS_SERVER };
-        onAppSelected(obj);
+        tmp(obj);
       }
     },
     style: tmp.appCardContainer,
-    children: null
+    children: items
   };
-  let tmp6 = null;
+  const PressableScale = onAppSelected(8370).PressableScale;
+  const tmp5 = closure_6;
   if (null != appLauncherIconSource) {
     const obj3 = { iconSource: appLauncherIconSource, wrapperStyle: tmp.iconContainer, iconSize: 36 };
     tmp6 = closure_5(application(11538), obj3);
   }
-  const items = [tmp6, closure_5(onAppSelected(4832).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
-  obj2.children = items;
-  return closure_6(onAppSelected(8370).PressableScale, obj2, application.id);
+  items = [tmp6, ];
+  const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
+  items[1] = closure_5(tmp2(4832).Text, obj4);
+  return tmp5(PressableScale, obj2, application.id);
 }
-get_ActivityIndicator = fn(17);
-({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { marginBottom: 16 }, headerContainer: { justifyContent: "center" }, viewAll: { position: "absolute", right: 0 }, scrollView: { marginTop: 8, overflow: "visible" }, scrollViewContentContainer: { gap: 8 }, appCardContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.lg, paddingLeft: 12, paddingRight: 12, paddingVertical: 12, flexDirection: "row", justifyContent: "center", alignItems: "center" }, iconContainer: { marginEnd: 12, justifyContent: "space-around" } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+({ View: c3, ScrollView: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { container: { marginBottom: 16 }, headerContainer: { justifyContent: "center" }, viewAll: { position: "absolute", right: 0 }, scrollView: { marginTop: 8, overflow: "visible" }, scrollViewContentContainer: { gap: 8 }, appCardContainer: obj2, iconContainer: { marginEnd: 12, justifyContent: "space-around" } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.lg, paddingLeft: 12, paddingRight: 12, paddingVertical: 12, flexDirection: "row", justifyContent: "center", alignItems: "center" };
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/InThisServerSection.tsx");
 
 export default function InThisServerSection(arg0) {
+  let Text2;
+  let intl;
+  let intl2;
+  let items;
+  let items2;
+  let items3;
+  let obj5;
+  let onAppSelected;
   ({ items, onAppSelected: require, onViewAllSelected: importDefault } = arg0);
   dependencyMap = undefined;
   let mapped1;
@@ -69,51 +91,48 @@ export default function InThisServerSection(arg0) {
         items1.push(type);
       }
       if (type.type === AppLauncherHomeTypes.AppLauncherHomeListItemType.VIEW_ALL) {
-        closure_2 = type;
+        c2 = type;
       }
     });
     const substr = items1.slice(0, 8);
-    const mapped = substr.map((appItem) => hasOwnProperty(AppInThisServer, { appItem, onAppSelected }, appItem.application.id));
+    const mapped = substr.map((appItem) => {
+      const obj = { appItem, onAppSelected: require };
+      return hasOwnProperty(AppInThisServer, obj, appItem.application.id);
+    });
     mapped1 = undefined;
     const found = mapped.filter(GlobalUtils.isNotNullish);
     if (dependencyMap != null) {
       const applications = dependencyMap.applications;
       mapped1 = applications.map((item) => item);
     }
-    const obj = { style: tmp.container, children: null };
-    const obj2 = { style: tmp.headerContainer, children: null };
-    const obj3 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", children: null };
-    const intl = tmp11(1115).intl;
-    obj3.children = intl.string(util.t.oJyzCu);
-    const items2 = [closure_5(Text_Text.Text, obj3), ];
+    let obj = { style: tmp.container, children: items3 };
+    const obj2 = { style: tmp.headerContainer, children: items2 };
+    const obj3 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.oJyzCu) };
+    const Text = tmp11(4832).Text;
+    intl = tmp11(1115).intl;
+    items2 = [closure_5(Text, obj3), ];
     let tmp5Result = null != dependencyMap;
     if (tmp5Result) {
       const obj4 = {
         style: tmp.viewAll,
         onPress() {
-              let tmp = null != mapped1;
-              if (tmp) {
-                tmp = importDefault();
-              }
+              const tmp = null != mapped1 && importDefault();
               return tmp;
             },
         accessibilityRole: "button",
-        children: null
+        children: closure_5(Text2, obj5)
       };
-      const obj5 = { variant: "text-sm/medium", color: "text-brand", children: null };
-      const intl2 = tmp11(1115).intl;
-      obj5.children = intl2.string(tmp11(1115).t["/qG8v7"]);
-      obj4.children = tmp5(tmp11(4832).Text, obj5);
-      tmp5Result = tmp5(tmp11(5435).PressableOpacity, obj4);
+      const PressableOpacity = tmp11(5435).PressableOpacity;
+      obj5 = { variant: "text-sm/medium", color: "text-brand", children: intl2.string(intl3.t["/qG8v7"]) };
+      Text2 = tmp11(4832).Text;
+      intl2 = tmp11(1115).intl;
+      tmp5Result = tmp5(PressableOpacity, obj4);
     }
     items2[1] = tmp5Result;
-    obj2.children = items2;
-    const items3 = [closure_6(items1, obj2), ];
-    const obj11 = { style: null, contentContainerStyle: null, horizontal: true, showsHorizontalScrollIndicator: false, children: null };
+    items3 = [tmp3(items1, obj2), ];
+    const obj11 = { style: null, contentContainerStyle: null, horizontal: true, showsHorizontalScrollIndicator: false, children: found };
     ({ scrollView: obj6.style, scrollViewContentContainer: obj6.contentContainerStyle } = tmp);
-    obj11.children = found;
     items3[1] = closure_5(mapped1, obj11);
-    obj.children = items3;
     return closure_6(items1, obj);
   }
 };

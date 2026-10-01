@@ -5,43 +5,49 @@
 // Exports: default
 
 // Module 10428 (ChannelVoiceChatModal)
+import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 4540 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4688 */;
-import GuildThemeGuildIdOverrideContextDefault from "GuildThemeGuildIdOverrideContext" /* 4718 */;
+import reactDefault from "react" /* 4718 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
-import ChannelVoiceChatDefault from "ChannelVoiceChat" /* 9536 */;
 import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10385 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function ThemedChannelVoiceChat(channel) {
-  const tmp = useColorThemeBackgroundDefault();
-  return jsx(native.ThemeContextProvider, { gradient: useColorThemeBackgroundDefault(), children: jsx(ChannelVoiceChatDefault, { channel: channel.channel, inModal: true }) });
+  channel = channel.channel;
+  const ThemeContextProvider = native.ThemeContextProvider;
+  return <ThemeContextProvider gradient={useColorThemeBackgroundDefault()}>{null}</ThemeContextProvider>;
 }
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelVoiceChatModal.tsx");
 
 export default function ChannelVoiceChatModal(channel) {
   channel = channel.channel;
-  const tmp2 = useChannelNameDefault(channel);
+  let tmp2 = useChannelNameDefault(channel);
   const items = [channel.id];
-  const effect = noop.useEffect(() => {
-    ChannelRTCActionCreatorsDefault.updateChatOpen(channel.id, true);
+  const effect = react.useEffect(() => {
+    let id;
+    let obj = ChannelRTCActionCreatorsDefault;
+    obj.updateChatOpen(channel.id, true);
     return () => {
-      ChannelRTCActionCreatorsDefault.updateChatOpen(id.id, false);
+      const obj = ChannelRTCActionCreatorsDefault;
+      obj.updateChatOpen(id.id, false);
     };
   }, items);
   let str = tmp2;
+  ModalStackNavigatorDefault;
   if (tmp2 == null) {
     str = "";
   }
-  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(5411).StageIcon, { size: "sm" })} render={function render() {
+  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={tmp4(channel(5411).StageIcon, { size: "sm" })} render={function render() {
     let guild_id = channel.guild_id;
+    const Provider = reactDefault.Provider;
+    const tmp2 = channel;
     if (guild_id == null) {
       guild_id = null;
     }
-    return jsx(GuildThemeGuildIdOverrideContextDefault.Provider, { value: guild_id, children: <ThemedChannelVoiceChat channel={channel} /> });
+    return <Provider value={guild_id}><ThemedChannelVoiceChat channel={tmp2} /></Provider>;
   }} />;
 };

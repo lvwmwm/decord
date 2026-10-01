@@ -4,49 +4,59 @@
 // Dependencies: [19, 17, 21, 4836, 576, 11754, 5037, 5901, 4832, 1115, 2]
 
 // Module 16963 (VoicePanelNoVideoParticipantsCard)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
 import NativeViewDefault from "NativeView" /* 5901 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const require = fn;
-const Pressable = fn(17).Pressable;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj = { container: null, label: null, button: null, buttonText: null };
-let size = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center", padding: 16, backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
-obj.container = size;
-obj.label = { marginBottom: 16, textAlign: "center" };
-obj.button = { paddingHorizontal: 20, paddingVertical: 12, backgroundColor: "white", borderRadius: nativeDefault.radii.round };
-let obj3 = { paddingHorizontal: 20, paddingVertical: 12, backgroundColor: "white", borderRadius: nativeDefault.radii.round };
-obj.buttonText = { color: nativeDefault.unsafe_rawColors.PRIMARY_860 };
-let closure_7 = createStyles.createStyles(obj);
-let obj4 = { color: nativeDefault.unsafe_rawColors.PRIMARY_860 };
-size = fn(2);
-let result = size.fileFinishedImporting("modules/voice_panel/native/card/VoicePanelNoVideoParticipantsCard.tsx");
-
-export default noop.memo(function VoicePanelNoVideoParticipantsCard() {
-  const channelId = noop.useContext(VoicePanelStateContextDefault).channelId;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let size;
+const Pressable = react_native.Pressable;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: size, label: { marginBottom: 16, textAlign: "center" }, button: obj2, buttonText: obj3 };
+size = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center", padding: 16, backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
+createStyles = createStyles.createStyles;
+obj2 = { paddingHorizontal: 20, paddingVertical: 12, backgroundColor: "white", borderRadius: nativeDefault.radii.round };
+obj3 = { color: nativeDefault.unsafe_rawColors.PRIMARY_860 };
+let closure_7 = createStyles(obj);
+const memoResult = react.memo(function VoicePanelNoVideoParticipantsCard() {
+  let Text2;
+  let intl;
+  let intl2;
+  let intl3;
+  let items1;
+  let obj4;
+  const channelId = react.useContext(VoicePanelStateContextDefault).channelId;
   const tmp = closure_7();
   const items = [channelId];
-  const callback = noop.useCallback(() => {
-    const result = ChannelRTCActionCreatorsDefault.toggleVoiceParticipantsHidden(channelId, false);
+  const callback = react.useCallback(() => {
+    const obj = ChannelRTCActionCreatorsDefault;
+    const result = obj.toggleVoiceParticipantsHidden(channelId, false);
   }, items);
-  const obj = { style: tmp.container, children: null };
-  const obj2 = { style: tmp.label, variant: "text-md/semibold", color: "text-overlay-light", children: null };
-  const intl = channelId(1115).intl;
-  obj2.children = intl.string(channelId(1115).t["8eBJ73"]);
-  const items1 = [closure_5(channelId(4832).Text, obj2), ];
-  const obj3 = { style: tmp.button, onPress: callback, accessibilityRole: "button", accessibilityLabel: null, children: null };
-  const intl2 = channelId(1115).intl;
-  obj3.accessibilityLabel = intl2.string(channelId(1115).t.kLQySL);
-  const obj4 = { variant: "text-sm/semibold", style: tmp.buttonText, children: null };
-  const intl3 = channelId(1115).intl;
-  obj4.children = intl3.string(channelId(1115).t.kLQySL);
-  obj3.children = closure_5(channelId(4832).Text, obj4);
+  let obj = { style: tmp.container, children: items1 };
+  const obj2 = { style: tmp.label, variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(channelId(1115).t["8eBJ73"]) };
+  const tmp3 = NativeViewDefault;
+  const Text = channelId(4832).Text;
+  intl = channelId(1115).intl;
+  items1 = [closure_5(Text, obj2), ];
+  const obj3 = { style: tmp.button, onPress: callback, accessibilityRole: "button", accessibilityLabel: intl2.string(channelId(1115).t.kLQySL), children: closure_5(Text2, obj4) };
+  intl2 = channelId(1115).intl;
+  obj4 = { variant: "text-sm/semibold", style: tmp.buttonText, children: intl3.string(channelId(1115).t.kLQySL) };
+  Text2 = channelId(4832).Text;
+  intl3 = channelId(1115).intl;
   items1[1] = closure_5(Pressable, obj3);
-  obj.children = items1;
-  return closure_6(NativeViewDefault, obj);
+  return closure_6(tmp3, obj);
 });
+size = size_mod;
+let result = size.fileFinishedImporting("modules/voice_panel/native/card/VoicePanelNoVideoParticipantsCard.tsx");
+
+export default memoResult;

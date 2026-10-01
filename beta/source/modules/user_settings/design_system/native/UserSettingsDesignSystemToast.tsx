@@ -5,13 +5,15 @@
 // Exports: default
 
 // Module 15386 (UserSettingsDesignSystemToast)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_2 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemToast.tsx");
 
 export default function UserSettingsDesignSystemToast() {

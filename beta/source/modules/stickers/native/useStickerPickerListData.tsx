@@ -6,33 +6,49 @@
 
 // Module 9878 (useStickerPickerListData)
 import _modDef12 from "module_12" /* 12 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1218 */;
 import StickersTypes from "StickersTypes" /* 5581 */;
-import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9757 */;
-import noop from "module_19" /* 19 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 9766 */;
+import StickerPickerStore from "StickerPickerStore" /* 9851 */;
+import react from "react" /* 19 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9736 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let useStickerPickerStore = fn(9851).useStickerPickerStore;
-const StickerPickerConstants = fn(9736);
-({ MIN_MARGIN: hasOwnProperty, ROW_HEIGHT: metroRequire, STICKER_SIZE: closure_7, LABEL_HEIGHT } = StickerPickerConstants);
+let c5, packToScrollToIndex;
+
+let LABEL_HEIGHT;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let tmp2;
+const age_gate_AgeGateUtils = tmp2(9757);
+let useStickerPickerStore = StickerPickerStore.useStickerPickerStore;
+({ MIN_MARGIN: hasOwnProperty, ROW_HEIGHT: metroRequire, STICKER_SIZE: metroImportDefault, LABEL_HEIGHT } = StickerPickerConstants);
 const StickerPickerSectionType = { STICKERS: 0, [0]: "STICKERS", NSFW: 1, [1]: "NSFW" };
-let closure_9 = LABEL_HEIGHT + 2 * fn(1218).PADDING_VERTICAL;
-let closure_10 = fn(9766).PREMIUM_UPSELL_SECTION_DIVIDER_HEIGHT + fn(9766).PREMIUM_UPSELL_SECTION_DIVIDER_MARGIN;
-const size = fn(2);
+let closure_9 = LABEL_HEIGHT + 2 * ExpressionPickerConstants.PADDING_VERTICAL;
+let closure_10 = PremiumUpsellSectionDivider.PREMIUM_UPSELL_SECTION_DIVIDER_HEIGHT + PremiumUpsellSectionDivider.PREMIUM_UPSELL_SECTION_DIVIDER_MARGIN;
 const result = size.fileFinishedImporting("modules/stickers/native/useStickerPickerListData.tsx");
 
 export default function useStickerPickerListData(containerWidth) {
+  let closure_4;
+  let rowHeight;
+  let sectionSize;
   containerWidth = containerWidth.containerWidth;
   const searchResults = containerWidth.searchResults;
   const stickerFormats = containerWidth.stickerFormats;
   useStickerPickerStore = undefined;
-  const stickerCategories = containerWidth(stickerFormats[5]).useStickerCategories(containerWidth.channel);
-  const tmp2 = useStickerPickerStore((packToScrollTo) => packToScrollTo.packToScrollTo);
-  useStickerPickerStore = tmp2;
+  const channel = containerWidth.channel;
   let obj = containerWidth(stickerFormats[5]);
-  const mobileStickerPickerUpsellRestyleEnabled = containerWidth(stickerFormats[6]).useMobileStickerPickerUpsellRestyleEnabled("native.useStickerPickerListData");
+  const stickerCategories = obj.useStickerCategories(channel);
+  let tmp2 = useStickerPickerStore((packToScrollTo) => packToScrollTo.packToScrollTo);
+  useStickerPickerStore = tmp2;
+  let obj2 = containerWidth(stickerFormats[6]);
+  const mobileStickerPickerUpsellRestyleEnabled = obj2.useMobileStickerPickerUpsellRestyleEnabled("native.useStickerPickerListData");
   let items = [containerWidth, stickerCategories, stickerFormats, searchResults, tmp2, mobileStickerPickerUpsellRestyleEnabled];
   return stickerCategories.useMemo(() => {
+    let rounded;
     function pushCategory(nitroLocked, intl) {
+      let obj;
       let str = intl;
       if (intl === undefined) {
         str = "";
@@ -42,98 +58,99 @@ export default function useStickerPickerListData(containerWidth) {
         flag = false;
       }
       if (true === arg2) {
-        const obj = { type: null, stickersByRow: null };
-        obj.type = obj.NSFW;
-        obj.stickersByRow = [];
+        obj = { type: obj.NSFW, stickersByRow: [] };
         items3.push(obj);
-        num2.push(1);
+        items.push(1);
       } else {
         const found = nitroLocked.filter((format_type) => items1.includes(format_type.format_type));
-        const chunkResult = _modDef12.chunk(found, mapped2);
+        const obj2 = _modDef12;
+        const chunkResult = obj2.chunk(found, rounded);
         const obj3 = { type: obj.STICKERS, stickersByRow: chunkResult };
         items3.push(obj3);
-        num2.push(chunkResult.length);
+        items.push(chunkResult.length);
       }
       items1.push(str);
       items2.push(flag);
     }
-    const rounded = Math.floor((mapped2 - mobileStickerPickerUpsellRestyleEnabled) / (closure_1_7 + mobileStickerPickerUpsellRestyleEnabled));
-    mapped2 = rounded;
+    rounded = Math.floor((rounded - mobileStickerPickerUpsellRestyleEnabled) / (closure_1_7 + mobileStickerPickerUpsellRestyleEnabled));
     const items = [];
-    let num2 = items;
     const items1 = [];
     const items2 = [];
     const items3 = [];
     packToScrollToIndex = undefined;
-    if (null != num2) {
+    if (null != items) {
       let str = "";
       if (!packToScrollToIndex) {
         const intl = containerWidth(stickerFormats[8]).intl;
         str = intl.string(containerWidth(stickerFormats[8]).t["zkoeq/"]);
       }
-      if (tmp2.rest.length > 0) {
-        pushCategory(tmp2.rest, str);
+      let num = 0;
+      if (items.rest.length > 0) {
+        pushCategory(items.rest, str);
       }
-      if (tmp2.nitroLocked.length > 0) {
+      if (items.nitroLocked.length > 0) {
+        const nitroLocked = tmp3.nitroLocked;
         const intl2 = containerWidth(stickerFormats[8]).intl;
-        pushCategory(tmp2.nitroLocked, intl2.string(containerWidth(stickerFormats[8]).t.pAF6xE));
+        pushCategory(nitroLocked, intl2.string(containerWidth(stickerFormats[8]).t.pAF6xE));
       }
     } else {
       const mapped = items2.map((id, index) => {
         if (closure_4 === id.id) {
-          closure_5 = index;
+          c5 = index;
         }
         let shouldNSFWGateGuildResult = id.type === StickersTypes.StickerCategoryTypes.GUILD;
         if (shouldNSFWGateGuildResult) {
-          shouldNSFWGateGuildResult = age_gate_AgeGateUtils.shouldNSFWGateGuild(id.id);
           const tmp2Result = age_gate_AgeGateUtils;
+          shouldNSFWGateGuildResult = tmp2Result.shouldNSFWGateGuild(id.id);
         }
         pushCategory(id.stickers, id.name, shouldNSFWGateGuildResult, true === id.isNitroLocked);
       });
     }
-    mapped2 = items2;
     let START = null;
     if (true === items2[0]) {
       START = containerWidth(stickerFormats[4]).PremiumUpsellSectionDividerPosition.START;
     }
     const mapped1 = items2.map((item, index) => {
-      let flag = mapped2[index + 1];
+      let flag = items2[index + 1];
       if (flag == null) {
         flag = false;
       }
-      if (item === flag) {
-        return null;
-      } else {
-        const PremiumUpsellSectionDividerPosition = containerWidth(stickerFormats[4]).PremiumUpsellSectionDividerPosition;
+      let tmp = null;
+      if (item !== flag) {
+        const PremiumUpsellSectionDividerPosition = rounded(items1[4]).PremiumUpsellSectionDividerPosition;
+        tmp = flag ? PremiumUpsellSectionDividerPosition.START : PremiumUpsellSectionDividerPosition.END;
       }
+      return tmp;
     });
-    num2 = 0;
+    let num2 = 0;
     if (null != START) {
       num2 = closure_1_10;
     }
     const items4 = [];
-    mapped2 = mapped1.map((item) => {
+    const mapped2 = mapped1.map((item) => {
       let num = 12;
       if (null != item) {
         num = closure_1_10;
       }
       return num;
     });
-    if (null == num2) {
+    if (null == items) {
       const push = items4.push;
+      let sum = num2;
       const items5 = [];
-      HermesBuiltin.arraySpread(items.map((item, index) => {
+      HermesBuiltin.arraySpread(items5, items.map((item, index) => {
         if (0 === index) {
           if (0 === item) {
             return 0;
           }
         }
-        sum = item * rowHeight + sectionSize + mapped2[index] + sum;
+        sum = item * pushCategory + sectionSize + mapped2[index] + sum;
         return sum;
       }), 0);
-      HermesBuiltin.apply(items5, items4);
+      HermesBuiltin.apply(push, items5, items4);
     }
-    return { sections: items, sectionHeights: items4, sectionSize, sectionFooterSize: 12, sectionFooterSizes: mapped2, sectionDividerPositions: mapped1, listHeaderDividerPosition: START, listHeaderSize: num2, sectionLabels: items1, sectionNitroLocked: items2, rowHeight, rowSize: rounded, rowsBySection: items3, packToScrollToIndex };
+    let obj = { sections: items, sectionHeights: items4, sectionSize, sectionFooterSize: 12, sectionFooterSizes: mapped2, sectionDividerPositions: mapped1, listHeaderDividerPosition: START, listHeaderSize: num2, sectionLabels: items1, sectionNitroLocked: items2, rowHeight, rowSize: rounded, rowsBySection: items3, packToScrollToIndex };
+    return obj;
   }, items);
 };
 export { StickerPickerSectionType };

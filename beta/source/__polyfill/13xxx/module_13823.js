@@ -4,16 +4,17 @@
 
 // Module 13823
 import _mod13792 from "module_13792" /* 13792 */;
-import element from "element" /* 13824 */;
+import _mod13824 from "module_13824" /* 13824 */;
 import getOwnPropertyDescriptor from "module_13791" /* 13791 */;
 
-let tmp2 = !getOwnPropertyDescriptor;
-if (!getOwnPropertyDescriptor) {
-  tmp2 = !_mod13792(() => 7 !== Object.defineProperty(element("div"), "a", {
+const f60352 = () => {
+  const obj = {
     get() {
       return 7;
     }
-  }).a);
-}
+  };
+  return 7 !== Object.defineProperty(_mod13824("div"), "a", obj).a;
+};
+!getOwnPropertyDescriptor && !_mod13792(f60352);
 
-export default tmp2;
+export default !getOwnPropertyDescriptor && !_mod13792(f60352);

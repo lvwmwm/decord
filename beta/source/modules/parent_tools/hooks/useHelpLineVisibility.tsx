@@ -7,69 +7,55 @@
 // Module 10937 (useHelpLineVisibility)
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8106 */;
 import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10422 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const f92294 = () => userCountry.getUserCountry();
+const f92295 = () => locale.locale;
 const set = new Set(["US"]);
 const set1 = new Set(["en-US", "es-ES"]);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useHelpLineVisibility.tsx");
 
 export const useShouldShowHelplineLink = function useShouldShowHelplineLink() {
-  const tmp = useIsInAdultAgeGroupDefault();
+  let stateFromStores;
   const items = [FamilyCenterStore];
-  stateFromStores = stateFromStores(563).useStateFromStores(items, () => userCountry.getUserCountry());
+  const tmp = useIsInAdultAgeGroupDefault();
   const obj = stateFromStores(563);
+  stateFromStores = obj.useStateFromStores(items, f92294);
   const items1 = [LocaleStore];
   const items2 = [stateFromStores];
-  const stateFromStores1 = stateFromStores(563).useStateFromStores(items1, () => locale.locale);
-  const effect = noop.useEffect(() => {
+  const obj2 = stateFromStores(563);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f92295);
+  const effect = react.useEffect(() => {
     if (null == stateFromStores) {
-      const userCountryCode = MessageRequestActionCreators.fetchUserCountryCode();
+      const obj = MessageRequestActionCreators;
+      const userCountryCode = obj.fetchUserCountryCode();
     }
   }, items2);
-  let hasItem = !tmp;
-  if (!tmp) {
-    hasItem = null != stateFromStores;
-  }
-  if (hasItem) {
-    hasItem = set.has(stateFromStores.alpha2);
-  }
-  if (hasItem) {
-    hasItem = set1.has(stateFromStores1);
-  }
+  const hasItem = !tmp && null != stateFromStores && set.has(stateFromStores.alpha2) && set1.has(stateFromStores1);
   return hasItem;
 };
 export const useShouldShowThroughlineLink = function useShouldShowThroughlineLink() {
-  const tmp = useIsInAdultAgeGroupDefault();
+  let locale;
+  let userCountry;
   let stateFromStores;
+  const tmp = useIsInAdultAgeGroupDefault();
   const tmp2 = useIsInAdultAgeGroupDefault();
-  const items = [FamilyCenterStore];
-  stateFromStores = stateFromStores(563).useStateFromStores(items, () => userCountry.getUserCountry());
   let obj = stateFromStores(563);
+  const items = [FamilyCenterStore];
+  stateFromStores = obj.useStateFromStores(items, f92294);
   const items1 = [LocaleStore];
   const items2 = [stateFromStores];
-  const stateFromStores1 = stateFromStores(563).useStateFromStores(items1, () => locale.locale);
-  const effect = noop.useEffect(() => {
+  const obj2 = stateFromStores(563);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f92295);
+  const effect = react.useEffect(() => {
     if (null == stateFromStores) {
-      const userCountryCode = MessageRequestActionCreators.fetchUserCountryCode();
+      const obj = MessageRequestActionCreators;
+      const userCountryCode = obj.fetchUserCountryCode();
     }
   }, items2);
-  let hasItem = !tmp2;
-  if (!tmp2) {
-    hasItem = null != stateFromStores;
-  }
-  if (hasItem) {
-    hasItem = set.has(stateFromStores.alpha2);
-  }
-  if (hasItem) {
-    hasItem = set1.has(stateFromStores1);
-  }
-  let tmp10 = !tmp;
-  if (!tmp) {
-    tmp10 = !hasItem;
-  }
-  return tmp10;
+  const hasItem = !tmp2 && null != stateFromStores && set.has(stateFromStores.alpha2) && set1.has(stateFromStores1);
+  return !tmp && !hasItem;
 };

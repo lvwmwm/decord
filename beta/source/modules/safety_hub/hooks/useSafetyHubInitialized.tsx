@@ -5,14 +5,15 @@
 // Exports: useSafetyHubInitialized
 
 // Module 11389 (useSafetyHubInitialized)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import SafetyHubStore from "SafetyHubStore" /* 7881 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubInitialized.tsx");
 
 export const useSafetyHubInitialized = function useSafetyHubInitialized() {
+  let initialized;
   const items = [SafetyHubStore];
-  return initialize.useStateFromStores(items, () => initialized.isInitialized());
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => initialized.isInitialized());
 };

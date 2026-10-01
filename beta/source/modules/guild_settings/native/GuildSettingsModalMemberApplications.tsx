@@ -10,38 +10,58 @@ import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16229 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5854 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let importDefault, joinRequest;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { containerInner: { paddingHorizontal: nativeDefault.space.PX_12, flex: 1, marginTop: 16 }, spinnerContainer: { padding: 32 }, footerSpinner: { paddingVertical: 16 }, spinner: null };
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1, marginTop: 16 };
-obj.spinner = { color: nativeDefault.colors.TEXT_BRAND };
-let closure_10 = createStyles.createStyles(obj);
-const memoResult = noop.memo((user) => {
+let c9;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { containerInner: obj2, spinnerContainer: { padding: 32 }, footerSpinner: { paddingVertical: 16 }, spinner: obj3 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1, marginTop: 16 };
+createStyles = createStyles.createStyles;
+obj3 = { color: nativeDefault.colors.TEXT_BRAND };
+let closure_10 = createStyles(obj);
+const memoResult = react.memo((user) => {
   user = user.user;
-  const globalName = UserUtilsDefault.getGlobalName(user);
+  const obj = UserUtilsDefault;
+  const globalName = obj.getGlobalName(user);
   let username = globalName;
+  const Text = Text_Text.Text;
+  const tmp3 = metroImportAll;
+  const tmp4 = hasOwnProperty;
   if (globalName == null) {
     username = user.username;
   }
-  const children = [React5(Text_Text.Text, { variant: "text-md/semibold", children: username }), ];
+  const children = [metroImportDefault(Text, { variant: "text-md/semibold", children: username }), ];
   let tmp5Result = null != globalName;
   if (tmp5Result) {
     const obj2 = { variant: "text-xs/medium", children: user.username };
     tmp5Result = tmp5(Text_Text.Text, obj2);
   }
   children[1] = tmp5Result;
-  return React6(hasOwnProperty, { children });
+  return tmp3(tmp4, { children });
 });
-let closure_12 = noop.memo((joinRequest) => {
+const unpackModuleId = memoResult;
+let closure_12 = react.memo((joinRequest) => {
+  let Avatar;
+  let end;
+  let obj3;
+  let obj4;
+  let start;
   joinRequest = joinRequest.joinRequest;
   [][0] = joinRequest;
   ({ start, end } = joinRequest);
@@ -54,37 +74,41 @@ let closure_12 = noop.memo((joinRequest) => {
     } else {
       let userAvatarSource = null;
       if (null != user) {
-        userAvatarSource = AvatarUtilsDefault.getUserAvatarSource(user);
+        const obj = AvatarUtilsDefault;
+        userAvatarSource = obj.getUserAvatarSource(user);
       }
-      const obj2 = { arrow: true, icon: null, label: null, onPress: null, start: null, end: null };
-      const obj3 = { source: userAvatarSource, size: joinRequest(1177).AvatarSizes.SMALL };
-      obj2.icon = closure_7(joinRequest(1177).Avatar, obj3);
-      const obj4 = { user };
-      obj2.label = closure_7(closure_11, obj4);
-      obj2.onPress = tmp;
-      obj2.start = start;
-      obj2.end = end;
-      return closure_7(joinRequest(5917).TableRow, obj2);
+      const obj2 = { arrow: true, icon: closure_7(Avatar, obj3), label: closure_7(closure_11, obj4), onPress: tmp, start, end };
+      const TableRow = joinRequest(5917).TableRow;
+      obj3 = { source: userAvatarSource, size: joinRequest(1177).AvatarSizes.SMALL };
+      Avatar = joinRequest(1177).Avatar;
+      obj4 = { user };
+      return closure_7(TableRow, obj2);
     }
   }
 });
-let obj4 = { color: nativeDefault.colors.TEXT_BRAND };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMemberApplications.tsx");
-
-export default noop.memo(function GuildSettingsModalMemberApplications(arg0) {
+const memoResult1 = react.memo(function GuildSettingsModalMemberApplications(arg0) {
+  let applicationStatus;
+  let closure_1;
+  let fetching;
+  let guildId;
+  let items4;
+  let obj6;
+  let obj9;
+  let stringResult;
+  let tmp13Result;
   ({ guildId, applicationStatus } = arg0);
   let guildJoinRequests;
   let tmp = closure_10();
   importDefault = tmp;
+  const bottom = require("useSafeAreaInsets")().bottom;
   let obj = applicationStatus(guildJoinRequests[13]);
-  const tmp2 = importDefault;
-  guildJoinRequests = obj.useSortedMemberApplications({ guildId, applicationStatus, sortOrder: applicationStatus(guildJoinRequests[14]).GuildJoinRequestSortOrders.TIMESTAMP_DESC }).guildJoinRequests;
   let obj2 = { guildId, applicationStatus, sortOrder: applicationStatus(guildJoinRequests[14]).GuildJoinRequestSortOrders.TIMESTAMP_DESC };
-  const fetchNextPage = applicationStatus(guildJoinRequests[15]).usePaginatedMemberApplications({ guildId, guildJoinRequests }).fetchNextPage;
+  guildJoinRequests = obj.useSortedMemberApplications(obj2).guildJoinRequests;
   const obj3 = applicationStatus(guildJoinRequests[15]);
+  const fetchNextPage = obj3.usePaginatedMemberApplications({ guildId, guildJoinRequests }).fetchNextPage;
   const items = [GuildJoinRequestStore];
-  const stateFromStores = applicationStatus(guildJoinRequests[16]).useStateFromStores(items, () => fetching.isFetching());
+  const obj4 = applicationStatus(guildJoinRequests[16]);
+  const stateFromStores = obj4.useStateFromStores(items, () => fetching.isFetching());
   const items1 = [applicationStatus, fetchNextPage];
   const onEndReached = fetchNextPage.useCallback(() => {
     fetchNextPage(MemberVerificationTypes.GuildJoinRequestSortOrders.TIMESTAMP_DESC, applicationStatus);
@@ -98,52 +122,63 @@ export default noop.memo(function GuildSettingsModalMemberApplications(arg0) {
   const items3 = [guildJoinRequests.length];
   const callback1 = fetchNextPage.useCallback((joinRequest) => {
     const index = joinRequest.index;
-    return React5(closure_12, { joinRequest: joinRequest.item, start: 0 === index, end: index === guildJoinRequests.length - 1 });
+    const obj = { joinRequest: joinRequest.item, start: 0 === index, end: index === guildJoinRequests.length - 1 };
+    return metroImportDefault(closure_12, obj);
   }, items3);
   const callback2 = fetchNextPage.useCallback((joinRequestId) => joinRequestId.joinRequestId, []);
+  const tmp2 = importDefault;
   if (stateFromStores) {
     if (0 === guildJoinRequests.length) {
-      const obj5 = { style: tmp.spinnerContainer, children: null };
-      const obj6 = { size: "large", color: tmp.spinner.color };
-      obj5.children = closure_7(stateFromStores, obj6);
+      const obj5 = { style: tmp.spinnerContainer, children: closure_7(stateFromStores, obj6) };
+      obj6 = { size: "large", color: tmp.spinner.color };
       return closure_7(onEndReached, obj5);
     }
   }
   if (applicationStatus(guildJoinRequests[14]).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
     const intl2 = tmp4(tmp3[17]).intl;
-    let stringResult = intl2.string(tmp4(tmp3[17]).t["/wqiSv"]);
-  } else if (tmp4(tmp3[14]).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
+    stringResult = intl2.string(tmp4(tmp3[17]).t["/wqiSv"]);
+  } else if (applicationStatus(guildJoinRequests[14]).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
     const intl = tmp4(tmp3[17]).intl;
     stringResult = intl.string(tmp4(tmp3[17]).t.bv82GS);
-  } else if (tmp4(tmp3[14]).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+  } else if (applicationStatus(guildJoinRequests[14]).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
     const intl3 = tmp4(tmp3[17]).intl;
     stringResult = intl3.string(tmp4(tmp3[17]).t["7YSJ6f"]);
   }
-  const obj7 = { style: tmp.containerInner, children: null };
+  const obj7 = { style: tmp.containerInner, children: tmp13Result };
+  const tmp11 = closure_8;
+  const tmp12 = closure_9;
+  const tmp14 = onEndReached;
   if (0 !== guildJoinRequests.length) {
-    const obj8 = { keyExtractor: callback2, data: guildJoinRequests, renderItem: callback1, contentContainerStyle: null, onEndReached: null, ListFooterComponent: null };
-    const obj9 = { paddingBottom: require("useSafeAreaInsets")().bottom + tmp2(tmp3[5]).space.PX_16 };
-    obj8.contentContainerStyle = obj9;
-    obj8.onEndReached = onEndReached;
-    obj8.ListFooterComponent = function ListFooterComponent() {
-      let tmp = null;
-      if (stateFromStores) {
-        const obj = { style: closure_1.footerSpinner, children: null };
-        const obj2 = { size: "small", color: closure_1.spinner.color };
-        obj.children = React5(React4, obj2);
-        tmp = React5(hasOwnProperty, obj);
-      }
-      return tmp;
+    const obj8 = {
+      keyExtractor: callback2,
+      data: guildJoinRequests,
+      renderItem: callback1,
+      contentContainerStyle: obj9,
+      onEndReached,
+      ListFooterComponent() {
+          let obj2;
+          let tmp = null;
+          if (stateFromStores) {
+            const obj = { style: closure_1.footerSpinner, children: metroImportDefault(React3, obj2) };
+            obj2 = { size: "small", color: closure_1.spinner.color };
+            tmp = metroImportDefault(hasOwnProperty, obj);
+          }
+          return tmp;
+        }
     };
-    let tmp13Result = tmp13(tmp4(tmp3[18]).FlashList, obj8);
+    obj9 = { paddingBottom: bottom + tmp2(guildJoinRequests[5]).space.PX_16 };
+    const FlashList = tmp4(tmp3[18]).FlashList;
+    tmp13Result = tmp13(FlashList, obj8);
   } else {
-    const obj10 = { Illustration: tmp4(tmp3[19]).NoResults, body: stringResult };
-    tmp13Result = tmp13(tmp4(tmp3[11]).EmptyState, obj10);
+    const obj10 = { Illustration: applicationStatus(guildJoinRequests[19]).NoResults, body: stringResult };
+    const EmptyState = tmp4(tmp3[11]).EmptyState;
+    tmp13Result = tmp13(EmptyState, obj10);
   }
-  const obj11 = { children: null };
-  obj7.children = tmp13Result;
-  const items4 = [closure_7(onEndReached, obj7), closure_7(applicationStatus(guildJoinRequests[20]).NavScrim, {})];
-  obj11.children = items4;
-  return closure_8(closure_9, obj11);
+  const obj11 = { children: items4 };
+  items4 = [closure_7(tmp14, obj7), closure_7(tmp4(tmp3[20]).NavScrim, {})];
+  return tmp11(tmp12, obj11);
 });
+const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMemberApplications.tsx");
+
+export default memoResult1;
 export const MemberApplicationUser = memoResult;

@@ -6,12 +6,14 @@
 
 // Module 12690 (useFriendRequestActions)
 import PeopleUtilsDefault from "PeopleUtils" /* 10330 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/people/hooks/useFriendRequestActions.tsx");
 
 export const useFriendRequestActions = function useFriendRequestActions(userId) {
+  let callback;
+  let items1;
   userId = userId.userId;
   const applicationId = userId.applicationId;
   const isGameRelationship = userId.isGameRelationship;
@@ -20,31 +22,31 @@ export const useFriendRequestActions = function useFriendRequestActions(userId) 
   const onCancel = userId.onCancel;
   const onFinally = userId.onFinally;
   const items = [applicationId, isGameRelationship, _location, userId];
-  const obj = { acceptFriendRequest: null, cancelFriendRequest: null };
-  const items1 = [applicationId, isGameRelationship, _location, onCancel, onConfirm, onFinally, userId];
-  const callback = isGameRelationship.useCallback(() => {
-    const obj2 = { userId, applicationId: null, location: null };
-    let tmp = null;
+  let obj = {
+    acceptFriendRequest: isGameRelationship.useCallback(() => {
+      let tmp2;
+      const obj = { userId, applicationId: tmp2, location: _location, onConfirm, onCancel, onFinally };
+      tmp2 = null;
+      const maybeConfirmFriendRequestAccept = PeopleUtilsDefault.maybeConfirmFriendRequestAccept;
+      PeopleUtilsDefault;
+      if (isGameRelationship) {
+        tmp2 = applicationId;
+      }
+      const result = maybeConfirmFriendRequestAccept(obj);
+    }, items1),
+    cancelFriendRequest: callback
+  };
+  items1 = [applicationId, isGameRelationship, _location, onCancel, onConfirm, onFinally, userId];
+  callback = isGameRelationship.useCallback(() => {
+    let tmp2;
+    const obj = { userId, applicationId: tmp2, location: _location };
+    tmp2 = null;
+    const cancelFriendRequest = PeopleUtilsDefault.cancelFriendRequest;
+    PeopleUtilsDefault;
     if (isGameRelationship) {
-      tmp = applicationId;
+      tmp2 = applicationId;
     }
-    obj2.applicationId = tmp;
-    obj2.location = _location;
-    PeopleUtilsDefault.cancelFriendRequest(obj2);
+    cancelFriendRequest(obj);
   }, items);
-  obj.acceptFriendRequest = isGameRelationship.useCallback(() => {
-    const obj2 = { userId, applicationId: null, location: null, onConfirm: null, onCancel: null, onFinally: null };
-    let tmp = null;
-    if (isGameRelationship) {
-      tmp = applicationId;
-    }
-    obj2.applicationId = tmp;
-    obj2.location = _location;
-    obj2.onConfirm = onConfirm;
-    obj2.onCancel = onCancel;
-    obj2.onFinally = onFinally;
-    const result = PeopleUtilsDefault.maybeConfirmFriendRequestAccept(obj2);
-  }, items1);
-  obj.cancelFriendRequest = callback;
   return obj;
 };

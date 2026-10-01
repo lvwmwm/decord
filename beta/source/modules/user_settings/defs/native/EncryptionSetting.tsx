@@ -4,36 +4,46 @@
 // Dependencies: [9164, 7417, 1074, 504, 15466, 1115, 11006, 15467, 2]
 
 // Module 15465 (EncryptionSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 15466 */;
 import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9164 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.x8U2eC);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.x8U2eC);
   },
   useDescription: function useSecureFramesEncryptionDescription() {
-    const secureFramesVerifiedUserIds = useSecureFramesVerifiedUsers.useSecureFramesVerifiedUserIds();
-    const intl = util.intl;
-    return intl.formatToPlainString(util.t["6vrePS"], { count: secureFramesVerifiedUserIds.length });
+    const obj = useSecureFramesVerifiedUsers;
+    const secureFramesVerifiedUserIds = obj.useSecureFramesVerifiedUserIds();
+    const intl = intl2.intl;
+    const obj2 = { count: secureFramesVerifiedUserIds.length };
+    return intl.formatToPlainString(intl2.t["6vrePS"], obj2);
   },
-  parent: fn(7417).MobileUserSettings.DATA_AND_PRIVACY,
+  parent: MobileUserSettings.DATA_AND_PRIVACY,
   usePredicate: function useSecureFramesPersistentCodesValue() {
+    let persistentCodesEnabled;
     const items = [SecureFramesPersistedStore];
-    return initialize.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
   },
   screen: {
-    route: fn(1074).UserSettingsSections.SECURE_FRAMES,
+    route: UserSettingsSections.SECURE_FRAMES,
     getComponent() {
       return require("SettingsSecureFramesScreen").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/EncryptionSetting.tsx");
 
 export default route;

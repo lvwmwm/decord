@@ -5,27 +5,29 @@
 // Exports: default
 
 // Module 8555 (XboxLinkError)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl3 from "intl" /* 1115 */;
 import useNavigation from "useNavigation" /* 1485 */;
-import useConnectRetry from "useConnectRetry" /* 8556 */;
-import TwoWayLinkError from "TwoWayLinkError" /* 8557 */;
-import noop from "module_19" /* 19 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 8531 */;
+import react2 from "react" /* 8556 */;
+import TwoWayLinkError2 from "TwoWayLinkError" /* 8557 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const XboxLinkModalScenes = fn(8531).XboxLinkModalScenes;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let navigation;
+
+const XboxLinkModalScenes = XboxLinkConstants.XboxLinkModalScenes;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkError.tsx");
 
 export default function XboxLinkDiscordError(onClose) {
-  const navigation = useNavigation.useNavigation();
-  const connectRetry = useConnectRetry.useConnectRetry(navigation, XboxLinkModalScenes.PRE_CONNECT);
-  const obj3 = { title: null, body: null, onClose: null, onRetry: null };
-  const intl = util.intl;
-  obj3.title = intl.string(util.t.INwPCV);
-  const intl2 = util.intl;
-  obj3.body = intl2.string(util.t.GyXRRz);
-  obj3.onClose = onClose.onClose;
-  obj3.onRetry = connectRetry;
-  return jsx(TwoWayLinkError.TwoWayLinkError, { title: null, body: null, onClose: null, onRetry: null });
+  onClose = onClose.onClose;
+  const obj = useNavigation;
+  navigation = obj.useNavigation();
+  const obj2 = react2;
+  const connectRetry = obj2.useConnectRetry(navigation, XboxLinkModalScenes.PRE_CONNECT);
+  const TwoWayLinkError = TwoWayLinkError2.TwoWayLinkError;
+  const intl = intl3.intl;
+  const intl2 = intl3.intl;
+  return <TwoWayLinkError title={intl.string(intl3.t.INwPCV)} body={intl2.string(intl3.t.GyXRRz)} onClose={onClose} onRetry={connectRetry} />;
 };

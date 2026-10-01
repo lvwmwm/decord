@@ -5,25 +5,27 @@
 // Exports: default
 
 // Module 14225 (PasskeyUpsellPromoModal)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
 import Modal from "Modal" /* 10769 */;
+import WebAuthnConstants from "WebAuthnConstants" /* 14215 */;
 import WebAuthnScreens2 from "WebAuthnScreens" /* 14218 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const WebAuthnScreens = fn(14215).WebAuthnScreens;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const WebAuthnScreens = WebAuthnConstants.WebAuthnScreens;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/webauthn/native/PasskeyUpsellPromoModal.tsx");
 
 export default function PasskeyUpsellPromoModal(arg0) {
-  const obj2 = { name: WebAuthnScreens.NAME, params: null };
-  const obj3 = {};
-  const screens = WebAuthnScreens2.getScreens({ isModal: true });
+  let intl;
+  let obj3;
+  const obj2 = { name: WebAuthnScreens.NAME, params: obj3 };
+  obj3 = { name: intl.string(intl2.t["8H5RmH"]) };
+  const obj = WebAuthnScreens2;
+  const screens = obj.getScreens({ isModal: true });
   const merged = Object.assign(arg0);
-  const intl = util.intl;
-  obj3.name = intl.string(util.t["8H5RmH"]);
-  obj2.params = obj3;
+  intl = intl2.intl;
   const initialRouteStack = [obj2];
   return jsx(Modal.Modal, { screens, initialRouteStack });
 };

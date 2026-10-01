@@ -6,17 +6,21 @@
 
 // Module 10461 (useFavoritesGuildMoveToCategoryAction)
 import FavoritesActionCreators from "FavoritesActionCreators" /* 9684 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildMoveToCategoryAction.tsx");
 
 export default function useFavoritesGuildMoveToCategoryAction(id) {
-  const isFavoritesGuildSelected = favorite(9685).useIsFavoritesGuildSelected();
+  let favorite;
+  let intl;
+  let intl2;
+  let tmp9;
   let obj = favorite(9685);
-  favorite = favorite(9685).useFavorite(id.id);
+  const isFavoritesGuildSelected = obj.useIsFavoritesGuildSelected();
   const obj2 = favorite(9685);
+  favorite = obj2.useFavorite(id.id);
+  const arr = id(10462)();
   id = undefined;
   if (favorite != null) {
     id = favorite.id;
@@ -24,34 +28,25 @@ export default function useFavoritesGuildMoveToCategoryAction(id) {
   [][0] = id;
   if (isFavoritesGuildSelected) {
     if (null != favorite) {
-      const found = arr.filter((id) => {
-        let tmp = null != id.id;
-        if (tmp) {
-          tmp = id.id !== favorite.parentId;
-        }
-        return tmp;
-      });
+      let tmp8;
+      const found = arr.filter((id) => null != id.id && id.id !== favorite.parentId);
       const mapped = found.map((id) => ({ id: id.id, label: id.name }));
       if (null != favorite.parentId) {
-        const obj3 = { label: null, destinations: null, perform: null };
-        const intl = tmp(1115).intl;
-        obj3.label = intl.string(tmp(1115).t.FAplms);
-        let tmp8 = mapped;
-        if (tmp12) {
-          const obj4 = { id: null, label: null };
-          const intl2 = tmp(1115).intl;
-          obj4.label = intl2.string(tmp(1115).t.GSfOoo);
+        const obj3 = { label: intl.string(favorite(1115).t.FAplms), destinations: tmp9, perform: tmp7 };
+        intl = tmp2(1115).intl;
+        tmp9 = mapped;
+        if (null != favorite.parentId) {
+          const obj4 = { id: null, label: intl2.string(favorite(1115).t.GSfOoo) };
+          intl2 = tmp2(1115).intl;
           const items = [obj4];
-          HermesBuiltin.arraySpread(mapped, 1);
-          tmp8 = items;
+          HermesBuiltin.arraySpread(items, mapped, 1);
+          tmp9 = items;
         }
-        obj3.destinations = tmp8;
-        obj3.perform = tmp6;
-        let tmp7 = obj3;
+        tmp8 = obj3;
       } else {
-        tmp7 = null;
+        tmp8 = null;
       }
-      return tmp7;
+      return tmp8;
     }
   }
   return null;

@@ -5,22 +5,33 @@
 // Exports: useThemeAndReducedMotionAwareAssetUrl
 
 // Module 10218 (MarketingComponentHooks)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import size from "module_2" /* 2 */;
 
+let tmp3;
 const themes = tmp3(4538);
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/promotions/MarketingComponentHooks.tsx");
 
 export const useThemeAndReducedMotionAwareAssetUrl = function useThemeAndReducedMotionAwareAssetUrl(asset, arg1) {
-  const tmp2 = useThemeDefault();
+  let useReducedMotion;
   const items = [AccessibilityStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  if (null == asset) {
-    return null;
-  } else {
+  const tmp2 = useThemeDefault();
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let tmp5 = null;
+  if (null != asset) {
     const tmp3Result = themes;
+    if (!tmp3Result.isThemeDark(tmp2)) {
+      let tmp7;
+      const tmp6 = arg1;
+      if (!tmp6) {
+        tmp7 = stateFromStores ? asset.lightStaticUrl : asset.lightUrl;
+      }
+      tmp5 = tmp7;
+    }
+    tmp7 = stateFromStores ? asset.darkStaticUrl : asset.darkUrl;
   }
+  return tmp5;
 };

@@ -5,35 +5,29 @@
 // Exports: default
 
 // Module 8897 (useStreamError)
+import AVError from "AVError" /* 8875 */;
 import AVErrorStore from "AVErrorStore" /* 8874 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_3 = { [fn(8875).AVError.STREAM_SOUNDSHARE_FAILED]: 0, [fn(8875).AVError.STREAM_SEND_HIGH_PACKET_LOSS]: 1, [fn(8875).AVError.STREAM_VIEW_HIGH_PACKET_LOSS]: 1, [fn(8875).AVError.STREAM_SEND_LOW_FPS]: 2, [fn(8875).AVError.STREAM_VIEW_LOW_FPS]: 2, [fn(8875).AVError.STREAM_BAD_NETWORK_QUALITY]: 3 };
-const size = fn(2);
+let closure_3 = { [AVError.AVError.STREAM_SOUNDSHARE_FAILED]: 0, [AVError.AVError.STREAM_SEND_HIGH_PACKET_LOSS]: 1, [AVError.AVError.STREAM_VIEW_HIGH_PACKET_LOSS]: 1, [AVError.AVError.STREAM_SEND_LOW_FPS]: 2, [AVError.AVError.STREAM_VIEW_LOW_FPS]: 2, [AVError.AVError.STREAM_BAD_NETWORK_QUALITY]: 3 };
 const result = size.fileFinishedImporting("modules/go_live/useStreamError.tsx");
 
 export default function useStreamError(id) {
   id = id.id;
   const items = [AVErrorStore];
   const items1 = [id];
-  return id(504).useStateFromStores(items, () => {
+  const obj = id(504);
+  return obj.useStateFromStores(items, () => {
     const activeErrors = AVErrorStore.getActiveErrors();
-    const found = Array.from(activeErrors.values()).filter((streamKey) => {
-      let tmp = "streamKey" in streamKey;
-      if (tmp) {
-        tmp = streamKey.streamKey === id;
-      }
-      if (tmp) {
-        tmp = null != closure_2_3[streamKey.type];
-      }
-      return tmp;
-    });
+    const arr = Array.from(activeErrors.values());
+    const found = arr.filter((streamKey) => "streamKey" in streamKey && streamKey.streamKey === id && null != closure_2_3[streamKey.type]);
     const first = found.sort((arg0, arg1) => {
-      let num = dependencyMap[arg0.type];
+      let num = closure_1_3[arg0.type];
+      const tmp = closure_1_3;
       if (num == null) {
         num = 0;
       }
-      let num2 = dependencyMap[arg1.type];
+      let num2 = tmp[arg1.type];
       if (num2 == null) {
         num2 = 0;
       }

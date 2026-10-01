@@ -5,24 +5,29 @@
 // Exports: default
 
 // Module 15945 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+import Constants from "Constants" /* 1074 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;
+import transitionToChannel from "transitionToChannel" /* 4847 */;
+import transitionToGuild from "transitionToGuild" /* 6760 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ME = fn(1074).ME;
-const size = fn(2);
+const ME = Constants.ME;
 const result = size.fileFinishedImporting("modules/guilds_bar/native/utils/transitionGuildsBarToGuildOrOpenSelectedChannel.tsx");
 
 export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
-  const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+  const obj = RootNavigationRef;
+  const rootNavigationRef = obj.getRootNavigationRef();
   let isReadyResult;
   if (rootNavigationRef != null) {
     isReadyResult = rootNavigationRef.isReady();
   }
   let tmp4;
   if (true === isReadyResult) {
-    const coerceGuildsRouteResult = tmp(4692).coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
+    const tmpResult = NavigationRouteUtils;
+    const coerceGuildsRouteResult = tmpResult.coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
     let drawerOpen;
     if (coerceGuildsRouteResult != null) {
       const params = coerceGuildsRouteResult.params;
@@ -46,13 +51,12 @@ export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
       }
       tmp4 = tmp10;
     }
-    const tmpResult = tmp(4692);
   }
   if (null != tmp4) {
-    tmp(4847).transitionToChannel(tmp4);
-    const tmpResult3 = tmp(4847);
+    const tmpResult3 = transitionToChannel;
+    tmpResult3.transitionToChannel(tmp4);
   } else {
-    tmp(6760).transitionToGuild(arg0);
-    const tmpResult4 = tmp(6760);
+    const tmpResult4 = transitionToGuild;
+    tmpResult4.transitionToGuild(arg0);
   }
 };

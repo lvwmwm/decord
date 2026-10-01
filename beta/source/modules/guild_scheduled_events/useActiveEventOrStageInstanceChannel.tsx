@@ -8,19 +8,20 @@
 import useGuildScheduledEvents from "useGuildScheduledEvents" /* 8943 */;
 import useLiveStageChannelsDefault from "useLiveStageChannels" /* 15818 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx");
 
 export const useActiveEventOrStageInstanceChannel = function useActiveEventOrStageInstanceChannel(id) {
-  let firstActiveEventChannel = useGuildScheduledEvents.useFirstActiveEventChannel(id);
+  const obj = useGuildScheduledEvents;
+  let firstActiveEventChannel = obj.useFirstActiveEventChannel(id);
   const first = useLiveStageChannelsDefault(id)[0];
+  const getChannel = ChannelStore.getChannel;
   if (first != null) {
     id = first.id;
   }
   if (firstActiveEventChannel == null) {
-    firstActiveEventChannel = ChannelStore.getChannel(id);
+    firstActiveEventChannel = getChannel(id);
   }
   return firstActiveEventChannel;
 };

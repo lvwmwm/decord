@@ -9,8 +9,6 @@ import _mod13695 from "module_13695" /* 13695 */;
 import GetOption from "GetOption" /* 13702 */;
 import LookupSupportedLocales from "LookupSupportedLocales" /* 13729 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const SupportedLocales = function SupportedLocales(arg0, arg1, arg2) {
   let str = "best fit";

@@ -6,13 +6,15 @@
 
 // Module 15636 (isJankScreenReportingEnabled)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 2071 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const libdiscoreExperiments = tmp(2071);
 const result = size.fileFinishedImporting("modules/jank_stats/native/isJankScreenReportingEnabled.tsx");
 
 export const isJankScreenReportingEnabled = function isJankScreenReportingEnabled() {
-  let isAndroidResult = PlatformUtils.isAndroid();
+  const obj = PlatformUtils;
+  let isAndroidResult = obj.isAndroid();
   if (isAndroidResult) {
     const AndroidJankPerScreenExperiment = libdiscoreExperiments.AndroidJankPerScreenExperiment;
     isAndroidResult = AndroidJankPerScreenExperiment.getCachedEnabled();

@@ -5,23 +5,31 @@
 // Exports: default
 
 // Module 15866 (FavoritesGuildCoachmarkMenuItem)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import intl4 from "intl" /* 1115 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import _modDef3361 from "module_3361" /* 3361 */;
-import LayerScope from "LayerScope" /* 6577 */;
-import noop from "module_19" /* 19 */;
+import FavoritesDismissibleContent from "FavoritesDismissibleContent" /* 9703 */;
+import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let tmp;
+const LayerScope2 = tmp(6577);
 function FavoritesGuildCoachmarkMenuItemContent(arg0) {
+  let channelType;
+  let targetRef;
   let stateFromStores;
   let markPopoverAsDismissed;
   let onDismiss;
   let callback1;
   ({ targetRef, channelType } = arg0);
-  const items = [callback1];
-  stateFromStores = stateFromStores(markPopoverAsDismissed[7]).useStateFromStores(items, () => callback1.hasStoredFavorites());
   let obj = stateFromStores(markPopoverAsDismissed[7]);
-  const favoritesMenuItemPopoverDismissibleContent = stateFromStores(markPopoverAsDismissed[5]).useFavoritesMenuItemPopoverDismissibleContent(set.has(channelType));
+  const items = [callback1];
+  stateFromStores = obj.useStateFromStores(items, () => callback1.hasStoredFavorites());
+  const obj2 = stateFromStores(markPopoverAsDismissed[5]);
+  const favoritesMenuItemPopoverDismissibleContent = obj2.useFavoritesMenuItemPopoverDismissibleContent(set.has(channelType));
   const shouldShowPopover = favoritesMenuItemPopoverDismissibleContent.shouldShowPopover;
   markPopoverAsDismissed = favoritesMenuItemPopoverDismissibleContent.markPopoverAsDismissed;
   const items1 = [markPopoverAsDismissed];
@@ -34,45 +42,45 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, onDismiss, callback1];
   const memo = onDismiss.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M10 10H6v1h4v-1Z", onButtonPress: null };
-    const intl = util.intl;
+    let TWuDTt;
+    let intl2;
+    let intl3;
+    let string;
+    let tmp6;
+    const obj = { visible: shouldShowPopover, position: "bottom", title: string(TWuDTt), description: intl2.string(tmp6(3361).Ztl9ht), onDismiss, renderImgComponent: "r", buttonLabel: intl3.string(tmp6(3361)["+h9aza"]), onButtonPress: callback1 };
+    const intl = intl4.intl;
+    string = intl.string;
     const tmp4 = _modDef3361;
     if (stateFromStores) {
-      let TWuDTt = tmp4.TWuDTt;
-      let tmp6 = tmp3;
+      TWuDTt = tmp4.TWuDTt;
+      tmp6 = tmp3;
     } else {
       TWuDTt = tmp4["25YCHl"];
       tmp6 = tmp3;
     }
-    obj.title = intl.string(TWuDTt);
-    const intl2 = tmp(1115).intl;
-    obj.description = intl2.string(tmp6(3361).Ztl9ht);
-    obj.onDismiss = onDismiss;
-    const intl3 = tmp(1115).intl;
-    obj.buttonLabel = intl3.string(tmp6(3361)["+h9aza"]);
-    obj.onButtonPress = callback1;
+    intl2 = tmp(1115).intl;
+    intl3 = tmp(1115).intl;
     return obj;
   }, items3);
-  const obj2 = stateFromStores(markPopoverAsDismissed[5]);
-  const coachmark = stateFromStores(markPopoverAsDismissed[10]).useCoachmark(targetRef, memo);
+  const obj3 = stateFromStores(markPopoverAsDismissed[10]);
+  const coachmark = obj3.useCoachmark(targetRef, memo);
   return null;
 }
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsx = fn(21).jsx;
+const ChannelTypes = Constants.ChannelTypes;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
 let items = [, , ];
-({ GUILD_TEXT: arr[0], GUILD_ANNOUNCEMENT: arr[1], GUILD_FORUM: arr[2] } = fn(1074).ChannelTypes);
+({ GUILD_TEXT: arr[0], GUILD_ANNOUNCEMENT: arr[1], GUILD_FORUM: arr[2] } = ChannelTypes);
 const set = new Set(items);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkMenuItem.tsx");
 
 export default function FavoritesGuildCoachmarkMenuItem(arg0) {
   let tmp3 = null;
+  const obj = FavoritesDismissibleContent;
   if (obj.useShouldRenderFavoritesMenuItemPopover()) {
-    const obj2 = { zIndex: 1, children: null };
-    const obj3 = {};
+    const LayerScope = LayerScope2.LayerScope;
     const merged = Object.assign(arg0);
-    obj2.children = <FavoritesGuildCoachmarkMenuItemContent />;
-    tmp3 = jsx(LayerScope.LayerScope, { zIndex: 1, children: null });
+    tmp3 = <LayerScope zIndex={1}>{null}</LayerScope>;
   }
   return tmp3;
 };

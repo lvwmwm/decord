@@ -12,10 +12,13 @@ const result = size.fileFinishedImporting("modules/channel/native/openChannelLon
 
 export const openChannelLongPressActionSheet = function openChannelLongPressActionSheet(id) {
   const combined = "ChannelLongPress-" + id;
-  ActionSheetActionCreatorsDefault.openLazy(combined(1981)(10375, dependencyMap.paths), combined, {
+  let obj = ActionSheetActionCreatorsDefault;
+  const obj2 = {
     channelId: id,
     onClose() {
-      ActionSheetActionCreatorsDefault.hideActionSheet(combined);
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet(combined);
     }
-  });
+  };
+  obj.openLazy(combined(1981)(10375, dependencyMap.paths), combined, obj2);
 };

@@ -8,30 +8,28 @@ import _mod12319 from "module_12319" /* 12319 */;
 import _mod12357 from "module_12357" /* 12357 */;
 import _mod12360 from "module_12360" /* 12360 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const createCheckInEnvelope = function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
-  const obj = { sent_at: new Date().toISOString() };
-  if (sdk) {
-    sdk = sdk.sdk;
-  }
-  if (sdk) {
+  let date;
+  const obj = { sent_at: date.toISOString() };
+  date = new Date();
+  const tmp = sdk && sdk.sdk;
+  if (tmp) {
     const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
     obj.sdk = obj2;
   }
-  let tmp = arg3;
-  if (arg3) {
-    tmp = arg4;
+  const tmp2 = arg3 && arg4;
+  if (tmp2) {
+    const obj4 = _mod12360;
+    obj.dsn = obj4.dsnToString(arg4);
   }
-  if (tmp) {
-    obj.dsn = _mod12360.dsnToString(arg4);
-  }
-  if (arg1) {
-    obj.trace = _mod12319.dropUndefinedKeys(arg1);
+  const tmp5 = arg1;
+  if (tmp5) {
+    const obj5 = _mod12319;
+    obj.trace = obj5.dropUndefinedKeys(arg1);
   }
   const items = [{ type: "check_in" }, arg0];
-  const date = new Date();
   const items1 = [items];
-  return _mod12357.createEnvelope(obj, items1);
+  const obj6 = _mod12357;
+  return obj6.createEnvelope(obj, items1);
 };

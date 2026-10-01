@@ -6,14 +6,14 @@
 
 // Module 8882 (useVideoSpinnerTimer)
 import VideoSpinnerTimer from "VideoSpinnerTimer" /* 8883 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/useVideoSpinnerTimer.tsx");
 
 export default function useVideoSpinnerTimer(userId) {
+  let videoSpinnerContext;
   ({ location: require, videoSpinnerContext } = userId);
   userId = userId.userId;
   const streamId = userId.streamId;
@@ -23,16 +23,18 @@ export default function useVideoSpinnerTimer(userId) {
     flag = false;
   }
   const first = userId(streamId.useState(() => {
-    const videoSpinnerTimer = new VideoSpinnerTimer.VideoSpinnerTimer(closure_1_0);
+    const videoSpinnerTimer = new VideoSpinnerTimer.VideoSpinnerTimer(require);
     return videoSpinnerTimer;
   }), 1)[0];
   const items = [loading, flag, streamId, first, videoSpinnerContext, userId];
   const effect = streamId.useEffect(() => {
-    if (!flag) {
-      if (loading) {
+    const tmp = flag;
+    if (!tmp) {
+      const tmp2 = loading;
+      if (tmp2) {
         first.onSpinnerStarted();
       } else if (null != streamId) {
-        first.trackSpinnerDuration(videoSpinnerContext, userId, tmp2);
+        first.trackSpinnerDuration(videoSpinnerContext, userId, tmp3);
       }
     }
   }, items);

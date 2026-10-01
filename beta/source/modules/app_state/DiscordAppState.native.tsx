@@ -4,14 +4,11 @@
 // Dependencies: [1980, 504, 2]
 
 // Module 10704 (DiscordAppState)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/app_state/DiscordAppState.native.tsx");
-
-export default {
+let obj = {
   canUIRequestGatewaySocket() {
     return "active" === AppStateStore.getState();
   },
@@ -19,7 +16,12 @@ export default {
     return AppStateStore.getState();
   },
   useCanUIRequestGatewaySocket() {
+    let state;
     const items = [AppStateStore];
-    return initialize.useStateFromStores(items, () => "active" === state.getState());
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => "active" === state.getState());
   }
 };
+const result = size.fileFinishedImporting("modules/app_state/DiscordAppState.native.tsx");
+
+export default obj;

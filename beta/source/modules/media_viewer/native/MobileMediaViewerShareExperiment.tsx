@@ -8,17 +8,19 @@
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-06-mobile-media-viewer-share", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+let obj = { name: "2026-06-mobile-media-viewer-share", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_viewer/native/MobileMediaViewerShareExperiment.tsx");
 
 export const MobileMediaViewerShareExperiment = apexExperiment;
 export const getMobileMediaViewerShareExperimentEnabled = function getMobileMediaViewerShareExperimentEnabled(shareMediaSource) {
-  return apexExperiment.getConfig({ location: shareMediaSource }).enabled;
+  const obj = { location: shareMediaSource };
+  return apexExperiment.getConfig(obj).enabled;
 };
 export const useMobileMediaViewerShareExperimentEnabled = function useMobileMediaViewerShareExperimentEnabled(mediaViewerCopyLink) {
-  return apexExperiment.useConfig({ location: mediaViewerCopyLink }).enabled;
+  const obj = { location: mediaViewerCopyLink };
+  return apexExperiment.useConfig(obj).enabled;
 };

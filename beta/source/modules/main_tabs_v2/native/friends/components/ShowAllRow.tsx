@@ -5,40 +5,59 @@
 // Exports: default
 
 // Module 16587 (ShowAllRow)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import TableRow from "TableRow" /* 5917 */;
-import AvatarDuoPile from "AvatarDuoPile" /* 13996 */;
-import noop from "module_19" /* 19 */;
+import TableRow2 from "TableRow" /* 5917 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 13996 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { labelContainer: { flexDirection: "row", alignItems: "center" }, showAllText: { marginLeft: nativeDefault.space.PX_12 } };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
+let getAvatarSource;
+
+let c3;
+let closure_4;
+let obj2;
+const View = react_native.View;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let obj = { labelContainer: { flexDirection: "row", alignItems: "center" }, showAllText: obj2 };
+obj2 = { marginLeft: nativeDefault.space.PX_12 };
+let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ShowAllRow.tsx");
 
 export default function ShowAllRow(users) {
+  let count;
+  let intl;
+  let items;
+  let obj2;
+  let onPress;
+  let substr;
   users = users.users;
   ({ onPress, count } = users);
   const tmp = closure_5();
-  const obj = { onPress, end: true, height: "100%", label: null, trailing: null };
-  const obj2 = { style: tmp.labelContainer, children: null };
-  const obj3 = { size: native.AvatarSizes.XSMALL_20, "aria-label": "", children: null };
-  const substr = users.slice(0, 2);
-  obj3.children = substr.map((getAvatarSource, index) => closure_1_3(native.Avatar, { source: getAvatarSource.getAvatarSource(null, false, native.AVATAR_SIZE_MAP[native.AvatarSizes.XSMALL]), size: native.AvatarSizes.XSMALL_20 }, index));
-  const items = [React3(AvatarDuoPile.AvatarDuoPile, obj3), ];
-  const obj4 = { style: tmp.showAllText, variant: "text-md/semibold", color: "text-brand", children: null };
-  const intl = util.intl;
-  obj4.children = intl.format(util.t.NrzztX, { count });
-  items[1] = React3(Text_Text.Text, obj4);
-  obj2.children = items;
-  obj.label = React4(View, obj2);
-  obj.trailing = React3(TableRow.TableRow.Arrow, {});
-  return React3(TableRow.TableRow, obj);
+  let obj = { onPress, end: true, height: "100%", label: React3(View, obj2), trailing: _false(TableRow2.TableRow.Arrow, {}) };
+  obj2 = { style: tmp.labelContainer, children: items };
+  const TableRow = TableRow2.TableRow;
+  const obj3 = {
+    size: native.AvatarSizes.XSMALL_20,
+    "aria-label": "",
+    children: substr.map((getAvatarSource, index) => {
+      const obj = { source: getAvatarSource(null, false, native.AVATAR_SIZE_MAP[native.AvatarSizes.XSMALL]), size: native.AvatarSizes.XSMALL_20 };
+      const Avatar = native.Avatar;
+      getAvatarSource = getAvatarSource.getAvatarSource;
+      return closure_1_3(Avatar, obj, index);
+    })
+  };
+  const AvatarDuoPile = AvatarDuoPile2.AvatarDuoPile;
+  substr = users.slice(0, 2);
+  items = [_false(AvatarDuoPile, obj3), ];
+  const obj4 = { style: tmp.showAllText, variant: "text-md/semibold", color: "text-brand", children: intl.format(intl2.t.NrzztX, { count }) };
+  const Text = Text_Text.Text;
+  intl = intl2.intl;
+  items[1] = _false(Text, obj4);
+  return _false(TableRow, obj);
 };

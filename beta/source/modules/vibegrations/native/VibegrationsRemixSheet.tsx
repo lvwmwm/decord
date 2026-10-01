@@ -5,47 +5,76 @@
 // Exports: default
 
 // Module 16253 (VibegrationsRemixSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6616 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SortedGuildStore from "SortedGuildStore" /* 5750 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const VibegrationsRemixSheet = "VibegrationsRemixSheet";
-const createStyles = fn(4836);
-let obj2 = { content: { gap: nativeDefault.space.PX_16 } };
-let closure_12 = createStyles.createStyles(obj2);
-const size = fn(2);
+let c3;
+
+let c10;
+let c9;
+let obj2;
+let _asyncToGenerator = _asyncToGenerator_mod;
+let react = react_mod;
+const View = react_native.View;
+({ jsx: c9, jsxs: c10 } = Fragment);
+const VibegrationsRemixSheet_str = "VibegrationsRemixSheet";
+let obj = { content: obj2 };
+obj2 = { gap: nativeDefault.space.PX_16 };
+let closure_12 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsRemixSheet.tsx");
 
 export default function VibegrationsRemixSheet(project) {
+  let BottomSheetTitleHeader;
+  let _undefined;
+  let c6;
+  let closure_3;
+  let closure_5;
+  let intl2;
+  let intl3;
+  let items3;
+  let obj4;
+  let obj5;
+  let obj9;
+  let title;
+  let tmp15;
+  let tmp17;
+  let tmp7;
   project = project.project;
   const onRemixed = project.onRemixed;
   let first1;
-  noop = undefined;
+  react = undefined;
   c6 = undefined;
   let stateFromStoresArray;
-  c8 = undefined;
-  closure_9 = undefined;
-  const tmp2 = first1(noop.useState(project.currentGuildId), 2);
-  const first = tmp2[0];
-  asyncGeneratorStep = tmp2[1];
-  let tmp4 = first1(noop.useState(false), 2);
+  let c8;
+  let closure_9;
+  const currentGuildId = project.currentGuildId;
+  let obj = react;
+  let tmp = closure_12();
+  let tmp2 = first1(react.useState(currentGuildId), 2);
+  let first = tmp2[0];
+  _asyncToGenerator = tmp2[1];
+  let tmp4 = first1(react.useState(false), 2);
   first1 = tmp4[0];
-  noop = tmp4[1];
-  const tmp = closure_12();
-  [tmp7, c6] = first1(noop.useState(null), 2);
-  let tmp6 = first1(noop.useState(null), 2);
+  react = tmp4[1];
+  let tmp6 = first1(react.useState(null), 2);
+  [tmp7, c6] = tmp6;
+  let tmp8 = project;
+  let tmp9 = first;
+  let obj2 = project(first[9]);
   let items = [c8, stateFromStoresArray];
-  stateFromStoresArray = project(first[9]).useStateFromStoresArray(items, () => {
+  stateFromStoresArray = obj2.useStateFromStoresArray(items, () => {
     const items = [];
     const flattenedGuildIds = title.getFlattenedGuildIds();
+    const tmp2 = flattenedGuildIds[Symbol.iterator]();
     while (tmp2 !== undefined) {
       let guild = stateFromStoresArray.getGuild(tmp3);
       let tmp6 = guild;
@@ -70,14 +99,17 @@ export default function VibegrationsRemixSheet(project) {
     str = "";
   }
   const intl = tmp8(tmp9[11]).intl;
-  const stringResult = intl.string(onRemixed(first[12]).HQLYXD);
+  let tmp11 = onRemixed;
+  const stringResult = intl.string(onRemixed(tmp9[12]).HQLYXD);
   c8 = stringResult;
   const items1 = [stringResult, stateFromStoresArray];
   const callback = obj.useCallback(() => {
+    let obj3;
+    const obj = Sheet_showSimpleActionSheet;
     const obj2 = {
       key: "VibegrationsRemixDestination",
       stackingBehavior: "stack",
-      header: { title },
+      header: obj3,
       hasIcons: false,
       options: stateFromStoresArray.map((label) => ({
         label: label.name,
@@ -86,14 +118,18 @@ export default function VibegrationsRemixSheet(project) {
         }
       }))
     };
-    const result = Sheet_showSimpleActionSheet.showSimpleActionSheet(obj2);
+    obj3 = { title };
+    const result = obj.showSimpleActionSheet(obj2);
   }, items1);
   const items2 = [first, onRemixed, project, first1];
-  closure_9 = obj.useCallback(asyncGeneratorStep(async (arg0, value) => {
+  closure_9 = obj.useCallback(_asyncToGenerator(async (arg0, value) => {
+    let c2;
+    let closure_0;
+    let closure_1;
     if (c3 === 2) {
       c3 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -104,8 +140,9 @@ export default function VibegrationsRemixSheet(project) {
       }
     } else {
       try {
+        let tmp;
         c3 = 2;
-        if (0 === dependencyMap) {
+        if (0 === first) {
           if (arg0 === 1) {
             c3 = 3;
             throw value;
@@ -114,15 +151,15 @@ export default function VibegrationsRemixSheet(project) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_128_0 = undefined;
-            if (first1) {
-              c3 = 3;
-            } else {
+            tmp = undefined;
+            const tmp35 = first1;
+            if (!tmp35) {
               closure_5(true);
               _undefined(null);
-              dependencyMap = 1;
+              const obj4 = tmp(first[14]);
+              first = 1;
               c3 = 1;
-              const obj5 = { value: tmp2(16254).remixVibegrationsProjectInto(project, first), done: false };
+              const obj5 = { value: obj4.remixVibegrationsProjectInto(project, first), done: false };
               return obj5;
             }
           }
@@ -134,60 +171,61 @@ export default function VibegrationsRemixSheet(project) {
           const obj6 = { value, done: true };
           return obj6;
         } else {
-          closure_128_0 = value;
-          if (!closure_128_0.ok) {
-            closure_129_6(closure_128_0.message);
+          tmp = value;
+          if (tmp.ok) {
+            const obj = tmp4(first[15]);
+            obj.hideActionSheet(VibegrationsRemixSheet_str);
+            closure_129_1(tmp.projectId, closure_129_2);
+            c3 = 3;
+            const obj7 = { value: undefined, done: true };
+            return obj7;
+          } else {
+            closure_129_6(tmp.message);
             closure_129_5(false);
           }
         }
-        tmp5(4800).hideActionSheet(VibegrationsRemixSheet);
-        closure_129_1(closure_128_0.projectId, closure_129_2);
         c3 = 3;
-        const obj7 = { value: undefined, done: true };
-        return obj7;
-      } catch (tmp28) {
-        c3 = tmp;
-        throw tmp28;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp27) {
+        c3 = 3;
+        throw tmp27;
       }
     }
   }), items2);
-  let obj3 = { header: null, children: null };
-  const obj4 = { title: null };
-  const intl2 = tmp8(tmp9[11]).intl;
-  obj4.title = intl2.string(onRemixed(first[12])["V+azw/"]);
-  obj3.header = closure_9(project(first[17]).BottomSheetTitleHeader, obj4);
-  let obj5 = { style: tmp.content, children: null };
-  let obj6 = { label: stringResult, trailing: closure_9(project(first[20]).Text, { variant: "text-md/normal", color: "text-muted", children: str }), arrow: true, disabled: null, onPress: null };
-  let tmp17 = first1;
-  if (!first1) {
-    tmp17 = stateFromStoresArray.length < 2;
-  }
-  let obj2 = project(first[9]);
-  let tmp11 = onRemixed;
-  const tmp15 = closure_10;
-  obj6.disabled = tmp17;
-  obj6.onPress = callback;
-  const items3 = [closure_9(project(first[18]).TableRowGroup, { hasIcons: false, children: closure_9(project(first[19]).TableRow, obj6) }), , ];
+  let obj3 = { header: closure_9(BottomSheetTitleHeader, obj4), children: tmp15(tmp16, obj5) };
+  const ActionSheet = tmp8(tmp9[16]).ActionSheet;
+  obj4 = { title: intl2.string(onRemixed(tmp9[12])["V+azw/"]) };
+  BottomSheetTitleHeader = tmp8(tmp9[17]).BottomSheetTitleHeader;
+  intl2 = tmp8(tmp9[11]).intl;
+  obj5 = { style: tmp.content, children: items3 };
+  const TableRowGroup = tmp8(tmp9[18]).TableRowGroup;
+  let obj6 = { label: stringResult, trailing: closure_9(tmp8(tmp9[20]).Text, { variant: "text-md/normal", color: "text-muted", children: str }), arrow: true, disabled: tmp17, onPress: callback };
+  const TableRow = tmp8(tmp9[19]).TableRow;
+  tmp17 = first1 || stateFromStoresArray.length < 2;
+  let obj7 = { hasIcons: false, children: tmp14(TableRow, obj6) };
+  items3 = [tmp14(TableRowGroup, obj7), , ];
   let tmp14Result = null;
+  tmp15 = closure_10;
   if (null != tmp7) {
-    const obj8 = { accessibilityRole: "alert", children: null };
-    const obj9 = { variant: "text-xs/normal", color: "text-feedback-critical", children: tmp7 };
-    obj8.children = tmp14(tmp8(tmp9[20]).Text, obj9);
+    const obj8 = { accessibilityRole: "alert", children: closure_9(tmp8(tmp9[20]).Text, obj9) };
+    obj9 = { variant: "text-xs/normal", color: "text-feedback-critical", children: tmp7 };
     tmp14Result = tmp14(tmp16, obj8);
   }
   items3[1] = tmp14Result;
-  const obj10 = { variant: "primary", text: null, loading: null, onPress: null };
-  const intl3 = tmp8(tmp9[11]).intl;
-  obj10.text = intl3.string(tmp11(first[12]).vPI794);
-  obj10.loading = first1;
-  obj10.onPress = function onPress() {
-    closure_9().catch(() => {
+  const obj10 = {
+    variant: "primary",
+    text: intl3.string(tmp11(tmp9[12]).vPI794),
+    loading: first1,
+    onPress() {
+      const promise = closure_9();
+      promise.catch(() => {
 
-    });
+      });
+    }
   };
-  items3[2] = closure_9(project(first[21]).Button, obj10);
-  obj5.children = items3;
-  obj3.children = tmp15(c6, obj5);
-  return closure_9(project(first[16]).ActionSheet, obj3);
+  const Button = tmp8(tmp9[21]).Button;
+  intl3 = tmp8(tmp9[11]).intl;
+  items3[2] = closure_9(Button, obj10);
+  return closure_9(ActionSheet, obj3);
 };
 export const VIBEGRATIONS_REMIX_SHEET_KEY = "VibegrationsRemixSheet";

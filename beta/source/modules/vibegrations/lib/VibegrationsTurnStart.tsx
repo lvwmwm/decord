@@ -22,8 +22,10 @@ export const vibegrationsTurnStartedAt = function vibegrationsTurnStartedAt(stat
     turn_id = turn_id1;
   }
   if (null != turn_id) {
+    const obj = /^\d+$/;
     if (obj.test(turn_id)) {
-      const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(turn_id);
+      const obj2 = SnowflakeUtilsDefault;
+      const extractTimestampResult = obj2.extractTimestamp(turn_id);
       const _Number = Number;
       if (Number.isFinite(extractTimestampResult)) {
         if (extractTimestampResult > 0) {
@@ -31,7 +33,6 @@ export const vibegrationsTurnStartedAt = function vibegrationsTurnStartedAt(stat
         }
       }
     }
-    obj = /^\d+$/;
   }
   return stateFromStores1.created_at;
 };

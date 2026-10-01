@@ -5,65 +5,93 @@
 // Exports: default
 
 // Module 16758 (DisplayNameStylesFlywheelMobileActionSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import openUserSettings from "openUserSettings" /* 6800 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
-({ UserSettingsSections: metroRequire, Fonts: closure_7 } = Constants);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+let BottomSheet, dependencyMap;
+
+let c10;
+let c9;
+let metroImportDefault;
+let metroRequire;
+const View = react_native.View;
+({ UserSettingsSections: metroRequire, Fonts: metroImportDefault } = Constants);
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles(() => {
-  const obj = { content: { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 }, imageContainer: null, image: null, title: null, subtitle: null, actions: null };
-  const size = { width: "100%", height: 162, alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_24 };
-  obj.imageContainer = size;
-  obj.image = { width: "100%", height: "100%" };
-  const obj2 = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 };
-  obj.title = { textAlign: "center", fontFamily: constants.GINTO_NORD_EXTRA_BOLD, textTransform: "uppercase", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 };
-  const obj3 = { textAlign: "center", fontFamily: constants.GINTO_NORD_EXTRA_BOLD, textTransform: "uppercase", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 };
-  obj.subtitle = { textAlign: "center", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 };
-  const obj4 = { textAlign: "center", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 };
-  obj.actions = { gap: nativeDefault.space.PX_12, width: "100%" };
+  const obj = { content: { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 }, imageContainer: size, image: { width: "100%", height: "100%" }, title: { textAlign: "center", fontFamily: metroImportDefault.GINTO_NORD_EXTRA_BOLD, textTransform: "uppercase", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 }, subtitle: { textAlign: "center", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 }, actions: { gap: nativeDefault.space.PX_12, width: "100%" } };
+  ({ alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 });
+  size = { width: "100%", height: 162, alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_24 };
+  ({ textAlign: "center", fontFamily: metroImportDefault.GINTO_NORD_EXTRA_BOLD, textTransform: "uppercase", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 });
+  ({ textAlign: "center", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 });
+  ({ gap: nativeDefault.space.PX_12, width: "100%" });
   return obj;
 });
-let size = fn(2);
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesFlywheelMobileActionSheet.tsx");
 
 export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismissed) {
+  let SafeAreaPaddingView;
+  let c2;
+  let currentUser;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let obj11;
+  let obj15;
+  let str2;
+  let stringResult;
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const ref = noop.useRef(null);
-  const enabled = noop.useContext(markAsDismissed(4550).AccessibilityPreferencesContext).reducedMotion.enabled;
-  const isThemeDarkResult = markAsDismissed(4685).isThemeDark(ref(4767)());
+  let obj = react;
+  const ref = react.useRef(null);
+  let tmp2 = markAsDismissed;
+  const enabled = react.useContext(markAsDismissed(4550).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let obj2 = markAsDismissed(4685);
+  const isThemeDarkResult = obj2.isThemeDark(ref(4767)());
   const tmp6 = closure_11();
-  const obj2 = markAsDismissed(4685);
-  const typeConsolidationTextTransform = markAsDismissed(6400).useTypeConsolidationTextTransform("DisplayNameStylesFlywheel");
   const obj3 = markAsDismissed(6400);
+  const typeConsolidationTextTransform = obj3.useTypeConsolidationTextTransform("DisplayNameStylesFlywheel");
   const items = [UserStore];
-  const stateFromStores = markAsDismissed(504).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj4 = markAsDismissed(504);
-  let result = ref(4488).canUsePremiumProfileCustomization(stateFromStores);
+  const stateFromStores = obj4.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj5 = ref(4488);
+  let result = obj5.canUsePremiumProfileCustomization(stateFromStores);
   dependencyMap = result;
   const intl = markAsDismissed(1115).intl;
   const string = intl.string;
   const tmp10 = ref(2877);
   if (result) {
-    let stringResult = string(tmp10.TyUdka);
+    stringResult = string(tmp10.TyUdka);
   } else {
     stringResult = string(tmp10.dluV0R);
   }
   const items1 = [result, markAsDismissed];
   const items2 = [markAsDismissed];
   const callback = obj.useCallback(() => {
-    openUserSettings.openUserSettings({ screen: c2 ? timestampProducer.PROFILE_CUSTOMIZATION : timestampProducer.PROFILE_CUSTOMIZATION_TRY_IT_OUT }, () => {
-      markAsDismissed(6459).runAfterInteractions(() => {
-        markAsDismissed(6800).openUserSettings({ screen: constants.DISPLAY_NAME_STYLES }, () => {
+    const tmp2 = c2 ? metroRequire.PROFILE_CUSTOMIZATION : metroRequire.PROFILE_CUSTOMIZATION_TRY_IT_OUT;
+    let obj = openUserSettings;
+    obj.openUserSettings({ screen: tmp2 }, () => {
+      let obj = markAsDismissed(c2[15]);
+      obj.runAfterInteractions(() => {
+        let obj = markAsDismissed(closure_2_2[14]);
+        let obj2 = { screen: constants.DISPLAY_NAME_STYLES };
+        obj.openUserSettings(obj2, () => {
           closure_1_0(constants.TAKE_ACTION);
-          const result = closure_2_0(4654).UNSAFE_markDismissibleContentAsDismissed(closure_2_0(2029).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK, { dismissAction: constants.INDIRECT_ACTION });
+          const obj = closure_2_0(closure_2_2[16]);
+          const obj2 = { dismissAction: constants.INDIRECT_ACTION };
+          const result = obj.UNSAFE_markDismissibleContentAsDismissed(closure_2_0(closure_2_2[17]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK, obj2);
         });
       });
     });
@@ -75,83 +103,68 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   const callback2 = obj.useCallback(() => {
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items3);
-  const obj6 = { ref, onDismiss: callback2, startExpanded: true, handleDisabled: true, children: null };
-  const obj7 = { style: tmp6.content, children: null };
-  const items4 = [
-    closure_9(markAsDismissed(6575).ActionSheetHeaderBar, {
-      onPress() {
-        const current = ref.current;
-        if (current != null) {
-          current.closeActionSheet();
-        }
-        markAsDismissed(ContentDismissActionType.USER_DISMISS);
+  const obj6 = { ref, onDismiss: callback2, startExpanded: true, handleDisabled: true, children: closure_9(SafeAreaPaddingView, obj15) };
+  BottomSheet = tmp2(6571).BottomSheet;
+  const obj7 = { style: tmp6.content, children: items4 };
+  SafeAreaPaddingView = tmp2(6544).SafeAreaPaddingView;
+  items4 = [, , , , ];
+  const obj8 = {
+    onPress() {
+      const current = ref.current;
+      if (current != null) {
+        current.closeActionSheet();
       }
-    }),
-  ,
-  ,
-  ,
-
-  ];
-  const obj9 = { style: tmp6.imageContainer, children: null };
-  let tmp15Result = enabled;
-  if (enabled) {
-    tmp15Result = tmp15(tmp2(16759).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
-  }
-  const items5 = [tmp15Result, ];
-  if (enabled) {
-    items5[1] = !enabled;
-    obj9.children = items5;
-    items4[1] = tmp16(tmp17, obj9);
-    const obj10 = { variant: "display-md", style: null, color: null, children: null };
-    const items6 = [tmp6.title, typeConsolidationTextTransform];
-    obj10.style = items6;
-    let str = "text-overlay-dark";
-    let str2 = "text-overlay-dark";
-    if (isThemeDarkResult) {
-      str2 = "text-overlay-light";
+      markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
-    obj10.color = str2;
-    const intl2 = tmp2(1115).intl;
-    obj10.children = intl2.string(tmp4(2877).Uzms61);
-    items4[2] = tmp15(tmp2(4832).Text, obj10);
-    const obj11 = { variant: "text-lg/medium", style: tmp6.subtitle, color: null, children: null };
-    if (isThemeDarkResult) {
-      str = "text-overlay-light";
-    }
-    const obj12 = { bottom: true, children: null };
-    obj11.color = str;
-    obj11.children = stringResult;
-    items4[3] = tmp15(tmp2(4832).Text, obj11);
-    const obj13 = { style: tmp6.actions, children: null };
-    const obj14 = { text: null, variant: "primary", size: "lg", onPress: null };
-    const intl3 = tmp2(1115).intl;
-    obj14.text = intl3.string(tmp2(1115).t["4P5I8V"]);
-    obj14.onPress = callback;
-    const items7 = [tmp15(tmp2(5281).Button, obj14), ];
-    const obj15 = { text: null, variant: "secondary", size: "lg", onPress: null };
-    const intl4 = tmp2(1115).intl;
-    obj15.text = intl4.string(tmp2(1115).t.TulDPl);
-    obj15.onPress = callback1;
-    items7[1] = tmp15(tmp2(5281).Button, obj15);
-    obj13.children = items7;
-    items4[4] = tmp16(tmp17, obj13);
-    obj7.children = items4;
-    obj12.children = tmp16(tmp17, obj7);
-    obj6.children = tmp15(tmp2(6544).SafeAreaPaddingView, obj12);
-    return tmp15(tmp2(6571).BottomSheet, obj6);
-  } else {
+  };
+  items4[0] = closure_9(tmp2(6575).ActionSheetHeaderBar, obj8);
+  const obj9 = { style: tmp6.imageContainer, children: items5 };
+  items5 = [enabled && closure_9(tmp2(16759).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
+  let tmp19 = !enabled;
+  enabled && closure_9(tmp2(16759).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+  if (tmp19) {
+    let tmp15Result;
+    const tmp2Result = tmp2(1364);
     if (tmp2Result.isIOS()) {
-      const obj16 = { source: null, style: null, resizeMode: "contain", enableAnimation: null };
-      const obj17 = { uri: tmp4(16761) };
-      obj16.source = obj17;
-      obj16.style = tmp6.image;
-      obj16.enableAnimation = !enabled;
-      let tmp15Result2 = tmp15(tmp4(5899), obj16);
-      const tmp4Result = tmp4(5899);
+      const obj10 = { source: obj11, style: tmp6.image, resizeMode: "contain", enableAnimation: !enabled };
+      obj11 = { uri: ref(16761) };
+      const tmp4Result = ref(5899);
+      tmp15Result = tmp15(tmp4Result, obj10);
     } else {
-      const obj18 = { url: tmp4(16761), style: tmp6.image, autoplay: true };
-      tmp15Result2 = tmp15(tmp2(8271).APNGPlayer, obj18);
+      const obj12 = { url: ref(16761), style: tmp6.image, autoplay: true };
+      const APNGPlayer = tmp2(8271).APNGPlayer;
+      tmp15Result = tmp15(APNGPlayer, obj12);
     }
-    tmp2Result = tmp2(1364);
+    tmp19 = tmp15Result;
   }
+  items5[1] = tmp19;
+  items4[1] = closure_10(View, obj9);
+  const obj13 = { variant: "display-md", style: items6, color: str2, children: intl2.string(ref(2877).Uzms61) };
+  items6 = [tmp6.title, typeConsolidationTextTransform];
+  let str = "text-overlay-dark";
+  str2 = "text-overlay-dark";
+  const Text = tmp2(4832).Text;
+  if (isThemeDarkResult) {
+    str2 = "text-overlay-light";
+  }
+  intl2 = tmp2(1115).intl;
+  items4[2] = closure_9(Text, obj13);
+  const obj14 = { variant: "text-lg/medium", style: tmp6.subtitle, color: str, children: stringResult };
+  const Text2 = tmp2(4832).Text;
+  if (isThemeDarkResult) {
+    str = "text-overlay-light";
+  }
+  obj15 = { bottom: true, children: closure_10(View, obj7) };
+  items4[3] = closure_9(Text2, obj14);
+  const obj16 = { style: tmp6.actions, children: items7 };
+  const obj17 = { text: intl3.string(tmp2(1115).t["4P5I8V"]), variant: "primary", size: "lg", onPress: callback };
+  const Button = tmp2(5281).Button;
+  intl3 = tmp2(1115).intl;
+  items7 = [closure_9(Button, obj17), ];
+  const obj18 = { text: intl4.string(tmp2(1115).t.TulDPl), variant: "secondary", size: "lg", onPress: callback1 };
+  const Button2 = tmp2(5281).Button;
+  intl4 = tmp2(1115).intl;
+  items7[1] = closure_9(Button2, obj18);
+  items4[4] = closure_10(View, obj16);
+  return closure_9(BottomSheet, obj6);
 };

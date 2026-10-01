@@ -5,38 +5,43 @@
 // Exports: default
 
 // Module 16161 (AppFreezer)
-import Suspender from "Suspender" /* 5234 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 5234 */;
 import NativeViewDefault from "NativeView" /* 5901 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AppFreezeStore from "AppFreezeStore" /* 7738 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 const NativeView = jsx(NativeViewDefault, { style: { flex: 1 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/panels/morphable/native/AppFreezer.tsx");
 
-export default function AppFreezer(children) {
-  let flag = children.manualFreeze;
+export default function AppFreezer(manualFreeze) {
+  let flag = manualFreeze.manualFreeze;
+  const children = manualFreeze.children;
   if (flag === undefined) {
     flag = false;
   }
-  let placeholder = children.placeholder;
+  let placeholder = manualFreeze.placeholder;
   if (placeholder === undefined) {
     placeholder = NativeView;
   }
-  let lockKeys = children.lockKeys;
+  let lockKeys = manualFreeze.lockKeys;
   let freeze = AppFreezeStore((lockKeys) => {
+    let someResult;
     lockKeys = lockKeys.lockKeys;
+    const obj = lockKeys;
     if (null != lockKeys) {
-      let someResult = lockKeys.some((item) => lockKeys.has(item));
+      someResult = obj.some((item) => lockKeys.has(item));
     } else {
       someResult = lockKeys.size > 0;
     }
     return someResult;
   });
+  const Freeze = react2.Freeze;
+  const tmp2 = jsx;
   if (!freeze) {
     freeze = flag;
   }
-  return jsx(Suspender.Freeze, { freeze, placeholder, children: children.children });
+  return tmp2(Freeze, { freeze, placeholder, children });
 };

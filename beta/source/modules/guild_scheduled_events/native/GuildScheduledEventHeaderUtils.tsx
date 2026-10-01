@@ -7,30 +7,47 @@
 // Module 9073 (GuildScheduledEventHeaderUtils)
 import nativeDefault from "native" /* 576 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
-import _modDef9074 from "module_9074" /* 9074 */;
+import ScheduleUtils from "ScheduleUtils" /* 8946 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9074 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9075 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
 ({ isGuildEventEnded: c3, isGuildScheduledEventActive: closure_4 } = GuildScheduledEventStore);
 const constants = GuildScheduledEventsConstants.GuildScheduledEventEntityTypes;
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/GuildScheduledEventHeaderUtils.tsx");
 
 export const getGuildScheduledEventHeaderProps = function getGuildScheduledEventHeaderProps(eventTimeData) {
+  let ICON_FEEDBACK_CRITICAL;
+  let currentOrPastEvent;
+  let diffMinutes;
+  let event;
+  let internal;
+  let isCanceled;
+  let isStage;
+  let recurrenceId;
+  let startDateTimeString;
+  let stringResult1;
+  let theme;
+  let tmp17;
+  let tmp4;
+  let tmp8Result3;
+  let upcomingEvent;
   ({ startDateTimeString, diffMinutes, currentOrPastEvent, upcomingEvent } = eventTimeData.eventTimeData);
   ({ event, recurrenceId } = eventTimeData);
   ({ isStage, theme, isCanceled } = eventTimeData);
+  const obj = ScheduleUtils;
   if (null != recurrenceId) {
-    let tmp5 = obj.getNextRecurrenceIdInEvent(event) === recurrenceId;
-    if (tmp5) {
-      tmp5 = React4(event);
-    }
-    let tmp4 = tmp5;
+    tmp4 = obj.getNextRecurrenceIdInEvent(event) === recurrenceId && React3(event);
+    const tmp5 = obj.getNextRecurrenceIdInEvent(event) === recurrenceId && React3(event);
   } else {
-    tmp4 = React4(event);
+    tmp4 = React3(event);
   }
-  const tmp7 = React3(event);
+  const tmp7 = _false(event);
   const ICON_SUBTLE = nativeDefault.colors.ICON_SUBTLE;
-  let tmp8Result = _modDef9074;
+  let tmp8Result = AssetRegistryDefault;
   if (tmp4) {
     const intl4 = tmp(1115).intl;
     let stringResult = intl4.string(tmp(1115).t["X2K3/4"]);
@@ -45,9 +62,9 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
       const intl5 = tmp(1115).intl;
       stringResult = intl5.string(tmp(1115).t.TxqPQR);
     }
-    let ICON_FEEDBACK_CRITICAL = tmp8(576).colors.ICON_FEEDBACK_POSITIVE;
-    let stringResult1 = stringResult;
-    let tmp8Result3 = tmp8Result;
+    ICON_FEEDBACK_CRITICAL = tmp8(576).colors.ICON_FEEDBACK_POSITIVE;
+    stringResult1 = stringResult;
+    tmp8Result3 = tmp8Result;
   } else if (tmp7) {
     tmp8Result3 = tmp8(9075);
     stringResult1 = startDateTimeString;
@@ -62,28 +79,28 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     stringResult1 = startDateTimeString;
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
     if (upcomingEvent) {
+      let formatToPlainStringResult;
+      const tmp8Result4 = AssetRegistryDefault2;
       if (diffMinutes > 0) {
         const intl2 = tmp(1115).intl;
         const obj2 = { minutes: diffMinutes };
-        let formatToPlainStringResult = intl2.formatToPlainString(tmp(1115).t.PQlCWk, obj2);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp(1115).t.PQlCWk, obj2);
       } else {
         const intl = tmp(1115).intl;
         formatToPlainStringResult = intl.string(tmp(1115).t.WINqKV);
       }
       stringResult1 = formatToPlainStringResult;
-      tmp8Result3 = tmp8(9075);
+      tmp8Result3 = tmp8Result4;
       ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
-      const tmp8Result4 = tmp8(9075);
     }
   }
   if (isCanceled) {
     ICON_FEEDBACK_CRITICAL = tmp8(576).colors.ICON_FEEDBACK_CRITICAL;
   }
-  const obj3 = { icon: tmp8Result3, text: stringResult1, color: null, shouldChangeTextColor: null };
-  const internal = tmp8(576).internal;
-  obj3.color = internal.resolveSemanticColor(theme, ICON_FEEDBACK_CRITICAL);
-  let tmp17 = !tmp7;
-  if (!tmp7) {
+  const obj3 = { icon: tmp8Result3, text: stringResult1, color: internal.resolveSemanticColor(theme, ICON_FEEDBACK_CRITICAL), shouldChangeTextColor: tmp17 };
+  internal = tmp8(576).internal;
+  tmp17 = !tmp7;
+  if (tmp17) {
     if (!tmp4) {
       tmp4 = currentOrPastEvent;
     }
@@ -92,6 +109,5 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     }
     tmp17 = tmp4;
   }
-  obj3.shouldChangeTextColor = tmp17;
   return obj3;
 };

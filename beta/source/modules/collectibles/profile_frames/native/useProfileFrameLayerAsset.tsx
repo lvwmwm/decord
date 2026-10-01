@@ -5,132 +5,174 @@
 // Exports: default, isProfileFrameLayerShown, usePreloadLayerImages
 
 // Module 7668 (useProfileFrameLayerAsset)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 6629 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import size_mod from "module_2" /* 2 */;
 
-const require = fn;
-function measureProfileFrameLayer(arg0) {
+let c4, c5;
+
+let metroImportDefault;
+let metroRequire;
+const f84876 = (arg0) => {
   closure_0 = arg0;
-  value = map.get(arg0);
+  size = size.getSize(closure_0, (arg0, arg1) => {
+    if (arg0 > 0) {
+      const result = closure_3_9.set(closure_0, arg1 / arg0);
+      set2.delete(closure_0);
+      closure_0(arg1 / arg0);
+    } else {
+      set2.add(closure_0);
+      closure_0(null);
+    }
+  }, () => {
+    set2.add(closure_0);
+    closure_0(null);
+  });
+};
+function measureProfileFrameLayer(arg0) {
+  let closure_0 = arg0;
+  const value = map.get(arg0);
   if (null != value) {
     return Promise.resolve(value);
   } else {
-    value2 = map1.get(arg0);
+    let value2 = map1.get(arg0);
+    obj = map1;
     if (null == value2) {
-      const promise = new Promise((arg0) => {
-        closure_0 = arg0;
-        size = size.getSize(closure_0, (arg0, arg1) => {
-          if (arg0 > 0) {
-            const result = map.set(closure_0, arg1 / arg0);
-            set2.delete(closure_0);
-            closure_0(arg1 / arg0);
-          } else {
-            set2.add(closure_0);
-            closure_0(null);
-          }
-        }, () => {
-          set2.add(closure_0);
-          closure_0(null);
-        });
-      });
+      const self = this;
+      const self2 = this;
+      const promise = new Promise(f84876);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
-      const result = map1.set(arg0, cleanupPromise);
+      const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
     }
     return value2;
   }
 }
 function getProfileFrameLayerAssetUrl(arg0, arg1, arg2) {
-  const rounded = Math.round(arg2 * React5.get());
+  const rounded = Math.round(arg2 * metroImportDefault.get());
   return "" + arg0 + "?width=" + rounded + "&height=" + Math.round(rounded * arg1);
 }
-let closure_15 = async function _preloadLayer(arg0, value) {
-  closure_2 = tmp2;
-  closure_130_0 = closure_0;
-  closure_130_1 = closure_1;
-  await measureProfileFrameLayer(closure_0);
-  if (1 === tmp5) {
-    if (arg0 === 1) {
+let obj = function _preloadLayer() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj2;
+    let closure_0 = arg0;
+    let closure_1 = value;
+    if (c5 === 2) {
       c5 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c5 = 3;
-      return { value, done: true };
-    } else {
-      closure_130_2 = value;
-      if (null != closure_130_2) {
-        closure_130_3 = closure_131_14(closure_130_0, closure_130_2, closure_130_1);
-        c4 = 2;
-        c5 = 1;
-        return { value: closure_131_1(closure_131_2[6]).preload(closure_130_3, 30000), done: false };
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        let closure_2;
+        let closure_3;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            closure_2 = undefined;
+            closure_3 = undefined;
+            c4 = 1;
+            c5 = 1;
+            const obj5 = { value: measureProfileFrameLayer(closure_0), done: false };
+            return obj5;
+          }
+        } else {
+          if (1 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              closure_2 = value;
+              if (null != closure_2) {
+                closure_3 = closure_131_14(closure_0, closure_2, closure_1);
+                c4 = 2;
+                c5 = 1;
+                const obj7 = { value: obj2.preload(closure_3, 30000), done: false };
+                obj2 = closure_131_1(closure_131_2[6]);
+                return obj7;
+              }
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            closure_131_11.add(closure_3);
+          }
+          c5 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp22) {
         c5 = 3;
+        throw tmp22;
       }
     }
-  } else if (arg0 === 1) {
-    c5 = 3;
-    throw value;
-  } else if (arg0 !== 2) {
-    closure_131_11.add(closure_130_3);
-  }
-  return value;
+  });
+  return obj(...arguments);
 };
-get_ActivityIndicator = fn(17);
-({ Image: metroRequire, PixelRatio: closure_7 } = get_ActivityIndicator);
-const UserProfileThemeTypes = fn(6629).UserProfileThemeTypes;
+({ Image: metroRequire, PixelRatio: metroImportDefault } = react_native);
+const UserProfileThemeTypes = Constants.UserProfileThemeTypes;
 const map = new Map();
 const map1 = new Map();
 const set = new Set();
 const set1 = new Set();
-let size = fn(2);
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/useProfileFrameLayerAsset.tsx");
 
 export default function useProfileFrameLayerAsset(width) {
+  let layer;
+  let skuId;
   width = width.width;
   let collectiblesItemAssetUrl;
   ({ skuId, layer } = width);
-  let obj = collectiblesItemAssetUrl(1968);
-  collectiblesItemAssetUrl = obj.getCollectiblesItemAssetUrl({ skuId, assetFormat: collectiblesItemAssetUrl(1968).CollectiblesItemAssetFormat.STATIC, assetId: layer.id });
-  closure_1 = _slicedToArray(noop.useReducer((arg0) => arg0 + 1, 0), 2)[1];
+  obj = collectiblesItemAssetUrl(1968);
+  const obj2 = { skuId, assetFormat: collectiblesItemAssetUrl(1968).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
+  collectiblesItemAssetUrl = obj.getCollectiblesItemAssetUrl(obj2);
+  let closure_1 = _slicedToArray(react.useReducer((arg0) => arg0 + 1, 0), 2)[1];
   const items = [collectiblesItemAssetUrl];
-  const effect = noop.useEffect(() => {
-    let hasItem = null == collectiblesItemAssetUrl;
+  const effect = react.useEffect(function() {
+    const hasItem = null == collectiblesItemAssetUrl || "" === tmp || map.has(tmp);
     if (!hasItem) {
-      hasItem = "" === tmp;
-    }
-    if (!hasItem) {
-      hasItem = map.has(tmp);
-    }
-    if (!hasItem) {
-      closure_0 = tmp;
-      value = map.get(tmp);
+      let resolved;
+      let closure_0 = tmp;
+      const value = map.get(tmp);
       if (null != value) {
-        let resolved = Promise.resolve(value);
+        resolved = Promise.resolve(value);
       } else {
         resolved = map1.get(tmp);
+        obj = map1;
         if (null == resolved) {
-          const promise = new Promise((arg0) => {
-            closure_0 = arg0;
-            size = size.getSize(closure_0, (arg0, arg1) => {
-              if (arg0 > 0) {
-                const result = map.set(closure_0, arg1 / arg0);
-                set2.delete(closure_0);
-                closure_0(arg1 / arg0);
-              } else {
-                set2.add(closure_0);
-                closure_0(null);
-              }
-            }, () => {
-              set2.add(closure_0);
-              closure_0(null);
-            });
-          });
+          const self = this;
+          const self2 = this;
+          const promise = new Promise(f84876);
           const cleanupPromise = promise.finally(() => set.delete(closure_0));
           let result = obj.set(tmp, cleanupPromise);
           resolved = cleanupPromise;
         }
-        obj = map1;
       }
       resolved.then((result) => {
         if (null != result) {
@@ -139,7 +181,7 @@ export default function useProfileFrameLayerAsset(width) {
       });
     }
   }, items);
-  value = undefined;
+  let value;
   if (null != collectiblesItemAssetUrl) {
     value = map.get(collectiblesItemAssetUrl);
   }
@@ -151,6 +193,7 @@ export default function useProfileFrameLayerAsset(width) {
   if (null != collectiblesItemAssetUrl) {
     assetUrl = null;
     if (null != value) {
+      const tmp6 = globalThis;
       const _Math = Math;
       const rounded = Math.round(width * closure_7.get());
       const _Math2 = Math;
@@ -161,69 +204,64 @@ export default function useProfileFrameLayerAsset(width) {
   return { assetUrl, imageHeight };
 };
 export const isProfileFrameLayerShown = function isProfileFrameLayerShown(anchor, arg1, fn) {
-  let tmp = null != fn;
-  if (tmp) {
-    tmp = !fn(anchor);
-  }
-  let tmp2 = !tmp;
-  if (!tmp) {
+  let tmp2 = !(null != fn && !fn(anchor));
+  const tmp = null != fn && !fn(anchor);
+  if (tmp2) {
     let tmp5 = arg1 === UserProfileThemeTypes.PREVIEW;
     if (!tmp5) {
-      let tmp6 = "top" === anchor.anchor;
-      if (tmp6) {
-        tmp6 = "staple" === anchor.type;
-      }
-      tmp5 = tmp6;
+      tmp5 = "top" === anchor.anchor && "staple" === anchor.type;
+      const tmp6 = "top" === anchor.anchor && "staple" === anchor.type;
     }
     tmp2 = tmp5;
   }
   return tmp2;
 };
 export const usePreloadLayerImages = function usePreloadLayerImages(frame) {
+  let containerWidth;
+  let profileThemeType;
   frame = frame.frame;
   ({ containerWidth, profileThemeType } = frame);
   const filterLayer = frame.filterLayer;
   let num;
   let combined;
-  closure_7 = undefined;
-  c8 = undefined;
-  const isProfileFrameLayerPreloadEnabled = frame(filterLayer[7]).useIsProfileFrameLayerPreloadEnabled("usePreloadLayerImages");
+  let closure_7;
+  let c8;
+  let tmp = filterLayer;
+  obj = frame(filterLayer[7]);
+  const isProfileFrameLayerPreloadEnabled = obj.useIsProfileFrameLayerPreloadEnabled("usePreloadLayerImages");
+  let obj2 = num;
   let items = [frame, profileThemeType, filterLayer];
   const memo = num.useMemo(() => {
+    let items;
+    let tmp;
     if (null == frame) {
-      let items = [];
+      items = [];
     } else {
       const layers = tmp.layers;
       const found = layers.filter((anchor) => {
         let tmp3 = null != filterLayer;
+        const tmp = profileThemeType;
         if (tmp3) {
           tmp3 = !tmp2(anchor);
         }
         let tmp4 = !tmp3;
-        if (!tmp3) {
-          let tmp6 = profileThemeType === constants.PREVIEW;
+        if (tmp4) {
+          let tmp6 = tmp === constants.PREVIEW;
           if (!tmp6) {
-            let tmp7 = "top" === anchor.anchor;
-            if (tmp7) {
-              tmp7 = "staple" === anchor.type;
-            }
-            tmp6 = tmp7;
+            tmp6 = "top" === anchor.anchor && "staple" === anchor.type;
+            const tmp7 = "top" === anchor.anchor && "staple" === anchor.type;
           }
           tmp4 = tmp6;
         }
         return tmp4;
       });
       const mapped = found.map((assetId) => {
-        const obj = frame(filterLayer[5]);
-        return obj.getCollectiblesItemAssetUrl({ skuId: skuId.skuId, assetFormat: frame(filterLayer[5]).CollectiblesItemAssetFormat.STATIC, assetId: assetId.id });
+        skuId = skuId.skuId;
+        obj = frame(filterLayer[5]);
+        const obj2 = { skuId, assetFormat: frame(filterLayer[5]).CollectiblesItemAssetFormat.STATIC, assetId: assetId.id };
+        return obj.getCollectiblesItemAssetUrl(obj2);
       });
-      items = mapped.filter((item) => {
-        let tmp = null != item;
-        if (tmp) {
-          tmp = "" !== item;
-        }
-        return tmp;
-      });
+      items = mapped.filter((item) => null != item && "" !== item);
     }
     return items;
   }, items);
@@ -231,7 +269,8 @@ export const usePreloadLayerImages = function usePreloadLayerImages(frame) {
   if (null != frame) {
     num = 0;
     if (containerWidth > 0) {
-      num = containerWidth + 2 * profileThemeType(filterLayer[8])(frame, containerWidth).overflowHorizontal;
+      let tmp3 = profileThemeType;
+      num = containerWidth + 2 * profileThemeType(tmp[8])(frame, containerWidth).overflowHorizontal;
     }
   }
   let skuId;
@@ -239,21 +278,24 @@ export const usePreloadLayerImages = function usePreloadLayerImages(frame) {
     skuId = frame.skuId;
   }
   combined = "" + skuId + ":" + num;
-  let tmp6 = memo(num.useState(null), 2);
+  let tmp6 = memo(obj2.useState(null), 2);
   closure_7 = tmp6[1];
   let everyResult = num > 0;
+  const first = tmp6[0];
   if (everyResult) {
     everyResult = memo.every((item) => {
       let flag = true;
+      const tmp = num;
       if (!set1.has(item)) {
-        value = map.get(item);
+        const value = map.get(item);
         let hasItem = null != value;
         if (hasItem) {
           const _Math = Math;
-          const rounded = Math.round(num * React5.get());
+          const has = set.has;
+          const rounded = Math.round(tmp * metroImportDefault.get());
           const _Math2 = Math;
           const _HermesInternal = HermesInternal;
-          hasItem = set.has("" + item + "?width=" + rounded + "&height=" + Math.round(rounded * value));
+          hasItem = has("" + item + "?width=" + rounded + "&height=" + Math.round(rounded * value));
         }
         flag = hasItem;
       }
@@ -263,27 +305,29 @@ export const usePreloadLayerImages = function usePreloadLayerImages(frame) {
   c8 = everyResult;
   const items1 = [isProfileFrameLayerPreloadEnabled, memo, num, combined, everyResult];
   const effect = obj2.useEffect(() => {
-    if (isProfileFrameLayerPreloadEnabled) {
-      if (0 > 0) {
-        if (!c8) {
+    let closure_1;
+    let tmp = isProfileFrameLayerPreloadEnabled;
+    if (tmp) {
+      num = 0;
+      if (num > 0) {
+        const tmp3 = c8;
+        if (!tmp3) {
           function markSettled() {
-            if (!c0) {
+            const tmp = c0;
+            if (!tmp) {
               closure_7(combined);
             }
           }
-          c0 = false;
+          let c0 = false;
           const _setTimeout = setTimeout;
           const timeout = setTimeout(markSettled, 3000);
-          Promise.all(memo.map((item) => (function preloadLayer() {
-            const self = this;
-            const apply = closure_1_15.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
+          const allPromises = Promise.all(memo.map((item) => {
+            function preloadLayer() {
+              return closure_1_15(...arguments);
             }
-            return applyArgumentsResult;
-          })(item, num))).then(markSettled);
+            return preloadLayer(item, num);
+          }));
+          allPromises.then(markSettled);
           return () => {
             c0 = true;
             clearTimeout(closure_1);
@@ -297,7 +341,7 @@ export const usePreloadLayerImages = function usePreloadLayerImages(frame) {
     settled = everyResult;
   }
   if (!settled) {
-    settled = tmp6[0] === combined;
+    settled = first === combined;
   }
   return { settled };
 };

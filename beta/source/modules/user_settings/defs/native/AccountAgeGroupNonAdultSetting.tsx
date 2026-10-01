@@ -4,7 +4,7 @@
 // Dependencies: [7417, 7859, 7861, 5048, 1115, 5735, 14243, 11006, 2]
 
 // Module 14290 (AccountAgeGroupNonAdultSetting)
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 5048 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5735 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
@@ -14,16 +14,18 @@ import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14243 *
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
-const pressable = SettingBuilders.createPressable({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["/52UYy"]);
+    const intl = intl3.intl;
+    return intl.string(intl3.t["/52UYy"]);
   },
-  parent: SettingsConstants.MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountAgeGroupNonAdultSettingTrailing() {
-    const isAgeVerified = AgeVerificationUtils.useIsAgeVerified();
-    const intl = util.intl;
-    let stringResult = intl.string(util.t.lKDPGA);
+    const obj = AgeVerificationUtils;
+    const isAgeVerified = obj.useIsAgeVerified();
+    const intl = intl3.intl;
+    let stringResult = intl.string(intl3.t.lKDPGA);
     if (isAgeVerified) {
       const intl2 = tmp(1115).intl;
       stringResult = intl2.string(tmp(1115).t.sK0dmH);
@@ -32,14 +34,19 @@ const pressable = SettingBuilders.createPressable({
   },
   onPress: function onAccountAgeGroupNonAdultSettingPress() {
     const obj = AgeVerificationActionCreatorsDefault;
-    const result = obj.showAgeVerificationGetStartedModal({ entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP });
+    const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+    const result = obj.showAgeVerificationGetStartedModal(obj2);
   },
   withArrow: true,
   usePredicate: function AccountAgeGroupNonAdultSettingPredicate() {
-    const isAgeVerified = AgeVerificationUtils.useIsAgeVerified();
-    const isVerifiedTeen = AgeVerificationUtils.useIsVerifiedTeen();
-    let hasTeenDefaults = RegionalFeatureConfigUtils.useHasTeenDefaults();
-    const isTinyBroncoSettingsEnabled = TinyBroncoSettingsPredicate.useIsTinyBroncoSettingsEnabled();
+    const obj = AgeVerificationUtils;
+    const isAgeVerified = obj.useIsAgeVerified();
+    const obj2 = AgeVerificationUtils;
+    const isVerifiedTeen = obj2.useIsVerifiedTeen();
+    const obj3 = RegionalFeatureConfigUtils;
+    let hasTeenDefaults = obj3.useHasTeenDefaults();
+    const obj4 = TinyBroncoSettingsPredicate;
+    const isTinyBroncoSettingsEnabled = obj4.useIsTinyBroncoSettingsEnabled();
     if (hasTeenDefaults) {
       let tmp5 = !isAgeVerified;
       if (isAgeVerified) {
@@ -52,7 +59,8 @@ const pressable = SettingBuilders.createPressable({
     }
     return hasTeenDefaults;
   }
-});
+};
+const pressable = SettingBuilders.createPressable(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupNonAdultSetting.tsx");
 
 export default pressable;

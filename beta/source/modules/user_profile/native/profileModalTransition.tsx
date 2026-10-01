@@ -5,37 +5,42 @@
 // Exports: useIsProfileModalTransitioning, useReportProfileModalTransition
 
 // Module 16603 (profileModalTransition)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let bound, navigation;
+
 let c3 = 0;
 const set = new Set();
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/profileModalTransition.tsx");
 
 export const useReportProfileModalTransition = function useReportProfileModalTransition() {
-  navigation = navigation(1485).useNavigation();
+  const obj = navigation(1485);
+  navigation = obj.useNavigation();
   let items = [navigation];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    const f105491 = (fn) => fn();
     function leave() {
-      if (c0) {
+      const tmp = c0;
+      if (tmp) {
         c0 = false;
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item = set.forEach((fn) => fn());
+          const item = closure_2_4.forEach(f105491);
         }
       }
     }
-    c0 = false;
+    let c0 = false;
     const items = [
       navigation.addListener("transitionStart", function enter() {
-        if (!c0) {
+        const tmp = c0;
+        if (!tmp) {
           c0 = true;
           const _Math = Math;
           bound = Math.max(0, bound + 1);
           if (bound !== bound) {
-            const item = set.forEach((fn) => fn());
+            const item = closure_2_4.forEach(f105491);
           }
         }
       }),
@@ -44,20 +49,21 @@ export const useReportProfileModalTransition = function useReportProfileModalTra
     ];
     return () => {
       const item = items.forEach((fn) => fn());
-      if (c0) {
+      const tmp2 = c0;
+      if (tmp2) {
         c0 = false;
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item1 = set.forEach((fn) => fn());
+          const item1 = closure_2_4.forEach(f105491);
         }
       }
     };
   }, items);
 };
 export const useIsProfileModalTransitioning = function useIsProfileModalTransitioning() {
-  return noop.useSyncExternalStore((arg0) => {
-    closure_0 = arg0;
+  return react.useSyncExternalStore((arg0) => {
+    let closure_0 = arg0;
     set.add(arg0);
     return () => set.delete(closure_0);
   }, () => closure_1_3 > 0);

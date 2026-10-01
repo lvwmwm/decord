@@ -5,40 +5,68 @@
 // Exports: default
 
 // Module 16306 (VibegrationsVersionHistorySheet)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const fetchSourceHistory = fn(12642).fetchSourceHistory;
-const jsx = fn(21).jsx;
-const VibegrationsVersionHistorySheet = "VibegrationsVersionHistorySheet";
-const createStyles = fn(4836);
-let obj2 = { state: { alignItems: "center", padding: nativeDefault.space.PX_24 } };
-let closure_10 = createStyles.createStyles(obj2);
-const size = fn(2);
+let dependencyMap;
+
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let _slicedToArray = _slicedToArray_mod;
+({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
+const fetchSourceHistory = VibegrationsConnectionStore.fetchSourceHistory;
+const jsx = Fragment.jsx;
+const VibegrationsVersionHistorySheet_str = "VibegrationsVersionHistorySheet";
+let obj = { state: obj2 };
+obj2 = { alignItems: "center", padding: nativeDefault.space.PX_24 };
+let closure_10 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsVersionHistorySheet.tsx");
 
 export default function VibegrationsVersionHistorySheet(projectId) {
+  let BottomSheetTitleHeader;
+  let _undefined;
+  let c2;
+  let closure_3;
+  let intl;
+  let intl2;
+  let intl3;
+  let obj8;
+  let obj9;
+  let tmp5;
+  let tmp7;
+  let tmp9;
   projectId = projectId.projectId;
   const onRestore = projectId.onRestore;
   dependencyMap = undefined;
-  const tmp = closure_10();
-  [tmp5, c2] = noop.useState({ status: "loading" });
+  _slicedToArray = undefined;
+  let tmp = closure_10();
+  let tmp2 = onRestore;
+  let tmp3 = dependencyMap;
+  const bottom = onRestore(1613)().bottom;
+  [tmp5, c2] = _slicedToArray(react.useState({ status: "loading" }), 2);
   const items = [projectId];
-  const effect = noop.useEffect(() => {
-    c0 = false;
+  const tmp4 = _slicedToArray(react.useState({ status: "loading" }), 2);
+  const effect = react.useEffect(() => {
+    let c0 = false;
     const promise = fetchSourceHistory(c0);
-    fetchSourceHistory(c0).then((entries) => {
-      if (!c0) {
+    const nextPromise = promise.then((entries) => {
+      const tmp = c0;
+      if (!tmp) {
         const obj = { status: "loaded", entries };
         c2(obj);
       }
-    }).catch(() => {
-      if (!c0) {
+    });
+    nextPromise.catch(() => {
+      const tmp = c0;
+      if (!tmp) {
         c2({ status: "failed" });
       }
     });
@@ -47,69 +75,83 @@ export default function VibegrationsVersionHistorySheet(projectId) {
     };
   }, items);
   const items1 = [onRestore];
-  _slicedToArray = noop.useCallback((arg0) => {
-    closure_0 = arg0;
-    const obj2 = { key: "VibegrationsVersionHistoryRestore", title: null, content: null, confirmText: null, onConfirm: null };
-    const intl = projectId(_undefined[10]).intl;
-    obj2.title = intl.string(onRestore(_undefined[11]).qOUOPE);
-    const intl2 = projectId(_undefined[10]).intl;
-    obj2.content = intl2.string(onRestore(_undefined[11]).k2JBj5);
-    const intl3 = projectId(_undefined[10]).intl;
-    obj2.confirmText = intl3.string(onRestore(_undefined[11])["+sRK16"]);
-    obj2.onConfirm = function onConfirm() {
-      ActionSheetActionCreatorsDefault.hideActionSheet(VibegrationsVersionHistorySheet);
-      onRestore(closure_0);
+  _slicedToArray = react.useCallback((arg0) => {
+    let intl;
+    let intl2;
+    let intl3;
+    let closure_0 = arg0;
+    let obj = {
+      key: "VibegrationsVersionHistoryRestore",
+      title: intl.string(onRestore(c2[11]).qOUOPE),
+      content: intl2.string(onRestore(c2[11]).k2JBj5),
+      confirmText: intl3.string(onRestore(c2[11])["+sRK16"]),
+      onConfirm() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(VibegrationsVersionHistorySheet_str);
+        onRestore(closure_0);
+      }
     };
-    projectId(_undefined[9]).showConfirmModal(obj2);
+    const showConfirmModal = projectId(c2[9]).showConfirmModal;
+    projectId(c2[9]);
+    intl = projectId(c2[10]).intl;
+    intl2 = projectId(c2[10]).intl;
+    intl3 = projectId(c2[10]).intl;
+    showConfirmModal(obj);
   }, items1);
   if ("loading" === tmp5.status) {
-    let obj2 = { style: tmp.state, children: <closure_5 /> };
-    let tmp9 = <closure_6 style={tmp.state}><closure_5 /></closure_6>;
-    let tmp7 = jsx;
-  } else if ("failed" === tmp5.status) {
-    const obj3 = { style: tmp.state, accessibilityRole: "alert", children: null };
-    const obj4 = { variant: "text-md/normal", color: "text-muted", children: null };
-    let intl2 = projectId(1115).intl;
-    obj4.children = intl2.string(tmp2(3715)["mSJn+K"]);
-    obj3.children = jsx(projectId(4832).Text, { variant: "text-md/normal", color: "text-muted", children: null });
-    tmp9 = <closure_6 style={tmp.state} accessibilityRole="alert">{null}</closure_6>;
-    tmp7 = jsx;
-  } else if (0 === tmp5.entries.length) {
-    const obj5 = { style: tmp.state, children: null };
-    const obj6 = { variant: "text-md/normal", color: "text-muted", children: null };
-    let intl = projectId(1115).intl;
-    obj6.children = intl.string(tmp2(3715).TOmYPT);
-    obj5.children = jsx(projectId(4832).Text, { variant: "text-md/normal", color: "text-muted", children: null });
-    tmp9 = <closure_6 style={tmp.state}>{null}</closure_6>;
+    tmp9 = <closure_6 style={tmp.state}><closure_5 /></closure_6>;
     tmp7 = jsx;
   } else {
-    tmp7 = jsx;
-    let obj = { hasIcons: false, children: null };
-    const entries = tmp5.entries;
-    obj.children = entries.map((subject) => {
-      closure_0 = subject;
-      const obj = { label: subject.subject.replace(/^Build: /, ""), subLabel: null, arrow: true, onPress: null };
-      const parsed = Date.parse(subject.authoredAt);
-      let relativeTimestamp;
-      if (!Number.isNaN(parsed)) {
-        relativeTimestamp = projectId(_undefined[7]).getRelativeTimestamp(parsed, false);
-        const tmp2Result = projectId(_undefined[7]);
-      }
-      obj.subLabel = relativeTimestamp;
-      obj.onPress = function onPress() {
-        return closure_3(closure_0);
-      };
-      return jsx(projectId(_undefined[15]).TableRow, { label: subject.subject.replace(/^Build: /, ""), subLabel: null, arrow: true, onPress: null }, subject.sha);
-    });
-    tmp9 = jsx(projectId(5999).TableRowGroup, { hasIcons: false, children: null });
+    let str = "failed";
+    if ("failed" === tmp5.status) {
+      ({ variant: "text-md/normal", color: "text-muted", children: intl2.string(tmp2(3715)["mSJn+K"]) });
+      const Text2 = projectId(4832).Text;
+      intl2 = projectId(1115).intl;
+      tmp9 = <closure_6 style={tmp.state} accessibilityRole="alert">{null}</closure_6>;
+      tmp7 = jsx;
+    } else if (0 === tmp5.entries.length) {
+      ({ variant: "text-md/normal", color: "text-muted", children: intl.string(tmp2(3715).TOmYPT) });
+      const Text = projectId(4832).Text;
+      intl = projectId(1115).intl;
+      tmp9 = <closure_6 style={tmp.state}>{null}</closure_6>;
+      tmp7 = jsx;
+    } else {
+      tmp7 = jsx;
+      const entries = tmp5.entries;
+      const TableRowGroup = projectId(5999).TableRowGroup;
+      tmp9 = <TableRowGroup hasIcons={false}>{entries.map((subject) => {
+        let relativeTimestamp;
+        let str;
+        let closure_0 = subject;
+        const obj = {
+          label: str.replace(/^Build: /, ""),
+          subLabel: relativeTimestamp,
+          arrow: true,
+          onPress() {
+            return closure_3(subject);
+          }
+        };
+        str = subject.subject;
+        const TableRow = projectId(c2[15]).TableRow;
+        const parsed = Date.parse(subject.authoredAt);
+        relativeTimestamp = undefined;
+        const tmp = jsx;
+        const tmp2 = projectId;
+        const tmp3 = c2;
+        if (!Number.isNaN(parsed)) {
+          const tmp2Result = tmp2(tmp3[7]);
+          relativeTimestamp = tmp2Result.getRelativeTimestamp(parsed, false);
+        }
+        return tmp(TableRow, obj, subject.sha);
+      })}</TableRowGroup>;
+    }
   }
-  const obj7 = { scrollable: true, header: null, children: null };
-  const obj8 = { title: null };
-  let intl3 = projectId(1115).intl;
-  obj8.title = intl3.string(onRestore(3715).jAWwzi);
-  obj7.header = tmp7(projectId(6570).BottomSheetTitleHeader, obj8);
-  const tmp4 = _slicedToArray(noop.useState({ status: "loading" }), 2);
-  obj7.children = tmp7(projectId(6045).BottomSheetScrollView, { contentContainerStyle: { paddingBottom: onRestore(1613)().bottom }, children: tmp9 });
-  return tmp7(projectId(6618).ActionSheet, obj7);
+  const obj7 = { scrollable: true, header: tmp7(BottomSheetTitleHeader, obj8), children: tmp7(projectId(6045).BottomSheetScrollView, obj9) };
+  const ActionSheet = projectId(6618).ActionSheet;
+  obj8 = { title: intl3.string(tmp2(3715).jAWwzi) };
+  BottomSheetTitleHeader = projectId(6570).BottomSheetTitleHeader;
+  intl3 = projectId(1115).intl;
+  obj9 = { contentContainerStyle: { paddingBottom: bottom }, children: tmp9 };
+  return tmp7(ActionSheet, obj7);
 };
 export const VIBEGRATIONS_VERSION_HISTORY_SHEET_KEY = "VibegrationsVersionHistorySheet";

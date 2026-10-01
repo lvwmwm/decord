@@ -4,7 +4,6 @@
 // Exports: isFabricInstalled
 
 // Module 6068
-const global = arg0;
 
 export const isFabricInstalled = function isFabricInstalled() {
   let prop;

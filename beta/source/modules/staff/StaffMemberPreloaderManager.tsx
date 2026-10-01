@@ -4,26 +4,27 @@
 // Dependencies: [6539, 17260, 2]
 
 // Module 17259 (StaffMemberPreloaderManager)
+import StaffMemberPreloader from "StaffMemberPreloader" /* 17260 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import size from "module_2" /* 2 */;
 
-let require = fn;
-const prototype = function StaffMemberPreloaderManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  require = applyArgumentsResult;
-  applyArgumentsResult.actions = {
-    POST_CONNECTION_OPEN() {
-      return applyArgumentsResult.handlePostConnectionOpen();
-    }
-  };
-  applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
-    applyArgumentsResult(dependencyMap[1]).preloadStaffMembers();
-  };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+class StaffMemberPreloaderManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      POST_CONNECTION_OPEN() {
+        return require.handlePostConnectionOpen();
+      }
+    };
+    applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+      const obj = StaffMemberPreloader;
+      obj.preloadStaffMembers();
+    };
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const staffMemberPreloaderManager = new StaffMemberPreloaderManager();
 const result = size.fileFinishedImporting("modules/staff/StaffMemberPreloaderManager.tsx");
 
-export default prototype1;
+export default staffMemberPreloaderManager;

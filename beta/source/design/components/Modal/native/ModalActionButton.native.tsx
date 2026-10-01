@@ -5,33 +5,37 @@
 // Exports: ModalActionButton
 
 // Module 10459 (ModalActionButton)
+import react_native from "react-native" /* 17 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+let c3;
+let closure_4;
+let hasOwnProperty;
+const View = react_native.View;
+({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ spacer: { marginTop: 12 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Modal/native/ModalActionButton.native.tsx");
 
 export const ModalActionButton = function ModalActionButton(variant) {
+  let items;
   variant = variant.variant;
   const merged = Object.assign(variant, Object.assign({ variant: 0 }));
   let tmp5 = "secondary" === variant;
+  const tmp3 = hasOwnProperty;
+  const tmp4 = React3;
   if (tmp5) {
     const obj = { style: tmp2.spacer };
-    tmp5 = React3(View, obj);
+    tmp5 = _false(View, obj);
   }
-  const obj2 = { children: null };
-  const items = [tmp5, ];
-  const obj3 = {};
+  const obj2 = { children: items };
+  items = [tmp5, ];
+  const obj3 = { variant, size: "lg" };
+  const Button = components_Button_Button.Button;
   const merged1 = Object.assign(merged);
-  obj3.variant = variant;
-  obj3.size = "lg";
-  items[1] = React3(components_Button_Button.Button, obj3);
-  obj2.children = items;
-  return hasOwnProperty(React4, obj2);
+  items[1] = _false(Button, obj3);
+  return tmp3(tmp4, obj2);
 };

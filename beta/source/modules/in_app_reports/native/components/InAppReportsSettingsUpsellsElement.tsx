@@ -5,6 +5,7 @@
 // Exports: default
 
 // Module 12475 (InAppReportsSettingsUpsellsElement)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
 import useMountEffectDefault from "useMountEffect" /* 5298 */;
@@ -12,16 +13,34 @@ import SettingsIcon from "SettingsIcon" /* 6798 */;
 import openUserSettings from "openUserSettings" /* 6800 */;
 import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8093 */;
 import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12468 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let dependencyMap;
+
+let c10;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let obj4;
 function SettingsUpsellsTableRow(arg0) {
+  let closure_2;
+  let description;
+  let disabledTitle;
+  let first;
+  let title;
   ({ onButtonClick: require, trackSettingsUpsellsAction: importDefault } = arg0);
+  dependencyMap = undefined;
   ({ title, disabledTitle, description } = arg0);
-  const tmp = _slicedToArray(noop.useState(false), 2);
-  dependencyMap = tmp[1];
+  [first, dependencyMap] = react.useState(false);
   useMountEffectDefault(() => {
     importDefault(in_app_reports_ReportUtils.TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
   });
@@ -29,75 +48,89 @@ function SettingsUpsellsTableRow(arg0) {
     title,
     disabledTitle,
     description,
-    disabled: tmp[0],
+    disabled: first,
     onPress() {
-      closure_1_0();
+      require();
       closure_2(true);
       importDefault(in_app_reports_ReportUtils.TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
     },
     icon: closure_9(SettingsIcon.SettingsIcon, {})
   };
-  return closure_9(InAppReportsUpsellsTableRowDefault, obj);
+  const tmp4 = InAppReportsUpsellsTableRowDefault;
+  return closure_9(tmp4, obj);
 }
-const View = fn(17).View;
-const Constants = fn(1074);
-({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_16 }, settingsContainer: null, goToSettingsText: null };
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
-obj2.settingsContainer = { width: "100%", marginBottom: nativeDefault.space.PX_8 };
-let obj4 = { width: "100%", marginBottom: nativeDefault.space.PX_8 };
-obj2.goToSettingsText = { marginTop: nativeDefault.space.PX_4 };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+({ AnalyticEvents: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
+({ jsx: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, settingsContainer: obj3, goToSettingsText: obj4 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { width: "100%", marginBottom: nativeDefault.space.PX_8 };
+obj4 = { marginTop: nativeDefault.space.PX_4 };
+let closure_11 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsSettingsUpsellsElement.tsx");
 
 export default function SettingsUpsellElement(settingsUpsells) {
+  let TableRowGroup;
+  let intl;
+  let intl2;
+  let items1;
+  let obj4;
+  let obj6;
+  let reportId;
   settingsUpsells = settingsUpsells.settingsUpsells;
   ({ channelId: importDefault, reportId } = settingsUpsells);
   const reportType = settingsUpsells.reportType;
   const reportSubType = settingsUpsells.reportSubType;
-  closure_5 = undefined;
+  let closure_5;
   const tmp = closure_11();
-  const items = [ChannelStore];
-  const stateFromStores = settingsUpsells(reportId[12]).useStateFromStores(items, () => ChannelStore.getChannel(importDefault));
   let obj = settingsUpsells(reportId[12]);
+  const items = [ChannelStore];
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(importDefault));
   let type;
+  const useSettingsUpsellsConfigs = settingsUpsells(reportId[13]).useSettingsUpsellsConfigs;
+  settingsUpsells(reportId[13]);
   if (stateFromStores != null) {
     type = stateFromStores.type;
   }
-  const settingsUpsellsConfigs = settingsUpsells(reportId[13]).useSettingsUpsellsConfigs(settingsUpsells, type);
-  let obj2 = settingsUpsells(reportId[13]);
-  closure_5 = settingsUpsells(reportId[9]).useTrackSettingsUpsellsAction(reportType, reportSubType, reportId);
-  let tmp6 = null;
+  const settingsUpsellsConfigs = useSettingsUpsellsConfigs(settingsUpsells, type);
+  const tmp2Result = settingsUpsells(reportId[9]);
+  closure_5 = tmp2Result.useTrackSettingsUpsellsAction(reportType, reportSubType, reportId);
+  let tmp7 = null;
   if (0 !== settingsUpsellsConfigs.length) {
-    let obj3 = { style: tmp.container, children: null };
-    const obj4 = { style: tmp.settingsContainer, children: null };
-    const obj5 = { title: null, hasIcons: true, children: null };
-    const intl = tmp2(tmp3[15]).intl;
-    obj5.title = intl.string(tmp2(tmp3[15]).t["1yxTIJ"]);
-    obj5.children = settingsUpsellsConfigs.map((getTitle, index) => {
-      ({ getDisabledTitle, getDescription, onApply } = getTitle);
-      return React7(SettingsUpsellsTableRow, { title: getTitle.getTitle(), disabledTitle: getDisabledTitle(), description: getDescription(), onButtonClick: onApply, trackSettingsUpsellsAction: closure_5(settingsUpsells[index]) }, index);
-    });
-    obj4.children = closure_9(tmp2(tmp3[14]).TableRowGroup, obj5);
-    const items1 = [closure_9(closure_5, obj4), ];
-    const obj6 = { variant: "text-sm/medium", style: tmp.goToSettingsText, children: null };
-    const intl2 = tmp2(tmp3[15]).intl;
-    const obj7 = {
+    let obj2 = { style: tmp.container, children: items1 };
+    let obj3 = { style: tmp.settingsContainer, children: closure_9(TableRowGroup, obj4) };
+    obj4 = {
+      title: intl.string(settingsUpsells(reportId[15]).t["1yxTIJ"]),
+      hasIcons: true,
+      children: settingsUpsellsConfigs.map((getTitle, index) => {
+          let getDescription;
+          let getDisabledTitle;
+          let onApply;
+          const obj = { title: getTitle.getTitle(), disabledTitle: getDisabledTitle(), description: getDescription(), onButtonClick: onApply, trackSettingsUpsellsAction: closure_5(settingsUpsells[index]) };
+          ({ getDisabledTitle, getDescription, onApply } = getTitle);
+          return React4(SettingsUpsellsTableRow, obj, index);
+        })
+    };
+    TableRowGroup = tmp2(tmp3[14]).TableRowGroup;
+    intl = tmp2(tmp3[15]).intl;
+    items1 = [closure_9(closure_5, obj3), ];
+    const obj5 = { variant: "text-sm/medium", style: tmp.goToSettingsText, children: intl2.format(settingsUpsells(reportId[15]).t["u7mo+k"], obj6) };
+    const Text = tmp2(tmp3[16]).Text;
+    intl2 = tmp2(tmp3[15]).intl;
+    obj6 = {
       goToSettingsHook() {
-          openUserSettings.openUserSettings({ screen: constants2.CONTENT_AND_SOCIAL });
-          const obj2 = { screen: constants2.CONTENT_AND_SOCIAL };
+          const obj = openUserSettings;
+          const obj2 = { screen: metroImportAll.CONTENT_AND_SOCIAL };
+          obj.openUserSettings(obj2);
           const obj3 = AppAnalyticsUtilsDefault;
-          obj3.trackWithMetadata(constants.IAR_SETTINGS_UPSELLS_ACTION, { report_id: reportId, report_type: reportType.name, report_subtype: reportSubType, action: in_app_reports_ReportUtils.TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED });
+          const obj4 = { report_id: reportId, report_type: reportType.name, report_subtype: reportSubType, action: in_app_reports_ReportUtils.TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED };
+          obj3.trackWithMetadata(metroImportDefault.IAR_SETTINGS_UPSELLS_ACTION, obj4);
         }
     };
-    obj6.children = intl2.format(tmp2(tmp3[15]).t["u7mo+k"], obj7);
-    items1[1] = closure_9(tmp2(tmp3[16]).Text, obj6);
-    obj3.children = items1;
-    tmp6 = closure_10(closure_5, obj3);
+    items1[1] = closure_9(Text, obj5);
+    tmp7 = closure_10(closure_5, obj2);
   }
-  return tmp6;
+  return tmp7;
 };

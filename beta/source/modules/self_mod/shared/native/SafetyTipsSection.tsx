@@ -5,40 +5,55 @@
 // Exports: default
 
 // Module 10918 (SafetyTipsSection)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import SafetyTipsRowDefault from "SafetyTipsRow" /* 8036 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { image: { alignSelf: "center", justifySelf: "center" }, tips: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, overflow: "hidden" }, text: { textAlign: "center" } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let obj2;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { image: { alignSelf: "center", justifySelf: "center" }, tips: obj2, text: { textAlign: "center" } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/self_mod/shared/native/SafetyTipsSection.tsx");
 
-export default function SafetyTipsContainer(children) {
-  const safetyTips = children.safetyTips;
-  let showHeader = children.showHeader;
+export default function SafetyTipsContainer(safetyTips) {
+  let intl;
+  let items1;
+  safetyTips = safetyTips.safetyTips;
+  let showHeader = safetyTips.showHeader;
+  const description = safetyTips.description;
   const tmp = closure_6();
-  const items = [closure_4(View, { style: tmp.image, children: closure_4(safetyTips(10919).SafetyBookletSpotIllustration, {}) }), , ];
-  if (showHeader) {
-    const obj2 = { style: tmp.text, variant: "heading-xl/semibold", children: null };
-    const intl = tmp3(1115).intl;
-    obj2.children = intl.string(tmp3(1115).t.eAbVfS);
-    showHeader = tmp5(tmp3(4832).Text, obj2);
-  }
-  const obj3 = { spacing: 16, children: null };
-  const obj4 = { spacing: 8, align: "center", justify: "center", children: null };
-  const items1 = [showHeader, closure_4(safetyTips(4832).Text, { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: children.description })];
-  obj4.children = items1;
-  items[1] = closure_5(safetyTips(5279).Stack, obj4);
-  const obj = { style: tmp.image, children: closure_4(safetyTips(10919).SafetyBookletSpotIllustration, {}) };
-  const obj5 = { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: children.description };
+  let obj = { style: tmp.image, children: closure_4(safetyTips(10919).SafetyBookletSpotIllustration, {}) };
+  const Stack = safetyTips(5279).Stack;
+  const items = [closure_4(View, obj), , ];
+  const Stack2 = safetyTips(5279).Stack;
   const tmp6 = View;
-  items[2] = closure_4(tmp6, { style: tmp.tips, children: safetyTips.map((tip, index) => React4(SafetyTipsRowDefault, { index: index + 1, tip, end: index === safetyTips.length - 1 }, index)) });
-  obj3.children = items;
-  return closure_5(safetyTips(5279).Stack, obj3);
+  if (showHeader) {
+    const obj2 = { style: tmp.text, variant: "heading-xl/semibold", children: intl.string(safetyTips(1115).t.eAbVfS) };
+    const Text = tmp3(4832).Text;
+    intl = tmp3(1115).intl;
+    showHeader = tmp5(Text, obj2);
+  }
+  const obj4 = { spacing: 8, align: "center", justify: "center", children: items1 };
+  items1 = [showHeader, ];
+  const obj3 = { spacing: 16, children: items };
+  const obj5 = { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: description };
+  items1[1] = closure_4(safetyTips(4832).Text, obj5);
+  items[1] = closure_5(Stack2, obj4);
+  const obj6 = {
+    style: tmp.tips,
+    children: safetyTips.map((tip, index) => {
+      const obj = { index: index + 1, tip, end: index === safetyTips.length - 1 };
+      return React3(SafetyTipsRowDefault, obj, index);
+    })
+  };
+  items[2] = closure_4(tmp6, obj6);
+  return closure_5(Stack, obj3);
 };

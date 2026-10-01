@@ -6,25 +6,26 @@
 
 // Module 9819 (useExpressionPickerCategoriesPlaceholderConfig)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6483 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const CATEGORY_ICON_SIZE = fn(1074).CATEGORY_ICON_SIZE;
-const createStyles = fn(4836);
-const obj2 = { placeholder: { color: nativeDefault.colors.BACKGROUND_MOD_STRONG, opacity: 0.5 } };
-let closure_4 = createStyles.createStyles(obj2);
-let size = fn(2);
+const CATEGORY_ICON_SIZE = Constants.CATEGORY_ICON_SIZE;
+let obj = { placeholder: { color: nativeDefault.colors.BACKGROUND_MOD_STRONG, opacity: 0.5 } };
+({ color: nativeDefault.colors.BACKGROUND_MOD_STRONG, opacity: 0.5 });
+let closure_4 = createStyles.createStyles(obj);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/expression_picker/native/categories/useExpressionPickerCategoriesPlaceholderConfig.tsx");
 
 export default function useExpressionPickerCategoriesPlaceholderConfig() {
   const tmp = closure_4();
-  closure_0 = tmp;
+  let closure_0 = tmp;
   const items = [tmp];
-  return noop.useMemo(() => {
-    const obj = { sectionItem: null };
-    const size = { type: FastestListPropsPlaceholder.FastestListPropsPlaceholderType.SHAPE, colorHex: closure_0.placeholder.color, opacity: closure_0.placeholder.opacity, shape: "circle", width: CATEGORY_ICON_SIZE, height: CATEGORY_ICON_SIZE };
-    obj.sectionItem = size;
+  return react.useMemo(() => {
+    const obj = { sectionItem: size };
+    size = { type: FastestListPropsPlaceholder.FastestListPropsPlaceholderType.SHAPE, colorHex: closure_0.placeholder.color, opacity: closure_0.placeholder.opacity, shape: "circle", width: CATEGORY_ICON_SIZE, height: CATEGORY_ICON_SIZE };
     return obj;
   }, items);
 };

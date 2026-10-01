@@ -5,22 +5,24 @@
 // Exports: SceneLoadingIndicator
 
 // Module 6460 (SceneLoadingIndicator)
+import react_native from "react-native" /* 17 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5889 */;
 import NavScrim from "NavScrim" /* 6461 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
+let c3;
+let closure_4;
+const View = react_native.View;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ loadingContainer: { flex: 1, paddingTop: 40 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Navigator/native/SceneLoadingIndicator.native.tsx");
 
 export const SceneLoadingIndicator = function SceneLoadingIndicator() {
-  const obj = { style: closure_5().loadingContainer, children: null };
-  const items = [React3(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}), React3(NavScrim.NavScrim, {})];
-  obj.children = items;
-  return React4(View, obj);
+  let items;
+  const obj = { style: closure_5().loadingContainer, children: items };
+  items = [_false(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}), _false(NavScrim.NavScrim, {})];
+  return React3(View, obj);
 };

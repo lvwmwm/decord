@@ -6,86 +6,103 @@
 
 // Module 16893 (SoundboardHooks)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6572 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 16885 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const SoundboardStyleConstants = fn(16885);
-({ SOUNDS_PER_ROW: closure_7, SOUND_ROW_PADDING: closure_8 } = SoundboardStyleConstants);
-const ACTION_SHEET_MAX_WIDTH = fn(6572).ACTION_SHEET_MAX_WIDTH;
-const size = fn(2);
+let c0, c1;
+
+let metroImportAll;
+let metroImportDefault;
+({ SOUNDS_PER_ROW: metroImportDefault, SOUND_ROW_PADDING: metroImportAll } = SoundboardStyleConstants);
+const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
 const result = size.fileFinishedImporting("modules/soundboard/native/SoundboardHooks.tsx");
 
 export const useSoundButtonStyleConfig = function useSoundButtonStyleConfig() {
-  return { buttonWidth: (Math.min(ACTION_SHEET_MAX_WIDTH, useWindowDimensionsDefault().width) - React6) / React5 };
+  const obj = { buttonWidth: (Math.min(ACTION_SHEET_MAX_WIDTH, useWindowDimensionsDefault().width) - metroImportAll) / metroImportDefault };
+  return obj;
 };
 export const useMaybeFetchSoundboardSounds = function useMaybeFetchSoundboardSounds(shouldFetch) {
+  let saturation;
+  let theme;
   shouldFetch = shouldFetch.shouldFetch;
-  const items = [AccessibilityStore];
-  const stateFromStores = shouldFetch(504).useStateFromStores(items, () => saturation.saturation);
   let obj = shouldFetch(504);
+  const items = [AccessibilityStore];
+  const stateFromStores = obj.useStateFromStores(items, () => saturation.saturation);
+  let obj2 = shouldFetch(504);
   const items1 = [ThemeStore];
-  const items2 = [stateFromStores, shouldFetch(504).useStateFromStores(items1, () => shouldFetch(dependencyMap[8]).isThemeDark(theme.theme)), shouldFetch];
-  const effect = noop.useEffect(() => {
-    closure_0 = async function _fetchAndHydrateColors(arg0, value) {
-      if (c0 === 2) {
-        c0 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
+  const items2 = [
+    stateFromStores,
+    obj2.useStateFromStores(items1, () => {
+      const obj = shouldFetch(dependencyMap[8]);
+      return obj.isThemeDark(theme.theme);
+    }),
+    shouldFetch
+  ];
+  const effect = react.useEffect(() => {
+    function fetchAndHydrateColors() {
+      return obj(...arguments);
+    }
+    let obj = function _fetchAndHydrateColors() {
+      obj = _asyncToGenerator(async (arg0, value) => {
+        let obj2;
+        if (c0 === 2) {
+          c0 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp2 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
         } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c0 = 2;
-          if (0 === c1) {
-            if (arg0 === 1) {
+          try {
+            c0 = 2;
+            if (0 === c1) {
+              if (arg0 === 1) {
+                c0 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c0 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                const tmp4 = c0;
+                if (tmp4) {
+                  const FrecencyUserSettingsActionCreators = closure_2_0(closure_2_2[9]).FrecencyUserSettingsActionCreators;
+                  const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
+                  c1 = 1;
+                  c0 = 1;
+                  const obj5 = { value: obj2.maybeFetchSoundboardSounds(), done: false };
+                  obj2 = closure_2_0(closure_2_2[10]);
+                  return obj5;
+                }
+              }
+            } else if (arg0 === 1) {
               c0 = 3;
               throw value;
             } else if (arg0 === 2) {
               c0 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else if (c0) {
-              const FrecencyUserSettingsActionCreators = shouldFetch(2026).FrecencyUserSettingsActionCreators;
-              const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
-              c1 = 1;
-              c0 = 1;
-              const obj5 = { value: shouldFetch(6756).maybeFetchSoundboardSounds(), done: false };
-              return obj5;
+              obj = { value, done: true };
+              return obj;
             }
-          } else if (arg0 === 1) {
             c0 = 3;
-            throw value;
-          } else if (arg0 === 2) {
+            return { value: "HermesInternal", done: null };
+          } catch (tmp8) {
             c0 = 3;
-            const obj = { value, done: true };
-            return obj;
+            throw tmp8;
           }
-          c0 = 3;
-          return { value: "HermesInternal", done: null };
-        } catch (tmp9) {
-          c0 = tmp;
-          throw tmp9;
         }
-      }
+      });
+      return obj(...arguments);
     };
-    !(function fetchAndHydrateColors() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    })();
+    !fetchAndHydrateColors();
   }, items2);
 };

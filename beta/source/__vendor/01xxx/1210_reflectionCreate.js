@@ -8,12 +8,11 @@
 import MESSAGE_TYPE from "MESSAGE_TYPE" /* 1198 */;
 import reflectionScalarDefault from "reflectionScalarDefault" /* 1208 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const reflectionCreate = function reflectionCreate(value) {
   const obj = {};
-  Object.defineProperty(obj, MESSAGE_TYPE.MESSAGE_TYPE, { enumerable: false, value });
+  const obj2 = { enumerable: false, value };
+  Object.defineProperty(obj, MESSAGE_TYPE.MESSAGE_TYPE, obj2);
   const iter = value.fields[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
@@ -21,7 +20,7 @@ export const reflectionCreate = function reflectionCreate(value) {
     let localName = nextResult.localName;
     if (!nextResult.opt) {
       if (tmp3.oneof) {
-        obj[tmp3.oneof] = { oneofKind: "r" };
+        obj[tmp3.oneof] = { oneofKind: "Path" };
       } else if (tmp3.repeat) {
         obj[localName] = [];
       } else {

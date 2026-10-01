@@ -13,6 +13,7 @@ import UserStore from "UserStore" /* 1372 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 const isGuildOwner = GuildRecord.isGuildOwner;
 let items = [, , , , ];
@@ -20,19 +21,26 @@ let items = [, , , , ];
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/feature_education/OnboardingV2Utils.tsx");
 
 export const useCanSeeCreatorMonetizationOnboardingV2Upsell = function useCanSeeCreatorMonetizationOnboardingV2Upsell(id) {
+  let currentUser;
+  let stateFromStores;
   _require = id;
   items = [GuildStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => GuildStore.getGuild(closure_0));
-  const obj = require("initialize");
+  const obj = require("get initialized");
+  stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(id));
   const items1 = [UserStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => currentUser.getCurrentUser());
-  const obj2 = require("initialize");
-  const guildRoleSubscriptionSettingsVisibility = require("GuildRoleSubscriptionSettingUtils").useGuildRoleSubscriptionSettingsVisibility(stateFromStores);
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => currentUser.getCurrentUser());
+  const obj3 = require("GuildRoleSubscriptionSettingUtils");
+  const guildRoleSubscriptionSettingsVisibility = obj3.useGuildRoleSubscriptionSettingsVisibility(stateFromStores);
   if (null == stateFromStores) {
     return false;
   } else {
     let tmp5 = guildRoleSubscriptionSettingsVisibility === tmp4;
     const tmp7 = isGuildOwner(stateFromStores, stateFromStores1);
+    const everyResult = items.every((item) => {
+      const features = stateFromStores.features;
+      return !features.has(item);
+    });
     if (tmp5) {
       tmp5 = tmp7;
     }
@@ -41,7 +49,6 @@ export const useCanSeeCreatorMonetizationOnboardingV2Upsell = function useCanSee
     }
     return tmp5;
   }
-  const obj3 = require("GuildRoleSubscriptionSettingUtils");
 };
 export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreatorMonetizationOnboardingV2Upsell(arg0) {
   const guild = GuildStore.getGuild(arg0);
@@ -52,9 +59,14 @@ export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreato
     if (null == currentUser) {
       return false;
     } else {
-      const guildRoleSubscriptionSettingsVisibility = GuildRoleSubscriptionSettingUtils.getGuildRoleSubscriptionSettingsVisibility(guild);
+      const obj = GuildRoleSubscriptionSettingUtils;
+      const guildRoleSubscriptionSettingsVisibility = obj.getGuildRoleSubscriptionSettingsVisibility(guild);
       let tmp5 = guildRoleSubscriptionSettingsVisibility === GuildRoleSubscriptionSettingUtils.GuildRoleSubscriptionSettingsVisibility.VISIBLE;
       const tmp7 = isGuildOwner(guild, currentUser);
+      const everyResult = items.every((item) => {
+        const features = guild.features;
+        return !features.has(item);
+      });
       if (tmp5) {
         tmp5 = tmp7;
       }

@@ -5,39 +5,57 @@
 // Exports: default
 
 // Module 15477 (SponsoredContentPreferencesScreen)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import SettingLayoutDefault from "SettingLayout" /* 14247 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MobileUserSettings = fn(7417).MobileUserSettings;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SponsoredContentPreferencesScreen.tsx");
 
 export default function SponsoredContentPreferencesScreen() {
-  const obj = { settings: null, subLabel: null };
-  const items = [MobileUserSettings.USE_DATA_FOR_QUESTS_SPONSORED_CONTENT];
-  obj.settings = items;
+  let cf9mvV;
+  let format;
+  let format2;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let obj2;
+  let obj3;
+  let obj5;
+  let obj6;
+  let prop;
+  let obj = { settings: items, subLabel: format(cf9mvV, obj2) };
+  items = [MobileUserSettings.USE_DATA_FOR_QUESTS_SPONSORED_CONTENT];
   const intl = items1(1115).intl;
-  const obj2 = { helpdeskArticle: HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
-  obj.subLabel = intl.format(items1(1115).t.cf9mvV, obj2);
+  format = intl.format;
+  obj2 = { helpdeskArticle: obj3.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
+  cf9mvV = items1(1115).t.cf9mvV;
   items1 = [obj, , ];
-  const obj4 = { settings: null, subLabel: null };
-  const items2 = [MobileUserSettings.USE_DATA_FOR_QUESTS_3P_SPONSORED_CONTENT];
-  obj4.settings = items2;
+  obj3 = HelpdeskUtilsDefault;
+  const obj4 = { settings: items2, subLabel: format2(prop, obj5) };
+  items2 = [MobileUserSettings.USE_DATA_FOR_QUESTS_3P_SPONSORED_CONTENT];
   const intl2 = items1(1115).intl;
-  const obj5 = { helpdeskArticle: null };
-  obj5.helpdeskArticle = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS);
-  obj4.subLabel = intl2.format(items1(1115).t["2QFDU/"], obj5);
+  format2 = intl2.format;
+  obj5 = { helpdeskArticle: obj6.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
+  prop = items1(1115).t["2QFDU/"];
   items1[1] = obj4;
-  const obj7 = { settings: null };
-  const items3 = [MobileUserSettings.MANAGE_SPONSORED_CONTENT];
-  obj7.settings = items3;
+  const obj7 = { settings: items3 };
+  items3 = [MobileUserSettings.MANAGE_SPONSORED_CONTENT];
   items1[2] = obj7;
   const items4 = [items1];
-  const node = noop.useMemo(() => SettingBuilders.createList({ sections: items1 }), items4);
+  obj6 = HelpdeskUtilsDefault;
+  const node = react.useMemo(() => {
+    const obj = SettingBuilders;
+    const obj2 = { sections: items1 };
+    return obj.createList(obj2);
+  }, items4);
   return jsx(SettingLayoutDefault, { node });
 };

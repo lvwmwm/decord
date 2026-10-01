@@ -11,7 +11,8 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/hooks/useBadgeTextVariant.native.tsx");
 
 export const useBadgeTextVariant = function useBadgeTextVariant() {
-  const themeContext = ThemeContext.useThemeContext();
+  const obj = ThemeContext;
+  const themeContext = obj.useThemeContext();
   let enabledExperiments;
   if (themeContext != null) {
     enabledExperiments = themeContext.enabledExperiments;

@@ -5,32 +5,35 @@
 // Exports: default
 
 // Module 15740 (useFavoritesGuildCategoryLongPress)
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ChannelTypes = fn(1074).ChannelTypes;
-const size = fn(2);
+const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/favorites/native/action/useFavoritesGuildCategoryLongPress.tsx");
 
 export default function useFavoritesGuildCategoryLongPress(getGuildId) {
-  let isFavoritesGuildIdResult = FavoritesUtils.isFavoritesGuildId(getGuildId.getGuildId());
+  let obj = FavoritesUtils;
+  let isFavoritesGuildIdResult = obj.isFavoritesGuildId(getGuildId.getGuildId());
   if (isFavoritesGuildIdResult) {
     isFavoritesGuildIdResult = getGuildId.type === ChannelTypes.GUILD_CATEGORY;
   }
   require = isFavoritesGuildIdResult;
   const id = getGuildId.id;
   const items = [isFavoritesGuildIdResult, id];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    let intl;
     let tmp = null;
-    if (isFavoritesGuildIdResult) {
-      const obj = { label: null, perform: null };
-      const intl = util.intl;
-      obj.label = intl.string(util.t.Xm41aV);
-      obj.perform = function perform() {
-        return id(dependencyMap[4])(closure_1_1);
+    if (require) {
+      const obj = {
+        label: intl.string(intl2.t.Xm41aV),
+        perform() {
+            return id(dependencyMap[4])(closure_1_1);
+          }
       };
+      intl = intl2.intl;
       tmp = obj;
     }
     return tmp;

@@ -5,70 +5,89 @@
 // Exports: default
 
 // Module 17325 (DefaultKeywordListTriggerFields)
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 11341 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const maxWordCount = fn(11341).MAX_KEYWORDS_PER_ALLOWLIST_DEFAULT_KEYWORD_RULE;
-const jsxProd = fn(21);
-({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+const maxWordCount = Constants.MAX_KEYWORDS_PER_ALLOWLIST_DEFAULT_KEYWORD_RULE;
+({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/DefaultKeywordListTriggerFields.tsx");
 
 export default function DefaultKeywordListTriggerFields(rule) {
+  let KEYWORD_PRESETS;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
   rule = rule.rule;
   const onChangeRule = rule.onChangeRule;
   const presets = rule.triggerMetadata.presets;
-  let obj = { children: null };
-  let obj2 = { title: null, hasIcons: false, children: null };
-  const intl = rule(presets[4]).intl;
-  obj2.title = intl.string(rule(presets[4]).t.CX5Yfc);
-  const KEYWORD_PRESETS = rule(presets[5]).KEYWORD_PRESETS;
-  obj2.children = KEYWORD_PRESETS.map((item) => {
-    closure_0 = item;
-    const keywordPresetInfo = rule(presets[5]).getKeywordPresetInfo(item);
-    ({ headerText, subtitleText } = keywordPresetInfo);
-    let obj = rule(presets[5]);
-    return closure_1_4(rule(presets[6]).TableCheckboxRow, {
-      label: headerText,
-      subLabel: subtitleText,
-      checked: presets.includes(item),
-      onPress(arg0) {
-        const filter = presets.filter;
-        if (arg0) {
-          const items = [];
-          items[HermesBuiltin.arraySpread(filter((arg0) => arg0 !== closure_0), 0)] = tmp;
-          let found = items;
-        } else {
-          found = filter((arg0) => arg0 !== closure_0);
+  let obj = { children: items };
+  let obj2 = {
+    title: intl.string(rule(presets[4]).t.CX5Yfc),
+    hasIcons: false,
+    children: KEYWORD_PRESETS.map((item) => {
+      let headerText;
+      let subtitleText;
+      let closure_0 = item;
+      let obj = rule(presets[5]);
+      const keywordPresetInfo = obj.getKeywordPresetInfo(item);
+      ({ headerText, subtitleText } = keywordPresetInfo);
+      let obj2 = {
+        label: headerText,
+        subLabel: subtitleText,
+        checked: presets.includes(item),
+        onPress(arg0) {
+          let found;
+          let obj2;
+          const filter = presets.filter;
+          const tmp4 = arg0;
+          if (tmp4) {
+            const items = [];
+            items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== closure_0), 0)] = tmp2;
+            found = items;
+          } else {
+            found = filter((arg0) => arg0 !== closure_0);
+          }
+          const obj = { triggerMetadata: obj2 };
+          const merged = Object.assign(rule);
+          obj2 = { presets: found };
+          const merged1 = Object.assign(rule.triggerMetadata);
+          onChangeRule(obj);
         }
-        const obj = {};
-        const merged = Object.assign(rule);
-        const obj2 = {};
-        const merged1 = Object.assign(rule.triggerMetadata);
-        obj2.presets = found;
-        obj.triggerMetadata = obj2;
-        onChangeRule(obj);
-      }
-    }, item);
-  });
-  let items = [closure_4(rule(presets[3]).TableRowGroup, obj2), ];
-  const obj3 = { label: null, description: null, type: "keywords", keywords: null, maxWordCount: null, onChangeKeywords: null, start: true, end: true };
-  const intl2 = rule(presets[4]).intl;
-  obj3.label = intl2.string(rule(presets[4]).t.lbE2Nm);
-  const intl3 = rule(presets[4]).intl;
-  obj3.description = intl3.string(rule(presets[4]).t.qm7UZ8);
-  obj3.keywords = rule.triggerMetadata.allowList;
-  obj3.maxWordCount = maxWordCount;
-  obj3.onChangeKeywords = function onChangeKeywords(allowList) {
-    const obj = {};
-    const merged = Object.assign(rule);
-    const obj2 = {};
-    const merged1 = Object.assign(rule.triggerMetadata);
-    obj2.allowList = allowList;
-    obj.triggerMetadata = obj2;
-    return onChangeRule(obj);
+      };
+      const TableCheckboxRow = rule(presets[6]).TableCheckboxRow;
+      return closure_1_4(TableCheckboxRow, obj2, item);
+    })
   };
-  items[1] = closure_4(onChangeRule(presets[7]), obj3);
-  obj.children = items;
+  const TableRowGroup = rule(presets[3]).TableRowGroup;
+  intl = rule(presets[4]).intl;
+  KEYWORD_PRESETS = rule(presets[5]).KEYWORD_PRESETS;
+  items = [closure_4(TableRowGroup, obj2), ];
+  const obj3 = {
+    label: intl2.string(rule(presets[4]).t.lbE2Nm),
+    description: intl3.string(rule(presets[4]).t.qm7UZ8),
+    type: "keywords",
+    keywords: rule.triggerMetadata.allowList,
+    maxWordCount,
+    onChangeKeywords(allowList) {
+      let obj2;
+      const obj = { triggerMetadata: obj2 };
+      const merged = Object.assign(rule);
+      obj2 = { allowList };
+      const merged1 = Object.assign(rule.triggerMetadata);
+      return onChangeRule(obj);
+    },
+    start: true,
+    end: true
+  };
+  const tmp = onChangeRule(presets[7]);
+  intl2 = rule(presets[4]).intl;
+  intl3 = rule(presets[4]).intl;
+  items[1] = closure_4(tmp, obj3);
   return closure_6(closure_5, obj);
 };

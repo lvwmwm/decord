@@ -8,21 +8,22 @@
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6710 */;
 import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6715 */;
 import MessageStore from "MessageStore" /* 5056 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaAttachmentsForMessage.tsx");
 
 export const useRedactableMediaAttachmentsForMessage = function useRedactableMediaAttachmentsForMessage(channelId, messageId, attachmentId) {
   _require = channelId;
   dependencyMap = messageId;
-  closure_2 = attachmentId;
-  const items = [closure_2];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => MessageStore.getMessage(closure_0, closure_1));
+  let closure_2 = attachmentId;
   let obj = require("useStateFromStores");
-  closure_3 = require("useContentHarmTypes").useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  const items = [closure_2];
+  const stateFromStores = obj.useStateFromStores(items, () => MessageStore.getMessage(channelId, messageId));
+  let obj2 = require("useContentHarmTypes");
+  let closure_3 = obj2.useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -38,16 +39,16 @@ export const useRedactableMediaAttachmentsForMessage = function useRedactableMed
     }
     return found;
   }
-  const obj2 = require("useContentHarmTypes");
 };
 export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmbedsForMessage(channelId, messageId, embedId) {
   _require = channelId;
   dependencyMap = messageId;
-  closure_2 = embedId;
-  const items = [closure_2];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => MessageStore.getMessage(closure_0, closure_1));
+  let closure_2 = embedId;
   let obj = require("useStateFromStores");
-  closure_3 = require("useContentHarmTypes").useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  const items = [closure_2];
+  const stateFromStores = obj.useStateFromStores(items, () => MessageStore.getMessage(channelId, messageId));
+  let obj2 = require("useContentHarmTypes");
+  let closure_3 = obj2.useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -63,5 +64,4 @@ export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmb
     }
     return found;
   }
-  const obj2 = require("useContentHarmTypes");
 };

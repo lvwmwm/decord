@@ -4,7 +4,7 @@
 // Dependencies: [11006, 1115, 9067, 14011, 15535, 15536, 2813, 15038, 15542, 15543, 15544, 15545, 2]
 
 // Module 15534 (MobileNotifSettingsRoutes)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef2813 from "module_2813" /* 2813 */;
 import BellIcon from "BellIcon" /* 9067 */;
 import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14011 */;
@@ -15,129 +15,106 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
+function getComponent() {
+  return require("RedesignSettingsNotificationScreen").default;
+}
+const getComponent2 = function getComponent() {
+  return require("RedesignSettingsRealtimeScreen").default;
+};
+const getComponent3 = function getComponent() {
+  return require("RedesignSettingsCategorySocialScreen").default;
+};
+const getComponent4 = function getComponent() {
+  return require("RedesignSettingsCategoryServerScreen").default;
+};
+const getComponent5 = function getComponent() {
+  return require("RedesignSettingsCategoryOtherScreen").default;
+};
 let SettingBuilders = SettingBuilders_mod;
-const obj = {
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.HcoRu0);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.HcoRu0);
   },
   IconComponent: BellIcon.BellIcon,
   parent: null,
   usePredicate() {
-    return notifications_NotificationSettingsUtils.useIsDeclarativeSettingsUIAvailable("RootRoute");
+    const obj = notifications_NotificationSettingsUtils;
+    return obj.useIsDeclarativeSettingsUIAvailable("RootRoute");
   },
-  screen: {
-    route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIFICATIONS_REDESIGN,
-    getComponent() {
-      return require("RedesignSettingsNotificationScreen").default;
-    }
-  }
+  screen: { route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIFICATIONS_REDESIGN, getComponent }
 };
-const route = SettingBuilders.createRoute(obj);
-let SettingBuilders = SettingBuilders_mod;
+const createRoute = SettingBuilders.createRoute;
+({ route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIFICATIONS_REDESIGN, getComponent });
+const route = createRoute(obj);
+SettingBuilders = SettingBuilders_mod;
+const createRoute2 = SettingBuilders.createRoute;
 const obj3 = {
   useTitle() {
-    const intl = util.intl;
+    const intl = intl2.intl;
     return intl.string(_modDef2813.S5cB9e);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
-    return notifications_NotificationSettingsUtils.useNotifCategoryVisibility("REALTIME");
+    const obj = notifications_NotificationSettingsUtils;
+    return obj.useNotifCategoryVisibility("REALTIME");
   },
-  screen: null
+  screen: { route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_REALTIME, getComponent: getComponent2 }
 };
-const obj2 = {
-  route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIFICATIONS_REDESIGN,
-  getComponent() {
-    return require("RedesignSettingsNotificationScreen").default;
-  }
-};
-obj3.screen = {
-  route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_REALTIME,
-  getComponent() {
-    return require("RedesignSettingsRealtimeScreen").default;
-  }
-};
-const route1 = SettingBuilders.createRoute(obj3);
-let SettingBuilders = SettingBuilders_mod;
+({ route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_REALTIME, getComponent: getComponent2 });
+const route2 = createRoute2(obj3);
+SettingBuilders = SettingBuilders_mod;
+const createRoute3 = SettingBuilders.createRoute;
 const obj5 = {
   useTitle() {
-    const intl = util.intl;
+    const intl = intl2.intl;
     return intl.string(_modDef2813["UzRF+8"]);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
-    return notifications_NotificationSettingsUtils.useNotifCategoryVisibility("CATEGORY_SOCIAL");
+    const obj = notifications_NotificationSettingsUtils;
+    return obj.useNotifCategoryVisibility("CATEGORY_SOCIAL");
   },
-  screen: null
+  screen: { route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_CATEGORY_SOCIAL, getComponent: getComponent3 }
 };
-const obj4 = {
-  route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_REALTIME,
-  getComponent() {
-    return require("RedesignSettingsRealtimeScreen").default;
-  }
-};
-obj5.screen = {
-  route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_CATEGORY_SOCIAL,
-  getComponent() {
-    return require("RedesignSettingsCategorySocialScreen").default;
-  }
-};
-const route2 = SettingBuilders.createRoute(obj5);
-let SettingBuilders = SettingBuilders_mod;
+({ route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_CATEGORY_SOCIAL, getComponent: getComponent3 });
+const route3 = createRoute3(obj5);
+SettingBuilders = SettingBuilders_mod;
+const createRoute4 = SettingBuilders.createRoute;
 const obj7 = {
   useTitle() {
-    const intl = util.intl;
+    const intl = intl2.intl;
     return intl.string(_modDef2813.zRKbpz);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
-    return notifications_NotificationSettingsUtils.useNotifCategoryVisibility("CATEGORY_SERVER");
+    const obj = notifications_NotificationSettingsUtils;
+    return obj.useNotifCategoryVisibility("CATEGORY_SERVER");
   },
-  screen: null
+  screen: { route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_CATEGORY_SERVER, getComponent: getComponent4 }
 };
-const obj6 = {
-  route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_CATEGORY_SOCIAL,
-  getComponent() {
-    return require("RedesignSettingsCategorySocialScreen").default;
-  }
-};
-obj7.screen = {
-  route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_CATEGORY_SERVER,
-  getComponent() {
-    return require("RedesignSettingsCategoryServerScreen").default;
-  }
-};
-const route3 = SettingBuilders.createRoute(obj7);
-let SettingBuilders = SettingBuilders_mod;
+({ route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_CATEGORY_SERVER, getComponent: getComponent4 });
+const route4 = createRoute4(obj7);
+SettingBuilders = SettingBuilders_mod;
+const createRoute5 = SettingBuilders.createRoute;
 const obj9 = {
   useTitle() {
-    const intl = util.intl;
+    const intl = intl2.intl;
     return intl.string(_modDef2813.q5M7HV);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
-    return notifications_NotificationSettingsUtils.useNotifCategoryVisibility("CATEGORY_OTHER");
+    const obj = notifications_NotificationSettingsUtils;
+    return obj.useNotifCategoryVisibility("CATEGORY_OTHER");
   },
-  screen: null
+  screen: { route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_CATEGORY_OTHER, getComponent: getComponent5 }
 };
-const obj8 = {
-  route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_CATEGORY_SERVER,
-  getComponent() {
-    return require("RedesignSettingsCategoryServerScreen").default;
-  }
-};
-obj9.screen = {
-  route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_CATEGORY_OTHER,
-  getComponent() {
-    return require("RedesignSettingsCategoryOtherScreen").default;
-  }
-};
-const route4 = SettingBuilders.createRoute(obj9);
+({ route: MobileNotifSettingsSections.MobileNotifSettingsSections.NOTIF_CATEGORY_OTHER, getComponent: getComponent5 });
+const route5 = createRoute5(obj9);
 const result = size.fileFinishedImporting("modules/notifications/settings/native/MobileNotifSettingsRoutes.tsx");
 
 export const RootRoute = route;
-export const RealtimeRoute = route1;
-export const CategorySocialRoute = route2;
-export const CategoryServerRoute = route3;
-export const CategoryOtherRoute = route4;
+export const RealtimeRoute = route2;
+export const CategorySocialRoute = route3;
+export const CategoryServerRoute = route4;
+export const CategoryOtherRoute = route5;

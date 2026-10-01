@@ -11,5 +11,6 @@ import _mod1298 from "module_1298" /* 1298 */;
 
 export default function applyBind() {
   const tmp = _mod1293;
-  return tmp(bind, _mod1298, arguments);
+  const tmp2 = bind;
+  return tmp(tmp2, _mod1298, arguments);
 };

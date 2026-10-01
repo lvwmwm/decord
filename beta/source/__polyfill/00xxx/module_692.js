@@ -11,15 +11,15 @@ function isInstanceOf(arg0, arg1) {
     return false;
   }
 }
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const isDOMError = function isDOMError(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "DOMError" + "]";
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "DOMError" + "]";
 };
 export const isDOMException = function isDOMException(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "DOMException" + "]";
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "DOMException" + "]";
 };
 export const isElement = function isElement(arg0) {
   let tmp = typeof globalThis.Element !== "undefined";
@@ -29,12 +29,11 @@ export const isElement = function isElement(arg0) {
   return tmp;
 };
 export const isError = function isError(arg0) {
-  const call = toString.call;
-  const tmp2 = typeof call === "unknown" ? toString() : call(arg0);
-  if ("[object Error]" !== tmp2) {
-    if ("[object Exception]" !== tmp2) {
-      if ("[object DOMException]" !== tmp2) {
-        if ("[object WebAssembly.Exception]" !== tmp2) {
+  const callResult = toString.call(arg0);
+  if ("[object Error]" !== callResult) {
+    if ("[object Exception]" !== callResult) {
+      if ("[object DOMException]" !== callResult) {
+        if ("[object WebAssembly.Exception]" !== callResult) {
           const _Error = Error;
           return isInstanceOf(arg0, Error);
         }
@@ -44,8 +43,8 @@ export const isError = function isError(arg0) {
   return true;
 };
 export const isErrorEvent = function isErrorEvent(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "ErrorEvent" + "]";
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "ErrorEvent" + "]";
 };
 export const isEvent = function isEvent(arg0) {
   let tmp = typeof Event !== "undefined";
@@ -70,8 +69,8 @@ export const isParameterizedString = function isParameterizedString(obj) {
   return tmp;
 };
 export const isPlainObject = function isPlainObject(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "Object" + "]";
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "Object" + "]";
 };
 export const isPrimitive = function isPrimitive(obj) {
   let tmp = null === obj;
@@ -98,8 +97,8 @@ export const isPrimitive = function isPrimitive(obj) {
   return tmp;
 };
 export const isRegExp = function isRegExp(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "RegExp" + "]";
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "RegExp" + "]";
 };
 export const isRequest = function isRequest(headers) {
   let tmp = typeof Request !== "undefined";
@@ -110,41 +109,29 @@ export const isRequest = function isRequest(headers) {
   return tmp;
 };
 export const isString = function isString(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "String" + "]";
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "String" + "]";
 };
 export const isSyntheticEvent = function isSyntheticEvent(arg0) {
-  const call = toString.call;
-  let tmp3 = (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "Object" + "]";
-  if (tmp3) {
-    tmp3 = "nativeEvent" in arg0;
-  }
-  if (tmp3) {
-    tmp3 = "preventDefault" in arg0;
-  }
-  if (tmp3) {
-    tmp3 = "stopPropagation" in arg0;
-  }
-  return tmp3;
+  const callResult = toString.call(arg0);
+  const tmp2 = callResult === "[object " + "Object" + "]" && "nativeEvent" in arg0 && "preventDefault" in arg0 && "stopPropagation" in arg0;
+  return tmp2;
 };
 export const isThenable = function isThenable(arg0) {
   let then;
+  const _Boolean = Boolean;
   if (arg0 != null) {
     then = arg0.then;
   }
   if (then) {
     then = typeof arg0.then === "function";
   }
-  return Boolean(then);
+  return _Boolean(then);
 };
 export const isVueViewModel = function isVueViewModel(__isVue) {
-  let tmp = typeof __isVue !== "object";
-  if (typeof __isVue === "object") {
-    tmp = null === __isVue;
-  }
+  let tmp = typeof __isVue !== "object" || null === __isVue;
   if (!tmp) {
     tmp = !(__isVue.__isVue || __isVue._isVue || __isVue.__v_isVNode);
-    const tmp2 = __isVue.__isVue || __isVue._isVue || __isVue.__v_isVNode;
   }
   return !tmp;
 };

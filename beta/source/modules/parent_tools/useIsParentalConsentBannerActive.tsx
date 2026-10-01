@@ -6,13 +6,15 @@
 
 // Module 14401 (useIsParentalConsentBannerActive)
 import useParentalConsentWarning from "useParentalConsentWarning" /* 14402 */;
-import ParentalConsentWarningTypes from "ParentalConsentWarningTypes" /* 14404 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const ParentalConsentWarningTypes = tmp(14404);
 const result = size.fileFinishedImporting("modules/parent_tools/useIsParentalConsentBannerActive.tsx");
 
 export const useIsParentalConsentBannerActive = function useIsParentalConsentBannerActive() {
-  const parentalConsentWarning = useParentalConsentWarning.useParentalConsentWarning();
+  const obj = useParentalConsentWarning;
+  const parentalConsentWarning = obj.useParentalConsentWarning();
   let hasItem;
   if (parentalConsentWarning != null) {
     const surfaces = parentalConsentWarning.surfaces;

@@ -7,17 +7,22 @@
 // Module 12323 (generatePropagationContext)
 import _mod12324 from "module_12324" /* 12324 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const generatePropagationContext = function generatePropagationContext() {
-  const obj = { traceId: _mod12324.uuid4(), spanId: null };
-  obj.spanId = _mod12324.uuid4().substring(16);
+  let obj2;
+  let str;
+  const obj = { traceId: obj2.uuid4(), spanId: str.substring(16) };
+  obj2 = _mod12324;
+  const obj3 = _mod12324;
+  str = obj3.uuid4();
   return obj;
 };
 export const generateSpanId = function generateSpanId() {
-  return _mod12324.uuid4().substring(16);
+  const obj = _mod12324;
+  const str = obj.uuid4();
+  return str.substring(16);
 };
 export const generateTraceId = function generateTraceId() {
-  return _mod12324.uuid4();
+  const obj = _mod12324;
+  return obj.uuid4();
 };

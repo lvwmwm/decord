@@ -4,15 +4,15 @@
 // Exports: addListener, removeAllListeners
 
 // Module 6614
-import get_ActivityIndicator from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 
-const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("RNCClipboard");
 const RNCClipboard_TEXT_CHANGED = "RNCClipboard_TEXT_CHANGED";
-const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(enforcing);
+const nativeEventEmitter = new react_native.NativeEventEmitter(enforcing);
 const listenerCount = nativeEventEmitter.listenerCount;
 let fn = listenerCount;
-if (listenerCount) {
+if (fn) {
   const listenerCount2 = nativeEventEmitter.listenerCount;
   fn = listenerCount2.bind(nativeEventEmitter);
 } else {
@@ -21,10 +21,11 @@ if (listenerCount) {
 
 export default enforcing;
 export const addListener = (arg0) => {
+  const tmp = RNCClipboard_TEXT_CHANGED;
   if (0 === fn(RNCClipboard_TEXT_CHANGED)) {
     enforcing.setListener();
   }
-  const addListenerResult = nativeEventEmitter.addListener(RNCClipboard_TEXT_CHANGED, arg0);
+  const addListenerResult = nativeEventEmitter.addListener(tmp, arg0);
   addListenerResult._remove = addListenerResult.remove;
   addListenerResult.remove = function() {
     this._remove();

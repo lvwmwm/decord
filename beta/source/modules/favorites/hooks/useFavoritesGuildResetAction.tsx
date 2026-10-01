@@ -5,37 +5,42 @@
 // Exports: default
 
 // Module 15771 (useFavoritesGuildResetAction)
+import Constants from "Constants" /* 1074 */;
+import router_utils from "router_utils" /* 1101 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import _modDef3361 from "module_3361" /* 3361 */;
 import FavoritesActionCreators from "FavoritesActionCreators" /* 9684 */;
-import noop from "module_19" /* 19 */;
+import FavoritesHooks from "FavoritesHooks" /* 9685 */;
+import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Routes = fn(1074).Routes;
-const size = fn(2);
+const Routes = Constants.Routes;
 const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildResetAction.tsx");
 
 export default function useFavoritesGuildResetAction() {
+  let guildId;
+  let intl;
+  let intl2;
   const DeveloperMode = UserSettings.DeveloperMode;
-  let hasAccess = DeveloperMode.useSetting();
-  const callback = noop.useCallback(() => {
+  let setting = DeveloperMode.useSetting();
+  let obj = FavoritesHooks;
+  const hasAccess = obj.useFavoritesAccess().hasAccess;
+  const callback = react.useCallback(() => {
+    const obj = FavoritesUtils;
     if (obj.isFavoritesGuildId(guildId.getGuildId())) {
-      tmp(tmp2[6]).transitionTo(constants.ME);
-      const tmpResult = tmp(tmp2[6]);
+      const tmpResult = router_utils;
+      tmpResult.transitionTo(constants.ME);
     }
-    obj = FavoritesUtils;
-    FavoritesActionCreators.resetFavoritesGuild();
+    const tmpResult2 = FavoritesActionCreators;
+    tmpResult2.resetFavoritesGuild();
   }, []);
-  if (hasAccess) {
-    hasAccess = obj.useFavoritesAccess().hasAccess;
+  if (setting) {
+    setting = hasAccess;
   }
-  const obj2 = { isAvailable: hasAccess, label: null, subLabel: null, perform: null };
-  const intl = tmp(1115).intl;
-  obj2.label = intl.string(_modDef3361.YkET6R);
-  const intl2 = tmp(1115).intl;
-  obj2.subLabel = intl2.string(_modDef3361.ZzcwNk);
-  obj2.perform = callback;
+  const obj2 = { isAvailable: setting, label: intl.string(_modDef3361.YkET6R), subLabel: intl2.string(_modDef3361.ZzcwNk), perform: callback };
+  intl = tmp(1115).intl;
+  intl2 = tmp(1115).intl;
   return obj2;
 };

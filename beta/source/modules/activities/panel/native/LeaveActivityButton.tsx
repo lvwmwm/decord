@@ -4,45 +4,47 @@
 // Dependencies: [19, 8502, 21, 5281, 9370, 1115, 8765, 2]
 
 // Module 16860 (LeaveActivityButton)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl3 from "intl" /* 1115 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8502 */;
 import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8765 */;
-import _modDef9370 from "module_9370" /* 9370 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9370 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 class BaseLeaveActivityButton {
-  constructor(arg0) {
-    obj = { onPress: global.onPress, icon: closure_1(closure_2[4]), text: null, accessibilityLabel: null, variant: "destructive", size: "sm", maxFontSizeMultiplier: 1 };
-    intl = closure_0(closure_2[5]).intl;
-    obj.text = intl.string(closure_0(closure_2[5]).t["Hi1/aQ"]);
-    intl2 = closure_0(closure_2[5]).intl;
-    obj.accessibilityLabel = intl2.string(closure_0(closure_2[5]).t.k0Aph0);
-    return jsx(closure_0(closure_2[3]).Button, obj);
+  constructor(onPress) {
+    const Button = components_Button_Button.Button;
+    const intl = intl3.intl;
+    const intl2 = intl3.intl;
+    return <Button onPress={arg0.onPress} icon={AssetRegistryDefault} text={intl.string(intl3.t["Hi1/aQ"])} accessibilityLabel={intl2.string(intl3.t.k0Aph0)} variant="destructive" size="sm" maxFontSizeMultiplier={1} />;
   }
 }
-const ActivityPanelModes = fn(8502).ActivityPanelModes;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/activities/panel/native/LeaveActivityButton.tsx");
-
-export default noop.memo(function LeaveActivityButton(arg0) {
+const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function LeaveActivityButton(arg0) {
   ({ selfEmbeddedActivity: require, setMode: importDefault } = arg0);
   return <BaseLeaveActivityButton onPress={function onPress() {
-    importDefault(ActivityPanelModes.DISCONNECTED);
+    const tmp = importDefault(ActivityPanelModes.DISCONNECTED);
     const timerId = setTimeout(() => {
-      let _location;
-      if (closure_1_0 != null) {
-        _location = tmp.location;
-      }
-      const obj2 = { location: _location, applicationId: null };
       let applicationId;
+      let _location;
+      const leaveActivity = EmbeddedActivitiesNativeManagerDefault.leaveActivity;
+      EmbeddedActivitiesNativeManagerDefault;
       if (closure_1_0 != null) {
-        applicationId = tmp.applicationId;
+        _location = tmp2.location;
       }
-      obj2.applicationId = applicationId;
-      EmbeddedActivitiesNativeManagerDefault.leaveActivity(obj2);
+      const obj = { location: _location, applicationId };
+      applicationId = undefined;
+      if (closure_1_0 != null) {
+        applicationId = tmp2.applicationId;
+      }
+      leaveActivity(obj);
     }, 400);
   }} />;
 });
+const result = size.fileFinishedImporting("modules/activities/panel/native/LeaveActivityButton.tsx");
+
+export default memoResult;
 export { BaseLeaveActivityButton };

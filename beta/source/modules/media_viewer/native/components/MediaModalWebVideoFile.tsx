@@ -5,31 +5,43 @@
 // Exports: createWebFileVideoControls
 
 // Module 7754 (MediaModalWebVideoFile)
+import Fragment from "Fragment" /* 21 */;
 import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7709 */;
 import MediaModalWebView from "MediaModalWebView" /* 7745 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let jsx = fn(21).jsx;
+let c4, visible;
+
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+let jsx = Fragment.jsx;
 let closure_6 = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/media_viewer/native/components/MediaModalWebVideoFile.tsx");
-
-export default noop.memo((style) => {
-  const visible = style.visible;
-  ({ source, controls } = style);
-  const merged = Object.assign(style, Object.assign({ visible: 0, style: 0, source: 0, controls: 0 }));
+const memoResult = react.memo((visible) => {
+  let closure_3;
+  let closure_4;
+  let closure_5;
+  let controls;
+  let playerState;
+  let source;
+  visible = visible.visible;
+  ({ source, controls } = visible);
+  const style = visible.style;
+  const merged = Object.assign(visible, Object.assign({ visible: 0, style: 0, source: 0, controls: 0 }));
   playerState = undefined;
   _slicedToArray = undefined;
-  noop = undefined;
+  react = undefined;
   let mediaPlayerMutedStore;
-  [playerState, _slicedToArray] = noop.useState(visible(playerState[3]).PlayerState.UNREADY);
+  let tmp3 = playerState;
+  const tmp2 = visible;
+  [playerState, _slicedToArray] = react.useState(visible(playerState[3]).PlayerState.UNREADY);
   const tmp7 = controls(playerState[4])(playerState);
-  noop = tmp7;
+  react = tmp7;
   const tmp8 = controls(playerState[4])(visible);
   jsx = tmp8;
   let ref;
+  const tmp6 = controls;
   if (controls != null) {
     let props = controls.props;
     if (props != null) {
@@ -41,11 +53,12 @@ export default noop.memo((style) => {
     const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "file", action: "attempted" });
   }, []);
   let props1;
+  const useCallback = react.useCallback;
   if (controls != null) {
     props1 = controls.props;
   }
   const items = [props1];
-  const callback = obj.useCallback((arg0) => {
+  const callback = useCallback((arg0) => {
     const iter = ((arg0) => {
       try {
         const _JSON = JSON;
@@ -54,12 +67,15 @@ export default noop.memo((style) => {
         return {};
       }
     })(arg0);
-    value = iter.value;
+    const value = iter.value;
     switch (iter.type) {
       case "loaded":
+      {
         closure_3(MediaModalWebView.PlayerState.READY);
-      break;
+        break;
+      }
       case "canplay":
+      {
         if (controls != null) {
           const props5 = controls.props;
           if (props5 != null) {
@@ -67,13 +83,17 @@ export default noop.memo((style) => {
           }
         }
         closure_3(MediaModalWebView.PlayerState.VIDEO_CUED);
-      break;
+        break;
+      }
       case "error":
+      {
         closure_3(MediaModalWebView.PlayerState.ERRORED);
         const MediaViewerAnalytics = MediaViewerAnalyticsManager.MediaViewerAnalytics;
         const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "file", action: "errored", error: "unknown" });
-      break;
+        break;
+      }
       case "ended":
+      {
         if (controls != null) {
           const props4 = controls.props;
           if (props4 != null) {
@@ -81,8 +101,10 @@ export default noop.memo((style) => {
           }
         }
         closure_3(MediaModalWebView.PlayerState.ENDED);
-      break;
+        break;
+      }
       case "play":
+      {
         if (controls != null) {
           const props3 = controls.props;
           if (props3 != null) {
@@ -90,8 +112,10 @@ export default noop.memo((style) => {
           }
         }
         closure_3(MediaModalWebView.PlayerState.PLAYING);
-      break;
+        break;
+      }
       case "pause":
+      {
         if (controls != null) {
           const props2 = controls.props;
           if (props2 != null) {
@@ -99,8 +123,10 @@ export default noop.memo((style) => {
           }
         }
         closure_3(MediaModalWebView.PlayerState.PAUSED);
-      break;
+        break;
+      }
       case "stalled":
+      {
         if (controls != null) {
           const props = controls.props;
           if (props != null) {
@@ -108,8 +134,10 @@ export default noop.memo((style) => {
           }
         }
         closure_3(MediaModalWebView.PlayerState.BUFFERING);
-      break;
+        break;
+      }
       case "durationchange":
+      {
         if (null != value) {
           if (controls != null) {
             const props8 = controls.props;
@@ -121,8 +149,10 @@ export default noop.memo((style) => {
             }
           }
         }
-      break;
+        break;
+      }
       case "progress":
+      {
         if (null != value) {
           if (controls != null) {
             const props7 = controls.props;
@@ -134,8 +164,10 @@ export default noop.memo((style) => {
             }
           }
         }
-      break;
+        break;
+      }
       case "timeupdate":
+      {
         if (null != value) {
           if (controls != null) {
             const props6 = controls.props;
@@ -147,48 +179,35 @@ export default noop.memo((style) => {
             }
           }
         }
-      break;
+        break;
+      }
     }
   }, items);
-  mediaPlayerMutedStore = visible(playerState[6]).useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
+  const tmp2Result = tmp2(tmp3[6]);
+  mediaPlayerMutedStore = tmp2Result.useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
   const items1 = [ref, visible, tmp8, tmp7, playerState, mediaPlayerMutedStore];
   const effect1 = obj.useEffect(() => {
     let current1;
     if (ref != null) {
       current1 = tmp.current;
     }
-    let tmp3 = null != current1;
-    if (tmp3) {
-      tmp3 = first !== MediaModalWebView.PlayerState.UNREADY;
-    }
+    const tmp3 = null != current1 && first !== MediaModalWebView.PlayerState.UNREADY;
     if (tmp3) {
       const current = tmp.current;
       const _JSON = JSON;
       const _HermesInternal = HermesInternal;
       current.injectJavaScript("window.player.muted = " + JSON.stringify(mediaPlayerMutedStore) + "; true;");
-      let tmp11 = visible;
-      if (visible) {
-        tmp11 = closure_4 === MediaModalWebView.PlayerState.UNREADY;
-      }
-      if (tmp11) {
-        tmp11 = first === MediaModalWebView.PlayerState.READY;
-      }
+      const tmp11 = visible && closure_4 === MediaModalWebView.PlayerState.UNREADY && first === MediaModalWebView.PlayerState.READY;
       if (tmp11) {
         const current2 = tmp.current;
         current2.injectJavaScript("window.player.play();  true;");
       }
-      let tmp19 = tmp10;
-      if (visible) {
-        tmp19 = !closure_5;
-      }
+      const tmp19 = tmp10 && !closure_5;
       if (tmp19) {
         const current3 = tmp.current;
         current3.injectJavaScript("window.player.play();  true;");
       }
-      let tmp22 = !tmp10;
-      if (!visible) {
-        tmp22 = closure_5;
-      }
+      const tmp22 = !visible && closure_5;
       if (tmp22) {
         const current4 = tmp.current;
         current4.injectJavaScript("window.player.pause(); true;");
@@ -196,17 +215,19 @@ export default noop.memo((style) => {
     }
   }, items1);
   const combined = "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        inset: 0;\n        width: 100%;\n        height: 100%;\n        background-color: #000;\n        object-fit: contain;\n      }\n    </style>\n    <script>" + "\nfunction onReady() {\n  const player = window.player = document.createElement('video');\n  player.controls = false;\n  player.autoplay = false;\n  player.playsInline = true;\n  player.disablePictureInPicture = true;\n  const addEvent = (name, func) => {\n    player.addEventListener(name, (e) => {\n      window.ReactNativeWebView.postMessage(\n        JSON.stringify({type: name, value: func ? func() : undefined})\n      );\n    });\n  };\n  addEvent('error', () => player.error);\n  addEvent('canplay');\n  addEvent('ended');\n  addEvent('pause');\n  addEvent('play');\n  addEvent('stalled');\n  addEvent('durationchange', () => player.duration);\n  addEvent('timeupdate', () => player.currentTime);\n  addEvent('progress', () => {\n    const ranges = player.buffered;\n    let total = 0;\n    for (let i = 0; i < ranges.length; i++) {\n      total += (ranges.end(i) - ranges.start(i));\n    }\n    return total;\n  });\n  player.src = " + JSON.stringify(source.uri) + ";\n  document.body.appendChild(player);\n  player.load();\n  window.ReactNativeWebView.postMessage(JSON.stringify({type: 'loaded'}));\n}\nwindow.addEventListener('load', onReady);\n" + "</script>\n  </head>\n  <body>\n  </body>\n</html>\n";
-  const obj2 = { ref, style: style.style, source: { html: combined, baseUrl: ref }, baseURL: ref, playerState, onDataReceived: callback, javaScriptEnabled: true, javaScriptCanOpenWindowsAutomatically: true };
   const obj3 = { html: combined, baseUrl: ref };
-  const tmp2Result = visible(playerState[6]);
+  tmp6(tmp3[3]);
   const merged1 = Object.assign(merged);
-  return jsx(controls(playerState[3]), { ref, style: style.style, source: { html: combined, baseUrl: ref }, baseURL: ref, playerState, onDataReceived: callback, javaScriptEnabled: true, javaScriptCanOpenWindowsAutomatically: true }, source.uri);
+  return <tmp6Result key={source.uri} ref={ref} style={style} source={obj3} baseURL={ref} playerState={playerState} onDataReceived={callback} javaScriptEnabled javaScriptCanOpenWindowsAutomatically />;
 });
+let result = size.fileFinishedImporting("modules/media_viewer/native/components/MediaModalWebVideoFile.tsx");
+
+export default memoResult;
 export const createWebFileVideoControls = function createWebFileVideoControls() {
-  const ref = noop.createRef();
-  noop = 0;
-  closure_5 = 0;
-  closure_6 = 0;
+  const ref = react.createRef();
+  react = 0;
+  let c5 = 0;
+  let c6 = 0;
   return {
     seek(arg0) {
       const current = ref.current;
@@ -220,18 +241,19 @@ export const createWebFileVideoControls = function createWebFileVideoControls() 
       const current = ref.current;
       if (current != null) {
         let str = "play";
+        const injectJavaScript = current.injectJavaScript;
         if (arg0) {
           str = "pause";
         }
         const _HermesInternal = HermesInternal;
-        current.injectJavaScript("window.player." + str + "(); true;");
+        injectJavaScript("window.player." + str + "(); true;");
       }
     },
     useSubscribe(arg0, arg1, arg2) {
-      closure_0 = arg0;
-      closure_1 = arg1;
-      closure_2 = arg2;
-      const layoutEffect = noop.useLayoutEffect(() => {
+      let closure_1_0 = arg0;
+      let closure_1_1 = arg1;
+      let closure_1_2 = arg2;
+      const layoutEffect = react.useLayoutEffect(() => {
         if (closure_1_0 != null) {
           tmp(closure_1_4, closure_1_5);
         }
@@ -240,32 +262,32 @@ export const createWebFileVideoControls = function createWebFileVideoControls() 
     props: {
       ref,
       onPlayerStateChange(arg0) {
-        if (closure_1 != null) {
-          tmp(arg0 === MediaModalWebView.PlayerState.PAUSED || arg0 === MediaModalWebView.PlayerState.ENDED);
+        if (importDefault != null) {
           const tmp5 = arg0 === MediaModalWebView.PlayerState.PAUSED || arg0 === MediaModalWebView.PlayerState.ENDED;
+          tmp(tmp5);
         }
       },
       onCurrentSecond(arg0) {
-        closure_4 = arg0;
-        if (closure_0 != null) {
-          tmp(closure_4, closure_5);
+        c4 = arg0;
+        if (require != null) {
+          tmp(c4, c5);
         }
       },
       onDuration(arg0) {
-        closure_5 = arg0;
-        if (closure_0 != null) {
-          tmp(closure_4, closure_5);
+        c5 = arg0;
+        if (require != null) {
+          tmp(c4, c5);
         }
-        if (closure_5 > 0) {
-          if (closure_2 != null) {
+        if (c5 > 0) {
+          if (dependencyMap != null) {
             tmp8(tmp7);
           }
         }
       },
       onDownloadProgress(arg0) {
-        closure_6 = arg0;
-        if (closure_5 > 0) {
-          if (closure_2 != null) {
+        c6 = arg0;
+        if (c5 > 0) {
+          if (dependencyMap != null) {
             tmp4(tmp3);
           }
         }

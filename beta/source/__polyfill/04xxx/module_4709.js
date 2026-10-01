@@ -4,30 +4,41 @@
 
 // Module 4709
 import nanoid from "nanoid" /* 1494 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 
-({ useCallback: c2, useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty } = noop);
-const memoResult = noop.memo((name) => {
+let name;
+
+let c2;
+let c3;
+let closure_4;
+let hasOwnProperty;
+({ useCallback: c2, useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty } = react);
+const memoResult = react.memo((name) => {
   name = name.name;
   const handleOnMount = name.handleOnMount;
   const handleOnUnmount = name.handleOnUnmount;
   const handleOnUpdate = name.handleOnUpdate;
   const children = name.children;
-  const portal = name(handleOnMount[1]).usePortal(name.hostName);
+  const hostName = name.hostName;
+  let obj = name(handleOnMount[1]);
+  const portal = obj.usePortal(hostName);
   const addPortal = portal.addPortal;
   const removePortal = portal.removePortal;
   const items = [name];
-  closure_7 = children(() => {
+  let closure_7 = children(() => {
     let nanoidResult = name;
-    if (!name) {
-      nanoidResult = nanoid.nanoid();
+    if (!nanoidResult) {
+      const obj = nanoid;
+      nanoidResult = obj.nanoid();
     }
     return nanoidResult;
   }, items);
   const tmp2 = addPortal();
+  const ref = tmp2;
   const tmp3 = addPortal();
-  closure_9 = tmp3;
+  let closure_9 = tmp3;
   const tmp4 = addPortal();
+  const ref2 = tmp4;
   const items1 = [handleOnMount, addPortal];
   tmp2.current = handleOnUnmount(() => {
     if (handleOnMount) {
@@ -59,11 +70,12 @@ const memoResult = noop.memo((name) => {
     }
     return () => {
       const current = ref.current;
+      const tmp = ref;
       if (current != null) {
         current();
       }
       closure_1_8.current = undefined;
-      ref.current = undefined;
+      tmp.current = undefined;
       ref2.current = undefined;
     };
   }, []);

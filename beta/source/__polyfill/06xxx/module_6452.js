@@ -6,7 +6,7 @@
 // Module 6452
 
 export const getModalRouteKeys = (arr, arg1) => {
-  closure_0 = arg1;
+  let closure_0 = arg1;
   return arr.reduce((arr, key) => {
     let options;
     if (closure_0[key.key] != null) {
@@ -16,13 +16,7 @@ export const getModalRouteKeys = (arr, arg1) => {
       options = {};
     }
     const presentation = options.presentation;
-    let tmp2 = arr.length && !presentation;
-    if (!tmp2) {
-      tmp2 = "modal" === presentation;
-    }
-    if (!tmp2) {
-      tmp2 = "transparentModal" === presentation;
-    }
+    const tmp2 = arr.length && !presentation || "modal" === presentation || "transparentModal" === presentation;
     if (tmp2) {
       arr.push(key.key);
     }

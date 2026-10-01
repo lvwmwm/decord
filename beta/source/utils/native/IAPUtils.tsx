@@ -7,47 +7,260 @@
 // Module 10513 (IAPUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
+import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import v1 from "v1" /* 1255 */;
-import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
-import PlatformUtils2 from "PlatformUtils" /* 1364 */;
+import react_nativeAll from "react-native" /* 1363 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import DeviceUtils from "DeviceUtils" /* 4812 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5051 */;
+import _mod10514 from "module_10514" /* 10514 */;
 import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 10533 */;
 import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 10534 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import iapProducts from "iapProducts" /* 10535 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DevSettingsStore from "DevSettingsStore" /* 4835 */;
 import UserStore from "UserStore" /* 1372 */;
 import IAPStore from "IAPStore" /* 6658 */;
+import Constants from "Constants" /* 1074 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, appAccountToken, arr4, c4, closure_3, closure_4, code, currentUser, useACOM;
 
-require = fn;
+let IOS_BUNDLE_ID;
+let closure_12;
+let metroImportAll;
+let tmp;
+let unpackModuleId;
+const ProductIds = tmp(6661);
 function serializePurchaseResponse(originalTransactionDate) {
-  _modDef38(null != originalTransactionDate.transactionId, "should have transactionId");
-  const obj = { originalTransactionDate: originalTransactionDate.originalTransactionDateIOS, originalTransactionIdentifier: null, transactionDate: null, transactionIdentifier: null, productIdentifier: null, transactionReceipt: null, jwsRepresentation: null };
   let parsed;
+  _modDef38(null != originalTransactionDate.transactionId, "should have transactionId");
+  obj = { originalTransactionDate: originalTransactionDate.originalTransactionDateIOS, originalTransactionIdentifier: parsed, transactionDate: originalTransactionDate.transactionDate, transactionIdentifier: parseInt(originalTransactionDate.transactionId), productIdentifier: null, transactionReceipt: null, jwsRepresentation: null };
+  parsed = undefined;
   if (null != originalTransactionDate.originalTransactionIdentifierIOS) {
     const _parseInt = parseInt;
     parsed = parseInt(originalTransactionDate.originalTransactionIdentifierIOS);
   }
-  obj.originalTransactionIdentifier = parsed;
-  obj.transactionDate = originalTransactionDate.transactionDate;
-  obj.transactionIdentifier = parseInt(originalTransactionDate.transactionId);
   ({ productId: obj.productIdentifier, transactionReceipt: obj.transactionReceipt, verificationResultIOS: obj.jwsRepresentation } = originalTransactionDate);
   return obj;
 }
 function convertToUUID(id) {
-  return v1.v5(id, NAMESPACE_SNOWFLAKE_UUID);
+  obj = v1;
+  return obj.v5(id, NAMESPACE_SNOWFLAKE_UUID);
 }
-let closure_16 = async function _restorePurchases(arg0) {
-  let fullRestore = arg0;
-  c7 = 0;
-  c8 = 0;
-  let iter = (async (arg0, value) => {
-    if (c8 === 2) {
-      c8 = 3;
+let obj = function _restorePurchases() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let arr2;
+    let fullRestore = arg0;
+    let c7 = 0;
+    let c8 = 0;
+    const iter = (async (arg0, value) => {
+      let obj16;
+      let obj6;
+      if (c8 === 2) {
+        c8 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          let closure_2;
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              let obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_4 = tmp4;
+              fullRestore = undefined;
+              fullRestore = fullRestore.fullRestore;
+              value = undefined;
+              closure_2 = undefined;
+              closure_3 = undefined;
+              c7 = 1;
+              c8 = 1;
+              return { value: "flex", done: true };
+            }
+          } else if (1 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else if (closure_131_17()) {
+              if (fullRestore) {
+                c7 = 2;
+                c8 = 1;
+                const obj5 = { value: closure_131_12.sync(), done: false };
+                return obj5;
+              } else {
+                c7 = 3;
+                c8 = 1;
+                const obj7 = { value: closure_131_12.getPendingTransactions(), done: false };
+                return obj7;
+              }
+            } else {
+              c8 = 3;
+              return { value: [], done: true };
+            }
+          } else if (2 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              closure_131_1(closure_131_3[14]);
+              c7 = 4;
+              c8 = 1;
+              const obj11 = { value: obj6.getAvailablePurchases({ onlyIncludeActiveItems: false }), done: false };
+              obj6 = closure_131_0(closure_131_3[8]);
+              return obj11;
+            }
+          } else {
+            let filter;
+            if (3 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                closure_2 = value;
+                const arr3 = closure_131_1(closure_131_3[14]);
+                closure_3 = arr3.map(closure_2, (id) => id.id);
+                filter = closure_131_1(closure_131_3[14]).filter;
+                c7 = 5;
+                c8 = 1;
+                arr4 = closure_131_1(closure_131_3[14]);
+                const obj13 = { value: obj16.getAvailablePurchases({ onlyIncludeActiveItems: false }), done: false };
+                obj16 = closure_131_0(closure_131_3[8]);
+                return obj13;
+              }
+            } else {
+              if (4 === c7) {
+                if (arg0 === 1) {
+                  c8 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c8 = 3;
+                  return { value, done: true };
+                } else {
+                  value = map(value, (originalPurchase) => {
+                    let obj3;
+                    let parsed;
+                    obj = { originalPurchase, purchaseResponse: obj3 };
+                    closure_1_1(closure_1_3[10])(null != originalPurchase.transactionId, "should have transactionId");
+                    obj3 = { originalTransactionDate: originalPurchase.originalTransactionDateIOS, originalTransactionIdentifier: parsed, transactionDate: originalPurchase.transactionDate, transactionIdentifier: parseInt(originalPurchase.transactionId), productIdentifier: null, transactionReceipt: null, jwsRepresentation: null };
+                    parsed = undefined;
+                    if (null != originalPurchase.originalTransactionIdentifierIOS) {
+                      const _parseInt = parseInt;
+                      parsed = parseInt(originalPurchase.originalTransactionIdentifierIOS);
+                    }
+                    ({ productId: obj2.productIdentifier, transactionReceipt: obj2.transactionReceipt, verificationResultIOS: obj2.jwsRepresentation } = originalPurchase);
+                    return obj;
+                  });
+                }
+              } else if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                obj = { value, done: true };
+                return obj;
+              } else {
+                const arr = filter(value, (transactionId) => {
+                  let hasItem = null != transactionId.transactionId;
+                  if (hasItem) {
+                    const _parseInt = parseInt;
+                    hasItem = closure_1_3.includes(parseInt(transactionId.transactionId));
+                  }
+                  return hasItem;
+                });
+                value = arr.map((originalPurchase) => {
+                  let obj3;
+                  let parsed;
+                  obj = { originalPurchase, purchaseResponse: obj3 };
+                  closure_1_1(closure_1_3[10])(null != originalPurchase.transactionId, "should have transactionId");
+                  obj3 = { originalTransactionDate: originalPurchase.originalTransactionDateIOS, originalTransactionIdentifier: parsed, transactionDate: originalPurchase.transactionDate, transactionIdentifier: parseInt(originalPurchase.transactionId), productIdentifier: null, transactionReceipt: null, jwsRepresentation: null };
+                  parsed = undefined;
+                  if (null != originalPurchase.originalTransactionIdentifierIOS) {
+                    const _parseInt = parseInt;
+                    parsed = parseInt(originalPurchase.originalTransactionIdentifierIOS);
+                  }
+                  ({ productId: obj2.productIdentifier, transactionReceipt: obj2.transactionReceipt, verificationResultIOS: obj2.jwsRepresentation } = originalPurchase);
+                  return obj;
+                });
+              }
+              c8 = 3;
+              return { value, done: true };
+            }
+          }
+        } catch (tmp21) {
+          c8 = 3;
+          throw tmp21;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
+};
+function isStorekit2Available() {
+  obj = PlatformUtils;
+  let isIOSResult = obj.isIOS();
+  if (isIOSResult) {
+    let isAvailableResult;
+    const obj2 = closure_12;
+    if (closure_12 != null) {
+      isAvailableResult = obj2.isAvailable();
+    }
+    isIOSResult = 1 === isAvailableResult;
+  }
+  return isIOSResult;
+}
+function remapStorefront(countryCode) {
+  let currency;
+  const country = convertToAlpha2(countryCode.countryCode);
+  if (null == countryCode.currency) {
+    if (null == GeneratedPaymentCurrencies.GeneratedPaymentCurrenciesSets.APPLE_STORE_COUNTRY_CURRENCIES[country]) {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Unable to get currency from countryCode " + countryCode.countryCode);
+      throw error;
+    }
+  } else {
+    currency = metroImportAll[str.toUpperCase(str)];
+  }
+  return { currency, country };
+}
+obj = function _fetchStoreFront() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj4;
+    if (c5 === 2) {
+      c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -57,314 +270,139 @@ let closure_16 = async function _restorePurchases(arg0) {
         return { value: "HermesInternal", done: null };
       }
     } else {
+      let c3;
       try {
-        c8 = 2;
-        if (0 === c7) {
+        let closure_1;
+        let closure_0;
+        c5 = 2;
+        if (0 === c4) {
           if (arg0 === 1) {
-            c8 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c8 = 3;
-            let obj3 = { value, done: true };
-            return obj3;
+            c5 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
           } else {
-            closure_3 = tmp2;
-            closure_4 = tmp5;
-            let fullRestore2;
-            fullRestore2 = fullRestore.fullRestore;
-            closure_132_1 = undefined;
-            closure_132_2 = undefined;
-            closure_132_3 = undefined;
-            c7 = 1;
-            c8 = 1;
-            return { value: "flex", done: true };
-          }
-        } else if (1 === tmp5) {
-          if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c8 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else if (closure_131_17()) {
-            if (fullRestore2) {
-              c7 = 2;
-              c8 = 1;
-              const obj6 = { value: obj9.sync(), done: false };
+            closure_1 = tmp;
+            closure_0 = undefined;
+            if (isStorekit2Available()) {
+              c3 = 1;
+              c4 = 2;
+              c5 = 1;
+              const obj6 = { value: obj4.getStorefront(), done: false };
+              obj4 = require("module_10514");
               return obj6;
             } else {
-              c7 = 3;
-              c8 = 1;
-              const obj7 = { value: obj9.getPendingTransactions(), done: false };
-              return obj7;
+              c5 = 3;
+              return { value: null, done: true };
             }
-          } else {
-            c8 = 3;
-            const obj8 = { value: [], done: true };
-            return obj8;
           }
-        } else if (2 === tmp5) {
-          if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c8 = 3;
-            const obj10 = { value, done: true };
-            return obj10;
-          } else {
-            arr2 = closure_131_1(closure_131_3[14]);
-            c7 = 4;
-            c8 = 1;
-            const obj11 = { value: closure_131_0(closure_131_3[8]).getAvailablePurchases({ onlyIncludeActiveItems: false }), done: false };
-            return obj11;
-          }
-        } else if (3 === tmp5) {
-          if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c8 = 3;
-            const obj12 = { value, done: true };
-            return obj12;
-          } else {
-            closure_132_2 = value;
-            closure_132_3 = closure_131_1(closure_131_3[14]).map(closure_132_2, (id) => id.id);
-            arr4 = closure_131_1(closure_131_3[14]);
-            filter = arr4.filter;
-            const arr3 = closure_131_1(closure_131_3[14]);
-            c7 = 5;
-            c8 = 1;
-            const obj13 = { value: closure_131_0(closure_131_3[8]).getAvailablePurchases({ onlyIncludeActiveItems: false }), done: false };
-            return obj13;
-          }
-        } else {
-          if (4 === tmp5) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              const obj14 = { value, done: true };
-              return obj14;
-            } else {
-              closure_132_1 = map(value, (originalPurchase) => {
-                const obj = { originalPurchase, purchaseResponse: null };
-                filter(closure_1_3[10])(null != originalPurchase.transactionId, "should have transactionId");
-                const obj3 = { originalTransactionDate: originalPurchase.originalTransactionDateIOS, originalTransactionIdentifier: null, transactionDate: null, transactionIdentifier: null, productIdentifier: null, transactionReceipt: null, jwsRepresentation: null };
-                let parsed;
-                if (null != originalPurchase.originalTransactionIdentifierIOS) {
-                  const _parseInt = parseInt;
-                  parsed = parseInt(originalPurchase.originalTransactionIdentifierIOS);
-                }
-                obj3.originalTransactionIdentifier = parsed;
-                obj3.transactionDate = originalPurchase.transactionDate;
-                obj3.transactionIdentifier = parseInt(originalPurchase.transactionId);
-                ({ productId: obj2.productIdentifier, transactionReceipt: obj2.transactionReceipt, verificationResultIOS: obj2.jwsRepresentation } = originalPurchase);
-                obj.purchaseResponse = obj3;
-                return obj;
-              });
-              c8 = 3;
-            }
-          } else if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 !== 2) {
-            closure_132_1 = filter(value, (transactionId) => {
-              let hasItem = null != transactionId.transactionId;
-              if (hasItem) {
-                const _parseInt = parseInt;
-                hasItem = closure_1_3.includes(parseInt(transactionId.transactionId));
-              }
-              return hasItem;
-            }).map((originalPurchase) => {
-              const obj = { originalPurchase, purchaseResponse: null };
-              filter(closure_1_3[10])(null != originalPurchase.transactionId, "should have transactionId");
-              const obj3 = { originalTransactionDate: originalPurchase.originalTransactionDateIOS, originalTransactionIdentifier: null, transactionDate: null, transactionIdentifier: null, productIdentifier: null, transactionReceipt: null, jwsRepresentation: null };
-              let parsed;
-              if (null != originalPurchase.originalTransactionIdentifierIOS) {
-                const _parseInt = parseInt;
-                parsed = parseInt(originalPurchase.originalTransactionIdentifierIOS);
-              }
-              obj3.originalTransactionIdentifier = parsed;
-              obj3.transactionDate = originalPurchase.transactionDate;
-              obj3.transactionIdentifier = parseInt(originalPurchase.transactionId);
-              ({ productId: obj2.productIdentifier, transactionReceipt: obj2.transactionReceipt, verificationResultIOS: obj2.jwsRepresentation } = originalPurchase);
-              obj.purchaseResponse = obj3;
-              return obj;
-            });
-            const arr = filter(value, (transactionId) => {
-              let hasItem = null != transactionId.transactionId;
-              if (hasItem) {
-                const _parseInt = parseInt;
-                hasItem = closure_1_3.includes(parseInt(transactionId.transactionId));
-              }
-              return hasItem;
-            });
-          }
-          c8 = 3;
-          let obj = { value, done: true };
-          return obj;
-        }
-      } catch (tmp23) {
-        c8 = tmp;
-        throw tmp23;
-      }
-    }
-  })();
-  iter.next();
-  return iter;
-};
-function isStorekit2Available() {
-  let isIOSResult = PlatformUtils2.isIOS();
-  if (isIOSResult) {
-    let isAvailableResult;
-    if (closure_1_12 != null) {
-      isAvailableResult = obj2.isAvailable();
-    }
-    isIOSResult = 1 === isAvailableResult;
-    obj2 = closure_1_12;
-  }
-  return isIOSResult;
-}
-function remapStorefront(countryCode) {
-  const country = convertToAlpha2(countryCode.countryCode);
-  if (null == countryCode.currency) {
-    if (null == GeneratedPaymentCurrencies.GeneratedPaymentCurrenciesSets.APPLE_STORE_COUNTRY_CURRENCIES[country]) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const error = new Error("Unable to get currency from countryCode " + countryCode.countryCode);
-      throw error;
-    }
-  } else {
-    const currency = React6[str.toUpperCase(str)];
-  }
-  return { currency, country };
-}
-let closure_19 = async function _fetchStoreFront(arg0, value) {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj4 = { value, done: true };
-      return obj4;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c5 = 2;
-      if (0 === c4) {
-        if (arg0 === 1) {
+        } else if (1 === c4) {
+          c3 = 0;
+          closure_1 = closure_2;
+          const obj3 = closure_129_0(closure_129_3[16]);
+          const result = obj3.captureBillingException(closure_1);
+          c5 = 3;
+          return { value: null, done: true };
+        } else if (arg0 === 1) {
           c5 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c3 = 0;
           c5 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
+          const obj7 = { value, done: true };
+          return obj7;
         } else {
-          closure_1 = tmp3;
-          closure_0 = tmp7;
-          closure_128_0 = undefined;
-          if (isStorekit2Available()) {
-            c3 = 1;
-            c4 = 2;
-            c5 = 1;
-            const obj6 = { value: require("module_10514").getStorefront(), done: false };
-            return obj6;
+          let tmp8;
+          closure_0 = value;
+          if (null != closure_0) {
+            tmp8 = closure_129_18(closure_0);
           } else {
-            c5 = 3;
-            return { value: null, done: true };
+            tmp8 = closure_0;
           }
+          c3 = 0;
+          c5 = 3;
+          obj = { value: tmp8, done: true };
+          return obj;
         }
-      } else if (1 === tmp7) {
-        c3 = 0;
-        closure_128_1 = closure_2;
-        const result = closure_129_0(closure_129_3[16]).captureBillingException(closure_128_1);
-        c5 = 3;
-        return { value: null, done: true };
-      } else if (arg0 === 1) {
-        c5 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c3 = 0;
-        c5 = 3;
-        const obj = { value, done: true };
-        return obj;
-      } else {
-        closure_128_0 = value;
-        if (null != closure_128_0) {
-          closure_129_18(closure_128_0);
+      } catch (tmp24) {
+        closure_2 = tmp24;
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp24;
+        } else {
+          c4 = 1;
         }
-        c3 = 0;
-        c5 = 3;
-      }
-    } catch (tmp28) {
-      closure_2 = tmp28;
-      if (tmp4 === c3) {
-        c5 = tmp2;
-        throw tmp28;
-      } else {
-        c4 = tmp;
       }
     }
-  }
+  });
+  return obj(...arguments);
 };
-const convertToAlpha2 = fn(5051).convertToAlpha2;
-const Constants = fn(1074);
-({ CurrencyCodes: closure_8, IOS_BUNDLE_ID } = Constants);
-const NAMESPACE_SNOWFLAKE_UUID = fn(1374).NAMESPACE_SNOWFLAKE_UUID;
-({ InAppUtils: closure_11, RNIapIosSk2: closure_12 } = fn(17).NativeModules);
-let items = [fn(10514).ErrorCode.E_USER_CANCELLED, Constants.StoreKitErrors.PAYMENT_CANCELED];
+const NativeModules = react_native.NativeModules;
+const convertToAlpha2 = CountryCodeUtils.convertToAlpha2;
+({ CurrencyCodes: metroImportAll, IOS_BUNDLE_ID } = Constants);
+const StoreKitErrors = Constants.StoreKitErrors;
+const NAMESPACE_SNOWFLAKE_UUID = PremiumConstants.NAMESPACE_SNOWFLAKE_UUID;
+({ InAppUtils: unpackModuleId, RNIapIosSk2: closure_12 } = NativeModules);
+let items = [_mod10514.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
 let set = new Set(items);
-new LoggerDefault("IAPUtils.tsx");
-let obj = {
+const tmp4 = new LoggerDefault("IAPUtils.tsx");
+obj = {
   loadProducts() {
+    let nextPromise;
+    const tmp = require;
+    obj = PlatformUtils;
     if (obj.isIOS()) {
+      const all = _Promise.all;
       const _Object = Object;
-      let items = [StorekitIAPQueueDefault.fetchSubscriptions(Object.values(tmp(6661).ProductIds)), ];
+      let items = [, ];
+      const obj2 = StorekitIAPQueueDefault;
+      items[0] = obj2.fetchSubscriptions(Object.values(ProductIds.ProductIds));
       const _Object2 = Object;
-      items[1] = StorekitIAPQueueDefault.fetchProducts(Object.values(tmp(6661).ProductIds));
-      let nextPromise = _Promise.all(items).then((result) => {
+      const obj3 = StorekitIAPQueueDefault;
+      items[1] = obj3.fetchProducts(Object.values(ProductIds.ProductIds));
+      const allResult = all(items);
+      nextPromise = allResult.then((result) => {
+        let tmp;
         [r10007, tmp] = result;
         set = new Set();
         const items = [...tmp];
-        return _modDef12.filter(items, (identifier) => {
+        const arr = _modDef12;
+        return arr.filter(items, (identifier) => {
           const hasItem = set.has(identifier.identifier);
           let flag = !hasItem;
-          if (!hasItem) {
-            set.add(identifier.identifier);
+          obj = set;
+          if (flag) {
+            obj.add(identifier.identifier);
             flag = true;
           }
           return flag;
         });
       });
-      const allResult = _Promise.all(items);
     } else {
       nextPromise = _Promise.resolve([]);
     }
     return nextPromise;
   },
   purchaseProduct(arg0, arg1, arg2) {
-    closure_1 = arg1;
-    closure_2 = arg2;
-    closure_0 = asyncGeneratorStep(async (sku, withOffer) => {
-      c6 = 0;
-      c7 = 0;
-      c5 = 0;
-      return (async (arg0, value) => {
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let closure_0 = _asyncToGenerator(async (sku, withOffer) => {
+      let c6 = 0;
+      let c7 = 0;
+      let c5 = 0;
+      return (async function(arg0, value) {
+        let obj2;
+        let obj6;
         if (c7 === 2) {
           c7 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp6 === 3) {
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
             throw value;
           } else if (arg0 === 2) {
-            const obj3 = { value, done: true };
-            return obj3;
+            return { value, done: true };
           } else {
             return { value: "HermesInternal", done: null };
           }
@@ -377,187 +415,173 @@ let obj = {
                 throw value;
               } else if (arg0 === 2) {
                 c7 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
+                return { value, done: true };
               } else {
-                closure_3 = tmp3;
-                appAccountToken = tmp7;
-                closure_130_0 = sku;
-                closure_130_1 = withOffer;
-                closure_130_2 = undefined;
+                closure_3 = tmp;
+                appAccountToken = undefined;
+                const tmp40 = withOffer;
                 if (null != currentUser.getCurrentUser()) {
                   c5 = 1;
                   c6 = 2;
                   c7 = 1;
-                  const obj5 = { value: sku(10514).clearTransactionIOS(), done: false };
+                  const obj5 = { value: obj6.clearTransactionIOS(), done: false };
+                  obj6 = sku(closure_2_3[8]);
                   return obj5;
                 } else {
                   const _Error2 = Error;
+                  const self3 = this;
+                  const self4 = this;
                   const error = new Error("purchaseProduct: no valid user");
-                  tmp48(error);
+                  tmp40(error);
                 }
-                tmp48 = withOffer;
               }
-            } else {
-              if (1 === tmp7) {
-                c5 = 0;
-                closure_130_1(closure_4);
-              } else if (2 === tmp7) {
-                if (arg0 === 1) {
-                  c7 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c5 = 0;
-                  c7 = 3;
-                  const obj7 = { value, done: true };
-                  return obj7;
-                } else {
-                  const obj8 = { sku, appAccountToken, withOffer };
-                  c6 = 3;
-                  c7 = 1;
-                  const obj9 = { value: sku(10514).requestPurchase(obj8), done: false };
-                  return obj9;
-                }
-              } else if (arg0 === 1) {
+            } else if (1 === c6) {
+              c5 = 0;
+              withOffer(closure_4);
+            } else if (2 === c6) {
+              if (arg0 === 1) {
                 c7 = 3;
                 throw value;
-              } else if (arg0 !== 2) {
-                closure_130_2 = value;
-                const _Object = Object;
-                if (closure_130_2 instanceof Object) {
-                  closure_130_0(serializePurchaseResponse(closure_130_2));
-                  c5 = 0;
-                } else {
-                  const _Error = Error;
-                  const error1 = new Error("Unable to select a platform, no request was made");
-                  throw error1;
-                }
+              } else if (arg0 === 2) {
+                c5 = 0;
+                c7 = 3;
+                return { value, done: true };
+              } else {
+                c6 = 3;
+                c7 = 1;
+                const obj8 = { sku, appAccountToken, withOffer };
+                const obj9 = { value: obj2.requestPurchase(obj8), done: false };
+                obj2 = sku(closure_2_3[8]);
+                return obj9;
               }
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
               c5 = 0;
               c7 = 3;
-              const obj = { value, done: true };
-              return obj;
+              return { value, done: true };
+            } else {
+              appAccountToken = value;
+              const _Object = Object;
+              if (appAccountToken instanceof Object) {
+                sku(closure_2_14(appAccountToken));
+                c5 = 0;
+              } else {
+                const _Error = Error;
+                const self = this;
+                const self2 = this;
+                const error1 = new Error("Unable to select a platform, no request was made");
+                throw error1;
+              }
             }
             c7 = 3;
-          } catch (tmp38) {
-            closure_4 = tmp38;
-            if (tmp4 === c5) {
-              c7 = tmp2;
-              throw tmp38;
+            return { value: "HermesInternal", done: null };
+          } catch (tmp31) {
+            closure_4 = tmp31;
+            if (0 === c5) {
+              c7 = 3;
+              throw tmp31;
             } else {
-              c6 = tmp;
+              c6 = 1;
             }
           }
         }
       })();
     });
-    return new Promise(function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+    const promise = new Promise(function() {
+      return closure_0(...arguments);
     });
+    return promise;
   },
   canMakePayments() {
-    return new Promise((arg0, arg1) => {
-      closure_0 = arg0;
-      closure_1 = arg1;
-      closure_1_11.canMakePayments((arg0) => {
-        if (!arg0) {
+    const promise = new Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      closure_1_11.canMakePayments(function(arg0) {
+        const tmp = arg0;
+        if (!tmp) {
           const _Error = Error;
+          const self = this;
+          const self2 = this;
           const error = new Error();
           closure_1(error);
         }
         closure_0(arg0);
       });
     });
+    return promise;
   },
   restorePurchases() {
-    const self = this;
-    const apply = closure_16.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+    return obj(...arguments);
   },
   fetchStoreFront() {
-    const self = this;
-    const apply = closure_19.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+    return obj(...arguments);
   }
 };
-let PlatformUtils = fn(1364);
+let PlatformUtils = PlatformUtils_mod;
 PlatformUtils = PlatformUtils.isIOS();
 if (PlatformUtils) {
-  let isIOSResult1 = fn(1364).isIOS();
+  const _module2 = PlatformUtils;
+  let isIOSResult1 = _module2.isIOS();
   if (isIOSResult1) {
-    let Identifier = ClientInfoUtilsAll.getConstants().Identifier;
+    const importAllResult = react_nativeAll;
+    let Identifier = importAllResult.getConstants().Identifier;
     let _HermesInternal = HermesInternal;
+    const str = ".local";
     let isRunningOnSimulator = Identifier.startsWith("" + IOS_BUNDLE_ID + ".local");
     if (!isRunningOnSimulator) {
-      isRunningOnSimulator = fn(4812).getIsRunningOnSimulator();
-      let obj6 = fn(4812);
+      const _module3 = DeviceUtils;
+      isRunningOnSimulator = _module3.getIsRunningOnSimulator();
     }
     isIOSResult1 = isRunningOnSimulator;
-    const importAllResult = ClientInfoUtilsAll;
   }
   let value = isIOSResult1;
   if (!value) {
     value = DevSettingsStore.get("force_mock_iap");
   }
   PlatformUtils = value;
-  let obj4 = fn(1364);
 }
 if (PlatformUtils) {
-  obj = fn(10535).default;
+  obj = iapProducts.default;
 }
 function shouldMockIAPForceEnable() {
-  let isIOSResult = PlatformUtils2.isIOS();
+  obj = PlatformUtils;
+  let isIOSResult = obj.isIOS();
   if (isIOSResult) {
-    const Identifier = ClientInfoUtilsAll.getConstants().Identifier;
+    const obj2 = react_nativeAll;
+    const Identifier = obj2.getConstants().Identifier;
     const _HermesInternal = HermesInternal;
     let isRunningOnSimulator = Identifier.startsWith("" + IOS_BUNDLE_ID + ".local");
     if (!isRunningOnSimulator) {
-      isRunningOnSimulator = DeviceUtils.getIsRunningOnSimulator();
       const tmpResult = DeviceUtils;
+      isRunningOnSimulator = tmpResult.getIsRunningOnSimulator();
     }
     isIOSResult = isRunningOnSimulator;
   }
   return isIOSResult;
 }
-const size = fn(2);
 let result = size.fileFinishedImporting("utils/native/IAPUtils.tsx");
 
 export default obj;
 export { convertToUUID };
 export const makeIAPRequest = function makeIAPRequest(arg0, arg1, arg2) {
-  closure_1 = arg1;
-  closure_2 = arg2;
-  closure_0 = asyncGeneratorStep(async (requestJSONString, sku) => {
-    c6 = 0;
-    c7 = 0;
-    c5 = 0;
-    return (async (arg0, value) => {
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  let closure_0 = _asyncToGenerator(async (requestJSONString, sku) => {
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (async function(arg0, value) {
+      let first;
       if (c7 === 2) {
         c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
+          return { value, done: true };
         } else {
           return { value: "HermesInternal", done: null };
         }
@@ -570,94 +594,90 @@ export const makeIAPRequest = function makeIAPRequest(arg0, arg1, arg2) {
               throw value;
             } else if (arg0 === 2) {
               c7 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
+              return { value, done: true };
             } else {
-              closure_3 = tmp3;
-              useACOM = tmp7;
-              closure_130_0 = requestJSONString;
-              closure_130_1 = sku;
-              closure_130_2 = undefined;
+              code = tmp;
+              useACOM = undefined;
               currentUser = currentUser.getCurrentUser();
+              const tmp54 = sku;
               if (null != currentUser) {
                 c5 = 1;
-                const obj6 = { requestJSONString, sku, appAccountToken: convertToUUID(currentUser.id), andDangerouslyFinishTransactionAutomaticallyIOS: false, useACOM };
+                const obj5 = { requestJSONString, sku, appAccountToken: closure_2_15(currentUser.id), andDangerouslyFinishTransactionAutomaticallyIOS: false, useACOM };
+                const requestPurchase = requestJSONString(closure_2_3[8]).requestPurchase;
+                requestJSONString(closure_2_3[8]);
                 c6 = 2;
                 c7 = 1;
-                const obj7 = { value: requestJSONString(10514).requestPurchase(obj6), done: false };
-                return obj7;
+                const obj6 = { value: requestPurchase(obj5), done: false };
+                return obj6;
               } else {
                 const _Error2 = Error;
+                const self3 = this;
+                const self4 = this;
                 const error = new Error("purchaseProduct: no valid user");
-                tmp61(error);
-              }
-              tmp61 = sku;
-            }
-          } else {
-            if (1 === tmp7) {
-              c5 = 0;
-              closure_130_3 = closure_4;
-              if (!set.has(closure_130_3.code)) {
-                const result = requestJSONString(4503).captureBillingException(closure_130_3);
-                const obj3 = requestJSONString(4503);
-              }
-              closure_130_1(closure_130_3);
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              closure_130_2 = value;
-              const _Object = Object;
-              if (closure_130_2 instanceof Object) {
-                const obj = { purchaseResponse: serializePurchaseResponse(closure_130_2), originalPurchase: null };
-                const _Array = Array;
-                if (Array.isArray(closure_130_2)) {
-                  let first = tmp19[0];
-                } else {
-                  first = tmp19;
-                }
-                obj.originalPurchase = first;
-                closure_130_0(obj);
-                c5 = 0;
-              } else {
-                const _Error = Error;
-                const error1 = new Error("Unable to select a platform, no request was made");
-                throw error1;
+                tmp54(error);
               }
             }
+          } else if (1 === c6) {
+            c5 = 0;
+            code = closure_4;
+            if (!set.has(code.code)) {
+              const obj3 = requestJSONString(closure_2_3[16]);
+              const result = obj3.captureBillingException(code);
+            }
+            sku(code);
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
             c5 = 0;
             c7 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
+            return { value, done: true };
+          } else {
+            useACOM = value;
+            const _Object = Object;
+            if (useACOM instanceof Object) {
+              const _Array = Array;
+              obj = { purchaseResponse: closure_2_14(useACOM), originalPurchase: first };
+              const tmp9 = requestJSONString;
+              if (Array.isArray(useACOM)) {
+                first = tmp14[0];
+              } else {
+                first = tmp14;
+              }
+              tmp9(obj);
+              c5 = 0;
+            } else {
+              const _Error = Error;
+              const self = this;
+              const self2 = this;
+              const error1 = new Error("Unable to select a platform, no request was made");
+              throw error1;
+            }
           }
           c7 = 3;
-        } catch (tmp49) {
-          closure_4 = tmp49;
-          if (tmp4 === c5) {
-            c7 = tmp2;
-            throw tmp49;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp43) {
+          closure_4 = tmp43;
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp43;
           } else {
-            c6 = tmp;
+            c6 = 1;
           }
         }
       }
     })();
   });
-  return new Promise(function() {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+  const promise = new Promise(function() {
+    return closure_0(...arguments);
   });
+  return promise;
 };
 export const useCanPurchaseIAP = function useCanPurchaseIAP(productId) {
   _require = productId;
+  obj = require("get initialized");
   const items = [UserStore];
-  closure_1 = require("initialize").useStateFromStores(items, () => {
+  let closure_1 = obj.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let flag;
     if (currentUser != null) {
@@ -668,16 +688,16 @@ export const useCanPurchaseIAP = function useCanPurchaseIAP(productId) {
     }
     return flag;
   }, []);
-  const obj = require("initialize");
   const items1 = [IAPStore];
-  return !require("initialize").useStateFromStores(items1, () => {
+  const obj2 = require("get initialized");
+  return !obj2.useStateFromStores(items1, () => {
     const isReadyResult = IAPStore.isReady();
     let tmp2 = !isReadyResult;
     if (isReadyResult) {
       let isBusyResult = obj.isBusy();
       if (isBusyResult) {
-        isBusyResult = null == closure_0 || !obj.isPurchasingProduct(tmp4);
-        const tmp6 = null == closure_0 || !obj.isPurchasingProduct(tmp4);
+        isBusyResult = null == productId || !IAPStore.isPurchasingProduct(tmp4);
+        null == productId || !IAPStore.isPurchasingProduct(tmp4);
       }
       tmp2 = isBusyResult;
     }
@@ -690,21 +710,25 @@ export const useCanPurchaseIAP = function useCanPurchaseIAP(productId) {
 export { isStorekit2Available };
 export { remapStorefront };
 export const manageSubscription = function manageSubscription() {
-  let isIOSResult = PlatformUtils2.isIOS();
+  let result;
+  obj = PlatformUtils;
+  let isIOSResult = obj.isIOS();
   if (isIOSResult) {
     let isAvailableResult;
-    if (closure_1_12 != null) {
+    const obj2 = closure_12;
+    if (closure_12 != null) {
       isAvailableResult = obj2.isAvailable();
     }
     isIOSResult = 1 === isAvailableResult;
-    obj2 = closure_1_12;
   }
   if (isIOSResult) {
-    let result = closure_1_12.showManageSubscriptions();
+    result = closure_12.showManageSubscriptions();
   } else {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error("StoreKit 2 is not available");
-    result = Promise.reject(error);
+    result = reject(error);
   }
   return result;
 };

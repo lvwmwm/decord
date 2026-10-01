@@ -4,43 +4,47 @@
 // Exports: default
 
 // Module 1864
-import _mod1830 from "module_1830" /* 1830 */;
-import disabledDefault from "disabled" /* 1857 */;
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import KeyboardController2 from "KeyboardController" /* 1830 */;
+import _modDef1857 from "module_1857" /* 1857 */;
 import _modDef1858 from "module_1858" /* 1858 */;
-import noop from "module_19" /* 19 */;
 
-require = fn;
-fn(19).useCallback;
-const jsx = fn(21).jsx;
+const useCallback = react2.useCallback;
+const jsx = Fragment.jsx;
 
 export default function _default(icon) {
+  let button;
+  let children;
+  let disabled;
+  let onPress;
+  let rippleRadius;
+  let style;
   ({ children, onPress } = icon);
   ({ disabled, button } = icon);
   ({ rippleRadius, style } = icon);
   if (button === undefined) {
-    button = disabledDefault;
+    const tmp = importDefault;
+    button = _modDef1857;
   }
   icon = icon.icon;
   if (icon === undefined) {
     icon = _modDef1858;
   }
-  const toolbarContext = onPress(1863).useToolbarContext();
+  const obj = onPress(1863);
+  const toolbarContext = obj.useToolbarContext();
   const theme = toolbarContext.theme;
+  const tmp5 = onPress;
   if (disabled == null) {
     disabled = toolbarContext.isNextDisabled;
   }
   const items = [onPress];
-  const obj2 = { accessibilityHint: "Moves focus to the next field", accessibilityLabel: "Next", disabled, rippleRadius, style, testID: null, theme: null, onPress: null, children: null };
-  const obj = onPress(1863);
-  const tmp5 = onPress;
-  obj2.testID = tmp5(1856).TEST_ID_KEYBOARD_TOOLBAR_NEXT;
-  obj2.theme = theme;
-  obj2.onPress = useCallback((isDefaultPrevented) => {
+  const tmp8 = useCallback((isDefaultPrevented) => {
     if (onPress != null) {
       tmp(isDefaultPrevented);
     }
     if (!isDefaultPrevented.isDefaultPrevented()) {
-      const KeyboardController = _mod1830.KeyboardController;
+      const KeyboardController = KeyboardController2.KeyboardController;
       KeyboardController.setFocusTo("next");
     }
   }, items);
@@ -48,6 +52,5 @@ export default function _default(icon) {
     const obj3 = { disabled, theme, type: "next" };
     children = tmp9(icon, obj3);
   }
-  obj2.children = children;
-  return <button accessibilityHint="Moves focus to the next field" accessibilityLabel="Next" disabled={disabled} rippleRadius={rippleRadius} style={style} testID={null} theme={null} onPress={null}>{null}</button>;
+  return <button accessibilityHint="Moves focus to the next field" accessibilityLabel="Next" disabled={disabled} rippleRadius={rippleRadius} style={style} testID={tmp5(1856).TEST_ID_KEYBOARD_TOOLBAR_NEXT} theme={theme} onPress={tmp8}>{children}</button>;
 };

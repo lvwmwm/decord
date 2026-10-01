@@ -4,34 +4,37 @@
 // Dependencies: [19, 17, 21, 4836, 576, 6402, 2]
 
 // Module 6461 (NavScrim)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-get_ActivityIndicator = fn(17);
-({ View: c2, StyleSheet } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { androidNavScrim: null };
-const obj3 = {};
+let StyleSheet;
+let c2;
+let obj2;
+({ View: c2, StyleSheet } = react_native);
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+const obj = { androidNavScrim: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.ANDROID_NAVIGATION_SCRIM_BACKGROUND, top: undefined };
+createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3.backgroundColor = nativeDefault.colors.ANDROID_NAVIGATION_SCRIM_BACKGROUND;
-obj3.top = undefined;
-obj.androidNavScrim = obj3;
-let closure_4 = createStyles.createStyles(obj);
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/Navigator/native/NavScrim.android.tsx");
-
-export const NavScrim = noop.memo(() => {
+let closure_4 = createStyles(obj);
+const memoResult = react.memo(() => {
+  const tmp = closure_4();
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeCustomKeyboardHeight: false }).insets;
   let tmp2 = null;
   if (0 !== insets.bottom) {
-    const obj = { style: null, pointerEvents: "none" };
     const items = [tmp.androidNavScrim, ];
     const obj2 = { height: insets.bottom };
     items[1] = obj2;
-    obj.style = items;
-    tmp2 = <React2 style={null} pointerEvents="none" />;
+    tmp2 = <React2 style={items} pointerEvents="none" />;
   }
   return tmp2;
 });
+const result = size.fileFinishedImporting("design/components/Navigator/native/NavScrim.android.tsx");
+
+export const NavScrim = memoResult;

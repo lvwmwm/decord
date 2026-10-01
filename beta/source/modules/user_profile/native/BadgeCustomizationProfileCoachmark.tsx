@@ -6,44 +6,53 @@
 
 // Module 16624 (BadgeCustomizationProfileCoachmark)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 4559 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const PX_64 = nativeDefault.space.PX_64;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/BadgeCustomizationProfileCoachmark.tsx");
 
 export default function BadgeCustomizationProfileCoachmark(markAsDismissed) {
+  let c2;
+  let rect2;
+  let targetRef;
+  let visible;
   ({ targetRef, visible } = markAsDismissed);
-  targetRef = visible;
   markAsDismissed = markAsDismissed.markAsDismissed;
-  visible = markAsDismissed;
   const onTryItOut = markAsDismissed.onTryItOut;
   let reducedMotion;
   let str2;
+  let tmp = visible;
+  const tmp2 = onTryItOut;
+  let obj = visible(onTryItOut[8]);
   const items = [str2];
-  const stateFromStores = targetRef(504).useStateFromStores(items, () => visible(_undefined[9]).canUsePremiumProfileCustomization(str2.getCurrentUser()));
-  reducedMotion = reducedMotion.useContext(targetRef(4550).AccessibilityPreferencesContext).reducedMotion;
-  dependencyMap = undefined;
-  const height = visible(1479)().height;
-  let rect = visible(1613)();
-  let obj = targetRef(504);
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const obj = markAsDismissed(onTryItOut[9]);
+    return obj.canUsePremiumProfileCustomization(str2.getCurrentUser());
+  });
   let obj2 = reducedMotion;
+  reducedMotion = reducedMotion.useContext(visible(onTryItOut[10]).AccessibilityPreferencesContext).reducedMotion;
+  c2 = undefined;
+  const height = markAsDismissed(onTryItOut[5])().height;
+  let rect = markAsDismissed(onTryItOut[6])();
   [rect2, c2] = stateFromStores(reducedMotion.useState(null), 2);
   const items1 = [targetRef, visible, height];
+  stateFromStores(reducedMotion.useState(null), 2);
   const effect = reducedMotion.useEffect(() => {
-    if (visible) {
+    const tmp = visible;
+    if (tmp) {
       const current = targetRef.current;
       if (current != null) {
         current.measureInWindow((arg0, top, arg2, arg3) => {
           if (0 !== arg3) {
             const rect = { top, bottom: top + arg3 };
-            _undefined(rect);
+            closure_1_2(rect);
           }
         });
       }
@@ -52,38 +61,49 @@ export default function BadgeCustomizationProfileCoachmark(markAsDismissed) {
   let str = "bottom";
   str2 = "bottom";
   if (null != rect2) {
+    const tmpResult = tmp(tmp2[7]);
     if (height - tmpResult.getFloatingNavBottomMargin(rect.bottom) - PX_64 - rect2.bottom < rect2.top - rect.top) {
       str = "top";
     }
     str2 = str;
-    tmpResult = tmp(16604);
   }
   const items2 = [stateFromStores, visible, str2, markAsDismissed, onTryItOut, reducedMotion.enabled];
   const memo = obj2.useMemo(() => {
-    const obj = { title: null, description: null, visible: null, position: null, gradientColor: "blue", graphic: null, onDismiss: null, buttonLabel: null, buttonVariant: "primary", onButtonPress: null };
-    const intl = util.intl;
-    obj.title = intl.string(util.t["9JoKQb"]);
-    const intl2 = util.intl;
-    const t = util.t;
-    obj.description = intl2.string(stateFromStores ? t.p82vky : t.IDh31t);
-    obj.visible = targetRef;
-    obj.position = str2;
-    const obj2 = { type: "rive", rive: BadgesCoachmarkRive.BadgesCoachmarkRive, aspectRatio: "16/9", riveProps: null };
-    const obj3 = { dataBinding: { on: targetRef, reducedMotion: reducedMotion.enabled } };
-    obj2.riveProps = obj3;
-    obj.graphic = obj2;
-    obj.onDismiss = function onDismiss() {
-      return visible(constants.USER_DISMISS);
+    let intl;
+    let intl3;
+    let obj2;
+    let obj3;
+    let obj4;
+    let string;
+    let t;
+    const obj = {
+      title: intl.string(intl4.t["9JoKQb"]),
+      description: string(stateFromStores ? t.p82vky : t.IDh31t),
+      visible,
+      position: str2,
+      gradientColor: "blue",
+      graphic: obj2,
+      onDismiss() {
+        return markAsDismissed(constants.USER_DISMISS);
+      },
+      buttonLabel: intl3.string(tmp(1115).t["4P5I8V"]),
+      buttonVariant: "primary",
+      onButtonPress() {
+        markAsDismissed(constants.TAKE_ACTION);
+        onTryItOut();
+      }
     };
-    const intl3 = tmp(1115).intl;
-    obj.buttonLabel = intl3.string(util.t["4P5I8V"]);
-    obj.onButtonPress = function onButtonPress() {
-      visible(constants.TAKE_ACTION);
-      _undefined();
-    };
+    intl = intl4.intl;
+    const intl2 = intl4.intl;
+    string = intl2.string;
+    t = intl4.t;
+    obj2 = { type: "rive", rive: BadgesCoachmarkRive.BadgesCoachmarkRive, aspectRatio: "16/9", riveProps: obj3 };
+    obj3 = { dataBinding: obj4 };
+    obj4 = { on: visible, reducedMotion: reducedMotion.enabled };
+    intl3 = tmp(1115).intl;
     return obj;
   }, items2);
-  const tmp4 = stateFromStores(reducedMotion.useState(null), 2);
-  const coachmark = targetRef(10589).useCoachmark(targetRef, memo);
+  const tmpResult2 = tmp(tmp2[13]);
+  const coachmark = tmpResult2.useCoachmark(targetRef, memo);
   return null;
 };

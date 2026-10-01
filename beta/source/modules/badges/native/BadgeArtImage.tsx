@@ -5,20 +5,32 @@
 // Exports: default
 
 // Module 10766 (BadgeArtImage)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import FastImageDefault from "FastImage" /* 5899 */;
-import noop from "module_19" /* 19 */;
+import inlineStyles from "inlineStyles" /* 7909 */;
+import react from "react" /* 19 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
 function ignoreSvgError() {
 
 }
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-let size = fn(2);
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/badges/native/BadgeArtImage.tsx");
 
 export default function BadgeArtImage(style) {
+  let animated;
+  let fallbackUrl;
+  let height;
+  let obj5;
+  let obj8;
+  let tmp12;
+  let tmpResult2;
+  let url;
+  let width;
   ({ url, height, width } = style);
   if (width === undefined) {
     width = height;
@@ -27,50 +39,42 @@ export default function BadgeArtImage(style) {
   if (animated === undefined) {
     animated = false;
   }
-  const size = { width, height };
-  const obj = { style: null, "aria-hidden": true, children: null };
+  size = { width, height };
   const items = [size, style.style];
-  obj.style = items;
-  const formatted = url.split(/[?#]/)[0].toLowerCase();
+  const str = url.split(/[?#]/)[0];
+  const formatted = str.toLowerCase();
   if (formatted.endsWith(".svg")) {
-    let APNGPlayer = require;
-    let obj5 = dependencyMap;
-    const size1 = { uri: url, width, height, onError: ignoreSvgError, fallback: null };
-    if (null == fallbackUrl) {
-      size1.fallback = undefined;
-      let tmpResult = tmp(tmp8, size1);
-    } else {
-      if (!animated) {
-        const obj2 = { source: null, style: null, resizeMode: "contain", enableAnimation: null };
-        const obj3 = { uri: fallbackUrl };
-        obj2.source = obj3;
-        obj2.style = size;
-        obj2.enableAnimation = animated;
-        let tmpResult2 = tmp(FastImageDefault, obj2);
-      } else {
-        const APNGPlayerResult = APNGPlayer(1364);
+    const size1 = { uri: url, width, height, onError: ignoreSvgError, fallback: tmp12 };
+    tmp12 = undefined;
+    const SvgUri = inlineStyles.SvgUri;
+    if (null != fallbackUrl) {
+      if (animated) {
+        let tmpResult;
+        const tmp8Result = PlatformUtils;
+        if (tmp8Result.isAndroid()) {
+          const obj2 = { url: fallbackUrl, style: size, autoplay: true };
+          tmpResult = tmp(tmp8(8271).APNGPlayer, obj2);
+        }
+        tmp12 = tmpResult;
       }
-      APNGPlayer = APNGPlayer(8271).APNGPlayer;
-      obj5 = { url: fallbackUrl, style: size, autoplay: true };
-      tmpResult2 = tmp(APNGPlayer, obj5);
+      const obj3 = { source: obj5, style: size, resizeMode: "contain", enableAnimation: animated };
+      obj5 = { uri: fallbackUrl };
+      tmpResult = tmp(FastImageDefault, obj3);
     }
+    tmpResult2 = tmp(SvgUri, size1);
   } else {
     if (animated) {
+      const obj4 = PlatformUtils;
+      const tmp3 = require;
       if (obj4.isAndroid()) {
         const obj6 = { url, style: size, autoplay: true };
-        tmpResult = tmp(tmp3(8271).APNGPlayer, obj6);
+        tmpResult2 = tmp(tmp3(8271).APNGPlayer, obj6);
       }
-      obj4 = PlatformUtils;
-      tmp3 = require;
     }
-    const obj7 = { source: null, style: null, resizeMode: "contain", enableAnimation: null };
-    const obj8 = { uri: url };
-    obj7.source = obj8;
-    obj7.style = size;
-    obj7.enableAnimation = animated;
-    tmpResult = tmp(FastImageDefault, obj7);
+    const obj7 = { source: obj8, style: size, resizeMode: "contain", enableAnimation: animated };
+    obj8 = { uri: url };
+    tmpResult2 = tmp(FastImageDefault, obj7);
   }
-  obj.children = tmpResult;
-  return <View style={null} aria-hidden>{null}</View>;
+  return <tmp2 style={items} aria-hidden>{tmpResult2}</tmp2>;
 };
 export const COMPLEX_BADGE_ASPECT_RATIO = 1.56;

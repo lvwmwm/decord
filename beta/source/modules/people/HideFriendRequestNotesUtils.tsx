@@ -14,7 +14,8 @@ const result = size.fileFinishedImporting("modules/people/HideFriendRequestNotes
 export const useHideFriendRequestNotes = function useHideFriendRequestNotes() {
   const HideFriendRequestNotes = UserSettings.HideFriendRequestNotes;
   const setting = HideFriendRequestNotes.useSetting();
-  let userIsTeen = useUserIsTeen.useUserIsTeen();
+  const obj = useUserIsTeen;
+  let userIsTeen = obj.useUserIsTeen();
   if (null != setting) {
     userIsTeen = setting;
   }

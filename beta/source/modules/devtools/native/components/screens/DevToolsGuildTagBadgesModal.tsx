@@ -4,56 +4,54 @@
 // Dependencies: [19, 21, 7339, 6421, 7288, 10386, 15306, 2]
 
 // Module 15305 (DevToolsGuildTagBadgesModal)
+import Fragment from "Fragment" /* 21 */;
 import HeaderShared from "HeaderShared" /* 7288 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10386 */;
 import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 15306 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import NativeStackView from "NativeStackView" /* 7339 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const jsx = fn(21).jsx;
-const NativeStackNavigator = fn(7339);
-let closure_4 = NativeStackNavigator.createNativeStackNavigator();
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesModal.tsx");
-
-export default noop.memo(function DevToolsGuildTagBadgesModal() {
-  _require = require("Navigator").useAccessibilityNativeStackOptions();
-  const obj2 = {
-    screenOptions(navigation) {
-      const obj = {
-        headerTitle(children) {
-          const merged = Object.assign(children, Object.assign({ children: 0 }));
-          const merged1 = Object.assign(merged);
-          return closure_1_3(closure_1_0(closure_1_2[4]).GenericHeaderTitle, { title: children.children });
-        },
-        headerLeft: HeaderShared.getRenderModalCloseImage(navigation.navigation),
-        headerTitleAlign: "center"
-      };
-      let merged = Object.assign(closure_0);
-      let merged1 = Object.assign(getNavigationModalPresentationDefault());
-      return obj;
-    },
-    children: null
-  };
+const jsx = Fragment.jsx;
+let closure_4 = NativeStackView.createNativeStackNavigator();
+const memoResult = react.memo(function DevToolsGuildTagBadgesModal() {
+  let Navigator;
+  let Screen;
+  let closure_0;
   let obj = require("Navigator");
+  _require = obj.useAccessibilityNativeStackOptions();
   ({ Navigator, Screen } = closure_4);
-  obj2.children = <Screen name="DevToolsGuildTagBadges" options={function options() {
-    return { title: "Guild Tag Badges" };
-  }} component={DevToolsGuildTagBadgesScreenDefault} />;
+  ({
+    name: "DevToolsGuildTagBadges",
+    options() {
+      return { title: "Guild Tag Badges" };
+    },
+    component: DevToolsGuildTagBadgesScreenDefault
+  });
   return <Navigator screenOptions={function screenOptions(navigation) {
-    const obj = {
+    let obj2;
+    let obj = {
       headerTitle(children) {
+        children = children.children;
         const merged = Object.assign(children, Object.assign({ children: 0 }));
+        const obj = { title: children };
+        const GenericHeaderTitle = closure_1_0(closure_1_2[4]).GenericHeaderTitle;
         const merged1 = Object.assign(merged);
-        return closure_1_3(closure_1_0(closure_1_2[4]).GenericHeaderTitle, { title: children.children });
+        return closure_1_3(GenericHeaderTitle, obj);
       },
-      headerLeft: HeaderShared.getRenderModalCloseImage(navigation.navigation),
+      headerLeft: obj2.getRenderModalCloseImage(navigation),
       headerTitleAlign: "center"
     };
+    navigation = navigation.navigation;
+    obj2 = HeaderShared;
     let merged = Object.assign(closure_0);
     let merged1 = Object.assign(getNavigationModalPresentationDefault());
     return obj;
   }}>{null}</Navigator>;
 });
+const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesModal.tsx");
+
+export default memoResult;

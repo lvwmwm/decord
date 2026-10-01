@@ -8,6 +8,7 @@
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_0, dependencyMap;
 
 function defaultStatesAreEqual(arg0, arg1) {
   return arg0 === arg1;
@@ -15,18 +16,23 @@ function defaultStatesAreEqual(arg0, arg1) {
 const result = size.fileFinishedImporting("lib/ZustandStore.tsx");
 
 export const createZustandStore = function createZustandStore(arg0) {
+  let closure_1;
   _require = arg0;
-  const obj = require("module_1243");
-  dependencyMap = obj.createWithEqualityFn(require("module_4706").subscribeWithSelector((arg0, arg1, arg2) => {
+  let tmp = require("module_1243");
+  const createWithEqualityFn = tmp.createWithEqualityFn;
+  let obj = require("combine");
+  dependencyMap = createWithEqualityFn(obj.subscribeWithSelector((arg0, arg1, arg2) => {
     closure_0 = arg0;
     return closure_0((arg0) => {
       closure_0 = arg0;
-      return closure_0(closure_1_1[2]).batchUpdates(() => closure_0(closure_0));
+      const obj = closure_0(closure_1_1[2]);
+      return obj.batchUpdates(() => closure_0(closure_0));
     }, arg1, arg2);
   }));
   function setState(arg0) {
     closure_0 = arg0;
-    closure_0(closure_1[2]).batchUpdates(() => state.setState(closure_0));
+    const obj = closure_0(closure_1[2]);
+    obj.batchUpdates(() => state.setState(closure_0));
   }
   const store = {
     useState(arg0) {
@@ -65,7 +71,8 @@ export const createZustandStore = function createZustandStore(arg0) {
     resetState() {
       if (typeof setState === "function") {
         const initialState = state.getInitialState();
-        initialState(state[2]).batchUpdates(() => state.setState(closure_0));
+        const obj = initialState(state[2]);
+        obj.batchUpdates(() => state.setState(closure_0));
       } else {
         throw new TypeError("Trying to call a non-function");
       }

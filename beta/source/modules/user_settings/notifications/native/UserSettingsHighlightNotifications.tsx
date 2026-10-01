@@ -5,57 +5,73 @@
 // Exports: default
 
 // Module 15073 (UserSettingsHighlightNotifications)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import GuildIconDefault from "GuildIcon" /* 5896 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function Row(guildId) {
+  let guild;
+  let isEnd;
+  let isStart;
+  let muted;
   guildId = guildId.guildId;
   const items = [guildId];
   ({ isStart, isEnd } = guildId);
-  const callback = noop.useCallback((arg0) => {
+  const callback = react.useCallback((arg0) => {
+    const updateGuildNotificationSettings = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
+    const obj = { notify_highlights: arg0 ? HighlightSettings.ENABLED : HighlightSettings.DISABLED };
+    NotificationSettingsModalActionCreatorsDefault;
     const NotificationLabel = NotificationSettingsUtils.NotificationLabel;
-    const result = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings(guildId, { notify_highlights: arg0 ? HighlightSettings.ENABLED : HighlightSettings.DISABLED }, NotificationLabel.highlights(!arg0));
+    const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.highlights(!arg0));
   }, items);
+  const tmp2 = guildId;
+  let obj = guildId(504);
   const items1 = [UserGuildSettingsStore, GuildStore];
   const items2 = [guildId];
-  const stateFromStoresObject = guildId(504).useStateFromStoresObject(items1, () => ({ guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) }), items2);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items1, () => {
+    const obj = { guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) };
+    return obj;
+  }, items2);
   ({ guild, muted } = stateFromStoresObject);
-  let name;
+  let name1;
+  const notifyHighlights = stateFromStoresObject.notifyHighlights;
   if (guild != null) {
-    name = guild.name;
+    name1 = guild.name;
   }
-  if (null == name) {
+  if (null == name1) {
     return null;
   } else {
+    const name = guild.name;
     if (!muted) {
-      muted = stateFromStoresObject.notifyHighlights === HighlightSettings.DISABLED;
+      muted = notifyHighlights === HighlightSettings.DISABLED;
     }
-    const obj2 = { guild };
-    const obj3 = { label: guild.name, icon: jsx(GuildIconDefault, { guild }), value: !muted, onValueChange: callback, start: isStart, end: isEnd };
-    return jsx(tmp2(6621).TableSwitchRow, { label: guild.name, icon: jsx(GuildIconDefault, { guild }), value: !muted, onValueChange: callback, start: isStart, end: isEnd });
+    const tmp7 = !muted;
+    jsx(GuildIconDefault, { guild });
+    return jsx(tmp2(6621).TableSwitchRow, { label: name, icon: jsx(GuildIconDefault, { guild }), value: tmp7, onValueChange: callback, start: isStart, end: isEnd });
   }
-  const obj = guildId(504);
-  tmp2 = guildId;
 }
-const HighlightSettings = fn(1074).HighlightSettings;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const HighlightSettings = Constants.HighlightSettings;
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsHighlightNotifications.tsx");
 
 export default function UserSettingsHighlightNotifications() {
+  let flattenedGuildIds;
+  let stateFromStoresArray;
   const items = [SortedGuildStore];
-  stateFromStoresArray = stateFromStoresArray(504).useStateFromStoresArray(items, () => flattenedGuildIds.getFlattenedGuildIds());
+  const obj = stateFromStoresArray(504);
+  const tmp = stateFromStoresArray;
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => flattenedGuildIds.getFlattenedGuildIds());
   [][0] = stateFromStoresArray;
   let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
-    const obj2 = { children: tmp3 };
-    tmp4 = jsx(stateFromStoresArray(8053).Form, { children: tmp3 });
+    tmp4 = jsx(tmp(8053).Form, { children: tmp3 });
   }
   return tmp4;
 };

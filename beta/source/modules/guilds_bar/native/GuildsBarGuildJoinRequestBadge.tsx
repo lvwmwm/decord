@@ -5,51 +5,53 @@
 // Exports: default
 
 // Module 15935 (GuildsBarGuildJoinRequestBadge)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import _modDef11772 from "module_11772" /* 11772 */;
-import _modDef15936 from "module_15936" /* 15936 */;
-import _modDef15937 from "module_15937" /* 15937 */;
-import _modDef15938 from "module_15938" /* 15938 */;
-import noop from "module_19" /* 19 */;
+import LegacyTokens from "LegacyTokens" /* 5753 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11772 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15936 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15937 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15938 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { badgeImageContainer: null, badgeImage: null };
-let size = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
-obj2.badgeImageContainer = size;
-const size1 = { height: 16, width: 16, opacity: fn(5753).DARK_1_LIGHT_08 };
-obj2.badgeImage = size1;
-let closure_5 = createStyles.createStyles(obj2);
-size = fn(2);
+let size;
+let size1;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+const obj = { badgeImageContainer: size, badgeImage: size1 };
+size = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
+createStyles = createStyles.createStyles;
+size1 = { height: 16, width: 16, opacity: LegacyTokens.DARK_1_LIGHT_08 };
+let closure_5 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx");
 
 export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
+  let tmp4;
   joinRequestState = joinRequestState.joinRequestState;
+  const style = joinRequestState.style;
   const tmp = closure_5();
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp4 = _modDef15936;
-  } else if (tmp2(4658).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp4 = _modDef15937;
-  } else if (tmp2(4658).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp4 = _modDef15938;
+    tmp4 = AssetRegistryDefault2;
+  } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+    tmp4 = AssetRegistryDefault3;
+  } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
+    tmp4 = AssetRegistryDefault4;
   } else {
     tmp4 = null;
-    if (tmp2(4658).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp4 = _modDef11772;
+    if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+      tmp4 = AssetRegistryDefault;
     }
   }
   let tmp9 = null;
   if (null != tmp4) {
-    const obj = { pointerEvents: "none", style: null, children: null };
-    const items = [tmp.badgeImageContainer, joinRequestState.style];
-    obj.style = items;
-    const obj2 = { source: tmp4, style: tmp.badgeImage };
-    obj.children = jsx(FastImageDefault, { source: tmp4, style: tmp.badgeImage });
-    tmp9 = <View pointerEvents="none" style={null}>{null}</View>;
+    const items = [tmp.badgeImageContainer, style];
+    tmp9 = <View pointerEvents="none" style={items}>{null}</View>;
   }
   return tmp9;
 };

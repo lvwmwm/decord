@@ -5,28 +5,30 @@
 // Exports: default
 
 // Module 15334 (useMountTimer)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/useMountTimer.tsx");
 
 export default function useMountTimer() {
-  const tmp = _slicedToArray(noop.useState(null), 2);
-  closure_0 = tmp[1];
-  noop.useRef(0);
-  noop.useRef(0);
-  noop.useRef(null);
-  return {
-    run: tmp[0],
-    begin: noop.useCallback((params) => {
+  let closure_0;
+  let first;
+  [first, closure_0] = react.useState(null);
+  let closure_1 = react.useRef(0);
+  let closure_2 = react.useRef(0);
+  let closure_3 = react.useRef(null);
+  let obj = {
+    run: first,
+    begin: react.useCallback((params) => {
       const sum = ref.current + 1;
       ref.current = sum;
-      closure_3.current = sum;
-      closure_2.current = performance.now();
-      closure_0({ batchKey: sum, params });
+      ref3.current = sum;
+      ref2.current = performance.now();
+      const obj = { batchKey: sum, params };
+      closure_0(obj);
     }, []),
-    measure: noop.useCallback((arg0) => {
+    measure: react.useCallback((arg0) => {
       let diff = null;
       if (arg0 === ref3.current) {
         ref3.current = null;
@@ -35,10 +37,11 @@ export default function useMountTimer() {
       }
       return diff;
     }, []),
-    cancel: noop.useCallback((arg0) => {
+    cancel: react.useCallback((arg0) => {
       if (arg0 === ref3.current) {
         tmp.current = null;
       }
     }, [])
   };
+  return obj;
 };

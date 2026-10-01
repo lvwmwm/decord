@@ -5,48 +5,52 @@
 // Exports: ChannelCallSingleController
 
 // Module 9482 (ChannelCallSingleController)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import CallConstants from "CallConstants" /* 4857 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const ParticipantTypes = fn(4857).ParticipantTypes;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const AnalyticEvents = Constants.AnalyticEvents;
+const ParticipantTypes = CallConstants.ParticipantTypes;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallSingleController.tsx");
 
 export const ChannelCallSingleController = function ChannelCallSingleController(selectedParticipant) {
   selectedParticipant = selectedParticipant.selectedParticipant;
   const channel = selectedParticipant.channel;
   const items = [channel.id];
-  const effect = noop.useEffect(() => {
-    const obj = AnalyticsUtilsDefault;
-    const obj2 = { video_layout: "focus" };
-    const merged = Object.assign(AppAnalyticsUtils.collectVoiceAnalyticsMetadata(channel.id));
-    obj.track(AnalyticEvents.VIDEO_LAYOUT_TOGGLED, obj2);
+  const effect = react.useEffect(() => {
+    const track = AnalyticsUtilsDefault.track;
+    const VIDEO_LAYOUT_TOGGLED = AnalyticEvents.VIDEO_LAYOUT_TOGGLED;
+    const obj = { video_layout: "focus" };
+    AnalyticsUtilsDefault;
+    const obj2 = AppAnalyticsUtils;
+    const merged = Object.assign(obj2.collectVoiceAnalyticsMetadata(channel.id));
+    track(VIDEO_LAYOUT_TOGGLED, obj);
   }, items);
   selectedParticipant(504);
   [][0] = ApplicationStreamingStore;
   const type = selectedParticipant.type;
   if (ParticipantTypes.STREAM === type) {
-    if (null == tmp4) {
-      return null;
-    } else {
-      let tmp18 = channel;
-      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 9483 : 9485);
-      let obj2 = { participant: selectedParticipant, channel };
-      <tmp18 participant={selectedParticipant} channel={channel} />;
+    const id = selectedParticipant.user.id;
+    let tmp15Result = null;
+    if (null != tmp4) {
+      tmp15Result = jsx(channel(id === tmp13 ? 9483 : 9485), { participant: selectedParticipant, channel });
     }
-  } else if (tmp5.USER === type) {
-    let obj = { participant: selectedParticipant, channel };
+    return tmp15Result;
+  } else if (ParticipantTypes.USER === type) {
     return jsx(channel(9486), { participant: selectedParticipant, channel });
-  } else if (tmp5.HIDDEN_STREAM === type) {
+  } else if (ParticipantTypes.HIDDEN_STREAM === type) {
     return null;
-  } else if (tmp5.ACTIVITY === type) {
+  } else if (ParticipantTypes.ACTIVITY === type) {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error("Activities are not supported on old voice UI");
     throw error;
   }

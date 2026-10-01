@@ -5,97 +5,97 @@
 // Exports: default
 
 // Module 14261 (SettingSegmentedControlRenderer)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11007 */;
 import SettingTreeManagerDefault from "SettingTreeManager" /* 14252 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const View = fn(17).View;
-const NodeType = fn(11007).NodeType;
-const jsxProd = fn(21);
-({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { controlContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 }, pageContainer: { flex: 1 } };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
+let c10;
+let c9;
+let metroImportAll;
+let obj2;
+const View = react_native.View;
+const NodeType = SettingRendererConstants.NodeType;
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
+let obj = { controlContainer: obj2, pageContainer: { flex: 1 } };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };
+let closure_11 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingSegmentedControlRenderer.tsx");
 
 export default function SettingSegmentedControl(node) {
+  let _undefined;
+  let c0;
+  let c2;
+  let items1;
+  let settings;
+  let tmp3;
+  let tmp5;
+  const f99403 = () => {
+    const field = UserSettingSearchStore.getField("selected");
+    if (null != field) {
+      const index = settings.indexOf(field);
+      if (-1 !== index) {
+        return index;
+      } else {
+        const obj = SettingTreeManagerDefault;
+        const ancestors = obj.getAncestors(field);
+        for (const item10020 of ancestors) {
+          let index1 = settings.indexOf(item10020);
+          if (-1 !== index1) {
+            obj2.return();
+            return index1;
+          }
+        }
+      }
+    }
+    return c0;
+  };
   _require = undefined;
   settings = undefined;
   dependencyMap = undefined;
   ({ defaultIndex: c0, settings } = node.node);
   let tmp = closure_11();
-  [tmp3, c2] = noop.useState(0);
-  let tmp2 = _slicedToArray(noop.useState(0), 2);
-  [tmp5, r10021] = noop.useState(() => {
-    const field = UserSettingSearchStore.getField("selected");
-    if (null != field) {
-      const index = settings.indexOf(field);
-      if (-1 !== index) {
-        return index;
-      } else {
-        const ancestors = SettingTreeManagerDefault.getAncestors(field);
-        for (const item10020 of ancestors) {
-          let index1 = settings.indexOf(item10020);
-          if (-1 !== index1) {
-            obj2.return();
-            return index1;
-          }
-        }
-      }
-    }
-    return c0;
-  });
+  let tmp2 = _slicedToArray(react.useState(0), 2);
+  [tmp3, c2] = tmp2;
+  [tmp5, r10021] = _slicedToArray(react.useState(f99403), 2);
   let items = [settings];
-  const callback = noop.useCallback((nativeEvent) => {
+  const tmp4 = _slicedToArray(react.useState(f99403), 2);
+  const callback = react.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     const items = [];
     const item = settings.forEach((id) => {
-      const tmp = items(14142).SETTING_RENDERER_CONFIG[id];
-      settings(38)(tmp.type === constants.ROUTE, "Invalid setting type for segmented control: " + id);
+      let component;
+      let obj2;
+      const tmp = closure_2_0(_undefined[9]).SETTING_RENDERER_CONFIG[id];
+      const tmp2 = settings(_undefined[10]);
+      tmp2(tmp.type === constants.ROUTE, "Invalid setting type for segmented control: " + id);
       const screen = tmp.screen;
-      const obj = { label: null, id: null, page: null };
-      const component = screen.getComponent();
-      const tmp2 = settings(38);
-      obj.label = items(14251).getSettingTitle(id);
-      obj.id = id;
-      obj.page = closure_2_8(component, {});
-      items.push(obj);
+      const obj = { label: obj2.getSettingTitle(id), id, page: closure_2_8(component, {}) };
+      component = screen.getComponent();
+      const push = items.push;
+      obj2 = closure_2_0(_undefined[11]);
+      push(obj);
     });
     return items;
   }, items);
-  const tmp4 = _slicedToArray(noop.useState(() => {
-    const field = UserSettingSearchStore.getField("selected");
-    if (null != field) {
-      const index = settings.indexOf(field);
-      if (-1 !== index) {
-        return index;
-      } else {
-        const ancestors = SettingTreeManagerDefault.getAncestors(field);
-        for (const item10020 of ancestors) {
-          let index1 = settings.indexOf(item10020);
-          if (-1 !== index1) {
-            obj2.return();
-            return index1;
-          }
-        }
-      }
-    }
-    return c0;
-  }), 2);
-  const segmentedControlState = require("SegmentedControlState").useSegmentedControlState({ items: memo, pageWidth: tmp3, defaultIndex: tmp5 });
-  const obj2 = { children: null };
   let obj = require("SegmentedControlState");
-  const items1 = [closure_8(View, { style: tmp.controlContainer, onLayout: callback, children: closure_8(require("SegmentedControl").SegmentedControl, { state: segmentedControlState }) }), ];
+  const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: tmp3, defaultIndex: tmp5 });
+  let obj2 = { children: items1 };
+  items1 = [, ];
   const obj3 = { style: tmp.controlContainer, onLayout: callback, children: closure_8(require("SegmentedControl").SegmentedControl, { state: segmentedControlState }) };
-  items1[1] = closure_8(View, { style: tmp.pageContainer, children: closure_8(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState }) });
-  obj2.children = items1;
+  items1[0] = closure_8(View, obj3);
+  const obj4 = { style: tmp.pageContainer, children: closure_8(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState }) };
+  items1[1] = closure_8(View, obj4);
   return closure_10(closure_9, obj2);
 };

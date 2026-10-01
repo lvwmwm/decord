@@ -5,35 +5,54 @@
 // Exports: default
 
 // Module 10767 (BadgeProgressSection)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import intl3 from "intl" /* 1115 */;
 import BadgeDetailsUtils from "BadgeDetailsUtils" /* 10667 */;
 import BadgeArtImageDefault from "BadgeArtImage" /* 10766 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { section: { gap: nativeDefault.space.PX_12 }, row: null, content: null, track: null, fill: null };
-let obj3 = { gap: nativeDefault.space.PX_12 };
-obj2.row = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 };
-let obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 };
-obj2.content = { flex: 1, gap: nativeDefault.space.PX_8 };
-let obj5 = { flex: 1, gap: nativeDefault.space.PX_8 };
-obj2.track = { height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, overflow: "hidden" };
-let obj6 = { height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, overflow: "hidden" };
-obj2.fill = { height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { section: obj2, row: obj3, content: obj4, track: obj5, fill: obj6 };
+obj2 = { gap: nativeDefault.space.PX_12 };
+createStyles = createStyles.createStyles;
+obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 };
+obj4 = { flex: 1, gap: nativeDefault.space.PX_8 };
+obj5 = { height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, overflow: "hidden" };
+obj6 = { height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+let closure_6 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/badges/native/BadgeProgressSection.tsx");
 
 export default function BadgeProgressSection(arg0) {
+  let badge;
+  let currentArtUrl;
+  let helperText;
+  let intl;
+  let items;
+  let items1;
+  let items2;
+  let nextArtUrl;
+  let obj9;
+  let progress;
+  let range;
+  let threshold;
+  let viewerBadge;
   ({ badge, viewerBadge } = arg0);
   const tmp = closure_6();
-  const badgeProgressDisplay = BadgeDetailsUtils.getBadgeProgressDisplay(badge, viewerBadge);
+  const obj = BadgeDetailsUtils;
+  const badgeProgressDisplay = obj.getBadgeProgressDisplay(badge, viewerBadge);
   ({ progress, threshold, currentArtUrl, nextArtUrl, helperText } = badgeProgressDisplay);
   let num;
   if (progress != null) {
@@ -49,37 +68,34 @@ export default function BadgeProgressSection(arg0) {
   if (num2 == null) {
     num2 = 0;
   }
-  const obj2 = { style: tmp.section, children: null };
-  const obj3 = { variant: "text-sm/medium", color: "text-default", children: null };
-  const intl = tmp2(1115).intl;
-  obj3.children = intl.string(util.t["2m/g2c"]);
-  const items = [React4(Text_Text.Text, obj3), ];
-  const obj4 = { style: tmp.row, children: null };
+  const obj2 = { style: tmp.section, children: items };
+  const obj3 = { variant: "text-sm/medium", color: "text-default", children: intl.string(intl3.t["2m/g2c"]) };
+  const Text = tmp2(4832).Text;
+  intl = tmp2(1115).intl;
+  items = [React3(Text, obj3), ];
   let tmp7Result = null != currentArtUrl;
+  const obj4 = { style: tmp.row, children: items1 };
   if (tmp7Result) {
     const obj5 = { url: currentArtUrl, height: 48 };
     tmp7Result = tmp7(BadgeArtImageDefault, obj5);
   }
-  const items1 = [tmp7Result, , ];
-  const obj6 = { style: tmp.content, children: null };
+  items1 = [tmp7Result, , ];
   let tmp7Result4 = null != helperText;
+  const obj6 = { style: tmp.content, children: items2 };
   if (tmp7Result4) {
     const obj7 = { variant: "text-sm/medium", "aria-hidden": null != threshold, children: helperText };
     tmp7Result4 = tmp7(tmp2(4832).Text, obj7);
   }
-  const items2 = [tmp7Result4, ];
+  items2 = [tmp7Result4, ];
   let tmp7Result5 = null != threshold;
   if (tmp7Result5) {
-    const obj8 = { style: tmp.track, accessible: true, accessibilityRole: "progressbar", accessibilityLabel: null, accessibilityValue: null, children: null };
+    const obj8 = { style: tmp.track, accessible: true, accessibilityRole: "progressbar", accessibilityLabel: helperText, accessibilityValue: range, children: React3(View, obj9) };
     if (helperText == null) {
       const intl2 = tmp2(1115).intl;
       helperText = intl2.string(tmp2(1115).t.Uwhb1l);
     }
-    obj8.accessibilityLabel = helperText;
-    const range = { min: num2, max: threshold, now: null };
+    range = { min: num2, max: threshold, now: Math.min(num, threshold) };
     const _Math = Math;
-    range.now = Math.min(num, threshold);
-    obj8.accessibilityValue = range;
     const items3 = [tmp.fill, ];
     const diff = threshold - num2;
     let num5 = 1;
@@ -88,15 +104,12 @@ export default function BadgeProgressSection(arg0) {
       const _Math3 = Math;
       num5 = Math.min(Math.max((num - num2) / diff, 0), 1);
     }
-    const obj9 = { style: null };
     const obj10 = { width: `${100 * num5}%` };
+    obj9 = { style: items3 };
     items3[1] = obj10;
-    obj9.style = items3;
-    obj8.children = tmp7(tmp6, obj9);
     tmp7Result5 = tmp7(tmp6, obj8);
   }
   items2[1] = tmp7Result5;
-  obj6.children = items2;
   items1[1] = hasOwnProperty(View, obj6);
   let tmp7Result6 = null != nextArtUrl;
   if (tmp7Result6) {
@@ -104,8 +117,6 @@ export default function BadgeProgressSection(arg0) {
     tmp7Result6 = tmp7(BadgeArtImageDefault, obj11);
   }
   items1[2] = tmp7Result6;
-  obj4.children = items1;
   items[1] = hasOwnProperty(View, obj4);
-  obj2.children = items;
   return hasOwnProperty(View, obj2);
 };

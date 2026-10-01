@@ -4,46 +4,59 @@
 // Dependencies: [19, 1372, 4494, 1074, 21, 12936, 4488, 1115, 6837, 10977, 14518, 11006, 8122, 14520, 2]
 
 // Module 14517 (PremiumSetting)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
 import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 6837 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 10977 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;
 import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 12936 */;
 import PremiumTabBadgeDefault from "PremiumTabBadge" /* 14518 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+
+const UserSettingsSections = Constants.UserSettingsSections;
+const jsx = Fragment.jsx;
+let obj = {
   useTitle: function getPremiumSettingTitle() {
-    const mobileNitroManageSubscriptionsSettingsExperiment = MobileNitroManageSubscriptionsSettingsExperiment.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
+    let stringResult1;
+    const obj = MobileNitroManageSubscriptionsSettingsExperiment;
+    const mobileNitroManageSubscriptionsSettingsExperiment = obj.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
+    const hasPremiumSubscriptionToDisplay = PremiumUtils.hasPremiumSubscriptionToDisplay;
+    PremiumUtils;
     const currentUser = UserStore.getCurrentUser();
-    const result = PremiumUtils.hasPremiumSubscriptionToDisplay(currentUser, SubscriptionStore.getPremiumTypeSubscription());
-    const intl = util.intl;
+    const result = hasPremiumSubscriptionToDisplay(currentUser, SubscriptionStore.getPremiumTypeSubscription());
+    const intl = intl2.intl;
     const string = intl.string;
-    let t = util.t;
+    const t = intl2.t;
     if (result) {
+      let stringResult;
       if (mobileNitroManageSubscriptionsSettingsExperiment) {
-        t = t["4gwVVn"];
-        let stringResult = string(t);
+        stringResult = string(t["4gwVVn"]);
       } else {
         stringResult = string(t["8jmdON"]);
       }
+      stringResult1 = stringResult;
     } else {
-      return string(t["8x0jKT"]);
+      stringResult1 = string(t["8x0jKT"]);
     }
+    return stringResult1;
   },
   parent: null,
-  IconComponent: fn(8122).NitroWheelIcon,
+  IconComponent: NitroWheelIcon.NitroWheelIcon,
   usePreNavigationAction: function useCanNavigateToPaymentSetting() {
-    return noop.useCallback(() => {
-      const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();
+    return react.useCallback(() => {
+      const obj = BlockedPaymentsCountryExperiment;
+      const isPaymentsBlocked = obj.getIsPaymentsBlocked();
       let flag = !isPaymentsBlocked;
+      const tmp = dependencyMap;
       if (isPaymentsBlocked) {
-        openBlockedPaymentsCountryActionSheetDefault();
+        require("openBlockedPaymentsCountryActionSheet")();
         flag = false;
       }
       return flag;
@@ -53,13 +66,13 @@ const route = SettingBuilders.createRoute({
     return jsx(PremiumTabBadgeDefault, {});
   },
   screen: {
-    route: fn(1074).UserSettingsSections.PREMIUM,
+    route: UserSettingsSections.PREMIUM,
     getComponent() {
       return require("PremiumSettingScreen").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/PremiumSetting.tsx");
 
 export default route;

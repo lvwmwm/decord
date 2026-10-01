@@ -4,16 +4,20 @@
 // Dependencies: [1235, 1350, 2071, 558, 1435, 6539, 2]
 
 // Module 17685 (LibdiscoreExperimentManager)
-import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
-import js_shim_shim from "js_shim/shim" /* 1350 */;
+import shallowEqualDefault from "shallowEqual" /* 558 */;
+import shim from "shim" /* 1350 */;
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import libdiscoreExperiments from "libdiscoreExperiments" /* 2071 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let map, treatmentId;
+
 function experimentStoreUpdateHandler() {
+  const obj = shim;
   if (obj.isLibdiscoreInitialized()) {
+    const tmpResult = libdiscoreExperiments;
     if (!tmpResult.isExperimentSyncDisabled()) {
       obj2 = {};
       const ALL_LIBDISCORE_EXPERIMENTS = tmp(2071).ALL_LIBDISCORE_EXPERIMENTS;
@@ -21,47 +25,54 @@ function experimentStoreUpdateHandler() {
         obj2[item10018.id] = item10018.getCurrentConfig();
         continue;
       }
-      let tmp7 = null != obj2;
-      if (tmp7) {
-        tmp7 = discord_common_shallowEqualDefault(obj2, obj2);
-      }
+      const tmp7 = null != obj2 && shallowEqualDefault(obj2, obj2);
       if (!tmp7) {
-        const experimentCacher = js_shim_shim.getExperimentCacher();
+        const obj4 = shim;
+        const experimentCacher = obj4.getExperimentCacher();
         const _JSON = JSON;
         experimentCacher.flushToCache(JSON.stringify(obj2));
       }
     }
-    tmpResult = tmp(2071);
   }
 }
-class LibdiscoreExperimentManager extends tmp2 {
+let obj2 = null;
+class LibdiscoreExperimentManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.actions = {};
     map = new Map();
-    applyArgumentsResult.stores = map.set(closure_3, experimentStoreUpdateHandler);
+    applyArgumentsResult.stores = map.set(ApexExperimentStore, experimentStoreUpdateHandler);
     return applyArgumentsResult;
+  }
+  _initialize() {
+    const prop = libdiscoreExperiments.ALL_LIBDISCORE_EXPERIMENTS;
+    const item = prop.forEach((name) => {
+      let fromEntries;
+      let treatments;
+      const setExperiment = name.setExperiment;
+      const obj = {
+        kind: "user",
+        name: name.id,
+        defaultConfig: { treatmentId: -1 },
+        variations: fromEntries(treatments.map((treatmentId) => {
+          treatmentId = treatmentId.treatmentId;
+          const items = [treatmentId, { treatmentId }];
+          return items;
+        }))
+      };
+      const createApexExperiment = ApexExperiment.createApexExperiment;
+      fromEntries = Object.fromEntries;
+      ApexExperiment;
+      treatments = name.getTreatments();
+      setExperiment(createApexExperiment(obj));
+    });
+  }
+  _terminate() {
+
   }
 }
 const prototype = LibdiscoreExperimentManager.prototype;
-prototype["_initialize"] = function _initialize() {
-  const prop = libdiscoreExperiments.ALL_LIBDISCORE_EXPERIMENTS;
-  const item = prop.forEach((id) => {
-    obj2 = { kind: "user", name: id.id, defaultConfig: { treatmentId: -1 }, variations: null };
-    const treatments = id.getTreatments();
-    obj2.variations = Object.fromEntries(treatments.map((treatmentId) => {
-      treatmentId = treatmentId.treatmentId;
-      const items = [treatmentId, { treatmentId }];
-      return items;
-    }));
-    id.setExperiment(ApexExperiment.createApexExperiment(obj2));
-  });
-};
-prototype["_terminate"] = function _terminate() {
-
-};
 const libdiscoreExperimentManager = new LibdiscoreExperimentManager();
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/libdiscore/LibdiscoreExperimentManager.tsx");
 
 export default libdiscoreExperimentManager;

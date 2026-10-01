@@ -6,66 +6,83 @@
 
 // Module 16094 (ICYMICustomScoresModal)
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import NativeStackView from "NativeStackView" /* 7339 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const NativeStackNavigator = fn(7339);
-let closure_5 = NativeStackNavigator.createNativeStackNavigator();
-const createStyles = fn(4836);
-const obj3 = { header: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW } };
-let closure_6 = createStyles.createStyles(obj3);
-const size = fn(2);
+let c3;
+let closure_4;
+let obj2;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let closure_5 = NativeStackView.createNativeStackNavigator();
+let obj = { header: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/icymi/native/custom_scores/ICYMICustomScoresModal.tsx");
 
 export default function ICYMICustomScoresModal() {
+  let closure_0;
+  let items;
   _require = closure_6();
-  closure_1 = require("Navigator").useAccessibilityNativeStackOptions();
-  const obj2 = {
+  let obj = require("Navigator");
+  let closure_1 = obj.useAccessibilityNativeStackOptions();
+  let obj2 = {
     screenOptions() {
-      let merged = Object.assign(closure_1);
-      return {
+      let obj = {
         headerStyle: closure_0.header,
         headerTitle(children) {
+          children = children.children;
           const merged = Object.assign(children, Object.assign({ children: 0 }));
+          const obj = { title: children };
+          const GenericHeaderTitle = closure_1_0(closure_1_2[6]).GenericHeaderTitle;
           const merged1 = Object.assign(merged);
-          return closure_1_3(closure_1_0(dependencyMap[6]).GenericHeaderTitle, { title: children.children });
+          return closure_1_3(GenericHeaderTitle, obj);
         },
         headerTitleAlign: "center"
       };
+      let merged = Object.assign(closure_1);
+      return obj;
     },
     initialRouteName: "default",
-    children: null
+    children: items
   };
-  const items = [
-    closure_3(closure_5.Screen, {
-      name: "default",
-      options(navigation) {
-        const obj = { title: null, headerLeft: null };
-        const intl = closure_0(1115).intl;
-        obj.title = intl.string(closure_0(1115).t.jVshKt);
-        obj.headerLeft = closure_0(7288).getRenderModalCloseImage(navigation.navigation);
-        const merged = Object.assign(closure_1(10386)());
-        return obj;
-      },
-      getComponent() {
-        return closure_0(16095).default;
-      }
-    }),
-    closure_3(closure_5.Screen, {
-      name: "guild",
-      options(navigation) {
-        const obj = { headerLeft: closure_0(7288).getRenderModalBackImage(navigation.navigation) };
-        return obj;
-      },
-      getComponent() {
-        return closure_0(16096).default;
-      }
-    })
-  ];
-  obj2.children = items;
-  return closure_4(closure_5.Navigator, obj2);
+  const Navigator = closure_5.Navigator;
+  items = [, ];
+  const obj3 = {
+    name: "default",
+    options(navigation) {
+      let intl;
+      let obj2;
+      const obj = { title: intl.string(closure_0(dependencyMap[7]).t.jVshKt), headerLeft: obj2.getRenderModalCloseImage(navigation) };
+      navigation = navigation.navigation;
+      intl = closure_0(dependencyMap[7]).intl;
+      obj2 = closure_0(dependencyMap[6]);
+      const merged = Object.assign(closure_1(dependencyMap[8])());
+      return obj;
+    },
+    getComponent() {
+      return closure_0(dependencyMap[9]).default;
+    }
+  };
+  items[0] = closure_3(closure_5.Screen, obj3);
+  const obj4 = {
+    name: "guild",
+    options(navigation) {
+      let obj2;
+      const obj = { headerLeft: obj2.getRenderModalBackImage(navigation) };
+      navigation = navigation.navigation;
+      obj2 = closure_0(dependencyMap[6]);
+      return obj;
+    },
+    getComponent() {
+      return closure_0(dependencyMap[10]).default;
+    }
+  };
+  items[1] = closure_3(closure_5.Screen, obj4);
+  return closure_4(Navigator, obj2);
 };

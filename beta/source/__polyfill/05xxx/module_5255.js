@@ -4,20 +4,20 @@
 // Exports: SafeAreaView
 
 // Module 5255
-import _modDef5256 from "module_5256" /* 5256 */;
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react_nativeDefault from "react-native" /* 5256 */;
+import react from "react" /* 19 */;
 
-const StyleSheet = fn(17).StyleSheet;
-const jsx = fn(21).jsx;
+const StyleSheet = react_native.StyleSheet;
+const jsx = Fragment.jsx;
 const styles = StyleSheet.create({ flex: { flex: 1 } });
 
 export const SafeAreaView = function SafeAreaView(style) {
-  const obj = {};
+  react_nativeDefault;
   const merged = Object.assign(style);
   const items = [styles.flex, style.style];
-  obj.style = items;
   const rect = { top: false, bottom: false, left: false, right: false };
   const merged1 = Object.assign(style.edges);
-  obj.edges = rect;
-  return jsx(_modDef5256, {});
+  return <tmp style={items} edges={rect} />;
 };

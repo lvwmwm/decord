@@ -4,22 +4,39 @@
 // Dependencies: [19, 17, 21, 4836, 576, 1092, 5435, 4683, 1177, 11059, 2]
 
 // Module 14154 (ColorBlock)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import _modDef11059 from "module_11059" /* 11059 */;
-import noop from "module_19" /* 19 */;
+import ColorUtils from "ColorUtils" /* 4683 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11059 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj = { colorBlock: { minWidth: 44, height: 44, borderRadius: nativeDefault.radii.xl, marginHorizontal: 12, marginVertical: 8, justifyContent: "center", alignItems: "center" } };
+let color;
+
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let obj = { colorBlock: obj2 };
+obj2 = { minWidth: 44, height: 44, borderRadius: nativeDefault.radii.xl, marginHorizontal: 12, marginVertical: 8, justifyContent: "center", alignItems: "center" };
 const styles = createStyles.createStyles(obj);
-let obj3 = { minWidth: 44, height: 44, borderRadius: nativeDefault.radii.xl, marginHorizontal: 12, marginVertical: 8, justifyContent: "center", alignItems: "center" };
-const size = fn(2);
-const result = size.fileFinishedImporting("components_native/common/color_picker/ColorBlock.tsx");
-
-export default noop.memo((color) => {
+const memoResult = react.memo((color) => {
+  let BLACK;
+  let BLACK2;
+  let hexToColorName;
+  let items;
+  let items1;
+  let obj3;
+  let selected;
+  let style;
+  let tmp11Result;
+  let tmp2Result4;
+  let tmp2Result5;
+  let tmp2Result6;
+  let tmp7Result;
+  let tmp7Result2;
   color = color.color;
   ({ style, selected } = color);
   if (selected === undefined) {
@@ -27,60 +44,63 @@ export default noop.memo((color) => {
   }
   const onSelect = color.onSelect;
   const tmp = styles();
-  let unsafe_rawColors = dependencyMap;
-  const v = utils_ColorUtils.int2hsv(color).v;
+  const obj = utils_ColorUtils;
+  const v = obj.int2hsv(color).v;
   if (null != onSelect) {
-    const obj2 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, onPress: null, style: null, children: null };
-    const tmp2Result = tmp2(4683);
-    obj2.accessibilityLabel = tmp2Result.hexToColorName(tmp2(1092).int2hex(color), true);
-    const obj3 = { selected };
-    obj2.accessibilityState = obj3;
-    obj2.onPress = function onPress() {
-      return onSelect(color);
+    const obj2 = {
+      accessibilityRole: "button",
+      accessibilityLabel: hexToColorName(tmp2Result4.int2hex(color), true),
+      accessibilityState: obj3,
+      onPress() {
+          return onSelect(color);
+        },
+      style: items,
+      children: tmp7Result
     };
-    const items = [tmp.colorBlock, style, ];
-    const obj4 = { backgroundColor: null };
-    const tmp2Result4 = tmp2(1092);
-    obj4.backgroundColor = tmp2(1092).int2hex(color);
+    const PressableOpacity = tmp2(5435).PressableOpacity;
+    hexToColorName = ColorUtils.hexToColorName;
+    ColorUtils;
+    items = [tmp.colorBlock, style, ];
+    obj3 = { selected };
+    tmp2Result4 = utils_ColorUtils;
+    const obj4 = { backgroundColor: tmp2Result5.int2hex(color) };
     items[2] = obj4;
-    obj2.style = items;
-    if (!selected) {
-      obj2.children = null;
-      let tmp10Result1 = tmp6(tmp2(5435).PressableOpacity, obj2);
-    } else {
-      const obj5 = { source: _modDef11059, color: null };
+    tmp7Result = null;
+    tmp2Result5 = utils_ColorUtils;
+    if (selected) {
+      const obj5 = { source: AssetRegistryDefault, color: BLACK2 };
+      const Icon2 = tmp2(1177).Icon;
       if (v < 0.5) {
-        unsafe_rawColors = tmp8(576).unsafe_rawColors;
-        let BLACK2 = unsafe_rawColors.WHITE;
+        BLACK2 = tmp10(576).unsafe_rawColors.WHITE;
       } else {
-        BLACK2 = tmp8(576).unsafe_rawColors.BLACK;
+        BLACK2 = tmp10(576).unsafe_rawColors.BLACK;
       }
-      obj5.color = BLACK2;
-      tmp6(tmp2(1177).Icon, obj5);
+      tmp7Result = tmp7(Icon2, obj5);
     }
-    const tmp2Result5 = tmp2(1092);
+    tmp7Result2 = tmp7(PressableOpacity, obj2);
   } else {
-    const obj6 = { style: null, children: null };
-    const items1 = [tmp.colorBlock, style, ];
-    const obj7 = { backgroundColor: tmp2(1092).int2hex(color) };
+    const obj6 = { style: items1, children: tmp11Result };
+    items1 = [tmp.colorBlock, style, ];
+    const obj7 = { backgroundColor: tmp2Result6.int2hex(color) };
     items1[2] = obj7;
-    obj6.style = items1;
-    if (!selected) {
-      obj6.children = null;
-      tmp10Result1 = tmp10(tmp11, obj6);
-    } else {
-      const obj8 = { source: _modDef11059, color: null };
+    tmp11Result = null;
+    const tmp12 = View;
+    tmp2Result6 = utils_ColorUtils;
+    if (selected) {
+      const obj8 = { source: AssetRegistryDefault, color: BLACK };
+      const Icon = tmp2(1177).Icon;
       if (v < 0.5) {
-        let BLACK = tmp3(576).unsafe_rawColors.WHITE;
+        BLACK = tmp4(576).unsafe_rawColors.WHITE;
       } else {
-        BLACK = tmp3(576).unsafe_rawColors.BLACK;
+        BLACK = tmp4(576).unsafe_rawColors.BLACK;
       }
-      obj8.color = BLACK;
-      tmp10(tmp2(1177).Icon, obj8);
+      tmp11Result = tmp11(Icon, obj8);
     }
-    tmp11 = View;
-    const tmp2Result6 = tmp2(1092);
+    tmp7Result2 = tmp11(tmp12, obj6);
   }
-  return tmp10Result1;
+  return tmp7Result2;
 });
+const result = size.fileFinishedImporting("components_native/common/color_picker/ColorBlock.tsx");
+
+export default memoResult;
 export const useStyles = styles;

@@ -5,8 +5,9 @@
 // Exports: useBaseActivityPanelHeader
 
 // Module 16848 (ActivityPanelHeader)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1085 */;
 import native from "native" /* 4540 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
@@ -15,23 +16,44 @@ import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 16849 */;
 import InviteActivityButtonDefault from "InviteActivityButton" /* 16850 */;
 import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 16854 */;
 import LeaveActivityButtonDefault from "LeaveActivityButton" /* 16860 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8502 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap;
+
+let StyleSheet;
+let c10;
+let c9;
+let closure_12;
+let hasOwnProperty;
+let map1;
+let metroImportAll;
+let obj2;
+let obj4;
+let size;
 function useBaseActivityPanelHeaderContent(landscape) {
+  let closure_2;
+  let obj3;
+  let pipState;
+  let tmp6;
+  let wrapperOffset;
   landscape = landscape.landscape;
   const setMode = landscape.setMode;
   ({ wrapperOffset, pipState } = landscape);
   const tmp = closure_14();
   dependencyMap = tmp;
   const tmp2 = setMode(1613)();
-  closure_3 = tmp2;
+  let closure_3 = tmp2;
   let items = [landscape];
   const items1 = [landscape, tmp2, , ];
   ({ panelHeader: arr2[2], panelLandscape: arr2[3] } = tmp);
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     let num = 0;
     if (!landscape) {
       num = nativeDefault.radii.lg;
@@ -40,10 +62,14 @@ function useBaseActivityPanelHeaderContent(landscape) {
     return items;
   }, items);
   const fn = function c() {
-    ReanimatedRexport.runOnJS(setMode)(ActivityPanelModes.PIP);
+    const obj = ReanimatedRexport;
+    obj.runOnJS(setMode)(constants.PIP);
   };
-  let obj = { runOnJS: null, setMode: null, ActivityPanelModes: null };
-  const memo1 = noop.useMemo(() => {
+  let obj = { runOnJS: landscape(4566).runOnJS, setMode, ActivityPanelModes };
+  const memo1 = react.useMemo(() => {
+    let num2;
+    let num3;
+    let num4;
     let num = 8;
     if (landscape) {
       num = 24;
@@ -54,113 +80,100 @@ function useBaseActivityPanelHeaderContent(landscape) {
       panelLandscape = closure_2.panelLandscape;
     }
     items[1] = panelLandscape;
-    const obj = { paddingTop: num, paddingBottom: null, paddingLeft: null, paddingRight: null };
-    let num2 = 8;
+    const obj = { paddingTop: num, paddingBottom: num2, paddingLeft: num4, paddingRight: num3 };
+    num2 = 8;
     if (landscape) {
       num2 = 24;
     }
-    obj.paddingBottom = num2;
-    let num3 = 16;
-    let num4 = 16;
+    num3 = 16;
+    num4 = 16;
     if (!landscape) {
       num4 = 8 + closure_3.left;
     }
-    obj.paddingLeft = num4;
     if (!landscape) {
       num3 = 8 + closure_3.right;
     }
-    obj.paddingRight = num3;
     items[2] = obj;
     return items;
   }, items1);
-  obj.runOnJS = landscape(4566).runOnJS;
-  obj.setMode = setMode;
-  obj.ActivityPanelModes = ActivityPanelModes;
+  const useCallback = react.useCallback;
   fn.__closure = obj;
   fn.__workletHash = 14504167937928;
   fn.__initData = __initData;
   const items2 = [setMode];
-  const obj2 = { gesture: null, headerWrapperStyles: null, headerStyles: null, styles: null };
-  const callback = noop.useCallback(fn, items2);
-  const obj3 = { mode: landscape(16845).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
-  obj2.gesture = setMode(16845)(obj3);
-  obj2.headerWrapperStyles = memo;
-  obj2.headerStyles = memo1;
-  obj2.styles = tmp;
+  const obj2 = { gesture: tmp6(obj3), headerWrapperStyles: memo, headerStyles: memo1, styles: tmp };
+  const callback = useCallback(fn, items2);
+  obj3 = { mode: landscape(16845).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
+  tmp6 = setMode(16845);
   return obj2;
 }
 class BaseActivityPanelContent {
-  constructor(arg0) {
-    landscape = global.landscape;
-    ({ children, hasConnectedActivity, gesture, headerWrapperStyles, headerStyles } = global);
-    tmp3Result1 = null;
+  constructor(landscape) {
+    let GestureDetector;
+    let children;
+    let gesture;
+    let hasConnectedActivity;
+    let headerStyles;
+    let headerWrapperStyles;
+    let items;
+    let obj2;
+    let obj3;
+    let tmp7;
+    landscape = landscape.landscape;
+    ({ children, hasConnectedActivity, gesture, headerWrapperStyles, headerStyles } = landscape);
+    let tmp3Result2 = null;
     if (hasConnectedActivity) {
-      tmp3 = jsx;
-      tmp4 = closure_0;
-      tmp5 = closure_2;
-      obj = { theme: null, children: null };
-      tmp6 = ThemeTypes;
-      obj.theme = ThemeTypes.DARK;
-      obj1 = { gesture: null, children: null };
-      obj1.gesture = gesture;
-      tmp8 = View;
-      obj6 = { style: null, children: null };
-      obj6.style = headerWrapperStyles;
-      tmp9 = closure_1;
-      tmp7 = jsxs;
-      items = [, , ];
-      items[0] = jsx(closure_1(closure_2[14]), {});
-      tmp3Result = !landscape;
-      if (!landscape) {
-        obj7 = { style: null };
-        obj7.style = tmp.pullIndicator;
-        tmp3Result = tmp3(tmp8, obj7);
+      const obj = { theme: ThemeTypes.DARK, children: closure_12(GestureDetector, obj2) };
+      const ThemeContextProvider = native.ThemeContextProvider;
+      obj2 = { gesture, children: tmp7(hasOwnProperty, obj3) };
+      obj3 = { style: headerWrapperStyles, children: items };
+      GestureDetector = LegacyBaseButton.GestureDetector;
+      items = [closure_12(BlurVisualEffectViewDefault, {}), , ];
+      let tmp3Result = !landscape;
+      tmp7 = map1;
+      if (tmp3Result) {
+        const obj4 = { style: tmp.pullIndicator };
+        tmp3Result = tmp3(tmp8, obj4);
       }
       items[1] = tmp3Result;
-      obj8 = { style: null, children: null };
-      obj8.style = headerStyles;
-      obj8.children = children;
-      items[2] = tmp3(tmp8, obj8);
-      obj6.children = items;
-      obj1.children = tmp7(tmp8, obj6);
-      obj.children = tmp3(closure_0(closure_2[13]).GestureDetector, obj1);
-      tmp3Result1 = tmp3(closure_0(closure_2[12]).ThemeContextProvider, obj);
+      const obj5 = { style: headerStyles, children };
+      items[2] = closure_12(hasOwnProperty, obj5);
+      tmp3Result2 = tmp3(ThemeContextProvider, obj);
     }
-    return tmp3Result1;
+    return tmp3Result2;
   }
 }
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const ActivityPanelConstants = fn(8502);
-({ ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT: closure_8, LANDSCAPE_IFRAME_HORIZONTAL_MARGIN: closure_9, ActivityPanelModes: c10 } = ActivityPanelConstants);
-const ThemeTypes = fn(1085).ThemeTypes;
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let createStyles = fn(4836);
-let obj = { panelHeader: null, panelLandscape: null, headerContainer: null, pullIndicator: null };
-let obj3 = {};
+({ View: hasOwnProperty, StyleSheet } = react_native);
+({ ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT: metroImportAll, LANDSCAPE_IFRAME_HORIZONTAL_MARGIN: c9, ActivityPanelModes: c10 } = ActivityPanelConstants);
+const ThemeTypes = Constants.ThemeTypes;
+({ jsx: closure_12, jsxs: map1 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { panelHeader: obj2, panelLandscape: { flexDirection: "column-reverse" }, headerContainer: { position: "absolute", top: 0 }, pullIndicator: size };
+obj2 = { justifyContent: "space-between", alignItems: "center", flexDirection: "row", gap: 8 };
+createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3.justifyContent = "space-between";
-obj3.alignItems = "center";
-obj3.flexDirection = "row";
-obj3.gap = 8;
-obj.panelHeader = obj3;
-obj.panelLandscape = { flexDirection: "column-reverse" };
-obj.headerContainer = { position: "absolute", top: 0 };
-let size = { backgroundColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.sm, width: 32, height: 4, alignSelf: "center", marginTop: 4, opacity: 0.3 };
-obj.pullIndicator = size;
-let closure_14 = createStyles.createStyles(obj);
+size = { backgroundColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.sm, width: 32, height: 4, alignSelf: "center", marginTop: 4, opacity: 0.3 };
+let closure_14 = createStyles(obj);
 const __initData = { code: "function ActivityPanelHeaderTsx1(){const{runOnJS,setMode,ActivityPanelModes}=this.__closure;runOnJS(setMode)(ActivityPanelModes.PIP);}" };
-createStyles = fn(4836);
-let obj4 = { buttonContainer: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, flexShrink: 1 }, buttonContainerLandscape: { flexDirection: "column-reverse" } };
-const styles = createStyles.createStyles(obj4);
-let closure_19 = noop.memo(function ActivityPanelHeaderContentInner(wrapperOffset) {
+createStyles = createStyles_mod;
+let obj3 = { buttonContainer: obj4, buttonContainerLandscape: { flexDirection: "column-reverse" } };
+obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, flexShrink: 1 };
+const styles = createStyles.createStyles(obj3);
+let closure_19 = react.memo(function ActivityPanelHeaderContentInner(wrapperOffset) {
+  let gesture;
+  let headerStyles;
+  let headerWrapperStyles;
+  let items3;
+  let items4;
+  let landscape;
+  let setMode;
   ({ landscape, setMode } = wrapperOffset);
-  ({ gesture, headerWrapperStyles, headerStyles } = useBaseActivityPanelHeaderContent({ landscape, setMode, wrapperOffset: wrapperOffset.wrapperOffset, pipState: wrapperOffset.pipState }));
   const obj = { landscape, setMode, wrapperOffset: wrapperOffset.wrapperOffset, pipState: wrapperOffset.pipState };
-  const tmp = useBaseActivityPanelHeaderContent({ landscape, setMode, wrapperOffset: wrapperOffset.wrapperOffset, pipState: wrapperOffset.pipState });
+  ({ gesture, headerWrapperStyles, headerStyles } = useBaseActivityPanelHeaderContent(obj));
+  useBaseActivityPanelHeaderContent(obj);
   const items = [EmbeddedActivitiesStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(EmbeddedActivitiesStore.getConnectedActivityLocation()), []);
+  const obj2 = get_initialized;
+  const stateFromStores = obj2.useStateFromStores(items, () => EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(EmbeddedActivitiesStore.getConnectedActivityLocation()), []);
   let applicationId;
   if (stateFromStores != null) {
     applicationId = stateFromStores.applicationId;
@@ -169,21 +182,23 @@ let closure_19 = noop.memo(function ActivityPanelHeaderContentInner(wrapperOffse
   const first = _slicedToArray(useGetOrFetchApplicationsDefault(items1), 1)[0];
   const tmp7 = styles();
   let id;
+  const tmp9 = InviteActivityButtonDefault;
   if (first != null) {
     id = first.id;
   }
-  const tmp8Result = closure_1_12(InviteActivityButtonDefault, { applicationId: id });
-  const obj3 = { hasConnectedActivity: null != stateFromStores, gesture, headerWrapperStyles, headerStyles, landscape, children: null };
+  const tmp8Result = closure_12(tmp9, { applicationId: id });
   const items2 = [tmp7.buttonContainer, ];
   let prop;
+  const obj3 = { hasConnectedActivity: null != stateFromStores, gesture, headerWrapperStyles, headerStyles, landscape, children: items4 };
+  const tmp13 = BaseActivityPanelContent;
+  const tmp14 = hasOwnProperty;
   if (landscape) {
     prop = tmp7.buttonContainerLandscape;
   }
-  const obj4 = { style: items2, children: null };
+  const obj4 = { style: items2, children: items3 };
   items2[1] = prop;
   let tmp17;
-  const tmp13 = BaseActivityPanelContent;
-  const tmp14 = hasOwnProperty;
+  const tmp5Result = MinimizeActivityButtonDefault;
   if (!landscape) {
     let name;
     if (first != null) {
@@ -191,7 +206,7 @@ let closure_19 = noop.memo(function ActivityPanelHeaderContentInner(wrapperOffse
     }
     tmp17 = name;
   }
-  const items3 = [closure_1_12(MinimizeActivityButtonDefault, { activityName: tmp17, setMode }), , ];
+  items3 = [closure_12(tmp5Result, { activityName: tmp17, setMode }), , ];
   let tmp8Result2 = null != applicationId;
   if (tmp8Result2) {
     const obj5 = { applicationId };
@@ -203,40 +218,42 @@ let closure_19 = noop.memo(function ActivityPanelHeaderContentInner(wrapperOffse
     tmp20 = tmp8Result;
   }
   items3[2] = tmp20;
-  obj4.children = items3;
-  const items4 = [map1(tmp14, obj4), , ];
+  items4 = [map1(tmp14, obj4), , ];
   let tmp21 = null;
   if (!landscape) {
     tmp21 = tmp8Result;
   }
   items4[1] = tmp21;
-  const tmp23 = stateFromStores;
-  const tmp5Result = MinimizeActivityButtonDefault;
-  items4[2] = closure_1_12(LeaveActivityButtonDefault, { selfEmbeddedActivity: tmp23, setMode });
-  obj3.children = items4;
+  const tmp5Result2 = LeaveActivityButtonDefault;
+  items4[2] = closure_12(tmp5Result2, { selfEmbeddedActivity: stateFromStores, setMode });
   return map1(tmp13, obj3);
 });
-let obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, flexShrink: 1 };
-size = fn(2);
-const result = size.fileFinishedImporting("modules/activities/panel/native/ActivityPanelHeader.tsx");
-
-export default noop.memo(() => {
+const memoResult = react.memo(() => {
+  let obj2;
+  let pipState;
+  let setMode;
+  let wrapperOffset;
   let wrapperDimensions;
+  let tmp = wrapperDimensions(16839);
   const tmp2 = closure_14();
   const headerContainer = tmp2;
-  const context = noop.useContext(wrapperDimensions(16839));
+  const context = react.useContext(tmp);
   wrapperDimensions = context.wrapperDimensions;
   let items = [tmp2.headerContainer, wrapperDimensions.isWindowLandscape];
   ({ setMode, wrapperOffset, pipState } = context);
   const obj = {
-    style: noop.useMemo(() => {
+    style: react.useMemo(() => {
+      let num;
+      let str;
+      let str2;
+      let tmp;
       if (wrapperDimensions.isWindowLandscape) {
-        let str2 = React7;
-        let tmp = 0;
-        let num = null;
-        let str = "auto";
+        str2 = React4;
+        tmp = 0;
+        num = null;
+        str = "auto";
       } else {
-        str = React6;
+        str = metroImportAll;
         str2 = "auto";
         tmp = null;
         num = 0;
@@ -244,35 +261,54 @@ export default noop.memo(() => {
       const items = [headerContainer.headerContainer, { width: str2, height: str, right: 0, left: num, bottom: tmp }];
       return items;
     }, items),
-    children: closure_12(closure_19, { landscape: wrapperDimensions.isWindowLandscape, setMode, wrapperOffset, pipState })
+    children: closure_12(closure_19, obj2)
   };
+  obj2 = { landscape: wrapperDimensions.isWindowLandscape, setMode, wrapperOffset, pipState };
   return closure_12(closure_5, obj);
 });
+size = size_mod;
+const result = size.fileFinishedImporting("modules/activities/panel/native/ActivityPanelHeader.tsx");
+
+export default memoResult;
 export { useBaseActivityPanelHeaderContent };
 export { BaseActivityPanelContent };
 export const useMinimizeAndQuestButtonContainerStyles = styles;
 export const useBaseActivityPanelHeader = function useBaseActivityPanelHeader(context) {
+  let items;
+  let pipState;
+  let setMode;
+  let wrapperOffset;
+  context = context.context;
   const tmp = closure_14();
-  closure_0 = tmp;
-  context = noop.useContext(context.context);
-  const wrapperDimensions = context.wrapperDimensions;
-  const obj = { headerStyles: null, wrapperDimensions, setMode, wrapperOffset, pipState };
-  const items = [tmp.headerContainer, wrapperDimensions.isWindowLandscape];
-  ({ setMode, wrapperOffset, pipState } = context);
-  obj.headerStyles = noop.useMemo(() => {
-    if (wrapperDimensions.isWindowLandscape) {
-      let str2 = React7;
-      let tmp = 0;
-      let num = null;
-      let str = "auto";
-    } else {
-      str = React6;
-      str2 = "auto";
-      tmp = null;
-      num = 0;
-    }
-    const items = [headerContainer.headerContainer, { width: str2, height: str, right: 0, left: num, bottom: tmp }];
-    return items;
-  }, items);
+  let closure_0 = tmp;
+  const context1 = react.useContext(context);
+  const wrapperDimensions = context1.wrapperDimensions;
+  const obj = {
+    headerStyles: react.useMemo(() => {
+      let num;
+      let str;
+      let str2;
+      let tmp;
+      if (wrapperDimensions.isWindowLandscape) {
+        str2 = React4;
+        tmp = 0;
+        num = null;
+        str = "auto";
+      } else {
+        str = metroImportAll;
+        str2 = "auto";
+        tmp = null;
+        num = 0;
+      }
+      const items = [headerContainer.headerContainer, { width: str2, height: str, right: 0, left: num, bottom: tmp }];
+      return items;
+    }, items),
+    wrapperDimensions,
+    setMode,
+    wrapperOffset,
+    pipState
+  };
+  items = [tmp.headerContainer, wrapperDimensions.isWindowLandscape];
+  ({ setMode, wrapperOffset, pipState } = context1);
   return obj;
 };

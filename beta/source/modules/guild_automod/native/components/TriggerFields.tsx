@@ -5,51 +5,53 @@
 // Exports: default
 
 // Module 17323 (TriggerFields)
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17309 */;
 import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 17324 */;
 import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 17325 */;
 import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 17329 */;
 import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 17333 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/TriggerFields.tsx");
 
 export default function TriggerFields(onValidityChange) {
+  let onChangeRule;
+  let rule;
+  let tmp3;
   ({ rule, onChangeRule } = onValidityChange);
+  onValidityChange = onValidityChange.onValidityChange;
+  const obj = AutomodRuleUtils;
   if (obj.isRuleMLSpamFilter(rule)) {
-    const obj2 = { variant: "text-md/normal", color: "text-default", children: null };
+    const Text = tmp(4832).Text;
     const intl = tmp(1115).intl;
-    obj2.children = intl.string(tmp(1115).t["1YgPj/"]);
-    let tmp3 = jsx(tmp(4832).Text, { variant: "text-md/normal", color: "text-default", children: null });
+    tmp3 = <Text variant="text-md/normal" color="text-default">{intl.string(intl2.t["1YgPj/"])}</Text>;
   } else {
+    const tmpResult = AutomodRuleUtils;
     if (tmpResult.isRuleMentionSpamFilter(rule)) {
-      const obj3 = { rule, onChangeRule, onValidityChange: onValidityChange.onValidityChange };
-      tmp3 = jsx(MentionSpamTriggerFieldsDefault, { rule, onChangeRule, onValidityChange: onValidityChange.onValidityChange });
+      tmp3 = jsx(MentionSpamTriggerFieldsDefault, { rule, onChangeRule, onValidityChange });
     } else {
+      const tmpResult5 = AutomodRuleUtils;
       if (tmpResult5.isRuleDefaultKeywordListFilter(rule)) {
-        const obj4 = { rule, onChangeRule };
         tmp3 = jsx(DefaultKeywordListTriggerFieldsDefault, { rule, onChangeRule });
       } else {
+        const tmpResult6 = AutomodRuleUtils;
         if (tmpResult6.isRuleApplicationFilter(rule)) {
-          const obj5 = { rule, onChangeRule };
           tmp3 = jsx(ApplicationTriggerFieldsDefault, { rule, onChangeRule });
         } else {
+          const tmpResult7 = AutomodRuleUtils;
           if (tmpResult7.isRuleUserProfileFilter(rule)) {
-            const obj6 = { rule, onChangeRule };
             tmp3 = jsx(KeywordFilterTriggerFieldsDefault, { rule, onChangeRule });
           } else {
             tmp3 = null;
-            const tmpResult8 = tmp(17309);
+            AutomodRuleUtils;
           }
-          tmpResult7 = tmp(17309);
         }
-        tmpResult6 = tmp(17309);
       }
-      tmpResult5 = tmp(17309);
     }
-    tmpResult = tmp(17309);
   }
   return tmp3;
 };

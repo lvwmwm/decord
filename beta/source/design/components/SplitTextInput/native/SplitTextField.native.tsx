@@ -4,40 +4,48 @@
 // Dependencies: [19, 17, 21, 6039, 6032, 6033, 6037, 6041, 2]
 
 // Module 6386 (SplitTextField)
+import Fragment from "Fragment" /* 21 */;
 import useTextField from "useTextField" /* 6032 */;
 import useInputClearButton from "useInputClearButton" /* 6033 */;
 import useInputAttachments from "useInputAttachments" /* 6037 */;
 import InputFieldContainer from "InputFieldContainer" /* 6039 */;
-import BaseTextField from "BaseTextField" /* 6041 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Pressable: c2, View: c3 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/SplitTextInput/native/SplitTextField.native.tsx");
-
-export const SplitTextField = noop.forwardRef((size, ref) => {
-  const inputStyles = InputFieldContainer.useInputStyles({ size: size.size, round: size.round });
+let c2;
+let c3;
+({ Pressable: c2, View: c3 } = react_native);
+const jsx = Fragment.jsx;
+const forwardRefResult = react.forwardRef((size, ref) => {
+  let innerRef;
+  let inputProps;
+  let inputStyle;
+  let state;
+  let tmpResult2;
+  let trailing;
+  let obj = InputFieldContainer;
   const obj2 = { size: size.size, round: size.round };
-  const textField = useTextField.useTextField(size, ref);
+  const inputStyles = obj.useInputStyles(obj2);
+  const obj3 = useTextField;
+  const textField = obj3.useTextField(size, ref);
   ({ inputProps, innerRef, state } = textField);
-  const inputClearButtonConfig = useInputClearButton.useInputClearButtonConfig(size, state);
+  const obj4 = useInputClearButton;
+  const inputClearButtonConfig = obj4.useInputClearButtonConfig(size, state);
   let tmp6;
   if (null != inputClearButtonConfig) {
-    ({ content: obj5.trailing, pressableProps: obj5.trailingPressableProps } = inputClearButtonConfig);
-    tmp6 = { trailing: null, trailingPressableProps: null };
     const obj6 = { trailing: null, trailingPressableProps: null };
+    ({ content: obj5.trailing, pressableProps: obj5.trailingPressableProps } = inputClearButtonConfig);
+    tmp6 = obj6;
   }
-  const inputAttachments = useInputAttachments.useInputAttachments(size, tmp6);
+  const tmpResult = useInputAttachments;
+  const inputAttachments = tmpResult.useInputAttachments(size, tmp6);
   let tmp8 = null;
   ({ trailing, inputStyle } = inputAttachments);
   if (null != size.leadingText) {
     tmp8 = null;
     if (size.leadingText.length > 0) {
-      const obj7 = { style: inputStyles.splitBorder, children: null };
-      const obj8 = {
+      ({
         style(pressed) {
               let obj;
               if (pressed.pressed) {
@@ -45,27 +53,18 @@ export const SplitTextField = noop.forwardRef((size, ref) => {
               }
               const items = [obj];
               return items;
-            }
-      };
+            },
+        children: tmpResult2.renderInputAttachment(undefined, size.leadingText, inputStyles.text)
+      });
       const merged = Object.assign(size.leadingPressableProps);
-      obj8.children = tmp(6037).renderInputAttachment(undefined, size.leadingText, inputStyles.text);
-      obj7.children = <React2 style={function style(pressed) {
-        let obj;
-        if (pressed.pressed) {
-          obj = { opacity: 0.2 };
-        }
-        const items = [obj];
-        return items;
-      }} />;
-      tmp8 = <React3 style={inputStyles.splitBorder}>{null}</React3>;
-      const tmpResult2 = tmp(6037);
+      tmp8 = <_false style={inputStyles.splitBorder}>{null}</_false>;
+      tmpResult2 = useInputAttachments;
     }
   }
-  const obj9 = {};
+  const BaseTextField = tmp(6041).BaseTextField;
   const merged1 = Object.assign(inputProps);
-  obj9.ref = innerRef;
-  obj9.leading = tmp8;
-  obj9.trailing = trailing;
-  obj9.inputStyle = inputStyle;
-  return jsx(BaseTextField.BaseTextField, {});
+  return <BaseTextField ref={innerRef} leading={tmp8} trailing={trailing} inputStyle={inputStyle} />;
 });
+const result = size.fileFinishedImporting("design/components/SplitTextInput/native/SplitTextField.native.tsx");
+
+export const SplitTextField = forwardRefResult;

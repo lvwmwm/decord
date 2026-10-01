@@ -5,24 +5,29 @@
 // Exports: default
 
 // Module 9069 (useSelectStage)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
+let c3, c6, channel;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/useSelectStage.tsx");
 
 export default function useSelectStage() {
+  let closure_2;
+  let first;
+  let stateFromStores;
+  let voiceChannelId;
+  let obj = stateFromStores(first[5]);
   const items = [SelectedChannelStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => voiceChannelId.getVoiceChannelId(), []);
-  [first, asyncGeneratorStep] = noop.useState(stateFromStores);
+  stateFromStores = obj.useStateFromStores(items, () => voiceChannelId.getVoiceChannelId(), []);
+  [first, _asyncToGenerator] = react.useState(stateFromStores);
   const items1 = [stateFromStores];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let closure_0;
     const timeout = setTimeout(() => {
       closure_1_2(closure_0);
     }, 500);
@@ -30,42 +35,90 @@ export default function useSelectStage() {
       clearTimeout(closure_0);
     };
   }, items1);
-  _require = asyncGeneratorStep(async (arg0, arg1) => {
-    if (closure_1 === closure_1) {
-      channel = channel.getChannel(tmp30);
-      if (null != channel) {
-        closure_0(first[6]).navigateToStage(channel);
-        c5 = 0;
-        c6 = 3;
-        return { value: undefined, done: true };
+  const useCallback = react.useCallback;
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let obj2;
+    closure_0 = arg0;
+    let closure_1 = value;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      let c5;
+      try {
+        c6 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            c5 = 1;
+            const tmp25 = closure_0;
+            if (closure_1 === closure_1) {
+              channel = channel.getChannel(tmp26);
+              if (null != channel) {
+                const obj4 = closure_0(first[6]);
+                obj4.navigateToStage(channel);
+                c5 = 0;
+                c6 = 3;
+                const obj6 = { value: undefined, done: true };
+                return obj6;
+              }
+            }
+            tmp(closure_1);
+            c3 = 2;
+            c6 = 1;
+            const obj7 = { value: obj2.connectOrLurkStage(tmp25, closure_1), done: false };
+            obj2 = closure_0(first[6]);
+            return obj7;
+          }
+        } else {
+          if (1 === tmp4) {
+            c5 = 0;
+            tmp(null);
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            c6 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            c5 = 0;
+          }
+          c6 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp18) {
+        let closure_4 = tmp18;
+        if (0 === c5) {
+          c6 = 3;
+          throw tmp18;
+        } else {
+          c3 = 1;
+        }
       }
     }
-    tmp3(closure_1);
-    await closure_0(first[6]).connectOrLurkStage(closure_0, closure_1);
-    if (1 === tmp7) {
-      c5 = 0;
-      tmp3(null);
-      c6 = 3;
-    } else if (arg0 === 1) {
-      c6 = 3;
-      throw arg1;
-    } else if (arg0 !== 2) {
-      c5 = 0;
-    }
-    return arg1;
   });
   const items2 = [first];
   const items3 = [
     first,
-    noop.useCallback(function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+    useCallback(function() {
+      return closure_0(...arguments);
     }, items2)
   ];
   return items3;

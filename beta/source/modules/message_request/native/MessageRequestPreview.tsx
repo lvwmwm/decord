@@ -4,84 +4,84 @@
 // Dependencies: [19, 17, 4479, 1074, 21, 4836, 5836, 576, 12091, 504, 1241, 1115, 7313, 5198, 1177, 2]
 
 // Module 16701 (MessageRequestPreview)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import Constants from "Constants" /* 1074 */;
+import createStyles_mod from "createStyles" /* 4836 */;
 import TextStyles_mod from "TextStyles" /* 5836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
-({ Fonts, AnalyticEvents: metroRequire, MessageFlags: closure_7 } = Constants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { systemContent: null, messageContent: null };
-let obj3 = { fontStyle: "italic" };
+let Fonts;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+const View = react_native.View;
+({ Fonts, AnalyticEvents: metroRequire, MessageFlags: metroImportDefault } = Constants);
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { systemContent: obj2, messageContent: obj3 };
+obj2 = { fontStyle: "italic", lineHeight: 16 };
+createStyles = createStyles.createStyles;
 let TextStyles = TextStyles_mod;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_DEFAULT, 12));
-obj3.lineHeight = 16;
-obj.systemContent = obj3;
-const obj4 = {};
-let TextStyles = TextStyles_mod;
+obj3 = { lineHeight: 16 };
+TextStyles = TextStyles_mod;
 const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_DEFAULT, 12));
-obj4.lineHeight = 16;
-obj.messageContent = obj4;
-let closure_9 = createStyles.createStyles(obj);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/message_request/native/MessageRequestPreview.tsx");
-
-export default noop.memo(function MessageRequestPreview(channel) {
+let closure_9 = createStyles(obj);
+const memoResult = react.memo(function MessageRequestPreview(channel) {
+  let error;
+  let isBlocked;
+  let isIgnored;
+  let loaded;
   channel = channel.channel;
+  const style = channel.style;
   const tmp = closure_9();
-  const messageRequestPreview = channel(12091).useMessageRequestPreview(channel);
+  let obj = channel(12091);
+  const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
-  let obj = channel(12091);
+  const obj2 = channel(504);
   const items = [RelationshipStore];
   const items1 = [message];
-  const stateFromStoresObject = channel(504).useStateFromStoresObject(items, () => {
-    let isBlockedForMessageResult = null != message;
-    if (isBlockedForMessageResult) {
-      isBlockedForMessageResult = RelationshipStore.isBlockedForMessage(tmp);
-    }
-    const obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
-    let isIgnoredForMessageResult = null != tmp;
-    if (isIgnoredForMessageResult) {
-      isIgnoredForMessageResult = RelationshipStore.isIgnoredForMessage(tmp);
-    }
-    obj.isIgnored = isIgnoredForMessageResult;
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
+    let isIgnoredForMessageResult;
+    const obj = { isBlocked: null != message && RelationshipStore.isBlockedForMessage(tmp), isIgnored: isIgnoredForMessageResult };
+    isIgnoredForMessageResult = null != tmp && RelationshipStore.isIgnoredForMessage(tmp);
     return obj;
   }, items1);
   const items2 = [channel, message];
   ({ isBlocked, isIgnored } = stateFromStoresObject);
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (null != message) {
-      const obj3 = { is_spam: null, channel_id: null, other_user_id: null };
+      const obj3 = { is_spam: null, channel_id: null, other_user_id: tmp.author.id };
       ({ isSpam: obj2.is_spam, id: obj2.channel_id } = channel);
-      obj3.other_user_id = tmp.author.id;
-      AnalyticsUtilsDefault.track(constants.MESSAGE_REQUEST_PREVIEW_VIEWED, obj3);
+      const obj = AnalyticsUtilsDefault;
+      obj.track(metroRequire.MESSAGE_REQUEST_PREVIEW_VIEWED, obj3);
     }
   }, items2);
   if (error) {
     const intl9 = tmp2(1115).intl;
-    let stringResult = intl9.string(tmp2(1115).t.BZHld2);
+    intl9.string(channel(1115).t.BZHld2);
     let flag = false;
   } else {
-    stringResult = null;
     flag = false;
     if (loaded) {
       if (null != message) {
         if (isBlocked) {
           const intl8 = tmp2(1115).intl;
-          stringResult = intl8.string(tmp2(1115).t["WPe+xL"]);
+          intl8.string(channel(1115).t["WPe+xL"]);
           flag = false;
         }
       }
       if (null != message) {
         if (isIgnored) {
           const intl7 = tmp2(1115).intl;
-          stringResult = intl7.string(tmp2(1115).t.uxrh1O);
+          intl7.string(channel(1115).t.uxrh1O);
           flag = false;
         }
       }
@@ -95,14 +95,14 @@ export default noop.memo(function MessageRequestPreview(channel) {
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
-            stringResult = content1;
           }
           const intl6 = tmp2(1115).intl;
-          stringResult = intl6.string(tmp2(1115).t["262oPB"]);
+          intl6.string(channel(1115).t["262oPB"]);
           flag = false;
         }
       }
       if (null != message) {
+        const tmp2Result = channel(5198);
         if (tmp2Result.getMessageStickers(message).length > 0) {
           const intl5 = tmp2(1115).intl;
           let stringResult1 = intl5.string(tmp2(1115).t["zuI+by"]);
@@ -110,10 +110,12 @@ export default noop.memo(function MessageRequestPreview(channel) {
           const intl4 = tmp2(1115).intl;
           stringResult1 = intl4.string(tmp2(1115).t["2v7kfl"]);
         } else {
+          const tmp15 = constants2;
           if (message.hasFlag(constants2.IS_VOICE_MESSAGE)) {
             const intl3 = tmp2(1115).intl;
             stringResult1 = intl3.string(tmp2(1115).t["6bhHrc"]);
           } else {
+            const hasFlagResult = message.hasFlag(tmp15.IS_COMPONENTS_V2);
             const intl2 = tmp2(1115).intl;
             const string = intl2.string;
             const t = tmp2(1115).t;
@@ -122,20 +124,18 @@ export default noop.memo(function MessageRequestPreview(channel) {
             } else {
               stringResult1 = string(t.LoMGlg);
             }
-            hasFlagResult = message.hasFlag(tmp15.IS_COMPONENTS_V2);
           }
-          tmp15 = constants2;
         }
-        stringResult = stringResult1;
         flag = false;
-        tmp2Result = tmp2(5198);
       } else {
         const intl = tmp2(1115).intl;
-        stringResult = intl.string(tmp2(1115).t["0KfDxM"]);
+        intl.string(channel(1115).t["0KfDxM"]);
         flag = false;
       }
     }
   }
-  let obj3 = { style: channel.style, children: jsx(channel(1177).LegacyText, { style: flag ? tmp.messageContent : tmp.systemContent, numberOfLines: 3, ellipsizeMode: "tail", children: stringResult }) };
-  return <View style={arg0.style}>{jsx(channel(1177).LegacyText, { style: flag ? tmp.messageContent : tmp.systemContent, numberOfLines: 3, ellipsizeMode: "tail", children: stringResult })}</View>;
+  return <View style={style}>{null}</View>;
 });
+const result = size.fileFinishedImporting("modules/message_request/native/MessageRequestPreview.tsx");
+
+export default memoResult;

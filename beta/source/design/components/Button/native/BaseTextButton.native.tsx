@@ -5,101 +5,127 @@
 
 // Module 5282 (BaseTextButton)
 import nativeDefault from "native" /* 576 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
-import spring from "spring" /* 5280 */;
 import IconDefault from "Icon" /* 5283 */;
-import springPresets from "springPresets" /* 5284 */;
+import ButtonConstants from "ButtonConstants" /* 5286 */;
 import ButtonHooks from "ButtonHooks" /* 5287 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-function CollapsingText(children) {
-  const collapseText = children.collapseText;
+let loading;
+
+let bound;
+let bound1;
+let bound2;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+function CollapsingText(collapseText) {
+  let items1;
+  collapseText = collapseText.collapseText;
   let sharedValue;
+  const children = collapseText.children;
   const tmp = closure_10();
-  sharedValue = sharedValue(textCollapsed[6]).useSharedValue(0);
-  let obj = sharedValue(textCollapsed[6]);
+  let obj = sharedValue(4566);
+  sharedValue = obj.useSharedValue(0);
+  let obj2 = sharedValue(4566);
   const fn = function o(nativeEvent) {
+    nativeEvent = nativeEvent.nativeEvent;
+    const obj = sharedValue;
     if (0 === sharedValue.get()) {
-      const result = sharedValue.set(nativeEvent.nativeEvent.layout.width);
+      const result = obj.set(nativeEvent.layout.width);
     }
   };
   fn.__closure = { containerWidth: sharedValue };
   fn.__workletHash = 5541458715155;
   fn.__initData = __initData;
   const items = [sharedValue];
-  closure_129_0 = sharedValue;
-  closure_129_1 = collapseText;
-  let obj2 = sharedValue(textCollapsed[6]);
-  const workletCallback = sharedValue(textCollapsed[6]).useWorkletCallback(fn, items);
+  const workletCallback = obj2.useWorkletCallback(fn, items);
+  obj3 = sharedValue(4566);
   const fn2 = function o() {
+    let obj2;
+    let withSpring;
+    const obj = sharedValue;
     if (0 === sharedValue.get()) {
-      let obj2 = {};
+      obj2 = {};
     } else {
+      const withSpring2 = sharedValue(dependencyMap[8]).withSpring;
       let num2 = 1;
       let num = 0;
+      sharedValue(dependencyMap[8]);
+      obj3 = collapseText;
       if (1 !== collapseText.get()) {
-        num = sharedValue.get();
+        num = obj.get();
       }
-      obj2 = { width: spring.withSpring(num, springPresets.SUBTLE_SPRING, "animate-always"), opacity: null };
-      const obj5 = collapseText;
-      if (num2 === obj5.get()) {
+      obj2 = { width: withSpring2(num, sharedValue(dependencyMap[9]).SUBTLE_SPRING, "animate-always"), opacity: withSpring(num2, sharedValue(dependencyMap[9]).SUBTLE_SPRING, "animate-always") };
+      withSpring = sharedValue(dependencyMap[8]).withSpring;
+      sharedValue(dependencyMap[8]);
+      if (num2 === obj3.get()) {
         num2 = 0;
       }
-      obj2.opacity = spring.withSpring(num2, springPresets.SUBTLE_SPRING, "animate-always");
-      const tmpResult = spring;
     }
     return obj2;
   };
-  const obj3 = sharedValue(textCollapsed[6]);
-  fn2.__closure = { containerWidth: sharedValue, withSpring: sharedValue(textCollapsed[8]).withSpring, collapsed: collapseText, SUBTLE_SPRING: sharedValue(textCollapsed[9]).SUBTLE_SPRING };
+  fn2.__closure = { containerWidth: sharedValue, withSpring: sharedValue(5280).withSpring, collapsed: collapseText, SUBTLE_SPRING: sharedValue(5284).SUBTLE_SPRING };
   fn2.__workletHash = 493185281611;
   fn2.__initData = __initData2;
+  ({ containerWidth: sharedValue, withSpring: sharedValue(5280).withSpring, collapsed: collapseText, SUBTLE_SPRING: sharedValue(5284).SUBTLE_SPRING });
   const animatedStyle = obj3.useAnimatedStyle(fn2);
-  textCollapsed = closure_10().textCollapsed;
-  let obj4 = { containerWidth: sharedValue, withSpring: sharedValue(textCollapsed[8]).withSpring, collapsed: collapseText, SUBTLE_SPRING: sharedValue(textCollapsed[9]).SUBTLE_SPRING };
+  const textCollapsed = closure_10().textCollapsed;
   const fn3 = function s() {
+    let obj;
     if (0 === collapseText.get()) {
-      let obj = {};
-    } else {
       obj = {};
+    } else {
+      obj = { width: sharedValue.get() };
       const merged = Object.assign(textCollapsed);
-      obj.width = sharedValue.get();
     }
     return obj;
   };
   fn3.__closure = { collapsed: collapseText, textCollapsed, containerWidth: sharedValue };
   fn3.__workletHash = 5824483783888;
   fn3.__initData = __initData3;
-  const animatedStyle1 = sharedValue(textCollapsed[6]).useAnimatedStyle(fn3);
-  obj6 = { style: null, onLayout: workletCallback, children: closure_7(collapseText(textCollapsed[6]).View, { style: animatedStyle1, children: children.children }) };
-  const items1 = [tmp.container, animatedStyle];
-  obj6.style = items1;
-  return closure_7(collapseText(textCollapsed[6]).View, obj6);
+  const obj5 = sharedValue(4566);
+  const animatedStyle1 = obj5.useAnimatedStyle(fn3);
+  const obj6 = { style: items1, onLayout: workletCallback, children: closure_7(ReanimatedRexport.View, { style: animatedStyle1, children }) };
+  items1 = [tmp.container, animatedStyle];
+  const View = ReanimatedRexport.View;
+  return closure_7(View, obj6);
 }
 function BaseTextButtonIcon(arg0) {
+  let icon;
+  let iconOpticalOffsetMargin;
+  let iconPosition;
+  let items;
+  let style;
   ({ icon, size, iconPosition, iconOpticalOffsetMargin, style } = arg0);
-  const iconSizeStyles = ButtonHooks.useIconSizeStyles(size);
-  const obj2 = { source: icon, style: null };
-  const items = [style, iconSizeStyles, closure_18(iconPosition, iconOpticalOffsetMargin).offset];
-  obj2.style = items;
-  return React5(Icon, obj2);
+  const obj = ButtonHooks;
+  const iconSizeStyles = obj.useIconSizeStyles(size);
+  const obj2 = { source: icon, style: items };
+  items = [style, iconSizeStyles, closure_18(iconPosition, iconOpticalOffsetMargin).offset];
+  return metroImportDefault(Icon, obj2);
 }
-get_ActivityIndicator = fn(17);
-({ Text: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let createStyles = fn(4836);
+let react = react_mod;
+({ Text: hasOwnProperty, View: metroRequire } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
 let closure_9 = createStyles.createStyles((arg0, sm) => {
   const obj = { grow: { flexGrow: 1, alignSelf: "stretch" }, shrink: { flexShrink: 1 }, buttonText: { flexShrink: 1, flexGrow: 0 }, androidLineHeight: null, icon: null, iconLeft: null, iconRight: null, expressiveButtonContainer: null };
   if (typeof getTextPlatformLineHeight === "function") {
+    let tmp3;
     if (null != sm) {
-      const obj2 = { sm, md: sm + 0.5, lg: sm + 1.9 };
-      const tmp3 = obj2[arg0];
+      tmp3 = { sm, md: sm + 0.5, lg: sm + 1.9 }[arg0];
     }
     let tmp7;
+    obj3 = PlatformUtils;
     if (obj3.isAndroid()) {
       tmp7 = tmp3;
     }
@@ -114,117 +140,167 @@ let closure_9 = createStyles.createStyles((arg0, sm) => {
     throw new TypeError("Trying to call a non-function");
   }
 });
-createStyles = fn(4836);
+createStyles = createStyles_mod;
 let closure_10 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center", position: "relative" }, textCollapsed: { position: "absolute", left: 0 } });
-createStyles = fn(4836);
-let obj = { entityWrapper: { borderWidth: 1, borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden" } };
+createStyles = createStyles_mod;
+let obj = { entityWrapper: obj2 };
+obj2 = { borderWidth: 1, borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden" };
 let closure_11 = createStyles.createStyles(obj);
 const Icon = ReanimatedRexport.createAnimatedComponent(IconDefault);
-const redux = noop.createContext("md");
+const redux = react.createContext("md");
 const __initData = { code: "function BaseTextButtonNativeTsx1({nativeEvent:nativeEvent}){const{containerWidth}=this.__closure;if(containerWidth.get()!==0)return;const{width:width}=nativeEvent.layout;containerWidth.set(width);}" };
 const __initData2 = { code: "function BaseTextButtonNativeTsx2(){const{containerWidth,withSpring,collapsed,SUBTLE_SPRING}=this.__closure;if(containerWidth.get()===0)return{};return{width:withSpring(collapsed.get()===1?0:containerWidth.get(),SUBTLE_SPRING,'animate-always'),opacity:withSpring(collapsed.get()===1?0:1,SUBTLE_SPRING,'animate-always')};}" };
 const __initData3 = { code: "function BaseTextButtonNativeTsx3(){const{collapsed,textCollapsed,containerWidth}=this.__closure;if(collapsed.get()===0)return{};return{...textCollapsed,width:containerWidth.get()};}" };
-createStyles = fn(4836);
+createStyles = createStyles_mod;
 let closure_18 = createStyles.createStyles((arg0, marginLeft) => {
   if (0 === marginLeft) {
-    const obj2 = { offset: {} };
-    return obj2;
+    return { offset: {} };
   } else if ("start" === arg0) {
-    const obj3 = { offset: null };
-    const obj4 = { marginLeft };
-    obj3.offset = obj4;
+    obj3 = { offset: obj4 };
     return obj3;
   } else if ("end" === arg0) {
-    const obj5 = { offset: null };
-    obj6 = { marginRight: marginLeft };
-    obj5.offset = obj6;
+    const obj5 = { offset: obj6 };
     return obj5;
   } else {
-    const obj = { offset: {} };
-    return obj;
+    return { offset: {} };
   }
 });
-let obj6 = { sm: null, md: null, lg: null };
-const LARGE_BUTTON_HEIGHT = fn(5286).LARGE_BUTTON_HEIGHT;
-const bound = Math.max((fn(5286).MINIMUM_HIT_AREA - fn(5286).SMALL_BUTTON_HEIGHT) / 2, 0);
-const rect = { top: bound, left: "Array", right: "isArray", bottom: bound };
-obj6.sm = rect;
-const LARGE_BUTTON_HEIGHT2 = fn(5286).LARGE_BUTTON_HEIGHT;
-const bound1 = Math.max((fn(5286).MINIMUM_HIT_AREA - fn(5286).MEDIUM_BUTTON_HEIGHT) / 2, 0);
-const rect1 = { top: bound1, left: "Array", right: "isArray", bottom: bound1 };
-obj6.md = rect1;
-const bound2 = Math.max((fn(5286).MINIMUM_HIT_AREA - fn(5286).LARGE_BUTTON_HEIGHT) / 2, 0);
-const rect2 = { top: bound2, left: "Array", right: "isArray", bottom: bound2 };
-obj6.lg = rect2;
+let obj3 = { sm: { top: bound, left: "Array", right: "paddingHorizontal", bottom: bound }, md: { top: bound1, left: "Array", right: "paddingHorizontal", bottom: bound1 }, lg: { top: bound2, left: "Array", right: "paddingHorizontal", bottom: bound2 } };
+const LARGE_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
+bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
+const LARGE_BUTTON_HEIGHT2 = ButtonConstants.LARGE_BUTTON_HEIGHT;
+bound1 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.MEDIUM_BUTTON_HEIGHT) / 2, 0);
+bound2 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.LARGE_BUTTON_HEIGHT) / 2, 0);
 function getTextPlatformLineHeight(arg0, arg1) {
 
 }
-let merged = Object.assign({}, noop.forwardRef((iconOpticalOffsetMargin, ref) => {
-  ({ text, textElement, size } = iconOpticalOffsetMargin);
-  ({ style, pillStyle } = iconOpticalOffsetMargin);
+let obj4 = {
+  Icon: function TextButtonIcon(variant) {
+    let str = variant.variant;
+    const source = variant.source;
+    if (str === undefined) {
+      str = "icon";
+    }
+    let flag = variant.disableColor;
+    if (flag === undefined) {
+      flag = true;
+    }
+    const context = react.useContext(redux);
+    const tmp2 = closure_11();
+    const obj = ButtonHooks;
+    const obj2 = { source, disableColor: flag, style: obj.useIconSizeStyles(context) };
+    const tmp4 = metroImportDefault(Icon, obj2);
+    let tmp3Result = tmp4;
+    const tmp3 = metroImportDefault;
+    if ("entity" === str) {
+      obj3 = { style: tmp2.entityWrapper, children: tmp4 };
+      tmp3Result = tmp3(metroRequire, obj3);
+    }
+    return tmp3Result;
+  }
+};
+let merged = Object.assign({}, react.forwardRef((loading, ref) => {
+  let ButtonPill;
+  let Provider;
+  let accessibilityLabel;
+  let accessibilityRole;
+  let collapseText;
+  let icon;
+  let iconPosition;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
+  let maxFontSizeMultiplier;
+  let obj8;
+  let obj9;
+  let onLayout;
+  let onPressIn;
+  let pillStyle;
+  let str4;
+  let style;
+  let text;
+  let textElement;
+  let textVariant;
+  let tmp22;
+  let tmp30;
+  let tmp31;
+  let tmp32;
+  ({ text, textElement, size } = loading);
+  ({ style, pillStyle } = loading);
   if (undefined === size) {
+    const tmp = onPressIn;
     size = onPressIn(onLayout[10]).DEFAULT_BUTTON_SIZE;
   }
-  ({ icon, iconPosition } = iconOpticalOffsetMargin);
+  ({ icon, iconPosition } = loading);
   let str = "start";
+  loading = loading.loading;
   if (undefined !== iconPosition) {
     str = iconPosition;
   }
-  iconOpticalOffsetMargin = iconOpticalOffsetMargin.iconOpticalOffsetMargin;
+  const iconOpticalOffsetMargin = loading.iconOpticalOffsetMargin;
   let num = 0;
   if (undefined !== iconOpticalOffsetMargin) {
     num = iconOpticalOffsetMargin;
   }
-  const grow = iconOpticalOffsetMargin.grow;
+  const grow = loading.grow;
   let grow2 = undefined !== grow && grow;
-  const shrink = iconOpticalOffsetMargin.shrink;
+  const shrink = loading.shrink;
   let shrink2 = undefined !== shrink && shrink;
-  ({ collapseText, accessibilityRole } = iconOpticalOffsetMargin);
+  ({ collapseText, accessibilityRole } = loading);
   let str2 = "button";
   if (undefined !== accessibilityRole) {
     str2 = accessibilityRole;
   }
-  ({ accessibilityLabel, maxFontSizeMultiplier } = iconOpticalOffsetMargin);
+  ({ accessibilityLabel, maxFontSizeMultiplier } = loading);
   if (undefined === maxFontSizeMultiplier) {
+    let tmp3 = onPressIn;
+    let tmp4 = onLayout;
     maxFontSizeMultiplier = onPressIn(onLayout[10]).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
-  const shiny = iconOpticalOffsetMargin.shiny;
-  onPressIn = iconOpticalOffsetMargin.onPressIn;
-  const onPressOut = iconOpticalOffsetMargin.onPressOut;
-  onLayout = iconOpticalOffsetMargin.onLayout;
-  if (null != iconOpticalOffsetMargin.textVariant) {
-    let textVariant = iconOpticalOffsetMargin.textVariant;
+  const shiny = loading.shiny;
+  onPressIn = loading.onPressIn;
+  const onPressOut = loading.onPressOut;
+  onLayout = loading.onLayout;
+  const tmp5 = undefined !== shiny && shiny;
+  if (null != loading.textVariant) {
+    textVariant = loading.textVariant;
   } else {
-    textVariant = onPressIn(onLayout[10]).getButtonDefaultTextVariant(size);
     let obj = onPressIn(onLayout[10]);
+    textVariant = obj.getButtonDefaultTextVariant(size);
   }
   const tmp10 = onPressIn(onLayout[13]).TextStyleSheet[textVariant];
   const tmp11 = closure_9(size, tmp10.fontSize);
-  const enabled = noop.useContext(onPressIn(onLayout[14]).AccessibilityPreferencesContext).reducedMotion.enabled;
-  let str3 = iconOpticalOffsetMargin.variant;
+  let obj2 = react;
+  const tmp12 = obj3[size];
+  const enabled = react.useContext(onPressIn(onLayout[14]).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let str3 = loading.variant;
   if (str3 == null) {
     str3 = "primary";
   }
   if ("tertiary" === str3) {
     str3 = "secondary";
   }
-  const sharedValue = onPressIn(onLayout[6]).useSharedValue(0);
+  const tmp8Result = onPressIn(onLayout[6]);
+  const sharedValue = tmp8Result.useSharedValue(0);
   const startsWithResult = str3.startsWith("expressive");
-  noop = startsWithResult;
+  react = startsWithResult;
   obj2.useRef(null);
   ref = obj2.useRef({ width: 0, height: 0 });
-  const tmp15 = enabled(noop.useState({ pressed: false, posx: 0, posy: 0 }), 2);
-  closure_7 = tmp15[1];
+  const tmp16 = enabled(obj2.useState({ pressed: false, posx: 0, posy: 0 }), 2);
+  let closure_7 = tmp16[1];
   const items = [onLayout, startsWithResult];
+  const first = tmp16[0];
   const items1 = [startsWithResult, onPressIn, enabled];
   const callback = obj2.useCallback((nativeEvent) => {
     if (onLayout != null) {
       tmp(nativeEvent);
     }
-    if (startsWithResult) {
-      const size = { width: null, height: null };
+    const tmp3 = react;
+    if (tmp3) {
+      size = { width: null, height: null };
       ({ width: obj.width, height: obj.height } = nativeEvent.nativeEvent.layout);
-      closure_6.current = size;
+      ref.current = size;
     }
   }, items);
   const items2 = [startsWithResult, onPressOut];
@@ -232,10 +308,12 @@ let merged = Object.assign({}, noop.forwardRef((iconOpticalOffsetMargin, ref) =>
     if (onPressIn != null) {
       tmp(nativeEvent);
     }
-    if (startsWithResult) {
-      if (enabled) {
+    const tmp3 = react;
+    if (tmp3) {
+      const tmp4 = enabled;
+      if (tmp4) {
         const current2 = ref.current;
-        if (current2 != tmp2) {
+        if (current2 != null) {
           current2.play();
         }
       } else {
@@ -244,151 +322,109 @@ let merged = Object.assign({}, noop.forwardRef((iconOpticalOffsetMargin, ref) =>
         const obj = { pressed: true, posx: nativeEvent.locationX - current.width / 2, posy: nativeEvent.locationY - current.height / 2 };
         closure_7(obj);
       }
-      const result = HapticUtils.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_HEAVY);
+      const obj2 = HapticUtils;
+      const result = obj2.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_HEAVY);
     }
   }, items1);
   const callback2 = obj2.useCallback((arg0) => {
     if (onPressOut != null) {
       tmp(arg0);
     }
-    if (startsWithResult) {
+    const tmp4 = react;
+    if (tmp4) {
       closure_7((arg0) => {
-        const obj = {};
+        const obj = { pressed: false };
         const merged = Object.assign(arg0);
-        obj.pressed = false;
         return obj;
       });
-      const result = HapticUtils.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+      let obj = HapticUtils;
+      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
     }
   }, items2);
-  const tmp5 = undefined !== shiny && shiny;
-  const tmp8Result = onPressIn(onLayout[6]);
-  const buttonTextColorStyles = onPressIn(onLayout[12]).useButtonTextColorStyles(str3);
+  const tmp8Result4 = onPressIn(onLayout[12]);
+  const buttonTextColorStyles = tmp8Result4.useButtonTextColorStyles(str3);
   if (null == icon) {
-    let obj3 = {};
+    obj3 = {};
   } else {
     obj3 = "start" === str ? tmp11.iconLeft : tmp11.iconRight;
   }
   if (null == icon) {
-    const obj4 = { icon, size, style: null, iconOpticalOffsetMargin: null, iconPosition: null };
-    const items3 = [tmp11.icon, ];
+    const obj4 = { icon, size, style: items3, iconOpticalOffsetMargin: num, iconPosition: str };
+    items3 = [tmp11.icon, ];
     const obj5 = { tintColor: buttonTextColorStyles.color };
     items3[1] = obj5;
-    obj4.style = items3;
-    obj4.iconOpticalOffsetMargin = num;
-    obj4.iconPosition = str;
-    let tmp20 = closure_7(BaseTextButtonIcon, obj4);
+    tmp22 = closure_7(BaseTextButtonIcon, obj4);
   } else {
-    tmp20 = icon;
+    tmp22 = icon;
   }
   if (null == textElement) {
-    obj6 = { maxFontSizeMultiplier, numberOfLines: 1, style: null, children: null };
-    const items4 = [tmp11.buttonText, tmp10, , , ];
+    const obj6 = { maxFontSizeMultiplier, numberOfLines: 1, style: items4, children: text };
+    items4 = [tmp11.buttonText, tmp10, , , ];
     let androidLineHeight = null;
+    const tmp25 = closure_7;
+    const tmp26 = ref;
+    const tmp8Result5 = onPressIn(onLayout[11]);
     if (tmp8Result5.isAndroid()) {
       androidLineHeight = tmp11.androidLineHeight;
     }
     items4[2] = androidLineHeight;
     items4[3] = buttonTextColorStyles;
     items4[4] = obj3;
-    obj6.style = items4;
-    obj6.children = text;
-    textElement = closure_7(ref, obj6);
-    tmp8Result5 = tmp8(tmp9[11]);
+    textElement = tmp25(tmp26, obj6);
   }
-  const obj7 = { ref };
-  let merged = Object.assign(iconOpticalOffsetMargin);
-  obj7.onPressIn = callback1;
-  obj7.onPressOut = callback2;
-  obj7.onLayout = callback;
+  const obj7 = { ref, onPressIn: callback1, onPressOut: callback2, onLayout: callback, style: items5, pointerEvents: str4, pressed: sharedValue, accessibilityRole: str2, accessibilityLabel, hitSlop: tmp12, children: closure_7(ButtonPill, obj8) };
+  const BaseButton = tmp8(tmp9[16]).BaseButton;
+  let merged = Object.assign(loading);
   if (grow2) {
     grow2 = tmp11.grow;
   }
-  const items5 = [grow2, , , ];
+  items5 = [grow2, , , ];
   if (shrink2) {
     shrink2 = tmp11.shrink;
   }
   items5[1] = shrink2;
   items5[2] = style;
-  let expressiveButtonContainer = startsWithResult;
-  if (startsWithResult) {
-    expressiveButtonContainer = tmp11.expressiveButtonContainer;
-  }
-  items5[3] = expressiveButtonContainer;
-  obj7.style = items5;
-  let str4 = "box-only";
+  items5[3] = startsWithResult && tmp11.expressiveButtonContainer;
+  str4 = "box-only";
   if (!startsWithResult) {
-    str4 = iconOpticalOffsetMargin.pointerEvents;
+    str4 = loading.pointerEvents;
   }
-  obj7.pointerEvents = str4;
-  obj7.pressed = sharedValue;
-  obj7.accessibilityRole = str2;
   if (accessibilityLabel == null) {
-    accessibilityLabel = tmp8(tmp9[17]).getNodeText(text);
-    const tmp8Result6 = tmp8(tmp9[17]);
+    const tmp8Result6 = onPressIn(onLayout[17]);
+    accessibilityLabel = tmp8Result6.getNodeText(text);
   }
-  obj7.accessibilityLabel = accessibilityLabel;
-  obj7.hitSlop = obj6[size];
-  const obj8 = { variant: str3, size, loading: iconOpticalOffsetMargin.loading, pressed: sharedValue, style: pillStyle, shiny: tmp5, expressiveRiveRef: null, expressivePressState: null, children: null };
-  let tmp28;
+  obj8 = { variant: str3, size, loading, pressed: sharedValue, style: pillStyle, shiny: tmp5, expressiveRiveRef: tmp30, expressivePressState: tmp31, children: tmp32(Provider, obj9) };
+  tmp30 = undefined;
+  ButtonPill = tmp8(tmp9[18]).ButtonPill;
   if (startsWithResult) {
-    tmp28 = ref;
+    tmp30 = ref;
   }
-  obj8.expressiveRiveRef = tmp28;
-  let first;
+  tmp31 = undefined;
   if (startsWithResult) {
-    first = tmp15[0];
+    tmp31 = first;
   }
-  obj8.expressivePressState = first;
-  const obj9 = { value: size, children: null };
-  let tmp31 = null != icon;
-  if (tmp31) {
-    tmp31 = "start" === str;
+  let tmp33 = null != icon;
+  Provider = redux.Provider;
+  obj9 = { value: size, children: items6 };
+  tmp32 = closure_8;
+  if (tmp33) {
+    tmp33 = "start" === str;
   }
-  if (tmp31) {
-    tmp31 = tmp20;
+  if (tmp33) {
+    tmp33 = tmp22;
   }
-  const items6 = [tmp31, , ];
-  let tmp26Result = textElement;
+  items6 = [tmp33, , ];
+  let tmp28Result = textElement;
   if (undefined !== collapseText) {
     const obj10 = { collapseText, children: textElement };
-    tmp26Result = tmp26(CollapsingText, obj10);
+    tmp28Result = tmp28(CollapsingText, obj10);
   }
-  items6[1] = tmp26Result;
-  let tmp34 = null != icon;
-  if (tmp34) {
-    tmp34 = "end" === str;
-  }
-  if (tmp34) {
-    tmp34 = tmp20;
-  }
-  items6[2] = tmp34;
-  obj9.children = items6;
-  obj8.children = closure_8(redux.Provider, obj9);
-  obj7.children = closure_7(onPressIn(onLayout[18]).ButtonPill, obj8);
-  return closure_7(onPressIn(onLayout[16]).BaseButton, obj7);
-}), {
-  Icon: function TextButtonIcon(source) {
-    let str = source.variant;
-    if (str === undefined) {
-      str = "icon";
-    }
-    let flag = source.disableColor;
-    if (flag === undefined) {
-      flag = true;
-    }
-    const context = noop.useContext(closure_13);
-    const tmp2 = closure_11();
-    const tmp4 = React5(Icon, { source: source.source, disableColor: flag, style: ButtonHooks.useIconSizeStyles(context) });
-    let tmp3Result = tmp4;
-    if ("entity" === str) {
-      const obj3 = { style: tmp2.entityWrapper, children: tmp4 };
-      tmp3Result = React5(timestampProducer, obj3);
-    }
-    return tmp3Result;
-  }
-});
-let size = fn(2);
+  items6[1] = tmp28Result;
+  const tmp36 = null != icon && "end" === str && tmp22;
+  items6[2] = tmp36;
+  return closure_7(BaseButton, obj7);
+}), obj4);
+let size = size_mod;
 let result = size.fileFinishedImporting("design/components/Button/native/BaseTextButton.native.tsx");
 
 export const BaseTextButton = merged;

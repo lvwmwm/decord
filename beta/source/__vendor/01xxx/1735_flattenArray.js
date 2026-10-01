@@ -7,52 +7,23 @@
 // Module 1735 (flattenArray)
 
 export const flattenArray = function flattenArray(style) {
+  const f110890 = (arr) => {
+    if (Array.isArray(arr)) {
+      if (typeof _flattenArray === "function") {
+        const item = arr.forEach(f110890);
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      items.push(arr);
+    }
+  };
   if (Array.isArray(style)) {
     const items = [];
     function _flattenArray(arg0) {
 
     }
-    const item = style.forEach((arr) => {
-      if (Array.isArray(arr)) {
-        if (typeof closure_1_1 === "function") {
-          let item = arr.forEach((arr) => {
-            if (Array.isArray(arr)) {
-              if (typeof closure_1_1 === "function") {
-                let item = arr.forEach((arr) => {
-                  if (Array.isArray(arr)) {
-                    if (typeof closure_1_1 === "function") {
-                      let item = arr.forEach((arr) => {
-                        if (Array.isArray(arr)) {
-                          if (typeof closure_1_1 === "function") {
-                            let item = arr.forEach(() => { ... });
-                          } else {
-                            throw new TypeError("Trying to call a non-function");
-                          }
-                        } else {
-                          closure_1_0.push(arr);
-                        }
-                      });
-                    } else {
-                      throw new TypeError("Trying to call a non-function");
-                    }
-                  } else {
-                    closure_1_0.push(arr);
-                  }
-                });
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            } else {
-              closure_1_0.push(arr);
-            }
-          });
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        closure_1_0.push(arr);
-      }
-    });
+    let item = style.forEach(f110890);
     return items;
   } else {
     const items1 = [style];
@@ -60,16 +31,10 @@ export const flattenArray = function flattenArray(style) {
   }
 };
 export const has = (arg0, fn) => {
-  let tmp = typeof fn === "function";
-  if (typeof fn !== "function") {
-    tmp = typeof fn === "object";
-  }
+  let tmp = typeof fn === "function" || typeof fn === "object";
   if (tmp) {
-    let tmp3 = null != fn;
-    if (tmp3) {
-      tmp3 = arg0 in fn;
-    }
-    tmp = tmp3;
+    tmp = null != fn && arg0 in fn;
+    const tmp3 = null != fn && arg0 in fn;
   }
   return tmp;
 };

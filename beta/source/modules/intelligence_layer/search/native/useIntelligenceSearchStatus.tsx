@@ -5,42 +5,48 @@
 // Exports: useIntelligenceSearchStatus
 
 // Module 16452 (useIntelligenceSearchStatus)
+import SearchConstants from "SearchConstants" /* 7303 */;
 import SearchUtils from "SearchUtils" /* 11823 */;
 import SearchQueryStore from "SearchQueryStore" /* 11822 */;
 import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11846 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const SearchTabs = fn(7303).SearchTabs;
-const size = fn(2);
+const SearchTabs = SearchConstants.SearchTabs;
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/useIntelligenceSearchStatus.tsx");
 
 export const useIntelligenceSearchStatus = function useIntelligenceSearchStatus(searchContext) {
+  let guildIdFromSearchContext;
   _require = searchContext;
-  let guildIdFromSearchContext = null;
+  const tmp2 = guildIdFromSearchContext;
+  let obj = require("IntelligenceSearchUtils");
+  guildIdFromSearchContext = null;
   if (obj.isSupportedSearchContext(searchContext)) {
-    guildIdFromSearchContext = tmp(tmp2[4]).getGuildIdFromSearchContext(searchContext);
-    const tmpResult = tmp(tmp2[4]);
+    const tmpResult = require("SearchUtils");
+    guildIdFromSearchContext = tmpResult.getGuildIdFromSearchContext(searchContext);
   }
-  obj = require("IntelligenceSearchUtils");
-  const isNlpSearchEnabled = require("IntelligenceSearchExperiments").useIsNlpSearchEnabled(guildIdFromSearchContext, "search");
   const tmpResult3 = require("IntelligenceSearchExperiments");
+  const isNlpSearchEnabled = tmpResult3.useIsNlpSearchEnabled(guildIdFromSearchContext, "search");
   const items = [isNlpSearchEnabled, IntelligenceSearchStore];
   const items1 = [searchContext, guildIdFromSearchContext, isNlpSearchEnabled];
-  return require("initialize").useStateFromStoresObject(items, () => {
-    const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(closure_0);
-    const searchTabFetchId = SearchUtils.getSearchTabFetchId(closure_0, SearchTabs.MESSAGES, searchResultsQuery);
+  const tmpResult4 = require("get initialized");
+  return tmpResult4.useStateFromStoresObject(items, () => {
+    const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
+    const obj = SearchUtils;
+    const searchTabFetchId = obj.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, searchResultsQuery);
     if (null != guildIdFromSearchContext) {
-      if (isNlpSearchEnabled) {
+      let NOT_QUALIFIED;
+      const tmp6 = isNlpSearchEnabled;
+      if (tmp6) {
         let NOT_QUALIFIED2 = IntelligenceSearchStore.getStatus(tmp5, searchTabFetchId);
         if (NOT_QUALIFIED2 == null) {
           NOT_QUALIFIED2 = tmp2(11848).IntelligenceSearchStatus.NOT_QUALIFIED;
         }
-        let NOT_QUALIFIED = NOT_QUALIFIED2;
+        NOT_QUALIFIED = NOT_QUALIFIED2;
       }
-      const obj2 = { status: NOT_QUALIFIED, guildId: tmp5, requestKey: searchTabFetchId };
-      return obj2;
+      return { status: NOT_QUALIFIED, guildId: guildIdFromSearchContext, requestKey: searchTabFetchId };
     }
     NOT_QUALIFIED = tmp2(11848).IntelligenceSearchStatus.NOT_QUALIFIED;
   }, items1);

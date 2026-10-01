@@ -6,39 +6,64 @@
 
 // Module 10509 (PremiumGiftCustomization)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import intl4 from "intl" /* 1115 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const PremiumTypes = fn(1374).PremiumTypes;
-const jsxProd = fn(21);
-({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, scrollViewContainer: null, senderHeaderTitle: null };
-const obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj2.scrollViewContainer = { paddingBottom: nativeDefault.space.PX_24 };
-const obj4 = { paddingBottom: nativeDefault.space.PX_24 };
-obj2.senderHeaderTitle = { marginTop: nativeDefault.space.PX_24, marginLeft: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8, fontSize: 14 };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
+let navigation;
+
+let c10;
+let c9;
+let hasOwnProperty;
+let metroImportAll;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let _slicedToArray = _slicedToArray_mod;
+({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
+const PremiumTypes = PremiumConstants.PremiumTypes;
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, scrollViewContainer: obj3, senderHeaderTitle: obj4 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { paddingBottom: nativeDefault.space.PX_24 };
+obj4 = { marginTop: nativeDefault.space.PX_24, marginLeft: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8, fontSize: 14 };
+let closure_11 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumGiftCustomization.tsx");
 
 export default function PremiumGiftCustomization() {
-  navigation = navigation(ref[7]).useNavigation();
-  const tmp4 = closure_11();
+  let claimableRewards;
+  let first;
+  let intl3;
+  let items2;
+  let items3;
+  let items4;
+  let premiumType;
+  let recipientUser;
+  let ref;
+  let selectedGiftingPromotionReward;
+  let stringResult;
+  let tmp9;
   let obj = navigation(ref[7]);
-  const nativeGiftContext = navigation(ref[8]).useNativeGiftContext();
+  navigation = obj.useNavigation();
+  const tmp4 = closure_11();
+  let obj2 = navigation(ref[8]);
+  const nativeGiftContext = obj2.useNativeGiftContext();
   ({ recipientUser, premiumType, claimableRewards, selectedGiftingPromotionReward } = nativeGiftContext);
-  const obj2 = navigation(ref[8]);
-  const giftingPromotionDefaultSelectionV2 = navigation(ref[9]).useGiftingPromotionDefaultSelectionV2(claimableRewards, selectedGiftingPromotionReward);
-  const tmp7 = _slicedToArray(noop.useState(0), 2);
-  const first = tmp7[0];
-  ref = noop.useRef(null);
+  const obj3 = navigation(ref[9]);
+  const giftingPromotionDefaultSelectionV2 = obj3.useGiftingPromotionDefaultSelectionV2(claimableRewards, selectedGiftingPromotionReward);
+  [first, tmp9] = react.useState(0);
+  ref = react.useRef(null);
   const items = [first];
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
+    let closure_1;
     const timerId = setTimeout(() => {
       const current = ref.current;
       let scrollToResult;
@@ -49,41 +74,43 @@ export default function PremiumGiftCustomization() {
       return scrollToResult;
     }, 100);
   }, items);
+  const obj4 = react;
   if (premiumType === PremiumTypes.TIER_2) {
     const intl2 = tmp(tmp2[10]).intl;
-    let stringResult = intl2.string(tmp(tmp2[10]).t.lG6a5x);
+    stringResult = intl2.string(tmp(tmp2[10]).t.lG6a5x);
   } else {
     let intl = tmp(tmp2[10]).intl;
     stringResult = intl.string(tmp(tmp2[10]).t["t9uG/o"]);
   }
   _slicedToArray = stringResult;
   const items1 = [navigation, stringResult];
-  const effect = noop.useEffect(() => {
-    const obj = { title: null };
-    const intl = util.intl;
-    obj.title = intl.formatToPlainString(util.t["RMu0/q"], { nitroTierName: stringResult });
-    navigation.setOptions(obj);
+  const effect = obj4.useEffect(() => {
+    let intl;
+    let obj2;
+    const setOptions = navigation.setOptions;
+    const obj = { title: intl.formatToPlainString(intl4.t["RMu0/q"], obj2) };
+    intl = intl4.intl;
+    obj2 = { nitroTierName: _slicedToArray };
+    setOptions(obj);
   }, items1);
-  const obj5 = { style: tmp4.container, children: null };
-  const obj6 = { ref, contentContainerStyle: tmp4.scrollViewContainer, showsVerticalScrollIndicator: false, children: null };
-  const items2 = [closure_8(first(ref[11]), {}), closure_8(first(ref[12]), {}), ];
-  let tmp13Result = null != recipientUser;
-  if (tmp13Result) {
-    const obj7 = { children: null };
-    const obj8 = { style: tmp4.senderHeaderTitle, variant: "text-md/semibold", children: null };
-    const intl3 = tmp(tmp2[10]).intl;
-    obj8.children = intl3.string(tmp(tmp2[10]).t.NlkxGS);
-    const items3 = [tmp15(tmp(tmp2[13]).Text, obj8), , ];
+  const obj5 = { style: tmp4.container, children: items4 };
+  const obj6 = { ref, contentContainerStyle: tmp4.scrollViewContainer, showsVerticalScrollIndicator: false, children: closure_10(closure_5, { children: items2 }) };
+  items2 = [closure_8(first(tmp2[11]), {}), closure_8(first(tmp2[12]), {}), ];
+  let tmp14Result = null != recipientUser;
+  const tmp17 = closure_6;
+  if (tmp14Result) {
+    const obj7 = { children: items3 };
+    const obj8 = { style: tmp4.senderHeaderTitle, variant: "text-md/semibold", children: intl3.string(navigation(ref[10]).t.NlkxGS) };
+    const Text = tmp(tmp2[13]).Text;
+    intl3 = tmp(tmp2[10]).intl;
+    items3 = [closure_8(Text, obj8), , ];
     const obj9 = { user: recipientUser };
-    items3[1] = tmp15(tmp17(tmp2[14]), obj9);
-    const obj10 = { onFocusMessage: callback, setMessagePosition: tmp7[1] };
-    items3[2] = tmp15(tmp17(tmp2[15]), obj10);
-    obj7.children = items3;
-    tmp13Result = tmp13(closure_9, obj7);
+    items3[1] = closure_8(first(ref[14]), obj9);
+    const obj10 = { onFocusMessage: callback, setMessagePosition: tmp9 };
+    items3[2] = closure_8(first(ref[15]), obj10);
+    tmp14Result = tmp14(closure_9, obj7);
   }
-  items2[2] = tmp13Result;
-  obj6.children = closure_10(closure_5, { children: items2 });
-  const items4 = [closure_8(closure_6, obj6), closure_8(first(ref[16]), { defaultSelection: giftingPromotionDefaultSelectionV2 })];
-  obj5.children = items4;
+  items2[2] = tmp14Result;
+  items4 = [closure_8(tmp17, obj6), closure_8(first(tmp2[16]), { defaultSelection: giftingPromotionDefaultSelectionV2 })];
   return closure_10(closure_5, obj5);
 };

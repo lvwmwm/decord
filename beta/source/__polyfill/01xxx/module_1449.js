@@ -4,9 +4,11 @@
 
 // Module 1449
 import _mod1283 from "module_1283" /* 1283 */;
-import _mod1314 from "module_1314" /* 1314 */;
+import hasToStringTagShams from "hasToStringTagShams" /* 1446 */;
 import callBoundIntrinsic from "callBoundIntrinsic" /* 1315 */;
 
+let isRegex;
+let tmp = hasToStringTagShams();
 if (tmp) {
   let closure_2 = callBoundIntrinsic("RegExp.prototype.exec");
   let closure_3 = {};
@@ -14,21 +16,24 @@ if (tmp) {
     throw closure_3;
   }
   const obj = { toString: throwRegexMarker, valueOf: throwRegexMarker };
+  let tmp3 = globalThis;
   const _Symbol = Symbol;
   if (typeof Symbol.toPrimitive === "symbol") {
     const _Symbol2 = Symbol;
     obj[Symbol.toPrimitive] = throwRegexMarker;
   }
-  function isRegex(obj) {
-    if (obj) {
+  isRegex = function isRegex(obj) {
+    const tmp = obj;
+    if (tmp) {
       if (typeof obj === "object") {
-        const tmp8 = _mod1283(obj, "lastIndex");
-        if (tmp8) {
-          if (_mod1314(tmp8, "value")) {
+        const tmp9 = _mod1283(obj, "lastIndex");
+        const tmp7 = require;
+        if (tmp9) {
+          if (tmp7(1314)(tmp9, "value")) {
             try {
               closure_2(obj, obj);
-            } catch (tmp4) {
-              return tmp4 === closure_3;
+            } catch (tmp5) {
+              return tmp5 === closure_3;
             }
           }
         }
@@ -36,7 +41,7 @@ if (tmp) {
       }
     }
     return false;
-  }
+  };
 } else {
   let closure_5 = callBoundIntrinsic("Object.prototype.toString");
   isRegex = function isRegex(obj) {
@@ -48,10 +53,7 @@ if (tmp) {
       }
       tmp = tmp2;
     }
-    let tmp3 = !tmp;
-    if (!tmp) {
-      tmp3 = "[object RegExp]" === closure_5(obj);
-    }
+    const tmp3 = !tmp && "[object RegExp]" === closure_5(obj);
     return tmp3;
   };
 }

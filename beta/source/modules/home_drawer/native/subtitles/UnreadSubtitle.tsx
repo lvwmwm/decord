@@ -5,34 +5,39 @@
 // Exports: default
 
 // Module 15963 (UnreadSubtitle)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/home_drawer/native/subtitles/UnreadSubtitle.tsx");
 
 export default function UnreadSubtitle(arg0) {
+  let channel;
+  let channelName;
+  let count;
+  let guild;
   ({ channel, channelName } = arg0);
   let subtitleStyles;
   let channelIconComponentWithGuild;
   ({ guild, count } = arg0);
-  subtitleStyles = subtitleStyles(channelIconComponentWithGuild[3]).useSubtitleStyles();
+  const obj = subtitleStyles(channelIconComponentWithGuild[3]);
+  subtitleStyles = obj.useSubtitleStyles();
   channelIconComponentWithGuild = undefined;
   if (null != channel) {
-    channelIconComponentWithGuild = tmp(tmp2[4]).getChannelIconComponentWithGuild(channel, guild);
-    const tmpResult = tmp(tmp2[4]);
+    const tmpResult = subtitleStyles(channelIconComponentWithGuild[4]);
+    channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
     channelIconComponentWithGuild = tmp(tmp2[5]).TextIcon;
   }
   const diff = count - 1;
   const intl = tmp(tmp2[6]).intl;
-  const obj2 = { style: subtitleStyles.subtitleRow, accessible: true, accessibilityLabel: intl.formatToPlainString(subtitleStyles(channelIconComponentWithGuild[6]).t.gxD5I6, { channelName, count: diff }), children: null };
   const intl2 = tmp(tmp2[6]).intl;
-  obj2.children = intl2.format(subtitleStyles(channelIconComponentWithGuild[6]).t.OqlmU6, {
+  const obj3 = {
     channelName,
     count: diff,
     labelHook(children, arg1) {
@@ -47,6 +52,6 @@ export default function UnreadSubtitle(arg0) {
     overflowHook(children, arg1) {
       return jsx(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "text-xs/medium", color: "text-muted", children }, arg1);
     }
-  });
-  return <View style={subtitleStyles.subtitleRow} accessible accessibilityLabel={intl.formatToPlainString(subtitleStyles(channelIconComponentWithGuild[6]).t.gxD5I6, { channelName, count: diff })}>{null}</View>;
+  };
+  return <View style={subtitleStyles.subtitleRow} accessible accessibilityLabel={intl.formatToPlainString(subtitleStyles(channelIconComponentWithGuild[6]).t.gxD5I6, { channelName, count: diff })}>{intl2.format(subtitleStyles(channelIconComponentWithGuild[6]).t.OqlmU6, obj3)}</View>;
 };

@@ -8,11 +8,14 @@
 import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
 function getHighestHoistedRole(arg0, arg1) {
+  let obj;
+  let obj2;
   let tmp = arg2;
   if (arg2 === undefined) {
     const items = [GuildStore, GuildMemberStore];
@@ -28,7 +31,8 @@ function getHighestHoistedRole(arg0, arg1) {
         const member = obj2.getMember(guild.id, arg1);
         let highestHoistedRole = null;
         if (null != member) {
-          highestHoistedRole = PermissionUtilsAll.getHighestHoistedRole(guild, member);
+          const obj3 = PermissionUtilsAll;
+          highestHoistedRole = obj3.getHighestHoistedRole(guild, member);
         }
         return highestHoistedRole;
       }
@@ -36,15 +40,16 @@ function getHighestHoistedRole(arg0, arg1) {
   }
   return null;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/useGuildMemberDisplayRole.tsx");
 
 export default function useGuildMemberDisplayRole(arg0, arg1) {
+  let closure_0;
   _require = arg0;
-  closure_1 = arg1;
+  let closure_1 = arg1;
   let items = [GuildStore, GuildMemberStore];
   const items1 = [arg0, arg1];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     const items = [GuildStore, GuildMemberStore];
     return getHighestHoistedRole(closure_0, closure_1, items);
   }, items1);

@@ -4,12 +4,17 @@
 // Dependencies: [32, 2061, 2068, 2067, 5581, 4483, 2071, 2]
 
 // Module 5815 (GuildStickersStore)
+import js_shim_PlainRecord from "js_shim/PlainRecord" /* 2061 */;
+import LibdiscoreStore2 from "LibdiscoreStore" /* 2068 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 2071 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
 import StickersTypes from "StickersTypes" /* 5581 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let map, set;
+
 function parseServerGuildSticker(item10023) {
   const obj = { id: item10023.id, tags: item10023.tags, type: item10023.type, name: item10023.name, description: item10023.description, format_type: item10023.format_type, guild_id: item10023.guild_id, available: item10023.available, version: item10023.version, user_id: item10023.user_id };
   obj[TypeTag] = "GuildSticker";
@@ -26,34 +31,39 @@ function parseServerGuildStickers(stickers) {
   return obj;
 }
 function deriveStickerMetadata(arg0, tags) {
+  let trimmed;
+  let trimmed1;
   const items = [];
-  const obj = { type: items(5581).StickerMetadataTypes.STICKER_NAME, value: null };
-  const trimmed = tags.name.trim();
-  obj.value = trimmed.toLocaleLowerCase();
+  let obj = { type: items(5581).StickerMetadataTypes.STICKER_NAME, value: trimmed.toLocaleLowerCase() };
+  const str2 = tags.name;
+  trimmed = str2.trim();
   items.push(obj);
   if (null != tags.tags) {
-    const obj2 = { type: tmp(5581).StickerMetadataTypes.TAG, value: null };
-    const trimmed1 = str.trim();
-    obj2.value = trimmed1.toLocaleLowerCase();
+    const obj2 = { type: items(5581).StickerMetadataTypes.TAG, value: trimmed1.toLocaleLowerCase() };
+    trimmed1 = str.trim();
     items.push(obj2);
     const guild = GuildStore.getGuild(arg0);
     if (null != guild) {
-      const trimmed2 = guild.name.trim();
+      const str3 = guild.name;
+      const trimmed2 = str3.trim();
       const toLocaleLowerCaseResult = trimmed2.toLocaleLowerCase();
-      let tmp5 = null != toLocaleLowerCaseResult;
+      const tmp5 = null != toLocaleLowerCaseResult && "" !== toLocaleLowerCaseResult;
       if (tmp5) {
-        tmp5 = "" !== toLocaleLowerCaseResult;
-      }
-      if (tmp5) {
-        const obj3 = { type: tmp(5581).StickerMetadataTypes.GUILD_NAME, value: toLocaleLowerCaseResult };
-        items.push(obj3);
+        const push = items.push;
+        const obj3 = { type: items(5581).StickerMetadataTypes.GUILD_NAME, value: toLocaleLowerCaseResult };
+        push(obj3);
       }
     }
-    const byName = UnicodeEmojisDefault.getByName(str);
+    const obj5 = UnicodeEmojisDefault;
+    const byName = obj5.getByName(str);
     if (null != byName) {
-      const obj4 = { type: tmp(5581).StickerMetadataTypes.CORRELATED_EMOJI, value: byName.surrogates };
-      items.push(obj4);
-      byName.forEachDiversity((surrogates) => items.push({ type: StickersTypes.StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));
+      const push2 = items.push;
+      const obj4 = { type: items(5581).StickerMetadataTypes.CORRELATED_EMOJI, value: byName.surrogates };
+      push2(obj4);
+      byName.forEachDiversity((surrogates) => {
+        const obj = { type: StickersTypes.StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates };
+        return items.push(obj);
+      });
     }
   }
   return items;
@@ -70,7 +80,7 @@ function syncStickers(id, stickers, setPartition) {
       const merged = Object.assign(nullablePartition);
       const deletes = stickers.deletes;
       for (const item10016 of deletes) {
-        delete tmp[tmp2];
+        delete obj[item10016];
         continue;
       }
       const writes = stickers.writes;
@@ -82,30 +92,30 @@ function syncStickers(id, stickers, setPartition) {
     }
   }
 }
-const TypeTag = fn(2061).TypeTag;
-const LibdiscoreStore = fn(2068).LibdiscoreStore;
+const TypeTag = js_shim_PlainRecord.TypeTag;
+const LibdiscoreStore = LibdiscoreStore2.LibdiscoreStore;
 class GuildStickersStore extends LibdiscoreStore {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.database = applyArgumentsResult.addKKVDatabase("guildStickers");
-    database = applyArgumentsResult.database;
+    const database = applyArgumentsResult.database;
     applyArgumentsResult.stickerByIdIndex = database.addSecondaryKVIndex("id");
-    database2 = applyArgumentsResult.database;
+    const database2 = applyArgumentsResult.database;
     applyArgumentsResult.getAllGuildStickers = database2.memoized((obj) => {
-      const map = new Map();
-      for (const key10009 in arg0) {
+      map = new Map();
+      for (const key10009 in obj) {
         let _Object = Object;
-        let result = map.set(key10009, Object.values(arg0[key10009].root));
+        let result = map.set(key10009, Object.values(obj[key10009].root));
         continue;
       }
       return map;
     });
-    database3 = applyArgumentsResult.database;
+    const database3 = applyArgumentsResult.database;
     applyArgumentsResult.getStickerMetadataMap = database3.memoized((obj) => {
-      const map = new Map();
-      for (const key10012 in arg0) {
+      map = new Map();
+      for (const key10012 in obj) {
         let _Object = Object;
-        let entries = Object.entries(arg0[key10012].root);
+        let entries = Object.entries(obj[key10012].root);
         for (const item10014 of entries) {
           let tmp3 = _slicedToArray(item10014, 2);
           let result = map.set(tmp3[0], deriveStickerMetadata(key10012, tmp3[1]));
@@ -114,23 +124,22 @@ class GuildStickersStore extends LibdiscoreStore {
       }
       return map;
     });
-    database4 = applyArgumentsResult.database;
+    const database4 = applyArgumentsResult.database;
     applyArgumentsResult.getStickersByGuildId = database4.memoizedPartition((arg0, arg1) => Object.values(arg1));
     return applyArgumentsResult;
   }
+  getStickerById(arg0) {
+    const stickerByIdIndex = this.stickerByIdIndex;
+    const value = stickerByIdIndex.get(arg0);
+    return value;
+  }
+  stateWrapper() {
+    return this.database;
+  }
 }
 const prototype = GuildStickersStore.prototype;
-prototype["getStickerById"] = function getStickerById(arg0) {
-  const stickerByIdIndex = this.stickerByIdIndex;
-  value = stickerByIdIndex.get(arg0);
-  return value;
-};
-prototype["stateWrapper"] = function stateWrapper() {
-  return this.database;
-};
 GuildStickersStore.displayName = "GuildStickersStore";
-const LibdiscoreBatchStoreRefactorExperiment = fn(2071).LibdiscoreBatchStoreRefactorExperiment;
-const guildStickersStore = new GuildStickersStore({
+let obj = {
   LOGOUT(arg0, clear) {
     return clear.clear();
   },
@@ -141,8 +150,10 @@ const guildStickersStore = new GuildStickersStore({
     return clear.clear();
   },
   CONNECTION_OPEN(arg0, getPartitionKeys) {
+    let guilds;
+    let unavailableGuilds;
     ({ guilds, unavailableGuilds } = arg0);
-    const set = new Set(guilds.map((id) => id.id));
+    set = new Set(guilds.map((id) => id.id));
     for (const item10017 of unavailableGuilds) {
       let addResult = set.add(item10017);
       continue;
@@ -151,7 +162,7 @@ const guildStickersStore = new GuildStickersStore({
     for (const item10028 of partitionKeys) {
       let tmp3 = item10028;
       if (!set.has(item10028)) {
-        let removePartitionResult = arg1.removePartition(tmp3);
+        let removePartitionResult = getPartitionKeys.removePartition(tmp3);
       }
       continue;
     }
@@ -191,19 +202,12 @@ const guildStickersStore = new GuildStickersStore({
       for (const key10012 in tmp2) {
         let tmp10 = tmp2[key10012];
         let tmp11 = partition[key10012];
-        let tmp4 = null != tmp11;
-        if (tmp4) {
-          tmp4 = null == tmp10.user_id;
-        }
-        if (tmp4) {
-          tmp4 = null != tmp11.user_id;
-        }
+        let tmp4 = null != tmp11 && null == tmp10.user_id && null != tmp11.user_id;
         if (!tmp4) {
           continue;
         } else {
-          let obj = {};
+          let obj = { user_id: tmp11.user_id };
           let merged = Object.assign(tmp10);
-          obj.user_id = tmp11.user_id;
           tmp2[key10012] = obj;
           continue;
         }
@@ -213,6 +217,7 @@ const guildStickersStore = new GuildStickersStore({
     getPartition.setPartition(guildId.guildId, tmp2);
   },
   CACHED_STICKERS_LOADED(arg0, setPartition) {
+    const tmp = arg0.stickers[Symbol.iterator]();
     while (tmp !== undefined) {
       let tmp4 = _slicedToArray(tmp2, 2);
       let setPartitionResult = setPartition.setPartition(tmp4[0], parseServerGuildStickers(tmp4[1]));
@@ -222,8 +227,9 @@ const guildStickersStore = new GuildStickersStore({
   GUILD_STICKERS_FETCH_SUCCESS(guildId, setPartition) {
     setPartition.setPartition(guildId.guildId, parseServerGuildStickers(guildId.stickers));
   }
-}, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
-const size = fn(2);
+};
+const LibdiscoreBatchStoreRefactorExperiment = libdiscoreExperiments.LibdiscoreBatchStoreRefactorExperiment;
+const guildStickersStore = new GuildStickersStore(obj, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
 let result = size.fileFinishedImporting("modules/stickers/GuildStickersStore.tsx");
 
 export default guildStickersStore;

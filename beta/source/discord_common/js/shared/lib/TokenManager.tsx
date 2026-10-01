@@ -9,84 +9,103 @@ import Storage6 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
+let c7, closure_8;
+
+let c2;
+let c3;
+const f73154 = (acc, item) => {
+  let tmp;
+  let tmp2;
+  [tmp, tmp2] = item;
+  acc[tmp] = tmp2;
+  return acc;
+};
 function setSecondaryToken(token, __analytics__) {
   if (null != __analytics__) {
     closure_10[__analytics__] = token;
   }
-  if (c9) {
+  const tmp3 = c9;
+  if (tmp3) {
     encryptAndStoreTokens();
   } else {
-    closure_8 = global;
+    closure_8 = c7;
     closure_11 = closure_10;
-    if (c12) {
+    const tmp6 = c12;
+    if (tmp6) {
       const Storage4 = Storage6.Storage;
-      Storage4.remove(React3);
+      Storage4.remove(_false);
       const Storage5 = Storage6.Storage;
       Storage5.remove(React2);
     } else {
-      if (null != tmp3) {
+      let tmp7;
+      if (null != tmp4) {
         const Storage2 = Storage6.Storage;
-        const result = Storage2.set(React3, closure_8);
-        let tmp6 = require;
+        const result = Storage2.set(_false, closure_8);
+        tmp7 = require;
       } else {
-        tmp6 = require;
+        tmp7 = require;
         const Storage = Storage6.Storage;
-        Storage.remove(React3);
+        Storage.remove(_false);
       }
-      const Storage3 = tmp6(510).Storage;
+      const Storage3 = tmp7(510).Storage;
       const result1 = Storage3.set(React2, closure_11);
     }
   }
 }
 function removeToken(__analytics__) {
-  if (c13) {
-    let tmp9 = global;
+  const tmp = c13;
+  if (tmp) {
+    let tmp6 = c7;
     if (null != __analytics__) {
-      tmp9 = dependencyMap[__analytics__];
-      delete tmp[tmp2];
-      delete tmp[tmp2];
+      tmp6 = closure_10[__analytics__];
+      delete closure_10[__analytics__];
+      delete closure_11[__analytics__];
     }
-    let tmp14 = null != tmp9;
-    if (tmp14) {
-      tmp14 = tmp9 === global;
-    }
-    if (tmp14) {
-      global = null;
+    const tmp9 = null != tmp6 && tmp6 === c7;
+    if (tmp9) {
+      c7 = null;
       closure_8 = null;
     }
-    if (c12) {
+    const tmp11 = c12;
+    if (tmp11) {
       const Storage4 = Storage6.Storage;
-      Storage4.remove(React3);
+      Storage4.remove(_false);
       const Storage5 = Storage6.Storage;
       Storage5.remove(React2);
     } else {
+      let tmp13;
       if (null != closure_8) {
         const Storage2 = Storage6.Storage;
-        const result = Storage2.set(React3, closure_8);
-        let tmp18 = require;
+        const result = Storage2.set(_false, closure_8);
+        tmp13 = require;
       } else {
-        tmp18 = require;
+        tmp13 = require;
         const Storage = Storage6.Storage;
-        Storage.remove(React3);
+        Storage.remove(_false);
       }
-      const Storage3 = tmp18(510).Storage;
+      const Storage3 = tmp13(510).Storage;
       const result1 = Storage3.set(React2, closure_11);
     }
-    return null != tmp9;
+    return null != tmp6;
   } else {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error("TokenManager must be initialized before mutation");
     throw error;
   }
 }
 function encryptAndStoreTokens() {
-  if (c13) {
+  const tmp2 = c13;
+  if (tmp2) {
+    const obj = safeStorage;
     let result;
     if (safeStorage != null) {
       result = obj.isEncryptionAvailable();
     }
     if (result) {
-      if (null != tmp8) {
+      if (null != c7) {
+        const obj2 = c7;
         let result1;
         if (obj != null) {
           result1 = obj.isEncryptionAvailable();
@@ -94,18 +113,20 @@ function encryptAndStoreTokens() {
         let combined = obj2;
         if (result1) {
           combined = obj2;
+          const tmp12 = c4;
           if (!obj2.startsWith(c4)) {
             let _HermesInternal = HermesInternal;
             combined = "" + tmp12 + obj.encryptString(obj2);
           }
-          tmp12 = c4;
         }
         closure_8 = combined;
       }
       const _Object = Object;
       const entries = Object.entries(closure_10);
       let items = [];
-      HermesBuiltin.arraySpread(entries.map((item) => {
+      HermesBuiltin.arraySpread(items, entries.map((item) => {
+        let obj;
+        let tmp;
         [tmp, obj] = item;
         const items = [tmp, ];
         let result;
@@ -115,45 +136,45 @@ function encryptAndStoreTokens() {
         let combined = obj;
         if (result) {
           combined = obj;
+          const tmp4 = closure_1_4;
           if (!obj.startsWith(closure_1_4)) {
             const _HermesInternal = HermesInternal;
             combined = "" + tmp4 + obj2.encryptString(obj);
           }
-          tmp4 = closure_1_4;
         }
         items[1] = combined;
         return items;
       }), 0);
-      closure_11 = items.reduce((acc, item) => {
-        [tmp, tmp2] = item;
-        acc[tmp] = tmp2;
-        return acc;
-      }, {});
+      closure_11 = items.reduce(f73154, {});
       c9 = true;
     } else {
       closure_8 = tmp8;
       closure_11 = closure_10;
     }
-    if (c12) {
+    const tmp18 = c12;
+    if (tmp18) {
       const Storage4 = Storage6.Storage;
-      Storage4.remove(React3);
+      Storage4.remove(_false);
       const Storage5 = Storage6.Storage;
       Storage5.remove(React2);
     } else {
+      let tmp20;
       if (null != closure_8) {
         const Storage2 = Storage6.Storage;
-        const result2 = Storage2.set(React3, closure_8);
-        let tmp20 = require;
+        const result2 = Storage2.set(_false, closure_8);
+        tmp20 = require;
       } else {
         tmp20 = require;
         const Storage = Storage6.Storage;
-        Storage.remove(React3);
+        Storage.remove(_false);
       }
       const Storage3 = tmp20(510).Storage;
       const result3 = Storage3.set(React2, closure_11);
     }
   } else {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error("TokenManager must be initialized before mutation");
     throw error;
   }
@@ -166,28 +187,35 @@ if (null != DiscordNative) {
   safeStorage = DiscordNative.safeStorage;
 }
 let c9 = false;
-const dependencyMap = {};
+let closure_10 = {};
 let closure_11 = {};
 let c12 = false;
 let c13 = false;
 function getToken(arg0) {
+  let tmp;
   if (null != arg0) {
-    let tmp = dependencyMap[arg0];
+    tmp = closure_10[arg0];
   } else {
-    tmp = global;
+    tmp = c7;
   }
   return tmp;
 }
 let result = size.fileFinishedImporting("../discord_common/js/shared/lib/TokenManager.tsx");
 
 export const init = function init() {
-  if (!c13) {
+  let wasEncrypted;
+  const tmp2 = c13;
+  if (!tmp2) {
     const Storage = Storage6.Storage;
-    closure_8 = Storage.get(React3);
+    closure_8 = Storage.get(_false);
     const Storage2 = Storage6.Storage;
     closure_11 = Storage2.get(React2) || {};
+    const arr = closure_8;
+    Storage2.get(React2) || {};
     if (null != closure_8) {
+      let obj3;
       if (0 !== arr.length) {
+        const obj = safeStorage;
         let result;
         if (safeStorage != null) {
           result = obj.isEncryptionAvailable();
@@ -195,17 +223,21 @@ export const init = function init() {
         if (result) {
           if (arr.startsWith(c4)) {
             let obj2 = { decryptedToken: obj.decryptString(arr.substring(12)), wasEncrypted: true };
-            let obj3 = obj2;
+            obj3 = obj2;
           }
         }
         obj3 = { decryptedToken: arr, wasEncrypted: false };
       }
-      ({ wasEncrypted: c9, decryptedToken: global } = obj3);
+      ({ wasEncrypted: c9, decryptedToken: c7 } = obj3);
       const _Object = Object;
       const entries = Object.entries(closure_11);
       const mapped = entries.map((item) => {
+        let arr;
+        let decryptedToken;
+        let tmp;
         [tmp, arr] = item;
         if (null != arr) {
+          let obj3;
           if (0 !== arr.length) {
             let result;
             if (safeStorage != null) {
@@ -213,8 +245,8 @@ export const init = function init() {
             }
             if (result) {
               if (arr.startsWith(closure_1_4)) {
-                const obj2 = { decryptedToken: obj.decryptString(arr.substring(12)), wasEncrypted: true };
-                let obj3 = obj2;
+                obj3 = { decryptedToken: safeStorage.decryptString(arr.substring(12)), wasEncrypted: true };
+                const obj2 = { decryptedToken: safeStorage.decryptString(arr.substring(12)), wasEncrypted: true };
               }
             }
             obj3 = { decryptedToken: arr, wasEncrypted: false };
@@ -226,36 +258,36 @@ export const init = function init() {
         obj3 = { decryptedToken: null, wasEncrypted: false };
       });
       let items = [];
-      HermesBuiltin.arraySpread(mapped.filter((item) => {
+      HermesBuiltin.arraySpread(items, mapped.filter((item) => {
+        let tmp;
         [, tmp] = item;
         return null != tmp;
       }), 0);
-      closure_10 = items.reduce((acc, item) => {
-        [tmp, tmp2] = item;
-        acc[tmp] = tmp2;
-        return acc;
-      }, {});
+      closure_10 = items.reduce(f73154, {});
       c13 = true;
     }
     obj3 = { decryptedToken: null, wasEncrypted: false };
-    const tmp5 = Storage2.get(React2) || {};
   }
 };
 export const getAnalyticsToken = function getAnalyticsToken() {
+  let tmp2;
   if (null != __analytics__) {
-    let tmp2 = dependencyMap[tmp];
+    tmp2 = closure_10[tmp];
   } else {
-    tmp2 = global;
+    tmp2 = c7;
   }
   return tmp2;
 };
 export { getToken };
 export const setAnalyticsToken = function setAnalyticsToken(analyticsToken) {
   if (null != analyticsToken) {
-    if (c13) {
+    const tmp4 = c13;
+    if (tmp4) {
       setSecondaryToken(analyticsToken, __analytics__);
     } else {
       const _Error = Error;
+      const self = this;
+      const self2 = this;
       const error = new Error("TokenManager must be initialized before mutation");
       throw error;
     }
@@ -265,11 +297,14 @@ export const setAnalyticsToken = function setAnalyticsToken(analyticsToken) {
 };
 export const setToken = function setToken(token, id) {
   if (null != token) {
-    if (c13) {
-      global = token;
+    const tmp3 = c13;
+    if (tmp3) {
+      c7 = token;
       setSecondaryToken(token, id);
     } else {
       const _Error = Error;
+      const self = this;
+      const self2 = this;
       const error = new Error("TokenManager must be initialized before mutation");
       throw error;
     }
@@ -278,37 +313,46 @@ export const setToken = function setToken(token, id) {
   }
 };
 export const hideToken = function hideToken() {
-  if (!c12) {
-    if (c13) {
+  const tmp = c12;
+  if (!tmp) {
+    const tmp2 = c13;
+    if (tmp2) {
       c12 = true;
       const Storage = Storage6.Storage;
-      Storage.remove(React3);
+      Storage.remove(_false);
       const Storage2 = Storage6.Storage;
       Storage2.remove(React2);
     } else {
       const _Error = Error;
+      const self = this;
+      const self2 = this;
       const error = new Error("TokenManager must be initialized before mutation");
       throw error;
     }
   }
 };
 export const showToken = function showToken() {
-  if (c12) {
-    if (c13) {
+  const tmp = c12;
+  if (tmp) {
+    const tmp2 = c13;
+    if (tmp2) {
+      let tmp8;
       c12 = false;
       if (null != closure_8) {
         const Storage2 = Storage6.Storage;
-        const result = Storage2.set(React3, closure_8);
-        let tmp9 = require;
+        const result = Storage2.set(_false, closure_8);
+        tmp8 = require;
       } else {
-        tmp9 = require;
+        tmp8 = require;
         const Storage = Storage6.Storage;
-        Storage.remove(React3);
+        Storage.remove(_false);
       }
-      const Storage3 = tmp9(510).Storage;
+      const Storage3 = tmp8(510).Storage;
       const result1 = Storage3.set(React2, closure_11);
     } else {
       const _Error = Error;
+      const self = this;
+      const self2 = this;
       const error = new Error("TokenManager must be initialized before mutation");
       throw error;
     }

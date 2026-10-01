@@ -8,60 +8,50 @@
 import NewChannelsStore from "NewChannelsStore" /* 6952 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/launchpad/native/shared/useChannelUnreadBadgeState.tsx");
 
 export const useChannelUnreadBadgeState = function useChannelUnreadBadgeState(channel, flag) {
+  let isMentionLowImportance;
+  let items3;
+  let mentionCount;
+  let obj5;
+  let optInEnabledForGuild;
+  let unread;
   _require = channel;
-  closure_129_0 = channel;
-  closure_129_1 = flag;
+  let closure_1 = flag;
+  let obj = require("get initialized");
   const items = [ReadStateStore];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items, () => {
-    const obj = { ackMessageId: ReadStateStore.ackMessageId(user.id), unread: null, mentionCount: null, isMentionLowImportance: null };
-    let hasUnreadResult = !dependencyMap;
-    if (!dependencyMap) {
-      hasUnreadResult = obj2.hasUnread(tmp.id);
-    }
-    obj.unread = hasUnreadResult;
-    obj.mentionCount = ReadStateStore.getMentionCount(user.id);
-    obj.isMentionLowImportance = ReadStateStore.getIsMentionLowImportance(user.id);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { ackMessageId: ReadStateStore.ackMessageId(id.id), unread: !closure_1 && ReadStateStore.hasUnread(id.id), mentionCount: ReadStateStore.getMentionCount(id.id), isMentionLowImportance: ReadStateStore.getIsMentionLowImportance(id.id) };
+    !closure_1 && ReadStateStore.hasUnread(id.id);
     return obj;
   });
   ({ unread, mentionCount, isMentionLowImportance } = stateFromStoresObject);
-  let obj = require("initialize");
   const items1 = [NewChannelsStore];
   const items2 = [, ];
   ({ guild_id: arr3[0], id: arr3[1] } = channel);
-  const stateFromStores = require("initialize").useStateFromStores(items1, () => NewChannelsStore.shouldIndicateNewChannel(user.guild_id, user.id), items2);
-  const obj2 = require("initialize");
-  const obj4 = { unread, resolvedUnreadSetting: null, newChannel: null, optInEnabled: null, mentionCount: null, isMentionLowImportance: null };
-  const optInEnabledForGuild = require("isOptInEnabled").useOptInEnabledForGuild(channel.guild_id);
+  const obj2 = require("get initialized");
+  const stateFromStores = obj2.useStateFromStores(items1, () => NewChannelsStore.shouldIndicateNewChannel(channel.guild_id, channel.id), items2);
+  const obj4 = { unread, resolvedUnreadSetting: obj5.useStateFromStores(items3, () => UserGuildSettingsStore.resolveUnreadSetting(channel)), newChannel: stateFromStores, optInEnabled: optInEnabledForGuild, mentionCount, isMentionLowImportance };
   const obj3 = require("isOptInEnabled");
-  const items3 = [UserGuildSettingsStore];
-  obj4.resolvedUnreadSetting = require("initialize").useStateFromStores(items3, () => UserGuildSettingsStore.resolveUnreadSetting(closure_0));
-  obj4.newChannel = stateFromStores;
-  obj4.optInEnabled = optInEnabledForGuild;
-  obj4.mentionCount = mentionCount;
-  obj4.isMentionLowImportance = isMentionLowImportance;
+  optInEnabledForGuild = obj3.useOptInEnabledForGuild(channel.guild_id);
+  items3 = [UserGuildSettingsStore];
+  obj5 = require("get initialized");
   return obj4;
 };
 export const useBaseChannelUnreadBadgeState = function useBaseChannelUnreadBadgeState(channel, muted) {
   _require = channel;
   dependencyMap = muted;
   const items = [ReadStateStore];
-  return require("initialize").useStateFromStoresObject(items, () => {
-    const obj = { ackMessageId: ReadStateStore.ackMessageId(user.id), unread: null, mentionCount: null, isMentionLowImportance: null };
-    let hasUnreadResult = !dependencyMap;
-    if (!dependencyMap) {
-      hasUnreadResult = obj2.hasUnread(tmp.id);
-    }
-    obj.unread = hasUnreadResult;
-    obj.mentionCount = ReadStateStore.getMentionCount(user.id);
-    obj.isMentionLowImportance = ReadStateStore.getIsMentionLowImportance(user.id);
+  const obj = require("get initialized");
+  return obj.useStateFromStoresObject(items, () => {
+    const obj = { ackMessageId: ReadStateStore.ackMessageId(id.id), unread: !closure_1 && ReadStateStore.hasUnread(id.id), mentionCount: ReadStateStore.getMentionCount(id.id), isMentionLowImportance: ReadStateStore.getIsMentionLowImportance(id.id) };
+    !closure_1 && ReadStateStore.hasUnread(id.id);
     return obj;
   });
 };

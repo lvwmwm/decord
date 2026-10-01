@@ -5,38 +5,58 @@
 // Exports: getFileTypeFiltering, useFileTypeFiltering, useFileTypesFormattedString
 
 // Module 11640 (FileTypeFiltering)
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, set;
 
-require = fn;
+const f94136 = (item) => item.startsWith(".");
+const f94137 = (arr) => arr.slice(1);
+const f94140 = () => locale.locale;
+const f94142 = (item) => {
+  closure_0 = item;
+  return closure_0.some((item) => {
+    const formatted = closure_0.toLowerCase();
+    return formatted.endsWith("." + item);
+  });
+};
+const f94143 = (item) => {
+  const hasItem = closure_1_6.includes(item) || closure_1_7.includes(item);
+  return hasItem;
+};
 function fileTypesFormattedStringHelper(arr, locale) {
   if (null != arr) {
     if (0 !== arr.length) {
       const _Intl = Intl;
+      const self = this;
+      const self2 = this;
       const listFormat = new Intl.ListFormat(locale, { type: "disjunction" });
       const items = [];
       if (arr.includes("image")) {
-        const intl = util.intl;
-        items.push(intl.string(util.t["0r2WwT"]));
+        const push = items.push;
+        const intl = intl4.intl;
+        push(intl.string(intl4.t["0r2WwT"]));
       }
       if (arr.includes("video")) {
-        const intl2 = util.intl;
-        items.push(intl2.string(util.t["al+5qH"]));
+        const push2 = items.push;
+        const intl2 = intl4.intl;
+        push2(intl2.string(intl4.t["al+5qH"]));
       }
       if (arr.includes("audio")) {
-        const intl3 = util.intl;
-        items.push(intl3.string(util.t.Kzll3E));
+        const push3 = items.push;
+        const intl3 = intl4.intl;
+        push3(intl3.string(intl4.t.Kzll3E));
       }
-      const push = items.push;
+      const push4 = items.push;
       const found = arr.filter((item) => item.startsWith("."));
       const items1 = [];
-      HermesBuiltin.arraySpread(found.sort(), 0);
-      HermesBuiltin.apply(items1, items);
+      HermesBuiltin.arraySpread(items1, found.sort(), 0);
+      HermesBuiltin.apply(push4, items1, items);
       let formatResult = null;
       if (0 !== items.length) {
         formatResult = listFormat.format(items);
@@ -51,158 +71,194 @@ let closure_7 = ["mp4", "mov", "qt", "webm"];
 let closure_8 = ["mp3", "m4a", "wav", "ogg", "opus", "flac"];
 let closure_9 = { jpg: ["jpeg", "jfif", "heic", "heif"], mov: ["mp4", "qt"] };
 let closure_10 = { jpg: ["jpeg", "jfif"], mp4: ["mov", "qt"] };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/interactions/FileTypeFiltering.tsx");
 
 export const useFileTypesFormattedString = function useFileTypesFormattedString(fileTypes) {
   _require = fileTypes;
   const items = [LocaleStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => locale.locale);
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, f94140);
   const items1 = [fileTypes, stateFromStores];
-  return noop.useMemo(() => fileTypesFormattedStringHelper(closure_0, memo), items1);
+  return react.useMemo(() => fileTypesFormattedStringHelper(closure_0, stateFromStores), items1);
 };
 export const getFileTypeFiltering = function getFileTypeFiltering(fileTypes) {
   if (null != fileTypes) {
+    let items3;
     if (0 !== fileTypes.length) {
-      const found = fileTypes.filter((item) => item.startsWith("."));
-      const mapped = found.map((arr) => arr.slice(1));
+      const found = fileTypes.filter(f94136);
+      const mapped = found.map(f94137);
       if (fileTypes.includes("image")) {
         const push = mapped.push;
         const items = [];
-        HermesBuiltin.arraySpread(closure_6, 0);
-        HermesBuiltin.apply(items, mapped);
+        HermesBuiltin.arraySpread(items, closure_6, 0);
+        HermesBuiltin.apply(push, items, mapped);
       }
       if (fileTypes.includes("video")) {
         const push2 = mapped.push;
         const items1 = [];
-        HermesBuiltin.arraySpread(closure_7, 0);
-        HermesBuiltin.apply(items1, mapped);
+        HermesBuiltin.arraySpread(items1, closure_7, 0);
+        HermesBuiltin.apply(push2, items1, mapped);
       }
       if (fileTypes.includes("audio")) {
         const push3 = mapped.push;
         const items2 = [];
-        HermesBuiltin.arraySpread(closure_8, 0);
-        HermesBuiltin.apply(items2, mapped);
+        HermesBuiltin.arraySpread(items2, closure_8, 0);
+        HermesBuiltin.apply(push3, items2, mapped);
       }
-      let items3 = (function getExtensionsForOutputs(mapped) {
+      items3 = (function getExtensionsForOutputs(mapped) {
         const obj = fileTypes(memo1[3]);
-        new Set(mapped);
-        const entries = Object.entries(fileTypes(memo1[3]).isIOS() ? closure_1_9 : closure_1_10);
-        entries[Symbol.iterator]();
+        const tmp = obj.isIOS() ? closure_1_9 : closure_1_10;
+        set = new Set(mapped);
+        const entries = Object.entries(tmp);
+        const tmp3 = entries[Symbol.iterator]();
+        while (tmp3 !== undefined) {
+          let tmp6 = closure_1_3(tmp4, 2);
+          let tmp7 = tmp6[1];
+          let tmp8 = tmp7;
+          if (set.has(tmp6[0])) {
+            for (const item10043 of tmp8) {
+              let addResult = set.add(item10043);
+              continue;
+            }
+          } else {
+            for (const item10035 of tmp8) {
+              let deleteResult = set.delete(item10035);
+              continue;
+            }
+          }
+          continue;
+        }
+        return Array.from(set);
       })(mapped);
     }
-    const tmp24 = fileTypesFormattedStringHelper(fileTypes, LocaleStore.locale);
-    const types = tmp24;
-    const obj = {
+    const tmp25 = fileTypesFormattedStringHelper(fileTypes, LocaleStore.locale);
+    const types = tmp25;
+    let obj = {
       allowedExtensions: items3,
-      typesFormattedString: tmp24,
+      typesFormattedString: tmp25,
       validateFilenames(arr) {
-          closure_0 = items3;
-          let everyResult = 0 === items3.length;
-          if (!everyResult) {
-            everyResult = arr.every((item) => item.some((item) => {
-              const formatted = item.toLowerCase();
-              return formatted.endsWith("." + item);
-            }));
-          }
+          let closure_0 = items3;
+          const everyResult = 0 === items3.length || arr.every(f94142);
           return everyResult;
         },
       showInvalidFileTypeAlert() {
-          const obj2 = { title: null, body: null };
-          const intl = util.intl;
-          obj2.title = intl.string(util.t.azO1Pe);
-          const intl2 = util.intl;
-          obj2.body = intl2.formatToPlainString(util.t["5U9LSo"], { types });
-          AlertActionCreatorsDefault.show(obj2);
+          let intl;
+          let intl2;
+          let obj2;
+          const obj = { title: intl.string(intl4.t.azO1Pe), body: intl2.formatToPlainString(intl4.t["5U9LSo"], obj2) };
+          const show = AlertActionCreatorsDefault.show;
+          AlertActionCreatorsDefault;
+          intl = intl4.intl;
+          intl2 = intl4.intl;
+          obj2 = { types };
+          show(obj);
         },
-      mediaFilesAllowed: 0 === items3.length || items3.some((item) => {
-          let hasItem = closure_1_6.includes(item);
-          if (!hasItem) {
-            hasItem = closure_1_7.includes(item);
-          }
-          return hasItem;
-        })
+      mediaFilesAllowed: 0 === items3.length || items3.some(f94143)
     };
+    0 === items3.length || items3.some(f94143);
     return obj;
   }
   items3 = [];
 };
 export const useFileTypeFiltering = function useFileTypeFiltering(fileTypes) {
-  _require = fileTypes;
+  let locale;
+  let memo1;
   let items = [fileTypes];
-  const memo = noop.useMemo(() => {
-    if (null != closure_0) {
-      if (0 !== arr.length) {
-        const found = arr.filter((item) => item.startsWith("."));
-        const mapped = found.map((arr) => arr.slice(1));
-        if (arr.includes("image")) {
+  const memo = react.useMemo(() => {
+    if (null != fileTypes) {
+      if (0 !== fileTypes.length) {
+        const found = arr.filter(f94136);
+        const mapped = found.map(f94137);
+        if (fileTypes.includes("image")) {
           const push = mapped.push;
           const items = [];
-          HermesBuiltin.arraySpread(closure_6, 0);
-          HermesBuiltin.apply(items, mapped);
+          let tmp3 = items;
+          HermesBuiltin.arraySpread(items, closure_6, 0);
+          let tmp5 = push;
+          let tmp6 = items;
+          let tmp7 = mapped;
+          HermesBuiltin.apply(push, items, mapped);
         }
-        if (arr.includes("video")) {
+        if (fileTypes.includes("video")) {
           const push2 = mapped.push;
+          let tmp9 = closure_7;
           const items1 = [];
-          HermesBuiltin.arraySpread(closure_7, 0);
-          HermesBuiltin.apply(items1, mapped);
+          let tmp10 = items1;
+          HermesBuiltin.arraySpread(items1, closure_7, 0);
+          let tmp12 = push2;
+          let tmp13 = items1;
+          HermesBuiltin.apply(push2, items1, mapped);
         }
-        if (arr.includes("audio")) {
+        if (fileTypes.includes("audio")) {
           const push3 = mapped.push;
           const items2 = [];
-          HermesBuiltin.arraySpread(closure_8, 0);
-          HermesBuiltin.apply(items2, mapped);
+          HermesBuiltin.arraySpread(items2, closure_8, 0);
+          HermesBuiltin.apply(push3, items2, mapped);
         }
         (function getExtensionsForOutputs(mapped) {
           const obj = fileTypes(memo1[3]);
-          new Set(mapped);
-          const entries = Object.entries(fileTypes(memo1[3]).isIOS() ? closure_1_9 : closure_1_10);
-          entries[Symbol.iterator]();
+          const tmp = obj.isIOS() ? closure_1_9 : closure_1_10;
+          set = new Set(mapped);
+          const entries = Object.entries(tmp);
+          const tmp3 = entries[Symbol.iterator]();
+          while (tmp3 !== undefined) {
+            let tmp6 = closure_1_3(tmp4, 2);
+            let tmp7 = tmp6[1];
+            let tmp8 = tmp7;
+            if (set.has(tmp6[0])) {
+              for (const item10043 of tmp8) {
+                let addResult = set.add(item10043);
+                continue;
+              }
+            } else {
+              for (const item10035 of tmp8) {
+                let deleteResult = set.delete(item10035);
+                continue;
+              }
+            }
+            continue;
+          }
+          return Array.from(set);
         })(mapped);
       }
       return [];
     }
   }, items);
-  closure_129_0 = fileTypes;
+  _require = fileTypes;
+  let obj = require("get initialized");
   let items1 = [LocaleStore];
-  const stateFromStores = require("initialize").useStateFromStores(items1, () => locale.locale);
-  closure_129_1 = stateFromStores;
+  const stateFromStores = obj.useStateFromStores(items1, f94140);
   let items2 = [fileTypes, stateFromStores];
-  memo1 = noop.useMemo(() => fileTypesFormattedStringHelper(closure_0, memo), items2);
+  memo1 = react.useMemo(() => fileTypesFormattedStringHelper(closure_0, stateFromStores), items2);
   const items3 = [memo];
   const items4 = [memo1];
-  const callback = noop.useCallback((arr) => {
-    closure_0 = memo;
-    let everyResult = 0 === memo.length;
-    if (!everyResult) {
-      everyResult = arr.every((item) => item.some((item) => {
-        const formatted = item.toLowerCase();
-        return formatted.endsWith("." + item);
-      }));
-    }
+  const callback = react.useCallback((arr) => {
+    let closure_0 = memo;
+    const everyResult = 0 === memo.length || arr.every(f94142);
     return everyResult;
   }, items3);
   const items5 = [memo];
-  const callback1 = noop.useCallback(() => {
-    const obj2 = { title: null, body: null };
-    const intl = util.intl;
-    obj2.title = intl.string(util.t.azO1Pe);
-    const intl2 = util.intl;
-    obj2.body = intl2.formatToPlainString(util.t["5U9LSo"], { types: memo1 });
-    AlertActionCreatorsDefault.show(obj2);
+  const callback1 = react.useCallback(() => {
+    let intl;
+    let intl2;
+    let obj2;
+    const obj = { title: intl.string(intl4.t.azO1Pe), body: intl2.formatToPlainString(intl4.t["5U9LSo"], obj2) };
+    const show = AlertActionCreatorsDefault.show;
+    AlertActionCreatorsDefault;
+    intl = intl4.intl;
+    intl2 = intl4.intl;
+    obj2 = { types: memo1 };
+    show(obj);
   }, items4);
-  let obj = require("initialize");
-  return {
+  let obj2 = {
     allowedExtensions: memo,
     typesFormattedString: memo1,
     validateFilenames: callback,
     showInvalidFileTypeAlert: callback1,
-    mediaFilesAllowed: noop.useMemo(() => 0 === memo.length || memo.some((item) => {
-      let hasItem = closure_1_6.includes(item);
-      if (!hasItem) {
-        hasItem = closure_1_7.includes(item);
-      }
-      return hasItem;
-    }), items5)
+    mediaFilesAllowed: react.useMemo(() => {
+      const tmp = 0 === memo.length || memo.some(f94143);
+      return tmp;
+    }, items5)
   };
+  return obj2;
 };

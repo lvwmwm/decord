@@ -4,37 +4,41 @@
 // Dependencies: [19, 17, 7155, 21, 4836, 1115, 5281, 2]
 
 // Module 9351 (InviteButton)
-import util from "util" /* 1115 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import intl6 from "intl" /* 1115 */;
+import Constants from "Constants" /* 7155 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const InviteSendStates = fn(7155).InviteSendStates;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const InviteSendStates = Constants.InviteSendStates;
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ buttonWrapper: { minWidth: 66, flexDirection: "row" } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/instant_invite/native/components/InviteButton.tsx");
-
-export default noop.memo(function InviteButton(onPress) {
-  ({ sendState, disabled } = onPress);
+const memoResult = react.memo(function InviteButton(onPressSend) {
+  let disabled;
+  let flag;
+  let sendState;
+  ({ sendState, disabled } = onPressSend);
   if (disabled === undefined) {
     disabled = false;
   }
-  const intl = util.intl;
-  intl.string(util.t.jYnGPG);
+  onPressSend = onPressSend.onPressSend;
+  const tmp = closure_5();
+  const intl = intl6.intl;
+  intl.string(intl6.t.jYnGPG);
   if (InviteSendStates.SENDING === sendState) {
     const intl5 = tmp2(1115).intl;
     let stringResult1 = intl5.string(tmp2(1115).t.jYnGPG);
     disabled = false;
-    let flag = true;
-  } else if (tmp5.SENT === sendState) {
+    flag = true;
+  } else if (InviteSendStates.SENT === sendState) {
     const intl4 = tmp2(1115).intl;
     stringResult1 = intl4.string(tmp2(1115).t.dVT149);
     disabled = true;
     flag = false;
-  } else if (tmp5.ERROR === sendState) {
+  } else if (InviteSendStates.ERROR === sendState) {
     const intl3 = tmp2(1115).intl;
     stringResult1 = intl3.string(tmp2(1115).t.wNcfpX);
     disabled = false;
@@ -44,12 +48,12 @@ export default noop.memo(function InviteButton(onPress) {
     stringResult1 = intl2.string(tmp2(1115).t.jYnGPG);
     flag = false;
   }
-  const obj = { style: closure_5().buttonWrapper, children: null };
-  const obj2 = { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPress.onPressSend, disabled: null, grow: true };
+  const Button = tmp2(5281).Button;
   if (!disabled) {
     disabled = flag;
   }
-  obj2.disabled = disabled;
-  obj.children = jsx(components_Button_Button.Button, { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPress.onPressSend, disabled: null, grow: true });
-  return <View style={closure_5().buttonWrapper}>{null}</View>;
+  return <tmp8 style={tmp.buttonWrapper}>{null}</tmp8>;
 });
+const result = size.fileFinishedImporting("modules/instant_invite/native/components/InviteButton.tsx");
+
+export default memoResult;

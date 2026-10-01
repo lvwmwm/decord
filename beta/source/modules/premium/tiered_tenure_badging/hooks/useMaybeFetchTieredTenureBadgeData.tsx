@@ -5,29 +5,34 @@
 // Exports: useMaybeFetchTieredTenureBadgeData
 
 // Module 13000 (useMaybeFetchTieredTenureBadgeData)
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import useMountEffectDefault from "useMountEffect" /* 5298 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, id, importDefault;
 
-const require = fn;
-const PremiumTypes = fn(1374).PremiumTypes;
-const size = fn(2);
+const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useMaybeFetchTieredTenureBadgeData.tsx");
 
 export const useMaybeFetchTieredTenureBadgeData = function useMaybeFetchTieredTenureBadgeData() {
+  let closure_1;
+  let currentUser;
   const items = [UserStore];
-  _require = require("initialize").useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = require("initialize");
-  importDefault = require("useIsPremiumSubscriber").useIsPremiumSubscriber(PremiumTypes.TIER_2);
-  useMountEffectDefault(() => {
-    let id;
-    if (closure_0 != null) {
+  const obj = require("get initialized");
+  _require = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj2 = require("useIsPremiumSubscriber");
+  importDefault = obj2.useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  const tmp = useMountEffectDefault(() => {
+    id = undefined;
+    if (id != null) {
       id = tmp.id;
     }
+    const tmp3 = null != id && closure_1;
     if (tmp3) {
-      maybeFetchUserProfileDefault(tmp.id);
+      maybeFetchUserProfileDefault(id.id);
     }
   });
 };

@@ -5,32 +5,51 @@
 // Exports: default
 
 // Module 11061 (OfficialConnectionIcon)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import native from "native" /* 1177 */;
-import useRoleIconProps from "useRoleIconProps" /* 6607 */;
+import useRoleIconProps2 from "useRoleIconProps" /* 6607 */;
 import RoleIconDefault from "RoleIcon" /* 6626 */;
-import _modDef11062 from "module_11062" /* 11062 */;
-import _modDef11063 from "module_11063" /* 11063 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11062 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11063 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+const View = react_native.View;
 ({ DEFAULT_ROLE_COLOR_HEX: closure_4, EMPTY_STRING_SNOWFLAKE_ID: hasOwnProperty } = Constants);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ verifiedCheck: { position: "absolute", left: 0, top: 0 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/connections/native/OfficialConnectionIcon.tsx");
 
 export default function OfficialConnectionIcon(arg0) {
+  let displayRoleIcon;
+  let guildId;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let obj3;
+  let role;
+  let roleColor;
+  let roleId;
+  let style;
+  let tmp13;
   ({ role, roleId, roleColor, size, style } = arg0);
   ({ guildId, displayRoleIcon } = arg0);
   const tmp = closure_8();
   const size1 = { width: size, height: size };
-  const obj = { guildId, roleId: null, size: null };
+  const obj = { guildId, roleId, size };
+  const useRoleIconProps = useRoleIconProps2.useRoleIconProps;
+  useRoleIconProps2;
   if (roleId == null) {
     let id;
     if (role != null) {
@@ -41,18 +60,15 @@ export default function OfficialConnectionIcon(arg0) {
   if (roleId == null) {
     roleId = hasOwnProperty;
   }
-  obj.roleId = roleId;
-  obj.size = size;
-  const roleIconProps = useRoleIconProps.useRoleIconProps(obj);
+  const roleIconProps = useRoleIconProps(obj);
   if (false !== displayRoleIcon) {
     if (null != roleIconProps) {
-      const obj3 = { style: null, children: null };
-      const items = [style, size1];
-      obj3.style = items;
-      const obj4 = {};
+      const obj2 = { style: items, children: metroRequire(tmp13, obj3) };
+      items = [style, size1];
+      obj3 = {};
+      tmp13 = RoleIconDefault;
       const merged = Object.assign(roleIconProps);
-      obj3.children = timestampProducer(RoleIconDefault, obj4);
-      return timestampProducer(View, obj3);
+      return metroRequire(View, obj2);
     }
   }
   if (roleColor == null) {
@@ -63,25 +79,24 @@ export default function OfficialConnectionIcon(arg0) {
     roleColor = colorString;
   }
   if (roleColor == null) {
-    roleColor = React4;
+    roleColor = React3;
   }
   let PRIMARY_630 = nativeDefault.unsafe_rawColors.WHITE;
   const tmp2Result = utils_ColorUtils;
-  const hex2intResult = utils_ColorUtils.hex2int(roleColor);
+  const hex2intResult = tmp2Result.hex2int(roleColor);
+  const tmp2Result2 = utils_ColorUtils;
   if (tmp2Result2.getDarkness(hex2intResult) < 0.3) {
-    PRIMARY_630 = tmp7(576).unsafe_rawColors.PRIMARY_630;
+    PRIMARY_630 = tmp8(576).unsafe_rawColors.PRIMARY_630;
   }
-  const obj5 = { style: null, children: null };
-  const items1 = [style, size1];
-  obj5.style = items1;
-  const obj6 = { style: null, size: native.Icon.Sizes.CUSTOM, source: _modDef11062, color: roleColor };
-  const items2 = [tmp.verifiedCheck, size1];
-  obj6.style = items2;
-  const items3 = [timestampProducer(native.Icon, obj6), ];
-  const obj7 = { style: null, size: native.Icon.Sizes.CUSTOM, source: _modDef11063, color: PRIMARY_630 };
-  const items4 = [tmp.verifiedCheck, size1];
-  obj7.style = items4;
-  items3[1] = timestampProducer(native.Icon, obj7);
-  obj5.children = items3;
-  return React5(View, obj5);
+  const obj4 = { style: items1, children: items3 };
+  items1 = [style, size1];
+  const obj5 = { style: items2, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault, color: roleColor };
+  items2 = [tmp.verifiedCheck, size1];
+  const Icon = tmp2(1177).Icon;
+  items3 = [metroRequire(Icon, obj5), ];
+  const obj6 = { style: items4, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault2, color: PRIMARY_630 };
+  items4 = [tmp.verifiedCheck, size1];
+  const Icon2 = tmp2(1177).Icon;
+  items3[1] = metroRequire(Icon2, obj6);
+  return metroImportDefault(View, obj4);
 };

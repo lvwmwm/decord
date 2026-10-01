@@ -5,15 +5,16 @@
 // Exports: default
 
 // Module 9299 (createAutocompleterResultForChannelId)
+import Constants from "Constants" /* 1074 */;
 import useChannelName from "useChannelName" /* 4989 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5827 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-fn(5827).AutocompleterResultTypes;
-const ChannelTypes = fn(1074).ChannelTypes;
-const size = fn(2);
+const AutocompleterResultTypes = autocompleter_AutocompleterConstants.AutocompleterResultTypes;
+const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/autocompleter/createAutocompleterResultForChannelId.tsx");
 
 export default function createAutocompleterResultForChannelId(arg0, arg1, UserStore, RelationshipStore) {
@@ -33,28 +34,26 @@ export default function createAutocompleterResultForChannelId(arg0, arg1, UserSt
   if (null == channel) {
     return null;
   } else {
-    const channelName = useChannelName.computeChannelName(channel, obj2, tmp);
+    const obj8 = useChannelName;
+    const channelName = obj8.computeChannelName(channel, obj2, tmp);
     const type = channel.type;
     if (ChannelTypes.DM === type) {
       const user = obj2.getUser(channel.getRecipientId());
       let tmp6 = null;
       if (null != user) {
+        tmp6 = { type: AutocompleterResultTypes.USER, record: user, score: 0, comparator: channelName };
         const obj3 = { type: AutocompleterResultTypes.USER, record: user, score: 0, comparator: channelName };
-        tmp6 = obj3;
       }
       return tmp6;
-    } else if (tmp11.GROUP_DM === type) {
-      const obj4 = { type: AutocompleterResultTypes.GROUP_DM, record: channel, score: 0, comparator: channelName };
-      return obj4;
+    } else if (ChannelTypes.GROUP_DM === type) {
+      return { type: AutocompleterResultTypes.GROUP_DM, record: channel, score: 0, comparator: channelName };
     } else {
-      if (tmp11.GUILD_VOICE !== type) {
-        if (tmp11.GUILD_STAGE_VOICE !== type) {
-          const obj5 = { type: AutocompleterResultTypes.TEXT_CHANNEL, record: channel, score: 0, comparator: channelName };
-          return obj5;
+      if (ChannelTypes.GUILD_VOICE !== type) {
+        if (ChannelTypes.GUILD_STAGE_VOICE !== type) {
+          return { type: AutocompleterResultTypes.TEXT_CHANNEL, record: channel, score: 0, comparator: channelName };
         }
       }
-      const obj6 = { type: AutocompleterResultTypes.VOICE_CHANNEL, record: channel, score: 0, comparator: channelName };
-      return obj6;
+      return { type: AutocompleterResultTypes.VOICE_CHANNEL, record: channel, score: 0, comparator: channelName };
     }
   }
 };

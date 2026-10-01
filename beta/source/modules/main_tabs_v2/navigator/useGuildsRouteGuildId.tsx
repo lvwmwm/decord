@@ -11,7 +11,8 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/navigator/useGuildsRouteGuildId.tsx");
 
 export default function useGuildsRouteGuildId() {
-  const params = Link.useRoute().params;
+  const obj = Link;
+  const params = obj.useRoute().params;
   let guildId;
   if (params != null) {
     guildId = params.guildId;
@@ -19,7 +20,8 @@ export default function useGuildsRouteGuildId() {
   return guildId;
 };
 export const useGuildsRouteGuildAndChannelId = function useGuildsRouteGuildAndChannelId() {
-  const route = Link.useRoute();
+  const obj = Link;
+  const route = obj.useRoute();
   let guildId;
   if (route != null) {
     const params = route.params;

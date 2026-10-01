@@ -3,36 +3,17 @@
 // Dependencies: [7767, 7778, 4663, 7764, 7762]
 
 // Module 7777
-import colorPropType from "colorPropType" /* 7762 */;
+import normalizeColor from "normalizeColor" /* 7762 */;
 import _mod7764 from "module_7764" /* 7764 */;
 import _mod7778 from "module_7778" /* 7778 */;
-import flattenStyle from "module_7767" /* 7767 */;
-import emptyFunction_mod from "module_4663" /* 4663 */;
+import DeprecatedStyleSheetPropType from "DeprecatedStyleSheetPropType" /* 7767 */;
+import "module_4663";
+import module_4663_mod from "module_4663" /* 4663 */;
 
-const obj = { ellipsizeMode: null, numberOfLines: null, textBreakStrategy: null, onLayout: null, onPress: null, onLongPress: null, pressRetentionOffset: null, selectable: null, selectionColor: null, suppressHighlighting: null, style: null, testID: null, nativeID: null, allowFontScaling: null, maxFontSizeMultiplier: null, accessible: null, adjustsFontSizeToFit: null, minimumFontScale: null, disabled: null, dataDetectorType: null };
-const module_7778 = flattenStyle(_mod7778);
-let emptyFunction = emptyFunction_mod;
-obj.ellipsizeMode = emptyFunction.oneOf(["head", "middle", "tail", "clip"]);
-obj.numberOfLines = emptyFunction.number;
-let emptyFunction = emptyFunction_mod;
-obj.textBreakStrategy = emptyFunction.oneOf(["simple", "highQuality", "balanced"]);
-obj.onLayout = emptyFunction.func;
-obj.onPress = emptyFunction.func;
-obj.onLongPress = emptyFunction.func;
-obj.pressRetentionOffset = _mod7764;
-obj.selectable = emptyFunction.bool;
-obj.selectionColor = colorPropType;
-obj.suppressHighlighting = emptyFunction.bool;
-obj.style = module_7778;
-obj.testID = emptyFunction.string;
-obj.nativeID = emptyFunction.string;
-obj.allowFontScaling = emptyFunction.bool;
-obj.maxFontSizeMultiplier = emptyFunction.number;
-obj.accessible = emptyFunction.bool;
-obj.adjustsFontSizeToFit = emptyFunction.bool;
-obj.minimumFontScale = emptyFunction.number;
-obj.disabled = emptyFunction.bool;
-let emptyFunction = emptyFunction_mod;
-obj.dataDetectorType = emptyFunction.oneOf(["phoneNumber", "link", "email", "none", "all"]);
+let module_4663;
+let module_7778;
+const obj = { ellipsizeMode: module_4663.oneOf(["head", "middle", "tail", "clip"]), numberOfLines: module_4663.number, textBreakStrategy: module_4663.oneOf(["simple", "highQuality", "balanced"]), onLayout: module_4663.func, onPress: module_4663.func, onLongPress: module_4663.func, pressRetentionOffset: _mod7764, selectable: module_4663.bool, selectionColor: normalizeColor, suppressHighlighting: module_4663.bool, style: module_7778, testID: module_4663.string, nativeID: module_4663.string, allowFontScaling: module_4663.bool, maxFontSizeMultiplier: module_4663.number, accessible: module_4663.bool, adjustsFontSizeToFit: module_4663.bool, minimumFontScale: module_4663.number, disabled: module_4663.bool, dataDetectorType: module_4663.oneOf(["phoneNumber", "link", "email", "none", "all"]) };
+module_7778 = DeprecatedStyleSheetPropType(_mod7778);
+module_4663 = module_4663_mod;
 
 export default obj;

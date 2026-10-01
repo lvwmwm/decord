@@ -5,24 +5,28 @@
 // Exports: default
 
 // Module 9585 (HighlightText)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import native from "native" /* 1177 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import ColorUtils_mod from "ColorUtils" /* 4683 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { text: null };
-const obj3 = { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, backgroundColor: null, color: null };
-const ColorUtils = fn(4683);
-obj3.backgroundColor = ColorUtils.hexOpacityToRgba(nativeDefault.unsafe_rawColors.YELLOW_300, 0.3);
-obj3.color = nativeDefault.colors.TEXT_STRONG;
-obj2.text = obj3;
-let closure_3 = createStyles.createStyles(obj2);
-const size = fn(2);
+let ColorUtils;
+let obj2;
+const Fonts = Constants.Fonts;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+const obj = { text: obj2 };
+createStyles = createStyles.createStyles;
+obj2 = { fontFamily: Fonts.PRIMARY_BOLD, backgroundColor: ColorUtils.hexOpacityToRgba(nativeDefault.unsafe_rawColors.YELLOW_300, 0.3), color: nativeDefault.colors.TEXT_STRONG };
+ColorUtils = ColorUtils_mod;
+let closure_3 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/search/native/components/HighlightText.tsx");
 
 export default function HighlightText(children) {
-  const tmp = closure_3();
-  return jsx(native.LegacyText, { style: closure_3().text, children: children.children });
+  children = children.children;
+  return jsx(native.LegacyText, { style: closure_3().text, children });
 };

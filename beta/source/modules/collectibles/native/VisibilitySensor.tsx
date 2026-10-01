@@ -5,59 +5,63 @@
 // Exports: default
 
 // Module 15440 (VisibilitySensor)
-import _mod17 from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import noop_mod from "module_19" /* 19 */;
-import jsxProd from "jsxProd" /* 21 */;
-import size from "module_2" /* 2 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size_mod from "module_2" /* 2 */;
 
-let noop = noop_mod;
-({ useEffect: c2, useRef: c3 } = noop);
-let noop = noop_mod;
-const View = _mod17.View;
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
+let ref;
+
+let c2;
+let c3;
+let metroImportDefault;
+let metroRequire;
+let react = react_mod;
+({ useEffect: c2, useRef: c3 } = react);
+react = react_mod;
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/collectibles/native/VisibilitySensor.tsx");
 
 export default function _default(onChange) {
+  let children;
+  let items3;
+  let resetKey;
   onChange = onChange.onChange;
   function stopWatching() {
     if (null !== ref.current) {
       const _clearInterval = clearInterval;
-      clearInterval(tmp.current);
-      tmp.current = null;
+      clearInterval(ref.current);
+      ref.current = null;
     }
   }
   ({ children, resetKey } = onChange);
-  let tmp = React3(null);
-  closure_1 = tmp;
-  closure_2 = React3(false);
-  const size = useWindowDimensionsDefault();
+  let tmp = _false(null);
+  let closure_1 = tmp;
+  let c2 = _false(false);
+  size = useWindowDimensionsDefault();
   const width = size.width;
   const height = size.height;
-  React3(null);
+  let closure_5 = _false(null);
   const items = [resetKey];
-  React2(() => {
+  const tmp2 = React2(() => {
     closure_2.current = false;
   }, items);
   const items1 = [onChange];
-  const callback = noop.useCallback((arg0, arg1) => {
-    closure_0 = arg0;
-    if (null === arg1.current) {
+  const callback = react.useCallback((arg0, arg1) => {
+    let ref2;
+    let tmp;
+    let closure_0 = arg0;
+    ref = arg1;
+    if (null === ref.current) {
       const _setInterval = setInterval;
       tmp.current = setInterval(() => {
         if (null !== ref.current) {
           const current = ref.current;
           current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-            let tmp = arg5 + arg3 > 0;
-            if (tmp) {
-              tmp = arg5 < ref;
-            }
-            if (tmp) {
-              tmp = arg4 < closure_1_0;
-            }
-            if (tmp) {
-              tmp = arg4 + arg2 > 0;
-            }
+            const tmp = arg5 + arg3 > 0 && arg5 < ref && arg4 < closure_1_0 && arg4 + arg2 > 0;
             if (tmp !== ref2.current) {
               ref2.current = tmp;
               closure_0(tmp);
@@ -72,8 +76,7 @@ export default function _default(onChange) {
     callback(width, height);
     return stopWatching;
   }, items2);
-  const obj = { collapsable: false, ref: tmp, children: null };
-  const items3 = [children, timestampProducer(View, {})];
-  obj.children = items3;
-  return React5(View, obj);
+  const obj = { collapsable: false, ref: tmp, children: items3 };
+  items3 = [children, metroRequire(View, {})];
+  return metroImportDefault(View, obj);
 };

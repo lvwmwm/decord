@@ -5,26 +5,38 @@
 // Exports: useFetchCollectiblesProduct
 
 // Module 10508 (useFetchCollectiblesProduct)
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import SKUStore from "SKUStore" /* 5822 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
-const useEffect = fn(19).useEffect;
-let SKUProductLines = fn(1074).SKUProductLines;
-const size = fn(2);
+let _slicedToArray = _slicedToArray_mod;
+const useEffect = react.useEffect;
+let SKUProductLines = Constants.SKUProductLines;
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProduct.tsx");
 
 export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(skuId, includeBundles) {
+  let closure_2;
+  let closure_6;
+  let product;
+  let state;
+  let stateFromStores1;
+  let tmp8;
   _require = skuId;
   dependencyMap = includeBundles;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("useStateFromStores");
   let items = [state];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => {
-    value = null;
-    if (null != closure_0) {
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let value = null;
+    if (null != skuId) {
       value = SKUStore.get(tmp);
     }
     return value;
@@ -34,17 +46,16 @@ export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(
     tmp4 = stateFromStores.productLine !== SKUProductLines.COLLECTIBLES;
   }
   _slicedToArray = tmp4;
-  let obj = require("useStateFromStores");
   const items1 = [stateFromStores1];
-  const tmp6 = _slicedToArray(require("useStateFromStores").useStateFromStoresArray(items1, () => {
-    const items = [CollectiblesCategoryStore.getProduct(closure_0), CollectiblesCategoryStore.getProductFetch(closure_0)];
+  const tmpResult = tmp(563);
+  [product, tmp8] = tmpResult.useStateFromStoresArray(items1, () => {
+    const items = [CollectiblesCategoryStore.getProduct(skuId), CollectiblesCategoryStore.getProductFetch(skuId)];
     return items;
-  }), 2);
-  const product = tmp6[0];
+  });
   state = tmp8;
-  const tmpResult = require("useStateFromStores");
   const items2 = [stateFromStores1];
-  stateFromStores1 = require("useStateFromStores").useStateFromStores(items2, () => CollectiblesCategoryStore.isProductFetchBackedOff(closure_0));
+  const tmpResult2 = tmp(563);
+  stateFromStores1 = tmpResult2.useStateFromStores(items2, () => CollectiblesCategoryStore.isProductFetchBackedOff(skuId));
   let tmp10 = true === includeBundles;
   if (tmp10) {
     let type;
@@ -57,15 +68,13 @@ export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(
     tmp10 = 0 === product.items.length;
   }
   SKUProductLines = tmp10;
-  const items3 = [skuId, product, tmp4, tmp6[1], includeBundles, tmp10, stateFromStores1];
+  const items3 = [skuId, product, tmp4, tmp8, includeBundles, tmp10, stateFromStores1];
   product(() => {
-    let tmp2 = null == closure_0;
+    let tmp2 = null == skuId;
+    const tmp = skuId;
     if (!tmp2) {
-      let tmp4 = null != first;
-      if (tmp4) {
-        tmp4 = !closure_6;
-      }
-      tmp2 = tmp4;
+      tmp2 = null != first && !closure_6;
+      const tmp4 = null != first && !closure_6;
     }
     if (!tmp2) {
       tmp2 = closure_2;
@@ -82,14 +91,14 @@ export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(
     }
     if (!tmp2) {
       const obj2 = { includeBundles };
-      const collectiblesProduct = CollectiblesActionCreators.fetchCollectiblesProduct(closure_0, obj2);
+      const obj = CollectiblesActionCreators;
+      const collectiblesProduct = obj.fetchCollectiblesProduct(tmp, obj2);
     }
   }, items3);
-  let obj2 = { product, isFetching: null };
+  let obj2 = { product, isFetching: "fetching" === state };
   state = undefined;
-  if (tmp6[1] != null) {
+  if (tmp8 != null) {
     state = tmp8.state;
   }
-  obj2.isFetching = "fetching" === state;
   return obj2;
 };

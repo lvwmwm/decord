@@ -4,47 +4,54 @@
 // Dependencies: [19, 17, 21, 4836, 576, 4832, 1115, 5281, 10867, 2]
 
 // Module 10866 (AnnouncementChannelLurkerBar)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 10867 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c3;
+let closure_4;
+let obj2;
 class AnnouncementChannelLurkerBar {
-  constructor(arg0) {
-    channel = global.channel;
-    tmp = closure_5();
-    obj = { style: tmp.wrapper, children: null };
-    obj1 = { style: tmp.text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: null };
-    intl = channel(closure_1[6]).intl;
-    obj1.children = intl.string(channel(closure_1[6]).t.Hl0Mqh);
-    items = [, ];
-    items[0] = jsx(channel(closure_1[5]).Text, obj1);
-    obj4 = {
+  constructor(channel) {
+    let intl;
+    let intl2;
+    let items;
+    channel = channel.channel;
+    const tmp = closure_5();
+    let obj = { style: tmp.wrapper, children: items };
+    const obj2 = { style: tmp.text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl.string(channel(1115).t.Hl0Mqh) };
+    const Text = channel(4832).Text;
+    intl = channel(1115).intl;
+    items = [closure_3(Text, obj2), ];
+    const obj3 = {
       onPress() {
-            const guildId = channel.getGuildId();
-            if (null != guildId) {
-              const result = showChannelFollowingActionSheet.showChannelFollowingActionSheet(channel.id, guildId);
-            }
-          },
-      text: null,
+        const id = channel.id;
+        const guildId = channel.getGuildId();
+        if (null != guildId) {
+          const obj = showChannelFollowingActionSheet;
+          const result = obj.showChannelFollowingActionSheet(id, guildId);
+        }
+      },
+      text: intl2.string(channel(1115).t["4z5PU1"]),
       size: "sm",
       variant: "secondary",
       grow: true
     };
-    intl2 = channel(closure_1[6]).intl;
-    obj4.text = intl2.string(channel(closure_1[6]).t["4z5PU1"]);
-    items[1] = jsx(channel(closure_1[7]).Button, obj4);
-    obj.children = items;
-    return jsxs(View, obj);
+    const Button = channel(5281).Button;
+    intl2 = channel(1115).intl;
+    items[1] = closure_3(Button, obj3);
+    return closure_4(View, obj);
   }
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, paddingTop: 8 }, text: { textAlign: "center", marginBottom: 8 } };
-const hasOwnProperty = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let obj = { wrapper: obj2, text: { textAlign: "center", marginBottom: 8 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, paddingTop: 8 };
+const hasOwnProperty = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/navbars/native/components/AnnouncementChannelLurkerBar.tsx");
 
 export default AnnouncementChannelLurkerBar;

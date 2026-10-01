@@ -7,7 +7,10 @@
 // Module 9580 (ChannelListLayout)
 import UserSettings from "UserSettings" /* 2021 */;
 import ChannelListLayoutTypes2 from "ChannelListLayoutTypes" /* 7304 */;
-import size from "module_2" /* 2 */;
+import CozyDrawer from "CozyDrawer" /* 9581 */;
+import Compact from "Compact" /* 9583 */;
+import Cozy from "Cozy" /* 9584 */;
+import size_mod from "module_2" /* 2 */;
 
 function getLayoutStyles(layout, launchpad) {
   let flag = launchpad;
@@ -15,20 +18,21 @@ function getLayoutStyles(layout, launchpad) {
     flag = false;
   }
   if (ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER === layout) {
-    return tmp(9581).CHANNEL_LIST_STYLES_COZY_DRAWER;
-  } else if (tmp(7304).ChannelListLayoutTypes.COZY_DRAWER_SMOL === layout) {
-    return tmp(9581).CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL;
-  } else if (tmp(7304).ChannelListLayoutTypes.COMPACT === layout) {
-    const tmpResult = tmp(9583);
+    return CozyDrawer.CHANNEL_LIST_STYLES_COZY_DRAWER;
+  } else if (ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER_SMOL === layout) {
+    return CozyDrawer.CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL;
+  } else if (ChannelListLayoutTypes2.ChannelListLayoutTypes.COMPACT === layout) {
+    const tmpResult = Compact;
     return flag ? tmpResult.CHANNEL_LIST_STYLES_COMPACT_LAUNCHPAD : tmpResult.CHANNEL_LIST_STYLES_COMPACT;
   } else {
-    if (tmp(7304).ChannelListLayoutTypes.MINIMAL !== layout) {
+    if (ChannelListLayoutTypes2.ChannelListLayoutTypes.MINIMAL !== layout) {
       const COZY = tmp(7304).ChannelListLayoutTypes.COZY;
     }
-    const tmpResult2 = tmp(9584);
+    const tmpResult2 = Cozy;
     return flag ? tmpResult2.CHANNEL_LIST_STYLES_COZY_LAUNCHPAD : tmpResult2.CHANNEL_LIST_STYLES_COZY;
   }
 }
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/layouts/ChannelListLayout.tsx");
 
 export { getLayoutStyles };
@@ -40,14 +44,17 @@ export const isLayoutCompact = function isLayoutCompact(layout) {
   return layout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COMPACT;
 };
 export const isLayoutCozy = function isLayoutCozy(messagesTabLayout) {
-  return messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY || messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER || messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER_SMOL;
+  const tmp3 = messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY || messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER || messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER_SMOL;
+  return tmp3;
 };
 export const useMessagesTabLayout = function useMessagesTabLayout(panelVariant) {
+  let COZY;
   const ChannelListLayoutSetting = UserSettings.ChannelListLayoutSetting;
   const setting = ChannelListLayoutSetting.useSetting();
   const ChannelListLayoutTypes = ChannelListLayoutTypes2.ChannelListLayoutTypes;
-  if (panelVariant) {
-    let COZY = ChannelListLayoutTypes.COZY_DRAWER_SMOL;
+  const tmp4 = panelVariant;
+  if (tmp4) {
+    COZY = ChannelListLayoutTypes.COZY_DRAWER_SMOL;
   } else if (setting === ChannelListLayoutTypes.COMPACT) {
     COZY = tmp(7304).ChannelListLayoutTypes.COMPACT;
   } else {
@@ -56,6 +63,8 @@ export const useMessagesTabLayout = function useMessagesTabLayout(panelVariant) 
   return COZY;
 };
 export const getScaledChannelRowHeight = function getScaledChannelRowHeight(arg0, layout) {
+  let marginVertical;
+  let paddingVertical;
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
@@ -64,14 +73,14 @@ export const getScaledChannelRowHeight = function getScaledChannelRowHeight(arg0
   const container = tmp.container;
   const bound = Math.max(Math.max(arg0, 1) * (tmp.channelName.height + (tmp.messagePreview.margin.marginTop + tmp.messagePreview.height)), tmp.icon.wrapper.size);
   if (flag) {
-    let paddingVertical = container.paddingThread.paddingVertical;
+    paddingVertical = container.paddingThread.paddingVertical;
   } else {
     paddingVertical = container.padding.paddingVertical;
   }
   layout = tmp.layout;
   const sum = bound + 2 * paddingVertical;
   if (flag) {
-    let marginVertical = layout.marginThread.marginVertical;
+    marginVertical = layout.marginThread.marginVertical;
   } else {
     marginVertical = layout.margin.marginVertical;
   }

@@ -19,11 +19,9 @@ export default function getReportedStreamResolution(arg0, arg1, type, arg3) {
     const tmp7 = getReportedPresetResolutionDefault(arg0, arg1, type.height, arg3);
     let tmp8 = type;
     if (tmp7 !== type.height) {
-      const obj = {};
+      const obj = { width: Math.round(type.width * tmp7 / type.height), height: tmp7 };
       const merged = Object.assign(type);
       const _Math = Math;
-      obj.width = Math.round(type.width * tmp7 / type.height);
-      obj.height = tmp7;
       tmp8 = obj;
     }
     return tmp8;

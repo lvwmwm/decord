@@ -4,34 +4,41 @@
 // Dependencies: [19, 17, 21, 4836, 5279, 576, 1177, 10404, 2]
 
 // Module 10403 (InstantInviteCreator)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;
 import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10404 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+let closure_4;
+let hasOwnProperty;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ identity: { flex: 1 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteCreator.tsx");
-
-export default noop.memo((arg0) => {
+const memoResult = react.memo((arg0) => {
+  let guildId;
+  let items;
+  let obj4;
+  let user;
   ({ guildId, user } = arg0);
   let tmp2 = null;
   if (null != user) {
-    const obj = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_8, children: null };
+    const obj = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_8, children: items };
+    const Stack = Stack_Stack.Stack;
     const obj2 = { source: user.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
-    const items = [React4(native.Avatar, obj2), ];
-    const obj3 = { style: tmp.identity, children: null };
-    const obj4 = { user, guildId };
-    obj3.children = React4(DetailedGuildIdentityUserRow.DetailedGuildIdentityUser, obj4);
-    items[1] = React4(View, obj3);
-    obj.children = items;
-    tmp2 = hasOwnProperty(Stack_Stack.Stack, obj);
+    const Avatar = native.Avatar;
+    items = [React3(Avatar, obj2), ];
+    const obj3 = { style: tmp.identity, children: React3(DetailedGuildIdentityUserRow.DetailedGuildIdentityUser, obj4) };
+    obj4 = { user, guildId };
+    items[1] = React3(View, obj3);
+    tmp2 = hasOwnProperty(Stack, obj);
   }
   return tmp2;
 });
+const result = size.fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteCreator.tsx");
+
+export default memoResult;

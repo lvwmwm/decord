@@ -5,29 +5,31 @@
 // Exports: adaptViewConfig, addWhitelistedNativeProps, addWhitelistedUIProps, configureReanimatedLogger
 
 // Module 1737 (configureProps)
-import _mod1642 from "module_1642" /* 1642 */;
-import _mod1651 from "module_1651" /* 1651 */;
-import runOnRuntime from "runOnRuntime" /* 1682 */;
+import react_native from "react-native" /* 1642 */;
+import PropsAllowlists2 from "PropsAllowlists" /* 1651 */;
+import startMapper from "startMapper" /* 1682 */;
 import module_1641 from "module_1641" /* 1641 */;
 
 function configureProps() {
-  for (const key10008 in _mod1651.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST) {
-    let tmp9 = require;
-    if (!(key10008 in _mod1651.PropsAllowlists.UI_THREAD_PROPS_WHITELIST)) {
+  for (const key10008 in PropsAllowlists2.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST) {
+    let tmp8 = require;
+    if (!(key10008 in PropsAllowlists2.PropsAllowlists.UI_THREAD_PROPS_WHITELIST)) {
       continue;
     } else {
       let tmp = globalThis;
       let _HermesInternal = HermesInternal;
       let str = "` was whitelisted both as UI and native prop. Please remove it from one of the lists.";
       let str2 = "Property `";
-      let tmp2 = new.target;
-      let tmp3 = new.target;
-      let reanimatedError = new tmp9(1649).ReanimatedError("Property `" + key10008 + "` was whitelisted both as UI and native prop. Please remove it from one of the lists.");
+      let self = this;
+      let self2 = this;
+      let reanimatedError = new tmp8(1649).ReanimatedError("Property `" + key10008 + "` was whitelisted both as UI and native prop. Please remove it from one of the lists.");
       throw reanimatedError;
     }
   }
-  const keys = Object.keys(_mod1651.PropsAllowlists.UI_THREAD_PROPS_WHITELIST);
-  runOnRuntime.jsiConfigureProps(keys, Object.keys(_mod1651.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST));
+  const jsiConfigureProps = startMapper.jsiConfigureProps;
+  startMapper;
+  const keys = Object.keys(PropsAllowlists2.PropsAllowlists.UI_THREAD_PROPS_WHITELIST);
+  jsiConfigureProps(keys, Object.keys(PropsAllowlists2.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST));
 }
 let closure_2 = module_1641.shouldBeUseWeb();
 const set = new Set();
@@ -35,48 +37,62 @@ configureProps();
 
 export { configureProps };
 export const addWhitelistedNativeProps = function addWhitelistedNativeProps(arg0) {
-  const merged = Object.assign(_mod1651.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST);
+  const length = Object.keys(PropsAllowlists2.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST).length;
+  const obj = {};
+  const PropsAllowlists = PropsAllowlists2.PropsAllowlists;
+  const merged = Object.assign(PropsAllowlists2.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST);
   const merged1 = Object.assign(arg0);
-  _mod1651.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST = {};
-  if (Object.keys(_mod1651.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST).length !== Object.keys(_mod1651.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST).length) {
+  PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST = obj;
+  if (length !== Object.keys(PropsAllowlists2.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST).length) {
     configureProps();
   }
 };
 export const addWhitelistedUIProps = function addWhitelistedUIProps(arg0) {
-  const merged = Object.assign(_mod1651.PropsAllowlists.UI_THREAD_PROPS_WHITELIST);
+  const length = Object.keys(PropsAllowlists2.PropsAllowlists.UI_THREAD_PROPS_WHITELIST).length;
+  const obj = {};
+  const PropsAllowlists = PropsAllowlists2.PropsAllowlists;
+  const merged = Object.assign(PropsAllowlists2.PropsAllowlists.UI_THREAD_PROPS_WHITELIST);
   const merged1 = Object.assign(arg0);
-  _mod1651.PropsAllowlists.UI_THREAD_PROPS_WHITELIST = {};
-  if (Object.keys(_mod1651.PropsAllowlists.UI_THREAD_PROPS_WHITELIST).length !== Object.keys(_mod1651.PropsAllowlists.UI_THREAD_PROPS_WHITELIST).length) {
+  PropsAllowlists.UI_THREAD_PROPS_WHITELIST = obj;
+  if (length !== Object.keys(PropsAllowlists2.PropsAllowlists.UI_THREAD_PROPS_WHITELIST).length) {
     configureProps();
   }
 };
 export const configureReanimatedLogger = function configureReanimatedLogger(level) {
-  _mod1642.updateLoggerConfig(level);
-  if (!closure_2) {
-    tmp(1682).executeOnUIRuntimeSync(tmp(1642).updateLoggerConfig)(level);
-    const tmpResult = tmp(1682);
+  const obj = react_native;
+  obj.updateLoggerConfig(level);
+  const tmp4 = closure_2;
+  if (!tmp4) {
+    const tmpResult = startMapper;
+    tmpResult.executeOnUIRuntimeSync(react_native.updateLoggerConfig)(level);
   }
 };
 export const adaptViewConfig = function adaptViewConfig(viewConfig) {
   const uiViewClassName = viewConfig.uiViewClassName;
+  const validAttributes = viewConfig.validAttributes;
+  const obj = set;
   if (!set.has(uiViewClassName)) {
     const obj2 = {};
     const _Object = Object;
-    const keys = Object.keys(viewConfig.validAttributes);
+    const keys = Object.keys(validAttributes);
     const item = keys.forEach((item) => {
+      const tmp3 = item in PropsAllowlists2.PropsAllowlists.NATIVE_THREAD_PROPS_WHITELIST || item in PropsAllowlists2.PropsAllowlists.UI_THREAD_PROPS_WHITELIST;
       if (!tmp3) {
         obj2[item] = true;
       }
     });
     const _Object2 = Object;
+    let tmp3 = obj2;
     const obj3 = {};
+    const length = Object.keys(obj2(1651).PropsAllowlists.UI_THREAD_PROPS_WHITELIST).length;
+    const PropsAllowlists = obj2(1651).PropsAllowlists;
     const merged = Object.assign(obj2(1651).PropsAllowlists.UI_THREAD_PROPS_WHITELIST);
     const merged1 = Object.assign(obj2);
-    obj2(1651).PropsAllowlists.UI_THREAD_PROPS_WHITELIST = obj3;
+    PropsAllowlists.UI_THREAD_PROPS_WHITELIST = obj3;
     const _Object3 = Object;
-    if (Object.keys(obj2(1651).PropsAllowlists.UI_THREAD_PROPS_WHITELIST).length !== Object.keys(obj2(1651).PropsAllowlists.UI_THREAD_PROPS_WHITELIST).length) {
+    if (length !== Object.keys(obj2(1651).PropsAllowlists.UI_THREAD_PROPS_WHITELIST).length) {
       configureProps();
     }
-    set.add(uiViewClassName);
+    obj.add(uiViewClassName);
   }
 };

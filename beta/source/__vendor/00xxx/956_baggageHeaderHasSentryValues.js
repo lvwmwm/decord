@@ -5,11 +5,9 @@
 // Exports: baggageHeaderHasSentryValues, createHeadersSafely, getFullURL, isPerformanceResourceTiming
 
 // Module 956 (baggageHeaderHasSentryValues)
-import ignoreNextOnError from "ignoreNextOnError" /* 893 */;
+import _mod893 from "module_893" /* 893 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const baggageHeaderHasSentryValues = function baggageHeaderHasSentryValues(baggage) {
   const parts = baggage.split(",");
@@ -18,10 +16,12 @@ export const baggageHeaderHasSentryValues = function baggageHeaderHasSentryValue
     return trimmed.startsWith("sentry-");
   });
 };
-export const createHeadersSafely = function createHeadersSafely(request_headers) {
+export const createHeadersSafely = function createHeadersSafely(headers) {
   try {
     const _Headers = Headers;
-    const headers = new Headers(request_headers);
+    const self = this;
+    const self2 = this;
+    headers = new Headers(headers);
     return headers;
   } catch (err) {
   }
@@ -29,25 +29,18 @@ export const createHeadersSafely = function createHeadersSafely(request_headers)
 export const getFullURL = function getFullURL(arg0) {
   try {
     const _URL = URL;
-    const uRL = new URL(arg0, ignoreNextOnError.WINDOW.location.origin);
+    const self = this;
+    const self2 = this;
+    const uRL = new URL(arg0, _mod893.WINDOW.location.origin);
     return uRL.href;
   } catch (err) {
   }
 };
 export const isPerformanceResourceTiming = function isPerformanceResourceTiming(entryType) {
-  let tmp = "resource" === entryType.entryType;
+  let tmp = "resource" === entryType.entryType && "initiatorType" in entryType && typeof entryType.nextHopProtocol === "string";
   if (tmp) {
-    tmp = "initiatorType" in entryType;
-  }
-  if (tmp) {
-    tmp = typeof entryType.nextHopProtocol === "string";
-  }
-  if (tmp) {
-    let tmp2 = "fetch" === entryType.initiatorType;
-    if (!tmp2) {
-      tmp2 = "xmlhttprequest" === entryType.initiatorType;
-    }
-    tmp = tmp2;
+    tmp = "fetch" === entryType.initiatorType || "xmlhttprequest" === entryType.initiatorType;
+    const tmp2 = "fetch" === entryType.initiatorType || "xmlhttprequest" === entryType.initiatorType;
   }
   return tmp;
 };

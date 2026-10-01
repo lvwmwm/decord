@@ -5,61 +5,72 @@
 // Exports: default
 
 // Module 9631 (NotificationContent)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import MessageNotificationHeader from "MessageNotificationHeader" /* 9632 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const MessageNotificationHeaderDefault = MessageNotificationHeader;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { body: { flex: 1 }, iconContainer: { marginRight: nativeDefault.space.PX_8 }, contentContainer: null, headerContainer: null, labelContainer: null };
-let obj3 = { marginRight: nativeDefault.space.PX_8 };
-obj2.contentContainer = { padding: nativeDefault.space.PX_12, flexDirection: "row" };
-obj2.headerContainer = { flex: 1 };
-obj2.labelContainer = { flexDirection: "row", alignItems: "center" };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let obj3;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { body: { flex: 1 }, iconContainer: obj2, contentContainer: obj3, headerContainer: { flex: 1 }, labelContainer: { flexDirection: "row", alignItems: "center" } };
+obj2 = { marginRight: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_12, flexDirection: "row" };
+let closure_6 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/NotificationContent.tsx");
 
 export default function NotificationContent(arg0) {
+  let accessoryLabelNode;
+  let children;
+  let header;
+  let icon;
+  let items;
+  let items1;
+  let items2;
+  let rightAccessory;
+  let tmp7Result;
   ({ icon, accessoryLabelNode, header } = arg0);
   ({ children, rightAccessory } = arg0);
   const tmp = closure_6();
-  const obj = { style: tmp.contentContainer, children: null };
   let tmp4 = null;
+  const obj = { style: tmp.contentContainer, children: items };
   if (null != icon) {
     const obj2 = { style: tmp.iconContainer, children: icon };
-    tmp4 = React4(tmp3, obj2);
+    tmp4 = React3(tmp3, obj2);
   }
-  const items = [tmp4, , ];
-  const obj3 = { style: tmp.body, children: null };
-  const obj4 = { style: tmp.labelContainer, children: null };
+  items = [tmp4, , ];
   let tmp6 = null;
+  const obj3 = { style: tmp.body, children: items2 };
+  const obj4 = { style: tmp.labelContainer, children: items1 };
   if (null != accessoryLabelNode) {
     tmp6 = accessoryLabelNode;
   }
-  const items1 = [tmp6, ];
-  const obj5 = { style: tmp.headerContainer, children: null };
+  items1 = [tmp6, ];
+  const obj5 = { style: tmp.headerContainer, children: tmp7Result };
   if ("message" === header.type) {
     const obj6 = {};
+    const tmp16 = MessageNotificationHeaderDefault;
     const merged = Object.assign(header);
-    let tmp7Result = tmp7(MessageNotificationHeaderDefault, obj6);
+    tmp7Result = tmp7(tmp16, obj6);
   } else {
     const obj7 = {};
+    const SimpleNotificationHeader = MessageNotificationHeader.SimpleNotificationHeader;
     const merged1 = Object.assign(header);
-    tmp7Result = tmp7(MessageNotificationHeader.SimpleNotificationHeader, obj7);
+    tmp7Result = tmp7(SimpleNotificationHeader, obj7);
   }
-  obj5.children = tmp7Result;
-  items1[1] = React4(View, obj5);
-  obj4.children = items1;
-  const items2 = [hasOwnProperty(View, obj4), children];
-  obj3.children = items2;
+  items1[1] = React3(View, obj5);
+  items2 = [hasOwnProperty(View, obj4), children];
   items[1] = hasOwnProperty(View, obj3);
   items[2] = rightAccessory;
-  obj.children = items;
   return hasOwnProperty(View, obj);
 };

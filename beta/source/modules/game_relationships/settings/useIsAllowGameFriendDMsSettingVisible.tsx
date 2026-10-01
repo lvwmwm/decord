@@ -5,14 +5,15 @@
 // Exports: useIsAllowGameFriendDMsSettingVisible
 
 // Module 15505 (useIsAllowGameFriendDMsSettingVisible)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import GameRelationshipStore from "GameRelationshipStore" /* 7071 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_relationships/settings/useIsAllowGameFriendDMsSettingVisible.tsx");
 
 export const useIsAllowGameFriendDMsSettingVisible = function useIsAllowGameFriendDMsSettingVisible() {
+  let gameRelationshipCount;
   const items = [GameRelationshipStore];
-  return initialize.useStateFromStores(items, () => gameRelationshipCount.getGameRelationshipCount() > 0);
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => gameRelationshipCount.getGameRelationshipCount() > 0);
 };

@@ -5,43 +5,54 @@
 // Exports: OneColumnGuildUpsellList
 
 // Module 15903 (OneColumnGuildUpsellList)
+import Fragment from "Fragment" /* 21 */;
 import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 15904 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15176 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
+let set, viewableItems;
+
+let react = react_mod;
+const jsx = Fragment.jsx;
 const viewabilityConfig = { itemVisiblePercentThreshold: 50, minimumViewTime: 500 };
 let c8 = 0;
-const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles({ hidden: { opacity: 0 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_community_upsell/native/OneColumnGuildUpsellList.tsx");
 
 export const OneColumnGuildUpsellList = function OneColumnGuildUpsellList(cardAction) {
+  let closure_4;
+  let closure_8;
+  let contentContainerStyle;
+  let hidden;
+  let subheader;
+  let suggestedGuilds;
   cardAction = cardAction.cardAction;
   const onDismiss = cardAction.onDismiss;
   let first;
-  noop = undefined;
+  react = undefined;
   let stateFromStoresObject;
   ({ suggestedGuilds, contentContainerStyle, subheader } = cardAction);
-  const callback = noop.useCallback((id) => id.id, []);
-  const ref = noop.useRef(null);
-  const tmp4 = first(noop.useState(() => closure_8 > 0), 2);
+  let tmp = closure_9();
+  const callback = react.useCallback((id) => id.id, []);
+  const ref = react.useRef(null);
+  let tmp4 = first(react.useState(() => closure_8 > 0), 2);
   first = tmp4[0];
-  noop = tmp4[1];
+  react = tmp4[1];
   const items = [first];
-  const callback1 = noop.useCallback((nativeEvent) => {
+  const callback1 = react.useCallback((nativeEvent) => {
     const y = nativeEvent.nativeEvent.contentOffset.y;
   }, []);
   const items1 = [first];
-  const callback2 = noop.useCallback(() => {
-    if (first) {
+  const callback2 = react.useCallback(() => {
+    const tmp = first;
+    if (tmp) {
       const offset = closure_8;
       let current = ref.current;
       if (current != null) {
-        let obj = { offset: tmp, animated: false };
+        let obj = { offset: tmp2, animated: false };
         current.scrollToOffset(obj);
       }
       const _requestAnimationFrame = requestAnimationFrame;
@@ -55,42 +66,46 @@ export const OneColumnGuildUpsellList = function OneColumnGuildUpsellList(cardAc
       });
     }
   }, items);
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let closure_0;
     if (first) {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => closure_1_4(false), 500);
       return () => clearTimeout(closure_0);
     }
   }, items1);
-  let tmp = closure_9();
-  const items2 = [stateFromStoresObject];
-  stateFromStoresObject = cardAction(ref[8]).useStateFromStoresObject(items2, () => stateFromStoresObject.getGuildGameIds());
   let obj = cardAction(ref[8]);
-  const analyticsLocations = onDismiss(ref[9])(onDismiss(ref[10]).GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations;
+  const items2 = [stateFromStoresObject];
+  stateFromStoresObject = obj.useStateFromStoresObject(items2, () => stateFromStoresObject.getGuildGameIds());
+  const tmp10 = onDismiss(ref[9]);
+  const analyticsLocations = tmp10(onDismiss(ref[10]).GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations;
   const items3 = [onDismiss, stateFromStoresObject, cardAction];
-  closure_129_0 = stateFromStoresObject;
-  closure_129_1 = analyticsLocations;
-  const callback3 = noop.useCallback((item) => {
+  const callback3 = react.useCallback((item) => {
     item = item.item;
     let tmp = null;
-    const obj = { guild: item, gameId: stateFromStoresObject[item.id], cardAction, onDismiss: null };
+    const obj = { guild: item, gameId: stateFromStoresObject[item.id], cardAction, onDismiss: tmp };
+    const tmp2 = null != stateFromStoresObject[item.id];
+    const tmp3 = jsx;
+    const tmp4 = GameCommunityMultiGuildUpsellCardDefault;
     if (tmp2) {
       tmp = onDismiss;
     }
-    obj.onDismiss = tmp;
-    return jsx(GameCommunityMultiGuildUpsellCardDefault, { guild: item, gameId: stateFromStoresObject[item.id], cardAction, onDismiss: null }, item.id);
+    return tmp3(tmp4, obj, item.id);
   }, items3);
-  const tmp10 = onDismiss(ref[9]);
-  closure_129_2 = noop.useRef(new Set());
-  const set = new Set();
-  const focusEffect = cardAction(ref[7]).useFocusEffect(noop.useCallback(() => {
+  const useRef = react.useRef;
+  set = new Set();
+  let closure_2 = useRef(set);
+  let obj2 = cardAction(ref[7]);
+  const focusEffect = obj2.useFocusEffect(react.useCallback(() => {
     const current = ref.current;
     current.clear();
   }, []));
   const items4 = [stateFromStoresObject, analyticsLocations];
-  const callback4 = noop.useCallback((viewableItems) => {
+  const callback4 = react.useCallback((viewableItems) => {
+    let location_stack;
     viewableItems = viewableItems.viewableItems;
     let item = viewableItems.forEach((item) => {
+      let obj2;
       item = item.item;
       if (null != item) {
         let hasItem = null == item.id;
@@ -100,30 +115,23 @@ export const OneColumnGuildUpsellList = function OneColumnGuildUpsellList(cardAc
         }
         if (!hasItem) {
           const current2 = ref.current;
+          const tmp5 = closure_1_0[item.id];
           current2.add(item.id);
-          const obj2 = { type: cardAction(ref[6]).ImpressionTypes.PANE, name: cardAction(ref[6]).ImpressionNames.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD, properties: null };
-          const obj3 = { game_id: closure_1_0[item.id], guild_id: item.id, location_stack };
-          obj2.properties = obj3;
-          cardAction(ref[5]).trackImpression(obj2);
-          const obj = cardAction(ref[5]);
+          const obj = { type: stateFromStoresObject(ref[6]).ImpressionTypes.PANE, name: stateFromStoresObject(ref[6]).ImpressionNames.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD, properties: obj2 };
+          const trackImpression = stateFromStoresObject(ref[5]).trackImpression;
+          stateFromStoresObject(ref[5]);
+          obj2 = { game_id: tmp5, guild_id: item.id, location_stack };
+          trackImpression(obj);
         }
       }
     });
   }, items4);
-  let obj3 = { ref, style: null, onViewableItemsChanged: null, viewabilityConfig: null, contentContainerStyle: null, keyExtractor: null, data: null, ListHeaderComponent: null, renderItem: null, drawDistance: 3000, onScroll: null, scrollEventThrottle: 16, onLoad: null };
-  let hidden;
+  const obj3 = { ref, style: hidden, onViewableItemsChanged: callback4, viewabilityConfig, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback3, drawDistance: 3000, onScroll: callback1, scrollEventThrottle: 16, onLoad: callback2 };
+  hidden = undefined;
+  const FlashList = cardAction(ref[12]).FlashList;
+  const tmp15 = jsx;
   if (first) {
     hidden = tmp.hidden;
   }
-  obj3.style = hidden;
-  obj3.onViewableItemsChanged = callback4;
-  obj3.viewabilityConfig = viewabilityConfig;
-  obj3.contentContainerStyle = contentContainerStyle;
-  obj3.keyExtractor = callback;
-  obj3.data = suggestedGuilds;
-  obj3.ListHeaderComponent = subheader;
-  obj3.renderItem = callback3;
-  obj3.onScroll = callback1;
-  obj3.onLoad = callback2;
-  return jsx(cardAction(ref[12]).FlashList, { ref, style: null, onViewableItemsChanged: null, viewabilityConfig: null, contentContainerStyle: null, keyExtractor: null, data: null, ListHeaderComponent: null, renderItem: null, drawDistance: 3000, onScroll: null, scrollEventThrottle: 16, onLoad: null });
+  return tmp15(FlashList, obj3);
 };

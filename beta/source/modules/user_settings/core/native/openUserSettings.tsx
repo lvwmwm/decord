@@ -15,9 +15,13 @@ const UserSettingsSections = Constants.UserSettingsSections;
 const result = size.fileFinishedImporting("modules/user_settings/core/native/openUserSettings.tsx");
 
 export const openUserSettings = (screen, fn) => {
-  const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+  const obj = RootNavigationRef;
+  const rootNavigationRef = obj.getRootNavigationRef();
+  const tmp2 = null != rootNavigationRef && rootNavigationRef.isReady();
   if (tmp2) {
     screen = undefined;
+    const dispatch = DispatcherDefault.dispatch;
+    DispatcherDefault;
     if (screen != null) {
       screen = screen.screen;
     }
@@ -25,7 +29,7 @@ export const openUserSettings = (screen, fn) => {
       screen = UserSettingsSections.OVERVIEW;
     }
     const obj2 = { type: "USER_SETTINGS_MODAL_INIT", section: screen };
-    DispatcherDefault.dispatch(obj2);
+    dispatch(obj2);
     rootNavigationRef.navigate("settings", screen, { pop: true });
     if (fn != null) {
       fn();

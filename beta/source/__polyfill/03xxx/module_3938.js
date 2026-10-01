@@ -3,44 +3,48 @@
 // Dependencies: [3939, 3940, 3941, 3942, 3943]
 
 // Module 3938
-import module_3939 from "module_3939" /* 3939 */;
-import module_3940 from "module_3940" /* 3940 */;
-import module_3941 from "module_3941" /* 3941 */;
+import formatDistance from "formatDistance" /* 3939 */;
+import buildFormatLongFn from "buildFormatLongFn" /* 3940 */;
+import formatRelative from "formatRelative" /* 3941 */;
 import date_mod from "module_3942" /* 3942 */;
-import date_mod from "module_3943" /* 3943 */;
+import date_mod2 from "module_3943" /* 3943 */;
 
-if (!module_3939) {
-  const obj = { default: module_3939 };
-  let tmp3 = obj;
+let tmp11;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+if (!formatDistance) {
+  tmp3 = { default: formatDistance };
+  const obj = { default: formatDistance };
 } else {
-  tmp3 = module_3939;
+  tmp3 = formatDistance;
 }
-if (!module_3940) {
-  const obj2 = { default: module_3940 };
-  let tmp5 = obj2;
+if (!buildFormatLongFn) {
+  tmp5 = { default: buildFormatLongFn };
+  const obj2 = { default: buildFormatLongFn };
 } else {
-  tmp5 = module_3940;
+  tmp5 = buildFormatLongFn;
 }
-if (!module_3941) {
-  const obj3 = { default: module_3941 };
-  let tmp7 = obj3;
+if (!formatRelative) {
+  tmp7 = { default: formatRelative };
+  const obj3 = { default: formatRelative };
 } else {
-  tmp7 = module_3941;
+  tmp7 = formatRelative;
 }
-let date = date_mod;
+let date = date_mod2;
 if (!date) {
+  tmp9 = { default: date };
   const obj4 = { default: date };
-  let tmp9 = obj4;
 } else {
   tmp9 = date;
 }
-let date = date_mod;
+date = date_mod2;
 if (!date) {
+  tmp11 = { default: date };
   const obj5 = { default: date };
-  let tmp11 = obj5;
 } else {
   tmp11 = date;
 }
 
 export default { code: "de", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
-export default exports.default;

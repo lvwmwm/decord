@@ -4,78 +4,112 @@
 // Dependencies: [19, 17, 1074, 1178, 21, 4836, 576, 12602, 13645, 13646, 8276, 7602, 13657, 8275, 13647, 5283, 8906, 8907, 2]
 
 // Module 13656 (Avatar)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7602 */;
 import ClipView from "ClipView" /* 8276 */;
 import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12602 */;
 import Status_StatusUtils from "Status/StatusUtils" /* 13645 */;
 import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13646 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import StatusConstants from "StatusConstants" /* 1178 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 function getStatusSize(arg0) {
   if (CutoutableAvatarImage.AvatarSizes.XXSMALL !== arg0) {
-    if (tmp(12602).AvatarSizes.XSMALL !== arg0) {
-      if (tmp(12602).AvatarSizes.XSMALL_20 !== arg0) {
-        if (tmp(12602).AvatarSizes.SMALL !== arg0) {
-          if (tmp(12602).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
-            return React5.REFRESH_MEDIUM_10;
+    if (CutoutableAvatarImage.AvatarSizes.XSMALL !== arg0) {
+      if (CutoutableAvatarImage.AvatarSizes.XSMALL_20 !== arg0) {
+        if (CutoutableAvatarImage.AvatarSizes.SMALL !== arg0) {
+          if (CutoutableAvatarImage.AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+            return metroImportDefault.REFRESH_MEDIUM_10;
           } else {
-            if (tmp(12602).AvatarSizes.NORMAL !== arg0) {
-              if (tmp(12602).AvatarSizes.TABS_22 !== arg0) {
-                if (tmp(12602).AvatarSizes.LARGE !== arg0) {
-                  if (tmp(12602).AvatarSizes.LARGE_48 !== arg0) {
-                    if (tmp(12602).AvatarSizes.XLARGE !== arg0) {
-                      if (tmp(12602).AvatarSizes.XLARGE_72 !== arg0) {
-                        if (tmp(12602).AvatarSizes.XXLARGE !== arg0) {
-                          if (tmp(12602).AvatarSizes.PROFILE !== arg0) {
-                            if (tmp(12602).AvatarSizes.YOUBAR_60 !== arg0) {
+            if (CutoutableAvatarImage.AvatarSizes.NORMAL !== arg0) {
+              if (CutoutableAvatarImage.AvatarSizes.TABS_22 !== arg0) {
+                if (CutoutableAvatarImage.AvatarSizes.LARGE !== arg0) {
+                  if (CutoutableAvatarImage.AvatarSizes.LARGE_48 !== arg0) {
+                    if (CutoutableAvatarImage.AvatarSizes.XLARGE !== arg0) {
+                      if (CutoutableAvatarImage.AvatarSizes.XLARGE_72 !== arg0) {
+                        if (CutoutableAvatarImage.AvatarSizes.XXLARGE !== arg0) {
+                          if (CutoutableAvatarImage.AvatarSizes.PROFILE !== arg0) {
+                            if (CutoutableAvatarImage.AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }
                         }
                       }
                     }
-                    return React5.LARGE;
+                    return metroImportDefault.LARGE;
                   }
                 }
               }
             }
-            return React5.MEDIUM;
+            return metroImportDefault.MEDIUM;
           }
         }
       }
     }
   }
-  return React5.SMALL;
+  return metroImportDefault.SMALL;
 }
-const View = fn(17).View;
-const StatusTypes = fn(1074).StatusTypes;
-const StatusConstants = fn(1178);
-({ STATUS_PADDING: metroRequire, StatusSizes: closure_7 } = StatusConstants);
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
+const View = react_native.View;
+const StatusTypes = Constants.StatusTypes;
+({ STATUS_PADDING: metroRequire, StatusSizes: metroImportDefault } = StatusConstants);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles((NORMAL) => {
-  const obj = { status: { position: "absolute", right: -3, bottom: -3 }, speaking: null, stageSpeaking: null, voiceStatus: null, decoration: null, container: null };
-  const rect = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: nativeDefault.colors.STATUS_SPEAKING };
-  obj.speaking = rect;
-  obj.stageSpeaking = { position: "absolute", right: -2, bottom: -2 };
-  const size = { width: 24, height: 24, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.unsafe_rawColors.RED_400, borderRadius: nativeDefault.radii.md, right: 0, bottom: 0 };
-  obj.voiceStatus = size;
-  const rect1 = { position: "absolute", top: null, left: null };
-  const decorationSizeForAvatarSize = avatar_decorations_AvatarDecorationUtils.getDecorationSizeForAvatarSize(NORMAL);
-  rect1.top = -(decorationSizeForAvatarSize - CutoutableAvatarImage.styles[NORMAL].width) / 2;
-  const decorationSizeForAvatarSize1 = avatar_decorations_AvatarDecorationUtils.getDecorationSizeForAvatarSize(NORMAL);
-  rect1.left = -(decorationSizeForAvatarSize1 - CutoutableAvatarImage.styles[NORMAL].width) / 2;
-  obj.decoration = rect1;
-  obj.container = { position: "relative" };
+  let decorationSizeForAvatarSize;
+  let decorationSizeForAvatarSize1;
+  let rect;
+  let rect1;
+  const obj = { status: { position: "absolute", right: -3, bottom: -3 }, speaking: rect, stageSpeaking: { position: "absolute", right: -2, bottom: -2 }, voiceStatus: size, decoration: rect1, container: { position: "relative" } };
+  rect = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: nativeDefault.colors.STATUS_SPEAKING };
+  size = { width: 24, height: 24, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.unsafe_rawColors.RED_400, borderRadius: nativeDefault.radii.md, right: 0, bottom: 0 };
+  rect1 = { position: "absolute", top: -(decorationSizeForAvatarSize - CutoutableAvatarImage.styles[NORMAL].width) / 2, left: -(decorationSizeForAvatarSize1 - CutoutableAvatarImage.styles[NORMAL].width) / 2 };
+  const obj5 = avatar_decorations_AvatarDecorationUtils;
+  decorationSizeForAvatarSize = obj5.getDecorationSizeForAvatarSize(NORMAL);
+  const obj6 = avatar_decorations_AvatarDecorationUtils;
+  decorationSizeForAvatarSize1 = obj6.getDecorationSizeForAvatarSize(NORMAL);
   return obj;
 });
-let size = fn(2);
-let result = size.fileFinishedImporting("design/void/Avatar/native/Avatar.tsx");
-
-export default noop.memo((isMobileOnline) => {
+const memoResult = react.memo((isMobileOnline) => {
+  let accessibilityLabel;
+  let accessible;
+  let avatarDecoration;
+  let avatarStyle;
+  let channel;
+  let cutout;
+  let cutout2;
+  let deaf;
+  let decorationCutout;
+  let disablePlaceholder;
+  let guildId;
+  let isStageCall;
+  let items1;
+  let items2;
+  let items5;
+  let items6;
+  let items7;
+  let mute;
+  let needsOffscreenAlphaCompositing;
+  let obj11;
+  let obj13;
+  let source;
+  let speakingColor;
+  let statusStyle;
+  let streaming;
+  let style;
+  let tmp16;
+  let tmp58;
+  let tmp61;
+  let tmp7Result;
+  let typing;
+  let user;
   ({ channel, streaming } = isMobileOnline);
   if (streaming === undefined) {
     streaming = false;
@@ -91,6 +125,8 @@ export default noop.memo((isMobileOnline) => {
   const status = isMobileOnline.status;
   let NORMAL = isMobileOnline.size;
   if (NORMAL === undefined) {
+    let tmp = flag;
+    const tmp2 = status;
     NORMAL = flag(status[7]).AvatarSizes.NORMAL;
   }
   let flag3 = isMobileOnline.animate;
@@ -120,205 +156,208 @@ export default noop.memo((isMobileOnline) => {
   const decoration = tmp3;
   let items = [cutout, autoStatusCutout, flag, flag2, NORMAL, status, typing, statusSizeOverride, tmp3];
   const memo = NORMAL.useMemo(() => {
+    let cornerRadius;
+    let cornerRadius2;
+    let diff;
+    let height;
+    let height2;
+    let height3;
+    let items;
+    let items1;
+    let items2;
+    let items3;
+    let obj12;
+    let obj14;
+    let tmp;
+    let tmp29Result;
+    let width;
+    let width2;
+    let width3;
     if (null != autoStatusCutout) {
-      let diff1 = status;
-      let items = statusSizeOverride;
-      if (null != diff1) {
-        if (diff1 !== StatusTypes.UNKNOWN) {
-          diff1 = CutoutableAvatarImage.AVATAR_SIZE_MAP[tmp2];
-          if (items == null) {
-            items = getStatusSize(tmp2);
+      let num = statusSizeOverride;
+      let tmp6;
+      if (null != status) {
+        if (status !== StatusTypes.UNKNOWN) {
+          const tmp43 = CutoutableAvatarImage.AVATAR_SIZE_MAP[NORMAL];
+          if (num == null) {
+            num = getStatusSize(tmp2);
           }
-          if (items == null) {
-            items = 0;
+          if (num == null) {
+            num = 0;
           }
-          let result = items / 4;
+          const result = num / 4;
           if (tmp5) {
-            const statusTypingDimensions = Status_StatusUtils.getStatusTypingDimensions(items);
+            const obj9 = Status_StatusUtils;
+            const statusTypingDimensions = obj9.getStatusTypingDimensions(num);
             ({ width: width3, height: height3 } = statusTypingDimensions);
-            if (flag == null) {
-              flag = false;
-            }
-            if (flag2 == null) {
-              flag2 = false;
-            }
-            const sum = height3 + 2 * timestampProducer;
-            const obj2 = { nativeCutouts: null };
-            const size = { shape: null, x: null, y: null, width: null, height: null, cornerRadius: null };
-            size.shape = ClipView.CutoutShape.RoundedRect;
-            const diff = diff1 - width3 - timestampProducer;
-            const tmp29Result = getStatusContainerStyleDefault(items, flag, flag2);
-            size.x = diff + Status_StatusUtils.getAnimatedTypingTranslateX(tmp29Result.width);
-            diff1 = diff1 - height3;
-            size.y = diff1 - timestampProducer;
-            size.width = width3 + 2 * timestampProducer;
-            size.height = sum;
-            result = sum / 2;
-            size.cornerRadius = result;
+            const tmp29 = getStatusContainerStyleDefault;
+            const sum = height3 + 2 * metroRequire;
+            const obj2 = { nativeCutouts: items };
+            size = { shape: ClipView.CutoutShape.RoundedRect, x: diff + obj12.getAnimatedTypingTranslateX(tmp29Result.width), y: tmp43 - height3 - metroRequire, width: width3 + 2 * metroRequire, height: sum, cornerRadius: sum / 2 };
+            diff = tmp43 - width3 - metroRequire;
+            tmp29Result = tmp29(num, flag, flag2);
             items = [size];
-            obj2.nativeCutouts = items;
-          } else {
-            if (flag2) {
-              const vRStatusContainerRect = Status_StatusUtils.getVRStatusContainerRect(items);
-              ({ width: width2, height: height2 } = vRStatusContainerRect);
-              const obj4 = { nativeCutouts: null };
-              const size1 = { shape: ClipView.CutoutShape.RoundedRect, x: diff1 - width2 + result, y: null, width: null, height: null, cornerRadius: null };
-              result = diff1 - height2 + result;
-              size1.y = result;
-              size1.width = width2;
-              size1.height = height2;
-              size1.cornerRadius = vRStatusContainerRect.cornerRadius;
-              const items1 = [size1];
-              obj4.nativeCutouts = items1;
-            } else if (!flag) {
-              const sum1 = items / 2 + tmp4;
-              const diff2 = diff1 - sum1 - 2 * result;
-              const obj = { nativeCutouts: null };
-              const point = { shape: ClipView.CutoutShape.Circle, x: diff2, y: diff2, size: 2 * sum1 };
-              const items2 = [point];
-              obj.nativeCutouts = items2;
-            }
-            const mobileStatusContainerRect = Status_StatusUtils.getMobileStatusContainerRect(items);
+            tmp6 = obj2;
+            obj12 = Status_StatusUtils;
+          } else if (flag2) {
+            const obj6 = Status_StatusUtils;
+            const vRStatusContainerRect = obj6.getVRStatusContainerRect(num);
+            ({ width: width2, height: height2 } = vRStatusContainerRect);
+            const obj4 = { nativeCutouts: items1 };
+            const size1 = { shape: ClipView.CutoutShape.RoundedRect, x: tmp43 - width2 + result, y: tmp43 - height2 + result, width: width2, height: height2, cornerRadius: cornerRadius2 };
+            cornerRadius2 = vRStatusContainerRect.cornerRadius;
+            items1 = [size1];
+            tmp6 = obj4;
+          } else if (flag) {
+            const obj3 = Status_StatusUtils;
+            const mobileStatusContainerRect = obj3.getMobileStatusContainerRect(num);
             ({ width, height } = mobileStatusContainerRect);
-            const obj5 = { nativeCutouts: null };
-            const size2 = { shape: ClipView.CutoutShape.RoundedRect, x: diff1 - width + result, y: diff1 - height + result, width, height, cornerRadius: mobileStatusContainerRect.cornerRadius };
-            const items3 = [size2];
-            obj5.nativeCutouts = items3;
+            const obj5 = { nativeCutouts: items2 };
+            const size2 = { shape: ClipView.CutoutShape.RoundedRect, x: tmp43 - width + result, y: tmp43 - height + result, width, height, cornerRadius };
+            cornerRadius = mobileStatusContainerRect.cornerRadius;
+            items2 = [size2];
+            tmp6 = obj5;
+          } else {
+            const sum1 = num / 2 + tmp4;
+            const diff1 = tmp43 - sum1 - 2 * result;
+            const obj = { nativeCutouts: items3 };
+            const point = { shape: ClipView.CutoutShape.Circle, x: diff1, y: diff1, size: 2 * sum1 };
+            items3 = [point];
+            tmp6 = obj;
           }
         }
       }
+      tmp = tmp6;
     } else {
-      const obj7 = { cutout, decorationCutout: avatar_decorations_AvatarDecorationUtils.getDecorationCutoutForAvatarCutout(cutout, -decoration.decoration.top) };
-      return obj7;
+      tmp = cutout;
     }
+    const obj7 = { cutout: tmp, decorationCutout: obj14.getDecorationCutoutForAvatarCutout(tmp, -decoration.decoration.top) };
+    obj14 = avatar_decorations_AvatarDecorationUtils;
+    return obj7;
   }, items);
-  let obj = { style: null, needsOffscreenAlphaCompositing: null, accessible: null, accessibilityLabel: null, children: null };
-  let StatusWithTyping = flag;
+  let tmp6 = cutout;
+  let obj = { style: items1, needsOffscreenAlphaCompositing, accessible, accessibilityLabel, children: null };
   ({ cutout: cutout2, decorationCutout } = memo);
-  let items1 = [flag(status[7]).styles[NORMAL], tmp3.container, style];
-  obj.style = items1;
-  obj.needsOffscreenAlphaCompositing = needsOffscreenAlphaCompositing;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  if (!flag4) {
-    let items2 = [null, , , , ];
-    let obj2 = { disablePlaceholder, style: avatarStyle, cutout: cutout2 };
-    if (null == source) {
-      if (null == user) {
-        if (null == channel) {
-          items2[1] = null;
-          let tmp34 = null;
-          if (null != avatarDecoration) {
-            let obj3 = { size: null, avatarDecoration: null, decorationStyle: null, animate: null, cutout: null };
-            const tmp37 = flag2(tmp7[13]);
-            obj3.size = StatusWithTyping(tmp7[11]).getDecorationSizeForAvatarSize(NORMAL);
-            obj3.avatarDecoration = avatarDecoration;
-            obj3.decorationStyle = tmp3.decoration;
-            obj3.animate = flag3;
-            obj3.cutout = decorationCutout;
-            tmp34 = decoration(tmp37, obj3, avatarDecoration.asset);
-            const StatusWithTypingResult = StatusWithTyping(tmp7[11]);
-          }
-          items2[2] = tmp34;
-          let tmp38 = null;
-          if (null != status) {
-            tmp38 = null;
-            if (status !== autoStatusCutout.UNKNOWN) {
-              if (statusSizeOverride == null) {
-                statusSizeOverride = getStatusSize(NORMAL);
-              }
-              let merged1 = null;
-              if (null != statusSizeOverride) {
-                let obj4 = { size: statusSizeOverride, isMobileOnline: flag, isVROnline: flag2, status, streaming, style: null };
-                let items3 = [tmp3.status, statusStyle];
-                obj4.style = items3;
-                merged1 = obj4;
-              }
-              if (null == merged1) {
-                tmp38 = null;
-              } else {
-                if (!typing) {
-                  let obj5 = {};
-                  const merged = Object.assign(merged1);
-                  let tmp49 = decoration(flag2(tmp7[14]), obj5);
-                  const tmp45 = flag2(tmp7[14]);
-                }
-                StatusWithTyping = StatusWithTyping(tmp7[14]).StatusWithTyping;
-                let obj6 = {};
-                merged1 = Object.assign(merged1);
-                obj6.typing = typing;
-                user = user.id;
-                obj6.userId = user;
-                tmp49 = decoration(StatusWithTyping, obj6);
-              }
-            }
-          }
-          items2[3] = tmp38;
-          if (deaf) {
-            let obj7 = { style: null, children: null };
-            const items4 = [, ];
-            ({ status: arr7[0], voiceStatus: arr7[1] } = tmp3);
-            obj7.style = items4;
-            const obj8 = { size: flag2(tmp7[15]).Sizes.REFRESH_SMALL_16, source: flag2(tmp7[16]), color: flag2(tmp7[6]).unsafe_rawColors.WHITE };
-            obj7.children = decoration(flag2(tmp7[15]), obj8);
-            let tmp54 = decoration(tmp6, obj7);
-            const tmp60 = flag2(tmp7[15]);
-          } else if (mute) {
-            let obj9 = { style: null, children: null };
-            const items5 = [, ];
-            ({ status: arr6[0], voiceStatus: arr6[1] } = tmp3);
-            obj9.style = items5;
-            const obj10 = { size: flag2(tmp7[15]).Sizes.REFRESH_SMALL_16, source: flag2(tmp7[17]), color: flag2(tmp7[6]).unsafe_rawColors.WHITE };
-            obj9.children = decoration(flag2(tmp7[15]), obj10);
-            tmp54 = decoration(tmp6, obj9);
-            const tmp57 = flag2(tmp7[15]);
-          }
-          items2[4] = tmp54;
-          obj.children = items2;
-          return closure_9(tmp6, obj);
-        }
-      }
-    }
-    if (null != source) {
-      const obj11 = { source, size: NORMAL, animate: flag3 };
-      obj2 = Object.assign(obj2);
-      let tmp15 = decoration(flag2(tmp7[7]), obj11);
-      const tmp30 = flag2(tmp7[7]);
-    } else if (null != user) {
-      let obj12 = { user, guildId, size: NORMAL, animate: flag3 };
-      const merged2 = Object.assign(obj2);
-      tmp15 = decoration(flag2(tmp7[7]), obj12);
-      const tmp24 = flag2(tmp7[7]);
-    } else if (null != channel) {
-      const obj13 = { channel, size: NORMAL, animate: flag3 };
-      const merged3 = Object.assign(obj2);
-      tmp15 = decoration(flag2(tmp7[7]), obj13);
-      const tmp18 = flag2(tmp7[7]);
-    }
-  } else {
-    let sum = StatusWithTyping(tmp7[7]).AVATAR_SIZE_MAP[NORMAL] + 4;
+  const tmp5 = closure_9;
+  items1 = [flag(status[7]).styles[NORMAL], tmp3.container, style];
+  let tmp9 = null;
+  if (flag4) {
+    let tmp11Result;
+    let num = 4;
+    let sum = tmp7(tmp8[7]).AVATAR_SIZE_MAP[NORMAL] + 4;
     if (isStageCall) {
-      const obj14 = { color: speakingColor, style: null };
-      speakingColor = [tmp3.stageSpeaking, ];
-      let size = { width: sum, height: sum, borderRadius: sum / 2 };
-      speakingColor[1] = size;
-      obj14.style = speakingColor;
-      let tmp9Result = tmp9(flag2(tmp7[12]), obj14);
+      let obj2 = { color: speakingColor, style: items2 };
+      items2 = [tmp3.stageSpeaking, ];
+      size = { width: sum, height: sum, borderRadius: sum / 2 };
+      items2[1] = size;
+      tmp11Result = tmp11(flag2(tmp8[12]), obj2);
     } else {
-      const items6 = [tmp3.speaking, , ];
+      let items3 = [tmp3.speaking, , ];
       let size1 = { width: sum, height: sum, borderRadius: sum / 2 };
-      items6[1] = size1;
-      let tmp10 = null;
+      items3[1] = size1;
+      let tmp12 = null;
       if (null != speakingColor) {
-        const obj15 = { borderColor: speakingColor };
-        tmp10 = obj15;
+        let obj3 = { borderColor: speakingColor };
+        tmp12 = obj3;
       }
-      const obj16 = { style: null };
-      items6[2] = tmp10;
-      obj16.style = items6;
-      tmp9Result = tmp9(tmp6, obj16);
+      let obj4 = { style: items3 };
+      items3[2] = tmp12;
+      tmp11Result = tmp11(tmp6, obj4);
     }
+    tmp9 = tmp11Result;
   }
+  const items4 = [tmp9, , , , ];
+  let obj5 = { disablePlaceholder, style: avatarStyle, cutout: cutout2 };
+  if (null == source) {
+    let tmp15;
+    let tmp55;
+    if (null == user) {
+      tmp15 = null;
+    }
+    items4[1] = tmp15;
+    let tmp35 = null;
+    if (null != avatarDecoration) {
+      let obj6 = { size: tmp7Result.getDecorationSizeForAvatarSize(NORMAL), avatarDecoration, decorationStyle: tmp3.decoration, animate: flag3, cutout: decorationCutout };
+      const tmp38 = flag2(status[13]);
+      tmp7Result = flag(status[11]);
+      tmp35 = decoration(tmp38, obj6, avatarDecoration.asset);
+    }
+    items4[2] = tmp35;
+    let tmp39 = null;
+    if (null != status) {
+      tmp39 = null;
+      if (status !== autoStatusCutout.UNKNOWN) {
+        if (statusSizeOverride == null) {
+          statusSizeOverride = getStatusSize(NORMAL);
+        }
+        let tmp42 = null;
+        if (null != statusSizeOverride) {
+          let obj7 = { size: statusSizeOverride, isMobileOnline: flag, isVROnline: flag2, status, streaming, style: items5 };
+          items5 = [tmp3.status, statusStyle];
+          tmp42 = obj7;
+        }
+        let tmp43 = null;
+        if (null != tmp42) {
+          if (typing) {
+            let tmp50;
+            if (null != user) {
+              const obj8 = { typing, userId: user.id };
+              const StatusWithTyping = tmp7(tmp8[14]).StatusWithTyping;
+              const merged = Object.assign(tmp42);
+              tmp50 = decoration(StatusWithTyping, obj8);
+            }
+            tmp43 = tmp50;
+          }
+          let obj9 = {};
+          const tmp46 = flag2(status[14]);
+          const merged1 = Object.assign(tmp42);
+          tmp50 = decoration(tmp46, obj9);
+        }
+        tmp39 = tmp43;
+      }
+    }
+    items4[3] = tmp39;
+    if (deaf) {
+      const obj10 = { style: items6, children: decoration(tmp61, obj11) };
+      items6 = [, ];
+      ({ status: arr8[0], voiceStatus: arr8[1] } = tmp3);
+      obj11 = { size: flag2(status[15]).Sizes.REFRESH_SMALL_16, source: flag2(status[16]), color: flag2(status[6]).unsafe_rawColors.WHITE };
+      tmp61 = flag2(status[15]);
+      tmp55 = decoration(tmp6, obj10);
+    } else if (mute) {
+      let obj12 = { style: items7, children: decoration(tmp58, obj13) };
+      items7 = [, ];
+      ({ status: arr7[0], voiceStatus: arr7[1] } = tmp3);
+      obj13 = { size: flag2(status[15]).Sizes.REFRESH_SMALL_16, source: flag2(status[17]), color: flag2(status[6]).unsafe_rawColors.WHITE };
+      tmp58 = flag2(status[15]);
+      tmp55 = decoration(tmp6, obj12);
+    }
+    items4[4] = tmp55;
+    obj.children = items4;
+    return tmp5(tmp6, obj);
+  }
+  if (null != source) {
+    let tmp29 = decoration;
+    let obj14 = { source, size: NORMAL, animate: flag3 };
+    const tmp31 = flag2(status[7]);
+    const merged2 = Object.assign(obj5);
+    tmp16 = decoration(tmp31, obj14);
+  } else if (null != user) {
+    const obj15 = { user, guildId, size: NORMAL, animate: flag3 };
+    const tmp25 = flag2(status[7]);
+    const merged3 = Object.assign(obj5);
+    tmp16 = decoration(tmp25, obj15);
+  } else if (null != channel) {
+    const obj16 = { channel, size: NORMAL, animate: flag3 };
+    const tmp19 = flag2(status[7]);
+    const merged4 = Object.assign(obj5);
+    tmp16 = decoration(tmp19, obj16);
+  }
+  tmp15 = tmp16;
 });
-export const AvatarSizes = fn(12602).AvatarSizes;
+let size = size_mod;
+let result = size.fileFinishedImporting("design/void/Avatar/native/Avatar.tsx");
+
+export default memoResult;
+export const AvatarSizes = CutoutableAvatarImage.AvatarSizes;
 export { getStatusSize };

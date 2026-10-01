@@ -5,20 +5,39 @@
 // Exports: BackButtonWithTracking, getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
 // Module 15578 (RegistrationUtils)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import InviteStore from "InviteStore" /* 4817 */;
 import DisplayedInviteStore from "DisplayedInviteStore" /* 8201 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15570 */;
+import RegistrationConstants from "RegistrationConstants" /* 15571 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 function trackRegTransition(overrideRegistrationOptions) {
+  let actionType;
+  let code;
+  let details;
+  let fromStep;
+  let id;
+  let id1;
+  let id2;
+  let step;
+  let toStep;
+  let type;
   let registrationOptions = overrideRegistrationOptions.overrideRegistrationOptions;
   ({ step, fromStep, toStep, actionType, details } = overrideRegistrationOptions);
   const displayedInviteCode = DisplayedInviteStore.getDisplayedInviteCode();
   if (registrationOptions == null) {
-    registrationOptions = state.getState().registrationOptions;
+    registrationOptions = metroImportDefault.getState().registrationOptions;
   }
   let invite = null;
   if (null != displayedInviteCode) {
@@ -43,55 +62,48 @@ function trackRegTransition(overrideRegistrationOptions) {
       str2 = "phone";
     }
   }
-  const obj2 = { step, identity_type: str2, action_type: actionType, action_details: details, registration_source: str, invite_code: null, invite_channel_id: null, invite_channel_type: null, invite_guild_id: null, invite_inviter_id: null, from_step: null, to_step: null };
-  let code;
+  const obj = { step, identity_type: str2, action_type: actionType, action_details: details, registration_source: str, invite_code: code, invite_channel_id: id, invite_channel_type: type, invite_guild_id: id1, invite_inviter_id: id2, from_step: fromStep, to_step: toStep };
+  code = undefined;
+  const track = AnalyticsUtilsDefault.track;
+  const REGISTER_TRANSITION = AnalyticEvents.REGISTER_TRANSITION;
+  AnalyticsUtilsDefault;
   if (invite != null) {
     code = invite.code;
   }
-  obj2.invite_code = code;
-  let id;
+  id = undefined;
   if (invite != null) {
     const channel = invite.channel;
     if (channel != null) {
       id = channel.id;
     }
   }
-  obj2.invite_channel_id = id;
-  let type;
+  type = undefined;
   if (invite != null) {
     const channel2 = invite.channel;
     if (channel2 != null) {
       type = channel2.type;
     }
   }
-  obj2.invite_channel_type = type;
-  let id1;
+  id1 = undefined;
   if (invite != null) {
     const guild = invite.guild;
     if (guild != null) {
       id1 = guild.id;
     }
   }
-  obj2.invite_guild_id = id1;
-  let id2;
+  id2 = undefined;
   if (invite != null) {
     const inviter = invite.inviter;
     if (inviter != null) {
       id2 = inviter.id;
     }
   }
-  obj2.invite_inviter_id = id2;
-  obj2.from_step = fromStep;
-  obj2.to_step = toStep;
-  AnalyticsUtilsDefault.track(AnalyticEvents.REGISTER_TRANSITION, obj2);
+  track(REGISTER_TRANSITION, obj);
 }
-const RegistrationUIStore = fn(15570);
-({ clearRegistrationErrorMessage: metroRequire, useRegistrationUIStore: closure_7 } = RegistrationUIStore);
-const RegistrationConstants = fn(15571);
-({ RegisterTransitionSteps: closure_8, RegistrationTransitionActionTypes: closure_9 } = RegistrationConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsx = fn(21).jsx;
-const size = fn(2);
+({ clearRegistrationErrorMessage: metroRequire, useRegistrationUIStore: metroImportDefault } = RegistrationUIStore);
+({ RegisterTransitionSteps: metroImportAll, RegistrationTransitionActionTypes: c9 } = RegistrationConstants);
+const AnalyticEvents = Constants.AnalyticEvents;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/auth/native/RegistrationUtils.tsx");
 
 export const hasAllRegistrationFieldsCompleted = function hasAllRegistrationFieldsCompleted(email, isConsentRequired) {
@@ -124,15 +136,22 @@ export const hasAllRegistrationFieldsCompleted = function hasAllRegistrationFiel
 };
 export { trackRegTransition };
 export function getTrackRegTransition(arg0) {
+  const ref = arg0;
   return (arg0) => {
+    let actionType;
+    let details;
+    let overrideRegistrationOptions;
+    let step;
+    let toStep;
     ({ step, actionType, toStep, details, overrideRegistrationOptions } = arg0);
-    if (actionType === constants2.VIEWED) {
-      if (step === constants.CAPTCHA) {
+    const tmp = constants;
+    if (actionType === constants.VIEWED) {
+      if (step === metroImportAll.CAPTCHA) {
         const obj = { step, fromStep: ref.current, actionType };
         trackRegTransition(obj);
       }
     }
-    if (actionType === constants2.VIEWED) {
+    if (actionType === tmp.VIEWED) {
       if (null != step) {
         const obj2 = { step, fromStep: ref.current, actionType };
         trackRegTransition(obj2);
@@ -146,19 +165,20 @@ export function getTrackRegTransition(arg0) {
   };
 }
 export const BackButtonWithTracking = function BackButtonWithTracking(arg0) {
-  _require = noop.useContext(require("Auth").TrackRegistrationContext);
+  let closure_0;
+  let step;
+  _require = react.useContext(require("Auth").TrackRegistrationContext);
   ({ destinationStep: importDefault, onPress: dependencyMap } = arg0);
-  let obj = {};
+  const HeaderBackButton = require("module_5943").HeaderBackButton;
   const merged = Object.assign(arg0);
-  obj.onPress = function onPress() {
+  return <HeaderBackButton onPress={function onPress() {
     if (null != dependencyMap) {
-      timestampProducer();
-      const obj = { step, actionType: constants2.VIEWED };
+      metroRequire();
+      const obj = { step: importDefault, actionType: constants.VIEWED };
       closure_0(obj);
       tmp();
     }
-  };
-  return jsx(require("module_5943").HeaderBackButton, {});
+  }} />;
 };
 export const getCommonErrorDetails = function getCommonErrorDetails(error_code) {
   if (-1 === error_code) {

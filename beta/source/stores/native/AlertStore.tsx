@@ -4,27 +4,28 @@
 // Dependencies: [504, 573, 2]
 
 // Module 11040 (AlertStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import size from "module_2" /* 2 */;
 
 let c0 = null;
 let closure_1 = -1;
 let c2 = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class AlertStore extends Store {
+  getAlert() {
+    return c0;
+  }
+  getAlertKey() {
+    return "alert-store-" + closure_1;
+  }
+  isAlertDismissable() {
+    return c2;
+  }
 }
 const prototype = AlertStore.prototype;
-prototype["getAlert"] = function getAlert() {
-  return c0;
-};
-prototype["getAlertKey"] = function getAlertKey() {
-  return "alert-store-" + closure_1;
-};
-prototype["isAlertDismissable"] = function isAlertDismissable() {
-  return c2;
-};
 AlertStore.displayName = "AlertStore";
-const alertStore = new AlertStore(DispatcherDefault, {
+const obj = {
   ALERT_OPEN: function handleOpen(arg0) {
     closure_1 = closure_1 + 1;
     ({ alert: c0, isDismissable: c2 } = arg0);
@@ -33,8 +34,8 @@ const alertStore = new AlertStore(DispatcherDefault, {
     c0 = null;
     c2 = null;
   }
-});
-const size = fn(2);
+};
+const alertStore = new AlertStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/native/AlertStore.tsx");
 
 export default alertStore;

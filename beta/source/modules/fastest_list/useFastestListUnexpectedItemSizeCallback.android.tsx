@@ -6,24 +6,30 @@
 
 // Module 6479 (useFastestListUnexpectedItemSizeCallback)
 import FastestListLogger from "FastestListLogger" /* 6480 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let nativeEvent;
+
 const result = size.fileFinishedImporting("modules/fastest_list/useFastestListUnexpectedItemSizeCallback.android.tsx");
 
 export default function useFastestListUnexpectedItemSizeCallback(arg0) {
+  const ref = arg0;
   const items = [arg0];
-  return noop.useCallback((nativeEvent) => {
+  return react.useCallback((nativeEvent) => {
+    let element;
+    let props;
+    let str;
     nativeEvent = nativeEvent.nativeEvent;
     const current = ref.current;
+    const tmp = ref;
     if (nativeEvent.isSectionHeader) {
       const renderSectionHeader = current.renderSectionHeader;
       let renderSectionHeaderResult;
       if (renderSectionHeader != null) {
         renderSectionHeaderResult = renderSectionHeader(nativeEvent.section);
       }
-      let element = renderSectionHeaderResult;
+      element = renderSectionHeaderResult;
     } else if (nativeEvent.isSectionFooter) {
       const renderSectionFooter = current.renderSectionFooter;
       let renderSectionFooterResult;
@@ -35,15 +41,16 @@ export default function useFastestListUnexpectedItemSizeCallback(arg0) {
       element = current.renderItem(nativeEvent.section, nativeEvent.item);
     }
     if (element != null) {
-      const props = element.props;
+      props = element.props;
     }
     let type;
     if (element != null) {
       type = element.type;
     }
     if (typeof type === "function") {
+      let combined;
       if (type.name.length > 0) {
-        let str = type.name;
+        str = type.name;
       }
       let joined;
       if (null == str) {
@@ -53,7 +60,7 @@ export default function useFastestListUnexpectedItemSizeCallback(arg0) {
       }
       if (nativeEvent.isSectionHeader) {
         const _HermesInternal3 = HermesInternal;
-        let combined = "Section header at section " + nativeEvent.section + ".";
+        combined = "Section header at section " + nativeEvent.section + ".";
       } else {
         const section = nativeEvent.section;
         if (nativeEvent.isSectionFooter) {
@@ -64,17 +71,13 @@ export default function useFastestListUnexpectedItemSizeCallback(arg0) {
           combined = "Item at section " + section + " and index " + nativeEvent.item + ".";
         }
       }
-      const obj = { detailMessage: null, itemPosition: null, itemName: null, itemProps: null, listId: null };
       const _HermesInternal4 = HermesInternal;
-      obj.detailMessage = "Expected item size " + nativeEvent.sizeExpected + ", but got " + nativeEvent.size + ".";
-      obj.itemPosition = combined;
+      const obj = { detailMessage: "Expected item size " + nativeEvent.sizeExpected + ", but got " + nativeEvent.size + ".", itemPosition: combined, itemName: str, itemProps: joined, listId: tmp.current.listId };
       if (str == null) {
         str = "Unknown component.";
       }
-      obj.itemName = str;
-      obj.itemProps = joined;
-      obj.listId = ref.current.listId;
-      FastestListLogger.logFastestListError("Expected item size mismatch.", obj);
+      const obj3 = FastestListLogger;
+      obj3.logFastestListError("Expected item size mismatch.", obj);
     }
     let type1;
     if (type != null) {

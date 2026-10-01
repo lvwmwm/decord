@@ -5,22 +5,24 @@
 // Exports: AwaitAnimationContext, useAwaitAnimationCompletion
 
 // Module 11644 (useAwaitAnimationComplete)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const redux = noop.createContext(null);
-const size = fn(2);
+const jsx = Fragment.jsx;
+const redux = react.createContext(null);
 const result = size.fileFinishedImporting("modules/app_launcher/native/hooks/useAwaitAnimationComplete.tsx");
 
 export const AwaitAnimationContext = function AwaitAnimationContext(children) {
   const handleQueuedCallback = children.handleQueuedCallback;
   const items = [handleQueuedCallback];
-  return <redux.Provider value={noop.useMemo(() => ({ handleQueuedCallback }), items)}>{arg0.children}</redux.Provider>;
+  return <redux.Provider value={react.useMemo(() => ({ handleQueuedCallback }), items)}>{arg0.children}</redux.Provider>;
 };
 export const useAwaitAnimationCompletion = function useAwaitAnimationCompletion() {
-  const context = noop.useContext(closure_2);
+  let fn;
+  const context = react.useContext(redux);
   if (null == context) {
-    let fn = (fn) => fn();
+    fn = (fn) => fn();
   } else {
     fn = context.handleQueuedCallback;
   }

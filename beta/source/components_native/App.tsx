@@ -6,6 +6,10 @@
 
 // Module 13884 (App)
 import TTITrackerDefault from "TTITracker" /* 9 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import VoiceEngineStreamingManagerDefault from "VoiceEngineStreamingManager" /* 4977 */;
 import AccessibilityFocusLockManagerDefault from "AccessibilityFocusLockManager" /* 5265 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6010 */;
@@ -16,7 +20,7 @@ import FramesNativeManagerDefault from "FramesNativeManager" /* 8751 */;
 import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8765 */;
 import GPlayManagerDefault from "GPlayManager" /* 10172 */;
 import StartupProfilerDefault from "StartupProfiler" /* 11027 */;
-import NativeFastConnectModuleDefault from "NativeFastConnectModule" /* 13181 */;
+import react_nativeDefault from "react-native" /* 13181 */;
 import AccessibilityManagerDefault from "AccessibilityManager" /* 13926 */;
 import BackPressManagerDefault from "BackPressManager" /* 14001 */;
 import CallKitManagerDefault from "CallKitManager" /* 14002 */;
@@ -36,159 +40,191 @@ import SessionAdManagerDefault from "SessionAdManager" /* 14108 */;
 import TouchEventAnalyticsManagerDefault from "TouchEventAnalyticsManager" /* 14109 */;
 import LocalMessageCacheManagerDefault from "LocalMessageCacheManager" /* 14111 */;
 import AppContainerDefault from "AppContainer" /* 14115 */;
-import MainNavigatorDefault from "MainNavigator" /* 15564 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 13885 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import AudioManagerStore from "AudioManagerStore" /* 9101 */;
+import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13230 */;
+import RequestReviewStore from "RequestReviewStore" /* 13239 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 13886 */;
+import LocalPushNotificationStore from "LocalPushNotificationStore" /* 13260 */;
+import PromotionsStore from "PromotionsStore" /* 10128 */;
+import BitRateStore from "BitRateStore" /* 13541 */;
+import ShareStore from "ShareStore" /* 13887 */;
+import PermissionVADStore from "PermissionVADStore" /* 13888 */;
+import InteractionModalStore from "InteractionModalStore" /* 13889 */;
+import MobileAppDatabaseManager from "MobileAppDatabaseManager" /* 7057 */;
+import SubscriptionStore from "SubscriptionStore" /* 4494 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 13890 */;
+import PhoneStore from "PhoneStore" /* 6362 */;
+import ICYMISessionStore from "ICYMISessionStore" /* 13891 */;
+import MemoryExperiment from "MemoryExperiment" /* 13892 */;
+import size from "module_2" /* 2 */;
 
+let tmp;
 const IosImageTypesManagerDefault = tmp(5472);
-const require = fn;
-const NativeModules = fn(17).NativeModules;
-const AudioManagerStore = fn(9101);
-const ConnectivityIndicatorStateStore = fn(13230);
-const RequestReviewStore = fn(13239);
-const HexagonCampaignPersistedStore = fn(13886);
-const LocalPushNotificationStore = fn(13260);
-const PromotionsStore = fn(10128);
-const BitRateStore = fn(13541);
-const ShareStore = fn(13887);
-const PermissionVADStore = fn(13888);
-const InteractionModalStore = fn(13889);
-const MobileAppDatabaseManager = fn(7057);
-const SubscriptionStore = fn(4494);
-const AccessibilityStore = fn(4825);
-const AnalyticsLogStore = fn(13890);
-const PhoneStore = fn(6362);
-const ICYMISessionStore = fn(13891);
-const MemoryExperiment = fn(13892);
-const jsx = fn(21).jsx;
+const NativeModules = react_native.NativeModules;
+const jsx = Fragment.jsx;
 if (global.__DEV__) {
-  fn(1981)(13893, dependencyMap.paths);
+  asyncRequire(13893, dependencyMap.paths);
 }
-const size = fn(2);
 let result = size.fileFinishedImporting("components_native/App.tsx");
 
 export default function App() {
   const renderApp = TTITrackerDefault.renderApp;
   renderApp.record();
-  const effect = noop.useEffect(() => {
-    AccessibilityManagerDefault.init();
-    AccessibilityFocusLockManagerDefault.initialize();
-    BackPressManagerDefault.initialize();
-    CallKitManagerDefault.initialize();
-    AccessibilityCallManagerDefault.initialize();
-    NotificationTokenManagerDefault.initialize();
-    ForegroundServiceManagerDefault.initialize();
-    VoiceNotificationManagerDefault.initialize();
-    SentMessageIntentsHandlerDefault.init();
-    UserSettingsProtoManagerDefault.init();
-    NativeRPCServerManagerDefault.init();
-    GPlayManagerDefault.initialize();
-    MobileVoiceOverlayLifecycleManagerDefault.initialize();
-    EmbeddedActivitiesNativeManagerDefault.initialize();
-    FramesNativeManagerDefault.initialize();
-    MediaPlayerMuteManagerDefault.initialize();
-    MediaPlayerManagerDefault.initialize();
-    SoundboardManagerDefault.initialize();
-    VoiceMessagesPlaybackManagerDefault.initialize();
+  const effect = react.useEffect(() => {
+    let obj = AccessibilityManagerDefault;
+    obj.init();
+    let obj2 = AccessibilityFocusLockManagerDefault;
+    obj2.initialize();
+    let obj3 = BackPressManagerDefault;
+    obj3.initialize();
+    let obj4 = CallKitManagerDefault;
+    obj4.initialize();
+    let obj5 = AccessibilityCallManagerDefault;
+    obj5.initialize();
+    let obj6 = NotificationTokenManagerDefault;
+    obj6.initialize();
+    let obj7 = ForegroundServiceManagerDefault;
+    obj7.initialize();
+    let obj8 = VoiceNotificationManagerDefault;
+    obj8.initialize();
+    let obj9 = SentMessageIntentsHandlerDefault;
+    obj9.init();
+    let obj10 = UserSettingsProtoManagerDefault;
+    obj10.init();
+    let obj11 = NativeRPCServerManagerDefault;
+    obj11.init();
+    let obj12 = GPlayManagerDefault;
+    obj12.initialize();
+    let obj13 = MobileVoiceOverlayLifecycleManagerDefault;
+    obj13.initialize();
+    let obj14 = EmbeddedActivitiesNativeManagerDefault;
+    obj14.initialize();
+    let obj15 = FramesNativeManagerDefault;
+    obj15.initialize();
+    let obj16 = MediaPlayerMuteManagerDefault;
+    obj16.initialize();
+    const obj17 = MediaPlayerManagerDefault;
+    obj17.initialize();
+    const obj18 = SoundboardManagerDefault;
+    obj18.initialize();
+    const obj19 = VoiceMessagesPlaybackManagerDefault;
+    obj19.initialize();
     MobileNativeUpdateStore.ensureInitialized();
-    ICYMIManagerDefault.initialize();
-    GameRelationshipManagerDefault.initialize();
-    CollectiblesMarketingManagerDefault.initialize();
-    SessionAdManagerDefault.initialize();
-    VoiceEngineStreamingManagerDefault.initialize();
-    TouchEventAnalyticsManagerDefault.initialize();
+    const obj20 = ICYMIManagerDefault;
+    obj20.initialize();
+    const obj21 = GameRelationshipManagerDefault;
+    obj21.initialize();
+    const obj22 = CollectiblesMarketingManagerDefault;
+    obj22.initialize();
+    const obj23 = SessionAdManagerDefault;
+    obj23.initialize();
+    const obj24 = VoiceEngineStreamingManagerDefault;
+    obj24.initialize();
+    const obj25 = TouchEventAnalyticsManagerDefault;
+    obj25.initialize();
+    const obj26 = stateFromStores(dependencyMap[49]);
     const tmp29 = stateFromStores;
     if (obj26.isIOS()) {
-      IosImageTypesManagerDefault.initialize();
       const tmpResult = IosImageTypesManagerDefault;
+      tmpResult.initialize();
     }
-    obj26 = stateFromStores(1364);
-    const result = tmp29(12298).initializeRouteManagerIfNeeded();
+    const tmp29Result = tmp29(dependencyMap[51]);
+    const result = tmp29Result.initializeRouteManagerIfNeeded();
     return () => {
-      closure_1_1(14003).terminate();
-      const obj = closure_1_1(14003);
-      closure_1_1(5265).terminate();
-      const obj2 = closure_1_1(5265);
-      closure_1_1(10172).terminate();
-      const obj3 = closure_1_1(10172);
-      closure_1_1(14089).terminate();
-      const obj4 = closure_1_1(14089);
-      stateFromStores(12298).cleanupRouteManager();
-      const obj5 = stateFromStores(12298);
-      closure_1_1(14109).terminate();
-      const obj6 = closure_1_1(14109);
-      closure_1_1(14097).terminate();
-      const obj7 = closure_1_1(14097);
-      closure_1_1(7711).terminate();
-      const obj8 = closure_1_1(7711);
-      closure_1_1(14018).terminate();
-      const obj9 = closure_1_1(14018);
-      closure_1_1(14001).terminate();
-      const obj10 = closure_1_1(14001);
-      closure_1_1(14103).terminate();
-      const obj11 = closure_1_1(14103);
-      closure_1_1(14105).terminate();
-      const obj12 = closure_1_1(14105);
-      closure_1_1(14106).terminate();
-      const obj13 = closure_1_1(14106);
-      closure_1_1(14108).terminate();
-      const obj14 = closure_1_1(14108);
-      closure_1_1(4977).terminate();
-      const obj15 = closure_1_1(4977);
-      closure_1_1(14014).terminate();
+      const obj = closure_1_1(closure_1_2[28]);
+      obj.terminate();
+      const obj2 = closure_1_1(closure_1_2[25]);
+      obj2.terminate();
+      const obj3 = closure_1_1(closure_1_2[35]);
+      obj3.terminate();
+      const obj4 = closure_1_1(closure_1_2[36]);
+      obj4.terminate();
+      const obj5 = stateFromStores(closure_1_2[51]);
+      obj5.cleanupRouteManager();
+      const obj6 = closure_1_1(closure_1_2[48]);
+      obj6.terminate();
+      const obj7 = closure_1_1(closure_1_2[40]);
+      obj7.terminate();
+      const obj8 = closure_1_1(closure_1_2[39]);
+      obj8.terminate();
+      const obj9 = closure_1_1(closure_1_2[34]);
+      obj9.terminate();
+      const obj10 = closure_1_1(closure_1_2[26]);
+      obj10.terminate();
+      const obj11 = closure_1_1(closure_1_2[42]);
+      obj11.terminate();
+      const obj12 = closure_1_1(closure_1_2[43]);
+      obj12.terminate();
+      const obj13 = closure_1_1(closure_1_2[44]);
+      obj13.terminate();
+      const obj14 = closure_1_1(closure_1_2[46]);
+      obj14.terminate();
+      const obj15 = closure_1_1(closure_1_2[47]);
+      obj15.terminate();
+      const obj16 = closure_1_1(closure_1_2[31]);
+      obj16.terminate();
     };
   }, []);
   let stateFromStores;
+  let obj = stateFromStores(504);
   const items = [AuthenticationStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => AuthenticationStore.isAuthenticated());
+  stateFromStores = obj.useStateFromStores(items, () => AuthenticationStore.isAuthenticated());
   const items1 = [stateFromStores];
-  const effect1 = noop.useEffect(() => {
-    if (stateFromStores) {
+  const effect1 = react.useEffect(function() {
+    const tmp = stateFromStores;
+    if (tmp) {
       const token = AuthenticationStore.getToken();
       if (null == token) {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("Authenticated without a token");
         throw error;
       } else {
-        AuthenticationActionCreatorsDefault.startSession(token);
-        LocalMessageCacheManagerDefault.initialize();
+        let obj = AuthenticationActionCreatorsDefault;
+        obj.startSession(token);
+        const obj2 = LocalMessageCacheManagerDefault;
+        obj2.initialize();
+        const obj3 = PlatformUtils;
         if (obj3.isAndroid()) {
           const NativePermissionManager = NativeModules.NativePermissionManager;
           const notificationAuthorization = NativePermissionManager.requestNotificationAuthorization();
         }
         return () => {
-          closure_1_1(dependencyMap[54]).terminate();
+          const obj = closure_1_1(closure_1_2[54]);
+          obj.terminate();
         };
       }
     }
   }, items1);
-  const effect2 = noop.useEffect(() => {
-    TTITrackerDefault.wasAuthenticated = AuthenticationStore.isAuthenticated();
+  const effect2 = react.useEffect(() => {
+    const tmp = TTITrackerDefault;
+    tmp.wasAuthenticated = AuthenticationStore.isAuthenticated();
   }, []);
-  let obj = stateFromStores(504);
-  const isChannelMetadataObfuscationEnabled = stateFromStores(13212).useIsChannelMetadataObfuscationEnabled("App");
-  closure_129_0 = isChannelMetadataObfuscationEnabled;
-  const items2 = [isChannelMetadataObfuscationEnabled];
-  const effect3 = noop.useEffect(() => {
-    const result = NativeFastConnectModuleDefault.setUseChannelObfuscation(stateFromStores);
-  }, items2);
   let obj2 = stateFromStores(13212);
-  const shouldUseAltGateway = stateFromStores(14113).useShouldUseAltGateway("App");
-  closure_130_0 = shouldUseAltGateway;
+  const isChannelMetadataObfuscationEnabled = obj2.useIsChannelMetadataObfuscationEnabled("App");
+  const items2 = [isChannelMetadataObfuscationEnabled];
+  const effect3 = react.useEffect(() => {
+    const obj = react_nativeDefault;
+    const result = obj.setUseChannelObfuscation(isChannelMetadataObfuscationEnabled);
+  }, items2);
+  let obj3 = stateFromStores(14113);
+  const shouldUseAltGateway = obj3.useShouldUseAltGateway("App");
   const items3 = [shouldUseAltGateway];
-  const effect4 = noop.useEffect(() => {
-    NativeFastConnectModuleDefault.setUseAltGateway(stateFromStores);
+  const effect4 = react.useEffect(() => {
+    const obj = react_nativeDefault;
+    obj.setUseAltGateway(shouldUseAltGateway);
   }, items3);
-  const effect5 = noop.useEffect(() => {
+  const effect5 = react.useEffect(() => {
     const renderAppEffect = TTITrackerDefault.renderAppEffect;
     return renderAppEffect.record();
   }, []);
-  let obj4 = { profile: null, children: null };
-  let obj3 = stateFromStores(14113);
-  obj4.profile = stateFromStores(11027).Profiles.App;
+  StartupProfilerDefault;
   let obj5 = { appEntryKey: "main", children: null };
-  obj5.children = jsx(MainNavigatorDefault, {});
-  obj4.children = jsx(AppContainerDefault, { appEntryKey: "main", children: null });
-  return <tmp11 profile={null}>{null}</tmp11>;
+  AppContainerDefault;
+  return <tmp11 profile={stateFromStores(11027).Profiles.App}>{null}</tmp11>;
 };

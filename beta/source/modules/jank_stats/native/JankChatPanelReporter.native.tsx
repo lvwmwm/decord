@@ -5,27 +5,34 @@
 // Exports: default
 
 // Module 15637 (JankChatPanelReporter)
+import Fragment from "Fragment" /* 21 */;
 import getJankScreenName from "getJankScreenName" /* 15638 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let dependencyMap;
+
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/jank_stats/native/JankChatPanelReporter.native.tsx");
 
 export default function JankChatPanelReporter(channelId) {
+  let maxWidth;
+  let ref;
+  let translateX;
   channelId = channelId.channelId;
   const showCreateThread = channelId.showCreateThread;
   ({ translateX, maxWidth } = channelId);
-  dependencyMap = noop.useRef({ channelId, showCreateThread });
+  dependencyMap = react.useRef({ channelId, showCreateThread });
   const items = [channelId, showCreateThread];
-  const effect = noop.useEffect(() => {
-    closure_2.current = { channelId, showCreateThread };
+  const effect = react.useEffect(() => {
+    const obj = { channelId, showCreateThread };
+    ref.current = obj;
   }, items);
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     ({ channelId, showCreateThread } = ref.current);
-    return getJankScreenName.getChatPanelScreenName(channelId, showCreateThread);
+    const obj = getJankScreenName;
+    return obj.getChatPanelScreenName(channelId, showCreateThread);
   }, []);
-  const obj = { position: translateX, openAt: 0, closedAt: maxWidth, resolveOpenName: callback, resolveClosedName: channelId(15638).getPanelListScreenName };
-  return jsx(showCreateThread(15641), { position: translateX, openAt: 0, closedAt: maxWidth, resolveOpenName: callback, resolveClosedName: channelId(15638).getPanelListScreenName });
+  showCreateThread(15641);
+  return <tmp3 position={translateX} openAt={0} closedAt={maxWidth} resolveOpenName={callback} resolveClosedName={channelId(15638).getPanelListScreenName} />;
 };

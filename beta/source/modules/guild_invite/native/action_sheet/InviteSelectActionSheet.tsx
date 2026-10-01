@@ -5,37 +5,44 @@
 // Exports: default
 
 // Module 17628 (InviteSelectActionSheet)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import TableRadioGroup from "TableRadioGroup" /* 5997 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 5997 */;
 import TableRadioRow from "TableRadioRow" /* 6000 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let BottomSheet;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { content: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 } };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const jsx = Fragment.jsx;
+let obj = { content: obj2 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
+let closure_4 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_invite/native/action_sheet/InviteSelectActionSheet.tsx");
 
 export default function InviteSelectActionSheet(arg0) {
+  let options;
+  let title;
+  let value;
   ({ options, onChange: require } = arg0);
   ({ title, value } = arg0);
-  const obj = { contentStyles: closure_4().content, header: jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { title }), children: null };
   const tmp = closure_4();
-  obj.children = jsx(TableRadioGroup.TableRadioGroup, {
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  ({
     value,
     onChange(arg0) {
       require(arg0);
-      ActionSheetActionCreatorsDefault.hideActionSheet();
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
     },
     hasIcons: false,
     children: options.map((value) => jsx(TableRadioRow.TableRadioRow, { value: value.value, label: value.label, accessibilityHint: value.descriptiveLabel }, "" + value.value))
   });
-  return jsx(Sheet_BottomSheet.BottomSheet, { contentStyles: closure_4().content, header: jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { title }), children: null });
+  const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
+  return <BottomSheet contentStyles={tmp.content} header={null}>{null}</BottomSheet>;
 };

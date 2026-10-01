@@ -5,29 +5,28 @@
 // Exports: default
 
 // Module 17571 (GuildRoleSubscriptionGroupGatingModal)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl3 from "intl" /* 1115 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14750 */;
 import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 17551 */;
 import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 17561 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import RoleTierEditStore from "RoleTierEditStore" /* 17557 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const constants = fn(14750).GuildRoleSubscriptionsTierScenes;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionsTierScenes;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionGroupGatingModal.tsx");
 
 export default function GuildRoleSubscriptionGroupGatingModal(arg0) {
+  let tmp2;
+  let tmp3;
   [tmp2, tmp3] = RoleTierEditStore.useGroupIsFullGateState();
-  const obj = { title: null, description: null, canProceedToNextStep: true, nextStep: null };
-  const tmp = _slicedToArray(RoleTierEditStore.useGroupIsFullGateState(), 2);
-  const intl = util.intl;
-  obj.title = intl.string(util.t.N38nNP);
-  const intl2 = util.intl;
-  obj.description = intl2.string(util.t.csJWVI);
-  obj.nextStep = constants.GROUP;
+  _slicedToArray(RoleTierEditStore.useGroupIsFullGateState(), 2);
+  GuildRoleSubscriptionTierEditStepDefault;
+  const intl = intl3.intl;
+  const intl2 = intl3.intl;
   const merged = Object.assign(arg0);
-  obj.children = jsx(FormGuildGatingModeSelectorDefault, { isFullServerGating: tmp2, onChange: tmp3 });
-  return jsx(GuildRoleSubscriptionTierEditStepDefault, { title: null, description: null, canProceedToNextStep: true, nextStep: null });
+  return <tmp4 title={intl.string(intl3.t.N38nNP)} description={intl2.string(intl3.t.csJWVI)} canProceedToNextStep nextStep={constants.GROUP}>{jsx(FormGuildGatingModeSelectorDefault, { isFullServerGating: tmp2, onChange: tmp3 })}</tmp4>;
 };

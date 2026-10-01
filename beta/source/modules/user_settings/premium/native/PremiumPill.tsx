@@ -5,30 +5,41 @@
 // Exports: PremiumPill
 
 // Module 6858 (PremiumPill)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import noop from "module_19" /* 19 */;
+import intl5 from "intl" /* 1115 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((arg0) => {
+  let WHITE;
+  let tmp6;
   const tmp3 = nativeDefault;
-  if (arg0) {
-    let WHITE = tmp3.unsafe_rawColors.BLACK;
-    let tmp5 = tmp;
+  const tmp4 = arg0;
+  if (tmp4) {
+    WHITE = tmp3.unsafe_rawColors.BLACK;
+    tmp6 = tmp;
   } else {
     WHITE = tmp3.colors.WHITE;
-    tmp5 = tmp;
+    tmp6 = tmp;
   }
-  const obj = { pillContainer: { backgroundColor: WHITE, borderRadius: tmp5(576).radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingVertical: 1 }, discountPillText: { textAlign: "center" } };
+  const obj = { pillContainer: { backgroundColor: WHITE, borderRadius: tmp6(576).radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingVertical: 1 }, discountPillText: { textAlign: "center" } };
+  ({ backgroundColor: WHITE, borderRadius: tmp6(576).radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingVertical: 1 });
   return obj;
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumPill.tsx");
 
 export const PremiumPill = (discountOffer) => {
+  let Text;
+  let items2;
+  let obj2;
+  let style;
+  let tmp4;
+  let useWhiteBackground;
   discountOffer = discountOffer.discountOffer;
   let flag = discountOffer.shouldShowDiscountUpsell;
   if (flag === undefined) {
@@ -50,16 +61,14 @@ export const PremiumPill = (discountOffer) => {
   }
   let days;
   let premiumTrialOfferPremiumType;
+  let tmp = discountOffer;
+  const tmp2 = flag2;
   discountOffer(flag2[5]);
-  let tmp5 = !useWhiteBackground;
-  if (!useWhiteBackground) {
-    tmp5 = "light" === tmp4;
-  }
   let str2 = "text-overlay-dark";
-  if (tmp5) {
+  if (!useWhiteBackground && "light" === tmp4) {
     str2 = "text-overlay-light";
   }
-  const tmp6 = days(tmp5);
+  const tmp6 = days(!useWhiteBackground && "light" === tmp4);
   const items = [trialOffer];
   const memo = premiumType.useMemo(() => {
     let expiresAt1;
@@ -73,40 +82,48 @@ export const PremiumPill = (discountOffer) => {
     }
     return num;
   }, items);
-  const tmp8Result = flag(flag2[6])(memo, 60000, undefined, isNaN(memo));
+  const tmp8 = flag(tmp2[6]);
+  const tmp8Result = tmp8(memo, 60000, undefined, isNaN(memo));
   days = tmp8Result;
-  const tmp8 = flag(flag2[6]);
-  premiumTrialOfferPremiumType = discountOffer(flag2[7]).usePremiumTrialOfferPremiumType();
+  const tmpResult = tmp(tmp2[7]);
+  premiumTrialOfferPremiumType = tmpResult.usePremiumTrialOfferPremiumType();
   const items1 = [flag2, discountOffer, flag, trialOffer, premiumType, premiumTrialOfferPremiumType, tmp8Result.days, flag3];
   const str3 = premiumType.useMemo(() => {
-    if (flag2) {
-      const intl4 = util.intl;
-      let stringResult = intl4.string(util.t.EyjDRE);
+    let stringResult;
+    const tmp = flag2;
+    if (tmp) {
+      const intl4 = intl5.intl;
+      stringResult = intl4.string(intl5.t.EyjDRE);
     } else {
       if (null != discountOffer) {
-        if (flag) {
-          const intl3 = util.intl;
-          const obj2 = { percent: tmp.discount.amount };
-          stringResult = intl3.formatToPlainString(util.t.iiLbvu, obj2);
+        const tmp4 = flag;
+        if (tmp4) {
+          const intl3 = intl5.intl;
+          const obj2 = { percent: tmp2.discount.amount };
+          stringResult = intl3.formatToPlainString(intl5.t.iiLbvu, obj2);
         }
       }
       stringResult = null;
       if (null != trialOffer) {
         stringResult = null;
         if (premiumType === premiumTrialOfferPremiumType) {
-          if (!flag3) {
+          const tmp29 = flag3;
+          if (!tmp29) {
+            let formatToPlainStringResult;
             const _Number = Number;
+            const tmp10 = days;
             if (!Number.isNaN(days.days)) {
-              const intl = util.intl;
-              const obj = { days: null };
+              const intl = intl5.intl;
+              const formatToPlainString = intl.formatToPlainString;
               const _Math = Math;
-              obj.days = Math.max(tmp9.days, 1);
-              let formatToPlainStringResult = intl.formatToPlainString(util.t["+FgdjP"], obj);
+              const obj = { days: Math.max(tmp10.days, 1) };
+              const prop = intl5.t["+FgdjP"];
+              formatToPlainStringResult = formatToPlainString(prop, obj);
             }
-            tmp9 = days;
+            stringResult = formatToPlainStringResult;
           }
-          const intl2 = util.intl;
-          formatToPlainStringResult = intl2.string(util.t.qVcfa0);
+          const intl2 = intl5.intl;
+          formatToPlainStringResult = intl2.string(intl5.t.qVcfa0);
         }
       }
     }
@@ -114,11 +131,10 @@ export const PremiumPill = (discountOffer) => {
   }, items1);
   let tmp11 = null;
   if (null != str3) {
-    let obj = { style: null, children: null };
-    const items2 = [tmp6.pillContainer, style];
-    obj.style = items2;
-    let obj2 = { variant: "text-xs/bold", color: str2, style: tmp6.discountPillText, children: str3.toUpperCase() };
-    obj.children = flag3(tmp(tmp2[9]).Text, obj2);
+    let obj = { style: items2, children: flag3(Text, obj2) };
+    items2 = [tmp6.pillContainer, style];
+    obj2 = { variant: "text-xs/bold", color: str2, style: tmp6.discountPillText, children: str3.toUpperCase() };
+    Text = tmp(tmp2[9]).Text;
     tmp11 = flag3(trialOffer, obj);
   }
   return tmp11;

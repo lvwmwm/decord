@@ -4,20 +4,22 @@
 
 // Module 4804
 import HapticFeedbackTypes from "HapticFeedbackTypes" /* 4805 */;
-import RNHapticFeedbackDefault from "RNHapticFeedback" /* 4806 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import react_nativeDefault from "react-native" /* 4806 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 
-require = arg1;
-let closure_4 = { [arg1(4805).HapticFeedbackTypes.impactLight]: 0.3, [arg1(4805).HapticFeedbackTypes.impactMedium]: 0.6, [arg1(4805).HapticFeedbackTypes.impactHeavy]: 0.8, [arg1(4805).HapticFeedbackTypes.rigid]: 1, [arg1(4805).HapticFeedbackTypes.soft]: 0.1, [arg1(4805).HapticFeedbackTypes.selection]: 0.3 };
+const require = globalThis.__r;
+let c0, c1;
+
+let closure_4 = { [require(4805).HapticFeedbackTypes.impactLight]: 0.3, [require(4805).HapticFeedbackTypes.impactMedium]: 0.6, [require(4805).HapticFeedbackTypes.impactHeavy]: 0.8, [require(4805).HapticFeedbackTypes.rigid]: 1, [require(4805).HapticFeedbackTypes.soft]: 0.1, [require(4805).HapticFeedbackTypes.selection]: 0.3 };
 let closure_5 = { enableVibrateFallback: false, ignoreAndroidSystemSettings: false };
-let global = true;
+let c6 = true;
 
 export default {
   setEnabled(arg0) {
-    global = arg0;
+    c6 = arg0;
   },
   isEnabled() {
-    return global;
+    return c6;
   },
   trigger() {
     let selection = arg0;
@@ -28,31 +30,37 @@ export default {
     if (arg1 === undefined) {
       obj = {};
     }
-    if (global) {
+    const tmp3 = c6;
+    if (tmp3) {
       try {
-        const obj3 = {};
+        const obj2 = {};
+        const trigger = react_nativeDefault.trigger;
+        react_nativeDefault;
         const merged = Object.assign(closure_5);
         const merged1 = Object.assign(obj);
-        RNHapticFeedbackDefault.trigger(selection, obj3);
-      } catch (tmp12) {
+        trigger(selection, obj2);
+      } catch (tmp14) {
         const _console = console;
-        console.warn("RNReactNativeHapticFeedback: trigger failed \u2013", tmp12);
+        console.warn("RNReactNativeHapticFeedback: trigger failed \u2013", tmp14);
       }
     }
   },
   stop() {
-    if (global) {
+    const tmp = c6;
+    if (tmp) {
       try {
-        RNHapticFeedbackDefault.stop();
-      } catch (tmp4) {
+        const obj = react_nativeDefault;
+        obj.stop();
+      } catch (tmp5) {
         const _console = console;
-        console.warn("RNReactNativeHapticFeedback: stop failed \u2013", tmp4);
+        console.warn("RNReactNativeHapticFeedback: stop failed \u2013", tmp5);
       }
     }
   },
   isSupported() {
     try {
-      return RNHapticFeedbackDefault.isSupported();
+      const obj = react_nativeDefault;
+      return obj.isSupported();
     } catch (err) {
       return false;
     }
@@ -62,22 +70,27 @@ export default {
     if (arg1 === undefined) {
       obj = {};
     }
-    if (global) {
+    const tmp = c6;
+    if (tmp) {
       try {
-        const obj3 = {};
+        const obj2 = {};
+        const triggerPattern = react_nativeDefault.triggerPattern;
+        react_nativeDefault;
         const merged = Object.assign(closure_5);
         const merged1 = Object.assign(obj);
-        RNHapticFeedbackDefault.triggerPattern(arg0, obj3);
-      } catch (tmp11) {
+        triggerPattern(arg0, obj2);
+      } catch (tmp13) {
         const _console = console;
-        console.warn("RNReactNativeHapticFeedback: triggerPattern failed \u2013", tmp11);
+        console.warn("RNReactNativeHapticFeedback: triggerPattern failed \u2013", tmp13);
       }
     }
   },
   playAHAP(arg0) {
-    if (global) {
+    const tmp = c6;
+    if (tmp) {
       try {
-        return RNHapticFeedbackDefault.playAHAP(arg0);
+        const obj = react_nativeDefault;
+        return obj.playAHAP(arg0);
       } catch (err) {
         return Promise.resolve();
       }
@@ -94,7 +107,8 @@ export default {
     if (arg2 === undefined) {
       obj = {};
     }
-    if (global) {
+    const tmp3 = c6;
+    if (tmp3) {
       let num2 = closure_4[impactMedium];
       if (num2 == null) {
         num2 = 0.5;
@@ -102,24 +116,27 @@ export default {
       const _Math = Math;
       const _Math2 = Math;
       try {
-        const obj3 = { time: 0, intensity: tmp7, sharpness: num2 };
-        const items = [obj3];
-        const obj4 = {};
+        const items = [{ time: 0, intensity: tmp7, sharpness: num2 }];
+        const obj2 = { time: 0, intensity: tmp7, sharpness: num2 };
+        const obj3 = {};
+        const triggerPattern = react_nativeDefault.triggerPattern;
+        react_nativeDefault;
         const merged = Object.assign(closure_5);
         const merged1 = Object.assign(obj);
-        RNHapticFeedbackDefault.triggerPattern(items, obj4);
-      } catch (tmp17) {
-        const _console = tmp.console;
-        _console.warn("RNReactNativeHapticFeedback: impact failed \u2013", tmp17);
+        triggerPattern(items, obj3);
+      } catch (tmp18) {
+        const _console = console;
+        console.warn("RNReactNativeHapticFeedback: impact failed \u2013", tmp18);
       }
     }
   },
   getSystemHapticStatus() {
     return (async (arg0, value) => {
+      let obj4;
       if (c0 === 2) {
         c0 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp5 === 3) {
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -129,6 +146,7 @@ export default {
           return { value: "HermesInternal", done: null };
         }
       } else {
+        let c2;
         try {
           c0 = 2;
           if (0 === c1) {
@@ -143,10 +161,11 @@ export default {
               c2 = 1;
               c1 = 2;
               c0 = 1;
-              const obj5 = { value: RNHapticFeedbackDefault.getSystemHapticStatus(), done: false };
+              const obj5 = { value: obj4.getSystemHapticStatus(), done: false };
+              obj4 = react_nativeDefault;
               return obj5;
             }
-          } else if (1 === tmp6) {
+          } else if (1 === tmp3) {
             c2 = 0;
             c0 = 3;
             const obj6 = { value: { vibrationEnabled: false, ringerMode: null }, done: true };
@@ -165,12 +184,12 @@ export default {
             const obj = { value, done: true };
             return obj;
           }
-        } catch (tmp9) {
-          if (tmp3 === c2) {
-            c0 = tmp2;
-            throw tmp9;
+        } catch (tmp6) {
+          if (0 === c2) {
+            c0 = 3;
+            throw tmp6;
           } else {
-            c1 = tmp;
+            c1 = 1;
           }
         }
       }

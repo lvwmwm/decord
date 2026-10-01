@@ -6,143 +6,175 @@
 
 // Module 12253 (HubEmailConnectionGuildSelect)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
+import intl2 from "intl" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
 import GuildIconDefault from "GuildIcon" /* 5896 */;
 import Form from "Form" /* 8053 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import HubConstants from "HubConstants" /* 12233 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c4, c5, closure_2, navigation;
+
+let c10;
+let c9;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let tmp6;
+const native = tmp6(1177);
 class HubEmailConnectionGuildSelectRow {
-  constructor(arg0) {
-    guildInfo = global.guildInfo;
-    ({ signup, loading } = global);
-    tmp = closure_11();
-    obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: null, trailing: null };
-    obj1 = { style: tmp.guildIcon, guild: null };
-    tmp2 = closure_1(closure_2[9]);
-    obj3 = closure_0(closure_2[10]);
-    obj5 = {};
-    merged = Object.assign(guildInfo);
-    obj5.features = [];
-    obj1.guild = obj3.fromGuildBasic(obj5);
-    obj.leading = jsx(tmp2, obj1);
-    obj.trailing = jsx(closure_0(closure_2[8]).FormRow.Arrow, {});
-    return jsx(closure_0(closure_2[8]).FormRow, obj);
+  constructor(guildInfo) {
+    let fromGuildBasic;
+    let loading;
+    let obj2;
+    let obj3;
+    let signup;
+    let tmp2;
+    guildInfo = guildInfo.guildInfo;
+    ({ signup, loading } = guildInfo);
+    const tmp = closure_11();
+    const obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: React4(tmp2, obj2), trailing: React4(Form.FormRow.Arrow, {}) };
+    const FormRow = Form.FormRow;
+    obj2 = { style: tmp.guildIcon, guild: fromGuildBasic(obj3) };
+    obj3 = { features: [] };
+    tmp2 = GuildIconDefault;
+    fromGuildBasic = GuildRecordUtils.fromGuildBasic;
+    GuildRecordUtils;
+    const merged = Object.assign(guildInfo);
+    return React4(FormRow, obj);
   }
 }
 function HubEmailConnectionGuildSelectHeader() {
+  let Text;
+  let intl;
+  let obj2;
   const tmp = closure_11();
-  const obj = { style: tmp.header, children: null };
-  const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t.mOMeiR);
-  obj.children = React7(Text_Text.Text, obj2);
-  return React7(timestampProducer, obj);
+  const obj = { style: tmp.header, children: React4(Text, obj2) };
+  obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t.mOMeiR) };
+  Text = Text_Text.Text;
+  intl = intl2.intl;
+  return React4(metroRequire, obj);
 }
 function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
+  let anyErrorMessage;
+  let errors;
+  let intl;
+  let items;
+  let items1;
+  let loading;
+  let obj3;
+  let tmp5;
   ({ errors, loading } = onFooterButtonPressed);
+  onFooterButtonPressed = onFooterButtonPressed.onFooterButtonPressed;
   const tmp = closure_11();
-  const obj = { style: null, children: null };
-  const items = [tmp.footerSafeAreaContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
-  obj.style = items;
-  const obj3 = { style: tmp.footerContainer, children: null };
-  const obj4 = { variant: "secondary", loading, disabled: loading, grow: true, text: null, onPress: null };
-  const intl = util.intl;
-  obj4.text = intl.string(util.t.G3Zk7V);
-  obj4.onPress = onFooterButtonPressed.onFooterButtonPressed;
-  const items1 = [React7(components_Button_Button.Button, obj4), ];
+  const obj = { style: items, children: tmp5(metroRequire, obj3) };
+  items = [tmp.footerSafeAreaContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
+  obj3 = { style: tmp.footerContainer, children: items1 };
+  const obj4 = { variant: "secondary", loading, disabled: loading, grow: true, text: intl.string(intl2.t.G3Zk7V), onPress: onFooterButtonPressed };
+  ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
+  const Button = components_Button_Button.Button;
+  intl = intl2.intl;
+  items1 = [React4(Button, obj4), ];
   let tmp3Result = null != errors;
+  tmp5 = authStore;
   if (tmp3Result) {
-    const obj5 = { style: tmp.error, children: null };
-    let anyErrorMessage;
+    const obj5 = { style: tmp.error, children: anyErrorMessage };
+    anyErrorMessage = undefined;
+    const LegacyText = native.LegacyText;
     if (errors != null) {
       anyErrorMessage = errors.getAnyErrorMessage();
     }
-    obj5.children = anyErrorMessage;
-    tmp3Result = tmp3(native.LegacyText, obj5);
+    tmp3Result = tmp3(LegacyText, obj5);
   }
   items1[1] = tmp3Result;
-  obj3.children = items1;
-  obj.children = closure_1_10(timestampProducer, obj3);
-  return React7(timestampProducer, obj);
+  return React4(metroRequire, obj);
 }
-get_ActivityIndicator = fn(17);
-({ View: metroRequire, FlatList: closure_7 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(12233).HubEmailConnectionSteps;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { rowContainer: { marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL }, guildIcon: null, separator: null, header: null, title: null, footerSafeAreaContainer: null, footerContainer: null, error: null };
-let obj3 = { marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
-obj2.guildIcon = { borderRadius: nativeDefault.radii.sm };
-obj2.separator = { height: 8 };
-obj2.header = { padding: 16, alignItems: "center", justifyContent: "center" };
-obj2.title = { marginBottom: 8, textAlign: "center" };
-let obj4 = { borderRadius: nativeDefault.radii.sm };
-obj2.footerSafeAreaContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute", bottom: 0, width: "100%" };
-obj2.footerContainer = { paddingHorizontal: 16, height: 110, justifyContent: "center", alignItems: "center" };
-let obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute", bottom: 0, width: "100%" };
-obj2.error = { color: nativeDefault.unsafe_rawColors.RED_400, alignSelf: "center", fontSize: 14, marginVertical: 8 };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
+let react = react_mod;
+({ View: metroRequire, FlatList: metroImportDefault } = react_native);
+const HubEmailConnectionSteps = HubConstants.HubEmailConnectionSteps;
+({ jsx: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { rowContainer: obj2, guildIcon: obj3, separator: { height: 8 }, header: { padding: 16, alignItems: "center", justifyContent: "center" }, title: { marginBottom: 8, textAlign: "center" }, footerSafeAreaContainer: obj4, footerContainer: { paddingHorizontal: 16, height: 110, justifyContent: "center", alignItems: "center" }, error: obj5 };
+obj2 = { marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
+createStyles = createStyles.createStyles;
+obj3 = { borderRadius: nativeDefault.radii.sm };
+obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute", bottom: 0, width: "100%" };
+obj5 = { color: nativeDefault.unsafe_rawColors.RED_400, alignSelf: "center", fontSize: 14, marginVertical: 8 };
+const unpackModuleId = createStyles(obj);
 const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionGuildSelect.tsx");
 
 export default function HubEmailConnectionGuildSelect(onClose) {
+  let closure_5;
+  let items2;
+  let obj4;
   onClose = onClose.onClose;
   let email = onClose.email;
   const guildsInfo = onClose.guildsInfo;
-  noop = undefined;
-  closure_3 = closure_11();
-  const navigation = onClose(guildsInfo[16]).useNavigation();
+  react = undefined;
+  let closure_3 = closure_11();
+  let obj = onClose(guildsInfo[16]);
+  navigation = obj.useNavigation();
   const items = [email, guildsInfo, navigation, onClose];
-  const layoutEffect = noop.useLayoutEffect(() => {
-    navigation.setOptions({
+  const layoutEffect = react.useLayoutEffect(() => {
+    let obj = {
       headerRight() {
-        const obj = {
+        let intl;
+        let obj = {
           IconComponent: onClose(guildsInfo[18]).MagnifyingGlassIcon,
           onPress() {
-            closure_1_4.push(constants.SELECT_SCHOOL_SEARCH, { email, onClose, guildsInfo });
+            const obj = { email, onClose, guildsInfo };
+            closure_1_4.push(constants.SELECT_SCHOOL_SEARCH, obj);
           },
-          accessibilityLabel: null
+          accessibilityLabel: intl.string(onClose(guildsInfo[12]).t["5h0QOP"])
         };
-        const intl = onClose(guildsInfo[12]).intl;
-        obj.accessibilityLabel = intl.string(onClose(guildsInfo[12]).t["5h0QOP"]);
-        return closure_2_9(onClose(guildsInfo[17]).HeaderActionButton, obj);
+        const HeaderActionButton = onClose(guildsInfo[17]).HeaderActionButton;
+        intl = onClose(guildsInfo[12]).intl;
+        return closure_2_9(HeaderActionButton, obj);
       }
-    });
+    };
+    navigation.setOptions(obj);
   }, items);
   const items1 = [email, navigation, onClose];
-  const callback = noop.useCallback(() => {
-    navigation.push(HubEmailConnectionSteps.SUBMIT_SCHOOL, { email, onClose });
+  const callback = react.useCallback(() => {
+    const obj = { email, onClose };
+    navigation.push(HubEmailConnectionSteps.SUBMIT_SCHOOL, obj);
   }, items1);
-  const tmp4 = navigation(noop.useState(null), 2);
-  noop = tmp4[1];
-  const tmp5 = navigation(noop.useState(false), 2);
-  const loading = tmp5[0];
-  closure_7 = tmp5[1];
-  let obj2 = { children: null };
-  const obj3 = {
+  const bottom = email(guildsInfo[13])().bottom;
+  const tmp4 = navigation(react.useState(null), 2);
+  react = tmp4[1];
+  const first = tmp4[0];
+  const tmp6 = navigation(react.useState(false), 2);
+  const first1 = tmp6[0];
+  let closure_7 = tmp6[1];
+  let obj2 = { children: items2 };
+  let obj3 = {
     data: guildsInfo,
     ListHeaderComponent() {
       return closure_1_9(HubEmailConnectionGuildSelectHeader, {});
     },
     renderItem(item) {
       item = item.item;
-      const id = item.id;
-      return closure_1_9(HubEmailConnectionGuildSelectRow, {
+      let obj = {
         guildInfo: item,
         signup: closure_3(function*(arg0, value) {
-          if (v3 === 2) {
-            v3 = 3;
+          let obj3;
+          let v3;
+          if (c5 === 2) {
+            c5 = 3;
             throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp7 === 3) {
+          } else if (tmp3 === 3) {
             if (arg0 === 1) {
               throw value;
             } else if (arg0 === 2) {
@@ -152,79 +184,87 @@ export default function HubEmailConnectionGuildSelect(onClose) {
               return { value: "HermesInternal", done: null };
             }
           } else {
+            let c3;
             try {
-              v3 = 2;
+              c5 = 2;
               if (0 === c4) {
                 if (arg0 === 1) {
-                  v3 = 3;
+                  c5 = 3;
                   throw value;
                 } else if (arg0 === 2) {
-                  v3 = 3;
+                  c5 = 3;
                   const obj4 = { value, done: true };
                   return obj4;
                 } else {
-                  email = tmp4;
-                  onClose = tmp8;
-                  v3(null);
+                  email = tmp;
+                  onClose = tmp4;
+                  c5(null);
                   closure_1_7(true);
                   c3 = 2;
                   c4 = 3;
-                  v3 = 1;
-                  const obj5 = { value: email(12246).sendVerificationEmail(email, true, id), done: false };
+                  c5 = 1;
+                  const obj5 = { value: obj3.sendVerificationEmail(email, true, id), done: false };
+                  obj3 = email(guildsInfo[19]);
                   return obj5;
                 }
-              } else if (1 === tmp8) {
+              } else if (1 === c4) {
                 c3 = 0;
                 closure_1_7(false);
                 throw closure_2;
               } else {
-                if (2 === tmp8) {
+                if (2 === c4) {
                   c3 = 1;
-                  closure_128_0 = closure_2;
-                  const aPIError = new id(4735).APIError(closure_128_0);
-                  v3(aPIError);
+                  onClose = closure_2;
+                  const self = this;
+                  const self2 = this;
+                  const aPIError = new id(guildsInfo[20]).APIError(onClose);
+                  c5(aPIError);
+                } else if (arg0 === 1) {
+                  c5 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
                   c3 = 0;
                   closure_1_7(false);
-                  v3 = 3;
-                } else if (arg0 === 1) {
-                  v3 = 3;
-                  throw value;
-                } else if (arg0 !== 2) {
+                  c5 = 3;
+                  const obj6 = { value, done: true };
+                  return obj6;
+                } else {
                   const obj = { email, onClose, guildId: closure_129_0 };
                   c4.push(constants.VERIFY_PIN, obj);
                   c3 = 1;
                 }
                 c3 = 0;
                 closure_1_7(false);
-                v3 = 3;
-                const obj6 = { value, done: true };
-                return obj6;
+                c5 = 3;
+                return { value: "HermesInternal", done: null };
               }
-            } catch (tmp48) {
-              closure_2 = tmp48;
-              if (tmp5 === c3) {
-                v3 = tmp3;
-                throw tmp48;
-              } else if (tmp2 === tmp50) {
-                c4 = tmp2;
+            } catch (tmp42) {
+              closure_2 = tmp42;
+              if (0 === c3) {
+                c5 = 3;
+                throw tmp42;
+              } else if (1 === tmp44) {
+                c4 = 1;
               } else {
-                c4 = tmp;
+                c4 = 2;
               }
             }
           }
         }),
-        loading
-      });
+        loading: first1
+      };
+      const id = item.id;
+      return closure_1_9(HubEmailConnectionGuildSelectRow, obj);
     },
     ItemSeparatorComponent() {
-      return React7(timestampProducer, { style: closure_3.separator });
+      const obj = { style: closure_3.separator };
+      return React4(metroRequire, obj);
     },
-    contentContainerStyle: null
+    contentContainerStyle: obj4
   };
-  let obj = onClose(guildsInfo[16]);
-  obj3.contentContainerStyle = { paddingBottom: 110 + email(guildsInfo[13])().bottom + 8 };
-  const items2 = [closure_9(closure_7, obj3), closure_9(HubEmailConnectionGuildSelectFooter, { errors: tmp4[0], loading, onFooterButtonPressed: callback })];
-  obj2.children = items2;
-  return closure_10(onClose(guildsInfo[21]).HubEmailConnectionScreen, obj2);
+  obj4 = { paddingBottom: 110 + bottom + 8 };
+  const HubEmailConnectionScreen = onClose(guildsInfo[21]).HubEmailConnectionScreen;
+  items2 = [closure_9(closure_7, obj3), closure_9(HubEmailConnectionGuildSelectFooter, { errors: first, loading: first1, onFooterButtonPressed: callback })];
+  return closure_10(HubEmailConnectionScreen, obj2);
 };
 export { HubEmailConnectionGuildSelectRow };

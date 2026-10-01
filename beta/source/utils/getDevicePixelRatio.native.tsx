@@ -1,14 +1,14 @@
 // Module ID: 1880
 // Function ID: 1881
-// Name: getDevicePixelRatio
+// Name: react-native
 // Dependencies: [17, 2]
 // Exports: default
 
-// Module 1880 (getDevicePixelRatio)
-import _mod17 from "module_17" /* 17 */;
+// Module 1880 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const PixelRatio = _mod17.PixelRatio;
+const PixelRatio = react_native.PixelRatio;
 const result = size.fileFinishedImporting("utils/getDevicePixelRatio.native.tsx");
 
 export default function getDevicePixelRatio() {

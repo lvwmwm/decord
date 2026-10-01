@@ -4,14 +4,15 @@
 // Dependencies: [6284, 6285, 6272, 6338]
 
 // Module 6337 (JSFPSMonitor)
-import _modDef6285 from "module_6285" /* 6285 */;
-import _classCallCheck from "module_6284" /* 6284 */;
+import ErrorMessages from "ErrorMessages" /* 6272 */;
+import _createClassDefault from "_createClass" /* 6285 */;
+import roundToDecimalPlaces from "roundToDecimalPlaces" /* 6338 */;
+import _classCallCheck from "_classCallCheck" /* 6284 */;
 
-const JSFPSMonitor = arg1;
 class JSFPSMonitor {
   constructor() {
-    self = this;
-    tmp = c2(this, JSFPSMonitor);
+    const self = this;
+    _classCallCheck(this, JSFPSMonitor);
     this.startTime = 0;
     this.frameCount = 0;
     this.timeWindow = { frameCount: 0, startTime: 0 };
@@ -33,16 +34,15 @@ class JSFPSMonitor {
       if (1 <= result1) {
         const result2 = obj.timeWindow.frameCount / result1;
         const _Math = Math;
-        obj.minFPS = Math.min(obj.minFPS, result2);
+        self.minFPS = Math.min(self.minFPS, result2);
         const _Math2 = Math;
-        obj.maxFPS = Math.max(obj.maxFPS, result2);
-        obj.timeWindow.frameCount = 0;
+        self.maxFPS = Math.max(self.maxFPS, result2);
+        self.timeWindow.frameCount = 0;
         const _Date = Date;
-        obj.timeWindow.startTime = Date.now();
+        self.timeWindow.startTime = Date.now();
       }
       self.measureLoop();
     };
-    return;
   }
 }
 const entry = {
@@ -59,7 +59,9 @@ const items = [
       const self = this;
       if (0 !== this.startTime) {
         const _Error = Error;
-        const error = new Error(JSFPSMonitor(6272).ErrorMessages.fpsMonitorAlreadyRunning);
+        const self2 = this;
+        const self3 = this;
+        const error = new Error(ErrorMessages.ErrorMessages.fpsMonitorAlreadyRunning);
         throw error;
       } else {
         const _Date = Date;
@@ -73,19 +75,22 @@ const items = [
   {
     key: "stopAndGetData",
     value: function stopAndGetData() {
+      let obj2;
+      let obj3;
+      let obj4;
       const self = this;
       cancelAnimationFrame(this.clearAnimationNumber);
       if (this.minFPS === Number.MAX_SAFE_INTEGER) {
         ({ averageFPS: self.minFPS, averageFPS: self.maxFPS } = self);
       }
-      const obj = { minFPS: JSFPSMonitor(6338).roundToDecimalPlaces(self.minFPS, 1), maxFPS: null, averageFPS: null };
-      const obj2 = JSFPSMonitor(6338);
-      obj.maxFPS = JSFPSMonitor(6338).roundToDecimalPlaces(self.maxFPS, 1);
-      const obj3 = JSFPSMonitor(6338);
-      obj.averageFPS = JSFPSMonitor(6338).roundToDecimalPlaces(self.averageFPS, 1);
+      const obj = { minFPS: obj2.roundToDecimalPlaces(self.minFPS, 1), maxFPS: obj3.roundToDecimalPlaces(self.maxFPS, 1), averageFPS: obj4.roundToDecimalPlaces(self.averageFPS, 1) };
+      obj2 = roundToDecimalPlaces;
+      obj3 = roundToDecimalPlaces;
+      obj4 = roundToDecimalPlaces;
       return obj;
     }
   }
 ];
+const JSFPSMonitor_export = _createClassDefault(JSFPSMonitor, items);
 
-export const JSFPSMonitor = _modDef6285(JSFPSMonitor, items);
+export { JSFPSMonitor_export as JSFPSMonitor };

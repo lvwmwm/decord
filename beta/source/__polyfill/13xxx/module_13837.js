@@ -10,7 +10,7 @@ export default (arg0) => {
   let num = 0;
   {
     num = 0;
-    if (0 !== tmp) {
+    if (0 !== +arg0) {
       num = _mod13838(tmp);
     }
   }

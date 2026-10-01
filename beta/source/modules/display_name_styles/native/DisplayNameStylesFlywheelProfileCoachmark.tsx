@@ -5,38 +5,50 @@
 // Exports: default
 
 // Module 16621 (DisplayNameStylesFlywheelProfileCoachmark)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import DisplayNameLockeAbstractUI from "DisplayNameLockeAbstractUI" /* 16622 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap;
+
 function CoachmarkImage() {
   return <View style={closure_8().coachmarkImageContainer}>{jsx(DisplayNameLockeAbstractUI.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" })}</View>;
 }
-const View = fn(17).View;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let react = react_mod;
+const View = react_native.View;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" } });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesFlywheelProfileCoachmark.tsx");
 
 export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
+  let currentUser;
+  let description;
+  let string2Result;
+  let stringResult;
+  let title;
   visible = visible.visible;
   const markAsDismissed = visible.markAsDismissed;
   dependencyMap = undefined;
-  noop = undefined;
+  react = undefined;
   let onDismiss;
+  const targetRef = visible.targetRef;
   const items = [UserStore];
-  const stateFromStores = visible(504).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = visible(504);
-  const tmp4 = markAsDismissed;
-  const result = markAsDismissed(4488).canUsePremiumProfileCustomization(stateFromStores);
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj2 = markAsDismissed(4488);
+  const result = obj2.canUsePremiumProfileCustomization(stateFromStores);
   const intl = visible(1115).intl;
   const string = intl.string;
   const tmp6 = markAsDismissed(2877);
+  const tmp4 = markAsDismissed;
   if (result) {
-    let stringResult = string(tmp6.h6sykk);
+    stringResult = string(tmp6.h6sykk);
   } else {
     stringResult = string(tmp6.M5amXH);
   }
@@ -45,17 +57,17 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   const string2 = intl2.string;
   const tmp4Result = tmp4(2877);
   if (result) {
-    let string2Result = string2(tmp4Result.TyUdka);
+    string2Result = string2(tmp4Result.TyUdka);
   } else {
     string2Result = string2(tmp4Result.dluV0R);
   }
-  noop = string2Result;
+  react = string2Result;
   const items1 = [markAsDismissed];
-  onDismiss = noop.useCallback(() => {
+  onDismiss = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items1);
   const items2 = [stringResult, string2Result, visible, onDismiss];
-  const memo = noop.useMemo(() => ({
+  const memo = react.useMemo(() => ({
     title,
     description,
     visible,
@@ -65,7 +77,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
       return closure_1_7(closure_1_9, {});
     }
   }), items2);
-  const obj2 = markAsDismissed(4488);
-  const coachmark = visible(10589).useCoachmark(visible.targetRef, memo);
+  const tmpResult = visible(10589);
+  const coachmark = tmpResult.useCoachmark(targetRef, memo);
   return null;
 };

@@ -5,11 +5,15 @@
 // Exports: PersonalWidgetExpandCollapseProvider, usePersonalWidgetExpandCollapse, usePersonalWidgetFieldClamp
 
 // Module 8119 (PersonalWidgetExpandCollapseContext)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const redux = noop.createContext({
+let set;
+
+const jsx = Fragment.jsx;
+let obj = {
   isAnyFieldClipped: false,
   isExpanded: false,
   setAnyFieldClipped() {
@@ -18,58 +22,70 @@ const redux = noop.createContext({
   setIsExpanded() {
 
   }
-});
-const size = fn(2);
+};
+let redux = react.createContext(obj);
 const result = size.fileFinishedImporting("modules/user_profile/native/PersonalWidgetExpandCollapseContext.tsx");
 
 export const PersonalWidgetExpandCollapseProvider = function PersonalWidgetExpandCollapseProvider(children) {
-  isExpanded = undefined;
-  setIsExpanded = undefined;
+  let closure_1;
+  let first;
+  let first1;
+  first = undefined;
+  closure_1 = undefined;
   first1 = undefined;
   redux = undefined;
-  [isExpanded, setIsExpanded] = noop.useState(false);
-  [first1, redux] = noop.useState(false);
-  const first2 = _slicedToArray(noop.useState(() => new Set()), 1)[0];
+  children = children.children;
+  [first, closure_1] = react.useState(false);
+  [first1, redux] = react.useState(false);
+  const first2 = _slicedToArray(react.useState(() => {
+    set = new Set();
+    return set;
+  }), 1)[0];
   const items = [first2];
-  const setAnyFieldClipped = noop.useCallback((arg0, arg1) => {
-    if (arg1) {
-      obj.add(arg0);
-      let tmp2 = obj;
+  const callback = react.useCallback((arg0, arg1) => {
+    let tmp3;
+    const tmp = arg1;
+    if (tmp) {
+      first2.add(arg0);
+      tmp3 = obj;
     } else {
-      obj.delete(arg0);
-      tmp2 = obj;
+      first2.delete(arg0);
+      tmp3 = obj;
     }
-    closure_3(tmp2.size > 0);
+    closure_3(tmp3.size > 0);
   }, items);
-  const items1 = [isExpanded, first1, setAnyFieldClipped];
-  return <redux.Provider value={noop.useMemo(() => ({ isExpanded, setIsExpanded, isAnyFieldClipped: first1, setAnyFieldClipped }), items1)}>{arg0.children}</redux.Provider>;
+  const items1 = [first, first1, callback];
+  return <redux.Provider value={react.useMemo(() => ({ isExpanded, setIsExpanded, isAnyFieldClipped: first1, setAnyFieldClipped }), items1)}>{children}</redux.Provider>;
 };
 export const usePersonalWidgetExpandCollapse = function usePersonalWidgetExpandCollapse() {
-  return noop.useContext(closure_3);
+  return react.useContext(redux);
 };
 export const usePersonalWidgetFieldClamp = function usePersonalWidgetFieldClamp(maxLines, children) {
-  closure_0 = maxLines;
-  closure_1 = children;
-  const context = noop.useContext(closure_3);
+  let closure_5;
+  let first;
+  let tmp7;
+  let closure_0 = maxLines;
+  let closure_1 = children;
+  const context = react.useContext(redux);
   const setAnyFieldClipped = context.setAnyFieldClipped;
-  const id = noop.useId();
-  [first, closure_5] = noop.useState(null);
+  const isExpanded = context.isExpanded;
+  const id = react.useId();
+  [first, closure_5] = react.useState(null);
   const items = [first, children, id, maxLines, setAnyFieldClipped];
   const items1 = [id, setAnyFieldClipped];
-  const callback = noop.useCallback((nativeEvent) => {
+  const callback = react.useCallback((nativeEvent) => {
     if (first !== closure_1) {
       closure_5(tmp);
       setAnyFieldClipped(id, nativeEvent.nativeEvent.lines.length > closure_0);
     }
   }, items);
-  const effect = noop.useEffect(() => () => setAnyFieldClipped(id, false), items1);
-  const obj = { onTextLayout: callback, lineClamp: null };
-  let tmp7;
+  const effect = react.useEffect(() => () => setAnyFieldClipped(id, false), items1);
+  const obj = { onTextLayout: callback, lineClamp: tmp7 };
+  tmp7 = undefined;
   if (first === children) {
-    if (!context.isExpanded) {
+    if (!isExpanded) {
       tmp7 = maxLines;
     }
   }
-  obj.lineClamp = tmp7;
   return obj;
 };

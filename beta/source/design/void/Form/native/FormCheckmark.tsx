@@ -5,20 +5,20 @@
 // Exports: default
 
 // Module 6568 (FormCheckmark)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 6554 */;
-import noop from "module_19" /* 19 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 6554 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/void/Form/native/FormCheckmark.tsx");
 
 export default function RowCheckmark(selected) {
   let tmp = null;
   if (selected.selected) {
-    const obj = { color: nativeDefault.unsafe_rawColors.BRAND_500 };
-    tmp = jsx(CheckmarkSmallIcon.CheckmarkSmallIcon, { color: nativeDefault.unsafe_rawColors.BRAND_500 });
+    const CheckmarkSmallIcon = CheckmarkSmallIcon2.CheckmarkSmallIcon;
+    tmp = <CheckmarkSmallIcon color={nativeDefault.unsafe_rawColors.BRAND_500} />;
   }
   return tmp;
 };

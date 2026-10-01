@@ -6,27 +6,31 @@
 
 // Module 1117 (intl/util)
 import _mod1154 from "module_1154" /* 1154 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, code;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("intl/util.tsx");
 
 export const getAvailableLocales = function getAvailableLocales() {
+  let closure_0;
   _require = require("module_1118").default;
-  const found = require("module_1176").filter((enabled) => enabled.enabled);
+  const arr = require("module_1176");
+  const found = arr.filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => {
+    let obj2;
     code = code.code;
-    const obj = { value: code, name: code.name, localizedName: null };
-    const obj2 = _mod1154;
-    obj.localizedName = closure_0[obj2.runtimeHashMessageKey(obj2, code)];
+    const obj = { value: code, name: code.name, localizedName: closure_0[obj2.runtimeHashMessageKey(obj2, code)] };
+    obj2 = _mod1154;
     return obj;
   });
   return mapped.sort((name, name2) => {
-    const formatted = name.name.toLowerCase();
-    const formatted1 = name2.name.toLowerCase();
+    const str = name.name;
+    const str2 = name2.name;
+    const formatted = str.toLowerCase();
+    const formatted1 = str2.toLowerCase();
     let num = -1;
     if (formatted >= formatted1) {
       let num2 = 0;
@@ -42,15 +46,17 @@ export const getLanguages = function getLanguages() {
   return require("module_1176");
 };
 export const getNormalizedLocale = function getNormalizedLocale(Language, arg1) {
-  const found = require("module_1176").filter((enabled) => enabled.enabled);
+  const arr = require("module_1176");
+  const found = arr.filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => code.code);
   if (mapped.includes(Language)) {
     return Language;
   } else {
+    let found2;
     const parts = Language.split("-");
     const first = parts[0];
     if (mapped.includes(parts[0])) {
-      let found2 = first;
+      found2 = first;
     } else {
       if ("zh" === first) {
         if (parts.length > 1) {
@@ -70,10 +76,9 @@ export const getNormalizedLocale = function getNormalizedLocale(Language, arg1) 
     }
     return found2;
   }
-  const arr = require("module_1176");
 };
 export const useSyncMessages = function useSyncMessages(arg0, arg1) {
-  closure_0 = arg0;
-  const currentLocale = arg1;
-  const syncExternalStore = noop.useSyncExternalStore((arg0) => closure_0.onChange(arg0), () => closure_0.isLocaleLoaded(currentLocale.currentLocale));
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const syncExternalStore = react.useSyncExternalStore((arg0) => closure_0.onChange(arg0), () => closure_0.isLocaleLoaded(currentLocale.currentLocale));
 };

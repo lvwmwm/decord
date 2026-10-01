@@ -7,38 +7,30 @@
 // Module 8319 (TestModeUtils)
 import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8320 */;
 import TestModeStore from "TestModeStore" /* 8322 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/game_store/TestModeUtils.tsx");
 
 export const isTestModeForApplication = function isTestModeForApplication(applicationId) {
-  let result = TestModeStore.inTestModeForApplication(applicationId);
-  if (!result) {
-    result = DeveloperActivityShelfStore.inDevModeForApplication(applicationId);
-  }
+  const result = TestModeStore.inTestModeForApplication(applicationId) || DeveloperActivityShelfStore.inDevModeForApplication(applicationId);
   return result;
 };
 export const isAnyApplicationInTestMode = function isAnyApplicationInTestMode() {
-  let isEnabled = null != TestModeStore.getTestModeApplicationId();
-  if (!isEnabled) {
-    isEnabled = DeveloperActivityShelfStore.getIsEnabled();
-  }
+  const isEnabled = null != TestModeStore.getTestModeApplicationId() || DeveloperActivityShelfStore.getIsEnabled();
   return isEnabled;
 };
 export const useIsTestModeForApplication = function useIsTestModeForApplication(id) {
   _require = id;
   const items = [TestModeStore, DeveloperActivityShelfStore];
   const items1 = [id];
-  return require("initialize").useStateFromStores(items, () => {
-    let tmp2 = null != closure_0;
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    let tmp2 = null != id;
     if (tmp2) {
-      let result = TestModeStore.inTestModeForApplication(tmp);
-      if (!result) {
-        result = DeveloperActivityShelfStore.inDevModeForApplication(tmp);
-      }
+      const result = TestModeStore.inTestModeForApplication(tmp) || DeveloperActivityShelfStore.inDevModeForApplication(tmp);
       tmp2 = result;
     }
     return tmp2;

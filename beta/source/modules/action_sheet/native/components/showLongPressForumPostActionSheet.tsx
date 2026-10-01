@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 9681 (showLongPressForumPostActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import size from "module_2" /* 2 */;
 
@@ -16,5 +16,7 @@ export default function showLongPressForumPostActionSheet(thread, parentChannel)
   if (arg2 === undefined) {
     hideActionSheet = ActionSheetActionCreatorsDefault.hideActionSheet;
   }
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9682, dependencyMap.paths), "ForumPostLongPressActionSheet", { thread, parentChannel, onClose: hideActionSheet });
+  const obj = ActionSheetActionCreatorsDefault;
+  const obj2 = { thread, parentChannel, onClose: hideActionSheet };
+  obj.openLazy(asyncRequire(9682, dependencyMap.paths), "ForumPostLongPressActionSheet", obj2);
 };

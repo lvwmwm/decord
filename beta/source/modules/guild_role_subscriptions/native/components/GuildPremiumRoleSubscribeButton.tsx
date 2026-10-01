@@ -5,22 +5,21 @@
 // Exports: GuildPremiumRoleSubscribeButton
 
 // Module 17594 (GuildPremiumRoleSubscribeButton)
-import util from "util" /* 1115 */;
-import CreatorRevenueButton from "CreatorRevenueButton" /* 9760 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9760 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ crButton: { marginVertical: 16 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildPremiumRoleSubscribeButton.tsx");
 
 export const GuildPremiumRoleSubscribeButton = function GuildPremiumRoleSubscribeButton(onPress) {
-  const obj = { text: null, onPress: null, style: null, disabled: true };
-  const intl = util.intl;
-  obj.text = intl.string(util.t.BEeXib);
-  obj.onPress = onPress.onPress;
-  obj.style = closure_3().crButton;
-  return jsx(CreatorRevenueButton.CreatorRevenueButton, { text: null, onPress: null, style: null, disabled: true });
+  onPress = onPress.onPress;
+  const tmp = closure_3();
+  const CreatorRevenueButton = CreatorRevenueButton2.CreatorRevenueButton;
+  const intl = intl2.intl;
+  return <CreatorRevenueButton text={intl.string(intl2.t.BEeXib)} onPress={onPress} style={tmp.crButton} disabled />;
 };

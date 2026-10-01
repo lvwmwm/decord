@@ -15,7 +15,7 @@ export default function getIFrameAllowAttributes(allowMotionSensors) {
   let obj = closure_0;
   if (true === allowMotionSensors.allowMotionSensors) {
     const items = [];
-    HermesBuiltin.arraySpread(closure_1, HermesBuiltin.arraySpread(tmp, 0));
+    HermesBuiltin.arraySpread(items, closure_1, HermesBuiltin.arraySpread(items, closure_0, 0));
     obj = items;
   }
   return obj.join("; ");

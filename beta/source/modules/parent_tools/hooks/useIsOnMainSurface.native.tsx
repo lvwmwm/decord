@@ -6,12 +6,17 @@
 
 // Module 16822 (useIsOnMainSurface)
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function getIsOnMainSurface() {
-  const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+  let index;
+  let index2;
+  let routes;
+  let routes2;
+  const obj = RootNavigationRef;
+  const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const rootState = rootNavigationRef.getRootState();
@@ -43,10 +48,7 @@ function getIsOnMainSurface() {
             tmp4 = routes2[index2];
           }
         }
-        let hasItem = null != tmp4;
-        if (hasItem) {
-          hasItem = set.has(tmp4.name);
-        }
+        const hasItem = null != tmp4 && set.has(tmp4.name);
         return hasItem;
       }
     }
@@ -54,16 +56,18 @@ function getIsOnMainSurface() {
   return false;
 }
 const set = new Set(["tabs", "channel"]);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useIsOnMainSurface.native.tsx");
 
 export const useIsOnMainSurface = function useIsOnMainSurface() {
-  [tmp2, require] = noop.useState(getIsOnMainSurface);
-  const effect = noop.useEffect(() => {
+  let tmp2;
+  [tmp2, require] = _slicedToArray(react.useState(getIsOnMainSurface), 2);
+  const tmp = _slicedToArray(react.useState(getIsOnMainSurface), 2);
+  const effect = react.useEffect(() => {
     function handleNavigationChange() {
       return rootNavigationRef(getIsOnMainSurface());
     }
-    const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+    const obj = RootNavigationRef;
+    const rootNavigationRef = obj.getRootNavigationRef();
     if (null != rootNavigationRef) {
       rootNavigationRef(getIsOnMainSurface());
       rootNavigationRef.addListener("state", handleNavigationChange);

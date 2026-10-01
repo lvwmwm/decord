@@ -4,18 +4,19 @@
 // Dependencies: [626, 17493]
 
 // Module 17492 (deburr)
-import _mod626 from "module_626" /* 626 */;
-import basePropertyOf from "basePropertyOf" /* 17493 */;
+import toString from "toString" /* 626 */;
 
+let tmp;
+const basePropertyOf = tmp(17493);
 const re2 = /[\xc0-\xd6\xd8-\xf6\xf8-\xff\u0100-\u017f]/g;
 let closure_3 = RegExp("[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]", "g");
 
 export default function deburr(arg0) {
-  const str = _mod626(arg0);
+  const str = toString(arg0);
   let replaced = str;
-  if (str) {
-    replaced = str.replace(re2, basePropertyOf).replace(closure_3, "");
+  if (replaced) {
     const str2 = str.replace(re2, basePropertyOf);
+    replaced = str2.replace(closure_3, "");
   }
   return replaced;
 };

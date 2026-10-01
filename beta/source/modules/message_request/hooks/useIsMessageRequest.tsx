@@ -7,30 +7,30 @@
 // Module 10908 (useIsMessageRequest)
 import MessageRequestStore from "MessageRequestStore" /* 6640 */;
 import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6641 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/message_request/hooks/useIsMessageRequest.tsx");
 
 export const useIsMessageRequest = function useIsMessageRequest(id) {
   _require = id;
   const items = [MessageRequestStore];
   const items1 = [id];
-  return require("initialize").useStateFromStores(items, () => MessageRequestStore.isMessageRequest(closure_0), items1);
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => MessageRequestStore.isMessageRequest(id), items1);
 };
 export const useIsEitherTypeOfMessageRequest = function useIsEitherTypeOfMessageRequest(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [MessageRequestStore, SpamMessageRequestStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
-      let isMessageRequestResult = MessageRequestStore.isMessageRequest(tmp);
-      if (!isMessageRequestResult) {
-        isMessageRequestResult = SpamMessageRequestStore.isSpam(tmp);
-      }
-      tmp2 = isMessageRequestResult;
+      tmp2 = MessageRequestStore.isMessageRequest(tmp) || SpamMessageRequestStore.isSpam(tmp);
+      const isMessageRequestResult = MessageRequestStore.isMessageRequest(tmp) || SpamMessageRequestStore.isSpam(tmp);
     }
     return tmp2;
   });

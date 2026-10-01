@@ -7,28 +7,33 @@
 // Module 16880 (useInviteMembersCallback)
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
 import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11085 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let hasOwnProperty;
+let metroRequire;
 ({ AnalyticsPages: hasOwnProperty, InstantInviteSources: metroRequire } = Constants);
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useInviteMembersCallback.tsx");
 
 export const useInviteMembersCallback = function useInviteMembersCallback(channelId) {
-  closure_0 = channelId;
+  let closure_0 = channelId;
   const items = [channelId];
-  return noop.useCallback(() => {
-    let id = ChannelStore.getChannel(closure_0);
-    if (null == id) {
-      return null;
-    } else if (id.isPrivate()) {
-      id = id.id;
-      let result = openGroupDMAddMembersDefault(id, constants.CHANNEL_CALL);
-    } else {
-      const obj2 = { source: constants2.VOICE_CHANNEL };
-      result = instant_invite_InstantInviteUtils.showInstantInviteActionSheet(id, obj2);
+  return react.useCallback(() => {
+    const channel = ChannelStore.getChannel(channelId);
+    let tmp = null;
+    if (null != channel) {
+      let result;
+      if (channel.isPrivate()) {
+        result = openGroupDMAddMembersDefault(channel.id, hasOwnProperty.CHANNEL_CALL);
+      } else {
+        const obj = { source: metroRequire.VOICE_CHANNEL };
+        const obj2 = instant_invite_InstantInviteUtils;
+        result = obj2.showInstantInviteActionSheet(channel, obj);
+      }
+      tmp = result;
     }
+    return tmp;
   }, items);
 };

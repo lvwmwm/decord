@@ -8,7 +8,7 @@ if (typeof globalThis === "object") {
   _globalThis = globalThis;
 }
 let tmp = _globalThis;
-if (_globalThis) {
+if (tmp) {
   const _Math = Math;
   tmp = _globalThis.Math === Math;
 }
@@ -22,7 +22,7 @@ if (!tmp) {
     _window2 = window;
   }
   let tmp2 = _window2;
-  if (_window2) {
+  if (tmp2) {
     const _Math2 = Math;
     tmp2 = _window2.Math === Math;
   }
@@ -38,7 +38,7 @@ if (!tmp) {
     _self2 = self;
   }
   let tmp3 = _self2;
-  if (_self2) {
+  if (tmp3) {
     const _Math3 = Math;
     tmp3 = _self2.Math === Math;
   }
@@ -53,7 +53,7 @@ if (!tmp) {
     tmp5 = global;
   }
   let tmp6 = tmp5;
-  if (tmp5) {
+  if (tmp6) {
     const _Math4 = Math;
     tmp6 = tmp5.Math === Math;
   }
@@ -68,7 +68,7 @@ if (!tmp) {
     self = this;
   }
   let tmp7 = self;
-  if (self) {
+  if (tmp7) {
     const _Math5 = Math;
     tmp7 = self.Math === Math;
   }

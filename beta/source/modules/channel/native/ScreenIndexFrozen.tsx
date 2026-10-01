@@ -5,21 +5,22 @@
 // Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener, useIsScreenIndexFrozenSharedValue
 
 // Module 4702 (ScreenIndexFrozen)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
 const set = new Set();
 const set1 = new Set();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/channel/native/ScreenIndexFrozen.tsx");
 
 export const freezeScreenIndex = function freezeScreenIndex(shouldFreeze, arg1) {
-  if (shouldFreeze) {
-    obj.add(arg1);
+  const tmp = shouldFreeze;
+  if (tmp) {
+    set.add(arg1);
   } else {
-    obj.delete(arg1);
+    set.delete(arg1);
   }
   const item = set1.forEach((fn) => fn());
 };
@@ -27,26 +28,29 @@ export const isScreenIndexFrozen = function isScreenIndexFrozen(item) {
   return set.has(item);
 };
 export const addFrozenScreenIndexesChangedListener = function addFrozenScreenIndexesChangedListener(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   set1.add(arg0);
   return () => {
-    set2.delete(fn);
+    set.delete(fn);
   };
 };
 export const removeFrozenScreenIndexesChangedListener = function removeFrozenScreenIndexesChangedListener(arg0) {
   set1.delete(arg0);
 };
 export const useIsScreenIndexFrozenSharedValue = function useIsScreenIndexFrozenSharedValue(arg0) {
+  let closure_0;
+  let sharedValue;
   _require = arg0;
-  sharedValue = require("ReanimatedRexport").useSharedValue(set.has(arg0));
+  const obj = require("ReanimatedRexport");
+  sharedValue = obj.useSharedValue(set.has(arg0));
   const items = [arg0, sharedValue];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     const fn = () => {
-      const result = sharedValue.set(set.has(fn));
+      const result = sharedValue.set(set.has(closure_1_0));
     };
     set1.add(fn);
     return () => {
-      set2.delete(fn);
+      set.delete(fn);
     };
   }, items);
   return sharedValue;

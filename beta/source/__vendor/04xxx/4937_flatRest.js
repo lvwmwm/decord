@@ -4,13 +4,14 @@
 // Dependencies: [4938, 4948]
 
 // Module 4937 (flatRest)
-import _mod4938 from "module_4938" /* 4938 */;
+import flatRest from "flatRest" /* 4938 */;
 import basePick from "basePick" /* 4948 */;
 
 
-export default _mod4938((arg0, arg1) => {
+export default flatRest((arg0, arg1) => {
+  let obj;
   if (null == arg0) {
-    let obj = {};
+    obj = {};
   } else {
     obj = basePick(arg0, arg1);
   }

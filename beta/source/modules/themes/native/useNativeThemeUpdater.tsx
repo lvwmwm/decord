@@ -5,28 +5,29 @@
 // Exports: default
 
 // Module 16787 (useNativeThemeUpdater)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/themes/native/useNativeThemeUpdater.tsx");
 
 export default function useNativeThemeUpdater() {
-  closure_0 = noop.useRef(ThemeStore.theme);
-  const layoutEffect = noop.useLayoutEffect(() => {
-    closure_0(16788).updateVisualRefresh(true);
+  let closure_0 = react.useRef(ThemeStore.theme);
+  const layoutEffect = react.useLayoutEffect(() => {
+    const obj = closure_0(dependencyMap[2]);
+    obj.updateVisualRefresh(true);
   }, []);
-  const layoutEffect1 = noop.useLayoutEffect(() => {
+  const layoutEffect1 = react.useLayoutEffect(() => {
     function handleThemeUpdate() {
       const theme = ThemeStore.theme;
       if (theme !== handleThemeUpdate.current) {
         handleThemeUpdate.current = theme;
-        handleThemeUpdate(16789).updateTheme(theme);
-        const obj = handleThemeUpdate(16789);
+        const obj = handleThemeUpdate(dependencyMap[3]);
+        obj.updateTheme(theme);
       }
     }
-    handleThemeUpdate(16789).updateTheme(ThemeStore.theme);
+    let obj = handleThemeUpdate(dependencyMap[3]);
+    obj.updateTheme(ThemeStore.theme);
     ThemeStore.addChangeListener(handleThemeUpdate);
     return () => {
       ThemeStore.removeChangeListener(handleThemeUpdate);

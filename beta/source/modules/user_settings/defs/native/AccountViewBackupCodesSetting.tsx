@@ -4,71 +4,78 @@
 // Dependencies: [19, 7417, 1074, 14241, 1115, 1177, 14330, 11006, 14242, 14240, 2]
 
 // Module 14329 (AccountViewBackupCodesSetting)
-import util from "util" /* 1115 */;
+import intl5 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import MFAActionCreatorsDefault from "MFAActionCreators" /* 14241 */;
-import noop from "module_19" /* 19 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14242 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+const require = globalThis.__r;
+
+let UserSettingsSections;
+let closure_4;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ NOOP_NULL: closure_4, UserSettingsSections } = Constants);
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.xZEzbu);
+    const intl = intl5.intl;
+    return intl.string(intl5.t.xZEzbu);
   },
-  parent: fn(7417).MobileUserSettings.ACCOUNT,
-  usePredicate: fn(14242).useIs2FAEnabled,
+  parent: MobileUserSettings.ACCOUNT,
+  usePredicate: SettingsAccountUtils.useIs2FAEnabled,
   usePreNavigationAction: function useOnViewBackups() {
-    return noop.useCallback((arg0) => {
-      closure_0 = arg0;
+    let onSuccess;
+    return react.useCallback((arg0) => {
+      let intl;
+      let intl2;
+      let intl3;
+      let closure_0 = arg0;
       let obj = {
         onSubmit(password) {
-          const result = MFAActionCreatorsDefault.sendMFABackupCodesVerificationKeyEmail(password);
+          let obj = MFAActionCreatorsDefault;
+          const result = obj.sendMFABackupCodesVerificationKeyEmail(password);
           return result.then(() => {
-            const obj = {
+            let intl;
+            let intl2;
+            let intl3;
+            let intl4;
+            let obj = {
               onSubmit(verificationKey) {
-                return closure_1_1(closure_1_2[3]).confirmViewBackupCodes(verificationKey, false);
+                const obj = closure_1_1(closure_1_2[3]);
+                return obj.confirmViewBackupCodes(verificationKey, false);
               },
-              title: null,
-              helpText: null,
-              inputLabel: null,
+              title: intl.string(onSuccess(closure_2_2[4]).t["mGppp/"]),
+              helpText: intl2.string(onSuccess(closure_2_2[4]).t["37S9yU"]),
+              inputLabel: intl3.string(onSuccess(closure_2_2[4]).t.TjGb4Q),
               closeOnSuccess: true,
-              onSuccess: null,
+              onSuccess,
               secureTextEntry: false,
-              actionText: null,
-              confirmColor: null,
+              actionText: intl4.string(onSuccess(closure_2_2[4]).t.geKm7t),
+              confirmColor: onSuccess(closure_2_2[5]).ButtonColors.BRAND,
               useKeyboardAwareWrapper: true
             };
-            const intl = onSuccess(1115).intl;
-            obj.title = intl.string(onSuccess(1115).t["mGppp/"]);
-            const intl2 = onSuccess(1115).intl;
-            obj.helpText = intl2.string(onSuccess(1115).t["37S9yU"]);
-            const intl3 = onSuccess(1115).intl;
-            obj.inputLabel = intl3.string(onSuccess(1115).t.TjGb4Q);
-            obj.onSuccess = onSuccess;
-            const intl4 = onSuccess(1115).intl;
-            obj.actionText = intl4.string(onSuccess(1115).t.geKm7t);
-            obj.confirmColor = onSuccess(1177).ButtonColors.BRAND;
-            closure_2_1(14330)(obj);
+            intl = onSuccess(closure_2_2[4]).intl;
+            intl2 = onSuccess(closure_2_2[4]).intl;
+            intl3 = onSuccess(closure_2_2[4]).intl;
+            intl4 = onSuccess(closure_2_2[4]).intl;
+            closure_2_1(closure_2_2[6])(obj);
           });
         },
         onSuccess,
-        title: null,
-        inputLabel: null,
+        title: intl.string(closure_0(closure_2[4]).t.PsQmzU),
+        inputLabel: intl2.string(closure_0(closure_2[4]).t["CIGa+7"]),
         closeOnSuccess: false,
-        actionText: null,
-        confirmColor: null,
+        actionText: intl3.string(closure_0(closure_2[4]).t.PDTjLN),
+        confirmColor: closure_0(closure_2[5]).ButtonColors.BRAND,
         useKeyboardAwareWrapper: true
       };
-      let intl = closure_0(1115).intl;
-      obj.title = intl.string(closure_0(1115).t.PsQmzU);
-      let intl2 = closure_0(1115).intl;
-      obj.inputLabel = intl2.string(closure_0(1115).t["CIGa+7"]);
-      let intl3 = closure_0(1115).intl;
-      obj.actionText = intl3.string(closure_0(1115).t.PDTjLN);
-      obj.confirmColor = closure_0(1177).ButtonColors.BRAND;
-      closure_1(14330)(obj);
+      intl = closure_0(closure_2[4]).intl;
+      intl2 = closure_0(closure_2[4]).intl;
+      intl3 = closure_0(closure_2[4]).intl;
+      closure_1(closure_2[6])(obj);
       return false;
     }, []);
   },
@@ -78,8 +85,8 @@ const route = SettingBuilders.createRoute({
       return require("UserSettingsAccountBackupCodes").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountViewBackupCodesSetting.tsx");
 
 export default route;

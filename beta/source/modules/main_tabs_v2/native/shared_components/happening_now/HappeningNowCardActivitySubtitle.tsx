@@ -5,59 +5,65 @@
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
 // Module 15712 (HappeningNowCardActivitySubtitle)
-import util from "util" /* 1115 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
 import isStreamingDefault from "isStreaming" /* 7705 */;
 import HappeningNowCard from "HappeningNowCard" /* 14842 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+let tmp4;
 const getChannelA11yLabelDefault = tmp4(9060);
-require = fn;
-const View = fn(17).View;
-const ActivityTypes = fn(1074).ActivityTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const ActivityTypes = Constants.ActivityTypes;
+const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ cardDetails: { marginTop: 2, flexDirection: "row", alignItems: "center" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActivitySubtitle.tsx");
 
 export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubtitle(voiceState) {
   voiceState = voiceState.voiceState;
-  const tmp = closure_7();
   const items = [ChannelStore];
-  const stateFromStores = voiceState(504).useStateFromStores(items, () => ChannelStore.getChannel(voiceState.channelId));
-  const obj2 = { style: tmp.cardDetails, children: null };
+  const tmp = closure_7();
   const obj = voiceState(504);
-  let tmp8;
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(voiceState.channelId));
+  useChannelNameDefault(stateFromStores);
+  const HappeningNowCardSubtitle = voiceState(14842).HappeningNowCardSubtitle;
   if (null != stateFromStores) {
     const obj3 = { channel: stateFromStores };
-    tmp8 = getChannelA11yLabelDefault(obj3);
+    getChannelA11yLabelDefault(obj3);
   }
-  obj2.children = jsx(voiceState(14842).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp8, children: useChannelNameDefault(stateFromStores) });
-  return <View style={tmp.cardDetails}>{null}</View>;
+  return <tmp7 style={tmp.cardDetails}>{null}</tmp7>;
 };
 export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCardSubtitle(activity) {
+  let tmp3;
   activity = activity.activity;
+  const stream = activity.stream;
   if (null != activity) {
     if (activity.type === ActivityTypes.CUSTOM_STATUS) {
       let trimmed = null;
       if (null != activity.state) {
-        trimmed = activity.state.trim();
+        const str4 = activity.state;
+        trimmed = str4.trim();
       }
-      let tmp3 = trimmed;
+      tmp3 = trimmed;
     }
-    const obj = { lineClamp: 1, children: tmp3 };
     return jsx(HappeningNowCard.HappeningNowCardSubtitle, { lineClamp: 1, children: tmp3 });
   }
-  if (null != activity.stream) {
+  if (null != stream) {
     if (null != activity) {
+      let name3;
       if (activity.type === ActivityTypes.PLAYING) {
-        let name3 = activity.name;
+        name3 = activity.name;
       }
+      tmp3 = name3;
     }
-    const intl = util.intl;
-    name3 = intl.string(util.t.eXan7B);
+    const intl = intl2.intl;
+    name3 = intl.string(intl2.t.eXan7B);
   } else {
     let name1;
     if (activity != null) {
@@ -65,22 +71,29 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
     }
     tmp3 = null;
     if (null != name1) {
-      if (!isStreamingDefault(activity)) {
+      let name;
+      const tmp4 = importDefault;
+      if (isStreamingDefault(activity)) {
+        if (null != activity.details) {
+          let name2;
+          if ("" !== activity.details) {
+            name2 = activity.details;
+          }
+          name = name2;
+        }
+        name2 = activity.name;
+      } else {
         if (tmp4(10350)(activity)) {
           if (null != activity.details) {
             if (null != activity.state) {
               const _HermesInternal = HermesInternal;
-              let name = "" + activity.details + " - " + activity.state;
+              name = "" + activity.details + " - " + activity.state;
             }
           }
         }
         name = activity.name;
       }
-      if (null == activity.details) {
-        const name2 = activity.name;
-      }
-      const details = activity.details;
-      tmp4 = importDefault;
+      tmp3 = name;
     }
   }
 };

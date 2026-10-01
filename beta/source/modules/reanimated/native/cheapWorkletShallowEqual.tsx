@@ -13,8 +13,8 @@ function cheapWorkletShallowEqual(safeAreaState, current) {
   } else {
     if (null != safeAreaState) {
       if (null != current) {
-        for (const key10005 in arg0) {
-          if (arg0[key10005] === arg1[key10005]) {
+        for (const key10005 in safeAreaState) {
+          if (safeAreaState[key10005] === current[key10005]) {
             continue;
           } else {
             let flag = false;

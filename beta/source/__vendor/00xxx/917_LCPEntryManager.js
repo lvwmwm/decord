@@ -4,18 +4,15 @@
 // Dependencies: [41, 42]
 
 // Module 917 (LCPEntryManager)
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-let _classCallCheck = _classCallCheck_mod;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 class LCPEntryManager {
   constructor() {
-    tmp = closure_0(this, LCPEntryManager);
-    return;
+    _classCallCheck(this, LCPEntryManager);
   }
 }
-_classCallCheck = LCPEntryManager;
 const entry = {
   key: "_processEntry",
   value: function _processEntry(arg0) {
@@ -26,5 +23,6 @@ const entry = {
   }
 };
 const items = [entry];
+const LCPEntryManager_export = _createClass(LCPEntryManager, items);
 
-export const LCPEntryManager = _createClass(LCPEntryManager, items);
+export { LCPEntryManager_export as LCPEntryManager };

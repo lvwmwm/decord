@@ -4,5 +4,6 @@
 // Dependencies: []
 
 // Module 6135 (TapNativeProperties)
+new Set(["minPointers", "numberOfTaps", "maxDeltaX", "maxDeltaY", "maxDurationMs", "maxDelayMs", "maxDist"]);
 
 export const TapNativeProperties = new Set(["minPointers", "numberOfTaps", "maxDeltaX", "maxDeltaY", "maxDurationMs", "maxDelayMs", "maxDist"]);

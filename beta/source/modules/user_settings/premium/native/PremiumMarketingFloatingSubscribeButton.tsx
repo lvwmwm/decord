@@ -5,113 +5,124 @@
 // Exports: default
 
 // Module 13035 (PremiumMarketingFloatingSubscribeButton)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
+import Constants from "Constants" /* 1074 */;
 import timing from "timing" /* 4837 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const VerticalGradient = fn(1074).VerticalGradient;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { position: "absolute", left: 0, right: 0, bottom: 0, zIndex: 1 }, gradient: { position: "absolute", left: 0, right: 0, bottom: 0, top: -64 }, buttonContainer: { marginLeft: "auto", marginRight: "auto", width: "100%", paddingHorizontal: 12, paddingTop: nativeDefault.space.PX_12 } };
-let closure_9 = createStyles.createStyles(obj2);
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let View = react_native.View;
+const VerticalGradient = Constants.VerticalGradient;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { container: { position: "absolute", left: 0, right: 0, bottom: 0, zIndex: 1 }, gradient: { position: "absolute", left: 0, right: 0, bottom: 0, top: -64 }, buttonContainer: obj2 };
+obj2 = { marginLeft: "auto", marginRight: "auto", width: "100%", paddingHorizontal: 12, paddingTop: nativeDefault.space.PX_12 };
+let closure_9 = createStyles.createStyles(obj);
 const __initData = { code: "function PremiumMarketingFloatingSubscribeButtonTsx1(){const{withTiming,isVisible,useReducedMotion,FADE_DURATION_MS,ENTER_TRANSLATE_PX}=this.__closure;return{opacity:withTiming(isVisible.get()?1:0,{duration:useReducedMotion?0:FADE_DURATION_MS}),transform:[{translateY:withTiming(isVisible.get()?0:ENTER_TRANSLATE_PX,{duration:useReducedMotion?0:FADE_DURATION_MS})}]};}" };
 const __initData2 = { code: "function PremiumMarketingFloatingSubscribeButtonTsx2(){const{isVisible}=this.__closure;return{pointerEvents:isVisible.get()?'box-none':'none',accessibilityElementsHidden:!isVisible.get(),importantForAccessibility:isVisible.get()?'auto':'no-hide-descendants'};}" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingFloatingSubscribeButton.tsx");
 
 export default function PremiumMarketingFloatingSubscribeButton(isVisible) {
+  let buttonText;
+  let items2;
+  let items3;
+  let items4;
+  let openPayment;
+  let useReducedMotion;
   isVisible = isVisible.isVisible;
   const backgroundColor = isVisible.backgroundColor;
   let stateFromStores;
-  let tmp = closure_9();
-  let items = [AccessibilityStore];
-  stateFromStores = isVisible(stateFromStores[8]).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const style = isVisible.style;
+  const tmp = closure_9();
+  const bottom = backgroundColor(stateFromStores[7])().bottom;
   let obj = isVisible(stateFromStores[8]);
-  let tmp3 = backgroundColor(stateFromStores[9]);
+  let items = [AccessibilityStore];
+  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const tmp3 = backgroundColor(stateFromStores[9]);
   const items1 = [backgroundColor];
-  ({ openPayment, buttonText } = backgroundColor(stateFromStores[9])(backgroundColor(stateFromStores[10]).PREMIUM_MARKETING_FLOATING_CTA));
-  const memo = noop.useMemo(() => {
+  ({ openPayment, buttonText } = tmp3(backgroundColor(stateFromStores[10]).PREMIUM_MARKETING_FLOATING_CTA));
+  tmp3(backgroundColor(stateFromStores[10]).PREMIUM_MARKETING_FLOATING_CTA);
+  const memo = react.useMemo(() => {
+    const items = [, , ];
     const obj = _modDef672(backgroundColor);
-    const items = [_modDef672(backgroundColor).alpha(0).hex(), backgroundColor, backgroundColor];
+    const alphaResult = obj.alpha(0);
+    items[0] = alphaResult.hex();
+    items[1] = backgroundColor;
+    items[2] = backgroundColor;
     return items;
   }, items1);
-  const tmp3Result = backgroundColor(stateFromStores[9])(backgroundColor(stateFromStores[10]).PREMIUM_MARKETING_FLOATING_CTA);
+  let obj2 = isVisible(stateFromStores[12]);
   class A {
     constructor() {
-      tmp = closure_0;
-      tmp2 = closure_2;
-      obj = closure_0(closure_2[13]);
-      obj2 = isVisible;
-      num = 0;
+      let items;
+      const withTiming = timing.withTiming;
+      let num = 0;
+      timing;
+      const obj = isVisible;
       if (isVisible.get()) {
         num = 1;
       }
-      num2 = 150;
-      num3 = 150;
-      tmp3 = closure_2;
-      if (closure_2) {
+      let num2 = 150;
+      let num3 = 150;
+      if (stateFromStores) {
         num3 = 0;
       }
-      obj1 = { opacity: obj.withTiming(num, { duration: num3 }), transform: null };
-      tmpResult = tmp(tmp2[13]);
-      num4 = 12;
-      if (obj2.get()) {
+      const obj2 = { opacity: withTiming(num, { duration: num3 }), transform: items };
+      const withTiming2 = tmp(4837).withTiming;
+      let num4 = 12;
+      timing;
+      if (obj.get()) {
         num4 = 0;
       }
-      if (tmp3) {
+      if (stateFromStores) {
         num2 = 0;
       }
-      obj6 = { translateY: tmpResult.withTiming(num4, { duration: num2 }) };
-      items = [];
-      items[0] = obj6;
-      obj1.transform = items;
-      return obj1;
+      items = [{ translateY: withTiming2(num4, { duration: num2 }) }];
+      ({ translateY: withTiming2(num4, { duration: num2 }) });
+      return obj2;
     }
   }
-  let obj2 = isVisible(stateFromStores[12]);
-  A.__closure = { withTiming: isVisible(stateFromStores[13]).withTiming, isVisible, useReducedMotion: stateFromStores, FADE_DURATION_MS: 150, ENTER_TRANSLATE_PX: 12 };
+  const obj3 = { withTiming: isVisible(stateFromStores[13]).withTiming, isVisible, useReducedMotion: stateFromStores, FADE_DURATION_MS: 150, ENTER_TRANSLATE_PX: 12 };
+  A.__closure = obj3;
   A.__workletHash = 4035217753570;
   A.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(A);
-  let obj3 = { withTiming: isVisible(stateFromStores[13]).withTiming, isVisible, useReducedMotion: stateFromStores, FADE_DURATION_MS: 150, ENTER_TRANSLATE_PX: 12 };
+  const obj4 = isVisible(stateFromStores[12]);
   class E {
     constructor() {
-      obj = isVisible;
-      str = "none";
+      let str2;
+      let str = "none";
       if (isVisible.get()) {
         str = "box-none";
       }
-      obj1 = { pointerEvents: str, accessibilityElementsHidden: !obj.get(), importantForAccessibility: null };
+      const obj2 = { pointerEvents: str, accessibilityElementsHidden: !isVisible.get(), importantForAccessibility: str2 };
       str2 = "no-hide-descendants";
-      if (obj.get()) {
+      if (isVisible.get()) {
         str2 = "auto";
       }
-      obj1.importantForAccessibility = str2;
-      return obj1;
+      return obj2;
     }
   }
   E.__closure = { isVisible };
   E.__workletHash = 14964730036713;
   E.__initData = __initData2;
-  const animatedProps = isVisible(stateFromStores[12]).useAnimatedProps(E);
-  const obj5 = { animatedProps, style: null, children: null };
-  const items2 = [tmp.container, animatedStyle];
-  obj5.style = items2;
-  const items3 = [closure_7(backgroundColor(stateFromStores[14]), { pointerEvents: "none", style: tmp.gradient, colors: memo, locations: [0, 0.75, 1], start: VerticalGradient.START, end: VerticalGradient.END }), ];
-  const obj7 = { style: null, children: null };
-  const items4 = [tmp.buttonContainer, , ];
-  const obj4 = isVisible(stateFromStores[12]);
+  const animatedProps = obj4.useAnimatedProps(E);
+  const obj5 = { animatedProps, style: items2, children: items3 };
+  items2 = [tmp.container, animatedStyle];
+  View = backgroundColor(stateFromStores[12]).View;
+  items3 = [, ];
   const obj6 = { pointerEvents: "none", style: tmp.gradient, colors: memo, locations: [0, 0.75, 1], start: VerticalGradient.START, end: VerticalGradient.END };
-  items4[1] = { paddingBottom: Math.max(backgroundColor(stateFromStores[7])().bottom, backgroundColor(stateFromStores[6]).space.PX_16) };
-  items4[2] = isVisible.style;
-  obj7.style = items4;
-  obj7.children = closure_7(backgroundColor(stateFromStores[15]), { onPress: openPayment, text: buttonText });
+  items3[0] = closure_7(backgroundColor(stateFromStores[14]), obj6);
+  const obj7 = { style: items4, children: closure_7(backgroundColor(stateFromStores[15]), { onPress: openPayment, text: buttonText }) };
+  items4 = [tmp.buttonContainer, { paddingBottom: Math.max(bottom, backgroundColor(stateFromStores[6]).space.PX_16) }, style];
+  ({ paddingBottom: Math.max(bottom, backgroundColor(stateFromStores[6]).space.PX_16) });
   items3[1] = closure_7(View, obj7);
-  obj5.children = items3;
-  return closure_8(backgroundColor(stateFromStores[12]).View, obj5);
+  return closure_8(View, obj5);
 };

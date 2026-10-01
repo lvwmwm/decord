@@ -6,6 +6,7 @@
 // Module 6132 (ComposedGestureName)
 import SingleGestureName from "SingleGestureName" /* 6133 */;
 
+const SingleGestureName_export = SingleGestureName.SingleGestureName;
 
 export const ComposedGestureName = SingleGestureName.ComposedGestureName;
-export const SingleGestureName = SingleGestureName.SingleGestureName;
+export { SingleGestureName_export as SingleGestureName };

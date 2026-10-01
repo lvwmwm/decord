@@ -5,28 +5,31 @@
 // Exports: getCommandContext, useCommandContext
 
 // Module 11510 (useCommandContext)
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
+let react = react_mod;
 const result = size.fileFinishedImporting("modules/app_launcher/hooks/useCommandContext.tsx");
 
 export const getCommandContext = function getCommandContext(type) {
+  let obj;
   if ("contextless" === type.type) {
-    let obj = { channel: "Array", guild: "flex" };
+    obj = { channel: "Array", guild: "channel" };
   } else {
     obj = { channel: type.channel, guild: GuildStore.getGuild(type.channel.guild_id) };
   }
   return obj;
 };
 export const useCommandContext = function useCommandContext(context) {
-  noop = context;
+  react = context;
   const items = [context];
-  return noop.useMemo(() => {
-    if ("contextless" === type.type) {
-      let obj = { channel: "Array", guild: "flex" };
+  return react.useMemo(() => {
+    let obj;
+    if ("contextless" === context.type) {
+      obj = { channel: "Array", guild: "channel" };
     } else {
-      obj = { channel: tmp.channel, guild: GuildStore.getGuild(tmp.channel.guild_id) };
+      obj = { channel: context.channel, guild: GuildStore.getGuild(context.channel.guild_id) };
     }
     return obj;
   }, items);

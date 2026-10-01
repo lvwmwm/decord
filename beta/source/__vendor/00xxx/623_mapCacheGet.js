@@ -4,9 +4,10 @@
 // Dependencies: [621]
 
 // Module 623 (mapCacheGet)
-import _mod621 from "module_621" /* 621 */;
+import getMapData from "getMapData" /* 621 */;
 
 
 export default function mapCacheGet(arg0) {
-  return _mod621(this, arg0).get(arg0);
+  const obj = getMapData(this, arg0);
+  return obj.get(arg0);
 };

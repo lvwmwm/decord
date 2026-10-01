@@ -5,37 +5,39 @@
 // Exports: default
 
 // Module 10285 (UnsupportedFeatureModal)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/billing/native/UnsupportedFeatureModal.tsx");
 
 export default function UnsupportedFeatureModal(onDismiss) {
+  let obj3;
+  let obj4;
   onDismiss = onDismiss.onDismiss;
-  let obj = { initialRouteName: "Unsupported", screens: null };
-  let obj2 = { Unsupported: null };
-  const obj3 = {
+  const obj2 = { Unsupported: obj3 };
+  obj3 = {
     title: onDismiss.title,
-    headerLeft: onDismiss(5936).getHeaderCloseButton(() => {
-      ModalActionCreatorsDefault.pop();
+    headerLeft: obj4.getHeaderCloseButton(() => {
+      const arr = ModalActionCreatorsDefault;
+      arr.pop();
       if (onDismiss != null) {
         onDismiss();
       }
     }),
     render() {
-      const obj = { style: { flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }, children: null };
-      const obj2 = { variant: "text-lg/normal", color: "text-default", children: null };
-      const intl = onDismiss(1115).intl;
-      obj2.children = intl.string(onDismiss(1115).t.I22zuX);
-      obj.children = jsx(onDismiss(4832).Text, { variant: "text-lg/normal", color: "text-default", children: null });
+      let intl;
+      ({ variant: "text-lg/normal", color: "text-default", children: intl.string(onDismiss(dependencyMap[7]).t.I22zuX) });
+      const Text = onDismiss(dependencyMap[6]).Text;
+      intl = onDismiss(dependencyMap[7]).intl;
       return <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }}>{null}</View>;
     }
   };
-  obj2.Unsupported = obj3;
-  obj.screens = obj2;
-  return jsx(onDismiss(6421).Navigator, { initialRouteName: "Unsupported", screens: null });
+  const Navigator = onDismiss(6421).Navigator;
+  obj4 = onDismiss(5936);
+  return <Navigator initialRouteName="Unsupported" screens={obj2} />;
 };

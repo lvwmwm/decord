@@ -6,18 +6,20 @@
 
 // Module 929 (_onElementTiming)
 import _mod682 from "module_682" /* 682 */;
+import _mod899 from "module_899" /* 899 */;
 import extractNetworkProtocol from "extractNetworkProtocol" /* 924 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 function _onElementTiming(arg0) {
   const entries = arg0.entries;
   let transactionName;
-  const activeSpan = transactionName(682).getActiveSpan();
+  let obj = transactionName(682);
+  const activeSpan = obj.getActiveSpan();
   let rootSpan;
   if (activeSpan) {
-    rootSpan = tmp(682).getRootSpan(activeSpan);
     let tmpResult = tmp(682);
+    rootSpan = tmpResult.getRootSpan(activeSpan);
   }
   const tmpResult2 = transactionName(682);
   if (rootSpan) {
@@ -27,23 +29,42 @@ function _onElementTiming(arg0) {
     transactionName = currentScope.getScopeData().transactionName;
   }
   const item = entries.forEach((identifier) => {
+    let combined;
+    let element;
+    let first;
+    let loadTime;
+    let name;
+    let renderTime;
+    let str8;
+    let tmp6;
     if (identifier.identifier) {
+      let items2;
       ({ name, renderTime, loadTime } = identifier);
       if (loadTime) {
-        const items = [tmp(924).msToSec(loadTime), "load-time"];
-        let items2 = items;
-        const tmpResult = tmp(924);
+        const items = [, ];
+        const tmpResult = extractNetworkProtocol;
+        items[0] = tmpResult.msToSec(loadTime);
+        items[1] = "load-time";
+        items2 = items;
       } else if (renderTime) {
-        const items1 = [tmp(924).msToSec(renderTime), "render-time"];
+        const items1 = [, ];
+        const tmpResult3 = extractNetworkProtocol;
+        items1[0] = tmpResult3.msToSec(renderTime);
+        items1[1] = "render-time";
         items2 = items1;
-        const tmpResult3 = tmp(924);
       } else {
-        items2 = [tmp(682).timestampInSeconds(), "entry-emission"];
-        const tmpResult4 = tmp(682);
+        items2 = [, ];
+        const tmpResult4 = _mod682;
+        items2[0] = tmpResult4.timestampInSeconds();
+        items2[1] = "entry-emission";
       }
-      [startTime, obj["sentry.span_start_time_source"]] = items2;
+      [first, tmp6] = items2;
+      let num3 = 0;
       if ("image-paint" === name) {
         let num4 = renderTime;
+        const msToSec = extractNetworkProtocol.msToSec;
+        const _Math = Math;
+        extractNetworkProtocol;
         if (renderTime == null) {
           num4 = 0;
         }
@@ -51,15 +72,14 @@ function _onElementTiming(arg0) {
         if (loadTime == null) {
           num5 = 0;
         }
-        const num3 = extractNetworkProtocol.msToSec(Math.max(0, num4 - num5));
+        num3 = msToSec(max(0, num4 - num5));
       }
-      const obj = {};
+      const obj = { "sentry.span_start_time_source": tmp6, "sentry.transaction_name": transactionName, "element.type": str8, "element.size": combined, "element.render_time": renderTime, "element.load_time": loadTime, "element.url": identifier.url || undefined, "element.identifier": identifier.identifier, "element.paint_type": name };
       obj[_mod682.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = "auto.ui.browser.elementtiming";
       obj[_mod682.SEMANTIC_ATTRIBUTE_SENTRY_OP] = "ui.elementtiming";
       obj[_mod682.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "component";
-      obj["sentry.transaction_name"] = transactionName;
-      ({ id: obj5["element.id"], element } = identifier);
-      let str8;
+      ({ id: obj4["element.id"], element } = identifier);
+      str8 = undefined;
       if (element != null) {
         if (element.tagName != null) {
           str8 = str9.toLowerCase();
@@ -68,26 +88,18 @@ function _onElementTiming(arg0) {
       if (!str8) {
         str8 = "unknown";
       }
-      obj["element.type"] = str8;
-      let combined;
+      combined = undefined;
       if (identifier.naturalWidth) {
         if (identifier.naturalHeight) {
           const _HermesInternal = HermesInternal;
           combined = "" + identifier.naturalWidth + "x" + identifier.naturalHeight;
         }
       }
-      obj["element.size"] = combined;
-      obj["element.render_time"] = renderTime;
-      obj["element.load_time"] = loadTime;
-      obj["element.url"] = identifier.url || undefined;
-      obj["element.identifier"] = identifier.identifier;
-      obj["element.paint_type"] = name;
-      const obj2 = { name: null, attributes: null, startTime: null, onlyIfParent: true };
       const _HermesInternal2 = HermesInternal;
-      obj2.name = "element[" + identifier.identifier + "]";
-      obj2.attributes = obj;
-      obj2.startTime = startTime;
-      _mod682.startSpan(obj2, (end) => {
+      const obj2 = { name: "element[" + identifier.identifier + "]", attributes: obj, startTime: first, onlyIfParent: true };
+      const startSpan = _mod682.startSpan;
+      _mod682;
+      startSpan(obj2, (end) => {
         end.end(first + num3);
       });
     }
@@ -96,10 +108,13 @@ function _onElementTiming(arg0) {
 
 export { _onElementTiming };
 export const startTrackingElementTiming = function startTrackingElementTiming() {
+  const obj = extractNetworkProtocol;
   if (obj.getBrowserPerformanceAPI()) {
+    let fn;
+    const tmpResult = _mod682;
     if (tmpResult.browserPerformanceTimeOrigin()) {
-      let fn = tmp(899).addPerformanceInstrumentationHandler("element", _onElementTiming);
-      const tmpResult2 = tmp(899);
+      const tmpResult2 = _mod899;
+      fn = tmpResult2.addPerformanceInstrumentationHandler("element", _onElementTiming);
     }
     return fn;
   }

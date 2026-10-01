@@ -4,24 +4,24 @@
 // Dependencies: [19, 11007, 21, 14248, 14261, 2]
 
 // Module 14247 (SettingLayout)
+import Fragment from "Fragment" /* 21 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11007 */;
 import SettingListRenderer from "SettingListRenderer" /* 14248 */;
 import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14261 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const NodeType = fn(11007).NodeType;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingLayout.tsx");
-
-export default noop.memo(function SettingLayout(node) {
+const NodeType = SettingRendererConstants.NodeType;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function SettingLayout(node) {
   node = node.node;
   const type = node.type;
   if (NodeType.LIST === type) {
-    const obj2 = { node };
     return jsx(SettingListRenderer.SettingsList, { node });
   } else if (tmp.SEGMENTED_CONTROL === type) {
-    const obj = { node };
     return jsx(SettingSegmentedControlRendererDefault, { node });
   }
 });
+const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingLayout.tsx");
+
+export default memoResult;

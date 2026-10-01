@@ -5,7 +5,7 @@
 // Exports: canLeaveVibegrationsWizardQuestion, formatVibegrationsWizardAnswers, isVibegrationsWizardComplete, latestVibegrationsIntake, vibegrationsTemplateStartMessage, vibegrationsTemplateWizardGuilds, vibegrationsTemplateWizardSteps, vibegrationsWizardIntro, vibegrationsWizardNeedsServerStep, vibegrationsWizardQuestions, vibegrationsWizardServerCopy
 
 // Module 16251 (VibegrationsTemplateWizard)
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import VibegrationsUtils from "VibegrationsUtils" /* 5370 */;
 import size from "module_2" /* 2 */;
@@ -13,18 +13,21 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTemplateWizard.tsx");
 
 export const vibegrationsWizardNeedsServerStep = function vibegrationsWizardNeedsServerStep(guildId, stateFromStores) {
-  closure_0 = guildId;
-  return !stateFromStores.some((id) => id.id === closure_0);
+  let closure_0 = guildId;
+  return !stateFromStores.some((id) => id.id === guildId);
 };
-export const vibegrationsTemplateWizardSteps = function vibegrationsTemplateWizardSteps(result2, arg1) {
-  const arr = Array.from({ length: Math.max(1, result2.length) }, (arg0, index) => ({ kind: "question", index }));
-  if (arg1) {
+export const vibegrationsTemplateWizardSteps = function vibegrationsTemplateWizardSteps(result2, first1) {
+  let items1;
+  const obj = { length: Math.max(1, result2.length) };
+  const arr = Array.from(obj, (arg0, index) => ({ kind: "question", index }));
+  const tmp3 = first1;
+  if (tmp3) {
     const items = ["about", "server"];
-    HermesBuiltin.arraySpread(arr, 2);
-    let items1 = items;
+    HermesBuiltin.arraySpread(items, arr, 2);
+    items1 = items;
   } else {
     items1 = ["about"];
-    HermesBuiltin.arraySpread(arr, 1);
+    HermesBuiltin.arraySpread(items1, arr, 1);
   }
   return items1;
 };
@@ -44,12 +47,18 @@ export const canLeaveVibegrationsWizardQuestion = function canLeaveVibegrationsW
   return tmp;
 };
 export const vibegrationsTemplateStartMessage = function vibegrationsTemplateStartMessage(name) {
-  const intl = util.intl;
-  return intl.formatToPlainString(_modDef3715["4lZNuo"], { templateName: name, locale: util.intl.currentLocale });
+  const intl = intl3.intl;
+  const formatToPlainString = intl.formatToPlainString;
+  const obj = { templateName: name, locale: intl3.intl.currentLocale };
+  const v4lZNuo = _modDef3715["4lZNuo"];
+  return formatToPlainString(v4lZNuo, obj);
 };
 export const vibegrationsTemplateWizardGuilds = function vibegrationsTemplateWizardGuilds(guildsArray, VibegrationsTemplateWizardSheet) {
-  closure_0 = VibegrationsTemplateWizardSheet;
-  const found = guildsArray.filter((item) => VibegrationsUtils.canStartVibegrationsProject(item, closure_0));
+  let closure_0 = VibegrationsTemplateWizardSheet;
+  const found = guildsArray.filter((item) => {
+    const obj = VibegrationsUtils;
+    return obj.canStartVibegrationsProject(item, VibegrationsTemplateWizardSheet);
+  });
   return found.sort((name, name2) => {
     name = name.name;
     return name.localeCompare(name2.name);
@@ -73,41 +82,45 @@ export const latestVibegrationsIntake = function latestVibegrationsIntake(messag
   return null;
 };
 export const vibegrationsWizardIntro = function vibegrationsWizardIntro(stateFromStores1) {
+  let points;
   let tmp = null;
   if (null != stateFromStores1) {
-    let obj = { lead: stateFromStores1.intro.lead, points: null };
-    const points = stateFromStores1.intro.points;
-    obj.points = points.map((title) => {
-      const obj = { title: title.title };
-      if (null != title.subtext) {
-        const obj2 = { subtext: title.subtext };
-        let obj3 = obj2;
-      } else {
-        obj3 = {};
-      }
-      const merged = Object.assign(obj3);
-      let str = title.icon;
-      if (str == null) {
-        str = "shield";
-      }
-      obj.icon = str;
-      return obj;
-    });
+    let obj = {
+      lead: stateFromStores1.intro.lead,
+      points: points.map((title) => {
+          let obj3;
+          let str;
+          const obj = { title: title.title, icon: str };
+          if (null != title.subtext) {
+            obj3 = { subtext: title.subtext };
+            const obj2 = { subtext: title.subtext };
+          } else {
+            obj3 = {};
+          }
+          const merged = Object.assign(obj3);
+          str = title.icon;
+          if (str == null) {
+            str = "shield";
+          }
+          return obj;
+        })
+    };
+    points = stateFromStores1.intro.points;
     tmp = obj;
   }
   return tmp;
 };
 export const vibegrationsWizardServerCopy = function vibegrationsWizardServerCopy(stateFromStores1) {
+  let intl;
+  let intl2;
   let server;
   if (stateFromStores1 != null) {
     server = stateFromStores1.server;
   }
   if (server == null) {
-    const obj = { title: null, hint: null };
-    const intl = util.intl;
-    obj.title = intl.string(_modDef3715.WQCnSf);
-    const intl2 = util.intl;
-    obj.hint = intl2.string(_modDef3715.KLTQfQ);
+    const obj = { title: intl.string(_modDef3715.WQCnSf), hint: intl2.string(_modDef3715.KLTQfQ) };
+    intl = intl3.intl;
+    intl2 = intl3.intl;
     server = obj;
   }
   return server;
@@ -122,12 +135,11 @@ export const vibegrationsWizardQuestions = function vibegrationsWizardQuestions(
   }
   return questions;
 };
-export const isVibegrationsWizardComplete = function isVibegrationsWizardComplete(result2, first2) {
-  closure_0 = first2;
-  return result2.length > 0 && result2.every((optional, index) => {
+export const isVibegrationsWizardComplete = function isVibegrationsWizardComplete(result2, first3) {
+  let tmp = result2.length > 0 && result2.every((optional, index) => {
     let tmp = true === optional.optional;
     if (!tmp) {
-      let str = closure_0[index];
+      let str = first3[index];
       if (str == null) {
         str = "";
       }
@@ -135,9 +147,10 @@ export const isVibegrationsWizardComplete = function isVibegrationsWizardComplet
     }
     return tmp;
   });
+  return tmp;
 };
 export const formatVibegrationsWizardAnswers = function formatVibegrationsWizardAnswers(arr, arg1) {
-  closure_0 = arg1;
+  let closure_0 = arg1;
   const items = [];
   const item = arr.forEach((optional, index) => {
     let str = closure_0[index];
@@ -145,10 +158,7 @@ export const formatVibegrationsWizardAnswers = function formatVibegrationsWizard
       str = "";
     }
     const trimmed = str.trim();
-    let tmp = "" === trimmed;
-    if (tmp) {
-      tmp = true === optional.optional;
-    }
+    const tmp = "" === trimmed && true === optional.optional;
     if (!tmp) {
       const push = items.push;
       const sum = index + 1;

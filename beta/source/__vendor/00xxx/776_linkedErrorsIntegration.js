@@ -4,24 +4,25 @@
 // Dependencies: [777, 758, 752]
 
 // Module 776 (linkedErrorsIntegration)
-import exceptionFromError from "exceptionFromError" /* 758 */;
-import aggregateExceptionsFromError from "aggregateExceptionsFromError" /* 777 */;
-import setupIntegration from "setupIntegration" /* 752 */;
+import _enhanceErrorWithSentryInfo from "_enhanceErrorWithSentryInfo" /* 758 */;
+import applyAggregateErrorsToEvent from "applyAggregateErrorsToEvent" /* 777 */;
+import module_752 from "module_752" /* 752 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const linkedErrorsIntegration = setupIntegration.defineIntegration(() => {
+export const linkedErrorsIntegration = module_752.defineIntegration(() => {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  closure_0 = obj.limit || 5;
-  closure_1 = obj.key || "cause";
+  let closure_0 = obj.limit || 5;
+  let closure_1 = obj.key || "cause";
   return {
     name: "LinkedErrors",
     preprocessEvent(arg0, arg1, getOptions) {
       const options = getOptions.getOptions();
-      const result = aggregateExceptionsFromError.applyAggregateErrorsToEvent(exceptionFromError.exceptionFromError, options.stackParser, closure_1, closure_0, arg0, arg1);
+      const obj = applyAggregateErrorsToEvent;
+      const result = obj.applyAggregateErrorsToEvent(_enhanceErrorWithSentryInfo.exceptionFromError, options.stackParser, closure_1, closure_0, arg0, arg1);
     }
   };
 });

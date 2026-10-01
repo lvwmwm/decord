@@ -5,35 +5,39 @@
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
 // Module 8817 (StageChannelRichPresenceUtils)
-import _slicedToArray from "module_32" /* 32 */;
+import Constants from "Constants" /* 1074 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5726 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 5733 */;
+import size from "module_2" /* 2 */;
 
 function unpackStageChannelParty(party) {
   if (null != party) {
     if (null != party.party) {
       try {
-        if (null != str) {
-          if (str.startsWith(c7)) {
-            const tmp4 = _slicedToArray(str.split(":"), 5);
+        if (null != party.party.id) {
+          if (party.party.id.startsWith(c7)) {
+            const tmp3 = _slicedToArray(party.party.id.split(":"), 5);
             const _parseInt = parseInt;
-            const parsed = parseInt(tmp4[3], 16);
-            const obj = { guildId: tmp4[1], channelId: tmp4[2], size: tmp2, userIsSpeaker: 1 & parsed, guildIsPartnered: 2 & parsed, guildIsVerified: 4 & parsed, stageInstanceId: tmp4[4] };
-            return obj;
+            const tmp4 = tmp3[1];
+            const tmp5 = tmp3[2];
+            const tmp6 = tmp3[4];
+            const parsed = parseInt(tmp3[3], 16);
+            return { guildId: tmp4, channelId: tmp5, size: tmp, userIsSpeaker: 1 & parsed, guildIsPartnered: 2 & parsed, guildIsVerified: 4 & parsed, stageInstanceId: tmp6 };
           }
         }
       } catch (err) {
-        return tmp;
+        return null;
       }
     }
   }
 }
-const STAGE_APPLICATION_ID = fn(5726).STAGE_APPLICATION_ID;
-const GuildFeatures = fn(1074).GuildFeatures;
+const STAGE_APPLICATION_ID = StageChannelsConstants.STAGE_APPLICATION_ID;
+const GuildFeatures = Constants.GuildFeatures;
 let c7 = "stage:";
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/StageChannelRichPresenceUtils.tsx");
 
 export const packStageChannelPartyId = function packStageChannelPartyId(channel, stageInstanceByChannel) {
@@ -46,6 +50,7 @@ export const packStageChannelPartyId = function packStageChannelPartyId(channel,
   if (null != guild) {
     const features = guild.features;
     let tmp3 = num;
+    const tmp2 = GuildFeatures;
     if (features.has(GuildFeatures.PARTNERED)) {
       tmp3 = num | 2;
     }
@@ -55,7 +60,6 @@ export const packStageChannelPartyId = function packStageChannelPartyId(channel,
       tmp4 = tmp3 | 4;
     }
     str = tmp4;
-    tmp2 = GuildFeatures;
   }
   return "" + c7 + channel.guild_id + ":" + channel.id + ":" + str.toString(16) + ":" + stageInstanceByChannel.id;
 };

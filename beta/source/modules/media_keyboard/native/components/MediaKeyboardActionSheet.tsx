@@ -5,43 +5,61 @@
 // Exports: default
 
 // Module 10100 (MediaKeyboardActionSheet)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import intl3 from "intl" /* 1115 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1609 */;
 import ImageIcon from "ImageIcon" /* 5401 */;
 import AttachmentIcon from "AttachmentIcon" /* 9571 */;
 import PollsIcon from "PollsIcon" /* 10101 */;
 import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10103 */;
 import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10105 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_4 = fn(1609).MediaPickerActionSheetEngagedActions;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let BottomSheet;
+
+let closure_4 = MediaKeyboardConstants.MediaPickerActionSheetEngagedActions;
+const AnalyticEvents = Constants.AnalyticEvents;
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardActionSheet.tsx");
 
 export default function MediaKeyboardActionSheet(onAttachPress) {
+  let allowCamera;
+  let channel;
+  let disableWhenReachedLimit;
+  let draftType;
+  let extensions;
+  let includedUploadIds;
+  let obj3;
+  let onLongPressItem;
+  let onManageLimited;
+  let onPressCamera;
+  let onPressItem;
+  let uploadLimit;
   onAttachPress = onAttachPress.onAttachPress;
   const onViewAll = onAttachPress.onViewAll;
   const onClose = onAttachPress.onClose;
   const onBack = onAttachPress.onBack;
   ({ channel, draftType, uploadLimit, disableWhenReachedLimit, includedUploadIds, extensions, allowCamera, onPressCamera, onPressItem, onLongPressItem, onManageLimited } = onAttachPress);
-  const sharedValue = onAttachPress(onClose[4]).useSharedValue(-1);
+  let obj = onAttachPress(onClose[4]);
+  const sharedValue = obj.useSharedValue(-1);
   let items = [onAttachPress];
   const memo = onBack.useMemo(() => {
-    const obj = { text: null, IconComponent: null, onPress: null, disabled: true };
-    const intl = util.intl;
-    obj.text = intl.string(util.t.RgIi2B);
-    obj.IconComponent = PollsIcon.PollsIcon;
-    obj.onPress = function onPress() {
+    let intl;
+    let intl2;
+    const obj = {
+      text: intl.string(intl3.t.RgIi2B),
+      IconComponent: PollsIcon.PollsIcon,
+      onPress() {
 
+      },
+      disabled: true
     };
+    intl = intl3.intl;
     const items = [obj, ];
-    const obj2 = { text: null, IconComponent: null, onPress: null, disabled: false };
-    const intl2 = util.intl;
-    obj2.text = intl2.string(util.t["8Hvr3+"]);
-    obj2.IconComponent = AttachmentIcon.AttachmentIcon;
-    obj2.onPress = onAttachPress;
+    const obj2 = { text: intl2.string(intl3.t["8Hvr3+"]), IconComponent: AttachmentIcon.AttachmentIcon, onPress: onAttachPress, disabled: false };
+    intl2 = intl3.intl;
     items[1] = obj2;
     return items;
   }, items);
@@ -49,9 +67,11 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
   const callback = onBack.useCallback(() => jsx(MediaKeyboardBottomSheetHeaderSimpleDefault, { animatedIndex: sharedValue, onPress: onBack }), items1);
   const items2 = [onClose];
   const callback1 = onBack.useCallback(() => {
-    const result = onAttachPress(onClose[9]).triggerHapticFeedback(onViewAll(onClose[10]).IMPACT_LIGHT);
     const obj = onAttachPress(onClose[9]);
-    onViewAll(onClose[11]).track(memo.MEDIA_PICKER_ACTION_SHEET_ENGAGED, { action: sharedValue.FULLY_EXPANDED });
+    const result = obj.triggerHapticFeedback(onViewAll(onClose[10]).IMPACT_LIGHT);
+    const obj2 = onViewAll(onClose[11]);
+    const obj3 = { action: sharedValue.FULLY_EXPANDED };
+    obj2.track(memo.MEDIA_PICKER_ACTION_SHEET_ENGAGED, obj3);
   }, []);
   const callback2 = onBack.useCallback(() => {
     if (onClose != null) {
@@ -67,37 +87,17 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
   });
   const items3 = [onViewAll, memo];
   const memo1 = onBack.useMemo(() => {
-    const obj = {
-      canPostPolls: false,
-      onHeightChange() {
-
-      },
-      uploadDisabled: false,
-      overflowButtons: null
-    };
-    const obj2 = { text: null, IconComponent: null, onPress: null, disabled: false };
-    const intl = util.intl;
-    obj2.text = intl.string(util.t.Zmm6dN);
-    obj2.IconComponent = ImageIcon.ImageIcon;
-    obj2.onPress = onViewAll;
+    let intl;
+    const obj2 = { text: intl.string(intl3.t.Zmm6dN), IconComponent: ImageIcon.ImageIcon, onPress: onViewAll, disabled: false };
+    MediaKeyboardBottomSheetActionsDefault;
+    intl = intl3.intl;
     const items = [obj2, ...memo];
-    obj.overflowButtons = items;
-    return jsx(MediaKeyboardBottomSheetActionsDefault, {
-      canPostPolls: false,
-      onHeightChange() {
+    return <tmp canPostPolls={false} onHeightChange={function onHeightChange() {
 
-      },
-      uploadDisabled: false,
-      overflowButtons: null
-    });
+    }} uploadDisabled={false} overflowButtons={items} />;
   }, items3);
-  let obj2 = { handleComponent: callback, scrollable: true, startExpanded: null, onExpand: null, onDismiss: null, animatedIndex: null, footer: null, children: null };
-  let obj = onAttachPress(onClose[4]);
-  obj2.startExpanded = onAttachPress(onClose[16]).isMetaQuest();
-  obj2.onExpand = callback1;
-  obj2.onDismiss = callback2;
-  obj2.animatedIndex = sharedValue;
-  obj2.footer = memo1;
-  obj2.children = callback2(onViewAll(onClose[17]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit });
-  return callback2(onAttachPress(onClose[15]).BottomSheet, obj2);
+  let obj2 = { handleComponent: callback, scrollable: true, startExpanded: obj3.isMetaQuest(), onExpand: callback1, onDismiss: callback2, animatedIndex: sharedValue, footer: memo1, children: callback2(onViewAll(onClose[17]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit }) };
+  BottomSheet = onAttachPress(onClose[15]).BottomSheet;
+  obj3 = onAttachPress(onClose[16]);
+  return callback2(BottomSheet, obj2);
 };

@@ -5,151 +5,172 @@
 // Exports: default
 
 // Module 15125 (CacheActionsStorageDiagnostics)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const size = fn(2);
+let c4, c5, dependencyMap, ref;
+
+let metroImportDefault;
+let metroRequire;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/CacheActionsStorageDiagnostics.tsx");
 
 export default function CacheActionsStorageDiagnostics(onBusyChange) {
+  let _undefined;
+  let c1;
+  let closure_2;
+  let intl;
+  let intl2;
+  let items;
+  let tmp2;
   onBusyChange = onBusyChange.onBusyChange;
   c1 = undefined;
-  closure_3 = async function _handleUpload(arg0, value) {
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp7 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+  let obj = function _handleUpload() {
+    obj = _asyncToGenerator(async (arg0, value) => {
+      let cHxSwT;
+      let closure_1;
+      let intl;
+      let obj3;
+      let string;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
       } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            onBusyChange = tmp8;
-            closure_128_0 = undefined;
-            if (!ref.current) {
-              if (null != tmp4(tmp48[4]).uploadStorageDiagnostics) {
-                ref.current = true;
-                onBusyChange(true);
-                importDefault(true);
-                c3 = 2;
-                c4 = 3;
-                c5 = 1;
-                const obj6 = { value: tmp4(tmp48[4]).uploadStorageDiagnostics(), done: false };
-                return obj6;
+        let c3;
+        try {
+          let closure_0;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_0 = undefined;
+              if (!ref.current) {
+                if (null != tmp(ref[4]).uploadStorageDiagnostics) {
+                  ref.current = true;
+                  onBusyChange(true);
+                  _undefined(true);
+                  c3 = 2;
+                  c4 = 3;
+                  c5 = 1;
+                  const obj5 = { value: obj3.uploadStorageDiagnostics(), done: false };
+                  obj3 = tmp(ref[4]);
+                  return obj5;
+                }
               }
             }
-            c5 = 3;
-          }
-        } else if (1 !== tmp8) {
-          if (2 === tmp8) {
-            c3 = 1;
-            const obj7 = {
-              key: "storage-diagnostics-upload",
-              icon() {
-                        return closure_1_6(closure_1_0(4787).CircleInformationIcon, {});
-                      },
-              content: null
-            };
-            const intl = onBusyChange(tmp48[7]).intl;
-            obj7.content = intl.string(onBusyChange(tmp48[7]).t["L/aQij"]);
-            tmp4(tmp48[5]).open(obj7);
-            const obj2 = tmp4(tmp48[5]);
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
+          } else if (1 === c4) {
             c3 = 0;
             closure_129_2.current = false;
             closure_129_1(false);
             closure_129_0(false);
-            c5 = 3;
-            const obj = { value, done: true };
-            return obj;
+            throw ref;
           } else {
-            closure_128_0 = value;
-            const obj9 = {
-              key: "storage-diagnostics-upload",
-              icon() {
-                        return closure_1_6(closure_1_0(4787).CircleInformationIcon, {});
-                      },
-              content: null
-            };
-            const intl2 = onBusyChange(tmp48[7]).intl;
-            const t = onBusyChange(tmp48[7]).t;
-            if (closure_128_0) {
-              let cHxSwT = t.H99tIV;
+            if (2 === c4) {
+              c3 = 1;
+              const obj6 = {
+                key: "storage-diagnostics-upload",
+                icon() {
+                          return closure_1_6(closure_1_0(closure_1_2[6]).CircleInformationIcon, {});
+                        },
+                content: intl.string(closure_0(ref[7]).t["L/aQij"])
+              };
+              const open = tmp(ref[5]).open;
+              const tmp16 = tmp(ref[5]);
+              intl = closure_0(ref[7]).intl;
+              open(obj6);
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              closure_129_2.current = false;
+              closure_129_1(false);
+              closure_129_0(false);
+              c5 = 3;
+              obj = { value, done: true };
+              return obj;
             } else {
-              cHxSwT = t.cHxSwT;
+              closure_0 = value;
+              const obj7 = {
+                key: "storage-diagnostics-upload",
+                icon() {
+                          return closure_1_6(closure_1_0(closure_1_2[6]).CircleInformationIcon, {});
+                        },
+                content: string(cHxSwT)
+              };
+              const open2 = tmp(ref[5]).open;
+              const tmp56 = tmp(ref[5]);
+              const intl2 = closure_0(ref[7]).intl;
+              string = intl2.string;
+              const t = closure_0(ref[7]).t;
+              if (closure_0) {
+                cHxSwT = t.H99tIV;
+              } else {
+                cHxSwT = t.cHxSwT;
+              }
+              open2(obj7);
+              c3 = 1;
             }
-            obj9.content = intl2.string(cHxSwT);
-            tmp4(tmp48[5]).open(obj9);
-            c3 = 1;
-            const obj8 = tmp4(tmp48[5]);
+            c3 = 0;
+            closure_129_2.current = false;
+            closure_129_1(false);
+            closure_129_0(false);
           }
-          c3 = 0;
-          closure_129_2.current = false;
-          closure_129_1(false);
-          closure_129_0(false);
-        }
-        c3 = 0;
-        closure_129_2.current = false;
-        closure_129_1(false);
-        closure_129_0(false);
-        throw tmp48;
-      } catch (tmp48) {
-        if (tmp5 === c3) {
-          c5 = tmp3;
-          throw tmp48;
-        } else if (tmp2 === tmp50) {
-          c4 = tmp2;
-        } else {
-          c4 = tmp;
+          c5 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp45) {
+          ref = tmp45;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp45;
+          } else if (1 === tmp47) {
+            c4 = 1;
+          } else {
+            c4 = 2;
+          }
         }
       }
+    });
+    return obj(...arguments);
+  };
+  const tmp = _slicedToArray(react.useState(false), 2);
+  [tmp2, c1] = tmp;
+  dependencyMap = react.useRef(false);
+  obj = { children: items };
+  const Stack = onBusyChange(5279).Stack;
+  let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: intl.string(onBusyChange(1115).t.Fzi4HX) };
+  const Text = onBusyChange(4832).Text;
+  intl = onBusyChange(1115).intl;
+  items = [closure_6(Text, obj2), ];
+  let obj3 = {
+    variant: "secondary",
+    text: intl2.string(onBusyChange(1115).t.VSunuT),
+    loading: tmp2,
+    disabled: tmp2,
+    onPress: function handleUpload() {
+      return obj(...arguments);
     }
   };
-  [tmp2, c1] = noop.useState(false);
-  dependencyMap = noop.useRef(false);
-  let obj = { children: null };
-  let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: null };
-  let intl = onBusyChange(1115).intl;
-  obj2.children = intl.string(onBusyChange(1115).t.Fzi4HX);
-  const items = [closure_6(onBusyChange(4832).Text, obj2), ];
-  let obj3 = { variant: "secondary", text: null, loading: null, disabled: null, onPress: null };
-  let intl2 = onBusyChange(1115).intl;
-  obj3.text = intl2.string(onBusyChange(1115).t.VSunuT);
-  obj3.loading = tmp2;
-  obj3.disabled = tmp2;
-  obj3.onPress = function handleUpload() {
-    const self = this;
-    const apply = closure_3.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
-  };
-  items[1] = closure_6(onBusyChange(5281).Button, obj3);
-  obj.children = items;
-  return closure_7(onBusyChange(5279).Stack, obj);
+  const Button = onBusyChange(5281).Button;
+  intl2 = onBusyChange(1115).intl;
+  items[1] = closure_6(Button, obj3);
+  return closure_7(Stack, obj);
 };

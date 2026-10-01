@@ -5,29 +5,44 @@
 // Exports: default
 
 // Module 6624 (VerifiedRoleIcon)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import useRoleIconProps from "useRoleIconProps" /* 6607 */;
+import useRoleIconProps2 from "useRoleIconProps" /* 6607 */;
 import getHigherContrastColor from "getHigherContrastColor" /* 6625 */;
 import RoleIconDefault from "RoleIcon" /* 6626 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let tmp3;
 const LinkIcon = tmp3(4775);
-require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
+const View = react_native.View;
 ({ DEFAULT_ROLE_COLOR_HEX: closure_4, EMPTY_STRING_SNOWFLAKE_ID: hasOwnProperty } = Constants);
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 const WHITE = nativeDefault.unsafe_rawColors.WHITE;
 const PRIMARY_630 = nativeDefault.unsafe_rawColors.PRIMARY_630;
-const createStyles = fn(4836);
-let obj2 = { iconContainer: { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round } };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj = { iconContainer: obj2 };
+obj2 = { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round };
+let closure_9 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/connections/native/VerifiedRoleIcon.tsx");
 
 export default function VerifiedRoleIcon(arg0) {
+  let displayRoleIcon;
+  let guildId;
+  let items;
+  let items1;
+  let role;
+  let roleColor;
+  let roleId;
+  let style;
   ({ role, roleId, roleColor, size } = arg0);
   ({ guildId, style, displayRoleIcon } = arg0);
+  const tmp = closure_9();
   if (roleColor == null) {
     let colorString;
     if (role != null) {
@@ -36,15 +51,16 @@ export default function VerifiedRoleIcon(arg0) {
     roleColor = colorString;
   }
   if (roleColor == null) {
-    roleColor = React4;
+    roleColor = React3;
   }
-  const tmp = closure_9();
-  const obj2 = { backgroundColor: roleColor, colors: null };
-  const items = [WHITE, PRIMARY_630];
-  obj2.colors = items;
+  const obj2 = { backgroundColor: roleColor, colors: items };
+  items = [WHITE, PRIMARY_630];
   const diff = size - size / 8 * 2;
-  const higherContrastColor = getHigherContrastColor.getHigherContrastColor(obj2);
-  const obj4 = { guildId, roleId: null, size: null };
+  const obj = getHigherContrastColor;
+  const higherContrastColor = obj.getHigherContrastColor(obj2);
+  const obj3 = { guildId, roleId, size: diff };
+  const useRoleIconProps = useRoleIconProps2.useRoleIconProps;
+  useRoleIconProps2;
   if (roleId == null) {
     let id;
     if (role != null) {
@@ -55,20 +71,20 @@ export default function VerifiedRoleIcon(arg0) {
   if (roleId == null) {
     roleId = hasOwnProperty;
   }
-  obj4.roleId = roleId;
-  obj4.size = diff;
-  const roleIconProps = useRoleIconProps.useRoleIconProps(obj4);
-  const obj5 = { style: null, children: null };
-  const items1 = [style, tmp.iconContainer, { width: size, height: size, backgroundColor: roleColor }];
-  obj5.style = items1;
+  const roleIconProps = useRoleIconProps(obj3);
+  const obj4 = { style: items1, children: null };
+  items1 = [style, tmp.iconContainer, { width: size, height: size, backgroundColor: roleColor }];
   if (false !== displayRoleIcon) {
+    let tmp10Result;
     if (null != roleIconProps) {
-      const obj6 = {};
+      const obj5 = {};
+      const tmp14 = RoleIconDefault;
       const merged = Object.assign(roleIconProps);
-      let tmp9Result = tmp9(RoleIconDefault, obj6);
+      tmp10Result = tmp10(tmp14, obj5);
     }
-    obj5.children = tmp9Result;
-    return tmp9(tmp10, obj5);
+    obj4.children = tmp10Result;
+    return <tmp11 {...obj4} />;
   }
-  tmp9Result = tmp9(LinkIcon.LinkIcon, { style: { width: diff, height: diff }, size: "custom", color: higherContrastColor });
+  const obj6 = { style: { width: diff, height: diff }, size: "custom", color: higherContrastColor };
+  tmp10Result = tmp10(LinkIcon.LinkIcon, obj6);
 };

@@ -5,49 +5,65 @@
 // Exports: RegisterPhoneOrEmailInput
 
 // Module 15587 (RegisterPhoneOrEmailInput)
+import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6382 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import PhoneStore from "PhoneStore" /* 6362 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15570 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const RegistrationUIStore = fn(15570);
+let navigation;
+
+let hasOwnProperty;
+let metroRequire;
 ({ setRegistrationErrors: hasOwnProperty, useRegistrationUIStore: metroRequire } = RegistrationUIStore);
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/auth/native/components/RegisterPhoneOrEmailInput.tsx");
 
 export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(loginPhone) {
+  let autoFocus;
+  let inputError;
+  let onSubmit;
+  let str;
+  let str2;
+  let str3;
+  let stringResult;
+  let stringResult1;
+  let submitBehavior;
   loginPhone = loginPhone.loginPhone;
   const loginEmail = loginPhone.loginEmail;
   const setLoginPhone = loginPhone.setLoginPhone;
   const setLoginEmail = loginPhone.setLoginEmail;
   const inputMode = loginPhone.inputMode;
   ({ inputError, autoFocus } = loginPhone);
-  closure_7 = undefined;
+  let closure_7;
   let callback;
+  const tmp = loginPhone;
+  const tmp2 = setLoginPhone;
   ({ onSubmit, submitBehavior } = loginPhone);
-  const navigation = loginPhone(setLoginPhone[4]).useNavigation();
-  let ref = setLoginEmail.useRef(null);
-  const obj3 = { inputRef: ref, enabled: null };
   let obj = loginPhone(setLoginPhone[4]);
+  navigation = obj.useNavigation();
+  let ref = setLoginEmail.useRef(null);
+  const obj3 = { inputRef: ref, enabled: autoFocus };
   const tmp5 = loginEmail;
+  const tmp6 = loginEmail(setLoginPhone[5]);
   if (autoFocus == null) {
     autoFocus = false;
   }
-  obj3.enabled = autoFocus;
-  loginEmail(setLoginPhone[5])(obj3);
-  const tmp6 = loginEmail(setLoginPhone[5]);
+  tmp6(obj3);
   const items = [inputMode];
-  const stateFromStores = loginPhone(setLoginPhone[6]).useStateFromStores(items, () => inputMode.getCountryCode());
+  const tmpResult = tmp(tmp2[6]);
+  const stateFromStores = tmpResult.useStateFromStores(items, () => inputMode.getCountryCode());
+  const code = stateFromStores.code;
   const tmp9 = ref((errors) => errors.errors);
   closure_7 = tmp9;
   const items1 = [tmp9];
   callback = obj2.useCallback((arg0) => {
     if (null != closure_7[arg0]) {
       const obj = {};
-      const merged = Object.assign(tmp3);
-      delete tmp2[tmp];
+      const merged = Object.assign(tmp2);
+      delete obj[tmp];
       hasOwnProperty(obj);
     }
   }, items1);
@@ -69,8 +85,8 @@ export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(logi
   const items4 = [inputMode, loginEmail, loginPhone];
   const layoutEffect = obj2.useLayoutEffect(() => {
     if (ref.current !== inputMode) {
-      ref.current = tmp;
-      if (tmp === PhoneOrEmailUtils.PhoneOrEmailSelectorForceMode.PHONE) {
+      ref.current = inputMode;
+      if (inputMode === PhoneOrEmailUtils.PhoneOrEmailSelectorForceMode.PHONE) {
         const current2 = ref.current;
         if (current2 != null) {
           current2.setText(loginPhone);
@@ -83,37 +99,34 @@ export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(logi
       }
     }
   }, items4);
-  if (inputMode === loginPhone(setLoginPhone[7]).PhoneOrEmailSelectorForceMode.PHONE) {
+  if (inputMode === tmp(tmp2[7]).PhoneOrEmailSelectorForceMode.PHONE) {
     const intl2 = tmp(tmp2[9]).intl;
-    let stringResult = intl2.string(tmp(tmp2[9]).t["eJnn0+"]);
+    stringResult = intl2.string(tmp(tmp2[9]).t["eJnn0+"]);
   } else {
     const intl = tmp(tmp2[9]).intl;
     stringResult = intl.string(tmp(tmp2[9]).t.dI4d4S);
   }
-  if (inputMode === loginPhone(setLoginPhone[7]).PhoneOrEmailSelectorForceMode.PHONE) {
+  if (inputMode === tmp(tmp2[7]).PhoneOrEmailSelectorForceMode.PHONE) {
     const intl4 = tmp(tmp2[9]).intl;
-    let stringResult1 = intl4.string(tmp(tmp2[9]).t.wpJ1dT);
+    stringResult1 = intl4.string(tmp(tmp2[9]).t.wpJ1dT);
   } else {
     const intl3 = tmp(tmp2[9]).intl;
     stringResult1 = intl3.string(tmp(tmp2[9]).t.a17rBk);
   }
-  const obj4 = { ref, alpha2: stateFromStores.alpha2, countryCode: stateFromStores.code, onChange: callback1, onSubmitEditing: onSubmit, placeholder: stringResult, returnKeyType: "next", autoCapitalize: "none", accessibilityHint: stringResult1, label: stringResult, errorMessage: inputError, onPressCountrySelector: callback2, forceMode: inputMode, submitBehavior, autoComplete: null, keyboardType: null, clearable: true, status: null };
+  const obj4 = { ref, alpha2: stateFromStores.alpha2, countryCode: code, onChange: callback1, onSubmitEditing: onSubmit, placeholder: stringResult, returnKeyType: "next", autoCapitalize: "none", accessibilityHint: stringResult1, label: stringResult, errorMessage: inputError, onPressCountrySelector: callback2, forceMode: inputMode, submitBehavior, autoComplete: str, keyboardType: str2, clearable: true, status: str3 };
+  str = "email";
   const tmp16 = closure_7;
-  const tmpResult = loginPhone(setLoginPhone[6]);
-  let str = "email";
-  if (inputMode === loginPhone(setLoginPhone[7]).PhoneOrEmailSelectorForceMode.PHONE) {
+  const tmp5Result = tmp5(tmp2[10]);
+  if (inputMode === tmp(tmp2[7]).PhoneOrEmailSelectorForceMode.PHONE) {
     str = "tel";
   }
-  obj4.autoComplete = str;
-  let str2 = "email-address";
-  if (inputMode === loginPhone(setLoginPhone[7]).PhoneOrEmailSelectorForceMode.PHONE) {
+  str2 = "email-address";
+  if (inputMode === tmp(tmp2[7]).PhoneOrEmailSelectorForceMode.PHONE) {
     str2 = "number-pad";
   }
-  obj4.keyboardType = str2;
-  let str3;
+  str3 = undefined;
   if (null != inputError) {
     str3 = "error";
   }
-  obj4.status = str3;
-  return tmp16(tmp5(setLoginPhone[10]), obj4);
+  return tmp16(tmp5Result, obj4);
 };

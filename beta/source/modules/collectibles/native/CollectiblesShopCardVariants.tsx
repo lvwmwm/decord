@@ -4,106 +4,127 @@
 // Dependencies: [19, 17, 21, 4836, 576, 8303, 8331, 6554, 8332, 8227, 6973, 2]
 
 // Module 8330 (CollectiblesShopCardVariants)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 6554 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 6554 */;
 import useProductPurchaseState from "useProductPurchaseState" /* 8303 */;
 import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 8331 */;
-import PlusSmallIcon from "PlusSmallIcon" /* 8332 */;
-import noop from "module_19" /* 19 */;
+import PlusSmallIcon2 from "PlusSmallIcon" /* 8332 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let closure_4;
+let hasOwnProperty;
+let obj2;
 function VariantOption(variant) {
+  let items;
+  let items1;
+  let obj3;
   variant = variant.variant;
+  const zIndex = variant.zIndex;
   const tmp = closure_7(variant.isSelected);
-  let isPurchased = useProductPurchaseState.useProductPurchaseState(variant).isPurchased;
-  const obj2 = { style: null, children: null };
-  const items = [tmp.variantOption, { zIndex: variant.zIndex }];
-  obj2.style = items;
-  const obj3 = { style: null, children: null };
-  const items1 = [tmp.variantOptionInner, { backgroundColor: variant.variantValue }];
-  obj3.style = items1;
+  const obj = useProductPurchaseState;
+  let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
+  const obj2 = { style: items, children: React3(View, obj3) };
+  items = [tmp.variantOption, { zIndex }];
+  obj3 = { style: items1, children: isPurchased };
+  items1 = [tmp.variantOptionInner, { backgroundColor: variant.variantValue }];
   if (isPurchased) {
     const obj4 = { variant };
     isPurchased = tmp2(VariantCheckmark, obj4);
   }
-  obj3.children = isPurchased;
-  obj2.children = React4(View, obj3);
-  return React4(View, obj2);
+  return React3(View, obj2);
 }
 function VariantCheckmark(variant) {
-  const colors = nativeDefault.colors;
   const tmp = useIsVariantColorLightDefault(variant.variant);
-  const tmp2 = React4;
-  return tmp2(CheckmarkSmallIcon.CheckmarkSmallIcon, { color: useIsVariantColorLightDefault(variant.variant) ? colors.BLACK : colors.WHITE, size: "xxs" });
+  const CheckmarkSmallIcon = CheckmarkSmallIcon2.CheckmarkSmallIcon;
+  const colors = nativeDefault.colors;
+  const obj = { color: tmp ? colors.BLACK : colors.WHITE, size: "xxs" };
+  return React3(CheckmarkSmallIcon, obj);
 }
-function VariantOverflowOption(isSelected) {
-  const tmp = closure_7(isSelected.isSelected);
-  const obj = { style: null, children: null };
-  const items = [tmp.variantOption, { zIndex: isSelected.zIndex }];
-  obj.style = items;
-  const obj2 = { style: null, children: React4(PlusSmallIcon.PlusSmallIcon, { color: nativeDefault.colors.WHITE, size: "xxs" }) };
-  const items1 = [, ];
+function VariantOverflowOption(zIndex) {
+  let PlusSmallIcon;
+  let items;
+  let items1;
+  let obj2;
+  let obj3;
+  zIndex = zIndex.zIndex;
+  const tmp = closure_7(zIndex.isSelected);
+  const obj = { style: items, children: React3(View, obj2) };
+  items = [tmp.variantOption, { zIndex }];
+  obj2 = { style: items1, children: React3(PlusSmallIcon, obj3) };
+  items1 = [, ];
   ({ variantOptionInner: arr2[0], variantOverflowInner: arr2[1] } = tmp);
-  obj2.style = items1;
-  obj.children = React4(View, obj2);
-  return React4(View, obj);
+  obj3 = { color: nativeDefault.colors.WHITE, size: "xxs" };
+  PlusSmallIcon = PlusSmallIcon2.PlusSmallIcon;
+  return React3(View, obj);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-let createStyles = fn(4836);
-let obj = { variantsContainer: { display: "flex", flexDirection: "row", alignItems: "center", paddingStart: nativeDefault.space.PX_4 } };
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { variantsContainer: obj2 };
+obj2 = { display: "flex", flexDirection: "row", alignItems: "center", paddingStart: nativeDefault.space.PX_4 };
 let closure_6 = createStyles.createStyles(obj);
-createStyles = fn(4836);
+createStyles = createStyles_mod;
 let closure_7 = createStyles.createStyles((arg0) => {
-  const obj = { variantOption: null, variantOptionInner: null, variantOverflowInner: null };
-  const size = { marginStart: -nativeDefault.space.PX_4, width: 14, height: 14, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center" };
-  obj.variantOption = size;
-  const size1 = { width: "100%", height: "100%", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.round, borderWidth: null, borderColor: null };
-  let num = 0;
+  let num;
+  let size1;
+  const obj = { variantOption: size, variantOptionInner: size1, variantOverflowInner: { backgroundColor: nativeDefault.colors.ICON_MUTED } };
+  size = { marginStart: -nativeDefault.space.PX_4, width: 14, height: 14, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center" };
+  size1 = { width: "100%", height: "100%", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.round, borderWidth: num, borderColor: nativeDefault.colors.BUTTON_OUTLINE_PRIMARY_TEXT };
+  num = 0;
   if (arg0) {
     num = 1;
   }
-  size1.borderWidth = num;
-  size1.borderColor = nativeDefault.colors.BUTTON_OUTLINE_PRIMARY_TEXT;
-  obj.variantOptionInner = size1;
-  obj.variantOverflowInner = { backgroundColor: nativeDefault.colors.ICON_MUTED };
+  ({ backgroundColor: nativeDefault.colors.ICON_MUTED });
   return obj;
 });
-let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", paddingStart: nativeDefault.space.PX_4 };
-let size = fn(2);
-const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardVariants.tsx");
-
-export default noop.memo(function CardProductVariants(product) {
+const memoResult = react.memo(function CardProductVariants(product) {
+  let items;
+  let num5;
   product = product.product;
   let defaultVariantIndex;
   const tmp = closure_6();
-  defaultVariantIndex = defaultVariantIndex(8227).useDefaultVariantIndex(product);
-  const obj = defaultVariantIndex(8227);
+  let obj = defaultVariantIndex(8227);
+  defaultVariantIndex = obj.useDefaultVariantIndex(product);
+  const obj2 = defaultVariantIndex(6973);
   if (obj2.getIsVariantProduct(product)) {
     let num3 = 3;
     if (product.variants.length <= 4) {
       num3 = length;
     }
-    const obj3 = { style: tmp.variantsContainer, children: null };
     const variants = product.variants;
+    const obj3 = { style: tmp.variantsContainer, children: items };
     const substr = variants.slice(0, num3);
-    const items = [substr.map((variant, index) => React4(VariantOption, { variant, isSelected: index === defaultVariantIndex, zIndex: 4 - Math.abs(defaultVariantIndex - index) }, variant.variantValue)), ];
+    items = [
+      substr.map((variant, index) => {
+          const obj = { variant, isSelected: index === defaultVariantIndex, zIndex: 4 - Math.abs(defaultVariantIndex - index) };
+          return React3(VariantOption, obj, variant.variantValue);
+        }),
+
+    ];
     let tmp7Result = num3 !== length;
+    const tmp4 = closure_5;
+    const tmp5 = View;
     if (tmp7Result) {
-      const obj4 = { isSelected: defaultVariantIndex >= 3, zIndex: null };
-      let num5 = 0;
+      const obj4 = { isSelected: defaultVariantIndex >= 3, zIndex: num5 };
+      num5 = 0;
+      const tmp7 = closure_4;
+      const tmp8 = VariantOverflowOption;
       if (defaultVariantIndex >= 3) {
         num5 = 4;
       }
-      obj4.zIndex = num5;
-      tmp7Result = closure_4(VariantOverflowOption, obj4);
+      tmp7Result = tmp7(tmp8, obj4);
     }
     items[1] = tmp7Result;
-    obj3.children = items;
-    return closure_5(View, obj3);
+    return tmp4(tmp5, obj3);
   } else {
     return null;
   }
-  obj2 = defaultVariantIndex(6973);
 });
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardVariants.tsx");
+
+export default memoResult;

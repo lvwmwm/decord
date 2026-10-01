@@ -5,37 +5,41 @@
 // Exports: default
 
 // Module 12468 (InAppReportsUpsellsTableRow)
-import TableRow from "TableRow" /* 5917 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import TableRow2 from "TableRow" /* 5917 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUpsellsTableRow.tsx");
 
-export default function InAppReportsUpsellsTableRow(disabled) {
-  ({ title, disabledTitle, variant } = disabled);
+export default function InAppReportsUpsellsTableRow(description) {
+  let disabledTitle;
+  let icon;
+  let onPress;
+  let title;
+  let tmp4;
+  let variant;
+  ({ title, disabledTitle, variant } = description);
+  description = description.description;
   if (variant === undefined) {
     variant = "default";
   }
-  disabled = disabled.disabled;
-  ({ onPress, icon } = disabled);
+  const disabled = description.disabled;
+  ({ onPress, icon } = description);
   let tmp2 = title;
+  const TableRow = TableRow2.TableRow;
+  const tmp = jsx;
   if (disabled) {
     tmp2 = title;
     if (null != disabledTitle) {
       tmp2 = disabledTitle;
     }
   }
-  const obj = { label: tmp2, subLabel: null, onPress: null, icon: null, disabled: null, variant: null };
-  let description = null;
+  const obj = { label: tmp2, subLabel: tmp4, onPress, icon, disabled, variant };
+  tmp4 = null;
   if (!disabled) {
-    description = disabled.description;
+    tmp4 = description;
   }
-  obj.subLabel = description;
-  obj.onPress = onPress;
-  obj.icon = icon;
-  obj.disabled = disabled;
-  obj.variant = variant;
-  return jsx(TableRow.TableRow, { label: tmp2, subLabel: null, onPress: null, icon: null, disabled: null, variant: null });
+  return tmp(TableRow, obj);
 };

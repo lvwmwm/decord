@@ -5,16 +5,21 @@
 // Exports: getProcessedConfig, getReducedMotionFromConfig, handleExitingAnimation, handleLayoutTransition, maybeModifyStyleForKeyframe, saveSnapshot
 
 // Module 1707 (maybeModifyStyleForKeyframe)
-import _makeShareableClone from "_makeShareableClone" /* 1648 */;
-import _mod1663 from "module_1663" /* 1663 */;
+import LayoutAnimationType from "LayoutAnimationType" /* 1663 */;
 import _mod1679 from "module_1679" /* 1679 */;
+import EasingNameSymbol from "EasingNameSymbol" /* 1690 */;
 import TransitionType from "TransitionType" /* 1694 */;
+import WebEasings from "WebEasings" /* 1697 */;
 import BaseAnimationBuilder from "BaseAnimationBuilder" /* 1708 */;
 import _mod1724 from "module_1724" /* 1724 */;
 
-require = arg1;
-let dependencyMap = arg6;
+const require = globalThis.__r;
+let _require, dependencyMap, map, size;
+
+let tmp;
+const _updatePropsJS = tmp(1648);
 function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offsetParent) {
+  let _null;
   _require = cloneNodeResult;
   dependencyMap = dummyAnimationConfig;
   let flag = arg2;
@@ -25,14 +30,18 @@ function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offset
   if (offsetParent === undefined) {
     tmp = null;
   }
-  c3 = tmp;
+  let c3 = tmp;
   let maybeRemoveElement;
-  c9 = undefined;
+  let c9;
+  let maybeCallCallback;
+  let animationCancelHandler;
   const animationName = dummyAnimationConfig.animationName;
   const duration = dummyAnimationConfig.duration;
   const delay = dummyAnimationConfig.delay;
   const easing = dummyAnimationConfig.easing;
-  if (dummyAnimationConfig.animationType === require("module_1663").LayoutAnimationType.ENTERING) {
+  let tmp2 = _require;
+  if (dummyAnimationConfig.animationType === require("LayoutAnimationType").LayoutAnimationType.ENTERING) {
+    let tmp5 = globalThis;
     const _requestAnimationFrame = requestAnimationFrame;
     const animationFrame = requestAnimationFrame(function configureAnimation() {
       cloneNodeResult.style.animationName = animationName;
@@ -42,6 +51,7 @@ function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offset
     });
   } else {
     cloneNodeResult.style.animationName = animationName;
+    let tmp4 = globalThis;
     const _HermesInternal = HermesInternal;
     cloneNodeResult.style.animationDuration = "" + duration + "s";
     const _HermesInternal2 = HermesInternal;
@@ -52,51 +62,52 @@ function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offset
 
   };
   c9 = false;
-  function maybeCallCallback(arg0) {
+  maybeCallCallback = function maybeCallCallback(arg0) {
 
-  }
+  };
   cloneNodeResult.onanimationend = () => {
-    if (flag) {
+    let obj2;
+    const tmp = flag;
+    if (tmp) {
       const boundingClientRect = cloneNodeResult.getBoundingClientRect();
-      const size = { top: null, left: null, width: null, height: null, scrollOffsets: null };
+      size = { top: null, left: null, width: null, height: null, scrollOffsets: obj2 };
       ({ top: obj.top, left: obj.left, width: obj.width, height: obj.height } = boundingClientRect);
-      const obj2 = { scrollTopOffset: 0, scrollLeftOffset: 0 };
-      for (let parentElement = cloneNodeResult; parentElement; parentElement = parentElement.parentElement) {
-        let tmp3 = 0 !== parentElement.scrollTop;
-        if (tmp3) {
-          tmp3 = 0 === obj2.scrollTopOffset;
+      obj2 = { scrollTopOffset: 0, scrollLeftOffset: 0 };
+      let parentElement = cloneNodeResult;
+      const tmp2 = cloneNodeResult;
+      while (parentElement) {
+        let tmp4 = 0 !== parentElement.scrollTop;
+        if (tmp4) {
+          tmp4 = 0 === obj2.scrollTopOffset;
         }
-        if (tmp3) {
+        if (tmp4) {
           obj2.scrollTopOffset = parentElement.scrollTop;
         }
-        let tmp5 = 0 !== parentElement.scrollLeft && 0 === obj2.scrollLeftOffset;
-        if (tmp5) {
+        let tmp6 = 0 !== parentElement.scrollLeft && 0 === obj2.scrollLeftOffset;
+        if (tmp6) {
           obj2.scrollLeftOffset = parentElement.scrollLeft;
         }
+        parentElement = parentElement.parentElement;
       }
-      size.scrollOffsets = obj2;
       const snapshots = _mod1724.snapshots;
-      const result = snapshots.set(cloneNodeResult, size);
+      const result = snapshots.set(tmp2, size);
     }
     if (typeof maybeRemoveElement === "function") {
       let isDummy = cloneNodeResult.isDummy;
       if (isDummy) {
         let hasItem;
+        const obj4 = _null;
         if (_null != null) {
           hasItem = obj4.contains(obj3);
         }
         isDummy = hasItem;
-        obj4 = _null;
       }
       if (isDummy) {
-        obj3.removedAfterAnimation = true;
-        _null.removeChild(obj3);
+        cloneNodeResult.removedAfterAnimation = true;
+        _null.removeChild(cloneNodeResult);
       }
       if (typeof maybeCallCallback === "function") {
-        let callback = !c9;
-        if (!c9) {
-          callback = dummyAnimationConfig.callback;
-        }
+        const callback = !c9 && dummyAnimationConfig.callback;
         if (callback) {
           dummyAnimationConfig.callback(true);
           c9 = true;
@@ -109,26 +120,23 @@ function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offset
       throw new TypeError("Trying to call a non-function");
     }
   };
-  function animationCancelHandler() {
+  animationCancelHandler = function animationCancelHandler() {
     if (typeof maybeRemoveElement === "function") {
       let isDummy = cloneNodeResult.isDummy;
       if (isDummy) {
         let hasItem;
+        const obj2 = _null;
         if (_null != null) {
           hasItem = obj2.contains(obj);
         }
         isDummy = hasItem;
-        obj2 = _null;
       }
       if (isDummy) {
-        obj.removedAfterAnimation = true;
-        _null.removeChild(obj);
+        cloneNodeResult.removedAfterAnimation = true;
+        _null.removeChild(cloneNodeResult);
       }
       if (typeof maybeCallCallback === "function") {
-        let callback = !c9;
-        if (!c9) {
-          callback = dummyAnimationConfig.callback;
-        }
+        const callback = !c9 && dummyAnimationConfig.callback;
         if (callback) {
           dummyAnimationConfig.callback(false);
           c9 = true;
@@ -140,39 +148,40 @@ function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offset
     } else {
       throw new TypeError("Trying to call a non-function");
     }
-  }
+  };
   cloneNodeResult.onanimationstart = () => {
-    if (dummyAnimationConfig.animationType === _mod1663.LayoutAnimationType.ENTERING) {
-      _makeShareableClone._updatePropsJS({ visibility: "initial" }, cloneNodeResult);
-      const tmpResult = _makeShareableClone;
+    if (dummyAnimationConfig.animationType === LayoutAnimationType.LayoutAnimationType.ENTERING) {
+      const tmpResult = _updatePropsJS;
+      tmpResult._updatePropsJS({ visibility: "initial" }, cloneNodeResult);
     }
     const listener = cloneNodeResult.addEventListener("animationcancel", animationCancelHandler);
   };
-  if (!(animationName in require("TransitionType").Animations)) {
-    let result = tmp2(1725).scheduleAnimationCleanup(animationName, duration + delay, () => {
-      if (flag) {
+  if (!(animationName in tmp2(1694).Animations)) {
+    const tmp2Result = tmp2(1725);
+    let result = tmp2Result.scheduleAnimationCleanup(animationName, duration + delay, () => {
+      const tmp = flag;
+      if (tmp) {
+        const setElementPosition = _mod1724.setElementPosition;
+        _mod1724;
         const snapshots = _mod1724.snapshots;
-        _mod1724.setElementPosition(cloneNodeResult, snapshots.get(cloneNodeResult));
+        setElementPosition(cloneNodeResult, snapshots.get(cloneNodeResult));
       }
       if (typeof maybeRemoveElement === "function") {
         let isDummy = cloneNodeResult.isDummy;
         if (isDummy) {
           let hasItem;
+          const obj = _null;
           if (_null != null) {
-            hasItem = obj2.contains(tmp5);
+            hasItem = obj.contains(tmp7);
           }
           isDummy = hasItem;
-          obj2 = _null;
         }
         if (isDummy) {
-          tmp5.removedAfterAnimation = true;
-          _null.removeChild(tmp5);
+          cloneNodeResult.removedAfterAnimation = true;
+          _null.removeChild(cloneNodeResult);
         }
         if (typeof maybeCallCallback === "function") {
-          let callback = !c9;
-          if (!c9) {
-            callback = dummyAnimationConfig.callback;
-          }
+          const callback = !c9 && dummyAnimationConfig.callback;
           if (callback) {
             dummyAnimationConfig.callback(false);
             c9 = true;
@@ -184,72 +193,45 @@ function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offset
         throw new TypeError("Trying to call a non-function");
       }
     });
-    const tmp2Result = tmp2(1725);
   }
 }
 
 export const getReducedMotionFromConfig = function getReducedMotionFromConfig(entering) {
   if (entering.reduceMotionV) {
     const reduceMotionV = entering.reduceMotionV;
-    if (_mod1663.ReduceMotion.Never === reduceMotionV) {
+    if (LayoutAnimationType.ReduceMotion.Never === reduceMotionV) {
       return false;
-    } else if (tmp3(1663).ReduceMotion.Always === reduceMotionV) {
+    } else if (LayoutAnimationType.ReduceMotion.Always === reduceMotionV) {
       return true;
     } else {
-      return tmp3(1679).ReducedMotionManager.jsValue;
+      return _mod1679.ReducedMotionManager.jsValue;
     }
   } else {
     return _mod1679.ReducedMotionManager.jsValue;
   }
 };
 export const getProcessedConfig = function getProcessedConfig(animationWithInitialValues, animationType, entering) {
-  const obj = { animationName: animationWithInitialValues, animationType, duration: null, delay: null, easing: null, callback: null, reversed: null };
-  let num = 0.3;
+  let callbackV;
+  let easingByName;
+  let num;
+  let num3;
+  const obj = { animationName: animationWithInitialValues, animationType, duration: num, delay: num3, easing: easingByName, callback: callbackV, reversed: entering.reversed };
+  num = 0.3;
   if (animationWithInitialValues in TransitionType.Animations) {
     num = tmp(1694).Animations[animationWithInitialValues].duration;
   }
   if (undefined !== entering.durationV) {
     num = entering.durationV / 1000;
   }
-  obj.duration = num;
   const randomizeDelay = entering.randomizeDelay;
-  let num3 = 0;
+  num3 = 0;
   if (randomizeDelay) {
     const _Math = Math;
     const _Math2 = Math;
     num3 = Math.floor(Math.random() * 1001) / 1000;
   }
-  if (!entering.delayV) {
-    obj.delay = num3;
-    if (entering.easingV) {
-      const tmp8 = entering.easingV[tmp(undefined, 1690).EasingNameSymbol];
-      const tmpResult = tmp(1697);
-      if (tmp9) {
-        let easingByName = tmpResult.getEasingByName(tmp8);
-      } else {
-        let maybeGetBezierEasingResult = tmpResult.maybeGetBezierEasing(entering.easingV);
-        if (!maybeGetBezierEasingResult) {
-          const logger = tmp(1642).logger;
-          logger.warn("Selected easing is not currently supported on web. Using linear easing instead.");
-          maybeGetBezierEasingResult = tmp(1697).getEasingByName("linear");
-          const tmpResult3 = tmp(1697);
-        }
-        easingByName = maybeGetBezierEasingResult;
-      }
-      tmp9 = tmp8 in tmp(1697).WebEasings;
-    } else {
-      easingByName = tmp(1697).getEasingByName("linear");
-      const tmpResult4 = tmp(1697);
-    }
-    obj.easing = easingByName;
-    let callbackV = null;
-    if (undefined !== entering.callbackV) {
-      callbackV = entering.callbackV;
-    }
-    obj.callback = callbackV;
-    obj.reversed = entering.reversed;
-    return obj;
-  } else {
+  if (entering.delayV) {
+    let result;
     let num6 = entering.delayV;
     if (randomizeDelay) {
       if (num6 === undefined) {
@@ -257,12 +239,37 @@ export const getProcessedConfig = function getProcessedConfig(animationWithIniti
       }
       const _Math3 = Math;
       const _Math4 = Math;
-      num6 = num6 + 1;
-      let result = Math.floor(Math.random() * num6) / 1000;
+      result = Math.floor(Math.random() * (num6 + 1)) / 1000;
     } else {
       result = num6 / 1000;
     }
+    num3 = result;
   }
+  if (entering.easingV) {
+    const tmp7 = entering.easingV[EasingNameSymbol.EasingNameSymbol];
+    const tmp8 = tmp7 in WebEasings.WebEasings;
+    const tmpResult = WebEasings;
+    if (tmp8) {
+      easingByName = tmpResult.getEasingByName(tmp7);
+    } else {
+      let maybeGetBezierEasingResult = tmpResult.maybeGetBezierEasing(entering.easingV);
+      if (!maybeGetBezierEasingResult) {
+        const logger = tmp(1642).logger;
+        logger.warn("Selected easing is not currently supported on web. Using linear easing instead.");
+        const tmpResult3 = WebEasings;
+        maybeGetBezierEasingResult = tmpResult3.getEasingByName("linear");
+      }
+      easingByName = maybeGetBezierEasingResult;
+    }
+  } else {
+    const tmpResult4 = WebEasings;
+    easingByName = tmpResult4.getEasingByName("linear");
+  }
+  callbackV = null;
+  if (undefined !== entering.callbackV) {
+    callbackV = entering.callbackV;
+  }
+  return obj;
 };
 export const maybeModifyStyleForKeyframe = function maybeModifyStyleForKeyframe(style, entering) {
   if (entering instanceof BaseAnimationBuilder.Keyframe) {
@@ -279,10 +286,12 @@ export const maybeModifyStyleForKeyframe = function maybeModifyStyleForKeyframe(
   }
 };
 export const saveSnapshot = function saveSnapshot(_componentDOMRef) {
-  const size = _componentDOMRef.getBoundingClientRect();
-  const size1 = { top: size.top, left: size.left, width: size.width, height: size.height, scrollOffsets: null };
-  const obj = { scrollTopOffset: 0, scrollLeftOffset: 0 };
-  for (let parentElement = _componentDOMRef; parentElement; parentElement = parentElement.parentElement) {
+  let obj;
+  size = _componentDOMRef.getBoundingClientRect();
+  const size1 = { top: size.top, left: size.left, width: size.width, height: size.height, scrollOffsets: obj };
+  obj = { scrollTopOffset: 0, scrollLeftOffset: 0 };
+  let parentElement = _componentDOMRef;
+  while (parentElement) {
     let tmp = 0 !== parentElement.scrollTop;
     if (tmp) {
       tmp = 0 === obj.scrollTopOffset;
@@ -294,17 +303,20 @@ export const saveSnapshot = function saveSnapshot(_componentDOMRef) {
     if (tmp3) {
       obj.scrollLeftOffset = parentElement.scrollLeft;
     }
+    parentElement = parentElement.parentElement;
   }
-  size1.scrollOffsets = obj;
   const snapshots = _mod1724.snapshots;
   const result = snapshots.set(_componentDOMRef, size1);
 };
 export { setElementAnimation };
 export const handleLayoutTransition = function handleLayoutTransition(_componentDOMRef, processedConfig, easingY) {
+  let ENTRY_EXIT;
+  let dummyTransitionKeyframeName;
+  let tmp4;
   const animationName = processedConfig.animationName;
   if ("LinearTransition" === animationName) {
-    let ENTRY_EXIT = TransitionType.TransitionType.LINEAR;
-    let tmp4 = require;
+    ENTRY_EXIT = TransitionType.TransitionType.LINEAR;
+    tmp4 = require;
   } else if ("SequencedTransition" === animationName) {
     ENTRY_EXIT = TransitionType.TransitionType.SEQUENCED;
     tmp4 = require;
@@ -322,7 +334,8 @@ export const handleLayoutTransition = function handleLayoutTransition(_component
     tmp4 = require;
   }
   const tmp4Result = tmp4(1726);
-  ({ dummyTransitionKeyframeName, transitionKeyframeName: processedConfig.animationName } = tmp4(1726).TransitionGenerator(ENTRY_EXIT, easingY));
+  ({ dummyTransitionKeyframeName, transitionKeyframeName: processedConfig.animationName } = tmp4Result.TransitionGenerator(ENTRY_EXIT, easingY));
+  tmp4Result.TransitionGenerator(ENTRY_EXIT, easingY);
   if (ENTRY_EXIT === tmp4(1694).TransitionType.CURVED) {
     const tmp4Result2 = tmp4(1731);
     const result = tmp4Result2.prepareCurvedTransition(_componentDOMRef, processedConfig, easingY, dummyTransitionKeyframeName);
@@ -333,19 +346,19 @@ export const handleLayoutTransition = function handleLayoutTransition(_component
 export const handleExitingAnimation = function handleExitingAnimation(offsetParent, processedConfig) {
   let firstChild;
   let parentElement = offsetParent;
-  closure_0 = offsetParent;
+  let closure_0 = offsetParent;
   offsetParent = offsetParent.offsetParent;
   const cloneNodeResult = offsetParent.cloneNode();
-  dependencyMap = cloneNodeResult;
   cloneNodeResult.isDummy = true;
   cloneNodeResult.style.animationName = "";
   offsetParent.dummyClone = cloneNodeResult;
   offsetParent.style.animationName = "";
-  const map = new Map();
+  map = new Map();
   function saveScrollPosition(scrollTop) {
     const rect = { top: scrollTop.scrollTop, left: scrollTop.scrollLeft };
     const result = map.set(scrollTop, rect);
     const arr = Array.from(scrollTop.children);
+    const tmp3 = arr[Symbol.iterator]();
     while (tmp3 !== undefined) {
       let tmp6 = saveScrollPosition(tmp4);
       continue;
@@ -363,20 +376,24 @@ export const handleExitingAnimation = function handleExitingAnimation(offsetPare
   }
   function restoreScrollPosition(cloneNodeResult) {
     let tmp2 = cloneNodeResult;
+    const get = map.get;
     if (cloneNodeResult === cloneNodeResult) {
       tmp2 = closure_0;
     }
-    value = map.get(tmp2);
+    const value = get(tmp2);
     if (value) {
       ({ top: cloneNodeResult.scrollTop, left: cloneNodeResult.scrollLeft } = value);
     }
     const arr = Array.from(cloneNodeResult.children);
+    const tmp5 = arr[Symbol.iterator]();
     while (tmp5 !== undefined) {
       let tmp8 = restoreScrollPosition(tmp6);
       continue;
     }
   }
   let result = restoreScrollPosition(cloneNodeResult);
+  let tmp6 = require;
+  let tmp7 = dependencyMap;
   const snapshots = _mod1724.snapshots;
   let rect = snapshots.get(parentElement);
   let num = 0;
@@ -411,8 +428,9 @@ export const handleExitingAnimation = function handleExitingAnimation(offsetPare
   if (num3 !== scrollLeftOffset) {
     rect.left = rect.left + (scrollLeftOffset - num3);
   }
-  const snapshots2 = tmp6(1724).snapshots;
+  const snapshots2 = _mod1724.snapshots;
   const result1 = snapshots2.set(cloneNodeResult, rect);
-  _mod1724.setElementPosition(cloneNodeResult, rect);
+  const tmp6Result = _mod1724;
+  tmp6Result.setElementPosition(cloneNodeResult, rect);
   setElementAnimation(cloneNodeResult, processedConfig, false, offsetParent);
 };

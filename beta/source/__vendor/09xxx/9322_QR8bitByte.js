@@ -7,12 +7,11 @@
 import _mod9323 from "module_9323" /* 9323 */;
 
 class QR8bitByte {
-  constructor(arg0) {
-    obj = { mode: closure_0(closure_1[0]).MODE_8BIT_BYTE, data: global };
-    return;
+  constructor(data) {
+    ({ mode: _mod9323.MODE_8BIT_BYTE, data });
   }
 }
-QR8bitByte.prototype = {
+const obj = {
   getLength(arg0) {
     return this.data.length;
   },
@@ -30,5 +29,6 @@ QR8bitByte.prototype = {
     }
   }
 };
+QR8bitByte.prototype = obj;
 
 export default QR8bitByte;

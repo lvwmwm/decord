@@ -5,26 +5,23 @@
 // Exports: default
 
 // Module 9078 (EditGuildScheduledEventResetWarningAlert)
-import util from "util" /* 1115 */;
-import common_AlertDefault from "common/Alert" /* 5300 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import intl5 from "intl" /* 1115 */;
+import AlertDefault from "Alert" /* 5300 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildScheduledEventResetWarningAlert.tsx");
 
 export default function EditGuildScheduledEventResetWarningAlert(arg0) {
+  let onClose;
+  let onConfirm;
   ({ onClose, onConfirm } = arg0);
-  const obj = { onClose, onConfirm, title: null, body: null, confirmText: null, confirmColor: null, cancelText: null };
-  const intl = util.intl;
-  obj.title = intl.string(util.t.aNCYas);
-  const intl2 = util.intl;
-  obj.body = intl2.format(util.t.RWBa5X, {});
-  const intl3 = util.intl;
-  obj.confirmText = intl3.string(util.t["cY+Oob"]);
-  obj.confirmColor = common_AlertDefault.Colors.GREEN;
-  const intl4 = util.intl;
-  obj.cancelText = intl4.string(util.t["ETE/oC"]);
-  return jsx(common_AlertDefault, { onClose, onConfirm, title: null, body: null, confirmText: null, confirmColor: null, cancelText: null });
+  AlertDefault;
+  const intl = intl5.intl;
+  const intl2 = intl5.intl;
+  const intl3 = intl5.intl;
+  const intl4 = intl5.intl;
+  return <tmp onClose={onClose} onConfirm={onConfirm} title={intl.string(intl5.t.aNCYas)} body={intl2.format(intl5.t.RWBa5X, {})} confirmText={intl3.string(intl5.t["cY+Oob"])} confirmColor={AlertDefault.Colors.GREEN} cancelText={intl4.string(intl5.t["ETE/oC"])} />;
 };

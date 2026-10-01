@@ -5,24 +5,27 @@
 
 // Module 15492 (SafetyTermsOfServiceSetting)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const MarketingURLs = Constants.MarketingURLs;
-const pressable = SettingBuilders.createPressable({
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.lfC1KR);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.lfC1KR);
   },
-  parent: SettingsConstants.MobileUserSettings.DATA_AND_PRIVACY,
+  parent: MobileUserSettings.DATA_AND_PRIVACY,
   onPress: function onTermsOfServicePress() {
-    LinkingDefault.openURL(MarketingURLs.TERMS);
+    const obj = LinkingDefault;
+    obj.openURL(MarketingURLs.TERMS);
   },
   withArrow: true
-});
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/SafetyTermsOfServiceSetting.tsx");
 
 export default pressable;

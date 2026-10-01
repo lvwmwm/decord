@@ -10,7 +10,8 @@ import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
-const apexExperiment = ApexExperiment.createApexExperiment({ kind: "guild", name: "2026-09-guild-spaces", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let obj = { kind: "guild", name: "2026-09-guild-spaces", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/guild_space/GuildSpaceExperiment.tsx");
 
 export const GuildSpaceExperiment = apexExperiment;
@@ -24,8 +25,10 @@ export const getGuildSpaceExperimentEnabled = function getGuildSpaceExperimentEn
 };
 export const useGuildSpaceExperimentEnabled = function useGuildSpaceExperimentEnabled(id, location) {
   let tmp = id;
+  const useConfig = apexExperiment.useConfig;
   if (id == null) {
     tmp = EMPTY_STRING_SNOWFLAKE_ID;
   }
-  return apexExperiment.useConfig({ guildId: tmp, location }).enabled;
+  const obj = { guildId: tmp, location };
+  return useConfig(obj).enabled;
 };

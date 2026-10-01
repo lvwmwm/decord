@@ -5,25 +5,34 @@
 // Exports: HeaderTitle
 
 // Module 5979 (HeaderTitle)
-import jsxProd from "jsxProd" /* 21 */;
+import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1486 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 
-({ Animated: c2, Platform, StyleSheet } = get_ActivityIndicator);
-const jsx = jsxProd.jsx;
+let Platform;
+let StyleSheet;
+let c2;
+({ Animated: c2, Platform, StyleSheet } = react_native);
+const jsx = Fragment.jsx;
 const title = StyleSheet.create({ title: { fontSize: 20 } });
 
 export const HeaderTitle = function HeaderTitle(tintColor) {
+  let colors;
+  let fonts;
+  let items;
   let text = tintColor.tintColor;
+  const style = tintColor.style;
   const merged = Object.assign(tintColor, Object.assign({ tintColor: 0, style: 0 }));
-  const theme = Link.useTheme();
-  const obj2 = { role: "heading", "aria-level": "1", numberOfLines: 1 };
+  const obj = Link;
+  const theme = obj.useTheme();
+  const obj2 = { role: "heading", "aria-level": "1", numberOfLines: 1, style: items };
   ({ colors, fonts } = theme);
+  const Text = RN.Text;
   const merged1 = Object.assign(merged);
+  const tmp3 = jsx;
   if (undefined === text) {
     text = colors.text;
   }
-  const items = [{ color: text }, fonts.medium, title.title, tintColor.style];
-  obj2.style = items;
-  return <RN.Text role="heading" aria-level="1" numberOfLines={1} />;
+  items = [{ color: text }, fonts.medium, title.title, style];
+  return tmp3(Text, obj2);
 };

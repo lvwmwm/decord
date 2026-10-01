@@ -9,21 +9,28 @@ import getPrimaryAppCommand from "getPrimaryAppCommand" /* 8790 */;
 import useIsAppDMDefault from "useIsAppDM" /* 11627 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
 const canLaunchFrame = tmp(8783);
 const result = size.fileFinishedImporting("modules/app_dms/useShowTryItOutButtonInAppLauncher.tsx");
 
 export default function useShowTryItOutButtonInAppLauncher(arg0) {
+  let application;
+  let botUserId;
+  let context;
   ({ context, application, botUserId } = arg0);
-  let isPrimaryAppCommandUsableInAppDM = getPrimaryAppCommand.useIsPrimaryAppCommandUsableInAppDM({ context, applicationId: application.id, botUserId });
-  let channel;
+  const obj = getPrimaryAppCommand;
   const obj2 = { context, applicationId: application.id, botUserId };
+  let isPrimaryAppCommandUsableInAppDM = obj.useIsPrimaryAppCommandUsableInAppDM(obj2);
+  let channel;
+  const tmp4 = useIsAppDMDefault;
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  const tmp4Result = useIsAppDMDefault(channel);
-  const canLaunchFrameResult = canLaunchFrame.canLaunchFrame(application);
-  let tmp8 = !canLaunchFrameResult;
-  if (!canLaunchFrameResult) {
+  const tmp4Result = tmp4(channel);
+  const tmpResult = canLaunchFrame;
+  let tmp8 = !tmpResult.canLaunchFrame(application);
+  tmpResult.canLaunchFrame(application);
+  if (tmp8) {
     if (isPrimaryAppCommandUsableInAppDM) {
       isPrimaryAppCommandUsableInAppDM = null != botUserId;
     }

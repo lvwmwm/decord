@@ -4,19 +4,24 @@
 // Exports: useScrollHandler
 
 // Module 6071
-import cancelAnimation from "cancelAnimation" /* 1638 */;
+import _mod1638 from "module_1638" /* 1638 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = arg1;
-let dependencyMap = arg6;
 let __initData = { code: "function pnpm_useScrollHandlerTs1(event,context){const{handleOnScroll,onScroll,runOnJS}=this.__closure;handleOnScroll(event,context);if(onScroll){runOnJS(onScroll)({nativeEvent:event});}}" };
 let closure_3 = { code: "function pnpm_useScrollHandlerTs2(event,context){const{handleOnBeginDrag,onScrollBeginDrag,runOnJS}=this.__closure;handleOnBeginDrag(event,context);if(onScrollBeginDrag){runOnJS(onScrollBeginDrag)({nativeEvent:event});}}" };
 let closure_4 = { code: "function pnpm_useScrollHandlerTs3(event,context){const{handleOnEndDrag,onScrollEndDrag,runOnJS}=this.__closure;handleOnEndDrag(event,context);if(onScrollEndDrag){runOnJS(onScrollEndDrag)({nativeEvent:event});}}" };
 
 export const useScrollHandler = (arg0, onScroll, onScrollBeginDrag, onScrollEndDrag) => {
+  let fn;
+  let fn2;
+  let items;
+  let obj4;
+  let useAnimatedScrollHandler;
   let useScrollEventsHandlersDefault = arg0;
   if (arg0 === undefined) {
+    const tmp2 = dependencyMap;
     useScrollEventsHandlersDefault = require("module_6072").useScrollEventsHandlersDefault;
   }
   _require = onScroll;
@@ -24,9 +29,10 @@ export const useScrollHandler = (arg0, onScroll, onScrollBeginDrag, onScrollEndD
   __initData = onScrollEndDrag;
   let workletNoop2;
   let workletNoop3;
-  const animatedRef = require("cancelAnimation").useAnimatedRef();
-  let obj = require("cancelAnimation");
-  const sharedValue = require("cancelAnimation").useSharedValue(0);
+  let obj = require("module_1638");
+  const animatedRef = obj.useAnimatedRef();
+  let obj2 = require("module_1638");
+  const sharedValue = obj2.useSharedValue(0);
   const scrollEventsHandlersDefault = useScrollEventsHandlersDefault(animatedRef, sharedValue, arg4);
   let workletNoop = scrollEventsHandlersDefault.handleOnScroll;
   if (undefined === workletNoop) {
@@ -48,57 +54,47 @@ export const useScrollHandler = (arg0, onScroll, onScrollBeginDrag, onScrollEndD
   if (undefined === workletNoop5) {
     workletNoop5 = tmp3(6062).workletNoop;
   }
-  const obj3 = { scrollHandler: null, scrollableRef: null, scrollableContentOffsetY: null };
-  let obj2 = require("cancelAnimation");
-  const obj4 = { onScroll: null, onBeginDrag: null, onEndDrag: null, onMomentumBegin: null, onMomentumEnd: null };
-  const fn = function v(nativeEvent, arg1) {
+  const obj3 = { scrollHandler: useAnimatedScrollHandler(obj4, items), scrollableRef: animatedRef, scrollableContentOffsetY: sharedValue };
+  obj4 = { onScroll: fn, onBeginDrag: fn2, onEndDrag: O, onMomentumBegin: workletNoop5, onMomentumEnd: workletNoop4 };
+  fn = function v(nativeEvent, arg1) {
     workletNoop(nativeEvent, arg1);
-    if (closure_0) {
+    if (onScroll) {
       const obj2 = { nativeEvent };
-      cancelAnimation.runOnJS(tmp2)(obj2);
+      const obj = _mod1638;
+      obj.runOnJS(tmp2)(obj2);
     }
   };
-  const tmp3Result = require("cancelAnimation");
-  fn.__closure = { handleOnScroll: workletNoop, onScroll, runOnJS: require("cancelAnimation").runOnJS };
+  useAnimatedScrollHandler = require("module_1638").useAnimatedScrollHandler;
+  fn.__closure = { handleOnScroll: workletNoop, onScroll, runOnJS: require("module_1638").runOnJS };
   fn.__workletHash = 13105350120634;
   fn.__initData = __initData;
-  obj4.onScroll = fn;
-  const fn2 = function _(nativeEvent, arg1) {
+  fn2 = function _(nativeEvent, arg1) {
     workletNoop2(nativeEvent, arg1);
-    if (closure_1) {
+    if (onScrollBeginDrag) {
       const obj2 = { nativeEvent };
-      cancelAnimation.runOnJS(tmp2)(obj2);
+      const obj = _mod1638;
+      obj.runOnJS(tmp2)(obj2);
     }
   };
-  const obj5 = { handleOnScroll: workletNoop, onScroll, runOnJS: require("cancelAnimation").runOnJS };
-  fn2.__closure = { handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: require("cancelAnimation").runOnJS };
+  ({ handleOnScroll: workletNoop, onScroll, runOnJS: require("module_1638").runOnJS });
+  fn2.__closure = { handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: require("module_1638").runOnJS };
   fn2.__workletHash = 803385440782;
   fn2.__initData = workletNoop;
-  obj4.onBeginDrag = fn2;
+  ({ handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: require("module_1638").runOnJS });
   class O {
-    constructor(arg0, arg1) {
-      tmp = workletNoop(arg0, onScroll);
-      if (closure_2) {
-        tmp3 = closure_0;
-        tmp4 = closure_1;
-        obj = closure_0(closure_1[1]);
-        obj1 = { nativeEvent: null };
-        obj1.nativeEvent = arg0;
-        tmp5 = obj.runOnJS(tmp2)(obj1);
+    constructor(nativeEvent, arg1) {
+      workletNoop3(nativeEvent, arg1);
+      if (onScrollEndDrag) {
+        const obj2 = { nativeEvent };
+        const obj = _mod1638;
+        obj.runOnJS(tmp2)(obj2);
       }
-      return;
     }
   }
-  const obj6 = { handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: require("cancelAnimation").runOnJS };
-  O.__closure = { handleOnEndDrag: workletNoop3, onScrollEndDrag, runOnJS: require("cancelAnimation").runOnJS };
+  O.__closure = { handleOnEndDrag: workletNoop3, onScrollEndDrag, runOnJS: require("module_1638").runOnJS };
   O.__workletHash = 3274737678599;
   O.__initData = workletNoop2;
-  obj4.onEndDrag = O;
-  obj4.onMomentumBegin = workletNoop5;
-  obj4.onMomentumEnd = workletNoop4;
-  const items = [workletNoop, workletNoop2, workletNoop3, workletNoop5, workletNoop4, onScroll, onScrollBeginDrag, onScrollEndDrag];
-  obj3.scrollHandler = tmp3Result.useAnimatedScrollHandler(obj4, items);
-  obj3.scrollableRef = animatedRef;
-  obj3.scrollableContentOffsetY = sharedValue;
+  items = [workletNoop, workletNoop2, workletNoop3, workletNoop5, workletNoop4, onScroll, onScrollBeginDrag, onScrollEndDrag];
+  ({ handleOnEndDrag: workletNoop3, onScrollEndDrag, runOnJS: require("module_1638").runOnJS });
   return obj3;
 };

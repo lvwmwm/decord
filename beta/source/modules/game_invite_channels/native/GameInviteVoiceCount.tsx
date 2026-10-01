@@ -5,33 +5,37 @@
 // Exports: default
 
 // Module 11508 (GameInviteVoiceCount)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4860 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+let hasOwnProperty;
+let metroRequire;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center", gap: 4, marginLeft: 8 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_invite_channels/native/GameInviteVoiceCount.tsx");
 
 export default function GameInviteVoiceCount(channel) {
+  let items2;
   channel = channel.channel;
-  const tmp = closure_7();
   const items = [SortedVoiceStateStore];
   const items1 = [channel];
-  const stateFromStores = channel(504).useStateFromStores(items, () => SortedVoiceStateStore.getVoiceStatesForChannel(channel).length, items1);
+  const tmp = closure_7();
+  const obj = channel(504);
+  const stateFromStores = obj.useStateFromStores(items, () => SortedVoiceStateStore.getVoiceStatesForChannel(channel).length, items1);
   let tmp5 = null;
   if (0 !== stateFromStores) {
-    const obj2 = { style: tmp.container, children: null };
+    const obj2 = { style: tmp.container, children: items2 };
     const obj3 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    const items2 = [closure_5(tmp2(5415).VoiceNormalIcon, obj3), ];
+    const VoiceNormalIcon = tmp2(5415).VoiceNormalIcon;
+    items2 = [closure_5(VoiceNormalIcon, obj3), ];
     const obj4 = { variant: "text-sm/medium", color: "text-feedback-positive", children: stateFromStores };
-    items2[1] = closure_5(tmp2(4832).Text, obj4);
-    obj2.children = items2;
+    items2[1] = closure_5(channel(4832).Text, obj4);
     tmp5 = closure_6(View, obj2);
   }
   return tmp5;

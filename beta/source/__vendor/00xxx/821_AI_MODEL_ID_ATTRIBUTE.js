@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 821 (AI_MODEL_ID_ATTRIBUTE)
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const AI_MODEL_ID_ATTRIBUTE = "ai.model.id";
 export const AI_OPERATION_ID_ATTRIBUTE = "ai.operationId";

@@ -5,37 +5,43 @@
 // Exports: default
 
 // Module 15861 (ChannelBadge)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
+import NumberUtils from "NumberUtils" /* 1882 */;
 import NewBadgeDefault from "NewBadge" /* 11779 */;
-import MentionsBadgeDefault from "MentionsBadge" /* 15862 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles(() => ({ channelInfoContainer: { paddingStart: 4 } }));
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/ChannelBadge.tsx");
 
 export default function ChannelBadge(arg0) {
+  let isMentionLowImportance;
+  let isNewChannel;
+  let locale;
+  let mentionCount;
+  let muted;
+  let postsWithUnreadsCount;
+  let tmp2Result;
+  let tmp5;
   ({ mentionCount, postsWithUnreadsCount, muted } = arg0);
   ({ isMentionLowImportance, isNewChannel } = arg0);
   const tmp = closure_6();
   const items = [LocaleStore];
-  const stateFromStores = useStateFromStores.useStateFromStores(items, () => locale.locale);
+  const obj = useStateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   if (null != mentionCount) {
     if (mentionCount > 0) {
-      const obj2 = { style: tmp.channelInfoContainer, children: null };
-      const obj3 = { mentionsCount: mentionCount, isMentionLowImportance };
-      obj2.children = jsx(MentionsBadgeDefault, { mentionsCount: mentionCount, isMentionLowImportance });
-      let tmp5 = <View style={tmp.channelInfoContainer}>{null}</View>;
+      tmp5 = <View style={tmp.channelInfoContainer}>{null}</View>;
     }
     return tmp5;
   }
   if (isNewChannel) {
-    const obj4 = { style: tmp.channelInfoContainer, children: jsx(NewBadgeDefault, {}) };
     tmp5 = <View style={tmp.channelInfoContainer}>{jsx(NewBadgeDefault, {})}</View>;
   } else {
     tmp5 = null;
@@ -46,11 +52,10 @@ export default function ChannelBadge(arg0) {
         if (null != postsWithUnreadsCount) {
           tmp5 = null;
           if (postsWithUnreadsCount > 0) {
-            const obj5 = { style: tmp.channelInfoContainer, children: null };
-            const obj6 = { variant: "text-xs/semibold", color: "text-muted", children: tmp2(1882).humanizeValue(postsWithUnreadsCount, stateFromStores) };
-            obj5.children = jsx(tmp2(4832).Text, { variant: "text-xs/semibold", color: "text-muted", children: tmp2(1882).humanizeValue(postsWithUnreadsCount, stateFromStores) });
+            ({ variant: "text-xs/semibold", color: "text-muted", children: tmp2Result.humanizeValue(postsWithUnreadsCount, stateFromStores) });
+            const Text = tmp2(4832).Text;
             tmp5 = <View style={tmp.channelInfoContainer}>{null}</View>;
-            const tmp2Result = tmp2(1882);
+            tmp2Result = NumberUtils;
           }
         }
       }

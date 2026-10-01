@@ -5,28 +5,34 @@
 // Exports: useModeratorOverlayChannelState
 
 // Module 8941 (ModeratorOverlayState)
-import _mod4452 from "module_4452" /* 4452 */;
-import identity from "module_1243" /* 1243 */;
+import _slicedToArray from "_slicedToArray" /* 4452 */;
+import module_1243 from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = identity.createWithEqualityFn((arg0, arg1) => {
-  closure_0 = arg0;
-  dependencyMap = arg1;
-  const obj = {
+let closure_2 = module_1243.createWithEqualityFn((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let obj = {
     overlayDismissedChannelIds: new Set(),
     dismissOverlay(arg0) {
-      const overlayDismissedChannelIds = dependencyMap().overlayDismissedChannelIds;
+      const overlayDismissedChannelIds = closure_1().overlayDismissedChannelIds;
       overlayDismissedChannelIds.add(arg0);
-      overlayDismissedChannelIds(1248).batchUpdates(() => overlayDismissedChannelIds({ overlayDismissedChannelIds }));
+      let obj = overlayDismissedChannelIds(closure_1[1]);
+      obj.batchUpdates(() => {
+        const obj = { overlayDismissedChannelIds };
+        return overlayDismissedChannelIds(obj);
+      });
     }
   };
+  new Set();
   return obj;
 });
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/ModeratorOverlayState.tsx");
 
 export const useModeratorOverlayChannelState = function useModeratorOverlayChannelState(id) {
-  closure_0 = id;
-  closure_1 = closure_2((dismissOverlay) => dismissOverlay.dismissOverlay, _mod4452.shallow);
-  const items = [!closure_2((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _mod4452.shallow).has(id), () => closure_1(closure_0)];
+  let closure_0 = id;
+  const obj = closure_2((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _slicedToArray.shallow);
+  let closure_1 = closure_2((dismissOverlay) => dismissOverlay.dismissOverlay, _slicedToArray.shallow);
+  const items = [!obj.has(id), () => closure_1(closure_0)];
   return items;
 };

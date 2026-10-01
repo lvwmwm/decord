@@ -6,9 +6,9 @@
 
 // Module 8921 (useDispatchOpenActivity)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/useDispatchOpenActivity.tsx");
 
 export default function useDispatchOpenActivity(connectedEmbeddedActivity) {
@@ -18,14 +18,16 @@ export default function useDispatchOpenActivity(connectedEmbeddedActivity) {
     applicationId = connectedEmbeddedActivity.applicationId;
   }
   const items = [applicationId, connectedEmbeddedActivity];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     let tmp2 = null != connectedEmbeddedActivity;
+    const tmp = connectedEmbeddedActivity;
     if (tmp2) {
       tmp2 = null != applicationId;
     }
     if (tmp2) {
-      const obj2 = { type: "EMBEDDED_ACTIVITY_OPEN", location: connectedEmbeddedActivity.location, applicationId };
-      DispatcherDefault.dispatch(obj2);
+      const obj2 = { type: "EMBEDDED_ACTIVITY_OPEN", location: tmp.location, applicationId };
+      const obj = DispatcherDefault;
+      obj.dispatch(obj2);
     }
   }, items);
 };

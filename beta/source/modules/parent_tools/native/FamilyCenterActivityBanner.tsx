@@ -6,74 +6,90 @@
 
 // Module 14411 (FamilyCenterActivityBanner)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl5 from "intl" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useUserLinks from "useUserLinks" /* 8105 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8106 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11398 */;
-import noop from "module_19" /* 19 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 11398 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let tmp2;
 const FamilyCenterBannerButton = tmp2(14412);
-require = fn;
 function FamilyCenterActivityBannerButton() {
+  let tmp2Result;
   const tmp = closure_7();
-  const hasActiveLinks = useUserLinks.useHasActiveLinks();
+  const obj = useUserLinks;
+  const hasActiveLinks = obj.useHasActiveLinks();
   const tmp5 = useIsInAdultAgeGroupDefault();
-  let tmp6 = null;
+  let tmp7Result = null;
+  const obj2 = useUserLinks;
   if (!obj2.useHasMaxConnections()) {
-    if (tmp5) {
-      tmp6 = null;
+    if (!tmp5) {
+      const obj3 = { style: tmp.container, children: hasOwnProperty(tmp5 ? tmp2Result.FamilyCenterParentQRCodeButton : tmp2Result.FamilyCenterTeenQRCodeButton, {}) };
+      tmp2Result = FamilyCenterBannerButton;
+      tmp7Result = tmp7(_false, obj3);
+    } else {
+      tmp7Result = null;
     }
-    const obj3 = { style: tmp.container, children: null };
-    let tmp7Result1 = FamilyCenterBannerButton;
-    tmp7Result1 = tmp7(tmp5 ? tmp7Result1.FamilyCenterParentQRCodeButton : tmp7Result1.FamilyCenterTeenQRCodeButton, {});
-    obj3.children = tmp7Result1;
-    hasOwnProperty(React3, obj3);
   }
-  return tmp6;
+  return tmp7Result;
 }
-get_ActivityIndicator = fn(17);
-({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let createStyles = fn(4836);
+({ View: c3, Image: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
 let closure_7 = createStyles.createStyles({ container: { width: "100%" } });
-createStyles = fn(4836);
-let obj3 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 16, padding: 24, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2 }, art: null, header: null, description: null };
-let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 16, padding: 24, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2 };
-obj3.art = { maxWidth: 243, maxHeight: 119, marginBottom: nativeDefault.space.PX_8 };
-let obj5 = { maxWidth: 243, maxHeight: 119, marginBottom: nativeDefault.space.PX_8 };
-obj3.header = { marginBottom: nativeDefault.space.PX_8, textAlign: "center" };
-obj3.description = { textAlign: "center" };
-let closure_9 = createStyles.createStyles(obj3);
-const size = fn(2);
+createStyles = createStyles_mod;
+let obj = { container: obj2, art: obj3, header: obj4, description: { textAlign: "center" } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 16, padding: 24, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2 };
+createStyles = createStyles.createStyles;
+obj3 = { maxWidth: 243, maxHeight: 119, marginBottom: nativeDefault.space.PX_8 };
+obj4 = { marginBottom: nativeDefault.space.PX_8, textAlign: "center" };
+let closure_9 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityBanner.tsx");
 
 export default function FamilyCenterActivityBanner() {
-  const tmp4 = closure_9();
-  const tmp = importDefault;
+  let items;
   const tmp3 = useIsInAdultAgeGroupDefault();
-  const hasMaxConnections = useUserLinks.useHasMaxConnections();
-  const intl = util.intl;
-  const obj2 = useAgeSpecificText;
-  const intl2 = util.intl;
-  const ageSpecificText = obj2.useAgeSpecificText(intl.string(_modDef2487["T7GyW+"]), intl2.string(_modDef2487.goKE2b));
+  const tmp4 = closure_9();
+  const obj = useUserLinks;
+  const hasMaxConnections = obj.useHasMaxConnections();
+  const useAgeSpecificText = useAgeSpecificText3.useAgeSpecificText;
+  useAgeSpecificText3;
+  const intl = intl5.intl;
   const stringResult = intl.string(_modDef2487["T7GyW+"]);
-  const intl3 = util.intl;
-  const obj3 = useAgeSpecificText;
-  const intl4 = util.intl;
-  const obj4 = { style: tmp4.container, children: null };
-  const obj5 = { source: null, style: null };
-  const ageSpecificText1 = obj3.useAgeSpecificText(intl3.format(_modDef2487.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(_modDef2487.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  obj5.source = tmp(tmp3 ? 14419 : 14420);
-  obj5.style = tmp4.art;
-  const items = [hasOwnProperty(React4, obj5), hasOwnProperty(Text_Text.Text, { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText }), hasOwnProperty(Text_Text.Text, { style: tmp4.description, variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 }), ];
-  let tmp13Result = null;
+  const intl2 = intl5.intl;
+  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2487.goKE2b));
+  const useAgeSpecificText2 = useAgeSpecificText3.useAgeSpecificText;
+  useAgeSpecificText3;
+  const intl3 = intl5.intl;
+  const formatResult = intl3.format(_modDef2487.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" });
+  const intl4 = intl5.intl;
+  const obj2 = { style: tmp4.container, children: items };
+  const obj3 = { source: importDefault(tmp3 ? 14419 : 14420), style: tmp4.art };
+  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2487.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
+  items = [hasOwnProperty(React3, obj3), , , ];
+  const obj4 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };
+  items[1] = hasOwnProperty(Text_Text.Text, obj4);
+  const obj5 = { style: tmp4.description, variant: "text-sm/medium", color: "text-muted", children: ageSpecificText2 };
+  items[2] = hasOwnProperty(Text_Text.Text, obj5);
+  let tmp15Result = null;
+  const tmp13 = metroRequire;
+  const tmp14 = _false;
   if (!hasMaxConnections) {
-    tmp13Result = tmp13(FamilyCenterActivityBannerButton, {});
+    tmp15Result = tmp15(FamilyCenterActivityBannerButton, {});
   }
-  items[3] = tmp13Result;
-  obj4.children = items;
-  return timestampProducer(React3, obj4);
+  items[3] = tmp15Result;
+  return tmp13(tmp14, obj2);
 };

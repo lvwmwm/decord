@@ -1,0 +1,10 @@
+// Module ID: 14424
+// Function ID: 14425
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 14424 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f5391dfd0b449071e14dba1ee723d353", name: "ChatCheckIcon", type: "png" });

@@ -4,18 +4,20 @@
 // Exports: useScheduleUpdate
 
 // Module 1562
-import NavigationBuilderContext from "NavigationBuilderContext" /* 1515 */;
-import _mod1563 from "module_1563" /* 1563 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 1515 */;
+import react3 from "react" /* 1563 */;
+import react from "react" /* 19 */;
 
-require = arg1;
 
 export const useScheduleUpdate = function useScheduleUpdate(arg0) {
-  closure_0 = arg0;
-  const context = noop.useContext(NavigationBuilderContext.NavigationBuilderContext);
-  ({ scheduleUpdate: dependencyMap, flushUpdates } = context);
-  const insertionEffect = noop.useInsertionEffect(() => {
-    dependencyMap(closure_0);
+  let closure_129_1;
+  let flushUpdates;
+  let closure_0 = arg0;
+  const context = react.useContext(react2.NavigationBuilderContext);
+  ({ scheduleUpdate: closure_129_1, flushUpdates } = context);
+  const insertionEffect = react.useInsertionEffect(() => {
+    closure_1_1(closure_0);
   });
-  const clientLayoutEffect = _mod1563.useClientLayoutEffect(flushUpdates);
+  const obj = react3;
+  const clientLayoutEffect = obj.useClientLayoutEffect(flushUpdates);
 };

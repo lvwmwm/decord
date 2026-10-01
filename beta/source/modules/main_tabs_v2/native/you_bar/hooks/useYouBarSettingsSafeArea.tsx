@@ -13,14 +13,19 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarSettingsSafeArea.tsx");
 
 export const useYouBarSettingsCustomHeaderPaddingTop = function useYouBarSettingsCustomHeaderPaddingTop() {
+  const top = useSafeAreaInsetsDefault().top;
   const tmp = useIsWindowLargeDefault();
   let num = 16;
+  const obj = utils_PlatformUtils;
+  const tmp2 = obj.isIOS() || tmp;
   if (!tmp2) {
-    num = useSafeAreaInsetsDefault().top;
+    num = top;
   }
   return num;
 };
 export const useYouBarSettingsOutsideSafeAreaTop = function useYouBarSettingsOutsideSafeAreaTop() {
   const tmp = useIsWindowLargeDefault();
-  return utils_PlatformUtils.isIOS() || tmp;
+  const obj = utils_PlatformUtils;
+  const tmp2 = obj.isIOS() || tmp;
+  return tmp2;
 };

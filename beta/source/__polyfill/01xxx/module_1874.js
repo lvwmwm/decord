@@ -4,22 +4,26 @@
 // Exports: default
 
 // Module 1874
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import KeyboardControllerNative from "KeyboardControllerNative" /* 1628 */;
 import _mod1832 from "module_1832" /* 1832 */;
 import KeyboardAvoidingView from "KeyboardAvoidingView" /* 1843 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 
-require = fn;
-const Animated = fn(17).Animated;
-const jsx = fn(21).jsx;
-let closure_3 = Animated.createAnimatedComponent(fn(1628).KeyboardBackgroundView);
+const Animated = react_native.Animated;
+const jsx = Fragment.jsx;
+let closure_3 = Animated.createAnimatedComponent(KeyboardControllerNative.KeyboardBackgroundView);
 
-export default function _default(children) {
-  const enabled = children.enabled;
+export default function _default(enabled) {
+  enabled = enabled.enabled;
   let tmp = undefined === enabled;
+  const children = enabled.children;
   if (!tmp) {
     tmp = enabled;
   }
-  const obj2 = { enabled: tmp, children: null };
-  obj2.children = <closure_3 style={{ opacity: _mod1832.useKeyboardAnimation().progress }}>{arg0.children}</closure_3>;
-  return jsx(KeyboardAvoidingView.KeyboardStickyView, { enabled: tmp, children: null });
+  const obj = _mod1832;
+  ({ style: { opacity: obj.useKeyboardAnimation().progress }, children });
+  const KeyboardStickyView = KeyboardAvoidingView.KeyboardStickyView;
+  return <KeyboardStickyView enabled={tmp}>{null}</KeyboardStickyView>;
 };

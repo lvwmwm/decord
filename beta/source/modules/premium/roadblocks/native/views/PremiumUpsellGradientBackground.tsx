@@ -5,32 +5,37 @@
 // Exports: PremiumUpsellGradientBackground
 
 // Module 9767 (PremiumUpsellGradientBackground)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import noop from "module_19" /* 19 */;
+import ColorConstants from "ColorConstants" /* 6852 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Gradients = fn(6852).Gradients;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { gradient: null };
-const merged = Object.assign(fn(17).StyleSheet.absoluteFillObject);
-obj2.gradient = { opacity: 0.1 };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const StyleSheet = react_native.StyleSheet;
+const Gradients = ColorConstants.Gradients;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { gradient: obj2 };
+createStyles = createStyles.createStyles;
+obj2 = { opacity: 0.1 };
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+let closure_5 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellGradientBackground.tsx");
 
 export const PremiumUpsellGradientBackground = function PremiumUpsellGradientBackground(useTier0UpsellContent) {
-  const obj = { style: closure_5().gradient, start: null, end: null, colors: null };
-  const tmp = closure_5();
+  let PREMIUM_TIER_2_TRI_COLOR;
+  useTier0UpsellContent = useTier0UpsellContent.useTier0UpsellContent;
+  const obj = { style: closure_5().gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: PREMIUM_TIER_2_TRI_COLOR };
   const tmp2 = jsx;
-  obj.start = ConstantsIOS.HorizontalGradient.START;
-  obj.end = ConstantsIOS.HorizontalGradient.END;
-  if (true === useTier0UpsellContent.useTier0UpsellContent) {
-    let PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
+  const tmp3 = LinearGradientDefault;
+  if (true === useTier0UpsellContent) {
+    PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
   } else {
     PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
   }
-  obj.colors = PREMIUM_TIER_2_TRI_COLOR;
-  return tmp2(LinearGradientDefault, obj);
+  return tmp2(tmp3, obj);
 };

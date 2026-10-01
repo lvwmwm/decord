@@ -6,108 +6,100 @@
 
 // Module 13674 (RefreshEmptyState)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import shared from "shared" /* 4685 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
 import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8072 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
 import TextStyles_mod from "TextStyles" /* 5836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
 class EmptyState {
   constructor(arg0) {
-    ({ source, title, callToAction } = global);
-    ({ body, containerStyle, imageStyle, titleStyle, bodyStyle } = global);
-    tmp = closure_7();
-    tmp3 = View;
-    obj = { style: null, children: null };
-    items = [, ];
-    items[0] = tmp.container;
-    items[1] = containerStyle;
-    obj.style = items;
-    tmp4 = null;
-    tmp2 = jsxs;
+    let body;
+    let bodyStyle;
+    let callToAction;
+    let containerStyle;
+    let imageStyle;
+    let items;
+    let items1;
+    let items2;
+    let items3;
+    let items4;
+    let obj11;
+    let source;
+    let title;
+    let titleStyle;
+    ({ source, title, callToAction } = arg0);
+    ({ body, containerStyle, imageStyle, titleStyle, bodyStyle } = arg0);
+    const tmp = closure_7();
+    const obj = { style: items, children: items2 };
+    items = [tmp.container, containerStyle];
+    let tmp4 = null;
+    const tmp2 = metroRequire;
     if (null != source) {
-      tmp5 = jsx;
-      tmp6 = Image;
-      obj1 = { source: null, style: null };
-      obj1.source = source;
-      items1 = [, ];
-      items1[0] = tmp.image;
-      items1[1] = imageStyle;
-      obj1.style = items1;
-      tmp4 = jsx(Image, obj1);
+      const obj2 = { source, style: items1 };
+      items1 = [tmp.image, imageStyle];
+      tmp4 = hasOwnProperty(React3, obj2);
     }
-    items2 = [, , , ];
-    items2[0] = tmp4;
-    tmp7 = null;
+    items2 = [tmp4, , , ];
+    let tmp7 = null;
     if (null != title) {
-      tmp8 = jsx;
-      tmp9 = closure_1;
-      tmp10 = closure_2;
-      obj7 = { style: null, children: null };
-      items3 = [, ];
-      items3[0] = tmp.title;
-      items3[1] = titleStyle;
-      obj7.style = items3;
-      obj7.children = title;
-      tmp7 = jsx(closure_1(closure_2[7]), obj7);
+      const obj3 = { style: items3, children: title };
+      items3 = [tmp.title, titleStyle];
+      tmp7 = hasOwnProperty(LegacyText_LegacyTextDefault, obj3);
     }
     items2[1] = tmp7;
-    tmp11 = jsx;
-    tmp12 = closure_2;
-    obj8 = { style: null, children: body };
-    items4 = [, ];
-    items4[0] = tmp.body;
-    items4[1] = bodyStyle;
-    obj8.style = items4;
-    items2[2] = jsx(closure_1(closure_2[7]), obj8);
-    tmp11Result = null;
+    const obj4 = { style: items4, children: body };
+    items4 = [tmp.body, bodyStyle];
+    items2[2] = hasOwnProperty(LegacyText_LegacyTextDefault, obj4);
+    let tmp11Result = null;
     if (null != callToAction) {
-      obj9 = { style: null, children: null };
-      obj9.style = tmp.cta;
-      tmp14 = closure_0;
-      obj10 = { shrink: true, text: null, onPress: null, size: "sm" };
+      const obj5 = { style: tmp.cta, children: hasOwnProperty(components_Button_Button.Button, obj11) };
+      obj11 = { shrink: true, text: null, onPress: null, size: "sm" };
       ({ label: obj6.text, onPress: obj6.onPress } = callToAction);
-      obj9.children = tmp11(closure_0(tmp12[8]).Button, obj10);
-      tmp11Result = tmp11(tmp3, obj9);
+      tmp11Result = tmp11(tmp3, obj5);
     }
     items2[3] = tmp11Result;
-    obj.children = items2;
-    return tmp2(tmp3, obj);
+    return tmp2(_false, obj);
   }
 }
-get_ActivityIndicator = fn(17);
-({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-const Fonts = fn(1074).Fonts;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { alignItems: "center", justifyContent: "center", padding: 16 }, title: null, body: null, image: null, cta: null };
-let obj3 = {};
+({ View: c3, Image: closure_4 } = react_native);
+const Fonts = Constants.Fonts;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { alignItems: "center", justifyContent: "center", padding: 16 }, title: obj2, body: obj3, image: { marginBottom: 32 }, cta: { alignSelf: "center", marginTop: 16 } };
+obj2 = { textAlign: "center", marginBottom: 8 };
+createStyles = createStyles.createStyles;
 let TextStyles = TextStyles_mod;
 let merged = Object.assign(TextStyles(Fonts.DISPLAY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
-obj3.textAlign = "center";
-obj3.marginBottom = 8;
-obj2.title = obj3;
-let obj4 = {};
-let TextStyles = TextStyles_mod;
+obj3 = { textAlign: "center" };
+TextStyles = TextStyles_mod;
 let merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_SUBTLE, 14));
-obj4.textAlign = "center";
-obj2.body = obj4;
-obj2.image = { marginBottom: 32 };
-obj2.cta = { alignSelf: "center", marginTop: 16 };
-const React5 = createStyles.createStyles(obj2);
-const size = fn(2);
+const metroImportDefault = createStyles(obj);
 const result = size.fileFinishedImporting("design/void/RefreshEmptyState/native/RefreshEmptyState.tsx");
 
 export default EmptyState;
 export const ThemedEmptyState = function ThemedEmptyState(darkSource) {
-  let lightSource = darkSource.darkSource;
+  darkSource = darkSource.darkSource;
+  const lightSource = darkSource.lightSource;
   const merged = Object.assign(darkSource, Object.assign({ lightSource: 0, darkSource: 0 }));
   const obj = shared;
-  if (obj2.isThemeLight(obj.useThemeContext().theme)) {
-    lightSource = darkSource.lightSource;
+  const theme = obj.useThemeContext().theme;
+  const obj2 = shared;
+  if (obj2.isThemeLight(theme)) {
+    darkSource = lightSource;
   }
+  const obj3 = { source: darkSource };
   const merged1 = Object.assign(merged);
-  return hasOwnProperty(EmptyState, { source: lightSource });
+  return hasOwnProperty(EmptyState, obj3);
 };

@@ -5,47 +5,62 @@
 // Exports: default
 
 // Module 15464 (CollectiblesShopViewAllCategoryItemsHeader)
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import useNavigation from "useNavigation" /* 1485 */;
 import HeaderShared from "HeaderShared" /* 7288 */;
-import _modDef7292 from "module_7292" /* 7292 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7292 */;
 import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 12999 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+({ Image: c3, View: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ headerContainer: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: 12, paddingLeft: 8 }, backButton: { flex: 1 }, logo: { flex: 2, height: 36 }, dummyRightButton: { flex: 1 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopViewAllCategoryItemsHeader.tsx");
 
 export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
+  let HeaderIconButton;
+  let buttonColor;
+  let categoryName;
+  let intl;
+  let intl2;
+  let items;
+  let logoUrl;
+  let obj4;
+  let obj6;
+  let youBarSettingsCustomHeaderPaddingTop;
   ({ logoUrl, buttonColor, categoryName } = arg0);
-  const navigation = useNavigation.useStackNavigation();
+  const obj = useNavigation;
+  let closure_0 = obj.useStackNavigation();
   const tmp = closure_7();
-  const obj3 = { style: null, children: null };
-  const obj4 = {};
-  const youBarSettingsCustomHeaderPaddingTop = useYouBarSettingsSafeArea.useYouBarSettingsCustomHeaderPaddingTop();
+  const obj3 = { style: obj4, children: items };
+  obj4 = { paddingTop: youBarSettingsCustomHeaderPaddingTop };
+  const obj2 = useYouBarSettingsSafeArea;
+  youBarSettingsCustomHeaderPaddingTop = obj2.useYouBarSettingsCustomHeaderPaddingTop();
   const merged = Object.assign(tmp.headerContainer);
-  obj4.paddingTop = youBarSettingsCustomHeaderPaddingTop;
-  obj3.style = obj4;
-  const obj5 = { style: tmp.backButton, children: null };
-  const obj6 = { source: _modDef7292, color: buttonColor, accessibilityLabel: null, onPress: null };
-  const intl = util.intl;
-  obj6.accessibilityLabel = intl.string(util.t["13/7kX"]);
-  obj6.onPress = function onPress() {
-    navigation.goBack();
+  const obj5 = { style: tmp.backButton, children: hasOwnProperty(HeaderIconButton, obj6) };
+  obj6 = {
+    source: AssetRegistryDefault,
+    color: buttonColor,
+    accessibilityLabel: intl.string(intl3.t["13/7kX"]),
+    onPress() {
+      navigation.goBack();
+    }
   };
-  obj5.children = hasOwnProperty(HeaderShared.HeaderIconButton, obj6);
-  const items = [hasOwnProperty(React4, obj5), , ];
-  const obj7 = { resizeMode: "contain", style: tmp.logo, source: { uri: logoUrl }, accessibilityLabel: null, accessibilityRole: "header" };
-  const intl2 = util.intl;
-  obj7.accessibilityLabel = intl2.formatToPlainString(util.t.FNtLb3, { category: categoryName });
-  items[1] = hasOwnProperty(React3, obj7);
-  items[2] = hasOwnProperty(React4, { style: tmp.dummyRightButton });
-  obj3.children = items;
-  return timestampProducer(React4, obj3);
+  HeaderIconButton = HeaderShared.HeaderIconButton;
+  intl = intl3.intl;
+  items = [hasOwnProperty(React3, obj5), , ];
+  const obj7 = { resizeMode: "contain", style: tmp.logo, source: { uri: logoUrl }, accessibilityLabel: intl2.formatToPlainString(intl3.t.FNtLb3, { category: categoryName }), accessibilityRole: "header" };
+  intl2 = intl3.intl;
+  items[1] = hasOwnProperty(_false, obj7);
+  const obj8 = { style: tmp.dummyRightButton };
+  items[2] = hasOwnProperty(React3, obj8);
+  return metroRequire(React3, obj3);
 };

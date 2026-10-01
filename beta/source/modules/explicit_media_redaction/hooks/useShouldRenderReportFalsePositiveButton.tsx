@@ -6,18 +6,20 @@
 
 // Module 11391 (useShouldRenderReportFalsePositiveButton)
 import ExplicitMediaStore from "ExplicitMediaStore" /* 6711 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useShouldRenderReportFalsePositiveButton.tsx");
 
 export const shouldRenderReportFalsePositiveButton = function shouldRenderReportFalsePositiveButton(id) {
   return null != ExplicitMediaStore.getFpMessageInfo(id);
 };
-export const useShouldRenderReportFalsePositiveButton = function useShouldRenderReportFalsePositiveButton(id) {
-  _require = id;
+export const useShouldRenderReportFalsePositiveButton = function useShouldRenderReportFalsePositiveButton(arg0) {
+  let closure_0;
+  _require = arg0;
   const items = [ExplicitMediaStore];
-  return null != require("useStateFromStores").useStateFromStores(items, () => ExplicitMediaStore.getFpMessageInfo(closure_0));
+  const obj = require("useStateFromStores");
+  return null != obj.useStateFromStores(items, () => ExplicitMediaStore.getFpMessageInfo(closure_0));
 };

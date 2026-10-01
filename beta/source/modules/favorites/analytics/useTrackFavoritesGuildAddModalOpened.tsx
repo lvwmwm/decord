@@ -5,16 +5,19 @@
 // Exports: default
 
 // Module 10443 (useTrackFavoritesGuildAddModalOpened)
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/favorites/analytics/useTrackFavoritesGuildAddModalOpened.tsx");
 
 export default function useTrackFavoritesGuildAddModalOpened(source) {
   const items = [source];
-  const effect = noop.useEffect(() => {
-    AnalyticsUtilsDefault.track(AnalyticEvents.FAVORITES_GUILD_ADD_MODAL_OPENED, { source });
+  const effect = react.useEffect(() => {
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { source };
+    obj.track(AnalyticEvents.FAVORITES_GUILD_ADD_MODAL_OPENED, obj2);
   }, items);
 };

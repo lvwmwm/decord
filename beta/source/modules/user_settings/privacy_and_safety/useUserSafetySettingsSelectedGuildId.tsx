@@ -5,25 +5,28 @@
 // Exports: useAllServersOptionSelected, useIsSelectedGuildAHub, useUserSafetySettingsSelectedGuildId
 
 // Module 15490 (useUserSafetySettingsSelectedGuildId)
+import Constants from "Constants" /* 1074 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15486 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const UserSettingsSafetySelectedGuildStore = fn(15486);
+let c3;
+let closure_4;
 ({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: c3, useUserSafetySettingsSelectedGuildStore: closure_4 } = UserSettingsSafetySelectedGuildStore);
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
+const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/useUserSafetySettingsSelectedGuildId.tsx");
 
 export const useUserSafetySettingsSelectedGuildId = function useUserSafetySettingsSelectedGuildId() {
-  return React4().selectedGuildId;
+  return React3().selectedGuildId;
 };
 export const useAllServersOptionSelected = function useAllServersOptionSelected() {
-  return React4().selectedGuildId === React3;
+  return React3().selectedGuildId === _false;
 };
 export const useIsSelectedGuildAHub = function useIsSelectedGuildAHub() {
   const selectedGuildId = closure_4().selectedGuildId;
   const items = [GuildStore];
-  const stateFromStores = selectedGuildId(504).useStateFromStores(items, () => GuildStore.getGuild(selectedGuildId));
+  const obj = selectedGuildId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(selectedGuildId));
   let flag;
   if (stateFromStores != null) {
     const features = stateFromStores.features;

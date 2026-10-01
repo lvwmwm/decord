@@ -5,159 +5,171 @@
 // Exports: default
 
 // Module 14876 (SettingsAccessibilityScreen)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl14 from "intl" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import _modDef2877 from "module_2877" /* 2877 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 14877 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2022 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MobileUserSettings = fn(7417).MobileUserSettings;
-const Constants = fn(1074);
-({ HelpdeskArticles: closure_7, UserSettingsSections: closure_8 } = Constants);
-const jsx = fn(21).jsx;
-const size = fn(2);
+let metroImportAll;
+let metroImportDefault;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+({ HelpdeskArticles: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/accessibility/native/SettingsAccessibilityScreen.tsx");
 
 export default function SettingsAccessibilityScreen() {
-  stackNavigation = stackNavigation(animateEmojiOverrideReason[12]).useStackNavigation();
+  let animateEmojiOverrideReason;
+  let stackNavigation;
+  let stateFromStores;
   let obj = stackNavigation(animateEmojiOverrideReason[12]);
+  stackNavigation = obj.useStackNavigation();
+  let obj2 = stackNavigation(animateEmojiOverrideReason[13]);
   let items = [UserSettingsOverridesStore];
-  const stateFromStoresObject = stackNavigation(animateEmojiOverrideReason[13]).useStateFromStoresObject(items, () => ({ gifAutoPlayOverrideReason: UserSettingsOverridesStore.getAppliedOverrideReasonKey("gifAutoPlay"), animateEmojiOverrideReason: UserSettingsOverridesStore.getAppliedOverrideReasonKey("animateEmoji"), animateStickersOverrideReason: UserSettingsOverridesStore.getAppliedOverrideReasonKey("animateStickers") }));
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
+    const obj = { gifAutoPlayOverrideReason: UserSettingsOverridesStore.getAppliedOverrideReasonKey("gifAutoPlay"), animateEmojiOverrideReason: UserSettingsOverridesStore.getAppliedOverrideReasonKey("animateEmoji"), animateStickersOverrideReason: UserSettingsOverridesStore.getAppliedOverrideReasonKey("animateStickers") };
+    return obj;
+  });
   const gifAutoPlayOverrideReason = stateFromStoresObject.gifAutoPlayOverrideReason;
   animateEmojiOverrideReason = stateFromStoresObject.animateEmojiOverrideReason;
   const animateStickersOverrideReason = stateFromStoresObject.animateStickersOverrideReason;
-  let obj2 = stackNavigation(animateEmojiOverrideReason[13]);
+  let obj3 = stackNavigation(animateEmojiOverrideReason[13]);
   let items1 = [stateFromStores];
-  stateFromStores = stackNavigation(animateEmojiOverrideReason[13]).useStateFromStores(items1, () => ("respect-motion-settings" === stateFromStores.youBarNameplateAnimation || "respect-motion-settings" === stateFromStores.youBarAvatarDecoAnimation) && stateFromStores.useReducedMotion);
+  stateFromStores = obj3.useStateFromStores(items1, () => ("respect-motion-settings" === stateFromStores.youBarNameplateAnimation || "respect-motion-settings" === stateFromStores.youBarAvatarDecoAnimation) && stateFromStores.useReducedMotion);
   let items2 = [animateEmojiOverrideReason, animateStickersOverrideReason, gifAutoPlayOverrideReason, stackNavigation, stateFromStores];
   const node = animateStickersOverrideReason.useMemo(() => {
-    closure_0 = stackNavigation;
-    const obj2 = { settings: null, subLabel: null };
-    const items = [MobileUserSettings.ROLE_COLORS];
-    obj2.settings = items;
-    const intl = util.intl;
-    const obj3 = { learnMoreLink: null };
-    const obj = SettingBuilders;
-    const tmp3 = gifAutoPlayOverrideReason;
-    const tmp6 = stateFromStores;
-    obj3.learnMoreLink = HelpdeskUtilsDefault.getArticleURL(constants.ROLE_STYLES);
-    obj2.subLabel = intl.format(util.t["ksVr5/"], obj3);
-    const items1 = [obj2, , , , , , , , , , , , ];
-    const obj5 = { settings: null, subLabel: null };
-    const items2 = [MobileUserSettings.OFFICIAL_MESSAGE_STYLE];
-    obj5.settings = items2;
-    const intl2 = util.intl;
-    obj5.subLabel = intl2.string(util.t.a3IPrX);
-    items1[1] = obj5;
-    const obj6 = { settings: null, subLabel: null };
-    const items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
-    obj6.settings = items3;
-    const intl3 = util.intl;
-    obj6.subLabel = intl3.format(_modDef2877.L8U56h, {
+    let format;
+    let format2;
+    let intl10;
+    let intl12;
+    let intl2;
+    let intl3;
+    let intl4;
+    let intl5;
+    let intl6;
+    let intl7;
+    let intl8;
+    let intl9;
+    let items;
+    let items10;
+    let items11;
+    let items12;
+    let items13;
+    let items2;
+    let items3;
+    let items4;
+    let items5;
+    let items6;
+    let items7;
+    let items8;
+    let items9;
+    let obj12;
+    let obj14;
+    let obj15;
+    let obj2;
+    let obj3;
+    let obj6;
+    let prop;
+    let string;
+    let t;
+    let v2l9U2j;
+    let obj = { settings: items, subLabel: format(prop, obj2) };
+    items = [MobileUserSettings.ROLE_COLORS];
+    const createList = SettingBuilders.createList;
+    SettingBuilders;
+    const intl = intl14.intl;
+    format = intl.format;
+    obj2 = { learnMoreLink: obj3.getArticleURL(metroImportDefault.ROLE_STYLES) };
+    prop = intl14.t["ksVr5/"];
+    const items1 = [obj, , , , , , , , , , , , ];
+    obj3 = HelpdeskUtilsDefault;
+    const obj4 = { settings: items2, subLabel: intl2.string(intl14.t.a3IPrX) };
+    items2 = [MobileUserSettings.OFFICIAL_MESSAGE_STYLE];
+    intl2 = intl14.intl;
+    items1[1] = obj4;
+    const obj5 = { settings: items3, subLabel: intl3.format(_modDef2877.L8U56h, obj6) };
+    items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
+    intl3 = intl14.intl;
+    obj6 = {
       onClickOpenModal() {
-        closure_0(animateEmojiOverrideReason[9]).openUserSettings({ screen: constants.PROFILE_CUSTOMIZATION }, () => {
-          closure_1_0(closure_1_2[10]).runAfterInteractions(() => {
-            closure_1_0(closure_1_2[9]).openUserSettings({ screen: constants.DISPLAY_NAME_STYLES });
+        let obj = stackNavigation(animateEmojiOverrideReason[9]);
+        let obj2 = { screen: constants.PROFILE_CUSTOMIZATION };
+        obj.openUserSettings(obj2, () => {
+          let obj = stackNavigation(closure_1_2[10]);
+          obj.runAfterInteractions(() => {
+            const obj = closure_1_0(closure_1_2[9]);
+            const obj2 = { screen: constants.DISPLAY_NAME_STYLES };
+            obj.openUserSettings(obj2);
           });
         });
       }
-    });
-    items1[2] = obj6;
-    const obj8 = { settings: null, subLabel: null };
-    const items4 = [MobileUserSettings.CONTRAST_MODE];
-    obj8.settings = items4;
-    const intl4 = util.intl;
-    obj8.subLabel = intl4.string(util.t.Ax4Pgn);
-    items1[3] = obj8;
-    const obj9 = { settings: null, subLabel: null };
-    const items5 = [MobileUserSettings.REDUCE_SATURATION];
-    obj9.settings = items5;
-    const intl5 = util.intl;
-    obj9.subLabel = intl5.string(util.t["0PbE/H"]);
-    items1[4] = obj9;
-    const obj10 = { settings: null, subLabel: null };
-    const items6 = [MobileUserSettings.SHOW_LINK_DECORATIONS];
-    obj10.settings = items6;
-    const intl6 = util.intl;
-    obj10.subLabel = intl6.string(util.t["72i5GI"]);
-    items1[5] = obj10;
-    const obj11 = { settings: null, subLabel: null };
-    const items7 = [MobileUserSettings.SHOW_ON_OFF_INDICATORS];
-    obj11.settings = items7;
-    const intl7 = util.intl;
-    obj11.subLabel = intl7.string(util.t["3QuI9+"]);
-    items1[6] = obj11;
-    const obj12 = { label: null, settings: null, subLabel: null };
-    const intl8 = util.intl;
-    obj12.label = intl8.string(util.t.BT8Bmp);
-    const items8 = [MobileUserSettings.SYNC_PROFILE_COLORS];
-    obj12.settings = items8;
-    const intl9 = util.intl;
-    obj12.subLabel = intl9.format(util.t.u6UjrL, {
+    };
+    items1[2] = obj5;
+    const obj7 = { settings: items4, subLabel: intl4.string(intl14.t.Ax4Pgn) };
+    items4 = [MobileUserSettings.CONTRAST_MODE];
+    intl4 = intl14.intl;
+    items1[3] = obj7;
+    const obj8 = { settings: items5, subLabel: intl5.string(intl14.t["0PbE/H"]) };
+    items5 = [MobileUserSettings.REDUCE_SATURATION];
+    intl5 = intl14.intl;
+    items1[4] = obj8;
+    const obj9 = { settings: items6, subLabel: intl6.string(intl14.t["72i5GI"]) };
+    items6 = [MobileUserSettings.SHOW_LINK_DECORATIONS];
+    intl6 = intl14.intl;
+    items1[5] = obj9;
+    const obj10 = { settings: items7, subLabel: intl7.string(intl14.t["3QuI9+"]) };
+    items7 = [MobileUserSettings.SHOW_ON_OFF_INDICATORS];
+    intl7 = intl14.intl;
+    items1[6] = obj10;
+    const obj11 = { label: intl8.string(intl14.t.BT8Bmp), settings: items8, subLabel: intl9.format(intl14.t.u6UjrL, obj12) };
+    intl8 = intl14.intl;
+    items8 = [MobileUserSettings.SYNC_PROFILE_COLORS];
+    intl9 = intl14.intl;
+    obj12 = {
       onThemeClick() {
         closure_0.push(constants.APPEARANCE);
       }
-    });
-    items1[7] = obj12;
-    const obj14 = { label: null, settings: null, subLabel: null };
-    const intl10 = util.intl;
-    obj14.label = intl10.string(util.t.e3TR1b);
-    const items9 = [, ];
+    };
+    items1[7] = obj11;
+    const obj13 = { label: intl10.string(intl14.t.e3TR1b), settings: items9, subLabel: format2(v2l9U2j, obj14) };
+    intl10 = intl14.intl;
+    items9 = [, ];
     ({ ENABLE_REDUCED_MOTION: arr10[0], SYNC_REDUCED_MOTION_WITH_DEVICE: arr10[1] } = MobileUserSettings);
-    obj14.settings = items9;
-    const intl11 = util.intl;
-    const obj15 = { helpdeskArticle: null };
-    const obj13 = {
-      onThemeClick() {
-        closure_0.push(constants.APPEARANCE);
-      }
-    };
-    const obj7 = {
-      onClickOpenModal() {
-        closure_0(animateEmojiOverrideReason[9]).openUserSettings({ screen: constants.PROFILE_CUSTOMIZATION }, () => {
-          closure_1_0(closure_1_2[10]).runAfterInteractions(() => {
-            closure_1_0(closure_1_2[9]).openUserSettings({ screen: constants.DISPLAY_NAME_STYLES });
-          });
-        });
-      }
-    };
-    obj15.helpdeskArticle = HelpdeskUtilsDefault.getArticleURL(constants.REDUCED_MOTION);
-    obj14.subLabel = intl11.format(util.t["2l9U2j"], obj15);
-    items1[8] = obj14;
-    const obj17 = { settings: null, subLabel: null };
-    const items10 = [MobileUserSettings.AUTOPLAY_GIF];
-    obj17.settings = items10;
-    obj17.subLabel = null != gifAutoPlayOverrideReason && getSettingsOverrideReasonDefault(tmp3);
-    items1[9] = obj17;
-    const obj18 = { settings: null, subLabel: null };
-    const items11 = [MobileUserSettings.ANIMATE_EMOJI];
-    obj18.settings = items11;
-    const tmp9 = null != gifAutoPlayOverrideReason && getSettingsOverrideReasonDefault(tmp3);
-    obj18.subLabel = null != animateEmojiOverrideReason && getSettingsOverrideReasonDefault(animateEmojiOverrideReason);
-    items1[10] = obj18;
-    const obj19 = { settings: null, subLabel: null };
-    const items12 = [MobileUserSettings.ANIMATE_STICKERS];
-    obj19.settings = items12;
-    const tmp10 = null != animateEmojiOverrideReason && getSettingsOverrideReasonDefault(animateEmojiOverrideReason);
-    obj19.subLabel = null != animateStickersOverrideReason && getSettingsOverrideReasonDefault(animateStickersOverrideReason);
-    items1[11] = obj19;
-    const obj20 = { settings: null, label: null, subLabel: null };
-    const items13 = [, ];
+    const intl11 = intl14.intl;
+    format2 = intl11.format;
+    obj14 = { helpdeskArticle: obj15.getArticleURL(metroImportDefault.REDUCED_MOTION) };
+    v2l9U2j = intl14.t["2l9U2j"];
+    items1[8] = obj13;
+    obj15 = HelpdeskUtilsDefault;
+    const obj16 = { settings: items10, subLabel: null != gifAutoPlayOverrideReason && getSettingsOverrideReasonDefault(gifAutoPlayOverrideReason) };
+    items10 = [MobileUserSettings.AUTOPLAY_GIF];
+    items1[9] = obj16;
+    const obj17 = { settings: items11, subLabel: null != animateEmojiOverrideReason && getSettingsOverrideReasonDefault(animateEmojiOverrideReason) };
+    items11 = [MobileUserSettings.ANIMATE_EMOJI];
+    null != gifAutoPlayOverrideReason && getSettingsOverrideReasonDefault(gifAutoPlayOverrideReason);
+    items1[10] = obj17;
+    const obj18 = { settings: items12, subLabel: null != animateStickersOverrideReason && getSettingsOverrideReasonDefault(animateStickersOverrideReason) };
+    items12 = [MobileUserSettings.ANIMATE_STICKERS];
+    null != animateEmojiOverrideReason && getSettingsOverrideReasonDefault(animateEmojiOverrideReason);
+    items1[11] = obj18;
+    const obj19 = { settings: items13, label: intl12.string(intl14.t.Loi61N), subLabel: string(stateFromStores ? t["SZC/D5"] : t.c7VVKU) };
+    items13 = [, ];
     ({ YOU_BAR_NAMEPLATE_ACCESSIBILITY: arr14[0], YOU_BAR_AVATAR_DECO_ACCESSSIBILITY: arr14[1] } = MobileUserSettings);
-    obj20.settings = items13;
-    const intl12 = tmp(1115).intl;
-    obj20.label = intl12.string(util.t.Loi61N);
+    null != animateStickersOverrideReason && getSettingsOverrideReasonDefault(animateStickersOverrideReason);
+    intl12 = tmp(1115).intl;
     const intl13 = tmp(1115).intl;
-    const t = tmp(1115).t;
-    const obj21 = { sections: null };
-    obj20.subLabel = intl13.string(tmp6 ? t["SZC/D5"] : t.c7VVKU);
-    items1[12] = obj20;
-    obj21.sections = items1.filter((item) => null != item);
-    return obj.createList(obj21);
+    string = intl13.string;
+    t = tmp(1115).t;
+    items1[12] = obj19;
+    const obj20 = { sections: items1.filter((item) => null != item) };
+    return createList(obj20);
   }, items2);
   return jsx(gifAutoPlayOverrideReason(animateEmojiOverrideReason[15]), { node });
 };

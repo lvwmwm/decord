@@ -14,11 +14,15 @@ import size from "module_2" /* 2 */;
 const Routes = Constants.Routes;
 let result = size.fileFinishedImporting("modules/routing/transitionToGuild.native.tsx");
 
-export const transitionToGuild = function transitionToGuild(guildId, arg1) {
-  const channelIdForGuildTransition = getChannelIdForGuildTransition.getChannelIdForGuildTransition(guildId);
-  const result = DeprecatedLayoutAnimation.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "paddingHorizontal", delete: "Error" });
-  const obj3 = router_utils;
-  const obj4 = { navigationReplace: true };
+export const transitionToGuild = function transitionToGuild(id, arg1) {
+  const obj = getChannelIdForGuildTransition;
+  const channelIdForGuildTransition = obj.getChannelIdForGuildTransition(id);
+  const obj2 = DeprecatedLayoutAnimation;
+  const result = obj2.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "dispatch", delete: "isArray" });
+  const transitionTo = router_utils.transitionTo;
+  const obj3 = { navigationReplace: true };
+  router_utils;
+  const CHANNELResult = Routes.CHANNEL(id, channelIdForGuildTransition);
   const merged = Object.assign(arg1);
-  obj3.transitionTo(Routes.CHANNEL(guildId, channelIdForGuildTransition), obj4);
+  transitionTo(CHANNELResult, obj3);
 };

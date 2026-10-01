@@ -5,18 +5,20 @@
 // Exports: default
 
 // Module 8051 (ScrollHandlingActionSheet)
+import Fragment from "Fragment" /* 21 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let BottomSheet;
+
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/ScrollHandlingActionSheet.tsx");
 
 export default function ScrollHandlingActionSheet(children) {
+  children = children.children;
   const merged = Object.assign(children, Object.assign({ children: 0, scrollableDeviceHeightBreakpoint: 0 }));
-  const obj = { startExpanded: true };
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
   const merged1 = Object.assign(merged);
-  obj.children = children.children;
-  return jsx(Sheet_BottomSheet.BottomSheet, { startExpanded: true });
+  return <BottomSheet startExpanded>{children}</BottomSheet>;
 };

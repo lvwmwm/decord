@@ -5,18 +5,22 @@
 // Exports: ContextMenu
 
 // Module 7358 (ContextMenu)
-import PlatformUtils2 from "PlatformUtils" /* 1364 */;
+import intl2 from "intl" /* 1115 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5275 */;
+import HapticUtils from "HapticUtils" /* 4801 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5266 */;
+import react_native from "react-native" /* 5275 */;
 import ContextMenuState from "ContextMenuState" /* 7359 */;
 import ContextMenuConstants from "ContextMenuConstants" /* 7360 */;
 import UID from "UID" /* 7361 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ Fragment: closure_4, jsx: hasOwnProperty } = jsxProd);
-const PlatformUtils = fn(1364);
+let closure_4;
+let hasOwnProperty;
+({ Fragment: closure_4, jsx: hasOwnProperty } = Fragment);
 let closure_6 = PlatformUtils.isIOS();
 let closure_7 = { code: "function ContextMenuNativeTsx1(){const{_isIOS,buttonTagSV,measureInWindowForFWO,measure,buttonRef,title,itemCount,dividerIndexes,approximateItemHeight,CONTEXT_MENU_DIVIDER_HEIGHT,CONTEXT_MENU_OFFSET,screenHeight,CONTEXT_MENU_EDGE_OFFSET,screenWidth,CONTEXT_MENU_MIN_WIDTH,menuAlign,runOnJS,showMenu}=this.__closure;let pageX;let pageY;let width;let height;if(_isIOS){const tag=buttonTagSV.get();if(tag===-1)return;const m=measureInWindowForFWO(tag);if(m==null)return;pageX=m.x;pageY=m.y;width=m.width;height=m.height;}else{const m=measure(buttonRef);if(m==null)return;pageX=m.pageX;pageY=m.pageY;width=m.width;height=m.height;}const rowCount=title!=null?itemCount+1:itemCount;const dividerCount=(title!=null?1:0)+dividerIndexes.length;const menuHeight=approximateItemHeight.get()*rowCount+CONTEXT_MENU_DIVIDER_HEIGHT*dividerCount;const positionBelowOffset=pageY+height+CONTEXT_MENU_OFFSET;const positionAboveOffset=screenHeight-pageY+CONTEXT_MENU_OFFSET;const availableSpaceBelow=screenHeight-positionBelowOffset-CONTEXT_MENU_EDGE_OFFSET;const availableSpaceAbove=pageY-CONTEXT_MENU_EDGE_OFFSET;const wouldOverflowBelow=availableSpaceBelow<menuHeight;const wouldOverflowAbove=availableSpaceAbove<menuHeight;const minimumRightPosition=Math.max(screenWidth-pageX-width,CONTEXT_MENU_EDGE_OFFSET);function autoPositionVertical(offset){'worklet';let positionY='below';let y=pageY+height+CONTEXT_MENU_OFFSET;if(wouldOverflowBelow===wouldOverflowAbove){if(availableSpaceBelow>availableSpaceAbove){positionY='below';}else{positionY='above';}}else if(wouldOverflowBelow){positionY='above';}else{positionY='below';}y=(positionY==='above'?positionAboveOffset:positionBelowOffset)+(offset!==null&&offset!==void 0?offset:0);return{y:y,positionY:positionY};}function autoPositionHorizontal(){'worklet';const maxOffset=Math.max(CONTEXT_MENU_EDGE_OFFSET,screenWidth-CONTEXT_MENU_EDGE_OFFSET-CONTEXT_MENU_MIN_WIDTH);const fitsLeft=pageX<=maxOffset;const fitsRight=minimumRightPosition<=maxOffset;const distanceFromLeftEdge=pageX-CONTEXT_MENU_EDGE_OFFSET;const distanceFromRightEdge=screenWidth-CONTEXT_MENU_EDGE_OFFSET-(pageX+CONTEXT_MENU_MIN_WIDTH);let positionX='left';let x=pageX;if(fitsLeft!==fitsRight?fitsRight:distanceFromLeftEdge>distanceFromRightEdge){positionX='right';x=minimumRightPosition;}return{x:Math.min(x,maxOffset),positionX:positionX};}if(menuAlign==='auto'){const{y:y,positionY:positionY}=autoPositionVertical();const{x:x,positionX:positionX}=autoPositionHorizontal();runOnJS(showMenu)(x,y,positionX,positionY,menuHeight,width);}else if(menuAlign==='above'||menuAlign==='below'){const positionY=menuAlign;const y=positionY==='above'?positionAboveOffset:positionBelowOffset;const{x:x,positionX:positionX}=autoPositionHorizontal();runOnJS(showMenu)(x,y,positionX,positionY,menuHeight,width);}else{const positionX=menuAlign==='left'?'right':'left';const x=positionX==='left'?pageX+width+CONTEXT_MENU_OFFSET:minimumRightPosition+width+CONTEXT_MENU_OFFSET;const{y:y,positionY:positionY}=autoPositionVertical(-1*(CONTEXT_MENU_OFFSET+height));runOnJS(showMenu)(x,y,positionX,positionY,menuHeight,width);}}" };
 const __initData = { code: "function autoPositionVertical_ContextMenuNativeTsx2(offset){const{pageY,height,CONTEXT_MENU_OFFSET,wouldOverflowBelow,wouldOverflowAbove,availableSpaceBelow,availableSpaceAbove,positionAboveOffset,positionBelowOffset}=this.__closure;let positionY='below';let y=pageY+height+CONTEXT_MENU_OFFSET;if(wouldOverflowBelow===wouldOverflowAbove){if(availableSpaceBelow>availableSpaceAbove){positionY='below';}else{positionY='above';}}else if(wouldOverflowBelow){positionY='above';}else{positionY='below';}y=(positionY==='above'?positionAboveOffset:positionBelowOffset)+(offset!==null&&offset!==void 0?offset:0);return{y:y,positionY:positionY};}" };
@@ -27,10 +31,15 @@ let closure_12 = { code: "function ContextMenuNativeTsx6(){const{runOnJS,trigger
 let closure_13 = { code: "function ContextMenuNativeTsx7(){const{measureButtonAndShowMenu}=this.__closure;measureButtonAndShowMenu();}" };
 let closure_14 = { code: "function ContextMenuNativeTsx8(e){const{updateContextMenuState,state}=this.__closure;updateContextMenuState(e.absoluteX,e.absoluteY,state);}" };
 let closure_15 = { code: "function ContextMenuNativeTsx9(){const{runOnJS,triggerHapticFeedback,CONTEXT_MENU_OPEN_HAPTIC,measureButtonAndShowMenu}=this.__closure;runOnJS(triggerHapticFeedback)(CONTEXT_MENU_OPEN_HAPTIC);measureButtonAndShowMenu();}" };
-let size = fn(2);
+let size = size_mod;
 let result = size.fileFinishedImporting("design/components/ContextMenu/native/ContextMenu.native.tsx");
 
 export const ContextMenu = function ContextMenu(triggerOnLongPress) {
+  let children;
+  let items;
+  let tmp25;
+  let tmp26Result;
+  let tmpResult6;
   ({ children, items } = triggerOnLongPress);
   let flag = triggerOnLongPress.triggerOnLongPress;
   if (flag === undefined) {
@@ -72,15 +81,20 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
   let activeIndex;
   let activeContextMenu;
   let sharedValue1;
+  let ref;
   let requestClose;
   let callback1;
   let callback2;
   let callback3;
+  let tmp = items;
+  const tmp2 = flag2;
+  let obj = items(flag2[3]);
   if (buttonRef == null) {
     buttonRef = obj.useAnimatedRef();
   }
-  obj = items(flag2[3]);
-  sharedValue = items(flag2[3]).useSharedValue(-1);
+  let tmpResult = tmp(tmp2[3]);
+  sharedValue = tmpResult.useSharedValue(-1);
+  let obj3 = str;
   let items1 = [buttonRef, sharedValue];
   const effect = str.useEffect(() => buttonRef.observe((arg0) => {
     if (null != arg0) {
@@ -107,36 +121,37 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
   items3 = memo.items;
   dividerIndexes = memo.dividerIndexes;
   length = items3.length;
-  let obj2 = { ignoreKeyboard: null };
-  let tmpResult = items(flag2[3]);
-  let tmp6 = flag(flag2[4]);
-  obj2.ignoreKeyboard = items(flag2[2]).isAndroid();
-  let size = tmp6(obj2);
+  let obj2 = { ignoreKeyboard: tmpResult6.isAndroid() };
+  let tmp6 = flag(tmp2[4]);
+  tmpResult6 = tmp(tmp2[2]);
+  size = tmp6(obj2);
   width = size.width;
   height = size.height;
-  const tmpResult6 = items(flag2[2]);
-  contextMenuState = items(flag2[5]).useContextMenuState();
+  const tmpResult7 = tmp(tmp2[5]);
+  contextMenuState = tmpResult7.useContextMenuState();
   activeIndex = contextMenuState.activeIndex;
-  const tmpResult7 = items(flag2[5]);
-  const fontScale = items(flag2[6]).useFontScale();
+  const tmpResult8 = tmp(tmp2[6]);
+  const fontScale = tmpResult8.useFontScale();
   if (undefined === returnRef) {
     returnRef = buttonRef;
   }
-  const tmpResult8 = items(flag2[6]);
-  activeContextMenu = items(flag2[5]).useActiveContextMenu();
-  const tmpResult9 = items(flag2[5]);
+  const tmpResult9 = tmp(tmp2[5]);
+  activeContextMenu = tmpResult9.useActiveContextMenu();
+  const useSharedValue = tmp(tmp2[3]).useSharedValue;
+  tmp(tmp2[3]);
   let result = (tmp(tmp2[7]).CONTEXT_MENU_ITEM_BASE_HEIGHT - 2 * tmp(tmp2[7]).CONTEXT_MENU_ITEM_PADDING) * fontScale;
   let result1 = 2 * tmp(tmp2[7]).CONTEXT_MENU_ITEM_PADDING;
-  sharedValue1 = items(flag2[3]).useSharedValue(Math.max(result + result1, tmp(tmp2[7]).CONTEXT_MENU_ITEM_BASE_HEIGHT));
-  str.useRef(items3);
+  sharedValue1 = useSharedValue(max(result + result1, tmp(tmp2[7]).CONTEXT_MENU_ITEM_BASE_HEIGHT));
+  ref = obj3.useRef(items3);
   const items4 = [items3];
   const layoutEffect = obj3.useLayoutEffect(() => {
-    closure_22.current = items3;
+    ref.current = items3;
   }, items4);
   const items5 = [activeContextMenu, contextMenuState];
   const layoutEffect1 = obj3.useLayoutEffect(() => {
     if (null == activeContextMenu) {
-      const result = ContextMenuState.resetContextMenuState(contextMenuState);
+      const obj = ContextMenuState;
+      const result = obj.resetContextMenuState(contextMenuState);
     }
   }, items5);
   const items6 = [activeIndex, onClose];
@@ -144,109 +159,106 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
     if (onClose != null) {
       tmp(arg0);
     }
-    ContextMenuState.hideContextMenu();
-    value = activeIndex.get();
+    const obj = ContextMenuState;
+    obj.hideContextMenu();
+    const value = activeIndex.get();
     if (-1 !== value) {
       if (ref.current[value] != null) {
-        obj2.action();
+        ref.current[value].action();
       }
     }
   }, items6);
   const items7 = [returnRef];
   callback1 = obj3.useCallback(() => {
-    const result = setAccessibilityFocus.setAccessibilityFocus({ ref: returnRef });
+    const obj = react_native;
+    const obj2 = { ref: returnRef };
+    const result = obj.setAccessibilityFocus(obj2);
   }, items7);
   const items8 = [onOpen, contextMenuState, items3, title, keyboardShouldPersistTaps, flag4, requestClose, callback1, dividerIndexes];
   callback2 = obj3.useCallback((x, y, positionX, positionY, height, width) => {
+    let obj2;
     if (onOpen != null) {
       tmp();
     }
-    const size = { key: UID.uid(), x, y, positionX, positionY, height, width, state: contextMenuState, items: items3, title, keyboardShouldPersistTaps, requestClose, onClose: callback1, dividerIndexes, ignoreKeyboardHide: flag4 };
-    ContextMenuState.showContextMenu(size);
+    size = { key: obj2.uid(), x, y, positionX, positionY, height, width, state: contextMenuState, items: items3, title, keyboardShouldPersistTaps, requestClose, onClose: callback1, dividerIndexes, ignoreKeyboardHide: flag4 };
+    obj2 = UID;
+    const obj3 = ContextMenuState;
+    obj3.showContextMenu(size);
+    const obj4 = PlatformUtils;
     if (obj4.isAndroid()) {
       const AccessibilityAnnouncer = tmp3(4685).AccessibilityAnnouncer;
+      const announce = AccessibilityAnnouncer.announce;
       const intl = tmp3(1115).intl;
-      AccessibilityAnnouncer.announce(intl.string(tmp3(1115).t.ZqK0uI));
+      announce(intl.string(intl2.t.ZqK0uI));
     }
   }, items8);
   class V {
     constructor() {
-      if (onClose) {
-        tmp10 = closure_12;
-        value = closure_12.get();
-        num = -1;
-        if (-1 === value) {
-          return;
-        } else {
-          tmp76 = items;
-          tmp77 = c2;
-          obj7 = items(c2[12]);
-          result = obj7.measureInWindowForFWO(value);
-          tmp79 = null;
-          if (null == result) {
-            return;
-          } else {
-            x3 = result.x;
+      let diff3;
+      let pageX;
+      let pageY;
+      let sum;
+      let tmp10;
+      let tmp7;
+      let tmp8;
+      let tmp9;
+      const tmp = onClose;
+      if (tmp) {
+        const value = sharedValue.get();
+        let num = -1;
+        if (-1 !== value) {
+          const obj7 = items(flag2[12]);
+          const result = obj7.measureInWindowForFWO(value);
+          if (null != result) {
+            const x3 = result.x;
             pageX = x3;
             ({ y: pageY, width, height } = result);
-            tmp6 = x3;
-            tmp7 = height;
-            tmp8 = pageY;
-            tmp9 = x3;
+            tmp7 = x3;
+            tmp8 = height;
+            tmp9 = pageY;
+            tmp10 = x3;
           }
         }
       } else {
-        tmp = items;
-        tmp2 = c2;
-        obj = items(c2[3]);
-        tmp3 = closure_11;
-        measureResult = obj.measure(closure_11);
-        tmp5 = null;
-        if (null == measureResult) {
-          return;
-        } else {
+        let tmp3 = flag2;
+        let obj = items(flag2[3]);
+        let tmp4 = buttonRef;
+        const measureResult = obj.measure(buttonRef);
+        let tmp6 = null;
+        if (null != measureResult) {
           pageX = measureResult.pageX;
           ({ pageY, width, height } = measureResult);
-          tmp6 = pageX;
-          tmp7 = height;
-          tmp8 = pageY;
-          tmp9 = pageX;
+          tmp7 = pageX;
+          tmp8 = height;
+          tmp9 = pageY;
+          tmp10 = pageX;
         }
       }
-      tmp12 = closure_4;
-      if (null != closure_4) {
-        tmp14 = length;
-        num2 = 1;
+      const tmp13 = diff3;
+      if (null != diff3) {
         sum = length + 1;
       } else {
         sum = length;
       }
-      num3 = 0;
-      if (null != tmp12) {
+      let num3 = 0;
+      if (null != tmp13) {
         num3 = 1;
       }
-      sum1 = num3 + dividerIndexes.length;
-      result1 = closure_21.get() * sum;
-      sum2 = result1 + items(c2[7]).CONTEXT_MENU_DIVIDER_HEIGHT * sum1;
-      sum3 = tmp8 + tmp7;
-      sum4 = sum3 + items(c2[7]).CONTEXT_MENU_OFFSET;
-      closure_1 = sum4;
-      diff = height - tmp8;
-      sum5 = diff + items(c2[7]).CONTEXT_MENU_OFFSET;
-      closure_2 = sum5;
-      diff1 = height - sum4;
-      diff2 = diff1 - items(c2[7]).CONTEXT_MENU_EDGE_OFFSET;
-      closure_3 = diff2;
-      diff3 = tmp8 - items(c2[7]).CONTEXT_MENU_EDGE_OFFSET;
-      closure_4 = diff3;
-      tmp25 = diff2 < sum2;
-      closure_5 = tmp25;
-      tmp26 = diff3 < sum2;
-      closure_6 = tmp26;
-      diff4 = width - tmp9 - width;
-      bound = Math.max(diff4, items(c2[7]).CONTEXT_MENU_EDGE_OFFSET);
-      closure_7 = bound;
-      autoPositionVertical = function autoPositionVertical(arg0) {
+      const sum1 = num3 + dividerIndexes.length;
+      const result1 = sharedValue1.get() * sum;
+      const sum2 = result1 + items(flag2[7]).CONTEXT_MENU_DIVIDER_HEIGHT * sum1;
+      const sum3 = tmp9 + tmp8;
+      let sum4 = sum3 + items(flag2[7]).CONTEXT_MENU_OFFSET;
+      let diff = height - tmp9;
+      const sum5 = diff + items(flag2[7]).CONTEXT_MENU_OFFSET;
+      let diff1 = height - sum4;
+      let diff2 = diff1 - items(flag2[7]).CONTEXT_MENU_EDGE_OFFSET;
+      diff3 = tmp9 - items(flag2[7]).CONTEXT_MENU_EDGE_OFFSET;
+      let closure_5 = tmp26;
+      closure_6 = tmp27;
+      const diff4 = width - tmp10 - width;
+      const bound = Math.max(diff4, items(flag2[7]).CONTEXT_MENU_EDGE_OFFSET);
+      function autoPositionVertical(arg0) {
         const CONTEXT_MENU_OFFSET = ContextMenuConstants.CONTEXT_MENU_OFFSET;
         if (closure_5 === closure_6) {
           let str2 = "above";
@@ -261,149 +273,118 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
           }
         }
         let num = arg0;
+        const tmp4 = "above" === str ? sum5 : sum4;
         if (arg0 == null) {
           num = 0;
         }
-        return { y: ("above" === str ? sum5 : sum4) + num, positionY: str };
-      };
-      obj1 = { pageY, height, CONTEXT_MENU_OFFSET: items(c2[7]).CONTEXT_MENU_OFFSET, wouldOverflowBelow: tmp25, wouldOverflowAbove: tmp26, availableSpaceBelow: diff2, availableSpaceAbove: diff3, positionAboveOffset: sum5, positionBelowOffset: sum4 };
-      autoPositionVertical.__closure = obj1;
+        return { y: tmp4 + num, positionY: str };
+      }
+      autoPositionVertical.__closure = { pageY, height, CONTEXT_MENU_OFFSET: items(flag2[7]).CONTEXT_MENU_OFFSET, wouldOverflowBelow: diff2 < sum2, wouldOverflowAbove: diff3 < sum2, availableSpaceBelow: diff2, availableSpaceAbove: diff3, positionAboveOffset: sum5, positionBelowOffset: sum4 };
       autoPositionVertical.__workletHash = 15309589830995;
-      autoPositionVertical.__initData = c8;
-      autoPositionHorizontal = function autoPositionHorizontal() {
+      autoPositionVertical.__initData = flag4;
+      function autoPositionHorizontal() {
+        const CONTEXT_MENU_EDGE_OFFSET = ContextMenuConstants.CONTEXT_MENU_EDGE_OFFSET;
         const diff = width - ContextMenuConstants.CONTEXT_MENU_EDGE_OFFSET;
-        bound = Math.max(ContextMenuConstants.CONTEXT_MENU_EDGE_OFFSET, diff - ContextMenuConstants.CONTEXT_MENU_MIN_WIDTH);
+        const maxResult = max(CONTEXT_MENU_EDGE_OFFSET, diff - ContextMenuConstants.CONTEXT_MENU_MIN_WIDTH);
         let tmp3 = pageX;
-        let tmp6 = bound <= bound;
+        let tmp6 = bound <= maxResult;
+        const tmp4 = pageX <= maxResult;
         const diff1 = pageX - ContextMenuConstants.CONTEXT_MENU_EDGE_OFFSET;
         diff2 = width - ContextMenuConstants.CONTEXT_MENU_EDGE_OFFSET;
+        const tmp5 = bound;
         if (tmp4 === tmp6) {
           tmp6 = diff1 > diff2 - (pageX + ContextMenuConstants.CONTEXT_MENU_MIN_WIDTH);
         }
         str = "left";
         if (tmp6) {
           str = "right";
-          tmp3 = bound;
+          tmp3 = tmp5;
         }
-        return { x: Math.min(tmp3, bound), positionX: str };
-      };
-      obj8 = { CONTEXT_MENU_EDGE_OFFSET: items(c2[7]).CONTEXT_MENU_EDGE_OFFSET, screenWidth: width, CONTEXT_MENU_MIN_WIDTH: items(c2[7]).CONTEXT_MENU_MIN_WIDTH, pageX: tmp6, minimumRightPosition: bound };
-      autoPositionHorizontal.__closure = obj8;
+        const obj = { x: Math.min(tmp3, maxResult), positionX: str };
+        return obj;
+      }
+      ({ pageY, height, CONTEXT_MENU_OFFSET: items(flag2[7]).CONTEXT_MENU_OFFSET, wouldOverflowBelow: diff2 < sum2, wouldOverflowAbove: diff3 < sum2, availableSpaceBelow: diff2, availableSpaceAbove: diff3, positionAboveOffset: sum5, positionBelowOffset: sum4 });
+      autoPositionHorizontal.__closure = { CONTEXT_MENU_EDGE_OFFSET: items(flag2[7]).CONTEXT_MENU_EDGE_OFFSET, screenWidth: width, CONTEXT_MENU_MIN_WIDTH: items(flag2[7]).CONTEXT_MENU_MIN_WIDTH, pageX: tmp7, minimumRightPosition: bound };
       autoPositionHorizontal.__workletHash = 7547923192836;
-      autoPositionHorizontal.__initData = closure_9;
-      tmp29 = closure_3;
-      if ("auto" === closure_3) {
-        tmp64 = items;
-        tmp65 = c2;
-        CONTEXT_MENU_OFFSET2 = items(c2[7]).CONTEXT_MENU_OFFSET;
-        if (tmp25 === tmp26) {
-          str6 = "above";
+      autoPositionHorizontal.__initData = returnRef;
+      ({ CONTEXT_MENU_EDGE_OFFSET: items(flag2[7]).CONTEXT_MENU_EDGE_OFFSET, screenWidth: width, CONTEXT_MENU_MIN_WIDTH: items(flag2[7]).CONTEXT_MENU_MIN_WIDTH, pageX: tmp7, minimumRightPosition: bound });
+      if ("auto" === diff2) {
+        let str5;
+        const CONTEXT_MENU_OFFSET2 = items(flag2[7]).CONTEXT_MENU_OFFSET;
+        if (diff2 < sum2 === diff3 < sum2) {
+          let str6 = "above";
           if (diff2 > diff3) {
             str6 = "below";
           }
           str5 = str6;
         } else {
           str5 = "below";
-          if (tmp25) {
+          if (diff2 < sum2) {
             str5 = "above";
           }
         }
-        str7 = "above";
         if ("above" === str5) {
           sum4 = sum5;
         }
-        tmp66 = sum4;
-        result2 = autoPositionHorizontal();
-        x2 = result2.x;
-        tmp68 = items;
-        tmp69 = c2;
-        obj6 = items(c2[3]);
-        tmp70 = closure_25;
-        tmp71 = x2;
-        tmp72 = str5;
-        tmp73 = sum2;
-        tmp74 = width;
-        tmp75 = obj6.runOnJS(closure_25)(x2, tmp66, result2.positionX, str5, sum2, width);
+        const result2 = autoPositionHorizontal();
+        const x2 = result2.x;
+        const positionX2 = result2.positionX;
+        const obj6 = items(flag2[3]);
+        obj6.runOnJS(callback2)(x2, sum4, positionX2, str5, sum2, width);
       } else {
-        str8 = "above";
-        tmp80 = "above" === tmp29;
-        if (!tmp80) {
+        if ("above" !== diff2) {
           str = "below";
-          if ("below" !== tmp29) {
-            str9 = "left";
-            str2 = "left";
-            if ("left" === tmp29) {
+          if ("below" !== diff2) {
+            let sum7;
+            let str3;
+            let str2 = "left";
+            if ("left" === diff2) {
               str2 = "right";
             }
             if ("left" === str2) {
-              tmp35 = items;
-              tmp36 = c2;
-              sum6 = tmp9 + width;
-              sum7 = sum6 + items(c2[7]).CONTEXT_MENU_OFFSET;
+              const sum6 = tmp10 + width;
+              sum7 = sum6 + items(flag2[7]).CONTEXT_MENU_OFFSET;
             } else {
-              tmp31 = items;
-              tmp32 = c2;
-              sum8 = bound + width;
-              sum7 = sum8 + items(c2[7]).CONTEXT_MENU_OFFSET;
+              const sum8 = bound + width;
+              sum7 = sum8 + items(flag2[7]).CONTEXT_MENU_OFFSET;
             }
-            tmp37 = items;
-            tmp38 = c2;
-            num4 = -1;
-            tmp40 = items;
-            tmp41 = c2;
-            result3 = -1 * (items(c2[7]).CONTEXT_MENU_OFFSET + tmp7);
-            CONTEXT_MENU_OFFSET = items(c2[7]).CONTEXT_MENU_OFFSET;
-            if (tmp25 === tmp26) {
-              str4 = "above";
+            const result3 = -1 * (items(flag2[7]).CONTEXT_MENU_OFFSET + tmp8);
+            let CONTEXT_MENU_OFFSET = items(flag2[7]).CONTEXT_MENU_OFFSET;
+            if (diff2 < sum2 === diff3 < sum2) {
+              let str4 = "above";
               if (diff2 > diff3) {
                 str4 = "below";
               }
               str3 = str4;
             } else {
               str3 = "below";
-              if (tmp25) {
+              if (diff2 < sum2) {
                 str3 = "above";
               }
             }
-            tmp42 = sum4;
+            let tmp43 = sum4;
             if ("above" === str3) {
-              tmp42 = sum5;
+              tmp43 = sum5;
             }
-            tmp44 = items;
-            tmp45 = c2;
-            sum9 = tmp42 + result3;
-            obj4 = items(c2[3]);
-            tmp46 = closure_25;
-            tmp47 = sum7;
-            tmp48 = str2;
-            tmp49 = str3;
-            tmp50 = sum2;
-            tmp51 = width;
-            tmp52 = obj4.runOnJS(closure_25)(sum7, sum9, str2, str3, sum2, width);
+            const sum9 = tmp43 + result3;
+            const obj4 = items(flag2[3]);
+            obj4.runOnJS(callback2)(sum7, sum9, str2, str3, sum2, width);
           }
         }
-        tmp53 = sum4;
-        if (tmp80) {
-          tmp53 = sum5;
+        let tmp54 = sum4;
+        if ("above" === diff2) {
+          tmp54 = sum5;
         }
-        result4 = autoPositionHorizontal();
-        x = result4.x;
-        tmp55 = items;
-        tmp56 = c2;
-        obj5 = items(c2[3]);
-        tmp57 = closure_25;
-        tmp58 = x;
-        tmp59 = tmp53;
-        tmp60 = tmp29;
-        tmp61 = sum2;
-        tmp62 = width;
-        tmp63 = obj5.runOnJS(closure_25)(x, tmp53, result4.positionX, tmp29, sum2, width);
+        const result4 = autoPositionHorizontal();
+        const x = result4.x;
+        const positionX = result4.positionX;
+        const obj5 = items(flag2[3]);
+        obj5.runOnJS(callback2)(x, tmp54, positionX, diff2, sum2, width);
       }
-      return;
     }
   }
-  const tmpResult10 = items(flag2[3]);
-  V.__closure = { _isIOS: onClose, buttonTagSV: sharedValue, measureInWindowForFWO: items(flag2[12]).measureInWindowForFWO, measure: items(flag2[3]).measure, buttonRef, title, itemCount: length, dividerIndexes, approximateItemHeight: sharedValue1, CONTEXT_MENU_DIVIDER_HEIGHT: items(flag2[7]).CONTEXT_MENU_DIVIDER_HEIGHT, CONTEXT_MENU_OFFSET: items(flag2[7]).CONTEXT_MENU_OFFSET, screenHeight: height, CONTEXT_MENU_EDGE_OFFSET: items(flag2[7]).CONTEXT_MENU_EDGE_OFFSET, screenWidth: width, CONTEXT_MENU_MIN_WIDTH: items(flag2[7]).CONTEXT_MENU_MIN_WIDTH, menuAlign: str, runOnJS: items(flag2[3]).runOnJS, showMenu: callback2 };
+  let obj4 = { _isIOS: onClose, buttonTagSV: sharedValue, measureInWindowForFWO: tmp(tmp2[12]).measureInWindowForFWO, measure: tmp(tmp2[3]).measure, buttonRef, title, itemCount: length, dividerIndexes, approximateItemHeight: sharedValue1, CONTEXT_MENU_DIVIDER_HEIGHT: tmp(tmp2[7]).CONTEXT_MENU_DIVIDER_HEIGHT, CONTEXT_MENU_OFFSET: tmp(tmp2[7]).CONTEXT_MENU_OFFSET, screenHeight: height, CONTEXT_MENU_EDGE_OFFSET: tmp(tmp2[7]).CONTEXT_MENU_EDGE_OFFSET, screenWidth: width, CONTEXT_MENU_MIN_WIDTH: tmp(tmp2[7]).CONTEXT_MENU_MIN_WIDTH, menuAlign: str, runOnJS: tmp(tmp2[3]).runOnJS, showMenu: callback2 };
+  V.__closure = obj4;
   V.__workletHash = 4092679983812;
   V.__initData = keyboardShouldPersistTaps;
   const items9 = [buttonRef, sharedValue, sharedValue1, title, length, height, str, callback2, width, dividerIndexes];
@@ -413,45 +394,53 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
   const memo1 = obj3.useMemo(() => {
     function onPanGestureEnd() {
       activeIndex = activeIndex.activeIndex;
-      value = activeIndex.get();
-      items(flag2[3]).runOnJS(requestClose)(-1 === value);
+      const value = activeIndex.get();
+      const obj = items(flag2[3]);
+      obj.runOnJS(requestClose)(-1 === value);
     }
-    onPanGestureEnd.__closure = { state: contextMenuState, runOnJS: ReanimatedRexport.runOnJS, requestClose };
+    let obj = { state: contextMenuState, runOnJS: ReanimatedRexport.runOnJS, requestClose };
+    onPanGestureEnd.__closure = obj;
     onPanGestureEnd.__workletHash = 12851223476540;
     onPanGestureEnd.__initData = __initData;
-    if (flag) {
+    const tmp4 = flag;
+    if (tmp4) {
       const Gesture2 = tmp2(6073).Gesture;
       const PanResult = Gesture2.Pan();
       const fn4 = function i(absoluteX) {
-        const result = items(flag2[5]).updateContextMenuState(absoluteX.absoluteX, absoluteX.absoluteY, activeIndex);
+        const obj = items(flag2[5]);
+        const result = obj.updateContextMenuState(absoluteX.absoluteX, absoluteX.absoluteY, activeIndex);
       };
-      const obj2 = { updateContextMenuState: tmp2(7359).updateContextMenuState, state: tmp };
+      const obj2 = { updateContextMenuState: ContextMenuState.updateContextMenuState, state: contextMenuState };
+      const onUpdate2 = PanResult.enabled(flag5).onUpdate;
+      PanResult.enabled(flag5);
       fn4.__closure = obj2;
       fn4.__workletHash = 2460213213323;
       fn4.__initData = __initData2;
-      const enabledResult = Gesture2.Pan().enabled(flag5);
-      const onUpdateResult = Gesture2.Pan().enabled(flag5).onUpdate(fn4);
+      const onUpdate2Result = onUpdate2(fn4);
+      const onEndResult = onUpdate2Result.onEnd(onPanGestureEnd);
       const Gesture3 = tmp2(6073).Gesture;
-      const onEndResult = Gesture2.Pan().enabled(flag5).onUpdate(fn4).onEnd(onPanGestureEnd);
       const LongPressResult = Gesture3.LongPress();
-      const enabledResult1 = Gesture3.LongPress().enabled(flag5);
-      let result = Gesture3.LongPress().enabled(flag5).minDuration(tmp2(7360).CONTEXT_MENU_LONG_PRESS_DURATION_MS).shouldCancelWhenOutside(false);
+      const enabledResult1 = LongPressResult.enabled(flag5);
+      const minDurationResult = enabledResult1.minDuration(ContextMenuConstants.CONTEXT_MENU_LONG_PRESS_DURATION_MS);
+      let result = minDurationResult.shouldCancelWhenOutside(false);
       const fn5 = function n() {
         const obj = items(flag2[3]);
-        items(flag2[3]).runOnJS(items(flag2[14]).triggerHapticFeedback)(items(flag2[7]).CONTEXT_MENU_OPEN_HAPTIC);
+        const runOnJSResult = obj.runOnJS(items(flag2[14]).triggerHapticFeedback);
+        runOnJSResult(items(flag2[7]).CONTEXT_MENU_OPEN_HAPTIC);
         callback3();
       };
-      const obj3 = { runOnJS: tmp2(4566).runOnJS, triggerHapticFeedback: tmp2(4801).triggerHapticFeedback, CONTEXT_MENU_OPEN_HAPTIC: tmp2(7360).CONTEXT_MENU_OPEN_HAPTIC, measureButtonAndShowMenu: callback3 };
-      fn5.__closure = obj3;
+      const onStart = result.onStart;
+      fn5.__closure = { runOnJS: ReanimatedRexport.runOnJS, triggerHapticFeedback: HapticUtils.triggerHapticFeedback, CONTEXT_MENU_OPEN_HAPTIC: ContextMenuConstants.CONTEXT_MENU_OPEN_HAPTIC, measureButtonAndShowMenu: callback3 };
       fn5.__workletHash = 13919366908951;
       fn5.__initData = __initData3;
-      const minDurationResult = Gesture3.LongPress().enabled(flag5).minDuration(tmp2(7360).CONTEXT_MENU_LONG_PRESS_DURATION_MS);
+      const obj3 = { runOnJS: ReanimatedRexport.runOnJS, triggerHapticFeedback: HapticUtils.triggerHapticFeedback, CONTEXT_MENU_OPEN_HAPTIC: ContextMenuConstants.CONTEXT_MENU_OPEN_HAPTIC, measureButtonAndShowMenu: callback3 };
+      const onStartResult = onStart(fn5);
       const Gesture4 = tmp2(6073).Gesture;
-      return Gesture4.Simultaneous(result.onStart(fn5), onEndResult);
+      return Gesture4.Simultaneous(onStartResult, onEndResult);
     } else {
+      let onStartResult1;
       const Gesture = tmp2(6073).Gesture;
       if (flag2) {
-        const TapResult = Gesture.Tap();
         const fn3 = function o() {
           callback3();
         };
@@ -459,40 +448,44 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
         fn3.__closure = obj4;
         fn3.__workletHash = 13410382812897;
         fn3.__initData = __initData4;
-        let onStartResult1 = Gesture.Tap().enabled(flag5).onStart(fn3);
-        const enabledResult2 = Gesture.Tap().enabled(flag5);
+        const TapResult = Gesture.Tap();
+        const enabledResult2 = TapResult.enabled(flag5);
+        onStartResult1 = enabledResult2.onStart(fn3);
       } else {
         const PanResult1 = Gesture.Pan();
         const fn = function t() {
           const obj = items(flag2[3]);
-          items(flag2[3]).runOnJS(items(flag2[14]).triggerHapticFeedback)(items(flag2[7]).CONTEXT_MENU_OPEN_HAPTIC);
+          const runOnJSResult = obj.runOnJS(items(flag2[14]).triggerHapticFeedback);
+          runOnJSResult(items(flag2[7]).CONTEXT_MENU_OPEN_HAPTIC);
           callback3();
         };
-        const obj5 = { runOnJS: tmp2(4566).runOnJS, triggerHapticFeedback: tmp2(4801).triggerHapticFeedback, CONTEXT_MENU_OPEN_HAPTIC: tmp2(7360).CONTEXT_MENU_OPEN_HAPTIC, measureButtonAndShowMenu: callback3 };
+        const obj5 = { runOnJS: ReanimatedRexport.runOnJS, triggerHapticFeedback: HapticUtils.triggerHapticFeedback, CONTEXT_MENU_OPEN_HAPTIC: ContextMenuConstants.CONTEXT_MENU_OPEN_HAPTIC, measureButtonAndShowMenu: callback3 };
+        const onBegin = PanResult1.enabled(flag5).onBegin;
+        PanResult1.enabled(flag5);
         fn.__closure = obj5;
         fn.__workletHash = 11906156003448;
         fn.__initData = __initData6;
-        const enabledResult3 = Gesture.Pan().enabled(flag5);
         const fn2 = function e(absoluteX) {
-          const result = items(flag2[5]).updateContextMenuState(absoluteX.absoluteX, absoluteX.absoluteY, activeIndex);
+          const obj = items(flag2[5]);
+          const result = obj.updateContextMenuState(absoluteX.absoluteX, absoluteX.absoluteY, activeIndex);
         };
-        const obj6 = { updateContextMenuState: tmp2(7359).updateContextMenuState, state: tmp };
+        const obj6 = { updateContextMenuState: ContextMenuState.updateContextMenuState, state: contextMenuState };
+        const onUpdate = onBegin(fn).onUpdate;
+        onBegin(fn);
         fn2.__closure = obj6;
         fn2.__workletHash = 17473642675622;
         fn2.__initData = __initData5;
-        const onBeginResult = Gesture.Pan().enabled(flag5).onBegin(fn);
-        onStartResult1 = Gesture.Pan().enabled(flag5).onBegin(fn).onUpdate(fn2).onEnd(onPanGestureEnd);
-        const onUpdateResult1 = Gesture.Pan().enabled(flag5).onBegin(fn).onUpdate(fn2);
+        const onUpdateResult = onUpdate(fn2);
+        onStartResult1 = onUpdateResult.onEnd(onPanGestureEnd);
       }
       return onStartResult1;
     }
-    let obj = { state: contextMenuState, runOnJS: ReanimatedRexport.runOnJS, requestClose };
   }, items10);
   const items12 = [items3];
   const memo2 = obj3.useMemo(() => items3.map((label) => ({ name: label.label, label: label.label })), items11);
   const items13 = [callback3];
   const callback4 = obj3.useCallback((arg0) => {
-    const nativeEvent = arg0;
+    let closure_0 = arg0;
     const found = items3.find((label) => label.label === nativeEvent.nativeEvent.actionName);
     if (found != null) {
       const action = found.action;
@@ -503,32 +496,32 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
   }, items12);
   [][0] = callback3;
   const callback5 = obj3.useCallback(() => {
-    let isAndroidResult = PlatformUtils2.isAndroid();
+    const obj = PlatformUtils;
+    let isAndroidResult = obj.isAndroid();
     if (isAndroidResult) {
-      isAndroidResult = tmp(5266).getIsScreenReaderEnabled();
-      const tmpResult = tmp(5266);
+      const tmpResult = useIsScreenReaderEnabled;
+      isAndroidResult = tmpResult.getIsScreenReaderEnabled();
     }
     if (isAndroidResult) {
-      tmp(4566).runOnUI(callback3)();
-      const tmpResult2 = tmp(4566);
+      const tmpResult2 = ReanimatedRexport;
+      tmpResult2.runOnUI(callback3)();
     }
   }, items13);
-  let obj5 = { ref: buttonRef, onPress: callback5, onLongPress: null, accessibilityActions: null, onAccessibilityAction: null };
-  let tmp24;
+  let obj5 = { ref: buttonRef, onPress: callback5, onLongPress: tmp25, accessibilityActions: memo2, onAccessibilityAction: callback4 };
+  tmp25 = undefined;
   if (flag) {
     if (flag3) {
-      tmp24 = tmp23;
+      tmp25 = tmp24;
     }
   }
-  obj5.onLongPress = tmp24;
-  obj5.accessibilityActions = memo2;
-  obj5.onAccessibilityAction = callback4;
+  const tmp26 = onOpen;
   if (flag3) {
     let obj6 = { children: children(obj5) };
-    let tmp25Result = tmp25(title, obj6);
+    tmp26Result = tmp26(title, obj6);
   } else {
     let obj7 = { gesture: memo1, children: children(obj5) };
-    tmp25Result = tmp25(tmp(tmp2[13]).GestureDetector, obj7);
+    const GestureDetector = tmp(tmp2[13]).GestureDetector;
+    tmp26Result = tmp26(GestureDetector, obj7);
   }
-  return tmp25Result;
+  return tmp26Result;
 };

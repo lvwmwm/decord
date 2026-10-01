@@ -3,10 +3,10 @@
 // Dependencies: []
 
 // Module 6925
-Key = Key.Key;
+let Key = exports.Key;
 if (!Key) {
   const obj = {};
-  Key.Key = obj;
+  exports.Key = obj;
   Key = obj;
 }
 Key.Unidentified = "Unidentified";

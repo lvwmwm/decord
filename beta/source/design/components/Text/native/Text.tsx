@@ -5,151 +5,190 @@
 
 // Module 4832 (Text/Text)
 import _modDef12 from "module_12" /* 12 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1085 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import useManaTextMigrationHighlight2 from "useManaTextMigrationHighlight" /* 4834 */;
+import TextVariants from "TextVariants" /* 4833 */;
 import PlainTextExperimentContext from "PlainTextExperimentContext" /* 4841 */;
 import useTypographyVariantRemap from "useTypographyVariantRemap" /* 4842 */;
 import PlainTextEligibility from "PlainTextEligibility" /* 4845 */;
 import _modDef4846 from "module_4846" /* 4846 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 4834 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let variant;
+
 let closure_3 = ["color", "fontSize", "fontFamily", "fontWeight", "fontStyle", "textAlign", "textAlignVertical", "verticalAlign", "textDecorationLine", "lineHeight", "letterSpacing"];
-get_ActivityIndicator = fn(17);
-const Text = get_ActivityIndicator.Text;
-let closure_7 = get_ActivityIndicator.unstable_TextAncestorContext;
-const Fonts = fn(1085).Fonts;
-const jsx = fn(21).jsx;
+const Text = react_native.Text;
+let closure_7 = react_native.unstable_TextAncestorContext;
+const Fonts = Constants.Fonts;
+const jsx = Fragment.jsx;
 let closure_9 = ReanimatedRexport.createAnimatedComponent(Text);
 let items = [{ includeFontPadding: true }];
 let closure_11 = [];
 const keys = Object.keys(nativeDefault.colors);
-let closure_12 = Object.fromEntries(keys.map((item) => {
-  items = [_modDef12.kebabCase(item), item];
+let closure_12 = fromEntries(keys.map((item) => {
+  items = [, ];
+  const obj = _modDef12;
+  items[0] = obj.kebabCase(item);
+  items[1] = item;
   return items;
 }));
+let obj = { 400: null, 500: null, 600: null, 700: null, 800: null };
 ({ PRIMARY_NORMAL: obj3[400], PRIMARY_MEDIUM: obj3[500], PRIMARY_SEMIBOLD: obj3[600], PRIMARY_BOLD: obj3[700], PRIMARY_EXTRABOLD: obj3[800] } = Fonts);
 let obj2 = { 800: null };
 obj2[800] = Fonts.GINTO_NORD_EXTRA_BOLD;
 let obj4 = { 700: null };
 obj4[700] = Fonts.GINTO_DISCORD_NORD_BOLD;
+let obj5 = { 400: null, 700: null };
 ({ CODE_NORMAL: obj6[400], CODE_BOLD: obj6[700] } = Fonts);
 let obj7 = { 800: null };
 obj7[800] = Fonts.GINTO_NORD_EXTRA_BOLD_ITALIC;
+const obj9 = { 700: null, 900: null };
 ({ GINTO_DISCORD_NORD_BOLD_ITALIC: obj8[700], GINTO_DISCORD_NORD_BLACK_ITALIC: obj8[900] } = Fonts);
-const dependencyMap = { headline: obj2, nitro: obj4, primary: { 400: null, 500: null, 600: null, 700: null, 800: null }, code: { 400: null, 700: null } };
-let closure_14 = { headline: obj7, nitro: { 700: null, 900: null } };
-const TextVariantsFlat = fn(4833).TextVariantsFlat;
+let closure_13 = { headline: obj2, nitro: obj4, primary: obj, code: obj5 };
+let closure_14 = { headline: obj7, nitro: obj9 };
+const fromEntries2 = Object.fromEntries;
+const TextVariantsFlat = TextVariants.TextVariantsFlat;
 const mapped = TextVariantsFlat.map((name) => {
+  let fontStack;
+  let result;
+  let str;
+  let weight;
   let tmp = null;
   if ("code" !== name.name) {
+    let obj;
     items = [name.name, ];
-    const obj2 = { fontSize: null, lineHeight: null, textTransform: null };
+    const obj2 = { fontSize: null, lineHeight: null, textTransform: str, includeFontPadding: false, letterSpacing: result };
     ({ size: obj4.fontSize, lineHeight: obj4.lineHeight } = name);
-    let str = "none";
+    str = "none";
     if (name.uppercase) {
       str = "uppercase";
     }
-    obj2.textTransform = str;
     ({ fontStack, weight } = name);
     const str1 = weight.toString();
     if (name.italic) {
+      let obj7;
       let tmp6;
       if (closure_14[fontStack] != null) {
         tmp6 = tmp5[str1];
       }
       if (null != tmp6) {
+        obj7 = { fontFamily: tmp6, fontStyle: "normal" };
         const obj3 = { fontFamily: tmp6, fontStyle: "normal" };
       } else {
-        const obj7 = { fontFamily: dependencyMap[fontStack][str1], fontStyle: "italic" };
+        obj7 = { fontFamily: closure_13[fontStack][str1], fontStyle: "italic" };
       }
+      obj = obj7;
     } else {
-      const obj = { fontFamily: dependencyMap[fontStack][str1] };
-      const merged = Object.assign(obj);
-      obj2.includeFontPadding = false;
-      let result;
-      if ("letterSpacing" in name) {
-        result = name.letterSpacing / 10;
-      }
-      obj2.letterSpacing = result;
-      items[1] = obj2;
-      tmp = items;
+      obj = { fontFamily: closure_13[fontStack][str1] };
     }
+    const merged = Object.assign(obj);
+    result = undefined;
+    if ("letterSpacing" in name) {
+      result = name.letterSpacing / 10;
+    }
+    items[1] = obj2;
+    tmp = items;
   }
   return tmp;
 });
-const fromEntriesResult = Object.fromEntries(mapped.filter(Boolean));
-const useManaTextMigrationHighlight = fn(4834);
-let result = useManaTextMigrationHighlight.withManaTextMigrationHighlight(fromEntriesResult);
-const createStyles = fn(4836);
+const fromEntries2Result = fromEntries2(mapped.filter(Boolean));
+let result = useManaTextMigrationHighlight.withManaTextMigrationHighlight(fromEntries2Result);
 let closure_16 = createStyles.createStyles((arg0, arg1) => {
   let tmp;
   if ("none" !== arg0) {
     tmp = nativeDefault.colors[closure_12[arg0]];
   }
-  const text = { color: tmp, fontVariant: null };
+  const text = { color: tmp, fontVariant: items };
   items = undefined;
   if (arg1) {
     items = ["tabular-nums"];
   }
-  text.fontVariant = items;
   return { text };
 });
-const forwardRefResult = noop.forwardRef((animated, ref) => {
-  ({ color, style, children, lineClamp, includeFontPadding } = animated);
+const forwardRefResult = react.forwardRef((variant, ref) => {
+  let StringResult;
+  let children;
+  let color;
+  let color2;
+  let ellipsizeMode;
+  let fontFamily;
+  let fontSize;
+  let fontStyle;
+  let fontWeight;
+  let includeFontPadding;
+  let letterSpacing;
+  let lineClamp;
+  let lineHeight;
+  let str;
+  let style;
+  let tabularNumbers;
+  let textAlign;
+  let textAlignVertical;
+  let textDecorationLine;
+  let tmp21;
+  let tmp5Result3;
+  let verticalAlign;
+  ({ color, style, children, lineClamp, includeFontPadding } = variant);
+  variant = variant.variant;
   if (includeFontPadding === undefined) {
     includeFontPadding = false;
   }
-  ({ ellipsizeMode, tabularNumbers } = animated);
+  ({ ellipsizeMode, tabularNumbers } = variant);
   if (tabularNumbers === undefined) {
     tabularNumbers = false;
   }
-  let flag = animated.animated;
+  let flag = variant.animated;
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = animated.experimental_useNativeText;
+  let flag2 = variant.experimental_useNativeText;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const merged = Object.assign(animated, Object.assign({ variant: 0, color: 0, style: 0, children: 0, lineClamp: 0, includeFontPadding: 0, ellipsizeMode: 0, tabularNumbers: 0, animated: 0, experimental_useNativeText: 0 }));
+  const merged = Object.assign(variant, Object.assign({ variant: 0, color: 0, style: 0, children: 0, lineClamp: 0, includeFontPadding: 0, ellipsizeMode: 0, tabularNumbers: 0, animated: 0, experimental_useNativeText: 0 }));
+  const tmp3 = closure_16;
   if (color == null) {
     color = "text-default";
   }
-  const tmp2Result = closure_16(color, tabularNumbers);
-  const plainTextExperimentEnabled = PlainTextExperimentContext.usePlainTextExperimentEnabled();
-  const context = noop.useContext(closure_7);
-  const typographyVariantRemap = useTypographyVariantRemap.useTypographyVariantRemap(animated.variant, false);
-  items = [fromEntriesResult[typographyVariantRemap], tmp2Result.text, , ];
-  const manaTextMigrationHighlight = useManaTextMigrationHighlight2.useManaTextMigrationHighlight(fromEntriesResult[typographyVariantRemap], style);
-  const arraySpreadResult = HermesBuiltin.arraySpread(includeFontPadding ? items : closure_11, 2);
+  const tmp3Result = tmp3(color, tabularNumbers);
+  const obj = PlainTextExperimentContext;
+  const plainTextExperimentEnabled = obj.usePlainTextExperimentEnabled();
+  const context = react.useContext(closure_7);
+  const obj2 = useTypographyVariantRemap;
+  const typographyVariantRemap = obj2.useTypographyVariantRemap(variant, false);
+  items = [fromEntries2Result[typographyVariantRemap], tmp3Result.text, , ];
+  const obj3 = useManaTextMigrationHighlight;
+  const tmp11 = includeFontPadding ? items : closure_11;
+  const manaTextMigrationHighlight = obj3.useManaTextMigrationHighlight(fromEntries2Result[typographyVariantRemap], style);
+  const arraySpreadResult = HermesBuiltin.arraySpread(items, tmp11, 2);
   items[arraySpreadResult] = style;
   items[arraySpreadResult + 1] = manaTextMigrationHighlight;
-  const tmp10 = includeFontPadding ? items : closure_11;
-  const element = { animated: flag, children, enabled: plainTextExperimentEnabled, experimentalUseNativeText: flag2, hasRef: null != ref, hasTextAncestor: context, isIOS: null, props: null, style: null };
-  const tmp4Result = PlainTextEligibility;
-  element.isIOS = utils_PlatformUtils.isIOS();
-  element.props = merged;
-  element.style = items;
-  const plainTextEligibility = tmp4Result.getPlainTextEligibility(element);
-  const tmp4Result3 = utils_PlatformUtils;
-  if (tmp4Result4.isPlainTextEligible(plainTextEligibility)) {
+  const element = { animated: flag, children, enabled: plainTextExperimentEnabled, experimentalUseNativeText: flag2, hasRef: null != ref, hasTextAncestor: context, isIOS: tmp5Result3.isIOS(), props: merged, style: items };
+  const getPlainTextEligibility = PlainTextEligibility.getPlainTextEligibility;
+  PlainTextEligibility;
+  tmp5Result3 = utils_PlatformUtils;
+  const plainTextEligibility = getPlainTextEligibility(element);
+  const tmp5Result4 = PlainTextEligibility;
+  if (tmp5Result4.isPlainTextEligible(plainTextEligibility)) {
     ({ fontWeight, textAlignVertical, verticalAlign, letterSpacing } = plainTextEligibility);
     ({ color: color2, fontSize, fontFamily, fontStyle, textAlign, textDecorationLine, lineHeight } = plainTextEligibility);
-    const obj4 = { text: children, color: color2, fontSize, fontFamily, fontWeight: null, fontStyle: null, textAlign: null, textAlignVertical: null, textDecorationLine: null, lineHeight: null, letterSpacing: null, hasLetterSpacing: null, style: null, numberOfLines: null, ellipsizeMode: null, allowFontScaling: true };
-    let StringResult;
-    const tmp19 = _objectWithoutProperties(plainTextEligibility, closure_3);
-    const tmp20 = jsx;
+    const obj4 = { text: children, color: color2, fontSize, fontFamily, fontWeight: StringResult, fontStyle, textAlign, textAlignVertical, textDecorationLine, lineHeight, letterSpacing, hasLetterSpacing: undefined !== letterSpacing, style: tmp21, numberOfLines: lineClamp, ellipsizeMode, allowFontScaling: true };
+    StringResult = undefined;
+    tmp21 = _objectWithoutProperties(plainTextEligibility, closure_3);
+    const tmp22 = jsx;
+    const tmp24 = _modDef4846;
     if (null != fontWeight) {
       const _String = String;
       StringResult = String(fontWeight);
     }
-    obj4.fontWeight = StringResult;
-    obj4.fontStyle = fontStyle;
-    obj4.textAlign = textAlign;
     if (null != verticalAlign) {
       let str2 = "center";
       if ("middle" !== verticalAlign) {
@@ -157,48 +196,37 @@ const forwardRefResult = noop.forwardRef((animated, ref) => {
       }
       textAlignVertical = str2;
     }
-    obj4.textAlignVertical = textAlignVertical;
-    obj4.textDecorationLine = textDecorationLine;
-    obj4.lineHeight = lineHeight;
-    obj4.letterSpacing = letterSpacing;
-    obj4.hasLetterSpacing = undefined !== letterSpacing;
-    obj4.style = tmp19;
-    obj4.numberOfLines = lineClamp;
     if (ellipsizeMode == null) {
       ellipsizeMode = "tail";
     }
-    obj4.ellipsizeMode = ellipsizeMode;
     const merged1 = Object.assign(merged);
-    return tmp20(_modDef4846, obj4);
+    return tmp22(tmp24, obj4);
   } else {
+    let NativeText;
     if (flag2) {
-      let NativeText = tmp4(299).NativeText;
+      NativeText = tmp5(299).NativeText;
     } else {
       NativeText = flag ? closure_9 : Text;
     }
-    const obj5 = { style: items, numberOfLines: lineClamp, ellipsizeMode: null, allowFontScaling: true, ref: null };
-    let str = ellipsizeMode;
+    const obj5 = { style: items, numberOfLines: lineClamp, ellipsizeMode: str, allowFontScaling: true, ref, children };
+    str = ellipsizeMode;
+    const tmp15 = jsx;
     if (ellipsizeMode == null) {
       str = "tail";
     }
-    obj5.ellipsizeMode = str;
-    obj5.ref = ref;
     const merged2 = Object.assign(merged);
-    obj5.children = children;
-    return <NativeText style={items} numberOfLines={lineClamp} ellipsizeMode={null} allowFontScaling ref={null} />;
+    return tmp15(NativeText, obj5);
   }
-  tmp4Result4 = PlainTextEligibility;
 });
-const size = fn(2);
+const forwardRefResult1 = react.forwardRef((variant, ref) => {
+  const obj = useTypographyVariantRemap;
+  const typographyVariantRemap = obj.useTypographyVariantRemap(variant.variant, true);
+  const merged = Object.assign(variant);
+  return <forwardRefResult ref={arg1} accessibilityRole="header" variant={typographyVariantRemap} />;
+});
 const result1 = size.fileFinishedImporting("design/components/Text/native/Text.tsx");
+const Text_export = forwardRefResult;
 
 export const TextStyleSheet = result;
-export const Text = forwardRefResult;
-export const Heading = noop.forwardRef((variant, ref) => {
-  const obj2 = { ref };
-  const typographyVariantRemap = useTypographyVariantRemap.useTypographyVariantRemap(variant.variant, true);
-  const merged = Object.assign(variant);
-  obj2.accessibilityRole = "header";
-  obj2.variant = typographyVariantRemap;
-  return <forwardRefResult ref={arg1} />;
-});
+export { Text_export as Text };
+export const Heading = forwardRefResult1;

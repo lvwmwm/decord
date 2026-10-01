@@ -6,21 +6,22 @@
 
 // Module 13655 (useFlashListAnimationDisabler)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 const __initData = { code: "function useFlashListAnimationDisablerTsx1(){const{lastId}=this.__closure;return lastId.get();}" };
 const __initData2 = { code: "function useFlashListAnimationDisablerTsx2(current,prev){const{enableAnimation}=this.__closure;if(current!==prev){enableAnimation.set(false);}}" };
 const __initData3 = { code: "function useFlashListAnimationDisablerTsx3(finished){const{enableAnimation}=this.__closure;if(finished&&!enableAnimation.get()){enableAnimation.set(true);}}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/useFlashListAnimationDisabler.tsx");
 
 export const useFlashListAnimationDisabler = function useFlashListAnimationDisabler(userId) {
-  closure_0 = userId;
-  const sharedValue = ReanimatedRexport.useSharedValue(false);
-  const sharedValue1 = ReanimatedRexport.useSharedValue(userId);
+  let closure_0 = userId;
+  const obj = ReanimatedRexport;
+  const sharedValue = obj.useSharedValue(false);
+  const obj2 = ReanimatedRexport;
+  const sharedValue1 = obj2.useSharedValue(userId);
   const items = [sharedValue1, userId];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     const result = sharedValue1.set(closure_0);
   }, items);
   const fn = function _() {
@@ -37,12 +38,10 @@ export const useFlashListAnimationDisabler = function useFlashListAnimationDisab
   fn2.__closure = { enableAnimation: sharedValue };
   fn2.__workletHash = 6114249067388;
   fn2.__initData = __initData2;
-  const animatedReaction = ReanimatedRexport.useAnimatedReaction(fn, fn2);
+  const obj3 = ReanimatedRexport;
+  const animatedReaction = obj3.useAnimatedReaction(fn, fn2);
   const fn3 = function b(arg0) {
-    let tmp = arg0;
-    if (arg0) {
-      tmp = !sharedValue.get();
-    }
+    const tmp = arg0 && !sharedValue.get();
     if (tmp) {
       const result = sharedValue.set(true);
     }
@@ -51,6 +50,6 @@ export const useFlashListAnimationDisabler = function useFlashListAnimationDisab
   fn3.__workletHash = 5697261629076;
   fn3.__initData = __initData3;
   const items1 = [sharedValue];
-  const items2 = [sharedValue, noop.useCallback(fn3, items1)];
+  const items2 = [sharedValue, react.useCallback(fn3, items1)];
   return items2;
 };

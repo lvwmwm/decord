@@ -9,11 +9,15 @@ import MemberVerificationUtils from "MemberVerificationUtils" /* 5365 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
 function shouldShowMembershipVerificationGate(guildId, items) {
+  let obj;
+  let obj2;
+  let obj3;
   let tmp = items;
   if (items === undefined) {
     items = [GuildStore, UserStore, GuildMemberStore];
@@ -38,12 +42,12 @@ function shouldShowMembershipVerificationGate(guildId, items) {
       flag = flag2;
     }
     if (flag) {
-      flag = MemberVerificationUtils.guildHasVerificationGate(guild);
+      const obj4 = MemberVerificationUtils;
+      flag = obj4.guildHasVerificationGate(guild);
     }
     return flag;
   }
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useShowMemberVerificationGate.tsx");
 
 export { shouldShowMembershipVerificationGate };
@@ -51,8 +55,9 @@ export const useShowMemberVerificationGate = function useShowMemberVerificationG
   _require = guild_id;
   let items = [GuildStore, UserStore, GuildMemberStore];
   const items1 = [guild_id];
-  return require("initialize").useStateFromStores(items, () => {
-    let tmp2 = null != closure_0;
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    let tmp2 = null != guild_id;
     if (tmp2) {
       const items = [GuildStore, UserStore, GuildMemberStore];
       tmp2 = shouldShowMembershipVerificationGate(tmp, items);

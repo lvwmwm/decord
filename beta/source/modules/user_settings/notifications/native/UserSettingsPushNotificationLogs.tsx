@@ -5,119 +5,149 @@
 // Exports: default
 
 // Module 15121 (UserSettingsPushNotificationLogs)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import InputTypes from "InputTypes" /* 6040 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, list: null, searchWrap: null, shareButton: null, log: null, code: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj2.list = { paddingHorizontal: nativeDefault.space.PX_16 };
-let obj4 = { paddingHorizontal: nativeDefault.space.PX_16 };
-obj2.searchWrap = { padding: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center" };
-let size = { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, marginLeft: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, height: fn(6040).InputHeights.MD, width: fn(6040).InputHeights.MD, justifyContent: "center", alignItems: "center" };
-obj2.shareButton = size;
-let obj5 = { padding: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center" };
-obj2.log = { paddingBottom: nativeDefault.space.PX_16 };
-obj2.code = { fontFamily: fn(1074).Fonts.CODE_BOLD };
-let closure_9 = createStyles.createStyles(obj2);
-size = fn(2);
+let c2, c3;
+
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let size;
+let _slicedToArray = _slicedToArray_mod;
+const View = react_native.View;
+const Fonts = Constants.Fonts;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { wrap: obj2, list: obj3, searchWrap: obj4, shareButton: size, log: obj5, code: { fontFamily: Fonts.CODE_BOLD } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
+obj4 = { padding: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center" };
+size = { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, marginLeft: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, height: InputTypes.InputHeights.MD, width: InputTypes.InputHeights.MD, justifyContent: "center", alignItems: "center" };
+obj5 = { paddingBottom: nativeDefault.space.PX_16 };
+let closure_9 = createStyles(obj);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsPushNotificationLogs.tsx");
 
 export default function UserSettingsPushNotificationLogs() {
-  const tmp = _slicedToArray(noop.useState(() => {
-    const Storage = first(510).Storage;
+  let closure_2;
+  let closure_4;
+  let defaultValue;
+  let first1;
+  let intl;
+  let items1;
+  let items2;
+  let obj5;
+  let tmp3;
+  let tmp7;
+  [defaultValue, tmp3] = react.useState(() => {
+    const Storage = first(closure_2[9]).Storage;
     let str = Storage.get("push-notification-logs-query", "");
     if (str == null) {
       str = "";
     }
     return str;
-  }), 2);
-  const defaultValue = tmp[0];
-  [first1, dependencyMap] = noop.useState([]);
-  [tmp6, asyncGeneratorStep] = noop.useState([]);
-  const effect = noop.useEffect(() => {
-    closure_0 = async function _load(arg0, value) {
-      if (c3 === 2) {
-        c3 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
+  });
+  [first1, dependencyMap] = react.useState([]);
+  const tmp6 = _slicedToArray(react.useState([]), 2);
+  [tmp7, _asyncToGenerator] = tmp6;
+  const effect = react.useEffect(() => {
+    function load() {
+      return obj(...arguments);
+    }
+    let obj = function _load() {
+      obj = _asyncToGenerator(async (arg0, value) => {
+        let v1;
+        if (c3 === 2) {
+          c3 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
         } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c3 = 2;
-          if (0 === v1) {
-            if (arg0 === 1) {
+          try {
+            let closure_0;
+            c3 = 2;
+            if (0 === c2) {
+              if (arg0 === 1) {
+                c3 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                let closure_1 = tmp4;
+                closure_0 = undefined;
+                c2 = 1;
+                c3 = 1;
+                const obj4 = { value: first1(closure_2_2[10])(), done: false };
+                return obj4;
+              }
+            } else if (arg0 === 1) {
               c3 = 3;
               throw value;
             } else if (arg0 === 2) {
               c3 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
+              obj = { value, done: true };
+              return obj;
             } else {
-              closure_1 = tmp5;
-              closure_0 = tmp2;
-              closure_128_0 = undefined;
-              v1 = 1;
-              c3 = 1;
-              const obj4 = { value: first1(dependencyMap[10])(), done: false };
-              return obj4;
+              closure_0 = value;
+              c2(closure_0);
+              c3 = 3;
+              return { value: "HermesInternal", done: null };
             }
-          } else if (arg0 === 1) {
+          } catch (tmp12) {
             c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else {
-            closure_128_0 = value;
-            v1(closure_128_0);
-            c3 = 3;
-            return { value: "HermesInternal", done: null };
+            throw tmp12;
           }
-        } catch (tmp13) {
-          c3 = tmp;
-          throw tmp13;
         }
-      }
+      });
+      return obj(...arguments);
     };
-    !(function load() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    })();
+    const tmp = !load();
   }, []);
   let items = [first1, defaultValue];
-  const effect1 = noop.useEffect(() => {
+  const effect1 = react.useEffect(() => {
+    let closure_0;
+    let timeout;
+    let tmp;
     if ("" !== timeout) {
       const _setTimeout = setTimeout;
-      timeout = setTimeout(() => {
+      timeout = setTimeout(function() {
         try {
+          const tmp = globalThis;
           const _RegExp = RegExp;
+          let tmp2 = closure_0;
+          const self = this;
+          let str = "i";
+          const self2 = this;
           const regExp = new RegExp(closure_0, "i");
           closure_1_3(first1.filter((type) => {
-            let tmp2 = null != type.type.match(regExp);
+            const str = type.type;
+            let tmp2 = null != str.match(regExp);
             if (!tmp2) {
-              tmp2 = null != type.title.match(tmp);
+              const str2 = type.title;
+              tmp2 = null != str2.match(tmp);
             }
             if (!tmp2) {
               let match;
@@ -129,106 +159,122 @@ export default function UserSettingsPushNotificationLogs() {
             return tmp2;
           }));
           const Storage = first(closure_2[9]).Storage;
+          let str2 = "push-notification-logs-query";
           const result = Storage.set("push-notification-logs-query", closure_0);
         } catch (err) {
         }
       }, 300);
       return () => clearTimeout(closure_0);
     } else {
+      let tmp2 = closure_3;
       closure_3(first1);
-      let Storage = first(510).Storage;
+      let Storage = first(closure_2[9]).Storage;
+      let str = "push-notification-logs-query";
       let result = Storage.set("push-notification-logs-query", tmp);
     }
   }, items);
-  const tmp9 = closure_9();
-  _slicedToArray = tmp9;
-  let obj = { style: tmp9.wrap, children: null };
-  let obj2 = { style: tmp9.searchWrap, children: null };
-  let items1 = [closure_7(defaultValue(6471).SearchField, { size: "md", placeholder: "Filter (regex)", onChange: tmp[1], defaultValue }), ];
-  let obj3 = { style: tmp9.shareButton, accessibilityLabel: null, onPress: null, children: null };
-  const intl = defaultValue(1115).intl;
-  obj3.accessibilityLabel = intl.string(defaultValue(1115).t.leICvh);
-  obj3.onPress = asyncGeneratorStep(async (arg0, value) => {
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+  const tmp10 = closure_9();
+  _slicedToArray = tmp10;
+  let obj = { style: tmp10.wrap, children: items2 };
+  let obj2 = { style: tmp10.searchWrap, children: items1 };
+  const bottom = first1(1613)().bottom;
+  items1 = [closure_7(defaultValue(6471).SearchField, { size: "md", placeholder: "Filter (regex)", onChange: tmp3, defaultValue }), ];
+  let obj3 = {
+    style: tmp10.shareButton,
+    accessibilityLabel: intl.string(defaultValue(1115).t.leICvh),
+    onPress: _asyncToGenerator(async (arg0, value) => {
+      let closure_0;
+      let closure_1;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
       } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c3 = 2;
-        if (0 === dependencyMap) {
-          if (arg0 === 1) {
+        try {
+          let tmp;
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              tmp = undefined;
+              c2 = 1;
+              c3 = 1;
+              const obj4 = { value: tmp4(c2[10])(), done: false };
+              return obj4;
+            }
+          } else if (arg0 === 1) {
             c3 = 3;
             throw value;
           } else if (arg0 === 2) {
             c3 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj5 = { value, done: true };
+            return obj5;
           } else {
-            closure_128_0 = undefined;
-            dependencyMap = 1;
-            c3 = 1;
-            const obj4 = { value: tmp5(9651)(), done: false };
-            return obj4;
+            tmp = value;
+            const obj = { message: tmp4(c2[16])(tmp, false) };
+            const showShareActionSheet = tmp(c2[15]).showShareActionSheet;
+            const tmp9 = tmp(c2[15]);
+            showShareActionSheet(obj, "push-notification-logs");
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
           }
-        } else if (arg0 === 1) {
+        } catch (tmp16) {
           c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          closure_128_0 = value;
-          const obj6 = { message: tmp5(9652)(closure_128_0, false) };
-          tmp2(7809).showShareActionSheet(obj6, "push-notification-logs");
-          c3 = 3;
-          return { value: "HermesInternal", done: null };
+          throw tmp16;
         }
-      } catch (tmp16) {
-        c3 = tmp;
-        throw tmp16;
       }
-    }
-  });
-  obj3.children = closure_7(defaultValue(12470).ShareIcon, {});
-  items1[1] = closure_7(defaultValue(5435).PressableOpacity, obj3);
-  obj2.children = items1;
-  let items2 = [closure_8(View, obj2), ];
-  let obj4 = { contentContainerStyle: null, data: null, renderItem: null };
-  let obj5 = {};
-  const merged = Object.assign(tmp9.list);
-  obj5.paddingBottom = first1(1613)().bottom + first1(576).space.PX_16;
-  obj4.contentContainerStyle = obj5;
-  obj4.data = tmp6;
-  obj4.renderItem = function renderItem(item) {
-    item = item.item;
-    let str = "";
-    if (item.silent) {
-      str = "~silent~ ";
-    }
-    const obj = { style: closure_4.log, children: null };
-    const obj2 = { style: closure_4.code, variant: "text-xs/normal", children: new Date(item.receivedTimestamp).toISOString() };
-    const items = [React5(Text_Text.Text, obj2), ];
-    const obj3 = { style: closure_4.code, variant: "text-sm/normal", children: null };
-    const obj4 = { style: closure_4.code, variant: "text-sm/normal", color: "text-brand", children: null };
-    const items1 = [str, "[", item.type, "]", " "];
-    obj4.children = items1;
-    const items2 = [React6(Text_Text.Text, obj4), item.title, " - ", item.content];
-    obj3.children = items2;
-    items[1] = React6(Text_Text.Text, obj3);
-    obj.children = items;
-    return React6(View, obj, item.index);
+    }),
+    children: closure_7(defaultValue(12470).ShareIcon, {})
   };
-  items2[1] = closure_7(defaultValue(8179).FlashList, obj4);
-  obj.children = items2;
+  const PressableOpacity = defaultValue(5435).PressableOpacity;
+  intl = defaultValue(1115).intl;
+  items1[1] = closure_7(PressableOpacity, obj3);
+  items2 = [closure_8(View, obj2), ];
+  let obj4 = {
+    contentContainerStyle: obj5,
+    data: tmp7,
+    renderItem(item) {
+      let date;
+      let items;
+      let items1;
+      let items2;
+      item = item.item;
+      let str = "";
+      const index = item.index;
+      if (item.silent) {
+        str = "~silent~ ";
+      }
+      const obj = { style: closure_4.log, children: items };
+      const obj2 = { style: closure_4.code, variant: "text-xs/normal", children: date.toISOString() };
+      const Text = Text_Text.Text;
+      date = new Date(item.receivedTimestamp);
+      items = [metroImportDefault(Text, obj2), ];
+      const obj3 = { style: closure_4.code, variant: "text-sm/normal", children: items2 };
+      const Text2 = Text_Text.Text;
+      const obj4 = { style: closure_4.code, variant: "text-sm/normal", color: "text-brand", children: items1 };
+      items1 = [str, "[", item.type, "]", " "];
+      items2 = [metroImportAll(Text_Text.Text, obj4), item.title, " - ", item.content];
+      items[1] = metroImportAll(Text2, obj3);
+      return metroImportAll(View, obj, index);
+    }
+  };
+  obj5 = { paddingBottom: bottom + first1(576).space.PX_16 };
+  const FlashList = defaultValue(8179).FlashList;
+  const merged = Object.assign(tmp10.list);
+  items2[1] = closure_7(FlashList, obj4);
   return closure_8(View, obj);
 };

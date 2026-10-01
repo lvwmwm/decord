@@ -5,159 +5,210 @@
 // Exports: default
 
 // Module 11104 (ChannelMembersActionSheet)
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl7 from "intl" /* 1115 */;
+import native from "native" /* 1177 */;
 import useNavigation from "useNavigation" /* 1485 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
+import useChannelNameDefault from "useChannelName" /* 4989 */;
+import SettingsIcon from "SettingsIcon" /* 6798 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8085 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9016 */;
 import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9032 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 9492 */;
 import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11103 */;
 import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11105 */;
 import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11107 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
-({ ChannelSettingsSections: closure_9, Permissions: c10 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { paddingHorizontal: 16, flex: 1 }, sectionRowWrapper: { paddingVertical: nativeDefault.space.PX_12 }, warning: { margin: 16, marginBottom: 0 } };
-let closure_13 = createStyles.createStyles(obj2);
-const size = fn(2);
+let BottomSheet, dependencyMap, guildId;
+
+let c10;
+let c9;
+let closure_12;
+let obj2;
+let unpackModuleId;
+const View = react_native.View;
+({ ChannelSettingsSections: c9, Permissions: c10 } = Constants);
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+let obj = { container: { paddingHorizontal: 16, flex: 1 }, sectionRowWrapper: obj2, warning: { margin: 16, marginBottom: 0 } };
+obj2 = { paddingVertical: nativeDefault.space.PX_12 };
+let closure_13 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/channel_permissions/native/action_sheets/ChannelMembersActionSheet.tsx");
 
 export default function ChannelMembersActionSheet(arg0) {
+  let HelpMessage;
+  let channelId;
+  let guild;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let items6;
+  let obj11;
+  let obj14;
+  let obj16;
+  let sectionRowWrapper;
+  let showRemove;
+  let sortedGuildRoles;
+  let tmp13;
+  let tmp32Result;
   ({ channelId: require, guildId: importDefault } = arg0);
-  closure_4 = undefined;
-  c5 = undefined;
+  let closure_4;
+  let c5;
   const tmp = closure_13();
   dependencyMap = tmp;
   const tmp4 = useSafeAreaInsetsDefault();
+  let obj = get_initialized;
   const items = [closure_4];
-  const stateFromStores = initialize.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(require));
+  let obj2 = get_initialized;
   const items1 = [GuildStore, GuildRoleStore];
   const items2 = [stateFromStores];
-  const stateFromStoresObject = initialize.useStateFromStoresObject(items1, () => {
-    guildId = undefined;
-    if (stateFromStores != null) {
-      guildId = stateFromStores.getGuildId();
-    }
-    const guild = GuildStore.getGuild(guildId);
-    const obj2 = { guild, sortedGuildRoles: null };
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => {
     let sortedRoles;
+    guildId = undefined;
+    const getGuild = GuildStore.getGuild;
+    const obj = stateFromStores;
+    if (stateFromStores != null) {
+      guildId = obj.getGuildId();
+    }
+    const guild = getGuild(guildId);
+    const obj2 = { guild, sortedGuildRoles: sortedRoles };
+    sortedRoles = undefined;
     if (null != guild) {
       sortedRoles = GuildRoleStore.getSortedRoles(guild.id);
     }
-    obj2.sortedGuildRoles = sortedRoles;
     return obj2;
   }, items2);
   ({ guild, sortedGuildRoles } = stateFromStoresObject);
+  let obj3 = get_initialized;
   const items3 = [c5];
   const items4 = [stateFromStores];
-  const stateFromStoresArray = initialize.useStateFromStoresArray(items3, () => {
+  const stateFromStoresArray = obj3.useStateFromStoresArray(items3, () => {
     guildId = undefined;
+    const getMemberIds = GuildMemberStore.getMemberIds;
+    const obj = stateFromStores;
     if (stateFromStores != null) {
-      guildId = stateFromStores.getGuildId();
+      guildId = obj.getGuildId();
     }
-    return GuildMemberStore.getMemberIds(guildId);
+    return getMemberIds(guildId);
   }, items4);
-  closure_4 = useNavigation.useNavigation();
+  const obj4 = useNavigation;
+  closure_4 = obj4.useNavigation();
+  const tmp9 = useChannelNameDefault(stateFromStores);
   AppChannelPermissionUtils;
   if (null != stateFromStores) {
     if (null != guild) {
       if (null != sortedGuildRoles) {
+        let tmp32Result2;
         const canResult = PermissionStore.can(constants2.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        const tmp5Result = tmp5(9016);
+        const tmp5Result = ChannelPermissionsUtils;
         const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        const tmp5Result2 = tmp5(9016);
-        const obj5 = { appChannelBotUserId: tmp11 };
         const items5 = [];
-        const obj6 = { title: null, data: null };
+        const obj5 = { appChannelBotUserId: tmp11 };
+        const tmp5Result2 = ChannelPermissionsUtils;
+        const obj6 = { title: intl4.string(intl7.t["LPJmL/"]), data: existingRolesRows };
         const existingMembersRows = tmp5Result2.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions, obj5);
-        const intl4 = tmp5(1115).intl;
-        obj6.title = intl4.string(tmp5(1115).t["LPJmL/"]);
-        obj6.data = existingRolesRows;
-        items5.push(obj6);
-        const obj7 = { title: null, data: null };
-        const intl5 = tmp5(1115).intl;
-        obj7.title = intl5.string(tmp5(1115).t["9Oq93m"]);
-        obj7.data = existingMembersRows;
-        items5.push(obj7);
-        const obj8 = { title: null, subtitle: null, trailing: null };
-        const intl6 = tmp5(1115).intl;
-        obj8.title = intl6.string(tmp5(1115).t.ES4CC6);
+        const push = items5.push;
+        intl4 = tmp5(1115).intl;
+        push(obj6);
+        const push2 = items5.push;
+        const obj7 = { title: intl5.string(intl7.t["9Oq93m"]), data: existingMembersRows };
+        intl5 = tmp5(1115).intl;
+        push2(obj7);
+        BottomSheet = tmp5(6571).BottomSheet;
+        const obj8 = { title: intl6.string(intl7.t.ES4CC6), subtitle: "#" + tmp9, trailing: tmp32Result };
+        const BottomSheetTitleHeader = tmp5(6570).BottomSheetTitleHeader;
+        intl6 = tmp5(1115).intl;
         const _HermesInternal = HermesInternal;
-        obj8.subtitle = "#" + tmp9;
-        let tmp32Result = canResult;
-        if (canResult) {
+        tmp32Result = canResult;
+        if (tmp32Result) {
           const obj9 = {
             onPress() {
-                      ActionSheetActionCreatorsDefault.hideActionSheet();
-                      ChannelSettingsActionCreatorsDefault.init(channelId);
-                      const result = ChannelDetailsUtils.navigateToChannelDetailsScreen(closure_4, constants.PERMISSIONS, channelId, "channel-members-action-sheet");
+                      const obj = ActionSheetActionCreatorsDefault;
+                      obj.hideActionSheet();
+                      const obj2 = ChannelSettingsActionCreatorsDefault;
+                      obj2.init(require);
+                      const obj3 = ChannelDetailsUtils;
+                      const result = obj3.navigateToChannelDetailsScreen(closure_4, constants.PERMISSIONS, require, "channel-members-action-sheet");
                     },
             accessibilityRole: "button",
-            accessibilityLabel: null,
-            children: null
+            accessibilityLabel: intl.string(intl7.t.XPDhcc),
+            children: closure_11(SettingsIcon.SettingsIcon, {})
           };
-          let intl = tmp5(1115).intl;
-          obj9.accessibilityLabel = intl.string(tmp5(1115).t.XPDhcc);
-          obj9.children = tmp32(tmp5(6798).SettingsIcon, {});
-          tmp32Result = tmp32(tmp5(5435).PressableOpacity, obj9);
+          const PressableOpacity = tmp5(5435).PressableOpacity;
+          intl = tmp5(1115).intl;
+          tmp32Result = tmp32(PressableOpacity, obj9);
         }
-        const obj10 = { scrollable: true, header: null, startExpanded: true, children: null };
-        obj8.trailing = tmp32Result;
-        obj10.header = closure_11(tmp5(6570).BottomSheetTitleHeader, obj8);
-        const obj11 = { style: tmp.container, children: null };
+        const obj10 = { scrollable: true, header: closure_11(BottomSheetTitleHeader, obj8), startExpanded: true, children: tmp13(stateFromStores, obj11) };
+        obj11 = { style: tmp.container, children: items6 };
+        tmp13 = closure_12;
         if (canResult) {
-          const obj12 = { label: null, onPress: null, icon: null };
-          const intl3 = tmp5(1115).intl;
-          obj12.label = intl3.string(tmp5(1115).t.dMJ3Y6);
-          obj12.onPress = function onPress() {
-            return channel_permissions_ChannelPermissionsUtils.openAddMembersActionSheet(stateFromStores);
+          const obj12 = {
+            label: intl3.string(intl7.t.dMJ3Y6),
+            onPress() {
+                      const obj = channel_permissions_ChannelPermissionsUtils;
+                      return obj.openAddMembersActionSheet(stateFromStores);
+                    },
+            icon: closure_11(GroupPlusIcon.GroupPlusIcon, {})
           };
-          obj12.icon = tmp32(tmp5(9492).GroupPlusIcon, {});
-          let tmp32Result2 = tmp32(tmp5(8055).RowButton, obj12);
+          const RowButton = tmp5(8055).RowButton;
+          intl3 = tmp5(1115).intl;
+          tmp32Result2 = tmp32(RowButton, obj12);
         } else {
-          const obj13 = { style: tmp.warning, children: null };
-          const obj14 = { messageType: tmp5(1177).HelpMessageTypes.INFO, children: null };
-          const intl2 = tmp5(1115).intl;
-          obj14.children = intl2.string(tmp5(1115).t.VOuiSj);
-          obj13.children = tmp32(tmp5(1177).HelpMessage, obj14);
+          const obj13 = { style: tmp.warning, children: closure_11(HelpMessage, obj14) };
+          obj14 = { messageType: native.HelpMessageTypes.INFO, children: intl2.string(intl7.t.VOuiSj) };
+          HelpMessage = tmp5(1177).HelpMessage;
+          intl2 = tmp5(1115).intl;
           tmp32Result2 = tmp32(tmp14, obj13);
         }
-        const items6 = [tmp32Result2, ];
-        const obj15 = { contentContainerStyle: null, renderItem: null, renderSectionHeader: null, sections: null, stickySectionHeadersEnabled: false };
-        const obj16 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-        obj15.contentContainerStyle = obj16;
-        obj15.renderItem = function renderItem(index) {
-          index = index.index;
-          ({ item, section } = index);
-          return closure_2_11(ChannelOverwritesItemDefault, { start: 0 === index, end: index === section.data.length - 1, guildId, item, channelId, showType: true, showRemove });
+        items6 = [tmp32Result2, ];
+        const obj15 = {
+          contentContainerStyle: obj16,
+          renderItem(index) {
+                  let item;
+                  let section;
+                  index = index.index;
+                  ({ item, section } = index);
+                  const obj = { start: 0 === index, end: index === section.data.length - 1, guildId: importDefault, item, channelId: require, showType: true, showRemove };
+                  return unpackModuleId(ChannelOverwritesItemDefault, obj);
+                },
+          renderSectionHeader(section) {
+                  let data;
+                  let intl;
+                  let obj2;
+                  let title;
+                  ({ title, data } = section.section);
+                  const obj = { style: sectionRowWrapper.sectionRowWrapper, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: intl.format(intl7.t.u8CWLl, obj2) };
+                  const Text = Text_Text.Text;
+                  intl = intl7.intl;
+                  obj2 = { numberOfItems: data.length, sectionTitle: title };
+                  return unpackModuleId(Text, obj);
+                },
+          sections: items5,
+          stickySectionHeadersEnabled: false
         };
-        obj15.renderSectionHeader = function renderSectionHeader(section) {
-          ({ title, data } = section.section);
-          const obj = { style: sectionRowWrapper.sectionRowWrapper, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: null };
-          const intl = util.intl;
-          obj.children = intl.format(util.t.u8CWLl, { numberOfItems: data.length, sectionTitle: title });
-          return closure_2_11(Text_Text.Text, obj);
-        };
-        obj15.sections = items5;
-        items6[1] = closure_11(tmp5(6045).BottomSheetSectionList, obj15);
-        obj11.children = items6;
-        obj10.children = closure_12(stateFromStores, obj11);
-        return closure_11(tmp5(6571).BottomSheet, obj10);
+        obj16 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
+        const BottomSheetSectionList = tmp5(6045).BottomSheetSectionList;
+        items6[1] = closure_11(BottomSheetSectionList, obj15);
+        return closure_11(BottomSheet, obj10);
       }
     }
   }

@@ -3,13 +3,16 @@
 // Dependencies: []
 
 // Module 1900
-globalThis.IntlMessageFormat.__addLocaleData({
+const obj = {
   locale: "en",
   pluralRuleFunction(arg0, arg1) {
-    const parts = String(arg0).split(".");
+    let str3;
+    const str = String(arg0);
+    const parts = str.split(".");
+    const tmp2 = parts[1];
     let substr1 = Number(parts[0]) == arg0;
     let substr = substr1;
-    if (substr1) {
+    if (substr) {
       const first = parts[0];
       substr = first.slice(-1);
     }
@@ -18,7 +21,9 @@ globalThis.IntlMessageFormat.__addLocaleData({
       substr1 = first1.slice(-2);
     }
     if (arg1) {
+      let str4;
       if (1 != substr) {
+        let str5;
         if (2 != substr) {
           let str7 = "other";
           if (3 == substr) {
@@ -27,27 +32,28 @@ globalThis.IntlMessageFormat.__addLocaleData({
               str7 = "few";
             }
           }
-          let str5 = str7;
+          str5 = str7;
         } else {
           str5 = "two";
         }
-        let str4 = str5;
+        str4 = str5;
       } else {
         str4 = "one";
       }
-      let str3 = str4;
+      str3 = str4;
     } else {
       str3 = "other";
       if (1 == arg0) {
         str3 = "other";
-        if (!parts[1]) {
+        if (!tmp2) {
           str3 = "one";
         }
       }
     }
     return str3;
   }
-});
+};
+globalThis.IntlMessageFormat.__addLocaleData(obj);
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-001", parentLocale: "en" });
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-150", parentLocale: "en-001" });
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-AG", parentLocale: "en-001" });
@@ -73,12 +79,13 @@ globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-DE", parentLocale: "e
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-DG", parentLocale: "en-001" });
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-DK", parentLocale: "en-150" });
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-DM", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({
+const obj2 = {
   locale: "en-Dsrt",
   pluralRuleFunction(arg0, arg1) {
     return "other";
   }
-});
+};
+globalThis.IntlMessageFormat.__addLocaleData(obj2);
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-ER", parentLocale: "en-001" });
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-FI", parentLocale: "en-150" });
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-FJ", parentLocale: "en-001" });
@@ -141,12 +148,13 @@ globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SL", parentLocale: "e
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SS", parentLocale: "en-001" });
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SX", parentLocale: "en-001" });
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SZ", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({
+const obj3 = {
   locale: "en-Shaw",
   pluralRuleFunction(arg0, arg1) {
     return "other";
   }
-});
+};
+globalThis.IntlMessageFormat.__addLocaleData(obj3);
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-TC", parentLocale: "en-001" });
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-TK", parentLocale: "en-001" });
 globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-TO", parentLocale: "en-001" });

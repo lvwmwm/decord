@@ -5,22 +5,24 @@
 // Exports: useIsGameFriends
 
 // Module 12656 (useIsGameFriends)
-import _slicedToArray from "module_32" /* 32 */;
+import Constants from "Constants" /* 1074 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import GameRelationshipStore from "GameRelationshipStore" /* 7071 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const RelationshipTypes = fn(1074).RelationshipTypes;
-const size = fn(2);
+const RelationshipTypes = Constants.RelationshipTypes;
 const result = size.fileFinishedImporting("modules/game_relationships/hooks/useIsGameFriends.tsx");
 
 export const useIsGameFriends = function useIsGameFriends(id) {
   _require = id;
   let items = [GameRelationshipStore];
   const items1 = [id];
-  return _slicedToArray(require("initialize").useStateFromStores(items, () => {
-    const gameRelationshipsForUserByType = GameRelationshipStore.getGameRelationshipsForUserByType(closure_0, RelationshipTypes.FRIEND);
+  const obj = require("get initialized");
+  return _slicedToArray(obj.useStateFromStores(items, () => {
+    const gameRelationshipsForUserByType = GameRelationshipStore.getGameRelationshipsForUserByType(id, RelationshipTypes.FRIEND);
     const items = [gameRelationshipsForUserByType.length > 0, GameRelationshipStore.getGameRelationshipsVersion()];
     return items;
   }, items1, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];

@@ -4,21 +4,29 @@
 // Dependencies: [1372, 7417, 1074, 504, 11006, 1115, 14144, 2]
 
 // Module 14270 (AccountDisplayNameSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import UserStore from "UserStore" /* 1372 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+let currentUser;
+
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["9AjdkD"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["9AjdkD"]);
   },
-  parent: fn(7417).MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountDisplayNameSettingTrailing() {
     const items = [UserStore];
-    return initialize.useStateFromStores(items, () => {
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => {
       currentUser = currentUser.getCurrentUser();
       let globalName;
       if (currentUser != null) {
@@ -28,13 +36,13 @@ const route = SettingBuilders.createRoute({
     });
   },
   screen: {
-    route: fn(1074).UserSettingsSections.PROFILE_CUSTOMIZATION,
+    route: UserSettingsSections.PROFILE_CUSTOMIZATION,
     getComponent() {
       return require("ProfileCustomizationSettingScreen").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountDisplayNameSetting.tsx");
 
 export default route;

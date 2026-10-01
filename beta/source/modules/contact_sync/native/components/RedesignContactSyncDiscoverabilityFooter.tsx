@@ -5,29 +5,32 @@
 // Exports: default
 
 // Module 12183 (RedesignContactSyncDiscoverabilityFooter)
-import jsxProd from "jsxProd" /* 21 */;
+import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
-import TableSwitchRow from "TableSwitchRow" /* 6621 */;
+import TableRowGroup2 from "TableRowGroup" /* 5999 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
-const jsx = jsxProd.jsx;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/contact_sync/native/components/RedesignContactSyncDiscoverabilityFooter.tsx");
 
 export default function RedesignContactSyncDiscoverabilityFooter(arg0) {
+  let discoverabilityEnabled;
+  let intl2;
+  let obj3;
+  let onValueChanged;
   ({ discoverabilityEnabled, onValueChanged } = arg0);
-  const obj = { hasIcons: false, helperText: null, children: null };
-  const intl = util.intl;
-  const obj2 = { helpdeskUrl: HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.CONTACT_SYNC) };
-  obj.helperText = intl.format(util.t.zopgpe, obj2);
-  const obj4 = { label: null, onValueChange: null, value: null };
-  const intl2 = util.intl;
-  obj4.label = intl2.string(util.t.a5QL24);
-  obj4.onValueChange = onValueChanged;
-  obj4.value = discoverabilityEnabled;
-  obj.children = jsx(TableSwitchRow.TableSwitchRow, { label: null, onValueChange: null, value: null });
-  return jsx(TableRowGroup.TableRowGroup, { hasIcons: false, helperText: null, children: null });
+  const TableRowGroup = TableRowGroup2.TableRowGroup;
+  const intl = intl3.intl;
+  const format = intl.format;
+  const obj2 = { helpdeskUrl: obj3.getArticleURL(HelpdeskArticles.CONTACT_SYNC) };
+  const zopgpe = intl3.t.zopgpe;
+  obj3 = HelpdeskUtilsDefault;
+  ({ label: intl2.string(intl3.t.a5QL24), onValueChange: onValueChanged, value: discoverabilityEnabled });
+  const TableSwitchRow = TableSwitchRow2.TableSwitchRow;
+  intl2 = intl3.intl;
+  return <TableRowGroup hasIcons={false} helperText={format(zopgpe, obj2)}>{null}</TableRowGroup>;
 };

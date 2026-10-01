@@ -5,49 +5,66 @@
 // Exports: PlayStationLinkSuccess
 
 // Module 8569 (PlayStationLinkSuccess)
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
 import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8538 */;
 import _modDef8554 from "module_8554" /* 8554 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+({ Image: closure_4, View: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ image: { width: 124, height: 160, marginBottom: 24 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkSuccess.tsx");
 
 export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
+  let Button;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let items1;
+  let obj8;
+  let obj9;
+  onClose = onClose.onClose;
   const tmp = closure_8();
-  const twoWayLinkStyles = TwoWayLinkStyles.useTwoWayLinkStyles();
-  const obj2 = { style: twoWayLinkStyles.container, children: null };
-  const obj3 = { style: twoWayLinkStyles.content, children: null };
-  const items = [timestampProducer(React4, { source: noop.useMemo(() => ({ uri: _modDef8554 }), []), style: tmp.image }), , ];
-  const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
-  const intl = util.intl;
-  obj5.children = intl.string(util.t.e6SOl0);
-  items[1] = timestampProducer(Text_Text.Text, obj5);
-  const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: null };
-  const intl2 = util.intl;
-  obj6.children = intl2.string(util.t.QjAZAQ);
-  items[2] = timestampProducer(Text_Text.Text, obj6);
-  obj3.children = items;
-  const items1 = [React5(hasOwnProperty, obj3), ];
-  const obj7 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
-  const obj8 = { style: twoWayLinkStyles.footerButton, children: null };
-  const obj9 = { size: "md", text: null, onPress: null };
-  const intl3 = util.intl;
-  obj9.text = intl3.string(util.t.i4jeWR);
-  obj9.onPress = onClose.onClose;
-  obj8.children = timestampProducer(components_Button_Button.Button, obj9);
-  obj7.children = timestampProducer(hasOwnProperty, obj8);
-  items1[1] = timestampProducer(common_SafeAreaView.SafeAreaPaddingView, obj7);
-  obj2.children = items1;
-  return React5(hasOwnProperty, obj2);
+  let obj = TwoWayLinkStyles;
+  const twoWayLinkStyles = obj.useTwoWayLinkStyles();
+  const obj3 = { style: twoWayLinkStyles.content, children: items };
+  items = [, , ];
+  const obj2 = { style: twoWayLinkStyles.container, children: items1 };
+  const obj4 = {
+    source: react.useMemo(() => {
+      const obj = { uri: _modDef8554 };
+      return obj;
+    }, []),
+    style: tmp.image
+  };
+  items[0] = metroRequire(React3, obj4);
+  const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.e6SOl0) };
+  const Text = Text_Text.Text;
+  intl = intl4.intl;
+  items[1] = metroRequire(Text, obj5);
+  const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(intl4.t.QjAZAQ) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl4.intl;
+  items[2] = metroRequire(Text2, obj6);
+  items1 = [metroImportDefault(hasOwnProperty, obj3), ];
+  const obj7 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: metroRequire(hasOwnProperty, obj8) };
+  obj8 = { style: twoWayLinkStyles.footerButton, children: metroRequire(Button, obj9) };
+  const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
+  obj9 = { size: "md", text: intl3.string(intl4.t.i4jeWR), onPress: onClose };
+  Button = components_Button_Button.Button;
+  intl3 = intl4.intl;
+  items1[1] = metroRequire(SafeAreaPaddingView, obj7);
+  return metroImportDefault(hasOwnProperty, obj2);
 };

@@ -1,13 +1,13 @@
 // Module ID: 5086
 // Function ID: 5087
-// Name: DisplayNameStylesContext
+// Name: react
 // Dependencies: [19, 2]
 
-// Module 5086 (DisplayNameStylesContext)
-import _mod19 from "module_19" /* 19 */;
+// Module 5086 (react)
+import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const context = _mod19.createContext({ overrideSettings: false });
+const context = react.createContext({ overrideSettings: false });
 const result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesContext.tsx");
 
 export const DisplayNameStylesContext = context;

@@ -9,50 +9,59 @@ import _modDef672 from "module_672" /* 672 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
 import shared from "shared" /* 4685 */;
+import MessageConstants from "MessageConstants" /* 4829 */;
 import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6686 */;
 import ThreadHooks from "ThreadHooks" /* 6687 */;
 import isSystemMessageDefault from "isSystemMessage" /* 6688 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 function useCanManageGuildOfficialMessages(arg0, arg1, location) {
-  _require = arg1;
-  closure_129_0 = arg0;
+  let closure_0;
+  const tmp = arg0;
+  _require = arg0;
   const items = [GuildStore];
   const items1 = [arg0];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let guild = null;
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    guild = null;
     if (null != closure_0) {
-      guild = GuildStore.getGuild(tmp);
+      guild = guild.getGuild(tmp);
     }
     return guild;
   }, items1);
-  const obj = require("initialize");
-  const tmp = arg0;
-  let enabled = null != stateFromStores;
-  if (enabled) {
+  const useExperiment = GuildOfficialMessagesExperimentDefault.useExperiment;
+  GuildOfficialMessagesExperimentDefault;
+  let hasItem = null != stateFromStores;
+  const obj2 = { guildId: tmp, location };
+  const enabled = useExperiment(obj2).enabled;
+  const tmp2 = _require;
+  if (hasItem) {
     const features = stateFromStores.features;
-    enabled = features.has(constants2.VERIFIED);
+    hasItem = features.has(constants2.VERIFIED);
   }
-  if (enabled) {
-    enabled = obj2.useExperiment(obj3).enabled;
+  if (hasItem) {
+    hasItem = enabled;
   }
-  obj2 = GuildOfficialMessagesExperimentDefault;
-  obj3 = { guildId: tmp, location };
   const items2 = [PermissionStore];
   const items3 = [arg1];
-  if (enabled) {
-    enabled = tmp2Result.useStateFromStores(items2, () => PermissionStore.can(constants4.MANAGE_OFFICIAL_MESSAGES, closure_0), items3);
+  const tmp2Result = tmp2(504);
+  if (hasItem) {
+    hasItem = tmp2Result.useStateFromStores(items2, () => PermissionStore.can(constants.MANAGE_OFFICIAL_MESSAGES, closure_0), items3);
   }
-  return enabled;
+  return hasItem;
 }
-let closure_5 = fn(4829).GUILD_OFFICIAL_HIGHLIGHT_ALPHA;
-const Constants = fn(1074);
-({ ChannelTypes: metroRequire, GuildFeatures: closure_7, MessageFlags: closure_8, Permissions: closure_9 } = Constants);
-const size = fn(2);
+let closure_5 = MessageConstants.GUILD_OFFICIAL_HIGHLIGHT_ALPHA;
+({ ChannelTypes: metroRequire, GuildFeatures: metroImportDefault, MessageFlags: metroImportAll, Permissions: c9 } = Constants);
 const result = size.fileFinishedImporting("modules/messages/GuildOfficialMessageUtils.tsx");
 
 export const getAccessibleGuildOfficialTextColor = function getAccessibleGuildOfficialTextColor(officialMessageColor, semanticColor, saturation, arg3) {
@@ -64,41 +73,38 @@ export const getAccessibleGuildOfficialTextColor = function getAccessibleGuildOf
   if (arg3 === undefined) {
     tmp = closure_5;
   }
-  const int2hexResult = utils_ColorUtils.int2hex(officialMessageColor);
+  const obj = utils_ColorUtils;
+  const int2hexResult = obj.int2hex(officialMessageColor);
   let tmp5 = _modDef672(semanticColor);
   const tmp6 = _modDef672(int2hexResult);
-  const mixResult = _modDef672.mix(tmp5, int2hexResult, tmp, "rgb");
-  const contrastResult = _modDef672.contrast(tmp6, mixResult);
+  const obj2 = _modDef672;
+  const mixResult = obj2.mix(tmp5, int2hexResult, tmp, "rgb");
+  const obj3 = _modDef672;
+  const contrastResult = obj3.contrast(tmp6, mixResult);
+  const obj4 = _modDef672;
   if (contrastResult < obj4.contrast(tmp6, tmp5)) {
     tmp5 = mixResult;
   }
-  obj4 = _modDef672;
   const tmp2Result = ColorUtils;
-  return tmp2Result.getAccessibleForegroundColor({ foreground: tmp6, background: tmp5, ratio: shared.WCAGContrastRatios.Text, saturationFactor: num });
+  const obj5 = { foreground: tmp6, background: tmp5, ratio: shared.WCAGContrastRatios.Text, saturationFactor: num };
+  return tmp2Result.getAccessibleForegroundColor(obj5);
 };
 export function showGuildOfficialMessageGradient(officialMessageStyle) {
-  let tmp = "no_gradient" !== officialMessageStyle;
-  if (tmp) {
-    tmp = "hidden" !== officialMessageStyle;
-  }
-  return tmp;
+  return "no_gradient" !== officialMessageStyle && "hidden" !== officialMessageStyle;
 }
 export function showGuildOfficialMessageTextColor(officialMessageStyle) {
-  let tmp = "no_text_color" !== officialMessageStyle;
-  if (tmp) {
-    tmp = "hidden" !== officialMessageStyle;
-  }
-  return tmp;
+  return "no_text_color" !== officialMessageStyle && "hidden" !== officialMessageStyle;
 }
 export const isGuildOfficialMessagesEnabled = function isGuildOfficialMessagesEnabled(guild, GuildSettingsModalLanding) {
   let enabled = null != guild;
   if (enabled) {
     const features = guild.features;
-    enabled = features.has(constants2.VERIFIED);
+    enabled = features.has(metroImportDefault.VERIFIED);
   }
   if (enabled) {
     const obj2 = { guildId: guild.id, location: GuildSettingsModalLanding };
-    enabled = GuildOfficialMessagesExperimentDefault.getCurrentConfig(obj2).enabled;
+    const obj = GuildOfficialMessagesExperimentDefault;
+    enabled = obj.getCurrentConfig(obj2).enabled;
   }
   return enabled;
 };
@@ -106,33 +112,38 @@ export const useIsGuildOfficialMessagesEnabled = function useIsGuildOfficialMess
   _require = id;
   const items = [GuildStore];
   const items1 = [id];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let guild = null;
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    guild = null;
     if (null != closure_0) {
-      guild = GuildStore.getGuild(tmp);
+      guild = guild.getGuild(tmp);
     }
     return guild;
   }, items1);
-  const obj = require("initialize");
-  let enabled = null != stateFromStores;
-  if (enabled) {
+  const useExperiment = GuildOfficialMessagesExperimentDefault.useExperiment;
+  GuildOfficialMessagesExperimentDefault;
+  let hasItem = null != stateFromStores;
+  const obj2 = { guildId: id, location: useGuildActionRows };
+  const enabled = useExperiment(obj2).enabled;
+  if (hasItem) {
     const features = stateFromStores.features;
-    enabled = features.has(constants2.VERIFIED);
+    hasItem = features.has(constants2.VERIFIED);
   }
-  if (enabled) {
-    enabled = obj2.useExperiment(obj3).enabled;
+  if (hasItem) {
+    hasItem = enabled;
   }
-  return enabled;
+  return hasItem;
 };
 export const canManageGuildOfficialMessages = function canManageGuildOfficialMessages(features, arg1, location) {
   let enabled = null != features;
   if (enabled) {
     features = features.features;
-    enabled = features.has(constants2.VERIFIED);
+    enabled = features.has(metroImportDefault.VERIFIED);
   }
   if (enabled) {
     const obj2 = { guildId: features.id, location };
-    enabled = GuildOfficialMessagesExperimentDefault.getCurrentConfig(obj2).enabled;
+    const obj = GuildOfficialMessagesExperimentDefault;
+    enabled = obj.getCurrentConfig(obj2).enabled;
   }
   if (enabled) {
     enabled = PermissionStore.can(constants4.MANAGE_OFFICIAL_MESSAGES, arg1);
@@ -147,32 +158,39 @@ export const useCanToggleGuildOfficialMessages = function useCanToggleGuildOffic
   if (tmpResult) {
     tmp3 = isSystemMessageDefault(message);
   }
-  if (tmp3) {
-    return !tmp3;
-  } else if (message.hasFlag(constants3.IS_GUILD_OFFICIAL)) {
-    let isActiveChannelOrUnarchivableThread = ThreadHooks.getIsActiveChannelOrUnarchivableThread(channel);
-  } else {
-    isActiveChannelOrUnarchivableThread = null != channel && !channel.isPrivate();
-    if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = ThreadHooks.getIsActiveChannelOrUnarchivableThread(channel);
+  let tmp6 = !tmp3;
+  if (tmp6) {
+    let isActiveChannelOrUnarchivableThread;
+    if (message.hasFlag(metroImportAll.IS_GUILD_OFFICIAL)) {
+      const obj2 = ThreadHooks;
+      isActiveChannelOrUnarchivableThread = obj2.getIsActiveChannelOrUnarchivableThread(channel);
+    } else {
+      isActiveChannelOrUnarchivableThread = null != channel && !channel.isPrivate();
+      if (isActiveChannelOrUnarchivableThread) {
+        const obj = ThreadHooks;
+        isActiveChannelOrUnarchivableThread = obj.getIsActiveChannelOrUnarchivableThread(channel);
+      }
+      if (isActiveChannelOrUnarchivableThread) {
+        isActiveChannelOrUnarchivableThread = channel.type !== metroRequire.GUILD_VOICE;
+      }
+      if (isActiveChannelOrUnarchivableThread) {
+        isActiveChannelOrUnarchivableThread = channel.type !== metroRequire.GUILD_STAGE_VOICE;
+      }
     }
-    if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = channel.type !== constants.GUILD_VOICE;
-    }
-    if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = channel.type !== constants.GUILD_STAGE_VOICE;
-    }
+    tmp6 = isActiveChannelOrUnarchivableThread;
   }
+  return tmp6;
 };
 export const canSendGuildOfficialMessages = function canSendGuildOfficialMessages(guild, channel, _sendMessage) {
   let enabled = null != guild;
   if (enabled) {
     const features = guild.features;
-    enabled = features.has(constants2.VERIFIED);
+    enabled = features.has(metroImportDefault.VERIFIED);
   }
   if (enabled) {
     const obj2 = { guildId: guild.id, location: _sendMessage };
-    enabled = GuildOfficialMessagesExperimentDefault.getCurrentConfig(obj2).enabled;
+    const obj = GuildOfficialMessagesExperimentDefault;
+    enabled = obj.getCurrentConfig(obj2).enabled;
   }
   if (enabled) {
     enabled = PermissionStore.can(constants4.MANAGE_OFFICIAL_MESSAGES, channel);
@@ -180,13 +198,14 @@ export const canSendGuildOfficialMessages = function canSendGuildOfficialMessage
   if (enabled) {
     let isActiveChannelOrUnarchivableThread = null != channel && !channel.isPrivate();
     if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = ThreadHooks.getIsActiveChannelOrUnarchivableThread(channel);
+      const obj3 = ThreadHooks;
+      isActiveChannelOrUnarchivableThread = obj3.getIsActiveChannelOrUnarchivableThread(channel);
     }
     if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = channel.type !== constants.GUILD_VOICE;
+      isActiveChannelOrUnarchivableThread = channel.type !== metroRequire.GUILD_VOICE;
     }
     if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = channel.type !== constants.GUILD_STAGE_VOICE;
+      isActiveChannelOrUnarchivableThread = channel.type !== metroRequire.GUILD_STAGE_VOICE;
     }
     enabled = isActiveChannelOrUnarchivableThread;
   }

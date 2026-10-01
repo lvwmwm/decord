@@ -5,29 +5,33 @@
 // Exports: default
 
 // Module 10352 (UserProfileVoiceActivityIcon)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1085 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 5373 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const Permissions = fn(1085).Permissions;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const Permissions = Constants.Permissions;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileVoiceActivityIcon.tsx");
 
 export default function UserProfileVoiceActivityIcon(channel) {
   channel = channel.channel;
   const merged = Object.assign(channel, Object.assign({ channel: 0 }));
   const items = [PermissionStore];
-  const stateFromStores = channel(504).useStateFromStores(items, () => {
+  const obj = channel(504);
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let isPrivateResult = channel.isPrivate();
+    const tmp = channel;
     if (!isPrivateResult) {
-      isPrivateResult = PermissionStore.can(Permissions.CONNECT, channel);
+      isPrivateResult = PermissionStore.can(Permissions.CONNECT, tmp);
     }
     return isPrivateResult;
   });
   if (!channel.isDM()) {
     if (!channel.isGroupDM()) {
+      let tmp8Result;
       const isGuildStageVoiceResult = channel.isGuildStageVoice();
       let tmp6 = !stateFromStores;
       if (stateFromStores) {
@@ -35,23 +39,25 @@ export default function UserProfileVoiceActivityIcon(channel) {
       }
       if (isGuildStageVoiceResult) {
         if (tmp6) {
-          const obj2 = {};
+          const StageLockIcon = tmp2(5410).StageLockIcon;
           const merged1 = Object.assign(merged);
-          let tmp8Result = jsx(tmp2(5410).StageLockIcon, {});
+          tmp8Result = <StageLockIcon />;
         }
         return tmp8Result;
       }
       if (isGuildStageVoiceResult) {
-        const obj3 = {};
+        const StageIcon = tmp2(5411).StageIcon;
         const merged2 = Object.assign(merged);
-        tmp8Result = jsx(tmp2(5411).StageIcon, {});
+        tmp8Result = <StageIcon />;
       } else if (channel.isNSFW()) {
         const obj4 = {};
+        const VoiceWarningIcon = tmp2(5413).VoiceWarningIcon;
         const merged3 = Object.assign(merged);
-        tmp8Result = tmp8(tmp2(5413).VoiceWarningIcon, obj4);
+        tmp8Result = tmp8(VoiceWarningIcon, obj4);
       } else {
+        let VoiceNormalIcon;
         if (tmp6) {
-          let VoiceNormalIcon = tmp2(5412).VoiceLockIcon;
+          VoiceNormalIcon = tmp2(5412).VoiceLockIcon;
         } else {
           VoiceNormalIcon = tmp2(5415).VoiceNormalIcon;
         }
@@ -61,6 +67,7 @@ export default function UserProfileVoiceActivityIcon(channel) {
       }
     }
   }
+  const PhoneCallIcon = tmp2(7305).PhoneCallIcon;
   const merged5 = Object.assign(merged);
-  return jsx(channel(7305).PhoneCallIcon, {});
+  return <PhoneCallIcon />;
 };

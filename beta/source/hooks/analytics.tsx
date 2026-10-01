@@ -6,12 +6,11 @@
 
 // Module 8895 (analytics)
 import AnalyticsUtils from "AnalyticsUtils" /* 1241 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("hooks/analytics.tsx");
 
 export const useAnalyticsContext = function useAnalyticsContext() {
-  return noop.useContext(AnalyticsUtils.AnalyticsContext);
+  return react.useContext(AnalyticsUtils.AnalyticsContext);
 };

@@ -3,5 +3,8 @@
 // Dependencies: [10252, 10254]
 
 // Module 10251
+const require = globalThis.__r;
 
-export const Pagination = { Basic: fn(10252).Basic, Custom: fn(10254).Custom };
+({ Basic: require("Basic").Basic, Custom: require("Custom").Custom });
+
+export const Pagination = { Basic: require("Basic").Basic, Custom: require("Custom").Custom };

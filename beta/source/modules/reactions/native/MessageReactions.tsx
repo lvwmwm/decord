@@ -5,36 +5,43 @@
 // Exports: default
 
 // Module 10825 (MessageReactions)
+import Fragment from "Fragment" /* 21 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import MessageStore from "MessageStore" /* 5056 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
+let count_details, message;
+
+const jsx = Fragment.jsx;
 let closure_6 = [];
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/reactions/native/MessageReactions.tsx");
 
 export default function MessageReactions(emoji) {
+  let channelId;
+  let isSelectedBurst;
+  let messageId;
+  let reactions;
+  let tmp9Result;
   ({ channelId, messageId, reactions, isSelectedBurst } = emoji);
+  emoji = emoji.emoji;
   if (isSelectedBurst === undefined) {
     isSelectedBurst = false;
   }
   let merged = Object.assign(emoji, Object.assign({ channelId: 0, messageId: 0, emoji: 0, reactions: 0, isSelectedBurst: 0 }));
   let items3;
-  closure_129_0 = channelId;
-  closure_129_1 = messageId;
   const tmp3 = useAnalyticsLocationsDefault;
+  const analyticsLocations = tmp3(AnalyticsLocationDefault.MESSAGE_REACTIONS).analyticsLocations;
+  let obj = items3(504);
   const items = [MessageStore];
   const items1 = [channelId, messageId];
-  const stateFromStores = items3(504).useStateFromStores(items, () => {
-    const message = MessageStore.getMessage(items3, importDefault);
-    return null != message ? message.reactions : closure_6;
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    message = message.getMessage(channelId, messageId);
+    return null != message ? message.reactions : closure_2_6;
   }, items1);
-  closure_129_2 = stateFromStores;
   const items2 = [stateFromStores];
-  const memo = noop.useMemo(() => dependencyMap.filter((count_details) => {
+  const memo = react.useMemo(() => stateFromStores.filter((count_details) => {
     count_details = count_details.count_details;
     let vote;
     if (count_details != null) {
@@ -53,28 +60,31 @@ export default function MessageReactions(emoji) {
   const item = arr4.forEach((burst_count) => {
     if (burst_count.burst_count > 0) {
       if (burst_count.count > 0) {
-        const obj2 = {};
+        const push2 = items3.push;
+        const obj2 = { count: 0 };
         const merged = Object.assign(burst_count);
-        obj2.count = 0;
-        items3.push(obj2);
-        const obj3 = {};
+        push2(obj2);
+        const push3 = items3.push;
+        const obj3 = { burst_count: 0 };
         const merged1 = Object.assign(burst_count);
-        obj3.burst_count = 0;
-        items3.push(obj3);
+        push3(obj3);
       }
     }
+    const push = items3.push;
+    const obj = {};
     const merged2 = Object.assign(burst_count);
-    items3.push({});
+    push(obj);
   });
   const sorted = items3.sort((burst_count, burst_count2) => (burst_count2.burst_count > 0 ? burst_count2.burst_count : burst_count2.count) - (burst_count.burst_count > 0 ? burst_count.burst_count : burst_count.count));
-  let obj2 = { value: tmp3(AnalyticsLocationDefault.MESSAGE_REACTIONS).analyticsLocations, children: null };
+  let obj2 = { value: analyticsLocations, children: tmp9Result };
+  const AnalyticsLocationProvider = tmp4(6583).AnalyticsLocationProvider;
   if (items3.length > 0) {
-    let obj3 = { channelId, messageId, emoji: emoji.emoji, reactions: items3, isSelectedBurst };
+    let obj3 = { channelId, messageId, emoji, reactions: items3, isSelectedBurst };
+    const MessageReactionsContent = tmp4(10826).MessageReactionsContent;
     let merged1 = Object.assign(merged);
-    let tmp9Result = tmp9(tmp4(10826).MessageReactionsContent, obj3);
+    tmp9Result = tmp9(MessageReactionsContent, obj3);
   } else {
     tmp9Result = tmp9(tmp4(10826).MessageReactionsEmpty, {});
   }
-  obj2.children = tmp9Result;
-  return jsx(items3(6583).AnalyticsLocationProvider, { value: tmp3(AnalyticsLocationDefault.MESSAGE_REACTIONS).analyticsLocations, children: null });
+  return jsx(AnalyticsLocationProvider, obj2);
 };

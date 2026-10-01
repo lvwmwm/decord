@@ -5,26 +5,44 @@
 // Exports: default
 
 // Module 11305 (ChannelSelectComponentActionSheet)
-import native from "native" /* 1177 */;
+import Fragment from "Fragment" /* 21 */;
 import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 7577 */;
 import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 7579 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let channel;
+
+let react = react_mod;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/interaction_components/native/components/ChannelSelectComponentActionSheet.tsx");
 
 export default function ChannelSelectComponentActionSheet(guildId) {
+  let _undefined;
+  let allowEmpty;
+  let c3;
+  let channelId;
+  let containerId;
+  let isSelected;
+  let labelComponent;
+  let onPressOptionItem;
+  let onSubmit;
+  let options;
+  let selectedOptions;
+  let selectionActionComponent;
+  let setQuery;
   ({ selectionActionComponent, channelId } = guildId);
   guildId = guildId.guildId;
-  noop = undefined;
+  react = undefined;
   const channelTypes = selectionActionComponent.channelTypes;
   const items = [channelId, channelTypes];
   ({ labelComponent, containerId, onSubmit, allowEmpty } = guildId);
-  const callback = noop.useCallback((arg0) => SearchableSelectActionComponentUtils.queryChannels(arg0, channelId, channelTypes), items);
+  const callback = react.useCallback((arg0) => {
+    const obj = SearchableSelectActionComponentUtils;
+    return obj.queryChannels(arg0, channelId, channelTypes);
+  }, items);
   const tmp2 = guildId(channelTypes[5])({ selectActionComponent: selectionActionComponent, containerId, guildId, queryOptions: callback, onSubmit });
   ({ selectedOptions, submitSelection: c3 } = tmp2);
   ({ options, isSelected, onPressOptionItem, setQuery } = tmp2);
@@ -36,11 +54,12 @@ export default function ChannelSelectComponentActionSheet(guildId) {
         return null;
       } else {
         const guild = GuildStore.getGuild(guildId);
-        const channelIconData = NativeSearchableSelectActionComponentUtils.getChannelIconData(channel, guild);
+        const obj = NativeSearchableSelectActionComponentUtils;
+        const channelIconData = obj.getChannelIconData(channel, guild);
         let tmp8 = null != channelIconData;
+        const tmp5 = require;
         if (tmp8) {
-          const obj2 = { source: channelIconData };
-          tmp8 = jsx(native.Icon, { source: channelIconData });
+          tmp8 = jsx(tmp5(1177).Icon, { source: channelIconData });
         }
         return tmp8;
       }

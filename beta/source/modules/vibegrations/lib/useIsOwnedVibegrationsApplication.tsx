@@ -7,37 +7,41 @@
 // Module 8494 (useIsOwnedVibegrationsApplication)
 import BackoffDefault from "Backoff" /* 559 */;
 import VibegrationsUtils from "VibegrationsUtils" /* 5370 */;
+import VibegrationsProjectStore2 from "VibegrationsProjectStore" /* 8495 */;
 import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8496 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8495 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const VibegrationsProjectStore = VibegrationsProjectStore2;
+let _require, dependencyMap, projectsFetchState;
 
-require = fn;
-const isProjectOwner = fn(8495).isProjectOwner;
-let closure_6 = new BackoffDefault(30000, 300000);
-const size = fn(2);
+const isProjectOwner = VibegrationsProjectStore2.isProjectOwner;
+const tmp2 = new BackoffDefault(30000, 300000);
+let closure_6 = tmp2;
 let result = size.fileFinishedImporting("modules/vibegrations/lib/useIsOwnedVibegrationsApplication.tsx");
 
 export default function useIsOwnedVibegrationsApplication(arg0, arg1) {
+  let closure_0;
+  let closure_1;
+  let stateFromStores1;
   _require = arg0;
   dependencyMap = arg1;
+  let obj = require("get initialized");
   const items = [stateFromStores1];
   const items1 = [arg1, arg0];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let tmp = closure_1;
-    if (closure_1) {
-      tmp = null != closure_0;
-    }
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let tmp = closure_1 && null != closure_0;
     if (tmp) {
-      tmp = VibegrationsUtils.eligibleVibegrationsGuilds(GuildStore.getGuildsArray(), "useIsOwnedVibegrationsApplication").length > 0;
+      const obj = VibegrationsUtils;
+      tmp = obj.eligibleVibegrationsGuilds(GuildStore.getGuildsArray(), "useIsOwnedVibegrationsApplication").length > 0;
     }
     return tmp;
   }, items1);
-  let obj = require("initialize");
   const items2 = [VibegrationsProjectStore];
-  stateFromStores1 = require("initialize").useStateFromStores(items2, () => {
+  const obj2 = require("get initialized");
+  stateFromStores1 = obj2.useStateFromStores(items2, () => {
     projectsFetchState = projectsFetchState.getProjectsFetchState();
     let type;
     if (projectsFetchState != null) {
@@ -53,42 +57,45 @@ export default function useIsOwnedVibegrationsApplication(arg0, arg1) {
     if ("success" === stateFromStores1) {
       closure_6.succeed();
     }
-    if (stateFromStores) {
-      if (null != tmp) {
-        let pending = "error" !== tmp;
+    const tmp4 = stateFromStores;
+    if (tmp4) {
+      if (null != stateFromStores1) {
+        const pending = "error" !== tmp || closure_6.pending;
         if (!pending) {
-          pending = closure_6.pending;
-        }
-        if (!pending) {
-          closure_6.fail(() => closure_1_0(closure_1_1[6]).listProjects());
+          closure_6.fail(() => {
+            const obj = closure_1_0(closure_1_1[6]);
+            return obj.listProjects();
+          });
         }
       } else {
-        VibegrationsActionCreators.listProjects();
+        let obj = VibegrationsActionCreators;
+        obj.listProjects();
       }
     }
   }, items3);
-  const obj2 = require("initialize");
   const items4 = [VibegrationsProjectStore];
   const items5 = [stateFromStores, arg0];
-  return require("initialize").useStateFromStores(items4, () => {
-    if (stateFromStores) {
+  const obj3 = require("get initialized");
+  return obj3.useStateFromStores(items4, () => {
+    const tmp = stateFromStores;
+    if (tmp) {
       if (null != closure_0) {
-        const result = VibegrationsProjectStore.findProjectByApplicationId(tmp);
-        let tmp4 = null == result;
-        if (!tmp4) {
-          tmp4 = !isProjectOwner(result);
+        const result = VibegrationsProjectStore.findProjectByApplicationId(tmp2);
+        let tmp5 = null == result;
+        const obj = VibegrationsProjectStore;
+        if (!tmp5) {
+          tmp5 = !isProjectOwner(result);
         }
-        let tmp6 = !tmp4;
-        if (tmp4) {
-          projectsFetchState = VibegrationsProjectStore.getProjectsFetchState();
+        let tmp7 = !tmp5;
+        if (tmp5) {
+          projectsFetchState = obj.getProjectsFetchState();
           let type;
           if (projectsFetchState != null) {
             type = projectsFetchState.type;
           }
-          tmp6 = "success" !== type && null;
-          const tmp9 = "success" !== type && null;
+          tmp7 = "success" !== type && null;
         }
-        return tmp6;
+        return tmp7;
       }
     }
     return false;

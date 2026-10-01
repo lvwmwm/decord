@@ -6,20 +6,23 @@
 
 // Module 8136 (useOpenExternalUrlFromGameProfile)
 import GameUtilsDefault from "GameUtils" /* 8137 */;
-import _slicedToArray from "module_32" /* 32 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_9 = async function _getDeepLinkUrl(arg0) {
-  let hostname = arg0;
-  c3 = 0;
-  c4 = 0;
-  return (async (arg0, value) => {
+let c4, c5;
+
+let obj = function _getDeepLinkUrl() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj11;
+    let obj5;
+    let obj7;
+    let closure_0 = arg0;
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -30,6 +33,8 @@ let closure_9 = async function _getDeepLinkUrl(arg0) {
       }
     } else {
       try {
+        let closure_1;
+        let closure_2;
         c4 = 2;
         if (0 === c3) {
           if (arg0 === 1) {
@@ -40,20 +45,18 @@ let closure_9 = async function _getDeepLinkUrl(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_2 = tmp5;
-            closure_1 = tmp2;
-            closure_129_0 = hostname;
-            closure_129_1 = undefined;
-            closure_129_2 = undefined;
-            if ("store.steampowered.com" === hostname.hostname) {
+            closure_1 = undefined;
+            closure_2 = undefined;
+            if ("store.steampowered.com" === closure_0.hostname) {
               c3 = 1;
               c4 = 1;
-              const obj4 = { value: GameUtilsDefault.isProtocolRegistered(steam), done: false };
+              const obj4 = { value: obj7.isProtocolRegistered(steam), done: false };
+              obj7 = GameUtilsDefault;
               return obj4;
             }
           }
         } else {
-          if (1 === tmp5) {
+          if (1 === c3) {
             if (arg0 === 1) {
               c4 = 3;
               throw value;
@@ -62,16 +65,17 @@ let closure_9 = async function _getDeepLinkUrl(arg0) {
               const obj6 = { value, done: true };
               return obj6;
             } else if (value) {
-              const match = closure_129_0.pathname.match(closure_130_7);
-              let tmp21;
+              const str2 = closure_0.pathname;
+              const match = str2.match(closure_130_7);
+              let tmp20;
               if (match != null) {
-                tmp21 = match[1];
+                tmp20 = match[1];
               }
-              closure_129_1 = tmp21;
-              if (null != closure_129_1) {
+              closure_1 = tmp20;
+              if (null != closure_1) {
                 const _HermesInternal = HermesInternal;
                 c4 = 3;
-                const obj8 = { value: "" + closure_130_6 + "://store/" + closure_129_1, done: true };
+                const obj8 = { value: "" + closure_130_6 + "://store/" + closure_1, done: true };
                 return obj8;
               }
             }
@@ -83,48 +87,64 @@ let closure_9 = async function _getDeepLinkUrl(arg0) {
             const obj9 = { value, done: true };
             return obj9;
           } else if (value) {
-            const match1 = closure_129_0.pathname.match(closure_130_8);
-            let tmp12;
+            const str = closure_0.pathname;
+            const match1 = str.match(closure_130_8);
+            let tmp11;
             if (match1 != null) {
-              tmp12 = match1[1];
+              tmp11 = match1[1];
             }
-            closure_129_2 = tmp12;
-            if (null != closure_129_2) {
+            closure_2 = tmp11;
+            if (null != closure_2) {
               const _decodeURIComponent = decodeURIComponent;
               c4 = 3;
-              const obj = { value: closure_130_0(closure_130_2[4]).buildXboxGamePassStoreDeepLinkUrl(decodeURIComponent(closure_129_2)), done: true };
+              obj = { value: obj11.buildXboxGamePassStoreDeepLinkUrl(decodeURIComponent(closure_2)), done: true };
+              obj11 = closure_130_0(closure_130_2[4]);
               return obj;
             }
           }
           c4 = 3;
           return { value: null, done: true };
         }
-        if (closure_129_0.hostname === closure_130_0(closure_130_2[4]).XBOX_GAME_PASS_STORE_HOSTNAME) {
+        if (closure_0.hostname === closure_130_0(closure_130_2[4]).XBOX_GAME_PASS_STORE_HOSTNAME) {
           c3 = 2;
           c4 = 1;
-          const obj10 = { value: closure_130_1(closure_130_2[3]).isProtocolRegistered(closure_130_0(closure_130_2[4]).XBOX_GAME_PASS_PROTOCOL), done: false };
+          const obj10 = { value: obj5.isProtocolRegistered(closure_130_0(closure_130_2[4]).XBOX_GAME_PASS_PROTOCOL), done: false };
+          obj5 = closure_130_1(closure_130_2[3]);
           return obj10;
         }
-      } catch (tmp37) {
-        c4 = tmp;
-        throw tmp37;
+      } catch (tmp36) {
+        c4 = 3;
+        throw tmp36;
       }
     }
-  })();
+  });
+  return obj(...arguments);
 };
 const steam = "steam";
 const re7 = /^\/app\/(\d+)(?:\/)?/;
 const re8 = /^\/games\/store\/title\/([^/]+)/;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/game_profile/hooks/useOpenExternalUrlFromGameProfile.tsx");
 
 export default function useOpenExternalUrlFromGameProfile(arg0) {
-  [first, closure_2] = noop.useState(false);
-  closure_0 = asyncGeneratorStep(async (arg0, value) => {
+  let closure_2;
+  let first;
+  [first, closure_2] = react.useState(false);
+  const useCallback = react.useCallback;
+  let closure_0 = _asyncToGenerator(async function(arg0, value) {
+    function getDeepLinkUrl() {
+      return closure_1_9(...arguments);
+    }
+    function openDeepLink(c2, arg1) {
+      closure_0 = arg1;
+      const timeout = setTimeout(() => closure_0(true), 5000);
+      const listener = window.addEventListener("blur", () => clearTimeout(closure_1), { once: true });
+      closure_1_1(closure_1_2[5])(c2);
+    }
+    closure_0 = arg0;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -134,7 +154,11 @@ export default function useOpenExternalUrlFromGameProfile(arg0) {
         return { value: "HermesInternal", done: null };
       }
     } else {
+      let c3;
       try {
+        let closure_1;
+        let uRL;
+        let c2;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -145,35 +169,23 @@ export default function useOpenExternalUrlFromGameProfile(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_1 = tmp7;
-            closure_129_0 = closure_0;
-            closure_129_1 = undefined;
-            closure_129_2 = undefined;
-            if (null != closure_129_0) {
-              c3 = 1;
+            closure_2 = tmp;
+            closure_1 = tmp4;
+            uRL = undefined;
+            c2 = undefined;
+            if (null != closure_0) {
               const _URL = URL;
-              const uRL = new URL(closure_129_0);
-              closure_129_1 = uRL;
+              const self = this;
+              const self2 = this;
+              uRL = new URL(closure_0);
               c3 = 0;
               c4 = 2;
               c5 = 1;
-              const obj4 = {
-                value: (function getDeepLinkUrl() {
-                            const self = this;
-                            const apply = closure_1_9.apply;
-                            if (typeof apply === "unknown") {
-                              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-                            } else {
-                              applyArgumentsResult = apply(self, arguments);
-                            }
-                            return applyArgumentsResult;
-                          })(uRL),
-                done: false
-              };
+              const obj4 = { value: getDeepLinkUrl(uRL), done: false };
               return obj4;
             }
           }
-        } else if (1 === tmp7) {
+        } else if (1 === c4) {
           c3 = 0;
           c5 = 3;
           return { value: "HermesInternal", done: null };
@@ -182,52 +194,39 @@ export default function useOpenExternalUrlFromGameProfile(arg0) {
           throw value;
         } else if (arg0 === 2) {
           c5 = 3;
-          const obj = { value, done: true };
+          obj = { value, done: true };
           return obj;
         } else {
-          closure_129_2 = value;
-          let tmp9 = null != closure_129_2;
-          if (tmp9) {
-            tmp9 = closure_1;
+          c2 = value;
+          const tmp6 = null != c2 && closure_1;
+          if (tmp6) {
+            c2 = null;
           }
-          if (tmp9) {
-            closure_129_2 = null;
-          }
-          const searchParams = closure_129_1.searchParams;
+          const searchParams = uRL.searchParams;
           const result = searchParams.set("utm_source", "discord");
-          closure_129_0 = closure_129_1.toString();
+          closure_0 = uRL.toString();
           if (null != closure_0) {
-            closure_0(closure_129_0);
-          } else if (null == closure_129_2) {
-            first(tmp3[5])(closure_129_0);
+            closure_0(closure_0);
+          } else if (null != c2) {
+            openDeepLink(c2, closure_2);
+          } else {
+            first(closure_2_2[5])(closure_0);
           }
-          (function openDeepLink(arg0, arg1) {
-            closure_0 = arg1;
-            const timeout = setTimeout(() => closure_0(true), 5000);
-            const listener = window.addEventListener("blur", () => clearTimeout(closure_1), { once: true });
-            closure_1_1(closure_1_2[5])(arg0);
-          })(closure_129_2, tmp3);
         }
         c5 = 3;
-      } catch (tmp40) {
-        if (tmp4 === c3) {
-          c5 = tmp2;
-          throw tmp40;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp35) {
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp35;
         } else {
-          c4 = tmp;
+          c4 = 1;
         }
       }
     }
   });
   const items = [arg0, first];
-  return noop.useCallback(function() {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+  return useCallback(function() {
+    return closure_0(...arguments);
   }, items);
 };

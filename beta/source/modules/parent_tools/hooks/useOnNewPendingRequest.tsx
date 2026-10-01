@@ -5,46 +5,53 @@
 // Exports: default
 
 // Module 14416 (useOnNewPendingRequest)
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
+let react = react_mod;
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useOnNewPendingRequest.tsx");
 
 export default function useOnNewPendingRequest(set) {
+  let current;
+  let ref;
+  let ref2;
+  let stateFromStores;
   _require = set;
-  const pendingRequestCount = require("useUserLinks").usePendingRequestCount();
   let obj = require("useUserLinks");
+  const pendingRequestCount = obj.usePendingRequestCount();
   const items = [ref2];
-  stateFromStores = require("initialize").useStateFromStores(items, () => ref2.getAreLinkedUsersProcessed());
+  const obj2 = require("get initialized");
+  stateFromStores = obj2.useStateFromStores(items, () => ref2.getAreLinkedUsersProcessed());
   pendingRequestCount(stateFromStores[4])(() => {
     if (!ref2.getAreLinkedUsersProcessed()) {
-      const linkedUsers = pendingRequestCount(stateFromStores[5]).fetchLinkedUsers();
+      const obj = pendingRequestCount(stateFromStores[5]);
+      const linkedUsers = obj.fetchLinkedUsers();
       linkedUsers.catch(() => {
 
       });
-      const obj = pendingRequestCount(stateFromStores[5]);
     }
   });
-  noop = noop.useRef(set);
+  react = react.useRef(set);
   const items1 = [set];
-  const effect = noop.useEffect(() => {
-    closure_3.current = current;
+  const effect = react.useEffect(() => {
+    ref.current = current;
   }, items1);
-  const obj2 = require("initialize");
+  ref2 = react.useRef(null);
   const items2 = [stateFromStores, pendingRequestCount];
-  const effect1 = noop.useEffect(() => {
-    if (stateFromStores) {
+  const effect1 = react.useEffect(() => {
+    const tmp = stateFromStores;
+    if (tmp) {
       if (null != ref2.current) {
-        tmp.current = pendingRequestCount;
-        if (pendingRequestCount > tmp.current) {
+        ref2.current = pendingRequestCount;
+        if (pendingRequestCount > ref2.current) {
           ref.current();
         }
       } else {
-        tmp.current = pendingRequestCount;
+        ref2.current = pendingRequestCount;
       }
     }
   }, items2);

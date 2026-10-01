@@ -4,42 +4,54 @@
 // Dependencies: [19, 17, 1372, 21, 4836, 576, 1364, 1370, 10323, 9036, 5435, 1115, 11855, 10774, 4832, 4541, 2]
 
 // Module 11854 (NewMessagesTagListInput)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
 import makeUserListPillDataDefault from "makeUserListPillData" /* 10323 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { searchBarContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, header: null, showSearchButton: null };
-let obj4 = { marginLeft: nativeDefault.space.PX_12, marginBottom: null };
-const PlatformUtils = fn(1364);
-let num = 0;
+let num;
+let obj2;
+let obj3;
+let obj4;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { searchBarContainer: obj2, header: obj3, showSearchButton: obj4 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createStyles = createStyles.createStyles;
+obj3 = { marginLeft: nativeDefault.space.PX_12, marginBottom: num };
+num = 0;
 if (PlatformUtils.isAndroid()) {
   num = 2;
 }
-obj4.marginBottom = num;
-obj.header = obj4;
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj.showSearchButton = { marginHorizontal: nativeDefault.space.PX_12 };
-let closure_7 = createStyles.createStyles(obj);
-const obj5 = { marginHorizontal: nativeDefault.space.PX_12 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NewMessagesTagListInput.tsx");
-
-export default noop.memo(function NewMessagesTagListInput(forceSearchResults) {
+obj4 = { marginHorizontal: nativeDefault.space.PX_12 };
+let closure_7 = createStyles(obj);
+const memoResult = react.memo(function NewMessagesTagListInput(forceSearchResults) {
+  let autoFocus;
+  let hasQuery;
+  let intl2;
+  let intl3;
+  let onChangeText;
+  let onFocus;
+  let onForceSearchResults;
+  let selectedUserIds;
+  let tagListInputRef;
+  let tmp2Result;
   ({ onSelectUser: require, selectedUserIds } = forceSearchResults);
   ({ autoFocus, onChangeText, onFocus, hasQuery, onForceSearchResults, tagListInputRef } = forceSearchResults);
   const tmp = closure_7();
   let items = [selectedUserIds];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     let items = selectedUserIds;
     if (selectedUserIds == null) {
       items = [];
@@ -48,51 +60,58 @@ export default noop.memo(function NewMessagesTagListInput(forceSearchResults) {
     const found = mapped.filter(GlobalUtils.isNotNullish);
     return found.map(makeUserListPillDataDefault);
   }, items);
-  let obj = { style: tmp.searchBarContainer, children: null };
-  const obj2 = { autoFocus, focusOnAdd: true, footer: null, icon: null, onChangeText: null, onFocus: null, onRemove: null, placeholder: null, tags: null, ref: null };
-  let tmp6 = null;
+  ({
+    autoFocus,
+    focusOnAdd: true,
+    footer: tmp2Result,
+    icon: null,
+    onChangeText,
+    onFocus,
+    onRemove(arg0) {
+      const user = UserStore.getUser(tmp.id);
+      if (null != user) {
+        require(user);
+        const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+        const announce = AccessibilityAnnouncer.announce;
+        const intl = intl4.intl;
+        const obj = { text: memo[arg0].text };
+        announce(intl.formatToPlainString(intl4.t.srlxB8, obj));
+      }
+    },
+    placeholder: intl3.string(require("intl").t.CaEER6),
+    tags: memo,
+    ref: tagListInputRef
+  });
+  tmp2Result = null;
+  selectedUserIds(memo[9]);
   if (!hasQuery) {
-    tmp6 = null;
+    tmp2Result = null;
     if (memo.length > 0) {
-      let intl = require("util").intl;
+      let stringResult;
+      const PressableOpacity = require("Pressables").PressableOpacity;
+      let intl = require("intl").intl;
       const string = intl.string;
-      const t = require("util").t;
-      if (forceSearchResults) {
-        let stringResult = string(t["4wv+DE"]);
+      const t = require("intl").t;
+      if (forceSearchResults.forceSearchResults) {
+        stringResult = string(t["4wv+DE"]);
       } else {
         stringResult = string(t.fTcQm2);
       }
       const obj3 = { accessibilityRole: "button", accessibilityLabel: stringResult, onPress: onForceSearchResults, style: tmp.showSearchButton, children: null };
-      if (forceSearchResults) {
+      if (forceSearchResults.forceSearchResults) {
         let CirclePlusIcon = tmp7(tmp4[12]).ChevronLargeRightIcon;
       } else {
         CirclePlusIcon = tmp7(tmp4[13]).CirclePlusIcon;
       }
-      obj3.children = tmp2(CirclePlusIcon, { size: "xs" });
-      tmp2(require("Pressables").PressableOpacity, obj3);
+      tmp2Result = tmp2(PressableOpacity, obj3);
     }
   }
-  obj2.footer = tmp6;
-  const obj4 = { style: tmp.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: null };
-  const intl2 = require("util").intl;
-  obj4.children = intl2.string(require("util").t.kHyiXs);
-  obj2.icon = jsx(require("Text/Text").Text, { style: tmp.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: null });
-  obj2.onChangeText = onChangeText;
-  obj2.onFocus = onFocus;
-  obj2.onRemove = function onRemove(arg0) {
-    const user = UserStore.getUser(tmp.id);
-    if (null != user) {
-      closure_1_0(user);
-      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-      const intl = util.intl;
-      const obj = { text: tmp.text };
-      AccessibilityAnnouncer.announce(intl.formatToPlainString(util.t.srlxB8, obj));
-    }
-  };
-  const intl3 = require("util").intl;
-  obj2.placeholder = intl3.string(require("util").t.CaEER6);
-  obj2.tags = memo;
-  obj2.ref = tagListInputRef;
-  obj.children = jsx(selectedUserIds(memo[9]), { autoFocus, focusOnAdd: true, footer: null, icon: null, onChangeText: null, onFocus: null, onRemove: null, placeholder: null, tags: null, ref: null });
-  return <View style={tmp.searchBarContainer}>{null}</View>;
+  ({ style: tmp.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: intl2.string(require("intl").t.kHyiXs) });
+  const Text = require("Text/Text").Text;
+  intl2 = require("intl").intl;
+  intl3 = require("intl").intl;
+  return <tmp3 style={tmp.searchBarContainer}>{null}</tmp3>;
 });
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NewMessagesTagListInput.tsx");
+
+export default memoResult;

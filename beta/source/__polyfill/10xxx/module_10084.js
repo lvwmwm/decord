@@ -4,6 +4,7 @@
 
 // Module 10084
 import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9895 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9896 */;
 import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
 import _mod10083 from "module_10083" /* 10083 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
@@ -12,19 +13,14 @@ import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const SVMonthNameLittleEndianParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -35,19 +31,16 @@ function _isNativeReflectConstruct() {
 const regExp = new RegExp("(?:den\\s*?)?([0-9]{1,2})(?:\\s*(?:till|\\-|\\\u2013|\\s)\\s*([0-9]{1,2}))?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10083.MONTH_DICTIONARY) + ")(?:(?:-|/|,?\\s*)([0-9]{4}(?![^\\s]\\d)))?(?=\\W|$)", "i");
 class SVMonthNameLittleEndianParser {
   constructor() {
-    self = this;
-    tmp = c2(this, SVMonthNameLittleEndianParser);
-    tmp2 = closure_4;
-    obj = closure_4(SVMonthNameLittleEndianParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, SVMonthNameLittleEndianParser);
+    const obj = _getPrototypeOf(SVMonthNameLittleEndianParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
@@ -66,7 +59,7 @@ const items = [
     key: "innerExtract",
     value: function innerExtract(createParsingResult, index) {
       const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp4 = SVMonthNameLittleEndianParser(10083).MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const tmp4 = _mod10083.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
       const parsed = parseInt(index[1]);
       if (parsed > 31) {
         index.index = index.index + index[1].length;
@@ -78,10 +71,10 @@ const items = [
         start5.assign("day", parsed);
         if (index[4]) {
           const start2 = parsingResult.start;
-          start2.assign("year", tmp2(10083).parseYear(index[4]));
+          start2.assign("year", _mod10083.parseYear(index[4]));
         } else {
           const start = parsingResult.start;
-          start.imply("year", tmp2(9896).findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
+          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
         }
         if (index[2]) {
           const _parseInt = parseInt;

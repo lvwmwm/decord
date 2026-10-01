@@ -5,121 +5,147 @@
 // Exports: default
 
 // Module 11488 (ForumPostGridBody)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import ForumPostMediaUtils from "ForumPostMediaUtils" /* 7323 */;
-import _modDef10815 from "module_10815" /* 10815 */;
-import _modDef11489 from "module_11489" /* 11489 */;
-import _modDef11490 from "module_11490" /* 11490 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10815 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11489 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11490 */;
 import ForumPostMedia from "ForumPostMedia" /* 11491 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment_mod from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap, length;
+
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let size;
 function GIFIcon() {
-  const tmp = closure_8();
-  return timestampProducer(native.Icon, { size: native.Icon.Sizes.CUSTOM, source: _modDef11489, disableColor: true, style: closure_8().gifIcon });
+  let tmp;
+  const obj = { size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault2, disableColor: true, style: tmp.gifIcon };
+  tmp = closure_8();
+  const Icon = native.Icon;
+  return metroRequire(Icon, obj);
 }
 function PlayIcon() {
-  return timestampProducer(native.Icon, { size: native.Icon.Sizes.SMALL_20, source: _modDef11490, disableColor: true });
+  const obj = { size: native.Icon.Sizes.SMALL_20, source: AssetRegistryDefault3, disableColor: true };
+  const Icon = native.Icon;
+  return metroRequire(Icon, obj);
 }
 function ExtraMediaIcon(extraMediaCount) {
+  extraMediaCount = extraMediaCount.extraMediaCount;
   const tmp = closure_8();
-  const obj = { style: tmp.extraMediaCountContainer, children: null };
-  items = [timestampProducer(native.Icon, { source: _modDef10815, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 }), ];
-  const obj2 = { source: _modDef10815, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 };
-  items[1] = timestampProducer(Text_Text.Text, { style: tmp.extraMediaCount, lineClamp: 1, variant: "text-xs/normal", color: "text-default", children: "+" + extraMediaCount.extraMediaCount });
-  obj.children = items;
-  return React5(View, obj);
+  const obj = { style: tmp.extraMediaCountContainer, children: items };
+  const obj2 = { source: AssetRegistryDefault, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 };
+  const Icon = native.Icon;
+  items = [metroRequire(Icon, obj2), ];
+  const obj3 = { style: tmp.extraMediaCount, lineClamp: 1, variant: "text-xs/normal", color: "text-default", children: "+" + extraMediaCount };
+  const Text = Text_Text.Text;
+  items[1] = metroRequire(Text, obj3);
+  return metroImportDefault(View, obj);
 }
 function MediaGridColumn(arg0) {
+  let channel;
+  let column;
   ({ column, thread: require } = arg0);
-  const tmp = closure_8();
+  let tmp = closure_8();
   const rowSpacer = tmp;
   const found = column.filter(GlobalUtils.isNotNullish);
-  return closure_6(View, {
+  let obj = {
     style: tmp.column,
     children: found.map((media, index) => {
       let tmp2 = index > 0;
+      const Fragment = react.Fragment;
+      const tmp = metroImportDefault;
       if (tmp2) {
         const obj = { style: rowSpacer.rowSpacer };
-        tmp2 = timestampProducer(View, obj);
+        tmp2 = metroRequire(View, obj);
       }
-      const obj2 = { children: null };
-      items = [tmp2, timestampProducer(ForumPostMedia.ForumPostGridMedia, { channel, media: media.media, targetWidth: media.targetWidth, targetHeight: media.targetHeight })];
-      obj2.children = items;
-      return React5(noop.Fragment, obj2, "" + channel.id + "-" + index);
+      const obj2 = { children: items };
+      items = [tmp2, ];
+      const obj3 = { channel: require, media: media.media, targetWidth: media.targetWidth, targetHeight: media.targetHeight };
+      items[1] = metroRequire(ForumPostMedia.ForumPostGridMedia, obj3);
+      return tmp(Fragment, obj2, "" + require.id + "-" + index);
     })
-  });
+  };
+  return closure_6(View, obj);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { gifIcon: null, container: null, wideAspectRatioContainer: null, mediaIconContainer: null, headerLeftContainer: null, footerLeftContainer: null, footerRightContainer: null, extraMediaCountContainer: null, extraMediaCount: null, grid: null, wideAspectRatioGrid: null, column: null, columnSpacer: null, rowSpacer: null, icon: null };
-let size = { height: 20, width: 33, backgroundColor: "black", borderRadius: nativeDefault.radii.xs, resizeMode: "cover" };
-obj2.gifIcon = size;
-obj2.container = { position: "relative", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, height: 225 };
-obj2.wideAspectRatioContainer = { height: 192 };
-obj2.mediaIconContainer = { paddingLeft: 6 };
-obj2.headerLeftContainer = { flexDirection: "row", position: "absolute", top: 4, left: 4 };
-obj2.footerLeftContainer = { flexDirection: "row", position: "absolute", bottom: 4, left: 4, alignItems: "center", justifyContent: "flex-start" };
-obj2.footerRightContainer = { position: "absolute", bottom: 4, right: 4, alignItems: "center", justifyContent: "flex-start" };
-const obj3 = { position: "relative", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, height: 225 };
-obj2.extraMediaCountContainer = { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, height: 24, paddingHorizontal: 8, borderRadius: 20 };
-obj2.extraMediaCount = { marginLeft: 2 };
-let obj4 = { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, height: 24, paddingHorizontal: 8, borderRadius: 20 };
-obj2.grid = { height: 225, flexDirection: "row", borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
-obj2.wideAspectRatioGrid = { height: 192 };
-obj2.column = { flex: 1, flexDirection: "column" };
-obj2.columnSpacer = { flex: 0, width: 2, height: "100%" };
-obj2.rowSpacer = { flex: 0, height: 2, width: "100%" };
-let obj5 = { height: 225, flexDirection: "row", borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
-obj2.icon = { color: nativeDefault.colors.TEXT_SUBTLE };
-let closure_8 = createStyles.createStyles(obj2);
+const View = react_native.View;
+let Fragment = Fragment_mod;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { gifIcon: size, container: obj2, wideAspectRatioContainer: { height: 192 }, mediaIconContainer: { paddingLeft: 6 }, headerLeftContainer: { flexDirection: "row", position: "absolute", top: 4, left: 4 }, footerLeftContainer: { flexDirection: "row", position: "absolute", bottom: 4, left: 4, alignItems: "center", justifyContent: "flex-start" }, footerRightContainer: { position: "absolute", bottom: 4, right: 4, alignItems: "center", justifyContent: "flex-start" }, extraMediaCountContainer: obj3, extraMediaCount: { marginLeft: 2 }, grid: obj4, wideAspectRatioGrid: { height: 192 }, column: { flex: 1, flexDirection: "column" }, columnSpacer: { flex: 0, width: 2, height: "100%" }, rowSpacer: { flex: 0, height: 2, width: "100%" }, icon: obj5 };
+size = { height: 20, width: 33, backgroundColor: "black", borderRadius: nativeDefault.radii.xs, resizeMode: "cover" };
+createStyles = createStyles.createStyles;
+obj2 = { position: "relative", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, height: 225 };
+obj3 = { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, height: 24, paddingHorizontal: 8, borderRadius: 20 };
+obj4 = { height: 225, flexDirection: "row", borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
+obj5 = { color: nativeDefault.colors.TEXT_SUBTLE };
+let closure_8 = createStyles(obj);
 let items = [[0, 3], [1, 2]];
-size = fn(2);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/forums/native/posts/grid/ForumPostGridBody.tsx");
 
 export default function ForumPostGridBody(thread) {
+  let columnSpacer;
+  let containsGif;
+  let containsVideo;
+  let first;
+  let items6;
+  let items7;
+  let obj10;
+  let obj5;
+  let tmp5;
   thread = thread.thread;
   const media = thread.media;
-  const tmp = closure_8();
+  const hasUnreads = thread.hasUnreads;
+  let tmp = closure_8();
   dependencyMap = tmp;
-  const tmp4 = _slicedToArray(thread(6693).useSomeAppliedTags(thread, 2), 2);
-  const first = tmp4[0];
-  let tmp13Result = first.length > 0;
+  let tmp2 = thread;
+  let obj = thread(6693);
+  [first, tmp5] = obj.useSomeAppliedTags(thread, 2);
+  let tmp15Result = first.length > 0;
   items = [media];
-  const memo = noop.useMemo(() => media.slice(0, 4), items);
+  const memo = react.useMemo(() => media.slice(0, 4), items);
   const bound = Math.max(0, media.length - 4);
   const isMediaPostResult = thread.isMediaPost();
-  closure_129_0 = memo;
-  closure_129_1 = isMediaPostResult;
   const width = media(1479)().width;
-  closure_129_2 = width;
   const items1 = [memo];
-  const memo1 = noop.useMemo(() => {
-    const substr = items.slice(0, Math.min(thread.length, 2));
+  const memo1 = react.useMemo(() => {
+    const substr = items.slice(0, Math.min(memo.length, 2));
     let mapped = substr.map((arr) => {
       const mapped = arr.map((item) => closure_1_0[item]);
-      return mapped.filter(thread(closure_2[12]).isNotNullish);
+      return mapped.filter(memo(width[12]).isNotNullish);
     });
     return mapped.filter((item) => item.length > 0);
   }, items1);
-  closure_129_3 = memo1;
   const items2 = [width, memo1, isMediaPostResult];
-  const memo2 = noop.useMemo(() => {
-    return length.map((arr) => {
-      length = arr.filter(thread(closure_2[12]).isNotNullish).length;
+  const memo2 = react.useMemo(() => {
+    let num = 225;
+    if (closure_1) {
+      num = 192;
+    }
+    return memo1.map((arr) => {
+      length = arr.filter(memo(width[12]).isNotNullish).length;
       length = length.length;
       return arr.map((media) => {
-        const diff = (closure_2 - 48) / length - 2 * (length - 1) / length;
+        const diff = (width - 48) / length - 2 * (length - 1) / length;
         const obj = { media, targetWidth: diff, targetHeight: null };
-        if (media) {
+        const tmp2 = isMediaPostResult;
+        if (tmp2) {
+          let result;
           if (length < 2) {
-            let result = diff / 1.7777777777777777;
+            result = diff / 1.7777777777777777;
           }
           obj.targetHeight = result;
           return obj;
@@ -129,78 +155,65 @@ export default function ForumPostGridBody(thread) {
     });
   }, items2);
   const items3 = [media];
-  const memo3 = noop.useMemo(() => ForumPostMediaUtils.messageContainsGifOrVideo(media), items3);
+  const memo3 = react.useMemo(() => {
+    const obj = ForumPostMediaUtils;
+    return obj.messageContainsGifOrVideo(media);
+  }, items3);
   ({ containsVideo, containsGif } = memo3);
   const items4 = [tmp.container, ];
-  let wideAspectRatioContainer = isMediaPostResult;
-  if (isMediaPostResult) {
-    wideAspectRatioContainer = tmp.wideAspectRatioContainer;
-  }
-  let obj2 = { style: items4, children: null };
-  items4[1] = wideAspectRatioContainer;
+  let obj2 = { style: items4, children: items6 };
+  const tmp14 = isMediaPostResult && tmp.wideAspectRatioContainer;
+  items4[1] = tmp14;
   const items5 = [tmp.grid, ];
-  let wideAspectRatioGrid = isMediaPostResult;
-  if (isMediaPostResult) {
-    wideAspectRatioGrid = tmp.wideAspectRatioGrid;
+  const tmp16 = isMediaPostResult && tmp.wideAspectRatioGrid;
+  let obj3 = {
+    style: items5,
+    children: memo2.map((column, index) => {
+      let tmp2 = index > 0;
+      const Fragment = react.Fragment;
+      const tmp = metroImportDefault;
+      if (tmp2) {
+        const obj = { style: columnSpacer.columnSpacer };
+        tmp2 = metroRequire(View, obj);
+      }
+      const obj2 = { children: items };
+      items = [tmp2, ];
+      const obj3 = { column, thread };
+      items[1] = metroRequire(MediaGridColumn, obj3);
+      return tmp(Fragment, obj2, "" + column + "-" + index);
+    })
+  };
+  items5[1] = tmp16;
+  items6 = [closure_6(View, obj3), , , ];
+  if (tmp15Result) {
+    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(11495).ForumPostAppliedTagPills, obj5) };
+    obj5 = { appliedTags: first, additionalTagsCount: tmp5, hasUnreads };
+    tmp15Result = tmp15(tmp13, obj4);
   }
-  let obj = thread(6693);
-  let tmp2 = thread;
-  items5[1] = wideAspectRatioGrid;
-  const items6 = [
-    closure_6(View, {
-      style: items5,
-      children: memo2.map((column, index) => {
-        let tmp2 = index > 0;
-        if (tmp2) {
-          const obj = { style: columnSpacer.columnSpacer };
-          tmp2 = timestampProducer(View, obj);
-        }
-        const obj2 = { children: null };
-        items = [tmp2, timestampProducer(MediaGridColumn, { column, thread })];
-        obj2.children = items;
-        return React5(noop.Fragment, obj2, "" + column + "-" + index);
-      })
-    }),
-  ,
-  ,
-
-  ];
-  if (tmp13Result) {
-    const obj4 = { style: tmp.footerLeftContainer, children: null };
-    const obj5 = { appliedTags: first, additionalTagsCount: tmp4[1], hasUnreads: thread.hasUnreads };
-    obj4.children = tmp13(tmp2(11495).ForumPostAppliedTagPills, obj5);
-    tmp13Result = tmp13(tmp12, obj4);
-  }
-  items6[1] = tmp13Result;
-  let tmp11Result = containsGif;
-  if (!containsGif) {
-    tmp11Result = containsVideo;
-  }
-  if (tmp11Result) {
-    const obj6 = { style: tmp.headerLeftContainer, children: null };
+  items6[1] = tmp15Result;
+  let tmp12Result = containsGif || containsVideo;
+  if (tmp12Result) {
+    const obj6 = { style: tmp.headerLeftContainer, children: items7 };
     if (containsGif) {
-      const obj7 = { style: tmp.mediaIconContainer, children: tmp13(GIFIcon, {}) };
-      containsGif = tmp13(tmp12, obj7);
+      const obj7 = { style: tmp.mediaIconContainer, children: closure_6(GIFIcon, {}) };
+      containsGif = tmp15(tmp13, obj7);
     }
-    const items7 = [containsGif, ];
+    items7 = [containsGif, ];
     if (containsVideo) {
-      const obj8 = { style: tmp.mediaIconContainer, children: tmp13(PlayIcon, {}) };
-      containsVideo = tmp13(tmp12, obj8);
+      const obj8 = { style: tmp.mediaIconContainer, children: closure_6(PlayIcon, {}) };
+      containsVideo = tmp15(tmp13, obj8);
     }
     items7[1] = containsVideo;
-    obj6.children = items7;
-    tmp11Result = tmp11(tmp12, obj6);
+    tmp12Result = tmp12(tmp13, obj6);
   }
-  items6[2] = tmp11Result;
-  let tmp13Result2 = 0 !== bound;
-  if (tmp13Result2) {
-    const obj9 = { style: tmp.footerRightContainer, children: null };
-    const obj10 = { extraMediaCount: bound };
-    obj9.children = tmp13(ExtraMediaIcon, obj10);
-    tmp13Result2 = tmp13(tmp12, obj9);
+  items6[2] = tmp12Result;
+  let tmp15Result2 = 0 !== bound;
+  if (tmp15Result2) {
+    const obj9 = { style: tmp.footerRightContainer, children: closure_6(ExtraMediaIcon, obj10) };
+    obj10 = { extraMediaCount: bound };
+    tmp15Result2 = tmp15(tmp13, obj9);
   }
-  items6[3] = tmp13Result2;
-  obj2.children = items6;
+  items6[3] = tmp15Result2;
   return closure_7(View, obj2);
 };
 export const GRID_HORIZONTAL_PADDING = 48;

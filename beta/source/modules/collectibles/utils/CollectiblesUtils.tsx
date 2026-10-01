@@ -16,7 +16,9 @@ const ApplicationStreamPresets = StreamSettingsConstants.ApplicationStreamPreset
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesUtils.tsx");
 
 export const constructGoLiveSource = function constructGoLiveSource(resolution, frameRate, desktopSource) {
-  const obj = { qualityOptions: { preset: ApplicationStreamPresets.PRESET_CUSTOM, resolution, frameRate }, context: BaseConnectionEvent.MediaEngineContextTypes.STREAM };
+  let obj2;
+  const obj = { qualityOptions: obj2, context: BaseConnectionEvent.MediaEngineContextTypes.STREAM };
+  obj2 = { preset: ApplicationStreamPresets.PRESET_CUSTOM, resolution, frameRate };
   if (null != desktopSource) {
     if (null != desktopSource.desktopSource) {
       const obj3 = { sourceId: desktopSource.desktopSource.id, sound: true };
@@ -47,16 +49,14 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
     if (true === noCache.includeDynamicBlocks) {
       obj.include_dynamic_blocks = true;
     }
-    let tmp = null != noCache.countryCode;
-    if (tmp) {
-      tmp = "" !== noCache.countryCode;
-    }
+    const tmp = null != noCache.countryCode && "" !== noCache.countryCode;
     if (tmp) {
       obj.country_code = noCache.countryCode;
     }
     if (null !== noCache.paymentGateway) {
       obj.payment_gateway = noCache.paymentGateway;
     }
+    const tmp2 = require;
     if (noCache.variantsReturnStyle === ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP) {
       obj.variants_return_style = tmp2(7008).ShopVariantsReturnStyle.VARIANTS_GROUP;
     }
@@ -66,7 +66,6 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
     if (null != noCache.skipNumCategories) {
       obj.skip_num_categories = noCache.skipNumCategories;
     }
-    tmp2 = require;
   }
   return obj;
 };
@@ -78,5 +77,7 @@ export const getOptimizedProfileEffectThumbnailUrl = function getOptimizedProfil
 };
 export const useFetchFractionalPremiumInfo = function useFetchFractionalPremiumInfo() {
   const tmp = useFractionalPremiumInfoDefault({ forceFetch: true });
-  return { isLoading: !tmp.fetched, isFractionalPremiumActive: tmp.isFractionalPremiumActive, expiresAt: DateUtils.dateFormat(tmp.endsAt, "L") };
+  const obj = DateUtils;
+  const obj2 = { isLoading: !tmp.fetched, isFractionalPremiumActive: tmp.isFractionalPremiumActive, expiresAt: obj.dateFormat(tmp.endsAt, "L") };
+  return obj2;
 };

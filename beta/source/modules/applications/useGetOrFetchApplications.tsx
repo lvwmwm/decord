@@ -6,42 +6,47 @@
 
 // Module 6589 (useGetOrFetchApplications)
 import _modDef12 from "module_12" /* 12 */;
-import discord_common_shallowEqual from "discord_common/shallowEqual" /* 558 */;
+import shallowEqual from "shallowEqual" /* 558 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6584 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, application, dependencyMap;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/applications/useGetOrFetchApplications.tsx");
 
 export default function useGetOrFetchApplications(arg0) {
+  let closure_0;
+  let closure_2;
   _require = arg0;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
-  dependencyMap = noop.useRef([]);
+  dependencyMap = react.useRef([]);
   const items = [arg0, flag];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     let tmp = flag;
-    if (flag) {
-      tmp = !discord_common_shallowEqual.areArraysShallowEqual(items1, ref.current);
+    if (tmp) {
+      const obj = shallowEqual;
+      tmp = !obj.areArraysShallowEqual(items1, ref.current);
     }
     if (tmp) {
-      const obj2 = ApplicationActionCreatorsDefault;
-      const found = _modDef12(items1).filter(GlobalUtils.isNotNullish);
+      const fetchApplications = ApplicationActionCreatorsDefault.fetchApplications;
+      ApplicationActionCreatorsDefault;
       const arr = _modDef12(items1);
-      const applications = obj2.fetchApplications(found.uniq().value(), false);
-      ref.current = items1;
+      const found = arr.filter(GlobalUtils.isNotNullish);
       const iter = found.uniq();
+      const applications = fetchApplications(iter.value(), false);
+      ref.current = items1;
     }
   }, items);
   const items1 = [ApplicationStore];
-  return require("initialize").useStateFromStoresArray(items1, () => items1.map((item) => {
+  const obj = require("get initialized");
+  return obj.useStateFromStoresArray(items1, () => items1.map((item) => {
     application = undefined;
     if (null != item) {
       application = application.getApplication(item);
@@ -50,37 +55,42 @@ export default function useGetOrFetchApplications(arg0) {
   }));
 };
 export const useGetOrFetchApplication = function useGetOrFetchApplication(applicationId, fetchesApplication) {
+  let items1;
+  let ref;
   let flag = fetchesApplication;
   if (fetchesApplication === undefined) {
     flag = true;
   }
   if (null != applicationId) {
     const items = [applicationId];
-    let items1 = items;
+    items1 = items;
   } else {
     items1 = [];
   }
   if (flag === undefined) {
     flag = true;
   }
-  dependencyMap = noop.useRef([]);
+  dependencyMap = react.useRef([]);
   const items2 = [items1, flag];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     let tmp = flag;
-    if (flag) {
-      tmp = !discord_common_shallowEqual.areArraysShallowEqual(items1, ref.current);
+    if (tmp) {
+      const obj = shallowEqual;
+      tmp = !obj.areArraysShallowEqual(items1, ref.current);
     }
     if (tmp) {
-      const obj2 = ApplicationActionCreatorsDefault;
-      const found = _modDef12(items1).filter(GlobalUtils.isNotNullish);
+      const fetchApplications = ApplicationActionCreatorsDefault.fetchApplications;
+      ApplicationActionCreatorsDefault;
       const arr = _modDef12(items1);
-      const applications = obj2.fetchApplications(found.uniq().value(), false);
-      ref.current = items1;
+      const found = arr.filter(GlobalUtils.isNotNullish);
       const iter = found.uniq();
+      const applications = fetchApplications(iter.value(), false);
+      ref.current = items1;
     }
   }, items2);
+  let obj = items1(504);
   const items3 = [ApplicationStore];
-  return items1(504).useStateFromStoresArray(items3, () => items1.map((item) => {
+  return obj.useStateFromStoresArray(items3, () => items1.map((item) => {
     application = undefined;
     if (null != item) {
       application = application.getApplication(item);

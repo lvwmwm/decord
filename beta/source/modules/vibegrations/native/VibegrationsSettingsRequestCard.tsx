@@ -5,48 +5,62 @@
 // Exports: default
 
 // Module 16386 (VibegrationsSettingsRequestCard)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
 import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16260 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const VibegrationsSettingsSheetDefault = VibegrationsSettingsSheet;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { card: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsSettingsRequestCard.tsx");
 
 export default function VibegrationsSettingsRequestCard(projectId) {
+  let intl;
+  let intl3;
   projectId = projectId.projectId;
   const request = projectId.request;
   const items = [projectId, request];
-  const obj = { style: closure_7().card, children: null };
-  const callback = noop.useCallback(() => {
-    const obj2 = { content: hasOwnProperty(VibegrationsSettingsSheetDefault, { projectId, scopeKeys: request.keys, note: request.note, notifyAgent: true, isPreview: true }), key: VibegrationsSettingsSheet.VIBEGRATIONS_SETTINGS_SHEET_KEY };
-    ActionSheetActionCreators.showActionSheet(obj2);
+  let tmp = closure_7();
+  let obj = { style: tmp.card, children: null };
+  const callback = react.useCallback(() => {
+    let obj2;
+    const tmp = ActionSheetActionCreators;
+    const showActionSheet = tmp.showActionSheet;
+    const obj = { content: hasOwnProperty(VibegrationsSettingsSheetDefault, obj2), key: VibegrationsSettingsSheet.VIBEGRATIONS_SETTINGS_SHEET_KEY };
+    obj2 = { projectId, scopeKeys: request.keys, note: request.note, notifyAgent: true, isPreview: true };
+    showActionSheet(obj);
   }, items);
-  let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: null };
-  const intl = projectId(1115).intl;
-  obj2.children = intl.string(request(3715).wgDhiQ);
-  const items1 = [closure_5(projectId(4832).Text, obj2), , ];
+  let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(request(3715).wgDhiQ) };
+  const Text = projectId(4832).Text;
+  intl = projectId(1115).intl;
+  const items1 = [closure_5(Text, obj2), , ];
+  const tmp3 = closure_6;
+  const tmp4 = View;
   if (null != request.note) {
+    let note;
     if ("" !== request.note) {
-      let note = request.note;
+      note = request.note;
     }
     const obj3 = { variant: "text-sm/normal", color: "text-default", children: note };
-    items1[1] = tmp5(tmp9, obj3);
-    const obj4 = { variant: "secondary", size: "sm", onPress: callback, text: null };
-    const intl3 = tmp6(1115).intl;
-    obj4.text = intl3.string(tmp8(3715)["KO2xN+"]);
-    items1[2] = tmp5(tmp6(5281).Button, obj4);
+    items1[1] = closure_5(tmp9, obj3);
+    const obj4 = { variant: "secondary", size: "sm", onPress: callback, text: intl3.string(request(3715)["KO2xN+"]) };
+    const Button = tmp6(5281).Button;
+    intl3 = tmp6(1115).intl;
+    items1[2] = closure_5(Button, obj4);
     obj.children = items1;
-    return closure_6(View, obj);
+    return tmp3(tmp4, obj);
   }
   const intl2 = tmp6(1115).intl;
   note = intl2.string(tmp8(3715)["V+DBhs"]);

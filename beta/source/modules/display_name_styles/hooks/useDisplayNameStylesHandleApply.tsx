@@ -5,14 +5,16 @@
 // Exports: useDisplayNameStylesHandleApply
 
 // Module 14883 (useDisplayNameStylesHandleApply)
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
 import DisplayNameFont from "DisplayNameFont" /* 1392 */;
-import noop from "module_19" /* 19 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7609 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 7612 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
 
 export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHandleApply(hasChanges) {
@@ -26,29 +28,28 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
   const onClose = hasChanges.onClose;
   let items = [hasChanges, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut];
   return selectedColors.useCallback(() => {
-    if (hasChanges) {
-      let tmp4 = selectedEffectId === DisplayNameEffect.DisplayNameEffect.SOLID;
-      if (tmp4) {
-        tmp4 = arr.length > 0;
-      }
-      if (tmp4) {
-        tmp4 = arr[0] === defaultColor;
-      }
+    const tmp = hasChanges;
+    if (tmp) {
       let items = arr;
-      if (tmp4) {
+      const tmp5 = selectedEffectId === DisplayNameEffect.DisplayNameEffect.SOLID && arr.length > 0 && arr[0] === defaultColor;
+      if (tmp5) {
         items = [];
       }
       const obj = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
+      const tmp7 = selectedFontId;
       if (isTryItOut) {
-        const result = tmp2(7612).setTryItOutDisplayNameStyles(obj);
-        const tmp2Result = tmp2(7612);
+        const tmp3Result = UserProfileActionCreators;
+        const result = tmp3Result.setTryItOutDisplayNameStyles(obj);
       } else {
         const obj2 = { guildId, displayNameStyles: obj };
-        tmp2(7609).setPendingChanges(obj2);
-        const tmp2Result2 = tmp2(7609);
+        const tmp3Result2 = UserProfileSettingsActionCreators;
+        tmp3Result2.setPendingChanges(obj2);
       }
-      const obj3 = { font_name: DisplayNameFont.DisplayNameFont[selectedFontId], effect_name: DisplayNameEffect.DisplayNameEffect[selectedEffectId], colors: selectedColors };
-      AnalyticsUtilsDefault.track(AnalyticEvents.DISPLAY_NAME_STYLES_APPLIED, obj3);
+      const obj3 = { font_name: DisplayNameFont.DisplayNameFont[tmp7], effect_name: DisplayNameEffect.DisplayNameEffect[selectedEffectId], colors: selectedColors };
+      const track = AnalyticsUtilsDefault.track;
+      const DISPLAY_NAME_STYLES_APPLIED = AnalyticEvents.DISPLAY_NAME_STYLES_APPLIED;
+      AnalyticsUtilsDefault;
+      track(DISPLAY_NAME_STYLES_APPLIED, obj3);
       if (onClose != null) {
         onClose();
       }

@@ -5,61 +5,56 @@
 // Exports: default
 
 // Module 11632 (CommandListSortActionSheet)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import TableRadioGroup from "TableRadioGroup" /* 5997 */;
+import intl4 from "intl" /* 1115 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 5997 */;
 import TableRadioRow from "TableRadioRow" /* 6000 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6570 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import ArrowsUpDownIcon from "ArrowsUpDownIcon" /* 11633 */;
-import noop from "module_19" /* 19 */;
+import AppLauncherConstants from "AppLauncherConstants" /* 11617 */;
+import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 11633 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let BottomSheet;
 
-require = fn;
-const CommandListSortOrder = fn(11617).CommandListSortOrder;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const CommandListSortOrder = AppLauncherConstants.CommandListSortOrder;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/sort/CommandListSortActionSheet.tsx");
 
 export default function CommandListSortActionSheet(sortOrder) {
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
   ({ onClose: require, onSortOptionPress: importDefault } = sortOrder);
-  const obj = { startExpanded: true, header: null, children: null };
-  const obj2 = { leading: jsx(ArrowsUpDownIcon.ArrowsUpDownIcon, { size: "sm", color: nativeDefault.colors.TEXT_DEFAULT }), title: null };
-  const intl = util.intl;
-  obj2.title = intl.string(util.t.yeYaHf);
-  obj.header = jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { leading: jsx(ArrowsUpDownIcon.ArrowsUpDownIcon, { size: "sm", color: nativeDefault.colors.TEXT_DEFAULT }), title: null });
-  const obj4 = {
+  sortOrder = sortOrder.sortOrder;
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  ({ leading: null, title: intl.string(intl4.t.yeYaHf) });
+  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  ({ size: "sm", color: nativeDefault.colors.TEXT_DEFAULT });
+  const ArrowsUpDownIcon = ArrowsUpDownIcon2.ArrowsUpDownIcon;
+  intl = intl4.intl;
+  ({
     hasIcons: false,
-    value: sortOrder.sortOrder,
+    value: sortOrder,
     onChange(arg0) {
       importDefault(arg0);
       require();
     },
-    children: null
-  };
-  const obj5 = { label: null, value: null };
-  const intl2 = util.intl;
-  obj5.label = intl2.string(util.t.SzxiqK);
-  obj5.value = CommandListSortOrder.POPULAR;
-  const items = [obj5, ];
-  const obj6 = { label: null, value: null };
-  const intl3 = util.intl;
-  obj6.label = intl3.string(util.t.m8xsti);
-  obj6.value = CommandListSortOrder.ALPHABETICAL;
+    children: items.map((label) => {
+      const value = label.value;
+      return jsx(TableRadioRow.TableRadioRow, { label: label.label, value }, value);
+    })
+  });
+  const obj5 = { label: intl2.string(intl4.t.SzxiqK), value: CommandListSortOrder.POPULAR };
+  const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
+  intl2 = intl4.intl;
+  items = [obj5, ];
+  const obj6 = { label: intl3.string(intl4.t.m8xsti), value: CommandListSortOrder.ALPHABETICAL };
+  intl3 = intl4.intl;
   items[1] = obj6;
-  obj4.children = items.map((label) => {
-    value = label.value;
-    return jsx(TableRadioRow.TableRadioRow, { label: label.label, value }, value);
-  });
-  obj.children = jsx(TableRadioGroup.TableRadioGroup, {
-    hasIcons: false,
-    value: sortOrder.sortOrder,
-    onChange(arg0) {
-      importDefault(arg0);
-      require();
-    },
-    children: null
-  });
-  return jsx(Sheet_BottomSheet.BottomSheet, { startExpanded: true, header: null, children: null });
+  return <BottomSheet startExpanded header={null}>{null}</BottomSheet>;
 };

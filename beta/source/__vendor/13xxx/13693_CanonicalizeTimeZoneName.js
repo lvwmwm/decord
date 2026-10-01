@@ -7,6 +7,8 @@
 // Module 13693 (CanonicalizeTimeZoneName)
 
 export const CanonicalizeTimeZoneName = function CanonicalizeTimeZoneName(str, arg1) {
+  let uppercaseLinks;
+  let zoneNames;
   ({ zoneNames, uppercaseLinks } = arg1);
   const formatted = str.toUpperCase();
   const tmp2 = uppercaseLinks[formatted] || zoneNames.reduce((acc, item) => {

@@ -7,6 +7,8 @@
 // Module 16811 (usePressUnderlayColor)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
+import ColorUtils from "ColorUtils" /* 4683 */;
+import shared from "shared" /* 4685 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import ChannelEmojiConstants from "ChannelEmojiConstants" /* 16812 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +18,8 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_co
 
 export default function usePressUnderlayColor(arr) {
   const tmp2 = useThemeDefault();
-  const token = useToken.useToken(nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE);
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE);
   let substr;
   if (arr != null) {
     substr = arr.slice(0, arr.length - 2);
@@ -25,13 +28,14 @@ export default function usePressUnderlayColor(arr) {
   if (null != substr) {
     hexWithOpacityResult = token;
     if (arr !== closure_3) {
-      const tmp3Result = tmp3(4683);
+      const hexWithOpacity = ColorUtils.hexWithOpacity;
+      ColorUtils;
       let num3 = 0.08;
+      const tmp3Result2 = shared;
       if (tmp3Result2.isThemeDark(tmp2)) {
         num3 = 0.12;
       }
-      hexWithOpacityResult = tmp3Result.hexWithOpacity(substr, num3);
-      tmp3Result2 = tmp3(4685);
+      hexWithOpacityResult = hexWithOpacity(substr, num3);
     }
   }
   return hexWithOpacityResult;

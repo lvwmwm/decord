@@ -7,8 +7,8 @@
 // Module 6956 (useRecentlyActiveChannelsEnabled)
 import useDesignToggleDefault from "useDesignToggle" /* 5938 */;
 import DesignTogglesStore from "DesignTogglesStore" /* 5939 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/useRecentlyActiveChannelsEnabled.tsx");
 
 export const isRecentlyActiveChannelsEnabled = function isRecentlyActiveChannelsEnabled() {

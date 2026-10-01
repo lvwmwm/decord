@@ -7,28 +7,33 @@
 // Module 6462 (useNavigationTheme)
 import Link from "Link" /* 1486 */;
 import shared from "shared" /* 4685 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Navigator/native/useNavigationTheme.native.tsx");
 
-export const useNavigationTheme = function useNavigationTheme(DARK) {
-  _require = DARK;
-  token = require("useToken").useToken(token(token1[2]).colors.TEXT_STRONG, DARK);
+export const useNavigationTheme = function useNavigationTheme(theme) {
+  let token;
+  let token1;
+  _require = theme;
   let obj = require("useToken");
-  token1 = require("useToken").useToken(token(token1[2]).colors.BORDER_SUBTLE, DARK);
-  const obj2 = require("useToken");
-  const token2 = require("useToken").useToken(token(token1[2]).colors.MOBILE_ACTIONSHEET_BACKGROUND, DARK);
+  token = obj.useToken(token(token1[2]).colors.TEXT_STRONG, theme);
+  let obj2 = require("useToken");
+  token1 = obj2.useToken(token(token1[2]).colors.BORDER_SUBTLE, theme);
   const obj3 = require("useToken");
-  const token3 = require("useToken").useToken(token(token1[2]).colors.TEXT_MUTED, DARK);
+  const token2 = obj3.useToken(token(token1[2]).colors.MOBILE_ACTIONSHEET_BACKGROUND, theme);
   const obj4 = require("useToken");
-  const token4 = require("useToken").useToken(token(token1[2]).colors.BACKGROUND_FEEDBACK_NOTIFICATION, DARK);
-  const items = [token1, token2, token4, token, token3, DARK];
+  const token3 = obj4.useToken(token(token1[2]).colors.TEXT_MUTED, theme);
+  const obj5 = require("useToken");
+  const token4 = obj5.useToken(token(token1[2]).colors.BACKGROUND_FEEDBACK_NOTIFICATION, theme);
+  const items = [token1, token2, token4, token, token3, theme];
   return token2.useMemo(() => {
-    const obj = { dark: shared.isThemeDark(closure_0), colors: { primary: token, background: "transparent", border: token1, card: token2, text: token3, notification: token4 }, fonts: Link.DefaultTheme.fonts };
+    let obj2;
+    const obj = { dark: obj2.isThemeDark(theme), colors: obj3, fonts: Link.DefaultTheme.fonts };
+    obj2 = shared;
     return obj;
   }, items);
 };

@@ -5,17 +5,24 @@
 // Exports: default
 
 // Module 16781 (usePreloadedAsset)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c0, dependencyMap;
 
-const require = fn;
-const size = fn(2);
+let _slicedToArray = _slicedToArray_mod;
 const result = size.fileFinishedImporting("modules/image/usePreloadedAsset.native.tsx");
 
 export default function usePreloadedAsset(arg0) {
+  let c5;
+  let closure_0;
+  let closure_2;
+  let closure_3;
+  let tmp9;
+  let useReducedMotion;
   _require = arg0;
   let obj = arg1;
   if (arg1 === undefined) {
@@ -29,16 +36,20 @@ export default function usePreloadedAsset(arg0) {
   if (num === undefined) {
     num = 2000;
   }
+  dependencyMap = undefined;
   _slicedToArray = undefined;
   let combined;
   c5 = undefined;
+  let tmp = dependencyMap;
+  let obj2 = require("get initialized");
   const items = [c5];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => _undefined.useReducedMotion);
-  let obj2 = require("initialize");
-  const tmp3 = require("PlatformUtils").isAndroid() && flag && !stateFromStores;
+  const stateFromStores = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const obj3 = require("PlatformUtils");
+  const tmp3 = obj3.isAndroid() && flag && !stateFromStores;
   dependencyMap = tmp3;
   let tmp4 = !tmp3;
   if (tmp3) {
+    let tmp5 = num;
     tmp4 = null != num(16782);
   }
   _slicedToArray = tmp4;
@@ -47,10 +58,10 @@ export default function usePreloadedAsset(arg0) {
     str = "apng";
   }
   combined = "" + str + ":" + arg0;
-  const obj3 = require("PlatformUtils");
-  const obj4 = combined;
-  [tmp9, c5] = combined.useState(null);
+  [tmp9, c5] = _slicedToArray(combined.useState(null), 2);
   let status = "skipped";
+  const obj4 = combined;
+  const tmp8 = _slicedToArray(combined.useState(null), 2);
   if (null != arg0) {
     status = "skipped";
     if (tmp4) {
@@ -67,30 +78,40 @@ export default function usePreloadedAsset(arg0) {
   }
   const items1 = [arg0, combined, tmp4, tmp3, num];
   const effect = obj4.useEffect(() => {
+    let closure_1;
+    let timeout;
+    let tmp = c0;
     if (null != c0) {
-      if (closure_3) {
+      const tmp2 = closure_3;
+      if (tmp2) {
         c0 = false;
         const _setTimeout = setTimeout;
+        const tmp4 = timeout;
         timeout = setTimeout(() => {
-          if (!c0) {
+          const tmp = c0;
+          if (!tmp) {
             c0 = true;
             const obj = { key: combined, status: "timed-out" };
             c5(obj);
           }
         }, timeout);
-        if (dependencyMap) {
-          if (null != num(16782)) {
-            let preloadResult = num(16782).preload(tmp);
-            const obj2 = num(16782);
+        const tmp5 = closure_2;
+        if (tmp5) {
+          let preloadResult;
+          if (null != num(closure_2[5])) {
+            const obj2 = num(closure_2[5]);
+            preloadResult = obj2.preload(tmp);
           }
           preloadResult.then(() => {
-            if (!c0) {
+            const tmp = c0;
+            if (!tmp) {
               c0 = true;
               const obj = { key: combined, status: "preloaded" };
               c5(obj);
             }
           }, () => {
-            if (!c0) {
+            const tmp = c0;
+            if (!tmp) {
               c0 = true;
               const obj = { key: combined, status: "skipped" };
               c5(obj);
@@ -101,8 +122,8 @@ export default function usePreloadedAsset(arg0) {
             clearTimeout(closure_1);
           };
         }
-        preloadResult = num(5899).preload(tmp, timeout + 1000);
-        let obj = num(5899);
+        let obj = num(closure_2[6]);
+        preloadResult = obj.preload(tmp, tmp4 + 1000);
       }
     }
   }, items1);

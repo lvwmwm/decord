@@ -18,10 +18,12 @@ export default function hasFlag(flags, arg1) {
     let hasFlagResult = null != flags && null != flags.flags;
     if (hasFlagResult) {
       let num = flags.flags;
+      const hasFlag = FlagUtils.hasFlag;
+      FlagUtils;
       if (num == null) {
         num = 0;
       }
-      hasFlagResult = FlagUtils.hasFlag(num, arg1);
+      hasFlagResult = hasFlag(num, arg1);
     }
     tmp = hasFlagResult;
   }

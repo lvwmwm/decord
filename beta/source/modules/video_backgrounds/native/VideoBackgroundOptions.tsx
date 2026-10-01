@@ -5,29 +5,34 @@
 // Exports: fromVideoBackgroundRadioValue, parseVideoBackgroundRadioValue, toVideoBackgroundRadioValue, useVideoBackgroundRadioOptions
 
 // Module 9457 (VideoBackgroundOptions)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6408 */;
 import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 9116 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Image = fn(17).Image;
-const BLUR_BACKGROUND_OPTION = fn(6408).BLUR_BACKGROUND_OPTION;
-const jsx = fn(21).jsx;
+let size;
+const Image = react_native.Image;
+const BLUR_BACKGROUND_OPTION = VideoBackgroundConstants.BLUR_BACKGROUND_OPTION;
+const jsx = Fragment.jsx;
 const none = "none";
-const createStyles = fn(4836);
-let obj2 = { imageThumbnail: null };
-let size = { width: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, height: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, borderRadius: nativeDefault.radii.lg };
-obj2.imageThumbnail = size;
-let closure_7 = createStyles.createStyles(obj2);
-size = fn(2);
+let obj = { imageThumbnail: size };
+size = { width: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, height: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, borderRadius: nativeDefault.radii.lg };
+let closure_7 = createStyles.createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/video_backgrounds/native/VideoBackgroundOptions.tsx");
 
 export const NONE_VALUE = "none";
 export const toVideoBackgroundRadioValue = function toVideoBackgroundRadioValue(lastUsedVideoBackgroundOption) {
+  let tmp2;
   if (null == lastUsedVideoBackgroundOption) {
-    let tmp2 = none;
+    tmp2 = none;
   } else {
     tmp2 = lastUsedVideoBackgroundOption;
     if (lastUsedVideoBackgroundOption !== BLUR_BACKGROUND_OPTION) {
@@ -58,23 +63,22 @@ export const parseVideoBackgroundRadioValue = function parseVideoBackgroundRadio
   return NumberResult;
 };
 export const useVideoBackgroundRadioOptions = function useVideoBackgroundRadioOptions() {
+  let imageThumbnail;
+  let intl;
+  let intl2;
   _require = closure_7();
   const values = Object.values(getDefaultBackgroundDataDefault());
   const found = values.filter((source) => "" !== source.source);
-  let obj = { value: none, label: null, icon: null };
-  const intl = require("util").intl;
-  obj.label = intl.string(require("util").t.fUdMeO);
-  obj.icon = jsx(require("TableRowIcon").TableRowIcon, { IconComponent: require("DenyIcon").DenyIcon });
-  const items = [obj, ];
-  const obj3 = { value: BLUR_BACKGROUND_OPTION, label: null, icon: null };
-  const intl2 = require("util").intl;
-  obj3.label = intl2.string(require("util").t.LhSyL8);
+  const obj = { value: none, label: intl.string(require("intl").t.fUdMeO), icon: null };
+  intl = require("intl").intl;
   const obj2 = { IconComponent: require("DenyIcon").DenyIcon };
-  obj3.icon = jsx(require("TableRowIcon").TableRowIcon, { IconComponent: require("BlurBackgroundIcon").BlurBackgroundIcon });
+  const TableRowIcon = require("TableRowIcon").TableRowIcon;
+  const items = [obj, ];
+  const obj3 = { value: BLUR_BACKGROUND_OPTION, label: intl2.string(require("intl").t.LhSyL8), icon: null };
+  intl2 = require("intl").intl;
+  ({ IconComponent: require("BlurBackgroundIcon").BlurBackgroundIcon });
+  const TableRowIcon2 = require("TableRowIcon").TableRowIcon;
   items[1] = obj3;
-  HermesBuiltin.arraySpread(found.map((uri) => {
-    const obj = { value: uri.id, label: uri.name, icon: <Image source={{ uri: arg0.source }} style={imageThumbnail.imageThumbnail} resizeMode="cover" /> };
-    return obj;
-  }), 2);
+  HermesBuiltin.arraySpread(items, found.map((uri) => ({ value: uri.id, label: uri.name, icon: null })), 2);
   return items;
 };

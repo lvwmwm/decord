@@ -6,16 +6,18 @@
 
 // Module 5938 (useDesignToggle)
 import DesignTogglesStore from "DesignTogglesStore" /* 5939 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/devtools/design_toggles/useDesignToggle.tsx");
 
 export default function useDesignToggle(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [DesignTogglesStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => DesignTogglesStore.get(closure_0), items1);
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => DesignTogglesStore.get(closure_0), items1);
 };

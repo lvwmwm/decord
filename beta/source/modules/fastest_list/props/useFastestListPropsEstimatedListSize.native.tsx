@@ -6,20 +6,23 @@
 
 // Module 6481 (useFastestListPropsEstimatedListSize)
 import useWindowDimensions from "useWindowDimensions" /* 1479 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-let size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/fastest_list/props/useFastestListPropsEstimatedListSize.native.tsx");
 
 export default function useFastestListPropsEstimatedListSize(arg0) {
   ({ estimatedListSize: require, horizontal: dependencyMap } = arg0);
-  return _slicedToArray(noop.useState(() => {
-    if ("windowSize" !== closure_1_0) {
-      return closure_1_0;
-    } else {
-      const size = useWindowDimensions.getWindowDimensions();
+  let tmp = _slicedToArray(react.useState(() => {
+    let tmp = require;
+    if ("windowSize" === require) {
+      const obj = useWindowDimensions;
+      size = obj.getWindowDimensions();
+      tmp = dependencyMap ? size.width : size.height;
     }
-  }), 2)[0];
+    return tmp;
+  }), 2);
+  return tmp[0];
 };

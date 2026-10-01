@@ -4,19 +4,25 @@
 // Dependencies: [5099, 1282, 5146]
 
 // Module 5158 (HasProperty)
-import _mod5099 from "module_5099" /* 5099 */;
+import _mod1282 from "module_1282" /* 1282 */;
+import isObject from "isObject" /* 5099 */;
+import isPropertyKey from "isPropertyKey" /* 5146 */;
 
 
 export default function HasProperty(arg0, arg1) {
-  if (_mod5099(arg0)) {
-    if (tmp(5146)(arg1)) {
+  if (isObject(arg0)) {
+    if (isPropertyKey(arg1)) {
       return arg1 in arg0;
     } else {
-      const tmp10 = new tmp(1282)("Assertion failed: `P` must be a Property Key");
-      throw tmp10;
+      const self3 = this;
+      const self4 = this;
+      const tmp6 = new _mod1282("Assertion failed: `P` must be a Property Key");
+      throw tmp6;
     }
   } else {
-    const tmp5 = new tmp(1282)("Assertion failed: `O` must be an Object");
-    throw tmp5;
+    const self = this;
+    const self2 = this;
+    const tmp3 = new _mod1282("Assertion failed: `O` must be an Object");
+    throw tmp3;
   }
 };

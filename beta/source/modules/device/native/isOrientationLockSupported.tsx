@@ -5,21 +5,23 @@
 // Exports: default
 
 // Module 8834 (isOrientationLockSupported)
+import MetaQuestUtils from "MetaQuestUtils" /* 1610 */;
 import DeviceUtils from "DeviceUtils" /* 4812 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/device/native/isOrientationLockSupported.tsx");
 
 export default function isOrientationLockSupported() {
-  const isIpadOSResult = DeviceUtils.isIpadOS();
-  let result = !isIpadOSResult;
-  if (!isIpadOSResult) {
-    result = !tmp(1610).isMetaQuest();
-    const tmpResult = tmp(1610);
+  const obj = DeviceUtils;
+  let result = !obj.isIpadOS();
+  obj.isIpadOS();
+  if (result) {
+    const tmpResult = MetaQuestUtils;
+    result = !tmpResult.isMetaQuest();
   }
   if (result) {
-    result = tmp(4812).isOrientationLockSupported();
-    const tmpResult2 = tmp(4812);
+    const tmpResult2 = DeviceUtils;
+    result = tmpResult2.isOrientationLockSupported();
   }
   return result;
 };

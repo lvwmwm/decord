@@ -4,123 +4,155 @@
 // Dependencies: [19, 4653, 1183, 1182, 14810, 7417, 1074, 21, 1485, 1364, 7288, 1115, 9579, 1248, 3361, 2111, 5298, 14811, 563, 11006, 14247, 2]
 
 // Module 14809 (SettingsAppearanceScreen)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import intl6 from "intl" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import HeaderShared from "HeaderShared" /* 7288 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4653 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
+import FontScaleStore from "FontScaleStore" /* 14810 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, gradientPreset;
 
-const require = fn;
-const FontScaleStore = fn(14810);
-({ DEFAULT_FONT_SCALE_STORE_STATE: closure_7, useFontScaleStore: closure_8 } = FontScaleStore);
-const MobileUserSettings = fn(7417).MobileUserSettings;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");
-
-export default noop.memo(() => {
-  nativeStackNavigation(5298)(() => {
+let metroImportAll;
+let metroImportDefault;
+({ DEFAULT_FONT_SCALE_STORE_STATE: metroImportDefault, useFontScaleStore: metroImportAll } = FontScaleStore);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(() => {
+  let closure_0;
+  let constants2;
+  let gradientPresetId;
+  let nativeStackNavigation;
+  let theme;
+  const tmp = nativeStackNavigation(5298)(() => {
     if (SelectivelySyncedUserSettingsStore.shouldSync("appearance")) {
-      const userCustomThemes = closure_0(14811).fetchUserCustomThemes();
-      const obj = closure_0(14811);
+      const obj = closure_0(dependencyMap[17]);
+      const userCustomThemes = obj.fetchUserCustomThemes();
     }
   });
+  let obj = require("useStateFromStores");
   let items = [ThemeStore, ClientThemesBackgroundStore];
-  const stateFromStoresObject = require("useStateFromStores").useStateFromStoresObject(items, () => {
-    const obj = { theme: theme.theme, gradientPresetId: null };
-    gradientPreset = gradientPreset.gradientPreset;
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let str;
+    gradientPreset = gradientPreset.gradientPreset;
+    const obj = { theme: theme.theme, gradientPresetId: str };
+    str = undefined;
     if (gradientPreset != null) {
       str = gradientPreset.id;
     }
     if (str == null) {
       str = "";
     }
-    obj.gradientPresetId = str;
     return obj;
   });
   ({ theme, gradientPresetId } = stateFromStoresObject);
   const tmp3 = closure_8();
   _require = tmp3;
-  let obj = require("useStateFromStores");
-  nativeStackNavigation = require("useNavigation").useNativeStackNavigation();
+  let obj2 = require("useNavigation");
+  nativeStackNavigation = obj2.useNativeStackNavigation();
   let items1 = [nativeStackNavigation, , , , ];
   ({ fontScale: arr2[1], isClassicChatFontScaleEnabled: arr2[2], persistedFontScale: arr2[3], persistedIsClassicChatFontScaleEnabled: arr2[4] } = tmp3);
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let getRenderHeaderTextButton;
+    let intl;
+    let obj = PlatformUtils;
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
-        if (tmp3.persistedIsClassicChatFontScaleEnabled === tmp3.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "r" });
+        if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
+          nativeStackNavigation.setOptions({ headerRight: "Path" });
         }
       }
-      const obj2 = { headerRight: null };
-      const intl = tmp(1115).intl;
-      obj2.headerRight = tmp(7288).getRenderHeaderTextButton(intl.string(tmp(1115).t["R3BPH+"]), () => nativeStackNavigation(9579).setCustomFontScale(closure_1_0.fontScale, closure_1_0.isClassicChatFontScaleEnabled));
-      nativeStackNavigation.setOptions(obj2);
-      const tmpResult = tmp(7288);
+      const setOptions = nativeStackNavigation.setOptions;
+      const obj2 = {
+        headerRight: getRenderHeaderTextButton(intl.string(intl6.t["R3BPH+"]), () => {
+            const obj = nativeStackNavigation(dependencyMap[12]);
+            return obj.setCustomFontScale(closure_1_0.fontScale, closure_1_0.isClassicChatFontScaleEnabled);
+          })
+      };
+      getRenderHeaderTextButton = HeaderShared.getRenderHeaderTextButton;
+      HeaderShared;
+      intl = tmp(1115).intl;
+      setOptions(obj2);
     }
   }, items1);
-  const effect1 = noop.useEffect(() => () => {
-    closure_1_0(dependencyMap[13]).batchUpdates(() => state.setState(closure_1_7));
+  const effect1 = react.useEffect(() => () => {
+    let state;
+    const obj = closure_1_0(closure_1_2[13]);
+    obj.batchUpdates(() => state.setState(closure_1_7));
   }, []);
-  const node = noop.useMemo(() => {
-    const obj2 = { sections: null };
-    const obj3 = { label: null, settings: null };
-    const intl = closure_0(1115).intl;
-    obj3.label = intl.string(closure_0(1115).t.Ksh3ik);
-    const items = [, , , , ];
+  const node = react.useMemo(() => {
+    let GR2KOG;
+    let format;
+    let intl;
+    let intl2;
+    let intl4;
+    let intl5;
+    let items;
+    let items1;
+    let items2;
+    let items3;
+    let items4;
+    let items5;
+    let items6;
+    let items7;
+    let items8;
+    let items9;
+    let obj8;
+    let obj9;
+    const obj = { sections: items1 };
+    const obj2 = { label: intl.string(closure_0(dependencyMap[11]).t.Ksh3ik), settings: items };
+    const createList = closure_0(dependencyMap[19]).createList;
+    closure_0(dependencyMap[19]);
+    intl = closure_0(dependencyMap[11]).intl;
+    items = [, , , , ];
     ({ SAME_AS_DEVICE_THEME: arr[0], APPEARANCE_THEME_PICKER: arr[1], LIGHT_MODE_THEME_PICKER: arr[2], DARK_MODE_THEME_PICKER: arr[3], SYNC_THEME: arr[4] } = constants);
-    obj3.settings = items;
-    const items1 = [obj3, , , , , , , , ];
-    const obj4 = { settings: null };
-    const items2 = [constants.DEFAULT_GUILD_THEME_PREFERENCE];
-    obj4.settings = items2;
-    items1[1] = obj4;
-    const obj5 = { label: null, settings: null };
-    const intl2 = closure_0(1115).intl;
-    obj5.label = intl2.string(closure_0(1115).t.i19n5L);
-    const items3 = [, ];
+    items1 = [obj2, , , , , , , , ];
+    const obj3 = { settings: items2 };
+    items2 = [constants.DEFAULT_GUILD_THEME_PREFERENCE];
+    items1[1] = obj3;
+    const obj4 = { label: intl2.string(closure_0(dependencyMap[11]).t.i19n5L), settings: items3 };
+    intl2 = closure_0(dependencyMap[11]).intl;
+    items3 = [, ];
     ({ ANDROID_FONT_SCALE: arr4[0], ANDROID_CLASSIC_CHAT_FONT_SCALE: arr4[1] } = constants);
-    obj5.settings = items3;
-    items1[2] = obj5;
-    const obj6 = { settings: null };
-    const items4 = [constants.DMS_MESSAGE_PREVIEWS];
-    obj6.settings = items4;
-    items1[3] = obj6;
-    const obj7 = { settings: null };
-    const items5 = [constants.GAME_MENTIONS_AUTOCOMPLETE];
-    obj7.settings = items5;
-    items1[4] = obj7;
-    const obj8 = { settings: null, subLabel: null };
-    const items6 = [constants.FAVORITES_GUILD_TOGGLE];
-    obj8.settings = items6;
-    const intl3 = closure_0(1115).intl;
-    const obj9 = { helpCenterLink: null };
-    const obj = closure_0(11006);
-    obj9.helpCenterLink = nativeStackNavigation(2111).getArticleURL(constants2.FAVORITES_GUILD);
-    obj8.subLabel = intl3.format(nativeStackNavigation(3361).GR2KOG, obj9);
-    items1[5] = obj8;
-    const obj11 = { label: null, settings: null };
-    const intl4 = closure_0(1115).intl;
-    obj11.label = intl4.string(closure_0(1115).t.lEde7i);
-    const items7 = [constants.DMS_HAPPENING_NOW_CARDS];
-    obj11.settings = items7;
-    items1[6] = obj11;
-    const obj12 = { label: null, settings: null };
-    const intl5 = closure_0(1115).intl;
-    obj12.label = intl5.string(closure_0(1115).t["5h0QOP"]);
-    const items8 = [constants.EXACT_SEARCH_RESULT_COUNTS];
-    obj12.settings = items8;
-    items1[7] = obj12;
-    const obj13 = { settings: null };
-    const items9 = [constants.TIMESTAMP_HOUR_CYCLE];
-    obj13.settings = items9;
-    items1[8] = obj13;
-    obj2.sections = items1;
-    return obj.createList(obj2);
+    items1[2] = obj4;
+    const obj5 = { settings: items4 };
+    items4 = [constants.DMS_MESSAGE_PREVIEWS];
+    items1[3] = obj5;
+    const obj6 = { settings: items5 };
+    items5 = [constants.GAME_MENTIONS_AUTOCOMPLETE];
+    items1[4] = obj6;
+    const obj7 = { settings: items6, subLabel: format(GR2KOG, obj8) };
+    items6 = [constants.FAVORITES_GUILD_TOGGLE];
+    const intl3 = closure_0(dependencyMap[11]).intl;
+    format = intl3.format;
+    obj8 = { helpCenterLink: obj9.getArticleURL(constants2.FAVORITES_GUILD) };
+    GR2KOG = nativeStackNavigation(dependencyMap[14]).GR2KOG;
+    items1[5] = obj7;
+    obj9 = nativeStackNavigation(dependencyMap[15]);
+    const obj10 = { label: intl4.string(closure_0(dependencyMap[11]).t.lEde7i), settings: items7 };
+    intl4 = closure_0(dependencyMap[11]).intl;
+    items7 = [constants.DMS_HAPPENING_NOW_CARDS];
+    items1[6] = obj10;
+    const obj11 = { label: intl5.string(closure_0(dependencyMap[11]).t["5h0QOP"]), settings: items8 };
+    intl5 = closure_0(dependencyMap[11]).intl;
+    items8 = [constants.EXACT_SEARCH_RESULT_COUNTS];
+    items1[7] = obj11;
+    const obj12 = { settings: items9 };
+    items9 = [constants.TIMESTAMP_HOUR_CYCLE];
+    items1[8] = obj12;
+    return createList(obj);
   }, []);
-  let obj2 = require("useNavigation");
-  return jsx(nativeStackNavigation(14247), { node }, "" + theme + "-" + gradientPresetId);
+  nativeStackNavigation(14247);
+  return <tmp8 key={"" + theme + "-" + gradientPresetId} node={node} />;
 });
+const result = size.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");
+
+export default memoResult;

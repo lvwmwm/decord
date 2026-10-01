@@ -5,63 +5,86 @@
 // Exports: getBannerMode, useWishlistBannerConfig
 
 // Module 10261 (WishlistBannerUtils)
-import _mod19 from "module_19" /* 19 */;
-import util from "util" /* 1115 */;
+import react from "react" /* 19 */;
+import intl5 from "intl" /* 1115 */;
 import size from "module_2" /* 2 */;
 
-const useMemo = _mod19.useMemo;
+let intl;
+let intl2;
+let intl3;
+let intl4;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+const useMemo = react.useMemo;
 const BannerMode = { FULL_WISHLIST: "FULL_WISHLIST", MIXED: "MIXED", SHOP_ONLY: "SHOP_ONLY", SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" };
-let obj2 = { FULL_WISHLIST: null, MIXED: null, SHOP_ONLY: null, SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY: null };
-let obj3 = { title: null, getSubtitle: null, showIcons: false };
-let intl = util.intl;
-obj3.title = intl.string(util.t["7lZ31J"]);
-obj3.getSubtitle = function getSubtitle(username) {
-  const intl = util.intl;
-  return intl.formatToPlainString(util.t.BjEX38, { username });
+let obj2 = { FULL_WISHLIST: obj3, MIXED: obj4, SHOP_ONLY: obj5, SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY: obj6 };
+obj3 = {
+  title: intl.string(intl5.t["7lZ31J"]),
+  getSubtitle(username) {
+    const intl = intl5.intl;
+    const obj = { username };
+    return intl.formatToPlainString(intl5.t.BjEX38, obj);
+  },
+  showIcons: false
 };
-obj2.FULL_WISHLIST = obj3;
-let obj4 = { title: null, getSubtitle: null, showIcons: true };
-let intl2 = util.intl;
-obj4.title = intl2.string(util.t.pWG4ze);
-obj4.getSubtitle = function getSubtitle(username) {
-  const intl = util.intl;
-  return intl.formatToPlainString(util.t.dIDKgi, { username });
+intl = intl5.intl;
+obj4 = {
+  title: intl2.string(intl5.t.pWG4ze),
+  getSubtitle(username) {
+    const intl = intl5.intl;
+    const obj = { username };
+    return intl.formatToPlainString(intl5.t.dIDKgi, obj);
+  },
+  showIcons: true
 };
-obj2.MIXED = obj4;
-let obj5 = { title: null, getSubtitle: null, showIcons: false };
-let intl3 = util.intl;
-obj5.title = intl3.string(util.t.SK5rmi);
-obj5.getSubtitle = function getSubtitle(username) {
-  const intl = util.intl;
-  return intl.formatToPlainString(util.t.wyMp1j, { username });
+intl2 = intl5.intl;
+obj5 = {
+  title: intl3.string(intl5.t.SK5rmi),
+  getSubtitle(username) {
+    const intl = intl5.intl;
+    const obj = { username };
+    return intl.formatToPlainString(intl5.t.wyMp1j, obj);
+  },
+  showIcons: false
 };
-obj2.SHOP_ONLY = obj5;
-const obj6 = { title: null, getSubtitle: null, showIcons: false };
-const intl4 = util.intl;
-obj6.title = intl4.string(util.t.BCi1gT);
-obj6.getSubtitle = function getSubtitle(username) {
-  const intl = util.intl;
-  return intl.formatToPlainString(util.t.BjEX38, { username });
+intl3 = intl5.intl;
+obj6 = {
+  title: intl4.string(intl5.t.BCi1gT),
+  getSubtitle(username) {
+    const intl = intl5.intl;
+    const obj = { username };
+    return intl.formatToPlainString(intl5.t.BjEX38, obj);
+  },
+  showIcons: false
 };
-obj2.SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY = obj6;
+intl4 = intl5.intl;
 const result = size.fileFinishedImporting("modules/premium/gifting/utils/WishlistBannerUtils.tsx");
 
 export { BannerMode };
 export const BANNER_CONFIG_MOBILE = obj2;
 export const getBannerMode = function getBannerMode(wishlistInDmLength) {
+  let SHOP_ONLY;
+  let displayItems;
+  let totalUnownedWishlistItemCount;
   ({ totalUnownedWishlistItemCount, displayItems } = wishlistInDmLength);
   if (totalUnownedWishlistItemCount >= wishlistInDmLength.wishlistInDmLength) {
-    let SHOP_ONLY = obj.FULL_WISHLIST;
+    SHOP_ONLY = obj.FULL_WISHLIST;
   } else if (totalUnownedWishlistItemCount > 0) {
     SHOP_ONLY = obj.MIXED;
   } else {
     if (displayItems.length > 0) {
       if (displayItems.every((item) => {
+        let sku;
+        let source;
         ({ sku, source } = item);
         let isGameItemSKUResult = source === totalUnownedWishlistItemCount(wishlistInDmLength[2]).WishlistItemSource.POPULAR;
+        const tmp = totalUnownedWishlistItemCount;
+        const tmp2 = wishlistInDmLength;
         if (isGameItemSKUResult) {
-          isGameItemSKUResult = totalUnownedWishlistItemCount(wishlistInDmLength[3]).isGameItemSKU(sku);
-          const tmpResult = totalUnownedWishlistItemCount(wishlistInDmLength[3]);
+          const tmpResult = tmp(tmp2[3]);
+          isGameItemSKUResult = tmpResult.isGameItemSKU(sku);
         }
         return isGameItemSKUResult;
       })) {
@@ -78,48 +101,54 @@ export const useWishlistBannerConfig = function useWishlistBannerConfig(totalUno
   const displayItems = totalUnownedWishlistItemCount.displayItems;
   const recipientName = totalUnownedWishlistItemCount.recipientName;
   const items = [totalUnownedWishlistItemCount, wishlistInDmLength, displayItems];
-  const tmp = displayItems(() => {
+  let tmp = displayItems(() => {
+    let SHOP_ONLY;
+    let tmp;
     if (totalUnownedWishlistItemCount >= wishlistInDmLength) {
-      let SHOP_ONLY = obj.FULL_WISHLIST;
+      SHOP_ONLY = obj.FULL_WISHLIST;
     } else if (tmp > 0) {
       SHOP_ONLY = obj.MIXED;
     } else {
-      if (arr.length > 0) {
-        if (arr.every((item) => {
+      if (displayItems.length > 0) {
+        if (displayItems.every((item) => {
+          let sku;
+          let source;
           ({ sku, source } = item);
           let isGameItemSKUResult = source === totalUnownedWishlistItemCount(wishlistInDmLength[2]).WishlistItemSource.POPULAR;
+          const tmp = totalUnownedWishlistItemCount;
+          const tmp2 = wishlistInDmLength;
           if (isGameItemSKUResult) {
-            isGameItemSKUResult = totalUnownedWishlistItemCount(wishlistInDmLength[3]).isGameItemSKU(sku);
-            const tmpResult = totalUnownedWishlistItemCount(wishlistInDmLength[3]);
+            const tmpResult = tmp(tmp2[3]);
+            isGameItemSKUResult = tmpResult.isGameItemSKU(sku);
           }
           return isGameItemSKUResult;
         })) {
           SHOP_ONLY = obj.SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY;
         }
       }
+      let tmp2 = obj;
       SHOP_ONLY = obj.SHOP_ONLY;
     }
     return SHOP_ONLY;
   }, items);
-  closure_4 = tmp;
+  let closure_4 = tmp;
   const items1 = [tmp, recipientName];
   return displayItems(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    let obj;
     if (obj.FULL_WISHLIST === closure_4) {
-      const obj2 = { title: null, showIcons: false };
-      const intl3 = util.intl;
-      const obj3 = { username: recipientName };
-      obj2.title = intl3.formatToPlainString(util.t["YcL/Vr"], obj3);
+      const obj2 = { title: intl3.formatToPlainString(intl5.t["YcL/Vr"], obj3), showIcons: false };
+      intl3 = intl5.intl;
       return obj2;
     } else if (tmp2.MIXED === tmp) {
-      const obj4 = { title: null, showIcons: true };
-      const intl2 = util.intl;
-      const obj5 = { username: recipientName };
-      obj4.title = intl2.formatToPlainString(util.t.dIDKgi, obj5);
+      const obj4 = { title: intl2.formatToPlainString(intl5.t.dIDKgi, obj5), showIcons: true };
+      intl2 = intl5.intl;
       return obj4;
     } else {
-      obj = { title: null, showIcons: false };
-      const intl = util.intl;
-      obj.title = intl.string(util.t.BCi1gT);
+      obj = { title: intl.string(intl5.t.BCi1gT), showIcons: false };
+      intl = intl5.intl;
       return obj;
     }
   }, items1);

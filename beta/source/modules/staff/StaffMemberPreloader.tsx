@@ -6,11 +6,12 @@
 
 // Module 17260 (StaffMemberPreloader)
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
+import StaffMemberConstants from "StaffMemberConstants" /* 17261 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-const PRELOAD_SERVER_ID = fn(17261).PRELOAD_SERVER_ID;
-const size = fn(2);
+const PRELOAD_SERVER_ID = StaffMemberConstants.PRELOAD_SERVER_ID;
 const result = size.fileFinishedImporting("modules/staff/StaffMemberPreloader.tsx");
 
 export const preloadStaffMembers = function preloadStaffMembers() {

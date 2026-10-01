@@ -1,0 +1,10 @@
+// Module ID: 7526
+// Function ID: 7527
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 7526 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "dfdac2dbaa2d7bb47146e9074e36688f", name: "GiftIcon", type: "png" });

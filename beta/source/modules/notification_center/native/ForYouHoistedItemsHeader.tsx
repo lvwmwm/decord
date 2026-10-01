@@ -5,15 +5,18 @@
 // Exports: ForYouHoistedItemsHeader
 
 // Module 16074 (ForYouHoistedItemsHeader)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { container: { marginTop: nativeDefault.space.PX_16 } };
-let closure_2 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const obj = { container: { marginTop: nativeDefault.space.PX_16 } };
+({ marginTop: nativeDefault.space.PX_16 });
+let closure_2 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/notification_center/native/ForYouHoistedItemsHeader.tsx");
 
 export const ForYouHoistedItemsHeader = function ForYouHoistedItemsHeader() {

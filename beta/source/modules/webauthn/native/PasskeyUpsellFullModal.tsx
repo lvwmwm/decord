@@ -5,17 +5,19 @@
 // Exports: default
 
 // Module 14222 (PasskeyUpsellFullModal)
+import Fragment from "Fragment" /* 21 */;
 import Modal from "Modal" /* 10769 */;
+import WebAuthnConstants from "WebAuthnConstants" /* 14215 */;
 import WebAuthnScreens2 from "WebAuthnScreens" /* 14218 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const WebAuthnScreens = fn(14215).WebAuthnScreens;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const WebAuthnScreens = WebAuthnConstants.WebAuthnScreens;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/webauthn/native/PasskeyUpsellFullModal.tsx");
 
 export default function PasskeyUpsellFullModal() {
-  const screens = WebAuthnScreens2.getScreens({ isModal: true });
+  const obj = WebAuthnScreens2;
+  const screens = obj.getScreens({ isModal: true });
   return jsx(Modal.Modal, { screens, initialRouteName: WebAuthnScreens.MODAL_UPSELL });
 };

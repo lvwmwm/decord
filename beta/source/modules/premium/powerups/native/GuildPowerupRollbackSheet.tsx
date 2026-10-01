@@ -5,23 +5,27 @@
 // Exports: default
 
 // Module 12011 (GuildPowerupRollbackSheet)
-import jsxProd from "jsxProd" /* 21 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import PromoSheet from "PromoSheet" /* 9691 */;
+import Fragment from "Fragment" /* 21 */;
+import PromoSheet2 from "PromoSheet" /* 9691 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
+let tmp2;
+const components_Button_Button = tmp2(5281);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupRollbackSheet.tsx");
 
 export default function GuildPowerupRollbackSheet(ctaText) {
+  let body;
+  let header;
+  let onCtaPress;
+  let onDismiss;
   ctaText = ctaText.ctaText;
   ({ header, body, onCtaPress, onDismiss } = ctaText);
-  const obj = { title: header, description: body, onDismiss, actions: null };
   let tmpResult;
+  const PromoSheet = PromoSheet2.PromoSheet;
   if (null != ctaText) {
     const obj2 = { variant: "primary", text: ctaText, onPress: onCtaPress };
     tmpResult = tmp(components_Button_Button.Button, obj2);
   }
-  obj.actions = tmpResult;
-  return jsx(PromoSheet.PromoSheet, { title: header, description: body, onDismiss, actions: null });
+  return <PromoSheet title={header} description={body} onDismiss={onDismiss} actions={tmpResult} />;
 };

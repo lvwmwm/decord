@@ -5,36 +5,42 @@
 // Exports: BaseIconImage
 
 // Module 4530 (BaseIconImage)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import useToken from "useToken" /* 4531 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Image = fn(17).Image;
-const jsx = fn(21).jsx;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "flex" }, refresh_sm: { width: 18, height: 18 } };
-const size = fn(2);
+const Image = react_native.Image;
+const jsx = Fragment.jsx;
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "channel" }, refresh_sm: { width: 18, height: 18 } };
 const result = size.fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 
 export const BaseIconImage = function BaseIconImage(size) {
+  let accessibilityLabel;
+  let accessible;
+  let resizeMode;
+  let style;
+  let tmp3;
   let str = size.size;
+  const source = size.source;
   if (str === undefined) {
     str = "md";
   }
   const color = size.color;
   ({ resizeMode, style, accessible, accessibilityLabel } = size);
-  const token = useToken.useToken(color);
+  const obj = useToken;
+  const token = obj.useToken(color);
   if (null != token) {
+    tmp3 = { tintColor: token };
     const obj2 = { tintColor: token };
-    let tmp3 = obj2;
   } else {
+    const tmp2 = null != color && typeof color === "string";
     if (tmp2) {
+      tmp3 = { tintColor: color };
       const obj3 = { tintColor: color };
-      tmp3 = obj3;
     }
-    tmp2 = null != color && typeof color === "string";
   }
-  const obj4 = { fadeDuration: 0, source: size.source, resizeMode, style: null, accessible, accessibilityLabel };
   const items = [closure_4[str], tmp3, style];
-  obj4.style = items;
-  return <Image fadeDuration={0} source={arg0.source} resizeMode={resizeMode} style={null} accessible={accessible} accessibilityLabel={accessibilityLabel} />;
+  return <Image fadeDuration={0} source={source} resizeMode={resizeMode} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} />;
 };

@@ -5,20 +5,23 @@
 // Exports: default
 
 // Module 6500 (useSmsAutofill)
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import size from "module_2" /* 2 */;
 
-get_ActivityIndicator = fn(17);
-const SmsAutofillManager = get_ActivityIndicator.NativeModules.SmsAutofillManager;
-const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(SmsAutofillManager);
-const size = fn(2);
+let closure_0;
+
+let react = react_mod;
+const SmsAutofillManager = react_native.NativeModules.SmsAutofillManager;
+const nativeEventEmitter = new react_native.NativeEventEmitter(SmsAutofillManager);
 const result = size.fileFinishedImporting("modules/verification/native/hooks/useSmsAutofill.android.tsx");
 
 export default function useSmsAutofill(arg0) {
-  noop = arg0;
+  react = arg0;
   const items = [arg0];
-  const callback = noop.useCallback((code) => closure_0(code.code), items);
+  const callback = react.useCallback((code) => closure_0(code.code), items);
   const items1 = [callback];
-  return noop.useEffect(() => {
+  return react.useEffect(() => {
     closure_0 = nativeEventEmitter.addListener("verificationCodeReceived", callback);
     SmsAutofillManager.startSmsRetriever();
     return () => {

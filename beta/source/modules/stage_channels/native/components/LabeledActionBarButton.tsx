@@ -6,30 +6,51 @@
 
 // Module 9470 (LabeledActionBarButton)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
+import Constants from "Constants" /* 1085 */;
 import Pressables from "Pressables" /* 5435 */;
-import noop from "module_19" /* 19 */;
+import LegacyTokens from "LegacyTokens" /* 5753 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: c2, View: c3 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { buttonContainer: { minHeight: 56, minWidth: 56, alignItems: "center", justifyContent: "center", borderRadius: 28, backgroundColor: fn(5753).ACTION_BAR_BUTTON_BACKGROUND }, container: { marginHorizontal: 12 }, containerWithLabel: { minWidth: "50%", maxWidth: "70%", flexShrink: 1 }, pressable: { marginHorizontal: 12, borderRadius: 28 }, buttonContent: { display: "flex", flexDirection: "row", alignItems: "center" }, buttonText: null, rightTextMargin: null };
-let obj3 = { minHeight: 56, minWidth: 56, alignItems: "center", justifyContent: "center", borderRadius: 28, backgroundColor: fn(5753).ACTION_BAR_BUTTON_BACKGROUND };
-obj2.buttonText = { marginStart: 8, fontSize: 14, color: nativeDefault.colors.WHITE, fontFamily: fn(1085).Fonts.PRIMARY_SEMIBOLD, paddingStart: 3 };
-obj2.rightTextMargin = { marginStart: 0, marginEnd: 8 };
-let closure_6 = createStyles.createStyles(obj2);
-let obj5 = { LEFT: 0, [0]: "LEFT", RIGHT: 1, [1]: "RIGHT" };
-const size = fn(2);
+let c2;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let obj3;
+let tmp7;
+const native = tmp7(1177);
+({ Image: c2, View: c3 } = react_native);
+const Fonts = Constants.Fonts;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { buttonContainer: obj2, container: { marginHorizontal: 12 }, containerWithLabel: { minWidth: "50%", maxWidth: "70%", flexShrink: 1 }, pressable: { marginHorizontal: 12, borderRadius: 28 }, buttonContent: { display: "flex", flexDirection: "row", alignItems: "center" }, buttonText: obj3, rightTextMargin: { marginStart: 0, marginEnd: 8 } };
+obj2 = { minHeight: 56, minWidth: 56, alignItems: "center", justifyContent: "center", borderRadius: 28, backgroundColor: LegacyTokens.ACTION_BAR_BUTTON_BACKGROUND };
+createStyles = createStyles.createStyles;
+obj3 = { marginStart: 8, fontSize: 14, color: nativeDefault.colors.WHITE, fontFamily: Fonts.PRIMARY_SEMIBOLD, paddingStart: 3 };
+let closure_6 = createStyles(obj);
+let obj4 = { LEFT: 0, [0]: "LEFT", RIGHT: 1, [1]: "RIGHT" };
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/LabeledActionBarButton.tsx");
 
-export const IconPosition = obj5;
+export const IconPosition = obj4;
 export const LabeledActionButton = function LabeledActionButton(children) {
+  let PressableOpacity;
+  let backgroundColor;
+  let disabled;
+  let iconPosition;
+  let imageStyle;
+  let items3;
+  let items5;
+  let label;
+  let obj2;
+  let source;
   ({ backgroundColor, imageStyle, source, disabled, label, iconPosition } = children);
+  children = children.children;
   if (iconPosition === undefined) {
-    iconPosition = obj5.LEFT;
+    iconPosition = obj4.LEFT;
   }
   const merged = Object.assign(children, Object.assign({ backgroundColor: 0, imageStyle: 0, children: 0, source: 0, disabled: 0, label: 0, iconPosition: 0 }));
   const tmp3 = closure_6();
@@ -38,9 +59,10 @@ export const LabeledActionButton = function LabeledActionButton(children) {
   if (null != label) {
     containerWithLabel = tmp3.containerWithLabel;
   }
-  const obj = { style: items, children: null };
   items[1] = containerWithLabel;
-  const obj2 = { accessibilityRole: "button", disabled, style: tmp3.pressable };
+  const obj = { style: items, children: React3(PressableOpacity, obj2) };
+  obj2 = { accessibilityRole: "button", disabled, style: tmp3.pressable, children: hasOwnProperty(_false, obj4) };
+  PressableOpacity = Pressables.PressableOpacity;
   const merged1 = Object.assign(merged);
   const items1 = [tmp3.buttonContainer, , ];
   let num = 1;
@@ -50,36 +72,35 @@ export const LabeledActionButton = function LabeledActionButton(children) {
   items1[1] = { opacity: num };
   let tmp11 = null;
   if (null != backgroundColor) {
+    tmp11 = { backgroundColor };
     const obj3 = { backgroundColor };
-    tmp11 = obj3;
   }
-  const obj4 = { style: items1, children: null };
+  obj4 = { style: items1, children: items5 };
   items1[2] = tmp11;
   const items2 = [tmp3.buttonContent, ];
-  obj5 = null;
+  let obj5 = null;
   if (null != label) {
     obj5 = { paddingHorizontal: 16 };
   }
-  const obj6 = { style: items2, children: null };
+  const obj6 = { style: items2, children: items3 };
   items2[1] = obj5;
-  let tmp4Result = iconPosition === obj5.LEFT;
+  let tmp4Result = iconPosition === obj4.LEFT;
   if (tmp4Result) {
     const obj7 = { source, style: imageStyle };
     tmp4Result = tmp4(React2, obj7);
   }
-  const items3 = [tmp4Result, , ];
+  items3 = [tmp4Result, , ];
   let tmp4Result3 = null;
   if (null != label) {
     const items4 = [tmp3.buttonText, ];
     let rightTextMargin = iconPosition === tmp12.RIGHT;
+    const LegacyText = native.LegacyText;
     if (rightTextMargin) {
       rightTextMargin = tmp3.rightTextMargin;
     }
-    const obj8 = { numberOfLines: 2, style: null, children: null };
+    const obj8 = { numberOfLines: 2, style: items4, children: label };
     items4[1] = rightTextMargin;
-    obj8.style = items4;
-    obj8.children = label;
-    tmp4Result3 = tmp4(native.LegacyText, obj8);
+    tmp4Result3 = tmp4(LegacyText, obj8);
   }
   items3[1] = tmp4Result3;
   let tmp4Result4 = iconPosition === tmp12.RIGHT;
@@ -88,10 +109,6 @@ export const LabeledActionButton = function LabeledActionButton(children) {
     tmp4Result4 = tmp4(React2, obj9);
   }
   items3[2] = tmp4Result4;
-  obj6.children = items3;
-  const items5 = [hasOwnProperty(React3, obj6), children.children];
-  obj4.children = items5;
-  obj2.children = hasOwnProperty(React3, obj4);
-  obj.children = React4(Pressables.PressableOpacity, obj2);
-  return React4(React3, obj);
+  items5 = [hasOwnProperty(_false, obj6), children];
+  return React3(_false, obj);
 };

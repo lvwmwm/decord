@@ -2,6 +2,7 @@
 // Function ID: 13529
 // Name: SKUListing
 // Dependencies: [2]
+// Exports: default
 
 // Module 13528 (SKUListing)
 import size from "module_2" /* 2 */;
@@ -13,4 +14,4 @@ export default function SKUListing(skuId, skuFeatures) {
   obj.skuId = skuId;
   obj.skuFeatures = skuFeatures;
   return obj;
-}.prototype;
+};

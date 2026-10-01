@@ -5,46 +5,60 @@
 // Exports: default
 
 // Module 9387 (useToggleRequestToSpeak)
-import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4983 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4983 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5734 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7846 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const useAudienceRequestToSpeakStateDefault = useAudienceRequestToSpeakState;
+let _require, dependencyMap, importDefault;
 
-const require = fn;
-const size = fn(2);
+let react = react_mod;
 let result = size.fileFinishedImporting("modules/stage_channels/useToggleRequestToSpeak.tsx");
 
 export default function useToggleRequestToSpeak(id) {
+  let closure_1;
+  let closure_2;
+  let closure_4;
+  let first;
+  let id2;
   _require = id;
+  let obj = require("get initialized");
   const items = [AuthenticationStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => id2.getId());
+  const stateFromStores = obj.useStateFromStores(items, () => id2.getId());
   const tmp4 = useAudienceRequestToSpeakStateDefault(stateFromStores, id.id);
   importDefault = tmp4;
   const tmp5 = tmp4 === require("useAudienceRequestToSpeakState").RequestToSpeakStates.REQUESTED_TO_SPEAK || tmp4 === require("useAudienceRequestToSpeakState").RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
   dependencyMap = tmp5;
-  const tmp6 = first(noop.useState(tmp5), 2);
+  const tmp6 = first(react.useState(tmp5), 2);
   first = tmp6[0];
-  noop = tmp6[1];
+  react = tmp6[1];
   const items1 = [tmp5];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     closure_4(closure_2);
   }, items1);
   const items2 = [
     first,
     () => {
+      const obj = useStageSpeakingForCurrentUser;
       if (obj.shouldAgeVerifyToSpeakForCurrentUser(id.id)) {
-        const obj2 = { entryPoint: tmp(7861).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
-        const result = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal(obj2);
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
+        const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
+        AgeVerificationActionCreatorsDefault;
+        const result = showAgeVerificationGetStartedModal(obj2);
       } else {
-        if (closure_1 === tmp(4983).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
-          const result1 = tmp(7846).audienceAckRequestToSpeak(tmp3, true);
-          const tmpResult = tmp(7846);
+        if (closure_1 === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
+          const tmpResult = StageChannelActionCreators;
+          const result1 = tmpResult.audienceAckRequestToSpeak(tmp3, true);
         } else {
-          tmp(7846).toggleRequestToSpeak(tmp3, !first);
-          const tmpResult2 = tmp(7846);
+          const tmpResult2 = StageChannelActionCreators;
+          tmpResult2.toggleRequestToSpeak(id, !first);
         }
         closure_4(!first);
       }

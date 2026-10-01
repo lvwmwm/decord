@@ -5,48 +5,49 @@
 // Exports: default
 
 // Module 12473 (InAppReportsDeleteMessageElement)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import MessageStore from "MessageStore" /* 5056 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let dependencyMap;
+
+const AnalyticEvents = Constants.AnalyticEvents;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsDeleteMessageElement.tsx");
 
 export default function DeleteMessageElement(message) {
+  let closure_2;
   message = message.message;
   const reportId = message.reportId;
   let stateFromStores;
-  const tmp = stateFromStores(noop.useState(false), 2);
+  const tmp = stateFromStores(react.useState(false), 2);
   dependencyMap = tmp[1];
+  const first = tmp[0];
+  let obj = message(504);
   const items = [MessageStore];
   const items1 = [message];
-  stateFromStores = message(504).useStateFromStores(items, () => null == MessageStore.getMessage(message.getChannelId(), message.id), items1);
+  stateFromStores = obj.useStateFromStores(items, () => null == MessageStore.getMessage(message.getChannelId(), message.id), items1);
   const items2 = [stateFromStores];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     closure_2(stateFromStores);
   }, items2);
   const items3 = [message, reportId];
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     closure_2(true);
-    AppAnalyticsUtilsDefault.trackWithMetadata(AnalyticEvents.IAR_DELETE_MESSAGE_BUTTON_CLICKED, { report_id: reportId });
+    const obj = AppAnalyticsUtilsDefault;
     const obj2 = { report_id: reportId };
-    MessageActionCreatorsDefault.deleteMessage(message.getChannelId(), message.id);
+    obj.trackWithMetadata(AnalyticEvents.IAR_DELETE_MESSAGE_BUTTON_CLICKED, obj2);
+    const obj3 = MessageActionCreatorsDefault;
+    obj3.deleteMessage(message.getChannelId(), message.id);
   }, items3);
-  let obj2 = { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null };
-  let obj = message(504);
+  reportId(12468);
   const intl = message(1115).intl;
-  obj2.title = intl.string(message(1115).t.c9BHL9);
   const intl2 = message(1115).intl;
-  obj2.disabledTitle = intl2.string(message(1115).t.AT2KSd);
   const intl3 = message(1115).intl;
-  obj2.description = intl3.string(message(1115).t.dK8S0w);
-  obj2.disabled = tmp[0];
-  obj2.onPress = callback;
-  obj2.icon = jsx(message(4790).TrashIcon, { color: "text-feedback-critical" });
-  return jsx(reportId(12468), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
+  return <tmp6 title={intl.string(message(1115).t.c9BHL9)} disabledTitle={intl2.string(message(1115).t.AT2KSd)} description={intl3.string(message(1115).t.dK8S0w)} disabled={first} variant="danger" onPress={callback} icon={null} />;
 };

@@ -5,42 +5,39 @@
 // Exports: default
 
 // Module 16561 (MainTabsEmptyChatPanel)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import FavoritesHooks from "FavoritesHooks" /* 9685 */;
 import useDrawerWidth from "useDrawerWidth" /* 11021 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
+let tmp3;
 const FavoritesEmptyStateDefault = tmp3(16562);
-require = fn;
-get_ActivityIndicator = fn(17);
-({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+({ StyleSheet: c3, View: closure_4 } = react_native);
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((left, marginTop) => {
-  const obj = { container: null };
-  const obj2 = {};
+  let obj2;
+  const obj = { container: obj2 };
+  obj2 = { left, marginTop, backgroundColor: nativeDefault.colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND, borderTopWidth: nativeDefault.modules.mobile.CHANNEL_DRAWER_DIVIDER_WIDTH, borderTopColor: nativeDefault.colors.APP_FRAME_BORDER, borderLeftWidth: nativeDefault.modules.mobile.CHANNEL_DRAWER_DIVIDER_WIDTH, borderLeftColor: nativeDefault.colors.APP_FRAME_BORDER, borderTopLeftRadius: nativeDefault.modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
-  obj2.left = left;
-  obj2.marginTop = marginTop;
-  obj2.backgroundColor = nativeDefault.colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND;
-  obj2.borderTopWidth = nativeDefault.modules.mobile.CHANNEL_DRAWER_DIVIDER_WIDTH;
-  obj2.borderTopColor = nativeDefault.colors.APP_FRAME_BORDER;
-  obj2.borderLeftWidth = nativeDefault.modules.mobile.CHANNEL_DRAWER_DIVIDER_WIDTH;
-  obj2.borderLeftColor = nativeDefault.colors.APP_FRAME_BORDER;
-  obj2.borderTopLeftRadius = nativeDefault.modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS;
-  obj.container = obj2;
   return obj;
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/MainTabsEmptyChatPanel.tsx");
 
 export default function MainTabsEmptyChatPanel() {
-  const drawerWidth = useDrawerWidth.useDrawerWidth();
-  const tmp4 = closure_6(drawerWidth, useSafeAreaInsetsDefault().top);
+  const obj = useDrawerWidth;
+  const drawerWidth = obj.useDrawerWidth();
   let tmp5 = null;
+  const tmp4 = closure_6(drawerWidth, useSafeAreaInsetsDefault().top);
+  const obj2 = FavoritesHooks;
   if (obj2.useIsFavoritesGuildSelected()) {
-    const obj3 = { style: tmp4.container, pointerEvents: "box-none", children: jsx(FavoritesEmptyStateDefault, {}) };
-    tmp5 = <React4 style={tmp4.container} pointerEvents="box-none">{jsx(FavoritesEmptyStateDefault, {})}</React4>;
+    tmp5 = <React3 style={tmp4.container} pointerEvents="box-none">{jsx(FavoritesEmptyStateDefault, {})}</React3>;
   }
   return tmp5;
 };

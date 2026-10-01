@@ -5,15 +5,17 @@
 // Exports: default
 
 // Module 13027 (usePremiumGroupMembership)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import PremiumGroupStore from "PremiumGroupStore" /* 13028 */;
 import size from "module_2" /* 2 */;
 
-const useEffect = _mod19.useEffect;
+const useEffect = react.useEffect;
 const result = size.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupMembership.tsx");
 
 export default function usePremiumGroupMembership() {
+  let isFetchingMembership;
+  let premiumGroupMembership;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -27,17 +29,20 @@ export default function usePremiumGroupMembership() {
     flag2 = true;
   }
   const items = [PremiumGroupStore];
-  const stateFromStoresObject = flag(504).useStateFromStoresObject(items, () => ({ premiumGroupMembership: PremiumGroupStore.getMembership(), isFetchingMembership: PremiumGroupStore.isFetchingMembership() }));
+  const obj2 = flag(504);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
+    const obj = { premiumGroupMembership: PremiumGroupStore.getMembership(), isFetchingMembership: PremiumGroupStore.isFetchingMembership() };
+    return obj;
+  });
   const items1 = [flag2, flag];
   ({ premiumGroupMembership, isFetchingMembership } = stateFromStoresObject);
   useEffect(() => {
-    if (flag2) {
-      let hasFetchedMembershipResult = flag;
-      if (flag) {
-        hasFetchedMembershipResult = PremiumGroupStore.hasFetchedMembership();
-      }
+    const tmp = flag2;
+    if (tmp) {
+      const hasFetchedMembershipResult = flag && PremiumGroupStore.hasFetchedMembership();
       if (!hasFetchedMembershipResult) {
-        DispatcherDefault.dispatch({ type: "PREMIUM_GROUP_MEMBERSHIP_REQUEST" });
+        const obj = DispatcherDefault;
+        obj.dispatch({ type: "PREMIUM_GROUP_MEMBERSHIP_REQUEST" });
       }
     }
   }, items1);

@@ -6,27 +6,67 @@
 
 // Module 5972 (HeaderBackButton)
 import Link from "Link" /* 1486 */;
-import _modDef5944 from "module_5944" /* 5944 */;
-import HeaderButton from "HeaderButton" /* 5978 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5944 */;
+import HeaderIcon2 from "HeaderIcon" /* 5973 */;
+import HeaderButton2 from "HeaderButton" /* 5978 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment_mod from "Fragment" /* 21 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Animated: hasOwnProperty, Image, Platform, StyleSheet, View: metroRequire } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let Image;
+let Platform;
+let StyleSheet;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+({ Animated: hasOwnProperty, Image, Platform, StyleSheet, View: metroRequire } = react_native);
+let Fragment = Fragment_mod;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let c9 = 24;
-let obj = { container: { paddingHorizontal: 0, minWidth: StyleSheet.hairlineWidth, marginVertical: 3, marginHorizontal: 11 }, label: { fontSize: 17, letterSpacing: 0.35 }, labelWrapper: { flexDirection: "row", alignItems: "flex-start", marginEnd: fn(5973).ICON_MARGIN }, icon: { width: 24, marginEnd: 3 }, iconWithLabel: {}, iconMaskContainer: { flex: 1, flexDirection: "row", justifyContent: "center" }, iconMaskFillerRect: { flex: 1, backgroundColor: "#000" }, iconMask: { height: 21, width: 13, marginStart: -14.5, marginVertical: 12, alignSelf: "center" }, flip: { transform: "scaleX(-1)" } };
+let obj = { container: { paddingHorizontal: 0, minWidth: StyleSheet.hairlineWidth, marginVertical: 3, marginHorizontal: 11 }, label: { fontSize: 17, letterSpacing: 0.35 }, labelWrapper: obj2, icon: { width: 24, marginEnd: 3 }, iconWithLabel: {}, iconMaskContainer: { flex: 1, flexDirection: "row", justifyContent: "center" }, iconMaskFillerRect: { flex: 1, backgroundColor: "#000" }, iconMask: { height: 21, width: 13, marginStart: -14.5, marginVertical: 12, alignSelf: "center" }, flip: { transform: "scaleX(-1)" } };
+obj2 = { flexDirection: "row", alignItems: "flex-start", marginEnd: HeaderIcon2.ICON_MARGIN };
 const container = StyleSheet.create(obj);
 
 export const HeaderBackButton = function HeaderBackButton(accessibilityLabel) {
+  let Fragment;
+  let allowFontScaling;
+  let backImage;
+  let backImageResult;
+  let c1;
+  let c2;
+  let closure_129_0;
+  let colors;
+  let disabled;
+  let displayMode;
+  let fonts;
+  let href;
+  let items;
+  let items1;
+  let items2;
+  let items5;
+  let items6;
+  let label;
+  let labelStyle;
+  let onLabelLayout;
+  let pressColor;
+  let pressOpacity;
+  let screenLayout;
+  let style;
+  let testID;
+  let tintColor;
+  let titleLayout;
+  let tmp6;
+  let tmp8;
+  let truncatedLabel;
   ({ backImage, label, displayMode } = accessibilityLabel);
   ({ disabled, allowFontScaling, labelStyle } = accessibilityLabel);
   if (displayMode === undefined) {
     displayMode = "minimal";
   }
-  ({ onPress: require, screenLayout, tintColor, titleLayout, truncatedLabel, onLabelLayout, pressColor, pressOpacity } = accessibilityLabel);
+  ({ onPress: closure_129_0, screenLayout, tintColor, titleLayout, truncatedLabel, onLabelLayout, pressColor, pressOpacity } = accessibilityLabel);
   if (truncatedLabel === undefined) {
     truncatedLabel = "Back";
   }
@@ -36,6 +76,7 @@ export const HeaderBackButton = function HeaderBackButton(accessibilityLabel) {
     if (label) {
       str2 = "Go back";
       if ("Back" !== label) {
+        let tmp = globalThis;
         const _HermesInternal = HermesInternal;
         str2 = "" + label + ", back";
       }
@@ -45,44 +86,49 @@ export const HeaderBackButton = function HeaderBackButton(accessibilityLabel) {
   c1 = undefined;
   c2 = undefined;
   ({ testID, style, href } = accessibilityLabel);
-  const theme = Link.useTheme();
+  const obj = Link;
+  const theme = obj.useTheme();
   ({ colors, fonts } = theme);
-  const direction = Link.useLocale().direction;
-  [tmp6, c1] = noop.useState(null);
-  const tmp5 = _slicedToArray(noop.useState(null), 2);
-  [tmp8, c2] = noop.useState(null);
+  const obj2 = Link;
+  const direction = obj2.useLocale().direction;
+  [tmp6, c1] = react.useState(null);
+  _slicedToArray(react.useState(null), 2);
+  [tmp8, c2] = react.useState(null);
   const obj3 = {
     disabled,
     href,
     accessibilityLabel,
     testID,
     onPress() {
-      if (require) {
+      const tmp = closure_1_0;
+      if (tmp) {
         const _requestAnimationFrame = requestAnimationFrame;
         const animationFrame = requestAnimationFrame(() => closure_1_0());
       }
     },
     pressColor,
     pressOpacity,
-    style: null,
-    children: null
+    style: items,
+    children: metroImportAll(Fragment, { children: items2 })
   };
-  const items = [container.container, style];
-  obj3.style = items;
+  items = [container.container, style];
+  _slicedToArray(react.useState(null), 2);
+  const HeaderButton = HeaderButton2.HeaderButton;
+  Fragment = react.Fragment;
   if (backImage) {
     let text = tintColor;
     if (tintColor == null) {
       text = colors.text;
     }
     const obj4 = { tintColor: text };
-    let backImageResult = backImage(obj4);
+    backImageResult = backImage(obj4);
   } else {
-    const obj5 = { source: _modDef5944, tintColor, style: null };
-    const items1 = [tmp10.icon, "minimal" !== displayMode && tmp10.iconWithLabel];
-    obj5.style = items1;
-    backImageResult = tmp9(tmp2(5973).HeaderIcon, obj5);
+    const obj5 = { source: AssetRegistryDefault, tintColor, style: items1 };
+    const HeaderIcon = tmp2(5973).HeaderIcon;
+    items1 = [container.icon, "minimal" !== displayMode && container.iconWithLabel];
+    backImageResult = tmp9(HeaderIcon, obj5);
   }
-  const items2 = [backImageResult, ];
+  items2 = [backImageResult, ];
   let tmp11Result = null;
   if ("minimal" !== displayMode) {
     let diff = null;
@@ -114,13 +160,14 @@ export const HeaderBackButton = function HeaderBackButton(accessibilityLabel) {
         }
       }
     }
-    const items3 = [fonts.regular, tmp10.label, labelStyle];
+    const items3 = [fonts.regular, container.label, labelStyle];
     const items4 = [items3, { position: "absolute", top: 0, left: 0, opacity: 0 }];
-    const obj6 = { style: tmp10.labelWrapper, children: null };
     let tmp9Result = null;
+    const obj6 = { style: container.labelWrapper, children: items5 };
+    const tmp22 = metroRequire;
     if (label) {
       tmp9Result = null;
-      if (tmp18) {
+      if ("default" === displayMode) {
         const obj7 = {
           style: items4,
           numberOfLines: 1,
@@ -129,10 +176,10 @@ export const HeaderBackButton = function HeaderBackButton(accessibilityLabel) {
                 },
           children: label
         };
-        tmp9Result = tmp9(RN.Text, obj7);
+        tmp9Result = tmp9(hasOwnProperty.Text, obj7);
       }
     }
-    const items5 = [tmp9Result, , ];
+    items5 = [tmp9Result, , ];
     let tmp9Result3 = null;
     if (truncatedLabel) {
       const obj8 = {
@@ -143,28 +190,24 @@ export const HeaderBackButton = function HeaderBackButton(accessibilityLabel) {
             },
         children: truncatedLabel
       };
-      tmp9Result3 = tmp9(RN.Text, obj8);
+      tmp9Result3 = tmp9(hasOwnProperty.Text, obj8);
     }
     items5[1] = tmp9Result3;
     let tmp9Result4 = null;
     if (tmp20) {
-      const obj9 = { accessible: false, onLayout: onLabelLayout, style: null, numberOfLines: 1, allowFontScaling: null, children: null };
       let tmp29 = null;
+      const Text = hasOwnProperty.Text;
+      const obj9 = { accessible: false, onLayout: onLabelLayout, style: items6, numberOfLines: 1, allowFontScaling, children: tmp20 };
       if (tintColor) {
+        tmp29 = { color: tintColor };
         const obj10 = { color: tintColor };
-        tmp29 = obj10;
       }
-      const items6 = [tmp29, items3];
-      obj9.style = items6;
-      obj9.allowFontScaling = allowFontScaling;
-      obj9.children = tmp20;
-      tmp9Result4 = tmp9(RN.Text, obj9);
+      items6 = [tmp29, items3];
+      tmp9Result4 = tmp9(Text, obj9);
     }
     items5[2] = tmp9Result4;
-    obj6.children = items5;
-    tmp11Result = tmp11(timestampProducer, obj6);
+    tmp11Result = tmp11(tmp22, obj6);
   }
   items2[1] = tmp11Result;
-  obj3.children = React6(noop.Fragment, { children: items2 });
-  return React5(HeaderButton.HeaderButton, obj3);
+  return metroImportDefault(HeaderButton, obj3);
 };

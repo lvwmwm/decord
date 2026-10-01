@@ -4,32 +4,38 @@
 // Dependencies: [4825, 7417, 504, 13998, 11006, 1115, 2]
 
 // Module 14965 (SyncReducedMotionWithDeviceSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["St+DJK"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["St+DJK"]);
   },
-  parent: fn(7417).MobileUserSettings.ACCESSIBILITY,
+  parent: MobileUserSettings.ACCESSIBILITY,
   useValue: function useReducedMotionSyncSettingValue() {
     const items = [AccessibilityStore];
-    return initialize.useStateFromStores(items, () => "auto" === AccessibilityStore.rawPrefersReducedMotion);
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => "auto" === AccessibilityStore.rawPrefersReducedMotion);
   },
   onValueChange: function onReducedMotionSyncSettingValueChange(arg0) {
+    const systemPrefersReducedMotion = AccessibilityStore.systemPrefersReducedMotion;
     let str = "auto";
+    const setPrefersReducedMotion = AccessibilityActionCreators.setPrefersReducedMotion;
+    AccessibilityActionCreators;
     if (!arg0) {
-      str = AccessibilityStore.systemPrefersReducedMotion;
+      str = systemPrefersReducedMotion;
     }
-    const result = AccessibilityActionCreators.setPrefersReducedMotion(str);
+    const result = setPrefersReducedMotion(str);
   }
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/SyncReducedMotionWithDeviceSetting.tsx");
 
 export default toggle;

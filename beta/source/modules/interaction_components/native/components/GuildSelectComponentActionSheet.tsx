@@ -5,132 +5,161 @@
 // Exports: default
 
 // Module 14208 (GuildSelectComponentActionSheet)
-import util from "util" /* 1115 */;
+import react_native from "react-native" /* 17 */;
 import native from "native" /* 1177 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
 import InteractionComponentTypes from "InteractionComponentTypes" /* 5067 */;
 import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 11300 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SortedGuildStore from "SortedGuildStore" /* 5750 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let dependencyMap, flattenedGuildIds, record;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
+let c9;
+let metroImportAll;
+let tmp5;
+const intl2 = tmp5(1115);
+const View = react_native.View;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ guildIdentity: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 16 }, avatar: { marginRight: 4 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/interaction_components/native/components/GuildSelectComponentActionSheet.tsx");
 
 export default function GuildSelectComponentActionSheet(arg0) {
+  let guildIdentity;
+  let intl;
+  let items1;
+  let selectedGuild;
   ({ selectedGuild, onSelectGuild: require, user: importDefault } = arg0);
   let first;
   let first1;
   let callback;
-  const tmp = closure_10();
+  let tmp = closure_10();
   dependencyMap = tmp;
+  let obj = first1;
   const tmp2 = first(first1.useState(""), 2);
   first = tmp2[0];
-  const tmp6 = first(first1.useState({ type: InteractionComponentTypes.SelectOptionType.GUILD, value: selectedGuild.id, label: selectedGuild.name, guild: selectedGuild }), 2);
-  first1 = tmp6[0];
-  closure_5 = tmp6[1];
+  let obj2 = { type: InteractionComponentTypes.SelectOptionType.GUILD, value: selectedGuild.id, label: selectedGuild.name, guild: selectedGuild };
+  let tmp5 = require;
+  let tmp6 = dependencyMap;
+  const tmp4 = tmp2[1];
+  const tmp7 = first(first1.useState(obj2), 2);
+  first1 = tmp7[0];
+  let closure_5 = tmp7[1];
   if (null != first1) {
     let items = [first1];
-    let items1 = items;
+    items1 = items;
   } else {
     items1 = [];
   }
-  let obj3 = { maxValues: 1, minValues: 1, placeholder: null };
+  let obj3 = { maxValues: 1, minValues: 1, placeholder: intl.string(intl2.t["ZImm/x"]) };
   function submitSelection() {
-    return require("ActionSheetActionCreators").hideActionSheet();
+    const obj = require("ActionSheetActionCreators");
+    return obj.hideActionSheet();
   }
-  const intl = tmp4(1115).intl;
-  obj3.placeholder = intl.string(util.t["ZImm/x"]);
-  callback = obj.useCallback((query) => {
+  intl = intl2.intl;
+  callback = obj.useCallback(function(query) {
+    let reduced;
     if (0 === query.length) {
       flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
       const _Array = Array;
+      const self = this;
+      const self2 = this;
+      const reduce = flattenedGuildIds.reduce;
       const array = new Array();
-      let reduced = flattenedGuildIds.reduce((arr, item) => {
-        guild = guild.getGuild(item);
+      reduced = reduce((arg0, arg1) => {
+        guild = guild.getGuild(arg1);
         if (null != guild) {
-          const obj = { type: closure_1_0(5067).SelectOptionType.GUILD, value: null, label: null, guild: null };
+          const obj = { type: closure_1_0(guildIdentity[7]).SelectOptionType.GUILD, value: null, label: null, guild };
+          const push = arg0.push;
           ({ id: obj.value, name: obj.label } = guild);
-          obj.guild = guild;
-          arr.push(obj);
+          push(obj);
         }
-        return arr;
+        return arg0;
       }, array);
     } else {
-      const obj2 = { query };
       let obj = require("AutocompleteUtils");
-      reduced = require("AutocompleteUtils").queryGuilds(obj2).map((record) => {
+      const obj2 = { query };
+      const queryGuildsResult = obj.queryGuilds(obj2);
+      reduced = queryGuildsResult.map((record) => {
         record = record.record;
-        return { type: closure_1_0(5067).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+        const obj = { type: closure_1_0(guildIdentity[7]).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+        return obj;
       });
-      const queryGuildsResult = require("AutocompleteUtils").queryGuilds(obj2);
     }
     return reduced;
   }, []);
   const items2 = [first, callback];
   const memo = obj.useMemo(() => callback(first), items2);
-  return closure_8(SelectComponentActionSheetDefault, {
+  const obj4 = {
     onPressOptionItem(arg0, guild) {
       require(guild.guild);
       closure_5(guild);
-      ActionSheetActionCreatorsDefault.hideActionSheet();
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
     },
     onRemoveOptionItem() {
       closure_5(null);
     },
     renderIcon(guild) {
-      return closure_1_8(require("GuildIcon"), { guild: guild.guild });
+      const obj = { guild: guild.guild };
+      return closure_1_8(require("GuildIcon"), obj);
     },
     renderHeaderIcon(guild) {
       const obj = { size: require("GuildIcon").GuildIconSizes.XSMALL, guild: guild.guild };
-      return closure_1_8(require("GuildIcon"), obj);
+      const tmp = require("GuildIcon");
+      return closure_1_8(tmp, obj);
     },
     iconContainerStyle: tmp.iconContainer,
     renderDescription(guild) {
-      const hasAvatarForGuildResult = closure_1_1.hasAvatarForGuild(guild.guild.id);
-      let username = NicknameUtilsDefault.getNickname(guild.guild.id, undefined, closure_1_1);
-      const obj2 = { style: guildIdentity.guildIdentity, children: null };
+      let items;
+      const hasAvatarForGuildResult = importDefault.hasAvatarForGuild(guild.guild.id);
+      const obj = NicknameUtilsDefault;
+      let username = obj.getNickname(guild.guild.id, undefined, importDefault);
       let tmp8 = hasAvatarForGuildResult;
+      const obj2 = { style: guildIdentity.guildIdentity, children: items };
+      const tmp5 = React4;
+      const tmp6 = View;
       if (hasAvatarForGuildResult) {
-        const obj3 = { size: native.AvatarSizes.SIZE_16, style: tmp7.avatar, user: tmp, guildId: guild.guild.id, animate: true };
-        tmp8 = React6(native.Avatar, obj3);
+        const obj3 = { size: native.AvatarSizes.SIZE_16, style: tmp7.avatar, user: importDefault, guildId: guild.guild.id, animate: true };
+        const Avatar = native.Avatar;
+        tmp8 = metroImportAll(Avatar, obj3);
       }
-      const items = [tmp8, ];
+      items = [tmp8, ];
+      const Text = Text_Text.Text;
+      const tmp11 = metroImportAll;
       if (username == null) {
         username = tmp.username;
       }
-      items[1] = React6(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: username });
-      obj2.children = items;
-      return React7(View, obj2);
+      items[1] = tmp11(Text, { variant: "text-sm/medium", color: "text-default", children: username });
+      return tmp5(tmp6, obj2);
     },
     selectionActionComponent: obj3,
     options: memo,
     selectedCount: items1.length,
     selectedOptions: items1,
     isSelected(value) {
-      value = undefined;
+      let value2;
+      value = value.value;
       if (first1 != null) {
-        value = first1.value;
+        value2 = first1.value;
       }
-      return value.value === value;
+      return value === value2;
     },
     submitSelection,
-    onQueryChange: tmp2[1],
+    onQueryChange: tmp4,
     itemAccessibilityLabel(label) {
       return label.label;
     },
     allowEmpty: false,
     expanded: true
-  });
+  };
+  return closure_8(SelectComponentActionSheetDefault, obj4);
 };

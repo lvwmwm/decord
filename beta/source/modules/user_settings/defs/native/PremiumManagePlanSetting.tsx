@@ -5,26 +5,29 @@
 
 // Module 14521 (PremiumManagePlanSetting)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["8jmdON"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["8jmdON"]);
   },
-  parent: SettingsConstants.MobileUserSettings.PREMIUM,
+  parent: MobileUserSettings.PREMIUM,
   screen: {
-    route: Constants.UserSettingsSections.PREMIUM_MANAGE_PLAN,
+    route: UserSettingsSections.PREMIUM_MANAGE_PLAN,
     getComponent() {
       return require("PremiumManagePlanScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/PremiumManagePlanSetting.tsx");
 
 export default route;

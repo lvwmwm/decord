@@ -5,32 +5,33 @@
 // Exports: default
 
 // Module 17700 (EnterEmailScreen)
+import Fragment from "Fragment" /* 21 */;
 import _modDef2781 from "module_2781" /* 2781 */;
 import types from "types" /* 17692 */;
 import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 17701 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/safety_flows/native/tasks/EnterEmailScreen.tsx");
 
 export default function EnterEmailScreen() {
-  _require = require("useNavigation").useNavigation();
+  let closure_0;
+  let tmp2;
+  let tmp3;
   const obj = require("useNavigation");
-  [tmp2, tmp3] = noop.useState("");
-  const obj2 = { title: null, action: null, onAction: null, children: null };
-  const tmp = _slicedToArray(noop.useState(""), 2);
-  const intl = require("util").intl;
-  obj2.title = intl.string(_modDef2781.bFbsV6);
-  const intl2 = require("util").intl;
-  obj2.action = intl2.string(_modDef2781.RRBNpv);
-  obj2.onAction = function onAction() {
+  _require = obj.useNavigation();
+  [tmp2, tmp3] = react.useState("");
+  _slicedToArray(react.useState(""), 2);
+  SafetyFlowTaskScreenDefault;
+  const intl = require("intl").intl;
+  const intl2 = require("intl").intl;
+  const Stack = require("Stack/Stack").Stack;
+  return <tmp4 title={intl.string(_modDef2781.bFbsV6)} action={intl2.string(_modDef2781.RRBNpv)} onAction={function onAction() {
     closure_0.push(types.SafetyFlowScreens.VERIFY_EMAIL);
-  };
-  obj2.children = jsx(require("Stack/Stack").Stack, { children: jsx(require("TextInput").TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
-  return <tmp4 title={null} action={null} onAction={null}>{null}</tmp4>;
+  }}>{null}</tmp4>;
 };

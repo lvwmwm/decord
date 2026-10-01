@@ -6,81 +6,85 @@
 
 // Module 10598 (SuperReactionUpsellActionSheet)
 import _modDef12 from "module_12" /* 12 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import native from "native" /* 1177 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import _mod7214 from "module_7214" /* 7214 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8663 */;
 import openPremiumModalDefault from "openPremiumModal" /* 8695 */;
+import AssetRegistry from "AssetRegistry" /* 10599 */;
+import AssetRegistry2 from "AssetRegistry" /* 10600 */;
+import AssetRegistry3 from "AssetRegistry" /* 10601 */;
+import AssetRegistry4 from "AssetRegistry" /* 10602 */;
+import AssetRegistry5 from "AssetRegistry" /* 10603 */;
+import AssetRegistry6 from "AssetRegistry" /* 10604 */;
+import AssetRegistry7 from "AssetRegistry" /* 10605 */;
 import SuperReactionLocalImageAnimationDefault from "SuperReactionLocalImageAnimation" /* 10606 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1372 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-const AnalyticsPages = fn(1074).AnalyticsPages;
-const jsx = fn(21).jsx;
-const dismissibleContent = fn(2029).DismissibleContent.SUPER_REACTIONS_COACHMARK_MOBILE;
-let items = [fn(10599), fn(10600), fn(10601), fn(10602), fn(10600), fn(10603), fn(10604), fn(10605)];
-const createStyles = fn(4836);
-let obj2 = { fill: null, nitroIcon: null, description: null };
-let obj3 = {};
+let StyleSheet;
+let closure_4;
+let obj2;
+let size;
+({ View: closure_4, StyleSheet } = react_native);
+const AnalyticsPages = Constants.AnalyticsPages;
+const jsx = Fragment.jsx;
+const dismissibleContent = dismissible_content.DismissibleContent.SUPER_REACTIONS_COACHMARK_MOBILE;
+let items = [AssetRegistry, AssetRegistry2, AssetRegistry3, AssetRegistry4, AssetRegistry2, AssetRegistry5, AssetRegistry6, AssetRegistry7];
+let createStyles = createStyles_mod;
+let obj = { fill: obj2, nitroIcon: size, description: { paddingHorizontal: 16 } };
+obj2 = { flex: 1, alignItems: "center", justifyContent: "center", top: -150 };
+createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3.flex = 1;
-obj3.alignItems = "center";
-obj3.justifyContent = "center";
-obj3.top = -150;
-obj2.fill = obj3;
-let size = { tintColor: nativeDefault.colors.WHITE, width: 32, height: 32, marginVertical: -8, marginRight: -4 };
-obj2.nitroIcon = size;
-obj2.description = { paddingHorizontal: 16 };
-let closure_10 = createStyles.createStyles(obj2);
-size = fn(2);
+size = { tintColor: nativeDefault.colors.WHITE, width: 32, height: 32, marginVertical: -8, marginRight: -4 };
+let closure_10 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/messages/native/burst_reactions/SuperReactionUpsellActionSheet.tsx");
 
 export default function SuperReactionCoachmarkActionSheet(onDismiss) {
+  let currentUser;
+  let nitroIcon;
   let analyticsLocations;
   let analyticsLocation;
+  onDismiss = onDismiss.onDismiss;
   const tmp = closure_10();
   _require = tmp;
+  let tmp2 = analyticsLocations;
   analyticsLocations = analyticsLocations(analyticsLocation[15])().analyticsLocations;
   analyticsLocation = { page: AnalyticsPages.PREMIUM_UPSELL_BURST_REACTIONS };
+  let obj2 = require("get initialized");
   items = [UserStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = require("initialize");
-  const tmp2 = analyticsLocations;
+  const stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj3 = require("PremiumUtils");
   [][0] = tmp;
-  let obj3 = require("PremiumUtils");
   let tmp8 = null;
+  const isPremiumResult = obj3.isPremium(stateFromStores);
   if (!isPremiumResult) {
-    const obj4 = { title: null, backdropProps: null, description: null, descriptionStyle: null, dismissibleContent: null, primaryButtonText: null, primaryButtonIcon: null, onPrimaryButtonPress: null, secondaryButtonText: null, onDismiss: null };
+    tmp2(tmp3[23]);
     const intl = tmp4(tmp3[24]).intl;
-    obj4.title = intl.string(tmp4(tmp3[24]).t.Wfl5zp);
-    const obj5 = { backdropOpacity: tmp4(tmp3[25]).BACKDROP_OPACITY, backdropChildren: tmp7 };
-    obj4.backdropProps = obj5;
+    const obj5 = { backdropOpacity: require("burst_reactions/BurstReactionEffectUtils").BACKDROP_OPACITY, backdropChildren: tmp7 };
     const intl2 = tmp4(tmp3[24]).intl;
-    obj4.description = intl2.string(tmp4(tmp3[24]).t.eikz43);
-    obj4.descriptionStyle = tmp.description;
-    obj4.dismissibleContent = dismissibleContent;
     const intl3 = tmp4(tmp3[24]).intl;
-    obj4.primaryButtonText = intl3.string(tmp4(tmp3[24]).t.sEAnVH);
-    obj4.primaryButtonIcon = function primaryButtonIcon() {
-      return jsx(native.NitroWheel, { style: closure_0.nitroIcon });
-    };
-    obj4.onPrimaryButtonPress = function onPrimaryButtonPress() {
+    const intl4 = tmp4(tmp3[24]).intl;
+    tmp8 = <tmp2Result title={intl.string(require("intl").t.Wfl5zp)} backdropProps={obj5} description={intl2.string(require("intl").t.eikz43)} descriptionStyle={tmp.description} dismissibleContent={dismissibleContent} primaryButtonText={intl3.string(require("intl").t.sEAnVH)} primaryButtonIcon={function primaryButtonIcon() {
+      return jsx(native.NitroWheel, { style: nitroIcon.nitroIcon });
+    }} onPrimaryButtonPress={function onPrimaryButtonPress() {
       analyticsLocation = ActionSheetActionCreatorsDefault;
       analyticsLocation.hideActionSheet();
       const obj2 = { analyticsLocation, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
-      openPremiumModalDefault(obj2);
-    };
-    const intl4 = tmp4(tmp3[24]).intl;
-    obj4.secondaryButtonText = intl4.string(tmp4(tmp3[24]).t.TulDPl);
-    obj4.onDismiss = onDismiss.onDismiss;
-    tmp8 = jsx(tmp2(tmp3[23]), { title: null, backdropProps: null, description: null, descriptionStyle: null, dismissibleContent: null, primaryButtonText: null, primaryButtonIcon: null, onPrimaryButtonPress: null, secondaryButtonText: null, onDismiss: null });
-    const tmp2Result = tmp2(tmp3[23]);
+      const tmp2 = openPremiumModalDefault;
+      tmp2(obj2);
+    }} secondaryButtonText={intl4.string(require("intl").t.TulDPl)} onDismiss={onDismiss} />;
   }
   return tmp8;
 };

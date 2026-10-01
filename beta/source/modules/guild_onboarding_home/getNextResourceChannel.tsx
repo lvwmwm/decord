@@ -6,19 +6,20 @@
 
 // Module 11766 (getNextResourceChannel)
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5023 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/getNextResourceChannel.tsx");
 
 export default function getCurrentAndNextResourceChannel(guildId, arg1) {
-  closure_0 = arg1;
+  let items;
+  let closure_0 = arg1;
   const resourceChannels = GuildOnboardingHomeSettingsStore.getResourceChannels(guildId);
   const findIndexResult = resourceChannels.findIndex((channelId) => channelId.channelId === closure_0);
   if (findIndexResult < 0) {
-    let items = [null, null];
+    items = [null, null];
   } else {
     items = [resourceChannels[findIndexResult], resourceChannels[(findIndexResult + 1) % resourceChannels.length]];
   }
@@ -28,13 +29,15 @@ export const usePreviousAndNextResourceChannel = function usePreviousAndNextReso
   _require = guild_id;
   dependencyMap = id;
   const items = [GuildOnboardingHomeSettingsStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => GuildOnboardingHomeSettingsStore.getResourceChannels(closure_0));
-  const findIndexResult = stateFromStores.findIndex((channelId) => channelId.channelId === closure_1);
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => GuildOnboardingHomeSettingsStore.getResourceChannels(guild_id));
+  const findIndexResult = stateFromStores.findIndex((channelId) => channelId.channelId === id);
   if (findIndexResult >= 0) {
+    let items2;
     if (stateFromStores.length > 1) {
       if (2 === stateFromStores.length) {
         const items1 = [null, stateFromStores[1 - findIndexResult]];
-        let items2 = items1;
+        items2 = items1;
       } else {
         items2 = [stateFromStores[(findIndexResult - 1) % stateFromStores.length], stateFromStores[(findIndexResult + 1) % stateFromStores.length]];
       }

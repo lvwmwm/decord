@@ -4,37 +4,45 @@
 // Dependencies: [1993, 7417, 4861, 504, 1115, 11006, 9439, 2]
 
 // Module 14793 (InputModeSetting)
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl3 from "intl" /* 1115 */;
+import Constants from "Constants" /* 4861 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 9439 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const InputModes = fn(4861).InputModes;
-const SettingBuilders = fn(11006);
-const pressable = SettingBuilders.createPressable({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const InputModes = Constants.InputModes;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["pS+K2L"]);
+    const intl = intl3.intl;
+    return intl.string(intl3.t["pS+K2L"]);
   },
-  parent: fn(7417).MobileUserSettings.VOICE,
+  parent: MobileUserSettings.VOICE,
   useTrailing: function useInputModeSettingTrailing() {
+    let mode;
+    let stringResult;
     const items = [MediaEngineStore];
+    const obj = get_initialized;
     if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
       const intl2 = tmp(1115).intl;
-      let stringResult = intl2.string(tmp(1115).t.Q8gkVL);
+      stringResult = intl2.string(tmp(1115).t.Q8gkVL);
     } else {
       const intl = tmp(1115).intl;
       stringResult = intl.string(tmp(1115).t.cHCEOJ);
     }
     return stringResult;
   },
-  onPress: fn(9439).handleInputModePress,
+  onPress: UserSettingsVoiceInputOptions.handleInputModePress,
   useSearchTerms() {
-    const intl = util.intl;
-    const items = [intl.string(util.t.nuFtHH)];
+    const intl = intl3.intl;
+    const items = [intl.string(intl3.t.nuFtHH)];
     return items;
   }
-});
-const size = fn(2);
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/InputModeSetting.tsx");
 
 export default pressable;

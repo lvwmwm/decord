@@ -11,44 +11,41 @@ import LurkingStore from "LurkingStore" /* 4470 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_3, closure_4, dependencyMap;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
 
 export default function useCanDM(arg0, arg1) {
+  let closure_0;
+  let closure_1;
   _require = arg0;
   dependencyMap = arg1;
   const items = [closure_4];
-  closure_2 = require("initialize").useStateFromStores(items, () => AuthenticationStore.getId() === closure_0);
-  const obj = require("initialize");
+  const obj = require("get initialized");
+  let closure_2 = obj.useStateFromStores(items, () => AuthenticationStore.getId() === closure_0);
   const items1 = [closure_3];
-  closure_3 = require("initialize").useStateFromStores(items1, () => {
-    let isLurkingResult = null != closure_1;
-    if (isLurkingResult) {
-      isLurkingResult = LurkingStore.isLurking(tmp);
-    }
+  const obj2 = require("get initialized");
+  closure_3 = obj2.useStateFromStores(items1, () => {
+    const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
     return isLurkingResult;
   });
   const RestrictedGuildIds = require("UserSettings").RestrictedGuildIds;
   closure_4 = RestrictedGuildIds.useSetting();
-  const obj2 = require("initialize");
   const items2 = [RelationshipStore, GuildMemberStore, closure_2];
-  return require("initialize").useStateFromStores(items2, () => {
-    let tmp = !closure_2;
-    if (!closure_2) {
-      tmp = !closure_3;
-    }
+  const obj3 = require("get initialized");
+  return obj3.useStateFromStores(items2, () => {
+    let tmp = !closure_2 && !closure_3;
     if (tmp) {
       let isFriendResult = RelationshipStore.isFriend(closure_0);
+      const tmp4 = closure_0;
       if (!isFriendResult) {
-        isFriendResult = null != GuildMemberStore.memberOf(tmp4).find((item) => !closure_1_4.includes(item));
         const memberOfResult = GuildMemberStore.memberOf(tmp4);
+        isFriendResult = null != memberOfResult.find((item) => !closure_1_4.includes(item));
       }
       tmp = isFriendResult;
-      tmp4 = closure_0;
     }
     if (!tmp) {
       let setting = GameRelationshipStore.getGameFriendsForUser(closure_0).length > 0;
@@ -67,17 +64,15 @@ export const canDm = function canDm(userId, guildId) {
   if (isLurkingResult) {
     isLurkingResult = LurkingStore.isLurking(guildId);
   }
+  const tmp4 = id === userId;
   const RestrictedGuildIds = UserSettings.RestrictedGuildIds;
   const setting2 = RestrictedGuildIds.getSetting();
   let isFriendResult = RelationshipStore.isFriend(userId);
-  let tmp8 = !tmp4;
-  if (id !== userId) {
-    tmp8 = !isLurkingResult;
-  }
+  let tmp8 = !tmp4 && !isLurkingResult;
   if (tmp8) {
     if (!isFriendResult) {
-      isFriendResult = null != GuildMemberStore.memberOf(userId).find((item) => !closure_0.includes(item));
       const memberOfResult = GuildMemberStore.memberOf(userId);
+      isFriendResult = null != memberOfResult.find((item) => !closure_0.includes(item));
     }
     tmp8 = isFriendResult;
   }

@@ -5,29 +5,30 @@
 // Exports: vibegrationsCeilingSupportsFast, vibegrationsNormalizeFast, vibegrationsPickTierModel, vibegrationsTierDescription, vibegrationsTierLabel, vibegrationsTierModel, vibegrationsWithTier
 
 // Module 16245 (VibegrationsEffortTiers)
-import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16246 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let tmp2;
+const intl2 = tmp2(1115);
 let closure_2 = ["thinking"];
 let closure_3 = ["fast"];
 let obj = { simple: _modDef3715.Mo0a1m, balanced: _modDef3715.dkt78K, complex: _modDef3715.Ly6zYL };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsEffortTiers.tsx");
 
 export const vibegrationsTierLabel = function vibegrationsTierLabel(value) {
   let stringResult = value;
-  const modelTierMessageResult = VibegrationsModelLabels.modelTierMessage(value);
+  obj = VibegrationsModelLabels;
+  const modelTierMessageResult = obj.modelTierMessage(value);
   if (null != modelTierMessageResult) {
-    const intl = util.intl;
+    const intl = intl2.intl;
     stringResult = intl.string(modelTierMessageResult);
   }
   return stringResult;
 };
 export const vibegrationsTierDescription = function vibegrationsTierDescription(tier) {
-  const intl = util.intl;
+  const intl = intl2.intl;
   return intl.string(obj[tier]);
 };
 export const vibegrationsTierModel = function vibegrationsTierModel(settings, tiers, tier) {
@@ -54,23 +55,24 @@ export const vibegrationsWithTier = function vibegrationsWithTier(tier, tier2) {
   let tmp = tier;
   if (tier2 !== tier.tier) {
     const thinking = tier.thinking;
-    obj = {};
+    obj = { tier: tier2 };
     const merged = Object.assign(_objectWithoutProperties(tier, closure_2));
-    obj.tier = tier2;
     tmp = obj;
   }
   return tmp;
 };
 export const vibegrationsPickTierModel = function vibegrationsPickTierModel(settings, tier, arg2) {
-  obj = {};
+  let obj2;
+  obj = { models: obj2 };
   const merged = Object.assign(settings);
-  const obj2 = {};
+  obj2 = {};
   const merged1 = Object.assign(settings.models);
   obj2[tier] = arg2;
-  obj.models = obj2;
   return obj;
 };
 export const vibegrationsCeilingSupportsFast = function vibegrationsCeilingSupportsFast(settings, tiers, main) {
+  let models;
+  let tier;
   ({ tier, models } = settings);
   let tmp;
   if (models != null) {
@@ -88,7 +90,7 @@ export const vibegrationsCeilingSupportsFast = function vibegrationsCeilingSuppo
   if (tmp == null) {
     tmp = null;
   }
-  c0 = tmp;
+  let c0 = tmp;
   let tmp5 = null != tmp;
   if (tmp5) {
     const found = main.find((id) => id.id === c0);
@@ -101,9 +103,12 @@ export const vibegrationsCeilingSupportsFast = function vibegrationsCeilingSuppo
   return tmp5;
 };
 export const vibegrationsNormalizeFast = function vibegrationsNormalizeFast(vibegrationsWithTierResult, tiers, main) {
+  let models;
+  let tier;
+  const fast = vibegrationsWithTierResult.fast;
   const tmp = _objectWithoutProperties(vibegrationsWithTierResult, closure_3);
   let tmp2 = tmp;
-  if (true === vibegrationsWithTierResult.fast) {
+  if (true === fast) {
     ({ tier, models } = vibegrationsWithTierResult);
     let tmp3;
     if (models != null) {
@@ -121,7 +126,7 @@ export const vibegrationsNormalizeFast = function vibegrationsNormalizeFast(vibe
     if (tmp3 == null) {
       tmp3 = null;
     }
-    c0 = tmp3;
+    let c0 = tmp3;
     let tmp7 = null != tmp3;
     if (tmp7) {
       const found = main.find((id) => id.id === c0);
@@ -133,9 +138,8 @@ export const vibegrationsNormalizeFast = function vibegrationsNormalizeFast(vibe
     }
     tmp2 = tmp;
     if (tmp7) {
-      obj = {};
+      obj = { fast: true };
       const merged = Object.assign(tmp);
-      obj.fast = true;
       tmp2 = obj;
     }
   }

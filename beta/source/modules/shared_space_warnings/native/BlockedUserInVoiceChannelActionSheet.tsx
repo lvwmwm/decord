@@ -6,160 +6,198 @@
 
 // Module 13284 (BlockedUserInVoiceChannelActionSheet)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
-import noop from "module_19" /* 19 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 13278 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13281 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const setDismissalTimeForUser = fn(13278).setDismissalTimeForUser;
-const SharedSpaceWarningConstants = fn(13281);
-({ BlockWarningEngagements: closure_9, VoiceChannelWarningSurfaces: c10 } = SharedSpaceWarningConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsxProd = fn(21);
-({ Fragment: closure_12, jsxs: map1, jsx: closure_14 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 }, headerImage: { alignSelf: "center", width: 73, height: 86 }, headerText: null, centerText: null, buttonGroup: null };
-let obj3 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
-obj2.headerText = { gap: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_16 };
-obj2.centerText = { textAlign: "center", alignSelf: "center" };
-let obj4 = { gap: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_16 };
-obj2.buttonGroup = { paddingVertical: nativeDefault.space.PX_16, gap: 8 };
-let closure_15 = createStyles.createStyles(obj2);
-const size = fn(2);
+let c10;
+let c3;
+let c9;
+let closure_12;
+let closure_14;
+let closure_4;
+let map1;
+let obj2;
+let obj3;
+let obj4;
+({ Image: c3, View: closure_4 } = react_native);
+const setDismissalTimeForUser = SharedSpacesWarningStore.setDismissalTimeForUser;
+({ BlockWarningEngagements: c9, VoiceChannelWarningSurfaces: c10 } = SharedSpaceWarningConstants);
+const AnalyticEvents = Constants.AnalyticEvents;
+({ Fragment: closure_12, jsxs: map1, jsx: closure_14 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, headerImage: { alignSelf: "center", width: 73, height: 86 }, headerText: obj3, centerText: { textAlign: "center", alignSelf: "center" }, buttonGroup: obj4 };
+obj2 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+obj3 = { gap: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_16 };
+obj4 = { paddingVertical: nativeDefault.space.PX_16, gap: 8 };
+let closure_15 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInVoiceChannelActionSheet.tsx");
 
 export default function BlockedUserInVoiceChannelActionSheet(arg0) {
+  let blockedUserId;
+  let channel_id;
+  let formatToPlainString;
+  let guild_id;
+  let intl4;
+  let intl6;
+  let intl7;
+  let intl8;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let tmp11Result;
+  let tmp9;
+  let username;
+  let w0YvUo;
   ({ channelId: require, blockedUserId } = arg0);
   let stateFromStores;
   const tmp = closure_15();
+  const tmp3 = stateFromStores;
+  let obj = require("get initialized");
   let items = [RelationshipStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => RelationshipStore.isBlocked(blockedUserId));
-  let obj = require("initialize");
+  stateFromStores = obj.useStateFromStores(items, () => RelationshipStore.isBlocked(blockedUserId));
+  let obj2 = require("get initialized");
   let items1 = [ChannelStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => ChannelStore.getChannel(channel_id));
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(require));
   const user = UserStore.getUser(blockedUserId);
   let obj3 = { children: null };
-  const intl = require("util").intl;
+  const intl = require("intl").intl;
   const string = intl.string;
-  const t = require("util").t;
+  const t = require("intl").t;
+  const tmp8 = closure_12;
   if (stateFromStores) {
     let items2 = [string(t.cpgfFk), "\n", ];
     const intl3 = tmp2(tmp3[12]).intl;
-    items2[2] = intl3.string(tmp2(tmp3[12]).t.UKQ4Cn);
+    items2[2] = intl3.string(require("intl").t.UKQ4Cn);
     obj3.children = items2;
-    let tmp9 = obj3;
+    tmp9 = obj3;
   } else {
     const items3 = [string(t.xj3j47), "\n", ];
     const intl2 = tmp2(tmp3[12]).intl;
-    items3[2] = intl2.string(tmp2(tmp3[12]).t.wWueRW);
+    items3[2] = intl2.string(require("intl").t.wWueRW);
     obj3.children = items3;
     tmp9 = obj3;
   }
-  let obj2 = require("initialize");
-  let obj4 = { style: tmp.container, children: null };
-  const tmp7Result = closure_13(closure_12, tmp9);
-  const items4 = [closure_14(closure_3, { source: blockedUserId(stateFromStores[14]), style: tmp.headerImage }), , , ];
-  const obj6 = { style: tmp.headerText, children: null };
-  const obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.centerText, children: null };
-  const intl4 = tmp2(tmp3[12]).intl;
-  obj7.children = intl4.string(require("util").t["1/gpFh"]);
-  const items5 = [closure_14(require("Text/Text").Text, obj7), closure_14(require("Text/Text").Text, { variant: "text-md/medium", style: tmp.centerText, children: tmp7Result })];
-  obj6.children = items5;
+  const obj4 = { style: tmp.container, children: items4 };
+  const obj5 = { source: blockedUserId(tmp3[14]), style: tmp.headerImage };
+  const tmp7Result = closure_13(tmp8, tmp9);
+  const ActionSheet = tmp2(tmp3[13]).ActionSheet;
+  items4 = [closure_14(closure_3, obj5), , , ];
+  const obj6 = { style: tmp.headerText, children: items5 };
+  const obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.centerText, children: intl4.string(require("intl").t["1/gpFh"]) };
+  const Text = tmp2(tmp3[15]).Text;
+  intl4 = tmp2(tmp3[12]).intl;
+  items5 = [closure_14(Text, obj7), ];
+  const obj8 = { variant: "text-md/medium", style: tmp.centerText, children: tmp7Result };
+  items5[1] = closure_14(require("Text/Text").Text, obj8);
   items4[1] = closure_13(closure_4, obj6);
+  const TableRowGroup = tmp2(tmp3[16]).TableRowGroup;
+  const TableRow = tmp2(tmp3[17]).TableRow;
   if (null != user) {
-    const obj9 = { size: tmp2(tmp3[18]).AvatarSizes.SMALL, user, guildId: null };
-    let guild_id;
+    const obj9 = { size: require("native").AvatarSizes.SMALL, user, guildId: guild_id };
+    const Avatar = tmp2(tmp3[18]).Avatar;
+    guild_id = undefined;
     if (stateFromStores1 != null) {
       guild_id = stateFromStores1.guild_id;
     }
-    obj9.guildId = guild_id;
-    let tmp11Result = tmp11(tmp2(tmp3[18]).Avatar, obj9);
+    tmp11Result = tmp11(Avatar, obj9);
   } else {
     tmp11Result = tmp11(tmp2(tmp3[19]).UserIcon, {});
   }
-  const obj10 = { icon: tmp11Result, label: null };
+  const obj10 = { icon: tmp11Result, label: formatToPlainString(w0YvUo, { userName: username }) };
   const intl5 = tmp2(tmp3[12]).intl;
-  let username;
+  formatToPlainString = intl5.formatToPlainString;
+  username = undefined;
+  w0YvUo = tmp2(tmp3[12]).t.w0YvUo;
   if (user != null) {
     username = user.username;
   }
-  const obj11 = { startExpanded: true, children: null };
-  const obj12 = { hasIcons: true, children: null };
-  obj10.label = intl5.formatToPlainString(require("util").t.w0YvUo, { userName: username });
-  const items6 = [closure_14(require("TableRow").TableRow, obj10), ];
-  const obj13 = { icon: closure_14(require("MicrophoneIcon").MicrophoneIcon, {}), label: null };
-  const intl6 = tmp2(tmp3[12]).intl;
-  obj13.label = intl6.string(require("util").t["+4O9nX"]);
-  items6[1] = closure_14(require("TableRow").TableRow, obj13);
-  obj12.children = items6;
-  items4[2] = closure_13(require("TableRowGroup").TableRowGroup, obj12);
-  const obj14 = { style: tmp.buttonGroup, children: null };
+  const obj11 = { startExpanded: true, children: closure_13(closure_4, obj4) };
+  const obj12 = { hasIcons: true, children: items6 };
+  items6 = [closure_14(TableRow, obj10), ];
+  const obj13 = { icon: closure_14(require("MicrophoneIcon").MicrophoneIcon, {}), label: intl6.string(require("intl").t["+4O9nX"]) };
+  const TableRow2 = tmp2(tmp3[17]).TableRow;
+  intl6 = tmp2(tmp3[12]).intl;
+  items6[1] = closure_14(TableRow2, obj13);
+  items4[2] = closure_13(TableRowGroup, obj12);
+  const obj14 = { style: tmp.buttonGroup, children: items7 };
   const obj15 = {
     size: "lg",
     onPress() {
-      ActionSheetActionCreatorsDefault.hideActionSheet();
-      SelectedChannelActionCreatorsDefault.disconnect();
-      const obj4 = { action: constants.CLICK_TO_LEAVE, channel_id, blocked_user_ids: null, ignored_user_ids: null, warning_surface: null };
+      let items1;
+      let items2;
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      const obj2 = SelectedChannelActionCreatorsDefault;
+      obj2.disconnect();
+      const obj3 = { action: constants.CLICK_TO_LEAVE, channel_id: require, blocked_user_ids: items1, ignored_user_ids: items2, warning_surface: constants2.POST_JOIN_SHEET };
+      const track = AnalyticsUtilsDefault.track;
+      const VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT = AnalyticEvents.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT;
+      AnalyticsUtilsDefault;
       if (stateFromStores) {
         const items = [blockedUserId];
-        let items1 = items;
+        items1 = items;
       } else {
         items1 = [];
       }
-      obj4.blocked_user_ids = items1;
       if (stateFromStores) {
-        let items2 = [];
+        items2 = [];
       } else {
         items2 = [blockedUserId];
       }
-      obj4.ignored_user_ids = items2;
-      obj4.warning_surface = constants2.POST_JOIN_SHEET;
-      AnalyticsUtilsDefault.track(AnalyticEvents.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, obj4);
+      track(VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, obj3);
     },
-    text: null
+    text: intl7.string(require("intl").t["Y56/oK"])
   };
-  const intl7 = tmp2(tmp3[12]).intl;
-  obj15.text = intl7.string(require("util").t["Y56/oK"]);
-  const items7 = [closure_14(require("components/Button/Button").Button, obj15), ];
+  const Button = tmp2(tmp3[21]).Button;
+  intl7 = tmp2(tmp3[12]).intl;
+  items7 = [closure_14(Button, obj15), ];
   const obj16 = {
     size: "lg",
     variant: "secondary",
     onPress() {
-      ActionSheetActionCreatorsDefault.hideActionSheet();
+      let items1;
+      let items2;
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
       setDismissalTimeForUser(blockedUserId);
-      const obj3 = { action: constants.CLICK_TO_STAY, channel_id, blocked_user_ids: null, ignored_user_ids: null, warning_surface: null };
+      const obj2 = { action: constants.CLICK_TO_STAY, channel_id: require, blocked_user_ids: items1, ignored_user_ids: items2, warning_surface: constants2.POST_JOIN_SHEET };
+      const track = AnalyticsUtilsDefault.track;
+      const VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT = AnalyticEvents.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT;
+      AnalyticsUtilsDefault;
       if (stateFromStores) {
-        const items = [tmp2];
-        let items1 = items;
+        const items = [blockedUserId];
+        items1 = items;
       } else {
         items1 = [];
       }
-      obj3.blocked_user_ids = items1;
       if (stateFromStores) {
-        let items2 = [];
+        items2 = [];
       } else {
-        items2 = [tmp2];
+        items2 = [blockedUserId];
       }
-      obj3.ignored_user_ids = items2;
-      obj3.warning_surface = constants2.POST_JOIN_SHEET;
-      AnalyticsUtilsDefault.track(AnalyticEvents.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, obj3);
+      track(VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, obj2);
     },
-    text: null
+    text: intl8.string(require("intl").t.bCcJST)
   };
-  const intl8 = tmp2(tmp3[12]).intl;
-  obj16.text = intl8.string(require("util").t.bCcJST);
-  items7[1] = closure_14(require("components/Button/Button").Button, obj16);
-  obj14.children = items7;
+  const Button2 = tmp2(tmp3[21]).Button;
+  intl8 = tmp2(tmp3[12]).intl;
+  items7[1] = closure_14(Button2, obj16);
   items4[3] = closure_13(closure_4, obj14);
-  obj4.children = items4;
-  obj11.children = closure_13(closure_4, obj4);
-  return closure_14(require("ActionSheet").ActionSheet, obj11);
+  return closure_14(ActionSheet, obj11);
 };

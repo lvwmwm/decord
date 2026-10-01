@@ -4,27 +4,29 @@
 // Dependencies: [19, 4825, 9555, 21, 4836, 9566, 504, 1177, 1115, 5083, 9597, 7095, 4541, 5039, 4847, 9598, 1981, 9630, 9634, 2]
 
 // Module 9565 (MessageNotification)
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
 import transitionToChannel from "transitionToChannel" /* 4847 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import MessageParserDefault from "MessageParser" /* 7095 */;
 import MessagePreviewTextDefault from "MessagePreviewText" /* 9566 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 9555 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const InAppNotificationConstants = fn(9555);
+let hasOwnProperty;
+let metroRequire;
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: hasOwnProperty, NOTIFICATION_PREVIEW_LINE_CLAMP: metroRequire } = InAppNotificationConstants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ newContainerRoleDot: { paddingRight: 4, paddingTop: 0 } });
-let closure_9 = noop.memo((message) => jsx(MessagePreviewTextDefault, { message: message.message, lineClamp, maxHeight }));
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/in_app_notifications/native/MessageNotification.tsx");
-
-export default noop.memo(function MessageNotification(notification) {
+let closure_9 = react.memo((message) => jsx(MessagePreviewTextDefault, { message: message.message, lineClamp: metroRequire, maxHeight: hasOwnProperty }));
+const memoResult = react.memo(function MessageNotification(notification) {
+  let colorStrings;
+  let id;
   notification = notification.notification;
   let nullableMessageAuthor;
   let handleDismissNotification;
@@ -33,6 +35,7 @@ export default noop.memo(function MessageNotification(notification) {
   const parentChannel = notification.parentChannel;
   const guild = notification.guild;
   let tmp2 = 0 === message.content.length;
+  const tmp = closure_8();
   if (tmp2) {
     tmp2 = null !== message.interaction;
   }
@@ -47,71 +50,80 @@ export default noop.memo(function MessageNotification(notification) {
   }
   if (tmp2) {
     let intl = message(parentChannel[8]).intl;
+    let formatToPlainString = intl.formatToPlainString;
+    const v7eikg1 = message(parentChannel[8]).t["7eikg1"];
     const interaction = message.interaction;
     let user;
+    const getUserAuthor = message(parentChannel[9]).getUserAuthor;
+    message(parentChannel[9]);
     if (interaction != null) {
       user = interaction.user;
     }
-    let obj2 = { username: message(parentChannel[9]).getUserAuthor(user, channel).nick };
-    message.content = intl.formatToPlainString(message(parentChannel[8]).t["7eikg1"], obj2);
-    let obj = message(parentChannel[9]);
+    let obj = { username: getUserAuthor(user, channel).nick };
+    message.content = formatToPlainString(v7eikg1, obj);
   }
-  const tmp = closure_8();
-  nullableMessageAuthor = message(parentChannel[9]).useNullableMessageAuthor(message);
-  const obj3 = message(parentChannel[9]);
+  let obj2 = message(parentChannel[9]);
+  nullableMessageAuthor = obj2.useNullableMessageAuthor(message);
+  const newContainerRoleDot = tmp.newContainerRoleDot;
   const items = [nullableMessageAuthor];
   let colorString;
-  const stateFromStores = message(parentChannel[6]).useStateFromStores(items, () => nullableMessageAuthor.roleStyle);
+  const obj3 = message(parentChannel[6]);
+  const stateFromStores = obj3.useStateFromStores(items, () => nullableMessageAuthor.roleStyle);
   if (nullableMessageAuthor != null) {
     colorString = nullableMessageAuthor.colorString;
   }
-  let tmp15Result;
+  let tmp17Result;
   if ("dot" === stateFromStores) {
     if (undefined !== colorString) {
-      const obj5 = { color: colorString, colors: null, containerStyles: null };
-      let colorStrings;
+      const obj4 = { color: colorString, colors: colorStrings, containerStyles: newContainerRoleDot };
+      colorStrings = undefined;
+      const RoleDot = tmp11(tmp12[7]).RoleDot;
+      const tmp17 = jsx;
       if (nullableMessageAuthor != null) {
         colorStrings = nullableMessageAuthor.colorStrings;
       }
-      obj5.colors = colorStrings;
-      obj5.containerStyles = tmp.newContainerRoleDot;
-      tmp15Result = jsx(tmp9(tmp10[7]).RoleDot, { color: colorString, colors: null, containerStyles: null });
+      tmp17Result = tmp17(RoleDot, obj4);
     }
   }
-  const obj4 = message(parentChannel[6]);
-  handleDismissNotification = message(parentChannel[10]).useInAppNotificationContext().handleDismissNotification;
+  const tmp11Result = message(parentChannel[10]);
+  handleDismissNotification = tmp11Result.useInAppNotificationContext().handleDismissNotification;
   const items1 = [nullableMessageAuthor.nick, channel.id, message.content];
   const effect = guild.useEffect(() => {
-    const intl = util.intl;
-    const obj = { userName: nullableMessageAuthor.nick, message: MessageParserDefault.unparse(message.content, channel.id, true) };
+    let obj2;
+    const intl = intl2.intl;
+    const formatToPlainString = intl.formatToPlainString;
+    const obj = { userName: nullableMessageAuthor.nick, message: obj2.unparse(message.content, channel.id, true) };
+    const Hjp1LH = intl2.t.Hjp1LH;
+    obj2 = MessageParserDefault;
+    const formatToPlainStringResult = formatToPlainString(Hjp1LH, obj);
     const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-    AccessibilityAnnouncer.announce(intl.formatToPlainString(util.t.Hjp1LH, obj));
+    AccessibilityAnnouncer.announce(formatToPlainStringResult);
   }, items1);
   const items2 = [channel.id, message.id];
   const items3 = [channel.id];
   const callback = guild.useCallback(() => {
-    ModalActionCreatorsDefault.popAll();
-    transitionToChannel.transitionToMessage(channel.id, message.id, { navigationReplace: true });
+    const obj = ModalActionCreatorsDefault;
+    obj.popAll();
+    const obj2 = transitionToChannel;
+    obj2.transitionToMessage(channel.id, message.id, { navigationReplace: true });
   }, items2);
   const items4 = [channel, parentChannel, guild, nullableMessageAuthor, handleDismissNotification];
-  const callback1 = guild.useCallback(() => ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(9598, dependencyMap.paths), { channelId: channel.id }, "in-app-notification-settings-modal"), items3);
+  const callback1 = guild.useCallback(() => {
+    const obj = ModalActionCreatorsDefault;
+    const obj2 = { channelId: channel.id };
+    return obj.pushLazy(asyncRequire(9598, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
+  }, items3);
   const memo = guild.useMemo(() => ({ type: "message", channel, parentChannel, guild, author: nullableMessageAuthor, onDismiss: handleDismissNotification }), items4);
-  const obj6 = { user: message.author, guildId: null, size: null };
+  const NotificationPressable = tmp11(tmp12[17]).NotificationPressable;
+  ({ user: message.author, guildId: id, size: message(parentChannel[7]).AvatarSizes.NORMAL });
   const guild2 = notification.guild;
-  let id;
+  id = undefined;
+  const Avatar = tmp11(tmp12[7]).Avatar;
   if (guild2 != null) {
     id = guild2.id;
   }
-  const obj7 = { icon: null, accessoryLabelNode: null, rightAccessory: null, children: null, header: null, notification: null, onPress: null, onSettingsPress: null };
-  obj6.guildId = id;
-  obj6.size = message(parentChannel[7]).AvatarSizes.NORMAL;
-  obj7.icon = jsx(message(parentChannel[7]).Avatar, { user: message.author, guildId: null, size: null });
-  obj7.accessoryLabelNode = tmp15Result;
-  obj7.rightAccessory = jsx(message(parentChannel[18]).MediaPreviewRightAccessory, { message });
-  obj7.children = <closure_9 message={message} />;
-  obj7.header = memo;
-  obj7.notification = notification;
-  obj7.onPress = callback;
-  obj7.onSettingsPress = callback1;
-  return jsx(message(parentChannel[17]).NotificationPressable, { icon: null, accessoryLabelNode: null, rightAccessory: null, children: null, header: null, notification: null, onPress: null, onSettingsPress: null });
+  return <NotificationPressable icon={null} accessoryLabelNode={tmp17Result} rightAccessory={null} header={memo} notification={notification} onPress={callback} onSettingsPress={callback1}>{null}</NotificationPressable>;
 });
+const result = size.fileFinishedImporting("modules/in_app_notifications/native/MessageNotification.tsx");
+
+export default memoResult;

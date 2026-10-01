@@ -18,7 +18,8 @@ export default function serialize(arg0) {
   if (arg1 === undefined) {
     flag = false;
   }
-  closure_2 = [];
+  const length = [];
+  let closure_2 = [];
   return JSON.stringify(arg0, function(arg0, nativeEvent) {
     if (true === nativeEvent) {
       return true;
@@ -39,7 +40,7 @@ export default function serialize(arg0) {
     } else if ("" === nativeEvent) {
       return "~~~ empty string ~~~";
     } else {
-      if (flag) {
+      if (false) {
         if (typeof nativeEvent === "object") {
           if (nativeEvent.nativeEvent) {
             return nativeEvent.nativeEvent;
@@ -47,10 +48,10 @@ export default function serialize(arg0) {
         }
       }
       if ("string" !== typeof nativeEvent) {
-        if ("number" !== tmp) {
-          if ("bigint" === tmp) {
+        if ("number" !== typeof nativeEvent) {
+          if ("bigint" === typeof nativeEvent) {
             return nativeEvent.toString();
-          } else if ("function" === tmp) {
+          } else if ("function" === typeof nativeEvent) {
             const name = nativeEvent.name;
             let str4 = "~~~ anonymous function ~~~";
             if (null != name) {
@@ -62,12 +63,13 @@ export default function serialize(arg0) {
             }
             return str4;
           } else {
+            let str2;
             const _Symbol = Symbol;
             if (nativeEvent[Symbol.iterator]) {
               const _Array = Array;
               if (!Array.isArray(nativeEvent)) {
                 const items = [];
-                HermesBuiltin.arraySpread(nativeEvent, 0);
+                HermesBuiltin.arraySpread(items, nativeEvent, 0);
                 return items;
               }
             }
@@ -75,21 +77,21 @@ export default function serialize(arg0) {
               const self = this;
               const index = arr2.indexOf(this);
               if (~index) {
-                arr2.splice(index + 1);
+                length.splice(index + 1);
               } else {
-                arr2.push(self);
+                length.push(self);
               }
               if (~index) {
-                arr3.splice(index, Infinity, arg0);
+                closure_2.splice(index, Infinity, arg0);
               } else {
-                arr3.push(arg0);
+                closure_2.push(arg0);
               }
-              let str2 = nativeEvent;
-              if (~arr2.indexOf(nativeEvent)) {
+              str2 = nativeEvent;
+              if (~length.indexOf(nativeEvent)) {
                 str2 = "~~~ Circular Reference ~~~";
               }
             } else {
-              arr2.push(nativeEvent);
+              length.push(nativeEvent);
               str2 = nativeEvent;
             }
             return str2;

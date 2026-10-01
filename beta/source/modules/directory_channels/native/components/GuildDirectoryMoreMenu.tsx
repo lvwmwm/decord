@@ -5,100 +5,112 @@
 // Exports: default
 
 // Module 11796 (GuildDirectoryMoreMenu)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl5 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
 import ReportModals from "ReportModals" /* 8089 */;
 import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 11790 */;
 import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 11797 */;
 import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 11799 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryMoreMenu.tsx");
 
 export default function GuildDirectoryMoreMenu(entry) {
+  let canRemove;
+  let intl;
+  let intl2;
+  let intl3;
+  let isEntryAdmin;
   entry = entry.entry;
   const tmp2 = useCanManageGuildDirectoryEntryDefault(entry);
   const items = [];
   ({ isEntryAdmin, canRemove } = tmp2);
   if (tmp2.canEdit) {
-    let obj = { label: null, IconComponent: null, action: null };
-    let intl = entry(1115).intl;
-    obj.label = intl.string(entry(1115).t.XnuOvN);
-    obj.IconComponent = entry(9713).PencilIcon;
-    obj.action = function handleEdit() {
-      GuildDirectoryEditDescriptionModalActionCreatorsDefault.open({ entry });
+    let obj = {
+      label: intl.string(entry(1115).t.XnuOvN),
+      IconComponent: entry(9713).PencilIcon,
+      action: function handleEdit() {
+          const obj = GuildDirectoryEditDescriptionModalActionCreatorsDefault;
+          const obj2 = { entry };
+          obj.open(obj2);
+        }
     };
-    items.push(obj);
+    const push = items.push;
+    intl = entry(1115).intl;
+    push(obj);
   }
   if (canRemove) {
-    let obj2 = { label: null, IconComponent: null, variant: "destructive", action: null };
-    let intl2 = entry(1115).intl;
-    obj2.label = intl2.string(entry(1115).t.KUxYWH);
-    obj2.IconComponent = entry(4790).TrashIcon;
-    obj2.action = function handleRemove() {
-      const obj2 = { title: null, body: null, onConfirm: null, confirmColor: null, confirmText: null, cancelText: null, onCancel: null, isDismissable: false };
-      const intl = util.intl;
-      obj2.title = intl.string(util.t.KUxYWH);
-      const intl2 = util.intl;
-      obj2.body = intl2.formatToPlainString(util.t["/5y0uV"], { guildName: entry.name });
-      obj2.onConfirm = function onConfirm() {
-        const result = GuildDirectoryActionCreatorsAll.removeDirectoryGuildEntry(entry.channelId, entry.guildId);
-      };
-      obj2.confirmColor = native.ButtonColors.RED;
-      const intl3 = util.intl;
-      obj2.confirmText = intl3.string(util.t.N86XcP);
-      const intl4 = util.intl;
-      obj2.cancelText = intl4.string(util.t["ETE/oC"]);
-      obj2.onCancel = function onCancel() {
-        closure_1_1(dependencyMap[4]).close();
-      };
-      actions_AlertActionCreatorsDefault.show(obj2);
+    let obj2 = {
+      label: intl2.string(entry(1115).t.KUxYWH),
+      IconComponent: entry(4790).TrashIcon,
+      variant: "destructive",
+      action: function handleRemove() {
+          let intl;
+          let intl2;
+          let intl3;
+          let intl4;
+          let obj2;
+          let obj = {
+            title: intl.string(intl5.t.KUxYWH),
+            body: intl2.formatToPlainString(intl5.t["/5y0uV"], obj2),
+            onConfirm() {
+              const obj = GuildDirectoryActionCreatorsAll;
+              const result = obj.removeDirectoryGuildEntry(entry.channelId, entry.guildId);
+            },
+            confirmColor: native.ButtonColors.RED,
+            confirmText: intl3.string(intl5.t.N86XcP),
+            cancelText: intl4.string(intl5.t["ETE/oC"]),
+            onCancel() {
+              const obj = closure_1_1(closure_1_3[4]);
+              obj.close();
+            },
+            isDismissable: false
+          };
+          const show = actions_AlertActionCreatorsDefault.show;
+          actions_AlertActionCreatorsDefault;
+          intl = intl5.intl;
+          intl2 = intl5.intl;
+          obj2 = { guildName: entry.name };
+          intl3 = intl5.intl;
+          intl4 = intl5.intl;
+          show(obj);
+        }
     };
-    items.push(obj2);
+    const push2 = items.push;
+    intl2 = entry(1115).intl;
+    push2(obj2);
   }
   if (!isEntryAdmin) {
-    const obj3 = { label: null, IconComponent: null, variant: "destructive", action: null };
-    let intl3 = entry(1115).intl;
-    obj3.label = intl3.string(entry(1115).t.Aen9eh);
-    obj3.IconComponent = entry(8124).FlagIcon;
-    obj3.action = function handleReport() {
-      const result = ReportModals.showReportModalForGuildDirectoryEntry(entry);
+    const push3 = items.push;
+    const obj3 = {
+      label: intl3.string(entry(1115).t.Aen9eh),
+      IconComponent: entry(8124).FlagIcon,
+      variant: "destructive",
+      action: function handleReport() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
     };
-    items.push(obj3);
+    intl3 = entry(1115).intl;
+    push3(obj3);
   }
   let tmp9 = null;
   if (0 !== items.length) {
-    const obj4 = {
-      items,
-      children(ref) {
-          const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-          const obj = { ref: ref.ref };
-          const merged1 = Object.assign(merged);
-          obj.size = "sm";
-          obj.variant = "secondary";
-          const intl = entry(1115).intl;
-          obj.accessibilityLabel = intl.string(entry(1115).t.PdRCRg);
-          obj.icon = jsx(entry(7365).MoreHorizontalIcon, { size: "sm", color: nativeDefault.colors.WHITE });
-          return jsx(entry(7363).IconButton, { ref: ref.ref });
-        }
-    };
     tmp9 = jsx(entry(7358).ContextMenu, {
       items,
       children(ref) {
+          ref = ref.ref;
           const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-          const obj = { ref: ref.ref };
+          const IconButton = entry(dependencyMap[13]).IconButton;
           const merged1 = Object.assign(merged);
-          obj.size = "sm";
-          obj.variant = "secondary";
-          const intl = entry(1115).intl;
-          obj.accessibilityLabel = intl.string(entry(1115).t.PdRCRg);
-          obj.icon = jsx(entry(7365).MoreHorizontalIcon, { size: "sm", color: nativeDefault.colors.WHITE });
-          return jsx(entry(7363).IconButton, { ref: ref.ref });
+          const intl = entry(dependencyMap[5]).intl;
+          const MoreHorizontalIcon = entry(dependencyMap[14]).MoreHorizontalIcon;
+          return <IconButton ref={ref} size="sm" variant="secondary" accessibilityLabel={intl.string(entry(dependencyMap[5]).t.PdRCRg)} icon={<MoreHorizontalIcon size="sm" color={nativeDefault.colors.WHITE} />} />;
         }
     });
   }

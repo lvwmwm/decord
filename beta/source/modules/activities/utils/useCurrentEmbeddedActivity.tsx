@@ -5,14 +5,15 @@
 // Exports: default
 
 // Module 8913 (useCurrentEmbeddedActivity)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedActivity.tsx");
 
 export default function useCurrentEmbeddedActivity() {
+  let currentEmbeddedActivity;
   const items = [EmbeddedActivitiesStore];
-  return initialize.useStateFromStores(items, () => currentEmbeddedActivity.getCurrentEmbeddedActivity());
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => currentEmbeddedActivity.getCurrentEmbeddedActivity());
 };

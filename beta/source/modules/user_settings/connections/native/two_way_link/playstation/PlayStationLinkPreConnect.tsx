@@ -5,34 +5,40 @@
 // Exports: PlayStationLinkPreConnect
 
 // Module 8565 (PlayStationLinkPreConnect)
+import Fragment from "Fragment" /* 21 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 8562 */;
 import _modDef8566 from "module_8566" /* 8566 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_4 = fn(8562).PlayStationLinkModalScenes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let navigation;
+
+let closure_4 = PlayStationLinkConstants.PlayStationLinkModalScenes;
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ image: { width: 231, height: 160 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkPreConnect.tsx");
 
 export const PlayStationLinkPreConnect = function PlayStationLinkPreConnect(platformType) {
-  let navigation;
+  navigation = undefined;
+  platformType = platformType.platformType;
   const tmp = closure_6();
-  navigation = navigation(1485).useNavigation();
+  let obj = navigation(1485);
+  navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
-  const callback = noop.useCallback((arg0) => {
+  const callback = react.useCallback((arg0) => {
     navigation.push(constants.DISCORD_CONSENT, arg0);
   }, items);
-  const callback1 = noop.useCallback(() => {
+  const callback1 = react.useCallback(() => {
     navigation.push(constants.ERROR, {});
   }, items1);
-  const memo = noop.useMemo(() => ({ uri: _modDef8566 }), []);
-  const obj2 = { platformType: platformType.platformType, onError: callback1, onNext: callback, img: memo, imgStyle: tmp.image, title: null, body: null };
+  const memo = react.useMemo(() => {
+    const obj = { uri: _modDef8566 };
+    return obj;
+  }, []);
+  const TwoWayLinkPreConnect = navigation(8542).TwoWayLinkPreConnect;
   const intl = navigation(1115).intl;
-  obj2.title = intl.string(navigation(1115).t["6n+UPR"]);
   const intl2 = navigation(1115).intl;
-  obj2.body = intl2.string(navigation(1115).t.JaaqIf);
-  return jsx(navigation(8542).TwoWayLinkPreConnect, { platformType: platformType.platformType, onError: callback1, onNext: callback, img: memo, imgStyle: tmp.image, title: null, body: null });
+  return <TwoWayLinkPreConnect platformType={platformType} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1115).t["6n+UPR"])} body={intl2.string(navigation(1115).t.JaaqIf)} />;
 };

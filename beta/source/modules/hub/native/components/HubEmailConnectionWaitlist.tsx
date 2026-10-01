@@ -6,53 +6,70 @@
 
 // Module 12250 (HubEmailConnectionWaitlist)
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { flex: 1, alignItems: "center", justifyContent: "center" }, header: { marginBottom: 16 }, title: { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 16 }, redesignButton: { paddingHorizontal: 16, width: "100%" } };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let navigation;
+
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+({ View: closure_4, Image: hasOwnProperty } = react_native);
+const Fonts = Constants.Fonts;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let obj = { container: { flex: 1, alignItems: "center", justifyContent: "center" }, header: { marginBottom: 16 }, title: obj2, description: { textAlign: "center", marginBottom: 16 }, redesignButton: { paddingHorizontal: 16, width: "100%" } };
+obj2 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 };
+let closure_8 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionWaitlist.tsx");
 
-export default function HubEmailConnectionWaitlist(school) {
-  const onClose = school.onClose;
+export default function HubEmailConnectionWaitlist(onClose) {
+  let Button;
+  let intl;
+  let intl2;
+  let intl3;
+  let items1;
+  let obj7;
+  onClose = onClose.onClose;
+  const school = onClose.school;
   const tmp = closure_8();
-  const navigation = onClose(1485).useNavigation();
-  const items = [navigation, onClose];
-  const layoutEffect = noop.useLayoutEffect(() => {
-    navigation.setOptions({
-      headerLeft() {
-        const obj = { text: null, onPress: null };
-        const intl = onClose(1115).intl;
-        obj.text = intl.string(onClose(1115).t.cpT0Cq);
-        obj.onPress = onPress;
-        return closure_2_6(onClose(6795).HeaderActionButton, obj);
-      }
-    });
-  }, items);
-  const obj2 = { style: tmp.container, children: null };
   let obj = onClose(1485);
-  const items1 = [closure_6(closure_5, { source: navigation(12251), style: tmp.header }), , , ];
-  const obj4 = { style: tmp.title, accessibilityRole: "header", children: null };
-  let intl = onClose(1115).intl;
-  obj4.children = intl.string(onClose(1115).t.OaloU5);
-  items1[1] = closure_6(onClose(1177).LegacyText, obj4);
-  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = onClose(1115).intl;
-  obj5.children = intl2.format(onClose(1115).t.Rs7MXJ, { school: school.school });
-  items1[2] = closure_6(onClose(4832).Text, obj5);
-  const obj6 = { style: tmp.redesignButton, children: null };
-  const obj7 = { size: "lg", text: null, onPress: null };
-  const intl3 = onClose(1115).intl;
-  obj7.text = intl3.string(onClose(1115).t.i4jeWR);
-  obj7.onPress = onClose;
-  obj6.children = closure_6(onClose(5281).Button, obj7);
+  navigation = obj.useNavigation();
+  const items = [navigation, onClose];
+  const layoutEffect = react.useLayoutEffect(() => {
+    let onPress;
+    let obj = {
+      headerLeft() {
+        let intl;
+        const obj = { text: intl.string(onClose(dependencyMap[8]).t.cpT0Cq), onPress };
+        const HeaderActionButton = onClose(dependencyMap[7]).HeaderActionButton;
+        intl = onClose(dependencyMap[8]).intl;
+        return closure_2_6(HeaderActionButton, obj);
+      }
+    };
+    navigation.setOptions(obj);
+  }, items);
+  const obj2 = { style: tmp.container, children: items1 };
+  items1 = [, , , ];
+  const obj3 = { source: navigation(12251), style: tmp.header };
+  items1[0] = closure_6(closure_5, obj3);
+  const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1115).t.OaloU5) };
+  const LegacyText = onClose(1177).LegacyText;
+  intl = onClose(1115).intl;
+  items1[1] = closure_6(LegacyText, obj4);
+  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.format(onClose(1115).t.Rs7MXJ, { school }) };
+  const Text = onClose(4832).Text;
+  intl2 = onClose(1115).intl;
+  items1[2] = closure_6(Text, obj5);
+  const obj6 = { style: tmp.redesignButton, children: closure_6(Button, obj7) };
+  obj7 = { size: "lg", text: intl3.string(onClose(1115).t.i4jeWR), onPress: onClose };
+  Button = onClose(5281).Button;
+  intl3 = onClose(1115).intl;
   items1[3] = closure_6(closure_4, obj6);
-  obj2.children = items1;
   return closure_7(closure_4, obj2);
 };

@@ -7,8 +7,6 @@
 import _mod5498 from "module_5498" /* 5498 */;
 import _mod5499 from "module_5499" /* 5499 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const isAAC = function isAAC(fileChunk, excludeSimilarTypes) {
   fileChunk = _mod5498.getFileChunk(fileChunk);
@@ -20,7 +18,7 @@ export const isAAC = function isAAC(fileChunk, excludeSimilarTypes) {
       excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
     }
     let checkByFileTypeResult = !excludeSimilarTypes;
-    if (!excludeSimilarTypes) {
+    if (checkByFileTypeResult) {
       const fileChunk1 = tmp(5498).getFileChunk(fileChunk);
       const FileTypes2 = tmp(5499).FileTypes;
       checkByFileTypeResult = FileTypes2.checkByFileType(fileChunk1, "m4a");

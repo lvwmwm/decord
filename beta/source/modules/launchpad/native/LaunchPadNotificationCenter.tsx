@@ -4,16 +4,17 @@
 // Dependencies: [19, 21, 4836, 16038, 2]
 
 // Module 16820 (LaunchPadNotificationCenter)
-import notifications_NotificationsDefault from "notifications/Notifications" /* 16038 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import NotificationsDefault from "Notifications" /* 16038 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ wrapper: { height: "100%" } });
-const size = fn(2);
+const memoResult = react.memo(function NotificationsContent() {
+  return jsx(NotificationsDefault, { style: closure_3().wrapper, nestedInLaunchPad: true });
+});
 const result = size.fileFinishedImporting("modules/launchpad/native/LaunchPadNotificationCenter.tsx");
 
-export default noop.memo(function NotificationsContent() {
-  const tmp = closure_3();
-  return jsx(notifications_NotificationsDefault, { style: closure_3().wrapper, nestedInLaunchPad: true });
-});
+export default memoResult;

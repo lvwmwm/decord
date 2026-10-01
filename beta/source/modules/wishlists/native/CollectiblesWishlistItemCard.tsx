@@ -5,14 +5,16 @@
 // Exports: default
 
 // Module 10500 (CollectiblesWishlistItemCard)
+import Fragment from "Fragment" /* 21 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 6966 */;
 import SKUPreview from "SKUPreview" /* 8234 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import SentGiftsStore from "SentGiftsStore" /* 10501 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-let closure_4 = fn(6966).transformSKUToCollectiblesItem;
-const jsx = fn(21).jsx;
-let size = fn(2);
+let closure_4 = CollectiblesItemRecord.transformSKUToCollectiblesItem;
+const jsx = Fragment.jsx;
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/wishlists/native/CollectiblesWishlistItemCard.tsx");
 
 export default function CollectiblesWishlistItemCard(sku) {
@@ -22,40 +24,39 @@ export default function CollectiblesWishlistItemCard(sku) {
     flag = false;
   }
   const wishlistOwnerId = sku.wishlistOwnerId;
-  const size = sku.size;
+  size = sku.size;
+  const source = sku.source;
   const merged = Object.assign(sku, Object.assign({ sku: 0, isOwned: 0, source: 0, wishlistOwnerId: 0, size: 0 }));
   let memo;
+  let tmp2 = sku;
   const items = [SentGiftsStore];
   const items1 = [sku.id, wishlistOwnerId];
-  const stateFromStores = sku(size[4]).useStateFromStores(items, () => {
-    let hasSentGiftResult = null != wishlistOwnerId;
-    if (hasSentGiftResult) {
-      hasSentGiftResult = SentGiftsStore.hasSentGift(sku.id, tmp);
-    }
+  const obj = sku(size[4]);
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const hasSentGiftResult = null != wishlistOwnerId && SentGiftsStore.hasSentGift(sku.id, tmp);
     return hasSentGiftResult;
   }, items1);
-  let obj = sku(size[4]);
-  let tmp2 = sku;
-  const tmp3 = size;
   const items2 = [sku];
-  const productNameAndTypeFromSku = sku(size[5]).getProductNameAndTypeFromSku(sku);
+  const obj2 = sku(size[5]);
+  const productNameAndTypeFromSku = obj2.getProductNameAndTypeFromSku(sku);
   memo = memo.useMemo(() => closure_4(sku), items2);
   const items3 = [memo, size];
   const callback = memo.useCallback(() => {
     let tmp2 = null;
     if (null != memo) {
-      const obj = { collectiblesItemData: tmp, size };
       tmp2 = jsx(SKUPreview.CollectiblesPreview, { collectiblesItemData: tmp, size });
     }
     return tmp2;
   }, items3);
-  const obj3 = { accessibilityLabel: productNameAndTypeFromSku, renderPreview: callback, source: sku.source, size };
-  const obj2 = sku(size[5]);
-  const tmp8 = jsx;
+  const obj3 = { accessibilityLabel: productNameAndTypeFromSku, renderPreview: callback, source, size };
+  const tmp9 = wishlistOwnerId(size[7]);
   const merged1 = Object.assign(merged);
+  const tmp3 = size;
+  const tmp8 = jsx;
   if (!flag) {
+    let OWNED;
     if (!stateFromStores) {
-      let OWNED = merged.overlay;
+      OWNED = merged.overlay;
     }
     obj3.overlay = OWNED;
     return tmp8(tmp9, obj3);

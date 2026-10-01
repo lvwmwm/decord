@@ -5,20 +5,23 @@
 // Exports: default
 
 // Module 11862 (useIsHubForGuild)
+import Constants from "Constants" /* 1074 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
+const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/hub/useIsHubForGuild.tsx");
 
 export default function useIsHubForGuild(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [GuildStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     if (null == closure_0) {
       return false;
     } else {

@@ -5,71 +5,81 @@
 // Exports: default
 
 // Module 9677 (AlertNotification)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import transitionToChannel from "transitionToChannel" /* 4847 */;
-import noop from "module_19" /* 19 */;
+import GuildIcon from "GuildIcon" /* 5896 */;
+import ClipView from "ClipView" /* 8276 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-let size = { shape: fn(8276).CutoutShape.RoundedRect, x: fn(5896).ImageSizes[fn(undefined, 5896).GuildIconSizes.NORMAL] - -6 - 24, y: -6, width: 24, height: 24, cornerRadius: nativeDefault.radii.sm };
-const createStyles = fn(4836);
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let tmp3;
+const View = react_native.View;
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
+let size = { shape: ClipView.CutoutShape.RoundedRect, x: tmp3 - -6 - 24, y: -6, width: 24, height: 24, cornerRadius: nativeDefault.radii.sm };
+tmp3 = GuildIcon.ImageSizes[GuildIcon.GuildIconSizes.NORMAL];
 let closure_9 = createStyles.createStyles({ warningBadge: { position: "absolute", top: -6, right: -6, width: 24, height: 24, alignItems: "center", justifyContent: "center" }, warningIcon: { width: 16, height: 16 } });
-size = fn(2);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/AlertNotification.tsx");
 
 export default function AlertNotification(notification) {
+  let WarningIcon;
+  let items2;
+  let items3;
+  let obj3;
+  let obj6;
+  let stringResult;
   notification = notification.notification;
   const channel = notification.channel;
   const guild = notification.guild;
+  const key = notification.key;
   const tmp = closure_9();
-  const incidentData = channel(9557).useGuildIncidentsState(notification.key).incidentData;
+  let obj = channel(9557);
+  const incidentData = obj.useGuildIncidentsState(key).incidentData;
   let raidDetectedAt;
   if (incidentData != null) {
     raidDetectedAt = incidentData.raidDetectedAt;
   }
   if (null != raidDetectedAt) {
     const intl2 = tmp2(1115).intl;
-    let stringResult = intl2.string(tmp2(1115).t.Mn3elp);
+    stringResult = intl2.string(tmp2(1115).t.Mn3elp);
   } else {
     let intl = tmp2(1115).intl;
     stringResult = intl.string(tmp2(1115).t.evRhwg);
   }
   const items = [guild];
   const items1 = [channel.id];
-  const memo = noop.useMemo(() => {
-    const obj = { type: "simple", text: null, secondaryText: null };
-    const intl = util.intl;
-    obj.text = intl.string(util.t["2IY4YN"]);
+  const memo = react.useMemo(() => {
+    let intl;
     let name;
+    const obj = { type: "simple", text: intl.string(intl3.t["2IY4YN"]), secondaryText: name };
+    intl = intl3.intl;
+    name = undefined;
     if (guild != null) {
       name = guild.name;
     }
-    obj.secondaryText = name;
     return obj;
   }, items);
-  const callback = noop.useCallback(() => {
-    transitionToChannel.transitionToChannel(channel.id, { navigationReplace: true });
+  const callback = react.useCallback(() => {
+    const obj = transitionToChannel;
+    obj.transitionToChannel(channel.id, { navigationReplace: true });
   }, items1);
-  const obj2 = { icon: null, header: null, children: null, onPress: null, notification: null };
-  const obj3 = { children: null };
-  const obj4 = { cutouts: null, children: null };
-  const items2 = [size];
-  obj4.cutouts = items2;
-  let obj = channel(9557);
-  obj4.children = closure_5(guild(5896), { guild, selected: false });
-  const items3 = [closure_5(guild(8276), obj4), ];
-  const obj5 = { style: tmp.warningBadge, children: null };
+  const obj2 = { icon: closure_7(closure_6, obj3), header: memo, children: closure_5(channel(9566).SystemMessageText, { text: stringResult }), onPress: callback, notification };
+  obj3 = { children: items3 };
+  const NotificationPressable = tmp2(9630).NotificationPressable;
+  const obj4 = { cutouts: items2, children: closure_5(guild(5896), { guild, selected: false }) };
+  items2 = [size];
   const tmp8 = guild(8276);
-  obj5.children = closure_5(channel(8048).WarningIcon, { style: tmp.warningIcon, color: guild(576).colors.ICON_FEEDBACK_WARNING });
+  items3 = [closure_5(tmp8, obj4), ];
+  const obj5 = { style: tmp.warningBadge, children: closure_5(WarningIcon, obj6) };
+  obj6 = { style: tmp.warningIcon, color: guild(576).colors.ICON_FEEDBACK_WARNING };
+  WarningIcon = tmp2(8048).WarningIcon;
   items3[1] = closure_5(View, obj5);
-  obj3.children = items3;
-  obj2.icon = closure_7(closure_6, obj3);
-  obj2.header = memo;
-  obj2.children = closure_5(channel(9566).SystemMessageText, { text: stringResult });
-  obj2.onPress = callback;
-  obj2.notification = notification;
-  return closure_5(channel(9630).NotificationPressable, obj2);
+  return closure_5(NotificationPressable, obj2);
 };

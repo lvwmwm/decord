@@ -5,53 +5,79 @@
 // Exports: createVideoControls
 
 // Module 7755 (common/Video)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
+import native from "native" /* 4540 */;
 import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6459 */;
-import openMediaModal from "openMediaModal" /* 7707 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import openMediaModal2 from "openMediaModal" /* 7707 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let closure_0, dependencyMap;
+
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
 class VideoComponent {
-  constructor(arg0) {
-    flag = global.paused;
-    ({ style, source, poster, onLoadStart, onLoad, onError, onEnd } = global);
+  constructor(paused) {
+    let ariaHidden;
+    let closure_1;
+    let controls;
+    let disableFocus;
+    let first;
+    let importantForAccessibility;
+    let mixWithOthers;
+    let onEnd;
+    let onError;
+    let onLoad;
+    let onLoadStart;
+    let pauseWhileAppInactive;
+    let poster;
+    let source;
+    let style;
+    let flag = paused.paused;
+    ({ style, source, poster, onLoadStart, onLoad, onError, onEnd } = paused);
     if (flag === undefined) {
       flag = false;
     }
-    flag2 = global.muted;
+    let flag2 = paused.muted;
     if (flag2 === undefined) {
       flag2 = true;
     }
-    str = global.posterResizeMode;
+    let str = paused.posterResizeMode;
     if (str === undefined) {
       str = "contain";
     }
-    str2 = global.resizeMode;
+    let str2 = paused.resizeMode;
     if (str2 === undefined) {
       str2 = "contain";
     }
-    ({ controls, pauseWhileAppInactive, disableFocus, ariaHidden, mixWithOthers, importantForAccessibility } = global);
+    ({ controls, pauseWhileAppInactive, disableFocus, ariaHidden, mixWithOthers, importantForAccessibility } = paused);
     if (pauseWhileAppInactive === undefined) {
       pauseWhileAppInactive = true;
     }
-    c0 = pauseWhileAppInactive;
-    flag3 = global.playInBackground;
+    let flag3 = paused.playInBackground;
     if (flag3 === undefined) {
       flag3 = false;
     }
-    flag4 = global.preventsDisplaySleepDuringVideoPlayback;
+    let flag4 = paused.preventsDisplaySleepDuringVideoPlayback;
     if (flag4 === undefined) {
       flag4 = true;
     }
-    closure_1 = undefined;
-    tmp = closure_2(closure_3.useState("active" === AppState.currentState), 2);
-    closure_1 = tmp[1];
-    items = [];
-    items[0] = pauseWhileAppInactive;
-    effect = closure_3.useEffect(() => {
-      if (closure_0) {
+    dependencyMap = undefined;
+    const httpEngine = paused.httpEngine;
+    const _default = pauseWhileAppInactive(7756).default;
+    [first, dependencyMap] = react.useState("active" === currentState.currentState);
+    const items = [pauseWhileAppInactive];
+    const effect = react.useEffect(() => {
+      const tmp = closure_0;
+      if (tmp) {
         closure_0 = currentState.addEventListener("change", (event) => {
           closure_1_1("active" === event);
         });
@@ -60,183 +86,153 @@ class VideoComponent {
         };
       }
     }, items);
-    obj = { style, source, importantForAccessibility, poster, muted: flag2, paused: null, posterResizeMode: null, resizeMode: null, repeat: true, playInBackground: null, pictureInPicture: false, playWhenInactive: false, onLoadStart: null, onLoad: null, onError: null, onEnd: null, disableFocus: null, "aria-hidden": null, mixWithOthers: null, preventsDisplaySleepDuringVideoPlayback: null, httpEngine: null };
-    tmp3 = jsx;
+    const obj = { style, source, importantForAccessibility, poster, muted: flag2, paused: flag, posterResizeMode: str, resizeMode: str2, repeat: true, playInBackground: flag3, pictureInPicture: false, playWhenInactive: false, onLoadStart, onLoad, onError, onEnd, disableFocus, "aria-hidden": ariaHidden, mixWithOthers, preventsDisplaySleepDuringVideoPlayback: flag4, httpEngine };
+    const tmp4 = jsx;
     if (!flag) {
       if (pauseWhileAppInactive) {
-        pauseWhileAppInactive = !tmp[0];
+        pauseWhileAppInactive = !first;
       }
       flag = pauseWhileAppInactive;
     }
-    obj.paused = flag;
-    obj.posterResizeMode = str;
-    obj.resizeMode = str2;
-    obj.playInBackground = flag3;
-    obj.onLoadStart = onLoadStart;
-    obj.onLoad = onLoad;
-    obj.onError = onError;
-    obj.onEnd = onEnd;
-    obj.disableFocus = disableFocus;
-    obj["aria-hidden"] = ariaHidden;
-    obj.mixWithOthers = mixWithOthers;
-    obj.preventsDisplaySleepDuringVideoPlayback = flag4;
-    obj.httpEngine = global.httpEngine;
-    props = undefined;
+    let props;
     if (controls != null) {
       props = controls.props;
     }
-    merged = Object.assign(props);
-    return tmp3(c0(closure_1[6]).default, obj);
+    const merged = Object.assign(props);
+    return tmp4(_default, obj);
   }
 }
-get_ActivityIndicator = fn(17);
-({ TouchableWithoutFeedback: closure_4, View: hasOwnProperty, Image: metroRequire, AppState: closure_7 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { container: { flex: 1, shadowColor: nativeDefault.unsafe_rawColors.BLACK, shadowOpacity: 0.5, shadowOffset: { height: 1, width: 0 }, shadowRadius: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, video: null };
-let obj3 = { flex: 1, shadowColor: nativeDefault.unsafe_rawColors.BLACK, shadowOpacity: 0.5, shadowOffset: { height: 1, width: 0 }, shadowRadius: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-obj2.video = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-let closure_9 = createStyles.createLegacyClassComponentStyles(obj2);
-const PureComponent = noop.PureComponent;
+({ TouchableWithoutFeedback: closure_4, View: hasOwnProperty, Image: metroRequire, AppState: metroImportDefault } = react_native);
+const jsx = Fragment.jsx;
+let obj = { container: obj2, video: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND } };
+obj2 = { flex: 1, shadowColor: nativeDefault.unsafe_rawColors.BLACK, shadowOpacity: 0.5, shadowOffset: { height: 1, width: 0 }, shadowRadius: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
+({ flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND });
+const React4 = createLegacyClassComponentStyles(obj);
+const PureComponent = react.PureComponent;
 class Video extends PureComponent {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
     applyArgumentsResult.state = { postponeRender: true };
-    applyArgumentsResult.ref = closure_3.createRef();
+    applyArgumentsResult.ref = react.createRef();
     applyArgumentsResult.isVideo = function isVideo() {
-      const src = applyArgumentsResult.props.src;
-      let tmp = null != src;
-      if (tmp) {
-        tmp = "videoURI" in src;
-      }
-      if (tmp) {
-        tmp = null != src.videoURI;
-      }
-      return tmp;
+      const src = require.props.src;
+      return null != src && "videoURI" in src && null != src.videoURI;
     };
     applyArgumentsResult.handleOpenFullScreen = function handleOpenFullScreen() {
-      const props = applyArgumentsResult.props;
+      let height;
+      let items;
+      let onPress;
+      let src;
+      let width;
+      const props = require.props;
       ({ src, onPress } = props);
       ({ width, height } = props);
+      const tmp = require;
       if (null != onPress) {
         onPress();
       }
-      const current = applyArgumentsResult.ref.current;
+      const current = tmp.ref.current;
       if (null != current) {
-        const obj2 = { initialSources: null, originViewOrOriginLayout: null };
-        const obj3 = {};
+        const obj = { initialSources: items, originViewOrOriginLayout: current };
+        const obj2 = { width, height };
+        const openMediaModal = openMediaModal2.openMediaModal;
+        openMediaModal2;
         const merged = Object.assign(src);
-        obj3.width = width;
-        obj3.height = height;
-        const items = [obj3];
-        obj2.initialSources = items;
-        obj2.originViewOrOriginLayout = current;
-        openMediaModal.openMediaModal(obj2);
+        items = [obj2];
+        openMediaModal(obj);
       }
     };
     return applyArgumentsResult;
   }
+  componentDidMount() {
+    const self = this;
+    const obj = RunAfterInteractionsUtils;
+    this._renderTask = obj.runAfterInteractions(() => {
+      self.setState({ postponeRender: false });
+    });
+  }
+  componentWillUnmount() {
+    if (null != this._renderTask) {
+      const _renderTask = this._renderTask;
+      _renderTask.cancel();
+    }
+  }
+  renderVideo() {
+    let resizeMode;
+    let src;
+    ({ src, resizeMode } = this.props);
+    if ("videoURI" in src) {
+      if ("" !== src.videoURI) {
+        const videoURI = src.videoURI;
+        let tmp13;
+        if (null != videoURI) {
+          const items = [tmp.video, , ];
+          size = { width: tmp3, height: tmp4 };
+          items[1] = size;
+          items[2] = tmp7;
+          tmp13 = <VideoComponent style={items} source={{ uri: videoURI }} poster={tmp2} muted={tmp5} paused={tmp6} resizeMode={resizeMode} posterResizeMode={resizeMode} ariaHidden={tmp8} disableFocus={tmp9} httpEngine={tmp10} />;
+          const obj2 = { uri: videoURI };
+        }
+        return tmp13;
+      }
+    }
+    return null;
+  }
+  renderImage() {
+    const src = this.props.src;
+    if ("uri" in src) {
+      if ("" !== src.uri) {
+        size = { width: tmp, height: tmp2 };
+        return <metroRequire source={{ uri: src.uri }} style={size} aria-hidden={tmp3} />;
+      }
+    }
+  }
+  render() {
+    let tmp4;
+    const self = this;
+    const props = this.props;
+    let accessibilityLabel = props.accessibilityLabel;
+    const items = [closure_9(this.context).container, { width: props.width, height: props.height }, props.style];
+    const canOpenFullscreen = props.canOpenFullscreen;
+    if (!this.state.postponeRender) {
+      let renderVideoResult;
+      if (self.isVideo()) {
+        renderVideoResult = self.renderVideo();
+      } else {
+        renderVideoResult = self.renderImage();
+      }
+      tmp4 = renderVideoResult;
+    } else {
+      tmp4 = null;
+    }
+    const tmp2Result = <tmp3 ref={this.ref} style={items} accessible={null != accessibilityLabel} accessibilityLabel={accessibilityLabel}>{tmp4}</tmp3>;
+    let tmp2Result2 = tmp2Result;
+    if (canOpenFullscreen) {
+      const tmp8 = React3;
+      if (accessibilityLabel == null) {
+        const intl = intl2.intl;
+        accessibilityLabel = intl.string(intl2.t.OIDkcp);
+      }
+      const obj2 = { accessibilityRole: "button", accessibilityLabel, onPress: self.handleOpenFullScreen, children: tmp2Result };
+      tmp2Result2 = tmp2(tmp8, obj2);
+    }
+    return tmp2Result2;
+  }
 }
 const prototype = Video.prototype;
-prototype["componentDidMount"] = function componentDidMount() {
-  const self = this;
-  this._renderTask = RunAfterInteractionsUtils.runAfterInteractions(() => {
-    self.setState({ postponeRender: false });
-  });
-};
-prototype["componentWillUnmount"] = function componentWillUnmount() {
-  if (null != this._renderTask) {
-    const _renderTask = this._renderTask;
-    _renderTask.cancel();
-  }
-};
-prototype["renderVideo"] = function renderVideo() {
-  ({ src, resizeMode } = this.props);
-  if ("videoURI" in src) {
-    if ("" !== src.videoURI) {
-      const videoURI = src.videoURI;
-      let tmp13;
-      if (null != videoURI) {
-        const obj = { style: null, source: null, poster: null, muted: null, paused: null, resizeMode: null, posterResizeMode: null, ariaHidden: null, disableFocus: null, httpEngine: null };
-        const items = [tmp.video, , ];
-        const size = { width: tmp3, height: tmp4 };
-        items[1] = size;
-        items[2] = tmp7;
-        obj.style = items;
-        const obj2 = { uri: videoURI };
-        obj.source = obj2;
-        obj.poster = tmp2;
-        obj.muted = tmp5;
-        obj.paused = tmp6;
-        obj.resizeMode = resizeMode;
-        obj.posterResizeMode = resizeMode;
-        obj.ariaHidden = tmp8;
-        obj.disableFocus = tmp9;
-        obj.httpEngine = tmp10;
-        tmp13 = <VideoComponent style={null} source={null} poster={null} muted={null} paused={null} resizeMode={null} posterResizeMode={null} ariaHidden={null} disableFocus={null} httpEngine={null} />;
-      }
-      return tmp13;
-    }
-  }
-  return null;
-};
-prototype["renderImage"] = function renderImage() {
-  const src = this.props.src;
-  if ("uri" in src) {
-    if ("" !== src.uri) {
-      const obj = { source: null, style: null, "aria-hidden": null };
-      const obj2 = { uri: src.uri };
-      obj.source = obj2;
-      const size = { width: tmp, height: tmp2 };
-      obj.style = size;
-      obj["aria-hidden"] = tmp3;
-      return <timestampProducer source={null} style={null} aria-hidden={null} />;
-    }
-  }
-};
-prototype["render"] = function render() {
-  const self = this;
-  const props = this.props;
-  let accessibilityLabel = props.accessibilityLabel;
-  const obj = { ref: this.ref, style: null, accessible: null, accessibilityLabel: null, children: null };
-  const items = [closure_9(this.context).container, { width: props.width, height: props.height }, props.style];
-  obj.style = items;
-  obj.accessible = null != accessibilityLabel;
-  obj.accessibilityLabel = accessibilityLabel;
-  if (this.state.postponeRender) {
-    if (false !== tmp2) {
-      obj.children = null;
-      const tmp3Result = tmp3(tmp4, obj);
-      let tmp3Result2 = tmp3Result;
-      if (tmp) {
-        if (accessibilityLabel == null) {
-          const intl = util.intl;
-          accessibilityLabel = intl.string(util.t.OIDkcp);
-        }
-        const obj2 = { accessibilityRole: "button", accessibilityLabel, onPress: self.handleOpenFullScreen, children: tmp3Result };
-        tmp3Result2 = tmp3(React4, obj2);
-      }
-      return tmp3Result2;
-    }
-  }
-  if (self.isVideo()) {
-    self.renderVideo();
-  } else {
-    self.renderImage();
-  }
-};
-Video.contextType = fn(4540).ThemeContext;
-let size = fn(2);
+Video.contextType = native.ThemeContext;
+let size = size_mod;
 const result = size.fileFinishedImporting("components_native/common/Video.tsx");
 
 export default Video;
 export const createVideoControls = function createVideoControls(NOOP) {
-  const ref = noop.createRef();
-  c5 = 0;
-  c6 = 0;
+  const ref = react.createRef();
+  let c5 = 0;
+  let c6 = 0;
   let progressPercent = 0;
-  closure_8 = false;
+  let closure_8 = false;
   return {
     seek(arg0) {
       const current = ref.current;
@@ -251,17 +247,17 @@ export const createVideoControls = function createVideoControls(NOOP) {
       NOOP(arg0);
       if (closure_8 !== arg0) {
         closure_8 = arg0;
-        if (closure_2 != null) {
+        if (_slicedToArray != null) {
           tmp2(closure_8);
         }
       }
     },
     useSubscribe(arg0, arg1, arg2) {
-      closure_1 = arg0;
-      closure_2 = arg1;
-      closure_3 = arg2;
-      const layoutEffect = noop.useLayoutEffect(() => {
-        if (NOOP != null) {
+      let closure_1_1 = arg0;
+      let closure_1_2 = arg1;
+      let closure_1_3 = arg2;
+      const layoutEffect = react.useLayoutEffect(() => {
+        if (closure_1_1 != null) {
           tmp(closure_1_5, closure_1_6);
         }
         if (closure_1_2 != null) {
@@ -277,20 +273,20 @@ export const createVideoControls = function createVideoControls(NOOP) {
       onPlaybackRateChange(nativeEvent) {
         if (closure_8 !== 0 === nativeEvent.playbackRate) {
           closure_8 = tmp;
-          if (closure_2 != null) {
+          if (_slicedToArray != null) {
             tmp2(closure_8);
           }
         }
       },
       onProgress(arg0) {
         ({ currentTime: c5, seekableDuration: c6 } = arg0);
-        if (closure_1 != null) {
+        if (dependencyMap != null) {
           tmp(c5, c6);
         }
       },
       onDownloadProgress(progressPercent) {
         progressPercent = progressPercent.progressPercent;
-        if (closure_3 != null) {
+        if (react != null) {
           tmp(progressPercent);
         }
       }

@@ -3,44 +3,46 @@
 // Dependencies: [4383, 4385, 4386, 4384, 4387]
 
 // Module 4382
-import localeToNumber_mod from "localeToNumber" /* 4383 */;
-import module_4385 from "module_4385" /* 4385 */;
-import module_4386 from "module_4386" /* 4386 */;
-import localeToNumber_mod from "module_4384" /* 4384 */;
+import formatDistance from "formatDistance" /* 4383 */;
+import buildFormatLongFn from "buildFormatLongFn" /* 4385 */;
+import formatRelative from "formatRelative" /* 4386 */;
+import localeToNumber from "localeToNumber" /* 4384 */;
 import date from "module_4387" /* 4387 */;
 
-let localeToNumber = localeToNumber_mod;
+let tmp11;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+if (!formatDistance) {
+  tmp3 = { default: formatDistance };
+  const obj = { default: formatDistance };
+} else {
+  tmp3 = formatDistance;
+}
+if (!buildFormatLongFn) {
+  tmp5 = { default: buildFormatLongFn };
+  const obj2 = { default: buildFormatLongFn };
+} else {
+  tmp5 = buildFormatLongFn;
+}
+if (!formatRelative) {
+  tmp7 = { default: formatRelative };
+  const obj3 = { default: formatRelative };
+} else {
+  tmp7 = formatRelative;
+}
 if (!localeToNumber) {
-  const obj = { default: localeToNumber };
-  let tmp3 = obj;
-} else {
-  tmp3 = localeToNumber;
-}
-if (!module_4385) {
-  const obj2 = { default: module_4385 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_4385;
-}
-if (!module_4386) {
-  const obj3 = { default: module_4386 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_4386;
-}
-let localeToNumber = localeToNumber_mod;
-if (!localeToNumber) {
+  tmp9 = { default: localeToNumber };
   const obj4 = { default: localeToNumber };
-  let tmp9 = obj4;
 } else {
   tmp9 = localeToNumber;
 }
 if (!date) {
+  tmp11 = { default: date };
   const obj5 = { default: date };
-  let tmp11 = obj5;
 } else {
   tmp11 = date;
 }
 
 export default { code: "hi", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 0, firstWeekContainsDate: 4 } };
-export default exports.default;

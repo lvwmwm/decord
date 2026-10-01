@@ -3,51 +3,53 @@
 // Dependencies: [1641, 1682]
 
 // Module 1752
+import startMapper from "startMapper" /* 1682 */;
 import module_1641 from "module_1641" /* 1641 */;
 
-let closure_0 = require;
-let closure_1 = dependencyMap;
+let fn;
 if (module_1641.shouldBeUseWeb()) {
-  let fn = function t() {
+  fn = function t() {
 
   };
 } else {
-  closure_0 = [];
-  closure_1 = [];
+  let closure_0 = [];
+  let closure_1 = [];
   let obj = {
     update(arg0, arg1) {
-        if (arg1) {
+        const tmp = arg1;
+        if (tmp) {
           closure_1.push(arg0);
         } else {
           closure_0.push(arg0);
         }
         if (closure_0.length + closure_1.length === 1) {
           const self = this;
+          obj = module_1641;
           if (obj.isFabric()) {
             self.flush();
           } else {
             const _setImmediate = setImmediate;
             setImmediate(self.flush);
           }
-          obj = closure_0(closure_1[0]);
         }
       },
     flush() {
-        const result = closure_0(closure_1[1]).configureLayoutAnimationBatch(closure_0.concat(closure_1));
+        obj = startMapper;
+        const result = obj.configureLayoutAnimationBatch(closure_0.concat(closure_1));
         closure_0.length = 0;
         closure_1.length = 0;
       }
   };
   fn = function t(viewTag, type, arg2, sharedTransitionTag, arg4) {
-    obj = { viewTag, type, config: null, sharedTransitionTag: null };
     let shareableCloneRecursive;
+    obj = { viewTag, type, config: shareableCloneRecursive, sharedTransitionTag };
+    shareableCloneRecursive = undefined;
+    const update = obj.update;
     if (arg2) {
-      shareableCloneRecursive = closure_0(closure_1[1]).makeShareableCloneRecursive(arg2);
-      const obj2 = closure_0(closure_1[1]);
+      const obj2 = startMapper;
+      shareableCloneRecursive = obj2.makeShareableCloneRecursive(arg2);
     }
-    obj.config = shareableCloneRecursive;
-    obj.sharedTransitionTag = sharedTransitionTag;
-    return obj.update(obj, arg4);
+    return update(obj, arg4);
   };
 }
 

@@ -3,18 +3,17 @@
 // Dependencies: [41, 42]
 
 // Module 9933
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-let _classCallCheck = _classCallCheck_mod;
+let start;
+
 const regExp = new RegExp("^\\s*(?:\\(?(?:GMT|UTC)\\s?)?([+-])(\\d{1,2})(?::?(\\d{2}))?\\)?", "i");
 class ExtractTimezoneOffsetRefiner {
   constructor() {
-    tmp = closure_0(this, ExtractTimezoneOffsetRefiner);
-    return;
+    _classCallCheck(this, ExtractTimezoneOffsetRefiner);
   }
 }
-_classCallCheck = ExtractTimezoneOffsetRefiner;
 const entry = {
   key: "refine",
   value: function refine(arg0, arr) {
@@ -23,7 +22,9 @@ const entry = {
       text = start;
       start = start.start;
       if (!start.isCertain("timezoneOffset")) {
-        const match = regExp.exec(text.text.substring(start.index + start.text.length));
+        const str = text.text;
+        const match = regExp.exec(str.substring(start.index + start.text.length));
+        const obj = text;
         if (match) {
           obj.debug(() => {
             console.log("Extracting timezone: '" + match[0] + "' into : " + closure_0);
@@ -31,10 +32,11 @@ const entry = {
           const _parseInt = parseInt;
           let str2 = match[3];
           const result = 60 * parseInt(match[2]);
+          const _parseInt2 = parseInt;
           if (!str2) {
             str2 = "0";
           }
-          const sum = result + parseInt(str2);
+          const sum = result + _parseInt2(str2);
           if (sum <= 840) {
             let tmp7 = sum;
             if ("-" === match[1]) {
@@ -49,7 +51,6 @@ const entry = {
             start.text = start.text + match[0];
           }
         }
-        obj = text;
       }
     });
     return arr;

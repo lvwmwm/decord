@@ -4,47 +4,56 @@
 // Dependencies: [19, 1074, 6837, 10977, 4488, 12936, 11006, 1115, 14524, 14522, 2]
 
 // Module 14523 (PremiumManageSubscriptionsSetting)
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
 import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 6837 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 10977 */;
-import noop from "module_19" /* 19 */;
+import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 12936 */;
+import SubscriptionIcon from "SubscriptionIcon" /* 14524 */;
+import react from "react" /* 19 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["z5YcJ+"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["z5YcJ+"]);
   },
   parent: null,
-  IconComponent: fn(14524).SubscriptionIcon,
+  IconComponent: SubscriptionIcon.SubscriptionIcon,
   usePreNavigationAction: function useCanNavigateToPaymentSetting() {
-    return noop.useCallback(() => {
-      const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();
+    return react.useCallback(() => {
+      const obj = BlockedPaymentsCountryExperiment;
+      const isPaymentsBlocked = obj.getIsPaymentsBlocked();
       let flag = !isPaymentsBlocked;
+      const tmp = dependencyMap;
       if (isPaymentsBlocked) {
-        openBlockedPaymentsCountryActionSheetDefault();
+        require("openBlockedPaymentsCountryActionSheet")();
         flag = false;
       }
       return flag;
     }, []);
   },
   usePredicate: function useShowManageSubscriptionsSetting() {
-    let hasPremiumSubscriptionToDisplay = PremiumUtils.useHasPremiumSubscriptionToDisplay();
+    const obj = PremiumUtils;
+    let hasPremiumSubscriptionToDisplay = obj.useHasPremiumSubscriptionToDisplay();
+    const obj2 = MobileNitroManageSubscriptionsSettingsExperiment;
     if (hasPremiumSubscriptionToDisplay) {
       hasPremiumSubscriptionToDisplay = obj2.useMobileNitroManageSubscriptionsSettingsExperiment({ location: "useShowManageSubscriptionsSetting" });
     }
     return hasPremiumSubscriptionToDisplay;
   },
   screen: {
-    route: fn(1074).UserSettingsSections.PREMIUM_MANAGE_PLAN,
+    route: UserSettingsSections.PREMIUM_MANAGE_PLAN,
     getComponent() {
       return require("PremiumManagePlanScreen").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/PremiumManageSubscriptionsSetting.tsx");
 
 export default route;

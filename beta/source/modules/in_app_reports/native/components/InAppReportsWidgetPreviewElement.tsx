@@ -5,72 +5,84 @@
 // Exports: default
 
 // Module 8117 (InAppReportsWidgetPreviewElement)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import intl3 from "intl" /* 1115 */;
 import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6400 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7037 */;
 import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7044 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7687 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 8118 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: { backgroundColor: nativeDefault.colors.USER_PROFILE_CONTAINER_BACKGROUND } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let tmp5;
+const UserProfilePersonalWidgetCardDefault = tmp5(8118);
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.USER_PROFILE_CONTAINER_BACKGROUND };
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsWidgetPreviewElement.tsx");
 
 export default function WidgetPreview(arg0) {
+  let items;
+  let items1;
+  let items3;
+  let stringResult;
+  let tmp7;
+  let userId;
+  let widget;
   ({ widget, userId } = arg0);
   const tmp = closure_6();
-  let SpsnDY = dependencyMap;
-  const typeConsolidationEyebrow = useTypeConsolidationTextTransform.useTypeConsolidationEyebrow("InAppReportsWidgetPreview", "text-xs/bold");
-  const tmp5 = UserProfileSharedStylesDefault();
+  const obj = useTypeConsolidationTextTransform;
+  const typeConsolidationEyebrow = obj.useTypeConsolidationEyebrow("InAppReportsWidgetPreview", "text-xs/bold");
+  const tmp6 = UserProfileSharedStylesDefault();
   if (widget instanceof UserProfilePersonalWidget.UserProfilePersonalWidget) {
-    const obj2 = { userId, widget, disableInteraction: true, cardStyle: null };
-    const items = [tmp5.card, tmp.card];
-    obj2.cardStyle = items;
-    let tmp6 = React4(UserProfilePersonalWidgetCardDefault, obj2);
+    const obj2 = { userId, widget, disableInteraction: true, cardStyle: items };
+    items = [tmp6.card, tmp.card];
+    tmp7 = React3(UserProfilePersonalWidgetCardDefault, obj2);
   } else {
-    tmp6 = null;
+    tmp7 = null;
+    const tmp2Result = UserProfileGameWidgetTypes;
     if (tmp2Result.isGameWidget(widget)) {
-      tmp6 = null;
+      tmp7 = null;
       if (widget.games.length > 0) {
-        const obj3 = { userId, widget, disableInteraction: true, cardStyle: null };
-        const items1 = [tmp5.card, tmp.card];
-        obj3.cardStyle = items1;
-        tmp6 = React4(tmp2(8127).WidgetSection, obj3);
+        const obj3 = { userId, widget, disableInteraction: true, cardStyle: items1 };
+        items1 = [tmp6.card, tmp.card];
+        tmp7 = React3(tmp2(8127).WidgetSection, obj3);
       }
     }
-    tmp2Result = tmp2(7037);
   }
-  if (null === tmp6) {
-    return null;
-  } else {
-    const obj4 = { style: tmp.container, children: null };
-    let Text = tmp2(4832).Text;
+  let tmp12Result = null;
+  if (null !== tmp7) {
+    let title;
+    const obj4 = { style: tmp.container, children: items3 };
+    const Text = tmp2(4832).Text;
+    const tmp12 = hasOwnProperty;
+    const tmp13 = View;
+    const tmp14 = React3;
     if (null != typeConsolidationEyebrow.style) {
       const items2 = [tmp.title, typeConsolidationEyebrow.style];
-      let title = items2;
+      title = items2;
     } else {
       title = tmp.title;
     }
-    let obj5 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: null };
+    const obj5 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: stringResult };
     if (null != typeConsolidationEyebrow.style) {
       const intl2 = tmp2(1115).intl;
-      SpsnDY = tmp2(1115).t.SpsnDY;
-      let stringResult = intl2.string(SpsnDY);
+      stringResult = intl2.string(tmp2(1115).t.SpsnDY);
     } else {
       const intl = tmp2(1115).intl;
-      stringResult = intl.string(tmp2(1115).t.SpsnDY).toUpperCase();
-      const str = intl.string(tmp2(1115).t.SpsnDY);
+      const str = intl.string(intl3.t.SpsnDY);
+      stringResult = str.toUpperCase();
     }
-    obj5.children = stringResult;
-    Text = React4(Text, obj5);
-    obj5 = [Text, tmp6];
-    obj4.children = obj5;
-    hasOwnProperty(View, obj4);
+    items3 = [tmp14(Text, obj5), tmp7];
+    tmp12Result = tmp12(tmp13, obj4);
   }
+  return tmp12Result;
 };

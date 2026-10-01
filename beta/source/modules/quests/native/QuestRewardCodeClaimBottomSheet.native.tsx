@@ -6,65 +6,101 @@
 
 // Module 10747 (QuestRewardCodeClaimBottomSheet)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import _modDef5909 from "module_5909" /* 5909 */;
+import QuestConstants from "QuestConstants" /* 5756 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5909 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 10694 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import QuestStore from "QuestStore" /* 7116 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let BottomSheet;
 
-require = fn;
+let c9;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
 function QuestRewardCodeClaimBottomSheet(quest) {
+  let BottomSheetTitleHeader;
+  let TableRowGroup;
+  let c3;
+  let claimCode;
+  let fetchCode;
+  let intl;
+  let isClaimingReward;
+  let isFetchingRewardCode;
+  let obj13;
+  let obj7;
+  let questContentPosition;
+  let sourceQuestContent;
+  let tmp16Result3;
+  let tmp26;
+  let tmpResult;
   quest = quest.quest;
   const questContent = quest.questContent;
   let rewardCode;
   let hasError;
-  noop = undefined;
+  react = undefined;
   let memo;
+  let tmp = rewardCode;
   ({ questContentPosition, sourceQuestContent } = quest);
   const tmp3 = closure_10(rewardCode(hasError[7])().bottom);
+  const tmp4 = quest;
+  let obj = quest(hasError[8]);
   const items = [QuestStore];
-  const stateFromStoresObject = quest(hasError[8]).useStateFromStoresObject(items, () => ({ rewardCode: QuestStore.getRewardCode(quest.id), isFetchingRewardCode: QuestStore.isFetchingRewardCode(quest.id), isClaimingReward: QuestStore.isClaimingReward(quest.id) }));
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { rewardCode: QuestStore.getRewardCode(quest.id), isFetchingRewardCode: QuestStore.isFetchingRewardCode(quest.id), isClaimingReward: QuestStore.isClaimingReward(quest.id) };
+    return obj;
+  });
   rewardCode = stateFromStoresObject.rewardCode;
   ({ isFetchingRewardCode, isClaimingReward } = stateFromStoresObject);
-  let obj = quest(hasError[8]);
-  const claimOrFetchRewardCode = quest(hasError[9]).useClaimOrFetchRewardCode({ isClaimingReward, isFetchingRewardCode, quest, questContent, rewardCode });
+  let obj2 = quest(hasError[9]);
+  const claimOrFetchRewardCode = obj2.useClaimOrFetchRewardCode({ isClaimingReward, isFetchingRewardCode, quest, questContent, rewardCode });
   hasError = claimOrFetchRewardCode.hasError;
   const items1 = [hasError];
   ({ claimCode, fetchCode } = claimOrFetchRewardCode);
-  const effect = noop.useEffect(() => {
-    if (hasError) {
-      const obj2 = { key: "CLAIM_QUEST_REWARD_ERROR", content: null, icon: null };
-      const intl = util.intl;
-      obj2.content = intl.string(util.t.CKsXk3);
-      obj2.icon = _modDef5909;
-      ToastActionCreatorsDefault.open(obj2);
-      ActionSheetActionCreatorsDefault.hideActionSheet();
+  const effect = react.useEffect(() => {
+    let intl;
+    const tmp = hasError;
+    if (tmp) {
+      const obj = { key: "CLAIM_QUEST_REWARD_ERROR", content: intl.string(intl4.t.CKsXk3), icon: AssetRegistryDefault };
+      const open = ToastActionCreatorsDefault.open;
+      ToastActionCreatorsDefault;
+      intl = intl4.intl;
+      open(obj);
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
     }
   }, items1);
-  let obj2 = quest(hasError[9]);
-  const result = quest(hasError[14]).isTieredRewardCodeQuest({ quest });
-  noop = result;
+  const obj4 = quest(hasError[14]);
+  const result = obj4.isTieredRewardCodeQuest({ quest });
+  react = result;
   const items2 = [result, quest, ];
   let tier;
+  const useMemo = react.useMemo;
   if (rewardCode != null) {
     tier = rewardCode.tier;
   }
   items2[2] = tier;
-  memo = noop.useMemo(() => {
+  memo = useMemo(() => {
+    let rewardCodeQuestReward;
+    let tier;
     const getRewardCodeQuestReward = QuestRewardUtils.getRewardCodeQuestReward;
+    QuestRewardUtils;
     if (c3) {
-      const obj2 = { quest, idx: null };
-      let tier;
+      const obj2 = { quest, idx: tier };
+      tier = undefined;
       if (rewardCode != null) {
         tier = rewardCode.tier;
       }
-      obj2.idx = tier;
-      let rewardCodeQuestReward = getRewardCodeQuestReward(obj2);
+      rewardCodeQuestReward = getRewardCodeQuestReward(obj2);
     } else {
       const obj = { quest, idx: 0 };
       rewardCodeQuestReward = getRewardCodeQuestReward(obj);
@@ -78,15 +114,17 @@ function QuestRewardCodeClaimBottomSheet(quest) {
       redemptionLink1 = tmp.redemptionLink;
     }
     if (null != redemptionLink1) {
-      if ("" !== tmp.redemptionLink) {
+      if ("" !== memo.redemptionLink) {
         let code;
         if (rewardCode != null) {
           code = tmp3.code;
         }
         if (null != code) {
-          if ("" !== tmp3.code) {
+          let redemptionLink;
+          if ("" !== rewardCode.code) {
             const _encodeURIComponent = encodeURIComponent;
-            let redemptionLink = tmp.redemptionLink.replace(REWARD_CODE_PLACEHOLDER, encodeURIComponent(tmp3.code));
+            const str2 = memo.redemptionLink;
+            redemptionLink = str2.replace(REWARD_CODE_PLACEHOLDER, encodeURIComponent(tmp3.code));
           }
           return redemptionLink;
         }
@@ -94,25 +132,31 @@ function QuestRewardCodeClaimBottomSheet(quest) {
       }
     }
   }, items3);
-  const obj4 = quest(hasError[14]);
-  const tmp4Result = quest(hasError[9]);
   const items4 = [rewardCode];
-  const obj5 = { claimCode, fetchCode, hasError, onDismiss: rewardCode(hasError[13]).hideActionSheet, quest, questContent, questContentPosition, redemptionLink: memo1, sourceQuestContent };
+  const tmp4Result = tmp4(hasError[9]);
+  const obj5 = { claimCode, fetchCode, hasError, onDismiss: tmp(hasError[13]).hideActionSheet, quest, questContent, questContentPosition, redemptionLink: memo1, sourceQuestContent };
+  const claimRewardCodePrimaryCtaClickHandler = tmp4Result.useClaimRewardCodePrimaryCtaClickHandler(obj5);
   const callback = obj3.useCallback(() => {
     if (null != rewardCode) {
-      ClipboardUtils.copy(tmp.code, () => {
-        const obj2 = { key: "TOAST_QUEST_REWARD_CODE_COPIED", content: null, icon: null };
-        const intl = quest(1115).intl;
-        obj2.content = intl.string(quest(1115).t.MSaeTe);
-        obj2.icon = function icon() {
-          return closure_1_8(closure_1_0(dependencyMap[16]).CopyIcon, {});
+      let obj = ClipboardUtils;
+      obj.copy(tmp.code, () => {
+        let intl;
+        const obj = {
+          key: "TOAST_QUEST_REWARD_CODE_COPIED",
+          content: intl.string(quest(hasError[11]).t.MSaeTe),
+          icon() {
+            return closure_1_8(closure_1_0(closure_1_2[16]).CopyIcon, {});
+          }
         };
-        return rewardCode(4528).open(obj2);
+        const open = rewardCode(hasError[10]).open;
+        rewardCode(hasError[10]);
+        intl = quest(hasError[11]).intl;
+        return open(obj);
       });
     }
   }, items4);
-  const claimRewardCodePrimaryCtaClickHandler = tmp4Result.useClaimRewardCodePrimaryCtaClickHandler({ claimCode, fetchCode, hasError, onDismiss: rewardCode(hasError[13]).hideActionSheet, quest, questContent, questContentPosition, redemptionLink: memo1, sourceQuestContent });
-  const rewardCodeRedemptionInstructions = quest(hasError[17]).getRewardCodeRedemptionInstructions({ quest, rewardCode });
+  const tmp4Result2 = tmp4(hasError[17]);
+  const rewardCodeRedemptionInstructions = tmp4Result2.getRewardCodeRedemptionInstructions({ quest, rewardCode });
   if (!isFetchingRewardCode) {
     isFetchingRewardCode = isClaimingReward;
   }
@@ -123,51 +167,51 @@ function QuestRewardCodeClaimBottomSheet(quest) {
     }
     isFetchingRewardCode = null == code;
   }
-  const obj6 = { header: null, startExpanded: true, children: null };
-  const obj7 = { title: null };
-  let intl = tmp4(tmp2[11]).intl;
-  obj7.title = intl.string(quest(hasError[11]).t.srzsU2);
-  obj6.header = closure_8(quest(hasError[19]).BottomSheetTitleHeader, obj7);
+  const obj6 = { header: closure_8(BottomSheetTitleHeader, obj7), startExpanded: true, children: null };
+  BottomSheet = tmp4(tmp2[18]).BottomSheet;
+  obj7 = { title: intl.string(tmp4(hasError[11]).t.srzsU2) };
+  BottomSheetTitleHeader = tmp4(tmp2[19]).BottomSheetTitleHeader;
+  intl = tmp4(tmp2[11]).intl;
   const obj8 = { style: tmp3.wrapper, children: null };
   let tmp16Result = null != rewardCode && null != rewardCodeRedemptionInstructions;
   if (tmp16Result) {
-    const obj9 = { style: tmp3.redemptionInstructions, variant: "text-md/normal", color: "text-default", children: tmp(tmp2[21]).parse(rewardCodeRedemptionInstructions, true, { allowLinks: true }) };
-    tmp16Result = tmp16(tmp4(tmp2[20]).Text, obj9);
-    const tmpResult = tmp(tmp2[21]);
+    const obj9 = { style: tmp3.redemptionInstructions, variant: "text-md/normal", color: "text-default", children: tmpResult.parse(rewardCodeRedemptionInstructions, true, { allowLinks: true }) };
+    const Text = tmp4(tmp2[20]).Text;
+    tmpResult = tmp(hasError[21]);
+    tmp16Result = tmp16(Text, obj9);
   }
   const items5 = [tmp16Result, ];
   let code1;
   if (rewardCode != null) {
     code1 = rewardCode.code;
   }
-  const obj10 = { style: null == code1 && tmp3.codeCopyWrapperLoading, children: null };
+  const obj10 = { style: null == code1 && tmp3.codeCopyWrapperLoading, children: closure_8(TableRowGroup, obj13) };
+  TableRowGroup = tmp4(tmp2[22]).TableRowGroup;
   let code2;
+  const TableRow = tmp4(tmp2[23]).TableRow;
   if (rewardCode != null) {
     code2 = rewardCode.code;
   }
-  const obj11 = { label: code2, trailing: null, onPress: null };
   let code3;
+  const obj11 = { label: code2, trailing: tmp16Result3, onPress: tmp26 };
   if (rewardCode != null) {
     code3 = rewardCode.code;
   }
-  let tmp16Result3 = null != code3;
+  tmp16Result3 = null != code3;
   if (tmp16Result3) {
-    const obj12 = { IconComponent: tmp4(tmp2[16]).CopyIcon };
-    tmp16Result3 = tmp16(tmp4(tmp2[23]).TableRow.Icon, obj12);
+    const obj12 = { IconComponent: tmp4(hasError[16]).CopyIcon };
+    const Icon = tmp4(tmp2[23]).TableRow.Icon;
+    tmp16Result3 = tmp16(Icon, obj12);
   }
-  obj11.trailing = tmp16Result3;
   let code4;
   if (rewardCode != null) {
     code4 = rewardCode.code;
   }
-  let tmp26;
+  tmp26 = undefined;
   if (null != code4) {
     tmp26 = callback;
   }
-  const tmp21 = null == code1 && tmp3.codeCopyWrapperLoading;
-  const tmp4Result2 = quest(hasError[17]);
-  obj11.onPress = tmp26;
-  obj10.children = closure_8(quest(hasError[22]).TableRowGroup, { hasIcons: false, children: closure_8(quest(hasError[23]).TableRow, obj11) });
+  obj13 = { hasIcons: false, children: closure_8(TableRow, obj11) };
   const items6 = [closure_8(closure_5, obj10), ];
   let code5;
   if (rewardCode != null) {
@@ -178,51 +222,55 @@ function QuestRewardCodeClaimBottomSheet(quest) {
     const obj14 = { style: tmp3.claimingIndicator, size: 24 };
     tmp16Result4 = tmp16(memo, obj14);
   }
-  const obj15 = { children: null };
+  const obj15 = { children: items5 };
   items6[1] = tmp16Result4;
   items5[1] = closure_9(closure_5, { children: items6 });
-  obj15.children = items5;
   const items7 = [closure_9(closure_5, obj15), ];
   const obj16 = { style: tmp3.footer, children: null };
   const obj17 = { disabled: isFetchingRewardCode, onPress: claimRewardCodePrimaryCtaClickHandler, grow: true, text: null };
   if (null != memo1) {
+    let stringResult;
     if ("" !== memo1) {
       const intl3 = tmp4(tmp2[11]).intl;
-      let stringResult = intl3.string(tmp4(tmp2[11]).t["+zx47d"]);
+      stringResult = intl3.string(tmp4(tmp2[11]).t["+zx47d"]);
     }
     obj17.text = stringResult;
-    obj16.children = tmp16(tmp30, obj17);
-    items7[1] = tmp16(tmp18, obj16);
+    obj16.children = closure_8(tmp30, obj17);
+    items7[1] = closure_8(closure_5, obj16);
     obj8.children = items7;
-    obj6.children = tmp17(tmp18, obj8);
-    return tmp16(tmp4(tmp2[18]).BottomSheet, obj6);
+    obj6.children = closure_9(closure_5, obj8);
+    return closure_8(BottomSheet, obj6);
   }
   const intl2 = tmp4(tmp2[11]).intl;
   stringResult = intl2.string(tmp4(tmp2[11]).t["23SS+z"]);
 }
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const REWARD_CODE_PLACEHOLDER = fn(5756).REWARD_CODE_PLACEHOLDER;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
+let react = react_mod;
+({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
+const REWARD_CODE_PLACEHOLDER = QuestConstants.REWARD_CODE_PLACEHOLDER;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles((paddingBottom) => {
-  const obj = { wrapper: { display: "flex", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 }, footer: { paddingBottom }, claimingIndicator: { position: "absolute", left: "50%", top: "50%", marginLeft: -12, marginTop: -12 }, codeCopyWrapperLoading: { opacity: 0.5 }, redemptionInstructions: { marginBottom: 24 } };
+  let obj3;
+  const obj = { wrapper: { display: "flex", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 }, footer: obj3, claimingIndicator: { position: "absolute", left: "50%", top: "50%", marginLeft: -12, marginTop: -12 }, codeCopyWrapperLoading: { opacity: 0.5 }, redemptionInstructions: { marginBottom: 24 } };
+  obj3 = { paddingBottom };
+  ({ display: "flex", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 });
   return obj;
 });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/QuestRewardCodeClaimBottomSheet.native.tsx");
 
 export default function QuestRewardCodeClaimBottomSheetConnected(questContentPosition) {
+  let questContent;
+  let tmp5;
   ({ questId: require, questContent } = questContentPosition);
   questContentPosition = questContentPosition.questContentPosition;
   const sourceQuestContent = questContentPosition.sourceQuestContent;
+  let obj = require("get initialized");
   const items = [QuestStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => QuestStore.getQuest(require));
+  const stateFromStores = obj.useStateFromStores(items, () => QuestStore.getQuest(require));
+  const tmp = require;
   if (null == stateFromStores) {
-    questContent(tmp2[13]).hideActionSheet();
-    let tmp5 = null;
-    const obj3 = questContent(tmp2[13]);
+    const obj3 = questContent(questContentPosition[13]);
+    obj3.hideActionSheet();
+    tmp5 = null;
   } else {
     const obj2 = {
       overrideVisibility: true,
@@ -231,10 +279,11 @@ export default function QuestRewardCodeClaimBottomSheetConnected(questContentPos
       questContentPosition,
       sourceQuestContent,
       children() {
-          return React6(QuestRewardCodeClaimBottomSheet, { quest: stateFromStores, questContent, questContentPosition, sourceQuestContent });
+          const obj = { quest: stateFromStores, questContent, questContentPosition, sourceQuestContent };
+          return metroImportAll(QuestRewardCodeClaimBottomSheet, obj);
         }
     };
-    tmp5 = closure_8(require("QuestContentImpressionTracker").QuestContentImpressionTrackerNative, obj2);
+    tmp5 = closure_8(tmp(tmp2[25]).QuestContentImpressionTrackerNative, obj2);
   }
   return tmp5;
 };

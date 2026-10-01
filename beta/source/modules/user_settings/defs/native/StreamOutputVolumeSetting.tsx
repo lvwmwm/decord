@@ -5,27 +5,33 @@
 
 // Module 14797 (StreamOutputVolumeSetting)
 import _modDef38 from "module_38" /* 38 */;
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl3 from "intl" /* 1115 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
 import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9437 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const volumeSlider = SettingBuilders.createVolumeSlider({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.pEAl4b);
+    const intl = intl3.intl;
+    return intl.string(intl3.t.pEAl4b);
   },
-  parent: fn(7417).MobileUserSettings.VOICE,
+  parent: MobileUserSettings.VOICE,
   maximum: 200,
   useValue: function useStreamVolumeSettingValue() {
+    let localVolume;
+    const obj = get_initialized;
     let items = [ApplicationStreamingStore, AuthenticationStore, MediaEngineStore];
-    return initialize.useStateFromStores(items, () => {
+    return obj.useStateFromStores(items, () => {
+      let obj;
+      let obj2;
       const items = [ApplicationStreamingStore, AuthenticationStore];
       [obj, obj2] = items;
       const lastActiveStream = obj.getLastActiveStream();
@@ -44,6 +50,8 @@ const volumeSlider = SettingBuilders.createVolumeSlider({
     });
   },
   onValueChange: function onStreamValueSettingValueChange(arg0) {
+    let obj;
+    let obj2;
     const items = [ApplicationStreamingStore, AuthenticationStore];
     [obj, obj2] = items;
     const lastActiveStream = obj.getLastActiveStream();
@@ -55,12 +63,17 @@ const volumeSlider = SettingBuilders.createVolumeSlider({
       }
     }
     _modDef38(null != tmp2, "Can not set stream volume without active stream");
-    AudioActionCreatorsDefault.setLocalVolume(tmp2.ownerId, arg0, BaseConnectionEvent.MediaEngineContextTypes.STREAM);
+    const obj3 = AudioActionCreatorsDefault;
+    obj3.setLocalVolume(tmp2.ownerId, arg0, BaseConnectionEvent.MediaEngineContextTypes.STREAM);
   },
   usePredicate: function useHasStreamVolumeSetting() {
     const obj = MobileAudioOutputExperimentDefault;
+    const audioOutputPresent = obj.getConfig({ location: "StreamOutputVolumeSetting" }).audioOutputPresent;
+    const obj2 = get_initialized;
     let items = [ApplicationStreamingStore, AuthenticationStore];
-    return initialize.useStateFromStores(items, () => {
+    const tmp = obj2.useStateFromStores(items, () => {
+      let obj;
+      let obj2;
       const items = [ApplicationStreamingStore, AuthenticationStore];
       [obj, obj2] = items;
       const lastActiveStream = obj.getLastActiveStream();
@@ -72,17 +85,18 @@ const volumeSlider = SettingBuilders.createVolumeSlider({
         }
       }
       return null != tmp2;
-    }) && obj.getConfig({ location: "StreamOutputVolumeSetting" }).audioOutputPresent;
+    }) && audioOutputPresent;
+    return tmp;
   },
   useSearchTerms() {
-    const intl = util.intl;
-    const items = [intl.string(util.t["3182VD"]), ];
-    const intl2 = util.intl;
-    items[1] = intl2.string(util.t["DGq/PR"]);
+    const intl = intl3.intl;
+    const items = [intl.string(intl3.t["3182VD"]), ];
+    const intl2 = intl3.intl;
+    items[1] = intl2.string(intl3.t["DGq/PR"]);
     return items;
   }
-});
-const size = fn(2);
+};
+const volumeSlider = SettingBuilders.createVolumeSlider(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/StreamOutputVolumeSetting.tsx");
 
 export default volumeSlider;

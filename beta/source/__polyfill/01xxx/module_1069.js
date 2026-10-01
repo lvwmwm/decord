@@ -4,26 +4,34 @@
 // Exports: getCapturedScreenshot
 
 // Module 1069
+import PULL_DOWN_CLOSE_THRESHOLD from "PULL_DOWN_CLOSE_THRESHOLD" /* 1062 */;
+import lazyLoadFeedbackIntegration from "lazyLoadFeedbackIntegration" /* 1063 */;
+import _mod1064 from "module_1064" /* 1064 */;
+import defaultConfiguration from "defaultConfiguration" /* 1066 */;
+import defaultButtonStyles from "defaultButtonStyles" /* 1067 */;
+import feedbackIcon from "feedbackIcon" /* 1068 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import c3_mod from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-const ScreenshotButton = fn;
+let c0, c11, c2;
+
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -31,81 +39,85 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-get_ActivityIndicator = fn(17);
-({ Appearance: metroRequire, Image: closure_7, Text: closure_8, TouchableOpacity: closure_9 } = get_ActivityIndicator);
-fn = this;
-if (this) {
-  fn = this.__awaiter;
-}
-if (!fn) {
-  fn = (arg0, arg1, arg2, arg3) => {
-    closure_0 = arg0;
+let c3 = c3_mod;
+({ Appearance: metroRequire, Image: metroImportDefault, Text: metroImportAll, TouchableOpacity: c9 } = react_native);
+let closure_12 = this && this.__awaiter || ((arg0, arg1, arg2, arg3) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let _Promise = arg2;
+  const Promise = arg2;
+  let closure_3 = arg3;
+  if (!arg2) {
+    let tmp = globalThis;
+    _Promise = Promise;
+  }
+  const _Promise1 = new _Promise(function(fn, arg1) {
+    closure_0 = fn;
     closure_1 = arg1;
-    let _Promise = arg2;
-    closure_3 = arg3;
-    if (!arg2) {
-      _Promise = Promise;
+    function fulfilled(result) {
+      try {
+        step(iter.next(result));
+      } catch (tmp5) {
+        closure_1(tmp5);
+      }
     }
-    return new _Promise((fn, arg1) => {
-      closure_0 = fn;
-      closure_1 = arg1;
-      function fulfilled(result) {
-        try {
-          step(iter.next(result));
-        } catch (tmp5) {
-          closure_1(tmp5);
-        }
+    function rejected(arg0) {
+      try {
+        step(iter.throw(arg0));
+      } catch (tmp5) {
+        closure_1(tmp5);
       }
-      function rejected(arg0) {
-        try {
-          step(iter.throw(arg0));
-        } catch (tmp5) {
-          closure_1(tmp5);
-        }
-      }
-      let iter = rejected;
-      function step(done) {
-        if (done.done) {
-          closure_0(done.value);
-        } else {
-          let tmp1 = done.value;
-          closure_0 = tmp1;
-          if (!(tmp1 instanceof Promise)) {
-            tmp1 = new tmp((fn) => {
-              fn(value);
-            });
-          }
-          tmp1.then(fulfilled, iter);
-        }
-      }
-      let items = closure_1;
-      if (!closure_1) {
-        items = [];
-      }
-      iter = iter.apply(closure_0, items);
-      const iter2 = iter.next();
-      value = iter2.value;
-      if (iter2.done) {
-        fn(value);
+    }
+    let iter = rejected;
+    function step(done) {
+      if (done.done) {
+        fn(done.value);
       } else {
-        closure_0 = value;
-        let tmp32 = value;
-        if (!(value instanceof fulfilled)) {
-          tmp32 = new tmp3((fn) => {
+        let tmp1 = done.value;
+        const value = tmp1;
+        if (!(tmp1 instanceof Promise)) {
+          const self = this;
+          const self2 = this;
+          tmp1 = new tmp((fn) => {
             fn(value);
           });
         }
-        tmp32.then(fulfilled, rejected);
+        tmp1.then(fulfilled, iter);
       }
-    });
-  };
-}
+    }
+    let items = closure_1;
+    const tmp = iter;
+    const apply = iter.apply;
+    const tmp2 = closure_0;
+    if (!closure_1) {
+      items = [];
+    }
+    iter = apply(tmp2, items);
+    const iter2 = iter.next();
+    let value = iter2.value;
+    if (iter2.done) {
+      const tmp5 = fn(value);
+    } else {
+      let tmp32 = value;
+      if (!(value instanceof fulfilled)) {
+        let self = this;
+        let self2 = this;
+        tmp32 = new tmp3((fn) => {
+          fn(value);
+        });
+      }
+      tmp32.then(fulfilled, rejected);
+    }
+  });
+  return _Promise1;
+});
 function takeScreenshot() {
-  return fn(undefined, undefined, undefined, function*(arg0, value) {
+  return closure_12(undefined, undefined, undefined, function*(arg0, value) {
     if (c0 === 2) {
       c0 = 3;
+      const str = "Generator functions may not be called on executing generators";
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -125,13 +137,16 @@ function takeScreenshot() {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          ScreenshotButton(dependencyMap[7]).hideScreenshotButton();
+          const tmp4 = dependencyMap;
+          let obj = PULL_DOWN_CLOSE_THRESHOLD;
+          obj.hideScreenshotButton();
+          const tmp6 = globalThis;
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => closure_1_12(undefined, undefined, undefined, function*(arg0, value) {
             if (c3 === 2) {
               c3 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp5 === 3) {
+            } else if (tmp4 === 3) {
               if (arg0 === 1) {
                 throw value;
               } else if (arg0 === 2) {
@@ -142,6 +157,7 @@ function takeScreenshot() {
               }
             } else {
               try {
+                let length;
                 c3 = 2;
                 if (0 === c2) {
                   if (arg0 === 1) {
@@ -152,9 +168,8 @@ function takeScreenshot() {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    closure_1 = tmp2;
-                    closure_0 = tmp3;
-                    closure_128_0 = undefined;
+                    let closure_1 = tmp;
+                    length = undefined;
                     const NATIVE = closure_2_0(closure_2_1[8]).NATIVE;
                     c2 = 1;
                     c3 = 1;
@@ -169,63 +184,59 @@ function takeScreenshot() {
                   const obj5 = { value, done: true };
                   return obj5;
                 } else {
-                  closure_128_0 = value;
+                  length = value;
                   let str2 = "ErrorCapturingScreenshot";
-                  if (closure_128_0) {
+                  if (length) {
                     str2 = "ErrorCapturingScreenshot";
-                    if (closure_128_0.length > 0) {
-                      str2 = closure_128_0[0];
-                    }
                   }
-                  closure_129_11 = str2;
-                  closure_129_0(closure_129_1[7]).showFeedbackWidget();
+                  const obj = closure_129_0(closure_129_1[7]);
+                  obj.showFeedbackWidget();
                   c3 = 3;
                   return { value: "HermesInternal", done: null };
                 }
-              } catch (tmp18) {
-                c3 = tmp;
-                throw tmp18;
+              } catch (tmp17) {
+                c3 = 3;
+                throw tmp17;
               }
             }
           }), 100);
           c0 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp9) {
-        c0 = tmp;
-        throw tmp9;
+      } catch (tmp8) {
+        c0 = 3;
+        throw tmp8;
       }
     }
   });
 }
 class ScreenshotButton {
   constructor(arg0) {
-    self = this;
-    tmp = c2(this, ScreenshotButton);
-    items = [];
-    items[0] = global;
-    tmp2 = closure_4;
-    obj = closure_4(ScreenshotButton);
-    tmp3 = closure_3;
-    if (c10()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ScreenshotButton);
+    const items = [arg0];
+    const obj = _getPrototypeOf(ScreenshotButton);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
     } else {
       constructResult = obj.apply(self, items);
     }
-    tmp3Result = tmp3(self, constructResult);
-    obj2 = closure_0(closure_1[9]);
-    result = obj2.lazyLoadFeedbackIntegration();
+    const tmp3Result = tmp3(self, constructResult);
+    const obj2 = lazyLoadFeedbackIntegration;
+    const result = obj2.lazyLoadFeedbackIntegration();
     return tmp3Result;
   }
 }
-_inherits(ScreenshotButton, noop.Component);
+_inherits(ScreenshotButton, react.Component);
 const entry = {
   key: "componentDidMount",
   value: function componentDidMount() {
     const self = this;
-    this._themeListener = timestampProducer.addChangeListener(() => {
+    this._themeListener = metroRequire.addChangeListener(() => {
       self.forceUpdate();
     });
   }
@@ -244,53 +255,64 @@ let items = [
   {
     key: "render",
     value: function render() {
+      let assign5Result;
+      let createElement;
+      let createElement2;
+      let obj6;
       const self = this;
-      const theme = ScreenshotButton(1064).getTheme();
-      const merged = Object.assign(Object.assign({}, ScreenshotButton(1066).defaultScreenshotButtonConfiguration), this.props);
-      const obj = ScreenshotButton(1064);
+      const obj = _mod1064;
+      const theme = obj.getTheme();
+      const merged = Object.assign(Object.assign({}, defaultConfiguration.defaultScreenshotButtonConfiguration), this.props);
+      const _Object = Object;
+      const assign2 = Object.assign;
       const styles = this.props.styles;
       let triggerButton;
-      const merged1 = Object.assign({}, ScreenshotButton(1067).defaultScreenshotButtonStyles(theme).triggerButton);
+      const obj2 = defaultButtonStyles;
+      const assign2Result = assign2({}, obj2.defaultScreenshotButtonStyles(theme).triggerButton);
       if (null !== styles) {
         if (undefined !== styles) {
           triggerButton = styles.triggerButton;
         }
       }
-      const merged2 = Object.assign(merged1, triggerButton);
-      const obj2 = ScreenshotButton(1067);
+      const _Object2 = Object;
+      const assign3 = Object.assign;
+      const assign4 = Object.assign;
       const styles2 = self.props.styles;
       let triggerText;
-      const merged3 = Object.assign({}, ScreenshotButton(1067).defaultScreenshotButtonStyles(theme).triggerText);
+      const obj3 = assign(assign2Result, triggerButton);
+      const tmpResult = defaultButtonStyles;
+      const assign4Result = assign4({}, tmpResult.defaultScreenshotButtonStyles(theme).triggerText);
       if (null !== styles2) {
         if (undefined !== styles2) {
           triggerText = styles2.triggerText;
         }
       }
-      const style = Object.assign(merged3, triggerText);
-      const tmpResult = ScreenshotButton(1067);
+      const style = assign3(assign4Result, triggerText);
+      const _Object3 = Object;
+      const assign5 = Object.assign;
+      const assign6 = Object.assign;
       const styles3 = self.props.styles;
       let triggerIcon;
-      const merged5 = Object.assign({}, ScreenshotButton(1067).defaultScreenshotButtonStyles(theme).triggerIcon);
+      const tmpResult2 = defaultButtonStyles;
+      const assign6Result = assign6({}, tmpResult2.defaultScreenshotButtonStyles(theme).triggerIcon);
       if (null !== styles3) {
         if (undefined !== styles3) {
           triggerIcon = styles3.triggerIcon;
         }
       }
-      const obj4 = { source: null, style: null };
-      const obj5 = { uri: null };
-      const merged6 = Object.assign(merged5, triggerIcon);
-      ({ createElement, createElement: createElement2 } = noop);
-      obj5.uri = ScreenshotButton(1068).screenshotIcon;
-      obj4.source = obj5;
-      obj4.style = merged6;
-      const element2 = createElement2(React5, obj4);
-      return <React7 style={merged2} onPress={takeScreenshot} accessibilityLabel={merged.triggerAriaLabel}>{element2}<React6 style={style} testID="sentry-feedback-screenshot-button">{merged.triggerLabel}</React6></React7>;
+      const obj5 = { source: obj6, style: assign5Result };
+      ({ createElement, createElement: createElement2 } = react);
+      obj6 = { uri: feedbackIcon.screenshotIcon };
+      assign5Result = assign5(assign6Result, triggerIcon);
+      const element2 = createElement2(metroImportDefault, obj5);
+      return <React4 style={obj3} onPress={takeScreenshot} accessibilityLabel={merged.triggerAriaLabel}>{element2}<metroImportAll style={style} testID="sentry-feedback-screenshot-button">{merged.triggerLabel}</metroImportAll></React4>;
     }
   }
 ];
+const ScreenshotButton_export = _createClass(ScreenshotButton, items);
 
-export () => {
+export const getCapturedScreenshot = () => {
   c11 = undefined;
   return c11;
-}
-export const ScreenshotButton = _createClass(ScreenshotButton, items);
+};
+export { ScreenshotButton_export as ScreenshotButton };

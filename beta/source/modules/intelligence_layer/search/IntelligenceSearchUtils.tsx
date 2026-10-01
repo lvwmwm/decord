@@ -6,56 +6,62 @@
 
 // Module 11849 (IntelligenceSearchUtils)
 import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
+import SearchConstants from "SearchConstants" /* 7303 */;
 import SearchUtils from "SearchUtils" /* 11823 */;
 import QueryTokenizer from "QueryTokenizer" /* 11829 */;
+import IntelligenceSearchConstants from "IntelligenceSearchConstants" /* 11847 */;
 import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11848 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11846 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let SearchTokenTypes;
+let hasOwnProperty;
 function isUnsupportedFilterToken(type) {
-  let tmp = type.type !== QueryTokenizer.NON_TOKEN_TYPE;
-  if (tmp) {
-    tmp = !set.has(type.type);
-  }
+  const tmp = type.type !== QueryTokenizer.NON_TOKEN_TYPE && !set.has(type.type);
   return tmp;
 }
-const MAX_PRESENTED_CITATIONS = fn(11847).MAX_PRESENTED_CITATIONS;
-const Constants = fn(1074);
+const MAX_PRESENTED_CITATIONS = IntelligenceSearchConstants.MAX_PRESENTED_CITATIONS;
 ({ SearchTokenTypes, SearchTypes: hasOwnProperty } = Constants);
-const SearchTabs = fn(7303).SearchTabs;
+const SearchTabs = SearchConstants.SearchTabs;
 const items = [, ];
 ({ FILTER_IN: arr[0], ANSWER_IN: arr[1] } = SearchTokenTypes);
 const set = new Set(items);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/IntelligenceSearchUtils.tsx");
 
-export const getIntelligenceSearchQuery = function getIntelligenceSearchQuery(searchQueryString) {
-  const tokenizeQueryResult = SearchUtils.tokenizeQuery(searchQueryString);
-  const searchQueryFromTokens = SearchUtils.getSearchQueryFromTokens(tokenizeQueryResult);
-  const nonTokenQuery = SearchUtils.getNonTokenQuery(tokenizeQueryResult);
+export const getIntelligenceSearchQuery = function getIntelligenceSearchQuery(c1) {
+  let channel_id;
+  const obj = SearchUtils;
+  const tokenizeQueryResult = obj.tokenizeQuery(c1);
+  const obj3 = SearchUtils;
+  const searchQueryFromTokens = obj3.getSearchQueryFromTokens(tokenizeQueryResult);
+  const obj4 = SearchUtils;
+  const nonTokenQuery = obj4.getNonTokenQuery(tokenizeQueryResult);
   let tmp2 = null;
   if (0 !== nonTokenQuery.length) {
     tmp2 = null;
     if (!tokenizeQueryResult.some(isUnsupportedFilterToken)) {
-      const obj2 = { queryText: nonTokenQuery, channelIds: null };
-      let channel_id = searchQueryFromTokens.channel_id;
+      const obj2 = { queryText: nonTokenQuery, channelIds: channel_id };
+      channel_id = searchQueryFromTokens.channel_id;
       if (channel_id == null) {
         channel_id = [];
       }
-      obj2.channelIds = channel_id;
       tmp2 = obj2;
     }
   }
   return tmp2;
 };
-export const isSupportedSearchContext = function isSupportedSearchContext(type) {
-  return type.type === constants.GUILD || type.type === tmp.GUILD_CHANNEL;
+export const isSupportedSearchContext = function isSupportedSearchContext(c0) {
+  return c0.type === hasOwnProperty.GUILD || c0.type === tmp.GUILD_CHANNEL;
 };
 export const hydrateAndFilterCitations = function hydrateAndFilterCitations(response) {
+  let blockedOrIgnoredForMessage;
   const message_citations = response.message_citations;
   const mapped = message_citations.map((sourceId) => {
-    const obj = { sourceId: sourceId.source_id, sourceType: sourceId.source_type, guildId: sourceId.guild_id, channelId: sourceId.channel_id, messageId: sourceId.message_id, message: MessageRecordUtils.createMessageRecord(sourceId.message) };
+    let obj2;
+    const obj = { sourceId: sourceId.source_id, sourceType: sourceId.source_type, guildId: sourceId.guild_id, channelId: sourceId.channel_id, messageId: sourceId.message_id, message: obj2.createMessageRecord(sourceId.message) };
+    obj2 = MessageRecordUtils;
     return obj;
   });
   return mapped.filter((message) => !blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(message.message));
@@ -67,8 +73,9 @@ export const resolveSearchStatus = function resolveSearchStatus(response, length
   } else if ("no_results" === search_status) {
     return IntelligenceSearchTypes.IntelligenceSearchStatus.EMPTY;
   } else if ("success" === search_status) {
+    let EMPTY;
     if (length > 0) {
-      let EMPTY = IntelligenceSearchTypes.IntelligenceSearchStatus.LOADED;
+      EMPTY = IntelligenceSearchTypes.IntelligenceSearchStatus.LOADED;
     } else {
       EMPTY = IntelligenceSearchTypes.IntelligenceSearchStatus.EMPTY;
     }
@@ -78,7 +85,8 @@ export const resolveSearchStatus = function resolveSearchStatus(response, length
   }
 };
 export const parseConversationId = function parseConversationId(sourceId) {
-  const match = /\/(\d+)$/.exec(sourceId);
+  const obj = /\/(\d+)$/;
+  const match = obj.exec(sourceId);
   let tmp2;
   if (match != null) {
     tmp2 = match[1];
@@ -89,26 +97,33 @@ export const parseConversationId = function parseConversationId(sourceId) {
   return tmp2;
 };
 export const getIntelligenceSearchStatus = function getIntelligenceSearchStatus(searchContext, searchResultsQuery) {
-  const guildIdFromSearchContext = SearchUtils.getGuildIdFromSearchContext(searchContext);
+  const obj = SearchUtils;
+  const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
   let status = null;
   if (null != guildIdFromSearchContext) {
-    status = IntelligenceSearchStore.getStatus(guildIdFromSearchContext, SearchUtils.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, searchResultsQuery));
+    const getStatus = IntelligenceSearchStore.getStatus;
     const tmpResult = SearchUtils;
+    status = getStatus(guildIdFromSearchContext, tmpResult.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, searchResultsQuery));
   }
   return status;
 };
 export const isIntelligenceSearchActive = function isIntelligenceSearchActive(intelligenceStatus) {
-  return intelligenceStatus === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADING || intelligenceStatus === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADED;
+  const tmp3 = intelligenceStatus === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADING || intelligenceStatus === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADED;
+  return tmp3;
 };
 export const isIntelligenceSearchEmptyOrErrored = function isIntelligenceSearchEmptyOrErrored(status) {
-  return status === IntelligenceSearchTypes.IntelligenceSearchStatus.EMPTY || status === IntelligenceSearchTypes.IntelligenceSearchStatus.ERROR;
+  const tmp3 = status === IntelligenceSearchTypes.IntelligenceSearchStatus.EMPTY || status === IntelligenceSearchTypes.IntelligenceSearchStatus.ERROR;
+  return tmp3;
 };
 export const getIntelligenceSearchCitationsCount = function getIntelligenceSearchCitationsCount(searchContext, searchResultsQuery, arg2) {
-  const guildIdFromSearchContext = SearchUtils.getGuildIdFromSearchContext(searchContext);
+  const obj = SearchUtils;
+  const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
   if (null == guildIdFromSearchContext) {
     return 0;
   } else {
-    const answer = IntelligenceSearchStore.getAnswer(guildIdFromSearchContext, SearchUtils.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, searchResultsQuery));
+    const getAnswer = IntelligenceSearchStore.getAnswer;
+    const tmpResult = SearchUtils;
+    const answer = getAnswer(guildIdFromSearchContext, tmpResult.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, searchResultsQuery));
     let num;
     if (answer != null) {
       num = answer.citations.length;

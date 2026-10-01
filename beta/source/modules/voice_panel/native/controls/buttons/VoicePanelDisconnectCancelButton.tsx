@@ -5,6 +5,7 @@
 // Exports: default
 
 // Module 17018 (VoicePanelDisconnectCancelButton)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import StreamActionCreators from "StreamActionCreators" /* 4978 */;
@@ -12,71 +13,85 @@ import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 *
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
 import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8765 */;
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 8805 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import VoicePanelStore from "VoicePanelStore" /* 5044 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const VoicePanelModes = fn(11755).VoicePanelModes;
-const jsx = fn(21).jsx;
+let obj2;
+let obj3;
+const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
+const jsx = Fragment.jsx;
 const constants = { USER: 0, [0]: "USER", STREAM: 1, [1]: "STREAM", ACTIVITY: 2, [2]: "ACTIVITY" };
-const createStyles = fn(4836);
-let obj2 = { disconnectCancelBG: { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT }, icon: null };
-let obj3 = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
-obj2.icon = { tintColor: nativeDefault.colors.WHITE };
-let closure_11 = createStyles.createStyles(obj2);
+let createStyles = createStyles_mod;
+let obj = { disconnectCancelBG: obj2, icon: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
+createStyles = createStyles.createStyles;
+obj3 = { tintColor: nativeDefault.colors.WHITE };
+let closure_11 = createStyles(obj);
 const __initData = { code: "function VoicePanelDisconnectCancelButtonTsx1(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get$id,_focused$get;if(mode.get()!==VoicePanelModes.PANEL){return null;}return(_focused$get$id=(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)!==null&&_focused$get$id!==void 0?_focused$get$id:null;}" };
 const __initData2 = { code: "function VoicePanelDisconnectCancelButtonTsx2(focusId,lastFocusId){const{runOnJS,handleFocusChange}=this.__closure;if(focusId!==lastFocusId){runOnJS(handleFocusChange)(focusId);}}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelDisconnectCancelButton.tsx");
 
 export default function DisconnectCancelButton(props) {
+  let icon;
+  let items1;
+  let stringResult;
   let channelId;
   let focused;
   let first;
   let PhoneHangUpIcon;
+  props = props.props;
   let tmp = closure_11();
   _require = tmp;
+  let obj = first;
+  const tmp2 = channelId;
   const context = first.useContext(channelId(focused[9]));
   channelId = context.channelId;
   focused = context.focused;
   const mode = context.mode;
   const tmp5 = mode(first.useState(null), 2);
   first = tmp5[0];
-  closure_5 = tmp5[1];
+  let closure_5 = tmp5[1];
   const handleFocusChange = first.useCallback((id) => {
     if (null != id) {
+      let STREAM;
       const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
       let applicationId;
       if (currentEmbeddedActivity != null) {
         applicationId = currentEmbeddedActivity.applicationId;
       }
       if (null != applicationId) {
+        const obj3 = { applicationId: null, instanceId: null };
         ({ applicationId: obj2.applicationId, compositeInstanceId: obj2.instanceId } = currentEmbeddedActivity);
+        const obj = ChannelRTCParticipants;
         if (id === obj.getEmbeddedActivityParticipantId(obj3)) {
           closure_5(constants.ACTIVITY);
         }
-        obj = ChannelRTCParticipants;
-        obj3 = { applicationId: null, instanceId: null };
       }
+      const tmp12 = closure_5;
       if (null == ApplicationStreamingStore.getActiveStreamForStreamKey(id)) {
-        let STREAM = constants.USER;
+        STREAM = constants.USER;
       } else {
         STREAM = constants.STREAM;
       }
-      closure_5(STREAM);
+      tmp12(STREAM);
     } else {
       closure_5(null);
     }
   }, []);
+  let obj2 = require("ReanimatedRexport");
   const fn = function p() {
     let tmp = null;
     if (mode.get() === VoicePanelModes.PANEL) {
-      value = focused.get();
+      const value = focused.get();
       let id;
       if (value != null) {
         id = value.id;
@@ -88,79 +103,78 @@ export default function DisconnectCancelButton(props) {
     }
     return tmp;
   };
-  fn.__closure = { mode, VoicePanelModes, focused };
+  let obj3 = { mode, VoicePanelModes, focused };
+  fn.__closure = obj3;
   fn.__workletHash = 1109426015268;
   fn.__initData = __initData;
   class T {
     constructor(arg0, arg1) {
-      if (props !== arg1) {
-        tmp = closure_0;
-        tmp2 = closure_2;
-        obj = closure_0(closure_2[11]);
-        tmp3 = closure_6;
-        tmp4 = obj.runOnJS(closure_6)(props);
+      if (arg0 !== arg1) {
+        const obj = ReanimatedRexport;
+        obj.runOnJS(callback)(arg0);
       }
-      return;
     }
   }
-  let obj = first;
-  let obj2 = require("ReanimatedRexport");
-  let obj3 = { mode, VoicePanelModes, focused };
-  const tmp2 = channelId;
   T.__closure = { runOnJS: require("ReanimatedRexport").runOnJS, handleFocusChange };
   T.__workletHash = 16719769067952;
   T.__initData = __initData2;
+  ({ runOnJS: require("ReanimatedRexport").runOnJS, handleFocusChange });
   const animatedReaction = obj2.useAnimatedReaction(fn, T);
   const items = [channelId, first, focused];
   const callback1 = first.useCallback(() => {
-    value = focused.get();
+    let id;
+    const value = focused.get();
     if (value != null) {
-      const id = value.id;
+      id = value.id;
     }
     if (first !== constants.ACTIVITY) {
       if (tmp2 === constants.STREAM) {
-        const participant = ChannelRTCActionCreatorsDefault.selectParticipant(channelId, null);
+        const obj5 = ChannelRTCActionCreatorsDefault;
+        const participant = obj5.selectParticipant(channelId, null);
         if (null != id) {
-          StreamActionCreators.stopStream(id);
+          const obj6 = StreamActionCreators;
+          obj6.stopStream(id);
         }
       } else {
-        SelectedChannelActionCreatorsDefault.disconnect();
+        const obj3 = SelectedChannelActionCreatorsDefault;
+        obj3.disconnect();
         const state = VoicePanelStore.getState();
         state.closeChannel(channelId);
       }
     } else {
       const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
-      const result = ChannelRTCParticipants.activityParticipantIdToApplicationId(id);
+      const obj = ChannelRTCParticipants;
+      const result = obj.activityParticipantIdToApplicationId(id);
       let _location;
+      const leaveActivity = EmbeddedActivitiesNativeManagerDefault.leaveActivity;
+      EmbeddedActivitiesNativeManagerDefault;
       if (currentEmbeddedActivity != null) {
         _location = currentEmbeddedActivity.location;
       }
-      const obj3 = { location: _location, applicationId: result };
-      EmbeddedActivitiesNativeManagerDefault.leaveActivity(obj3);
+      const obj2 = { location: _location, applicationId: result };
+      leaveActivity(obj2);
     }
   }, items);
   if (first === constants.ACTIVITY) {
     PhoneHangUpIcon = tmp8(tmp3[16]).DoorExitIcon;
-  } else if (first === tmp11.STREAM) {
+  } else if (first === constants.STREAM) {
     PhoneHangUpIcon = tmp8(tmp3[17]).ScreenXIcon;
   } else {
     PhoneHangUpIcon = tmp8(tmp3[18]).PhoneHangUpIcon;
   }
-  const element = { onPress: callback1, props: props.props, style: tmp.disconnectCancelBG, accessibilityLabel: null, children: null };
-  let obj4 = { runOnJS: require("ReanimatedRexport").runOnJS, handleFocusChange };
   let tmp12 = jsx;
+  const element = { onPress: callback1, props, style: tmp.disconnectCancelBG, accessibilityLabel: stringResult, children: obj.useMemo(() => <PhoneHangUpIcon style={icon.icon} />, items1) };
+  const tmp2Result = tmp2(focused[19]);
   if (first === constants.ACTIVITY) {
     const intl3 = tmp8(tmp3[20]).intl;
-    let stringResult = intl3.string(tmp8(tmp3[20]).t["R/FK4A"]);
-  } else if (first === tmp11.STREAM) {
+    stringResult = intl3.string(tmp8(tmp3[20]).t["R/FK4A"]);
+  } else if (first === constants.STREAM) {
     const intl2 = tmp8(tmp3[20]).intl;
     stringResult = intl2.string(tmp8(tmp3[20]).t.q3O3J8);
   } else {
     const intl = tmp8(tmp3[20]).intl;
     stringResult = intl.string(tmp8(tmp3[20]).t["6vrfgt"]);
   }
-  element.accessibilityLabel = stringResult;
-  const items1 = [PhoneHangUpIcon, tmp.icon];
-  element.children = obj.useMemo(() => <PhoneHangUpIcon style={icon.icon} />, items1);
-  return tmp12(tmp2(focused[19]), element);
+  items1 = [PhoneHangUpIcon, tmp.icon];
+  return tmp12(tmp2Result, element);
 };

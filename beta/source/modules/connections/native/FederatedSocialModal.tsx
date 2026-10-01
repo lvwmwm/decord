@@ -5,175 +5,205 @@
 // Exports: default
 
 // Module 8584 (FederatedSocialModal)
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl5 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
 import PlatformsDefault from "Platforms" /* 5595 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
 import FederatedSocialUtils from "FederatedSocialUtils" /* 8585 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _location, _require, c4, c5, closure_2;
 
-const FreeFormInputGroupDefault = tmp6(6023);
-require = fn;
-const WebBrowserType = fn(1074).WebBrowserType;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
+let metroImportAll;
+let metroImportDefault;
+let tmp9;
+const FreeFormInputGroupDefault = tmp9(6023);
+const WebBrowserType = Constants.WebBrowserType;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: { paddingHorizontal: 0, paddingVertical: 0, marginVertical: 16 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/connections/native/FederatedSocialModal.tsx");
 
 export default function FederatedSocialModal(platformType) {
+  let intl2;
+  let obj3;
+  let obj4;
   _require = platformType;
-  value = PlatformsDefault.get(platformType.platformType);
+  let tmp = dependencyMap;
+  let obj = PlatformsDefault;
+  let value = obj.get(platformType.platformType);
   let name;
   if (value != null) {
     name = value.name;
   }
   if (name == null) {
-    let intl = require("util").intl;
-    name = intl.string(require("util").t["bU/GZm"]);
+    const tmp4 = _require;
+    let intl = require("intl").intl;
+    name = intl.string(require("intl").t["bU/GZm"]);
   }
-  let obj2 = { root: null };
-  let obj3 = { headerTitle: null, headerLeft: null, render: null };
-  let intl2 = require("util").intl;
-  obj3.headerTitle = intl2.formatToPlainString(require("util").t["ImMhq+"], { serviceName: name });
-  obj3.headerLeft = require("NavigatorHeader").getHeaderBackButton(platformType.onClose);
-  obj3.render = function render() {
-    ({ location: closure_0, successRedirect: closure_1, platformType } = platformType);
-    const onClose = platformType.onClose;
-    first = undefined;
-    closure_7 = async function _tryHandle(arg0, value) {
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c5 = 2;
-          if (0 === c4) {
+  let obj2 = { root: obj3 };
+  obj3 = {
+    headerTitle: intl2.formatToPlainString(require("intl").t["ImMhq+"], { serviceName: name }),
+    headerLeft: obj4.getHeaderBackButton(platformType.onClose),
+    render() {
+      let closure_129_0;
+      let closure_129_1;
+      let closure_5;
+      let closure_6;
+      let first;
+      let first1;
+      let first2;
+      let intl2;
+      let intl3;
+      let intl4;
+      let items;
+      let tmp4;
+      ({ location: closure_129_0, successRedirect: closure_129_1, platformType } = platformType);
+      const onClose = platformType.onClose;
+      first = undefined;
+      closure_5 = undefined;
+      closure_6 = undefined;
+      let obj = function _tryHandle() {
+        let handle;
+        let successRedirect;
+        obj = closure_2_3(function*(arg0, value) {
+          let closure_0;
+          let closure_1;
+          let obj6;
+          if (c5 === 2) {
+            c5 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
             if (arg0 === 1) {
-              c5 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c5 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
+              const obj2 = { value, done: true };
+              return obj2;
             } else {
-              closure_0 = tmp7;
+              return { value: "HermesInternal", done: null };
+            }
+          } else {
+            let c3;
+            try {
               let body;
-              WebBrowserType(true);
-              noop(null);
-              c3 = 1;
-              const obj4 = { location: _location, successRedirect, handle };
-              c4 = 2;
-              c5 = 1;
-              const obj5 = { value: tmp3(tmp31[8]).authorize(platformType, obj4), done: false };
-              return obj5;
-            }
-          } else {
-            if (1 === tmp7) {
-              c3 = 0;
-              const intl = closure_0(tmp31[7]).intl;
-              closure_129_5(intl.string(closure_0(tmp31[7]).t["7wbPNl"]));
-              closure_129_6(false);
-              c5 = 3;
-            } else if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 0;
-              c5 = 3;
-              const obj7 = { value, done: true };
-              return obj7;
-            } else {
-              body = value.body;
-              let url;
-              if (body != null) {
-                url = body.url;
+              c5 = 2;
+              if (0 === c4) {
+                if (arg0 === 1) {
+                  c5 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c5 = 3;
+                  const obj3 = { value, done: true };
+                  return obj3;
+                } else {
+                  _location = tmp4;
+                  body = undefined;
+                  closure_2_6(true);
+                  closure_2_5(null);
+                  c3 = 1;
+                  const obj4 = { location: _location, successRedirect, handle };
+                  c4 = 2;
+                  c5 = 1;
+                  const obj5 = { value: obj6.authorize(platformType, obj4), done: false };
+                  obj6 = tmp(closure_2[8]);
+                  return obj5;
+                }
+              } else {
+                if (1 === c4) {
+                  c3 = 0;
+                  const intl = _location(closure_2[7]).intl;
+                  closure_129_5(intl.string(_location(closure_2[7]).t["7wbPNl"]));
+                  closure_129_6(false);
+                } else if (arg0 === 1) {
+                  c5 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 0;
+                  c5 = 3;
+                  const obj7 = { value, done: true };
+                  return obj7;
+                } else {
+                  body = value.body;
+                  let url;
+                  if (body != null) {
+                    url = body.url;
+                  }
+                  if (null == url) {
+                    const _Error = Error;
+                    const self = this;
+                    const self2 = this;
+                    const error = new Error();
+                    throw error;
+                  } else {
+                    obj = tmp(closure_2[9]);
+                    obj.openURLExternally(body.url, constants.SAFARI);
+                    closure_129_3();
+                    c3 = 0;
+                  }
+                }
+                c5 = 3;
+                return { value: "HermesInternal", done: null };
               }
-              if (null != url) {
-                tmp3(tmp31[9]).openURLExternally(body.url, constants.SAFARI);
-                closure_129_3();
-                c3 = 0;
-                const obj = tmp3(tmp31[9]);
+            } catch (tmp26) {
+              closure_2 = tmp26;
+              if (0 === c3) {
+                c5 = 3;
+                throw tmp26;
+              } else {
+                c4 = 1;
               }
             }
-            const _Error = Error;
-            const error = new Error();
-            throw error;
           }
-        } catch (tmp31) {
-          if (tmp4 === c3) {
-            c5 = tmp2;
-            throw tmp31;
-          } else {
-            c4 = tmp;
-          }
-        }
+        });
+        return obj(...arguments);
+      };
+      const tmp = closure_9();
+      [first, tmp4] = react.useState("");
+      [first1, closure_5] = react.useState(null);
+      [first2, closure_6] = react.useState(false);
+      obj = PlatformsDefault;
+      const value = obj.get(platformType);
+      let name;
+      if (value != null) {
+        name = value.name;
       }
-    };
-    const tmp = closure_9();
-    [first, obj6.onChangeText] = noop.useState("");
-    const tmp4 = _slicedToArray(noop.useState(null), 2);
-    closure_5 = tmp4[1];
-    const tmp5 = _slicedToArray(noop.useState(false), 2);
-    closure_6 = tmp5[1];
-    value = PlatformsDefault.get(platformType);
-    let name;
-    if (value != null) {
-      name = value.name;
-    }
-    if (name == null) {
-      let intl = util.intl;
-      name = intl.string(util.t["bU/GZm"]);
-    }
-    function tryHandle() {
-      const self = this;
-      const apply = closure_7.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
+      if (name == null) {
+        let intl = intl5.intl;
+        name = intl.string(intl5.t["bU/GZm"]);
       }
-      return applyArgumentsResult;
+      function tryHandle() {
+        return obj(...arguments);
+      }
+      let obj2 = FederatedSocialUtils;
+      const exampleHandle = obj2.getExampleHandle(platformType);
+      let obj3 = FederatedSocialUtils;
+      let obj4 = { bottom: true, style: tmp.container, children: items };
+      const validateHandleResult = obj3.validateHandle(first, platformType);
+      const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
+      let obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: intl2.formatToPlainString(intl5.t["7TByKh"], { serviceName: name }) };
+      const Text = Text_Text.Text;
+      intl2 = intl5.intl;
+      items = [metroImportDefault(Text, obj5), , ];
+      let obj6 = { autoFocus: true, style: tmp.input, label: intl3.string(intl5.t.tZ9QFR), placeholder: exampleHandle, error: first1, returnKeyType: "done", onChangeText: tmp4, onSubmitEditing: tryHandle, clearButtonVisibility: native.ClearButtonVisibility.WITH_CONTENT, autoCapitalize: "none", autoComplete: "off", autoCorrect: false };
+      const tmp9Result = FreeFormInputGroupDefault;
+      intl3 = intl5.intl;
+      items[1] = metroImportDefault(tmp9Result, obj6);
+      let obj7 = { loading: first2, disabled: !validateHandleResult, text: intl4.string(intl5.t.PDTjLN), onPress: tryHandle };
+      const Button = components_Button_Button.Button;
+      intl4 = intl5.intl;
+      items[2] = metroImportDefault(Button, obj7);
+      return metroImportAll(SafeAreaPaddingView, obj4);
     }
-    const exampleHandle = FederatedSocialUtils.getExampleHandle(platformType);
-    let obj4 = { bottom: true, style: tmp.container, children: null };
-    let obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: null };
-    const intl2 = util.intl;
-    obj5.children = intl2.formatToPlainString(util.t["7TByKh"], { serviceName: name });
-    const items = [React5(Text_Text.Text, obj5), , ];
-    const obj6 = { autoFocus: true, style: tmp.input, label: null, placeholder: null, error: null, returnKeyType: "done", onChangeText: null, onSubmitEditing: null, clearButtonVisibility: null, autoCapitalize: "none", autoComplete: "off", autoCorrect: false };
-    const validateHandleResult = FederatedSocialUtils.validateHandle(first, platformType);
-    const intl3 = util.intl;
-    obj6.label = intl3.string(util.t.tZ9QFR);
-    obj6.placeholder = exampleHandle;
-    obj6.error = tmp4[0];
-    obj6.onSubmitEditing = tryHandle;
-    obj6.clearButtonVisibility = native.ClearButtonVisibility.WITH_CONTENT;
-    items[1] = React5(FreeFormInputGroupDefault, obj6);
-    let obj7 = { loading: tmp5[0], disabled: !validateHandleResult, text: null, onPress: null };
-    const intl4 = util.intl;
-    obj7.text = intl4.string(util.t.PDTjLN);
-    obj7.onPress = tryHandle;
-    items[2] = React5(components_Button_Button.Button, obj7);
-    obj4.children = items;
-    return React6(common_SafeAreaView.SafeAreaPaddingView, obj4);
   };
-  obj2.root = obj3;
+  intl2 = require("intl").intl;
+  obj4 = require("NavigatorHeader");
   return closure_7(require("Navigator").Navigator, { initialRouteName: "root", screens: obj2 });
 };

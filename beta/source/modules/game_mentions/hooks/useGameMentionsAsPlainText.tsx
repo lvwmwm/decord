@@ -5,45 +5,54 @@
 // Exports: useGameMentionsAsPlainText
 
 // Module 10339 (useGameMentionsAsPlainText)
-import noop from "module_19" /* 19 */;
+import StringUtils from "StringUtils" /* 2011 */;
+import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2001 */;
 import UserStore from "UserStore" /* 1372 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5306 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, game;
 
-const require = fn;
-const ChannelAutocompleteConstants = fn(5306);
+let hasOwnProperty;
+let metroRequire;
 ({ extractGameMentionIds: hasOwnProperty, GAME_MENTION_RAW_RE_GLOBAL: metroRequire } = ChannelAutocompleteConstants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_mentions/hooks/useGameMentionsAsPlainText.tsx");
 
 export const useGameMentionsAsPlainText = function useGameMentionsAsPlainText(state) {
   _require = state;
   const items = [state];
-  const memo = noop.useMemo(() => {
-    let str = closure_0;
-    if (closure_0 == null) {
+  const memo = react.useMemo(() => {
+    let str = state;
+    const tmp = hasOwnProperty;
+    if (state == null) {
       str = "";
     }
-    return hasOwnProperty(str);
+    return tmp(str);
   }, items);
-  const games = require("useGame").useGames(memo);
-  const obj = require("useGame");
+  let obj = require("useGame");
+  const games = obj.useGames(memo);
   const items1 = [GameStore, UserStore];
   const items2 = [state, memo];
-  return require("initialize").useStateFromStores(items1, () => {
-    if (!obj.isNullOrEmpty(nsfwAllowed)) {
+  const obj2 = require("get initialized");
+  return obj2.useStateFromStores(items1, () => {
+    let obj = StringUtils;
+    if (!obj.isNullOrEmpty(state)) {
       if (0 !== memo.length) {
+        const tmp2 = UserStore;
         const currentUser = UserStore.getCurrentUser();
-        nsfwAllowed = undefined;
+        let nsfwAllowed;
         if (currentUser != null) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        return str.replace(timestampProducer, (arg0, gameId) => {
+        return state.replace(metroRequire, (arg0, gameId) => {
+          let stringResult;
           game = game.getGame(gameId);
+          const obj = state(memo[7]);
           if (obj.isGameProfileObscured(game, nsfwAllowed)) {
             const intl2 = tmp2(tmp3[8]).intl;
-            let stringResult = intl2.string(tmp2(tmp3[8]).t["11pdXZ"]);
+            stringResult = intl2.string(tmp2(tmp3[8]).t["11pdXZ"]);
           } else {
             stringResult = undefined;
             if (game != null) {
@@ -58,6 +67,6 @@ export const useGameMentionsAsPlainText = function useGameMentionsAsPlainText(st
         });
       }
     }
-    return nsfwAllowed;
+    return state;
   }, items2);
 };

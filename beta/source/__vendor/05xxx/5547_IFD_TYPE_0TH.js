@@ -12,28 +12,29 @@ import _modDef5554 from "module_5554" /* 5554 */;
 import _modDef5555 from "module_5555" /* 5555 */;
 import _modDef5556 from "module_5556" /* 5556 */;
 import module_5526 from "module_5526" /* 5526 */;
-import decodeXPValue from "decodeXPValue" /* 5548 */;
+import module_5548 from "module_5548" /* 5548 */;
 
-const objectAssignResult = module_5526.objectAssign({}, decodeXPValue, _modDef5550);
-const obj = { "0th": objectAssignResult, "1st": decodeXPValue, exif: objectAssignResult, gps: _modDef5552, interoperability: _modDef5553, mpf: null, canon: null, pentax: null };
+let importDefaultResult1;
+let importDefaultResult2;
+let importDefaultResult3;
+const objectAssign = module_5526.objectAssign;
+const objectAssignResult = objectAssign({}, module_5548, _modDef5550);
+const obj = { "0th": objectAssignResult, "1st": module_5548, exif: objectAssignResult, gps: _modDef5552, interoperability: _modDef5553, mpf: importDefaultResult1, canon: importDefaultResult2, pentax: importDefaultResult3 };
 if (_modDef5529.USE_MPF) {
-  let importDefaultResult1 = _modDef5554;
+  importDefaultResult1 = _modDef5554;
 } else {
   importDefaultResult1 = {};
 }
-obj.mpf = importDefaultResult1;
 if (_modDef5529.USE_MAKER_NOTES) {
-  let importDefaultResult2 = _modDef5555;
+  importDefaultResult2 = _modDef5555;
 } else {
   importDefaultResult2 = {};
 }
-obj.canon = importDefaultResult2;
 if (_modDef5529.USE_MAKER_NOTES) {
-  let importDefaultResult3 = _modDef5556;
+  importDefaultResult3 = _modDef5556;
 } else {
   importDefaultResult3 = {};
 }
-obj.pentax = importDefaultResult3;
 
 export default obj;
 export const IFD_TYPE_0TH = "0th";

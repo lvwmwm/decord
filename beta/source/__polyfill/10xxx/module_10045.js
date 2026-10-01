@@ -3,6 +3,8 @@
 // Dependencies: [41, 42, 93, 95, 98, 9900, 9901, 9902]
 
 // Module 10045
+import Meridiem from "Meridiem" /* 9900 */;
+import assignSimilarDate from "assignSimilarDate" /* 9901 */;
 import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
@@ -10,19 +12,14 @@ import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ESCasualTimeParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -32,19 +29,16 @@ function _isNativeReflectConstruct() {
 }
 class ESCasualTimeParser {
   constructor() {
-    self = this;
-    tmp = c2(this, ESCasualTimeParser);
-    tmp2 = closure_4;
-    obj = closure_4(ESCasualTimeParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ESCasualTimeParser);
+    const obj = _getPrototypeOf(ESCasualTimeParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
@@ -64,27 +58,30 @@ const items = [
     value: function innerExtract(refDate, arg1) {
       refDate = refDate.refDate;
       const parsingComponents = refDate.createParsingComponents();
-      const formatted = arg1[1].toLowerCase();
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
       if ("tarde" === formatted) {
-        parsingComponents.imply("meridiem", ESCasualTimeParser(9900).Meridiem.PM);
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
         parsingComponents.imply("hour", 15);
       } else if ("noche" === formatted) {
-        parsingComponents.imply("meridiem", ESCasualTimeParser(9900).Meridiem.PM);
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
         parsingComponents.imply("hour", 22);
       } else if ("ma\u00F1ana" === formatted) {
-        parsingComponents.imply("meridiem", ESCasualTimeParser(9900).Meridiem.AM);
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
         parsingComponents.imply("hour", 6);
       } else if ("medianoche" === formatted) {
         const _Date = Date;
+        const self = this;
+        const self2 = this;
         const date = new Date(refDate.getTime());
         date.setDate(date.getDate() + 1);
-        ESCasualTimeParser(9901).assignSimilarDate(parsingComponents, date);
-        ESCasualTimeParser(9901).implySimilarTime(parsingComponents, date);
+        assignSimilarDate.assignSimilarDate(parsingComponents, date);
+        assignSimilarDate.implySimilarTime(parsingComponents, date);
         parsingComponents.imply("hour", 0);
         parsingComponents.imply("minute", 0);
         parsingComponents.imply("second", 0);
       } else if ("mediodia" === formatted) {
-        parsingComponents.imply("meridiem", ESCasualTimeParser(9900).Meridiem.AM);
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
         parsingComponents.imply("hour", 12);
       }
       return parsingComponents;

@@ -6,34 +6,37 @@
 
 // Module 12451 (VibegrationsCreateErrors)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
-const prototype = function VibegrationsCreateError(reason, failureStatus) {
-  const tmp2 = new tmp("vibegrations create failed: " + reason + " [" + failureStatus + "]", " [", failureStatus, "]");
-  tmp2.name = "VibegrationsCreateError";
-  tmp2.reason = reason;
-  tmp2.status = failureStatus;
-  return tmp2;
-}.prototype;
-class prototype extends Error {
+class VibegrationsCreateError extends Error {
+  constructor(reason, failureStatus) {
+    const tmp2 = new tmp("vibegrations create failed: " + reason + " [" + failureStatus + "]", " [", failureStatus, "]");
+    tmp2.name = "VibegrationsCreateError";
+    tmp2.reason = reason;
+    tmp2.status = failureStatus;
+    return tmp2;
+  }
 }
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsCreateErrors.tsx");
 
-export const VibegrationsCreateError = prototype;
-export const classifyCreateFailure = function classifyCreateFailure(obj) {
-  if (typeof obj === "object") {
-    if (null !== obj) {
-      ({ status, body } = obj);
+export { VibegrationsCreateError };
+export const classifyCreateFailure = function classifyCreateFailure(value) {
+  let body;
+  let status;
+  if (typeof value === "object") {
+    if (null !== value) {
+      ({ status, body } = value);
       if (typeof status !== "number") {
         return "unknown";
       } else if (429 === status) {
         return "rate_limited";
       } else {
+        let code;
         if (body != null) {
-          const code = body.code;
+          code = body.code;
         }
         let str2 = "unknown";
         if (409 === status) {
@@ -61,17 +64,17 @@ export const createFailureStatus = function createFailureStatus(status) {
 };
 export const getVibegrationsCreateErrorMessage = function getVibegrationsCreateErrorMessage(reason) {
   let str = "unknown";
-  if (reason instanceof prototype) {
+  if (reason instanceof VibegrationsCreateError) {
     str = reason.reason;
   }
   if ("project_limit" === str) {
-    const intl3 = util.intl;
+    const intl3 = intl4.intl;
     return intl3.string(_modDef3715.Asusmn);
   } else if ("rate_limited" === str) {
-    const intl2 = util.intl;
+    const intl2 = intl4.intl;
     return intl2.string(_modDef3715.DT6qly);
   } else {
-    const intl = util.intl;
+    const intl = intl4.intl;
     return intl.string(_modDef3715.KKkp5Y);
   }
 };

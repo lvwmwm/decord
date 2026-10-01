@@ -5,201 +5,249 @@
 // Exports: default
 
 // Module 10125 (PremiumGiftModal)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10126 */;
-import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10127 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
+let user;
+
+let CUSTOMIZATION;
+let GIFTING_BADGE;
+let PLAN_SELECT;
+let REWARD_SELECT;
+let SUCCESS;
+let obj4;
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const jsx = Fragment.jsx;
 const PremiumGiftScreens = { PLAN_SELECT: "PremiumGiftPlanSelect", REWARD_SELECT: "GiftingSKUSelect", CUSTOMIZATION: "PremiumGiftCustomization", SUCCESS: "PremiumGiftSuccess", GIFTING_BADGE: "GiftingBadgePostPurchase" };
-let obj2 = { [PLAN_SELECT]: fn(10126).PaymentFlowStep.SKU_SELECT, [REWARD_SELECT]: fn(10126).PaymentFlowStep.REWARD_SKU_SELECT, [CUSTOMIZATION]: fn(10126).PaymentFlowStep.PLAN_SELECT, [SUCCESS]: fn(10126).PaymentFlowStep.CONFIRM, [GIFTING_BADGE]: fn(10126).PaymentFlowStep.CONFIRM };
+let obj2 = { [PLAN_SELECT]: PremiumAnalyticsUtils.PaymentFlowStep.SKU_SELECT, [REWARD_SELECT]: PremiumAnalyticsUtils.PaymentFlowStep.REWARD_SKU_SELECT, [CUSTOMIZATION]: PremiumAnalyticsUtils.PaymentFlowStep.PLAN_SELECT, [SUCCESS]: PremiumAnalyticsUtils.PaymentFlowStep.CONFIRM, [GIFTING_BADGE]: PremiumAnalyticsUtils.PaymentFlowStep.CONFIRM };
 ({ PLAN_SELECT, REWARD_SELECT, CUSTOMIZATION, SUCCESS, GIFTING_BADGE } = PremiumGiftScreens);
-const createStyles = fn(4836);
-let obj4 = { header: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" } };
-let closure_9 = createStyles.createStyles(obj4);
-const size = fn(2);
+let obj3 = { header: obj4 };
+obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
+let closure_9 = createStyles.createStyles(obj3);
 const result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumGiftModal.tsx");
 
 export default function PremiumGiftModal(analyticsLocations) {
+  let analyticsLoadId;
+  let analyticsLocation;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let closure_4;
+  let headerCloseButton;
+  let headerCloseButton1;
+  let initialRoute;
+  let intl;
+  let intl2;
+  let intl3;
+  let obj6;
+  let onDismiss;
+  let order;
+  let planInterval;
+  let premiumType;
+  let recipientUserId;
+  let tmp19Result;
+  let tmp9Result;
+  let tmp9Result12;
+  let tmp9Result13;
   ({ recipientUserId, premiumType, analyticsLocation } = analyticsLocations);
   analyticsLocations = analyticsLocations.analyticsLocations;
   ({ initialRoute, onDismiss } = analyticsLocations);
-  closure_4 = undefined;
+  react = undefined;
+  let tmp = analyticsLocations;
+  let tmp2 = onDismiss;
   ({ planInterval, order } = analyticsLocations);
-  const tmp3 = analyticsLocations(onDismiss[20])(() => analyticsLocation(onDismiss[21]).v4());
+  const analyticsLocations2 = analyticsLocations(onDismiss[19])(analyticsLocations).analyticsLocations;
+  const tmp3 = analyticsLocations(onDismiss[20])(() => {
+    const obj = analyticsLocation(onDismiss[21]);
+    return obj.v4();
+  });
   _slicedToArray = tmp3;
+  let obj = react;
   let items = [tmp3, analyticsLocation, analyticsLocations];
-  if (initialRoute != null) {
-    const items1 = [onDismiss];
-    const callback = obj.useCallback(() => {
-      ModalActionCreatorsDefault.pop();
-      if (onDismiss != null) {
-        onDismiss();
-      }
-    }, items1);
-    closure_129_0 = recipientUserId;
-    closure_129_1 = undefined;
-    closure_129_2 = undefined;
-    closure_129_3 = undefined;
-    closure_129_4 = undefined;
-    const tmp10 = closure_9();
-    obj2 = analyticsLocation(tmp2[7]);
-    const items2 = [UserStore];
-    const stateFromStores = obj2.useStateFromStores(items2, () => {
-      let user = null;
-      if (null != analyticsLocation) {
-        user = UserStore.getUser(tmp);
-      }
-      return user;
-    });
-    const fetchWishlistAndProfileInfoForUser = analyticsLocation(tmp2[8]).useFetchWishlistAndProfileInfoForUser(recipientUserId);
-    ({ wishlist: closure_129_1, userProfile: closure_129_2, wishlistId: closure_129_3, error: closure_129_4 } = fetchWishlistAndProfileInfoForUser);
-    const obj3 = analyticsLocation(tmp2[8]);
-    const obj5 = { isGift: true, giftRecipient: stateFromStores, isSocialLayerStorefrontEnabled: false };
-    const shouldShowWishlistInDMGifting = analyticsLocation(tmp2[8]).useShouldShowWishlistInDMGifting(obj5);
-    closure_129_5 = shouldShowWishlistInDMGifting;
-    if (shouldShowWishlistInDMGifting) {
-      const obj6 = { title: null, headerLeft: null, headerStyle: null, render: null };
-      const intl = tmp11(tmp2[9]).intl;
-      obj6.title = intl.string(tmp11(tmp2[9]).t["JCFN/y"]);
-      obj6.headerLeft = tmp11(tmp2[10]).getHeaderCloseButton(callback);
-      obj6.headerStyle = tmp10.header;
-      obj6.render = function render() {
-        return jsx(analyticsLocations(onDismiss[11]), { shouldUseDMWishlistGiftingDesign: true, isLoadingWishlist: false });
-      };
-      let obj7 = obj6;
-      const tmp11Result = tmp11(tmp2[10]);
+  const memo = react.useMemo(() => {
+    const obj = PremiumAnalyticsUtils;
+    obj2 = { isGift: true, analyticsLoadId, analyticsLocation, analyticsLocations };
+    return obj.getBasePurchaseFlowAnalyticsFields(obj2);
+  }, items);
+  if (initialRoute == null) {
+    let PLAN_SELECT;
+    if (null != premiumType) {
+      PLAN_SELECT = obj.CUSTOMIZATION;
     } else {
-      obj7 = {
-        title: "",
-        headerShown: false,
-        render() {
-              let isLoadingWishlist = null != analyticsLocation;
-              if (isLoadingWishlist) {
-                isLoadingWishlist = !UserStore;
-              }
-              if (isLoadingWishlist) {
-                isLoadingWishlist = null == closure_4;
-              }
-              if (isLoadingWishlist) {
-                let tmp7 = null == onDismiss;
-                if (!tmp7) {
-                  let tmp9 = null != closure_3;
-                  if (tmp9) {
-                    tmp9 = null == analyticsLocations;
-                  }
-                  tmp7 = tmp9;
-                }
-                isLoadingWishlist = tmp7;
-              }
-              return jsx(PremiumGiftPlanSelectDefault, { shouldUseDMWishlistGiftingDesign: false, isLoadingWishlist });
-            }
-      };
+      PLAN_SELECT = obj.PLAN_SELECT;
     }
-    const obj8 = {};
-    obj8[obj.PLAN_SELECT] = obj7;
-    const obj9 = {
-      title: "",
-      headerTitle() {
-
-        },
-      headerLeft: null,
-      headerStyle: null,
-      render: null
-    };
-    if (initialRoute === obj.REWARD_SELECT) {
-      let headerCloseButton = tmp11(tmp2[10]).getHeaderCloseButton(callback);
-      const tmp11Result8 = tmp11(tmp2[10]);
-    } else {
-      headerCloseButton = tmp11(tmp2[10]).getHeaderBackButton();
-      const tmp11Result9 = tmp11(tmp2[10]);
+    initialRoute = PLAN_SELECT;
+  }
+  const items1 = [onDismiss];
+  const callback = obj.useCallback(() => {
+    const arr = ModalActionCreatorsDefault;
+    arr.pop();
+    if (onDismiss != null) {
+      onDismiss();
     }
-    obj9.headerLeft = headerCloseButton;
-    obj9.headerStyle = tmp10.header;
-    obj9.render = function render(arg0) {
-      ({ defaultHighlightedReward, allRewards, claimableRewards, onSelect } = arg0);
-      return jsx(analyticsLocations(onDismiss[12]), { defaultHighlightedReward, allRewards, claimableRewards, onSelect });
-    };
-    obj8[obj.REWARD_SELECT] = obj9;
-    if (initialRoute === obj.CUSTOMIZATION) {
-      let headerCloseButton1 = tmp11(tmp2[10]).getHeaderCloseButton(callback);
-      const tmp11Result10 = tmp11(tmp2[10]);
-    } else {
-      headerCloseButton1 = tmp11(tmp2[10]).getHeaderBackButton();
-      const tmp11Result11 = tmp11(tmp2[10]);
+  }, items1);
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  const tmp8 = closure_9();
+  let tmp9 = analyticsLocation;
+  obj2 = analyticsLocation(tmp2[7]);
+  const items2 = [UserStore];
+  const stateFromStores = obj2.useStateFromStores(items2, () => {
+    user = null;
+    if (null != recipientUserId) {
+      user = user.getUser(tmp);
     }
-    const obj10 = {
-      title: "",
-      headerLeft: headerCloseButton1,
-      headerStyle: tmp10.header,
+    return user;
+  });
+  const obj3 = analyticsLocation(tmp2[8]);
+  const fetchWishlistAndProfileInfoForUser = obj3.useFetchWishlistAndProfileInfoForUser(recipientUserId);
+  ({ wishlist: c1, userProfile: c2, wishlistId: c3, error: c4 } = fetchWishlistAndProfileInfoForUser);
+  const obj4 = analyticsLocation(tmp2[8]);
+  const shouldShowWishlistInDMGifting = obj4.useShouldShowWishlistInDMGifting({ isGift: true, giftRecipient: stateFromStores, isSocialLayerStorefrontEnabled: false });
+  const PLAN_SELECT2 = obj.PLAN_SELECT;
+  if (shouldShowWishlistInDMGifting) {
+    const obj5 = {
+      title: intl.string(tmp9(tmp2[9]).t["JCFN/y"]),
+      headerLeft: tmp9Result.getHeaderCloseButton(callback),
+      headerStyle: tmp8.header,
       render() {
-          return jsx(analyticsLocations(onDismiss[13]), {});
+          return jsx(analyticsLocations(onDismiss[11]), { shouldUseDMWishlistGiftingDesign: true, isLoadingWishlist: false });
         }
     };
-    obj8[obj.CUSTOMIZATION] = obj10;
-    const obj11 = { title: "", headerLeft: null, headerStyle: null, render: null };
-    const obj4 = analyticsLocation(tmp2[8]);
-    obj11.headerLeft = analyticsLocation(tmp2[10]).getHeaderCloseButton(callback);
-    obj11.headerStyle = tmp10.header;
-    obj11.render = function render() {
-      return jsx(analyticsLocations(onDismiss[14]), {});
+    intl = tmp9(tmp2[9]).intl;
+    obj6 = obj5;
+    tmp9Result = tmp9(tmp2[10]);
+  } else {
+    obj6 = {
+      title: "",
+      headerShown: false,
+      render() {
+          let isLoadingWishlist = null != recipientUserId;
+          const tmp = jsx;
+          const tmp2 = analyticsLocations(onDismiss[11]);
+          if (isLoadingWishlist) {
+            isLoadingWishlist = !shouldShowWishlistInDMGifting;
+          }
+          if (isLoadingWishlist) {
+            isLoadingWishlist = null == c4;
+          }
+          if (isLoadingWishlist) {
+            let tmp7 = null == c2;
+            if (!tmp7) {
+              tmp7 = null != c3 && null == c1;
+              const tmp9 = null != c3 && null == c1;
+            }
+            isLoadingWishlist = tmp7;
+          }
+          return tmp(tmp2, { shouldUseDMWishlistGiftingDesign: false, isLoadingWishlist });
+        }
     };
-    obj8[obj.SUCCESS] = obj11;
-    const obj12 = { title: null, headerLeft: null, headerTransparent: true, headerStyle: null, render: null };
-    const intl2 = tmp11(tmp2[9]).intl;
-    obj12.title = intl2.string(tmp(tmp2[15]).roVAey);
-    const tmp11Result12 = analyticsLocation(tmp2[10]);
-    obj12.headerLeft = analyticsLocation(tmp2[10]).getHeaderCloseButton(callback);
-    obj12.headerStyle = { backgroundColor: "transparent", shadowColor: "transparent" };
-    obj12.render = function render(currentProgress) {
+  }
+  const obj7 = {};
+  obj7[PLAN_SELECT2] = obj6;
+  const REWARD_SELECT = tmp13.REWARD_SELECT;
+  const obj8 = {
+    title: "",
+    headerTitle() {
+
+    },
+    headerLeft: headerCloseButton,
+    headerStyle: tmp8.header,
+    render(arg0) {
+      let allRewards;
+      let claimableRewards;
+      let defaultHighlightedReward;
+      let onSelect;
+      ({ defaultHighlightedReward, allRewards, claimableRewards, onSelect } = arg0);
+      return jsx(analyticsLocations(onDismiss[12]), { defaultHighlightedReward, allRewards, claimableRewards, onSelect });
+    }
+  };
+  if (initialRoute === obj.REWARD_SELECT) {
+    const tmp9Result8 = tmp9(tmp2[10]);
+    headerCloseButton = tmp9Result8.getHeaderCloseButton(callback);
+  } else {
+    const tmp9Result9 = tmp9(tmp2[10]);
+    headerCloseButton = tmp9Result9.getHeaderBackButton();
+  }
+  obj7[REWARD_SELECT] = obj8;
+  const CUSTOMIZATION = tmp13.CUSTOMIZATION;
+  if (initialRoute === obj.CUSTOMIZATION) {
+    const tmp9Result10 = tmp9(tmp2[10]);
+    headerCloseButton1 = tmp9Result10.getHeaderCloseButton(callback);
+  } else {
+    const tmp9Result11 = tmp9(tmp2[10]);
+    headerCloseButton1 = tmp9Result11.getHeaderBackButton();
+  }
+  obj7[CUSTOMIZATION] = {
+    title: "",
+    headerLeft: headerCloseButton1,
+    headerStyle: tmp8.header,
+    render() {
+      return jsx(analyticsLocations(onDismiss[13]), {});
+    }
+  };
+  const SUCCESS = tmp13.SUCCESS;
+  const obj9 = {
+    title: "",
+    headerLeft: tmp9Result12.getHeaderCloseButton(callback),
+    headerStyle: tmp8.header,
+    render() {
+      return jsx(analyticsLocations(onDismiss[14]), {});
+    }
+  };
+  obj7[SUCCESS] = obj9;
+  tmp9Result12 = tmp9(tmp2[10]);
+  const GIFTING_BADGE = tmp13.GIFTING_BADGE;
+  const obj10 = {
+    title: intl2.string(tmp(tmp2[15]).roVAey),
+    headerLeft: tmp9Result13.getHeaderCloseButton(callback),
+    headerTransparent: true,
+    headerStyle: { backgroundColor: "transparent", shadowColor: "transparent" },
+    render(currentProgress) {
       return jsx(analyticsLocations(onDismiss[16]), {
         currentProgress: currentProgress.currentProgress,
         onSendGift() {
-          obj2 = { analyticsLocations: null };
-          const items = [analyticsLocations(6603).GIFTING_BADGE_POST_PURCHASE];
-          obj2.analyticsLocations = items;
-          analyticsLocation(10124).openGiftModal(obj2);
+          let items;
+          const obj = { analyticsLocations: items };
+          const openGiftModal = analyticsLocation(onDismiss[17]).openGiftModal;
+          items = [];
+          analyticsLocation(onDismiss[17]);
+          items[0] = analyticsLocations(onDismiss[18]).GIFTING_BADGE_POST_PURCHASE;
+          openGiftModal(obj);
         }
       });
-    };
-    obj8[obj.GIFTING_BADGE] = obj12;
-    const tmp21 = _slicedToArray(obj.useState(obj2[initialRoute]), 2);
-    closure_4 = tmp22;
-    const tmp11Result13 = analyticsLocation(tmp2[10]);
-    if (tmp11Result14.isPremiumGiftingSupported()) {
-      const obj13 = { value: analyticsLocations(onDismiss[19])(analyticsLocations).analyticsLocations, children: null };
-      const obj14 = { basePurchaseAnalytics: tmp4, recipientUserId, onClose: callback, setCurrentAnalyticsStep: tmp22, premiumType, planInterval, initialOrder: order, children: null };
-      const obj15 = { currentStep: tmp21[0], children: null };
-      const obj16 = {
-        initialRouteName: initialRoute,
-        screens: obj8,
-        onStateChange(arg0) {
-              if (null != arg0) {
-                closure_4(obj2[arg0.routes[arg0.index].name]);
-              }
-            }
-      };
-      obj15.children = tmp23(tmp11(tmp2[27]).Navigator, obj16);
-      obj14.children = tmp23(tmp(tmp2[26]), obj15);
-      obj13.children = tmp23(tmp11(tmp2[25]).NativeGiftContextProvider, obj14);
-      let tmp23Result = tmp23(tmp11(tmp2[19]).AnalyticsLocationProvider, obj13);
-      const tmpResult = tmp(tmp2[26]);
-    } else {
-      const obj17 = { title: null };
-      const intl3 = tmp11(tmp2[9]).intl;
-      obj17.title = intl3.string(tmp11(tmp2[9]).t["JCFN/y"]);
-      tmp23Result = tmp23(tmp(tmp2[24]), obj17);
-      const tmpResult2 = tmp(tmp2[24]);
     }
-    return tmp23Result;
-  } else if (null != premiumType) {
-    let PLAN_SELECT = obj.CUSTOMIZATION;
+  };
+  intl2 = tmp9(tmp2[9]).intl;
+  obj7[GIFTING_BADGE] = obj10;
+  tmp9Result13 = tmp9(tmp2[10]);
+  const tmp16 = _slicedToArray(obj.useState(obj2[initialRoute]), 2);
+  react = tmp18;
+  const first = tmp16[0];
+  const tmp9Result14 = tmp9(tmp2[23]);
+  if (tmp9Result14.isPremiumGiftingSupported()) {
+    const obj11 = { value: analyticsLocations2, children: null };
+    const AnalyticsLocationProvider = tmp9(tmp2[19]).AnalyticsLocationProvider;
+    const NativeGiftContextProvider = tmp9(tmp2[25]).NativeGiftContextProvider;
+    tmp(tmp2[26]);
+    tmp19Result = tmp19(AnalyticsLocationProvider, obj11);
   } else {
-    PLAN_SELECT = obj.PLAN_SELECT;
+    const obj15 = { title: intl3.string(tmp9(tmp2[9]).t["JCFN/y"]) };
+    const tmpResult2 = tmp(tmp2[24]);
+    intl3 = tmp9(tmp2[9]).intl;
+    tmp19Result = tmp19(tmpResult2, obj15);
   }
+  return tmp19Result;
 };
 export { PremiumGiftScreens };

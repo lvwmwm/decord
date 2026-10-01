@@ -5,79 +5,77 @@
 // Exports: useGuildHeaderCounts
 
 // Module 13515 (useGuildHeaderCounts)
-import _mod12 from "module_12" /* 12 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
 import GuildHeaderCountsStore from "GuildHeaderCountsStore" /* 13516 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_action_sheet/native/useGuildHeaderCounts.tsx");
 
 export const useGuildHeaderCounts = function useGuildHeaderCounts(id) {
+  let items10;
+  let obj6;
+  const f98111 = () => {
+    let guildId;
+    let type;
+    let obj = GUILD_HEADER_ONLINE_COUNT(dependencyMap[3]);
+    return obj.throttle((count) => {
+      const obj = guildId(stateFromStores2[4]);
+      const obj2 = { type, count, guildId };
+      obj.dispatch(obj2);
+    }, 3000);
+  };
+  const f98112 = () => () => memo1.cancel();
+  const f98113 = () => {
+    if (stateFromStores2 > 0) {
+      memo1(tmp);
+    }
+  };
   _require = id;
-  closure_129_0 = id;
+  let obj = require("get initialized");
   const items = [GuildMemberCountStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let num = GuildMemberCountStore.getMemberCount(closure_0);
     if (num == null) {
       num = 0;
     }
     return num;
   });
-  closure_130_0 = "GUILD_HEADER_MEMBER_COUNT";
-  closure_130_1 = id;
-  closure_130_2 = stateFromStores;
+  const GUILD_HEADER_MEMBER_COUNT = "GUILD_HEADER_MEMBER_COUNT";
   const items1 = ["GUILD_HEADER_MEMBER_COUNT", id];
-  const memo = noop.useMemo(() => _mod12.throttle((count) => {
-    DispatcherDefault.dispatch({ type, count, guildId });
-  }, 3000), items1);
-  closure_130_3 = memo;
+  const memo = react.useMemo(f98111, items1);
   const items2 = [memo];
-  const effect = noop.useEffect(() => () => closure_1_3.cancel(), items2);
+  const effect = react.useEffect(f98112, items2);
   const items3 = [memo, stateFromStores];
-  const effect1 = noop.useEffect(() => {
-    if (dependencyMap > 0) {
-      noop(tmp);
-    }
-  }, items3);
-  const obj = require("initialize");
+  const effect1 = react.useEffect(f98113, items3);
+  let obj2 = require("get initialized");
   const items4 = [GuildHeaderCountsStore];
-  closure_131_0 = id;
-  const stateFromStores1 = require("initialize").useStateFromStores(items4, () => GuildHeaderCountsStore.getMemberCount(closure_0));
-  const obj2 = require("initialize");
+  _require = id;
+  const stateFromStores1 = obj2.useStateFromStores(items4, () => GuildHeaderCountsStore.getMemberCount(closure_0));
   const items5 = [GuildMemberCountStore];
-  const stateFromStores2 = require("initialize").useStateFromStores(items5, () => {
+  const obj3 = require("get initialized");
+  const stateFromStores2 = obj3.useStateFromStores(items5, () => {
     let num = GuildMemberCountStore.getOnlineCount(closure_0);
     if (num == null) {
       num = 0;
     }
     return num;
   });
-  closure_132_0 = "GUILD_HEADER_ONLINE_COUNT";
-  closure_132_1 = id;
-  closure_132_2 = stateFromStores2;
+  const GUILD_HEADER_ONLINE_COUNT = "GUILD_HEADER_ONLINE_COUNT";
+  let closure_1 = id;
   const items6 = ["GUILD_HEADER_ONLINE_COUNT", id];
-  const memo1 = noop.useMemo(() => _mod12.throttle((count) => {
-    DispatcherDefault.dispatch({ type, count, guildId });
-  }, 3000), items6);
-  closure_132_3 = memo1;
+  const memo1 = react.useMemo(f98111, items6);
   const items7 = [memo1];
-  const effect2 = noop.useEffect(() => () => closure_1_3.cancel(), items7);
+  const effect2 = react.useEffect(f98112, items7);
   const items8 = [memo1, stateFromStores2];
-  const effect3 = noop.useEffect(() => {
-    if (dependencyMap > 0) {
-      noop(tmp);
-    }
-  }, items8);
-  const obj3 = require("initialize");
+  const effect3 = react.useEffect(f98113, items8);
   const items9 = [GuildHeaderCountsStore];
-  const obj5 = { memberCount: stateFromStores1, onlineCount: require("initialize").useStateFromStores(items9, () => GuildHeaderCountsStore.getOnlineCount(closure_0)), activeChannelsCount: null };
-  const obj4 = require("initialize");
-  const items10 = [GuildHeaderCountsStore];
-  obj5.activeChannelsCount = require("initialize").useStateFromStores(items10, () => GuildHeaderCountsStore.getActiveChannelsCount(closure_0));
+  const obj4 = require("get initialized");
+  const obj5 = { memberCount: stateFromStores1, onlineCount: obj4.useStateFromStores(items9, () => GuildHeaderCountsStore.getOnlineCount(closure_0)), activeChannelsCount: obj6.useStateFromStores(items10, () => GuildHeaderCountsStore.getActiveChannelsCount(id)) };
+  items10 = [GuildHeaderCountsStore];
+  obj6 = require("get initialized");
   return obj5;
 };

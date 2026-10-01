@@ -5,26 +5,30 @@
 // Exports: default
 
 // Module 10383 (useNavigatorBackHandler)
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let navigation;
+
+let react = react_mod;
 let closure_3 = {};
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Navigator/native/useNavigatorBackHandler.native.tsx");
 
 export default function useNavigatorBackHandler() {
+  let closure_2;
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = closure_3;
   }
   const onBeforeGoBack = tmp.onBeforeGoBack;
-  let navigation;
-  noop = undefined;
-  navigation = onBeforeGoBack(navigation[1]).useNavigation();
-  noop = noop.useRef(true);
+  navigation = undefined;
+  react = undefined;
+  let obj = onBeforeGoBack(navigation[1]);
+  navigation = obj.useNavigation();
+  react = react.useRef(true);
   const items = [navigation];
   const items1 = [navigation, onBeforeGoBack];
-  const onGoBack = noop.useCallback(() => {
+  const onGoBack = react.useCallback(() => {
     let flag = arg0;
     if (arg0 === undefined) {
       flag = false;
@@ -32,30 +36,34 @@ export default function useNavigatorBackHandler() {
     closure_2.current = flag;
     navigation.goBack();
   }, items);
-  const effect = noop.useEffect(() => navigation.addListener("beforeRemove", (data) => {
-    if (ref.current) {
-      let isIOSResult = "POP" === data.data.action.type;
-      if (isIOSResult) {
-        isIOSResult = onBeforeGoBack(navigation[2]).isIOS();
-        const obj = onBeforeGoBack(navigation[2]);
-      }
-      if (data != null) {
+  const effect = react.useEffect(() => {
+    let ref;
+    return navigation.addListener("beforeRemove", (data) => {
+      if (ref.current) {
+        let isIOSResult = "POP" === data.data.action.type;
         if (isIOSResult) {
-          let obj2 = { preventable: false };
-        } else {
-          obj2 = {
-            preventable: true,
-            preventDefault() {
-                    return data.preventDefault();
-                  },
-            goBack() {
-                    return navigation.goBack();
-                  }
-          };
+          const obj = onBeforeGoBack(navigation[2]);
+          isIOSResult = obj.isIOS();
         }
-        tmp4(obj2);
+        if (data != null) {
+          let obj2;
+          if (isIOSResult) {
+            obj2 = { preventable: false };
+          } else {
+            obj2 = {
+              preventable: true,
+              preventDefault() {
+                      return data.preventDefault();
+                    },
+              goBack() {
+                      return navigation.goBack();
+                    }
+            };
+          }
+          tmp4(obj2);
+        }
       }
-    }
-  }), items1);
+    });
+  }, items1);
   return { onGoBack };
 };

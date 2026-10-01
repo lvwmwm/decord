@@ -5,38 +5,41 @@
 // Exports: getGameMentionData, useGameMentionData
 
 // Module 5419 (useGameMentionData)
-import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
+import shallowEqualDefault from "shallowEqual" /* 558 */;
 import useGameProfileObscured from "useGameProfileObscured" /* 5423 */;
 import GameStore from "GameStore" /* 2001 */;
 import GameAutocompleteStore from "GameAutocompleteStore" /* 5420 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_mentions/hooks/useGameMentionData.tsx");
 
 export const getGameMentionData = function getGameMentionData(gameId) {
+  let icon;
+  let media;
+  let tmp4;
   const currentUser = UserStore.getCurrentUser();
   const game = GameStore.getGame(gameId);
   const gameById = GameAutocompleteStore.getGameById(gameId);
   if (null != game) {
     let nsfwAllowed;
+    const isGameProfileObscured = useGameProfileObscured.isGameProfileObscured;
+    useGameProfileObscured;
     if (currentUser != null) {
       nsfwAllowed = currentUser.nsfwAllowed;
     }
-    if (!obj2.isGameProfileObscured(game, nsfwAllowed)) {
-      const obj4 = { gameId, gameName: null, gameIcon: null };
-      ({ name: obj3.gameName, media } = game);
-      let icon;
+    if (!isGameProfileObscured(game, nsfwAllowed)) {
+      const obj3 = { gameId, gameName: null, gameIcon: icon };
+      ({ name: obj2.gameName, media } = game);
+      icon = undefined;
       if (media != null) {
         icon = media.icon;
       }
-      obj4.gameIcon = icon;
-      let tmp4 = obj4;
+      tmp4 = obj3;
     }
-    obj2 = useGameProfileObscured;
   } else if (null != gameById) {
     const obj = { gameId, gameName: null, gameIcon: null };
     ({ name: obj.gameName, icon: obj.gameIcon } = gameById);
@@ -46,33 +49,37 @@ export const getGameMentionData = function getGameMentionData(gameId) {
 };
 export const useGameMentionData = function useGameMentionData(gameId) {
   _require = gameId;
+  let obj = require("get initialized");
   const items = [GameStore, GameAutocompleteStore, UserStore];
   const items1 = [gameId];
-  return require("initialize").useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
+    let icon;
+    let media;
+    let tmp5;
     const currentUser = UserStore.getCurrentUser();
-    const game = GameStore.getGame(closure_0);
-    const gameById = GameAutocompleteStore.getGameById(closure_0);
+    const game = GameStore.getGame(gameId);
+    const gameById = GameAutocompleteStore.getGameById(gameId);
     if (null != game) {
       let nsfwAllowed;
+      const isGameProfileObscured = useGameProfileObscured.isGameProfileObscured;
+      useGameProfileObscured;
       if (currentUser != null) {
         nsfwAllowed = currentUser.nsfwAllowed;
       }
-      if (!obj2.isGameProfileObscured(game, nsfwAllowed)) {
-        const obj4 = { gameId: tmp, gameName: null, gameIcon: null };
-        ({ name: obj3.gameName, media } = game);
-        let icon;
+      if (!isGameProfileObscured(game, nsfwAllowed)) {
+        const obj3 = { gameId, gameName: null, gameIcon: icon };
+        ({ name: obj2.gameName, media } = game);
+        icon = undefined;
         if (media != null) {
           icon = media.icon;
         }
-        obj4.gameIcon = icon;
-        let tmp5 = obj4;
+        tmp5 = obj3;
       }
-      obj2 = useGameProfileObscured;
     } else if (null != gameById) {
-      const obj = { gameId: tmp, gameName: null, gameIcon: null };
+      const obj = { gameId, gameName: null, gameIcon: null };
       ({ name: obj.gameName, icon: obj.gameIcon } = gameById);
       tmp5 = obj;
     }
     return tmp5;
-  }, items1, discord_common_shallowEqualDefault);
+  }, items1, shallowEqualDefault);
 };

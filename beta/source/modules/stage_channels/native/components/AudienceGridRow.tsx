@@ -4,57 +4,74 @@
 // Dependencies: [19, 17, 5726, 21, 4836, 9528, 9529, 2]
 
 // Module 9527 (AudienceGridRow)
+import react_native from "react-native" /* 17 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5726 */;
 import BlankAudienceTileDefault from "BlankAudienceTile" /* 9528 */;
 import AudienceTileDefault from "AudienceTile" /* 9529 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+let theme;
+
+let closure_4;
+let hasOwnProperty;
 class BlankAudience {
-  constructor(arg0) {
-    count = global.count;
-    items = [];
+  constructor(count) {
+    let num;
+    count = count.count;
+    const items = [];
     for (let num = 0; num < count; num = num + 1) {
-      tmp = jsx;
-      tmp2 = closure_0;
-      tmp3 = closure_1;
-      arr1 = items.push(jsx(closure_0(closure_1[5]), {}, num));
+      let arr = items.push(React3(BlankAudienceTileDefault, {}, num));
     }
     return items;
   }
 }
-const View = fn(17).View;
-const MAX_AUDIENCE_ROW_LIMIT = fn(5726).MAX_AUDIENCE_ROW_LIMIT;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+const View = react_native.View;
+const MAX_AUDIENCE_ROW_LIMIT = StageChannelsConstants.MAX_AUDIENCE_ROW_LIMIT;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ rowContainer: { flex: 1, flexDirection: "row", marginVertical: 16, paddingHorizontal: 4, justifyContent: "space-between" } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/stage_channels/native/components/AudienceGridRow.tsx");
-
-export default noop.memo((theme) => {
+const memoResult = react.memo((theme) => {
+  let channel;
+  let items1;
+  let participants;
+  let renderBlankAudience;
   ({ channel: importDefault, participants, renderBlankAudience } = theme);
   if (renderBlankAudience === undefined) {
     renderBlankAudience = true;
   }
   theme = theme.theme;
   let num = 0;
+  const tmp = closure_6();
   if (renderBlankAudience) {
     num = MAX_AUDIENCE_ROW_LIMIT - participants.length;
   }
-  const items = [closure_6().rowContainer, ];
+  const items = [tmp.rowContainer, ];
   let str = "center";
+  const tmp3 = closure_5;
+  const tmp4 = View;
   if (renderBlankAudience) {
     str = "space-between";
   }
-  const obj = { style: items, children: null };
+  let obj = { style: items, children: items1 };
   items[1] = { justifyContent: str };
-  const items1 = [participants.map((participant) => React4(AudienceTileDefault, { theme, channel, participant }, participant.id)), ];
+  items1 = [
+    participants.map((participant) => {
+      const obj = { theme, channel: importDefault, participant };
+      return React3(AudienceTileDefault, obj, participant.id);
+    }),
+
+  ];
   let tmp5 = null;
   if (num > 0) {
     const obj2 = { count: num };
     tmp5 = closure_4(BlankAudience, obj2);
   }
   items1[1] = tmp5;
-  obj.children = items1;
-  return closure_5(View, obj);
+  return tmp3(tmp4, obj);
 });
+const result = size.fileFinishedImporting("modules/stage_channels/native/components/AudienceGridRow.tsx");
+
+export default memoResult;
 export { BlankAudience };

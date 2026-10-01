@@ -7,54 +7,69 @@
 import nativeDefault from "native" /* 576 */;
 import _modDef3877 from "module_3877" /* 3877 */;
 import useSearchHostSurface from "useSearchHostSurface" /* 16513 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Pressable: c3, StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
+let isExpanded;
+
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+({ Pressable: c3, StyleSheet: closure_4, View: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const rect = { top: nativeDefault.space.PX_8, bottom: nativeDefault.space.PX_8 };
-const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles((backgroundColor) => {
-  const obj = { block: { position: "absolute", left: 0, right: 0, bottom: 0, alignItems: "center" }, pill: { height: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT, backgroundColor, alignItems: "center", justifyContent: "center" }, surface: null };
-  const obj3 = {};
+  let obj3;
+  const obj = { block: { position: "absolute", left: 0, right: 0, bottom: 0, alignItems: "center" }, pill: { height: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT, backgroundColor, alignItems: "center", justifyContent: "center" }, surface: obj3 };
+  obj3 = { borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
+  ({ height: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT, backgroundColor, alignItems: "center", justifyContent: "center" });
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
-  obj3.borderRadius = nativeDefault.radii.round;
-  obj3.backgroundColor = nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT;
-  obj.surface = obj3;
   return obj;
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchExpandButton.tsx");
-
-export default noop.memo((isExpanded) => {
+const memoResult = react.memo((isExpanded) => {
+  let ChevronSmallDownIcon;
+  let OLD0mz;
+  let items;
+  let obj3;
+  let string;
+  let tmp10;
+  let tmp6;
+  let tmp7;
   isExpanded = isExpanded.isExpanded;
-  const tmp3 = closure_9(useSearchHostSurface.useSearchHostSurfaceColor());
+  const onPress = isExpanded.onPress;
+  const obj = useSearchHostSurface;
+  const tmp3 = closure_9(obj.useSearchHostSurfaceColor());
   if (isExpanded) {
-    let ChevronSmallDownIcon = tmp(13113).ChevronSmallUpIcon;
+    ChevronSmallDownIcon = tmp(13113).ChevronSmallUpIcon;
   } else {
     ChevronSmallDownIcon = tmp(10615).ChevronSmallDownIcon;
   }
-  const obj2 = { style: tmp3.block, hitSlop: rect, children: null };
-  const obj3 = { style: tmp3.pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
+  const obj2 = { style: tmp3.block, hitSlop: rect, children: tmp6(tmp7, obj3) };
+  obj3 = { style: tmp3.pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: string(OLD0mz), onPress, children: items };
   const intl = tmp(1115).intl;
+  string = intl.string;
   const tmp9 = _modDef3877;
+  tmp6 = metroImportDefault;
+  tmp7 = _false;
   if (isExpanded) {
-    let OLD0mz = tmp9.ih0v1g;
-    let tmp10 = tmp8;
+    OLD0mz = tmp9.ih0v1g;
+    tmp10 = tmp8;
   } else {
     OLD0mz = tmp9.OLD0mz;
     tmp10 = tmp8;
   }
-  obj3.accessibilityLabel = intl.string(OLD0mz);
-  obj3.onPress = isExpanded.onPress;
-  const items = [timestampProducer(hasOwnProperty, { style: tmp3.surface, pointerEvents: "none" }), ];
+  items = [, ];
   const obj4 = { style: tmp3.surface, pointerEvents: "none" };
-  const tmp6 = React5;
-  const tmp7 = React3;
-  items[1] = timestampProducer(ChevronSmallDownIcon, { size: "sm", color: tmp10(576).colors.INTERACTIVE_ICON_DEFAULT });
-  obj3.children = items;
-  obj2.children = tmp6(tmp7, obj3);
-  return timestampProducer(hasOwnProperty, obj2);
+  items[0] = metroRequire(hasOwnProperty, obj4);
+  const obj5 = { size: "sm", color: tmp10(576).colors.INTERACTIVE_ICON_DEFAULT };
+  items[1] = metroRequire(ChevronSmallDownIcon, obj5);
+  return metroRequire(hasOwnProperty, obj2);
 });
+const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchExpandButton.tsx");
+
+export default memoResult;

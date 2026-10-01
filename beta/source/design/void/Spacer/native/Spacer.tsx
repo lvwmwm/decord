@@ -5,16 +5,19 @@
 // Exports: default
 
 // Module 13663 (Spacer)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import module_12 from "module_12" /* 12 */;
+import size_mod from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const apply = fn(12);
-let closure_2 = apply.memoize((width) => {
-  const size = { width, height: width };
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let closure_2 = module_12.memoize((width) => {
+  size = { width, height: width };
   return size;
 });
-let size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("design/void/Spacer/native/Spacer.tsx");
 
 export default function Spacer(pointerEvents) {

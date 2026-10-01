@@ -4,35 +4,42 @@
 // Dependencies: [4653, 1183, 1182, 1220, 7417, 1074, 504, 1115, 14856, 8659, 11006, 2]
 
 // Module 14855 (SyncThemeSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8659 */;
 import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 14856 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4653 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const SettingBuilders = fn(11006);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const AnalyticEvents = Constants.AnalyticEvents;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["3340dY"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["3340dY"]);
   },
-  parent: fn(7417).MobileUserSettings.APPEARANCE,
+  parent: MobileUserSettings.APPEARANCE,
   useIsDisabled: function useSyncThemeDisabled() {
+    let sameAsDeviceThemeEnabled;
     const items = [ThemeStore];
-    return initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
   },
   useValue: function useSyncThemeAcrossClientsValue() {
     const items = [SelectivelySyncedUserSettingsStore];
-    return initialize.useStateFromStores(items, () => false !== SelectivelySyncedUserSettingsStore.shouldSync("appearance"));
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => false !== SelectivelySyncedUserSettingsStore.shouldSync("appearance"));
   },
   onValueChange: function onSyncThemeAcrossClientsValueChange(is_sync_enabled) {
     const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
     let id;
+    const theme = ThemeStore.theme;
     if (gradientPreset != null) {
       id = gradientPreset.id;
     }
@@ -47,17 +54,20 @@ const toggle = SettingBuilders.createToggle({
         prop = clientThemeSettings.customUserThemeSettings;
       }
     }
-    actions_AnalyticsTrackingActionCreators.track(AnalyticEvents.SYNC_ACROSS_CLIENTS_TOGGLED, { is_sync_enabled, base_theme: ThemeStore.theme, client_theme: id, has_custom_theme: null != prop });
-    const obj2 = { is_sync_enabled, base_theme: ThemeStore.theme, client_theme: id, has_custom_theme: null != prop };
     const tmp3 = null != prop;
-    const result = UserSettingsActionCreatorsDefault.setShouldSyncAppearanceSettings(is_sync_enabled);
+    const obj = actions_AnalyticsTrackingActionCreators;
+    const obj2 = { is_sync_enabled, base_theme: theme, client_theme: id, has_custom_theme: tmp3 };
+    obj.track(AnalyticEvents.SYNC_ACROSS_CLIENTS_TOGGLED, obj2);
+    const obj3 = UserSettingsActionCreatorsDefault;
+    const result = obj3.setShouldSyncAppearanceSettings(is_sync_enabled);
   },
   useDescription: function useSyncThemeAcrossClientsDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.CRtkeH).trim();
+    const intl = intl2.intl;
+    const str = intl.string(intl2.t.CRtkeH);
+    return str.trim();
   }
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/SyncThemeSetting.tsx");
 
 export default toggle;

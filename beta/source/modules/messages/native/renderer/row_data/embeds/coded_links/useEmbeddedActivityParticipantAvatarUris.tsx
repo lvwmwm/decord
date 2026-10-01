@@ -6,12 +6,11 @@
 
 // Module 12789 (useEmbeddedActivityParticipantAvatarUris)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/useEmbeddedActivityParticipantAvatarUris.tsx");
 
 export default function useEmbeddedActivityParticipantAvatarUris(activity) {
@@ -21,17 +20,22 @@ export default function useEmbeddedActivityParticipantAvatarUris(activity) {
   const items = [activity];
   memo = memo.useMemo(() => {
     let userIds;
+    const _Array = Array;
     if (activity != null) {
       userIds = activity.userIds;
     }
     if (userIds == null) {
       userIds = [];
     }
-    return Array.from(userIds);
+    return from(userIds);
   }, items);
   const items1 = [UserStore];
   const items2 = [memo];
-  const stateFromStoresArray = activity(guildId[4]).useStateFromStoresArray(items1, () => memo.map((item) => user.getUser(item)), items2);
+  const obj = activity(guildId[4]);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
+    let user;
+    return memo.map((item) => user.getUser(item));
+  }, items2);
   const items3 = [guildId, stateFromStoresArray];
   return memo.useMemo(() => {
     const found = stateFromStoresArray.filter(GlobalUtils.isNotNullish);
@@ -39,19 +43,22 @@ export default function useEmbeddedActivityParticipantAvatarUris(activity) {
   }, items3);
 };
 export const getEmbeddedActivityParticipantAvatarUris = function getEmbeddedActivityParticipantAvatarUris(arg0) {
+  let activity;
   ({ guildId: require, applicationId: dependencyMap, activity } = arg0);
   if (null == activity) {
     const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(tmp);
     activity = embeddedActivitiesForChannel.find((applicationId) => applicationId.applicationId === dependencyMap);
   }
   let userIds;
+  const _Array = Array;
   if (activity != null) {
     userIds = activity.userIds;
   }
   if (userIds == null) {
     userIds = [];
   }
-  const mapped = Array.from(userIds).map((item) => {
+  const fromResult = from(userIds);
+  const mapped = fromResult.map((item) => {
     const user = UserStore.getUser(item);
     let avatarURL;
     if (user != null) {

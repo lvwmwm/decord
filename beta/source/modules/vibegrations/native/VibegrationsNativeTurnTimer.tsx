@@ -5,27 +5,30 @@
 // Exports: default
 
 // Module 16401 (VibegrationsNativeTurnTimer)
+import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import VibegrationsDuration from "VibegrationsDuration" /* 16350 */;
 import useVibegrationsElapsedMs from "useVibegrationsElapsedMs" /* 16402 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let closure_3 = createStyles.createStyles({ timer: { fontVariant: ["tabular-nums"] } });
-const size = fn(2);
+const jsx = Fragment.jsx;
+let obj = { timer: { fontVariant: ["tabular-nums"] } };
+let closure_3 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsNativeTurnTimer.tsx");
 
 export default function VibegrationsNativeTurnTimer(variant) {
   let str = variant.variant;
+  const startedAt = variant.startedAt;
   if (str === undefined) {
     str = "text-sm/normal";
   }
   const tmp = closure_3();
-  const vibegrationsElapsedMs = useVibegrationsElapsedMs.useVibegrationsElapsedMs(variant.startedAt);
-  const obj2 = { variant: str, color: "text-muted", style: tmp.timer, lineClamp: 1, accessibilityRole: "timer", accessibilityLiveRegion: "none", accessibilityLabel: null, testID: "vibegrations-turn-timer", children: null };
-  obj2.accessibilityLabel = VibegrationsDuration.describeElapsedLabel(vibegrationsElapsedMs);
-  obj2.children = VibegrationsDuration.formatElapsed(vibegrationsElapsedMs);
-  return jsx(Text_Text.Text, { variant: str, color: "text-muted", style: tmp.timer, lineClamp: 1, accessibilityRole: "timer", accessibilityLiveRegion: "none", accessibilityLabel: null, testID: "vibegrations-turn-timer", children: null });
+  const obj = useVibegrationsElapsedMs;
+  const vibegrationsElapsedMs = obj.useVibegrationsElapsedMs(startedAt);
+  const Text = Text_Text.Text;
+  const obj3 = VibegrationsDuration;
+  const obj4 = VibegrationsDuration;
+  return <Text variant={str} color="text-muted" style={tmp.timer} lineClamp={1} accessibilityRole="timer" accessibilityLiveRegion="none" accessibilityLabel={obj3.describeElapsedLabel(vibegrationsElapsedMs)} testID="vibegrations-turn-timer">{obj4.formatElapsed(vibegrationsElapsedMs)}</Text>;
 };

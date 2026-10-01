@@ -5,20 +5,20 @@
 // Exports: Modal
 
 // Module 10769 (Modal)
+import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import NavigatorConstants from "NavigatorConstants" /* 5994 */;
-import Navigator from "Navigator" /* 6421 */;
-import noop from "module_19" /* 19 */;
+import Navigator2 from "Navigator" /* 6421 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Modal/native/Modal.native.tsx");
 
 export const Modal = function Modal(arg0) {
-  const obj = {};
-  const merged = Object.assign(arg0);
   const tmp = useSafeAreaInsetsDefault();
-  obj.headerStyle = { height: NavigatorConstants.NAV_BAR_HEIGHT + useSafeAreaInsetsDefault().top };
-  return jsx(Navigator.Navigator, {});
+  const Navigator = Navigator2.Navigator;
+  const merged = Object.assign(arg0);
+  ({ height: NavigatorConstants.NAV_BAR_HEIGHT + tmp.top });
+  return <Navigator headerStyle={{ height: NavigatorConstants.NAV_BAR_HEIGHT + tmp.top }} />;
 };

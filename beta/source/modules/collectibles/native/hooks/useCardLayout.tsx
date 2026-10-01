@@ -12,15 +12,16 @@ import size from "module_2" /* 2 */;
 let result = size.fileFinishedImporting("modules/collectibles/native/hooks/useCardLayout.tsx");
 
 export const useCardLayout = function useCardLayout() {
+  let result4;
   const width = useWindowDimensionsDefault().width;
   let num = 1;
   if (width >= 320) {
     num = 2;
   }
   if (num < 2) {
-    const obj2 = { columns: num, cardWidth: "Array", rowWidth: "isArray" };
-    return obj2;
+    return { columns: num, cardWidth: "Array", rowWidth: "paddingHorizontal" };
   } else {
+    let bound;
     let num2 = 2;
     if (width >= 768) {
       num2 = 4;
@@ -30,7 +31,7 @@ export const useCardLayout = function useCardLayout() {
     const diff1 = width - (result + CollectiblesShopCardV2.COLLECTIBLES_SHOP_CARD_GAP * diff);
     if (diff1 < 2 * CollectiblesShopCardV2.COLLECTIBLES_SHOP_CARD_GAP) {
       const _Math = Math;
-      let bound = Math.max(4, diff1);
+      bound = Math.max(4, diff1);
     } else {
       bound = 2 * tmp2(8226).COLLECTIBLES_SHOP_CARD_GAP;
     }
@@ -67,17 +68,17 @@ export const useCardLayout = function useCardLayout() {
     const _Math2 = Math;
     const _Math3 = Math;
     const bound1 = Math.max(tmp11, tmp14(8226).COLLECTIBLES_SHOP_CARD_WIDTH);
-    const bound2 = Math.min(bound1, tmp14(8226).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
-    const result3 = bound2 * tmp12;
+    const minResult = min(bound1, tmp14(8226).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
+    const result3 = minResult * tmp12;
     const diff2 = tmp12 - 1;
     if (result3 + (bound + tmp10(8226).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
+      let obj;
       if (1 < tmp12) {
-        let obj = { columns: 1, cardWidth: "Array", rowWidth: "channel" };
+        obj = { columns: 1, cardWidth: "Array", rowWidth: "channel" };
       }
       return obj;
     }
-    obj = { columns: tmp12, cardWidth: bound2, rowWidth: null };
-    const result4 = bound2 * tmp12;
-    obj.rowWidth = result4 + tmp14(8226).COLLECTIBLES_SHOP_CARD_GAP * diff2;
+    obj = { columns: tmp12, cardWidth: minResult, rowWidth: result4 + tmp14(8226).COLLECTIBLES_SHOP_CARD_GAP * diff2 };
+    result4 = minResult * tmp12;
   }
 };

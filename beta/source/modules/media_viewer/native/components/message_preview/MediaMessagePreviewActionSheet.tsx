@@ -8,33 +8,44 @@ import router_utils from "router_utils" /* 1101 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
 import ReportModals from "ReportModals" /* 8089 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/media_viewer/native/components/message_preview/MediaMessagePreviewActionSheet.tsx");
-
-export default noop.memo(function MediaMessagePreviewActionSheet(channel) {
+let closure_4;
+let hasOwnProperty;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+const memoResult = react.memo(function MediaMessagePreviewActionSheet(channel) {
+  let Icon;
+  let Icon2;
+  let Icon3;
+  let closeMediaModal;
+  let intl;
+  let intl2;
+  let intl3;
+  let obj2;
+  let obj4;
+  let obj6;
+  let user;
   channel = channel.channel;
   const message = channel.message;
   ({ user, closeMediaModal } = channel);
   let callback;
   const DeveloperMode = channel(closeMediaModal[2]).DeveloperMode;
   let setting = DeveloperMode.useSetting();
-  const isNonUserBotResult = user.isNonUserBot();
-  let canReportUserResult = !isNonUserBotResult;
-  if (!isNonUserBotResult) {
-    canReportUserResult = tmp(tmp2[3]).canReportUser(user);
-    const tmpResult = tmp(tmp2[3]);
+  let canReportUserResult = !user.isNonUserBot();
+  user.isNonUserBot();
+  if (canReportUserResult) {
+    const tmpResult = channel(closeMediaModal[3]);
+    canReportUserResult = tmpResult.canReportUser(user);
   }
   if (canReportUserResult) {
-    canReportUserResult = tmp(tmp2[3]).canReportMessage(message);
-    const tmpResult2 = tmp(tmp2[3]);
+    const tmpResult2 = channel(closeMediaModal[3]);
+    canReportUserResult = tmpResult2.canReportMessage(message);
   }
   callback = callback.useCallback(() => {
-    message(closeMediaModal[4]).hideActionSheet();
+    const obj = message(closeMediaModal[4]);
+    obj.hideActionSheet();
   }, []);
   const items = [callback, closeMediaModal, , , ];
   ({ guild_id: arr[2], id: arr[3] } = channel);
@@ -43,43 +54,52 @@ export default noop.memo(function MediaMessagePreviewActionSheet(channel) {
   const callback1 = callback.useCallback(() => {
     callback();
     closeMediaModal();
-    router_utils.transitionToGuild(channel.guild_id, channel.id, message.id);
+    const obj = router_utils;
+    obj.transitionToGuild(channel.guild_id, channel.id, message.id);
   }, items);
   const items2 = [message, callback];
   const callback2 = callback.useCallback(() => {
     callback();
-    ClipboardUtils.copy(message.id);
-    ToastUtils.presentIdCopied();
+    const obj = ClipboardUtils;
+    obj.copy(message.id);
+    const obj2 = ToastUtils;
+    obj2.presentIdCopied();
   }, items1);
   const callback3 = callback.useCallback(() => {
     callback();
-    const result = ReportModals.showReportModalForMessage(message, "mobile_media_message_preview_action_sheet");
+    const obj = ReportModals;
+    const result = obj.showReportModalForMessage(message, "mobile_media_message_preview_action_sheet");
   }, items2);
-  let obj = { icon: closure_4(channel(closeMediaModal[10]).ActionSheetRow.Icon, { IconComponent: channel(closeMediaModal[11]).ChatArrowRightIcon }), label: null, onPress: null };
-  const intl = tmp(tmp2[12]).intl;
-  obj.label = intl.string(channel(closeMediaModal[12]).t["+TSRGD"]);
-  obj.onPress = callback1;
-  const items3 = [closure_4(channel(closeMediaModal[10]).ActionSheetRow, obj), , ];
+  const ActionSheet = tmp(tmp2[9]).ActionSheet;
+  const Group = tmp(tmp2[10]).ActionSheetRow.Group;
+  let obj = { icon: closure_4(Icon, obj2), label: intl.string(tmp(tmp2[12]).t["+TSRGD"]), onPress: callback1 };
+  const ActionSheetRow = tmp(tmp2[10]).ActionSheetRow;
+  obj2 = { IconComponent: tmp(tmp2[11]).ChatArrowRightIcon };
+  Icon = tmp(tmp2[10]).ActionSheetRow.Icon;
+  intl = tmp(tmp2[12]).intl;
+  const items3 = [closure_4(ActionSheetRow, obj), , ];
+  const tmp11 = closure_5;
   if (setting) {
-    const obj3 = { icon: null, label: null, onPress: null };
-    const obj4 = { IconComponent: tmp(tmp2[13]).IdIcon };
-    obj3.icon = tmp10(tmp(tmp2[10]).ActionSheetRow.Icon, obj4);
-    const intl2 = tmp(tmp2[12]).intl;
-    obj3.label = intl2.string(tmp(tmp2[12]).t.zBoHlf);
-    obj3.onPress = callback2;
-    setting = tmp10(tmp(tmp2[10]).ActionSheetRow, obj3);
+    const obj3 = { icon: closure_4(Icon2, obj4), label: intl2.string(channel(closeMediaModal[12]).t.zBoHlf), onPress: callback2 };
+    const ActionSheetRow2 = tmp(tmp2[10]).ActionSheetRow;
+    obj4 = { IconComponent: channel(closeMediaModal[13]).IdIcon };
+    Icon2 = tmp(tmp2[10]).ActionSheetRow.Icon;
+    intl2 = tmp(tmp2[12]).intl;
+    setting = tmp10(ActionSheetRow2, obj3);
   }
   items3[1] = setting;
   if (canReportUserResult) {
-    const obj5 = { icon: null, label: null, onPress: null, variant: "danger" };
-    const obj6 = { IconComponent: tmp(tmp2[14]).FlagIcon };
-    obj5.icon = tmp10(tmp(tmp2[10]).ActionSheetRow.Icon, obj6);
-    const intl3 = tmp(tmp2[12]).intl;
-    obj5.label = intl3.string(tmp(tmp2[12]).t["+78Pfm"]);
-    obj5.onPress = callback3;
-    canReportUserResult = tmp10(tmp(tmp2[10]).ActionSheetRow, obj5);
+    const obj5 = { icon: closure_4(Icon3, obj6), label: intl3.string(channel(closeMediaModal[12]).t["+78Pfm"]), onPress: callback3, variant: "danger" };
+    const ActionSheetRow3 = tmp(tmp2[10]).ActionSheetRow;
+    obj6 = { IconComponent: channel(closeMediaModal[14]).FlagIcon };
+    Icon3 = tmp(tmp2[10]).ActionSheetRow.Icon;
+    intl3 = tmp(tmp2[12]).intl;
+    canReportUserResult = tmp10(ActionSheetRow3, obj5);
   }
-  const obj2 = { IconComponent: channel(closeMediaModal[11]).ChatArrowRightIcon };
   items3[2] = canReportUserResult;
-  return closure_4(channel(closeMediaModal[9]).ActionSheet, { children: closure_5(channel(closeMediaModal[10]).ActionSheetRow.Group, { hasIcons: true, children: items3 }) });
+  const obj7 = { children: tmp11(Group, { hasIcons: true, children: items3 }) };
+  return closure_4(ActionSheet, obj7);
 });
+let result = size.fileFinishedImporting("modules/media_viewer/native/components/message_preview/MediaMessagePreviewActionSheet.tsx");
+
+export default memoResult;

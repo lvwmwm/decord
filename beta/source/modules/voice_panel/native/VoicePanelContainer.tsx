@@ -4,19 +4,25 @@
 // Dependencies: [19, 2045, 5044, 21, 504, 16873, 16917, 4452, 4540, 2]
 
 // Module 16872 (VoicePanelContainer)
-import _mod4452 from "module_4452" /* 4452 */;
+import Fragment from "Fragment" /* 21 */;
+import _slicedToArray from "_slicedToArray" /* 4452 */;
 import native from "native" /* 4540 */;
 import VoicePanelControllerDefault from "VoicePanelController" /* 16873 */;
 import VoicePanelUIDefault from "VoicePanelUI" /* 16917 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import VoicePanelStore from "VoicePanelStore" /* 5044 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let _require;
+
 function VoicePanel(arg0) {
+  let channelId;
   _require = arg0;
   const items = [ChannelStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const channel = ChannelStore.getChannel(channelId.channelId);
     let guild_id;
     if (channel != null) {
@@ -24,12 +30,9 @@ function VoicePanel(arg0) {
     }
     return guild_id;
   });
-  const obj2 = {};
-  const obj = require("initialize");
+  VoicePanelControllerDefault;
   const merged = Object.assign(arg0);
-  obj2.guildId = stateFromStores;
-  obj2.children = noop.useMemo(() => jsx(VoicePanelUIDefault, {}), []);
-  return jsx(VoicePanelControllerDefault, {});
+  return <tmp2 guildId={stateFromStores}>{react.useMemo(() => jsx(VoicePanelUIDefault, {}), [])}</tmp2>;
 }
 function getChannelKey(arg0) {
   return arg0;
@@ -37,11 +40,10 @@ function getChannelKey(arg0) {
 function renderVoicePanel(arg0, channelId, transitionState, transitionCleanUp) {
   return <VoicePanel key={arg1} channelId={arg1} transitionState={arg2} transitionCleanUp={arg3} />;
 }
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function VoicePanelContainer() {
+  return jsx(native.TransitionGroup, { items: VoicePanelStore((channels) => Array.from(channels.channels), _slicedToArray.shallow), getItemKey: getChannelKey, renderItem: renderVoicePanel });
+});
 const result = size.fileFinishedImporting("modules/voice_panel/native/VoicePanelContainer.tsx");
 
-export default noop.memo(function VoicePanelContainer() {
-  const tmp = VoicePanelStore((channels) => Array.from(channels.channels), _mod4452.shallow);
-  return jsx(native.TransitionGroup, { items: VoicePanelStore((channels) => Array.from(channels.channels), _mod4452.shallow), getItemKey: getChannelKey, renderItem: renderVoicePanel });
-});
+export default memoResult;

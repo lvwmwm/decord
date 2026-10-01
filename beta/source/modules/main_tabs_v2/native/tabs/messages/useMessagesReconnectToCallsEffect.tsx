@@ -6,25 +6,31 @@
 
 // Module 15682 (useMessagesReconnectToCallsEffect)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6639 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
+let channel;
+
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesReconnectToCallsEffect.tsx");
 
 export default function useMessagesReconnectToCallsEffect() {
-  const effect = noop.useEffect(() => {
+  let sortedChannels;
+  const effect = react.useEffect(() => {
+    let isConnectedResult;
     function isGatewayConnectedListener() {
-      isConnectedResult = GatewayConnectionStore.isConnected();
-      if (isConnectedResult !== isConnectedResult) {
-        if (isConnectedResult) {
+      let arr;
+      let closure_0 = GatewayConnectionStore.isConnected();
+      if (closure_0 !== closure_0) {
+        if (closure_0) {
           [r10011, arr] = sortedChannels.getSortedChannels();
           const items = [];
           const _Math = Math;
           let num3 = 0;
+          _slicedToArray(sortedChannels.getSortedChannels(), 2);
           if (0 < Math.min(20, arr.length)) {
             do {
               channel = channel.getChannel(arr[num3].channelId);
@@ -39,13 +45,13 @@ export default function useMessagesReconnectToCallsEffect() {
               let _Math2 = Math;
             } while (num3 < Math.min(20, arr.length));
           }
-          const tmp4 = _slicedToArray(sortedChannels.getSortedChannels(), 2);
           const obj = { type: "CALL_CONNECT_MULTIPLE", channelIds: items };
-          DispatcherDefault.dispatch(obj);
+          const obj2 = DispatcherDefault;
+          obj2.dispatch(obj);
         }
       }
     }
-    closure_0 = closure_4.isConnected();
+    let closure_0 = closure_4.isConnected();
     closure_4.addChangeListener(isGatewayConnectedListener);
     return () => {
       GatewayConnectionStore.removeChangeListener(isGatewayConnectedListener);

@@ -5,140 +5,175 @@
 // Exports: default, getAudienceItemHeight
 
 // Module 15753 (VoiceUsers)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7298 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
 import ChannelListLayout from "ChannelListLayout" /* 9580 */;
 import HeadphonesIcon from "HeadphonesIcon" /* 12026 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let voiceState;
+
+let metroImportDefault;
+let metroRequire;
 function AudienceItem(arg0) {
+  let audienceCount;
+  let collapsed;
+  let items;
+  let obj4;
   ({ audienceCount, collapsed } = arg0);
   const tmp2 = closure_11(useIsUsingClientThemeDefault());
   let formatToPlainStringResult = audienceCount;
   if (!collapsed) {
-    const intl = util.intl;
+    const intl = intl2.intl;
     const obj = { count: audienceCount };
-    formatToPlainStringResult = intl.formatToPlainString(util.t["+v2pN2"], obj);
+    formatToPlainStringResult = intl.formatToPlainString(intl2.t["+v2pN2"], obj);
   }
-  const obj2 = { style: collapsed ? tmp2.listenersCollapsed : tmp2.listeners, children: null };
-  const obj3 = { style: tmp2.listenersIconWrapper, children: timestampProducer(HeadphonesIcon.HeadphonesIcon, { color: "redesign-channel-name-muted-text", size: "custom", style: tmp2.headphonesIcon }) };
-  const items = [timestampProducer(View, obj3), timestampProducer(Text_Text.Text, { style: tmp2.listenersText, variant, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult })];
-  obj2.children = items;
-  return React5(View, obj2);
+  const obj2 = { style: collapsed ? tmp2.listenersCollapsed : tmp2.listeners, children: items };
+  const obj3 = { style: tmp2.listenersIconWrapper, children: metroRequire(HeadphonesIcon.HeadphonesIcon, obj4) };
+  obj4 = { color: "redesign-channel-name-muted-text", size: "custom", style: tmp2.headphonesIcon };
+  items = [metroRequire(View, obj3), ];
+  const obj5 = { style: tmp2.listenersText, variant, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult };
+  items[1] = metroRequire(Text_Text.Text, obj5);
+  return metroImportDefault(View, obj2);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
+let react = react_mod;
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = {};
 let closure_9 = [];
 let c10 = "text-sm/medium";
-const createStyles = fn(4836);
 let closure_11 = createStyles.createStyles((arg0) => {
+  let BACKGROUND_BASE_LOWEST;
+  let obj2;
+  let obj4;
+  let tmp5;
   const colors = nativeDefault.colors;
-  if (arg0) {
-    let BACKGROUND_BASE_LOWEST = colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT;
-    let tmp4 = tmp;
+  const tmp3 = arg0;
+  if (tmp3) {
+    BACKGROUND_BASE_LOWEST = colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT;
+    tmp5 = tmp;
   } else {
     BACKGROUND_BASE_LOWEST = colors.BACKGROUND_BASE_LOWEST;
-    tmp4 = tmp;
+    tmp5 = tmp;
   }
-  const round = tmp4(576).radii.round;
-  const obj = { listeners: { display: "flex", flexDirection: "row", alignItems: "center", padding: 4, marginTop: 4, marginLeft: -8 }, listenersCollapsed: { flexDirection: "row", alignItems: "center", backgroundColor: BACKGROUND_BASE_LOWEST, borderRadius: round, marginLeft: -16, marginTop: 4, paddingLeft: 2, paddingRight: 6 }, listenersIconWrapper: null, listenersText: null, userCollapsedOverlap: null, headphonesIcon: null };
-  const merged = Object.assign(ChannelListLayout.makeSizeStyle(20));
-  obj.listenersIconWrapper = { alignItems: "center", justifyContent: "center", backgroundColor: BACKGROUND_BASE_LOWEST, marginRight: 8, marginLeft: 4, borderRadius: round };
-  obj.listenersText = { marginRight: 4 };
-  obj.userCollapsedOverlap = { marginLeft: -20 };
-  const obj2 = { alignItems: "center", justifyContent: "center", backgroundColor: BACKGROUND_BASE_LOWEST, marginRight: 8, marginLeft: 4, borderRadius: round };
-  obj.headphonesIcon = ChannelListLayout.makeSizeStyle(14);
+  const round = tmp5(576).radii.round;
+  const obj = { listeners: { display: "flex", flexDirection: "row", alignItems: "center", padding: 4, marginTop: 4, marginLeft: -8 }, listenersCollapsed: { flexDirection: "row", alignItems: "center", backgroundColor: BACKGROUND_BASE_LOWEST, borderRadius: round, marginLeft: -16, marginTop: 4, paddingLeft: 2, paddingRight: 6 }, listenersIconWrapper: obj2, listenersText: { marginRight: 4 }, userCollapsedOverlap: { marginLeft: -20 }, headphonesIcon: obj4.makeSizeStyle(14) };
+  obj2 = { alignItems: "center", justifyContent: "center", backgroundColor: BACKGROUND_BASE_LOWEST, marginRight: 8, marginLeft: 4, borderRadius: round };
+  const obj3 = ChannelListLayout;
+  const merged = Object.assign(obj3.makeSizeStyle(20));
+  obj4 = ChannelListLayout;
   return obj;
 });
-let closure_12 = noop.memo((voiceState) => {
+let closure_12 = react.memo((voiceState) => {
+  let isGuest;
+  let member;
+  let obj5;
+  let storeMember;
+  let tmpResult;
+  let voiceState2;
   voiceState = voiceState.voiceState;
   const user = voiceState.user;
   ({ member, voiceState: voiceState2 } = voiceState);
   const channel = voiceState.channel;
   const collapsed = voiceState.collapsed;
-  const tmp = channel;
+  const isFirst = voiceState.isFirst;
   const tmp3 = closure_11(channel(7298)());
+  let obj = user(504);
   const items = [GuildMemberStore];
   const items1 = [channel.guild_id, user.id];
-  const stateFromStoresObject = user(504).useStateFromStoresObject(items, () => ({ storeMember: GuildMemberStore.getMember(channel.guild_id, user.id), isGuest: GuildMemberStore.isGuestOrLurker(channel.guild_id, user.id) }), items1);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { storeMember: GuildMemberStore.getMember(channel.guild_id, user.id), isGuest: GuildMemberStore.isGuestOrLurker(channel.guild_id, user.id) };
+    return obj;
+  }, items1);
   let userCollapsedOverlap = null;
   ({ storeMember, isGuest } = stateFromStoresObject);
+  const tmp = channel;
+  const tmp6 = View;
   if (collapsed) {
     userCollapsedOverlap = null;
-    if (!voiceState.isFirst) {
+    if (!isFirst) {
       userCollapsedOverlap = tmp3.userCollapsedOverlap;
     }
   }
-  const obj2 = { style: userCollapsedOverlap, children: null };
-  const obj5 = { user, member: null, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed: null, sessionId: null, channel: null, isGuest: null };
-  const obj = user(504);
-  const tmp6 = View;
+  const obj2 = { style: userCollapsedOverlap, children: closure_6(tmpResult, obj5, user.id) };
+  obj5 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: voiceState2.sessionId, channel, isGuest };
+  tmpResult = tmp(15754);
   if (member == null) {
     member = storeMember;
   }
-  obj5.member = member;
   ({ mute: obj3.mute, deaf: obj3.deaf, selfVideo: obj3.selfVideo, selfMute: obj3.selfMute, selfDeaf: obj3.selfDeaf, suppress: obj3.suppress } = voiceState2);
-  obj5.collapsed = collapsed;
-  obj5.sessionId = voiceState2.sessionId;
-  obj5.channel = channel;
-  obj5.isGuest = isGuest;
-  obj2.children = closure_6(tmp(15754), obj5, user.id);
   return closure_6(tmp6, obj2);
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");
 
 export default function VoiceUsers(collapsed) {
+  let audienceCount;
+  let items1;
+  let length;
+  let voiceStates;
   collapsed = collapsed.collapsed;
   const channel = collapsed.channel;
   ({ voiceStates, audienceCount } = collapsed);
-  noop = undefined;
-  const guild_id = channel.guild_id;
+  let guild_id;
+  react = undefined;
+  const tmp2 = guild_id;
+  const tmp = channel;
+  guild_id = channel.guild_id;
+  let tmp3 = channel(guild_id[14])("channel_list");
   if (tmp3) {
+    let mapped;
     if (null != guild_id) {
       const substr = voiceStates.slice(0, collapsed(tmp2[16]).MAX_GUILD_MEMBER_SUBSCRIPTIONS);
-      let mapped = substr.map((user) => user.user.id);
+      mapped = substr.map((user) => user.user.id);
     }
     const tmp4Result = tmp4(mapped);
-    noop = tmp4Result;
+    react = tmp4Result;
     const items = [guild_id, tmp4Result];
-    const memo = noop.useMemo(() => {
+    const memo = react.useMemo(() => {
       if (null != guild_id) {
+        let tmp3;
         if (length.length > 0) {
           const obj = {};
           obj[tmp] = tmp2;
-          let tmp3 = obj;
+          tmp3 = obj;
         }
         return tmp3;
       }
       tmp3 = closure_8;
     }, items);
-    const subscribeGuildMembers = collapsed(tmp2[16]).useSubscribeGuildMembers(memo, "voice_channel_games");
+    let obj = collapsed(tmp2[16]);
+    const subscribeGuildMembers = obj.useSubscribeGuildMembers(memo, "voice_channel_games");
     let tmp15Result = null;
     if (0 !== voiceStates.length) {
-      const obj2 = { collapsed, children: null };
-      const items1 = [voiceStates.map((voiceState, index) => timestampProducer(closure_12, { voiceState, channel, collapsed, isFirst: 0 === index }, "voice-user-item-" + voiceState.user.id + "-" + voiceState.voiceState.sessionId)), ];
+      const obj2 = { collapsed, children: items1 };
+      items1 = [, ];
+      const tmpResult = tmp(tmp2[17]);
+      items1[0] = voiceStates.map((voiceState, index) => {
+        const obj = { voiceState, channel, collapsed, isFirst: 0 === index };
+        return metroRequire(closure_12, obj, "voice-user-item-" + voiceState.user.id + "-" + voiceState.voiceState.sessionId);
+      });
       let tmp17 = null != audienceCount && audienceCount > 0;
+      const tmp15 = closure_7;
       if (tmp17) {
         const obj3 = { audienceCount, collapsed };
         tmp17 = closure_6(AudienceItem, obj3);
       }
       items1[1] = tmp17;
-      obj2.children = items1;
-      tmp15Result = closure_7(channel(tmp2[17]), obj2);
-      const tmpResult = channel(tmp2[17]);
+      tmp15Result = tmp15(tmpResult, obj2);
     }
     return tmp15Result;
   }
   mapped = closure_9;
 };
 export const getAudienceItemHeight = function getAudienceItemHeight(fontScale) {
-  return 8 + Math.max(20, useScaledTextLineHeight.scaleTextLineHeight(c10, fontScale));
+  const obj = useScaledTextLineHeight;
+  return 8 + Math.max(20, obj.scaleTextLineHeight(c10, fontScale));
 };

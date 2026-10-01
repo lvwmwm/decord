@@ -8,88 +8,117 @@
 import nativeDefault from "native" /* 576 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import timing from "timing" /* 4837 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: closure_4, View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { headerContainer: { height: 56, paddingHorizontal: nativeDefault.space.PX_16, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", justifyContent: "center" }, headerRow: null, icon: null, titleContainer: null, headerRight: null, rankPillContainer: null };
-let obj3 = { height: 56, paddingHorizontal: nativeDefault.space.PX_16, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", justifyContent: "center" };
-obj2.headerRow = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm };
-obj2.icon = size;
-let obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj2.titleContainer = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, minWidth: 0 };
-obj2.headerRight = { flexDirection: "row", alignItems: "center" };
-obj2.rankPillContainer = { flex: 1, flexDirection: "row", alignItems: "center" };
-let closure_9 = createStyles.createStyles(obj2);
+let dependencyMap, set;
+
+let StyleSheet;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let obj4;
+let size;
+({ Image: closure_4, View: hasOwnProperty, StyleSheet } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { headerContainer: obj2, headerRow: obj3, icon: size, titleContainer: obj4, headerRight: { flexDirection: "row", alignItems: "center" }, rankPillContainer: { flex: 1, flexDirection: "row", alignItems: "center" } };
+obj2 = { height: 56, paddingHorizontal: nativeDefault.space.PX_16, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", justifyContent: "center" };
+createStyles = createStyles.createStyles;
+obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+size = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm };
+obj4 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, minWidth: 0 };
+let closure_9 = createStyles(obj);
 const __initData = { code: "function GameProfileNavigationHeaderTsx1(){const{headerRightProgress}=this.__closure;return{opacity:headerRightProgress.get()};}" };
 const __initData2 = { code: "function GameProfileNavigationHeaderTsx2(){const{headerRightProgress}=this.__closure;return{opacity:1-headerRightProgress.get()};}" };
-size = fn(2);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileNavigationHeader.tsx");
 
 export default function GameProfileNavigationHeader(game) {
+  let closure_2;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let obj12;
+  let obj6;
   game = game.game;
   const application = game.application;
   const headerRight = game.headerRight;
   let sharedValue;
-  const tmp = closure_9();
+  let tmp = closure_9();
+  const tmp2 = game;
+  let obj = game(4531);
   dependencyMap = tmp6;
-  const token = game(4531).useToken(application(576).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN);
-  const obj = game(4531);
+  const token = obj.useToken(application(576).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN);
   let num = 0;
+  const useSharedValue = game(4566).useSharedValue;
+  const tmp7 = game(4566);
   if (null != headerRight) {
     num = 1;
   }
-  sharedValue = game(4566).useSharedValue(num);
+  sharedValue = useSharedValue(num);
   const items = [null != headerRight, sharedValue];
   const effect = sharedValue.useEffect(() => {
     let num = 0;
+    set = sharedValue.set;
+    const withTiming = timing.withTiming;
+    timing;
     if (closure_2) {
       num = 1;
     }
-    const result = sharedValue.set(timing.withTiming(num, { duration: 200 }));
+    const result = set(withTiming(num, { duration: 200 }));
   }, items);
-  let obj2 = game(4566);
   const fn = function b() {
-    return { opacity: sharedValue.get() };
+    const obj = { opacity: sharedValue.get() };
+    return obj;
   };
   fn.__closure = { headerRightProgress: sharedValue };
   fn.__workletHash = 16001524280109;
   fn.__initData = __initData;
-  const animatedStyle = game(4566).useAnimatedStyle(fn);
-  const tmp2Result = game(4566);
+  const tmp2Result = tmp2(4566);
+  const animatedStyle = tmp2Result.useAnimatedStyle(fn);
   const fn2 = function k() {
-    return { opacity: 1 - sharedValue.get() };
+    const obj = { opacity: 1 - sharedValue.get() };
+    return obj;
   };
   fn2.__closure = { headerRightProgress: sharedValue };
   fn2.__workletHash = 5182160908530;
   fn2.__initData = __initData2;
   const items1 = [game, application];
-  const animatedStyle1 = game(4566).useAnimatedStyle(fn2);
+  const tmp2Result2 = tmp2(4566);
+  const animatedStyle1 = tmp2Result2.useAnimatedStyle(fn2);
   const memo = sharedValue.useMemo(() => {
     let iconURL;
+    const tmp = game;
     if (game != null) {
+      const getIconURL = tmp.getIconURL;
       let str = "png";
       if (AvatarUtils.SUPPORTS_WEBP) {
         str = "webp";
       }
-      iconURL = game.getIconURL(32, str);
+      iconURL = getIconURL(32, str);
     }
     if (iconURL == null) {
-      let iconURL1;
+      let iconURL2;
+      const tmp5 = application;
       if (application != null) {
+        const getIconURL2 = tmp5.getIconURL;
         let str2 = "png";
         if (AvatarUtils.SUPPORTS_WEBP) {
           str2 = "webp";
         }
-        iconURL1 = obj2.getIconURL(32, str2);
+        iconURL2 = getIconURL2(32, str2);
       }
-      iconURL = iconURL1;
-      obj2 = application;
+      iconURL = iconURL2;
     }
     if (iconURL == null) {
       iconURL = null;
@@ -107,58 +136,50 @@ export default function GameProfileNavigationHeader(game) {
     }
     name = name1;
   }
-  let tmp15Result2 = null;
+  let tmp16Result2 = null;
   if (null != name) {
-    const obj3 = { style: tmp.headerContainer, children: null };
-    const obj4 = { android_fallbackColor: token };
-    const items2 = [closure_7(tmp2(8370).BackgroundBlurFill, obj4), ];
-    const obj5 = { style: tmp.headerRow, children: null };
-    let tmp17Result = null != memo;
-    if (tmp17Result) {
-      const obj6 = { source: null, style: null };
-      const obj7 = { uri: memo };
-      obj6.source = obj7;
-      obj6.style = tmp.icon;
-      tmp17Result = tmp17(closure_4, obj6);
+    const obj2 = { style: tmp.headerContainer, children: items2 };
+    const obj3 = { android_fallbackColor: token };
+    items2 = [closure_7(tmp2(8370).BackgroundBlurFill, obj3), ];
+    let tmp18Result = null != memo;
+    const obj4 = { style: tmp.headerRow, children: items3 };
+    if (tmp18Result) {
+      const obj5 = { source: obj6, style: tmp.icon };
+      obj6 = { uri: memo };
+      tmp18Result = tmp18(closure_4, obj5);
     }
-    const items3 = [tmp17Result, , ];
-    const obj8 = { style: tmp.titleContainer, children: null };
-    const obj9 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
-    const items4 = [closure_7(tmp2(4832).Heading, obj9), ];
+    items3 = [tmp18Result, , ];
+    const obj7 = { style: tmp.titleContainer, children: items4 };
+    const obj8 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
+    items4 = [closure_7(tmp2(4832).Heading, obj8), ];
     let l30Rank;
     if (game != null) {
       l30Rank = game.l30Rank;
     }
-    let tmp15Result = null != l30Rank;
-    if (tmp15Result) {
-      const obj10 = { style: tmp.rankPillContainer, children: null };
-      const obj11 = { rank: game.l30Rank, compact: true };
-      const items5 = [tmp17(tmp4(8172), obj11), ];
-      const obj12 = { style: null, children: null };
-      const items6 = [StyleSheet.absoluteFill, animatedStyle1];
-      obj12.style = items6;
-      const obj13 = { rank: game.l30Rank };
-      obj12.children = tmp17(tmp4(8172), obj13);
-      items5[1] = tmp17(tmp4(4566).View, obj12);
-      obj10.children = items5;
-      tmp15Result = tmp15(tmp16, obj10);
+    let tmp16Result = null != l30Rank;
+    if (tmp16Result) {
+      const obj10 = { rank: game.l30Rank, compact: true };
+      const obj9 = { style: tmp.rankPillContainer, children: items5 };
+      items5 = [closure_7(tmp4(8172), obj10), ];
+      const obj11 = { style: items6, children: closure_7(application(8172), obj12) };
+      items6 = [StyleSheet.absoluteFill, animatedStyle1];
+      const View = tmp4(4566).View;
+      obj12 = { rank: game.l30Rank };
+      items5[1] = closure_7(View, obj11);
+      tmp16Result = tmp16(tmp17, obj9);
     }
-    items4[1] = tmp15Result;
-    obj8.children = items4;
-    items3[1] = closure_8(closure_5, obj8);
-    let tmp17Result2 = null != headerRight;
-    if (tmp17Result2) {
-      const obj14 = { style: null, children: null };
-      const items7 = [tmp.headerRight, animatedStyle];
-      obj14.style = items7;
-      obj14.children = headerRight();
-      tmp17Result2 = tmp17(tmp4(4566).View, obj14);
+    items4[1] = tmp16Result;
+    items3[1] = closure_8(closure_5, obj7);
+    let tmp18Result2 = null != headerRight;
+    if (tmp18Result2) {
+      const obj13 = { style: items7, children: headerRight() };
+      items7 = [tmp.headerRight, animatedStyle];
+      const View2 = tmp4(4566).View;
+      tmp18Result2 = tmp18(View2, obj13);
     }
-    items3[2] = tmp17Result2;
-    obj5.children = items3;
-    items2[1] = closure_8(closure_5, obj5);
-    obj3.children = items2;
-    tmp15Result2 = tmp15(tmp16, obj3);
+    items3[2] = tmp18Result2;
+    items2[1] = closure_8(closure_5, obj4);
+    tmp16Result2 = tmp16(tmp17, obj2);
   }
-  return tmp15Result2;
+  return tmp16Result2;
 };

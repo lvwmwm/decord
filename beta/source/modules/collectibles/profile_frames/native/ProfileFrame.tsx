@@ -5,22 +5,42 @@
 // Exports: default
 
 // Module 7666 (ProfileFrame)
+import Fragment from "Fragment" /* 21 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
 import FastImageDefault from "FastImage" /* 5899 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 7648 */;
 import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 7671 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 7667 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-function ProfileFrameLayer(skuId) {
-  const layer = skuId.layer;
-  const overflowTop = skuId.overflowTop;
-  const overflowBottom = skuId.overflowBottom;
-  const overflowHorizontal = skuId.overflowHorizontal;
-  ({ containerWidth, containerHeight, fade } = skuId);
+let set;
+
+let Easing;
+let StyleSheet;
+let closure_4;
+let metroImportDefault;
+let metroRequire;
+let obj3;
+let obj4;
+function ProfileFrameLayer(layer) {
+  let containerHeight;
+  let containerWidth;
+  let fade;
+  let width;
+  layer = layer.layer;
+  const overflowTop = layer.overflowTop;
+  const overflowBottom = layer.overflowBottom;
+  const overflowHorizontal = layer.overflowHorizontal;
+  ({ containerWidth, containerHeight, fade } = layer);
+  const skuId = layer.skuId;
   const tmp = closure_10();
   const sum = containerWidth + 2 * overflowHorizontal;
-  c5 = sum;
-  const tmp5 = overflowTop(overflowBottom[7])({ skuId: skuId.skuId, layer, width: sum });
+  let c5 = sum;
+  const tmp5 = overflowTop(overflowBottom[7])({ skuId, layer, width: sum });
   const assetUrl = tmp5.assetUrl;
   const imageHeight = tmp5.imageHeight;
   const items = [, , , , , ];
@@ -29,39 +49,38 @@ function ProfileFrameLayer(skuId) {
   items[4] = overflowBottom;
   items[5] = overflowHorizontal;
   const memo = overflowHorizontal.useMemo(() => {
-    const rect = { left: -overflowHorizontal, right: -overflowHorizontal, zIndex: React5[layer.order] };
+    let str2;
+    let tmp12;
+    let tmp14;
+    const rect = { left: -overflowHorizontal, right: -overflowHorizontal, zIndex: metroImportDefault[layer.order] };
     const type = layer.type;
     if ("staple" === type) {
-      const obj = {};
+      const obj = { top: tmp12, bottom: tmp14 };
       const merged = Object.assign(rect);
-      let tmp12;
-      if ("top" === tmp2.anchor) {
+      tmp12 = undefined;
+      if ("top" === layer.anchor) {
         tmp12 = -overflowTop;
       }
-      obj.top = tmp12;
-      let tmp14;
-      if ("bottom" === tmp2.anchor) {
+      tmp14 = undefined;
+      if ("bottom" === layer.anchor) {
         tmp14 = -overflowBottom;
       }
-      obj.bottom = tmp14;
       return obj;
     } else if ("rail" === type) {
-      const obj2 = {};
+      const obj2 = { justifyContent: str2 };
       const merged1 = Object.assign(rect);
-      let str2 = "center";
-      if ("center" !== tmp2.anchor) {
+      str2 = "center";
+      if ("center" !== layer.anchor) {
         let str3 = "flex-end";
-        if ("top" === tmp2.anchor) {
+        if ("top" === layer.anchor) {
           str3 = "flex-start";
         }
         str2 = str3;
       }
-      obj2.justifyContent = str2;
       return obj2;
     } else {
-      const obj3 = {};
+      const obj3 = { left: -tmp };
       const merged2 = Object.assign(rect);
-      obj3.left = -tmp;
       return obj3;
     }
   }, items);
@@ -78,37 +97,27 @@ function ProfileFrameLayer(skuId) {
   if (0 !== imageHeight) {
     if (null != assetUrl) {
       if (!tmp7) {
+        let str2 = "border";
         if ("border" === layer.type) {
           if (null != containerHeight) {
             if (0 !== containerHeight) {
+              let tmp12 = globalThis;
               const _Math = Math;
-              let obj2 = { style: null, children: null };
+              let tmp14 = fade;
               const items1 = [tmp.layer, memo];
-              obj2.style = items1;
               const _Array = Array;
               let obj3 = { length: Math.ceil(containerHeight / imageHeight) };
-              obj2.children = Array.from(obj3, (arg0, arg1) => {
-                const size = { source: null, resizeMode: "cover", width, height: imageHeight, fade };
+              return <fade style={items1}>{Array.from(obj3, (arg0, arg1) => {
                 source = { uri: assetUrl };
-                size.source = source;
-                return jsx(FastImageDefault, { source: null, resizeMode: "cover", width, height: imageHeight, fade }, arg1);
-              });
-              return <fade style={null}>{null}</fade>;
+                return jsx(FastImageDefault, { source, resizeMode: "cover", width, height: imageHeight, fade }, arg1);
+              })}</fade>;
             }
           }
           return null;
         } else {
-          let obj = { style: null, children: null };
           const items2 = [tmp.layer, memo];
-          obj.style = items2;
-          let size = { source: null, resizeMode: "cover", width: null, height: null, fade: null };
-          const obj4 = { uri: assetUrl };
-          size.source = obj4;
-          size.width = sum;
-          size.height = imageHeight;
-          size.fade = fade;
-          obj.children = jsx(overflowTop(overflowBottom[8]), { source: null, resizeMode: "cover", width: null, height: null, fade: null });
-          return <fade style={null}>{null}</fade>;
+          size = { source: obj4, resizeMode: "cover", width: sum, height: imageHeight, fade };
+          return <fade style={items2}>{null}</fade>;
         }
       }
     }
@@ -116,6 +125,15 @@ function ProfileFrameLayer(skuId) {
   return null;
 }
 function LiveProfileFrame(frame) {
+  let c10;
+  let c11;
+  let c9;
+  let containerHeight;
+  let items2;
+  let overflowBottom;
+  let overflowHorizontal;
+  let overflowTop;
+  let profileThemeType;
   frame = frame.frame;
   const containerWidth = frame.containerWidth;
   ({ containerHeight: dependencyMap, profileThemeType } = frame);
@@ -126,85 +144,81 @@ function LiveProfileFrame(frame) {
   c10 = undefined;
   c11 = undefined;
   const tmp = c10();
-  closure_6 = frame(7669).useIsProfileFrameLayerPreloadEnabled("ProfileFrame");
   let obj = frame(7669);
-  const settled = frame(7668).usePreloadLayerImages({ frame, containerWidth, profileThemeType, filterLayer }).settled;
+  let closure_6 = obj.useIsProfileFrameLayerPreloadEnabled("ProfileFrame");
+  const obj2 = frame(7668);
+  const settled = obj2.usePreloadLayerImages({ frame, containerWidth, profileThemeType, filterLayer }).settled;
   const items = [frame.layers, frameOrder, profileThemeType, filterLayer];
   const memo = profileThemeType.useMemo(() => {
     const layers = frame.layers;
     return layers.filter((order) => {
       let result = null == frameOrder || tmp === order.order;
       if (result) {
-        result = frame(containerHeight[7]).isProfileFrameLayerShown(order, profileThemeType, filterLayer);
-        const obj = frame(containerHeight[7]);
+        const obj = frame(dependencyMap[7]);
+        result = obj.isProfileFrameLayerShown(order, profileThemeType, filterLayer);
       }
       return result;
     });
   }, items);
-  const obj2 = frame(7668);
-  const obj3 = profileThemeType;
   let num = 0;
+  const useSharedValue = frame(4566).useSharedValue;
+  const obj3 = profileThemeType;
+  const tmp3 = frame(4566);
   if (settled) {
     num = 1;
   }
-  sharedValue = frame(4566).useSharedValue(num);
+  sharedValue = useSharedValue(num);
   const items1 = [settled, sharedValue];
   const effect = obj3.useEffect(() => {
     let num = 0;
+    set = sharedValue.set;
     if (settled) {
       const obj = timing;
       num = obj.withTiming(1, obj);
     }
-    const result = sharedValue.set(num);
+    const result = set(num);
   }, items1);
   if (0 !== memo.length) {
     if (0 !== containerWidth) {
       if (settled) {
         ({ overflowTop: c9, overflowBottom: c10, overflowHorizontal: c11 } = containerWidth(7670)(frame, containerWidth));
-        const obj5 = { style: null, children: null };
-        const items2 = [tmp.container, ];
-        const obj6 = { opacity: sharedValue };
-        items2[1] = obj6;
-        obj5.style = items2;
-        obj5.children = memo.map((layer) => <ProfileFrameLayer key={arg0.id} skuId={frame.skuId} layer={arg0} overflowTop={overflowTop} overflowBottom={overflowBottom} overflowHorizontal={overflowHorizontal} containerWidth={containerWidth} containerHeight={containerHeight} fade={!closure_6} />);
-        return sharedValue(containerWidth(4566).View, obj5);
+        const obj4 = { style: items2, children: memo.map((layer) => <ProfileFrameLayer key={arg0.id} skuId={frame.skuId} layer={arg0} overflowTop={c9} overflowBottom={c10} overflowHorizontal={c11} containerWidth={containerWidth} containerHeight={dependencyMap} fade={!closure_6} />) };
+        items2 = [tmp.container, ];
+        const obj5 = { opacity: sharedValue };
+        items2[1] = obj5;
+        containerWidth(7670)(frame, containerWidth);
+        const View = containerWidth(4566).View;
+        return sharedValue(View, obj4);
       }
     }
   }
   return null;
 }
-get_ActivityIndicator = fn(17);
-({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-let closure_5 = fn(7648).useFramePreviewOverrideStore;
-const ProfileFrameConstants = fn(7667);
-({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: metroRequire, PROFILE_FRAME_Z_INDEX: closure_7 } = ProfileFrameConstants);
-const jsx = fn(21).jsx;
-let source = { duration: 150, easing: null };
-const Easing = fn(4566).Easing;
-source.easing = Easing.in(fn(4566).Easing.ease);
-const createStyles = fn(4836);
-let obj3 = { container: null, layer: null };
-let obj4 = {};
+({ View: closure_4, StyleSheet } = react_native);
+let closure_5 = FramePreviewOverrideStore.useFramePreviewOverrideStore;
+({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: metroRequire, PROFILE_FRAME_Z_INDEX: metroImportDefault } = ProfileFrameConstants);
+const jsx = Fragment.jsx;
+let source = { duration: 150, easing: Easing.in(ReanimatedRexport.Easing.ease) };
+Easing = ReanimatedRexport.Easing;
+let createStyles = createStyles_mod;
+let obj2 = { container: obj3, layer: obj4 };
+obj3 = { pointerEvents: "none" };
+createStyles = createStyles.createStyles;
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-obj4.pointerEvents = "none";
-obj3.container = obj4;
-let obj5 = {};
+obj4 = { alignItems: "center", overflow: "hidden" };
 let merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj5.alignItems = "center";
-obj5.overflow = "hidden";
-obj3.layer = obj5;
-let closure_10 = createStyles.createStyles(obj3);
-let size = fn(2);
+let closure_10 = createStyles(obj2);
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/ProfileFrame.tsx");
 
 export default function ProfileFrame(arg0) {
+  let tmp7;
   const tmp = closure_5((override) => override.override);
   if (null != tmp) {
-    const obj2 = { override: tmp };
+    FramePreviewOverrideFrameDefault;
     const merged = Object.assign(arg0);
-    let tmp7 = jsx(FramePreviewOverrideFrameDefault, { override: tmp });
+    tmp7 = <tmp11 override={tmp} />;
   } else {
-    const obj = {};
     const merged1 = Object.assign(arg0);
     tmp7 = <LiveProfileFrame />;
   }

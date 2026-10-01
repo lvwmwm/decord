@@ -5,42 +5,54 @@
 // Exports: default
 
 // Module 8069 (FormRadioGroup)
-import TableRadioGroup from "TableRadioGroup" /* 5997 */;
+import react_native from "react-native" /* 17 */;
 import RedesignCompat from "RedesignCompat" /* 5998 */;
 import FormSectionDefault from "FormSection" /* 8062 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+let tmp2;
+const TableRadioGroup = tmp2(5997);
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const result = size.fileFinishedImporting("design/void/Form/native/FormRadioGroup.tsx");
 
 export default function FormRadioGroup(arg0) {
+  let accessibilityLabel;
+  let children;
+  let hasIcons;
+  let hint;
+  let icon;
+  let items;
+  let obj4;
+  let title;
+  let tmp11Result;
+  let value;
   ({ title, children, hint } = arg0);
   ({ hasIcons, accessibilityLabel, value, icon } = arg0);
   const merged = Object.assign(arg0, Object.assign({ title: 0, hasIcons: 0, accessibilityLabel: 0, children: 0, value: 0, hint: 0, icon: 0 }));
-  if (noop.useContext(RedesignCompat.RedesignCompatContext)) {
-    const obj2 = { style: { marginBottom: 24, marginHorizontal: 12 }, children: null };
-    const obj3 = { children: null };
-    const obj4 = { defaultValue: value, hasIcons, title, accessibilityLabel, children };
-    obj3.children = hasOwnProperty(TableRadioGroup.TableRadioGroup, obj4);
-    const items = [hasOwnProperty(View, obj3), ];
+  if (react.useContext(RedesignCompat.RedesignCompatContext)) {
+    const obj2 = { style: { marginBottom: 24, marginHorizontal: 12 }, children: items };
+    const obj3 = { children: hasOwnProperty(TableRadioGroup.TableRadioGroup, obj4) };
+    obj4 = { defaultValue: value, hasIcons, title, accessibilityLabel, children };
+    items = [hasOwnProperty(View, obj3), ];
     let tmp13Result = null;
+    const tmp11 = metroRequire;
+    const tmp13 = hasOwnProperty;
     if (null != hint) {
       const obj5 = { style: { marginTop: 8 }, children: hint };
       tmp13Result = tmp13(tmp12, obj5);
     }
     items[1] = tmp13Result;
-    obj2.children = items;
-    let tmp11Result = timestampProducer(tmp12, obj2);
-    tmp13 = hasOwnProperty;
+    tmp11Result = tmp11(tmp12, obj2);
   } else {
-    const obj = { title, accessibilityRole: "radiogroup", accessibilityLabel: title, hint, icon };
+    const obj = { title, accessibilityRole: "radiogroup", accessibilityLabel: title, hint, icon, children };
+    const tmp6 = FormSectionDefault;
     const merged1 = Object.assign(merged);
-    obj.children = children;
-    tmp11Result = hasOwnProperty(FormSectionDefault, obj);
+    tmp11Result = hasOwnProperty(tmp6, obj);
   }
   return tmp11Result;
 };

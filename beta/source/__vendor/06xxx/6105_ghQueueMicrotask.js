@@ -4,9 +4,10 @@
 // Dependencies: []
 
 // Module 6105 (ghQueueMicrotask)
+let bindResult;
 if (typeof setImmediate === "function") {
   const _setImmediate = setImmediate;
-  let bindResult = setImmediate.bind(null);
+  bindResult = setImmediate.bind(null);
 } else {
   const _requestAnimationFrame2 = requestAnimationFrame;
   if (typeof requestAnimationFrame === "function") {

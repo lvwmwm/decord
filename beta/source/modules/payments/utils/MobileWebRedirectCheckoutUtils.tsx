@@ -7,12 +7,14 @@
 // Module 6826 (MobileWebRedirectCheckoutUtils)
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1610 */;
-import _mod4661 from "module_4661" /* 4661 */;
+import BrowserRouter from "BrowserRouter" /* 4661 */;
 import PaymentConstants from "PaymentConstants" /* 4815 */;
-import keysSorter from "keysSorter" /* 5768 */;
+import _mod5768 from "module_5768" /* 5768 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
+let closure_4;
+let hasOwnProperty;
 const CustomCheckoutFlow = PaymentConstants.CustomCheckoutFlow;
 ({ Routes: closure_4, LinkingTypes: hasOwnProperty } = Constants);
 const mobile_web_redirect_checkout = "mobile_web_redirect_checkout";
@@ -20,39 +22,60 @@ const result = size.fileFinishedImporting("modules/payments/utils/MobileWebRedir
 
 export const MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG = "mobile_web_redirect_checkout";
 export const captureMobileWebRedirectCheckoutSentryError = function captureMobileWebRedirectCheckoutSentryError(error, source, tags) {
-  const obj2 = { tags: null, extra: null };
+  let obj2;
+  const obj = { tags: obj2, extra: tags.extra };
+  const captureException = SentryUtilsDefault.captureException;
+  obj2 = { app_context: mobile_web_redirect_checkout, source };
+  SentryUtilsDefault;
   const merged = Object.assign(tags.tags);
-  obj2.tags = { app_context: mobile_web_redirect_checkout, source };
-  obj2.extra = tags.extra;
-  SentryUtilsDefault.captureException(error, obj2);
+  captureException(error, obj);
 };
 export const isMobileWebRedirectCheckoutEnabled = function isMobileWebRedirectCheckoutEnabled() {
-  return MetaQuestUtils.isMetaQuest();
+  const obj = MetaQuestUtils;
+  return obj.isMetaQuest();
 };
 export const getCustomCheckoutFlowForAnalytics = function getCustomCheckoutFlowForAnalytics() {
-  return MetaQuestUtils.isMetaQuest() ? CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT : CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
+  const obj = MetaQuestUtils;
+  return obj.isMetaQuest() ? CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT : CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
 };
 export const useGetCustomCheckoutFlow = function useGetCustomCheckoutFlow() {
-  const _location = _mod4661.useLocation();
+  let deep_link_type;
+  let flow_type;
+  let pathname;
+  let search;
+  const obj = BrowserRouter;
+  const _location = obj.useLocation();
   ({ pathname, search } = _location);
-  const parsed = keysSorter.parse(search);
+  const obj2 = _mod5768;
+  const parsed = obj2.parse(search);
   ({ deep_link_type, flow_type } = parsed);
+  let tmp3;
   if (!pathname.startsWith(constants.BILLING_MANAGE_SUBSCRIPTION)) {
-    if (deep_link_type === constants2.MOBILE_WEB_REDIRECT_CHECKOUT) {
-      let META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
+    let META_QUEST_WEB_REDIRECT_CHECKOUT;
+    if (deep_link_type === hasOwnProperty.MOBILE_WEB_REDIRECT_CHECKOUT) {
+      META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
     } else if (flow_type === CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT) {
       META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT;
     }
+    tmp3 = META_QUEST_WEB_REDIRECT_CHECKOUT;
   }
+  return tmp3;
 };
 export const getCustomCheckoutFlow = function getCustomCheckoutFlow() {
-  const parsed = keysSorter.parse(window.location.search);
+  let deep_link_type;
+  let flow_type;
+  const obj = _mod5768;
+  const parsed = obj.parse(window.location.search);
   ({ deep_link_type, flow_type } = parsed);
+  let tmp2;
   if (!pathname.startsWith(constants.BILLING_MANAGE_SUBSCRIPTION)) {
-    if (deep_link_type === constants2.MOBILE_WEB_REDIRECT_CHECKOUT) {
-      let META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
+    let META_QUEST_WEB_REDIRECT_CHECKOUT;
+    if (deep_link_type === hasOwnProperty.MOBILE_WEB_REDIRECT_CHECKOUT) {
+      META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
     } else if (flow_type === CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT) {
       META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT;
     }
+    tmp2 = META_QUEST_WEB_REDIRECT_CHECKOUT;
   }
+  return tmp2;
 };

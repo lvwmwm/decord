@@ -4,52 +4,56 @@
 // Dependencies: [19, 17, 4852, 4857, 21, 4836, 576, 9506, 1479, 5438, 504, 9517, 1177, 2]
 
 // Module 9516 (MediaTile)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import CallConstants from "CallConstants" /* 4857 */;
+import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const ParticipantTypes = fn(4857).ParticipantTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { container: { flex: 1, marginHorizontal: 4, marginVertical: 4 }, media: { flex: 1, borderRadius: nativeDefault.radii.sm } };
+let channel;
+
+let obj2;
+const View = react_native.View;
+const ParticipantTypes = CallConstants.ParticipantTypes;
+const jsx = Fragment.jsx;
+let obj = { container: { flex: 1, marginHorizontal: 4, marginVertical: 4 }, media: obj2 };
+obj2 = { flex: 1, borderRadius: nativeDefault.radii.sm };
 let closure_7 = createStyles.createStyles(obj);
-const obj3 = { flex: 1, borderRadius: nativeDefault.radii.sm };
-let size = fn(2);
-const result = size.fileFinishedImporting("modules/stage_channels/native/components/MediaTile.tsx");
-
-export default noop.memo((channel) => {
+const memoResult = react.memo((channel) => {
   channel = channel.channel;
   const participant = channel.participant;
-  const size = channel.size;
+  size = channel.size;
   const tmp = closure_7();
-  const speakerTileStyles = channel(9506).useSpeakerTileStyles();
   const obj = channel(9506);
-  const tmp5 = participant;
-  const isScreenLandscape = channel(5438).useIsScreenLandscape();
+  const speakerTileStyles = obj.useSpeakerTileStyles();
+  const width = participant(1479)().width;
   const obj2 = channel(5438);
+  const isScreenLandscape = obj2.useIsScreenLandscape();
   const items = [ChannelRTCStore];
   const items1 = [channel.id, participant.id];
-  const stateFromStores = channel(504).useStateFromStores(items, () => ChannelRTCStore.getParticipant(channel.id, participant.id), items1);
+  const obj3 = channel(504);
+  const stateFromStores = obj3.useStateFromStores(items, () => ChannelRTCStore.getParticipant(channel.id, participant.id), items1);
   let tmp8 = null;
+  const tmp5 = participant;
   if (null != stateFromStores) {
     tmp8 = null;
     if (stateFromStores.type !== ParticipantTypes.ACTIVITY) {
-      const obj4 = { style: null, children: null };
-      const items2 = [tmp.container, tmp2(9506).getSizeStyle(size, speakerTileStyles), ];
-      const tmp2Result = tmp2(9506);
-      items2[2] = tmp2(9506).getTileWidthStyle(size, participant(1479)().width, isScreenLandscape);
-      obj4.style = items2;
-      const obj5 = { hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores, avatarSize: null, channel: null, shrinkStreamEmptyState: false, contentStyle: null };
-      const tmp2Result2 = tmp2(9506);
-      obj5.avatarSize = tmp2(1177).AvatarSizes.XLARGE;
-      obj5.channel = channel;
-      obj5.contentStyle = tmp.media;
-      obj4.children = jsx(tmp5(9517), { hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores, avatarSize: null, channel: null, shrinkStreamEmptyState: false, contentStyle: null });
-      tmp8 = <View style={null}>{null}</View>;
-      const tmp5Result = tmp5(9517);
+      const items2 = [tmp.container, , ];
+      const tmp2Result = channel(9506);
+      items2[1] = tmp2Result.getSizeStyle(size, speakerTileStyles);
+      const tmp2Result2 = channel(9506);
+      items2[2] = tmp2Result2.getTileWidthStyle(size, width, isScreenLandscape);
+      ({ hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores, avatarSize: channel(1177).AvatarSizes.XLARGE, channel, shrinkStreamEmptyState: false, contentStyle: tmp.media });
+      tmp5(9517);
+      tmp8 = <View style={items2}>{null}</View>;
     }
   }
   return tmp8;
 });
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/stage_channels/native/components/MediaTile.tsx");
+
+export default memoResult;

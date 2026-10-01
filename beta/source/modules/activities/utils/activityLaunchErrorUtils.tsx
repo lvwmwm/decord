@@ -5,148 +5,150 @@
 // Exports: getActivityLaunchErrorInfo
 
 // Module 8811 (activityLaunchErrorUtils)
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl11 from "intl" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5064 */;
 import InteractionUtils from "InteractionUtils" /* 7573 */;
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 8320 */;
 import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8782 */;
 import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 8788 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8320 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_8 = async function _getActivityLaunchErrorInfo(arg0, value) {
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
+let c5, c6, fetchState;
+
+let obj = function _getActivityLaunchErrorInfo() {
+  let ClientError;
+  let constants2;
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let code;
+    let detailCode;
+    let obj5;
+    let reason;
+    let closure_0 = arg0;
+    let closure_1 = value;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c6 = 2;
-      if (0 === c5) {
-        if (arg0 === 1) {
+      try {
+        let message;
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_4 = tmp4;
+            let closure_3 = tmp;
+            let ApiError;
+            detailCode = undefined;
+            reason = undefined;
+            const intl9 = intl11.intl;
+            message = intl9.string(intl11.t["IOy+I5"]);
+            const tmp82 = closure_1;
+            if (closure_0 instanceof EmbeddedActivityClientErrorDefault) {
+              ApiError = ClientError.ClientError;
+              reason = tmp81.reason;
+              fetchState = fetchState.getFetchState();
+              const DeveloperMode = UserSettings.DeveloperMode;
+              const setting = DeveloperMode.getSetting() && fetchState !== constants.LOADED;
+              if (setting) {
+                c5 = 1;
+                c6 = 1;
+                const obj6 = { value: obj5.fetchDeveloperApplications(), done: false };
+                obj5 = EmbeddedActivitiesActionCreators;
+                return obj6;
+              }
+            } else if (closure_0 instanceof InteractionCallbackErrorDefault) {
+              ApiError = tmp7.CallbackError;
+              reason = tmp81.reason;
+              const obj2 = InteractionUtils;
+              const result = obj2.interactionCallbackErrorReason(tmp81.reason, tmp82);
+              let closure_2 = result;
+              if (result == null) {
+                closure_2 = message;
+              }
+              message = closure_2;
+            } else {
+              ApiError = tmp7.ApiError;
+              ({ status: detailCode, code: reason, code } = closure_0);
+              if (constants2.INVALID_ACTIVITY_LAUNCH_NO_ACCESS === code) {
+                const intl6 = intl11.intl;
+                message = intl6.string(intl11.t.GyzcrS);
+              } else if (constants2.INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER === code) {
+                const intl5 = intl11.intl;
+                message = intl5.string(intl11.t.zxv7EF);
+              } else if (constants2.INVALID_PERMISSIONS === code) {
+                const intl4 = intl11.intl;
+                message = intl4.string(intl11.t.hHGrWz);
+              } else if (constants2.INVALID_ACTIVITY_LAUNCH_AFK_CHANNEL === code) {
+                const intl3 = intl11.intl;
+                message = intl3.string(intl11.t.j29zCr);
+              } else if (constants2.INVALID_ACTIVITY_LAUNCH_AGE_GATED === code) {
+                const intl2 = intl11.intl;
+                message = intl2.string(intl11.t["4WuFRE"]);
+              } else if (constants2.INVALID_ACTIVITY_LAUNCH_DEV_PREVIEW_GUILD_SIZE === code) {
+                const intl = intl11.intl;
+                message = intl.string(intl11.t.RvkXdb);
+              } else if (constants2.ACTIVITY_CONFIGURATION_DOES_NOT_SUPPORT_PLATFORM === code) {
+                const intl10 = intl11.intl;
+                message = intl10.string(intl11.t.uGDCcw);
+              }
+            }
+            const obj7 = { message, errorType: ApiError, errorStatus: detailCode, errorCode: reason };
+            c6 = 3;
+            const obj8 = { value: obj7, done: true };
+            return obj8;
+          }
+        } else if (arg0 === 1) {
           c6 = 3;
           throw value;
         } else if (arg0 === 2) {
           c6 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          closure_4 = tmp5;
-          closure_3 = tmp2;
-          closure_131_0 = closure_0;
-          closure_131_1 = closure_1;
-          let ClientError2;
-          let detailCode;
-          let reason2;
-          closure_131_5 = undefined;
-          const intl9 = util.intl;
-          closure_131_5 = intl9.string(util.t["IOy+I5"]);
-          if (closure_0 instanceof EmbeddedActivityClientErrorDefault) {
-            ClientError2 = ClientError.ClientError;
-            reason2 = tmp83.reason;
-            fetchState = fetchState.getFetchState();
-            const DeveloperMode = UserSettings.DeveloperMode;
-            let setting = DeveloperMode.getSetting();
-            if (setting) {
-              setting = fetchState !== constants.LOADED;
-            }
-            if (setting) {
-              c5 = 1;
-              c6 = 1;
-              const obj6 = { value: EmbeddedActivitiesActionCreators.fetchDeveloperApplications(), done: false };
-              return obj6;
-            }
-          } else if (tmp83 instanceof InteractionCallbackErrorDefault) {
-            ClientError2 = tmp8.CallbackError;
-            reason2 = tmp83.reason;
-            const result = InteractionUtils.interactionCallbackErrorReason(tmp83.reason, tmp84);
-            closure_2 = result;
-            if (result == null) {
-              closure_2 = closure_131_5;
-            }
-            closure_131_5 = closure_2;
-          } else {
-            ClientError2 = tmp8.ApiError;
-            ({ status: closure_131_3, code: closure_131_4, code } = tmp83);
-            if (constants2.INVALID_ACTIVITY_LAUNCH_NO_ACCESS === code) {
-              const intl6 = util.intl;
-              closure_131_5 = intl6.string(util.t.GyzcrS);
-            } else if (tmp9.INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER === code) {
-              const intl5 = util.intl;
-              closure_131_5 = intl5.string(util.t.zxv7EF);
-            } else if (tmp9.INVALID_PERMISSIONS === code) {
-              const intl4 = util.intl;
-              closure_131_5 = intl4.string(util.t.hHGrWz);
-            } else if (tmp9.INVALID_ACTIVITY_LAUNCH_AFK_CHANNEL === code) {
-              const intl3 = util.intl;
-              closure_131_5 = intl3.string(util.t.j29zCr);
-            } else {
-              if (tmp9.INVALID_ACTIVITY_LAUNCH_AGE_GATED === code) {
-                const intl2 = util.intl;
-                closure_131_5 = intl2.string(util.t["4WuFRE"]);
-              } else if (tmp9.INVALID_ACTIVITY_LAUNCH_DEV_PREVIEW_GUILD_SIZE !== code) {
-                if (tmp9.ACTIVITY_CONFIGURATION_DOES_NOT_SUPPORT_PLATFORM === code) {
-                  const intl10 = util.intl;
-                  closure_131_5 = intl10.string(util.t.uGDCcw);
-                }
-              }
-              const intl = util.intl;
-              closure_131_5 = intl.string(util.t.RvkXdb);
-            }
+          obj = { value, done: true };
+          return obj;
+        }
+        reason = closure_0.reason;
+        if (closure_132_1(closure_132_2[4]).Reasons.PRIMARY_APP_COMMAND_NOT_FOUND === reason) {
+          if (closure_132_4.inDevModeForApplication(closure_1)) {
+            const intl8 = closure_132_0(closure_132_2[3]).intl;
+            message = intl8.string(closure_132_0(closure_132_2[3]).t.hXRXfz);
           }
-          const obj7 = { message: closure_131_5, errorType: ClientError2, errorStatus: detailCode, errorCode: reason2 };
-          c6 = 3;
-          tmp84 = closure_1;
+        } else if (closure_132_1(closure_132_2[4]).Reasons.INVALID_CHANNEL === reason) {
+          const intl7 = closure_132_0(closure_132_2[3]).intl;
+          message = intl7.string(closure_132_0(closure_132_2[3]).t.j29zCr);
+        } else if (closure_132_1(closure_132_2[4]).Reasons.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED === reason) {
+          detailCode = closure_0.detailCode;
         }
-      } else if (arg0 === 1) {
+      } catch (tmp77) {
         c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c6 = 3;
-        const obj = { value, done: true };
-        return obj;
+        throw tmp77;
       }
-      const reason = closure_131_0.reason;
-      if (closure_132_1(closure_132_2[4]).Reasons.PRIMARY_APP_COMMAND_NOT_FOUND === reason) {
-        if (closure_132_4.inDevModeForApplication(closure_131_1)) {
-          const intl8 = closure_132_0(closure_132_2[3]).intl;
-          closure_131_5 = intl8.string(closure_132_0(closure_132_2[3]).t.hXRXfz);
-        }
-      } else if (closure_132_1(closure_132_2[4]).Reasons.INVALID_CHANNEL === reason) {
-        const intl7 = closure_132_0(closure_132_2[3]).intl;
-        closure_131_5 = intl7.string(closure_132_0(closure_132_2[3]).t.j29zCr);
-      } else if (closure_132_1(closure_132_2[4]).Reasons.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED === reason) {
-        detailCode = closure_131_0.detailCode;
-      }
-    } catch (tmp78) {
-      c6 = tmp;
-      throw tmp78;
     }
-  }
+  });
+  return obj(...arguments);
 };
-const DevShelfFetchState = fn(8320).DevShelfFetchState;
-const AbortCodes = fn(1074).AbortCodes;
-const ActivityLaunchFailErrorType = { ClientError: 0, [0]: "ClientError", CallbackError: 1, [1]: "CallbackError", ApiError: 2, [2]: "ApiError" };
-const size = fn(2);
+const DevShelfFetchState = DeveloperActivityShelfStore2.DevShelfFetchState;
+const AbortCodes = Constants.AbortCodes;
+obj = { ClientError: 0, [0]: "ClientError", CallbackError: 1, [1]: "CallbackError", ApiError: 2, [2]: "ApiError" };
 let result = size.fileFinishedImporting("modules/activities/utils/activityLaunchErrorUtils.tsx");
 
-export { ActivityLaunchFailErrorType };
+export const ActivityLaunchFailErrorType = obj;
 export const getActivityLaunchErrorInfo = function getActivityLaunchErrorInfo() {
-  const self = this;
-  const apply = closure_8.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

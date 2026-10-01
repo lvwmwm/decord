@@ -1,9 +1,0 @@
-// Module ID: 2560
-// Function ID: 2561
-// Dependencies: [1121]
-
-// Module 2560
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2dpZnRpbmc=", scales: [1], hash: "41e7aaa00e024f0f9846da8599787ee5", name: "fi.messages.41e7aaa00e024f0f9846da8599787ee5.compiled.messages", type: "jsona" });

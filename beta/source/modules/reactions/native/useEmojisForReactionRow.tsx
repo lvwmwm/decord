@@ -5,24 +5,31 @@
 // Exports: useEmojisForReactionRow
 
 // Module 11231 (useEmojisForReactionRow)
-import noop from "module_19" /* 19 */;
+import EmojiConstants from "EmojiConstants" /* 1375 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const EmojiIntention = fn(1375).EmojiIntention;
-const size = fn(2);
+const EmojiIntention = EmojiConstants.EmojiIntention;
 const result = size.fileFinishedImporting("modules/reactions/native/useEmojisForReactionRow.tsx");
 
 export const useEmojisForReactionRow = function useEmojisForReactionRow(channel, arg1, arg2) {
+  let rounded;
   _require = channel;
   const guildId = channel.getGuildId();
-  const frequentlyUsedReactionEmojis = require("EmojiPickerUtils").useFrequentlyUsedReactionEmojis(guildId);
+  let obj = require("EmojiPickerUtils");
+  const frequentlyUsedReactionEmojis = obj.useFrequentlyUsedReactionEmojis(guildId);
   rounded = Math.floor(Math.min(frequentlyUsedReactionEmojis(rounded[3])().width, arg1) / arg2);
   const items = [frequentlyUsedReactionEmojis, channel, rounded];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     let length;
-    const found = frequentlyUsedReactionEmojis.filter((emoji) => !frequentlyUsedReactionEmojis(rounded[4]).isEmojiFilteredOrLocked({ emoji, channel, intention: constants.REACTION }));
+    const found = frequentlyUsedReactionEmojis.filter((emoji) => {
+      const obj = frequentlyUsedReactionEmojis(rounded[4]);
+      const obj2 = { emoji, channel, intention: constants.REACTION };
+      return !obj.isEmojiFilteredOrLocked(obj2);
+    });
     if (found.length < rounded) {
       do {
         let arr = found.push(null);

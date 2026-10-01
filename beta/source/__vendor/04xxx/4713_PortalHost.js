@@ -5,20 +5,29 @@
 
 // Module 4713 (PortalHost)
 import _mod4710 from "module_4710" /* 4710 */;
-import _mod4714 from "module_4714" /* 4714 */;
-import noop_mod from "module_19" /* 19 */;
-import jsxProd from "jsxProd" /* 21 */;
+import react2 from "react" /* 4714 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
 
-let noop = noop_mod;
-const useEffect = noop.useEffect;
-let noop = noop_mod;
-({ Fragment: c3, jsx: closure_4 } = jsxProd);
-const memoResult = noop.memo((name) => {
+let name;
+
+let c3;
+let closure_4;
+let react = react_mod;
+const useEffect = react.useEffect;
+const memo = react.memo;
+react = react_mod;
+({ Fragment: c3, jsx: closure_4 } = Fragment);
+const memoResult = memo((name) => {
+  let c0;
+  let c1;
   name = name.name;
   c0 = undefined;
   c1 = undefined;
-  const portalState = _mod4714.usePortalState(name);
-  const portal = _mod4710.usePortal(name);
+  const obj = react2;
+  const portalState = obj.usePortalState(name);
+  const obj2 = _mod4710;
+  const portal = obj2.usePortal(name);
   ({ registerHost: c0, deregisterHost: c1 } = portal);
   useEffect(() => {
     _undefined();
@@ -26,7 +35,8 @@ const memoResult = noop.memo((name) => {
       closure_1_1();
     };
   }, []);
-  return React4(React3, { children: portalState.map((node) => node.node) });
+  const obj3 = { children: portalState.map((node) => node.node) };
+  return React3(_false, obj3);
 });
 memoResult.displayName = "PortalHost";
 

@@ -4,7 +4,7 @@
 // Exports: getSDKSource, isBrowserBundle
 
 // Module 854
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export function getSDKSource() {
   return "npm";

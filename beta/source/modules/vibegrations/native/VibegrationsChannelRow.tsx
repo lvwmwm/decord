@@ -5,47 +5,53 @@
 // Exports: default
 
 // Module 15848 (VibegrationsChannelRow)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import router_utils from "router_utils" /* 1101 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
 import _modDef3715 from "module_3715" /* 3715 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 9577 */;
 import BaseChannelItemDefault from "BaseChannelItem" /* 11868 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Routes = fn(1074).Routes;
-const StaticChannelRoute = fn(2052).StaticChannelRoute;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { container: { marginVertical: fn(9577).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const Routes = Constants.Routes;
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
+const CHANNEL_MARGIN_VERTICAL = RedesignChannelListConstants.CHANNEL_MARGIN_VERTICAL;
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsChannelRow.tsx");
 
 export default function VibegrationsChannelRow(selected) {
+  let DEFAULT;
+  let intl2;
+  let tmp5;
   selected = selected.selected;
   const id = selected.guild.id;
   const items = [id];
-  const callback = noop.useCallback(() => {
-    router_utils.transitionTo(Routes.CHANNEL(id, StaticChannelRoute.VIBEGRATIONS));
+  const tmp = closure_7();
+  const callback = react.useCallback(() => {
+    const obj = router_utils;
+    obj.transitionTo(Routes.CHANNEL(id, StaticChannelRoute.VIBEGRATIONS));
   }, items);
   if (true === selected) {
-    let DEFAULT = id(11868).ChannelModes.SELECTED;
-    let tmp5 = id;
+    DEFAULT = id(11868).ChannelModes.SELECTED;
+    tmp5 = id;
   } else {
     DEFAULT = id(11868).ChannelModes.DEFAULT;
     tmp5 = id;
   }
-  const obj = { onPress: callback, style: closure_7().container, accessible: true, accessibilityLabel: null, accessibilityState: null, mode: null, name: null, icon: null };
-  const tmp = closure_7();
+  BaseChannelItemDefault;
   const intl = tmp5(1115).intl;
-  obj.accessibilityLabel = intl.string(_modDef3715.Xmvb23);
-  obj.accessibilityState = { selected };
-  obj.mode = DEFAULT;
-  const obj2 = { name: null, mode: null };
-  const intl2 = tmp5(1115).intl;
-  obj2.name = intl2.string(_modDef3715.Xmvb23);
-  obj2.mode = DEFAULT;
-  obj.name = jsx(tmp5(11868).BaseChannelName, { name: null, mode: null });
-  obj.icon = jsx(tmp5(11868).BaseChannelIcon, { mode: DEFAULT, IconComponent: tmp5(9611).MagicWandIcon });
-  return <tmp8 onPress={callback} style={closure_7().container} accessible accessibilityLabel={null} accessibilityState={null} mode={null} name={null} icon={null} />;
+  ({ name: intl2.string(_modDef3715.Xmvb23), mode: DEFAULT });
+  const BaseChannelName = tmp5(11868).BaseChannelName;
+  intl2 = tmp5(1115).intl;
+  ({ mode: DEFAULT, IconComponent: tmp5(9611).MagicWandIcon });
+  const BaseChannelIcon = tmp5(11868).BaseChannelIcon;
+  return <tmp8 onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(_modDef3715.Xmvb23)} accessibilityState={{ selected }} mode={DEFAULT} name={null} icon={null} />;
 };

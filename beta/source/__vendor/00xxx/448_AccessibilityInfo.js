@@ -4,12 +4,12 @@
 // Dependencies: [449]
 
 // Module 448 (AccessibilityInfo)
-import _modDef449 from "module_449" /* 449 */;
+import _mod449 from "module_449" /* 449 */;
 
-const require = globalThis.__r;
+const _modDef449 = _mod449;
 
-for (const key10013 in require("module_449")) {
-  arg5[key10013] = require("module_449")[key10013];
+for (const key10013 in _mod449) {
+  exports[key10013] = _mod449[key10013];
   continue;
 }
 

@@ -5,59 +5,79 @@
 // Exports: default
 
 // Module 15141 (DevToolsLoggingFlagsScreen)
-import _mod17 from "module_17" /* 17 */;
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import DeveloperOptionsActionCreators from "DeveloperOptionsActionCreators" /* 1347 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
+import TableRowGroup2 from "TableRowGroup" /* 5999 */;
 import TableSwitchRow from "TableSwitchRow" /* 6621 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
-import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
-const ScrollView = _mod17.ScrollView;
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, content: null };
-let obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj.content = { padding: nativeDefault.space.PX_16 };
-let closure_6 = createStyles.createStyles(obj);
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let obj3;
+const ScrollView = react_native.ScrollView;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, content: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16 };
+let closure_6 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsLoggingFlagsScreen.tsx");
 
 export default function DevToolsLoggingFlagsScreen() {
+  let TableRowGroup;
+  let isLoggingAnalyticsEvents;
+  let isLoggingGatewayEvents;
+  let isTracingRequests;
+  let items1;
+  let obj3;
   const tmp = closure_6();
+  let obj = get_initialized;
   const items = [DeveloperOptionsStore];
-  const stateFromStoresObject = initialize.useStateFromStoresObject(items, () => ({ isLoggingGatewayEvents: DeveloperOptionsStore.isLoggingGatewayEvents, isLoggingAnalyticsEvents: DeveloperOptionsStore.isLoggingAnalyticsEvents, isTracingRequests: DeveloperOptionsStore.isTracingRequests }));
-  const obj2 = { style: tmp.container, contentContainerStyle: tmp.content, children: null };
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isLoggingGatewayEvents: DeveloperOptionsStore.isLoggingGatewayEvents, isLoggingAnalyticsEvents: DeveloperOptionsStore.isLoggingAnalyticsEvents, isTracingRequests: DeveloperOptionsStore.isTracingRequests }));
+  let obj2 = { style: tmp.container, contentContainerStyle: tmp.content, children: hasOwnProperty(TableRowGroup, obj3) };
   ({ isLoggingGatewayEvents, isLoggingAnalyticsEvents, isTracingRequests } = stateFromStoresObject);
-  const obj3 = { title: "Logging", hasIcons: false, children: null };
-  const items1 = [
-    React4(TableSwitchRow.TableSwitchRow, {
-      label: "Gateway Events",
-      subLabel: "Logs all gateway events to console, including content. Enable verbose logs to see them.",
-      value: isLoggingGatewayEvents,
-      onValueChange(logGatewayEvents) {
-        return DeveloperOptionsActionCreators.setDeveloperOptionSettings({ logGatewayEvents });
-      }
-    }),
-    React4(TableSwitchRow.TableSwitchRow, {
-      label: "Analytics Events",
-      subLabel: "Logs all analytics events to the developer console.",
-      value: isLoggingAnalyticsEvents,
-      onValueChange(logAnalyticsEvents) {
-        return DeveloperOptionsActionCreators.setDeveloperOptionSettings({ logAnalyticsEvents });
-      }
-    }),
-    React4(TableSwitchRow.TableSwitchRow, {
-      label: "Tracing Requests",
-      subLabel: "Force trace all client requests with APM.",
-      value: isTracingRequests,
-      onValueChange(trace) {
-        return DeveloperOptionsActionCreators.setDeveloperOptionSettings({ trace });
-      }
-    })
-  ];
-  obj3.children = items1;
-  obj2.children = hasOwnProperty(TableRowGroup.TableRowGroup, obj3);
-  return React4(ScrollView, obj2);
+  obj3 = { title: "Logging", hasIcons: false, children: items1 };
+  TableRowGroup = TableRowGroup2.TableRowGroup;
+  items1 = [, , ];
+  const obj4 = {
+    label: "Gateway Events",
+    subLabel: "Logs all gateway events to console, including content. Enable verbose logs to see them.",
+    value: isLoggingGatewayEvents,
+    onValueChange(logGatewayEvents) {
+      const obj = DeveloperOptionsActionCreators;
+      const obj2 = { logGatewayEvents };
+      return obj.setDeveloperOptionSettings(obj2);
+    }
+  };
+  items1[0] = React3(TableSwitchRow.TableSwitchRow, obj4);
+  const obj5 = {
+    label: "Analytics Events",
+    subLabel: "Logs all analytics events to the developer console.",
+    value: isLoggingAnalyticsEvents,
+    onValueChange(logAnalyticsEvents) {
+      const obj = DeveloperOptionsActionCreators;
+      const obj2 = { logAnalyticsEvents };
+      return obj.setDeveloperOptionSettings(obj2);
+    }
+  };
+  items1[1] = React3(TableSwitchRow.TableSwitchRow, obj5);
+  const obj6 = {
+    label: "Tracing Requests",
+    subLabel: "Force trace all client requests with APM.",
+    value: isTracingRequests,
+    onValueChange(trace) {
+      const obj = DeveloperOptionsActionCreators;
+      const obj2 = { trace };
+      return obj.setDeveloperOptionSettings(obj2);
+    }
+  };
+  items1[2] = React3(TableSwitchRow.TableSwitchRow, obj6);
+  return React3(ScrollView, obj2);
 };

@@ -6,15 +6,17 @@
 
 // Module 8832 (useSelectedParticipant)
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/useSelectedParticipant.tsx");
 
 export default function useSelectedParticipant(arg0) {
+  let id;
   _require = arg0;
   const items = [ChannelRTCStore];
-  return require("initialize").useStateFromStores(items, () => ChannelRTCStore.getSelectedParticipant(id.id));
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => ChannelRTCStore.getSelectedParticipant(id.id));
 };

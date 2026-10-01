@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 823 (ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE)
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE = "anthropic.response.timestamp";
 export const GEN_AI_AGENT_NAME_ATTRIBUTE = "gen_ai.agent.name";

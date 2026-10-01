@@ -6,172 +6,142 @@
 
 // Module 14325 (TwoFASetupSuccess)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl5 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6368 */;
 import TwoFASetupModal from "TwoFASetupModal" /* 14316 */;
-import _mod14326 from "module_14326" /* 14326 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistry from "AssetRegistry" /* 14326 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: metroRequire, Image: closure_7 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { alignSelf: "stretch", flex: 1, alignItems: "center", justifyContent: "flex-start", flexDirection: "column" }, flex: { flex: 1 }, image: { width: 190, height: 70 }, success: { marginTop: 33 }, successBody: { fontSize: 14, textAlign: "center", marginHorizontal: 20, marginTop: 4, color: nativeDefault.colors.TEXT_STRONG }, divider: null, buttonWrapper: null, ctaDescription: null, errorText: null };
-let size = { height: 2, width: 48, margin: 32, backgroundColor: nativeDefault.colors.BORDER_STRONG };
-obj2.divider = size;
-obj2.buttonWrapper = { alignSelf: "stretch", margin: 16, marginTop: 0 };
-let obj3 = { fontSize: 14, textAlign: "center", marginHorizontal: 20, marginTop: 4, color: nativeDefault.colors.TEXT_STRONG };
-obj2.ctaDescription = { fontSize: 14, textAlign: "center", marginTop: 4, marginHorizontal: 16, color: nativeDefault.colors.TEXT_STRONG };
-let obj4 = { fontSize: 14, textAlign: "center", marginTop: 4, marginHorizontal: 16, color: nativeDefault.colors.TEXT_STRONG };
-obj2.errorText = { fontSize: 14, textAlign: "center", marginHorizontal: 16, marginTop: 8, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-let closure_10 = createStyles.createStyles(obj2);
-size = fn(2);
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let size;
+({ View: metroRequire, Image: metroImportDefault } = react_native);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { alignSelf: "stretch", flex: 1, alignItems: "center", justifyContent: "flex-start", flexDirection: "column" }, flex: { flex: 1 }, image: { width: 190, height: 70 }, success: { marginTop: 33 }, successBody: obj2, divider: size, buttonWrapper: { alignSelf: "stretch", margin: 16, marginTop: 0 }, ctaDescription: obj3, errorText: obj4 };
+obj2 = { fontSize: 14, textAlign: "center", marginHorizontal: 20, marginTop: 4, color: nativeDefault.colors.TEXT_STRONG };
+createStyles = createStyles.createStyles;
+size = { height: 2, width: 48, margin: 32, backgroundColor: nativeDefault.colors.BORDER_STRONG };
+obj3 = { fontSize: 14, textAlign: "center", marginTop: 4, marginHorizontal: 16, color: nativeDefault.colors.TEXT_STRONG };
+obj4 = { fontSize: 14, textAlign: "center", marginHorizontal: 16, marginTop: 8, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
+let closure_10 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupSuccess.tsx");
 
 export default function TwoFASetupSuccess() {
-  const tmp = closure_10();
-  [tmp3, require] = noop.useState(false);
-  const tmp2 = _slicedToArray(noop.useState(false), 2);
-  [tmp5, importDefault] = noop.useState("");
-  const callback = noop.useCallback(() => {
-    setRegistering = async function _onRegisterSuccess(arg0, value) {
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp7 === 3) {
-        if (arg0 === 1) {
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let items1;
+  let setError;
+  let stringResult;
+  let tmp3;
+  let tmp5;
+  let tmp = closure_10();
+  [tmp3, require] = _slicedToArray(react.useState(false), 2);
+  const tmp2 = _slicedToArray(react.useState(false), 2);
+  [tmp5, importDefault] = _slicedToArray(react.useState(""), 2);
+  const tmp4 = _slicedToArray(react.useState(""), 2);
+  const callback = react.useCallback(() => {
+    let setRegistering = function _onRegisterSuccess() {
+      let obj = _asyncToGenerator(async (arg0, value) => {
+        let c0;
+        let c1;
+        let closure_2;
+        let obj;
+        let closure_0 = arg0;
+        const finishRegisterWebAuthnCredential = setRegistering(closure_2_2[7]).finishRegisterWebAuthnCredential;
+        const tmp24 = setRegistering(closure_2_2[7]);
+        const intl = setRegistering(closure_2_2[8]).intl;
+        await finishRegisterWebAuthnCredential(intl.string(setRegistering(closure_2_2[8]).t["8H5RmH"]), c0, c1);
+        if (2 === c5) {
+          let c4 = 0;
+          obj(body.body.message);
+        } else if (arg0 === 1) {
+          let c6 = 3;
           throw value;
         } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
+          c4 = 0;
+          c6 = 3;
+          const obj6 = { value, done: true };
+          return obj6;
         } else {
-          return { value: "HermesInternal", done: null };
+          obj = setError(closure_2_2[9]);
+          obj.close();
+          c4 = 0;
         }
-      } else {
-        try {
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              closure_2 = tmp3;
-              closure_129_0 = undefined;
-              closure_129_1 = undefined;
-              ({ ticket: closure_129_0, credential: closure_129_1 } = closure_0);
-              c5 = 1;
-              c6 = 1;
-              return { value: "flex", done: true };
-            }
-          } else if (1 === tmp8) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              c4 = 1;
-              const intl = setRegistering(1115).intl;
-              c5 = 3;
-              c6 = 1;
-              const obj5 = { value: setRegistering(6014).finishRegisterWebAuthnCredential(intl.string(setRegistering(1115).t["8H5RmH"]), closure_129_0, closure_129_1), done: false };
-              return obj5;
-            }
-          } else {
-            if (2 === tmp8) {
-              c4 = 0;
-              tmp5(tmp19.body.message);
-              c6 = 3;
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              setError(14315).close();
-              c4 = 0;
-              const obj = setError(14315);
-            }
-            c4 = 0;
-            c6 = 3;
-            const obj6 = { value, done: true };
-            return obj6;
-          }
-        } catch (tmp19) {
-          if (tmp4 === c4) {
-            c6 = tmp2;
-            throw tmp19;
-          } else {
-            c5 = tmp;
-          }
-        }
+        await "HermesInternal";
+        ({ ticket: c0, credential: c1 } = closure_0);
+        return "flex";
+      });
+      return obj(...arguments);
+    };
+    const tmp = importDefault("");
+    setRegistering = NativeCeremoniesDefault;
+    const obj2 = {
+      setRegistering,
+      setError: importDefault,
+      onRegisterSuccess(arg0) {
+        return obj(...arguments);
       }
     };
-    setError("");
-    setError(dependencyMap[10]).registerPasskey({
-      setRegistering,
-      setError,
-      onRegisterSuccess(arg0) {
-        const self = this;
-        const apply = closure_0.apply;
-        if (typeof apply === "unknown") {
-          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-        } else {
-          applyArgumentsResult = apply(self, arguments);
-        }
-        return applyArgumentsResult;
-      }
-    });
+    setRegistering.registerPasskey(obj2);
   }, []);
-  let obj = { style: tmp.container, children: null };
-  const items = [closure_8(closure_6, { style: tmp.flex }), , , , , , , ];
+  let obj = { style: tmp.container, children: items };
   let obj2 = { style: tmp.flex };
-  const tmp4 = _slicedToArray(noop.useState(""), 2);
-  items[1] = closure_8(closure_7, { source: _mod14326, style: tmp.image });
-  let obj4 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: null };
-  let intl = util.intl;
-  obj4.children = intl.string(util.t.Awk3Gw);
-  items[2] = closure_8(Text_Text.Text, obj4);
-  let obj5 = { style: tmp.successBody, children: null };
-  const intl2 = util.intl;
-  obj5.children = intl2.string(util.t["0d1bXM"]);
-  items[3] = closure_8(native.LegacyText, obj5);
-  items[4] = closure_8(closure_6, { style: tmp.divider });
-  const obj7 = { style: tmp.ctaDescription, children: null };
-  const intl3 = util.intl;
-  obj7.children = intl3.string(util.t.okgGTu);
-  items[5] = closure_8(native.LegacyText, obj7);
-  const obj8 = { style: tmp.buttonWrapper, children: null };
-  const intl4 = util.intl;
+  const TwoFASetupModalScreen = TwoFASetupModal.TwoFASetupModalScreen;
+  items = [closure_8(closure_6, obj2), , , , , , , ];
+  const obj3 = { source: AssetRegistry, style: tmp.image };
+  items[1] = closure_8(closure_7, obj3);
+  const obj4 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.Awk3Gw) };
+  const Text = Text_Text.Text;
+  intl = intl5.intl;
+  items[2] = closure_8(Text, obj4);
+  const obj5 = { style: tmp.successBody, children: intl2.string(intl5.t["0d1bXM"]) };
+  const LegacyText = native.LegacyText;
+  intl2 = intl5.intl;
+  items[3] = closure_8(LegacyText, obj5);
+  let obj6 = { style: tmp.divider };
+  items[4] = closure_8(closure_6, obj6);
+  const obj7 = { style: tmp.ctaDescription, children: intl3.string(intl5.t.okgGTu) };
+  const LegacyText2 = native.LegacyText;
+  intl3 = intl5.intl;
+  items[5] = closure_8(LegacyText2, obj7);
+  const obj8 = { style: tmp.buttonWrapper, children: items1 };
+  const Button = components_Button_Button.Button;
+  const intl4 = intl5.intl;
   const string = intl4.string;
-  const t = util.t;
+  const t = intl5.t;
   if (tmp3) {
-    let stringResult = string(t.wePEBF);
+    stringResult = string(t.wePEBF);
   } else {
     stringResult = string(t.NIFmCJ);
   }
-  const items1 = [closure_8(components_Button_Button.Button, { text: stringResult, onPress: callback, disabled: tmp3, loading: tmp3, grow: true }), ];
+  items1 = [tmp7(Button, { text: stringResult, onPress: callback, disabled: tmp3, loading: tmp3, grow: true }), ];
   let tmp7Result = "" !== tmp5;
   if (tmp7Result) {
     const obj9 = { style: tmp.errorText, children: tmp5 };
     tmp7Result = tmp7(native.LegacyText, obj9);
   }
-  const obj10 = { children: null };
   items1[1] = tmp7Result;
-  obj8.children = items1;
+  const obj10 = { children: closure_9(closure_6, obj) };
   items[6] = closure_9(closure_6, obj8);
-  items[7] = closure_8(closure_6, { style: tmp.flex });
-  obj.children = items;
-  obj10.children = closure_9(closure_6, obj);
-  return closure_8(TwoFASetupModal.TwoFASetupModalScreen, obj10);
+  const obj11 = { style: tmp.flex };
+  items[7] = closure_8(closure_6, obj11);
+  return closure_8(TwoFASetupModalScreen, obj10);
 };

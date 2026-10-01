@@ -7,54 +7,67 @@
 // Module 11999 (useGuildPowerupNewPerkMarketingVersion)
 import Powerups from "Powerups" /* 4727 */;
 import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9051 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4724 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
-const GuildPowerupsConstants = fn(4724);
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 ({ GuildPowerupNewPerkMarketingVersion: hasOwnProperty, NEW_PERK_MARKETING_VERSION_TO_POWERUP_SKU_ID_SET: metroRequire } = GuildPowerupsConstants);
-const Constants = fn(1074);
-({ GuildFeatures: closure_7, Permissions: closure_8 } = Constants);
-const size = fn(2);
+({ GuildFeatures: metroImportDefault, Permissions: metroImportAll } = Constants);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupNewPerkMarketingVersion.tsx");
 
 export default function useGuildPowerupNewPerkMarketingVersion(guildId, arg1) {
+  let closure_1;
+  let stateFromStores;
   _require = guildId;
   dependencyMap = arg1;
-  const gameServerEnabled = require("GameServerExperiment").useGameServerEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
-  let obj = require("GameServerExperiment");
   let tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("GameServerExperiment");
+  const gameServerEnabled = obj.useGameServerEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
   const items = [stateFromStores];
-  stateFromStores = require("initialize").useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
+  const obj2 = require("get initialized");
+  const tmp4 = stateFromStores;
+  stateFromStores = obj2.useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(guildId);
     let hasItem;
     if (guild != null) {
       const features = guild.features;
-      hasItem = features.has(constants.GAME_SERVERS);
+      hasItem = features.has(metroImportDefault.GAME_SERVERS);
     }
     return hasItem;
   });
-  const obj2 = require("initialize");
-  const tmp4 = stateFromStores;
-  let serverThemeEnabled = require("ServerThemeExperiment").useServerThemeEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
   const obj3 = require("ServerThemeExperiment");
-  const serverThemeUserEnabled = require("ServerThemeUserExperiment").useServerThemeUserEnabled("useGuildPowerupNewPerkMarketingVersion");
+  let serverThemeEnabled = obj3.useServerThemeEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
   const obj4 = require("ServerThemeUserExperiment");
-  const serverThemeRollbackEnabled = require("ServerThemeExperiment").useServerThemeRollbackEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
+  const serverThemeUserEnabled = obj4.useServerThemeUserEnabled("useGuildPowerupNewPerkMarketingVersion");
+  const obj5 = require("ServerThemeExperiment");
+  const serverThemeRollbackEnabled = obj5.useServerThemeRollbackEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
   if (serverThemeEnabled) {
     serverThemeEnabled = serverThemeUserEnabled;
   }
   if (serverThemeEnabled) {
     serverThemeEnabled = !serverThemeRollbackEnabled;
   }
-  const obj5 = require("ServerThemeExperiment");
   const items1 = [serverThemeEnabled, tmp4];
-  const stateFromStores1 = tmp(504).useStateFromStores(items1, () => PermissionStore.can(constants2.MANAGE_GUILD, GuildStore.getGuild(closure_0)));
+  const tmpResult = tmp(504);
+  const stateFromStores1 = tmpResult.useStateFromStores(items1, () => PermissionStore.can(metroImportAll.MANAGE_GUILD, GuildStore.getGuild(guildId)));
   const items2 = [arg1, gameServerEnabled, stateFromStores, serverThemeEnabled, guildId, stateFromStores1];
   return gameServerEnabled.useMemo(() => {
+    let GUILD_TAG_BADGE_PACKS_WAVE_TWO;
+    let tmp18;
+    let tmp27;
+    let tmp6;
+    let tmp = closure_1;
     let tmp2;
     if (closure_1 != null) {
       const allPowerups = tmp.allPowerups;
@@ -62,62 +75,70 @@ export default function useGuildPowerupNewPerkMarketingVersion(guildId, arg1) {
         tmp2 = allPowerups[Powerups.GUILD_POWERUP_TAG_SKU_ID];
       }
     }
-    if (closure_1 != null) {
+    const tmp5 = null != tmp2;
+    if (tmp != null) {
       let unlockedPowerups = tmp.unlockedPowerups;
       if (unlockedPowerups != null) {
-        const tmp6 = unlockedPowerups[Powerups.GUILD_POWERUP_TAG_SKU_ID];
+        tmp6 = unlockedPowerups[Powerups.GUILD_POWERUP_TAG_SKU_ID];
       }
     }
     if (tmp5) {
       if (null == tmp6) {
-        if (stateFromStores1) {
-          if (obj.canUseMobileServerTagSettings(closure_0)) {
+        const tmp9 = stateFromStores1;
+        if (tmp9) {
+          const obj = GuildSettingsServerTagUtils;
+          if (obj.canUseMobileServerTagSettings(guildId)) {
             return hasOwnProperty.GUILD_TAG;
           }
-          obj = GuildSettingsServerTagUtils;
         }
       }
     }
     let tmp14;
-    if (closure_1 != null) {
+    if (tmp != null) {
       const allPowerups2 = tmp.allPowerups;
       if (allPowerups2 != null) {
         tmp14 = allPowerups2[Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID];
       }
     }
-    if (closure_1 != null) {
+    const tmp17 = null != tmp14;
+    if (tmp != null) {
       const unlockedPowerups2 = tmp.unlockedPowerups;
       if (unlockedPowerups2 != null) {
-        const tmp18 = unlockedPowerups2[Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID];
+        tmp18 = unlockedPowerups2[Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID];
       }
     }
-    if (serverThemeEnabled) {
+    const tmp21 = serverThemeEnabled;
+    if (tmp21) {
       if (tmp17) {
         if (null == tmp18) {
           return hasOwnProperty.GUILD_THEME;
         }
       }
     }
-    let tmp22;
-    if (closure_1 != null) {
+    let tmp23;
+    if (tmp != null) {
       const allPowerups3 = tmp.allPowerups;
       if (allPowerups3 != null) {
-        tmp22 = allPowerups3[Powerups.GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
+        tmp23 = allPowerups3[Powerups.GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
       }
     }
-    if (closure_1 != null) {
+    const tmp26 = null != tmp23;
+    if (tmp != null) {
       const unlockedPowerups3 = tmp.unlockedPowerups;
       if (unlockedPowerups3 != null) {
-        const tmp26 = unlockedPowerups3[Powerups.GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
+        tmp27 = unlockedPowerups3[Powerups.GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
       }
     }
-    if (tmp25) {
-      if (null == tmp26) {
-        return hasOwnProperty.FILE_UPLOAD_250_MB;
+    if (tmp26) {
+      let FILE_UPLOAD_250_MB;
+      if (null == tmp27) {
+        FILE_UPLOAD_250_MB = hasOwnProperty.FILE_UPLOAD_250_MB;
       }
+      return FILE_UPLOAD_250_MB;
     }
-    let someResult = globalThis;
-    if (!arr.some((item) => {
+    const arr = Array.from(metroRequire[hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_TWO]);
+    const tmp31 = metroRequire;
+    if (arr.some((item) => {
       let tmp;
       if (closure_1_1 != null) {
         const unlockedPowerups = closure_1_1.unlockedPowerups;
@@ -127,32 +148,34 @@ export default function useGuildPowerupNewPerkMarketingVersion(guildId, arg1) {
       }
       return null != tmp;
     })) {
-      const GUILD_TAG_BADGE_PACKS_WAVE_TWO = hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_TWO;
-    }
-    if (gameServerEnabled) {
-      if (!stateFromStores) {
-        let GAME_SERVER_HOSTING = hasOwnProperty.GAME_SERVER_HOSTING;
-      }
-    }
-    const _Array = someResult.Array;
-    arr = Array.from(timestampProducer[hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_TWO]);
-    tmp17 = null != tmp14;
-    tmp25 = null != tmp22;
-    tmp5 = null != tmp2;
-    someResult = _Array.from(timestampProducer[hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some((item) => {
-      let tmp;
-      if (closure_1_1 != null) {
-        const unlockedPowerups = closure_1_1.unlockedPowerups;
-        if (unlockedPowerups != null) {
-          tmp = unlockedPowerups[item];
+      const tmp33 = gameServerEnabled;
+      if (tmp33) {
+        let GAME_SERVER_HOSTING;
+        const tmp34 = stateFromStores;
+        if (!tmp34) {
+          GAME_SERVER_HOSTING = hasOwnProperty.GAME_SERVER_HOSTING;
         }
+        GUILD_TAG_BADGE_PACKS_WAVE_TWO = GAME_SERVER_HOSTING;
       }
-      return null != tmp;
-    });
-    let num = 0;
-    if (!someResult) {
-      num = hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_ONE;
+      const _Array = Array;
+      let num = 0;
+      const arr2 = Array.from(tmp31[hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_ONE]);
+      if (!arr2.some((item) => {
+        let tmp;
+        if (closure_1_1 != null) {
+          const unlockedPowerups = closure_1_1.unlockedPowerups;
+          if (unlockedPowerups != null) {
+            tmp = unlockedPowerups[item];
+          }
+        }
+        return null != tmp;
+      })) {
+        num = hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_ONE;
+      }
+      GAME_SERVER_HOSTING = num;
+    } else {
+      GUILD_TAG_BADGE_PACKS_WAVE_TWO = hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_TWO;
     }
-    GAME_SERVER_HOSTING = num;
+    FILE_UPLOAD_250_MB = GUILD_TAG_BADGE_PACKS_WAVE_TWO;
   }, items2);
 };

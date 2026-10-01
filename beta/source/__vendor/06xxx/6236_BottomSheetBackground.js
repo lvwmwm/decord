@@ -4,17 +4,18 @@
 // Dependencies: [19, 17, 21, 6235]
 
 // Module 6236 (BottomSheetBackground)
-import _mod6235 from "module_6235" /* 6235 */;
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react_native2 from "react-native" /* 6235 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const memoResult = fn(19).memo((pointerEvents) => {
-  const obj = { pointerEvents: pointerEvents.pointerEvents, accessible: true, accessibilityRole: "adjustable", accessibilityLabel: "Bottom Sheet", style: null };
-  const items = [_mod6235.styles.background, pointerEvents.style];
-  obj.style = items;
-  return <View pointerEvents={arg0.pointerEvents} accessible accessibilityRole="adjustable" accessibilityLabel="Bottom Sheet" style={null} />;
+const memo = react2.memo;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const memoResult = memo((pointerEvents) => {
+  const style = pointerEvents.style;
+  const items = [react_native2.styles.background, style];
+  return <View pointerEvents={arg0.pointerEvents} accessible accessibilityRole="adjustable" accessibilityLabel="Bottom Sheet" style={items} />;
 });
 memoResult.displayName = "BottomSheetBackground";
 

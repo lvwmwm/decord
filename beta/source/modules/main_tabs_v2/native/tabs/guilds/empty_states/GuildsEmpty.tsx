@@ -5,138 +5,152 @@
 
 // Module 15905 (GuildsEmpty)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl5 from "intl" /* 1115 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
 import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12205 */;
-import _modDef15906 from "module_15906" /* 15906 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15906 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let navigation;
+
+let closure_12;
+let closure_14;
+let hasOwnProperty;
+let map1;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+let obj8;
+let obj9;
+let unpackModuleId;
 function handleJoinGuild() {
-  const result = CreateGuildModalActionCreatorsDefault.openGuildJoinServerScreen();
+  const obj = CreateGuildModalActionCreatorsDefault;
+  const result = obj.openGuildJoinServerScreen();
 }
 function handleCreateGuild() {
-  CreateGuildModalActionCreatorsDefault.openCreateGuildModal();
+  const obj = CreateGuildModalActionCreatorsDefault;
+  obj.openCreateGuildModal();
 }
 class GuildsEmptyContent {
-  constructor(arg0) {
-    tmp = closure_15();
-    obj = { alwaysBounceVertical: false, bounces: false, style: tmp.scrollView, contentContainerStyle: null, children: null };
-    items = [, ];
-    items[0] = tmp.scrollViewContentContainer;
-    items[1] = global.contentContainerStyle;
-    obj.contentContainerStyle = items;
-    obj1 = { children: null };
-    obj12 = { style: tmp.content, children: null };
-    obj13 = { style: tmp.illustrationWrapper, children: null };
-    obj14 = { source: closure_1(closure_2[12]), style: tmp.illustration };
-    obj13.children = jsx(Image, obj14);
-    items1 = [, ];
-    items1[0] = jsx(View, obj13);
-    obj15 = { style: tmp.textWrapper, children: null };
-    obj16 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: null, children: null };
+  constructor(contentContainerStyle) {
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    let items;
+    let items1;
+    let items2;
+    let items3;
+    let items4;
+    let items5;
+    let obj2;
+    let obj5;
+    contentContainerStyle = contentContainerStyle.contentContainerStyle;
+    const tmp = closure_15();
+    const obj = { alwaysBounceVertical: false, bounces: false, style: tmp.scrollView, contentContainerStyle: items, children: authStore2(metroRequire, obj2) };
+    items = [tmp.scrollViewContentContainer, contentContainerStyle];
+    obj2 = { children: items4 };
+    const obj3 = { style: tmp.content, children: items1 };
+    const obj4 = { style: tmp.illustrationWrapper, children: map1(hasOwnProperty, obj5) };
+    obj5 = { source: AssetRegistryDefault, style: tmp.illustration };
+    items1 = [map1(metroRequire, obj4), ];
+    const obj6 = { style: tmp.textWrapper, children: items3 };
+    const obj7 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items2, children: intl.string(intl5.t["Y7Ml/I"]) };
     items2 = [, ];
     ({ text: arr3[0], headerText: arr3[1] } = tmp);
-    obj16.style = items2;
-    intl = closure_0(closure_2[13]).intl;
-    obj16.children = intl.string(closure_0(closure_2[13]).t["Y7Ml/I"]);
-    items3 = [, ];
-    items3[0] = jsx(closure_0(closure_2[10]).Heading, obj16);
-    obj17 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: null };
-    intl2 = closure_0(closure_2[13]).intl;
-    obj17.children = intl2.string(closure_0(closure_2[13]).t.kuyE4r);
-    items3[1] = jsx(closure_0(closure_2[10]).Text, obj17);
-    obj15.children = items3;
-    items1[1] = jsxs(View, obj15);
-    obj12.children = items1;
-    items4 = [, ];
-    items4[0] = jsxs(View, obj12);
-    obj18 = { style: tmp.buttonContainer, spacing: 12, children: null };
-    obj19 = { size: "lg", text: null, onPress: null };
-    intl3 = closure_0(closure_2[13]).intl;
-    obj19.text = intl3.string(closure_0(closure_2[13]).t.riOUtB);
-    obj19.onPress = handleJoinGuild;
-    items5 = [, ];
-    items5[0] = jsx(closure_0(closure_2[15]).Button, obj19);
-    obj20 = { size: "lg", variant: "secondary", text: null, onPress: null };
-    intl4 = closure_0(closure_2[13]).intl;
-    obj20.text = intl4.string(closure_0(closure_2[13]).t["BetvT+"]);
-    obj20.onPress = handleCreateGuild;
-    items5[1] = jsx(closure_0(closure_2[15]).Button, obj20);
-    obj18.children = items5;
-    items4[1] = jsxs(closure_0(closure_2[14]).Stack, obj18);
-    obj1.children = items4;
-    obj.children = jsxs(View, obj1);
-    return jsx(ScrollView, obj);
+    const Heading = Text_Text.Heading;
+    intl = intl5.intl;
+    items3 = [map1(Heading, obj7), ];
+    const obj8 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: intl2.string(intl5.t.kuyE4r) };
+    const Text = Text_Text.Text;
+    intl2 = intl5.intl;
+    items3[1] = map1(Text, obj8);
+    items1[1] = authStore2(metroRequire, obj6);
+    items4 = [authStore2(metroRequire, obj3), ];
+    const obj9 = { style: tmp.buttonContainer, spacing: 12, children: items5 };
+    const Stack = Stack_Stack.Stack;
+    const obj10 = { size: "lg", text: intl3.string(intl5.t.riOUtB), onPress: handleJoinGuild };
+    const Button = components_Button_Button.Button;
+    intl3 = intl5.intl;
+    items5 = [map1(Button, obj10), ];
+    const obj11 = { size: "lg", variant: "secondary", text: intl4.string(intl5.t["BetvT+"]), onPress: handleCreateGuild };
+    const Button2 = components_Button_Button.Button;
+    intl4 = intl5.intl;
+    items5[1] = map1(Button2, obj11);
+    items4[1] = authStore2(Stack, obj9);
+    return map1(metroImportDefault, obj);
   }
 }
-get_ActivityIndicator = fn(17);
-({ Image: hasOwnProperty, View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const Constants = fn(1074);
-({ ME: closure_11, MOBILE_GUILD_UPSELL_LIST: closure_12 } = Constants);
-const jsxProd = fn(21);
-({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { scrollView: { borderTopLeftRadius: nativeDefault.radii.xxl, borderTopRightRadius: nativeDefault.radii.sm }, header: null, headerTitle: null, scrollViewContentContainer: null, headerInner: null, content: null, illustrationWrapper: null, illustration: null, buttonContainer: null, textWrapper: null, headerText: null, text: null };
-let obj3 = { borderTopLeftRadius: nativeDefault.radii.xxl, borderTopRightRadius: nativeDefault.radii.sm };
-obj.header = { zIndex: 100, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj.headerTitle = { height: 56, marginLeft: 16, marginRight: 8, flexDirection: "row", alignItems: "center" };
-let obj4 = { zIndex: 100, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj.scrollViewContentContainer = { flexGrow: 2, justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj.headerInner = { flex: 1, flexDirection: "row", alignItems: "center" };
-let obj5 = { flexGrow: 2, justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj.content = { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, alignItems: "center", justifyContent: "center" };
-obj.illustrationWrapper = { width: "100%", paddingHorizontal: 36 };
-let obj6 = { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, alignItems: "center", justifyContent: "center" };
-obj.illustration = { resizeMode: "contain", alignSelf: "center", marginBottom: nativeDefault.space.PX_24 };
-let obj7 = { resizeMode: "contain", alignSelf: "center", marginBottom: nativeDefault.space.PX_24 };
-obj.buttonContainer = { paddingBottom: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let obj8 = { paddingBottom: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj.textWrapper = { marginHorizontal: nativeDefault.space.PX_16, marginVertical: nativeDefault.space.PX_24 };
-let obj10 = {};
-const merged = Object.assign(fn(4832).TextStyleSheet["heading-md/bold"]);
-obj10.fontSize = 18;
-obj10.marginBottom = 8;
-obj.headerText = obj10;
-obj.text = { textAlign: "center" };
-const __initData = createStyles.createStyles(obj);
-let obj9 = { marginHorizontal: nativeDefault.space.PX_16, marginVertical: nativeDefault.space.PX_24 };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/empty_states/GuildsEmpty.tsx");
-
-export default noop.memo(function GuildsEmpty(arg0) {
-  let navigation;
+({ Image: hasOwnProperty, View: metroRequire, ScrollView: metroImportDefault } = react_native);
+({ ME: unpackModuleId, MOBILE_GUILD_UPSELL_LIST: closure_12 } = Constants);
+({ jsx: map1, jsxs: closure_14 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { scrollView: obj2, header: obj3, headerTitle: { height: 56, marginLeft: 16, marginRight: 8, flexDirection: "row", alignItems: "center" }, scrollViewContentContainer: obj4, headerInner: { flex: 1, flexDirection: "row", alignItems: "center" }, content: obj5, illustrationWrapper: { width: "100%", paddingHorizontal: 36 }, illustration: obj6, buttonContainer: obj7, textWrapper: obj8, headerText: obj9, text: { textAlign: "center" } };
+obj2 = { borderTopLeftRadius: nativeDefault.radii.xxl, borderTopRightRadius: nativeDefault.radii.sm };
+createStyles = createStyles.createStyles;
+obj3 = { zIndex: 100, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
+obj4 = { flexGrow: 2, justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj5 = { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, alignItems: "center", justifyContent: "center" };
+obj6 = { resizeMode: "contain", alignSelf: "center", marginBottom: nativeDefault.space.PX_24 };
+obj7 = { paddingBottom: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj8 = { marginHorizontal: nativeDefault.space.PX_16, marginVertical: nativeDefault.space.PX_24 };
+obj9 = { fontSize: 18, marginBottom: 8 };
+const merged = Object.assign(Text_Text.TextStyleSheet["heading-md/bold"]);
+let closure_15 = createStyles(obj);
+const memoResult = react.memo(function GuildsEmpty(arg0) {
+  let Text;
+  let intl;
+  let items2;
+  let items3;
+  let obj6;
+  let obj7;
+  let selectedGuildId;
+  let sessionId;
+  let style;
+  navigation = undefined;
   selectedGuildId = undefined;
   ({ selectedGuildId, style } = arg0);
   const tmp = closure_15();
-  navigation = navigation(1486).useNavigation();
   const obj = navigation(1486);
+  navigation = obj.useNavigation();
+  let obj2 = navigation(563);
   const items = [AuthenticationStore];
-  const stateFromStores = navigation(563).useStateFromStores(items, () => null != sessionId.getSessionId());
+  const stateFromStores = obj2.useStateFromStores(items, () => null != sessionId.getSessionId());
   let tmp6 = null;
   if (stateFromStores) {
     tmp6 = selectedGuildId;
   }
   selectedGuildId = tmp6;
-  let obj3 = { type: null, name: null };
-  let obj2 = navigation(563);
-  obj3.type = navigation(1249).ImpressionTypes.VIEW;
-  obj3.name = navigation(1249).ImpressionNames.GUILDS_EMPTY_NUX;
-  selectedGuildId(8230)(obj3);
+  let obj3 = { type: tmp2(1249).ImpressionTypes.VIEW, name: tmp2(1249).ImpressionNames.GUILDS_EMPTY_NUX };
+  const tmp7 = selectedGuildId(8230);
+  tmp7(obj3);
   const items1 = [tmp6, navigation];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (null != selectedGuildId) {
+      const obj2 = navigation;
       if (null != navigation) {
-        if (tmp !== closure_2_11) {
-          if (!obj3.isFavoritesGuildId(tmp)) {
-            if (tmp !== closure_2_12) {
+        if (selectedGuildId !== unpackModuleId) {
+          const obj3 = FavoritesUtils;
+          const tmp10 = require;
+          if (!obj3.isFavoritesGuildId(selectedGuildId)) {
+            if (selectedGuildId !== closure_12) {
               let guild = GuildStore.getGuild(tmp);
               if (guild == null) {
                 guild = obj4.getGuild(SelectedGuildStore.getGuildId());
@@ -149,48 +163,48 @@ export default noop.memo(function GuildsEmpty(arg0) {
                 guild = guilds[obj4.getGuildIds(obj4)[0]];
               }
               if (null != guild) {
-                closure_0 = _slicedToArray(tmp10(4694).getInitialGuildState(guild.id, undefined, false), 2)[1];
+                const tmp10Result = tmp10(4694);
+                let closure_0 = _slicedToArray(tmp10Result.getInitialGuildState(guild.id, undefined, false), 2)[1];
                 obj2.dispatch(() => {
-                  const CommonActions = navigation(dependencyMap[16]).CommonActions;
+                  const CommonActions = navigation(closure_2_2[16]).CommonActions;
                   return CommonActions.reset(closure_0);
                 });
-                const tmp10Result = tmp10(4694);
               }
             }
           }
-          obj3 = FavoritesUtils;
-          tmp10 = require;
         }
       }
-      obj2 = navigation;
     }
   }, items1);
-  const tmp7 = selectedGuildId(8230);
-  const isScreenLandscape = navigation(5438).useIsScreenLandscape();
+  const tmp2Result = navigation(5438);
+  const isScreenLandscape = tmp2Result.useIsScreenLandscape();
   navigation(14629);
   let tmp14Result = null;
   if (stateFromStores) {
-    const obj4 = { style: null, children: null };
-    const items2 = [tmp.header, style];
-    obj4.style = items2;
-    const obj5 = { style: tmp.headerTitle, children: null };
-    const obj6 = { style: tmp.headerInner, children: null };
-    const obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
-    const intl = tmp2(1115).intl;
-    obj7.children = intl.string(tmp2(1115).t["7hB4kg"]);
-    obj6.children = closure_13(tmp2(4832).Text, obj7);
-    obj5.children = closure_13(closure_6, obj6);
-    const items3 = [closure_13(closure_6, obj5), ];
+    const obj4 = { style: items2, children: items3 };
+    items2 = [tmp.header, style];
+    const obj5 = { style: tmp.headerTitle, children: closure_13(closure_6, obj6) };
+    obj6 = { style: tmp.headerInner, children: closure_13(Text, obj7) };
+    obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl.string(navigation(1115).t["7hB4kg"]) };
+    Text = tmp2(4832).Text;
+    intl = tmp2(1115).intl;
+    items3 = [closure_13(closure_6, obj5), ];
     let tmp18;
+    const tmp14 = closure_14;
+    const tmp15 = closure_6;
+    const tmp16 = closure_13;
+    const tmp17 = GuildsEmptyContent;
     if (isScreenLandscape) {
+      tmp18 = { paddingBottom: tmp12 };
       const obj8 = { paddingBottom: tmp12 };
-      tmp18 = obj8;
     }
     const obj9 = { contentContainerStyle: tmp18 };
-    items3[1] = closure_13(GuildsEmptyContent, obj9);
-    obj4.children = items3;
-    tmp14Result = closure_14(closure_6, obj4);
+    items3[1] = tmp16(tmp17, obj9);
+    tmp14Result = tmp14(tmp15, obj4);
   }
   return tmp14Result;
 });
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/empty_states/GuildsEmpty.tsx");
+
+export default memoResult;
 export { GuildsEmptyContent };

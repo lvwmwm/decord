@@ -4,43 +4,59 @@
 // Dependencies: [19, 17, 2045, 9276, 2067, 9288, 1372, 9349, 7155, 21, 4836, 576, 504, 4989, 9277, 9350, 5435, 1177, 9094, 4678, 1115, 1397, 2011, 4832, 5917, 9351, 2]
 
 // Module 9348 (InstantInviteRow)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 7155 */;
 import InstantInviteUtils from "InstantInviteUtils" /* 9277 */;
-import InviteQueueDefault from "InviteQueue" /* 9350 */;
-import noop from "module_19" /* 19 */;
+import InviteQueue from "InviteQueue" /* 9350 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import CreateInviteModalStore from "CreateInviteModalStore" /* 9276 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9288 */;
 import UserStore from "UserStore" /* 1372 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9349 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const InstantInviteSendStateStore = fn(9349);
-({ setSendState: closure_9, useInstantInviteSendStates: c10 } = InstantInviteSendStateStore);
-const InviteSendStates = fn(7155).InviteSendStates;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { acronym: null };
-let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center", overflow: "hidden", marginTop: 0, marginRight: 10, borderColor: nativeDefault.colors.BORDER_MUTED, borderStyle: "solid", borderWidth: 2 };
-obj.acronym = size;
+const InviteQueueDefault = InviteQueue;
+
+let c10;
+let c9;
+let size;
+const View = react_native.View;
+({ setSendState: c9, useInstantInviteSendStates: c10 } = InstantInviteSendStateStore);
+const InviteSendStates = Constants.InviteSendStates;
+const jsx = Fragment.jsx;
+let obj = { acronym: size };
+size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center", overflow: "hidden", marginTop: 0, marginRight: 10, borderColor: nativeDefault.colors.BORDER_MUTED, borderStyle: "solid", borderWidth: 2 };
 let closure_13 = createStyles.createStyles(obj);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteRow.tsx");
-
-export default noop.memo(function InstantInviteRow(row) {
+const memoResult = react.memo(function InstantInviteRow(row) {
+  let Avatar3;
+  let end;
+  let obj15;
+  let obj18;
+  let source;
+  let start;
+  let tmp19;
+  let tmp32;
+  let tmp8Result10;
   row = row.row;
   const code = row.code;
   const onPressAvatar = row.onPressAvatar;
   ({ onInviteSent: View, source: ChannelStore } = row);
   ({ start, end } = row);
   const id = row.item.id;
+  let tmp2 = row;
+  const tmp3 = onPressAvatar;
   let tmp = closure_13();
-  const items = [id];
-  const stateFromStores = row(onPressAvatar[12]).useStateFromStores(items, () => id.isSubmitting());
   let obj = row(onPressAvatar[12]);
+  const items = [id];
+  const stateFromStores = obj.useStateFromStores(items, () => id.isSubmitting());
+  let obj2 = row(onPressAvatar[12]);
   const items1 = [id];
-  const stateFromStores1 = row(onPressAvatar[12]).useStateFromStores(items1, () => id.getError());
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => id.getError());
   const tmp6 = closure_10((arg0) => {
     let tmp2 = null;
     if (null != code) {
@@ -52,34 +68,36 @@ export default noop.memo(function InstantInviteRow(row) {
     }
     return tmp2;
   });
-  let obj2 = row(onPressAvatar[12]);
+  let obj3 = row(onPressAvatar[12]);
   const items2 = [ChannelStore];
-  const stateFromStores2 = row(onPressAvatar[12]).useStateFromStores(items2, () => ChannelStore.getChannel(id));
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => ChannelStore.getChannel(id));
   let str = code(onPressAvatar[13])(stateFromStores2);
   if (null == code) {
     return null;
   } else {
     let type = row.type;
     if (tmp2(tmp3[14]).RowTypes.DM !== type) {
+      let str2;
+      let T;
+      let tmp15;
       if (tmp2(tmp3[14]).RowTypes.FRIEND !== type) {
         if (tmp2(tmp3[14]).RowTypes.GROUP_DM === type) {
-          let tmp19 = null;
+          let tmp20 = null;
           if (null != stateFromStores2) {
-            let obj4 = { source: null, size: null };
-            const tmp8Result = tmp8(tmp3[21]);
-            ({ id: obj14.id, icon: obj14.icon, application_id: obj14.applicationId } = stateFromStores2);
-            obj4.source = tmp8Result.makeSource(tmp8(tmp3[21]).getChannelIconURL({ id: null, icon: null, applicationId: null, size: 32 }));
-            obj4.size = tmp2(tmp3[17]).AvatarSizes.REFRESH_MEDIUM_32;
-            tmp19 = jsx(tmp2(tmp3[17]).Avatar, { source: null, size: null });
+            const Avatar2 = tmp2(tmp3[17]).Avatar;
+            const makeSource2 = tmp8(tmp3[21]).makeSource;
+            code(tmp3[21]);
             let obj5 = { id: null, icon: null, applicationId: null, size: 32 };
-            const tmp8Result6 = tmp8(tmp3[21]);
+            ({ id: obj12.id, icon: obj12.icon, application_id: obj12.applicationId } = stateFromStores2);
+            tmp20 = <Avatar2 source={makeSource2(code(tmp3[21]).getChannelIconURL(obj5))} size={tmp2(tmp3[17]).AvatarSizes.REFRESH_MEDIUM_32} />;
+            const tmp8Result6 = code(tmp3[21]);
           }
           if (str == null) {
             str = "";
           }
-          let str2 = str;
-          let T;
-          let tmp15 = tmp19;
+          str2 = str;
+          T = undefined;
+          tmp15 = tmp20;
         } else if (tmp2(tmp3[14]).RowTypes.CHANNEL === type) {
           let guild_id;
           if (stateFromStores2 != null) {
@@ -93,21 +111,17 @@ export default noop.memo(function InstantInviteRow(row) {
             return null;
           } else {
             if (null != guild.icon) {
-              let obj6 = { source: null, size: null };
-              const tmp8Result7 = tmp8(tmp3[21]);
-              ({ id: obj10.id, icon: obj10.icon } = guild);
-              obj6.source = tmp8Result7.makeSource(tmp8(tmp3[21]).getGuildIconURL({ id: null, icon: null, size: 32 }));
-              obj6.size = tmp2(tmp3[17]).AvatarSizes.REFRESH_MEDIUM_32;
-              tmp15 = jsx(tmp2(tmp3[17]).Avatar, { source: null, size: null });
-              let obj7 = { id: null, icon: null, size: 32 };
-              const tmp8Result8 = tmp8(tmp3[21]);
+              const Avatar = tmp2(tmp3[17]).Avatar;
+              const makeSource = tmp8(tmp3[21]).makeSource;
+              code(tmp3[21]);
+              const obj7 = { id: null, icon: null, size: 32 };
+              ({ id: obj9.id, icon: obj9.icon } = guild);
+              tmp15 = <Avatar source={makeSource(code(tmp3[21]).getGuildIconURL(obj7))} size={tmp2(tmp3[17]).AvatarSizes.REFRESH_MEDIUM_32} />;
+              const tmp8Result8 = code(tmp3[21]);
             } else {
-              let obj8 = { style: tmp.acronym, children: null };
-              const acronym = tmp2(tmp3[22]).getAcronym(guild.name);
-              let obj9 = { variant: "text-sm/bold", children: acronym };
-              obj8.children = jsx(tmp2(tmp3[23]).Text, { variant: "text-sm/bold", children: acronym });
-              tmp15 = <View style={tmp.acronym}>{null}</View>;
               const tmp2Result = tmp2(tmp3[22]);
+              const acronym = tmp2Result.getAcronym(guild.name);
+              tmp15 = <View style={tmp.acronym}>{null}</View>;
             }
             str2 = "";
             if (null != str) {
@@ -121,6 +135,10 @@ export default noop.memo(function InstantInviteRow(row) {
         }
       }
       function handlePress() {
+        let obj3;
+        let obj4;
+        let obj6;
+        const tmp = code;
         if (null != code) {
           function handleSendState(arg0) {
             if (null != code) {
@@ -132,50 +150,49 @@ export default noop.memo(function InstantInviteRow(row) {
               }
             }
           }
-          React7(tmp, id, InviteSendStates.SENDING);
+          React4(tmp, id, InviteSendStates.SENDING);
           const type = row.type;
           if (InstantInviteUtils.RowTypes.FRIEND !== type) {
-            if (tmp7(9277).RowTypes.DM !== type) {
-              if (tmp7(9277).RowTypes.GROUP_DM === type) {
+            if (InstantInviteUtils.RowTypes.DM !== type) {
+              if (InstantInviteUtils.RowTypes.GROUP_DM === type) {
                 if (null != tmp) {
-                  const obj2 = { inviteKey: tmp, type: tmp7(9350).InvitePropertiesType.GROUP_DM, channel: ChannelStore.getChannel(tmp3), location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
-                  const obj3 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(tmp6), source };
-                  obj2.inviteAnalyticsMetadata = obj3;
-                  InviteQueueDefault.enqueue(obj2, handleSendState);
+                  const obj2 = { inviteKey: tmp, type: InviteQueue.InvitePropertiesType.GROUP_DM, channel: ChannelStore.getChannel(id), location: "Invite Action Sheet", inviteAnalyticsMetadata: obj3 };
+                  const enqueue2 = InviteQueueDefault.enqueue;
+                  InviteQueueDefault;
+                  obj3 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(row), source: ChannelStore };
+                  enqueue2(obj2, handleSendState);
                 }
-              } else if (tmp7(9277).RowTypes.CHANNEL === type) {
+              } else if (InstantInviteUtils.RowTypes.CHANNEL === type) {
                 if (null != tmp) {
-                  const obj5 = { inviteKey: tmp, type: tmp7(9350).InvitePropertiesType.CHANNEL, channel: ChannelStore.getChannel(tmp3), location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
-                  const obj6 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(tmp6), source };
-                  obj5.inviteAnalyticsMetadata = obj6;
-                  InviteQueueDefault.enqueue(obj5, handleSendState);
+                  const obj = { inviteKey: tmp, type: InviteQueue.InvitePropertiesType.CHANNEL, channel: ChannelStore.getChannel(id), location: "Invite Action Sheet", inviteAnalyticsMetadata: obj4 };
+                  const enqueue = InviteQueueDefault.enqueue;
+                  InviteQueueDefault;
+                  obj4 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(row), source: ChannelStore };
+                  enqueue(obj, handleSendState);
                 }
               }
             }
           }
           if (null != tmp) {
-            const obj8 = { inviteKey: tmp, type: tmp7(9350).InvitePropertiesType.USER, user: UserStore.getUser(tmp3), location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
-            const obj9 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(tmp6), source };
-            obj8.inviteAnalyticsMetadata = obj9;
-            InviteQueueDefault.enqueue(obj8, handleSendState);
+            const obj5 = { inviteKey: tmp, type: InviteQueue.InvitePropertiesType.USER, user: UserStore.getUser(id), location: "Invite Action Sheet", inviteAnalyticsMetadata: obj6 };
+            const enqueue3 = InviteQueueDefault.enqueue;
+            InviteQueueDefault;
+            obj6 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(row), source: ChannelStore };
+            enqueue3(obj5, handleSendState);
           }
         }
       }
-      const obj11 = { start, end, icon: tmp15, label: str2, trailing: null, onPress: null, disabled: null, accessibilityActions: null, onAccessibilityAction: null };
-      const obj12 = { sendState: tmp6, onPressSend: handlePress };
-      obj11.trailing = jsx(tmp8(tmp3[25]), { sendState: tmp6, onPressSend: handlePress });
-      obj11.onPress = handlePress;
-      let tmp30 = null != stateFromStores1 || stateFromStores;
-      if (!tmp30) {
-        tmp30 = tmp6 === InviteSendStates.SENT;
+      const obj11 = { start, end, icon: tmp15, label: str2, trailing: null, onPress: handlePress, disabled: tmp32, accessibilityActions: tmp19, onAccessibilityAction: T };
+      const TableRow = tmp2(tmp3[24]).TableRow;
+      tmp32 = null != stateFromStores1 || stateFromStores;
+      const tmp31 = jsx;
+      if (!tmp32) {
+        tmp32 = tmp6 === InviteSendStates.SENT;
       }
-      obj11.disabled = tmp30;
-      obj11.accessibilityActions = tmp18;
-      obj11.onAccessibilityAction = T;
-      return jsx(tmp2(tmp3[24]).TableRow, { start, end, icon: tmp15, label: str2, trailing: null, onPress: null, disabled: null, accessibilityActions: null, onAccessibilityAction: null });
+      return tmp31(TableRow, obj11);
     }
     const user = UserStore.getUser(id);
-    const obj13 = {
+    const obj14 = {
       importantForAccessibility: "no-hide-descendants",
       accessibilityElementsHidden: true,
       onPress(stopPropagation) {
@@ -185,68 +202,53 @@ export default noop.memo(function InstantInviteRow(row) {
           }
         },
       style: { padding: 8, margin: -8 },
-      children: null
+      children: jsx(Avatar3, obj15)
     };
+    const PressableOpacity = tmp2(tmp3[16]).PressableOpacity;
     let avatarSource;
+    Avatar3 = tmp2(tmp3[17]).Avatar;
     if (user != null) {
       avatarSource = user.getAvatarSource(undefined);
     }
     if (avatarSource == null) {
       avatarSource = null;
     }
-    const obj15 = { source: avatarSource, size: tmp2(tmp3[17]).AvatarSizes.REFRESH_MEDIUM_32 };
-    obj13.children = jsx(tmp2(tmp3[17]).Avatar, { source: avatarSource, size: tmp2(tmp3[17]).AvatarSizes.REFRESH_MEDIUM_32 });
-    const obj16 = { nick: null, user: null };
-    const tmp22Result = jsx(tmp2(tmp3[16]).PressableOpacity, {
-      importantForAccessibility: "no-hide-descendants",
-      accessibilityElementsHidden: true,
-      onPress(stopPropagation) {
-          stopPropagation.stopPropagation();
-          if (onPressAvatar != null) {
-            tmp2(id);
-          }
-        },
-      style: { padding: 8, margin: -8 },
-      children: null
-    });
-    const tmp8Result9 = tmp8(tmp3[18]);
-    obj16.nick = tmp8(tmp3[19]).getGlobalName(user);
-    obj16.user = user;
-    let tmp27;
-    const tmp8Result10 = tmp8(tmp3[19]);
+    obj15 = { source: avatarSource, size: tmp2(tmp3[17]).AvatarSizes.REFRESH_MEDIUM_32 };
+    const obj16 = { nick: tmp8Result10.getGlobalName(user), user };
+    const tmp24Result = jsx(PressableOpacity, obj14);
+    const tmp8Result9 = code(tmp3[18]);
+    let tmp29;
+    tmp8Result10 = code(tmp3[19]);
+    const tmp24Result2 = jsx(tmp8Result9, obj16);
     if (null != onPressAvatar) {
       const intl = tmp2(tmp3[20]).intl;
+      const formatToPlainString = intl.formatToPlainString;
       let tag;
+      const uCenkh = tmp2(tmp3[20]).t.uCenkh;
       if (user != null) {
         tag = user.tag;
       }
-      const obj17 = { name: "viewProfile", label: null };
-      const obj18 = { username: tag };
-      obj17.label = intl.formatToPlainString(tmp2(tmp3[20]).t.uCenkh, obj18);
+      const obj17 = { name: "viewProfile", label: formatToPlainString(uCenkh, obj18) };
       const items3 = [obj17];
-      tmp27 = items3;
+      tmp29 = items3;
+      obj18 = { username: tag };
     }
     class T {
-      constructor(arg0) {
-        tmp = "viewProfile" === row.nativeEvent.actionName;
+      constructor(nativeEvent) {
+        const tmp = "viewProfile" === nativeEvent.nativeEvent.actionName && null !== onPressAvatar;
         if (tmp) {
-          tmp2 = onPressAvatar;
-          tmp3 = null;
-          tmp = null !== onPressAvatar;
-        }
-        if (tmp) {
-          tmp5 = null;
           if (onPressAvatar != null) {
-            tmp6 = id;
-            tmp4Result = tmp4(id);
+            tmp4(id);
           }
         }
-        return;
       }
     }
-    str2 = <tmp8Result9 nick={null} user={null} />;
-    tmp15 = tmp22Result;
-    tmp18 = tmp27;
-    const tmp22Result2 = <tmp8Result9 nick={null} user={null} />;
+    str2 = tmp24Result2;
+    tmp15 = tmp24Result;
+    tmp19 = tmp29;
   }
 });
+size = size_mod;
+const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteRow.tsx");
+
+export default memoResult;

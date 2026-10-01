@@ -6,19 +6,23 @@
 
 // Module 12507 (SharedStateUtils)
 import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 7821 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/masked_link/SharedStateUtils.tsx");
 
 export const useUrlParts = function useUrlParts(url) {
-  closure_0 = url;
+  let hostname;
+  let protocol;
+  let closure_0 = url;
   const items = [url];
-  const memo = noop.useMemo(() => {
-    const url = { protocol: MaskedLinkStoreMethodsAdditional.getProtocol(str), hostname: null };
-    url.hostname = MaskedLinkStoreMethodsAdditional.getHostname(str);
+  const memo = react.useMemo(() => {
+    let obj2;
+    let obj3;
+    const url = { protocol: obj2.getProtocol(str), hostname: obj3.getHostname(str) };
+    obj2 = MaskedLinkStoreMethodsAdditional;
+    obj3 = MaskedLinkStoreMethodsAdditional;
     return url;
   }, items);
   ({ protocol, hostname } = memo);
@@ -30,17 +34,24 @@ export const useUrlParts = function useUrlParts(url) {
   return url;
 };
 export const useModalState = function useModalState(url) {
+  let first;
+  let hostname;
+  let protocol;
+  let tmp3;
   const str = url.url;
   const trustUrl = url.trustUrl;
   const onConfirm = url.onConfirm;
   const onCancel = url.onCancel;
   const onClose = url.onClose;
-  const tmp = onConfirm(onCancel.useState(false), 2);
-  const shouldTrustUrl = tmp[0];
+  first = undefined;
+  [first, tmp3] = react.useState(false);
   const items = [str];
-  const memo = onCancel.useMemo(() => {
-    const url = { protocol: MaskedLinkStoreMethodsAdditional.getProtocol(str), hostname: null };
-    url.hostname = MaskedLinkStoreMethodsAdditional.getHostname(str);
+  const memo = react.useMemo(() => {
+    let obj2;
+    let obj3;
+    const url = { protocol: obj2.getProtocol(str), hostname: obj3.getHostname(str) };
+    obj2 = MaskedLinkStoreMethodsAdditional;
+    obj3 = MaskedLinkStoreMethodsAdditional;
     return url;
   }, items);
   ({ protocol, hostname } = memo);
@@ -48,11 +59,12 @@ export const useModalState = function useModalState(url) {
   if ("//" === str.substr(protocol.length, 2)) {
     str2 = "//";
   }
-  const items1 = [str, shouldTrustUrl, trustUrl, onConfirm, onClose];
+  const items1 = [str, first, trustUrl, onConfirm, onClose];
   const replaced = str.replace("" + protocol + str2 + hostname, "");
   const items2 = [onCancel, onClose];
   const callback = obj.useCallback(() => {
-    if (first) {
+    const tmp = first;
+    if (tmp) {
       trustUrl(str);
     }
     onConfirm();
@@ -65,8 +77,8 @@ export const useModalState = function useModalState(url) {
     authorityPrefix: str2,
     hostname,
     theRestOfTheUrl: replaced,
-    shouldTrustUrl,
-    setShouldTrustUrl: tmp[1],
+    shouldTrustUrl: first,
+    setShouldTrustUrl: tmp3,
     handleConfirm: callback,
     handleCancel: obj.useCallback(() => {
       onCancel();

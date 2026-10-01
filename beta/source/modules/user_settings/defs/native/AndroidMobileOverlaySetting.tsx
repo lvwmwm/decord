@@ -4,31 +4,38 @@
 // Dependencies: [9435, 7417, 504, 1115, 11006, 9447, 2]
 
 // Module 14799 (AndroidMobileOverlaySetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import MobileVoiceOverlayStore2 from "MobileVoiceOverlayStore" /* 9435 */;
 import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 9447 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 9435 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const toggle = SettingBuilders.createToggle({
+const MobileVoiceOverlayStore = MobileVoiceOverlayStore2;
+
+const isMobileOverlaySupported = MobileVoiceOverlayStore2.isMobileOverlaySupported;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["9CSZJm"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["9CSZJm"]);
   },
-  parent: fn(7417).MobileUserSettings.VOICE,
+  parent: MobileUserSettings.VOICE,
   useValue: function useAndroidMobileOverlaySettingValue() {
+    let enabled;
     const items = [MobileVoiceOverlayStore];
-    return initialize.useStateFromStores(items, () => enabled.getEnabled());
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => enabled.getEnabled());
   },
   onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled,
   useDescription: function useAndroidMobileOverlaySettingDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.Wfoivk);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.Wfoivk);
   },
-  usePredicate: fn(9435).isMobileOverlaySupported
-});
-const size = fn(2);
+  usePredicate: isMobileOverlaySupported
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AndroidMobileOverlaySetting.tsx");
 
 export default toggle;

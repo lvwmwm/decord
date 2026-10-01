@@ -3,16 +3,22 @@
 // Dependencies: [637, 654, 7034]
 
 // Module 7033
-import _mod637 from "module_637" /* 637 */;
-import _mod654 from "module_654" /* 654 */;
-import noop_mod from "module_7034" /* 7034 */;
+import getNative from "getNative" /* 637 */;
+import setToArray from "setToArray" /* 654 */;
+import noop_mod from "noop" /* 7034 */;
 
-if (_mod637) {
-  const _module = _mod654;
+if (getNative) {
+  let noop;
+  const _module = setToArray;
   const items = [, -0];
-  const tmp5 = new _mod637(items);
-  if (1 / _module(tmp5)[1] === Infinity) {
-    let noop = (arg0) => new _mod637(arg0);
+  const self = this;
+  const self2 = this;
+  const tmp3 = new getNative(items);
+  if (1 / _module(tmp3)[1] === Infinity) {
+    noop = (arg0) => {
+      const tmp = new getNative(arg0);
+      return tmp;
+    };
   }
   module.exports = noop;
 }

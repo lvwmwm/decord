@@ -5,25 +5,40 @@
 
 // Module 14324 (MFACodeInput)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const AppStates = fn(1074).AppStates;
-const jsxProd = fn(21);
-({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { inputContainer: { marginTop: 20, flexDirection: "row", justifyContent: "center", alignSelf: "stretch" }, input: { flex: 1, maxWidth: 336, flexDirection: "row", alignSelf: "stretch" }, status: { flex: 1, maxHeight: 20, alignItems: "center", marginTop: 8 }, error: { color: nativeDefault.unsafe_rawColors.RED_400 }, minHeightGuard: { minHeight: 20 } };
+let appState;
+
+let c10;
+let c9;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let unpackModuleId;
+let react = react_mod;
+({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
+const AppStates = Constants.AppStates;
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
+let obj = { inputContainer: { marginTop: 20, flexDirection: "row", justifyContent: "center", alignSelf: "stretch" }, input: { flex: 1, maxWidth: 336, flexDirection: "row", alignSelf: "stretch" }, status: { flex: 1, maxHeight: 20, alignItems: "center", marginTop: 8 }, error: obj2, minHeightGuard: { minHeight: 20 } };
+obj2 = { color: nativeDefault.unsafe_rawColors.RED_400 };
 let closure_12 = createStyles.createStyles(obj);
-let obj3 = { color: nativeDefault.unsafe_rawColors.RED_400 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/auth/native/components/MFACodeInput.tsx");
-
-export default noop.forwardRef((appState, ref) => {
+const forwardRefResult = react.forwardRef((appState, ref) => {
+  let closure_4;
+  let error;
+  let intl;
+  let items3;
+  let resetLoginOnClose;
+  let showActivityIndicator;
+  let style;
+  let tmp17Result;
   appState = appState.appState;
   const handleSubmit = appState.handleSubmit;
   ({ error, resetLoginOnClose } = appState);
@@ -31,32 +46,37 @@ export default noop.forwardRef((appState, ref) => {
   if (resetLoginOnClose === undefined) {
     resetLoginOnClose = true;
   }
-  value = undefined;
-  noop = undefined;
+  let value;
+  react = undefined;
   let tmp = closure_12();
-  const tmp4 = value(noop.useState(""), 2);
+  let tmp2 = appState;
+  const tmp3 = resetLoginOnClose;
+  let obj = appState(resetLoginOnClose[8]);
+  const theme = obj.useThemeContext().theme;
+  const tmp4 = value(react.useState(""), 2);
   value = tmp4[0];
-  noop = tmp6;
-  const tmp7 = value(noop.useState(null), 2);
+  react = tmp6;
+  const tmp7 = value(react.useState(null), 2);
   const first1 = tmp7[0];
-  closure_6 = tmp7[1];
+  let closure_6 = tmp7[1];
   const items = [first1];
-  const callback = noop.useCallback(() => {
-    const string = ClipboardUtils.getString();
+  const callback = react.useCallback(() => {
+    let obj = ClipboardUtils;
+    const string = obj.getString();
     string.then((result) => {
       const trimmed = result.trim();
       let tmp = trimmed !== first1;
       if (tmp) {
         let isMatch = 6 === trimmed.length;
         if (isMatch) {
-          isMatch = /^\d+$/.test(trimmed);
           const obj = /^\d+$/;
+          isMatch = obj.test(trimmed);
         }
         if (!isMatch) {
           let isMatch1 = 8 === trimmed.length;
           if (isMatch1) {
-            isMatch1 = /^[a-z0-9]+$/i.test(trimmed);
             const obj2 = /^[a-z0-9]+$/i;
+            isMatch1 = obj2.test(trimmed);
           }
           isMatch = isMatch1;
         }
@@ -69,22 +89,21 @@ export default noop.forwardRef((appState, ref) => {
     });
   }, items);
   handleSubmit(resetLoginOnClose[10])(() => {
-    callback();
+    let tmp = callback();
     return () => {
       if (callback.isAuthenticated()) {
-        const string = appState(resetLoginOnClose[9]).getString();
+        const obj2 = appState(resetLoginOnClose[9]);
+        const string = obj2.getString();
         string.then((result) => {
-          let tmp2 = "" !== closure_1_3;
+          const tmp2 = "" !== closure_1_3 && tmp === result;
           if (tmp2) {
-            tmp2 = tmp === result;
-          }
-          if (tmp2) {
-            appState(resetLoginOnClose[9]).copy("");
             const obj = appState(resetLoginOnClose[9]);
+            obj.copy("");
           }
         });
-        const obj2 = appState(resetLoginOnClose[9]);
       } else {
+        const tmp = closure_1_2;
+        let tmp2 = handleSubmit;
         let obj = handleSubmit(resetLoginOnClose[11]);
         if (closure_1_2) {
           obj.loginReset();
@@ -95,63 +114,60 @@ export default noop.forwardRef((appState, ref) => {
     };
   });
   const items1 = [appState, callback];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (appState === AppStates.ACTIVE) {
       callback();
     }
   }, items1);
   const items2 = [value, handleSubmit];
-  const effect1 = noop.useEffect(() => {
+  const effect1 = react.useEffect(() => {
     let isMatch = 6 === first.length;
     if (isMatch) {
-      isMatch = /^\d+$/.test(arr);
       const obj = /^\d+$/;
+      isMatch = obj.test(arr);
     }
     if (!isMatch) {
       isMatch = 8 === arr.length;
     }
     if (isMatch) {
-      handleSubmit(arr);
+      handleSubmit(first);
     }
   }, items2);
-  const imperativeHandle = noop.useImperativeHandle(ref, () => ({
+  const imperativeHandle = react.useImperativeHandle(ref, () => ({
     clear() {
       closure_1_4("");
     }
   }), []);
-  let obj2 = { autoFocus: true, style: null, textStyle: tmp.input, value, autoCapitalize: "none", maxLength: 8, textContentType: "oneTimeCode", onChangeText: tmp4[1], accessibilityLabel: null };
-  const items3 = [tmp.inputContainer, style];
-  obj2.style = items3;
-  let obj = appState(resetLoginOnClose[8]);
+  let obj2 = { autoFocus: true, style: items3, textStyle: tmp.input, value, autoCapitalize: "none", maxLength: 8, textContentType: "oneTimeCode", onChangeText: tmp6, accessibilityLabel: intl.string(appState(resetLoginOnClose[13]).t.yO4lAM) };
+  items3 = [tmp.inputContainer, style];
+  const tmp18 = handleSubmit(resetLoginOnClose[12]);
+  intl = appState(resetLoginOnClose[13]).intl;
+  const items4 = [closure_9(tmp18, obj2), ];
+  const items5 = [tmp.status, ];
+  const obj3 = { style: items5, children: tmp17Result };
+  items5[1] = Boolean(error) && tmp.minHeightGuard;
+  Boolean(error) && tmp.minHeightGuard;
   const tmp10 = handleSubmit;
   const tmp15 = closure_11;
   const tmp16 = closure_10;
-  const intl = appState(resetLoginOnClose[13]).intl;
-  obj2.accessibilityLabel = intl.string(appState(resetLoginOnClose[13]).t.yO4lAM);
-  const items4 = [closure_9(handleSubmit(resetLoginOnClose[12]), obj2), ];
-  const items5 = [tmp.status, ];
-  const tmp18 = handleSubmit(resetLoginOnClose[12]);
   const tmp19 = closure_6;
-  const obj3 = { style: items5, children: null };
-  items5[1] = Boolean(error) && tmp.minHeightGuard;
   if (showActivityIndicator) {
     const tmp2Result = tmp2(tmp3[8]);
-    tmp10(tmp3[7]).unsafe_rawColors;
-    const isThemeDarkResult = tmp2(tmp3[8]).isThemeDark(obj.useThemeContext().theme);
-    const unsafe_rawColors = first1;
-    const obj4 = { color: tmp2(tmp3[8]).isThemeDark(obj.useThemeContext().theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500 };
-    tmp17(first1, obj4);
-    const tmp23 = tmp2(tmp3[8]).isThemeDark(obj.useThemeContext().theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
+    const isThemeDarkResult = tmp2Result.isThemeDark(theme);
+    const unsafe_rawColors = tmp10(tmp3[7]).unsafe_rawColors;
+    const obj4 = { color: isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500 };
+    tmp17Result = tmp17(first1, obj4);
   } else {
-    let tmp17Result2 = null;
+    tmp17Result = null;
     if (null != error) {
       const obj5 = { style: tmp.error, variant: "text-md/medium", children: error };
-      tmp17Result2 = tmp17(tmp2(tmp3[14]).Text, obj5);
+      tmp17Result = tmp17(tmp2(tmp3[14]).Text, obj5);
     }
-    const obj6 = { children: null };
-    obj3.children = tmp17Result2;
-    items4[1] = tmp17(tmp19, obj3);
-    obj6.children = items4;
-    return tmp15(tmp16, obj6);
   }
+  const obj6 = { children: items4 };
+  items4[1] = closure_9(tmp19, obj3);
+  return tmp15(tmp16, obj6);
 });
+const result = size.fileFinishedImporting("modules/auth/native/components/MFACodeInput.tsx");
+
+export default forwardRefResult;

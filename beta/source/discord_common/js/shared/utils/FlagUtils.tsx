@@ -26,16 +26,19 @@ export const removeFlags = function removeFlags(setting) {
   return substr.reduce((acc, item) => acc & ~item, setting);
 };
 export const setFlag = function setFlag(arg0, arg1, arg2) {
-  if (arg2) {
-    let tmp = arg0 | arg1;
+  let tmp2;
+  const tmp = arg2;
+  if (tmp) {
+    tmp2 = arg0 | arg1;
   } else {
-    tmp = arg0 & ~arg1;
+    tmp2 = arg0 & ~arg1;
   }
-  return tmp;
+  return tmp2;
 };
 export const toggleFlag = function toggleFlag(arg0, arg1) {
+  let tmp;
   if ((arg0 & arg1) === arg1) {
-    let tmp = arg0 & ~arg1;
+    tmp = arg0 & ~arg1;
   } else {
     tmp = arg0 | arg1;
   }

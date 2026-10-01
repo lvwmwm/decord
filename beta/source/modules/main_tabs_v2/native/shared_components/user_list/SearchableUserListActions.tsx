@@ -5,50 +5,58 @@
 // Exports: useUserListActionsProps
 
 // Module 10324 (SearchableUserListActions)
-import TableRow from "TableRow" /* 5917 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import TableRow2 from "TableRow" /* 5917 */;
+import TableRowGroup2 from "TableRowGroup" /* 5999 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap;
+
+let closure_4;
+let hasOwnProperty;
 class UserFlashListActions {
-  constructor(arg0) {
-    actions = global.actions;
-    tmp = jsx;
-    obj = { style: null, children: null };
-    items = [, ];
-    items[0] = { flex: 1 };
-    items[1] = global.style;
-    obj.style = items;
-    tmp2 = View;
-    mapped = undefined;
+  constructor(actions) {
+    actions = actions.actions;
+    const items = [{ flex: 1 }, actions.style];
+    let mapped;
+    const TableRowGroup = TableRowGroup2.TableRowGroup;
     if (actions != null) {
       mapped = actions.map((item, index) => {
+        let IconComponent;
+        let icon;
+        let iconVariant;
+        let label;
+        let onPress;
+        let subLabel;
         ({ label, subLabel, icon, IconComponent, iconVariant, onPress } = item);
-        return jsx(TableRow.TableRow, { label, subLabel, icon: jsx(TableRow.TableRow.Icon, { source: icon, IconComponent, variant: iconVariant }), onPress, arrow: true }, index);
+        const TableRow = TableRow2.TableRow;
+        return <TableRow key={arg1} label={label} subLabel={subLabel} icon={null} onPress={onPress} arrow />;
       });
     }
-    obj.children = tmp(closure_0(closure_2[4]).TableRowGroup, { hasIcons: true, children: mapped });
-    return tmp(tmp2, obj);
+    return <tmp2 style={items}>{null}</tmp2>;
   }
 }
-get_ActivityIndicator = fn(17);
-({ View: closure_4, StyleSheet: hasOwnProperty } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const size = fn(2);
+({ View: closure_4, StyleSheet: hasOwnProperty } = react_native);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/SearchableUserListActions.tsx");
 
 export const useUserListActionsProps = function useUserListActionsProps(actions) {
+  let closure_2;
   actions = actions.actions;
   const style = actions.style;
   const tmp = style(10325)();
   dependencyMap = tmp;
   const items = [actions, tmp, style];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    let fn;
     let obj = style;
+    hasOwnProperty = hasOwnProperty.flatten;
     if (style == null) {
       obj = {};
     }
-    const flattenResult = hasOwnProperty.flatten(obj);
+    const flattenResult = hasOwnProperty(obj);
     const paddingTop = flattenResult.paddingTop;
     let num = 0;
     if (undefined !== paddingTop) {
@@ -64,18 +72,17 @@ export const useUserListActionsProps = function useUserListActionsProps(actions)
         let num3 = 0;
         if (null != actions) {
           num3 = 0;
-          if (arr.length > 0) {
+          if (actions.length > 0) {
             num3 = arr.length * closure_2 + num + num2;
           }
         }
-        const obj2 = { headerSize: num3, renderHeader: null };
-        let fn;
+        const obj2 = { headerSize: num3, renderHeader: fn };
+        fn = undefined;
         if (null != actions) {
-          if (arr.length > 0) {
+          if (actions.length > 0) {
             fn = () => <UserFlashListActions actions={actions} style={style} />;
           }
         }
-        obj2.renderHeader = fn;
         return obj2;
       }
     }

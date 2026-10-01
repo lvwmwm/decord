@@ -5,87 +5,106 @@
 // Exports: default
 
 // Module 15416 (ProfileCustomizationTryItOutSettingScreen)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1389 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
 import UserProfileActionCreators from "UserProfileActionCreators" /* 7612 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, ActivityIndicator: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const Constants = fn(1074);
-({ AnalyticEvents: closure_7, AnalyticsPages: closure_8 } = Constants);
-const PremiumUpsellTypes = fn(1374).PremiumUpsellTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { container: null, activityIndicator: null };
+let StyleSheet;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+({ View: closure_4, ActivityIndicator: hasOwnProperty, StyleSheet } = react_native);
+({ AnalyticEvents: metroImportDefault, AnalyticsPages: metroImportAll } = Constants);
+const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { container: obj2, activityIndicator: { height: "100%", alignItems: "center", justifyContent: "center" } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj2.container = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-obj2.activityIndicator = { height: "100%", alignItems: "center", justifyContent: "center" };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_11 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreen.tsx");
 
 export default function ProfileCustomizationTryItOutSettingScreen() {
-  let tmp = closure_11();
-  const tmp2 = stateFromStores;
+  let analyticsLocations;
+  let categories;
+  let sourceAnalyticsLocations;
+  let stateFromStores;
+  let visibleEffectOrder;
+  const tmp = closure_11();
+  let tmp3 = categories;
   const tmp4 = stateFromStores(categories[8]);
-  ({ analyticsLocations, sourceAnalyticsLocations } = stateFromStores(categories[8])(stateFromStores(categories[9]).USER_SETTINGS_TRY_OUT_PREMIUM));
-  const tmp4Result = stateFromStores(categories[8])(stateFromStores(categories[9]).USER_SETTINGS_TRY_OUT_PREMIUM);
-  const tmp6 = sourceAnalyticsLocations;
+  ({ analyticsLocations, sourceAnalyticsLocations } = tmp4(stateFromStores(categories[9]).USER_SETTINGS_TRY_OUT_PREMIUM));
+  tmp4(stateFromStores(categories[9]).USER_SETTINGS_TRY_OUT_PREMIUM);
+  let obj = sourceAnalyticsLocations(categories[10]);
   const items = [visibleEffectOrder];
-  stateFromStores = sourceAnalyticsLocations(categories[10]).useStateFromStores(items, () => visibleEffectOrder.getCurrentUser());
+  stateFromStores = obj.useStateFromStores(items, () => visibleEffectOrder.getCurrentUser());
   const tmp8 = stateFromStores(categories[11])();
   categories = tmp8.categories;
+  const isFetching = tmp8.isFetching;
   const tmp9 = stateFromStores(categories[12])({ isTryItOut: true, analyticsLocations });
   const pendingAvatarDecoration = tmp9.pendingAvatarDecoration;
   const setPendingAvatarDecoration = tmp9.setPendingAvatarDecoration;
   const items1 = [stateFromStores];
   const effect = pendingAvatarDecoration.useEffect(() => {
     if (null != stateFromStores) {
-      maybeFetchUserProfileDefault(obj.id, obj.getAvatarURL(undefined, 80), { dispatchWait: true });
+      const tmp3 = maybeFetchUserProfileDefault;
+      tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
     }
   }, items1);
   const items2 = [pendingAvatarDecoration, setPendingAvatarDecoration, categories];
   const effect1 = pendingAvatarDecoration.useEffect(() => {
     if (undefined === pendingAvatarDecoration) {
-      const avatarDecorationsFromCategories = CollectiblesUtils.getAvatarDecorationsFromCategories(categories);
+      const obj = CollectiblesUtils;
+      const avatarDecorationsFromCategories = obj.getAvatarDecorationsFromCategories(categories);
       const _Math = Math;
       const _Math2 = Math;
       setPendingAvatarDecoration(avatarDecorationsFromCategories[Math.floor(Math, Math.random(Math) * avatarDecorationsFromCategories.length)]);
     }
   }, items2);
-  let obj = sourceAnalyticsLocations(categories[10]);
-  const visibleFontOrder = sourceAnalyticsLocations(categories[15]).useVisibleFontOrder();
   let obj2 = sourceAnalyticsLocations(categories[15]);
-  visibleEffectOrder = sourceAnalyticsLocations(categories[16]).useVisibleEffectOrder();
+  const visibleFontOrder = obj2.useVisibleFontOrder();
+  let obj3 = sourceAnalyticsLocations(categories[16]);
+  visibleEffectOrder = obj3.useVisibleEffectOrder();
   const items3 = [visibleFontOrder, visibleEffectOrder];
   const effect2 = pendingAvatarDecoration.useEffect(() => {
-    const obj = UserProfileActionCreators;
-    const result = obj.setTryItOutDisplayNameStyles(DisplayNameStylesUtils.generateRandomDisplayNameStyles(visibleFontOrder, visibleEffectOrder));
+    const setTryItOutDisplayNameStyles = UserProfileActionCreators.setTryItOutDisplayNameStyles;
+    UserProfileActionCreators;
+    const obj = DisplayNameStylesUtils;
+    const result = setTryItOutDisplayNameStyles(obj.generateRandomDisplayNameStyles(visibleFontOrder, visibleEffectOrder));
   }, items3);
   const items4 = [sourceAnalyticsLocations];
   const effect3 = pendingAvatarDecoration.useEffect(() => {
-    const obj2 = { type: PremiumUpsellTypes.PREMIUM_PROFILE_TRY_IT_OUT, location: { page: constants2.USER_SETTINGS }, location_stack: sourceAnalyticsLocations };
-    AnalyticsUtilsDefault.track(constants.PREMIUM_UPSELL_VIEWED, obj2);
+    let obj3;
+    const obj2 = { type: PremiumUpsellTypes.PREMIUM_PROFILE_TRY_IT_OUT, location: obj3, location_stack: sourceAnalyticsLocations };
+    obj3 = { page: metroImportAll.USER_SETTINGS };
+    const obj = AnalyticsUtilsDefault;
+    obj.track(metroImportDefault.PREMIUM_UPSELL_VIEWED, obj2);
   }, items4);
-  if (null == stateFromStores) {
-    return null;
-  } else if (tmp8.isFetching) {
-    const obj4 = { style: tmp.activityIndicator, children: null };
-    tmp = visibleFontOrder;
-    obj4.children = <visibleFontOrder animating size="large" />;
-    let tmp18 = <setPendingAvatarDecoration style={tmp.activityIndicator}>{null}</setPendingAvatarDecoration>;
-  } else if (undefined !== pendingAvatarDecoration) {
-    const obj5 = { value: analyticsLocations, children: null };
-    const obj6 = { style: tmp.container, children: null };
-    const obj7 = { currentUser: stateFromStores, isTryItOut: true };
-    obj6.children = jsx(tmp2(tmp3[20]), { currentUser: stateFromStores, isTryItOut: true });
-    obj5.children = <setPendingAvatarDecoration style={tmp.container}>{null}</setPendingAvatarDecoration>;
-    tmp18 = jsx(tmp6(tmp3[8]).AnalyticsLocationProvider, { value: analyticsLocations, children: null });
+  let tmp16 = null;
+  const tmp6 = sourceAnalyticsLocations;
+  if (null != stateFromStores) {
+    let tmp19;
+    if (isFetching) {
+      tmp19 = <setPendingAvatarDecoration style={tmp.activityIndicator}><visibleFontOrder animating size="large" /></setPendingAvatarDecoration>;
+    } else {
+      const AnalyticsLocationProvider = tmp6(tmp3[8]).AnalyticsLocationProvider;
+      tmp19 = <AnalyticsLocationProvider value={analyticsLocations}>{null}</AnalyticsLocationProvider>;
+    }
+    tmp16 = tmp19;
   }
+  return tmp16;
 };

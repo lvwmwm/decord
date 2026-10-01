@@ -5,32 +5,43 @@
 // Exports: ForumPostDisabledContainer, ForumPostPressableContainer, useForumPostContainerPressedIn
 
 // Module 11502 (ForumPostContainer)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import Card from "Card" /* 5919 */;
 import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 9680 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 6495 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { childContainer: { position: "relative", minHeight: 110, padding: 12 }, card: { marginBottom: 12 }, disabledContainer: { marginBottom: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.md, overflow: "hidden" } };
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let obj = { childContainer: { position: "relative", minHeight: 110, padding: 12 }, card: { marginBottom: 12 }, disabledContainer: obj2 };
+obj2 = { marginBottom: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.md, overflow: "hidden" };
 let closure_6 = createStyles.createStyles(obj);
-const ReanimatedHelperTypes = fn(6495);
-const redux = noop.createContext(ReanimatedHelperTypes.createFakeSharedValue(false));
-const size = fn(2);
+const createContext = react.createContext;
+const redux = createContext(ReanimatedHelperTypes.createFakeSharedValue(false));
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostContainer.tsx");
 
 export const useForumPostContainerPressedIn = function useForumPostContainerPressedIn() {
-  return noop.useContext(closure_7);
+  return react.useContext(redux);
 };
 export const ForumPostPressableContainer = function ForumPostPressableContainer(arg0) {
+  let children;
+  let onLongTapPost;
+  let onPressIn;
+  let onPressOut;
+  let onTapPost;
+  let style;
+  let threadId;
   ({ threadId, children, style } = arg0);
   const tmp = closure_6();
-  const sharedValue = ReanimatedRexport.useSharedValue(false);
+  const obj = ReanimatedRexport;
+  const sharedValue = obj.useSharedValue(false);
   const items = [sharedValue];
-  const memo = noop.useMemo(() => ({
+  const memo = react.useMemo(() => ({
     onPressIn() {
       return sharedValue.set(true);
     },
@@ -39,20 +50,15 @@ export const ForumPostPressableContainer = function ForumPostPressableContainer(
     }
   }), items);
   ({ onPressIn, onPressOut } = memo);
-  const obj2 = { style: tmp.card, children: null };
   ({ onTapPost, onLongTapPost } = useNativeForumPostHandlersDefault({ threadId }));
-  const obj3 = { style: null, variant: "surface-high", accessibilityRole: "button", onPress: onTapPost, onPressIn, onPressOut, onLongPress: onLongTapPost, unstable_pressDelay: 130, children };
   const items1 = [tmp.childContainer, style];
-  obj3.style = items1;
-  obj2.children = jsx(Card.Card, { style: null, variant: "surface-high", accessibilityRole: "button", onPress: onTapPost, onPressIn, onPressOut, onLongPress: onLongTapPost, unstable_pressDelay: 130, children });
-  const tmp4 = useNativeForumPostHandlersDefault({ threadId });
+  useNativeForumPostHandlersDefault({ threadId });
   return <redux.Provider value={sharedValue}><View style={tmp.card}>{null}</View></redux.Provider>;
 };
 export const ForumPostDisabledContainer = function ForumPostDisabledContainer(arg0) {
+  let children;
+  let style;
   ({ children, style } = arg0);
-  const obj = { style: null, pointerEvents: "none", children: null };
   const items = [closure_6().disabledContainer, style];
-  obj.style = items;
-  obj.children = children;
-  return <View style={null} pointerEvents="none">{null}</View>;
+  return <View style={items} pointerEvents="none">{children}</View>;
 };

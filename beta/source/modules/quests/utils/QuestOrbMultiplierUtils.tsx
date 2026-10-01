@@ -6,10 +6,11 @@
 
 // Module 10697 (QuestOrbMultiplierUtils)
 import PerksStateUtils from "PerksStateUtils" /* 1378 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
 import size from "module_2" /* 2 */;
 
-const obj = { UPSELL: "UPSELL", NITRO: "NITRO", XBOX_GAME_PASS: "XBOX_GAME_PASS", INELIGIBLE: "INELIGIBLE" };
-let obj2 = { NITRO: "nitro", XBOX_GAME_PASS: "xbox_game_pass" };
+let obj = { UPSELL: "UPSELL", NITRO: "NITRO", XBOX_GAME_PASS: "XBOX_GAME_PASS", INELIGIBLE: "INELIGIBLE" };
+const obj2 = { NITRO: "nitro", XBOX_GAME_PASS: "xbox_game_pass" };
 const items = [, ];
 ({ XBOX_GAME_PASS: arr[0], NITRO: arr[1] } = obj);
 const result = size.fileFinishedImporting("modules/quests/utils/QuestOrbMultiplierUtils.tsx");
@@ -20,24 +21,28 @@ export const shouldReceiveQuestOrbMultiplier = function shouldReceiveQuestOrbMul
   return items.includes(questOrbMultiplierEligibilityForUser);
 };
 export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(perks) {
+  const obj = PremiumUtilsDefault;
   if (obj.canUseMoreQuestOrbs(perks)) {
-    obj2 = PerksStateUtils;
     perks = undefined;
+    const getPerkSource = PerksStateUtils.getPerkSource;
+    PerksStateUtils;
     if (perks != null) {
       perks = perks.perks;
     }
-    const perkSource = obj2.getPerkSource(perks, tmp4(1380).Perk.MORE_QUEST_ORBS);
+    const perkSource = getPerkSource(perks, tmp4(1380).Perk.MORE_QUEST_ORBS);
     let hasItem;
     if (perkSource != null) {
       hasItem = perkSource.includes(tmp4(1380).PerkSource.SOURCE_NITRO);
     }
     if (!hasItem) {
+      let XBOX_GAME_PASS;
+      const tmpResult = PremiumUtilsDefault;
       if (!tmpResult.canUseQuestOrbMultiplier(perks)) {
         let hasItem1;
         if (perkSource != null) {
           hasItem1 = perkSource.includes(tmp4(1380).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
         }
-        let XBOX_GAME_PASS = null;
+        XBOX_GAME_PASS = null;
         if (hasItem1) {
           XBOX_GAME_PASS = obj2.XBOX_GAME_PASS;
         }

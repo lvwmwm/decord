@@ -6,22 +6,22 @@
 
 // Module 12626 (useNote)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
 import NoteStore from "NoteStore" /* 12627 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c5, c6;
 
-const require = fn;
-let closure_7 = async function _fetchNote(userId) {
-  c5 = 0;
-  c6 = 0;
-  c4 = 0;
-  return (async (arg0, value) => {
+let obj = function _fetchNote() {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let closure_0;
     if (c6 === 2) {
       c6 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -31,7 +31,9 @@ let closure_7 = async function _fetchNote(userId) {
         return { value: "HermesInternal", done: null };
       }
     } else {
+      let c4;
       try {
+        let body;
         c6 = 2;
         if (0 === c5) {
           if (arg0 === 1) {
@@ -42,27 +44,27 @@ let closure_7 = async function _fetchNote(userId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_2 = tmp3;
-            closure_1 = tmp7;
-            closure_129_0 = userId;
-            let body;
-            const obj5 = { type: "USER_NOTE_LOAD_START", userId };
-            DispatcherDefault.dispatch(obj5);
+            let closure_2 = tmp;
+            let closure_1 = tmp4;
+            body = undefined;
+            const obj5 = { type: "USER_NOTE_LOAD_START", userId: id };
+            const obj9 = DispatcherDefault;
+            obj9.dispatch(obj5);
             c4 = 1;
             const HTTP = require("HTTPUtils").HTTP;
-            const obj6 = { url: Endpoints.NOTE(userId), oldFormErrors: true, rejectWithError: true };
+            const obj6 = { url: Endpoints.NOTE(id), oldFormErrors: true, rejectWithError: true };
+            const get = HTTP.get;
             c5 = 2;
             c6 = 1;
-            const obj7 = { value: HTTP.get(obj6), done: false };
+            const obj7 = { value: get(obj6), done: false };
             return obj7;
           }
         } else {
-          if (1 === tmp7) {
+          if (1 === c5) {
             c4 = 0;
-            const obj8 = { type: "USER_NOTE_UPDATE", id: closure_129_0 };
-            closure_130_1(closure_130_2[5]).dispatch(obj8);
-            c6 = 3;
+            const obj8 = { type: "USER_NOTE_UPDATE", id };
             const obj4 = closure_130_1(closure_130_2[5]);
+            obj4.dispatch(obj8);
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -73,50 +75,51 @@ let closure_7 = async function _fetchNote(userId) {
             return obj10;
           } else {
             body = value.body;
-            if (body.note_user_id === closure_129_0) {
-              const obj11 = { type: "USER_NOTE_UPDATE", id: closure_129_0, note: body.note };
-              closure_130_1(closure_130_2[5]).dispatch(obj11);
+            if (body.note_user_id !== id) {
+              const _Error = Error;
+              const self = this;
+              const self2 = this;
+              const error = new Error("Invalid response from server");
+              throw error;
+            } else {
+              const obj11 = { type: "USER_NOTE_UPDATE", id, note: body.note };
+              obj = closure_130_1(closure_130_2[5]);
+              obj.dispatch(obj11);
               c4 = 0;
-              const obj = closure_130_1(closure_130_2[5]);
             }
           }
-          const _Error = Error;
-          const error = new Error("Invalid response from server");
-          throw error;
+          c6 = 3;
+          return { value: "HermesInternal", done: null };
         }
-      } catch (tmp26) {
-        closure_3 = tmp26;
-        if (tmp4 === c4) {
-          c6 = tmp2;
-          throw tmp26;
+      } catch (tmp21) {
+        let closure_3 = tmp21;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp21;
         } else {
-          c5 = tmp;
+          c5 = 1;
         }
       }
     }
-  })();
+  });
+  return obj(...arguments);
 };
-const Endpoints = fn(1074).Endpoints;
-const size = fn(2);
+const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useNote.tsx");
 
 export default function useNote(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [NoteStore];
-  let stateFromStores = require("initialize").useStateFromStores(items, () => NoteStore.getNote(closure_0));
+  obj = require("get initialized");
+  let stateFromStores = obj.useStateFromStores(items, () => NoteStore.getNote(closure_0));
   const items1 = [stateFromStores, arg0];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    function fetchNote() {
+      return closure_1_7(...arguments);
+    }
     if (null == stateFromStores) {
-      (function fetchNote() {
-        const self = this;
-        const apply = closure_1_7.apply;
-        if (typeof apply === "unknown") {
-          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-        } else {
-          applyArgumentsResult = apply(self, arguments);
-        }
-        return applyArgumentsResult;
-      })(closure_0);
+      fetchNote(closure_0);
     }
   }, items1);
   if (stateFromStores == null) {

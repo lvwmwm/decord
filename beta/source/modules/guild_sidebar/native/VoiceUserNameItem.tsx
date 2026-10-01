@@ -5,22 +5,46 @@
 // Exports: default
 
 // Module 15756 (VoiceUserNameItem)
-import Text_Text from "Text/Text" /* 4832 */;
+import react_native from "react-native" /* 17 */;
+import intl2 from "intl" /* 1115 */;
+import UserUtilsDefault from "UserUtils" /* 4678 */;
 import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5084 */;
 import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9188 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import VoiceGuildTagDefault from "VoiceGuildTag" /* 15757 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsxs: metroRequire, jsx: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+let metroImportDefault;
+let metroRequire;
+const View = react_native.View;
+({ jsxs: metroRequire, jsx: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ container: { marginLeft: 8, flex: 1, flexDirection: "row" }, tag: { flexDirection: "row", alignItems: "center", paddingLeft: 8 }, measuringTag: { opacity: 0 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUserNameItem.tsx");
 
 export default function VoiceUserNameItem(arg0) {
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let color;
+  let guildId;
+  let isGuest;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let member;
+  let obj8;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp20;
+  let tmp8;
+  let user;
+  let variant;
   ({ member, user, isGuest } = arg0);
   c0 = undefined;
   c1 = undefined;
@@ -29,25 +53,27 @@ export default function VoiceUserNameItem(arg0) {
   ({ guildId, color, variant } = arg0);
   const tmp = closure_8();
   const obj = { userId: user.id, guildId };
-  const tmp4 = useDisplayNameStylesDefault({ userId: user.id, guildId });
-  const displayNameStylesFont = useDisplayNameStylesFont.useDisplayNameStylesFont({ displayNameStyles: tmp4 });
-  [tmp8, c0] = noop.useState(0);
-  const tmp7 = _slicedToArray(noop.useState(0), 2);
-  [tmp10, c1] = noop.useState(0);
-  const tmp9 = _slicedToArray(noop.useState(0), 2);
-  [tmp12, c2] = noop.useState(true);
-  const tmp11 = _slicedToArray(noop.useState(true), 2);
-  [tmp14, c3] = noop.useState(0);
-  const callback = noop.useCallback((nativeEvent) => {
+  const tmp4 = useDisplayNameStylesDefault(obj);
+  const obj2 = useDisplayNameStylesFont;
+  const displayNameStylesFont = obj2.useDisplayNameStylesFont({ displayNameStyles: tmp4 });
+  [tmp8, c0] = react.useState(0);
+  _slicedToArray(react.useState(0), 2);
+  [tmp10, c1] = react.useState(0);
+  _slicedToArray(react.useState(0), 2);
+  [tmp12, c2] = react.useState(true);
+  _slicedToArray(react.useState(true), 2);
+  [tmp14, c3] = react.useState(0);
+  _slicedToArray(react.useState(0), 2);
+  const callback = react.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);
-  const callback1 = noop.useCallback((nativeEvent) => {
+  const callback1 = react.useCallback((nativeEvent) => {
     _undefined2(nativeEvent.nativeEvent.layout.width);
   }, []);
-  const obj3 = { onLayout: callback, style: null, children: null };
-  const items = [tmp.container, ];
+  const obj3 = { onLayout: callback, style: items, children: items3 };
+  items = [tmp.container, ];
   let measuringTag = tmp12;
-  const callback2 = noop.useCallback((nativeEvent) => {
+  const callback2 = react.useCallback((nativeEvent) => {
     _undefined4(nativeEvent.nativeEvent.layout.width);
     _undefined3(false);
   }, []);
@@ -55,44 +81,39 @@ export default function VoiceUserNameItem(arg0) {
     measuringTag = tmp.measuringTag;
   }
   items[1] = measuringTag;
-  obj3.style = items;
-  const obj4 = { variant, color, lineClamp: 1, onLayout: callback1, style: null, children: null };
-  let tmp20 = null != displayNameStylesFont;
+  const obj4 = { variant, color, lineClamp: 1, onLayout: callback1, style: tmp20, children: items1 };
+  tmp20 = null != displayNameStylesFont;
+  const Text = tmp5(4832).Text;
   if (tmp20) {
+    tmp20 = { fontFamily: displayNameStylesFont };
     const obj5 = { fontFamily: displayNameStylesFont };
-    tmp20 = obj5;
   }
-  obj4.style = tmp20;
   let nick;
   if (member != null) {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = tmp2(4678).getName(user);
-    const tmp2Result = tmp2(4678);
+    const tmp2Result = UserUtilsDefault;
+    nick = tmp2Result.getName(user);
   }
-  const items1 = [nick, ];
+  items1 = [nick, ];
   if (isGuest) {
-    const obj6 = { variant: "text-sm/normal", lineClamp: 1, color: "status-positive", children: null };
+    const obj6 = { variant: "text-sm/normal", lineClamp: 1, color: "status-positive", children: items2 };
+    const Text2 = tmp5(4832).Text;
     const intl = tmp5(1115).intl;
-    const items2 = ["\u00A0", intl.string(tmp5(1115).t["pFO/Ph"])];
-    obj6.children = items2;
-    isGuest = tmp18(tmp5(4832).Text, obj6);
+    items2 = ["\u00A0", intl.string(intl2.t["pFO/Ph"])];
+    isGuest = tmp18(Text2, obj6);
   }
   items1[1] = isGuest;
-  obj4.children = items1;
-  const items3 = [timestampProducer(Text_Text.Text, obj4), ];
+  items3 = [metroRequire(Text, obj4), ];
   if (!tmp12) {
     tmp12 = 0 !== tmp8 && 0 !== tmp10 && 0 !== tmp14 && tmp8 >= tmp10 + tmp14;
-    const tmp22 = 0 !== tmp8 && 0 !== tmp10 && 0 !== tmp14 && tmp8 >= tmp10 + tmp14;
   }
   if (tmp12) {
-    const obj7 = { onLayout: callback2, style: tmp.tag, children: null };
-    const obj8 = { userId: user.id };
-    obj7.children = React5(tmp2(15757), obj8);
-    tmp12 = React5(tmp19, obj7);
+    const obj7 = { onLayout: callback2, style: tmp.tag, children: metroImportDefault(VoiceGuildTagDefault, obj8) };
+    obj8 = { userId: user.id };
+    tmp12 = metroImportDefault(tmp19, obj7);
   }
   items3[1] = tmp12;
-  obj3.children = items3;
-  return timestampProducer(View, obj3);
+  return metroRequire(View, obj3);
 };

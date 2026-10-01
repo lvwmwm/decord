@@ -5,6 +5,7 @@
 // Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
 
 // Module 6643 (OnboardingHomeUtils)
+import ChannelConstants from "ChannelConstants" /* 2052 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 5025 */;
 import useIsNewMemberDefault from "useIsNewMember" /* 6644 */;
@@ -12,82 +13,87 @@ import ImpersonateStore from "ImpersonateStore" /* 2101 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5023 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-require = fn;
-const Constants = fn(1074);
-({ GuildFeatures: closure_7, ME: closure_8 } = Constants);
-const ChannelFlags = fn(2052).ChannelFlags;
-const size = fn(2);
+let metroImportAll;
+let metroImportDefault;
+({ GuildFeatures: metroImportDefault, ME: metroImportAll } = Constants);
+const ChannelFlags = ChannelConstants.ChannelFlags;
 let result = size.fileFinishedImporting("modules/guild_onboarding_home/OnboardingHomeUtils.tsx");
 
 export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id) {
+  let closure_1;
   _require = guild_id;
   const tmp = useIsNewMemberDefault(guild_id);
   importDefault = tmp;
   const items = [ChannelStore, GuildStore, ImpersonateStore];
   const items1 = [guild_id, tmp];
-  return require("useStateFromStores").useStateFromStores(items, () => {
-    if (closure_0 !== React6) {
-      if (!obj3.isFavoritesGuildId(tmp2)) {
-        let has = GuildStore.getGuild(tmp2);
+  const obj = require("useStateFromStores");
+  return obj.useStateFromStores(items, () => {
+    if (guild_id !== metroImportAll) {
+      const obj3 = FavoritesUtils;
+      const tmp23 = require;
+      if (!obj3.isFavoritesGuildId(guild_id)) {
+        const guild = GuildStore.getGuild(tmp2);
         let hasItem;
-        if (has != null) {
-          const features = has.features;
-          hasItem = features.has(constants.COMMUNITY);
+        if (guild != null) {
+          const features = guild.features;
+          hasItem = features.has(metroImportDefault.COMMUNITY);
         }
-        if (!hasItem) {
-          return tmp7;
-        } else if (ImpersonateStore.isFullServerPreview(tmp2)) {
-          const id = has.id;
-          let newMemberActions = GuildOnboardingHomeSettingsStore.getNewMemberActions(id);
-          if (newMemberActions == null) {
-            newMemberActions = [];
-          }
-          let hasItem1 = newMemberActions.length > 0;
-          const enabled = GuildOnboardingHomeSettingsStore.getEnabled(id);
-          if (hasItem1) {
-            const features2 = has.features;
-            hasItem1 = features2.has(constants.COMMUNITY);
-          }
-          if (hasItem1) {
-            const features3 = has.features;
-            has = features3.has;
-            hasItem1 = !(has(constants.GUILD_ONBOARDING) && !enabled);
-            const tmp21 = has(constants.GUILD_ONBOARDING) && !enabled;
-          }
-          let result = hasItem1;
-        } else {
-          result = tmp23(6527).isGuildOnboardingSettingsAvailable(tmp2);
-          if (!result) {
-            result = guildHasOnboardingHomeDefault(has);
-          }
-          if (result) {
-            let tmp11 = closure_1;
-            if (!closure_1) {
-              const mutableGuildChannelsForGuild = ChannelStore.getMutableGuildChannelsForGuild(tmp2);
-              let flag = false;
-              const keys = Object.keys();
-              if (keys !== undefined) {
-                flag = false;
-                while (keys[tmp] !== undefined) {
-                  let obj4 = mutableGuildChannelsForGuild[tmp16];
-                  flag = true;
-                  if (obj4.hasFlag(ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
-                    break;
+        let tmp8 = hasItem;
+        if (tmp8) {
+          let result;
+          if (ImpersonateStore.isFullServerPreview(guild_id)) {
+            const id = guild.id;
+            let newMemberActions = GuildOnboardingHomeSettingsStore.getNewMemberActions(id);
+            const obj2 = GuildOnboardingHomeSettingsStore;
+            if (newMemberActions == null) {
+              newMemberActions = [];
+            }
+            let hasItem1 = newMemberActions.length > 0;
+            const enabled = obj2.getEnabled(id);
+            if (hasItem1) {
+              const features2 = guild.features;
+              hasItem1 = features2.has(metroImportDefault.COMMUNITY);
+            }
+            if (hasItem1) {
+              const features3 = guild.features;
+              hasItem1 = !(features3.has(metroImportDefault.GUILD_ONBOARDING) && !enabled);
+              features3.has(metroImportDefault.GUILD_ONBOARDING) && !enabled;
+            }
+            result = hasItem1;
+          } else {
+            const tmp23Result = tmp23(6527);
+            result = tmp23Result.isGuildOnboardingSettingsAvailable(tmp2) || guildHasOnboardingHomeDefault(guild);
+            if (result) {
+              let tmp12 = closure_1;
+              if (!tmp12) {
+                const mutableGuildChannelsForGuild = ChannelStore.getMutableGuildChannelsForGuild(tmp2);
+                let flag = false;
+                const keys = Object.keys();
+                if (keys !== undefined) {
+                  flag = false;
+                  while (keys[tmp] !== undefined) {
+                    let obj4 = mutableGuildChannelsForGuild[tmp17];
+                    flag = true;
+                    if (obj4.hasFlag(ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
+                      break;
+                    }
                   }
                 }
+                tmp12 = flag;
               }
-              tmp11 = flag;
+              result = tmp12;
             }
-            result = tmp11;
           }
-          const tmp23Result = tmp23(6527);
+          tmp8 = result;
         }
+        return tmp8;
       }
-      obj3 = FavoritesUtils;
-      tmp23 = require;
     }
     return false;
   }, items1);
@@ -97,38 +103,42 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
   if (null == guild) {
     return false;
   } else {
-    if (id !== React6) {
+    if (id !== metroImportAll) {
+      const obj3 = FavoritesUtils;
+      const tmp14 = require;
       if (!obj3.isFavoritesGuildId(id)) {
         if (tmp2) {
           id = guild.id;
           let newMemberActions = GuildOnboardingHomeSettingsStore.getNewMemberActions(id);
+          const obj2 = GuildOnboardingHomeSettingsStore;
           if (newMemberActions == null) {
             newMemberActions = [];
           }
           let hasItem = newMemberActions.length > 0;
-          const enabled = GuildOnboardingHomeSettingsStore.getEnabled(id);
+          const enabled = obj2.getEnabled(id);
           if (hasItem) {
             const features6 = guild.features;
-            hasItem = features6.has(constants.COMMUNITY);
+            hasItem = features6.has(metroImportDefault.COMMUNITY);
           }
           if (hasItem) {
             const features7 = guild.features;
-            hasItem = !(features7.has(constants.GUILD_ONBOARDING) && !enabled);
-            const tmp12 = features7.has(constants.GUILD_ONBOARDING) && !enabled;
+            hasItem = !(features7.has(metroImportDefault.GUILD_ONBOARDING) && !enabled);
+            features7.has(metroImportDefault.GUILD_ONBOARDING) && !enabled;
           }
           return hasItem;
         } else {
-          let result = tmp14(6527).isGuildOnboardingSettingsAvailable(id);
+          const tmp14Result = tmp14(6527);
+          let result = tmp14Result.isGuildOnboardingSettingsAvailable(id);
           if (result) {
             const features = guild.features;
-            result = features.has(constants.GUILD_ONBOARDING);
+            result = features.has(metroImportDefault.GUILD_ONBOARDING);
           }
           if (result) {
             const features2 = guild.features;
-            result = features2.has(constants.GUILD_SERVER_GUIDE);
+            result = features2.has(metroImportDefault.GUILD_SERVER_GUIDE);
           }
           const features3 = guild.features;
-          let hasItem1 = features3.has(constants.GUILD_ONBOARDING);
+          let hasItem1 = features3.has(metroImportDefault.GUILD_ONBOARDING);
           if (hasItem1) {
             const features4 = guild.features;
             hasItem1 = features4.has(tmp6.GUILD_SERVER_GUIDE);
@@ -143,8 +153,6 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           return hasItem1;
         }
       }
-      obj3 = FavoritesUtils;
-      tmp14 = require;
     }
     return false;
   }

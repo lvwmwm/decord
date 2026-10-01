@@ -5,14 +5,14 @@
 // Exports: IsWellFormedUnitIdentifier
 
 // Module 13708 (IsWellFormedUnitIdentifier)
-import IsSanctionedSimpleUnitIdentifier from "IsSanctionedSimpleUnitIdentifier" /* 13705 */;
+import SANCTIONED_UNITS from "SANCTIONED_UNITS" /* 13705 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const IsWellFormedUnitIdentifier = function IsWellFormedUnitIdentifier(GetOptionResult3) {
+  let tmp3;
+  let tmp4;
   const str = GetOptionResult3.replace(/([A-Z])/g, (arg0, str) => str.toLowerCase());
-  if (IsSanctionedSimpleUnitIdentifier.IsSanctionedSimpleUnitIdentifier(str)) {
+  if (SANCTIONED_UNITS.IsSanctionedSimpleUnitIdentifier(str)) {
     return true;
   } else {
     const parts = str.split("-per-");
@@ -20,8 +20,8 @@ export const IsWellFormedUnitIdentifier = function IsWellFormedUnitIdentifier(Ge
       return false;
     } else {
       [tmp3, tmp4] = parts;
-      if (tmp(13705).IsSanctionedSimpleUnitIdentifier(tmp3)) {
-        if (tmp(13705).IsSanctionedSimpleUnitIdentifier(tmp4)) {
+      if (SANCTIONED_UNITS.IsSanctionedSimpleUnitIdentifier(tmp3)) {
+        if (SANCTIONED_UNITS.IsSanctionedSimpleUnitIdentifier(tmp4)) {
           return true;
         }
       }

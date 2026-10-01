@@ -5,21 +5,23 @@
 // Exports: useIsStreamFocused
 
 // Module 8935 (useIsStreamFocused)
+import CallConstants from "CallConstants" /* 4857 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const isStreamParticipant = fn(4857).isStreamParticipant;
-const size = fn(2);
+const isStreamParticipant = CallConstants.isStreamParticipant;
 const result = size.fileFinishedImporting("modules/video_calls/useIsStreamFocused.tsx");
 
 export const useIsStreamFocused = function useIsStreamFocused(id) {
   _require = id;
   const items = [ChannelRTCStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let selectedParticipant = null;
-    if (null != closure_0) {
+    if (null != id) {
       selectedParticipant = ChannelRTCStore.getSelectedParticipant(tmp);
     }
     return selectedParticipant;

@@ -5,27 +5,33 @@
 // Exports: default
 
 // Module 15491 (useAuthorizedSlayerApplications)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6528 */;
 import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6591 */;
-import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6528 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const AuthorizedAppsStore = AuthorizedAppsStore2;
+let _require;
 
-const require = fn;
-const FetchState = fn(6528).FetchState;
-const size = fn(2);
+const FetchState = AuthorizedAppsStore2.FetchState;
 const result = size.fileFinishedImporting("modules/user_settings/authorized_apps/useAuthorizedSlayerApplications.tsx");
 
 export default function useAuthorizedSlayerApplications(arg0, arg1) {
+  let closure_0;
+  let fetchState;
+  let stateFromStores1;
   _require = arg0;
-  closure_1 = arg1;
+  let closure_1 = arg1;
+  let obj = require("get initialized");
   let items = [AuthorizedAppsStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => fetchState.getFetchState());
-  let obj = require("initialize");
+  const stateFromStores = obj.useStateFromStores(items, () => fetchState.getFetchState());
   const items1 = [AuthorizedAppsStore];
-  stateFromStores1 = require("initialize").useStateFromStores(items1, () => {
+  const obj2 = require("get initialized");
+  stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    let newestTokensForNonChildrenApplications;
     if (closure_0) {
-      let newestTokensForNonChildrenApplications = obj.getNewestTokensForNonChildrenApplications();
+      newestTokensForNonChildrenApplications = obj.getNewestTokensForNonChildrenApplications();
     } else {
       newestTokensForNonChildrenApplications = obj.getNewestTokens();
     }
@@ -33,27 +39,31 @@ export default function useAuthorizedSlayerApplications(arg0, arg1) {
   });
   const items2 = [stateFromStores1];
   const items3 = [arg1];
-  const slayerSdkApplications = noop.useMemo(() => {
+  const slayerSdkApplications = react.useMemo(() => {
+    let items;
+    const arr = stateFromStores1;
     if (null == stateFromStores1) {
-      let items = [];
+      items = [];
     } else {
-      const found = stateFromStores1.filter((application) => closure_1_0(stateFromStores1[3]).isSocialLayerSDKAuthorization(application.application, application.scopes));
+      const found = arr.filter((application) => {
+        const obj = closure_1_0(stateFromStores1[3]);
+        return obj.isSocialLayerSDKAuthorization(application.application, application.scopes);
+      });
       items = found.map((application) => application.application);
     }
     return items;
   }, items2);
-  const effect = noop.useEffect(() => {
-    if (!closure_1) {
-      const response = AuthorizedAppsActionCreatorsDefault.fetch();
+  const effect = react.useEffect(() => {
+    const tmp = closure_1;
+    if (!tmp) {
+      const obj = AuthorizedAppsActionCreatorsDefault;
+      const response = obj.fetch();
     }
   }, items3);
   let showLoadingIndicator = stateFromStores !== FetchState.FETCHED;
   if (showLoadingIndicator) {
-    let tmp6 = null == stateFromStores1;
-    if (!tmp6) {
-      tmp6 = 0 === stateFromStores1.length;
-    }
-    showLoadingIndicator = tmp6;
+    showLoadingIndicator = null == stateFromStores1 || 0 === stateFromStores1.length;
+    const tmp6 = null == stateFromStores1 || 0 === stateFromStores1.length;
   }
   return { showLoadingIndicator, slayerSdkApplications };
 };

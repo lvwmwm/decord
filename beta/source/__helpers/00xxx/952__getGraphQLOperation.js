@@ -5,10 +5,13 @@
 // Exports: getRequestPayloadXhrOrFetch, parseGraphQLQuery
 
 // Module 952 (_getGraphQLOperation)
-import triggerHandlers from "triggerHandlers" /* 898 */;
+import _addMeasureSpans from "_addMeasureSpans" /* 898 */;
 import registerSpanErrorInstrumentation from "module_682" /* 682 */;
 
+let endpoints;
+
 function _getGraphQLOperation(operationName) {
+  let query;
   let tmp = typeof operationName === "object";
   let tmp2 = tmp;
   if (typeof operationName === "object") {
@@ -50,18 +53,20 @@ function _getGraphQLOperation(operationName) {
       tmp = typeof operationName.query === "string";
     }
     if (tmp) {
+      let obj;
+      let combined;
       ({ query, operationName } = operationName);
       const match = query.match(/^(?:\s*)(query|mutation|subscription)(?:\s*)(\w+)(?:\s*)[{(]/);
       if (match) {
+        obj = { operationType: match[1], operationName: match[2] };
         const obj2 = { operationType: match[1], operationName: match[2] };
-        let obj = obj2;
       } else {
         const match1 = query.match(/^(?:\s*)(query|mutation|subscription)(?:\s*)[{(]/);
         if (match1) {
+          obj = { operationType: match1[1], operationName: "a" };
           const obj3 = { operationType: match1[1], operationName: "a" };
-          obj = obj3;
         } else {
-          obj = { operationType: "Array", operationName: "flex" };
+          obj = { operationType: "Array", operationName: "channel" };
         }
       }
       let operationName2 = obj.operationName;
@@ -71,7 +76,7 @@ function _getGraphQLOperation(operationName) {
       const operationType = obj.operationType;
       const _HermesInternal = HermesInternal;
       if (operationName2) {
-        let combined = concat(operationType, " ", operationName2);
+        combined = concat(operationType, " ", operationName2);
       } else {
         combined = concat(operationType);
       }
@@ -125,14 +130,14 @@ function isPersistedRequest(operationName) {
 }
 function getGraphQLRequestPayload(arg0) {
   try {
+    let tmp8;
     const _JSON = JSON;
     const parsed = JSON.parse(arg0);
     if (isStandardRequest(parsed)) {
-      const tmp9 = parsed;
+      tmp8 = parsed;
     }
-    return tmp9;
+    return tmp8;
   } catch (err) {
-    return tmp;
   }
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
@@ -140,54 +145,63 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 export { _getGraphQLOperation };
 export { getGraphQLRequestPayload };
 export const getRequestPayloadXhrOrFetch = function getRequestPayloadXhrOrFetch(input) {
+  let first1;
   if ("xhr" in input) {
-    const tmp7 = input.xhr[triggerHandlers.SENTRY_XHR_DATA_KEY];
+    const tmp7 = input.xhr[_addMeasureSpans.SENTRY_XHR_DATA_KEY];
     let first = tmp7;
-    if (tmp7) {
-      first = tmp5(898).getBodyString(tmp7.body)[0];
+    const tmp5 = require;
+    if (first) {
       const tmp5Result = tmp5(898);
+      first = tmp5Result.getBodyString(tmp7.body)[0];
     }
-    let first1 = first;
-    tmp5 = require;
+    first1 = first;
   } else {
-    const fetchRequestArgBody = triggerHandlers.getFetchRequestArgBody(input.input);
-    first1 = triggerHandlers.getBodyString(fetchRequestArgBody)[0];
+    const obj = _addMeasureSpans;
+    const fetchRequestArgBody = obj.getFetchRequestArgBody(input.input);
+    const obj2 = _addMeasureSpans;
+    first1 = obj2.getBodyString(fetchRequestArgBody)[0];
   }
   return first1;
 };
 export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineIntegration((arg0) => {
-  closure_0 = arg0;
-  return {
+  let closure_0 = arg0;
+  let obj = {
     name: "GraphQLClient",
     setup(on) {
       on.on("beforeOutgoingRequestSpan", (updateName, input) => {
-        const tmp3 = closure_0(682).spanToJSON(updateName).data || {};
-        if ("http.client" === tmp3[closure_0(undefined, 682).SEMANTIC_ATTRIBUTE_SENTRY_OP]) {
-          const tmp4 = tmp3[tmp(undefined, 682).SEMANTIC_ATTRIBUTE_URL_FULL] || tmp3["http.url"];
-          const tmp5 = tmp3[tmp(undefined, 682).SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD] || tmp3["http.method"];
+        const obj = closure_2_0(closure_2_1[0]);
+        const tmp3 = obj.spanToJSON(updateName).data || {};
+        if ("http.client" === tmp3[closure_2_0(undefined, closure_2_1[0]).SEMANTIC_ATTRIBUTE_SENTRY_OP]) {
+          const tmp4 = tmp3[closure_2_0(undefined, closure_2_1[0]).SEMANTIC_ATTRIBUTE_URL_FULL] || tmp3["http.url"];
+          const tmp5 = tmp3[closure_2_0(undefined, closure_2_1[0]).SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD] || tmp3["http.method"];
+          const tmpResult = closure_2_0(closure_2_1[0]);
           if (tmpResult.isString(tmp4)) {
+            const tmpResult6 = closure_2_0(closure_2_1[0]);
             if (tmpResult6.isString(tmp5)) {
-              const result = tmp(682).stringMatchesSomePattern(tmp4, closure_0.endpoints);
+              let first1;
+              endpoints = endpoints.endpoints;
+              const tmpResult7 = closure_2_0(closure_2_1[0]);
+              const result = tmpResult7.stringMatchesSomePattern(tmp4, endpoints);
               if ("xhr" in input) {
-                const tmp11 = input.xhr[tmp(undefined, 898).SENTRY_XHR_DATA_KEY];
+                const tmp11 = input.xhr[closure_2_0(undefined, closure_2_1[1]).SENTRY_XHR_DATA_KEY];
                 let first = tmp11;
-                if (tmp11) {
-                  first = tmp(898).getBodyString(tmp11.body)[0];
-                  const tmpResult8 = tmp(898);
+                if (first) {
+                  const tmpResult8 = closure_2_0(closure_2_1[1]);
+                  first = tmpResult8.getBodyString(tmp11.body)[0];
                 }
-                let first1 = first;
+                first1 = first;
               } else {
-                const fetchRequestArgBody = tmp(898).getFetchRequestArgBody(input.input);
-                const tmpResult9 = tmp(898);
-                first1 = tmp(898).getBodyString(fetchRequestArgBody)[0];
-                const tmpResult10 = tmp(898);
+                const tmpResult9 = closure_2_0(closure_2_1[1]);
+                const fetchRequestArgBody = tmpResult9.getFetchRequestArgBody(input.input);
+                const tmpResult10 = closure_2_0(closure_2_1[1]);
+                first1 = tmpResult10.getBodyString(fetchRequestArgBody)[0];
               }
               if (result) {
                 if (first1) {
-                  const tmp14 = getGraphQLRequestPayload(first1);
+                  const tmp14 = closure_2_5(first1);
                   if (tmp14) {
                     const _HermesInternal = HermesInternal;
-                    updateName.updateName("" + tmp5 + " " + tmp4 + " (" + _getGraphQLOperation(tmp14) + ")");
+                    updateName.updateName("" + tmp5 + " " + tmp4 + " (" + closure_2_2(tmp14) + ")");
                     let tmp20 = typeof tmp14 === "object";
                     let tmp21 = tmp20;
                     if (typeof tmp14 === "object") {
@@ -234,43 +248,45 @@ export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineI
                   }
                 }
               }
-              const tmpResult7 = tmp(682);
             }
-            tmpResult6 = tmp(682);
           }
-          tmpResult = tmp(682);
         }
       });
       on.on("beforeOutgoingRequestBreadcrumb", (type, input) => {
+        let category;
+        let data;
         ({ category, data } = type);
         if ("http" === type.type) {
           if ("fetch" === category) {
+            let first1;
             let url;
             if (data != null) {
               url = data.url;
             }
-            const result = closure_0(682).stringMatchesSomePattern(url, closure_0.endpoints);
+            endpoints = endpoints.endpoints;
+            const obj = closure_2_0(closure_2_1[0]);
+            const result = obj.stringMatchesSomePattern(url, endpoints);
             if ("xhr" in input) {
-              const tmp10 = input.xhr[tmp5(undefined, 898).SENTRY_XHR_DATA_KEY];
+              const tmp10 = input.xhr[closure_2_0(undefined, closure_2_1[1]).SENTRY_XHR_DATA_KEY];
               let first = tmp10;
-              if (tmp10) {
-                first = tmp5(898).getBodyString(tmp10.body)[0];
-                const tmp5Result = tmp5(898);
+              if (first) {
+                const tmp5Result = closure_2_0(closure_2_1[1]);
+                first = tmp5Result.getBodyString(tmp10.body)[0];
               }
-              let first1 = first;
+              first1 = first;
             } else {
-              const fetchRequestArgBody = tmp5(898).getFetchRequestArgBody(input.input);
-              const tmp5Result3 = tmp5(898);
-              first1 = tmp5(898).getBodyString(fetchRequestArgBody)[0];
-              const tmp5Result4 = tmp5(898);
+              const tmp5Result3 = closure_2_0(closure_2_1[1]);
+              const fetchRequestArgBody = tmp5Result3.getFetchRequestArgBody(input.input);
+              const tmp5Result4 = closure_2_0(closure_2_1[1]);
+              first1 = tmp5Result4.getBodyString(fetchRequestArgBody)[0];
             }
             if (result) {
               if (data) {
                 if (first1) {
-                  const tmp13 = getGraphQLRequestPayload(first1);
+                  const tmp13 = closure_2_5(first1);
                   if (!data.graphql) {
                     if (tmp13) {
-                      data["graphql.operation"] = _getGraphQLOperation(tmp13);
+                      data["graphql.operation"] = closure_2_2(tmp13);
                       let tmp15 = typeof tmp13 === "object";
                       let tmp16 = tmp15;
                       if (typeof tmp13 === "object") {
@@ -319,25 +335,25 @@ export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineI
                 }
               }
             }
-            const obj = closure_0(682);
           }
         }
       });
     }
   };
+  return obj;
 });
 export const parseGraphQLQuery = function parseGraphQLQuery(str) {
   const match = str.match(/^(?:\s*)(query|mutation|subscription)(?:\s*)(\w+)(?:\s*)[{(]/);
   if (match) {
-    const obj2 = { operationType: match[1], operationName: match[2] };
-    return obj2;
+    return { operationType: match[1], operationName: match[2] };
   } else {
+    let obj;
     const match1 = str.match(/^(?:\s*)(query|mutation|subscription)(?:\s*)[{(]/);
     if (match1) {
+      obj = { operationType: match1[1], operationName: "a" };
       const obj3 = { operationType: match1[1], operationName: "a" };
-      let obj = obj3;
     } else {
-      obj = { operationType: "Array", operationName: "flex" };
+      obj = { operationType: "Array", operationName: "channel" };
     }
     return obj;
   }

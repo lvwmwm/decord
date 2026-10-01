@@ -5,4 +5,4 @@
 
 // Module 6255
 
-export (arg0) => arg0
+export const useBottomSheetSpringConfigs = (arg0) => arg0;

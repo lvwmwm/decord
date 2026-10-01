@@ -5,9 +5,13 @@
 // Exports: default
 
 // Module 11645 (AppLauncherCommandOption)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1484 */;
 import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 5828 */;
 import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 11646 */;
+import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 11652 */;
+import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 11654 */;
 import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 11657 */;
 import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 11659 */;
 import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 11660 */;
@@ -15,303 +19,384 @@ import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListAct
 import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 11665 */;
 import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 11666 */;
 import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 11672 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-let closure_4 = fn(1484).AppLauncherOptionAutoFocusType;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { dismissableOptionWrapper: { flexDirection: "row", alignItems: "center" }, optionViewContainer: { flex: 1 }, dismissButton: { marginLeft: 8, marginRight: -4, padding: 4, borderRadius: nativeDefault.radii.round }, option: { flex: 1 } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+const View = react_native.View;
+let closure_4 = AppLauncherNativeConstants.AppLauncherOptionAutoFocusType;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { dismissableOptionWrapper: { flexDirection: "row", alignItems: "center" }, optionViewContainer: { flex: 1 }, dismissButton: obj2, option: { flex: 1 } };
+obj2 = { marginLeft: 8, marginRight: -4, padding: 4, borderRadius: nativeDefault.radii.round };
+let closure_7 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/app_launcher/native/options/AppLauncherCommandOption.tsx");
 
 export default function AppLauncherCommandOption(option) {
-  let name = option.option;
+  let autoFocusType;
+  let channel;
+  let command;
+  let first;
+  let first1;
+  let first2;
+  let first3;
+  let first4;
+  let first5;
+  let first6;
+  let first7;
+  let hasError;
+  let items;
+  let items1;
+  let onFocus;
+  let onPress;
+  let onPressAttachmentOption;
+  let optionValues;
+  let tmp49;
+  let tmp62Result;
+  option = option.option;
   ({ onStartEditing: importDefault, onEndEditing: dependencyMap, onOptionValueChange: View, onPress } = option);
   const onDismiss = option.onDismiss;
   ({ channel, autoFocusType, optionValues, hasError } = option);
   ({ onPressAttachmentOption, onFocus, command } = option);
-  const tmp = closure_7();
-  let type = name.type;
-  if (name(1979).ApplicationCommandOptionType.STRING !== type) {
+  let tmp = closure_7();
+  let type = option.type;
+  let tmp2 = option;
+  let tmp3 = dependencyMap;
+  if (option(1979).ApplicationCommandOptionType.STRING !== type) {
     if (tmp2(1979).ApplicationCommandOptionType.INTEGER !== type) {
+      let tmp28Result;
+      let tmp13;
       if (tmp2(1979).ApplicationCommandOptionType.NUMBER !== type) {
         if (tmp2(1979).ApplicationCommandOptionType.ATTACHMENT === type) {
           let obj2 = {
             style: tmp.option,
-            option: name,
+            option,
             onSelectAttachment(text) {
-                      dependencyMap(name);
+                      let items1;
+                      dependencyMap(option);
+                      const tmp = option;
+                      const tmp3 = View;
                       if (null != text) {
+                        const items = [{ type: "text", text }];
+                        items1 = items;
                         const obj = { type: "text", text };
-                        const items = [obj];
-                        let items1 = items;
                       } else {
                         items1 = [];
                       }
-                      View(name, items1);
+                      tmp3(tmp, items1);
                     },
             channel,
             autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED,
             hasError,
             onPress: onPressAttachmentOption
           };
-          let tmp28Result = onDismiss(AppLauncherAttachmentOptionDefault, obj2, name.name);
-          let tmp13 = onDismiss;
+          tmp28Result = onDismiss(AppLauncherAttachmentOptionDefault, obj2, option.name);
+          tmp13 = onDismiss;
         } else if (tmp2(1979).ApplicationCommandOptionType.BOOLEAN === type) {
-          let obj3 = { style: tmp.option, option: name, initialValue: null, onPress: null, hasError: null };
-          let first;
-          if (optionValues.current[name.name] != null) {
+          let obj3 = {
+            style: tmp.option,
+            option,
+            initialValue: first,
+            onPress(arg0) {
+                      onPress();
+                      dependencyMap(option);
+                      const items = [{ type: "text", text: arg0.toString() }];
+                      ({ type: "text", text: arg0.toString() });
+                      View(option, items);
+                    },
+            hasError
+          };
+          first = undefined;
+          const tmp37 = AppLauncherBooleanOptionDefault;
+          if (optionValues.current[option.name] != null) {
             first = tmp38[0];
           }
-          obj3.initialValue = first;
-          obj3.onPress = function onPress(arg0) {
-            onPress();
-            dependencyMap(name);
-            const items = [{ type: "text", text: arg0.toString() }];
-            View(name, items);
-          };
-          obj3.hasError = hasError;
-          tmp28Result = tmp35(AppLauncherBooleanOptionDefault, obj3, name.name);
+          tmp28Result = tmp35(tmp37, obj3, option.name);
           tmp13 = tmp35;
         } else if (tmp2(1979).ApplicationCommandOptionType.MENTIONABLE === type) {
-          let obj4 = { option: name, initialValue: null, onMentionablePress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
-          let first1;
-          if (optionValues.current[name.name] != null) {
+          let obj4 = {
+            option,
+            initialValue: first1,
+            onMentionablePress(mentionable) {
+                      mentionable = mentionable.mentionable;
+                      if (null != mentionable) {
+                        const type = mentionable.type;
+                        if (AppLauncherMentionableListActionSheet.MentionableItemTypes.USER === type) {
+                          const items = [{ type: "userMention", userId: mentionable.result.user.id }];
+                          const obj2 = { type: "userMention", userId: mentionable.result.user.id };
+                          View(option, items);
+                        } else if (AppLauncherMentionableListActionSheet.MentionableItemTypes.ROLE === type) {
+                          const items1 = [{ type: "roleMention", roleId: mentionable.result.id }];
+                          const obj3 = { type: "roleMention", roleId: mentionable.result.id };
+                          View(option, items1);
+                        } else if (AppLauncherMentionableListActionSheet.MentionableItemTypes.GLOBAL === type) {
+                          const result = mentionable.result;
+                          const text = result.text;
+                          const obj4 = utils_AutocompleteUtilsDefault;
+                          if (text === obj4.MENTION_EVERYONE().text) {
+                            const items2 = [{ type: "textMention", text: "@everyone" }];
+                            View(option, items2);
+                          } else {
+                            const items3 = [{ type: "text", text: result.text }];
+                            const obj = { type: "text", text: result.text };
+                            View(option, items3);
+                          }
+                        }
+                      } else {
+                        View(option, []);
+                      }
+                    },
+            onActionSheetDismiss() {
+                      return dependencyMap(option);
+                    },
+            channel,
+            autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED,
+            hasError,
+            onPress
+          };
+          first1 = undefined;
+          const tmp30 = AppLauncherMentionableOptionDefault;
+          if (optionValues.current[option.name] != null) {
             first1 = tmp31[0];
           }
-          obj4.initialValue = first1;
-          obj4.onMentionablePress = function onMentionablePress(mentionable) {
-            mentionable = mentionable.mentionable;
-            if (null != mentionable) {
-              const type = mentionable.type;
-              if (AppLauncherMentionableListActionSheet.MentionableItemTypes.USER === type) {
-                const obj2 = { type: "userMention", userId: mentionable.result.user.id };
-                const items = [obj2];
-                View(name, items);
-              } else if (tmp4(11662).MentionableItemTypes.ROLE === type) {
-                const obj3 = { type: "roleMention", roleId: mentionable.result.id };
-                const items1 = [obj3];
-                View(name, items1);
-              } else if (tmp4(11662).MentionableItemTypes.GLOBAL === type) {
-                const result = mentionable.result;
-                if (result.text === obj4.MENTION_EVERYONE().text) {
-                  const items2 = [{ type: "textMention", text: "@everyone" }];
-                  View(name, items2);
-                } else {
-                  const obj = { type: "text", text: result.text };
-                  const items3 = [obj];
-                  View(name, items3);
-                }
-                obj4 = utils_AutocompleteUtilsDefault;
-              }
-            } else {
-              View(name, []);
-            }
-          };
-          obj4.onActionSheetDismiss = function onActionSheetDismiss() {
-            return dependencyMap(name);
-          };
-          obj4.channel = channel;
-          obj4.autoFocus = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
-          obj4.hasError = hasError;
-          obj4.onPress = onPress;
-          tmp28Result = tmp28(AppLauncherMentionableOptionDefault, obj4);
+          tmp28Result = tmp28(tmp30, obj4);
           tmp13 = tmp28;
         } else if (tmp2(1979).ApplicationCommandOptionType.ROLE === type) {
-          const obj5 = { style: tmp.option, option: name, initialValue: null, onRolePress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
-          let first2;
-          if (optionValues.current[name.name] != null) {
+          const obj5 = {
+            style: tmp.option,
+            option,
+            initialValue: first2,
+            onRolePress(role) {
+                      let items;
+                      role = role.role;
+                      const tmp = View;
+                      const tmp2 = option;
+                      if (null == role) {
+                        items = [];
+                      } else {
+                        items = [{ type: "roleMention", roleId: role.id }];
+                        const obj = { type: "roleMention", roleId: role.id };
+                      }
+                      tmp(tmp2, items);
+                    },
+            onActionSheetDismiss() {
+                      dependencyMap(option);
+                    },
+            channel,
+            autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED,
+            hasError,
+            onPress
+          };
+          first2 = undefined;
+          const tmp23 = AppLauncherRoleOptionDefault;
+          if (optionValues.current[option.name] != null) {
             first2 = tmp24[0];
           }
-          obj5.initialValue = first2;
-          obj5.onRolePress = function onRolePress(role) {
-            role = role.role;
-            if (null == role) {
-              let items = [];
-            } else {
-              const obj = { type: "roleMention", roleId: role.id };
-              items = [obj];
-            }
-            View(name, items);
-          };
-          obj5.onActionSheetDismiss = function onActionSheetDismiss() {
-            dependencyMap(name);
-          };
-          obj5.channel = channel;
-          obj5.autoFocus = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
-          obj5.hasError = hasError;
-          obj5.onPress = onPress;
-          tmp28Result = tmp21(AppLauncherRoleOptionDefault, obj5, name.name);
+          tmp28Result = tmp21(tmp23, obj5, option.name);
           tmp13 = tmp21;
         } else if (tmp2(1979).ApplicationCommandOptionType.USER === type) {
-          const obj6 = { style: tmp.option, option: name, initialValue: null, onUserPress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
-          let first3;
-          if (optionValues.current[name.name] != null) {
+          const obj6 = {
+            style: tmp.option,
+            option,
+            initialValue: first3,
+            onUserPress(user) {
+                      let items;
+                      user = user.user;
+                      const tmp = View;
+                      const tmp2 = option;
+                      if (null == user) {
+                        items = [];
+                      } else {
+                        let id = user;
+                        if (typeof user !== "string") {
+                          id = user.id;
+                        }
+                        items = [{ type: "userMention", userId: id }];
+                        const obj = { type: "userMention", userId: id };
+                      }
+                      tmp(tmp2, items);
+                    },
+            onActionSheetDismiss() {
+                      return dependencyMap(option);
+                    },
+            channel,
+            autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED,
+            hasError,
+            onPress
+          };
+          first3 = undefined;
+          const tmp16 = AppLauncherUserOptionDefault;
+          if (optionValues.current[option.name] != null) {
             first3 = tmp17[0];
           }
-          obj6.initialValue = first3;
-          obj6.onUserPress = function onUserPress(user) {
-            user = user.user;
-            if (null == user) {
-              let items = [];
-            } else {
-              let id = user;
-              if (typeof user !== "string") {
-                id = user.id;
-              }
-              const obj = { type: "userMention", userId: id };
-              items = [obj];
-            }
-            View(name, items);
-          };
-          obj6.onActionSheetDismiss = function onActionSheetDismiss() {
-            return dependencyMap(name);
-          };
-          obj6.channel = channel;
-          obj6.autoFocus = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
-          obj6.hasError = hasError;
-          obj6.onPress = onPress;
-          tmp28Result = tmp14(AppLauncherUserOptionDefault, obj6, name.name);
+          tmp28Result = tmp14(tmp16, obj6, option.name);
           tmp13 = tmp14;
         } else if (tmp2(1979).ApplicationCommandOptionType.CHANNEL === type) {
-          let obj = { style: tmp.option, option: name, initialValue: null, onChannelPress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
-          let first4;
-          if (optionValues.current[name.name] != null) {
+          let obj = {
+            style: tmp.option,
+            option,
+            initialValue: first4,
+            onChannelPress(channel) {
+                      let items1;
+                      channel = channel.channel;
+                      const tmp = View;
+                      const tmp2 = option;
+                      if (null != channel) {
+                        const items = [{ type: "channelMention", channelId: channel.id }];
+                        items1 = items;
+                        const obj = { type: "channelMention", channelId: channel.id };
+                      } else {
+                        items1 = [];
+                      }
+                      tmp(tmp2, items1);
+                    },
+            onActionSheetDismiss() {
+                      dependencyMap(option);
+                    },
+            channel,
+            autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED,
+            hasError,
+            onPress
+          };
+          first4 = undefined;
+          const tmp7 = AppLauncherChannelOptionDefault;
+          if (optionValues.current[option.name] != null) {
             first4 = tmp8[0];
           }
-          obj.initialValue = first4;
-          obj.onChannelPress = function onChannelPress(channel) {
-            channel = channel.channel;
-            if (null != channel) {
-              const obj = { type: "channelMention", channelId: channel.id };
-              const items = [obj];
-              let items1 = items;
-            } else {
-              items1 = [];
-            }
-            View(name, items1);
-          };
-          obj.onActionSheetDismiss = function onActionSheetDismiss() {
-            dependencyMap(name);
-          };
-          obj.channel = channel;
-          obj.autoFocus = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
-          obj.hasError = hasError;
-          obj.onPress = onPress;
-          tmp28Result = tmp5(AppLauncherChannelOptionDefault, obj, name.name);
+          tmp28Result = tmp5(tmp7, obj, option.name);
           tmp13 = tmp5;
         } else {
           return null;
         }
-        let tmp62 = tmp28Result;
-        if (null != onDismiss) {
-          const obj7 = { style: tmp.dismissableOptionWrapper, children: null };
-          const obj8 = { style: tmp.optionViewContainer, children: tmp28Result };
-          let items = [tmp13(View, obj8), ];
-          const obj9 = {
-            style: tmp.dismissButton,
-            onPress() {
-                      return onDismiss(name);
-                    },
-            children: tmp13(tmp2(6034).CircleXIcon, { size: "md" })
-          };
-          items[1] = tmp13(tmp2(5435).PressableOpacity, obj9);
-          obj7.children = items;
-          tmp62 = closure_6(View, obj7);
-        }
-        return tmp62;
       }
+      let tmp61 = tmp28Result;
+      if (null != onDismiss) {
+        const obj7 = { style: tmp.dismissableOptionWrapper, children: items };
+        const obj8 = { style: tmp.optionViewContainer, children: tmp28Result };
+        items = [tmp13(View, obj8), ];
+        const obj9 = {
+          style: tmp.dismissButton,
+          onPress() {
+                  return onDismiss(option);
+                },
+          children: tmp13(tmp2(6034).CircleXIcon, { size: "md" })
+        };
+        const PressableOpacity = tmp2(5435).PressableOpacity;
+        items[1] = tmp13(PressableOpacity, obj9);
+        tmp61 = closure_6(View, obj7);
+      }
+      return tmp61;
     }
   }
-  let tmp44 = null;
-  if (null != name.choices) {
-    const obj10 = { style: tmp.option, option: name, initialValue: null, onSelect: null, onOpenChoicesSheet: null, onDismissChoicesSheet: null, autoFocus: null, hasError: null };
-    let first5;
-    if (optionValues.current[name.name] != tmp44) {
-      first5 = tmp58[0];
+  if (null != option.choices) {
+    const obj10 = {
+      style: tmp.option,
+      option,
+      initialValue: first5,
+      onSelect(displayName) {
+          dependencyMap(option);
+          let str;
+          const tmp = option;
+          const tmp3 = View;
+          if (displayName != null) {
+            str = displayName.displayName;
+          }
+          if (str == null) {
+            str = "";
+          }
+          const items = [{ type: "text", text: str }];
+          tmp3(tmp, items);
+        },
+      onOpenChoicesSheet() {
+          onPress();
+          importDefault(option);
+        },
+      onDismissChoicesSheet() {
+          return dependencyMap(option);
+        },
+      autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED,
+      hasError
+    };
+    first5 = undefined;
+    const tmp56 = AppLauncherChoicesOptionDefault;
+    if (optionValues.current[option.name] != null) {
+      first5 = tmp57[0];
     }
-    obj10.initialValue = first5;
-    obj10.onSelect = function onSelect(displayName) {
-      dependencyMap(name);
-      let str;
-      if (displayName != null) {
-        str = displayName.displayName;
-      }
-      if (str == null) {
-        str = "";
-      }
-      const items = [{ type: "text", text: str }];
-      View(name, items);
+    tmp62Result = tmp54(tmp56, obj10, option.name);
+    tmp49 = tmp54;
+  } else if (option.autocomplete) {
+    const obj11 = {
+      style: tmp.option,
+      channel,
+      option,
+      activeCommand: command,
+      optionValues,
+      initialValue: first6,
+      autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED,
+      onSelect(displayName) {
+          dependencyMap(option);
+          let str;
+          const tmp = option;
+          const tmp3 = View;
+          if (displayName != null) {
+            str = displayName.displayName;
+          }
+          if (str == null) {
+            str = "";
+          }
+          const items = [{ type: "text", text: str }];
+          tmp3(tmp, items);
+        },
+      onOpenAutocompleteSheet() {
+          onPress();
+          importDefault(option);
+        },
+      onDismissAutocompleteSheet() {
+          return dependencyMap(option);
+        },
+      hasError
     };
-    obj10.onOpenChoicesSheet = function onOpenChoicesSheet() {
-      onPress();
-      importDefault(name);
-    };
-    obj10.onDismissChoicesSheet = function onDismissChoicesSheet() {
-      return dependencyMap(name);
-    };
-    optionValues = onPress.OPTIONAL_OPTION_ADDED;
-    tmp44 = autoFocusType === optionValues;
-    obj10.autoFocus = tmp44;
-    obj10.hasError = hasError;
-    name = name.name;
-    onDismiss(AppLauncherChoicesOptionDefault, obj10, name);
-  } else if (name.autocomplete) {
-    const obj11 = { style: tmp.option, channel, option: name, activeCommand: command, optionValues, initialValue: null, autoFocus: null, onSelect: null, onOpenAutocompleteSheet: null, onDismissAutocompleteSheet: null, hasError: null };
-    let first6;
-    if (optionValues.current[name.name] != tmp44) {
-      first6 = tmp52[0];
+    first6 = undefined;
+    const tmp63Result = AppLauncherAutocompleteOptionDefault;
+    if (optionValues.current[option.name] != null) {
+      first6 = tmp51[0];
     }
-    obj11.initialValue = first6;
-    obj11.autoFocus = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
-    obj11.onSelect = function onSelect(displayName) {
-      dependencyMap(name);
-      let str;
-      if (displayName != null) {
-        str = displayName.displayName;
-      }
-      if (str == null) {
-        str = "";
-      }
-      const items = [{ type: "text", text: str }];
-      View(name, items);
-    };
-    obj11.onOpenAutocompleteSheet = function onOpenAutocompleteSheet() {
-      onPress();
-      importDefault(name);
-    };
-    obj11.onDismissAutocompleteSheet = function onDismissAutocompleteSheet() {
-      return dependencyMap(name);
-    };
-    obj11.hasError = hasError;
-    tmp63(tmp64(11652), obj11, name.name);
-    const tmp64Result = tmp64(11652);
+    tmp62Result = tmp62(tmp63Result, obj11, option.name);
+    tmp49 = tmp62;
   } else {
-    const obj12 = { style: tmp.option, option: name, guildId: channel.guild_id, initialValue: null, onEndEditing: null, onChangeText: null, onFocus: null, autoFocus: null, hasError: null, onPressIn: null };
-    let first7;
-    if (optionValues.current[name.name] != tmp44) {
-      first7 = tmp46[0];
+    const obj12 = {
+      style: tmp.option,
+      option,
+      guildId: channel.guild_id,
+      initialValue: first7,
+      onEndEditing() {
+          return dependencyMap(option);
+        },
+      onChangeText(text) {
+          importDefault(option);
+          const items = [];
+          const obj = { type: "text", text };
+          items[0] = obj;
+          View(option, items);
+        },
+      onFocus,
+      autoFocus: items1.includes(autoFocusType),
+      hasError,
+      onPressIn: onPress
+    };
+    first7 = undefined;
+    const tmp63Result2 = AppLauncherTextInputOptionDefault;
+    if (optionValues.current[option.name] != null) {
+      first7 = tmp45[0];
     }
-    obj12.initialValue = first7;
-    obj12.onEndEditing = function onEndEditing() {
-      return dependencyMap(name);
-    };
-    obj12.onChangeText = function onChangeText(text) {
-      importDefault(name);
-      const items = [{ type: "text", text }];
-      View(name, items);
-    };
-    obj12.onFocus = onFocus;
-    let items1 = [, ];
+    items1 = [, ];
     ({ FIRST_REQUIRED_OPTION: arr[0], OPTIONAL_OPTION_ADDED: arr[1] } = onPress);
-    obj12.autoFocus = items1.includes(autoFocusType);
-    obj12.hasError = hasError;
-    obj12.onPressIn = onPress;
-    tmp63(tmp64(11654), obj12, name.name);
-    const tmp64Result2 = tmp64(11654);
+    tmp62Result = tmp62(tmp63Result2, obj12, option.name);
+    tmp49 = tmp62;
   }
+  tmp13 = tmp49;
+  tmp28Result = tmp62Result;
 };

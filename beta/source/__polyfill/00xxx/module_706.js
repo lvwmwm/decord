@@ -5,23 +5,26 @@
 
 // Module 706
 import _mod690 from "module_690" /* 690 */;
-import _mod707 from "module_707" /* 707 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+let tmp;
+const AsyncContextStack = tmp(707);
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const getAsyncContextStrategy = function getAsyncContextStrategy(arg0) {
-  const sentryCarrier = _mod690.getSentryCarrier(arg0);
+  let acs;
+  const obj = _mod690;
+  const sentryCarrier = obj.getSentryCarrier(arg0);
   if (sentryCarrier.acs) {
-    let acs = sentryCarrier.acs;
+    acs = sentryCarrier.acs;
   } else {
-    acs = _mod707.getStackAsyncContextStrategy();
-    const tmpResult = _mod707;
+    const tmpResult = AsyncContextStack;
+    acs = tmpResult.getStackAsyncContextStrategy();
   }
   return acs;
 };
 export const setAsyncContextStrategy = function setAsyncContextStrategy(acs) {
-  const mainCarrier = _mod690.getMainCarrier();
+  const obj = _mod690;
+  const mainCarrier = obj.getMainCarrier();
   _mod690.getSentryCarrier(mainCarrier).acs = acs;
+  _mod690;
 };

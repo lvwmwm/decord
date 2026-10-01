@@ -5,43 +5,53 @@
 // Exports: default
 
 // Module 12674 (useUserProfileConnections)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, type;
 
-const useMemo = _mod19.useMemo;
+const useMemo = react.useMemo;
 let closure_5 = [];
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useUserProfileConnections.tsx");
 
 export default function useUserProfileConnections(arg0) {
+  let closure_0;
+  let stateFromStores;
   _require = arg0;
-  const platformAllowed = require("ConnectionsHooks").usePlatformAllowed({ forUserProfile: true });
-  const obj = require("ConnectionsHooks");
+  let obj = require("ConnectionsHooks");
+  const platformAllowed = obj.usePlatformAllowed({ forUserProfile: true });
   const items = [UserProfileStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => UserProfileStore.getUserProfile(closure_0));
+  const obj2 = require("get initialized");
+  stateFromStores = obj2.useStateFromStores(items, () => UserProfileStore.getUserProfile(closure_0));
   let connectedAccounts;
+  const tmp3 = useMemo;
   if (stateFromStores != null) {
     connectedAccounts = stateFromStores.connectedAccounts;
   }
   const items1 = [connectedAccounts, platformAllowed];
-  return useMemo(() => {
+  return tmp3(() => {
+    let found;
+    let tmp = stateFromStores;
     let connectedAccounts;
     if (stateFromStores != null) {
       connectedAccounts = tmp.connectedAccounts;
     }
     if (null == connectedAccounts) {
-      let found = closure_5;
+      found = closure_5;
     } else {
       const connectedAccounts1 = tmp.connectedAccounts;
       found = connectedAccounts1.filter((type) => {
         type = type.type;
-        value = platformAllowed(stateFromStores[4]).get(type);
+        const obj = platformAllowed(stateFromStores[4]);
+        const value = obj.get(type);
         let isSupportedResult = null != value;
+        const tmp = platformAllowed;
+        const tmp2 = stateFromStores;
         if (isSupportedResult) {
-          isSupportedResult = platformAllowed(stateFromStores[4]).isSupported(type);
-          const tmpResult = platformAllowed(stateFromStores[4]);
+          const tmpResult = tmp(tmp2[4]);
+          isSupportedResult = tmpResult.isSupported(type);
         }
         if (isSupportedResult) {
           isSupportedResult = closure_1_1(value);

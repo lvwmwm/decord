@@ -5,55 +5,56 @@
 // Exports: default
 
 // Module 12085 (GuildProgressItem)
+import Fragment from "Fragment" /* 21 */;
 import GuildProgressUtils from "GuildProgressUtils" /* 11967 */;
 import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 11970 */;
 import GuildProgressCircleDefault from "GuildProgressCircle" /* 12087 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ icon: { width: 32, height: 32 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_progress/native/components/GuildProgressItem.tsx");
 
 export default function GuildProgressItem(guild) {
+  let fn;
+  let intl;
+  let obj3;
   guild = guild.guild;
   let completed;
-  const tmp = closure_4();
-  const iOSCompletionStates = guild(completed[3]).useIOSCompletionStates(guild);
+  let tmp = closure_4();
+  let obj = guild(completed[3]);
+  const iOSCompletionStates = obj.useIOSCompletionStates(guild);
   const numFinished = iOSCompletionStates.numFinished;
   completed = iOSCompletionStates.completed;
   const totalSteps = iOSCompletionStates.totalSteps;
-  const obj2 = {
+  let obj2 = {
     onPress() {
-      if (!completed) {
-        const progress = GuildProgressActionCreatorsDefault.createProgress(guild.id);
+      const tmp = completed;
+      if (!tmp) {
+        const obj = GuildProgressActionCreatorsDefault;
+        const progress = obj.createProgress(guild.id);
       }
-      GuildProgressUtils.openActionSheet(guild);
+      const obj2 = GuildProgressUtils;
+      obj2.openActionSheet(guild);
     },
-    source: null,
-    iconStyle: null,
-    title: null,
-    isCompleted: null,
-    renderEndComponent: null,
+    source: obj3,
+    iconStyle: tmp.icon,
+    title: intl.string(guild(completed[7]).t["J2+r16"]),
+    isCompleted: completed,
+    renderEndComponent: fn,
     fullWidth: true
   };
-  const obj3 = { uri: null };
-  let obj = guild(completed[3]);
+  obj3 = { uri: numFinished(completed[6]) };
+  const tmp4 = numFinished(completed[4]);
+  intl = guild(completed[7]).intl;
+  fn = undefined;
   const tmp3 = totalSteps;
-  obj3.uri = numFinished(completed[6]);
-  obj2.source = obj3;
-  obj2.iconStyle = tmp.icon;
-  const intl = guild(completed[7]).intl;
-  obj2.title = intl.string(guild(completed[7]).t["J2+r16"]);
-  obj2.isCompleted = completed;
-  let fn;
   if (numFinished > 0) {
     if (numFinished < totalSteps) {
       fn = () => jsx(GuildProgressCircleDefault, { percent: 100 * numFinished / totalSteps, size: 32 });
     }
   }
-  obj2.renderEndComponent = fn;
-  return tmp3(numFinished(completed[4]), obj2);
+  return tmp3(tmp4, obj2);
 };

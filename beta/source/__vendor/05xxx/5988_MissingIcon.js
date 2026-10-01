@@ -5,18 +5,18 @@
 // Exports: MissingIcon
 
 // Module 5988 (MissingIcon)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import Text from "Text" /* 5962 */;
 
-const StyleSheet = _mod17.StyleSheet;
-const jsx = jsxProd.jsx;
+const StyleSheet = react_native.StyleSheet;
+const jsx = Fragment.jsx;
 const icon = StyleSheet.create({ icon: { backgroundColor: "transparent" } });
 
 export const MissingIcon = function MissingIcon(arg0) {
+  let color;
+  let style;
   ({ color, size, style } = arg0);
-  const obj = { style: null, children: "\u23F7" };
   const items = [icon.icon, { color, fontSize: size }, style];
-  obj.style = items;
-  return jsx(Text.Text, { style: null, children: "\u23F7" });
+  return jsx(Text.Text, { style: items, children: "\u23F7" });
 };

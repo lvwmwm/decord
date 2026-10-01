@@ -4,44 +4,59 @@
 // Dependencies: [19, 17, 1181, 1074, 21, 4836, 5836, 576, 1177, 5998, 8055, 2]
 
 // Module 8058 (FormCTAButton)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import native from "native" /* 1177 */;
 import RedesignCompat from "RedesignCompat" /* 5998 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import FormConstants from "FormConstants" /* 1181 */;
+import createStyles_mod from "createStyles" /* 4836 */;
 import TextStyles_mod from "TextStyles" /* 5836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let Platform;
+let StyleSheet;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
 class FormCTAButton {
-  constructor(arg0) {
-    BRAND = global.color;
+  constructor(color) {
+    let onPress;
+    let testID;
+    let textWarning;
+    let tmp16;
+    let BRAND = color.color;
     if (undefined === BRAND) {
-      tmp = closure_10;
-      BRAND = closure_10.BRAND;
+      BRAND = obj5.BRAND;
     }
-    fontSize = global.fontSize;
-    num = 16;
+    const fontSize = color.fontSize;
+    let num = 16;
+    const label = color.label;
     if (undefined !== fontSize) {
       num = fontSize;
     }
-    alignLeft = global.alignLeft;
-    alignLeft2 = undefined !== alignLeft && alignLeft;
-    disabled = global.disabled;
-    tmp2 = undefined !== disabled && disabled;
-    loading = global.loading;
-    tmp3 = undefined !== loading && loading;
-    ({ testID, onPress } = global);
-    tmp4 = closure_9();
-    tmp5 = jsx;
-    tmp6 = closure_0;
-    tmp7 = closure_1;
-    items = [, , , ];
-    items[0] = tmp4.text;
-    tmp8 = closure_10;
-    if (closure_10.BRAND === BRAND) {
+    const alignLeft = color.alignLeft;
+    let alignLeft2 = undefined !== alignLeft && alignLeft;
+    const disabled = color.disabled;
+    let tmp2 = undefined !== disabled && disabled;
+    const loading = color.loading;
+    ({ testID, onPress } = color);
+    const style = color.style;
+    const tmp4 = closure_9();
+    const items = [tmp4.text, , , ];
+    const LegacyText = native.LegacyText;
+    if (obj5.BRAND === BRAND) {
       textWarning = tmp4.textBrand;
-    } else if (tmp8.DANGER === BRAND) {
+    } else if (obj5.DANGER === BRAND) {
       textWarning = tmp4.textDanger;
-    } else if (tmp8.WARNING === BRAND) {
+    } else if (obj5.WARNING === BRAND) {
       textWarning = tmp4.textWarning;
     }
     items[1] = textWarning;
@@ -50,81 +65,53 @@ class FormCTAButton {
       alignLeft2 = tmp4.alignLeft;
     }
     items[3] = alignLeft2;
-    tmp5Result = tmp5(closure_0(closure_1[8]).LegacyText, { style: items, children: global.label });
-    if (tmp3) {
-      tmp10 = ActivityIndicator;
-      obj = { color: null };
-      obj.color = BRAND;
-      tmp5Result = tmp5(ActivityIndicator, obj);
+    let tmp5Result = tmp5(LegacyText, { style: items, children: label });
+    if (undefined !== loading && loading) {
+      const obj = { color: BRAND };
+      tmp5Result = tmp5(_false, obj);
     }
-    obj1 = { style: null, children: null };
-    tmp11 = View;
-    if (closure_2.useContext(tmp6(tmp7[9]).RedesignCompatContext)) {
-      obj1.style = tmp4.rowButton;
-      obj5 = { label: null, onPress: null, arrow: false, disabled: null, testID: null };
-      obj5.label = tmp5Result;
-      obj5.onPress = onPress;
+    const obj2 = { style: null, children: null };
+    if (react.useContext(RedesignCompat.RedesignCompatContext)) {
+      obj2.style = tmp4.rowButton;
+      const RowButton = tmp6(8055).RowButton;
       if (!tmp2) {
         tmp2 = tmp3;
       }
-      obj5.disabled = tmp2;
-      obj5.testID = testID;
-      obj1.children = tmp5(tmp6(tmp7[10]).RowButton, obj5);
-      tmp16 = obj1;
+      obj2.children = <RowButton label={tmp5Result} onPress={onPress} arrow={false} disabled={tmp2} testID={testID} />;
+      tmp16 = obj2;
     } else {
-      items1 = [, , ];
-      items1[0] = tmp4.sectionBody;
-      disabled2 = tmp2;
-      if (tmp2) {
-        disabled2 = tmp4.disabled;
-      }
-      items1[1] = disabled2;
-      items1[2] = global.style;
-      obj1.style = items1;
-      obj6 = { testID: null, accessibilityRole: "button", onPress: null, style: null, disabled: null, android_ripple: null, children: null };
-      obj6.testID = testID;
-      obj6.onPress = onPress;
-      obj6.style = tmp4.button;
-      tmp13 = tmp2;
-      tmp12 = Pressable;
+      const items1 = [tmp4.sectionBody, tmp2 && tmp4.disabled, style];
+      obj2.style = items1;
+      let tmp13 = tmp2;
       if (!tmp2) {
         tmp13 = tmp3;
       }
-      obj6.disabled = tmp13;
-      tmp14 = getThemedRippleConfig;
-      tmp15 = ANDROID_FOREGROUND_RIPPLE;
-      obj6.android_ripple = getThemedRippleConfig(ANDROID_FOREGROUND_RIPPLE);
-      obj6.children = tmp5Result;
-      obj1.children = tmp5(tmp12, obj6);
-      tmp16 = obj1;
+      obj2.children = <tmp12 testID={testID} accessibilityRole="button" onPress={onPress} style={tmp4.button} disabled={tmp13} android_ripple={metroImportDefault(metroRequire)}>{tmp5Result}</tmp12>;
+      tmp16 = obj2;
     }
-    return tmp5(tmp11, tmp16);
+    return <tmp11 {...tmp16} />;
   }
 }
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: c3, Pressable: closure_4, Platform, StyleSheet, View: hasOwnProperty } = get_ActivityIndicator);
-const FormConstants = fn(1181);
-({ ANDROID_FOREGROUND_RIPPLE: metroRequire, getThemedRippleConfig: closure_7 } = FormConstants);
-const Fonts = fn(1074).Fonts;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { rowButton: { paddingHorizontal: 16 }, sectionBody: {}, button: { minHeight: 44, justifyContent: "center" }, text: { lineHeight: 44, paddingHorizontal: 17, textAlign: "left" }, textBrand: null, textDanger: null, textWarning: null, alignLeft: null, disabled: null };
+({ ActivityIndicator: c3, Pressable: closure_4, Platform, StyleSheet, View: hasOwnProperty } = react_native);
+({ ANDROID_FOREGROUND_RIPPLE: metroRequire, getThemedRippleConfig: metroImportDefault } = FormConstants);
+const Fonts = Constants.Fonts;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { rowButton: { paddingHorizontal: 16 }, sectionBody: {}, button: { minHeight: 44, justifyContent: "center" }, text: { lineHeight: 44, paddingHorizontal: 17, textAlign: "left" }, textBrand: obj2, textDanger: obj3, textWarning: obj4, alignLeft: { textAlign: "left" }, disabled: { opacity: 0.5 } };
+obj2 = {};
+createStyles = createStyles.createStyles;
 let TextStyles = TextStyles_mod;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.CONTROL_BRAND_FOREGROUND, 16));
-obj2.textBrand = {};
-let TextStyles = TextStyles_mod;
+obj3 = {};
+TextStyles = TextStyles_mod;
 const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, 16));
-obj2.textDanger = {};
-let TextStyles = TextStyles_mod;
+obj4 = {};
+TextStyles = TextStyles_mod;
 const merged2 = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.STATUS_WARNING, 16));
-obj2.textWarning = {};
-obj2.alignLeft = { textAlign: "left" };
-obj2.disabled = { opacity: 0.5 };
-const React7 = createStyles.createStyles(obj2);
-const obj6 = { BRAND: "brand", DANGER: "danger", WARNING: "warning" };
-FormCTAButton.Colors = obj6;
-const size = fn(2);
+const React4 = createStyles(obj);
+const obj5 = { BRAND: "brand", DANGER: "danger", WARNING: "warning" };
+FormCTAButton.Colors = obj5;
 const result = size.fileFinishedImporting("design/void/Form/native/FormCTAButton.tsx");
 
 export default FormCTAButton;
-export const FormCTAButtonColors = obj6;
+export const FormCTAButtonColors = obj5;

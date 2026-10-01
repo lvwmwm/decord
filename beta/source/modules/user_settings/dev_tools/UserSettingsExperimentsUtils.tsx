@@ -8,6 +8,8 @@
 import flattenDefault from "flatten" /* 4945 */;
 import size from "module_2" /* 2 */;
 
+let id;
+
 function matchesDeep(item10014, item10021) {
   if (Array.isArray(item10014)) {
     const obj2 = item10014[Symbol.iterator]();
@@ -24,7 +26,7 @@ function matchesDeep(item10014, item10021) {
         const _Object = Object;
         const values = Object.values(item10014);
         for (const item10014 of values) {
-          if (matchesDeep(item10014, arg1)) {
+          if (matchesDeep(item10014, item10021)) {
             obj.return();
             let flag2 = true;
             return true;
@@ -53,7 +55,10 @@ export const getExperimentDateFromId = function getExperimentDateFromId(arg0) {
   return tmp2;
 };
 export const getEntries = function getEntries(arg0) {
-  return Array.from(Object.entries(arg0)).map((item) => {
+  const arr = Array.from(Object.entries(arg0));
+  return arr.map((item) => {
+    let tmp;
+    let tmp2;
     [tmp, tmp2] = item;
     return { id, experiment };
   });
@@ -71,7 +76,7 @@ export const sortEntries = function sortEntries(entries, memo1) {
       if (id2 != null) {
         id1 = id2.id;
       }
-      if (null == tmp[id1]) {
+      if (null == memo1[id1]) {
         return -1;
       }
     }
@@ -84,16 +89,17 @@ export const sortEntries = function sortEntries(entries, memo1) {
       if (id2 != null) {
         id3 = id2.id;
       }
-      if (null != tmp[id3]) {
+      if (null != memo1[id3]) {
         return 1;
       }
     }
     const match = re2.exec(id.id);
     let tmp7 = null;
+    const obj = re2;
     if (null != match) {
       tmp7 = match[1];
     }
-    const match1 = re2.exec(id2.id);
+    const match1 = obj.exec(id2.id);
     let tmp9 = null;
     if (null != match1) {
       tmp9 = match1[1];
@@ -137,7 +143,8 @@ export const getBestMatches = function getBestMatches(arg0, str) {
       }
       continue;
     }
+    const tmp18 = flattenDefault;
     const found1 = items.filter((item) => undefined !== item);
-    return flattenDefault(found1.reverse());
+    return tmp18(found1.reverse());
   }
 };

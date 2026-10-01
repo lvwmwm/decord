@@ -1,0 +1,10 @@
+// Module ID: 2630
+// Function ID: 2631
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 2630 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9vdmVybGF5L3dlYi92Mw==", scales: [1], hash: "956ec1ab00cbce8ffce5bade9ccf1c2d", name: "fi.messages.956ec1ab00cbce8ffce5bade9ccf1c2d.compiled.messages", type: "jsona" });

@@ -6,17 +6,19 @@
 
 // Module 10805 (useCanSetThumbnail)
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_channel/useCanSetThumbnail.tsx");
 
 export default function useCanSetThumbnail(arg0, isImage) {
+  let closure_0;
   _require = arg0;
   const items = [ChannelStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => ChannelStore.getChannel(closure_0));
+  const obj = require("useStateFromStores");
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(closure_0));
   let isMediaChannelResult;
   if (stateFromStores != null) {
     isMediaChannelResult = stateFromStores.isMediaChannel();

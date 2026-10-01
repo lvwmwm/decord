@@ -5,27 +5,32 @@
 // Exports: useEnableSwitchIconsSettingValue
 
 // Module 14960 (EnableSwitchIconsSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function useEnableSwitchIconsSettingValue() {
+  let isSwitchIconsEnabled;
   const items = [AccessibilityStore];
-  return initialize.useStateFromStores(items, () => isSwitchIconsEnabled.isSwitchIconsEnabled);
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => isSwitchIconsEnabled.isSwitchIconsEnabled);
 }
-const SettingBuilders = fn(11006);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["S3z+pV"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["S3z+pV"]);
   },
-  parent: fn(7417).MobileUserSettings.ACCESSIBILITY,
+  parent: MobileUserSettings.ACCESSIBILITY,
   useValue: useEnableSwitchIconsSettingValue,
-  onValueChange: fn(13998).setSwitchIconsEnabled,
+  onValueChange: AccessibilityActionCreators.setSwitchIconsEnabled,
   hasIcon: true
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/EnableSwitchIconsSetting.tsx");
 
 export default toggle;

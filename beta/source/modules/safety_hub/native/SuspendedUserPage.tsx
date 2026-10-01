@@ -5,71 +5,89 @@
 // Exports: default
 
 // Module 16730 (SuspendedUserPage)
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 576 */;
+import intl4 from "intl" /* 1115 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6010 */;
-import _modDef6413 from "module_6413" /* 6413 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6413 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
 import SafetyHubPageDefault from "SafetyHubPage" /* 14300 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import SafetyHubStore from "SafetyHubStore" /* 7881 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7868 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const SafetyHubConstants = fn(7868);
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+const View = react_native.View;
 ({ AgeCheckStatus: hasOwnProperty, SafetyHubLinks: metroRequire } = SafetyHubConstants);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "flex", flexDirection: "column", height: "100%" }, header: null, text: null, link: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "flex", flexDirection: "column", height: "100%" };
-obj2.header = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, flexDirection: "row", paddingVertical: nativeDefault.space.PX_8, alignItems: "center" };
-let obj4 = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, flexDirection: "row", paddingVertical: nativeDefault.space.PX_8, alignItems: "center" };
-obj2.text = { marginRight: nativeDefault.space.PX_8, textAlign: "left", flexShrink: 1 };
-obj2.link = { textDecorationLine: "underline" };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, header: obj3, text: obj4, link: { textDecorationLine: "underline" } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "flex", flexDirection: "column", height: "100%" };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, flexDirection: "row", paddingVertical: nativeDefault.space.PX_8, alignItems: "center" };
+obj4 = { marginRight: nativeDefault.space.PX_8, textAlign: "left", flexShrink: 1 };
+let closure_9 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/safety_hub/native/SuspendedUserPage.tsx");
 
 export default function SuspendedUserSafetyHubPage() {
+  let ageCheckStatus;
+  let intl;
+  let intl3;
+  let items1;
+  let items2;
+  let items3;
   const tmp = closure_9();
+  let obj = get_initialized;
   const items = [SafetyHubStore];
-  let tmp6Result = initialize.useStateFromStores(items, () => ageCheckStatus.getAgeCheckStatus()) !== constants.VERIFIED;
-  const obj2 = { style: tmp.container, children: null };
+  let tmp6Result = obj.useStateFromStores(items, () => ageCheckStatus.getAgeCheckStatus()) !== hasOwnProperty.VERIFIED;
+  const obj2 = { style: tmp.container, children: items3 };
+  const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
   if (tmp6Result) {
-    const obj3 = { style: tmp.header, children: null };
-    const obj4 = { variant: "destructive", accessibilityLabel: null, onPress: null, icon: null };
-    const intl = tmp2(1115).intl;
-    obj4.accessibilityLabel = intl.string(tmp2(1115).t.cpT0Cq);
-    obj4.onPress = function onPress() {
-      AuthenticationActionCreatorsDefault.closeSuspendedUser();
+    const obj3 = { style: tmp.header, children: items1 };
+    const obj4 = {
+      variant: "destructive",
+      accessibilityLabel: intl.string(intl4.t.cpT0Cq),
+      onPress() {
+          const obj = AuthenticationActionCreatorsDefault;
+          obj.closeSuspendedUser();
+        },
+      icon: AssetRegistryDefault
     };
-    obj4.icon = _modDef6413;
-    const items1 = [tmp5(tmp2(7363).IconButton, obj4), ];
+    const IconButton = tmp2(7363).IconButton;
+    intl = tmp2(1115).intl;
+    items1 = [metroImportDefault(IconButton, obj4), ];
     const obj5 = {
       style: tmp.text,
       onPress() {
-          LinkingDefault.openURL(constants.WARNING_SYSTEM_HELPCENTER_LINK);
+          const obj = LinkingDefault;
+          obj.openURL(constants.WARNING_SYSTEM_HELPCENTER_LINK);
         },
       variant: "text-xs/medium",
       color: "control-critical-primary-text-default",
-      children: null
+      children: items2
     };
+    const Text = tmp2(4832).Text;
     const intl2 = tmp2(1115).intl;
-    const items2 = [intl2.string(tmp2(1115).t["MG+Bzb"]), " ", ];
-    const obj6 = { style: tmp.link, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: null };
-    const intl3 = tmp2(1115).intl;
-    obj6.children = intl3.string(tmp2(1115).t["9JceHN"]);
-    items2[2] = tmp5(tmp2(4832).Text, obj6);
-    obj5.children = items2;
-    items1[1] = tmp6(tmp2(4832).Text, obj5);
-    obj3.children = items1;
+    items2 = [intl2.string(intl4.t["MG+Bzb"]), " ", ];
+    const obj6 = { style: tmp.link, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: intl3.string(intl4.t["9JceHN"]) };
+    const Text2 = tmp2(4832).Text;
+    intl3 = tmp2(1115).intl;
+    items2[2] = metroImportDefault(Text2, obj6);
+    items1[1] = metroImportAll(Text, obj5);
     tmp6Result = tmp6(tmp7, obj3);
   }
-  const rect = { top: true, right: true, left: true, children: null };
-  const items3 = [tmp6Result, React5(SafetyHubPageDefault, { visible: true })];
-  obj2.children = items3;
-  rect.children = React6(View, obj2);
-  return React5(common_SafeAreaView.SafeAreaPaddingView, rect);
+  const rect = { top: true, right: true, left: true, children: metroImportAll(View, obj2) };
+  items3 = [tmp6Result, metroImportDefault(SafetyHubPageDefault, { visible: true })];
+  return metroImportDefault(SafeAreaPaddingView, rect);
 };

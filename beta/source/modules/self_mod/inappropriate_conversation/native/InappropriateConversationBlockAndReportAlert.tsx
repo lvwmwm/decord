@@ -4,66 +4,54 @@
 // Dependencies: [19, 21, 10912, 10933, 1115, 2]
 
 // Module 10932 (InappropriateConversationBlockAndReportAlert)
+import Fragment from "Fragment" /* 21 */;
 import SafetyWarningUtils from "SafetyWarningUtils" /* 10912 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 class InappropriateConversationBlockAndReportAlert {
-  constructor(arg0) {
-    channelId = global.channelId;
-    warningId = global.warningId;
-    warningType = global.warningType;
-    senderId = global.senderId;
-    analyticsBlockContext = global.analyticsBlockContext;
-    analyticsBlockAndReportContext = global.analyticsBlockAndReportContext;
-    closure_5 = analyticsBlockAndReportContext;
-    analyticsCancelContext = global.analyticsCancelContext;
-    onDismiss = global.onDismiss;
-    closure_8 = undefined;
-    items = [, , , ];
-    items[0] = channelId;
-    items[1] = warningId;
-    items[2] = senderId;
-    items[3] = warningType;
-    callback = senderId.useCallback((cta) => {
-      SafetyWarningUtils.trackCtaEvent({ channelId, warningId, senderId, warningType, cta });
+  constructor(channelId) {
+    let intl;
+    channelId = channelId.channelId;
+    const warningId = channelId.warningId;
+    const warningType = channelId.warningType;
+    const senderId = channelId.senderId;
+    const analyticsBlockContext = channelId.analyticsBlockContext;
+    const analyticsBlockAndReportContext = channelId.analyticsBlockAndReportContext;
+    const analyticsCancelContext = channelId.analyticsCancelContext;
+    const onDismiss = channelId.onDismiss;
+    const items = [channelId, warningId, senderId, warningType];
+    const onClose = channelId.onClose;
+    const callback = senderId.useCallback((cta) => {
+      const obj = SafetyWarningUtils;
+      const obj2 = { channelId, warningId, senderId, warningType, cta };
+      obj.trackCtaEvent(obj2);
     }, items);
-    closure_8 = callback;
-    items1 = [, ];
-    items1[0] = callback;
-    items1[1] = analyticsCancelContext;
-    items2 = [, , ];
-    items2[0] = onDismiss;
-    items2[1] = callback;
-    items2[2] = analyticsBlockContext;
-    callback1 = senderId.useCallback(() => {
+    const items1 = [callback, analyticsCancelContext];
+    const items2 = [onDismiss, callback, analyticsBlockContext];
+    const callback1 = senderId.useCallback(() => {
       callback(analyticsCancelContext);
     }, items1);
-    items3 = [, , ];
-    items3[0] = onDismiss;
-    items3[1] = callback;
-    items3[2] = analyticsBlockAndReportContext;
-    callback2 = senderId.useCallback(() => {
+    const items3 = [onDismiss, callback, analyticsBlockAndReportContext];
+    const callback2 = senderId.useCallback(() => {
       if (onDismiss != null) {
         tmp();
       }
       callback(analyticsBlockContext);
     }, items2);
-    callback3 = senderId.useCallback(() => {
+    const callback3 = senderId.useCallback(() => {
       if (onDismiss != null) {
         tmp();
       }
       callback(analyticsBlockAndReportContext);
     }, items3);
-    obj = { userId: senderId, channelId, onClose: global.onClose, onCancel: callback1, onBlock: callback2, onBlockAndReport: callback3, blockButtonVariant: "primary", description: null };
-    tmp5 = warningId(warningType[3]);
+    let obj = { userId: senderId, channelId, onClose, onCancel: callback1, onBlock: callback2, onBlockAndReport: callback3, blockButtonVariant: "primary", description: intl.string(channelId(warningType[4]).t["5NhTvu"]) };
+    const tmp5 = warningId(warningType[3]);
     intl = channelId(warningType[4]).intl;
-    obj.description = intl.string(channelId(warningType[4]).t["5NhTvu"]);
     return analyticsBlockContext(tmp5, obj);
   }
 }
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/InappropriateConversationBlockAndReportAlert.tsx");
 
 export default InappropriateConversationBlockAndReportAlert;

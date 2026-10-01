@@ -5,50 +5,62 @@
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
 // Module 10197 (GiftingPromotionUtils)
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
 import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10202 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import MarketingComponentType from "MarketingComponentType" /* 10203 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import PromotionsStore from "PromotionsStore" /* 10128 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, map;
 
-require = fn;
-const SubscriptionPlans = fn(1374).SubscriptionPlans;
-const size = fn(2);
+const SubscriptionPlans = PremiumConstants.SubscriptionPlans;
 let result = size.fileFinishedImporting("modules/premium/gifting/utils/promotions/GiftingPromotionUtils.tsx");
 
 export const useFetchClaimableGiftingPromotionRewardSkuIds = function useFetchClaimableGiftingPromotionRewardSkuIds() {
-  const tmp = purchases(hasPreviouslyFetched.useState(), 2);
+  let closure_0;
+  let fetchPurchasesError;
+  let hasPreviouslyFetched;
+  let purchases;
+  let stateFromStoresArray;
+  let tmp = purchases(hasPreviouslyFetched.useState(), 2);
   _require = tmp[1];
+  const first = tmp[0];
   const items = [fetchPurchasesError];
-  stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => fetchPurchasesError.getGiftPromotionRewardSkuIds());
-  const obj = require("initialize");
-  const fetchPurchases = require("useFetchCollectiblesCategoriesAndPurchases").useFetchPurchases();
+  const obj = require("get initialized");
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => fetchPurchasesError.getGiftPromotionRewardSkuIds());
+  const obj2 = require("useFetchCollectiblesCategoriesAndPurchases");
+  const fetchPurchases = obj2.useFetchPurchases();
   purchases = fetchPurchases.purchases;
   hasPreviouslyFetched = fetchPurchases.hasPreviouslyFetched;
   fetchPurchasesError = fetchPurchases.fetchPurchasesError;
-  hasPreviouslyFetched.useRef(false);
+  const ref = hasPreviouslyFetched.useRef(false);
   const items1 = [stateFromStoresArray, purchases, hasPreviouslyFetched, fetchPurchasesError];
   const effect = hasPreviouslyFetched.useEffect(() => {
-    if (hasPreviouslyFetched) {
+    const tmp = hasPreviouslyFetched;
+    if (tmp) {
       if (!ref.current) {
+        const arr = stateFromStoresArray;
         if (stateFromStoresArray.length > 0) {
+          let found;
           if (null == fetchPurchasesError) {
-            let found = arr.filter((item) => null == purchases.get(item));
+            found = arr.filter((item) => null == purchases.get(item));
           } else {
             found = [];
           }
           closure_0(found);
-          tmp.current = true;
+          tmp2.current = true;
         }
-        arr = stateFromStoresArray;
       }
     }
   }, items1);
-  return tmp[0];
+  return first;
 };
 export const getRewardAssetIdMap = function getRewardAssetIdMap(arr) {
-  const map = new Map();
+  map = new Map();
   const item = arr.forEach((skuId) => map.set(skuId.skuId, skuId.assetId));
   return map;
 };
@@ -56,32 +68,27 @@ export const useShouldShowSelectFreeSkuStep = function useShouldShowSelectFreeSk
   const items = [, ];
   ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1] } = SubscriptionPlans);
   id = undefined;
+  const includes = items.includes;
   if (id != null) {
     id = id.id;
   }
   let tmp3 = null != arg2;
-  const hasItem = items.includes(id);
+  const hasItem = includes(id);
   if (tmp3) {
     tmp3 = arg2.length >= 1;
   }
-  let tmp4 = arg1;
-  if (arg1) {
-    tmp4 = hasItem;
-  }
-  if (tmp4) {
-    tmp4 = tmp3;
-  }
-  return tmp4;
+  return arg1 && hasItem && tmp3;
 };
 export const useShouldAutoSelectGiftingPromotionReward = function useShouldAutoSelectGiftingPromotionReward(id, arg1, arg2) {
   const items = [, ];
   ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1] } = SubscriptionPlans);
   id = undefined;
+  const includes = items.includes;
   if (id != null) {
     id = id.id;
   }
   let tmp3 = null != arg2;
-  const hasItem = items.includes(id);
+  const hasItem = includes(id);
   if (tmp3) {
     tmp3 = 1 === arg2.length;
   }
@@ -97,13 +104,15 @@ export const useIsPlanEligibleForGiftingPromotion = function useIsPlanEligibleFo
   const items = [, ];
   ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1] } = SubscriptionPlans);
   id = undefined;
+  const includes = items.includes;
   if (id != null) {
     id = id.id;
   }
-  return items.includes(id);
+  return includes(id);
 };
 export const createGradientStyle = function createGradientStyle(gradient, arg1) {
   if (null != gradient) {
+    let joined;
     let obj = arg1;
     if (arg1 == null) {
       obj = {};
@@ -112,6 +121,7 @@ export const createGradientStyle = function createGradientStyle(gradient, arg1) 
     const colorStops = obj.colorStops;
     const defaultAngle = obj.defaultAngle;
     let num = 78.98;
+    const tmp = undefined !== reverse && reverse;
     if (undefined !== defaultAngle) {
       num = defaultAngle;
     }
@@ -133,21 +143,19 @@ export const createGradientStyle = function createGradientStyle(gradient, arg1) 
     }
     if (null != colorStops) {
       const mapped = gradient.map((item, index) => "" + item + " " + colorStops[index] + "%");
-      let joined = mapped.join(", ");
+      joined = mapped.join(", ");
     } else {
       joined = gradient.join(", ");
     }
-    const obj2 = { background: null };
     const _HermesInternal = HermesInternal;
-    obj2.background = "linear-gradient(" + result + "deg, " + joined + ")";
+    const obj2 = { background: "linear-gradient(" + result + "deg, " + joined + ")" };
     return obj2;
   }
 };
 export const createBackgroundStyle = function createBackgroundStyle(arg0) {
   if (null != arg0) {
-    const obj = { backgroundImage: null, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" };
     const _HermesInternal = HermesInternal;
-    obj.backgroundImage = "url(" + arg0 + ")";
+    const obj = { backgroundImage: "url(" + arg0 + ")", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" };
     return obj;
   }
 };
@@ -180,7 +188,8 @@ export const combinePromotionStyles = function combinePromotionStyles(background
 export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftPromotionReminderNotice() {
   const GiftPromotionReminderExperiment = GiftPromotionReminderExperiment2.GiftPromotionReminderExperiment;
   if (GiftPromotionReminderExperiment.getConfig({ location: "shouldShowGiftPromotionReminderNotice" }).enabled) {
-    if (null == PromotionsStore.getMarketingComponentByType(tmp(10203).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
+    const obj = PromotionsStore;
+    if (null == PromotionsStore.getMarketingComponentByType(MarketingComponentType.MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
       return false;
     } else {
       const giftPromotion = obj.getGiftPromotion();
@@ -190,17 +199,16 @@ export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftProm
       }
       let tmp5 = null != id;
       if (tmp5) {
-        let isDismissed = tmp(4654).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2029).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
+        const tmpResult = DismissibleContentUnsafeUtils;
+        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2029).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
         if (isDismissed) {
-          isDismissed = !tmp(4654).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2029).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
-          const tmpResult2 = tmp(4654);
+          const tmpResult2 = DismissibleContentUnsafeUtils;
+          isDismissed = !tmpResult2.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2029).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
         }
         tmp5 = isDismissed;
-        const tmpResult = tmp(4654);
       }
       return tmp5;
     }
-    obj = PromotionsStore;
   } else {
     return false;
   }

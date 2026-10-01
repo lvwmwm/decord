@@ -4,14 +4,14 @@
 // Dependencies: [3, 13785, 13855, 13873, 13876, 13879, 1252, 1237, 2]
 
 // Module 13784 (polyfillsNative)
-import q from "q" /* 1237 */;
+import _mod1237 from "module_1237" /* 1237 */;
 import Buffer from "Buffer" /* 1252 */;
 import _mod13879 from "module_13879" /* 13879 */;
 import Logger from "Logger" /* 3 */;
 import module_13785 from "module_13785" /* 13785 */;
-import get_ActivityIndicator from "module_13855" /* 13855 */;
-import _typeof from "module_13873" /* 13873 */;
-import GetOption from "module_13876" /* 13876 */;
+import react_native from "react-native" /* 13855 */;
+import getPluralRules from "getPluralRules" /* 13873 */;
+import module_13876 from "module_13876" /* 13876 */;
 import size from "module_2" /* 2 */;
 
 if (typeof process === "undefined") {
@@ -49,6 +49,6 @@ if (tmp7) {
   tmp7 = null != window.TextDecoder;
 }
 if (!tmp7) {
-  const _module6 = q;
+  const _module6 = _mod1237;
 }
 const result = size.fileFinishedImporting("polyfillsNative.tsx");

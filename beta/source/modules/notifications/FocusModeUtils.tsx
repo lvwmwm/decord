@@ -8,16 +8,19 @@
 import wrappers from "wrappers" /* 1217 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2021 */;
+import NotificationConstants from "NotificationConstants" /* 4482 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-require = fn;
-const constants = fn(4482).NotificationSettingsUpdateType;
-const Constants = fn(1074);
+let hasOwnProperty;
+let metroRequire;
+const constants = NotificationConstants.NotificationSettingsUpdateType;
 ({ AnalyticEvents: hasOwnProperty, StatusTypes: metroRequire } = Constants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/notifications/FocusModeUtils.tsx");
 
 export const useFocusModeEnabled = function useFocusModeEnabled() {
@@ -30,8 +33,12 @@ export const useFocusModeEnabled = function useFocusModeEnabled() {
     if (!tmp3) {
       const _Date = Date;
       const _Number = Number;
-      const date = new Date(Number(setting1));
+      const self = this;
+      const self2 = this;
       const _Date2 = Date;
+      const self3 = this;
+      const self4 = this;
+      const date = new Date(Number(setting1));
       const time = date.getTime();
       const date1 = new Date();
       tmp3 = time - date1.getTime() > 0;
@@ -51,8 +58,12 @@ export const getFocusModeEnabled = function getFocusModeEnabled() {
   if (setting) {
     const _Date = Date;
     const _Number = Number;
-    const date = new Date(Number(setting1));
+    const self = this;
+    const self2 = this;
     const _Date2 = Date;
+    const self3 = this;
+    const self4 = this;
+    const date = new Date(Number(setting1));
     const time = date.getTime();
     const date1 = new Date();
     setting = time - date1.getTime() > 0;
@@ -60,14 +71,22 @@ export const getFocusModeEnabled = function getFocusModeEnabled() {
   return setting;
 };
 export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
+  let closure_1;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let value;
   _require = quiet_mode_enabled;
   importDefault = arg1;
+  const tmp = _require;
   const FocusMode = require("UserSettings").FocusMode;
   const setting = FocusMode.getSetting();
   const PreloadedUserSettingsActionCreators = require("UserSettingsProtoActionCreators").PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("notifications", async (arg0) => {
     const BoolValue = wrappers.BoolValue;
-    arg0.quietMode = BoolValue.create({ value });
+    const obj = { value };
+    arg0.quietMode = BoolValue.create(obj);
     let str = "0";
     if (value) {
       str = "0";
@@ -79,25 +98,30 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
     }
     arg0.focusModeExpiresAtMs = str;
   }, require("UserSettingsProtoActionCreators").UserSettingsDelay.INFREQUENT_USER_ACTION);
-  AnalyticsUtilsDefault.track(constants2.NOTIFICATION_SETTINGS_UPDATED, { update_type: constants.ACCOUNT, quiet_mode_enabled, quiet_mode_enabled_old: setting });
+  let obj = AnalyticsUtilsDefault;
+  const obj2 = { update_type: constants.ACCOUNT, quiet_mode_enabled, quiet_mode_enabled_old: setting };
+  obj.track(constants2.NOTIFICATION_SETTINGS_UPDATED, obj2);
   let tmp7 = SelfPresenceStore.getStatus() === constants3.DND && quiet_mode_enabled;
   if (tmp7) {
     tmp7 = null == arg1;
   }
   if (tmp7) {
-    const obj3 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null };
-    const intl = tmp(1115).intl;
-    obj3.title = intl.string(tmp(1115).t["B+cbLS"]);
-    const intl2 = tmp(1115).intl;
-    obj3.body = intl2.string(tmp(1115).t.CYVgLI);
-    const intl3 = tmp(1115).intl;
-    obj3.cancelText = intl3.string(tmp(1115).t.f3Pet9);
-    const intl4 = tmp(1115).intl;
-    obj3.confirmText = intl4.string(tmp(1115).t.BddRzS);
-    obj3.onConfirm = function onConfirm() {
-      closure_1(dependencyMap[9])({ nextStatus: constants.ONLINE });
+    const obj3 = {
+      title: intl.string(tmp(1115).t["B+cbLS"]),
+      body: intl2.string(tmp(1115).t.CYVgLI),
+      cancelText: intl3.string(tmp(1115).t.f3Pet9),
+      confirmText: intl4.string(tmp(1115).t.BddRzS),
+      onConfirm() {
+          const obj = { nextStatus: constants.ONLINE };
+          closure_1(dependencyMap[9])(obj);
+        }
     };
-    AlertActionCreatorsDefault.show(obj3);
-    const tmp5Result = AlertActionCreatorsDefault;
+    const show = tmp5(5203).show;
+    AlertActionCreatorsDefault;
+    intl = tmp(1115).intl;
+    intl2 = tmp(1115).intl;
+    intl3 = tmp(1115).intl;
+    intl4 = tmp(1115).intl;
+    show(obj3);
   }
 };

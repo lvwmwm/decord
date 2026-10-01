@@ -9,53 +9,52 @@ import StageChannelParticipants from "StageChannelParticipants" /* 5737 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5730 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
+const f80781 = () => {
+  mutableParticipants = mutableParticipants.getMutableParticipants(closure_0, closure_0(dependencyMap[4]).StageChannelParticipantNamedIndex.SPEAKER);
+  return null != mutableParticipants.find((type) => type.type === closure_1_0(closure_1_1[4]).StageChannelParticipantTypes.STREAM);
+};
+const f80782 = (type) => type.type === require("StageChannelParticipants").StageChannelParticipantTypes.STREAM;
 const result = size.fileFinishedImporting("modules/stage_channels/StageMediaHooks.tsx");
 
 export const useStageHasMedia = function useStageHasMedia(id) {
   _require = id;
-  closure_129_0 = id;
   const items = [StageChannelParticipantStore];
   const items1 = [id];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(closure_0, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);
-    return null != mutableParticipants.find((type) => type.type === id(closure_1_1[4]).StageChannelParticipantTypes.STREAM);
-  }, items1);
-  const obj = require("initialize");
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, f80781, items1);
   const items2 = [VoiceStateStore];
   const items3 = [id];
-  const obj2 = require("initialize");
-  return require("initialize").useStateFromStores(items2, () => VoiceStateStore.hasVideo(closure_0), items3) || stateFromStores;
+  const obj2 = require("get initialized");
+  const tmp2 = obj2.useStateFromStores(items2, () => VoiceStateStore.hasVideo(id), items3) || stateFromStores;
+  return tmp2;
 };
 export const useStageHasStream = function useStageHasStream(id) {
   _require = id;
   const items = [StageChannelParticipantStore];
   const items1 = [id];
-  return require("initialize").useStateFromStores(items, () => {
-    const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(closure_0, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);
-    return null != mutableParticipants.find((type) => type.type === id(closure_1_1[4]).StageChannelParticipantTypes.STREAM);
-  }, items1);
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, f80781, items1);
 };
 export const getStageHasMedia = function getStageHasMedia(id) {
   const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(id, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);
-  let hasVideoResult = null != mutableParticipants.find((type) => type.type === require("StageChannelParticipants").StageChannelParticipantTypes.STREAM);
-  if (!hasVideoResult) {
-    hasVideoResult = VoiceStateStore.hasVideo(id);
-  }
+  const hasVideoResult = null != mutableParticipants.find(f80782) || VoiceStateStore.hasVideo(id);
   return hasVideoResult;
 };
 export const getStageHasStream = function getStageHasStream(id) {
   const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(id, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);
-  return null != mutableParticipants.find((type) => type.type === require("StageChannelParticipants").StageChannelParticipantTypes.STREAM);
+  return null != mutableParticipants.find(f80782);
 };
 export const useIsStageVideoEnabled = function useIsStageVideoEnabled(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [GuildStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => GuildStore.getGuild(closure_0));
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(closure_0));
   let tmp2 = null != stateFromStores;
   if (tmp2) {
     let num;

@@ -3,27 +3,24 @@
 // Dependencies: [41, 42, 93, 95, 98, 9965, 9900, 9902]
 
 // Module 9970
+import Meridiem from "Meridiem" /* 9900 */;
 import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
-import alphaNum from "alphaNum" /* 9965 */;
+import NUMBER from "NUMBER" /* 9965 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const JPTimeExpressionParser = require;
+let obj;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -33,14 +30,15 @@ function _isNativeReflectConstruct() {
 }
 function createTimeComponents(createParsingComponents, arg1, arg2, arg3, arg4) {
   const parsingComponents = createParsingComponents.createParsingComponents();
-  let parsed = parseInt(JPTimeExpressionParser(9965).toHankaku(arg1));
+  let parsed = parseInt(NUMBER.toHankaku(arg1));
   if (isNaN(parsed)) {
     parsed = tmp(9965).jaStringToNumber(arg1);
   }
   if (parsed > 24) {
     return null;
   } else {
-    if (arg2) {
+    const tmp18 = arg2;
+    if (tmp18) {
       let num = 30;
       if ("\u534A" !== arg2) {
         const _parseInt = parseInt;
@@ -57,7 +55,8 @@ function createTimeComponents(createParsingComponents, arg1, arg2, arg3, arg4) {
         parsingComponents.assign("minute", num);
       }
     }
-    if (arg3) {
+    const tmp5 = arg3;
+    if (tmp5) {
       const _parseInt2 = parseInt;
       let parsed2 = parseInt(tmp(9965).toHankaku(arg3));
       const _isNaN2 = isNaN;
@@ -77,23 +76,25 @@ function createTimeComponents(createParsingComponents, arg1, arg2, arg3, arg4) {
         return null;
       } else {
         if ("\u5348\u524D" !== arg4) {
+          const str2 = arg4[0];
           if ("a" !== str2.toLowerCase()) {
             let tmp8 = "\u5348\u5F8C" !== arg4;
             if (tmp8) {
-              tmp8 = "p" !== arg4[0].toLowerCase();
+              const str5 = arg4[0];
+              tmp8 = "p" !== str5.toLowerCase();
             }
             num5 = -1;
             num6 = parsed;
             if (!tmp8) {
               let sum = parsed;
+              const PM = tmp(9900).Meridiem.PM;
               if (12 != parsed) {
                 sum = parsed + 12;
               }
               num6 = sum;
-              num5 = tmp(9900).Meridiem.PM;
+              num5 = PM;
             }
           }
-          str2 = arg4[0];
         }
         const AM = tmp(9900).Meridiem.AM;
         num5 = AM;
@@ -108,40 +109,37 @@ function createTimeComponents(createParsingComponents, arg1, arg2, arg3, arg4) {
     if (num5 >= 0) {
       parsingComponents.assign("meridiem", num5);
     } else if (num6 < 12) {
-      parsingComponents.imply("meridiem", tmp(9900).Meridiem.AM);
+      parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
     } else {
-      parsingComponents.imply("meridiem", tmp(9900).Meridiem.PM);
+      parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
     }
     return parsingComponents;
   }
 }
-const keys = Object.keys(alphaNum.NUMBER);
+const keys = Object.keys(NUMBER.NUMBER);
 const text = `(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０-９]+|[${obj.join("")}`;
-const keys1 = Object.keys(alphaNum.NUMBER);
+const keys1 = Object.keys(NUMBER.NUMBER);
 const text1 = `${`(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０-９]+|[${obj.join("")}`}]+)(?:\\s*)(?:時(?!間)|:|：)(?:\\s*)([0-9０-９]+|半|[${obj2.join("")}`;
-const keys2 = Object.keys(alphaNum.NUMBER);
+const keys2 = Object.keys(NUMBER.NUMBER);
 const regExp = new RegExp(text1 + "]+)?(?:\\s*)(?:\u5206|:|\uFF1A)?(?:\\s*)([0-9\uFF10-\uFF19]+|[" + keys2.join("") + "]+)?(?:\\s*)(?:\u79D2)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i");
-const keys3 = Object.keys(alphaNum.NUMBER);
+const keys3 = Object.keys(NUMBER.NUMBER);
 const text2 = `(?:^\\s*(?:から|\\-|\\–|\\－|\\~|\\〜)\\s*)(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０-９]+|[${obj4.join("")}`;
-const keys4 = Object.keys(alphaNum.NUMBER);
+const keys4 = Object.keys(NUMBER.NUMBER);
 const text3 = `${`(?:^\\s*(?:から|\\-|\\–|\\－|\\~|\\〜)\\s*)(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０-９]+|[${obj4.join("")}`}]+)(?:\\s*)(?:時|:|：)(?:\\s*)([0-9０-９]+|半|[${obj5.join("")}`;
-const keys5 = Object.keys(alphaNum.NUMBER);
+const keys5 = Object.keys(NUMBER.NUMBER);
 const regExp1 = new RegExp(text3 + "]+)?(?:\\s*)(?:\u5206|:|\uFF1A)?(?:\\s*)([0-9\uFF10-\uFF19]+|[" + keys5.join("") + "]+)?(?:\\s*)(?:\u79D2)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i");
 class JPTimeExpressionParser {
   constructor() {
-    self = this;
-    tmp = c2(this, JPTimeExpressionParser);
-    tmp2 = closure_4;
-    obj = closure_4(JPTimeExpressionParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, JPTimeExpressionParser);
+    const obj = _getPrototypeOf(JPTimeExpressionParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
@@ -159,34 +157,42 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(createParsingResult, index) {
+      let end2;
+      let end4;
+      let end5;
+      let end8;
+      let end9;
+      let start2;
+      let tmp7;
       if (index.index > 0) {
+        const str = createParsingResult.text[index.index - 1];
         if (str.match(/\w/)) {
           return null;
         }
-        str = createParsingResult.text[index.index - 1];
       }
       const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      let tmp3 = index[1];
-      if (null === tmp3) {
-        tmp3 = index[5];
+      let tmp6 = index[1];
+      const tmp3 = index[2];
+      const tmp4 = index[3];
+      const tmp5 = index[4];
+      if (null === tmp6) {
+        tmp6 = index[5];
       }
-      parsingResult.start = createTimeComponents(createParsingResult, index[2], index[3], index[4], tmp3);
+      parsingResult.start = createTimeComponents(createParsingResult, tmp3, tmp4, tmp5, tmp6);
       if (parsingResult.start) {
-        const match = regExp1.exec(createParsingResult.text.substring(parsingResult.index + parsingResult.text.length));
-        let tmp7 = parsingResult;
+        const str2 = createParsingResult.text;
+        const match = regExp1.exec(str2.substring(parsingResult.index + parsingResult.text.length));
+        let tmp10 = parsingResult;
         if (match) {
           parsingResult.text = parsingResult.text + match[0];
-          let tmp11 = match[1];
-          if (null === tmp11) {
-            tmp11 = match[5];
-          }
-          parsingResult.end = tmp2(createParsingResult, match[2], match[3], match[4], tmp11);
-          let tmp17 = null;
+          const tmp14 = match[1] ?? match[5];
+          parsingResult.end = createTimeComponents(createParsingResult, match[2], match[3], match[4], tmp14);
+          let tmp20 = null;
           if (parsingResult.end) {
             const end = parsingResult.end;
-            const isCertainResult = end.isCertain("meridiem");
-            let isCertainResult1 = !isCertainResult;
-            if (!isCertainResult) {
+            let isCertainResult1 = !end.isCertain("meridiem");
+            end.isCertain("meridiem");
+            if (isCertainResult1) {
               const start = parsingResult.start;
               isCertainResult1 = start.isCertain("meridiem");
             }
@@ -194,14 +200,15 @@ const items = [
               ({ end: end2, start: start2 } = parsingResult);
               end2.imply("meridiem", start2.get("meridiem"));
               const start3 = parsingResult.start;
-              value = start3.get("meridiem");
-              if (value === JPTimeExpressionParser(9900).Meridiem.PM) {
+              const value = start3.get("meridiem");
+              const tmp25 = require;
+              if (value === Meridiem.Meridiem.PM) {
                 const start5 = parsingResult.start;
                 const end10 = parsingResult.end;
                 const diff = start5.get("hour") - 12;
                 if (diff > end10.get("hour")) {
                   const end6 = parsingResult.end;
-                  end6.imply("meridiem", tmp22(9900).Meridiem.AM);
+                  end6.imply("meridiem", tmp25(9900).Meridiem.AM);
                 } else {
                   const end3 = parsingResult.end;
                   if (end3.get("hour") < 12) {
@@ -210,28 +217,27 @@ const items = [
                   }
                 }
               }
-              tmp22 = JPTimeExpressionParser;
             }
             const end7 = parsingResult.end;
             const start4 = parsingResult.start;
-            const time = end7.date().getTime();
             const dateResult = end7.date();
-            tmp17 = parsingResult;
+            const time = dateResult.getTime();
+            tmp20 = parsingResult;
+            const dateResult1 = start4.date();
             if (time < dateResult1.getTime()) {
               ({ end: end8, end: end9 } = parsingResult);
               end8.imply("day", end9.get("day") + 1);
-              tmp17 = parsingResult;
+              tmp20 = parsingResult;
             }
-            dateResult1 = start4.date();
           }
-          tmp7 = tmp17;
+          tmp10 = tmp20;
         }
-        let tmp4 = tmp7;
+        tmp7 = tmp10;
       } else {
         index.index = index.index + index[0].length;
-        tmp4 = null;
+        tmp7 = null;
       }
-      return tmp4;
+      return tmp7;
     }
   }
 ];

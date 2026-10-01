@@ -5,16 +5,16 @@
 // Exports: createGuildDiscoveryDisqualifiedSystemMessage, createGuildDiscoveryGracePeriodFinalWarningSystemMessage, createGuildDiscoveryGracePeriodInitialWarningSystemMessage, createGuildDiscoveryRequalifiedSystemMessage
 
 // Module 7451 (GuildDiscoverySystemMessage)
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import createCommonMessageDefault from "createCommonMessage" /* 7406 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildDiscoverySystemMessage.tsx");
 
 export const createGuildDiscoveryDisqualifiedSystemMessage = function createGuildDiscoveryDisqualifiedSystemMessage(message) {
+  let formatToPartsResult;
   message = message.message;
   const channel = ChannelStore.getChannel(message.channel_id);
   let guild_id;
@@ -38,24 +38,26 @@ export const createGuildDiscoveryDisqualifiedSystemMessage = function createGuil
     name = null;
   }
   if (null != name) {
-    const intl2 = util.intl;
+    const intl2 = intl3.intl;
     const obj = { guildName: name };
-    let formatToPartsResult = intl2.formatToParts(util.t.NaUZWO, obj);
+    formatToPartsResult = intl2.formatToParts(intl3.t.NaUZWO, obj);
   } else {
-    const intl = util.intl;
-    formatToPartsResult = intl.string(util.t.NxS3hY);
+    const intl = intl3.intl;
+    formatToPartsResult = intl.string(intl3.t.NxS3hY);
   }
+  const obj2 = { content: formatToPartsResult };
   const merged = Object.assign(createCommonMessageDefault(message));
-  return { content: formatToPartsResult };
+  return obj2;
 };
 export const createGuildDiscoveryRequalifiedSystemMessage = function createGuildDiscoveryRequalifiedSystemMessage(message) {
-  const obj = { content: null };
-  const intl = util.intl;
-  obj.content = intl.string(util.t.tu6tOR);
+  let intl;
+  const obj = { content: intl.string(intl3.t.tu6tOR) };
+  intl = intl3.intl;
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj;
 };
 export const createGuildDiscoveryGracePeriodInitialWarningSystemMessage = function createGuildDiscoveryGracePeriodInitialWarningSystemMessage(message) {
+  let formatToPartsResult;
   message = message.message;
   const channel = ChannelStore.getChannel(message.channel_id);
   let guild_id;
@@ -79,17 +81,19 @@ export const createGuildDiscoveryGracePeriodInitialWarningSystemMessage = functi
     name = null;
   }
   if (null != name) {
-    const intl2 = util.intl;
+    const intl2 = intl3.intl;
     const obj = { guildName: name };
-    let formatToPartsResult = intl2.formatToParts(util.t["fJP+Wx"], obj);
+    formatToPartsResult = intl2.formatToParts(intl3.t["fJP+Wx"], obj);
   } else {
-    const intl = util.intl;
-    formatToPartsResult = intl.string(util.t.BoiiWz);
+    const intl = intl3.intl;
+    formatToPartsResult = intl.string(intl3.t.BoiiWz);
   }
+  const obj2 = { content: formatToPartsResult };
   const merged = Object.assign(createCommonMessageDefault(message));
-  return { content: formatToPartsResult };
+  return obj2;
 };
 export const createGuildDiscoveryGracePeriodFinalWarningSystemMessage = function createGuildDiscoveryGracePeriodFinalWarningSystemMessage(message) {
+  let formatToPartsResult;
   message = message.message;
   const channel = ChannelStore.getChannel(message.channel_id);
   let guild_id;
@@ -113,13 +117,14 @@ export const createGuildDiscoveryGracePeriodFinalWarningSystemMessage = function
     name = null;
   }
   if (null != name) {
-    const intl2 = util.intl;
+    const intl2 = intl3.intl;
     const obj = { guildName: name };
-    let formatToPartsResult = intl2.formatToParts(util.t.bPMe3o, obj);
+    formatToPartsResult = intl2.formatToParts(intl3.t.bPMe3o, obj);
   } else {
-    const intl = util.intl;
-    formatToPartsResult = intl.string(util.t.ED4mGc);
+    const intl = intl3.intl;
+    formatToPartsResult = intl.string(intl3.t.ED4mGc);
   }
+  const obj2 = { content: formatToPartsResult };
   const merged = Object.assign(createCommonMessageDefault(message));
-  return { content: formatToPartsResult };
+  return obj2;
 };

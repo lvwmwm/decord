@@ -4,122 +4,113 @@
 // Dependencies: [109, 19, 17, 2112, 1372, 1074, 21, 4836, 504, 1485, 1979, 1613, 1115, 5177, 5276, 5279, 576, 4832, 1364, 17070, 5435, 4785, 2]
 
 // Module 17071 (HcaptchaModal)
+import Constants from "Constants" /* 1074 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5177 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let navigation;
+
+let closure_12;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let unpackModuleId;
 class HcaptchaModal {
-  constructor(arg0) {
-    onMessage = global.onMessage;
-    tmp = closure_4(global, closure_3);
-    tmp2 = closure_13();
-    tmp3 = onMessage;
-    tmp4 = closure_2;
-    obj = onMessage(closure_2[8]);
-    items = [];
-    items[0] = closure_10;
-    stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-    obj2 = onMessage(closure_2[9]);
+  constructor(onMessage) {
+    let PressableOpacity;
+    let XLargeIcon;
+    let currentUser;
+    let intl2;
+    let items2;
+    let items3;
+    let items4;
+    let obj11;
+    let obj12;
+    let obj8;
+    let onPress;
+    let tmp9Result;
+    onMessage = onMessage.onMessage;
+    const tmp = _objectWithoutProperties(onMessage, closure_3);
+    const tmp2 = closure_13();
+    let obj = onMessage(504);
+    const items = [UserStore];
+    const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+    let obj2 = onMessage(1485);
     navigation = obj2.useNavigation();
-    routes = navigation.getState().routes;
-    tmp6 = routes.length > 0;
-    if (tmp6) {
-      str = "auth";
-      tmp6 = "auth" === routes[0].name;
-    }
+    const routes = navigation.getState().routes;
+    let tmp6 = routes.length > 0 && "auth" === routes[0].name;
     if (!tmp6) {
-      tmp7 = null;
-      prop = undefined;
+      let prop;
       if (stateFromStores != null) {
         prop = stateFromStores.ageVerificationStatus;
       }
-      tmp6 = prop === tmp3(tmp4[10]).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
+      tmp6 = prop === tmp3(1979).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
     }
-    tmp9 = closure_1;
-    rect = closure_1(tmp4[11])();
-    intl = tmp3(tmp4[12]).intl;
-    items1 = [];
-    items1[0] = onMessage;
-    stringResult = intl.string(tmp3(tmp4[12]).t.wsoPhr);
-    callback = closure_5.useCallback(() => {
+    const rect = onPress(1613)();
+    const intl = tmp3(1115).intl;
+    const items1 = [onMessage];
+    const stringResult = intl.string(onMessage(1115).t.wsoPhr);
+    onPress = react.useCallback(() => {
+      let obj2;
       if (onMessage != null) {
-        const obj = { nativeEvent: null };
-        const obj2 = { data: SharedCaptchaUtils.CaptchaError.CANCEL };
-        obj.nativeEvent = obj2;
+        const obj = { nativeEvent: obj2 };
+        obj2 = { data: SharedCaptchaUtils.CaptchaError.CANCEL };
         tmp(obj);
       }
     }, items1);
-    closure_1 = callback;
-    tmp12 = closure_1(tmp4[14])(() => {
+    onPress(5276)(() => {
       callback();
       return true;
     });
-    tmp13 = jsxs;
-    tmp14 = View;
-    obj1 = { style: tmp2.container, children: null };
-    tmp13Result = !tmp6;
-    if (!tmp6) {
-      obj15 = { spacing: null, align: "center", children: null };
-      obj15.spacing = tmp9(tmp4[16]).space.PX_16;
-      tmp16 = jsx;
-      obj16 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
-      obj16.style = tmp2.title;
-      obj16.children = stringResult;
-      items2 = [, ];
-      items2[0] = jsx(tmp3(tmp4[17]).Text, obj16);
-      tmp17 = ActivityIndicator;
-      tmp3Result = tmp3(tmp4[18]);
-      WHITE = undefined;
+    let tmp13Result = !tmp6;
+    const obj3 = { style: tmp2.container, children: items3 };
+    if (tmp13Result) {
+      const obj4 = { spacing: onPress(576).space.PX_16, align: "center", children: items2 };
+      const Stack = tmp3(5279).Stack;
+      const obj5 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp2.title, children: stringResult };
+      items2 = [closure_11(tmp3(4832).Text, obj5), ];
+      let WHITE;
+      const tmp16 = closure_11;
+      const tmp17 = closure_6;
+      const tmp3Result = onMessage(1364);
       if (tmp3Result.isAndroid()) {
-        WHITE = tmp9(tmp4[16]).unsafe_rawColors.WHITE;
+        WHITE = tmp9(576).unsafe_rawColors.WHITE;
       }
-      obj17 = { size: "small", color: null };
-      obj17.color = WHITE;
-      items2[1] = tmp16(tmp17, obj17);
-      obj15.children = items2;
-      tmp13Result = tmp13(tmp3(tmp4[15]).Stack, obj15);
+      const obj6 = { size: "small", color: WHITE };
+      items2[1] = tmp16(tmp17, obj6);
+      tmp13Result = tmp13(Stack, obj4);
     }
-    items3 = [, , ];
-    items3[0] = tmp13Result;
-    obj18 = { style: StyleSheet.absoluteFillObject, children: null };
-    obj19 = {};
-    tmp9Result = tmp9(tmp4[19]);
-    merged = Object.assign(tmp);
-    obj19.languageCode = closure_9.locale;
-    obj19.onMessage = onMessage;
-    obj18.children = jsx(tmp9Result, obj19);
-    items3[1] = jsx(tmp14, obj18);
-    obj20 = { style: null, pointerEvents: "box-none", children: null };
-    items4 = [, ];
-    items4[0] = tmp2.closeButtonContainer;
-    obj21 = { paddingTop: rect.top + tmp9(tmp4[16]).space.PX_8, paddingLeft: rect.left + tmp9(tmp4[16]).space.PX_16 };
-    items4[1] = obj21;
-    obj20.style = items4;
-    obj22 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-    intl2 = tmp3(tmp4[12]).intl;
-    obj22.accessibilityLabel = intl2.string(tmp3(tmp4[12]).t.cpT0Cq);
-    obj22.onPress = callback;
-    obj22.style = tmp2.closeButtonHitArea;
-    obj23 = { color: tmp9(tmp4[16]).colors.INTERACTIVE_ICON_DEFAULT };
-    obj22.children = jsx(tmp3(tmp4[21]).XLargeIcon, obj23);
-    obj20.children = jsx(tmp3(tmp4[20]).PressableOpacity, obj22);
-    items3[2] = jsx(tmp14, obj20);
-    obj1.children = items3;
-    return tmp13(tmp14, obj1);
+    items3 = [tmp13Result, , ];
+    const obj7 = { style: absoluteFillObject.absoluteFillObject, children: closure_11(tmp9Result, obj8) };
+    obj8 = { languageCode: LocaleStore.locale, onMessage };
+    tmp9Result = onPress(17070);
+    const merged = Object.assign(tmp);
+    items3[1] = closure_11(closure_7, obj7);
+    const obj9 = { style: items4, pointerEvents: "box-none", children: closure_11(PressableOpacity, obj11) };
+    items4 = [tmp2.closeButtonContainer, { paddingTop: rect.top + onPress(576).space.PX_8, paddingLeft: rect.left + onPress(576).space.PX_16 }];
+    obj11 = { accessibilityRole: "button", accessibilityLabel: intl2.string(onMessage(1115).t.cpT0Cq), onPress, style: tmp2.closeButtonHitArea, children: closure_11(XLargeIcon, obj12) };
+    ({ paddingTop: rect.top + onPress(576).space.PX_8, paddingLeft: rect.left + onPress(576).space.PX_16 });
+    PressableOpacity = tmp3(5435).PressableOpacity;
+    intl2 = tmp3(1115).intl;
+    obj12 = { color: onPress(576).colors.INTERACTIVE_ICON_DEFAULT };
+    XLargeIcon = tmp3(4785).XLargeIcon;
+    items3[2] = closure_11(closure_7, obj9);
+    return closure_12(closure_7, obj3);
   }
 }
 let closure_3 = ["onMessage", "onClose"];
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: metroRequire, View: closure_7, StyleSheet: closure_8 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4836);
+({ ActivityIndicator: metroRequire, View: metroImportDefault, StyleSheet: metroImportAll } = react_native);
+const ModalAnimation = Constants.ModalAnimation;
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 createStyles.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" }, title: { textAlign: "center" }, closeButtonContainer: { position: "absolute", top: 0, left: 0, zIndex: 2 }, closeButtonHitArea: { minWidth: 44, minHeight: 44, justifyContent: "center", alignItems: "center" } });
-HcaptchaModal.modalConfig = { animation: fn(1074).ModalAnimation.FADE };
-const size = fn(2);
+HcaptchaModal.modalConfig = { animation: ModalAnimation.FADE };
 const result = size.fileFinishedImporting("modules/captcha/native/HcaptchaModal.tsx");
 
 export default HcaptchaModal;

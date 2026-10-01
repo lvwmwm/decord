@@ -4,11 +4,11 @@
 // Dependencies: [43]
 
 // Module 15105 (_defineProperty)
-import _mod43 from "module_43" /* 43 */;
+import toPropertyKey from "toPropertyKey" /* 43 */;
 
 
 export default function _defineProperty(arg0, arg1, value) {
-  const tmp = _mod43(arg1);
+  const tmp = toPropertyKey(arg1);
   if (tmp in arg0) {
     const _Object = Object;
     const obj = { value, enumerable: true, configurable: true, writable: true };

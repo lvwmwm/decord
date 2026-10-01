@@ -4,36 +4,52 @@
 // Dependencies: [19, 17, 4825, 5756, 14624, 21, 4836, 14737, 14621, 8271, 14742, 504, 1364, 5899, 4540, 10687, 2]
 
 // Module 14741 (QuestDockBountyIllustration)
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import native from "native" /* 4540 */;
-import APNGPlayer from "APNGPlayer" /* 8271 */;
+import QuestConstants from "QuestConstants" /* 5756 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import APNGPlayer2 from "APNGPlayer" /* 8271 */;
 import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 10687 */;
 import QuestDockHooks from "QuestDockHooks" /* 14621 */;
 import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 14737 */;
 import _modDef14742 from "module_14742" /* 14742 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import QuestDockConstants from "QuestDockConstants" /* 14624 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let current;
+
+let QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT;
+let QUEST_DOCK_COLLAPSED_HEIGHT;
+let items;
+let obj2;
+let size;
+let size1;
 function useRivePlaybackGateRef() {
   let tmp = useIsQuestDockContentVisibleDefault();
+  const obj = QuestDockHooks;
   if (tmp) {
     tmp = !obj.useIsQuestDockExpanded();
   }
-  let current = tmp;
-  noop.useRef(null);
-  noop.useRef(tmp);
-  noop.useRef(null);
-  const callback = noop.useCallback(() => {
+  let closure_0 = tmp;
+  let closure_1 = react.useRef(null);
+  let closure_2 = react.useRef(tmp);
+  let closure_3 = react.useRef(null);
+  const callback = react.useCallback(() => {
     if (null != ref3.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(tmp.current);
-      tmp.current = null;
+      clearTimeout(ref3.current);
+      ref3.current = null;
     }
   }, []);
   const items = [tmp, callback];
-  const effect = noop.useEffect(() => {
-    closure_2.current = current;
+  const effect = react.useEffect(() => {
+    ref2.current = current;
     if (current) {
       callback();
       const current2 = ref.current;
@@ -48,19 +64,16 @@ function useRivePlaybackGateRef() {
     }
   }, items);
   const items1 = [callback];
-  const effect1 = noop.useEffect(() => callback, items1);
+  const effect1 = react.useEffect(() => callback, items1);
   const items2 = [callback];
-  return noop.useCallback((current) => {
+  return react.useCallback((current) => {
     closure_1.current = current;
     callback();
-    current = null == current;
-    if (!current) {
-      current = ref2.current;
-    }
+    current = null == current || ref2.current;
     if (!current) {
       const _setTimeout = setTimeout;
       closure_3.current = setTimeout(() => {
-        closure_3.current = null;
+        ref3.current = null;
         if (!ref.current) {
           current.pause();
         }
@@ -69,93 +82,85 @@ function useRivePlaybackGateRef() {
   }, items2);
 }
 function IllustrationFrame(arg0) {
+  let children;
+  let style;
   ({ style, children } = arg0);
-  const obj = { style: null, pointerEvents: "none", accessible: false, importantForAccessibility: "no-hide-descendants", children: null };
   const items = [closure_8().frame, style];
-  obj.style = items;
-  obj.children = children;
-  return <View style={null} pointerEvents="none" accessible={false} importantForAccessibility="no-hide-descendants">{null}</View>;
+  return <View style={items} pointerEvents="none" accessible={false} importantForAccessibility="no-hide-descendants">{children}</View>;
 }
 function QuestDock3DOrbsAPNGPlayer(shouldAnimate) {
   shouldAnimate = shouldAnimate.shouldAnimate;
-  const ref = noop.useRef(null);
   const tmp = closure_8();
-  const aPNGPlayerControls = APNGPlayer.useAPNGPlayerControls(ref);
+  const ref = react.useRef(null);
+  const obj = APNGPlayer2;
+  const aPNGPlayerControls = obj.useAPNGPlayerControls(ref);
   const items = [aPNGPlayerControls, shouldAnimate];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (shouldAnimate) {
-      obj.play();
+      aPNGPlayerControls.play();
     } else {
-      obj.pause();
+      aPNGPlayerControls.pause();
     }
   }, items);
-  return jsx(APNGPlayer.APNGPlayer, { ref, url: _modDef14742, style: tmp.fill, autoplay: false });
+  const APNGPlayer = APNGPlayer2.APNGPlayer;
+  return <APNGPlayer ref={ref} url={_modDef14742} style={tmp.fill} autoplay={false} />;
 }
 function QuestDock3DOrbsIllustration() {
-  const tmp = closure_8();
+  let obj5;
+  let tmp8Result;
+  let useReducedMotion;
   const items = [AccessibilityStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const tmp = closure_8();
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const tmp6 = useIsQuestDockContentVisibleDefault();
-  let tmp7 = tmp6;
-  if (tmp6) {
-    tmp7 = !obj2.useIsQuestDockExpanded();
-  }
-  if (tmp7) {
-    tmp7 = !stateFromStores;
-  }
-  obj2 = QuestDockHooks;
+  const obj2 = QuestDockHooks;
+  const tmp7 = tmp6 && !obj2.useIsQuestDockExpanded() && !stateFromStores;
+  const tmp2Result = PlatformUtils;
   if (tmp2Result.isAndroid()) {
     const obj3 = { shouldAnimate: tmp7 };
-    let tmp8Result = tmp8(QuestDock3DOrbsAPNGPlayer, obj3);
+    tmp8Result = tmp8(QuestDock3DOrbsAPNGPlayer, obj3);
   } else {
-    const obj4 = { source: null, style: null, resizeMode: "contain", enableAnimation: null, paused: null, accessible: false };
-    const obj5 = { uri: tmp5(14742) };
-    obj4.source = obj5;
-    obj4.style = tmp.fill;
-    obj4.enableAnimation = !stateFromStores;
-    obj4.paused = !tmp7;
-    tmp8Result = tmp8(tmp5(5899), obj4);
-    const tmp5Result = tmp5(5899);
+    const obj4 = { source: obj5, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp7, accessible: false };
+    obj5 = { uri: _modDef14742 };
+    const tmp5Result = FastImageDefault;
+    tmp8Result = tmp8(tmp5Result, obj4);
   }
   return tmp8Result;
 }
 function QuestDock2DOrbsIllustration() {
-  return jsx(native.QuestBar_2DOrbsRive, { ref: useRivePlaybackGateRef(), stateMachine: "State Machine 1", fit: "contain" });
+  const ref = useRivePlaybackGateRef();
+  return jsx(native.QuestBar_2DOrbsRive, { ref, stateMachine: "State Machine 1", fit: "contain" });
 }
 function QuestDockOrbHandsIllustration() {
-  return jsx(native.OrbsIllustration_HandsRive, { ref: useRivePlaybackGateRef(), stateMachine: "State Machine 1", fit: "contain" });
+  const ref = useRivePlaybackGateRef();
+  return jsx(native.OrbsIllustration_HandsRive, { ref, stateMachine: "State Machine 1", fit: "contain" });
 }
-const View = fn(17).View;
-const QuestsExperimentLocations = fn(5756).QuestsExperimentLocations;
-const QuestDockConstants = fn(14624);
+const View = react_native.View;
+const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 ({ QUEST_DOCK_COLLAPSED_HEIGHT, QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT } = QuestDockConstants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { frame: { marginRight: -QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT + 5 }, hands: null, orbs: null, fill: { flex: 1 } };
-let size = { width: 124, height: QUEST_DOCK_COLLAPSED_HEIGHT, transform: null };
-let items = [{ translateY: -2 }];
-size.transform = items;
-obj.hands = size;
-const size1 = { width: 120, height: 70, marginBottom: QUEST_DOCK_COLLAPSED_HEIGHT - 70 };
-obj.orbs = size1;
+const jsx = Fragment.jsx;
+let obj = { frame: obj2, hands: size, orbs: size1, fill: { flex: 1 } };
+obj2 = { marginRight: -QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT + 5 };
+size = { width: 124, height: QUEST_DOCK_COLLAPSED_HEIGHT, transform: items };
+items = [{ translateY: -2 }];
+size1 = { width: 120, height: 70, marginBottom: QUEST_DOCK_COLLAPSED_HEIGHT - 70 };
 let closure_8 = createStyles.createStyles(obj);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBountyIllustration.tsx");
-
-export default noop.memo(function QuestDockBountyIllustration() {
+const memoResult = react.memo(function QuestDockBountyIllustration() {
   const tmp = closure_8();
   const BountiesMobileQuestBarExperiment = BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarExperiment;
-  const illustration = BountiesMobileQuestBarExperiment.useConfig({ location: QuestsExperimentLocations.QUESTS_BAR_MOBILE }).illustration;
+  const obj = { location: QuestsExperimentLocations.QUESTS_BAR_MOBILE };
+  const illustration = BountiesMobileQuestBarExperiment.useConfig(obj).illustration;
   if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_2 === illustration) {
-    const obj2 = { style: tmp.orbs, children: <QuestDock2DOrbsIllustration /> };
     return <IllustrationFrame style={tmp.orbs}><QuestDock2DOrbsIllustration /></IllustrationFrame>;
-  } else if (tmp2(10687).BountiesMobileQuestBarIllustration.ILLUSTRATION_3 === illustration) {
-    const obj3 = { style: tmp.hands, children: <QuestDockOrbHandsIllustration /> };
+  } else if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_3 === illustration) {
     return <IllustrationFrame style={tmp.hands}><QuestDockOrbHandsIllustration /></IllustrationFrame>;
-  } else if (tmp2(10687).BountiesMobileQuestBarIllustration.ILLUSTRATION_1 === illustration) {
-    const obj4 = { style: tmp.orbs, children: <QuestDock3DOrbsIllustration /> };
+  } else if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_1 === illustration) {
     return <IllustrationFrame style={tmp.orbs}><QuestDock3DOrbsIllustration /></IllustrationFrame>;
   }
-  const obj = { location: QuestsExperimentLocations.QUESTS_BAR_MOBILE };
 });
+size = size_mod;
+const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBountyIllustration.tsx");
+
+export default memoResult;
 export const QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH = 95;

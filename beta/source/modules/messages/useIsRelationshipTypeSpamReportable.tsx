@@ -5,19 +5,21 @@
 // Exports: useIsRelationshipTypeSpamReportable
 
 // Module 12090 (useIsRelationshipTypeSpamReportable)
+import Constants from "Constants" /* 1074 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const RelationshipTypes = fn(1074).RelationshipTypes;
-const size = fn(2);
+const RelationshipTypes = Constants.RelationshipTypes;
 const result = size.fileFinishedImporting("modules/messages/useIsRelationshipTypeSpamReportable.tsx");
 
 export const useIsRelationshipTypeSpamReportable = function useIsRelationshipTypeSpamReportable(id) {
   _require = id;
   const items = [RelationshipStore];
   const items1 = [id];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => RelationshipStore.getRelationshipType(closure_0), items1);
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => RelationshipStore.getRelationshipType(id), items1);
   return stateFromStores === RelationshipTypes.NONE || stateFromStores === RelationshipTypes.BLOCKED || stateFromStores === RelationshipTypes.PENDING_INCOMING;
 };

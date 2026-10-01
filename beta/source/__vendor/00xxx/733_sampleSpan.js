@@ -7,51 +7,64 @@
 // Module 733 (sampleSpan)
 import _mod720 from "module_720" /* 720 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+let parentSampleRate;
+
+let tmp;
+const _mod688 = tmp(688);
+const CONSOLE_LEVELS = tmp(689);
+const _mod701 = tmp(701);
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const sampleSpan = function sampleSpan(tracesSampler, parentSampled, arg2) {
+  let closure_0 = parentSampled;
+  const tmp = require;
+  const obj = _mod720;
   if (obj.hasSpansEnabled(tracesSampler)) {
+    let tracesSampleRate;
+    let flag2;
     if (typeof tracesSampler.tracesSampler === "function") {
-      const obj2 = {};
-      const merged = Object.assign(parentSampled);
-      obj2.inheritOrSampleWith = function inheritOrSampleWith(arg0) {
-        if (typeof parentSampled.parentSampleRate === "number") {
-          let parentSampleRate = tmp.parentSampleRate;
-        } else {
-          parentSampleRate = arg0;
-          if (typeof tmp.parentSampled === "boolean") {
-            const _Number = Number;
-            parentSampleRate = Number(tmp.parentSampled);
-          }
-        }
-        return parentSampleRate;
+      tracesSampler = tracesSampler.tracesSampler;
+      const obj2 = {
+        inheritOrSampleWith(arg0) {
+              if (typeof parentSampleRate.parentSampleRate === "number") {
+                parentSampleRate = tmp.parentSampleRate;
+              } else {
+                parentSampleRate = arg0;
+                if (typeof parentSampleRate.parentSampled === "boolean") {
+                  const _Number = Number;
+                  parentSampleRate = Number(tmp.parentSampled);
+                }
+              }
+              return parentSampleRate;
+            }
       };
-      let tracesSampleRate = tracesSampler.tracesSampler(obj2);
-      let flag2 = true;
+      const merged = Object.assign(parentSampled);
+      tracesSampleRate = tracesSampler(obj2);
+      flag2 = true;
     } else if (undefined !== parentSampled.parentSampled) {
       tracesSampleRate = parentSampled.parentSampled;
     } else if (undefined !== tracesSampler.tracesSampleRate) {
       tracesSampleRate = tracesSampler.tracesSampleRate;
       flag2 = true;
     }
-    const parseSampleRateResult = tmp(701).parseSampleRate(tracesSampleRate);
+    const tmpResult = _mod701;
+    const parseSampleRateResult = tmpResult.parseSampleRate(tracesSampleRate);
     if (undefined === parseSampleRateResult) {
-      if (tmp(688).DEBUG_BUILD) {
-        const debug3 = tmp(689).debug;
+      if (_mod688.DEBUG_BUILD) {
+        const debug3 = CONSOLE_LEVELS.debug;
         const _JSON = JSON;
+        const warn = debug3.warn;
         const json = JSON.stringify(tracesSampleRate);
         const _JSON2 = JSON;
         const _HermesInternal2 = HermesInternal;
-        debug3.warn("[Tracing] Discarding root span because of invalid sample rate. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof tracesSampleRate) + ".");
+        warn("[Tracing] Discarding root span because of invalid sample rate. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof tracesSampleRate) + ".");
       }
       const items = [false];
       return items;
     } else if (parseSampleRateResult) {
       if (arg2 >= parseSampleRateResult) {
-        if (tmp(688).DEBUG_BUILD) {
-          const debug2 = tmp(689).debug;
+        if (_mod688.DEBUG_BUILD) {
+          const debug2 = CONSOLE_LEVELS.debug;
           let _Number = Number;
           const _HermesInternal = HermesInternal;
           debug2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(tracesSampleRate) + ")");
@@ -60,21 +73,20 @@ export const sampleSpan = function sampleSpan(tracesSampler, parentSampled, arg2
       const items1 = [arg2 < parseSampleRateResult, parseSampleRateResult, flag2];
       return items1;
     } else {
-      if (tmp(688).DEBUG_BUILD) {
-        const debug = tmp(689).debug;
+      if (_mod688.DEBUG_BUILD) {
+        const debug = CONSOLE_LEVELS.debug;
         let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
+        const log = debug.log;
         if (typeof tracesSampler.tracesSampler === "function") {
           str = "tracesSampler returned 0 or false";
         }
-        debug.log(`[Tracing] Discarding transaction because ${str}`);
+        log(`[Tracing] Discarding transaction because ${str}`);
       }
       const items2 = [false, parseSampleRateResult, flag2];
       return items2;
     }
-    const tmpResult = tmp(701);
   } else {
     const items3 = [false];
     return items3;
   }
-  obj = _mod720;
 };

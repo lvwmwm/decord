@@ -5,17 +5,18 @@
 // Exports: default
 
 // Module 11705 (ErrorBlock)
+import Fragment from "Fragment" /* 21 */;
 import MessageBlock from "MessageBlock" /* 11706 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const MessageBlockDefault = MessageBlock;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/ErrorBlock.tsx");
 
 export default function ErrorBlock(children) {
-  const obj = { color: MessageBlock.MessageBlockColors.RED, children: children.children };
-  return jsx(MessageBlockDefault, { color: MessageBlock.MessageBlockColors.RED, children: children.children });
+  children = children.children;
+  MessageBlockDefault;
+  return <tmp color={MessageBlock.MessageBlockColors.RED}>{children}</tmp>;
 };

@@ -5,25 +5,28 @@
 // Exports: CollectiblesAnalyticsProvider, useCollectiblesAnalyticsContext
 
 // Module 8229 (CollectiblesAnalyticsContext)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-let context = noop.createContext(null);
-const size = fn(2);
+const jsx = Fragment.jsx;
+let context = react.createContext(null);
 const result = size.fileFinishedImporting("modules/collectibles/CollectiblesAnalyticsContext.tsx");
 
 export const CollectiblesAnalyticsContext = context;
 export const useCollectiblesAnalyticsContext = function useCollectiblesAnalyticsContext() {
-  return noop.useContext(context);
+  return react.useContext(context);
 };
-export const CollectiblesAnalyticsProvider = function CollectiblesAnalyticsProvider(children) {
-  const newValue = children.newValue;
+export const CollectiblesAnalyticsProvider = function CollectiblesAnalyticsProvider(newValue) {
+  newValue = newValue.newValue;
   context = undefined;
-  context = noop.useContext(context);
+  const children = newValue.children;
+  context = react.useContext(context);
   const items = [context, newValue];
-  return <context.Provider value={noop.useMemo(() => {
+  return <context.Provider value={react.useMemo(() => {
+    const obj = {};
     const merged = Object.assign(context);
     const merged1 = Object.assign(newValue);
-    return {};
-  }, items)}>{arg0.children}</context.Provider>;
+    return obj;
+  }, items)}>{children}</context.Provider>;
 };

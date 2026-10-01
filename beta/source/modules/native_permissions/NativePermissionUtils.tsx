@@ -4,18 +4,23 @@
 // Dependencies: [5452, 5453, 5454, 5458, 2, 5455]
 
 // Module 5451 (NativePermissionUtils)
+import ProcessArgs2 from "ProcessArgs" /* 5453 */;
+import nativePermissionDesktopNullUtils from "nativePermissionDesktopNullUtils" /* 5454 */;
+import NativePermissionBaseUtils from "NativePermissionBaseUtils" /* 5455 */;
+import mobile_NativePermissionUtils from "mobile/NativePermissionUtils" /* 5458 */;
 import NativePermissionManager_mod from "NativePermissionManager" /* 5452 */;
+import size from "module_2" /* 2 */;
 
+let _default;
 let NativePermissionManager = NativePermissionManager_mod;
 NativePermissionManager = NativePermissionManager.initialize();
-const ProcessArgs = fn(5453).ProcessArgs;
+const ProcessArgs = ProcessArgs2.ProcessArgs;
 if (ProcessArgs.isDiscordTestSet()) {
-  let _default = fn(5454).default;
+  _default = nativePermissionDesktopNullUtils.default;
 } else {
-  _default = fn(5458).default;
+  _default = mobile_NativePermissionUtils.default;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/native_permissions/NativePermissionUtils.tsx");
 
 export default _default;
-export const NativePermissionsRequestOptions = fn(5455).NativePermissionsRequestOptions;
+export const NativePermissionsRequestOptions = NativePermissionBaseUtils.NativePermissionsRequestOptions;

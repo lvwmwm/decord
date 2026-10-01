@@ -6,22 +6,24 @@
 // Module 1604
 import BaseNavigationContainer from "BaseNavigationContainer" /* 1488 */;
 import _mod1584 from "module_1584" /* 1584 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 
-require = arg1;
 
 export const useLinkTo = function useLinkTo() {
-  const context = noop.useContext(BaseNavigationContainer.NavigationContainerRefContext);
-  const buildAction = _mod1584.useBuildAction();
+  const context = react.useContext(BaseNavigationContainer.NavigationContainerRefContext);
+  let obj = _mod1584;
+  const buildAction = obj.useBuildAction();
   const items = [buildAction, context];
-  return noop.useCallback((arg0) => {
+  return react.useCallback(function(arg0) {
+    const obj = context;
     if (undefined === context) {
       const _Error = Error;
+      const self = this;
+      const self2 = this;
       const error = new Error("Couldn't find a navigation object. Is your component inside NavigationContainer?");
       throw error;
     } else {
       obj.dispatch(buildAction(arg0));
     }
-    obj = context;
   }, items);
 };

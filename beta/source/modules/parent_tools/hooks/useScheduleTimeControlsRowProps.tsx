@@ -5,38 +5,42 @@
 // Exports: default
 
 // Module 14446 (useScheduleTimeControlsRowProps)
-import jsxProd from "jsxProd" /* 21 */;
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl4 from "intl" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx");
 
 export default function useScheduleTimeControlsRowProps(arr) {
+  let Text2;
+  let intl;
+  let intl2;
+  let obj5;
+  let tmp10;
   if (0 === arr.length) {
     const obj2 = { subLabel: null, trailing: "a" };
-    const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
-    const intl = util.intl;
-    obj3.children = intl.string(_modDef2487.fOBIZH);
-    obj2.subLabel = jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: null });
+    ({ variant: "text-xs/medium", color: "text-muted", children: intl.string(_modDef2487.fOBIZH) });
+    const Text = Text_Text.Text;
+    intl = intl4.intl;
     return obj2;
   } else {
-    const obj4 = { subLabel: null, trailing: null };
-    const intl2 = util.intl;
-    const obj5 = { count: arr.length };
-    obj4.subLabel = intl2.formatToPlainString(_modDef2487.XfwcpX, obj5);
-    const intl3 = util.intl;
+    const obj4 = { subLabel: intl2.formatToPlainString(_modDef2487.XfwcpX, obj5), trailing: tmp10(Text2, obj) };
+    const someResult = arr.some((enabled) => enabled.enabled);
+    intl2 = intl4.intl;
+    obj5 = { count: arr.length };
+    Text2 = Text_Text.Text;
+    const intl3 = intl4.intl;
     const string = intl3.string;
     const tmp11 = _modDef2487;
+    tmp10 = jsx;
     if (someResult) {
       let stringResult = string(tmp11["8vDHRq"]);
     } else {
       stringResult = string(tmp11["4z9fN+"]);
     }
-    const obj = { variant: "text-sm/medium", color: "text-muted", children: stringResult };
-    obj4.trailing = jsx(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: stringResult });
     return obj4;
   }
 };

@@ -7,7 +7,7 @@
 // Module 10677 (badgeDetailsCtas)
 import Constants from "Constants" /* 1074 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import openURLDefault from "openURL" /* 4519 */;
 import QuestContent from "QuestContent" /* 5761 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
@@ -20,87 +20,101 @@ import size from "module_2" /* 2 */;
 
 const UserSettingsSections = Constants.UserSettingsSections;
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
-let closure_5 = {
-  [BadgeId.BadgeId.STAFF]: {
-    ctaLabel() {
-      const intl = util.intl;
-      return intl.string(util.t.q7A8hP);
-    },
-    ctaAction() {
-      return openURLDefault("https://discord.com/careers");
-    }
+let obj = {
+  ctaLabel() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t.q7A8hP);
   },
-  [BadgeId.BadgeId.PREMIUM_TENURE]: {
-    ctaLabel(arg0) {
-      ({ owned, isViewerOnUpgradeableNitro } = arg0);
-      const intl = util.intl;
-      const string = intl.string;
-      const t = util.t;
-      if (isViewerOnUpgradeableNitro) {
-        let stringResult = string(t.uKFeS1);
-      } else if (owned) {
-        stringResult = string(t.xGjjkd);
-      } else {
-        stringResult = string(t.BTxm69);
-      }
-      return stringResult;
-    },
-    ctaAction() {
-      return openUserSettings.openUserSettings({ screen: UserSettingsSections.PREMIUM });
-    }
-  },
-  [BadgeId.BadgeId.GUILD_BOOSTER]: {
-    ctaLabel(owned) {
-      const intl = util.intl;
-      const string = intl.string;
-      const t = util.t;
-      if (owned.owned) {
-        let stringResult = string(t.VMvz3m);
-      } else {
-        stringResult = string(t.xFVZeU);
-      }
-      return stringResult;
-    },
-    ctaAction() {
-      return openUserSettings.openUserSettings({ screen: UserSettingsSections.GUILD_BOOSTING });
-    }
-  },
-  [BadgeId.BadgeId.ORB_PROFILE]: {
-    ctaLabel() {
-      const intl = util.intl;
-      return intl.string(util.t.EBYkzk);
-    },
-    ctaAction() {
-      const obj2 = { screen: constants.ORBS, analyticsLocations: null, analyticsSource: null };
-      const items = [AnalyticsLocationDefault.BADGE];
-      obj2.analyticsLocations = items;
-      obj2.analyticsSource = AnalyticsLocationDefault.BADGE;
-      return CollectiblesActionCreators.openCollectiblesShopMobile(obj2);
-    }
-  },
-  [BadgeId.BadgeId.QUEST_COMPLETED]: {
-    ctaLabel() {
-      const intl = util.intl;
-      return intl.string(util.t.swICIT);
-    },
-    ctaAction() {
-      const obj = QuestUtils;
-      return obj.openQuestHome({ fromContent: QuestContent.QuestContent.QUEST_BADGE });
-    }
-  },
-  [BadgeId.BadgeId.GIFTING]: {
-    ctaLabel() {
-      const intl = util.intl;
-      return intl.string(util.t["nUA/JW"]);
-    },
-    ctaAction() {
-      const obj2 = { analyticsLocations: null };
-      const items = [AnalyticsLocationDefault.BADGE];
-      obj2.analyticsLocations = items;
-      return utils_openGiftModal.openGiftModal(obj2);
-    }
+  ctaAction() {
+    return openURLDefault("https://discord.com/careers");
   }
 };
+let obj2 = {
+  ctaLabel(arg0) {
+    let isViewerOnUpgradeableNitro;
+    let owned;
+    let stringResult;
+    ({ owned, isViewerOnUpgradeableNitro } = arg0);
+    const intl = intl2.intl;
+    const string = intl.string;
+    const t = intl2.t;
+    if (isViewerOnUpgradeableNitro) {
+      stringResult = string(t.uKFeS1);
+    } else if (owned) {
+      stringResult = string(t.xGjjkd);
+    } else {
+      stringResult = string(t.BTxm69);
+    }
+    return stringResult;
+  },
+  ctaAction() {
+    const obj = openUserSettings;
+    const obj2 = { screen: UserSettingsSections.PREMIUM };
+    return obj.openUserSettings(obj2);
+  }
+};
+const obj3 = {
+  ctaLabel(owned) {
+    let stringResult;
+    owned = owned.owned;
+    const intl = intl2.intl;
+    const string = intl.string;
+    const t = intl2.t;
+    if (owned) {
+      stringResult = string(t.VMvz3m);
+    } else {
+      stringResult = string(t.xFVZeU);
+    }
+    return stringResult;
+  },
+  ctaAction() {
+    const obj = openUserSettings;
+    const obj2 = { screen: UserSettingsSections.GUILD_BOOSTING };
+    return obj.openUserSettings(obj2);
+  }
+};
+const obj4 = {
+  ctaLabel() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t.EBYkzk);
+  },
+  ctaAction() {
+    let items;
+    const obj = { screen: constants.ORBS, analyticsLocations: items, analyticsSource: AnalyticsLocationDefault.BADGE };
+    const openCollectiblesShopMobile = CollectiblesActionCreators.openCollectiblesShopMobile;
+    items = [];
+    CollectiblesActionCreators;
+    items[0] = AnalyticsLocationDefault.BADGE;
+    return openCollectiblesShopMobile(obj);
+  }
+};
+const obj5 = {
+  ctaLabel() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t.swICIT);
+  },
+  ctaAction() {
+    const obj = QuestUtils;
+    const obj2 = { fromContent: QuestContent.QuestContent.QUEST_BADGE };
+    return obj.openQuestHome(obj2);
+  }
+};
+const obj6 = {
+  ctaLabel() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t["nUA/JW"]);
+  },
+  ctaAction() {
+    let items;
+    const obj = { analyticsLocations: items };
+    const openGiftModal = utils_openGiftModal.openGiftModal;
+    items = [];
+    utils_openGiftModal;
+    items[0] = AnalyticsLocationDefault.BADGE;
+    return openGiftModal(obj);
+  }
+};
+let closure_5 = { [BadgeId.BadgeId.STAFF]: obj, [BadgeId.BadgeId.PREMIUM_TENURE]: obj2, [BadgeId.BadgeId.GUILD_BOOSTER]: obj3, [BadgeId.BadgeId.ORB_PROFILE]: obj4, [BadgeId.BadgeId.QUEST_COMPLETED]: obj5, [BadgeId.BadgeId.GIFTING]: obj6 };
 const result = size.fileFinishedImporting("modules/badges/native/badgeDetailsCtas.tsx");
 
 export const getBadgeDetailsCta = function getBadgeDetailsCta(badge_id) {

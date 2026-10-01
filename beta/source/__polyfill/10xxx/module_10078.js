@@ -12,19 +12,14 @@ import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ITRelativeDateFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -35,19 +30,16 @@ function _isNativeReflectConstruct() {
 const regExp = new RegExp("(questo|ultimo|scorso|prossimo|dopo\\s*questo|questa|ultima|scorsa|prossima\\s*questa)\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10064.TIME_UNIT_DICTIONARY) + ")(?=\\s*)(?=\\W|$)", "i");
 class ITRelativeDateFormatParser {
   constructor() {
-    self = this;
-    tmp = c2(this, ITRelativeDateFormatParser);
-    tmp2 = closure_4;
-    obj = closure_4(ITRelativeDateFormatParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ITRelativeDateFormatParser);
+    const obj = _getPrototypeOf(ITRelativeDateFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
@@ -65,9 +57,11 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(createParsingComponents, arg1) {
-      const formatted = arg1[1].toLowerCase();
-      const str3 = arg1[2].toLowerCase();
-      const tmp3 = ITRelativeDateFormatParser(10064).TIME_UNIT_DICTIONARY[str3];
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const str2 = arg1[2];
+      const str3 = str2.toLowerCase();
+      const tmp3 = _mod10064.TIME_UNIT_DICTIONARY[str3];
       if ("prossimo" != formatted) {
         if (!formatted.startsWith("dopo")) {
           if ("prima" != formatted) {
@@ -75,13 +69,16 @@ const items = [
               const parsingComponents = createParsingComponents.createParsingComponents();
               const _Date = Date;
               const instant = createParsingComponents.reference.instant;
+              const self = this;
+              const self2 = this;
               const date = new Date(instant.getTime());
               if (str3.match(/settimana/i)) {
-                date.setDate(date.getDate() - date.getDay());
+                const setDate = date.setDate;
+                const date1 = date.getDate();
+                setDate(date1 - date.getDay());
                 parsingComponents.imply("day", date.getDate());
                 parsingComponents.imply("month", date.getMonth() + 1);
                 parsingComponents.imply("year", date.getFullYear());
-                const date1 = date.getDate();
               } else if (str3.match(/mese/i)) {
                 date.setDate(1);
                 parsingComponents.imply("day", date.getDate());

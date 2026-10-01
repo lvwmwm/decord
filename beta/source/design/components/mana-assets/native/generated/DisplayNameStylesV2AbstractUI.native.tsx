@@ -5,15 +5,19 @@
 // Exports: DisplayNameStylesV2AbstractUI
 
 // Module 16759 (DisplayNameStylesV2AbstractUI)
-import jsxProd from "jsxProd" /* 21 */;
+import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import _modDef16760 from "module_16760" /* 16760 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
+const jsx = Fragment.jsx;
+let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameStylesV2AbstractUI.native.tsx");
 
 export const DisplayNameStylesV2AbstractUI = function DisplayNameStylesV2AbstractUI(width) {
+  let accessibilityLabel;
+  let accessible;
+  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,14 +31,9 @@ export const DisplayNameStylesV2AbstractUI = function DisplayNameStylesV2Abstrac
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   const obj2 = { uri: _modDef16760 };
-  obj.source = obj2;
-  const size = { width: num * num3, height: num2 * num3 };
+  FastImageDefault;
+  size = { width: num * num3, height: num2 * num3 };
   const items = [size];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
+  return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 };

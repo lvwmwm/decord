@@ -4,62 +4,77 @@
 // Dependencies: [7417, 8104, 14353, 14361, 7020, 6716, 1115, 14362, 1186, 11006, 2]
 
 // Module 14366 (ExplicitMediaFiltersGuildsSetting)
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6716 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7020 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import useUserIsTeen from "useUserIsTeen" /* 8104 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14353 */;
 import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14361 */;
 import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14362 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const pressable = SettingBuilders.createPressable({
+let obj = {
   useTitle: function getTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["FP+a42"]);
+    const intl = intl4.intl;
+    return intl.string(intl4.t["FP+a42"]);
   },
   parent() {
     return MobileUserSettings.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: function useObscuredContentGuildsSettingValue() {
     const obj = useExplicitContentSettingsOrDefault;
-    return ExplicitMediaRedactionUtils.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentGuilds)();
+    const explicitContentGuilds = obj.useExplicitContentSettingOrDefault().explicitContentGuilds;
+    const obj2 = ExplicitMediaRedactionUtils;
+    return obj2.redactionSettingToRenderedString(explicitContentGuilds)();
   },
   onPress: function onObscuredContentGuildsOnPress() {
-    const intl = util.intl;
-    const obj = SensitiveMediaExplicitRedactionSettingsUtils;
-    const stringResult = intl.string(util.t.GYpoAq);
-    const obj3 = { title: stringResult, subtitle: null, handlePress: null, excluded: null, currentValue: null };
-    const intl2 = util.intl;
-    obj3.subtitle = intl2.string(util.t["FP+a42"]);
-    obj3.handlePress = function handlePress(explicitContentGuilds) {
-      return SensitiveMediaExplicitRedactionSettingsUtils.updateExplicitContentSetting({ explicitContentGuilds });
+    let intl2;
+    let items;
+    let obj = SensitiveMediaExplicitRedactionSettingsUtils;
+    const explicitContentGuilds = obj.getExplicitContentSettingOrDefault().explicitContentGuilds;
+    const intl = intl4.intl;
+    const stringResult = intl.string(intl4.t.GYpoAq);
+    let obj2 = {
+      title: stringResult,
+      subtitle: intl2.string(intl4.t["FP+a42"]),
+      handlePress(explicitContentGuilds) {
+        const obj = SensitiveMediaExplicitRedactionSettingsUtils;
+        const obj2 = { explicitContentGuilds };
+        return obj.updateExplicitContentSetting(obj2);
+      },
+      excluded: items,
+      currentValue: explicitContentGuilds
     };
-    const items = [preloaded_user_settings.ExplicitContentRedaction.BLOCK];
-    obj3.excluded = items;
-    obj3.currentValue = obj.getExplicitContentSettingOrDefault().explicitContentGuilds;
-    const result = ExplicitMediaRedactionNativeUtils.handleSensitiveMediaFilterPress(obj3);
+    const handleSensitiveMediaFilterPress = ExplicitMediaRedactionNativeUtils.handleSensitiveMediaFilterPress;
+    ExplicitMediaRedactionNativeUtils;
+    intl2 = intl4.intl;
+    items = [preloaded_user_settings.ExplicitContentRedaction.BLOCK];
+    const result = handleSensitiveMediaFilterPress(obj2);
   },
   useSearchTerms: function getSearchTerms() {
-    const intl = util.intl;
-    const items = [intl.string(util.t["N/oRI+"]), , ];
-    const intl2 = util.intl;
-    items[1] = intl2.string(util.t.QVdYsK);
-    const intl3 = util.intl;
-    items[2] = intl3.string(util.t["5mnTa7"]);
+    const intl = intl4.intl;
+    const items = [intl.string(intl4.t["N/oRI+"]), , ];
+    const intl2 = intl4.intl;
+    items[1] = intl2.string(intl4.t.QVdYsK);
+    const intl3 = intl4.intl;
+    items[2] = intl3.string(intl4.t["5mnTa7"]);
     return items;
   },
   useIsDisabled() {
-    let userIsTeen = useUserIsTeen.useUserIsTeen();
+    const obj = useUserIsTeen;
+    let userIsTeen = obj.useUserIsTeen();
+    const obj2 = useParentalControlSettings;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }
     return userIsTeen;
   }
-});
+};
+const pressable = SettingBuilders.createPressable(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/ExplicitMediaFiltersGuildsSetting.tsx");
 
 export default pressable;

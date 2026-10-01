@@ -5,16 +5,13 @@
 // Module 5540
 import _mod5526 from "module_5526" /* 5526 */;
 
-require = arg1;
-const dependencyMap = arg6;
-let c2 = 6;
-let closure_3 = ["GIF87a", "GIF89a"];
-
-export default {
+let obj = {
   isGifFile(dataView) {
     let hasItem = dataView;
     if (hasItem) {
-      hasItem = closure_3.includes(_mod5526.getStringFromDataView(dataView, 0, c2));
+      includes = includes.includes;
+      const obj = _mod5526;
+      hasItem = includes(obj.getStringFromDataView(dataView, 0, c2));
     }
     return hasItem;
   },
@@ -22,3 +19,7 @@ export default {
     return { gifHeaderOffset: 0 };
   }
 };
+let c2 = 6;
+let includes = ["GIF87a", "GIF89a"];
+
+export default obj;

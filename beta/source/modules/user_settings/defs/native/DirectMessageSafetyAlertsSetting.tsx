@@ -4,7 +4,7 @@
 // Dependencies: [7417, 11356, 10431, 10434, 11006, 1115, 10433, 14371, 2]
 
 // Module 14370 (DirectMessageSafetyAlertsSetting)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10431 */;
 import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10433 */;
@@ -15,10 +15,10 @@ import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const toggle = SettingBuilders.createToggle({
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.qFsx5q);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.qFsx5q);
   },
   parent() {
     return MobileUserSettings.CONTENT_AND_SOCIAL;
@@ -30,9 +30,11 @@ const toggle = SettingBuilders.createToggle({
     if (flag == null) {
       flag = true;
     }
-    const isEligibleForInappropriateConversationWarning = SelfModInappropriateConversationExperiment.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
+    const obj = SelfModInappropriateConversationExperiment;
+    const isEligibleForInappropriateConversationWarning = obj.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
     let tmp4 = !flag;
-    const isEligibleForInappropriateConversationDefaultOn = InappropriateConversationsDefaultOn.useIsEligibleForInappropriateConversationDefaultOn({ location: "user_settings_mobile_redesign" });
+    const obj2 = InappropriateConversationsDefaultOn;
+    const isEligibleForInappropriateConversationDefaultOn = obj2.useIsEligibleForInappropriateConversationDefaultOn({ location: "user_settings_mobile_redesign" });
     if (!flag) {
       tmp4 = isEligibleForInappropriateConversationWarning;
     }
@@ -41,7 +43,8 @@ const toggle = SettingBuilders.createToggle({
     }
     return tmp4;
   }
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DirectMessageSafetyAlertsSetting.tsx");
 
 export default toggle;

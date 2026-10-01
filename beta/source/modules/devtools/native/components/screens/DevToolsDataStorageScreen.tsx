@@ -5,7 +5,10 @@
 // Exports: default
 
 // Module 15169 (DevToolsDataStorageScreen)
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
+import PersistedStore2 from "PersistedStore" /* 505 */;
 import nativeDefault from "native" /* 576 */;
 import Link from "Link" /* 1486 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
@@ -13,90 +16,87 @@ import DatabaseManagerDefault from "DatabaseManager" /* 2091 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import TableRow from "TableRow" /* 5917 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import TableRow3 from "TableRow" /* 5917 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let obj2;
+let obj3;
 function DevToolsPersistedStoresActionSheet(store) {
   store = store.store;
   const close = store.close;
-  const obj = { header: jsx(store(6570).BottomSheetTitleHeader, { title: store.getName() }), children: null };
-  const obj3 = {
-    hasIcons: false,
-    children: jsx(store(6620).ActionSheetRow, {
-      variant: "danger",
-      label: "Clear persisted store",
-      subLabel: "App restart required to re-init the cleared store",
-      onPress() {
-        store.clear();
-        ToastActionCreatorsDefault.open({ key: "DevToolsPersistedStoresActionSheet", content: "Store cleared from persisted storage" });
-        close();
-      }
-    })
-  };
-  obj.children = jsx(store(6620).ActionSheetRow.Group, {
-    hasIcons: false,
-    children: jsx(store(6620).ActionSheetRow, {
-      variant: "danger",
-      label: "Clear persisted store",
-      subLabel: "App restart required to re-init the cleared store",
-      onPress() {
-        store.clear();
-        ToastActionCreatorsDefault.open({ key: "DevToolsPersistedStoresActionSheet", content: "Store cleared from persisted storage" });
-        close();
-      }
-    })
-  });
-  return jsx(store(6618).ActionSheet, { header: jsx(store(6570).BottomSheetTitleHeader, { title: store.getName() }), children: null });
+  const ActionSheet = store(6618).ActionSheet;
+  ({ title: store.getName() });
+  const BottomSheetTitleHeader = store(6570).BottomSheetTitleHeader;
+  const Group = store(6620).ActionSheetRow.Group;
+  return <ActionSheet header={null}>{null}</ActionSheet>;
 }
-const View = fn(17).View;
-let PersistedStore = fn(505).PersistedStore;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_12, flex: 1 }, sectionHeader: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
-obj.sectionHeader = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, verticalAlign: "middle", flexDirection: "row", alignItems: "center", flex: 1 };
-let closure_9 = createStyles.createStyles(obj);
-let closure_10 = noop.memo(() => jsx(TableRow.TableRow, {
+const View = react_native.View;
+let PersistedStore = PersistedStore2.PersistedStore;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { container: obj2, sectionHeader: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, verticalAlign: "middle", flexDirection: "row", alignItems: "center", flex: 1 };
+let closure_9 = createStyles(obj);
+let closure_10 = react.memo(() => jsx(TableRow3.TableRow, {
   label: "Disable Database",
   start: true,
   onPress() {
-    const databaseResult = DatabaseDaosDefault.database();
+    const obj = DatabaseDaosDefault;
+    const databaseResult = obj.database();
+    const tmp = importDefault;
+    const tmp2 = dependencyMap;
     if (null != databaseResult) {
       databaseResult.disable("via UserSettingsDatabaseControls");
-      ToastActionCreatorsDefault.open({ key: "disable_database", content: "Database has been disabled." });
-      const tmpResult = ToastActionCreatorsDefault;
+      const tmpResult = tmp(tmp2[10]);
+      tmpResult.open({ key: "disable_database", content: "Database has been disabled." });
     }
   }
 }));
-let closure_11 = noop.memo(() => {
-  const items = [DatabaseManagerDefault, AuthenticationStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => DatabaseManagerDefault.database(id.getId()));
+let closure_11 = react.memo(() => {
+  let combined;
+  let id;
+  const useStateFromStores = get_initialized.useStateFromStores;
+  const items = [, ];
+  get_initialized;
+  items[0] = DatabaseManagerDefault;
+  items[1] = AuthenticationStore;
+  const stateFromStores = useStateFromStores(items, () => {
+    const obj = DatabaseManagerDefault;
+    return obj.database(id.getId());
+  });
   let str = "No active database.";
+  const TableRow = TableRow3.TableRow;
+  const tmp3 = jsx;
   if (null != stateFromStores) {
     str = stateFromStores.name;
   }
-  const obj2 = { label: str, start: true, end: true, subLabel: null };
-  let combined;
+  let obj = { label: str, start: true, end: true, subLabel: combined };
+  combined = undefined;
   if (null != stateFromStores) {
     const _HermesInternal = HermesInternal;
     combined = "Handle: " + stateFromStores.handle;
   }
-  obj2.subLabel = combined;
-  return jsx(TableRow.TableRow, { label: str, start: true, end: true, subLabel: null });
+  return tmp3(TableRow, obj);
 });
-let closure_12 = noop.memo(() => jsx(TableRow.TableRow, {
+let closure_12 = react.memo(() => jsx(TableRow3.TableRow, {
   label: "Disable + Remove Database",
   onPress() {
-    const result = DatabaseManagerDefault.replaceDisableAllDatabases("via UserSettingsDatabaseControls");
-    ToastActionCreatorsDefault.open({ key: "disable_database_and_remove", content: "Database has been removed." });
+    const obj = DatabaseManagerDefault;
+    const result = obj.replaceDisableAllDatabases("via UserSettingsDatabaseControls");
+    const obj2 = ToastActionCreatorsDefault;
+    obj2.open({ key: "disable_database_and_remove", content: "Database has been removed." });
   }
 }));
-let closure_13 = noop.memo(() => {
-  const navigation = Link.useNavigation();
-  return jsx(TableRow.TableRow, {
+let closure_13 = react.memo(() => {
+  const obj = Link;
+  let closure_0 = obj.useNavigation();
+  return jsx(TableRow3.TableRow, {
     label: "View Cache Stats",
     end: true,
     onPress() {
@@ -105,15 +105,22 @@ let closure_13 = noop.memo(() => {
   });
 });
 let closure_14 = { DATABASE_CONTROLS: 0, [0]: "DATABASE_CONTROLS", DATABASE_CURRENT: 1, [1]: "DATABASE_CURRENT", PERSISTED_STORES: 2, [2]: "PERSISTED_STORES" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsDataStorageScreen.tsx");
 
 export default function DevToolsDataStorageScreen() {
-  const tmp = closure_9();
-  closure_0 = tmp;
+  let callback;
+  let closure_3;
+  let first;
+  let persistedStores;
+  let tmp = closure_9();
+  let closure_0 = tmp;
+  const insets = callback(persistedStores[14])({ includeKeyboardHeight: true }).insets;
   const tmp2 = callback(persistedStores[15])();
   const tmp3 = callback(persistedStores[16])();
-  callback = noop.useCallback((arg0) => {
+  const tmp4 = callback(persistedStores[17])();
+  callback = react.useCallback((arg0) => {
+    let found;
+    let items;
     closure_0 = arg0;
     PersistedStore = found(persistedStores[11]).PersistedStore;
     const all = PersistedStore.getAll();
@@ -121,34 +128,37 @@ export default function DevToolsDataStorageScreen() {
       let hasItem = getName instanceof PersistedStore;
       if (hasItem) {
         const name = getName.getName();
-        hasItem = name.toLocaleLowerCase().includes(closure_0.toLocaleLowerCase());
         const toLocaleLowerCaseResult = name.toLocaleLowerCase();
+        hasItem = toLocaleLowerCaseResult.includes(closure_0.toLocaleLowerCase());
       }
       return hasItem;
     });
-    const obj = { sections: null, persistedStores: found };
-    const items = [, , ];
-    ({ DATABASE_CONTROLS: arr2[0], DATABASE_CURRENT: arr2[1], PERSISTED_STORES: arr2[2] } = closure_14);
-    obj.sections = items.map((item) => {
-      if (constants.DATABASE_CONTROLS === item) {
-        return 3;
-      } else if (tmp.DATABASE_CURRENT === item) {
-        return 1;
-      } else if (tmp.PERSISTED_STORES === item) {
-        let num3 = 1;
-        if (found.length > 0) {
-          num3 = found.length;
+    const obj = {
+      sections: items.map((item) => {
+        if (constants.DATABASE_CONTROLS === item) {
+          return 3;
+        } else if (constants.DATABASE_CURRENT === item) {
+          return 1;
+        } else if (constants.PERSISTED_STORES === item) {
+          let num3 = 1;
+          if (found.length > 0) {
+            num3 = found.length;
+          }
+          return 1 + num3;
         }
-        return 1 + num3;
-      }
-    });
+      }),
+      persistedStores: found
+    };
+    items = [, , ];
+    ({ DATABASE_CONTROLS: arr2[0], DATABASE_CURRENT: arr2[1], PERSISTED_STORES: arr2[2] } = closure_14);
     return obj;
   }, []);
-  [first, _slicedToArray] = noop.useState(() => callback(""));
+  [first, _slicedToArray] = react.useState(() => callback(""));
   persistedStores = first.persistedStores;
   let items = [persistedStores, callback];
+  const sections = first.sections;
   const items1 = [tmp];
-  const callback1 = noop.useCallback((arg0, arg1) => {
+  const callback1 = react.useCallback((arg0, arg1) => {
     closure_0 = arg1;
     if (constants.DATABASE_CONTROLS === arg0) {
       if (0 === arg1) {
@@ -160,83 +170,57 @@ export default function DevToolsDataStorageScreen() {
       } else {
         return null;
       }
-    } else if (tmp.DATABASE_CURRENT === arg0) {
+    } else if (constants.DATABASE_CURRENT === arg0) {
       let tmp14 = null;
       if (0 === arg1) {
         tmp14 = <closure_1_11 />;
       }
       return tmp14;
-    } else if (tmp.PERSISTED_STORES === arg0) {
+    } else if (constants.PERSISTED_STORES === arg0) {
       if (0 === arg1) {
-        const obj3 = { label: null, start: true };
-        const obj4 = {
-          size: "md",
-          onChange(arg0) {
-                return closure_1_3(callback(arg0));
-              }
-        };
-        obj3.label = jsx(closure_0(persistedStores[18]).SearchField, {
-          size: "md",
-          onChange(arg0) {
-                return closure_1_3(callback(arg0));
-              }
-        });
-        return jsx(closure_0(persistedStores[8]).TableRow, { label: null, start: true });
+        const TableRow2 = closure_0(persistedStores[8]).TableRow;
+        return <TableRow2 label={null} start />;
       } else {
         if (1 === arg1) {
           if (0 === persistedStores.length) {
             return jsx(closure_0(persistedStores[8]).TableRow, { label: "No results found.", end: true });
           }
         }
-        const obj = {
-          label: persistedStores[arg1 - 1].getName(),
-          end: arg1 === persistedStores.length,
-          onPress() {
-                ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: DevToolsPersistedStoresActionSheet }), "DevToolsPersistedStoresActionSheet", {
-                  store: persistedStores[closure_0 - 1],
-                  close() {
-                    return closure_1_1(closure_1_2[19]).hideActionSheet("DevToolsPersistedStoresActionSheet");
-                  }
-                });
-              }
-        };
-        return jsx(closure_0(persistedStores[8]).TableRow, {
-          label: persistedStores[arg1 - 1].getName(),
-          end: arg1 === persistedStores.length,
-          onPress() {
-                ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: DevToolsPersistedStoresActionSheet }), "DevToolsPersistedStoresActionSheet", {
-                  store: persistedStores[closure_0 - 1],
-                  close() {
-                    return closure_1_1(closure_1_2[19]).hideActionSheet("DevToolsPersistedStoresActionSheet");
-                  }
-                });
-              }
-        });
+        let obj2 = persistedStores[arg1 - 1];
+        const TableRow = closure_0(persistedStores[8]).TableRow;
+        return <TableRow label={obj2.getName()} end={arg1 === persistedStores.length} onPress={function onPress() {
+          let obj = ActionSheetActionCreatorsDefault;
+          const obj2 = { default: DevToolsPersistedStoresActionSheet };
+          const obj3 = {
+            store: persistedStores[closure_0 - 1],
+            close() {
+              const obj = closure_1_1(closure_1_2[19]);
+              return obj.hideActionSheet("DevToolsPersistedStoresActionSheet");
+            }
+          };
+          obj.openLazy(Promise.resolve(obj2), "DevToolsPersistedStoresActionSheet", obj3);
+        }} />;
       }
     } else {
       return null;
     }
   }, items);
-  const callback2 = noop.useCallback((arg0) => {
-    const obj = { style: closure_0.sectionHeader, variant: "text-sm/semibold", color: "text-default", children: null };
-    let str = "Database Controls";
+  const callback2 = react.useCallback((arg0) => {
+    let str;
+    const obj = { style: closure_0.sectionHeader, variant: "text-sm/semibold", color: "text-default", children: str };
+    str = "Database Controls";
+    const Text = Text_Text.Text;
+    const tmp = jsx;
     if (constants.DATABASE_CONTROLS !== arg0) {
       str = "Database (Current)";
-      if (tmp2.DATABASE_CURRENT !== arg0) {
-        if (tmp2.PERSISTED_STORES === arg0) {
+      if (constants.DATABASE_CURRENT !== arg0) {
+        if (constants.PERSISTED_STORES === arg0) {
           str = "Persisted Stores";
         }
       }
     }
-    obj.children = str;
-    return jsx(Text_Text.Text, { style: closure_0.sectionHeader, variant: "text-sm/semibold", color: "text-default", children: null });
+    return tmp(Text, obj);
   }, items1);
-  let obj = { sections: first.sections, renderItem: callback1, renderSectionHeader: callback2, insetEnd: null, itemSize: null, sectionHeaderSize: null, estimatedListSize: "windowSize", placeholderConfig: null, wrapChildren: true };
-  const tmp4 = callback(persistedStores[17])();
-  obj.insetEnd = callback(persistedStores[14])({ includeKeyboardHeight: true }).insets.bottom + callback(persistedStores[7]).space.PX_16;
-  obj.itemSize = tmp2;
-  obj.sectionHeaderSize = tmp3;
-  obj.placeholderConfig = tmp4;
-  const tmp10 = callback(persistedStores[21]);
-  return <View style={tmp.container}>{jsx(callback(persistedStores[21]), { sections: first.sections, renderItem: callback1, renderSectionHeader: callback2, insetEnd: null, itemSize: null, sectionHeaderSize: null, estimatedListSize: "windowSize", placeholderConfig: null, wrapChildren: true })}</View>;
+  callback(persistedStores[21]);
+  return <View style={tmp.container}><tmp10 sections={sections} renderItem={callback1} renderSectionHeader={callback2} insetEnd={insets.bottom + callback(persistedStores[7]).space.PX_16} itemSize={tmp2} sectionHeaderSize={tmp3} estimatedListSize="windowSize" placeholderConfig={tmp4} wrapChildren /></View>;
 };

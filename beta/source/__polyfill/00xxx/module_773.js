@@ -4,16 +4,19 @@
 // Exports: addBreadcrumb
 
 // Module 773
+import CONSOLE_LEVELS from "CONSOLE_LEVELS" /* 689 */;
+import browserPerformanceTimeOrigin from "browserPerformanceTimeOrigin" /* 703 */;
 import _mod713 from "module_713" /* 713 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
-  closure_0 = arg1;
-  const client = _mod713.getClient();
-  const isolationScope = _mod713.getIsolationScope();
+  let tmpResult;
+  let closure_0 = arg1;
+  const obj = _mod713;
+  const client = obj.getClient();
+  const obj3 = _mod713;
+  const isolationScope = obj3.getIsolationScope();
   if (client) {
     const options = client.getOptions();
     let beforeBreadcrumb = options.beforeBreadcrumb;
@@ -28,11 +31,12 @@ export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
       num = maxBreadcrumbs;
     }
     if (num > 0) {
-      let obj2 = { timestamp: tmp(703).dateTimestampInSeconds() };
+      let obj2 = { timestamp: tmpResult.dateTimestampInSeconds() };
+      tmpResult = browserPerformanceTimeOrigin;
       const merged = Object.assign(arg0);
       if (tmp5) {
-        obj2 = tmp(689).consoleSandbox(() => beforeBreadcrumb(obj2, closure_0));
-        const tmpResult2 = tmp(689);
+        const tmpResult2 = CONSOLE_LEVELS;
+        obj2 = tmpResult2.consoleSandbox(() => beforeBreadcrumb(obj2, closure_0));
       }
       if (null !== obj2) {
         if (client.emit) {
@@ -40,7 +44,6 @@ export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
         }
         isolationScope.addBreadcrumb(obj2, num);
       }
-      const tmpResult = tmp(703);
     }
   }
 };

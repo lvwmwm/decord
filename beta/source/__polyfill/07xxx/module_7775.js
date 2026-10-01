@@ -3,8 +3,8 @@
 // Dependencies: [4663]
 
 // Module 7775
-import emptyFunction from "module_4663" /* 4663 */;
+import module_4663 from "module_4663" /* 4663 */;
 
-const point = { x: emptyFunction.number, y: emptyFunction.number };
+const point = { x: module_4663.number, y: module_4663.number };
 
-export default emptyFunction.shape(point);
+export default module_4663.shape(point);

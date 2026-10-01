@@ -4,28 +4,33 @@
 // Dependencies: [19, 21, 13976, 5282, 2]
 
 // Module 13975 (ToggleButton)
-import BaseTextButton from "BaseTextButton" /* 5282 */;
+import Fragment from "Fragment" /* 21 */;
+import BaseTextButton2 from "BaseTextButton" /* 5282 */;
 import useToggleButtonProps from "useToggleButtonProps" /* 13976 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const obj = { Icon: fn(5282).BaseTextButton.Icon };
-let merged = Object.assign(noop.forwardRef((pressed, ref) => {
+let pressed;
+
+const jsx = Fragment.jsx;
+let obj = { Icon: BaseTextButton2.BaseTextButton.Icon };
+const forwardRefResult = react.forwardRef((pressed, ref) => {
+  let str;
   pressed = pressed.pressed;
   const merged = Object.assign(pressed, Object.assign({ pressed: 0 }));
-  const toggleButtonProps = useToggleButtonProps.useToggleButtonProps({ on: merged, off: merged }, pressed);
-  const obj2 = {};
+  const obj = useToggleButtonProps;
+  const toggleButtonProps = obj.useToggleButtonProps({ on: merged, off: merged }, pressed);
+  const obj2 = { ref, variant: str };
+  const BaseTextButton = BaseTextButton2.BaseTextButton;
   const merged1 = Object.assign(toggleButtonProps);
-  obj2.ref = ref;
-  let str = "toggle-off";
+  str = "toggle-off";
+  const tmp3 = jsx;
   if (pressed) {
     str = "toggle-on";
   }
-  obj2.variant = str;
-  return jsx(BaseTextButton.BaseTextButton, {});
-}), obj);
-const size = fn(2);
+  return tmp3(BaseTextButton, obj2);
+});
+let obj2 = assign(forwardRefResult, obj);
 const result = size.fileFinishedImporting("design/components/Button/native/ToggleButton.native.tsx");
 
-export const ToggleButton = merged;
+export const ToggleButton = obj2;

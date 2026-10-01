@@ -6,39 +6,53 @@
 
 // Module 8857 (CircleWithCutoutUtils)
 import inlineStyles from "inlineStyles" /* 7909 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size_mod from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
+let c3;
+let closure_4;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = Math.PI / 180;
-let size = fn(2);
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/shared/CircleWithCutoutUtils.tsx");
 
 export default function CircleWithCutout(arg0) {
+  let Mask;
+  let circleFillColor;
+  let circleRadius;
+  let cutoutPositionInDegrees;
+  let cutoutRadius;
+  let enableCutout;
+  let items;
+  let items1;
+  let obj2;
+  let str;
   ({ circleRadius, cutoutPositionInDegrees } = arg0);
   const result = 2 * circleRadius;
   ({ cutoutRadius, enableCutout, circleFillColor } = arg0);
   const sum = circleRadius + circleRadius * Math.sin(cutoutPositionInDegrees * closure_5);
   const diff = circleRadius - circleRadius * Math.cos(cutoutPositionInDegrees * closure_5);
-  const size = { height: result, width: result, children: null };
-  const obj = { children: null };
-  const obj2 = { id: "mask", children: null };
-  const items = [React3(inlineStyles.Rect, { width: result, height: result, fill: "white" }), React3(inlineStyles.Circle, { cx: sum, cy: diff, r: cutoutRadius, fill: "black" })];
-  obj2.children = items;
-  obj.children = React4(inlineStyles.Mask, obj2);
-  const items1 = [React3(inlineStyles.Defs, obj), ];
-  const obj3 = { cx: circleRadius, cy: circleRadius, r: circleRadius, fill: circleFillColor, mask: null };
-  let str;
+  size = { height: result, width: result, children: items1 };
+  const obj = { children: React3(Mask, obj2) };
+  const tmp5 = inlineStylesDefault;
+  const Defs = inlineStyles.Defs;
+  obj2 = { id: "mask", children: items };
+  Mask = inlineStyles.Mask;
+  items = [_false(inlineStyles.Rect, { width: result, height: result, fill: "white" }), _false(inlineStyles.Circle, { cx: sum, cy: diff, r: cutoutRadius, fill: "black" })];
+  items1 = [_false(Defs, obj), ];
+  const obj3 = { cx: circleRadius, cy: circleRadius, r: circleRadius, fill: circleFillColor, mask: str };
+  str = undefined;
+  const Circle = inlineStyles.Circle;
+  const tmp4 = React3;
+  const tmp6 = _false;
   if (enableCutout) {
     str = "url(#mask)";
   }
-  obj3.mask = str;
-  items1[1] = React3(inlineStyles.Circle, obj3);
-  size.children = items1;
-  return React4(inlineStylesDefault, size);
+  items1[1] = tmp6(Circle, obj3);
+  return tmp4(tmp5, size);
 };
 export const getBadgeTop = function getBadgeTop(badgeRadius, buttonRadius, arg2) {
   return buttonRadius - buttonRadius * Math.cos(arg2 * closure_5) - badgeRadius;

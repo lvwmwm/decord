@@ -6,43 +6,63 @@
 
 // Module 11019 (getMessageJumpData)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import Client from "Client" /* 4763 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import flow_Client from "flow/Client" /* 4763 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1481 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
+let tmp;
+let tmp4;
+const PlatformUtils = tmp4(1364);
 const useSystemKeyboardHeight = tmp(1879);
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("components_native/chat/getMessageJumpData.tsx");
 
 export default function getMessageJumpData(messages, isAtBottom, messages2) {
+  let channelId;
+  let flag;
+  let focusTargetId;
+  let id;
+  let jumpSequenceId;
+  let jumpTargetId;
+  let jumpType;
+  let tmp12;
+  let tmp15;
   messages = messages.messages;
   const lastResult = messages.last();
   messages2 = messages2.messages;
   const lastResult1 = messages2.last();
   const currentUser = UserStore.getCurrentUser();
-  const ANIMATED = Client.JumpType.ANIMATED;
+  const ANIMATED = flow_Client.JumpType.ANIMATED;
   let tmp7 = tmp6;
   ({ jumpSequenceId, focusTargetId } = messages);
   if (messages.initialScrollSequenceId === messages2.initialScrollSequenceId) {
     tmp7 = messages2.jumpSequenceId !== messages.jumpSequenceId;
   }
-  let tmp8 = tmp6;
-  if (messages.initialScrollSequenceId === messages2.initialScrollSequenceId) {
-    tmp8 = messages2.focusSequenceId !== messages.focusSequenceId;
-  }
+  const tmp8 = messages.initialScrollSequenceId !== messages2.initialScrollSequenceId || messages2.focusSequenceId !== messages.focusSequenceId;
   if (null != messages.jumpTargetId) {
     if (tmp7) {
       ({ channelId, jumpTargetId } = messages);
       const firstResult = messages.first();
-      if (channelId !== jumpTargetId) {
-        ({ jumpTargetId: jumpTargetId2, jumpType } = messages);
+      if (channelId === jumpTargetId) {
+        let jumpTargetId2;
+        if (null != firstResult) {
+          jumpTargetId2 = firstResult.id;
+        }
+        jumpType = messages.jumpType;
+        flag = false;
+        tmp12 = jumpTargetId2;
+        id = jumpTargetId2;
       }
-      jumpTargetId2 = firstResult.id;
+      jumpTargetId2 = messages.jumpTargetId;
     }
+    const obj2 = { scrollToMessageId: id, jumpTargetId: tmp12, jumpType, jumpSequenceId, minimizeScrolling: flag, focusTargetId: tmp15, shouldInitialScroll: messages.initialScrollSequenceId !== messages2.initialScrollSequenceId };
+    tmp15 = null;
+    if (tmp8) {
+      tmp15 = focusTargetId;
+    }
+    return obj2;
   }
   if (!isAtBottom.isAtBottom) {
     if (isAtBottom.hasPreviousMessages) {
@@ -50,10 +70,13 @@ export default function getMessageJumpData(messages, isAtBottom, messages2) {
         if (null != lastResult) {
           if (null != currentUser) {
             if (lastResult.author.id === currentUser.id) {
-              let id = lastResult.id;
-              let flag = false;
-              let tmp12 = ANIMATED;
-              let tmp13 = null;
+              if (null != lastResult1) {
+                SnowflakeUtilsDefault;
+              }
+              id = lastResult.id;
+              flag = false;
+              jumpType = ANIMATED;
+              tmp12 = null;
             } else {
               const interaction = lastResult.interaction;
               let id1;
@@ -62,14 +85,6 @@ export default function getMessageJumpData(messages, isAtBottom, messages2) {
               }
             }
           }
-          const obj2 = { scrollToMessageId: id, jumpTargetId: tmp13, jumpType: tmp12, jumpSequenceId, minimizeScrolling: flag, focusTargetId: null, shouldInitialScroll: null };
-          let tmp18 = null;
-          if (tmp8) {
-            tmp18 = focusTargetId;
-          }
-          obj2.focusTargetId = tmp18;
-          obj2.shouldInitialScroll = tmp6;
-          return obj2;
         }
       }
     }
@@ -80,34 +95,39 @@ export default function getMessageJumpData(messages, isAtBottom, messages2) {
         if (null != lastResult) {
           id = lastResult.id;
           flag = false;
-          tmp12 = ANIMATED;
-          tmp13 = null;
+          jumpType = ANIMATED;
+          tmp12 = null;
         }
       }
     }
   }
-  const tmp4Result = PlatformUtils;
   flag = false;
-  tmp12 = ANIMATED;
-  tmp13 = null;
+  jumpType = ANIMATED;
+  tmp12 = null;
   id = null;
-  if (tmp14) {
+  const tmp4Result = PlatformUtils;
+  const tmp13 = tmp4Result.isAndroid() && messages2.androidKeyboardHeight < messages.androidKeyboardHeight && null != messages.replyingMessageId;
+  if (tmp13) {
     id = messages.replyingMessageId;
     flag = true;
-    tmp12 = ANIMATED;
-    tmp13 = null;
+    jumpType = ANIMATED;
+    tmp12 = null;
   }
 };
 export const useMessageJumpAndroidKeyboardHeight = function useMessageJumpAndroidKeyboardHeight() {
+  let tmp4;
+  let obj = react;
+  const useState = react.useState;
   let num = 0;
+  const obj2 = PlatformUtils;
   if (obj2.isAndroid()) {
-    num = useSystemKeyboardHeight.getSystemKeyboardHeight();
     const tmpResult = useSystemKeyboardHeight;
+    num = tmpResult.getSystemKeyboardHeight();
   }
-  const obj = noop;
-  obj2 = PlatformUtils;
-  [tmp4, require] = noop.useState(num);
+  [tmp4, require] = _slicedToArray(useState(num), 2);
+  const tmp3 = _slicedToArray(useState(num), 2);
   const effect = obj.useEffect(() => subscribeToKeyboardUIStore((keyboardHeight) => {
+    const obj = PlatformUtils;
     if (obj.isAndroid()) {
       closure_1_0(keyboardHeight.keyboardHeight);
     }

@@ -5,15 +5,16 @@
 // Exports: runOnce
 
 // Module 913 (runOnce)
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export (arg0) => {
-  closure_0 = arg0;
-  c1 = false;
+export const runOnce = (arg0) => {
+  let closure_0 = arg0;
+  let c1 = false;
   return () => {
-    if (!c1) {
+    const tmp = c1;
+    if (!tmp) {
       closure_0();
       c1 = true;
     }
   };
-}
+};

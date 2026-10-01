@@ -6,9 +6,10 @@
 
 // Module 7467 (PurchaseNotificationSystemMessage)
 import Server from "Server" /* 1979 */;
-import GuildProductPurchaseSystemMessage from "GuildProductPurchaseSystemMessage" /* 7468 */;
 import size from "module_2" /* 2 */;
 
+let tmp2;
+const GuildProductPurchaseSystemMessage = tmp2(7468);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/PurchaseNotificationSystemMessage.tsx");
 
 export const createPurchaseNotificationSystemMessage = function createPurchaseNotificationSystemMessage(message) {
@@ -19,8 +20,8 @@ export const createPurchaseNotificationSystemMessage = function createPurchaseNo
   }
   let guildProductPurchaseSystemMessage = null;
   if (type === Server.PurchaseNotificationType.GUILD_PRODUCT) {
-    guildProductPurchaseSystemMessage = GuildProductPurchaseSystemMessage.createGuildProductPurchaseSystemMessage(message);
     const tmp2Result = GuildProductPurchaseSystemMessage;
+    guildProductPurchaseSystemMessage = tmp2Result.createGuildProductPurchaseSystemMessage(message);
   }
   return guildProductPurchaseSystemMessage;
 };

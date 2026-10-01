@@ -7,38 +7,43 @@
 import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17148 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/holidays/HolidayEventsUtils.tsx");
-
-export default {
+let obj = {
   isEligible() {
-    const isExperimentEligible = HolidayEventsConfigDefault.getIsExperimentEligible();
+    const obj = HolidayEventsConfigDefault;
+    const isExperimentEligible = obj.getIsExperimentEligible();
     const timestamp = Date.now();
-    return timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
+    const tmp5 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
+    return tmp5;
   },
   useHolidaySoundpack() {
-    const isExperimentEligible = HolidayEventsConfigDefault.useIsExperimentEligible();
+    const obj = HolidayEventsConfigDefault;
+    const isExperimentEligible = obj.useIsExperimentEligible();
     const timestamp = Date.now();
     let tmp6 = null;
+    const tmp5 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
     if (tmp5) {
       tmp6 = null;
-      if (null != tmp(17148).soundpack) {
+      if (null != HolidayEventsConfigDefault.soundpack) {
         tmp6 = null;
-        if (null != tmp(17148).soundpackLabel) {
-          const obj2 = { soundpack: tmp(17148).soundpack, soundpackLabel: tmp(17148).soundpackLabel };
-          tmp6 = obj2;
+        if (null != HolidayEventsConfigDefault.soundpackLabel) {
+          tmp6 = { soundpack: HolidayEventsConfigDefault.soundpack, soundpackLabel: HolidayEventsConfigDefault.soundpackLabel };
+          const obj2 = { soundpack: HolidayEventsConfigDefault.soundpack, soundpackLabel: HolidayEventsConfigDefault.soundpackLabel };
         }
       }
     }
     return tmp6;
   },
   useIsEligible() {
-    const isExperimentEligible = HolidayEventsConfigDefault.useIsExperimentEligible();
+    const obj = HolidayEventsConfigDefault;
+    const isExperimentEligible = obj.useIsExperimentEligible();
     const timestamp = Date.now();
-    return timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
+    const tmp5 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
+    return tmp5;
   },
   getAppSpinnerSources() {
     const timestamp = Date.now();
     let appSpinnerSources = null;
+    const tmp4 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs;
     if (tmp4) {
       appSpinnerSources = tmp2(17148).appSpinnerSources;
     }
@@ -47,27 +52,33 @@ export default {
   getLoadingTips() {
     const timestamp = Date.now();
     let tmp5 = null;
+    const tmp4 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs;
     if (tmp4) {
-      const getLoadingTips = tmp2(17148).getLoadingTips;
+      const getLoadingTips = HolidayEventsConfigDefault.getLoadingTips;
       let loadingTips;
+      HolidayEventsConfigDefault;
       if (getLoadingTips != null) {
         loadingTips = getLoadingTips();
       }
       tmp5 = loadingTips;
-      const tmp2Result = tmp2(17148);
     }
     return tmp5;
   },
   getHolidaySoundpack() {
-    const isExperimentEligible = HolidayEventsConfigDefault.getIsExperimentEligible();
+    const obj = HolidayEventsConfigDefault;
+    const isExperimentEligible = obj.getIsExperimentEligible();
     const timestamp = Date.now();
     let soundpack = null;
+    const tmp5 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
     if (tmp5) {
       soundpack = null;
-      if (null != tmp(17148).soundpack) {
+      if (null != HolidayEventsConfigDefault.soundpack) {
         soundpack = tmp(17148).soundpack;
       }
     }
     return soundpack;
   }
 };
+const result = size.fileFinishedImporting("modules/holidays/HolidayEventsUtils.tsx");
+
+export default obj;

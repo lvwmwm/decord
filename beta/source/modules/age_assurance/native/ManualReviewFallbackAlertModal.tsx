@@ -5,37 +5,47 @@
 // Exports: default
 
 // Module 8046 (ManualReviewFallbackAlertModal)
-import util from "util" /* 1115 */;
+import intl5 from "intl" /* 1115 */;
 import _modDef3103 from "module_3103" /* 3103 */;
-import AlertModal from "AlertModal" /* 5209 */;
+import AlertModal2 from "AlertModal" /* 5209 */;
 import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8047 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const size = fn(2);
+let c3;
+let closure_4;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
 const result = size.fileFinishedImporting("modules/age_assurance/native/ManualReviewFallbackAlertModal.tsx");
 
 export default function ManualReviewFallbackAlertModal() {
-  const obj = { title: null, content: null, actions: null };
-  const intl = util.intl;
-  obj.title = intl.string(_modDef3103["+c5sxg"]);
-  const intl2 = util.intl;
-  obj.content = intl2.string(_modDef3103["RFLH++"]);
-  const obj2 = { children: null };
-  const obj3 = { text: null };
-  const intl3 = util.intl;
-  obj3.text = intl3.string(util.t["NX+WJN"]);
-  const items = [React3(AlertModal.AlertActionButton, obj3, "got-it"), ];
-  const obj4 = { variant: "secondary", text: null, onPress: null };
-  const intl4 = util.intl;
-  obj4.text = intl4.string(_modDef3103.Z61nkt);
-  obj4.onPress = function onPress() {
-    return ManualReviewActionCreators.handleManualReviewCta();
+  let AlertActions;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let obj2;
+  let obj = { title: intl.string(_modDef3103["+c5sxg"]), content: intl2.string(_modDef3103["RFLH++"]), actions: React3(AlertActions, obj2) };
+  const AlertModal = AlertModal2.AlertModal;
+  intl = intl5.intl;
+  intl2 = intl5.intl;
+  obj2 = { children: items };
+  AlertActions = AlertModal2.AlertActions;
+  const obj3 = { text: intl3.string(intl5.t["NX+WJN"]) };
+  const AlertActionButton = AlertModal2.AlertActionButton;
+  intl3 = intl5.intl;
+  items = [_false(AlertActionButton, obj3, "got-it"), ];
+  const obj4 = {
+    variant: "secondary",
+    text: intl4.string(_modDef3103.Z61nkt),
+    onPress() {
+      const obj = ManualReviewActionCreators;
+      return obj.handleManualReviewCta();
+    }
   };
-  items[1] = React3(AlertModal.AlertActionButton, obj4, "request-manual-review");
-  obj2.children = items;
-  obj.actions = React4(AlertModal.AlertActions, obj2);
-  return React3(AlertModal.AlertModal, obj);
+  const AlertActionButton2 = AlertModal2.AlertActionButton;
+  intl4 = intl5.intl;
+  items[1] = _false(AlertActionButton2, obj4, "request-manual-review");
+  return _false(AlertModal, obj);
 };

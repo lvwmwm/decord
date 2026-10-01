@@ -5,51 +5,52 @@
 // Exports: default
 
 // Module 16773 (NitroFileUploadAnnouncementPromoSheet)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let importDefault;
 
-const require = fn;
-const View = fn(17).View;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { illustration: { paddingTop: nativeDefault.space.PX_12 } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const View = react_native.View;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
+let obj = { illustration: obj2 };
+obj2 = { paddingTop: nativeDefault.space.PX_12 };
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/premium/file_upload/native/NitroFileUploadAnnouncementPromoSheet.tsx");
 
 export default function NitroFileUploadAnnouncementPromoSheet(markAsDismissed) {
+  let intl3;
+  let ref;
   markAsDismissed = markAsDismissed.markAsDismissed;
-  importDefault = noop.useRef(false);
+  const tmp = closure_7();
+  importDefault = react.useRef(false);
   const items = [markAsDismissed];
-  const callback = noop.useCallback((arg0) => {
+  const callback = react.useCallback((arg0) => {
     if (!ref.current) {
       tmp.current = true;
       markAsDismissed(arg0);
     }
   }, items);
-  const tmp = closure_7();
-  const unmountEffect = markAsDismissed(callback[6]).useUnmountEffect(() => {
+  const obj = markAsDismissed(callback[6]);
+  const unmountEffect = obj.useUnmountEffect(() => {
     callback(ContentDismissActionType.AUTO_DISMISS);
   });
   const items1 = [callback];
-  const callback1 = noop.useCallback(() => {
+  const callback1 = react.useCallback(() => {
     callback(ContentDismissActionType.USER_DISMISS);
   }, items1);
-  const obj2 = { illustration: null, title: null, description: null, onDismiss: null, actions: null };
-  const obj = markAsDismissed(callback[6]);
-  obj2.illustration = <View style={tmp.illustration}>{jsx(markAsDismissed(callback[8]).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" })}</View>;
+  const PromoSheet = markAsDismissed(callback[7]).PromoSheet;
   const intl = markAsDismissed(callback[9]).intl;
-  obj2.title = intl.string(require("module_2587").IyCdAU);
   const intl2 = markAsDismissed(callback[9]).intl;
-  obj2.description = intl2.string(require("module_2587").LhfXZN);
-  obj2.onDismiss = callback1;
-  const obj4 = { grow: true, size: "lg", variant: "primary", text: null, onPress: null };
-  const intl3 = markAsDismissed(callback[9]).intl;
-  obj4.text = intl3.string(markAsDismissed(callback[9]).t["NX+WJN"]);
-  obj4.onPress = callback1;
-  obj2.actions = jsx(markAsDismissed(callback[11]).Button, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
-  return jsx(markAsDismissed(callback[7]).PromoSheet, { illustration: null, title: null, description: null, onDismiss: null, actions: null });
+  ({ grow: true, size: "lg", variant: "primary", text: intl3.string(markAsDismissed(callback[9]).t["NX+WJN"]), onPress: callback1 });
+  const Button = markAsDismissed(callback[11]).Button;
+  intl3 = markAsDismissed(callback[9]).intl;
+  return <PromoSheet illustration={null} title={intl.string(require("module_2587").IyCdAU)} description={intl2.string(require("module_2587").LhfXZN)} onDismiss={callback1} actions={null} />;
 };

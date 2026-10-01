@@ -4,20 +4,19 @@
 // Dependencies: [19, 21, 16185, 1115, 2]
 
 // Module 17606 (GuildSettingsRoleSubscriptionsPayments)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl3 from "intl" /* 1115 */;
 import UnavailableNoticeDefault from "UnavailableNotice" /* 16185 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
+const forwardRefResult = react.forwardRef(() => {
+  UnavailableNoticeDefault;
+  const intl = intl3.intl;
+  const intl2 = intl3.intl;
+  return <tmp title={intl.string(intl3.t.qAMb9K)} description={intl2.string(intl3.t.pRuzXJ)} brightTitle />;
+});
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsPayments.tsx");
 
-export default noop.forwardRef(() => {
-  const obj = { title: null, description: null, brightTitle: true };
-  const intl = util.intl;
-  obj.title = intl.string(util.t.qAMb9K);
-  const intl2 = util.intl;
-  obj.description = intl2.string(util.t.pRuzXJ);
-  return jsx(UnavailableNoticeDefault, { title: null, description: null, brightTitle: true });
-});
+export default forwardRefResult;

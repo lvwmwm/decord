@@ -4,22 +4,27 @@
 // Dependencies: [1372, 7417, 504, 5933, 11006, 1115, 2]
 
 // Module 14271 (AccountEmailSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
 import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5933 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import UserStore from "UserStore" /* 1372 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const pressable = SettingBuilders.createPressable({
+let currentUser;
+
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["w/qqKK"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["w/qqKK"]);
   },
-  parent: fn(7417).MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountEmailSettingTrailing() {
     const items = [UserStore];
-    return initialize.useStateFromStores(items, () => {
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => {
       currentUser = currentUser.getCurrentUser();
       let email;
       if (currentUser != null) {
@@ -29,11 +34,12 @@ const pressable = SettingBuilders.createPressable({
     });
   },
   onPress: function onAccountEmailSettingPress() {
-    EmailVerificationModalActionCreatorsDefault.open(true);
+    const obj = EmailVerificationModalActionCreatorsDefault;
+    obj.open(true);
   },
   withArrow: true
-});
-const size = fn(2);
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountEmailSetting.tsx");
 
 export default pressable;

@@ -6,31 +6,27 @@
 // Module 12319
 import _mod12312 from "module_12312" /* 12312 */;
 import _mod12320 from "module_12320" /* 12320 */;
-import _mod12321 from "module_12321" /* 12321 */;
 import _mod12322 from "module_12322" /* 12322 */;
 
-require = arg1;
-const dependencyMap = arg6;
+let hasOwnProperty;
+
 function addNonEnumerableProperty(arg0, arg1, value) {
   try {
     const _Object = Object;
     const obj = { value, writable: true, configurable: true };
     Object.defineProperty(arg0, arg1, obj);
   } catch (err) {
+    const tmp4 = require;
     if (_mod12312.DEBUG_BUILD) {
-      const logger = tmp6(12313).logger;
+      const logger = tmp4(12313).logger;
       const _HermesInternal = HermesInternal;
-      logger.log("Failed to add non-enumerable property \"" + tmp2 + "\" to object", tmp);
+      logger.log("Failed to add non-enumerable property \"" + arg1 + "\" to object", arg0);
     }
-    tmp6 = require;
   }
 }
 function markFunctionWrapped(arg0, arg1) {
   try {
-    let prototype = arg1.prototype;
-    if (!prototype) {
-      prototype = {};
-    }
+    const prototype = arg1.prototype || {};
     arg1.prototype = prototype;
     arg0.prototype = prototype;
     addNonEnumerableProperty(arg0, "__sentry_original__", arg1);
@@ -38,20 +34,22 @@ function markFunctionWrapped(arg0, arg1) {
   }
 }
 function convertToPlainObject(type) {
+  const obj = _mod12320;
   if (obj.isError(type)) {
     const error = { message: null, name: null, stack: null };
     ({ message: obj6.message, name: obj6.name, stack: obj6.stack } = type);
     if (typeof type === "object") {
+      let obj3;
       if (null !== type) {
         const obj2 = {};
-        let obj3 = obj2;
+        obj3 = obj2;
         const keys = Object.keys();
         if (keys !== undefined) {
           obj3 = obj2;
           while (keys[tmp] !== undefined) {
             let _Object2 = Object;
-            let call2 = hasOwnProperty2.call;
-            if (!(typeof call2 === "unknown" ? hasOwnProperty2(tmp17) : call2(type, tmp17))) {
+            let hasOwnProperty2 = Object.prototype.hasOwnProperty;
+            if (!hasOwnProperty2.call(type, tmp17)) {
               continue;
             } else {
               obj2[tmp17] = type[tmp17];
@@ -66,20 +64,21 @@ function convertToPlainObject(type) {
     }
     obj3 = {};
   } else {
+    const tmp2Result = _mod12320;
     if (tmp2Result.isEvent(type)) {
       const obj4 = { type: type.type, target: serializeEventTarget(type.target), currentTarget: serializeEventTarget(type.currentTarget) };
       if (typeof type === "object") {
+        let obj7;
         if (null !== type) {
           const obj5 = {};
-          let obj7 = obj5;
+          obj7 = obj5;
           const keys1 = Object.keys();
           if (keys1 !== undefined) {
             obj7 = obj5;
             while (keys1[tmp] !== undefined) {
               let _Object = Object;
               hasOwnProperty = Object.prototype.hasOwnProperty;
-              let call = hasOwnProperty.call;
-              if (!(typeof call === "unknown" ? hasOwnProperty(tmp8) : call(type, tmp8))) {
+              if (!hasOwnProperty.call(type, tmp8)) {
                 continue;
               } else {
                 obj5[tmp8] = type[tmp8];
@@ -92,8 +91,9 @@ function convertToPlainObject(type) {
         const merged1 = Object.assign(obj7);
         let isInstanceOfResult = typeof globalThis.CustomEvent !== "undefined";
         if (typeof globalThis.CustomEvent !== "undefined") {
-          isInstanceOfResult = tmp2(12320).isInstanceOf(type, globalThis.CustomEvent);
-          const tmp2Result2 = tmp2(12320);
+          const CustomEvent2 = globalThis.CustomEvent;
+          const tmp2Result2 = _mod12320;
+          isInstanceOfResult = tmp2Result2.isInstanceOf(type, globalThis.CustomEvent);
         }
         if (isInstanceOfResult) {
           obj4.detail = type.detail;
@@ -104,22 +104,19 @@ function convertToPlainObject(type) {
     } else {
       return type;
     }
-    tmp2Result = tmp2(12320);
   }
 }
 function serializeEventTarget(arg0) {
   try {
+    let htmlTreeAsStringResult;
+    const obj = _mod12320;
+    const tmp2 = require;
     if (obj.isElement(arg0)) {
-      let htmlTreeAsStringResult = _mod12321.htmlTreeAsString(arg0);
-      const tmp2Result = _mod12321;
+      const tmp2Result = tmp2(12321);
+      htmlTreeAsStringResult = tmp2Result.htmlTreeAsString(arg0);
     } else {
       const _Object = Object;
-      const call = toString.call;
-      if (typeof call === "unknown") {
-        htmlTreeAsStringResult = toString();
-      } else {
-        htmlTreeAsStringResult = call(arg0);
-      }
+      htmlTreeAsStringResult = toString.call(arg0);
     }
     return htmlTreeAsStringResult;
   } catch (err) {
@@ -127,35 +124,33 @@ function serializeEventTarget(arg0) {
   }
 }
 function _dropUndefinedKeys(arr, map) {
-  if ((function isPojo(arr) {
+  function isPojo(arr) {
+    const obj = map(items[2]);
     if (obj.isPlainObject(arr)) {
       try {
         const _Object = Object;
         const name = Object.getPrototypeOf(arr).constructor.name;
-        let tmp3 = !name;
-        if (name) {
-          tmp3 = "Object" === tmp2;
-        }
-        return tmp3;
+        return !name || "Object" === tmp2;
       } catch (err) {
         return true;
       }
     } else {
       return false;
     }
-  })(arr)) {
-    value = map.get(arr);
+  }
+  if (isPojo(arr)) {
+    const value = map.get(arr);
     if (undefined !== value) {
       return value;
     } else {
-      const obj = {};
+      let obj = {};
       const result = map.set(arr, obj);
       let _Object = Object;
       const ownPropertyNames = Object.getOwnPropertyNames(arr);
       for (const item10030 of ownPropertyNames) {
         let tmp11 = item10030;
-        if (undefined !== arg0[item10030]) {
-          obj[tmp11] = _dropUndefinedKeys(arg0[tmp11], arg1);
+        if (undefined !== arr[item10030]) {
+          obj[tmp11] = _dropUndefinedKeys(arr[tmp11], map);
         }
         continue;
       }
@@ -164,14 +159,14 @@ function _dropUndefinedKeys(arr, map) {
   } else {
     const _Array = Array;
     if (Array.isArray(arr)) {
-      value2 = map.get(arr);
+      const value2 = map.get(arr);
       if (undefined !== value2) {
         return value2;
       } else {
         const items = [];
         const result1 = map.set(arr, items);
         const item = arr.forEach((item) => {
-          items.push(_dropUndefinedKeys(item, closure_0));
+          items.push(_dropUndefinedKeys(item, map));
         });
         return items;
       }
@@ -184,7 +179,8 @@ function _dropUndefinedKeys(arr, map) {
 export { addNonEnumerableProperty };
 export { convertToPlainObject };
 export const dropUndefinedKeys = function dropUndefinedKeys(arr) {
-  return _dropUndefinedKeys(arr, new Map());
+  map = new Map();
+  return _dropUndefinedKeys(arr, map);
 };
 export const extractExceptionKeysForMessage = function extractExceptionKeysForMessage(arg0) {
   let num = arg1;
@@ -196,7 +192,8 @@ export const extractExceptionKeysForMessage = function extractExceptionKeysForMe
   const first = keys[0];
   if (first) {
     if (first.length >= num) {
-      return _mod12322.truncate(first, num);
+      const obj3 = _mod12322;
+      return obj3.truncate(first, num);
     } else {
       let length = keys.length;
       if (length > 0) {
@@ -207,7 +204,8 @@ export const extractExceptionKeysForMessage = function extractExceptionKeysForMe
         }
         let truncateResult = joined;
         if (length !== keys.length) {
-          truncateResult = _mod12322.truncate(joined, num);
+          const obj2 = _mod12322;
+          truncateResult = obj2.truncate(joined, num);
         }
         return truncateResult;
       }
@@ -219,19 +217,19 @@ export const extractExceptionKeysForMessage = function extractExceptionKeysForMe
 };
 export const fill = function fill(arg0, arg1, fn) {
   if (arg1 in arg0) {
-    const tmp6 = fn(arg0[arg1]);
-    if (typeof tmp6 === "function") {
-      markFunctionWrapped(tmp6, tmp5);
+    const tmp3 = fn(arg0[arg1]);
+    if (typeof tmp3 === "function") {
+      markFunctionWrapped(tmp3, arg0[arg1]);
     }
     try {
-      arg0[arg1] = tmp6;
+      arg0[arg1] = tmp3;
     } catch (err) {
+      const tmp4 = require;
       if (_mod12312.DEBUG_BUILD) {
-        const logger = tmp7(12313).logger;
+        const logger = tmp4(12313).logger;
         const _HermesInternal = HermesInternal;
-        logger.log("Failed to replace method \"" + tmp3 + "\" in object", tmp2);
+        logger.log("Failed to replace method \"" + arg1 + "\" in object", arg0);
       }
-      tmp7 = require;
     }
   }
 };
@@ -240,23 +238,25 @@ export const getOriginalFunction = function getOriginalFunction(__sentry_origina
 };
 export { markFunctionWrapped };
 export const objectify = function objectify(arg0) {
+  let string;
   if (null == arg0 === true) {
     const _String = String;
-    let string = new String(arg0);
+    const self3 = this;
+    const self4 = this;
+    string = new String(arg0);
   } else {
-    let tmp = typeof arg0 === "symbol";
-    if (typeof arg0 !== "symbol") {
-      tmp = typeof arg0 === "bigint";
-    }
+    const tmp = typeof arg0 === "symbol" || typeof arg0 === "bigint";
     if (tmp === true) {
       const _Object = Object;
       string = Object(arg0);
     } else {
       string = arg0;
+      const obj = _mod12320;
       if (obj.isPrimitive(arg0) === true) {
+        const self = this;
+        const self2 = this;
         string = new arg0.constructor(arg0);
       }
-      obj = _mod12320;
     }
   }
   return string;
@@ -264,8 +264,11 @@ export const objectify = function objectify(arg0) {
 export const urlEncode = function urlEncode(arg0) {
   const entries = Object.entries(arg0);
   const mapped = entries.map((item) => {
+    let tmp;
+    let tmp2;
     [tmp, tmp2] = item;
-    return "" + encodeURIComponent(tmp) + "=" + encodeURIComponent(tmp2);
+    const encodeURIComponentResult = encodeURIComponent(tmp);
+    return "" + encodeURIComponentResult + "=" + encodeURIComponent(tmp2);
   });
   return mapped.join("&");
 };

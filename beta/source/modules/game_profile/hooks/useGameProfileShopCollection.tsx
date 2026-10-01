@@ -6,85 +6,81 @@
 
 // Module 8338 (useGameProfileShopCollection)
 import GameProfileHttpUtils from "GameProfileHttpUtils" /* 8222 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GameProfileStore from "GameProfileStore" /* 8135 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-({ useEffect: c2, useMemo: c3 } = noop);
+let c2;
+let c3;
+({ useEffect: c2, useMemo: c3 } = react);
 let closure_5 = [];
 let result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileShopCollection.tsx");
 
 export const useGameProfileShopCollectionState = function useGameProfileShopCollectionState(arg0) {
+  let closure_0;
+  let hasFetched;
   _require = arg0;
   const items = [GameProfileStore];
-  const isFetching = require("initialize").useStateFromStoresObject(items, () => {
-    let result = null != skuIds;
-    if (result) {
-      result = GameProfileStore.hasShopCollectionBeenFetched(tmp);
-    }
-    const obj = { hasFetched: result, isFetching: null, skuIds: null };
-    let result1 = null != tmp;
-    if (result1) {
-      result1 = GameProfileStore.isShopCollectionFetching(tmp);
-    }
-    obj.isFetching = result1;
+  const obj = require("get initialized");
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    let result1;
     let shopCollectionSkuIds;
-    if (null != skuIds) {
+    const result = null != collectionId && GameProfileStore.hasShopCollectionBeenFetched(tmp);
+    const obj = { hasFetched: result, isFetching: result1, skuIds: shopCollectionSkuIds };
+    result1 = null != tmp && GameProfileStore.isShopCollectionFetching(tmp);
+    shopCollectionSkuIds = undefined;
+    if (null != collectionId) {
       shopCollectionSkuIds = GameProfileStore.getShopCollectionSkuIds(tmp);
     }
-    obj.skuIds = shopCollectionSkuIds;
     return obj;
   });
-  hasFetched = isFetching.hasFetched;
-  let skuIds = isFetching.skuIds;
+  hasFetched = stateFromStoresObject.hasFetched;
+  let skuIds = stateFromStoresObject.skuIds;
   const items1 = [arg0, hasFetched];
+  const isFetching = stateFromStoresObject.isFetching;
   closure_2(() => {
-    let result = null == skuIds || collectiblesShopProducts;
+    const result = null == collectionId || hasFetched || GameProfileStore.isShopCollectionFetching(tmp);
     if (!result) {
-      result = GameProfileStore.isShopCollectionFetching(tmp);
-    }
-    if (!result) {
-      const shopCollection = GameProfileHttpUtils.getShopCollection(tmp);
+      const obj = GameProfileHttpUtils;
+      const shopCollection = obj.getShopCollection(tmp);
     }
   }, items1);
   if (skuIds == null) {
     skuIds = closure_5;
   }
-  return { skuIds, hasFetched, isFetching: isFetching.isFetching };
+  return { skuIds, hasFetched, isFetching };
 };
 export const useGameProfileShopCollection = function useGameProfileShopCollection(arg0) {
+  let closure_0;
+  let hasFetched;
+  let isFetching;
+  let skuIds;
   _require = arg0;
   const items = [GameProfileStore];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items, () => {
-    let result = null != skuIds;
-    if (result) {
-      result = GameProfileStore.hasShopCollectionBeenFetched(tmp);
-    }
-    const obj = { hasFetched: result, isFetching: null, skuIds: null };
-    let result1 = null != tmp;
-    if (result1) {
-      result1 = GameProfileStore.isShopCollectionFetching(tmp);
-    }
-    obj.isFetching = result1;
+  const obj = require("get initialized");
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    let result1;
     let shopCollectionSkuIds;
-    if (null != skuIds) {
+    const result = null != collectionId && GameProfileStore.hasShopCollectionBeenFetched(tmp);
+    const obj = { hasFetched: result, isFetching: result1, skuIds: shopCollectionSkuIds };
+    result1 = null != tmp && GameProfileStore.isShopCollectionFetching(tmp);
+    shopCollectionSkuIds = undefined;
+    if (null != collectionId) {
       shopCollectionSkuIds = GameProfileStore.getShopCollectionSkuIds(tmp);
     }
-    obj.skuIds = shopCollectionSkuIds;
     return obj;
   });
   hasFetched = stateFromStoresObject.hasFetched;
   ({ isFetching, skuIds } = stateFromStoresObject);
   const items1 = [arg0, hasFetched];
   closure_2(() => {
-    let result = null == skuIds || collectiblesShopProducts;
+    const result = null == collectionId || hasFetched || GameProfileStore.isShopCollectionFetching(tmp);
     if (!result) {
-      result = GameProfileStore.isShopCollectionFetching(tmp);
-    }
-    if (!result) {
-      const shopCollection = GameProfileHttpUtils.getShopCollection(tmp);
+      const obj = GameProfileHttpUtils;
+      const shopCollection = obj.getShopCollection(tmp);
     }
   }, items1);
   if (skuIds == null) {
@@ -93,46 +89,42 @@ export const useGameProfileShopCollection = function useGameProfileShopCollectio
   return skuIds;
 };
 export const useGameProfileShopCollectionProducts = function useGameProfileShopCollectionProducts(collectionId) {
-  let skuIds = collectionId;
+  let hasFetched;
+  let tmp8;
+  _require = collectionId;
+  const tmp = _require;
+  let obj = require("get initialized");
   const items = [GameProfileStore];
-  const stateFromStoresObject = skuIds(collectiblesShopProducts[2]).useStateFromStoresObject(items, () => {
-    let result = null != skuIds;
-    if (result) {
-      result = GameProfileStore.hasShopCollectionBeenFetched(tmp);
-    }
-    const obj = { hasFetched: result, isFetching: null, skuIds: null };
-    let result1 = null != tmp;
-    if (result1) {
-      result1 = GameProfileStore.isShopCollectionFetching(tmp);
-    }
-    obj.isFetching = result1;
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    let result1;
     let shopCollectionSkuIds;
-    if (null != skuIds) {
+    const result = null != collectionId && GameProfileStore.hasShopCollectionBeenFetched(tmp);
+    const obj = { hasFetched: result, isFetching: result1, skuIds: shopCollectionSkuIds };
+    result1 = null != tmp && GameProfileStore.isShopCollectionFetching(tmp);
+    shopCollectionSkuIds = undefined;
+    if (null != collectionId) {
       shopCollectionSkuIds = GameProfileStore.getShopCollectionSkuIds(tmp);
     }
-    obj.skuIds = shopCollectionSkuIds;
     return obj;
   });
-  const hasFetched = stateFromStoresObject.hasFetched;
-  collectiblesShopProducts = hasFetched;
-  skuIds = stateFromStoresObject.skuIds;
+  const tmp2 = hasFetched;
+  hasFetched = stateFromStoresObject.hasFetched;
+  let skuIds = stateFromStoresObject.skuIds;
   const items1 = [collectionId, hasFetched];
+  const isFetching = stateFromStoresObject.isFetching;
   closure_2(() => {
-    let result = null == skuIds || collectiblesShopProducts;
+    const result = null == collectionId || hasFetched || GameProfileStore.isShopCollectionFetching(tmp);
     if (!result) {
-      result = GameProfileStore.isShopCollectionFetching(tmp);
-    }
-    if (!result) {
-      const shopCollection = GameProfileHttpUtils.getShopCollection(tmp);
+      const obj = GameProfileHttpUtils;
+      const shopCollection = obj.getShopCollection(tmp);
     }
   }, items1);
   if (skuIds == null) {
     skuIds = closure_5;
   }
-  let obj = skuIds(collectiblesShopProducts[2]);
-  collectiblesShopProducts = skuIds(collectiblesShopProducts[4]).useCollectiblesShopProducts(skuIds, { flattenVariants: true });
+  const tmpResult = tmp(tmp2[4]);
+  const collectiblesShopProducts = tmpResult.useCollectiblesShopProducts(skuIds, { flattenVariants: true });
   const items2 = [skuIds, collectiblesShopProducts];
-  const tmpResult = skuIds(collectiblesShopProducts[4]);
   const obj2 = {
     products: closure_3(() => {
       const mapped = skuIds.map((item) => {
@@ -144,20 +136,18 @@ export const useGameProfileShopCollectionProducts = function useGameProfileShopC
       });
       return mapped.filter((item) => null != item);
     }, items2),
-    isLoading: null
+    isLoading: tmp8
   };
-  let tmp8 = null != collectionId;
+  tmp8 = null != collectionId;
   if (tmp8) {
-    let isFetching = !hasFetched;
+    let tmp9 = !hasFetched;
     if (hasFetched) {
-      isFetching = stateFromStoresObject.isFetching;
+      tmp9 = isFetching;
     }
-    if (!isFetching) {
-      isFetching = skuIds.length > 0 && tmp7;
-      const tmp9 = skuIds.length > 0 && tmp7;
+    if (!tmp9) {
+      tmp9 = skuIds.length > 0 && tmp7;
     }
-    tmp8 = isFetching;
+    tmp8 = tmp9;
   }
-  obj2.isLoading = tmp8;
   return obj2;
 };

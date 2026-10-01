@@ -5,14 +5,17 @@
 // Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, hasNecessaryPremiumSubscriptionStatus, isEligibleForProgramReward, isProgramRewardStale, useIsEligibleForProgramReward
 
 // Module 13270 (ProgramRewardsUtils)
-import _modDef4262 from "module_4262" /* 4262 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import isPastDefault from "isPast" /* 4262 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
 import ProgramRewardsTypes from "ProgramRewardsTypes" /* 13271 */;
 import PremiumRewardsOrbsExperiment from "PremiumRewardsOrbsExperiment" /* 13274 */;
+import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 13275 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function canFetchNitroProgramReward(ProgramRewardsUtils) {
+  let flag;
   let str = ProgramRewardsUtils;
   if (ProgramRewardsUtils === undefined) {
     str = "ProgramRewardsUtils";
@@ -22,22 +25,23 @@ function canFetchNitroProgramReward(ProgramRewardsUtils) {
     str = "ProgramRewardsUtils";
   }
   if (ProgramRewardsTypes.RewardProgram.NITRO === NITRO) {
-    let flag = tmp(13274).getPremiumRewardsOrbsExperiment(str).isInTreatment;
-    const tmpResult = tmp(13274);
+    const tmpResult = PremiumRewardsOrbsExperiment;
+    flag = tmpResult.getPremiumRewardsOrbsExperiment(str).isInTreatment;
   } else {
     flag = false;
-    if (tmp(13271).RewardProgram.XBOX === NITRO) {
+    if (ProgramRewardsTypes.RewardProgram.XBOX === NITRO) {
       flag = true;
     }
   }
   if (flag) {
     const currentUser = UserStore.getCurrentUser();
-    flag = tmp(4488).isPremiumExactly(currentUser, PremiumTypes.TIER_2);
-    const tmpResult2 = tmp(4488);
+    const tmpResult2 = PremiumUtils;
+    flag = tmpResult2.isPremiumExactly(currentUser, PremiumTypes.TIER_2);
   }
   return flag;
 }
 function canFetchXboxProgramReward(ProgramRewardsUtils) {
+  let flag;
   let str = ProgramRewardsUtils;
   if (ProgramRewardsUtils === undefined) {
     str = "ProgramRewardsUtils";
@@ -47,23 +51,22 @@ function canFetchXboxProgramReward(ProgramRewardsUtils) {
     str = "ProgramRewardsUtils";
   }
   if (ProgramRewardsTypes.RewardProgram.NITRO === XBOX) {
-    let flag = tmp(13274).getPremiumRewardsOrbsExperiment(str).isInTreatment;
-    const tmpResult = tmp(13274);
+    const tmpResult = PremiumRewardsOrbsExperiment;
+    flag = tmpResult.getPremiumRewardsOrbsExperiment(str).isInTreatment;
   } else {
     flag = false;
-    if (tmp(13271).RewardProgram.XBOX === XBOX) {
+    if (ProgramRewardsTypes.RewardProgram.XBOX === XBOX) {
       flag = true;
     }
   }
   if (flag) {
-    flag = tmp(13275).hasCrepeMonthlyOrbsPerk(UserStore.getCurrentUser());
-    const tmpResult2 = tmp(13275);
+    const tmpResult2 = useHasXboxMonthlyOrbsPerk;
+    flag = tmpResult2.hasCrepeMonthlyOrbsPerk(UserStore.getCurrentUser());
   }
   return flag;
 }
-const PremiumTypes = fn(1374).PremiumTypes;
-const dependencyMap = { [fn(13271).RewardProgram.NITRO]: canFetchNitroProgramReward, [fn(13271).RewardProgram.XBOX]: canFetchXboxProgramReward };
-const size = fn(2);
+const PremiumTypes = PremiumConstants.PremiumTypes;
+let closure_5 = { [ProgramRewardsTypes.RewardProgram.NITRO]: canFetchNitroProgramReward, [ProgramRewardsTypes.RewardProgram.XBOX]: canFetchXboxProgramReward };
 const result = size.fileFinishedImporting("modules/rewards/ProgramRewardsUtils.tsx");
 
 export const isProgramRewardStale = function isProgramRewardStale(next_reward_date) {
@@ -71,14 +74,14 @@ export const isProgramRewardStale = function isProgramRewardStale(next_reward_da
     return true;
   } else {
     next_reward_date = next_reward_date.next_reward_date;
-    let tmp = null != next_reward_date;
-    if (tmp) {
-      tmp = "" !== next_reward_date;
-    }
+    let tmp = null != next_reward_date && "" !== next_reward_date;
     if (tmp) {
       const _Date = Date;
+      const self = this;
+      const self2 = this;
+      const tmp4 = isPastDefault;
       const date = new Date(next_reward_date);
-      tmp = _modDef4262(date);
+      tmp = tmp4(date);
     }
     return tmp;
   }
@@ -89,8 +92,9 @@ export const isEligibleForProgramReward = function isEligibleForProgramReward(ar
     str = "ProgramRewardsUtils";
   }
   if (ProgramRewardsTypes.RewardProgram.NITRO === arg0) {
-    return tmp(13274).getPremiumRewardsOrbsExperiment(str).isInTreatment;
-  } else if (tmp(13271).RewardProgram.XBOX === arg0) {
+    const tmpResult = PremiumRewardsOrbsExperiment;
+    return tmpResult.getPremiumRewardsOrbsExperiment(str).isInTreatment;
+  } else if (ProgramRewardsTypes.RewardProgram.XBOX === arg0) {
     return true;
   } else {
     return false;
@@ -101,14 +105,15 @@ export const useIsEligibleForProgramReward = function useIsEligibleForProgramRew
   if (ProgramRewardsUtils === undefined) {
     str = "ProgramRewardsUtils";
   }
+  const obj = PremiumRewardsOrbsExperiment;
+  const isInTreatment = obj.usePremiumRewardsOrbsExperiment(str).isInTreatment;
   if (ProgramRewardsTypes.RewardProgram.NITRO === arg0) {
-    return obj.usePremiumRewardsOrbsExperiment(str).isInTreatment;
+    return isInTreatment;
   } else if (ProgramRewardsTypes.RewardProgram.XBOX === arg0) {
     return true;
   } else {
     return false;
   }
-  obj = PremiumRewardsOrbsExperiment;
 };
 export { canFetchNitroProgramReward };
 export { canFetchXboxProgramReward };
@@ -120,7 +125,7 @@ export const canFetchAnyProgramReward = function canFetchAnyProgramReward(Progra
   const values = Object.values(ProgramRewardsTypes.RewardProgram);
   for (const item10015 of values) {
     if (typeof item10015 === "number") {
-      if (dependencyMap[tmp2](str)) {
+      if (closure_5[tmp2](str)) {
         obj.return();
         let flag = true;
         return true;
@@ -134,5 +139,6 @@ export const hasNecessaryPremiumSubscriptionStatus = function hasNecessaryPremiu
   if (currentUser == null) {
     currentUser = UserStore.getCurrentUser();
   }
-  return PremiumUtils.isPremiumExactly(currentUser, PremiumTypes.TIER_2);
+  const obj = PremiumUtils;
+  return obj.isPremiumExactly(currentUser, PremiumTypes.TIER_2);
 };

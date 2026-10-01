@@ -6,19 +6,26 @@
 
 // Module 5942 (useNavigatorBackPressHandler)
 import useBackPressHandler from "useBackPressHandler" /* 5276 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Navigator/native/useNavigatorBackPressHandler.native.tsx");
 
 export const useNavigatorBackPressHandler = function useNavigatorBackPressHandler(callback) {
+  let closure_1;
+  let current;
   _require = callback;
-  dependencyMap = noop.useRef(callback);
-  const layoutEffect = noop.useLayoutEffect(() => {
+  dependencyMap = react.useRef(callback);
+  const layoutEffect = react.useLayoutEffect(() => {
     closure_1.current = current;
   });
-  const focusEffect = require("Link").useFocusEffect(noop.useCallback(() => useBackPressHandler.subscribeToBackPress(() => ref.current()), []));
+  let obj = require("Link");
+  const focusEffect = obj.useFocusEffect(react.useCallback(() => {
+    let ref;
+    const obj = useBackPressHandler;
+    return obj.subscribeToBackPress(() => ref.current());
+  }, []));
 };

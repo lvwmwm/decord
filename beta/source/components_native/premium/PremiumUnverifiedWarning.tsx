@@ -4,40 +4,38 @@
 // Dependencies: [19, 1372, 21, 4836, 576, 4540, 1177, 1115, 504, 2]
 
 // Module 13111 (PremiumUnverifiedWarning)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
-import noop from "module_19" /* 19 */;
+import native2 from "native" /* 4540 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import initialize from "initialize" /* 504 */;
+import createStyles from "createStyles" /* 4836 */;
+import get_initialized from "get initialized" /* 504 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { warning: { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, marginTop: 10 } };
-let closure_4 = createStyles.createLegacyClassComponentStyles(obj2);
-const PureComponent = noop.PureComponent;
+const jsx = Fragment.jsx;
+const obj = { warning: { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, marginTop: 10 } };
+({ color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, marginTop: 10 });
+let closure_4 = createStyles.createLegacyClassComponentStyles(obj);
+const PureComponent = react.PureComponent;
 class PremiumUnverifiedWarning extends PureComponent {
-}
-PremiumUnverifiedWarning.prototype["render"] = function render() {
-  let tmp3 = null;
-  if (!this.props.verified) {
-    const obj = { style: null, children: null };
-    const items = [tmp.warning, tmp2];
-    obj.style = items;
-    const intl = util.intl;
-    obj.children = intl.string(util.t["0LgOKH"]);
-    tmp3 = jsx(native.LegacyText, { style: null, children: null });
+  render() {
+    let tmp3 = null;
+    if (!this.props.verified) {
+      const items = [tmp.warning, tmp2];
+      const LegacyText = native.LegacyText;
+      const intl = intl2.intl;
+      tmp3 = <LegacyText style={items}>{intl.string(intl2.t["0LgOKH"])}</LegacyText>;
+    }
+    return tmp3;
   }
-  return tmp3;
-};
-PremiumUnverifiedWarning.contextType = fn(4540).ThemeContext;
+}
+const prototype = PremiumUnverifiedWarning.prototype;
+PremiumUnverifiedWarning.contextType = native2.ThemeContext;
 let items = [UserStore];
-const obj3 = { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, marginTop: 10 };
-const size = fn(2);
-const result = size.fileFinishedImporting("components_native/premium/PremiumUnverifiedWarning.tsx");
-
-export default initialize.connectStores(items, () => {
+const tmp4 = get_initialized.connectStores(items, () => {
   const currentUser = UserStore.getCurrentUser();
   let verified;
   if (currentUser != null) {
@@ -48,3 +46,6 @@ export default initialize.connectStores(items, () => {
   }
   return { verified };
 })(PremiumUnverifiedWarning);
+const result = size.fileFinishedImporting("components_native/premium/PremiumUnverifiedWarning.tsx");
+
+export default tmp4;

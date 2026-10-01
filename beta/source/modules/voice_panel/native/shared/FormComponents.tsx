@@ -6,68 +6,98 @@
 
 // Module 9131 (FormComponents)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import NativeViewDefault from "NativeView" /* 5901 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
+import TableRowGroup2 from "TableRowGroup" /* 5999 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7157 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
 import VoiceStateIcons from "VoiceStateIcons" /* 9132 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 9194 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let size;
 function VoiceBadges(arg0) {
+  let MuteDeafenIcon;
+  let VideoIcon;
+  let items;
+  let muteDeafenIconState;
+  let obj3;
+  let obj5;
+  let videoIconState;
   ({ muteDeafenIconState, videoIconState } = arg0);
   const tmp = closure_7();
-  const obj = { style: tmp.voiceBadgesContainer, children: null };
   let tmp6 = null;
+  const obj = { style: tmp.voiceBadgesContainer, children: items };
+  const tmp2 = metroRequire;
+  const tmp5 = NativeViewDefault;
   if (null != muteDeafenIconState) {
-    const obj2 = { style: tmp.iconWrapper, children: null };
-    const obj3 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp.icon };
-    obj2.children = hasOwnProperty(VoiceStateIcons.MuteDeafenIcon, obj3);
-    tmp6 = hasOwnProperty(tmp3(5901), obj2);
-    const tmp3Result = tmp3(5901);
+    const obj2 = { style: tmp.iconWrapper, children: hasOwnProperty(MuteDeafenIcon, obj3) };
+    obj3 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp.icon };
+    const tmp3Result = NativeViewDefault;
+    MuteDeafenIcon = VoiceStateIcons.MuteDeafenIcon;
+    tmp6 = hasOwnProperty(tmp3Result, obj2);
   }
-  const items = [tmp6, ];
+  items = [tmp6, ];
   let tmp10 = null;
   if (null != videoIconState) {
-    const obj4 = { style: tmp.iconWrapper, children: null };
-    const obj5 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp.icon };
-    obj4.children = hasOwnProperty(VoiceStateIcons.VideoIcon, obj5);
-    tmp10 = hasOwnProperty(tmp3(5901), obj4);
-    const tmp3Result2 = tmp3(5901);
+    const obj4 = { style: tmp.iconWrapper, children: hasOwnProperty(VideoIcon, obj5) };
+    obj5 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp.icon };
+    const tmp3Result2 = NativeViewDefault;
+    VideoIcon = VoiceStateIcons.VideoIcon;
+    tmp10 = hasOwnProperty(tmp3Result2, obj4);
   }
   items[1] = tmp10;
-  obj.children = items;
-  return timestampProducer(NativeViewDefault, obj);
+  return tmp2(tmp5, obj);
 }
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" }, iconWrapper: { marginLeft: 8, padding: 6, backgroundColor: nativeDefault.colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: nativeDefault.radii.round }, icon: null, notConnectedAvatar: null, memberRow: null, trailingContainer: null };
-let size = { width: 16, height: 16, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-obj2.icon = size;
-obj2.notConnectedAvatar = { opacity: 0.5 };
-obj2.memberRow = { flexDirection: "row", alignItems: "center", gap: 4 };
-obj2.trailingContainer = { flexDirection: "row", alignItems: "center", gap: 8 };
-let closure_7 = createStyles.createStyles(obj2);
-size = fn(2);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" }, iconWrapper: obj2, icon: size, notConnectedAvatar: { opacity: 0.5 }, memberRow: { flexDirection: "row", alignItems: "center", gap: 4 }, trailingContainer: { flexDirection: "row", alignItems: "center", gap: 8 } };
+obj2 = { marginLeft: 8, padding: 6, backgroundColor: nativeDefault.colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: nativeDefault.radii.round };
+createStyles = createStyles.createStyles;
+size = { width: 16, height: 16, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+let closure_7 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/voice_panel/native/shared/FormComponents.tsx");
 
 export const VoicePanelFormSection = function VoicePanelFormSection(style) {
+  let TableRowGroup;
+  let items;
+  let obj2;
+  style = style.style;
   const merged = Object.assign(style, Object.assign({ style: 0 }));
-  const obj = { style: null, children: null };
-  const items = [closure_7().container, style.style];
-  obj.style = items;
-  const tmp2 = closure_7();
+  const obj = { style: items, children: hasOwnProperty(TableRowGroup, obj2) };
+  items = [closure_7().container, style];
+  closure_7();
+  obj2 = {};
+  const tmp3 = NativeViewDefault;
+  TableRowGroup = TableRowGroup2.TableRowGroup;
   const merged1 = Object.assign(merged);
-  obj.children = hasOwnProperty(TableRowGroup.TableRowGroup, {});
-  return hasOwnProperty(NativeViewDefault, obj);
+  return hasOwnProperty(tmp3, obj);
 };
 export const MemberRowItem = function MemberRowItem(user) {
+  let Avatar;
+  let guildId;
+  let intl;
+  let items3;
+  let items4;
+  let nick;
+  let notConnected;
+  let notConnectedAvatar;
+  let obj10;
+  let showRing;
+  let showSecureFramesUI;
+  let tmp20Result3;
+  let tmp23Result;
+  let tmp30;
   user = user.user;
   const channelId = user.channelId;
   let flag = user.selfStream;
@@ -86,34 +116,40 @@ export const MemberRowItem = function MemberRowItem(user) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const tmp = closure_7();
+  let tmp = closure_7();
+  const tmp2 = channelId;
   const analyticsLocations = channelId(flag[9])().analyticsLocations;
-  const muteDeafenIconState = user(flag[10]).useMuteDeafenIconState(user.id, guildId);
   let obj = user(flag[10]);
-  const videoIconState = user(flag[10]).useVideoIconState(user.id, guildId);
-  const id = user.id;
+  const muteDeafenIconState = obj.useMuteDeafenIconState(user.id, guildId);
   let obj2 = user(flag[10]);
-  const isUserSecureFramesVerified = user(flag[11]).useIsUserSecureFramesVerified({ userId: id, channelId });
+  const videoIconState = obj2.useVideoIconState(user.id, guildId);
+  const id = user.id;
   const obj3 = user(flag[11]);
-  const canRing = user(flag[12]).useCanRing(user);
+  const isUserSecureFramesVerified = obj3.useIsUserSecureFramesVerified({ userId: id, channelId });
   const obj4 = user(flag[12]);
+  const canRing = obj4.useCanRing(user);
   const obj5 = { userId: user.id, guildId };
-  const tmp9 = channelId(flag[13])({ userId: user.id, guildId });
-  const displayNameStylesFont = user(flag[14]).useDisplayNameStylesFont({ displayNameStyles: tmp9 });
+  const tmp9 = channelId(flag[13])(obj5);
+  const obj6 = user(flag[14]);
+  const displayNameStylesFont = obj6.useDisplayNameStylesFont({ displayNameStyles: tmp9 });
   let items = [id, channelId, analyticsLocations];
   const callback = analyticsLocations.useCallback(() => {
-    showUserProfileActionSheetDefault({ userId: id, channelId, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations });
+    const obj = { userId: id, channelId, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations };
+    showUserProfileActionSheetDefault(obj);
   }, items);
-  const obj6 = user(flag[14]);
-  const obj7 = analyticsLocations;
   const items1 = [id];
-  const stateFromStores = user(flag[16]).useStateFromStores(items1, () => StreamerApplicationSelectors.getStreamerActivityByUserId(id, PresenceStore));
-  let tmp13 = channelId(flag[18])("voice_member_row");
   const obj8 = user(flag[16]);
+  const stateFromStores = obj8.useStateFromStores(items1, () => {
+    const obj = StreamerApplicationSelectors;
+    return obj.getStreamerActivityByUserId(id, PresenceStore);
+  });
+  let tmp13 = channelId(flag[18])("voice_member_row");
+  const obj7 = analyticsLocations;
+  const tmp14 = channelId(flag[19]);
   if (tmp13) {
     tmp13 = flag2;
   }
-  const first = channelId(flag[19])(id, guildId, tmp13)[0];
+  const first = tmp14(id, guildId, tmp13)[0];
   let application_id;
   if (first != null) {
     application_id = first.application_id;
@@ -122,59 +158,67 @@ export const MemberRowItem = function MemberRowItem(user) {
   const items2 = [stateFromStores, flag];
   let tmp18 = true === showRing;
   const memo = obj7.useMemo(() => {
-    if (!flag) {
-      return null;
-    } else {
-      let obj = stateFromStores;
-      if (null == stateFromStores) {
-        const intl = util.intl;
-        intl.string(util.t.eXan7B);
+    let obj2;
+    let tmp = null;
+    if (flag) {
+      let stringResult;
+      if (null != stateFromStores) {
+        const Text = Text_Text.Text;
+        const intl2 = intl3.intl;
+        const format = intl2.format;
+        const tmp8 = hasOwnProperty;
+        if (null != stateFromStores.details) {
+          let name;
+          if ("" !== stateFromStores.details) {
+            name = tmp2.details;
+          }
+          const obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: format(tmp15, obj2) };
+          obj2 = { name };
+          stringResult = tmp8(Text, obj);
+        }
+        name = tmp2.name;
+      } else {
+        const intl = intl3.intl;
+        stringResult = intl.string(intl3.t.eXan7B);
       }
-      const intl2 = util.intl;
-      if (null == obj.details) {
-        obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: null };
-        const obj2 = { name: obj.name };
-        obj.children = intl2.format(tmp12, obj2);
-        tmp5(Text_Text.Text, obj);
-      }
-      const details = obj.details;
-      tmp5 = hasOwnProperty;
+      tmp = stringResult;
     }
+    return tmp;
   }, items2);
   if (tmp18) {
     tmp18 = canRing;
   }
-  const obj9 = { onPress: callback, icon: null, subLabel: null, trailing: null, label: null };
-  const obj10 = { user, guildId, size: user(flag[8]).AvatarSizes.REFRESH_MEDIUM_32, style: null };
-  let notConnectedAvatar;
+  const obj9 = { onPress: callback, icon: stateFromStores(Avatar, obj10), subLabel: memo, trailing: null, label: null };
+  const TableRow = tmp4(tmp3[23]).TableRow;
+  obj10 = { user, guildId, size: user(flag[8]).AvatarSizes.REFRESH_MEDIUM_32, style: notConnectedAvatar };
+  Avatar = tmp4(tmp3[8]).Avatar;
+  notConnectedAvatar = undefined;
   if (notConnected) {
     notConnectedAvatar = tmp.notConnectedAvatar;
   }
-  obj10.style = notConnectedAvatar;
-  obj9.icon = stateFromStores(user(flag[8]).Avatar, obj10);
-  obj9.subLabel = memo;
   if (!tmp18) {
     obj9.trailing = tmp23Result;
     if (nick == null) {
-      nick = tmp4(tmp3[27]).getName(user);
-      const tmp4Result = tmp4(tmp3[27]);
+      const tmp4Result = user(flag[27]);
+      nick = tmp4Result.getName(user);
     }
-    const obj11 = { style: tmp.memberRow, children: null };
     let str = "text-default";
+    const obj11 = { style: tmp.memberRow, children: items3 };
+    const tmp2Result = tmp2(flag[5]);
+    let Text = tmp4(tmp3[21]).Text;
+    const tmp28 = closure_6;
     if (notConnected) {
       str = "text-muted";
     }
-    const obj12 = { variant: "text-md/semibold", color: str, style: null, children: null };
-    let tmp30 = null != displayNameStylesFont;
+    const obj12 = { variant: "text-md/semibold", color: str, style: tmp30, children: nick };
+    tmp30 = null != displayNameStylesFont;
     if (tmp30) {
+      tmp30 = { fontFamily: displayNameStylesFont };
       const obj13 = { fontFamily: displayNameStylesFont };
-      tmp30 = obj13;
     }
-    obj12.style = tmp30;
-    obj12.children = nick;
-    const items3 = [tmp20(tmp4(tmp3[21]).Text, obj12), , ];
+    items3 = [stateFromStores(Text, obj12), , ];
     const obj14 = { userId: user.id };
-    items3[1] = tmp20(tmp2(tmp3[28]), obj14);
+    items3[1] = stateFromStores(tmp2(flag[28]), obj14);
     let tmp20Result = null;
     if (showSecureFramesUI) {
       tmp20Result = null;
@@ -184,39 +228,39 @@ export const MemberRowItem = function MemberRowItem(user) {
       }
     }
     items3[2] = tmp20Result;
-    obj11.children = items3;
-    obj9.label = closure_6(tmp2(tmp3[5]), obj11);
-    return tmp20(tmp4(tmp3[23]).TableRow, obj9);
+    obj9.label = tmp28(tmp2Result, obj11);
+    return stateFromStores(TableRow, obj9);
   }
-  const obj16 = { style: tmp.trailingContainer, children: null };
-  const tmp14 = channelId(flag[19]);
+  const obj16 = { style: tmp.trailingContainer, children: items4 };
+  const tmp23 = closure_6;
+  const tmp2Result2 = tmp2(flag[5]);
   if (tmp18) {
     const obj17 = {
       size: "sm",
       variant: "secondary",
       onPress() {
           const items = [user.id];
-          return CallActionCreatorsDefault.ring(channelId, items, "voice_panel_floating_cta");
+          const obj = CallActionCreatorsDefault;
+          return obj.ring(channelId, items, "voice_panel_floating_cta");
         },
-      text: null
+      text: intl.string(user(flag[22]).t.bHa9kN)
     };
-    let intl = tmp4(tmp3[22]).intl;
-    obj17.text = intl.string(tmp4(tmp3[22]).t.bHa9kN);
-    let tmp20Result3 = tmp20(tmp4(tmp3[24]).Button, obj17);
+    const Button = tmp4(tmp3[24]).Button;
+    intl = tmp4(tmp3[22]).intl;
+    tmp20Result3 = tmp20(Button, obj17);
   } else {
     tmp20Result3 = null;
-    if (tmp19) {
+    if (null != muteDeafenIconState || null != videoIconState) {
       const obj18 = { muteDeafenIconState, videoIconState };
       tmp20Result3 = tmp20(VoiceBadges, obj18);
     }
   }
-  const items4 = [tmp20Result3, ];
+  items4 = [tmp20Result3, ];
   let tmp20Result4 = null;
   if (null != gameRecord) {
     const obj19 = { game: gameRecord, size: 24, fallback: "placeholder" };
     tmp20Result4 = tmp20(tmp2(tmp3[26]), obj19);
   }
   items4[1] = tmp20Result4;
-  obj16.children = items4;
-  const tmp2Result2 = channelId(flag[5]);
+  tmp23Result = tmp23(tmp2Result2, obj16);
 };

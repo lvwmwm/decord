@@ -8,10 +8,10 @@
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-03-debug-experiment", kind: "user", defaultConfig: {}, variations: null };
-const obj2 = { 1: null, 2: {} };
+let obj2;
+const obj = { name: "2026-03-debug-experiment", kind: "user", defaultConfig: {}, variations: obj2 };
+obj2 = { 1: null, 2: {} };
 obj2[2] = {};
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/experiments/apex/DebugExperiment.tsx");
 

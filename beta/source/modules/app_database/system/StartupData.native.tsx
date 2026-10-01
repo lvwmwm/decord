@@ -5,17 +5,19 @@
 // Exports: getUserId, setUserId
 
 // Module 2092 (StartupData)
-import _mod17 from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import NativeAppDatabaseModuleDefault from "NativeAppDatabaseModule" /* 2093 */;
+import react_nativeDefault from "react-native" /* 2093 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = _mod17.NativeModules;
+const NativeModules = react_native.NativeModules;
 const result = size.fileFinishedImporting("modules/app_database/system/StartupData.native.tsx");
 
 export const getUserId = function getUserId() {
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    const userId = NativeAppDatabaseModuleDefault.getConstants().userId;
+    const obj2 = react_nativeDefault;
+    const userId = obj2.getConstants().userId;
     let tmp6 = null;
     if (null != userId) {
       tmp6 = userId;
@@ -28,11 +30,12 @@ export const getUserId = function getUserId() {
     }
     return userId1;
   }
-  obj = PlatformUtils;
 };
 export const setUserId = function setUserId(id) {
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    NativeAppDatabaseModuleDefault.setUserId(id);
+    const obj2 = react_nativeDefault;
+    obj2.setUserId(id);
   } else {
     const DCDAppDatabase = NativeModules.DCDAppDatabase;
     DCDAppDatabase.setUserId(id);

@@ -5,49 +5,68 @@
 // Exports: default
 
 // Module 14765 (LabeledDataBlock)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
+import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
 import TextStyles from "TextStyles" /* 5836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.sm, flexBasis: "auto", flexGrow: 1, padding: 16 }, title: { marginRight: 4 }, data: null, titleSection: null };
-const merged = Object.assign(TextStyles(fn(1074).Fonts.PRIMARY_MEDIUM, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
-obj2.data = {};
-obj2.titleSection = { flexDirection: "row", alignItems: "center", marginBottom: 16 };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
+let c3;
+let closure_4;
+let obj2;
+let obj3;
+const View = react_native.View;
+const Fonts = Constants.Fonts;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, title: { marginRight: 4 }, data: obj3, titleSection: { flexDirection: "row", alignItems: "center", marginBottom: 16 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.sm, flexBasis: "auto", flexGrow: 1, padding: 16 };
+createStyles = createStyles.createStyles;
+obj3 = {};
+const merged = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+let closure_5 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/LabeledDataBlock.tsx");
 
 export default function LabeledDataBlock(arg0) {
+  let Icon;
+  let children;
+  let icon;
+  let items;
+  let items1;
+  let items2;
+  let obj5;
+  let onPressIcon;
+  let style;
+  let title;
   ({ children, icon } = arg0);
   ({ title, style, onPressIcon } = arg0);
   const tmp = closure_5();
-  const obj = { style: null, children: null };
-  const items = [tmp.container, style];
-  obj.style = items;
-  const obj2 = { style: tmp.titleSection, children: null };
-  const items1 = [React3(Text_Text.Text, { style: tmp.title, accessibilityRole: "header", variant: "text-sm/medium", color: "interactive-text-default", children: title }), ];
+  const obj = { style: items, children: items2 };
+  items = [tmp.container, style];
+  const obj2 = { style: tmp.titleSection, children: items1 };
+  items1 = [, ];
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "text-sm/medium", color: "interactive-text-default", children: title };
+  items1[0] = _false(Text_Text.Text, obj3);
   let tmp4Result = null != icon;
   if (tmp4Result) {
-    const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: null };
-    const obj5 = { size: tmp5(1177).Icon.Sizes.SMALL, source: icon };
-    obj4.children = tmp4(tmp5(1177).Icon, obj5);
-    tmp4Result = tmp4(tmp5(5435).PressableOpacity, obj4);
+    const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(Icon, obj5) };
+    const PressableOpacity = tmp5(5435).PressableOpacity;
+    obj5 = { size: native.Icon.Sizes.SMALL, source: icon };
+    Icon = tmp5(1177).Icon;
+    tmp4Result = tmp4(PressableOpacity, obj4);
   }
   items1[1] = tmp4Result;
-  obj2.children = items1;
-  const items2 = [React4(View, obj2), ];
+  items2 = [React3(View, obj2), ];
   let tmp4Result2 = children;
   if (typeof children === "string") {
     const obj6 = { style: tmp.data, children };
     tmp4Result2 = tmp4(tmp5(1177).LegacyText, obj6);
   }
   items2[1] = tmp4Result2;
-  obj.children = items2;
-  return React4(View, obj);
+  return React3(View, obj);
 };

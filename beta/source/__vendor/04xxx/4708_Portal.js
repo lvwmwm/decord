@@ -7,12 +7,14 @@
 import _mod4709 from "module_4709" /* 4709 */;
 import _mod4710 from "module_4710" /* 4710 */;
 import PortalHost from "PortalHost" /* 4713 */;
-import _mod4715 from "module_4715" /* 4715 */;
+import PortalProvider from "PortalProvider" /* 4715 */;
 import print from "print" /* 4717 */;
 
+const PortalHost_export = PortalHost.PortalHost;
+const PortalProvider_export = PortalProvider.PortalProvider;
 
 export const Portal = _mod4709.Portal;
-export const PortalHost = PortalHost.PortalHost;
-export const PortalProvider = _mod4715.PortalProvider;
+export { PortalHost_export as PortalHost };
+export { PortalProvider_export as PortalProvider };
 export const usePortal = _mod4710.usePortal;
 export const enableLogging = print.enableLogging;

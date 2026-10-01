@@ -5,20 +5,21 @@
 // Exports: default
 
 // Module 10341 (ActivityStatusIcon)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_1 = createStyles.createStyles({ icon: { flexShrink: 0 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activity_status/native/ActivityStatusIcon.tsx");
 
 export default function ActivityStatusIcon(arg0) {
+  let icon;
+  let style;
   ({ icon, style } = arg0);
   const merged = Object.assign(arg0, Object.assign({ icon: 0, style: 0 }));
-  const obj = { size: "xxs", style: null, color: "status-positive" };
   const items = [closure_1().icon, style];
-  obj.style = items;
   const merged1 = Object.assign(merged);
-  return <icon size="xxs" style={null} color="status-positive" />;
+  return <icon size="xxs" style={items} color="status-positive" />;
 };

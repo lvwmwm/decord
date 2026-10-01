@@ -5,55 +5,37 @@
 // Exports: default
 
 // Module 9486 (SingleVideoCall)
+import Fragment from "Fragment" /* 21 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import ChannelCallStore from "ChannelCallStore" /* 8829 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const ChannelCallStore = fn(8829);
+let closure_4;
+let hasOwnProperty;
 ({ resetFocus: closure_4, toggleFocus: hasOwnProperty } = ChannelCallStore);
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/video_calls/native/components/SingleVideoCall.tsx");
 
 export default function SingleVideoCall(channel) {
   channel = channel.channel;
   let bottom;
   let right;
+  let participant = channel.participant;
   const rect = bottom(right[3])();
   bottom = rect.bottom;
   right = rect.right;
   const analyticsLocations = bottom(right[4])().analyticsLocations;
   const items = [right, bottom];
   const memo = analyticsLocations.useMemo(() => ({ marginRight: right, marginBottom: bottom }), items);
-  const obj = {
-    gestureEnabled: true,
-    participant: channel.participant,
-    avatarSize: channel(right[6]).AvatarSizes.PROFILE,
-    resizeMode: channel(right[7]).ResizeMode.AUTO,
-    statusStyle: memo,
-    onSingleTap,
-    onDoubleTap() {
-      React4();
-      const participant = ChannelRTCActionCreatorsDefault.selectParticipant(channel.id, null);
-    },
-    onLongPress(user) {
-      showUserProfileActionSheetDefault({ userId: user.user.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations });
-    }
-  };
-  return jsx(bottom(right[5]), {
-    gestureEnabled: true,
-    participant: channel.participant,
-    avatarSize: channel(right[6]).AvatarSizes.PROFILE,
-    resizeMode: channel(right[7]).ResizeMode.AUTO,
-    statusStyle: memo,
-    onSingleTap,
-    onDoubleTap() {
-      React4();
-      const participant = ChannelRTCActionCreatorsDefault.selectParticipant(channel.id, null);
-    },
-    onLongPress(user) {
-      showUserProfileActionSheetDefault({ userId: user.user.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations });
-    }
-  });
+  bottom(right[5]);
+  return <tmp2 gestureEnabled participant={participant} avatarSize={channel(right[6]).AvatarSizes.PROFILE} resizeMode={channel(right[7]).ResizeMode.AUTO} statusStyle={memo} onSingleTap={onSingleTap} onDoubleTap={function onDoubleTap() {
+    React3();
+    const obj = ChannelRTCActionCreatorsDefault;
+    const participant = obj.selectParticipant(channel.id, null);
+  }} onLongPress={function onLongPress(user) {
+    const obj = { userId: user.user.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations };
+    showUserProfileActionSheetDefault(obj);
+  }} />;
 };

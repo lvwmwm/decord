@@ -7,15 +7,15 @@
 // Module 8822 (getApplicationIdsForGame)
 import ApplicationStore from "ApplicationStore" /* 5063 */;
 import GameStore from "GameStore" /* 2001 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, set;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/games/utils/getApplicationIdsForGame.tsx");
 
 export default function getApplicationIdsForGame(gameId) {
-  const set = new Set();
+  set = new Set();
   if (null != gameId) {
     set.add(gameId);
     const game = GameStore.getGame(gameId);
@@ -48,11 +48,13 @@ export const useApplicationIdsForGame = function useApplicationIdsForGame(gameId
   _require = gameId;
   const items = [GameStore, ApplicationStore];
   const items1 = [gameId];
-  return require("initialize").useStateFromStoresArray(items, () => {
-    const set = new Set();
-    if (null != closure_0) {
+  const obj = require("get initialized");
+  return obj.useStateFromStoresArray(items, () => {
+    const _Array = Array;
+    set = new Set();
+    if (null != gameId) {
       set.add(tmp);
-      game = GameStore.getGame(tmp);
+      let game = GameStore.getGame(tmp);
       if (game != null) {
         let linkedApplications = game.linkedApplications;
         if (linkedApplications != null) {
@@ -76,6 +78,6 @@ export const useApplicationIdsForGame = function useApplicationIdsForGame(gameId
         }
       }
     }
-    return Array.from(set);
+    return from(set);
   }, items1);
 };

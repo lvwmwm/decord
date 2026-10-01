@@ -5,25 +5,28 @@
 // Exports: useGuildActionSheetPermissions
 
 // Module 13506 (GuildActionSheetUtils)
+import Constants from "Constants" /* 1074 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
+const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/guild_action_sheet/native/GuildActionSheetUtils.tsx");
 
 export const useGuildActionSheetPermissions = function useGuildActionSheetPermissions(guild) {
   _require = guild;
+  let obj = require("get initialized");
   const items = [PermissionStore];
   const items1 = [guild];
-  return require("initialize").useStateFromStoresObject(items, () => {
-    if (null == closure_0) {
-      let obj = { canAccessSettings: false, canEditNickname: false, canManageChannels: false };
+  return obj.useStateFromStoresObject(items, () => {
+    let obj;
+    if (null == guild) {
+      obj = { canAccessSettings: false, canEditNickname: false, canManageChannels: false };
     } else {
-      obj = { canAccessSettings: PermissionStore.canAccessGuildSettings(tmp), canEditNickname: PermissionStore.can(Permissions.CHANGE_NICKNAME, tmp) || PermissionStore.can(Permissions.MANAGE_NICKNAMES, tmp), canManageChannels: PermissionStore.can(Permissions.MANAGE_CHANNELS, tmp) };
-      const tmp3 = PermissionStore.can(Permissions.CHANGE_NICKNAME, tmp) || PermissionStore.can(Permissions.MANAGE_NICKNAMES, tmp);
+      obj = { canAccessSettings: PermissionStore.canAccessGuildSettings(guild), canEditNickname: PermissionStore.can(Permissions.CHANGE_NICKNAME, guild) || PermissionStore.can(Permissions.MANAGE_NICKNAMES, guild), canManageChannels: PermissionStore.can(Permissions.MANAGE_CHANNELS, guild) };
+      PermissionStore.can(Permissions.CHANGE_NICKNAME, guild) || PermissionStore.can(Permissions.MANAGE_NICKNAMES, guild);
     }
     return obj;
   }, items1);

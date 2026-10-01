@@ -5,26 +5,27 @@
 // Exports: default
 
 // Module 9181 (SecureFramesCopyIcon)
+import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/rtc/native/SecureFramesCopyIcon.tsx");
 
 export default function SecureFramesCopyIcon(chunks) {
   chunks = chunks.chunks;
   const items = [chunks];
-  const memo = noop.useMemo(() => chunks.join(" "), items);
+  const memo = react.useMemo(() => chunks.join(" "), items);
   const items1 = [memo];
-  const callback = noop.useCallback(() => {
-    const result = ToastUtils.presentCopiedToClipboard();
-    ClipboardUtils.copy(memo);
+  const callback = react.useCallback(() => {
+    const obj = ToastUtils;
+    const result = obj.presentCopiedToClipboard();
+    const obj2 = ClipboardUtils;
+    obj2.copy(memo);
   }, items1);
-  let obj = { icon: jsx(chunks(memo[5]).CopyIcon, { size: "sm" }), variant: "secondary", onPress: callback, accessibilityLabel: null, size: "sm" };
+  const IconButton = chunks(memo[4]).IconButton;
   const intl = chunks(memo[6]).intl;
-  obj.accessibilityLabel = intl.string(chunks(memo[6]).t.e7GWjQ);
-  return jsx(chunks(memo[4]).IconButton, { icon: jsx(chunks(memo[5]).CopyIcon, { size: "sm" }), variant: "secondary", onPress: callback, accessibilityLabel: null, size: "sm" });
+  return <IconButton icon={null} variant="secondary" onPress={callback} accessibilityLabel={intl.string(chunks(memo[6]).t.e7GWjQ)} size="sm" />;
 };

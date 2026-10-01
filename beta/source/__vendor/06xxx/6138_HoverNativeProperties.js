@@ -4,5 +4,6 @@
 // Dependencies: []
 
 // Module 6138 (HoverNativeProperties)
+new Set(["hoverEffect"]);
 
 export const HoverNativeProperties = new Set(["hoverEffect"]);

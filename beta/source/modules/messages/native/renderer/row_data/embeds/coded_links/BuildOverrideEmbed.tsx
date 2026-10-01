@@ -5,38 +5,55 @@
 // Exports: createBuildOverrideEmbed
 
 // Module 12793 (BuildOverrideEmbed)
-import _mod17 from "module_17" /* 17 */;
-import util from "util" /* 1115 */;
-import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 576 */;
+import intl6 from "intl" /* 1115 */;
+import react_nativeAll from "react-native" /* 1363 */;
+import shared from "shared" /* 4685 */;
 import Constants from "Constants" /* 7155 */;
-import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 7378 */;
+import react_native2 from "react-native" /* 7378 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7387 */;
 import BuildOverrideStore2 from "BuildOverrideStore" /* 10969 */;
 import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11267 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12792 */;
+import validateBuildOverrideDefault from "validateBuildOverride" /* 12794 */;
 import size from "module_2" /* 2 */;
 
 const BuildOverrideStore = BuildOverrideStore2;
 
-const Image = _mod17.Image;
+const Image = react_native.Image;
 const State = BuildOverrideStore2.State;
 const InviteTypes = Constants.InviteTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/BuildOverrideEmbed.tsx");
 
 export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, arg1) {
+  let RCYGot;
+  let baseColors;
+  let colors;
+  let obj4;
+  let reason;
+  let resolveAssetSource;
+  let str2;
+  let string;
+  let string2Result;
+  let stringResult;
+  let stringResult1;
+  let subtitleColor;
+  let tmpResult2;
   ({ colors, baseColors } = getEmbedThemeColorsDefault(arg1));
+  getEmbedThemeColorsDefault(arg1);
   const currentBuildOverride = BuildOverrideStore.getCurrentBuildOverride();
   const buildOverride = BuildOverrideStore.getBuildOverride(code);
   if (buildOverride.state === State.Resolving) {
-    const obj2 = { headerText: "RESOLVING", resolvingGradientEnd: null, resolvingGradientStart: null, type: null };
+    const obj2 = { headerText: "RESOLVING", resolvingGradientEnd: null, resolvingGradientStart: null, type: InviteTypes.GUILD };
     ({ resolvingGradientEnd: obj8.resolvingGradientEnd, resolvingGradientStart: obj8.resolvingGradientStart } = colors);
-    obj2.type = InviteTypes.GUILD;
     const merged = Object.assign(baseColors);
     return obj2;
   } else {
-    const override2 = buildOverride.override;
+    const override3 = buildOverride.override;
     let id;
-    if (override2 != null) {
-      const targetBuildOverride = override2.targetBuildOverride;
+    if (override3 != null) {
+      const targetBuildOverride = override3.targetBuildOverride;
       if (targetBuildOverride != null) {
         const tmp9 = targetBuildOverride[build_overrides_BuildOverrideUtils.DEVICE_FIELD];
         if (tmp9 != null) {
@@ -56,92 +73,78 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
       }
       tmp10 = id === id1;
     }
-    const tmpResult = tmp(12794);
-    const tmpResultResult = tmpResult(buildOverride.override, ["discord_ios", "discord_android"], ClientInfoUtilsAll.getConstants().Version);
-    if (currentBuildOverride.state !== tmp6.Invalid) {
-      if (buildOverride.state !== tmp6.Invalid) {
+    const override = buildOverride.override;
+    const tmpResult = validateBuildOverrideDefault;
+    const obj = react_nativeAll;
+    const tmpResultResult = tmpResult(override, ["discord_ios", "discord_android"], obj.getConstants().Version);
+    if (currentBuildOverride.state !== State.Invalid) {
+      if (buildOverride.state !== State.Invalid) {
         if (null != buildOverride.override) {
           if (null != id) {
+            let obj5;
             if (tmpResultResult.valid) {
-              const obj3 = {};
+              const obj3 = { headerText: stringResult.toLocaleUpperCase(), headerColor: colors.headerColor, titleText: string(RCYGot), titleColor: colors.titleColor, subtitle: id, subtitleColor: colors.subtitleColor, thumbnailUrl: Image.resolveAssetSource(AssetRegistryDefault).uri, acceptButtonVariant: str2, acceptLabelText: string2Result, embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
               const merged1 = Object.assign(baseColors);
-              const intl3 = util.intl;
-              obj3.headerText = intl3.string(util.t.Wj3LW4).toLocaleUpperCase();
-              obj3.headerColor = colors.headerColor;
-              const intl4 = util.intl;
-              const override = buildOverride.override;
+              const intl3 = intl6.intl;
+              stringResult = intl3.string(intl6.t.Wj3LW4);
+              const intl4 = intl6.intl;
+              const override2 = buildOverride.override;
               let type;
-              if (override != null) {
-                const targetBuildOverride2 = override.targetBuildOverride;
+              string = intl4.string;
+              if (override2 != null) {
+                const targetBuildOverride2 = override2.targetBuildOverride;
                 if (targetBuildOverride2 != null) {
-                  const tmp30 = targetBuildOverride2[tmp28(undefined, 11267).DEVICE_FIELD];
+                  const tmp30 = targetBuildOverride2[build_overrides_BuildOverrideUtils.DEVICE_FIELD];
                   if (tmp30 != null) {
                     type = tmp30.type;
                   }
                 }
               }
               if ("branch" === type) {
-                let RCYGot = tmp28(1115).t.p9TwTG;
+                RCYGot = tmp28(1115).t.p9TwTG;
               } else {
                 RCYGot = tmp28(1115).t.RCYGot;
               }
-              obj3.titleText = intl4.string(RCYGot);
-              obj3.titleColor = colors.titleColor;
-              obj3.subtitle = id;
-              obj3.subtitleColor = colors.subtitleColor;
-              obj3.thumbnailUrl = Image.resolveAssetSource(tmp(12792)).uri;
-              let str2 = "primary";
+              str2 = "primary";
               if (tmp10) {
                 str2 = "destructive";
               }
-              obj3.acceptButtonVariant = str2;
               const intl5 = tmp28(1115).intl;
-              const string = intl5.string;
-              let tX4xrt = tmp28(1115).t;
+              const string2 = intl5.string;
+              const t = tmp28(1115).t;
               if (tmp10) {
-                tX4xrt = tX4xrt.tX4xrt;
-                let stringResult1 = string(tX4xrt);
+                string2Result = string2(t.tX4xrt);
               } else {
-                stringResult1 = string(tX4xrt.nOunHC);
+                string2Result = string2(t.nOunHC);
               }
-              obj3.acceptLabelText = stringResult1;
-              obj3.embedCanBeTapped = true;
-              obj3.canBeAccepted = true;
-              obj3.type = InviteTypes.GUILD;
-              const stringResult = intl3.string(util.t.Wj3LW4);
+              obj5 = obj3;
             }
+            return obj5;
           }
         }
       }
     }
-    const obj5 = {};
+    obj5 = { headerText: stringResult1.toLocaleUpperCase(), titleColor: obj4.processColorOrThrow(nativeDefault.unsafe_rawColors.RED_400), titleText: reason, subtitle: id, subtitleColor, thumbnailUrl: resolveAssetSource(tmpResult2).uri, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, type: InviteTypes.GUILD };
     const merged2 = Object.assign(baseColors);
-    const intl = util.intl;
-    obj5.headerText = intl.string(util.t.d34xi4).toLocaleUpperCase();
-    const stringResult2 = intl.string(util.t.d34xi4);
-    obj5.titleColor = RowGeneratorStyleSheet.processColorOrThrow(tmp(576).unsafe_rawColors.RED_400);
+    const intl = intl6.intl;
+    stringResult1 = intl.string(intl6.t.d34xi4);
+    obj4 = react_native2;
     if (tmpResultResult.valid) {
       const intl2 = tmp20(1115).intl;
-      let reason = intl2.string(tmp20(1115).t.ODXApH);
+      reason = intl2.string(tmp20(1115).t.ODXApH);
     } else {
       reason = tmpResultResult.reason;
     }
-    obj5.titleText = reason;
-    obj5.subtitle = id;
-    let subtitleColor;
+    subtitleColor = undefined;
     if (null != id) {
       subtitleColor = colors.subtitleColor;
     }
-    obj5.subtitleColor = subtitleColor;
+    resolveAssetSource = Image.resolveAssetSource;
+    const tmp20Result = shared;
     if (tmp20Result.isThemeDark(arg1)) {
-      let tmpResult2 = tmp(11286);
+      tmpResult2 = tmp(11286);
     } else {
       tmpResult2 = tmp(11287);
     }
-    obj5.thumbnailUrl = Image.resolveAssetSource(tmpResult2).uri;
-    obj5.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;
-    obj5.type = InviteTypes.GUILD;
-    return obj5;
   }
-  const tmp3 = getEmbedThemeColorsDefault(arg1);
 };

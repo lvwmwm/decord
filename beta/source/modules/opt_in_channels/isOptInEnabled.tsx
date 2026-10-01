@@ -9,25 +9,28 @@ import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Constants = fn(1074);
-({ GuildFeatures: metroRequire, Permissions: closure_7 } = Constants);
-const size = fn(2);
+let metroImportDefault;
+let metroRequire;
+({ GuildFeatures: metroRequire, Permissions: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/opt_in_channels/isOptInEnabled.tsx");
 
 export const useOptInEnabledForGuild = function useOptInEnabledForGuild(id) {
   _require = id;
   const items = [UserGuildSettingsStore, GuildStore, UserStore];
-  return require("initialize").useStateFromStores(items, () => {
-    let isOptInEnabledResult = UserGuildSettingsStore.isOptInEnabled(closure_0);
-    const guild = GuildStore.getGuild(closure_0);
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    let isOptInEnabledResult = UserGuildSettingsStore.isOptInEnabled(id);
+    const guild = GuildStore.getGuild(id);
     let flag;
     if (guild != null) {
       const features = guild.features;
-      flag = features.has(constants.COMMUNITY);
+      flag = features.has(metroRequire.COMMUNITY);
     }
     if (flag == null) {
       flag = false;
@@ -55,29 +58,28 @@ export const isOptInEnabledForGuild = function isOptInEnabledForGuild(_guildId) 
   let tmp2 = null != _guildId && null != guild && null != currentUser;
   if (tmp2) {
     const features = guild.features;
-    let isOptInEnabledResult = features.has(constants.COMMUNITY) || currentUser.isStaff();
-    if (isOptInEnabledResult) {
-      isOptInEnabledResult = UserGuildSettingsStore.isOptInEnabled(_guildId);
-    }
-    tmp2 = isOptInEnabledResult;
+    tmp2 = (features.has(metroRequire.COMMUNITY) || currentUser.isStaff()) && UserGuildSettingsStore.isOptInEnabled(_guildId);
+    const isOptInEnabledResult = (features.has(metroRequire.COMMUNITY) || currentUser.isStaff()) && UserGuildSettingsStore.isOptInEnabled(_guildId);
   }
   return tmp2;
 };
 export const useShouldShowOnboardingAdminUpsellForGuild = function useShouldShowOnboardingAdminUpsellForGuild(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [GuildStore, PermissionStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     const guild = GuildStore.getGuild(closure_0);
     let flag;
-    const canResult = PermissionStore.can(constants2.MANAGE_GUILD, guild);
+    const canResult = PermissionStore.can(metroImportDefault.MANAGE_GUILD, guild);
+    const canResult1 = PermissionStore.can(metroImportDefault.MANAGE_ROLES, guild);
     if (guild != null) {
       const features = guild.features;
-      flag = features.has(constants.GUILD_ONBOARDING_EVER_ENABLED);
+      flag = features.has(metroRequire.GUILD_ONBOARDING_EVER_ENABLED);
     }
     if (flag == null) {
       flag = false;
     }
-    const canResult1 = PermissionStore.can(constants2.MANAGE_ROLES, guild);
-    return null != guild && canResult && PermissionStore.can(constants2.MANAGE_ROLES, guild) && !flag;
+    return null != guild && canResult && canResult1 && !flag;
   });
 };

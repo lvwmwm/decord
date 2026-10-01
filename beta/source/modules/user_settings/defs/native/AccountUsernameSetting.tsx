@@ -4,29 +4,43 @@
 // Dependencies: [19, 1372, 7417, 1074, 21, 504, 4678, 11350, 4832, 11006, 1115, 14263, 2]
 
 // Module 14262 (AccountUsernameSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11350 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+
+let tmp;
+const Text_Text = tmp(4832);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const jsx = Fragment.jsx;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.IEpCBQ);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.IEpCBQ);
   },
-  parent: fn(7417).MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountUsernameSettingTrailing() {
+    let currentUser;
+    let obj = get_initialized;
     const items = [UserStore];
-    return initialize.useStateFromStores(items, () => UserUtilsDefault.getUserTag(currentUser.getCurrentUser(), { decoration: "never" }));
+    return obj.useStateFromStores(items, () => {
+      const obj = UserUtilsDefault;
+      return obj.getUserTag(currentUser.getCurrentUser(), { decoration: "never" });
+    });
   },
   useDescription: function useAccountUsernameSettingDescription() {
-    const guildAutomodProfileQuarantineErrors = AutomodQuarantineUtils.useGuildAutomodProfileQuarantineErrors();
+    const obj = AutomodQuarantineUtils;
+    const guildAutomodProfileQuarantineErrors = obj.useGuildAutomodProfileQuarantineErrors();
     let first;
     if (guildAutomodProfileQuarantineErrors != null) {
       const nick = guildAutomodProfileQuarantineErrors.nick;
@@ -36,19 +50,18 @@ const route = SettingBuilders.createRoute({
     }
     let tmp5 = null;
     if (null != first) {
-      const obj2 = { variant: "text-xs/medium", color: "text-feedback-warning", children: first };
       tmp5 = jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-feedback-warning", children: first });
     }
     return tmp5;
   },
   screen: {
-    route: fn(1074).UserSettingsSections.ACCOUNT_CHANGE_USERNAME,
+    route: UserSettingsSections.ACCOUNT_CHANGE_USERNAME,
     getComponent() {
       return require("UserSettingsChangeUsername").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountUsernameSetting.tsx");
 
 export default route;

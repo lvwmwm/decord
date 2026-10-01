@@ -4,20 +4,25 @@
 // Dependencies: [19, 17, 21, 4421, 4800, 8995, 1981, 6023, 1177, 2]
 
 // Module 17089 (DateInput)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let date;
 
-require = fn;
-const Keyboard = fn(17).Keyboard;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/age_gate/native/components/DateInput.tsx");
-
-export default noop.forwardRef((date, ref) => {
+const Keyboard = react_native.Keyboard;
+const jsx = Fragment.jsx;
+const forwardRefResult = react.forwardRef((date, ref) => {
+  let error;
+  let label;
+  let str2;
+  let style;
+  let tmp10;
   date = date.date;
   ({ onChangeDate: importDefault, label } = date);
   ref = undefined;
@@ -29,27 +34,29 @@ export default noop.forwardRef((date, ref) => {
     }
   }
   function openDatePicker() {
-    Keyboard.dismiss();
-    const obj2 = { onSubmit: updateDate, title: label, startDate: null, maximumDate: null, minimumDate: null, requireDateChanged: true };
+    let obj4;
+    let obj5;
     let toDateResult;
-    const obj = ActionSheetActionCreatorsDefault;
-    const obj3 = date;
+    Keyboard.dismiss();
+    const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+    const obj = { onSubmit: updateDate, title: label, startDate: toDateResult, maximumDate: obj4.toDate(), minimumDate: obj5.toDate(), requireDateChanged: true };
+    toDateResult = undefined;
+    ActionSheetActionCreatorsDefault;
+    const obj2 = date;
+    const tmp5 = asyncRequire(8995, dependencyMap.paths);
     if (date != null) {
-      toDateResult = obj3.toDate();
+      toDateResult = obj2.toDate();
     }
     if (toDateResult == null) {
-      const obj4 = tmp2(4421)();
-      const result = obj4.set("year", obj4.year() - 10);
-      toDateResult = obj4.toDate();
+      const obj3 = _modDef4421();
+      const result = obj3.set("year", obj3.year() - 10);
+      toDateResult = obj3.toDate();
     }
-    obj2.startDate = toDateResult;
-    const obj5 = _modDef4421();
-    const result1 = obj5.set("year", obj5.year() - 3);
-    obj2.maximumDate = obj5.toDate();
-    const obj6 = _modDef4421();
-    const result2 = obj6.set("year", obj6.year() - 100);
-    obj2.minimumDate = obj6.toDate();
-    obj.openLazy(asyncRequireImpl(8995, dependencyMap.paths), "DatePicker", obj2);
+    obj4 = _modDef4421();
+    const result1 = obj4.set("year", obj4.year() - 3);
+    obj5 = _modDef4421();
+    const result2 = obj5.set("year", obj5.year() - 100);
+    openLazy(tmp5, "DatePicker", obj);
   }
   ({ style, error } = date);
   ref = ref.useRef(null);
@@ -62,28 +69,25 @@ export default noop.forwardRef((date, ref) => {
   if (date != null) {
     formatResult = date.format("L");
   }
+  const tmp4 = label;
+  let tmp5 = require("module_4421");
   let obj = require("module_4421")();
   let result = obj.set("year", obj.year() - 10);
-  const tmp4 = label;
-  const tmp5 = require("module_4421");
-  const formatResult1 = require("module_4421")(obj.toDate()).format("L");
-  let obj2 = { style, ref, value: null, placeholder: null, returnKeyType: "next", textContentType: "none", autoCapitalize: "none", clearButtonVisibility: null, editable: false, forceAccessibleContainer: true, accessibilityLabel: null, onPress: null, label: null, error: null };
-  let str2 = formatResult;
-  const tmp5Result = require("module_4421")(obj.toDate());
+  const tmp5Result = tmp5(obj.toDate());
+  const formatResult1 = tmp5Result.format("L");
+  let obj2 = { style, ref, value: str2, placeholder: formatResult1, returnKeyType: "next", textContentType: "none", autoCapitalize: "none", clearButtonVisibility: date(tmp4[8]).ClearButtonVisibility.NEVER, editable: false, forceAccessibleContainer: true, accessibilityLabel: "" + label + ", " + tmp10, onPress: openDatePicker, label, error };
+  str2 = formatResult;
   const tmp8 = openDatePicker;
+  const tmp9 = require("FreeFormInputGroup");
   if (formatResult == null) {
     str2 = "";
   }
-  obj2.value = str2;
-  obj2.placeholder = formatResult1;
-  obj2.clearButtonVisibility = date(tmp4[8]).ClearButtonVisibility.NEVER;
-  let tmp10 = formatResult1;
+  tmp10 = formatResult1;
   if (null != formatResult) {
     tmp10 = formatResult;
   }
-  obj2.accessibilityLabel = "" + label + ", " + tmp10;
-  obj2.onPress = openDatePicker;
-  obj2.label = label;
-  obj2.error = error;
-  return tmp8(require("FreeFormInputGroup"), obj2);
+  return tmp8(tmp9, obj2);
 });
+let result = size.fileFinishedImporting("modules/age_gate/native/components/DateInput.tsx");
+
+export default forwardRefResult;

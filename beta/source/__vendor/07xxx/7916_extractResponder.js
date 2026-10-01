@@ -5,12 +5,21 @@
 // Exports: default
 
 // Module 7916 (extractResponder)
-import _mod17 from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 
-const PanResponder = _mod17.PanResponder;
+const PanResponder = react_native.PanResponder;
 const keys = Object.keys(PanResponder.create({}).panHandlers);
+const length = keys.length;
 
 export default function extractResponder(arg0, pointerEvents, arg2) {
+  let delayLongPress;
+  let delayPressIn;
+  let delayPressOut;
+  let disabled;
+  let onLongPress;
+  let onPress;
+  let onPressIn;
+  let onPressOut;
   pointerEvents = pointerEvents.pointerEvents;
   let num = 0;
   let flag = false;
@@ -33,6 +42,7 @@ export default function extractResponder(arg0, pointerEvents, arg2) {
   if (pointerEvents) {
     arg0.pointerEvents = pointerEvents;
   }
+  const tmp6 = null != disabled || onPress || onPressIn || onPressOut || onLongPress || delayPressIn || delayPressOut || delayLongPress;
   if (tmp6) {
     ({ touchableHandleResponderMove: arg0.onResponderMove, touchableHandleResponderGrant: arg0.onResponderGrant, touchableHandleResponderRelease: arg0.onResponderRelease, touchableHandleResponderTerminate: arg0.onResponderTerminate, touchableHandleStartShouldSetResponder: arg0.onStartShouldSetResponder, touchableHandleResponderTerminationRequest: arg0.onResponderTerminationRequest } = arg2);
     flag2 = true;

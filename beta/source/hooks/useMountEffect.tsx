@@ -4,13 +4,13 @@
 // Dependencies: [2, 5299]
 
 // Module 5298 (useMountEffect)
-import hooks_useMountEffect from "hooks/useMountEffect" /* 5299 */;
+import react from "react" /* 5299 */;
 import size from "module_2" /* 2 */;
 
-const hooks_useMountEffectDefault = hooks_useMountEffect;
+const reactDefault = react;
 
 const result = size.fileFinishedImporting("hooks/useMountEffect.tsx");
 
-export default hooks_useMountEffectDefault;
-export const useMountLayoutEffect = hooks_useMountEffect.useMountLayoutEffect;
-export const useUnmountEffect = hooks_useMountEffect.useUnmountEffect;
+export default reactDefault;
+export const useMountLayoutEffect = react.useMountLayoutEffect;
+export const useUnmountEffect = react.useUnmountEffect;

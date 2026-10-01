@@ -5,34 +5,34 @@
 // Exports: Graphic
 
 // Module 9693 (Graphic)
-import GraphicTypes from "GraphicTypes" /* 4651 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import native from "native" /* 4540 */;
 import FastImageDefault from "FastImage" /* 5899 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function ImageGraphic(source) {
-  const tmp = closure_7();
-  return jsx(FastImageDefault, { source: source.src, style: closure_7().image, resizeMode: "contain", accessibilityElementsHidden: true });
+let tmp;
+const GraphicTypes = tmp(4651);
+function ImageGraphic(src) {
+  src = src.src;
+  return jsx(FastImageDefault, { source: src, style: closure_7().image, resizeMode: "contain", accessibilityElementsHidden: true });
 }
 function RiveGraphic(riveProps) {
   riveProps = riveProps.riveProps;
+  const rive = riveProps.rive;
   if (riveProps === undefined) {
     riveProps = {};
   }
   const tmp = closure_7();
-  const obj = { style: tmp.image, children: null };
-  const obj2 = {};
   const merged = Object.assign(riveProps);
-  obj2.style = tmp.image;
-  obj.children = jsx(riveProps.rive, {});
   return <View style={tmp.image}>{null}</View>;
 }
-const View = fn(17).View;
-const jsx = fn(21).jsx;
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_6 = { "21/9": 2.3333333333333335, "16/9": 1.7777777777777777, "6/4": 1.5, "2/1": 2, "1/1": 1 };
-const createStyles = fn(4836);
 let closure_7 = createStyles.createStyles({ container: { width: "100%", justifyContent: "center", alignItems: "center", overflow: "hidden" }, image: { width: "100%", height: "100%" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Graphic/native/Graphic.native.tsx");
 
 export const Graphic = function Graphic(aspectRatio) {
@@ -40,42 +40,27 @@ export const Graphic = function Graphic(aspectRatio) {
   if (str === undefined) {
     str = "16/9";
   }
+  const style = aspectRatio.style;
   let merged = Object.assign(aspectRatio, Object.assign({ aspectRatio: 0, style: 0 }));
   const items = [merged];
-  const obj = {
-    style: null,
-    children: noop.useMemo(() => {
-      if (obj.isImage(merged)) {
-        const obj2 = {};
-        merged = Object.assign(tmp3);
-        let tmp4 = <ImageGraphic />;
-      } else {
-        tmp4 = null;
-        if (tmpResult.isRive(tmp3)) {
-          const obj3 = {};
-          const merged1 = Object.assign(tmp3);
-          tmp4 = <RiveGraphic />;
-        }
-        tmpResult = GraphicTypes;
-      }
-      return tmp4;
-    }, items)
-  };
-  const items1 = [closure_7().container, { aspectRatio: closure_6[str] }, aspectRatio.style];
-  obj.style = items1;
-  return <View style={null}>{noop.useMemo(() => {
+  const items1 = [closure_7().container, , ];
+  const obj2 = { aspectRatio: closure_6[str] };
+  items1[1] = obj2;
+  items1[2] = style;
+  const tmp2 = closure_7();
+  return <View style={items1}>{react.useMemo(() => {
+    let tmp4;
+    const obj = native;
     if (obj.isImage(merged)) {
-      const obj2 = {};
       merged = Object.assign(tmp3);
-      let tmp4 = <ImageGraphic />;
+      tmp4 = <ImageGraphic />;
     } else {
       tmp4 = null;
-      if (tmpResult.isRive(tmp3)) {
-        const obj3 = {};
+      const tmpResult = GraphicTypes;
+      if (tmpResult.isRive(merged)) {
         const merged1 = Object.assign(tmp3);
         tmp4 = <RiveGraphic />;
       }
-      tmpResult = GraphicTypes;
     }
     return tmp4;
   }, items)}</View>;

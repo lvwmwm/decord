@@ -5,140 +5,171 @@
 // Exports: default
 
 // Module 11964 (ChannelAccessInfo)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl5 from "intl" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
+import GuildRecord from "GuildRecord" /* 2063 */;
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9016 */;
 import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11103 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import Fragment_mod from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const isGuildOwner = fn(2063).isGuildOwner;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
+let dependencyMap;
+
+let c10;
+let c9;
+let metroImportAll;
+let obj2;
+const View = react_native.View;
+const isGuildOwner = GuildRecord.isGuildOwner;
+let Fragment = Fragment_mod;
+({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
 let c11 = 100;
-const createStyles = fn(4836);
-let obj2 = { section: { alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, color: nativeDefault.colors.TEXT_DEFAULT, flexDirection: "row", marginBottom: 8, marginTop: 8, padding: 16 }, sectionContent: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, avatar: { marginRight: 8 }, labelDetail: { marginRight: 12 }, sectionIcon: { marginRight: 6 } };
-let closure_12 = createStyles.createStyles(obj2);
+let obj = { section: obj2, sectionContent: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, avatar: { marginRight: 8 }, labelDetail: { marginRight: 12 }, sectionIcon: { marginRight: 6 } };
+obj2 = { alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, color: nativeDefault.colors.TEXT_DEFAULT, flexDirection: "row", marginBottom: 8, marginTop: 8, padding: 16 };
+let closure_12 = createStyles.createStyles(obj);
 const constants = { MEMBERS: 0, [0]: "MEMBERS", ROLES: 1, [1]: "ROLES" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/channel_permissions/native/components/ChannelAccessInfo.tsx");
 
 export default function ChannelAccessInfo(guild) {
+  let closure_2;
+  let intl2;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
+  let obj9;
   guild = guild.guild;
   const channel = guild.channel;
   const tmp = closure_12();
   dependencyMap = tmp;
   let intl = guild(1115).intl;
   const stringResult = intl.string(guild(1115).t.li1wKf);
+  let obj = guild(504);
   let items = [GuildRoleStore];
   const items1 = [guild, channel];
-  const stateFromStoresArray = guild(504).useStateFromStoresArray(items, () => ChannelPermissionsUtils.getExistingRoles(guild, GuildRoleStore.getSortedRoles(guild.id), channel, channel.accessPermissions), items1);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+    const obj = ChannelPermissionsUtils;
+    return obj.getExistingRoles(guild, GuildRoleStore.getSortedRoles(guild.id), channel, channel.accessPermissions);
+  }, items1);
   let id;
+  let tmp5 = GuildMemberStore;
+  const getMemberIds = GuildMemberStore.getMemberIds;
   if (guild != null) {
     id = guild.id;
   }
-  const memberIds = GuildMemberStore.getMemberIds(id);
-  let obj = guild(504);
-  const existingMembers = guild(9016).getExistingMembers(memberIds, channel, guild, channel.accessPermissions);
-  let tmp8 = 0 === stateFromStoresArray.length;
-  if (tmp8) {
-    tmp8 = 1 === existingMembers.length;
-  }
-  if (tmp8) {
-    tmp8 = isGuildOwner(guild, existingMembers[0]);
-  }
+  const memberIds = getMemberIds(id);
+  const tmp2Result = guild(9016);
+  const existingMembers = tmp2Result.getExistingMembers(memberIds, channel, guild, channel.accessPermissions);
+  const tmp8 = 0 === stateFromStoresArray.length && 1 === existingMembers.length && isGuildOwner(guild, existingMembers[0]);
   let first = null;
   if (tmp8) {
     first = existingMembers[0];
   }
-  const items2 = [closure_8(guild(4832).Text, { variant: "eyebrow", children: stringResult }), ];
+  const tmp12 = closure_10;
+  let tmp13 = closure_8;
+  const items2 = [closure_8(tmp2(4832).Text, { variant: "eyebrow", children: stringResult }), ];
   let obj2 = {
     accessibilityLabel: stringResult,
     accessibilityRole: "button",
     onPress() {
-      const result = channel_permissions_ChannelPermissionsUtils.openChannelMembersActionSheet(channel.id, channel.guild_id);
+      const obj = channel_permissions_ChannelPermissionsUtils;
+      const result = obj.openChannelMembersActionSheet(channel.id, channel.guild_id);
     },
     style: tmp.section,
-    children: null
+    children: items6
   };
-  let obj3 = { style: tmp.sectionContent, children: null };
+  const tmp14 = View;
+  let obj3 = { style: tmp.sectionContent, children: tmp11(tmp12, obj9) };
+  const PressableOpacity = tmp2(5435).PressableOpacity;
   if (null != first) {
-    let obj4 = { children: null };
+    let obj4 = { children: items3 };
     let obj5 = { style: tmp.avatar, user: first, guildId: guild.id, size: tmp2(1177).AvatarSizes.XSMALL };
-    const items3 = [tmp13(tmp2(1177).Avatar, obj5), ];
-    let obj6 = { children: null };
+    const Avatar = tmp2(1177).Avatar;
+    items3 = [tmp13(Avatar, obj5), ];
+    let obj6 = { children: items4 };
     let obj7 = { variant: "text-sm/semibold", children: first.tag };
-    const items4 = [tmp13(tmp2(4832).Text, obj7), ];
-    let obj8 = { variant: "text-xs/medium", children: null };
-    let intl2 = tmp2(1115).intl;
-    obj8.children = intl2.string(tmp2(1115).t.rt0ERW);
-    items4[1] = tmp13(tmp2(4832).Text, obj8);
-    obj6.children = items4;
-    items3[1] = tmp11(tmp14, obj6);
-    obj4.children = items3;
-    let obj9 = obj4;
+    items4 = [tmp13(tmp2(4832).Text, obj7), ];
+    let obj8 = { variant: "text-xs/medium", children: intl2.string(tmp2(1115).t.rt0ERW) };
+    const Text = tmp2(4832).Text;
+    intl2 = tmp2(1115).intl;
+    items4[1] = tmp13(Text, obj8);
+    items3[1] = closure_9(tmp14, obj6);
+    obj9 = obj4;
   } else {
     function renderCounts(MEMBERS, length, arg2, GroupIcon) {
+      let items;
       if (0 === length) {
         return null;
-      } else if (constants.MEMBERS === MEMBERS) {
-        if (length > c11) {
-          const intl4 = util.intl;
-          const obj2 = { count: tmp12 };
-          let formatToPlainStringResult = intl4.formatToPlainString(util.t.PR5l07, obj2);
-        } else {
-          const intl3 = util.intl;
-          const obj3 = { count: length };
-          formatToPlainStringResult = intl3.formatToPlainString(util.t.bu5sya, obj3);
-        }
       } else {
-        if (tmp28.ROLES === MEMBERS) {
+        let tmp4;
+        let tmp5;
+        if (constants.MEMBERS === MEMBERS) {
+          let formatToPlainStringResult;
+          let tmp13;
           if (length > c11) {
-            const intl2 = util.intl;
+            const intl4 = intl5.intl;
+            const obj2 = { count: tmp12 };
+            formatToPlainStringResult = intl4.formatToPlainString(intl5.t.PR5l07, obj2);
+            tmp13 = require;
+          } else {
+            tmp13 = require;
+            const intl3 = intl5.intl;
+            const obj3 = { count: length };
+            formatToPlainStringResult = intl3.formatToPlainString(intl5.t.bu5sya, obj3);
+          }
+          tmp4 = tmp13;
+          tmp5 = formatToPlainStringResult;
+        } else if (tmp25.ROLES === MEMBERS) {
+          let formatToPlainStringResult1;
+          let tmp7;
+          if (length > c11) {
+            const intl2 = intl5.intl;
             const obj4 = { count: tmp6 };
-            let formatToPlainStringResult1 = intl2.formatToPlainString(util.t["+OYnFQ"], obj4);
-            let tmp7 = require;
+            formatToPlainStringResult1 = intl2.formatToPlainString(intl5.t["+OYnFQ"], obj4);
+            tmp7 = require;
           } else {
             tmp7 = require;
-            const intl = util.intl;
+            const intl = intl5.intl;
             const obj5 = { count: length };
-            formatToPlainStringResult1 = intl.formatToPlainString(util.t.T2BEtm, obj5);
+            formatToPlainStringResult1 = intl.formatToPlainString(intl5.t.T2BEtm, obj5);
           }
-          let tmp4 = tmp7;
-          const tmp5 = formatToPlainStringResult1;
+          tmp4 = tmp7;
+          tmp5 = formatToPlainStringResult1;
         } else {
-          GlobalUtils.assertNever(MEMBERS);
+          const obj = GlobalUtils;
+          obj.assertNever(MEMBERS);
           tmp4 = require;
         }
-        const obj6 = { children: null };
+        const Fragment = react.Fragment;
+        const obj6 = { children: items };
         const obj7 = { size: "sm", style: closure_2.sectionIcon };
-        const items = [React6(GroupIcon, obj7), ];
+        items = [metroImportAll(GroupIcon, obj7), ];
         const obj8 = { style: closure_2.labelDetail, variant: "text-sm/medium", children: tmp5 };
-        items[1] = React6(tmp4(4832).Text, obj8);
-        obj6.children = items;
-        return React7(noop.Fragment, obj6);
+        items[1] = metroImportAll(tmp4(4832).Text, obj8);
+        return React4(Fragment, obj6);
       }
     }
-    obj9 = { children: null };
+    obj9 = { children: items5 };
     const MEMBERS = constants.MEMBERS;
+    const length = existingMembers.length;
     channel(11963);
-    const items5 = [renderCounts(MEMBERS, existingMembers.length, 0, tmp2(5403).GroupIcon), ];
+    items5 = [renderCounts(MEMBERS, length, 0, tmp2(5403).GroupIcon), ];
     const ROLES = constants.ROLES;
+    const length2 = stateFromStoresArray.length;
     channel(9035);
-    items5[1] = renderCounts(ROLES, stateFromStoresArray.length, 0, tmp2(9033).ShieldUserIcon);
-    obj9.children = items5;
+    items5[1] = renderCounts(ROLES, length2, 0, guild(9033).ShieldUserIcon);
   }
-  const obj10 = { children: null };
-  obj3.children = closure_9(closure_10, obj9);
-  const items6 = [closure_8(View, obj3), ];
-  const tmp2Result = guild(9016);
-  items6[1] = closure_8(guild(1177).Icon, { source: channel(9396), size: guild(1177).Icon.Sizes.SMALL });
-  obj2.children = items6;
-  items2[1] = closure_9(guild(5435).PressableOpacity, obj2);
-  obj10.children = items2;
-  return closure_9(closure_10, obj10);
+  const obj10 = { children: items2 };
+  items6 = [tmp13(tmp14, obj3), ];
+  const obj11 = { source: channel(9396), size: guild(1177).Icon.Sizes.SMALL };
+  const Icon = tmp2(1177).Icon;
+  items6[1] = tmp13(Icon, obj11);
+  items2[1] = closure_9(PressableOpacity, obj2);
+  return closure_9(tmp12, obj10);
 };

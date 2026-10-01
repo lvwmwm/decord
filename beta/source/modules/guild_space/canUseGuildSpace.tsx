@@ -5,32 +5,29 @@
 // Exports: canUseGuildSpace, isGuildSpaceAdmin, useCanUseGuildSpace, useIsGuildSpaceAdmin
 
 // Module 6645 (canUseGuildSpace)
+import Constants from "Constants" /* 1074 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
+const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/guild_space/canUseGuildSpace.tsx");
 
 export const isGuildSpaceAdmin = function isGuildSpaceAdmin(arg0) {
-  let canResult = null != arg0;
-  if (canResult) {
-    canResult = PermissionStore.can(Permissions.MANAGE_GUILD, arg0);
-  }
+  const canResult = null != arg0 && PermissionStore.can(Permissions.MANAGE_GUILD, arg0);
   return canResult;
 };
 export const useIsGuildSpaceAdmin = function useIsGuildSpaceAdmin(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [PermissionStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
-    let canResult = null != closure_0;
-    if (canResult) {
-      canResult = PermissionStore.can(Permissions.MANAGE_GUILD, tmp);
-    }
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_GUILD, tmp);
     return canResult;
   }, items1);
 };
@@ -39,20 +36,19 @@ export function canUseGuildSpace(guild, getChannelIdForGuildTransition) {
 }
 export const useCanUseGuildSpace = function useCanUseGuildSpace(id, useGuildActionRows) {
   _require = id;
-  const guildSpaceExperimentEnabled = require("GuildSpaceExperiment").useGuildSpaceExperimentEnabled(id, useGuildActionRows);
-  const obj = require("GuildSpaceExperiment");
+  const tmp = _require;
+  const useGuildSpaceExperimentEnabled = require("GuildSpaceExperiment").useGuildSpaceExperimentEnabled;
+  const tmp3 = require("GuildSpaceExperiment");
+  const guildSpaceExperimentEnabled = useGuildSpaceExperimentEnabled(id, useGuildActionRows);
   const items = [GuildStore];
   const items1 = [id];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => GuildStore.getGuild(closure_0), items1);
-  closure_129_0 = stateFromStores;
-  const tmpResult = require("initialize");
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(items, () => GuildStore.getGuild(id), items1);
   const items2 = [PermissionStore];
   const items3 = [stateFromStores];
-  const stateFromStores1 = require("initialize").useStateFromStores(items2, () => {
-    let canResult = null != closure_0;
-    if (canResult) {
-      canResult = PermissionStore.can(Permissions.MANAGE_GUILD, tmp);
-    }
+  const tmpResult2 = tmp(504);
+  const stateFromStores1 = tmpResult2.useStateFromStores(items2, () => {
+    const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_GUILD, tmp);
     return canResult;
   }, items3);
   return false;

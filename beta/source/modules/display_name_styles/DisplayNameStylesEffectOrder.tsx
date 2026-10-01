@@ -5,17 +5,19 @@
 // Exports: useVisibleEffectOrder
 
 // Module 14885 (DisplayNameStylesEffectOrder)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1390 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const DisplayNameStylesConstants = fn(1390);
 const EFFECT_ORDER = DisplayNameStylesConstants.EFFECT_ORDER;
-let items = [...tmp2.FLYWHEEL_EFFECTS];
-const size = fn(2);
+const FLYWHEEL_EFFECTS = DisplayNameStylesConstants.FLYWHEEL_EFFECTS;
+let items = [...FLYWHEEL_EFFECTS];
 const result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesEffectOrder.tsx");
 
 export const useVisibleEffectOrder = function useVisibleEffectOrder() {
-  isDisplayNameStylesFlywheelSettersEnabled = isDisplayNameStylesFlywheelSettersEnabled(9189).useIsDisplayNameStylesFlywheelSettersEnabled("effect-order");
+  let isDisplayNameStylesFlywheelSettersEnabled;
+  const obj = isDisplayNameStylesFlywheelSettersEnabled(9189);
+  isDisplayNameStylesFlywheelSettersEnabled = obj.useIsDisplayNameStylesFlywheelSettersEnabled("effect-order");
   items = [isDisplayNameStylesFlywheelSettersEnabled];
-  return noop.useMemo(() => isDisplayNameStylesFlywheelSettersEnabled ? items : EFFECT_ORDER, items);
+  return react.useMemo(() => isDisplayNameStylesFlywheelSettersEnabled ? items : EFFECT_ORDER, items);
 };

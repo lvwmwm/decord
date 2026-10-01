@@ -6,7 +6,10 @@
 
 // Module 52 (PlatformColor)
 
-export const PlatformColor = () => ({ resource_paths: HermesBuiltin.copyRestArgs() });
+export const PlatformColor = () => {
+  const obj = { resource_paths: HermesBuiltin.copyRestArgs() };
+  return obj;
+};
 export const normalizeColorObject = (arg0) => {
   let tmp = null;
   if ("resource_paths" in arg0) {
@@ -14,4 +17,4 @@ export const normalizeColorObject = (arg0) => {
   }
   return tmp;
 };
-export (arg0) => arg0
+export const processColorObject = (arg0) => arg0;

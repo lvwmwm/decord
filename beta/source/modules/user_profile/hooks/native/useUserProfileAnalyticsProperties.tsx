@@ -5,10 +5,11 @@
 // Exports: default
 
 // Module 7644 (useUserProfileAnalyticsProperties)
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 7628 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const UserProfileAnalyticsTypes = fn(7628).UserProfileAnalyticsTypes;
-const size = fn(2);
+const UserProfileAnalyticsTypes = Constants.UserProfileAnalyticsTypes;
 let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileAnalyticsProperties.tsx");
 
 export default function useUserProfileAnalyticsProperties(userId) {
@@ -22,8 +23,10 @@ export default function useUserProfileAnalyticsProperties(userId) {
   const type = userId.type;
   let memo;
   let memo1;
+  let obj = userId;
   const items = [userId, channelId, guildId, displayProfile, , , , ];
   let avatarDecoration;
+  const useMemo = userId.useMemo;
   if (guildMember != null) {
     avatarDecoration = guildMember.avatarDecoration;
   }
@@ -35,71 +38,76 @@ export default function useUserProfileAnalyticsProperties(userId) {
   items[5] = avatarDecoration1;
   items[6] = profileEffectSkuId;
   items[7] = type;
-  memo = userId.useMemo(() => {
+  memo = useMemo(() => {
+    let _BooleanResult;
+    let prop;
+    let tmp2;
     let USER_SHEET = type;
     if (type == null) {
       USER_SHEET = UserProfileAnalyticsTypes.USER_SHEET;
     }
-    const obj = { type: USER_SHEET, other_user_id: userId, channel_id: channelId, guild_id: guildId, profile_has_nitro_customization: null, profile_has_theme_color_customized: null, profile_has_theme_animation: null, has_avatar_decoration: null, has_profile_effect: null };
-    let tmp2 = null != displayProfile;
+    const obj = { type: USER_SHEET, other_user_id: userId, channel_id: channelId, guild_id: guildId, profile_has_nitro_customization: tmp2, profile_has_theme_color_customized: null != displayProfile && displayProfile.hasThemeColors(), profile_has_theme_animation: null != prop, has_avatar_decoration: _BooleanResult, has_profile_effect: null != profileEffectSkuId };
+    tmp2 = null != displayProfile;
     if (tmp2) {
       let result;
-      if (obj2 != null) {
+      if (displayProfile != null) {
         result = obj2.hasPremiumCustomization();
       }
       tmp2 = result;
     }
-    obj.profile_has_nitro_customization = tmp2;
-    obj.profile_has_theme_color_customized = null != displayProfile && displayProfile.hasThemeColors();
-    let prop;
+    prop = undefined;
+    null != displayProfile && displayProfile.hasThemeColors();
     if (displayProfile != null) {
       prop = obj2.popoutAnimationParticleType;
     }
-    obj.profile_has_theme_animation = null != prop;
     let avatarDecoration;
+    const _Boolean = Boolean;
     if (guildMember != null) {
       avatarDecoration = guildMember.avatarDecoration;
     }
-    let BooleanResult = Boolean(avatarDecoration);
-    if (!BooleanResult) {
+    _BooleanResult = _Boolean(avatarDecoration);
+    if (!_BooleanResult) {
       let avatarDecoration1;
+      const _Boolean2 = Boolean;
       if (user != null) {
         avatarDecoration1 = user.avatarDecoration;
       }
-      BooleanResult = Boolean(avatarDecoration1);
+      _BooleanResult = _Boolean2(avatarDecoration1);
     }
-    obj.has_avatar_decoration = BooleanResult;
-    obj.has_profile_effect = null != profileEffectSkuId;
     return obj;
   }, items);
   const items1 = [displayProfile, guildMember];
   memo1 = obj.useMemo(() => {
+    let _Boolean2;
+    let avatar;
+    let result;
+    let result1;
     let nick;
+    const _Boolean = Boolean;
     if (guildMember != null) {
       nick = tmp.nick;
     }
-    const obj = { has_nickname: Boolean(nick), has_guild_member_avatar: null, has_guild_member_banner: null, has_guild_member_bio: null };
-    let avatar;
+    const obj = { has_nickname: _Boolean(nick), has_guild_member_avatar: _Boolean2(avatar), has_guild_member_banner: result, has_guild_member_bio: result1 };
+    avatar = undefined;
+    _Boolean2 = Boolean;
     if (guildMember != null) {
       avatar = tmp.avatar;
     }
-    obj.has_guild_member_avatar = Boolean(avatar);
-    let result;
+    result = undefined;
     if (displayProfile != null) {
       result = obj2.isUsingGuildMemberBanner();
     }
-    obj.has_guild_member_banner = result;
-    let result1;
+    result1 = undefined;
     if (displayProfile != null) {
       result1 = obj2.isUsingGuildMemberBio();
     }
-    obj.has_guild_member_bio = result1;
     return obj;
   }, items1);
   const items2 = [guildId, memo, memo1];
-  return userId.useMemo(() => {
+  return obj.useMemo(() => {
+    let obj;
     if (null == guildId) {
-      let obj = memo;
+      obj = memo;
     } else {
       obj = {};
       const merged = Object.assign(memo);

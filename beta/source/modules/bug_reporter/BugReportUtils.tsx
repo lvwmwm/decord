@@ -5,197 +5,191 @@
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
 // Module 9647 (bug_reporter/BugReportUtils)
-import util from "util" /* 1115 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import intl9 from "intl" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
 import DebugUploadManager from "DebugUploadManager" /* 9648 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_7 = async function _fetchBugReportConfig() {
-  const HTTP = HTTPUtils.HTTP;
-  await HTTP.get({ url: constants.BUG_REPORTS, rejectWithError: false });
-  return arg1.body;
+let c3, c4;
+
+let hasOwnProperty;
+let metroRequire;
+let obj = function _fetchBugReportConfig() {
+  obj = _asyncToGenerator(async () => {
+    let c0;
+    let c1;
+    const HTTP = HTTPUtils.HTTP;
+    const obj4 = { url: constants.BUG_REPORTS, rejectWithError: false };
+    await HTTP.get(obj4);
+    return arg1.body;
+  });
+  return obj(...arguments);
 };
-let closure_8 = async function _submitReport(arg0, value) {
-  if (c3 === 2) {
-    c3 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp5 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+obj = function _submitReport() {
+  let theme;
+  obj = _asyncToGenerator(async (arg0, value, arg2) => {
+    let mapped;
+    let obj23;
+    let obj24;
+    let closure_0 = arg0;
+    let closure_1 = value;
+    let closure_2 = arg2;
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c3 = 2;
-      if (0 === c4) {
-        if (arg0 === 1) {
+      let c6;
+      try {
+        c3 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let ANDROID_APP;
+            const obj4 = { name: "name", value: closure_0.name };
+            const items = [obj4, , , ];
+            const obj5 = { name: "priority", value: "" + closure_0.priority };
+            const _HermesInternal2 = HermesInternal;
+            items[1] = obj5;
+            const obj6 = { name: "override_platform_information", value: "" + closure_1.overridePlatformInformation };
+            const _HermesInternal3 = HermesInternal;
+            items[2] = obj6;
+            const obj7 = { name: "theme", value: theme.theme };
+            items[3] = obj7;
+            const tmp40 = closure_2;
+            if ("" !== closure_0.description) {
+              const obj8 = { name: "description", value: closure_0.description };
+              items.push(obj8);
+            }
+            if ("" !== closure_0.url) {
+              const obj9 = { name: "external_url", value: closure_0.url };
+              items.push(obj9);
+            }
+            if (null != closure_0.buildOverride) {
+              const obj10 = { name: "build_override", value: closure_0.buildOverride };
+              items.push(obj10);
+            }
+            if (null != closure_0.experimentOverrides) {
+              const obj11 = { name: "experiment_overrides", value: mapped.join(", ") };
+              const experimentOverrides = tmp38.experimentOverrides;
+              const push = items.push;
+              mapped = experimentOverrides.map((experimentId) => "" + experimentId.experimentId + ":" + experimentId.variantId);
+              push(obj11);
+            }
+            const feature = tmp38.feature;
+            let asana_inbox_id;
+            if (feature != null) {
+              asana_inbox_id = feature.asana_inbox_id;
+            }
+            const tmp10 = null != asana_inbox_id && "" !== asana_inbox_id;
+            if (tmp10) {
+              const obj12 = { name: "asana_inbox_id", value: "" + asana_inbox_id };
+              const _HermesInternal = HermesInternal;
+              const push2 = items.push;
+              push2(obj12);
+            }
+            const feature2 = tmp38.feature;
+            let name;
+            if (feature2 != null) {
+              name = feature2.name;
+            }
+            const tmp13 = null != name && "" !== name;
+            if (tmp13) {
+              const obj13 = { name: "feature_name", value: name };
+              items.push(obj13);
+            }
+            if (closure_1.overridePlatformInformation) {
+              const obj14 = { name: "device", value: closure_1.device };
+              items.push(obj14);
+              const obj15 = { name: "os", value: closure_1.operatingSystem };
+              items.push(obj15);
+              const obj16 = { name: "os_version", value: closure_1.operatingSystemVersion };
+              items.push(obj16);
+              const obj17 = { name: "client_version", value: closure_1.clientVersion };
+              items.push(obj17);
+              const obj19 = { name: "client_build_number", value: closure_1.clientBuildNumber };
+              items.push(obj19);
+              const obj20 = { name: "release_channel", value: window.GLOBAL_ENV.RELEASE_CHANNEL };
+              const _window = window;
+              items.push(obj20);
+              const obj21 = { name: "locale", value: closure_1.locale };
+              items.push(obj21);
+            }
+            const uploadDebugLogFiles = DebugUploadManager.uploadDebugLogFiles;
+            const obj18 = PlatformUtils;
+            const tmp22 = require;
+            if (obj18.isIOS()) {
+              ANDROID_APP = tmp25.IOS_APP;
+            } else {
+              ANDROID_APP = tmp25.ANDROID_APP;
+            }
+            uploadDebugLogFiles(ANDROID_APP);
+            c6 = 1;
+            const obj22 = { url: constants.BUG_REPORTS, attachments: tmp40, fields: items, trackedActionData: obj23, rejectWithError: false };
+            obj23 = { event: tmp22(dependencyMap[8]).NetworkActionNames.BUG_REPORT_SUBMIT, properties: obj24 };
+            const post = TrackedHTTPUtilsDefault.post;
+            obj24 = { priority: closure_0.priority, asana_inbox_id };
+            c4 = 2;
+            c3 = 1;
+            const obj25 = { value: post(obj22), done: false };
+            return obj25;
+          }
+        } else if (1 === tmp3) {
+          c6 = 0;
+          c3 = 3;
+          const obj26 = { value, done: true };
+          return obj26;
+        } else if (arg0 === 1) {
           c3 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c6 = 0;
           c3 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          const obj27 = { value, done: true };
+          return obj27;
         } else {
-          let priority = _require;
-          const obj4 = { name: "name", value: _require.name };
-          let items = [obj4, , , ];
-          const obj5 = { name: "priority", value: null };
-          const _HermesInternal2 = HermesInternal;
-          obj5.value = "" + _require.priority;
-          items[1] = obj5;
-          const obj6 = { name: "override_platform_information", value: null };
-          const _HermesInternal3 = HermesInternal;
-          obj6.value = "" + importDefault.overridePlatformInformation;
-          items[2] = obj6;
-          const obj7 = { name: "theme", value: theme.theme };
-          items[3] = obj7;
-          if ("" !== _require.description) {
-            const obj8 = { name: "description", value: priority.description };
-            items.push(obj8);
-          }
-          if ("" !== priority.url) {
-            const obj9 = { name: "external_url", value: priority.url };
-            items.push(obj9);
-          }
-          if (null != priority.buildOverride) {
-            const obj10 = { name: "build_override", value: priority.buildOverride };
-            items.push(obj10);
-          }
-          if (null != priority.experimentOverrides) {
-            const obj11 = { name: "experiment_overrides", value: null };
-            const experimentOverrides = priority.experimentOverrides;
-            const mapped = experimentOverrides.map((experimentId) => "" + experimentId.experimentId + ":" + experimentId.variantId);
-            obj11.value = mapped.join(", ");
-            items.push(obj11);
-          }
-          const feature = priority.feature;
-          let asana_inbox_id;
-          if (feature != null) {
-            asana_inbox_id = feature.asana_inbox_id;
-          }
-          let tmp13 = null != asana_inbox_id;
-          if (tmp13) {
-            tmp13 = "" !== asana_inbox_id;
-          }
-          if (tmp13) {
-            const obj12 = { name: "asana_inbox_id", value: null };
-            const _HermesInternal = HermesInternal;
-            obj12.value = "" + asana_inbox_id;
-            items.push(obj12);
-          }
-          const feature2 = priority.feature;
-          let name;
-          if (feature2 != null) {
-            name = feature2.name;
-          }
-          let tmp16 = null != name;
-          if (tmp16) {
-            tmp16 = "" !== name;
-          }
-          if (tmp16) {
-            const obj13 = { name: "feature_name", value: name };
-            items.push(obj13);
-          }
-          if (importDefault.overridePlatformInformation) {
-            const obj14 = { name: "device", value: tmp38.device };
-            items.push(obj14);
-            const obj15 = { name: "os", value: tmp38.operatingSystem };
-            items.push(obj15);
-            const obj16 = { name: "os_version", value: tmp38.operatingSystemVersion };
-            items.push(obj16);
-            const obj17 = { name: "client_version", value: tmp38.clientVersion };
-            items.push(obj17);
-            const obj18 = { name: "client_build_number", value: tmp38.clientBuildNumber };
-            items.push(obj18);
-            const obj21 = { name: "release_channel", value: null };
-            const _window = window;
-            obj21.value = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            items.push(obj21);
-            const obj22 = { name: "locale", value: tmp38.locale };
-            items.push(obj22);
-          }
-          let obj24 = dependencyMap;
-          let obj19 = DebugUploadManager;
-          let uploadDebugLogFiles = obj19.uploadDebugLogFiles;
-          let BUG_REPORTS = hasOwnProperty;
-          if (obj20.isIOS()) {
-            let ANDROID_APP = BUG_REPORTS.IOS_APP;
-          } else {
-            ANDROID_APP = BUG_REPORTS.ANDROID_APP;
-          }
-          uploadDebugLogFiles(ANDROID_APP);
-          c6 = 1;
-          obj19 = TrackedHTTPUtilsDefault;
-          const obj23 = { url: null, attachments: null, fields: null, trackedActionData: null, rejectWithError: false };
-          BUG_REPORTS = constants.BUG_REPORTS;
-          obj23.url = BUG_REPORTS;
-          obj23.attachments = dependencyMap;
-          obj23.fields = items;
-          items = { event: discord_common_AnalyticsUtils.NetworkActionNames.BUG_REPORT_SUBMIT, properties: null };
-          obj24 = { priority: null, asana_inbox_id: null };
-          priority = priority.priority;
-          obj24.priority = priority;
-          obj24.asana_inbox_id = asana_inbox_id;
-          items.properties = obj24;
-          obj23.trackedActionData = items;
-          uploadDebugLogFiles = obj19.post(obj23);
-          c4 = 2;
-          c3 = 1;
-          obj20 = PlatformUtils;
+          c6 = 0;
+          c3 = 3;
+          obj = { value, done: true };
+          return obj;
         }
-      } else if (1 === tmp6) {
-        c6 = 0;
-        c3 = 3;
-        const obj25 = { value, done: true };
-        return obj25;
-      } else if (arg0 === 1) {
-        c3 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c6 = 0;
-        c3 = 3;
-        const obj26 = { value, done: true };
-        return obj26;
-      } else {
-        c6 = 0;
-        c3 = 3;
-        const obj = { value, done: true };
-        return obj;
-      }
-    } catch (tmp29) {
-      value = tmp29;
-      if (tmp3 === c6) {
-        c3 = tmp2;
-        throw tmp29;
-      } else {
-        c4 = tmp;
+      } catch (tmp30) {
+        value = tmp30;
+        if (0 === c6) {
+          c3 = 3;
+          throw tmp30;
+        } else {
+          c4 = 1;
+        }
       }
     }
-  }
+  });
+  return obj(...arguments);
 };
-const Constants = fn(1074);
 ({ DebugLogCategory: hasOwnProperty, Endpoints: metroRequire } = Constants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/bug_reporter/BugReportUtils.tsx");
 
 export const fetchBugReportConfig = function fetchBugReportConfig() {
-  const self = this;
-  const apply = closure_7.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const getFeatureId = function getFeatureId(feature) {
   let str;
@@ -219,39 +213,32 @@ export const getFeatureId = function getFeatureId(feature) {
   return str3;
 };
 export const getPriorities = function getPriorities() {
-  const obj = { title: null, description: null, emoji: "801497159479722084", value: 0 };
-  const intl = util.intl;
-  obj.title = intl.string(util.t.VwIij9);
-  const intl2 = util.intl;
-  obj.description = intl2.format(util.t.DOP8yY, {});
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  let intl8;
+  obj = { title: intl.string(intl9.t.VwIij9), description: intl2.format(intl9.t.DOP8yY, {}), emoji: "801497159479722084", value: 0 };
+  intl = intl9.intl;
+  intl2 = intl9.intl;
   const items = [obj, , , ];
-  const obj2 = { title: null, description: null, emoji: "410336837563973632", value: 1 };
-  const intl3 = util.intl;
-  obj2.title = intl3.string(util.t.rYfJop);
-  const intl4 = util.intl;
-  obj2.description = intl4.format(util.t["+LEfDL"], {});
+  const obj2 = { title: intl3.string(intl9.t.rYfJop), description: intl4.format(intl9.t["+LEfDL"], {}), emoji: "410336837563973632", value: 1 };
+  intl3 = intl9.intl;
+  intl4 = intl9.intl;
   items[1] = obj2;
-  const obj3 = { title: null, description: null, emoji: "841420679643529296", value: 2 };
-  const intl5 = util.intl;
-  obj3.title = intl5.string(util.t["9LSuy3"]);
-  const intl6 = util.intl;
-  obj3.description = intl6.format(util.t.nC7pvx, {});
+  const obj3 = { title: intl5.string(intl9.t["9LSuy3"]), description: intl6.format(intl9.t.nC7pvx, {}), emoji: "841420679643529296", value: 2 };
+  intl5 = intl9.intl;
+  intl6 = intl9.intl;
   items[2] = obj3;
-  const obj4 = { title: null, description: null, emoji: "827645852352512021", value: 3 };
-  const intl7 = util.intl;
-  obj4.title = intl7.string(util.t.Ia0ska);
-  const intl8 = util.intl;
-  obj4.description = intl8.format(util.t.D4rbgX, {});
+  const obj4 = { title: intl7.string(intl9.t.Ia0ska), description: intl8.format(intl9.t.D4rbgX, {}), emoji: "827645852352512021", value: 3 };
+  intl7 = intl9.intl;
+  intl8 = intl9.intl;
   items[3] = obj4;
   return items;
 };
 export const submitReport = function submitReport() {
-  const self = this;
-  const apply = closure_8.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

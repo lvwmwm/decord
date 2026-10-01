@@ -5,14 +5,17 @@
 // Exports: useThreadNotificationSetting
 
 // Module 9548 (ThreadNotificationSettings)
+import Constants from "Constants" /* 1074 */;
+import ThreadConstants from "ThreadConstants" /* 1114 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
 function computeThreadNotificationSetting(channel) {
   let obj = arg1;
   if (arg1 === undefined) {
@@ -30,40 +33,40 @@ function computeThreadNotificationSetting(channel) {
   if (null == flagsResult) {
     return ThreadMemberFlags.NO_MESSAGES;
   } else {
+    const obj6 = FlagUtils;
     if (obj6.hasFlag(flagsResult, ThreadMemberFlags.ALL_MESSAGES)) {
-      return tmp8.ALL_MESSAGES;
+      return ThreadMemberFlags.ALL_MESSAGES;
     } else {
-      if (tmp6Result.hasFlag(flagsResult, tmp8.ONLY_MENTIONS)) {
-        return tmp8.ONLY_MENTIONS;
+      const tmp6Result = FlagUtils;
+      if (tmp6Result.hasFlag(flagsResult, ThreadMemberFlags.ONLY_MENTIONS)) {
+        return ThreadMemberFlags.ONLY_MENTIONS;
       } else {
-        if (tmp6Result2.hasFlag(flagsResult, tmp8.NO_MESSAGES)) {
-          return tmp8.NO_MESSAGES;
+        const tmp6Result2 = FlagUtils;
+        if (tmp6Result2.hasFlag(flagsResult, ThreadMemberFlags.NO_MESSAGES)) {
+          return ThreadMemberFlags.NO_MESSAGES;
         } else {
           channel = obj3.getChannel(channel.parent_id);
           if (null == channel) {
-            return tmp8.NO_MESSAGES;
+            return ThreadMemberFlags.NO_MESSAGES;
           } else if (obj2.isGuildOrCategoryOrChannelMuted(channel.guild_id, channel.id)) {
-            return tmp8.NO_MESSAGES;
+            return ThreadMemberFlags.NO_MESSAGES;
           } else {
+            let NO_MESSAGES;
             const result = obj2.resolvedMessageNotifications(channel);
             if (result === UserNotificationSettings.NO_MESSAGES) {
-              let NO_MESSAGES = tmp8.NO_MESSAGES;
+              NO_MESSAGES = tmp8.NO_MESSAGES;
             } else {
               NO_MESSAGES = result === tmp4.ONLY_MENTIONS ? tmp8.ONLY_MENTIONS : tmp8.ALL_MESSAGES;
             }
             return NO_MESSAGES;
           }
         }
-        tmp6Result2 = tmp6(1385);
       }
-      tmp6Result = tmp6(1385);
     }
-    obj6 = FlagUtils;
   }
 }
-const ThreadMemberFlags = fn(1114).ThreadMemberFlags;
-const UserNotificationSettings = fn(1074).UserNotificationSettings;
-const size = fn(2);
+const ThreadMemberFlags = ThreadConstants.ThreadMemberFlags;
+const UserNotificationSettings = Constants.UserNotificationSettings;
 let result = size.fileFinishedImporting("modules/threads/ThreadNotificationSettings.tsx");
 
 export { computeThreadNotificationSetting };
@@ -71,5 +74,6 @@ export const useThreadNotificationSetting = function useThreadNotificationSettin
   _require = channel;
   const items = [JoinedThreadsStore, UserGuildSettingsStore, ChannelStore];
   const items1 = [channel];
-  return require("initialize").useStateFromStores(items, () => computeThreadNotificationSetting(closure_0), items1);
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => computeThreadNotificationSetting(channel), items1);
 };

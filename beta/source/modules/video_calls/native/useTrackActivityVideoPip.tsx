@@ -5,38 +5,44 @@
 // Exports: default
 
 // Module 8936 (useTrackActivityVideoPip)
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
 import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 8844 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+let react = react_mod;
+const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/video_calls/native/useTrackActivityVideoPip.tsx");
 
 export default function useTrackActivityPip(arg0) {
+  let closure_0;
+  let closure_2;
+  let closure_3;
+  let pipEnabledWhileFocusedOnActivityOrStream;
   _require = arg0;
+  let obj = require("useStateFromStores");
   const items = [ChannelCallLifecycleStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
-  let tmp2 = stateFromStores(7720)(stateFromStores);
+  const stateFromStores = obj.useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
+  const tmp2 = stateFromStores(7720)(stateFromStores);
   dependencyMap = tmp2;
   const tmp3 = stateFromStores(8913)();
-  noop = tmp3;
+  react = tmp3;
   const items1 = [stateFromStores, tmp2, arg0, tmp3];
-  const effect = noop.useEffect(() => {
-    compositeInstanceId = closure_3;
+  const effect = react.useEffect(() => {
+    const tmp = closure_3;
     if (null != closure_3) {
       if (null != closure_2) {
-        if (stateFromStores !== tmp8) {
-          const track = AnalyticsUtilsDefault.track;
-          const obj = { channel_id: null, guild_id: null, application_id: null, activity_session_id: null };
-          ({ id: obj.channel_id, guild_id: obj.guild_id } = closure_0);
-          ({ applicationId: obj.application_id, compositeInstanceId } = compositeInstanceId);
-          obj.activity_session_id = compositeInstanceId;
-          track(tmp ? track.ACTIVITY_VIDEO_PIP_SHOWN : track.ACTIVITY_VIDEO_PIP_HIDDEN, obj);
-          const tmp2 = tmp ? track.ACTIVITY_VIDEO_PIP_SHOWN : track.ACTIVITY_VIDEO_PIP_HIDDEN;
+        if (stateFromStores !== tmp9) {
+          const obj3 = { channel_id: null, guild_id: null, application_id: null, activity_session_id: null };
+          const tmp4 = tmp2 ? AnalyticEvents.ACTIVITY_VIDEO_PIP_SHOWN : AnalyticEvents.ACTIVITY_VIDEO_PIP_HIDDEN;
+          ({ id: obj2.channel_id, guild_id: obj2.guild_id } = closure_0);
+          ({ applicationId: obj2.application_id, compositeInstanceId: obj2.activity_session_id } = tmp);
+          const obj = AnalyticsUtilsDefault;
+          obj.track(tmp4, obj3);
         }
       }
     }

@@ -5,61 +5,74 @@
 // Exports: default
 
 // Module 13520 (GuildProgressOverview)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Pressables from "Pressables" /* 5435 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 6615 */;
-import _modDef9396 from "module_9396" /* 9396 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6615 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9396 */;
 import GuildProgressUtils from "GuildProgressUtils" /* 11967 */;
 import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 11970 */;
 import GuildProgressBarDefault from "GuildProgressBar" /* 13521 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
 class GuildProgressOverviewView {
   constructor(arg0) {
-    ({ titleStyle, onPress, onLongPress, title, subtitle, percentComplete } = global);
-    tmp = closure_7();
-    obj = { accessibilityRole: "button", activeOpacity: 0.4, style: tmp.container, onPress, onLongPress, children: null };
-    obj1 = { style: tmp.horizontal, children: null };
-    obj8 = { children: null };
-    obj9 = { style: null, children: title };
-    items = [, ];
-    items[0] = tmp.title;
-    items[1] = titleStyle;
-    obj9.style = items;
-    items1 = [, ];
-    items1[0] = jsx(closure_0(closure_2[11]).LegacyText, obj9);
-    obj10 = { style: tmp.step, variant: "text-xs/medium", color: "text-default", children: subtitle };
-    items1[1] = jsx(closure_0(closure_2[12]).Text, obj10);
-    obj8.children = items1;
-    items2 = [, ];
-    items2[0] = jsxs(View, obj8);
-    obj11 = { source: closure_1(closure_2[13]) };
-    items2[1] = jsx(closure_0(closure_2[11]).Icon, obj11);
-    obj1.children = items2;
-    items3 = [, ];
-    items3[0] = jsxs(View, obj1);
-    obj12 = { style: tmp.progressBar, percent: percentComplete };
-    items3[1] = jsx(closure_1(closure_2[14]), obj12);
-    obj.children = items3;
-    return jsxs(closure_0(closure_2[10]).PressableOpacity, obj);
+    let items;
+    let items1;
+    let items2;
+    let items3;
+    let onLongPress;
+    let onPress;
+    let percentComplete;
+    let subtitle;
+    let title;
+    let titleStyle;
+    ({ titleStyle, onPress, onLongPress, title, subtitle, percentComplete } = arg0);
+    const tmp = closure_7();
+    const obj = { accessibilityRole: "button", activeOpacity: 0.4, style: tmp.container, onPress, onLongPress, children: items3 };
+    const obj2 = { style: tmp.horizontal, children: items2 };
+    const obj3 = { children: items1 };
+    const PressableOpacity = Pressables.PressableOpacity;
+    const obj4 = { style: items, children: title };
+    items = [tmp.title, titleStyle];
+    items1 = [hasOwnProperty(native.LegacyText, obj4), ];
+    const obj5 = { style: tmp.step, variant: "text-xs/medium", color: "text-default", children: subtitle };
+    items1[1] = hasOwnProperty(Text_Text.Text, obj5);
+    items2 = [metroRequire(View, obj3), ];
+    const obj6 = { source: AssetRegistryDefault };
+    const Icon = native.Icon;
+    items2[1] = hasOwnProperty(Icon, obj6);
+    items3 = [metroRequire(View, obj2), ];
+    const obj7 = { style: tmp.progressBar, percent: percentComplete };
+    items3[1] = hasOwnProperty(GuildProgressBarDefault, obj7);
+    return metroRequire(PressableOpacity, obj);
   }
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { padding: 16 }, horizontal: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, title: { fontSize: 16, lineHeight: 20, fontFamily: fn(1074).Fonts.PRIMARY_SEMIBOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, marginBottom: 2 }, step: { lineHeight: 16 }, progressBar: { marginTop: 8 } };
-const React5 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+const Fonts = Constants.Fonts;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { container: { padding: 16 }, horizontal: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, title: obj2, step: { lineHeight: 16 }, progressBar: { marginTop: 8 } };
+obj2 = { fontSize: 16, lineHeight: 20, fontFamily: Fonts.PRIMARY_SEMIBOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, marginBottom: 2 };
+const metroImportDefault = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/guild_progress/native/components/GuildProgressOverview.tsx");
 
 export default function GuildProgressOverview(guild) {
+  let percentComplete;
+  let stringResult;
+  let subtitle;
   guild = guild.guild;
   let flag = guild.longPressDisabled;
+  const titleStyle = guild.titleStyle;
   if (flag === undefined) {
     flag = false;
   }
@@ -68,52 +81,64 @@ export default function GuildProgressOverview(guild) {
     flag2 = false;
   }
   let completed;
-  const guildProgressStep = guild(completed[6]).useGuildProgressStep(guild);
+  let obj = guild(completed[6]);
+  const guildProgressStep = obj.useGuildProgressStep(guild);
   completed = guildProgressStep.completed;
   let items = [completed, guild.id];
   ({ percentComplete, subtitle } = guildProgressStep);
-  const effect = noop.useEffect(() => {
-    if (completed) {
-      const result = GuildProgressActionCreatorsDefault.markCompletedProgressSeen(guild.id);
+  const effect = react.useEffect(() => {
+    const tmp = completed;
+    if (tmp) {
+      const obj = GuildProgressActionCreatorsDefault;
+      const result = obj.markCompletedProgressSeen(guild.id);
     }
   }, items);
   let obj2 = {
-    titleStyle: guild.titleStyle,
+    titleStyle,
     onPress() {
-      if (!completed) {
-        const progress = GuildProgressActionCreatorsDefault.createProgress(guild.id);
+      const tmp = completed;
+      if (!tmp) {
+        const obj = GuildProgressActionCreatorsDefault;
+        const progress = obj.createProgress(guild.id);
       }
-      GuildProgressUtils.openActionSheet(guild);
+      const obj2 = GuildProgressUtils;
+      obj2.openActionSheet(guild);
     },
     onLongPress() {
-      if (!flag) {
-        const obj2 = { key: "GuildProgressOverviewLongPress", options: null, hasIcons: false };
-        const obj3 = { label: null, onPress: null };
-        const intl = util.intl;
-        obj3.label = intl.string(util.t.PbNxaW);
-        obj3.onPress = function onPress() {
-          flag(completed[7]).dismissProgress(id.id);
+      let id;
+      let intl;
+      let items;
+      const tmp = flag;
+      if (!tmp) {
+        let obj = { key: "GuildProgressOverviewLongPress", options: items, hasIcons: false };
+        const obj2 = {
+          label: intl.string(intl2.t.PbNxaW),
+          onPress() {
+              const obj = flag(completed[7]);
+              obj.dismissProgress(id.id);
+            }
         };
-        const items = [obj3];
-        obj2.options = items;
-        const result = showSimpleActionSheet.showSimpleActionSheet(obj2);
+        const showSimpleActionSheet = showSimpleActionSheet2.showSimpleActionSheet;
+        showSimpleActionSheet2;
+        intl = intl2.intl;
+        items = [obj2];
+        const result = showSimpleActionSheet(obj);
       }
     },
-    title: null,
-    subtitle: null,
-    percentComplete: null
+    title: stringResult,
+    subtitle,
+    percentComplete
   };
+  const tmp4 = GuildProgressOverviewView;
   let intl = guild(completed[9]).intl;
   const string = intl.string;
   const t = guild(completed[9]).t;
+  const tmp3 = closure_5;
   if (flag2) {
-    let stringResult = string(t.NzxWjb);
+    stringResult = string(t.NzxWjb);
   } else {
     stringResult = string(t.o3HK3d);
   }
-  obj2.title = stringResult;
-  obj2.subtitle = subtitle;
-  obj2.percentComplete = percentComplete;
-  return closure_5(GuildProgressOverviewView, obj2);
+  return tmp3(tmp4, obj2);
 };
 export { GuildProgressOverviewView };

@@ -12,19 +12,16 @@ import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ESWeekdayParser = require;
+let tmp2;
+const _mod9922 = tmp2(9922);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -35,19 +32,16 @@ function _isNativeReflectConstruct() {
 const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:(este|esta|pasado|pr[o\u00F3]ximo)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10039.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(este|esta|pasado|pr[\u00F3o]ximo)\\s*semana)?(?=\\W|\\d|$)", "i");
 class ESWeekdayParser {
   constructor() {
-    self = this;
-    tmp = c2(this, ESWeekdayParser);
-    tmp2 = closure_4;
-    obj = closure_4(ESWeekdayParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ESWeekdayParser);
+    const obj = _getPrototypeOf(ESWeekdayParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
@@ -65,12 +59,14 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const formatted = arg1[2].toLowerCase();
-      const tmp4 = ESWeekdayParser(10039).WEEKDAY_DICTIONARY[formatted];
+      const str = arg1[2];
+      const formatted = str.toLowerCase();
+      const tmp4 = _mod10039.WEEKDAY_DICTIONARY[formatted];
       if (undefined === tmp4) {
         return null;
       } else {
-        const formatted1 = arg1[1] || arg1[3] || "".toLowerCase();
+        const str2 = arg1[1] || arg1[3] || "";
+        const formatted1 = str2.toLowerCase();
         let str5 = "this";
         if ("pasado" != formatted1) {
           str5 = "next";
@@ -84,9 +80,8 @@ const items = [
             }
           }
         }
-        return tmp2(9922).createParsingComponentsAtWeekday(reference.reference, tmp4, str5);
+        return _mod9922.createParsingComponentsAtWeekday(reference.reference, tmp4, str5);
       }
-      tmp2 = ESWeekdayParser;
     }
   }
 ];

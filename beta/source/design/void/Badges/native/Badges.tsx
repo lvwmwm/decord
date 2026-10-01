@@ -5,54 +5,49 @@
 // Exports: TextBadge
 
 // Module 13673 (Badges/Badges)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-let createStyles = fn(4836);
-let obj2 = { base: { borderRadius: nativeDefault.radii.sm, paddingHorizontal: 4, paddingVertical: 2 }, danger: null, info: null, brand: null, expressive: null };
-const obj3 = { borderRadius: nativeDefault.radii.sm, paddingHorizontal: 4, paddingVertical: 2 };
-obj2.danger = { backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND };
-const obj4 = { backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND };
-obj2.info = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-const obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-obj2.brand = { backgroundColor: nativeDefault.unsafe_rawColors.BRAND_260 };
-const obj6 = { backgroundColor: nativeDefault.unsafe_rawColors.BRAND_260 };
-obj2.expressive = { backgroundColor: nativeDefault.colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
-let closure_4 = createStyles.createStyles(obj2);
-createStyles = fn(4836);
-const obj9 = { text: { textAlign: "center", textTransform: "uppercase" }, dangerText: null, infoText: null, brandText: null, expressiveText: null };
-const obj7 = { backgroundColor: nativeDefault.colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
-obj9.dangerText = { color: nativeDefault.colors.WHITE };
-const obj10 = { color: nativeDefault.colors.WHITE };
-obj9.infoText = { color: nativeDefault.colors.WHITE };
-const obj11 = { color: nativeDefault.colors.WHITE };
-obj9.brandText = { color: nativeDefault.unsafe_rawColors.BRAND_560 };
-const obj12 = { color: nativeDefault.unsafe_rawColors.BRAND_560 };
-obj9.expressiveText = { color: nativeDefault.colors.CONTROL_EXPRESSIVE_TEXT_DEFAULT };
-let closure_5 = createStyles.createStyles(obj9);
-const obj14 = { DANGER: "danger", INFO: "info", BRAND: "brand", EXPRESSIVE: "expressive", NORMAL: "normal" };
-const size = fn(2);
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+const obj = { base: obj2, danger: { backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND }, info: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, brand: { backgroundColor: nativeDefault.unsafe_rawColors.BRAND_260 }, expressive: { backgroundColor: nativeDefault.colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT } };
+obj2 = { borderRadius: nativeDefault.radii.sm, paddingHorizontal: 4, paddingVertical: 2 };
+createStyles = createStyles.createStyles;
+({ backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND });
+({ backgroundColor: nativeDefault.colors.BACKGROUND_BRAND });
+({ backgroundColor: nativeDefault.unsafe_rawColors.BRAND_260 });
+({ backgroundColor: nativeDefault.colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT });
+let closure_4 = createStyles(obj);
+createStyles = createStyles_mod;
+const createStyles2 = createStyles.createStyles;
+const obj7 = { text: { textAlign: "center", textTransform: "uppercase" }, dangerText: { color: nativeDefault.colors.WHITE }, infoText: { color: nativeDefault.colors.WHITE }, brandText: { color: nativeDefault.unsafe_rawColors.BRAND_560 }, expressiveText: { color: nativeDefault.colors.CONTROL_EXPRESSIVE_TEXT_DEFAULT } };
+({ color: nativeDefault.colors.WHITE });
+({ color: nativeDefault.colors.WHITE });
+({ color: nativeDefault.unsafe_rawColors.BRAND_560 });
+({ color: nativeDefault.colors.CONTROL_EXPRESSIVE_TEXT_DEFAULT });
+let closure_5 = createStyles2(obj7);
+const obj12 = { DANGER: "danger", INFO: "info", BRAND: "brand", EXPRESSIVE: "expressive", NORMAL: "normal" };
 const result = size.fileFinishedImporting("design/void/Badges/native/Badges.tsx");
 
-export const BadgeColors = obj14;
+export const BadgeColors = obj12;
 export const TextBadge = function TextBadge(color) {
+  let style;
+  let text;
+  let textStyle;
   let DANGER = color.color;
   if (DANGER === undefined) {
-    DANGER = obj14.DANGER;
+    DANGER = obj12.DANGER;
   }
   ({ style, text, textStyle } = color);
   const tmp2 = closure_4();
   const tmp3 = closure_5();
-  const obj = { style: null, children: null };
   const items = [tmp2.base, tmp2[DANGER], style];
-  obj.style = items;
-  const obj2 = { variant: "text-xs/bold", style: null, children: text };
   const items1 = [tmp3.text, tmp3["" + DANGER + "Text"], textStyle];
-  obj2.style = items1;
-  obj.children = jsx(Text_Text.Text, { variant: "text-xs/bold", style: null, children: text });
-  return <View style={null}>{null}</View>;
+  return <View style={items}>{null}</View>;
 };

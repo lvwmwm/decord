@@ -5,15 +5,40 @@
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
 // Module 11487 (ForumPostUsername)
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
+import native from "native" /* 1177 */;
 import ForumLayout from "ForumLayout" /* 2055 */;
 import ForumHooks from "ForumHooks" /* 7310 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7403 */;
 import useChatWidthDefault from "useChatWidth" /* 11020 */;
-import noop from "module_19" /* 19 */;
+import ForumChannelStore from "ForumChannelStore" /* 11483 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let metroImportDefault;
+let metroRequire;
 function ForumPostUsername(arg0) {
+  let authorColor;
+  let authorColors;
+  let authorId;
+  let authorName;
+  let containerStyle;
+  let hasUnreads;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let obj5;
+  let roleDotStyle;
+  let roleStyle;
+  let suffix;
+  let textStyle;
+  let thread;
   ({ thread, authorId, authorName, authorColor, authorColors } = arg0);
   ({ containerStyle, roleDotStyle, textStyle, suffix, hasUnreads } = arg0);
   const tmp = closure_8();
@@ -21,64 +46,67 @@ function ForumPostUsername(arg0) {
   if (useForumChannelStore(thread.parent_id).layoutType === ForumLayout.ForumLayout.GRID) {
     num = 72;
   }
-  const diff = useChatWidthDefault() - tmp2(11488).GRID_HORIZONTAL_PADDING - num;
   const tmp4 = useChatWidthDefault();
+  const diff = tmp4 - tmp2(11488).GRID_HORIZONTAL_PADDING - num;
   const items = [AccessibilityStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => roleStyle.roleStyle);
+  const tmp2Result = get_initialized;
+  const stateFromStores = tmp2Result.useStateFromStores(items, () => roleStyle.roleStyle);
   if ("username" === stateFromStores) {
-    if (null != authorColor) {
-      const obj = { color: authorColor };
-    }
-    const processColorStringsArray = tmp2(7403).useProcessColorStringsArray(authorColors);
-    const tmp2Result4 = tmp2(7403);
-    const useIsRoleStyleAndRoleColorsEligibleForERC = tmp2Result4.useIsRoleStyleAndRoleColorsEligibleForERC;
+    const tmp9 = hasUnreads ? {} : { opacity: 0.8 };
+    const tmp2Result3 = enhanced_role_colors_EnhancedRoleColorUtils;
+    const processColorStringsArray = tmp2Result3.useProcessColorStringsArray(authorColors);
     const guild_id = thread.guild_id;
-    let tmp19Result = null;
+    const useIsRoleStyleAndRoleColorsEligibleForERC = enhanced_role_colors_EnhancedRoleColorUtils.useIsRoleStyleAndRoleColorsEligibleForERC;
+    let tmp20Result = null;
+    const tmp2Result4 = enhanced_role_colors_EnhancedRoleColorUtils;
     if (null != authorName) {
-      const obj2 = { style: null, accessibilityRole: "button", children: null };
+      const obj2 = { style: items1, accessibilityRole: "button", children: items3 };
       const obj3 = { maxWidth: diff };
       const merged = Object.assign(tmp.authorContainer);
-      const items1 = [obj3, tmp9, containerStyle];
-      obj2.style = items1;
-      let tmp23 = "dot" === stateFromStores && null != authorColor;
-      if (tmp23) {
-        const obj4 = { style: null, children: null };
-        const items2 = [tmp.roleDotContainer, roleDotStyle];
-        obj4.style = items2;
-        const obj5 = { size: "small", color: authorColor, colors: authorColors };
-        obj4.children = timestampProducer(tmp2(1177).RoleDot, obj5);
-        tmp23 = timestampProducer(tmp20, obj4);
+      items1 = [obj3, tmp9, containerStyle];
+      let tmp24 = "dot" === stateFromStores && null != authorColor;
+      if (tmp24) {
+        const obj4 = { style: items2, children: metroRequire(native.RoleDot, obj5) };
+        items2 = [tmp.roleDotContainer, roleDotStyle];
+        obj5 = { size: "small", color: authorColor, colors: authorColors };
+        tmp24 = metroRequire(tmp21, obj4);
       }
-      const items3 = [tmp23, ];
-      let tmp25;
-      if (tmp17) {
-        tmp25 = processColorStringsArray;
+      items3 = [tmp24, ];
+      let tmp26;
+      const Text = tmp2(4832).Text;
+      if (tmp18) {
+        tmp26 = processColorStringsArray;
       }
-      const obj6 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", gradientColors: tmp25, lineClamp: 1, style: null, children: null };
-      const items4 = [{}, textStyle, tmp.authorName];
-      obj6.style = items4;
-      const items5 = [authorName, suffix];
-      obj6.children = items5;
-      items3[1] = React5(tmp2(4832).Text, obj6);
-      obj2.children = items3;
-      tmp19Result = tmp19(tmp20, obj2);
+      const obj6 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", gradientColors: tmp26, lineClamp: 1, style: items4, children: items5 };
+      items4 = [{}, textStyle, tmp.authorName];
+      items5 = [authorName, suffix];
+      items3[1] = metroImportDefault(Text, obj6);
+      tmp20Result = tmp20(tmp21, obj2);
     }
-    return tmp19Result;
+    return tmp20Result;
   }
 }
-const View = fn(17).View;
-const useForumChannelStore = fn(11483).useForumChannelStore;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const View = react_native.View;
+const useForumChannelStore = ForumChannelStore.useForumChannelStore;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ authorContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center", marginEnd: 8 }, roleDotContainer: { alignItems: "center", justifyContent: "center", marginEnd: 2, marginBottom: 4 }, authorName: { overflow: "hidden", flexWrap: "nowrap" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostUsername.tsx");
 
 export const ForumPostAuthor = function ForumPostAuthor(thread) {
+  let author;
+  let colorString;
+  let colorStrings;
+  let containerStyle;
+  let hasUnreads;
+  let id;
+  let roleDotStyle;
+  let suffix;
+  let textStyle;
+  let user;
   thread = thread.thread;
   ({ hasUnreads, suffix, containerStyle, roleDotStyle, textStyle } = thread);
-  const forumPostAuthor = ForumHooks.useForumPostAuthor(thread);
+  const obj = ForumHooks;
+  const forumPostAuthor = obj.useForumPostAuthor(thread);
   ({ user, author } = forumPostAuthor);
   let nick;
   if (author != null) {
@@ -92,50 +120,47 @@ export const ForumPostAuthor = function ForumPostAuthor(thread) {
     nick = username;
   }
   if (author != null) {
-    const colorString = author.colorString;
+    colorString = author.colorString;
   }
   if (author != null) {
-    const colorStrings = author.colorStrings;
+    colorStrings = author.colorStrings;
   }
   let tmp5Result = null;
   if (null != user) {
-    const obj2 = { thread, authorId: null, authorName: null, authorColor: null, authorColors: null, suffix: null, containerStyle: null, roleDotStyle: null, textStyle: null, hasUnreads: null };
-    let id;
+    const obj2 = { thread, authorId: id, authorName: nick, authorColor: colorString, authorColors: colorStrings, suffix, containerStyle, roleDotStyle, textStyle, hasUnreads };
+    id = undefined;
+    const tmp5 = metroRequire;
+    const tmp6 = ForumPostUsername;
     if (user != null) {
       id = user.id;
     }
-    obj2.authorId = id;
-    obj2.authorName = nick;
-    obj2.authorColor = colorString;
-    obj2.authorColors = colorStrings;
-    obj2.suffix = suffix;
-    obj2.containerStyle = containerStyle;
-    obj2.roleDotStyle = roleDotStyle;
-    obj2.textStyle = textStyle;
-    obj2.hasUnreads = hasUnreads;
-    tmp5Result = timestampProducer(ForumPostUsername, obj2);
+    tmp5Result = tmp5(tmp6, obj2);
   }
   return tmp5Result;
 };
 export const ForumPostMessageAuthor = function ForumPostMessageAuthor(thread) {
+  let authorColor;
+  let authorColors;
+  let authorName;
+  let containerStyle;
+  let hasUnreads;
+  let id;
+  let message;
+  let roleDotStyle;
+  let suffix;
+  let textStyle;
   thread = thread.thread;
   ({ message, hasUnreads, suffix, containerStyle, roleDotStyle, textStyle } = thread);
-  const forumPostMessageAuthor = ForumHooks.useForumPostMessageAuthor(message, thread);
+  const obj = ForumHooks;
+  const forumPostMessageAuthor = obj.useForumPostMessageAuthor(message, thread);
   const user = forumPostMessageAuthor.user;
-  const obj2 = { thread, authorId: null, authorName: null, authorColor: null, authorColors: null, suffix: null, containerStyle: null, roleDotStyle: null, textStyle: null, hasUnreads: null };
-  let id;
+  const obj2 = { thread, authorId: id, authorName, authorColor, authorColors, suffix, containerStyle, roleDotStyle, textStyle, hasUnreads };
+  id = undefined;
   ({ authorName, authorColor, authorColors } = forumPostMessageAuthor);
+  const tmp2 = metroRequire;
+  const tmp3 = ForumPostUsername;
   if (user != null) {
     id = user.id;
   }
-  obj2.authorId = id;
-  obj2.authorName = authorName;
-  obj2.authorColor = authorColor;
-  obj2.authorColors = authorColors;
-  obj2.suffix = suffix;
-  obj2.containerStyle = containerStyle;
-  obj2.roleDotStyle = roleDotStyle;
-  obj2.textStyle = textStyle;
-  obj2.hasUnreads = hasUnreads;
-  return timestampProducer(ForumPostUsername, obj2);
+  return tmp2(tmp3, obj2);
 };

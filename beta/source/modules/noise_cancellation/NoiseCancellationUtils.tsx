@@ -5,12 +5,11 @@
 // Exports: getNoiseCancellationDeferredToSystem, useNoiseCancellationDeferredToSystem
 
 // Module 9450 (NoiseCancellationUtils)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 9451 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/noise_cancellation/NoiseCancellationUtils.tsx");
 
 export const getNoiseCancellationDeferredToSystem = function getNoiseCancellationDeferredToSystem(MediaEngineStore) {
@@ -23,7 +22,8 @@ export const getNoiseCancellationDeferredToSystem = function getNoiseCancellatio
 };
 export const useNoiseCancellationDeferredToSystem = function useNoiseCancellationDeferredToSystem() {
   const items = [MediaEngineStore];
-  return initialize.useStateFromStores(items, () => {
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => {
     systemMicrophoneMode = systemMicrophoneMode.getSystemMicrophoneMode();
     return !getEffectiveNoiseCancellationDefault(true, systemMicrophoneMode);
   });

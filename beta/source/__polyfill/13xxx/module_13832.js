@@ -11,16 +11,14 @@ import _mod13833 from "module_13833" /* 13833 */;
 let closure_2 = _mod13795([].push);
 
 export default (arg0, arg1) => {
+  let num;
   const tmp = _mod13793(arg0);
   const items = [];
   for (const key10010 in tmp) {
     let tmp12 = require;
     let tmp14 = _mod13811;
     let tmp14Result = tmp14(_mod13833, key10010);
-    let tmp2 = !tmp14Result;
-    if (!tmp14Result) {
-      tmp2 = tmp12(13811)(tmp, key10010);
-    }
+    let tmp2 = !tmp14Result && tmp12(13811)(tmp, key10010);
     if (!tmp2) {
       continue;
     } else {
@@ -34,7 +32,7 @@ export default (arg0, arg1) => {
     let tmp7 = arg1[num];
     if (_mod13811(tmp, tmp7)) {
       let tmp5Result = tmp5(13834);
-      if (!~tmp5Result.indexOf(items, tmp7)) {
+      if (!(~tmp5Result.indexOf(items, tmp7))) {
         let tmp10 = closure_2(items, tmp7);
       }
     }

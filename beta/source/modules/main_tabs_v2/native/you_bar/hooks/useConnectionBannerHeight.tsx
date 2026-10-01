@@ -5,20 +5,26 @@
 // Exports: useConnectionBannerHeight
 
 // Module 14630 (useConnectionBannerHeight)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 13230 */;
 import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13231 */;
-import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13230 */;
+import YouBarConstants from "YouBarConstants" /* 14627 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const constants = fn(13230).ConnectivityIndicatorState;
-const CONNECTION_BANNER_HEIGHT = fn(14627).CONNECTION_BANNER_HEIGHT;
-const size = fn(2);
+const ConnectivityIndicatorStateStore = ConnectivityIndicatorStateStore2;
+
+const constants = ConnectivityIndicatorStateStore2.ConnectivityIndicatorState;
+const CONNECTION_BANNER_HEIGHT = YouBarConstants.CONNECTION_BANNER_HEIGHT;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useConnectionBannerHeight.tsx");
 
 export const useConnectionBannerHeight = function useConnectionBannerHeight() {
-  const config = ConnectionIndicatorExperimentDefault.useConfig({ location: "useConnectionBannerHeight" });
+  let hidden;
+  let state;
+  let timeoutMs;
+  const obj = ConnectionIndicatorExperimentDefault;
+  const config = obj.useConfig({ location: "useConnectionBannerHeight" });
   ({ timeoutMs, hidden } = config);
-  initialize;
+  get_initialized;
   [][0] = ConnectivityIndicatorStateStore;
   let num = 0;
   if (null != timeoutMs) {

@@ -5,12 +5,14 @@
 // Exports: assignSubagentMarkKeys, isVibegrationsSubagentMarkKey, subagentMarkName
 
 // Module 16375 (VibegrationsSubagentMarks)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import size from "module_2" /* 2 */;
 
+let map;
+
 const items = ["snail", "goat", "frog", "bunny", "cat", "caterpillar", "butterfly", "dog", "spider", "bee", "bot"];
-const dependencyMap = {
+let closure_4 = {
   snail() {
     return _modDef3715["2l3AEQ"];
   },
@@ -52,13 +54,15 @@ export const isVibegrationsSubagentMarkKey = function isVibegrationsSubagentMark
   return items.includes(helperMark);
 };
 export const subagentMarkName = function subagentMarkName(helperMark) {
-  const intl = util.intl;
-  return intl.string(dependencyMap[helperMark]());
+  const intl = intl2.intl;
+  return intl.string(closure_4[helperMark]());
 };
 export const assignSubagentMarkKeys = function assignSubagentMarkKeys(arr) {
-  let length = items;
-  c1 = 0;
+  let length;
+  let closure_0 = items;
+  let c1 = 0;
   let str = arr[0];
+  arr = items;
   if (str == null) {
     str = "";
   }
@@ -73,7 +77,7 @@ export const assignSubagentMarkKeys = function assignSubagentMarkKeys(arr) {
       length = str.length;
     } while (num < length);
   }
-  const map = new Map();
+  map = new Map();
   const item = arr.forEach((item, index) => {
     const result = map.set(item, length[(c1 + index) % length.length]);
   });

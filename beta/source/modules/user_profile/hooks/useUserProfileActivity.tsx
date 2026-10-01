@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 12614 (useUserProfileActivity)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import Constants from "Constants" /* 4861 */;
 import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 12615 */;
 import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8254 */;
@@ -14,89 +14,94 @@ import PresenceStore from "PresenceStore" /* 4876 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_0;
 
-const useMemo = _mod19.useMemo;
+const useMemo = react.useMemo;
 const Features = Constants.Features;
 let closure_8 = [];
 let closure_9 = [];
 let result = size.fileFinishedImporting("modules/user_profile/hooks/useUserProfileActivity.tsx");
 
 export default function useUserProfileActivity(arg0) {
+  let stateFromStores1;
+  let stateFromStores2;
   _require = arg0;
+  const tmp2 = stateFromStores2;
+  let obj = require("get initialized");
   const items = [MediaEngineStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => MediaEngineStore.supports(constants.VIDEO));
+  const stateFromStores = obj.useStateFromStores(items, () => MediaEngineStore.supports(constants.VIDEO));
   let tmp4 = null;
   if (stateFromStores) {
     tmp4 = stateFromStores1(stateFromStores2[6])(arg0);
   }
-  let obj = require("initialize");
+  let tmpResult = tmp(tmp2[5]);
   const items1 = [PresenceStore];
-  stateFromStores1 = require("initialize").useStateFromStores(items1, () => PresenceStore.getActivities(closure_0));
-  let tmpResult = require("initialize");
+  stateFromStores1 = tmpResult.useStateFromStores(items1, () => PresenceStore.getActivities(closure_0));
   const items2 = [ContentInventoryOutboxStore];
-  stateFromStores2 = require("initialize").useStateFromStores(items2, () => ContentInventoryOutboxStore.getUserOutbox(closure_0));
+  const tmpResult2 = require("get initialized");
+  stateFromStores2 = tmpResult2.useStateFromStores(items2, () => ContentInventoryOutboxStore.getUserOutbox(closure_0));
   const items3 = [stateFromStores1, ];
   let entries;
+  let tmp7 = useMemo;
   if (stateFromStores2 != null) {
     entries = stateFromStores2.entries;
   }
   items3[1] = entries;
-  const tmp7Result = useMemo(() => {
-    let userProfileLiveActivities = UserProfileStackedActivityCardUtils.getUserProfileLiveActivities(stateFromStores1);
+  const tmp7Result = tmp7(() => {
+    let obj = UserProfileStackedActivityCardUtils;
+    let userProfileLiveActivities = obj.getUserProfileLiveActivities(stateFromStores1);
     let found;
     if (stateFromStores2 != null) {
       const entries = stateFromStores2.entries;
-      found = entries.filter((item) => {
-        let length = item;
-        userProfileLiveActivities = item;
-        const isEntryLiveResult = userProfileLiveActivities(stateFromStores2[8]).isEntryLive(item);
-        if (isEntryLiveResult) {
-          return !isEntryLiveResult;
-        } else {
-          if (tmpResult.isListenedSessionEntry(length)) {
-            length = length.extra.entries.length;
-            let tmp6 = length > 0;
-            if (tmp6) {
-              length = userProfileLiveActivities;
-              tmp6 = !userProfileLiveActivities.some((item) => {
-                let result = null != item;
-                if (result) {
-                  result = userProfileLiveActivities(7785).isMatchingListeningActivity(closure_0, item);
-                  const obj = userProfileLiveActivities(7785);
-                }
-                return result;
-              });
-            }
-            let result = tmp6;
+      found = entries.filter((extra) => {
+        const f125576 = (item) => {
+          let result = null != item;
+          if (result) {
+            const obj = userProfileLiveActivities(closure_2_2[10]);
+            result = obj.isMatchingListeningActivity(closure_0, item);
+          }
+          return result;
+        };
+        closure_0 = extra;
+        let obj = closure_2_0(stateFromStores2[8]);
+        let tmp4 = !obj.isEntryLive(extra);
+        obj.isEntryLive(extra);
+        if (tmp4) {
+          let result;
+          const tmpResult = closure_2_0(stateFromStores2[9]);
+          if (tmpResult.isListenedSessionEntry(extra)) {
+            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f125576);
+            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f125576);
           } else {
-            if (tmpResult3.isWatchedMediaEntry(length)) {
+            const tmpResult3 = closure_2_0(stateFromStores2[9]);
+            if (tmpResult3.isWatchedMediaEntry(extra)) {
               result = !userProfileLiveActivities.some((item) => {
                 let result = null != item;
                 if (result) {
-                  result = userProfileLiveActivities(7785).isMatchingWatchActivity(closure_0, item);
-                  const obj = userProfileLiveActivities(7785);
+                  const obj = userProfileLiveActivities(closure_2_2[10]);
+                  result = obj.isMatchingWatchActivity(closure_0, item);
                 }
                 return result;
               });
             } else {
-              result = tmp(tmp2[9]).isRecentActivityEntry(length);
-              const tmpResult4 = tmp(tmp2[9]);
+              const tmpResult4 = closure_2_0(stateFromStores2[9]);
+              result = tmpResult4.isRecentActivityEntry(extra);
             }
-            tmpResult3 = tmp(tmp2[9]);
           }
-          tmpResult = tmp(tmp2[9]);
+          tmp4 = result;
         }
+        return tmp4;
       });
     }
     if (0 === userProfileLiveActivities.length) {
       userProfileLiveActivities = closure_8;
     }
-    const obj2 = { live: userProfileLiveActivities, recent: null };
+    const obj2 = { live: userProfileLiveActivities, recent: found };
     if (null == found) {
       found = closure_9;
     }
-    obj2.recent = found;
     return obj2;
   }, items3);
-  return { live: tmp7Result.live, recent: tmp7Result.recent, stream: tmp4, outbox: stateFromStores2 };
+  let obj2 = { live: tmp7Result.live, recent: tmp7Result.recent, stream: tmp4, outbox: stateFromStores2 };
+  return obj2;
 };

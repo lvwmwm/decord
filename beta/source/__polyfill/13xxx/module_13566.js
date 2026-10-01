@@ -8,7 +8,8 @@ import _mod13558 from "module_13558" /* 13558 */;
 
 export default (str, arg1) => {
   const tmp = _mod13558;
-  const tmpResult = tmp(str.trim().replace(/^[=v]+/, ""), arg1);
+  str = str.trim();
+  const tmpResult = tmp(str.replace(/^[=v]+/, ""), arg1);
   let version = null;
   if (tmpResult) {
     version = tmpResult.version;

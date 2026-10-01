@@ -5,31 +5,36 @@
 // Exports: default
 
 // Module 14239 (WebAuthnSuccessStep)
+import Fragment from "Fragment" /* 21 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 14221 */;
 import UserSettingsAccountBackupCodesDefault from "UserSettingsAccountBackupCodes" /* 14240 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let navigation;
+
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnSuccessStep.tsx");
 
 export default function WebAuthnSuccessStep() {
-  navigation = navigation(1485).useNavigation();
+  let obj = navigation(1485);
+  navigation = obj.useNavigation();
   const items = [navigation];
-  const layoutEffect = noop.useLayoutEffect(() => {
-    const obj = {
-      headerLeft: NavigatorHeader.getHeaderCloseButton(() => {
+  const layoutEffect = react.useLayoutEffect(() => {
+    let obj2;
+    let obj = {
+      headerLeft: obj2.getHeaderCloseButton(() => {
         navigation.popToTop();
-        const result = PasskeyUpsellActionCreatorsDefault.closePasskeyUpsellModal();
+        const obj = PasskeyUpsellActionCreatorsDefault;
+        const result = obj.closePasskeyUpsellModal();
       })
     };
-    navigation.setOptions(obj);
+    const setOptions = navigation.setOptions;
+    obj2 = NavigatorHeader;
+    setOptions(obj);
   }, items);
-  const obj2 = { onGenerate: null, headerLabel: null };
-  let obj = navigation(1485);
+  UserSettingsAccountBackupCodesDefault;
   const intl = navigation(1115).intl;
-  obj2.headerLabel = intl.format(navigation(1115).t.iVTs6i, {});
-  return jsx(UserSettingsAccountBackupCodesDefault, { onGenerate: null, headerLabel: null });
+  return <tmp3 onGenerate={null} headerLabel={intl.format(navigation(1115).t.iVTs6i, {})} />;
 };

@@ -5,6 +5,7 @@
 
 // Module 12495 (ProtocolUtils)
 import _modDef5173 from "module_5173" /* 5173 */;
+import size from "module_2" /* 2 */;
 
 const os = _modDef5173.os;
 let family;
@@ -12,7 +13,7 @@ if (os != null) {
   family = os.family;
 }
 function launchMobile(href, arg1) {
-  closure_0 = arg1;
+  let closure_0 = arg1;
   location.href = href;
   process.nextTick(() => closure_0(true));
 }
@@ -26,9 +27,10 @@ if ("Android" !== family) {
   tmp3 = launchMobile;
   if ("iOS" !== family1) {
     function launchFirefox(href, arg1) {
-      closure_0 = arg1;
+      let closure_0 = arg1;
       if (href.startsWith("discord:")) {
         const _document = document;
+        const tmp = null;
         if (null == body) {
           const _process4 = process;
           return process.nextTick(() => closure_0(false));
@@ -42,25 +44,25 @@ if ("Android" !== family) {
             }
             const _process2 = process;
             process.nextTick(() => closure_0(true));
-            const _window = window;
-            const timerId = window.setTimeout(() => {
-              let parentElement;
-              if (element != null) {
-                parentElement = tmp.parentElement;
-              }
-              if (parentElement == null) {
-                parentElement = null;
-              }
-              if (null !== parentElement) {
-                body.removeChild(tmp);
-              }
-            }, 1000);
-          } catch (tmp4) {
-            if ("NS_ERROR_UNKNOWN_PROTOCOL" === tmp4.name) {
-              const _process3 = tmp.process;
-              _process3.nextTick(() => closure_0(false));
+          } catch (tmp3) {
+            if ("NS_ERROR_UNKNOWN_PROTOCOL" === tmp3.name) {
+              const _process3 = process;
+              process.nextTick(() => closure_0(false));
             }
           }
+          const _window = window;
+          const timerId = window.setTimeout(() => {
+            let parentElement;
+            if (element != null) {
+              parentElement = tmp.parentElement;
+            }
+            if (parentElement == null) {
+              parentElement = null;
+            }
+            if (null !== parentElement) {
+              body.removeChild(element);
+            }
+          }, 1000);
         }
       } else {
         const _location = location;
@@ -71,11 +73,11 @@ if ("Android" !== family) {
     }
     if ("Gecko" !== _modDef5173.layout) {
       function launchChrome(href, arg1) {
-        closure_0 = arg1;
+        let closure_0 = arg1;
         function handleBlur() {
           c1 = true;
         }
-        c1 = false;
+        let c1 = false;
         const listener = window.addEventListener("blur", handleBlur);
         location.href = href;
         const timerId = setTimeout(() => {
@@ -98,7 +100,6 @@ if ("Android" !== family) {
     tmp3 = launchFirefox;
   }
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("utils/web/ProtocolUtils.tsx");
 
 export default { launch: tmp3 };

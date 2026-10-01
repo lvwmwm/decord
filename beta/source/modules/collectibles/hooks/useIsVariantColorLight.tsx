@@ -6,20 +6,22 @@
 
 // Module 8331 (useIsVariantColorLight)
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useIsVariantColorLight.tsx");
 
 export default function useIsVariantColorLight(variantValue) {
   const items = [variantValue.variantValue];
-  return noop.useMemo(() => {
-    let isValidHexResult = utils_ColorUtils.isValidHex(variantValue.variantValue);
+  return react.useMemo(() => {
+    const obj = utils_ColorUtils;
+    let isValidHexResult = obj.isValidHex(variantValue.variantValue);
+    const tmp3 = variantValue;
     if (isValidHexResult) {
-      const tmpResult = tmp(1092);
-      isValidHexResult = tmpResult.getDarkness(tmp(1092).hex2int(variantValue.variantValue)) < 0.3;
-      const tmpResult2 = tmp(1092);
+      const getDarkness = utils_ColorUtils.getDarkness;
+      utils_ColorUtils;
+      const tmpResult2 = utils_ColorUtils;
+      isValidHexResult = getDarkness(tmpResult2.hex2int(tmp3.variantValue)) < 0.3;
     }
     return isValidHexResult;
   }, items);

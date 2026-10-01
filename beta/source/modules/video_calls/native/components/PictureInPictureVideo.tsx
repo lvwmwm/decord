@@ -7,13 +7,15 @@
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
+import CallConstants from "CallConstants" /* 4857 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
 import transitionToActivityDefault from "transitionToActivity" /* 8828 */;
 import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 8847 */;
 import usePipDimensionsDefault from "usePipDimensions" /* 8850 */;
 import useIsViewingActivity from "useIsViewingActivity" /* 8851 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -21,45 +23,58 @@ import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import SpeakingStore from "SpeakingStore" /* 5731 */;
 import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 8844 */;
+import ChannelCallStore from "ChannelCallStore" /* 8829 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import native_mod from "native" /* 1177 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let closure_14;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_4;
+let hasOwnProperty;
+let map1;
+let native;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let size;
 function areParticipantsEqual(arg0, arg1) {
+  let tmp;
+  let tmp2;
   [, , tmp] = arg0;
   [, , tmp2] = arg1;
   return tmp === tmp2;
 }
-get_ActivityIndicator = fn(17);
-({ TouchableOpacity: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const ChannelCallStore = fn(8829);
+({ TouchableOpacity: closure_4, View: hasOwnProperty } = react_native);
 ({ togglePipFocus: map1, useIsVoiceChatFocused: closure_14 } = ChannelCallStore);
-const ParticipantTypes = fn(4857).ParticipantTypes;
-const jsxProd = fn(21);
-({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { elevationShadow: null, background: null, backgroundPipFab: null, pip: null, pipFab: null, avatarContainer: null, activityPipContainer: null, thermalAlertIconContainer: null, thermalAlertIcon: null };
-const native = fn(1177);
-obj.elevationShadow = native.generateBoxShadowStyle(fn(1177).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
-obj.background = { backgroundColor: nativeDefault.colors.BLACK, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-let obj3 = { backgroundColor: nativeDefault.colors.BLACK, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-obj.backgroundPipFab = { backgroundColor: nativeDefault.colors.BLACK, borderRadius: nativeDefault.radii.lg };
-let obj5 = { backgroundColor: nativeDefault.colors.BLACK, borderRadius: nativeDefault.radii.lg };
-obj.pip = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-let obj6 = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-obj.pipFab = { borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
-obj.avatarContainer = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center" };
-obj.activityPipContainer = { flex: 1, width: "100%" };
-obj.thermalAlertIconContainer = { width: 22, height: 22, backgroundColor: "rgba(78, 80, 88, 0.48)", borderRadius: 11, justifyContent: "center", alignItems: "center", position: "absolute", top: 6, left: 6 };
-let size = { width: 14, height: 14, color: nativeDefault.colors.WHITE };
-obj.thermalAlertIcon = size;
-let closure_19 = createStyles.createStyles(obj);
-let closure_20 = noop.memo((channel) => {
+const ParticipantTypes = CallConstants.ParticipantTypes;
+({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { elevationShadow: native.generateBoxShadowStyle(native.EIGHT_DP_ELEVATION_SHADOW_PARAMS), background: obj2, backgroundPipFab: obj3, pip: obj4, pipFab: obj5, avatarContainer: { width: "100%", height: "100%", alignItems: "center", justifyContent: "center" }, activityPipContainer: { flex: 1, width: "100%" }, thermalAlertIconContainer: { width: 22, height: 22, backgroundColor: "rgba(78, 80, 88, 0.48)", borderRadius: 11, justifyContent: "center", alignItems: "center", position: "absolute", top: 6, left: 6 }, thermalAlertIcon: size };
+createStyles = createStyles.createStyles;
+native = native_mod;
+obj2 = { backgroundColor: nativeDefault.colors.BLACK, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
+obj3 = { backgroundColor: nativeDefault.colors.BLACK, borderRadius: nativeDefault.radii.lg };
+obj4 = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
+obj5 = { borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
+size = { width: 14, height: 14, color: nativeDefault.colors.WHITE };
+let closure_19 = createStyles(obj);
+let closure_20 = react.memo((channel) => {
+  let items2;
+  let tmp20;
   channel = channel.channel;
   const pipParticipant = channel.pipParticipant;
   const selfParticipant = channel.selfParticipant;
   let openVoice;
-  closure_3 = undefined;
-  closure_4 = undefined;
-  const voiceChatNavigationContext = channel(openVoice[16]).useVoiceChatNavigationContext();
+  let closure_3;
+  let closure_4;
+  let tmp = channel;
+  let obj = channel(openVoice[16]);
+  const voiceChatNavigationContext = obj.useVoiceChatNavigationContext();
   openVoice = undefined;
   if (voiceChatNavigationContext != null) {
     openVoice = voiceChatNavigationContext.openVoice;
@@ -68,6 +83,7 @@ let closure_20 = noop.memo((channel) => {
     openVoice = pipParticipant(tmp2[17]).noop;
   }
   closure_3 = closure_14();
+  let tmp6 = pipParticipant;
   closure_4 = pipParticipant(tmp2[18])(channel.id);
   let type;
   if (pipParticipant != null) {
@@ -76,52 +92,53 @@ let closure_20 = noop.memo((channel) => {
   let tmp6ResultResult = type === ParticipantTypes.ACTIVITY;
   if (tmp6ResultResult) {
     let applicationId;
+    const tmp6Result = tmp6(openVoice[19]);
     if (pipParticipant != null) {
       applicationId = pipParticipant.applicationId;
     }
-    tmp6ResultResult = tmp6(tmp2[19])(applicationId);
-    const tmp6Result = tmp6(tmp2[19]);
+    tmp6ResultResult = tmp6Result(applicationId);
   }
-  let obj = channel(openVoice[16]);
   const items = [MediaEngineStore];
   const items1 = [pipParticipant];
   let type1;
-  const stateFromStores = channel(openVoice[20]).useStateFromStores(items, () => {
-    let isLocalVideoDisabledResult = null != pipParticipant;
-    if (isLocalVideoDisabledResult) {
-      isLocalVideoDisabledResult = MediaEngineStore.isLocalVideoDisabled(tmp.id);
-    }
+  const tmpResult = tmp(openVoice[20]);
+  const stateFromStores = tmpResult.useStateFromStores(items, () => {
+    const isLocalVideoDisabledResult = null != pipParticipant && MediaEngineStore.isLocalVideoDisabled(tmp.id);
     return isLocalVideoDisabledResult;
   }, items1);
   if (pipParticipant != null) {
     type1 = pipParticipant.type;
   }
   function onPipTap() {
-    if (closure_3) {
+    const tmp = closure_3;
+    if (tmp) {
       openVoice();
     }
-    if (closure_4) {
-      const participant = ChannelRTCActionCreatorsDefault.selectParticipant(channel.id, null);
+    const tmp4 = closure_4;
+    if (tmp4) {
+      const obj = ChannelRTCActionCreatorsDefault;
+      const participant = obj.selectParticipant(channel.id, null);
     } else {
       map1();
     }
   }
   if (ParticipantTypes.HIDDEN_STREAM !== type1) {
-    if (tmp8.STREAM !== type1) {
-      if (tmp8.USER === type1) {
+    let tmp14;
+    if (ParticipantTypes.STREAM !== type1) {
+      if (ParticipantTypes.USER === type1) {
         let tmp15 = null;
-        if (tmp6(tmp2[25])(pipParticipant)) {
+        if (tmp6(openVoice[25])(pipParticipant)) {
           tmp15 = null;
           if (!stateFromStores) {
-            const obj2 = { participant: pipParticipant, avatarSize: tmp(tmp2[14]).AvatarSizes.PROFILE, resizeMode: tmp(tmp2[24]).ResizeMode.COVER, onSingleTap: onPipTap, onDoubleTap: onPipTap };
-            tmp15 = closure_16(tmp6(tmp2[26]), obj2);
-            const tmp6Result4 = tmp6(tmp2[26]);
+            const obj2 = { participant: pipParticipant, avatarSize: tmp(openVoice[14]).AvatarSizes.PROFILE, resizeMode: tmp(openVoice[24]).ResizeMode.COVER, onSingleTap: onPipTap, onDoubleTap: onPipTap };
+            const tmp6Result4 = tmp6(openVoice[26]);
+            tmp15 = closure_16(tmp6Result4, obj2);
           }
         }
-        let tmp14 = tmp15;
+        tmp14 = tmp15;
       } else {
         tmp14 = null;
-        if (tmp8.ACTIVITY === type1) {
+        if (ParticipantTypes.ACTIVITY === type1) {
           const obj3 = {
             participant: pipParticipant,
             channel,
@@ -130,7 +147,8 @@ let closure_20 = noop.memo((channel) => {
                       if (null != currentEmbeddedActivity) {
                         transitionToActivityDefault(channel.guild_id, currentEmbeddedActivity.location);
                       }
-                      if (closure_3) {
+                      const tmp6 = closure_3;
+                      if (tmp6) {
                         openVoice();
                       }
                     }
@@ -138,123 +156,138 @@ let closure_20 = noop.memo((channel) => {
           tmp14 = closure_16(tmp6(tmp2[27]), obj3);
         }
       }
-      let tmp24 = null;
-      if (null != selfParticipant) {
-        tmp24 = null;
-        if (!tmp6ResultResult) {
-          const obj4 = {
-            participant: selfParticipant,
-            avatarSize: tmp(tmp2[14]).AvatarSizes.PROFILE,
-            resizeMode: tmp(tmp2[24]).ResizeMode.COVER,
-            onSingleTap() {
-                      if (closure_3) {
-                        openVoice();
-                      } else {
-                        map1();
-                      }
-                    }
-          };
-          tmp24 = closure_16(tmp6(tmp2[26]), obj4);
-          const tmp6Result5 = tmp6(tmp2[26]);
-        }
-      }
-      const obj5 = { children: null };
-      const items2 = [tmp24, tmp14];
-      obj5.children = items2;
-      return closure_18(closure_17, obj5);
     }
+    let tmp24 = null;
+    const tmp22 = closure_18;
+    const tmp23 = closure_17;
+    if (null != selfParticipant) {
+      tmp24 = null;
+      if (!tmp6ResultResult) {
+        const obj4 = {
+          participant: selfParticipant,
+          avatarSize: tmp(openVoice[14]).AvatarSizes.PROFILE,
+          resizeMode: tmp(openVoice[24]).ResizeMode.COVER,
+          onSingleTap() {
+                  const tmp = closure_3;
+                  if (tmp) {
+                    openVoice();
+                  } else {
+                    map1();
+                  }
+                }
+        };
+        const tmp6Result5 = tmp6(openVoice[26]);
+        tmp24 = closure_16(tmp6Result5, obj4);
+      }
+    }
+    const obj5 = { children: items2 };
+    items2 = [tmp24, tmp14];
+    return tmp22(tmp23, obj5);
   }
   if (pipParticipant.user.id === AuthenticationStore.getId()) {
     function onScreenshareTap() {
       const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
       if (null != voiceChannelId) {
         let id;
+        const selectParticipant = ChannelRTCActionCreatorsDefault.selectParticipant;
+        ChannelRTCActionCreatorsDefault;
         if (pipParticipant != null) {
           id = pipParticipant.id;
         }
         if (id == null) {
           id = null;
         }
-        const participant = ChannelRTCActionCreatorsDefault.selectParticipant(voiceChannelId, id);
-        if (closure_3) {
+        const participant = selectParticipant(voiceChannelId, id);
+        const tmp7 = closure_3;
+        if (tmp7) {
           openVoice();
         }
       }
     }
     const obj6 = { onSingleTap: onScreenshareTap, onDoubleTap: onScreenshareTap };
-    closure_16(tmp6(tmp2[22]), obj6);
+    tmp20 = closure_16(tmp6(tmp2[22]), obj6);
   } else {
-    const obj7 = { removeEmptyStateButton: true, removeEmptyStateImage: true, resizeMode: tmp(tmp2[24]).ResizeMode.CONTAIN, participant: pipParticipant, onSingleTap: onPipTap, onDoubleTap: onPipTap };
-    closure_16(tmp6(tmp2[23]), obj7);
-    const tmp6Result6 = tmp6(tmp2[23]);
+    const obj7 = { removeEmptyStateButton: true, removeEmptyStateImage: true, resizeMode: tmp(openVoice[24]).ResizeMode.CONTAIN, participant: pipParticipant, onSingleTap: onPipTap, onDoubleTap: onPipTap };
+    const tmp6Result6 = tmp6(openVoice[23]);
+    tmp20 = closure_16(tmp6Result6, obj7);
   }
+  tmp14 = tmp20;
 });
-let closure_22 = noop.memo((arg0) => {
+let closure_22 = react.memo((arg0) => {
+  let Icon;
+  let arr5;
+  let channel;
+  let id;
+  let items6;
+  let leadingEdgeDebounce;
+  let obj12;
+  let selfParticipant;
+  let speaking;
+  let tmp14;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  const f87553 = () => {
+    const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
+    return items;
+  };
+  const f114723 = () => {
+    const items = [ChannelRTCStore.getParticipants(id), ChannelRTCStore.getVideoParticipants(id), ChannelRTCStore.getParticipantsVersion(id)];
+    return items;
+  };
   ({ channel, selfParticipant } = arg0);
   const tmp = closure_19();
+  const tmp2 = id;
   let items = [ChannelCallLifecycleStore];
   const obj = id(leadingEdgeDebounce[20]);
   id = channel.id;
   leadingEdgeDebounce = undefined;
-  [tmp5, tmp6] = id(leadingEdgeDebounce[20]).useStateFromStoresArray(items, () => {
-    const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
-    return items;
-  });
-  const tmp4 = _slicedToArray(id(leadingEdgeDebounce[20]).useStateFromStoresArray(items, () => {
-    const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
-    return items;
-  }), 2);
+  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f87553);
+  _slicedToArray(obj.useStateFromStoresArray(items, f87553), 2);
   const items1 = [ChannelCallLifecycleStore];
-  const stateFromStores = id(leadingEdgeDebounce[20]).useStateFromStores(items1, () => ChannelCallLifecycleStore.isReactingToThermalState());
   const obj2 = id(leadingEdgeDebounce[20]);
+  const stateFromStores = obj2.useStateFromStores(items1, () => ChannelCallLifecycleStore.isReactingToThermalState());
   const items2 = [ChannelRTCStore];
   const items3 = [id];
   const obj3 = id(leadingEdgeDebounce[20]);
-  [arr5, tmp9] = id(leadingEdgeDebounce[20]).useStateFromStores(items2, () => {
-    const items = [ChannelRTCStore.getParticipants(id), ChannelRTCStore.getVideoParticipants(id), ChannelRTCStore.getParticipantsVersion(id)];
-    return items;
-  }, items3, areParticipantsEqual);
-  const tmp8 = _slicedToArray(id(leadingEdgeDebounce[20]).useStateFromStores(items2, () => {
-    const items = [ChannelRTCStore.getParticipants(id), ChannelRTCStore.getVideoParticipants(id), ChannelRTCStore.getParticipantsVersion(id)];
-    return items;
-  }, items3, areParticipantsEqual), 2);
+  [arr5, tmp9] = obj3.useStateFromStores(items2, f114723, items3, areParticipantsEqual);
+  _slicedToArray(obj3.useStateFromStores(items2, f114723, items3, areParticipantsEqual), 2);
   const items4 = [SpeakingStore];
   const items5 = [selfParticipant];
-  const stateFromStores1 = id(leadingEdgeDebounce[20]).useStateFromStores(items4, () => {
+  const obj4 = id(leadingEdgeDebounce[20]);
+  const stateFromStores1 = obj4.useStateFromStores(items4, () => {
+    let user;
     let found = null;
     if (null != selfParticipant) {
       const speakers = SpeakingStore.getSpeakers();
       found = speakers.find((item) => {
-        let isSpeakingResult = item !== user.user.id;
-        if (isSpeakingResult) {
-          isSpeakingResult = speaking.isSpeaking(item);
-        }
+        const isSpeakingResult = item !== user.user.id && speaking.isSpeaking(item);
         return isSpeakingResult;
       });
     }
     return found;
   }, items5);
-  const obj4 = id(leadingEdgeDebounce[20]);
-  leadingEdgeDebounce = id(leadingEdgeDebounce[29]).useLeadingEdgeDebounce(stateFromStores1, 1000);
+  const obj5 = id(leadingEdgeDebounce[29]);
+  leadingEdgeDebounce = obj5.useLeadingEdgeDebounce(stateFromStores1, 1000);
   if (null != leadingEdgeDebounce) {
     let found = arr5.find((id) => id.id === leadingEdgeDebounce);
     if (null != found) {
-      let tmp14 = found;
+      tmp14 = found;
     }
     let avatarURL;
-    const token = tmp2(tmp3[30]).useToken(selfParticipant(tmp3[15]).unsafe_rawColors.PRIMARY_800);
+    const tmp2Result = tmp2(leadingEdgeDebounce[30]);
+    const token = tmp2Result.useToken(selfParticipant(tmp3[15]).unsafe_rawColors.PRIMARY_800);
     if (tmp14 != null) {
       const user = tmp14.user;
       avatarURL = user.getAvatarURL(channel.guild_id, 80);
     }
-    const tmp2Result = tmp2(tmp3[30]);
-    const tmp23 = selfParticipant(tmp3[31])(avatarURL, token);
     let id1;
-    const useAvatarSpeakingColor = tmp2(tmp3[32]).useAvatarSpeakingColor;
+    const tmp23 = selfParticipant(leadingEdgeDebounce[31])(avatarURL, token);
+    const useAvatarSpeakingColor = tmp2(leadingEdgeDebounce[32]).useAvatarSpeakingColor;
+    tmp2(leadingEdgeDebounce[32]);
     if (tmp14 != null) {
       id1 = tmp14.user.id;
     }
-    const obj6 = { userId: id1, guildId: channel.guild_id };
     if (null == tmp14) {
       return null;
     } else {
@@ -267,37 +300,37 @@ let closure_22 = noop.memo((arg0) => {
         }
         tmp28 = selfVideo;
       }
-      const obj7 = { style: null, children: null };
-      const items6 = [tmp.avatarContainer, ];
+      const obj7 = { style: items6, children: null };
+      items6 = [tmp.avatarContainer, ];
       const obj8 = { backgroundColor: tmp23 };
       items6[1] = obj8;
-      obj7.style = items6;
       if (tmp28) {
+        let tmp31;
+        let tmp33;
         if (!tmp6) {
-          let tmp31 = closure_16;
-          const obj9 = { participant: tmp14, avatarSize: tmp2(tmp3[14]).AvatarSizes.PROFILE, resizeMode: tmp2(tmp3[24]).ResizeMode.COVER };
-          let tmp33 = closure_16(tmp20(tmp3[26]), obj9);
-          const tmp20Result = tmp20(tmp3[26]);
+          tmp31 = closure_16;
+          const obj9 = { participant: tmp14, avatarSize: tmp2(leadingEdgeDebounce[14]).AvatarSizes.PROFILE, resizeMode: tmp2(leadingEdgeDebounce[24]).ResizeMode.COVER };
+          const tmp20Result = selfParticipant(leadingEdgeDebounce[26]);
+          tmp33 = closure_16(tmp20Result, obj9);
         }
         const items7 = [tmp33, ];
         let tmp31Result = null;
         if (tmp5) {
-          const obj10 = { style: tmp.thermalAlertIconContainer, children: null };
-          const obj12 = { style: tmp.thermalAlertIcon, source: tmp20(tmp3[33]), color: tmp.thermalAlertIcon.color };
-          obj10.children = tmp31(tmp2(tmp3[14]).Icon, obj12);
+          const obj10 = { style: tmp.thermalAlertIconContainer, children: tmp31(Icon, obj12) };
+          obj12 = { style: tmp.thermalAlertIcon, source: selfParticipant(leadingEdgeDebounce[33]), color: tmp.thermalAlertIcon.color };
+          Icon = tmp2(tmp3[14]).Icon;
           tmp31Result = tmp31(tmp30, obj10);
         }
         items7[1] = tmp31Result;
         obj7.children = items7;
-        return tmp29(tmp30, obj7);
+        return tmp29(closure_5, obj7);
       }
-      const obj13 = { size: tmp2(tmp3[14]).AvatarSizes.LARGE_48, channel, guildId: channel.guild_id, user: null, speaking: null, speakingColor: null };
+      const obj13 = { size: tmp2(leadingEdgeDebounce[14]).AvatarSizes.LARGE_48, channel, guildId: channel.guild_id, user: null, speaking: null, speakingColor: tmp26 };
+      const Avatar = tmp2(tmp3[14]).Avatar;
       ({ user: obj11.user, speaking: obj11.speaking } = tmp14);
-      obj13.speakingColor = tmp26;
-      tmp33 = closure_16(tmp2(tmp3[14]).Avatar, obj13);
+      tmp33 = closure_16(Avatar, obj13);
       tmp31 = closure_16;
     }
-    const tmp2Result2 = tmp2(tmp3[32]);
   }
   let streamId;
   if (selfParticipant != null) {
@@ -308,7 +341,8 @@ let closure_22 = noop.memo((arg0) => {
     tmp14 = selfParticipant;
     if (!stateFromStores) {
       const items8 = [];
-      HermesBuiltin.arraySpread(tmp9, 0);
+      let num = 0;
+      HermesBuiltin.arraySpread(items8, tmp9, 0);
       const first = items8.sort((lastSpoke, lastSpoke2) => {
         let num = -1;
         if (lastSpoke.lastSpoke < lastSpoke2.lastSpoke) {
@@ -323,48 +357,58 @@ let closure_22 = noop.memo((arg0) => {
     }
   }
 });
-let obj7 = { borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
-size = fn(2);
-const result = size.fileFinishedImporting("modules/video_calls/native/components/PictureInPictureVideo.tsx");
-
-export default noop.memo((arg0) => {
+const memoResult = react.memo((arg0) => {
+  let channel;
+  let height;
+  let obj10;
+  let obj8;
+  let pipParticipant;
+  let selfParticipant;
+  let str;
+  let tmp10;
+  let tmp8Result;
+  let width;
   ({ channel, pipParticipant, selfParticipant } = arg0);
   const tmp = closure_19();
-  const isViewingActivity = useIsViewingActivity.useIsViewingActivity({ channelId: channel.id });
+  const obj = useIsViewingActivity;
   const obj2 = { channelId: channel.id };
-  const shouldForcePipOrientation = useShouldForcePipOrientation.useShouldForcePipOrientation({ channel });
+  const isViewingActivity = obj.useIsViewingActivity(obj2);
+  const obj3 = useShouldForcePipOrientation;
+  const shouldForcePipOrientation = obj3.useShouldForcePipOrientation({ channel });
   const obj4 = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
-  const tmp6 = usePipDimensionsDefault({ channelId: channel.id, forcedOrientation: shouldForcePipOrientation });
-  const obj5 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background, children: null };
+  const tmp6 = usePipDimensionsDefault(obj4);
   const items = [isViewingActivity ? tmp.pipFab : tmp.pip, , , ];
+  const obj5 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background, children: authStore3(tmp10, obj10) };
   ({ width, height } = useWindowDimensionsDefault());
-  const tmp10 = React4;
-  const tmp7 = useWindowDimensionsDefault();
+  useWindowDimensionsDefault();
   let elevationShadow;
+  tmp10 = React3;
+  const tmp2Result = PlatformUtils;
   if (tmp2Result.isAndroid()) {
     elevationShadow = tmp.elevationShadow;
   }
   items[1] = elevationShadow;
   if (width > height) {
-    let str = "row";
+    str = "row";
   } else {
     str = "column";
   }
-  const obj6 = { style: items, children: null };
+  const obj6 = { style: items, children: tmp8Result };
   items[2] = { flexDirection: str };
   items[3] = tmp6;
   if (isViewingActivity) {
-    const obj7 = { pointerEvents: "none", style: tmp.activityPipContainer, children: null };
-    const obj8 = { channel, pipParticipant, selfParticipant };
-    obj7.children = tmp8(closure_22, obj8);
-    let tmp8Result = tmp8(tmp9, obj7);
+    const obj7 = { pointerEvents: "none", style: tmp.activityPipContainer, children: authStore3(closure_22, obj8) };
+    obj8 = { channel, pipParticipant, selfParticipant };
+    tmp8Result = tmp8(tmp9, obj7);
   } else {
     const obj9 = { channel, pipParticipant, selfParticipant };
     tmp8Result = tmp8(closure_20, obj9);
   }
-  tmp2Result = PlatformUtils;
-  obj6.children = tmp8Result;
-  obj5.children = value2(tmp10, { activeOpacity: 0.7, children: value2(hasOwnProperty, obj6) });
-  return value2(hasOwnProperty, obj5);
+  obj10 = { activeOpacity: 0.7, children: authStore3(hasOwnProperty, obj6) };
+  return authStore3(hasOwnProperty, obj5);
 });
+size = size_mod;
+const result = size.fileFinishedImporting("modules/video_calls/native/components/PictureInPictureVideo.tsx");
+
+export default memoResult;
 export { areParticipantsEqual };

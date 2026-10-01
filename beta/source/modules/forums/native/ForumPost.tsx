@@ -5,111 +5,126 @@
 // Exports: ForumPostListDisabled
 
 // Module 11482 (ForumPost)
+import ForumChannelStore from "ForumChannelStore" /* 11483 */;
 import ForumPostGridHeaderDefault from "ForumPostGridHeader" /* 11484 */;
 import ForumPostGridBodyDefault from "ForumPostGridBody" /* 11488 */;
 import ForumPostGridFooterDefault from "ForumPostGridFooter" /* 11499 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+const require = globalThis.__r;
+let _require;
+
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 function ForumPostGrid(arg0) {
+  let firstMessage;
+  let hasUnreads;
+  let isNew;
+  let items;
+  let media;
+  let parentChannel;
+  let thread;
   ({ hasUnreads, thread } = arg0);
-  const obj = { children: null };
+  const obj = { children: items };
   ({ firstMessage, isNew, media, parentChannel } = arg0);
-  const items = [timestampProducer(ForumPostGridHeaderDefault, { thread, hasUnreads, isNew }), timestampProducer(ForumPostGridBodyDefault, { thread, hasUnreads, media }), timestampProducer(ForumPostGridFooterDefault, { thread, firstMessage, hasUnreads, parentChannel })];
-  obj.children = items;
-  return React6(React5, obj);
+  items = [metroRequire(ForumPostGridHeaderDefault, { thread, hasUnreads, isNew }), metroRequire(ForumPostGridBodyDefault, { thread, hasUnreads, media }), metroRequire(ForumPostGridFooterDefault, { thread, firstMessage, hasUnreads, parentChannel })];
+  return metroImportAll(metroImportDefault, obj);
 }
 function ConnectedForumPost(arg0) {
+  let content;
+  let hasSpoilerEmbeds;
+  let hasUnreads;
+  let isNew;
+  let obj10;
+  let obj12;
+  let obj14;
+  let require;
+  let str;
+  let style;
+  let tmp13;
+  let tmp4Result;
   ({ threadId: require, style } = arg0);
   let parent_id;
   let firstMessage;
-  let ForumPostPressableContainer = require;
-  let tmp = firstMessage;
+  const tmp = require;
+  let obj = require("get initialized");
   const items = [ChannelStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => ChannelStore.getChannel(_require));
-  let tmp3 = parent_id;
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(_require));
   parent_id(firstMessage[9])(null != stateFromStores, "[Forum Post] The thread should not be null here. A store must have missed an update.");
   parent_id = stateFromStores.parent_id;
-  let obj = require("initialize");
+  const layoutType = useForumChannelStore(parent_id).layoutType;
   const items1 = [ChannelStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => ChannelStore.getChannel(parent_id));
-  const obj2 = require("initialize");
-  const firstForumPostMessage = require("ForumPostDataLoader").useFirstForumPostMessage(stateFromStores);
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(parent_id));
+  const obj3 = require("ForumPostDataLoader");
+  const firstForumPostMessage = obj3.useFirstForumPostMessage(stateFromStores);
   firstMessage = firstForumPostMessage.firstMessage;
   const loaded = firstForumPostMessage.loaded;
-  const obj3 = require("ForumPostDataLoader");
-  const forumPostReadStates = require("ForumHooks").useForumPostReadStates(stateFromStores);
-  ({ isNew, hasUnreads } = forumPostReadStates);
   const obj4 = require("ForumHooks");
-  const forumPostFirstMessageMarkup = require("ForumHooks").useForumPostFirstMessageMarkup({ firstMessage, hasUnreads });
-  ({ hasSpoilerEmbeds, content } = forumPostFirstMessageMarkup);
+  const forumPostReadStates = obj4.useForumPostReadStates(stateFromStores);
+  ({ isNew, hasUnreads } = forumPostReadStates);
   const obj5 = require("ForumHooks");
-  const forumPostMediaThumbnail = require("ForumPostMediaUtils").useForumPostMediaThumbnail(firstMessage, stateFromStores1, hasSpoilerEmbeds);
+  const forumPostFirstMessageMarkup = obj5.useForumPostFirstMessageMarkup({ firstMessage, hasUnreads });
+  ({ hasSpoilerEmbeds, content } = forumPostFirstMessageMarkup);
   const obj6 = require("ForumPostMediaUtils");
-  const firstMediaIsEmbed = require("ForumPostMediaUtils").useFirstMediaIsEmbed(firstMessage, hasSpoilerEmbeds);
+  const forumPostMediaThumbnail = obj6.useForumPostMediaThumbnail(firstMessage, stateFromStores1, hasSpoilerEmbeds);
   const obj7 = require("ForumPostMediaUtils");
+  const firstMediaIsEmbed = obj7.useFirstMediaIsEmbed(firstMessage, hasSpoilerEmbeds);
   const items2 = [RelationshipStore];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items2, () => {
-    let isBlockedForMessageResult = null != firstMessage;
-    if (isBlockedForMessageResult) {
-      isBlockedForMessageResult = RelationshipStore.isBlockedForMessage(tmp);
-    }
-    const obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
-    let isIgnoredForMessageResult = null != tmp;
-    if (isIgnoredForMessageResult) {
-      isIgnoredForMessageResult = RelationshipStore.isIgnoredForMessage(tmp);
-    }
-    obj.isIgnored = isIgnoredForMessageResult;
+  const obj8 = require("get initialized");
+  const stateFromStoresObject = obj8.useStateFromStoresObject(items2, () => {
+    let isIgnoredForMessageResult;
+    const obj = { isBlocked: null != firstMessage && RelationshipStore.isBlockedForMessage(tmp), isIgnored: isIgnoredForMessageResult };
+    isIgnoredForMessageResult = null != tmp && RelationshipStore.isIgnoredForMessage(tmp);
     return obj;
   });
   const isBlocked = stateFromStoresObject.isBlocked;
   if (loaded) {
     if (!isBlocked) {
+      let tmp18Result;
       if (!stateFromStoresObject.isIgnored) {
-        if (useForumChannelStore(parent_id).layoutType === ForumPostPressableContainer(tmp[16]).ForumLayout.GRID) {
+        if (layoutType === tmp(firstMessage[16]).ForumLayout.GRID) {
           if (forumPostMediaThumbnail.length > 0) {
-            const obj9 = { style, threadId: stateFromStores.id, children: null };
-            const obj10 = { thread: stateFromStores, media: forumPostMediaThumbnail, parentChannel: stateFromStores1, firstMessage, hasUnreads, isNew };
-            obj9.children = closure_6(ForumPostGrid, obj10);
-            let tmp16Result = closure_6(ForumPostPressableContainer(tmp[12]).ForumPostPressableContainer, obj9);
+            const obj9 = { style, threadId: stateFromStores.id, children: closure_6(ForumPostGrid, obj10) };
+            obj10 = { thread: stateFromStores, media: forumPostMediaThumbnail, parentChannel: stateFromStores1, firstMessage, hasUnreads, isNew };
+            const ForumPostPressableContainer2 = tmp(tmp2[12]).ForumPostPressableContainer;
+            tmp18Result = closure_6(ForumPostPressableContainer2, obj9);
           }
         }
-        const obj11 = { style, threadId: stateFromStores.id, children: null };
-        const obj12 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: content, media: forumPostMediaThumbnail[0], isEmbed: firstMediaIsEmbed, hasUnreads, isNew, firstMessageLoaded: loaded, isLocalDeviceMedia: false };
-        obj11.children = closure_6(tmp3(tmp[13]), obj12);
-        tmp16Result = closure_6(ForumPostPressableContainer(tmp[12]).ForumPostPressableContainer, obj11);
+        const obj11 = { style, threadId: stateFromStores.id, children: closure_6(parent_id(firstMessage[13]), obj12) };
+        const ForumPostPressableContainer = tmp(tmp2[12]).ForumPostPressableContainer;
+        obj12 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: content, media: forumPostMediaThumbnail[0], isEmbed: firstMediaIsEmbed, hasUnreads, isNew, firstMessageLoaded: loaded, isLocalDeviceMedia: false };
+        tmp18Result = closure_6(ForumPostPressableContainer, obj11);
       }
+      tmp13 = tmp18Result;
     }
-    ForumPostPressableContainer = ForumPostPressableContainer(tmp[12]).ForumPostPressableContainer;
-    const obj13 = { style, threadId: null, children: null };
-    style = stateFromStores.id;
-    obj13.threadId = style;
-    tmp3 = tmp3(tmp[13]);
-    const obj14 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: null, media: null, hasUnreads, isNew, firstMessageLoaded: true, isLocalDeviceMedia: false, senderModifier: null };
-    isNew = "ignored";
+    const obj13 = { style, threadId: stateFromStores.id, children: closure_6(tmp4Result, obj14) };
+    const ForumPostPressableContainer3 = tmp(tmp2[12]).ForumPostPressableContainer;
+    obj14 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: null, media: null, hasUnreads, isNew, firstMessageLoaded: true, isLocalDeviceMedia: false, senderModifier: str };
+    str = "ignored";
+    tmp4Result = parent_id(firstMessage[13]);
     if (isBlocked) {
-      isNew = "blocked";
+      str = "blocked";
     }
-    obj14.senderModifier = isNew;
-    tmp = tmp16(tmp3, obj14);
-    obj13.children = tmp;
-    tmp16Result = tmp16(ForumPostPressableContainer, obj13);
+    tmp18Result = tmp18(ForumPostPressableContainer3, obj13);
   } else {
-    return closure_6(tmp3(tmp[15]), {});
+    tmp13 = closure_6(tmp4(tmp2[15]), {});
   }
+  return tmp13;
 }
-const useForumChannelStore = fn(11483).useForumChannelStore;
-const jsxProd = fn(21);
-({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/forums/native/ForumPost.tsx");
-
-export default noop.memo((arg0) => {
+const useForumChannelStore = ForumChannelStore.useForumChannelStore;
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
+const memoResult = react.memo((arg0) => {
+  let threadId;
   _require = arg0;
   const items = [ChannelStore];
   let tmp = null;
+  const obj = require("get initialized");
   if (null != obj.useStateFromStores(items, () => ChannelStore.getChannel(threadId.threadId))) {
     const obj2 = {};
     const merged = Object.assign(arg0);
@@ -117,27 +132,36 @@ export default noop.memo((arg0) => {
   }
   return tmp;
 });
+const result = size.fileFinishedImporting("modules/forums/native/ForumPost.tsx");
+
+export default memoResult;
 export const ForumPostListDisabled = function ForumPostListDisabled(threadId) {
+  let firstMessage;
+  let loaded;
+  let localDeviceMedia;
+  let obj5;
+  let style;
   threadId = threadId.threadId;
   ({ style, localDeviceMedia } = threadId);
   const items = [ChannelStore];
-  const stateFromStores = threadId(504).useStateFromStores(items, () => ChannelStore.getChannel(threadId));
+  const obj = threadId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(threadId));
   let tmp5 = null;
   stateFromStores(38)(null != stateFromStores, "[Forum Post] The thread should not be null here. A store must have missed an update.");
-  const obj = threadId(504);
-  const tmp = threadId;
-  const tmp4 = stateFromStores;
   const items1 = [ChannelStore];
-  const stateFromStores1 = threadId(504).useStateFromStores(items1, () => ChannelStore.getChannel(stateFromStores.parent_id));
   const obj2 = threadId(504);
-  const firstForumPostMessage = threadId(6722).useFirstForumPostMessage(stateFromStores);
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(stateFromStores.parent_id));
+  const obj3 = threadId(6722);
+  const firstForumPostMessage = obj3.useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
   threadId(7310);
+  const tmp = threadId;
+  const tmp4 = stateFromStores;
   if (loaded) {
-    const obj4 = { style, children: null };
-    const obj5 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: tmp10, media: localDeviceMedia, hasUnreads: true, isNew: false, firstMessageLoaded: loaded, isLocalDeviceMedia: true };
-    obj4.children = closure_6(tmp4(11503), obj5);
-    tmp5 = closure_6(tmp(11502).ForumPostDisabledContainer, obj4);
+    const obj4 = { style, children: closure_6(tmp4(11503), obj5) };
+    const ForumPostDisabledContainer = tmp(11502).ForumPostDisabledContainer;
+    obj5 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: tmp10, media: localDeviceMedia, hasUnreads: true, isNew: false, firstMessageLoaded: loaded, isLocalDeviceMedia: true };
+    tmp5 = closure_6(ForumPostDisabledContainer, obj4);
   }
   return tmp5;
 };

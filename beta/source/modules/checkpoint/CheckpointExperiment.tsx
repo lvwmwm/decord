@@ -8,12 +8,15 @@
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
-let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-09-build-a-bear", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let obj = { name: "2026-09-build-a-bear", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointExperiment.tsx");
 
 export const useIsCheckpointEnabled = function useIsCheckpointEnabled(DevToolsQuickActionsScreen) {
-  return closure_0.useConfig({ location: DevToolsQuickActionsScreen }).enabled;
+  const obj = { location: DevToolsQuickActionsScreen };
+  return closure_0.useConfig(obj).enabled;
 };
 export const getIsCheckpointEnabled = function getIsCheckpointEnabled(transformCheckpoint2026CardComponent) {
-  return closure_0.getConfig({ location: transformCheckpoint2026CardComponent }).enabled;
+  const obj = { location: transformCheckpoint2026CardComponent };
+  return closure_0.getConfig(obj).enabled;
 };

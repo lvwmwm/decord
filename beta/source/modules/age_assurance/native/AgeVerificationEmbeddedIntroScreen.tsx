@@ -6,62 +6,85 @@
 
 // Module 8040 (AgeVerificationEmbeddedIntroScreen)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import _modDef3039 from "module_3039" /* 3039 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
 import AgeVerificationGetStartedModal from "AgeVerificationGetStartedModal" /* 8033 */;
 import useAgeVerificationMethodsDefault from "useAgeVerificationMethods" /* 8041 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { header: { textAlign: "center" }, helpLink: { marginTop: nativeDefault.space.PX_16, textAlign: "center" } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { header: { textAlign: "center" }, helpLink: obj2 };
+obj2 = { marginTop: nativeDefault.space.PX_16, textAlign: "center" };
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationEmbeddedIntroScreen.tsx");
 
 export default function AgeVerificationEmbeddedIntroScreen(arg0) {
+  let ModalContent;
+  let classificationId;
+  let entryPoint;
+  let intl;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let modalSessionId;
+  let obj10;
+  let obj12;
+  let obj3;
+  let obj8;
+  let onClose;
   ({ entryPoint, navigation } = arg0);
   ({ onClose, modalSessionId, classificationId } = arg0);
   const tmp = closure_7();
+  let obj = navigation(7867);
   const items = [navigation];
-  const isSuspendedUser = navigation(7867).useIsSuspendedUser();
-  const callback = noop.useCallback(() => {
+  const isSuspendedUser = obj.useIsSuspendedUser();
+  const callback = react.useCallback(() => {
     navigation.navigate(AgeVerificationGetStartedModal.AgeVerificationGetStartedModalScenes.GOOGLE_WALLET_VERIFICATION);
   }, items);
-  const obj2 = { children: null };
-  const obj3 = { children: null };
-  const obj4 = { align: "center", justify: "center", spacing: 24, children: null };
-  const obj5 = { align: "center", justify: "center", spacing: 16, children: null };
-  const items1 = [closure_5(navigation(7872).ShieldSpotIllustration, { height: 100, width: 177 }), ];
-  const obj6 = { align: "center", justify: "center", spacing: 8, children: null };
-  const obj7 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
-  let obj = navigation(7867);
-  obj7.children = navigation(5048).getAgeVerificationGetStartedTitle(entryPoint);
-  const items2 = [closure_5(navigation(4832).Text, obj7), ];
-  const obj9 = { variant: "text-md/medium", color: "text-strong", style: tmp.header, children: null };
-  const obj8 = navigation(5048);
-  obj9.children = navigation(5048).getAgeVerificationGetStartedSubtitle(entryPoint, undefined, isSuspendedUser);
-  items2[1] = closure_5(navigation(4832).Text, obj9);
-  obj6.children = items2;
-  items1[1] = closure_6(navigation(5279).Stack, obj6);
-  obj5.children = items1;
-  const items3 = [closure_6(navigation(5279).Stack, obj5), closure_5(navigation(8043).AgeVerificationMethodsContainer, { ageVerificationMethods: useAgeVerificationMethodsDefault({ onClose, classificationId, onGoogleWalletSelect: callback }).ageVerificationMethods, modalSessionId })];
-  obj4.children = items3;
-  const items4 = [closure_6(navigation(5279).Stack, obj4), ];
-  const obj11 = { variant: "text-xs/medium", color: "text-muted", style: tmp.helpLink, children: null };
-  const intl = navigation(1115).intl;
-  obj11.children = intl.format(_modDef3039.lG69e1, {
+  const ageVerificationMethods = useAgeVerificationMethodsDefault({ onClose, classificationId, onGoogleWalletSelect: callback }).ageVerificationMethods;
+  const obj2 = { children: closure_6(ModalContent, obj3) };
+  const ModalScreen = navigation(7870).ModalScreen;
+  obj3 = { children: items4 };
+  ModalContent = navigation(7871).ModalContent;
+  const obj4 = { align: "center", justify: "center", spacing: 24, children: items3 };
+  const Stack = navigation(5279).Stack;
+  const obj5 = { align: "center", justify: "center", spacing: 16, children: items1 };
+  const Stack2 = navigation(5279).Stack;
+  items1 = [closure_5(navigation(7872).ShieldSpotIllustration, { height: 100, width: 177 }), ];
+  const obj6 = { align: "center", justify: "center", spacing: 8, children: items2 };
+  const Stack3 = navigation(5279).Stack;
+  const obj7 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: obj8.getAgeVerificationGetStartedTitle(entryPoint) };
+  const Text = navigation(4832).Text;
+  obj8 = navigation(5048);
+  items2 = [closure_5(Text, obj7), ];
+  const obj9 = { variant: "text-md/medium", color: "text-strong", style: tmp.header, children: obj10.getAgeVerificationGetStartedSubtitle(entryPoint, undefined, isSuspendedUser) };
+  const Text2 = navigation(4832).Text;
+  obj10 = navigation(5048);
+  items2[1] = closure_5(Text2, obj9);
+  items1[1] = closure_6(Stack3, obj6);
+  items3 = [closure_6(Stack2, obj5), closure_5(navigation(8043).AgeVerificationMethodsContainer, { ageVerificationMethods, modalSessionId })];
+  items4 = [closure_6(Stack, obj4), ];
+  const obj11 = { variant: "text-xs/medium", color: "text-muted", style: tmp.helpLink, children: intl.format(_modDef3039.lG69e1, obj12) };
+  const Text3 = navigation(4832).Text;
+  intl = navigation(1115).intl;
+  obj12 = {
     handleOnHelpUrlHook() {
-      const obj = AgeVerificationActionCreatorsDefault;
-      obj.openUrl(HelpdeskUtilsDefault.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+      const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
+      AgeVerificationActionCreatorsDefault;
+      const obj = HelpdeskUtilsDefault;
+      openUrl(obj.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
     }
-  });
-  items4[1] = closure_5(navigation(4832).Text, obj11);
-  obj3.children = items4;
-  obj2.children = closure_6(navigation(7871).ModalContent, obj3);
-  return closure_5(navigation(7870).ModalScreen, obj2);
+  };
+  items4[1] = closure_5(Text3, obj11);
+  return closure_5(ModalScreen, obj2);
 };

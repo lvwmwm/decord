@@ -4,77 +4,90 @@
 // Dependencies: [1372, 7417, 1074, 6464, 504, 14328, 1115, 14241, 14330, 5204, 5039, 6463, 1981, 6466, 12, 11006, 14242, 2]
 
 // Module 14332 (AccountSmsBackupSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl4 from "intl" /* 1115 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
+import PhoneConstants from "PhoneConstants" /* 6464 */;
 import PhoneActionCreators from "PhoneActionCreators" /* 6466 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import MFAActionCreatorsDefault from "MFAActionCreators" /* 14241 */;
-import account_MFAUtils from "account/MFAUtils" /* 14328 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14242 */;
 import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 14330 */;
 import UserStore from "UserStore" /* 1372 */;
+import module_12 from "module_12" /* 12 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const UserFlags = fn(1074).UserFlags;
-let closure_5 = fn(6464).PHONE_VERIFICATION_MODAL_KEY;
-const apply = fn(12);
-let closure_6 = apply.debounce(function toggleSMS(user) {
+let tmp;
+const account_MFAUtils = tmp(14328);
+const f99510 = () => currentUser.getCurrentUser();
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserFlags = Constants.UserFlags;
+let closure_5 = PhoneConstants.PHONE_VERIFICATION_MODAL_KEY;
+let closure_6 = module_12.debounce(function toggleSMS(user) {
+  let formatted1;
   user = user.user;
   if (user.mfaSMSEnabled) {
-    const intl2 = util.intl;
-    const formatted = intl2.string(util.t["CIGa+7"]).toUpperCase();
-    const intl3 = util.intl;
-    const str2 = intl2.string(util.t["CIGa+7"]);
-    const obj2 = { onSubmit: null, title: null, placeholder: null, closeOnSuccess: true };
-    const formatted1 = intl3.string(util.t.wlfmlR).toUpperCase();
-    obj2.onSubmit = MFAActionCreatorsDefault.disableSMS;
-    obj2.title = formatted1;
-    obj2.placeholder = formatted;
-    showUserSettingsInputAlertDefault(obj2);
-    const str3 = intl3.string(util.t.wlfmlR);
+    const intl2 = intl4.intl;
+    const str2 = intl2.string(intl4.t["CIGa+7"]);
+    const formatted = str2.toUpperCase();
+    const intl3 = intl4.intl;
+    const obj3 = { onSubmit: MFAActionCreatorsDefault.disableSMS, title: formatted1, placeholder: formatted, closeOnSuccess: true };
+    const str3 = intl3.string(intl4.t.wlfmlR);
+    formatted1 = str3.toUpperCase();
+    showUserSettingsInputAlertDefault(obj3);
   } else {
+    let tmp = null;
     if (null != user) {
       if (null != user.phone) {
-        const intl = util.intl;
-        const formatted2 = intl.string(util.t.DZQe23).toUpperCase();
-        const str = intl.string(util.t.DZQe23);
+        const intl = intl4.intl;
+        const str = intl.string(intl4.t.DZQe23);
+        const formatted2 = str.toUpperCase();
         const obj4 = { title: formatted2 };
-        actions_AlertActionCreatorsDefault.confirm(obj4).then((result) => {
-          if (result) {
-            MFAActionCreatorsDefault.enableSMS();
+        const obj2 = actions_AlertActionCreatorsDefault;
+        const confirmResult = obj2.confirm(obj4);
+        confirmResult.then((result) => {
+          const tmp = result;
+          if (tmp) {
+            const obj = MFAActionCreatorsDefault;
+            obj.enableSMS();
           }
         });
-        const confirmResult = actions_AlertActionCreatorsDefault.confirm(obj4);
       }
     }
-    const obj5 = { reason: null };
-    let obj = ModalActionCreatorsDefault;
-    obj5.reason = PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE;
-    obj.pushLazy(asyncRequireImpl(6463, dependencyMap.paths), obj5, closure_5);
-    const tmp5 = asyncRequireImpl(6463, dependencyMap.paths);
+    const pushLazy = ModalActionCreatorsDefault.pushLazy;
+    let obj = { reason: PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE };
+    ModalActionCreatorsDefault;
+    const tmp6 = asyncRequire(6463, dependencyMap.paths);
+    pushLazy(tmp6, obj, closure_5);
   }
 }, 200);
-const SettingBuilders = fn(11006);
-const toggle = SettingBuilders.createToggle({
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.uHAJ5v);
+    const intl = intl4.intl;
+    return intl.string(intl4.t.uHAJ5v);
   },
-  parent: fn(7417).MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   useIsDisabled: function useAccountSMSBackupSettingIsDisabled() {
+    let currentUser;
     const items = [UserStore];
-    const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+    const obj = get_initialized;
+    const stateFromStores = obj.useStateFromStores(items, f99510);
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
-      sMSBackupDisabledMessage = account_MFAUtils.getSMSBackupDisabledMessage(stateFromStores);
       const tmpResult = account_MFAUtils;
+      sMSBackupDisabledMessage = tmpResult.getSMSBackupDisabledMessage(stateFromStores);
     }
     return null != sMSBackupDisabledMessage;
   },
   useValue: function useAccountSMSBackupSettingToggleValue() {
+    let currentUser;
     const items = [UserStore];
-    const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+    const obj = get_initialized;
+    const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
     let flag;
     if (stateFromStores != null) {
       flag = stateFromStores.hasFlag(UserFlags.MFA_SMS);
@@ -93,17 +106,18 @@ const toggle = SettingBuilders.createToggle({
   },
   useDescription: function useAccountSMSBackupSettingDescription() {
     const items = [UserStore];
-    const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+    const obj = get_initialized;
+    const stateFromStores = obj.useStateFromStores(items, f99510);
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
-      sMSBackupDisabledMessage = account_MFAUtils.getSMSBackupDisabledMessage(stateFromStores);
       const tmpResult = account_MFAUtils;
+      sMSBackupDisabledMessage = tmpResult.getSMSBackupDisabledMessage(stateFromStores);
     }
     return sMSBackupDisabledMessage;
   },
-  usePredicate: fn(14242).useIsTOTPEnabled
-});
-const size = fn(2);
+  usePredicate: SettingsAccountUtils.useIsTOTPEnabled
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountSmsBackupSetting.tsx");
 
 export default toggle;

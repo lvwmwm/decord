@@ -5,26 +5,34 @@
 // Exports: createGuildProductPurchaseSystemMessage
 
 // Module 7468 (GuildProductPurchaseSystemMessage)
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import AvatarUtils from "AvatarUtils" /* 1397 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
 import useMessageAuthor from "useMessageAuthor" /* 5083 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7402 */;
 import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7404 */;
 import createCommonMessageDefault from "createCommonMessage" /* 7406 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 7436 */;
 import MessageRecord from "MessageRecord" /* 4480 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MessageTypes = fn(1074).MessageTypes;
-const size = fn(2);
+const MessageTypes = Constants.MessageTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildProductPurchaseSystemMessage.tsx");
 
 export const createGuildProductPurchaseSystemMessage = function createGuildProductPurchaseSystemMessage(message) {
-  const obj = {};
+  let getGuildProductPurchaseSystemMessageContentMobile;
+  let intl;
+  let obj6;
+  let obj7;
+  let tmp9Result;
+  const obj = { message: new MessageRecord(message.message) };
   const merged = Object.assign(message);
-  obj.message = new MessageRecord(message.message);
   obj.message.type = MessageTypes.ROLE_SUBSCRIPTION_PURCHASE;
   const purchaseNotification = obj.message.purchaseNotification;
   let product_name;
+  new MessageRecord(message.message);
   if (purchaseNotification != null) {
     const guild_product_purchase = purchaseNotification.guild_product_purchase;
     if (guild_product_purchase != null) {
@@ -34,32 +42,33 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
   if (null == product_name) {
     return null;
   } else {
+    let guildId;
     message = obj.message;
     const author = message.author;
+    const roleStyle = message.roleStyle;
     const channel = ChannelStore.getChannel(message.getChannelId());
     if (channel != null) {
-      const guildId = channel.getGuildId();
+      guildId = channel.getGuildId();
     }
-    const guildMemberAvatar = useMessageAuthor.getMessageAuthor(message).guildMemberAvatar;
-    const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
+    const obj2 = useMessageAuthor;
+    const guildMemberAvatar = obj2.getMessageAuthor(message).guildMemberAvatar;
+    const obj3 = useAuthorWithProcessedColor;
+    const messageAuthorWithProcessedColor = obj3.getMessageAuthorWithProcessedColor(message);
     utils_AvatarUtils;
     if (null != guildMemberAvatar) {
+      let guildMemberAvatarSource;
       if (null != guildId) {
         const obj4 = { userId: author.id, avatar: guildMemberAvatar, guildId };
-        let guildMemberAvatarSource = tmp5(1397).getGuildMemberAvatarSource(obj4, author);
-        const tmp5Result = tmp5(1397);
+        const tmp5Result = AvatarUtils;
+        guildMemberAvatarSource = tmp5Result.getGuildMemberAvatarSource(obj4, author);
       }
-      const obj5 = { content: null, totalMonthsSubscribed: 0, username: null, avatarURL: null, welcomeLabel: null };
-      const tmp9Result = tmp9(guildMemberAvatarSource);
-      const obj6 = { username: messageAuthorWithProcessedColor.nick, usernameOnClickHandler: null, productName: null };
-      const obj7 = { message, author: messageAuthorWithProcessedColor, roleStyle: message.roleStyle };
-      obj6.usernameOnClickHandler = formatUsernameOnClickDefault(obj7);
-      obj6.productName = product_name;
-      obj5.content = tmp5(7436).getGuildProductPurchaseSystemMessageContentMobile(obj6);
-      obj5.username = messageAuthorWithProcessedColor.nick;
-      obj5.avatarURL = tmp9Result.uri;
-      const intl = tmp5(1115).intl;
-      obj5.welcomeLabel = intl.string(tmp5(1115).t.s2N5HS);
+      const obj5 = { content: getGuildProductPurchaseSystemMessageContentMobile(obj6), totalMonthsSubscribed: 0, username: messageAuthorWithProcessedColor.nick, avatarURL: tmp9Result.uri, welcomeLabel: intl.string(intl2.t.s2N5HS) };
+      tmp9Result = tmp9(guildMemberAvatarSource);
+      obj6 = { username: messageAuthorWithProcessedColor.nick, usernameOnClickHandler: formatUsernameOnClickDefault(obj7), productName: product_name };
+      getGuildProductPurchaseSystemMessageContentMobile = GuildProductSystemMessageUtils.getGuildProductPurchaseSystemMessageContentMobile;
+      obj7 = { message, author: messageAuthorWithProcessedColor, roleStyle };
+      GuildProductSystemMessageUtils;
+      intl = tmp5(1115).intl;
       const merged1 = Object.assign(createCommonMessageDefault(obj));
       return obj5;
     }

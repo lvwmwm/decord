@@ -5,19 +5,23 @@
 // Exports: WishlistAnalyticsProvider, useWishlistAnalyticsContext
 
 // Module 12684 (WishlistAnalyticsContext)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const context = noop.createContext(null);
-const size = fn(2);
+const jsx = Fragment.jsx;
+const context = react.createContext(null);
 const result = size.fileFinishedImporting("modules/wishlists/WishlistAnalyticsContext.tsx");
 
 export const WishlistAnalyticsContext = context;
 export const useWishlistAnalyticsContext = function useWishlistAnalyticsContext() {
-  return noop.useContext(context);
+  return react.useContext(context);
 };
-export const WishlistAnalyticsProvider = function WishlistAnalyticsProvider(children) {
-  const merged = Object.assign(noop.useContext(context));
-  const merged1 = Object.assign(children.newValue);
-  return <context.Provider value={{}}>{arg0.children}</context.Provider>;
+export const WishlistAnalyticsProvider = function WishlistAnalyticsProvider(newValue) {
+  newValue = newValue.newValue;
+  const children = newValue.children;
+  const obj = {};
+  const merged = Object.assign(react.useContext(context));
+  const merged1 = Object.assign(newValue);
+  return <context.Provider value={obj}>{children}</context.Provider>;
 };

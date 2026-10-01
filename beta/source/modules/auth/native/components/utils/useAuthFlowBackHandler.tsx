@@ -5,20 +5,24 @@
 // Exports: default
 
 // Module 15586 (useAuthFlowBackHandler)
-import noop from "module_19" /* 19 */;
+import RegistrationConstants from "RegistrationConstants" /* 15571 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-let closure_3 = fn(15571).RegistrationTransitionActionTypes;
-const size = fn(2);
+let closure_3 = RegistrationConstants.RegistrationTransitionActionTypes;
 const result = size.fileFinishedImporting("modules/auth/native/components/utils/useAuthFlowBackHandler.tsx");
 
 export default function useAuthFlowBackHandler(step) {
+  let closure_1;
   _require = step;
-  dependencyMap = noop.useContext(require("Auth").TrackRegistrationContext);
-  require("useNavigatorBackPressHandler").useNavigatorBackPressHandler(() => {
-    closure_1({ step, actionType: constants.VIEWED });
+  dependencyMap = react.useContext(require("Auth").TrackRegistrationContext);
+  let obj = require("useNavigatorBackPressHandler");
+  obj.useNavigatorBackPressHandler(() => {
+    const obj = { step, actionType: constants.VIEWED };
+    closure_1(obj);
     return false;
   });
 };

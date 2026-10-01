@@ -4,11 +4,12 @@
 // Dependencies: [17496, 626]
 
 // Module 17495 (capitalize)
-import _mod626 from "module_626" /* 626 */;
-import _mod17496 from "module_17496" /* 17496 */;
+import toString from "toString" /* 626 */;
+import createCaseFirst from "createCaseFirst" /* 17496 */;
 
 
 export default function capitalize(arg0) {
-  const tmp = _mod17496;
-  return tmp(_mod626(arg0).toLowerCase());
+  const tmp = createCaseFirst;
+  const str = toString(arg0);
+  return tmp(str.toLowerCase());
 };

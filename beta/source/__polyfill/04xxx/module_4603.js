@@ -4,22 +4,28 @@
 // Exports: useRiveEnum
 
 // Module 4603
-import c from "c" /* 4586 */;
+import react from "react" /* 4586 */;
 import _mod4599 from "module_4599" /* 4599 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-require = arg1;
 function getEnumProperty(enumProperty, arg1) {
   return enumProperty.enumProperty(arg1);
 }
 
 export const useRiveEnum = function useRiveEnum(FillColor, instance) {
-  const cResult = c.c(4);
-  [tmp3, tmp4, tmp5] = _mod4599.useRiveProperty(instance, FillColor, getEnumProperty);
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(4);
+  const obj2 = _mod4599;
+  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(instance, FillColor, getEnumProperty);
+  _slicedToArray(obj2.useRiveProperty(instance, FillColor, getEnumProperty), 3);
   if (cResult[0] === tmp5) {
     if (cResult[1] === tmp4) {
+      let tmp6;
       if (cResult[2] === tmp3) {
-        let tmp6 = cResult[3];
+        tmp6 = cResult[3];
       }
       return tmp6;
     }

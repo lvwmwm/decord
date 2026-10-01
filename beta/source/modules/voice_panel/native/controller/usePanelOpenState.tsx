@@ -7,113 +7,124 @@
 // Module 16915 (usePanelOpenState)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import VoicePanelStore from "VoicePanelStore" /* 5044 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_0, dependencyMap, pathname;
 
-require = fn;
-const VoicePanelModes = fn(11755).VoicePanelModes;
-const Constants = fn(1074);
-({ ComponentActions: closure_7, Routes: closure_8 } = Constants);
+let metroImportAll;
+let metroImportDefault;
+let _slicedToArray = _slicedToArray_mod;
+const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
+({ ComponentActions: metroImportDefault, Routes: metroImportAll } = Constants);
 const __initData = { code: "function usePanelOpenStateTsx1(){const{connected}=this.__closure;return{connected:connected.get()};}" };
 const __initData2 = { code: "function usePanelOpenStateTsx2(props,previous){const{runOnJS,doCloseChannel}=this.__closure;const isConnected=props.connected;const wasConnected=(previous===null||previous===void 0?void 0:previous.connected)===true;if(wasConnected&&!isConnected){runOnJS(doCloseChannel)();}}" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/controller/usePanelOpenState.tsx");
 
 export default function usePanelOpenState(arg0, arg1, arg2, connected) {
+  let closure_2;
+  let closure_6;
+  let constants2;
+  let first;
   _require = arg0;
-  closure_1 = arg1;
+  let closure_1 = arg1;
   dependencyMap = arg2;
   _slicedToArray = connected;
   function doCloseChannel() {
     const state = VoicePanelStore.getState();
     return state.closeChannel(closure_0);
   }
+  let obj = require("ReanimatedRexport");
   const fn = function f() {
-    return { connected: connected.get() };
+    const obj = { connected: connected.get() };
+    return obj;
   };
   fn.__closure = { connected };
   fn.__workletHash = 8350408810765;
   fn.__initData = __initData;
   class O {
-    constructor(arg0, arg1) {
-      connected = undefined;
-      if (arg1 != null) {
-        connected = arg1.connected;
+    constructor(connected, connected2) {
+      let connected1;
+      connected = connected.connected;
+      if (connected2 != null) {
+        connected1 = connected2.connected;
       }
-      tmp2 = true === connected && !arg0.connected;
+      const tmp2 = true === connected1 && !connected;
       if (tmp2) {
-        tmp3 = closure_0;
-        tmp4 = closure_2;
-        obj = closure_0(closure_2[5]);
-        tmp5 = doCloseChannel;
-        tmp6 = obj.runOnJS(doCloseChannel)();
+        const obj = ReanimatedRexport;
+        obj.runOnJS(doCloseChannel)();
       }
-      return;
     }
   }
-  let obj = require("ReanimatedRexport");
-  O.__closure = { runOnJS: require("ReanimatedRexport").runOnJS, doCloseChannel };
+  let obj2 = { runOnJS: require("ReanimatedRexport").runOnJS, doCloseChannel };
+  O.__closure = obj2;
   O.__workletHash = 9166012598595;
   O.__initData = __initData2;
   const animatedReaction = obj.useAnimatedReaction(fn, O);
   const items = [arg0, arg1, arg2, connected];
   const effect = doCloseChannel.useEffect(() => {
     function componentActionOpen(channelId) {
-      let tmp = componentActionOpen === channelId.channelId;
+      const tmp = componentActionOpen === channelId.channelId && componentActionClose.get() !== constants.PANEL;
       if (tmp) {
-        tmp = componentActionClose.get() !== constants.PANEL;
-      }
-      if (tmp) {
-        dependencyMap(constants.PANEL);
+        closure_1_2(constants.PANEL);
       }
     }
     function componentActionClose() {
       if (connected.get()) {
         if (componentActionClose.get() !== constants.PIP) {
-          dependencyMap(tmp5.PIP);
+          closure_1_2(tmp5.PIP);
         }
       } else {
         const state = first.getState();
         state.closeChannel(componentActionOpen);
       }
     }
-    let ComponentDispatch = closure_0(1110).ComponentDispatch;
+    let ComponentDispatch = closure_0(closure_2[6]).ComponentDispatch;
     const subscription = ComponentDispatch.subscribe(constants.VOICE_PANEL_OPEN, componentActionOpen);
-    let ComponentDispatch2 = closure_0(1110).ComponentDispatch;
+    let ComponentDispatch2 = closure_0(closure_2[6]).ComponentDispatch;
     const subscription1 = ComponentDispatch2.subscribe(constants.VOICE_PANEL_CLOSE, componentActionClose);
     return () => {
       const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-      ComponentDispatch.unsubscribe(constants.VOICE_PANEL_OPEN, componentActionOpen);
+      ComponentDispatch.unsubscribe(metroImportDefault.VOICE_PANEL_OPEN, componentActionOpen);
       const ComponentDispatch2 = ComponentDispatchUtils.ComponentDispatch;
-      ComponentDispatch2.unsubscribe(constants.VOICE_PANEL_CLOSE, componentActionClose);
+      ComponentDispatch2.unsubscribe(metroImportDefault.VOICE_PANEL_CLOSE, componentActionClose);
     };
   }, items);
-  [first, closure_6] = doCloseChannel.useState(() => closure_1(12305).getHistory().location.pathname);
+  [first, closure_6] = doCloseChannel.useState(() => {
+    const obj = closure_1(closure_2[7]);
+    return obj.getHistory().location.pathname;
+  });
   const items1 = [arg0, first];
   const effect1 = doCloseChannel.useEffect(() => {
-    closure_0 = closure_1(12305).addRouteChangeListener((pathname) => {
+    let obj = closure_1(closure_2[7]);
+    closure_0 = obj.addRouteChangeListener((pathname) => {
+      let CHANNEL;
+      let RouteParam2;
+      let guildIdResult;
       if (first !== pathname.pathname) {
         closure_1_6(tmp);
-        const obj2 = { path: null };
-        const RouteParam = closure_0(4673).RouteParam;
-        const obj = closure_0(4660);
-        const RouteParam2 = closure_0(4673).RouteParam;
-        obj2.path = closure_2_8.CHANNEL(RouteParam.guildId(), RouteParam2.channelId());
-        const matchPathResult = obj.matchPath(pathname.pathname, obj2);
-        const guildIdResult = RouteParam.guildId();
-        if (null == obj3.extractParamsFromVoiceModalRoute(pathname).voiceChannelId) {
-          let tmp2 = null != matchPathResult;
-          if (tmp2) {
-            tmp2 = matchPathResult.params.channelId === closure_0;
-          }
+        const obj = { path: CHANNEL(guildIdResult, RouteParam2.channelId()) };
+        const matchPath = closure_0(closure_2[8]).matchPath;
+        pathname = pathname.pathname;
+        CHANNEL = constants2.CHANNEL;
+        closure_0(closure_2[8]);
+        const RouteParam = closure_0(closure_2[9]).RouteParam;
+        guildIdResult = RouteParam.guildId();
+        RouteParam2 = closure_0(closure_2[9]).RouteParam;
+        const matchPathResult = matchPath(pathname, obj);
+        const obj2 = closure_0(closure_2[10]);
+        const tmp9 = closure_2;
+        if (null == obj2.extractParamsFromVoiceModalRoute(pathname).voiceChannelId) {
+          const tmp2 = null != matchPathResult && matchPathResult.params.channelId === closure_0;
           if (!tmp2) {
-            closure_1(8761)();
+            closure_1(tmp9[11])();
           }
         }
-        obj3 = closure_0(12298);
       }
     });
     return () => {

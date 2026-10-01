@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 839 (CHATS_CREATE_METHOD)
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const CHATS_CREATE_METHOD = "chats.create";
 export const CHAT_PATH = "chat";

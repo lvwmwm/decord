@@ -5,7 +5,7 @@
 // Exports: getSpanStatusFromHttpCode, setHttpStatus
 
 // Module 705 (SPAN_STATUS_ERROR)
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const SPAN_STATUS_ERROR = 2;
 export const SPAN_STATUS_OK = 1;
@@ -49,10 +49,11 @@ export const getSpanStatusFromHttpCode = function getSpanStatusFromHttpCode(arg0
   return { code: 2, message: "internal_error" };
 };
 export const setHttpStatus = function setHttpStatus(setAttribute, arg1) {
+  let obj;
   const attr = setAttribute.setAttribute("http.response.status_code", arg1);
   if (arg1 < 400) {
     if (arg1 >= 100) {
-      let obj = { code: 1 };
+      obj = { code: 1 };
     }
     if ("unknown_error" !== obj.message) {
       setAttribute.setStatus(obj);

@@ -13,20 +13,22 @@ import ProfileEffectRecord from "ProfileEffectRecord" /* 6968 */;
 import PremiumConstants from "PremiumConstants" /* 1374 */;
 import size from "module_2" /* 2 */;
 
+let hasOwnProperty;
+let metroRequire;
 function getCollectibleTypeName(type) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl5 = tmp(1115).intl;
     return intl5.string(_modDef2487.obi47v);
-  } else if (tmp(1974).CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl4 = tmp(1115).intl;
     return intl4.string(_modDef2487.RX8BMR);
-  } else if (tmp(1974).CollectiblesItemType.NAMEPLATE === type) {
+  } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
     const intl3 = tmp(1115).intl;
     return intl3.string(_modDef2487.nNGEHk);
-  } else if (tmp(1974).CollectiblesItemType.BUNDLE === type) {
+  } else if (CollectiblesItemType.CollectiblesItemType.BUNDLE === type) {
     const intl2 = tmp(1115).intl;
     return intl2.string(_modDef2487.VS1fKo);
-  } else if (tmp(1974).CollectiblesItemType.PROFILE_FRAME === type) {
+  } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === type) {
     const intl = tmp(1115).intl;
     return intl.string(_modDef2487.JiIY1l);
   } else {
@@ -42,16 +44,17 @@ export const PREVIEW_SIZE = 40;
 export const NAMEPLATE_ASPECT_RATIO = 5.333333333333333;
 export { getCollectibleTypeName };
 export const getAvatarDecorationPreviewUrl = function getAvatarDecorationPreviewUrl(product) {
+  let obj3;
   if (0 === product.items.length) {
     return null;
   } else {
     const first = product.items[0];
     let avatarDecorationURL = null;
     if (isAvatarDecorationRecord(first)) {
-      const obj2 = { avatarDecoration: null, size: 40, canAnimate: true };
-      const obj3 = { asset: first.asset };
-      obj2.avatarDecoration = obj3;
-      avatarDecorationURL = AvatarUtils.getAvatarDecorationURL(obj2);
+      const obj2 = { avatarDecoration: obj3, size: 40, canAnimate: true };
+      obj3 = { asset: first.asset };
+      const obj = AvatarUtils;
+      avatarDecorationURL = obj.getAvatarDecorationURL(obj2);
     }
     return avatarDecorationURL;
   }
@@ -73,21 +76,23 @@ export const isGuildBoostSubscription = function isGuildBoostSubscription(subscr
     return false;
   } else {
     let skuId;
-    if (dependencyMap[subscriptionPlanId] != null) {
+    if (metroRequire[subscriptionPlanId] != null) {
       skuId = tmp2.skuId;
     }
-    return skuId === constants.GUILD;
+    return skuId === hasOwnProperty.GUILD;
   }
 };
 export const getPurchaseDisplayInfo = function getPurchaseDisplayInfo(name, subscriptionPlanId) {
+  let displayName;
+  let typeName;
   const isSubscription = null != subscriptionPlanId;
   if (null != name) {
-    let displayName = name.name;
-    const typeName = getCollectibleTypeName(name.type);
+    displayName = name.name;
+    typeName = getCollectibleTypeName(name.type);
   } else if (isSubscription) {
     if (null != subscriptionPlanId) {
       let name1;
-      if (dependencyMap[subscriptionPlanId] != null) {
+      if (metroRequire[subscriptionPlanId] != null) {
         name1 = tmp4.name;
       }
       displayName = name1;

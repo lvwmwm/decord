@@ -7,41 +7,47 @@
 // Module 12452 (useApplicationWidgetRefresh)
 import refreshApplicationWidget from "refreshApplicationWidget" /* 12453 */;
 import presentApplicationWidgetRefreshOutcomeDefault from "presentApplicationWidgetRefreshOutcome" /* 12454 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let _slicedToArray = _slicedToArray_mod;
 let result = size.fileFinishedImporting("modules/application_widget/hooks/useApplicationWidgetRefresh.tsx");
 
 export default function useApplicationWidgetRefresh(arg0) {
-  closure_0 = arg0;
-  [pending, closure_2] = noop.useState(false);
-  _slicedToArray = noop.useRef(true);
-  const effect = noop.useEffect(() => {
+  let closure_2;
+  let closure_3;
+  let pending;
+  let closure_0 = arg0;
+  [pending, closure_2] = react.useState(false);
+  _slicedToArray = react.useRef(true);
+  const effect = react.useEffect(() => {
     closure_3.current = true;
     return () => {
       closure_1_3.current = false;
     };
   }, []);
   const items = [arg0, pending];
-  return {
+  let obj = {
     pending,
-    refresh: noop.useCallback(() => {
+    refresh: react.useCallback(() => {
+      let ref;
       let tmp = first;
-      if (!first) {
+      if (!tmp) {
         tmp = null == closure_0;
       }
       if (!tmp) {
         closure_2(true);
-        const result = refreshApplicationWidget.refreshApplicationWidget(closure_0);
-        result.then(presentApplicationWidgetRefreshOutcomeDefault).finally(() => {
+        const obj = refreshApplicationWidget;
+        const result = obj.refreshApplicationWidget(closure_0);
+        const nextPromise = result.then(presentApplicationWidgetRefreshOutcomeDefault);
+        nextPromise.finally(() => {
           if (ref.current) {
             closure_1_2(false);
           }
         });
-        const nextPromise = result.then(presentApplicationWidgetRefreshOutcomeDefault);
       }
     }, items)
   };
+  return obj;
 };

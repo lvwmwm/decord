@@ -5,14 +5,19 @@
 // Exports: default
 
 // Module 11413 (openSoundmojiActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 5325 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const asyncRequire = tmp(1981);
 const result = size.fileFinishedImporting("modules/premium/sounds/soundmoji/native/utils/openSoundmojiActionSheet.tsx");
 
 export default function openSoundmojiActionSheet(arg0) {
+  const obj = SoundmojiRenderingExperiment;
+  const tmp2 = dependencyMap;
   if (obj.getSoundmojiRenderingExperiment({ location: "openSoundmojiActionSheet" })) {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11414, dependencyMap.paths), "soundmoji_actionsheet_key", arg0);
+    const obj2 = ActionSheetActionCreatorsDefault;
+    obj2.openLazy(asyncRequire(11414, tmp2.paths), "soundmoji_actionsheet_key", arg0);
   }
 };

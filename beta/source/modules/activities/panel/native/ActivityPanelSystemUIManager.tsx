@@ -5,55 +5,58 @@
 
 // Module 16862 (ActivityPanelSystemUIManager)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8502 */;
 import StatusBarDefault from "StatusBar" /* 8839 */;
 import HomeIndicatorDefault from "HomeIndicator" /* 8841 */;
 import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 16839 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
 class BaseActivityPanelSystemUIManager {
   constructor(arg0) {
-    ({ mode, isWindowLandscape } = global);
-    tmp = mode === ActivityPanelModes.PANEL;
-    tmp2 = closure_2;
-    obj = closure_0(closure_2[4]);
-    tmp3 = obj.isIOS() && tmp;
-    tmp7Result = null;
-    tmp4 = jsxs;
-    tmp5 = Fragment;
-    if (mode !== ActivityPanelModes.PIP) {
-      tmp8 = closure_1;
-      tmp7 = jsx;
-      tmp10 = !isWindowLandscape;
-      tmp9 = closure_1(tmp2[5]);
+    let isWindowLandscape;
+    let mode;
+    ({ mode, isWindowLandscape } = arg0);
+    let tmp = mode === ActivityPanelModes.PANEL;
+    const PIP = ActivityPanelModes.PIP;
+    const obj = PlatformUtils;
+    const tmp3 = obj.isIOS() && tmp;
+    let tmp7Result = null;
+    const tmp4 = metroImportDefault;
+    const tmp5 = metroRequire;
+    if (mode !== PIP) {
+      let tmp10 = !isWindowLandscape;
+      const tmp7 = hasOwnProperty;
+      const tmp9 = StatusBarDefault;
       if (isWindowLandscape) {
         tmp10 = !tmp;
       }
-      obj1 = { hidden: null, barStyle: "light-content" };
-      obj1.hidden = !tmp10;
-      tmp7Result = tmp7(tmp9, obj1);
+      const obj2 = { hidden: !tmp10, barStyle: "light-content" };
+      tmp7Result = tmp7(tmp9, obj2);
     }
-    items = [, ];
-    items[0] = tmp7Result;
-    tmp11 = jsx;
-    tmp12 = closure_1(tmp2[6]);
+    const items = [tmp7Result, ];
+    const tmp11 = hasOwnProperty;
+    const tmp12 = HomeIndicatorDefault;
     if (tmp) {
       tmp = !tmp3;
     }
-    obj4 = { children: null };
+    const obj3 = { children: items };
     items[1] = tmp11(tmp12, { prefersHidden: tmp, prefersDeferringSystemGestures: tmp3 });
-    obj4.children = items;
-    return tmp4(tmp5, obj4);
+    return tmp4(tmp5, obj3);
   }
 }
-const ActivityPanelModes = fn(8502).ActivityPanelModes;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const size = fn(2);
+const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
+const memoResult = react.memo(() => {
+  const context = react.useContext(ActivityPanelStateContextDefault);
+  const obj = { mode: context.mode, isWindowLandscape: context.wrapperDimensions.isWindowLandscape };
+  return hasOwnProperty(BaseActivityPanelSystemUIManager, obj);
+});
 const result = size.fileFinishedImporting("modules/activities/panel/native/ActivityPanelSystemUIManager.tsx");
 
-export default noop.memo(() => {
-  const context = noop.useContext(ActivityPanelStateContextDefault);
-  return hasOwnProperty(BaseActivityPanelSystemUIManager, { mode: context.mode, isWindowLandscape: context.wrapperDimensions.isWindowLandscape });
-});
+export default memoResult;
 export { BaseActivityPanelSystemUIManager };

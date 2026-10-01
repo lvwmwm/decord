@@ -5,21 +5,23 @@
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
 // Module 6676 (GuildProductsEligibility)
+import Constants from "Constants" /* 1074 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
+const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/guild_products/GuildProductsEligibility.tsx");
 
 export const useGuildEligibleForGuildProducts = function useGuildEligibleForGuildProducts(id) {
   _require = id;
   const items = [GuildStore];
   const items1 = [id];
-  return require("initialize").useStateFromStores(items, () => {
-    if (null == closure_0) {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    if (null == id) {
       return false;
     } else {
       const guild = GuildStore.getGuild(tmp);
@@ -27,12 +29,12 @@ export const useGuildEligibleForGuildProducts = function useGuildEligibleForGuil
       if (tmp4) {
         const features = guild.features;
         let hasItem = features.has(GuildFeatures.COMMUNITY);
+        const tmp5 = GuildFeatures;
         if (!hasItem) {
           const features2 = guild.features;
           hasItem = features2.has(tmp5.GUILD_PRODUCTS);
         }
         tmp4 = hasItem;
-        tmp5 = GuildFeatures;
       }
       return tmp4;
     }
@@ -47,12 +49,12 @@ export const isGuildEligibleForGuildProducts = function isGuildEligibleForGuildP
     if (tmp3) {
       const features = guild.features;
       let hasItem = features.has(GuildFeatures.COMMUNITY);
+      const tmp4 = GuildFeatures;
       if (!hasItem) {
         const features2 = guild.features;
         hasItem = features2.has(tmp4.GUILD_PRODUCTS);
       }
       tmp3 = hasItem;
-      tmp4 = GuildFeatures;
     }
     return tmp3;
   }

@@ -11,7 +11,7 @@ import DevToolsScreens from "DevToolsScreens" /* 15134 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
-const pressable = SettingBuilders.createPressable({
+const obj = {
   useTitle() {
     return "Show Dev Tools";
   },
@@ -20,11 +20,14 @@ const pressable = SettingBuilders.createPressable({
   onPress: DevToolsNavigator.navigateToDevTools,
   usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
   useSearchTerms: function getAdditionalSearchTerms() {
-    const items = [...Object.values(DevToolsScreens.DevToolsScreens), ...Object.values(DevToolsScreens.PerformanceTestingScreens)];
+    let values2;
+    const items = [...values(DevToolsScreens.DevToolsScreens), ...values2(DevToolsScreens.PerformanceTestingScreens)];
+    values2 = Object.values;
     return items.map((headerTitle) => headerTitle.headerTitle);
   },
   withArrow: true
-});
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ShowDevToolsSetting.tsx");
 
 export default pressable;

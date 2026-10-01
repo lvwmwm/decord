@@ -5,13 +5,16 @@
 // Exports: default
 
 // Module 12722 (useOpenNitroSubscribeActionSheet)
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6842 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
-const Constants = fn(1074);
+let c3;
+let closure_4;
 ({ AnalyticsPages: c3, AnalyticsSections: closure_4 } = Constants);
-const PremiumTypes = fn(1374).PremiumTypes;
-const size = fn(2);
+const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/collectibles/native/useOpenNitroSubscribeActionSheet.tsx");
 
 export default function useOpenNitroSubscribeActionSheet() {
@@ -22,8 +25,10 @@ export default function useOpenNitroSubscribeActionSheet() {
   let analyticsLocations;
   analyticsLocations = COLLECTIBLES_SHOP(analyticsLocations[3])().analyticsLocations;
   const items = [analyticsLocations, COLLECTIBLES_SHOP];
-  return noop.useCallback(() => {
-    const obj = { analyticsLocation: { page: constants.COLLECTIBLES_SHOP, section: COLLECTIBLES_SHOP }, analyticsLocations, premiumType: PremiumTypes.TIER_2 };
+  return react.useCallback(() => {
+    let obj2;
+    const obj = { analyticsLocation: obj2, analyticsLocations, premiumType: PremiumTypes.TIER_2 };
+    obj2 = { page: constants.COLLECTIBLES_SHOP, section: COLLECTIBLES_SHOP };
     openPremiumPlanSelectionActionSheetDefault(obj);
   }, items);
 };

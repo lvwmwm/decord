@@ -5,26 +5,30 @@
 // Exports: default
 
 // Module 12097 (getApplicationFromBotUserId)
+import Constants from "Constants" /* 1074 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const EMPTY_STRING_SNOWFLAKE_ID = fn(1074).EMPTY_STRING_SNOWFLAKE_ID;
-const size = fn(2);
+const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 const result = size.fileFinishedImporting("modules/applications/getApplicationFromBotUserId.tsx");
 
 export default function useGetApplicationFromBotUserId(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [UserProfileStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let tmp = closure_0;
     let tmp2;
     if (null !== closure_0) {
+      const getUserProfile = UserProfileStore.getUserProfile;
       if (tmp == null) {
         tmp = EMPTY_STRING_SNOWFLAKE_ID;
       }
-      const userProfile = UserProfileStore.getUserProfile(tmp);
+      const userProfile = getUserProfile(tmp);
       let application;
       if (userProfile != null) {
         application = userProfile.application;

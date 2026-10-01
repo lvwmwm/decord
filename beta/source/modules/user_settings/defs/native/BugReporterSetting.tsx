@@ -5,34 +5,38 @@
 // Exports: useBugReporterExperimentSettingPredicate
 
 // Module 15340 (BugReporterSetting)
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import intl2 from "intl" /* 1115 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import BugReporterExperimentDefault from "BugReporterExperiment" /* 9676 */;
+import BugIcon from "BugIcon" /* 15341 */;
 import BugReportStore from "BugReportStore" /* 9644 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function useBugReporterExperimentSettingPredicate() {
-  return BugReporterExperimentDefault.useConfig({ location: "native-settings" }).hasBugReporterAccess;
+  const obj = BugReporterExperimentDefault;
+  return obj.useConfig({ location: "native-settings" }).hasBugReporterAccess;
 }
-const SettingBuilders = fn(11006);
-const pressable = SettingBuilders.createPressable({
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["/tZh0A"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["/tZh0A"]);
   },
   parent: null,
-  IconComponent: fn(15341).BugIcon,
+  IconComponent: BugIcon.BugIcon,
   onPress: function handleBugReporterSettingPress() {
+    const obj = BugReportStore;
     if (!BugReportStore.getField("isReportOpen")) {
-      BugReportStore.setState({ isReportOpen: true });
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(9645, dependencyMap.paths));
+      obj.setState({ isReportOpen: true });
+      const obj2 = ModalActionCreatorsDefault;
+      obj2.pushLazy(asyncRequire(9645, dependencyMap.paths));
     }
   },
   withArrow: true,
   usePredicate: useBugReporterExperimentSettingPredicate
-});
-const size = fn(2);
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/BugReporterSetting.tsx");
 
 export default pressable;

@@ -5,5 +5,6 @@
 // Module 5143
 import _mod1290 from "module_1290" /* 1290 */;
 
+_mod1290.setPrototypeOf || null;
 
 export default _mod1290.setPrototypeOf || null;

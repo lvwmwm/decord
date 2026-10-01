@@ -5,13 +5,13 @@
 // Exports: useIsPortalKeyboardInModal
 
 // Module 9783 (PortalKeyboardModalContext)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const context = noop.createContext(false);
-const size = fn(2);
+const context = react.createContext(false);
 const result = size.fileFinishedImporting("modules/keyboard/native/PortalKeyboardModalContext.tsx");
 
 export const PortalKeyboardInModalContext = context;
 export const useIsPortalKeyboardInModal = function useIsPortalKeyboardInModal() {
-  return noop.useContext(context);
+  return react.useContext(context);
 };

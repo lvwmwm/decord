@@ -5,222 +5,230 @@
 // Exports: createExecutedCommand
 
 // Module 12761 (ExecutedCommand)
-import _mod17 from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
 import Server from "Server" /* 1979 */;
 import useMessageAuthor from "useMessageAuthor" /* 5083 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7403 */;
 import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 7405 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8590 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8789 */;
 import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 11114 */;
 import UserRecord from "UserRecord" /* 1386 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1372 */;
 import size from "module_2" /* 2 */;
 
-const processColor = _mod17.processColor;
+const processColor = react_native.processColor;
 const MessageTypes = Constants.MessageTypes;
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/interaction/ExecutedCommand.tsx");
 
 export const createExecutedCommand = function createExecutedCommand(message, channel, roleStyle, forcedTheme, defaultUsernameColor) {
-  let tmp = null != message.activityInstance;
-  if (tmp) {
-    tmp = undefined !== message.activityInstance;
-  }
+  let obj11;
+  let obj14;
+  let obj16;
+  let obj19;
+  let obj9;
+  let tmp17Result17;
+  let tmp17Result20;
+  let tmp52Result;
+  let tmp52Result2;
+  let tmp55;
+  const tmp = null != message.activityInstance && undefined !== message.activityInstance;
   if (null != message.interaction) {
+    let uri;
+    let displayNameFontIdForMobileUser1;
+    let formatToPartsResult;
     const interaction = message.interaction;
     let user1;
     if (interaction != null) {
       user1 = interaction.user;
     }
     let id1;
+    const getUser = UserStore.getUser;
     if (user1 != null) {
       id1 = user1.id;
     }
-    const user2 = UserStore.getUser(id1);
-    if (null == user2) {
-      const result = ApplicationInteractionInfoUtils.isPrimaryEntryPointCommandMessage(message);
-      const tmp14 = message.type === MessageTypes.CHAT_INPUT_COMMAND || message.type === tmp13.INTERACTION_PREMIUM_UPSELL;
-      const userAuthor = useMessageAuthor.getUserAuthor(message.interaction.user, channel);
-      const colorString = userAuthor.colorString;
-      const displayName = message.interaction.displayName;
-      const internal = nativeDefault.internal;
-      const semanticColor = internal.resolveSemanticColor(forcedTheme, nativeDefault.colors.MENTION_BACKGROUND);
-      const initialInteractionMetadata = ApplicationCommandUtils.getInitialInteractionMetadata(message);
-      let type;
-      if (initialInteractionMetadata != null) {
-        type = initialInteractionMetadata.type;
-      }
-      let tmp24 = null;
-      if (type === Server.InteractionTypes.APPLICATION_COMMAND) {
-        tmp24 = null;
-        if (null != initialInteractionMetadata.target_user) {
-          tmp24 = new UserRecord(initialInteractionMetadata.target_user);
-        }
-      }
-      const userAuthor1 = useMessageAuthor.getUserAuthor(tmp24, channel);
-      const colorString2 = userAuthor1.colorString;
-      let tmp33 = defaultUsernameColor;
-      if ("username" === roleStyle) {
-        let tmp34Result = processColor(colorString2);
-        if (tmp34Result == null) {
-          tmp34Result = defaultUsernameColor;
-        }
-        tmp33 = tmp34Result;
-      }
-      let tmp37 = defaultUsernameColor;
-      if ("username" === roleStyle) {
-        let tmp38Result = processColor(colorString);
-        if (tmp38Result == null) {
-          tmp38Result = defaultUsernameColor;
-        }
-        tmp37 = tmp38Result;
-      }
+    const user2 = getUser(id1);
+    if (null != user2) {
       let guildId;
-      if (channel != null) {
-        guildId = channel.getGuildId();
-      }
-      const id = message.interaction.user.id;
-      const tmp16Result = useMessageAuthor;
-      const result1 = enhanced_role_colors_EnhancedRoleColorUtils.isNativeMessageEligibleForEnhancedRoleColors(guildId, id);
-      const tmp16Result11 = enhanced_role_colors_EnhancedRoleColorUtils;
-      let id2;
-      if (tmp24 != null) {
-        id2 = tmp24.id;
-      }
-      let processColorStringsResult = null;
-      const result2 = enhanced_role_colors_EnhancedRoleColorUtils.isNativeMessageEligibleForEnhancedRoleColors(guildId, id2);
-      if (result1) {
-        processColorStringsResult = tmp16(7403).processColorStrings(userAuthor.colorStrings);
-        const tmp16Result13 = tmp16(7403);
-      }
-      let processColorStringsResult1 = null;
-      if (result2) {
-        processColorStringsResult1 = tmp16(7403).processColorStrings(userAuthor1.colorStrings);
-        const tmp16Result14 = tmp16(7403);
-      }
-      let user = obj.getUser(id);
-      if (user == null) {
-        user = message.interaction.user;
-      }
-      const tmp16Result12 = enhanced_role_colors_EnhancedRoleColorUtils;
-      const displayNameFontIdForMobileUser = createDisplayNameStylesMobile.getDisplayNameFontIdForMobileUser(user, guildId);
-      if (null != tmp24) {
-        let user3 = obj.getUser(tmp24.id);
-        if (user3 == null) {
-          user3 = tmp24;
-        }
-        const displayNameFontIdForMobileUser1 = tmp16(7405).getDisplayNameFontIdForMobileUser(user3, guildId);
-        const tmp16Result16 = tmp16(7405);
-      }
-      const obj2 = { username: null, usernameOnClick: null };
-      const tmp16Result15 = createDisplayNameStylesMobile;
-      obj2.username = useMessageAuthor.getUserAuthor(message.interaction.user, channel).nick;
-      const obj3 = { name: "usernameOnClick", action: "bindUserMenu", userId: id, messageChannelId: message.channel_id, linkColor: tmp37, roleColor: null, roleColors: null, shouldShowRoleDot: null, fontId: null };
-      let tmp51Result = tmp51(colorString);
-      if (tmp51Result == null) {
-        tmp51Result = null;
-      }
-      obj3.roleColor = tmp51Result;
-      obj3.roleColors = processColorStringsResult;
-      let tmp54 = "dot" === roleStyle;
-      let tmp55 = tmp54;
-      if (tmp54) {
-        tmp55 = null != colorString;
-      }
-      obj3.shouldShowRoleDot = tmp55;
-      obj3.fontId = displayNameFontIdForMobileUser;
-      obj2.usernameOnClick = obj3;
-      if (tmp) {
-        if (!result) {
-          const result3 = tmp16(8789).isActivitiesInTextEnabled(channel);
-          const intl = tmp16(1115).intl;
-          const formatToParts = intl.formatToParts;
-          const t = tmp16(1115).t;
-          if (result3) {
-            const obj9 = {};
-            const merged = Object.assign(obj2);
-            const obj10 = { action: "bindTapActivityText", applicationUserId: message.author.id, messageChannelId: message.channel_id };
-            obj9.activityTextOnClick = obj10;
-            let formatToPartsResult = formatToParts(t["R/mrBi"], obj9);
-          } else {
-            const obj11 = {};
-            const merged1 = Object.assign(obj2);
-            formatToPartsResult = formatToParts(t.k964Wm, obj11);
-          }
-          const tmp16Result18 = tmp16(8789);
-        }
-        const obj12 = { userId: message.interaction.user.id, username: obj2.username, usernameColor: tmp37, avatarURL: undefined, targetUsernameColor: tmp33, content: formatToPartsResult, commandNameBackgroundStyles: null, showAppsIcon: true };
-        const obj13 = { color: tmp51(semanticColor), borderRadius: 4, spaceAround: true };
-        obj12.commandNameBackgroundStyles = obj13;
-        return obj12;
-      }
-      let result4 = displayName;
-      if (result) {
-        result4 = tmp16(8590).formatPrimaryEntryPointCommandName(displayName);
-        const tmp16Result19 = tmp16(8590);
-      }
-      const intl2 = tmp16(1115).intl;
-      const obj14 = {};
-      const merged2 = Object.assign(obj2);
-      obj14.commandName = result4;
-      if (null == channel) {
-        let obj15 = {};
-      } else {
-        const obj16 = { name: "commandNameOnClick", action: "bindTapCommandName", userId: message.interaction.user.id, messageId: message.id, applicationUserId: message.author.id, messageType: null, messageChannelId: null };
-        ({ type: obj26.messageType, channel_id: obj26.messageChannelId } = message);
-        obj15 = obj16;
-      }
-      obj14.commandNameOnClick = obj15;
-      formatToPartsResult = intl2.formatToParts(tmp16(1115).t.SSrolr, obj14);
-      if (null != tmp24) {
-        const intl3 = tmp16(1115).intl;
-        const obj17 = {};
-        const merged3 = Object.assign(obj2);
-        obj17.commandName = result4;
-        obj17.commandNameOnClick = {};
-        obj17.targetUsername = tmp16(5083).getUserAuthor(tmp24, channel).nick;
-        let id3;
-        if (tmp24 != null) {
-          id3 = tmp24.id;
-        }
-        const obj18 = { name: "targetUsernameOnClick", action: "bindUserMenu", userId: id3, messageChannelId: message.channel_id, linkColor: tmp33, roleColor: null, roleColors: null, shouldShowRoleDot: null, fontId: null };
-        let tmp51Result2 = tmp51(colorString2);
-        if (tmp51Result2 == null) {
-          tmp51Result2 = null;
-        }
-        obj18.roleColor = tmp51Result2;
-        obj18.roleColors = processColorStringsResult1;
-        if (tmp54) {
-          tmp54 = null != colorString2;
-        }
-        obj18.shouldShowRoleDot = tmp54;
-        obj18.fontId = displayNameFontIdForMobileUser1;
-        obj17.targetUsernameOnClick = obj18;
-        formatToPartsResult = intl3.formatToParts(tmp16(1115).t.mqKdCM, obj17);
-        const tmp16Result20 = tmp16(5083);
-      }
-      const tmp16Result17 = useMessageAuthor;
-    } else {
       if (channel == null) {
         channel = ChannelStore.getChannel(message.getChannelId());
       }
-      let obj19 = dependencyMap;
-      const guildMemberAvatar = useMessageAuthor.getUserAuthor(user2, channel).guildMemberAvatar;
-      let guildId1;
+      const obj3 = useMessageAuthor;
+      const guildMemberAvatar = obj3.getUserAuthor(user2, channel).guildMemberAvatar;
+      const tmp7 = require;
       if (channel != null) {
-        guildId1 = channel.getGuildId();
+        guildId = channel.getGuildId();
       }
-      utils_AvatarUtils;
-      if (null == guildMemberAvatar) {
-        let avatarSource = user2.getAvatarSource(undefined);
-        const uri = tmp10(avatarSource).uri;
+      tmp7(1400);
+      if (null != guildMemberAvatar) {
+        let guildMemberAvatarSource;
+        if (null != guildId) {
+          const obj2 = { userId: user2.id, avatar: guildMemberAvatar, guildId };
+          const obj4 = AvatarUtilsDefault;
+          guildMemberAvatarSource = obj4.getGuildMemberAvatarSource(obj2, user2);
+        }
+        uri = tmp11(guildMemberAvatarSource).uri;
       }
-      obj19 = { userId: user2.id, avatar: guildMemberAvatar, guildId: guildId1 };
-      avatarSource = AvatarUtilsDefault.getGuildMemberAvatarSource(obj19, user2);
+      guildMemberAvatarSource = user2.getAvatarSource(undefined);
+    }
+    const obj6 = ApplicationInteractionInfoUtils;
+    const result = obj6.isPrimaryEntryPointCommandMessage(message);
+    const obj7 = useMessageAuthor;
+    const userAuthor = obj7.getUserAuthor(message.interaction.user, channel);
+    const colorString = userAuthor.colorString;
+    const displayName = message.interaction.displayName;
+    const colorStrings = userAuthor.colorStrings;
+    const internal = nativeDefault.internal;
+    const semanticColor = internal.resolveSemanticColor(forcedTheme, nativeDefault.colors.MENTION_BACKGROUND);
+    const obj8 = ApplicationCommandUtils;
+    const initialInteractionMetadata = obj8.getInitialInteractionMetadata(message);
+    let type;
+    if (initialInteractionMetadata != null) {
+      type = initialInteractionMetadata.type;
+    }
+    let tmp25 = null;
+    if (type === Server.InteractionTypes.APPLICATION_COMMAND) {
+      tmp25 = null;
+      if (null != initialInteractionMetadata.target_user) {
+        const self = this;
+        const self2 = this;
+        tmp25 = new UserRecord(initialInteractionMetadata.target_user);
+      }
+    }
+    const tmp17Result = useMessageAuthor;
+    const userAuthor1 = tmp17Result.getUserAuthor(tmp25, channel);
+    const colorString2 = userAuthor1.colorString;
+    let tmp32 = defaultUsernameColor;
+    const colorStrings2 = userAuthor1.colorStrings;
+    if ("username" === roleStyle) {
+      let tmp33Result = processColor(colorString2);
+      if (tmp33Result == null) {
+        tmp33Result = defaultUsernameColor;
+      }
+      tmp32 = tmp33Result;
+    }
+    let tmp36 = defaultUsernameColor;
+    if ("username" === roleStyle) {
+      let tmp37Result = processColor(colorString);
+      if (tmp37Result == null) {
+        tmp37Result = defaultUsernameColor;
+      }
+      tmp36 = tmp37Result;
+    }
+    let guildId1;
+    if (channel != null) {
+      guildId1 = channel.getGuildId();
+    }
+    const id = message.interaction.user.id;
+    const tmp17Result11 = enhanced_role_colors_EnhancedRoleColorUtils;
+    const result1 = tmp17Result11.isNativeMessageEligibleForEnhancedRoleColors(guildId1, id);
+    let id2;
+    const isNativeMessageEligibleForEnhancedRoleColors = enhanced_role_colors_EnhancedRoleColorUtils.isNativeMessageEligibleForEnhancedRoleColors;
+    enhanced_role_colors_EnhancedRoleColorUtils;
+    if (tmp25 != null) {
+      id2 = tmp25.id;
+    }
+    let processColorStringsResult = null;
+    const result2 = isNativeMessageEligibleForEnhancedRoleColors(guildId1, id2);
+    if (result1) {
+      const tmp17Result13 = enhanced_role_colors_EnhancedRoleColorUtils;
+      processColorStringsResult = tmp17Result13.processColorStrings(colorStrings);
+    }
+    let processColorStringsResult1 = null;
+    if (result2) {
+      const tmp17Result14 = enhanced_role_colors_EnhancedRoleColorUtils;
+      processColorStringsResult1 = tmp17Result14.processColorStrings(colorStrings2);
+    }
+    let user = obj.getUser(id);
+    if (user == null) {
+      user = message.interaction.user;
+    }
+    const tmp17Result15 = createDisplayNameStylesMobile;
+    const displayNameFontIdForMobileUser = tmp17Result15.getDisplayNameFontIdForMobileUser(user, guildId1);
+    if (null != tmp25) {
+      const getDisplayNameFontIdForMobileUser = createDisplayNameStylesMobile.getDisplayNameFontIdForMobileUser;
+      createDisplayNameStylesMobile;
+      let user3 = obj.getUser(tmp25.id);
+      if (user3 == null) {
+        user3 = tmp25;
+      }
+      displayNameFontIdForMobileUser1 = getDisplayNameFontIdForMobileUser(user3, guildId1);
+    }
+    const obj5 = { username: tmp17Result17.getUserAuthor(message.interaction.user, channel).nick, usernameOnClick: obj9 };
+    obj9 = { name: "usernameOnClick", action: "bindUserMenu", userId: id, messageChannelId: message.channel_id, linkColor: tmp36, roleColor: tmp52Result, roleColors: processColorStringsResult, shouldShowRoleDot: tmp55 && null != colorString, fontId: displayNameFontIdForMobileUser };
+    tmp17Result17 = useMessageAuthor;
+    tmp52Result = tmp52(colorString);
+    if (tmp52Result == null) {
+      tmp52Result = null;
+    }
+    tmp55 = "dot" === roleStyle;
+    if (tmp) {
+      if (!result) {
+        const tmp17Result18 = ActivitiesInTextUtils;
+        const result3 = tmp17Result18.isActivitiesInTextEnabled(channel);
+        const intl = tmp17(1115).intl;
+        const formatToParts = intl.formatToParts;
+        const t = tmp17(1115).t;
+        if (result3) {
+          const prop = t["R/mrBi"];
+          const obj10 = { activityTextOnClick: obj11 };
+          const merged = Object.assign(obj5);
+          obj11 = { action: "bindTapActivityText", applicationUserId: message.author.id, messageChannelId: message.channel_id };
+          formatToPartsResult = formatToParts(prop, obj10);
+        } else {
+          const k964Wm = t.k964Wm;
+          const obj12 = {};
+          const merged1 = Object.assign(obj5);
+          formatToPartsResult = formatToParts(k964Wm, obj12);
+        }
+      }
+      const obj13 = { userId: message.interaction.user.id, username: obj5.username, usernameColor: tmp36, avatarURL: uri, targetUsernameColor: tmp32, content: formatToPartsResult, commandNameBackgroundStyles: obj14, showAppsIcon: true };
+      obj14 = { color: processColor(semanticColor), borderRadius: 4, spaceAround: true };
+      return obj13;
+    }
+    let result4 = displayName;
+    if (result) {
+      const tmp17Result19 = AppLauncherUtils;
+      result4 = tmp17Result19.formatPrimaryEntryPointCommandName(displayName);
+    }
+    const intl2 = tmp17(1115).intl;
+    const formatToParts2 = intl2.formatToParts;
+    const obj15 = { commandName: result4, commandNameOnClick: obj16 };
+    const SSrolr = tmp17(1115).t.SSrolr;
+    const merged2 = Object.assign(obj5);
+    if (null == channel) {
+      obj16 = {};
+    } else {
+      const obj17 = { name: "commandNameOnClick", action: "bindTapCommandName", userId: message.interaction.user.id, messageId: message.id, applicationUserId: message.author.id, messageType: null, messageChannelId: null };
+      ({ type: obj24.messageType, channel_id: obj24.messageChannelId } = message);
+      obj16 = obj17;
+    }
+    formatToPartsResult = formatToParts2(SSrolr, obj15);
+    if (null != tmp25) {
+      const intl3 = tmp17(1115).intl;
+      const formatToParts3 = intl3.formatToParts;
+      const obj18 = { commandName: result4, commandNameOnClick: {}, targetUsername: tmp17Result20.getUserAuthor(tmp25, channel).nick, targetUsernameOnClick: obj19 };
+      const mqKdCM = tmp17(1115).t.mqKdCM;
+      const merged3 = Object.assign(obj5);
+      let id3;
+      tmp17Result20 = useMessageAuthor;
+      if (tmp25 != null) {
+        id3 = tmp25.id;
+      }
+      obj19 = { name: "targetUsernameOnClick", action: "bindUserMenu", userId: id3, messageChannelId: message.channel_id, linkColor: tmp32, roleColor: tmp52Result2, roleColors: processColorStringsResult1, shouldShowRoleDot: tmp55, fontId: displayNameFontIdForMobileUser1 };
+      tmp52Result2 = tmp52(colorString2);
+      if (tmp52Result2 == null) {
+        tmp52Result2 = null;
+      }
+      if (tmp55) {
+        tmp55 = null != colorString2;
+      }
+      formatToPartsResult = formatToParts3(mqKdCM, obj18);
     }
   }
 };

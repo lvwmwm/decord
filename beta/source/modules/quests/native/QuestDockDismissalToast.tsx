@@ -5,41 +5,48 @@
 // Exports: displayQuestDismissalToast
 
 // Module 14635 (QuestDockDismissalToast)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import _modDef11769 from "module_11769" /* 11769 */;
-import _modDef12285 from "module_12285" /* 12285 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11769 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12285 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const require = fn;
+const require = globalThis.__r;
+let _require;
+
+let c3;
+let closure_4;
 function QuestDockDismissalNotification() {
+  let closure_0;
   _require = closure_6();
-  let obj = { color: "mobile-text-heading-primary", variant: "text-sm/semibold", children: null };
-  const intl = require("util").intl;
-  obj.children = intl.format(require("util").t.dYE1px, {
+  const Text = require("Text/Text").Text;
+  const intl = require("intl").intl;
+  const obj2 = {
     arrowHook() {
-      const obj = { style: closure_0.toastArrowForwardIconContainer, children: <React3 resizeMode="contain" source={_modDef11769} style={closure_0.toastArrowForwardIcon} /> };
-      return <React4 style={closure_0.toastArrowForwardIconContainer}><React3 resizeMode="contain" source={_modDef11769} style={closure_0.toastArrowForwardIcon} /></React4>;
+      ({ resizeMode: "contain", source: AssetRegistryDefault, style: closure_0.toastArrowForwardIcon });
+      return <React3 style={closure_0.toastArrowForwardIconContainer}>{null}</React3>;
     }
-  });
-  return jsx(require("Text/Text").Text, { color: "mobile-text-heading-primary", variant: "text-sm/semibold", children: null });
+  };
+  return <Text color="mobile-text-heading-primary" variant="text-sm/semibold">{intl.format(require("intl").t.dYE1px, obj2)}</Text>;
 }
-get_ActivityIndicator = fn(17);
-({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+({ Image: c3, View: closure_4 } = react_native);
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles(() => {
-  const obj = { toastArrowForwardIconContainer: { height: 6, width: 16 }, toastArrowForwardIcon: null };
-  const size = { opacity: 0.35, position: "absolute", top: "50%", left: 0, height: 16, width: 16, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, transform: null };
-  const items = [{ translateY: -10 }];
-  size.transform = items;
-  obj.toastArrowForwardIcon = size;
+  let items;
+  const obj = { toastArrowForwardIconContainer: { height: 6, width: 16 }, toastArrowForwardIcon: size };
+  size = { opacity: 0.35, position: "absolute", top: "50%", left: 0, height: 16, width: 16, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, transform: items };
+  items = [{ translateY: -10 }];
   return obj;
 });
-let size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/quests/native/QuestDockDismissalToast.tsx");
 
 export const displayQuestDismissalToast = function displayQuestDismissalToast() {
   const obj = ToastActionCreatorsDefault;
-  obj.open({ key: "QUEST_BAR_DISMISS_TOAST", content: QuestDockDismissalNotification, icon: _modDef12285, position: "bottom" });
+  const obj2 = { key: "QUEST_BAR_DISMISS_TOAST", content: QuestDockDismissalNotification, icon: AssetRegistryDefault2, position: "bottom" };
+  obj.open(obj2);
 };

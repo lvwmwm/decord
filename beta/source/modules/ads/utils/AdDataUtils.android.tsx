@@ -5,39 +5,50 @@
 // Exports: getAdUser, useAdUser
 
 // Module 7147 (AdDataUtils)
+import AdDataUtilsConstants from "AdDataUtilsConstants" /* 7149 */;
 import AdUserActionCreators from "AdUserActionCreators" /* 7150 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import AdUserStore from "AdUserStore" /* 7148 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const DEFAULT_TIMEOUT_MS = fn(7149).DEFAULT_TIMEOUT_MS;
-const size = fn(2);
+const DEFAULT_TIMEOUT_MS = AdDataUtilsConstants.DEFAULT_TIMEOUT_MS;
 const result = size.fileFinishedImporting("modules/ads/utils/AdDataUtils.android.tsx");
 
 export const getAdUser = function getAdUser(questContentName) {
   const adUser = AdUserStore.adUser;
   if (null == adUser) {
+    let resolved;
     if (!AdUserStore.hasFetchFailed) {
       if (!AdUserStore.isFetching) {
-        const adUser1 = AdUserActionCreators.fetchAdUser(questContentName);
+        let tmp = questContentName;
+        const tmp2 = require;
+        let tmp3 = dependencyMap;
+        const obj = AdUserActionCreators;
+        const adUser1 = obj.fetchAdUser(questContentName);
       }
-      let resolved = new Promise((arg0) => {
-        closure_0 = arg0;
+      const self = this;
+      const self2 = this;
+      resolved = new Promise((arg0) => {
+        let closure_2;
+        let closure_0 = arg0;
         function handleUpdate() {
+          const tmp = null != AdUserStore.adUser || AdUserStore.hasFetchFailed;
           if (tmp) {
-            if (!c1) {
+            const tmp3 = c1;
+            if (!tmp3) {
               c1 = true;
               const _clearTimeout = clearTimeout;
               clearTimeout(closure_2);
-              obj.removeChangeListener(handleUpdate);
+              AdUserStore.removeChangeListener(handleUpdate);
               closure_0(tmp2);
             }
           }
         }
-        c1 = false;
+        let c1 = false;
         const timeout = setTimeout(() => {
-          if (!c1) {
+          const tmp = c1;
+          if (!tmp) {
             c1 = true;
             const _clearTimeout = clearTimeout;
             clearTimeout(closure_2);
@@ -53,28 +64,33 @@ export const getAdUser = function getAdUser(questContentName) {
   resolved = Promise.resolve(adUser);
 };
 export const useAdUser = function useAdUser(profile_badge) {
-  const tmp = _slicedToArray(noop.useState(AdUserStore.adUser), 2);
-  dependencyMap = tmp[1];
+  let closure_1;
+  let first;
+  [first, closure_1] = react.useState(AdUserStore.adUser);
   const items = [profile_badge];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     function handleStoreChange() {
+      const tmp2 = null != AdUserStore.adUser || AdUserStore.hasFetchFailed;
       if (tmp2) {
-        dependencyMap(tmp.adUser);
+        closure_1_1(AdUserStore.adUser);
       }
     }
-    let hasFetchFailed = null != AdUserStore.adUser;
-    if (!hasFetchFailed) {
-      hasFetchFailed = AdUserStore.isFetching;
+    let isFetching = null != AdUserStore.adUser;
+    const hasFetchFailed = AdUserStore.hasFetchFailed;
+    const obj = AdUserStore;
+    if (!isFetching) {
+      isFetching = AdUserStore.isFetching;
     }
-    if (!hasFetchFailed) {
-      hasFetchFailed = AdUserStore.hasFetchFailed;
+    if (!isFetching) {
+      isFetching = hasFetchFailed;
     }
-    if (!hasFetchFailed) {
-      const adUser = profile_badge(dependencyMap[4]).fetchAdUser(handleStoreChange);
-      const obj2 = profile_badge(dependencyMap[4]);
+    if (!isFetching) {
+      let tmp2 = closure_1;
+      const obj2 = profile_badge(closure_1[4]);
+      const adUser = obj2.fetchAdUser(handleStoreChange);
     }
-    AdUserStore.addChangeListener(handleStoreChange);
+    obj.addChangeListener(handleStoreChange);
     return () => AdUserStore.removeChangeListener(handleStoreChange);
   }, items);
-  return tmp[0];
+  return first;
 };

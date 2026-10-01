@@ -5,38 +5,42 @@
 // Exports: getTinyBroncoServerDescriptions, getTinyBroncoWarningDescriptions
 
 // Module 13308 (getTinyBroncoWarningDescriptions)
-import util from "util" /* 1115 */;
+import intl6 from "intl" /* 1115 */;
 import _modDef3071 from "module_3071" /* 3071 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 9235 */;
 import TinyBroncoConstants from "TinyBroncoConstants" /* 9231 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
 ({ TINY_BRONCO_CHANNEL_LOCATION: c3, TINY_BRONCO_SERVER_LOCATION: closure_4 } = TinyBroncoConstants);
 const result = size.fileFinishedImporting("modules/tiny_bronco/getTinyBroncoWarningDescriptions.tsx");
 
 export const getTinyBroncoServerDescriptions = function getTinyBroncoServerDescriptions() {
-  const obj = { adult: null, teen: null, unverified: null };
-  const intl = util.intl;
-  obj.adult = intl.string(util.t.fp3xf5);
-  const intl2 = util.intl;
-  obj.teen = intl2.string(util.t.dqC1w2);
-  const intl3 = util.intl;
-  obj.unverified = intl3.string(util.t.qiLic6);
+  let intl;
+  let intl2;
+  let intl3;
+  const obj = { adult: intl.string(intl6.t.fp3xf5), teen: intl2.string(intl6.t.dqC1w2), unverified: intl3.string(intl6.t.qiLic6) };
+  intl = intl6.intl;
+  intl2 = intl6.intl;
+  intl3 = intl6.intl;
   return obj;
 };
-export const getTinyBroncoWarningDescriptions = function getTinyBroncoWarningDescriptions(tmp3Result, guildName) {
-  let stringResult = dependencyMap;
-  if (!obj.isTinyBroncoEnabled(tmp)) {
-    return null;
-  } else {
+export const getTinyBroncoWarningDescriptions = function getTinyBroncoWarningDescriptions(tmp4Result, guildName) {
+  let tmp4 = null;
+  const tmp = tmp4Result ? React3 : _false;
+  const obj = TinyBroncoExperiment;
+  if (obj.isTinyBroncoEnabled(tmp)) {
+    let tmp7;
     const obj2 = { adult: null, teen: null, unverified: null };
-    let intl = tmp2(1115).intl;
-    if (tmp3Result) {
-      obj2.adult = intl.string(tmp2(1115).t.fp3xf5);
-      intl = tmp2(1115).intl;
-      obj2.teen = intl.string(tmp2(1115).t.dqC1w2);
+    const intl = tmp2(1115).intl;
+    if (tmp4Result) {
+      obj2.adult = intl.string(intl6.t.fp3xf5);
       const intl4 = tmp2(1115).intl;
-      stringResult = intl4.string(tmp2(1115).t.qiLic6);
-      obj2.unverified = stringResult;
+      obj2.teen = intl4.string(intl6.t.dqC1w2);
+      const intl5 = tmp2(1115).intl;
+      obj2.unverified = intl5.string(intl6.t.qiLic6);
+      tmp7 = obj2;
     } else {
       const obj3 = { guildName };
       obj2.adult = intl.formatToPlainString(_modDef3071.iK0n30, obj3);
@@ -46,6 +50,9 @@ export const getTinyBroncoWarningDescriptions = function getTinyBroncoWarningDes
       const intl3 = tmp2(1115).intl;
       const obj5 = { guildName };
       obj2.unverified = intl3.formatToPlainString(_modDef3071.h4HbnI, obj5);
+      tmp7 = obj2;
     }
+    tmp4 = tmp7;
   }
+  return tmp4;
 };

@@ -5,46 +5,55 @@
 // Exports: ActionSheetSwitchRow
 
 // Module 6620 (ActionSheetRow)
-import TableRow from "TableRow" /* 5917 */;
-import TableRowIcon from "TableRowIcon" /* 5923 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import TableRow2 from "TableRow" /* 5917 */;
+import TableRowIcon2 from "TableRowIcon" /* 5923 */;
 import TableRowGroup from "TableRowGroup" /* 5999 */;
-import TableSwitchRow from "TableSwitchRow" /* 6621 */;
-import noop from "module_19" /* 19 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6621 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 class ActionSheetRow {
-  constructor(arg0) {
-    str = global.variant;
+  constructor(variant) {
+    let arrow;
+    let icon;
+    let str = variant.variant;
+    const label = variant.label;
     if (str === undefined) {
       str = "default";
     }
-    ({ arrow, icon } = global);
-    obj = { value: str, children: null };
-    merged = Object.assign(global, Object.assign({ label: 0, variant: 0, arrow: 0, icon: 0 }));
-    obj1 = { variant: str, label: global.label, arrow, icon };
-    merged1 = Object.assign(merged);
-    obj.children = jsx(closure_0(closure_1[3]).TableRow, obj1);
-    return jsx(closure_5.Provider, obj);
+    ({ arrow, icon } = variant);
+    const merged = Object.assign(variant, Object.assign({ label: 0, variant: 0, arrow: 0, icon: 0 }));
+    const Provider = redux.Provider;
+    const TableRow = TableRow2.TableRow;
+    const merged1 = Object.assign(merged);
+    return <Provider value={str}>{null}</Provider>;
   }
 }
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const hasOwnProperty = noop.createContext("default");
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const hasOwnProperty = react.createContext("default");
 ActionSheetRow.Icon = function ActionSheetRowIcon(IconComponent) {
   IconComponent = IconComponent.IconComponent;
-  const context = noop.useContext(closure_5);
-  const obj = { source: IconComponent.source, IconComponent, variant: context };
-  return jsx(TableRowIcon.TableRowIcon, { source: IconComponent.source, IconComponent, variant: context });
+  const source = IconComponent.source;
+  const context = react.useContext(redux);
+  const obj = { source, IconComponent, variant: context };
+  const TableRowIcon = TableRowIcon2.TableRowIcon;
+  return jsx(TableRowIcon, obj);
 };
 ActionSheetRow.Group = function ActionSheetRowGroup(arg0) {
+  let children;
+  let hasIcons;
+  let title;
   ({ children, title, hasIcons } = arg0);
   return <View>{jsx(TableRowGroup.TableRowGroup, { hasIcons, title, children })}</View>;
 };
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetRow.native.tsx");
 
 export { ActionSheetRow };
 export const ActionSheetSwitchRow = function ActionSheetSwitchRow(arg0) {
+  const TableSwitchRow = TableSwitchRow2.TableSwitchRow;
   const merged = Object.assign(arg0);
-  return jsx(TableSwitchRow.TableSwitchRow, {});
+  return <TableSwitchRow />;
 };

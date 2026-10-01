@@ -12,15 +12,16 @@ const ThemeTypes = Constants.ThemeTypes;
 const result = size.fileFinishedImporting("design/components/Illustration/native/index.tsx");
 
 export const getIllustrationSource = function getIllustrationSource(theme, light) {
+  let lightResult;
   if (theme === ThemeTypes.LIGHT) {
     light = light.light;
-  } else if (theme === tmp.DARK) {
+  } else if (theme === ThemeTypes.DARK) {
     let midnight = light.darker;
     if (midnight == null) {
       midnight = light.midnight;
     }
     light = midnight;
-  } else if (theme === tmp.ONYX) {
+  } else if (theme === ThemeTypes.ONYX) {
     let darker = light.midnight;
     if (darker == null) {
       darker = light.darker;
@@ -28,12 +29,13 @@ export const getIllustrationSource = function getIllustrationSource(theme, light
     light = darker;
   }
   if (null != light) {
-    let lightResult = light();
+    lightResult = light();
   } else {
     lightResult = light.dark();
   }
   return lightResult;
 };
 export const useIllustrationSource = function useIllustrationSource(fn) {
-  return fn(native.useThemeContext().theme);
+  const obj = native;
+  return fn(obj.useThemeContext().theme);
 };

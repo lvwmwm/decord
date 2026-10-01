@@ -6,39 +6,55 @@
 
 // Module 9635 (useContentHarmTypes)
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6710 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let _require, dependencyMap;
+
 function useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId) {
+  let NONE;
+  let currentUser;
+  let stateFromStores1;
+  let stateFromStores2;
   _require = channelId;
   dependencyMap = authorId;
-  const eligibleHarmTypesConfigsForContext = require("ObscuredMediaUtils").getEligibleHarmTypesConfigsForContext();
+  let tmp = _require;
+  let tmp2 = dependencyMap;
   let obj = require("ObscuredMediaUtils");
+  const eligibleHarmTypesConfigsForContext = obj.getEligibleHarmTypesConfigsForContext();
   let items = [UserStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = require("initialize");
+  const obj2 = require("get initialized");
+  const stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [stateFromStores1, stateFromStores2];
-  stateFromStores1 = require("initialize").useStateFromStores(items1, () => {
+  const obj3 = require("get initialized");
+  stateFromStores1 = obj3.useStateFromStores(items1, () => {
     const items = [ChannelStore, RelationshipStore];
-    return ObscuredMediaUtils.getChannelTypeById(closure_0, closure_1, items);
+    const obj = ObscuredMediaUtils;
+    return obj.getChannelTypeById(channelId, authorId, items);
   });
-  const obj3 = require("initialize");
   const items2 = [stateFromStores];
   const items3 = [eligibleHarmTypesConfigsForContext];
-  stateFromStores2 = require("initialize").useStateFromStores(items2, () => eligibleHarmTypesConfigsForContext.reduce((acc, harmType) => {
-    const obj = {};
-    const merged = Object.assign(acc);
-    obj[harmType.harmType] = harmType.getProtoUserSettings(settings.settings);
-    return obj;
-  }, {}), items3, require("SensitiveMediaRedactionSettingUtils").areSettingsEqual);
+  const obj4 = require("get initialized");
+  stateFromStores2 = obj4.useStateFromStores(items2, () => {
+    let settings;
+    return eligibleHarmTypesConfigsForContext.reduce((acc, harmType) => {
+      const obj = {};
+      const merged = Object.assign(acc);
+      obj[harmType.harmType] = harmType.getProtoUserSettings(settings.settings);
+      return obj;
+    }, {});
+  }, items3, require("SensitiveMediaRedactionSettingUtils").areSettingsEqual);
   const items4 = [stateFromStores1, eligibleHarmTypesConfigsForContext, stateFromStores2, authorId, stateFromStores];
   const memo = eligibleHarmTypesConfigsForContext.useMemo(() => {
     if (null != stateFromStores1) {
+      const tmp2 = stateFromStores;
       let id;
+      const tmp = authorId;
       if (stateFromStores != null) {
         id = tmp2.id;
       }
@@ -50,6 +66,7 @@ function useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId) {
               tmp3 = harmType.getUserSettingsWithDefaults(tmp)[tmp2];
             }
             harmType = null;
+            const obj = channelId(authorId[5]);
             if (obj.shouldRedactForSettingValue(tmp3)) {
               harmType = harmType.harmType;
             }
@@ -59,26 +76,26 @@ function useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId) {
         }
         return [];
       }
-      tmp = closure_1;
     }
   }, items4);
   if (0 === memo.length) {
-    let NONE = tmp(6713).ContentHarmTypeBitMask.NONE;
+    NONE = tmp(6713).ContentHarmTypeBitMask.NONE;
   } else {
-    NONE = tmp(6710).contentHarmTypesToFlags(memo);
     const tmpResult = tmp(6710);
+    NONE = tmpResult.contentHarmTypesToFlags(memo);
   }
   return NONE;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useContentHarmTypes.tsx");
 
 export { useEnabledHarmTypesBitmaskForChannelAndAuthorId };
 export const useEnabledHarmTypesBitmaskForMessage = function useEnabledHarmTypesBitmaskForMessage(stateFromStores) {
+  let obj2;
   if (null == stateFromStores) {
-    let obj2 = {};
+    obj2 = {};
   } else {
-    obj2 = ObscuredMediaUtils.getChannelIdAndAuthorIdFromMessage(stateFromStores);
+    const obj = ObscuredMediaUtils;
+    obj2 = obj.getChannelIdAndAuthorIdFromMessage(stateFromStores);
   }
   return useEnabledHarmTypesBitmaskForChannelAndAuthorId(obj2.channelId, obj2.authorId);
 };

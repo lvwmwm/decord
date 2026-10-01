@@ -5,29 +5,35 @@
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
 // Module 12969 (PromotionStringUtils)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
-import PriceUtils from "PriceUtils" /* 6655 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4493 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PremiumConstants = fn(1374);
+let closure_4;
+let hasOwnProperty;
+let tmp;
+const PriceUtils = tmp(6655);
 ({ PremiumSubscriptionSKUs: closure_4, SubscriptionPlans: hasOwnProperty } = PremiumConstants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/promotions/PromotionStringUtils.tsx");
 
 export const useFormatStringWithCommonPremiumParams = function useFormatStringWithCommonPremiumParams(body) {
+  let TIER_2;
+  let loadedForSKU;
   let str = "...";
   const items = [SubscriptionPlanStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => loadedForSKU.isLoadedForSKU(TIER_2.TIER_2));
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => loadedForSKU.isLoadedForSKU(TIER_2.TIER_2));
   if (-1 !== body.indexOf("{price}")) {
     if (stateFromStores) {
       try {
-        const defaultPrice = PremiumUtilsDefault.getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
-        str = PriceUtils.formatPrice(defaultPrice.amount, defaultPrice.currency);
+        const obj2 = PremiumUtilsDefault;
+        const defaultPrice = obj2.getDefaultPrice(hasOwnProperty.PREMIUM_MONTH_TIER_2);
         const tmpResult = PriceUtils;
+        str = tmpResult.formatPrice(defaultPrice.amount, defaultPrice.currency);
       } catch (err) {
       }
     }
@@ -35,6 +41,7 @@ export const useFormatStringWithCommonPremiumParams = function useFormatStringWi
   return body.replace(/\{price\}/g, str);
 };
 export const getHelpArticleLinkProps = function getHelpArticleLinkProps(helpArticle, helpArticleId) {
+  let obj2;
   let id1;
   if (helpArticle != null) {
     id1 = helpArticle.id;
@@ -54,13 +61,15 @@ export const getHelpArticleLinkProps = function getHelpArticleLinkProps(helpArti
       linkText1 = helpArticle.linkText;
     }
     if (null != linkText1) {
+      let linkText;
       if ("" !== helpArticle.linkText) {
-        let linkText = helpArticle.linkText;
+        linkText = helpArticle.linkText;
       }
-      const obj = { url: HelpdeskUtilsDefault.getArticleURL(id), linkText };
+      const obj = { url: obj2.getArticleURL(id), linkText };
+      obj2 = HelpdeskUtilsDefault;
       return obj;
     }
-    const intl = util.intl;
-    linkText = intl.string(util.t["sBp+u0"]);
+    const intl = intl2.intl;
+    linkText = intl.string(intl2.t["sBp+u0"]);
   }
 };

@@ -7,18 +7,24 @@
 // Module 13254 (BlockedUserUtils)
 import _modDef12 from "module_12" /* 12 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
+let id;
+
 const result = size.fileFinishedImporting("modules/blocking/BlockedUserUtils.tsx");
 
 export const filterOutBlockedOrIgnoredUsers = function filterOutBlockedOrIgnoredUsers(mapped, arg1) {
-  const set = arg1;
-  const found = mapped.filter((item) => set(dependencyMap[1]).isNotNullish(item));
+  let closure_0 = arg1;
+  const found = mapped.filter((item) => {
+    const obj = closure_0(dependencyMap[1]);
+    return obj.isNotNullish(item);
+  });
   return found.filter((id) => {
+    let hasItem;
     id = id.id;
-    if (null != set) {
-      let hasItem = set.has(id);
+    const obj = closure_0;
+    if (null != closure_0) {
+      hasItem = obj.has(id);
     } else {
       hasItem = RelationshipStore.isBlockedOrIgnored(id);
     }
@@ -26,10 +32,12 @@ export const filterOutBlockedOrIgnoredUsers = function filterOutBlockedOrIgnored
   });
 };
 export const filterOutBlockedOrIgnoredUserIds = function filterOutBlockedOrIgnoredUserIds(arr, arg1) {
-  const set = arg1;
+  let closure_0 = arg1;
   return arr.filter((item) => {
-    if (null != set) {
-      let hasItem = set.has(item);
+    let hasItem;
+    const obj = closure_0;
+    if (null != closure_0) {
+      hasItem = obj.has(item);
     } else {
       hasItem = RelationshipStore.isBlockedOrIgnored(item);
     }
@@ -37,12 +45,16 @@ export const filterOutBlockedOrIgnoredUserIds = function filterOutBlockedOrIgnor
   });
 };
 export const filterOutStreamsByBlockedOwner = function filterOutStreamsByBlockedOwner(allApplicationStreams) {
+  let blockedOrIgnored;
   return allApplicationStreams.filter((ownerId) => !blockedOrIgnored.isBlockedOrIgnored(ownerId.ownerId));
 };
 export const hasBlockedOrIgnoredUserIds = function hasBlockedOrIgnoredUserIds(items, blockedOrIgnoredIDs) {
+  let closure_0 = blockedOrIgnoredIDs;
   return items.some((item) => {
+    let hasItem;
+    const obj = blockedOrIgnoredIDs;
     if (null != blockedOrIgnoredIDs) {
-      let hasItem = blockedOrIgnoredIDs.has(item);
+      hasItem = obj.has(item);
     } else {
       hasItem = RelationshipStore.isBlockedOrIgnored(item);
     }
@@ -53,7 +65,9 @@ export const voiceStateHasBlockedUsers = function voiceStateHasBlockedUsers(user
   return RelationshipStore.isBlockedOrIgnored(userId.userId);
 };
 export const filterBlockedUsersFromVoiceStates = function filterBlockedUsersFromVoiceStates(voiceStates) {
-  const found = _modDef12(voiceStates).filter((userId) => !blockedOrIgnored.isBlockedOrIgnored(userId.userId));
+  let blockedOrIgnored;
   const arr = _modDef12(voiceStates);
-  return found.keyBy("userId").value();
+  const found = arr.filter((userId) => !blockedOrIgnored.isBlockedOrIgnored(userId.userId));
+  const iter = found.keyBy("userId");
+  return iter.value();
 };

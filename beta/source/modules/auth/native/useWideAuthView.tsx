@@ -13,5 +13,7 @@ const result = size.fileFinishedImporting("modules/auth/native/useWideAuthView.t
 
 export default function useWideAuthView() {
   const tmp = useIsWindowLargeDefault();
-  return MetaQuestUtils.isMetaQuest() || tmp;
+  const obj = MetaQuestUtils;
+  const tmp2 = obj.isMetaQuest() || tmp;
+  return tmp2;
 };

@@ -4,19 +4,20 @@
 // Dependencies: [521, 592, 589, 543, 4918]
 
 // Module 4950 (baseSet)
-import _mod521 from "module_521" /* 521 */;
-import _mod589 from "module_589" /* 589 */;
+import isObject from "isObject" /* 521 */;
+import toKey from "toKey" /* 589 */;
 
+let tmp;
 const castPath = tmp(592);
 
 export default function baseSet(arg0, arg1, arg2, fn) {
-  if (_mod521(arg0)) {
+  if (isObject(arg0)) {
     const arr = castPath(arg1, arg0);
     if (null != arg0) {
       let num2 = 0;
-      let tmp17 = arg0;
-      if (0 < length) {
-        const tmp8 = _mod589(arr[num2]);
+      let tmp16 = arg0;
+      if (0 < arr.length) {
+        const tmp8 = toKey(arr[num2]);
         while ("__proto__" !== tmp8) {
           if ("constructor" === tmp8) {
             break;
@@ -25,25 +26,24 @@ export default function baseSet(arg0, arg1, arg2, fn) {
           } else {
             let tmp13 = arg2;
             if (num2 !== tmp4) {
-              let tmp11 = tmp17[tmp8];
+              let tmp11 = tmp16[tmp8];
               let tmp12;
               if (fn) {
-                tmp12 = fn(tmp11, tmp8, tmp17);
+                tmp12 = fn(tmp11, tmp8, tmp16);
               }
               tmp13 = tmp12;
               if (undefined === tmp12) {
-                if (tmp6(521)(tmp11)) {
-                  tmp13 = tmp11;
-                } else {
-                  let tmp14 = tmp6(543)(arr[num2 + 1]) ? [] : {};
+                if (!tmp6(521)(tmp11)) {
+                  tmp11 = tmp6(543)(arr[num2 + 1]) ? [] : {};
                 }
+                tmp13 = tmp11;
               }
             }
-            let tmp15 = tmp6(4918)(tmp17, tmp8, tmp13);
-            let tmp16 = tmp17[tmp8];
-            if (null != tmp16) {
+            let tmp14 = tmp6(4918)(tmp16, tmp8, tmp13);
+            let tmp15 = tmp16[tmp8];
+            if (null != tmp15) {
               num2 = num2 + 1;
-              tmp17 = tmp16;
+              tmp16 = tmp15;
             }
           }
         }

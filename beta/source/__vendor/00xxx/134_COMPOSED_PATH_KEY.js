@@ -6,6 +6,7 @@
 
 // Module 134 (COMPOSED_PATH_KEY)
 const SymbolResult = Symbol("composedPath");
+const _window = SymbolResult;
 const SymbolResult1 = Symbol("currentTarget");
 const SymbolResult2 = Symbol("eventPhase");
 const SymbolResult3 = Symbol("inPassiveListenerFlag");
@@ -31,10 +32,10 @@ export const setCurrentTarget = function setCurrentTarget(arg0, arg1) {
   arg0[SymbolResult1] = arg1;
 };
 export const getComposedPath = function getComposedPath(arg0) {
-  return arg0[SymbolResult];
+  return arg0[_window];
 };
 export const setComposedPath = function setComposedPath(bubbles, arr) {
-  bubbles[SymbolResult] = arr;
+  bubbles[_window] = arr;
 };
 export const getEventPhase = function getEventPhase(arg0) {
   return arg0[SymbolResult2];
@@ -45,8 +46,8 @@ export const setEventPhase = function setEventPhase(arg0, arg1) {
 export const getInPassiveListenerFlag = function getInPassiveListenerFlag(self) {
   return self[SymbolResult3];
 };
-export const setInPassiveListenerFlag = function setInPassiveListenerFlag(arg0, arg1) {
-  arg0[SymbolResult3] = arg1;
+export const setInPassiveListenerFlag = function setInPassiveListenerFlag(type, arg1) {
+  type[SymbolResult3] = arg1;
 };
 export const getIsTrusted = function getIsTrusted(arg0) {
   return arg0[SymbolResult4];
@@ -54,8 +55,8 @@ export const getIsTrusted = function getIsTrusted(arg0) {
 export const setIsTrusted = function setIsTrusted(defaultPrevented, arg1) {
   defaultPrevented[SymbolResult4] = arg1;
 };
-export const getStopImmediatePropagationFlag = function getStopImmediatePropagationFlag(arg0) {
-  return arg0[SymbolResult5];
+export const getStopImmediatePropagationFlag = function getStopImmediatePropagationFlag(type) {
+  return type[SymbolResult5];
 };
 export const setStopImmediatePropagationFlag = function setStopImmediatePropagationFlag(bubbles, arg1) {
   bubbles[SymbolResult5] = arg1;
@@ -69,8 +70,8 @@ export const setStopPropagationFlag = function setStopPropagationFlag(bubbles, a
 export const getTarget = function getTarget(arg0) {
   return arg0[SymbolResult7];
 };
-export const setTarget = function setTarget(bubbles, self) {
-  bubbles[SymbolResult7] = self;
+export const setTarget = function setTarget(bubbles, upload) {
+  bubbles[SymbolResult7] = upload;
 };
 export const setEventInitTimeStamp = function setEventInitTimeStamp(arg0, timeStamp) {
   if (typeof timeStamp === "number") {

@@ -4,20 +4,20 @@
 // Dependencies: [15099]
 
 // Module 15098 (_regeneratorRuntime)
-import _mod15099 from "module_15099" /* 15099 */;
+import _regeneratorRuntime from "_regeneratorRuntime" /* 15099 */;
 
-const tmp3 = _mod15099();
+const tmp = _regeneratorRuntime();
 try {
-  globalThis.regeneratorRuntime = tmp3;
+  globalThis.regeneratorRuntime = tmp;
 } catch (err) {
   const _globalThis = globalThis;
   if (typeof globalThis === "object") {
     const _globalThis2 = globalThis;
-    globalThis.regeneratorRuntime = tmp2;
+    globalThis.regeneratorRuntime = tmp;
   } else {
     const _Function = Function;
-    Function("r", "regeneratorRuntime = r")(tmp2);
+    Function("r", "regeneratorRuntime = r")(tmp);
   }
 }
 
-export default tmp3;
+export default tmp;

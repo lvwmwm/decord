@@ -5,30 +5,29 @@
 // Exports: default
 
 // Module 11228 (ContextMenuSubmenuActionSheetHeader)
-import util from "util" /* 1115 */;
-import ActionSheetHeaderPressableText from "ActionSheetHeaderPressableText" /* 8996 */;
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
+import ActionSheetHeaderPressableText2 from "ActionSheetHeaderPressableText" /* 8996 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ headerContainer: { paddingVertical: 12, paddingHorizontal: 16, alignItems: "flex-start" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/action_sheet/native/components/ContextMenuSubmenuActionSheetHeader.tsx");
 
 export default function ContextMenuSubmenuActionSheetHeader(onBack) {
+  let intl;
   let fn = onBack.onBack;
-  const obj = { style: closure_4().headerContainer, children: null };
-  const obj2 = { label: null, onPress: null };
-  const intl = util.intl;
-  obj2.label = intl.string(util.t["13/7kX"]);
+  ({ label: intl.string(intl2.t["13/7kX"]), onPress: fn });
+  const ActionSheetHeaderPressableText = ActionSheetHeaderPressableText2.ActionSheetHeaderPressableText;
+  intl = intl2.intl;
   if (fn == null) {
     fn = () => {
 
     };
   }
-  obj2.onPress = fn;
-  obj.children = jsx(ActionSheetHeaderPressableText.ActionSheetHeaderPressableText, { label: null, onPress: null });
-  return <View style={closure_4().headerContainer}>{null}</View>;
+  return <tmp2 style={closure_4().headerContainer}>{null}</tmp2>;
 };

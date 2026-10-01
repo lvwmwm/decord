@@ -5,20 +5,23 @@
 // Exports: default
 
 // Module 7657 (useProfileFrame)
+import ProfileFrameRecord from "ProfileFrameRecord" /* 6969 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6977 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const isProfileFrameRecord = fn(6969).isProfileFrameRecord;
-const size = fn(2);
+const isProfileFrameRecord = ProfileFrameRecord.isProfileFrameRecord;
 const result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrame.tsx");
 
 export default function useProfileFrame(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [CollectiblesCategoryStore, CollectiblesPurchaseStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     if (null != closure_0) {
       const product = CollectiblesCategoryStore.getProduct(tmp);
       let first;
@@ -34,7 +37,7 @@ export default function useProfileFrame(arg0) {
           first1 = purchase.items[0];
         }
         let first2;
-        if (tmp4(first1)) {
+        if (isProfileFrameRecord(first1)) {
           first2 = purchase.items[0];
         }
         return first2;

@@ -5,8 +5,9 @@
 // Exports: getScreens
 
 // Module 14218 (WebAuthnScreens)
-import jsxProd from "jsxProd" /* 21 */;
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl6 from "intl" /* 1115 */;
+import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import WebAuthnConstants from "WebAuthnConstants" /* 14215 */;
 import PasskeyUpsellViewDefault from "PasskeyUpsellView" /* 14219 */;
 import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 14221 */;
@@ -18,69 +19,87 @@ import WebAuthnSuccessStepDefault from "WebAuthnSuccessStep" /* 14239 */;
 import size from "module_2" /* 2 */;
 
 const WebAuthnScreens = WebAuthnConstants.WebAuthnScreens;
-const jsx = jsxProd.jsx;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/webauthn/native/WebAuthnScreens.tsx");
 
 export const getScreens = function getScreens(isModal) {
+  let headerCloseButton;
+  let headerCloseButton1;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let obj2;
   isModal = isModal.isModal;
   const obj = { [closure_1_3.MODAL_UPSELL]: obj2 };
-  const obj3 = { title: null, render: null, headerLeft: null };
-  const intl = util.intl;
-  obj3.title = intl.string(util.t["0N1s81"]);
-  obj3.render = function render() {
-    return jsx(PasskeyInitStepDefault, {});
+  const tmp = WebAuthnScreens;
+  const INIT = WebAuthnScreens.INIT;
+  obj2 = {
+    title: "",
+    render() {
+      return jsx(PasskeyUpsellViewDefault, {});
+    }
   };
-  let headerCloseButton;
+  const obj3 = {
+    title: intl.string(intl6.t["0N1s81"]),
+    render() {
+      return jsx(PasskeyInitStepDefault, {});
+    },
+    headerLeft: headerCloseButton
+  };
+  intl = intl6.intl;
+  headerCloseButton = undefined;
   if (isModal) {
-    headerCloseButton = tmp2(5936).getHeaderCloseButton(PasskeyUpsellActionCreatorsDefault.closePasskeyUpsellModal);
-    const tmp2Result = tmp2(5936);
+    const tmp2Result = NavigatorHeader;
+    headerCloseButton = tmp2Result.getHeaderCloseButton(PasskeyUpsellActionCreatorsDefault.closePasskeyUpsellModal);
   }
-  obj3.headerLeft = headerCloseButton;
-  obj[WebAuthnScreens.INIT] = obj3;
+  obj[INIT] = obj3;
+  const EDIT = tmp.EDIT;
   const obj4 = {
     render(arg0) {
+      WebAuthnEditStepDefault;
       const merged = Object.assign(arg0);
-      return jsx(WebAuthnEditStepDefault, {});
+      return <tmp />;
     },
-    title: null
+    title: intl2.string(intl6.t.UBBwwF)
   };
-  const intl2 = tmp2(1115).intl;
-  obj4.title = intl2.string(util.t.UBBwwF);
-  obj[WebAuthnScreens.EDIT] = obj4;
+  intl2 = tmp2(1115).intl;
+  obj[EDIT] = obj4;
+  const REGISTER = tmp.REGISTER;
   const obj5 = {
     render() {
       return jsx(WebAuthnRegisterStepDefault, {});
     },
-    title: null
+    title: intl3.string(intl6.t.vrOCCk)
   };
-  const intl3 = tmp2(1115).intl;
-  obj5.title = intl3.string(util.t.vrOCCk);
-  obj[WebAuthnScreens.REGISTER] = obj5;
+  intl3 = tmp2(1115).intl;
+  obj[REGISTER] = obj5;
+  const NAME = tmp.NAME;
   const obj6 = {
     render(arg0) {
+      WebAuthnNameStepDefault;
       const merged = Object.assign(arg0);
-      return jsx(WebAuthnNameStepDefault, {});
+      return <tmp />;
     },
-    title: null,
-    headerLeft: null
+    title: intl4.string(intl6.t["cY/IOu"]),
+    headerLeft: headerCloseButton1
   };
-  const intl4 = tmp2(1115).intl;
-  obj6.title = intl4.string(util.t["cY/IOu"]);
-  let headerCloseButton1;
+  intl4 = tmp2(1115).intl;
+  headerCloseButton1 = undefined;
   if (isModal) {
-    headerCloseButton1 = tmp2(5936).getHeaderCloseButton(PasskeyUpsellActionCreatorsDefault.closePasskeyUpsellModal);
-    const tmp2Result2 = tmp2(5936);
+    const tmp2Result2 = NavigatorHeader;
+    headerCloseButton1 = tmp2Result2.getHeaderCloseButton(PasskeyUpsellActionCreatorsDefault.closePasskeyUpsellModal);
   }
-  obj6.headerLeft = headerCloseButton1;
-  obj[WebAuthnScreens.NAME] = obj6;
+  obj[NAME] = obj6;
+  const SUCCESS = tmp.SUCCESS;
   const obj7 = {
     render() {
       return jsx(WebAuthnSuccessStepDefault, {});
     },
-    title: null
+    title: intl5.string(intl6.t["7wPZln"])
   };
-  const intl5 = tmp2(1115).intl;
-  obj7.title = intl5.string(util.t["7wPZln"]);
-  obj[WebAuthnScreens.SUCCESS] = obj7;
+  intl5 = tmp2(1115).intl;
+  obj[SUCCESS] = obj7;
   return obj;
 };

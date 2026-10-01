@@ -6,7 +6,7 @@
 import get from "module_30" /* 30 */;
 
 const enforcing = get.getEnforcing("ExceptionsManager");
-const obj = {
+let obj = {
   reportFatalException(message, stack, id) {
     closure_0.reportFatalException(message, stack, id);
   },
@@ -14,17 +14,18 @@ const obj = {
     closure_0.reportSoftException(message, stack, id);
   },
   dismissRedbox() {
+    obj = closure_0;
     if (closure_0.dismissRedbox) {
-      closure_0.dismissRedbox();
+      obj.dismissRedbox();
     }
   },
   reportException(isFatal) {
     if (closure_0.reportException) {
-      obj.reportException(isFatal);
+      closure_0.reportException(isFatal);
     } else if (isFatal.isFatal) {
-      obj2.reportFatalException(isFatal.message, isFatal.stack, isFatal.id);
+      closure_0.reportFatalException(isFatal.message, isFatal.stack, isFatal.id);
     } else {
-      obj2.reportSoftException(isFatal.message, isFatal.stack, isFatal.id);
+      closure_0.reportSoftException(isFatal.message, isFatal.stack, isFatal.id);
     }
   }
 };

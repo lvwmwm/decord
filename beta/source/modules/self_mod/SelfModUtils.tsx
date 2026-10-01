@@ -6,8 +6,8 @@
 
 // Module 6709 (SelfModUtils)
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/SelfModUtils.tsx");
 
 export const isCurrentUserTeen = function isCurrentUserTeen() {

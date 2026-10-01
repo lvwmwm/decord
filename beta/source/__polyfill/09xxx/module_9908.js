@@ -3,6 +3,7 @@
 // Dependencies: [41, 42, 93, 95, 96, 98, 9900, 9909]
 
 // Module 9908
+import Meridiem from "Meridiem" /* 9900 */;
 import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 9909 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
@@ -11,19 +12,14 @@ import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ENTimeExpressionParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -33,16 +29,15 @@ function _isNativeReflectConstruct() {
 }
 class ENTimeExpressionParser {
   constructor(arg0) {
-    self = this;
-    tmp = c2(this, ENTimeExpressionParser);
-    items = [];
-    items[0] = global;
-    tmp2 = closure_4;
-    obj = closure_4(ENTimeExpressionParser);
-    tmp3 = closure_3;
-    if (metroRequire()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENTimeExpressionParser);
+    const items = [arg0];
+    const obj = _getPrototypeOf(ENTimeExpressionParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
     } else {
       constructResult = obj.apply(self, items);
@@ -75,8 +70,8 @@ let items = [
     key: "extractPrimaryTimeComponents",
     value: function extractPrimaryTimeComponents(arg0, arg1) {
       const self = this;
-      const tmp = hasOwnProperty(_getPrototypeOf(ENTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
-      dependencyMap = tmp;
+      const tmp = _get(_getPrototypeOf(ENTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
+      let closure_1 = tmp;
       let fn = tmp;
       if (typeof tmp === "function") {
         fn = (items) => fn.apply(self, items);
@@ -86,32 +81,29 @@ let items = [
       if (fnResult) {
         const first = arg1[0];
         if (first.endsWith("night")) {
-          value = fnResult.get("hour");
+          const value = fnResult.get("hour");
           if (value >= 6) {
             if (value < 12) {
               fnResult.assign("hour", fnResult.get("hour") + 12);
-              fnResult.assign("meridiem", ENTimeExpressionParser(9900).Meridiem.PM);
+              fnResult.assign("meridiem", Meridiem.Meridiem.PM);
             }
           }
           if (value < 6) {
-            fnResult.assign("meridiem", ENTimeExpressionParser(9900).Meridiem.AM);
+            fnResult.assign("meridiem", Meridiem.Meridiem.AM);
           }
         }
         const first1 = arg1[0];
         if (first1.endsWith("afternoon")) {
-          fnResult.assign("meridiem", ENTimeExpressionParser(9900).Meridiem.PM);
-          value2 = fnResult.get("hour");
-          let tmp14 = value2 >= 0;
-          if (tmp14) {
-            tmp14 = value2 <= 6;
-          }
+          fnResult.assign("meridiem", Meridiem.Meridiem.PM);
+          const value2 = fnResult.get("hour");
+          const tmp14 = value2 >= 0 && value2 <= 6;
           if (tmp14) {
             fnResult.assign("hour", fnResult.get("hour") + 12);
           }
         }
         const first2 = arg1[0];
         if (first2.endsWith("morning")) {
-          fnResult.assign("meridiem", ENTimeExpressionParser(9900).Meridiem.AM);
+          fnResult.assign("meridiem", Meridiem.Meridiem.AM);
           if (fnResult.get("hour") < 12) {
             fnResult.assign("hour", fnResult.get("hour"));
           }
@@ -126,7 +118,7 @@ let items = [
     key: "extractFollowingTimeComponents",
     value: function extractFollowingTimeComponents(arg0, arg1, arg2) {
       const self = this;
-      let fn = hasOwnProperty(_getPrototypeOf(ENTimeExpressionParser.prototype), "extractFollowingTimeComponents", this);
+      let fn = _get(_getPrototypeOf(ENTimeExpressionParser.prototype), "extractFollowingTimeComponents", this);
       if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }

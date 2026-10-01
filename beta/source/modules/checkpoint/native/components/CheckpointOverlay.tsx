@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 15258 (CheckpointOverlay)
-import jsxProd from "jsxProd" /* 21 */;
+import Fragment from "Fragment" /* 21 */;
 import CheckpointNavigation from "CheckpointNavigation" /* 15248 */;
 import CheckpointWelcomeScreenDefault from "CheckpointWelcomeScreen" /* 15259 */;
 import CheckpointVoiceStatsScreenDefault from "CheckpointVoiceStatsScreen" /* 15264 */;
@@ -19,7 +19,7 @@ import CheckpointSidekickStatsScreenDefault from "CheckpointSidekickStatsScreen"
 import CheckpointSummaryStatsScreenDefault from "CheckpointSummaryStatsScreen" /* 15273 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointOverlay.tsx");
 
 export default function CheckpointOverlay(route) {
@@ -27,28 +27,28 @@ export default function CheckpointOverlay(route) {
   if (route === CheckpointNavigation.CheckpointRoute.HOME) {
     return jsx(CheckpointWelcomeScreenDefault, {});
   } else {
-    const statsScreen = tmp(15248).getCheckpointRoutePresentation(route).statsScreen;
-    if (tmp(15248).CheckpointStatsScreen.VOICE === statsScreen) {
+    const tmpResult = CheckpointNavigation;
+    const statsScreen = tmpResult.getCheckpointRoutePresentation(route).statsScreen;
+    if (CheckpointNavigation.CheckpointStatsScreen.VOICE === statsScreen) {
       return jsx(CheckpointVoiceStatsScreenDefault, {});
-    } else if (tmp(15248).CheckpointStatsScreen.MESSAGES === statsScreen) {
+    } else if (CheckpointNavigation.CheckpointStatsScreen.MESSAGES === statsScreen) {
       return jsx(CheckpointMessagesStatsScreenDefault, {});
-    } else if (tmp(15248).CheckpointStatsScreen.SERVERS === statsScreen) {
+    } else if (CheckpointNavigation.CheckpointStatsScreen.SERVERS === statsScreen) {
       return jsx(CheckpointServersStatsScreenDefault, {});
-    } else if (tmp(15248).CheckpointStatsScreen.EMOJI === statsScreen) {
+    } else if (CheckpointNavigation.CheckpointStatsScreen.EMOJI === statsScreen) {
       return jsx(CheckpointEmojiStatsScreenDefault, {});
-    } else if (tmp(15248).CheckpointStatsScreen.GAMES === statsScreen) {
+    } else if (CheckpointNavigation.CheckpointStatsScreen.GAMES === statsScreen) {
       return jsx(CheckpointGamesStatsScreenDefault, {});
-    } else if (tmp(15248).CheckpointStatsScreen.GAME_TIME === statsScreen) {
+    } else if (CheckpointNavigation.CheckpointStatsScreen.GAME_TIME === statsScreen) {
       return jsx(CheckpointGameTimeStatsScreenDefault, {});
-    } else if (tmp(15248).CheckpointStatsScreen.SQUAD === statsScreen) {
+    } else if (CheckpointNavigation.CheckpointStatsScreen.SQUAD === statsScreen) {
       return jsx(CheckpointSquadStatsScreenDefault, {});
-    } else if (tmp(15248).CheckpointStatsScreen.SIDEKICK === statsScreen) {
+    } else if (CheckpointNavigation.CheckpointStatsScreen.SIDEKICK === statsScreen) {
       return jsx(CheckpointSidekickStatsScreenDefault, {});
-    } else if (tmp(15248).CheckpointStatsScreen.SUMMARY === statsScreen) {
+    } else if (CheckpointNavigation.CheckpointStatsScreen.SUMMARY === statsScreen) {
       return jsx(CheckpointSummaryStatsScreenDefault, {});
     } else {
       return null;
     }
-    const tmpResult = tmp(15248);
   }
 };

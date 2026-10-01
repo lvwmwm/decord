@@ -5,19 +5,21 @@
 // Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsExpeditedOnboardingGuild, useIsRavenOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry, useIsWhitegloveOnboardingGuild
 
 // Module 6679 (CreatorMonetizationEligibilityExperimentUtils)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
 import UserStore from "UserStore" /* 1372 */;
 import BillingInfoStore from "BillingInfoStore" /* 4490 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
+const GuildFeatures = Constants.GuildFeatures;
 const set = new Set(["US"]);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityExperimentUtils.tsx");
 
 export const useIsUserInCreatorMonetizationEligibleCountry = function useIsUserInCreatorMonetizationEligibleCountry() {
+  let ipCountryCode;
   const items = [UserStore, BillingInfoStore];
-  return initialize.useStateFromStores(items, () => {
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let country;
     if (currentUser != null) {
@@ -29,10 +31,7 @@ export const useIsUserInCreatorMonetizationEligibleCountry = function useIsUserI
     if (country == null) {
       country = ipCountryCode.ipCountryCode;
     }
-    let hasItem = null != country;
-    if (hasItem) {
-      hasItem = set.has(country);
-    }
+    const hasItem = null != country && set.has(country);
     return hasItem;
   });
 };
@@ -48,10 +47,7 @@ export const isUserInCreatorMonetizationEligibleCountry = function isUserInCreat
   if (country == null) {
     country = BillingInfoStore.ipCountryCode;
   }
-  let hasItem = null != country;
-  if (hasItem) {
-    hasItem = set.has(country);
-  }
+  const hasItem = null != country && set.has(country);
   return hasItem;
 };
 export const useIsRavenOnboardingGuild = function useIsRavenOnboardingGuild(arg0) {

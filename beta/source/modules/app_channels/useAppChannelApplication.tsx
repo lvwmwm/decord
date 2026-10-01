@@ -21,5 +21,6 @@ export const useAppChannelApplication = function useAppChannelApplication(stateF
   if (type === ChannelTypes.GUILD_APP) {
     application_id = stateFromStores.application_id;
   }
-  return ApplicationActionCreators.useApplication(application_id).data;
+  const obj = ApplicationActionCreators;
+  return obj.useApplication(application_id).data;
 };

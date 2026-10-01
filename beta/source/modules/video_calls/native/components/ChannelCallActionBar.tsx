@@ -5,25 +5,29 @@
 // Exports: default, useActionBarPrimaryButton, useActionBarSecondButtons
 
 // Module 9402 (ChannelCallActionBar)
-import util from "util" /* 1115 */;
+import react_native from "react-native" /* 17 */;
+import intl2 from "intl" /* 1115 */;
+import CallConstants from "CallConstants" /* 4857 */;
+import Constants from "Constants" /* 4861 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4888 */;
 import StreamActionCreators from "StreamActionCreators" /* 4978 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 6583 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import useIsRemoteDefault from "useIsRemote" /* 6689 */;
 import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8765 */;
 import VoiceChatHooks from "VoiceChatHooks" /* 8833 */;
+import useActionBarHeight from "useActionBarHeight" /* 8854 */;
 import CallBarActionAll from "CallBarAction" /* 8855 */;
 import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 8858 */;
 import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 8863 */;
 import CallsUtils from "CallsUtils" /* 9097 */;
-import CameraLottie from "CameraLottie" /* 9404 */;
+import CameraLottie2 from "CameraLottie" /* 9404 */;
 import useScreenshareUtilsDefault from "useScreenshareUtils" /* 9408 */;
-import _modDef9430 from "module_9430" /* 9430 */;
-import _modDef9431 from "module_9431" /* 9431 */;
-import _modDef9432 from "module_9432" /* 9432 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9430 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9431 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9432 */;
+import ChannelCallMicButton from "ChannelCallMicButton" /* 9462 */;
+import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import GameConsoleStore from "GameConsoleStore" /* 4853 */;
@@ -31,55 +35,60 @@ import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 8844 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
+let importDefault;
 
-require = fn;
+let closure_15;
+let closure_16;
+let closure_17;
+let obj2;
+let obj3;
 class VideoButton {
-  constructor(arg0) {
-    channel = global.channel;
-    closure_1 = undefined;
-    closure_2 = undefined;
-    closure_3 = undefined;
-    closure_4 = undefined;
-    closure_5 = undefined;
-    closure_6 = undefined;
-    tmp2 = closure_3;
-    tmp = closure_1;
-    tmp3 = closure_1(closure_3[14])(channel);
-    closure_1 = tmp3;
-    tmp4 = channel;
-    obj = channel(closure_3[15]);
-    items = [];
-    items[0] = closure_12;
-    stateFromStores = obj.useStateFromStores(items, () => reactingToThermalState.isReactingToThermalState());
-    closure_2 = stateFromStores;
-    obj2 = channel(closure_3[15]);
-    items1 = [];
-    items1[0] = closure_11;
+  constructor(channel) {
+    let closure_1;
+    let intl;
+    let reactingToThermalState;
+    channel = channel.channel;
+    importDefault = undefined;
+    let stateFromStores1;
+    let tmp2 = stateFromStores1;
+    const isSmallSize = channel.isSmallSize;
+    let tmp = importDefault;
+    const tmp3 = require("useHasVideoPermission")(channel);
+    importDefault = tmp3;
+    let obj = channel(stateFromStores1[15]);
+    const items = [ChannelCallLifecycleStore];
+    const stateFromStores = obj.useStateFromStores(items, () => reactingToThermalState.isReactingToThermalState());
+    let obj2 = channel(stateFromStores1[15]);
+    const items1 = [MediaEngineStore];
     stateFromStores1 = obj2.useStateFromStores(items1, () => MediaEngineStore.isVideoEnabled());
-    closure_3 = stateFromStores1;
-    obj3 = channel(closure_3[15]);
-    items2 = [];
-    items2[0] = closure_11;
-    stateFromStores2 = obj3.useStateFromStores(items2, () => MediaEngineStore.supports(constants.VIDEO));
-    closure_4 = stateFromStores2;
-    obj4 = channel(closure_3[17]);
-    stageHasMedia = obj4.useStageHasMedia(channel.id);
-    closure_5 = closure_4.useRef(null);
-    items3 = [];
-    items3[0] = stateFromStores1;
-    memo = closure_4.useMemo(() => {
-      const obj = { ref, animation: null };
-      let str = "unmute";
+    const items2 = [MediaEngineStore];
+    const obj3 = channel(stateFromStores1[15]);
+    const stateFromStores2 = obj3.useStateFromStores(items2, () => MediaEngineStore.supports(constants.VIDEO));
+    const reachedLimit = require("useChannelVideoLimit")(channel).reachedLimit;
+    obj4 = channel(stateFromStores1[17]);
+    const stageHasMedia = obj4.useStageHasMedia(channel.id);
+    const ref = stateFromStores2.useRef(null);
+    const items3 = [stateFromStores1];
+    const memo = stateFromStores2.useMemo(() => {
+      let str;
+      const obj = { ref, animation: str };
+      str = "unmute";
+      const CameraLottie = CameraLottie2.CameraLottie;
+      const tmp = closure_15;
       if (stateFromStores1) {
         str = "mute";
       }
-      obj.animation = str;
-      return __initData(CameraLottie.CameraLottie, obj);
+      return tmp(CameraLottie, obj);
     }, items3);
-    callback = closure_4.useCallback((channel) => {
-      CallsUtils.handleToggleVideo(channel);
+    const callback = stateFromStores2.useCallback((channel) => {
+      const obj = CallsUtils;
+      obj.handleToggleVideo(channel);
       if (ref != null) {
         const current = ref.current;
         if (current != null) {
@@ -87,120 +96,124 @@ class VideoButton {
         }
       }
     }, []);
-    closure_6 = callback;
-    items4 = [, , , , ];
-    items4[0] = channel;
-    items4[1] = stateFromStores2;
-    items4[2] = tmp3;
-    items4[3] = stateFromStores;
-    items4[4] = callback;
-    callback1 = closure_4.useCallback(() => {
-      if (stateFromStores2) {
-        if (closure_1) {
-          if (stateFromStores) {
-            const result = openIgnoreThermalStateAlert.openIgnoreThermalStateAlert(() => callback(channel));
+    const items4 = [channel, stateFromStores2, tmp3, stateFromStores, callback];
+    const callback1 = stateFromStores2.useCallback(() => {
+      const tmp = stateFromStores2;
+      if (tmp) {
+        const tmp2 = closure_1;
+        if (tmp2) {
+          const tmp6 = stateFromStores;
+          if (tmp6) {
+            const obj2 = openIgnoreThermalStateAlert;
+            const result = obj2.openIgnoreThermalStateAlert(() => callback(channel));
           } else {
             callback(channel);
           }
         } else {
-          const result1 = CallsUtils.showCameraDisabledAlert();
+          const obj = CallsUtils;
+          const result1 = obj.showCameraDisabledAlert();
         }
       }
     }, items4);
-    tmp12 = jsx;
-    tmp13 = !stateFromStores2;
+    let tmp13 = !stateFromStores2;
+    const ToggledActionButton = stateFromStores(stateFromStores1[21]).ToggledActionButton;
+    const tmp12 = closure_15;
     if (stateFromStores2) {
       tmp13 = !tmp3;
     }
     if (!tmp13) {
-      reachedLimit = !stageHasMedia;
-      if (!stageHasMedia) {
-        reachedLimit = closure_1(closure_3[16])(channel).reachedLimit;
-      }
-      tmp13 = reachedLimit;
+      tmp13 = !stageHasMedia && reachedLimit;
     }
-    obj1 = { appearsDisabled: tmp13, isActive: stateFromStores1, onPress: callback1, accessibilityLabel: null, source: null, isSmallSize: null, lottieComponent: null };
+    obj5 = { appearsDisabled: tmp13, isActive: stateFromStores1, onPress: callback1, accessibilityLabel: intl.string(channel(tmp2[22]).t.HK4JIu), source: tmp(tmp2[23]), isSmallSize, lottieComponent: memo };
     intl = tmp4(tmp2[22]).intl;
-    obj1.accessibilityLabel = intl.string(tmp4(tmp2[22]).t.HK4JIu);
-    obj1.source = tmp(tmp2[23]);
-    obj1.isSmallSize = global.isSmallSize;
-    obj1.lottieComponent = memo;
-    return tmp12(closure_2(closure_3[21]).ToggledActionButton, obj1);
+    return tmp12(ToggledActionButton, obj5);
   }
 }
 class ScreenshareButton {
   constructor(arg0) {
-    tmp = closure_3;
-    ({ channel, isSmallSize } = global);
-    tmp2 = closure_1(closure_3[24])(channel);
-    ({ onPress, isFeatureEnabled, isActive, imgSource } = tmp2);
+    let channel;
+    let imgSource;
+    let intl;
+    let isActive;
+    let isFeatureEnabled;
+    let isSmallSize;
+    let onPress;
+    ({ channel, isSmallSize } = arg0);
+    ({ onPress, isFeatureEnabled, isActive, imgSource } = useScreenshareUtilsDefault(channel));
+    useScreenshareUtilsDefault(channel);
     if (!isFeatureEnabled) {
       onPress = () => {
 
       };
     }
-    obj = { appearsDisabled: !isFeatureEnabled, source: imgSource, isActive, accessibilityLabel: null, onPress: null, isSmallSize: null };
-    intl = closure_0(tmp[22]).intl;
-    obj.accessibilityLabel = intl.string(closure_0(tmp[22]).t.XF1nZz);
-    obj.onPress = onPress;
-    obj.isSmallSize = isSmallSize;
-    return jsx(closure_2(tmp[21]).ToggledActionButton, obj);
+    const obj = { appearsDisabled: !isFeatureEnabled, source: imgSource, isActive, accessibilityLabel: intl.string(intl2.t.XF1nZz), onPress, isSmallSize };
+    const ToggledActionButton = CallBarActionAll.ToggledActionButton;
+    intl = intl2.intl;
+    return closure_15(ToggledActionButton, obj);
   }
 }
 class AudioRouteButton {
-  constructor(arg0) {
-    channel = global.channel;
-    toggleAudio = undefined;
-    closure_2 = undefined;
-    obj = closure_0(closure_3[19]);
-    maskedSpeakerStates = obj.useMaskedSpeakerStates();
-    ({ toggleAudio, isAudioRouteEnabled, routeSource } = maskedSpeakerStates);
-    obj2 = closure_0(closure_3[25]);
-    closure_2 = obj2.useIsConnectedToVoiceChannel(channel);
-    obj1 = {
+  constructor(channel) {
+    let c1;
+    let intl;
+    let isAudioRouteEnabled;
+    let routeSource;
+    channel = channel.channel;
+    c1 = undefined;
+    const isSmallSize = channel.isSmallSize;
+    const obj = CallsUtils;
+    const maskedSpeakerStates = obj.useMaskedSpeakerStates();
+    ({ toggleAudio: c1, isAudioRouteEnabled, routeSource } = maskedSpeakerStates);
+    const obj2 = VoiceChatHooks;
+    let closure_2 = obj2.useIsConnectedToVoiceChannel(channel);
+    const obj3 = {
       isActive: isAudioRouteEnabled,
       source: routeSource,
       onPress() {
-            _undefined(channel.id, closure_2);
-          },
-      accessibilityLabel: null,
-      isSmallSize: null
+        _undefined(channel.id, closure_2);
+      },
+      accessibilityLabel: intl.string(intl2.t["A/Ly/2"]),
+      isSmallSize
     };
-    intl = closure_0(closure_3[22]).intl;
-    obj1.accessibilityLabel = intl.string(closure_0(closure_3[22]).t["A/Ly/2"]);
-    obj1.isSmallSize = global.isSmallSize;
-    return jsx(closure_2(closure_3[21]).ToggledActionButton, obj1);
+    const ToggledActionButton = CallBarActionAll.ToggledActionButton;
+    intl = intl2.intl;
+    return closure_15(ToggledActionButton, obj3);
   }
 }
 class DisconnectCallButton {
-  constructor(arg0) {
-    channel = global.channel;
-    obj = { source: closure_1(closure_3[26]), accessibilityLabel: null, isSmallSize: null, onPress: null };
-    intl = channel(closure_3[22]).intl;
-    obj.accessibilityLabel = intl.string(channel(closure_3[22]).t["6vrfgt"]);
-    obj.isSmallSize = global.isSmallSize;
-    obj.onPress = function onPress() {
-      CallsUtils.handleDisconnect(channel);
+  constructor(channel) {
+    let intl;
+    channel = channel.channel;
+    const isSmallSize = channel.isSmallSize;
+    let obj = {
+      source: AssetRegistryDefault,
+      accessibilityLabel: intl.string(channel(1115).t["6vrfgt"]),
+      isSmallSize,
+      onPress() {
+        const obj = CallsUtils;
+        obj.handleDisconnect(channel);
+      }
     };
-    return jsx(closure_2(closure_3[21]).PrimaryActionButton, obj);
+    const PrimaryActionButton = CallBarActionAll.PrimaryActionButton;
+    intl = channel(1115).intl;
+    return closure_15(PrimaryActionButton, obj);
   }
 }
 class DisconnectStreamButton {
-  constructor(arg0) {
-    channel = global.channel;
-    closure_1 = undefined;
-    closure_2 = undefined;
-    tmp = channel;
-    tmp2 = closure_3;
-    obj = channel(closure_3[15]);
-    items = [, ];
-    items[0] = closure_7;
-    items[1] = closure_10;
-    closure_1 = obj.useStateFromStores(items, () => {
+  constructor(channel) {
+    let closure_1;
+    let intl;
+    channel = channel.channel;
+    const tmp = channel;
+    const isSmallSize = channel.isSmallSize;
+    let obj = channel(504);
+    const items = [ChannelRTCStore, AuthenticationStore];
+    importDefault = obj.useStateFromStores(items, () => {
       const selectedParticipant = ChannelRTCStore.getSelectedParticipant(channel.id);
       if (null != selectedParticipant) {
+        let tmp4;
         if (selectedParticipant.type !== ParticipantTypes.ACTIVITY) {
-          let tmp4 = null;
+          tmp4 = null;
         }
         return tmp4;
       }
@@ -210,102 +223,117 @@ class DisconnectStreamButton {
       }
       tmp4 = id;
     });
-    obj2 = channel(closure_3[15]);
-    items1 = [];
-    items1[0] = closure_9;
-    stateFromStores = obj2.useStateFromStores(items1, () => {
+    let obj2 = channel(504);
+    const items1 = [ApplicationStreamingStore];
+    const stateFromStores = obj2.useStateFromStores(items1, () => {
       let activeStreamForStreamKey = null;
       if (null != closure_1) {
         activeStreamForStreamKey = ApplicationStreamingStore.getActiveStreamForStreamKey(tmp);
       }
       return activeStreamForStreamKey;
     });
-    closure_2 = stateFromStores;
-    tmp4 = null;
+    let tmp4 = null;
     if (null != stateFromStores) {
-      tmp5 = jsx;
-      tmp6 = closure_2;
-      obj1 = { source: null, accessibilityLabel: null, isSmallSize: null, onPress: null };
-      tmp7 = closure_1;
-      obj1.source = closure_1(tmp2[27]);
-      intl = tmp(tmp2[22]).intl;
-      obj1.accessibilityLabel = intl.string(tmp(tmp2[22]).t.q3O3J8);
-      obj1.isSmallSize = global.isSmallSize;
-      obj1.onPress = function onPress() {
-        const participant = ChannelRTCActionCreatorsDefault.selectParticipant(channel.id, null);
-        const obj2 = StreamActionCreators;
-        obj2.stopStream(StreamKeyUtils.encodeStreamKey(stateFromStores));
+      const obj3 = {
+        source: AssetRegistryDefault2,
+        accessibilityLabel: intl.string(tmp(1115).t.q3O3J8),
+        isSmallSize,
+        onPress() {
+            const obj = ChannelRTCActionCreatorsDefault;
+            const participant = obj.selectParticipant(channel.id, null);
+            const stopStream = StreamActionCreators.stopStream;
+            StreamActionCreators;
+            const obj2 = StreamKeyUtils;
+            stopStream(obj2.encodeStreamKey(stateFromStores));
+          }
       };
-      tmp4 = jsx(closure_2(tmp2[21]).PrimaryActionButton, obj1);
+      const PrimaryActionButton = stateFromStores(8855).PrimaryActionButton;
+      intl = tmp(1115).intl;
+      tmp4 = closure_15(PrimaryActionButton, obj3);
     }
     return tmp4;
   }
 }
 function LeaveActivityButton(isSmallSize) {
-  const obj = { accessibilityLabel: null, onPress: null, source: null, isSmallSize: null };
-  const intl = util.intl;
-  obj.accessibilityLabel = intl.string(util.t.k0Aph0);
-  obj.onPress = function onPress() {
-    currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
-    let _location;
-    if (currentEmbeddedActivity != null) {
-      _location = currentEmbeddedActivity.location;
-    }
-    const obj2 = { location: _location, applicationId: null };
-    let applicationId;
-    if (currentEmbeddedActivity != null) {
-      applicationId = currentEmbeddedActivity.applicationId;
-    }
-    obj2.applicationId = applicationId;
-    EmbeddedActivitiesNativeManagerDefault.leaveActivity(obj2);
+  let intl;
+  isSmallSize = isSmallSize.isSmallSize;
+  let obj = {
+    accessibilityLabel: intl.string(intl2.t.k0Aph0),
+    onPress() {
+      let applicationId;
+      currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
+      let _location;
+      const leaveActivity = EmbeddedActivitiesNativeManagerDefault.leaveActivity;
+      EmbeddedActivitiesNativeManagerDefault;
+      if (currentEmbeddedActivity != null) {
+        _location = currentEmbeddedActivity.location;
+      }
+      const obj = { location: _location, applicationId };
+      applicationId = undefined;
+      if (currentEmbeddedActivity != null) {
+        applicationId = currentEmbeddedActivity.applicationId;
+      }
+      leaveActivity(obj);
+    },
+    source: AssetRegistryDefault3,
+    isSmallSize
   };
-  obj.source = _modDef9432;
-  obj.isSmallSize = isSmallSize.isSmallSize;
-  return __initData(CallBarActionAll.PrimaryActionButton, obj);
+  const PrimaryActionButton = CallBarActionAll.PrimaryActionButton;
+  intl = intl2.intl;
+  return closure_15(PrimaryActionButton, obj);
 }
 function useActionBarSecondButton(channel) {
+  let AUDIO_ROUTE2;
   channel = channel.channel;
-  let isConnectedToVoiceChannel = VoiceChatHooks.useIsConnectedToVoiceChannel(channel);
+  const obj = VoiceChatHooks;
+  let isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
+  const isActive = useScreenshareUtilsDefault(channel).isActive;
   const tmp2 = useIsRemoteDefault();
   let tmp4 = isConnectedToVoiceChannel;
+  const AUDIO_ROUTE = obj4.AUDIO_ROUTE;
   if (isConnectedToVoiceChannel) {
     tmp4 = !tmp2;
   }
   const obj2 = {};
-  obj2[obj5.AUDIO_ROUTE] = tmp4;
-  obj2[obj5.NONE] = true;
-  let isActive = isConnectedToVoiceChannel;
+  obj2[AUDIO_ROUTE] = tmp4;
+  obj2[obj4.NONE] = true;
+  let tmp5 = isConnectedToVoiceChannel;
+  const SCREEN_SHARE_END = tmp3.SCREEN_SHARE_END;
   if (isConnectedToVoiceChannel) {
-    isActive = !tmp2;
+    tmp5 = !tmp2;
   }
-  if (isActive) {
-    isActive = useScreenshareUtilsDefault(channel).isActive;
+  if (tmp5) {
+    tmp5 = isActive;
   }
-  obj2[obj5.SCREEN_SHARE_END] = isActive;
+  obj2[SCREEN_SHARE_END] = tmp5;
+  const SCREEN_SHARE_START = tmp3.SCREEN_SHARE_START;
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = !tmp2;
   }
-  obj2[obj5.SCREEN_SHARE_START] = isConnectedToVoiceChannel;
-  if (obj2[obj5.SCREEN_SHARE_END]) {
-    let AUDIO_ROUTE = tmp3.SCREEN_SHARE_END;
+  obj2[SCREEN_SHARE_START] = isConnectedToVoiceChannel;
+  if (obj2[obj4.SCREEN_SHARE_END]) {
+    AUDIO_ROUTE2 = tmp3.SCREEN_SHARE_END;
   } else {
-    if (!obj2[tmp3.AUDIO_ROUTE]) {
-      AUDIO_ROUTE = obj2[tmp3.SCREEN_SHARE_START] ? tmp3.SCREEN_SHARE_START : tmp3.NONE;
+    if (!obj2[obj4.AUDIO_ROUTE]) {
+      AUDIO_ROUTE2 = obj2[tmp3.SCREEN_SHARE_START] ? tmp3.SCREEN_SHARE_START : tmp3.NONE;
     }
-    AUDIO_ROUTE = tmp3.AUDIO_ROUTE;
+    AUDIO_ROUTE2 = tmp3.AUDIO_ROUTE;
   }
-  return AUDIO_ROUTE;
+  return AUDIO_ROUTE2;
 }
 function useActionBarPrimaryButtons(channel) {
+  let currentEmbeddedActivity;
   channel = channel.channel;
-  const isConnectedToVoiceChannel = channel(8833).useIsConnectedToVoiceChannel(channel);
-  const obj = channel(8833);
+  let obj = channel(8833);
+  const isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const items = [ChannelRTCStore, AuthenticationStore];
-  closure_1 = channel(504).useStateFromStores(items, () => {
+  const obj2 = channel(504);
+  let closure_1 = obj2.useStateFromStores(items, () => {
     const selectedParticipant = ChannelRTCStore.getSelectedParticipant(channel.id);
     if (null != selectedParticipant) {
+      let tmp4;
       if (selectedParticipant.type !== ParticipantTypes.ACTIVITY) {
-        let tmp4 = null;
+        tmp4 = null;
       }
       return tmp4;
     }
@@ -315,81 +343,99 @@ function useActionBarPrimaryButtons(channel) {
     }
     tmp4 = id;
   });
-  const obj2 = channel(504);
   const items1 = [ApplicationStreamingStore];
-  const stateFromStores = channel(504).useStateFromStores(items1, () => {
+  const obj3 = channel(504);
+  const stateFromStores = obj3.useStateFromStores(items1, () => {
     let activeStreamForStreamKey = null;
     if (null != closure_1) {
       activeStreamForStreamKey = ApplicationStreamingStore.getActiveStreamForStreamKey(tmp);
     }
     return activeStreamForStreamKey;
   });
-  const obj3 = channel(504);
   const items2 = [EmbeddedActivitiesStore];
-  const stateFromStores1 = channel(504).useStateFromStores(items2, () => null != currentEmbeddedActivity.getCurrentEmbeddedActivity());
-  const obj4 = channel(504);
+  obj4 = channel(504);
+  const stateFromStores1 = obj4.useStateFromStores(items2, () => null != currentEmbeddedActivity.getCurrentEmbeddedActivity());
+  obj5 = channel(504);
   const items3 = [GameConsoleStore];
-  const stateFromStoresObject = channel(504).useStateFromStoresObject(items3, () => ({ awaitingRemote: null != GameConsoleStore.getAwaitingRemoteSessionInfo(), remoteSessionId: GameConsoleStore.getRemoteSessionId() }));
+  const stateFromStoresObject = obj5.useStateFromStoresObject(items3, () => {
+    const obj = { awaitingRemote: null != GameConsoleStore.getAwaitingRemoteSessionInfo(), remoteSessionId: GameConsoleStore.getRemoteSessionId() };
+    return obj;
+  });
   let awaitingRemote = stateFromStoresObject.awaitingRemote;
-  obj6 = { [closure_27.END_ACTIVITY]: stateFromStores1, [closure_27.END_CALL]: isConnectedToVoiceChannel };
+  const obj6 = { [closure_27.END_ACTIVITY]: stateFromStores1, [closure_27.END_CALL]: isConnectedToVoiceChannel };
+  const END_REMOTE = obj5.END_REMOTE;
+  const tmp6 = obj5;
   if (!awaitingRemote) {
     awaitingRemote = null != tmp5;
   }
-  obj6[obj6.END_REMOTE] = awaitingRemote;
-  obj6[obj6.END_STREAM] = null != stateFromStores;
+  obj6[END_REMOTE] = awaitingRemote;
+  obj6[tmp6.END_STREAM] = null != stateFromStores;
   return obj6;
 }
-const View = fn(17).View;
-const ParticipantTypes = fn(4857).ParticipantTypes;
-const Features = fn(4861).Features;
-const jsxProd = fn(21);
-({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { height: fn(8854).CALL_ACTION_BAR_HEIGHT, justifyContent: "center", alignItems: "center", flexDirection: "row" }, containerForFiveButtonLayout: null };
-let obj3 = { height: fn(8854).CALL_ACTION_BAR_HEIGHT, justifyContent: "center", alignItems: "center", flexDirection: "row" };
-obj2.containerForFiveButtonLayout = { height: fn(8854).FIVE_BUTTON_LAYOUT_ACTION_BAR_HEIGHT, paddingHorizontal: 16, paddingTop: fn(8854).FIVE_BUTTON_CONTAINER_PADDING_TOP, paddingBottom: fn(8854).FIVE_BUTTON_CONTAINER_PADDING_BOTTOM, justifyContent: "center", flexDirection: "row" };
-let closure_18 = createStyles.createStyles(obj2);
-let obj5 = { NONE: 0, [0]: "NONE", SCREEN_SHARE_START: 1, [1]: "SCREEN_SHARE_START", SCREEN_SHARE_END: 2, [2]: "SCREEN_SHARE_END", AUDIO_ROUTE: 3, [3]: "AUDIO_ROUTE" };
-let obj6 = { END_STREAM: 0, [0]: "END_STREAM", END_ACTIVITY: 1, [1]: "END_ACTIVITY", END_CALL: 2, [2]: "END_CALL", END_REMOTE: 3, [3]: "END_REMOTE" };
-const size = fn(2);
+const View = react_native.View;
+const ParticipantTypes = CallConstants.ParticipantTypes;
+const Features = Constants.Features;
+({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, containerForFiveButtonLayout: obj3 };
+obj2 = { height: useActionBarHeight.CALL_ACTION_BAR_HEIGHT, justifyContent: "center", alignItems: "center", flexDirection: "row" };
+createStyles = createStyles.createStyles;
+obj3 = { height: useActionBarHeight.FIVE_BUTTON_LAYOUT_ACTION_BAR_HEIGHT, paddingHorizontal: 16, paddingTop: useActionBarHeight.FIVE_BUTTON_CONTAINER_PADDING_TOP, paddingBottom: useActionBarHeight.FIVE_BUTTON_CONTAINER_PADDING_BOTTOM, justifyContent: "center", flexDirection: "row" };
+let closure_18 = createStyles(obj);
+let obj4 = { NONE: 0, [0]: "NONE", SCREEN_SHARE_START: 1, [1]: "SCREEN_SHARE_START", SCREEN_SHARE_END: 2, [2]: "SCREEN_SHARE_END", AUDIO_ROUTE: 3, [3]: "AUDIO_ROUTE" };
+let obj5 = { END_STREAM: 0, [0]: "END_STREAM", END_ACTIVITY: 1, [1]: "END_ACTIVITY", END_CALL: 2, [2]: "END_CALL", END_REMOTE: 3, [3]: "END_REMOTE" };
 let result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallActionBar.tsx");
 
 export default function ChannelCallActionBar(arg0) {
+  let END_REMOTE;
+  let channel;
+  let obj3;
+  let shouldShowConnectingScreen;
+  let tmp12;
+  let tmp13Result;
   ({ channel, shouldShowConnectingScreen } = arg0);
   if (shouldShowConnectingScreen === undefined) {
     shouldShowConnectingScreen = false;
   }
   const tmp = closure_18();
+  const tmp4 = useIsRemoteDefault();
   const tmp5 = useActionBarSecondButton({ channel });
   const tmp6 = useActionBarPrimaryButtons({ channel });
-  if (tmp6[obj6.END_STREAM]) {
-    let END_REMOTE = tmp7.END_STREAM;
-  } else if (tmp6[tmp7.END_REMOTE]) {
+  if (tmp6[obj5.END_STREAM]) {
+    END_REMOTE = tmp7.END_STREAM;
+  } else if (tmp6[obj5.END_REMOTE]) {
     END_REMOTE = tmp7.END_REMOTE;
   } else {
     END_REMOTE = tmp6[tmp7.END_ACTIVITY] ? tmp7.END_ACTIVITY : tmp7.END_CALL;
   }
-  const tmp4 = useIsRemoteDefault();
   const tmp2Result = useAnalyticsLocationsDefault;
-  const isFiveButtonLayout = useIsFiveButtonLayout.useIsFiveButtonLayout(channel.id);
-  const obj2 = { value: tmp2Result(AnalyticsLocationDefault.CHANNEL_CALL_ACTION_BAR).analyticsLocations, children: null };
-  const obj3 = { pointerEvents: "box-none", style: isFiveButtonLayout ? tmp.containerForFiveButtonLayout : tmp.container, children: null };
+  const analyticsLocations = tmp2Result(tmp2(6603).CHANNEL_CALL_ACTION_BAR).analyticsLocations;
+  const obj = useIsFiveButtonLayout;
+  const isFiveButtonLayout = obj.useIsFiveButtonLayout(channel.id);
+  const obj2 = { value: analyticsLocations, children: closure_15(tmp12, obj3) };
+  obj3 = { pointerEvents: "box-none", style: isFiveButtonLayout ? tmp.containerForFiveButtonLayout : tmp.container, children: tmp13Result };
+  const AnalyticsLocationProvider = useAnalyticsLocations.AnalyticsLocationProvider;
+  tmp12 = View;
   if (shouldShowConnectingScreen) {
-    const obj4 = { channel };
-    let tmp13Result = tmp11(tmp9(9433).CallConnectingActionBar, obj4);
+    obj4 = { channel };
+    tmp13Result = tmp11(tmp9(9433).CallConnectingActionBar, obj4);
   } else {
+    let tmp11Result5;
+    let tmp11Result6;
     let tmp11Result4 = null;
+    const tmp13 = closure_17;
+    const tmp14 = authStore3;
     if (!tmp4) {
       obj5 = { channel, isSmallSize: isFiveButtonLayout };
       tmp11Result4 = tmp11(VideoButton, obj5);
     }
     const items = [tmp11Result4, , , ];
-    if (obj5.AUDIO_ROUTE === tmp5) {
-      obj6 = { isSmallSize: isFiveButtonLayout, channel };
-      let tmp11Result5 = tmp11(AudioRouteButton, obj6);
+    if (obj4.AUDIO_ROUTE === tmp5) {
+      const obj6 = { isSmallSize: isFiveButtonLayout, channel };
+      tmp11Result5 = tmp11(AudioRouteButton, obj6);
     } else {
-      if (tmp17.SCREEN_SHARE_START !== tmp5) {
-        if (tmp17.SCREEN_SHARE_END !== tmp5) {
+      if (obj4.SCREEN_SHARE_START !== tmp5) {
+        if (obj4.SCREEN_SHARE_END !== tmp5) {
           const NONE = tmp17.NONE;
           tmp11Result5 = null;
         }
@@ -399,71 +445,75 @@ export default function ChannelCallActionBar(arg0) {
     }
     items[1] = tmp11Result5;
     const obj8 = { channel, isSmallSize: isFiveButtonLayout };
-    items[2] = tmp11(tmp9(9462).ChannelCallMicButton, obj8);
-    if (tmp7.END_REMOTE === END_REMOTE) {
+    items[2] = closure_15(ChannelCallMicButton.ChannelCallMicButton, obj8);
+    if (obj5.END_REMOTE === END_REMOTE) {
       const obj9 = { channel, isSmallSize: isFiveButtonLayout };
-      let tmp11Result6 = tmp11(tmp9(9472).DisconnectRemoteButton, obj9);
-    } else if (tmp7.END_STREAM === END_REMOTE) {
+      tmp11Result6 = tmp11(tmp9(9472).DisconnectRemoteButton, obj9);
+    } else if (obj5.END_STREAM === END_REMOTE) {
       const obj10 = { channel, isSmallSize: isFiveButtonLayout };
       tmp11Result6 = tmp11(DisconnectStreamButton, obj10);
-    } else if (tmp7.END_ACTIVITY === END_REMOTE) {
+    } else if (obj5.END_ACTIVITY === END_REMOTE) {
       const obj11 = { isSmallSize: isFiveButtonLayout };
       tmp11Result6 = tmp11(LeaveActivityButton, obj11);
     } else {
       tmp11Result6 = null;
-      if (tmp7.END_CALL === END_REMOTE) {
+      if (obj5.END_CALL === END_REMOTE) {
         const obj12 = { channel, isSmallSize: isFiveButtonLayout };
         tmp11Result6 = tmp11(DisconnectCallButton, obj12);
       }
     }
-    const obj13 = { children: null };
+    const obj13 = { children: items };
     items[3] = tmp11Result6;
-    obj13.children = items;
-    tmp13Result = closure_1_17(value2, obj13);
+    tmp13Result = tmp13(tmp14, obj13);
   }
-  obj3.children = tmp13Result;
-  obj2.children = __initData(View, obj3);
-  return __initData(useAnalyticsLocations.AnalyticsLocationProvider, obj2);
+  return closure_15(AnalyticsLocationProvider, obj2);
 };
 export { VideoButton };
 export { ScreenshareButton };
 export { AudioRouteButton };
 export { DisconnectCallButton };
 export { DisconnectStreamButton };
-export const ActionBarSecondButton = obj5;
+export const ActionBarSecondButton = obj4;
 export const useActionBarSecondButtons = function useActionBarSecondButtons(channel) {
   channel = channel.channel;
-  let isConnectedToVoiceChannel = VoiceChatHooks.useIsConnectedToVoiceChannel(channel);
+  const obj = VoiceChatHooks;
+  let isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
+  const isActive = useScreenshareUtilsDefault(channel).isActive;
   const tmp2 = useIsRemoteDefault();
   let tmp4 = isConnectedToVoiceChannel;
+  const AUDIO_ROUTE = obj4.AUDIO_ROUTE;
   if (isConnectedToVoiceChannel) {
     tmp4 = !tmp2;
   }
   const obj2 = {};
-  obj2[obj5.AUDIO_ROUTE] = tmp4;
-  obj2[obj5.NONE] = true;
-  let isActive = isConnectedToVoiceChannel;
+  obj2[AUDIO_ROUTE] = tmp4;
+  obj2[obj4.NONE] = true;
+  let tmp5 = isConnectedToVoiceChannel;
+  const SCREEN_SHARE_END = tmp3.SCREEN_SHARE_END;
   if (isConnectedToVoiceChannel) {
-    isActive = !tmp2;
+    tmp5 = !tmp2;
   }
-  if (isActive) {
-    isActive = useScreenshareUtilsDefault(channel).isActive;
+  if (tmp5) {
+    tmp5 = isActive;
   }
-  obj2[obj5.SCREEN_SHARE_END] = isActive;
+  obj2[SCREEN_SHARE_END] = tmp5;
+  const SCREEN_SHARE_START = tmp3.SCREEN_SHARE_START;
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = !tmp2;
   }
-  obj2[obj5.SCREEN_SHARE_START] = isConnectedToVoiceChannel;
+  obj2[SCREEN_SHARE_START] = isConnectedToVoiceChannel;
   return obj2;
 };
 export { useActionBarSecondButton };
-export const ActionBarPrimaryButton = obj6;
+export const ActionBarPrimaryButton = obj5;
 export { useActionBarPrimaryButtons };
 export const useActionBarPrimaryButton = function useActionBarPrimaryButton(channel) {
-  const tmp = useActionBarPrimaryButtons({ channel: channel.channel });
-  if (tmp[obj6.END_STREAM]) {
-    let END_REMOTE = tmp2.END_STREAM;
-  } else if (tmp[tmp2.END_REMOTE]) {
+  let END_REMOTE;
+  const obj = { channel: channel.channel };
+  const tmp = useActionBarPrimaryButtons(obj);
+  if (tmp[obj5.END_STREAM]) {
+    END_REMOTE = tmp2.END_STREAM;
+  } else if (tmp[obj5.END_REMOTE]) {
     END_REMOTE = tmp2.END_REMOTE;
   } else {
     END_REMOTE = tmp[tmp2.END_ACTIVITY] ? tmp2.END_ACTIVITY : tmp2.END_CALL;

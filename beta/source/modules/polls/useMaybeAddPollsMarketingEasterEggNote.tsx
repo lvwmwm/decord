@@ -5,15 +5,14 @@
 // Exports: default
 
 // Module 9796 (useMaybeAddPollsMarketingEasterEggNote)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx");
 
 export default function useMaybeAddPollsMarketingEasterEggNote(emojiName) {
-  initialize;
+  get_initialized;
   [][0] = LocaleStore;
   let formatToPlainStringResult = emojiName;
   if (":pizza:" === emojiName) {

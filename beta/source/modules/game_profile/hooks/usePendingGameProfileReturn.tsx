@@ -5,22 +5,24 @@
 // Exports: default
 
 // Module 11928 (usePendingGameProfileReturn)
+import Constants from "Constants" /* 1074 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8133 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2001 */;
 import GameProfileStore from "GameProfileStore" /* 8135 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AVATAR_SIZE = fn(1074).AVATAR_SIZE;
-const size = fn(2);
+const AVATAR_SIZE = Constants.AVATAR_SIZE;
 const result = size.fileFinishedImporting("modules/game_profile/hooks/usePendingGameProfileReturn.tsx");
 
 export default function usePendingGameProfileReturn(channelId) {
+  let name;
   channelId = channelId.channelId;
   let stateFromStores1;
+  let obj = channelId(stateFromStores1[4]);
   const items = [GameProfileStore];
-  const stateFromStores = channelId(stateFromStores1[4]).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const pendingReturn = GameProfileStore.getPendingReturn();
     let tmp2 = null;
     if (null != pendingReturn) {
@@ -32,15 +34,18 @@ export default function usePendingGameProfileReturn(channelId) {
     return tmp2;
   });
   const items1 = [stateFromStores];
-  const callback = noop.useCallback(() => {
+  let tmp2 = react;
+  const callback = react.useCallback(() => {
     if (null != stateFromStores) {
-      const obj2 = { gameId: tmp.gameId, source: GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn, initialScrollOffset: tmp.initialScrollOffset };
-      GameProfileActionCreatorsDefault.returnToGameProfile(obj2);
+      const obj = { gameId: stateFromStores.gameId, source: GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn, initialScrollOffset: stateFromStores.initialScrollOffset };
+      const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
+      GameProfileActionCreatorsDefault;
+      returnToGameProfile(obj);
     }
   }, items1);
-  let obj = channelId(stateFromStores1[4]);
   const items2 = [GameStore];
-  stateFromStores1 = channelId(stateFromStores1[4]).useStateFromStores(items2, () => {
+  const obj2 = channelId(stateFromStores1[4]);
+  stateFromStores1 = obj2.useStateFromStores(items2, () => {
     let gameId;
     if (stateFromStores != null) {
       gameId = tmp.gameId;
@@ -52,19 +57,23 @@ export default function usePendingGameProfileReturn(channelId) {
     return game;
   });
   let id;
+  const useEffect = react.useEffect;
   if (stateFromStores1 != null) {
     id = stateFromStores1.id;
   }
   const items3 = [id];
-  const effect = noop.useEffect(() => {
+  const effect = useEffect(() => {
     let id;
     if (stateFromStores1 != null) {
       id = stateFromStores1.id;
     }
-    return null != id ? (() => stateFromStores(stateFromStores1[5]).clearGameProfilePendingReturn(id.id)) : undefined;
+    return null != id ? (() => {
+      const obj = stateFromStores(stateFromStores1[5]);
+      return obj.clearGameProfilePendingReturn(id.id);
+    }) : undefined;
   }, items3);
   if (stateFromStores1 != null) {
-    const name = stateFromStores1.name;
+    name = stateFromStores1.name;
   }
   if (null != stateFromStores1) {
     if (null != name) {
@@ -72,8 +81,7 @@ export default function usePendingGameProfileReturn(channelId) {
       if (stateFromStores1 != null) {
         iconURL = stateFromStores1.getIconURL(AVATAR_SIZE);
       }
-      const obj3 = { gameId: stateFromStores1.id, gameName: name, gameIconUrl: iconURL, onReturnToGameProfile: callback };
-      return obj3;
+      return { gameId: stateFromStores1.id, gameName: name, gameIconUrl: iconURL, onReturnToGameProfile: callback };
     }
   }
   return null;

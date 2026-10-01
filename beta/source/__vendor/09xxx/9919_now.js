@@ -9,8 +9,6 @@ import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9898 */;
 import Meridiem from "Meridiem" /* 9900 */;
 import assignSimilarDate from "assignSimilarDate" /* 9901 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const now = function now(getDateWithAdjustedTimezone) {
   const dateWithAdjustedTimezone = getDateWithAdjustedTimezone.getDateWithAdjustedTimezone();
@@ -51,10 +49,11 @@ export const tomorrow = function tomorrow(reference) {
   return parsingComponents.addTag("casualReference/tomorrow");
 };
 export const theDayBefore = function theDayBefore(reference, arg1) {
+  const tmp = -arg1;
   const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
   const parsingComponents = new ReferenceWithTimezone.ParsingComponents(reference, {});
   const date = new Date(dateWithAdjustedTimezone.getTime());
-  date.setDate(date.getDate() + -arg1);
+  date.setDate(date.getDate() + tmp);
   assignSimilarDate.assignSimilarDate(parsingComponents, date);
   assignSimilarDate.implySimilarTime(parsingComponents, date);
   parsingComponents.delete("meridiem");
@@ -93,6 +92,8 @@ export const lastNight = function lastNight(reference, date) {
   date = dateWithAdjustedTimezone;
   if (dateWithAdjustedTimezone.getHours() < 6) {
     const _Date = Date;
+    const self = this;
+    const self2 = this;
     date = new Date(dateWithAdjustedTimezone.getTime() - 86400000);
   }
   assignSimilarDate.assignSimilarDate(parsingComponents, date);
@@ -117,7 +118,8 @@ export const yesterdayEvening = function yesterdayEvening(reference, date) {
   }
   const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
   const parsingComponents = new ReferenceWithTimezone.ParsingComponents(reference, {});
-  assignSimilarDate.assignSimilarDate(parsingComponents, new Date(dateWithAdjustedTimezone.getTime() - 86400000));
+  date = new Date(dateWithAdjustedTimezone.getTime() - 86400000);
+  assignSimilarDate.assignSimilarDate(parsingComponents, date);
   parsingComponents.imply("hour", num);
   parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
   parsingComponents.addTag("casualReference/yesterday");

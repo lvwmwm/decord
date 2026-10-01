@@ -4,18 +4,20 @@
 
 // Module 13679
 import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
-import _mod13680 from "module_13680" /* 13680 */;
+import AssetRegistry from "AssetRegistry" /* 13680 */;
 import module_1154_mod from "module_1154" /* 1154 */;
 import size from "module_2" /* 2 */;
 
-let module_1154 = module_1154_mod;
-const loader = module_1154.createLoader({
-  () => {
-    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod13680);
+let obj = {
+  "en-US": () => {
+    const obj = AssetJsonUtils;
+    const jsonAsset = obj.loadJsonAsset(AssetRegistry);
     return jsonAsset.then((result) => ({ default: result }));
   }
-}, "en-US");
+};
 let module_1154 = module_1154_mod;
+const loader = module_1154.createLoader(obj, "en-US");
+module_1154 = module_1154_mod;
 const messagesProxy = module_1154.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("intl/messages/international.messages.js");
 

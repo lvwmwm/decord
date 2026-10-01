@@ -8,10 +8,11 @@ import SafeAreaConstants from "SafeAreaConstants" /* 1615 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
-const obj = { safeAreaInsets: SafeAreaConstants.INITIAL_SAFE_AREA_INSETS };
-const result = size.fileFinishedImporting("modules/safe_area/SafeAreaStore.native.tsx");
-
-export default module_560.create(() => {
-  share = { byAppEntry: { main: share, share } };
+({ safeAreaInsets: SafeAreaConstants.INITIAL_SAFE_AREA_INSETS });
+const obj2 = module_560.create(() => {
+  const share = { byAppEntry: obj2 };
   return share;
 });
+const result = size.fileFinishedImporting("modules/safe_area/SafeAreaStore.native.tsx");
+
+export default obj2;

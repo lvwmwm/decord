@@ -4,52 +4,60 @@
 // Dependencies: [19, 17, 8371, 21, 4836, 576, 1115, 4566, 2]
 
 // Module 8379 (ActionSheetDragHandle)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 8371 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ TouchableWithoutFeedback: c3, View: closure_4 } = get_ActivityIndicator);
-const ActionSheetDragHandleConstants = fn(8371);
+let accessibilityLabel;
+
+let DRAG_HANDLE_BAR_HEIGHT;
+let DRAG_HANDLE_HEIGHT;
+let DRAG_HANDLE_PADDING;
+let c3;
+let closure_4;
+let size;
+({ TouchableWithoutFeedback: c3, View: closure_4 } = react_native);
 ({ DRAG_HANDLE_BAR_HEIGHT, DRAG_HANDLE_PADDING, DRAG_HANDLE_HEIGHT } = ActionSheetDragHandleConstants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: { position: "absolute", top: 0, left: 0, right: 0 }, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING }, bar: null };
-let size = { backgroundColor: nativeDefault.colors.ICON_MUTED, borderRadius: nativeDefault.radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
-obj.bar = size;
+const jsx = Fragment.jsx;
+const obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: { position: "absolute", top: 0, left: 0, right: 0 }, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING }, bar: size };
+size = { backgroundColor: nativeDefault.colors.ICON_MUTED, borderRadius: nativeDefault.radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
 let closure_6 = createStyles.createStyles(obj);
-size = fn(2);
-const result = size.fileFinishedImporting("design/components/experimental/ActionSheetDragHandle/native/ActionSheetDragHandle.native.tsx");
-
-export const ActionSheetDragHandle = noop.memo((accessibilityLabel) => {
+const memoResult = react.memo((accessibilityLabel) => {
+  let items1;
+  let onPress;
+  let overlay;
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
   ({ onPress, overlay } = accessibilityLabel);
   if (accessibilityLabel === undefined) {
-    const intl = util.intl;
-    accessibilityLabel = intl.string(util.t.WAI6xu);
+    const intl = intl2.intl;
+    accessibilityLabel = intl.string(intl2.t.WAI6xu);
   }
   const animatedBarStyles = accessibilityLabel.animatedBarStyles;
-  const tmp3 = closure_6();
-  const items = [tmp3.container, ];
+  const prop = accessibilityLabel["aria-hidden"];
+  const tmp4 = closure_6();
+  const items = [tmp4.container, ];
   let containerOverlay = null;
   if (null != overlay) {
-    containerOverlay = tmp3.containerOverlay;
+    containerOverlay = tmp4.containerOverlay;
   }
-  const obj = { style: items, accessibilityLabel, accessibilityRole: "button", "aria-hidden": accessibilityLabel["aria-hidden"], onPress, children: null };
   items[1] = containerOverlay;
-  const obj2 = { style: tmp3.handle, children: null };
   if (null != animatedBarStyles) {
-    const obj3 = { style: null };
-    const items1 = [tmp3.bar, animatedBarStyles];
-    obj3.style = items1;
-    let tmp4Result = tmp4(ReanimatedRexportDefault.View, obj3);
+    const obj3 = { style: items1 };
+    items1 = [tmp4.bar, animatedBarStyles];
+    let tmp5Result = tmp5(ReanimatedRexportDefault.View, obj3);
   } else {
-    const obj4 = { style: tmp3.bar };
-    tmp4Result = tmp4(tmp7, obj4);
+    const obj4 = { style: tmp4.bar };
+    tmp5Result = tmp5(tmp8, obj4);
   }
-  obj2.children = tmp4Result;
-  obj.children = <React4 style={tmp3.handle}>{null}</React4>;
-  return <React3 style={items} accessibilityLabel={accessibilityLabel} accessibilityRole="button" aria-hidden={arg0["aria-hidden"]} onPress={onPress}>{null}</React3>;
+  return <tmp6 style={items} accessibilityLabel={accessibilityLabel} accessibilityRole="button" aria-hidden={prop} onPress={onPress}>{null}</tmp6>;
 });
+size = size_mod;
+const result = size.fileFinishedImporting("design/components/experimental/ActionSheetDragHandle/native/ActionSheetDragHandle.native.tsx");
+
+export const ActionSheetDragHandle = memoResult;

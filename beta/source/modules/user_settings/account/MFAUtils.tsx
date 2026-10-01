@@ -6,17 +6,21 @@
 
 // Module 14328 (account/MFAUtils)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import MFAUtils from "MFAUtils" /* 6370 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
-({ GuildFeatures: hasOwnProperty, Permissions: metroRequire, UserFlags: closure_7 } = Constants);
+let features;
+
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+({ GuildFeatures: hasOwnProperty, Permissions: metroRequire, UserFlags: metroImportDefault } = Constants);
 const MFAAvailability = { AVAILABLE: "available", UNAVAILABLE_NO_CRYPTO: "unavailable_no_crypto", UNAVAILABLE_UNVERIFIED: "unavailable_unverified" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/account/MFAUtils.tsx");
 
 export const getSMSBackupDisabledMessage = function getSMSBackupDisabledMessage(stateFromStores) {
@@ -24,52 +28,61 @@ export const getSMSBackupDisabledMessage = function getSMSBackupDisabledMessage(
   if (arg1 === undefined) {
     flag = false;
   }
-  if (null == stateFromStores) {
-    return null;
-  } else {
-    if (!stateFromStores.hasAnyStaffLevel()) {
-      if (stateFromStores.hasFlag(constants.PARTNER)) {
-        const intl2 = util.intl;
-        const string2 = intl2.string;
-        let t = util.t;
-        if (flag) {
-          t = t["9UucjT"];
-          let string2Result = string2(t);
-        } else {
-          string2Result = string2(t.Sq6Q1u);
-        }
-      } else if (null == stateFromStores.email) {
-        const intl = util.intl;
+  let tmp = null;
+  if (null != stateFromStores) {
+    let tmp3;
+    if (stateFromStores.hasAnyStaffLevel()) {
+      let string3Result;
+      const intl3 = intl4.intl;
+      const string3 = intl3.string;
+      const t3 = intl4.t;
+      if (flag) {
+        string3Result = string3(t3.YJGvuD);
+      } else {
+        string3Result = string3(t3["3iKih7"]);
+      }
+      tmp3 = string3Result;
+    } else if (stateFromStores.hasFlag(metroImportDefault.PARTNER)) {
+      let string2Result;
+      const intl2 = intl4.intl;
+      const string2 = intl2.string;
+      const t2 = intl4.t;
+      if (flag) {
+        string2Result = string2(t2["9UucjT"]);
+      } else {
+        string2Result = string2(t2.Sq6Q1u);
+      }
+      tmp3 = string2Result;
+    } else {
+      tmp3 = null;
+      if (null == stateFromStores.email) {
+        let stringResult;
+        const intl = intl4.intl;
         const string = intl.string;
-        let t1 = util.t;
+        const t = intl4.t;
         if (flag) {
-          t1 = t1["9VWpT9"];
-          let stringResult = string(t1);
+          stringResult = string(t["9VWpT9"]);
         } else {
-          stringResult = string(t1.LfCBZG);
+          stringResult = string(t.LfCBZG);
         }
+        tmp3 = stringResult;
       }
     }
-    const intl3 = util.intl;
-    const string3 = intl3.string;
-    let YJGvuD = util.t;
-    if (flag) {
-      YJGvuD = YJGvuD.YJGvuD;
-      let string3Result = string3(YJGvuD);
-    } else {
-      string3Result = string3(YJGvuD["3iKih7"]);
-    }
+    tmp = tmp3;
   }
+  return tmp;
 };
 export const useIsMFAEnabled = function useIsMFAEnabled() {
   const items = [UserStore];
-  return useStateFromStores.useStateFromStores(items, () => {
+  const obj = useStateFromStores;
+  return obj.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     return null != currentUser && currentUser.mfaEnabled;
   });
 };
 export { MFAAvailability };
 export const useMFAAvailability = function useMFAAvailability() {
+  let UNAVAILABLE_NO_CRYPTO;
   const obj = useStateFromStores;
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -81,14 +94,17 @@ export const useMFAAvailability = function useMFAAvailability() {
     return verified;
   });
   if (MFAUtils.hasCrypto) {
+    let AVAILABLE;
     if (false === stateFromStores) {
-      let AVAILABLE = obj.UNAVAILABLE_UNVERIFIED;
+      AVAILABLE = obj.UNAVAILABLE_UNVERIFIED;
     } else {
       AVAILABLE = obj.AVAILABLE;
     }
+    UNAVAILABLE_NO_CRYPTO = AVAILABLE;
   } else {
-    return obj.UNAVAILABLE_NO_CRYPTO;
+    UNAVAILABLE_NO_CRYPTO = obj.UNAVAILABLE_NO_CRYPTO;
   }
+  return UNAVAILABLE_NO_CRYPTO;
 };
 export const use2FARemoveDisableReason = function use2FARemoveDisableReason() {
   let flag = arg0;
@@ -96,44 +112,46 @@ export const use2FARemoveDisableReason = function use2FARemoveDisableReason() {
     flag = false;
   }
   const items = [GuildStore, PermissionStore, UserStore];
-  return flag(563).useStateFromStores(items, () => {
+  const obj = flag(563);
+  return obj.useStateFromStores(items, () => {
+    let constants2;
+    let tmp3;
     const currentUser = UserStore.getCurrentUser();
     let hasAnyStaffLevelResult;
     if (currentUser != null) {
       hasAnyStaffLevelResult = currentUser.hasAnyStaffLevel();
     }
     if (hasAnyStaffLevelResult) {
-      const intl2 = util.intl;
+      let string2Result;
+      const intl2 = intl4.intl;
       const string2 = intl2.string;
-      let hxf9fX = util.t;
+      const t2 = intl4.t;
       if (flag) {
-        hxf9fX = hxf9fX.hxf9fX;
-        let string2Result = string2(hxf9fX);
+        string2Result = string2(t2.hxf9fX);
       } else {
-        string2Result = string2(hxf9fX["3iKih7"]);
+        string2Result = string2(t2["3iKih7"]);
       }
+      tmp3 = string2Result;
     } else {
       const guildsArray = GuildStore.getGuildsArray();
-      if (!guildsArray.some((features) => {
+      tmp3 = null;
+      if (guildsArray.some((features) => {
         features = features.features;
-        let hasItem = features.has(constants.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
-        if (hasItem) {
-          hasItem = closure_1_3.can(constants2.ADMINISTRATOR, features);
-        }
+        const hasItem = features.has(constants.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && closure_1_3.can(constants2.ADMINISTRATOR, features);
         return hasItem;
       })) {
-        return null;
-      } else {
-        const intl = util.intl;
+        let stringResult;
+        const intl = intl4.intl;
         const string = intl.string;
-        let OYTCUh = util.t;
+        const t = intl4.t;
         if (flag) {
-          OYTCUh = OYTCUh.OYTCUh;
-          let stringResult = string(OYTCUh);
+          stringResult = string(t.OYTCUh);
         } else {
-          stringResult = string(OYTCUh.HC8uSZ);
+          stringResult = string(t.HC8uSZ);
         }
+        tmp3 = stringResult;
       }
     }
+    return tmp3;
   });
 };

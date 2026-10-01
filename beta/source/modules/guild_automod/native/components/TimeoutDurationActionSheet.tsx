@@ -5,77 +5,96 @@
 // Exports: default
 
 // Module 17335 (TimeoutDurationActionSheet)
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2110 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import TableRadioGroup from "TableRadioGroup" /* 5997 */;
-import TableRadioRow from "TableRadioRow" /* 6000 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
-import ActionSheet from "ActionSheet" /* 6618 */;
+import TableRadioRow2 from "TableRadioRow" /* 6000 */;
+import Constants from "Constants" /* 11341 */;
 import getActionInfo from "getActionInfo" /* 17314 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const AutomodActionType = fn(11341).AutomodActionType;
-let closure_4 = fn(2110).getDisableCommunicationDurationOptions;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+const AutomodActionType = Constants.AutomodActionType;
+let closure_4 = GuildDisableCommunicationConstants.getDisableCommunicationDurationOptions;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/TimeoutDurationActionSheet.tsx");
 
 export default function TimeoutDurationActionSheet(triggerType) {
+  let action;
+  let intl;
+  let intl2;
+  let items;
+  let items1;
+  let str2;
   ({ action, onSelectDuration: require, onRemove: importDefault } = triggerType);
-  const actionInfo = getActionInfo.getActionInfo(AutomodActionType.USER_COMMUNICATION_DISABLED, action, triggerType.triggerType);
+  triggerType = triggerType.triggerType;
+  let obj = getActionInfo;
+  const actionInfo = obj.getActionInfo(AutomodActionType.USER_COMMUNICATION_DISABLED, action, triggerType);
   let durationSeconds;
+  const arr = closure_4();
   if (action != null) {
     durationSeconds = action.metadata.durationSeconds;
   }
+  const ActionSheet = tmp(6618).ActionSheet;
   let str;
+  const BottomSheetTitleHeader = tmp(6570).BottomSheetTitleHeader;
   if (actionInfo != null) {
     str = actionInfo.headerText;
   }
   if (str == null) {
     str = "";
   }
-  const obj2 = { startExpanded: true, header: closure_5(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: str }), children: null };
-  const obj3 = { variant: "text-md/normal", children: null };
-  const intl = tmp(1115).intl;
-  obj3.children = intl.string(util.t.DWGBAh);
-  const items = [closure_5(Text_Text.Text, obj3), ];
+  const obj2 = { startExpanded: true, header: closure_5(BottomSheetTitleHeader, { title: str }), children: items };
+  const obj3 = { variant: "text-md/normal", children: intl.string(intl3.t.DWGBAh) };
+  const Text = tmp(4832).Text;
+  intl = tmp(1115).intl;
+  items = [tmp6(Text, obj3), ];
   let headerText;
+  const TableRadioGroup = tmp(5997).TableRadioGroup;
   if (actionInfo != null) {
     headerText = actionInfo.headerText;
   }
-  const obj4 = { hasIcons: false, accessibilityLabel: headerText, defaultValue: null, onChange: null, children: null };
-  let str2 = "";
+  const obj4 = {
+    hasIcons: false,
+    accessibilityLabel: headerText,
+    defaultValue: str2,
+    onChange(arg0) {
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      if ("" !== arg0) {
+        const _Number = Number;
+        require(Number(arg0));
+      } else {
+        importDefault();
+      }
+    },
+    children: items1
+  };
+  str2 = "";
   if (null != durationSeconds) {
     const _String = String;
     str2 = String(durationSeconds);
   }
-  obj4.defaultValue = str2;
-  obj4.onChange = function onChange(arg0) {
-    ActionSheetActionCreatorsDefault.hideActionSheet();
-    if ("" !== arg0) {
-      const _Number = Number;
-      require(Number(arg0));
-    } else {
-      closure_1_1();
-    }
-  };
-  const obj5 = { value: "", label: null };
-  const intl2 = tmp(1115).intl;
-  obj5.label = intl2.string(util.t.PoWNfe);
-  const items1 = [
-    closure_5(TableRadioRow.TableRadioRow, obj5),
-    closure_4().map((item) => {
+  const obj5 = { value: "", label: intl2.string(intl3.t.PoWNfe) };
+  let TableRadioRow = tmp(6000).TableRadioRow;
+  intl2 = tmp(1115).intl;
+  items1 = [
+    tmp6(TableRadioRow, obj5),
+    arr.map((item) => {
+      let id;
+      let label;
+      let value;
       ({ id, value, label } = item);
-      return closure_1_5(TableRadioRow.TableRadioRow, { value: String(value), label }, id);
+      const obj = { value: String(value), label };
+      const TableRadioRow = TableRadioRow2.TableRadioRow;
+      return closure_1_5(TableRadioRow, obj, id);
     })
   ];
-  obj4.children = items1;
-  items[1] = closure_6(TableRadioGroup.TableRadioGroup, obj4);
-  obj2.children = items;
-  return closure_6(ActionSheet.ActionSheet, obj2);
+  items[1] = closure_6(TableRadioGroup, obj4);
+  return closure_6(ActionSheet, obj2);
 };

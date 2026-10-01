@@ -6,41 +6,47 @@
 
 // Module 8132 (useResolveGame)
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6589 */;
-import useGame from "useGame" /* 6727 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let tmp;
+const useGame = tmp(6727);
 const result = size.fileFinishedImporting("modules/games/hooks/useResolveGame.tsx");
 
 export default function useResolveGame(arg0) {
+  let applicationId;
+  let gameId;
+  let isLoading;
   ({ applicationId, gameId } = arg0);
   let getOrFetchApplication;
-  let tmp3;
+  let tmp = require;
+  let tmp4;
+  const useGetOrFetchApplication = useGetOrFetchApplications.useGetOrFetchApplication;
+  useGetOrFetchApplications;
   if (null == gameId) {
-    tmp3 = applicationId;
+    tmp4 = applicationId;
   }
-  getOrFetchApplication = useGetOrFetchApplications.useGetOrFetchApplication(tmp3);
+  getOrFetchApplication = useGetOrFetchApplication(tmp4);
   const items = [gameId, getOrFetchApplication];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     let tmp = gameId;
     if (null == gameId) {
       let canonicalGameId = null;
+      const obj = getOrFetchApplication;
       if (null != getOrFetchApplication) {
         canonicalGameId = obj.getCanonicalGameId();
       }
       tmp = canonicalGameId;
-      obj = getOrFetchApplication;
     }
     return tmp;
   }, items);
-  const game = useGame.useGame(memo);
+  const tmpResult = useGame;
+  const game = tmpResult.useGame(memo);
   let data = game.data;
-  const obj2 = { gameId: memo, gameRecord: null, isLoading: null };
+  let obj = { gameId: memo, gameRecord: data, isLoading: null == gameId && null != applicationId && null == getOrFetchApplication || isLoading };
+  isLoading = game.isLoading;
   if (data == null) {
     data = null;
   }
-  obj2.gameRecord = data;
-  obj2.isLoading = null == gameId && null != applicationId && null == getOrFetchApplication || game.isLoading;
-  return obj2;
+  return obj;
 };

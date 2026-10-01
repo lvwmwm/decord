@@ -4,133 +4,118 @@
 // Dependencies: [19, 17, 1349, 21, 4836, 576, 1115, 8742, 4832, 2]
 
 // Module 8741 (BotTag)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import CheckmarkSmallBoldIcon from "CheckmarkSmallBoldIcon" /* 8742 */;
-import noop from "module_19" /* 19 */;
+import intl5 from "intl" /* 1115 */;
+import ApplicationConstants from "ApplicationConstants" /* 1349 */;
+import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 8742 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
 function getBotLabel(BOT) {
   if (BOT === undefined) {
     BOT = BotTagTypes.BOT;
   }
   if (BotTagTypes.SYSTEM_DM !== BOT) {
-    if (tmp2.OFFICIAL !== BOT) {
-      if (tmp2.SERVER === BOT) {
-        const intl2 = util.intl;
-        let stringResult = intl2.string(util.t.PuJGuM);
+    let stringResult;
+    if (BotTagTypes.OFFICIAL !== BOT) {
+      if (BotTagTypes.SERVER === BOT) {
+        const intl2 = intl5.intl;
+        stringResult = intl2.string(intl5.t.PuJGuM);
       } else {
         const BOT2 = tmp2.BOT;
-        const intl = util.intl;
-        stringResult = intl.string(util.t["9RNkeF"]);
+        const intl = intl5.intl;
+        stringResult = intl.string(intl5.t["9RNkeF"]);
       }
     }
     return stringResult;
   }
-  const intl3 = util.intl;
-  stringResult = intl3.string(util.t.lKQ7Wt);
+  const intl3 = intl5.intl;
+  stringResult = intl3.string(intl5.t.lKQ7Wt);
 }
 class BotTag {
-  constructor(arg0) {
-    flag = global.invertColor;
+  constructor(invertColor) {
+    let items;
+    let items1;
+    let items2;
+    let stringResult;
+    let tmp17;
+    let flag = invertColor.invertColor;
     if (flag === undefined) {
       flag = false;
     }
-    BOT = global.type;
+    let BOT = invertColor.type;
     if (BOT === undefined) {
-      tmp = BotTagTypes;
       BOT = BotTagTypes.BOT;
     }
-    verified = global.verified;
-    tmp2 = closure_7();
-    tmp4 = BotTagTypes;
-    tmp5 = BOT === BotTagTypes.OFFICIAL;
-    tmp3 = getBotLabel(BOT);
+    let verified = invertColor.verified;
+    const style = invertColor.style;
+    const tmp2 = closure_7();
+    let tmp5 = BOT === BotTagTypes.OFFICIAL;
+    const tmp3 = getBotLabel(BOT);
     if (!tmp5) {
       tmp5 = BOT === tmp4.SYSTEM_DM;
     }
     if (!verified) {
       verified = tmp5;
     }
-    tmp6 = null;
+    let tmp6 = null;
     if (verified) {
-      tmp7 = jsx;
-      tmp8 = closure_0;
-      tmp9 = closure_2;
-      obj = { size: "xs", color: null };
-      tmp10 = closure_1;
-      obj.color = closure_1(closure_2[5]).colors.WHITE;
-      tmp6 = jsx(closure_0(closure_2[7]).CheckmarkSmallBoldIcon, obj);
+      const obj = { size: "xs", color: nativeDefault.colors.WHITE };
+      const CheckmarkSmallBoldIcon = CheckmarkSmallBoldIcon2.CheckmarkSmallBoldIcon;
+      tmp6 = hasOwnProperty(CheckmarkSmallBoldIcon, obj);
     }
-    prop = null;
-    tmp11 = flag ? tmp2.tagInverted : tmp2.tagNormal;
-    tmp12 = flag ? tmp2.tagTextInverted : tmp2.tagTextNormal;
+    let prop = null;
+    const tmp11 = flag ? tmp2.tagInverted : tmp2.tagNormal;
+    const tmp12 = flag ? tmp2.tagTextInverted : tmp2.tagTextNormal;
     if (null != tmp6) {
       prop = tmp2.verifiedTagLeftPadding;
     }
     if (tmp5) {
-      tmp22 = closure_0;
-      tmp23 = closure_2;
-      intl4 = closure_0(closure_2[6]).intl;
-      stringResult = intl4.string(closure_0(closure_2[6]).t["7s687k"]);
-      tmp15 = closure_2;
-      tmp17 = closure_0;
+      const intl4 = intl5.intl;
+      stringResult = intl4.string(intl5.t["7s687k"]);
+      tmp17 = require;
     } else if (verified) {
-      tmp20 = closure_0;
-      tmp21 = closure_2;
-      intl3 = closure_0(closure_2[6]).intl;
-      stringResult = intl3.string(closure_0(closure_2[6]).t.g76OcH);
-      tmp15 = closure_2;
-      tmp17 = closure_0;
-    } else if (BOT === tmp4.SERVER) {
-      tmp18 = closure_0;
-      tmp19 = closure_2;
-      intl2 = closure_0(closure_2[6]).intl;
-      stringResult = intl2.string(closure_0(closure_2[6]).t["39trQT"]);
-      tmp15 = closure_2;
-      tmp17 = closure_0;
+      const intl3 = intl5.intl;
+      stringResult = intl3.string(intl5.t.g76OcH);
+      tmp17 = require;
+    } else if (BOT === BotTagTypes.SERVER) {
+      const intl2 = intl5.intl;
+      stringResult = intl2.string(intl5.t["39trQT"]);
+      tmp17 = require;
     } else {
-      tmp14 = closure_0;
-      tmp15 = closure_2;
-      intl = closure_0(closure_2[6]).intl;
-      stringResult = intl.string(closure_0(closure_2[6]).t.qwJHjo);
-      tmp17 = closure_0;
+      const intl = intl5.intl;
+      stringResult = intl.string(intl5.t.qwJHjo);
+      tmp17 = require;
     }
-    obj1 = { style: null, accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult, children: null };
-    items = [, , , ];
-    items[0] = tmp2.tag;
-    items[1] = tmp11;
-    items[2] = global.style;
-    items[3] = prop;
-    obj1.style = items;
-    items1 = [, ];
-    items1[0] = tmp6;
-    obj4 = { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: null, children: tmp3 };
-    items2 = [];
-    items2[0] = tmp12;
-    obj4.style = items2;
-    items1[1] = jsx(tmp17(tmp15[8]).Text, obj4);
-    obj1.children = items1;
-    return jsxs(View, obj1);
+    const obj2 = { style: items, accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult, children: items1 };
+    items = [tmp2.tag, tmp11, style, prop];
+    items1 = [tmp6, ];
+    const obj3 = { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: items2, children: tmp3 };
+    items2 = [tmp12];
+    items1[1] = hasOwnProperty(tmp17(4832).Text, obj3);
+    return metroRequire(View, obj2);
   }
 }
-const View = fn(17).View;
-const BotTagTypes = fn(1349).BotTagTypes;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { tag: { paddingLeft: 4, paddingRight: 4, borderRadius: nativeDefault.radii.xs, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 1 }, verifiedTagLeftPadding: { paddingLeft: 1 }, tagNormal: null, tagInverted: null, tagTextNormal: null, tagTextInverted: null };
-let obj3 = { paddingLeft: 4, paddingRight: 4, borderRadius: nativeDefault.radii.xs, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 1 };
-obj2.tagNormal = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-const obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-obj2.tagInverted = { backgroundColor: nativeDefault.colors.WHITE };
-const obj5 = { backgroundColor: nativeDefault.colors.WHITE };
-obj2.tagTextNormal = { color: nativeDefault.colors.WHITE };
-const obj6 = { color: nativeDefault.colors.WHITE };
-obj2.tagTextInverted = { color: nativeDefault.colors.BACKGROUND_BRAND };
-const React5 = createStyles.createStyles(obj2);
+const View = react_native.View;
+const BotTagTypes = ApplicationConstants.BotTagTypes;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { tag: obj2, verifiedTagLeftPadding: { paddingLeft: 1 }, tagNormal: obj3, tagInverted: { backgroundColor: nativeDefault.colors.WHITE }, tagTextNormal: { color: nativeDefault.colors.WHITE }, tagTextInverted: { color: nativeDefault.colors.BACKGROUND_BRAND } };
+obj2 = { paddingLeft: 4, paddingRight: 4, borderRadius: nativeDefault.radii.xs, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+({ backgroundColor: nativeDefault.colors.WHITE });
+({ color: nativeDefault.colors.WHITE });
+({ color: nativeDefault.colors.BACKGROUND_BRAND });
+const metroImportDefault = createStyles(obj);
 BotTag.Types = BotTagTypes;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/applications/native/BotTag.tsx");
 
 export default BotTag;

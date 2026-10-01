@@ -5,11 +5,12 @@
 // Exports: CustomThemedGradient, default, validateColors
 
 // Module 5437 (ThemedGradient)
+import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1230 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4652 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
 import utils_ColorDefault from "utils/Color" /* 4684 */;
 import shared from "shared" /* 4685 */;
@@ -18,14 +19,31 @@ import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4691
 import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4766 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4653 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let hex;
+
+let metroImportDefault;
+let metroRequire;
 function getMixedGradientColor(mixColorOverride) {
+  let b;
+  let darkFallbackAmount;
+  let darkFallbackOpacity;
+  let g;
+  let mixAmount;
+  let r;
+  let theme;
+  let theme2;
+  let theme3;
   ({ mixAmount, theme } = mixColorOverride);
   const obj = { mixAmount, mixColorOverride: mixColorOverride.mixColorOverride, theme };
   let mixAmount1 = obj.mixAmount;
+  const color = mixColorOverride.color;
   if (mixAmount1 === undefined) {
     mixAmount1 = {};
   }
@@ -38,7 +56,8 @@ function getMixedGradientColor(mixColorOverride) {
     num = 0.8;
   }
   if (null == mixColorOverride) {
-    const isThemeDarkResult = shared.isThemeDark(theme2);
+    const obj3 = shared;
+    const isThemeDarkResult = obj3.isThemeDark(theme2);
     if (isThemeDarkResult) {
       num = darkFallbackOpacity;
     }
@@ -50,6 +69,8 @@ function getMixedGradientColor(mixColorOverride) {
     if (isThemeDarkResult) {
       num2 = 0;
     }
+    const self = this;
+    const self2 = this;
     mixColorOverride = new utils_ColorDefault(num2, num2, num2, tmp4);
   }
   const obj2 = { mixAmount, theme };
@@ -65,6 +86,7 @@ function getMixedGradientColor(mixColorOverride) {
   if (num3 === undefined) {
     num3 = 0.2;
   }
+  const obj6 = shared;
   if (obj6.isThemeDark(theme3)) {
     if (null != mixAmount2.dark) {
       darkFallbackAmount = 1 - mixAmount2.dark;
@@ -73,34 +95,46 @@ function getMixedGradientColor(mixColorOverride) {
   } else if (null != mixAmount2.light) {
     num3 = 1 - mixAmount2.light;
   }
-  obj6 = shared;
-  const tmp12Result = ColorUtils;
-  ({ r, g, b } = ColorUtils.hexToRgb(mixColorOverride.color));
-  const hexToRgbResult = ColorUtils.hexToRgb(mixColorOverride.color);
-  const tmp12Result2 = ColorUtils;
-  const tmp15 = new utils_ColorDefault(r, g, b, num3);
-  return tmp12Result2.mixColors(mixColorOverride, new utils_ColorDefault(r, g, b, num3)).toHexString();
+  const tmp10Result = ColorUtils;
+  ({ r, g, b } = tmp10Result.hexToRgb(color));
+  tmp10Result.hexToRgb(color);
+  const mixColors = ColorUtils.mixColors;
+  ColorUtils;
+  const tmp14 = new utils_ColorDefault(r, g, b, num3);
+  const mixColorsResult = mixColors(mixColorOverride, tmp14);
+  return mixColorsResult.toHexString();
 }
 function GradientBase(angleCenter) {
+  let absolute;
+  let angle;
+  let colors;
+  let height;
+  let items;
+  let locations;
+  let tall;
+  let wide;
+  let width;
   angleCenter = angleCenter.angleCenter;
   ({ colors, locations, angle } = angleCenter);
   if (angleCenter === undefined) {
     angleCenter = closure_9;
   }
   ({ absolute, wide, tall } = angleCenter);
+  const componentStyles = angleCenter.componentStyles;
   const tmp = closure_8();
   ({ width, height } = useWindowDimensionsDefault());
-  const obj = { colors, locations, angle, angleCenter, useAngle: true, style: null };
-  const tmp2 = useWindowDimensionsDefault();
-  const tmp3 = timestampProducer;
+  const obj = { colors, locations, angle, angleCenter, useAngle: true, style: items };
+  useWindowDimensionsDefault();
+  const tmp3 = metroRequire;
+  const tmp4 = LinearGradientDefault;
   if (wide) {
+    wide = { width };
     const obj2 = { width };
-    wide = obj2;
   }
-  const items = [wide, , , , ];
+  items = [wide, , , , ];
   if (tall) {
+    tall = { height };
     const obj3 = { height };
-    tall = obj3;
   }
   items[1] = tall;
   items[2] = tmp.linearGradient;
@@ -108,74 +142,84 @@ function GradientBase(angleCenter) {
     absolute = tmp.absolute;
   }
   items[3] = absolute;
-  items[4] = angleCenter.componentStyles;
-  obj.style = items;
-  return tmp3(LinearGradientDefault, obj);
+  items[4] = componentStyles;
+  return tmp3(tmp4, obj);
 }
 class Gradient {
-  constructor(arg0) {
-    ({ gradient, angleOverride, mix, mixAmount } = global);
-    ({ absolute, wide, tall, componentStyles } = global);
+  constructor(mixColorOverride) {
+    let absolute;
+    let angleOverride;
+    let colors1;
+    let componentStyles;
+    let gradient;
+    let mixAmount;
+    let tall;
+    let wide;
+    ({ gradient, angleOverride, mix: require, mixAmount } = mixColorOverride);
+    ({ absolute, wide, tall, componentStyles } = mixColorOverride);
     if (mixAmount === undefined) {
       mixAmount = {};
     }
-    closure_1 = mixAmount;
-    mixColorOverride = global.mixColorOverride;
-    closure_3 = undefined;
-    closure_3 = closure_1(mixColorOverride[10])();
-    colors = gradient.colors;
-    obj = {
+    mixColorOverride = mixColorOverride.mixColorOverride;
+    const theme = mixAmount(mixColorOverride[10])();
+    const colors = gradient.colors;
+    let obj = {
       colors: colors.map((item) => {
-            if (require) {
-              const obj = { color: nativeDefault.unsafe_rawColors[item.token], mixAmount, mixColorOverride, theme };
-              let tmp3 = getMixedGradientColor(obj);
-            } else {
-              tmp3 = nativeDefault.unsafe_rawColors[item.token];
-            }
-            return tmp3;
-          }),
-      locations: null,
-      angle: null,
-      angleCenter: null,
-      absolute: null,
-      wide: null,
-      tall: null,
-      componentStyles: null
+        let tmp4;
+        const tmp = require;
+        if (tmp) {
+          const obj = { color: nativeDefault.unsafe_rawColors[item.token], mixAmount, mixColorOverride, theme };
+          tmp4 = getMixedGradientColor(obj);
+        } else {
+          tmp4 = nativeDefault.unsafe_rawColors[item.token];
+        }
+        return tmp4;
+      }),
+      locations: colors1.map((stop) => stop.stop / 100),
+      angle: angleOverride,
+      angleCenter,
+      absolute,
+      wide,
+      tall,
+      componentStyles
     };
     colors1 = gradient.colors;
-    tmp = jsx;
-    tmp2 = GradientBase;
-    obj.locations = colors1.map((stop) => stop.stop / 100);
+    let tmp = closure_6;
+    const tmp2 = GradientBase;
     if (angleOverride == null) {
       angleOverride = gradient.angle;
     }
-    obj.angle = angleOverride;
     angleCenter = gradient.angleCenter;
     if (angleCenter == null) {
       angleCenter = closure_9;
     }
-    obj.angleCenter = angleCenter;
-    obj.absolute = absolute;
-    obj.wide = wide;
-    obj.tall = tall;
-    obj.componentStyles = componentStyles;
     return tmp(tmp2, obj);
   }
 }
 function GuildThemePresetGradient(mixColorOverride) {
+  let absolute;
+  let angleOverride;
+  let colors1;
+  let componentStyles;
+  let mixAmount;
+  let preset;
+  let tall;
+  let wide;
   ({ angleOverride, mix: require, mixAmount } = mixColorOverride);
   ({ preset, absolute, wide, tall, componentStyles } = mixColorOverride);
   if (mixAmount === undefined) {
     mixAmount = {};
   }
   mixColorOverride = mixColorOverride.mixColorOverride;
-  const tmp = mixAmount(mixColorOverride[10])();
+  let tmp = mixAmount(mixColorOverride[10])();
   const theme = tmp;
-  const guildThemePresetAppearance = require("GuildThemePresets").getGuildThemePresetAppearance(preset, tmp);
+  let obj = require("GuildThemePresets");
+  const guildThemePresetAppearance = obj.getGuildThemePresetAppearance(preset, tmp);
   const colors = guildThemePresetAppearance.colors;
   const obj2 = {
     colors: colors.map((hex) => {
-      if (require) {
+      const tmp = require;
+      if (tmp) {
         const obj = { color: hex.hex, mixAmount, mixColorOverride, theme };
         hex = getMixedGradientColor(obj);
       } else {
@@ -183,62 +227,78 @@ function GuildThemePresetGradient(mixColorOverride) {
       }
       return hex;
     }),
-    locations: null,
-    angle: null,
-    angleCenter: null,
-    absolute: null,
-    wide: null,
-    tall: null,
-    componentStyles: null
+    locations: colors1.map((stop) => stop.stop / 100),
+    angle: angleOverride,
+    angleCenter,
+    absolute,
+    wide,
+    tall,
+    componentStyles
   };
-  const colors1 = guildThemePresetAppearance.colors;
-  obj2.locations = colors1.map((stop) => stop.stop / 100);
+  colors1 = guildThemePresetAppearance.colors;
+  const tmp3 = closure_6;
+  const tmp4 = GradientBase;
   if (angleOverride == null) {
     angleOverride = guildThemePresetAppearance.angle;
   }
-  obj2.angle = angleOverride;
-  obj2.angleCenter = angleCenter;
-  obj2.absolute = absolute;
-  obj2.wide = wide;
-  obj2.tall = tall;
-  obj2.componentStyles = componentStyles;
-  return closure_6(GradientBase, obj2);
+  return tmp3(tmp4, obj2);
 }
 function CustomThemesGradient(arg0) {
+  let absolute;
+  let baseMix;
+  let colors;
+  let componentStyles;
+  let gradientAngle;
+  let gradientColorStops;
+  let height;
+  let items2;
+  let mapped1;
+  let mix;
+  let mixAmount;
+  let mixColorOverride;
+  let regex;
+  let tall;
+  let theme;
+  let wide;
+  let width;
   ({ colors, gradientColorStops, absolute, wide, tall, mixAmount } = arg0);
   ({ baseMix, gradientAngle, mix } = arg0);
   if (mixAmount === undefined) {
     mixAmount = {};
   }
+  let arr2;
   let reduced;
   ({ mixColorOverride, componentStyles, theme } = arg0);
   const tmp = closure_8();
-  closure_129_1 = undefined;
-  closure_129_2 = undefined;
-  closure_129_3 = undefined;
-  closure_129_0 = baseMix;
+  let tmp2 = reduced;
+  mixAmount = undefined;
+  mixColorOverride = undefined;
+  theme = undefined;
   ({ width, height } = reduced(1479)());
+  const tmp4 = reduced(1479)();
   if (mixAmount === undefined) {
     mixAmount = {};
   }
-  closure_129_1 = mixAmount;
-  closure_129_2 = mixColorOverride;
-  closure_129_3 = theme;
   let mapped = colors;
   if (mix) {
-    mapped = colors.map((item) => {
-      let obj = reduced;
-      let tmp2 = dependencyMap;
-      let num = c10;
-      let obj2 = reduced;
-      const result = reduced / 100;
-      if (reduced === undefined) {
+    mapped = colors.map(function(item) {
+      let b;
+      let g;
+      let r;
+      let obj = mixAmount;
+      let tmp2 = mixColorOverride;
+      let num = closure_2_10;
+      let obj2 = mixAmount;
+      const result = baseMix / 100;
+      if (mixAmount === undefined) {
         obj2 = {};
       }
       if (null == tmp2) {
         const diff = 1 - result;
         let sum = num + 0.2 * diff;
-        const isThemeDarkResult = shared.isThemeDark(tmp3);
+        const obj6 = arr2(dependencyMap[5]);
+        const isThemeDarkResult = obj6.isThemeDark(theme);
+        const tmp20 = dependencyMap;
         if (isThemeDarkResult) {
           sum = num + 0.25 * diff;
         }
@@ -250,9 +310,11 @@ function CustomThemesGradient(arg0) {
         if (isThemeDarkResult) {
           num3 = 0;
         }
-        tmp2 = new utils_ColorDefault(num3, num3, num3, tmp6);
+        const self = this;
+        const self2 = this;
+        tmp2 = new reduced(tmp20[6])(num3, num3, num3, tmp6);
       }
-      if (reduced === undefined) {
+      if (mixAmount === undefined) {
         obj = {};
       }
       let num4 = num;
@@ -262,7 +324,8 @@ function CustomThemesGradient(arg0) {
       if (num === undefined) {
         num = 0.2;
       }
-      if (obj3.isThemeDark(noop)) {
+      const obj3 = arr2(dependencyMap[5]);
+      if (obj3.isThemeDark(theme)) {
         if (null != obj.dark) {
           num4 = 1 - obj.dark;
         }
@@ -270,17 +333,18 @@ function CustomThemesGradient(arg0) {
       } else if (null != obj.light) {
         num = 1 - obj.light;
       }
-      obj3 = shared;
-      const tmp14Result = ColorUtils;
-      ({ r, g, b } = ColorUtils.hexToRgb(item));
-      const hexToRgbResult = ColorUtils.hexToRgb(item);
-      const tmp14Result3 = ColorUtils;
-      const tmp17 = new utils_ColorDefault(r, g, b, num);
-      const mixColorsResult = tmp14Result3.mixColors(tmp2, new utils_ColorDefault(r, g, b, num));
-      return client_themes_ClientThemesUtils.colorToHex(mixColorsResult);
+      const tmp12Result = arr2(dependencyMap[7]);
+      ({ r, g, b } = tmp12Result.hexToRgb(item));
+      tmp12Result.hexToRgb(item);
+      const mixColors = arr2(dependencyMap[7]).mixColors;
+      arr2(dependencyMap[7]);
+      const tmp16 = new reduced(dependencyMap[6])(r, g, b, num);
+      const mixColorsResult = mixColors(tmp2, tmp16);
+      const tmp12Result4 = arr2(dependencyMap[13]);
+      return tmp12Result4.colorToHex(mixColorsResult);
     });
   }
-  let arr2 = mapped;
+  arr2 = mapped;
   if (1 === mapped.length) {
     const items = [mapped[0], mapped[0]];
     arr2 = items;
@@ -298,42 +362,49 @@ function CustomThemesGradient(arg0) {
       }
     }
     try {
-      arr.push(reduced(dependencyMap[14])(item).hex("rgb"));
-      return arr;
+      const push = arr.push;
+      const obj = reduced(dependencyMap[14])(item);
+      push(obj.hex("rgb"));
     } catch (err) {
     }
+    return arr;
   }, []);
   if (gradientColorStops === undefined) {
     gradientColorStops = [];
   }
   if (gradientColorStops.length === reduced.length) {
-    let mapped1 = gradientColorStops.map((item) => item / 100);
+    mapped1 = gradientColorStops.map((item) => item / 100);
   } else if (1 === reduced.length) {
     mapped1 = [0, 1];
   } else {
     mapped1 = reduced.map((item, index) => index / (reduced.length - 1));
   }
   const items1 = [reduced, arr2];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(function() {
+    let obj2;
     if (reduced.length < 2) {
       const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const captureException = SentryUtilsDefault.captureException;
+      SentryUtilsDefault;
       const error = new Error("Invalid custom theme gradient colors");
-      const obj2 = { extra: null };
-      const obj3 = { gradientColors: null };
+      const obj = { extra: obj2 };
       const _JSON = JSON;
-      obj3.gradientColors = JSON.stringify(reduced);
-      obj2.extra = obj3;
-      SentryUtilsDefault.captureException(error, obj2);
+      obj2 = { gradientColors: JSON.stringify(arr2) };
+      captureException(error, obj);
     }
   }, items1);
   let tmp10Result = null;
   if (reduced.length >= 2) {
-    let obj = { colors: reduced, locations: mapped1, start: point, end: point1, style: null };
+    let obj = { colors: reduced, locations: mapped1, start: point, end: point1, style: items2 };
+    const tmp10 = closure_6;
+    const tmp2Result = tmp2(5293);
     if (wide) {
       let obj2 = { width };
       wide = obj2;
     }
-    const items2 = [wide, , , , ];
+    items2 = [wide, , , , ];
     if (tall) {
       let obj3 = { height };
       tall = obj3;
@@ -345,54 +416,70 @@ function CustomThemesGradient(arg0) {
     }
     items2[3] = absolute;
     items2[4] = componentStyles;
-    obj.style = items2;
-    tmp10Result = closure_6(reduced(5293), obj);
-    const tmp2Result = reduced(5293);
+    tmp10Result = tmp10(tmp2Result, obj);
   }
   return tmp10Result;
 }
 function ActiveGuildThemeGradient(arg0) {
+  let GUILD_THEME_DEFAULT_BASE_MIX;
+  let activeGuildTheme;
+  let items;
+  let num2;
+  let theme;
   ({ activeGuildTheme, theme } = arg0);
   const merged = Object.assign(arg0, Object.assign({ activeGuildTheme: 0, theme: 0 }));
   if ("custom" === activeGuildTheme.type) {
     const customUserThemeSettings = activeGuildTheme.customUserThemeSettings;
-    const obj2 = {};
+    const first = customUserThemeSettings.colors[0];
+    const obj2 = { colors: items, gradientColorStops: [], gradientAngle: num2, baseMix: GUILD_THEME_DEFAULT_BASE_MIX, theme };
     const merged1 = Object.assign(merged);
-    const items = [];
-    HermesBuiltin.arraySpread(GuildThemePresets.getSingleColorGuildThemeGradientColors(customUserThemeSettings.colors[0], theme), 0);
-    obj2.colors = items;
-    obj2.gradientColorStops = [];
-    let num2 = customUserThemeSettings.gradientAngle;
+    items = [];
+    const obj3 = GuildThemePresets;
+    HermesBuiltin.arraySpread(items, obj3.getSingleColorGuildThemeGradientColors(first, theme), 0);
+    num2 = customUserThemeSettings.gradientAngle;
+    const tmp10 = CustomThemesGradient;
+    const tmp14 = require;
+    const tmp9 = metroRequire;
     if (num2 == null) {
       num2 = 0;
     }
-    obj2.gradientAngle = num2;
-    let GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
+    GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
     if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
-      GUILD_THEME_DEFAULT_BASE_MIX = GuildThemePresets.GUILD_THEME_DEFAULT_BASE_MIX;
+      GUILD_THEME_DEFAULT_BASE_MIX = tmp14(4689).GUILD_THEME_DEFAULT_BASE_MIX;
     }
-    obj2.baseMix = GUILD_THEME_DEFAULT_BASE_MIX;
-    obj2.theme = theme;
-    return timestampProducer(CustomThemesGradient, obj2);
+    return tmp9(tmp10, obj2);
   } else {
-    const obj = {};
+    const obj = { preset: activeGuildTheme.preset };
     const merged2 = Object.assign(merged);
-    obj.preset = activeGuildTheme.preset;
-    return timestampProducer(GuildThemePresetGradient, obj);
+    return metroRequire(GuildThemePresetGradient, obj);
   }
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ softenGradient: { flex: 1 }, linearGradient: { flex: 1 }, absolute: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 } });
 let angleCenter = { x: 0.5, y: 0.5 };
 let c10 = 0.5;
 const re15 = /^#(?:[0-9a-fA-F]{3}){1,2}$/;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/client_themes/native/ThemedGradient.tsx");
 
 export default function ThemedGradient(overlayOpacity) {
+  let gradientPreset;
+  let items1;
+  let items10;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let items8;
+  let items9;
+  let tmp13;
+  let tmp6Result10;
+  let tmp6Result11;
+  let tmp6Result12;
+  let tmp6Result8;
+  let tmp6Result9;
   let num = overlayOpacity.overlayOpacity;
   if (num === undefined) {
     num = 0.7;
@@ -401,133 +488,121 @@ export default function ThemedGradient(overlayOpacity) {
   const merged = Object.assign(overlayOpacity, Object.assign({ overlayOpacity: 0, gradientOverride: 0 }));
   const tmp2 = closure_8();
   const tmp5 = useThemeDefault();
+  const obj = shared;
+  const isThemeDarkResult = obj.isThemeDark(tmp5);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
-  const tmp8 = shared.isThemeDark(tmp5) ? unsafe_rawColors.BLACK : unsafe_rawColors.WHITE;
+  const tmp8 = isThemeDarkResult ? unsafe_rawColors.BLACK : unsafe_rawColors.WHITE;
   const withOverlay = merged.withOverlay;
-  const isThemeDarkResult = shared.isThemeDark(tmp5);
-  const tmp9 = useThemeDefault();
   const items = [ClientThemesBackgroundStore];
-  const preset = useStateFromStores.useStateFromStoresObject(items, () => ({ preset: gradientPreset.gradientPreset })).preset;
-  const tmp10 = useRoutedActiveGuildThemeDefault();
+  const tmp9 = useThemeDefault();
   const tmp6Result = useStateFromStores;
-  const customThemeDisplaySettings = useCustomThemeDisplaySettings.useCustomThemeDisplaySettings();
+  const preset = tmp6Result.useStateFromStoresObject(items, () => ({ preset: gradientPreset.gradientPreset })).preset;
+  const tmp10 = useRoutedActiveGuildThemeDefault();
+  const tmp6Result7 = useCustomThemeDisplaySettings;
+  const customThemeDisplaySettings = tmp6Result7.useCustomThemeDisplaySettings();
   if (null != gradientOverride) {
-    if (tmp12) {
-      if (gradientOverride.type === tmp6(1230).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
-        const obj2 = {};
+    if (undefined !== customThemeDisplaySettings) {
+      if (gradientOverride.type === ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
+        const obj2 = { theme: gradientOverride.theme };
         const merged1 = Object.assign(merged);
         const merged2 = Object.assign(gradientOverride.customThemeSettings);
-        obj2.theme = gradientOverride.theme;
-        const tmp59 = timestampProducer(CustomThemesGradient, obj2);
+        const tmp59 = metroRequire(CustomThemesGradient, obj2);
         let tmp60 = tmp59;
+        const tmp52 = metroRequire;
         if (withOverlay) {
-          const obj3 = { style: tmp2.absolute, children: null };
-          const items1 = [tmp59, ];
-          const obj4 = { style: null };
-          const items2 = [tmp2.softenGradient, ];
-          const obj5 = { backgroundColor: tmp6(4683).hexWithOpacity(tmp8, num) };
+          const obj3 = { style: tmp2.absolute, children: items1 };
+          items1 = [tmp59, ];
+          const obj4 = { style: items2 };
+          items2 = [tmp2.softenGradient, ];
+          const obj5 = { backgroundColor: tmp6Result8.hexWithOpacity(tmp8, num) };
           items2[1] = obj5;
-          obj4.style = items2;
-          items1[1] = timestampProducer(View, obj4);
-          obj3.children = items1;
-          tmp60 = React5(View, obj3);
-          const tmp6Result8 = tmp6(4683);
+          tmp6Result8 = ColorUtils;
+          items1[1] = tmp52(View, obj4);
+          tmp60 = metroImportDefault(View, obj3);
         }
         return tmp60;
       }
     }
-    if (gradientOverride.type === tmp6(1230).ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
-      const obj6 = {};
+    if (gradientOverride.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
+      const obj6 = { gradient: gradientOverride };
       const merged3 = Object.assign(merged);
-      obj6.gradient = gradientOverride;
-      const tmp48 = timestampProducer(Gradient, obj6);
+      const tmp48 = metroRequire(Gradient, obj6);
       let tmp49 = tmp48;
+      const tmp43 = metroRequire;
       if (withOverlay) {
-        const obj7 = { style: tmp2.absolute, children: null };
-        const items3 = [tmp48, ];
-        const obj8 = { style: null };
-        const items4 = [tmp2.softenGradient, ];
-        const obj9 = { backgroundColor: tmp6(4683).hexWithOpacity(tmp8, num) };
+        const obj7 = { style: tmp2.absolute, children: items3 };
+        items3 = [tmp48, ];
+        const obj8 = { style: items4 };
+        items4 = [tmp2.softenGradient, ];
+        const obj9 = { backgroundColor: tmp6Result9.hexWithOpacity(tmp8, num) };
         items4[1] = obj9;
-        obj8.style = items4;
-        items3[1] = timestampProducer(View, obj8);
-        obj7.children = items3;
-        tmp49 = React5(View, obj7);
-        const tmp6Result9 = tmp6(4683);
+        tmp6Result9 = ColorUtils;
+        items3[1] = tmp43(View, obj8);
+        tmp49 = metroImportDefault(View, obj7);
       }
       return tmp49;
     }
   }
   if (null != tmp10) {
-    const obj10 = {};
+    const obj10 = { activeGuildTheme: tmp10, theme: tmp9 };
     const merged4 = Object.assign(merged);
-    obj10.activeGuildTheme = tmp10;
-    obj10.theme = tmp9;
-    const tmp39 = timestampProducer(ActiveGuildThemeGradient, obj10);
+    const tmp39 = metroRequire(ActiveGuildThemeGradient, obj10);
     let tmp40 = tmp39;
+    const tmp34 = metroRequire;
     if (withOverlay) {
-      const obj11 = { style: tmp2.absolute, children: null };
-      const items5 = [tmp39, ];
-      const obj12 = { style: null };
-      const items6 = [tmp2.softenGradient, ];
-      const obj13 = { backgroundColor: tmp6(4683).hexWithOpacity(tmp8, num) };
+      const obj11 = { style: tmp2.absolute, children: items5 };
+      items5 = [tmp39, ];
+      const obj12 = { style: items6 };
+      items6 = [tmp2.softenGradient, ];
+      const obj13 = { backgroundColor: tmp6Result10.hexWithOpacity(tmp8, num) };
       items6[1] = obj13;
-      obj12.style = items6;
+      tmp6Result10 = ColorUtils;
       items5[1] = tmp34(View, obj12);
-      obj11.children = items5;
-      tmp40 = React5(View, obj11);
-      const tmp6Result10 = tmp6(4683);
+      tmp40 = metroImportDefault(View, obj11);
     }
-    let tmp13 = tmp40;
-    tmp34 = timestampProducer;
+    tmp13 = tmp40;
   } else {
-    if (tmp12) {
-      if (tmp12) {
-        const obj14 = {};
+    if (undefined !== customThemeDisplaySettings) {
+      if (undefined !== customThemeDisplaySettings) {
+        const obj14 = { theme: customThemeDisplaySettings.baseTheme };
         const merged5 = Object.assign(merged);
         const merged6 = Object.assign(customThemeDisplaySettings.customTheme);
-        obj14.theme = customThemeDisplaySettings.baseTheme;
-        const tmp30 = timestampProducer(CustomThemesGradient, obj14);
+        const tmp30 = metroRequire(CustomThemesGradient, obj14);
         let tmp31 = tmp30;
+        const tmp23 = metroRequire;
         if (withOverlay) {
-          const obj15 = { style: tmp2.absolute, children: null };
-          const items7 = [tmp30, ];
-          const obj16 = { style: null };
-          const items8 = [tmp2.softenGradient, ];
-          const obj17 = { backgroundColor: tmp6(4683).hexWithOpacity(tmp8, num) };
+          const obj15 = { style: tmp2.absolute, children: items7 };
+          items7 = [tmp30, ];
+          const obj16 = { style: items8 };
+          items8 = [tmp2.softenGradient, ];
+          const obj17 = { backgroundColor: tmp6Result11.hexWithOpacity(tmp8, num) };
           items8[1] = obj17;
-          obj16.style = items8;
+          tmp6Result11 = ColorUtils;
           items7[1] = tmp23(View, obj16);
-          obj15.children = items7;
-          tmp31 = React5(View, obj15);
-          const tmp6Result11 = tmp6(4683);
+          tmp31 = metroImportDefault(View, obj15);
         }
         tmp13 = tmp31;
-        tmp23 = timestampProducer;
       }
     }
     tmp13 = null;
     if (null != preset) {
-      const obj18 = {};
+      const obj18 = { gradient: preset };
       const merged7 = Object.assign(merged);
-      obj18.gradient = preset;
-      const tmp19 = timestampProducer(Gradient, obj18);
+      const tmp19 = metroRequire(Gradient, obj18);
       let tmp20 = tmp19;
+      const tmp14 = metroRequire;
       if (withOverlay) {
-        const obj19 = { style: tmp2.absolute, children: null };
-        const items9 = [tmp19, ];
-        const obj20 = { style: null };
-        const items10 = [tmp2.softenGradient, ];
-        const obj21 = { backgroundColor: tmp6(4683).hexWithOpacity(tmp8, num) };
+        const obj19 = { style: tmp2.absolute, children: items9 };
+        items9 = [tmp19, ];
+        const obj20 = { style: items10 };
+        items10 = [tmp2.softenGradient, ];
+        const obj21 = { backgroundColor: tmp6Result12.hexWithOpacity(tmp8, num) };
         items10[1] = obj21;
-        obj20.style = items10;
+        tmp6Result12 = ColorUtils;
         items9[1] = tmp14(View, obj20);
-        obj19.children = items9;
-        tmp20 = React5(View, obj19);
-        const tmp6Result12 = tmp6(4683);
+        tmp20 = metroImportDefault(View, obj19);
       }
       tmp13 = tmp20;
-      tmp14 = timestampProducer;
     }
   }
   return tmp13;
@@ -542,13 +617,18 @@ export const validateColors = function validateColors(arr) {
       }
     }
     try {
-      arr.push(reduced(dependencyMap[14])(item).hex("rgb"));
-      return arr;
+      const push = arr.push;
+      const obj = reduced(dependencyMap[14])(item);
+      push(obj.hex("rgb"));
     } catch (err) {
     }
+    return arr;
   }, []);
 };
 export const CustomThemedGradient = function CustomThemedGradient(overlayOpacity) {
+  let items;
+  let items1;
+  let tmp5Result;
   let num = overlayOpacity.overlayOpacity;
   if (num === undefined) {
     num = 0.7;
@@ -557,26 +637,26 @@ export const CustomThemedGradient = function CustomThemedGradient(overlayOpacity
   const merged = Object.assign(overlayOpacity, Object.assign({ overlayOpacity: 0, customTheme: 0 }));
   const tmp2 = closure_8();
   const tmp4 = useThemeDefault();
+  const obj = shared;
+  const isThemeDarkResult = obj.isThemeDark(tmp4);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
-  const obj2 = {};
-  const isThemeDarkResult = shared.isThemeDark(tmp4);
+  const obj2 = { theme: customTheme.theme };
+  const tmp7 = isThemeDarkResult ? unsafe_rawColors.BLACK : unsafe_rawColors.WHITE;
   const merged1 = Object.assign(merged);
   const merged2 = Object.assign(customTheme.customThemeSettings);
-  obj2.theme = customTheme.theme;
-  const tmp11 = timestampProducer(CustomThemesGradient, obj2);
+  const tmp11 = metroRequire(CustomThemesGradient, obj2);
   let tmp12 = tmp11;
+  const tmp8 = metroRequire;
   if (merged.withOverlay) {
-    const obj3 = { style: tmp2.absolute, children: null };
-    const items = [tmp11, ];
-    const obj4 = { style: null };
-    const items1 = [tmp2.softenGradient, ];
-    const obj5 = { backgroundColor: ColorUtils.hexWithOpacity(tmp7, num) };
+    const obj3 = { style: tmp2.absolute, children: items };
+    items = [tmp11, ];
+    const obj4 = { style: items1 };
+    items1 = [tmp2.softenGradient, ];
+    const obj5 = { backgroundColor: tmp5Result.hexWithOpacity(tmp7, num) };
     items1[1] = obj5;
-    obj4.style = items1;
-    items[1] = timestampProducer(View, obj4);
-    obj3.children = items;
-    tmp12 = React5(View, obj3);
-    const tmp5Result = ColorUtils;
+    tmp5Result = ColorUtils;
+    items[1] = tmp8(View, obj4);
+    tmp12 = metroImportDefault(View, obj3);
   }
   return tmp12;
 };

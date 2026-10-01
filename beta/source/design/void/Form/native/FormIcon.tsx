@@ -5,34 +5,34 @@
 // Exports: default
 
 // Module 6569 (FormIcon)
+import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1177 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ icon: { opacity: 0.6 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("design/void/Form/native/FormIcon.tsx");
 
 export default function FormIcon(color) {
+  let style;
+  let themedColor;
+  let tmp9;
   ({ style, themedColor } = color);
+  color = color.color;
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0, themedColor: 0 }));
   const tmp2 = closure_3();
   if (null != themedColor) {
-    const obj2 = { style: null, themedColor: null };
     const items = [tmp2.icon, style];
-    obj2.style = items;
-    obj2.themedColor = themedColor;
+    const ThemedIcon = native.ThemedIcon;
     const merged1 = Object.assign(merged);
-    let tmp9 = jsx(native.ThemedIcon, { style: null, themedColor: null });
+    tmp9 = <ThemedIcon style={items} themedColor={themedColor} />;
   } else {
-    const obj = { style: null, color: null };
     const items1 = [tmp2.icon, style];
-    obj.style = items1;
-    obj.color = color.color;
+    const Icon = native.Icon;
     const merged2 = Object.assign(merged);
-    tmp9 = jsx(native.Icon, { style: null, color: null });
+    tmp9 = <Icon style={items1} color={color} />;
   }
   return tmp9;
 };

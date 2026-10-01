@@ -5,81 +5,127 @@
 // Exports: default
 
 // Module 6832 (PremiumModal)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import UserSettingsPremiumDefault from "UserSettingsPremium" /* 6833 */;
 import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13081 */;
 import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 13095 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const UserSettingsSections = fn(1074).UserSettingsSections;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const UserSettingsSections = Constants.UserSettingsSections;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("components_native/premium/PremiumModal.tsx");
 
 export default function PremiumModal(arg0) {
+  let Navigator;
+  let activitySessionId;
+  let analyticsLocation;
+  let analyticsLocations;
+  let applicationId;
+  let channelId;
+  let giftRecipientId;
+  let guildId;
+  let initialRoute;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let isBoostPurchaseFlow;
+  let obj11;
+  let obj2;
+  let obj3;
+  let obj5;
+  let obj8;
+  let onBack;
+  let onClose;
+  let onPaymentDismiss;
+  let onPaymentSuccess;
+  let planId;
+  let predicate;
+  let premiumFeatureCardOrder;
+  let showCurrentPlan;
   ({ initialRoute, onClose } = arg0);
   ({ applicationId, analyticsLocation, analyticsLocations, onBack, giftRecipientId, predicate, showCurrentPlan, isBoostPurchaseFlow, planId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss } = arg0);
+  const analyticsLocations2 = onClose(onBack[10])(analyticsLocations).analyticsLocations;
   if (initialRoute == null) {
+    let tmp2 = giftRecipientId;
     initialRoute = giftRecipientId.PREMIUM;
   }
-  let obj = { value: onClose(onBack[10])(analyticsLocations).analyticsLocations, children: null };
-  const obj2 = { screens: null, initialRouteName: null };
-  const obj3 = {};
-  const obj4 = { title: null, headerLeft: null, render: null };
-  const intl = analyticsLocation(tmp[3]).intl;
-  obj4.title = intl.string(analyticsLocation(onBack[3]).t.lpNrPu);
-  obj4.headerLeft = analyticsLocation(onBack[4]).getHeaderCloseButton(onClose);
-  obj4.render = function render() {
-    return jsx(UserSettingsPremiumDefault, { applicationId, onClose, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation: true });
-  };
-  obj3[giftRecipientId.PREMIUM] = obj4;
-  const obj6 = { title: null, render: null };
-  const intl2 = analyticsLocation(tmp[3]).intl;
-  obj6.title = intl2.string(analyticsLocation(onBack[3]).t["8jmdON"]);
-  obj6.render = function render() {
-    return planId(onClose(onBack[6]), {});
-  };
-  obj3[giftRecipientId.PREMIUM_MANAGE_PLAN] = obj6;
-  const obj7 = { title: null, headerLeft: null, render: null };
-  const intl3 = analyticsLocation(tmp[3]).intl;
-  obj7.title = intl3.string(analyticsLocation(onBack[3]).t["+CbP2v"]);
-  const obj5 = analyticsLocation(onBack[4]);
-  obj7.headerLeft = analyticsLocation(onBack[4]).getHeaderCloseButton(onClose);
-  obj7.render = function render() {
-    return planId(onClose(onBack[7]), {});
-  };
-  obj3[giftRecipientId.GUILD_BOOSTING] = obj7;
-  const obj9 = { title: null, headerLeft: null, initialParams: null, render: null };
-  const intl4 = analyticsLocation(tmp[3]).intl;
-  obj9.title = intl4.string(analyticsLocation(onBack[3]).t.u95Dt4);
-  obj9.headerLeft = function headerLeft(canGoBack) {
-    const obj = NavigatorHeader;
-    if (canGoBack.canGoBack) {
-      let tmp2 = obj.getHeaderBackButton(onBack)(canGoBack);
-    } else {
-      tmp2 = obj.getHeaderCloseButton(onClose)(canGoBack);
+  let obj = { value: analyticsLocations2, children: planId(Navigator, obj2) };
+  const AnalyticsLocationProvider = analyticsLocation(tmp[10]).AnalyticsLocationProvider;
+  obj2 = { screens: obj3, initialRouteName: initialRoute };
+  obj3 = {};
+  const obj4 = {
+    title: intl.string(analyticsLocation(onBack[3]).t.lpNrPu),
+    headerLeft: obj5.getHeaderCloseButton(onClose),
+    render() {
+      return jsx(UserSettingsPremiumDefault, { applicationId, onClose, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation: true });
     }
-    return tmp2;
   };
-  obj9.initialParams = { predicate, showCurrentPlan, isBoostPurchaseFlow };
-  obj9.render = function render(arg0) {
-    ({ predicate, showCurrentPlan, isBoostPurchaseFlow } = arg0);
-    return jsx(PremiumPlanSelectDefault, { analyticsLocation, predicate, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, guildId });
+  Navigator = analyticsLocation(tmp[11]).Navigator;
+  const PREMIUM = giftRecipientId.PREMIUM;
+  intl = analyticsLocation(tmp[3]).intl;
+  obj3[PREMIUM] = obj4;
+  obj5 = analyticsLocation(onBack[4]);
+  const PREMIUM_MANAGE_PLAN = giftRecipientId.PREMIUM_MANAGE_PLAN;
+  const obj6 = {
+    title: intl2.string(analyticsLocation(onBack[3]).t["8jmdON"]),
+    render() {
+      return planId(onClose(onBack[6]), {});
+    }
   };
-  obj3[giftRecipientId.PREMIUM_PLAN_SELECT] = obj9;
-  const obj10 = { title: null, headerLeft: null, render: null };
-  const intl5 = analyticsLocation(tmp[3]).intl;
-  obj10.title = intl5.string(analyticsLocation(onBack[3]).t.Oba8Sh);
-  const obj8 = analyticsLocation(onBack[4]);
-  obj10.headerLeft = analyticsLocation(onBack[4]).getHeaderCloseButton(onClose);
-  obj10.render = function render() {
-    return jsx(UserSettingsPremiumGiftingDefault, { recipientUserId: giftRecipientId, analyticsLocation });
+  intl2 = analyticsLocation(tmp[3]).intl;
+  obj3[PREMIUM_MANAGE_PLAN] = obj6;
+  const GUILD_BOOSTING = giftRecipientId.GUILD_BOOSTING;
+  const obj7 = {
+    title: intl3.string(analyticsLocation(onBack[3]).t["+CbP2v"]),
+    headerLeft: obj8.getHeaderCloseButton(onClose),
+    render() {
+      return planId(onClose(onBack[7]), {});
+    }
   };
-  obj3[giftRecipientId.PREMIUM_GIFTING] = obj10;
-  obj2.screens = obj3;
-  obj2.initialRouteName = initialRoute;
-  obj.children = planId(analyticsLocation(onBack[11]).Navigator, obj2);
-  return planId(analyticsLocation(onBack[10]).AnalyticsLocationProvider, obj);
+  intl3 = analyticsLocation(tmp[3]).intl;
+  obj3[GUILD_BOOSTING] = obj7;
+  obj8 = analyticsLocation(onBack[4]);
+  const PREMIUM_PLAN_SELECT = giftRecipientId.PREMIUM_PLAN_SELECT;
+  const obj9 = {
+    title: intl4.string(analyticsLocation(onBack[3]).t.u95Dt4),
+    headerLeft(canGoBack) {
+      let tmp2;
+      canGoBack = canGoBack.canGoBack;
+      const obj = NavigatorHeader;
+      if (canGoBack) {
+        tmp2 = obj.getHeaderBackButton(onBack)(canGoBack);
+      } else {
+        tmp2 = obj.getHeaderCloseButton(onClose)(canGoBack);
+      }
+      return tmp2;
+    },
+    initialParams: { predicate, showCurrentPlan, isBoostPurchaseFlow },
+    render(arg0) {
+      let isBoostPurchaseFlow;
+      let predicate;
+      let showCurrentPlan;
+      ({ predicate, showCurrentPlan, isBoostPurchaseFlow } = arg0);
+      return jsx(PremiumPlanSelectDefault, { analyticsLocation, predicate, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, guildId });
+    }
+  };
+  intl4 = analyticsLocation(tmp[3]).intl;
+  obj3[PREMIUM_PLAN_SELECT] = obj9;
+  const PREMIUM_GIFTING = giftRecipientId.PREMIUM_GIFTING;
+  const obj10 = {
+    title: intl5.string(analyticsLocation(onBack[3]).t.Oba8Sh),
+    headerLeft: obj11.getHeaderCloseButton(onClose),
+    render() {
+      return jsx(UserSettingsPremiumGiftingDefault, { recipientUserId: giftRecipientId, analyticsLocation });
+    }
+  };
+  intl5 = analyticsLocation(tmp[3]).intl;
+  obj3[PREMIUM_GIFTING] = obj10;
+  obj11 = analyticsLocation(onBack[4]);
+  return planId(AnalyticsLocationProvider, obj);
 };
 export const PREMIUM_KEY = "PREMIUM_KEY";

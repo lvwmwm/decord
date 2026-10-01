@@ -6,26 +6,23 @@
 
 // Module 11651 (useAnimationDelayedAutoFocus)
 import useAwaitAnimationComplete from "useAwaitAnimationComplete" /* 11644 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/hooks/useAnimationDelayedAutoFocus.tsx");
 
 export const useAnimationDelayedAutoFocus = function useAnimationDelayedAutoFocus(autoFocus, onPress) {
-  closure_0 = autoFocus;
-  closure_1 = onPress;
-  const awaitAnimationCompletion = useAwaitAnimationComplete.useAwaitAnimationCompletion();
-  noop.useRef(false);
+  let closure_0 = autoFocus;
+  let closure_1 = onPress;
+  const obj = useAwaitAnimationComplete;
+  const awaitAnimationCompletion = obj.useAwaitAnimationCompletion();
+  let closure_3 = react.useRef(false);
   const items = [autoFocus, onPress, awaitAnimationCompletion];
-  const effect = noop.useEffect(() => {
-    let tmp = closure_0;
-    if (closure_0) {
-      tmp = !ref.current;
-    }
+  const effect = react.useEffect(() => {
+    const tmp = closure_0 && !ref.current;
     if (tmp) {
       awaitAnimationCompletion(() => {
-        onPress();
+        closure_1_1();
       });
     }
     ref.current = true;

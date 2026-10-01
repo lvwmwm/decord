@@ -5,24 +5,33 @@
 // Exports: default
 
 // Module 15864 (ChannelItemEmbeddedActivities)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
 import GameIcon from "GameIcon" /* 6593 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
 const GameIconDefault = GameIcon;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { overflow: { lineHeight: 16, textAlign: "center", textAlignVertical: "center", padding: 4 }, overflowContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, display: "flex", alignItems: "center", justifyContent: "center" }, container: { display: "flex", flexDirection: "row" }, modeMuted: { opacity: 0.3 } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let obj2;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { overflow: { lineHeight: 16, textAlign: "center", textAlignVertical: "center", padding: 4 }, overflowContainer: obj2, container: { display: "flex", flexDirection: "row" }, modeMuted: { opacity: 0.3 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, display: "flex", alignItems: "center", justifyContent: "center" };
+let closure_6 = createStyles.createStyles(obj);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/ChannelItemEmbeddedActivities.tsx");
 
 export default function ChannelItemEmbeddedActivities(muted) {
+  let Text;
+  let embeddedApps;
+  let items;
+  let items1;
+  let obj7;
   ({ embeddedApps, size } = muted);
   if (size === undefined) {
     size = GameIcon.GameIconSizes.SIZE_24;
@@ -32,35 +41,39 @@ export default function ChannelItemEmbeddedActivities(muted) {
   if (embeddedApps.length <= 0) {
     return null;
   } else if (1 === embeddedApps.length) {
-    const obj2 = { game: embeddedApps[0].application, size, style: null };
+    const obj2 = { game: embeddedApps[0].application, size, style: modeMuted };
+    const tmp5 = React3;
+    const tmp8 = GameIconDefault;
     if (modeMuted) {
       modeMuted = tmp3.modeMuted;
     }
-    obj2.style = modeMuted;
-    return React4(GameIconDefault, obj2);
+    return tmp5(tmp8, obj2);
   } else {
+    let tmp16Result;
+    const application = embeddedApps[0].application;
+    const application2 = embeddedApps[1].application;
     const diff = embeddedApps.length - 1;
     const tmp13 = GameIcon.GameIconImageSize[size];
-    const obj3 = { style: tmp3.container, children: null };
-    const obj4 = { game: embeddedApps[0].application, size, style: { marginRight: 4 } };
-    const items = [React4(GameIconDefault, obj4), ];
+    const obj3 = { style: tmp3.container, children: items };
+    const obj4 = { game: application, size, style: { marginRight: 4 } };
+    items = [React3(GameIconDefault, obj4), ];
+    const tmp11 = require;
+    const tmp14 = hasOwnProperty;
+    const tmp17 = importDefault;
     if (2 === embeddedApps.length) {
-      const obj = { game: embeddedApps[1].application, size };
-      let tmp16Result = tmp16(GameIconDefault, obj);
+      const obj = { game: application2, size };
+      tmp16Result = tmp16(tmp17(6593), obj);
     } else {
-      const obj5 = { style: null, children: null };
-      const items1 = [tmp3.overflowContainer, ];
+      const obj5 = { style: items1, children: React3(Text, obj7) };
+      items1 = [tmp3.overflowContainer, ];
       const obj6 = { height: tmp13, minWidth: tmp13 };
       items1[1] = obj6;
-      obj5.style = items1;
-      const obj7 = { style: tmp3.overflow, variant: "text-xs/bold", children: null };
       const _HermesInternal = HermesInternal;
-      obj7.children = "+" + diff;
-      obj5.children = tmp16(Text_Text.Text, obj7);
+      obj7 = { style: tmp3.overflow, variant: "text-xs/bold", children: "+" + diff };
+      Text = tmp11(4832).Text;
       tmp16Result = tmp16(tmp15, obj5);
     }
     items[1] = tmp16Result;
-    obj3.children = items;
-    return hasOwnProperty(View, obj3);
+    return tmp14(View, obj3);
   }
 };

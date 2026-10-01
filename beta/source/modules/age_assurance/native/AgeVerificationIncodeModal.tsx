@@ -5,76 +5,86 @@
 // Exports: default
 
 // Module 7864 (AgeVerificationIncodeModal)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let jsx = fn(21).jsx;
+let obj2;
+let react = react_mod;
+let jsx = Fragment.jsx;
 const constants = { METHOD_SELECT: "METHOD_SELECT", VERIFY_AGE: "VERIFY_AGE" };
-const createStyles = fn(4836);
-const obj2 = { headerStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj = { headerStyle: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationIncodeModal.tsx");
 
 export default function AgeVerificationIncodeModal(webviewUrl) {
+  let closure_3;
+  let headerTitle;
   webviewUrl = webviewUrl.webviewUrl;
   const onComplete = webviewUrl.onComplete;
   const onClose = webviewUrl.onClose;
   const tmp = closure_6();
-  noop = tmp;
+  react = tmp;
   let intl = webviewUrl(onClose[6]).intl;
   const stringResult = intl.string(webviewUrl(onClose[6]).t.wJVyYR);
   jsx = stringResult;
   const items = [tmp, webviewUrl, onComplete, onClose, stringResult];
-  const memo = noop.useMemo(() => {
-    closure_2 = onClose;
+  const memo = react.useMemo(() => {
     function handleClose() {
       closure_2();
-      onComplete(onClose[4]).pop();
+      const arr = onComplete(onClose[4]);
+      arr.pop();
     }
     const uRL = new URL(webviewUrl);
     const origin = uRL.origin;
-    return {
-      [closure_2_5.METHOD_SELECT]: {
-        headerStyle: closure_3.headerStyle,
-        headerTitle() {
-          return null;
-        },
-        headerLeft() {
-          const obj = { onPress: handleClose, text: null };
-          const intl = webviewUrl(onClose[6]).intl;
-          obj.text = intl.string(webviewUrl(onClose[6]).t.cpT0Cq);
-          return handleClose(webviewUrl(onClose[5]).HeaderActionButton, obj);
-        },
-        render(arg0, arg1) {
-          const navigation = arg1;
-          return handleClose(onComplete(onClose[7]), {
-            onClose: handleClose,
-            trustedOrigin: origin,
-            onMethodSelected(injectedJavaScriptBeforeContentLoaded) {
-              return navigation.navigate(constants.VERIFY_AGE, { injectedJavaScriptBeforeContentLoaded });
-            }
-          });
-        }
+    let obj = {
+      headerStyle: closure_3.headerStyle,
+      headerTitle() {
+        return null;
       },
+      headerLeft() {
+        let intl;
+        const obj = { onPress: handleClose, text: intl.string(webviewUrl(onClose[6]).t.cpT0Cq) };
+        const HeaderActionButton = webviewUrl(onClose[5]).HeaderActionButton;
+        intl = webviewUrl(onClose[6]).intl;
+        return headerTitle(HeaderActionButton, obj);
+      },
+      render(arg0, arg1) {
+        let closure_0 = arg1;
+        let obj = {
+          onClose: handleClose,
+          trustedOrigin: origin,
+          onMethodSelected(c2) {
+            const obj = { injectedJavaScriptBeforeContentLoaded: c2 };
+            return navigation.navigate(constants.VERIFY_AGE, obj);
+          }
+        };
+        return headerTitle(onComplete(onClose[7]), obj);
+      }
+    };
+    return {
+      [closure_2_5.METHOD_SELECT]: obj,
       [closure_2_5.VERIFY_AGE]: {
         headerStyle: closure_3.headerStyle,
         headerTitle,
         headerLeft() {
-          const obj = { onPress: handleClose, text: null };
-          const intl = webviewUrl(onClose[6]).intl;
-          obj.text = intl.string(webviewUrl(onClose[6]).t.cpT0Cq);
-          return handleClose(webviewUrl(onClose[5]).HeaderActionButton, obj);
+          let intl;
+          const obj = { onPress: handleClose, text: intl.string(webviewUrl(onClose[6]).t.cpT0Cq) };
+          const HeaderActionButton = webviewUrl(onClose[5]).HeaderActionButton;
+          intl = webviewUrl(onClose[6]).intl;
+          return headerTitle(HeaderActionButton, obj);
         },
         render(injectedJavaScriptBeforeContentLoaded) {
-          return handleClose(onComplete(onClose[8]), { webviewUrl, onComplete, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
+          const obj = { webviewUrl, onComplete, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded };
+          return headerTitle(onComplete(onClose[8]), obj);
         }
       }
     };
   }, items);
-  let obj = { screens: memo, initialRouteName: constants.METHOD_SELECT, headerBackTitle: null };
+  const Navigator = webviewUrl(onClose[9]).Navigator;
   const intl2 = webviewUrl(onClose[6]).intl;
-  obj.headerBackTitle = intl2.string(webviewUrl(onClose[6]).t["13/7kX"]);
-  return jsx(webviewUrl(onClose[9]).Navigator, { screens: memo, initialRouteName: constants.METHOD_SELECT, headerBackTitle: null });
+  return <Navigator screens={memo} initialRouteName={constants.METHOD_SELECT} headerBackTitle={intl2.string(webviewUrl(onClose[6]).t["13/7kX"])} />;
 };

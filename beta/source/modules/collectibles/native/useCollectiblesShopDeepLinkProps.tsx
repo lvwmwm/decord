@@ -5,12 +5,12 @@
 // Exports: useCollectiblesShopDeepLinkProps
 
 // Module 15424 (useCollectiblesShopDeepLinkProps)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
 import CollectiblesShopStore from "CollectiblesShopStore" /* 6978 */;
 import size from "module_2" /* 2 */;
 
-const useMemo = _mod19.useMemo;
+const useMemo = react.useMemo;
 let closure_5 = {};
 const result = size.fileFinishedImporting("modules/collectibles/native/useCollectiblesShopDeepLinkProps.tsx");
 
@@ -19,8 +19,9 @@ export const useCollectiblesShopDeepLinkProps = function useCollectiblesShopDeep
   const products = categories.products;
   let initialBaseProductSkuId;
   let initialVariantIndex;
+  let obj = categories(products[3]);
   const items = [initialBaseProductSkuId, initialVariantIndex];
-  const stateFromStoresObject = categories(products[3]).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const initialProductSkuId = initialVariantIndex.initialProductSkuId;
     const product = initialBaseProductSkuId.getProduct(initialProductSkuId);
     initialVariantIndex = 0;
@@ -32,8 +33,8 @@ export const useCollectiblesShopDeepLinkProps = function useCollectiblesShopDeep
         const productByStoreListingId = obj.getProductByStoreListingId(product.variantGroupStoreListingId);
         let isVariantProduct = null != productByStoreListingId;
         if (isVariantProduct) {
-          isVariantProduct = categories(products[4]).getIsVariantProduct(productByStoreListingId);
           const obj2 = categories(products[4]);
+          isVariantProduct = obj2.getIsVariantProduct(productByStoreListingId);
         }
         initialVariantIndex = 0;
         initialBaseProductSkuId = initialProductSkuId;
@@ -57,23 +58,24 @@ export const useCollectiblesShopDeepLinkProps = function useCollectiblesShopDeep
   initialVariantIndex = stateFromStoresObject.initialVariantIndex;
   const items1 = [initialBaseProductSkuId, initialVariantIndex, initialCategorySkuId, products, categories];
   return initialCategorySkuId(() => {
+    let bound;
+    let bound1;
     if (null != initialBaseProductSkuId) {
+      let obj2;
       if (null != initialCategorySkuId) {
-        let obj2 = { initialProductSkuId: tmp, initialVariantIndex, initialCategorySkuId: tmp6, productIndex: null, categoryIndex: null };
-        let bound;
+        obj2 = { initialProductSkuId: tmp, initialVariantIndex, initialCategorySkuId: tmp6, productIndex: bound, categoryIndex: bound1 };
+        bound = undefined;
+        const obj3 = products;
         if (null != products) {
           const _Math = Math;
           bound = Math.max(0, obj3.findIndex((skuId) => skuId.skuId === initialBaseProductSkuId));
         }
-        obj2.productIndex = bound;
-        let bound1;
+        bound1 = undefined;
+        const obj = categories;
         if (null != categories) {
           const _Math2 = Math;
           bound1 = Math.max(0, obj.findIndex((skuId) => skuId.skuId === initialCategorySkuId));
         }
-        obj2.categoryIndex = bound1;
-        obj = categories;
-        obj3 = products;
       }
       return obj2;
     }

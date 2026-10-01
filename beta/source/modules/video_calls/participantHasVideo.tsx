@@ -5,12 +5,18 @@
 // Exports: default, useCanRenderParticipantVideo
 
 // Module 8899 (participantHasVideo)
+import Constants from "Constants" /* 4861 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import CallConstants from "CallConstants" /* 4857 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
 function canRenderParticipantVideo(participant, MediaEngineStore) {
   let obj = MediaEngineStore;
   if (MediaEngineStore === undefined) {
@@ -20,13 +26,60 @@ function canRenderParticipantVideo(participant, MediaEngineStore) {
   if (tmp) {
     let tmp3 = participant.type !== constants.ACTIVITY;
     if (tmp3) {
-      const supportsResult = MediaEngineStore.supports(Features.VIDEO);
-      if (!supportsResult) {
-        tmp3 = supportsResult;
-      } else if (hasOwnProperty(participant)) {
-        let flag = null != participant.streamId;
+      let supportsResult = MediaEngineStore.supports(Features.VIDEO);
+      if (supportsResult) {
+        let flag;
+        if (hasOwnProperty(participant)) {
+          flag = null != participant.streamId;
+        } else {
+          const voiceState = participant.voiceState;
+          flag = undefined;
+          if (voiceState != null) {
+            flag = voiceState.selfVideo;
+          }
+          if (flag == null) {
+            flag = false;
+          }
+        }
+        supportsResult = flag;
+      }
+      tmp3 = supportsResult;
+    }
+    let tmp8 = tmp3;
+    if (tmp8) {
+      const tmp10 = hasOwnProperty(participant);
+      let tmp11 = !tmp10;
+      if (tmp10) {
+        tmp11 = participant.user.id !== AuthenticationStore.getId();
+      }
+      if (tmp11) {
+        const tmp14 = metroRequire(participant);
+        let tmp15 = !tmp14;
+        if (tmp14) {
+          tmp15 = !obj.isLocalVideoDisabled(participant.id);
+        }
+        tmp11 = tmp15;
+      }
+      tmp8 = tmp11;
+    }
+    tmp = tmp8;
+  }
+  return tmp;
+}
+({ ParticipantTypes: closure_4, isStreamParticipant: hasOwnProperty, isUserParticipant: metroRequire } = CallConstants);
+const Features = Constants.Features;
+const result = size.fileFinishedImporting("modules/video_calls/participantHasVideo.tsx");
+
+export default function participantHasVideo(type) {
+  let tmp = type.type !== constants.ACTIVITY;
+  if (tmp) {
+    let supportsResult = MediaEngineStore.supports(Features.VIDEO);
+    if (supportsResult) {
+      let flag;
+      if (hasOwnProperty(type)) {
+        flag = null != type.streamId;
       } else {
-        const voiceState = participant.voiceState;
+        const voiceState = type.voiceState;
         flag = undefined;
         if (voiceState != null) {
           flag = voiceState.selfVideo;
@@ -35,54 +88,9 @@ function canRenderParticipantVideo(participant, MediaEngineStore) {
           flag = false;
         }
       }
+      supportsResult = flag;
     }
-    let tmp9 = tmp3;
-    if (tmp9) {
-      const tmp11 = hasOwnProperty(participant);
-      let tmp12 = !tmp11;
-      if (tmp11) {
-        tmp12 = participant.user.id !== AuthenticationStore.getId();
-      }
-      if (tmp12) {
-        const tmp15 = timestampProducer(participant);
-        let tmp16 = !tmp15;
-        if (tmp15) {
-          tmp16 = !obj.isLocalVideoDisabled(participant.id);
-        }
-        tmp12 = tmp16;
-      }
-      tmp9 = tmp12;
-    }
-    tmp = tmp9;
-  }
-  return tmp;
-}
-const CallConstants = fn(4857);
-({ ParticipantTypes: closure_4, isStreamParticipant: hasOwnProperty, isUserParticipant: metroRequire } = CallConstants);
-const Features = fn(4861).Features;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/video_calls/participantHasVideo.tsx");
-
-export default function participantHasVideo(type) {
-  let streamId = type;
-  let tmp = type.type !== constants.ACTIVITY;
-  if (tmp) {
-    const supportsResult = MediaEngineStore.supports(Features.VIDEO);
-    if (!supportsResult) {
-      tmp = supportsResult;
-    } else if (hasOwnProperty(streamId)) {
-      streamId = streamId.streamId;
-      let flag = null != streamId;
-    } else {
-      const voiceState = streamId.voiceState;
-      flag = undefined;
-      if (voiceState != null) {
-        flag = voiceState.selfVideo;
-      }
-      if (flag == null) {
-        flag = false;
-      }
-    }
+    tmp = supportsResult;
   }
   return tmp;
 };
@@ -90,5 +98,6 @@ export { canRenderParticipantVideo };
 export const useCanRenderParticipantVideo = function useCanRenderParticipantVideo(stateFromStores) {
   _require = stateFromStores;
   const items = [MediaEngineStore];
-  return require("initialize").useStateFromStores(items, () => canRenderParticipantVideo(closure_0, MediaEngineStore));
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => canRenderParticipantVideo(stateFromStores, MediaEngineStore));
 };

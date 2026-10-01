@@ -4,38 +4,43 @@
 // Dependencies: [1993, 7417, 504, 11006, 1115, 9104, 9437, 2]
 
 // Module 14796 (OutputVolumeSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl3 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
 import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9437 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const volumeSlider = SettingBuilders.createVolumeSlider({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.xPHVBs);
+    const intl = intl3.intl;
+    return intl.string(intl3.t.xPHVBs);
   },
-  parent: fn(7417).MobileUserSettings.VOICE,
+  parent: MobileUserSettings.VOICE,
   maximum: 200,
   useValue: function useOutputVolumeSettingValue() {
+    let outputVolume;
     const items = [MediaEngineStore];
-    return initialize.useStateFromStores(items, () => outputVolume.getOutputVolume());
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => outputVolume.getOutputVolume());
   },
   onValueChange: AudioActionCreatorsDefault.setOutputVolume,
   useSearchTerms() {
-    const intl = util.intl;
-    const items = [intl.string(util.t["3182VD"]), ];
-    const intl2 = util.intl;
-    items[1] = intl2.string(util.t["DGq/PR"]);
+    const intl = intl3.intl;
+    const items = [intl.string(intl3.t["3182VD"]), ];
+    const intl2 = intl3.intl;
+    items[1] = intl2.string(intl3.t["DGq/PR"]);
     return items;
   },
   usePredicate() {
-    return MobileAudioOutputExperimentDefault.useConfig({ location: "OutputVolumeSetting" }).audioOutputPresent;
+    const obj = MobileAudioOutputExperimentDefault;
+    return obj.useConfig({ location: "OutputVolumeSetting" }).audioOutputPresent;
   }
-});
-const size = fn(2);
+};
+const volumeSlider = SettingBuilders.createVolumeSlider(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/OutputVolumeSetting.tsx");
 
 export default volumeSlider;

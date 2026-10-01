@@ -4,10 +4,11 @@
 // Exports: default
 
 // Module 6209
-import _modDef6206 from "module_6206" /* 6206 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 6206 */;
+import react from "react" /* 19 */;
 
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 
 export default function _default(delayLongPress) {
   let num = delayLongPress.delayLongPress;
@@ -19,6 +20,7 @@ export default function _default(delayLongPress) {
     extraButtonProps = { rippleColor: "transparent", exclusive: true };
   }
   const merged = Object.assign(delayLongPress, Object.assign({ delayLongPress: 0, extraButtonProps: 0 }));
+  TOUCHABLE_STATEDefault;
   const merged1 = Object.assign(merged);
-  return jsx(_modDef6206, { delayLongPress: num, extraButtonProps });
+  return <tmp2 delayLongPress={num} extraButtonProps={extraButtonProps} />;
 };

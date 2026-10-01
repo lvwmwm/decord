@@ -5,20 +5,24 @@
 // Exports: ManaContextProvider, useManaContext
 
 // Module 4611 (ManaContext)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 const obj = {};
-const context = noop.createContext(obj);
-const size = fn(2);
+const context = react.createContext(obj);
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/ManaContext/ManaContext.native.tsx");
 
 export const ManaContext = context;
-export const useManaContext = () => noop.useContext(context);
-export const ManaContextProvider = function ManaContextProvider(children) {
-  value = children.value;
+export const useManaContext = () => react.useContext(context);
+export const ManaContextProvider = function ManaContextProvider(value) {
+  value = value.value;
+  const children = value.children;
+  const Provider = context.Provider;
+  const tmp = jsx;
   if (value == null) {
     value = obj;
   }
-  return <context.Provider value={value}>{arg0.children}</context.Provider>;
+  return tmp(Provider, { value, children });
 };

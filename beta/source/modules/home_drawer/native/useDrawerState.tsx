@@ -6,25 +6,33 @@
 
 // Module 15658 (useDrawerState)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let navigation;
+
+let _slicedToArray = _slicedToArray_mod;
 const result = size.fileFinishedImporting("modules/home_drawer/native/useDrawerState.tsx");
 
 export const useDrawerOpen = function useDrawerOpen(enableHome) {
+  let closure_2;
+  let first;
   let flag = enableHome;
   if (enableHome === undefined) {
     flag = true;
   }
-  let navigation;
+  navigation = undefined;
   _slicedToArray = undefined;
-  navigation = flag(navigation[2]).useNavigation();
-  const tmp2 = _slicedToArray(noop.useState(() => {
-    if (flag) {
+  const obj = flag(navigation[2]);
+  navigation = obj.useNavigation();
+  [first, _slicedToArray] = react.useState(() => {
+    const tmp = flag;
+    if (tmp) {
       const state = navigation.getState();
-      let tmp6;
+      let tmp8;
+      const coerceGuildsRoute = NavigationRouteUtils.coerceGuildsRoute;
+      NavigationRouteUtils;
       if (state != null) {
         const routes = state.routes;
         if (routes != null) {
@@ -35,10 +43,10 @@ export const useDrawerOpen = function useDrawerOpen(enableHome) {
           if (num == null) {
             num = 0;
           }
-          tmp6 = routes[num];
+          tmp8 = routes[num];
         }
       }
-      const coerceGuildsRouteResult = NavigationRouteUtils.coerceGuildsRoute(tmp6);
+      const coerceGuildsRouteResult = coerceGuildsRoute(tmp8);
       let drawerOpen;
       if (coerceGuildsRouteResult != null) {
         const params = coerceGuildsRouteResult.params;
@@ -50,13 +58,14 @@ export const useDrawerOpen = function useDrawerOpen(enableHome) {
     } else {
       return false;
     }
-  }), 2);
-  _slicedToArray = tmp2[1];
+  });
   const items = [navigation, flag];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     function handleStateChange(data) {
       const state = data.data.state;
-      let tmp;
+      let tmp2;
+      const coerceGuildsRoute = flag(navigation[3]).coerceGuildsRoute;
+      flag(navigation[3]);
       if (state != null) {
         const routes = state.routes;
         if (routes != null) {
@@ -67,10 +76,10 @@ export const useDrawerOpen = function useDrawerOpen(enableHome) {
           if (num == null) {
             num = 0;
           }
-          tmp = routes[num];
+          tmp2 = routes[num];
         }
       }
-      const coerceGuildsRouteResult = flag(navigation[3]).coerceGuildsRoute(tmp);
+      const coerceGuildsRouteResult = coerceGuildsRoute(tmp2);
       if (null != coerceGuildsRouteResult) {
         const params = coerceGuildsRouteResult.params;
         let drawerOpen;
@@ -80,12 +89,14 @@ export const useDrawerOpen = function useDrawerOpen(enableHome) {
         closure_1_2(true === drawerOpen);
       }
     }
-    if (handleStateChange) {
+    const tmp = handleStateChange;
+    if (tmp) {
+      let tmp2 = navigation;
       navigation.addListener("state", handleStateChange);
       return () => {
         navigation.removeListener("state", handleStateChange);
       };
     }
   }, items);
-  return tmp2[0];
+  return first;
 };

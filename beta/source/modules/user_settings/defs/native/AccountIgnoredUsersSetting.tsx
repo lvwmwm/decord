@@ -4,33 +4,43 @@
 // Dependencies: [4479, 7417, 1074, 504, 1115, 11006, 6387, 14342, 2]
 
 // Module 14341 (AccountIgnoredUsersSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import EyeSlashIcon from "EyeSlashIcon" /* 6387 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
-  IconComponent: fn(6387).EyeSlashIcon,
+const require = globalThis.__r;
+
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
+  IconComponent: EyeSlashIcon.EyeSlashIcon,
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["93ZDWE"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["93ZDWE"]);
   },
   useDescription: function useAccountIgnoredUsersSettingDescription() {
+    let ignoredIDs;
     const items = [RelationshipStore];
-    const stateFromStoresArray = initialize.useStateFromStoresArray(items, () => ignoredIDs.getIgnoredIDs());
-    const intl = util.intl;
-    return intl.format(util.t.rXUeOl, { numberOfIgnoredUsers: stateFromStoresArray.length });
+    const obj = get_initialized;
+    const stateFromStoresArray = obj.useStateFromStoresArray(items, () => ignoredIDs.getIgnoredIDs());
+    const intl = intl2.intl;
+    const obj2 = { numberOfIgnoredUsers: stateFromStoresArray.length };
+    return intl.format(intl2.t.rXUeOl, obj2);
   },
-  parent: fn(7417).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   screen: {
-    route: fn(1074).UserSettingsSections.IGNORED_USERS,
+    route: UserSettingsSections.IGNORED_USERS,
     getComponent() {
       return require("IgnoredUsersList").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountIgnoredUsersSetting.tsx");
 
 export default route;

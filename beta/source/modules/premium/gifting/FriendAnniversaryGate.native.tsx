@@ -11,6 +11,8 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.native.tsx");
 
 export const getFriendAnniversaryGateConfig = function getFriendAnniversaryGateConfig(arg0) {
-  const obj = { enabled: MobileFriendAnniversaryExperimentDefault.getConfig(arg0).enabled };
+  let obj2;
+  const obj = { enabled: obj2.getConfig(arg0).enabled };
+  obj2 = MobileFriendAnniversaryExperimentDefault;
   return obj;
 };

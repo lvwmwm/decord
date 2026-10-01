@@ -5,37 +5,44 @@
 // Exports: ForYouEmptyState
 
 // Module 16085 (ForYouEmptyState)
-import util from "util" /* 1115 */;
+import react_native from "react-native" /* 17 */;
+import intl3 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import MailboxSpotIllustration from "MailboxSpotIllustration" /* 16086 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
+let c3;
+let closure_4;
+const View = react_native.View;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ image: { marginBottom: 16 }, container: { paddingHorizontal: 48, alignItems: "center", justifyContent: "center" }, headerText: { fontSize: 18, marginTop: 16, marginBottom: 8 }, text: { textAlign: "center" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/notification_center/native/ForYouEmptyState.tsx");
 
 export const ForYouEmptyState = function ForYouEmptyState(height) {
+  let intl;
+  let intl2;
+  let items;
+  let items1;
+  let items2;
+  height = height.height;
   const tmp = closure_5();
-  const obj = { style: null, children: null };
-  const items = [tmp.container, { height: height.height }];
-  obj.style = items;
-  const items1 = [React3(View, { style: tmp.image, children: React3(MailboxSpotIllustration.MailboxSpotIllustration, { scale: 0.75 }) }), , ];
-  const obj3 = { accessibilityRole: "header", color: "mobile-text-heading-primary", variant: "heading-md/bold", style: null, children: null };
-  const items2 = [, ];
+  const obj = { style: items, children: items1 };
+  items = [tmp.container, { height }];
+  items1 = [, , ];
+  const obj2 = { style: tmp.image, children: _false(MailboxSpotIllustration.MailboxSpotIllustration, { scale: 0.75 }) };
+  items1[0] = _false(View, obj2);
+  const obj3 = { accessibilityRole: "header", color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items2, children: intl.string(intl3.t.MwjTvn) };
+  items2 = [, ];
   ({ text: arr3[0], headerText: arr3[1] } = tmp);
-  obj3.style = items2;
-  const intl = util.intl;
-  obj3.children = intl.string(util.t.MwjTvn);
-  items1[1] = React3(Text_Text.Text, obj3);
-  const obj4 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: null };
-  const intl2 = util.intl;
-  obj4.children = intl2.string(util.t.AKBgPy);
-  items1[2] = React3(Text_Text.Text, obj4);
-  obj.children = items1;
-  return React4(View, obj);
+  const Text = Text_Text.Text;
+  intl = intl3.intl;
+  items1[1] = _false(Text, obj3);
+  const obj4 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: intl2.string(intl3.t.AKBgPy) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl3.intl;
+  items1[2] = _false(Text2, obj4);
+  return React3(View, obj);
 };

@@ -5,19 +5,23 @@
 // Exports: default
 
 // Module 12019 (GuildPowerupsImage)
-import initialize from "initialize" /* 504 */;
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 8272 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ image: { width: "75%", height: "100%", alignSelf: "center", resizeMode: "contain" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
 
 export default function GuildPowerupsImage(style) {
+  let imageUrl;
+  let isAnimated;
+  let useReducedMotion;
   ({ imageUrl, isAnimated } = style);
   if (isAnimated === undefined) {
     isAnimated = true;
@@ -25,21 +29,19 @@ export default function GuildPowerupsImage(style) {
   style = style.style;
   const tmp = closure_5();
   const items = [AccessibilityStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const obj2 = utils_PlatformUtils;
   if (obj2.isAndroid()) {
     if (isAnimated) {
+      let tmp6;
       if (!stateFromStores) {
-        const obj3 = { style: null, url: null };
         const items1 = [tmp.image, style];
-        obj3.style = items1;
-        obj3.url = imageUrl;
-        let tmp6 = jsx(APNGDecorationNativeComponentDefault, { style: null, url: null });
+        tmp6 = jsx(APNGDecorationNativeComponentDefault, { style: items1, url: imageUrl });
       }
       return tmp6;
     }
   }
-  const obj4 = { style: null, source: { uri: imageUrl } };
   const items2 = [tmp.image, style];
-  obj4.style = items2;
-  tmp6 = jsx(FastImageDefault, { style: null, source: { uri: imageUrl } });
+  tmp6 = jsx(FastImageDefault, { style: items2, source: { uri: imageUrl } });
 };

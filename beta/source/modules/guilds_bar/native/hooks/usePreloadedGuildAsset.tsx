@@ -7,50 +7,57 @@
 // Module 15974 (usePreloadedGuildAsset)
 import useRefValueDefault from "useRefValue" /* 5898 */;
 import FastImageDefault from "FastImage" /* 5899 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
+let dependencyMap, importDefault;
+
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 const result = size.fileFinishedImporting("modules/guilds_bar/native/hooks/usePreloadedGuildAsset.tsx");
 
 export default function usePreloadedGuildAsset(guildId, icon, asset) {
+  let closure_3;
   importDefault = guildId;
   dependencyMap = icon;
   _slicedToArray = asset;
-  noop = _slicedToArray(noop.useState({}), 2)[1];
-  const ref = noop.useRef({ guildId, asset, icon, preloading: icon });
-  const effect = noop.useEffect(() => () => {
+  let obj = react;
+  react = _slicedToArray(react.useState({}), 2)[1];
+  const obj2 = { guildId, asset, icon, preloading: icon };
+  const ref = react.useRef(obj2);
+  const effect = react.useEffect(() => () => {
     ref.current.guildId = undefined;
   }, []);
   const tmp3 = useRefValueDefault(ref);
   if (guildId === tmp3.guildId) {
     asset = tmp3.asset;
   }
-  const effect1 = noop.useEffect(() => {
+  const effect1 = obj.useEffect(() => {
+    let tmp2 = ref;
+    const tmp = guildId;
     if (guildId === ref.current.guildId) {
       if (null != icon) {
+        const tmp5 = icon !== tmp2.current.icon && icon !== tmp2.current.preloading;
         if (tmp5) {
-          tmp2.current.preloading = tmp3;
-          FastImageDefault.preload(tmp3).then(() => {
-            let tmp2 = ref.current.guildId === guildId;
+          tmp2.current.preloading = icon;
+          const obj = FastImageDefault;
+          const preloadResult = obj.preload(icon);
+          preloadResult.then(() => {
+            const tmp2 = ref.current.guildId === guildId && tmp.current.preloading === icon;
             if (tmp2) {
-              tmp2 = tmp.current.preloading === icon;
-            }
-            if (tmp2) {
-              tmp.current.icon = icon;
-              tmp.current.asset = asset;
+              ref.current.icon = icon;
+              ref.current.asset = asset;
               closure_1_3({});
             }
           });
-          const preloadResult = FastImageDefault.preload(tmp3);
         }
-        tmp5 = tmp3 !== tmp2.current.icon && tmp3 !== tmp2.current.preloading;
       }
     }
-    ref.current.guildId = guildId;
-    ref.current.icon = icon;
-    ref.current.preloading = icon;
-    ref.current.asset = asset;
+    tmp2.current.guildId = tmp;
+    tmp2.current.icon = icon;
+    tmp2.current.preloading = icon;
+    tmp2.current.asset = asset;
   });
   return asset;
 };

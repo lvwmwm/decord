@@ -5,14 +5,14 @@
 // Exports: computeIsStickerReplyEnabled
 
 // Module 7440 (useIsStickerReplyEnabled)
+import Constants from "Constants" /* 1074 */;
 import ThreadHooks from "ThreadHooks" /* 6687 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
+const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/useIsStickerReplyEnabled.tsx");
 
 export const computeIsStickerReplyEnabled = function computeIsStickerReplyEnabled(guildId, channel, message, arg3) {
@@ -26,8 +26,10 @@ export const computeIsStickerReplyEnabled = function computeIsStickerReplyEnable
     }
     tmp2 = isPending;
   }
-  const isReadOnlyThread = ThreadHooks.computeIsReadOnlyThread(channel);
+  const obj = ThreadHooks;
+  const isReadOnlyThread = obj.computeIsReadOnlyThread(channel);
   let canResult = PermissionStore.can(Permissions.SEND_MESSAGES, channel);
+  const bot = message.author.bot;
   if (canResult) {
     canResult = !isReadOnlyThread;
   }
@@ -35,7 +37,7 @@ export const computeIsStickerReplyEnabled = function computeIsStickerReplyEnable
     canResult = !tmp2;
   }
   if (canResult) {
-    canResult = !message.author.bot;
+    canResult = !bot;
   }
   if (canResult) {
     canResult = arg3;

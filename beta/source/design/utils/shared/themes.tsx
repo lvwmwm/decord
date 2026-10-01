@@ -16,8 +16,8 @@ export const isThemeLight = function isThemeLight(arg0) {
 };
 export const isThemeDark = function isThemeDark(arg0) {
   if (ThemeTypes.ASH !== arg0) {
-    if (tmp.ONYX !== arg0) {
-      if (tmp.DARK !== arg0) {
+    if (ThemeTypes.ONYX !== arg0) {
+      if (ThemeTypes.DARK !== arg0) {
         return false;
       }
     }

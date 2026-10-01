@@ -4,26 +4,31 @@
 // Dependencies: [19, 21, 7715, 1115, 8370, 2]
 
 // Module 10104 (MediaKeyboardBottomSheetHandle)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
 import useStateFromSharedValue from "useStateFromSharedValue" /* 7715 */;
-import native from "native" /* 8370 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardBottomSheetHandle.tsx");
-
-export default noop.memo(function MediaKeyboardBottomSheetHandle(onPress) {
+let tmp;
+const native = tmp(8370);
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function MediaKeyboardBottomSheetHandle(onPress) {
+  let stringResult;
   onPress = onPress.onPress;
-  const derivedStateFromSharedValue = useStateFromSharedValue.useDerivedStateFromSharedValue(onPress.animatedIndex, (arg0) => arg0 > 0);
-  const intl = util.intl;
+  const animatedIndex = onPress.animatedIndex;
+  const obj = useStateFromSharedValue;
+  const derivedStateFromSharedValue = obj.useDerivedStateFromSharedValue(animatedIndex, (arg0) => arg0 > 0);
+  const intl = intl2.intl;
   const string = intl.string;
-  const t = util.t;
+  const t = intl2.t;
   if (derivedStateFromSharedValue) {
-    let stringResult = string(t.iTcuma);
+    stringResult = string(t.iTcuma);
   } else {
     stringResult = string(t.dcl9MQ);
   }
   return jsx(native.ActionSheetDragHandle, { onPress, accessibilityLabel: stringResult, "aria-hidden": null == onPress });
 });
+const result = size.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardBottomSheetHandle.tsx");
+
+export default memoResult;

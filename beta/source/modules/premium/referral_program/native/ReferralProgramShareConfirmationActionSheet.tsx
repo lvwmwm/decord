@@ -5,106 +5,149 @@
 // Exports: default
 
 // Module 12984 (ReferralProgramShareConfirmationActionSheet)
-import _mod17 from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
-import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 6873 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
+let BottomSheet;
+
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
 function SharedUser(user) {
+  let ChatIcon;
+  let intl;
+  let intl2;
+  let items1;
+  let items2;
+  let obj10;
+  let obj7;
+  let tmp9Result;
   user = user.user;
+  const trialCreationResult = user.trialCreationResult;
   const tmp = closure_8();
-  const name = UserUtilsDefault.getName(user);
-  const tmp6 = user.trialCreationResult === user(6873).CreateReferralStatus.FAIL;
-  const obj2 = { style: tmp.recipientRow, children: null };
+  let obj = UserUtilsDefault;
+  const name = obj.getName(user);
+  const tmp6 = trialCreationResult === user(6873).CreateReferralStatus.FAIL;
+  let obj2 = { style: tmp.recipientRow, children: items1 };
   const items = [tmp.avatarContainer, ];
   let erroredAvatar = tmp6;
+  const Avatar = user(1177).Avatar;
+  const tmp8 = View;
   if (tmp6) {
     erroredAvatar = tmp.erroredAvatar;
   }
-  const tmp8 = View;
+  let obj3 = { style: items, size: tmp5(1177).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
   items[1] = erroredAvatar;
-  const items1 = [closure_5(user(1177).Avatar, { style: items, size: user(1177).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" }), , ];
+  items1 = [closure_5(Avatar, obj3), , ];
   if (tmp6) {
-    const obj4 = { children: null };
+    const obj4 = { children: items2 };
     const obj5 = { variant: "text-md/medium", color: "text-muted", style: tmp.recipientDisplayName, children: name };
-    const items2 = [tmp9(tmp5(4832).Text, obj5), ];
-    const obj6 = { variant: "text-md/medium", color: "text-muted", children: null };
-    const intl = tmp5(1115).intl;
-    const obj7 = { userName: name };
-    obj6.children = intl.format(tmp5(1115).t.RO3T4B, obj7);
-    items2[1] = tmp9(tmp5(4832).Text, obj6);
-    obj4.children = items2;
-    let tmp9Result = tmp7(closure_6, obj4);
+    items2 = [closure_5(user(4832).Text, obj5), ];
+    const obj6 = { variant: "text-md/medium", color: "text-muted", children: intl.format(user(1115).t.RO3T4B, obj7) };
+    const Text = tmp5(4832).Text;
+    intl = tmp5(1115).intl;
+    obj7 = { userName: name };
+    items2[1] = closure_5(Text, obj6);
+    tmp9Result = tmp7(closure_6, obj4);
   } else {
     const obj8 = { variant: "text-md/medium", color: "text-strong", style: tmp.recipientDisplayName, children: name };
     tmp9Result = tmp9(tmp5(4832).Text, obj8);
   }
   items1[1] = tmp9Result;
-  const obj9 = { variant: "secondary", size: "sm", text: null, icon: null, onPress: null };
-  const intl2 = tmp5(1115).intl;
-  obj9.text = intl2.string(user(1115).t["g33r/P"]);
-  const obj3 = { style: items, size: user(1177).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
-  obj9.icon = closure_5(user(5385).ChatIcon, { size: "xs", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT });
-  obj9.onPress = function onPress() {
-    ActionSheetActionCreatorsDefault.hideActionSheet();
-    ChannelActionCreatorsDefault.openPrivateChannel({ recipientIds: user.id });
+  const obj9 = {
+    variant: "secondary",
+    size: "sm",
+    text: intl2.string(user(1115).t["g33r/P"]),
+    icon: closure_5(ChatIcon, obj10),
+    onPress() {
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      const obj2 = ChannelActionCreatorsDefault;
+      const obj3 = { recipientIds: user.id };
+      obj2.openPrivateChannel(obj3);
+    }
   };
-  items1[2] = closure_5(user(5281).Button, obj9);
-  obj2.children = items1;
+  const Button = tmp5(5281).Button;
+  intl2 = tmp5(1115).intl;
+  obj10 = { size: "xs", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
+  ChatIcon = tmp5(5385).ChatIcon;
+  items1[2] = closure_5(Button, obj9);
   return closure_7(tmp8, obj2);
 }
-const View = _mod17.View;
+const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-let obj = { content: { paddingHorizontal: nativeDefault.space.PX_16 }, headerAsset: { alignSelf: "center" }, header: null, subheader: null, recipientContainer: null, recipientRow: null, recipientDisplayName: null, erroredAvatar: null, avatarContainer: null };
-let obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
-obj.header = { marginTop: nativeDefault.space.PX_16, alignSelf: "center", paddingHorizontal: nativeDefault.space.PX_8, textAlign: "center" };
-let obj3 = { marginTop: nativeDefault.space.PX_16, alignSelf: "center", paddingHorizontal: nativeDefault.space.PX_8, textAlign: "center" };
-obj.subheader = { textAlign: "center", paddingHorizontal: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_8 };
-let obj4 = { textAlign: "center", paddingHorizontal: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_8 };
-obj.recipientContainer = { gap: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16, paddingBottom: 21 };
-let obj5 = { gap: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16, paddingBottom: 21 };
-obj.recipientRow = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
-obj.recipientDisplayName = { flex: 1 };
-obj.erroredAvatar = { opacity: 0.5 };
-obj.avatarContainer = { alignSelf: "center", justifyContent: "center" };
-let closure_8 = createStyles.createStyles(obj);
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { content: obj2, headerAsset: { alignSelf: "center" }, header: obj3, subheader: obj4, recipientContainer: obj5, recipientRow: obj6, recipientDisplayName: { flex: 1 }, erroredAvatar: { opacity: 0.5 }, avatarContainer: { alignSelf: "center", justifyContent: "center" } };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { marginTop: nativeDefault.space.PX_16, alignSelf: "center", paddingHorizontal: nativeDefault.space.PX_8, textAlign: "center" };
+obj4 = { textAlign: "center", paddingHorizontal: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_8 };
+obj5 = { gap: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16, paddingBottom: 21 };
+obj6 = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
+let closure_8 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareConfirmationActionSheet.tsx");
 
 export default function ReferralProgramShareConfirmationActionSheet(trialCreationResult) {
+  let Stack;
+  let arr2;
+  let items;
+  let obj2;
+  let obj4;
+  let stringResult;
+  let tmp5;
   require = trialCreationResult;
+  const selectedUsers = trialCreationResult.selectedUsers;
   const tmp = closure_8();
-  if (0 === arr.filter((item) => item === trialCreationResult(dependencyMap[6]).CreateReferralStatus.SUCCESS).length) {
-    const intl2 = util.intl;
-    let stringResult = intl2.string(util.t["7VBEue"]);
-    let tmp5 = require;
+  const arr = Array.from(trialCreationResult.trialCreationResult.values());
+  if (0 === arr.filter((item) => item === ReferralTrialActionCreators.CreateReferralStatus.SUCCESS).length) {
+    const intl2 = intl4.intl;
+    stringResult = intl2.string(intl4.t["7VBEue"]);
+    tmp5 = require;
   } else {
-    const intl = util.intl;
-    stringResult = intl.string(util.t.tKCltd);
+    const intl = intl4.intl;
+    stringResult = intl.string(intl4.t.tKCltd);
     tmp5 = require;
   }
   const intl3 = tmp5(1115).intl;
-  const obj = { helpdeskArticle: null };
-  arr = Array.from(trialCreationResult.trialCreationResult.values());
-  obj.helpdeskArticle = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
-  const obj3 = { startExpanded: true, contentStyles: tmp.content, header: closure_5(tmp5(6570).BottomSheetTitleHeader, { title: null }), children: null };
-  const obj4 = { children: null };
-  const formatResult = intl3.format(tmp5(1115).t.AwGSWl, obj);
-  const items = [closure_5(View, { style: tmp.headerAsset, children: closure_5(tmp5(12985).FistBumpSpotIllustration, {}) }), closure_5(tmp5(4832).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult }), closure_5(tmp5(4832).Text, { variant: "text-md/medium", color: "text-default", style: tmp.subheader, children: formatResult }), ];
-  const obj8 = { style: tmp.recipientContainer, children: null };
+  const format = intl3.format;
+  let obj = { helpdeskArticle: obj2.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM) };
+  const AwGSWl = tmp5(1115).t.AwGSWl;
+  obj2 = HelpdeskUtilsDefault;
+  const obj3 = { startExpanded: true, contentStyles: tmp.content, header: closure_5(tmp5(6570).BottomSheetTitleHeader, { title: null }), children: closure_7(Stack, obj4) };
+  const formatResult = format(AwGSWl, obj);
+  BottomSheet = tmp5(6571).BottomSheet;
+  obj4 = { children: items };
   const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(12985).FistBumpSpotIllustration, {}) };
+  Stack = tmp5(5279).Stack;
+  items = [closure_5(View, obj5), , , ];
   const obj6 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };
+  items[1] = closure_5(tmp5(4832).Text, obj6);
   const obj7 = { variant: "text-md/medium", color: "text-default", style: tmp.subheader, children: formatResult };
-  obj8.children = Array.from(trialCreationResult.selectedUsers).map((user) => hasOwnProperty(SharedUser, { user, trialCreationResult: trialCreationResult.get(user.id) }, user.id));
+  items[2] = closure_5(tmp5(4832).Text, obj7);
+  const obj8 = {
+    style: tmp.recipientContainer,
+    children: arr2.map((user) => {
+      const obj = { user, trialCreationResult: require.get(user.id) };
+      return hasOwnProperty(SharedUser, obj, user.id);
+    })
+  };
+  arr2 = Array.from(selectedUsers);
   items[3] = closure_5(View, obj8);
-  obj4.children = items;
-  obj3.children = closure_7(tmp5(5279).Stack, obj4);
-  return closure_5(tmp5(6571).BottomSheet, obj3);
+  return closure_5(BottomSheet, obj3);
 };

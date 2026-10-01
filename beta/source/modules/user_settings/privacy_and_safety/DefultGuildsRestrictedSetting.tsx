@@ -17,7 +17,6 @@ export const useDefaultGuildsRestricted = function useDefaultGuildsRestricted() 
   let setting1 = DefaultGuildsRestrictedV2.useSetting();
   if (null == setting1) {
     setting1 = setting || setting;
-    const tmp3 = setting || setting;
   }
   return setting1;
 };

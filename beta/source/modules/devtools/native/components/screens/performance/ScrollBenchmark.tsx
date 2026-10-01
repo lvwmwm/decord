@@ -5,35 +5,40 @@
 // Exports: default
 
 // Module 15338 (ScrollBenchmark)
-import TableRow from "TableRow" /* 5917 */;
+import Fragment from "Fragment" /* 21 */;
+import TableRow2 from "TableRow" /* 5917 */;
 import useFrameMonitorDefault from "useFrameMonitor" /* 15335 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/ScrollBenchmark.tsx");
 
 export default function ScrollBenchmark(subLabel) {
+  let monitoring;
+  let start;
+  let str3;
   let str = subLabel.subLabel;
+  const onResult = subLabel.onResult;
   if (str === undefined) {
     str = "Records frame times while you scroll the content below.";
   }
-  const tmp = useFrameMonitorDefault(subLabel.onResult);
+  const tmp = useFrameMonitorDefault(onResult);
   ({ monitoring, start } = tmp);
+  const stop = tmp.stop;
   let str2 = "Start scroll monitor";
+  const TableRow = TableRow2.TableRow;
+  const tmp2 = jsx;
   if (monitoring) {
     str2 = "Stop scroll monitor";
   }
-  const obj = { label: str2, subLabel: str, variant: null, arrow: true, onPress: null };
-  let str3;
+  const obj = { label: str2, subLabel: str, variant: str3, arrow: true, onPress: start };
+  str3 = undefined;
   if (monitoring) {
     str3 = "danger";
   }
-  obj.variant = str3;
   if (monitoring) {
-    start = tmp.stop;
+    start = stop;
   }
-  obj.onPress = start;
-  return jsx(TableRow.TableRow, { label: str2, subLabel: str, variant: null, arrow: true, onPress: null });
+  return tmp2(TableRow, obj);
 };

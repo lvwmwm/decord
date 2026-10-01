@@ -5,27 +5,30 @@
 // Exports: default
 
 // Module 6478 (useFastestListComputedStyles)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const StyleSheet = fn(17).StyleSheet;
-const size = fn(2);
+const StyleSheet = react_native.StyleSheet;
 const result = size.fileFinishedImporting("modules/fastest_list/useFastestListComputedStyles.android.tsx");
 
 export default function useFastestListComputedStyles(style) {
   style = style.style;
   let items = [style];
-  return style.useMemo(() => {
+  return style.useMemo(function() {
+    let obj2;
     let obj = style;
+    const flatten = StyleSheet.flatten;
     if (null != style) {
       if (obj == null) {
         obj = { flex: 1 };
       }
       const items = [obj];
-      let obj2 = items;
+      obj2 = items;
     } else {
       obj2 = { flex: 1 };
     }
-    const flattenResult = StyleSheet.flatten(obj2);
+    const flattenResult = flatten(obj2);
     let num;
     if (flattenResult != null) {
       num = flattenResult.marginStart;
@@ -142,11 +145,12 @@ export default function useFastestListComputedStyles(style) {
         }
         if (typeof num3 === "number") {
           if (typeof num4 === "number") {
-            const obj3 = { style: flattenResult, marginEnd: num3 + num4, marginStart: num + num2 };
-            return obj3;
+            return { style: flattenResult, marginEnd: num3 + num4, marginStart: num + num2 };
           }
         }
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("FastestList: paddingStart and paddingEnd must be numbers.");
         throw error;
       }

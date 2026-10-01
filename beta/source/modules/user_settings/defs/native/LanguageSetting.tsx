@@ -4,24 +4,33 @@
 // Dependencies: [2112, 1074, 504, 1115, 11006, 14970, 14972, 2]
 
 // Module 14969 (LanguageSetting)
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import LanguageIcon from "LanguageIcon" /* 14970 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+let _require;
+
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.IHMsPn);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.IHMsPn);
   },
   parent: null,
-  IconComponent: fn(14970).LanguageIcon,
+  IconComponent: LanguageIcon.LanguageIcon,
   useTrailing: function useLanguageSettingTrailing() {
+    let closure_0;
+    let locale;
     const items = [LocaleStore];
-    _require = require("initialize").useStateFromStores(items, () => locale.locale);
-    const obj = require("initialize");
+    const obj = require("get initialized");
     const tmp = _require;
-    const availableLocales = require("util").getAvailableLocales();
+    _require = obj.useStateFromStores(items, () => locale.locale);
+    const obj2 = require("intl");
+    const availableLocales = obj2.getAvailableLocales();
     const found = availableLocales.find((value) => value.value === closure_0);
     let stringResult = null;
     if (null != found) {
@@ -31,13 +40,13 @@ const route = SettingBuilders.createRoute({
     return stringResult;
   },
   screen: {
-    route: fn(1074).UserSettingsSections.LANGUAGE,
+    route: UserSettingsSections.LANGUAGE,
     getComponent() {
       return require("UserSettingsLocale").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/LanguageSetting.tsx");
 
 export default route;

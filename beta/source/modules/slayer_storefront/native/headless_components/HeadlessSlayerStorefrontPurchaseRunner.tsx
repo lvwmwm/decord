@@ -5,75 +5,93 @@
 // Exports: HeadlessSlayerStorefrontPurchaseRunner
 
 // Module 10273 (HeadlessSlayerStorefrontPurchaseRunner)
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import noop from "module_19" /* 19 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 6844 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const require = fn;
-let useNativeCheckoutStore = fn(6844).useNativeCheckoutStore;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+let react = react_mod;
+let useNativeCheckoutStore = NativeCheckoutStore.useNativeCheckoutStore;
+const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/headless_components/HeadlessSlayerStorefrontPurchaseRunner.tsx");
 
 export const HeadlessSlayerStorefrontPurchaseRunner = function HeadlessSlayerStorefrontPurchaseRunner(attempt) {
+  let analyticsLocations;
+  let closure_3;
+  let closure_4;
+  let id;
+  let onPurchaseError;
+  let sku;
+  let skuId;
   attempt = attempt.attempt;
   ({ onPurchaseComplete: importDefault, onPurchaseError } = attempt);
   useNativeCheckoutStore = undefined;
   onPurchaseError = undefined;
-  closure_9 = undefined;
+  let closure_9;
+  let ref2;
   ({ skuId, sku, analyticsLocations } = attempt);
   const tmp = useNativeCheckoutStore((analyticsFields) => analyticsFields.analyticsFields);
-  noop = tmp;
+  react = tmp;
   const tmp2 = useNativeCheckoutStore((setCheckoutFailed) => setCheckoutFailed.setCheckoutFailed);
   useNativeCheckoutStore = tmp2;
   let tmp3 = useNativeCheckoutStore((orderRecord) => orderRecord.orderRecord);
-  closure_5 = tmp3;
+  let closure_5 = tmp3;
   const tmp4 = useNativeCheckoutStore((orderRequired) => orderRequired.orderRequired);
-  closure_6 = tmp4;
-  noop.useRef(false);
+  let closure_6 = tmp4;
+  let obj = react;
+  const ref = react.useRef(false);
   const items = [tmp, tmp2, onPurchaseError];
-  onPurchaseError = noop.useCallback(() => {
+  onPurchaseError = react.useCallback(() => {
     if (!ref.current) {
       tmp.current = true;
-      AnalyticsUtilsDefault.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_3);
+      const obj = AnalyticsUtilsDefault;
+      obj.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_3);
       closure_4();
     }
     onPurchaseError();
   }, items);
-  let obj2 = { skuId, sku, analyticsLoadId: tmp.load_id, analyticsLocations, orderId: null, analyticsData: null, onPurchaseComplete: null, onPurchaseError: null, onPurchasePending: null };
-  let id;
+  let obj2 = {
+    skuId,
+    sku,
+    analyticsLoadId: tmp.load_id,
+    analyticsLocations,
+    orderId: id,
+    analyticsData: tmp,
+    onPurchaseComplete() {
+      ref.current = true;
+      const obj = PlatformUtils;
+      if (obj.isIOS()) {
+        const obj2 = AnalyticsUtilsDefault;
+        obj2.track(AnalyticEvents.PAYMENT_FLOW_SUCCEEDED, closure_3);
+      }
+      importDefault();
+    },
+    onPurchaseError,
+    onPurchasePending() {
+
+    }
+  };
+  id = undefined;
+  const tmp6 = require("useMobileSocialLayerPurchaseSKU");
   if (tmp3 != null) {
     id = tmp3.id;
   }
-  obj2.orderId = id;
-  obj2.analyticsData = tmp;
-  obj2.onPurchaseComplete = function onPurchaseComplete() {
-    closure_7.current = true;
-    if (obj.isIOS()) {
-      AnalyticsUtilsDefault.track(AnalyticEvents.PAYMENT_FLOW_SUCCEEDED, closure_3);
-    }
-    closure_1_1();
-  };
-  obj2.onPurchaseError = onPurchaseError;
-  obj2.onPurchasePending = function onPurchasePending() {
-
-  };
-  const tmp6Result = require("useMobileSocialLayerPurchaseSKU")(obj2);
+  const tmp6Result = tmp6(obj2);
   closure_9 = tmp6Result;
-  noop.useRef(0);
+  ref2 = obj.useRef(0);
   const items1 = [attempt, tmp6Result, onPurchaseError, tmp3, tmp4];
   const effect = obj.useEffect(() => {
     if (ref2.current !== attempt) {
-      let tmp3 = closure_6;
-      if (closure_6) {
-        tmp3 = null == closure_5;
-      }
+      const tmp3 = closure_6 && null == closure_5;
       if (!tmp3) {
         tmp.current = tmp2;
-        closure_7.current = false;
-        closure_9().catch(callback);
+        ref.current = false;
         const promise = closure_9();
+        promise.catch(callback);
       }
     }
   }, items1);

@@ -5,55 +5,59 @@
 // Exports: useJoinOrStartButtonState
 
 // Module 12799 (EmbeddedApplicationInstanceUtils)
-import util from "util" /* 1115 */;
-import noop from "module_19" /* 19 */;
+import intl11 from "intl" /* 1115 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function getJoinOrStartButtonState(channel) {
+  let currentEmbeddedActivity;
+  let embeddedActivity;
+  let intl10;
+  let joinability;
+  let stringResult;
+  let stringResult1;
+  let tmp6;
   ({ embeddedActivity, joinability, currentEmbeddedActivity } = channel);
-  const obj = { disabled: false, isJoinAction: null != embeddedActivity, text: null, tooltip: "Array" };
-  const intl = util.intl;
+  const obj = { disabled: false, isJoinAction: null != embeddedActivity, text: stringResult, tooltip: "Array" };
+  channel = channel.channel;
+  const intl = intl11.intl;
   const string = intl.string;
-  const t = util.t;
+  const t = intl11.t;
   if (null == embeddedActivity) {
-    let stringResult = string(t.RscU7I);
-    let tmp6 = tmp2;
+    stringResult = string(t.RscU7I);
+    tmp6 = tmp2;
   } else {
     stringResult = string(t.sqe0hj);
     tmp6 = tmp2;
   }
-  obj.text = stringResult;
-  const result = tmp6(8789).isActivitiesInTextEnabled(channel.channel);
+  const tmp6Result = tmp6(8789);
+  const result = tmp6Result.isActivitiesInTextEnabled(channel);
   if (null != embeddedActivity) {
     if (null != currentEmbeddedActivity) {
       if (embeddedActivity.launchId === currentEmbeddedActivity.launchId) {
-        const obj2 = {};
+        const obj2 = { disabled: true, text: intl10.string(tmp6(1115).t.DPfdsq), tooltip: undefined };
         const merged = Object.assign(obj);
-        obj2.disabled = true;
-        const intl10 = tmp6(1115).intl;
-        obj2.text = intl10.string(tmp6(1115).t.DPfdsq);
-        obj2.tooltip = undefined;
+        intl10 = tmp6(1115).intl;
         return obj2;
       }
     }
   }
   if (null == embeddedActivity) {
-    const obj3 = {};
+    const obj3 = { disabled: !result, tooltip: stringResult1 };
     const merged1 = Object.assign(obj);
-    obj3.disabled = !result;
-    let stringResult1;
+    stringResult1 = undefined;
     if (!result) {
       const intl9 = tmp6(1115).intl;
       stringResult1 = intl9.string(tmp6(1115).t.f41E1g);
     }
-    obj3.tooltip = stringResult1;
     return obj3;
   } else {
     if (null != joinability) {
       if (joinability !== tmp6(8825).EmbeddedActivityJoinability.CAN_JOIN) {
+        let stringResult2;
         if (tmp6(8825).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
           const intl8 = tmp6(1115).intl;
-          let stringResult2 = intl8.string(tmp6(1115).t.hHGrWz);
+          stringResult2 = intl8.string(tmp6(1115).t.hHGrWz);
         } else if (tmp6(8825).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
           const intl7 = tmp6(1115).intl;
           stringResult2 = intl7.string(tmp6(1115).t["4WuFRE"]);
@@ -73,18 +77,14 @@ function getJoinOrStartButtonState(channel) {
           const intl2 = tmp6(1115).intl;
           stringResult2 = intl2.string(tmp6(1115).t.Etp6uI);
         }
-        const obj4 = {};
+        const obj4 = { disabled: true, tooltip: stringResult2 };
         const merged2 = Object.assign(obj);
-        obj4.disabled = true;
-        obj4.tooltip = stringResult2;
         return obj4;
       }
     }
     return obj;
   }
-  const tmp6Result = tmp6(8789);
 }
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/EmbeddedApplicationInstanceUtils.tsx");
 
 export const EmbedStates = { ACTIVE: 0, [0]: "ACTIVE", ENDED: 1, [1]: "ENDED" };
@@ -94,6 +94,9 @@ export const useJoinOrStartButtonState = function useJoinOrStartButtonState(embe
   const currentEmbeddedActivity = embeddedActivity.currentEmbeddedActivity;
   const channel = embeddedActivity.channel;
   const items = [embeddedActivity, joinability, currentEmbeddedActivity, channel];
-  return currentEmbeddedActivity.useMemo(() => getJoinOrStartButtonState({ embeddedActivity, joinability, currentEmbeddedActivity, channel }), items);
+  return currentEmbeddedActivity.useMemo(() => {
+    const obj = { embeddedActivity, joinability, currentEmbeddedActivity, channel };
+    return getJoinOrStartButtonState(obj);
+  }, items);
 };
 export { getJoinOrStartButtonState };

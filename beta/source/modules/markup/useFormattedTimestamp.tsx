@@ -6,12 +6,13 @@
 
 // Module 9589 (useFormattedTimestamp)
 import DurationsDefault from "Durations" /* 1091 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
 let items = [2 * DurationsDefault.Seconds.MINUTE, DurationsDefault.Seconds.SECOND];
 const items1 = [items, , , ];
 const items2 = [5 * DurationsDefault.Seconds.MINUTE, DurationsDefault.Seconds.MINUTE];
@@ -21,21 +22,24 @@ items1[2] = items3;
 const items4 = [21 * DurationsDefault.Seconds.HOUR, 5 * DurationsDefault.Seconds.MINUTE];
 items1[3] = items4;
 let closure_6 = 2 * DurationsDefault.Seconds.HOUR;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/markup/useFormattedTimestamp.tsx");
 
 export default function useFormattedTimestamp(format) {
+  let formatted;
   _require = format;
-  const forceUpdate = require("areHookInputsEqual").useForceUpdate();
+  const tmp = _require;
+  let obj = require("module_6860");
+  const forceUpdate = obj.useForceUpdate();
   const items = [forceUpdate, , ];
   ({ format: arr[1], parsed: arr[2] } = format);
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let closure_0;
     if ("R" === format.format) {
       let result = 1000 * closure_1_6;
       const _Math = Math;
       const parsed = tmp.parsed;
-      const absolute = Math.abs(parsed.diff(forceUpdate(closure_1_2[4])()));
-      const obj = dependencyMap[Symbol.iterator]();
+      const absolute = Math.abs(parsed.diff(forceUpdate(dependencyMap[4])()));
+      const obj = items1[Symbol.iterator]();
       while (obj !== undefined) {
         let tmp14 = _slicedToArray(tmp11, 2);
         if (absolute < 1000 * tmp14[0]) {
@@ -52,8 +56,8 @@ export default function useFormattedTimestamp(format) {
     }
   }, items);
   if ("R" === format.format) {
-    const TIMESTAMP_FORMATS = require("TimestampUtils").TIMESTAMP_FORMATS;
-    let formatted = TIMESTAMP_FORMATS.R(format.parsed);
+    const TIMESTAMP_FORMATS = tmp(5330).TIMESTAMP_FORMATS;
+    formatted = TIMESTAMP_FORMATS.R(format.parsed);
   } else {
     formatted = format.formatted;
   }

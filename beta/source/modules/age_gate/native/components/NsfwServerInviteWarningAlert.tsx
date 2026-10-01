@@ -5,102 +5,102 @@
 // Exports: showNsfwServerInviteWarningAlert
 
 // Module 9236 (NsfwServerInviteWarningAlert)
+import Fragment from "Fragment" /* 21 */;
 import useAlertStore from "useAlertStore" /* 5205 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 class NsfwServerInviteWarningAlert {
-  constructor(arg0) {
-    onConfirm = global.onConfirm;
-    closure_1 = undefined;
-    joins = undefined;
-    tmp = onConfirm;
-    tmp2 = joins;
-    obj = onConfirm(joins[4]);
-    dismissModalCallback = obj.useDismissModalCallback();
-    closure_1 = dismissModalCallback;
-    obj2 = onConfirm(joins[2]);
-    isVerifiedTeen = obj2.useIsVerifiedTeen();
-    tmp5 = onConfirm(joins[2]);
+  constructor(onConfirm) {
+    let confirmText;
+    let description;
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    let intl5;
+    let intl6;
+    let obj5;
+    let tmp11;
+    onConfirm = onConfirm.onConfirm;
+    let joins;
+    let tmp = onConfirm;
+    let obj = onConfirm(joins[4]);
+    const dismissModalCallback = obj.useDismissModalCallback();
+    const obj2 = onConfirm(joins[2]);
+    const isVerifiedTeen = obj2.useIsVerifiedTeen();
+    onConfirm(joins[2]);
     if (isVerifiedTeen) {
-      obj1 = { description: null, confirmText: null, joins: false, goBackIsPrimary: true };
+      const obj3 = { description: intl5.string(tmp(joins[3]).t.dqC1w2), confirmText: intl6.string(tmp(joins[3]).t.FDSSia), joins: false, goBackIsPrimary: true };
       intl5 = tmp(tmp2[3]).intl;
-      obj1.description = intl5.string(tmp(tmp2[3]).t.dqC1w2);
       intl6 = tmp(tmp2[3]).intl;
-      obj1.confirmText = intl6.string(tmp(tmp2[3]).t.FDSSia);
-      obj9 = obj1;
+      obj5 = obj3;
     } else if (tmp6) {
-      obj8 = { description: null, confirmText: null, joins: true, goBackIsPrimary: false };
+      const obj4 = { description: intl3.string(tmp(joins[3]).t.fp3xf5), confirmText: intl4.string(tmp(joins[3]).t.wVq7uo), joins: true, goBackIsPrimary: false };
       intl3 = tmp(tmp2[3]).intl;
-      obj8.description = intl3.string(tmp(tmp2[3]).t.fp3xf5);
       intl4 = tmp(tmp2[3]).intl;
-      obj8.confirmText = intl4.string(tmp(tmp2[3]).t.wVq7uo);
-      obj9 = obj8;
+      obj5 = obj4;
     } else {
-      obj9 = { description: null, confirmText: null, joins: false, goBackIsPrimary: false };
+      obj5 = { description: intl.string(tmp(tmp2[3]).t.qiLic6), confirmText: intl2.string(tmp(tmp2[3]).t.FDSSia), joins: false, goBackIsPrimary: false };
       intl = tmp(tmp2[3]).intl;
-      obj9.description = intl.string(tmp(tmp2[3]).t.qiLic6);
       intl2 = tmp(tmp2[3]).intl;
-      obj9.confirmText = intl2.string(tmp(tmp2[3]).t.FDSSia);
     }
-    joins = obj9.joins;
-    goBackIsPrimary = obj9.goBackIsPrimary;
-    items = [, , ];
-    items[0] = dismissModalCallback;
-    items[1] = joins;
-    items[2] = onConfirm;
-    ({ description, confirmText } = obj9);
-    tmp8 = jsx;
-    callback = closure_3.useCallback(() => {
-      if (joins) {
+    joins = obj5.joins;
+    const goBackIsPrimary = obj5.goBackIsPrimary;
+    const items = [dismissModalCallback, joins, onConfirm];
+    ({ description, confirmText } = obj5);
+    const callback = react.useCallback(() => {
+      const tmp = joins;
+      if (tmp) {
         onConfirm();
       } else {
         dismissModalCallback();
-        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
-        const result = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal(obj2);
+        const obj = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
+        const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
+        AgeVerificationActionCreatorsDefault;
+        const result = showAgeVerificationGetStartedModal(obj);
       }
     }, items);
-    str = "primary";
+    let str = "primary";
+    const AlertActionButton = tmp(tmp2[7]).AlertActionButton;
     if (goBackIsPrimary) {
       str = "secondary";
     }
-    tmp8Result = tmp8(tmp(tmp2[7]).AlertActionButton, { variant: str, text: confirmText, onPress: callback }, "confirm");
-    str2 = "secondary";
+    const tmp8Result = <AlertActionButton key="confirm" variant={str} text={confirmText} onPress={callback} />;
+    let str2 = "secondary";
+    const AlertActionButton2 = tmp(tmp2[7]).AlertActionButton;
     if (goBackIsPrimary) {
       str2 = "primary";
     }
-    obj10 = { variant: str2, text: null };
-    intl7 = tmp(tmp2[3]).intl;
-    obj10.text = intl7.string(tmp(tmp2[3]).t["/g10LC"]);
-    tmp8Result1 = tmp8(tmp(tmp2[7]).AlertActionButton, obj10, "go-back");
-    obj11 = { title: null, content: null, actions: null };
-    intl8 = tmp(tmp2[3]).intl;
-    obj11.title = intl8.string(tmp(tmp2[3]).t.xi46lg);
-    obj11.content = description;
-    items1 = [, ];
+    const intl7 = tmp(tmp2[3]).intl;
+    const tmp8Result2 = <AlertActionButton2 key="go-back" variant={str2} text={intl7.string(tmp(joins[3]).t["/g10LC"])} />;
+    const AlertModal = tmp(tmp2[7]).AlertModal;
+    const intl8 = tmp(tmp2[3]).intl;
+    const items1 = [, ];
     if (goBackIsPrimary) {
-      items1[0] = tmp8Result1;
+      items1[0] = tmp8Result2;
       items1[1] = tmp8Result;
       tmp11 = items1;
     } else {
       items1[0] = tmp8Result;
-      items1[1] = tmp8Result1;
+      items1[1] = tmp8Result2;
       tmp11 = items1;
     }
-    obj11.actions = tmp11;
-    return tmp8(tmp(tmp2[7]).AlertModal, obj11);
+    return <AlertModal title={intl8.string(tmp(joins[3]).t.xi46lg)} content={description} actions={tmp11} />;
   }
 }
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 let c5 = "nsfw-server-invite-warning";
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/age_gate/native/components/NsfwServerInviteWarningAlert.tsx");
 
 export default NsfwServerInviteWarningAlert;
 export const NSFW_SERVER_INVITE_WARNING_ALERT_KEY = "nsfw-server-invite-warning";
 export const showNsfwServerInviteWarningAlert = function showNsfwServerInviteWarningAlert(arg0) {
+  let onConfirm;
+  let onDismiss;
   ({ onConfirm, onDismiss } = arg0);
-  useAlertStore.openAlert(c5, <NsfwServerInviteWarningAlert onConfirm={onConfirm} />, onDismiss);
+  const obj = useAlertStore;
+  obj.openAlert(c5, <NsfwServerInviteWarningAlert onConfirm={onConfirm} />, onDismiss);
 };

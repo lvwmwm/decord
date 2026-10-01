@@ -5,15 +5,16 @@
 // Exports: useTrackShopCardClick
 
 // Module 8290 (useTrackShopCardClick)
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6973 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
-import noop from "module_19" /* 19 */;
+import CollectiblesShopVariantsUIStore from "CollectiblesShopVariantsUIStore" /* 8291 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const useSelectedVariantIndex = fn(8291).useSelectedVariantIndex;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+const useSelectedVariantIndex = CollectiblesShopVariantsUIStore.useSelectedVariantIndex;
+const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useTrackShopCardClick.tsx");
 
 export const useTrackShopCardClick = function useTrackShopCardClick(product) {
@@ -23,9 +24,10 @@ export const useTrackShopCardClick = function useTrackShopCardClick(product) {
   let cardId;
   let sessionId;
   let tilePosition;
-  closure_5 = undefined;
+  let closure_5;
   let shopDiscountSource;
-  let collectiblesAnalyticsContext = require("CollectiblesAnalyticsContext").useCollectiblesAnalyticsContext();
+  let obj = require("CollectiblesAnalyticsContext");
+  let collectiblesAnalyticsContext = obj.useCollectiblesAnalyticsContext();
   if (collectiblesAnalyticsContext == null) {
     collectiblesAnalyticsContext = {};
   }
@@ -34,36 +36,39 @@ export const useTrackShopCardClick = function useTrackShopCardClick(product) {
   tilePosition = collectiblesAnalyticsContext.tilePosition;
   const tmp3 = tilePosition(product);
   closure_5 = tmp3;
-  let obj = require("CollectiblesAnalyticsContext");
-  const currentUserIfAvailable = require("useCurrentUser").useCurrentUserIfAvailable();
-  let tmpResult = require("useCurrentUser");
-  shopDiscountSource = require("CollectiblesUtils").getShopDiscountSource(currentUserIfAvailable);
+  let tmpResult = tmp(tmp2[4]);
+  const currentUserIfAvailable = tmpResult.useCurrentUserIfAvailable();
+  let tmpResult2 = tmp(tmp2[5]);
+  shopDiscountSource = tmpResult2.getShopDiscountSource(currentUserIfAvailable);
   const items = [product, tmp3, sessionId, cardId, analyticsLocations, tilePosition, shopDiscountSource];
   return sessionId.useCallback((cta, arg1) => {
-    if (obj.getIsVariantProduct(product)) {
+    let skuId;
+    let tmpResult;
+    let tmpResult2;
+    const obj = CollectiblesProductUtils;
+    if (obj.getIsVariantProduct(require)) {
       let tmp4 = arg1;
+      const variants = tmp3.variants;
       if (arg1 == null) {
         tmp4 = closure_5;
       }
       let skuId1;
-      if (tmp3.variants[tmp4] != null) {
+      if (variants[tmp4] != null) {
         skuId1 = tmp6.skuId;
       }
       if (skuId1 == null) {
         skuId1 = tmp3.skuId;
       }
-      let skuId = skuId1;
+      skuId = skuId1;
     } else {
       skuId = tmp3.skuId;
     }
-    obj = CollectiblesProductUtils;
-    const obj3 = { sku_id: skuId, cta, shop_session_id: sessionId, card_id: cardId, product_sku_ids: null, location_stack: null, position_in_section: null, discount_source: null };
-    const obj2 = AnalyticsUtilsDefault;
-    obj3.product_sku_ids = CollectiblesProductUtils.getProductSkuIds(product);
-    obj3.location_stack = analyticsLocations;
-    obj3.position_in_section = tilePosition;
-    const tmpResult = CollectiblesProductUtils;
-    obj3.discount_source = CollectiblesUtils.getAnalyticsShopDiscountSource(shopDiscountSource);
-    obj2.track(AnalyticEvents.SHOP_CARD_CLICKED, obj3);
+    const obj2 = { sku_id: skuId, cta, shop_session_id: sessionId, card_id: cardId, product_sku_ids: tmpResult.getProductSkuIds(require), location_stack: analyticsLocations, position_in_section: tilePosition, discount_source: tmpResult2.getAnalyticsShopDiscountSource(shopDiscountSource) };
+    const track = AnalyticsUtilsDefault.track;
+    const SHOP_CARD_CLICKED = AnalyticEvents.SHOP_CARD_CLICKED;
+    AnalyticsUtilsDefault;
+    tmpResult = CollectiblesProductUtils;
+    tmpResult2 = CollectiblesUtils;
+    track(SHOP_CARD_CLICKED, obj2);
   }, items);
 };

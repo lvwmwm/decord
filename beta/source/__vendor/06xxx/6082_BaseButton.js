@@ -9,6 +9,7 @@ import GestureDetectorType from "GestureDetectorType" /* 6086 */;
 import _mod6178 from "module_6178" /* 6178 */;
 import _mod6185 from "module_6185" /* 6185 */;
 
+const GestureDetectorType_export = GestureDetectorType.GestureDetectorType;
 
 export const BaseButton = _mod6083.BaseButton;
 export const BorderlessButton = _mod6083.BorderlessButton;
@@ -22,7 +23,7 @@ export const Switch = _mod6083.Switch;
 export const TextInput = _mod6083.TextInput;
 export const Touchable = _mod6083.Touchable;
 export const GestureDetector = GestureDetectorType.GestureDetector;
-export const GestureDetectorType = GestureDetectorType.GestureDetectorType;
+export { GestureDetectorType_export as GestureDetectorType };
 export const InterceptingGestureDetector = GestureDetectorType.InterceptingGestureDetector;
 export const VirtualGestureDetector = GestureDetectorType.VirtualGestureDetector;
 export const GestureStateManager = _mod6185.GestureStateManager;

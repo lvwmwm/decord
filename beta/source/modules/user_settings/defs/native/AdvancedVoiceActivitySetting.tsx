@@ -4,37 +4,45 @@
 // Dependencies: [1993, 7417, 504, 9104, 1115, 11006, 2]
 
 // Module 14805 (AdvancedVoiceActivitySetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.BbESsg);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.BbESsg);
   },
-  parent: fn(7417).MobileUserSettings.VOICE,
+  parent: MobileUserSettings.VOICE,
   useValue: function useAdvancedVoiceActivitySettingValue() {
+    let modeOptions;
     const items = [MediaEngineStore];
-    return initialize.useStateFromStores(items, () => modeOptions.getModeOptions().vadUseKrisp);
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => modeOptions.getModeOptions().vadUseKrisp);
   },
   onValueChange: function onAdvancedVoiceActivitySettingValueChange(vadUseKrisp) {
     const mode = MediaEngineStore.getMode();
-    AudioActionCreatorsDefault.setMode(mode, { vadUseKrisp });
+    const obj = AudioActionCreatorsDefault;
+    const obj2 = { vadUseKrisp };
+    obj.setMode(mode, obj2);
   },
   useDescription: function useAdvancedVoiceActivitySettingDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.LoOB1F);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.LoOB1F);
   },
   usePredicate: function useHasAdvancedVoiceActivitySetting() {
+    let advancedVoiceActivitySupported;
     const items = [MediaEngineStore];
-    return initialize.useStateFromStores(items, () => advancedVoiceActivitySupported.isAdvancedVoiceActivitySupported());
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => advancedVoiceActivitySupported.isAdvancedVoiceActivitySupported());
   }
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AdvancedVoiceActivitySetting.tsx");
 
 export default toggle;

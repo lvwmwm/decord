@@ -4,24 +4,26 @@
 // Dependencies: [504, 573, 2]
 
 // Module 12827 (VibegrationsAppChannelsStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import size_mod from "module_2" /* 2 */;
 
 const set = new Set();
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class VibegrationsAppChannelsStore extends Store {
+  isChatOpen(current) {
+    return set.has(current);
+  }
 }
-VibegrationsAppChannelsStore.prototype["isChatOpen"] = function isChatOpen(current) {
-  return set.has(current);
-};
-const vibegrationsAppChannelsStore = new VibegrationsAppChannelsStore(DispatcherDefault, {
+const prototype = VibegrationsAppChannelsStore.prototype;
+let obj = {
   LOGOUT: function handleLogout() {
+    const obj = set;
     if (0 === set.size) {
       return false;
     } else {
       obj.clear();
     }
-    obj = set;
   },
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
     channelId = channelId.channelId;
@@ -33,39 +35,43 @@ const vibegrationsAppChannelsStore = new VibegrationsAppChannelsStore(Dispatcher
       }
     }
     let num = 0;
+    size = set.size;
     if (null != tmp) {
       num = 1;
     }
-    if (set.size === num) {
+    if (size === num) {
       return false;
     } else {
-      obj.clear();
+      set.clear();
       if (null != tmp) {
-        obj.add(tmp);
+        set.add(tmp);
       }
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     const id = channel.channel.id;
+    const obj = set;
     if (set.has(id)) {
       obj.delete(id);
     } else {
       return false;
     }
-    obj = set;
   },
   VIBEGRATIONS_APP_CHANNEL_CHAT_SET: function handleChatSet(arg0) {
+    let channelId;
+    let open;
     ({ channelId, open } = arg0);
     if (set.has(channelId) === open) {
       return false;
     } else if (open) {
-      obj.add(channelId);
+      set.add(channelId);
     } else {
-      obj.delete(channelId);
+      set.delete(channelId);
     }
   }
-});
-const size = fn(2);
+};
+const vibegrationsAppChannelsStore = new VibegrationsAppChannelsStore(DispatcherDefault, obj);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/vibegrations/stores/VibegrationsAppChannelsStore.tsx");
 
 export default vibegrationsAppChannelsStore;

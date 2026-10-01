@@ -5,112 +5,124 @@
 // Exports: default
 
 // Module 14293 (SettingsAgeGroupResetAlert)
-import _modDef3039 from "module_3039" /* 3039 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c1, c3;
 
-const require = fn;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
+let closure_4;
+let hasOwnProperty;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let c6 = "settings-age-group-reset";
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupResetAlert.tsx");
 
 export default function SettingsAgeGroupResetAlert() {
-  importDefault = async function _handleConfirm(dependencyMap, value) {
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
-      if (dependencyMap === 1) {
-        throw value;
-      } else if (dependencyMap === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c3 = 2;
-        if (0 === c1) {
-          if (dependencyMap === 1) {
-            c3 = 3;
-            throw value;
-          } else if (dependencyMap === 2) {
-            c3 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            dependencyMap = 1;
-            c1 = 2;
-            c3 = 1;
-            const obj6 = { value: tmp3(13307).resetAgeVerification(), done: false };
-            return obj6;
-          }
-        } else if (1 === tmp7) {
-          dependencyMap = 0;
-          const intl = tmp3(1115).intl;
-          tmp3(4527).presentError(intl.string(tmp3(1115).t.fEptJP));
-          const _Error = Error;
-          const error = new Error("Reset failed");
-          throw error;
-        } else if (dependencyMap === 1) {
-          c3 = 3;
+  let AlertActions;
+  let closure_0;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let obj3;
+  let obj = function _handleConfirm() {
+    obj = _asyncToGenerator(async function(arg0, value) {
+      let obj3;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
           throw value;
-        } else if (dependencyMap === 2) {
-          dependencyMap = 0;
-          c3 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          tmp3(5205).dismissAlert(closure_1_6);
-          closure_128_0.goBack();
-          dependencyMap = 0;
-          c3 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp29) {
-        if (tmp4 === dependencyMap) {
-          c3 = tmp2;
-          throw tmp29;
-        } else {
-          c1 = tmp;
+      } else {
+        let c2;
+        try {
+          c3 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              c2 = 1;
+              c1 = 2;
+              c3 = 1;
+              const obj5 = { value: obj3.resetAgeVerification(), done: false };
+              obj3 = tmp(c2[3]);
+              return obj5;
+            }
+          } else if (1 === tmp4) {
+            c2 = 0;
+            const presentError = tmp(c2[5]).presentError;
+            const tmp15 = tmp(c2[5]);
+            const intl = tmp(c2[6]).intl;
+            presentError(intl.string(tmp(c2[6]).t.fEptJP));
+            const _Error = Error;
+            const self = this;
+            const self2 = this;
+            const error = new Error("Reset failed");
+            throw error;
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 0;
+            c3 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            obj = tmp(c2[4]);
+            obj.dismissAlert(closure_1_6);
+            closure_128_0.goBack();
+            c2 = 0;
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp25) {
+          if (0 === c2) {
+            c3 = 3;
+            throw tmp25;
+          } else {
+            c1 = 1;
+          }
         }
       }
-    }
+    });
+    return obj(...arguments);
   };
-  _require = require("useNavigation").useNavigation();
-  let obj2 = { title: null, content: null, actions: null };
-  let intl = require("util").intl;
-  obj2.title = intl.string(_modDef3039["bD//cU"]);
-  const intl2 = require("util").intl;
-  obj2.content = intl2.string(_modDef3039.FbTAmI);
-  const obj3 = { children: null };
-  const obj4 = {
+  obj = require("useNavigation");
+  _require = obj.useNavigation();
+  let obj2 = { title: intl.string(obj(3039)["bD//cU"]), content: intl2.string(obj(3039).FbTAmI), actions: closure_5(AlertActions, obj3) };
+  const AlertModal = require("AlertModal").AlertModal;
+  intl = require("intl").intl;
+  intl2 = require("intl").intl;
+  obj3 = { children: items };
+  AlertActions = require("AlertModal").AlertActions;
+  let obj4 = {
     variant: "destructive",
     onPress: function handleConfirm() {
-      const self = this;
-      const apply = closure_1.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+      return obj(...arguments);
     },
-    text: null
+    text: intl3.string(obj(3039).V822Mp)
   };
-  const intl3 = require("util").intl;
-  obj4.text = intl3.string(_modDef3039.V822Mp);
-  const items = [closure_4(require("AlertModal").AlertActionButton, obj4, "confirm"), ];
-  let obj5 = { variant: "secondary", text: null };
-  const intl4 = require("util").intl;
-  obj5.text = intl4.string(require("util").t["ETE/oC"]);
-  items[1] = closure_4(require("AlertModal").AlertActionButton, obj5, "cancel");
-  obj3.children = items;
-  obj2.actions = closure_5(require("AlertModal").AlertActions, obj3);
-  return closure_4(require("AlertModal").AlertModal, obj2);
+  const AlertActionButton = require("AlertModal").AlertActionButton;
+  intl3 = require("intl").intl;
+  items = [closure_4(AlertActionButton, obj4, "confirm"), ];
+  let obj5 = { variant: "secondary", text: intl4.string(require("intl").t["ETE/oC"]) };
+  const AlertActionButton2 = require("AlertModal").AlertActionButton;
+  intl4 = require("intl").intl;
+  items[1] = closure_4(AlertActionButton2, obj5, "cancel");
+  return closure_4(AlertModal, obj2);
 };
 export const SETTINGS_AGE_GROUP_RESET_ALERT_ID = "settings-age-group-reset";

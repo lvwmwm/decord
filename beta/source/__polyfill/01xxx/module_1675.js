@@ -3,18 +3,19 @@
 // Dependencies: [1641, 1642, 1676, 1668, 1645, 1649, 1669]
 
 // Module 1675
-import valueSetter from "valueSetter" /* 1676 */;
+import valueSetter2 from "valueSetter" /* 1676 */;
 import module_1641_mod from "module_1641" /* 1641 */;
 
 const require = globalThis.__r;
+let _require, map;
 
 let module_1641 = module_1641_mod;
 module_1641.shouldBeUseWeb();
-let module_1641 = module_1641_mod;
+module_1641 = module_1641_mod;
 let closure_2 = module_1641.isJest();
 function addCompilerSafeGetAndSet(prototype) {
-  closure_0 = prototype;
-  Object.defineProperties(prototype, {
+  let closure_0 = prototype;
+  const obj = {
     get: {
       value() {
         return obj.value;
@@ -34,7 +35,8 @@ function addCompilerSafeGetAndSet(prototype) {
       configurable: false,
       enumerable: false
     }
-  });
+  };
+  Object.defineProperties(prototype, obj);
 }
 addCompilerSafeGetAndSet.__closure = {};
 addCompilerSafeGetAndSet.__workletHash = 14094096506039;
@@ -46,61 +48,67 @@ hideInternalValueProp.__closure = {};
 hideInternalValueProp.__workletHash = 3380393180484;
 hideInternalValueProp.__initData = { code: "function hideInternalValueProp_Pnpm_mutablesTs2(mutable){Object.defineProperty(mutable,'_value',{configurable:false,enumerable:false});}" };
 function makeMutableUI(initialValues) {
-  new Map();
-  closure_1 = initialValues;
-  let obj = {};
+  let obj3;
+  let obj4;
+  map = new Map();
+  let closure_1 = initialValues;
+  let obj = {
+    modify(fn, flag) {
+      let tmp3;
+      if (flag === undefined) {
+        flag = true;
+      }
+      const valueSetter = valueSetter2.valueSetter;
+      valueSetter2;
+      const tmp2 = obj;
+      if (undefined !== fn) {
+        tmp3 = fn(initialValues);
+      } else {
+        tmp3 = initialValues;
+      }
+      valueSetter(tmp2, tmp3, flag);
+    },
+    addListener(arg0, arg1) {
+      const result = map.set(arg0, arg1);
+    },
+    removeListener(arg0) {
+      map.delete(arg0);
+    },
+    _animation: null,
+    _isReanimatedSharedValue: true
+  };
   Object.defineProperty(obj, "value", {
-    get: () => closure_1,
+    get: () => initialValues,
     set: (value) => {
-      obj = valueSetter;
+      obj = valueSetter2;
       obj.valueSetter(obj, value);
     }
   });
   Object.defineProperty(obj, "_value", {
-    get: () => closure_1,
+    get: () => initialValues,
     set: (arg0) => {
-      closure_0 = arg0;
-      closure_1 = arg0;
-      const item = obj.forEach((fn) => {
+      let closure_0 = arg0;
+      let closure_1 = arg0;
+      const item = map.forEach((fn) => {
         fn(closure_0);
       });
     }
   });
-  obj.modify = function modify(fn, flag) {
-    if (flag === undefined) {
-      flag = true;
-    }
-    obj = valueSetter;
-    if (undefined !== fn) {
-      let tmp2 = fn(closure_1);
-    } else {
-      tmp2 = closure_1;
-    }
-    obj.valueSetter(obj, tmp2, flag);
-  };
-  obj.addListener = function addListener(arg0, arg1) {
-    const result = obj.set(arg0, arg1);
-  };
-  obj.removeListener = function removeListener(arg0) {
-    obj.delete(arg0);
-  };
-  obj._animation = null;
-  obj._isReanimatedSharedValue = true;
   if (typeof hideInternalValueProp === "function") {
     const _Object = Object;
     Object.defineProperty(obj, "_value", { configurable: false, enumerable: false });
+    let tmp3 = addCompilerSafeGetAndSet;
     if (typeof addCompilerSafeGetAndSet === "function") {
       const _Object2 = Object;
-      const obj2 = { get: null, set: null };
-      const obj3 = {
+      const obj2 = { get: obj3, set: obj4 };
+      obj3 = {
         value() {
               return obj.value;
             },
         configurable: false,
         enumerable: false
       };
-      obj2.get = obj3;
-      const obj4 = {
+      obj4 = {
         value(__isAnimationDefinition) {
               if (typeof __isAnimationDefinition === "function") {
                 if (!__isAnimationDefinition.__isAnimationDefinition) {
@@ -112,7 +120,6 @@ function makeMutableUI(initialValues) {
         configurable: false,
         enumerable: false
       };
-      obj2.set = obj4;
       Object.defineProperties(obj, obj2);
       return obj;
     } else {
@@ -121,9 +128,9 @@ function makeMutableUI(initialValues) {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-  const map = new Map();
 }
-makeMutableUI.__closure = { valueSetter: valueSetter.valueSetter, hideInternalValueProp, addCompilerSafeGetAndSet };
+let obj = { valueSetter: valueSetter2.valueSetter, hideInternalValueProp, addCompilerSafeGetAndSet };
+makeMutableUI.__closure = obj;
 makeMutableUI.__workletHash = 8132940328790;
 makeMutableUI.__initData = { code: "function makeMutableUI_Pnpm_mutablesTs3(initial){const{valueSetter,hideInternalValueProp,addCompilerSafeGetAndSet}=this.__closure;const listeners=new Map();let value=initial;const mutable={get value(){return value;},set value(newValue){valueSetter(mutable,newValue);},get _value(){return value;},set _value(newValue){value=newValue;listeners.forEach(function(listener){listener(newValue);});},modify:function(modifier,forceUpdate=true){valueSetter(mutable,modifier!==undefined?modifier(value):value,forceUpdate);},addListener:function(id,listener){listeners.set(id,listener);},removeListener:function(id){listeners.delete(id);},_animation:null,_isReanimatedSharedValue:true};hideInternalValueProp(mutable);addCompilerSafeGetAndSet(mutable);return mutable;}" };
 const __initData = { code: "function pnpm_mutablesTs4(){const{makeMutableUI,initial}=this.__closure;return makeMutableUI(initial);}" };
@@ -133,13 +140,37 @@ let closure_9 = { code: "function pnpm_mutablesTs7(){const{mutable,modifier,forc
 
 export { makeMutableUI };
 export const makeMutable = module_1641 ? (function makeMutableWeb(arg0) {
-  closure_0 = arg0;
-  const map = new Map();
-  let obj = {};
+  let obj3;
+  let obj4;
+  let closure_0 = arg0;
+  map = new Map();
+  let obj = {
+    modify(fn, flag) {
+      let value;
+      if (flag === undefined) {
+        flag = true;
+      }
+      const valueSetter = valueSetter2.valueSetter;
+      valueSetter2;
+      if (undefined !== fn) {
+        value = fn(iter.value);
+      } else {
+        value = iter.value;
+      }
+      valueSetter(obj, value, flag);
+    },
+    addListener(arg0, arg1) {
+      const result = map.set(arg0, arg1);
+    },
+    removeListener(arg0) {
+      map.delete(arg0);
+    },
+    _isReanimatedSharedValue: true
+  };
   Object.defineProperty(obj, "value", {
     get: () => closure_0,
     set: (value) => {
-      obj = valueSetter;
+      obj = valueSetter2;
       obj.valueSetter(obj, value);
     }
   });
@@ -152,41 +183,20 @@ export const makeMutable = module_1641 ? (function makeMutableWeb(arg0) {
       });
     }
   });
-  obj.modify = function modify(fn, flag) {
-    if (flag === undefined) {
-      flag = true;
-    }
-    obj = valueSetter;
-    if (undefined !== fn) {
-      value = fn(iter.value);
-    } else {
-      value = iter.value;
-    }
-    obj.valueSetter(obj, value, flag);
-  };
-  obj.addListener = function addListener(arg0, arg1) {
-    const result = map.set(arg0, arg1);
-  };
-  obj.removeListener = function removeListener(arg0) {
-    map.delete(arg0);
-  };
-  obj._isReanimatedSharedValue = true;
   if (typeof hideInternalValueProp === "function") {
     const _Object = Object;
     Object.defineProperty(obj, "_value", { configurable: false, enumerable: false });
     if (typeof addCompilerSafeGetAndSet === "function") {
-      closure_0 = obj;
       const _Object2 = Object;
-      const obj2 = { get: null, set: null };
-      const obj3 = {
+      const obj2 = { get: obj3, set: obj4 };
+      obj3 = {
         value() {
               return obj.value;
             },
         configurable: false,
         enumerable: false
       };
-      obj2.get = obj3;
-      const obj4 = {
+      obj4 = {
         value(__isAnimationDefinition) {
               if (typeof __isAnimationDefinition === "function") {
                 if (!__isAnimationDefinition.__isAnimationDefinition) {
@@ -198,9 +208,9 @@ export const makeMutable = module_1641 ? (function makeMutableWeb(arg0) {
         configurable: false,
         enumerable: false
       };
-      obj2.set = obj4;
       Object.defineProperties(obj, obj2);
-      if (obj) {
+      const tmp5 = obj;
+      if (tmp5) {
         obj.toJSON = () => JSON.stringify(closure_0);
       }
       return obj;
@@ -211,16 +221,49 @@ export const makeMutable = module_1641 ? (function makeMutableWeb(arg0) {
     throw new TypeError("Trying to call a non-function");
   }
 }) : (function makeMutableNative(initial) {
-  const obj2 = { __init: null };
-  let fn = function n() {
-    return makeMutableUI(obj4);
+  let fn;
+  let obj4;
+  let obj6;
+  let obj7;
+  _require = initial;
+  let obj = require("module_1668");
+  let obj2 = { __init: fn };
+  fn = function n() {
+    return makeMutableUI(initial);
   };
-  fn.__closure = { makeMutableUI, initial };
+  const obj3 = { makeMutableUI, initial };
+  fn.__closure = obj3;
   fn.__workletHash = 38746935544;
   fn.__initData = __initData;
-  obj2.__init = fn;
-  const obj4 = {};
-  const shareableCloneRecursive = obj4(obj4[3]).makeShareableCloneRecursive(obj2);
+  const tmp2 = obj4;
+  obj4 = {
+    modify(modifier) {
+      initial = modifier;
+      let flag = arg1;
+      if (arg1 === undefined) {
+        flag = true;
+      }
+      const fn = function u() {
+        obj4.modify(modifier, flag);
+      };
+      const obj2 = { mutable: flag, modifier, forceUpdate: flag };
+      fn.__closure = obj2;
+      fn.__workletHash = 15983399508815;
+      fn.__initData = __initData3;
+      const obj = initial(obj4[4]);
+      obj.runOnUI(fn)();
+    },
+    addListener() {
+      const reanimatedError = new initial(obj4[5]).ReanimatedError("Adding listeners is only possible on the UI runtime.");
+      throw reanimatedError;
+    },
+    removeListener() {
+      const reanimatedError = new initial(obj4[5]).ReanimatedError("Removing listeners is only possible on the UI runtime.");
+      throw reanimatedError;
+    },
+    _isReanimatedSharedValue: true
+  };
+  const shareableCloneRecursive = obj.makeShareableCloneRecursive(obj2);
   Object.defineProperty(obj4, "value", {
     get: () => {
       const fn = function t(value) {
@@ -229,67 +272,48 @@ export const makeMutable = module_1641 ? (function makeMutableWeb(arg0) {
       fn.__closure = {};
       fn.__workletHash = 5375306386445;
       fn.__initData = __initData;
-      return require("runWorkletOnJS").executeOnUIRuntimeSync(fn)(obj4);
+      const obj = require("setupMicrotasks");
+      return obj.executeOnUIRuntimeSync(fn)(obj4);
     },
     set: (newValue) => {
-      value = newValue;
+      let value;
+      initial = newValue;
       const fn = function n() {
         obj4.value = value;
       };
-      fn.__closure = { mutable: obj4, newValue };
+      const obj2 = { mutable: obj4, newValue };
+      fn.__closure = obj2;
       fn.__workletHash = 11269088169577;
       fn.__initData = __initData2;
-      obj4(obj4[4]).runOnUI(fn)();
+      const obj = initial(obj4[4]);
+      obj.runOnUI(fn)();
     }
   });
   Object.defineProperty(obj4, "_value", {
     get: () => {
-      const reanimatedError = new obj4(obj4[5]).ReanimatedError("Reading from `_value` directly is only possible on the UI runtime. Perhaps you passed an Animated Style to a non-animated component?");
+      const reanimatedError = new initial(obj4[5]).ReanimatedError("Reading from `_value` directly is only possible on the UI runtime. Perhaps you passed an Animated Style to a non-animated component?");
       throw reanimatedError;
     },
     set: (arg0) => {
-      const reanimatedError = new obj4(obj4[5]).ReanimatedError("Setting `_value` directly is only possible on the UI runtime. Perhaps you want to assign to `value` instead?");
+      const reanimatedError = new initial(obj4[5]).ReanimatedError("Setting `_value` directly is only possible on the UI runtime. Perhaps you want to assign to `value` instead?");
       throw reanimatedError;
     }
   });
-  obj4.modify = function modify(modifier) {
-    closure_0 = modifier;
-    let flag = arg1;
-    if (arg1 === undefined) {
-      flag = true;
-    }
-    const fn = function u() {
-      obj4.modify(closure_0, flag);
-    };
-    fn.__closure = { mutable: flag, modifier, forceUpdate: flag };
-    fn.__workletHash = 15983399508815;
-    fn.__initData = __initData3;
-    obj4(obj4[4]).runOnUI(fn)();
-  };
-  obj4.addListener = function addListener() {
-    const reanimatedError = new obj4(obj4[5]).ReanimatedError("Adding listeners is only possible on the UI runtime.");
-    throw reanimatedError;
-  };
-  obj4.removeListener = function removeListener() {
-    const reanimatedError = new obj4(obj4[5]).ReanimatedError("Removing listeners is only possible on the UI runtime.");
-    throw reanimatedError;
-  };
-  obj4._isReanimatedSharedValue = true;
+  const tmp = _require;
   if (typeof hideInternalValueProp === "function") {
     const _Object = Object;
     Object.defineProperty(obj4, "_value", { configurable: false, enumerable: false });
     if (typeof addCompilerSafeGetAndSet === "function") {
       const _Object2 = Object;
-      const obj5 = { get: null, set: null };
-      const obj6 = {
+      const obj5 = { get: obj6, set: obj7 };
+      obj6 = {
         value() {
               return obj.value;
             },
         configurable: false,
         enumerable: false
       };
-      obj5.get = obj6;
-      const obj7 = {
+      obj7 = {
         value(__isAnimationDefinition) {
               if (typeof __isAnimationDefinition === "function") {
                 if (!__isAnimationDefinition.__isAnimationDefinition) {
@@ -301,7 +325,6 @@ export const makeMutable = module_1641 ? (function makeMutableWeb(arg0) {
         configurable: false,
         enumerable: false
       };
-      obj5.set = obj7;
       Object.defineProperties(obj4, obj5);
       const shareableMappingCache = tmp(tmp2[6]).shareableMappingCache;
       const result = shareableMappingCache.set(obj4, shareableCloneRecursive);
@@ -312,8 +335,4 @@ export const makeMutable = module_1641 ? (function makeMutableWeb(arg0) {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-  const obj = obj4(obj4[3]);
-  const obj3 = { makeMutableUI, initial };
-  tmp = obj4;
-  tmp2 = obj4;
 });

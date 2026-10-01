@@ -5,83 +5,88 @@
 // Exports: default
 
 // Module 10402 (InstantInviteCode)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import intl2 from "intl" /* 1115 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
+import ClockIcon from "ClockIcon" /* 4795 */;
 import useChannelName from "useChannelName" /* 4989 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
 import CountDownDefault from "CountDown" /* 10391 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c9;
+let metroImportAll;
+let obj2;
 class InstantInviteDetails {
   constructor(arg0) {
-    ({ channel, expiresAt } = global);
-    tmp = closure_10();
-    tmp2 = closure_0;
-    tmp3 = closure_2;
-    obj = closure_0(closure_2[8]);
-    TextIcon = obj.getSimpleChannelIconComponent(channel);
+    let channel;
+    let expiresAt;
+    let intl;
+    let items;
+    let items2;
+    let tmp2Result;
+    ({ channel, expiresAt } = arg0);
+    const tmp = closure_10();
+    const obj = utils_ChannelUtils;
+    let TextIcon = obj.getSimpleChannelIconComponent(channel);
     if (TextIcon == null) {
-      TextIcon = tmp2(tmp3[9]).TextIcon;
+      TextIcon = tmp2(5394).TextIcon;
     }
-    tmp4 = jsxs;
-    obj1 = { direction: "horizontal", align: "center", children: null };
-    tmp5 = jsx;
-    items = [, ];
-    items[0] = jsx(TextIcon, { color: "icon-subtle", size: "xs" });
-    obj8 = { variant: "text-md/semibold", color: "text-subtle", style: tmp.channel, lineClamp: 1, children: null };
-    tmp2Result = tmp2(tmp3[12]);
-    obj8.children = tmp2Result.computeChannelName(channel, closure_7, closure_6, false);
-    items[1] = jsx(tmp2(tmp3[11]).Text, obj8);
-    obj1.children = items;
-    items1 = [, ];
-    items1[0] = jsxs(tmp2(tmp3[10]).Stack, obj1);
-    tmp4Result = null != expiresAt;
+    const Stack = tmp2(5279).Stack;
+    const obj2 = { direction: "horizontal", align: "center", children: items };
+    const Stack2 = tmp2(5279).Stack;
+    items = [metroImportAll(TextIcon, { color: "icon-subtle", size: "xs" }), ];
+    const obj3 = { variant: "text-md/semibold", color: "text-subtle", style: tmp.channel, lineClamp: 1, children: tmp2Result.computeChannelName(channel, UserStore, RelationshipStore, false) };
+    const Text = tmp2(4832).Text;
+    tmp2Result = useChannelName;
+    items[1] = metroImportAll(Text, obj3);
+    const children = [React4(Stack2, obj2), ];
+    let tmp4Result = null != expiresAt;
     if (tmp4Result) {
-      obj9 = { direction: "horizontal", align: "center", children: null };
-      items2 = [, , ];
-      items2[0] = tmp5(tmp2(tmp3[13]).ClockIcon, { size: "xs", color: "icon-subtle" });
-      obj10 = { variant: "text-md/semibold", color: "text-subtle", children: null };
-      intl = tmp2(tmp3[14]).intl;
-      obj10.children = intl.string(tmp2(tmp3[14]).t.aTABYx);
-      items2[1] = tmp5(tmp2(tmp3[11]).Text, obj10);
-      tmp7 = closure_1;
-      obj11 = { style: null, deadline: null };
-      obj11.style = tmp.time;
-      obj11.deadline = expiresAt;
-      items2[2] = tmp5(closure_1(tmp3[15]), obj11);
-      obj9.children = items2;
-      tmp4Result = tmp4(tmp2(tmp3[10]).Stack, obj9);
+      const obj4 = { direction: "horizontal", align: "center", children: items2 };
+      const Stack3 = tmp2(5279).Stack;
+      items2 = [metroImportAll(ClockIcon.ClockIcon, { size: "xs", color: "icon-subtle" }), , ];
+      const obj5 = { variant: "text-md/semibold", color: "text-subtle", children: intl.string(intl2.t.aTABYx) };
+      const Text2 = tmp2(4832).Text;
+      intl = tmp2(1115).intl;
+      items2[1] = metroImportAll(Text2, obj5);
+      const obj6 = { style: tmp.time, deadline: expiresAt };
+      items2[2] = metroImportAll(CountDownDefault, obj6);
+      tmp4Result = tmp4(Stack3, obj4);
     }
-    items1[1] = tmp4Result;
-    return tmp4(tmp2(tmp3[10]).Stack, { children: items1 });
+    children[1] = tmp4Result;
+    return React4(Stack, { children });
   }
 }
-const View = fn(17).View;
-let closure_5 = fn(2049).createChannelRecordFromInvite;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { flex: { flex: 1 }, channel: { flex: 0 }, time: { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE } };
-let closure_10 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+let closure_5 = ChannelRecord.createChannelRecordFromInvite;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let obj = { flex: { flex: 1 }, channel: { flex: 0 }, time: obj2 };
+obj2 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
+const authStore = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteCode.tsx");
 
 export default function InstantInviteCode(invite) {
+  let Stack;
+  let items1;
+  let obj2;
   invite = invite.invite;
   const items = [invite.channel];
-  const obj = { style: closure_10().flex, children: null };
-  const memo = noop.useMemo(() => closure_5(invite.channel), items);
-  const obj2 = { children: null };
-  const items1 = [closure_8(invite(4832).Text, { variant: "text-lg/bold", tabularNumbers: true, children: invite.code }), ];
+  const obj = { style: closure_10().flex, children: closure_9(Stack, obj2) };
+  const memo = react.useMemo(() => closure_5(invite.channel), items);
+  obj2 = { children: items1 };
+  Stack = invite(5279).Stack;
+  items1 = [, ];
   const obj3 = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
-  const tmp = closure_10();
-  items1[1] = closure_8(InstantInviteDetails, { channel: memo, expiresAt: invite.getExpiresAt() });
-  obj2.children = items1;
-  obj.children = closure_9(invite(5279).Stack, obj2);
+  items1[0] = closure_8(invite(4832).Text, obj3);
+  const obj4 = { channel: memo, expiresAt: invite.getExpiresAt() };
+  items1[1] = closure_8(InstantInviteDetails, obj4);
   return closure_8(View, obj);
 };
 export { InstantInviteDetails };

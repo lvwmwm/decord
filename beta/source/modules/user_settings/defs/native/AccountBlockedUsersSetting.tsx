@@ -4,33 +4,42 @@
 // Dependencies: [4479, 7417, 1074, 504, 1115, 11006, 7371, 14335, 2]
 
 // Module 14334 (AccountBlockedUsersSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import DenyIcon from "DenyIcon" /* 7371 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.PFOUKW);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.PFOUKW);
   },
   useDescription: function useAccountBlockedUsersSettingDescription() {
+    let blockedIDs;
     const items = [RelationshipStore];
-    const numberOfBlockedUsers = initialize.useStateFromStores(items, () => "" + blockedIDs.getBlockedIDs().length);
-    const intl = util.intl;
-    return intl.format(util.t["r91W/h"], { numberOfBlockedUsers });
+    const obj = get_initialized;
+    const numberOfBlockedUsers = obj.useStateFromStores(items, () => "" + blockedIDs.getBlockedIDs().length);
+    const intl = intl2.intl;
+    return intl.format(intl2.t["r91W/h"], { numberOfBlockedUsers });
   },
-  IconComponent: fn(7371).DenyIcon,
-  parent: fn(7417).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  IconComponent: DenyIcon.DenyIcon,
+  parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   screen: {
-    route: fn(1074).UserSettingsSections.BLOCKED_USERS_V2,
+    route: UserSettingsSections.BLOCKED_USERS_V2,
     getComponent() {
       return require("BlockedUsersListV2").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountBlockedUsersSetting.tsx");
 
 export default route;

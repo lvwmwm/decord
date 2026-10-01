@@ -5,13 +5,18 @@
 // Exports: default
 
 // Module 10337 (useDiscoverableApplicationStream)
+import Constants from "Constants" /* 1074 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
 function getDiscoverableApplicationStream(userId, items) {
+  let NONE;
+  let obj;
+  let obj2;
   let tmp = items;
   if (items === undefined) {
     items = [ApplicationStreamingStore, RelationshipStore];
@@ -19,7 +24,7 @@ function getDiscoverableApplicationStream(userId, items) {
   }
   [obj, obj2] = tmp;
   if (null != userId) {
-    let NONE = obj2.getRelationshipType(userId);
+    NONE = obj2.getRelationshipType(userId);
   } else {
     NONE = RelationshipTypes.NONE;
   }
@@ -36,15 +41,16 @@ function getDiscoverableApplicationStream(userId, items) {
   }
   return tmp6;
 }
-const RelationshipTypes = fn(1074).RelationshipTypes;
-const size = fn(2);
+const RelationshipTypes = Constants.RelationshipTypes;
 const result = size.fileFinishedImporting("modules/blocking/useDiscoverableApplicationStream.tsx");
 
 export default function useDiscoverableApplicationStream(arg0) {
+  let closure_0;
   _require = arg0;
   let items = [ApplicationStreamingStore, RelationshipStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     const items = [ApplicationStreamingStore, RelationshipStore];
     return getDiscoverableApplicationStream(closure_0, items);
   }, items1);

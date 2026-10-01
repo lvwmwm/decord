@@ -6,27 +6,35 @@
 
 // Module 16548 (useAutoSearchMembersTab)
 import _mod12 from "module_12" /* 12 */;
+import Constants from "Constants" /* 1074 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11821 */;
-import noop from "module_19" /* 19 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 11836 */;
+import react from "react" /* 19 */;
 import SearchQueryStore from "SearchQueryStore" /* 11822 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_5 = fn(11836).SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
-const SearchTypes = fn(1074).SearchTypes;
-const size = fn(2);
+let closure_5 = SearchPlatformConstants.SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
+const SearchTypes = Constants.SearchTypes;
 let result = size.fileFinishedImporting("modules/search/native/hooks/useAutoSearchMembersTab.tsx");
 
 export const useAutoSearchMembersTab = function useAutoSearchMembersTab(searchContext, arg1) {
-  closure_0 = searchContext;
-  closure_1 = arg1;
+  let autocompleteVisible;
+  let closure_0 = searchContext;
+  let closure_1 = arg1;
   const items = [arg1, searchContext];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (!closure_1) {
-      const debounceResult = _mod12.debounce((searchQueryString) => {
+      const tmp = require;
+      let obj = _mod12;
+      const tmp3 = closure_5;
+      const debounceResult = obj.debounce((searchQueryString) => {
+        let tmp13;
+        const obj = autocompleteVisible;
         if (!autocompleteVisible.isAutocompleteVisible(searchContext)) {
-          const guildIdFromSearchContext = closure_0(11823).getGuildIdFromSearchContext(tmp);
+          const obj2 = searchContext(dependencyMap[5]);
+          const guildIdFromSearchContext = obj2.getGuildIdFromSearchContext(tmp);
           if (null != guildIdFromSearchContext) {
-            const channelIds = autocompleteVisible.getChannelIds(tmp);
+            const channelIds = obj.getChannelIds(tmp);
             let tmp8 = null;
             if (0 !== channelIds.size) {
               let first = null;
@@ -36,23 +44,24 @@ export const useAutoSearchMembersTab = function useAutoSearchMembersTab(searchCo
               }
               tmp8 = first;
             }
-            const obj4 = { searchContext: tmp, searchQueryString, guildId: guildIdFromSearchContext, channelId: tmp8, threadId: null };
-            let tmp12 = null;
-            if (tmp.type === constants.THREAD) {
-              tmp12 = tmp8;
+            const obj3 = { searchContext, searchQueryString, guildId: guildIdFromSearchContext, channelId: tmp8, threadId: tmp13 };
+            tmp13 = null;
+            const searchGuildMemberTab = closure_1(tmp3[6]).searchGuildMemberTab;
+            closure_1(dependencyMap[6]);
+            if (searchContext.type === constants.THREAD) {
+              tmp13 = tmp8;
             }
-            obj4.threadId = tmp12;
-            closure_1(11844).searchGuildMemberTab(obj4);
-            const obj3 = closure_1(11844);
+            searchGuildMemberTab(obj3);
           }
-          const obj2 = closure_0(11823);
         }
       }, closure_5);
-      return SearchPlatformUtilsDefault.subscribeTextInputValue(closure_0, debounceResult);
+      let obj2 = SearchPlatformUtilsDefault;
+      return obj2.subscribeTextInputValue(searchContext, debounceResult);
     }
   }, items);
   const items1 = [searchContext];
-  const effect1 = noop.useEffect(() => () => {
-    const result = closure_1(11844).cleanupGuildMemberTab(searchContext);
+  const effect1 = react.useEffect(() => () => {
+    const obj = closure_1(dependencyMap[6]);
+    const result = obj.cleanupGuildMemberTab(searchContext);
   }, items1);
 };

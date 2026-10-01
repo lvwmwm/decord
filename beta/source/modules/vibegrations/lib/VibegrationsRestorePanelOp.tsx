@@ -5,7 +5,7 @@
 // Exports: restoreEnvironmentLabel, restorePanelEnvironments, restorePanelStatusForEnvironment, restorePointOriginLabel
 
 // Module 16308 (VibegrationsRestorePanelOp)
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import size from "module_2" /* 2 */;
 
@@ -14,43 +14,50 @@ const result = size.fileFinishedImporting("modules/vibegrations/lib/Vibegrations
 export const RESTORE_WINDOW_DAYS = 30;
 export const restorePointOriginLabel = function restorePointOriginLabel(origin) {
   if ("auto_deploy" === origin) {
-    const intl3 = util.intl;
+    const intl3 = intl4.intl;
     return intl3.string(_modDef3715.h4zhWL);
   } else if ("undo" === origin) {
-    const intl2 = util.intl;
+    const intl2 = intl4.intl;
     return intl2.string(_modDef3715["c/tNny"]);
   } else {
-    const intl = util.intl;
+    const intl = intl4.intl;
     return intl.string(_modDef3715["jViU+0"]);
   }
 };
 export const restoreEnvironmentLabel = function restoreEnvironmentLabel(id) {
-  const intl = util.intl;
+  let prop;
+  const intl = intl4.intl;
+  const string = intl.string;
   if ("preview" === id) {
-    let prop = _modDef3715["/kYdZe"];
+    prop = _modDef3715["/kYdZe"];
   } else {
     prop = _modDef3715["1/CVzo"];
   }
-  return intl.string(prop);
+  return string(prop);
 };
 export function restorePanelEnvironments(installScope) {
   return "user" === installScope ? ["stable"] : ["preview", "stable"];
 }
 export const restorePanelStatusForEnvironment = function restorePanelStatusForEnvironment(phase, arg1) {
+  let obj;
   if ("busy" === phase.phase) {
-    if ("restore" !== phase.kind) {
-      let obj3 = { kind: "none" };
+    if ("restore" === phase.kind) {
+      let obj3;
+      if (phase.environment === arg1) {
+        obj3 = { kind: "pending" };
+      }
+      obj = obj3;
     }
-    obj3 = { kind: "pending" };
+    obj3 = { kind: "none" };
   } else {
     if ("settled" === phase.phase) {
       if (phase.environment === arg1) {
-        ({ tone: obj2.tone, text: obj2.text } = phase);
-        let obj = { kind: "notice", tone: null, text: null };
         const obj5 = { kind: "notice", tone: null, text: null };
+        ({ tone: obj2.tone, text: obj2.text } = phase);
+        obj = obj5;
       }
-      return obj;
     }
     obj = { kind: "none" };
   }
+  return obj;
 };

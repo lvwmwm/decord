@@ -5,63 +5,75 @@
 // Exports: NavigationStateListenerProvider, useNavigationState
 
 // Module 1577 (NavigationStateListenerProvider)
-import _modDef1507 from "module_1507" /* 1507 */;
-import _mod1563 from "module_1563" /* 1563 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import useLatestCallbackDefault from "useLatestCallback" /* 1507 */;
+import react2 from "react" /* 1563 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const redux = noop.createContext(undefined);
+const jsx = Fragment.jsx;
+const redux = react.createContext(undefined);
 
 export const useNavigationState = function useNavigationState(select) {
+  let closure_0 = select;
   if (typeof select !== "function") {
     const _Error2 = Error;
     const _HermesInternal = HermesInternal;
+    const self3 = this;
+    const self4 = this;
     const error = new Error("A selector function must be provided (got " + typeof select + ").");
     throw error;
   } else {
-    const store = noop.useContext(closure_6);
+    let obj = react;
+    const store = react.useContext(redux);
     if (null == store) {
+      let tmp = globalThis;
       const _Error = Error;
+      const self = this;
+      const self2 = this;
       const error1 = new Error("Couldn't get the navigation state. Is your component inside a navigator?");
       throw error1;
     } else {
       const getState = store.getState;
       const subscribe = store.subscribe;
-      closure_3 = _slicedToArray(obj.useReducer((arg0) => arg0 + 1, 0), 2)[1];
-      const tmp14 = select(getState());
-      const selected = tmp14;
-      const obj2 = { select, selected: tmp14 };
-      obj.useRef(obj2);
-      const clientLayoutEffect = _mod1563.useClientLayoutEffect(() => {
-        closure_5.current = { select, selected };
+      let closure_3 = _slicedToArray(obj.useReducer((arg0) => arg0 + 1, 0), 2)[1];
+      const tmp10 = select(getState());
+      let closure_4 = tmp10;
+      const obj2 = { select, selected: tmp10 };
+      let closure_5 = obj.useRef(obj2);
+      const obj3 = react2;
+      const clientLayoutEffect = obj3.useClientLayoutEffect(() => {
+        const obj = { select, selected };
+        ref.current = obj;
       });
       const items = [getState, subscribe];
       const effect = obj.useEffect(() => {
         let current = ref.current;
         ({ selected, select } = current);
-        if (!Object.is(selected, select(getState()))) {
-          closure_3();
-        }
-        return subscribe(function checkForUpdates() {
+        const tmp = subscribe(function checkForUpdates() {
           const current = ref.current;
           ({ selected, select } = current);
           if (!Object.is(selected, select(getState()))) {
             closure_1_3();
           }
         });
+        if (!Object.is(selected, select(getState()))) {
+          closure_3();
+        }
+        return tmp;
       }, items);
-      return tmp14;
+      return tmp10;
     }
   }
 };
 export const NavigationStateListenerProvider = function NavigationStateListenerProvider(getState) {
+  let children;
+  let state;
   getState = getState.getState;
   ({ state, children } = getState);
-  noop.useRef([]);
-  const tmp = _modDef1507((arg0) => {
-    closure_0 = arg0;
+  let closure_1 = react.useRef([]);
+  const tmp = useLatestCallbackDefault((arg0) => {
+    let closure_0 = arg0;
     let current = ref.current;
     current.push(arg0);
     return () => {
@@ -69,14 +81,15 @@ export const NavigationStateListenerProvider = function NavigationStateListenerP
       ref.current = current.filter((item) => item !== closure_1_0);
     };
   });
-  const subscribe = tmp;
+  let closure_2 = tmp;
   const items = [state];
-  const clientLayoutEffect = _mod1563.useClientLayoutEffect(() => {
+  const obj = react2;
+  const clientLayoutEffect = obj.useClientLayoutEffect(() => {
     const current = ref.current;
     const item = current.forEach((fn) => fn());
   }, items);
   const items1 = [getState, tmp];
-  return <redux.Provider value={noop.useMemo(() => {
+  return <redux.Provider value={react.useMemo(() => {
     const store = { getState, subscribe };
     return store;
   }, items1)}>{children}</redux.Provider>;

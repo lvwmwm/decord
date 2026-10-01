@@ -5,21 +5,25 @@
 // Exports: default
 
 // Module 8959 (useIsInvitedToSpeak)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4983 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import size from "module_2" /* 2 */;
 
 const useAudienceRequestToSpeakStateDefault = useAudienceRequestToSpeakState;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/useIsInvitedToSpeak.tsx");
 
 export default function useIsInvitedToSpeak() {
+  let id;
+  let voiceChannelId;
   const items = [SelectedChannelStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => voiceChannelId.getVoiceChannelId());
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => voiceChannelId.getVoiceChannelId());
   const items1 = [AuthenticationStore];
-  const stateFromStores1 = initialize.useStateFromStores(items1, () => id.getId());
-  return useAudienceRequestToSpeakStateDefault(stateFromStores1, stateFromStores) === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  const obj2 = get_initialized;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => id.getId());
+  const tmp3 = useAudienceRequestToSpeakStateDefault(stateFromStores1, stateFromStores);
+  return tmp3 === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 };

@@ -6,12 +6,11 @@
 
 // Module 10110 (useMediaKeyboardItemsPerRow)
 import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4696 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const useWindowSizeClassifierDefault = useWindowSizeClassifier;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_keyboard/native/useMediaKeyboardItemsPerRow.tsx");
 
 export const useMediaKeyboardItemsPerRow = function useMediaKeyboardItemsPerRow() {
@@ -19,13 +18,15 @@ export const useMediaKeyboardItemsPerRow = function useMediaKeyboardItemsPerRow(
   let itemsPerRow = 8;
   if (useWindowSizeClassifier.WindowSizeClassifier.XLARGE !== tmp2) {
     itemsPerRow = 6;
-    if (tmp3(4696).WindowSizeClassifier.LARGE !== tmp2) {
+    if (useWindowSizeClassifier.WindowSizeClassifier.LARGE !== tmp2) {
       itemsPerRow = 4;
-      if (tmp3(4696).WindowSizeClassifier.NORMAL !== tmp2) {
+      if (useWindowSizeClassifier.WindowSizeClassifier.NORMAL !== tmp2) {
         itemsPerRow = 3;
-        if (tmp3(4696).WindowSizeClassifier.SMALL !== tmp2) {
+        if (useWindowSizeClassifier.WindowSizeClassifier.SMALL !== tmp2) {
           const _Error = Error;
           const _HermesInternal = HermesInternal;
+          const self = this;
+          const self2 = this;
           const error = new Error("Unknown window size classifier: " + tmp2);
           throw error;
         }
@@ -33,9 +34,9 @@ export const useMediaKeyboardItemsPerRow = function useMediaKeyboardItemsPerRow(
     }
   }
   const itemsPageSize = 17 * itemsPerRow;
-  const itemsPageSizeRef = noop.useRef(itemsPageSize);
+  const itemsPageSizeRef = react.useRef(itemsPageSize);
   const items = [itemsPerRow];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     itemsPageSizeRef.current = 17 * itemsPerRow;
   }, items);
   return { itemsPerRow, itemsPageSize, itemsPageSizeRef };

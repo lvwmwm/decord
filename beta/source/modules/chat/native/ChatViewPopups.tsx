@@ -7,28 +7,28 @@
 import useIsHubRealNamePromptShowingDefault from "useIsHubRealNamePromptShowing" /* 12146 */;
 import WelcomeScreenUtils from "WelcomeScreenUtils" /* 12150 */;
 import GuildDirectoryNicknameUpsellModalActionCreatorsDefault from "GuildDirectoryNicknameUpsellModalActionCreators" /* 12158 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap, importDefault;
+
 class ChatViewPopups {
-  constructor(arg0) {
-    guildId = global.guildId;
-    closure_1 = undefined;
-    closure_2 = undefined;
-    closure_3 = undefined;
-    closure_1 = closure_3.useRef(false);
-    tmp = closure_1(closure_2[1])(guildId);
-    closure_2 = tmp;
-    obj = guildId(closure_2[2]);
-    showWelcomeModal = obj.useShowWelcomeModal(guildId, global.channelId);
-    closure_3 = showWelcomeModal;
-    items = [, , ];
-    items[0] = guildId;
-    items[1] = showWelcomeModal;
-    items[2] = tmp;
-    effect = closure_3.useEffect(() => {
+  constructor(guildId) {
+    let closure_2;
+    let ref;
+    guildId = guildId.guildId;
+    let showWelcomeModal;
+    const channelId = guildId.channelId;
+    importDefault = showWelcomeModal.useRef(false);
+    const tmp = useIsHubRealNamePromptShowingDefault(guildId);
+    dependencyMap = tmp;
+    let obj = guildId(12150);
+    showWelcomeModal = obj.useShowWelcomeModal(guildId, channelId);
+    const items = [guildId, showWelcomeModal, tmp];
+    const effect = showWelcomeModal.useEffect(() => {
       if (!ref.current) {
-        if (closure_2) {
+        const tmp2 = closure_2;
+        if (tmp2) {
           const obj2 = {
             guildId,
             onHide() {
@@ -36,26 +36,31 @@ class ChatViewPopups {
                   return false;
                 }
           };
-          GuildDirectoryNicknameUpsellModalActionCreatorsDefault.open(obj2);
-          tmp.current = true;
-        } else if (showWelcomeModal) {
-          const obj4 = {
-            guildId,
-            onHide() {
-                  ref.current = false;
-                  return false;
-                }
-          };
-          const result = WelcomeScreenUtils.openWelcomeActionSheet(obj4);
-          tmp.current = true;
+          const obj3 = GuildDirectoryNicknameUpsellModalActionCreatorsDefault;
+          obj3.open(obj2);
+          ref.current = true;
+        } else {
+          const tmp3 = showWelcomeModal;
+          if (tmp3) {
+            const obj4 = {
+              guildId,
+              onHide() {
+                      ref.current = false;
+                      return false;
+                    }
+            };
+            const obj = WelcomeScreenUtils;
+            const result = obj.openWelcomeActionSheet(obj4);
+            ref.current = true;
+          }
         }
       }
     }, items);
     return null;
   }
 }
-const size = fn(2);
+const memoResult = react.memo(ChatViewPopups);
 let result = size.fileFinishedImporting("modules/chat/native/ChatViewPopups.tsx");
 
-export default noop.memo(ChatViewPopups);
+export default memoResult;
 export { ChatViewPopups };

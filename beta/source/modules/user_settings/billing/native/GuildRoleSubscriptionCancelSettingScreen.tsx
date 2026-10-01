@@ -5,18 +5,19 @@
 // Exports: default
 
 // Module 14770 (GuildRoleSubscriptionCancelSettingScreen)
+import Fragment from "Fragment" /* 21 */;
 import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6415 */;
 import UserSettingsGuildRoleSubscriptionsCancelDefault from "UserSettingsGuildRoleSubscriptionsCancel" /* 14771 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/billing/native/GuildRoleSubscriptionCancelSettingScreen.tsx");
 
 export default function GuildRoleSubscriptionCancelSettingScreen() {
-  const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
-  const obj2 = {};
+  const obj = useSettingNavigationRoute;
+  const settingNavigationRoute = obj.useSettingNavigationRoute();
+  UserSettingsGuildRoleSubscriptionsCancelDefault;
   const merged = Object.assign(settingNavigationRoute.params);
-  return jsx(UserSettingsGuildRoleSubscriptionsCancelDefault, {});
+  return <tmp2 />;
 };

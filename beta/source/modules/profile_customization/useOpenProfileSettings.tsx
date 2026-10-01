@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 9226 (useOpenProfileSettings)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import Constants from "Constants" /* 1074 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
 import openUserSettings from "openUserSettings" /* 6800 */;
@@ -15,7 +15,7 @@ import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationS
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7605 */;
 import size from "module_2" /* 2 */;
 
-_mod19.useCallback;
+const useCallback = react.useCallback;
 const UserSettingsSections = Constants.UserSettingsSections;
 let closure_5 = UserSettingsConstants.ProfileCustomizationSubsection;
 const result = size.fileFinishedImporting("modules/profile_customization/useOpenProfileSettings.tsx");
@@ -27,17 +27,24 @@ export default function useOpenProfileSettings() {
   }
   const guild = obj.guild;
   const scrollPosition = obj.scrollPosition;
-  const items = [guild, scrollPosition, obj.analyticsLocations, guild(scrollPosition[6]).useIsEligibleForUserProfileWYSIWYGEditing("useOpenProfileSettings")];
+  const analyticsLocations = obj.analyticsLocations;
+  let obj2 = guild(scrollPosition[6]);
+  const items = [guild, scrollPosition, analyticsLocations, obj2.useIsEligibleForUserProfileWYSIWYGEditing("useOpenProfileSettings")];
   return useCallback(() => {
+    let USER_PROFILE;
     if (null != guild) {
-      const guildIdentitySettings = GuildIdentityActionCreators.initGuildIdentitySettings(tmp.id);
+      const obj = GuildIdentityActionCreators;
+      const guildIdentitySettings = obj.initGuildIdentitySettings(tmp.id);
     }
+    const setState = ProfileCustomizationNavigationStore.setState;
     if (null != guild) {
-      let USER_PROFILE = constants.GUILD;
+      USER_PROFILE = constants.GUILD;
     } else {
       USER_PROFILE = constants.USER_PROFILE;
     }
-    ProfileCustomizationNavigationStore.setState({ subsection: USER_PROFILE, scrollPosition });
-    openUserSettings.openUserSettings({ screen: UserSettingsSections.PROFILE_CUSTOMIZATION });
+    const obj2 = { subsection: USER_PROFILE, scrollPosition };
+    setState(obj2);
+    const obj3 = { screen: UserSettingsSections.PROFILE_CUSTOMIZATION };
+    openUserSettings.openUserSettings(obj3);
   }, items);
 };

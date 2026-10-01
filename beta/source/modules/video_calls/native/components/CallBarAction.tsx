@@ -8,147 +8,153 @@
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Pressables from "Pressables" /* 5435 */;
-import CircleWithCutoutUtilsDefault from "CircleWithCutoutUtils" /* 8857 */;
-import noop from "module_19" /* 19 */;
+import ChannelCallStore from "ChannelCallStore" /* 8829 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 8857 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import ColorUtils from "ColorUtils" /* 4683 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let rect;
+let tmp2;
+const CircleWithCutoutUtilsDefault = tmp2(8857);
 class ActionButton {
-  constructor(arg0) {
-    flag = global.appearsDisabled;
+  constructor(appearsDisabled) {
+    let IconComponent;
+    let accessibilityLabel;
+    let accessibilityState;
+    let backgroundColor;
+    let children;
+    let cloneElementResult;
+    let imageStyle;
+    let items1;
+    let items2;
+    let items3;
+    let lottieComponent;
+    let lottieComponentColor;
+    let obj2;
+    let showBadge;
+    let source;
+    let tmp11Result;
+    let tmp11Result2;
+    let tmp12;
+    let flag = appearsDisabled.appearsDisabled;
     if (flag === undefined) {
       flag = false;
     }
-    ({ backgroundColor, imageStyle, onPress, showBadge, accessibilityLabel, accessibilityState, source } = global);
+    ({ backgroundColor, imageStyle, onPress: require, showBadge, accessibilityLabel, accessibilityState, source } = appearsDisabled);
     if (showBadge === undefined) {
       showBadge = false;
     }
-    flag2 = global.isSmallSize;
+    let flag2 = appearsDisabled.isSmallSize;
     if (flag2 === undefined) {
       flag2 = false;
     }
-    ({ lottieComponent, IconComponent } = global);
-    ({ children, lottieComponentColor } = global);
-    tmp = closure_13();
-    tmp3 = closure_2;
-    tmp2 = closure_1;
-    num = 12;
+    ({ lottieComponent, IconComponent } = appearsDisabled);
+    ({ children, lottieComponentColor } = appearsDisabled);
+    const tmp = closure_13();
+    let num = 12;
     if (flag2) {
-      tmp5 = closure_12;
       num = 12;
       if (tmp4 < closure_12) {
         num = 6;
       }
     }
-    tmp6 = flag2 ? closure_11 : closure_10;
-    result = 2 * tmp6.buttonRadius;
-    result1 = 2 * tmp6.badgeRadius;
-    tmp10 = jsx;
-    tmp11 = onPress;
-    sum = tmp6.badgeRadius + tmp6.cutoutInset;
-    obj = {
+    const tmp6 = flag2 ? frozen : closure_10;
+    const result = 2 * tmp6.buttonRadius;
+    const result1 = 2 * tmp6.badgeRadius;
+    const sum = tmp6.badgeRadius + tmp6.cutoutInset;
+    const items = [tmp.buttonContainer, { width: result, height: result, borderRadius: tmp6.buttonRadius }, ];
+    let num2 = 1;
+    const obj = {
       accessibilityLabel,
       accessibilityRole: "button",
       accessibilityState,
       onPress() {
-            resetFocusTimer();
-            require();
-          },
+        resetFocusTimer();
+        require();
+      },
       disabled: false,
       style: { width: result, height: result, borderRadius: tmp6.buttonRadius, marginHorizontal: num },
-      children: null
+      children: tmp12(closure_5, obj2)
     };
-    tmp13 = View;
-    items = [, , ];
-    items[0] = tmp.buttonContainer;
-    items[1] = { width: result, height: result, borderRadius: tmp6.buttonRadius };
-    num2 = 1;
-    tmp12 = jsxs;
+    const PressableOpacity = Pressables.PressableOpacity;
+    tmp12 = closure_8;
     if (flag) {
       num2 = 0.25;
     }
-    obj1 = { style: items, children: null };
+    obj2 = { style: items, children: items1 };
     items[2] = { opacity: num2 };
-    obj12 = { circleRadius: tmp6.buttonRadius, cutoutRadius: sum, enableCutout: showBadge, cutoutPositionInDegrees: 45, circleFillColor: null };
-    tmp2Result = tmp2(tmp3[9]);
+    const obj3 = { circleRadius: tmp6.buttonRadius, cutoutRadius: sum, enableCutout: showBadge, cutoutPositionInDegrees: 45, circleFillColor: backgroundColor };
+    const tmp2Result = CircleWithCutoutUtilsDefault;
     if (null == backgroundColor) {
       backgroundColor = closure_9;
     }
-    obj12.circleFillColor = backgroundColor;
-    items1 = [, , , ];
-    items1[0] = tmp10(tmp2Result, obj12);
-    obj13 = { style: null, children: null };
-    items2 = [, ];
-    items2[0] = tmp.iconContainer;
-    items2[1] = { width: result, height: result };
-    obj13.style = items2;
+    items1 = [closure_7(tmp2Result, obj3), , , ];
+    const obj4 = { style: items2, children: cloneElementResult };
+    items2 = [tmp.iconContainer, { width: result, height: result }];
     if (null != lottieComponent) {
-      tmp17 = closure_3;
-      obj14 = { color: null };
-      obj14.color = lottieComponentColor;
-      cloneElementResult = closure_3.cloneElement(lottieComponent, obj14);
+      const obj5 = { color: lottieComponentColor };
+      cloneElementResult = react.cloneElement(lottieComponent, obj5);
     } else if (null != IconComponent) {
-      obj15 = { style: null };
-      obj15.style = imageStyle;
-      cloneElementResult = tmp10(IconComponent, obj15);
+      const obj6 = { style: imageStyle };
+      cloneElementResult = tmp10(IconComponent, obj6);
     } else {
-      tmp15 = Image;
-      obj16 = { source: null, style: null };
-      obj16.source = source;
-      obj16.style = imageStyle;
-      cloneElementResult = tmp10(Image, obj16);
+      const obj7 = { source, style: imageStyle };
+      cloneElementResult = tmp10(closure_4, obj7);
     }
-    obj13.children = cloneElementResult;
-    items1[1] = tmp10(tmp13, obj13);
-    tmp10Result = null;
+    items1[1] = closure_7(closure_5, obj4);
+    let tmp10Result = null;
     if (showBadge) {
-      obj17 = { style: null };
-      items3 = [, ];
-      items3[0] = tmp.badge;
-      size = { width: null, height: null, borderRadius: null, top: null, left: null };
-      size.width = result1;
-      size.height = result1;
-      size.borderRadius = tmp6.badgeRadius;
-      tmp11Result = tmp11(tmp3[9]);
-      num3 = 45;
-      size.top = tmp11Result.getBadgeTop(tmp6.badgeRadius, tmp6.buttonRadius, 45);
-      tmp11Result1 = tmp11(tmp3[9]);
-      size.left = tmp11Result1.getBadgeLeft(tmp6.badgeRadius, tmp6.buttonRadius, 45);
+      const obj8 = { style: items3 };
+      items3 = [tmp.badge, ];
+      size = { width: result1, height: result1, borderRadius: tmp6.badgeRadius, top: tmp11Result.getBadgeTop(tmp6.badgeRadius, tmp6.buttonRadius, 45), left: tmp11Result2.getBadgeLeft(tmp6.badgeRadius, tmp6.buttonRadius, 45) };
+      tmp11Result = CircleWithCutoutUtils;
       items3[1] = size;
-      obj17.style = items3;
-      tmp10Result = tmp10(tmp13, obj17);
+      tmp11Result2 = CircleWithCutoutUtils;
+      tmp10Result = tmp10(tmp13, obj8);
     }
     items1[2] = tmp10Result;
     items1[3] = children;
-    obj1.children = items1;
-    obj.children = tmp12(tmp13, obj1);
-    return tmp10(onPress(tmp3[8]).PressableOpacity, obj);
+    return closure_7(PressableOpacity, obj);
   }
 }
-get_ActivityIndicator = fn(17);
-({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const resetFocusTimer = fn(8829).resetFocusTimer;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const ColorUtils = fn(4683);
+({ Image: closure_4, View: hasOwnProperty } = react_native);
+const resetFocusTimer = ChannelCallStore.resetFocusTimer;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.WHITE, 0.24);
 let closure_10 = Object.freeze({ buttonRadius: 28, badgeRadius: 6, cutoutInset: 3 });
 const frozen = Object.freeze({ buttonRadius: 24, badgeRadius: 4, cutoutInset: 2 });
 let closure_12 = 24 + 2 * frozen.buttonRadius * 5 + 96;
-const createStyles = fn(4836);
-let obj3 = { buttonContainer: { position: "absolute" }, iconContainer: { position: "absolute", justifyContent: "center", alignItems: "center" }, badge: { backgroundColor: "white", position: "absolute" }, notificationArea: null, notificationText: null, notificationAreaMentioned: null, notificationAreaUnread: null };
-const rect = { position: "absolute", top: -4, right: -4, height: 24, minWidth: 24, paddingHorizontal: 4, borderRadius: 12, borderWidth: 4, borderColor: nativeDefault.unsafe_rawColors.PRIMARY_760, alignItems: "center", justifyContent: "center" };
-obj3.notificationArea = rect;
-obj3.notificationText = { lineHeight: 16 };
-obj3.notificationAreaMentioned = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
-let obj4 = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
-obj3.notificationAreaUnread = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
-createStyles.createStyles(obj3);
-let size = fn(2);
+let createStyles = createStyles_mod;
+let obj = { buttonContainer: { position: "absolute" }, iconContainer: { position: "absolute", justifyContent: "center", alignItems: "center" }, badge: { backgroundColor: "white", position: "absolute" }, notificationArea: rect, notificationText: { lineHeight: 16 }, notificationAreaMentioned: obj2, notificationAreaUnread: obj3 };
+rect = { position: "absolute", top: -4, right: -4, height: 24, minWidth: 24, paddingHorizontal: 4, borderRadius: 12, borderWidth: 4, borderColor: nativeDefault.unsafe_rawColors.PRIMARY_760, alignItems: "center", justifyContent: "center" };
+createStyles = createStyles.createStyles;
+obj2 = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
+obj3 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
+createStyles(obj);
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/video_calls/native/components/CallBarAction.tsx");
 
 export const SMALL_ACTION_BUTTON_DIMENSIONS = frozen;
 export { ActionButton };
 export const ToggledActionButton = function ToggledActionButton(showBadge) {
+  let backgroundColor;
+  let disableTint;
+  let isActive;
+  let tintColor;
+  let tmp5;
+  let tmp8;
   ({ isActive, disableTint } = showBadge);
   if (disableTint === undefined) {
     disableTint = false;
@@ -169,26 +175,23 @@ export const ToggledActionButton = function ToggledActionButton(showBadge) {
   }
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   if (!disableTint) {
-    const tmp5 = isActive ? unsafe_rawColors.PRIMARY_900 : unsafe_rawColors.WHITE;
+    tmp5 = isActive ? unsafe_rawColors.PRIMARY_900 : unsafe_rawColors.WHITE;
   }
+  const tmp6 = metroImportDefault;
+  const tmp7 = ActionButton;
   if (backgroundColor == null) {
     backgroundColor = WHITE;
   }
-  const obj = { backgroundColor, imageStyle: null, accessibilityState: null, isSmallSize: null };
-  let tmp8 = tintColor;
+  const obj = { backgroundColor, imageStyle: { tintColor: tmp8 }, accessibilityState: { selected: isActive }, isSmallSize: flag2, showBadge: flag, lottieComponentColor: tintColor };
+  tmp8 = tintColor;
   if (tintColor == null) {
     tmp8 = tmp5;
   }
-  obj.imageStyle = { tintColor: tmp8 };
-  obj.accessibilityState = { selected: isActive };
-  obj.isSmallSize = flag2;
   const merged1 = Object.assign(merged);
-  obj.showBadge = flag;
   if (tintColor == null) {
     tintColor = tmp5;
   }
-  obj.lottieComponentColor = tintColor;
-  return React5(ActionButton, obj);
+  return tmp6(tmp7, obj);
 };
 export const PrimaryActionButton = function PrimaryActionButton(isSmallSize) {
   let flag = isSmallSize.isSmallSize;
@@ -197,29 +200,31 @@ export const PrimaryActionButton = function PrimaryActionButton(isSmallSize) {
   }
   const merged = Object.assign(isSmallSize, Object.assign({ isSmallSize: 0 }));
   const obj = { backgroundColor: nativeDefault.unsafe_rawColors.RED_400, imageStyle: { tintColor: nativeDefault.unsafe_rawColors.WHITE }, isSmallSize: flag };
+  ({ tintColor: nativeDefault.unsafe_rawColors.WHITE });
   const merged1 = Object.assign(merged);
-  return React5(ActionButton, obj);
+  return metroImportDefault(ActionButton, obj);
 };
 export const NotifiedActionButton = function NotifiedActionButton(isMentioned) {
+  let obj4;
   isMentioned = isMentioned.isMentioned;
+  const notifications = isMentioned.notifications;
   const merged = Object.assign(isMentioned, Object.assign({ notifications: 0, isMentioned: 0 }));
   const tmp2 = closure_13();
   const obj = {};
   const merged1 = Object.assign(merged);
   const items = [tmp2.notificationArea, ];
+  const tmp5 = ActionButton;
   if (true !== isMentioned) {
+    let notificationAreaMentioned;
     if (undefined !== isMentioned) {
-      let notificationAreaMentioned = tmp2.notificationAreaUnread;
+      notificationAreaMentioned = tmp2.notificationAreaUnread;
     }
-    const obj2 = { children: null };
-    const obj3 = { style: null, children: null };
+    const obj2 = { children: metroImportDefault(tmp5, obj) };
     items[1] = notificationAreaMentioned;
-    obj3.style = items;
-    const obj4 = { style: tmp2.notificationText, variant: "text-xs/semibold", color: "text-overlay-light", children: isMentioned.notifications };
-    obj3.children = tmp3(Text_Text.Text, obj4);
-    obj.children = tmp3(tmp4, obj3);
-    obj2.children = tmp3(ActionButton, obj);
-    return tmp3(tmp4, obj2);
+    const obj3 = { style: items, children: metroImportDefault(Text_Text.Text, obj4) };
+    obj4 = { style: tmp2.notificationText, variant: "text-xs/semibold", color: "text-overlay-light", children: notifications };
+    obj.children = metroImportDefault(hasOwnProperty, obj3);
+    return metroImportDefault(hasOwnProperty, obj2);
   }
   notificationAreaMentioned = tmp2.notificationAreaMentioned;
 };

@@ -4,21 +4,22 @@
 // Dependencies: [7834, 4870, 9806]
 
 // Module 9805 (chunk)
-import _mod4870 from "module_4870" /* 4870 */;
-import _mod7834 from "module_7834" /* 7834 */;
+import toInteger from "toInteger" /* 4870 */;
+import isIterateeCall from "isIterateeCall" /* 7834 */;
 import baseSlice from "baseSlice" /* 9806 */;
 
 
 export default function chunk(arg0, arg1, arg2) {
   let sum1;
+  let tmp;
   if (arg2) {
-    let tmp = _mod7834(arg0, arg1, arg2);
+    tmp = isIterateeCall(arg0, arg1, arg2);
   } else {
     tmp = undefined === arg1;
   }
   let num = 1;
   if (!tmp) {
-    num = max(_mod4870(arg1), 0);
+    num = max(toInteger(arg1), 0);
   }
   let num3 = 0;
   if (null != arg0) {

@@ -5,7 +5,7 @@
 // Exports: getPreviewModeLabel, getPreviewModePanelId
 
 // Module 16273 (VibegrationsPreviewMode)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("modules/vibegrations/lib/Vibegrations
 
 export const VIBEGRATIONS_PREVIEW_MODE_ORDER = ["frame", "widget", "bot"];
 export const getPreviewModeLabel = function getPreviewModeLabel(id) {
-  const intl = util.intl;
+  const intl = intl2.intl;
   return intl.string(obj[id]);
 };
 export const getPreviewModePanelId = function getPreviewModePanelId(arg0) {

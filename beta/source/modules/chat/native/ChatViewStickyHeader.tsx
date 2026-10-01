@@ -5,6 +5,7 @@
 
 // Module 10904 (ChatViewStickyHeader)
 import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10432 */;
+import Constants from "Constants" /* 10905 */;
 import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10906 */;
 import useLikelyAtoWarning from "useLikelyAtoWarning" /* 10909 */;
 import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 10910 */;
@@ -12,71 +13,93 @@ import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 
 import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 10931 */;
 import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 10955 */;
 import ChatBannerDefault from "ChatBanner" /* 10964 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let channel;
+
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 function ChatViewStickyHeaderAccountSafetyWarnings(arg0) {
+  let channelId;
+  let senderId;
+  let tmp5;
   ({ channelId, senderId } = arg0);
-  const strangerDangerWarning = useStrangerDangerWarning.useStrangerDangerWarning(channelId);
-  const inappropriateConversationBannerForChannel = useInappropriateConversationBannerForChannel.useInappropriateConversationBannerForChannel(channelId, LOCATION_CONTEXT_MOBILE);
-  const likelyAtoWarning = useLikelyAtoWarning.useLikelyAtoWarning(channelId);
+  const obj = useStrangerDangerWarning;
+  const strangerDangerWarning = obj.useStrangerDangerWarning(channelId);
+  const obj2 = useInappropriateConversationBannerForChannel;
+  const inappropriateConversationBannerForChannel = obj2.useInappropriateConversationBannerForChannel(channelId, LOCATION_CONTEXT_MOBILE);
+  const obj3 = useLikelyAtoWarning;
+  const likelyAtoWarning = obj3.useLikelyAtoWarning(channelId);
   if (null != likelyAtoWarning) {
     const obj4 = { channelId, warningId: likelyAtoWarning.id, senderId };
-    let tmp5 = timestampProducer(LikelyAtoWarningBannerDefault, obj4);
+    tmp5 = metroRequire(LikelyAtoWarningBannerDefault, obj4);
   } else if (null != strangerDangerWarning) {
     const obj5 = { channelId, warningId: strangerDangerWarning.id, senderId };
-    tmp5 = timestampProducer(StrangerDangerWarningBannerDefault, obj5);
+    tmp5 = metroRequire(StrangerDangerWarningBannerDefault, obj5);
   } else {
     tmp5 = null;
     if (null != inappropriateConversationBannerForChannel) {
       const obj6 = { channelId, warningId: inappropriateConversationBannerForChannel.id, senderId };
-      tmp5 = timestampProducer(InappropriateConversationWarningBannerDefault, obj6);
+      tmp5 = metroRequire(InappropriateConversationWarningBannerDefault, obj6);
     }
   }
   return tmp5;
 }
-const LOCATION_CONTEXT_MOBILE = fn(10905).LOCATION_CONTEXT_MOBILE;
-const jsxProd = fn(21);
-({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/chat/native/ChatViewStickyHeader.tsx");
-
-export default noop.memo(noop.forwardRef((handleScrollToNewMessages, ref) => {
-  const channel = handleScrollToNewMessages.channel;
-  const tmp = _slicedToArray(noop.useState(false), 2);
-  closure_1 = tmp[1];
+const LOCATION_CONTEXT_MOBILE = Constants.LOCATION_CONTEXT_MOBILE;
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
+const memoResult = react.memo(react.forwardRef((channel, ref) => {
+  let clearUnreadsNotice;
+  let closure_1;
+  let first;
+  let showUnreadsNotice;
+  channel = channel.channel;
+  closure_1 = undefined;
+  const scrollToNewMessages = channel.scrollToNewMessages;
+  [first, closure_1] = react.useState(false);
   ({ showUnreadsNotice, clearUnreadsNotice } = useUnreadSettingNoticeDefault(channel));
-  const imperativeHandle = noop.useImperativeHandle(ref, () => ({
-    onChatViewScrolled(isFirstMessageVisible) {
-      if (forumPost.isForumPost()) {
-        closure_1_1(!isFirstMessageVisible.isFirstMessageVisible);
+  useUnreadSettingNoticeDefault(channel);
+  const imperativeHandle = react.useImperativeHandle(ref, () => {
+    let forumPost;
+    return {
+      onChatViewScrolled(isFirstMessageVisible) {
+        isFirstMessageVisible = isFirstMessageVisible.isFirstMessageVisible;
+        if (forumPost.isForumPost()) {
+          closure_1_1(!isFirstMessageVisible);
+        }
       }
-    }
-  }));
-  let tmp8 = null;
+    };
+  });
+  let tmp9 = null;
+  const tmp7 = metroImportAll;
+  const tmp8 = metroImportDefault;
   if (channel.isForumPost()) {
-    tmp8 = null;
-    if (tmp[0]) {
+    tmp9 = null;
+    if (first) {
       const obj = { channel };
-      tmp8 = timestampProducer(tmp2(10957), obj);
+      tmp9 = metroRequire(tmp3(10957), obj);
     }
   }
-  const items = [tmp8, , , ];
-  let tmp10 = null;
+  const items = [tmp9, , , ];
+  let tmp11 = null;
   if (channel.isDM()) {
     const obj2 = { channelId: channel.id, senderId: channel.getRecipientId() };
-    tmp10 = timestampProducer(ChatViewStickyHeaderAccountSafetyWarnings, obj2);
+    tmp11 = metroRequire(ChatViewStickyHeaderAccountSafetyWarnings, obj2);
   }
-  items[1] = tmp10;
-  let tmp13 = null;
+  items[1] = tmp11;
+  let tmp14 = null;
   if (showUnreadsNotice) {
     const obj3 = { channel, clearUnreadsNotice };
-    tmp13 = timestampProducer(tmp2(10961), obj3);
+    tmp14 = metroRequire(tmp3(10961), obj3);
   }
-  const obj4 = { children: null };
-  items[2] = tmp13;
-  items[3] = timestampProducer(ChatBannerDefault, { channel, handleScrollToNewMessages: handleScrollToNewMessages.scrollToNewMessages });
-  obj4.children = items;
-  return React6(React5, obj4);
+  const obj4 = { children: items };
+  items[2] = tmp14;
+  items[3] = metroRequire(ChatBannerDefault, { channel, handleScrollToNewMessages: scrollToNewMessages });
+  return tmp7(tmp8, obj4);
 }));
+const result = size.fileFinishedImporting("modules/chat/native/ChatViewStickyHeader.tsx");
+
+export default memoResult;

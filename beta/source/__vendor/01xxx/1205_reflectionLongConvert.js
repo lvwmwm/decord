@@ -7,8 +7,6 @@
 // Module 1205 (reflectionLongConvert)
 import ScalarType from "ScalarType" /* 1200 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const reflectionLongConvert = function reflectionLongConvert(ZERO, STRING) {
   if (ScalarType.LongType.BIGINT === STRING) {

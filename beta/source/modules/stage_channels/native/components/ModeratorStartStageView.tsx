@@ -7,40 +7,52 @@
 // Module 8942 (ModeratorStartStageView)
 import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 8951 */;
 import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8954 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let tmp5;
 const StageViewWithPromptsDefault = tmp5(8956);
-const require = fn;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const size = fn(2);
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/ModeratorStartStageView.tsx");
 
 export default function ModeratorStartStageView(channel) {
+  let intl;
+  let intl2;
+  let obj10;
+  let tmp12;
+  let tmp13;
   channel = channel.channel;
   const guild_id = channel.guild_id;
+  const onSkip = channel.onSkip;
   const items = [GuildStore];
   const items1 = [guild_id];
-  const stateFromStores = guild_id(504).useStateFromStores(items, () => GuildStore.getGuild(guild_id), items1);
   const obj = guild_id(504);
-  const first = _slicedToArray(guild_id(8943).useGuildChannelScheduledEvents(channel.id), 1)[0];
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guild_id), items1);
   const obj2 = guild_id(8943);
+  const first = _slicedToArray(obj2.useGuildChannelScheduledEvents(channel.id), 1)[0];
+  const moderator = useCurrentUserStageRolesDefault(channel.id, true).moderator;
   const obj3 = guild_id(8952);
-  const canManageGuildEventResult = guild_id(8952).useManageResourcePermissions(channel).canManageGuildEvent(first);
+  const canManageGuildEventResult = obj3.useManageResourcePermissions(channel).canManageGuildEvent(first);
   const tmp7 = useCanCreateAnEventDefault(guild_id);
-  const isLive = guild_id(8955).useStageChannelStartEvent(channel.id).isLive;
   const obj4 = guild_id(8955);
-  const nextRecurrenceIdInEvent = guild_id(8946).getNextRecurrenceIdInEvent(first);
+  const isLive = obj4.useStageChannelStartEvent(channel.id).isLive;
+  const obj5 = guild_id(8946);
+  const nextRecurrenceIdInEvent = obj5.getNextRecurrenceIdInEvent(first);
   let tmp10Result6 = null;
   if (null != stateFromStores) {
-    const obj6 = { title: null, body: null, children: null };
-    const intl = tmp(1115).intl;
-    obj6.title = intl.string(tmp(1115).t.QGnDLs);
-    const intl2 = tmp(1115).intl;
-    obj6.body = intl2.string(tmp(1115).t["s/uXzq"]);
+    const obj6 = { title: intl.string(guild_id(1115).t.QGnDLs), body: intl2.string(guild_id(1115).t["s/uXzq"]), children: tmp12(tmp13, obj10) };
+    const tmp5Result = StageViewWithPromptsDefault;
+    intl = tmp(1115).intl;
+    intl2 = tmp(1115).intl;
     let tmp10Result = null;
+    tmp12 = closure_7;
+    tmp13 = closure_6;
     if (canManageGuildEventResult) {
       tmp10Result = null;
       if (null != first) {
@@ -50,7 +62,7 @@ export default function ModeratorStartStageView(channel) {
     }
     const items2 = [tmp10Result, , , ];
     let tmp10Result4 = null;
-    if (useCurrentUserStageRolesDefault(channel.id, true).moderator) {
+    if (moderator) {
       const obj8 = { channel, isLive };
       tmp10Result4 = tmp10(tmp(9353).StartStagePrompt, obj8);
     }
@@ -60,14 +72,11 @@ export default function ModeratorStartStageView(channel) {
       const obj9 = { channel, isLive, guild: stateFromStores };
       tmp10Result5 = tmp10(tmp(8975).ScheduleEventPrompt, obj9);
     }
-    const obj10 = { children: null };
+    obj10 = { children: items2 };
     items2[2] = tmp10Result5;
-    const obj11 = { onContinue: channel.onSkip };
-    items2[3] = closure_5(tmp(9353).ContinueToStagePrompt, obj11);
-    obj10.children = items2;
-    obj6.children = closure_7(closure_6, obj10);
-    tmp10Result6 = tmp10(StageViewWithPromptsDefault, obj6);
-    const tmp5Result = StageViewWithPromptsDefault;
+    const obj11 = { onContinue: onSkip };
+    items2[3] = closure_5(guild_id(9353).ContinueToStagePrompt, obj11);
+    tmp10Result6 = tmp10(tmp5Result, obj6);
   }
   return tmp10Result6;
 };

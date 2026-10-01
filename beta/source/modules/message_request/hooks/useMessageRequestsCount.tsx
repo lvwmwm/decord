@@ -5,14 +5,15 @@
 // Exports: useMessageRequestsCount
 
 // Module 16707 (useMessageRequestsCount)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import MessageRequestStore from "MessageRequestStore" /* 6640 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/message_request/hooks/useMessageRequestsCount.tsx");
 
 export const useMessageRequestsCount = function useMessageRequestsCount() {
+  let messageRequestsCount;
   const items = [MessageRequestStore];
-  return initialize.useStateFromStores(items, () => messageRequestsCount.getMessageRequestsCount());
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => messageRequestsCount.getMessageRequestsCount());
 };

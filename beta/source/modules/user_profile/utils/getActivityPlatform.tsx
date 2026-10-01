@@ -6,7 +6,14 @@
 
 // Module 12590 (getActivityPlatform)
 import Constants from "Constants" /* 1074 */;
+import PlatformsDefault from "Platforms" /* 5595 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 7792 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10350 */;
+import isOnXboxDefault from "isOnXbox" /* 12576 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 12577 */;
 import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 12589 */;
+import isOnMetaQuestDefault from "isOnMetaQuest" /* 12591 */;
+import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 12592 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;
@@ -16,21 +23,27 @@ const set = new Set(items);
 const result = size.fileFinishedImporting("modules/user_profile/utils/getActivityPlatform.tsx");
 
 export default function getActivityPlatform(session_id) {
+  let closure_0 = session_id;
   const tmp3 = parseProviderRouteHeadlessSessionIdDefault(session_id.session_id);
   if (null != tmp3) {
     return tmp3;
-  } else if (tmp(10350)(session_id)) {
-    return tmp(5595).get(PlatformTypes.SPOTIFY);
-  } else if (tmp(7792)(session_id)) {
-    return tmp(5595).get(PlatformTypes.CRUNCHYROLL);
-  } else if (tmp(12576)(session_id)) {
-    return tmp(5595).get(PlatformTypes.XBOX);
-  } else if (tmp(12577)(session_id)) {
-    return tmp(5595).get(PlatformTypes.PLAYSTATION);
+  } else if (isListeningOnSpotifyDefault(session_id)) {
+    const tmpResult = PlatformsDefault;
+    return tmpResult.get(PlatformTypes.SPOTIFY);
+  } else if (isCrunchyrollActivityDefault(session_id)) {
+    const tmpResult6 = PlatformsDefault;
+    return tmpResult6.get(PlatformTypes.CRUNCHYROLL);
+  } else if (isOnXboxDefault(session_id)) {
+    const tmpResult7 = PlatformsDefault;
+    return tmpResult7.get(PlatformTypes.XBOX);
+  } else if (isOnPlayStationDefault(session_id)) {
+    const tmpResult8 = PlatformsDefault;
+    return tmpResult8.get(PlatformTypes.PLAYSTATION);
   } else {
-    if (!tmp(12591)(session_id)) {
-      if (!tmp(12592)(session_id)) {
-        const found = tmp(5595).find((name) => name.name === session_id.name);
+    if (!isOnMetaQuestDefault(session_id)) {
+      if (!isOnMetaHorizonDefault(session_id)) {
+        const tmpResult9 = PlatformsDefault;
+        const found = tmpResult9.find((name) => name.name === name.name);
         let tmp5 = null;
         if (null != found) {
           tmp5 = null;
@@ -41,6 +54,7 @@ export default function getActivityPlatform(session_id) {
         return tmp5;
       }
     }
-    return tmp(5595).get(PlatformTypes.META_QUEST_OR_HORIZON);
+    const tmpResult10 = PlatformsDefault;
+    return tmpResult10.get(PlatformTypes.META_QUEST_OR_HORIZON);
   }
 };

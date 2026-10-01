@@ -5,7 +5,7 @@
 // Exports: modelTierMessage, tierTooltip
 
 // Module 16246 (VibegrationsModelLabels)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import size from "module_2" /* 2 */;
 
@@ -23,8 +23,11 @@ export const modelTierMessage = function modelTierMessage(value) {
   }
 };
 export const tierTooltip = function tierTooltip(title, arg1) {
+  let intl;
+  let obj;
+  let v5DOL2g;
   if ("simple" === arg1) {
-    let v5DOL2g = _modDef3715["5DOL2g"];
+    v5DOL2g = _modDef3715["5DOL2g"];
   } else if ("balanced" === arg1) {
     v5DOL2g = _modDef3715["5I6PKl"];
   } else {
@@ -34,10 +37,9 @@ export const tierTooltip = function tierTooltip(title, arg1) {
     }
   }
   if (null != v5DOL2g) {
-    const obj2 = { title, body: null };
-    const intl = util.intl;
-    obj2.body = intl.string(v5DOL2g);
-    let obj = obj2;
+    const obj2 = { title, body: intl.string(v5DOL2g) };
+    intl = intl2.intl;
+    obj = obj2;
   } else {
     obj = { body: title };
   }

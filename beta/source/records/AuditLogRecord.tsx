@@ -2,82 +2,90 @@
 // Function ID: 17344
 // Name: AuditLogRecord
 // Dependencies: [1387, 1074, 1231, 4421, 11, 2]
+// Exports: AuditLogChange
 
 // Module 17343 (AuditLogRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import Record from "Record" /* 1387 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
+let c2;
+let c3;
+let closure_4;
 function getTargetType(action) {
+  let CHANNEL;
   if (action === constants2.ALL) {
-    let CHANNEL = constants.ALL;
-  } else if (action <= tmp.GUILD_UPDATE) {
+    CHANNEL = constants.ALL;
+  } else if (action <= constants2.GUILD_UPDATE) {
     CHANNEL = constants.GUILD;
   } else {
-    if (action > tmp.CHANNEL_DELETE) {
-      if (action !== tmp.MESSAGE_BULK_DELETE) {
-        if (action <= tmp.CHANNEL_OVERWRITE_DELETE) {
+    if (action > constants2.CHANNEL_DELETE) {
+      if (action !== constants2.MESSAGE_BULK_DELETE) {
+        if (action <= constants2.CHANNEL_OVERWRITE_DELETE) {
           CHANNEL = constants.CHANNEL_OVERWRITE;
         } else {
-          if (action > tmp.BOT_ADD) {
-            if (action !== tmp.MESSAGE_DELETE) {
-              if (action !== tmp.MESSAGE_PIN) {
-                if (action !== tmp.MESSAGE_UNPIN) {
-                  if (action <= tmp.ROLE_DELETE) {
+          if (action > constants2.BOT_ADD) {
+            if (action !== constants2.MESSAGE_DELETE) {
+              if (action !== constants2.MESSAGE_PIN) {
+                if (action !== constants2.MESSAGE_UNPIN) {
+                  if (action <= constants2.ROLE_DELETE) {
                     CHANNEL = constants.ROLE;
-                  } else if (action <= tmp.INVITE_DELETE) {
+                  } else if (action <= constants2.INVITE_DELETE) {
                     CHANNEL = constants.INVITE;
-                  } else if (action <= tmp.WEBHOOK_DELETE) {
+                  } else if (action <= constants2.WEBHOOK_DELETE) {
                     CHANNEL = constants.WEBHOOK;
-                  } else if (action <= tmp.EMOJI_DELETE) {
+                  } else if (action <= constants2.EMOJI_DELETE) {
                     CHANNEL = constants.EMOJI;
-                  } else if (action <= tmp.INTEGRATION_DELETE) {
+                  } else if (action <= constants2.INTEGRATION_DELETE) {
                     CHANNEL = constants.INTEGRATION;
-                  } else if (action <= tmp.STAGE_INSTANCE_DELETE) {
+                  } else if (action <= constants2.STAGE_INSTANCE_DELETE) {
                     CHANNEL = constants.STAGE_INSTANCE;
-                  } else if (action <= tmp.STICKER_DELETE) {
+                  } else if (action <= constants2.STICKER_DELETE) {
                     CHANNEL = constants.STICKER;
-                  } else if (action <= tmp.GUILD_SCHEDULED_EVENT_DELETE) {
+                  } else if (action <= constants2.GUILD_SCHEDULED_EVENT_DELETE) {
                     CHANNEL = constants.GUILD_SCHEDULED_EVENT;
-                  } else if (action <= tmp.THREAD_DELETE) {
+                  } else if (action <= constants2.THREAD_DELETE) {
                     CHANNEL = constants.THREAD;
-                  } else if (action === tmp.APPLICATION_COMMAND_PERMISSION_UPDATE) {
+                  } else if (action === constants2.APPLICATION_COMMAND_PERMISSION_UPDATE) {
                     CHANNEL = constants.APPLICATION_COMMAND;
-                  } else if (action <= tmp.SOUNDBOARD_SOUND_DELETE) {
+                  } else if (action <= constants2.SOUNDBOARD_SOUND_DELETE) {
                     CHANNEL = constants.GUILD_SOUNDBOARD;
-                  } else if (action < tmp.AUTO_MODERATION_BLOCK_MESSAGE) {
+                  } else if (action < constants2.AUTO_MODERATION_BLOCK_MESSAGE) {
                     CHANNEL = constants.AUTO_MODERATION_RULE;
                   } else {
-                    if (action !== tmp.AUTO_MODERATION_BLOCK_MESSAGE) {
-                      if (action !== tmp.AUTO_MODERATION_FLAG_TO_CHANNEL) {
-                        if (action !== tmp.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
-                          if (action !== tmp.AUTO_MODERATION_QUARANTINE_USER) {
-                            if (action <= tmp.CREATOR_MONETIZATION_TERMS_ACCEPTED) {
+                    if (action !== constants2.AUTO_MODERATION_BLOCK_MESSAGE) {
+                      if (action !== constants2.AUTO_MODERATION_FLAG_TO_CHANNEL) {
+                        if (action !== constants2.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
+                          if (action !== constants2.AUTO_MODERATION_QUARANTINE_USER) {
+                            if (action <= constants2.CREATOR_MONETIZATION_TERMS_ACCEPTED) {
                               CHANNEL = constants.GUILD;
-                            } else if (action <= tmp.ONBOARDING_PROMPT_DELETE) {
+                            } else if (action <= constants2.ONBOARDING_PROMPT_DELETE) {
                               CHANNEL = constants.ONBOARDING_PROMPT;
-                            } else if (action <= tmp.ONBOARDING_UPDATE) {
+                            } else if (action <= constants2.ONBOARDING_UPDATE) {
                               CHANNEL = constants.GUILD_ONBOARDING;
-                            } else if (action <= tmp.GUILD_HOME_REMOVE_ITEM) {
+                            } else if (action <= constants2.GUILD_HOME_REMOVE_ITEM) {
                               CHANNEL = constants.GUILD_HOME;
-                            } else if (action <= tmp.HARMFUL_LINKS_BLOCKED_MESSAGE) {
+                            } else if (action <= constants2.HARMFUL_LINKS_BLOCKED_MESSAGE) {
                               CHANNEL = constants.GUILD;
-                            } else if (action <= tmp.HOME_SETTINGS_UPDATE) {
+                            } else if (action <= constants2.HOME_SETTINGS_UPDATE) {
                               CHANNEL = constants.HOME_SETTINGS;
-                            } else if (action <= tmp.VOICE_CHANNEL_STATUS_DELETE) {
+                            } else if (action <= constants2.VOICE_CHANNEL_STATUS_DELETE) {
                               CHANNEL = constants.VOICE_CHANNEL_STATUS;
-                            } else if (action <= tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE) {
+                            } else if (action <= constants2.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE) {
                               CHANNEL = constants.GUILD_SCHEDULED_EVENT_EXCEPTION;
-                            } else if (action <= tmp.GUILD_MEMBER_VERIFICATION_UPDATE) {
+                            } else if (action <= constants2.GUILD_MEMBER_VERIFICATION_UPDATE) {
                               CHANNEL = constants.GUILD_MEMBER_VERIFICATION;
-                            } else if (action <= tmp.GUILD_PROFILE_UPDATE) {
+                            } else if (action <= constants2.GUILD_PROFILE_UPDATE) {
                               CHANNEL = constants.GUILD_PROFILE;
-                            } else if (action <= tmp.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION) {
+                            } else if (action <= constants2.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION) {
                               CHANNEL = constants.GUILD;
                             } else {
                               const _HermesInternal = HermesInternal;
-                              SentryUtilsDefault.captureMessage("Unknown target type for: " + action);
+                              const obj = SentryUtilsDefault;
+                              obj.captureMessage("Unknown target type for: " + action);
                               CHANNEL = constants.UNKNOWN;
                             }
                           }
@@ -261,58 +269,59 @@ function getActionType(action) {
   }
   return constants3.CREATE;
 }
-const Constants = fn(1074);
 ({ AuditLogTargetTypes: c2, AuditLogActions: c3, AuditLogActionTypes: closure_4 } = Constants);
-const prototype = function AuditLogRecord(timestampEnd) {
-  const tmp5 = new prototype(tmp4, tmp3, tmp2, tmp, new.target);
-  ({ id: tmp5.id, action: tmp5.action } = timestampEnd);
-  tmp5.actionType = getActionType(tmp5.action);
-  ({ targetId: tmp5.targetId, timestampStart } = timestampEnd);
-  if (timestampStart == null) {
-    const tmp8 = _modDef4421;
-    timestampStart = tmp8(SnowflakeUtilsDefault.extractTimestamp(tmp5.id));
+class AuditLogRecord extends Record {
+  constructor(timestampEnd) {
+    let changes;
+    let timestampStart;
+    const tmp5 = new AuditLogRecord(tmp4, tmp3, tmp2, tmp, new.target);
+    ({ id: tmp5.id, action: tmp5.action } = timestampEnd);
+    tmp5.actionType = getActionType(tmp5.action);
+    ({ targetId: tmp5.targetId, timestampStart } = timestampEnd);
+    if (timestampStart == null) {
+      const tmp8 = _modDef4421;
+      const obj = SnowflakeUtilsDefault;
+      timestampStart = tmp8(obj.extractTimestamp(tmp5.id));
+    }
+    tmp5.timestampStart = timestampStart;
+    let timestampStart2 = timestampEnd.timestampEnd;
+    if (timestampStart2 == null) {
+      timestampStart2 = tmp5.timestampStart;
+    }
+    tmp5.timestampEnd = timestampStart2;
+    ({ userId: tmp5.userId, changes } = timestampEnd);
+    if (changes == null) {
+      changes = [];
+    }
+    tmp5.changes = changes;
+    tmp5.targetType = getTargetType(tmp5.action);
+    let options = timestampEnd.options;
+    if (options == null) {
+      options = {};
+    }
+    tmp5.options = options;
+    let id = timestampEnd.target;
+    if (id == null) {
+      id = timestampEnd.id;
+    }
+    tmp5.target = id;
+    let user = timestampEnd.user;
+    if (user == null) {
+      user = null;
+    }
+    tmp5.user = user;
+    return tmp5;
   }
-  tmp5.timestampStart = timestampStart;
-  let timestampStart2 = timestampEnd.timestampEnd;
-  if (timestampStart2 == null) {
-    timestampStart2 = tmp5.timestampStart;
-  }
-  tmp5.timestampEnd = timestampStart2;
-  ({ userId: tmp5.userId, changes } = timestampEnd);
-  if (changes == null) {
-    changes = [];
-  }
-  tmp5.changes = changes;
-  tmp5.targetType = getTargetType(tmp5.action);
-  let options = timestampEnd.options;
-  if (options == null) {
-    options = {};
-  }
-  tmp5.options = options;
-  let id = timestampEnd.target;
-  if (id == null) {
-    id = timestampEnd.id;
-  }
-  tmp5.target = id;
-  let user = timestampEnd.user;
-  if (user == null) {
-    user = null;
-  }
-  tmp5.user = user;
-  return tmp5;
-}.prototype;
-class prototype extends tmp2 {
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("records/AuditLogRecord.tsx");
 
-export default prototype;
+export default AuditLogRecord;
 export { getTargetType };
 export { getActionType };
-export const AuditLogChange = function AuditLogChange(key, items2, added) {
+export function AuditLogChange(key, items2, added) {
   const obj = Object.create(new.target.prototype);
   obj.key = key;
   obj.oldValue = items2;
   obj.newValue = added;
   return obj;
-}.prototype;
+}

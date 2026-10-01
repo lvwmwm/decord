@@ -5,6 +5,7 @@
 // Exports: useYouBarAccessibilityLabel
 
 // Module 16005 (useYouBarAccessibilityLabel)
+import UserUtils from "UserUtils" /* 4678 */;
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10337 */;
 import useUserVoiceActivity from "useUserVoiceActivity" /* 10338 */;
 import isGameActivityDefault from "isGameActivity" /* 10345 */;
@@ -16,17 +17,24 @@ import PresenceStore from "PresenceStore" /* 4876 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap, type;
 
-require = fn;
-const Constants = fn(1074);
-({ ActivityTypes: c10, StatusTypes: closure_11 } = Constants);
-const size = fn(2);
+let c10;
+let unpackModuleId;
+({ ActivityTypes: c10, StatusTypes: unpackModuleId } = Constants);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarAccessibilityLabel.tsx");
 
 export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(stateFromStores) {
-  _require = id(4678).useName(stateFromStores);
+  let closure_0;
+  let closure_2;
+  let id;
+  const tmp = dependencyMap;
+  let obj = id(4678);
+  _require = obj.useName(stateFromStores);
   id = undefined;
   if (stateFromStores != null) {
     id = stateFromStores.id;
@@ -37,39 +45,43 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
   if (setting != null) {
     text = setting.text;
   }
-  let obj = id(4678);
-  let tmp6 = null;
+  let tmp7 = null;
+  const useGameMentionsAsPlainText = require("useGameMentionsAsPlainText").useGameMentionsAsPlainText;
+  require("useGameMentionsAsPlainText");
   if ("" !== text) {
-    tmp6 = text;
+    tmp7 = text;
   }
-  dependencyMap = require("useGameMentionsAsPlainText").useGameMentionsAsPlainText(tmp6);
-  const tmp3Result = require("useGameMentionsAsPlainText");
+  dependencyMap = useGameMentionsAsPlainText(tmp7);
   let primaryGuild;
+  const getUserPrimaryGuild = require("GuildTagUtils").getUserPrimaryGuild;
+  require("GuildTagUtils");
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
   }
-  const userPrimaryGuild = require("GuildTagUtils").getUserPrimaryGuild(primaryGuild);
+  const userPrimaryGuild = getUserPrimaryGuild(primaryGuild);
   let tag;
   if (userPrimaryGuild != null) {
     tag = userPrimaryGuild.tag;
   }
-  const tmp3Result3 = require("GuildTagUtils");
   let items = [SelfPresenceStore, tag, RelationshipStore, ChannelStore, PermissionStore, VoiceStateStore, PresenceStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const tmp3Result4 = require("get initialized");
+  return tmp3Result4.useStateFromStores(items, () => {
     if (null != closure_0) {
       const status = SelfPresenceStore.getStatus();
       const items = [ApplicationStreamingStore, RelationshipStore];
-      const discoverableApplicationStream = useDiscoverableApplicationStream.getDiscoverableApplicationStream(id, items);
-      const tmp6 = id;
+      const obj = useDiscoverableApplicationStream;
+      const discoverableApplicationStream = obj.getDiscoverableApplicationStream(id, items);
       const obj3 = { userId: id };
       const obj4 = { ChannelStore, PermissionStore, VoiceStateStore };
-      const voiceChannel = useUserVoiceActivity.getVisibleUserVoiceActivity(obj3, obj4).voiceChannel;
+      const obj2 = useUserVoiceActivity;
+      const voiceChannel = obj2.getVisibleUserVoiceActivity(obj3, obj4).voiceChannel;
       let text = null;
+      const tmp6 = id;
       if (null != id) {
         text = null;
-        if (status !== constants.OFFLINE) {
+        if (status !== unpackModuleId.OFFLINE) {
           text = null;
-          if (status !== constants.INVISIBLE) {
+          if (status !== unpackModuleId.INVISIBLE) {
             const activities = PresenceStore.getActivities(tmp6);
             if (null != discoverableApplicationStream) {
               let name;
@@ -79,13 +91,17 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
                   name = found.name;
                 }
               }
-              if (null == name) {
-                const intl3 = tmp4(1115).intl;
-                let stringResult = intl3.string(tmp4(1115).t.eXan7B);
+              if (null != name) {
+                let formatToPlainStringResult;
+                if ("" !== name) {
+                  const intl4 = tmp4(1115).intl;
+                  const obj5 = { name };
+                  formatToPlainStringResult = intl4.formatToPlainString(tmp4(1115).t["0wJXSh"], obj5);
+                }
+                text = formatToPlainStringResult;
               }
-              const intl4 = tmp4(1115).intl;
-              const obj5 = { name };
-              stringResult = intl4.formatToPlainString(tmp4(1115).t["0wJXSh"], obj5);
+              const intl3 = tmp4(1115).intl;
+              formatToPlainStringResult = intl3.string(tmp4(1115).t.eXan7B);
             } else {
               let found1;
               if (activities != null) {
@@ -100,21 +116,22 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
                 text = null;
                 if (null != voiceChannel) {
                   if (!voiceChannel.isDM()) {
+                    let stringResult;
                     if (!voiceChannel.isGroupDM()) {
+                      const isGuildStageVoiceResult = voiceChannel.isGuildStageVoice();
                       const intl = tmp4(1115).intl;
                       const string = intl.string;
                       const t = tmp4(1115).t;
                       if (isGuildStageVoiceResult) {
-                        let stringResult1 = string(t.QygGCN);
+                        stringResult = string(t.QygGCN);
                       } else {
-                        stringResult1 = string(t.msxteM);
+                        stringResult = string(t.msxteM);
                       }
-                      isGuildStageVoiceResult = voiceChannel.isGuildStageVoice();
                     }
-                    text = stringResult1;
+                    text = stringResult;
                   }
                   const intl2 = tmp4(1115).intl;
-                  stringResult1 = intl2.string(tmp4(1115).t["9FaEzi"]);
+                  stringResult = intl2.string(tmp4(1115).t["9FaEzi"]);
                 }
               }
             }
@@ -125,8 +142,8 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
         text = closure_2;
       }
       if (text == null) {
-        text = tmp4(4678).humanizeStatus(status);
-        const tmp4Result = tmp4(4678);
+        const tmp4Result = UserUtils;
+        text = tmp4Result.humanizeStatus(status);
       }
       const items1 = [tmp, tag, text];
       const found2 = items1.filter((item) => null != item);

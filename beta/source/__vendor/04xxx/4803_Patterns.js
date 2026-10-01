@@ -5,21 +5,28 @@
 
 // Module 4803 (Patterns)
 import _modDef4804 from "module_4804" /* 4804 */;
+import HapticFeedbackTypes from "HapticFeedbackTypes" /* 4805 */;
+import _mod4807 from "module_4807" /* 4807 */;
+import playHaptic from "playHaptic" /* 4808 */;
+import _mod4809 from "module_4809" /* 4809 */;
+import PATTERN_CHARS from "PATTERN_CHARS" /* 4810 */;
+import TouchableHaptic from "TouchableHaptic" /* 4811 */;
 
-const require = globalThis.__r;
-
-for (const key10016 in require("HapticFeedbackTypes")) {
-  arg5[key10016] = require("HapticFeedbackTypes")[key10016];
+for (const key10016 in HapticFeedbackTypes) {
+  exports[key10016] = HapticFeedbackTypes[key10016];
   continue;
 }
+const PATTERN_CHARS_export = PATTERN_CHARS.PATTERN_CHARS;
+const playHaptic_export = playHaptic.playHaptic;
+const TouchableHaptic_export = TouchableHaptic.TouchableHaptic;
 
 export default _modDef4804;
-export const useHaptics = fn(4807).useHaptics;
-export const Patterns = fn(4809).Patterns;
-export const pattern = fn(4810).pattern;
-export const PATTERN_CHARS = fn(4810).PATTERN_CHARS;
-export const playHaptic = fn(4808).playHaptic;
-export const TouchableHaptic = fn(4811).TouchableHaptic;
+export const useHaptics = _mod4807.useHaptics;
+export const Patterns = _mod4809.Patterns;
+export const pattern = PATTERN_CHARS.pattern;
+export { PATTERN_CHARS_export as PATTERN_CHARS };
+export { playHaptic_export as playHaptic };
+export { TouchableHaptic_export as TouchableHaptic };
 export const trigger = _modDef4804.trigger;
 export const stop = _modDef4804.stop;
 export const isSupported = _modDef4804.isSupported;

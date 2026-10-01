@@ -5,7 +5,7 @@
 
 // Module 14464 (FamilyCenterSettingParentalControlsSetting)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
@@ -13,20 +13,23 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
+    const intl = intl2.intl;
     return intl.string(_modDef2487.ahKIJO);
   },
-  parent: SettingsConstants.MobileUserSettings.FAMILY_CENTER,
+  parent: MobileUserSettings.FAMILY_CENTER,
   unsearchable: true,
   screen: {
-    route: Constants.UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS,
+    route: UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS,
     getComponent() {
       return require("UserSettingsFamilyCenterParentalControls").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterSettingParentalControlsSetting.tsx");
 
 export default route;

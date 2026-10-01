@@ -5,14 +5,16 @@
 // Exports: default
 
 // Module 16693 (ContextMenuCommandAppScreen)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { list: { marginHorizontal: nativeDefault.space.PX_16 } };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
+const jsx = Fragment.jsx;
+const obj = { list: { marginHorizontal: nativeDefault.space.PX_16 } };
+({ marginHorizontal: nativeDefault.space.PX_16 });
+let closure_4 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/application_commands/native/ContextMenuCommandAppScreen.tsx");
 
 export default function ContextMenuCommandAppScreen(route) {
@@ -20,13 +22,16 @@ export default function ContextMenuCommandAppScreen(route) {
   let section = params.section;
   const commands = params.commands;
   const onPressCommand = params.onPressCommand;
+  const insets = section(commands[4])({ includeKeyboardHeight: true }).insets;
   let items = [commands.length];
+  const tmp = section(commands[5])();
   const items1 = [commands, onPressCommand, section];
   const memo = onPressCommand.useMemo(() => {
     const items = [commands.length];
     return items;
   }, items);
   const callback = onPressCommand.useCallback((arg0, arg1) => {
+    let closure_0;
     section = tmp;
     const diff = commands.length - 1;
     return jsx(section(commands[6]), {
@@ -39,7 +44,6 @@ export default function ContextMenuCommandAppScreen(route) {
       end: arg1 === diff
     }, commands[arg1].id);
   }, items1);
-  const tmp = section(commands[5])();
-  const tmp4 = closure_4();
-  return jsx(section(commands[7]), { style: closure_4().list, sections: memo, estimatedListSize: "windowSize", itemSize: tmp, insetEnd: section(commands[4])({ includeKeyboardHeight: true }).insets.bottom, renderItem: callback });
+  closure_4();
+  return jsx(section(commands[7]), { style: closure_4().list, sections: memo, estimatedListSize: "windowSize", itemSize: tmp, insetEnd: insets.bottom, renderItem: callback });
 };

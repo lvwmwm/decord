@@ -4,21 +4,21 @@
 // Exports: setMeasurement, timedEventsToMeasurements
 
 // Module 12355
-import spanTimeInputToSeconds from "spanTimeInputToSeconds" /* 12318 */;
+import _mod12318 from "module_12318" /* 12318 */;
 import _mod12328 from "module_12328" /* 12328 */;
 import _mod12341 from "module_12341" /* 12341 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
   let activeSpan = arg3;
   if (arg3 === undefined) {
-    activeSpan = spanTimeInputToSeconds.getActiveSpan();
+    const obj = _mod12318;
+    activeSpan = obj.getActiveSpan();
   }
   let rootSpan = activeSpan;
-  if (activeSpan) {
-    rootSpan = spanTimeInputToSeconds.getRootSpan(activeSpan);
+  if (rootSpan) {
+    const obj3 = _mod12318;
+    rootSpan = obj3.getRootSpan(activeSpan);
   }
   if (rootSpan) {
     if (_mod12341.DEBUG_BUILD) {
@@ -33,7 +33,8 @@ export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
   }
 };
 export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
-  if (arr) {
+  let tmp = arr;
+  if (tmp) {
     if (0 !== arr.length) {
       let obj = {};
       const item = arr.forEach((attributes) => {

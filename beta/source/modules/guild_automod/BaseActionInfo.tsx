@@ -5,78 +5,83 @@
 // Exports: getBaseActionInfo
 
 // Module 17315 (BaseActionInfo)
-import util from "util" /* 1115 */;
+import intl13 from "intl" /* 1115 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2110 */;
 import useChannelName from "useChannelName" /* 4989 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 11341 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(11341);
+let hasOwnProperty;
+let metroRequire;
 ({ AutomodActionType: hasOwnProperty, AutomodTriggerType: metroRequire } = Constants);
-const getFriendlyDurationString = fn(2110).getFriendlyDurationString;
-const size = fn(2);
+const getFriendlyDurationString = GuildDisableCommunicationConstants.getFriendlyDurationString;
 const result = size.fileFinishedImporting("modules/guild_automod/BaseActionInfo.tsx");
 
 export const getBaseActionInfo = function getBaseActionInfo(actionType, metadata, triggerType) {
-  if (constants.BLOCK_MESSAGE !== actionType) {
-    if (tmp.FLAG_TO_CHANNEL !== actionType) {
-      if (tmp.USER_COMMUNICATION_DISABLED !== actionType) {
-        let flag = false;
+  let formatResult;
+  let str2;
+  if (hasOwnProperty.BLOCK_MESSAGE !== actionType) {
+    if (hasOwnProperty.FLAG_TO_CHANNEL !== actionType) {
+      let flag;
+      if (hasOwnProperty.USER_COMMUNICATION_DISABLED !== actionType) {
+        flag = false;
       }
       let tmp3 = null;
       if (flag) {
-        if (tmp.BLOCK_MESSAGE === actionType) {
-          const intl3 = util.intl;
-          let str = intl3.string(util.t.d1ab8n);
-        } else if (tmp.FLAG_TO_CHANNEL === actionType) {
-          const intl2 = util.intl;
-          str = intl2.string(util.t["Y+VmvU"]);
-        } else if (tmp.USER_COMMUNICATION_DISABLED === actionType) {
-          const intl = util.intl;
-          str = intl.string(util.t.Xz2njA);
-        } else if (tmp.QUARANTINE_USER === actionType) {
-          const intl11 = util.intl;
-          str = intl11.string(util.t.NPO8ee);
+        let str;
+        if (hasOwnProperty.BLOCK_MESSAGE === actionType) {
+          const intl3 = intl13.intl;
+          str = intl3.string(intl13.t.d1ab8n);
+        } else if (hasOwnProperty.FLAG_TO_CHANNEL === actionType) {
+          const intl2 = intl13.intl;
+          str = intl2.string(intl13.t["Y+VmvU"]);
+        } else if (hasOwnProperty.USER_COMMUNICATION_DISABLED === actionType) {
+          const intl = intl13.intl;
+          str = intl.string(intl13.t.Xz2njA);
+        } else if (hasOwnProperty.QUARANTINE_USER === actionType) {
+          const intl11 = intl13.intl;
+          str = intl11.string(intl13.t.NPO8ee);
         }
         if (str == null) {
           str = "";
         }
         let KEYWORD = triggerType;
-        const obj = { headerText: str, descriptionText: null, helperText: null, isEditable: null };
+        const obj = { headerText: str, descriptionText: str2, helperText: formatResult, isEditable: actionType !== hasOwnProperty.QUARANTINE_USER };
         if (triggerType === undefined) {
-          KEYWORD = constants2.KEYWORD;
+          KEYWORD = metroRequire.KEYWORD;
         }
-        if (tmp.BLOCK_MESSAGE === actionType) {
-          if (constants2.MENTION_SPAM === KEYWORD) {
-            const intl8 = util.intl;
-            let str2 = intl8.string(util.t["8hdId3"]);
+        if (hasOwnProperty.BLOCK_MESSAGE === actionType) {
+          if (metroRequire.MENTION_SPAM === KEYWORD) {
+            const intl8 = intl13.intl;
+            str2 = intl8.string(intl13.t["8hdId3"]);
           } else if (tmp15.ML_SPAM === KEYWORD) {
-            const intl7 = util.intl;
-            str2 = intl7.string(util.t.tLQYs5);
+            const intl7 = intl13.intl;
+            str2 = intl7.string(intl13.t.tLQYs5);
           } else {
-            const intl6 = util.intl;
-            str2 = intl6.string(util.t.xAAoci);
+            const intl6 = intl13.intl;
+            str2 = intl6.string(intl13.t.xAAoci);
           }
-        } else if (tmp.FLAG_TO_CHANNEL === actionType) {
-          const intl5 = util.intl;
-          str2 = intl5.string(util.t.BHAXfa);
-        } else if (tmp.USER_COMMUNICATION_DISABLED === actionType) {
-          const intl4 = util.intl;
-          str2 = intl4.string(util.t["bNK+gI"]);
-        } else if (tmp.QUARANTINE_USER === actionType) {
-          const intl12 = util.intl;
-          str2 = intl12.string(util.t["/7nL5R"]);
+        } else if (hasOwnProperty.FLAG_TO_CHANNEL === actionType) {
+          const intl5 = intl13.intl;
+          str2 = intl5.string(intl13.t.BHAXfa);
+        } else if (hasOwnProperty.USER_COMMUNICATION_DISABLED === actionType) {
+          const intl4 = intl13.intl;
+          str2 = intl4.string(intl13.t["bNK+gI"]);
+        } else if (hasOwnProperty.QUARANTINE_USER === actionType) {
+          const intl12 = intl13.intl;
+          str2 = intl12.string(intl13.t["/7nL5R"]);
         }
         if (str2 == null) {
           str2 = "";
         }
-        obj.descriptionText = str2;
-        let formatResult = null;
-        if (tmp.QUARANTINE_USER !== actionType) {
+        formatResult = null;
+        if (hasOwnProperty.QUARANTINE_USER !== actionType) {
           formatResult = null;
-          if (tmp.BLOCK_MESSAGE !== actionType) {
-            if (tmp.FLAG_TO_CHANNEL === actionType) {
+          if (hasOwnProperty.BLOCK_MESSAGE !== actionType) {
+            if (hasOwnProperty.FLAG_TO_CHANNEL === actionType) {
               let channelId;
               if (metadata != null) {
                 const metadata2 = metadata.metadata;
@@ -89,14 +94,16 @@ export const getBaseActionInfo = function getBaseActionInfo(actionType, metadata
                 const channel = ChannelStore.getChannel(channelId);
                 formatResult = null;
                 if (null != channel) {
-                  const channelName = useChannelName.computeChannelName(channel, UserStore, RelationshipStore);
-                  const intl10 = util.intl;
+                  const obj3 = useChannelName;
+                  const channelName = obj3.computeChannelName(channel, UserStore, RelationshipStore);
+                  const intl10 = intl13.intl;
                   const obj2 = { channelName };
-                  formatResult = intl10.format(util.t.xQXnkK, obj2);
+                  formatResult = intl10.format(intl13.t.xQXnkK, obj2);
                 }
               }
-            } else if (tmp.USER_COMMUNICATION_DISABLED === actionType) {
+            } else if (hasOwnProperty.USER_COMMUNICATION_DISABLED === actionType) {
               let num;
+              const tmp40 = getFriendlyDurationString;
               if (metadata != null) {
                 metadata = metadata.metadata;
                 if (metadata != null) {
@@ -106,12 +113,12 @@ export const getBaseActionInfo = function getBaseActionInfo(actionType, metadata
               if (num == null) {
                 num = 0;
               }
-              const tmp40Result = getFriendlyDurationString(num);
+              const tmp40Result = tmp40(num);
               let formatResult1 = null;
               if (null != tmp40Result) {
-                const intl9 = util.intl;
+                const intl9 = intl13.intl;
                 const obj4 = { duration: tmp40Result };
-                formatResult1 = intl9.format(util.t.AFmbfS, obj4);
+                formatResult1 = intl9.format(intl13.t.AFmbfS, obj4);
               }
               formatResult = formatResult1;
             }
@@ -120,8 +127,6 @@ export const getBaseActionInfo = function getBaseActionInfo(actionType, metadata
         if (formatResult == null) {
           formatResult = null;
         }
-        obj.helperText = formatResult;
-        obj.isEditable = actionType !== tmp.QUARANTINE_USER;
         tmp3 = obj;
       }
       return tmp3;

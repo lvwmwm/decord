@@ -6,33 +6,35 @@
 // Module 12322
 import _mod12320 from "module_12320" /* 12320 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const isMatchingPattern = function isMatchingPattern(arr, test) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
-  const isStringResult = _mod12320.isString(arr);
-  if (!isStringResult) {
-    return isStringResult;
-  } else {
+  const obj = _mod12320;
+  let isStringResult = obj.isString(arr);
+  if (isStringResult) {
+    let isMatch;
+    const tmpResult = _mod12320;
     if (tmpResult.isRegExp(test)) {
-      let isMatch = test.test(arr);
+      isMatch = test.test(arr);
     } else {
-      isMatch = tmp(12320).isString(test);
+      const tmpResult2 = _mod12320;
+      isMatch = tmpResult2.isString(test);
       if (isMatch) {
+        let hasItem;
         if (flag) {
-          let hasItem = arr === test;
+          hasItem = arr === test;
         } else {
           hasItem = arr.includes(test);
         }
+        isMatch = hasItem;
       }
-      const tmpResult2 = tmp(12320);
     }
-    tmpResult = tmp(12320);
+    isStringResult = isMatch;
   }
+  return isStringResult;
 };
 export const safeJoin = function safeJoin(arg0, arg1) {
   if (Array.isArray(arg0)) {
@@ -41,17 +43,17 @@ export const safeJoin = function safeJoin(arg0, arg1) {
     if (0 < arg0.length) {
       try {
         const push = items.push;
-        if (obj.isVueViewModel(tmp2)) {
+        const obj = _mod12320;
+        if (obj.isVueViewModel(arg0[num])) {
           push("[VueViewModel]");
         } else {
           const _String = String;
-          push(String(tmp2));
+          push(String(arg0[num]));
         }
-        num = num + 1;
-        obj = _mod12320;
       } catch (err) {
-        arr.push(tmp);
+        items.push("[value cannot be serialized]");
       }
+      num = num + 1;
     }
     return items.join(arg1);
   } else {
@@ -63,7 +65,7 @@ export const snipLine = function snipLine(arr, arg1) {
     return arr;
   } else {
     let tmp = arg1;
-    if (arg1 > length) {
+    if (arg1 > arr.length) {
       tmp = length;
     }
     const _Math = Math;
@@ -73,10 +75,10 @@ export const snipLine = function snipLine(arr, arg1) {
     }
     const _Math2 = Math;
     let bound = Math.min(num3 + 140, length);
-    if (bound > length - 5) {
+    if (bound > arr.length - 5) {
       bound = length;
     }
-    if (bound === length) {
+    if (bound === arr.length) {
       const _Math3 = Math;
       num3 = Math.max(bound - 140, 0);
     }
@@ -87,14 +89,14 @@ export const snipLine = function snipLine(arr, arg1) {
       combined = "'{snip} " + substr;
     }
     let text = combined;
-    if (bound < length) {
+    if (bound < arr.length) {
       text = `${tmp6} {snip}`;
     }
     return text;
   }
 };
 export const stringMatchesSomePattern = function stringMatchesSomePattern(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   let items = arg1;
   if (arg1 === undefined) {
     items = [];
@@ -104,28 +106,29 @@ export const stringMatchesSomePattern = function stringMatchesSomePattern(arg0) 
     flag = false;
   }
   return items.some((test) => {
-    if (flag === undefined) {
-      flag = false;
-    }
-    const isStringResult = _mod12320.isString(closure_0);
-    if (!isStringResult) {
-      return isStringResult;
-    } else {
+    const obj2 = _mod12320;
+    let isStringResult = obj2.isString(obj);
+    if (isStringResult) {
+      let isMatch;
+      const tmpResult = _mod12320;
       if (tmpResult.isRegExp(test)) {
-        let isMatch = test.test(obj);
+        isMatch = test.test(obj);
       } else {
-        isMatch = tmp(12320).isString(test);
+        const tmpResult2 = _mod12320;
+        isMatch = tmpResult2.isString(test);
         if (isMatch) {
+          let hasItem;
           if (flag) {
-            let hasItem = obj === test;
+            hasItem = obj === test;
           } else {
             hasItem = obj.includes(test);
           }
+          isMatch = hasItem;
         }
-        const tmpResult2 = tmp(12320);
       }
-      tmpResult = tmp(12320);
+      isStringResult = isMatch;
     }
+    return isStringResult;
   });
 };
 export const truncate = function truncate(str) {

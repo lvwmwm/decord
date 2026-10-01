@@ -5,235 +5,269 @@
 // Exports: default
 
 // Module 5908 (MemberVerificationForm)
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1074 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5884 */;
+import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 5884 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let c5, c6, phone;
 
-require = fn;
-const View = fn(17).View;
-let closure_8 = fn(5884).NO_MEMBER_VERIFICATION_FORM;
-const VerificationLevels = fn(1074).VerificationLevels;
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4836);
+let c10;
+let unpackModuleId;
+let react = react_mod;
+const View = react_native.View;
+let closure_8 = MemberVerificationFormStore2.NO_MEMBER_VERIFICATION_FORM;
+const VerificationLevels = Constants.VerificationLevels;
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 16, paddingVertical: 0 }, submitButton: { marginTop: 12, marginBottom: 12 }, error: { alignSelf: "center", paddingVertical: 16, fontSize: 16 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationForm.tsx");
 
 export default function MemberVerificationForm(guild) {
+  let Button;
+  let _undefined;
+  let _undefined2;
+  let c8;
+  let c9;
+  let closure_5;
+  let intl;
+  let items8;
+  let obj9;
+  let onClose;
+  let tmp26;
+  let tmp28;
   guild = guild.guild;
   ({ onSuccess: importDefault, onClose } = guild);
-  noop = undefined;
-  closure_6 = undefined;
-  closure_7 = undefined;
+  let first1;
+  let closure_7;
   c8 = undefined;
   c9 = undefined;
   let memo1;
-  closure_11 = async function _handleSubmit(arg0, value) {
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
+  let obj = function _handleSubmit() {
+    obj = _asyncToGenerator(async (arg0, value) => {
+      let closure_0;
+      let obj3;
+      let obj4;
+      function showIncompleteToast() {
+        let intl;
+        obj = { key: "MEMBER_VERIFICATION_FORM_INCOMPLETE", content: intl.string(closure_1_0(closure_1_2[9]).t.StC497), icon: closure_1_1(closure_1_2[10]) };
+        const open = closure_1_1(closure_1_2[8]).open;
+        closure_1_1(closure_1_2[8]);
+        intl = closure_1_0(closure_1_2[9]).intl;
+        open(obj);
       }
-    } else {
-      try {
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        let c4;
+        let body;
+        try {
+          let closure_2;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            } else {
+              closure_2 = tmp;
+              let closure_1 = tmp4;
+              id = undefined;
+              body = undefined;
+              if (null != first1) {
+                const tmp33 = memo1;
+                if (tmp33) {
+                  showIncompleteToast();
+                  c6 = 3;
+                  return { value: "HermesInternal", done: null };
+                } else {
+                  _undefined2(null);
+                  _undefined(true);
+                  id = closure_2_6;
+                  if (closure_2_6 == null) {
+                    id = closure_1_8;
+                  }
+                  const obj6 = { formFields: obj3.removeInternalFields(tmp56) };
+                  const merged = Object.assign(id);
+                  obj3 = id(closure_2[15]);
+                  c4 = 1;
+                  c5 = 2;
+                  c6 = 1;
+                  const obj7 = { value: obj4.submitVerificationForm(id.id, obj6), done: false };
+                  obj4 = closure_1(closure_2[16]);
+                  return obj7;
+                }
+              }
+            }
+          } else if (1 === c5) {
+            c4 = 0;
+            body = undefined;
+            if (body != null) {
+              body = body.body;
+            }
+            let version;
+            const tmp19 = closure_130_9;
+            if (body != null) {
+              const errors = body.errors;
+              if (errors != null) {
+                version = errors.version;
+              }
+            }
+            if (null == version) {
+              let message;
+              let form_fields;
+              if (body != null) {
+                const errors2 = body.errors;
+                if (errors2 != null) {
+                  form_fields = errors2.form_fields;
+                }
+              }
+              if (null == form_fields) {
+                if (body != null) {
+                  message = body.message;
+                }
+              }
+              tmp19(message);
+              closure_130_8(false);
+            }
+            let intl = id(closure_2[9]).intl;
+            message = intl.string(id(closure_2[9]).t.PD09Sl);
+          } else if (arg0 === 1) {
             c6 = 3;
             throw value;
           } else if (arg0 === 2) {
+            c4 = 0;
             c6 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
+            obj = { value, done: true };
+            return obj;
           } else {
-            phone = tmp7;
-            closure_129_0 = undefined;
-            closure_129_1 = undefined;
-            if (null != first) {
-              if (memo1) {
-                (function showIncompleteToast() {
-                  const obj2 = { key: "MEMBER_VERIFICATION_FORM_INCOMPLETE", content: null, icon: null };
-                  const intl = closure_1_0(1115).intl;
-                  obj2.content = intl.string(closure_1_0(1115).t.StC497);
-                  obj2.icon = closure_1_1(5909);
-                  closure_1_1(4528).open(obj2);
-                })();
-                c6 = 3;
-                return { value: "HermesInternal", done: null };
-              } else {
-                VerificationLevels(null);
-                closure_2_8(true);
-                guild = View;
-                if (View == null) {
-                  guild = closure_1_8;
-                }
-                const obj6 = {};
-                const merged = Object.assign(guild);
-                obj6.formFields = guild(tmp3[15]).removeInternalFields(tmp60);
-                c4 = 1;
-                const obj3 = guild(tmp3[15]);
-                c5 = 2;
-                c6 = 1;
-                const obj7 = { value: phone(tmp3[16]).submitVerificationForm(id.id, obj6), done: false };
-                return obj7;
-              }
-            } else {
-              c6 = 3;
-            }
-          }
-        } else if (1 === tmp7) {
-          c4 = 0;
-          let body;
-          if (tmp52 != null) {
-            body = tmp52.body;
-          }
-          closure_129_1 = body;
-          let version;
-          if (closure_129_1 != null) {
-            const errors = closure_129_1.errors;
-            if (errors != null) {
-              version = errors.version;
-            }
-          }
-          if (null == version) {
-            let form_fields;
-            if (closure_129_1 != null) {
-              const errors2 = closure_129_1.errors;
-              if (errors2 != null) {
-                form_fields = errors2.form_fields;
-              }
-            }
-            if (null == form_fields) {
-              if (closure_129_1 != null) {
-                let message = closure_129_1.message;
-              }
-            }
-            tmp22(message);
+            id = value;
             closure_130_8(false);
+            if (closure_130_1 != null) {
+              tmp9(id);
+            }
+            if (closure_130_2 != null) {
+              closure_130_2(true);
+            }
+            c4 = 0;
           }
-          let intl = guild(tmp3[9]).intl;
-          message = intl.string(guild(tmp3[9]).t.PD09Sl);
-          tmp22 = closure_130_9;
-        } else if (arg0 === 1) {
           c6 = 3;
-          throw value;
-        } else if (arg0 !== 2) {
-          closure_129_0 = value;
-          closure_130_8(false);
-          if (closure_130_1 != null) {
-            tmp12(closure_129_0);
+          return { value: "HermesInternal", done: null };
+        } catch (tmp49) {
+          body = tmp49;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp49;
+          } else {
+            c5 = 1;
           }
-          if (closure_130_2 != null) {
-            closure_130_2(true);
-          }
-          c4 = 0;
-        }
-        c4 = 0;
-        c6 = 3;
-        const obj = { value, done: true };
-        return obj;
-      } catch (tmp52) {
-        if (tmp4 === c4) {
-          c6 = tmp2;
-          throw tmp52;
-        } else {
-          c5 = tmp;
         }
       }
-    }
+    });
+    return obj(...arguments);
   };
-  const tmp = closure_12();
-  const userVerificationState = guild(onClose[11]).useUserVerificationState();
-  closure_129_3 = undefined;
-  closure_129_5 = undefined;
-  closure_129_6 = undefined;
+  let tmp2 = closure_12();
+  const tmp3 = guild;
+  const tmp4 = onClose;
+  obj = guild(onClose[11]);
+  const userVerificationState = obj.useUserVerificationState();
+  let memo;
+  react = undefined;
+  let closure_6;
   function getFormFields() {
-    if (!userVerificationState) {
-      if (null != phone) {
-        const items = [tmp];
+    const tmp2 = memo;
+    if (!tmp2) {
+      let items;
+      if (null != closure_1) {
+        items = [tmp3];
         let formFields;
-        if (onClose != null) {
-          formFields = onClose.formFields;
+        if (stateFromStores != null) {
+          formFields = stateFromStores.formFields;
         }
         if (formFields == null) {
           formFields = [];
         }
-        HermesBuiltin.arraySpread(formFields, 1);
+        HermesBuiltin.arraySpread(items, formFields, 1);
       }
       return items;
     }
     let formFields1;
-    if (onClose != null) {
-      formFields1 = onClose.formFields;
+    if (stateFromStores != null) {
+      formFields1 = stateFromStores.formFields;
     }
     if (formFields1 == null) {
       formFields1 = [];
     }
   }
-  closure_129_4 = getFormFields;
-  const id = guild.id;
-  closure_129_0 = id;
-  closure_130_0 = guild;
-  let obj = guild(onClose[11]);
-  closure_130_1 = guild(onClose[11]).useInitialVerification(guild.id);
-  const tmp6 = require("useInitialValue")(() => {
-    if (guild.verificationLevel === VerificationLevels.VERY_HIGH) {
+  let id = guild.id;
+  let obj2 = guild(onClose[11]);
+  obj2.useInitialVerification(guild.id);
+  const tmp7 = require("react")(() => {
+    if (guild.verificationLevel === constants.VERY_HIGH) {
       phone = undefined;
       if (phone != null) {
         phone = phone.phone;
       }
       let tmp5 = null;
       if (!phone) {
-        const obj2 = { field_type: MemberVerificationTypes.VerificationFormFieldTypes.VERIFICATION, platform: MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE };
-        tmp5 = obj2;
+        tmp5 = { field_type: guild(onClose[13]).VerificationFormFieldTypes.VERIFICATION, platform: guild(onClose[13]).UserVerificationFieldPlatforms.PHONE };
+        const obj2 = { field_type: guild(onClose[13]).VerificationFormFieldTypes.VERIFICATION, platform: guild(onClose[13]).UserVerificationFieldPlatforms.PHONE };
       }
-      let obj = tmp5;
+      obj = tmp5;
     } else {
-      obj = { field_type: MemberVerificationTypes.VerificationFormFieldTypes.VERIFICATION, platform: MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL };
+      obj = { field_type: guild(onClose[13]).VerificationFormFieldTypes.VERIFICATION, platform: guild(onClose[13]).UserVerificationFieldPlatforms.EMAIL };
     }
     return obj;
   });
-  closure_129_1 = tmp6;
-  let obj2 = guild(onClose[11]);
+  let closure_1 = tmp7;
+  let obj3 = guild(onClose[14]);
   let items = [closure_7];
   const items1 = [id];
-  const stateFromStores = guild(onClose[14]).useStateFromStores(items, () => MemberVerificationFormStore.get(guild), items1);
-  closure_129_2 = stateFromStores;
+  const stateFromStores = obj3.useStateFromStores(items, () => closure_7.get(id), items1);
+  let obj4 = react;
   let formFields;
+  const useMemo = react.useMemo;
   if (stateFromStores != null) {
     formFields = stateFromStores.formFields;
   }
   const items2 = [formFields];
-  const memo = noop.useMemo(() => {
+  memo = useMemo(() => {
     let someResult;
-    if (onClose != null) {
-      const formFields = onClose.formFields;
+    if (stateFromStores != null) {
+      const formFields = stateFromStores.formFields;
       if (formFields != null) {
-        someResult = formFields.some((field_type) => field_type.field_type !== guild(onClose[13]).VerificationFormFieldTypes.TERMS);
+        someResult = formFields.some((field_type) => field_type.field_type !== id(stateFromStores[13]).VerificationFormFieldTypes.TERMS);
       }
     }
     return someResult;
   }, items2);
-  closure_129_3 = memo;
-  closure_129_5 = obj4.useRef(getFormFields);
+  react = obj4.useRef(getFormFields);
   const effect = obj4.useEffect(() => {
-    closure_5.current = current;
+    ref.current = getFormFields;
   });
   if (!memo) {
-    if (null != tmp6) {
-      const items3 = [tmp6];
+    let items3;
+    if (null != tmp7) {
+      items3 = [tmp7];
       let formFields1;
       if (stateFromStores != null) {
         formFields1 = stateFromStores.formFields;
@@ -241,26 +275,28 @@ export default function MemberVerificationForm(guild) {
       if (formFields1 == null) {
         formFields1 = [];
       }
-      HermesBuiltin.arraySpread(formFields1, 1);
+      let arraySpreadResult = HermesBuiltin.arraySpread(items3, formFields1, 1);
     }
-    const tmp16 = formFields(tmp11(items3), 2);
-    closure_129_6 = tmp17;
+    const tmp17 = first1(tmp12(items3), 2);
+    let tmp19 = tmp17[1];
     const items4 = [stateFromStores];
+    const first = tmp17[0];
     const effect1 = obj4.useEffect(() => {
-      if (null != onClose) {
+      if (null != stateFromStores) {
         closure_6(ref.current());
       }
     }, items4);
-    const items5 = [tmp16[0], tmp16[1], stateFromStores, memo];
-    const tmp19 = formFields(items5, 4);
-    formFields = tmp19[0];
-    noop = tmp19[1];
-    closure_6 = tmp21;
-    closure_7 = tmp22;
-    [tmp24, c8] = formFields(obj4.useState(false), 2);
-    const tmp23 = formFields(obj4.useState(false), 2);
-    [tmp26, c9] = formFields(obj4.useState(null), 2);
-    const items6 = [onClose, tmp19[2]];
+    const items5 = [first, tmp19, stateFromStores, memo];
+    const tmp21 = first1(items5, 4);
+    first1 = tmp21[0];
+    react = tmp21[1];
+    closure_6 = tmp23;
+    closure_7 = tmp24;
+    [tmp26, c8] = first1(obj4.useState(false), 2);
+    const tmp25 = first1(obj4.useState(false), 2);
+    [tmp28, c9] = first1(obj4.useState(null), 2);
+    const items6 = [onClose, tmp23];
+    const tmp27 = first1(obj4.useState(null), 2);
     const effect2 = obj4.useEffect(() => {
       if (closure_6 === closure_8) {
         if (onClose != null) {
@@ -268,89 +304,87 @@ export default function MemberVerificationForm(guild) {
         }
       }
     }, items6);
-    const items7 = [guild.verificationLevel, tmp19[3], userVerificationState, formFields];
+    const items7 = [guild.verificationLevel, tmp24, userVerificationState, first1];
     memo1 = obj4.useMemo(() => {
+      obj = first1;
       let someResult;
-      if (first != null) {
-        someResult = obj.some((item) => !guild(onClose[15]).isValidFormResponse(item));
+      if (first1 != null) {
+        someResult = obj.some((item) => {
+          obj = guild(onClose[15]);
+          return !obj.isValidFormResponse(item);
+        });
       }
       if (someResult) {
         return true;
-      } else if (closure_7) {
-        return false;
       } else {
-        const verificationLevel = guild.verificationLevel;
-        if (VerificationLevels.VERY_HIGH === verificationLevel) {
-          return !userVerificationState[MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE];
+        const tmp2 = closure_7;
+        if (tmp2) {
+          return false;
         } else {
-          if (tmp4.HIGH !== verificationLevel) {
-            if (tmp4.MEDIUM !== verificationLevel) {
-              if (tmp4.LOW !== verificationLevel) {
-                const NONE = tmp4.NONE;
-                return false;
+          const verificationLevel = guild.verificationLevel;
+          if (VerificationLevels.VERY_HIGH === verificationLevel) {
+            return !userVerificationState[MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE];
+          } else {
+            if (VerificationLevels.HIGH !== verificationLevel) {
+              if (VerificationLevels.MEDIUM !== verificationLevel) {
+                if (VerificationLevels.LOW !== verificationLevel) {
+                  const NONE = tmp4.NONE;
+                  return false;
+                }
               }
             }
+            const tmp8 = !userVerificationState[MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL] && !userVerificationState[MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE];
+            return tmp8;
           }
-          const tmp8 = userVerificationState[MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL];
-          let tmp9 = !tmp8;
-          if (!tmp8) {
-            tmp9 = !userVerificationState[tmp6(undefined, 4658).UserVerificationFieldPlatforms.PHONE];
-          }
-          return tmp9;
         }
       }
-      obj = first;
     }, items7);
-    if (null == formFields) {
+    if (null == first1) {
       return null;
     } else {
-      let obj5 = { style: tmp.container, children: null };
+      let tmp33 = closure_6;
+      let obj5 = { style: tmp2.container, children: items8 };
       let obj6 = {
         rulesChannelId: guild.rulesChannelId,
-        formFields,
+        formFields: first1,
         onChange: function handleFormChange(arg0, response) {
-              if (null != first) {
+              if (null != first1) {
                 const items = [];
-                const arraySpreadResult = HermesBuiltin.arraySpread(arr.slice(0, arg0), 0);
-                const obj = {};
-                const merged = Object.assign(tmp3);
-                obj.response = response;
+                const arraySpreadResult = HermesBuiltin.arraySpread(items, first1.slice(0, arg0), 0);
+                obj = { response };
+                const merged = Object.assign(tmp4);
                 items[arraySpreadResult] = obj;
-                HermesBuiltin.arraySpread(arr.slice(arg0 + 1), arraySpreadResult + 1);
-                ref(items);
+                HermesBuiltin.arraySpread(items, first1.slice(arg0 + 1), arraySpreadResult + 1);
+                closure_5(items);
               }
             },
         verification: userVerificationState
       };
-      const items8 = [memo1(tmp5(tmp3[17]), obj6), , ];
-      let tmp32Result = null;
-      if (null != tmp26) {
-        let obj7 = { style: tmp.error, children: tmp26 };
-        tmp32Result = tmp32(tmp5(tmp3[18]), obj7);
+      items8 = [memo1(tmp6(tmp4[17]), obj6), , ];
+      let tmp34Result = null;
+      const tmp32 = obj;
+      if (null != tmp28) {
+        let obj7 = { style: tmp2.error, children: tmp28 };
+        tmp34Result = tmp34(tmp6(tmp4[18]), obj7);
       }
-      items8[1] = tmp32Result;
-      const obj8 = { style: tmp.submitButton, children: null };
-      const obj9 = { variant: "primary", size: "md", grow: true, text: null, loading: null, disabled: null, onPress: null };
-      let intl = tmp2(tmp3[9]).intl;
-      obj9.text = intl.string(tmp2(tmp3[9]).t["r8/DT+"]);
-      obj9.loading = tmp24;
-      obj9.disabled = tmp24;
-      obj9.onPress = function handleSubmit() {
-        const self = this;
-        const apply = closure_11.apply;
-        if (typeof apply === "unknown") {
-          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-        } else {
-          applyArgumentsResult = apply(self, arguments);
-        }
-        return applyArgumentsResult;
+      items8[1] = tmp34Result;
+      const obj8 = { style: tmp2.submitButton, children: memo1(Button, obj9) };
+      obj9 = {
+        variant: "primary",
+        size: "md",
+        grow: true,
+        text: intl.string(tmp3(tmp4[9]).t["r8/DT+"]),
+        loading: tmp26,
+        disabled: tmp26,
+        onPress: function handleSubmit() {
+              return obj(...arguments);
+            }
       };
-      obj8.children = memo1(tmp2(tmp3[19]).Button, obj9);
-      items8[2] = memo1(closure_6, obj8);
-      obj5.children = items8;
-      return closure_11(closure_6, obj5);
+      Button = tmp3(tmp4[19]).Button;
+      intl = tmp3(tmp4[9]).intl;
+      items8[2] = memo1(tmp33, obj8);
+      return tmp32(tmp33, obj5);
     }
-    const tmp25 = formFields(obj4.useState(null), 2);
   }
   let formFields2;
   if (stateFromStores != null) {

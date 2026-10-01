@@ -5,70 +5,80 @@
 // Exports: SidebarCoachmarkOverlay
 
 // Module 15644 (SidebarCoachmarkOverlay)
-import useInitialValueDefault from "useInitialValue" /* 5910 */;
+import Constants from "Constants" /* 1074 */;
+import reactDefault from "react" /* 5910 */;
 import LayerContext from "LayerContext" /* 6578 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let StyleSheet;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
 function SidebarCoachmarkOverlayLayer(manager) {
+  let items1;
   manager = manager.manager;
-  closure_1 = _slicedToArray(noop.useState({}), 2)[1];
+  let closure_1 = _slicedToArray(react.useState({}), 2)[1];
   const items = [manager];
-  const effect = noop.useEffect(() => {
-    closure_0 = manager;
+  const effect = react.useEffect(() => {
+    let closure_0 = manager;
     manager.invalidate = () => closure_1_1({});
     return () => {
       closure_0.invalidate = () => null;
     };
   }, items);
-  const obj = {
+  let obj = {
     style: overlay.overlay,
     ref(current) {
       return manager.setSurfaceRef(current);
     },
     onLayout: NOOP,
     pointerEvents: "box-none",
-    children: null
+    children: items1.map((children) => {
+      const obj = { children: children.component };
+      return closure_1_7(React.Fragment, obj, children.key);
+    })
   };
-  const items1 = manager.items;
-  obj.children = items1.map((children) => closure_1_7(React.Fragment, { children: children.component }, children.key));
+  items1 = manager.items;
   return closure_7(closure_5, obj);
 }
-get_ActivityIndicator = fn(17);
-({ StyleSheet, View: hasOwnProperty } = get_ActivityIndicator);
-const NOOP = fn(1074).NOOP;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const context = noop.createContext(null);
-let obj = { overlay: null };
-let obj2 = {};
+({ StyleSheet, View: hasOwnProperty } = react_native);
+const NOOP = Constants.NOOP;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+const context = react.createContext(null);
+let obj = { overlay: obj2 };
+obj2 = { zIndex: 1 };
+const create = StyleSheet.create;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj2.zIndex = 1;
-obj.overlay = obj2;
-const overlay = StyleSheet.create(obj);
-const size = fn(2);
+const overlay = create(obj);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/SidebarCoachmarkOverlay.native.tsx");
 
 export const SidebarCoachmarkOverlayContext = context;
 export const SidebarCoachmarkOverlay = function SidebarCoachmarkOverlay(enabled) {
+  let items;
   enabled = enabled.enabled;
-  const tmp = useInitialValueDefault(() => {
+  const children = enabled.children;
+  const tmp = reactDefault(() => {
     const layerContextManager = new LayerContext.LayerContextManager();
     return layerContextManager;
   });
   let tmp3 = null;
+  const Provider = context.Provider;
+  const tmp2 = metroImportAll;
   if (enabled) {
     tmp3 = tmp;
   }
-  const obj = { value: tmp3, children: null };
-  const items = [enabled.children, ];
+  const obj = { value: tmp3, children: items };
+  items = [children, ];
   let tmp4 = null;
   if (enabled) {
     const obj2 = { manager: tmp };
-    tmp4 = React5(SidebarCoachmarkOverlayLayer, obj2);
+    tmp4 = metroImportDefault(SidebarCoachmarkOverlayLayer, obj2);
   }
   items[1] = tmp4;
-  obj.children = items;
-  return React6(context.Provider, obj);
+  return tmp2(Provider, obj);
 };

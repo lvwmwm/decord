@@ -9,10 +9,12 @@ import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8133
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let importDefault;
 
 const result = size.fileFinishedImporting("modules/game_profile/hooks/useOpenGameProfileModal.tsx");
 
 export default function useOpenGameProfileModal(arg0) {
+  let closure_0;
   importDefault = arg0;
   let obj = arg1;
   if (arg1 === undefined) {
@@ -32,11 +34,11 @@ export default function useOpenGameProfileModal(arg0) {
         if (stopPropagation != null) {
           stopPropagation.preventDefault();
         }
-        const obj2 = {};
+        const obj = { gameId, gameProfileModalChecks };
+        const openGameProfileModal = GameProfileActionCreatorsDefault.openGameProfileModal;
+        GameProfileActionCreatorsDefault;
         const merged = Object.assign(closure_0);
-        obj2.gameId = gameId;
-        obj2.gameProfileModalChecks = gameProfileModalChecks;
-        GameProfileActionCreatorsDefault.openGameProfileModal(obj2);
+        openGameProfileModal(obj);
         if (onOpened != null) {
           onOpened();
         }

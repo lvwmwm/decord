@@ -11,10 +11,11 @@ export default (str, str2) => {
         const items = [str];
         return items;
       } else {
+        let items2;
         const index = str.indexOf(str2);
         if (-1 === index) {
           const items1 = [str];
-          let items2 = items1;
+          items2 = items1;
         } else {
           items2 = [str.slice(0, index), str.slice(index + str2.length)];
         }

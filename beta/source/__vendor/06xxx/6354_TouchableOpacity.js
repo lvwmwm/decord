@@ -4,5 +4,8 @@
 // Dependencies: [6355]
 
 // Module 6354 (TouchableOpacity)
+const require = globalThis.__r;
 
-export default { TouchableOpacity: fn(6355).TouchableOpacity, TouchableHighlight: fn(6355).TouchableHighlight, TouchableWithoutFeedback: fn(6355).TouchableWithoutFeedback };
+({ TouchableOpacity: require("module_6355").TouchableOpacity, TouchableHighlight: require("module_6355").TouchableHighlight, TouchableWithoutFeedback: require("module_6355").TouchableWithoutFeedback });
+
+export default { TouchableOpacity: require("module_6355").TouchableOpacity, TouchableHighlight: require("module_6355").TouchableHighlight, TouchableWithoutFeedback: require("module_6355").TouchableWithoutFeedback };

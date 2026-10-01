@@ -6,67 +6,82 @@
 
 // Module 13440 (FormDropdown)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import native from "native" /* 1177 */;
-import _modDef9396 from "module_9396" /* 9396 */;
-import _modDef13441 from "module_13441" /* 13441 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9203 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9396 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13441 */;
 import FormStylesDefault from "FormStyles" /* 13442 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
 import TextStyles_mod from "TextStyles" /* 5836 */;
+import size from "module_2" /* 2 */;
 
-const TouchableHitBoxDefault = tmp2(9203);
-require = fn;
+let c3;
+let closure_4;
+let obj2;
+let obj3;
 function LockedIcon() {
-  return React3(native.Icon, { size: native.Icon.Sizes.MEDIUM, source: _modDef13441 });
+  const obj = { size: native.Icon.Sizes.MEDIUM, source: AssetRegistryDefault2 };
+  const Icon = native.Icon;
+  return _false(Icon, obj);
 }
 function DropdownIcon() {
-  const obj = { style: null, size: native.Icon.Sizes.MEDIUM, source: _modDef9396 };
-  const obj2 = { transform: null };
-  const items = [{ rotate: "90deg" }];
-  obj2.transform = items;
-  obj.style = obj2;
-  return React3(native.Icon, obj);
+  let items;
+  let obj2;
+  const obj = { style: obj2, size: native.Icon.Sizes.MEDIUM, source: AssetRegistryDefault };
+  obj2 = { transform: items };
+  items = [{ rotate: "90deg" }];
+  const Icon = native.Icon;
+  return _false(Icon, obj);
 }
-const Fonts = fn(1074).Fonts;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { alignItems: "center", flexDirection: "row" }, content: { marginStart: 8, flexGrow: 1 }, placeholder: null, text: null };
+const Fonts = Constants.Fonts;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { alignItems: "center", flexDirection: "row" }, content: { marginStart: 8, flexGrow: 1 }, placeholder: obj2, text: obj3 };
+obj2 = {};
+createStyles = createStyles.createStyles;
 let TextStyles = TextStyles_mod;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_MUTED, 16));
-obj2.placeholder = {};
-let TextStyles = TextStyles_mod;
+obj3 = {};
+TextStyles = TextStyles_mod;
 const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_DEFAULT, 16));
-obj2.text = {};
-const styles = createStyles.createStyles(obj2);
-const size = fn(2);
+const styles = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormDropdown.tsx");
 
 export default function FormDropdown(arg0) {
+  let disabled;
+  let items;
+  let items1;
+  let label;
+  let leading;
+  let onPress;
+  let placeholder;
+  let tmp9;
   ({ disabled, label } = arg0);
   ({ leading, onPress, placeholder } = arg0);
   const tmp = styles();
+  const obj = { style: items, accessibilityRole: "spinbutton", disabled, onPress: tmp9, children: items1 };
+  items = [tmp.container, FormStylesDefault().dropdownInput];
+  tmp9 = undefined;
   const tmp4 = FormStylesDefault();
-  const obj = { style: null, accessibilityRole: "spinbutton", disabled, onPress: null, children: null };
-  const items = [tmp.container, tmp4.dropdownInput];
-  obj.style = items;
-  let tmp9;
-  const tmp5Result = React3(disabled ? LockedIcon : DropdownIcon, {});
-  const tmp7 = React4;
+  const tmp5Result = _false(disabled ? LockedIcon : DropdownIcon, {});
+  const tmp2Result = TouchableHitBoxDefault;
+  const tmp7 = React3;
   if (!disabled) {
     tmp9 = onPress;
   }
-  obj.onPress = tmp9;
-  const items1 = [leading, , ];
+  items1 = [leading, , ];
   const items2 = [tmp.content, ];
-  const obj2 = { style: items2, children: null };
+  const obj2 = { style: items2, children: label };
   items2[1] = null != label ? tmp.text : tmp.placeholder;
+  const LegacyText = native.LegacyText;
   if (label == null) {
     label = placeholder;
   }
-  obj2.children = label;
-  items1[1] = React3(native.LegacyText, obj2);
+  items1[1] = _false(LegacyText, obj2);
   items1[2] = tmp5Result;
-  obj.children = items1;
-  return tmp7(TouchableHitBoxDefault, obj);
+  return tmp7(tmp2Result, obj);
 };
 export const useFormDropdownStyles = styles;

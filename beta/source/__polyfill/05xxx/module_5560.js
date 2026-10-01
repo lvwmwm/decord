@@ -3,8 +3,7 @@
 // Dependencies: []
 
 // Module 5560
-
-export default {
+const obj = {
   get() {
     if (typeof TextDecoder !== "undefined") {
       const _TextDecoder = TextDecoder;
@@ -12,3 +11,5 @@ export default {
     }
   }
 };
+
+export default obj;

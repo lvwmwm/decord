@@ -9,14 +9,33 @@ import DispatcherDefault from "Dispatcher" /* 573 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6683 */;
 import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 16227 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import PrunePreviewStore from "PrunePreviewStore" /* 16226 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let closure_12;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let unpackModuleId;
 function MembersPruneActionSheetContent(guild) {
+  let BottomSheetTitleHeader;
+  let closure_3;
+  let days;
+  let first;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl6;
+  let items2;
+  let items3;
+  let obj2;
   guild = guild.guild;
   days = undefined;
   _slicedToArray = undefined;
@@ -26,6 +45,7 @@ function MembersPruneActionSheetContent(guild) {
   const tmp3 = closure_5(guild.id, days, []);
   num = tmp3.count;
   const items = [guild.id, days];
+  const isLoading = tmp3.isLoading;
   const effect = num.useEffect(() => {
     function handlePruneUpdate(guildId) {
       if (guildId.guildId === handlePruneUpdate.id) {
@@ -35,91 +55,108 @@ function MembersPruneActionSheetContent(guild) {
         }
       }
     }
-    const subscription = id(first[7]).subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
+    let obj = id(first[7]);
+    const subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
     return () => {
-      DispatcherDefault.unsubscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
+      const obj = DispatcherDefault;
+      obj.unsubscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
     };
   }, items);
   const items1 = [guild.id, days, num];
   const effect1 = num.useEffect(() => {
     if (null == num) {
-      PruneGuildModalActionCreatorsDefault.updateEstimateV2(guild.id, first);
+      const obj = PruneGuildModalActionCreatorsDefault;
+      obj.updateEstimateV2(guild.id, first);
     }
   }, items1);
-  let obj = { header: null, children: null };
-  let obj2 = { title: null };
-  const intl = guild(days[11]).intl;
-  obj2.title = intl.string(guild(days[11]).t.zbyz7p);
-  obj.header = closure_11(guild(days[10]).BottomSheetTitleHeader, obj2);
-  const obj3 = { title: null, defaultValue: null, onChange: null, hasIcons: false, children: null };
-  const intl2 = guild(days[11]).intl;
-  obj3.title = intl2.string(guild(days[11]).t.YccTvK);
-  obj3.defaultValue = days;
-  obj3.onChange = function onChange(arg0) {
-    let tmp = first !== arg0;
-    if (tmp) {
-      tmp = null != id;
-    }
-    if (tmp) {
-      closure_3(arg0);
-    }
+  let obj = { header: closure_11(BottomSheetTitleHeader, obj2), children: items3 };
+  const ActionSheet = guild(days[9]).ActionSheet;
+  obj2 = { title: intl.string(guild(days[11]).t.zbyz7p) };
+  BottomSheetTitleHeader = guild(days[10]).BottomSheetTitleHeader;
+  intl = guild(days[11]).intl;
+  const obj3 = {
+    title: intl2.string(guild(days[11]).t.YccTvK),
+    defaultValue: days,
+    onChange(arg0) {
+      const tmp = first !== arg0 && null != id;
+      if (tmp) {
+        closure_3(arg0);
+      }
+    },
+    hasIcons: false,
+    children: items2
   };
-  const obj4 = { value: 7, label: null };
-  const intl3 = guild(days[11]).intl;
-  obj4.label = intl3.formatToPlainString(guild(days[11]).t.FM1dHS, { days: 7 });
-  const items2 = [closure_11(guild(days[13]).TableRadioRow, obj4), ];
-  const obj5 = { value: 30, label: null };
-  const intl4 = guild(days[11]).intl;
-  obj5.label = intl4.formatToPlainString(guild(days[11]).t.FM1dHS, { days: 30 });
-  items2[1] = closure_11(guild(days[13]).TableRadioRow, obj5);
-  obj3.children = items2;
-  const items3 = [closure_12(guild(days[12]).TableRadioGroup, obj3), , ];
+  const TableRadioGroup = guild(days[12]).TableRadioGroup;
+  intl2 = guild(days[11]).intl;
+  const obj4 = { value: 7, label: intl3.formatToPlainString(guild(days[11]).t.FM1dHS, { days: 7 }) };
+  const TableRadioRow = guild(days[13]).TableRadioRow;
+  intl3 = guild(days[11]).intl;
+  items2 = [closure_11(TableRadioRow, obj4), ];
+  const obj5 = { value: 30, label: intl4.formatToPlainString(guild(days[11]).t.FM1dHS, { days: 30 }) };
+  const TableRadioRow2 = guild(days[13]).TableRadioRow;
+  intl4 = guild(days[11]).intl;
+  items2[1] = closure_11(TableRadioRow2, obj5);
+  items3 = [closure_12(TableRadioGroup, obj3), , ];
+  const Text = guild(days[14]).Text;
   const intl5 = guild(days[11]).intl;
+  const format = intl5.format;
   const t = guild(days[11]).t;
+  const tmp10 = isLoading ? t["98cHOp"] : t.f13az9;
+  const tmp6 = closure_12;
   if (num == null) {
     num = -1;
   }
-  items3[1] = closure_11(guild(days[14]).Text, { variant: "text-sm/medium", children: intl5.format(tmp3.isLoading ? t["98cHOp"] : t.f13az9, { members: num, days }) });
+  const obj6 = { variant: "text-sm/medium", children: format(tmp10, { members: num, days }) };
+  items3[1] = closure_11(Text, obj6);
   const obj7 = {
     variant: "destructive",
     onPress() {
       let tmp2 = null != id;
+      const tmp = id;
       if (tmp2) {
         tmp2 = null != first;
       }
       if (tmp2) {
-        PruneGuildModalActionCreatorsDefault.prune(id, first);
-        ActionSheetActionCreatorsDefault.hideActionSheet();
-        React5();
+        const obj = PruneGuildModalActionCreatorsDefault;
+        obj.prune(tmp, first);
+        const obj2 = ActionSheetActionCreatorsDefault;
+        obj2.hideActionSheet();
+        metroImportDefault();
       }
     },
-    text: null
+    text: intl6.string(guild(days[11]).t["2mIlKQ"])
   };
-  const intl6 = tmp7(tmp8[11]).intl;
-  obj7.text = intl6.string(guild(days[11]).t["2mIlKQ"]);
-  items3[2] = closure_11(guild(days[15]).Button, obj7);
-  obj.children = items3;
-  return closure_12(guild(days[9]).ActionSheet, obj);
+  const Button = tmp7(tmp8[15]).Button;
+  intl6 = tmp7(tmp8[11]).intl;
+  items3[2] = closure_11(Button, obj7);
+  return tmp6(ActionSheet, obj);
 }
-const PrunePreviewStore = fn(16226);
-({ usePrunePreview: hasOwnProperty, setPrunePreview: metroRequire, clearAllPrunePreviews: closure_7 } = PrunePreviewStore);
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const size = fn(2);
+let _slicedToArray = _slicedToArray_mod;
+({ usePrunePreview: hasOwnProperty, setPrunePreview: metroRequire, clearAllPrunePreviews: metroImportDefault } = PrunePreviewStore);
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 const result = size.fileFinishedImporting("modules/guild_settings/native/MembersPruneActionSheet.tsx");
 
 export default function MembersPruneActionSheet(guild) {
   guild = guild.guild;
+  let obj = guild(504);
   const items = [GuildStore, PermissionStore, UserStore];
   const items1 = [guild];
-  const stateFromStores = guild(504).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const canPruneGuildMembers = MemberSafetyPermissionsUtils.canPruneGuildMembers;
+    MemberSafetyPermissionsUtils;
+    const tmp2 = guild;
     guild = GuildStore.getGuild(guild.id);
-    return MemberSafetyPermissionsUtils.canPruneGuildMembers(guild, UserStore.getCurrentUser(), PermissionStore);
+    if (guild == null) {
+      guild = tmp2;
+    }
+    return canPruneGuildMembers(guild, UserStore.getCurrentUser(), PermissionStore);
   }, items1);
   const items2 = [stateFromStores];
-  const effect = noop.useEffect(() => {
-    if (!stateFromStores) {
-      ActionSheetActionCreatorsDefault.hideActionSheet();
+  const effect = react.useEffect(() => {
+    const tmp = stateFromStores;
+    if (!tmp) {
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
     }
   }, items2);
   let tmp3 = null;

@@ -7,6 +7,8 @@
 // Module 13170 (collectCallFeedback)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9114 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 9115 */;
 import VideoBackgroundStore from "VideoBackgroundStore" /* 9111 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
@@ -14,12 +16,14 @@ import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import UserStore from "UserStore" /* 1372 */;
 import AudioRouteStore from "AudioRouteStore" /* 9098 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_calls/collectCallFeedback.tsx");
 
 export default function collectCallFeedback(fn, arg1, arg2, videoEnabled) {
+  let duration_muted_ms;
+  let tmp5Result3;
+  let tmp5Result4;
   const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
   const channel = ChannelStore.getChannel(voiceChannelId);
   if (null == arg1) {
@@ -30,46 +34,43 @@ export default function collectCallFeedback(fn, arg1, arg2, videoEnabled) {
         if (rTCConnection != null) {
           voiceDurationStats = rTCConnection.getVoiceDurationStats();
         }
-        const obj = { channel_id: null, channel_type: null, guild_id: null, rtc_connection_id: null, duration: null, media_session_id: null };
+        const obj = { channel_id: null, channel_type: null, guild_id: channel.getGuildId(), rtc_connection_id: RTCConnectionStore.getRTCConnectionId(), duration: RTCConnectionStore.getDuration(), media_session_id: RTCConnectionStore.getMediaSessionId(), duration_muted_ms, output_audio_route_type: AudioRouteStore.getCurrentRouteType() };
         ({ id: obj4.channel_id, type: obj4.channel_type } = channel);
-        obj.guild_id = channel.getGuildId();
-        obj.rtc_connection_id = RTCConnectionStore.getRTCConnectionId();
-        obj.duration = RTCConnectionStore.getDuration();
-        obj.media_session_id = RTCConnectionStore.getMediaSessionId();
+        const getVoiceStateMetadata = AppAnalyticsUtils.getVoiceStateMetadata;
+        AppAnalyticsUtils;
         const guildId = obj2.getGuildId();
-        const merged = Object.assign(AppAnalyticsUtils.getVoiceStateMetadata(guildId, obj2.getChannelId(), videoEnabled));
-        let duration_muted_ms;
+        const merged = Object.assign(getVoiceStateMetadata(guildId, obj2.getChannelId(), videoEnabled));
+        duration_muted_ms = undefined;
         if (voiceDurationStats != null) {
           duration_muted_ms = voiceDurationStats.duration_muted_ms;
         }
         if (duration_muted_ms == null) {
           duration_muted_ms = null;
         }
-        obj.duration_muted_ms = duration_muted_ms;
-        obj.output_audio_route_type = AudioRouteStore.getCurrentRouteType();
         fn();
         if (VideoBackgroundStore.hasUsedBackgroundInCall) {
           const obj3 = {};
           const merged1 = Object.assign(obj);
-          const lastUsedVideoBackgroundOption = tmp5(9114).getLastUsedVideoBackgroundOption(UserStore.getCurrentUser());
+          const tmp5Result = LastUsedVideoBackgroundOption;
+          const lastUsedVideoBackgroundOption = tmp5Result.getLastUsedVideoBackgroundOption(UserStore.getCurrentUser());
           const videoDevices = MediaEngineStore.getVideoDevices();
-          const tmp22 = videoDevices[MediaEngineStore.getVideoDeviceId(MediaEngineStore)];
+          const tmp23 = videoDevices[MediaEngineStore.getVideoDeviceId(MediaEngineStore)];
           let name;
-          if (tmp22 != null) {
-            name = tmp22.name;
+          const obj9 = MediaEngineStore;
+          if (tmp23 != null) {
+            name = tmp23.name;
           }
-          const obj7 = { video_device_name: name, video_hardware_scaling_enabled: MediaEngineStore.getHardwareEncoding(), video_effect_type: null, video_effect_detail: null };
-          const tmp5Result = tmp5(9114);
-          obj7.video_effect_type = tmp5(9115).getEffectAnalyticsType(lastUsedVideoBackgroundOption);
-          const tmp5Result3 = tmp5(9115);
-          obj7.video_effect_detail = tmp5(9115).getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption);
-          const merged2 = Object.assign(obj7);
-          const tmp5Result4 = tmp5(9115);
-          const obj8 = { type: "VIDEO_BACKGROUND_SHOW_FEEDBACK", analyticsData: obj3 };
-          DispatcherDefault.dispatch(obj8);
+          const obj6 = { video_device_name: name, video_hardware_scaling_enabled: obj9.getHardwareEncoding(), video_effect_type: tmp5Result3.getEffectAnalyticsType(lastUsedVideoBackgroundOption), video_effect_detail: tmp5Result4.getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption) };
+          tmp5Result3 = VideoBackgroundUtils;
+          tmp5Result4 = VideoBackgroundUtils;
+          const merged2 = Object.assign(obj6);
+          const obj7 = { type: "VIDEO_BACKGROUND_SHOW_FEEDBACK", analyticsData: obj3 };
+          const obj13 = DispatcherDefault;
+          obj13.dispatch(obj7);
         } else {
-          const obj9 = { type: "VOICE_CHANNEL_SHOW_FEEDBACK", analyticsData: obj };
-          DispatcherDefault.dispatch(obj9);
+          const obj8 = { type: "VOICE_CHANNEL_SHOW_FEEDBACK", analyticsData: obj };
+          const obj5 = DispatcherDefault;
+          obj5.dispatch(obj8);
         }
       }
     }

@@ -5,159 +5,190 @@
 // Exports: VibegrationsConjureAvatar, VibegrationsConjureHeader, VibegrationsUserAvatar, VibegrationsUserHeader, useMessageAuthorUser
 
 // Module 16338 (VibegrationsMessageAuthor)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import AppsIcon from "AppsIcon" /* 5374 */;
-import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 16339 */;
+import AppsIcon2 from "AppsIcon" /* 5374 */;
+import VibegrationsNativeStatusLine from "VibegrationsNativeStatusLine" /* 16335 */;
 import VibegrationsMessageTime from "VibegrationsMessageTime" /* 16340 */;
 import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 16341 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let size;
 class VibegrationsMessageHeader {
   constructor(arg0) {
-    ({ name, onPressName } = global);
-    ({ color, at } = global);
-    tmp = closure_8();
-    tmp2 = closure_0;
-    tmp3 = closure_2;
-    obj = closure_0(closure_2[9]);
-    describeMessageTimeResult = obj.describeMessageTime(at);
-    tmp5 = jsx;
-    obj1 = { variant: "text-md/semibold", color, style: tmp.name, lineClamp: 1, children: name };
-    tmp6 = jsx(closure_0(closure_2[10]).Text, obj1);
-    obj7 = { style: tmp.header, children: null };
-    tmp5Result = tmp6;
-    tmp7 = jsxs;
-    tmp8 = View;
+    let at;
+    let color;
+    let intl;
+    let items;
+    let name;
+    let obj5;
+    let onPressName;
+    ({ name, onPressName } = arg0);
+    ({ color, at } = arg0);
+    const tmp = closure_8();
+    const obj = VibegrationsMessageTime;
+    const describeMessageTimeResult = obj.describeMessageTime(at);
+    const obj2 = { variant: "text-md/semibold", color, style: tmp.name, lineClamp: 1, children: name };
+    const tmp6 = metroRequire(Text_Text.Text, obj2);
+    let tmp5Result = tmp6;
+    const obj3 = { style: tmp.header, children: items };
+    const tmp7 = metroImportDefault;
+    const tmp8 = View;
     if (null != onPressName) {
-      obj8 = { style: null, onPress: null, onLongPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
-      obj8.style = tmp.name;
-      obj8.onPress = onPressName;
-      obj8.onLongPress = onPressName;
-      intl = tmp2(tmp3[12]).intl;
-      obj9 = { username: null };
-      obj9.username = name;
-      obj8.accessibilityLabel = intl.formatToPlainString(tmp2(tmp3[12]).t.uCenkh, obj9);
-      obj8.children = tmp6;
-      tmp5Result = tmp5(tmp2(tmp3[11]).PressableOpacity, obj8);
+      const obj4 = { style: tmp.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp6 };
+      const PressableOpacity = tmp2(5435).PressableOpacity;
+      intl = tmp2(1115).intl;
+      obj5 = { username: name };
+      tmp5Result = tmp5(PressableOpacity, obj4);
     }
-    items = [, ];
-    items[0] = tmp5Result;
-    tmp5Result1 = null;
+    items = [tmp5Result, ];
+    let tmp5Result2 = null;
     if (null != describeMessageTimeResult) {
-      obj10 = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
-      obj10.style = tmp.time;
-      obj10.children = describeMessageTimeResult;
-      tmp5Result1 = tmp5(tmp2(tmp3[10]).Text, obj10);
+      const obj6 = { variant: "text-xs/medium", color: "text-muted", style: tmp.time, children: describeMessageTimeResult };
+      tmp5Result2 = tmp5(tmp2(4832).Text, obj6);
     }
-    items[1] = tmp5Result1;
-    obj7.children = items;
-    return tmp7(tmp8, obj7);
+    items[1] = tmp5Result2;
+    return tmp7(tmp8, obj3);
   }
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { header: { flexDirection: "row", alignItems: "baseline", gap: nativeDefault.space.PX_8 }, name: { flexShrink: 1 }, time: { flexShrink: 0 }, conjureTile: null };
-let size = { width: fn(16335).MESSAGE_AVATAR_SIZE, height: fn(16335).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
-obj2.conjureTile = size;
-const React6 = createStyles.createStyles(obj2);
-size = fn(2);
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { header: obj2, name: { flexShrink: 1 }, time: { flexShrink: 0 }, conjureTile: size };
+obj2 = { flexDirection: "row", alignItems: "baseline", gap: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+size = { width: VibegrationsNativeStatusLine.MESSAGE_AVATAR_SIZE, height: VibegrationsNativeStatusLine.MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
+const metroImportAll = createStyles(obj);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsMessageAuthor.tsx");
 
 export const useMessageAuthorUser = function useMessageAuthorUser(userId) {
   _require = userId;
   const items = [userId];
-  const effect = noop.useEffect(() => vibegrationsMessageAuthors.requestMessageAuthor(stateFromStores), items);
+  const effect = react.useEffect(() => {
+    const obj = stateFromStores(dependencyMap[7]);
+    return obj.requestMessageAuthor(userId);
+  }, items);
   const items1 = [UserStore];
   const items2 = [userId];
-  return require("initialize").useStateFromStores(items1, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items1, () => {
     let user = null;
-    if (null != stateFromStores) {
-      user = UserStore.getUser(tmp);
+    const resolveMessageAuthor = stateFromStores(dependencyMap[7]).resolveMessageAuthor;
+    stateFromStores(dependencyMap[7]);
+    if (null != userId) {
+      user = authStore.getUser(tmp2);
     }
-    return vibegrationsMessageAuthors.resolveMessageAuthor(stateFromStores, user, UserStore.getCurrentUser());
+    return resolveMessageAuthor(userId, user, authStore.getCurrentUser());
   }, items2);
 };
 export { VibegrationsMessageHeader };
 export const VibegrationsUserHeader = function VibegrationsUserHeader(userId) {
   userId = userId.userId;
   let stateFromStores;
-  closure_129_0 = userId;
   const items = [userId];
-  const effect = noop.useEffect(() => vibegrationsMessageAuthors.requestMessageAuthor(stateFromStores), items);
+  const at = userId.at;
+  const effect = react.useEffect(() => {
+    const obj = stateFromStores(dependencyMap[7]);
+    return obj.requestMessageAuthor(userId);
+  }, items);
+  let obj = stateFromStores(504);
   const items1 = [UserStore];
   const items2 = [userId];
-  stateFromStores = stateFromStores(504).useStateFromStores(items1, () => {
+  stateFromStores = obj.useStateFromStores(items1, () => {
     let user = null;
-    if (null != stateFromStores) {
-      user = UserStore.getUser(tmp);
+    const resolveMessageAuthor = stateFromStores(dependencyMap[7]).resolveMessageAuthor;
+    stateFromStores(dependencyMap[7]);
+    if (null != userId) {
+      user = authStore.getUser(tmp2);
     }
-    return vibegrationsMessageAuthors.resolveMessageAuthor(stateFromStores, user, UserStore.getCurrentUser());
+    return resolveMessageAuthor(userId, user, authStore.getCurrentUser());
   }, items2);
-  let obj = stateFromStores(504);
-  const name = stateFromStores(4678).useName(stateFromStores);
+  const obj2 = stateFromStores(4678);
+  const name = obj2.useName(stateFromStores);
   [][0] = stateFromStores;
   let tmp5 = null;
   if (null != stateFromStores) {
     tmp5 = null;
     if (null != name) {
-      const obj3 = { name, color: "text-default", at: userId.at, onPressName: tmp4 };
+      const obj3 = { name, color: "text-default", at, onPressName: tmp4 };
       tmp5 = closure_6(VibegrationsMessageHeader, obj3);
     }
   }
   return tmp5;
 };
 export const VibegrationsConjureHeader = function VibegrationsConjureHeader(arg0) {
-  const obj = { name: null, color: "text-brand", at: null };
-  const intl = util.intl;
-  obj.name = intl.string(_modDef3715.Xmvb23);
-  obj.at = arg0.at;
-  return timestampProducer(VibegrationsMessageHeader, obj);
+  let at;
+  let intl;
+  const obj = { name: intl.string(_modDef3715.Xmvb23), color: "text-brand", at };
+  at = arg0.at;
+  intl = intl2.intl;
+  return metroRequire(VibegrationsMessageHeader, obj);
 };
 export const VibegrationsUserAvatar = function VibegrationsUserAvatar(arg0) {
+  let intl;
+  let obj3;
+  let stateFromStores;
+  let userId;
   ({ userId, size } = arg0);
   if (size === undefined) {
+    const tmp = stateFromStores;
+    const tmp2 = dependencyMap;
     size = stateFromStores(1177).AvatarSizes.NORMAL;
   }
   stateFromStores = undefined;
-  closure_129_0 = userId;
   const items = [userId];
-  const effect = noop.useEffect(() => vibegrationsMessageAuthors.requestMessageAuthor(stateFromStores), items);
+  const effect = react.useEffect(() => {
+    const obj = stateFromStores(dependencyMap[7]);
+    return obj.requestMessageAuthor(userId);
+  }, items);
+  let obj = stateFromStores(504);
   const items1 = [UserStore];
   const items2 = [userId];
-  stateFromStores = stateFromStores(504).useStateFromStores(items1, () => {
+  stateFromStores = obj.useStateFromStores(items1, () => {
     let user = null;
-    if (null != stateFromStores) {
-      user = UserStore.getUser(tmp);
+    const resolveMessageAuthor = stateFromStores(dependencyMap[7]).resolveMessageAuthor;
+    stateFromStores(dependencyMap[7]);
+    if (null != userId) {
+      user = authStore.getUser(tmp2);
     }
-    return vibegrationsMessageAuthors.resolveMessageAuthor(stateFromStores, user, UserStore.getCurrentUser());
+    return resolveMessageAuthor(userId, user, authStore.getCurrentUser());
   }, items2);
   const items3 = [stateFromStores];
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     if (null != stateFromStores) {
-      const result = VibegrationsMessageActionSheet.openMessageAuthorProfile(tmp.id);
+      const obj = VibegrationsMessageActionSheet;
+      const result = obj.openMessageAuthorProfile(tmp.id);
     }
   }, items3);
   let tmp8 = null;
   if (null != stateFromStores) {
-    const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: null, children: null };
-    const intl = tmp4(1115).intl;
-    obj2.accessibilityLabel = intl.string(tmp4(1115).t.iXAna6);
-    const obj3 = { size, user: stateFromStores, guildId: "Array" };
-    obj2.children = closure_6(tmp4(1177).Avatar, obj3);
-    tmp8 = closure_6(tmp4(5435).PressableOpacity, obj2);
+    const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(stateFromStores(1115).t.iXAna6), children: closure_6(stateFromStores(1177).Avatar, obj3) };
+    const PressableOpacity = tmp4(5435).PressableOpacity;
+    intl = tmp4(1115).intl;
+    obj3 = { size, user: stateFromStores, guildId: "Array" };
+    tmp8 = closure_6(PressableOpacity, obj2);
   }
   return tmp8;
 };
 export const VibegrationsConjureAvatar = function VibegrationsConjureAvatar() {
-  const obj = { style: closure_8().conjureTile, children: timestampProducer(AppsIcon.AppsIcon, { size: "sm", color: nativeDefault.colors.TEXT_BRAND }) };
-  return timestampProducer(View, obj);
+  let AppsIcon;
+  let obj2;
+  const obj = { style: closure_8().conjureTile, children: metroRequire(AppsIcon, obj2) };
+  obj2 = { size: "sm", color: nativeDefault.colors.TEXT_BRAND };
+  AppsIcon = AppsIcon2.AppsIcon;
+  return metroRequire(View, obj);
 };

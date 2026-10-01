@@ -3,15 +3,15 @@
 // Dependencies: [41, 42, 9965, 9896]
 
 // Module 9969
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9896 */;
+import NUMBER from "NUMBER" /* 9965 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-const JPSlashDateFormatParser = require;
 const regExp = new RegExp("([0-9\uFF10-\uFF19]{4}[\\/|\\\uFF0F])?([0-1\uFF10-\uFF11]{0,1}[0-9\uFF10-\uFF19]{1})(?:[\\/|\\\uFF0F]([0-3\uFF10-\uFF13]{0,1}[0-9\uFF10-\uFF19]{1}))", "i");
 class JPSlashDateFormatParser {
   constructor() {
-    tmp = c2(this, JPSlashDateFormatParser);
-    return;
+    _classCallCheck(this, JPSlashDateFormatParser);
   }
 }
 const entry = {
@@ -26,8 +26,8 @@ const items = [
     key: "extract",
     value: function extract(createParsingComponents, arg1) {
       const parsingComponents = createParsingComponents.createParsingComponents();
-      const parsed = parseInt(JPSlashDateFormatParser(9965).toHankaku(arg1[2]));
-      const parsed1 = parseInt(JPSlashDateFormatParser(9965).toHankaku(arg1[3]));
+      const parsed = parseInt(NUMBER.toHankaku(arg1[2]));
+      const parsed1 = parseInt(NUMBER.toHankaku(arg1[3]));
       if (parsed >= 1) {
         if (parsed <= 12) {
           if (parsed1 >= 1) {
@@ -37,9 +37,9 @@ const items = [
               if (arg1[1]) {
                 const _parseInt = parseInt;
                 const parsed2 = parseInt(tmp(9965).toHankaku(arg1[1]));
-                parsingComponents.assign("year", tmp(9896).findMostLikelyADYear(parsed2));
+                parsingComponents.assign("year", findMostLikelyADYear.findMostLikelyADYear(parsed2));
               } else {
-                parsingComponents.imply("year", tmp(9896).findYearClosestToRef(createParsingComponents.reference.instant, parsed1, parsed));
+                parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.reference.instant, parsed1, parsed));
               }
               return parsingComponents;
             }

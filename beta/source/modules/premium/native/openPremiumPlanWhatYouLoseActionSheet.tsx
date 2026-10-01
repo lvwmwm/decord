@@ -5,13 +5,15 @@
 // Exports: default
 
 // Module 12915 (openPremiumPlanWhatYouLoseActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/native/openPremiumPlanWhatYouLoseActionSheet.tsx");
 
 export default function openPremiumPlanWhatYouLoseActionSheet(arg0) {
-  ActionSheetActionCreatorsDefault.hideActionSheet();
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12916, dependencyMap.paths), "PremiumPlanWhatYouLoseActionSheet", arg0);
+  const obj = ActionSheetActionCreatorsDefault;
+  obj.hideActionSheet();
+  const obj2 = ActionSheetActionCreatorsDefault;
+  obj2.openLazy(asyncRequire(12916, dependencyMap.paths), "PremiumPlanWhatYouLoseActionSheet", arg0);
 };

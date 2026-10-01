@@ -5,44 +5,57 @@
 // Exports: default
 
 // Module 14185 (useProfileEffectSections)
-import util from "util" /* 1115 */;
+import react from "react" /* 19 */;
+import intl4 from "intl" /* 1115 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6977 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const useMemo = fn(19).useMemo;
+let premium_purchase;
+
+let _slicedToArray = _slicedToArray_mod;
+const useMemo = react.useMemo;
 const Section = { PURCHASE: "purchase", PREMIUM_PURCHASE: "premium_purchase", PREVIEW: "preview" };
 let obj2 = { skuId: "None" };
 let obj3 = { skuId: "Shop" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/profile_effects/useProfileEffectSections.tsx");
 
 export default function useProfileEffectSections() {
-  let items = [CollectiblesPurchaseStore];
-  stateFromStores = stateFromStores(first[4]).useStateFromStores(items, () => purchases.purchases);
+  let closure_2;
+  let first;
+  let purchases;
+  let stateFromStores;
+  let tmp4;
   let obj = stateFromStores(first[4]);
+  let items = [CollectiblesPurchaseStore];
+  stateFromStores = obj.useStateFromStores(items, () => purchases.purchases);
+  obj2 = stateFromStores(first[4]);
   let items1 = [CollectiblesCategoryStore];
-  const tmp2 = _slicedToArray(stateFromStores(first[4]).useStateFromStoresArray(items1, () => {
+  [first, tmp4] = obj2.useStateFromStoresArray(items1, () => {
     const items = [, ];
     ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
     return items;
-  }), 2);
-  first = tmp2[0];
+  });
   _slicedToArray = tmp4;
-  const items2 = [first, tmp2[1], stateFromStores];
+  const items2 = [first, tmp4, stateFromStores];
   return useMemo(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    let items;
     let obj = CollectiblesUtils;
     const profileEffects = obj.getProfileEffects(stateFromStores, first);
     const reduced = profileEffects.reduce((premium_purchase, skuId) => {
-      value = closure_1_0.get(skuId.skuId);
+      let result;
+      const value = closure_1_0.get(skuId.skuId);
       if (null != value) {
-        let result = stateFromStores(first[5]).isPremiumCollectiblesPurchase(value);
         obj2 = stateFromStores(first[5]);
+        result = obj2.isPremiumCollectiblesPurchase(value);
       } else {
-        result = stateFromStores(first[5]).isPremiumCollectiblesProduct(closure_1_2.get(skuId.skuId));
         const obj = stateFromStores(first[5]);
+        result = obj.isPremiumCollectiblesProduct(closure_1_2.get(skuId.skuId));
       }
       if (result) {
         premium_purchase = premium_purchase.premium_purchase;
@@ -56,19 +69,15 @@ export default function useProfileEffectSections() {
       }
       return premium_purchase;
     }, { purchase: [], premium_purchase: [], preview: [] });
-    obj2 = { section: obj.PURCHASE, items: null, height: 12, header: null };
-    const items = [obj2, obj3, ...reduced.purchase];
-    obj2.items = items;
-    const intl = util.intl;
-    obj2.header = intl.string(util.t["9x1v/p"]);
+    obj2 = { section: obj.PURCHASE, items, height: 12, header: intl.string(intl4.t["9x1v/p"]) };
+    items = [obj2, obj3, ...reduced.purchase];
+    intl = intl4.intl;
     const items1 = [obj2, , ];
-    obj3 = { section: obj.PREMIUM_PURCHASE, items: reduced.premium_purchase, height: 12, header: null };
-    const intl2 = util.intl;
-    obj3.header = intl2.string(util.t.TiLCgw);
+    obj3 = { section: obj.PREMIUM_PURCHASE, items: reduced.premium_purchase, height: 12, header: intl2.string(intl4.t.TiLCgw) };
+    intl2 = intl4.intl;
     items1[1] = obj3;
-    const obj4 = { section: obj.PREVIEW, items: reduced.preview, height: 12, header: null };
-    const intl3 = util.intl;
-    obj4.header = intl3.string(util.t["1vbbee"]);
+    const obj4 = { section: obj.PREVIEW, items: reduced.preview, height: 12, header: intl3.string(intl4.t["1vbbee"]) };
+    intl3 = intl4.intl;
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);

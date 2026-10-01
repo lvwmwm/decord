@@ -5,30 +5,34 @@
 // Exports: default
 
 // Module 15783 (useFavoritesGuildHeaderAction)
+import Constants from "Constants" /* 1074 */;
 import router_utils from "router_utils" /* 1101 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef3361 from "module_3361" /* 3361 */;
 import FavoritesHooks from "FavoritesHooks" /* 9685 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Routes = fn(1074).Routes;
-const size = fn(2);
+const Routes = Constants.Routes;
 const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHeaderAction.tsx");
 
 export default function useFavoritesGuildHeaderAction() {
-  const hasAccess = FavoritesHooks.useFavoritesAccess().hasAccess;
-  const obj2 = { isPreview: !hasAccess, label: null, exitPreview: null };
-  const callback = noop.useCallback(() => {
-    router_utils.transitionTo(constants.ME);
+  let callback;
+  let ojM1xJ;
+  let string;
+  let obj = FavoritesHooks;
+  const hasAccess = obj.useFavoritesAccess().hasAccess;
+  const obj2 = { isPreview: !hasAccess, label: string(ojM1xJ), exitPreview: callback };
+  callback = react.useCallback(() => {
+    const obj = router_utils;
+    obj.transitionTo(constants.ME);
   }, []);
-  const intl = util.intl;
+  const intl = intl2.intl;
+  string = intl.string;
   if (hasAccess) {
-    let ojM1xJ = _modDef3361.G9fGlP;
+    ojM1xJ = _modDef3361.G9fGlP;
   } else {
-    ojM1xJ = util.t.ojM1xJ;
+    ojM1xJ = intl2.t.ojM1xJ;
   }
-  obj2.label = intl.string(ojM1xJ);
-  obj2.exitPreview = callback;
   return obj2;
 };

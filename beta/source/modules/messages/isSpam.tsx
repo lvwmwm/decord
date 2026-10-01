@@ -7,19 +7,16 @@
 // Module 6927 (isSpam)
 import AutomodMessageUtils from "AutomodMessageUtils" /* 6928 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let c3;
+let closure_4;
 ({ UserFlags: c3, ChannelTypes: closure_4 } = Constants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/isSpam.tsx");
 
 export const isSpamSupported = function isSpamSupported(type) {
-  let tmp = undefined !== type;
-  if (tmp) {
-    tmp = type.type !== constants2.DM;
-  }
-  return tmp;
+  return undefined !== type && type.type !== constants2.DM;
 };
 export const isSpammer = function isSpammer(userId) {
   const user = UserStore.getUser(userId);
@@ -42,7 +39,8 @@ export const isSpam = function isSpam(author) {
     flag = false;
   }
   if (flag) {
-    flag = !AutomodMessageUtils.isAutomodMessageRecord(author);
+    const obj2 = AutomodMessageUtils;
+    flag = !obj2.isAutomodMessageRecord(author);
   }
   return flag;
 };

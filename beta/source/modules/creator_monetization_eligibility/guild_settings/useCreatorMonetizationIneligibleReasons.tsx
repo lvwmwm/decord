@@ -15,8 +15,9 @@ export const useCreatorMonetizationIneligibleReasons = function useCreatorMoneti
   let flatMapResult;
   if (obj != null) {
     flatMapResult = obj.flatMap((checked) => {
+      let items;
       if (checked.checked) {
-        let items = [];
+        items = [];
       } else {
         items = [checked.key];
       }

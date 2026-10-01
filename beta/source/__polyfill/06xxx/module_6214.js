@@ -4,26 +4,34 @@
 // Exports: useGestureHandler
 
 // Module 6214
-import value2 from "value2" /* 6046 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 6046 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
 
 const require = globalThis.__r;
+let dependencyMap, tmp, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, tmp8;
 
-require = arg1;
-let dependencyMap = arg6;
 let __initData = { code: "function pnpm_useGestureHandlerTs1(event){const{state,State,gestureSource,source,onStart}=this.__closure;state.value=State.BEGAN;gestureSource.value=source;onStart(source,event);return;}" };
 let __initData2 = { code: "function pnpm_useGestureHandlerTs2(event){const{gestureSource,source,state,onChange}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;onChange(source,event);}" };
 let __initData3 = { code: "function pnpm_useGestureHandlerTs3(event){const{gestureSource,source,state,GESTURE_SOURCE,onEnd}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;gestureSource.value=GESTURE_SOURCE.UNDETERMINED;onEnd(source,event);}" };
 let __initData4 = { code: "function pnpm_useGestureHandlerTs4(event){const{gestureSource,source,state,GESTURE_SOURCE,onFinalize}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;gestureSource.value=GESTURE_SOURCE.UNDETERMINED;onFinalize(source,event);}" };
 
 export const useGestureHandler = (source, state, gestureSource, onStart, onChange, onEnd, onFinalize) => {
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let obj2;
+  let obj4;
+  let obj5;
+  let obj7;
   const _require = source;
   dependencyMap = state;
   __initData = gestureSource;
   __initData2 = onStart;
   __initData3 = onChange;
   __initData4 = onEnd;
-  const obj = { handleOnStart: null, handleOnChange: null, handleOnEnd: null, handleOnFinalize: null };
+  const obj = { handleOnStart: obj2.useWorkletCallback(R, items), handleOnChange: obj4.useWorkletCallback(U, items1), handleOnEnd: obj5.useWorkletCallback(C, items2), handleOnFinalize: obj7.useWorkletCallback(T, items3) };
+  obj2 = require("module_1638");
   class R {
     constructor(arg0) {
       closure_1.value = closure_0(closure_1[1]).State.BEGAN;
@@ -32,13 +40,12 @@ export const useGestureHandler = (source, state, gestureSource, onStart, onChang
       return;
     }
   }
-  const obj2 = require("cancelAnimation");
   R.__closure = { state, State: require("LegacyBaseButton").State, gestureSource, source, onStart };
   R.__workletHash = 16113572067379;
   R.__initData = __initData;
-  const items = [state, gestureSource, source, onStart];
-  obj.handleOnStart = obj2.useWorkletCallback(R, items);
-  const obj3 = { state, State: require("LegacyBaseButton").State, gestureSource, source, onStart };
+  items = [state, gestureSource, source, onStart];
+  ({ state, State: require("LegacyBaseButton").State, gestureSource, source, onStart });
+  obj4 = require("module_1638");
   class U {
     constructor(arg0) {
       if (closure_2.value === closure_0) {
@@ -54,9 +61,8 @@ export const useGestureHandler = (source, state, gestureSource, onStart, onChang
   U.__closure = { gestureSource, source, state, onChange };
   U.__workletHash = 9050442757159;
   U.__initData = __initData2;
-  const items1 = [state, gestureSource, source, onChange];
-  obj.handleOnChange = require("cancelAnimation").useWorkletCallback(U, items1);
-  const obj4 = require("cancelAnimation");
+  items1 = [state, gestureSource, source, onChange];
+  obj5 = require("module_1638");
   class C {
     constructor(arg0) {
       if (closure_2.value === closure_0) {
@@ -72,13 +78,12 @@ export const useGestureHandler = (source, state, gestureSource, onStart, onChang
       return;
     }
   }
-  const obj5 = require("cancelAnimation");
-  C.__closure = { gestureSource, source, state, GESTURE_SOURCE: require("value2").GESTURE_SOURCE, onEnd };
+  C.__closure = { gestureSource, source, state, GESTURE_SOURCE: require("GESTURE_SOURCE").GESTURE_SOURCE, onEnd };
   C.__workletHash = 10682034812271;
   C.__initData = __initData3;
-  const items2 = [state, gestureSource, source, onEnd];
-  obj.handleOnEnd = obj5.useWorkletCallback(C, items2);
-  const obj6 = { gestureSource, source, state, GESTURE_SOURCE: require("value2").GESTURE_SOURCE, onEnd };
+  items2 = [state, gestureSource, source, onEnd];
+  ({ gestureSource, source, state, GESTURE_SOURCE: require("GESTURE_SOURCE").GESTURE_SOURCE, onEnd });
+  obj7 = require("module_1638");
   class T {
     constructor(arg0) {
       if (closure_2.value === closure_0) {
@@ -94,11 +99,10 @@ export const useGestureHandler = (source, state, gestureSource, onStart, onChang
       return;
     }
   }
-  const obj7 = require("cancelAnimation");
-  T.__closure = { gestureSource, source, state, GESTURE_SOURCE: require("value2").GESTURE_SOURCE, onFinalize };
+  T.__closure = { gestureSource, source, state, GESTURE_SOURCE: require("GESTURE_SOURCE").GESTURE_SOURCE, onFinalize };
   T.__workletHash = 9696716573416;
   T.__initData = __initData4;
-  const items3 = [state, gestureSource, source, onFinalize];
-  obj.handleOnFinalize = obj7.useWorkletCallback(T, items3);
+  items3 = [state, gestureSource, source, onFinalize];
+  ({ gestureSource, source, state, GESTURE_SOURCE: require("GESTURE_SOURCE").GESTURE_SOURCE, onFinalize });
   return obj;
 };

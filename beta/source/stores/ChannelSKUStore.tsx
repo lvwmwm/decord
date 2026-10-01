@@ -4,18 +4,22 @@
 // Dependencies: [504, 573, 2]
 
 // Module 13288 (ChannelSKUStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import size from "module_2" /* 2 */;
 
-let closure_0 = {};
-const Store = initializeDefault.Store;
+let closure_0;
+
+const React = {};
+const Store = get_initializedDefault.Store;
 class ChannelSKUStore extends Store {
+  getSkuIdForChannel(arg0) {
+    return closure_0[arg0];
+  }
 }
-ChannelSKUStore.prototype["getSkuIdForChannel"] = function getSkuIdForChannel(arg0) {
-  return closure_0[arg0];
-};
+const prototype = ChannelSKUStore.prototype;
 ChannelSKUStore.displayName = "ChannelSKUStore";
-const channelSKUStore = new ChannelSKUStore(DispatcherDefault, {
+const obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
     closure_0 = {};
   },
@@ -25,8 +29,8 @@ const channelSKUStore = new ChannelSKUStore(DispatcherDefault, {
       closure_0[channelId] = tmp.sku.id;
     }
   }
-});
-const size = fn(2);
+};
+const channelSKUStore = new ChannelSKUStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/ChannelSKUStore.tsx");
 
 export default channelSKUStore;

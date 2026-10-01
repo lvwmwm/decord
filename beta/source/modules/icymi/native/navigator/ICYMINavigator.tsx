@@ -5,40 +5,48 @@
 // Exports: default
 
 // Module 16088 (ICYMINavigator)
-import jsxProd from "jsxProd" /* 21 */;
-import NativeStackNavigator from "NativeStackNavigator" /* 7339 */;
+import Fragment from "Fragment" /* 21 */;
+import NativeStackView from "NativeStackView" /* 7339 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-({ jsx: c2, jsxs: c3 } = jsxProd);
-let closure_4 = NativeStackNavigator.createNativeStackNavigator();
+let c2;
+let c3;
+({ jsx: c2, jsxs: c3 } = Fragment);
+let closure_4 = NativeStackView.createNativeStackNavigator();
 const result = size.fileFinishedImporting("modules/icymi/native/navigator/ICYMINavigator.tsx");
 
 export default function ICYMINavigator() {
-  _require = require("Navigator").useAccessibilityNativeStackOptions();
+  let closure_0;
+  let items;
+  let obj = require("Navigator");
+  _require = obj.useAccessibilityNativeStackOptions();
+  const Navigator = closure_4.Navigator;
   const obj2 = {
     screenOptions() {
+      const obj = { headerShown: false, fullScreenGestureEnabled: true };
       const merged = Object.assign(closure_0);
-      return { headerShown: false, fullScreenGestureEnabled: true };
+      return obj;
     },
     initialRouteName: "icymi-screen",
-    children: null
+    children: items
   };
-  const items = [
-    closure_2(closure_4.Screen, {
-      name: "icymi-screen",
-      getComponent() {
-        return closure_0(16089).ICYMITab;
-      }
-    }),
-    closure_2(closure_4.Screen, {
-      name: "notifications-screen",
-      getComponent() {
-        return closure_0(16038).ThemedNotificationsModal;
-      }
-    })
-  ];
-  obj2.children = items;
-  return closure_3(closure_4.Navigator, obj2);
+  items = [, ];
+  const obj3 = {
+    name: "icymi-screen",
+    getComponent() {
+      return closure_0(dependencyMap[3]).ICYMITab;
+    }
+  };
+  items[0] = closure_2(closure_4.Screen, obj3);
+  const obj4 = {
+    name: "notifications-screen",
+    getComponent() {
+      return closure_0(dependencyMap[4]).ThemedNotificationsModal;
+    }
+  };
+  items[1] = closure_2(closure_4.Screen, obj4);
+  return closure_3(Navigator, obj2);
 };

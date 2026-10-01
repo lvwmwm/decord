@@ -5,30 +5,38 @@
 // Exports: default
 
 // Module 16969 (ActivitiesDebugOverlay)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useThermalState from "useThermalState" /* 8781 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import ColorUtils_mod from "ColorUtils" /* 4683 */;
+import size from "module_2" /* 2 */;
 
 const useThermalStateDefault = useThermalState;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsxs: closure_4, jsx: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-const obj2 = { container: null, row: null };
-let rect = { position: "absolute", top: 0, left: 0, backgroundColor: null, paddingRight: 16, paddingBottom: 16 };
-const ColorUtils = fn(4683);
-rect.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.7);
-obj2.container = rect;
-obj2.row = { flexDirection: "row" };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let ColorUtils;
+let closure_4;
+let hasOwnProperty;
+let rect;
+let tmp2;
+const useSafeAreaInsetsDefault = tmp2(1613);
+const View = react_native.View;
+({ jsxs: closure_4, jsx: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: rect, row: { flexDirection: "row" } };
+rect = { position: "absolute", top: 0, left: 0, backgroundColor: ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.7), paddingRight: 16, paddingBottom: 16 };
+createStyles = createStyles.createStyles;
+ColorUtils = ColorUtils_mod;
+let closure_6 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/activities/native/ActivitiesDebugOverlay.tsx");
 
 export default function ActivitiesDebugOverlay() {
+  let items;
+  let items1;
+  let obj3;
   const tmp = closure_6();
   const tmp4 = useThermalStateDefault();
   let str = "text-overlay-light";
@@ -36,14 +44,14 @@ export default function ActivitiesDebugOverlay() {
   if (useThermalState.ThermalStates.UNHANDLED !== tmp4) {
     str = "text-feedback-positive";
     str2 = "nominal";
-    if (tmp5(8781).ThermalStates.NOMINAL !== tmp4) {
+    if (useThermalState.ThermalStates.NOMINAL !== tmp4) {
       str = "text-feedback-warning";
       str2 = "fair";
-      if (tmp5(8781).ThermalStates.FAIR !== tmp4) {
+      if (useThermalState.ThermalStates.FAIR !== tmp4) {
         str2 = "serious";
         str = "text-feedback-critical";
-        if (tmp5(8781).ThermalStates.SERIOUS !== tmp4) {
-          if (tmp5(8781).ThermalStates.CRITICAL === tmp4) {
+        if (useThermalState.ThermalStates.SERIOUS !== tmp4) {
+          if (useThermalState.ThermalStates.CRITICAL === tmp4) {
             str2 = "critical";
             str = "text-feedback-critical";
           }
@@ -52,12 +60,11 @@ export default function ActivitiesDebugOverlay() {
     }
   }
   const rect = useSafeAreaInsetsDefault();
-  const obj = { style: null, pointerEvents: "none", children: null };
-  const items = [tmp.container, { paddingTop: rect.top + 16, paddingLeft: rect.left + 16 }];
-  obj.style = items;
-  const obj3 = { style: tmp.row, children: null };
-  const items1 = [React4(Text_Text.Text, { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] }), hasOwnProperty(Text_Text.Text, { variant: "text-md/normal", color: str, children: str2 })];
-  obj3.children = items1;
-  obj.children = React4(View, obj3);
+  const obj = { style: items, pointerEvents: "none", children: React3(View, obj3) };
+  items = [tmp.container, ];
+  const obj2 = { paddingTop: rect.top + 16, paddingLeft: rect.left + 16 };
+  items[1] = obj2;
+  obj3 = { style: tmp.row, children: items1 };
+  items1 = [React3(Text_Text.Text, { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] }), hasOwnProperty(Text_Text.Text, { variant: "text-md/normal", color: str, children: str2 })];
   return hasOwnProperty(View, obj);
 };

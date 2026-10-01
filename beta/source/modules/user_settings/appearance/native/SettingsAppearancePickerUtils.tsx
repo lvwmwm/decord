@@ -6,17 +6,19 @@
 
 // Module 14846 (SettingsAppearancePickerUtils)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1115 */;
 import getSystemThemeDefault from "getSystemTheme" /* 1219 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1230 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
 import utils_ColorDefault from "utils/Color" /* 4684 */;
 import MobileThemesUtils from "MobileThemesUtils" /* 4764 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function getMaxColors() {
-  const allMobileThemes = MobileThemesUtils.getAllMobileThemes();
+  const obj = MobileThemesUtils;
+  const allMobileThemes = obj.getAllMobileThemes();
   let num = 0;
   const iter = allMobileThemes[Symbol.iterator]();
   const nextResult = iter.next();
@@ -39,46 +41,57 @@ function getMaxColors() {
   return num;
 }
 function convertBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
-  closure_1 = prop;
-  closure_2 = prop1;
-  let obj = { theme: theme.theme, name: theme.getName(), midpointPercentage: null, angle: null, colors: null };
-  let num = theme.midpointPercentage;
+  let items;
+  let num;
+  let num2;
+  let num4;
+  let closure_1 = prop;
+  let closure_2 = prop1;
+  let obj = { theme: theme.theme, name: theme.getName(), midpointPercentage: num, angle: num2, colors: items };
+  num = theme.midpointPercentage;
   if (num == null) {
     num = 50;
   }
-  obj.midpointPercentage = num;
-  let num2 = theme.angle;
+  num2 = theme.angle;
   if (num2 == null) {
     num2 = 0;
   }
-  obj.angle = num2;
   const colors = theme.colors;
-  const mapped = colors.map((stop) => {
-    const tmp6 = utils_ColorDefault;
+  const mapped = colors.map(function(stop) {
+    let b;
+    let g;
+    let mixColorsResult;
+    let r;
+    let tmp72;
+    const tmp3 = nativeDefault.unsafe_rawColors[stop.token];
+    const tmp7 = utils_ColorDefault;
+    const self = this;
     if ("light" !== theme.theme) {
-      let tmp62 = new tmp6(0, 0, 0, tmp3);
+      tmp72 = new tmp7(0, 0, 0, tmp4);
     } else {
-      tmp62 = new tmp6(255, 255, 255, tmp4);
+      tmp72 = new tmp7(255, 255, 255, tmp5);
     }
-    ({ r, g, b } = ColorUtils.hexToRgb(nativeDefault.unsafe_rawColors[stop.token]));
+    const obj = ColorUtils;
+    ({ r, g, b } = obj.hexToRgb(tmp3));
     let num8 = 0.2;
+    obj.hexToRgb(tmp3);
     if ("light" !== theme.theme) {
       num8 = 0.3;
     }
-    const obj2 = { hex: null, stop: null };
-    const hexToRgbResult = ColorUtils.hexToRgb(nativeDefault.unsafe_rawColors[stop.token]);
-    const tmp13Result = ColorUtils;
-    const tmp15 = new utils_ColorDefault(r, g, b, num8);
-    obj2.hex = tmp13Result.mixColors(tmp62, new utils_ColorDefault(r, g, b, num8)).toHexString();
-    obj2.stop = stop.stop;
+    const obj2 = { hex: mixColorsResult.toHexString(), stop: stop.stop };
+    const mixColors = tmp13(4683).mixColors;
+    ColorUtils;
+    const tmp16 = new utils_ColorDefault(r, g, b, num8);
+    mixColorsResult = mixColors(tmp72, tmp16);
     return obj2;
   });
   let num3 = getMaxColors();
   if (num3 === undefined) {
     num3 = 5;
   }
-  const items = [];
+  items = [];
   for (let num4 = 0; num4 < num3; num4 = num4 + 1) {
+    let tmp = num4;
     if (num4 < mapped.length) {
       let arr = items.push(mapped[num4]);
     } else {
@@ -86,29 +99,32 @@ function convertBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
       let arr2 = items.push(obj2);
     }
   }
-  obj.colors = items;
   return obj;
 }
 function convertStandardThemeToAnimatedTheme(theme, items, BACKGROUND_SURFACE_HIGH) {
+  let DARK;
+  let items1;
+  let num2;
   theme = theme.theme;
   if (ThemeTypes.LIGHT === theme) {
-    let DARK = tmp.LIGHT;
-  } else if (tmp.ASH === theme) {
+    DARK = tmp.LIGHT;
+  } else if (ThemeTypes.ASH === theme) {
     DARK = tmp.ASH;
-  } else if (tmp.DARK === theme) {
+  } else if (ThemeTypes.DARK === theme) {
     DARK = tmp.DARK;
   } else {
     DARK = tmp.ONYX === theme ? tmp.ONYX : tmp.LIGHT;
   }
   const internal = nativeDefault.internal;
-  const semanticColor = internal.resolveSemanticColor(DARK, BACKGROUND_SURFACE_HIGH, { enabledExperiments: items });
-  const obj2 = { theme: theme.theme, name: theme.getName(), midpointPercentage: 50, angle: 0, colors: null };
+  const obj = { enabledExperiments: items };
+  const semanticColor = internal.resolveSemanticColor(DARK, BACKGROUND_SURFACE_HIGH, obj);
   items = [{ hex: semanticColor, stop: 20 }, { hex: semanticColor, stop: 40 }, { hex: semanticColor, stop: 60 }, { hex: semanticColor, stop: 80 }, { hex: semanticColor, stop: 100 }];
+  const obj2 = { theme: theme.theme, name: theme.getName(), midpointPercentage: 50, angle: 0, colors: items1 };
   let num = getMaxColors();
   if (num === undefined) {
     num = 5;
   }
-  const items1 = [];
+  items1 = [];
   for (let num2 = 0; num2 < num; num2 = num2 + 1) {
     if (num2 < items.length) {
       let arr = items1.push(items[num2]);
@@ -117,51 +133,62 @@ function convertStandardThemeToAnimatedTheme(theme, items, BACKGROUND_SURFACE_HI
       let arr2 = items1.push(obj3);
     }
   }
-  obj2.colors = items1;
   return obj2;
 }
 function convertCustomBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
-  closure_1 = prop;
-  closure_2 = prop1;
-  let obj = { theme: theme.theme, name: theme.getName(), midpointPercentage: 50, angle: null, colors: null };
-  let num = theme.customThemeSettings.gradientAngle;
+  let items;
+  let num;
+  let num3;
+  let closure_1 = prop;
+  let closure_2 = prop1;
+  let obj = { theme: theme.theme, name: theme.getName(), midpointPercentage: 50, angle: num, colors: items };
+  num = theme.customThemeSettings.gradientAngle;
   if (num == null) {
     num = 0;
   }
-  obj.angle = num;
   const colors = theme.customThemeSettings.colors;
-  const mapped = colors.map((item, index) => {
+  const mapped = colors.map(function(item, index) {
+    let b;
+    let g;
+    let mixColorsResult;
+    let num9;
+    let r;
+    let tmp11;
+    let tmp72;
     const tmp7 = utils_ColorDefault;
+    const self = this;
     if ("light" !== theme.theme) {
-      let tmp72 = new tmp7(0, 0, 0, tmp2);
-      let tmp12 = tmp5;
+      tmp72 = new tmp7(0, 0, 0, tmp2);
+      tmp11 = tmp5;
     } else {
       tmp72 = new tmp7(255, 255, 255, tmp3);
-      tmp12 = tmp5;
+      tmp11 = tmp5;
     }
-    ({ r, g, b } = ColorUtils.hexToRgb(item));
+    const obj = ColorUtils;
+    ({ r, g, b } = obj.hexToRgb(item));
     let num8 = 0.2;
+    obj.hexToRgb(item);
     if ("light" !== theme.theme) {
       num8 = 0.3;
     }
-    const obj2 = { hex: null, stop: null };
-    const hexToRgbResult = ColorUtils.hexToRgb(item);
-    const tmp16Result = ColorUtils;
-    const tmp18 = new tmp12(4684)(r, g, b, num8);
-    obj2.hex = tmp16Result.mixColors(tmp72, new tmp12(4684)(r, g, b, num8)).toHexString();
-    let num9 = 0;
+    const obj2 = { hex: mixColorsResult.toHexString(), stop: num9 };
+    const mixColors = tmp15(4683).mixColors;
+    ColorUtils;
+    const tmp18 = new tmp11(4684)(r, g, b, num8);
+    num9 = 0;
+    mixColorsResult = mixColors(tmp72, tmp18);
     if (theme.customThemeSettings.colors.length > 1) {
       num9 = index * (100 / (tmp.customThemeSettings.colors.length - 1));
     }
-    obj2.stop = num9;
     return obj2;
   });
   let num2 = getMaxColors();
   if (num2 === undefined) {
     num2 = 5;
   }
-  const items = [];
+  items = [];
   for (let num3 = 0; num3 < num2; num3 = num3 + 1) {
+    let tmp = num3;
     if (num3 < mapped.length) {
       let arr = items.push(mapped[num3]);
     } else {
@@ -169,11 +196,9 @@ function convertCustomBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
       let arr2 = items.push(obj2);
     }
   }
-  obj.colors = items;
   return obj;
 }
-const ThemeTypes = fn(1085).ThemeTypes;
-const size = fn(2);
+const ThemeTypes = Constants.ThemeTypes;
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearancePickerUtils.tsx");
 
 export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThemes(themes, prop, prop1, memo, BACKGROUND_SURFACE_HIGH) {
@@ -211,19 +236,30 @@ export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThe
   return items1;
 };
 export const useLaunchWelcomeSystemTheme = function useLaunchWelcomeSystemTheme() {
+  let token;
+  let tmp = importDefault;
   const tmp4 = getSystemThemeDefault() === ThemeTypes.LIGHT ? ThemeTypes.LIGHT : ThemeTypes.DARK;
-  token = token(4531).useToken(nativeDefault.colors.BACKGROUND_BASE_LOW, tmp4);
+  let obj = token(4531);
+  token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW, tmp4);
   let items = [token];
-  return noop.useMemo(() => {
-    const obj = { theme: "system", name: null, midpointPercentage: 50, angle: 0, colors: null };
-    const intl = util.intl;
-    obj.name = intl.string(util.t.zlvNOj);
-    const items = [{ hex: token, stop: 20 }, { hex: token, stop: 40 }, { hex: token, stop: 60 }, { hex: token, stop: 80 }, { hex: token, stop: 100 }];
+  return react.useMemo(() => {
+    let intl;
+    let items1;
+    let num2;
+    const obj = { theme: "system", name: intl.string(intl2.t.zlvNOj), midpointPercentage: 50, angle: 0, colors: items1 };
+    intl = intl2.intl;
+    const items = [, , , , ];
+    const obj2 = { hex: token, stop: 20 };
+    items[0] = obj2;
+    items[1] = { hex: token, stop: 40 };
+    items[2] = { hex: token, stop: 60 };
+    items[3] = { hex: token, stop: 80 };
+    items[4] = { hex: token, stop: 100 };
     let num = getMaxColors();
     if (num === undefined) {
       num = 5;
     }
-    const items1 = [];
+    items1 = [];
     for (let num2 = 0; num2 < num; num2 = num2 + 1) {
       if (num2 < items.length) {
         let arr = items1.push(items[num2]);
@@ -232,7 +268,6 @@ export const useLaunchWelcomeSystemTheme = function useLaunchWelcomeSystemTheme(
         let arr2 = items1.push(obj3);
       }
     }
-    obj.colors = items1;
     return obj;
   }, items);
 };

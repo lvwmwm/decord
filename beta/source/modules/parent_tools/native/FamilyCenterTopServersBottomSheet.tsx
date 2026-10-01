@@ -6,48 +6,63 @@
 
 // Module 14434 (FamilyCenterTopServersBottomSheet)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import GuildIconDefault from "GuildIcon" /* 5896 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
-import ActionSheet from "ActionSheet" /* 6618 */;
+import TableRowGroup2 from "TableRowGroup" /* 5999 */;
+import ActionSheet2 from "ActionSheet" /* 6618 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let closure_4;
+let hasOwnProperty;
+let obj2;
 function GuildRow(guildActivity) {
+  let obj3;
   guildActivity = guildActivity.guildActivity;
-  const tmp = closure_6();
   const items = [FamilyCenterStore];
-  const stateFromStores = guildActivity(504).useStateFromStores(items, () => FamilyCenterStore.getGuild(guildActivity.guild_id));
+  const tmp = closure_6();
+  const obj = guildActivity(504);
+  const stateFromStores = obj.useStateFromStores(items, () => FamilyCenterStore.getGuild(guildActivity.guild_id));
   if (null == stateFromStores) {
     return null;
   } else {
-    const topUserOrGuildDescription = tmp2(7012).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
-    const obj2 = { label: stateFromStores.name, subLabel: topUserOrGuildDescription, icon: null };
-    const obj3 = { guild: stateFromStores, style: tmp.guildIcon };
-    obj2.icon = closure_4(GuildIconDefault, obj3);
-    return closure_4(tmp2(5917).TableRow, obj2);
+    const tmp2Result = guildActivity(7012);
+    const topUserOrGuildDescription = tmp2Result.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
+    const obj2 = { label: stateFromStores.name, subLabel: topUserOrGuildDescription, icon: closure_4(GuildIconDefault, obj3) };
+    const TableRow = tmp2(5917).TableRow;
+    obj3 = { guild: stateFromStores, style: tmp.guildIcon };
+    return closure_4(TableRow, obj2);
   }
-  const obj = guildActivity(504);
 }
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { header: { textAlign: "center" }, guildIcon: { borderRadius: nativeDefault.radii.md, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { header: { textAlign: "center" }, guildIcon: obj2 };
+obj2 = { borderRadius: nativeDefault.radii.md, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterTopServersBottomSheet.tsx");
 
 export default function FamilyCenterTopGuildsBottomSheet(topGuildActivities) {
+  let intl;
+  let items;
   topGuildActivities = topGuildActivities.topGuildActivities;
-  const obj = { children: null };
-  const obj2 = { variant: "text-md/bold", style: closure_6().header, children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(_modDef2487.Lq9Set);
-  const items = [React4(Text_Text.Text, obj2), ];
+  let obj = { children: items };
   const tmp = closure_6();
-  items[1] = React4(TableRowGroup.TableRowGroup, { hasIcons: true, children: topGuildActivities.map((guildActivity) => closure_1_4(GuildRow, { guildActivity }, guildActivity.guild_id)) });
-  obj.children = items;
-  return hasOwnProperty(ActionSheet.ActionSheet, obj);
+  const ActionSheet = ActionSheet2.ActionSheet;
+  const obj2 = { variant: "text-md/bold", style: tmp.header, children: intl.string(_modDef2487.Lq9Set) };
+  const Text = Text_Text.Text;
+  intl = intl2.intl;
+  items = [React3(Text, obj2), ];
+  const obj3 = {
+    hasIcons: true,
+    children: topGuildActivities.map((guildActivity) => {
+      const obj = { guildActivity };
+      return closure_1_4(GuildRow, obj, guildActivity.guild_id);
+    })
+  };
+  const TableRowGroup = TableRowGroup2.TableRowGroup;
+  items[1] = React3(TableRowGroup, obj3);
+  return hasOwnProperty(ActionSheet, obj);
 };

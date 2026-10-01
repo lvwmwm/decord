@@ -11,15 +11,14 @@ import FlagUtils from "FlagUtils" /* 1385 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
+let closure_4;
+let hasOwnProperty;
 const Environments = UserStoreConstants.Environments;
 ({ PREMIUM_TYPE_NONE: closure_4, UserFlags: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/user/UserStoreUtils.tsx");
 
 export const validatePremiumType = function validatePremiumType(arg0, premiumType, premiumType2) {
-  let tmp = arg0;
-  if (!arg0) {
-    tmp = undefined === premiumType;
-  }
+  const tmp = arg0 || undefined === premiumType;
   if (!tmp) {
     _modDef38(premiumType2 === premiumType, "Premium type should not change for non-staff users");
   }
@@ -38,7 +37,7 @@ export const isStaffEnv = function isStaffEnv(currentUser) {
   let str = "production";
   if ("production" === Environments.TEST) {
     str = "production";
-    if (null != tmp) {
+    if (null != arg1) {
       str = tmp;
     }
   }
@@ -51,7 +50,7 @@ export const isStaffEnv = function isStaffEnv(currentUser) {
     let tmp8 = null != currentUser;
     if (tmp8) {
       tmp8 = currentUser.isStaff() || currentUser.isStaffPersonal();
-      const tmp9 = currentUser.isStaff() || currentUser.isStaffPersonal();
+      currentUser.isStaff() || currentUser.isStaffPersonal();
     }
     tmp4 = tmp8;
   }
@@ -61,7 +60,7 @@ export const isStaffEnvRawData = function isStaffEnvRawData(flags) {
   let str = "production";
   if ("production" === Environments.TEST) {
     str = "production";
-    if (null != tmp) {
+    if (null != arg1) {
       str = tmp;
     }
   }
@@ -76,7 +75,8 @@ export const isStaffEnvRawData = function isStaffEnvRawData(flags) {
     if (tmp9) {
       let tmp10 = null == flags.flags;
       if (!tmp10) {
-        tmp10 = !FlagUtils.hasFlag(flags.flags, constants.STAFF);
+        const obj = FlagUtils;
+        tmp10 = !obj.hasFlag(flags.flags, hasOwnProperty.STAFF);
       }
       let tmp14 = !tmp10;
       if (tmp10) {
@@ -89,8 +89,9 @@ export const isStaffEnvRawData = function isStaffEnvRawData(flags) {
   return tmp6;
 };
 export function getPremiumTypeFromRawValue(premium_type) {
+  let tmp2;
   if (undefined === premium_type) {
-    let tmp2 = premium_type;
+    tmp2 = premium_type;
   } else {
     tmp2 = null;
   }

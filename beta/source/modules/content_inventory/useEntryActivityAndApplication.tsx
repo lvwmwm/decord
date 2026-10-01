@@ -5,23 +5,28 @@
 // Exports: default
 
 // Module 12574 (useEntryActivityAndApplication)
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 12575 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/content_inventory/useEntryActivityAndApplication.tsx");
 
 export default function useEntryActivityAndApplication(extra) {
+  let activityApplication;
+  let items2;
+  let tmp10;
+  let tmpResult;
   _require = extra;
   const items = [ContentInventoryActivityStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => ContentInventoryActivityStore.getMatchingActivity(closure_0));
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => ContentInventoryActivityStore.getMatchingActivity(extra));
   let application_id;
-  const obj = require("initialize");
   const tmp = _require;
+  const tmp4 = activityApplication(6589);
   if (stateFromStores != null) {
     application_id = stateFromStores.application_id;
   }
@@ -31,22 +36,28 @@ export default function useEntryActivityAndApplication(extra) {
     application_id1 = extra.extra.application_id;
   }
   items1[1] = application_id1;
-  [activityApplication, obj2.fallbackApplication] = activityApplication(6589)(items1);
-  const obj2 = { activity: stateFromStores, embeddedActivity: null, anyMatchingApplication: null, activityApplication: null, fallbackApplication: null };
-  const tmp4 = activityApplication(6589);
-  const items2 = [EmbeddedActivitiesStore];
-  obj2.embeddedActivity = tmp(504).useStateFromStores(items2, () => {
-    let id;
-    if (first != null) {
-      id = first.id;
-    }
-    return EmbeddedActivitiesStore.getEmbeddedActivityForUserId(extra.author_id, id);
-  });
-  let tmp10 = activityApplication;
+  const tmp7 = _slicedToArray(tmp4(items1), 2);
+  activityApplication = tmp7[0];
+  const obj2 = {
+    activity: stateFromStores,
+    embeddedActivity: tmpResult.useStateFromStores(items2, () => {
+      let id;
+      const getEmbeddedActivityForUserId = EmbeddedActivitiesStore.getEmbeddedActivityForUserId;
+      const author_id = extra.author_id;
+      if (first != null) {
+        id = first.id;
+      }
+      return getEmbeddedActivityForUserId(author_id, id);
+    }),
+    anyMatchingApplication: tmp10,
+    activityApplication,
+    fallbackApplication: tmp7[1]
+  };
+  items2 = [EmbeddedActivitiesStore];
+  tmp10 = activityApplication;
+  tmpResult = tmp(504);
   if (activityApplication == null) {
     tmp10 = tmp9;
   }
-  obj2.anyMatchingApplication = tmp10;
-  obj2.activityApplication = activityApplication;
   return obj2;
 };

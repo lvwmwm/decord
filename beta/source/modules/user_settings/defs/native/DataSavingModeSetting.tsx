@@ -4,34 +4,38 @@
 // Dependencies: [1184, 7417, 504, 15012, 2021, 11006, 1115, 2]
 
 // Module 15014 (DataSavingModeSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import UserSettingsText from "UserSettingsText" /* 15012 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.ix8XIj);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.ix8XIj);
   },
-  parent: fn(7417).MobileUserSettings.CHAT,
+  parent: MobileUserSettings.CHAT,
   useValue: function useDataSavingModeSettingValue() {
+    let dataSavingMode;
     const items = [UnsyncedUserSettingsStore];
-    return initialize.useStateFromStores(items, () => dataSavingMode.dataSavingMode);
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => dataSavingMode.dataSavingMode);
   },
   onValueChange: function onDataSavingModeSettingValueChange(dataSavingMode) {
-    const obj2 = { videoUploadQuality: UnsyncedUserSettingsStore.videoUploadQuality, viewImageDescriptions: null, lowQualityImageMode: null, dataSavingMode: null };
-    const ViewImageDescriptions = UserSettings.ViewImageDescriptions;
-    obj2.viewImageDescriptions = ViewImageDescriptions.getSetting();
-    obj2.lowQualityImageMode = UnsyncedUserSettingsStore.lowQualityImageMode;
-    obj2.dataSavingMode = dataSavingMode;
-    UserSettingsText.setDataSavingMode(obj2);
+    let ViewImageDescriptions;
+    const obj = { videoUploadQuality: UnsyncedUserSettingsStore.videoUploadQuality, viewImageDescriptions: ViewImageDescriptions.getSetting(), lowQualityImageMode: UnsyncedUserSettingsStore.lowQualityImageMode, dataSavingMode };
+    const setDataSavingMode = UserSettingsText.setDataSavingMode;
+    UserSettingsText;
+    ViewImageDescriptions = UserSettings.ViewImageDescriptions;
+    setDataSavingMode(obj);
   }
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DataSavingModeSetting.tsx");
 
 export default toggle;

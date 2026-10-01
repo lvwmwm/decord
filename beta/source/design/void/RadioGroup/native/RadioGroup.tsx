@@ -4,99 +4,119 @@
 // Dependencies: [19, 17, 1085, 21, 4836, 576, 4548, 6558, 13638, 2]
 
 // Module 13637 (RadioGroup)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
+import Constants from "Constants" /* 1085 */;
+import react_native2 from "react-native" /* 4548 */;
 import FormRowDefault from "FormRow" /* 6558 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment_mod from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let metroImportDefault;
+let metroRequire;
+let obj3;
 function RadioEmpty(size) {
   let MEDIUM = size.size;
-  const style = [closure_10().radioIcon, , ];
+  const style = size.style;
+  const style1 = [closure_10().radioIcon, , ];
+  const tmp = metroRequire;
+  const tmp2 = View;
   if (MEDIUM === undefined) {
     MEDIUM = obj.MEDIUM;
   }
-  size = { width: 2 * MEDIUM, height: 2 * MEDIUM, padding: dependencyMap[MEDIUM] };
-  style[1] = size;
-  style[2] = size.style;
-  return timestampProducer(View, { style });
+  size = { width: 2 * MEDIUM, height: 2 * MEDIUM, padding: closure_9[MEDIUM] };
+  style1[1] = size;
+  style1[2] = style;
+  return tmp(tmp2, { style: style1 });
 }
 function RadioSelected(style) {
+  let active;
+  let items1;
+  let obj;
   ({ size, active } = style);
+  style = style.style;
   const tmp = closure_10();
   const items = [tmp.radioIcon, , , ];
   let MEDIUM = size;
   if (size === undefined) {
     MEDIUM = obj.MEDIUM;
   }
-  const size1 = { width: 2 * MEDIUM, height: 2 * MEDIUM, padding: dependencyMap[MEDIUM] };
+  const size1 = { width: 2 * MEDIUM, height: 2 * MEDIUM, padding: closure_9[MEDIUM] };
   items[1] = size1;
   if (active) {
     active = tmp.radioIconSelected;
   }
-  obj = { style: items, children: null };
+  obj = { style: items, children: metroRequire(View, { style: items1 }) };
   items[2] = active;
-  items[3] = style.style;
-  const items1 = [tmp.radioTick, ];
+  items[3] = style;
+  items1 = [tmp.radioTick, ];
   if (size === undefined) {
     size = obj.MEDIUM;
   }
   items1[1] = { width: size, height: size };
-  obj.children = timestampProducer(View, { style: items1 });
-  return timestampProducer(View, obj);
+  return metroRequire(View, obj);
 }
 class RadioIndicator {
   constructor(arg0) {
-    ({ size, active, style } = global);
-    tmp = jsx;
+    let active;
+    let style;
+    let tmpResult;
+    ({ size, active, style } = arg0);
     if (active) {
-      tmp4 = RadioSelected;
-      obj1 = { size: null, active: null, style: null };
-      obj1.size = size;
-      obj1.active = active;
-      obj1.style = style;
-      tmpResult = tmp(RadioSelected, obj1);
+      const obj2 = { size, active, style };
+      tmpResult = tmp(RadioSelected, obj2);
     } else {
-      tmp2 = RadioEmpty;
-      obj = { size: null, style: null };
-      obj.size = size;
-      obj.style = style;
+      const obj = { size, style };
       tmpResult = tmp(RadioEmpty, obj);
     }
     return tmpResult;
   }
 }
 function RadioBar(arg0) {
+  let accessibilityRole;
+  let accessibilityState;
+  let checked;
+  let disabled;
+  let indicatorLeft;
+  let items;
+  let leading;
+  let onPress;
+  let option;
+  let showIndicator;
+  let style;
+  let tmp7;
+  let tmp8;
   ({ checked, option, disabled, indicatorLeft, showIndicator } = arg0);
   ({ style, size, onPress } = arg0);
   const tmp = closure_10();
-  const tmp3 = timestampProducer(RadioIndicator, { size, active: checked });
-  const radioA11yNative = useA11yRolesNative.useRadioA11yNative({ selected: checked, disabled });
-  ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const obj3 = { accessibilityRole, accessibilityState, disabled, onPress: null, DEPRECATED_style: null, label: null, subLabel: null, trailing: null, leading: null };
-  let tmp7;
-  const tmp2 = timestampProducer;
+  const tmp3 = metroRequire(RadioIndicator, { size, active: checked });
   const tmp4 = checked ? tmp.collapsibleBackgroundSelected : tmp.collapsibleBackground;
+  const obj = react_native2;
+  const radioA11yNative = obj.useRadioA11yNative({ selected: checked, disabled });
+  ({ accessibilityRole, accessibilityState } = radioA11yNative);
+  const obj3 = { accessibilityRole, accessibilityState, disabled, onPress: tmp7, DEPRECATED_style: items, label: null, subLabel: null, trailing: tmp8, leading };
+  tmp7 = undefined;
+  const tmp2 = metroRequire;
+  const tmp6 = FormRowDefault;
   if (!disabled) {
     tmp7 = onPress;
   }
-  obj3.onPress = tmp7;
-  const items = [style, , ];
+  items = [style, , ];
   if (disabled) {
     disabled = tmp.disabled;
   }
   items[1] = disabled;
   items[2] = null != option.collapsibleContent && tmp4;
-  obj3.DEPRECATED_style = items;
   ({ name: obj2.label, desc: obj2.subLabel } = option);
-  let tmp8 = null;
+  tmp8 = null;
   if (!indicatorLeft) {
     tmp8 = null;
     if (showIndicator) {
       tmp8 = tmp3;
     }
   }
-  obj3.trailing = tmp8;
   if (null == option.leading) {
     let tmp9 = null;
     if (indicatorLeft) {
@@ -105,191 +125,177 @@ function RadioBar(arg0) {
         tmp9 = tmp3;
       }
     }
-    let leading = tmp9;
+    leading = tmp9;
   } else {
     leading = option.leading;
   }
-  obj3.leading = leading;
-  return tmp2(FormRowDefault, obj3);
+  return tmp2(tmp6, obj3);
 }
 class RadioItem {
-  constructor(arg0) {
-    option = global.option;
-    checked = global.checked;
-    style = global.style;
-    size = global.size;
-    ({ disabled, indicatorLeft } = global);
-    showIndicator = global.showIndicator;
-    onPress = global.onPress;
+  constructor(option) {
+    let disabled;
+    let indicatorLeft;
+    let obj3;
+    let tmp4;
+    option = option.option;
+    const checked = option.checked;
+    const style = option.style;
+    size = option.size;
+    ({ disabled, indicatorLeft } = option);
+    const showIndicator = option.showIndicator;
+    let onPress = option.onPress;
     disabled = undefined;
-    tmp = closure_10();
+    const tmp = closure_10();
     if (!disabled) {
       disabled = option.disabled;
     }
     if (null != option.collapsibleContent) {
-      tmp5 = onPress;
-      tmp6 = indicatorLeft;
-      obj1 = { style: null, children: null };
-      obj1.style = tmp.collapsibleContainer;
-      tmp7 = checked;
-      tmp8 = style;
-      obj4 = { isExpanded: null, collapsibleContent: null, style: null, children: null };
-      obj4.isExpanded = checked;
-      obj4.collapsibleContent = option.collapsibleContent;
-      obj4.style = tmp.collapsibleStyle;
-      obj4.children = function children(onPress) {
-        onPress = onPress.onPress;
-        return onPress(RadioBar, {
-          option: onPress,
-          checked,
-          style,
-          size,
-          disabled,
-          onPress(preventDefault) {
-            preventDefault.preventDefault();
-            if (onPress != null) {
-              tmp2(option);
-            }
-            onPress(preventDefault);
-          },
-          indicatorLeft,
-          showIndicator
-        });
+      const obj2 = { style: tmp.collapsibleContainer, children: onPress(checked(style[8]), obj3) };
+      obj3 = {
+        isExpanded: checked,
+        collapsibleContent: option.collapsibleContent,
+        style: tmp.collapsibleStyle,
+        children(onPress) {
+            onPress = onPress.onPress;
+            const obj = {
+              option: onPress,
+              checked,
+              style,
+              size,
+              disabled,
+              onPress(preventDefault) {
+                preventDefault.preventDefault();
+                if (onPress != null) {
+                  tmp2(option);
+                }
+                onPress(preventDefault);
+              },
+              indicatorLeft,
+              showIndicator
+            };
+            return onPress(RadioBar, obj);
+          }
       };
-      obj1.children = onPress(checked(style[8]), obj4);
-      tmp4 = onPress(indicatorLeft, obj1);
+      tmp4 = onPress(indicatorLeft, obj2);
     } else {
-      tmp2 = onPress;
-      tmp3 = RadioBar;
-      obj = { option: null, checked: null, style: null, size: null, disabled: null, onPress: null, indicatorLeft: null, showIndicator: null };
-      obj.option = option;
-      obj.checked = checked;
-      obj.style = style;
-      obj.size = size;
-      obj.disabled = disabled;
-      obj.onPress = function handlePress(preventDefault) {
-        preventDefault.preventDefault();
-        let tmp2Result;
-        if (onPress != null) {
-          tmp2Result = tmp2(option);
-        }
-        return tmp2Result;
+      const tmp2 = onPress;
+      let obj = {
+        option,
+        checked,
+        style,
+        size,
+        disabled,
+        onPress: function handlePress(preventDefault) {
+            preventDefault.preventDefault();
+            let tmp2Result;
+            if (onPress != null) {
+              tmp2Result = tmp2(option);
+            }
+            return tmp2Result;
+          },
+        indicatorLeft,
+        showIndicator
       };
-      obj.indicatorLeft = indicatorLeft;
-      obj.showIndicator = showIndicator;
       tmp4 = onPress(RadioBar, obj);
     }
     return tmp4;
   }
 }
 class RadioGroup {
-  constructor(arg0) {
-    value = global.value;
+  constructor(value) {
+    let flag5;
+    value = value.value;
     if (value === undefined) {
       value = null;
     }
-    c0 = value;
-    options = global.options;
+    require = value;
+    let options = value.options;
     if (options === undefined) {
       options = [];
     }
-    closure_1 = options;
-    ({ style, size } = global);
+    ({ style: dependencyMap, size } = value);
     if (size === undefined) {
-      tmp2 = c8;
-      size = c8.MEDIUM;
+      const tmp2 = flag5;
+      size = flag5.MEDIUM;
     }
-    MEDIUM = size;
-    flag = global.disabled;
+    let flag = value.disabled;
     if (flag === undefined) {
       flag = false;
     }
-    c4 = flag;
-    flag2 = global.withSpacing;
+    let flag2 = value.withSpacing;
     if (flag2 === undefined) {
       flag2 = false;
     }
-    c5 = flag2;
-    flag3 = global.indicatorLeft;
+    let flag3 = value.indicatorLeft;
     if (flag3 === undefined) {
       flag3 = false;
     }
-    c6 = flag3;
-    flag4 = global.showIndicator;
+    let flag4 = value.showIndicator;
     if (flag4 === undefined) {
       flag4 = true;
     }
-    c7 = flag4;
-    flag5 = global.withDividers;
+    flag5 = value.withDividers;
     if (flag5 === undefined) {
       flag5 = true;
     }
-    c8 = flag5;
-    onChange = global.onChange;
+    let onChange = value.onChange;
     if (onChange === undefined) {
-      onChange = c5;
+      onChange = flag2;
     }
-    closure_9 = onChange;
-    closure_10 = undefined;
-    closure_10 = closure_10();
-    obj = {
+    let divider;
+    divider = divider();
+    let obj = {
       children: options.map((option, index) => {
-            const obj = { option, checked: value === option.value, style: null, size: null, disabled: null, onPress: null, indicatorLeft: null, showIndicator: null };
-            const items = [dependencyMap, ];
-            if (index === options.length - 1) {
-              let obj2 = { marginBottom: 0 };
-            } else {
-              obj2 = flag2 ? { marginBottom: 8 } : {};
-            }
-            items[1] = obj2;
-            obj.style = items;
-            obj.size = size;
-            obj.disabled = flag;
-            obj.onPress = onChange;
-            obj.indicatorLeft = flag3;
-            obj.showIndicator = flag4;
-            const children = [timestampProducer(RadioItem, obj, "radio-option-" + JSON.stringify(option.value) + "-" + index), ];
-            let tmp2Result = null;
-            if (index !== options.length - 1) {
-              tmp2Result = null;
-              if (flag5) {
-                const obj3 = { style: divider.divider };
-                tmp2Result = tmp2(View, obj3);
-              }
-            }
-            children[1] = tmp2Result;
-            return React5(noop.Fragment, { children }, "radio-option-" + JSON.stringify(option.value) + "-" + index);
-          })
+        let items;
+        let obj2;
+        const obj = { option, checked: require === option.value, style: items, size, disabled: flag, onPress: onChange, indicatorLeft: flag3, showIndicator: flag4 };
+        items = [dependencyMap, ];
+        const Fragment = react.Fragment;
+        const arr2 = options;
+        const tmp = metroImportDefault;
+        const tmp3 = RadioItem;
+        if (index === options.length - 1) {
+          obj2 = { marginBottom: 0 };
+        } else {
+          obj2 = flag2 ? { marginBottom: 8 } : {};
+        }
+        items[1] = obj2;
+        const children = [metroRequire(tmp3, obj, "radio-option-" + JSON.stringify(option.value) + "-" + index), ];
+        let tmp2Result = null;
+        if (index !== arr2.length - 1) {
+          tmp2Result = null;
+          if (flag5) {
+            const obj3 = { style: divider.divider };
+            tmp2Result = tmp2(View, obj3);
+          }
+        }
+        children[1] = tmp2Result;
+        return tmp(Fragment, { children }, "radio-option-" + JSON.stringify(option.value) + "-" + index);
+      })
     };
-    return c6(c4, obj);
+    return flag3(flag, obj);
   }
 }
-const View = fn(17).View;
-const NOOP = fn(1085).NOOP;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
+const View = react_native.View;
+const NOOP = Constants.NOOP;
+let Fragment = Fragment_mod;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const Sizes = { SMALL: 8, [8]: "SMALL", MEDIUM: 10, [10]: "MEDIUM", LARGE: 12, [12]: "LARGE" };
-const dependencyMap = { [Sizes.SMALL]: 2, [Sizes.MEDIUM]: 3, [Sizes.LARGE]: 4 };
-const createStyles = fn(4836);
-let obj3 = { radioIcon: { flex: 0, marginRight: 8, borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.TEXT_MUTED, borderWidth: 2 }, radioIconSelected: null, radioTick: null, disabled: null, divider: null, collapsibleStyle: null, collapsibleBackgroundSelected: null, collapsibleBackground: null, collapsibleContainer: null };
-const obj4 = { flex: 0, marginRight: 8, borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.TEXT_MUTED, borderWidth: 2 };
-obj3.radioIconSelected = { borderColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-const obj5 = { borderColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-obj3.radioTick = { borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
-obj3.disabled = { opacity: 0.3 };
-const obj6 = { borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
-obj3.divider = { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginLeft: 16 };
-const obj7 = { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginLeft: 16 };
-obj3.collapsibleStyle = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-const obj8 = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-obj3.collapsibleBackgroundSelected = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-const obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-obj3.collapsibleBackground = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-obj3.collapsibleContainer = { paddingVertical: 4, paddingHorizontal: 12 };
-let closure_10 = createStyles.createStyles(obj3);
+let closure_9 = { [Sizes.SMALL]: 2, [Sizes.MEDIUM]: 3, [Sizes.LARGE]: 4 };
+let createStyles = createStyles_mod;
+let obj2 = { radioIcon: obj3, radioIconSelected: { borderColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE }, radioTick: { borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND }, disabled: { opacity: 0.3 }, divider: { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginLeft: 16 }, collapsibleStyle: { borderRadius: nativeDefault.radii.sm, overflow: "hidden" }, collapsibleBackgroundSelected: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, collapsibleBackground: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, collapsibleContainer: { paddingVertical: 4, paddingHorizontal: 12 } };
+obj3 = { flex: 0, marginRight: 8, borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.TEXT_MUTED, borderWidth: 2 };
+createStyles = createStyles.createStyles;
+({ borderColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE });
+({ borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND });
+({ height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginLeft: 16 });
+({ borderRadius: nativeDefault.radii.sm, overflow: "hidden" });
+({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST });
+({ backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH });
+const authStore = createStyles(obj2);
 RadioIndicator.Sizes = Sizes;
 RadioGroup.Sizes = Sizes;
-let size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("design/void/RadioGroup/native/RadioGroup.tsx");
 
 export default RadioGroup;

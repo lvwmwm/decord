@@ -5,37 +5,42 @@
 // Exports: default
 
 // Module 8854 (useActionBarHeight)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6572 */;
+import CallBarAction from "CallBarAction" /* 8855 */;
 import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 8858 */;
 import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 8861 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const InputModes = fn(1074).InputModes;
-let closure_5 = fn(6572).ACTION_SHEET_HANDLE_SPACING;
-let sum = 2 * fn(8855).SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;
-const metroRequire = sum;
-const size = fn(2);
+const InputModes = Constants.InputModes;
+let closure_5 = ActionSheetConstants.ACTION_SHEET_HANDLE_SPACING;
+const sum = 2 * CallBarAction.SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;
+let metroRequire = sum;
 const result = size.fileFinishedImporting("modules/video_calls/native/useActionBarHeight.tsx");
 
 export default function useActionBarHeight(id) {
-  const isFiveButtonLayout = useIsFiveButtonLayout.useIsFiveButtonLayout(id);
-  const tmp2 = useCanSpeakInChannelDefault(id);
+  let mode;
+  const obj = useIsFiveButtonLayout;
+  const isFiveButtonLayout = obj.useIsFiveButtonLayout(id);
   const items = [MediaEngineStore];
   let num = 88;
-  const stateFromStores = initialize.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK);
+  const tmp2 = useCanSpeakInChannelDefault(id);
+  const obj2 = get_initialized;
+  const stateFromStores = obj2.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK);
   if (isFiveButtonLayout) {
-    num = sum;
+    num = metroRequire;
   }
   let num2 = 0;
-  sum = num + closure_5;
+  metroRequire = num + closure_5;
   if (stateFromStores) {
     num2 = 0;
     if (tmp2) {
       num2 = 56;
     }
   }
-  return sum + num2;
+  return metroRequire + num2;
 };
 export const CALL_ACTION_BAR_HEIGHT = 88;
 export const FIVE_BUTTON_CONTAINER_PADDING_TOP = 16;

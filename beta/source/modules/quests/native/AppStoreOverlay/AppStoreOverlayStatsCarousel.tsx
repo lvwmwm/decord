@@ -6,16 +6,44 @@
 
 // Module 10726 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
 import AnalyticsActions from "AnalyticsActions" /* 7131 */;
 import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 10727 */;
 import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 10728 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap;
+
+let c9;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let size;
 function AppStoreOverlayStatCardItem(onRatingPress) {
+  let accessibilityLabel;
+  let expanded;
+  let num2;
+  let obj6;
+  let ratingCount;
+  let secondaryContent;
+  let secondaryText;
+  let stat;
+  let stringResult;
+  let tmp24Result2;
+  let tmp6;
   ({ stat, expanded } = onRatingPress);
   if (expanded === undefined) {
     expanded = false;
@@ -28,50 +56,50 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     if (num == null) {
       num = 5;
     }
-    const result = AppStoreOverlayStatCardUtils.formatAppStoreRatingValue(stat.rating, util.intl.currentLocale);
+    const obj3 = AppStoreOverlayStatCardUtils;
+    const result = obj3.formatAppStoreRatingValue(stat.rating, intl3.intl.currentLocale);
     let result1;
     if (null != stat.ratingCount) {
-      result1 = tmp9(10727).formatAppStoreRatingCount(stat.ratingCount, tmp9(1115).intl.currentLocale);
-      const tmp9Result = tmp9(10727);
+      const tmp9Result = AppStoreOverlayStatCardUtils;
+      result1 = tmp9Result.formatAppStoreRatingCount(stat.ratingCount, tmp9(1115).intl.currentLocale);
     }
-    const appStoreStarFillAmounts = AppStoreOverlayStatCardUtils.getAppStoreStarFillAmounts(stat.rating, num);
+    const tmp9Result2 = AppStoreOverlayStatCardUtils;
+    const appStoreStarFillAmounts = tmp9Result2.getAppStoreStarFillAmounts(stat.rating, num);
     const intl = tmp9(1115).intl;
-    const obj4 = { label: stat.label, rating: result, maxRating: num, ratingCount: null };
-    let num2 = stat.ratingCount;
+    const formatToPlainString = intl.formatToPlainString;
+    const obj4 = { label: stat.label, rating: result, maxRating: num, ratingCount: num2 };
+    num2 = stat.ratingCount;
+    const prop = tmp9(1115).t["/0p2sz"];
     if (num2 == null) {
       num2 = 0;
     }
-    const obj5 = { accessibilityLabel: null, primaryText: null, secondaryContent: null, ratingCount: null };
-    obj4.ratingCount = num2;
-    obj5.accessibilityLabel = intl.formatToPlainString(util.t["/0p2sz"], obj4);
-    obj5.primaryText = result;
-    const obj6 = { fillAmounts: appStoreStarFillAmounts };
-    obj5.secondaryContent = React5(AppStoreOverlayStarRatingDefault, obj6);
-    obj5.ratingCount = result1;
-    let tmp6 = obj5;
-    const tmp9Result2 = AppStoreOverlayStatCardUtils;
+    const obj5 = { accessibilityLabel: formatToPlainString(prop, obj4), primaryText: result, secondaryContent: metroImportDefault(AppStoreOverlayStarRatingDefault, obj6), ratingCount: result1 };
+    tmp6 = obj5;
+    obj6 = { fillAmounts: appStoreStarFillAmounts };
   } else if ("age" === type) {
-    const obj7 = { accessibilityLabel: null, primaryText: null, secondaryText: null };
     const _HermesInternal3 = HermesInternal;
-    obj7.accessibilityLabel = "" + stat.label + ", " + stat.ageRating;
     ({ ageRating: obj2.primaryText, ageRatingLabel: obj2.secondaryText } = stat);
-    tmp6 = obj7;
+    tmp6 = { accessibilityLabel: "" + stat.label + ", " + stat.ageRating, primaryText: null, secondaryText: null };
+    const obj7 = { accessibilityLabel: "" + stat.label + ", " + stat.ageRating, primaryText: null, secondaryText: null };
   } else if ("chart" === type) {
-    const result2 = AppStoreOverlayStatCardUtils.formatAppStoreChartRank(stat.rank);
+    let combined;
+    const obj14 = AppStoreOverlayStatCardUtils;
+    const result2 = obj14.formatAppStoreChartRank(stat.rank);
     if (null != stat.category) {
       const _HermesInternal2 = HermesInternal;
-      let combined = "" + stat.label + ", " + result2 + ", " + stat.category;
+      combined = "" + stat.label + ", " + result2 + ", " + stat.category;
     } else {
       const _HermesInternal = HermesInternal;
       combined = "" + stat.label + ", " + result2;
     }
+    tmp6 = { accessibilityLabel: combined, primaryText: result2, secondaryText: stat.category };
     const obj = { accessibilityLabel: combined, primaryText: result2, secondaryText: stat.category };
-    tmp6 = obj;
   }
   ({ accessibilityLabel, secondaryText, secondaryContent, ratingCount } = tmp6);
-  let tmp16 = "rating" === stat.type;
-  if (tmp16) {
-    tmp16 = null != onRatingPress;
+  let tmp17 = "rating" === stat.type;
+  const primaryText = tmp6.primaryText;
+  if (tmp17) {
+    tmp17 = null != onRatingPress;
   }
   const items = [tmp.statCard, ];
   if (expanded) {
@@ -80,135 +108,150 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
   items[1] = expanded;
   const items1 = [stat.label, " ", ];
   let str9 = "";
+  const Text = Text_Text.Text;
+  const tmp20 = React4;
   if (null != ratingCount) {
     const _HermesInternal4 = HermesInternal;
     str9 = "(" + ratingCount + ")";
   }
   items1[2] = str9;
-  const items2 = [React6(Text_Text.Text, { variant: "text-xs/semibold", color: "text-subtle", children: items1 }), React5(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: tmp6.primaryText }), ];
-  let tmp23Result = null != secondaryContent || null != secondaryText;
-  if (tmp23Result) {
-    const obj8 = { style: tmp.secondaryRow, children: null };
+  const items2 = [metroImportAll(Text, { variant: "text-xs/semibold", color: "text-subtle", children: items1 }), metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: primaryText }), ];
+  let tmp24Result = null != secondaryContent || null != secondaryText;
+  if (tmp24Result) {
+    const obj8 = { style: tmp.secondaryRow, children: secondaryContent };
+    const tmp26 = metroRequire;
     if (null == secondaryContent) {
       const obj9 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp23(tmp20(4832).Text, obj9);
+      secondaryContent = tmp24(tmp21(4832).Text, obj9);
     }
-    obj8.children = secondaryContent;
-    tmp23Result = tmp23(timestampProducer, obj8);
+    tmp24Result = tmp24(tmp26, obj8);
   }
-  items2[2] = tmp23Result;
-  const tmp18Result = React6(React7, { children: items2 });
-  if (tmp16) {
-    const obj10 = { style: items, onPress: onRatingPress, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityHint: null, children: null };
-    let stringResult;
-    if (tmp20Result.isIOS()) {
-      const intl2 = tmp20(1115).intl;
-      stringResult = intl2.string(tmp20(1115).t.quJD0Y);
+  items2[2] = tmp24Result;
+  const tmp19Result = metroImportAll(tmp20, { children: items2 });
+  if (tmp17) {
+    const obj10 = { style: items, onPress: onRatingPress, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityHint: stringResult, children: tmp19Result };
+    stringResult = undefined;
+    const tmp21Result = PlatformUtils;
+    const tmp30 = React3;
+    if (tmp21Result.isIOS()) {
+      const intl2 = tmp21(1115).intl;
+      stringResult = intl2.string(tmp21(1115).t.quJD0Y);
     }
-    obj10.accessibilityHint = stringResult;
-    obj10.children = tmp18Result;
-    let tmp23Result2 = tmp23(React4, obj10);
-    tmp20Result = tmp20(1364);
+    tmp24Result2 = tmp24(tmp30, obj10);
   } else {
-    const obj11 = { style: items, accessible: true, accessibilityRole: "text", accessibilityLabel, children: tmp18Result };
-    tmp23Result2 = tmp23(timestampProducer, obj11);
+    const obj11 = { style: items, accessible: true, accessibilityRole: "text", accessibilityLabel, children: tmp19Result };
+    tmp24Result2 = tmp24(metroRequire, obj11);
   }
-  return tmp23Result2;
+  return tmp24Result2;
 }
-get_ActivityIndicator = fn(17);
-({ Pressable: closure_4, ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
+({ Pressable: closure_4, ScrollView: hasOwnProperty, View: metroRequire } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
 let closure_10 = 130 + nativeDefault.space.PX_16;
-const createStyles = fn(4836);
-let obj2 = { carousel: { marginHorizontal: -nativeDefault.space.PX_16 }, carouselContent: null, statCard: null, statCardExpanded: null, expandedCarouselContent: null, secondaryRow: null };
-let obj3 = { marginHorizontal: -nativeDefault.space.PX_16 };
-obj2.carouselContent = { gap: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_16, paddingRight: nativeDefault.space.PX_16 };
-let size = { width: 130, height: 92, borderRadius: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.CARD_SECONDARY_BACKGROUND_DEFAULT, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
-obj2.statCard = size;
-obj2.statCardExpanded = { flex: 1, minWidth: 0 };
-let obj4 = { gap: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_16, paddingRight: nativeDefault.space.PX_16 };
-obj2.expandedCarouselContent = { flexDirection: "row", gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
-let obj5 = { flexDirection: "row", gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
-obj2.secondaryRow = { height: nativeDefault.space.PX_16, justifyContent: "center" };
-let closure_11 = createStyles.createStyles(obj2);
-size = fn(2);
+let createStyles = createStyles_mod;
+let obj = { carousel: obj2, carouselContent: obj3, statCard: size, statCardExpanded: { flex: 1, minWidth: 0 }, expandedCarouselContent: obj4, secondaryRow: obj5 };
+obj2 = { marginHorizontal: -nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { gap: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_16, paddingRight: nativeDefault.space.PX_16 };
+size = { width: 130, height: 92, borderRadius: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.CARD_SECONDARY_BACKGROUND_DEFAULT, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
+obj4 = { flexDirection: "row", gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
+obj5 = { height: nativeDefault.space.PX_16, justifyContent: "center" };
+let closure_11 = createStyles(obj);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStatsCarousel.tsx");
 
 export default function AppStoreOverlayStatsCarousel(arg0) {
+  let obj4;
+  let obj9;
+  let onCarouselScroll;
+  let ref;
+  let stats;
   ({ stats, onRatingPress: require, onCarouselScroll } = arg0);
+  dependencyMap = undefined;
   let length;
-  let map = closure_11();
-  const nativeGesture = LegacyBaseButton.useNativeGesture({ disallowInterruption: true });
+  let tmp = closure_11();
+  let tmp2 = require;
+  let tmp3 = dependencyMap;
+  let obj = LegacyBaseButton;
+  const nativeGesture = obj.useNativeGesture({ disallowInterruption: true });
+  const tmp5 = stats.length <= 2;
   dependencyMap = length.useRef(0);
   length = stats.length;
   const items = [length];
   const effect = length.useEffect(() => {
-    closure_2.current = 0;
+    ref.current = 0;
   }, items);
   const items1 = [length, onCarouselScroll];
   const onMomentumScrollEnd = length.useCallback((nativeEvent) => {
+    let LEFT;
     if (null != onCarouselScroll) {
       if (length > 1) {
         const _Math = Math;
-        const diff = tmp3 - 1;
+        const diff = tmp5 - 1;
         const _Math2 = Math;
         const _Math3 = Math;
         const bound = Math.min(diff, Math.max(0, Math.round(nativeEvent.nativeEvent.contentOffset.x / closure_10)));
         const current = ref.current;
         if (bound !== current) {
-          let obj = { carouselType: null, scrollingDirection: null, carouselPosition: null, carouselSize: null };
-          let HorizontalScrollingDirection = dependencyMap;
-          obj.carouselType = AnalyticsActions.AppStoreOverlayCarouselTypes.STATS;
+          const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            HorizontalScrollingDirection = tmp2(7141).HorizontalScrollingDirection;
-            let LEFT = HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(7141).HorizontalScrollingDirection.RIGHT;
           } else {
             LEFT = tmp2(7141).HorizontalScrollingDirection.LEFT;
           }
-          obj.scrollingDirection = LEFT;
-          obj.carouselPosition = bound;
-          obj.carouselSize = tmp3;
-          obj = tmp(obj);
-          tmp9.current = bound;
+          tmp(obj);
+          tmp11.current = bound;
         }
       }
     }
   }, items1);
   [][0] = onMomentumScrollEnd;
-  if (0 === stats.length) {
-    return null;
-  } else if (tmp4) {
-    const obj2 = { style: map.carousel, children: null };
-    const obj4 = { style: map.expandedCarouselContent, children: null };
-    map = stats.map;
-    obj4.children = map((stat) => {
-      const obj = { stat, expanded: true, onRatingPress: null };
-      let tmp3;
-      if ("rating" === stat.type) {
-        tmp3 = require;
-      }
-      obj.onRatingPress = tmp3;
-      return React5(AppStoreOverlayStatCardItem, obj, stat.type);
-    });
-    obj2.children = tmp12(closure_6, obj4);
-    let tmp12Result = tmp12(closure_6, obj2);
-  } else {
-    const obj5 = { gesture: nativeGesture, children: null };
-    const obj9 = { horizontal: true, nestedScrollEnabled: true, showsHorizontalScrollIndicator: false, style: null, contentContainerStyle: null, onScrollEndDrag: null, onMomentumScrollEnd: null, children: null };
-    ({ carousel: obj3.style, carouselContent: obj3.contentContainerStyle } = map);
-    obj9.onScrollEndDrag = tmp7;
-    obj9.onMomentumScrollEnd = onMomentumScrollEnd;
-    obj9.children = stats.map((stat) => {
-      const obj = { stat, onRatingPress: null };
-      let tmp3;
-      if ("rating" === stat.type) {
-        tmp3 = require;
-      }
-      obj.onRatingPress = tmp3;
-      return React5(AppStoreOverlayStatCardItem, obj, stat.type);
-    });
-    obj5.children = tmp12(closure_5, obj9);
-    tmp12Result = tmp12(LegacyBaseButton.GestureDetector, obj5);
+  let tmp9 = null;
+  if (0 !== stats.length) {
+    let tmp13Result;
+    if (tmp5) {
+      const obj2 = { style: tmp.carousel, children: closure_7(closure_6, obj4) };
+      obj4 = {
+        style: tmp.expandedCarouselContent,
+        children: stats.map((stat) => {
+              let tmp3;
+              const obj = { stat, expanded: true, onRatingPress: tmp3 };
+              tmp3 = undefined;
+              const tmp = metroImportDefault;
+              const tmp2 = AppStoreOverlayStatCardItem;
+              if ("rating" === stat.type) {
+                tmp3 = require;
+              }
+              return tmp(tmp2, obj, stat.type);
+            })
+      };
+      tmp13Result = tmp13(closure_6, obj2);
+    } else {
+      const obj5 = { gesture: nativeGesture, children: closure_7(closure_5, obj9) };
+      ({ carousel: obj3.style, carouselContent: obj3.contentContainerStyle } = tmp);
+      obj9 = {
+        horizontal: true,
+        nestedScrollEnabled: true,
+        showsHorizontalScrollIndicator: false,
+        style: null,
+        contentContainerStyle: null,
+        onScrollEndDrag: tmp8,
+        onMomentumScrollEnd,
+        children: stats.map((stat) => {
+              let tmp3;
+              const obj = { stat, onRatingPress: tmp3 };
+              tmp3 = undefined;
+              const tmp = metroImportDefault;
+              const tmp2 = AppStoreOverlayStatCardItem;
+              if ("rating" === stat.type) {
+                tmp3 = require;
+              }
+              return tmp(tmp2, obj, stat.type);
+            })
+      };
+      const GestureDetector = LegacyBaseButton.GestureDetector;
+      tmp13Result = tmp13(GestureDetector, obj5);
+    }
+    tmp9 = tmp13Result;
   }
+  return tmp9;
 };

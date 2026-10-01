@@ -5,26 +5,31 @@
 // Exports: ForLaterCardReminderHeader
 
 // Module 12867 (ForLaterCardReminderHeader)
-import jsxProd from "jsxProd" /* 21 */;
+import Fragment from "Fragment" /* 21 */;
+import ClockIcon from "ClockIcon" /* 4795 */;
 import SavedMessageUtils from "SavedMessageUtils" /* 11211 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterCardReminderHeader.tsx");
 
 export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(savedMessage) {
+  let actions;
+  let throttledNow;
   savedMessage = savedMessage.savedMessage;
   ({ throttledNow, actions } = savedMessage);
   let dueAt;
+  const useDueInString = SavedMessageUtils.useDueInString;
+  SavedMessageUtils;
   if (savedMessage != null) {
     dueAt = savedMessage.saveData.dueAt;
   }
-  const obj = SavedMessageUtils;
-  const dueInString = obj.useDueInString({ dueAt, now: throttledNow, type: SavedMessageUtils.DueInStringTypes.SHORT });
-  let tmp7 = null;
+  const obj = { dueAt, now: throttledNow, type: SavedMessageUtils.DueInStringTypes.SHORT };
+  const dueInString = useDueInString(obj);
+  let tmp8 = null;
   if (null != savedMessage.saveData.dueAt) {
-    const obj3 = { IconComponent: tmp(4795).ClockIcon, label: tmp5, isCritical: tmp6, actions };
-    tmp7 = jsx(tmp(11699).ForLaterCardStatusHeader, { IconComponent: tmp(4795).ClockIcon, label: tmp5, isCritical: tmp6, actions });
+    const ForLaterCardStatusHeader = tmp(11699).ForLaterCardStatusHeader;
+    tmp8 = <ForLaterCardStatusHeader IconComponent={ClockIcon.ClockIcon} label={tmp6} isCritical={tmp7} actions={actions} />;
   }
-  return tmp7;
+  return tmp8;
 };

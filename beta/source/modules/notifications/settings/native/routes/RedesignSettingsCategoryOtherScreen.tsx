@@ -4,23 +4,27 @@
 // Dependencies: [19, 21, 11006, 15537, 14247, 2]
 
 // Module 15545 (RedesignSettingsCategoryOtherScreen)
+import Fragment from "Fragment" /* 21 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import SettingLayoutDefault from "SettingLayout" /* 14247 */;
 import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 15537 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsCategoryOtherScreen.tsx");
-
-export default noop.memo(() => {
-  const node = noop.useMemo(() => {
-    const obj2 = { sections: null };
-    const obj = SettingBuilders;
-    const items = [MobileNotifSettingsRouteBuilders.buildCategoryOtherSettingsSection()];
-    obj2.sections = items;
-    return obj.createList(obj2);
+const jsx = Fragment.jsx;
+const memoResult = react.memo(() => {
+  const node = react.useMemo(() => {
+    let items;
+    const obj = { sections: items };
+    const createList = SettingBuilders.createList;
+    SettingBuilders;
+    items = [];
+    const obj2 = MobileNotifSettingsRouteBuilders;
+    items[0] = obj2.buildCategoryOtherSettingsSection();
+    return createList(obj);
   }, []);
   return jsx(SettingLayoutDefault, { node });
 });
+const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsCategoryOtherScreen.tsx");
+
+export default memoResult;

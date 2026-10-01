@@ -5,18 +5,21 @@
 // Exports: useGetInitialMessagePreview
 
 // Module 9596 (useGetInitialMessagePreview)
+import MessageRecord2 from "MessageRecord" /* 4480 */;
 import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
-import noop from "module_19" /* 19 */;
-import MessageRecord from "MessageRecord" /* 4480 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const MessageSnapshotRecord = fn(4480).MessageSnapshotRecord;
-const size = fn(2);
+const MessageRecord = MessageRecord2;
+
+const MessageSnapshotRecord = MessageRecord2.MessageSnapshotRecord;
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/hooks/useGetInitialMessagePreview.tsx");
 
 export const useGetInitialMessagePreview = function useGetInitialMessagePreview(message) {
   message = message.message;
   const items = [message];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    let tmp = message;
     const tmp2 = new MessageRecord(message);
     tmp2.attachments = [];
     tmp2.stickerItems = [];
@@ -24,13 +27,13 @@ export const useGetInitialMessagePreview = function useGetInitialMessagePreview(
       const embeds = tmp2.embeds;
       tmp2.embeds = embeds.filter((image) => null == image.image && null == image.thumbnail);
     }
-    if (isForwardMessageDefault(message)) {
+    if (isForwardMessageDefault(tmp)) {
       const messageSnapshots = tmp2.messageSnapshots;
       tmp2.messageSnapshots = messageSnapshots.map((message) => {
-        const obj = { message: null };
+        const obj = { message: message.merge({ attachments: [], embeds: [], stickerItems: [] }) };
         message = message.message;
-        obj.message = message.merge({ attachments: [], embeds: [], stickerItems: [] });
-        return new closure_1_4(obj);
+        const tmp = new closure_1_4(obj);
+        return tmp;
       });
     }
     return tmp2;

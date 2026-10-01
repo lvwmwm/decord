@@ -6,11 +6,10 @@
 
 // Module 5288 (useFontScale)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1482 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import DimensionsStore from "DimensionsStore" /* 1480 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/screen/native/useFontScale.tsx");
 
 export const getFontScale = function getFontScale() {
@@ -21,7 +20,8 @@ export const getFontScale = function getFontScale() {
   return DimensionsStore.getState().byAppEntry[str].fontScale;
 };
 export const useFontScale = function useFontScale() {
-  const appEntryKey = AppEntryKeyContext.useAppEntryKey();
+  const obj = AppEntryKeyContext;
+  const appEntryKey = obj.useAppEntryKey();
   const items = [appEntryKey];
-  return DimensionsStore(noop.useCallback((arg0) => arg0.byAppEntry[appEntryKey].fontScale, items));
+  return DimensionsStore(react.useCallback((arg0) => arg0.byAppEntry[appEntryKey].fontScale, items));
 };

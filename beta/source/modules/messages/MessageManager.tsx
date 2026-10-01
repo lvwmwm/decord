@@ -9,16 +9,18 @@ import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import router_utils from "router_utils" /* 1101 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
 import matchPathCompat from "matchPathCompat" /* 4660 */;
-import Client from "Client" /* 4763 */;
+import flow_Client from "flow/Client" /* 4763 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
 import ChannelMessagesDefault from "ChannelMessages" /* 5584 */;
 import SidebarActionTypes from "SidebarActionTypes" /* 6700 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
 import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9399 */;
 import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9400 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
 import ChannelSectionStore from "ChannelSectionStore" /* 6698 */;
@@ -27,10 +29,33 @@ import GuildStore from "GuildStore" /* 2067 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import Constants from "Constants" /* 1074 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let map, obj3;
+
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
 function fetchMessages(arg0) {
+  let avoidInitialScroll;
+  let channelId;
+  let fetchKey;
+  let forceFetch;
+  let guildId;
+  let isPreload;
+  let messageId;
+  let obj11;
+  let obj17;
+  let obj20;
+  let obj23;
+  let obj5;
+  let obj8;
+  let skipLocalFetch;
   ({ guildId, channelId, messageId, forceFetch, isPreload, skipLocalFetch, avoidInitialScroll, fetchKey } = arg0);
   if (null != channelId) {
     if (!isStaticChannelRoute(channelId)) {
@@ -45,43 +70,46 @@ function fetchMessages(arg0) {
           type1 = channel.type;
         }
         if (null == type1) {
-          const orCreate = ChannelMessagesDefault.getOrCreate(channelId);
+          let flag;
+          const obj2 = ChannelMessagesDefault;
+          const orCreate = obj2.getOrCreate(channelId);
           let orCreate1 = orCreate;
           if (orCreate.some(AttachmentUrlUtilsAll.messageHasExpiredAttachmentUrl)) {
             logger.log("Found expired attachment link, clearing messages");
-            tmp9(5584).clear(channelId);
-            const tmp9Result = tmp9(5584);
-            orCreate1 = tmp9(5584).getOrCreate(channelId);
-            const tmp9Result9 = tmp9(5584);
+            const tmp7Result = ChannelMessagesDefault;
+            tmp7Result.clear(channelId);
+            const tmp7Result9 = ChannelMessagesDefault;
+            orCreate1 = tmp7Result9.getOrCreate(channelId);
           }
-          let obj7 = orCreate1;
-          if (tmp15) {
-            const obj = { jumpTargetId: null, jumped: false, jumpType: Client.JumpType.ANIMATED };
-            const mutation = orCreate1.mutate(obj);
-            tmp9(5584).commit(mutation);
-            obj7 = mutation;
-            const tmp9Result10 = tmp9(5584);
+          let obj6 = orCreate1;
+          const tmp14 = null != orCreate1.jumpTargetId && null == messageId;
+          if (tmp14) {
+            const mutate = orCreate1.mutate;
+            const obj = { jumpTargetId: null, jumped: false, jumpType: flow_Client.JumpType.ANIMATED };
+            const mutation = mutate(obj);
+            const tmp7Result10 = ChannelMessagesDefault;
+            tmp7Result10.commit(mutation);
+            obj6 = mutation;
           }
-          let obj10 = obj7;
-          if (tmp19) {
-            const mutation1 = obj7.mutate({ focusTargetId: null });
-            tmp9(5584).commit(mutation1);
-            obj10 = mutation1;
-            const tmp9Result11 = tmp9(5584);
+          let obj9 = obj6;
+          const tmp18 = null != obj6.focusTargetId && null == messageId;
+          if (tmp18) {
+            const mutation1 = obj6.mutate({ focusTargetId: null });
+            const tmp7Result11 = ChannelMessagesDefault;
+            tmp7Result11.commit(mutation1);
+            obj9 = mutation1;
           }
           if (isPreload) {
             if (!GatewayConnectionStore.isConnected()) {
-              let flag = true;
+              flag = true;
             }
-            let hasUnreadResult = tmp9(7822)(channelId);
-            if (hasUnreadResult) {
-              hasUnreadResult = ReadStateStore.hasUnread(channelId);
-            }
+            const hasUnreadResult = tmp7(7822)(channelId) && ReadStateStore.hasUnread(channelId);
             if (hasUnreadResult) {
               flag = true;
             }
             if (flag) {
-              tmp9(5584).commit(obj10.mutate({ loadingMore: true }));
+              const tmp7Result12 = ChannelMessagesDefault;
+              tmp7Result12.commit(obj9.mutate({ loadingMore: true }));
               if (null == messageId) {
                 let isThreadResult;
                 if (channel != null) {
@@ -103,10 +131,10 @@ function fetchMessages(arg0) {
                       obj3[channelId] = Date.now();
                       const _Date2 = Date;
                       for (const key10132 in obj3) {
-                        if (obj3[key10132] >= tmp38) {
+                        if (obj3[key10132] >= tmp37) {
                           continue;
                         } else {
-                          delete tmp[tmp2];
+                          delete obj3[tmp59];
                           continue;
                         }
                         continue;
@@ -119,16 +147,12 @@ function fetchMessages(arg0) {
                   if (flag2) {
                     const _HermesInternal2 = HermesInternal;
                     logger.log("Jumping to start of thread " + channel.id);
-                    const obj4 = { channelId, limit: null, jump: null, isPreload: null, skipLocalFetch: null, avoidInitialScroll: null, fetchKey: null };
-                    const tmp9Result13 = tmp9(6876);
-                    obj4.limit = getAdaptiveMessageLimit.getMessageLimit("MessageManager.threadStart");
-                    const obj5 = { messageId: channelId, flash: false };
-                    obj4.jump = obj5;
-                    obj4.isPreload = isPreload;
-                    obj4.skipLocalFetch = skipLocalFetch;
-                    obj4.avoidInitialScroll = avoidInitialScroll;
-                    obj4.fetchKey = fetchKey;
-                    return tmp9Result13.fetchMessages(obj4);
+                    const obj4 = { channelId, limit: obj23.getMessageLimit("MessageManager.threadStart"), jump: obj5, isPreload, skipLocalFetch, avoidInitialScroll, fetchKey };
+                    const fetchMessages3 = MessageActionCreatorsDefault.fetchMessages;
+                    MessageActionCreatorsDefault;
+                    obj23 = getAdaptiveMessageLimit;
+                    obj5 = { messageId: channelId, flash: false };
+                    return fetchMessages3(obj4);
                   }
                 }
                 let isThreadResult1;
@@ -136,50 +160,38 @@ function fetchMessages(arg0) {
                   isThreadResult1 = channel.isThread();
                 }
                 if (isThreadResult1) {
+                  const obj15 = ReadStateStore;
                   if (ReadStateStore.hasTrackedUnread(channel.id)) {
-                    if (!obj10.ready) {
-                      const trackedAckMessageId = obj16.getTrackedAckMessageId(channel.id);
+                    if (!obj9.ready) {
+                      const trackedAckMessageId = obj15.getTrackedAckMessageId(channel.id);
                       const _HermesInternal = HermesInternal;
                       logger.log("Jumping to most recent message in thread " + channel.id + " - " + trackedAckMessageId);
-                      const obj6 = { channelId, limit: null, jump: null, isPreload: null, skipLocalFetch: null, avoidInitialScroll: null, fetchKey: null };
-                      const tmp9Result14 = tmp9(6876);
-                      obj6.limit = getAdaptiveMessageLimit.getMessageLimit("MessageManager.threadUnread");
-                      const obj8 = { messageId: trackedAckMessageId, flash: false, offset: 1 };
-                      obj6.jump = obj8;
-                      obj6.isPreload = isPreload;
-                      obj6.skipLocalFetch = skipLocalFetch;
-                      obj6.avoidInitialScroll = avoidInitialScroll;
-                      obj6.fetchKey = fetchKey;
-                      return tmp9Result14.fetchMessages(obj6);
+                      const obj7 = { channelId, limit: obj17.getMessageLimit("MessageManager.threadUnread"), jump: obj8, isPreload, skipLocalFetch, avoidInitialScroll, fetchKey };
+                      fetchMessages = MessageActionCreatorsDefault.fetchMessages;
+                      MessageActionCreatorsDefault;
+                      obj17 = getAdaptiveMessageLimit;
+                      obj8 = { messageId: trackedAckMessageId, flash: false, offset: 1 };
+                      return fetchMessages(obj7);
                     }
                   }
-                  obj16 = ReadStateStore;
                 }
-                const obj9 = { channelId, limit: null, isPreload: null, skipLocalFetch: null, jump: null, avoidInitialScroll: null, fetchKey: null };
-                const tmp9Result15 = tmp9(6876);
-                obj9.limit = getAdaptiveMessageLimit.getMessageLimit("MessageManager.initialFetch");
-                obj9.isPreload = isPreload;
-                obj9.skipLocalFetch = skipLocalFetch;
-                const obj11 = { jumpType: Client.JumpType.ANIMATED };
-                obj9.jump = obj11;
-                obj9.avoidInitialScroll = avoidInitialScroll;
-                obj9.fetchKey = fetchKey;
-                return tmp9Result15.fetchMessages(obj9);
+                const obj10 = { channelId, limit: obj20.getMessageLimit("MessageManager.initialFetch"), isPreload, skipLocalFetch, jump: obj11, avoidInitialScroll, fetchKey };
+                const fetchMessages2 = MessageActionCreatorsDefault.fetchMessages;
+                MessageActionCreatorsDefault;
+                obj20 = getAdaptiveMessageLimit;
+                obj11 = { jumpType: flow_Client.JumpType.ANIMATED };
+                return fetchMessages2(obj10);
               } else {
-                const obj12 = { channelId, messageId, flash: true, isPreload, skipLocalFetch, jumpType: tmp3, avoidInitialScroll };
-                tmp9(6876).jumpToMessage(obj12);
-                const tmp9Result16 = tmp9(6876);
+                const obj12 = { channelId, messageId, flash: true, isPreload, skipLocalFetch, jumpType: tmp, avoidInitialScroll };
+                const tmp7Result16 = MessageActionCreatorsDefault;
+                tmp7Result16.jumpToMessage(obj12);
               }
-              const tmp9Result12 = tmp9(5584);
             }
           }
-          if (!obj10.loadingMore) {
-            let tmp23 = null != guildId;
-            if (tmp23) {
-              tmp23 = null == GuildStore.getGuild(guildId);
-            }
+          if (!obj9.loadingMore) {
             flag = forceFetch;
-            if (!tmp23) {
+            const tmp22 = null != guildId && null == GuildStore.getGuild(guildId);
+            if (!tmp22) {
               flag = true;
             }
           }
@@ -187,8 +199,6 @@ function fetchMessages(arg0) {
           if (null != messageId) {
             flag = true;
           }
-          tmp15 = null != orCreate1.jumpTargetId && null == messageId;
-          tmp19 = null != obj7.focusTargetId && null == messageId;
         } else {
           const GUILD_THREADS_ONLY = constants3.GUILD_THREADS_ONLY;
         }
@@ -212,9 +222,12 @@ function handleConnectionOpen() {
     const channel1 = ChannelStore.getChannel(channelId);
     if (null != channel1) {
       const id2 = channel1.id;
-      const obj7 = matchPathCompat;
-      const obj2 = { path: collapsedCategories.CHANNEL(":guild", ":channel", ":message"), exact: true };
-      const matchPathResult = obj7.matchPath(router_utils.getHistory().location.pathname, obj2);
+      const matchPath = matchPathCompat.matchPath;
+      matchPathCompat;
+      const obj2 = { path: authStore4.CHANNEL(":guild", ":channel", ":message"), exact: true };
+      const obj7 = router_utils;
+      const pathname = obj7.getHistory().location.pathname;
+      const matchPathResult = matchPath(pathname, obj2);
       let message;
       if (matchPathResult != null) {
         const params = matchPathResult.params;
@@ -227,12 +240,12 @@ function handleConnectionOpen() {
       const id = channel1.id;
       const guildId = channel1.getGuildId();
       const currentSidebarChannelId = ChannelSectionStore.getCurrentSidebarChannelId(id);
+      const obj5 = ChannelSectionStore;
+      const tmp7 = fetchMessages;
       if (null != currentSidebarChannelId) {
         const obj4 = { guildId, channelId: currentSidebarChannelId, messageId: obj5.getCurrentSidebarMessageId(id) };
         tmp7(obj4);
       }
-      obj5 = ChannelSectionStore;
-      tmp7 = fetchMessages;
     }
   }
 }
@@ -242,7 +255,9 @@ function loadSelectedChannelIfNecessary() {
     const channel = ChannelStore.getChannel(channelId);
     if (null != channel) {
       if (isTextChannel(channel.type)) {
-        const orCreate = ChannelMessagesDefault.getOrCreate(channelId);
+        const obj2 = ChannelMessagesDefault;
+        const orCreate = obj2.getOrCreate(channelId);
+        const tmp7 = orCreate.ready && orCreate.hasFetched;
         if (!tmp7) {
           obj3 = { guildId: channel.getGuildId(), channelId: channel.id };
           fetchMessages(obj3);
@@ -250,26 +265,27 @@ function loadSelectedChannelIfNecessary() {
         const id2 = channel.id;
         const guildId = channel.getGuildId();
         const currentSidebarChannelId = ChannelSectionStore.getCurrentSidebarChannelId(id2);
+        const obj4 = ChannelSectionStore;
         if (null != currentSidebarChannelId) {
           const obj5 = { guildId, channelId: currentSidebarChannelId, messageId: obj4.getCurrentSidebarMessageId(id2) };
           fetchMessages(obj5);
         }
-        obj4 = ChannelSectionStore;
-        tmp7 = orCreate.ready && orCreate.hasFetched;
       } else {
         const id = channel.id;
         const guildId1 = channel.getGuildId();
         const currentSidebarChannelId1 = ChannelSectionStore.getCurrentSidebarChannelId(id);
+        const obj = ChannelSectionStore;
         if (null != currentSidebarChannelId1) {
           const obj6 = { guildId: guildId1, channelId: currentSidebarChannelId1, messageId: obj.getCurrentSidebarMessageId(id) };
           fetchMessages(obj6);
         }
-        obj = ChannelSectionStore;
       }
     }
   }
 }
 function handleChannelSelect(skipMessageFetch) {
+  let channelId;
+  let guildId;
   ({ guildId, channelId } = skipMessageFetch);
   if (skipMessageFetch.skipMessageFetch) {
     return false;
@@ -277,17 +293,21 @@ function handleChannelSelect(skipMessageFetch) {
     const obj = { guildId, channelId, messageId: tmp, jumpType: tmp2 };
     fetchMessages(obj);
     const currentSidebarChannelId = ChannelSectionStore.getCurrentSidebarChannelId(channelId);
+    const obj2 = ChannelSectionStore;
+    const tmp3 = fetchMessages;
     if (null != currentSidebarChannelId) {
-      obj3 = { guildId, channelId: currentSidebarChannelId, messageId: ChannelSectionStore.getCurrentSidebarMessageId(channelId) };
-      fetchMessages(obj3);
+      obj3 = { guildId, channelId: currentSidebarChannelId, messageId: obj2.getCurrentSidebarMessageId(channelId) };
+      tmp3(obj3);
     }
   }
 }
 function handleVoiceChannelSelect(guildId) {
-  fetchMessages({ guildId: guildId.guildId, channelId: guildId.channelId });
+  const obj = { guildId: guildId.guildId, channelId: guildId.channelId };
+  fetchMessages(obj);
 }
 function handleJumpToVoiceChannelMessage(guildId) {
-  fetchMessages({ guildId: guildId.guildId, channelId: guildId.channelId, messageId: guildId.messageId, jumpType: guildId.jumpType });
+  const obj = { guildId: guildId.guildId, channelId: guildId.channelId, messageId: guildId.messageId, jumpType: guildId.jumpType };
+  fetchMessages(obj);
 }
 function handleChannelSectionStoreChange() {
   const channelId = SelectedChannelStore.getChannelId();
@@ -299,59 +319,67 @@ function handleChannelSectionStoreChange() {
       if (sidebarState != null) {
         type = sidebarState.type;
       }
+      const tmp6 = type === SidebarActionTypes.SidebarType.VIEW_CHANNEL && sidebarState.channelId === channelId;
       if (!tmp6) {
         const currentSidebarChannelId = obj2.getCurrentSidebarChannelId(channelId);
         if (null != currentSidebarChannelId) {
-          const obj = { guildId, channelId: currentSidebarChannelId, messageId: obj2.getCurrentSidebarMessageId(channelId) };
+          const obj = { guildId, channelId: currentSidebarChannelId, messageId: ChannelSectionStore.getCurrentSidebarMessageId(channelId) };
           fetchMessages(obj);
         }
       }
-      tmp6 = type === SidebarActionTypes.SidebarType.VIEW_CHANNEL && sidebarState.channelId === channelId;
     }
   }
 }
 function handleChannelPreload(context) {
+  let channelId;
+  let guildId;
   ({ guildId, channelId } = context);
-  if (context.context === __initData) {
+  if (context.context === closure_15) {
     const obj = { guildId, channelId };
     fetchMessages(obj);
     const currentSidebarChannelId = ChannelSectionStore.getCurrentSidebarChannelId(channelId);
+    const obj2 = ChannelSectionStore;
+    const tmp = fetchMessages;
     if (null != currentSidebarChannelId) {
       obj3 = { guildId, channelId: currentSidebarChannelId, messageId: obj2.getCurrentSidebarMessageId(channelId) };
       tmp(obj3);
     }
-    obj2 = ChannelSectionStore;
-    tmp = fetchMessages;
   }
 }
 function handleChannelCreate(channel) {
   channel = channel.channel;
   const guild_id = channel.guild_id;
   let tmp = null != guild_id;
+  const messageId = channel.messageId;
   if (tmp) {
     tmp = SelectedChannelStore.getChannelId(guild_id) === channel.id;
   }
   if (tmp) {
-    const obj = { guildId: guild_id, channelId: channel.id, messageId: channel.messageId };
+    const obj = { guildId: guild_id, channelId: channel.id, messageId };
     fetchMessages(obj);
   }
 }
 function handleMessageEditEnd(response) {
+  let formatToPlainString;
+  let intl;
+  let obj2;
+  let qoxdQB;
   response = response.response;
   if (null != response) {
     if (null != response.body) {
       if (response.body.code === constants2.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
         const retry_after = response.body.retry_after;
         if (null != retry_after) {
-          const obj2 = { title: null, body: null };
-          const intl = util.intl;
-          obj2.title = intl.string(util.t.Whhv4w);
-          const intl2 = util.intl;
-          obj3 = { retryAfterMinutes: null };
+          const obj = { title: intl.string(intl3.t.Whhv4w), body: formatToPlainString(qoxdQB, obj2) };
+          const show = AlertActionCreatorsDefault.show;
+          AlertActionCreatorsDefault;
+          intl = intl3.intl;
+          const intl2 = intl3.intl;
+          formatToPlainString = intl2.formatToPlainString;
           const _Math = Math;
-          obj3.retryAfterMinutes = Math.ceil(retry_after / 60);
-          obj2.body = intl2.formatToPlainString(util.t.qoxdQB, obj3);
-          AlertActionCreatorsDefault.show(obj2);
+          obj2 = { retryAfterMinutes: Math.ceil(retry_after / 60) };
+          qoxdQB = intl3.t.qoxdQB;
+          show(obj);
         }
       }
     }
@@ -359,12 +387,18 @@ function handleMessageEditEnd(response) {
   return null;
 }
 function handleLoadMessagesSuccess(jump) {
+  let channelId;
+  let isPreview;
+  let isStale;
+  let obj2;
   ({ channelId, isStale, isPreview } = jump);
+  jump = jump.jump;
   if (isPreview === undefined) {
     isPreview = false;
   }
   if (!isPreview) {
     let num = closure_36[channelId];
+    const tmp = closure_36;
     if (num == null) {
       num = 0;
     }
@@ -379,20 +413,22 @@ function handleLoadMessagesSuccess(jump) {
       }
       if (isStale) {
         isStale = channelId === channelId1 || channelId === currentSidebarChannelId;
-        const tmp6 = channelId === channelId1 || channelId === currentSidebarChannelId;
       }
       if (isStale) {
-        const obj2 = { channelId, limit: null, jump: null };
-        const obj = MessageActionCreatorsDefault;
-        obj2.limit = getAdaptiveMessageLimit.getMessageLimit("MessageManager.staleFetch");
-        obj2.jump = jump.jump;
-        const messages = obj.fetchMessages(obj2);
+        const obj = { channelId, limit: obj2.getMessageLimit("MessageManager.staleFetch"), jump };
+        fetchMessages = MessageActionCreatorsDefault.fetchMessages;
+        MessageActionCreatorsDefault;
+        obj2 = getAdaptiveMessageLimit;
+        const messages = fetchMessages(obj);
       }
     }
-    tmp = closure_36;
   }
 }
 function handleUploadFail(arg0) {
+  let channelId;
+  let messageId;
+  let reason;
+  let shouldSendNotification;
   ({ messageId, reason } = arg0);
   let tmp2 = null != messageId;
   ({ channelId, shouldSendNotification } = arg0);
@@ -400,13 +436,13 @@ function handleUploadFail(arg0) {
     tmp2 = true !== tmp;
   }
   if (tmp2) {
-    const obj2 = { type: "MESSAGE_SEND_FAILED", channelId, messageId, reason: null, shouldNotify: null };
+    const obj = { type: "MESSAGE_SEND_FAILED", channelId, messageId, reason, shouldNotify: false !== shouldSendNotification };
+    const dispatch = DispatcherDefault.dispatch;
+    DispatcherDefault;
     if (reason == null) {
       reason = null;
     }
-    obj2.reason = reason;
-    obj2.shouldNotify = false !== shouldSendNotification;
-    DispatcherDefault.dispatch(obj2);
+    dispatch(obj);
   }
 }
 function handleAppWillBecomeActive() {
@@ -414,63 +450,65 @@ function handleAppWillBecomeActive() {
   if (null == channelId) {
     return false;
   } else {
-    const newLocalMessages = MessageActionCreatorsDefault.fetchNewLocalMessages(channelId, closure_1_14);
+    const obj = MessageActionCreatorsDefault;
+    const newLocalMessages = obj.fetchNewLocalMessages(channelId, authStore2);
   }
 }
-const isTextChannel = fn(2049).isTextChannel;
-const Constants = fn(1074);
+const isTextChannel = ChannelRecord.isTextChannel;
 ({ MAX_MESSAGES_PER_CHANNEL: closure_14, CURRENT_APP_CONTEXT: closure_15, ChannelTypes: closure_16, AbortCodes: closure_17, Routes: closure_18, ChannelTypesSets: closure_19 } = Constants);
-const isStaticChannelRoute = fn(2052).isStaticChannelRoute;
+const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 let closure_21 = 10 * DurationsDefault.Millis.SECOND;
-const logger = new LoggerDefault("MessageManager");
+let tmp3 = new LoggerDefault("MessageManager");
+const logger = tmp3;
 let closure_25 = 90 * DurationsDefault.Millis.DAY;
 const viewedThreadIds = "viewedThreadIds";
 let closure_36 = {};
-class MessageManager extends tmp4 {
+class MessageManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.fetchMessages = fetchMessages;
     applyArgumentsResult.loadSelectedChannelIfNecessary = loadSelectedChannelIfNecessary;
     map = new Map();
-    applyArgumentsResult.stores = map.set(closure_8, handleChannelSectionStoreChange);
-    obj1 = {
+    applyArgumentsResult.stores = map.set(ChannelSectionStore, handleChannelSectionStoreChange);
+    const obj = {
       APP_STATE_UPDATE_WILL_BECOME_ACTIVE: handleAppWillBecomeActive,
       OVERLAY_INITIALIZE: handleConnectionOpen,
       CHANNEL_SELECT: handleChannelSelect,
       VOICE_CHANNEL_SELECT: handleVoiceChannelSelect,
       THREAD_CREATE: handleChannelCreate,
       THREAD_LIST_SYNC() {
-            loadSelectedChannelIfNecessary();
-          },
+        loadSelectedChannelIfNecessary();
+      },
       CHANNEL_CREATE: handleChannelCreate,
       CHANNEL_PRELOAD: handleChannelPreload,
       GUILD_CREATE() {
-            loadSelectedChannelIfNecessary();
-          },
+        loadSelectedChannelIfNecessary();
+      },
       MESSAGE_END_EDIT: handleMessageEditEnd,
       LOAD_MESSAGES_SUCCESS: handleLoadMessagesSuccess,
       UPLOAD_FAIL: handleUploadFail,
       CHANNEL_DELETE() {
-            loadSelectedChannelIfNecessary();
-          },
+        loadSelectedChannelIfNecessary();
+      },
       THREAD_DELETE() {
-            loadSelectedChannelIfNecessary();
-          },
+        loadSelectedChannelIfNecessary();
+      },
       CHANNEL_RTC_JUMP_TO_VOICE_CHANNEL_MESSAGE: handleJumpToVoiceChannelMessage
     };
-    applyArgumentsResult.actions = obj1;
+    applyArgumentsResult.actions = obj;
     return applyArgumentsResult;
+  }
+  _initialize() {
+    const obj = DispatcherDefault;
+    const subscription = obj.subscribe("CONNECTION_OPEN", handleConnectionOpen);
+  }
+  _terminate() {
+    const obj = DispatcherDefault;
+    obj.unsubscribe("CONNECTION_OPEN", handleConnectionOpen);
   }
 }
 const prototype = MessageManager.prototype;
-prototype["_initialize"] = function _initialize() {
-  const subscription = DispatcherDefault.subscribe("CONNECTION_OPEN", handleConnectionOpen);
-};
-prototype["_terminate"] = function _terminate() {
-  DispatcherDefault.unsubscribe("CONNECTION_OPEN", handleConnectionOpen);
-};
 const messageManager = new MessageManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/MessageManager.tsx");
 
 export default messageManager;

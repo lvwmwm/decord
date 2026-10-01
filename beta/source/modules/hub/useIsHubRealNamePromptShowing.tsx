@@ -5,25 +5,29 @@
 // Exports: default
 
 // Module 12146 (useIsHubRealNamePromptShowing)
+import Constants from "Constants" /* 1074 */;
+import Constants2 from "Constants" /* 12148 */;
 import GuildPromptsActionCreatorsDefault from "GuildPromptsActionCreators" /* 12149 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildPromptsStore from "GuildPromptsStore" /* 12147 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const GuildPrompts = fn(12148).GuildPrompts;
-const size = fn(2);
+const GuildFeatures = Constants.GuildFeatures;
+const GuildPrompts = Constants2.GuildPrompts;
 const result = size.fileFinishedImporting("modules/hub/useIsHubRealNamePromptShowing.tsx");
 
 export default function useIsHubRealNamePromptShowing(arg0) {
+  let closure_0;
   _require = arg0;
+  let obj = require("get initialized");
   const items = [GuildStore, GuildPromptsStore, UserStore, GuildMemberStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const guild = GuildStore.getGuild(closure_0);
     let hasItem;
     if (guild != null) {
@@ -39,11 +43,13 @@ export default function useIsHubRealNamePromptShowing(arg0) {
       if (null == currentUser) {
         return null;
       } else {
-        let id;
+        let id1;
+        const getMember = GuildMemberStore.getMember;
+        const id = guild.id;
         if (currentUser != null) {
-          id = currentUser.id;
+          id1 = currentUser.id;
         }
-        const member = GuildMemberStore.getMember(guild.id, id);
+        const member = getMember(id, id1);
         let nick;
         if (member != null) {
           nick = member.nick;
@@ -53,14 +59,17 @@ export default function useIsHubRealNamePromptShowing(arg0) {
     }
   });
   const items1 = [stateFromStores, arg0];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     let tmp2 = null != closure_0;
+    const tmp = closure_0;
     if (tmp2) {
       tmp2 = null != stateFromStores;
     }
     if (tmp2) {
-      if (!stateFromStores) {
-        GuildPromptsActionCreatorsDefault.viewPrompt(GuildPrompts.REAL_NAME_PROMPT, closure_0);
+      const tmp4 = stateFromStores;
+      if (!tmp4) {
+        const obj = GuildPromptsActionCreatorsDefault;
+        obj.viewPrompt(GuildPrompts.REAL_NAME_PROMPT, tmp);
       }
     }
   }, items1);

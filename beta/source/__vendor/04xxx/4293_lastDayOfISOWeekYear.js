@@ -5,30 +5,33 @@
 // Exports: default
 
 // Module 4293 (lastDayOfISOWeekYear)
-import module_4075_mod from "module_4075" /* 4075 */;
+import getISOWeekYear_mod from "getISOWeekYear" /* 4075 */;
 import startOfISOWeek_mod from "startOfISOWeek" /* 4076 */;
 import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
-let module_4075 = module_4075_mod;
-if (!module_4075) {
-  const obj = { default: module_4075 };
-  let tmp3 = obj;
+let tmp3;
+let tmp5;
+let tmp7;
+let getISOWeekYear = getISOWeekYear_mod;
+if (!getISOWeekYear) {
+  tmp3 = { default: getISOWeekYear };
+  const obj = { default: getISOWeekYear };
 } else {
-  tmp3 = module_4075;
+  tmp3 = getISOWeekYear;
 }
-module_4075 = tmp3;
+getISOWeekYear = tmp3;
 let startOfISOWeek = startOfISOWeek_mod;
 if (!startOfISOWeek) {
+  tmp5 = { default: startOfISOWeek };
   const obj2 = { default: startOfISOWeek };
-  let tmp5 = obj2;
 } else {
   tmp5 = startOfISOWeek;
 }
 startOfISOWeek = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
+  tmp7 = { default: requiredArgs };
   const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
 } else {
   tmp7 = requiredArgs;
 }
@@ -36,11 +39,11 @@ requiredArgs = tmp7;
 
 export default function lastDayOfISOWeekYear(arg0) {
   requiredArgs.default(1, arguments);
+  const defaultResult1 = getISOWeekYear.default(arg0);
   const date = new Date(0);
-  date.setFullYear(module_4075.default(arg0) + 1, 0, 4);
+  date.setFullYear(defaultResult1 + 1, 0, 4);
   date.setHours(0, 0, 0, 0);
   const defaultResult2 = startOfISOWeek.default(date);
   defaultResult2.setDate(defaultResult2.getDate() - 1);
   return defaultResult2;
 };
-export default exports.default;

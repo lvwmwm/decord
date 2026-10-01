@@ -13,6 +13,10 @@ const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;
 let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useCardGridLayout.tsx");
 
 export default function useCardGridLayout() {
+  let containerWidth;
+  let maxWidth;
+  let obj3;
+  let sidePadding;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -33,13 +37,14 @@ export default function useCardGridLayout() {
   if (sidePadding === undefined) {
     sidePadding = PROFILE_SIDE_PADDING;
   }
+  const _Math = Math;
   if (containerWidth == null) {
     containerWidth = useWindowDimensionsDefault().width;
   }
   if (maxWidth == null) {
     maxWidth = Infinity;
   }
-  const diff = Math.min(containerWidth, maxWidth) - 2 * sidePadding;
+  const diff = min(containerWidth, maxWidth) - 2 * sidePadding;
   const bound = Math.max(1, Math.floor((diff + num3) / (num + num3)));
   const diff1 = diff;
   let tmp4 = diff1;
@@ -66,8 +71,8 @@ export default function useCardGridLayout() {
   const bound1 = Math.min(Math.max(tmp4, num), num2);
   const diff2 = num4 - 1;
   if (diff < bound1 * num4 + num3 * diff2) {
+    obj3 = { columns: 1, cardWidth: "Array", rowWidth: "channel", gap: num3 };
     const obj2 = { columns: 1, cardWidth: "Array", rowWidth: "channel", gap: num3 };
-    let obj3 = obj2;
   } else {
     obj3 = { columns: num4, cardWidth: bound1, rowWidth: bound1 * num4 + num3 * diff2, gap: num3 };
   }

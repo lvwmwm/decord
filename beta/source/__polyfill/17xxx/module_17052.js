@@ -3,6 +3,7 @@
 // Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 17051, 9330]
 
 // Module 17052
+import Fragment from "Fragment" /* 21 */;
 import _modDef9330 from "module_9330" /* 9330 */;
 import _modDef17051 from "module_17051" /* 17051 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -11,20 +12,17 @@ import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -32,42 +30,40 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const AnimatedCircularProgress = ["fill", "prefill"];
-get_ActivityIndicator = fn(17);
-const Animated = get_ActivityIndicator.Animated;
-const Easing = get_ActivityIndicator.Easing;
-const jsx = fn(21).jsx;
-_isNativeReflectConstruct = Animated.createAnimatedComponent(_modDef17051);
+let closure_0 = ["fill", "prefill"];
+const Animated = react_native.Animated;
+const Easing = react_native.Easing;
+const jsx = Fragment.jsx;
+const module_17051 = Animated.createAnimatedComponent(_modDef17051);
 class AnimatedCircularProgress {
-  constructor(arg0) {
-    self = this;
-    closure_0 = global;
-    tmp = c2(this, AnimatedCircularProgress);
-    items = [];
-    items[0] = global;
-    tmp2 = closure_4;
-    obj = closure_4(AnimatedCircularProgress);
-    tmp3 = closure_3;
-    if (closure_7()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
+  constructor(prefill) {
+    let constructResult;
+    let value;
+    const self = this;
+    closure_0 = prefill;
+    _classCallCheck(this, AnimatedCircularProgress);
+    const items = [prefill];
+    const obj = _getPrototypeOf(AnimatedCircularProgress);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
     } else {
       constructResult = obj.apply(self, items);
     }
-    tmp3Result = tmp3(self, constructResult);
-    obj1 = { fillAnimation: null };
-    value = new hasOwnProperty.Value(global.prefill);
-    obj1.fillAnimation = value;
-    tmp3Result.state = obj1;
-    if (global.onFillChange) {
-      fillAnimation = tmp3Result.state.fillAnimation;
-      addListenerResult = fillAnimation.addListener((value) => prefill.onFillChange(value.value));
+    const tmp3Result = tmp3(self, constructResult);
+    const obj2 = { fillAnimation: value };
+    value = new Animated.Value(prefill.prefill);
+    tmp3Result.state = obj2;
+    if (prefill.onFillChange) {
+      const fillAnimation = tmp3Result.state.fillAnimation;
+      fillAnimation.addListener((value) => closure_0.onFillChange(value.value));
     }
     return tmp3Result;
   }
 }
-_inherits(AnimatedCircularProgress, noop.PureComponent);
+_inherits(AnimatedCircularProgress, react.PureComponent);
 const entry = {
   key: "componentDidMount",
   value: function componentDidMount() {
@@ -88,14 +84,15 @@ let items = [
   {
     key: "reAnimate",
     value: function reAnimate(arg0, arg1, arg2, arg3) {
+      let value;
       const self = this;
-      closure_1 = arg1;
-      closure_2 = arg2;
+      let closure_1 = arg1;
+      let closure_2 = arg2;
       closure_0 = arg3;
-      const obj = { fillAnimation: null };
+      const setState = this.setState;
+      const obj = { fillAnimation: value };
       value = new Animated.Value(arg0);
-      obj.fillAnimation = value;
-      this.setState(obj, () => self.animate(closure_1, closure_2, closure_0));
+      setState(obj, () => self.animate(closure_1, closure_2, closure_0));
     }
   },
   {
@@ -106,15 +103,8 @@ let items = [
       if (arg0 < 0) {
         fill = self.props.fill;
       }
-      let duration = arg1;
-      if (!arg1) {
-        duration = self.props.duration;
-      }
-      let easing = arg2;
-      if (!arg2) {
-        easing = self.props.easing;
-      }
-      const timingResult = Animated.timing(self.state.fillAnimation, { useNativeDriver: self.props.useNativeDriver, toValue: fill, easing, duration, delay: self.props.delay });
+      const obj = { useNativeDriver: self.props.useNativeDriver, toValue: fill, easing: arg2 || self.props.easing, duration: arg1 || self.props.duration, delay: self.props.delay };
+      const timingResult = Animated.timing(self.state.fillAnimation, obj);
       timingResult.start(self.props.onAnimationComplete);
       return timingResult;
     }
@@ -122,13 +112,14 @@ let items = [
   {
     key: "animateColor",
     value: function animateColor() {
+      let items;
+      let tintColor;
       const self = this;
       if (this.props.tintColorSecondary) {
         const fillAnimation = self.state.fillAnimation;
-        const obj = { inputRange: [0, 100], outputRange: null };
-        const items = [self.props.tintColor, self.props.tintColorSecondary];
-        obj.outputRange = items;
-        let tintColor = fillAnimation.interpolate(obj);
+        const obj = { inputRange: [0, 100], outputRange: items };
+        items = [self.props.tintColor, self.props.tintColorSecondary];
+        tintColor = fillAnimation.interpolate(obj);
       } else {
         tintColor = self.props.tintColor;
       }
@@ -138,26 +129,20 @@ let items = [
   {
     key: "render",
     value: function render() {
+      let fill;
+      let prefill;
       const props = this.props;
       ({ fill, prefill } = props);
-      const obj = {};
-      const merged = Object.assign(_objectWithoutProperties(props, AnimatedCircularProgress));
-      obj.fill = this.state.fillAnimation;
-      obj.tintColor = this.animateColor();
-      return <_isNativeReflectConstruct />;
+      const merged = Object.assign(_objectWithoutProperties(props, closure_0));
+      return <module_17051 fill={this.state.fillAnimation} tintColor={this.animateColor()} />;
     }
   }
 ];
 const importDefaultResultResult = _createClass(AnimatedCircularProgress, items);
-let obj = {};
+let obj = { prefill: _modDef9330.number, duration: _modDef9330.number, easing: _modDef9330.func, onAnimationComplete: _modDef9330.func, useNativeDriver: _modDef9330.bool, delay: _modDef9330.number };
 let merged = Object.assign(_modDef17051.propTypes);
-obj.prefill = _modDef9330.number;
-obj.duration = _modDef9330.number;
-obj.easing = _modDef9330.func;
-obj.onAnimationComplete = _modDef9330.func;
-obj.useNativeDriver = _modDef9330.bool;
-obj.delay = _modDef9330.number;
 importDefaultResultResult.propTypes = obj;
-importDefaultResultResult.defaultProps = { duration: 500, easing: Easing.out(Easing.ease), prefill: 0, useNativeDriver: false, delay: 0 };
+let obj2 = { duration: 500, easing: Easing.out(Easing.ease), prefill: 0, useNativeDriver: false, delay: 0 };
+importDefaultResultResult.defaultProps = obj2;
 
 export default importDefaultResultResult;

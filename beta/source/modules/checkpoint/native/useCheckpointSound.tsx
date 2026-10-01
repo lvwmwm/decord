@@ -6,21 +6,29 @@
 
 // Module 15251 (useCheckpointSound)
 import SoundUtils from "SoundUtils" /* 9357 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import CheckpointStore from "CheckpointStore" /* 15246 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-({ useCallback: c2, useEffect: c3, useRef: closure_4 } = noop);
+let c2;
+let c3;
+let closure_4;
+({ useCallback: c2, useEffect: c3, useRef: closure_4 } = react);
 const result = size.fileFinishedImporting("modules/checkpoint/native/useCheckpointSound.tsx");
 
 export default function useCheckpointSound(arg0) {
+  let closure_0;
+  let isMuted;
+  let stateFromStores;
   _require = arg0;
+  let obj = require("get initialized");
   const items = [CheckpointStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => isMuted.isMuted);
-  let obj = require("initialize");
-  closure_3(() => () => {
+  stateFromStores = obj.useStateFromStores(items, () => isMuted.isMuted);
+  const ref = closure_4(null);
+  const tmp2 = closure_3(() => () => {
     const current = ref.current;
     let stopResult;
     if (current != null) {
@@ -29,14 +37,16 @@ export default function useCheckpointSound(arg0) {
     return stopResult;
   }, []);
   const items1 = [stateFromStores, arg0];
-  return closure_4(null)(() => {
-    if (!stateFromStores) {
+  return ref(() => {
+    const tmp = stateFromStores;
+    if (!tmp) {
       const current = ref.current;
       if (current != null) {
         current.stop();
       }
-      ref.current = SoundUtils.createSound(closure_0, "vibing_wumpus");
-      const current2 = tmp.current;
+      const obj = SoundUtils;
+      ref.current = obj.createSound(closure_0, "vibing_wumpus");
+      const current2 = tmp2.current;
       current2.play();
     }
   }, items1);

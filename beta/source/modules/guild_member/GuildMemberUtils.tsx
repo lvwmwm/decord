@@ -6,16 +6,21 @@
 
 // Module 11313 (GuildMemberUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
+import Constants from "Constants" /* 1074 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4455 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
 function getGuildMemberAgeInRange(arg0, arg1, arg2) {
+  let maxDaysOld;
+  let minDaysOld;
   ({ maxDaysOld, minDaysOld } = arg1);
   if (minDaysOld === undefined) {
     minDaysOld = 0;
@@ -34,6 +39,8 @@ function getGuildMemberAgeInRange(arg0, arg1, arg2) {
     let date = null;
     if (null != joinedAt1) {
       const _Date = Date;
+      const self = this;
+      const self2 = this;
       date = new Date(member.joinedAt);
     }
     joinedAt = date;
@@ -44,17 +51,12 @@ function getGuildMemberAgeInRange(arg0, arg1, arg2) {
     const _Date2 = Date;
     const timestamp = Date.now();
     const diff = timestamp - joinedAt.getTime();
-    let tmp13 = null == maxDaysOld;
-    if (!tmp13) {
-      tmp13 = diff <= c9 * maxDaysOld;
-    }
-    if (tmp13) {
-      tmp13 = diff >= c9 * minDaysOld;
-    }
-    return tmp13;
+    return (null == maxDaysOld || diff <= c9 * maxDaysOld) && diff >= c9 * minDaysOld;
   }
 }
 function canKickMember(user, guild, items) {
+  let obj;
+  let tmp3;
   let tmp = items;
   if (items === undefined) {
     items = [PermissionStore];
@@ -65,14 +67,8 @@ function canKickMember(user, guild, items) {
   if (tmp4) {
     const items1 = [tmp3];
     [obj] = items1;
-    let canManageUserResult = null != guild;
-    if (canManageUserResult) {
-      canManageUserResult = obj.canManageUser(Permissions.KICK_MEMBERS, user, guild);
-    }
-    if (canManageUserResult) {
-      canManageUserResult = !user.isNonUserBot();
-    }
-    tmp4 = canManageUserResult;
+    tmp4 = null != guild && obj.canManageUser(Permissions.KICK_MEMBERS, user, guild) && !user.isNonUserBot();
+    const canManageUserResult = null != guild && obj.canManageUser(Permissions.KICK_MEMBERS, user, guild) && !user.isNonUserBot();
   }
   if (tmp4) {
     tmp4 = !user.isProvisional;
@@ -80,6 +76,8 @@ function canKickMember(user, guild, items) {
   return tmp4;
 }
 function canBanMember(user, guild) {
+  let obj;
+  let tmp3;
   let tmp = arg2;
   if (arg2 === undefined) {
     const items = [PermissionStore];
@@ -90,42 +88,39 @@ function canBanMember(user, guild) {
   if (tmp4) {
     const items1 = [tmp3];
     [obj] = items1;
-    let canManageUserResult = null != guild;
-    if (canManageUserResult) {
-      canManageUserResult = obj.canManageUser(Permissions.BAN_MEMBERS, user, guild);
-    }
-    if (canManageUserResult) {
-      canManageUserResult = !user.isNonUserBot();
-    }
-    if (canManageUserResult) {
-      canManageUserResult = !user.bot;
-    }
-    tmp4 = canManageUserResult;
+    tmp4 = null != guild && obj.canManageUser(Permissions.BAN_MEMBERS, user, guild) && !user.isNonUserBot() && !user.bot;
+    const canManageUserResult = null != guild && obj.canManageUser(Permissions.BAN_MEMBERS, user, guild) && !user.isNonUserBot() && !user.bot;
   }
   if (tmp4) {
     tmp4 = !user.isProvisional;
   }
   return tmp4;
 }
-const GuildMemberFlags = fn(4455).GuildMemberFlags;
-const Permissions = fn(1074).Permissions;
+const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
+const Permissions = Constants.Permissions;
 let c9 = 86400000;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member/GuildMemberUtils.tsx");
 
 export { getGuildMemberAgeInRange };
 export const useGuildMemberAgeInRange = function useGuildMemberAgeInRange(arg0, arg1, arg2) {
+  let closure_0;
+  let closure_2;
   _require = arg0;
-  closure_1 = arg1;
+  let closure_1 = arg1;
   dependencyMap = arg2;
   const items = [arg1, arg0, arg2];
-  return require("initialize").useStateFromStores([], () => getGuildMemberAgeInRange(closure_0, closure_1, dependencyMap), items);
+  const obj = require("get initialized");
+  return obj.useStateFromStores([], () => getGuildMemberAgeInRange(closure_0, obj4, closure_2), items);
 };
 export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
+  let closure_0;
   _require = arg0;
-  closure_1 = arg1;
+  let closure_1 = arg1;
+  let obj = require("get initialized");
   const items = [GuildMemberStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const hasFlag = FlagUtils.hasFlag;
+    FlagUtils;
     const member = GuildMemberStore.getMember(closure_0, closure_1);
     let num;
     if (member != null) {
@@ -134,27 +129,27 @@ export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
     if (num == null) {
       num = 0;
     }
-    return FlagUtils.hasFlag(num, GuildMemberFlags.DID_REJOIN);
+    return hasFlag(num, GuildMemberFlags.DID_REJOIN);
   });
-  let obj = require("initialize");
   const items1 = [GuildStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => {
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     const guild = GuildStore.getGuild(closure_0);
     let tmp2 = null != guild;
     if (tmp2) {
       const _Date = Date;
-      tmp2 = Date.now() - SnowflakeUtilsDefault.extractTimestamp(guild.id) < 604800000;
-      const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(guild.id);
+      const obj = SnowflakeUtilsDefault;
+      const extractTimestampResult = obj.extractTimestamp(guild.id);
+      tmp2 = Date.now() - extractTimestampResult < 604800000;
     }
     return tmp2;
   });
-  const obj2 = require("initialize");
   const items2 = [UserStore];
   const obj4 = { maxDaysOld: 7 };
-  closure_129_0 = arg0;
-  closure_129_1 = obj4;
-  closure_129_2 = arg1;
-  const stateFromStores2 = require("initialize").useStateFromStores(items2, () => {
+  const obj3 = require("get initialized");
+  _require = arg0;
+  let closure_2 = arg1;
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => {
     const user = UserStore.getUser(closure_1);
     let bot;
     if (user != null) {
@@ -162,92 +157,75 @@ export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
     }
     return bot;
   });
-  const obj3 = require("initialize");
   const items3 = [obj4, arg0, arg1];
-  const obj5 = require("initialize");
-  return require("initialize").useStateFromStores([], () => getGuildMemberAgeInRange(closure_0, closure_1, dependencyMap), items3) && !stateFromStores1 && !stateFromStores2 && !stateFromStores;
+  const obj5 = require("get initialized");
+  const tmp4 = obj5.useStateFromStores([], () => getGuildMemberAgeInRange(closure_0, obj4, closure_2), items3) && !stateFromStores1 && !stateFromStores2 && !stateFromStores;
+  return tmp4;
 };
 export const useCanKickMember = function useCanKickMember(arg0, arg1) {
+  let closure_0;
   _require = arg0;
-  closure_1 = arg1;
+  let closure_1 = arg1;
   let items = [PermissionStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     const items = [PermissionStore];
     return canKickMember(closure_0, closure_1, items);
   });
 };
 export { canKickMember };
 export const hasKickMemberPerms = function hasKickMemberPerms(isNonUserBot, stateFromStores) {
+  let obj;
   let tmp = arg2;
   if (arg2 === undefined) {
     const items = [PermissionStore];
     tmp = items;
   }
   [obj] = tmp;
-  let canManageUserResult = null != stateFromStores;
-  if (canManageUserResult) {
-    canManageUserResult = obj.canManageUser(Permissions.KICK_MEMBERS, isNonUserBot, stateFromStores);
-  }
-  if (canManageUserResult) {
-    canManageUserResult = !isNonUserBot.isNonUserBot();
-  }
+  const canManageUserResult = null != stateFromStores && obj.canManageUser(Permissions.KICK_MEMBERS, isNonUserBot, stateFromStores) && !isNonUserBot.isNonUserBot();
   return canManageUserResult;
 };
 export const useCanBanMember = function useCanBanMember(arg0, arg1) {
+  let closure_0;
   _require = arg0;
-  closure_1 = arg1;
-  return require("initialize").useStateFromStores([], () => canBanMember(closure_0, closure_1));
+  let closure_1 = arg1;
+  const obj = require("get initialized");
+  return obj.useStateFromStores([], () => canBanMember(closure_0, closure_1));
 };
 export { canBanMember };
 export const hasBanMemberPerms = function hasBanMemberPerms(isNonUserBot, stateFromStores) {
+  let obj;
   let tmp = arg2;
   if (arg2 === undefined) {
     const items = [PermissionStore];
     tmp = items;
   }
   [obj] = tmp;
-  let canManageUserResult = null != stateFromStores;
-  if (canManageUserResult) {
-    canManageUserResult = obj.canManageUser(Permissions.BAN_MEMBERS, isNonUserBot, stateFromStores);
-  }
-  if (canManageUserResult) {
-    canManageUserResult = !isNonUserBot.isNonUserBot();
-  }
-  if (canManageUserResult) {
-    canManageUserResult = !isNonUserBot.bot;
-  }
+  const canManageUserResult = null != stateFromStores && obj.canManageUser(Permissions.BAN_MEMBERS, isNonUserBot, stateFromStores) && !isNonUserBot.isNonUserBot() && !isNonUserBot.bot;
   return canManageUserResult;
 };
 export const useCanManageMessages = function useCanManageMessages(arg0, arg1) {
+  let closure_0;
   _require = arg0;
-  closure_1 = arg1;
+  let closure_1 = arg1;
+  const obj = require("get initialized");
   let items = [PermissionStore];
-  return require("initialize").useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
+    let obj2;
     const items = [PermissionStore];
     [obj2] = items;
-    let canManageUserResult = null != obj && null != tmp;
-    if (canManageUserResult) {
-      canManageUserResult = obj2.canManageUser(Permissions.MANAGE_MESSAGES, obj, tmp);
-    }
-    if (canManageUserResult) {
-      canManageUserResult = !obj.isNonUserBot();
-    }
+    const canManageUserResult = null != obj && null != tmp && obj2.canManageUser(Permissions.MANAGE_MESSAGES, obj, tmp) && !obj.isNonUserBot();
     return canManageUserResult;
   });
 };
 export const canManageMessages = function canManageMessages(isNonUserBot, stateFromStores) {
+  let obj;
   let tmp = arg2;
   if (arg2 === undefined) {
     const items = [PermissionStore];
     tmp = items;
   }
   [obj] = tmp;
-  let canManageUserResult = null != isNonUserBot && null != stateFromStores;
-  if (canManageUserResult) {
-    canManageUserResult = obj.canManageUser(Permissions.MANAGE_MESSAGES, isNonUserBot, stateFromStores);
-  }
-  if (canManageUserResult) {
-    canManageUserResult = !isNonUserBot.isNonUserBot();
-  }
+  const canManageUserResult = null != isNonUserBot && null != stateFromStores && obj.canManageUser(Permissions.MANAGE_MESSAGES, isNonUserBot, stateFromStores) && !isNonUserBot.isNonUserBot();
   return canManageUserResult;
 };

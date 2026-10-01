@@ -5,20 +5,25 @@
 // Exports: default
 
 // Module 14762 (FormSeparator)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { container: { alignSelf: "stretch" }, margins: { marginTop: 16 }, separator: null };
-let size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-obj2.separator = size;
-let closure_2 = createStyles.createStyles(obj2);
-size = fn(2);
+let size;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const obj = { container: { alignSelf: "stretch" }, margins: { marginTop: 16 }, separator: size };
+size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+let closure_2 = createStyles.createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormSeparator.tsx");
 
 export default function FormSeparator(arg0) {
+  let style;
+  let withoutMargins;
   ({ style, withoutMargins } = arg0);
   const tmp = closure_2();
   const items = [tmp.container, , ];
@@ -26,8 +31,7 @@ export default function FormSeparator(arg0) {
   if (!withoutMargins) {
     margins = tmp.margins;
   }
-  const obj = { style: items, children: <View style={tmp.separator} /> };
   items[1] = margins;
   items[2] = style;
-  return <View style={items}><View style={tmp.separator} /></View>;
+  return <View style={items}>{null}</View>;
 };

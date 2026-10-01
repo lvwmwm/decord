@@ -5,11 +5,11 @@
 // Exports: default
 
 // Module 1219 (getSystemTheme)
-import _mod17 from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 import ThemeConstants from "ThemeConstants" /* 1185 */;
 import size from "module_2" /* 2 */;
 
-const Appearance = _mod17.Appearance;
+const Appearance = react_native.Appearance;
 const SystemTheme = ThemeConstants.SystemTheme;
 const result = size.fileFinishedImporting("modules/themes/getSystemTheme.native.tsx");
 

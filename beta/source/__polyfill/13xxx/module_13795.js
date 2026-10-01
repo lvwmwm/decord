@@ -13,15 +13,9 @@ if (module_13796) {
 }
 if (!module_13796) {
   module_13796 = (arg0) => {
-    closure_0 = arg0;
-    return () => {
-      const apply = call.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(tmp2);
-      } else {
-        applyArgumentsResult = apply(tmp2, arguments);
-      }
-      return applyArgumentsResult;
+    let closure_0 = arg0;
+    return function() {
+      return call(...arguments);
     };
   };
 }

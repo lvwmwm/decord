@@ -12,20 +12,24 @@ const result = size.fileFinishedImporting("modules/stage_channels/StageChannelHe
 
 export const CALL_ACTION_BAR_HEIGHT = 112;
 export const useGetStageRTCPanelHeight = function useGetStageRTCPanelHeight(stateFromStores) {
-  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(stateFromStores);
+  let num;
+  const obj = useStageBlockedUsersCount;
+  const stageBlockedUsersCount = obj.useStageBlockedUsersCount(stateFromStores);
   useStageBlockedUsersCount;
   if (stageBlockedUsersCount > 0) {
-    let num = 88;
+    num = 88;
   } else {
     num = 68;
   }
   return num;
 };
 export const useGetActionBarHeight = function useGetActionBarHeight(id) {
-  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(id);
+  let num;
+  const obj = useStageBlockedUsersCount;
+  const stageBlockedUsersCount = obj.useStageBlockedUsersCount(id);
   useStageBlockedUsersCount;
   if (stageBlockedUsersCount > 0) {
-    let num = 132;
+    num = 132;
   } else {
     num = 112;
   }

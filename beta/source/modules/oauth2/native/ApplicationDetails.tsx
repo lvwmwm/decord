@@ -6,116 +6,149 @@
 
 // Module 8733 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import ClockIcon from "ClockIcon" /* 4795 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import LockIcon from "LockIcon" /* 5409 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7787 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 8354 */;
 import scopes from "scopes" /* 8517 */;
 import disclosures from "disclosures" /* 8519 */;
-import Utils from "Utils" /* 8521 */;
-import ShieldIcon from "ShieldIcon" /* 8705 */;
-import noop from "module_19" /* 19 */;
+import EmbedIcon from "EmbedIcon" /* 8734 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-function ApplicationDetailsEntry(children) {
-  const iconComponent = children.iconComponent;
+let closure_4;
+let hasOwnProperty;
+let size;
+let tmp4;
+const intl5 = tmp4(1115);
+const LinkIcon = tmp4(4775);
+const ClockIcon = tmp4(4795);
+const LockIcon = tmp4(5409);
+const OAuth2Scopes = tmp4(7787);
+const Utils = tmp4(8521);
+const ShieldIcon = tmp4(8705);
+const HammerIcon = tmp4(8736);
+const RobotIcon = tmp4(8738);
+function ApplicationDetailsEntry(iconComponent) {
+  let items;
+  iconComponent = iconComponent.iconComponent;
+  const text = iconComponent.text;
   const tmp = closure_6();
-  const obj = { style: tmp.entry, children: null };
   let iconComponentResult = null;
+  const obj = { style: tmp.entry, children: items };
+  const tmp2 = hasOwnProperty;
+  const tmp3 = View;
   if (null != iconComponent) {
     const obj2 = { style: tmp.entryIcon };
     iconComponentResult = iconComponent(obj2);
   }
-  const items = [iconComponentResult, React4(Text_Text.Text, { variant: "text-sm/normal", color: "text-default", style: tmp.entryText, children: children.text })];
-  obj.children = items;
-  return hasOwnProperty(View, obj);
+  items = [iconComponentResult, ];
+  const obj3 = { variant: "text-sm/normal", color: "text-default", style: tmp.entryText, children: text };
+  items[1] = React3(Text_Text.Text, obj3);
+  return tmp2(tmp3, obj);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 }, entryIcon: null };
-let size = { width: 16, height: 16, tintColor: nativeDefault.colors.TEXT_MUTED };
-obj2.entryIcon = size;
-let closure_6 = createStyles.createStyles(obj2);
-size = fn(2);
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 }, entryIcon: size };
+size = { width: 16, height: 16, tintColor: nativeDefault.colors.TEXT_MUTED };
+let closure_6 = createStyles.createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/oauth2/native/ApplicationDetails.tsx");
 
 export default function ApplicationDetails(arg0) {
+  let application;
+  let approximateGuildCount;
+  let connectedAccount;
+  let disclosures;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let isEmbeddedFlow;
+  let items;
+  let obj10;
+  let obj5;
+  let redirectUri;
+  let scopes;
+  let tmp4Result;
   ({ application, scopes, redirectUri, approximateGuildCount, disclosures } = arg0);
   ({ isEmbeddedFlow, connectedAccount } = arg0);
-  const tmp2 = closure_6();
-  const date = new Date(SnowflakeUtilsDefault.extractTimestamp(application.id));
+  const tmp = closure_6();
+  let obj = SnowflakeUtilsDefault;
+  let tmp4 = require;
+  const date = new Date(obj.extractTimestamp(application.id));
+  let obj2 = scopes;
   let joined = null;
-  const securityMessage = scopes.getSecurityMessage(scopes);
+  const securityMessage = obj2.getSecurityMessage(scopes);
   if (null != redirectUri) {
     if (!isEmbeddedFlow) {
       try {
         const _URL = URL;
+        const self = this;
+        const self2 = this;
         const uRL = new URL(redirectUri);
-        const parts = uRL.href.split("/");
+        const str = uRL.href;
+        const parts = str.split("/");
         const substr = parts.slice(0, 3);
         joined = substr.join("/");
       } catch (err) {
-        joined = tmp;
+        joined = redirectUri;
       }
     }
   }
-  let obj3 = { style: tmp2.applicationDetails, children: null };
-  let tmp15 = null;
+  let obj3 = { style: tmp.applicationDetails, children: items };
+  let tmp12 = null;
+  const tmp10 = hasOwnProperty;
+  const tmp11 = View;
   if (null != joined) {
-    let obj4 = { iconComponent: tmp5(4775).LinkIcon, text: null };
-    const intl = tmp5(1115).intl;
-    const obj5 = { origin: joined };
-    obj4.text = intl.format(tmp5(1115).t["5k5OKD"], obj5);
-    tmp15 = React4(ApplicationDetailsEntry, obj4);
+    let obj4 = { iconComponent: LinkIcon.LinkIcon, text: intl.format(intl5.t["5k5OKD"], obj5) };
+    intl = intl5.intl;
+    obj5 = { origin: joined };
+    tmp12 = React3(ApplicationDetailsEntry, obj4);
   }
-  const items = [tmp15, , , , , , ];
-  const obj6 = { iconComponent: LockIcon.LockIcon, text: null };
-  const tmp13 = hasOwnProperty;
-  const tmp14 = View;
-  obj6.text = Utils.getApplicationDetailsText(application);
-  items[1] = React4(ApplicationDetailsEntry, obj6);
-  let tmp18Result = null;
+  items = [tmp12, , , , , , ];
+  const obj6 = { iconComponent: LockIcon.LockIcon, text: tmp4Result.getApplicationDetailsText(application) };
+  tmp4Result = Utils;
+  items[1] = React3(ApplicationDetailsEntry, obj6);
+  let tmp15Result = null;
   if (null != connectedAccount) {
-    const obj7 = { iconComponent: tmp5(8736).HammerIcon, text: null };
-    const intl2 = tmp5(1115).intl;
-    obj7.text = intl2.string(tmp5(1115).t["8qui3M"]);
-    tmp18Result = tmp18(tmp19, obj7);
+    const obj7 = { iconComponent: HammerIcon.HammerIcon, text: intl2.string(intl5.t["8qui3M"]) };
+    intl2 = intl5.intl;
+    tmp15Result = tmp15(tmp16, obj7);
   }
-  items[2] = tmp18Result;
-  const obj8 = { iconComponent: ClockIcon.ClockIcon, text: null };
-  const intl3 = tmp5(1115).intl;
-  obj8.text = intl3.formatToPlainString(util.t["+1bjc8"], { date });
-  items[3] = React4(ApplicationDetailsEntry, obj8);
-  let tmp18Result2 = null;
+  items[2] = tmp15Result;
+  const obj8 = { iconComponent: ClockIcon.ClockIcon, text: intl3.formatToPlainString(intl5.t["+1bjc8"], { date }) };
+  intl3 = intl5.intl;
+  items[3] = React3(ApplicationDetailsEntry, obj8);
+  let tmp15Result2 = null;
   if (scopes.includes(OAuth2Scopes.OAuth2Scopes.BOT)) {
-    tmp18Result2 = null;
+    tmp15Result2 = null;
     if (null != approximateGuildCount) {
-      const obj9 = { iconComponent: tmp5(8738).RobotIcon, text: null };
-      const intl4 = tmp5(1115).intl;
-      const obj10 = { guildCount: approximateGuildCount };
-      obj9.text = intl4.formatToPlainString(tmp5(1115).t.UHGHSP, obj10);
-      tmp18Result2 = tmp18(tmp19, obj9);
+      const obj9 = { iconComponent: RobotIcon.RobotIcon, text: intl4.formatToPlainString(intl5.t.UHGHSP, obj10) };
+      intl4 = intl5.intl;
+      obj10 = { guildCount: approximateGuildCount };
+      tmp15Result2 = tmp15(tmp16, obj9);
     }
   }
-  items[4] = tmp18Result2;
-  const tmp5Result = Utils;
-  items[5] = React4(ApplicationDetailsEntry, { iconComponent: ShieldIcon.ShieldIcon, text: securityMessage });
+  items[4] = tmp15Result2;
+  const obj11 = { iconComponent: ShieldIcon.ShieldIcon, text: securityMessage };
+  items[5] = React3(ApplicationDetailsEntry, obj11);
   let mapped = null;
   if (null != disclosures) {
     mapped = disclosures.map((toFixed) => {
-      const textForDisclosure = disclosures.getTextForDisclosure(toFixed);
+      let tmp4;
+      const obj = disclosures;
+      const textForDisclosure = obj.getTextForDisclosure(toFixed);
       if (disclosures.ApplicationDisclosure.IP_LOCATION === toFixed) {
-        const obj2 = { iconComponent: tmp(8354).GlobeEarthIcon };
-        let tmp4 = obj2;
+        tmp4 = { iconComponent: GlobeEarthIcon.GlobeEarthIcon };
+        const obj2 = { iconComponent: GlobeEarthIcon.GlobeEarthIcon };
       } else {
         tmp4 = null;
-        if (tmp(8519).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
-          const obj3 = { iconComponent: tmp(8734).EmbedIcon };
-          tmp4 = obj3;
+        if (disclosures.ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
+          tmp4 = { iconComponent: EmbedIcon.EmbedIcon };
+          const obj3 = { iconComponent: EmbedIcon.EmbedIcon };
         }
       }
       let tmp5 = null;
@@ -131,6 +164,5 @@ export default function ApplicationDetails(arg0) {
     });
   }
   items[6] = mapped;
-  obj3.children = items;
-  return tmp13(tmp14, obj3);
+  return tmp10(tmp11, obj3);
 };

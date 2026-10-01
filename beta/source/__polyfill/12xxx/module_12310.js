@@ -7,29 +7,22 @@
 import _mod12311 from "module_12311" /* 12311 */;
 import _mod12314 from "module_12314" /* 12314 */;
 
-require = arg1;
-const dependencyMap = arg6;
 function instrumentError() {
   onerror = _mod12314.GLOBAL_OBJ.onerror;
   _mod12314.GLOBAL_OBJ.onerror = function(msg, url, line, column, error) {
-    _mod12311.triggerHandlers("error", { column, error, line, msg, url });
-    if (!onerror) {
-      return tmp2;
-    } else {
-      const self = this;
-      const apply = onerror.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-    }
+    const obj = { column, error, line, msg, url };
+    const obj2 = _mod12311;
+    obj2.triggerHandlers("error", obj);
+    const applyResult = onerror && onerror(...arguments);
+    return applyResult;
   };
   _mod12314.GLOBAL_OBJ.onerror.__SENTRY_INSTRUMENTED__ = true;
 }
 let onerror = null;
 
 export const addGlobalErrorInstrumentationHandler = function addGlobalErrorInstrumentationHandler(arg0) {
-  _mod12311.addHandler("error", arg0);
-  _mod12311.maybeInstrument("error", instrumentError);
+  const obj = _mod12311;
+  obj.addHandler("error", arg0);
+  const obj2 = _mod12311;
+  obj2.maybeInstrument("error", instrumentError);
 };

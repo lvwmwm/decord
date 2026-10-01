@@ -6,27 +6,34 @@
 
 // Module 16516 (useSearchScreenError)
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import _modDef8905 from "module_8905" /* 8905 */;
+import SearchConstants from "SearchConstants" /* 7303 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8905 */;
 import SearchUtils from "SearchUtils" /* 11823 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 6699 */;
 import SearchQueryStore from "SearchQueryStore" /* 11822 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-let closure_6 = fn(7303).SEARCH_MESSAGE_TAB_SENTINEL;
-const size = fn(2);
+let closure_6 = SearchConstants.SEARCH_MESSAGE_TAB_SENTINEL;
 const result = size.fileFinishedImporting("modules/search/native/hooks/useSearchScreenError.tsx");
 
 export const useMessageSearchErrorScreen = function useMessageSearchErrorScreen(arg0) {
+  let callback;
+  let hasListItems;
+  let tmp5;
   ({ searchContext: require, tab: importDefault, hasListItems } = arg0);
   let stateFromStores;
   let ref;
+  const tmp = require;
+  const tmp2 = stateFromStores;
+  let obj = require("get initialized");
   const items = [SearchQueryStore, ref];
-  stateFromStores = require("initialize").useStateFromStores(items, () => {
-    const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(closure_1_0);
-    return SearchMessageStore.getError(SearchUtils.getSearchTabFetchId(closure_1_0, importDefault, searchResultsQuery));
+  stateFromStores = obj.useStateFromStores(items, () => {
+    const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(require);
+    const obj = SearchUtils;
+    return SearchMessageStore.getError(obj.getSearchTabFetchId(require, importDefault, searchResultsQuery));
   });
   let anyErrorMessage;
   if (stateFromStores != null) {
@@ -38,31 +45,32 @@ export const useMessageSearchErrorScreen = function useMessageSearchErrorScreen(
   }
   ref = anyErrorMessage.useRef(null);
   const items1 = [stateFromStores, anyErrorMessage];
-  let obj2 = { hasError: null != stateFromStores, errorText: anyErrorMessage, isErrorFullscreen: null, isErrorToast: null, showErrorToast: null };
-  let tmp5 = null != stateFromStores;
-  const callback = anyErrorMessage.useCallback(() => {
+  const obj2 = { hasError: null != stateFromStores, errorText: anyErrorMessage, isErrorFullscreen: tmp5, isErrorToast: null != stateFromStores && hasListItems, showErrorToast: callback };
+  tmp5 = null != stateFromStores;
+  callback = anyErrorMessage.useCallback(() => {
     if (stateFromStores !== ref.current) {
-      const obj2 = { key: "SEARCH_ERROR_TOAST", icon: _modDef8905, content: anyErrorMessage };
-      ToastActionCreatorsDefault.open(obj2);
+      const obj = { key: "SEARCH_ERROR_TOAST", icon: AssetRegistryDefault, content: anyErrorMessage };
+      const open = ToastActionCreatorsDefault.open;
+      ToastActionCreatorsDefault;
+      open(obj);
       tmp2.current = tmp;
     }
   }, items1);
   if (tmp5) {
     tmp5 = !hasListItems;
   }
-  obj2.isErrorFullscreen = tmp5;
-  obj2.isErrorToast = null != stateFromStores && hasListItems;
-  obj2.showErrorToast = callback;
   return obj2;
 };
 export const useMessageTabCountsErrorText = function useMessageTabCountsErrorText(searchContext) {
   searchContext = searchContext.searchContext;
+  let obj = searchContext(504);
   const items = [SearchQueryStore, SearchMessageStore];
-  return searchContext(504).useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
     const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
-    const searchTabFetchId = SearchUtils.getSearchTabFetchId(searchContext, closure_6, searchResultsQuery);
+    const obj = SearchUtils;
+    const searchTabFetchId = obj.getSearchTabFetchId(searchContext, closure_6, searchResultsQuery);
     if (SearchMessageStore.getIsInitialFetchComplete(searchTabFetchId)) {
-      if (null != obj2.getTotalCount(searchTabFetchId)) {
+      if (null != SearchMessageStore.getTotalCount(searchTabFetchId)) {
         return null;
       } else {
         const error = obj2.getError(searchTabFetchId);

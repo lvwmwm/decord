@@ -6,46 +6,54 @@
 
 // Module 11054 (OptInChannelsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import useChannelName from "useChannelName" /* 4989 */;
+import ReadStateConstants from "ReadStateConstants" /* 5018 */;
 import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 6531 */;
 import ChannelListState from "ChannelListState" /* 6948 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 6954 */;
 import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11055 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 6532 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _null, _require, dependencyMap;
 
+let c10;
+let c9;
+let closure_12;
+let tmp2;
+let unpackModuleId;
 const router_utils = tmp2(1101);
-require = fn;
 function setIndex(arg0, index) {
   arg0.index = index;
 }
-const Constants = fn(1074);
-({ Routes: closure_9, ChannelTypes: c10 } = Constants);
-const ChannelConstants = fn(2052);
-({ ChannelFlags: closure_11, StaticChannelRoute: closure_12 } = ChannelConstants);
-const ChannelListGuildActionRow = fn(6954).ChannelListGuildActionRow;
-const ReadStateTypes = fn(5018).ReadStateTypes;
-const size = fn(2);
+({ Routes: c9, ChannelTypes: c10 } = Constants);
+({ ChannelFlags: unpackModuleId, StaticChannelRoute: closure_12 } = ChannelConstants);
+const ChannelListGuildActionRow = GuildSidebarConstants.ChannelListGuildActionRow;
+const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 let result = size.fileFinishedImporting("modules/opt_in_channels/OptInChannelsUtils.tsx");
 
 export const useFilterCategoriesByQuery = function useFilterCategoriesByQuery(guildId, stateFromStores1, stateFromStores2, str) {
   _require = stateFromStores1;
   let formatted = str.toLowerCase();
-  const canSeeOnboardingHome = require("OnboardingHomeUtils").useCanSeeOnboardingHome(guildId);
+  let obj = require("OnboardingHomeUtils");
+  const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(guildId);
   const items = [canSeeOnboardingHome];
   const callback = canSeeOnboardingHome.useCallback((channel, arg1) => {
     let tmp = !canSeeOnboardingHome;
     if (canSeeOnboardingHome) {
       channel = channel.channel;
-      tmp = !channel.hasFlag(constants2.IS_GUILD_RESOURCE_CHANNEL);
+      tmp = !channel.hasFlag(unpackModuleId.IS_GUILD_RESOURCE_CHANNEL);
     }
     if (tmp) {
       let tmp4 = channel.channel.type !== constants.GUILD_DIRECTORY;
@@ -53,13 +61,15 @@ export const useFilterCategoriesByQuery = function useFilterCategoriesByQuery(gu
         let tmp6 = 0 === arg1.length;
         if (!tmp6) {
           const tmp9 = fuzzysearchDefault;
-          let hasItem = tmp9(arg1, useChannelName.computeChannelName(channel.channel, UserStore, RelationshipStore).toLowerCase());
+          const obj = useChannelName;
+          const str = obj.computeChannelName(channel.channel, UserStore, RelationshipStore);
+          let hasItem = tmp9(arg1, str.toLowerCase());
           if (!hasItem) {
-            formatted = channel.channel.topic.toLowerCase();
+            const str2 = channel.channel.topic;
+            formatted = str2.toLowerCase();
             hasItem = formatted.includes(arg1);
           }
           tmp6 = hasItem;
-          const str = useChannelName.computeChannelName(channel.channel, UserStore, RelationshipStore);
         }
         tmp4 = tmp6;
       }
@@ -69,27 +79,21 @@ export const useFilterCategoriesByQuery = function useFilterCategoriesByQuery(gu
   }, items);
   const items1 = [stateFromStores1, stateFromStores2, callback, formatted];
   return canSeeOnboardingHome.useMemo(() => {
-    const obj = { null: [], _categories: [] };
-    const item = stateFromStores2[constants.GUILD_CATEGORY].forEach((channel) => {
+    let _categories;
+    const obj = { null: [], _categories: _categories.filter((channel) => "null" === channel.channel.id || 0 === formatted.length || obj[channel.channel.id].length > 0) };
+    const arr = stateFromStores2[constants.GUILD_CATEGORY];
+    const item = arr.forEach((channel) => {
       channel = channel.channel;
       if ("null" === channel.id) {
-        const _null = closure_0.null;
+        _null = _null.null;
         obj.null = _null.filter((item) => closure_1_4(item, closure_1_2));
       }
-      obj[channel.id] = closure_0[channel.id].filter((item) => closure_1_4(item, closure_1_2));
+      const arr2 = _null[channel.id];
+      obj[channel.id] = arr2.filter((item) => closure_1_4(item, closure_1_2));
     });
-    const _categories = obj._categories;
-    obj._categories = _categories.filter((channel) => {
-      let tmp = "null" === channel.channel.id;
-      if (!tmp) {
-        tmp = 0 === formatted.length;
-      }
-      if (!tmp) {
-        tmp = obj[channel.channel.id].length > 0;
-      }
-      return tmp;
-    });
-    const item1 = stateFromStores2(formatted[13])(obj._categories, obj).forEach(setIndex);
+    _categories = obj._categories;
+    const arr3 = stateFromStores2(formatted[13])(obj._categories, obj);
+    const item1 = arr3.forEach(setIndex);
     return obj;
   }, items1);
 };
@@ -101,9 +105,9 @@ export const getFirstRouteFor = function getFirstRouteFor(getSections) {
     const row = guildActionSection.getRow(0);
     if (ChannelListGuildActionRow.GUILD_HOME === row) {
       return constants3.GUILD_HOME;
-    } else if (tmp5.GUILD_ROLE_SUBSCRIPTIONS === row) {
+    } else if (ChannelListGuildActionRow.GUILD_ROLE_SUBSCRIPTIONS === row) {
       return constants3.ROLE_SUBSCRIPTIONS;
-    } else if (tmp5.GUILD_MOD_DASH_MEMBER_SAFETY === row) {
+    } else if (ChannelListGuildActionRow.GUILD_MOD_DASH_MEMBER_SAFETY === row) {
       return constants3.MEMBER_SAFETY;
     }
   }
@@ -131,33 +135,36 @@ export const clearRecentChannels = function clearRecentChannels(arg0, arr) {
   if (arg2 === undefined) {
     tmp = null;
   }
-  RecentChannelsActionCreators.bulkClearRecents(arg0, arr);
-  ReadStateActionCreators.bulkAck(arr.map((channelId) => ({ channelId, readStateType: constants.CHANNEL, messageId: ReadStateStore.lastMessageId(channelId) })));
+  let obj = RecentChannelsActionCreators;
+  obj.bulkClearRecents(arg0, arr);
+  const obj2 = ReadStateActionCreators;
+  obj2.bulkAck(arr.map((channelId) => {
+    const obj = { channelId, readStateType: constants.CHANNEL, messageId: ReadStateStore.lastMessageId(channelId) };
+    return obj;
+  }));
   if (null != tmp) {
-    router_utils.transitionTo(React7.CHANNEL(arg0, tmp));
     const tmp2Result = router_utils;
+    tmp2Result.transitionTo(React4.CHANNEL(arg0, tmp));
   }
 };
 export const useChannelBrowserSections = function useChannelBrowserSections(guildId, filterCategoriesByQuery, arg2, rowHeight) {
+  let closure_2;
   _require = guildId;
-  closure_1 = filterCategoriesByQuery;
   dependencyMap = arg2;
-  let result = require("DismissibleContentUnsafeUtils").useIsDismissibleContentDismissed_UNSAFE(require("dismissible_content").DismissibleContent.CHANNEL_BROWSER_NUX);
   let obj = require("DismissibleContentUnsafeUtils");
+  let result = obj.useIsDismissibleContentDismissed_UNSAFE(require("dismissible_content").DismissibleContent.CHANNEL_BROWSER_NUX);
   const items = [ChannelStore];
   const items1 = [guildId];
-  closure_3 = require("initialize").useStateFromStoresObject(items, () => {
+  const obj2 = require("get initialized");
+  let closure_3 = obj2.useStateFromStoresObject(items, () => {
     const obj = {};
-    const mutableGuildChannelsForGuild = ChannelStore.getMutableGuildChannelsForGuild(closure_0);
+    const mutableGuildChannelsForGuild = ChannelStore.getMutableGuildChannelsForGuild(guildId);
     for (const key10009 in mutableGuildChannelsForGuild) {
       let parent_id = mutableGuildChannelsForGuild[key10009].parent_id;
       if (null == parent_id) {
         continue;
       } else {
-        let num = obj[parent_id];
-        if (num == null) {
-          num = 0;
-        }
+        let num = obj[parent_id] ?? 0;
         obj[parent_id] = num + 1;
         continue;
       }
@@ -167,37 +174,40 @@ export const useChannelBrowserSections = function useChannelBrowserSections(guil
   }, items1);
   const _categories = filterCategoriesByQuery._categories;
   const mapped = _categories.map((channel) => {
+    let num;
+    let num3;
     if ("null" === channel.channel.id) {
-      let num = arr.length;
+      num = arr.length;
     } else {
       num = 1;
     }
-    const obj = { rowCount: num, rowHeight: null };
-    let num3 = 0;
-    if (0 !== closure_1[channel.channel.id].length) {
+    const obj = { rowCount: num, rowHeight: num3 };
+    num3 = 0;
+    if (0 !== filterCategoriesByQuery[channel.channel.id].length) {
       num3 = closure_2;
     }
-    obj.rowHeight = num3;
     return obj;
   });
   if (!result) {
+    let tmp2 = null;
     result = null == rowHeight;
   }
   if (!result) {
     const obj3 = { rowCount: 1, rowHeight };
-    mapped.unshift(obj3);
+    const arr = mapped.unshift(obj3);
   }
   return mapped;
 };
 export const useChannelBrowserChannelCount = function useChannelBrowserChannelCount(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [GuildCategoryStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => GuildCategoryStore.getCategories(closure_0));
-  let sum = stateFromStores._categories[stateFromStores._categories.length - 1];
-  if (null == sum) {
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => GuildCategoryStore.getCategories(closure_0));
+  if (null == stateFromStores._categories[stateFromStores._categories.length - 1]) {
     return 0;
   } else {
-    const channel = sum.channel;
+    const channel = tmp2.channel;
     let str;
     if (channel != null) {
       str = channel.id;
@@ -205,24 +215,32 @@ export const useChannelBrowserChannelCount = function useChannelBrowserChannelCo
     if (str == null) {
       str = "null";
     }
-    if (null == stateFromStores[str]) {
-      return 0;
-    } else if (0 === arr2.length) {
-      sum = sum.index + 2;
-      let diff = sum - length;
-    } else {
-      diff = arr2[arr2.length - 1].index + 2 - length;
+    let num2 = 0;
+    if (null != stateFromStores[str]) {
+      let diff;
+      if (0 === stateFromStores[str].length) {
+        diff = tmp2.index + 2 - length;
+      } else {
+        diff = arr2[arr2.length - 1].index + 2 - length;
+      }
+      num2 = diff;
     }
+    return num2;
   }
 };
 export const getActiveAgoTimestamp = function getActiveAgoTimestamp(id) {
-  const intl = util.intl;
-  const tmp = _modDef4421;
+  let tmp2Result;
+  const intl = intl2.intl;
+  const formatToPlainString = intl.formatToPlainString;
+  const v8N0BHR = intl2.t["8N0BHR"];
+  const tmp2 = _modDef4421;
+  const extractTimestamp = SnowflakeUtilsDefault.extractTimestamp;
+  SnowflakeUtilsDefault;
   let lastMessageIdResult = ReadStateStore.lastMessageId(id);
   if (lastMessageIdResult == null) {
     lastMessageIdResult = id;
   }
-  const obj2 = { timeAgo: null };
-  obj2.timeAgo = tmp(SnowflakeUtilsDefault.extractTimestamp(lastMessageIdResult)).fromNow();
-  return intl.formatToPlainString(util.t["8N0BHR"], obj2);
+  const obj = { timeAgo: tmp2Result.fromNow() };
+  tmp2Result = tmp2(extractTimestamp(lastMessageIdResult));
+  return formatToPlainString(v8N0BHR, obj);
 };

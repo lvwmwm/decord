@@ -5,23 +5,27 @@
 // Exports: default
 
 // Module 16861 (useIsConnectedToVoiceChannel)
+import Constants from "Constants" /* 1074 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const RTCConnectionStates = fn(1074).RTCConnectionStates;
-const size = fn(2);
+const RTCConnectionStates = Constants.RTCConnectionStates;
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useIsConnectedToVoiceChannel.tsx");
 
 export default function useIsConnectedToVoiceChannel(arg0) {
+  let closure_0;
   _require = arg0;
+  let obj = require("get initialized");
   const items = [RTCConnectionStore, VoiceStateStore, AuthenticationStore];
-  return require("initialize").useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
     const channelId = RTCConnectionStore.getChannelId();
     let tmp2 = closure_0;
+    const obj = RTCConnectionStore;
     if (closure_0 == null) {
       tmp2 = channelId;
     }
@@ -38,6 +42,5 @@ export default function useIsConnectedToVoiceChannel(arg0) {
       }
       return false;
     }
-    obj = RTCConnectionStore;
   });
 };

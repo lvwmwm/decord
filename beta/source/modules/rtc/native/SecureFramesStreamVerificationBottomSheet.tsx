@@ -5,23 +5,26 @@
 // Exports: default
 
 // Module 9179 (SecureFramesStreamVerificationBottomSheet)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import showShareActionSheet from "showShareActionSheet" /* 7809 */;
 import SecureFramesTracking from "SecureFramesTracking" /* 9174 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4875 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticsSections = fn(1074).AnalyticsSections;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const AnalyticsSections = Constants.AnalyticsSections;
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/rtc/native/SecureFramesStreamVerificationBottomSheet.tsx");
 
 export default function SecureFramesStreamVerificationBottomSheet(channelId) {
+  let obj4;
   channelId = channelId.channelId;
   const streamKey = channelId.streamKey;
+  let obj = channelId(504);
   const items = [StreamRTCConnectionStore];
   const items1 = [channelId];
-  const stateFromStores = channelId(504).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const secureFramesState = StreamRTCConnectionStore.getSecureFramesState(streamKey);
     let epochAuthenticator;
     if (secureFramesState != null) {
@@ -29,23 +32,21 @@ export default function SecureFramesStreamVerificationBottomSheet(channelId) {
     }
     return epochAuthenticator;
   });
-  const callback = noop.useCallback((message) => {
-    const result = SecureFramesTracking.trackE2EEStreamVerificationShareClicked({ channelId });
+  const callback = react.useCallback((message) => {
+    const obj = SecureFramesTracking;
     const obj2 = { channelId };
-    showShareActionSheet.showShareActionSheet({ message }, AnalyticsSections.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
+    const result = obj.trackE2EEStreamVerificationShareClicked(obj2);
+    const obj3 = showShareActionSheet;
+    const obj4 = { message };
+    obj3.showShareActionSheet(obj4, AnalyticsSections.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
-  let obj2 = { title: null, subtitle: null, footer: null, epochAuthenticator: null, onShareClick: null };
-  let obj = channelId(504);
+  streamKey(9180);
   const intl = channelId(1115).intl;
-  obj2.title = intl.string(channelId(1115).t.QogHld);
   const intl2 = channelId(1115).intl;
-  obj2.subtitle = intl2.string(channelId(1115).t.qODBkW);
   const intl3 = channelId(1115).intl;
-  const obj3 = { helpArticle: null };
-  const tmp3 = streamKey(9180);
-  obj3.helpArticle = channelId(9163).getSecureFramesHelpdeskArticle();
-  obj2.footer = intl3.format(channelId(1115).t["H3+ktv"], obj3);
-  obj2.epochAuthenticator = stateFromStores;
-  obj2.onShareClick = callback;
-  return <tmp3 title={null} subtitle={null} footer={null} epochAuthenticator={null} onShareClick={null} />;
+  const format = intl3.format;
+  let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
+  const prop = channelId(1115).t["H3+ktv"];
+  obj4 = channelId(9163);
+  return <tmp3 title={intl.string(channelId(1115).t.QogHld)} subtitle={intl2.string(channelId(1115).t.qODBkW)} footer={format(prop, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 };

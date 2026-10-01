@@ -5,58 +5,62 @@
 // Exports: NativePaymentContextProvider
 
 // Module 10282 (NativePaymentContext)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1085 */;
 import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6675 */;
 import ContextUtilsDefault from "ContextUtils" /* 6848 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4493 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PaymentGateways = fn(1085).PaymentGateways;
-const jsx = fn(21).jsx;
-[closure_7, tmp4, tmp5] = ContextUtilsDefault();
-const size = fn(2);
+let metroImportDefault;
+let tmp4;
+let tmp5;
+const PaymentGateways = Constants.PaymentGateways;
+const jsx = Fragment.jsx;
+[metroImportDefault, tmp4, tmp5] = ContextUtilsDefault();
+_slicedToArray(ContextUtilsDefault(), 3);
 const result = size.fileFinishedImporting("modules/payments/native/NativePaymentContext.tsx");
 
 export const NativePaymentContextProvider = function NativePaymentContextProvider(skuIDs) {
+  let activeSubscription;
+  let children;
+  const f91005 = () => {
+    let value = null;
+    if (null != selectedPlanId) {
+      value = SubscriptionPlanStore.get(tmp);
+    }
+    return value;
+  };
   skuIDs = skuIDs.skuIDs;
   let storeFront;
   let selectedPlanId;
   ({ children, activeSubscription } = skuIDs);
-  const nativeIAPPayments = storeFront(selectedPlanId[6]).useNativeIAPPayments();
+  let obj = storeFront(selectedPlanId[6]);
+  const nativeIAPPayments = obj.useNativeIAPPayments();
   storeFront = nativeIAPPayments.storeFront;
   const items = [storeFront, skuIDs];
-  const effect = noop.useEffect(() => {
+  const nativePaymentsConnected = nativeIAPPayments.nativePaymentsConnected;
+  const effect = react.useEffect(() => {
     let isFetchingForSKUsResult = null == storeFront;
+    const tmp = storeFront;
     if (!isFetchingForSKUsResult) {
       isFetchingForSKUsResult = SubscriptionPlanStore.isFetchingForSKUs(skuIDs);
     }
     if (!isFetchingForSKUsResult) {
-      const subscriptionPlansBySKUs = SubscriptionPlanActionCreators.fetchSubscriptionPlansBySKUs(skuIDs, storeFront.country, PaymentGateways.APPLE_ADVANCED_COMMERCE);
+      const obj = SubscriptionPlanActionCreators;
+      const subscriptionPlansBySKUs = obj.fetchSubscriptionPlansBySKUs(skuIDs, tmp.country, PaymentGateways.APPLE_ADVANCED_COMMERCE);
     }
   }, items);
   const tmp3 = storeFront(selectedPlanId[8])();
   selectedPlanId = tmp3.selectedPlanId;
-  let obj = storeFront(selectedPlanId[6]);
+  const setSelectedPlanId = tmp3.setSelectedPlanId;
   const items1 = [SubscriptionPlanStore];
   const items2 = [selectedPlanId];
-  const obj3 = { value: null, children: null };
   const obj2 = skuIDs(selectedPlanId[9]);
-  obj3.value = {
-    isReadyToPurchase: nativeIAPPayments.nativePaymentsConnected,
-    setSelectedPlanId: tmp3.setSelectedPlanId,
-    selectedPlan: skuIDs(selectedPlanId[9]).useStateFromStores(items1, () => {
-      value = null;
-      if (null != selectedPlanId) {
-        value = SubscriptionPlanStore.get(tmp);
-      }
-      return value;
-    }, items2),
-    storeFront,
-    activeSubscription
-  };
-  obj3.children = children;
-  return <redux.Provider value={null}>{null}</redux.Provider>;
+  ({ isReadyToPurchase: nativePaymentsConnected, setSelectedPlanId, selectedPlan: obj2.useStateFromStores(items1, f91005, items2), storeFront, activeSubscription });
+  return <redux.Provider value={{ isReadyToPurchase: nativePaymentsConnected, setSelectedPlanId, selectedPlan: obj2.useStateFromStores(items1, f91005, items2), storeFront, activeSubscription }}>{children}</redux.Provider>;
 };
 export const useNativeIAPPaymentContext = tmp4;
 export const useForwardedNativePaymentContext = tmp5;

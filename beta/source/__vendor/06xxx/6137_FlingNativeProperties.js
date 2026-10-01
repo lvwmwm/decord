@@ -4,5 +4,6 @@
 // Dependencies: []
 
 // Module 6137 (FlingNativeProperties)
+new Set(["direction", "numberOfPointers"]);
 
 export const FlingNativeProperties = new Set(["direction", "numberOfPointers"]);

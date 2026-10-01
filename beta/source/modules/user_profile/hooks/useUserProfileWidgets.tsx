@@ -8,25 +8,31 @@
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
 import WidgetStore from "WidgetStore" /* 7039 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useUserProfileWidgets.tsx");
 
 export default function useUserProfileWidgets(arg0) {
+  let closure_0;
+  let pendingWidgets;
   _require = arg0;
   const items = [AuthenticationStore];
   const items1 = [arg0];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => null != closure_0 && AuthenticationStore.getId() === closure_0, items1);
-  const obj = require("initialize");
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const tmp = null != closure_0 && AuthenticationStore.getId() === closure_0;
+    return tmp;
+  }, items1);
   const items2 = [WidgetStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items2, () => pendingWidgets.getPendingWidgets());
-  const obj2 = require("initialize");
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => pendingWidgets.getPendingWidgets());
   const items3 = [UserProfileStore];
   const items4 = [arg0];
-  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items3, () => {
+  const obj3 = require("get initialized");
+  const stateFromStoresArray = obj3.useStateFromStoresArray(items3, () => {
     if (null == closure_0) {
       return [];
     } else {

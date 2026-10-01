@@ -5,20 +5,27 @@
 // Exports: default, useHasForLaterPremiumType
 
 // Module 7276 (hasForLaterPremiumType)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1970 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PremiumTypes = fn(1374).PremiumTypes;
-const size = fn(2);
+const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/saved_messages/hasForLaterPremiumType.tsx");
 
 export default function hasForLaterPremiumType() {
   const currentUser = UserStore.getCurrentUser();
-  return PremiumTypeUtils.isPremium(currentUser, PremiumTypes.TIER_2);
+  const obj = PremiumTypeUtils;
+  return obj.isPremium(currentUser, PremiumTypes.TIER_2);
 };
 export const useHasForLaterPremiumType = function useHasForLaterPremiumType() {
+  let TIER_2;
+  let currentUser;
+  let obj = get_initialized;
   const items = [UserStore];
-  return initialize.useStateFromStores(items, () => PremiumTypeUtils.isPremium(currentUser.getCurrentUser(), TIER_2.TIER_2));
+  return obj.useStateFromStores(items, () => {
+    const obj = PremiumTypeUtils;
+    return obj.isPremium(currentUser.getCurrentUser(), TIER_2.TIER_2);
+  });
 };

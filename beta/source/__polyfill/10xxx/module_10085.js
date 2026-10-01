@@ -11,19 +11,14 @@ import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const SVTimeUnitCasualRelativeFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -35,23 +30,23 @@ const regExp = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|k
 const regExp1 = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|kommande|efter|\\+|-)\\s*(" + _mod10083.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
 class SVTimeUnitCasualRelativeFormatParser {
   constructor() {
-    flag = global;
-    if (global === undefined) {
+    let constructResult;
+    let flag = arg0;
+    if (arg0 === undefined) {
       flag = true;
     }
-    self = this;
-    tmp = c2(this, SVTimeUnitCasualRelativeFormatParser);
-    tmp2 = closure_4;
-    obj = closure_4(SVTimeUnitCasualRelativeFormatParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
+    const self = this;
+    _classCallCheck(this, SVTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(SVTimeUnitCasualRelativeFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
       constructResult = obj.apply(self, undefined);
     }
-    tmp3Result = tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
     tmp3Result.allowAbbreviations = flag;
     return tmp3Result;
   }
@@ -68,12 +63,14 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const formatted = arg1[1].toLowerCase();
-      const parseDurationResult = SVTimeUnitCasualRelativeFormatParser(10083).parseDuration(arg1[2]);
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const parseDurationResult = _mod10083.parseDuration(arg1[2]);
       if (parseDurationResult) {
         if ("f\u00F6rra" !== formatted) {
+          let reverseDurationResult;
           if ("passerade" !== formatted) {
-            let reverseDurationResult = parseDurationResult;
+            reverseDurationResult = parseDurationResult;
           }
           const ParsingComponents = tmp2(9898).ParsingComponents;
           return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);

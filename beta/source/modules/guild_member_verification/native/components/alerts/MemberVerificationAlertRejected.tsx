@@ -5,32 +5,49 @@
 // Exports: default
 
 // Module 5856 (MemberVerificationAlertRejected)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import UserStore from "UserStore" /* 1372 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsxProd = fn(21);
-({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const size = fn(2);
+let currentUser;
+
+let c10;
+let c9;
+let metroImportAll;
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let result = size.fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertRejected.tsx");
 
 export default function MemberVerificationAlertRejected(guildId) {
+  let canReapply;
+  let formatToPlainStringResult;
+  let intl4;
+  let isLoading;
+  let items6;
+  let obj6;
+  let tmp17Result;
+  let tmp20;
+  let tmp21;
   guildId = guildId.guildId;
-  const onClose = guildId.onClose;
+  let onClose = guildId.onClose;
+  const secondaryButton = guildId.secondaryButton;
   const merged = Object.assign(guildId, Object.assign({ guildId: 0, secondaryButton: 0, onClose: 0 }));
   let stateFromStores;
   let stateFromStores2;
-  const currentUserGuildJoinRequest = guildId(stateFromStores[6]).useCurrentUserGuildJoinRequest(guildId);
+  const tmp2 = guildId;
+  const tmp3 = stateFromStores;
+  let obj = guildId(stateFromStores[6]);
+  const currentUserGuildJoinRequest = obj.useCurrentUserGuildJoinRequest(guildId);
   let rejectionReason;
   if (currentUserGuildJoinRequest != null) {
     rejectionReason = currentUserGuildJoinRequest.rejectionReason;
   }
-  let obj = guildId(stateFromStores[6]);
   const items = [UserStore];
-  stateFromStores = guildId(stateFromStores[7]).useStateFromStores(items, () => {
+  const tmp2Result = tmp2(tmp3[7]);
+  stateFromStores = tmp2Result.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let id;
     if (currentUser != null) {
@@ -38,37 +55,35 @@ export default function MemberVerificationAlertRejected(guildId) {
     }
     return id;
   });
-  const tmp2Result = guildId(stateFromStores[7]);
-  const canReapplyToRejectedMemberVerificationApplication = guildId(stateFromStores[8]).useCanReapplyToRejectedMemberVerificationApplication(guildId);
+  const tmp2Result4 = tmp2(tmp3[8]);
+  const canReapplyToRejectedMemberVerificationApplication = tmp2Result4.useCanReapplyToRejectedMemberVerificationApplication(guildId);
   ({ isLoading, canReapply } = canReapplyToRejectedMemberVerificationApplication);
-  const tmp2Result4 = guildId(stateFromStores[8]);
   const items1 = [UserGuildJoinRequestStore];
   const items2 = [guildId];
-  const stateFromStores1 = guildId(stateFromStores[7]).useStateFromStores(items1, () => UserGuildJoinRequestStore.getJoinRequestGuild(guildId), items2);
-  const tmp2Result5 = guildId(stateFromStores[7]);
+  const tmp2Result5 = tmp2(tmp3[7]);
+  const stateFromStores1 = tmp2Result5.useStateFromStores(items1, () => UserGuildJoinRequestStore.getJoinRequestGuild(guildId), items2);
   const items3 = [GuildMemberStore];
   const items4 = [stateFromStores, guildId];
-  stateFromStores2 = guildId(stateFromStores[7]).useStateFromStores(items3, () => {
+  const tmp2Result6 = tmp2(tmp3[7]);
+  stateFromStores2 = tmp2Result6.useStateFromStores(items3, () => {
     let member = null;
     if (null != stateFromStores) {
       member = GuildMemberStore.getMember(guildId, tmp);
     }
     return member;
   }, items4);
-  const items5 = [guildId, , ];
+  const items5 = [, , ];
+  const useCallback = react.useCallback;
+  items5[0] = guildId;
   let isPending;
-  const tmp2Result6 = guildId(stateFromStores[7]);
-  if (stateFromStores2 != null) {
-    isPending = stateFromStores2.isPending;
-  }
-  items5[1] = isPending;
-  items5[2] = onClose;
-  let name;
-  const callback = noop.useCallback(stateFromStores2(function*(arg0, value) {
-    if (dependencyMap === 2) {
-      dependencyMap = 3;
+  const tmp11 = stateFromStores2(function*(arg0, value) {
+    let c2;
+    let closure_0;
+    let v1;
+    if (stateFromStores === 2) {
+      stateFromStores = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -79,72 +94,80 @@ export default function MemberVerificationAlertRejected(guildId) {
       }
     } else {
       try {
-        dependencyMap = 2;
-        if (0 === v1) {
+        stateFromStores = 2;
+        if (0 === onClose) {
           if (arg0 === 1) {
-            dependencyMap = 3;
+            stateFromStores = 3;
             throw value;
           } else if (arg0 === 2) {
-            dependencyMap = 3;
+            stateFromStores = 3;
             const obj5 = { value, done: true };
             return obj5;
           } else {
-            guildId = tmp4;
+            guildId = tmp3;
             let isPending;
             if (stateFromStores2 != null) {
               isPending = stateFromStores2.isPending;
             }
-            const obj4 = v1(5853);
+            const obj4 = onClose(stateFromStores[9]);
             if (isPending) {
-              v1 = 2;
-              dependencyMap = 1;
+              onClose = 2;
+              stateFromStores = 1;
               const obj6 = { value: obj4.removeGuildJoinRequest(guildId), done: false };
               return obj6;
             } else {
-              v1 = 1;
-              dependencyMap = 1;
+              onClose = 1;
+              stateFromStores = 1;
               const obj7 = { value: obj4.resetGuildJoinRequest(guildId), done: false };
               return obj7;
             }
           }
         } else {
-          if (1 === tmp4) {
+          if (1 === onClose) {
             if (arg0 === 1) {
-              dependencyMap = 3;
+              stateFromStores = 3;
               throw value;
             } else if (arg0 === 2) {
-              dependencyMap = 3;
+              stateFromStores = 3;
               const obj8 = { value, done: true };
               return obj8;
             }
           } else if (arg0 === 1) {
-            dependencyMap = 3;
+            stateFromStores = 3;
             throw value;
           } else if (arg0 === 2) {
-            dependencyMap = 3;
+            stateFromStores = 3;
             const obj = { value, done: true };
             return obj;
           }
           if (closure_128_1 != null) {
-            tmp6();
+            tmp5();
           }
-          const result = guildId(5881).openMemberVerificationModal(closure_128_0);
-          dependencyMap = 3;
+          const obj2 = guildId(stateFromStores[10]);
+          const result = obj2.openMemberVerificationModal(closure_128_0);
+          stateFromStores = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp19) {
-        dependencyMap = tmp;
-        throw tmp19;
+      } catch (tmp18) {
+        stateFromStores = 3;
+        throw tmp18;
       }
     }
-  }), items5);
+  });
+  if (stateFromStores2 != null) {
+    isPending = stateFromStores2.isPending;
+  }
+  items5[1] = isPending;
+  items5[2] = onClose;
+  let name;
+  const callback = useCallback(tmp11, items5);
   if (stateFromStores1 != null) {
     name = stateFromStores1.name;
   }
   if (null != name) {
     const intl2 = tmp2(tmp3[11]).intl;
-    const obj2 = { guildName: stateFromStores1.name };
-    let formatToPlainStringResult = intl2.formatToPlainString(tmp2(tmp3[11]).t["P+/gzA"], obj2);
+    let obj2 = { guildName: stateFromStores1.name };
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(tmp3[11]).t["P+/gzA"], obj2);
   } else {
     const intl = tmp2(tmp3[11]).intl;
     formatToPlainStringResult = intl.string(tmp2(tmp3[11]).t.gBPcuP);
@@ -157,97 +180,20 @@ export default function MemberVerificationAlertRejected(guildId) {
       formatToPlainStringResult1 = intl3.formatToPlainString(tmp2(tmp3[11]).t.fU5PPM, obj3);
     }
   }
-  let obj4 = {};
-  const tmp11 = stateFromStores2(function*(arg0, value) {
-    if (dependencyMap === 2) {
-      dependencyMap = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        dependencyMap = 2;
-        if (0 === v1) {
-          if (arg0 === 1) {
-            dependencyMap = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            dependencyMap = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            guildId = tmp4;
-            let isPending;
-            if (stateFromStores2 != null) {
-              isPending = stateFromStores2.isPending;
-            }
-            const obj4 = v1(5853);
-            if (isPending) {
-              v1 = 2;
-              dependencyMap = 1;
-              const obj6 = { value: obj4.removeGuildJoinRequest(guildId), done: false };
-              return obj6;
-            } else {
-              v1 = 1;
-              dependencyMap = 1;
-              const obj7 = { value: obj4.resetGuildJoinRequest(guildId), done: false };
-              return obj7;
-            }
-          }
-        } else {
-          if (1 === tmp4) {
-            if (arg0 === 1) {
-              dependencyMap = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              dependencyMap = 3;
-              const obj8 = { value, done: true };
-              return obj8;
-            }
-          } else if (arg0 === 1) {
-            dependencyMap = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            dependencyMap = 3;
-            const obj = { value, done: true };
-            return obj;
-          }
-          if (closure_128_1 != null) {
-            tmp6();
-          }
-          const result = guildId(5881).openMemberVerificationModal(closure_128_0);
-          dependencyMap = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp19) {
-        dependencyMap = tmp;
-        throw tmp19;
-      }
-    }
-  });
+  let obj4 = { icon: tmp2(tmp3[13]).XSmallIcon, header: formatToPlainStringResult, subtitle: formatToPlainStringResult1, buttons: tmp20(tmp21, obj6) };
+  const tmp18 = onClose(tmp3[12]);
   const merged1 = Object.assign(merged);
-  obj4.icon = guildId(stateFromStores[13]).XSmallIcon;
-  obj4.header = formatToPlainStringResult;
-  obj4.subtitle = formatToPlainStringResult1;
+  tmp20 = closure_10;
+  tmp21 = closure_9;
   if (canReapply) {
-    let obj5 = { loading: isLoading, disabled: isLoading, variant: "secondary", text: null, onPress: null };
-    const intl4 = tmp2(tmp3[11]).intl;
-    obj5.text = intl4.string(tmp2(tmp3[11]).t.rpFCLs);
-    obj5.onPress = callback;
-    let tmp17Result = tmp17(tmp2(tmp3[14]).Button, obj5);
+    let obj5 = { loading: isLoading, disabled: isLoading, variant: "secondary", text: intl4.string(tmp2(tmp3[11]).t.rpFCLs), onPress: callback };
+    const Button = tmp2(tmp3[14]).Button;
+    intl4 = tmp2(tmp3[11]).intl;
+    tmp17Result = tmp17(Button, obj5);
   } else {
     tmp17Result = null;
   }
-  let obj6 = { children: null };
-  const items6 = [tmp17Result, guildId.secondaryButton];
-  obj6.children = items6;
-  obj4.buttons = closure_10(closure_9, obj6);
-  return closure_8(onClose(stateFromStores[12]), obj4);
+  obj6 = { children: items6 };
+  items6 = [tmp17Result, secondaryButton];
+  return closure_8(tmp18, obj4);
 };

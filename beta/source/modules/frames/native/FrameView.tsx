@@ -5,45 +5,62 @@
 // Exports: InlineFrameView
 
 // Module 16279 (FrameView)
-import initialize from "initialize" /* 504 */;
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 2005 */;
 import FramesNativeManagerDefault from "FramesNativeManager" /* 8751 */;
 import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 16280 */;
 import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 16285 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 8499 */;
+import FramesConstants from "FramesConstants" /* 8500 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let metroImportDefault;
+let metroRequire;
 function FrameViewInner(frame) {
+  let first;
+  let isLandscape;
+  let isResetting;
+  let tmp5;
+  let tmpResult2;
   frame = frame.frame;
   const layoutMode = frame.layoutMode;
-  let landscapeSafeAreasConfig = frame.portraitSafeAreasConfig;
+  let portraitSafeAreasConfig = frame.portraitSafeAreasConfig;
   let setIsResetting;
-  const data = frame(setIsResetting[6]).useApplication(frame.applicationId).data;
+  const landscapeSafeAreasConfig = frame.landscapeSafeAreasConfig;
+  let obj = frame(setIsResetting[6]);
+  const data = obj.useApplication(frame.applicationId).data;
   const orientationLock = frame.data.orientationLock;
-  const tmp3 = _slicedToArray(noop.useState(true), 2);
-  let first = tmp3[0];
+  [first, tmp5] = react.useState(true);
   const items = [layoutMode, , ];
   ({ applicationId: arr[1], id: arr[2] } = frame);
-  const layoutEffect = noop.useLayoutEffect(() => {
-    DispatcherDefault.dispatch({ type: "FRAME_UPDATE_LAYOUT_MODE", layoutMode, applicationId: frame.applicationId, frameId: frame.id });
+  const layoutEffect = react.useLayoutEffect(() => {
+    const obj = DispatcherDefault;
+    const obj2 = { type: "FRAME_UPDATE_LAYOUT_MODE", layoutMode, applicationId: frame.applicationId, frameId: frame.id };
+    obj.dispatch(obj2);
   }, items);
   const items1 = [frame.id];
   const items2 = [frame.id];
-  const callback = noop.useCallback(() => {
-    FramesNativeManagerDefault.leaveFrame(frame.id);
+  const callback = react.useCallback(() => {
+    const obj = FramesNativeManagerDefault;
+    obj.leaveFrame(frame.id);
   }, items1);
-  const callback1 = noop.useCallback((arg0, arg1) => frames_getDefaultOrientationLockState.setOrientationLockState(frame.id, arg0, arg1), items2);
+  const callback1 = react.useCallback((arg0, arg1) => {
+    const obj = frames_getDefaultOrientationLockState;
+    return obj.setOrientationLockState(frame.id, arg0, arg1);
+  }, items2);
   if (!first) {
     first = null == data;
   }
-  const obj = frame(setIsResetting[6]);
-  const baseActivityView = frame(setIsResetting[10]).useBaseActivityView({ orientationLockState: orientationLock, showLoadingIndicator: first, setShowLoadingStateForLockingOrientation: tmp3[1], application: data, setOrientationLockState: callback1 });
+  const tmpResult = frame(setIsResetting[10]);
+  const baseActivityView = tmpResult.useBaseActivityView({ orientationLockState: orientationLock, showLoadingIndicator: first, setShowLoadingStateForLockingOrientation: tmp5, application: data, setOrientationLockState: callback1 });
   setIsResetting = baseActivityView.setIsResetting;
   ({ isResetting, isLandscape } = baseActivityView);
-  const obj2 = { wakeLockKey: "FrameActivities", showLoadingIndicator: first, isResetting, children: null };
-  const obj3 = {
+  const BaseActivityView = tmp(tmp2[10]).BaseActivityView;
+  ({
     onActivityCrash() {
       setIsResetting(true);
       const timerId = setTimeout(() => setIsResetting(false), 0);
@@ -51,47 +68,36 @@ function FrameViewInner(frame) {
     applicationId: frame.applicationId,
     frameId: frame.id,
     activityUrl: frame.data.url,
-    queryParams: null,
-    onLoadError: null,
-    allowPopups: null,
+    queryParams: layoutMode(setIsResetting[12])(frame, ActivityPlatform.MOBILE),
+    onLoadError: callback,
+    allowPopups: tmpResult2.allowPopups(data),
     referrerPolicy: "origin",
-    isPipOrGridMode: null,
-    webViewKey: null,
-    safeAreasConfig: null
-  };
-  const tmpResult = frame(setIsResetting[10]);
-  obj3.queryParams = layoutMode(setIsResetting[12])(frame, ActivityPlatform.MOBILE);
-  obj3.onLoadError = callback;
-  const tmp10 = layoutMode(setIsResetting[11]);
-  obj3.allowPopups = frame(setIsResetting[13]).allowPopups(data);
-  obj3.isPipOrGridMode = layoutMode === constants.PIP;
-  obj3.webViewKey = frame(setIsResetting[8]).FRAME_WEB_VIEW_KEY;
+    isPipOrGridMode: layoutMode === constants.PIP,
+    webViewKey: frame(setIsResetting[8]).FRAME_WEB_VIEW_KEY,
+    safeAreasConfig: portraitSafeAreasConfig
+  });
+  layoutMode(setIsResetting[11]);
+  tmpResult2 = frame(setIsResetting[13]);
   if (isLandscape) {
-    landscapeSafeAreasConfig = frame.landscapeSafeAreasConfig;
+    portraitSafeAreasConfig = landscapeSafeAreasConfig;
   }
-  obj3.safeAreasConfig = landscapeSafeAreasConfig;
-  obj2.children = <tmp10 onActivityCrash={function onActivityCrash() {
-    setIsResetting(true);
-    const timerId = setTimeout(() => setIsResetting(false), 0);
-  }} applicationId={frame.applicationId} frameId={frame.id} activityUrl={frame.data.url} queryParams={null} onLoadError={null} allowPopups={null} referrerPolicy="origin" isPipOrGridMode={null} webViewKey={null} safeAreasConfig={null} />;
-  return jsx(frame(setIsResetting[10]).BaseActivityView, { wakeLockKey: "FrameActivities", showLoadingIndicator: first, isResetting, children: null });
+  return <BaseActivityView wakeLockKey="FrameActivities" showLoadingIndicator={first} isResetting={isResetting}>{null}</BaseActivityView>;
 }
-const FramesConstants = fn(8500);
-({ asLaunched: metroRequire, FrameLayoutModes: closure_7 } = FramesConstants);
-const ActivityPlatform = fn(2005).ActivityPlatform;
-const jsx = fn(21).jsx;
-const memoResult = noop.memo(function FrameViewGate(arg0) {
+({ asLaunched: metroRequire, FrameLayoutModes: metroImportDefault } = FramesConstants);
+const ActivityPlatform = Constants.ActivityPlatform;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function FrameViewGate(arg0) {
+  let mainFrame;
   const items = [FramesStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => closure_1_6(mainFrame.getMainFrame()));
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => closure_1_6(mainFrame.getMainFrame()));
   let tmp2 = null;
   if (null != stateFromStores) {
-    const obj2 = { frame: stateFromStores };
     const merged = Object.assign(arg0);
     tmp2 = <FrameViewInner frame={stateFromStores} />;
   }
   return tmp2;
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/frames/native/FrameView.tsx");
 
 export default memoResult;
@@ -100,19 +106,19 @@ export const InlineFrameView = function InlineFrameView(frameId) {
   const merged = Object.assign(frameId, Object.assign({ frameId: 0 }));
   const items = [FramesStore];
   const items1 = [frameId];
-  const stateFromStores = frameId(504).useStateFromStores(items, () => timestampProducer(FramesStore.getFrame(frameId)), items1);
-  let applicationId;
   const obj = frameId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => metroRequire(FramesStore.getFrame(frameId)), items1);
+  let applicationId;
+  const tmp3 = useInlineFrameOAuthNavigationDefault;
   if (stateFromStores != null) {
     applicationId = stateFromStores.applicationId;
   }
   if (applicationId == null) {
     applicationId = null;
   }
-  useInlineFrameOAuthNavigationDefault(applicationId);
+  tmp3(applicationId);
   let tmp6 = null;
   if (null != stateFromStores) {
-    const obj2 = { frame: stateFromStores };
     const merged1 = Object.assign(merged);
     tmp6 = <FrameViewInner frame={stateFromStores} />;
   }

@@ -6,16 +6,28 @@
 
 // Module 12231 (AcceptInvite)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import useToken from "useToken" /* 4531 */;
 import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5893 */;
-import Card from "Card" /* 5919 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import Card_Card from "Card/Card" /* 5919 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c10;
+let c9;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
 function getInviteState(invite) {
   let state1;
   if (invite != null) {
@@ -34,16 +46,17 @@ function getInviteState(invite) {
       if (!tmp2) {
         const state = invite.state;
         if (InviteStates.RESOLVED !== state) {
-          if (tmp4.ACCEPTED !== state) {
-            if (tmp4.EXPIRED !== state) {
-              if (tmp4.BANNED !== state) {
-                if (tmp4.ERROR !== state) {
-                  if (tmp4.RESOLVING !== state) {
-                    if (tmp4.APP_NOT_OPENED !== state) {
-                      if (tmp4.APP_OPENED !== state) {
-                        if (tmp4.APP_OPENING !== state) {
-                          if (tmp4.ACCEPTING !== state) {
-                            GlobalUtils.assertNever(state);
+          if (InviteStates.ACCEPTED !== state) {
+            if (InviteStates.EXPIRED !== state) {
+              if (InviteStates.BANNED !== state) {
+                if (InviteStates.ERROR !== state) {
+                  if (InviteStates.RESOLVING !== state) {
+                    if (InviteStates.APP_NOT_OPENED !== state) {
+                      if (InviteStates.APP_OPENED !== state) {
+                        if (InviteStates.APP_OPENING !== state) {
+                          if (InviteStates.ACCEPTING !== state) {
+                            const obj = GlobalUtils;
+                            obj.assertNever(state);
                           }
                         }
                       }
@@ -63,60 +76,70 @@ function getInviteState(invite) {
   return constants.LOADING;
 }
 function InviteResolving() {
+  let obj3;
   const tmp = closure_11();
-  const obj2 = { style: tmp.resolvingContainer, children: null };
-  obj2.children = React7(hasOwnProperty, { color: useToken.useToken(nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT), size: "large" });
-  return React7(React5, obj2);
+  const obj2 = { style: tmp.resolvingContainer, children: React4(hasOwnProperty, obj3) };
+  const obj = useToken;
+  obj3 = { color: obj.useToken(nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT), size: "large" };
+  return React4(metroImportDefault, obj2);
 }
 function AcceptInviteCardComponent(invite) {
+  let closure_2;
+  let first;
   invite = invite.invite;
-  [first, dependencyMap] = noop.useState(getInviteState(invite));
+  [first, dependencyMap] = react.useState(getInviteState(invite));
   const items = [invite, first];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     const tmp = getInviteState(invite);
     if (tmp !== first) {
-      const result = DeprecatedLayoutAnimation.DeprecatedLayoutAnimation();
+      const obj = DeprecatedLayoutAnimation;
+      const result = obj.DeprecatedLayoutAnimation();
       closure_2(tmp);
     }
   }, items);
   if (null == invite) {
     return closure_9(InviteResolving, {});
   } else if (constants.DETAILS === first) {
-    const obj2 = {};
+    const obj2 = { invite };
+    const tmp16 = first(12232);
     const merged = Object.assign(invite);
-    obj2.invite = invite;
-    return closure_9(first(12232), obj2);
+    return closure_9(tmp16, obj2);
   } else if (tmp22.ERROR === first) {
-    let obj = {};
+    let obj = { invite };
+    const tmp9 = first(12235);
     const merged1 = Object.assign(invite);
-    obj.invite = invite;
-    return closure_9(first(12235), obj);
+    return closure_9(tmp9, obj);
   } else {
     return closure_9(InviteResolving, {});
   }
 }
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: hasOwnProperty, ImageBackground: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const InviteStates = fn(1074).InviteStates;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { parentContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" }, imageStyle: { marginVertical: 0, resizeMode: "cover" }, cardContainer: null, cardContent: null, resolvingContainer: null };
-const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" };
-obj2.cardContainer = { position: "absolute", flex: 1, width: "90%", alignItems: "center", justifyContent: "center", padding: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-obj2.cardContent = { padding: 16, flex: 1, justifyContent: "center", alignItems: "center", width: "100%" };
-obj2.resolvingContainer = { padding: 64 };
-let closure_11 = createStyles.createStyles(obj2);
+({ ActivityIndicator: hasOwnProperty, ImageBackground: metroRequire, View: metroImportDefault } = react_native);
+const InviteStates = Constants.InviteStates;
+({ jsx: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { parentContainer: obj2, imageStyle: { marginVertical: 0, resizeMode: "cover" }, cardContainer: obj3, cardContent: { padding: 16, flex: 1, justifyContent: "center", alignItems: "center", width: "100%" }, resolvingContainer: { padding: 64 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" };
+createStyles = createStyles.createStyles;
+obj3 = { position: "absolute", flex: 1, width: "90%", alignItems: "center", justifyContent: "center", padding: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+let closure_11 = createStyles(obj);
 const constants = { LOADING: 0, [0]: "LOADING", DETAILS: 1, [1]: "DETAILS", ERROR: 2, [2]: "ERROR" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/accept_invite/native/AcceptInvite.tsx");
 
 export default function AcceptInvite(invite) {
+  let guildSplashSource;
+  let height;
+  let items;
+  let items1;
+  let obj14;
+  let obj3;
+  let obj8;
+  let width;
   invite = invite.invite;
   const merged = Object.assign(invite, Object.assign({ invite: 0 }));
   const tmp2 = closure_11();
   ({ height, width } = useWindowDimensionsDefault());
   let obj = invite;
+  useWindowDimensionsDefault();
   if (invite == null) {
     obj = {};
   }
@@ -126,24 +149,25 @@ export default function AcceptInvite(invite) {
     splash = guild.splash;
   }
   if (null == splash) {
-    let guildSplashSource = tmp3(12240);
+    guildSplashSource = tmp3(12240);
   } else {
-    const obj2 = { id: null, splash: null, size: null };
-    ({ id: obj3.id, splash: obj3.splash } = guild);
-    const tmp3Result2 = tmp3(1397);
-    obj2.size = width * ImageLoaderUtils.getDevicePixelRatio();
-    guildSplashSource = tmp3Result2.getGuildSplashSource(obj2);
+    ({ id: obj2.id, splash: obj2.splash } = guild);
+    const obj4 = { id: null, splash: null, size: width * obj3.getDevicePixelRatio() };
+    const getGuildSplashSource = AvatarUtilsDefault.getGuildSplashSource;
+    AvatarUtilsDefault;
+    obj3 = ImageLoaderUtils;
+    guildSplashSource = getGuildSplashSource(obj4);
   }
-  const obj5 = { style: null, children: null };
-  const items = [tmp2.parentContainer, { height, width }];
-  obj5.style = items;
-  const items1 = [React7(timestampProducer, { source: guildSplashSource, imageStyle: tmp2.imageStyle, style: { height, width } }), ];
-  const obj7 = { style: tmp2.cardContainer, children: null };
-  const obj8 = { style: tmp2.cardContent, children: null };
+  const obj5 = { style: items, children: items1 };
+  items = [tmp2.parentContainer, { height, width }];
+  items1 = [, ];
+  const obj6 = { source: guildSplashSource, imageStyle: tmp2.imageStyle, style: { height, width } };
+  items1[0] = React4(metroRequire, obj6);
+  const obj7 = { style: tmp2.cardContainer, children: React4(metroImportDefault, obj8) };
+  obj8 = { style: tmp2.cardContent, children: React4(AcceptInviteCardComponent, obj14) };
+  obj14 = { invite };
+  const Card = Card_Card.Card;
   const merged1 = Object.assign(merged);
-  obj8.children = React7(AcceptInviteCardComponent, { invite });
-  obj7.children = React7(React5, obj8);
-  items1[1] = React7(Card.Card, obj7);
-  obj5.children = items1;
-  return closure_1_10(React5, obj5);
+  items1[1] = React4(Card, obj7);
+  return authStore(metroImportDefault, obj5);
 };

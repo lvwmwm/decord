@@ -6,67 +6,84 @@
 
 // Module 10734 (AppStoreOverlayAboutSection)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+({ Pressable: closure_4, View: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const rect = { top: nativeDefault.space.PX_12, bottom: nativeDefault.space.PX_12, left: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12 };
-const createStyles = fn(4836);
-let obj = { aboutSection: { borderRadius: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.CARD_SECONDARY_BACKGROUND_DEFAULT, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 } };
+let obj = { aboutSection: obj2 };
+obj2 = { borderRadius: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.CARD_SECONDARY_BACKGROUND_DEFAULT, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
 let closure_9 = createStyles.createStyles(obj);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayAboutSection.tsx");
 
-export default function AppStoreOverlayAboutSection(children) {
-  const onSeeMorePress = children.onSeeMorePress;
+export default function AppStoreOverlayAboutSection(onSeeMorePress) {
+  let c1;
+  let closure_3;
+  let first;
+  let intl2;
+  let items2;
+  let obj4;
+  let obj5;
+  let tmp3;
+  onSeeMorePress = onSeeMorePress.onSeeMorePress;
   c1 = undefined;
   first = undefined;
   closure_3 = undefined;
-  const tmp = closure_9();
-  [tmp3, c1] = noop.useState(false);
-  [first, closure_3] = noop.useState(null);
+  const description = onSeeMorePress.description;
+  let tmp = closure_9();
+  const tmp2 = _slicedToArray(react.useState(false), 2);
+  [tmp3, c1] = tmp2;
+  [first, closure_3] = react.useState(null);
   const items = [first];
   const items1 = [onSeeMorePress];
-  const callback = noop.useCallback((nativeEvent) => {
+  const callback = react.useCallback((nativeEvent) => {
     if (null == first) {
       closure_3(nativeEvent.nativeEvent.lines.length > 3);
     }
   }, items);
-  const callback1 = noop.useCallback(() => {
-    _undefined((arg0) => {
-      if (!arg0) {
+  const callback1 = react.useCallback(() => {
+    let tmp = _undefined((arg0) => {
+      const tmp = arg0;
+      if (!tmp) {
         if (onSeeMorePress != null) {
-          tmp();
+          tmp2();
         }
       }
       return !arg0;
     });
   }, items1);
-  const intl = util.intl;
-  const t = util.t;
-  const stringResult = intl.string(tmp3 ? t["6MwJo/"] : t.lBeKY2);
-  const obj = { style: tmp.aboutSection, children: null };
-  const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl2 = tmp8(1115).intl;
-  obj2.children = intl2.string(util.t.CI0vSJ);
-  const items2 = [timestampProducer(Text_Text.Text, obj2), timestampProducer(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", lineClamp: num, onTextLayout: callback, children: children.description }), ];
+  const intl = intl3.intl;
+  const string = intl.string;
+  const t = intl3.t;
+  const stringResult = string(tmp3 ? t["6MwJo/"] : t.lBeKY2);
+  const obj = { style: tmp.aboutSection, children: items2 };
+  const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.CI0vSJ) };
+  const Text = tmp8(4832).Text;
+  intl2 = tmp8(1115).intl;
+  items2 = [metroRequire(Text, obj2), , ];
+  const Text2 = tmp8(4832).Text;
+  const tmp11 = metroImportDefault;
+  const tmp12 = hasOwnProperty;
+  items2[1] = metroRequire(Text2, { variant: "text-sm/medium", color: "text-default", lineClamp: num, onTextLayout: callback, children: description });
   let tmp13Result = true === first;
   if (tmp13Result) {
-    const obj3 = { hitSlop: rect, accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: null, onPress: null, children: null };
-    const obj4 = { expanded: tmp3 };
-    obj3.accessibilityState = obj4;
-    obj3.onPress = callback1;
-    const obj5 = { variant: "text-sm/medium", color: "text-link", children: stringResult };
-    obj3.children = tmp13(tmp8(4832).Text, obj5);
-    tmp13Result = tmp13(React4, obj3);
+    const obj3 = { hitSlop: rect, accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: obj4, onPress: callback1, children: metroRequire(Text_Text.Text, obj5) };
+    obj4 = { expanded: tmp3 };
+    obj5 = { variant: "text-sm/medium", color: "text-link", children: stringResult };
+    tmp13Result = tmp13(React3, obj3);
   }
   items2[2] = tmp13Result;
-  obj.children = items2;
-  return React5(hasOwnProperty, obj);
+  return tmp11(tmp12, obj);
 };

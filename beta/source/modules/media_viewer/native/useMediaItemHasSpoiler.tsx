@@ -6,29 +6,34 @@
 
 // Module 7712 (useMediaItemHasSpoiler)
 import MediaSourceUtil from "MediaSourceUtil" /* 7713 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, userRevealedIndexes;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_viewer/native/useMediaItemHasSpoiler.tsx");
 
 export const useMediaItemHasSpoiler = function useMediaItemHasSpoiler(index) {
+  let memo;
+  let state;
   _require = index;
+  const tmp = _require;
+  const tmp2 = state;
   const MediaViewerSourcesStore = require("useMediaViewerSources").MediaViewerSourcesStore;
-  state = MediaViewerSourcesStore.useState((arg0) => arg0.sources[closure_0]);
+  state = MediaViewerSourcesStore.useState((arg0) => arg0.sources[index]);
   const MediaViewerSourcesStore2 = require("useMediaViewerSources").MediaViewerSourcesStore;
   const state1 = MediaViewerSourcesStore2.useState((userRevealedIndexes) => {
     userRevealedIndexes = userRevealedIndexes.userRevealedIndexes;
-    return userRevealedIndexes.has(closure_0);
+    return userRevealedIndexes.has(index);
   });
   const items = [state];
   memo = memo.useMemo(() => {
     let flattenSourceResult;
     if (null != state) {
-      flattenSourceResult = MediaSourceUtil.flattenSource(tmp);
+      const obj = MediaSourceUtil;
+      flattenSourceResult = obj.flattenSource(tmp);
     }
     return flattenSourceResult;
   }, items);
@@ -37,9 +42,10 @@ export const useMediaItemHasSpoiler = function useMediaItemHasSpoiler(index) {
     spoiler = memo.spoiler;
   }
   let tmp7 = true === spoiler;
-  closure_3 = tmp7;
+  let closure_3 = tmp7;
   const items1 = [closure_3];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items1, () => {
+  const tmpResult = tmp(tmp2[4]);
+  const stateFromStores = tmpResult.useStateFromStores(items1, () => {
     let channel = null;
     if (closure_3) {
       let channelId;
@@ -53,9 +59,9 @@ export const useMediaItemHasSpoiler = function useMediaItemHasSpoiler(index) {
     }
     return channel;
   });
-  require("computeGlobalSpoilerDisplay");
+  tmp(tmp2[5]);
   let tmp11 = !state1;
-  if (!state1) {
+  if (tmp11) {
     let obscure;
     if (memo != null) {
       obscure = memo.obscure;

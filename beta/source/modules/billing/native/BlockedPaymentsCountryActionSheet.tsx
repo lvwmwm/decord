@@ -5,15 +5,17 @@
 // Exports: default
 
 // Module 10978 (BlockedPaymentsCountryActionSheet)
+import Fragment from "Fragment" /* 21 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import BlockedPaymentsCountryDisplayDefault from "BlockedPaymentsCountryDisplay" /* 10979 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let BottomSheet;
+
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryActionSheet.tsx");
 
 export default function BlockedPaymentsCountryActionSheet() {
-  return jsx(Sheet_BottomSheet.BottomSheet, { children: jsx(BlockedPaymentsCountryDisplayDefault, {}) });
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  return <BottomSheet>{null}</BottomSheet>;
 };

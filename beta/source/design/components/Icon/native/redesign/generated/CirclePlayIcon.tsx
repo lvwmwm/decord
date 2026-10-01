@@ -5,20 +5,26 @@
 // Exports: CirclePlayIcon
 
 // Module 8176 (CirclePlayIcon)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod8177 from "module_8177" /* 8177 */;
-import _mod8178 from "module_8178" /* 8178 */;
-import noop from "module_19" /* 19 */;
+import BaseIconImage3 from "BaseIconImage" /* 4530 */;
+import AssetRegistry from "AssetRegistry" /* 8177 */;
+import AssetRegistry2 from "AssetRegistry" /* 8178 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const result = size.fileFinishedImporting("design/components/Icon/native/redesign/generated/CirclePlayIcon.tsx");
 
 export const CirclePlayIcon = function CirclePlayIcon(color) {
+  let items;
+  let items2;
+  let secondaryColor;
+  let style;
   ({ style, secondaryColor } = color);
   if (secondaryColor === undefined) {
     secondaryColor = "transparent";
@@ -28,16 +34,17 @@ export const CirclePlayIcon = function CirclePlayIcon(color) {
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.assign({ style: 0, secondaryColor: 0, color: 0 }));
-  const obj = { children: null };
+  const obj = { children: items };
+  const obj2 = { source: AssetRegistry, color: secondaryColor, style };
+  const BaseIconImage = BaseIconImage3.BaseIconImage;
   const merged1 = Object.assign(merged);
-  const items = [React4(BaseIconImage.BaseIconImage, { source: _mod8177, color: secondaryColor, style }), ];
-  const obj3 = { source: _mod8178, color: INTERACTIVE_ICON_DEFAULT, style: null };
+  items = [React3(BaseIconImage, obj2), ];
+  const obj3 = { source: AssetRegistry2, color: INTERACTIVE_ICON_DEFAULT, style: items2 };
+  const BaseIconImage2 = BaseIconImage3.BaseIconImage;
   const items1 = [style];
-  const items2 = [];
-  items2[HermesBuiltin.arraySpread(items1.flat(), 0)] = { position: "absolute", top: 0 };
-  obj3.style = items2;
+  items2 = [];
+  items2[HermesBuiltin.arraySpread(items2, items1.flat(), 0)] = { position: "absolute", top: 0 };
   const merged2 = Object.assign(merged);
-  items[1] = React4(BaseIconImage.BaseIconImage, obj3);
-  obj.children = items;
+  items[1] = React3(BaseIconImage2, obj3);
   return hasOwnProperty(View, obj);
 };

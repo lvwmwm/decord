@@ -9,52 +9,51 @@ import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import useFontScale from "useFontScale" /* 5288 */;
-import Pressables from "Pressables" /* 5435 */;
-import Badge from "Badge" /* 7294 */;
-import noop from "module_19" /* 19 */;
+import shared_components_Badge from "shared_components/Badge" /* 7294 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const shared_components_BadgeDefault = shared_components_Badge;
+let dependencyMap;
+
+let closure_4;
+let hasOwnProperty;
 class ButtonBadge {
-  constructor(arg0) {
-    str = global.badgePosition;
+  constructor(badgePosition) {
+    let str = badgePosition.badgePosition;
     if (str === undefined) {
       str = "left";
     }
-    tmp = closure_6();
-    tmp2 = jsx;
-    obj = { size: null, maskSize: 2, style: null, maskColor: null };
-    tmp3 = closure_1(closure_2[9]);
-    obj.size = closure_0(closure_2[9]).CHANNEL_BADGE_SIZE;
-    obj.style = "left" === str ? tmp.unreadBadgeLeft : tmp.unreadBadgeRight;
-    obj.maskColor = tmp.unreadBadgeMask.color;
-    return tmp2(tmp3, obj);
+    const tmp = closure_6();
+    const obj = { size: shared_components_Badge.CHANNEL_BADGE_SIZE, maskSize: 2, style: "left" === str ? tmp.unreadBadgeLeft : tmp.unreadBadgeRight, maskColor: tmp.unreadBadgeMask.color };
+    const tmp3 = shared_components_BadgeDefault;
+    return React3(tmp3, obj);
   }
 }
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-const timestampProducer = createStyles.createStyles(() => {
-  const obj = { actionIconButtonPressable: { minWidth: 32, minHeight: 32, borderRadius: 20, marginEnd: 12, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 12 }, withoutMargin: { marginEnd: 0 }, filled: {}, outlined: null, roundButton: null, actionIcon: null, actionText: null, unreadBadgeLeft: null, unreadBadgeRight: null, unreadBadgeMask: null, countStyle: null };
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+const metroRequire = createStyles.createStyles(() => {
+  let num;
+  let obj2;
+  const obj = { actionIconButtonPressable: { minWidth: 32, minHeight: 32, borderRadius: 20, marginEnd: 12, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 12 }, withoutMargin: { marginEnd: 0 }, filled: {}, outlined: obj2, roundButton: { maxWidth: 32, maxHeight: 32 }, actionIcon: { tintColor: nativeDefault.colors.ICON_SUBTLE }, actionText: { marginLeft: 4, marginTop: num }, unreadBadgeLeft: { position: "absolute", left: -2, top: -1 }, unreadBadgeRight: { position: "absolute", right: -2, top: -1 }, unreadBadgeMask: { color: nativeDefault.colors.BACKGROUND_BASE_LOW }, countStyle: { position: "relative", marginLeft: nativeDefault.space.PX_8 } };
+  obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT };
   const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
-  obj.outlined = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT };
-  obj.roundButton = { maxWidth: 32, maxHeight: 32 };
-  const obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT };
-  obj.actionIcon = { tintColor: nativeDefault.colors.ICON_SUBTLE };
-  const obj3 = { tintColor: nativeDefault.colors.ICON_SUBTLE };
-  let num = 0;
+  ({ tintColor: nativeDefault.colors.ICON_SUBTLE });
+  num = 0;
+  const obj4 = PlatformUtils;
   if (obj4.isAndroid()) {
     num = -2;
   }
-  obj.actionText = { marginLeft: 4, marginTop: num };
-  obj.unreadBadgeLeft = { position: "absolute", left: -2, top: -1 };
-  obj.unreadBadgeRight = { position: "absolute", right: -2, top: -1 };
-  obj4 = PlatformUtils;
-  obj.unreadBadgeMask = { color: nativeDefault.colors.BACKGROUND_BASE_LOW };
-  const obj5 = { color: nativeDefault.colors.BACKGROUND_BASE_LOW };
-  obj.countStyle = { position: "relative", marginLeft: nativeDefault.space.PX_8 };
+  ({ color: nativeDefault.colors.BACKGROUND_BASE_LOW });
+  ({ position: "relative", marginLeft: nativeDefault.space.PX_8 });
   return obj;
 });
-let closure_7 = noop.memo((color) => {
+let closure_7 = react.memo((color) => {
+  let IconComponent;
+  let actionIcon;
+  let source;
+  let tmp2Result;
   ({ IconComponent, source } = color);
   color = color.color;
   const tmp = closure_6();
@@ -62,16 +61,31 @@ let closure_7 = noop.memo((color) => {
   const items = [tmp, color, source];
   if (null != IconComponent) {
     let obj = { size: "sm", color: color(576).colors.ICON_SUBTLE };
-    let tmp2Result = closure_4(IconComponent, obj);
+    tmp2Result = closure_4(IconComponent, obj);
   } else {
     tmp2Result = tmp2();
   }
   return tmp2Result;
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/IconActionButton.tsx");
 
 export default function IconActionButton(variant) {
+  let IconComponent;
+  let accessibilityLabel;
+  let badge;
+  let badgePosition;
+  let buttonText;
+  let buttonTextColor;
+  let color;
+  let disabled;
+  let hitSlop;
+  let items;
+  let items1;
+  let noMargin;
+  let onLongPress;
+  let onPress;
+  let source;
+  let style;
   let str = variant.variant;
   ({ source, IconComponent } = variant);
   if (str === undefined) {
@@ -88,13 +102,12 @@ export default function IconActionButton(variant) {
   ({ noMargin, hitSlop, disabled, onPress, onLongPress } = variant);
   const tmp = closure_6();
   useFontScale;
-  let tmp10Result = null != buttonText;
-  if (tmp10Result) {
-    tmp10Result = tmp5 <= 1.2;
-  }
-  const obj = { hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, style: null, children: null };
-  const items = [tmp.actionIconButtonPressable, "outlined" === str ? tmp.outlined : tmp.filled, , , ];
+  let tmp10Result = null != buttonText && tmp5 <= 1.2;
+  const obj = { hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, style: items, children: items1 };
+  items = [tmp.actionIconButtonPressable, "outlined" === str ? tmp.outlined : tmp.filled, , , ];
   let roundButton;
+  const PressableOpacity = tmp2(5435).PressableOpacity;
+  const tmp7 = hasOwnProperty;
   if (!tmp10Result) {
     roundButton = tmp.roundButton;
   }
@@ -105,8 +118,7 @@ export default function IconActionButton(variant) {
   }
   items[3] = withoutMargin;
   items[4] = style;
-  obj.style = items;
-  const items1 = [React4(closure_7, { IconComponent, color, source }), , , ];
+  items1 = [React3(closure_7, { IconComponent, color, source }), , , ];
   if (tmp10Result) {
     const obj2 = { variant: "text-sm/bold", color: buttonTextColor, style: tmp.actionText, children: buttonText };
     tmp10Result = tmp10(tmp2(4832).Text, obj2);
@@ -123,8 +135,7 @@ export default function IconActionButton(variant) {
     badge = tmp10(ButtonBadge, obj4);
   }
   items1[3] = badge;
-  obj.children = items1;
-  return hasOwnProperty(Pressables.PressableOpacity, obj);
+  return tmp7(PressableOpacity, obj);
 };
 export const ICON_ACTION_BUTTON_SIZE = 32;
 export { ButtonBadge };

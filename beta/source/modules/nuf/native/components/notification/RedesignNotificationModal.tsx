@@ -5,64 +5,70 @@
 // Exports: RedesignNotificationScreen
 
 // Module 15624 (RedesignNotificationModal)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11902 */;
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11904 */;
 import PushNotificationActionCreators from "PushNotificationActionCreators" /* 11905 */;
 import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12185 */;
-import _modDef15625 from "module_15625" /* 15625 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15625 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 11903 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
 class RedesignNotificationModal {
-  constructor(arg0) {
-    onComplete = global.onComplete;
-    tmp = closure_11();
-    items = [];
-    items[0] = onComplete;
-    items1 = [];
-    items1[0] = onComplete;
-    callback = closure_3.useCallback(() => {
-      const pushNotificationPermission = NotificationPermissionUtil.requestPushNotificationPermission(constants2.ALLOW_TO_REQUEST, constants.ALERT, () => {
+  constructor(onComplete) {
+    let intl;
+    let intl2;
+    onComplete = onComplete.onComplete;
+    const tmp = closure_11();
+    const items = [onComplete];
+    const items1 = [onComplete];
+    const callback = react.useCallback(() => {
+      const obj = NotificationPermissionUtil;
+      const pushNotificationPermission = obj.requestPushNotificationPermission(metroImportAll.ALLOW_TO_REQUEST, metroImportDefault.ALERT, () => {
         if (onComplete != null) {
           tmp();
         }
       });
     }, items);
-    obj = { style: tmp.container, children: null };
-    callback1 = closure_3.useCallback(() => {
-      AnalyticsUtilsDefault.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, { action_type: constants2.SKIP_STEP, action_location: constants.ALERT });
-      const obj2 = { action_type: constants2.SKIP_STEP, action_location: constants.ALERT };
-      const result = PushNotificationActionCreators.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
-      const result1 = NotificationPermissionUtil.enableProvisionalPushNotification();
+    const callback1 = react.useCallback(() => {
+      const obj = AnalyticsUtilsDefault;
+      const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+      obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
+      const obj3 = PushNotificationActionCreators;
+      const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
+      const obj4 = NotificationPermissionUtil;
+      const result1 = obj4.enableProvisionalPushNotification();
       if (onComplete != null) {
         tmp4(true);
       }
     }, items1);
-    obj1 = { onAllow: callback, onDontAllow: callback1, header: null, title: null, subtitle: null };
-    obj4 = { resizeMode: "contain", style: tmp.notificationHeaderImage, source: null };
-    tmp4 = closure_1(closure_2[11]);
-    obj4.source = closure_1(closure_2[12]);
-    obj1.header = jsx(Image, obj4);
-    intl = onComplete(closure_2[13]).intl;
-    obj1.title = intl.string(onComplete(closure_2[13]).t["3nx0b5"]);
-    intl2 = onComplete(closure_2[13]).intl;
-    obj1.subtitle = intl2.string(onComplete(closure_2[13]).t.Gf7U1T);
-    obj.children = jsx(tmp4, obj1);
-    return jsx(View, obj);
+    let obj2 = { onAllow: callback, onDontAllow: callback1, header: null, title: intl.string(onComplete(1115).t["3nx0b5"]), subtitle: intl2.string(onComplete(1115).t.Gf7U1T) };
+    let obj3 = { resizeMode: "contain", style: tmp.notificationHeaderImage, source: AssetRegistryDefault };
+    const tmp4 = NewUserPermissionsOnboardingDefault;
+    intl = onComplete(1115).intl;
+    intl2 = onComplete(1115).intl;
+    return <closure_5 style={tmp.container}>{null}</closure_5>;
   }
 }
-get_ActivityIndicator = fn(17);
-({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const PermissionStateType = fn(11902).PermissionStateType;
-const NotificationPermissionConstants = fn(11903);
-({ EventActionLocation: closure_7, EventActionType: closure_8 } = NotificationPermissionConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: -nativeDefault.space.PX_48 }, notificationHeaderImage: { position: "absolute", alignSelf: "center", zIndex: 2, top: -140, height: 156, width: 150 } };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
+({ Image: closure_4, View: hasOwnProperty } = react_native);
+const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
+({ EventActionLocation: metroImportDefault, EventActionType: metroImportAll } = NotificationPermissionConstants);
+const AnalyticEvents = Constants.AnalyticEvents;
+const jsx = Fragment.jsx;
+let obj = { container: obj2, notificationHeaderImage: { position: "absolute", alignSelf: "center", zIndex: 2, top: -140, height: 156, width: 150 } };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: -nativeDefault.space.PX_48 };
+const unpackModuleId = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/nuf/native/components/notification/RedesignNotificationModal.tsx");
 
 export default RedesignNotificationModal;

@@ -8,81 +8,106 @@ import nativeDefault from "native" /* 576 */;
 import DateUtils from "DateUtils" /* 4512 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16229 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment_mod from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_0;
 
-require = fn;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let size;
 function ApplicationStatusIcon(status) {
   status = status.status;
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === status) {
     const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    return timestampProducer(tmp(4792).CircleCheckIcon, obj2);
-  } else if (tmp(4658).GuildJoinRequestApplicationStatuses.REJECTED === status) {
+    const CircleCheckIcon = tmp(4792).CircleCheckIcon;
+    return metroRequire(CircleCheckIcon, obj2);
+  } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const obj = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    return timestampProducer(tmp(6034).CircleXIcon, obj);
+    const CircleXIcon = tmp(6034).CircleXIcon;
+    return metroRequire(CircleXIcon, obj);
   } else {
     return null;
   }
 }
-get_ActivityIndicator = fn(17);
-({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { label: { marginHorizontal: 16, marginBottom: 8 }, container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginHorizontal: 16, marginBottom: 12, borderRadius: nativeDefault.radii.md }, row: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 16 }, divider: null };
-let size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-obj.divider = size;
-let closure_9 = createStyles.createStyles(obj);
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginHorizontal: 16, marginBottom: 12, borderRadius: nativeDefault.radii.md };
-size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/JoinRequestOtherApplications.tsx");
-
-export default noop.memo((arg0) => {
+({ Pressable: closure_4, View: hasOwnProperty } = react_native);
+let Fragment = Fragment_mod;
+({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { label: { marginHorizontal: 16, marginBottom: 8 }, container: obj2, row: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 16 }, divider: size };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginHorizontal: 16, marginBottom: 12, borderRadius: nativeDefault.radii.md };
+createStyles = createStyles.createStyles;
+size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+let closure_9 = createStyles(obj);
+const memoResult = react.memo((arg0) => {
+  let guildId;
+  let intl;
+  let items;
+  let selectedJoinRequestId;
+  let userId;
   ({ guildId, userId, selectedJoinRequestId } = arg0);
   const tmp = closure_9();
   _require = tmp;
-  const otherGuildJoinRequestsForUser = require("useOtherGuildJoinRequestsForUser").useOtherGuildJoinRequestsForUser({ guildId, userId, selectedJoinRequestId });
+  let tmp2 = _require;
+  let obj = require("useOtherGuildJoinRequestsForUser");
+  const otherGuildJoinRequestsForUser = obj.useOtherGuildJoinRequestsForUser({ guildId, userId, selectedJoinRequestId });
   let tmp4 = null;
   if (0 !== otherGuildJoinRequestsForUser.length) {
-    let obj2 = { children: null };
-    let obj3 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, children: null };
-    const intl = tmp2(1115).intl;
-    obj3.children = intl.string(tmp2(1115).t["hxa+G3"]);
-    let items = [closure_6(tmp2(4832).Text, obj3), ];
+    let obj2 = { children: items };
+    let obj3 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, children: intl.string(tmp2(1115).t["hxa+G3"]) };
+    let Text = tmp2(4832).Text;
+    intl = tmp2(1115).intl;
+    items = [closure_6(Text, obj3), ];
     let obj4 = {
       style: tmp.container,
       children: otherGuildJoinRequestsForUser.map((createdAt, index) => {
+          let date;
+          let dateFormat;
+          let items;
+          let items1;
           closure_0 = createdAt;
           let tmp2 = index > 0;
+          const Fragment = react.Fragment;
           if (tmp2) {
             const obj = { style: closure_0.divider };
-            tmp2 = timestampProducer(hasOwnProperty, obj);
+            tmp2 = metroRequire(hasOwnProperty, obj);
           }
-          const obj2 = { children: null };
-          const items = [tmp2, ];
+          const obj2 = { children: items };
+          items = [tmp2, ];
           const obj3 = {
             accessibilityRole: "button",
             style: closure_0.row,
             onPress() {
-              return openJoinRequestActionSheetDefault(closure_0);
+              return closure_2_1(closure_2_2[11])(closure_0);
             },
-            children: null
+            children: items1
           };
-          const obj4 = { variant: "text-sm/normal", color: "text-default", children: null };
-          const obj5 = DateUtils;
-          obj4.children = obj5.dateFormat(new Date(createdAt.createdAt), "LL");
-          const items1 = [timestampProducer(Text_Text.Text, obj4), timestampProducer(ApplicationStatusIcon, { status: createdAt.applicationStatus })];
-          obj3.children = items1;
-          items[1] = React5(React4, obj3);
-          obj2.children = items;
-          return React5(noop.Fragment, obj2, createdAt.joinRequestId);
+          const obj4 = { variant: "text-sm/normal", color: "text-default", children: dateFormat(date, "LL") };
+          const Text = Text_Text.Text;
+          dateFormat = DateUtils.dateFormat;
+          DateUtils;
+          date = new Date(createdAt.createdAt);
+          items1 = [metroRequire(Text, obj4), ];
+          const obj5 = { status: createdAt.applicationStatus };
+          items1[1] = metroRequire(ApplicationStatusIcon, obj5);
+          items[1] = metroImportDefault(React3, obj3);
+          return metroImportDefault(Fragment, obj2, createdAt.joinRequestId);
         })
     };
     items[1] = closure_6(closure_5, obj4);
-    obj2.children = items;
     tmp4 = closure_7(closure_8, obj2);
   }
   return tmp4;
 });
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/JoinRequestOtherApplications.tsx");
+
+export default memoResult;

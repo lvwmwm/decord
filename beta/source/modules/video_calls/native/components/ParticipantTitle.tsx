@@ -5,23 +5,27 @@
 // Exports: default
 
 // Module 9526 (ParticipantTitle)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import getParticipantTitleDefault from "getParticipantTitle" /* 9508 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { usernameText: { fontSize: 14, color: nativeDefault.colors.WHITE } };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
+const jsx = Fragment.jsx;
+const obj = { usernameText: { fontSize: 14, color: nativeDefault.colors.WHITE } };
+({ fontSize: 14, color: nativeDefault.colors.WHITE });
+let closure_4 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ParticipantTitle.tsx");
 
 export default function ParticipantTitle(arg0) {
+  let channel;
+  let participant;
+  let style;
   ({ channel, participant, style } = arg0);
-  const obj = { style: null, numberOfLines: 1, children: getParticipantTitleDefault(channel, participant) };
   const items = [closure_4().usernameText, style];
-  obj.style = items;
-  return jsx(native.LegacyText, { style: null, numberOfLines: 1, children: getParticipantTitleDefault(channel, participant) });
+  closure_4();
+  const LegacyText = native.LegacyText;
+  return <LegacyText style={items} numberOfLines={1}>{getParticipantTitleDefault(channel, participant)}</LegacyText>;
 };

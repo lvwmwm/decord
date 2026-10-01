@@ -5,23 +5,34 @@
 // Exports: default
 
 // Module 17401 (GuildSettingsModalLobbiesLinked)
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap, linkedLobby;
 
-const require = fn;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 function SyncingToGamesItem(channels) {
+  let closure_2;
   channels = channels.channels;
   const isOnlySection = channels.isOnlySection;
-  dependencyMap = channels(1485).useNavigation();
+  const applicationId = channels.applicationId;
   let obj = channels(1485);
-  const tmp = channels;
-  const getOrFetchApplication = channels(6589).useGetOrFetchApplication(channels.applicationId);
+  dependencyMap = obj.useNavigation();
+  let obj2 = channels(6589);
+  const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
   let tmp5Result = null;
+  const tmp = channels;
   if (0 !== channels.length) {
     let name;
+    const TableRowGroup = tmp(5999).TableRowGroup;
+    const tmp5 = closure_6;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
     }
@@ -29,46 +40,63 @@ function SyncingToGamesItem(channels) {
       title: name,
       hasIcons: true,
       children: channels.map((id) => {
+          let Icon;
+          let obj2;
+          let obj3;
+          let obj4;
           const channel = id;
-          let obj = { label: channels(4989).computeChannelName(id, UserStore, RelationshipStore), icon: null, arrow: true, onPress: null };
-          const obj3 = { IconComponent: null };
-          const obj2 = channels(4989);
-          obj3.IconComponent = channels(5335).getChannelIconComponent(id);
-          obj.icon = closure_1_6(channels(5917).TableRow.Icon, obj3);
-          obj.onPress = function onPress() {
-            const obj = { channel, numScreensToPop: null };
-            let num = 1;
-            if (isOnlySection) {
+          let obj = {
+            label: obj2.computeChannelName(id, UserStore, RelationshipStore),
+            icon: closure_1_6(Icon, obj3),
+            arrow: true,
+            onPress() {
+              let num;
+              const obj = { channel, numScreensToPop: num };
               num = 1;
-              if (1 === channels.length) {
-                num = 2;
+              const push = navigation.push;
+              const EDIT_LINKED_LOBBY = GuildSettingsSections.EDIT_LINKED_LOBBY;
+              if (isOnlySection) {
+                num = 1;
+                if (1 === channels.length) {
+                  num = 2;
+                }
               }
+              push(EDIT_LINKED_LOBBY, obj);
             }
-            obj.numScreensToPop = num;
-            closure_2.push(GuildSettingsSections.EDIT_LINKED_LOBBY, obj);
           };
-          return closure_1_6(channels(5917).TableRow, obj, id.id);
+          const TableRow = channels(navigation[8]).TableRow;
+          obj2 = channels(navigation[9]);
+          obj3 = { IconComponent: obj4.getChannelIconComponent(id) };
+          Icon = channels(navigation[8]).TableRow.Icon;
+          obj4 = channels(navigation[10]);
+          return closure_1_6(TableRow, obj, id.id);
         })
     };
-    tmp5Result = closure_6(tmp(5999).TableRowGroup, obj3);
+    tmp5Result = tmp5(TableRowGroup, obj3);
   }
   return tmp5Result;
 }
-const GuildSettingsSections = fn(1074).GuildSettingsSections;
-const jsxProd = fn(21);
-({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const size = fn(2);
+const GuildSettingsSections = Constants.GuildSettingsSections;
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const result = size.fileFinishedImporting("modules/guild_settings/apps/native/GuildSettingsModalLobbiesLinked.tsx");
 
 export default function GuildSettingsModalLobbiesLinked(arg0) {
+  let Stack;
+  let _undefined;
+  let contentContainerStyle;
+  let guildId;
+  let items;
+  let items1;
+  let obj7;
   _require = undefined;
   let keys;
   ({ contentContainerStyle, guildId } = arg0);
-  const token = require("useToken").useToken(keys(576).modules.mobile.TABLE_ROW_PADDING);
-  const obj = require("useToken");
-  const channelsAllowedToUnlink = require("useChannelsAllowedToUnlink").useChannelsAllowedToUnlink(guildId);
+  let obj = require("useToken");
+  const token = obj.useToken(keys(576).modules.mobile.TABLE_ROW_PADDING);
   const obj2 = require("useChannelsAllowedToUnlink");
-  const groupByResult = keys(12).groupBy(channelsAllowedToUnlink, (linkedLobby) => {
+  const channelsAllowedToUnlink = obj2.useChannelsAllowedToUnlink(guildId);
+  const obj3 = keys(12);
+  const groupByResult = obj3.groupBy(channelsAllowedToUnlink, (linkedLobby) => {
     linkedLobby = linkedLobby.linkedLobby;
     let application_id;
     if (linkedLobby != null) {
@@ -78,14 +106,20 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   });
   _require = groupByResult;
   keys = Object.keys(groupByResult);
-  const obj4 = { children: null };
-  const obj5 = { contentContainerStyle: null, children: null };
-  const obj3 = keys(12);
-  const items = [{ paddingTop: keys(576).space.PX_16 }, contentContainerStyle];
-  obj5.contentContainerStyle = items;
+  const obj4 = { children: items1 };
+  const obj5 = { contentContainerStyle: items, children: closure_6(Stack, obj7) };
   const obj6 = { paddingTop: keys(576).space.PX_16 };
-  obj5.children = closure_6(require("Stack/Stack").Stack, { style: { paddingHorizontal: token }, spacing: keys(576).space.PX_24, children: keys.map((applicationId) => timestampProducer(SyncingToGamesItem, { applicationId, channels: _undefined[applicationId], isOnlySection: 1 === keys.length }, applicationId)) });
-  const items1 = [closure_6(require("Form").Form, obj5), closure_6(require("NavScrim").NavScrim, {})];
-  obj4.children = items1;
+  const Form = require("Form").Form;
+  items = [obj6, contentContainerStyle];
+  obj7 = {
+    style: { paddingHorizontal: token },
+    spacing: keys(576).space.PX_24,
+    children: keys.map((applicationId) => {
+      const obj = { applicationId, channels: _undefined[applicationId], isOnlySection: 1 === keys.length };
+      return metroRequire(SyncingToGamesItem, obj, applicationId);
+    })
+  };
+  Stack = require("Stack/Stack").Stack;
+  items1 = [closure_6(Form, obj5), closure_6(require("NavScrim").NavScrim, {})];
   return closure_8(closure_7, obj4);
 };

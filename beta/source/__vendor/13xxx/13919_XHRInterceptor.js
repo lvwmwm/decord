@@ -4,6 +4,8 @@
 // Dependencies: []
 
 // Module 13919 (XHRInterceptor)
+let c0, c1, c2, c3, c4;
+
 let c8 = false;
 
 export const XHRInterceptor = {
@@ -26,19 +28,15 @@ export const XHRInterceptor = {
     return c8;
   },
   enableInterception() {
-    if (!c8) {
+    let tmp = c8;
+    if (!tmp) {
       const _XMLHttpRequest = XMLHttpRequest;
       XMLHttpRequest.prototype.open = function(arg0, arg1) {
         const self = this;
         if (closure_1_0) {
           tmp(arg0, arg1, self);
         }
-        const apply = open.apply;
-        if (typeof apply === "unknown") {
-          HermesBuiltin.applyArguments(self);
-        } else {
-          apply(self, arguments);
-        }
+        open(...arguments);
       };
       const _XMLHttpRequest2 = XMLHttpRequest;
       XMLHttpRequest.prototype.setRequestHeader = function(arg0, arg1) {
@@ -46,55 +44,50 @@ export const XHRInterceptor = {
         if (closure_1_2) {
           tmp(arg0, arg1, self);
         }
-        const apply = setRequestHeader.apply;
-        if (typeof apply === "unknown") {
-          HermesBuiltin.applyArguments(self);
-        } else {
-          apply(self, arguments);
-        }
+        setRequestHeader(...arguments);
       };
       const _XMLHttpRequest3 = XMLHttpRequest;
       XMLHttpRequest.prototype.send = function(arg0) {
+        let tmp;
         const self = this;
         if (closure_1) {
           tmp(arg0, self);
         }
         if (self.addEventListener) {
           const listener = self.addEventListener("readystatechange", () => {
-            if (closure_2_8) {
+            const tmp = closure_2_8;
+            if (tmp) {
               if (self.readyState === self.HEADERS_RECEIVED) {
-                const str2 = obj.getResponseHeader("Content-Type");
+                let first;
+                let parsed;
+                const str2 = self.getResponseHeader("Content-Type");
                 const responseHeader = obj.getResponseHeader("Content-Length");
                 if (str2) {
-                  const first = str2.split(";")[0];
+                  first = str2.split(";")[0];
                 }
                 if (responseHeader) {
                   const _parseInt = parseInt;
-                  const parsed = parseInt(responseHeader, 10);
+                  parsed = parseInt(responseHeader, 10);
                 }
                 if (closure_2_3) {
-                  tmp5(first, parsed, obj.getAllResponseHeaders(), obj);
+                  tmp6(first, parsed, self.getAllResponseHeaders(), self);
                 }
               }
-              if (tmp10) {
-                closure_2_4(obj.status, obj.timeout, obj.response, obj.responseURL, obj.responseType, obj);
+              const tmp11 = self.readyState === self.DONE && closure_2_4;
+              if (tmp11) {
+                closure_2_4(self.status, self.timeout, self.response, self.responseURL, self.responseType, self);
               }
-              tmp10 = self.readyState === self.DONE && closure_2_4;
             }
           }, false);
         }
-        const apply = closure_6.apply;
-        if (typeof apply === "unknown") {
-          HermesBuiltin.applyArguments(self);
-        } else {
-          apply(self, arguments);
-        }
+        closure_6(...arguments);
       };
       c8 = true;
     }
   },
   disableInterception() {
-    if (c8) {
+    const tmp = c8;
+    if (tmp) {
       c8 = false;
       const _XMLHttpRequest = XMLHttpRequest;
       XMLHttpRequest.prototype.send = send;

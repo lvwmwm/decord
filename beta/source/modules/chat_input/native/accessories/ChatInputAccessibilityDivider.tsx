@@ -4,28 +4,32 @@
 // Dependencies: [19, 17, 21, 5266, 1364, 1115, 2]
 
 // Module 11744 (ChatInputAccessibilityDivider)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5266 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-({ StyleSheet: c2, View: c3 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/chat_input/native/accessories/ChatInputAccessibilityDivider.tsx");
-
-export const ChatInputAccessibilityDivider = noop.memo(() => {
+let c2;
+let c3;
+({ StyleSheet: c2, View: c3 } = react_native);
+const jsx = Fragment.jsx;
+const memoResult = react.memo(() => {
   let tmp3 = null;
+  const obj = useIsScreenReaderEnabled;
   if (obj.useIsScreenReaderEnabled()) {
     tmp3 = null;
+    const tmpResult = PlatformUtils;
     if (!tmpResult.isAndroid()) {
-      const obj2 = { nativeID: "chat-input-accessibility-divider", accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null };
       const intl = tmp(1115).intl;
-      obj2.accessibilityLabel = intl.string(tmp(1115).t["uKZtC/"]);
       const items = [absoluteFill.absoluteFill, { height: 1 }];
-      obj2.style = items;
-      tmp3 = <React3 nativeID="chat-input-accessibility-divider" accessible accessibilityLabel={null} accessibilityRole="header" style={null} />;
+      tmp3 = <_false nativeID="chat-input-accessibility-divider" accessible accessibilityLabel={intl.string(intl2.t["uKZtC/"])} accessibilityRole="header" style={items} />;
     }
-    tmpResult = tmp(1364);
   }
   return tmp3;
 });
+const result = size.fileFinishedImporting("modules/chat_input/native/accessories/ChatInputAccessibilityDivider.tsx");
+
+export const ChatInputAccessibilityDivider = memoResult;

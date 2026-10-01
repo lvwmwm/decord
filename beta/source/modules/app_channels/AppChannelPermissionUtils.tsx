@@ -5,14 +5,14 @@
 // Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission, useAppChannelBotUserId
 
 // Module 11105 (AppChannelPermissionUtils)
+import Constants from "Constants" /* 1074 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import AppChannelPermissions from "AppChannelPermissions" /* 4476 */;
 import useAppChannelApplication from "useAppChannelApplication" /* 11106 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ChannelTypes = fn(1074).ChannelTypes;
-const size = fn(2);
+const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/app_channels/AppChannelPermissionUtils.tsx");
 
 export const getAppChannelBotUserIdFromApplication = function getAppChannelBotUserIdFromApplication(type, bot) {
@@ -53,7 +53,8 @@ export const getAppChannelBotUserId = function getAppChannelBotUserId(c18) {
   return tmp2;
 };
 export const useAppChannelBotUserId = function useAppChannelBotUserId(channel) {
-  const appChannelApplication = useAppChannelApplication.useAppChannelApplication(channel);
+  const obj = useAppChannelApplication;
+  const appChannelApplication = obj.useAppChannelApplication(channel);
   let tmp2;
   if (null != channel) {
     let tmp4;
@@ -79,7 +80,8 @@ export const useAppChannelBotUserId = function useAppChannelBotUserId(channel) {
 export const isAppChannelFloorPermission = function isAppChannelFloorPermission(appChannelBotUserId, id, arg2) {
   let hasItem = appChannelBotUserId === id;
   if (hasItem) {
-    hasItem = BigFlagUtilsAll.has(AppChannelPermissions.APP_CHANNEL_MINIMUM_BOT_PERMISSIONS, arg2);
+    const obj = BigFlagUtilsAll;
+    hasItem = obj.has(AppChannelPermissions.APP_CHANNEL_MINIMUM_BOT_PERMISSIONS, arg2);
   }
   return hasItem;
 };

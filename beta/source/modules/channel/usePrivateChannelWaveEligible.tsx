@@ -5,15 +5,17 @@
 // Exports: usePrivateChannelWaveEligible
 
 // Module 15671 (usePrivateChannelWaveEligible)
+import Constants from "Constants" /* 1074 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
 import MessageStore from "MessageStore" /* 5056 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const ChannelFlags = fn(2052).ChannelFlags;
-const MessageTypes = fn(1074).MessageTypes;
-const size = fn(2);
+const ChannelFlags = ChannelConstants.ChannelFlags;
+const MessageTypes = Constants.MessageTypes;
 const result = size.fileFinishedImporting("modules/channel/usePrivateChannelWaveEligible.tsx");
 
 export const usePrivateChannelWaveEligible = function usePrivateChannelWaveEligible(isDM, arg1) {
@@ -28,25 +30,20 @@ export const usePrivateChannelWaveEligible = function usePrivateChannelWaveEligi
     recipientId = isDM.getRecipientId();
   }
   const items = [RelationshipStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let isFriendResult = null != recipientId;
-    if (isFriendResult) {
-      isFriendResult = RelationshipStore.isFriend(tmp);
-    }
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const isFriendResult = null != recipientId && RelationshipStore.isFriend(tmp);
     return isFriendResult;
   });
-  const obj = require("initialize");
   const items1 = [RelationshipStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => {
-    let isIgnoredResult = null != recipientId;
-    if (isIgnoredResult) {
-      isIgnoredResult = RelationshipStore.isIgnored(tmp);
-    }
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    const isIgnoredResult = null != recipientId && RelationshipStore.isIgnored(tmp);
     return isIgnoredResult;
   });
-  const obj2 = require("initialize");
   const items2 = [MessageStore];
-  const stateFromStores2 = require("initialize").useStateFromStores(items2, () => {
+  const obj3 = require("get initialized");
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => {
     const messages = MessageStore.getMessages(isDM.id);
     let tmp = 1 === messages.length;
     if (tmp) {
@@ -60,16 +57,17 @@ export const usePrivateChannelWaveEligible = function usePrivateChannelWaveEligi
     return tmp;
   });
   let hasFlagResult = isDM.hasFlag(ChannelFlags.HAS_ONLY_SYSTEM_MESSAGES);
-  const obj3 = require("initialize");
   const items3 = [MessageStore];
-  const stateFromStores3 = require("initialize").useStateFromStores(items3, () => MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id));
-  const obj4 = require("initialize");
+  const obj4 = require("get initialized");
+  const stateFromStores3 = obj4.useStateFromStores(items3, () => MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id));
   const obj5 = recipientId(11);
-  const extractTimestampResult = recipientId(11).extractTimestamp(isDM.id);
-  const obj6 = require("DateUtils");
-  const tmp9 = recipientId(4421)();
-  const isWithinIntervalResult = obj6.isWithinInterval(recipientId(4421)(), recipientId(4421)(extractTimestampResult), 1814400000);
-  const strangerDangerWarning = require("useStrangerDangerWarning").useStrangerDangerWarning(isDM.id);
+  const extractTimestampResult = obj5.extractTimestamp(isDM.id);
+  const isWithinInterval = require("DateUtils").isWithinInterval;
+  require("DateUtils");
+  const tmp10 = recipientId(4421)();
+  const isWithinIntervalResult = isWithinInterval(tmp10, recipientId(4421)(extractTimestampResult), 1814400000);
+  const obj6 = require("useStrangerDangerWarning");
+  const strangerDangerWarning = obj6.useStrangerDangerWarning(isDM.id);
   if (tmp) {
     tmp = stateFromStores;
   }

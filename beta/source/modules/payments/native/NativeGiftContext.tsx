@@ -6,52 +6,73 @@
 
 // Module 10162 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
+import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import Constants2 from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import BillingUtils from "BillingUtils" /* 4503 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
+import Constants3 from "Constants" /* 6659 */;
 import ContextUtilsDefault from "ContextUtils" /* 6848 */;
 import BadgeId from "BadgeId" /* 7629 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7642 */;
 import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10126 */;
 import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10205 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
 import PromotionsStore from "PromotionsStore" /* 10128 */;
 import GiftCodeRecord from "GiftCodeRecord" /* 10163 */;
 import UserStore from "UserStore" /* 1372 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
+let constants;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-fn(6659).GPlayBillingResult;
-const PremiumConstants = fn(1374);
+let closure_12;
+let closure_14;
+let closure_18;
+let map1;
+let tmp6;
+let tmp7;
+let react = react_mod;
+const AnalyticEvents = Constants.AnalyticEvents;
+const unpackModuleId = Constants3.GPlayBillingResult;
 ({ PremiumTypes: closure_12, SubscriptionIntervalTypes: map1, SubscriptionPlanInfo: closure_14 } = PremiumConstants);
-const PaymentGateways = fn(1085).PaymentGateways;
-const jsx = fn(21).jsx;
-let closure_17 = new LoggerDefault("NativeGiftContext");
+const PaymentGateways = Constants2.PaymentGateways;
+const jsx = Fragment.jsx;
 const tmp4 = new LoggerDefault("NativeGiftContext");
+let closure_17 = tmp4;
 [closure_18, tmp6, tmp7] = ContextUtilsDefault();
-const size = fn(2);
+_slicedToArray(ContextUtilsDefault(), 3);
 let result = size.fileFinishedImporting("modules/payments/native/NativeGiftContext.tsx");
 
 export const NativeGiftContextProvider = function NativeGiftContextProvider(basePurchaseAnalytics) {
+  let children;
+  let initialOrder;
+  let obj7;
+  let onClose;
+  let order;
+  let planInterval;
+  let premiumType;
+  let revision;
+  let setOrder;
+  let setPremiumType;
+  let setRevision;
+  let setSoundEffect;
   basePurchaseAnalytics = basePurchaseAnalytics.basePurchaseAnalytics;
-  _require = basePurchaseAnalytics;
   const recipientUserId = basePurchaseAnalytics.recipientUserId;
   ({ premiumType, planInterval, onClose } = basePurchaseAnalytics);
   const setCurrentAnalyticsStep = basePurchaseAnalytics.setCurrentAnalyticsStep;
   premiumType = undefined;
-  noop = undefined;
+  react = undefined;
   let first1;
   let setPlanInterval;
   let first2;
-  closure_9 = undefined;
+  let setGiftStyle;
   let first3;
   let setCustomGiftMessage;
   let first4;
@@ -61,13 +82,13 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
   let first6;
   closure_17 = undefined;
   let first7;
-  closure_19 = undefined;
+  let closure_19;
   let first8;
-  closure_21 = undefined;
+  let closure_21;
   let first9;
   let setSelectedGiftingPromotionReward;
   let first10;
-  closure_25 = undefined;
+  let closure_25;
   let orderContext;
   let planIdForPremiumType;
   let productIdForGift;
@@ -76,7 +97,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
   let handlePremiumPurchase;
   let stateFromStoresArray;
   let fetchClaimableGiftingPromotionRewardSkuIds;
-  closure_34 = undefined;
+  let closure_34;
   let enabled;
   let stateFromStores;
   let memo1;
@@ -84,58 +105,75 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
   let callback1;
   let callback2;
   let callback3;
-  let callback4;
+  let callback21;
+  let obj = react;
   ({ initialOrder, children } = basePurchaseAnalytics);
+  const useState = react.useState;
   if (premiumType == null) {
+    let tmp = first4;
     premiumType = first4.TIER_2;
   }
-  const tmp3 = premiumType(noop.useState(premiumType), 2);
+  let tmp2 = premiumType;
+  const tmp3 = premiumType(useState(premiumType), 2);
   premiumType = tmp3[0];
-  noop = tmp5;
+  let tmp5 = tmp3[1];
+  react = tmp5;
+  const useState2 = obj.useState;
   if (planInterval == null) {
+    let tmp6 = constants;
     planInterval = constants.YEAR;
   }
-  const tmp2Result = premiumType(noop.useState(planInterval), 2);
+  const tmp2Result = tmp2(useState2(planInterval), 2);
   first1 = tmp2Result[0];
+  let tmp9 = tmp2Result[1];
   setPlanInterval = tmp9;
-  const tmp2Result11 = premiumType(noop.useState(require("useGiftStyles").useGiftStyles()[0]), 2);
+  const tmp10 = basePurchaseAnalytics;
+  const tmp11 = onClose;
+  let obj2 = basePurchaseAnalytics(onClose[17]);
+  const tmp2Result11 = tmp2(obj.useState(obj2.useGiftStyles()[0]), 2);
   first2 = tmp2Result11[0];
-  closure_9 = tmp2Result11[1];
-  let intl = require("util").intl;
-  const tmp2Result12 = premiumType(noop.useState(intl.string(require("util").t.ZkOo1U)), 2);
+  setGiftStyle = tmp2Result11[1];
+  const useState3 = obj.useState;
+  let intl = basePurchaseAnalytics(onClose[18]).intl;
+  const tmp2Result12 = tmp2(useState3(intl.string(basePurchaseAnalytics(onClose[18]).t.ZkOo1U)), 2);
   first3 = tmp2Result12[0];
   setCustomGiftMessage = tmp2Result12[1];
-  const tmp2Result13 = premiumType(noop.useState(undefined), 2);
+  const tmp2Result13 = tmp2(obj.useState(undefined), 2);
   first4 = tmp2Result13[0];
   constants = tmp2Result13[1];
-  const tmp2Result14 = premiumType(noop.useState(undefined), 2);
+  const tmp2Result14 = tmp2(obj.useState(undefined), 2);
   first5 = tmp2Result14[0];
   setEmojiConfetti = tmp2Result14[1];
-  const tmp2Result15 = premiumType(noop.useState(undefined), 2);
+  const tmp2Result15 = tmp2(obj.useState(undefined), 2);
   first6 = tmp2Result15[0];
   closure_17 = tmp2Result15[1];
-  const tmp2Result16 = premiumType(noop.useState(false), 2);
+  const tmp2Result16 = tmp2(obj.useState(false), 2);
   first7 = tmp2Result16[0];
   closure_19 = tmp2Result16[1];
-  const tmp2Result17 = premiumType(noop.useState(null), 2);
+  const tmp2Result17 = tmp2(obj.useState(null), 2);
   first8 = tmp2Result17[0];
+  let tmp26 = tmp2Result17[1];
   closure_21 = tmp26;
-  const tmp2Result18 = premiumType(noop.useState(), 2);
+  const tmp2Result18 = tmp2(obj.useState(), 2);
   first9 = tmp2Result18[0];
   setSelectedGiftingPromotionReward = tmp29;
-  const tmp2Result19 = premiumType(noop.useState(null), 2);
+  const tmp2Result19 = tmp2(obj.useState(null), 2);
   first10 = tmp2Result19[0];
   closure_25 = tmp2Result19[1];
-  let obj2 = require("useGiftStyles");
-  orderContext = require("useOrderContext").useOrderContext(initialOrder, "NativeGiftContext");
-  let obj3 = require("useOrderContext");
-  planIdForPremiumType = require("PremiumUtils").getPlanIdForPremiumType(premiumType, first1);
-  let obj4 = require("PremiumUtils");
-  productIdForGift = require("ProductIds").getProductIdForGift(planIdForPremiumType);
+  let obj3 = basePurchaseAnalytics(onClose[19]);
+  orderContext = obj3.useOrderContext(initialOrder, "NativeGiftContext");
+  let obj4 = basePurchaseAnalytics(onClose[20]);
+  planIdForPremiumType = obj4.getPlanIdForPremiumType(premiumType, first1);
+  let obj5 = basePurchaseAnalytics(onClose[21]);
+  productIdForGift = obj5.getProductIdForGift(planIdForPremiumType);
   if (null == first5[planIdForPremiumType]) {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("Invalid subscription plan for gift purchase: " + planIdForPremiumType);
+    let str = "Invalid subscription plan for gift purchase: ";
+    const self = this;
+    const self2 = this;
+    let error = new Error("Invalid subscription plan for gift purchase: " + planIdForPremiumType);
+    const tmp67 = error;
     throw error;
   } else {
     skuId = tmp35.skuId;
@@ -149,54 +187,52 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
     }
     let items = [payment_gateway, productIdForGift];
     const memo = obj.useMemo(() => {
+      let items;
       let tmp;
       if (payment_gateway === PaymentGateways.GOOGLE) {
-        const obj = { line_items: null };
-        const obj2 = { external_product_id: productIdForGift };
-        const items = [obj2];
-        obj.line_items = items;
+        const obj = { line_items: items };
+        items = [{ external_product_id: productIdForGift }];
         tmp = obj;
+        const obj2 = { external_product_id: productIdForGift };
       }
       return tmp;
     }, items);
-    handlePremiumPurchase = tmp10(tmp11[22]).useHandlePremiumPurchase();
     const tmp10Result = tmp10(tmp11[22]);
+    handlePremiumPurchase = tmp10Result.useHandlePremiumPurchase();
     const items1 = [setPlanInterval];
-    stateFromStoresArray = tmp10(tmp11[23]).useStateFromStoresArray(items1, () => setPlanInterval.getGiftPromotionRewardSkuIds());
     const tmp10Result4 = tmp10(tmp11[23]);
-    fetchClaimableGiftingPromotionRewardSkuIds = tmp10(tmp11[24]).useFetchClaimableGiftingPromotionRewardSkuIds();
+    stateFromStoresArray = tmp10Result4.useStateFromStoresArray(items1, () => setPlanInterval.getGiftPromotionRewardSkuIds());
+    const tmp10Result5 = tmp10(tmp11[24]);
+    fetchClaimableGiftingPromotionRewardSkuIds = tmp10Result5.useFetchClaimableGiftingPromotionRewardSkuIds();
     let tmp41 = null != fetchClaimableGiftingPromotionRewardSkuIds;
     if (tmp41) {
+      let num = 0;
       tmp41 = fetchClaimableGiftingPromotionRewardSkuIds.length > 0;
     }
     closure_34 = tmp41;
-    const tmp10Result5 = tmp10(tmp11[24]);
-    const tmp42 = recipientUserId;
-    enabled = recipientUserId(tmp11[25]).useConfig({ location: "NativeGiftContext" }).enabled;
+    let obj9 = recipientUserId(tmp11[25]);
+    enabled = obj9.useConfig({ location: "NativeGiftContext" }).enabled;
     const items2 = [enabled];
     const effect = obj.useEffect(() => {
-      if (enabled) {
-        const badge = BadgeDirectoryActionCreators.fetchBadge(BadgeId.BadgeId.GIFTING);
+      const tmp = enabled;
+      if (tmp) {
+        const obj = BadgeDirectoryActionCreators;
+        const badge = obj.fetchBadge(BadgeId.BadgeId.GIFTING);
       }
     }, items2);
-    let obj9 = recipientUserId(tmp11[25]);
-    const items3 = [closure_9];
-    stateFromStores = tmp10(tmp11[23]).useStateFromStores(items3, () => {
+    const items3 = [setGiftStyle];
+    const tmp10Result6 = tmp10(tmp11[23]);
+    stateFromStores = tmp10Result6.useStateFromStores(items3, () => {
       let user;
       if (null != recipientUserId) {
         user = UserStore.getUser(tmp);
       }
       return user;
     });
-    closure_129_0 = first2;
-    closure_129_1 = recipientUserId;
-    closure_129_2 = first3;
-    closure_129_3 = first5;
-    closure_129_4 = first4;
-    closure_129_5 = first9;
-    closure_129_6 = premiumType;
     const items4 = [first2, recipientUserId, first3, , , , , ];
     let id;
+    const useMemo = obj.useMemo;
+    const tmp42 = recipientUserId;
     if (first5 != null) {
       id = first5.id;
     }
@@ -213,25 +249,25 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
     items4[5] = soundId;
     items4[6] = first9;
     items4[7] = premiumType;
-    memo1 = obj.useMemo(() => {
-      const obj = { gift_style, recipient_id: recipientUserId, custom_message: onClose, emoji_id: null, emoji_name: null, sound_id: null, reward_sku_ids: null };
+    memo1 = useMemo(() => {
       let id;
-      if (setCurrentAnalyticsStep != null) {
+      let soundId;
+      let surrogates;
+      const obj = { gift_style: first2, recipient_id: recipientUserId, custom_message: first3, emoji_id: id, emoji_name: surrogates, sound_id: soundId, reward_sku_ids: null };
+      id = undefined;
+      if (first5 != null) {
         id = tmp.id;
       }
-      obj.emoji_id = id;
-      let surrogates;
-      if (setCurrentAnalyticsStep != null) {
+      surrogates = undefined;
+      if (first5 != null) {
         surrogates = tmp.surrogates;
       }
-      obj.emoji_name = surrogates;
-      let soundId;
-      if (first != null) {
-        soundId = first.soundId;
+      soundId = undefined;
+      if (first4 != null) {
+        soundId = first4.soundId;
       }
-      obj.sound_id = soundId;
-      if (null != closure_5) {
-        if (first1 === TIER_2.TIER_2) {
+      if (null != first9) {
+        if (first === first4.TIER_2) {
           const items = [tmp5];
         }
         obj.reward_sku_ids = [];
@@ -240,136 +276,149 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
     }, items4);
     const items5 = [first8];
     const effect1 = obj.useEffect(() => {
+      let intl;
+      let intl2;
       if (null != first8) {
-        const obj2 = { title: null, body: null };
-        const intl = util.intl;
-        obj2.title = intl.string(util.t.R0RpRX);
-        const intl2 = util.intl;
-        obj2.body = intl2.string(util.t.CKsXk3);
-        actions_AlertActionCreatorsDefault.show(obj2);
+        const obj = { title: intl.string(intl3.t.R0RpRX), body: intl2.string(intl3.t.CKsXk3) };
+        const show = actions_AlertActionCreatorsDefault.show;
+        actions_AlertActionCreatorsDefault;
+        intl = intl3.intl;
+        intl2 = intl3.intl;
+        show(obj);
         closure_21(null);
       }
     }, items5);
     const items6 = [first9, tmp41];
     const effect2 = obj.useEffect(() => {
-      if (closure_34) {
+      const tmp = closure_34;
+      if (tmp) {
         const currentUser = UserStore.getCurrentUser();
         let id;
+        const track = AnalyticsUtilsDefault.track;
+        const GIFT_PROMOTION_REWARD_SELECTED = AnalyticEvents.GIFT_PROMOTION_REWARD_SELECTED;
+        AnalyticsUtilsDefault;
         if (currentUser != null) {
           id = currentUser.id;
         }
-        const obj2 = { user_id: id, reward_sku_id: first9 };
-        AnalyticsUtilsDefault.track(AnalyticEvents.GIFT_PROMOTION_REWARD_SELECTED, obj2);
+        const obj = { user_id: id, reward_sku_id: first9 };
+        track(GIFT_PROMOTION_REWARD_SELECTED, obj);
       }
     }, items6);
     ({ order, revision, setRevision, setOrder } = orderContext);
-    closure_130_0 = order;
-    closure_130_1 = revision;
-    closure_130_2 = setRevision;
-    closure_130_3 = setOrder;
-    closure_130_4 = planIdForPremiumType;
-    closure_130_5 = memo;
-    closure_130_6 = memo1;
-    closure_130_7 = first7;
-    closure_130_8 = premiumType;
-    closure_130_9 = first1;
-    closure_130_10 = tmp5;
-    closure_130_11 = tmp9;
-    closure_130_12 = tmp26;
-    let obj6 = { orderId: "a", planId: "gravity", planSelection: null, giftInfo: null };
-    let obj7 = { premiumType, planInterval: first1 };
-    obj6.planSelection = obj7;
-    closure_130_13 = obj.useRef(obj6);
-    closure_130_14 = obj.useRef(false);
-    closure_130_15 = obj.useRef(null);
+    let closure_10 = tmp5;
+    setCustomGiftMessage = tmp9;
+    closure_12 = tmp26;
+    let obj6 = { orderId: "a", planId: 1056913937252952200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, planSelection: obj7, giftInfo: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173333104240301 };
+    obj7 = { premiumType, planInterval: first1 };
+    constants = obj.useRef(obj6);
+    let closure_14 = obj.useRef(false);
+    setEmojiConfetti = obj.useRef(null);
+    let num2 = 0;
     const tmp2Result20 = tmp2(obj.useState(0), 2);
-    closure_130_16 = tmp53;
-    const tmp54 = tmp42(tmp11[14])(tmp2Result20[1]);
-    const waitForPause = tmp54.waitForPause;
-    closure_130_17 = waitForPause;
-    const flush = tmp54.flush;
-    closure_130_18 = flush;
-    const waitForSync = tmp54.waitForSync;
-    closure_130_19 = waitForSync;
-    const resolveSyncs = tmp54.resolveSyncs;
-    closure_130_20 = resolveSyncs;
-    const isAwaitingSync = tmp54.isAwaitingSync;
-    closure_130_21 = isAwaitingSync;
-    const items7 = [order, revision, planIdForPremiumType, memo, memo1, first7, premiumType, first1, tmp5, tmp9, setRevision, setOrder, tmp26, tmp2Result20[0], resolveSyncs, waitForPause, isAwaitingSync];
+    const tmp54 = tmp2Result20[1];
+    let closure_16 = tmp54;
+    const first11 = tmp2Result20[0];
+    const tmp55 = tmp42(tmp11[14])(tmp54);
+    const waitForPause = tmp55.waitForPause;
+    const flush = tmp55.flush;
+    const waitForSync = tmp55.waitForSync;
+    const resolveSyncs = tmp55.resolveSyncs;
+    const isAwaitingSync = tmp55.isAwaitingSync;
+    const items7 = [order, revision, planIdForPremiumType, memo, memo1, first7, premiumType, first1, tmp5, tmp9, setRevision, setOrder, tmp26, first11, resolveSyncs, waitForPause, isAwaitingSync];
     const effect3 = obj.useEffect(() => {
+      let closure_7;
       let id;
+      let id2;
+      let logger;
+      let needsGiftSync;
+      let sku_id;
+      const tmp = id;
+      id = undefined;
       if (id != null) {
         id = tmp.id;
       }
-      let planId;
-      if (id != null) {
+      premiumType = undefined;
+      if (tmp != null) {
         const order_line_items = tmp.order_line_items;
         if (order_line_items != null) {
-          planId = order_line_items[0];
+          premiumType = order_line_items[0];
         }
       }
       let id1;
-      if (planId != null) {
-        id1 = planId.id;
+      if (premiumType != null) {
+        id1 = premiumType.id;
       }
-      if (planId != null) {
-        const sku_id = planId.sku_id;
+      if (premiumType != null) {
+        sku_id = premiumType.sku_id;
       }
       let subscription_plan_id;
-      if (planId != null) {
-        subscription_plan_id = planId.subscription_plan_id;
+      if (premiumType != null) {
+        subscription_plan_id = premiumType.subscription_plan_id;
       }
       if (subscription_plan_id == null) {
         subscription_plan_id = null;
       }
       let tmp6 = null != tmp;
       if (tmp6) {
-        tmp6 = setSoundEffect.current.orderId !== tmp.id;
+        tmp6 = ref.current.orderId !== tmp.id;
       }
       if (tmp6) {
-        setSoundEffect.current.orderId = tmp.id;
-        setSoundEffect.current.planId = subscription_plan_id;
-        let obj = { premiumType: first2, planInterval };
-        setSoundEffect.current.planSelection = obj;
-        setEmojiConfetti.current = null;
+        ref.current.orderId = tmp.id;
+        ref.current.planId = subscription_plan_id;
+        let obj = { premiumType, planInterval: first1 };
+        ref.current.planSelection = obj;
+        ref2.current = null;
       }
       if (null != id) {
-        if (null != planId) {
+        if (null != premiumType) {
           if (null != id1) {
-            if (null != planId) {
-              let tmp16 = setSoundEffect.current.planId !== needsGiftSync;
+            if (null != premiumType) {
+              let tmp16 = ref.current.planId !== needsGiftSync;
+              const tmp14 = ref;
               if (tmp16) {
                 let tmp17 = null == sku_id;
                 if (!tmp17) {
                   skuId = undefined;
-                  if (first5[tmp15] != null) {
+                  if (ref[tmp15] != null) {
                     skuId = tmp19.skuId;
                   }
                   tmp17 = skuId === sku_id;
                 }
                 tmp16 = tmp17;
               }
-              const needsPlanSync = tmp16;
+              let needsPlanSync = tmp16;
               needsGiftSync = tmp22;
-              if (!first5.current) {
+              if (!ref.current) {
                 if (!tmp16) {
-                  if (!tmp22) {
-                    first8(true);
+                  if (tmp14.current.giftInfo === id2) {
+                    resolveSyncs(true);
                   }
                 }
-                if (!closure_7) {
-                  c5 = false;
-                  let id2;
+                const tmp26 = first7;
+                if (!tmp26) {
+                  let c5 = false;
+                  id2 = undefined;
                   if (tmp != null) {
                     id2 = tmp.id;
                   }
                   tmp23.current = true;
-                  closure_7 = tmp12;
-                  const promise = setCurrentAnalyticsStep(function*(arg0, value) {
+                  first7 = tmp12;
+                  let tmp30 = setOrder;
+                  const promise = setOrder(function*(arg0, value) {
+                    let c4;
+                    let closure_2;
+                    let expectedRevision;
+                    let items;
+                    let obj12;
+                    let obj17;
+                    let obj5;
+                    let obj9;
+                    let planId;
+                    let v0;
                     if (c5 === 2) {
                       c5 = 3;
                       throw new TypeError("Generator functions may not be called on executing generators");
-                    } else if (tmp6 === 3) {
+                    } else if (tmp3 === 3) {
                       if (arg0 === 1) {
                         throw value;
                       } else if (arg0 === 2) {
@@ -380,6 +429,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                       }
                     } else {
                       try {
+                        let closure_1;
                         c5 = 2;
                         if (0 === planId) {
                           if (arg0 === 1) {
@@ -390,419 +440,146 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                             const obj3 = { value, done: true };
                             return obj3;
                           } else {
-                            closure_1 = tmp3;
-                            closure_0 = tmp7;
-                            closure_128_0 = undefined;
-                            if (closure_3) {
-                              let v0 = 1;
+                            closure_1 = tmp;
+                            revision = undefined;
+                            const tmp84 = needsPlanSync;
+                            if (tmp84) {
+                              needsPlanSync = 1;
                               if (null != c5) {
-                                const obj4 = { orderId: id, expectedRevision, orderLineItems: null, externalGatewayFacet: null };
-                                const obj6 = { sku_id: null, quantity: null, purchase_type: null, subscription_plan_id: null };
+                                const obj4 = { orderId: id, expectedRevision, orderLineItems: items, externalGatewayFacet: tmp54 };
+                                const obj6 = { sku_id: null, quantity: null, purchase_type: null, subscription_plan_id: planId };
                                 ({ sku_id: obj14.sku_id, quantity: obj14.quantity, purchase_type: obj14.purchase_type } = first);
-                                obj6.subscription_plan_id = planId;
-                                const items = [obj6];
-                                obj4.orderLineItems = items;
-                                obj4.externalGatewayFacet = tmp57;
+                                items = [obj6];
                                 planId = 2;
                                 c5 = 1;
-                                const obj7 = { value: id(id1[15]).patchOrder(obj4), done: false };
+                                const obj7 = { value: obj12.patchOrder(obj4), done: false };
+                                obj12 = id(id1[15]);
                                 return obj7;
                               } else {
                                 const obj8 = { orderId: id, orderLineItemId: id1, subscriptionPlanId: planId, expectedRevision };
                                 planId = 3;
                                 c5 = 1;
-                                const obj10 = { value: id(id1[15]).patchOrderLineItem(obj8), done: false };
+                                const obj10 = { value: obj9.patchOrderLineItem(obj8), done: false };
+                                obj9 = id(id1[15]);
                                 return obj10;
                               }
-                            } else if (closure_129_4) {
-                              setEmojiConfetti.current = giftInfo;
-                              const obj11 = { orderId: closure_129_0, giftInfo: null, expectedRevision: null };
-                              const obj13 = { recipient_id: giftInfo.recipient_id, gift_style: giftInfo.gift_style, emoji_id: giftInfo.emoji_id, emoji_name: giftInfo.emoji_name, sound_id: giftInfo.sound_id, reward_sku_ids: giftInfo.reward_sku_ids, custom_message_contents: giftInfo.custom_message };
-                              obj11.giftInfo = obj13;
-                              obj11.expectedRevision = revision;
-                              planId = 4;
-                              c5 = 1;
-                              const obj15 = { value: id(id1[15]).updateOrder(obj11), done: false };
-                              return obj15;
-                            } else {
-                              c5 = 3;
                             }
                           }
-                        } else if (1 === tmp7) {
-                          v0 = 0;
-                          closure_128_1 = tmp70;
-                          if (!closure_129_5) {
-                            first3(ref.current.planSelection.premiumType);
-                            setCustomGiftMessage(ref.current.planSelection.planInterval);
+                        } else if (1 === planId) {
+                          needsPlanSync = 0;
+                          closure_1 = tmp67;
+                          const tmp30 = closure_129_5;
+                          if (!tmp30) {
+                            closure_1_10(ref.current.planSelection.premiumType);
+                            closure_1_11(ref.current.planSelection.planInterval);
                           }
-                          throw closure_128_1;
+                          throw closure_1;
                         } else {
-                          if (2 === tmp7) {
+                          if (2 === planId) {
                             if (arg0 === 1) {
                               c5 = 3;
                               throw value;
                             } else if (arg0 === 2) {
-                              v0 = 0;
+                              needsPlanSync = 0;
                               c5 = 3;
-                              const obj16 = { value, done: true };
-                              return obj16;
-                            } else {
-                              closure_128_0 = value;
-                              if (ref.current.orderId !== closure_129_6) {
-                                v0 = 0;
-                                c5 = 3;
-                                return { value: "HermesInternal", done: null };
-                              } else {
-                                revision = closure_128_0.revision;
-                                v0(closure_128_0);
-                              }
-                            }
-                          } else if (3 === tmp7) {
-                            if (arg0 === 1) {
-                              c5 = 3;
-                              throw value;
-                            } else if (arg0 === 2) {
-                              v0 = 0;
-                              c5 = 3;
-                              const obj17 = { value, done: true };
-                              return obj17;
+                              const obj11 = { value, done: true };
+                              return obj11;
                             } else {
                               revision = value;
                               if (ref.current.orderId !== closure_129_6) {
-                                v0 = 0;
+                                needsPlanSync = 0;
                                 c5 = 3;
                                 return { value: "HermesInternal", done: null };
+                              } else {
+                                expectedRevision = revision.revision;
+                                needsPlanSync(revision);
                               }
                             }
-                          } else if (arg0 === 1) {
-                            c5 = 3;
-                            throw value;
-                          } else if (arg0 === 2) {
-                            c5 = 3;
-                            const obj = { value, done: true };
-                            return obj;
                           } else {
-                            revision = value;
-                            if (ref.current.orderId === closure_129_6) {
-                              ref.current.giftInfo = giftInfo;
-                              tmp70(revision);
+                            if (3 === planId) {
+                              if (arg0 === 1) {
+                                c5 = 3;
+                                throw value;
+                              } else if (arg0 === 2) {
+                                needsPlanSync = 0;
+                                c5 = 3;
+                                const obj13 = { value, done: true };
+                                return obj13;
+                              } else {
+                                expectedRevision = value;
+                                if (ref.current.orderId !== closure_129_6) {
+                                  needsPlanSync = 0;
+                                  c5 = 3;
+                                  return { value: "HermesInternal", done: null };
+                                }
+                              }
+                            } else if (arg0 === 1) {
+                              c5 = 3;
+                              throw value;
+                            } else if (arg0 === 2) {
+                              c5 = 3;
+                              const obj = { value, done: true };
+                              return obj;
+                            } else {
+                              expectedRevision = value;
+                              if (ref.current.orderId !== closure_129_6) {
+                                c5 = 3;
+                                return { value: "HermesInternal", done: null };
+                              } else {
+                                ref.current.giftInfo = current;
+                                tmp67(expectedRevision);
+                              }
                             }
+                            c5 = 3;
+                            return { value: "HermesInternal", done: null };
                           }
                           ref.current.planId = planId;
-                          const obj30 = { premiumType, planInterval };
-                          ref.current.planSelection = obj30;
-                          tmp70(revision);
-                          v0 = 0;
+                          const obj15 = { premiumType, planInterval };
+                          ref.current.planSelection = obj15;
+                          tmp67(expectedRevision);
+                          needsPlanSync = 0;
                         }
-                        c5 = 3;
-                        return { value: "HermesInternal", done: null };
-                      } catch (tmp70) {
-                        if (tmp4 === v0) {
-                          c5 = tmp2;
-                          throw tmp70;
+                        const tmp40 = closure_129_4;
+                        if (tmp40) {
+                          ref2.current = current;
+                          const obj16 = { orderId, giftInfo: obj17, expectedRevision };
+                          obj17 = { recipient_id: current.recipient_id, gift_style: current.gift_style, emoji_id: current.emoji_id, emoji_name: current.emoji_name, sound_id: current.sound_id, reward_sku_ids: current.reward_sku_ids, custom_message_contents: current.custom_message };
+                          planId = 4;
+                          c5 = 1;
+                          const obj30 = { value: obj5.updateOrder(obj16), done: false };
+                          obj5 = id(id1[15]);
+                          return obj30;
+                        }
+                      } catch (tmp67) {
+                        if (0 === needsPlanSync) {
+                          c5 = 3;
+                          throw tmp67;
                         } else {
-                          planId = tmp;
+                          planId = 1;
                         }
                       }
                     }
                   })();
-                  const nextPromise = setCurrentAnalyticsStep(function*(arg0, value) {
-                    if (c5 === 2) {
-                      c5 = 3;
-                      throw new TypeError("Generator functions may not be called on executing generators");
-                    } else if (tmp6 === 3) {
-                      if (arg0 === 1) {
-                        throw value;
-                      } else if (arg0 === 2) {
-                        const obj2 = { value, done: true };
-                        return obj2;
-                      } else {
-                        return { value: "HermesInternal", done: null };
-                      }
-                    } else {
-                      try {
-                        c5 = 2;
-                        if (0 === planId) {
-                          if (arg0 === 1) {
-                            c5 = 3;
-                            throw value;
-                          } else if (arg0 === 2) {
-                            c5 = 3;
-                            const obj3 = { value, done: true };
-                            return obj3;
-                          } else {
-                            closure_1 = tmp3;
-                            closure_0 = tmp7;
-                            closure_128_0 = undefined;
-                            if (closure_3) {
-                              let v0 = 1;
-                              if (null != c5) {
-                                const obj4 = { orderId: id, expectedRevision, orderLineItems: null, externalGatewayFacet: null };
-                                const obj6 = { sku_id: null, quantity: null, purchase_type: null, subscription_plan_id: null };
-                                ({ sku_id: obj14.sku_id, quantity: obj14.quantity, purchase_type: obj14.purchase_type } = first);
-                                obj6.subscription_plan_id = planId;
-                                const items = [obj6];
-                                obj4.orderLineItems = items;
-                                obj4.externalGatewayFacet = tmp57;
-                                planId = 2;
-                                c5 = 1;
-                                const obj7 = { value: id(id1[15]).patchOrder(obj4), done: false };
-                                return obj7;
-                              } else {
-                                const obj8 = { orderId: id, orderLineItemId: id1, subscriptionPlanId: planId, expectedRevision };
-                                planId = 3;
-                                c5 = 1;
-                                const obj10 = { value: id(id1[15]).patchOrderLineItem(obj8), done: false };
-                                return obj10;
-                              }
-                            } else if (closure_129_4) {
-                              setEmojiConfetti.current = giftInfo;
-                              const obj11 = { orderId: closure_129_0, giftInfo: null, expectedRevision: null };
-                              const obj13 = { recipient_id: giftInfo.recipient_id, gift_style: giftInfo.gift_style, emoji_id: giftInfo.emoji_id, emoji_name: giftInfo.emoji_name, sound_id: giftInfo.sound_id, reward_sku_ids: giftInfo.reward_sku_ids, custom_message_contents: giftInfo.custom_message };
-                              obj11.giftInfo = obj13;
-                              obj11.expectedRevision = revision;
-                              planId = 4;
-                              c5 = 1;
-                              const obj15 = { value: id(id1[15]).updateOrder(obj11), done: false };
-                              return obj15;
-                            } else {
-                              c5 = 3;
-                            }
-                          }
-                        } else if (1 === tmp7) {
-                          v0 = 0;
-                          closure_128_1 = tmp70;
-                          if (!closure_129_5) {
-                            first3(ref.current.planSelection.premiumType);
-                            setCustomGiftMessage(ref.current.planSelection.planInterval);
-                          }
-                          throw closure_128_1;
-                        } else {
-                          if (2 === tmp7) {
-                            if (arg0 === 1) {
-                              c5 = 3;
-                              throw value;
-                            } else if (arg0 === 2) {
-                              v0 = 0;
-                              c5 = 3;
-                              const obj16 = { value, done: true };
-                              return obj16;
-                            } else {
-                              closure_128_0 = value;
-                              if (ref.current.orderId !== closure_129_6) {
-                                v0 = 0;
-                                c5 = 3;
-                                return { value: "HermesInternal", done: null };
-                              } else {
-                                revision = closure_128_0.revision;
-                                v0(closure_128_0);
-                              }
-                            }
-                          } else if (3 === tmp7) {
-                            if (arg0 === 1) {
-                              c5 = 3;
-                              throw value;
-                            } else if (arg0 === 2) {
-                              v0 = 0;
-                              c5 = 3;
-                              const obj17 = { value, done: true };
-                              return obj17;
-                            } else {
-                              revision = value;
-                              if (ref.current.orderId !== closure_129_6) {
-                                v0 = 0;
-                                c5 = 3;
-                                return { value: "HermesInternal", done: null };
-                              }
-                            }
-                          } else if (arg0 === 1) {
-                            c5 = 3;
-                            throw value;
-                          } else if (arg0 === 2) {
-                            c5 = 3;
-                            const obj = { value, done: true };
-                            return obj;
-                          } else {
-                            revision = value;
-                            if (ref.current.orderId === closure_129_6) {
-                              ref.current.giftInfo = giftInfo;
-                              tmp70(revision);
-                            }
-                          }
-                          ref.current.planId = planId;
-                          const obj30 = { premiumType, planInterval };
-                          ref.current.planSelection = obj30;
-                          tmp70(revision);
-                          v0 = 0;
-                        }
-                        c5 = 3;
-                        return { value: "HermesInternal", done: null };
-                      } catch (tmp70) {
-                        if (tmp4 === v0) {
-                          c5 = tmp2;
-                          throw tmp70;
-                        } else {
-                          planId = tmp;
-                        }
-                      }
-                    }
-                  })().then(() => {
-                    first6((arg0) => arg0 + 1);
+                  const nextPromise = promise.then(() => {
+                    closure_1_16((arg0) => arg0 + 1);
                   });
-                  setCurrentAnalyticsStep(function*(arg0, value) {
-                    if (c5 === 2) {
-                      c5 = 3;
-                      throw new TypeError("Generator functions may not be called on executing generators");
-                    } else if (tmp6 === 3) {
-                      if (arg0 === 1) {
-                        throw value;
-                      } else if (arg0 === 2) {
-                        const obj2 = { value, done: true };
-                        return obj2;
-                      } else {
-                        return { value: "HermesInternal", done: null };
-                      }
-                    } else {
-                      try {
-                        c5 = 2;
-                        if (0 === planId) {
-                          if (arg0 === 1) {
-                            c5 = 3;
-                            throw value;
-                          } else if (arg0 === 2) {
-                            c5 = 3;
-                            const obj3 = { value, done: true };
-                            return obj3;
-                          } else {
-                            closure_1 = tmp3;
-                            closure_0 = tmp7;
-                            closure_128_0 = undefined;
-                            if (closure_3) {
-                              let v0 = 1;
-                              if (null != c5) {
-                                const obj4 = { orderId: id, expectedRevision, orderLineItems: null, externalGatewayFacet: null };
-                                const obj6 = { sku_id: null, quantity: null, purchase_type: null, subscription_plan_id: null };
-                                ({ sku_id: obj14.sku_id, quantity: obj14.quantity, purchase_type: obj14.purchase_type } = first);
-                                obj6.subscription_plan_id = planId;
-                                const items = [obj6];
-                                obj4.orderLineItems = items;
-                                obj4.externalGatewayFacet = tmp57;
-                                planId = 2;
-                                c5 = 1;
-                                const obj7 = { value: id(id1[15]).patchOrder(obj4), done: false };
-                                return obj7;
-                              } else {
-                                const obj8 = { orderId: id, orderLineItemId: id1, subscriptionPlanId: planId, expectedRevision };
-                                planId = 3;
-                                c5 = 1;
-                                const obj10 = { value: id(id1[15]).patchOrderLineItem(obj8), done: false };
-                                return obj10;
-                              }
-                            } else if (closure_129_4) {
-                              setEmojiConfetti.current = giftInfo;
-                              const obj11 = { orderId: closure_129_0, giftInfo: null, expectedRevision: null };
-                              const obj13 = { recipient_id: giftInfo.recipient_id, gift_style: giftInfo.gift_style, emoji_id: giftInfo.emoji_id, emoji_name: giftInfo.emoji_name, sound_id: giftInfo.sound_id, reward_sku_ids: giftInfo.reward_sku_ids, custom_message_contents: giftInfo.custom_message };
-                              obj11.giftInfo = obj13;
-                              obj11.expectedRevision = revision;
-                              planId = 4;
-                              c5 = 1;
-                              const obj15 = { value: id(id1[15]).updateOrder(obj11), done: false };
-                              return obj15;
-                            } else {
-                              c5 = 3;
-                            }
-                          }
-                        } else if (1 === tmp7) {
-                          v0 = 0;
-                          closure_128_1 = tmp70;
-                          if (!closure_129_5) {
-                            first3(ref.current.planSelection.premiumType);
-                            setCustomGiftMessage(ref.current.planSelection.planInterval);
-                          }
-                          throw closure_128_1;
-                        } else {
-                          if (2 === tmp7) {
-                            if (arg0 === 1) {
-                              c5 = 3;
-                              throw value;
-                            } else if (arg0 === 2) {
-                              v0 = 0;
-                              c5 = 3;
-                              const obj16 = { value, done: true };
-                              return obj16;
-                            } else {
-                              closure_128_0 = value;
-                              if (ref.current.orderId !== closure_129_6) {
-                                v0 = 0;
-                                c5 = 3;
-                                return { value: "HermesInternal", done: null };
-                              } else {
-                                revision = closure_128_0.revision;
-                                v0(closure_128_0);
-                              }
-                            }
-                          } else if (3 === tmp7) {
-                            if (arg0 === 1) {
-                              c5 = 3;
-                              throw value;
-                            } else if (arg0 === 2) {
-                              v0 = 0;
-                              c5 = 3;
-                              const obj17 = { value, done: true };
-                              return obj17;
-                            } else {
-                              revision = value;
-                              if (ref.current.orderId !== closure_129_6) {
-                                v0 = 0;
-                                c5 = 3;
-                                return { value: "HermesInternal", done: null };
-                              }
-                            }
-                          } else if (arg0 === 1) {
-                            c5 = 3;
-                            throw value;
-                          } else if (arg0 === 2) {
-                            c5 = 3;
-                            const obj = { value, done: true };
-                            return obj;
-                          } else {
-                            revision = value;
-                            if (ref.current.orderId === closure_129_6) {
-                              ref.current.giftInfo = giftInfo;
-                              tmp70(revision);
-                            }
-                          }
-                          ref.current.planId = planId;
-                          const obj30 = { premiumType, planInterval };
-                          ref.current.planSelection = obj30;
-                          tmp70(revision);
-                          v0 = 0;
-                        }
-                        c5 = 3;
-                        return { value: "HermesInternal", done: null };
-                      } catch (tmp70) {
-                        if (tmp4 === v0) {
-                          c5 = tmp2;
-                          throw tmp70;
-                        } else {
-                          planId = tmp;
-                        }
-                      }
-                    }
-                  })().then(() => {
-                    first6((arg0) => arg0 + 1);
-                  }).catch((error) => {
-                    const obj2 = { tags: { source: "NativeGiftContext_syncOrder" }, extra: { orderId: id, planId, needsPlanSync, needsGiftSync } };
-                    const result = BillingUtils.captureBillingException(error, obj2);
-                    logger.error("Failed to sync order", { error, orderId: id });
+                  const catchPromise = nextPromise.catch((error) => {
+                    let obj3;
+                    const obj2 = { tags: { source: "NativeGiftContext_syncOrder" }, extra: obj3 };
+                    obj3 = { orderId: id, planId: planIdForPremiumType, needsPlanSync, needsGiftSync };
+                    const obj = basePurchaseAnalytics(onClose[16]);
+                    const result = obj.captureBillingException(error, obj2);
+                    const obj4 = { error, orderId: id };
+                    logger.error("Failed to sync order", obj4);
                     if (ref.current.orderId === id2) {
-                      first4(error);
+                      closure_12(error);
                     }
-                    first8(false);
-                  }).finally(() => {
-                    first5.current = false;
+                    resolveSyncs(false);
+                  });
+                  catchPromise.finally(() => {
+                    closure_14.current = false;
                     if (ref.current.orderId !== id2) {
-                      first6((arg0) => arg0 + 1);
+                      closure_16((arg0) => arg0 + 1);
                     }
                   });
                   return () => {
@@ -814,24 +591,26 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
           }
         }
       }
-      first8(true);
+      resolveSyncs(true);
     }, items7);
     const items8 = [memo1, flush, waitForSync];
     callback = obj.useCallback(() => {
-      first7(first1);
-      first6((arg0) => arg0 + 1);
-      return closure_19();
+      flush(memo1);
+      const tmp2 = waitForSync();
+      closure_16((arg0) => arg0 + 1);
+      return tmp2;
     }, items8);
     const items9 = [planIdForPremiumType, recipientUserId, basePurchaseAnalytics];
     callback1 = obj.useCallback((arg0) => {
-      closure_0 = arg0;
+      let closure_0 = arg0;
       function handleGiftCodeCreate(giftCode) {
         const fromServer = GiftCodeRecord.createFromServer(giftCode.giftCode);
         if (fromServer.subscriptionPlanId === planIdForPremiumType) {
           closure_17(fromServer);
           let tmp6 = null != recipientUserId;
+          const tmp18 = recipientUserId;
           if (tmp6) {
-            const location_stack = closure_0.location_stack;
+            const location_stack = basePurchaseAnalytics.location_stack;
             let hasItem;
             if (location_stack != null) {
               hasItem = location_stack.includes(AnalyticsLocationDefault.PREMIUM_GIFT_INTENT_CARD);
@@ -839,116 +618,122 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
             tmp6 = hasItem;
           }
           if (tmp6) {
-            const result = PremiumGiftingIntentActionCreators.logGiftIntentFlowPurchasedGift(tmp18);
+            const obj = PremiumGiftingIntentActionCreators;
+            const result = obj.logGiftIntentFlowPurchasedGift(tmp18);
           }
           if (closure_0 != null) {
             closure_0();
           }
-          DispatcherDefault.unsubscribe("GIFT_CODE_CREATE", handleGiftCodeCreate);
-          tmp18 = recipientUserId;
+          const obj2 = DispatcherDefault;
+          obj2.unsubscribe("GIFT_CODE_CREATE", handleGiftCodeCreate);
         }
         closure_19(false);
       }
       return handleGiftCodeCreate;
     }, items9);
-    setCurrentAnalyticsStep(function*(arg0, value) {
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
+    const useCallback = obj.useCallback;
+    setCurrentAnalyticsStep((error) => {
+      let c5 = 0;
+      let c6 = 0;
+      let c4 = 0;
+      return (function*(arg0, value) {
+        let obj7;
+        let obj9;
+        if (c6 === 2) {
+          c6 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            return { value, done: true };
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
         } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_2 = tmp3;
-              closure_1 = tmp7;
-              const subscription = recipientUserId(onClose[32]).subscribe("GIFT_CODE_CREATE", closure_0);
-              const obj11 = recipientUserId(onClose[32]);
-              if (!obj12.isAndroid()) {
-                if (null != orderContext.orderId) {
-                  c4 = 1;
-                  const obj5 = { orderId: orderContext.orderId, skuId };
-                  logger.info("Starting order signing with pre-created order", obj5);
-                  c5 = 2;
-                  c6 = 1;
-                  const obj6 = { value: closure_0(onClose[15]).markOrderAsSigningInProgress(orderContext.orderId), done: false };
-                  return obj6;
+          try {
+            c6 = 2;
+            if (0 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                closure_2 = tmp;
+                closure_1 = tmp4;
+                const obj11 = recipientUserId(onClose[32]);
+                const subscription = obj11.subscribe("GIFT_CODE_CREATE", error);
+                const obj12 = error(onClose[33]);
+                if (!obj12.isAndroid()) {
+                  if (null != closure_1_26.orderId) {
+                    c4 = 1;
+                    const obj5 = { orderId: closure_1_26.orderId, skuId };
+                    logger.info("Starting order signing with pre-created order", obj5);
+                    c5 = 2;
+                    c6 = 1;
+                    const obj6 = { value: obj7.markOrderAsSigningInProgress(closure_1_26.orderId), done: false };
+                    obj7 = error(onClose[15]);
+                    return obj6;
+                  }
                 }
               }
-              obj12 = closure_0(onClose[33]);
-            }
-          } else {
-            if (1 === tmp7) {
+            } else if (1 === c5) {
               c4 = 0;
-              closure_129_0 = closure_3;
-              const obj8 = { tags: { source: "NativeGiftContext_handlePurchaseComplete_sign" }, extra: null };
-              const obj9 = { skuId, orderId: orderContext.orderId };
-              obj8.extra = obj9;
-              const result = closure_0(onClose[16]).captureBillingException(closure_129_0, obj8);
-              const obj10 = { error: closure_129_0, skuId, orderId: orderContext.orderId };
+              error = closure_3;
+              const obj8 = { tags: { source: "NativeGiftContext_handlePurchaseComplete_sign" }, extra: obj9 };
+              obj9 = { skuId, orderId: closure_1_26.orderId };
+              const obj2 = error(onClose[16]);
+              const result = obj2.captureBillingException(error, obj8);
+              const obj10 = { error, skuId, orderId: closure_1_26.orderId };
               logger.error("Failed to sign order in purchase completion", obj10);
-              const obj2 = closure_0(onClose[16]);
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;
-            } else if (arg0 !== 2) {
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
               c4 = 0;
             }
-            c4 = 0;
             c6 = 3;
-            const obj = { value, done: true };
-            return obj;
-          }
-          c6 = 3;
-        } catch (tmp31) {
-          closure_3 = tmp31;
-          if (tmp4 === c4) {
-            c6 = tmp2;
-            throw tmp31;
-          } else {
-            c5 = tmp;
+            return { value: "HermesInternal", done: null };
+          } catch (tmp28) {
+            closure_3 = tmp28;
+            if (0 === c4) {
+              c6 = 3;
+              throw tmp28;
+            } else {
+              c5 = 1;
+            }
           }
         }
-      }
+      })();
     });
     const items10 = [skuId, orderContext.orderId];
-    callback2 = obj.useCallback(function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+    callback2 = useCallback(function() {
+      return closure_0(...arguments);
     }, items10);
     const items11 = [setCurrentAnalyticsStep];
     callback3 = obj.useCallback((arg0) => {
-      DispatcherDefault.unsubscribe("GIFT_CODE_CREATE", arg0);
+      const obj = DispatcherDefault;
+      obj.unsubscribe("GIFT_CODE_CREATE", arg0);
       setCurrentAnalyticsStep(PremiumAnalyticsUtils.PaymentFlowStep.PLAN_SELECT);
       closure_19(false);
     }, items11);
-    _require = setCurrentAnalyticsStep(function*(arg0, value) {
+    const useCallback2 = obj.useCallback;
+    let closure_0 = setCurrentAnalyticsStep(function*(arg0, value) {
+      let closure_3;
+      let intl;
+      let obj17;
+      let obj9;
+      closure_0 = arg0;
       if (c5 === 2) {
         c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp5 === 3) {
+      } else if (tmp4 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -969,145 +754,109 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
               const obj5 = { value, done: true };
               return obj5;
             } else {
-              closure_2 = tmp3;
-              closure_130_0 = closure_0;
-              closure_130_1 = undefined;
-              closure_130_2 = undefined;
-              let obj7 = first1;
-              let tmp50 = null;
-              if (null != first1.getNextTier(closure_0(onClose[27]).BadgeId.GIFTING)) {
-                const singleRequirementProgress = obj7.getSingleRequirementProgress(closure_0(onClose[27]).BadgeId.GIFTING);
-                obj7 = singleRequirementProgress == tmp50;
+              let closure_1;
+              let closure_2;
+              const obj10 = nextTier;
+              if (null != nextTier.getNextTier(closure_0(onClose[27]).BadgeId.GIFTING)) {
+                const singleRequirementProgress = obj10.getSingleRequirementProgress(closure_0(onClose[27]).BadgeId.GIFTING);
                 let current;
-                if (!obj7) {
+                if (singleRequirementProgress != null) {
                   current = singleRequirementProgress.current;
                 }
-                c1 = current;
-                if (current == tmp50) {
-                  c1 = tmp50;
+                let c1 = current;
+                if (current == null) {
+                  c1 = null;
                 }
                 closure_1_25(c1);
               } else {
-                closure_1_25(tmp50);
+                closure_1_25(null);
               }
-              tmp50 = closure_1_19(true);
-              callback();
+              closure_1_19(true);
               c4 = 1;
               c5 = 1;
+              const obj6 = { value: callback(), done: false };
+              return obj6;
             }
           } else if (arg0 === 1) {
             c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj6 = { value, done: true };
-            return obj6;
+            const obj7 = { value, done: true };
+            return obj7;
           } else {
             if (value) {
-              closure_130_2 = callback1(closure_130_0);
+              closure_2 = callback1(closure_0);
+              let obj = closure_0(onClose[33]);
               if (obj.isAndroid()) {
-                closure_130_3 = function handleGPlayUpdatePurchaseAction(isActivePurchase) {
+                function handleGPlayUpdatePurchaseAction(isActivePurchase) {
                   if (isActivePurchase.isActivePurchase) {
-                    recipientUserId(onClose[32]).unsubscribe("GPLAY_UPDATE_PURCHASE_STATE", closure_1_3);
+                    const obj = c1(closure_2[32]);
+                    obj.unsubscribe("GPLAY_UPDATE_PURCHASE_STATE", handleGPlayUpdatePurchaseAction);
                     if (isActivePurchase.billingResult !== constants.OK) {
-                      callback3(closure_1_2);
+                      closure_2_41(closure_2);
                     }
-                    const obj = recipientUserId(onClose[32]);
                   }
-                };
-                const subscription = recipientUserId(onClose[32]).subscribe("GPLAY_UPDATE_PURCHASE_STATE", closure_130_3);
+                }
                 const obj2 = recipientUserId(onClose[32]);
+                const str = "GPLAY_UPDATE_PURCHASE_STATE";
+                const subscription = obj2.subscribe("GPLAY_UPDATE_PURCHASE_STATE", handleGPlayUpdatePurchaseAction);
               }
-              tmp2(closure_0(onClose[34]).PaymentFlowStep.REVIEW);
-              const obj8 = { productId, isGift: true, analyticsLoadId: null, analyticsLocation: null, analyticsLocations: null, allowPlanChange: false, giftInfoOptions: null, onPurchaseComplete: null, onPurchaseError: null, orderId: null, analyticsData: null };
+              tmp(closure_0(onClose[34]).PaymentFlowStep.REVIEW);
+              const obj8 = {
+                productId,
+                isGift: true,
+                analyticsLoadId: null,
+                analyticsLocation: null,
+                analyticsLocations: null,
+                allowPlanChange: false,
+                giftInfoOptions,
+                onPurchaseComplete: function() {
+                          return closure_1_1(...arguments);
+                        },
+                onPurchaseError() {
+                          return closure_2_41(closure_1_2);
+                        },
+                orderId: orderId.orderId,
+                analyticsData: obj9
+              };
               ({ load_id: obj3.analyticsLoadId, location: obj3.analyticsLocation, location_stack: obj3.analyticsLocations } = closure_0);
-              obj8.giftInfoOptions = giftInfoOptions;
-              closure_130_1 = setCurrentAnalyticsStep(function*() {
+              closure_1 = setCurrentAnalyticsStep(function*() {
+                let c0;
                 yield closure_1_40(closure_2_2);
                 return arg1;
               });
-              obj8.onPurchaseComplete = function() {
-                const self = this;
-                const apply = closure_1_1.apply;
-                if (typeof apply === "unknown") {
-                  let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-                } else {
-                  applyArgumentsResult = apply(self, arguments);
-                }
-                return applyArgumentsResult;
-              };
-              obj8.onPurchaseError = function onPurchaseError() {
-                return callback3(closure_1_2);
-              };
-              obj8.orderId = orderId.orderId;
-              const obj9 = { load_id: closure_0.load_id, succeededOnlyFields: null };
-              const obj15 = { is_custom_message_edited: null, is_custom_emoji_sound_available: false };
-              const intl = closure_0(onClose[18]).intl;
-              obj15.is_custom_message_edited = first3 !== intl.string(closure_0(onClose[18]).t.ZkOo1U);
-              obj9.succeededOnlyFields = obj15;
-              obj8.analyticsData = obj9;
+              obj9 = { load_id: closure_0.load_id, succeededOnlyFields: obj17 };
+              obj17 = { is_custom_message_edited: first3 !== intl.string(closure_0(onClose[18]).t.ZkOo1U), is_custom_emoji_sound_available: false };
+              intl = closure_0(onClose[18]).intl;
               handlePremiumPurchase(obj8);
-              obj = closure_0(onClose[33]);
             } else {
-              closure_1_19(false);
+              const tmp8 = closure_1_19(false);
             }
             c5 = 3;
+            return { value: "HermesInternal", done: null };
           }
-        } catch (tmp53) {
-          c5 = tmp;
-          throw tmp53;
+        } catch (tmp51) {
+          c5 = 3;
+          throw tmp51;
         }
       }
     });
     const items12 = [callback, callback1, setCurrentAnalyticsStep, memo1, handlePremiumPurchase, productIdForGift, basePurchaseAnalytics, callback2, callback3, orderContext.orderId, first3];
-    callback4 = obj.useCallback(function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+    callback21 = useCallback2(function() {
+      return closure_0(...arguments);
     }, items12);
-    const items13 = [orderContext, recipientUserId, stateFromStores, first2, premiumType, first1, productIdForGift, first3, first4, first5, first6, first7, first10, basePurchaseAnalytics, setCurrentAnalyticsStep, tmp5, tmp9, onClose, callback4, stateFromStoresArray, fetchClaimableGiftingPromotionRewardSkuIds, first9, tmp29];
+    const items13 = [orderContext, recipientUserId, stateFromStores, first2, premiumType, first1, productIdForGift, first3, first4, first5, first6, first7, first10, basePurchaseAnalytics, setCurrentAnalyticsStep, tmp5, tmp9, onClose, callback21, stateFromStoresArray, fetchClaimableGiftingPromotionRewardSkuIds, first9, tmp29];
     let obj8 = {
       value: obj.useMemo(() => {
-          const obj = {};
+          const obj = { recipientUserId, recipientUser: stateFromStores, giftStyle: first2, premiumType, planInterval: first1, productId: productIdForGift, customGiftMessage: first3, soundEffect: first4, emojiConfetti: first5, giftCodeRecord: first6, isPurchasing: first7, prePurchaseGiftingBadgeProgress: first10, basePurchaseAnalytics, setCurrentAnalyticsStep, setPremiumType, setPlanInterval, setGiftStyle, setCustomGiftMessage, setSoundEffect, setEmojiConfetti, onClose, onPurchase: callback21, allRewards: stateFromStoresArray, claimableRewards: fetchClaimableGiftingPromotionRewardSkuIds, selectedGiftingPromotionReward: first9, setSelectedGiftingPromotionReward };
           const merged = Object.assign(orderContext);
-          obj.recipientUserId = recipientUserId;
-          obj.recipientUser = stateFromStores;
-          obj.giftStyle = first2;
-          obj.premiumType = premiumType;
-          obj.planInterval = first1;
-          obj.productId = productIdForGift;
-          obj.customGiftMessage = first3;
-          obj.soundEffect = first4;
-          obj.emojiConfetti = first5;
-          obj.giftCodeRecord = first6;
-          obj.isPurchasing = first7;
-          obj.prePurchaseGiftingBadgeProgress = first10;
-          obj.basePurchaseAnalytics = basePurchaseAnalytics;
-          obj.setCurrentAnalyticsStep = setCurrentAnalyticsStep;
-          obj.setPremiumType = setPremiumType;
-          obj.setPlanInterval = setPlanInterval;
-          obj.setGiftStyle = setGiftStyle;
-          obj.setCustomGiftMessage = setCustomGiftMessage;
-          obj.setSoundEffect = setSoundEffect;
-          obj.setEmojiConfetti = setEmojiConfetti;
-          obj.onClose = onClose;
-          obj.onPurchase = callback4;
-          obj.allRewards = stateFromStoresArray;
-          obj.claimableRewards = fetchClaimableGiftingPromotionRewardSkuIds;
-          obj.selectedGiftingPromotionReward = first9;
-          obj.setSelectedGiftingPromotionReward = setSelectedGiftingPromotionReward;
           return obj;
         }, items13),
       children
     };
     return first6(first7.Provider, obj8);
   }
-  let obj5 = require("ProductIds");
 };
 export const useNativeGiftContext = tmp6;
 export const useForwardedNativeGiftContext = tmp7;

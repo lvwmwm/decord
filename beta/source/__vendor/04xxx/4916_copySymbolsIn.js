@@ -9,5 +9,6 @@ import _mod4919 from "module_4919" /* 4919 */;
 
 
 export default function copySymbolsIn(arg0, arg1) {
-  return copyObject(arg0, _mod4919(arg0), arg1);
+  const tmp = copyObject;
+  return tmp(arg0, _mod4919(arg0), arg1);
 };

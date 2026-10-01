@@ -5,23 +5,29 @@
 // Exports: default
 
 // Module 17548 (useRoleSubscriptionFormat)
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2103 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14750 */;
+import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const hasPermission = fn(2103).hasPermission;
-const constants = fn(14750).GuildRoleSubscriptionFormat;
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
+const hasPermission = GuildRoleRecord.hasPermission;
+const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionFormat;
+const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useRoleSubscriptionFormat.tsx");
 
 export default function useRoleSubscriptionFormat(arg0) {
+  let closure_0;
+  let stateFromStores;
   _require = arg0;
   const items = [GuildStore, GuildRoleStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  stateFromStores = obj.useStateFromStores(items, () => {
     const guild = GuildStore.getGuild(closure_0);
     let everyoneRole;
     if (null != guild) {
@@ -30,10 +36,11 @@ export default function useRoleSubscriptionFormat(arg0) {
     return everyoneRole;
   });
   const items1 = [stateFromStores];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     if (null != stateFromStores) {
+      let SOME_CHANNELS;
       if (!hasPermission(tmp, Permissions.VIEW_CHANNEL)) {
-        let SOME_CHANNELS = constants.ALL_CHANNELS;
+        SOME_CHANNELS = constants.ALL_CHANNELS;
       }
       return SOME_CHANNELS;
     }

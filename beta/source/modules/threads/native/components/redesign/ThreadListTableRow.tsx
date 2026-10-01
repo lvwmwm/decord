@@ -4,42 +4,49 @@
 // Dependencies: [19, 17, 2045, 21, 4836, 5917, 16538, 504, 2]
 
 // Module 16537 (ThreadListTableRow)
-import TableRow from "TableRow" /* 5917 */;
-import ThreadBrowserRowSubtext from "ThreadBrowserRowSubtext" /* 16538 */;
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import TableRow2 from "TableRow" /* 5917 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let threadId;
+
 function ThreadListTableRow(thread) {
+  let end;
+  let start;
   thread = thread.thread;
   const onPress = thread.onPress;
   ({ start, end } = thread);
   const items = [onPress, thread.id];
-  const memo = noop.useMemo(() => null != onPress ? (() => onPress(id.id)) : undefined, items);
-  const obj = { label: thread.name, subLabel: null, onPress: null, start: null, end: null, arrow: true };
   const tmp = closure_6();
-  obj.subLabel = <View style={closure_6().subLabel}>{jsx(ThreadBrowserRowSubtext.ThreadSubtext, { thread })}</View>;
-  obj.onPress = memo;
-  obj.start = start;
-  obj.end = end;
-  return jsx(TableRow.TableRow, { label: thread.name, subLabel: null, onPress: null, start: null, end: null, arrow: true });
+  const memo = react.useMemo(() => {
+    let id;
+    return null != onPress ? (() => onPress(id.id)) : undefined;
+  }, items);
+  const TableRow = TableRow2.TableRow;
+  return <TableRow label={thread.name} subLabel={null} onPress={memo} start={start} end={end} arrow />;
 }
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ subLabel: { maxWidth: "100%", marginTop: 2 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/threads/native/components/redesign/ThreadListTableRow.tsx");
-
-export default noop.memo((threadId) => {
+const memoResult = react.memo((threadId) => {
+  let end;
+  let onPress;
+  let start;
   threadId = threadId.threadId;
   ({ onPress, start, end } = threadId);
   const items = [ChannelStore];
-  const stateFromStores = threadId(504).useStateFromStores(items, () => ChannelStore.getChannel(threadId));
+  const obj = threadId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(threadId));
   let tmp2 = null;
   if (null != stateFromStores) {
-    const obj2 = { thread: stateFromStores, start, end, onPress };
     tmp2 = <ThreadListTableRow thread={stateFromStores} start={start} end={end} onPress={onPress} />;
   }
   return tmp2;
 });
+const result = size.fileFinishedImporting("modules/threads/native/components/redesign/ThreadListTableRow.tsx");
+
+export default memoResult;

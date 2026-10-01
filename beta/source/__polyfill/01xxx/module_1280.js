@@ -3,80 +3,86 @@
 // Dependencies: [1281, 1315, 1282, 1316, 1318]
 
 // Module 1280
-import _mod1281 from "module_1281" /* 1281 */;
+import GetIntrinsic from "GetIntrinsic" /* 1281 */;
 import _mod1282 from "module_1282" /* 1282 */;
 import callBoundIntrinsic from "callBoundIntrinsic" /* 1315 */;
-import _mod1316 from "module_1316" /* 1316 */;
+import inspect_ from "inspect_" /* 1316 */;
 import _mod1318 from "module_1318" /* 1318 */;
 
-const tmp = _mod1281("%WeakMap%", true);
+let closure_0, closure_1;
+
+let getSideChannelWeakMap;
+let tmp = GetIntrinsic("%WeakMap%", true);
 let closure_2 = tmp;
 let closure_3 = callBoundIntrinsic("WeakMap.prototype.get", true);
 let closure_4 = callBoundIntrinsic("WeakMap.prototype.set", true);
 let closure_5 = callBoundIntrinsic("WeakMap.prototype.has", true);
 let closure_6 = callBoundIntrinsic("WeakMap.prototype.delete", true);
 if (tmp) {
-  function getSideChannelWeakMap() {
+  getSideChannelWeakMap = function getSideChannelWeakMap() {
     let obj = {
       assert(arg0) {
         if (!obj.has(arg0)) {
-          const tmp32 = new _mod1282("Side channel does not contain " + _mod1316(arg0));
+          const self = this;
+          const self2 = this;
+          const tmp3 = _mod1282;
+          const tmp32 = new tmp3("Side channel does not contain " + inspect_(arg0));
           throw tmp32;
         }
       },
-      delete(obj) {
-        if (closure_2) {
+      delete: (obj) => {
+        const tmp = closure_2;
+        if (tmp) {
           if (obj) {
             if (closure_0) {
-              return closure_6(tmp, obj);
+              return closure_6(tmp2, obj);
             }
           }
           return false;
         }
         if (_mod1318) {
-          if (closure_1) {
-            return obj.delete(obj);
+          if (set) {
+            return set.delete(obj);
           }
-          obj = closure_1;
         }
       },
       get(obj) {
-        if (closure_2) {
+        const tmp = closure_2;
+        if (tmp) {
           if (obj) {
             if (typeof obj === "object") {
+              let tmp3;
               if (closure_0) {
-                value = closure_3(tmp, obj);
+                tmp3 = closure_3(tmp2, obj);
               }
-              return value;
+              return tmp3;
             }
           }
         }
-        value = set;
-        if (set) {
-          value = set.get(obj);
-        }
+        tmp3 = set && set.get(obj);
       },
       has(obj) {
-        if (closure_2) {
+        const tmp = closure_2;
+        if (tmp) {
           if (obj) {
             if (typeof obj === "object") {
+              let hasItem;
               if (closure_0) {
-                let hasItem = closure_5(tmp, obj);
+                hasItem = closure_5(tmp2, obj);
               }
               return hasItem;
             }
           }
         }
-        hasItem = set;
-        if (hasItem) {
-          hasItem = set.has(obj);
-        }
+        hasItem = set && set.has(obj);
       },
       set(obj, arg1) {
         if (closure_2) {
           if (obj) {
             let tmp6 = closure_0;
-            if (!closure_0) {
+            if (!tmp6) {
+              const self = this;
+              const self2 = this;
               const tmp5 = new tmp();
               closure_0 = tmp5;
               tmp6 = tmp5;
@@ -86,7 +92,7 @@ if (tmp) {
         }
         if (_mod1318) {
           obj = closure_1;
-          if (!closure_1) {
+          if (!obj) {
             const tmp4 = _mod1318();
             closure_1 = tmp4;
             obj = tmp4;
@@ -96,7 +102,7 @@ if (tmp) {
       }
     };
     return obj;
-  }
+  };
 } else {
   getSideChannelWeakMap = _mod1318;
 }

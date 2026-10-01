@@ -4,17 +4,19 @@
 // Dependencies: [5150, 1282, 5157]
 
 // Module 5156 (FromPropertyDescriptor)
-import _mod5150 from "module_5150" /* 5150 */;
-import _mod5157 from "module_5157" /* 5157 */;
+import isPropertyDescriptor from "isPropertyDescriptor" /* 5150 */;
+import fromPropertyDescriptor from "fromPropertyDescriptor" /* 5157 */;
 
 
 export default function FromPropertyDescriptor(arg0) {
   if (undefined !== arg0) {
-    if (!_mod5150(arg0)) {
-      const tmp5 = new tmp(1282)("Assertion failed: `Desc` must be a Property Descriptor");
-      throw tmp5;
+    const tmp = require;
+    if (!isPropertyDescriptor(arg0)) {
+      const self = this;
+      const self2 = this;
+      const tmp3 = new tmp(1282)("Assertion failed: `Desc` must be a Property Descriptor");
+      throw tmp3;
     }
-    tmp = require;
   }
-  return _mod5157(arg0);
+  return fromPropertyDescriptor(arg0);
 };

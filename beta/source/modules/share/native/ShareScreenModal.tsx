@@ -6,235 +6,242 @@
 
 // Module 13443 (ShareScreenModal)
 import LoggerDefault from "Logger" /* 3 */;
+import Fragment from "Fragment" /* 21 */;
 import ChannelTypes from "ChannelTypes" /* 1095 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 13396 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c4, c5, closure_2;
+
 function onClose() {
-  ModalActionCreatorsDefault.popWithKey(SHARE_SCREEN_MODAL_KEY);
+  const obj = ModalActionCreatorsDefault;
+  obj.popWithKey(SHARE_SCREEN_MODAL_KEY);
 }
-const SHARE_SCREEN_MODAL_KEY = fn(13396).SHARE_SCREEN_MODAL_KEY;
-const jsx = fn(21).jsx;
+let react = react_mod;
+const SHARE_SCREEN_MODAL_KEY = ShareScreenConstants.SHARE_SCREEN_MODAL_KEY;
+const jsx = Fragment.jsx;
 let closure_9 = new LoggerDefault("ShareScreenModal");
-const size = fn(2);
+const tmp2 = new LoggerDefault("ShareScreenModal");
 const result = size.fileFinishedImporting("modules/share/native/ShareScreenModal.tsx");
 
 export default function ShareScreenModal(text) {
+  let closure_5;
   text = text.text;
   require = text;
   const channelId = text.channelId;
   const shareId = text.shareId;
   const attachmentManifest = text.attachmentManifest;
   let first;
-  noop = undefined;
+  react = undefined;
   let stateFromStores;
-  const tmp = first(noop.useState(null), 2);
+  let obj = react;
+  let tmp = first(react.useState(null), 2);
   first = tmp[0];
-  noop = tmp[1];
+  react = tmp[1];
   let items = [shareId, attachmentManifest];
-  const effect = noop.useEffect(() => {
-    closure_0 = async function _fetchAttachments(arg0, value) {
-      if (v3 === 2) {
-        v3 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          v3 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              v3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              v3 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_1 = tmp3;
-              closure_0 = tmp7;
-              closure_128_0 = undefined;
-              if (undefined !== closure_2) {
-                if (undefined !== c3) {
-                  c3 = 1;
-                  c4 = 2;
-                  v3 = 1;
-                  const obj5 = { value: channelId(shareId[8]).sharedAttachments(tmp20, tmp21), done: false };
-                  return obj5;
-                }
-              }
-            }
-          } else {
-            if (1 === tmp7) {
-              c3 = 0;
-              closure_128_1 = closure_2;
-              logger.error("Error fetching attachments:", closure_128_1);
-            } else if (arg0 === 1) {
-              v3 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              closure_128_0 = value;
-              v3(closure_128_0);
-              c3 = 0;
-            }
-            c3 = 0;
-            v3 = 3;
-            const obj = { value, done: true };
-            return obj;
-          }
-          v3 = 3;
-        } catch (tmp24) {
-          closure_2 = tmp24;
-          if (tmp4 === c3) {
-            v3 = tmp2;
-            throw tmp24;
-          } else {
-            c4 = tmp;
-          }
-        }
-      }
-    };
-    !(function fetchAttachments() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    })();
-  }, items);
-  const items1 = [stateFromStores];
-  stateFromStores = require("initialize").useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
-  const tmp6 = first(noop.useState(null), 2);
-  closure_7 = tmp6[1];
-  const items2 = [channelId, stateFromStores];
-  const effect1 = noop.useEffect(() => {
-    closure_0 = async function _fetchChannel(arg0, value) {
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_1 = tmp3;
-              closure_0 = tmp7;
-              closure_128_0 = undefined;
-              if (null != closure_1) {
-                if (null == stateFromStores) {
-                  c3 = 1;
-                  c4 = 2;
-                  c5 = 1;
-                  const obj5 = { value: channelId(shareId[10]).fetchChannel(tmp20), done: false };
-                  return obj5;
-                }
-              }
-            }
-          } else {
-            if (1 === tmp7) {
-              c3 = 0;
-              closure_128_1 = closure_2;
-              logger.error("Error fetching channel:", closure_128_1);
-            } else if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              closure_128_0 = value;
-              closure_1_7(closure_128_0);
-              c3 = 0;
-            }
-            c3 = 0;
-            c5 = 3;
-            const obj = { value, done: true };
-            return obj;
-          }
+  const effect = react.useEffect(() => {
+    function fetchAttachments() {
+      return obj(...arguments);
+    }
+    let obj = function _fetchAttachments() {
+      let logger;
+      obj = _asyncToGenerator(async (arg0, value) => {
+        let obj2;
+        let v3;
+        if (c5 === 2) {
           c5 = 3;
-        } catch (tmp24) {
-          closure_2 = tmp24;
-          if (tmp4 === c3) {
-            c5 = tmp2;
-            throw tmp24;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
-            c4 = tmp;
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            let closure_1;
+            let closure_0;
+            c5 = 2;
+            if (0 === c4) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                closure_1 = tmp;
+                closure_0 = undefined;
+                if (undefined !== closure_2) {
+                  if (undefined !== c3) {
+                    c3 = 1;
+                    c4 = 2;
+                    c5 = 1;
+                    const obj5 = { value: obj2.sharedAttachments(tmp17, tmp18), done: false };
+                    obj2 = channelId(shareId[8]);
+                    return obj5;
+                  }
+                }
+              }
+            } else if (1 === c4) {
+              c3 = 0;
+              closure_1 = closure_2;
+              logger.error("Error fetching attachments:", closure_1);
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              closure_0 = value;
+              c5(closure_0);
+              c3 = 0;
+            }
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
+          } catch (tmp21) {
+            closure_2 = tmp21;
+            if (0 === c3) {
+              c5 = 3;
+              throw tmp21;
+            } else {
+              c4 = 1;
+            }
           }
         }
-      }
+      });
+      return obj(...arguments);
     };
-    !(function fetchChannel() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    })();
+    const tmp = !fetchAttachments();
+  }, items);
+  let tmp4 = shareId;
+  let obj2 = require("get initialized");
+  const items1 = [stateFromStores];
+  stateFromStores = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
+  const tmp6 = first(react.useState(null), 2);
+  let closure_7 = tmp6[1];
+  const items2 = [channelId, stateFromStores];
+  let first1 = tmp6[0];
+  const effect1 = react.useEffect(() => {
+    function fetchChannel() {
+      return obj(...arguments);
+    }
+    let obj = function _fetchChannel() {
+      let logger;
+      obj = _asyncToGenerator(async (arg0, value) => {
+        let obj2;
+        if (c5 === 2) {
+          c5 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          let c3;
+          try {
+            let closure_1;
+            let closure_0;
+            c5 = 2;
+            if (0 === c4) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                closure_1 = tmp;
+                closure_0 = undefined;
+                if (null != closure_1) {
+                  if (null == closure_1_6) {
+                    c3 = 1;
+                    c4 = 2;
+                    c5 = 1;
+                    const obj5 = { value: obj2.fetchChannel(tmp17), done: false };
+                    obj2 = channelId(shareId[10]);
+                    return obj5;
+                  }
+                }
+              }
+            } else if (1 === c4) {
+              c3 = 0;
+              closure_1 = closure_2;
+              logger.error("Error fetching channel:", closure_1);
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              closure_0 = value;
+              closure_1_7(closure_0);
+              c3 = 0;
+            }
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
+          } catch (tmp21) {
+            closure_2 = tmp21;
+            if (0 === c3) {
+              c5 = 3;
+              throw tmp21;
+            } else {
+              c4 = 1;
+            }
+          }
+        }
+      });
+      return obj(...arguments);
+    };
+    const tmp = !fetchChannel();
   }, items2);
-  let first1 = stateFromStores;
+  let tmp9 = stateFromStores;
   if (stateFromStores == null) {
-    first1 = tmp6[0];
+    tmp9 = first1;
   }
-  const items3 = [text, first, channelId, first1];
-  const memo = noop.useMemo(() => {
-    const obj = { text, attachments: null };
-    let items = first;
+  first1 = tmp9;
+  const items3 = [text, first, channelId, tmp9];
+  const memo = obj.useMemo(() => {
+    let items;
+    const obj = { text: require, attachments: items };
+    items = first;
     if (first == null) {
       items = [];
     }
-    obj.attachments = items;
     if (null != first1) {
-      if (tmp.type !== ChannelTypes.ChannelTypes.DM) {
+      if (first1.type !== ChannelTypes.ChannelTypes.DM) {
         obj.targetChannelId = channelId;
       } else {
-        let isArray = tmp;
-        if (tmp) {
-          isArray = "recipients" in tmp;
-        }
+        let isArray = tmp && "recipients" in tmp;
         if (isArray) {
           const _Array = Array;
           isArray = Array.isArray(tmp.recipients);
         }
         if (isArray) {
-          obj.targetUserId = tmp.recipients[0];
+          obj.targetUserId = first1.recipients[0];
         } else {
-          let tmp4 = tmp;
-          if (tmp) {
-            tmp4 = "recipient" in tmp;
-          }
-          if (tmp4) {
-            tmp4 = "id" in tmp.recipient;
-          }
+          const tmp4 = tmp && "recipient" in tmp && "id" in tmp.recipient;
           if (tmp4) {
             const recipient = tmp.recipient;
             let id;
@@ -248,5 +255,6 @@ export default function ShareScreenModal(text) {
     }
     return obj;
   }, items3);
-  return first1(channelId(shareId[12]), { sharedContent: memo, onClose });
+  let obj3 = { sharedContent: memo, onClose };
+  return first1(channelId(tmp4[12]), obj3);
 };

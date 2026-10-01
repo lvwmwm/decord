@@ -5,15 +5,16 @@
 // Exports: getBountyWatchCtaText, getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
 // Module 10736 (MobileQuestVideoWatchCtaCopy)
-import util from "util" /* 1115 */;
+import intl5 from "intl" /* 1115 */;
 import QuestConstants from "QuestConstants" /* 5756 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7137 */;
 import VQRemainingTimeTruncationExperimentDefault from "VQRemainingTimeTruncationExperiment" /* 10737 */;
 import size from "module_2" /* 2 */;
 
 function formatWatchRemainingDurationShort(watchVideoTaskDetailsFromProgress, truncate) {
-  const time = QuestTaskUtils.getRemainingTaskTime(watchVideoTaskDetailsFromProgress);
-  let num = 60;
+  let formatToPlainString2Result;
+  const obj = QuestTaskUtils;
+  const time = obj.getRemainingTaskTime(watchVideoTaskDetailsFromProgress);
   truncate = 60 * time.minutes + time.seconds;
   let truncate1;
   if (truncate != null) {
@@ -22,70 +23,87 @@ function formatWatchRemainingDurationShort(watchVideoTaskDetailsFromProgress, tr
   if (null != truncate1 && truncate > truncate.truncate) {
     truncate = truncate.truncate;
   }
-  if (truncate >= num) {
+  if (truncate >= 60) {
     const intl2 = tmp(1115).intl;
-    tmp(1115).t;
-    const t1 = { count: null };
+    const formatToPlainString2 = intl2.formatToPlainString;
+    const t2 = tmp(1115).t;
     const _Math = Math;
-    num = truncate / num;
-    t1.count = Math.round(num);
-    intl2.formatToPlainString(tmp4 ? t1.XTdnRd : t1.PHhTXX, t1);
-    const tmp5 = tmp4 ? t1.XTdnRd : t1.PHhTXX;
+    const obj2 = { count: Math.round(truncate / 60) };
+    const tmp6 = null != truncate1 && truncate > truncate.truncate ? t2.XTdnRd : t2.PHhTXX;
+    formatToPlainString2Result = formatToPlainString2(tmp6, obj2);
   } else {
     const intl = tmp(1115).intl;
+    const formatToPlainString = intl.formatToPlainString;
     const t = tmp(1115).t;
-    const obj2 = { count: truncate };
-    return intl.formatToPlainString(tmp4 ? t["spl/XS"] : t.rUfeQx, obj2);
+    const obj3 = { count: truncate };
+    formatToPlainString2Result = formatToPlainString(tmp4 ? t["spl/XS"] : t.rUfeQx, obj3);
   }
+  return formatToPlainString2Result;
 }
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 const result = size.fileFinishedImporting("modules/quests/utils/MobileQuestVideoWatchCtaCopy.tsx");
 
 export { formatWatchRemainingDurationShort };
 export const getVideoQuestWatchCtaText = function getVideoQuestWatchCtaText(questTaskDetails) {
+  let formatToPlainString2Result;
+  let obj3;
   VQRemainingTimeTruncationExperimentDefault;
   if (questTaskDetails.percentComplete > 0) {
-    const intl2 = util.intl;
+    const intl2 = intl5.intl;
+    const formatToPlainString2 = intl2.formatToPlainString;
     const obj2 = { durationShort: formatWatchRemainingDurationShort(questTaskDetails) };
-    let formatToPlainStringResult = intl2.formatToPlainString(util.t["pF/deA"], obj2);
+    const prop = intl5.t["pF/deA"];
+    formatToPlainString2Result = formatToPlainString2(prop, obj2);
   } else {
-    const intl = util.intl;
-    const obj = { durationShort: null };
-    const obj3 = { truncate: tmp3 };
-    obj.durationShort = formatWatchRemainingDurationShort(questTaskDetails, obj3);
-    formatToPlainStringResult = intl.formatToPlainString(util.t.CHrvqg, obj);
+    const intl = intl5.intl;
+    const formatToPlainString = intl.formatToPlainString;
+    const obj = { durationShort: formatWatchRemainingDurationShort(questTaskDetails, obj3) };
+    obj3 = { truncate: tmp3 };
+    const CHrvqg = intl5.t.CHrvqg;
+    formatToPlainString2Result = formatToPlainString(CHrvqg, obj);
   }
-  return formatToPlainStringResult;
+  return formatToPlainString2Result;
 };
 export const getBountyWatchCtaText = function getBountyWatchCtaText(watchVideoTaskDetailsFromProgress) {
+  let formatToPlainString2Result;
+  let obj3;
   if (watchVideoTaskDetailsFromProgress.percentComplete > 0) {
-    const intl2 = util.intl;
+    const intl2 = intl5.intl;
+    const formatToPlainString2 = intl2.formatToPlainString;
     const obj2 = { durationShort: formatWatchRemainingDurationShort(watchVideoTaskDetailsFromProgress) };
-    let formatToPlainStringResult = intl2.formatToPlainString(util.t["pF/deA"], obj2);
+    const prop = intl5.t["pF/deA"];
+    formatToPlainString2Result = formatToPlainString2(prop, obj2);
   } else {
-    const intl = util.intl;
-    const obj = { durationShort: null };
-    const obj3 = { truncate: null };
-    obj.durationShort = formatWatchRemainingDurationShort(watchVideoTaskDetailsFromProgress, obj3);
-    formatToPlainStringResult = intl.formatToPlainString(util.t.CHrvqg, obj);
+    const intl = intl5.intl;
+    const formatToPlainString = intl.formatToPlainString;
+    const obj = { durationShort: formatWatchRemainingDurationShort(watchVideoTaskDetailsFromProgress, obj3) };
+    obj3 = { truncate: null };
+    const CHrvqg = intl5.t.CHrvqg;
+    formatToPlainString2Result = formatToPlainString(CHrvqg, obj);
   }
-  return formatToPlainStringResult;
+  return formatToPlainString2Result;
 };
 export const getVideoQuestWatchCtaAccessibilityLabel = function getVideoQuestWatchCtaAccessibilityLabel(questTaskDetails) {
-  const remainingTaskTime = QuestTaskUtils.getRemainingTaskTime(questTaskDetails);
+  let formatToPlainStringResult;
+  let minutes;
+  let seconds;
+  const tmp = questTaskDetails.percentComplete > 0;
+  const obj = QuestTaskUtils;
+  const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
   ({ minutes, seconds } = remainingTaskTime);
   if (minutes > 0) {
+    let formatToPlainStringResult1;
     if (seconds > 0) {
       const intl3 = tmp2(1115).intl;
       const time = { minutes, seconds };
-      let formatToPlainStringResult = intl3.formatToPlainString(tmp2(1115).t["lW/66D"], time);
+      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1115).t["lW/66D"], time);
     }
     const intl4 = tmp2(1115).intl;
     const formatToPlainString = intl4.formatToPlainString;
     const t = tmp2(1115).t;
     if (tmp) {
       const obj2 = { remainTime: formatToPlainStringResult };
-      let formatToPlainStringResult1 = formatToPlainString(t["ch+yrN"], obj2);
+      formatToPlainStringResult1 = formatToPlainString(t["ch+yrN"], obj2);
     } else {
       const obj3 = { remainTime: formatToPlainStringResult };
       formatToPlainStringResult1 = formatToPlainString(t.Bwc5Dg, obj3);

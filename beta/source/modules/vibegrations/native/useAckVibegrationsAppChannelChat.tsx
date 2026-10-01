@@ -6,35 +6,41 @@
 
 // Module 12829 (useAckVibegrationsAppChannelChat)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import MessageStore from "MessageStore" /* 5056 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Constants = fn(1074);
-({ AnalyticsObjects: closure_7, AnalyticsObjectTypes: closure_8, AnalyticsSections: closure_9, AppStates: c10 } = Constants);
-const size = fn(2);
+let c10;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+({ AnalyticsObjects: metroImportDefault, AnalyticsObjectTypes: metroImportAll, AnalyticsSections: c9, AppStates: c10 } = Constants);
 const result = size.fileFinishedImporting("modules/vibegrations/native/useAckVibegrationsAppChannelChat.tsx");
 
 export default function useAckVibegrationsAppChannelChat(arg0, arg1) {
+  let closure_0;
+  let state;
+  let stateFromStores;
+  let stateFromStores2;
   _require = arg0;
-  closure_1 = arg1;
+  let closure_1 = arg1;
+  let obj = require("get initialized");
   const items = [ReadStateStore];
   const items1 = [arg0];
-  stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let hasUnreadOrMentionsResult = null != closure_0;
-    if (hasUnreadOrMentionsResult) {
-      hasUnreadOrMentionsResult = ReadStateStore.hasUnreadOrMentions(tmp.id);
-    }
+  stateFromStores = obj.useStateFromStores(items, () => {
+    const hasUnreadOrMentionsResult = null != closure_0 && ReadStateStore.hasUnreadOrMentions(tmp.id);
     return hasUnreadOrMentionsResult;
   }, items1);
-  let obj = require("initialize");
+  let obj2 = require("get initialized");
   const items2 = [stateFromStores2];
   const items3 = [arg0];
-  const stateFromStores1 = require("initialize").useStateFromStores(items2, () => {
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => {
     if (null == closure_0) {
       return false;
     } else {
@@ -42,12 +48,14 @@ export default function useAckVibegrationsAppChannelChat(arg0, arg1) {
       return messages.ready && !messages.loadingMore;
     }
   }, items3);
-  let obj2 = require("initialize");
+  let obj3 = require("get initialized");
   const items4 = [AppStateStore];
-  stateFromStores2 = require("initialize").useStateFromStores(items4, () => state.getState() === constants.ACTIVE);
+  stateFromStores2 = obj3.useStateFromStores(items4, () => state.getState() === constants.ACTIVE);
   const items5 = [arg0, arg1, stateFromStores, stateFromStores1, stateFromStores2];
   const effect = stateFromStores1.useEffect(() => {
-    let tmp2 = null != id;
+    let obj3;
+    let tmp2 = null != closure_0;
+    const tmp = closure_0;
     if (tmp2) {
       tmp2 = closure_1;
     }
@@ -61,10 +69,10 @@ export default function useAckVibegrationsAppChannelChat(arg0, arg1) {
       tmp2 = stateFromStores2;
     }
     if (tmp2) {
-      const obj2 = { type: "TRY_ACK", channelId: id.id, location: null };
-      const obj3 = { section: constants3.CHANNEL, object: constants.ACK_MESSAGE_VIEWED, objectType: constants2.ACK_AUTOMATIC };
-      obj2.location = obj3;
-      DispatcherDefault.dispatch(obj2);
+      const obj2 = { type: "TRY_ACK", channelId: tmp.id, location: obj3 };
+      obj3 = { section: constants.CHANNEL, object: metroImportDefault.ACK_MESSAGE_VIEWED, objectType: metroImportAll.ACK_AUTOMATIC };
+      const obj = DispatcherDefault;
+      obj.dispatch(obj2);
     }
   }, items5);
 };

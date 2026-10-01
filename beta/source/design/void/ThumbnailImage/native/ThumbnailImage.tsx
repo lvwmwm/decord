@@ -5,15 +5,18 @@
 // Exports: default
 
 // Module 13641 (ThumbnailImage)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import LocalImageThumbnailNativeComponent from "LocalImageThumbnailNativeComponent" /* 13642 */;
+import react from "react" /* 19 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import size from "module_2" /* 2 */;
 
-let _default = fn(17).Image;
-const jsx = fn(21).jsx;
-const PlatformUtils = fn(1364);
+react_native.Image;
+const jsx = Fragment.jsx;
 if (PlatformUtils.isAndroid()) {
-  _default = fn(13642).default;
+  LocalImageThumbnailNativeComponent.default;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("design/void/ThumbnailImage/native/ThumbnailImage.tsx");
 
 export default function LocalImageThumbnail(arg0) {

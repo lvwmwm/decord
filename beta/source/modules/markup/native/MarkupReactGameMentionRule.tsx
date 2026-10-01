@@ -9,123 +9,121 @@ import nativeDefault from "native" /* 576 */;
 import useGame from "useGame" /* 6727 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8133 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let c3;
+let closure_4;
+let obj2;
+let obj3;
+let size;
 class MarkupGameMention {
-  constructor(arg0) {
-    state = global.state;
-    gameId = undefined;
-    tmp = closure_5();
-    gameId = global.node.gameId;
-    tmp2 = state;
-    tmp3 = closure_2;
-    obj = state(closure_2[4]);
-    gameMentionData = obj.useGameMentionData(gameId);
-    intl = state(closure_2[5]).intl;
-    stringResult = intl.string(state(closure_2[5]).t["11pdXZ"]);
-    gameName = undefined;
+  constructor(state) {
+    let fn;
+    let items;
+    let items1;
+    let obj5;
+    let textColor1;
+    state = state.state;
+    const node = state.node;
+    const tmp = closure_5();
+    const gameId = node.gameId;
+    let obj = state(5419);
+    const gameMentionData = obj.useGameMentionData(gameId);
+    const intl = state(1115).intl;
+    const stringResult = intl.string(state(1115).t["11pdXZ"]);
+    let gameName;
     if (gameMentionData != null) {
       gameName = gameMentionData.gameName;
     }
     if (gameName == null) {
       gameName = stringResult;
     }
-    tmp7 = gameId;
-    gameIcon = undefined;
-    tmp8 = gameId(tmp3[6]);
+    let gameIcon;
+    const tmp7 = gameId;
+    const tmp8 = gameId(2010);
     if (gameMentionData != null) {
       gameIcon = gameMentionData.gameIcon;
     }
-    tmp8Result = tmp8(gameId, gameIcon, { size: 32 });
+    const tmp8Result = tmp8(gameId, gameIcon, { size: 32 });
     if (null == gameMentionData) {
-      tmp15 = jsxs;
-      textColor = undefined;
+      let textColor;
+      const MarkupText2 = tmp2(4824).MarkupText;
+      const tmp15 = closure_3;
       if (state != null) {
         textColor = state.textColor;
       }
-      obj1 = { color: null, children: null };
-      obj1.color = textColor;
-      items = ["@"];
-      items[1] = stringResult;
-      obj1.children = items;
-      return tmp15(tmp2(tmp3[7]).MarkupText, obj1, state.key);
+      let obj2 = { color: textColor, children: items };
+      items = ["@", stringResult];
+      return tmp15(MarkupText2, obj2, state.key);
     } else {
-      tmp17 = jsx;
-      obj8 = { size: "sm", style: null };
-      obj8.style = tmp.icon;
-      tmp11 = null != tmp8Result;
-      tmp18 = jsx(tmp2(tmp3[8]).UnknownGameIcon, obj8);
+      let tmp11 = null != tmp8Result;
+      const obj3 = { size: "sm", style: tmp.icon };
+      const tmp18 = closure_4(state(8021).UnknownGameIcon, obj3);
       if (tmp11) {
-        str = "";
         tmp11 = "" !== tmp8Result;
       }
-      tmp17Result = tmp18;
+      let tmp17Result = tmp18;
       if (tmp11) {
-        obj9 = { style: null, source: null };
-        obj9.style = tmp.icon;
-        obj10 = { uri: null };
-        obj10.uri = tmp8Result;
-        obj9.source = obj10;
-        tmp17Result = tmp17(tmp7(tmp3[9]), obj9);
+        const obj4 = { style: tmp.icon, source: obj5 };
+        obj5 = { uri: tmp8Result };
+        tmp17Result = tmp17(tmp7(5899), obj4);
       }
-      tmp13 = jsxs;
-      str2 = "button";
+      let str2 = "button";
+      const MarkupText = tmp2(4824).MarkupText;
+      const tmp13 = closure_3;
       if (state.noStyleAndInteraction) {
         str2 = "text";
       }
-      obj11 = { accessibilityRole: null, style: null, color: null, onPress: null, children: null };
-      obj11.accessibilityRole = str2;
-      obj11.style = tmp.chip;
+      const obj6 = { accessibilityRole: str2, style: tmp.chip, color: textColor1, onPress: fn, children: items1 };
       textColor1 = undefined;
       if (state != null) {
         textColor1 = state.textColor;
       }
-      obj11.color = textColor1;
       fn = undefined;
       if (!state.noStyleAndInteraction) {
         fn = () => {
           const obj = GameProfileActionCreatorsDefault;
-          obj.openGameProfileModal({ gameId, gameProfileModalChecks: { shouldOpenGameProfile: true, gameId }, source: GameProfileAnalyticUtils.GameProfileSources.GameMention, sourceUserId: state.authorId });
+          const obj2 = { gameId, gameProfileModalChecks: { shouldOpenGameProfile: true, gameId }, source: GameProfileAnalyticUtils.GameProfileSources.GameMention, sourceUserId: state.authorId };
+          obj.openGameProfileModal(obj2);
         };
       }
-      obj11.onPress = fn;
-      items1 = [, ];
-      items1[0] = tmp17Result;
-      obj12 = { variant: "text-sm/medium", style: null, children: null };
-      obj12.style = tmp.chipText;
-      obj12.children = gameName;
-      items1[1] = tmp17(tmp2(tmp3[12]).Text, obj12);
-      obj11.children = items1;
-      return tmp13(tmp2(tmp3[7]).MarkupText, obj11, state.key);
+      items1 = [tmp17Result, ];
+      const obj7 = { variant: "text-sm/medium", style: tmp.chipText, children: gameName };
+      items1[1] = closure_4(state(4832).Text, obj7);
+      return tmp13(MarkupText, obj6, state.key);
     }
   }
 }
-function FetchingGameMention(state) {
-  const node = state.node;
-  const game = useGame.useGame(node.gameId);
-  return React4(MarkupGameMention, { node, state: state.state });
+function FetchingGameMention(node) {
+  node = node.node;
+  const state = node.state;
+  const obj = useGame;
+  const game = obj.useGame(node.gameId);
+  return React3(MarkupGameMention, { node, state });
 }
-const jsxProd = fn(21);
-({ jsxs: c3, jsx: closure_4 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { icon: null, chip: null, chipText: null };
-let size = { width: 16, height: 16, borderRadius: nativeDefault.radii.xs, marginRight: 2 };
-obj2.icon = size;
-obj2.chip = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.xs, paddingHorizontal: 2 };
-let obj3 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.xs, paddingHorizontal: 2 };
-obj2.chipText = { color: nativeDefault.unsafe_rawColors.BRAND_500 };
-const hasOwnProperty = createStyles.createStyles(obj2);
-size = fn(2);
+({ jsxs: c3, jsx: closure_4 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { icon: size, chip: obj2, chipText: obj3 };
+size = { width: 16, height: 16, borderRadius: nativeDefault.radii.xs, marginRight: 2 };
+createStyles = createStyles.createStyles;
+obj2 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.xs, paddingHorizontal: 2 };
+obj3 = { color: nativeDefault.unsafe_rawColors.BRAND_500 };
+const hasOwnProperty = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/markup/native/MarkupReactGameMentionRule.tsx");
 
 export default MarkupGameMention;
 export function createFetchingGameMentionRule() {
-  return {
+  let obj = {
     gameMention: {
       react(node, arg1, state) {
-        return closure_1_4(FetchingGameMention, { node, state }, state.key);
+        const obj = { node, state };
+        return closure_1_4(FetchingGameMention, obj, state.key);
       }
     }
   };
+  return obj;
 }

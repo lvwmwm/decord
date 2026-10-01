@@ -5,20 +5,27 @@
 // Exports: default, getMaxMessageLength
 
 // Module 8605 (useMessageMaxLength)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let closure_4;
+let hasOwnProperty;
 ({ MAX_MESSAGE_LENGTH_PREMIUM: closure_4, MAX_MESSAGE_LENGTH: hasOwnProperty } = Constants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/useMessageMaxLength.tsx");
 
 export default function useMessageMaxLength() {
+  let currentUser;
+  let obj = get_initialized;
   const items = [UserStore];
-  return initialize.useStateFromStores(items, () => PremiumUtilsDefault.canUseIncreasedMessageLength(currentUser.getCurrentUser()) ? closure_1_4 : closure_1_5);
+  return obj.useStateFromStores(items, () => {
+    const obj = PremiumUtilsDefault;
+    return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser()) ? closure_1_4 : closure_1_5;
+  });
 };
 export const getMaxMessageLength = function getMaxMessageLength() {
-  return PremiumUtilsDefault.canUseIncreasedMessageLength(UserStore.getCurrentUser()) ? React4 : hasOwnProperty;
+  const obj = PremiumUtilsDefault;
+  return obj.canUseIncreasedMessageLength(UserStore.getCurrentUser()) ? React3 : hasOwnProperty;
 };

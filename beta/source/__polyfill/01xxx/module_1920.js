@@ -3,7 +3,7 @@
 // Dependencies: []
 
 // Module 1920
-globalThis.IntlMessageFormat.__addLocaleData({
+const obj = {
   locale: "vi",
   pluralRuleFunction(arg0, arg1) {
     let str = "other";
@@ -15,4 +15,5 @@ globalThis.IntlMessageFormat.__addLocaleData({
     }
     return str;
   }
-});
+};
+globalThis.IntlMessageFormat.__addLocaleData(obj);

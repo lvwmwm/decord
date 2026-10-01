@@ -4,7 +4,7 @@
 // Dependencies: [7417, 15063, 11006, 1115, 2021, 15064, 2]
 
 // Module 15062 (UpcomingServerEventNotificationSetting)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 15063 */;
@@ -12,22 +12,25 @@ import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificatio
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.MCVmjA);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.MCVmjA);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.R0VpSW);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.R0VpSW);
   },
-  parent: SettingsConstants.MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.NOTIFICATIONS,
   useValue: UserSettings.EnableUpcomingServerEventNotifications.useSetting,
   onValueChange: UpcomingServerEventNotificationUtils.onUpcomingServerEventNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return UpcomingServerEventExperiment.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
+    const obj = UpcomingServerEventExperiment;
+    return obj.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
   }
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/UpcomingServerEventNotificationSetting.tsx");
 
 export default toggle;

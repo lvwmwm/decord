@@ -5,11 +5,9 @@
 // Exports: getShadowNodeWrapperFromRef
 
 // Module 1666 (findHostInstance)
-import _mod1649 from "module_1649" /* 1649 */;
+import ReanimatedError from "ReanimatedError" /* 1649 */;
 import _mod1667 from "module_1667" /* 1667 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const getShadowNodeWrapperFromRef = function getShadowNodeWrapperFromRef(self, findHostInstanceResult) {
   let prop;
@@ -39,14 +37,17 @@ export const getShadowNodeWrapperFromRef = function getShadowNodeWrapperFromRef(
   if (prop == null) {
     let __internalInstanceHandle = self._reactInternals;
     if (__internalInstanceHandle) {
-      __internalInstanceHandle = _mod1667.findHostInstance(self).__internalInstanceHandle;
+      const obj = _mod1667;
+      __internalInstanceHandle = obj.findHostInstance(self).__internalInstanceHandle;
     }
     prop = __internalInstanceHandle;
   }
   if (prop) {
     return prop.stateNode.node;
   } else {
-    const reanimatedError = new _mod1649.ReanimatedError("Failed to find host instance for a ref.");
+    self = this;
+    const self2 = this;
+    const reanimatedError = new ReanimatedError.ReanimatedError("Failed to find host instance for a ref.");
     throw reanimatedError;
   }
 };

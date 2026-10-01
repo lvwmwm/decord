@@ -5,31 +5,46 @@
 // Exports: default, isPowerupActiveStatusActive, usePowerupsActiveStatuses
 
 // Module 11996 (usePowerupActiveStatus)
+import Constants from "Constants" /* 1074 */;
+import GameServerConstants from "GameServerConstants" /* 4725 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4723 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4724 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_2;
 
-const require = fn;
-const GuildPowerupsConstants = fn(4724);
-({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: closure_4, PowerupActiveStatusType: hasOwnProperty, POWERUPS_INCLUDED_IN_LEVEL: metroRequire, BOOSTING_TIER_TO_LEVEL_SKU_ID: closure_7 } = GuildPowerupsConstants);
-const GuildFeatures = fn(1074).GuildFeatures;
-let closure_9 = fn(4725).GAME_SERVER_POWERUP_SKU_ID;
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+const f95194 = () => GuildStore.getGuild(closure_0);
+const f95195 = () => GuildPowerupsStore.getStateForGuild(closure_0);
+({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: closure_4, PowerupActiveStatusType: hasOwnProperty, POWERUPS_INCLUDED_IN_LEVEL: metroRequire, BOOSTING_TIER_TO_LEVEL_SKU_ID: metroImportDefault } = GuildPowerupsConstants);
+const GuildFeatures = Constants.GuildFeatures;
+let closure_9 = GameServerConstants.GAME_SERVER_POWERUP_SKU_ID;
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/usePowerupActiveStatus.tsx");
 
 export default function usePowerupActiveStatus(arg0, arg1) {
+  let closure_0;
+  let first;
+  let flag;
+  let items;
+  let stateFromStores;
+  let unlockedPowerups;
   if (null == arg1) {
-    let items = [];
+    items = [];
   } else {
     items = [arg1];
   }
   _require = arg0;
+  let obj = require("get initialized");
   const items1 = [unlockedPowerups];
-  stateFromStores = require("initialize").useStateFromStores(items1, () => GuildStore.getGuild(closure_0));
-  let obj = require("initialize");
+  stateFromStores = obj.useStateFromStores(items1, f95194);
+  let obj2 = require("get initialized");
   const items2 = [flag];
-  unlockedPowerups = require("initialize").useStateFromStores(items2, () => GuildPowerupsStore.getStateForGuild(closure_0));
+  unlockedPowerups = obj2.useStateFromStores(items2, f95195);
   flag = undefined;
   if (stateFromStores != null) {
     let features = stateFromStores.features;
@@ -41,6 +56,10 @@ export default function usePowerupActiveStatus(arg0, arg1) {
     flag = false;
   }
   const mapped = items.map((skuId) => {
+    let isActiveFromLevel;
+    let levelEntitlement;
+    let levelPowerup;
+    let obj3;
     if (skuId.skuId === closure_9) {
       let hasItem;
       if (stateFromStores != null) {
@@ -50,22 +69,26 @@ export default function usePowerupActiveStatus(arg0, arg1) {
         }
       }
       if (hasItem != null) {
+        let INACTIVE;
         if (hasItem) {
-          let INACTIVE = constants.POWERUP_ACTIVATED;
+          INACTIVE = hasOwnProperty.POWERUP_ACTIVATED;
         }
+        obj3 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
         const obj2 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
       }
-      INACTIVE = constants.INACTIVE;
+      INACTIVE = hasOwnProperty.INACTIVE;
     } else {
       if (null != skuId) {
         if (null != stateFromStores) {
+          let obj;
           if (null != unlockedPowerups) {
-            if (null == timestampProducer[skuId.skuId]) {
-              let obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
+            if (null == metroRequire[skuId.skuId]) {
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
             } else {
               let tmp4;
-              if (null != React5[tmp22]) {
-                unlockedPowerups = tmp20.unlockedPowerups;
+              const tmp = tmp18.premiumTier >= metroRequire[skuId.skuId];
+              if (null != metroImportDefault[metroRequire[skuId.skuId]]) {
+                unlockedPowerups = tmp19.unlockedPowerups;
                 let tmp5;
                 if (unlockedPowerups != null) {
                   tmp5 = unlockedPowerups[tmp3];
@@ -73,16 +96,15 @@ export default function usePowerupActiveStatus(arg0, arg1) {
                 tmp4 = tmp5;
               }
               let tmp6;
-              if (null != React5[tmp22]) {
-                const allPowerups = tmp20.allPowerups;
+              if (null != metroImportDefault[metroRequire[skuId.skuId]]) {
+                const allPowerups = tmp19.allPowerups;
                 let tmp7;
                 if (allPowerups != null) {
                   tmp7 = allPowerups[tmp3];
                 }
                 tmp6 = tmp7;
               }
-              obj = { isActiveFromLevel: tmp19.premiumTier >= tmp22, levelEntitlement: tmp4, levelPowerup: tmp6 };
-              const tmp = tmp19.premiumTier >= tmp22;
+              obj = { isActiveFromLevel: tmp, levelEntitlement: tmp4, levelPowerup: tmp6 };
             }
           }
           let hasItem1 = flag;
@@ -100,41 +122,45 @@ export default function usePowerupActiveStatus(arg0, arg1) {
           if (tmp10 == null) {
             tmp10 = null;
           }
-          let obj3 = { type: constants.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
+          obj3 = { type: hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
           if (isActiveFromLevel) {
-            const obj4 = { type: tmp11.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
-            obj3 = obj4;
+            obj3 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
+            const obj4 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
           } else if (hasItem1) {
-            const obj5 = { type: tmp11.TIER_OVERRIDE_ACTIVATED, powerup: skuId, sourceEntitlement: "Array", sourcePowerup: skuId };
-            obj3 = obj5;
+            obj3 = { type: hasOwnProperty.TIER_OVERRIDE_ACTIVATED, powerup: skuId, sourceEntitlement: "Array", sourcePowerup: skuId };
+            const obj5 = { type: hasOwnProperty.TIER_OVERRIDE_ACTIVATED, powerup: skuId, sourceEntitlement: "Array", sourcePowerup: skuId };
           } else if (null != tmp10) {
-            const obj6 = { type: tmp11.POWERUP_ACTIVATED, powerup: skuId, sourceEntitlement: tmp10, sourcePowerup: skuId };
-            obj3 = obj6;
+            obj3 = { type: hasOwnProperty.POWERUP_ACTIVATED, powerup: skuId, sourceEntitlement: tmp10, sourcePowerup: skuId };
+            const obj6 = { type: hasOwnProperty.POWERUP_ACTIVATED, powerup: skuId, sourceEntitlement: tmp10, sourcePowerup: skuId };
           }
-          return obj3;
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
     }
+    return obj3;
   });
   if (mapped.length <= 0) {
-    let obj3 = { type: constants.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "isArray" };
-    let first = obj3;
+    let obj3 = { type: constants.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "paddingHorizontal" };
+    let tmp4 = constants;
+    first = obj3;
   } else {
     first = mapped[0];
   }
   return first;
 };
 export const isPowerupActiveStatusActive = function isPowerupActiveStatusActive(type) {
-  return type.type !== constants.INACTIVE;
+  return type.type !== hasOwnProperty.INACTIVE;
 };
 export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guildId, powerups) {
+  let flag;
+  let stateFromStores;
   _require = guildId;
   const items = [closure_2];
-  stateFromStores = require("initialize").useStateFromStores(items, () => GuildStore.getGuild(closure_0));
-  const obj = require("initialize");
+  const obj = require("get initialized");
+  stateFromStores = obj.useStateFromStores(items, f95194);
   const items1 = [flag];
-  closure_2 = require("initialize").useStateFromStores(items1, () => GuildPowerupsStore.getStateForGuild(closure_0));
+  const obj2 = require("get initialized");
+  closure_2 = obj2.useStateFromStores(items1, f95195);
   flag = undefined;
   if (stateFromStores != null) {
     const features = stateFromStores.features;
@@ -146,6 +172,10 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
     flag = false;
   }
   return powerups.map((skuId) => {
+    let isActiveFromLevel;
+    let levelEntitlement;
+    let levelPowerup;
+    let obj3;
     if (skuId.skuId === closure_9) {
       let hasItem;
       if (stateFromStores != null) {
@@ -155,22 +185,26 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
         }
       }
       if (hasItem != null) {
+        let INACTIVE;
         if (hasItem) {
-          let INACTIVE = constants.POWERUP_ACTIVATED;
+          INACTIVE = hasOwnProperty.POWERUP_ACTIVATED;
         }
+        obj3 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
         const obj2 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
       }
-      INACTIVE = constants.INACTIVE;
+      INACTIVE = hasOwnProperty.INACTIVE;
     } else {
       if (null != skuId) {
         if (null != stateFromStores) {
+          let obj;
           if (null != unlockedPowerups) {
-            if (null == timestampProducer[skuId.skuId]) {
-              let obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
+            if (null == metroRequire[skuId.skuId]) {
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
             } else {
               let tmp4;
-              if (null != React5[tmp22]) {
-                unlockedPowerups = tmp20.unlockedPowerups;
+              const tmp = tmp18.premiumTier >= metroRequire[skuId.skuId];
+              if (null != metroImportDefault[metroRequire[skuId.skuId]]) {
+                unlockedPowerups = tmp19.unlockedPowerups;
                 let tmp5;
                 if (unlockedPowerups != null) {
                   tmp5 = unlockedPowerups[tmp3];
@@ -178,16 +212,15 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
                 tmp4 = tmp5;
               }
               let tmp6;
-              if (null != React5[tmp22]) {
-                const allPowerups = tmp20.allPowerups;
+              if (null != metroImportDefault[metroRequire[skuId.skuId]]) {
+                const allPowerups = tmp19.allPowerups;
                 let tmp7;
                 if (allPowerups != null) {
                   tmp7 = allPowerups[tmp3];
                 }
                 tmp6 = tmp7;
               }
-              obj = { isActiveFromLevel: tmp19.premiumTier >= tmp22, levelEntitlement: tmp4, levelPowerup: tmp6 };
-              const tmp = tmp19.premiumTier >= tmp22;
+              obj = { isActiveFromLevel: tmp, levelEntitlement: tmp4, levelPowerup: tmp6 };
             }
           }
           let hasItem1 = flag;
@@ -205,21 +238,21 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
           if (tmp10 == null) {
             tmp10 = null;
           }
-          let obj3 = { type: constants.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
+          obj3 = { type: hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
           if (isActiveFromLevel) {
-            const obj4 = { type: tmp11.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
-            obj3 = obj4;
+            obj3 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
+            const obj4 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
           } else if (hasItem1) {
-            const obj5 = { type: tmp11.TIER_OVERRIDE_ACTIVATED, powerup: skuId, sourceEntitlement: "Array", sourcePowerup: skuId };
-            obj3 = obj5;
+            obj3 = { type: hasOwnProperty.TIER_OVERRIDE_ACTIVATED, powerup: skuId, sourceEntitlement: "Array", sourcePowerup: skuId };
+            const obj5 = { type: hasOwnProperty.TIER_OVERRIDE_ACTIVATED, powerup: skuId, sourceEntitlement: "Array", sourcePowerup: skuId };
           } else if (null != tmp10) {
-            const obj6 = { type: tmp11.POWERUP_ACTIVATED, powerup: skuId, sourceEntitlement: tmp10, sourcePowerup: skuId };
-            obj3 = obj6;
+            obj3 = { type: hasOwnProperty.POWERUP_ACTIVATED, powerup: skuId, sourceEntitlement: tmp10, sourcePowerup: skuId };
+            const obj6 = { type: hasOwnProperty.POWERUP_ACTIVATED, powerup: skuId, sourceEntitlement: tmp10, sourcePowerup: skuId };
           }
-          return obj3;
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
     }
+    return obj3;
   });
 };

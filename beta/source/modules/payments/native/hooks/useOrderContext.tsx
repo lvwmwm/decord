@@ -5,37 +5,42 @@
 // Exports: useOrderContext
 
 // Module 10166 (useOrderContext)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
+let order;
+
 const result = size.fileFinishedImporting("modules/payments/native/hooks/useOrderContext.tsx");
 
 export const useOrderContext = function useOrderContext(initialOrder) {
-  let tmp = _slicedToArray(noop.useState(initialOrder), 2);
-  let order = tmp[0];
-  const setOrder = tmp3;
-  const setRevision = noop.useCallback((revision) => {
-    setOrder((arg0) => {
+  let first;
+  let tmp3;
+  [first, tmp3] = react.useState(initialOrder);
+  let closure_1 = tmp3;
+  const callback = react.useCallback((arg0) => {
+    let closure_0 = arg0;
+    let tmp = setOrder((arg0) => {
       let tmp = arg0;
       if (null != arg0) {
-        const obj = {};
+        const obj = { revision };
         const merged = Object.assign(arg0);
-        obj.revision = revision;
         tmp = obj;
       }
       return tmp;
     });
   }, []);
-  const items = [order, tmp[1], setRevision];
-  return noop.useMemo(() => {
-    const obj = { order, setOrder, setRevision, orderId: null, orderLineItemId: null, revision: null };
+  const items = [first, tmp3, callback];
+  return react.useMemo(() => {
     let id;
+    let id1;
+    let revision;
+    const obj = { order, setOrder, setRevision, orderId: id, orderLineItemId: id1, revision };
+    id = undefined;
     if (order != null) {
       id = tmp.id;
     }
-    obj.orderId = id;
-    let id1;
+    id1 = undefined;
     if (order != null) {
       const order_line_items = tmp.order_line_items;
       if (order_line_items != null) {
@@ -45,12 +50,10 @@ export const useOrderContext = function useOrderContext(initialOrder) {
         }
       }
     }
-    obj.orderLineItemId = id1;
-    let revision;
+    revision = undefined;
     if (order != null) {
       revision = tmp.revision;
     }
-    obj.revision = revision;
     return obj;
   }, items);
 };

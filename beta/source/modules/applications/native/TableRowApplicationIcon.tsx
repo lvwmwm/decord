@@ -5,25 +5,27 @@
 // Exports: default
 
 // Module 9023 (TableRowApplicationIcon)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import FastImageDefault from "FastImage" /* 5899 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { icon: null };
-let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm };
-obj2.icon = size;
-let closure_3 = createStyles.createStyles(obj2);
-size = fn(2);
+let size;
+const jsx = Fragment.jsx;
+const obj = { icon: size };
+size = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm };
+let closure_3 = createStyles.createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/applications/native/TableRowApplicationIcon.tsx");
 
 export default function TableRowApplicationIcon(application) {
   application = application.application;
-  const obj = { source: null, style: null };
   const tmp = closure_3();
-  obj.source = AvatarUtilsDefault.getApplicationIconSource({ id: application.id, icon: application.icon, size: 32 });
-  obj.style = tmp.icon;
-  return <tmp2 source={null} style={null} />;
+  FastImageDefault;
+  const obj2 = AvatarUtilsDefault;
+  const obj3 = { id: application.id, icon: application.icon, size: 32 };
+  return <tmp2 source={obj2.getApplicationIconSource(obj3)} style={tmp.icon} />;
 };

@@ -6,68 +6,82 @@
 
 // Module 9844 (GIFPickerCategoryView)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import FastImageDefault from "FastImage" /* 5899 */;
-import useAccessibilityPressDefault from "useAccessibilityPress" /* 9040 */;
-import noop from "module_19" /* 19 */;
+import reactDefault from "react" /* 9040 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ StyleSheet, View: closure_4, TouchableOpacity: hasOwnProperty } = get_ActivityIndicator);
-fn(1074).GIFPickerResultTypes;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.xs, flex: 1 }, gifImage: null, gifOverlay: null, categoryName: null, categoryNameIcon: null };
-const obj3 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.xs, flex: 1 };
-obj2.gifImage = { borderRadius: nativeDefault.radii.xs, flex: 1 };
-let obj5 = {};
+let StyleSheet;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+({ StyleSheet, View: closure_4, TouchableOpacity: hasOwnProperty } = react_native);
+const GIFPickerResultTypes = Constants.GIFPickerResultTypes;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, gifImage: obj3, gifOverlay: obj4, categoryName: obj5, categoryNameIcon: obj6 };
+obj2 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.xs, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { borderRadius: nativeDefault.radii.xs, flex: 1 };
+obj4 = { backgroundColor: nativeDefault.unsafe_rawColors.BLACK, borderRadius: nativeDefault.radii.xs, opacity: 0.6 };
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-obj5.backgroundColor = nativeDefault.unsafe_rawColors.BLACK;
-obj5.borderRadius = nativeDefault.radii.xs;
-obj5.opacity = 0.6;
-obj2.gifOverlay = obj5;
-let obj6 = {};
+obj5 = { margin: nativeDefault.space.PX_8, justifyContent: "center", flexDirection: "row", alignItems: "center" };
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj6.margin = nativeDefault.space.PX_8;
-obj6.justifyContent = "center";
-obj6.flexDirection = "row";
-obj6.alignItems = "center";
-obj2.categoryName = obj6;
-const obj4 = { borderRadius: nativeDefault.radii.xs, flex: 1 };
-obj2.categoryNameIcon = { marginRight: nativeDefault.space.PX_4 };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+obj6 = { marginRight: nativeDefault.space.PX_4 };
+let closure_9 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerCategoryView.tsx");
 
 export default function GIFPickerCategoryView(onSelectCategory) {
+  let items1;
+  let items2;
+  let tmp10Result;
   onSelectCategory = onSelectCategory.onSelectCategory;
   const item = onSelectCategory.item;
   const tmp = closure_9();
   const items = [onSelectCategory, item];
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     onSelectCategory(item.type, item.name);
   }, items);
-  const intl = util.intl;
-  const formatToPlainStringResult = intl.formatToPlainString(util.t["j+63pw"], { categoryName: item.name });
-  const obj2 = { style: tmp.container, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult };
-  const merged = Object.assign(useAccessibilityPressDefault(callback, formatToPlainStringResult));
-  const items1 = [React5(FastImageDefault, { style: tmp.gifImage, source: { uri: item.src } }), React5(React4, { style: tmp.gifOverlay }), ];
-  const obj5 = { style: tmp.categoryName, accessible: false, children: null };
+  const intl = intl2.intl;
+  const obj = { categoryName: item.name };
+  const formatToPlainStringResult = intl.formatToPlainString(intl2.t["j+63pw"], obj);
+  const obj2 = { style: tmp.container, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, children: items1 };
+  const merged = Object.assign(reactDefault(callback, formatToPlainStringResult));
+  items1 = [, , ];
+  const obj3 = { style: tmp.gifImage, source: { uri: item.src } };
+  items1[0] = metroImportDefault(FastImageDefault, obj3);
+  const obj4 = { style: tmp.gifOverlay };
+  items1[1] = metroImportDefault(React3, obj4);
+  const obj5 = { style: tmp.categoryName, accessible: false, children: items2 };
+  const tmp11 = React3;
+  const tmp8 = hasOwnProperty;
   if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
-    const obj6 = { size: "sm", style: tmp.categoryNameIcon, color: tmp6(576).colors.WHITE };
-    let tmp10Result = tmp10(tmp3(9845).AnalyticsIcon, obj6);
+    const obj6 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
+    const AnalyticsIcon = tmp3(9845).AnalyticsIcon;
+    tmp10Result = tmp10(AnalyticsIcon, obj6);
   } else {
     tmp10Result = null;
     if (item.type === tmp12.FAVORITES) {
-      const obj7 = { size: "sm", style: tmp.categoryNameIcon, color: tmp6(576).colors.WHITE };
-      tmp10Result = tmp10(tmp3(9698).StarIcon, obj7);
+      const obj7 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
+      const StarIcon = tmp3(9698).StarIcon;
+      tmp10Result = tmp10(StarIcon, obj7);
     }
   }
-  const items2 = [tmp10Result, React5(Text_Text.Text, { variant: "text-sm/semibold", color: "text-overlay-light", maxFontSizeMultiplier: 2, accessible: false, children: item.name })];
-  obj5.children = items2;
-  items1[2] = React6(React4, obj5);
-  obj2.children = items1;
-  return React6(hasOwnProperty, obj2);
+  items2 = [tmp10Result, ];
+  const obj8 = { variant: "text-sm/semibold", color: "text-overlay-light", maxFontSizeMultiplier: 2, accessible: false, children: item.name };
+  items2[1] = metroImportDefault(Text_Text.Text, obj8);
+  items1[2] = metroImportAll(tmp11, obj5);
+  return metroImportAll(tmp8, obj2);
 };

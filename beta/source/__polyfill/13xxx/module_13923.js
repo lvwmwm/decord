@@ -4,14 +4,12 @@
 // Exports: default
 
 // Module 13923
-import emptyPromise from "emptyPromise" /* 13906 */;
+import ArgType from "ArgType" /* 13906 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export default () => (arg0) => {
-  const result = emptyPromise.assertHasLoggerPlugin(arg0);
-  closure_0 = arg0;
+  const result = ArgType.assertHasLoggerPlugin(arg0);
+  let closure_0 = arg0;
   return {
     onConnect() {
       console.log = () => {

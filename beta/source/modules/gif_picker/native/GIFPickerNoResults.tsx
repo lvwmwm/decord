@@ -4,52 +4,57 @@
 // Dependencies: [19, 17, 1074, 21, 4836, 576, 9746, 9778, 1115, 9782, 6045, 1177, 2]
 
 // Module 9838 (GIFPickerNoResults)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
+import Constants from "Constants" /* 1074 */;
 import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 9746 */;
 import SearchEmpty from "SearchEmpty" /* 9778 */;
 import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9782 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ScrollView = fn(17).ScrollView;
-fn(1074).GIFPickerResultTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: { color: nativeDefault.colors.TEXT_SUBTLE }, emptyStateImage: null };
-const obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
-obj.emptyStateImage = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
-let closure_7 = createStyles.createStyles(obj);
-const obj4 = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerNoResults.tsx");
-
-export default noop.memo(function GIFPickerNoResults(inActionSheet) {
+let obj2;
+let obj3;
+const ScrollView = react_native.ScrollView;
+const GIFPickerResultTypes = Constants.GIFPickerResultTypes;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: obj2, emptyStateImage: obj3 };
+createStyles = createStyles.createStyles;
+obj2 = { color: nativeDefault.colors.TEXT_SUBTLE };
+obj3 = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
+let closure_7 = createStyles(obj);
+const memoResult = react.memo(function GIFPickerNoResults(inActionSheet) {
   inActionSheet = inActionSheet.inActionSheet;
+  const categoryType = inActionSheet.categoryType;
   const tmp = closure_7();
   const safeAreaBottomKeyboardAware = useExpressionPickerInsetsDefault({ hasCategories: false }).safeAreaBottomKeyboardAware;
   const items = [safeAreaBottomKeyboardAware];
-  const memo = noop.useMemo(() => ({ paddingBottom: safeAreaBottomKeyboardAware, flex: 1 }), items);
-  const searchEmptySource = SearchEmpty.useSearchEmptySource();
-  if (inActionSheet.categoryType === GIFPickerResultTypes.FAVORITES) {
+  const memo = react.useMemo(() => ({ paddingBottom: safeAreaBottomKeyboardAware, flex: 1 }), items);
+  const obj = SearchEmpty;
+  const searchEmptySource = obj.useSearchEmptySource();
+  if (categoryType === GIFPickerResultTypes.FAVORITES) {
     const intl2 = tmp4(1115).intl;
     let stringResult = intl2.string(tmp4(1115).t.ZH4o6l);
   } else {
     const intl = tmp4(1115).intl;
     stringResult = intl.string(tmp4(1115).t["5dX4UM"]);
   }
-  const modalDismissGuardRefreshControl = useModalDismissGuardRefreshControl.useModalDismissGuardRefreshControl();
+  const tmp4Result = useModalDismissGuardRefreshControl;
+  const modalDismissGuardRefreshControl = tmp4Result.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
     let BottomSheetScrollView = tmp4(6045).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
-  const obj2 = { contentContainerStyle: memo, keyboardShouldPersistTaps: "always", refreshControl: null, children: null };
   let tmp9;
   if (inActionSheet) {
     tmp9 = modalDismissGuardRefreshControl;
   }
-  obj2.refreshControl = tmp9;
-  obj2.children = jsx(native.RefreshEmptyState, { source: searchEmptySource, body: stringResult, bodyStyle: tmp.emptyStateBody, containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateImage });
-  return <BottomSheetScrollView contentContainerStyle={memo} keyboardShouldPersistTaps="always" refreshControl={null}>{null}</BottomSheetScrollView>;
+  return <BottomSheetScrollView contentContainerStyle={memo} keyboardShouldPersistTaps="always" refreshControl={tmp9}>{null}</BottomSheetScrollView>;
 });
+const result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerNoResults.tsx");
+
+export default memoResult;

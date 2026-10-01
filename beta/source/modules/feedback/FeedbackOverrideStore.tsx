@@ -4,39 +4,39 @@
 // Dependencies: [16316, 504, 573, 2]
 
 // Module 16317 (FeedbackOverrideStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import feedback_FeedbackManager from "feedback/FeedbackManager" /* 16316 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_2 = {};
-const Store = initializeDefault.Store;
+const React2 = {};
+const Store = get_initializedDefault.Store;
 class HotspotStore extends Store {
+  initialize() {
+
+  }
+  getFeedbackConfig(ACTIVITY) {
+    return closure_2[ACTIVITY];
+  }
 }
 const prototype = HotspotStore.prototype;
-prototype["initialize"] = function initialize() {
-
-};
-prototype["getFeedbackConfig"] = function getFeedbackConfig(ACTIVITY) {
-  return closure_2[ACTIVITY];
-};
 HotspotStore.displayName = "FeedbackOverrideStore";
 HotspotStore.persistKey = "feedbackOverrides";
-const hotspotStore = new HotspotStore(DispatcherDefault, {
+let obj = {
   FEEDBACK_OVERRIDE_SET: function handleSetFeedbackOverride(feedbackType) {
+    let chance;
+    let cooldown;
     feedbackType = feedbackType.feedbackType;
-    const obj = {};
+    const obj = { cooldown, chance };
     ({ cooldown, chance } = feedbackType);
     const merged = Object.assign(feedback_FeedbackManager.FeedbackConfig[feedbackType]);
-    obj.cooldown = cooldown;
-    obj.chance = chance;
     closure_2[feedbackType] = obj;
   },
   FEEDBACK_OVERRIDE_CLEAR: function handleClearFeedbackOverride(arg0) {
-    delete tmp[tmp2];
+    delete closure_2[arg0.feedbackType];
   }
-});
-const size = fn(2);
+};
+const hotspotStore = new HotspotStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/feedback/FeedbackOverrideStore.tsx");
 
 export default hotspotStore;

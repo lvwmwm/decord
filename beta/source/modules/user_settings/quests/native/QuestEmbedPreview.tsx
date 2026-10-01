@@ -5,45 +5,51 @@
 // Exports: QuestEmbedPreview
 
 // Module 14703 (QuestEmbedPreview)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import CodedLink from "CodedLink" /* 4821 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 10699 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import MessageRecord from "MessageRecord" /* 4480 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MessageTypes = fn(1074).MessageTypes;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const MessageTypes = Constants.MessageTypes;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/quests/native/QuestEmbedPreview.tsx");
 
 export const QuestEmbedPreview = function QuestEmbedPreview(questId) {
+  let currentUser;
   questId = questId.questId;
-  const memo = noop.useMemo(() => {
+  let tmp2 = questId;
+  const tmp3 = dependencyMap;
+  const memo = react.useMemo(() => {
     const obj = new stateFromStores(dependencyMap[5])();
     obj.setOptions({ renderCodedLinks: true, renderEmbeds: true, renderComponents: true, shouldDisableInteractiveComponents: true });
     return obj;
   }, []);
+  let obj = questId(504);
   let items = [UserStore];
-  const stateFromStores = questId(504).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [questId, stateFromStores];
-  const memo1 = noop.useMemo(() => {
+  const memo1 = react.useMemo(function() {
+    let date;
+    let items;
+    let obj3;
     let tmp2 = null;
     if (null != questId) {
       tmp2 = null;
       if (null != stateFromStores) {
-        const obj = { id: "1000000000000000000", type: MessageTypes.DEFAULT, channel_id: "1000000000000000001", author: tmp3, content: "", timestamp: null, edited_timestamp: null, tts: false, mention_everyone: false, mentions: null, mention_roles: null, attachments: null, embeds: null, reactions: null, pinned: false, webhook_id: null, codedLinks: null };
         const _Date = Date;
-        const date = new Date();
-        obj.timestamp = date;
-        obj.mentions = [];
-        obj.mention_roles = [];
-        obj.attachments = [];
-        obj.embeds = [];
-        obj.reactions = [];
-        const obj2 = { type: CodedLink.CodedLinkType.QUESTS_EMBED, code: tmp, url: QuestCopyUtils.getQuestUrl(tmp) };
-        const items = [obj2];
-        obj.codedLinks = items;
+        const self = this;
+        const self2 = this;
+        const obj = { id: "1000000000000000000", type: MessageTypes.DEFAULT, channel_id: "1000000000000000001", author: tmp3, content: "", timestamp: date, edited_timestamp: null, tts: false, mention_everyone: false, mentions: [], mention_roles: [], attachments: [], embeds: [], reactions: [], pinned: false, webhook_id: null, codedLinks: items };
+        date = new Date();
+        const obj2 = { type: CodedLink.CodedLinkType.QUESTS_EMBED, code: questId, url: obj3.getQuestUrl(questId) };
+        items = [obj2];
+        const self3 = this;
+        const self4 = this;
+        obj3 = QuestCopyUtils;
         tmp2 = new MessageRecord(obj);
       }
     }
@@ -51,13 +57,10 @@ export const QuestEmbedPreview = function QuestEmbedPreview(questId) {
   }, items1);
   let tmp6 = null;
   if (null != memo1) {
-    let obj2 = { title: null, children: null };
+    stateFromStores(14702);
     const intl = tmp2(1115).intl;
-    obj2.title = intl.string(tmp2(1115).t["habP/M"]);
     let obj3 = { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" };
-    obj2.children = jsx(stateFromStores(8112), { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" });
-    tmp6 = jsx(stateFromStores(14702), { title: null, children: null });
-    const tmp9 = stateFromStores(14702);
+    tmp6 = <tmp9 title={intl.string(tmp2(1115).t["habP/M"])}>{null}</tmp9>;
   }
   return tmp6;
 };

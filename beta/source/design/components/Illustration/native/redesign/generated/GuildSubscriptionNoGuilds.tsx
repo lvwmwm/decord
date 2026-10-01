@@ -5,60 +5,46 @@
 // Exports: GuildSubscriptionNoGuilds, getGuildSubscriptionNoGuildsSource, useGuildSubscriptionNoGuildsSource
 
 // Module 13072 (GuildSubscriptionNoGuilds)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 4685 */;
 import _mod7679 from "module_7679" /* 7679 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const Image = fn(17).Image;
-const jsx = fn(21).jsx;
-const size = fn(2);
+function dark() {
+  return require("AssetRegistry");
+}
+function darker() {
+  return require("AssetRegistry");
+}
+function light() {
+  return require("AssetRegistry");
+}
+const Image = react_native.Image;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/GuildSubscriptionNoGuilds.tsx");
 
 export const getGuildSubscriptionNoGuildsSource = function getGuildSubscriptionNoGuildsSource(theme) {
-  return _mod7679.getIllustrationSource(theme, {
-    dark() {
-      return require("module_13073");
-    },
-    darker() {
-      return require("module_13074");
-    },
-    light() {
-      return require("module_13075");
-    }
-  });
+  const obj = _mod7679;
+  const obj2 = { dark, darker, light };
+  return obj.getIllustrationSource(theme, obj2);
 };
 export const useGuildSubscriptionNoGuildsSource = function useGuildSubscriptionNoGuildsSource() {
   const obj = shared;
-  return _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
-    dark() {
-      return require("module_13073");
-    },
-    darker() {
-      return require("module_13074");
-    },
-    light() {
-      return require("module_13075");
-    }
-  });
+  const theme = obj.useThemeContext().theme;
+  const obj2 = _mod7679;
+  const obj3 = { dark, darker, light };
+  return obj2.getIllustrationSource(theme, obj3);
 };
 export const GuildSubscriptionNoGuilds = function GuildSubscriptionNoGuilds(arg0) {
   const obj = shared;
-  const obj4 = {};
-  const illustrationSource = _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
-    dark() {
-      return require("module_13073");
-    },
-    darker() {
-      return require("module_13074");
-    },
-    light() {
-      return require("module_13075");
-    }
-  });
+  const theme = obj.useThemeContext().theme;
+  const obj2 = _mod7679;
+  const obj3 = { dark, darker, light };
+  const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   const merged = Object.assign(arg0);
-  obj4.source = illustrationSource;
-  return <Image />;
+  return <Image source={illustrationSource} />;
 };

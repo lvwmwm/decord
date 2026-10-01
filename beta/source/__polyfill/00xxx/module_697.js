@@ -6,34 +6,36 @@
 // Module 697
 import _mod692 from "module_692" /* 692 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const isMatchingPattern = function isMatchingPattern(arr, test) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
-  const isStringResult = _mod692.isString(arr);
-  if (!isStringResult) {
-    return isStringResult;
-  } else {
+  const obj = _mod692;
+  let isStringResult = obj.isString(arr);
+  if (isStringResult) {
+    let isMatch;
+    const tmpResult = _mod692;
     if (tmpResult.isRegExp(test)) {
-      let isMatch = test.test(arr);
+      isMatch = test.test(arr);
     } else {
-      isMatch = tmp(692).isString(test);
+      const tmpResult2 = _mod692;
+      isMatch = tmpResult2.isString(test);
       if (isMatch) {
+        let hasItem;
         if (flag) {
-          let hasItem = arr === test;
+          hasItem = arr === test;
         } else {
           hasItem = arr.includes(test);
         }
+        isMatch = hasItem;
       }
-      const tmpResult2 = tmp(692);
     }
-    tmpResult = tmp(692);
+    isStringResult = isMatch;
   }
+  return isStringResult;
 };
 export const safeJoin = function safeJoin(__v_isVNode, arg1) {
   if (Array.isArray(__v_isVNode)) {
@@ -42,19 +44,19 @@ export const safeJoin = function safeJoin(__v_isVNode, arg1) {
     if (0 < __v_isVNode.length) {
       try {
         const push = items.push;
-        if (obj.isVueViewModel(tmp2)) {
-          push(tmp4(698).getVueInternalName(tmp2));
-          const tmp4Result = tmp4(698);
+        const obj = _mod692;
+        const tmp3 = require;
+        if (obj.isVueViewModel(__v_isVNode[num])) {
+          const tmp3Result = tmp3(698);
+          push(tmp3Result.getVueInternalName(__v_isVNode[num]));
         } else {
           const _String = String;
-          push(String(tmp2));
+          push(String(__v_isVNode[num]));
         }
-        num = num + 1;
-        obj = _mod692;
-        tmp4 = require;
       } catch (err) {
-        arr.push(tmp);
+        items.push("[value cannot be serialized]");
       }
+      num = num + 1;
     }
     return items.join(arg1);
   } else {
@@ -66,7 +68,7 @@ export const snipLine = function snipLine(arr, arg1) {
     return arr;
   } else {
     let tmp = arg1;
-    if (arg1 > length) {
+    if (arg1 > arr.length) {
       tmp = length;
     }
     const _Math = Math;
@@ -76,10 +78,10 @@ export const snipLine = function snipLine(arr, arg1) {
     }
     const _Math2 = Math;
     let bound = Math.min(num3 + 140, length);
-    if (bound > length - 5) {
+    if (bound > arr.length - 5) {
       bound = length;
     }
-    if (bound === length) {
+    if (bound === arr.length) {
       const _Math3 = Math;
       num3 = Math.max(bound - 140, 0);
     }
@@ -90,14 +92,14 @@ export const snipLine = function snipLine(arr, arg1) {
       combined = "'{snip} " + substr;
     }
     let text = combined;
-    if (bound < length) {
+    if (bound < arr.length) {
       text = `${tmp6} {snip}`;
     }
     return text;
   }
 };
 export const stringMatchesSomePattern = function stringMatchesSomePattern(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   let items = arg1;
   if (arg1 === undefined) {
     items = [];
@@ -107,28 +109,29 @@ export const stringMatchesSomePattern = function stringMatchesSomePattern(arg0) 
     flag = false;
   }
   return items.some((test) => {
-    if (flag === undefined) {
-      flag = false;
-    }
-    const isStringResult = _mod692.isString(closure_0);
-    if (!isStringResult) {
-      return isStringResult;
-    } else {
+    const obj2 = _mod692;
+    let isStringResult = obj2.isString(obj);
+    if (isStringResult) {
+      let isMatch;
+      const tmpResult = _mod692;
       if (tmpResult.isRegExp(test)) {
-        let isMatch = test.test(obj);
+        isMatch = test.test(obj);
       } else {
-        isMatch = tmp(692).isString(test);
+        const tmpResult2 = _mod692;
+        isMatch = tmpResult2.isString(test);
         if (isMatch) {
+          let hasItem;
           if (flag) {
-            let hasItem = obj === test;
+            hasItem = obj === test;
           } else {
             hasItem = obj.includes(test);
           }
+          isMatch = hasItem;
         }
-        const tmpResult2 = tmp(692);
       }
-      tmpResult = tmp(692);
+      isStringResult = isMatch;
     }
+    return isStringResult;
   });
 };
 export const truncate = function truncate(str) {

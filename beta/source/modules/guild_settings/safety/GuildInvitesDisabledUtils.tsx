@@ -7,37 +7,40 @@
 // Module 11860 (GuildInvitesDisabledUtils)
 import GuildIncidentsStore from "GuildIncidentsStore" /* 9540 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, guildIncident;
 
-const require = fn;
-const Constants = fn(1074);
+let closure_4;
+let hasOwnProperty;
+const f94743 = () => {
+  const canResult = null != guild && PermissionStore.can(hasOwnProperty.MANAGE_GUILD, tmp);
+  return canResult;
+};
+const f94744 = () => {
+  guildIncident = null;
+  if (null != closure_0) {
+    guildIncident = guildIncident.getGuildIncident(tmp.id);
+  }
+  return guildIncident;
+};
 ({ GuildFeatures: closure_4, Permissions: hasOwnProperty } = Constants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/safety/GuildInvitesDisabledUtils.tsx");
 
 export const useInvitesDisabledPermission = function useInvitesDisabledPermission(guild) {
   _require = guild;
   const items = [PermissionStore];
   const items1 = [guild];
-  return require("initialize").useStateFromStores(items, () => {
-    let canResult = null != closure_0;
-    if (canResult) {
-      canResult = PermissionStore.can(constants2.MANAGE_GUILD, tmp);
-    }
-    return canResult;
-  }, items1);
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, f94743, items1);
 };
 export const useInvitesDisabled = function useInvitesDisabled(features) {
   _require = features;
   const items = [GuildIncidentsStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let guildIncident = null;
-    if (null != closure_0) {
-      guildIncident = GuildIncidentsStore.getGuildIncident(tmp.id);
-    }
-    return guildIncident;
-  });
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, f94744);
   let hasItem;
   if (features != null) {
     features = features.features;
@@ -51,10 +54,14 @@ export const useInvitesDisabled = function useInvitesDisabled(features) {
     let tmp5 = null != invitesDisabledUntil;
     if (tmp5) {
       const _Date = Date;
-      const date = new Date(stateFromStores.invitesDisabledUntil);
+      const self = this;
+      const self2 = this;
       const _Date2 = Date;
+      const self3 = this;
+      const self4 = this;
+      const date = new Date(stateFromStores.invitesDisabledUntil);
+      tmp5 = date > new Date();
       const date1 = new Date();
-      tmp5 = date > date1;
     }
     hasItem = tmp5;
   }
@@ -64,23 +71,12 @@ export const useShouldShowInvitesDisabledNotif = function useShouldShowInvitesDi
   _require = guild;
   const items = [PermissionStore];
   const items1 = [guild];
-  let stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let canResult = null != closure_0;
-    if (canResult) {
-      canResult = PermissionStore.can(constants2.MANAGE_GUILD, tmp);
-    }
-    return canResult;
-  }, items1);
-  closure_129_0 = guild;
-  const obj = require("initialize");
+  const obj = require("get initialized");
+  let stateFromStores = obj.useStateFromStores(items, f94743, items1);
+  _require = guild;
   const items2 = [GuildIncidentsStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items2, () => {
-    let guildIncident = null;
-    if (null != closure_0) {
-      guildIncident = GuildIncidentsStore.getGuildIncident(tmp.id);
-    }
-    return guildIncident;
-  });
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items2, f94744);
   let hasItem;
   if (guild != null) {
     const features = guild.features;
@@ -94,10 +90,14 @@ export const useShouldShowInvitesDisabledNotif = function useShouldShowInvitesDi
     let tmp6 = null != invitesDisabledUntil;
     if (tmp6) {
       const _Date = Date;
-      const date = new Date(stateFromStores1.invitesDisabledUntil);
+      const self = this;
+      const self2 = this;
       const _Date2 = Date;
+      const self3 = this;
+      const self4 = this;
+      const date = new Date(stateFromStores1.invitesDisabledUntil);
+      tmp6 = date > new Date();
       const date1 = new Date();
-      tmp6 = date > date1;
     }
     hasItem = tmp6;
   }

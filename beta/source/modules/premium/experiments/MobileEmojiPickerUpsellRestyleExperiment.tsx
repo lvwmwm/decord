@@ -15,7 +15,8 @@ const result = size.fileFinishedImporting("modules/premium/experiments/MobileEmo
 
 export const MobileEmojiPickerUpsellRestyleExperiment = apexExperiment;
 export const useMobileEmojiPickerUpsellRestyleEnabled = function useMobileEmojiPickerUpsellRestyleEnabled(location) {
-  return apexExperiment.useConfig({ location });
+  const obj = { location };
+  return apexExperiment.useConfig(obj);
 };
 export const getMobileEmojiPickerUpsellRestyleEnabledForFeature = function getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, location) {
   let config = items.includes(featureName);

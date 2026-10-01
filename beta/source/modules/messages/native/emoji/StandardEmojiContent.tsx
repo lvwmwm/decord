@@ -5,98 +5,125 @@
 // Exports: default
 
 // Module 9791 (StandardEmojiContent)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4487 */;
 import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 9792 */;
 import EmojiActionCreators from "EmojiActionCreators" /* 9797 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let tmp2;
+let tmp5;
 const Text_Text = tmp2(4832);
 const FastImageDefault = tmp5(5899);
-require = fn;
 function Emoji(surrogate) {
+  let obj6;
+  let tmp7Result;
   surrogate = surrogate.surrogate;
   const obj = {};
   const merged = Object.assign(closure_9());
-  const merged1 = Object.assign(useSharedMessageEmojiStyles.useSharedMessageEmojiStyles());
-  const uRL = EmojiUtilsDefault.getURL(surrogate);
-  const obj4 = { style: obj.emojiWrapper, children: null };
+  const obj2 = useSharedMessageEmojiStyles;
+  const merged1 = Object.assign(obj2.useSharedMessageEmojiStyles());
+  const obj3 = EmojiUtilsDefault;
+  const uRL = obj3.getURL(surrogate);
+  const obj4 = { style: obj.emojiWrapper, children: tmp7Result };
+  const tmp8 = View;
   if ("" !== uRL) {
-    const obj5 = { style: obj.emojiIcon, resizeMode: "contain", source: null };
-    const obj6 = { uri: uRL };
-    obj5.source = obj6;
-    let tmp7Result = tmp7(FastImageDefault, obj5);
+    const obj5 = { style: obj.emojiIcon, resizeMode: "contain", source: obj6 };
+    obj6 = { uri: uRL };
+    tmp7Result = tmp7(FastImageDefault, obj5);
   } else {
     const obj7 = { style: obj.emojiSurrogate, variant: "text-md/medium", children: surrogate };
     tmp7Result = tmp7(Text_Text.Text, obj7);
   }
-  obj4.children = tmp7Result;
-  return timestampProducer(View, obj4);
+  return metroRequire(tmp8, obj4);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { emojiSurrogate: { lineHeight: 48, fontSize: 40, margin: 8 }, ctaContainer: { paddingTop: nativeDefault.space.PX_4 } };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
+let obj = { emojiSurrogate: { lineHeight: 48, fontSize: 40, margin: 8 }, ctaContainer: obj2 };
+obj2 = { paddingTop: nativeDefault.space.PX_4 };
+let closure_9 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/messages/native/emoji/StandardEmojiContent.tsx");
 
-export default function StandardEmojiContent(nonce) {
-  const emojiNode = nonce.emojiNode;
+export default function StandardEmojiContent(emojiNode) {
+  let Button;
+  let intl;
+  let items1;
+  let items2;
+  let obj11;
+  let str;
+  let stringResult;
+  emojiNode = emojiNode.emojiNode;
   let isFavoriteEmoji;
   let obj = {};
+  const nonce = emojiNode.nonce;
   const merged = Object.assign(closure_9());
-  const merged1 = Object.assign(emojiNode(isFavoriteEmoji[6]).useSharedMessageEmojiStyles());
-  const guildId = SelectedGuildStore.getGuildId();
   const obj2 = emojiNode(isFavoriteEmoji[6]);
-  const trackOpenPopout = emojiNode(isFavoriteEmoji[10]).useTrackOpenPopout({ currentGuildId: guildId, nonce: nonce.nonce });
-  const items = [emojiNode.surrogate];
-  const memo = noop.useMemo(() => UnicodeEmojisDefault.convertSurrogateToBase(emojiNode.surrogate), items);
+  const merged1 = Object.assign(obj2.useSharedMessageEmojiStyles());
+  const guildId = SelectedGuildStore.getGuildId();
   const obj3 = emojiNode(isFavoriteEmoji[10]);
-  isFavoriteEmoji = emojiNode(isFavoriteEmoji[12]).useIsFavoriteEmoji(guildId, memo);
-  const obj5 = { style: obj.emojiContainer, children: null };
+  const trackOpenPopout = obj3.useTrackOpenPopout({ currentGuildId: guildId, nonce });
+  const items = [emojiNode.surrogate];
+  const memo = react.useMemo(() => {
+    const obj = UnicodeEmojisDefault;
+    return obj.convertSurrogateToBase(emojiNode.surrogate);
+  }, items);
   const obj4 = emojiNode(isFavoriteEmoji[12]);
+  isFavoriteEmoji = obj4.useIsFavoriteEmoji(guildId, memo);
+  const obj5 = { style: obj.emojiContainer, children: items1 };
+  items1 = [, ];
   const obj6 = { surrogate: emojiNode.surrogate };
-  const items1 = [closure_6(Emoji, obj6), ];
-  const obj7 = { style: obj.emojiDescriptionWrapper, children: null };
-  const items2 = [closure_6(emojiNode(isFavoriteEmoji[9]).Text, { variant: "text-md/bold", color: "mobile-text-heading-primary", children: memo(isFavoriteEmoji[13])(emojiNode.content) }), ];
-  const obj8 = { variant: "text-sm/medium", children: null };
-  const intl = emojiNode(isFavoriteEmoji[14]).intl;
-  obj8.children = intl.string(emojiNode(isFavoriteEmoji[14]).t.sXdH8c);
-  items2[1] = closure_6(emojiNode(isFavoriteEmoji[9]).Text, obj8);
-  obj7.children = items2;
+  const tmp7 = memo(isFavoriteEmoji[13])(emojiNode.content);
+  items1[0] = closure_6(Emoji, obj6);
+  const obj7 = { style: obj.emojiDescriptionWrapper, children: items2 };
+  items2 = [closure_6(emojiNode(isFavoriteEmoji[9]).Text, { variant: "text-md/bold", color: "mobile-text-heading-primary", children: tmp7 }), ];
+  const obj8 = { variant: "text-sm/medium", children: intl.string(emojiNode(isFavoriteEmoji[14]).t.sXdH8c) };
+  const Text = emojiNode(isFavoriteEmoji[9]).Text;
+  intl = emojiNode(isFavoriteEmoji[14]).intl;
+  items2[1] = closure_6(Text, obj8);
   items1[1] = closure_7(View, obj7);
-  obj5.children = items1;
-  const items3 = [closure_7(View, obj5), closure_6(emojiNode(isFavoriteEmoji[15]).FormDivider, { style: obj.divider }), ];
-  const obj10 = { style: obj.ctaContainer, children: null };
+  const items3 = [closure_7(View, obj5), , ];
+  const obj9 = { style: obj.divider };
+  items3[1] = closure_6(emojiNode(isFavoriteEmoji[15]).FormDivider, obj9);
+  const obj10 = { style: obj.ctaContainer, children: closure_6(Button, obj11) };
+  Button = emojiNode(isFavoriteEmoji[16]).Button;
   const intl2 = emojiNode(isFavoriteEmoji[14]).intl;
   const string = intl2.string;
   const t = emojiNode(isFavoriteEmoji[14]).t;
+  const tmp10 = View;
+  const tmp8 = closure_7;
+  const tmp9 = closure_8;
   if (isFavoriteEmoji) {
-    let stringResult = string(t.Ay49KA);
+    stringResult = string(t.Ay49KA);
   } else {
     stringResult = string(t.nNsr67);
   }
-  const obj11 = { text: stringResult, variant: null, onPress: null };
-  let str = "primary";
+  obj11 = {
+    text: stringResult,
+    variant: str,
+    onPress() {
+      const obj = EmojiActionCreators;
+      if (isFavoriteEmoji) {
+        obj.unfavoriteEmoji(memo);
+      } else {
+        obj.favoriteEmoji(memo);
+      }
+    }
+  };
+  str = "primary";
   if (isFavoriteEmoji) {
     str = "tertiary";
   }
-  const obj12 = { children: null };
-  obj11.variant = str;
-  obj11.onPress = function onPress() {
-    const obj = EmojiActionCreators;
-    if (isFavoriteEmoji) {
-      obj.unfavoriteEmoji(memo);
-    } else {
-      obj.favoriteEmoji(memo);
-    }
-  };
-  obj10.children = closure_6(emojiNode(isFavoriteEmoji[16]).Button, obj11);
-  items3[2] = closure_6(View, obj10);
-  obj12.children = items3;
-  return closure_7(closure_8, obj12);
+  const obj12 = { children: items3 };
+  items3[2] = closure_6(tmp10, obj10);
+  return tmp8(tmp9, obj12);
 };

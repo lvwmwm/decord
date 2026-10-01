@@ -13,5 +13,6 @@ let closure_2 = TinyBroncoConstants.TINY_BRONCO_SETTINGS_LOCATION;
 const result = size.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoSettingsPredicate.tsx");
 
 export const useIsTinyBroncoSettingsEnabled = function useIsTinyBroncoSettingsEnabled() {
-  return TinyBroncoExperiment.useIsTinyBroncoEnabled(closure_2);
+  const obj = TinyBroncoExperiment;
+  return obj.useIsTinyBroncoEnabled(closure_2);
 };

@@ -5,42 +5,47 @@
 // Exports: createDismissibleBadgePreNavigationAction, createDismissibleBadgeRouteProps
 
 // Module 14283 (DismissibleBadgeUtils)
+import Fragment from "Fragment" /* 21 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 14282 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
 function useAlwaysShow() {
   return true;
 }
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsx = fn(21).jsx;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
 let closure_7 = [];
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DismissibleBadgeUtils.tsx");
 
 export function createDismissibleBadgePreNavigationAction(TINY_BRONCO_SETTINGS, useShouldShowAgeNotice) {
-  closure_0 = TINY_BRONCO_SETTINGS;
+  let closure_0 = TINY_BRONCO_SETTINGS;
   let tmp = useShouldShowAgeNotice;
   if (useShouldShowAgeNotice === undefined) {
     tmp = useAlwaysShow;
   }
-  closure_1 = tmp;
+  let closure_1 = tmp;
   return () => {
+    let first;
+    let tmp3;
     const tmp = closure_1();
+    const useSelectedDismissibleContent = closure_0(closure_1_2[4]).useSelectedDismissibleContent;
+    const tmp2 = closure_0(closure_1_2[4]);
     if (tmp) {
       const items = [first];
-      let tmp2 = items;
+      tmp3 = items;
     } else {
-      tmp2 = closure_1_7;
+      tmp3 = closure_1_7;
     }
-    const tmp4 = _slicedToArray(dismissibleContent(dependencyMap[4]).useSelectedDismissibleContent(tmp2), 2);
-    first = tmp4[0];
-    closure_1 = tmp6;
-    const items1 = [first, tmp4[1]];
+    const tmp5 = closure_1_3(useSelectedDismissibleContent(tmp3), 2);
+    first = tmp5[0];
+    closure_1 = tmp7;
+    const items1 = [first, tmp5[1]];
     return React.useCallback(() => {
       if (first === closure_0) {
-        closure_1(ContentDismissActionType.TAKE_ACTION);
+        closure_1(constants.TAKE_ACTION);
       }
       return true;
     }, items1);
@@ -48,27 +53,30 @@ export function createDismissibleBadgePreNavigationAction(TINY_BRONCO_SETTINGS, 
 }
 export function createDismissibleBadgeRouteProps(CUSTOM_APP_ICONS_NEW_BADGE) {
   const dismissibleContent = CUSTOM_APP_ICONS_NEW_BADGE;
-  closure_129_0 = CUSTOM_APP_ICONS_NEW_BADGE;
-  closure_129_1 = useAlwaysShow;
+  let closure_1 = useAlwaysShow;
   return {
     useTrailing() {
       return jsx(DismissiblePremiumNewBadgeDefault, { dismissibleContent, newPremiumStyle: true });
     },
     usePreNavigationAction: () => {
+      let first;
+      let tmp3;
       const tmp = closure_1();
+      const useSelectedDismissibleContent = closure_0(closure_1_2[4]).useSelectedDismissibleContent;
+      const tmp2 = closure_0(closure_1_2[4]);
       if (tmp) {
         const items = [first];
-        let tmp2 = items;
+        tmp3 = items;
       } else {
-        tmp2 = closure_1_7;
+        tmp3 = closure_1_7;
       }
-      const tmp4 = _slicedToArray(dismissibleContent(dependencyMap[4]).useSelectedDismissibleContent(tmp2), 2);
-      first = tmp4[0];
-      closure_1 = tmp6;
-      const items1 = [first, tmp4[1]];
+      const tmp5 = closure_1_3(useSelectedDismissibleContent(tmp3), 2);
+      first = tmp5[0];
+      closure_1 = tmp7;
+      const items1 = [first, tmp5[1]];
       return React.useCallback(() => {
         if (first === closure_0) {
-          closure_1(ContentDismissActionType.TAKE_ACTION);
+          closure_1(constants.TAKE_ACTION);
         }
         return true;
       }, items1);

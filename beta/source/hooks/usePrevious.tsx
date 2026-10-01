@@ -5,17 +5,19 @@
 // Exports: default, useCurrentWhen, usePreviousWhen
 
 // Module 7720 (usePrevious)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-({ useRef: closure_0, useEffect: closure_1 } = noop);
+let _window;
+let map;
+({ useRef: _window, useEffect: map } = react);
 const result = size.fileFinishedImporting("hooks/usePrevious.tsx");
 
-export default function usePrevious(current) {
+export default function usePrevious(arg0) {
+  const _window = arg0;
   const tmp = React(null);
-  closure_1 = tmp;
-  const items = [current];
-  framebus(() => {
+  const items = [arg0];
+  tmp(() => {
     closure_1.current = current;
   }, items);
   return tmp.current;
@@ -23,11 +25,12 @@ export default function usePrevious(current) {
 export const usePreviousWhen = function usePreviousWhen(value) {
   value = value.value;
   const shouldUpdate = value.shouldUpdate;
-  const tmp = React(null);
-  closure_2 = tmp;
+  let tmp = React(null);
+  let closure_2 = tmp;
   const items = [value, shouldUpdate];
-  framebus(() => {
-    if (shouldUpdate) {
+  map(() => {
+    const tmp = shouldUpdate;
+    if (tmp) {
       closure_2.current = value;
     }
   }, items);
@@ -36,11 +39,12 @@ export const usePreviousWhen = function usePreviousWhen(value) {
 export const useCurrentWhen = function useCurrentWhen(value) {
   let current = value.value;
   const shouldUpdate = value.shouldUpdate;
-  const tmp = React(null);
-  closure_2 = tmp;
+  let tmp = React(null);
+  let closure_2 = tmp;
   const items = [current, shouldUpdate];
-  framebus(() => {
-    if (shouldUpdate) {
+  map(() => {
+    const tmp = shouldUpdate;
+    if (tmp) {
       closure_2.current = current;
     }
   }, items);

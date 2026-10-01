@@ -4,64 +4,102 @@
 // Dependencies: [32, 19, 17, 4825, 5771, 2045, 2108, 1074, 1375, 21, 4836, 576, 563, 4989, 4832, 1115, 1177, 11282, 5899, 1397, 4483, 11771, 11768, 4566, 4837, 11772, 5435, 1101, 11769, 6643, 2]
 
 // Module 11770 (MemberActionChatInputBanner)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl4 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
+import EmojiConstants from "EmojiConstants" /* 1375 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import timing from "timing" /* 4837 */;
+import useChannelNameDefault from "useChannelName" /* 4989 */;
 import Pressables from "Pressables" /* 5435 */;
-import _modDef11282 from "module_11282" /* 11282 */;
-import _modDef11769 from "module_11769" /* 11769 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11282 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11769 */;
 import MemberActionUtils from "MemberActionUtils" /* 11771 */;
-import _modDef11772 from "module_11772" /* 11772 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11772 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import EmojiStore from "EmojiStore" /* 5771 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
+const require = globalThis.__r;
+let importDefault;
+
+let closure_12;
+let closure_14;
+let map1;
+let obj2;
+let obj3;
+let size;
+let size1;
+let tmp;
 const GuildOnboardingHomeTypes = tmp(11768);
-require = fn;
 function ActionChannelInfo(action) {
+  let MkzlDL;
+  let format;
+  let intl;
+  let intl3;
+  let obj3;
+  let obj4;
+  let obj5;
   action = action.action;
   const items = [ChannelStore];
-  const stateFromStores = action(563).useStateFromStores(items, () => ChannelStore.getChannel(action.channelId));
   const obj = action(563);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(action.channelId));
+  const tmp4 = useChannelNameDefault(stateFromStores, true);
+  const Text = action(4832).Text;
+  const tmp5 = closure_12;
   if (null == stateFromStores) {
-    const obj2 = { variant: "text-xxs/normal", color: "text-default", children: null };
+    const obj2 = { variant: "text-xxs/normal", color: "text-default", children: format(MkzlDL, obj3) };
     const intl2 = tmp(1115).intl;
-    const obj3 = { channelName: null };
-    const intl3 = tmp(1115).intl;
-    obj3.channelName = intl3.string(tmp(1115).t.J90oLW);
-    obj2.children = intl2.format(tmp(1115).t.MkzlDL, obj3);
-    let obj4 = obj2;
+    format = intl2.format;
+    obj3 = { channelName: intl3.string(action(1115).t.J90oLW) };
+    MkzlDL = tmp(1115).t.MkzlDL;
+    intl3 = tmp(1115).intl;
+    obj4 = obj2;
   } else {
-    obj4 = { variant: "text-xxs/normal", color: "text-default", children: null };
-    const intl = tmp(1115).intl;
-    const obj5 = { channelName: tmp4 };
-    obj4.children = intl.format(tmp(1115).t.MkzlDL, obj5);
+    obj4 = { variant: "text-xxs/normal", color: "text-default", children: intl.format(action(1115).t.MkzlDL, obj5) };
+    intl = tmp(1115).intl;
+    obj5 = { channelName: tmp4 };
   }
-  return closure_12(action(4832).Text, obj4);
+  return tmp5(Text, obj4);
 }
 function ChannelActionEmoji(emoji) {
+  let Icon;
+  let name;
+  let obj2;
+  let obj4;
+  let obj5;
+  let tmp2Result;
+  let tmp5Result4;
   emoji = emoji.emoji;
   let id;
   const tmp = closure_15();
-  const obj = { style: tmp.emojiPlaceholder, children: closure_12(id(1177).Icon, { size: id(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef11282 }) };
+  const obj = { style: tmp.emojiPlaceholder, children: closure_12(Icon, obj2) };
+  obj2 = { size: id(1177).Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault };
+  Icon = id(1177).Icon;
   const tmp6 = closure_12(View, obj);
   id = undefined;
   if (emoji != null) {
     id = emoji.id;
   }
   if (emoji != null) {
-    const name = emoji.name;
+    name = emoji.name;
   }
-  const obj2 = { size: id(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef11282 };
   const items = [EmojiStore];
   const items1 = [id];
-  const stateFromStores = id(563).useStateFromStores(items, () => {
+  const tmp3Result = id(563);
+  const stateFromStores = tmp3Result.useStateFromStores(items, () => {
     let customEmojiById = null;
     if (null != id) {
       customEmojiById = EmojiStore.getCustomEmojiById(tmp);
@@ -69,286 +107,302 @@ function ChannelActionEmoji(emoji) {
     return customEmojiById;
   }, items1);
   if (null != stateFromStores) {
-    const obj3 = { style: tmp.emoji, source: null, resizeMode: "contain" };
-    const obj4 = { uri: null };
-    const tmp5Result = tmp5(5899);
-    const obj5 = { id: null, animated: null, size: null };
-    ({ id: obj10.id, animated: obj10.animated } = stateFromStores);
-    obj5.size = EMOJI_URL_BASE_SIZE;
-    obj4.uri = tmp5(1397).getEmojiURL(obj5);
-    obj3.source = obj4;
-    let tmp2Result = tmp2(tmp5Result, obj3);
-    const tmp5Result4 = tmp5(1397);
+    const obj3 = { style: tmp.emoji, source: obj4, resizeMode: "contain" };
+    obj4 = { uri: tmp5Result4.getEmojiURL(obj5) };
+    obj5 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
+    ({ id: obj9.id, animated: obj9.animated } = stateFromStores);
+    const tmp5Result = FastImageDefault;
+    tmp5Result4 = AvatarUtilsDefault;
+    tmp2Result = tmp2(tmp5Result, obj3);
   } else {
     tmp2Result = tmp6;
     if (null != name) {
-      const tmp5Result5 = tmp5(4483);
+      const getByName = UnicodeEmojisDefault.getByName;
+      UnicodeEmojisDefault;
       tmp2Result = tmp6;
-      if (null != tmp5Result5.getByName(tmp5Result6.convertSurrogateToName(name, false))) {
+      const tmp5Result6 = UnicodeEmojisDefault;
+      if (null != getByName(tmp5Result6.convertSurrogateToName(name, false))) {
         const obj6 = { style: tmp.textEmoji, variant: "heading-lg/normal", children: name };
         tmp2Result = tmp2(tmp3(4832).Text, obj6);
       }
-      tmp5Result6 = tmp5(4483);
     }
   }
   return tmp2Result;
 }
 function MemberActionChatInputBanner(channel) {
+  let closure_1;
+  let items5;
+  let items6;
+  let items7;
   channel = channel.channel;
   let channelAction;
   let nextMemberAction;
   let stateFromStores;
   let useReducedMotion;
   let first;
-  closure_8 = undefined;
+  let closure_8;
   let first1;
-  closure_10 = undefined;
+  let closure_10;
   let sharedValue;
   let sharedValue1;
-  const tmp = closure_15();
+  let tmp = closure_15();
   importDefault = tmp;
-  const memberActionsForChannel = channel(channelAction[21]).useMemberActionsForChannel(channel.guild_id, channel);
+  let tmp2 = channel;
+  let tmp3 = channelAction;
+  let obj = channel(channelAction[21]);
+  const memberActionsForChannel = obj.useMemberActionsForChannel(channel.guild_id, channel);
   channelAction = memberActionsForChannel.channelAction;
   const completed = memberActionsForChannel.completed;
-  let obj = channel(channelAction[21]);
   let channelId;
+  const useNextMemberAction = channel(channelAction[21]).useNextMemberAction;
+  const guild_id = channel.guild_id;
+  const tmp5 = channel(channelAction[21]);
   if (channelAction != null) {
     channelId = channelAction.channelId;
   }
-  nextMemberAction = channel(channelAction[21]).useNextMemberAction(channel.guild_id, channelId);
-  let obj2 = channel(channelAction[21]);
+  nextMemberAction = useNextMemberAction(guild_id, channelId);
   let items = [useReducedMotion];
-  stateFromStores = channel(channelAction[12]).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const tmp2Result = tmp2(tmp3[12]);
+  stateFromStores = tmp2Result.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let actionType;
   if (channelAction != null) {
     actionType = channelAction.actionType;
   }
-  const tmp9 = actionType === channel(channelAction[22]).NewMemberActionTypes.VIEW;
-  useReducedMotion = tmp9;
-  const tmp10 = completed(nextMemberAction.useState(channel(channelAction[22]).CHANNEL_ACTION_BANNER_HEIGHT), 2);
-  first = tmp10[0];
-  closure_8 = tmp12;
-  const tmp13 = completed(nextMemberAction.useState(channel(channelAction[22]).CHANNEL_ACTION_BANNER_HEIGHT), 2);
-  first1 = tmp13[0];
-  closure_10 = tmp15;
-  const tmp2Result = channel(channelAction[12]);
-  sharedValue = channel(channelAction[23]).useSharedValue(0);
-  const tmp2Result5 = channel(channelAction[23]);
+  const tmp10 = actionType === tmp2(tmp3[22]).NewMemberActionTypes.VIEW;
+  useReducedMotion = tmp10;
+  let obj3 = nextMemberAction;
+  const tmp11 = completed(nextMemberAction.useState(tmp2(tmp3[22]).CHANNEL_ACTION_BANNER_HEIGHT), 2);
+  first = tmp11[0];
+  closure_8 = tmp13;
+  const tmp14 = completed(nextMemberAction.useState(tmp2(tmp3[22]).CHANNEL_ACTION_BANNER_HEIGHT), 2);
+  first1 = tmp14[0];
+  closure_10 = tmp16;
+  const tmp2Result5 = tmp2(tmp3[23]);
+  sharedValue = tmp2Result5.useSharedValue(0);
   let num = 0;
+  const useSharedValue = tmp2(tmp3[23]).useSharedValue;
+  tmp2(tmp3[23]);
   if (completed) {
     num = first1;
   }
-  sharedValue1 = channel(channelAction[23]).useSharedValue(num);
-  let items1 = [sharedValue, completed, tmp9, first];
-  const effect = obj4.useEffect(() => {
-    if (!completed) {
-      if (!closure_6) {
+  sharedValue1 = useSharedValue(num);
+  let items1 = [sharedValue, completed, tmp10, first];
+  const effect = obj3.useEffect(() => {
+    const tmp = completed;
+    if (!tmp) {
+      const tmp2 = useReducedMotion;
+      if (!tmp2) {
         const result = sharedValue.set(first);
       }
     }
     const result1 = sharedValue.set(0);
   }, items1);
   const items2 = [sharedValue1, completed, nextMemberAction, first1];
-  const effect1 = obj4.useEffect(() => {
-    if (completed) {
+  const effect1 = obj3.useEffect(() => {
+    const tmp = completed;
+    if (tmp) {
       if (null != nextMemberAction) {
         const result = sharedValue1.set(first1);
       }
     }
     const result1 = sharedValue1.set(0);
   }, items2);
-  const tmp2Result6 = channel(channelAction[23]);
+  const tmp2Result7 = tmp2(tmp3[23]);
   class G {
     constructor() {
-      obj = { height: null };
-      if (closure_5) {
-        tmp7 = closure_11;
-        obj.height = closure_11.get();
-        tmp6 = obj;
+      let tmp8;
+      const obj = { height: null };
+      if (stateFromStores) {
+        obj.height = sharedValue.get();
+        tmp8 = obj;
       } else {
-        tmp = closure_0;
-        tmp2 = closure_2;
-        obj2 = closure_0(closure_2[23]);
-        tmp3 = completed;
-        num = 200;
+        let num = 200;
+        const withDelay = ReanimatedRexport.withDelay;
+        ReanimatedRexport;
         if (completed) {
           num = 800;
         }
-        tmpResult = tmp(tmp2[24]);
-        tmp4 = closure_11;
-        obj1 = { duration: 400, easing: null };
-        value = closure_11.get();
-        obj1.easing = tmp(tmp2[16]).DECELERATED_EASING;
-        obj.height = obj2.withDelay(num, tmpResult.withTiming(value, obj1));
-        tmp6 = obj;
+        const withTiming = timing.withTiming;
+        const obj2 = { duration: 400, easing: native.DECELERATED_EASING };
+        timing;
+        const value = sharedValue.get();
+        obj.height = withDelay(num, withTiming(value, obj2));
+        tmp8 = obj;
       }
-      return tmp6;
+      return tmp8;
     }
   }
-  const tmp2Result7 = channel(channelAction[23]);
-  G.__closure = { useReducedMotion: stateFromStores, height: sharedValue, withDelay: channel(channelAction[23]).withDelay, completed, withTiming: channel(channelAction[24]).withTiming, DECELERATED_EASING: channel(channelAction[16]).DECELERATED_EASING };
+  let obj2 = { useReducedMotion: stateFromStores, height: sharedValue, withDelay: tmp2(tmp3[23]).withDelay, completed, withTiming: tmp2(tmp3[24]).withTiming, DECELERATED_EASING: tmp2(tmp3[16]).DECELERATED_EASING };
+  G.__closure = obj2;
   G.__workletHash = 5585837927201;
   G.__initData = __initData;
   const animatedStyle = tmp2Result7.useAnimatedStyle(G);
-  let obj3 = { useReducedMotion: stateFromStores, height: sharedValue, withDelay: channel(channelAction[23]).withDelay, completed, withTiming: channel(channelAction[24]).withTiming, DECELERATED_EASING: channel(channelAction[16]).DECELERATED_EASING };
+  const tmp2Result8 = tmp2(tmp3[23]);
   class B {
     constructor() {
-      obj = { height: null };
-      if (closure_5) {
-        tmp8 = closure_12;
-        obj.height = closure_12.get();
-        tmp7 = obj;
+      let tmp9;
+      const obj = { height: null };
+      if (stateFromStores) {
+        obj.height = sharedValue1.get();
+        tmp9 = obj;
       } else {
-        tmp = closure_0;
-        tmp2 = closure_2;
-        obj2 = closure_0(closure_2[23]);
-        tmp3 = closure_6;
-        num = 0;
-        if (!closure_6) {
-          tmp4 = completed;
+        let num = 0;
+        const withDelay = ReanimatedRexport.withDelay;
+        ReanimatedRexport;
+        if (!useReducedMotion) {
           num = 0;
           if (completed) {
             num = 1200;
           }
         }
-        tmpResult = tmp(tmp2[24]);
-        tmp5 = closure_12;
-        obj1 = { duration: 400, easing: null };
-        value = closure_12.get();
-        obj1.easing = tmp(tmp2[16]).DECELERATED_EASING;
-        obj.height = obj2.withDelay(num, tmpResult.withTiming(value, obj1));
-        tmp7 = obj;
+        const withTiming = timing.withTiming;
+        const obj2 = { duration: 400, easing: native.DECELERATED_EASING };
+        timing;
+        const value = sharedValue1.get();
+        obj.height = withDelay(num, withTiming(value, obj2));
+        tmp9 = obj;
       }
-      return tmp7;
+      return tmp9;
     }
   }
-  const tmp2Result8 = channel(channelAction[23]);
-  B.__closure = { useReducedMotion: stateFromStores, nextHeight: sharedValue1, withDelay: channel(channelAction[23]).withDelay, isViewAction: tmp9, completed, withTiming: channel(channelAction[24]).withTiming, DECELERATED_EASING: channel(channelAction[16]).DECELERATED_EASING };
+  let obj4 = { useReducedMotion: stateFromStores, nextHeight: sharedValue1, withDelay: tmp2(tmp3[23]).withDelay, isViewAction: tmp10, completed, withTiming: tmp2(tmp3[24]).withTiming, DECELERATED_EASING: tmp2(tmp3[16]).DECELERATED_EASING };
+  B.__closure = obj4;
   B.__workletHash = 10256555667281;
   B.__initData = __initData2;
-  const items3 = [tmp10[1]];
+  const items3 = [tmp11[1]];
   const animatedStyle1 = tmp2Result8.useAnimatedStyle(B);
-  [][0] = tmp13[1];
-  const callback = obj4.useCallback((nativeEvent) => {
+  [][0] = tmp14[1];
+  const callback = obj3.useCallback((nativeEvent) => {
     closure_8(nativeEvent.nativeEvent.layout.height);
   }, items3);
   if (null == channelAction) {
     return null;
   } else {
     function renderAction() {
+      let intl;
+      let items;
+      let items1;
       let tmp3Result = null;
       if (null != channelAction) {
-        const obj = { style: closure_1.container, children: null };
-        const obj2 = { emoji: tmp.emoji };
-        const items = [closure_2_12(ChannelActionEmoji, obj2), , ];
-        const obj3 = { style: closure_1.text, children: null };
-        const obj4 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: closure_1.wrap, children: tmp.title };
-        const items1 = [closure_2_12(Text_Text.Text, obj4), ];
-        const obj5 = { variant: "text-xxs/normal", color: "text-muted", children: null };
-        const intl = util.intl;
-        obj5.children = intl.string(util.t["ElGg8+"]);
-        items1[1] = closure_2_12(Text_Text.Text, obj5);
-        obj3.children = items1;
+        const obj = { style: closure_1.container, children: items };
+        const obj2 = { emoji: channelAction.emoji };
+        items = [sharedValue1(ChannelActionEmoji, obj2), , ];
+        const obj3 = { style: closure_1.text, children: items1 };
+        const obj4 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: closure_1.wrap, children: channelAction.title };
+        items1 = [sharedValue1(Text_Text.Text, obj4), ];
+        const obj5 = { variant: "text-xxs/normal", color: "text-muted", children: intl.string(intl4.t["ElGg8+"]) };
+        const Text = Text_Text.Text;
+        intl = intl4.intl;
+        items1[1] = sharedValue1(Text, obj5);
         items[1] = map1(View, obj3);
         let tmp6Result = completed;
-        if (completed) {
-          const obj6 = { disableColor: true, size: tmp8(1177).Icon.Sizes.MEDIUM, source: _modDef11772 };
-          tmp6Result = tmp6(tmp8(1177).Icon, obj6);
+        const tmp3 = map1;
+        const tmp4 = View;
+        const tmp6 = sharedValue1;
+        if (tmp6Result) {
+          const obj6 = { disableColor: true, size: native.Icon.Sizes.MEDIUM, source: AssetRegistryDefault3 };
+          const Icon = tmp8(1177).Icon;
+          tmp6Result = tmp6(Icon, obj6);
         }
         items[2] = tmp6Result;
-        obj.children = items;
-        tmp3Result = map1(View, obj);
-        tmp6 = closure_2_12;
+        tmp3Result = tmp3(tmp4, obj);
       }
       return tmp3Result;
     }
-    let obj6 = { style: tmp.measurement, onLayout: callback, children: renderAction() };
-    const items4 = [sharedValue1(stateFromStores, obj6), , ];
-    let tmp30Result = !tmp9;
-    if (!tmp9) {
-      let obj7 = { style: null, children: null };
-      const items5 = [tmp.animatedContainer, animatedStyle];
-      obj7.style = items5;
-      obj7.children = renderAction();
-      tmp30Result = tmp30(require("ReanimatedRexport").View, obj7);
+    let obj5 = { style: tmp.measurement, onLayout: callback, children: renderAction() };
+    const items4 = [sharedValue1(stateFromStores, obj5), , ];
+    let tmp32Result = !tmp10;
+    const tmp33 = stateFromStores;
+    if (tmp32Result) {
+      let obj6 = { style: items5, children: renderAction() };
+      items5 = [tmp.animatedContainer, animatedStyle];
+      View = require("ReanimatedRexport").View;
+      tmp32Result = tmp32(View, obj6);
     }
-    items4[1] = tmp30Result;
-    let tmp28Result = null;
+    items4[1] = tmp32Result;
+    let tmp30Result = null;
     if (completed) {
-      tmp28Result = null;
+      tmp30Result = null;
       if (null != nextMemberAction) {
         function renderNextAction() {
+          let Icon;
+          let channelId;
+          let guild_id;
+          let intl;
+          let intl2;
+          let items;
+          let items1;
+          let obj5;
+          let obj8;
           let tmp2 = null;
           if (null != nextMemberAction) {
-            const obj = { accessibilityRole: "button", accessibilityLabel: null, style: null, onPress: null, children: null };
-            const intl = util.intl;
-            obj.accessibilityLabel = intl.string(util.t.PDTjLN);
-            obj.style = closure_1.container;
-            obj.onPress = function onPress() {
-              return channel(channelAction[27]).transitionTo(closure_10.CHANNEL(guild_id.guild_id, channelId.channelId));
+            let obj = {
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl4.t.PDTjLN),
+              style: closure_1.container,
+              onPress() {
+                  const obj = channel(channelAction[27]);
+                  return obj.transitionTo(closure_10.CHANNEL(guild_id.guild_id, channelId.channelId));
+                },
+              children: items
             };
-            const obj2 = { emoji: tmp.emoji };
-            const items = [closure_2_12(ChannelActionEmoji, obj2), , ];
-            const obj3 = { style: closure_1.text, children: null };
-            const obj4 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: closure_1.wrap, children: null };
-            const intl2 = util.intl;
-            const obj5 = { step: tmp.title };
-            obj4.children = intl2.format(util.t["/beONw"], obj5);
-            const items1 = [closure_2_12(Text_Text.Text, obj4), ];
-            const obj6 = { action: tmp };
-            items1[1] = closure_2_12(ActionChannelInfo, obj6);
-            obj3.children = items1;
+            const PressableHighlight = Pressables.PressableHighlight;
+            intl = intl4.intl;
+            const obj2 = { emoji: nextMemberAction.emoji };
+            items = [sharedValue1(ChannelActionEmoji, obj2), , ];
+            const obj3 = { style: closure_1.text, children: items1 };
+            const obj4 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: closure_1.wrap, children: intl2.format(intl4.t["/beONw"], obj5) };
+            const Text = Text_Text.Text;
+            intl2 = intl4.intl;
+            obj5 = { step: nextMemberAction.title };
+            items1 = [sharedValue1(Text, obj4), ];
+            const obj6 = { action: nextMemberAction };
+            items1[1] = sharedValue1(ActionChannelInfo, obj6);
             items[1] = map1(View, obj3);
-            const obj7 = { style: closure_1.circle, children: null };
-            const obj8 = { size: native.Icon.Sizes.REFRESH_SMALL_16, style: closure_1.icon, source: _modDef11769 };
-            obj7.children = closure_2_12(native.Icon, obj8);
-            items[2] = closure_2_12(View, obj7);
-            obj.children = items;
-            tmp2 = map1(Pressables.PressableHighlight, obj);
+            const obj7 = { style: closure_1.circle, children: sharedValue1(Icon, obj8) };
+            obj8 = { size: native.Icon.Sizes.REFRESH_SMALL_16, style: closure_1.icon, source: AssetRegistryDefault2 };
+            Icon = native.Icon;
+            items[2] = sharedValue1(View, obj7);
+            tmp2 = map1(PressableHighlight, obj);
           }
           return tmp2;
         }
-        let obj8 = { children: null };
-        const obj9 = { style: tmp.measurement, onLayout: tmp23, children: renderNextAction() };
-        const items6 = [tmp30(stateFromStores, obj9), ];
-        const obj10 = { style: null, children: null };
-        const items7 = [tmp.animatedContainer, animatedStyle1];
-        obj10.style = items7;
-        obj10.children = renderNextAction();
-        items6[1] = tmp30(require("ReanimatedRexport").View, obj10);
-        obj8.children = items6;
-        tmp28Result = tmp28(tmp29, obj8);
+        let obj7 = { children: items6 };
+        let obj8 = { style: tmp.measurement, onLayout: tmp25, children: renderNextAction() };
+        items6 = [sharedValue1(tmp33, obj8), ];
+        const obj9 = { style: items7, children: renderNextAction() };
+        items7 = [tmp.animatedContainer, animatedStyle1];
+        const View2 = require("ReanimatedRexport").View;
+        items6[1] = sharedValue1(View2, obj9);
+        tmp30Result = tmp30(tmp31, obj7);
       }
     }
-    const obj11 = { children: null };
-    items4[2] = tmp28Result;
-    obj11.children = items4;
-    return closure_13(closure_14, obj11);
+    const obj10 = { children: items4 };
+    items4[2] = tmp30Result;
+    return closure_13(closure_14, obj10);
   }
-  let obj5 = { useReducedMotion: stateFromStores, nextHeight: sharedValue1, withDelay: channel(channelAction[23]).withDelay, isViewAction: tmp9, completed, withTiming: channel(channelAction[24]).withTiming, DECELERATED_EASING: channel(channelAction[16]).DECELERATED_EASING };
 }
-const View = fn(17).View;
-const Routes = fn(1074).Routes;
-const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { animatedContainer: { overflow: "hidden" }, measurement: { opacity: 0, position: "absolute" }, container: { display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 12, paddingVertical: 8 }, text: { flexGrow: 1, flexShrink: 1, marginLeft: 8 }, wrap: { flexShrink: 1, flexWrap: "wrap" }, emoji: { width: 24, height: 24 }, textEmoji: { width: 24, textAlign: "center" }, emojiPlaceholder: null, circle: null, icon: null };
-let size = { width: 24, height: 24, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md, display: "flex", alignItems: "center", justifyContent: "center" };
-obj.emojiPlaceholder = size;
-const size1 = { display: "flex", alignItems: "center", justifyContent: "center", height: 20, width: 20, borderRadius: 15, marginLeft: 8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-obj.circle = size1;
-let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 12, paddingVertical: 8 };
-obj.icon = { tintColor: nativeDefault.colors.WHITE };
-let closure_15 = createStyles.createStyles(obj);
+let View = react_native.View;
+const Routes = Constants.Routes;
+const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
+({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { animatedContainer: { overflow: "hidden" }, measurement: { opacity: 0, position: "absolute" }, container: obj2, text: { flexGrow: 1, flexShrink: 1, marginLeft: 8 }, wrap: { flexShrink: 1, flexWrap: "wrap" }, emoji: { width: 24, height: 24 }, textEmoji: { width: 24, textAlign: "center" }, emojiPlaceholder: size, circle: size1, icon: obj3 };
+obj2 = { display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 12, paddingVertical: 8 };
+createStyles = createStyles.createStyles;
+size = { width: 24, height: 24, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md, display: "flex", alignItems: "center", justifyContent: "center" };
+size1 = { display: "flex", alignItems: "center", justifyContent: "center", height: 20, width: 20, borderRadius: 15, marginLeft: 8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+obj3 = { tintColor: nativeDefault.colors.WHITE };
+let closure_15 = createStyles(obj);
 const __initData = { code: "function MemberActionChatInputBannerTsx1(){const{useReducedMotion,height,withDelay,completed,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:height.get()};}return{height:withDelay(completed?800:200,withTiming(height.get(),{duration:400,easing:DECELERATED_EASING}))};}" };
 const __initData2 = { code: "function MemberActionChatInputBannerTsx2(){const{useReducedMotion,nextHeight,withDelay,isViewAction,completed,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:nextHeight.get()};}return{height:withDelay(!isViewAction&&completed?1200:0,withTiming(nextHeight.get(),{duration:400,easing:DECELERATED_EASING}))};}" };
-const memoResult = noop.memo((channel) => {
+const memoResult = react.memo((channel) => {
   channel = channel.channel;
-  const canSeeOnboardingHome = channel(6643).useCanSeeOnboardingHome(channel.guild_id);
   const obj = channel(6643);
+  const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(channel.guild_id);
   const items = [GuildMemberStore];
-  const stateFromStores = channel(563).useStateFromStores(items, () => {
+  const obj2 = channel(563);
+  const stateFromStores = obj2.useStateFromStores(items, () => {
     const selfMember = GuildMemberStore.getSelfMember(channel.guild_id);
     let isPending;
     if (selfMember != null) {
@@ -356,8 +410,8 @@ const memoResult = noop.memo((channel) => {
     }
     return true === isPending;
   });
-  const obj2 = channel(563);
   let tmp3 = null;
+  const obj3 = channel(11771);
   if (!obj3.useAllActionsCompleted(channel.guild_id)) {
     tmp3 = null;
     if (!stateFromStores) {
@@ -370,32 +424,39 @@ const memoResult = noop.memo((channel) => {
   }
   return tmp3;
 });
-let obj4 = { tintColor: nativeDefault.colors.WHITE };
-size = fn(2);
-let result = size.fileFinishedImporting("modules/guild_onboarding_home/native/MemberActionChatInputBanner.tsx");
-
-export const MemberActionChatInputBannerGuarded = memoResult;
-export const MemberActionsChatInputBannerGuardedOuter = noop.memo((channel) => {
+const memoResult1 = react.memo((channel) => {
+  let channelAction;
+  let completed;
+  let tmp8;
   channel = channel.channel;
-  const memberActionsForChannel = MemberActionUtils.useMemberActionsForChannel(channel.guild_id, channel);
+  const obj = MemberActionUtils;
+  const memberActionsForChannel = obj.useMemberActionsForChannel(channel.guild_id, channel);
   ({ channelAction, completed } = memberActionsForChannel);
   let channelId;
+  const useNextMemberAction = MemberActionUtils.useNextMemberAction;
+  const guild_id = channel.guild_id;
+  MemberActionUtils;
   if (channelAction != null) {
     channelId = channelAction.channelId;
   }
   let actionType;
-  const nextMemberAction = MemberActionUtils.useNextMemberAction(channel.guild_id, channelId);
+  const nextMemberAction = useNextMemberAction(guild_id, channelId);
   if (channelAction != null) {
     actionType = channelAction.actionType;
   }
   if (actionType !== GuildOnboardingHomeTypes.NewMemberActionTypes.VIEW) {
-    const obj3 = { channel };
-    let tmp7 = closure_1_12(memoResult, obj3);
+    const obj2 = { channel };
+    tmp8 = closure_12(memoResult, obj2);
   } else {
-    tmp7 = null;
+    tmp8 = null;
     if (completed) {
-      tmp7 = null;
+      tmp8 = null;
     }
   }
-  return tmp7;
+  return tmp8;
 });
+size = size_mod;
+let result = size.fileFinishedImporting("modules/guild_onboarding_home/native/MemberActionChatInputBanner.tsx");
+
+export const MemberActionChatInputBannerGuarded = memoResult;
+export const MemberActionsChatInputBannerGuardedOuter = memoResult1;

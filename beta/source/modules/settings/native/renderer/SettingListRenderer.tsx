@@ -4,50 +4,53 @@
 // Dependencies: [19, 17, 14249, 14141, 11007, 21, 4836, 576, 5999, 4832, 14250, 1613, 14251, 14255, 8179, 14256, 14259, 14260, 1876, 2]
 
 // Module 14248 (SettingListRenderer)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import TableRowGroup from "TableRowGroup" /* 5999 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11007 */;
 import SettingRenderer from "SettingRenderer" /* 14250 */;
 import SettingRendererUtils from "SettingRendererUtils" /* 14251 */;
 import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 14259 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
 import SettingBlocklistStore from "SettingBlocklistStore" /* 14141 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let importDefault, node, searchResultsHeader;
 
-require = fn;
+let obj2;
 function SearchListSectionLabel(label) {
   label = label.label;
-  const obj = { style: closure_9().spacer, children: null };
   let tmpResult = label;
   if (typeof label === "string") {
     const obj2 = { title: label };
     tmpResult = tmp(TableRowGroup.TableRowGroupTitle, obj2);
   }
-  obj.children = tmpResult;
-  return <View style={closure_9().spacer}>{null}</View>;
+  return <tmp2 style={closure_9().spacer}>{tmpResult}</tmp2>;
 }
 function SearchListSectionSubLabel(subLabel) {
+  let tmpResult;
   subLabel = subLabel.subLabel;
-  const obj = { style: closure_9().subLabel, children: null };
   if (typeof subLabel === "string") {
     const obj2 = { variant: "text-xs/normal", color: "text-muted", children: subLabel };
-    let tmpResult = tmp(Text_Text.Text, obj2);
+    tmpResult = tmp(Text_Text.Text, obj2);
   } else {
     const _Array = Array;
     tmpResult = subLabel;
   }
-  obj.children = tmpResult;
-  return <View style={closure_9().subLabel}>{null}</View>;
+  return <tmp2 style={closure_9().subLabel}>{tmpResult}</tmp2>;
 }
 function getItemType(type) {
   type = type.type;
   if (ListItemType.SECTION_HEADER !== type) {
-    if (tmp.SECTION_FOOTER !== type) {
-      if (tmp.SECTION_ROW !== type) {
-        if (tmp.SETTING_SEARCH_RESULT !== type) {
-          return tmp.SECTION_ROW_PLACEHOLDER === type ? type.type : undefined;
+    if (ListItemType.SECTION_FOOTER !== type) {
+      if (ListItemType.SECTION_ROW !== type) {
+        if (ListItemType.SETTING_SEARCH_RESULT !== type) {
+          return ListItemType.SECTION_ROW_PLACEHOLDER === type ? type.type : undefined;
         }
       }
       const _HermesInternal = HermesInternal;
@@ -60,26 +63,27 @@ function renderItem(item) {
   item = item.item;
   const type = item.type;
   if (ListItemType.SECTION_HEADER === type) {
-    const obj4 = { label: item.label };
     return <SearchListSectionLabel label={item.label} />;
-  } else if (tmp.SECTION_FOOTER === type) {
-    const obj5 = { subLabel: item.label };
+  } else if (ListItemType.SECTION_FOOTER === type) {
     return <SearchListSectionSubLabel subLabel={item.label} />;
-  } else if (tmp.SETTING_SEARCH_RESULT === type) {
-    return SettingRenderer.renderSettingSearchResultItem(item);
-  } else if (tmp.SECTION_ROW === type) {
-    return SettingRenderer.renderSettingItem(item);
-  } else if (tmp.SECTION_ROW_PLACEHOLDER === type) {
-    return SettingRenderer.renderSettingSearchResultPlaceholderItem(item);
+  } else if (ListItemType.SETTING_SEARCH_RESULT === type) {
+    const obj3 = SettingRenderer;
+    return obj3.renderSettingSearchResultItem(item);
+  } else if (ListItemType.SECTION_ROW === type) {
+    const obj2 = SettingRenderer;
+    return obj2.renderSettingItem(item);
+  } else if (ListItemType.SECTION_ROW_PLACEHOLDER === type) {
+    const obj = SettingRenderer;
+    return obj.renderSettingSearchResultPlaceholderItem(item);
   }
 }
 function keyExtractor(type, arg1) {
   type = type.type;
   if (ListItemType.SECTION_HEADER !== type) {
-    if (tmp.SECTION_FOOTER !== type) {
-      if (tmp.SECTION_ROW !== type) {
-        if (tmp.SETTING_SEARCH_RESULT !== type) {
-          if (tmp.SECTION_ROW_PLACEHOLDER === type) {
+    if (ListItemType.SECTION_FOOTER !== type) {
+      if (ListItemType.SECTION_ROW !== type) {
+        if (ListItemType.SETTING_SEARCH_RESULT !== type) {
+          if (ListItemType.SECTION_ROW_PLACEHOLDER === type) {
             const _HermesInternal = HermesInternal;
             return "" + type.type + "-" + arg1;
           }
@@ -90,45 +94,39 @@ function keyExtractor(type, arg1) {
     }
   }
   let label = arg1;
+  const type2 = type.type;
   if (typeof type.label === "string") {
     label = type.label;
   }
-  return "" + type.type + "-" + label;
+  return "" + type2 + "-" + label;
 }
-const View = fn(17).View;
-const ListItemType = fn(11007).ListItemType;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { container: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, flexGrow: 1 }, contentContainer: { paddingHorizontal: 16 }, searchResultsHeader: { paddingBottom: 24 }, spacer: { paddingTop: 24 }, subLabel: { marginTop: 8 } };
+const View = react_native.View;
+const ListItemType = SettingRendererConstants.ListItemType;
+const jsx = Fragment.jsx;
+let obj = { container: obj2, contentContainer: { paddingHorizontal: 16 }, searchResultsHeader: { paddingBottom: 24 }, spacer: { paddingTop: 24 }, subLabel: { marginTop: 8 } };
+obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, flexGrow: 1 };
 let closure_9 = createStyles.createStyles(obj);
-let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, flexGrow: 1 };
-const memoResult = noop.memo((node) => {
+const memoResult = react.memo((node) => {
   node = node.node;
+  let field;
   const tmp = closure_9();
-  const field = SettingBlocklistStore.useField("blocklist");
+  const bottom = field(1613)().bottom;
+  field = SettingBlocklistStore.useField("blocklist");
   const items = [field, node];
-  const memo = noop.useMemo(() => SettingRendererUtils.toSettingListItems(node, field), items);
-  const ref = noop.useRef(null);
-  node(14255).useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
-  const obj2 = { style: tmp.container, children: null };
-  const obj3 = { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null };
-  const obj4 = {};
+  const memo = react.useMemo(() => {
+    const obj = SettingRendererUtils;
+    return obj.toSettingListItems(node, field);
+  }, items);
+  const ref = react.useRef(null);
+  let obj = node(14255);
+  obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
+  const obj4 = { paddingBottom: bottom + field(576).space.PX_16 };
+  const FlashList = node(8179).FlashList;
   const merged = Object.assign(tmp.contentContainer);
-  obj4.paddingBottom = field(1613)().bottom + field(576).space.PX_16;
-  obj3.contentContainerStyle = obj4;
-  obj3.scrollIndicatorInsets = { right: 0.01 };
-  obj3.keyExtractor = keyExtractor;
-  obj3.renderItem = renderItem;
-  obj3.data = memo;
-  obj3.getItemType = getItemType;
-  obj2.children = jsx(node(8179).FlashList, { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null });
   return <View style={tmp.container}>{null}</View>;
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingListRenderer.tsx");
-
-export const SettingsList = memoResult;
-export const SearchableSettingsList = noop.memo((node) => {
+const memoResult1 = react.memo((node) => {
+  let obj3;
   node = node.node;
   let settings;
   let state;
@@ -136,22 +134,34 @@ export const SearchableSettingsList = noop.memo((node) => {
   let memo2;
   let tmp = memo2();
   importDefault = tmp;
-  const settingSearchResults = node(settings[15]).useSettingSearchResults();
+  const bottom = require("useSafeAreaInsets")().bottom;
+  let obj = node(settings[15]);
+  const settingSearchResults = obj.useSettingSearchResults();
   settings = settingSearchResults.settings;
   const isLoading = settingSearchResults.isLoading;
   const placeholderCount = settingSearchResults.placeholderCount;
-  state = state.useState((query) => "" === query.query.trim());
+  state = state.useState((query) => {
+    const str = query.query;
+    return "" === str.trim();
+  });
   field = field.useField("blocklist");
   const items = [field, node];
-  const memo = isLoading.useMemo(() => SettingRendererUtils.toSettingListItems(node, field), items);
+  const memo = isLoading.useMemo(() => {
+    const obj = SettingRendererUtils;
+    return obj.toSettingListItems(node, field);
+  }, items);
   const items1 = [settings, isLoading, placeholderCount];
-  const memo1 = isLoading.useMemo(() => SettingRendererUtils.getScoredSettingListSearchResultItems(settings, isLoading, placeholderCount), items1);
+  const memo1 = isLoading.useMemo(() => {
+    const obj = SettingRendererUtils;
+    return obj.getScoredSettingListSearchResultItems(settings, isLoading, placeholderCount);
+  }, items1);
   const items2 = [memo, memo1, state];
   memo2 = isLoading.useMemo(() => state ? memo : memo1, items2);
   const items3 = [tmp.searchResultsHeader, state];
   const items4 = [state, isLoading, memo2.length];
   const memo3 = isLoading.useMemo(() => {
-    if (state) {
+    const tmp = state;
+    if (tmp) {
       searchResultsHeader = {};
     } else {
       searchResultsHeader = searchResultsHeader.searchResultsHeader;
@@ -171,19 +181,13 @@ export const SearchableSettingsList = noop.memo((node) => {
     }
     return tmp;
   }, items4);
-  const obj2 = { keyboardShouldPersistTaps: "always", contentContainerStyle: null, ListHeaderComponentStyle: null, ListHeaderComponent: null, ListEmptyComponent: null, onScroll: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null };
-  const obj3 = {};
+  const obj2 = { keyboardShouldPersistTaps: "always", contentContainerStyle: obj3, ListHeaderComponentStyle: memo3, ListHeaderComponent: require("SettingSearchBar"), ListEmptyComponent: memo4, onScroll: node(settings[18]).dismissGlobalKeyboard, scrollIndicatorInsets: { right: 0.01 }, keyExtractor, renderItem, data: memo2, getItemType };
+  obj3 = { paddingBottom: bottom + require("native").space.PX_16 };
+  const FlashList = node(settings[14]).FlashList;
   const merged = Object.assign(tmp.contentContainer);
-  obj3.paddingBottom = require("useSafeAreaInsets")().bottom + require("native").space.PX_16;
-  obj2.contentContainerStyle = obj3;
-  obj2.ListHeaderComponentStyle = memo3;
-  obj2.ListHeaderComponent = require("SettingSearchBar");
-  obj2.ListEmptyComponent = memo4;
-  obj2.onScroll = node(settings[18]).dismissGlobalKeyboard;
-  obj2.scrollIndicatorInsets = { right: 0.01 };
-  obj2.keyExtractor = keyExtractor;
-  obj2.renderItem = renderItem;
-  obj2.data = memo2;
-  obj2.getItemType = getItemType;
-  return memo1(node(settings[14]).FlashList, obj2);
+  return memo1(FlashList, obj2);
 });
+const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingListRenderer.tsx");
+
+export const SettingsList = memoResult;
+export const SearchableSettingsList = memoResult1;

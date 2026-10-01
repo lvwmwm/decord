@@ -5,19 +5,23 @@
 // Exports: default, getIsSocialLayerParentApplication
 
 // Module 8522 (useIsSocialLayerParentApplication)
+import Constants from "Constants" /* 1074 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8321 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ApplicationFlags = fn(1074).ApplicationFlags;
-const size = fn(2);
+const ApplicationFlags = Constants.ApplicationFlags;
 const result = size.fileFinishedImporting("modules/applications/useIsSocialLayerParentApplication.tsx");
 
 export default function useIsSocialLayerParentApplication(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   const items = [arg0];
-  return noop.useMemo(() => ApplicationFlagUtils.hasApplicationFlag(closure_0, ApplicationFlags.PARENT), items);
+  return react.useMemo(() => {
+    const obj = ApplicationFlagUtils;
+    return obj.hasApplicationFlag(closure_0, ApplicationFlags.PARENT);
+  }, items);
 };
 export const getIsSocialLayerParentApplication = function getIsSocialLayerParentApplication(application) {
-  return ApplicationFlagUtils.hasApplicationFlag(application, ApplicationFlags.PARENT);
+  const obj = ApplicationFlagUtils;
+  return obj.hasApplicationFlag(application, ApplicationFlags.PARENT);
 };

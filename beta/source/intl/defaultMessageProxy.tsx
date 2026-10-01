@@ -9,6 +9,8 @@ import module_1154 from "module_1154" /* 1154 */;
 import messagesProxy from "module_1118" /* 1118 */;
 import size from "module_2" /* 2 */;
 
+const chainMessagesObjects = module_1154.chainMessagesObjects;
+const chainMessagesObjectsResult = chainMessagesObjects(messagesProxy, _modDef13677);
 const result = size.fileFinishedImporting("intl/defaultMessageProxy.tsx");
 
-export const _defaultMessages = module_1154.chainMessagesObjects(messagesProxy, _modDef13677);
+export const _defaultMessages = chainMessagesObjectsResult;

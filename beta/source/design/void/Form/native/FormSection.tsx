@@ -6,25 +6,56 @@
 
 // Module 8062 (FormSection)
 import nativeDefault from "native" /* 576 */;
+import FormConstants from "FormConstants" /* 1181 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import RedesignCompat from "RedesignCompat" /* 5998 */;
 import FormRowDefault from "FormRow" /* 6558 */;
 import FormDividerDefault from "FormDivider" /* 8059 */;
 import FormTitleDefault from "FormTitle" /* 8063 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, StyleSheet, Platform } = get_ActivityIndicator);
-const TitleStyleType = fn(1181).TitleStyleType;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { titledSectionHeader: { borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 16 }, titledSectionNoBorder: { marginTop: 24 }, titledSectionNoBorderOrMargin: {}, emptySectionHeader: { marginTop: 24 }, sectionBody: {}, sectionBodyIOSBorder: {} };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let Platform;
+let StyleSheet;
+let closure_4;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+({ View: closure_4, StyleSheet, Platform } = react_native);
+const TitleStyleType = FormConstants.TitleStyleType;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const obj = { titledSectionHeader: obj2, titledSectionNoBorder: { marginTop: 24 }, titledSectionNoBorderOrMargin: {}, emptySectionHeader: { marginTop: 24 }, sectionBody: {}, sectionBodyIOSBorder: {} };
+obj2 = { borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 16 };
+let closure_8 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("design/void/Form/native/FormSection.tsx");
 
 export default function FormSection(arg0) {
+  let TableRowGroup;
+  let accessibilityLabel;
+  let accessibilityRole;
+  let children;
+  let description;
+  let error;
+  let flag;
+  let hasIcons;
+  let hint;
+  let icon;
+  let inset;
+  let items;
+  let items1;
+  let items2;
+  let obj4;
+  let sectionBodyStyle;
+  let thinTitle;
+  let title;
+  let titleStyleType;
+  let titleTextStyle;
+  let titleViewStyle;
+  let uppercaseTitle;
+  let wrapperStyle;
   ({ children, inset } = arg0);
   ({ icon, thinTitle } = arg0);
   if (inset === undefined) {
@@ -37,48 +68,49 @@ export default function FormSection(arg0) {
   ({ error, hint, hasIcons } = arg0);
   ({ titleViewStyle, titleTextStyle, sectionBodyStyle, wrapperStyle } = arg0);
   const tmp2 = closure_8();
-  if (noop.useContext(RedesignCompat.RedesignCompatContext)) {
+  if (react.useContext(RedesignCompat.RedesignCompatContext)) {
     const Children = obj.Children;
     const toArrayResult = Children.toArray(children);
-    const found = toArrayResult.filter((type) => {
-      let isValidElementResult = noop.isValidElement(type);
+    const tmp17 = null != toArrayResult.find((type) => {
+      let isValidElementResult = react.isValidElement(type) && type.type === FormRowDefault;
       if (isValidElementResult) {
-        isValidElementResult = type.type !== FormDividerDefault;
+        const _Boolean = Boolean;
+        isValidElementResult = Boolean(type.props.leading);
       }
       return isValidElementResult;
     });
-    const obj2 = { style: { marginBottom: 24 }, children: null };
-    const obj3 = { style: { paddingHorizontal: 12 }, children: null };
-    const obj4 = { title, hasIcons: null, hasTrailingText: null, children: null };
+    const found = toArrayResult.filter((type) => {
+      const isValidElementResult = react.isValidElement(type) && type.type !== FormDividerDefault;
+      return isValidElementResult;
+    });
+    const obj2 = { style: { marginBottom: 24 }, children: items };
+    const obj3 = { style: { paddingHorizontal: 12 }, children: metroRequire(TableRowGroup, obj4) };
+    obj4 = { title, hasIcons, hasTrailingText: flag, children: found };
+    TableRowGroup = tmp3(5999).TableRowGroup;
+    const tmp18 = metroImportDefault;
     if (hasIcons == null) {
       hasIcons = tmp17;
     }
-    obj4.hasIcons = hasIcons;
     const element = found[found.length - 1];
-    let flag = false;
-    if (obj.isValidElement(element)) {
+    flag = false;
+    if (react.isValidElement(element)) {
       flag = false;
       if (element.type !== FormDividerDefault) {
         flag = false;
         if (null != element.props) {
           const props = element.props;
           flag = "error" in props && null != props.error;
-          const tmp22 = "error" in props && null != props.error;
         }
       }
     }
-    obj4.hasTrailingText = flag;
-    obj4.children = found;
-    obj3.children = timestampProducer(tmp3(5999).TableRowGroup, obj4);
-    const items = [timestampProducer(React4, obj3), ];
+    items = [metroRequire(React3, obj3), ];
     let tmp20Result = null;
     if (null != hint) {
       const obj5 = { style: { marginTop: 8 }, children: hint };
       tmp20Result = tmp20(tmp19, obj5);
     }
     items[1] = tmp20Result;
-    obj2.children = items;
-    return React5(React4, obj2);
+    return tmp18(React3, obj2);
   } else {
     let tmp6;
     if (null != title) {
@@ -87,56 +119,47 @@ export default function FormSection(arg0) {
         const _HermesInternal = HermesInternal;
         str2 = "(" + error + ")";
       }
-      const obj6 = { textStyle: titleTextStyle, viewStyle: titleViewStyle, title: null, icon: null, error: null, thinTitle: null, uppercaseTitle: null, inset: null };
       const _HermesInternal2 = HermesInternal;
-      obj6.title = "" + title + " " + str2;
-      obj6.icon = icon;
-      obj6.error = null != error;
-      obj6.thinTitle = thinTitle;
-      obj6.uppercaseTitle = uppercaseTitle;
-      obj6.inset = inset;
-      tmp6 = timestampProducer(FormTitleDefault, obj6);
+      const obj6 = { textStyle: titleTextStyle, viewStyle: titleViewStyle, title: "" + title + " " + str2, icon, error: null != error, thinTitle, uppercaseTitle, inset };
+      const tmp10 = FormTitleDefault;
+      tmp6 = metroRequire(tmp10, obj6);
     }
     const emptySectionHeader = tmp2.emptySectionHeader;
     let titledSectionNoBorderOrMargin = emptySectionHeader;
     if (null != tmp6) {
       if (TitleStyleType.DEFAULT === titleStyleType) {
         titledSectionNoBorderOrMargin = tmp2.titledSectionHeader;
-      } else if (tmp12.ANDROID_NO_BORDER === titleStyleType) {
-        titledSectionNoBorderOrMargin = tmp3(1364).isAndroid() ? tmp2.titledSectionNoBorder : tmp2.titledSectionHeader;
-        const tmp3Result = tmp3(1364);
+      } else if (TitleStyleType.ANDROID_NO_BORDER === titleStyleType) {
+        const tmp3Result = PlatformUtils;
+        titledSectionNoBorderOrMargin = tmp3Result.isAndroid() ? tmp2.titledSectionNoBorder : tmp2.titledSectionHeader;
       } else {
         titledSectionNoBorderOrMargin = emptySectionHeader;
-        if (tmp12.NO_BORDER_OR_MARGIN === titleStyleType) {
+        if (TitleStyleType.NO_BORDER_OR_MARGIN === titleStyleType) {
           titledSectionNoBorderOrMargin = tmp2.titledSectionNoBorderOrMargin;
         }
       }
     }
-    const obj7 = { style: null, accessibilityRole: null, accessibilityLabel: null, children: null };
-    const items1 = [titledSectionNoBorderOrMargin, wrapperStyle];
-    obj7.style = items1;
+    const obj7 = { style: items1, accessibilityRole, accessibilityLabel, children: items2 };
+    items1 = [titledSectionNoBorderOrMargin, wrapperStyle];
+    const tmp13 = metroImportDefault;
     if (accessibilityRole == null) {
       accessibilityRole = "list";
     }
-    obj7.accessibilityRole = accessibilityRole;
     if (accessibilityLabel == null) {
       accessibilityLabel = title;
     }
-    obj7.accessibilityLabel = accessibilityLabel;
-    const items2 = [tmp6, description, , ];
+    items2 = [tmp6, description, , ];
     const items3 = [tmp2.sectionBody, , ];
     let sectionBodyIOSBorder = !inset;
+    const tmp15 = metroRequire;
     if (!inset) {
       sectionBodyIOSBorder = tmp2.sectionBodyIOSBorder;
     }
-    const obj8 = { style: null, children: null };
+    const obj8 = { style: items3, children };
     items3[1] = sectionBodyIOSBorder;
     items3[2] = sectionBodyStyle;
-    obj8.style = items3;
-    obj8.children = children;
-    items2[2] = timestampProducer(React4, obj8);
+    items2[2] = tmp15(React3, obj8);
     items2[3] = hint;
-    obj7.children = items2;
-    return React5(React4, obj7);
+    return tmp13(React3, obj7);
   }
 };

@@ -7,16 +7,27 @@
 // Module 8230 (useTrackImpression)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtils2 from "AnalyticsUtils" /* 1241 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import _modDef1331 from "module_1331" /* 1331 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import noop from "module_19" /* 19 */;
+import uniqueIdDefault from "uniqueId" /* 5040 */;
+import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import ImpressionStore from "ImpressionStore" /* 1242 */;
+import AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap;
+
+let c10;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let unpackModuleId;
 function trackImpression(type, disableTrack, arg2) {
+  let name;
+  let properties;
   let flag = disableTrack;
   if (disableTrack === undefined) {
     flag = false;
@@ -26,13 +37,13 @@ function trackImpression(type, disableTrack, arg2) {
     flag2 = false;
   }
   ({ name, type, properties } = type);
-  if (type.type === discord_common_AnalyticsUtils.ImpressionTypes.MODAL) {
+  if (type.type === AnalyticsUtils.ImpressionTypes.MODAL) {
     if (null == type.name) {
-      const obj = closure_1_11();
+      unpackModuleId();
     }
   }
   if (!flag2) {
-    React5(type);
+    metroImportDefault(type);
   }
   let guild_id;
   if (properties != null) {
@@ -48,58 +59,64 @@ function trackImpression(type, disableTrack, arg2) {
   if (channel_id == null) {
     channel_id = SelectedChannelStore.getChannelId(guild_id);
   }
+  const expandEventProperties = AnalyticsUtils2.expandEventProperties;
   const tmpResult = AnalyticsUtils2;
-  const obj2 = { impression_type: type, location: closure_1_10() };
-  const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(guild_id));
+  const obj2 = { impression_type: type, location: authStore() };
   const tmpResult4 = AppAnalyticsUtils;
-  const merged1 = Object.assign(AppAnalyticsUtils.collectChannelAnalyticsMetadata(ChannelStore.getChannel(channel_id)));
+  const merged = Object.assign(tmpResult4.collectGuildAnalyticsMetadata(guild_id));
+  const tmpResult5 = AppAnalyticsUtils;
+  const merged1 = Object.assign(tmpResult5.collectChannelAnalyticsMetadata(ChannelStore.getChannel(channel_id)));
   const merged2 = Object.assign(properties);
-  const result = tmpResult.expandEventProperties(obj2);
+  const result = expandEventProperties(obj2);
   if (flag) {
-    React7(null, null);
+    React4(null, null);
   } else {
-    if (tmp15) {
-      tmp(1241).debugLogEvent(name, result);
+    const tmp16 = null != name && null != type;
+    if (tmp16) {
+      const tmpResult6 = AnalyticsUtils2;
+      tmpResult6.debugLogEvent(name, result);
       closure_12(name, result);
-      const tmpResult6 = tmp(1241);
     }
-    React7(name, result);
-    tmp15 = null != name && null != type;
+    React4(name, result);
   }
 }
-const ImpressionStore = fn(1242);
-({ setCurrentImpression: closure_7, cleanupImpression: closure_8, setDebugTrackedData: closure_9, getLocation: c10, getImpressionStack: closure_11 } = ImpressionStore);
-const AnalyticsUtils = fn(1249);
-let closure_12 = AnalyticsUtils.trackMaker({ analyticEventConfigs: fn(1241).AnalyticEventConfigs, dispatcher: DispatcherDefault, TRACK_ACTION_NAME: "TRACK" });
-const size = fn(2);
+let react = react_mod;
+({ setCurrentImpression: metroImportDefault, cleanupImpression: metroImportAll, setDebugTrackedData: c9, getLocation: c10, getImpressionStack: unpackModuleId } = ImpressionStore);
+let obj = { analyticEventConfigs: AnalyticsUtils2.AnalyticEventConfigs, dispatcher: DispatcherDefault, TRACK_ACTION_NAME: "TRACK" };
+let closure_12 = AnalyticsUtils.trackMaker(obj);
 let result = size.fileFinishedImporting("modules/app_analytics/useTrackImpression.tsx");
 
-export default function useTrackImpression(arg0, arg1, current) {
-  closure_0 = arg0;
+export default function useTrackImpression(current) {
+  let closure_2;
+  let ref;
   let obj = arg1;
   if (arg1 === undefined) {
     obj = { disableTrack: false, trackOnInitialLoad: false };
   }
-  dependencyMap = current;
-  noop = undefined;
-  noop = noop.useRef(undefined);
-  noop.useRef(undefined);
-  obj(5298)(() => {
+  dependencyMap = arg2;
+  react = undefined;
+  react = react.useRef(undefined);
+  const ref2 = react.useRef(undefined);
+  const tmp = obj(5298)(() => {
     if (obj.trackOnInitialLoad) {
-      const tmp6 = _modDef1331(ref.current, closure_0);
-      if (!tmp6) {
-        ref.current = tmp5;
+      let fn;
+      const tmp6 = _modDef1331(ref.current, current);
+      const tmp4 = ref;
+      const tmp7 = !tmp6;
+      if (tmp7) {
+        tmp4.current = current;
       }
-      const tmp10 = _modDef1331(ref2.current, current);
-      if (!tmp10) {
-        ref2.current = current;
+      const tmp11 = !_modDef1331(ref2.current, closure_2);
+      const tmp8 = ref2;
+      const tmp9 = closure_2;
+      if (tmp11) {
+        tmp8.current = tmp9;
       }
       if (!tmp6) {
-        obj = {};
+        obj = { sequenceId: uniqueIdDefault("impression_") };
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(5040)("impression_");
         trackImpression(obj, tmp.disableTrack);
-        const fn = () => {
+        fn = () => {
           if (null != obj) {
             closure_2_8(tmp);
           }
@@ -108,22 +125,26 @@ export default function useTrackImpression(arg0, arg1, current) {
       return fn;
     }
   });
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (!obj.trackOnInitialLoad) {
-      const tmp6 = _modDef1331(ref.current, closure_0);
-      if (!tmp6) {
-        ref.current = tmp5;
+      let fn;
+      const tmp6 = _modDef1331(ref.current, current);
+      const tmp4 = ref;
+      const tmp7 = !tmp6;
+      if (tmp7) {
+        tmp4.current = current;
       }
-      const tmp10 = _modDef1331(ref2.current, current);
-      if (!tmp10) {
-        ref2.current = current;
+      const tmp11 = !_modDef1331(ref2.current, closure_2);
+      const tmp8 = ref2;
+      const tmp9 = closure_2;
+      if (tmp11) {
+        tmp8.current = tmp9;
       }
       if (!tmp6) {
-        obj = {};
+        obj = { sequenceId: tmp2(5040)("impression_") };
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(5040)("impression_");
         trackImpression(obj, tmp.disableTrack);
-        const fn = () => {
+        fn = () => {
           if (null != obj) {
             closure_2_8(tmp);
           }

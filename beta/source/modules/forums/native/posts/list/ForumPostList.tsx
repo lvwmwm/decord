@@ -5,56 +5,72 @@
 // Exports: default
 
 // Module 11503 (ForumPostList)
+import react_native from "react-native" /* 17 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
 import ForumTagHooks from "ForumTagHooks" /* 6693 */;
 import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11485 */;
-import ForumPostAppliedTags from "ForumPostAppliedTags" /* 11495 */;
 import ForumPostListBodyDefault from "ForumPostListBody" /* 11504 */;
 import ForumPostListFooterDefault from "ForumPostListFooter" /* 11507 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const ChannelFlags = fn(2052).ChannelFlags;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4836);
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let tmp2;
+const ForumPostAppliedTags = tmp2(11495);
+const View = react_native.View;
+const ChannelFlags = ChannelConstants.ChannelFlags;
+({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ header: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: 8 }, content: { flex: 1, marginBottom: 12 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/list/ForumPostList.tsx");
 
 export default function ForumPostList(arg0) {
+  let first;
+  let firstMessage;
+  let firstMessageLoaded;
+  let hasUnreads;
+  let isEmbed;
+  let isLocalDeviceMedia;
+  let isNew;
+  let items;
+  let items1;
+  let items2;
+  let media;
+  let messageContent;
+  let parentChannel;
+  let senderModifier;
+  let thread;
+  let tmp5;
   ({ firstMessage, hasUnreads, thread } = arg0);
   ({ messageContent, firstMessageLoaded, isNew, media, isEmbed, isLocalDeviceMedia, parentChannel, senderModifier } = arg0);
   const tmp = closure_9();
-  const tmp4 = _slicedToArray(ForumTagHooks.useSomeAppliedTags(thread, 2), 2);
-  const first = tmp4[0];
+  const obj = ForumTagHooks;
+  [first, tmp5] = obj.useSomeAppliedTags(thread, 2);
   const hasFlagResult = thread.hasFlag(ChannelFlags.PINNED);
-  const obj2 = { style: tmp.content, children: null };
-  let tmp6Result = hasFlagResult;
+  let tmp7Result = hasFlagResult;
+  const obj2 = { style: tmp.content, children: items1 };
+  const tmp8 = metroImportAll;
   if (!hasFlagResult) {
-    tmp6Result = 0 !== first.length;
+    tmp7Result = 0 !== first.length;
   }
-  if (tmp6Result) {
-    const obj3 = { style: tmp.header, children: null };
-    let tmp10 = hasFlagResult;
-    if (hasFlagResult) {
-      tmp10 = timestampProducer(ForumPostPinIconDefault, {});
+  if (tmp7Result) {
+    const obj3 = { style: tmp.header, children: items };
+    items = [hasFlagResult && metroRequire(ForumPostPinIconDefault, {}), ];
+    let tmp14 = 0 !== first.length;
+    const tmp11 = hasFlagResult && metroRequire(ForumPostPinIconDefault, {});
+    if (tmp14) {
+      const obj4 = { appliedTags: first, additionalTagsCount: tmp5, hasUnreads };
+      tmp14 = metroRequire(ForumPostAppliedTags.ForumPostAppliedTagPills, obj4);
     }
-    const items = [tmp10, ];
-    let tmp13 = 0 !== first.length;
-    if (tmp13) {
-      const obj4 = { appliedTags: first, additionalTagsCount: tmp4[1], hasUnreads };
-      tmp13 = timestampProducer(ForumPostAppliedTags.ForumPostAppliedTagPills, obj4);
-    }
-    items[1] = tmp13;
-    obj3.children = items;
-    tmp6Result = tmp6(tmp8, obj3);
+    items[1] = tmp14;
+    tmp7Result = tmp7(tmp9, obj3);
   }
-  const obj5 = { children: null };
-  const items1 = [tmp6Result, timestampProducer(ForumPostListBodyDefault, { thread, firstMessage, hasUnreads, isNew, messageContent, media, isEmbed, isLocalDeviceMedia, firstMessageLoaded, senderModifier })];
-  obj2.children = items1;
-  const items2 = [React5(View, obj2), timestampProducer(ForumPostListFooterDefault, { thread, firstMessage, hasUnreads, parentChannel })];
-  obj5.children = items2;
-  return React5(React6, obj5);
+  const obj5 = { children: items2 };
+  items1 = [tmp7Result, metroRequire(ForumPostListBodyDefault, { thread, firstMessage, hasUnreads, isNew, messageContent, media, isEmbed, isLocalDeviceMedia, firstMessageLoaded, senderModifier })];
+  items2 = [metroImportDefault(View, obj2), metroRequire(ForumPostListFooterDefault, { thread, firstMessage, hasUnreads, parentChannel })];
+  return metroImportDefault(tmp8, obj5);
 };

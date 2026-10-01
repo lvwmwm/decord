@@ -5,266 +5,290 @@
 
 // Module 12142 (VoiceMessageOverlay)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import util from "util" /* 1115 */;
+import intl7 from "intl" /* 1115 */;
+import native from "native" /* 1177 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5275 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5266 */;
 import LegacyTokens from "LegacyTokens" /* 5753 */;
 import useRefValueDefault from "useRefValue" /* 5898 */;
 import inlineStyles from "inlineStyles" /* 7909 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11442 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 11443 */;
+import ChatInputConstants from "ChatInputConstants" /* 11444 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native2 from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import apply from "module_12" /* 12 */;
+import Fragment from "Fragment" /* 21 */;
+import module_12 from "module_12" /* 12 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
+let _require, channelId, dependencyMap, set, set2;
 
-require = fn;
+let closure_14;
+let closure_15;
+let hasOwnProperty;
+let map1;
+let metroRequire;
+let tmp;
+const react_native = tmp(5275);
 function LockPill(safeAreaBottom) {
+  let View2;
+  let closure_3;
+  let first;
+  let items1;
+  let items2;
+  let items3;
+  let obj31;
+  let tmp4;
   safeAreaBottom = safeAreaBottom.safeAreaBottom;
   const initialAnimation = safeAreaBottom.initialAnimation;
   const voiceMessageAnimationState = safeAreaBottom.voiceMessageAnimationState;
-  _slicedToArray = undefined;
   let tmp = closure_21();
-  const tmp2 = _slicedToArray(noop.useState(false), 2);
-  _slicedToArray = tmp3;
+  [first, tmp4] = react.useState(false);
+  _slicedToArray = tmp4;
+  let obj = safeAreaBottom(voiceMessageAnimationState[10]);
   const fn = function _() {
-    return voiceMessageAnimationState.get()[1] === VoiceMessageAnimationState.LOCKED || voiceMessageAnimationState.get()[1] === tmp.LOCKING;
+    const tmp2 = voiceMessageAnimationState.get()[1] === VoiceMessageAnimationState.LOCKED || voiceMessageAnimationState.get()[1] === tmp.LOCKING;
+    return tmp2;
   };
-  fn.__closure = { voiceMessageAnimationState, VoiceMessageAnimationState };
+  let obj2 = { voiceMessageAnimationState, VoiceMessageAnimationState };
+  fn.__closure = obj2;
   fn.__workletHash = 11711445602143;
   fn.__initData = __initData14;
   const fn2 = function c(arg0, arg1) {
     if (arg0 !== arg1) {
-      ReanimatedRexport2.runOnJS(closure_3)(arg0);
+      const obj = ReanimatedRexport2;
+      obj.runOnJS(closure_3)(arg0);
     }
   };
-  let obj = safeAreaBottom(voiceMessageAnimationState[10]);
-  let obj2 = { voiceMessageAnimationState, VoiceMessageAnimationState };
-  const tmp4 = safeAreaBottom;
-  fn2.__closure = { runOnJS: safeAreaBottom(voiceMessageAnimationState[10]).runOnJS, setLocked: tmp2[1] };
+  let obj3 = { runOnJS: safeAreaBottom(voiceMessageAnimationState[10]).runOnJS, setLocked: tmp4 };
+  fn2.__closure = obj3;
   fn2.__workletHash = 7476668458521;
   fn2.__initData = __initData15;
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
-  closure_129_0 = voiceMessageAnimationState;
-  let obj3 = { runOnJS: safeAreaBottom(voiceMessageAnimationState[10]).runOnJS, setLocked: tmp2[1] };
-  const token = safeAreaBottom(voiceMessageAnimationState[19]).useToken(initialAnimation(voiceMessageAnimationState[16]).colors.MOBILE_VOICE_MESSAGE_RECORDING_LOCK_BACKGROUND_DEFAULT);
   let obj4 = safeAreaBottom(voiceMessageAnimationState[19]);
-  const token1 = safeAreaBottom(voiceMessageAnimationState[19]).useToken(initialAnimation(voiceMessageAnimationState[16]).colors.MOBILE_VOICE_MESSAGE_RECORDING_LOCK_BACKGROUND_ACTIVE);
-  closure_130_0 = voiceMessageAnimationState;
-  closure_130_1 = token;
-  closure_130_2 = token;
-  closure_130_3 = token1;
-  closure_130_4 = token1;
-  const obj5 = safeAreaBottom(voiceMessageAnimationState[19]);
+  const token = obj4.useToken(initialAnimation(voiceMessageAnimationState[16]).colors.MOBILE_VOICE_MESSAGE_RECORDING_LOCK_BACKGROUND_DEFAULT);
+  let obj5 = safeAreaBottom(voiceMessageAnimationState[19]);
+  const token1 = obj5.useToken(initialAnimation(voiceMessageAnimationState[16]).colors.MOBILE_VOICE_MESSAGE_RECORDING_LOCK_BACKGROUND_ACTIVE);
   const fn3 = function _() {
-    const obj = timing;
-    return obj.withTiming(radius.get()[1], { easing: ReanimatedRexport2.Easing.linear, duration: 150 });
+    const tmp = voiceMessageAnimationState.get()[1];
+    const obj = radius(offsetThreshold[22]);
+    const obj2 = { easing: radius(offsetThreshold[10]).Easing.linear, duration: 150 };
+    return obj.withTiming(tmp, obj2);
   };
   const obj6 = safeAreaBottom(voiceMessageAnimationState[10]);
   fn3.__closure = { voiceMessageAnimationState, withTiming: safeAreaBottom(voiceMessageAnimationState[22]).withTiming, Easing: safeAreaBottom(voiceMessageAnimationState[10]).Easing };
   fn3.__workletHash = 8516919791077;
   fn3.__initData = __initData6;
+  ({ voiceMessageAnimationState, withTiming: safeAreaBottom(voiceMessageAnimationState[22]).withTiming, Easing: safeAreaBottom(voiceMessageAnimationState[10]).Easing });
   const derivedValue = obj6.useDerivedValue(fn3);
-  closure_130_5 = derivedValue;
-  const obj7 = { voiceMessageAnimationState, withTiming: safeAreaBottom(voiceMessageAnimationState[22]).withTiming, Easing: safeAreaBottom(voiceMessageAnimationState[10]).Easing };
   const fn4 = function u() {
-    const tmp = _slicedToArray(radius.get(), 2);
+    let items1;
+    const tmp = stateFromStores(voiceMessageAnimationState.get(), 2);
     if (tmp[0] + tmp[1] === 2) {
-      items = [height, height, stateFromStores, closure_4];
-      let items1 = items;
+      items = [token, token, token, token];
+      items1 = items;
     } else {
-      items1 = [height, offsetThreshold, stateFromStores, closure_4];
+      items1 = [token, RED_400, token, token];
     }
-    return ReanimatedRexport2.interpolateColor(derivedValue.get(), items, items1);
+    const obj = radius(offsetThreshold[10]);
+    return obj.interpolateColor(derivedValue1.get(), closure_2_22, items1);
   };
   const obj8 = safeAreaBottom(voiceMessageAnimationState[10]);
   fn4.__closure = { voiceMessageAnimationState, sendingColor: token, lockingColor: token1, lockedColor: token1, cancelingColor: token, interpolateColor: safeAreaBottom(voiceMessageAnimationState[10]).interpolateColor, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: items };
   fn4.__workletHash = 4463544053380;
   fn4.__initData = __initData7;
+  ({ voiceMessageAnimationState, sendingColor: token, lockingColor: token1, lockedColor: token1, cancelingColor: token, interpolateColor: safeAreaBottom(voiceMessageAnimationState[10]).interpolateColor, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: items });
   const derivedValue1 = obj8.useDerivedValue(fn4);
-  closure_129_1 = derivedValue1;
-  const obj9 = { voiceMessageAnimationState, sendingColor: token, lockingColor: token1, lockedColor: token1, cancelingColor: token, interpolateColor: safeAreaBottom(voiceMessageAnimationState[10]).interpolateColor, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: items };
-  const token2 = safeAreaBottom(voiceMessageAnimationState[19]).useToken(initialAnimation(voiceMessageAnimationState[16]).modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_WIDTH);
-  closure_129_2 = token2;
-  const result = -v56 - token2 / 2;
-  closure_129_3 = result;
   const obj10 = safeAreaBottom(voiceMessageAnimationState[19]);
-  const token3 = safeAreaBottom(voiceMessageAnimationState[19]).useToken(initialAnimation(voiceMessageAnimationState[16]).colors.MOBILE_VOICE_MESSAGE_RECORDING_LOCK_ICON_DEFAULT);
+  const token2 = obj10.useToken(initialAnimation(voiceMessageAnimationState[16]).modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_WIDTH);
+  const result = -v56 - token2 / 2;
+  let c3 = result;
   const obj11 = safeAreaBottom(voiceMessageAnimationState[19]);
-  const token4 = safeAreaBottom(voiceMessageAnimationState[19]).useToken(initialAnimation(voiceMessageAnimationState[16]).colors.MOBILE_VOICE_MESSAGE_RECORDING_LOCK_ICON_ACTIVE);
-  closure_131_0 = voiceMessageAnimationState;
-  closure_131_1 = token3;
-  closure_131_2 = token3;
-  closure_131_3 = token4;
-  closure_131_4 = token4;
+  const token3 = obj11.useToken(initialAnimation(voiceMessageAnimationState[16]).colors.MOBILE_VOICE_MESSAGE_RECORDING_LOCK_ICON_DEFAULT);
   const obj12 = safeAreaBottom(voiceMessageAnimationState[19]);
+  const token4 = obj12.useToken(initialAnimation(voiceMessageAnimationState[16]).colors.MOBILE_VOICE_MESSAGE_RECORDING_LOCK_ICON_ACTIVE);
   const fn5 = function _() {
-    const obj = timing;
-    return obj.withTiming(radius.get()[1], { easing: ReanimatedRexport2.Easing.linear, duration: 150 });
+    const tmp = voiceMessageAnimationState.get()[1];
+    const obj = radius(offsetThreshold[22]);
+    const obj2 = { easing: radius(offsetThreshold[10]).Easing.linear, duration: 150 };
+    return obj.withTiming(tmp, obj2);
   };
   const obj13 = safeAreaBottom(voiceMessageAnimationState[10]);
   fn5.__closure = { voiceMessageAnimationState, withTiming: safeAreaBottom(voiceMessageAnimationState[22]).withTiming, Easing: safeAreaBottom(voiceMessageAnimationState[10]).Easing };
   fn5.__workletHash = 8516919791077;
   fn5.__initData = __initData6;
+  ({ voiceMessageAnimationState, withTiming: safeAreaBottom(voiceMessageAnimationState[22]).withTiming, Easing: safeAreaBottom(voiceMessageAnimationState[10]).Easing });
   const derivedValue2 = obj13.useDerivedValue(fn5);
-  closure_131_5 = derivedValue2;
-  const obj14 = { voiceMessageAnimationState, withTiming: safeAreaBottom(voiceMessageAnimationState[22]).withTiming, Easing: safeAreaBottom(voiceMessageAnimationState[10]).Easing };
   const fn6 = function u() {
-    const tmp = _slicedToArray(radius.get(), 2);
+    let items1;
+    const tmp = stateFromStores(voiceMessageAnimationState.get(), 2);
     if (tmp[0] + tmp[1] === 2) {
-      items = [height, height, stateFromStores, closure_4];
-      let items1 = items;
+      items = [token, token, token, token];
+      items1 = items;
     } else {
-      items1 = [height, offsetThreshold, stateFromStores, closure_4];
+      items1 = [token, RED_400, token, token];
     }
-    return ReanimatedRexport2.interpolateColor(derivedValue.get(), items, items1);
+    const obj = radius(offsetThreshold[10]);
+    return obj.interpolateColor(derivedValue1.get(), closure_2_22, items1);
   };
   const obj15 = safeAreaBottom(voiceMessageAnimationState[10]);
   fn6.__closure = { voiceMessageAnimationState, sendingColor: token3, lockingColor: token4, lockedColor: token4, cancelingColor: token3, interpolateColor: safeAreaBottom(voiceMessageAnimationState[10]).interpolateColor, timing: derivedValue2, VOICE_MESSAGE_ANIMATION_STATES: items };
   fn6.__workletHash = 4463544053380;
   fn6.__initData = __initData7;
+  ({ voiceMessageAnimationState, sendingColor: token3, lockingColor: token4, lockedColor: token4, cancelingColor: token3, interpolateColor: safeAreaBottom(voiceMessageAnimationState[10]).interpolateColor, timing: derivedValue2, VOICE_MESSAGE_ANIMATION_STATES: items });
   const derivedValue3 = obj15.useDerivedValue(fn6);
-  closure_129_4 = derivedValue3;
-  const obj16 = { voiceMessageAnimationState, sendingColor: token3, lockingColor: token4, lockedColor: token4, cancelingColor: token3, interpolateColor: safeAreaBottom(voiceMessageAnimationState[10]).interpolateColor, timing: derivedValue2, VOICE_MESSAGE_ANIMATION_STATES: items };
   const fn7 = function o() {
-    const obj = timing;
-    return obj.withTiming(safeAreaBottom.get()[1], { easing: ReanimatedRexport2.Easing.linear, duration: 150 });
+    const tmp = voiceMessageAnimationState.get()[1];
+    const obj = safeAreaBottom(voiceMessageAnimationState[22]);
+    const obj2 = { easing: safeAreaBottom(voiceMessageAnimationState[10]).Easing.linear, duration: 150 };
+    return obj.withTiming(tmp, obj2);
   };
   const obj17 = safeAreaBottom(voiceMessageAnimationState[10]);
   fn7.__closure = { voiceMessageAnimationState, withTiming: safeAreaBottom(voiceMessageAnimationState[22]).withTiming, Easing: safeAreaBottom(voiceMessageAnimationState[10]).Easing };
   fn7.__workletHash = 11443022128299;
   fn7.__initData = __initData8;
+  ({ voiceMessageAnimationState, withTiming: safeAreaBottom(voiceMessageAnimationState[22]).withTiming, Easing: safeAreaBottom(voiceMessageAnimationState[10]).Easing });
   const derivedValue4 = obj17.useDerivedValue(fn7);
-  closure_129_5 = derivedValue4;
-  const obj18 = { voiceMessageAnimationState, withTiming: safeAreaBottom(voiceMessageAnimationState[22]).withTiming, Easing: safeAreaBottom(voiceMessageAnimationState[10]).Easing };
   const fn8 = function s() {
-    const tmp = _slicedToArray(safeAreaBottom.get(), 2);
-    return ReanimatedRexport2.interpolate(closure_1_5.get(), items, tmp[0] + tmp[1] === 2 ? [1, 1, 1, 0] : [1, 0, 1, 0]);
+    const tmp = _undefined(voiceMessageAnimationState.get(), 2);
+    const tmp2 = tmp[0] + tmp[1] === 2 ? [1, 1, 1, 0] : [1, 0, 1, 0];
+    const obj = safeAreaBottom(voiceMessageAnimationState[10]);
+    return obj.interpolate(derivedValue4.get(), items, tmp2);
   };
   const obj19 = safeAreaBottom(voiceMessageAnimationState[10]);
   fn8.__closure = { voiceMessageAnimationState, interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items };
   fn8.__workletHash = 467806088074;
   fn8.__initData = __initData9;
+  ({ voiceMessageAnimationState, interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items });
   const derivedValue5 = obj19.useDerivedValue(fn8);
-  closure_129_6 = derivedValue5;
-  const obj20 = { voiceMessageAnimationState, interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items };
   const fn9 = function l() {
-    const obj = { height: null };
-    items = [c19, c19, 104, 104];
-    obj.height = ReanimatedRexport2.interpolate(closure_1_5.get(), items, items);
+    let obj2;
+    const obj = { height: obj2.interpolate(derivedValue4.get(), closure_2_22, items) };
+    items = [v68, v68, 104, 104];
+    obj2 = safeAreaBottom(voiceMessageAnimationState[10]);
     return obj;
   };
   const obj21 = safeAreaBottom(voiceMessageAnimationState[10]);
   fn9.__closure = { interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items, LOCK_PILL_RESTING_HEIGHT: v68 };
   fn9.__workletHash = 1225730432489;
   fn9.__initData = __initData10;
+  ({ interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items, LOCK_PILL_RESTING_HEIGHT: v68 });
   const animatedStyle = obj21.useAnimatedStyle(fn9);
-  const obj22 = { interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items, LOCK_PILL_RESTING_HEIGHT: v68 };
   const fn10 = function c() {
-    const size = { width: null, height: null, opacity: null, backgroundColor: null, marginHorizontal: null, marginBottom: null };
-    items = [voiceMessageAnimationState, voiceMessageAnimationState, c20, c20];
-    size.width = ReanimatedRexport2.interpolate(closure_1_5.get(), items, items);
-    const items1 = [c19, c19, c20, c20];
-    size.height = ReanimatedRexport2.interpolate(closure_1_5.get(), items, items1);
-    size.opacity = closure_1_6.get();
-    size.backgroundColor = initialAnimation.get();
-    const items2 = [0, 0, closure_3, closure_3];
-    size.marginHorizontal = ReanimatedRexport2.interpolate(closure_1_5.get(), items, items2);
-    size.marginBottom = ReanimatedRexport2.interpolate(closure_1_5.get(), items, [0, 0, 36, 36]);
+    let items1;
+    let items2;
+    let obj2;
+    let obj3;
+    let obj4;
+    let obj5;
+    size = { width: obj2.interpolate(derivedValue4.get(), closure_2_22, items), height: obj3.interpolate(derivedValue4.get(), closure_2_22, items1), opacity: derivedValue5.get(), backgroundColor: derivedValue1.get(), marginHorizontal: obj4.interpolate(derivedValue4.get(), closure_2_22, items2), marginBottom: obj5.interpolate(derivedValue4.get(), closure_2_22, [0, 0, 36, 36]) };
+    items = [token2, token2, v56, v56];
+    items1 = [v68, v68, v56, v56];
+    obj2 = safeAreaBottom(voiceMessageAnimationState[10]);
+    items2 = [0, 0, c3, c3];
+    obj3 = safeAreaBottom(voiceMessageAnimationState[10]);
+    obj4 = safeAreaBottom(voiceMessageAnimationState[10]);
+    obj5 = safeAreaBottom(voiceMessageAnimationState[10]);
     return size;
   };
   const obj23 = safeAreaBottom(voiceMessageAnimationState[10]);
   fn10.__closure = { interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items, lockPillWidth: token2, LOCK_PILL_LOCKED_SIZE: v56, LOCK_PILL_RESTING_HEIGHT: v68, lockContainerOpacity: derivedValue5, lockedBackgroundColor: derivedValue1, lockPillLockedOverhang: result };
   fn10.__workletHash = 12418415107450;
   fn10.__initData = __initData11;
+  ({ interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items, lockPillWidth: token2, LOCK_PILL_LOCKED_SIZE: v56, LOCK_PILL_RESTING_HEIGHT: v68, lockContainerOpacity: derivedValue5, lockedBackgroundColor: derivedValue1, lockPillLockedOverhang: result });
   const animatedStyle1 = obj23.useAnimatedStyle(fn10);
-  const obj24 = { interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items, lockPillWidth: token2, LOCK_PILL_LOCKED_SIZE: v56, LOCK_PILL_RESTING_HEIGHT: v68, lockContainerOpacity: derivedValue5, lockedBackgroundColor: derivedValue1, lockPillLockedOverhang: result };
   const fn11 = function _() {
-    const size = { width: ReanimatedRexport2.interpolate(closure_1_5.get(), items, [24, 24, 32, 32]), height: null, marginTop: null, tintColor: null };
-    size.height = ReanimatedRexport2.interpolate(closure_1_5.get(), items, [24, 24, 32, 32]);
-    size.marginTop = ReanimatedRexport2.interpolate(closure_1_5.get(), items, [12, 12, 10, 10]);
-    size.tintColor = noop.get();
+    let obj2;
+    let obj3;
+    let obj4;
+    size = { width: obj2.interpolate(derivedValue4.get(), items, [24, 24, 32, 32]), height: obj3.interpolate(derivedValue4.get(), items, [24, 24, 32, 32]), marginTop: obj4.interpolate(derivedValue4.get(), items, [12, 12, 10, 10]), tintColor: derivedValue3.get() };
+    obj2 = safeAreaBottom(voiceMessageAnimationState[10]);
+    obj3 = safeAreaBottom(voiceMessageAnimationState[10]);
+    obj4 = safeAreaBottom(voiceMessageAnimationState[10]);
     return size;
   };
   const obj25 = safeAreaBottom(voiceMessageAnimationState[10]);
   fn11.__closure = { interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items, lockIconColor: derivedValue3 };
   fn11.__workletHash = 10749462388463;
   fn11.__initData = __initData12;
+  ({ interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items, lockIconColor: derivedValue3 });
   const animatedStyle2 = obj25.useAnimatedStyle(fn11);
-  const obj26 = { interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items, lockIconColor: derivedValue3 };
   const fn12 = function u() {
-    const obj = { opacity: ReanimatedRexport2.interpolate(closure_1_5.get(), items, [1, 1, 0, 0]) };
+    let obj2;
+    const obj = { opacity: obj2.interpolate(derivedValue4.get(), items, [1, 1, 0, 0]) };
+    obj2 = safeAreaBottom(voiceMessageAnimationState[10]);
     return obj;
   };
   const obj27 = safeAreaBottom(voiceMessageAnimationState[10]);
   fn12.__closure = { interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items };
   fn12.__workletHash = 8995549322978;
   fn12.__initData = __initData13;
+  ({ interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items });
   const animatedStyle3 = obj27.useAnimatedStyle(fn12);
-  const obj28 = { interpolate: safeAreaBottom(voiceMessageAnimationState[10]).interpolate, timing: derivedValue4, VOICE_MESSAGE_ANIMATION_STATES: items };
-  const tmp7Result = initialAnimation(tmp2[0] ? voiceMessageAnimationState[23] : voiceMessageAnimationState[24]);
+  const tmp8Result = initialAnimation(first ? voiceMessageAnimationState[23] : voiceMessageAnimationState[24]);
+  const tmp5Result = safeAreaBottom(voiceMessageAnimationState[10]);
   class M {
     constructor() {
-      obj = { opacity: initialAnimation.get(), bottom: null };
+      let sum;
+      const obj = { opacity: initialAnimation.get(), bottom: sum + 8 * initialAnimation.get() };
       sum = safeAreaBottom + CHAT_INPUT_HEIGHT + 24;
-      obj.bottom = sum + 8 * initialAnimation.get();
       return obj;
     }
   }
-  M.__closure = { initialAnimation, safeAreaBottom, CHAT_INPUT_HEIGHT, LOCK_PILL_BOTTOM_OFFSET: 32, INITIAL_SHIFT: 8 };
+  const obj29 = { initialAnimation, safeAreaBottom, CHAT_INPUT_HEIGHT, LOCK_PILL_BOTTOM_OFFSET: 32, INITIAL_SHIFT: 8 };
+  M.__closure = obj29;
   M.__workletHash = 17067557493480;
   M.__initData = __initData16;
-  const animatedStyle4 = tmp4(voiceMessageAnimationState[10]).useAnimatedStyle(M);
-  const obj30 = { style: null, children: null };
+  const animatedStyle4 = tmp5Result.useAnimatedStyle(M);
+  const obj30 = { style: items, children: closure_14(View2, obj31) };
   items = [tmp.lockParentContainer, animatedStyle, animatedStyle4];
-  obj30.style = items;
-  const obj31 = { style: null, children: null };
-  let items1 = [tmp.lockContainer, animatedStyle1];
-  obj31.style = items1;
-  let items2 = [closure_13(closure_16, { style: animatedStyle2, source: tmp7Result }), ];
-  const obj32 = { style: null, source: initialAnimation(voiceMessageAnimationState[25]) };
-  const items3 = [tmp.chevon, animatedStyle3];
-  obj32.style = items3;
+  const View = tmp8(tmp6[10]).View;
+  obj31 = { style: items1, children: items2 };
+  items1 = [tmp.lockContainer, animatedStyle1];
+  View2 = tmp8(tmp6[10]).View;
+  items2 = [closure_13(closure_16, { style: animatedStyle2, source: tmp8Result }), ];
+  const obj32 = { style: items3, source: initialAnimation(voiceMessageAnimationState[25]) };
+  items3 = [tmp.chevon, animatedStyle3];
   items2[1] = closure_13(closure_16, obj32);
-  obj31.children = items2;
-  obj30.children = closure_14(initialAnimation(voiceMessageAnimationState[10]).View, obj31);
-  return closure_13(initialAnimation(voiceMessageAnimationState[10]).View, obj30);
+  return closure_13(View, obj30);
 }
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, AppState: metroRequire } = get_ActivityIndicator);
-const useVoiceMessagesUIStore = fn(11442).useVoiceMessagesUIStore;
-const VoiceMessageAnimationState = fn(11443).VoiceMessageAnimationState;
-const ComponentActionsKeyed = fn(1074).ComponentActionsKeyed;
-const CHAT_INPUT_HEIGHT = fn(11444).CHAT_INPUT_HEIGHT;
-const jsxProd = fn(21);
-({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
+let _slicedToArray = _slicedToArray_mod;
+({ View: hasOwnProperty, AppState: metroRequire } = react_native2);
+const useVoiceMessagesUIStore = VoiceMessagesUIStore.useVoiceMessagesUIStore;
+const VoiceMessageAnimationState = VoiceMessageConstants.VoiceMessageAnimationState;
+const ComponentActionsKeyed = Constants.ComponentActionsKeyed;
+const CHAT_INPUT_HEIGHT = ChatInputConstants.CHAT_INPUT_HEIGHT;
+({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = Fragment);
 let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_16 = ReanimatedRexport.createAnimatedComponent(fn(1177).Icon);
-let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_17 = ReanimatedRexport.createAnimatedComponent(fn(4832).Text);
-let closure_18 = apply.memoize(() => ReanimatedRexport.createAnimatedComponent(inlineStyles.Ellipse));
+let closure_16 = ReanimatedRexport.createAnimatedComponent(native.Icon);
+ReanimatedRexport = ReanimatedRexport_mod;
+let closure_17 = ReanimatedRexport.createAnimatedComponent(Text_Text.Text);
+let closure_18 = module_12.memoize(() => {
+  const obj = ReanimatedRexport;
+  return obj.createAnimatedComponent(inlineStyles.Ellipse);
+});
 let c19 = 68;
 let c20 = 56;
-const createStyles = fn(4836);
 let closure_21 = createStyles.createStyles(() => {
-  const obj = { innerContainer: { flexDirection: "row", alignItems: "flex-end", paddingTop: 8, paddingHorizontal: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_HORIZONTAL, paddingBottom: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_BOTTOM }, contentContainer: { position: "absolute", bottom: 0, width: "100%", alignItems: "center", overflow: "hidden" }, contentContainerFloating: { justifyContent: "flex-end", overflow: "visible" }, floatingSendButton: null, floatingSendButtonActive: null, floatingSendButtonIconActive: null, voiceChatContainer: null, lockContainer: null, lockParentContainer: null, chevon: null };
-  const size = { width: nativeDefault.modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH, height: nativeDefault.modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT };
-  obj.floatingSendButton = size;
-  const obj2 = { flexDirection: "row", alignItems: "flex-end", paddingTop: 8, paddingHorizontal: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_HORIZONTAL, paddingBottom: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_BOTTOM };
-  obj.floatingSendButtonActive = { backgroundColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ACTIVE_BACKGROUND };
-  const obj3 = { backgroundColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ACTIVE_BACKGROUND };
-  obj.floatingSendButtonIconActive = { tintColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT };
-  const obj4 = { tintColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT };
-  obj.voiceChatContainer = { flex: 1, height: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT, marginRight: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT, alignItems: "flex-end" };
-  const size1 = { height: v68, width: v56, borderRadius: nativeDefault.modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: nativeDefault.colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: LegacyTokens.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
-  obj.lockContainer = size1;
-  const obj5 = { flex: 1, height: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT, marginRight: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT, alignItems: "flex-end" };
-  obj.lockParentContainer = { position: "absolute", right: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_OFFSET_RIGHT, width: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_WIDTH };
-  const size2 = { height: 16, width: 16, marginTop: 8, tintColor: nativeDefault.colors.ICON_SUBTLE };
-  obj.chevon = size2;
+  let size1;
+  let size2;
+  const obj = { innerContainer: { flexDirection: "row", alignItems: "flex-end", paddingTop: 8, paddingHorizontal: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_HORIZONTAL, paddingBottom: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_BOTTOM }, contentContainer: { position: "absolute", bottom: 0, width: "100%", alignItems: "center", overflow: "hidden" }, contentContainerFloating: { justifyContent: "flex-end", overflow: "visible" }, floatingSendButton: size, floatingSendButtonActive: { backgroundColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ACTIVE_BACKGROUND }, floatingSendButtonIconActive: { tintColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT }, voiceChatContainer: { flex: 1, height: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT, marginRight: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT, alignItems: "flex-end" }, lockContainer: size1, lockParentContainer: { position: "absolute", right: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_OFFSET_RIGHT, width: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_WIDTH }, chevon: size2 };
+  ({ flexDirection: "row", alignItems: "flex-end", paddingTop: 8, paddingHorizontal: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_HORIZONTAL, paddingBottom: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_BOTTOM });
+  size = { width: nativeDefault.modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH, height: nativeDefault.modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT };
+  ({ backgroundColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ACTIVE_BACKGROUND });
+  ({ tintColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT });
+  ({ flex: 1, height: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT, marginRight: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT, alignItems: "flex-end" });
+  size1 = { height, width, borderRadius: nativeDefault.modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: nativeDefault.colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: LegacyTokens.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
+  ({ position: "absolute", right: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_OFFSET_RIGHT, width: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_WIDTH });
+  size2 = { height: 16, width: 16, marginTop: 8, tintColor: nativeDefault.colors.ICON_SUBTLE };
   return obj;
 });
 let items = [, , , ];
@@ -274,53 +298,165 @@ const __initData2 = { code: "function VoiceMessageOverlayTsx2(){const{derivedCur
 const __initData3 = { code: "function VoiceMessageOverlayTsx3(){const{voiceMessageEllipseBgColor,radius,offset}=this.__closure;return{fill:voiceMessageEllipseBgColor.get(),ry:radius+offset.get(),rx:radius,cy:radius+offset.get(),cx:radius};}" };
 const __initData4 = { code: "function VoiceMessageOverlayTsx4(){const{radius,height,offset}=this.__closure;return{position:'absolute',width:radius*2,height:height.get()+offset.get(),bottom:0};}" };
 const __initData5 = { code: "function VoiceMessageOverlayTsx5(){const{initialAnimation,recordingAnimation}=this.__closure;const animationValue=Math.min(initialAnimation.get(),recordingAnimation.get());return{opacity:animationValue};}" };
-let closure_28 = noop.memo((initialAnimation) => {
+const memoResult = react.memo((radius) => {
+  let Svg;
+  let obj12;
+  radius = radius.radius;
+  height = radius.height;
+  const offsetThreshold = radius.offsetThreshold;
+  const voiceMessageAnimationState = radius.voiceMessageAnimationState;
+  let derivedValue3;
+  const opacity = radius.opacity;
+  let obj = radius(offsetThreshold[18]);
+  items = [derivedValue3];
+  const stateFromStores = obj.useStateFromStores(items, () => derivedValue3.useReducedMotion, []);
+  const tmp2 = useVoiceMessagesUIStore((currWaveHeight) => currWaveHeight.currWaveHeight);
+  let closure_4 = tmp2;
+  let obj2 = radius(offsetThreshold[10]);
+  const fn = function _() {
+    let num = 0.5;
+    if (!stateFromStores) {
+      let num2;
+      const obj = closure_4;
+      if (closure_4 != null) {
+        num2 = obj.get();
+      }
+      if (num2 == null) {
+        num2 = 0;
+      }
+      num = num2;
+    }
+    return num;
+  };
+  fn.__closure = { useReducedMotion: stateFromStores, currWaveHeight: tmp2 };
+  fn.__workletHash = 2925868096827;
+  fn.__initData = __initData;
+  const derivedValue = obj2.useDerivedValue(fn);
+  const obj3 = radius(offsetThreshold[19]);
+  const token = obj3.useToken(height(offsetThreshold[16]).colors.BACKGROUND_BRAND);
+  const RED_400 = height(offsetThreshold[16]).unsafe_rawColors.RED_400;
+  const fn2 = function _() {
+    const tmp = voiceMessageAnimationState.get()[1];
+    const obj = radius(offsetThreshold[22]);
+    const obj2 = { easing: radius(offsetThreshold[10]).Easing.linear, duration: 150 };
+    return obj.withTiming(tmp, obj2);
+  };
+  const obj4 = radius(offsetThreshold[10]);
+  fn2.__closure = { voiceMessageAnimationState, withTiming: radius(offsetThreshold[22]).withTiming, Easing: radius(offsetThreshold[10]).Easing };
+  fn2.__workletHash = 8516919791077;
+  fn2.__initData = __initData6;
+  ({ voiceMessageAnimationState, withTiming: radius(offsetThreshold[22]).withTiming, Easing: radius(offsetThreshold[10]).Easing });
+  const derivedValue1 = obj4.useDerivedValue(fn2);
+  const fn3 = function u() {
+    let items1;
+    const tmp = stateFromStores(voiceMessageAnimationState.get(), 2);
+    if (tmp[0] + tmp[1] === 2) {
+      items = [token, token, token, token];
+      items1 = items;
+    } else {
+      items1 = [token, RED_400, token, token];
+    }
+    const obj = radius(offsetThreshold[10]);
+    return obj.interpolateColor(derivedValue1.get(), closure_2_22, items1);
+  };
+  const obj6 = radius(offsetThreshold[10]);
+  fn3.__closure = { voiceMessageAnimationState, sendingColor: token, lockingColor: token, lockedColor: token, cancelingColor: RED_400, interpolateColor: radius(offsetThreshold[10]).interpolateColor, timing: derivedValue1, VOICE_MESSAGE_ANIMATION_STATES: items };
+  fn3.__workletHash = 4463544053380;
+  fn3.__initData = __initData7;
+  ({ voiceMessageAnimationState, sendingColor: token, lockingColor: token, lockedColor: token, cancelingColor: RED_400, interpolateColor: radius(offsetThreshold[10]).interpolateColor, timing: derivedValue1, VOICE_MESSAGE_ANIMATION_STATES: items });
+  const derivedValue2 = obj6.useDerivedValue(fn3);
+  const obj8 = radius(offsetThreshold[10]);
+  class E {
+    constructor() {
+      return derivedValue.get() * offsetThreshold;
+    }
+  }
+  E.__closure = { derivedCurrWaveHeight: derivedValue, offsetThreshold };
+  E.__workletHash = 7278593580538;
+  E.__initData = __initData2;
+  derivedValue3 = obj8.useDerivedValue(E);
+  const obj9 = radius(offsetThreshold[10]);
+  class S {
+    constructor() {
+      const obj = { fill: derivedValue2.get(), ry: radius + derivedValue3.get(), rx: radius, cy: radius + derivedValue3.get(), cx: radius };
+      return obj;
+    }
+  }
+  S.__closure = { voiceMessageEllipseBgColor: derivedValue2, radius, offset: derivedValue3 };
+  S.__workletHash = 12489173275515;
+  S.__initData = __initData3;
+  const animatedProps = obj9.useAnimatedProps(S);
+  const obj10 = radius(offsetThreshold[10]);
+  class I {
+    constructor() {
+      let value;
+      size = { position: "absolute", width: 2 * radius, height: value + derivedValue3.get(), bottom: 0 };
+      value = height.get();
+      return size;
+    }
+  }
+  I.__closure = { radius, height, offset: derivedValue3 };
+  I.__workletHash = 16593476434034;
+  I.__initData = __initData4;
+  const animatedStyle = obj10.useAnimatedStyle(I);
+  const obj11 = { style: animatedStyle, children: closure_13(Svg, obj12) };
+  const tmp10 = closure_18();
+  const View = height(offsetThreshold[10]).View;
+  obj12 = { children: closure_13(tmp10, { animatedProps, opacity }) };
+  Svg = radius(offsetThreshold[14]).Svg;
+  return closure_13(View, obj11);
+});
+let closure_28 = react.memo((initialAnimation) => {
+  let stringResult;
   initialAnimation = initialAnimation.initialAnimation;
   const recordingAnimation = initialAnimation.recordingAnimation;
   const voiceMessageState = initialAnimation.voiceMessageState;
   let stringResult5;
+  const exiting = initialAnimation.exiting;
+  const tmp = useVoiceMessagesUIStore((isUsingHoldGesture) => isUsingHoldGesture.isUsingHoldGesture);
   let tmp2 = useVoiceMessagesUIStore((savedVoiceMessageUploadData) => null != savedVoiceMessageUploadData.savedVoiceMessageUploadData);
-  const ref = noop.useRef(undefined);
+  let obj = react;
+  const ref = react.useRef(undefined);
   const tmp5 = useRefValueDefault(ref);
-  if (initialAnimation.exiting) {
+  if (exiting) {
     stringResult5 = tmp5;
-    let stringResult = tmp5;
+    stringResult = tmp5;
   } else {
     if (tmp2) {
       if (!tmp) {
-        const intl = util.intl;
-        stringResult = intl.string(util.t["m+sRVL"]);
+        const intl = intl7.intl;
+        stringResult = intl.string(intl7.t["m+sRVL"]);
         stringResult5 = stringResult;
       }
     }
     if (tmp2) {
       if (voiceMessageState === VoiceMessageAnimationState.SENDING) {
-        const intl6 = util.intl;
-        const stringResult1 = intl6.string(util.t["zPxm/X"]);
+        const intl6 = intl7.intl;
+        const stringResult1 = intl6.string(intl7.t["zPxm/X"]);
         stringResult5 = stringResult1;
         stringResult = stringResult1;
       }
     }
     if (tmp2) {
       if (voiceMessageState === VoiceMessageAnimationState.CANCELLING) {
-        const intl5 = util.intl;
-        const stringResult2 = intl5.string(util.t.sB81Bo);
+        const intl5 = intl7.intl;
+        const stringResult2 = intl5.string(intl7.t.sB81Bo);
         stringResult5 = stringResult2;
         stringResult = stringResult2;
       }
     }
     if (!tmp2) {
       if (voiceMessageState === VoiceMessageAnimationState.SENDING) {
-        const intl2 = util.intl;
-        const stringResult3 = intl2.string(util.t.cyL7DJ);
+        const intl2 = intl7.intl;
+        const stringResult3 = intl2.string(intl7.t.cyL7DJ);
         stringResult5 = stringResult3;
         stringResult = stringResult3;
       }
     }
     if (!tmp2) {
       if (voiceMessageState === VoiceMessageAnimationState.CANCELLING) {
-        const intl3 = util.intl;
-        const stringResult4 = intl3.string(util.t["a+A3+f"]);
+        const intl3 = intl7.intl;
+        const stringResult4 = intl3.string(intl7.t["a+A3+f"]);
         stringResult5 = stringResult4;
         stringResult = stringResult4;
       }
@@ -329,21 +465,23 @@ let closure_28 = noop.memo((initialAnimation) => {
       tmp2 = voiceMessageState !== VoiceMessageAnimationState.LOCKING;
     }
     if (!tmp2) {
-      const intl4 = util.intl;
-      stringResult5 = intl4.string(util.t["3qvtks"]);
+      const intl4 = intl7.intl;
+      stringResult5 = intl4.string(intl7.t["3qvtks"]);
       stringResult = stringResult5;
     }
   }
   items = [stringResult];
-  const effect = noop.useEffect(() => {
+  const effect = obj.useEffect(() => {
     ref.current = stringResult5;
   }, items);
   ReanimatedRexport2;
   class C {
     constructor() {
-      obj = { opacity: null };
+      let min;
+      let value;
+      const obj = { opacity: min(value, recordingAnimation.get()) };
+      min = Math.min;
       value = initialAnimation.get();
-      obj.opacity = Math.min(value, recordingAnimation.get());
       return obj;
     }
   }
@@ -371,60 +509,85 @@ const __initData16 = { code: "function VoiceMessageOverlayTsx16(){const{initialA
 const __initData17 = { code: "function VoiceMessageOverlayTsx17(){const{voiceMessageAnimationState}=this.__closure;return voiceMessageAnimationState.get()[1];}" };
 const __initData18 = { code: "function VoiceMessageOverlayTsx18(state,previous){const{runOnJS,setVoiceMessageState}=this.__closure;if(state!==previous){runOnJS(setVoiceMessageState)(state);}}" };
 const __initData19 = { code: "function VoiceMessageOverlayTsx19(){const{initialAnimation}=this.__closure;return{opacity:initialAnimation.get()};}" };
-let closure_44 = noop.memo((channelId) => {
+let closure_44 = react.memo((channelId) => {
+  let IconButton;
+  let c3;
+  let intl;
+  let items4;
+  let items7;
+  let obj13;
+  let str;
+  let tmp15;
+  let tmp16;
+  let tmp29;
   channelId = channelId.channelId;
   const voiceMessageAnimationState = channelId.voiceMessageAnimationState;
   const exiting = channelId.exiting;
   let sharedValue;
+  _slicedToArray = undefined;
   let ref;
-  const token = channelId(sharedValue[19]).useToken(voiceMessageAnimationState(sharedValue[16]).modules.mobile.CHAT_INPUT_FLOATING_INLINE_FULL_GRADIENT_HEIGHT);
+  let tmp = channelId;
+  let obj = channelId(sharedValue[19]);
+  const token = obj.useToken(voiceMessageAnimationState(sharedValue[16]).modules.mobile.CHAT_INPUT_FLOATING_INLINE_FULL_GRADIENT_HEIGHT);
   const tmp5 = closure_21();
   const bottom = voiceMessageAnimationState(sharedValue[26])({ includeCustomKeyboardHeight: true, includeKeyboardHeight: true }).insets.bottom;
-  let obj = channelId(sharedValue[19]);
-  const keyboardOpenPaddingStyle = channelId(sharedValue[27]).useKeyboardOpenPaddingStyle();
-  const tmp7 = useVoiceMessagesUIStore((startTimeMillis) => null != startTimeMillis.startTimeMillis);
-  closure_129_0 = tmp7;
-  closure_129_1 = exiting;
   let obj2 = channelId(sharedValue[27]);
-  sharedValue = channelId(sharedValue[10]).useSharedValue(0);
-  closure_129_2 = sharedValue;
-  closure_129_3 = ref.useRef(performance.now());
+  const keyboardOpenPaddingStyle = obj2.useKeyboardOpenPaddingStyle();
+  const tmp7 = useVoiceMessagesUIStore((startTimeMillis) => null != startTimeMillis.startTimeMillis);
+  _require = tmp7;
+  sharedValue = undefined;
+  const obj3 = channelId(sharedValue[10]);
+  sharedValue = obj3.useSharedValue(0);
+  let closure_3 = ref.useRef(performance.now());
   items = [sharedValue];
   const effect = ref.useEffect(() => {
-    const obj = ReanimatedRexport2;
-    const obj2 = timing;
-    const result = sharedValue.set(obj.withDelay(500, obj2.withTiming(1, { easing: ReanimatedRexport2.Easing.quad, duration: 250 })));
+    set = sharedValue.set;
+    const withDelay = channelId(sharedValue[10]).withDelay;
+    channelId(sharedValue[10]);
+    const obj = channelId(sharedValue[22]);
+    const obj2 = { easing: channelId(sharedValue[10]).Easing.quad, duration: 250 };
+    const result = set(withDelay(500, obj.withTiming(1, obj2)));
   }, items);
   const items1 = [sharedValue, exiting];
   const effect1 = ref.useEffect(() => {
-    if (voiceMessageAnimationState) {
-      const obj2 = { easing: ReanimatedRexport2.Easing.quad, duration: 100 };
-      const result = sharedValue.set(timing.withTiming(0, obj2));
+    const tmp = exiting;
+    if (tmp) {
+      set = sharedValue.set;
+      const obj = { easing: channelId(sharedValue[10]).Easing.quad, duration: 100 };
+      const withTiming = channelId(sharedValue[22]).withTiming;
+      channelId(sharedValue[22]);
+      const result = set(withTiming(0, obj));
     }
   }, items1);
-  let obj3 = channelId(sharedValue[10]);
-  const sharedValue1 = channelId(sharedValue[10]).useSharedValue(0);
-  closure_129_4 = sharedValue1;
+  const obj4 = channelId(sharedValue[10]);
+  const sharedValue1 = obj4.useSharedValue(0);
   const items2 = [sharedValue, sharedValue1, tmp7];
   const effect2 = ref.useEffect(() => {
-    if (channelId) {
-      const obj2 = { easing: ReanimatedRexport2.Easing.quad, duration: 200 };
-      const result = ref.set(timing.withTiming(1, obj2));
+    const tmp = closure_0;
+    if (tmp) {
+      set = sharedValue1.set;
+      const obj = { easing: channelId(sharedValue[10]).Easing.quad, duration: 200 };
+      const withTiming = channelId(sharedValue[22]).withTiming;
+      channelId(sharedValue[22]);
+      const result = set(withTiming(1, obj));
       const _performance = performance;
-      if (performance.now() - _undefined.current < 500) {
-        const obj3 = { easing: tmp2(4566).Easing.quad, duration: 250 };
-        const result1 = sharedValue.set(tmp2(4837).withTiming(1, obj3));
-        const tmp2Result = tmp2(4837);
+      if (performance.now() - ref.current < 500) {
+        set2 = sharedValue.set;
+        const obj2 = { easing: channelId(sharedValue[10]).Easing.quad, duration: 250 };
+        const withTiming2 = channelId(sharedValue[22]).withTiming;
+        channelId(sharedValue[22]);
+        set2(withTiming2(1, obj2));
       }
     }
   }, items2);
-  const obj4 = channelId(sharedValue[10]);
   [tmp15, tmp16] = ref.useState(VoiceMessageAnimationState.SENDING);
+  _slicedToArray(ref.useState(VoiceMessageAnimationState.SENDING), 2);
   _slicedToArray = tmp16;
-  const tmp14 = _slicedToArray(ref.useState(VoiceMessageAnimationState.SENDING), 2);
+  const obj5 = channelId(sharedValue[10]);
+  const tmp3 = voiceMessageAnimationState;
   class A {
     constructor() {
-      return closure_1.get()[1];
+      return voiceMessageAnimationState.get()[1];
     }
   }
   A.__closure = { voiceMessageAnimationState };
@@ -432,240 +595,138 @@ let closure_44 = noop.memo((channelId) => {
   A.__initData = __initData17;
   class I {
     constructor(arg0, arg1) {
-      if (channelId !== arg1) {
-        tmp = closure_0;
-        tmp2 = closure_2;
-        obj = closure_0(closure_2[10]);
-        tmp3 = closure_3;
-        tmp4 = obj.runOnJS(closure_3)(channelId);
+      if (arg0 !== arg1) {
+        const obj = ReanimatedRexport2;
+        obj.runOnJS(c3)(arg0);
       }
-      return;
     }
   }
-  const obj5 = channelId(sharedValue[10]);
   I.__closure = { runOnJS: channelId(sharedValue[10]).runOnJS, setVoiceMessageState: tmp16 };
   I.__workletHash = 3332201719722;
   I.__initData = __initData18;
+  ({ runOnJS: channelId(sharedValue[10]).runOnJS, setVoiceMessageState: tmp16 });
   const animatedReaction = obj5.useAnimatedReaction(A, I);
   ref = ref.useRef(null);
   const effect3 = ref.useEffect(() => {
+    const obj = useIsScreenReaderEnabled;
     if (obj.getIsScreenReaderEnabled()) {
       const obj2 = { ref };
-      const result = setAccessibilityFocus.setAccessibilityFocus(obj2);
-      const tmpResult = setAccessibilityFocus;
+      const tmpResult = react_native;
+      const result = tmpResult.setAccessibilityFocus(obj2);
     }
   }, []);
   const items3 = [channelId];
   const effect4 = ref.useEffect(() => {
-    closure_0 = closure_1_6.addEventListener("change", (event) => {
-      let tmp = "inactive" !== event;
-      if (tmp) {
-        tmp = "background" !== event;
-      }
+    let closure_0 = closure_1_6.addEventListener("change", (event) => {
+      const tmp = "inactive" !== event && "background" !== event;
       if (!tmp) {
         const ComponentDispatch = channelId(sharedValue[30]).ComponentDispatch;
+        const dispatchKeyed = ComponentDispatch.dispatchKeyed;
+        const VOICE_MESSAGE_SEND = constants.VOICE_MESSAGE_SEND;
         const obj = { isCancelling: true, cancelReason: channelId(sharedValue[31]).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND };
-        ComponentDispatch.dispatchKeyed(constants.VOICE_MESSAGE_SEND, closure_0, obj);
+        dispatchKeyed(VOICE_MESSAGE_SEND, closure_0, obj);
       }
     });
     return () => {
       closure_0.remove();
     };
   }, items3);
-  const obj6 = { runOnJS: channelId(sharedValue[10]).runOnJS, setVoiceMessageState: tmp16 };
+  const obj7 = channelId(sharedValue[10]);
   class K {
     constructor() {
-      obj = { opacity: closure_2.get() };
+      const obj = { opacity: sharedValue.get() };
       return obj;
     }
   }
   K.__closure = { initialAnimation: sharedValue };
   K.__workletHash = 14041876681603;
   K.__initData = __initData19;
-  const animatedStyle = channelId(sharedValue[10]).useAnimatedStyle(K);
-  const obj7 = channelId(sharedValue[10]);
-  const wakeLock = channelId(sharedValue[32]).useWakeLock("VoiceMessageOverlay");
-  const obj9 = { style: null, children: null };
-  const items4 = [tmp5.contentContainer, { bottom }, animatedStyle, ];
+  const animatedStyle = obj7.useAnimatedStyle(K);
+  const obj8 = channelId(sharedValue[32]);
+  const wakeLock = obj8.useWakeLock("VoiceMessageOverlay");
+  const obj9 = { style: items4, children: null };
+  items4 = [tmp5.contentContainer, { bottom }, animatedStyle, ];
   const items5 = [tmp5.contentContainerFloating, keyboardOpenPaddingStyle];
   items4[3] = items5;
-  obj9.style = items4;
+  const View = voiceMessageAnimationState(sharedValue[10]).View;
   const items6 = [closure_13(channelId(sharedValue[33]).ChatInputScrimGradient, { gradientHeight: token, inline: true }), closure_13(closure_28, { initialAnimation: sharedValue, recordingAnimation: sharedValue1, voiceMessageState: tmp15, exiting }), ];
   const obj10 = { style: tmp5.innerContainer, children: null };
   const obj11 = { style: tmp5.voiceChatContainer, children: null };
-  const obj12 = { isRecording: tmp7, initialAnimation: sharedValue, leftAccessory: null, rightAccessory: null };
-  const obj8 = channelId(sharedValue[32]);
+  const View2 = voiceMessageAnimationState(sharedValue[10]).View;
+  const obj12 = { isRecording: tmp7, initialAnimation: sharedValue, leftAccessory: closure_13(IconButton, obj13), rightAccessory: null };
+  obj13 = {
+    icon: voiceMessageAnimationState(sharedValue[36]),
+    variant: str,
+    size: "sm",
+    maxFontSizeMultiplier: 2,
+    accessibilityLabel: intl.string(tmp(sharedValue[21]).t.RdK9sV),
+    onPressIn() {
+      const obj = channelId(sharedValue[37]);
+      return obj.triggerHaptic();
+    },
+    onPress() {
+      const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
+      ComponentDispatch.dispatchKeyed(ComponentActionsKeyed.VOICE_MESSAGE_SEND, channelId, { isCancelling: true });
+    }
+  };
+  const tmp27 = voiceMessageAnimationState(sharedValue[34]);
+  IconButton = channelId(sharedValue[35]).IconButton;
+  str = "tertiary";
   const tmp24 = closure_15;
   const tmp26 = closure_5;
-  const obj13 = { icon: voiceMessageAnimationState(sharedValue[36]), variant: null, size: "sm", maxFontSizeMultiplier: 2, accessibilityLabel: null, onPressIn: null, onPress: null };
-  let str = "tertiary";
   if (tmp15 === VoiceMessageAnimationState.CANCELLING) {
     str = "destructive";
   }
-  obj13.variant = str;
-  const intl = tmp(tmp2[21]).intl;
-  obj13.accessibilityLabel = intl.string(channelId(sharedValue[21]).t.RdK9sV);
-  obj13.onPressIn = function onPressIn() {
-    return channelId(sharedValue[37]).triggerHaptic();
-  };
-  obj13.onPress = function onPress() {
-    const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-    ComponentDispatch.dispatchKeyed(ComponentActionsKeyed.VOICE_MESSAGE_SEND, channelId, { isCancelling: true });
-  };
-  obj12.leftAccessory = closure_13(channelId(sharedValue[35]).IconButton, obj13);
-  const obj15 = { ref, active: null, style: null, activeStyle: null, activeIconStyle: null, IconComponent: null, accessibilityLabel: null, onPress: null };
-  let tmp29 = tmp15 === tmp13.SENDING;
-  const tmp27 = voiceMessageAnimationState(sharedValue[34]);
+  intl = tmp(tmp2[21]).intl;
+  const obj15 = { ref, active: tmp29, style: null, activeStyle: null, activeIconStyle: null, IconComponent: null, accessibilityLabel: null, onPress: null };
+  tmp29 = tmp15 === tmp13.SENDING;
+  const tmp3Result = tmp3(tmp2[38]);
   if (!tmp29) {
     tmp29 = tmp15 === tmp13.LOCKED;
   }
-  obj15.active = tmp29;
   ({ floatingSendButton: obj14.style, floatingSendButtonActive: obj14.activeStyle, floatingSendButtonIconActive: obj14.activeIconStyle } = tmp5);
   if (!tmp7) {
+    let SendMessageIcon;
     if (!exiting) {
-      let SendMessageIcon = tmp(tmp2[40]).MicrophoneIcon;
+      SendMessageIcon = tmp(tmp2[40]).MicrophoneIcon;
     }
-    const obj16 = { children: null };
+    const obj16 = { children: items7 };
     obj15.IconComponent = SendMessageIcon;
     const intl2 = tmp(tmp2[21]).intl;
-    obj15.accessibilityLabel = intl2.string(tmp(tmp2[21]).t["+8GStU"]);
+    obj15.accessibilityLabel = intl2.string(tmp(sharedValue[21]).t["+8GStU"]);
     obj15.onPress = function onPress() {
       const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
       ComponentDispatch.dispatchKeyed(ComponentActionsKeyed.VOICE_MESSAGE_SEND, channelId, { isCancelling: false });
     };
-    obj12.rightAccessory = tmp25(tmp3Result, obj15);
-    obj11.children = tmp25(tmp27, obj12);
-    obj10.children = tmp25(voiceMessageAnimationState(sharedValue[10]).View, obj11);
-    items6[2] = tmp25(tmp26, obj10);
+    obj12.rightAccessory = closure_13(tmp3Result, obj15);
+    obj11.children = closure_13(tmp27, obj12);
+    obj10.children = closure_13(View2, obj11);
+    items6[2] = closure_13(tmp26, obj10);
     obj9.children = items6;
-    const items7 = [tmp23(voiceMessageAnimationState(sharedValue[10]).View, obj9), ];
+    items7 = [closure_14(View, obj9), ];
     const obj25 = { safeAreaBottom: bottom, initialAnimation: sharedValue, voiceMessageAnimationState };
-    items7[1] = tmp25(LockPill, obj25);
-    obj16.children = items7;
-    return tmp23(tmp24, obj16);
+    items7[1] = closure_13(LockPill, obj25);
+    return closure_14(tmp24, obj16);
   }
   SendMessageIcon = tmp(tmp2[39]).SendMessageIcon;
 });
-const memoResult = noop.memo((opacity) => {
-  const radius = opacity.radius;
-  const height = opacity.height;
-  const offsetThreshold = opacity.offsetThreshold;
-  const voiceMessageAnimationState = opacity.voiceMessageAnimationState;
-  let derivedValue3;
-  items = [derivedValue3];
-  const stateFromStores = radius(offsetThreshold[18]).useStateFromStores(items, () => derivedValue3.useReducedMotion, []);
-  const tmp2 = useVoiceMessagesUIStore((currWaveHeight) => currWaveHeight.currWaveHeight);
-  closure_4 = tmp2;
-  let obj = radius(offsetThreshold[18]);
-  const fn = function _() {
-    let num = 0.5;
-    if (!stateFromStores) {
-      let num2;
-      if (closure_4 != null) {
-        num2 = obj.get();
-      }
-      if (num2 == null) {
-        num2 = 0;
-      }
-      num = num2;
-      obj = closure_4;
-    }
-    return num;
-  };
-  fn.__closure = { useReducedMotion: stateFromStores, currWaveHeight: tmp2 };
-  fn.__workletHash = 2925868096827;
-  fn.__initData = __initData;
-  const derivedValue = radius(offsetThreshold[10]).useDerivedValue(fn);
-  const obj2 = radius(offsetThreshold[10]);
-  const token = radius(offsetThreshold[19]).useToken(height(offsetThreshold[16]).colors.BACKGROUND_BRAND);
-  const RED_400 = height(offsetThreshold[16]).unsafe_rawColors.RED_400;
-  closure_129_0 = voiceMessageAnimationState;
-  closure_129_1 = token;
-  closure_129_2 = RED_400;
-  closure_129_3 = token;
-  closure_129_4 = token;
-  const obj3 = radius(offsetThreshold[19]);
-  const fn2 = function _() {
-    const obj = timing;
-    return obj.withTiming(radius.get()[1], { easing: ReanimatedRexport2.Easing.linear, duration: 150 });
-  };
-  const obj4 = radius(offsetThreshold[10]);
-  fn2.__closure = { voiceMessageAnimationState, withTiming: radius(offsetThreshold[22]).withTiming, Easing: radius(offsetThreshold[10]).Easing };
-  fn2.__workletHash = 8516919791077;
-  fn2.__initData = __initData6;
-  const derivedValue1 = obj4.useDerivedValue(fn2);
-  closure_129_5 = derivedValue1;
-  const obj5 = { voiceMessageAnimationState, withTiming: radius(offsetThreshold[22]).withTiming, Easing: radius(offsetThreshold[10]).Easing };
-  const fn3 = function u() {
-    const tmp = _slicedToArray(radius.get(), 2);
-    if (tmp[0] + tmp[1] === 2) {
-      items = [height, height, stateFromStores, closure_4];
-      let items1 = items;
-    } else {
-      items1 = [height, offsetThreshold, stateFromStores, closure_4];
-    }
-    return ReanimatedRexport2.interpolateColor(derivedValue.get(), items, items1);
-  };
-  const obj6 = radius(offsetThreshold[10]);
-  fn3.__closure = { voiceMessageAnimationState, sendingColor: token, lockingColor: token, lockedColor: token, cancelingColor: RED_400, interpolateColor: radius(offsetThreshold[10]).interpolateColor, timing: derivedValue1, VOICE_MESSAGE_ANIMATION_STATES: items };
-  fn3.__workletHash = 4463544053380;
-  fn3.__initData = __initData7;
-  const derivedValue2 = obj6.useDerivedValue(fn3);
-  const obj7 = { voiceMessageAnimationState, sendingColor: token, lockingColor: token, lockedColor: token, cancelingColor: RED_400, interpolateColor: radius(offsetThreshold[10]).interpolateColor, timing: derivedValue1, VOICE_MESSAGE_ANIMATION_STATES: items };
-  class E {
-    constructor() {
-      return closure_5.get() * offsetThreshold;
-    }
-  }
-  E.__closure = { derivedCurrWaveHeight: derivedValue, offsetThreshold };
-  E.__workletHash = 7278593580538;
-  E.__initData = __initData2;
-  derivedValue3 = radius(offsetThreshold[10]).useDerivedValue(E);
-  const obj8 = radius(offsetThreshold[10]);
-  class S {
-    constructor() {
-      obj = { fill: closure_6.get(), ry: radius + closure_7.get(), rx: radius, cy: radius + closure_7.get(), cx: radius };
-      return obj;
-    }
-  }
-  S.__closure = { voiceMessageEllipseBgColor: derivedValue2, radius, offset: derivedValue3 };
-  S.__workletHash = 12489173275515;
-  S.__initData = __initData3;
-  const animatedProps = radius(offsetThreshold[10]).useAnimatedProps(S);
-  const obj9 = radius(offsetThreshold[10]);
-  class I {
-    constructor() {
-      size = { position: "absolute", width: 2 * radius, height: null, bottom: 0 };
-      value = height.get();
-      size.height = value + closure_7.get();
-      return size;
-    }
-  }
-  I.__closure = { radius, height, offset: derivedValue3 };
-  I.__workletHash = 16593476434034;
-  I.__initData = __initData4;
-  const animatedStyle = radius(offsetThreshold[10]).useAnimatedStyle(I);
-  const obj10 = radius(offsetThreshold[10]);
-  const obj11 = { style: animatedStyle, children: null };
-  const tmp10 = closure_18();
-  obj11.children = closure_13(radius(offsetThreshold[14]).Svg, { children: closure_13(closure_18(), { animatedProps, opacity: opacity.opacity }) });
-  return closure_13(height(offsetThreshold[10]).View, obj11);
-});
-let size = fn(2);
-let result = size.fileFinishedImporting("modules/voice_messages/native/components/VoiceMessageOverlay.tsx");
-
-export default noop.memo((channelId) => {
+const memoResult1 = react.memo((channelId) => {
+  let closure_2;
+  let first;
   channelId = channelId.channelId;
-  const tmp = useVoiceMessagesUIStore((showRecordingOverlay) => showRecordingOverlay.showRecordingOverlay);
-  closure_1 = tmp;
+  dependencyMap = undefined;
+  let tmp = useVoiceMessagesUIStore((showRecordingOverlay) => showRecordingOverlay.showRecordingOverlay);
+  let closure_1 = tmp;
   items = [ChannelStore];
-  const stateFromStores = channelId(504).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
+  const obj = channelId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   const tmp2 = useVoiceMessagesUIStore((voiceMessageAnimationState) => voiceMessageAnimationState.voiceMessageAnimationState);
-  const tmp3 = _slicedToArray(noop.useState(tmp), 2);
-  dependencyMap = tmp3[1];
+  [first, dependencyMap] = react.useState(tmp);
   const items1 = [tmp];
-  const effect = noop.useEffect(() => {
-    if (closure_1) {
+  const effect = react.useEffect(() => {
+    let closure_0;
+    const tmp = closure_1;
+    if (tmp) {
       closure_2(true);
     } else {
       const _setTimeout = setTimeout;
@@ -679,18 +740,22 @@ export default noop.memo((channelId) => {
   if (stateFromStores != null) {
     isForumLikeChannelResult = stateFromStores.isForumLikeChannel();
   }
-  let tmp6 = null;
+  let tmp7 = null;
   if (!isForumLikeChannelResult) {
-    let tmp7 = null;
+    let tmp8 = null;
     if (null != tmp2) {
-      tmp7 = null;
-      if (tmp3[0]) {
+      tmp8 = null;
+      if (first) {
         const obj2 = { channelId, voiceMessageAnimationState: tmp2, exiting: !tmp };
-        tmp7 = closure_13(closure_44, obj2);
+        tmp8 = closure_13(closure_44, obj2);
       }
     }
-    tmp6 = tmp7;
+    tmp7 = tmp8;
   }
-  return tmp6;
+  return tmp7;
 });
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/voice_messages/native/components/VoiceMessageOverlay.tsx");
+
+export default memoResult1;
 export const VoiceMessageEllipse = memoResult;

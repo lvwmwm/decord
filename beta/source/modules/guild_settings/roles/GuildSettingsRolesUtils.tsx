@@ -5,43 +5,48 @@
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName, useGuildMembers, useGuildRoleMembers, useQueryGuildMembers
 
 // Module 17414 (GuildSettingsRolesUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import Constants from "Constants" /* 1074 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
 import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
 import GuildUtilsDefault from "GuildUtils" /* 5831 */;
 import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 6550 */;
-import noop from "module_19" /* 19 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 17405 */;
+import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap, roles, user;
 
-require = fn;
-const constants = fn(17405).GuildSettingsRoleEditSections;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+let tmp;
+const AnalyticsUtilsDefault = tmp(1241);
+let react = react_mod;
+const constants = GuildSettingsConstants.GuildSettingsRoleEditSections;
+const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRolesUtils.tsx");
 
 export const ADD_MEMBER_QUERY_LIMIT = 50;
 export const MAX_PREFETCH_MEMBER_COUNT = 1000;
 export const useGuildMembers = function useGuildMembers(id, callback) {
+  let stateFromStoresArray;
   _require = id;
-  closure_1 = callback;
+  let closure_1 = callback;
   const items = [GuildMemberStore];
   const items1 = [id, callback];
-  stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => {
-    const members = GuildMemberStore.getMembers(closure_0);
+  const obj = require("get initialized");
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+    members = members.getMembers(closure_0);
     let found = members;
-    if (null != closure_1) {
+    if (null != callback) {
       found = members.filter(tmp);
     }
     return found;
   }, items1);
-  const obj = require("initialize");
   const items2 = [UserStore];
   const items3 = [stateFromStoresArray];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items2, () => current.reduce((acc, userId) => {
+  const obj2 = require("get initialized");
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items2, () => stateFromStoresArray.reduce((acc, userId) => {
     user = user.getUser(userId.userId);
     if (null != user) {
       acc[userId.userId] = user;
@@ -50,30 +55,25 @@ export const useGuildMembers = function useGuildMembers(id, callback) {
   }, {}), items3);
   const items4 = [stateFromStoresArray, stateFromStoresObject, id];
   return stateFromStoresObject.useMemo(() => {
+    let obj4;
     const items = [];
-    const iter = current[Symbol.iterator]();
+    const iter = stateFromStoresArray[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp3 = nextResult;
-      let tmp5 = ref[nextResult.userId];
+      let tmp5 = stateFromStoresObject[nextResult.userId];
       let obj = tmp5;
       if (null != tmp5) {
         let nick = tmp3.nick;
+        let push = items.push;
         if (nick == null) {
-          let obj2 = UserUtilsDefault;
+          let obj2 = id2(stateFromStoresArray[6]);
           nick = obj2.getName(obj);
         }
-        let obj5 = { name: nick, userTag: null, id: null, avatarSource: null, avatarURL: null, bot: null, verifiedBot: null, roles: null, key: null, user: null };
-        let obj4 = UserUtilsDefault;
-        obj5.userTag = obj4.getUserTag(obj);
-        obj5.id = tmp3.userId;
-        obj5.avatarSource = obj.getAvatarSource(closure_0);
-        obj5.avatarURL = obj.getAvatarURL(closure_0, 80);
-        obj5.bot = obj.bot;
-        obj5.verifiedBot = obj.isVerifiedBot();
+        let obj5 = { name: nick, userTag: obj4.getUserTag(obj), id: tmp3.userId, avatarSource: obj.getAvatarSource(closure_0), avatarURL: obj.getAvatarURL(closure_0, 80), bot: obj.bot, verifiedBot: obj.isVerifiedBot(), roles: null, key: null, user: obj };
+        obj4 = id2(stateFromStoresArray[6]);
         ({ roles: obj3.roles, userId: obj3.key } = tmp3);
-        obj5.user = obj;
-        let arr = items.push(obj5);
+        let arr = push(obj5);
       }
       continue;
     }
@@ -81,73 +81,68 @@ export const useGuildMembers = function useGuildMembers(id, callback) {
   }, items4);
 };
 export const useGuildRoleMembers = function useGuildRoleMembers(id, id2, onMembersLoadFail) {
-  _require = id;
-  closure_1 = id2;
+  let current;
+  let ref;
+  let closure_1 = id2;
   dependencyMap = onMembersLoadFail;
-  noop = noop.useRef(onMembersLoadFail);
-  const effect = noop.useEffect(() => {
-    closure_3.current = current;
+  react = react.useRef(onMembersLoadFail);
+  const effect = react.useEffect(() => {
+    ref.current = current;
   });
   let items = [id, id2];
-  const effect1 = noop.useEffect(() => {
-    const membersForRole = GuildRoleMemberActionCreators.requestMembersForRole(closure_0, closure_1);
+  const effect1 = react.useEffect(() => {
+    const obj = GuildRoleMemberActionCreators;
+    const membersForRole = obj.requestMembersForRole(id, id2);
     membersForRole.catch(ref.current);
   }, items);
   const items1 = [id2];
-  const callback = noop.useCallback((roles) => {
+  const callback = react.useCallback((roles) => {
     roles = roles.roles;
-    return roles.includes(closure_1);
+    return roles.includes(id2);
   }, items1);
-  closure_129_0 = id;
-  closure_129_1 = callback;
+  _require = id;
+  let obj = require("get initialized");
   const items2 = [GuildMemberStore];
   const items3 = [id, callback];
-  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items2, () => {
-    const members = GuildMemberStore.getMembers(closure_0);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items2, () => {
+    members = members.getMembers(closure_0);
     let found = members;
-    if (null != closure_1) {
+    if (null != callback) {
       found = members.filter(tmp);
     }
     return found;
   }, items3);
-  closure_129_2 = stateFromStoresArray;
-  let obj = require("initialize");
+  let obj2 = require("get initialized");
   const items4 = [UserStore];
   const items5 = [stateFromStoresArray];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items4, () => current.reduce((acc, userId) => {
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items4, () => stateFromStoresArray.reduce((acc, userId) => {
     user = user.getUser(userId.userId);
     if (null != user) {
       acc[userId.userId] = user;
     }
     return acc;
   }, {}), items5);
-  closure_129_3 = stateFromStoresObject;
   const items6 = [stateFromStoresArray, stateFromStoresObject, id];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    let obj4;
     const items = [];
-    const iter = current[Symbol.iterator]();
+    const iter = stateFromStoresArray[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp3 = nextResult;
-      let tmp5 = ref[nextResult.userId];
+      let tmp5 = stateFromStoresObject[nextResult.userId];
       let obj = tmp5;
       if (null != tmp5) {
         let nick = tmp3.nick;
+        let push = items.push;
         if (nick == null) {
-          let obj2 = UserUtilsDefault;
+          let obj2 = id2(stateFromStoresArray[6]);
           nick = obj2.getName(obj);
         }
-        let obj5 = { name: nick, userTag: null, id: null, avatarSource: null, avatarURL: null, bot: null, verifiedBot: null, roles: null, key: null, user: null };
-        let obj4 = UserUtilsDefault;
-        obj5.userTag = obj4.getUserTag(obj);
-        obj5.id = tmp3.userId;
-        obj5.avatarSource = obj.getAvatarSource(closure_0);
-        obj5.avatarURL = obj.getAvatarURL(closure_0, 80);
-        obj5.bot = obj.bot;
-        obj5.verifiedBot = obj.isVerifiedBot();
+        let obj5 = { name: nick, userTag: obj4.getUserTag(obj), id: tmp3.userId, avatarSource: obj.getAvatarSource(closure_0), avatarURL: obj.getAvatarURL(closure_0, 80), bot: obj.bot, verifiedBot: obj.isVerifiedBot(), roles: null, key: null, user: obj };
+        obj4 = id2(stateFromStoresArray[6]);
         ({ roles: obj3.roles, userId: obj3.key } = tmp3);
-        obj5.user = obj;
-        let arr = items.push(obj5);
+        let arr = push(obj5);
       }
       continue;
     }
@@ -155,53 +150,60 @@ export const useGuildRoleMembers = function useGuildRoleMembers(id, id2, onMembe
   }, items6);
 };
 export const useQueryGuildMembers = function useQueryGuildMembers(id, formatted) {
-  closure_0 = id;
-  closure_1 = formatted;
-  noop.useRef(false);
+  let closure_0 = id;
+  let closure_1 = formatted;
+  const ref = react.useRef(false);
   const items = [id, formatted];
-  const effect = noop.useEffect(() => {
-    const members = GuildUtilsDefault.requestMembers(closure_0, closure_1, 200);
-    let current = "" === closure_1;
+  const effect = react.useEffect(() => {
+    const obj = GuildUtilsDefault;
+    const members = obj.requestMembers(id, formatted, 200);
+    let current = "" === formatted;
     if (!current) {
       current = ref.current;
     }
     if (!current) {
-      AnalyticsUtilsDefault.track(AnalyticEvents.SEARCH_STARTED, { search_type: "Role Members" });
-      ref.current = true;
       const tmpResult = AnalyticsUtilsDefault;
+      tmpResult.track(AnalyticEvents.SEARCH_STARTED, { search_type: "Role Members" });
+      ref.current = true;
     }
   }, items);
 };
 export const filterFullMembersByQuery = function filterFullMembersByQuery(str, id) {
-  const formatted = str.trim().toLowerCase();
+  str = str.trim();
+  const formatted = str.toLowerCase();
   let tmp8Result = id.id === formatted;
   if (!tmp8Result) {
-    tmp8Result = fuzzysearchDefault(formatted, id.name.toLowerCase());
+    const str2 = id.name;
+    const tmp5 = fuzzysearchDefault;
+    tmp8Result = tmp5(formatted, str2.toLowerCase());
   }
   if (!tmp8Result) {
-    tmp8Result = fuzzysearchDefault(formatted, id.userTag.toLowerCase());
+    const str3 = id.userTag;
+    const tmp8 = fuzzysearchDefault;
+    tmp8Result = tmp8(formatted, str3.toLowerCase());
   }
   return tmp8Result;
 };
 export const getSectionAnalyticsName = function getSectionAnalyticsName(DISPLAY) {
   if (constants.MEMBERS === DISPLAY) {
     return "Members";
-  } else if (tmp.PERMISSIONS === DISPLAY) {
+  } else if (constants.PERMISSIONS === DISPLAY) {
     return "Permissions";
-  } else if (tmp.DISPLAY === DISPLAY) {
+  } else if (constants.DISPLAY === DISPLAY) {
     return "Role Settings";
-  } else if (tmp.VERIFICATIONS === DISPLAY) {
+  } else if (constants.VERIFICATIONS === DISPLAY) {
     return "Connections";
   } else {
-    GlobalUtils.assertNever(DISPLAY);
+    const obj = GlobalUtils;
+    obj.assertNever(DISPLAY);
   }
 };
 export const filterRole = function filterRole(name, str) {
   let hasItem = "" === str;
   if (!hasItem) {
-    const formatted = name.name.toLowerCase();
-    hasItem = formatted.includes(str.toLowerCase());
     str = name.name;
+    const formatted = str.toLowerCase();
+    hasItem = formatted.includes(str.toLowerCase());
   }
   return hasItem;
 };

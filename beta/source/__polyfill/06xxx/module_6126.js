@@ -4,17 +4,18 @@
 // Exports: useMountReactions
 
 // Module 6126
-import _mod19 from "module_19" /* 19 */;
-import transformIntoHandlerTags from "transformIntoHandlerTags" /* 6104 */;
+import react from "react" /* 19 */;
+import selectProperties from "selectProperties" /* 6104 */;
 import MountRegistry2 from "MountRegistry" /* 6107 */;
 
 function shouldUpdateDetector(arg0, handlerTag) {
   if (undefined === arg0) {
     return false;
   } else {
-    const result = transformIntoHandlerTags.transformIntoHandlerTags(arg0);
+    const obj = selectProperties;
+    const result = obj.transformIntoHandlerTags(arg0);
     for (const item10012 of result) {
-      if (item10012 === arg1.handlerTag) {
+      if (item10012 === handlerTag.handlerTag) {
         obj2.return();
         let flag = true;
         return true;
@@ -23,11 +24,11 @@ function shouldUpdateDetector(arg0, handlerTag) {
     return false;
   }
 }
-const useEffect = _mod19.useEffect;
+const useEffect = react.useEffect;
 
 export const useMountReactions = function useMountReactions(detectorUpdater, current2) {
-  closure_0 = detectorUpdater;
-  closure_1 = current2;
+  let closure_0 = detectorUpdater;
+  let closure_1 = current2;
   const items = [detectorUpdater, current2];
   useEffect(() => {
     const MountRegistry = MountRegistry2.MountRegistry;

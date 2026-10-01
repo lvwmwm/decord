@@ -5,19 +5,20 @@
 // Exports: default
 
 // Module 15336 (useBenchmarkResults)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/useBenchmarkResults.tsx");
 
 export default function useBenchmarkResults() {
-  const tmp = _slicedToArray(noop.useState([]), 2);
-  closure_0 = tmp[1];
-  closure_1 = noop.useRef(0);
-  return {
-    results: tmp[0],
-    addMount: noop.useCallback((label, elapsedMs) => {
+  let closure_0;
+  let first;
+  [first, closure_0] = react.useState([]);
+  let closure_1 = react.useRef(0);
+  let obj = {
+    results: first,
+    addMount: react.useCallback((label, elapsedMs) => {
       label((arg0) => {
         const obj = { kind: "mount", id: +elapsedMs.current, label, elapsedMs };
         elapsedMs.current = +elapsedMs.current + 1;
@@ -25,7 +26,8 @@ export default function useBenchmarkResults() {
         return items;
       });
     }, []),
-    addScroll: noop.useCallback((arg0) => {
+    addScroll: react.useCallback((arg0) => {
+      let ref;
       closure_0 = arg0;
       closure_0((arg0) => {
         const obj = { kind: "scroll", id: +ref.current };
@@ -35,6 +37,7 @@ export default function useBenchmarkResults() {
         return items;
       });
     }, []),
-    clear: noop.useCallback(() => closure_0([]), [])
+    clear: react.useCallback(() => closure_0([]), [])
   };
+  return obj;
 };

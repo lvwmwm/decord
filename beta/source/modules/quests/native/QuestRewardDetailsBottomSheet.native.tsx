@@ -5,88 +5,114 @@
 // Exports: default
 
 // Module 10680 (QuestRewardDetailsBottomSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import intl3 from "intl" /* 1115 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import QuestRewardTypes from "QuestRewardTypes" /* 7121 */;
 import QuestUtils from "QuestUtils" /* 10678 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 10681 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 10694 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let BottomSheet;
+
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
 function QuestRewardDetailsBottomSheet(quest) {
+  let currentUser;
+  let intl;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
   quest = quest.quest;
   const tmp = closure_9();
   const items = [quest.config];
-  const memo = noop.useMemo(() => QuestRewardUtils.isCollectibleQuestRewardPremiumExtendable(quest.config), items);
+  const memo = react.useMemo(() => {
+    const obj = QuestRewardUtils;
+    return obj.isCollectibleQuestRewardPremiumExtendable(quest.config);
+  }, items);
   const items1 = [quest, memo];
-  const memo1 = noop.useMemo(() => {
-    const type = QuestRewardUtils.getQuestPrimaryReward(quest).type;
+  const memo1 = react.useMemo(() => {
+    const obj = QuestRewardUtils;
+    const type = obj.getQuestPrimaryReward(quest).type;
     if (QuestRewardTypes.QuestRewardTypes.COLLECTIBLE === type) {
       const intl2 = tmp(1115).intl;
+      const string = intl2.string;
       const t = tmp(1115).t;
-      return intl2.string(memo ? t["66YyBJ"] : t.ABD2CN);
-    } else if (tmp(7121).QuestRewardTypes.FRACTIONAL_PREMIUM === type) {
+      return string(memo ? t["66YyBJ"] : t.ABD2CN);
+    } else if (QuestRewardTypes.QuestRewardTypes.FRACTIONAL_PREMIUM === type) {
       const intl = tmp(1115).intl;
-      return intl.string(tmp(1115).t.maMtqM);
+      return intl.string(intl3.t.maMtqM);
     } else {
       return null;
     }
   }, items1);
-  const items2 = [UserStore];
-  const stateFromStores = quest(504).useStateFromStores(items2, () => currentUser.getCurrentUser());
   let obj = quest(504);
-  const tmp4 = quest;
-  const defaultRewardName = quest(10694).getDefaultRewardName(quest.config, stateFromStores);
-  const obj3 = { direction: "vertical", spacing: memo(576).space.PX_16, style: tmp.wrapper, children: null };
-  const obj4 = { align: "center", direction: "horizontal", spacing: memo(576).space.PX_16, children: null };
-  const items3 = [closure_6(memo(10745), { quest, height: 56, width: 56, withAnimation: true }), ];
-  const obj5 = { direction: "vertical", spacing: memo(576).space.PX_4, style: tmp.rewardDetailsCopy, children: null };
-  const obj6 = { variant: "eyebrow", color: "text-subtle", children: null };
-  let intl = quest(1115).intl;
-  obj6.children = intl.string(quest(1115).t["jyYgZ+"]);
-  const items4 = [closure_6(quest(4832).Text, obj6), closure_6(quest(4832).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
-  obj5.children = items4;
-  items3[1] = closure_7(quest(5279).Stack, obj5);
-  obj4.children = items3;
-  const items5 = [closure_7(quest(5279).Stack, obj4), ];
+  const items2 = [UserStore];
+  const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
+  const obj2 = quest(10694);
+  const defaultRewardName = obj2.getDefaultRewardName(quest.config, stateFromStores);
+  BottomSheet = quest(6571).BottomSheet;
+  const obj3 = { direction: "vertical", spacing: memo(576).space.PX_16, style: tmp.wrapper, children: items5 };
+  const Stack = quest(5279).Stack;
+  const obj4 = { align: "center", direction: "horizontal", spacing: memo(576).space.PX_16, children: items3 };
+  const Stack2 = quest(5279).Stack;
+  items3 = [closure_6(memo(10745), { quest, height: 56, width: 56, withAnimation: true }), ];
+  const obj5 = { direction: "vertical", spacing: memo(576).space.PX_4, style: tmp.rewardDetailsCopy, children: items4 };
+  const Stack3 = quest(5279).Stack;
+  const obj6 = { variant: "eyebrow", color: "text-subtle", children: intl.string(quest(1115).t["jyYgZ+"]) };
+  const Text = quest(4832).Text;
+  intl = quest(1115).intl;
+  items4 = [closure_6(Text, obj6), closure_6(quest(4832).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
+  items3[1] = closure_7(Stack3, obj5);
+  items5 = [closure_7(Stack2, obj4), ];
   let tmp9Result = null != memo1;
+  const tmp4 = quest;
   if (tmp9Result) {
-    const obj7 = { children: null };
+    const obj7 = { children: items6 };
     const obj8 = { style: tmp.separator };
-    const items6 = [tmp8(View, obj8), ];
+    items6 = [closure_6(View, obj8), ];
     const obj9 = { variant: "text-md/normal", color: "text-subtle", children: memo1 };
-    items6[1] = tmp8(tmp4(4832).Text, obj9);
-    obj7.children = items6;
+    items6[1] = closure_6(tmp4(4832).Text, obj9);
     tmp9Result = tmp9(closure_8, obj7);
   }
-  const obj2 = quest(10694);
   items5[1] = tmp9Result;
-  obj3.children = items5;
-  return closure_6(quest(6571).BottomSheet, { startExpanded: true, children: closure_7(quest(5279).Stack, obj3) });
+  const obj10 = { startExpanded: true, children: closure_7(Stack, obj3) };
+  return closure_6(BottomSheet, obj10);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { wrapper: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 }, rewardDetailsCopy: { flexShrink: 1 }, separator: null };
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };
-obj2.separator = { height: 1, backgroundColor: nativeDefault.colors.BORDER_STRONG };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { wrapper: obj2, rewardDetailsCopy: { flexShrink: 1 }, separator: obj3 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+obj3 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_STRONG };
+let closure_9 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/quests/native/QuestRewardDetailsBottomSheet.native.tsx");
 
 export default function QuestRewardDetailsBottomSheetConnected(questId) {
-  const callback = noop.useCallback(() => {
-    const result = QuestUtils.showQuestUnavailableAlert();
-    ActionSheetActionCreatorsDefault.hideActionSheet();
+  questId = questId.questId;
+  const callback = react.useCallback(() => {
+    const obj = QuestUtils;
+    const result = obj.showQuestUnavailableAlert();
+    const obj2 = ActionSheetActionCreatorsDefault;
+    obj2.hideActionSheet();
   }, []);
-  const nonNullableQuest = hooks_QuestHooks.useNonNullableQuest(questId.questId, callback);
+  let obj = hooks_QuestHooks;
+  const nonNullableQuest = obj.useNonNullableQuest(questId, callback);
   let tmp3 = null;
   if (null != nonNullableQuest) {
-    const obj2 = { quest: nonNullableQuest };
-    tmp3 = timestampProducer(QuestRewardDetailsBottomSheet, obj2);
+    let obj2 = { quest: nonNullableQuest };
+    tmp3 = metroRequire(QuestRewardDetailsBottomSheet, obj2);
   }
   return tmp3;
 };

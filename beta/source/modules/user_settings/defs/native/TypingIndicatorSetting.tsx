@@ -5,7 +5,7 @@
 
 // Module 14903 (TypingIndicatorSetting)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import _modDef3717 from "module_3717" /* 3717 */;
 import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11449 */;
@@ -17,11 +17,14 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
+let usePreNavigationAction;
+let useTrailing;
+const UserSettingsSections = Constants.UserSettingsSections;
 const dismissibleBadgeRouteProps = DismissibleBadgeUtils.createDismissibleBadgeRouteProps(dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE);
 ({ useTrailing, usePreNavigationAction } = dismissibleBadgeRouteProps);
-const route = SettingBuilders.createRoute({
+let obj = {
   useTitle() {
-    const intl = util.intl;
+    const intl = intl2.intl;
     return intl.string(_modDef3717["pT+BVM"]);
   },
   parent: null,
@@ -29,18 +32,21 @@ const route = SettingBuilders.createRoute({
   useTrailing,
   usePreNavigationAction,
   usePredicate() {
-    return "settings" === CustomTypingIndicatorExperiment.useCustomTypingIndicatorConfig("TypingIndicatorSetting").entryPoint;
+    const obj = CustomTypingIndicatorExperiment;
+    return "settings" === obj.useCustomTypingIndicatorConfig("TypingIndicatorSetting").entryPoint;
   },
   screen: {
-    route: Constants.UserSettingsSections.TYPING_INDICATOR,
+    route: UserSettingsSections.TYPING_INDICATOR,
     getComponent() {
       return require("CustomTypingIndicatorEditScreen").default;
     },
     usePersistentBadge() {
-      return { badgeType: SettingRendererTypes.SettingsBadgeType.BETA };
+      const obj = { badgeType: SettingRendererTypes.SettingsBadgeType.BETA };
+      return obj;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/TypingIndicatorSetting.tsx");
 
 export default route;

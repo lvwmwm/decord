@@ -10,77 +10,110 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5890 */;
 import ObscuredSurfaceDefault from "ObscuredSurface" /* 8164 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-get_ActivityIndicator = fn(17);
-({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { fill: { flex: 1 }, scrollView: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16 }, scrollViewContentLandscape: { flexDirection: "row", alignItems: "center", width: "100%", flexGrow: 1, gap: 16 }, scrollViewContentPortrait: { flexDirection: "column", width: "100%", flexGrow: 1, gap: 16 }, header: { paddingTop: 24 }, bodyContainer: { flexDirection: "column", gap: 16, padding: 16 }, bodyContainerBackground: null, footerPortrait: null, separator: null };
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16 };
-obj2.bodyContainerBackground = { marginHorizontal: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg };
-obj2.footerPortrait = { flexDirection: "column", padding: 16, gap: 16 };
-let obj4 = { marginHorizontal: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg };
-obj2.separator = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-let closure_9 = createStyles.createStyles(obj2);
-let size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { fill: { flex: 1 }, scrollView: obj2, scrollViewContentLandscape: { flexDirection: "row", alignItems: "center", width: "100%", flexGrow: 1, gap: 16 }, scrollViewContentPortrait: { flexDirection: "column", width: "100%", flexGrow: 1, gap: 16 }, header: { paddingTop: 24 }, bodyContainer: { flexDirection: "column", gap: 16, padding: 16 }, bodyContainerBackground: obj3, footerPortrait: { flexDirection: "column", padding: 16, gap: 16 }, separator: obj4 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16 };
+createStyles = createStyles.createStyles;
+obj3 = { marginHorizontal: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg };
+obj4 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+let closure_9 = createStyles(obj);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/oauth2/native/OAuth2AuthorizeContent.tsx");
 
 export default function OAuth2AuthorizeContent(onScroll) {
+  let appDetails;
+  let body;
+  let bottom;
+  let centerContent;
+  let closure_4;
+  let first;
+  let first1;
+  let first2;
+  let footer;
+  let hasContentBackground;
+  let header;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items6;
+  let items7;
+  let items8;
+  let left;
+  let obj4;
+  let obscured;
+  let right;
+  let setAllContentSeen;
+  let tmp3Result2;
   ({ header, footer, appDetails, setAllContentSeen } = onScroll);
   onScroll = onScroll.onScroll;
-  height = undefined;
+  first = undefined;
   closure_4 = undefined;
   first1 = undefined;
-  closure_6 = undefined;
-  closure_8 = undefined;
+  metroRequire = undefined;
+  metroImportDefault = undefined;
+  metroImportAll = undefined;
   ({ body, centerContent, hasContentBackground, obscured } = onScroll);
-  const tmp = closure_9();
-  const ref = noop.useRef(null);
-  const size = useWindowDimensionsDefault();
+  let tmp = closure_9();
+  let obj = react;
+  const ref = react.useRef(null);
+  const tmp4 = dependencyMap;
+  size = useWindowDimensionsDefault();
   ({ left, right, bottom } = useSafeAreaInsetsDefault());
-  [height, closure_4] = noop.useState(-1);
-  [first1, closure_6] = noop.useState(-1);
-  const tmp11 = _slicedToArray(noop.useState(-1), 2);
-  closure_7 = tmp11[1];
-  let tmp12 = height >= 0;
-  if (tmp12) {
-    tmp12 = first1 >= 0;
+  useSafeAreaInsetsDefault();
+  [first, closure_4] = react.useState(-1);
+  [first1, metroRequire] = react.useState(-1);
+  [first2, metroImportDefault] = react.useState(-1);
+  let tmp13 = first >= 0 && first1 >= 0;
+  if (tmp13) {
+    tmp13 = null == footer || first2 >= 0;
   }
-  if (tmp12) {
-    tmp12 = null == footer || tmp11[0] >= 0;
-    const tmp13 = null == footer || tmp11[0] >= 0;
-  }
-  closure_8 = tmp12;
-  const items = [height, tmp12, first1, setAllContentSeen];
-  const layoutEffect = noop.useLayoutEffect(() => {
-    if (closure_8) {
-      const obj = { layoutMeasurement: null, contentSize: null };
-      const obj2 = { height: first1 };
-      obj.layoutMeasurement = obj2;
-      const obj3 = { height };
-      obj.contentSize = obj3;
+  metroImportAll = tmp13;
+  const items = [first, tmp13, first1, setAllContentSeen];
+  const layoutEffect = obj.useLayoutEffect(() => {
+    let obj2;
+    let obj3;
+    const tmp = closure_8;
+    if (tmp) {
+      const obj = { layoutMeasurement: obj2, contentSize: obj3 };
       let contentOffset = obj.contentOffset;
+      const layoutMeasurement = obj.layoutMeasurement;
+      obj2 = { height: first1 };
+      obj3 = { height };
       if (contentOffset === undefined) {
         contentOffset = { y: 0 };
       }
-      if (obj.layoutMeasurement.height + contentOffset.y >= obj.contentSize.height - 5) {
+      if (layoutMeasurement.height + contentOffset.y >= obj.contentSize.height - 5) {
         if (setAllContentSeen != null) {
-          tmp6(true);
+          tmp7(true);
         }
       } else if (setAllContentSeen != null) {
-        tmp3(false);
+        tmp4(false);
       }
     }
   }, items);
-  let obj2 = { style: null, children: null };
-  const items1 = [tmp.fill, { marginBottom: bottom }];
-  obj2.style = items1;
+  let obj2 = { style: items1, children: items8 };
+  items1 = [tmp.fill, { marginBottom: bottom }];
   let obj3 = {
-    style: null,
-    contentContainerStyle: null,
+    style: items2,
+    contentContainerStyle: items3,
     ref,
     onContentSizeChange(arg0, arg1) {
       const current = ref.current;
@@ -96,10 +129,11 @@ export default function OAuth2AuthorizeContent(onScroll) {
     onScroll(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
       let contentOffset = nativeEvent.contentOffset;
+      const layoutMeasurement = nativeEvent.layoutMeasurement;
       if (contentOffset === undefined) {
         contentOffset = { y: 0 };
       }
-      if (nativeEvent.layoutMeasurement.height + contentOffset.y >= nativeEvent.contentSize.height - 5) {
+      if (layoutMeasurement.height + contentOffset.y >= nativeEvent.contentSize.height - 5) {
         if (setAllContentSeen != null) {
           tmp(true);
         }
@@ -109,48 +143,42 @@ export default function OAuth2AuthorizeContent(onScroll) {
       }
     },
     centerContent,
-    children: null
+    children: metroImportAll(tmp3Result2, obj4)
   };
-  const items2 = [tmp.scrollView, { paddingLeft: left, paddingRight: right }];
-  obj3.style = items2;
-  const items3 = [size.width > size.height ? tmp.scrollViewContentLandscape : tmp.scrollViewContentPortrait];
-  obj3.contentContainerStyle = items3;
-  const tmp6 = useSafeAreaInsetsDefault();
-  const obj4 = { obscured, children: null };
-  let tmp17Result = null;
-  const tmp18 = hasOwnProperty;
+  items2 = [tmp.scrollView, { paddingLeft: left, paddingRight: right }];
+  items3 = [tmp5 ? tmp.scrollViewContentLandscape : tmp.scrollViewContentPortrait];
+  let tmp18Result = null;
+  obj4 = { obscured, children: items4 };
   const tmp3Result = KeyboardAwareViewDefault;
+  const tmp19 = hasOwnProperty;
+  tmp3Result2 = ObscuredSurfaceDefault;
   if (null != header) {
     const obj5 = { style: tmp.header, children: header };
-    tmp17Result = tmp17(React4, obj5);
+    tmp18Result = tmp18(React3, obj5);
   }
-  const items4 = [tmp17Result, ];
+  items4 = [tmp18Result, ];
   const items5 = [tmp.bodyContainer, , ];
   let prop = null;
   if (hasContentBackground) {
     prop = tmp.bodyContainerBackground;
   }
   items5[1] = prop;
-  const obj6 = { style: items5, children: null };
+  const obj6 = { style: items5, children: items6 };
   items5[2] = size.width > size.height ? { flex: 1 } : {};
-  const items6 = [body, ];
-  let tmp15Result = null;
+  items6 = [body, ];
+  let tmp16Result = null;
   if (null != appDetails) {
-    const obj7 = { children: null };
+    const obj7 = { children: items7 };
     const obj8 = { style: tmp.separator };
-    const items7 = [tmp17(tmp22, obj8), ];
+    items7 = [metroRequire(React3, obj8), ];
     const obj9 = { children: appDetails };
-    items7[1] = tmp17(tmp22, obj9);
-    obj7.children = items7;
-    tmp15Result = tmp15(React5, obj7);
+    items7[1] = metroRequire(React3, obj9);
+    tmp16Result = tmp16(metroImportDefault, obj7);
   }
-  items6[1] = tmp15Result;
-  obj6.children = items6;
-  items4[1] = React6(React4, obj6);
-  obj4.children = items4;
-  obj3.children = React6(ObscuredSurfaceDefault, obj4);
-  const items8 = [timestampProducer(tmp18, obj3), ];
-  let tmp17Result2 = null;
+  items6[1] = tmp16Result;
+  items4[1] = metroImportAll(React3, obj6);
+  items8 = [metroRequire(tmp19, obj3), ];
+  let tmp18Result2 = null;
   if (null != footer) {
     const obj10 = {
       onLayout(nativeEvent) {
@@ -159,9 +187,8 @@ export default function OAuth2AuthorizeContent(onScroll) {
       style: tmp.footerPortrait,
       children: footer
     };
-    tmp17Result2 = tmp17(tmp22, obj10);
+    tmp18Result2 = tmp18(tmp23, obj10);
   }
-  items8[1] = tmp17Result2;
-  obj2.children = items8;
-  return React6(tmp3Result, obj2);
+  items8[1] = tmp18Result2;
+  return metroImportAll(tmp3Result, obj2);
 };

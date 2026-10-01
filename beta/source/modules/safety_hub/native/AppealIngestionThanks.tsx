@@ -5,23 +5,22 @@
 // Exports: default
 
 // Module 11386 (AppealIngestionThanks)
-import native from "native" /* 1177 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
 import AppealIngestionModal from "AppealIngestionModal" /* 11365 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionThanks.tsx");
 
 export default function AppealIngestionThanks() {
   const tmp = closure_4();
-  const obj = { children: null };
-  const obj2 = { style: tmp.container, children: jsx(common_SafeAreaView.SafeAreaPaddingView, { bottom: true, style: tmp.container, children: jsx(native.LegacyText, { children: "TODO - Thanks" }) }) };
-  obj.children = <View style={tmp.container}>{jsx(common_SafeAreaView.SafeAreaPaddingView, { bottom: true, style: tmp.container, children: jsx(native.LegacyText, { children: "TODO - Thanks" }) })}</View>;
-  return jsx(AppealIngestionModal.AppealIngestionModalScreen, { children: null });
+  const AppealIngestionModalScreen = AppealIngestionModal.AppealIngestionModalScreen;
+  const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
+  return <AppealIngestionModalScreen>{null}</AppealIngestionModalScreen>;
 };

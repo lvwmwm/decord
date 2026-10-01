@@ -6,10 +6,10 @@
 
 // Module 15689 (useMessagesFlatData)
 import useMessagesData from "useMessagesData" /* 15678 */;
-import noop from "module_19" /* 19 */;
+import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 15690 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesFlatData.tsx");
 
 export default function useMessagesFlatData(channels, listItemHeight) {
@@ -21,12 +21,15 @@ export default function useMessagesFlatData(channels, listItemHeight) {
   const sections = channels.sections;
   const items = [channels, channelFavorites, renderHeader, sections, listItemHeight];
   return channelFavorites.useMemo(() => {
+    let listHeaderHeight;
+    let num5;
+    const tmp = renderHeader;
     if (renderHeader === useMessagesData.MessagesDataHeader.HappeningNow) {
-      let listHeaderHeight = tmp2(15690).getMessagesItemHappeningNowHeight();
-      const tmp2Result = tmp2(15690);
+      const tmp2Result = MessagesItemHappeningNow;
+      listHeaderHeight = tmp2Result.getMessagesItemHappeningNowHeight();
     } else {
       listHeaderHeight = 0;
-      if (renderHeader === tmp2(15678).MessagesDataHeader.EmptyState) {
+      if (tmp === useMessagesData.MessagesDataHeader.EmptyState) {
         listHeaderHeight = tmp2(15727).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
       }
     }
@@ -37,9 +40,7 @@ export default function useMessagesFlatData(channels, listItemHeight) {
     let tmp6 = listHeaderHeight;
     if (0 < tmp4) {
       do {
-        let obj = { kind: "favorite", channelId: null, row: null };
-        obj.channelId = channelFavorites[num2].channelId;
-        obj.row = num2;
+        let obj = { kind: "favorite", channelId: channelFavorites[num2].channelId, row: num2 };
         let arr = listData.push(obj);
         sum = sum + listItemHeight;
         num2 = num2 + 1;
@@ -52,9 +53,7 @@ export default function useMessagesFlatData(channels, listItemHeight) {
     let tmp12 = tmp6;
     if (0 < tmp10) {
       do {
-        let obj2 = { kind: "channel", channelId: null, row: null };
-        obj2.channelId = channels[num3].channelId;
-        obj2.row = num3;
+        let obj2 = { kind: "channel", channelId: channels[num3].channelId, row: num3 };
         let arr7 = listData.push(obj2);
         sum1 = sum1 + listItemHeight;
         num3 = num3 + 1;
@@ -62,11 +61,12 @@ export default function useMessagesFlatData(channels, listItemHeight) {
       } while (num3 < tmp10);
     }
     let sum2 = tmp12;
+    const tmp16 = sections;
     if (sections[useMessagesData.MessagesDataSections.Separator] > 0) {
       listData.push({ kind: "separator" });
       sum2 = tmp12 + tmp17(15728).MESSAGES_ITEM_SEPERATOR_HEIGHT;
     }
-    const tmp21 = sections[useMessagesData.MessagesDataSections.SuggestedFriends];
+    const tmp21 = tmp16[useMessagesData.MessagesDataSections.SuggestedFriends];
     let friendsHeaderOffset;
     let friendsHeaderIndex;
     if (tmp21 > 0) {
@@ -84,6 +84,7 @@ export default function useMessagesFlatData(channels, listItemHeight) {
         } while (num4 < tmp21);
       }
     }
+    const tmp26 = sections[useMessagesData.MessagesDataSections.Placeholders];
     for (let num5 = 0; num5 < tmp26; num5 = num5 + 1) {
       let obj4 = { kind: "placeholder", row: num5 };
       let arr11 = listData.push(obj4);

@@ -5,19 +5,22 @@
 // Exports: default, getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole, useHasEnhancedRoleColorsForRole
 
 // Module 5310 (useHasEnhancedRoleColors)
+import Constants from "Constants" /* 1074 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
+const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useHasEnhancedRoleColors.tsx");
 
 export default function useHasEnhancedRoleColors(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [GuildStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     const guild = GuildStore.getGuild(closure_0);
     let hasItem = null != guild;
     if (hasItem) {
@@ -43,8 +46,9 @@ export const getHasEnhancedRoleColors = function getHasEnhancedRoleColors(guildI
 export const useHasEnhancedRoleColorsForRole = function useHasEnhancedRoleColorsForRole(guildId) {
   _require = guildId;
   const items = [GuildStore];
-  return require("initialize").useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(guildId);
     let hasItem = null != guild;
     if (hasItem) {
       const features = guild.features;

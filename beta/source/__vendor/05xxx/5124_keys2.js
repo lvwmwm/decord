@@ -4,39 +4,38 @@
 // Dependencies: [5125, 5126]
 
 // Module 5124 (keys2)
-import _mod5125 from "module_5125" /* 5125 */;
-import _mod5126 from "module_5126" /* 5126 */;
+import isArguments from "isArguments" /* 5125 */;
+import isArguments2 from "isArguments" /* 5126 */;
 
+let keys2;
 if (keys) {
-  let keys2 = function keys(arg0) {
+  keys2 = function keys(arg0) {
     return keys(arg0);
   };
 } else {
-  keys2 = _mod5125;
+  keys2 = isArguments;
 }
-keys = Object.keys;
+keys2 = Object.keys;
 keys2.shim = function shimObjectKeys() {
   if (Object.keys) {
-    if (!(() => {
+    if (!(function() {
       keys = Object.keys(arguments);
-      let tmp = keys;
-      if (keys) {
-        tmp = keys.length === arguments.length;
-      }
-      return tmp;
+      return keys && keys.length === arguments.length;
     })(1, 2)) {
       const _Object2 = Object;
       Object.keys = function keys(arg0) {
-        if (_mod5126(arg0)) {
-          const call = slice.call;
-          tmp(typeof call === "unknown" ? slice() : call(arg0));
+        let tmpResult;
+        if (isArguments2(arg0)) {
+          tmpResult = tmp(slice.call(arg0));
         } else {
-          return tmp(arg0);
+          tmpResult = tmp(arg0);
         }
+        return tmpResult;
       };
     }
   } else {
     const _Object = Object;
+    const tmp = keys2;
     Object.keys = keys2;
   }
   return Object.keys || keys2;

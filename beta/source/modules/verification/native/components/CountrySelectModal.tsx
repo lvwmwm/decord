@@ -5,39 +5,47 @@
 // Exports: default
 
 // Module 6468 (CountrySelectModal)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import Navigator from "Navigator" /* 6421 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/verification/native/components/CountrySelectModal.tsx");
 
 export default function CountrySelectModal() {
-  const screens = noop.useMemo(() => {
-    const obj = { COUNTRY_SELECT: null };
-    const obj2 = { title: null, headerLeft: null, render: null };
-    const intl = util.intl;
-    obj2.title = intl.string(util.t.gzXECH);
-    obj2.headerLeft = NavigatorHeader.getHeaderCloseButton(ModalActionCreatorsDefault.pop);
-    obj2.render = function render() {
-      return closure_1_4(closure_1_1(dependencyMap[5]), {
-        onClose() {
-          return closure_1_1(5039).pop();
-        },
-        onCountrySelected(countryCode) {
-          return closure_1_1(6466).setCountryCode(countryCode);
-        }
-      });
+  const screens = react.useMemo(() => {
+    let intl;
+    let obj2;
+    let obj3;
+    let obj = { COUNTRY_SELECT: obj2 };
+    obj2 = {
+      title: intl.string(intl2.t.gzXECH),
+      headerLeft: obj3.getHeaderCloseButton(ModalActionCreatorsDefault.pop),
+      render() {
+        let obj = {
+          onClose() {
+            const arr = closure_1_1(closure_1_2[4]);
+            return arr.pop();
+          },
+          onCountrySelected(countryCode) {
+            const obj = closure_1_1(closure_1_2[6]);
+            return obj.setCountryCode(countryCode);
+          }
+        };
+        return closure_1_4(closure_1_1(closure_1_2[5]), obj);
+      }
     };
-    obj.COUNTRY_SELECT = obj2;
+    intl = intl2.intl;
+    obj3 = NavigatorHeader;
     return obj;
   }, []);
-  const effect = noop.useEffect(() => () => {
-    closure_1_1(6459).runAfterInteractions(closure_1_1(6497).setCountrySelectorClosed, 400);
+  const effect = react.useEffect(() => () => {
+    const obj = closure_1_1(closure_1_2[7]);
+    obj.runAfterInteractions(closure_1_1(closure_1_2[8]).setCountrySelectorClosed, 400);
   }, []);
   return jsx(Navigator.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
 };

@@ -7,12 +7,15 @@
 // Module 6942 (IntegrationPermissionUtils)
 import Server from "Server" /* 1979 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function commandPermissions(arg0, items) {
+  let tmp6;
+  let tmp7;
   const obj = {};
   const entries = Object.entries(arg0);
+  const tmp2 = entries[Symbol.iterator]();
   while (tmp2 !== undefined) {
     let tmp5 = _slicedToArray(tmp3, 2);
     [tmp6, tmp7] = tmp5;
@@ -24,7 +27,6 @@ function commandPermissions(arg0, items) {
   }
   return obj;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/integrations/permission/IntegrationPermissionUtils.tsx");
 
 export const commandName = function commandName(arg0, arg1) {

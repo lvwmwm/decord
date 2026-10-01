@@ -5,33 +5,40 @@
 // Exports: useShareChatInputActions
 
 // Module 11189 (useShareChatInputActions)
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10583 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import EmojiConstants from "EmojiConstants" /* 1375 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10583 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const EmojiIntention = fn(1375).EmojiIntention;
-const size = fn(2);
+let _slicedToArray = _slicedToArray_mod;
+const EmojiIntention = EmojiConstants.EmojiIntention;
 let result = size.fileFinishedImporting("modules/share/native/useShareChatInputActions.tsx");
 
 export const useShareChatInputActions = function useShareChatInputActions(setText, selectedDestinationChannel, appEntryKey) {
+  let closure_5;
+  let ref;
+  let tmp3;
   const channel = selectedDestinationChannel;
   _slicedToArray = appEntryKey;
   ref = ref.useRef(null);
-  closure_4 = ref.useRef({ start: 0, end: 0 });
-  [tmp3, closure_5] = ref.useState(false);
+  let closure_4 = ref.useRef({ start: 0, end: 0 });
+  const tmp2 = _slicedToArray(ref.useState(false), 2);
+  [tmp3, closure_5] = tmp2;
   const callback = ref.useCallback((nativeEvent) => {
+    const obj = {};
     const merged = Object.assign(nativeEvent.nativeEvent.selection);
-    closure_4.current = {};
+    closure_4.current = obj;
   }, []);
   const callback1 = ref.useCallback(() => {
-    closure_1_5(true);
+    closure_5(true);
   }, []);
   const items = [setText];
   const callback2 = ref.useCallback(() => {
-    closure_1_5(false);
+    closure_5(false);
   }, []);
   const callback3 = ref.useCallback((id) => {
+    let closure_0;
     setText = "";
     if (null == id.id) {
       if (null != id.surrogates) {
@@ -47,8 +54,9 @@ export const useShareChatInputActions = function useShareChatInputActions(setTex
       }
     }
     if (null != id.uniqueName) {
+      let name;
       if ("" !== id.uniqueName) {
-        let name = id.uniqueName;
+        name = id.uniqueName;
       }
       const _HermesInternal = HermesInternal;
       setText = ":" + name + ": ";
@@ -62,25 +70,28 @@ export const useShareChatInputActions = function useShareChatInputActions(setTex
     }
   }, []);
   const items1 = [callback4, callback3, selectedDestinationChannel, appEntryKey];
-  const tmp2 = _slicedToArray(ref.useState(false), 2);
-  return {
+  let obj = {
     textInputRef: ref,
     isInputFocused: tmp3,
     handleSelectionChange: callback,
     handleMessageFocus: callback1,
     handleMessageBlur: callback2,
     handlePressEmoji: ref.useCallback(() => {
+      let guildId;
       const current = ref.current;
       if (current != null) {
         current.blur();
       }
-      const obj2 = { onPressEmoji: callback3, onClose: callback4, pickerIntention: EmojiIntention.CHAT, autoFocus: false, startExpanded: false, channel, appEntryKey, guildId: null };
-      let guildId;
+      const obj = { onPressEmoji: callback3, onClose: callback4, pickerIntention: EmojiIntention.CHAT, autoFocus: false, startExpanded: false, channel, appEntryKey, guildId };
+      guildId = undefined;
+      const openEmojiPickerActionSheet = openEmojiPickerActionSheet2.openEmojiPickerActionSheet;
+      openEmojiPickerActionSheet2;
+      const obj2 = channel;
       if (channel != null) {
-        guildId = channel.getGuildId();
+        guildId = obj2.getGuildId();
       }
-      obj2.guildId = guildId;
-      const result = openEmojiPickerActionSheet.openEmojiPickerActionSheet(obj2);
+      const result = openEmojiPickerActionSheet(obj);
     }, items1)
   };
+  return obj;
 };

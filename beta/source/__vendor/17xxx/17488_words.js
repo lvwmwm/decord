@@ -4,24 +4,27 @@
 // Dependencies: [626, 17489, 17490, 17491]
 
 // Module 17488 (words)
-import _mod626 from "module_626" /* 626 */;
+import toString from "toString" /* 626 */;
+import hasUnicodeWord from "hasUnicodeWord" /* 17489 */;
 
 
 export default function words(arg0, arg1, arg2) {
-  let tmpResult = dependencyMap;
-  const str = _mod626(arg0);
+  let tmp4;
+  const str = toString(arg0);
   let tmp3;
   if (!arg2) {
     tmp3 = arg1;
   }
   if (undefined === tmp3) {
-    if (tmp(17489)(str)) {
-      tmpResult = tmp(17490);
-      let tmpResultResult = tmpResult(str);
+    let tmp5;
+    if (hasUnicodeWord(str)) {
+      tmp5 = tmp(17490)(str);
     } else {
-      tmpResultResult = tmp(17491)(str);
+      tmp5 = tmp(17491)(str);
     }
+    tmp4 = tmp5;
   } else {
-    return str.match(tmp3) || [];
+    tmp4 = str.match(tmp3) || [];
   }
+  return tmp4;
 };

@@ -5,22 +5,25 @@
 // Exports: default
 
 // Module 15791 (useIsGuildThemePerkEnabled)
+import Constants from "Constants" /* 1074 */;
 import Powerups from "Powerups" /* 4727 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4723 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
+const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useIsGuildThemePerkEnabled.tsx");
 
 export default function useIsGuildThemePerkEnabled(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [GuildStore, GuildPowerupsStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
       const guild = GuildStore.getGuild(tmp);

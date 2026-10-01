@@ -5,83 +5,77 @@
 // Exports: default
 
 // Module 11750 (ChatFloatingNavButton)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import spring from "spring" /* 5280 */;
 import springPresets from "springPresets" /* 5284 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: closure_4, Pressable: hasOwnProperty } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { pill: null, icon: null };
-let size = { height: nativeDefault.modules.mobile.JUMP_TO_PRESENT_BUTTON_SIZE, width: nativeDefault.modules.mobile.JUMP_TO_PRESENT_BUTTON_SIZE, borderRadius: nativeDefault.modules.button.BORDER_RADIUS, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: nativeDefault.colors.BORDER_MUTED, alignItems: "center", justifyContent: "center", overflow: "hidden" };
-obj2.pill = size;
-const size1 = { width: nativeDefault.modules.mobile.JUMP_TO_PRESENT_ICON_SIZE, height: nativeDefault.modules.mobile.JUMP_TO_PRESENT_ICON_SIZE };
-obj2.icon = size1;
-let closure_7 = createStyles.createStyles(obj2);
+let closure_4;
+let hasOwnProperty;
+let size;
+let size1;
+({ Image: closure_4, Pressable: hasOwnProperty } = react_native);
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { pill: size, icon: size1 };
+size = { height: nativeDefault.modules.mobile.JUMP_TO_PRESENT_BUTTON_SIZE, width: nativeDefault.modules.mobile.JUMP_TO_PRESENT_BUTTON_SIZE, borderRadius: nativeDefault.modules.button.BORDER_RADIUS, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: nativeDefault.colors.BORDER_MUTED, alignItems: "center", justifyContent: "center", overflow: "hidden" };
+createStyles = createStyles.createStyles;
+size1 = { width: nativeDefault.modules.mobile.JUMP_TO_PRESENT_ICON_SIZE, height: nativeDefault.modules.mobile.JUMP_TO_PRESENT_ICON_SIZE };
+let closure_7 = createStyles(obj);
 const __initData = { code: "function ChatFloatingNavButtonTsx1(){const{withSpring,interpolateColor,pressed,bgColor,pressedBgColor,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[bgColor,pressedBgColor]),ON_PRESS_SPRING,'animate-always')};}" };
-size = fn(2);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/chat_input/native/ChatFloatingNavButton.tsx");
 
 export default function ChatFloatingNavButton(arg0) {
+  let accessibilityLabel;
+  let icon;
+  let onPress;
   let sharedValue;
   let token;
   let token1;
   ({ accessibilityLabel, icon, onPress } = arg0);
   const tmp = closure_7();
-  sharedValue = sharedValue(token1[5]).useSharedValue(0);
   let obj = sharedValue(token1[5]);
-  token = sharedValue(token1[6]).useToken(token(token1[4]).colors.MOBILE_FLOATINGBAR_BACKGROUND);
+  sharedValue = obj.useSharedValue(0);
   let obj2 = sharedValue(token1[6]);
-  token1 = sharedValue(token1[6]).useToken(token(token1[4]).colors.BACKGROUND_BASE_LOWEST);
-  let obj3 = sharedValue(token1[6]);
-  const token2 = sharedValue(token1[6]).useToken(token(token1[4]).colors.CHAT_INPUT_ICON_DEFAULT_TINT);
+  token = obj2.useToken(token(token1[4]).colors.MOBILE_FLOATINGBAR_BACKGROUND);
+  const obj3 = sharedValue(token1[6]);
+  token1 = obj3.useToken(token(token1[4]).colors.BACKGROUND_BASE_LOWEST);
   const obj4 = sharedValue(token1[6]);
+  const token2 = obj4.useToken(token(token1[4]).colors.CHAT_INPUT_ICON_DEFAULT_TINT);
+  const obj5 = sharedValue(token1[5]);
   class C {
     constructor() {
-      obj = { backgroundColor: null };
-      obj2 = closure_0(closure_2[7]);
-      obj3 = closure_0(closure_2[5]);
-      items = [, ];
-      items[0] = closure_1;
-      items[1] = closure_2;
-      interpolateColorResult = obj3.interpolateColor(closure_0.get(), [0, 1], items);
-      obj.backgroundColor = obj2.withSpring(interpolateColorResult, closure_0(closure_2[8]).ON_PRESS_SPRING, "animate-always");
+      let interpolateColorResult;
+      let withSpring;
+      const obj = { backgroundColor: withSpring(interpolateColorResult, springPresets.ON_PRESS_SPRING, "animate-always") };
+      withSpring = spring.withSpring;
+      spring;
+      const items = [token, token1];
+      const obj2 = ReanimatedRexport;
+      interpolateColorResult = obj2.interpolateColor(sharedValue.get(), [0, 1], items);
       return obj;
     }
   }
-  const obj5 = sharedValue(token1[5]);
   C.__closure = { withSpring: sharedValue(token1[7]).withSpring, interpolateColor: sharedValue(token1[5]).interpolateColor, pressed: sharedValue, bgColor: token, pressedBgColor: token1, ON_PRESS_SPRING: sharedValue(token1[8]).ON_PRESS_SPRING };
   C.__workletHash = 9363515218556;
   C.__initData = __initData;
   let items = [sharedValue];
+  ({ withSpring: sharedValue(token1[7]).withSpring, interpolateColor: sharedValue(token1[5]).interpolateColor, pressed: sharedValue, bgColor: token, pressedBgColor: token1, ON_PRESS_SPRING: sharedValue(token1[8]).ON_PRESS_SPRING });
   const animatedStyle = obj5.useAnimatedStyle(C);
   const items1 = [sharedValue];
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     const result = sharedValue.set(1);
   }, items);
-  const obj7 = {
-    accessibilityRole: "button",
-    accessibilityLabel,
-    onPress,
-    onPressIn: callback,
-    onPressOut: noop.useCallback(() => {
-      const result = sharedValue.set(0);
-    }, items1),
-    children: null
-  };
-  const obj8 = { style: null, children: null };
   const items2 = [tmp.pill, animatedStyle];
-  obj8.style = items2;
-  const obj9 = { source: icon, style: null };
   const items3 = [tmp.icon, { tintColor: token2 }];
-  obj9.style = items3;
-  obj8.children = <closure_4 source={icon} style={null} />;
-  obj7.children = jsx(token(token1[5]).View, { style: null, children: null });
-  return <closure_5 accessibilityRole="button" accessibilityLabel={accessibilityLabel} onPress={onPress} onPressIn={callback} onPressOut={noop.useCallback(() => {
+  const View = token(token1[5]).View;
+  return <closure_5 accessibilityRole="button" accessibilityLabel={accessibilityLabel} onPress={onPress} onPressIn={callback} onPressOut={react.useCallback(() => {
     const result = sharedValue.set(0);
   }, items1)}>{null}</closure_5>;
 };

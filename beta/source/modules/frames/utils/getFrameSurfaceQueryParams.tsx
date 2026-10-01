@@ -15,8 +15,8 @@ export default function getFrameSurfaceQueryParams(type) {
   if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
     return {};
   } else {
-    if (tmp(8501).EmbeddedSurfaceType.APP_CHANNEL !== type) {
-      if (tmp(8501).EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
+    if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL !== type) {
+      if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
         return {};
       }
     }

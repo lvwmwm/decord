@@ -4,55 +4,71 @@
 // Exports: getTraceData
 
 // Module 12384
-import errorCallback from "errorCallback" /* 12309 */;
+import _mod12318 from "module_12318" /* 12318 */;
+import _mod12325 from "module_12325" /* 12325 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12326 */;
+import _mod12331 from "module_12331" /* 12331 */;
+import _mod12332 from "module_12332" /* 12332 */;
 import _mod12340 from "module_12340" /* 12340 */;
+import _mod12349 from "module_12349" /* 12349 */;
+import _mod12361 from "module_12361" /* 12361 */;
+import registerSpanErrorInstrumentation from "module_12309" /* 12309 */;
 import "module_12312";
-import __SENTRY_DEBUG__ from "module_12341" /* 12341 */;
-import dateTimestampInSeconds from "module_12327" /* 12327 */;
+import DEBUG_BUILD from "module_12341" /* 12341 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12327 */;
 
-errorCallback;
 
 export const getTraceData = function getTraceData() {
+  let sampled;
+  let spanId;
+  let traceId;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  const client = _mod12340.getClient();
+  const obj2 = _mod12340;
+  const client = obj2.getClient();
+  const obj3 = _mod12361;
   if (obj3.isEnabled()) {
     if (client) {
-      const mainCarrier = tmp(12331).getMainCarrier();
-      const tmpResult = tmp(12331);
-      const asyncContextStrategy = tmp(12332).getAsyncContextStrategy(mainCarrier);
+      const tmpResult = _mod12331;
+      const mainCarrier = tmpResult.getMainCarrier();
+      const tmpResult8 = _mod12332;
+      const asyncContextStrategy = tmpResult8.getAsyncContextStrategy(mainCarrier);
       if (asyncContextStrategy.getTraceData) {
         return asyncContextStrategy.getTraceData(obj);
       } else {
-        const currentScope = tmp(12340).getCurrentScope();
+        let spanToTraceHeaderResult;
+        let dynamicSamplingContextFromSpan;
+        let obj5;
+        const tmpResult9 = _mod12340;
+        const currentScope = tmpResult9.getCurrentScope();
         let span = obj.span;
         if (!span) {
-          span = tmp(12318).getActiveSpan();
-          const tmpResult10 = tmp(12318);
+          const tmpResult10 = _mod12318;
+          span = tmpResult10.getActiveSpan();
         }
         if (span) {
-          let spanToTraceHeaderResult = tmp(12318).spanToTraceHeader(span);
-          const tmpResult11 = tmp(12318);
+          const tmpResult11 = _mod12318;
+          spanToTraceHeaderResult = tmpResult11.spanToTraceHeader(span);
         } else {
           const propagationContext = currentScope.getPropagationContext();
           ({ traceId, sampled, spanId } = propagationContext);
-          spanToTraceHeaderResult = tmp(12325).generateSentryTraceHeader(traceId, spanId, sampled);
-          const tmpResult12 = tmp(12325);
+          const tmpResult12 = _mod12325;
+          spanToTraceHeaderResult = tmpResult12.generateSentryTraceHeader(traceId, spanId, sampled);
         }
-        const tmpResult13 = tmp(12349);
+        const tmpResult13 = _mod12349;
         if (span) {
-          let dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
         } else {
           dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
         }
-        const tmpResult9 = tmp(12340);
-        const result = tmp(12326).dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+        const tmpResult14 = BAGGAGE_HEADER_NAME;
+        const result = tmpResult14.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
         const TRACEPARENT_REGEXP = tmp(12325).TRACEPARENT_REGEXP;
         if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
+          obj5 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
           const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
-          let obj5 = obj4;
         } else {
           const logger = tmp(12313).logger;
           logger.warn("Invalid sentry-trace data. Cannot generate trace data");
@@ -60,7 +76,6 @@ export const getTraceData = function getTraceData() {
         }
         return obj5;
       }
-      const tmpResult8 = tmp(12332);
     }
   }
   return {};

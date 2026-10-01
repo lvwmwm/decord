@@ -5,16 +5,20 @@
 // Exports: updateVisualRefresh
 
 // Module 16788 (updateVisualRefresh)
-import _mod17 from "module_17" /* 17 */;
-import NativeThemeModuleDefault from "NativeThemeModule" /* 14000 */;
+import react_native from "react-native" /* 17 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import react_nativeDefault from "react-native" /* 14000 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = _mod17.NativeModules;
+const NativeModules = react_native.NativeModules;
 let result = size.fileFinishedImporting("modules/themes/native/updateVisualRefresh.tsx");
 
 export const updateVisualRefresh = function updateVisualRefresh(arg0) {
+  let result;
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    let result = NativeThemeModuleDefault.setVisualRefreshEnabled(arg0);
+    const obj2 = react_nativeDefault;
+    result = obj2.setVisualRefreshEnabled(arg0);
   } else {
     const DCDTheme = NativeModules.DCDTheme;
     result = DCDTheme.setVisualRefreshEnabled(arg0);

@@ -5,27 +5,24 @@
 // Exports: default
 
 // Module 8045 (ManualReviewPendingAlertModal)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl4 from "intl" /* 1115 */;
 import _modDef3103 from "module_3103" /* 3103 */;
-import AlertModal from "AlertModal" /* 5209 */;
-import noop from "module_19" /* 19 */;
+import AlertModal2 from "AlertModal" /* 5209 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/age_assurance/native/ManualReviewPendingAlertModal.tsx");
 
 export default function ManualReviewPendingAlertModal() {
-  const obj = { title: null, content: null, actions: null };
-  const intl = util.intl;
-  obj.title = intl.string(_modDef3103.CNm4w6);
-  const intl2 = util.intl;
-  obj.content = intl2.string(_modDef3103["14Fje3"]);
-  const obj2 = { children: null };
-  const obj3 = { text: null };
-  const intl3 = util.intl;
-  obj3.text = intl3.string(util.t["NX+WJN"]);
-  obj2.children = jsx(AlertModal.AlertActionButton, { text: null }, "got-it");
-  obj.actions = jsx(AlertModal.AlertActions, { children: null });
-  return jsx(AlertModal.AlertModal, { title: null, content: null, actions: null });
+  let intl3;
+  const AlertModal = AlertModal2.AlertModal;
+  const intl = intl4.intl;
+  const intl2 = intl4.intl;
+  const AlertActions = AlertModal2.AlertActions;
+  ({ text: intl3.string(intl4.t["NX+WJN"]) });
+  const AlertActionButton = AlertModal2.AlertActionButton;
+  intl3 = intl4.intl;
+  return <AlertModal title={intl.string(_modDef3103.CNm4w6)} content={intl2.string(_modDef3103["14Fje3"])} actions={null} />;
 };

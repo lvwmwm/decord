@@ -9,12 +9,18 @@ import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const useCommandDiscoveryManager = module_560.create(() => ({ initialSectionId: "r" }));
+const useCommandDiscoveryManager = module_560.create(() => ({ initialSectionId: "Path" }));
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandDiscoveryManager.tsx");
 
 export { useCommandDiscoveryManager };
 export const updateInitialSectionId = function updateInitialSectionId(arg0) {
+  let closure_0;
   _require = arg0;
-  require("ReactBatchUpdates").batchUpdates(() => obj.setState(() => ({ initialSectionId })));
+  const obj = require("react-native");
+  obj.batchUpdates(() => {
+    let initialSectionId;
+    return obj.setState(() => ({ initialSectionId }));
+  });
 };

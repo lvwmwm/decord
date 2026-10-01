@@ -5,44 +5,62 @@
 // Exports: default
 
 // Module 17065 (CaptchaModal)
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import Link from "Link" /* 1486 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5177 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15570 */;
 import RegistrationUtils from "RegistrationUtils" /* 15578 */;
 import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 17067 */;
 import CaptchaUtilsDefault from "CaptchaUtils" /* 17069 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import RegistrationConstants from "RegistrationConstants" /* 15571 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Keyboard: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-let closure_6 = fn(15570).doesRegistrationHaveIdentityType;
-const RegistrationConstants = fn(15571);
-({ RegisterTransitionSteps: closure_7, RegistrationTransitionActionTypes: closure_8 } = RegistrationConstants);
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+let BottomSheet, navigation;
+
+let c10;
+let c9;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+({ Keyboard: closure_4, View: hasOwnProperty } = react_native);
+let closure_6 = RegistrationUIStore.doesRegistrationHaveIdentityType;
+({ RegisterTransitionSteps: metroImportDefault, RegistrationTransitionActionTypes: metroImportAll } = RegistrationConstants);
+({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles((arg0) => {
   let num = 8;
-  if (arg0) {
+  const tmp = arg0;
+  if (tmp) {
     num = 32;
   }
   return { contentContainer: { alignItems: "center", paddingVertical: 8, paddingHorizontal: num }, description: { paddingBottom: 12, paddingTop: 4 } };
 });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/captcha/native/CaptchaModal.tsx");
 
 export default function CaptchaModal(arg0) {
+  let bodyText;
+  let closure_4;
+  let closure_5;
+  let closure_7;
+  let headerText;
+  let intl3;
+  let items1;
+  let onReject;
   ({ onCaptchaVerify: require, onReject } = arg0);
-  ({ close: dependencyMap, sitekey: noop, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
+  ({ close: dependencyMap, sitekey: react, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
+  let tmp = dependencyMap;
   const tmp2 = closure_11(onReject(6363)());
-  const navigation = Link.useNavigation();
+  let obj = Link;
+  navigation = obj.useNavigation();
   const items = [navigation];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     const state = navigation.getState();
     let name;
     if (state != null) {
@@ -60,36 +78,42 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  closure_9 = onReject(17066)({ onReject, analyticsType: memo });
-  const effect = noop.useEffect(() => {
-    closure_1_4.dismiss();
+  let closure_9 = onReject(17066)({ onReject, analyticsType: memo });
+  const effect = react.useEffect(() => {
+    closure_4.dismiss();
   }, []);
-  let obj2 = { style: tmp2.contentContainer, spacing: 12, children: null };
-  const items1 = [closure_9(DisguiseSpotIllustration.DisguiseSpotIllustration, { scale: 0.5 }), , ];
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  let obj2 = { style: tmp2.contentContainer, spacing: 12, children: items1 };
+  const Stack = Stack_Stack.Stack;
+  items1 = [closure_9(DisguiseSpotIllustration.DisguiseSpotIllustration, { scale: 0.5 }), , ];
+  const Text = Text_Text.Text;
+  const tmp9 = closure_5;
   if (headerText == null) {
     const intl = tmp3(1115).intl;
     headerText = intl.string(tmp3(1115).t.FpoiHe);
   }
-  const items2 = [closure_9(Text_Text.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
-  let obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp2.description, children: null };
+  const items2 = [tmp7(Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
+  let obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp2.description, children: bodyText };
+  const Text2 = tmp3(4832).Text;
   if (bodyText == null) {
     const intl2 = tmp3(1115).intl;
     bodyText = intl2.string(tmp3(1115).t["/CidxO"]);
   }
-  let obj4 = { startHeight: 900, startExpanded: true, children: null };
-  let obj5 = { children: null };
-  obj3.children = bodyText;
-  items2[1] = closure_9(Text_Text.Text, obj3);
-  obj5.children = items2;
-  items1[1] = closure_10(closure_5, obj5);
+  let obj4 = { startHeight: 900, startExpanded: true, children: tmp8(Stack, obj2) };
+  let obj5 = { children: items2 };
+  items2[1] = closure_9(Text2, obj3);
+  items1[1] = closure_10(tmp9, obj5);
   const obj6 = {
     grow: true,
     onPress() {
-      closure_9();
+      const tmp = closure_9();
       dependencyMap();
-      const result = SharedCaptchaUtils.emitCaptchaDistributionMetric(constants);
-      const showCaptchaResult = CaptchaUtilsDefault.showCaptcha(closure_1_4, noop, closure_1_5);
-      CaptchaUtilsDefault.showCaptcha(closure_1_4, noop, closure_1_5).then((result) => {
+      let obj = SharedCaptchaUtils;
+      const result = obj.emitCaptchaDistributionMetric(constants);
+      let obj2 = CaptchaUtilsDefault;
+      const showCaptchaResult = obj2.showCaptcha(closure_4, react, closure_5);
+      const nextPromise = showCaptchaResult.then((result) => {
+        const obj = state;
         state = state.getState();
         let name;
         if (state != null) {
@@ -98,16 +122,14 @@ export default function CaptchaModal(arg0) {
             name = first.name;
           }
         }
-        let tmp4 = "auth" === name;
-        if (tmp4) {
-          tmp4 = closure_2_6();
-        }
+        const tmp4 = "auth" === name && closure_6();
         if (tmp4) {
           const obj3 = { step: constants.CAPTCHA, actionType: navigation.SUBMITTED };
-          RegistrationUtils.trackRegTransition(obj3);
+          const obj2 = RegistrationUtils;
+          obj2.trackRegTransition(obj3);
         }
         closure_1_0(result, closure_1_6);
-        const state1 = state.getState();
+        const state1 = obj.getState();
         let name1;
         if (state1 != null) {
           const first1 = state1.routes[0];
@@ -115,26 +137,23 @@ export default function CaptchaModal(arg0) {
             name1 = first1.name;
           }
         }
-        let tmp15 = "auth" === name1;
-        if (tmp15) {
-          tmp15 = closure_2_6();
-        }
+        const tmp15 = "auth" === name1 && closure_6();
         if (tmp15) {
           const obj5 = { step: constants.CAPTCHA, actionType: navigation.SUCCESS };
-          RegistrationUtils.trackRegTransition(obj5);
+          const obj4 = RegistrationUtils;
+          obj4.trackRegTransition(obj5);
         }
-      }).catch((error) => {
+      });
+      nextPromise.catch((error) => {
         if (onReject != null) {
           tmp(error);
         }
       });
     },
-    text: null
+    text: intl3.string(intl4.t["cY+Oob"])
   };
-  const intl3 = tmp3(1115).intl;
-  obj6.text = intl3.string(util.t["cY+Oob"]);
-  items1[2] = closure_9(components_Button_Button.Button, obj6);
-  obj2.children = items1;
-  obj4.children = closure_10(Stack_Stack.Stack, obj2);
-  return closure_9(Sheet_BottomSheet.BottomSheet, obj4);
+  const Button = tmp3(5281).Button;
+  intl3 = tmp3(1115).intl;
+  items1[2] = closure_9(Button, obj6);
+  return closure_9(BottomSheet, obj4);
 };

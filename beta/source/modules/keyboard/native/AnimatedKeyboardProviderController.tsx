@@ -5,69 +5,80 @@
 
 // Module 14135 (AnimatedKeyboardProviderController)
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1627 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4566 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: c2, jsxs: c3 } = jsxProd);
-let ReanimatedRexport = fn(4566);
+let set;
+
+let c2;
+let c3;
+({ jsx: c2, jsxs: c3 } = Fragment);
+let ReanimatedRexport = ReanimatedRexport_mod;
 const mutable = ReanimatedRexport.makeMutable(0);
-ReanimatedRexport = fn(4566);
-const mutable1 = ReanimatedRexport.makeMutable(fn(4566).KeyboardState.UNKNOWN);
+ReanimatedRexport = ReanimatedRexport_mod;
+const mutable1 = ReanimatedRexport.makeMutable(ReanimatedRexport.KeyboardState.UNKNOWN);
 const __initData = { code: "function AnimatedKeyboardProviderControllerTsx1(e){const{animatedKeyboardState,KeyboardState}=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);}" };
 const __initData2 = { code: "function AnimatedKeyboardProviderControllerTsx2(e){const{animatedKeyboardHeight}=this.__closure;animatedKeyboardHeight.set(e.height);}" };
 const __initData3 = { code: "function AnimatedKeyboardProviderControllerTsx3(e){const{animatedKeyboardState,KeyboardState,animatedKeyboardHeight}=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);animatedKeyboardHeight.set(e.height);}" };
-let closure_9 = noop.memo(() => {
-  const obj2 = { onStart: null, onMove: null, onEnd: null };
-  const fn = function o(height) {
+let closure_9 = react.memo(() => {
+  let fn;
+  let fn2;
+  let fn3;
+  const obj = { onStart: fn, onMove: fn2, onEnd: fn3 };
+  fn = function o(height) {
+    let OPEN;
+    set = mutable1.set;
     if (0 === height.height) {
-      let OPEN = ReanimatedRexport2.KeyboardState.CLOSED;
+      OPEN = ReanimatedRexport.KeyboardState.CLOSED;
     } else {
-      OPEN = ReanimatedRexport2.KeyboardState.OPEN;
+      OPEN = ReanimatedRexport.KeyboardState.OPEN;
     }
-    const result = mutable1.set(OPEN);
+    const result = set(OPEN);
   };
-  const obj = KeyboardChatScrollView;
-  fn.__closure = { animatedKeyboardState: mutable1, KeyboardState: ReanimatedRexport2.KeyboardState };
+  const useKeyboardHandler = KeyboardChatScrollView.useKeyboardHandler;
+  fn.__closure = { animatedKeyboardState: mutable1, KeyboardState: ReanimatedRexport.KeyboardState };
   fn.__workletHash = 12130162639136;
   fn.__initData = __initData;
-  obj2.onStart = fn;
-  const fn2 = function t(height) {
+  fn2 = function t(height) {
     const result = mutable.set(height.height);
   };
-  fn2.__closure = { animatedKeyboardHeight: mutable };
+  const obj3 = { animatedKeyboardHeight: mutable };
+  fn2.__closure = obj3;
   fn2.__workletHash = 1398293011995;
   fn2.__initData = __initData2;
-  obj2.onMove = fn2;
-  const fn3 = function e(height) {
+  fn3 = function e(height) {
+    let OPEN;
+    set = mutable1.set;
     if (0 === height.height) {
-      let OPEN = ReanimatedRexport2.KeyboardState.CLOSED;
+      OPEN = ReanimatedRexport.KeyboardState.CLOSED;
     } else {
-      OPEN = ReanimatedRexport2.KeyboardState.OPEN;
+      OPEN = ReanimatedRexport.KeyboardState.OPEN;
     }
-    const result = mutable1.set(OPEN);
+    const result = set(OPEN);
     const result1 = mutable.set(height.height);
   };
-  const obj3 = { animatedKeyboardState: mutable1, KeyboardState: ReanimatedRexport2.KeyboardState };
-  const obj4 = { animatedKeyboardHeight: mutable };
-  fn3.__closure = { animatedKeyboardState: mutable1, KeyboardState: ReanimatedRexport2.KeyboardState, animatedKeyboardHeight: mutable };
+  ({ animatedKeyboardState: mutable1, KeyboardState: ReanimatedRexport.KeyboardState });
+  fn3.__closure = { animatedKeyboardState: mutable1, KeyboardState: ReanimatedRexport.KeyboardState, animatedKeyboardHeight: mutable };
   fn3.__workletHash = 10688534401196;
   fn3.__initData = __initData3;
-  obj2.onEnd = fn3;
-  obj.useKeyboardHandler(obj2, []);
+  ({ animatedKeyboardState: mutable1, KeyboardState: ReanimatedRexport.KeyboardState, animatedKeyboardHeight: mutable });
+  useKeyboardHandler(obj, []);
   return null;
 });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/keyboard/native/AnimatedKeyboardProviderController.tsx");
-
-export default {
+let obj = {
   Component(children) {
-    const obj = { enabled: true, navigationBarTranslucent: true, preserveEdgeToEdge: true, statusBarTranslucent: true, children: null };
-    const items = [children.children, React2(closure_9, {})];
-    obj.children = items;
-    return React3(KeyboardChatScrollView.KeyboardProvider, obj);
+    let items;
+    const obj = { enabled: true, navigationBarTranslucent: true, preserveEdgeToEdge: true, statusBarTranslucent: true, children: items };
+    items = [children.children, ];
+    const KeyboardProvider = KeyboardChatScrollView.KeyboardProvider;
+    items[1] = React2(closure_9, {});
+    return _false(KeyboardProvider, obj);
   },
   animatedKeyboardHeight: mutable,
   animatedKeyboardState: mutable1
 };
+let result = size.fileFinishedImporting("modules/keyboard/native/AnimatedKeyboardProviderController.tsx");
+
+export default obj;

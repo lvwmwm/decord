@@ -8,31 +8,36 @@
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7605 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesPendingName.tsx");
 
 export const useDisplayNameStylesPendingName = function useDisplayNameStylesPendingName(stateFromStores, guildId) {
   _require = stateFromStores;
   importDefault = guildId;
-  const name = UserUtilsDefault.useName(stateFromStores);
+  const obj = UserUtilsDefault;
+  const name = obj.useName(stateFromStores);
   const items = [UserProfileSettingsStore, GuildMemberStore];
   const items1 = [guildId, stateFromStores];
-  let str = require("initialize").useStateFromStores(items, () => {
-    const pendingChanges = UserProfileSettingsStore.getPendingChanges(closure_1);
-    if (null != closure_1) {
+  const obj2 = require("get initialized");
+  let str = obj2.useStateFromStores(items, () => {
+    let pendingGlobalName;
+    const pendingChanges = UserProfileSettingsStore.getPendingChanges(guildId);
+    const tmp = guildId;
+    if (null != guildId) {
       let pendingNickname = pendingChanges.pendingNickname;
       if (pendingNickname == null) {
         let id;
+        const getNick = GuildMemberStore.getNick;
         if (stateFromStores != null) {
           id = stateFromStores.id;
         }
-        pendingNickname = GuildMemberStore.getNick(closure_1, id);
+        pendingNickname = getNick(tmp, id);
       }
-      let pendingGlobalName = pendingNickname;
+      pendingGlobalName = pendingNickname;
     } else {
       pendingGlobalName = pendingChanges.pendingGlobalName;
     }

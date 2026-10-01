@@ -4,25 +4,27 @@
 // Exports: createClientReportEnvelope
 
 // Module 12371
-import _mod12327 from "module_12327" /* 12327 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12327 */;
 import _mod12357 from "module_12357" /* 12357 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
+  let obj3;
   let result = arg2;
   const items = [{ type: "client_report" }, ];
   if (!arg2) {
-    result = _mod12327.dateTimestampInSeconds();
+    const obj = _browserPerformanceTimeOriginMode;
+    result = obj.dateTimestampInSeconds();
   }
   items[1] = { timestamp: result, discarded_events };
+  const createEnvelope = _mod12357.createEnvelope;
+  _mod12357;
   if (dsn) {
-    const obj3 = { dsn };
-    let obj4 = obj3;
+    obj3 = { dsn };
+    const obj2 = { dsn };
   } else {
-    obj4 = {};
+    obj3 = {};
   }
   const items1 = [items];
-  return _mod12357.createEnvelope(obj4, items1);
+  return createEnvelope(obj3, items1);
 };

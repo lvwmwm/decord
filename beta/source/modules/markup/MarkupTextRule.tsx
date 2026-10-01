@@ -6,13 +6,15 @@
 
 // Module 5312 (MarkupTextRule)
 import _modDef1930 from "module_1930" /* 1930 */;
+import size from "module_2" /* 2 */;
 
+const module_1930_mod = _modDef1930;
+
+let module_1930;
 const tmp2 = /^[\s\S]+?(?=[^0-9A-Za-z\s\u00c0-\uffff]|\n\n| {2,}\n|\w+:\S|[0-9]+\.|$)/;
-const obj = {};
+const obj = { match: module_1930.anyScopeRegex(tmp2) };
 const merged = Object.assign(_modDef1930.defaultRules.text);
-const t = fn(1930);
-obj.match = t.anyScopeRegex(tmp2);
-const size = fn(2);
+module_1930 = module_1930_mod;
 const result = size.fileFinishedImporting("modules/markup/MarkupTextRule.tsx");
 
 export default obj;

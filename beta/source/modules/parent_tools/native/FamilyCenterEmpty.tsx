@@ -6,23 +6,30 @@
 
 // Module 14452 (FamilyCenterEmpty)
 import Text_Text from "Text/Text" /* 4832 */;
-import _modDef14453 from "module_14453" /* 14453 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14453 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+({ View: c3, Image: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ art: { marginBottom: 10, width: 243 }, empty: { display: "flex", alignItems: "center" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterEmpty.tsx");
 
-export default function FamilyCenterEmpty(children) {
+export default function FamilyCenterEmpty(text) {
+  let items;
+  text = text.text;
   const tmp = closure_7();
-  const obj = { style: tmp.empty, children: null };
-  const items = [hasOwnProperty(React4, { source: _modDef14453, style: tmp.art, resizeMethod: "scale" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: children.text })];
-  obj.children = items;
-  return timestampProducer(React3, obj);
+  const obj = { style: tmp.empty, children: items };
+  items = [, ];
+  const obj2 = { source: AssetRegistryDefault, style: tmp.art, resizeMethod: "scale" };
+  items[0] = hasOwnProperty(React3, obj2);
+  items[1] = hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: text });
+  return metroRequire(_false, obj);
 };

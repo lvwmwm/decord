@@ -5,19 +5,21 @@
 // Exports: useIsEligibleSenderForReferralProgram
 
 // Module 7500 (useIsEligibleSenderForReferralProgram)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 7501 */;
 import ReferralTrialStore from "ReferralTrialStore" /* 6872 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useIsEligibleSenderForReferralProgram.tsx");
 
 export const useIsEligibleSenderForReferralProgram = function useIsEligibleSenderForReferralProgram(flag) {
+  let isEligibleToSendReferrals;
   if (flag === undefined) {
     flag = false;
   }
-  const maybeFetchReferralsRemaining = useMaybeFetchReferralsRemaining.useMaybeFetchReferralsRemaining(flag);
+  const obj = useMaybeFetchReferralsRemaining;
+  const maybeFetchReferralsRemaining = obj.useMaybeFetchReferralsRemaining(flag);
   const items = [ReferralTrialStore];
-  return initialize.useStateFromStores(items, () => isEligibleToSendReferrals.getIsEligibleToSendReferrals());
+  const obj2 = get_initialized;
+  return obj2.useStateFromStores(items, () => isEligibleToSendReferrals.getIsEligibleToSendReferrals());
 };

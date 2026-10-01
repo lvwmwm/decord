@@ -1,0 +1,10 @@
+// Module ID: 2141
+// Function ID: 2142
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 2141 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/ZGVzaWdu", scales: [1], hash: "6b38a7445a934561bea56f47228fb432", name: "ko.messages.6b38a7445a934561bea56f47228fb432.compiled.messages", type: "jsona" });

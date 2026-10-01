@@ -6,29 +6,31 @@
 
 // Module 12278 (ReportToModChannelStore)
 import module_560 from "module_560" /* 560 */;
-import "module_4706";
-import module_4706 from "module_4706" /* 4706 */;
+import combine_mod from "combine" /* 4706 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-let obj = { name: "report-to-mod-channel-storage", storage: null };
-obj.storage = module_4706.createJSONStorage(() => require("LocalStorageWrapper"));
-let obj2 = module_560.create(module_4706.persist((arg0, arg1) => {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  return {
+const create = module_560.create;
+let combine = combine_mod;
+let obj = { name: "report-to-mod-channel-storage", storage: combine.createJSONStorage(() => require("LocalStorageWrapper")) };
+const persist = combine.persist;
+combine = combine_mod;
+let obj2 = create(persist((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let obj = {
     channelShowResolvedFlags: {},
     setShowResolvedFlags(arg0, arg1) {
       closure_0 = arg0;
       closure_1 = arg1;
-      return closure_0(dependencyMap[2]).batchUpdates(() => {
+      let obj = closure_0(dependencyMap[2]);
+      return obj.batchUpdates(() => {
         closure_0((channelShowResolvedFlags) => {
-          const obj = { channelShowResolvedFlags: null };
+          const obj = { channelShowResolvedFlags: obj2 };
           obj2 = {};
           const merged = Object.assign(channelShowResolvedFlags.channelShowResolvedFlags);
           obj2[closure_1_0] = closure_1_1;
-          obj.channelShowResolvedFlags = obj2;
           return obj;
         });
       });
@@ -41,12 +43,14 @@ let obj2 = module_560.create(module_4706.persist((arg0, arg1) => {
       return flag;
     }
   };
+  return obj;
 }, obj));
 const result = size.fileFinishedImporting("modules/report_to_mod/ReportToModChannelStore.tsx");
 
 export const useReportToModChannelFiltersStore = obj2;
 export const useShouldShowResolvedFlagsForChannel = function useShouldShowResolvedFlagsForChannel(arg0) {
-  closure_0 = arg0;
+  let obj3;
+  let closure_0 = arg0;
   const obj = obj2();
   if (null == arg0) {
     obj2 = {
@@ -55,7 +59,7 @@ export const useShouldShowResolvedFlagsForChannel = function useShouldShowResolv
 
         }
     };
-    let obj3 = obj2;
+    obj3 = obj2;
   } else {
     let flag = obj.getShowResolvedFlags(arg0);
     if (flag == null) {

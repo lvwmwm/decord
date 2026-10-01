@@ -5,45 +5,47 @@
 // Exports: TwinButtons
 
 // Module 8372 (TwinButtons)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((arg0) => {
+  let space;
   let str = "row";
   if (arg0) {
     str = "column";
   }
-  const container = { flexDirection: str, gap: null };
-  const space = nativeDefault.space;
-  container.gap = arg0 ? space.PX_8 : space.PX_12;
+  const container = { flexDirection: str, gap: arg0 ? space.PX_8 : space.PX_12 };
+  space = nativeDefault.space;
   return { container, button: { flex: 1 } };
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/experimental/Button/native/TwinButtons.native.tsx");
 
 export const TwinButtons = function TwinButtons(children) {
+  let button;
   _require = undefined;
-  let tmp = closure_6(require("useFontScale").useFontScale() > 1.2);
+  children = children.children;
+  const obj = require("useFontScale");
+  let tmp = closure_6(obj.useFontScale() > 1.2);
   _require = tmp;
-  const obj2 = { style: tmp.container, children: null };
-  const Children = noop.Children;
-  obj2.children = Children.map(children.children, (type) => {
+  const Children = react.Children;
+  return <View style={tmp.container}>{Children.map(children, (type) => {
     let tmp = null;
-    if (noop.isValidElement(type)) {
+    if (react.isValidElement(type)) {
       tmp = null;
       if (type.type === components_Button_Button.Button) {
-        const obj = { style: button.button, children: type };
         tmp = <View style={button.button}>{arg0}</View>;
       }
     }
     return tmp;
-  });
-  return <View style={tmp.container}>{null}</View>;
+  })}</View>;
 };

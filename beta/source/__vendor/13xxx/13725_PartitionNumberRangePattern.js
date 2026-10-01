@@ -5,25 +5,24 @@
 // Exports: PartitionNumberRangePattern
 
 // Module 13725 (PartitionNumberRangePattern)
-import _mod13697 from "module_13697" /* 13697 */;
+import UNICODE_EXTENSION_SEQUENCE_REGEX from "UNICODE_EXTENSION_SEQUENCE_REGEX" /* 13697 */;
+import CollapseNumberRange from "CollapseNumberRange" /* 13710 */;
+import FormatApproximately from "FormatApproximately" /* 13721 */;
 import FormatNumeric from "FormatNumeric" /* 13722 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const PartitionNumberRangePattern = function PartitionNumberRangePattern(arg0, isNaN, isNaN2, getInternalSlots) {
   getInternalSlots = getInternalSlots.getInternalSlots;
+  const invariant = UNICODE_EXTENSION_SEQUENCE_REGEX.invariant;
   const isNaNResult = isNaN.isNaN();
-  let tmp4 = !isNaNResult;
-  if (!isNaNResult) {
-    tmp4 = !isNaN2.isNaN();
-  }
-  _mod13697.invariant(tmp4, "Input must be a number", RangeError);
+  const tmp4 = !isNaNResult && !isNaN2.isNaN();
+  invariant(tmp4, "Input must be a number", RangeError);
   const internalSlots = getInternalSlots(arg0);
   const result = tmp(13723).PartitionNumberPattern(internalSlots, isNaN);
   const result1 = tmp(13723).PartitionNumberPattern(internalSlots, isNaN2);
+  const FormatNumericResult = FormatNumeric.FormatNumeric(internalSlots, isNaN);
   if (FormatNumericResult === FormatNumeric.FormatNumeric(internalSlots, isNaN2)) {
-    const FormatApproximatelyResult = tmp(13721).FormatApproximately(internalSlots, result);
+    const FormatApproximatelyResult = FormatApproximately.FormatApproximately(internalSlots, result);
     const item = FormatApproximatelyResult.forEach((item) => {
       item.source = "shared";
     });
@@ -41,7 +40,6 @@ export const PartitionNumberRangePattern = function PartitionNumberRangePattern(
       items.push(item);
     });
     const obj2 = { getInternalSlots };
-    return tmp(13710).CollapseNumberRange(arg0, items, obj2);
+    return CollapseNumberRange.CollapseNumberRange(arg0, items, obj2);
   }
-  FormatNumericResult = FormatNumeric.FormatNumeric(internalSlots, isNaN);
 };

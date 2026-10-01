@@ -5,39 +5,38 @@
 // Exports: XboxTwoWayLinkUpsell
 
 // Module 14501 (XboxTwoWayLinkUpsell)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl3 from "intl" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 8529 */;
-import OneWayToTwoWayLinkUpsell from "OneWayToTwoWayLinkUpsell" /* 14502 */;
-import _modDef14503 from "module_14503" /* 14503 */;
-import noop from "module_19" /* 19 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 14502 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14503 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let c3;
+let closure_4;
 ({ HelpdeskArticles: c3, AnalyticsLocations: closure_4 } = Constants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ upsellImage: { alignSelf: "center", width: 84, marginLeft: 16 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxTwoWayLinkUpsell.tsx");
 
 export const XboxTwoWayLinkUpsell = function XboxTwoWayLinkUpsell() {
   const tmp = closure_6();
-  const articleURL = HelpdeskUtilsDefault.getArticleURL(constants.XBOX_CONNECTION);
-  const obj2 = { title: null, body: null, img: null, newIndicatorDismissibleContent: null, onPress: null };
-  const intl = util.intl;
-  obj2.title = intl.string(util.t["2okkZV"]);
-  const intl2 = util.intl;
-  obj2.body = intl2.format(util.t.OnERSS, { help_article: articleURL });
-  const obj3 = { style: tmp.upsellImage, source: null, resizeMode: "contain" };
-  obj3.source = _modDef14503;
-  obj2.img = jsx(FastImageDefault, { style: tmp.upsellImage, source: null, resizeMode: "contain" });
-  obj2.newIndicatorDismissibleContent = dismissible_content.DismissibleContent.XBOX_ONE_WAY_RECONNECT;
-  obj2.onPress = function onPress() {
+  let obj = HelpdeskUtilsDefault;
+  const articleURL = obj.getArticleURL(constants.XBOX_CONNECTION);
+  const OneWayToTwoWayLinkUpsell = OneWayToTwoWayLinkUpsell2.OneWayToTwoWayLinkUpsell;
+  const intl = intl3.intl;
+  const intl2 = intl3.intl;
+  ({ style: tmp.upsellImage, source: AssetRegistryDefault, resizeMode: "contain" });
+  FastImageDefault;
+  return <OneWayToTwoWayLinkUpsell title={intl.string(intl3.t["2okkZV"])} body={intl2.format(intl3.t.OnERSS, { help_article: articleURL })} img={null} newIndicatorDismissibleContent={dismissible_content.DismissibleContent.XBOX_ONE_WAY_RECONNECT} onPress={function onPress() {
     const items = [constants.RELINK_UPSELL];
-    return XboxLinkModalActionCreatorsDefault.showModal(items);
-  };
-  return jsx(OneWayToTwoWayLinkUpsell.OneWayToTwoWayLinkUpsell, { title: null, body: null, img: null, newIndicatorDismissibleContent: null, onPress: null });
+    const obj = XboxLinkModalActionCreatorsDefault;
+    return obj.showModal(items);
+  }} />;
 };

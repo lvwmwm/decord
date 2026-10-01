@@ -5,27 +5,30 @@
 // Exports: useDismissOnce
 
 // Module 14280 (useDismissOnce)
-import noop from "module_19" /* 19 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const size = fn(2);
+let react = react_mod;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const result = size.fileFinishedImporting("modules/tiny_bronco/native/useDismissOnce.tsx");
 
 export const useDismissOnce = function useDismissOnce(markAsDismissed) {
-  noop = markAsDismissed;
-  noop.useRef(false);
-  noop.useRef(markAsDismissed);
+  let current;
+  react = markAsDismissed;
+  const ref = react.useRef(false);
+  const ref2 = react.useRef(markAsDismissed);
   const items = [markAsDismissed];
-  const effect = noop.useEffect(() => {
-    closure_2.current = current;
+  const effect = react.useEffect(() => {
+    ref2.current = current;
   }, items);
-  const callback = noop.useCallback((AUTO_DISMISS) => {
+  const callback = react.useCallback((AUTO_DISMISS) => {
     if (!ref.current) {
       tmp.current = true;
       ref2.current(AUTO_DISMISS);
     }
   }, []);
   const items1 = [callback];
-  const effect1 = noop.useEffect(() => () => callback(constants.AUTO_DISMISS), items1);
+  const effect1 = react.useEffect(() => () => callback(constants.AUTO_DISMISS), items1);
   return callback;
 };

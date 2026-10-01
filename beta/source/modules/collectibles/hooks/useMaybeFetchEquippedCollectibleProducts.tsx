@@ -6,20 +6,28 @@
 
 // Module 7660 (useMaybeFetchEquippedCollectibleProducts)
 import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 7663 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let _require;
+
 function useEquippedCollectibleSkuIds(id, guildId) {
+  let skuId;
+  let skuId1;
+  let skuId3;
   _require = id;
   let items = [skuId3];
   const items1 = [id];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => UserStore.getUser(closure_0), items1);
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(id), items1);
   const tmp2 = skuId(skuId1[3])(id, guildId);
-  const obj = require("initialize");
-  const avatarDecoration = require("useAvatarDecoration").useAvatarDecoration(stateFromStores, guildId);
   const obj2 = require("useAvatarDecoration");
-  const nameplate = require("useNameplate").useNameplate({ user: stateFromStores, guildId });
+  const avatarDecoration = obj2.useAvatarDecoration(stateFromStores, guildId);
+  const obj3 = require("useNameplate");
+  const obj4 = { user: stateFromStores, guildId };
+  const nameplate = obj3.useNameplate(obj4);
   skuId = undefined;
   if (avatarDecoration != null) {
     skuId = avatarDecoration.skuId;
@@ -48,22 +56,19 @@ function useEquippedCollectibleSkuIds(id, guildId) {
     return items.filter((item) => null != item);
   }, items2);
 }
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchEquippedCollectibleProducts.tsx");
 
 export default function useMaybeFetchEquippedCollectibleProducts(id, guildId, arg2) {
-  closure_0 = arg2;
+  let closure_0 = arg2;
   let tmp = useEquippedCollectibleSkuIds(id, guildId);
   const skuIds = tmp;
   const items = [arg2, tmp];
-  const effect = noop.useEffect(() => {
-    let tmp = closure_0;
-    if (closure_0) {
-      tmp = 0 !== skuIds.length;
-    }
+  const effect = react.useEffect(() => {
+    const tmp = closure_0 && 0 !== skuIds.length;
     if (tmp) {
       const obj2 = { skuIds };
-      const result = StorefrontProductActionCreators.maybeFetchProductsBySkuIds(obj2);
+      const obj = StorefrontProductActionCreators;
+      const result = obj.maybeFetchProductsBySkuIds(obj2);
     }
   }, items);
 };

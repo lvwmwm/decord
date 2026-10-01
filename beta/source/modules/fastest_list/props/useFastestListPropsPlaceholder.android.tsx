@@ -5,11 +5,17 @@
 // Exports: default
 
 // Module 6482 (useFastestListPropsPlaceholder)
+import react_native from "react-native" /* 17 */;
+import ColorUtils from "ColorUtils" /* 4683 */;
 import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6483 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
 function createNativePlaceholderConfig(listFooter) {
+  let labelPaddingInnerRatio;
+  let labelSecondarySize;
+  let spaceGap;
+  let verticalAlignment;
   let type;
   if (listFooter != null) {
     type = listFooter.type;
@@ -18,12 +24,12 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  const size = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "diversity", borderBottomLeftRadius: "h", borderBottomRightRadius: "e", divider: "isArray", dividerColor: "isArray", dividerPaddingLeft: "Number", dividerPaddingRight: "e", placeholderShape: "isArray", placeholderShapeColor: "isArray", placeholderShapeCount: "Object", placeholderShapeGap: "e", placeholderShapePaddingHorizontal: "isArray", placeholderShapePaddingVertical: "isArray", placeholderFeedBackgroundColor: "PX_16", placeholderFeedColor: "e", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "flex", placeholderFeedLabelSecondarySize: "e", placeholderFeedPadding: "isArray", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "channel", placeholderType: NONE, width: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019875277186833392, height: false, verticalAlignment: false, horizontalAlignment: false };
+  size = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "diversity", borderBottomLeftRadius: "h", borderBottomRightRadius: "e", divider: "isArray", dividerColor: "isArray", dividerPaddingLeft: "Number", dividerPaddingRight: "e", placeholderShape: "isArray", placeholderShapeColor: "isArray", placeholderShapeCount: "Object", placeholderShapeGap: "e", placeholderShapePaddingHorizontal: "isArray", placeholderShapePaddingVertical: "isArray", placeholderFeedBackgroundColor: "PX_16", placeholderFeedColor: "e", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "flex", placeholderFeedLabelSecondarySize: "e", placeholderFeedPadding: "isArray", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "channel", placeholderType: NONE, width: "\u0440\u0435\u0437\u0443\u043B\u0442\u0430\u0442", height: "\u0441\u0442\u043E", verticalAlignment: "\u0441\u0442\u043E \u0442\u043E\u0447\u043A\u0438", horizontalAlignment: 2082 };
   if (null == listFooter) {
     return size;
   } else {
     if (FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE !== type) {
-      if (tmp15(6483).FastestListPropsPlaceholderType.SHAPE === type) {
+      if (FastestListPropsPlaceholder.FastestListPropsPlaceholderType.SHAPE === type) {
         let num9 = listFooter.borderRadius;
         if (num9 == null) {
           num9 = 0;
@@ -44,9 +50,10 @@ function createNativePlaceholderConfig(listFooter) {
           num11 = 0;
         }
         size.placeholderShapePaddingVertical = num11;
-        const tmp14 = processColor(tmp15(4683).hexToRgbaString(listFooter.colorHex, listFooter.opacity));
-        size.placeholderShapeColor = tmp14;
+        const tmp13Result = ColorUtils;
+        size.placeholderShapeColor = processColor(tmp13Result.hexToRgbaString(listFooter.colorHex, listFooter.opacity));
         let num12 = listFooter.shapeCount;
+        const tmp12 = processColor(tmp13Result.hexToRgbaString(listFooter.colorHex, listFooter.opacity));
         if (num12 == null) {
           num12 = 1;
         }
@@ -61,8 +68,7 @@ function createNativePlaceholderConfig(listFooter) {
           str2 = "center";
         }
         size.horizontalAlignment = str2;
-        const tmp15Result = tmp15(4683);
-      } else if (tmp15(6483).FastestListPropsPlaceholderType.FEED_ITEM === type) {
+      } else if (FastestListPropsPlaceholder.FastestListPropsPlaceholderType.FEED_ITEM === type) {
         let num = listFooter.borderRadius;
         if (num == null) {
           num = 0;
@@ -93,9 +99,9 @@ function createNativePlaceholderConfig(listFooter) {
           flag = false;
         }
         size.divider = flag;
-        const tmp10 = processColor(listFooter.dividerColorHex);
-        size.dividerColor = tmp10;
+        size.dividerColor = processColor(listFooter.dividerColorHex);
         let num6 = listFooter.dividerPaddingLeft;
+        const tmp8 = processColor(listFooter.dividerColorHex);
         if (num6 == null) {
           num6 = 0;
         }
@@ -105,11 +111,11 @@ function createNativePlaceholderConfig(listFooter) {
           num7 = 0;
         }
         size.dividerPaddingRight = num7;
-        const tmp9Result = processColor(listFooter.backgroundColorHex);
-        size.placeholderFeedBackgroundColor = tmp9Result;
-        const tmp9Result2 = processColor(listFooter.colorHex);
-        size.placeholderFeedColor = tmp9Result2;
+        size.placeholderFeedBackgroundColor = processColor(listFooter.backgroundColorHex);
+        const tmp7Result = processColor(listFooter.backgroundColorHex);
+        size.placeholderFeedColor = processColor(listFooter.colorHex);
         ({ labelSize: obj.placeholderFeedLabelSize, labelSecondarySize } = listFooter);
+        const tmp7Result2 = processColor(listFooter.colorHex);
         if (labelSecondarySize == null) {
           labelSecondarySize = 0;
         }
@@ -128,6 +134,8 @@ function createNativePlaceholderConfig(listFooter) {
       } else {
         const _Error = Error;
         const _HermesInternal = HermesInternal;
+        const self = this;
+        const self2 = this;
         const error = new Error("Invalid placeholder type: " + type);
         throw error;
       }
@@ -135,9 +143,10 @@ function createNativePlaceholderConfig(listFooter) {
     return size;
   }
 }
-const processColor = fn(17).processColor;
-const obj = { sectionItem: { type: fn(6483).FastestListPropsPlaceholderType.NONE } };
-let size = fn(2);
+const processColor = react_native.processColor;
+let obj = { sectionItem: { type: FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE } };
+({ type: FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE });
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx");
 
 export default function useFastestListPropsPlaceholder() {
@@ -145,7 +154,10 @@ export default function useFastestListPropsPlaceholder() {
   if (arg0 === undefined) {
     tmp = obj;
   }
-  closure_0 = tmp;
+  let closure_0 = tmp;
   const items = [tmp];
-  return noop.useMemo(() => ({ listFooter: createNativePlaceholderConfig(closure_0.listFooter), listHeader: createNativePlaceholderConfig(closure_0.listHeader), sectionFooter: createNativePlaceholderConfig(closure_0.sectionFooter), sectionHeader: createNativePlaceholderConfig(closure_0.sectionHeader), sectionItem: createNativePlaceholderConfig(closure_0.sectionItem), sectionItemAtFront: createNativePlaceholderConfig(closure_0.sectionItemAtFront), sectionItemAtRear: createNativePlaceholderConfig(closure_0.sectionItemAtRear), sectionItemSingleton: createNativePlaceholderConfig(closure_0.sectionItemSingleton) }), items);
+  return react.useMemo(() => {
+    obj = { listFooter: createNativePlaceholderConfig(closure_0.listFooter), listHeader: createNativePlaceholderConfig(closure_0.listHeader), sectionFooter: createNativePlaceholderConfig(closure_0.sectionFooter), sectionHeader: createNativePlaceholderConfig(closure_0.sectionHeader), sectionItem: createNativePlaceholderConfig(closure_0.sectionItem), sectionItemAtFront: createNativePlaceholderConfig(closure_0.sectionItemAtFront), sectionItemAtRear: createNativePlaceholderConfig(closure_0.sectionItemAtRear), sectionItemSingleton: createNativePlaceholderConfig(closure_0.sectionItemSingleton) };
+    return obj;
+  }, items);
 };

@@ -7,23 +7,28 @@
 // Module 15468 (useSecureFramesUserVerifiedKeys)
 import _modDef12 from "module_12" /* 12 */;
 import VerifiedKeyStore from "VerifiedKeyStore" /* 9147 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeys.tsx");
 
 export const useSecureFramesUserVerifiedKeys = function useSecureFramesUserVerifiedKeys(userId) {
   _require = userId;
   const items = [VerifiedKeyStore];
-  return require("initialize").useStateFromStoresArray(items, () => {
-    const entries = _modDef12(VerifiedKeyStore.getUserVerifiedKeys(closure_0)).entries();
+  const obj = require("get initialized");
+  return obj.useStateFromStoresArray(items, () => {
+    const tmp = _modDef12;
+    const tmpResult = tmp(VerifiedKeyStore.getUserVerifiedKeys(userId));
+    const entries = tmpResult.entries();
     const mapped = entries.map((item) => {
+      let tmp;
+      let tmp2;
       [tmp, tmp2] = item;
       return { verifiedKey, timestamp };
     });
-    const tmpResult = _modDef12(VerifiedKeyStore.getUserVerifiedKeys(closure_0));
-    return mapped.sortBy((timestamp) => -1 * timestamp.timestamp).value();
+    const iter = mapped.sortBy((timestamp) => -1 * timestamp.timestamp);
+    return iter.value();
   });
 };

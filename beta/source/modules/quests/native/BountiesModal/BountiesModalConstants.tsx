@@ -15,6 +15,8 @@ export const getBountyVideoEndAppStoreSheetHeight = function getBountyVideoEndAp
   return arg0 * AppStoreOverlayBody.APP_STORE_OVERLAY_HEIGHT_RATIO;
 };
 export const getBountyVideoEndPeekTargetScale = function getBountyVideoEndPeekTargetScale(arg0) {
+  let videoHeight;
+  let windowHeight;
   ({ windowHeight, videoHeight } = arg0);
   if (videoHeight <= 0) {
     return 1;

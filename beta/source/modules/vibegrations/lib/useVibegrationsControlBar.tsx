@@ -5,29 +5,38 @@
 // Exports: useVibegrationsControlPhase, useVibegrationsControlStop
 
 // Module 16289 (useVibegrationsControlBar)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import VibegrationsChatStore from "VibegrationsChatStore" /* 12643 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const interruptTurn = fn(12642).interruptTurn;
-const size = fn(2);
+let _slicedToArray = _slicedToArray_mod;
+const interruptTurn = VibegrationsConnectionStore.interruptTurn;
 const result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsControlBar.tsx");
 
 export const VIBEGRATIONS_CONTROL_HANDOFF_MS = 2400;
 export const VIBEGRATIONS_CONTROL_STOP_RETRY_MS = 5000;
 export const useVibegrationsControlPhase = function useVibegrationsControlPhase(active) {
-  [tmp2, tmp3] = noop.useState(active);
-  [first] = noop.useState(false);
-  closure_1 = tmp6;
+  let tmp2;
+  let tmp3;
+  [tmp2, tmp3] = _slicedToArray(react.useState(active), 2);
+  const tmp = _slicedToArray(react.useState(active), 2);
+  const tmp4 = _slicedToArray(react.useState(false), 2);
+  const first = tmp4[0];
+  let closure_1 = tmp6;
+  const obj = react;
   if (active !== tmp2) {
     tmp3(active);
-    tmp6(!active);
+    tmp4[1](!active);
   }
   const items = [first];
-  const effect = noop.useEffect(() => {
+  const effect = obj.useEffect(() => {
+    let closure_0;
+    let timeout;
     if (timeout) {
       const _setTimeout = setTimeout;
       timeout = setTimeout(() => closure_1_1(false), 2400);
@@ -45,18 +54,19 @@ export const useVibegrationsControlPhase = function useVibegrationsControlPhase(
   return str;
 };
 export const useVibegrationsControlStop = function useVibegrationsControlStop(projectId) {
+  let closure_2;
+  let stopping;
+  let tmp4;
   _require = projectId;
   const items = [VibegrationsChatStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let isThinkingResult = null != closure_0;
-    if (isThinkingResult) {
-      isThinkingResult = VibegrationsChatStore.isThinking(tmp);
-    }
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const isThinkingResult = null != projectId && VibegrationsChatStore.isThinking(tmp);
     return isThinkingResult;
   });
-  [stopping] = noop.useState(false);
+  [stopping, tmp4] = react.useState(false);
   _slicedToArray = tmp4;
-  const tmp5 = _slicedToArray(noop.useState(stateFromStores), 2);
+  const tmp5 = _slicedToArray(react.useState(stateFromStores), 2);
   if (stateFromStores !== tmp5[0]) {
     tmp5[1](stateFromStores);
     if (!stateFromStores) {
@@ -65,6 +75,7 @@ export const useVibegrationsControlStop = function useVibegrationsControlStop(pr
   }
   const items1 = [stopping];
   const effect = obj2.useEffect(() => {
+    let closure_0;
     if (stopping) {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => closure_1_2(false), 5000);
@@ -75,7 +86,7 @@ export const useVibegrationsControlStop = function useVibegrationsControlStop(pr
   let stop = null;
   if (stateFromStores) {
     stop = obj2.useCallback(() => {
-      if (null != closure_0) {
+      if (null != projectId) {
         closure_2(true);
         interruptTurn(tmp);
       }

@@ -5,83 +5,106 @@
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
 // Module 14787 (GuildRoleSubscriptionBenefitRow)
+import react_native from "react-native" /* 17 */;
 import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import useChannelNameDefault from "useChannelName" /* 4989 */;
 import EmojiIconDefault from "EmojiIcon" /* 14785 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+let hasOwnProperty;
+let metroRequire;
+let tmp5;
+let tmp6;
 const UnicodeEmojisDefault = tmp5(4483);
-require = fn;
+const Text_Text = tmp6(4832);
 function BenefitRow(description) {
+  let emojiId;
+  let guildId;
+  let items;
+  let items1;
+  let title;
   description = description.description;
   ({ emojiId, guildId, title } = description);
   const tmp = closure_7();
-  const obj = { style: tmp.container, children: null };
-  const items = [hasOwnProperty(EmojiIconDefault, { guildId, id: emojiId, size: 22, fontSize: 18 }), hasOwnProperty(native.Spacer, { size: 16 }), ];
-  const obj2 = { style: tmp.textContainer, children: null };
-  const items1 = [title, ];
+  const obj = { style: tmp.container, children: items };
+  items = [hasOwnProperty(EmojiIconDefault, { guildId, id: emojiId, size: 22, fontSize: 18 }), hasOwnProperty(native.Spacer, { size: 16 }), ];
+  const obj2 = { style: tmp.textContainer, children: items1 };
+  items1 = [title, ];
   let tmp4Result = null;
+  const tmp4 = hasOwnProperty;
   if (null != description) {
     const obj3 = { style: tmp.description, variant: "text-sm/normal", color: "interactive-text-default", children: description };
-    tmp4Result = hasOwnProperty(Text_Text.Text, obj3);
+    tmp4Result = tmp4(Text_Text.Text, obj3);
   }
   items1[1] = tmp4Result;
-  obj2.children = items1;
-  items[2] = timestampProducer(View, obj2);
-  obj.children = items;
-  return timestampProducer(View, obj);
+  items[2] = metroRequire(View, obj2);
+  return metroRequire(View, obj);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ container: { flexDirection: "row", justifyContent: "flex-start" }, textContainer: { flex: 1, justifyContent: "center" }, description: { marginTop: 2 }, channelTitle: { flexDirection: "row", alignItems: "center" }, channelIcon: { width: 16, height: 16, marginEnd: 8 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionBenefitRow.tsx");
 
 export const ChannelBenefitRow = function ChannelBenefitRow(benefit) {
+  let intl;
+  let items2;
+  let str;
+  let tmp2Result;
   benefit = benefit.benefit;
+  const guildId = benefit.guildId;
   const tmp = closure_7();
   const items = [ChannelStore];
   const items1 = [benefit.ref_id];
-  const stateFromStores = benefit(504).useStateFromStores(items, () => ChannelStore.getChannel(benefit.ref_id), items1);
   const obj = benefit(504);
-  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl = benefit(1115).intl;
-  obj2.children = "[" + intl.string(benefit(1115).t.bz1PZX) + "]";
-  let tmp8 = closure_5(benefit(4832).Text, obj2);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(benefit.ref_id), items1);
+  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(benefit(1115).t.bz1PZX) + "]" };
+  const tmp6 = useChannelNameDefault(stateFromStores);
+  const Text = benefit(4832).Text;
+  intl = benefit(1115).intl;
+  let tmp8 = closure_5(Text, obj2);
   if (null != stateFromStores) {
-    const obj3 = { style: tmp.channelTitle, children: null };
-    const obj4 = { style: tmp.channelIcon, size: tmp2(1177).Icon.Sizes.CUSTOM, source: tmp2(5335).getChannelIcon(stateFromStores) };
-    const items2 = [tmp7(tmp2(1177).Icon, obj4), ];
+    const obj3 = { style: tmp.channelTitle, children: items2 };
+    const obj4 = { style: tmp.channelIcon, size: benefit(1177).Icon.Sizes.CUSTOM, source: tmp2Result.getChannelIcon(stateFromStores) };
+    const Icon = tmp2(1177).Icon;
+    tmp2Result = benefit(5335);
+    items2 = [closure_5(Icon, obj4), ];
     const obj5 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp6 };
-    items2[1] = tmp7(tmp2(4832).Text, obj5);
-    obj3.children = items2;
+    items2[1] = closure_5(benefit(4832).Text, obj5);
     tmp8 = closure_6(View, obj3);
-    const tmp2Result = tmp2(5335);
   }
+  const tmp9 = BenefitRow;
   if (null != benefit.emoji_id) {
-    let str = benefit.emoji_id;
+    str = benefit.emoji_id;
   } else {
     str = "";
     if (null != benefit.emoji_name) {
-      str = UnicodeEmojisDefault.convertSurrogateToName(benefit.emoji_name, false);
       const tmp5Result = UnicodeEmojisDefault;
+      str = tmp5Result.convertSurrogateToName(benefit.emoji_name, false);
     }
   }
-  return closure_5(BenefitRow, { emojiId: str, guildId: benefit.guildId, title: tmp8, description: benefit.description });
+  const obj6 = { emojiId: str, guildId, title: tmp8, description: benefit.description };
+  return closure_5(tmp9, obj6);
 };
 export const IntangibleBenefitRow = function IntangibleBenefitRow(benefit) {
+  let obj3;
+  let str;
   benefit = benefit.benefit;
+  const guildId = benefit.guildId;
+  const tmp2 = BenefitRow;
   if (null != benefit.emoji_id) {
-    let str = benefit.emoji_id;
+    str = benefit.emoji_id;
   } else {
     str = "";
     if (null != benefit.emoji_name) {
-      str = UnicodeEmojisDefault.convertSurrogateToName(benefit.emoji_name, false);
+      const obj = UnicodeEmojisDefault;
+      str = obj.convertSurrogateToName(benefit.emoji_name, false);
     }
   }
-  const obj2 = { emojiId: str, guildId: benefit.guildId, title: hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: benefit.name }), description: benefit.description };
-  return hasOwnProperty(BenefitRow, obj2);
+  const obj2 = { emojiId: str, guildId, title: hasOwnProperty(Text_Text.Text, obj3), description: benefit.description };
+  obj3 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: benefit.name };
+  return hasOwnProperty(tmp2, obj2);
 };

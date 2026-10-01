@@ -6,34 +6,45 @@
 
 // Module 12023 (GuildBoostingMarketingUtils)
 import GuildBoostingUtils from "GuildBoostingUtils" /* 4728 */;
+import StageIcon from "StageIcon" /* 5411 */;
+import ReactionIcon from "ReactionIcon" /* 8219 */;
+import UploadIcon from "UploadIcon" /* 8674 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9033 */;
+import StickerIcon from "StickerIcon" /* 9573 */;
+import StarIcon from "StarIcon" /* 9698 */;
+import GifIcon from "GifIcon" /* 9842 */;
+import ImagesIcon from "ImagesIcon" /* 11195 */;
+import SoundboardIcon from "SoundboardIcon" /* 12024 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12026 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 12028 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_boosting/native/GuildBoostingMarketingUtils.tsx");
 
 export const getIconForPerk = function getIconForPerk(perkIcon) {
   if (GuildBoostingUtils.PerkIcons.EMOJI === perkIcon) {
-    return tmp(8219).ReactionIcon;
-  } else if (tmp(4728).PerkIcons.SOUNDBOARD === perkIcon) {
-    return tmp(12024).SoundboardIcon;
-  } else if (tmp(4728).PerkIcons.ANIMATED === perkIcon) {
-    return tmp(9842).GifIcon;
-  } else if (tmp(4728).PerkIcons.AUDIO === perkIcon) {
-    return tmp(12026).HeadphonesIcon;
-  } else if (tmp(4728).PerkIcons.STREAM === perkIcon) {
-    return tmp(12028).ScreenArrowIcon;
-  } else if (tmp(4728).PerkIcons.UPLOAD === perkIcon) {
-    return tmp(8674).UploadIcon;
-  } else if (tmp(4728).PerkIcons.CUSTOM_ROLE_ICON === perkIcon) {
-    return tmp(9033).ShieldUserIcon;
-  } else if (tmp(4728).PerkIcons.CUSTOMIZATION === perkIcon) {
-    return tmp(11195).ImagesIcon;
-  } else if (tmp(4728).PerkIcons.VANITY === perkIcon) {
-    return tmp(9698).StarIcon;
-  } else if (tmp(4728).PerkIcons.STAGE_VIDEO === perkIcon) {
-    return tmp(5411).StageIcon;
-  } else if (tmp(4728).PerkIcons.STICKER === perkIcon) {
-    return tmp(9573).StickerIcon;
+    return ReactionIcon.ReactionIcon;
+  } else if (GuildBoostingUtils.PerkIcons.SOUNDBOARD === perkIcon) {
+    return SoundboardIcon.SoundboardIcon;
+  } else if (GuildBoostingUtils.PerkIcons.ANIMATED === perkIcon) {
+    return GifIcon.GifIcon;
+  } else if (GuildBoostingUtils.PerkIcons.AUDIO === perkIcon) {
+    return HeadphonesIcon.HeadphonesIcon;
+  } else if (GuildBoostingUtils.PerkIcons.STREAM === perkIcon) {
+    return ScreenArrowIcon.ScreenArrowIcon;
+  } else if (GuildBoostingUtils.PerkIcons.UPLOAD === perkIcon) {
+    return UploadIcon.UploadIcon;
+  } else if (GuildBoostingUtils.PerkIcons.CUSTOM_ROLE_ICON === perkIcon) {
+    return ShieldUserIcon.ShieldUserIcon;
+  } else if (GuildBoostingUtils.PerkIcons.CUSTOMIZATION === perkIcon) {
+    return ImagesIcon.ImagesIcon;
+  } else if (GuildBoostingUtils.PerkIcons.VANITY === perkIcon) {
+    return StarIcon.StarIcon;
+  } else if (GuildBoostingUtils.PerkIcons.STAGE_VIDEO === perkIcon) {
+    return StageIcon.StageIcon;
+  } else if (GuildBoostingUtils.PerkIcons.STICKER === perkIcon) {
+    return StickerIcon.StickerIcon;
   } else {
-    return tmp(8219).ReactionIcon;
+    return ReactionIcon.ReactionIcon;
   }
 };

@@ -5,19 +5,20 @@
 // Exports: default
 
 // Module 12035 (useGuildPowerupOnShowDeactivate)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import Fragment from "Fragment" /* 21 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import useAlertStore from "useAlertStore" /* 5205 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-let closure_4 = noop.lazy(() => asyncRequireImpl(12036, dependencyMap.paths));
-const size = fn(2);
+const jsx = Fragment.jsx;
+let closure_4 = react.lazy(() => asyncRequire(12036, dependencyMap.paths));
 const result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnShowDeactivate.tsx");
 
 export default function useGuildPowerupOnShowDeactivate(guildId, powerup) {
   const items = [guildId, powerup];
-  return noop.useCallback(() => {
-    useAlertStore.openAlert("guild-powerups-deactivate-alert", <closure_4 guildId={guildId} powerup={powerup} />);
+  return react.useCallback(() => {
+    const obj = useAlertStore;
+    obj.openAlert("guild-powerups-deactivate-alert", <closure_4 guildId={guildId} powerup={powerup} />);
   }, items);
 };

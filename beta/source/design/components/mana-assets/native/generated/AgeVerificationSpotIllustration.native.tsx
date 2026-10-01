@@ -5,15 +5,19 @@
 // Exports: AgeVerificationSpotIllustration
 
 // Module 7906 (AgeVerificationSpotIllustration)
-import jsxProd from "jsxProd" /* 21 */;
+import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import _modDef7907 from "module_7907" /* 7907 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
+const jsx = Fragment.jsx;
+let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/AgeVerificationSpotIllustration.native.tsx");
 
 export const AgeVerificationSpotIllustration = function AgeVerificationSpotIllustration(width) {
+  let accessibilityLabel;
+  let accessible;
+  let resizeMode;
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -27,14 +31,9 @@ export const AgeVerificationSpotIllustration = function AgeVerificationSpotIllus
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   const obj2 = { uri: _modDef7907 };
-  obj.source = obj2;
-  const size = { width: num * num3, height: num2 * num3 };
+  FastImageDefault;
+  size = { width: num * num3, height: num2 * num3 };
   const items = [size];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
+  return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 };

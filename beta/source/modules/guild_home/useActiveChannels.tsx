@@ -15,26 +15,35 @@ import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 import ActiveChannelsStore from "ActiveChannelsStore" /* 13250 */;
 import size from "module_2" /* 2 */;
 
+let set;
+
 const isTextChannel = ChannelRecord.isTextChannel;
 const Permissions = Constants.Permissions;
 const ChannelFlags = ChannelConstants.ChannelFlags;
 const result = size.fileFinishedImporting("modules/guild_home/useActiveChannels.tsx");
 
-export const getActiveTextChannels = function getActiveTextChannels(guildId) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    const items = [ChannelStore, PermissionStore, ActiveChannelsStore, UserGuildSettingsStore];
+export const getActiveTextChannels = function getActiveTextChannels(guildId, items5) {
+  let arr;
+  let obj;
+  let obj2;
+  let tmp = items5;
+  if (items5 === undefined) {
+    const items = [ChannelStore, , , ];
+    items[1] = PermissionStore;
+    items[2] = ActiveChannelsStore;
+    items[3] = UserGuildSettingsStore;
     tmp = items;
   }
   [, , obj, obj2] = tmp;
+  set = undefined;
   const activeChannelIds = obj.getActiveChannelIds(guildId);
   if (null != activeChannelIds) {
     const _Array = Array;
-    let arr = Array.from(activeChannelIds);
+    arr = Array.from(activeChannelIds);
   } else {
     arr = [];
   }
-  obj2.getMutedChannels(guildId);
+  set = obj2.getMutedChannels(guildId);
   const mapped = arr.map((item) => require.getChannel(item));
   const found = mapped.filter(GlobalUtils.isNotNullish);
   return found.filter((hasFlag) => {
@@ -45,6 +54,7 @@ export const getActiveTextChannels = function getActiveTextChannels(guildId) {
     if (hasFlagResult) {
       return false;
     } else if (isTextChannel(hasFlag.type)) {
+      const obj = set;
       if (set.has(hasFlag.id)) {
         return false;
       } else {
@@ -72,7 +82,6 @@ export const getActiveTextChannels = function getActiveTextChannels(guildId) {
           return false;
         }
       }
-      obj = set;
     } else {
       return false;
     }

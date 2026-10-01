@@ -5,46 +5,56 @@
 // Exports: OpenableUserProfileAvatar
 
 // Module 7702 (UserProfileAvatar)
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 6629 */;
+import Constants2 from "Constants" /* 7628 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7687 */;
 import HeaderAvatarDefault from "HeaderAvatar" /* 7703 */;
 import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 7706 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size_mod from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const TrackUserProfileActions = fn(7628).TrackUserProfileActions;
-const AVATAR_SIZE_VARIANT = fn(6629).AVATAR_SIZE_VARIANT;
-const jsxProd = fn(21);
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const forwardRefResult = noop.forwardRef((backgroundColor, ref) => {
-  let size = backgroundColor.size;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+const View = react_native.View;
+const TrackUserProfileActions = Constants2.TrackUserProfileActions;
+const AVATAR_SIZE_VARIANT = Constants.AVATAR_SIZE_VARIANT;
+({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
+const forwardRefResult = react.forwardRef((size, ref) => {
+  let items;
+  let items1;
+  let items2;
+  size = size.size;
+  const backgroundColor = size.backgroundColor;
   if (size === undefined) {
     size = AVATAR_SIZE_VARIANT;
   }
-  const merged = Object.assign(backgroundColor, Object.assign({ backgroundColor: 0, size: 0 }));
+  const merged = Object.assign(size, Object.assign({ backgroundColor: 0, size: 0 }));
   const tmp2 = UserProfileSharedStylesDefault();
-  const obj = { children: null };
-  const obj2 = { style: null };
-  const items = [, , ];
+  const obj2 = { style: items };
+  items = [, , ];
+  const obj = { children: items1 };
   ({ avatarBackground: arr[0], avatarPosition: arr[1] } = tmp2);
-  items[2] = { backgroundColor: backgroundColor.backgroundColor };
-  obj2.style = items;
-  const items1 = [React5(View, obj2), ];
-  const obj3 = { ref, style: null, size };
-  const items2 = [, ];
+  items[2] = { backgroundColor };
+  items1 = [metroImportDefault(View, obj2), ];
+  const obj3 = { ref, style: items2, size };
+  items2 = [, ];
   ({ avatar: arr3[0], avatarPosition: arr3[1] } = tmp2);
-  obj3.style = items2;
+  const tmp3 = HeaderAvatarDefault;
   const merged1 = Object.assign(merged);
-  items1[1] = React5(HeaderAvatarDefault, obj3);
-  obj.children = items1;
-  return React7(React6, obj);
+  items1[1] = metroImportDefault(tmp3, obj3);
+  return React4(metroImportAll, obj);
 });
 let c10 = forwardRefResult;
-let size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileAvatar.tsx");
 
 export default forwardRefResult;
 export const OpenableUserProfileAvatar = function OpenableUserProfileAvatar(animate) {
+  let accessibilityLabel;
+  let tmp10;
   let flag = animate.animate;
   if (flag === undefined) {
     flag = true;
@@ -53,30 +63,31 @@ export const OpenableUserProfileAvatar = function OpenableUserProfileAvatar(anim
   const guildId = animate.guildId;
   const merged = Object.assign(animate, Object.assign({ animate: 0, user: 0, guildId: 0 }));
   let ref;
+  let obj = ref;
   ref = ref.useRef(null);
-  const trackUserProfileAction = flag(guildId[7]).useUserProfileAnalyticsContext().trackUserProfileAction;
+  let obj2 = flag(guildId[7]);
+  const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   const tmp5 = null != user.avatar || user.hasAvatarForGuild(guildId);
   const items = [flag, guildId, trackUserProfileAction, user];
-  const obj3 = { ref };
-  const callback = ref.useCallback(() => {
-    trackUserProfileAction({ action: TrackUserProfileActions.VIEW_AVATAR });
-    openUserProfileAvatarMediaViewerDefault({ user, guildId, animate: flag, originViewOrOriginLayout: ref.current });
+  const obj3 = { ref, animate: flag, user, guildId, onPress: tmp10, accessibilityLabel };
+  const callback = obj.useCallback(() => {
+    const obj = { action: TrackUserProfileActions.VIEW_AVATAR };
+    trackUserProfileAction(obj);
+    const obj2 = { user, guildId, animate: flag, originViewOrOriginLayout: ref.current };
+    openUserProfileAvatarMediaViewerDefault(obj2);
   }, items);
   const merged1 = Object.assign(merged);
-  obj3.animate = flag;
-  obj3.user = user;
-  obj3.guildId = guildId;
-  let tmp10;
+  tmp10 = undefined;
+  const tmp7 = closure_7;
+  const tmp8 = closure_10;
   if (tmp5) {
     tmp10 = callback;
   }
-  obj3.onPress = tmp10;
   if (tmp5) {
     const intl = tmp3(tmp4[9]).intl;
-    let accessibilityLabel = intl.string(tmp3(tmp4[9]).t.xB7MI3);
+    accessibilityLabel = intl.string(tmp3(tmp4[9]).t.xB7MI3);
   } else {
     accessibilityLabel = merged.accessibilityLabel;
   }
-  obj3.accessibilityLabel = accessibilityLabel;
-  return closure_7(closure_10, obj3);
+  return tmp7(tmp8, obj3);
 };

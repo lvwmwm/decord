@@ -4,117 +4,130 @@
 // Dependencies: [5, 5456, 5045, 1074, 1241, 5457, 1115, 2]
 
 // Module 5455 (NativePermissionBaseUtils)
-import util from "util" /* 1115 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import Constants from "Constants" /* 1074 */;
+import intl14 from "intl" /* 1115 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import NativePermissionStore from "NativePermissionStore" /* 5456 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 5045 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const NativePermissionConstants = fn(5045);
-({ NativePermissionTypes: hasOwnProperty, NativePermissionStates: metroRequire, NativePermissionStatus: closure_7 } = NativePermissionConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-let NativePermissionBaseUtils;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+({ NativePermissionTypes: hasOwnProperty, NativePermissionStates: metroRequire, NativePermissionStatus: metroImportDefault } = NativePermissionConstants);
+const AnalyticEvents = Constants.AnalyticEvents;
 class NativePermissionBaseUtils {
   constructor() {
-    merged = Object.assign({ storage: null });
-    tmp2 = new closure_4();
-    merged[0] = tmp2;
+    const merged = Object.assign({ storage: null });
+    merged[0] = new NativePermissionStore();
+    new NativePermissionStore();
     return merged;
+  }
+  requestAuthorization(arg0, hasPermissionLookup, arg2) {
+    let closure_0 = arg0;
+    let closure_1 = hasPermissionLookup;
+    let closure_2 = arg2;
+    let self = this;
+    return self(function*() {
+      let DENIED;
+      let c3;
+      let value = tmp4;
+      let type = tmp;
+      if (typeof value !== "function") {
+        const _Error = Error;
+        const _HermesInternal = HermesInternal;
+        self = this;
+        const self2 = this;
+        const error = new Error("requestAuthorization: Was provided with not a function for " + type + ".");
+        throw error;
+      }
+      const obj4 = { type };
+      const obj7 = value(c2[4]);
+      obj7.track(constants2.PERMISSIONS_REQUESTED, obj4);
+      type = yield tmp41();
+      const tmp9 = type === constants.AUTHORIZED || type === constants.LIMITED;
+      value = tmp9;
+      if (value) {
+        DENIED = tmp13.ACCEPTED;
+      } else {
+        DENIED = tmp13.DENIED;
+      }
+      const obj = value(c2[5]);
+      obj.setPermission(closure_129_0, DENIED);
+      const showAuthorizationError = !value && closure_129_2.showAuthorizationError;
+      if (showAuthorizationError) {
+        closure_129_3.showAlert(closure_129_0);
+      }
+      return value;
+    })();
+  }
+  requestPermission(arg0, arg1) {
+    return this.requestPermissionCore(arg0, NativePermissionBaseUtils.defaultNativePermissionsRequestOptions(arg1));
+  }
+  hasPermission(arg0, arg1) {
+    return this.hasPermissionCore(arg0, NativePermissionBaseUtils.defaultNativePermissionsRequestOptions(arg1));
+  }
+  showAlert(arg0) {
+    let intl11;
+    let intl12;
+    let intl13;
+    const self = this;
+    let closure_0 = arg0;
+    const intl = intl14.intl;
+    const stringResult = intl.string(intl14.t["68G7fD"]);
+    const intl2 = intl14.intl;
+    const combined = "" + stringResult + ". " + intl2.string(intl14.t["5Jvu1R"]);
+    const obj = { [closure_1_5.CAMERA]: combined, [closure_1_5.HEADSET_CAMERA]: combined };
+    const AUDIO = hasOwnProperty.AUDIO;
+    const intl3 = intl14.intl;
+    const stringResult1 = intl3.string(intl14.t.xisTfe);
+    const intl4 = intl14.intl;
+    obj[AUDIO] = "" + stringResult1 + ". " + intl4.string(intl14.t["5Jvu1R"]);
+    const PHOTOS = hasOwnProperty.PHOTOS;
+    const intl5 = intl14.intl;
+    const stringResult2 = intl5.string(intl14.t.jQHU4M);
+    const intl6 = intl14.intl;
+    obj[PHOTOS] = "" + stringResult2 + ". " + intl6.string(intl14.t["5Jvu1R"]);
+    const INPUT_MONITORING = hasOwnProperty.INPUT_MONITORING;
+    const intl7 = intl14.intl;
+    const stringResult3 = intl7.string(intl14.t.UIBqsS);
+    const intl8 = intl14.intl;
+    obj[INPUT_MONITORING] = "" + stringResult3 + ". " + intl8.string(intl14.t["5Jvu1R"]);
+    const CONTACTS = hasOwnProperty.CONTACTS;
+    const intl9 = intl14.intl;
+    const stringResult4 = intl9.string(intl14.t.kTtf7o);
+    const intl10 = intl14.intl;
+    obj[CONTACTS] = "" + stringResult4 + ". " + intl10.string(intl14.t["5Jvu1R"]);
+    if (null != obj[arg0]) {
+      const openAlertModal = self.openAlertModal;
+      const obj2 = {
+        title: intl11.string(intl14.t.u1Gxpu),
+        body: obj[arg0],
+        onConfirm() {
+            return self.openSettings(closure_0);
+          },
+        cancelText: intl12.string(intl14.t["ETE/oC"]),
+        confirmText: intl13.string(intl14.t["XgZk+u"])
+      };
+      intl11 = tmp(1115).intl;
+      intl12 = tmp(1115).intl;
+      intl13 = tmp(1115).intl;
+      openAlertModal(obj2);
+    }
+  }
+  static defaultNativePermissionsRequestOptions(arg0) {
+    const obj = { showAuthorizationError: true };
+    let tmp = obj;
+    if (null != arg0) {
+      const obj2 = {};
+      const merged = Object.assign(obj);
+      const merged1 = Object.assign(arg0);
+      tmp = obj2;
+    }
+    return tmp;
   }
 }
 const prototype = NativePermissionBaseUtils.prototype;
-prototype["requestAuthorization"] = function requestAuthorization(arg0, hasPermissionLookup, arg2) {
-  closure_0 = arg0;
-  closure_1 = hasPermissionLookup;
-  closure_2 = arg2;
-  const self = this;
-  return self(function*() {
-    const type = tmp2;
-    if (typeof tmp5 !== "function") {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const error = new Error("requestAuthorization: Was provided with not a function for " + type + ".");
-      throw error;
-    }
-    tmp5(1241).track(constants2.PERMISSIONS_REQUESTED, { type });
-    closure_128_0 = yield tmp45();
-    let tmp10 = closure_128_0 === constants.AUTHORIZED;
-    if (!tmp10) {
-      tmp10 = closure_128_0 === constants.LIMITED;
-    }
-    closure_128_1 = tmp10;
-    if (closure_128_1) {
-      let DENIED = tmp14.ACCEPTED;
-    } else {
-      DENIED = tmp14.DENIED;
-    }
-    closure_128_2 = DENIED;
-    tmp5(5457).setPermission(closure_129_0, closure_128_2);
-    let showAuthorizationError = !closure_128_1;
-    if (!closure_128_1) {
-      showAuthorizationError = closure_129_2.showAuthorizationError;
-    }
-    if (showAuthorizationError) {
-      closure_129_3.showAlert(closure_129_0);
-    }
-    return closure_128_1;
-  })();
-};
-prototype["requestPermission"] = function requestPermission(arg0, arg1) {
-  return this.requestPermissionCore(arg0, NativePermissionBaseUtils.defaultNativePermissionsRequestOptions(arg1));
-};
-prototype["hasPermission"] = function hasPermission(arg0, arg1) {
-  return this.hasPermissionCore(arg0, NativePermissionBaseUtils.defaultNativePermissionsRequestOptions(arg1));
-};
-prototype["showAlert"] = function showAlert(arg0) {
-  const self = this;
-  closure_0 = arg0;
-  const intl = util.intl;
-  const intl2 = util.intl;
-  const combined = "" + intl.string(util.t["68G7fD"]) + ". " + intl2.string(util.t["5Jvu1R"]);
-  const obj = { [closure_1_5.CAMERA]: combined, [closure_1_5.HEADSET_CAMERA]: combined };
-  const intl3 = util.intl;
-  const stringResult = intl.string(util.t["68G7fD"]);
-  const intl4 = util.intl;
-  obj[constants.AUDIO] = "" + intl3.string(util.t.xisTfe) + ". " + intl4.string(util.t["5Jvu1R"]);
-  const intl5 = util.intl;
-  const stringResult1 = intl3.string(util.t.xisTfe);
-  const intl6 = util.intl;
-  obj[constants.PHOTOS] = "" + intl5.string(util.t.jQHU4M) + ". " + intl6.string(util.t["5Jvu1R"]);
-  const intl7 = util.intl;
-  const stringResult2 = intl5.string(util.t.jQHU4M);
-  const intl8 = util.intl;
-  obj[constants.INPUT_MONITORING] = "" + intl7.string(util.t.UIBqsS) + ". " + intl8.string(util.t["5Jvu1R"]);
-  const intl9 = util.intl;
-  const stringResult3 = intl7.string(util.t.UIBqsS);
-  const intl10 = util.intl;
-  obj[constants.CONTACTS] = "" + intl9.string(util.t.kTtf7o) + ". " + intl10.string(util.t["5Jvu1R"]);
-  if (null != obj[arg0]) {
-    const obj2 = { title: null, body: null, onConfirm: null, cancelText: null, confirmText: null };
-    const intl11 = tmp(1115).intl;
-    obj2.title = intl11.string(tmp(1115).t.u1Gxpu);
-    obj2.body = tmp9;
-    obj2.onConfirm = function onConfirm() {
-      return self.openSettings(closure_0);
-    };
-    const intl12 = tmp(1115).intl;
-    obj2.cancelText = intl12.string(tmp(1115).t["ETE/oC"]);
-    const intl13 = tmp(1115).intl;
-    obj2.confirmText = intl13.string(tmp(1115).t["XgZk+u"]);
-    self.openAlertModal(obj2);
-  }
-};
-NativePermissionBaseUtils["defaultNativePermissionsRequestOptions"] = function defaultNativePermissionsRequestOptions(arg0) {
-  const obj = { showAuthorizationError: true };
-  let tmp = obj;
-  if (null != arg0) {
-    const obj2 = {};
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(arg0);
-    tmp = obj2;
-  }
-  return tmp;
-};
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/native_permissions/NativePermissionBaseUtils.tsx");
 
 export { NativePermissionBaseUtils };

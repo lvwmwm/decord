@@ -5,67 +5,89 @@
 // Exports: default
 
 // Module 9096 (EndEventActionSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8981 */;
 import CallsUtils from "CallsUtils" /* 9097 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-let closure_4 = fn(2051).EXPLICIT_END_EVENT_SHEET_KEY;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { paddingVertical: 24, paddingHorizontal: 16, alignItems: "center" }, title: { fontSize: 24, fontFamily: fn(1074).Fonts.PRIMARY_BOLD, textAlign: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, subtitle: { marginTop: 8, textAlign: "center" }, cancelButtonContainer: { marginTop: 24, alignSelf: "stretch" }, confirmButtonContainer: { marginTop: 8, alignSelf: "stretch" } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+const View = react_native.View;
+let closure_4 = GuildScheduledEventsConstants.EXPLICIT_END_EVENT_SHEET_KEY;
+const Fonts = Constants.Fonts;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { container: { paddingVertical: 24, paddingHorizontal: 16, alignItems: "center" }, title: obj2, subtitle: { marginTop: 8, textAlign: "center" }, cancelButtonContainer: { marginTop: 24, alignSelf: "stretch" }, confirmButtonContainer: { marginTop: 8, alignSelf: "stretch" } };
+obj2 = { fontSize: 24, fontFamily: Fonts.PRIMARY_BOLD, textAlign: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/EndEventActionSheet.tsx");
 
 export default function EndEventActionSheet(channel) {
+  let Button;
+  let Button2;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let obj3;
+  let obj7;
+  let obj9;
   channel = channel.channel;
   const tmp = closure_7();
-  const activeEvent = channel(8943).useActiveEvent(channel.id);
+  let obj = channel(8943);
+  const activeEvent = obj.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
   } else {
     function handleClose() {
-      ActionSheetActionCreatorsDefault.hideActionSheet(closure_4);
-      CallsUtils.handleDisconnect(channel);
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet(closure_4);
+      const obj2 = CallsUtils;
+      obj2.handleDisconnect(channel);
     }
-    let obj2 = { children: null };
-    let obj3 = { style: tmp.container, children: null };
-    const obj4 = { style: tmp.title, accessibilityRole: "header", children: null };
-    const intl = tmp2(1115).intl;
-    obj4.children = intl.string(tmp2(1115).t["4Ao8LC"]);
-    const items = [closure_5(tmp2(1177).LegacyText, obj4), , , ];
-    const obj5 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: null };
-    const intl2 = tmp2(1115).intl;
-    obj5.children = intl2.string(tmp2(1115).t["0I0B8f"]);
-    items[1] = closure_5(tmp2(4832).Text, obj5);
-    const obj6 = { style: tmp.cancelButtonContainer, children: null };
-    const obj7 = { text: null, grow: true, onPress: null };
-    const intl3 = tmp2(1115).intl;
-    obj7.text = intl3.string(tmp2(1115).t.P60OAX);
-    obj7.onPress = handleClose;
-    obj6.children = closure_5(tmp2(5281).Button, obj7);
+    let obj2 = { children: closure_6(View, obj3) };
+    obj3 = { style: tmp.container, children: items };
+    const tmp7 = activeEvent(8051);
+    const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1115).t["4Ao8LC"]) };
+    const LegacyText = tmp2(1177).LegacyText;
+    intl = tmp2(1115).intl;
+    items = [closure_5(LegacyText, obj4), , , ];
+    const obj5 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1115).t["0I0B8f"]) };
+    const Text = tmp2(4832).Text;
+    intl2 = tmp2(1115).intl;
+    items[1] = closure_5(Text, obj5);
+    const obj6 = { style: tmp.cancelButtonContainer, children: closure_5(Button, obj7) };
+    obj7 = { text: intl3.string(channel(1115).t.P60OAX), grow: true, onPress: handleClose };
+    Button = tmp2(5281).Button;
+    intl3 = tmp2(1115).intl;
     items[2] = closure_5(View, obj6);
-    const obj8 = { style: tmp.confirmButtonContainer, children: null };
-    const obj9 = { text: null, variant: "destructive", grow: true, onPress: null };
-    const intl4 = tmp2(1115).intl;
-    obj9.text = intl4.string(tmp2(1115).t.mjB9pd);
-    obj9.onPress = function onPress() {
-      if (null != activeEvent) {
-        GuildScheduledEventsActionCreatorsDefault.endEvent(tmp.id, tmp.guild_id);
-        ActionSheetActionCreatorsDefault.hideActionSheet(closure_4);
-        CallsUtils.handleDisconnect(channel);
-      }
+    const obj8 = { style: tmp.confirmButtonContainer, children: closure_5(Button2, obj9) };
+    obj9 = {
+      text: intl4.string(channel(1115).t.mjB9pd),
+      variant: "destructive",
+      grow: true,
+      onPress() {
+          if (null != activeEvent) {
+            const obj = GuildScheduledEventsActionCreatorsDefault;
+            obj.endEvent(activeEvent.id, activeEvent.guild_id);
+            const obj2 = ActionSheetActionCreatorsDefault;
+            obj2.hideActionSheet(closure_4);
+            const obj3 = CallsUtils;
+            obj3.handleDisconnect(channel);
+          }
+        }
     };
-    obj8.children = closure_5(tmp2(5281).Button, obj9);
+    Button2 = tmp2(5281).Button;
+    intl4 = tmp2(1115).intl;
     items[3] = closure_5(View, obj8);
-    obj3.children = items;
-    obj2.children = closure_6(View, obj3);
-    return closure_5(activeEvent(8051), obj2);
+    return closure_5(tmp7, obj2);
   }
-  let obj = channel(8943);
 };

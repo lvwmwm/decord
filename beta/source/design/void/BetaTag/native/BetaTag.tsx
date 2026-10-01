@@ -5,28 +5,42 @@
 // Exports: default
 
 // Module 12874 (BetaTag)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import noop from "module_19" /* 19 */;
+import ColorConstants from "ColorConstants" /* 6852 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Gradients = fn(6852).Gradients;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.lg, marginLeft: 8, paddingHorizontal: 8, justifyContent: "center" }, text: { textTransform: "uppercase" } };
-let closure_6 = createStyles.createStyles(obj2);
-let obj4 = { SMALL: "small", MEDIUM: "medium" };
-const size = fn(2);
+let obj2;
+const View = react_native.View;
+const Gradients = ColorConstants.Gradients;
+const jsx = Fragment.jsx;
+let obj = { container: obj2, text: { textTransform: "uppercase" } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.lg, marginLeft: 8, paddingHorizontal: 8, justifyContent: "center" };
+let closure_6 = createStyles.createStyles(obj);
+let obj3 = { SMALL: "small", MEDIUM: "medium" };
+let size = size_mod;
 const result = size.fileFinishedImporting("design/void/BetaTag/native/BetaTag.tsx");
 
 export default function BetaTag(gradient) {
+  let intl;
+  let intl2;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let style;
+  let textStyle;
+  let tmp3Result;
   ({ style, textStyle, size } = gradient);
   if (size === undefined) {
-    size = obj4.MEDIUM;
+    size = obj3.MEDIUM;
   }
   let flag = gradient.gradient;
   if (flag === undefined) {
@@ -34,37 +48,29 @@ export default function BetaTag(gradient) {
   }
   const tmp2 = closure_6();
   let str = "text-xs/bold";
-  if (obj4.SMALL !== size) {
-    if (obj4.MEDIUM === size) {
+  if (obj3.SMALL !== size) {
+    if (obj3.MEDIUM === size) {
       str = "text-sm/bold";
     }
   }
   if (flag) {
-    const obj2 = { style: null, start: null, end: null, colors: null, children: null };
-    const items = [tmp2.container, style];
-    obj2.style = items;
-    obj2.start = ConstantsIOS.HorizontalGradient.START;
-    obj2.end = ConstantsIOS.HorizontalGradient.END;
-    obj2.colors = Gradients.PREMIUM_TIER_2_TRI_COLOR;
-    const obj3 = { variant: str, color: "text-overlay-light", style: null, children: null };
-    const items1 = [tmp2.text, textStyle];
-    obj3.style = items1;
-    const intl2 = util.intl;
-    obj3.children = intl2.string(util.t.oW0eUd);
-    obj2.children = tmp3(Text_Text.Text, obj3);
-    let tmp3Result = tmp3(LinearGradientDefault, obj2);
+    const obj2 = { style: items, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: Gradients.PREMIUM_TIER_2_TRI_COLOR, children: null };
+    items = [tmp2.container, style];
+    const tmp10 = LinearGradientDefault;
+    obj3 = { variant: str, color: "text-overlay-light", style: items1, children: intl2.string(intl3.t.oW0eUd) };
+    items1 = [tmp2.text, textStyle];
+    const Text2 = Text_Text.Text;
+    intl2 = intl3.intl;
+    tmp3Result = tmp3(tmp10, obj2);
   } else {
-    const obj = { style: null, children: null };
-    const items2 = [tmp2.container, style];
-    obj.style = items2;
-    obj4 = { variant: str, color: "text-overlay-light", style: null, children: null };
-    const items3 = [tmp2.text, textStyle];
-    obj4.style = items3;
-    const intl = util.intl;
-    obj4.children = intl.string(util.t.oW0eUd);
-    obj.children = tmp3(Text_Text.Text, obj4);
+    const obj = { style: items2, children: null };
+    items2 = [tmp2.container, style];
+    ({ variant: str, color: "text-overlay-light", style: items3, children: intl.string(intl3.t.oW0eUd) });
+    items3 = [tmp2.text, textStyle];
+    const Text = Text_Text.Text;
+    intl = intl3.intl;
     tmp3Result = tmp3(View, obj);
   }
   return tmp3Result;
 };
-export const BetaSizes = obj4;
+export const BetaSizes = obj3;

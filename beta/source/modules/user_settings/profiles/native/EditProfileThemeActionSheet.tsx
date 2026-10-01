@@ -7,43 +7,53 @@
 // Module 14181 (EditProfileThemeActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const require = fn;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
-const obj2 = { nitroWheel: null, titleWrapper: null, titleContainer: null };
-let size = { tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, marginLeft: 4, width: 20, height: 20 };
-obj2.nitroWheel = size;
-obj2.titleWrapper = { flex: 0 };
-obj2.titleContainer = { justifyContent: "flex-start" };
-let closure_5 = createStyles.createStyles(obj2);
-size = fn(2);
+let c3;
+let closure_4;
+let size;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let obj = { nitroWheel: size, titleWrapper: { flex: 0 }, titleContainer: { justifyContent: "flex-start" } };
+size = { tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, marginLeft: 4, width: 20, height: 20 };
+let closure_5 = createStyles.createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/EditProfileThemeActionSheet.tsx");
 
 export default function EditProfileThemeActionSheet(onResetTheme) {
+  let TableRow;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let obj4;
+  let obj9;
   onResetTheme = onResetTheme.onResetTheme;
   const tmp = closure_5();
-  const obj = { children: null };
-  const obj3 = { title: null, trailing: null, titleWrapperStyle: null, titleContainerStyle: null };
-  const intl = onResetTheme(1115).intl;
-  obj3.title = intl.string(onResetTheme(1115).t.DMeO2X);
-  obj3.trailing = closure_3(onResetTheme(1177).NitroWheel, { style: tmp.nitroWheel });
+  let obj = { children: items };
+  const ActionSheet = onResetTheme(6618).ActionSheet;
+  const obj3 = { title: intl.string(onResetTheme(1115).t.DMeO2X), trailing: closure_3(onResetTheme(1177).NitroWheel, obj4), titleWrapperStyle: null, titleContainerStyle: null };
+  const BottomSheetTitleHeader = onResetTheme(6570).BottomSheetTitleHeader;
+  intl = onResetTheme(1115).intl;
+  obj4 = { style: tmp.nitroWheel };
   ({ titleWrapper: obj2.titleWrapperStyle, titleContainer: obj2.titleContainerStyle } = tmp);
-  const items = [closure_3(onResetTheme(6570).BottomSheetTitleHeader, obj3), ];
-  const obj5 = { hasIcons: false, children: null };
-  const obj9 = { label: null, subLabel: null, onPress: null };
-  const intl2 = onResetTheme(1115).intl;
-  obj9.label = intl2.string(onResetTheme(1115).t["L+GmoR"]);
-  const intl3 = onResetTheme(1115).intl;
-  obj9.subLabel = intl3.string(onResetTheme(1115).t.MA9iNr);
-  obj9.onPress = function onPress() {
-    onResetTheme();
-    ActionSheetActionCreatorsDefault.hideActionSheet();
+  items = [closure_3(BottomSheetTitleHeader, obj3), ];
+  const obj5 = { hasIcons: false, children: closure_3(TableRow, obj9) };
+  const TableRowGroup = onResetTheme(5999).TableRowGroup;
+  obj9 = {
+    label: intl2.string(onResetTheme(1115).t["L+GmoR"]),
+    subLabel: intl3.string(onResetTheme(1115).t.MA9iNr),
+    onPress() {
+      onResetTheme();
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+    }
   };
-  obj5.children = closure_3(onResetTheme(5917).TableRow, obj9);
-  items[1] = closure_3(onResetTheme(5999).TableRowGroup, obj5);
-  obj.children = items;
-  return closure_4(onResetTheme(6618).ActionSheet, obj);
+  TableRow = onResetTheme(5917).TableRow;
+  intl2 = onResetTheme(1115).intl;
+  intl3 = onResetTheme(1115).intl;
+  items[1] = closure_3(TableRowGroup, obj5);
+  return closure_4(ActionSheet, obj);
 };

@@ -5,13 +5,13 @@
 // Exports: useVoiceChatNavigationContext
 
 // Module 8867 (VoiceChatModalContext)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const context = noop.createContext(null);
-const size = fn(2);
+const context = react.createContext(null);
 const result = size.fileFinishedImporting("modules/voice_chat/native/VoiceChatModalContext.tsx");
 
 export const VoiceChatNavigationContext = context;
 export const useVoiceChatNavigationContext = function useVoiceChatNavigationContext() {
-  return noop.useContext(context);
+  return react.useContext(context);
 };

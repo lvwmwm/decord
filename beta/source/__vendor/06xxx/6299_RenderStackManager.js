@@ -4,43 +4,41 @@
 // Dependencies: [6275, 6284, 6285]
 
 // Module 6299 (RenderStackManager)
-import _modDef6285 from "module_6285" /* 6285 */;
-import _slicedToArray_mod from "module_6275" /* 6275 */;
-import _classCallCheck from "module_6284" /* 6284 */;
+import _createClassDefault from "_createClass" /* 6285 */;
+import _slicedToArray from "_slicedToArray" /* 6275 */;
+import _classCallCheck from "_classCallCheck" /* 6284 */;
 
-let _slicedToArray = _slicedToArray_mod;
+let set;
+
 class RenderStackManager {
-  constructor() {
-    MAX_SAFE_INTEGER = global;
-    if (global === undefined) {
-      tmp = globalThis;
-      _Number = Number;
+  constructor(maxItemsInRecyclePool) {
+    let MAX_SAFE_INTEGER = maxItemsInRecyclePool;
+    if (maxItemsInRecyclePool === undefined) {
+      const _Number = Number;
       MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER;
     }
-    tmp2 = closure_1(this, RenderStackManager);
+    _classCallCheck(this, RenderStackManager);
     this.disableRecycling = false;
     this.maxItemsInRecyclePool = MAX_SAFE_INTEGER;
-    map = new Map();
-    this.recycleKeyPools = map;
-    map1 = new Map();
-    this.keyMap = map1;
-    map2 = new Map();
-    this.stableIdMap = map2;
+    this.recycleKeyPools = new Map();
+    new Map();
+    this.keyMap = new Map();
+    new Map();
+    this.stableIdMap = new Map();
     this.keyCounter = 0;
-    set = new Set();
-    this.unProcessedIndices = set;
-    return;
+    new Map();
+    this.unProcessedIndices = new Set();
+    new Set();
   }
 }
-_slicedToArray = RenderStackManager;
 const entry = {
   key: "sync",
   value: function sync(fn, fn2, arr, arg3) {
     const self = this;
-    closure_1 = fn;
-    closure_2 = fn2;
-    closure_3 = arr;
-    closure_0 = arg3;
+    let closure_1 = fn;
+    let closure_2 = fn2;
+    let closure_3 = arr;
+    let closure_0 = arg3;
     this.clearRecyclePool();
     let unProcessedIndices = this.unProcessedIndices;
     unProcessedIndices.clear();
@@ -54,14 +52,14 @@ const entry = {
           const unProcessedIndices = obj.unProcessedIndices;
           unProcessedIndices.add(index);
         }
-        if (closure_3.includes(index)) {
-          const tmp7 = closure_1(index);
+        if (arr.includes(index)) {
+          const tmp7 = fn(index);
+          const tmp9 = tmp === tmp7 && tmp2 === fn2(index);
           if (!tmp9) {
-            obj.recycleKey(index);
+            self.recycleKey(index);
           }
-          tmp9 = tmp === closure_1(index) && tmp2 === closure_2(index);
         } else {
-          obj.recycleKey(index);
+          self.recycleKey(index);
         }
       }
     });
@@ -70,8 +68,9 @@ const entry = {
     while (iter !== undefined) {
       let tmp5 = nextResult;
       if (self.hasOptimizedKey(fn(nextResult))) {
+        let syncItem = self.syncItem;
         let tmp7 = fn2(tmp5);
-        let syncItemResult = self.syncItem(tmp5, tmp7, fn(tmp5));
+        let syncItemResult = syncItem(tmp5, tmp7, fn(tmp5));
       }
       continue;
     }
@@ -80,8 +79,9 @@ const entry = {
     while (iter2 !== undefined) {
       let tmp10 = nextResult1;
       if (!self.hasOptimizedKey(fn(nextResult1))) {
+        let syncItem2 = self.syncItem;
         let tmp12 = fn2(tmp10);
-        let syncItemResult1 = self.syncItem(tmp10, tmp12, fn(tmp10));
+        let syncItem2Result = syncItem2(tmp10, tmp12, fn(tmp10));
       }
       continue;
     }
@@ -93,7 +93,7 @@ const entry = {
       let tmp15 = index;
       let tmp16 = index < arg3;
       if (tmp16) {
-        tmp16 = !arg2.includes(tmp15);
+        tmp16 = !arr.includes(tmp15);
       }
       if (tmp16) {
         arr = items.push(tmp15);
@@ -102,17 +102,19 @@ const entry = {
     }
     for (const item10072 of items) {
       let tmp20 = item10072;
-      if (self.hasOptimizedKey(arg0(item10072))) {
-        let tmp22 = arg1(tmp20);
-        let syncItemResult2 = self.syncItem(tmp20, tmp22, arg0(tmp20));
+      if (self.hasOptimizedKey(fn(item10072))) {
+        let syncItem3 = self.syncItem;
+        let tmp22 = fn2(tmp20);
+        let syncItem3Result = syncItem3(tmp20, tmp22, fn(tmp20));
       }
       continue;
     }
     for (const item10087 of items) {
       let tmp24 = item10087;
-      if (!self.hasOptimizedKey(arg0(item10087))) {
-        let tmp26 = arg1(tmp24);
-        let syncItemResult3 = self.syncItem(tmp24, tmp26, arg0(tmp24));
+      if (!self.hasOptimizedKey(fn(item10087))) {
+        let syncItem4 = self.syncItem;
+        let tmp26 = fn2(tmp24);
+        let syncItem4Result = syncItem4(tmp24, tmp26, fn(tmp24));
       }
       continue;
     }
@@ -131,10 +133,21 @@ let items = [
   {
     key: "cleanup",
     value: function cleanup(fn, fn2, arr, arg3) {
+      let index;
+      let itemType;
+      let itemType2;
+      let stableId;
+      let stableId2;
+      let tmp39;
+      let tmp40;
+      let tmp7;
+      let tmp8;
       const self = this;
       arr = new Array();
       const keyMap = this.keyMap;
       const entries = keyMap.entries();
+      const tmp = arr;
+      const tmp3 = entries[Symbol.iterator]();
       while (tmp3 !== undefined) {
         let tmp6 = _slicedToArray(tmp4, 2);
         [tmp7, tmp8] = tmp6;
@@ -142,13 +155,13 @@ let items = [
         let tmp10 = index >= arg3;
         let tmp12 = !tmp10;
         let tmp11 = tmp10;
-        if (!tmp10) {
+        if (!tmp11) {
           tmp12 = fn(tmp9) !== stableId;
         }
         if (tmp11) {
           let unProcessedIndices = self.unProcessedIndices;
           let iter = unProcessedIndices.values();
-          value = iter.next().value;
+          let value = iter.next().value;
           let tmp18 = value;
           let flag = true;
           if (undefined !== value) {
@@ -160,7 +173,8 @@ let items = [
               flag = false;
             }
           }
-          if (flag) {
+          let tmp28 = flag;
+          if (tmp28) {
             let result = self.deleteKeyFromRecyclePool(itemType, tmp7);
             let stableIdMap = self.stableIdMap;
             let deleteResult = stableIdMap.delete(stableId);
@@ -169,7 +183,7 @@ let items = [
         }
         continue;
       }
-      for (const item10080 of arr) {
+      for (const item10080 of tmp) {
         let keyMap2 = self.keyMap;
         let deleteResult1 = keyMap2.delete(item10080);
         continue;
@@ -179,7 +193,8 @@ let items = [
         const diff1 = diff - self.maxItemsInRecyclePool;
         const _Array = Array;
         const keyMap4 = self.keyMap;
-        const reversed = Array.from(keyMap4.entries()).reverse();
+        const arr4 = Array.from(keyMap4.entries());
+        const reversed = arr4.reverse();
         if (0 < reversed.length) {
           let num = 0;
           let num2 = 0;
@@ -210,7 +225,6 @@ let items = [
             }
           }
         }
-        const arr4 = Array.from(keyMap4.entries());
       }
     }
   },
@@ -220,7 +234,7 @@ let items = [
       const self = this;
       if (!this.disableRecycling) {
         const keyMap = self.keyMap;
-        value = keyMap.get(index);
+        const value = keyMap.get(index);
         if (value) {
           const recyclePoolForType = self.getRecyclePoolForType(value.itemType);
           recyclePoolForType.add(index);
@@ -243,7 +257,7 @@ let items = [
       const unProcessedIndices = self.unProcessedIndices;
       unProcessedIndices.delete(index);
       const keyMap = self.keyMap;
-      value = keyMap.get(tmp);
+      const value = keyMap.get(tmp);
       if (value) {
         const result = self.deleteKeyFromRecyclePool(itemType, tmp);
         const result1 = self.deleteKeyFromRecyclePool(value.itemType, tmp);
@@ -277,14 +291,14 @@ let items = [
     key: "generateKey",
     value: function generateKey() {
       this.keyCounter = +this.keyCounter + 1;
-      return +this.keyCounter.toString();
+      return (+this.keyCounter).toString();
     }
   },
   {
     key: "deleteKeyFromRecyclePool",
     value: function deleteKeyFromRecyclePool(itemType, arg1) {
       const recycleKeyPools = this.recycleKeyPools;
-      value = recycleKeyPools.get(itemType);
+      const value = recycleKeyPools.get(itemType);
       if (value != null) {
         value.delete(arg1);
       }
@@ -294,10 +308,12 @@ let items = [
     key: "getRecyclePoolForType",
     value: function getRecyclePoolForType(itemType) {
       const recycleKeyPools = this.recycleKeyPools;
-      value = recycleKeyPools.get(itemType);
+      let value = recycleKeyPools.get(itemType);
       if (!value) {
         const _Set = Set;
-        const set = new Set();
+        const self = this;
+        const self2 = this;
+        set = new Set();
         const recycleKeyPools2 = this.recycleKeyPools;
         const result = recycleKeyPools2.set(itemType, set);
         value = set;
@@ -310,12 +326,14 @@ let items = [
     value: function getKeyFromRecyclePool(itemType) {
       const recyclePoolForType = this.getRecyclePoolForType(itemType);
       if (recyclePoolForType.size > 0) {
-        value = recyclePoolForType.values().next().value;
+        const iter = recyclePoolForType.values();
+        const value = iter.next().value;
         recyclePoolForType.delete(value);
         return value;
       }
     }
   }
 ];
+const RenderStackManager_export = _createClassDefault(RenderStackManager, items);
 
-export const RenderStackManager = _modDef6285(RenderStackManager, items);
+export { RenderStackManager_export as RenderStackManager };

@@ -4,34 +4,38 @@
 // Dependencies: [19, 17, 8843, 21, 4836, 576, 11530, 2]
 
 // Module 11529 (AppLauncherOnboardingLayer)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import AppLauncherOnboardingBannerDefault from "AppLauncherOnboardingBanner" /* 11530 */;
-import noop from "module_19" /* 19 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 8843 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-let closure_3 = fn(8843).useBestActiveChatInputContainerHeight;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { container: null };
-const rect = { opacity: 1, width: "100%", position: "absolute", left: 0, top: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM };
-obj.container = rect;
+let visibleContent;
+
+let rect;
+const View = react_native.View;
+let closure_3 = useChatBottomManagerUIStore.useBestActiveChatInputContainerHeight;
+const jsx = Fragment.jsx;
+const obj = { container: rect };
+rect = { opacity: 1, width: "100%", position: "absolute", left: 0, top: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM };
 let closure_5 = createStyles.createStyles(obj);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingLayer.tsx");
-
-export default noop.memo((visibleContent) => {
+const memoResult = react.memo((visibleContent) => {
+  let bottomOffset;
+  let context;
   visibleContent = visibleContent.visibleContent;
   ({ context, bottomOffset } = visibleContent);
   let tmp3 = null;
+  const tmp = closure_5();
   if (null != visibleContent) {
-    const obj = { style: null, children: null };
     const items = [tmp.container, ];
     const obj2 = { bottom: tmp2 + bottomOffset };
     items[1] = obj2;
-    obj.style = items;
-    const obj3 = { context, visibleContent };
-    obj.children = jsx(AppLauncherOnboardingBannerDefault, { context, visibleContent });
-    tmp3 = <View style={null}>{null}</View>;
+    tmp3 = <View style={items}>{null}</View>;
   }
   return tmp3;
 });
+const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingLayer.tsx");
+
+export default memoResult;

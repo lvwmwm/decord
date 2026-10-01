@@ -5,21 +5,41 @@
 // Exports: default
 
 // Module 10782 (MarkupReactCommandRule)
+import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1611 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5305 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5306 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
 import navigateToLastChannelDefault from "navigateToLastChannel" /* 10787 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1484 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function handleTapCommandMention(channelId) {
-  ({ appLauncherNavigator, onSetCommand } = channelId);
-  ({ onOpenCustomKeyboard: importDefault, commandId, commandName } = channelId);
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+let hasOwnProperty;
+let metroRequire;
+function handleTapCommandMention(currentText) {
+  let appLauncherNavigator;
+  let commandId;
+  let commandName;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let obj3;
+  let obj5;
+  let onSetCommand;
+  ({ appLauncherNavigator, onSetCommand } = currentText);
+  ({ onOpenCustomKeyboard: importDefault, commandId, commandName } = currentText);
   let sum1;
-  const channel = ChannelStore.getChannel(channelId.channelId);
+  currentText = currentText.currentText;
+  const channel = ChannelStore.getChannel(currentText.channelId);
   if (null != channel) {
     if (null != channel.guild_id) {
       sum1 = commandId;
@@ -31,15 +51,16 @@ function handleTapCommandMention(channelId) {
       }
       if (null != appLauncherNavigator) {
         if (null != channel) {
-          let obj = { analyticsLocation: onSetCommand(sum1[6]).ApplicationCommandTriggerLocations.MENTION, preSelectedCommand: null, context: null };
-          const obj3 = { commandId: sum1 };
-          obj.preSelectedCommand = obj3;
-          const obj5 = { type: "channel", channel };
-          obj.context = obj5;
-          appLauncherNavigator.navigate(constants.COMMAND_VIEW, obj);
+          let obj = { analyticsLocation: onSetCommand(sum1[6]).ApplicationCommandTriggerLocations.MENTION, preSelectedCommand: obj3, context: obj5 };
+          const navigate = appLauncherNavigator.navigate;
+          const COMMAND_VIEW = constants.COMMAND_VIEW;
+          obj3 = { commandId: sum1 };
+          obj5 = { type: "channel", channel };
+          navigate(COMMAND_VIEW, obj);
         }
       }
-      const rootNavigationRef = onSetCommand(sum1[7]).getRootNavigationRef();
+      let obj2 = onSetCommand(sum1[7]);
+      const rootNavigationRef = obj2.getRootNavigationRef();
       if (null != rootNavigationRef) {
         const state = rootNavigationRef.getState();
         let length;
@@ -69,107 +90,127 @@ function handleTapCommandMention(channelId) {
           }
         }
       }
-      let obj2 = onSetCommand(sum1[7]);
-      require("ActionSheetActionCreators").hideActionSheet();
+      const obj4 = require("ActionSheetActionCreators");
+      obj4.hideActionSheet();
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        const obj = { type: KeyboardTypes.KeyboardTypes.APP_LAUNCHER, context: null };
-        const obj2 = { initialRouteName: constants.COMMAND_VIEW, analyticsLocation: ApplicationCommandTypes.ApplicationCommandTriggerLocations.MENTION, preSelectedCommand: { commandId: sum1 } };
-        obj.context = obj2;
+        let obj2;
+        let obj3;
+        const obj = { type: KeyboardTypes.KeyboardTypes.APP_LAUNCHER, context: obj2 };
+        obj2 = { initialRouteName: hasOwnProperty.COMMAND_VIEW, analyticsLocation: ApplicationCommandTypes.ApplicationCommandTriggerLocations.MENTION, preSelectedCommand: obj3 };
+        obj3 = { commandId: sum1 };
         return importDefault(obj);
       }, 0);
-      const obj4 = require("ActionSheetActionCreators");
     }
   }
-  if ("" === channelId.currentText) {
+  if ("" === currentText) {
     onSetCommand();
   } else {
-    const obj6 = { title: null, confirmText: null, onConfirm: null, cancelText: null, confirmColor: null, body: null };
-    const intl = onSetCommand(sum1[11]).intl;
-    obj6.title = intl.string(onSetCommand(sum1[11]).t.pe26Cj);
-    const intl2 = onSetCommand(sum1[11]).intl;
-    obj6.confirmText = intl2.string(onSetCommand(sum1[11]).t.VkKicb);
-    obj6.onConfirm = function onConfirm() {
-      return onSetCommand();
+    const obj6 = {
+      title: intl.string(onSetCommand(sum1[11]).t.pe26Cj),
+      confirmText: intl2.string(onSetCommand(sum1[11]).t.VkKicb),
+      onConfirm() {
+          return onSetCommand();
+        },
+      cancelText: intl3.string(onSetCommand(sum1[11]).t["ETE/oC"]),
+      confirmColor: onSetCommand(sum1[12]).ButtonColors.BRAND,
+      body: intl4.string(onSetCommand(sum1[11]).t["+awCIy"])
     };
-    const intl3 = onSetCommand(sum1[11]).intl;
-    obj6.cancelText = intl3.string(onSetCommand(sum1[11]).t["ETE/oC"]);
-    obj6.confirmColor = onSetCommand(sum1[12]).ButtonColors.BRAND;
-    const intl4 = onSetCommand(sum1[11]).intl;
-    obj6.body = intl4.string(onSetCommand(sum1[11]).t["+awCIy"]);
-    require("actions/AlertActionCreators").show(obj6);
-    const obj8 = require("actions/AlertActionCreators");
+    const show = require("actions/AlertActionCreators").show;
+    require("actions/AlertActionCreators");
+    intl = onSetCommand(sum1[11]).intl;
+    intl2 = onSetCommand(sum1[11]).intl;
+    intl3 = onSetCommand(sum1[11]).intl;
+    intl4 = onSetCommand(sum1[11]).intl;
+    show(obj6);
   }
 }
 function handleLongPressCommandMention(arg0, arg1) {
+  let closure_0;
+  let intl;
+  let intl2;
   _require = arg0;
-  closure_1 = arg1;
-  let obj = { label: null, IconComponent: null, onPress: null };
-  const intl = require("util").intl;
-  obj.label = intl.string(require("util").t["42H+Nb"]);
-  obj.IconComponent = require("SlashBoxIcon").SlashBoxIcon;
-  obj.onPress = function onPress() {
-    ToastUtils.presentCommandCopied();
-    ClipboardUtils.copy("" + COMMAND_SENTINEL + closure_0);
+  let closure_1 = arg1;
+  let obj = {
+    label: intl.string(require("intl").t["42H+Nb"]),
+    IconComponent: require("SlashBoxIcon").SlashBoxIcon,
+    onPress() {
+      const obj = ToastUtils;
+      obj.presentCommandCopied();
+      const obj2 = ClipboardUtils;
+      obj2.copy("" + COMMAND_SENTINEL + closure_0);
+    }
   };
+  intl = require("intl").intl;
   const items = [obj];
   const DeveloperMode = require("UserSettings").DeveloperMode;
   if (DeveloperMode.getSetting()) {
-    const obj2 = { label: null, IconComponent: null, onPress: null };
-    const intl2 = tmp(1115).intl;
-    obj2.label = intl2.string(tmp(1115).t.oJ1Muw);
-    obj2.IconComponent = tmp(10092).IdIcon;
-    obj2.onPress = function onPress() {
-      ToastUtils.presentIdCopied();
-      ClipboardUtils.copy(closure_1);
+    let obj2 = {
+      label: intl2.string(require("intl").t.oJ1Muw),
+      IconComponent: require("IdIcon").IdIcon,
+      onPress() {
+          const obj = ToastUtils;
+          obj.presentIdCopied();
+          const obj2 = ClipboardUtils;
+          obj2.copy(closure_1);
+        }
     };
-    items.push(obj2);
+    const push = items.push;
+    intl2 = tmp(1115).intl;
+    push(obj2);
   }
-  const result = require("showSimpleActionSheet").showSimpleActionSheet({ key: "LongPressCommandMention", options: items, hasIcons: true });
+  const tmpResult = require("showSimpleActionSheet");
+  const result = tmpResult.showSimpleActionSheet({ key: "LongPressCommandMention", options: items, hasIcons: true });
 }
-const AppLauncherNativeConstants = fn(1484);
 ({ AppLauncherRouteName: hasOwnProperty, useAppLauncherNavigation: metroRequire } = AppLauncherNativeConstants);
-const SUB_COMMAND_KEY_SEPARATOR = fn(5305).SUB_COMMAND_KEY_SEPARATOR;
-const COMMAND_SENTINEL = fn(5306).COMMAND_SENTINEL;
-const jsxs = fn(21).jsxs;
-const size = fn(2);
+const SUB_COMMAND_KEY_SEPARATOR = ApplicationCommandConstants.SUB_COMMAND_KEY_SEPARATOR;
+const COMMAND_SENTINEL = ChannelAutocompleteConstants.COMMAND_SENTINEL;
+const jsxs = Fragment.jsxs;
 let result = size.fileFinishedImporting("modules/markup/native/MarkupReactCommandRule.tsx");
 
 export default function MarkupReactCommandRule(node) {
+  let closure_2;
+  let output;
+  let state;
+  let style;
   node = node.node;
   ({ output, state, style } = node);
-  closure_1 = null != noop.useContext(node(10785).AppLauncherContext);
+  let closure_1 = null != react.useContext(node(10785).AppLauncherContext);
   dependencyMap = closure_6();
-  const obj = {
-    style,
-    variant: "text-md/bold",
-    onPress() {
-      const bestActiveInput = node(closure_2[21]).getBestActiveInput();
-      let tmp2;
-      if (closure_1) {
-        tmp2 = closure_2;
-      }
-      const obj2 = { appLauncherNavigator: tmp2, channelId: bestActiveInput.channelId, commandId: bestActiveInput.commandId, commandName: bestActiveInput.commandName, currentText: null, onOpenCustomKeyboard: null, onSetCommand: null };
-      let str;
-      if (bestActiveInput != null) {
-        str = bestActiveInput.getText();
-      }
-      if (str == null) {
-        str = "";
-      }
-      obj2.currentText = str;
-      obj2.onOpenCustomKeyboard = function onOpenCustomKeyboard(arg0) {
+  const Text = node(4832).Text;
+  let obj2 = node(7542);
+  const items = ["/", obj2.smartOutput(node, output, state)];
+  return <Text style={style} variant="text-md/bold" onPress={function onPress() {
+    let str;
+    let obj = node(closure_2[21]);
+    const bestActiveInput = obj.getBestActiveInput();
+    let tmp2;
+    const tmp = handleTapCommandMention;
+    if (closure_1) {
+      tmp2 = closure_2;
+    }
+    const obj2 = {
+      appLauncherNavigator: tmp2,
+      channelId: bestActiveInput.channelId,
+      commandId: bestActiveInput.commandId,
+      commandName: bestActiveInput.commandName,
+      currentText: str,
+      onOpenCustomKeyboard(arg0) {
         let openCustomKeyboardResult;
+        const obj = bestActiveInput;
         if (bestActiveInput != null) {
-          openCustomKeyboardResult = bestActiveInput.openCustomKeyboard(arg0);
+          openCustomKeyboardResult = obj.openCustomKeyboard(arg0);
         }
         return openCustomKeyboardResult;
-      };
-      obj2.onSetCommand = function onSetCommand() {
+      },
+      onSetCommand() {
+        let commandId;
+        let commandName;
         navigateToLastChannelDefault();
-        ActionSheetActionCreatorsDefault.hideActionSheet();
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
         if (bestActiveInput != null) {
-          obj2.openSystemKeyboard();
+          bestActiveInput.openSystemKeyboard();
         }
         if (bestActiveInput != null) {
           const applicationCommandManager = obj2.getApplicationCommandManager();
@@ -178,62 +219,19 @@ export default function MarkupReactCommandRule(node) {
             applicationCommandManager.setPartialCommand(commandId, commandName, ApplicationCommandTypes.ApplicationCommandTriggerLocations.MENTION);
           }
         }
-      };
-      handleTapCommandMention(obj2);
-    },
-    onLongPress() {
-      handleLongPressCommandMention(node.commandName, node.commandId);
-    },
-    children: null
-  };
-  const items = ["/", node(7542).smartOutput(node, output, state)];
-  obj.children = items;
-  return jsxs(node(4832).Text, {
-    style,
-    variant: "text-md/bold",
-    onPress() {
-      const bestActiveInput = node(closure_2[21]).getBestActiveInput();
-      let tmp2;
-      if (closure_1) {
-        tmp2 = closure_2;
       }
-      const obj2 = { appLauncherNavigator: tmp2, channelId: bestActiveInput.channelId, commandId: bestActiveInput.commandId, commandName: bestActiveInput.commandName, currentText: null, onOpenCustomKeyboard: null, onSetCommand: null };
-      let str;
-      if (bestActiveInput != null) {
-        str = bestActiveInput.getText();
-      }
-      if (str == null) {
-        str = "";
-      }
-      obj2.currentText = str;
-      obj2.onOpenCustomKeyboard = function onOpenCustomKeyboard(arg0) {
-        let openCustomKeyboardResult;
-        if (bestActiveInput != null) {
-          openCustomKeyboardResult = bestActiveInput.openCustomKeyboard(arg0);
-        }
-        return openCustomKeyboardResult;
-      };
-      obj2.onSetCommand = function onSetCommand() {
-        navigateToLastChannelDefault();
-        ActionSheetActionCreatorsDefault.hideActionSheet();
-        if (bestActiveInput != null) {
-          obj2.openSystemKeyboard();
-        }
-        if (bestActiveInput != null) {
-          const applicationCommandManager = obj2.getApplicationCommandManager();
-          if (applicationCommandManager != null) {
-            ({ commandId, commandName } = node);
-            applicationCommandManager.setPartialCommand(commandId, commandName, ApplicationCommandTypes.ApplicationCommandTriggerLocations.MENTION);
-          }
-        }
-      };
-      handleTapCommandMention(obj2);
-    },
-    onLongPress() {
-      handleLongPressCommandMention(node.commandName, node.commandId);
-    },
-    children: null
-  });
+    };
+    str = undefined;
+    if (bestActiveInput != null) {
+      str = bestActiveInput.getText();
+    }
+    if (str == null) {
+      str = "";
+    }
+    tmp(obj2);
+  }} onLongPress={function onLongPress() {
+    handleLongPressCommandMention(node.commandName, node.commandId);
+  }}>{items}</Text>;
 };
 export { handleTapCommandMention };
 export { handleLongPressCommandMention };

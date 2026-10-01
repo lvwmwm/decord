@@ -6,15 +6,16 @@
 
 // Module 9357 (SoundUtils)
 import LoggerDefault from "Logger" /* 3 */;
+import Constants from "Constants" /* 9106 */;
 import getSoundsForPackDefault from "getSoundsForPack" /* 9360 */;
 import sound_playback_SoundUtils from "sound_playback/SoundUtils" /* 9361 */;
 import SoundpackStore from "SoundpackStore" /* 9358 */;
 import StreamerModeStore from "StreamerModeStore" /* 4679 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SoundOutputChannel = fn(9106).SoundOutputChannel;
-const logger = new LoggerDefault("SoundUtils");
-const size = fn(2);
+const SoundOutputChannel = Constants.SoundOutputChannel;
+const tmp2 = new LoggerDefault("SoundUtils");
+const logger = tmp2;
 const result = size.fileFinishedImporting("modules/sound_playback/SoundUtils.tsx");
 
 export const createSoundForPack = function createSoundForPack(call_calling, soundpack) {
@@ -60,13 +61,15 @@ export const playSound = function playSound(arg0, arg1, arg2, arg3, outputChanne
   if (arg1 === undefined) {
     num = 1;
   }
-  closure_0 = arg2;
+  let closure_0 = arg2;
   if (!StreamerModeStore.disableSounds) {
+    let tmp = arg3;
     let soundpack = arg3;
+    const tmp4 = getSoundsForPackDefault;
     if (arg3 == null) {
       soundpack = SoundpackStore.getSoundpack();
     }
-    const tmp4Result = getSoundsForPackDefault(soundpack);
+    const tmp4Result = tmp4(soundpack);
     if (null == tmp4Result) {
       const _HermesInternal = HermesInternal;
       logger.log("Unable to find sound for pack name: " + arg3);
@@ -98,14 +101,17 @@ export const playSound = function playSound(arg0, arg1, arg2, arg3, outputChanne
     if (flag === undefined) {
       flag = false;
     }
+    const self = this;
+    const self2 = this;
     const mobileAudioSound = new sound_playback_SoundUtils.MobileAudioSound(tmp13, arg0, num, outputChannel, flag);
     if (null != arg2) {
-      mobileAudioSound.playWithListener().then((result) => {
-        if (result) {
+      const playWithListenerResult = mobileAudioSound.playWithListener();
+      playWithListenerResult.then((result) => {
+        const tmp = result;
+        if (tmp) {
           closure_0();
         }
       });
-      const playWithListenerResult = mobileAudioSound.playWithListener();
     } else {
       mobileAudioSound.play();
     }

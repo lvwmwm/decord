@@ -4,36 +4,42 @@
 // Dependencies: [1993, 7417, 4861, 504, 11006, 1115, 9104, 2]
 
 // Module 14803 (SidechainCompressionSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
+import Constants from "Constants" /* 4861 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Features = fn(4861).Features;
-const SettingBuilders = fn(11006);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const Features = Constants.Features;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["/jwMtn"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["/jwMtn"]);
   },
-  parent: fn(7417).MobileUserSettings.VOICE,
+  parent: MobileUserSettings.VOICE,
   usePredicate() {
     return MediaEngineStore.supports(Features.SIDECHAIN_COMPRESSION);
   },
   useValue: function useSidechainCompressionSettingValue() {
+    let sidechainCompression;
     const items = [MediaEngineStore];
-    return initialize.useStateFromStores(items, () => sidechainCompression.getSidechainCompression());
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => sidechainCompression.getSidechainCompression());
   },
   onValueChange(arg0) {
-    return AudioActionCreatorsDefault.setSidechainCompression(arg0);
+    const obj = AudioActionCreatorsDefault;
+    return obj.setSidechainCompression(arg0);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.zlA23F);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.zlA23F);
   }
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/SidechainCompressionSetting.tsx");
 
 export default toggle;

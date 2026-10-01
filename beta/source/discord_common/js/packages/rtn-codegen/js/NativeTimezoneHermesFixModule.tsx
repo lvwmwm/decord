@@ -1,13 +1,13 @@
 // Module ID: 4514
 // Function ID: 4515
-// Name: NativeTimezoneHermesFixModule
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 4514 (NativeTimezoneHermesFixModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 4514 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeTimezoneHermesFixModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeTimezoneHermesFixModule.tsx");
 

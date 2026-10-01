@@ -5,28 +5,37 @@
 // Exports: useStrangerDangerWarning
 
 // Module 10906 (useStrangerDangerWarning)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import useUserIsTeen from "useUserIsTeen" /* 8104 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10376 */;
 import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10436 */;
 import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10907 */;
 import useIsMessageRequest from "useIsMessageRequest" /* 10908 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SafetyWarningTypes = fn(10376).SafetyWarningTypes;
-const size = fn(2);
+let tmp;
+const useInappropriateConversationWarningsForChannel = tmp(10435);
+const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
 const result = size.fileFinishedImporting("modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx");
 
 export const useStrangerDangerWarning = function useStrangerDangerWarning(id) {
+  let currentUser;
   const items = [UserStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const isSpamMessageRequest = useIsSpamMessageRequest.useIsSpamMessageRequest(id);
-  const isMessageRequest = useIsMessageRequest.useIsMessageRequest(id);
-  const channelSafetyWarning = useChannelSafetyWarning.useChannelSafetyWarning(id, SafetyWarningTypes.STRANGER_DANGER);
-  const userIsTeen = useUserIsTeen.useUserIsTeen();
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj3 = useIsSpamMessageRequest;
+  const isSpamMessageRequest = obj3.useIsSpamMessageRequest(id);
+  const obj4 = useIsMessageRequest;
+  const isMessageRequest = obj4.useIsMessageRequest(id);
+  const obj5 = useChannelSafetyWarning;
+  const channelSafetyWarning = obj5.useChannelSafetyWarning(id, SafetyWarningTypes.STRANGER_DANGER);
+  const obj6 = useUserIsTeen;
+  const userIsTeen = obj6.useUserIsTeen();
   if (stateFromStores != null) {
-    const isStaffResult = stateFromStores.isStaff();
+    stateFromStores.isStaff();
   }
+  const tmpResult = useInappropriateConversationWarningsForChannel;
   if (userIsTeen) {
     if (!isSpamMessageRequest) {
       if (!isMessageRequest) {

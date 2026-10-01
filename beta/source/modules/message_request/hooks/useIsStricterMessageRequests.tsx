@@ -12,5 +12,6 @@ const set = new Set(["GB"]);
 const result = size.fileFinishedImporting("modules/message_request/hooks/useIsStricterMessageRequests.tsx");
 
 export default function useIsStricterMessageRequests() {
-  return RegionalTeenUtils.useIsTeenInCountrySet(set);
+  const obj = RegionalTeenUtils;
+  return obj.useIsTeenInCountrySet(set);
 };

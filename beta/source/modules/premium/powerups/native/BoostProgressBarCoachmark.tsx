@@ -5,24 +5,30 @@
 // Exports: default
 
 // Module 15800 (BoostProgressBarCoachmark)
-import util from "util" /* 1115 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import intl4 from "intl" /* 1115 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import _modDef2519 from "module_2519" /* 2519 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let dependencyMap;
+
+const View = react_native.View;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ riveContainer: { width: 120, height: 80, alignSelf: "center" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/native/BoostProgressBarCoachmark.tsx");
 
 export default function BoostProgressBarCoachmark(guild) {
+  let closure_2;
   guild = guild.guild;
   const markAsDismissed = guild.markAsDismissed;
   let onDismiss;
+  const targetRef = guild.targetRef;
   const tmp = closure_7();
   dependencyMap = tmp;
   const items = [markAsDismissed];
@@ -32,24 +38,35 @@ export default function BoostProgressBarCoachmark(guild) {
   const items1 = [guild.id, markAsDismissed];
   const callback1 = onDismiss.useCallback(() => {
     markAsDismissed(ContentDismissActionType.TAKE_ACTION);
-    GuildSettingsActionCreatorsDefault.saveGuild(guild.id, { premiumProgressBarEnabled: true });
+    const obj = GuildSettingsActionCreatorsDefault;
+    obj.saveGuild(guild.id, { premiumProgressBarEnabled: true });
   }, items1);
   const items2 = [onDismiss, callback1, tmp.riveContainer];
   const memo = onDismiss.useMemo(() => {
-    const obj = { title: null, description: null, visible: true, position: "bottom", offsetY: 8, onDismiss: null, renderImgComponent: null, buttonLabel: null, buttonVariant: "primary", onButtonPress: null };
-    const intl = util.intl;
-    obj.title = intl.string(_modDef2519.uwV2dH);
-    const intl2 = util.intl;
-    obj.description = intl2.string(_modDef2519.MIwlcR);
-    obj.onDismiss = onDismiss;
-    obj.renderImgComponent = function renderImgComponent() {
-      return <callback1 style={riveContainer.riveContainer}>{jsx(guild(riveContainer[8]).BoostThisServerRive, { stateMachine: "State Machine 1" })}</callback1>;
+    let intl;
+    let intl2;
+    let intl3;
+    let riveContainer;
+    const obj = {
+      title: intl.string(_modDef2519.uwV2dH),
+      description: intl2.string(_modDef2519.MIwlcR),
+      visible: true,
+      position: "bottom",
+      offsetY: 8,
+      onDismiss,
+      renderImgComponent() {
+        return <callback1 style={riveContainer.riveContainer}>{jsx(guild(riveContainer[8]).BoostThisServerRive, { stateMachine: "State Machine 1" })}</callback1>;
+      },
+      buttonLabel: intl3.string(intl4.t["0CJWP2"]),
+      buttonVariant: "primary",
+      onButtonPress: callback1
     };
-    const intl3 = util.intl;
-    obj.buttonLabel = intl3.string(util.t["0CJWP2"]);
-    obj.onButtonPress = callback1;
+    intl = intl4.intl;
+    intl2 = intl4.intl;
+    intl3 = intl4.intl;
     return obj;
   }, items2);
-  const coachmark = guild(10589).useCoachmark(guild.targetRef, memo);
+  let obj = guild(10589);
+  const coachmark = obj.useCoachmark(targetRef, memo);
   return null;
 };

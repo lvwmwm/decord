@@ -5,21 +5,26 @@
 // Exports: default
 
 // Module 15434 (useGetProductsFromSkus)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import uniqByDefault from "uniqBy" /* 15435 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
 import size from "module_2" /* 2 */;
 
-_mod19.useCallback;
+let productByStoreListingId;
+
+const useCallback = react.useCallback;
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useGetProductsFromSkus.tsx");
 
 export default function useGetProductsFromSkus() {
+  let stateFromStores;
   const items = [CollectiblesCategoryStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => productByStoreListingId.products);
+  const obj = stateFromStores(504);
+  stateFromStores = obj.useStateFromStores(items, () => productByStoreListingId.products);
   const items1 = [stateFromStores];
   return useCallback((arr) => {
+    const tmp = uniqByDefault;
     const mapped = arr.map((item) => {
-      value = stateFromStores.get(item);
+      const value = stateFromStores.get(item);
       productByStoreListingId = value;
       if (null != value) {
         productByStoreListingId = value;
@@ -29,6 +34,6 @@ export default function useGetProductsFromSkus() {
       }
       return productByStoreListingId;
     });
-    return uniqByDefault(mapped.filter((item) => null != item), "storeListingId");
+    return tmp(mapped.filter((item) => null != item), "storeListingId");
   }, items1);
 };

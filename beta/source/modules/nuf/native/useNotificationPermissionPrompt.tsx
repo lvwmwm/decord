@@ -6,37 +6,41 @@
 
 // Module 16162 (useNotificationPermissionPrompt)
 import NotificationUtilsDefault from "NotificationUtils" /* 11911 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2036 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
 import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11902 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/nuf/native/useNotificationPermissionPrompt.tsx");
 
 export default function useNotificationPermissionPrompt() {
+  let connected;
+  let stateFromStores;
   const items = [GatewayConnectionStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => connected.isConnected());
   const obj = stateFromStores(504);
+  stateFromStores = obj.useStateFromStores(items, () => connected.isConnected());
   const items1 = [UserRequiredActionStore, LoginRequiredActionStore];
-  const stateFromStores1 = stateFromStores(504).useStateFromStores(items1, () => stateFromStores1(dependencyMap[6])(LoginRequiredActionStore, UserRequiredActionStore));
+  const obj2 = stateFromStores(504);
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => stateFromStores1(dependencyMap[6])(LoginRequiredActionStore, UserRequiredActionStore));
   const items2 = [stateFromStores, stateFromStores1];
-  const effect = noop.useEffect(() => {
-    if (stateFromStores) {
-      if (!stateFromStores1) {
-        if (tmp5) {
-          const permission = tmp3(11911).requestPermission();
-          tmp3(11911).shouldRequestNotification = false;
-          const tmp3Result = tmp3(11911);
+  const effect = react.useEffect(() => {
+    const tmp = stateFromStores;
+    if (tmp) {
+      const tmp2 = stateFromStores1;
+      if (!tmp2) {
+        const tmp6 = NotificationUtilsDefault.shouldRequestNotification && !PushNotificationPermissionStore.promptSeen;
+        if (tmp6) {
+          const tmp4Result = NotificationUtilsDefault;
+          const permission = tmp4Result.requestPermission();
+          NotificationUtilsDefault.shouldRequestNotification = false;
         }
-        tmp5 = NotificationUtilsDefault.shouldRequestNotification && !PushNotificationPermissionStore.promptSeen;
       }
     }
   }, items2);
-  const obj2 = stateFromStores(504);
-  const guildOpenNudge = stateFromStores(16163).useGuildOpenNudge();
   const obj3 = stateFromStores(16163);
-  const postCallDisconnectNudge = stateFromStores(16167).usePostCallDisconnectNudge();
+  const guildOpenNudge = obj3.useGuildOpenNudge();
+  const obj4 = stateFromStores(16167);
+  const postCallDisconnectNudge = obj4.usePostCallDisconnectNudge();
 };

@@ -5,25 +5,28 @@
 // Exports: useIsSecureFramesUIEnabled
 
 // Module 9183 (useIsSecureFramesUIEnabled)
+import SecureFramesConstants from "SecureFramesConstants" /* 9165 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_4 = fn(9165).END_TO_END_ENCRYPTION_DISABLED;
-const size = fn(2);
+let closure_4 = SecureFramesConstants.END_TO_END_ENCRYPTION_DISABLED;
 const result = size.fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesUIEnabled.tsx");
 
 export const useIsSecureFramesUIEnabled = function useIsSecureFramesUIEnabled(channelId) {
   channelId = channelId.channelId;
+  const obj = channelId(504);
   let items = [RTCConnectionStore, ChannelStore];
   const items1 = [channelId];
-  return channelId(504).useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
+    let obj;
+    let obj2;
     const items = [RTCConnectionStore, ChannelStore];
     [obj, obj2] = items;
     let flag = false;
     if (null != channelId) {
       flag = false;
-      if (obj.getChannelId() === tmp) {
+      if (obj.getChannelId() === channelId) {
         const channel = obj2.getChannel(tmp);
         flag = false;
         if (null != channel) {
@@ -34,11 +37,8 @@ export const useIsSecureFramesUIEnabled = function useIsSecureFramesUIEnabled(ch
             if (secureFramesState != null) {
               version = secureFramesState.version;
             }
-            let tmp4 = null != version;
-            if (tmp4) {
-              tmp4 = version !== closure_4;
-            }
-            flag = tmp4;
+            flag = null != version && version !== closure_4;
+            const tmp4 = null != version && version !== closure_4;
           }
         }
       }

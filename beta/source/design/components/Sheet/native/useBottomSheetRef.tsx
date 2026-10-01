@@ -1,25 +1,26 @@
 // Module ID: 7615
 // Function ID: 7616
-// Name: useBottomSheetRef
+// Name: react
 // Dependencies: [19, 2]
 // Exports: useBottomSheetRef
 
-// Module 7615 (useBottomSheetRef)
-import noop from "module_19" /* 19 */;
+// Module 7615 (react)
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Sheet/native/useBottomSheetRef.tsx");
 
 export const useBottomSheetRef = function useBottomSheetRef() {
-  const ref = noop.useRef(null);
+  const ref = react.useRef(null);
   const items = [ref];
-  return {
+  const obj = {
     bottomSheetRef: ref,
-    bottomSheetClose: noop.useCallback(() => {
+    bottomSheetClose: react.useCallback(() => {
       const current = ref.current;
       if (current != null) {
         current.closeActionSheet();
       }
     }, items)
   };
+  return obj;
 };

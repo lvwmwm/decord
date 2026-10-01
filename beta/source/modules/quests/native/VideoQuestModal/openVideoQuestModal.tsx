@@ -8,14 +8,18 @@
 import v1All from "v1" /* 1255 */;
 import VideoQuestUtils from "VideoQuestUtils" /* 10735 */;
 import QuestStore from "QuestStore" /* 7116 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let importAll;
+
 const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/openVideoQuestModal.tsx");
 
 export default function openVideoQuestModal(questId) {
+  let initialStep;
+  let questContentPosition;
   questId = questId.questId;
   const sourceQuestContent = questId.sourceQuestContent;
+  let obj = QuestStore;
   ({ questContentPosition, initialStep } = questId);
   if (QuestStore.isQuestAccessSuspended) {
     const quest = obj.getQuest(questId);
@@ -30,20 +34,24 @@ export default function openVideoQuestModal(questId) {
       sourceQuestContent(14649)();
     }
   }
-  const v4Result = v1All.v4();
+  let obj2 = v1All;
+  const v4Result = obj2.v4();
   importAll = v4Result;
-  obj = QuestStore;
-  const obj3 = sourceQuestContent(5039);
-  const obj4 = {
+  const pushLazy = sourceQuestContent(5039).pushLazy;
+  const obj3 = {
     questId,
     questContentPosition,
     videoSessionId: v4Result,
     initialStep,
     onClose() {
-      return VideoQuestUtils.handleVideoQuestModalClose({ questId, sourceQuestContent, videoSessionId: v4Result });
+      const obj = VideoQuestUtils;
+      const obj2 = { questId, sourceQuestContent, videoSessionId: importAll };
+      return obj.handleVideoQuestModalClose(obj2);
     },
     sourceQuestContent
   };
-  const tmp8 = questId(1981)(14656, dependencyMap.paths);
-  return obj3.pushLazy(tmp8, obj4, questId(10735).getVideoQuestModalKey(questId));
+  sourceQuestContent(5039);
+  const tmp9 = questId(1981)(14656, dependencyMap.paths);
+  const obj4 = questId(10735);
+  return pushLazy(tmp9, obj3, obj4.getVideoQuestModalKey(questId));
 };

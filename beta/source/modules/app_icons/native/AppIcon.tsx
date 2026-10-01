@@ -5,35 +5,42 @@
 // Exports: default
 
 // Module 15076 (AppIcon)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import shared from "shared" /* 4685 */;
 import useThemeDefault from "useTheme" /* 4767 */;
-import noop from "module_19" /* 19 */;
+import AppIconConstants from "AppIconConstants" /* 8624 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const getIconById = fn(8624).getIconById;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { container: { overflow: "hidden", borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, image: { resizeMode: "contain", height: "100%", width: "100%" } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let c3;
+let closure_4;
+let obj2;
+({ Image: c3, View: closure_4 } = react_native);
+const getIconById = AppIconConstants.getIconById;
+const jsx = Fragment.jsx;
+let obj = { container: obj2, image: { resizeMode: "contain", height: "100%", width: "100%" } };
+obj2 = { overflow: "hidden", borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/app_icons/native/AppIcon.tsx");
 
 export default function AppIcon(size) {
   let num = size.size;
+  const id = size.id;
   if (num === undefined) {
     num = 56;
   }
+  const style = size.style;
   const tmp = closure_7();
   const tmp2 = useThemeDefault();
-  const tmp3 = getIconById(size.id);
   let num2 = 1;
+  const tmp3 = getIconById(id);
+  const obj = shared;
   if (obj.isThemeDark(tmp2)) {
     num2 = 0;
   }
-  const obj2 = { style: null, children: <React3 style={tmp.image} source={tmp3.iconSource} /> };
-  const items = [tmp.container, { width: num, height: num, borderWidth: num2 }, size.style];
-  obj2.style = items;
-  return <React4 style={null}><React3 style={tmp.image} source={tmp3.iconSource} /></React4>;
+  const items = [tmp.container, { width: num, height: num, borderWidth: num2 }, style];
+  return <React3 style={items}>{null}</React3>;
 };

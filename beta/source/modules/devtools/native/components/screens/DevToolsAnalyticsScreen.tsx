@@ -5,34 +5,83 @@
 // Exports: default
 
 // Module 15135 (DevToolsAnalyticsScreen)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
+import _modDef4421 from "module_4421" /* 4421 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 import AnalyticsLogStore from "AnalyticsLogStore" /* 13890 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap, importDefault;
+
+let c9;
+let metroImportAll;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
 function CommonProperty(arg0) {
+  let children;
+  let items;
+  let name;
   ({ name, children } = arg0);
-  const obj = { style: closure_10().commonProperty, children: null };
-  const items = [React6(Text_Text.Text, { variant: "text-sm/semibold", color: "text-default", children: name }), children];
-  obj.children = items;
-  return React7(View, obj);
+  const obj = { style: closure_10().commonProperty, children: items };
+  items = [metroImportAll(Text_Text.Text, { variant: "text-sm/semibold", color: "text-default", children: name }), children];
+  return React4(View, obj);
 }
 function LoggedEvent(arg0) {
+  let Text;
+  let _undefined;
+  let c2;
+  let closure_1;
+  let end;
+  let entries;
+  let event;
+  let fingerprint;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let obj5;
+  let obj6;
+  let obj8;
+  let properties;
+  let start;
+  let str2;
+  let timestamp;
+  let tmp3;
+  let tmp5Result2;
   ({ properties, fingerprint } = arg0);
   dependencyMap = undefined;
   ({ event, timestamp, start, end } = arg0);
-  let map = closure_10();
-  [tmp2, c2] = noop.useState(false);
+  const tmp = closure_10();
+  importDefault = tmp;
+  const tmp2 = _slicedToArray(react.useState(false), 2);
+  [tmp3, c2] = tmp2;
   const user = UserStore.getUser(fingerprint);
-  let CopyIcon = fingerprint;
-  let tmp6Result2 = dependencyMap;
-  let obj = { arrow: !tmp2, icon: closure_8(fingerprint(9845).AnalyticsIcon, {}), label: event, subLabel: null, onPress: null, start: null, end: null };
+  let tmp6 = View;
+  let obj = {
+    arrow: !tmp5Result2,
+    icon: closure_8(fingerprint(9845).AnalyticsIcon, {}),
+    label: event,
+    subLabel: str2,
+    onPress() {
+      return _undefined((arg0) => !arg0);
+    },
+    start,
+    end
+  };
+  const TableRow = fingerprint(5917).TableRow;
   if ("name" in properties) {
-    let str2 = properties.name;
+    str2 = properties.name;
   } else {
     str2 = undefined;
     if (properties.location != null) {
@@ -42,177 +91,176 @@ function LoggedEvent(arg0) {
       str2 = "N/A";
     }
   }
-  obj.subLabel = str2;
-  obj.onPress = function onPress() {
-    return _undefined((arg0) => !arg0);
-  };
-  obj.start = start;
-  obj.end = end;
-  let items = [closure_8(fingerprint(5917).TableRow, obj), ];
-  if (!tmp2) {
-    let obj2 = { collapsable: false, children: null };
-    items[1] = tmp2;
-    obj2.children = items;
-    return tmp4(tmp5, obj2);
-  } else {
-    let obj3 = { style: map.detailsContainer, children: null };
-    let obj4 = { style: map.commonPropertiesContainer, children: null };
-    const obj6 = { name: "Timestamp (local)", children: null };
-    const obj7 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: map(4421)(timestamp).calendar() };
-    obj6.children = tmp6(CopyIcon(4832).Text, obj7);
-    let items1 = [tmp6(CommonProperty, obj6), , ];
-    let tmp6Result = null != user;
-    if (tmp6Result) {
-      const obj8 = { name: "User ", children: null };
-      const obj9 = { user };
-      obj8.children = tmp6(tmp10(9094), obj9);
-      tmp6Result = tmp6(tmp9, obj8);
+  const children = [tmp7(TableRow, obj), ];
+  if (tmp5Result2) {
+    let tmp7Result1;
+    let obj2 = { style: tmp.detailsContainer, children: items4 };
+    let obj3 = { style: tmp.commonPropertiesContainer, children: items1 };
+    let obj4 = { name: "Timestamp (local)", children: tmp7(Text, obj5) };
+    obj5 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: obj6.calendar() };
+    Text = tmp8(4832).Text;
+    obj6 = _modDef4421(timestamp);
+    items1 = [tmp7(CommonProperty, obj4), , ];
+    let tmp7Result = null != user;
+    const tmp12 = importDefault;
+    if (tmp7Result) {
+      const obj7 = { name: "User ", children: closure_8(tmp12(9094), obj8) };
+      obj8 = { user };
+      tmp7Result = tmp7(tmp11, obj7);
     }
-    items1[1] = tmp6Result;
+    items1[1] = tmp7Result;
     if (null != fingerprint) {
-      const obj10 = {
-        style: map.copyContainer,
+      const obj9 = {
+        style: tmp.copyContainer,
         onPress() {
               if (null != fingerprint) {
-                ClipboardUtils.copy(tmp);
+                const obj = ClipboardUtils;
+                obj.copy(tmp);
               }
             },
-        children: null
+        children: items3
       };
-      const obj11 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: null, children: null };
-      const items2 = [map.monospace, { marginRight: 4 }];
-      obj11.style = items2;
-      obj11.children = fingerprint;
-      const items3 = [tmp6(CopyIcon(4832).Text, obj11), ];
-      CopyIcon = CopyIcon(4779).CopyIcon;
-      tmp6Result2 = tmp6(CopyIcon, { size: "sm" });
-      items3[1] = tmp6Result2;
-      obj10.children = items3;
-      let tmp6Result3 = tmp4(CopyIcon(5435).PressableOpacity, obj10);
+      const PressableOpacity = tmp8(5435).PressableOpacity;
+      const obj10 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: items2, children: fingerprint };
+      items2 = [tmp.monospace, { marginRight: 4 }];
+      items3 = [tmp7(fingerprint(4832).Text, obj10), tmp7(fingerprint(4779).CopyIcon, { size: "sm" })];
+      tmp7Result1 = tmp5(PressableOpacity, obj9);
     } else {
-      const obj12 = { variant: "text-sm/medium", color: "text-muted", style: map.monospace, children: "null" };
-      tmp6Result3 = tmp6(CopyIcon(4832).Text, obj12);
+      const obj11 = { variant: "text-sm/medium", color: "text-muted", style: tmp.monospace, children: "null" };
+      tmp7Result1 = tmp7(tmp8(4832).Text, obj11);
     }
-    const obj13 = { name: "Fingerprint", children: tmp6Result3 };
-    items1[2] = tmp6(CommonProperty, obj13);
-    obj4.children = items1;
-    const obj5 = map(4421)(timestamp);
-    tmp10 = map;
-    obj4 = [, ];
-    obj4[0] = tmp4(tmp5, obj4);
-    const obj25 = { style: map.customPropertiesContainer, children: null };
+    const obj12 = { name: "Fingerprint", children: tmp7Result1 };
+    items1[2] = closure_8(CommonProperty, obj12);
+    items4 = [tmp5(tmp6, obj3), ];
     const _Object = Object;
-    const entries = Object.entries(properties);
-    map = entries.map;
-    obj25.children = map((arg0) => {
-      [tmp, tmp2] = arg0;
-      const obj = { style: map.customProperty, children: null };
-      const obj2 = { variant: "text-sm/semibold", color: "text-brand", style: map.customPropertyName, children: null };
-      const items = [tmp, ":"];
-      obj2.children = items;
-      const items1 = [React7(Text_Text.Text, obj2), ];
-      if (null != tmp2) {
-        const obj3 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", style: tmp5.monospace, children: null };
-        const _JSON = JSON;
-        obj3.children = JSON.stringify(tmp2);
-        let obj4 = obj3;
-      } else {
-        obj4 = { variant: "text-sm/semibold", color: "text-muted", style: tmp5.monospace, children: "null" };
-      }
-      items1[1] = React6(Text_Text.Text, obj4);
-      obj.children = items1;
-      return React7(View, obj, tmp);
-    });
-    items1 = tmp6(tmp5, obj25);
-    obj4[1] = items1;
-    obj3.children = obj4;
-    tmp4(tmp5, obj3);
-    const tmp4Result3 = tmp4(tmp5, obj4);
+    const obj13 = {
+      style: tmp.customPropertiesContainer,
+      children: entries.map((item) => {
+          let items;
+          let items1;
+          let obj4;
+          let tmp;
+          let tmp2;
+          [tmp, tmp2] = item;
+          const obj2 = { variant: "text-sm/semibold", color: "text-brand", style: closure_1.customPropertyName, children: items };
+          items = [tmp, ":"];
+          const obj = { style: closure_1.customProperty, children: items1 };
+          items1 = [React4(Text_Text.Text, obj2), ];
+          const Text = Text_Text.Text;
+          const tmp3 = React4;
+          const tmp4 = View;
+          const tmp6 = metroImportAll;
+          if (null != tmp2) {
+            const _JSON = JSON;
+            obj4 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", style: closure_1.monospace, children: JSON.stringify(tmp2) };
+            const obj3 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", style: closure_1.monospace, children: JSON.stringify(tmp2) };
+          } else {
+            obj4 = { variant: "text-sm/semibold", color: "text-muted", style: closure_1.monospace, children: "null" };
+          }
+          items1[1] = tmp6(Text, obj4);
+          return tmp3(tmp4, obj, tmp);
+        })
+    };
+    entries = Object.entries(properties);
+    items4[1] = closure_8(tmp6, obj13);
+    tmp5Result2 = closure_9(tmp6, obj2);
   }
+  children[1] = tmp5Result2;
+  return closure_9(tmp6, { collapsable: false, children });
 }
-const View = fn(17).View;
-const Fonts = fn(1074).Fonts;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { analyticsContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, contentContainer: null, searchFieldContainer: null, detailsContainer: null, commonPropertiesContainer: null, commonProperty: null, customPropertiesContainer: null, customProperty: null, customPropertyName: null, monospace: null, copyContainer: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj2.contentContainer = { padding: nativeDefault.space.PX_16 };
-let obj4 = { padding: nativeDefault.space.PX_16 };
-obj2.searchFieldContainer = { paddingHorizontal: nativeDefault.space.PX_16 };
-let obj5 = { paddingHorizontal: nativeDefault.space.PX_16 };
-obj2.detailsContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-let obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-obj2.commonPropertiesContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 10 };
-obj2.commonProperty = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginVertical: 8, height: 20 };
-obj2.customPropertiesContainer = { paddingHorizontal: 10, paddingVertical: 4 };
-obj2.customProperty = { flexDirection: "row", alignItems: "center", flexWrap: "wrap", justifyContent: "flex-start", marginVertical: 4 };
-obj2.customPropertyName = { fontWeight: "600", fontFamily: Fonts.CODE_BOLD, marginRight: 4 };
-obj2.monospace = { fontFamily: Fonts.CODE_BOLD };
-obj2.copyContainer = { flexDirection: "row", alignItems: "center" };
-let closure_10 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+const Fonts = Constants.Fonts;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { analyticsContainer: obj2, contentContainer: obj3, searchFieldContainer: obj4, detailsContainer: obj5, commonPropertiesContainer: obj6, commonProperty: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginVertical: 8, height: 20 }, customPropertiesContainer: { paddingHorizontal: 10, paddingVertical: 4 }, customProperty: { flexDirection: "row", alignItems: "center", flexWrap: "wrap", justifyContent: "flex-start", marginVertical: 4 }, customPropertyName: { fontWeight: "600", fontFamily: Fonts.CODE_BOLD, marginRight: 4 }, monospace: { fontFamily: Fonts.CODE_BOLD }, copyContainer: { flexDirection: "row", alignItems: "center" } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16 };
+obj4 = { paddingHorizontal: nativeDefault.space.PX_16 };
+obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 10 };
+let closure_10 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAnalyticsScreen.tsx");
 
 export default function DevToolsAnalyticsScreen() {
+  let FlashList;
+  let first;
+  let items2;
+  let loggedEventsVersion;
+  let obj8;
+  let obj9;
+  let reversed;
+  let str;
+  let tmp12Result;
+  let tmp7;
+  let tmp9;
+  let trimmed;
   const tmp = closure_10();
+  let obj = trimmed(504);
   const items = [AnalyticsLogStore];
   const loggedEvents = AnalyticsLogStore.loggedEvents;
-  const stateFromStores = trimmed(504).useStateFromStores(items, () => loggedEventsVersion.loggedEventsVersion);
-  const tmp5 = _slicedToArray(noop.useState(false), 2);
-  const first = tmp5[0];
-  const obj = trimmed(504);
-  [str, tmp8] = noop.useState("");
-  const tmp7 = _slicedToArray(noop.useState(""), 2);
-  trimmed = str.toLowerCase().trim();
+  const stateFromStores = obj.useStateFromStores(items, () => loggedEventsVersion.loggedEventsVersion);
+  [first, tmp7] = react.useState(false);
+  [str, tmp9] = react.useState("");
+  _slicedToArray(react.useState(""), 2);
+  const str2 = str.toLowerCase();
+  trimmed = str2.trim();
   let found = loggedEvents;
   if ("" !== trimmed) {
     found = loggedEvents.filter((event) => {
-      const formatted = event.event.toLowerCase();
+      const str = event.event;
+      const formatted = str.toLowerCase();
       return formatted.includes(trimmed);
     });
   }
   const items1 = [...found];
   if (first) {
-    let reversed = items1.reverse();
+    reversed = items1.reverse();
   } else {
     reversed = items1;
   }
-  const obj2 = { style: tmp.analyticsContainer, children: null };
-  const obj3 = { title: "Actions", hasIcons: true, children: null };
-  const str2 = str.toLowerCase();
-  const tmp12 = View;
-  const tmp13 = closure_9;
-  const items2 = [closure_8(trimmed(6621).TableSwitchRow, { icon: closure_8(trimmed(11633).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp5[1] }), ];
-  const obj4 = { icon: closure_8(trimmed(11633).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp5[1] };
-  items2[1] = closure_8(trimmed(5917).TableRow, { arrow: true, variant: "danger", icon: closure_8(trimmed(4790).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(15130).clearAnalyticsLog });
-  obj3.children = items2;
-  const items3 = [closure_9(trimmed(5999).TableRowGroup, obj3), , ];
+  const obj2 = { style: tmp.analyticsContainer, children: closure_8(FlashList, obj8) };
+  FlashList = tmp2(8179).FlashList;
+  const Stack = tmp2(5279).Stack;
+  const obj3 = { title: "Actions", hasIcons: true, children: items2 };
+  const TableRowGroup = tmp2(5999).TableRowGroup;
+  const obj4 = { icon: closure_8(trimmed(11633).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
+  const TableSwitchRow = tmp2(6621).TableSwitchRow;
+  items2 = [closure_8(TableSwitchRow, obj4), ];
   const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(4790).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(15130).clearAnalyticsLog };
-  items3[1] = closure_8(View, { style: tmp.searchFieldContainer, children: closure_8(trimmed(6471).SearchField, { placeholder: "Search by event name", onChange: tmp8 }) });
+  const TableRow = tmp2(5917).TableRow;
+  items2[1] = closure_8(TableRow, obj5);
+  const items3 = [closure_9(TableRowGroup, obj3), , ];
+  const obj6 = { style: tmp.searchFieldContainer, children: closure_8(trimmed(6471).SearchField, { placeholder: "Search by event name", onChange: tmp9 }) };
+  items3[1] = closure_8(View, obj6);
+  const TableRowGroup2 = tmp2(5999).TableRowGroup;
+  const tmp13 = View;
+  const tmp14 = closure_9;
   if (0 === loggedEvents.length) {
-    let tmp11Result = tmp11(tmp2(5917).TableRow, { label: "No events logged." });
+    tmp12Result = tmp12(tmp2(5917).TableRow, { label: "No events logged." });
   } else {
-    tmp11Result = null;
+    tmp12Result = null;
     if (0 === found.length) {
-      const obj7 = { label: null };
       const _HermesInternal = HermesInternal;
-      obj7.label = "No events match \"" + str + "\"";
-      tmp11Result = tmp11(tmp2(5917).TableRow, obj7);
+      const obj7 = { label: "No events match \"" + str + "\"" };
+      const TableRow2 = tmp2(5917).TableRow;
+      tmp12Result = tmp12(TableRow2, obj7);
     }
   }
-  const obj8 = { ListHeaderComponent: null, contentContainerStyle: null, extraData: null, data: null, renderItem: null };
-  const obj9 = { spacing: 16, children: null };
-  items3[2] = closure_8(trimmed(5999).TableRowGroup, { title: "Analytics Events", hasIcons: false, children: tmp11Result });
-  obj9.children = items3;
-  obj8.ListHeaderComponent = tmp13(trimmed(5279).Stack, obj9);
-  obj8.contentContainerStyle = tmp.contentContainer;
-  obj8.extraData = stateFromStores;
-  obj8.data = reversed;
-  obj8.renderItem = function renderItem(arg0) {
-    ({ item, index } = arg0);
-    return React6(LoggedEvent, { start: 0 === index, end: index === reversed.length - 1, event: item.event, properties: item.properties, timestamp: item.timestamp, fingerprint: item.fingerprint });
+  obj8 = {
+    ListHeaderComponent: tmp14(Stack, obj9),
+    contentContainerStyle: tmp.contentContainer,
+    extraData: stateFromStores,
+    data: reversed,
+    renderItem(arg0) {
+      let index;
+      let item;
+      ({ item, index } = arg0);
+      const obj = { start: 0 === index, end: index === reversed.length - 1, event: item.event, properties: item.properties, timestamp: item.timestamp, fingerprint: item.fingerprint };
+      return metroImportAll(LoggedEvent, obj);
+    }
   };
-  obj2.children = closure_8(trimmed(8179).FlashList, obj8);
-  return closure_8(tmp12, obj2);
+  obj9 = { spacing: 16, children: items3 };
+  items3[2] = closure_8(TableRowGroup2, { title: "Analytics Events", hasIcons: false, children: tmp12Result });
+  return closure_8(tmp13, obj2);
 };

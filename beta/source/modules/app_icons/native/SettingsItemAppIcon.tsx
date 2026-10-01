@@ -5,20 +5,24 @@
 // Exports: default
 
 // Module 15075 (SettingsItemAppIcon)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import AppIconConstants from "AppIconConstants" /* 8624 */;
 import AppIconTypes from "AppIconTypes" /* 8625 */;
 import AppIconUtils from "AppIconUtils" /* 12995 */;
 import AppIconDefault from "AppIcon" /* 15076 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+let obj2;
+let tmp4;
 const ClydeIcon = tmp4(10278);
-require = fn;
-const getIconById = fn(8624).getIconById;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { icon: { borderRadius: nativeDefault.radii.round } };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
+const getIconById = AppIconConstants.getIconById;
+const jsx = Fragment.jsx;
+let obj = { icon: obj2 };
+obj2 = { borderRadius: nativeDefault.radii.round };
+let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/app_icons/native/SettingsItemAppIcon.tsx");
 
 export default function SettingsItemAppIcon(color) {
@@ -27,11 +31,13 @@ export default function SettingsItemAppIcon(color) {
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const tmp3 = closure_5();
-  const currentAppIcon = AppIconUtils.useCurrentAppIcon();
+  const obj = AppIconUtils;
+  const currentAppIcon = obj.useCurrentAppIcon();
+  const tmp7 = getIconById(currentAppIcon);
   if (currentAppIcon !== AppIconTypes.FreemiumAppIconIds.DEFAULT) {
+    let tmp11;
     if (null != tmp7) {
-      const obj2 = { style: tmp3.icon, id: currentAppIcon, size: 32 };
-      let tmp11 = jsx(AppIconDefault, { style: tmp3.icon, id: currentAppIcon, size: 32 });
+      tmp11 = jsx(AppIconDefault, { style: tmp3.icon, id: currentAppIcon, size: 32 });
     }
     return tmp11;
   }

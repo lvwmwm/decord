@@ -5,17 +5,20 @@
 // Exports: mergeOutcomes
 
 // Module 1044 (mergeOutcomes)
+let map;
+
 
 export const mergeOutcomes = function mergeOutcomes() {
   const items = [...arguments];
-  const map = new Map();
+  map = new Map();
   function process(reason) {
     const combined = "" + reason.reason + ":" + reason.category;
-    value = map.get(combined);
+    const value = map.get(combined);
+    const obj = map;
     if (value) {
       value.quantity = value.quantity + reason.quantity;
     } else {
-      const result = map.set(combined, reason);
+      const result = obj.set(combined, reason);
     }
   }
   const item = items.forEach((arr) => arr.forEach(process));

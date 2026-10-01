@@ -4,23 +4,27 @@
 // Dependencies: [10795, 10797, 10798, 10799, 10800, 10801, 10803, 10804]
 
 // Module 10794 (keepLocalCopy)
-import NativeDocumentPicker from "NativeDocumentPicker" /* 10795 */;
-import _mod10797 from "module_10797" /* 10797 */;
-import _mod10798 from "module_10798" /* 10798 */;
+import react_native from "react-native" /* 10795 */;
+import react_native2 from "react-native" /* 10797 */;
+import react_native3 from "react-native" /* 10798 */;
 import errorCodes from "errorCodes" /* 10799 */;
-import _pickDirectory from "_pickDirectory" /* 10800 */;
-import _pick from "_pick" /* 10801 */;
-import _saveDocuments from "_saveDocuments" /* 10803 */;
+import pickDirectory from "pickDirectory" /* 10800 */;
+import pick from "pick" /* 10801 */;
+import _mod10803 from "module_10803" /* 10803 */;
 import releaseLongTermAccess from "releaseLongTermAccess" /* 10804 */;
 
+const errorCodes_export = errorCodes.errorCodes;
+const pickDirectory_export = pickDirectory.pickDirectory;
+const pick_export = pick.pick;
+const releaseLongTermAccess_export = releaseLongTermAccess.releaseLongTermAccess;
 
-export const isKnownType = NativeDocumentPicker.isKnownType;
-export const keepLocalCopy = _mod10797.keepLocalCopy;
-export const types = _mod10798.types;
-export const errorCodes = errorCodes.errorCodes;
+export const isKnownType = react_native.isKnownType;
+export const keepLocalCopy = react_native2.keepLocalCopy;
+export const types = react_native3.types;
+export { errorCodes_export as errorCodes };
 export const isErrorWithCode = errorCodes.isErrorWithCode;
-export const pickDirectory = _pickDirectory.pickDirectory;
-export const pick = _pick.pick;
-export const saveDocuments = _saveDocuments.saveDocuments;
-export const releaseLongTermAccess = releaseLongTermAccess.releaseLongTermAccess;
+export { pickDirectory_export as pickDirectory };
+export { pick_export as pick };
+export const saveDocuments = _mod10803.saveDocuments;
+export { releaseLongTermAccess_export as releaseLongTermAccess };
 export const releaseSecureAccess = releaseLongTermAccess.releaseSecureAccess;

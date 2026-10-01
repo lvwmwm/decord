@@ -5,25 +5,29 @@
 // Exports: default
 
 // Module 9746 (useExpressionPickerInsets)
-import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const EXPRESSION_FOOTER_HEIGHT = fn(1074).EXPRESSION_FOOTER_HEIGHT;
-const size = fn(2);
+let tmp;
+const nativeDefault = tmp(576);
+const EXPRESSION_FOOTER_HEIGHT = Constants.EXPRESSION_FOOTER_HEIGHT;
 const result = size.fileFinishedImporting("modules/expression_picker/native/useExpressionPickerInsets.tsx");
 
 export default function useExpressionPickerInsets(hasCategories) {
+  let items;
+  let sum;
+  hasCategories = hasCategories.hasCategories;
   const bottom = useSafeAreaInsetsDefault().bottom;
-  const obj = { safeAreaStyle: null, safeAreaBottomKeyboardAware: null };
-  const items = [bottom];
-  obj.safeAreaStyle = noop.useMemo(() => ({ paddingBottom: bottom }), items);
+  const obj = { safeAreaStyle: react.useMemo(() => ({ paddingBottom: bottom }), items), safeAreaBottomKeyboardAware: sum + nativeDefault.space.PX_16 };
+  items = [bottom];
+  const bottom2 = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true, includeCustomKeyboardHeight: false }).insets.bottom;
   let num = 0;
-  if (hasCategories.hasCategories) {
+  if (hasCategories) {
     num = EXPRESSION_FOOTER_HEIGHT;
   }
-  const sum = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true, includeCustomKeyboardHeight: false }).insets.bottom + num;
-  obj.safeAreaBottomKeyboardAware = sum + nativeDefault.space.PX_16;
+  sum = bottom2 + num;
   return obj;
 };

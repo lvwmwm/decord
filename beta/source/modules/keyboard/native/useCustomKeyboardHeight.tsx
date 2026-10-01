@@ -12,7 +12,8 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/keyboard/native/useCustomKeyboardHeight.tsx");
 
 export default function useCustomKeyboardHeight() {
-  closure_0 = AppEntryKeyContext.useAppEntryKey();
+  const obj = AppEntryKeyContext;
+  let closure_0 = obj.useAppEntryKey();
   return KeyboardUIStoreDefault((arg0) => arg0.byAppEntry[closure_0].customKeyboardHeight);
 };
 export const getCustomKeyboardHeight = function getCustomKeyboardHeight(appEntryKey) {
@@ -20,5 +21,6 @@ export const getCustomKeyboardHeight = function getCustomKeyboardHeight(appEntry
   if (appEntryKey === undefined) {
     DEFAULT_APP_ENTRY_KEY = AppEntryKeyContext.DEFAULT_APP_ENTRY_KEY;
   }
-  return KeyboardUIStoreDefault.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].customKeyboardHeight;
+  const obj = KeyboardUIStoreDefault;
+  return obj.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].customKeyboardHeight;
 };

@@ -10,28 +10,33 @@ import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators"
 import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 17757 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/headless_tasks/android/SelectVoiceChannel.tsx");
 
 export default (arg0) => {
   ({ channelId: require, connectToVoice: importDefault } = arg0);
-  return new Promise((arg0) => {
-    closure_0 = arg0;
-    HeadlessTaskUtilsDefault.awaitStorage(() => {
-      if (closure_2_1) {
-        const voiceChannel = SelectedChannelActionCreatorsDefault.selectVoiceChannel(closure_2_0);
+  const promise = new Promise((arg0) => {
+    let closure_0 = arg0;
+    let obj = HeadlessTaskUtilsDefault;
+    obj.awaitStorage(() => {
+      const tmp = importDefault;
+      if (tmp) {
+        const obj = SelectedChannelActionCreatorsDefault;
+        const voiceChannel = obj.selectVoiceChannel(require);
       }
-      if (RTCConnectionStore.getChannelId() === closure_2_0) {
-        const channel = ChannelStore.getChannel(tmp5);
+      if (RTCConnectionStore.getChannelId() === require) {
+        const channel = ChannelStore.getChannel(tmp6);
         if (null != channel) {
-          const result = PrivateChannelCallUtils.navigateToVoiceChannel(channel);
+          const obj3 = PrivateChannelCallUtils;
+          const result = obj3.navigateToVoiceChannel(channel);
         }
       } else {
-        transitionToChannel.transitionToChannel(tmp5);
+        const obj2 = transitionToChannel;
+        obj2.transitionToChannel(require);
       }
       closure_0(true);
     });
   });
+  return promise;
 };

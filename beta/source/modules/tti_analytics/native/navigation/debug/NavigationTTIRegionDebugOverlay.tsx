@@ -9,12 +9,35 @@ import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16179 */;
 import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16180 */;
-import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 16181 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap;
+
+let StyleSheet;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+let rect;
+let rect1;
+let rect2;
+let rect3;
+let rect4;
 function NavigationTTIDebugFreezeControl(arg0) {
+  let Text;
+  let obj2;
+  let target;
   ({ target, surface: require } = arg0);
   let name;
   const tmp = closure_10();
@@ -47,6 +70,7 @@ function NavigationTTIDebugFreezeControl(arg0) {
   }
   const items = [tmp.freezeControl, ];
   let armedFreezeControl;
+  const tmp7 = closure_5;
   if (null != target) {
     armedFreezeControl = tmp.armedFreezeControl;
   }
@@ -54,16 +78,19 @@ function NavigationTTIDebugFreezeControl(arg0) {
     style: items,
     hitSlop: name(576).space.PX_12,
     onPress() {
+      let navigationKey;
+      let tmp8;
       let activeTraceId = null;
-      if (null != closure_1_0) {
-        activeTraceId = NavigationSpanTrackerDefault.getActiveTraceId(tmp.definition, tmp.navigationKey);
+      if (null != require) {
+        const obj = NavigationSpanTrackerDefault;
+        activeTraceId = obj.getActiveTraceId(tmp.definition, tmp.navigationKey);
       }
       if (null == name) {
         let first = closure_9[0];
         if (first == null) {
           first = null;
         }
-        let tmp8 = first;
+        tmp8 = first;
       } else {
         tmp8 = closure_9[closure_9.indexOf(closure_9, tmp5) + 1];
         if (tmp8 == null) {
@@ -71,113 +98,128 @@ function NavigationTTIDebugFreezeControl(arg0) {
         }
       }
       if (null == tmp8) {
-        const result = NavigationTTIDebugFreeze.disarmNavigationTTIDebugFreeze();
+        const obj4 = NavigationTTIDebugFreeze;
+        const result = obj4.disarmNavigationTTIDebugFreeze();
       } else {
-        const obj3 = { kind: "milestone", name: tmp8 };
-        const obj4 = { armedDuringTraceId: activeTraceId, destinationKey: null };
-        let navigationKey;
-        if (tmp != null) {
+        const obj3 = { armedDuringTraceId: activeTraceId, destinationKey: navigationKey };
+        navigationKey = undefined;
+        const obj2 = { kind: "milestone", name: tmp8 };
+        const armNavigationTTIDebugFreeze = NavigationTTIDebugFreeze.armNavigationTTIDebugFreeze;
+        NavigationTTIDebugFreeze;
+        if (require != null) {
           navigationKey = tmp.navigationKey;
         }
         if (navigationKey == null) {
           navigationKey = null;
         }
-        obj4.destinationKey = navigationKey;
-        const result1 = NavigationTTIDebugFreeze.armNavigationTTIDebugFreeze(obj3, obj4);
+        const result1 = armNavigationTTIDebugFreeze(obj2, obj3);
       }
     },
     accessibilityRole: "button",
     accessibilityLabel: str,
     accessibilityHint: "Cycles the one-shot freeze point. Restart the app after a freeze.",
-    children: null
+    children: tmp6(Text, obj2)
   };
   items[1] = armedFreezeControl;
   let str4 = "text-default";
+  Text = Text_Text.Text;
   if (null != target) {
     str4 = "text-feedback-info";
   }
-  obj.children = closure_7(Text_Text.Text, { variant: "text-xs/bold", color: str4, style: tmp.badgeText, lineClamp: 1, accessible: false, children: str });
-  return closure_7(closure_5, obj);
+  obj2 = { variant: "text-xs/bold", color: str4, style: tmp.badgeText, lineClamp: 1, accessible: false, children: str };
+  return closure_7(tmp7, obj);
 }
-get_ActivityIndicator = fn(17);
-({ Pressable: hasOwnProperty, View: metroRequire, StyleSheet } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+({ Pressable: hasOwnProperty, View: metroRequire, StyleSheet } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = ["time_start", "first_paint"];
-const createStyles = fn(4836);
-let obj2 = { outline: null, includedOutline: null, excludedOutline: null, mixedOutline: null, violationOutline: null, badge: null, expandedBadge: null, badgeText: null, includedBadge: null, excludedBadge: null, mixedBadge: null, violationBadge: null, armedBadge: null, freezeControl: null, armedFreezeControl: null };
-let obj3 = {};
+let createStyles = createStyles_mod;
+let obj = { outline: obj2, includedOutline: obj3, excludedOutline: obj4, mixedOutline: obj5, violationOutline: obj6, badge: { position: "absolute", maxWidth: "48%" }, expandedBadge: { maxWidth: "92%" }, badgeText: obj7, includedBadge: rect, excludedBadge: rect1, mixedBadge: rect2, violationBadge: rect3, armedBadge: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO }, freezeControl: rect4, armedFreezeControl: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO } };
+obj2 = { zIndex: 10000, borderWidth: 2 };
+createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3.zIndex = 10000;
-obj3.borderWidth = 2;
-obj2.outline = obj3;
-obj2.includedOutline = { borderColor: nativeDefault.colors.STATUS_POSITIVE, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE };
-let obj4 = { borderColor: nativeDefault.colors.STATUS_POSITIVE, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE };
-obj2.excludedOutline = { borderColor: nativeDefault.colors.BORDER_STRONG, borderStyle: "dashed", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-let obj5 = { borderColor: nativeDefault.colors.BORDER_STRONG, borderStyle: "dashed", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-obj2.mixedOutline = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-let obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-obj2.violationOutline = { borderColor: nativeDefault.colors.STATUS_DANGER, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
-obj2.badge = { position: "absolute", maxWidth: "48%" };
-obj2.expandedBadge = { maxWidth: "92%" };
-let obj7 = { borderColor: nativeDefault.colors.STATUS_DANGER, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
-obj2.badgeText = { paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4 };
-let rect = { top: 0, left: 0, backgroundColor: nativeDefault.colors.STATUS_POSITIVE };
-obj2.includedBadge = rect;
-const rect1 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
-obj2.excludedBadge = rect1;
-const rect2 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-obj2.mixedBadge = rect2;
-const rect3 = { top: 0, left: 0, backgroundColor: nativeDefault.colors.STATUS_DANGER };
-obj2.violationBadge = rect3;
-const obj8 = { paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4 };
-obj2.armedBadge = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-const rect4 = { position: "absolute", right: 0, bottom: 0, maxWidth: "60%", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
-obj2.freezeControl = rect4;
-const obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-obj2.armedFreezeControl = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-let closure_10 = createStyles.createStyles(obj2);
-const size = fn(2);
+obj3 = { borderColor: nativeDefault.colors.STATUS_POSITIVE, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE };
+obj4 = { borderColor: nativeDefault.colors.BORDER_STRONG, borderStyle: "dashed", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+obj6 = { borderColor: nativeDefault.colors.STATUS_DANGER, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
+obj7 = { paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4 };
+rect = { top: 0, left: 0, backgroundColor: nativeDefault.colors.STATUS_POSITIVE };
+rect1 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
+rect2 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+rect3 = { top: 0, left: 0, backgroundColor: nativeDefault.colors.STATUS_DANGER };
+({ backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO });
+rect4 = { position: "absolute", right: 0, bottom: 0, maxWidth: "60%", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
+({ backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO });
+let closure_10 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/debug/NavigationTTIRegionDebugOverlay.tsx");
 
 export const NavigationTTIRegionDebugOverlay = function NavigationTTIRegionDebugOverlay(name) {
+  let Text;
+  let _undefined;
+  let c2;
+  let closure_3;
+  let closure_4;
+  let combined;
+  let combined2;
+  let descendantTracking;
+  let excludedDescendants;
+  let fn;
+  let hierarchyDepth;
+  let includedDescendants;
+  let items3;
+  let num2;
+  let obj6;
+  let regionId;
+  let str28;
+  let str29;
+  let str3;
+  let tmp48;
+  let tmp54;
+  let tmp6;
+  let tracking;
+  let violation;
   name = name.name;
   ({ regionId, tracking, descendantTracking, includedDescendants, excludedDescendants, hierarchyDepth, violation } = name);
   dependencyMap = undefined;
   _slicedToArray = undefined;
-  noop = undefined;
-  closure_5 = undefined;
-  const tmp = closure_10();
-  const navTTISurface = name(16177).useNavTTISurface();
+  react = undefined;
+  let closure_5;
+  let tmp = closure_10();
+  let tmp3 = dependencyMap;
+  let tmp2 = name;
   let obj = name(16177);
-  const tmp2 = name;
-  [tmp6, c2] = noop.useState(false);
-  const syncExternalStore = noop.useSyncExternalStore(name(16180).subscribeNavigationTTIDebugFreezeTarget, name(16180).getNavigationTTIDebugFreezeTarget, name(16180).getNavigationTTIDebugFreezeTarget);
-  closure_129_0 = name;
-  closure_129_1 = regionId;
-  closure_129_2 = tracking;
-  const tmp5 = _slicedToArray(noop.useState(false), 2);
-  const navTTISurface1 = name(16177).useNavTTISurface();
-  closure_129_3 = navTTISurface1;
+  const navTTISurface = obj.useNavTTISurface();
+  [tmp6, c2] = _slicedToArray(react.useState(false), 2);
+  const useSyncExternalStore = react.useSyncExternalStore;
+  const tmp5 = _slicedToArray(react.useState(false), 2);
+  const subscribeNavigationTTIDebugFreezeTarget = name(16180).subscribeNavigationTTIDebugFreezeTarget;
+  const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, name(16180).getNavigationTTIDebugFreezeTarget, name(16180).getNavigationTTIDebugFreezeTarget);
+  let obj2 = name(16177);
+  const navTTISurface1 = obj2.useNavTTISurface();
   const items = [name, regionId, navTTISurface1, tracking];
-  const callback = noop.useCallback((arg0) => {
-    closure_0 = navTTISurface(_undefined[7]).subscribeDebugBundle(arg0);
-    const obj = navTTISurface(_undefined[7]);
-    closure_1 = name(_undefined[8]).subscribeNavigationTTIRegionDebugMeasurements(arg0);
+  const callback = react.useCallback((arg0) => {
+    const obj = navTTISurface(c2[7]);
+    let closure_0 = obj.subscribeDebugBundle(arg0);
+    const obj2 = name(c2[8]);
+    let closure_1 = obj2.subscribeNavigationTTIRegionDebugMeasurements(arg0);
     return () => {
       closure_0();
       closure_1();
     };
   }, []);
-  const callback1 = noop.useCallback(() => {
+  const callback1 = react.useCallback(() => {
     let activeTraceId = null;
-    if (null != closure_3) {
-      activeTraceId = NavigationSpanTrackerDefault.getActiveTraceId(tmp.definition, tmp.navigationKey);
+    if (null != navTTISurface1) {
+      const obj = navTTISurface(tracking[7]);
+      activeTraceId = obj.getActiveTraceId(tmp.definition, tmp.navigationKey);
     }
     let str = "none";
     if (null != activeTraceId) {
-      if ("include" === c2) {
-        const lastBundle = NavigationSpanTrackerDefault.getLastBundle();
+      let str3;
+      if ("include" === tracking) {
+        const obj3 = navTTISurface(tracking[7]);
+        const lastBundle = obj3.getLastBundle();
         let end_ms;
         if (lastBundle != null) {
           const components = lastBundle.components;
@@ -186,9 +228,10 @@ export const NavigationTTIRegionDebugOverlay = function NavigationTTIRegionDebug
             end_ms = found.end_ms;
           }
         }
-        let str3 = end_ms;
+        str3 = end_ms;
       } else {
-        str3 = NavigationTTIRegionDebugState.getNavigationTTIRegionDebugMeasurement(activeTraceId, navTTISurface);
+        const obj2 = name(tracking[8]);
+        str3 = obj2.getNavigationTTIRegionDebugMeasurement(activeTraceId, regionId);
       }
       if (str3 == null) {
         str3 = "";
@@ -198,10 +241,11 @@ export const NavigationTTIRegionDebugOverlay = function NavigationTTIRegionDebug
     }
     return str;
   }, items);
-  const syncExternalStore1 = noop.useSyncExternalStore(callback, callback1, callback1);
+  const syncExternalStore1 = react.useSyncExternalStore(callback, callback1, callback1);
   const lastIndexOfResult = syncExternalStore1.lastIndexOf(":");
   let NumberResult = null;
   if (-1 !== lastIndexOfResult) {
+    let str = "";
     NumberResult = null;
     if ("" !== syncExternalStore1.slice(lastIndexOfResult + 1)) {
       const _Number = Number;
@@ -210,33 +254,25 @@ export const NavigationTTIRegionDebugOverlay = function NavigationTTIRegionDebug
   }
   let tmp15 = "exclude" === tracking;
   let tmp16 = tmp15;
-  if (tmp15) {
+  if (tmp16) {
     tmp16 = "mixed" === descendantTracking;
   }
   if (!tmp15) {
     tmp15 = tmp14;
   }
   _slicedToArray = tmp15;
-  let tmp18 = tmp17;
-  if ("include" === tracking) {
-    tmp18 = !tmp14;
-  }
-  noop = tmp18;
+  react = tmp18;
   let kind;
   if (syncExternalStore != null) {
     kind = syncExternalStore.kind;
   }
   closure_5 = tmp20;
-  let tmp21 = tmp15;
-  if (!tmp15) {
-    tmp21 = tmp18;
-  }
   if (null != violation) {
     const _HermesInternal2 = HermesInternal;
-    let str3 = "INVALID \u00B7 " + violation;
+    str3 = "INVALID \u00B7 " + violation;
   } else {
     str3 = "MEASURED";
-    if (!tmp17) {
+    if ("include" !== tracking) {
       let str4 = "TRACKED";
       if ("included" !== descendantTracking) {
         let str6 = "MIXED";
@@ -251,10 +287,10 @@ export const NavigationTTIRegionDebugOverlay = function NavigationTTIRegionDebug
   }
   if (null == NumberResult) {
     let str15 = "not observed";
-    if (tmp17) {
+    if ("include" === tracking) {
       str15 = "waiting";
     }
-    let combined = str15;
+    combined = str15;
   } else {
     const _HermesInternal3 = HermesInternal;
     combined = "+" + NumberResult + "ms";
@@ -262,11 +298,11 @@ export const NavigationTTIRegionDebugOverlay = function NavigationTTIRegionDebug
   let tmp29 = str3;
   if (!tmp6) {
     let str16 = "INVALID";
-    if (!tmp14) {
+    if (null == violation) {
       let str17 = "MIXED";
       if (!tmp16) {
         let tmp30 = "BOUNDARY";
-        if (tmp17) {
+        if ("include" === tracking) {
           tmp30 = null;
         }
         str17 = tmp30;
@@ -285,8 +321,11 @@ export const NavigationTTIRegionDebugOverlay = function NavigationTTIRegionDebug
     str19 = "" + tmp29 + " \u00B7 ";
   }
   if (!tmp6) {
-    if (!tmp17) {
-      let str21 = "";
+    let str21;
+    let violationOutline;
+    let includedBadge;
+    if ("include" !== tracking) {
+      str21 = "";
     }
     let str22 = "";
     if (tmp15) {
@@ -299,9 +338,9 @@ export const NavigationTTIRegionDebugOverlay = function NavigationTTIRegionDebug
     const _HermesInternal5 = HermesInternal;
     let str26 = "text-overlay-light";
     const combined1 = "" + str19 + name + str21 + str18 + str22;
-    if (!tmp14) {
+    if (null == violation) {
       str26 = "text-overlay-light";
-      if (!tmp17) {
+      if ("include" !== tracking) {
         let str27 = "text-default";
         if (tmp16) {
           str27 = "text-feedback-info";
@@ -313,125 +352,126 @@ export const NavigationTTIRegionDebugOverlay = function NavigationTTIRegionDebug
     const items1 = [tmp.outline, , , ];
     const rect = { top: result, right: result, bottom: result, left: result };
     items1[1] = rect;
-    if (tmp14) {
-      let violationOutline = tmp.violationOutline;
+    const tmp39 = navTTISurface;
+    const tmp41 = closure_8;
+    const tmp42 = closure_6;
+    if (null != violation) {
+      violationOutline = tmp.violationOutline;
     } else {
       violationOutline = tmp17 ? tmp.includedOutline : tmp.excludedOutline;
     }
     items1[2] = violationOutline;
     let mixedOutline;
-    if (!tmp14) {
+    if (null == violation) {
       if (tmp16) {
         mixedOutline = tmp.mixedOutline;
       }
     }
-    let obj3 = { style: null, pointerEvents: "box-none", accessible: false, children: null };
+    let obj3 = { style: items1, pointerEvents: "box-none", accessible: false, children: items3 };
     items1[3] = mixedOutline;
-    obj3.style = items1;
     const items2 = [tmp.badge, , , ];
     let expandedBadge;
+    const tmp45 = closure_5;
     if (tmp6) {
       expandedBadge = tmp.expandedBadge;
     }
     items2[1] = expandedBadge;
-    if (tmp14) {
-      let includedBadge = tmp.violationBadge;
-    } else if (tmp17) {
+    if (null != violation) {
+      includedBadge = tmp.violationBadge;
+    } else if ("include" === tracking) {
       includedBadge = tmp.includedBadge;
     } else {
       includedBadge = tmp16 ? tmp.mixedBadge : tmp.excludedBadge;
     }
     items2[2] = includedBadge;
     let armedBadge;
-    if (tmp20) {
+    if ("component" === kind && syncExternalStore.spanComponent === name) {
       armedBadge = tmp.armedBadge;
     }
-    let obj4 = { style: null, pointerEvents: null, disabled: null, hitSlop: null, onPress: null, accessible: null, accessibilityRole: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, children: null };
+    let obj4 = { style: items2, pointerEvents: str28, disabled: !(tmp15 || tmp18), hitSlop: tmp39(576).space.PX_12, onPress: fn, accessible: tmp15 || tmp18, accessibilityRole: str29, accessibilityState: tmp48, accessibilityLabel: combined2, accessibilityHint: tmp54, children: closure_7(Text, obj6) };
     items2[3] = armedBadge;
-    obj4.style = items2;
-    let str28 = "none";
-    if (tmp21) {
+    str28 = "none";
+    if (tmp15 || tmp17 && null == violation) {
       str28 = "auto";
     }
-    obj4.pointerEvents = str28;
-    obj4.disabled = !tmp21;
-    obj4.hitSlop = navTTISurface(576).space.PX_12;
-    let fn;
-    if (tmp21) {
+    fn = undefined;
+    if (tmp15 || tmp17 && null == violation) {
       fn = () => {
-        if (closure_3) {
-          _undefined((arg0) => !arg0);
-        } else if (closure_5) {
-          const result = NavigationTTIDebugFreeze.disarmNavigationTTIDebugFreeze();
-        } else if (closure_4) {
-          const obj2 = { kind: "component", spanComponent: name };
-          let activeTraceId = null;
-          if (null != navTTISurface) {
-            activeTraceId = NavigationSpanTrackerDefault.getActiveTraceId(tmp6.definition, tmp6.navigationKey);
+        let navigationKey;
+        const tmp = closure_3;
+        if (tmp) {
+          c2((arg0) => !arg0);
+        } else {
+          const tmp2 = closure_5;
+          if (tmp2) {
+            const obj4 = NavigationTTIDebugFreeze;
+            const result = obj4.disarmNavigationTTIDebugFreeze();
+          } else {
+            const tmp3 = closure_4;
+            if (tmp3) {
+              let activeTraceId = null;
+              const obj = { kind: "component", spanComponent: name };
+              const armNavigationTTIDebugFreeze = NavigationTTIDebugFreeze.armNavigationTTIDebugFreeze;
+              NavigationTTIDebugFreeze;
+              if (null != navTTISurface) {
+                const obj2 = NavigationSpanTrackerDefault;
+                activeTraceId = obj2.getActiveTraceId(tmp8.definition, tmp8.navigationKey);
+              }
+              const obj3 = { armedDuringTraceId: activeTraceId, destinationKey: navigationKey };
+              navigationKey = undefined;
+              if (navTTISurface != null) {
+                navigationKey = tmp8.navigationKey;
+              }
+              if (navigationKey == null) {
+                navigationKey = null;
+              }
+              const result1 = armNavigationTTIDebugFreeze(obj, obj3);
+            }
           }
-          const obj4 = { armedDuringTraceId: activeTraceId, destinationKey: null };
-          let navigationKey;
-          if (navTTISurface != null) {
-            navigationKey = tmp6.navigationKey;
-          }
-          if (navigationKey == null) {
-            navigationKey = null;
-          }
-          obj4.destinationKey = navigationKey;
-          const result1 = NavigationTTIDebugFreeze.armNavigationTTIDebugFreeze(obj2, obj4);
         }
       };
     }
-    obj4.onPress = fn;
-    obj4.accessible = tmp21;
-    let str29;
-    if (tmp21) {
+    str29 = undefined;
+    if (tmp15 || tmp17 && null == violation) {
       str29 = "button";
     }
-    obj4.accessibilityRole = str29;
-    let tmp48;
+    tmp48 = undefined;
     if (tmp15) {
-      let obj5 = { expanded: tmp6 };
-      tmp48 = obj5;
+      tmp48 = { expanded: tmp6 };
+      const obj5 = { expanded: tmp6 };
     }
-    obj4.accessibilityState = tmp48;
-    let combined2;
-    if (tmp21) {
+    combined2 = undefined;
+    if (tmp15 || tmp17 && null == violation) {
       const _HermesInternal6 = HermesInternal;
       combined2 = "" + str3 + " \u00B7 " + name + " \u00B7 " + combined + str18;
     }
-    obj4.accessibilityLabel = combined2;
     if (tmp15) {
       let str35 = "Show Navigation TTI region details";
       if (tmp6) {
         str35 = "Collapse Navigation TTI region details";
       }
-      let tmp54 = str35;
-    } else if (tmp18) {
+      tmp54 = str35;
+    } else if (tmp17 && null == violation) {
       let str34 = "Freeze after this component paints on the next navigation";
-      if (tmp20) {
+      if ("component" === kind && syncExternalStore.spanComponent === name) {
         str34 = "Disarm the one-shot freeze for this component";
       }
       tmp54 = str34;
     }
-    obj4.accessibilityHint = tmp54;
-    const obj6 = { variant: "text-xs/bold", color: str26, style: tmp.badgeText, lineClamp: null, accessible: false, children: null };
-    let num2 = 1;
+    obj6 = { variant: "text-xs/bold", color: str26, style: tmp.badgeText, lineClamp: num2, accessible: false, children: combined1 };
+    num2 = 1;
+    Text = tmp2(4832).Text;
     if (tmp6) {
       num2 = 3;
     }
-    obj6.lineClamp = num2;
-    obj6.children = combined1;
-    obj4.children = closure_7(tmp2(4832).Text, obj6);
-    const items3 = [closure_7(closure_5, obj4), ];
+    items3 = [closure_7(tmp45, obj4), ];
     let tmp44Result = null;
     if (0 === hierarchyDepth) {
       const obj7 = { target: syncExternalStore, surface: navTTISurface };
       tmp44Result = tmp44(NavigationTTIDebugFreezeControl, obj7);
     }
     items3[1] = tmp44Result;
-    obj3.children = items3;
-    return closure_8(closure_6, obj3);
+    return tmp41(tmp42, obj3);
   }
   str21 = " \u00B7 " + combined;
 };

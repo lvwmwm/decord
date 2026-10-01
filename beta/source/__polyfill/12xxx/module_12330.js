@@ -47,10 +47,11 @@ export const getSpanStatusFromHttpCode = function getSpanStatusFromHttpCode(arg0
   return { code: 2, message: "unknown_error" };
 };
 export const setHttpStatus = function setHttpStatus(setAttribute, arg1) {
+  let obj;
   const attr = setAttribute.setAttribute("http.response.status_code", arg1);
   if (arg1 < 400) {
     if (arg1 >= 100) {
-      let obj = { code: 1 };
+      obj = { code: 1 };
     }
     if ("unknown_error" !== obj.message) {
       setAttribute.setStatus(obj);

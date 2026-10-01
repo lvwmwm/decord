@@ -5,36 +5,42 @@
 // Exports: default
 
 // Module 15810 (ServerPreviewBannerControls)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import _modDef5941 from "module_5941" /* 5941 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5941 */;
 import transitionToGuild from "transitionToGuild" /* 6760 */;
-import IconButton from "IconButton" /* 7363 */;
+import IconButton2 from "IconButton" /* 7363 */;
 import ServerPreviewPillDefault from "ServerPreviewPill" /* 15811 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const MOBILE_GUILD_UPSELL_LIST = fn(1074).MOBILE_GUILD_UPSELL_LIST;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { row: null };
-const rect = { position: "absolute", top: nativeDefault.space.PX_16, left: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj2.row = rect;
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let metroImportDefault;
+let metroRequire;
+let rect;
+const View = react_native.View;
+const MOBILE_GUILD_UPSELL_LIST = Constants.MOBILE_GUILD_UPSELL_LIST;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let obj = { row: rect };
+rect = { position: "absolute", top: nativeDefault.space.PX_16, left: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+let closure_8 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/lurker_mode/native/ServerPreviewBannerControls.tsx");
 
 export default function ServerPreviewBannerControls() {
-  const obj = { style: closure_8().row, children: null };
-  const callback = noop.useCallback(() => {
-    transitionToGuild.transitionToGuild(MOBILE_GUILD_UPSELL_LIST);
+  let intl;
+  let items;
+  let obj = { style: closure_8().row, children: items };
+  closure_8();
+  const callback = react.useCallback(() => {
+    const obj = transitionToGuild;
+    obj.transitionToGuild(MOBILE_GUILD_UPSELL_LIST);
   }, []);
-  const obj2 = { size: "md", variant: "secondary-overlay", icon: _modDef5941, onPress: callback, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 };
-  const intl = util.intl;
-  obj2.accessibilityLabel = intl.string(util.t["13/7kX"]);
-  const items = [timestampProducer(IconButton.IconButton, obj2), timestampProducer(ServerPreviewPillDefault, {})];
-  obj.children = items;
-  return React5(View, obj);
+  const obj2 = { size: "md", variant: "secondary-overlay", icon: AssetRegistryDefault, onPress: callback, accessibilityLabel: intl.string(intl2.t["13/7kX"]), maxFontSizeMultiplier: 1.5 };
+  const IconButton = IconButton2.IconButton;
+  intl = intl2.intl;
+  items = [metroRequire(IconButton, obj2), metroRequire(ServerPreviewPillDefault, {})];
+  return metroImportDefault(View, obj);
 };

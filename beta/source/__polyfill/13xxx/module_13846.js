@@ -8,85 +8,62 @@ import _mod13792 from "module_13792" /* 13792 */;
 import _mod13795 from "module_13795" /* 13795 */;
 import _mod13811 from "module_13811" /* 13811 */;
 import _mod13814 from "module_13814" /* 13814 */;
-import state from "state" /* 13849 */;
+import _mod13848 from "module_13848" /* 13848 */;
+import _mod13849 from "module_13849" /* 13849 */;
 import prop from "module_13847" /* 13847 */;
 
 let closure_5 = _mod13795("".slice);
 let closure_6 = _mod13795("".replace);
 let closure_7 = _mod13795([].join);
-let closure_8 = _mod13791 && !_mod13792(() => 8 !== defineProperty(() => {
+let tmp = _mod13791 && !_mod13792(() => 8 !== defineProperty(() => {
 
 }, "length", { value: 8 }).length);
-const tmp = _mod13791 && !_mod13792(() => 8 !== defineProperty(() => {
-
-}, "length", { value: 8 }).length);
-let closure_9 = String(String).split("String");
+let closure_8 = tmp;
+const str = String(String);
+let closure_9 = str.split("String");
 const fn = (toString, toString2, arg2) => {
   let text = toString2;
+  const tmp = String;
   if ("Symbol(" === closure_5(String(toString2), 0, 7)) {
     text = `${"[" + closure_6(tmp(toString2), /^Symbol\(([^)]*)\).*$/, "$1")}]`;
   }
-  let getter = arg2;
-  if (arg2) {
-    getter = arg2.getter;
-  }
   let text1 = text;
-  if (getter) {
+  const tmp4 = arg2 && arg2.getter;
+  if (tmp4) {
     text1 = `get ${tmp2}`;
   }
-  let setter = arg2;
-  if (arg2) {
-    setter = arg2.setter;
-  }
   let text2 = text1;
-  if (setter) {
-    text2 = `set ${tmp4}`;
+  const tmp6 = arg2 && arg2.setter;
+  if (tmp6) {
+    text2 = `set ${tmp5}`;
   }
-  const tmp8 = _mod13811(toString, "name");
-  let tmp9 = !tmp8;
-  if (tmp8) {
-    tmp9 = tmp6(13848).CONFIGURABLE && toString.name !== text2;
-    const tmp10 = tmp6(13848).CONFIGURABLE && toString.name !== text2;
+  const tmp10 = _mod13811(toString, "name");
+  let tmp11 = !tmp10;
+  if (tmp10) {
+    tmp11 = _mod13848.CONFIGURABLE && toString.name !== text2;
+    _mod13848.CONFIGURABLE && toString.name !== text2;
   }
-  if (tmp9) {
-    if (tmp6(13791)) {
+  if (tmp11) {
+    if (_mod13791) {
       const obj = { value: text2, configurable: true };
       defineProperty(toString, "name", obj);
     } else {
       toString.name = text2;
     }
   }
-  let tmp13 = closure_8;
-  if (closure_8) {
-    tmp13 = arg2;
-  }
-  if (tmp13) {
-    tmp13 = tmp6(13811)(arg2, "arity");
-  }
-  if (tmp13) {
-    tmp13 = toString.length !== arg2.arity;
-  }
-  if (tmp13) {
+  const tmp15 = closure_8 && arg2 && tmp8(13811)(arg2, "arity") && toString.length !== arg2.arity;
+  if (tmp15) {
     const obj2 = { value: arg2.arity };
     defineProperty(toString, "length", obj2);
   }
   try {
     if (arg2) {
-      if (tmp6(13811)(arg2, "constructor")) {
+      if (_mod13811(arg2, "constructor")) {
         if (arg2.constructor) {
-          if (tmp6(13791)) {
+          if (_mod13791) {
             defineProperty(toString, "prototype", { writable: false });
           }
         }
-        const enforceResult = tmp6(13849).enforce(toString);
-        if (!tmp6(13811)(enforceResult, "source")) {
-          let str11 = "";
-          if (typeof text2 === "string") {
-            str11 = text2;
-          }
-          enforceResult.source = closure_7(closure_9, str11);
-        }
-        return toString;
       }
     }
     if (toString.prototype) {
@@ -94,13 +71,25 @@ const fn = (toString, toString2, arg2) => {
     }
   } catch (err) {
   }
+  const tmp8Result = _mod13849;
+  const enforceResult = tmp8Result.enforce(toString);
+  if (!_mod13811(enforceResult, "source")) {
+    let str10 = "";
+    const tmp21 = closure_7;
+    const tmp22 = closure_9;
+    if (typeof text2 === "string") {
+      str10 = text2;
+    }
+    enforceResult.source = tmp21(tmp22, str10);
+  }
+  return toString;
 };
 function toString() {
   const self = this;
   let source = _mod13814(this);
   if (source) {
-    source = state.get(self).source;
-    const tmpResult = state;
+    const tmpResult = _mod13849;
+    source = tmpResult.get(self).source;
   }
   if (!source) {
     source = prop(self);
@@ -108,6 +97,6 @@ function toString() {
   return source;
 }
 fn(toString, "toString");
-Function.prototype.toString = toString;
+prototype.toString = toString;
 
 export default fn;

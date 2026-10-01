@@ -4,32 +4,36 @@
 // Dependencies: [6957, 7417, 14354, 1115, 2487, 11006, 2]
 
 // Module 15522 (ParentalControlsUseDataForQuestsSetting)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14354 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const obj = {
   useTitle: function useDataForQuestsSettingTitle() {
-    const intl = util.intl;
+    const intl = intl2.intl;
     return intl.string(_modDef2487.ZhaNu8);
   },
-  parent: fn(7417).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToSupportQuestsSettingValue() {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
-    return !ParentalControlledDropsOptedOut.useControlledSetting(selectedTeenId);
+    const useControlledSetting = ParentalControlledDropsOptedOut.useControlledSetting;
+    return !useControlledSetting(selectedTeenId);
   },
   onValueChange: function onDataToSupportQuestsSettingValueChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
-    const result = ParentalControlledDropsOptedOut.updateControlledSetting(selectedTeenId, !arg0);
+    const updateControlledSetting = ParentalControlledDropsOptedOut.updateControlledSetting;
+    const result = updateControlledSetting(selectedTeenId, !arg0);
   },
   unsearchable: true
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataForQuestsSetting.tsx");
 
 export default toggle;

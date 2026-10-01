@@ -5,34 +5,31 @@
 // Exports: default, isGameProfileObscured
 
 // Module 5423 (useGameProfileObscured)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import utils from "utils" /* 5424 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileObscured.tsx");
 
 export default function useGameProfileObscured(contentClassification) {
-  initialize;
+  get_initialized;
   [][0] = UserStore;
   let result = null != contentClassification;
   if (result) {
     result = false === tmp4;
   }
   if (result) {
-    result = utils.isAgeRestrictedContentClassification(contentClassification.contentClassification);
     const tmpResult = utils;
+    result = tmpResult.isAgeRestrictedContentClassification(contentClassification.contentClassification);
   }
   return result;
 };
 export const isGameProfileObscured = function isGameProfileObscured(game, nsfwAllowed) {
-  let result = null != game;
+  let result = null != game && false === nsfwAllowed;
   if (result) {
-    result = false === nsfwAllowed;
-  }
-  if (result) {
-    result = utils.isAgeRestrictedContentClassification(game.contentClassification);
+    const obj = utils;
+    result = obj.isAgeRestrictedContentClassification(game.contentClassification);
   }
   return result;
 };

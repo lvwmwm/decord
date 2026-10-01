@@ -9,16 +9,19 @@ import PremiumConstants from "PremiumConstants" /* 1374 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
-({ MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE: closure_0, MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE_1GB: closure_1 } = PremiumConstants);
+let _window;
+let map;
+let obj2;
+({ MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE: _window, MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE_1GB: map } = PremiumConstants);
 const NitroFileUploadRollout = "NitroFileUploadRollout";
 let ApexExperiment = ApexExperiment_mod;
-let obj = { name: "2026-09-nitro-file-upload-rollout", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj = { name: "2026-09-nitro-file-upload-rollout", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 let closure_3 = ApexExperiment.createApexExperiment(obj);
-let ApexExperiment = ApexExperiment_mod;
-let closure_4 = ApexExperiment.createApexExperiment({ name: "2026-09-non-nitro-file-upload-marketing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+ApexExperiment = ApexExperiment_mod;
+const obj3 = { name: "2026-09-non-nitro-file-upload-marketing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+let closure_4 = ApexExperiment.createApexExperiment(obj3);
 const result = size.fileFinishedImporting("modules/premium/experiments/NitroFileUploadExperiments.tsx");
 
 export const getNitroFileUploadLimitBytes = function getNitroFileUploadLimitBytes(arg0) {
@@ -27,10 +30,11 @@ export const getNitroFileUploadLimitBytes = function getNitroFileUploadLimitByte
     obj = {};
   }
   let _location = { location: obj.location }.location;
+  const getConfig = closure_3.getConfig;
   if (_location == null) {
     _location = NitroFileUploadRollout;
   }
-  return closure_3.getConfig({ location: _location }).enabled ? framebus : React;
+  return getConfig({ location: _location }).enabled ? map : React;
 };
 export const getNitroFileUploadRolloutConfig = function getNitroFileUploadRolloutConfig(arg0) {
   let obj = arg0;
@@ -38,29 +42,34 @@ export const getNitroFileUploadRolloutConfig = function getNitroFileUploadRollou
     obj = {};
   }
   let _location = obj.location;
+  const getConfig = closure_3.getConfig;
   if (_location == null) {
     _location = NitroFileUploadRollout;
   }
-  return closure_3.getConfig({ location: _location });
+  return getConfig({ location: _location });
 };
 export const getNitroFileUploadRolloutCopy = function getNitroFileUploadRolloutCopy(legacyCopy) {
-  let rolloutCopy = legacyCopy.legacyCopy;
+  legacyCopy = legacyCopy.legacyCopy;
   let _location = {}.location;
+  const rolloutCopy = legacyCopy.rolloutCopy;
+  const getConfig = closure_3.getConfig;
   if (_location == null) {
     _location = NitroFileUploadRollout;
   }
-  if (closure_3.getConfig({ location: _location }).enabled) {
-    rolloutCopy = legacyCopy.rolloutCopy;
+  if (getConfig({ location: _location }).enabled) {
+    legacyCopy = rolloutCopy;
   }
-  return rolloutCopy;
+  return legacyCopy;
 };
 export const useNitroFileUploadRolloutEnabled = function useNitroFileUploadRolloutEnabled(MainViewTooltipActionSheets) {
   let _location = MainViewTooltipActionSheets;
+  const useConfig = closure_3.useConfig;
   if (MainViewTooltipActionSheets == null) {
     _location = NitroFileUploadRollout;
   }
-  return closure_3.useConfig({ location: _location }).enabled;
+  return useConfig({ location: _location }).enabled;
 };
 export const useNonNitroFileUploadMarketingEnabled = function useNonNitroFileUploadMarketingEnabled(location) {
-  return closure_4.useConfig({ location }).enabled;
+  const obj = { location };
+  return closure_4.useConfig(obj).enabled;
 };

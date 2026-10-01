@@ -5,12 +5,12 @@
 // Exports: default
 
 // Module 11202 (ForwardFailedAlertModal)
+import Fragment from "Fragment" /* 21 */;
 import ForwardModalUtils from "ForwardModalUtils" /* 11176 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/forwarding/native/ForwardFailedAlertModal.tsx");
 
 export default function ForwardFailedAlertModal(message) {
@@ -18,15 +18,14 @@ export default function ForwardFailedAlertModal(message) {
   const failedDestinations = message.failedDestinations;
   const forwardOptions = message.forwardOptions;
   const items = [failedDestinations, message, forwardOptions];
-  const callback = noop.useCallback(() => {
-    ForwardModalUtils.openForwardModal({ message, source: "retry-modal", initialSelectedDestinations: failedDestinations, forwardOptions });
+  const callback = react.useCallback(() => {
+    const obj = ForwardModalUtils;
+    const obj2 = { message, source: "retry-modal", initialSelectedDestinations: failedDestinations, forwardOptions };
+    obj.openForwardModal(obj2);
   }, items);
-  const obj = { title: null, content: null, failedDestinations: null, onRetry: null };
+  failedDestinations(forwardOptions[3]);
   const intl = message(forwardOptions[4]).intl;
-  obj.title = intl.string(message(forwardOptions[4]).t["/OPIaM"]);
   const intl2 = message(forwardOptions[4]).intl;
-  obj.content = intl2.formatToPlainString(message(forwardOptions[4]).t.cn9vFb, { count: failedDestinations.length });
-  obj.failedDestinations = failedDestinations;
-  obj.onRetry = callback;
-  return jsx(failedDestinations(forwardOptions[3]), { title: null, content: null, failedDestinations: null, onRetry: null });
+  let obj2 = { count: failedDestinations.length };
+  return <tmp2 title={intl.string(message(forwardOptions[4]).t["/OPIaM"])} content={intl2.formatToPlainString(message(forwardOptions[4]).t.cn9vFb, obj2)} failedDestinations={failedDestinations} onRetry={callback} />;
 };

@@ -6,11 +6,12 @@
 
 // Module 13942 (useAIShimmerCycle)
 import waveTransition from "waveTransition" /* 13941 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let closure_12;
+
 const result = size.fileFinishedImporting("design/visual-identities/ai/AIShimmer/useAIShimmerCycle.tsx");
 
 export const linesKeyFor = function linesKeyFor(join) {
@@ -24,6 +25,8 @@ export const linesFromKey = function linesFromKey(str) {
   return str.split("\0");
 };
 export const useAIShimmerCycle = function useAIShimmerCycle(initialDelay) {
+  let delay;
+  let text;
   ({ text, delay } = initialDelay);
   initialDelay = initialDelay.initialDelay;
   const duration = initialDelay.duration;
@@ -35,44 +38,55 @@ export const useAIShimmerCycle = function useAIShimmerCycle(initialDelay) {
   let lines;
   let first;
   closure_12 = undefined;
-  closure_17 = undefined;
-  closure_18 = undefined;
+  let ref2;
+  let ref3;
+  let ref4;
+  let ref5;
+  let closure_17;
+  let closure_18;
+  let ref6;
+  let ref7;
+  let ref8;
+  let ref9;
+  let ref10;
   let current;
   let play;
-  reducedMotion.useRef(null);
+  let obj = reducedMotion;
+  const ref = reducedMotion.useRef(null);
   let joined = text;
   if (Array.isArray(text)) {
+    let str = "\0";
     joined = text.join("\0");
   }
   const items = [joined];
   lines = obj.useMemo(() => joined.split("\0"), items);
-  const tmp2 = duration(reducedMotion.useState(0), 2);
+  const tmp2 = duration(obj.useState(0), 2);
   first = tmp2[0];
   closure_12 = tmp4;
-  reducedMotion.useRef(0);
-  reducedMotion.useRef(null);
-  reducedMotion.useRef(null);
-  reducedMotion.useRef(true);
+  ref2 = obj.useRef(0);
+  ref3 = obj.useRef(null);
+  ref4 = obj.useRef(null);
+  ref5 = obj.useRef(true);
   closure_17 = obj.useRef(onComplete);
   closure_18 = obj.useRef(onStart);
-  reducedMotion.useRef(lines);
-  reducedMotion.useRef(createController);
-  reducedMotion.useRef(trailingWidth);
-  reducedMotion.useRef(duration);
-  reducedMotion.useRef(reducedMotion);
+  ref6 = obj.useRef(lines);
+  ref7 = obj.useRef(createController);
+  ref8 = obj.useRef(trailingWidth);
+  ref9 = obj.useRef(duration);
+  ref10 = obj.useRef(reducedMotion);
   const effect = obj.useEffect(() => {
     closure_17.current = onComplete;
     closure_18.current = onStart;
-    closure_19.current = lines;
-    closure_20.current = createController;
-    closure_21.current = trailingWidth;
-    closure_22.current = duration;
-    closure_23.current = reducedMotion;
+    ref6.current = lines;
+    ref7.current = createController;
+    ref8.current = trailingWidth;
+    ref9.current = duration;
+    ref10.current = reducedMotion;
   });
-  const tmp6 = duration(reducedMotion.useState(joined), 2);
+  const tmp6 = duration(obj.useState(joined), 2);
   if (tmp6[0] !== joined) {
-    tmp6[1](joined);
-    tmp4(0);
+    const tmp7 = tmp6[1](joined);
+    tmp2[1](0);
   }
   let num = 0;
   if (lines.length > 0) {
@@ -86,7 +100,7 @@ export const useAIShimmerCycle = function useAIShimmerCycle(initialDelay) {
     closure_12((arg0) => arg0 + 1);
   }, []);
   const items1 = [play];
-  const imperativeHandle = obj.useImperativeHandle(initialDelay.ref, () => ({
+  const imperativeHandle = obj.useImperativeHandle(ref, () => ({
     play,
     stop() {
       current = ref.current;
@@ -99,10 +113,11 @@ export const useAIShimmerCycle = function useAIShimmerCycle(initialDelay) {
   }), items1);
   const effect1 = obj.useEffect(() => {
     let str = ref6.current[0];
+    current = ref7.current;
     if (str == null) {
       str = "";
     }
-    let currentResult = ref7.current({
+    const obj = {
       to: str,
       trailingWidth: ref8.current,
       onStart() {
@@ -121,12 +136,13 @@ export const useAIShimmerCycle = function useAIShimmerCycle(initialDelay) {
         }
         return currentResult;
       }
-    });
+    };
+    let currentResult = current(obj);
     delay = currentResult;
     closure_8.current = currentResult;
     return () => {
-      currentResult.destroy();
-      closure_8.current = null;
+      delay.destroy();
+      ref.current = null;
     };
   }, []);
   const items2 = [duration, reducedMotion, trailingWidth];
@@ -149,24 +165,27 @@ export const useAIShimmerCycle = function useAIShimmerCycle(initialDelay) {
         ref3.current = current;
         ref5.current = null == current2;
         if (null == current2) {
-          current.setTransition(tmp2, tmp2);
+          current.setTransition(current, current);
         } else {
-          current.setTransition(current2, tmp2);
+          current.setTransition(current2, current);
           current.play();
         }
       }
       if (null != delay) {
+        let current3;
+        let sum;
         if (ref10.current) {
-          let current3 = waveTransition.REDUCED_MOTION_PASS_MS;
+          current3 = waveTransition.REDUCED_MOTION_PASS_MS;
         } else {
           current3 = ref9.current;
         }
+        const tmp12 = ref2;
         if (ref5.current) {
-          let sum = tmp7 + initialDelay;
+          sum = tmp7 + initialDelay;
         } else {
           sum = tmp7 + current3;
         }
-        closure_13.current = sum;
+        tmp12.current = sum;
       }
     }
   }, items3);

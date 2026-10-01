@@ -8,39 +8,54 @@
 import nativeDefault from "native" /* 576 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16238 */;
-import VibegrationsSelectedMentionDefault from "VibegrationsSelectedMention" /* 16342 */;
-import noop from "module_19" /* 19 */;
+import VibegrationsNativeStatusLine from "VibegrationsNativeStatusLine" /* 16335 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const diff = fn(16335).MESSAGE_EDGE_INSET + fn(16335).MESSAGE_AVATAR_SIZE / 2 - 1;
-const diff1 = fn(16335).MESSAGE_CONTENT_INSET - 4 - diff;
-const createStyles = fn(4836);
-let obj2 = { root: { marginLeft: diff - fn(16335).MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" }, spine: null, avatar: null, name: null, content: null };
-const rect = { position: "absolute", left: 0, top: 9, bottom: 0, width: diff1, borderTopWidth: 2, borderLeftWidth: 2, borderColor: nativeDefault.colors.SPINE_DEFAULT, borderTopLeftRadius: Math.round(0.25 * diff1) };
-obj2.spine = rect;
-obj2.avatar = { marginRight: 4 };
-obj2.name = { flexShrink: 0, marginRight: 4, maxWidth: "40%" };
-obj2.content = { flex: 1 };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let rect;
+let tmp10;
+const VibegrationsSelectedMentionDefault = tmp10(16342);
+({ Pressable: closure_4, View: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const diff = VibegrationsNativeStatusLine.MESSAGE_EDGE_INSET + VibegrationsNativeStatusLine.MESSAGE_AVATAR_SIZE / 2 - 1;
+const diff1 = VibegrationsNativeStatusLine.MESSAGE_CONTENT_INSET - 4 - diff;
+let createStyles = createStyles_mod;
+let obj = { root: obj2, spine: rect, avatar: { marginRight: 4 }, name: { flexShrink: 0, marginRight: 4, maxWidth: "40%" }, content: { flex: 1 } };
+obj2 = { marginLeft: diff - VibegrationsNativeStatusLine.MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" };
+createStyles = createStyles.createStyles;
+rect = { position: "absolute", left: 0, top: 9, bottom: 0, width: diff1, borderTopWidth: 2, borderLeftWidth: 2, borderColor: nativeDefault.colors.SPINE_DEFAULT, borderTopLeftRadius: Math.round(0.25 * diff1) };
+let closure_8 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsRepliedMessage.tsx");
 
 export default function VibegrationsRepliedMessage(replied) {
+  let VibegrationsUserAvatar;
+  let intl;
+  let items1;
+  let items2;
+  let obj6;
   replied = replied.replied;
   const onJump = replied.onJump;
   const tmp = closure_8();
-  const messageAuthorUser = replied(16338).useMessageAuthorUser(replied.userId);
-  const obj = replied(16338);
-  let str = replied(4678).useName(messageAuthorUser);
+  let obj = replied(16338);
+  const messageAuthorUser = obj.useMessageAuthorUser(replied.userId);
+  const obj2 = replied(4678);
+  let str = obj2.useName(messageAuthorUser);
   if (str == null) {
     str = "";
   }
   const items = [replied.content];
-  const memo = noop.useMemo(() => VibegrationsDesignFeedback.parseVibegrationsDesignRemark(replied.content), items);
+  const memo = react.useMemo(() => {
+    const obj = VibegrationsDesignFeedback;
+    return obj.parseVibegrationsDesignRemark(replied.content);
+  }, items);
   let body;
   if (memo != null) {
     body = memo.body;
@@ -48,28 +63,33 @@ export default function VibegrationsRepliedMessage(replied) {
   if (body == null) {
     body = replied.content;
   }
-  const obj2 = replied(4678);
-  const trimmed = body.replace(/\s+/g, " ").trim();
-  const obj3 = { style: tmp.root, onPress: onJump, disabled: null == onJump, accessibilityRole: "button", accessibilityLabel: null, children: null };
-  const intl = tmp2(1115).intl;
-  obj3.accessibilityLabel = intl.formatToPlainString(_modDef3715.loFt7s, { name: str, content: trimmed });
-  const items1 = [closure_6(closure_5, { style: tmp.spine }), , , ];
+  const str2 = body.replace(/\s+/g, " ");
+  const trimmed = str2.trim();
+  const obj3 = { style: tmp.root, onPress: onJump, disabled: null == onJump, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef3715.loFt7s, { name: str, content: trimmed }), children: items1 };
+  intl = tmp2(1115).intl;
+  items1 = [, , , ];
+  const obj4 = { style: tmp.spine };
+  items1[0] = closure_6(closure_5, obj4);
   let tmp11Result = null;
+  const tmp12 = closure_5;
+  const tmp9 = closure_4;
   if (null != messageAuthorUser) {
-    const obj5 = { style: tmp.avatar, children: null };
-    const obj6 = { userId: replied.userId, size: tmp2(1177).AvatarSizes.SIZE_16 };
-    obj5.children = tmp11(tmp2(16338).VibegrationsUserAvatar, obj6);
-    tmp11Result = tmp11(closure_5, obj5);
+    const obj5 = { style: tmp.avatar, children: closure_6(VibegrationsUserAvatar, obj6) };
+    obj6 = { userId: replied.userId, size: replied(1177).AvatarSizes.SIZE_16 };
+    VibegrationsUserAvatar = tmp2(16338).VibegrationsUserAvatar;
+    tmp11Result = tmp11(tmp12, obj5);
   }
   items1[1] = tmp11Result;
-  items1[2] = closure_6(replied(4832).Text, { variant: "text-xs/semibold", color: "text-default", style: tmp.name, lineClamp: 1, children: str });
-  const obj8 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp.content, lineClamp: 1, children: null };
+  const obj7 = { variant: "text-xs/semibold", color: "text-default", style: tmp.name, lineClamp: 1, children: str };
+  items1[2] = closure_6(replied(4832).Text, obj7);
   let tmp11Result2 = null;
+  const obj8 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp.content, lineClamp: 1, children: items2 };
+  const Text = tmp2(4832).Text;
   if (null != memo) {
     const obj9 = { label: memo.label, variant: "text-xs/medium" };
     tmp11Result2 = tmp11(VibegrationsSelectedMentionDefault, obj9);
   }
-  const items2 = [tmp11Result2, , ];
+  items2 = [tmp11Result2, , ];
   let str3 = null;
   if (null != memo) {
     str3 = null;
@@ -79,9 +99,7 @@ export default function VibegrationsRepliedMessage(replied) {
   }
   items2[1] = str3;
   items2[2] = trimmed;
-  obj8.children = items2;
-  items1[3] = closure_7(replied(4832).Text, obj8);
-  obj3.children = items1;
-  return closure_7(closure_4, obj3);
+  items1[3] = closure_7(Text, obj8);
+  return closure_7(tmp9, obj3);
 };
 export const REPLY_PREVIEW_HEIGHT = 20;

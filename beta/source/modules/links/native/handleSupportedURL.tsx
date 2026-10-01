@@ -7,18 +7,28 @@
 // Module 13395 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
+import PaymentConstants from "PaymentConstants" /* 4815 */;
+import Constants2 from "Constants" /* 4878 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 5045 */;
 import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5746 */;
 import QuestContent from "QuestContent" /* 5761 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5870 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import openUserSettings from "openUserSettings" /* 6800 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 6841 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 6958 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
 import AnalyticsActions from "AnalyticsActions" /* 7131 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import GameProfileActionCreators from "GameProfileActionCreators" /* 8133 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
 import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 8200 */;
+import ApplicationUtils from "ApplicationUtils" /* 8506 */;
+import Constants3 from "Constants" /* 8507 */;
 import closeVoicePanelsDefault from "closeVoicePanels" /* 8761 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
 import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9167 */;
@@ -26,34 +36,66 @@ import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils
 import QuestUtils from "QuestUtils" /* 10678 */;
 import BountyActionCreators from "BountyActionCreators" /* 10744 */;
 import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 11270 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 13396 */;
+import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 13404 */;
 import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 13432 */;
 import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 13524 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
 import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 12935 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
-const ApplicationUtils = tmp4(8506);
+let c2, c4, c7, c8, guildId;
+
+let closure_12;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let map1;
+let tmp;
+let tmp3;
+const authorizeCallbackDefault = tmp(8508);
 const FamilyCenterNativeUtils = tmp3(11392);
-require = fn;
+const CreateGuildModalActionCreatorsDefault = tmp(12205);
 let closure_4 = ["code", "state"];
-fn(5870).addPostConnectionCallback;
-let closure_9 = fn(6841).handleMobileWebCheckoutStatus;
-const Constants = fn(1074);
+PostConnectionCallbackStore.addPostConnectionCallback;
+let closure_9 = PremiumPlanPurchasedStore.handleMobileWebCheckoutStatus;
 ({ AnalyticEvents: closure_12, LinkingTypes: map1, Routes: closure_14, UserSettingsSections: closure_15, PlatformTypes: closure_16, ME: closure_17 } = Constants);
-const StaticChannelRoute = fn(2052).StaticChannelRoute;
-const StreamTypes = fn(4878).StreamTypes;
-const NativePermissionTypes = fn(5045).NativePermissionTypes;
-let closure_21 = fn(8507).OAUTH2_AUTHORIZE_MODAL_KEY;
-let closure_22 = fn(6958).FAMILY_CENTER_LINK_REQUEST_REGEX;
-let closure_23 = fn(4815).MobileWebRedirectCheckoutDeepLinkActions;
-const SHARE_SCREEN_MODAL_KEY = fn(13396).SHARE_SCREEN_MODAL_KEY;
-const MobileUserSettings = fn(7417).MobileUserSettings;
-const size = fn(2);
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
+const StreamTypes = Constants2.StreamTypes;
+const NativePermissionTypes = NativePermissionConstants.NativePermissionTypes;
+let closure_21 = Constants3.OAUTH2_AUTHORIZE_MODAL_KEY;
+let closure_22 = FamilyCenterConstants.FAMILY_CENTER_LINK_REQUEST_REGEX;
+let closure_23 = PaymentConstants.MobileWebRedirectCheckoutDeepLinkActions;
+const SHARE_SCREEN_MODAL_KEY = ShareScreenConstants.SHARE_SCREEN_MODAL_KEY;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let result = size.fileFinishedImporting("modules/links/native/handleSupportedURL.tsx");
 
 export default function handleSupportedURL(payload) {
+  let OAUTH2_AUTHORIZE;
+  let channelId;
+  let channelId2;
+  let diceCount;
+  let diceSides;
+  let fingerprint;
+  let flag;
+  let guildId2;
+  let messageId;
+  let navigationReplace;
+  let nonce;
+  let obj23;
+  let obj35;
+  let obj40;
+  let obj8;
+  let regex;
+  let safe;
+  let skipMessageFetch;
+  let summaryId;
+  let waitForConnection;
   payload = payload.payload;
   ({ safe, navigationReplace, waitForConnection, skipMessageFetch } = payload);
   let rootNavigationRef1;
@@ -70,30 +112,31 @@ export default function handleSupportedURL(payload) {
   const type = payload.type;
   let tmp = constants2;
   if (constants2.CONTACT_SYNC === type) {
-    let result = payload(inviteCode[16]).openContactSyncModalDeeplink();
-    let flag = true;
     const obj46 = payload(inviteCode[16]);
+    let result = obj46.openContactSyncModalDeeplink();
+    flag = true;
   } else if (tmp.COMPOSE_MESSAGE === type) {
-    rootNavigationRef1(inviteCode[17]).popAll();
     const obj42 = rootNavigationRef1(inviteCode[17]);
-    const rootNavigationRef = payload(inviteCode[18]).getRootNavigationRef();
+    const popAllResult = obj42.popAll();
+    const obj43 = payload(inviteCode[18]);
+    const rootNavigationRef = obj43.getRootNavigationRef();
     flag = true;
     if (null != rootNavigationRef) {
       let obj7 = { screen: "new-message", params: { sourcePage: "Deeplink" } };
       rootNavigationRef.navigate("friends", obj7);
       flag = true;
     }
-    const obj43 = payload(inviteCode[18]);
   } else if (tmp.ADD_FRIENDS === type) {
-    rootNavigationRef1(inviteCode[17]).popAll();
     const obj37 = rootNavigationRef1(inviteCode[17]);
+    obj37.popAll();
+    const obj38 = payload(inviteCode[18]);
     const tmp156 = rootNavigationRef1;
+    rootNavigationRef1 = obj38.getRootNavigationRef();
     const tmp157 = inviteCode;
-    rootNavigationRef1 = payload(inviteCode[18]).getRootNavigationRef();
     if (null == rootNavigationRef1) {
-      const result1 = tmp156(tmp157[19]).openAddFriendModalDeeplink();
-      flag = true;
       const tmp156Result = tmp156(tmp157[19]);
+      const result1 = tmp156Result.openAddFriendModalDeeplink();
+      flag = true;
     } else if (rootNavigationRef1.isReady()) {
       let obj12 = { screen: "add-friends", params: { sourcePage: "Deeplink" } };
       rootNavigationRef1.navigate("friends", obj12);
@@ -102,13 +145,13 @@ export default function handleSupportedURL(payload) {
       pathname(() => rootNavigationRef1.navigate("friends", { screen: "add-friends", params: { sourcePage: "Deeplink" } }));
       flag = true;
     }
-    const obj38 = payload(inviteCode[18]);
   } else if (tmp.FRIENDS === type) {
-    rootNavigationRef1(inviteCode[17]).popAll();
     const obj32 = rootNavigationRef1(inviteCode[17]);
+    obj32.popAll();
+    const obj33 = payload(inviteCode[18]);
+    rootNavigationRef2 = obj33.getRootNavigationRef();
     const tmp148 = inviteCode;
     const tmp150 = payload;
-    rootNavigationRef2 = payload(inviteCode[18]).getRootNavigationRef();
     if (null != rootNavigationRef2) {
       if (rootNavigationRef2.isReady()) {
         rootNavigationRef2.navigate("friends");
@@ -121,16 +164,17 @@ export default function handleSupportedURL(payload) {
     flag = true;
     if (null != payload.userId) {
       const obj15 = { userId: payload.userId };
-      const result2 = tmp150(tmp148[20]).showUserProfileActionSheetPostConnection(obj15);
-      flag = true;
       const tmp150Result = tmp150(tmp148[20]);
+      const result2 = tmp150Result.showUserProfileActionSheetPostConnection(obj15);
+      flag = true;
     }
-    const obj33 = payload(inviteCode[18]);
   } else if (tmp.EDIT_PROFILE === type) {
     pathname(() => {
-      rootNavigationRef1(inviteCode[17]).popAll();
       const obj = rootNavigationRef1(inviteCode[17]);
-      payload(inviteCode[21]).openUserSettings({ screen: constants3.PROFILE_CUSTOMIZATION });
+      obj.popAll();
+      const obj2 = payload(inviteCode[21]);
+      const obj3 = { screen: constants3.PROFILE_CUSTOMIZATION };
+      obj2.openUserSettings(obj3);
     });
     flag = true;
   } else if (tmp.INVITE === type) {
@@ -140,50 +184,53 @@ export default function handleSupportedURL(payload) {
     if (!rootNavigationRef3.isAuthenticated()) {
       if (null != inviteCode) {
         const obj17 = { deeplinkAttemptId, location: "Deep Link" };
-        payload(inviteCode[22]).showInvite(inviteCode, username, obj17);
-        flag = true;
         const obj30 = payload(inviteCode[22]);
+        obj30.showInvite(inviteCode, username, obj17);
+        flag = true;
       }
     }
     pathname(() => {
-      guild_templates_GuildTemplateActionCreatorsDefault.hideModal();
+      const obj = guild_templates_GuildTemplateActionCreatorsDefault;
+      obj.hideModal();
       if (null != inviteCode) {
-        const result = KeyboardManagerUtils.dismissGlobalKeyboard();
+        const obj2 = KeyboardManagerUtils;
+        const result = obj2.dismissGlobalKeyboard();
         const obj4 = { deeplinkAttemptId, location: "Deep Link" };
-        DisplayedInviteActionCreators.showInvite(tmp3, username, obj4);
+        const obj3 = DisplayedInviteActionCreators;
+        obj3.showInvite(tmp3, username, obj4);
       }
     });
     flag = true;
   } else if (tmp.GUILD_TEMPLATE === type) {
     guildTemplateCode = payload.guildTemplateCode;
     pathname(() => {
-      DisplayedInviteActionCreators.clearDisplayedInvite();
+      const obj = DisplayedInviteActionCreators;
+      obj.clearDisplayedInvite();
       if (null != guildTemplateCode) {
-        const result = KeyboardManagerUtils.dismissGlobalKeyboard();
         const tmpResult = KeyboardManagerUtils;
-        guild_templates_GuildTemplateActionCreatorsDefault.showModal(tmp4);
+        const result = tmpResult.dismissGlobalKeyboard();
+        const obj3 = guild_templates_GuildTemplateActionCreatorsDefault;
+        obj3.showModal(tmp4);
       }
     });
     flag = true;
   } else if (tmp.GIFT_CODE === type) {
-    const giftCode = payload.giftCode;
+    let giftCode = payload.giftCode;
     let flag3 = null != giftCode;
     if (flag3) {
-      const giftCode1 = payload(inviteCode[25]).resolveGiftCode(giftCode);
       const obj29 = payload(inviteCode[25]);
-      giftCode1.then((giftCode) => {
-        rootNavigationRef1(inviteCode[26]).track(constants.OPEN_MODAL, { type: "gift_accept", location: null });
+      const giftCode1 = obj29.resolveGiftCode(giftCode);
+      let nextPromise = giftCode1.then((giftCode) => {
+        giftCode = giftCode.giftCode;
         const obj = rootNavigationRef1(inviteCode[26]);
-        const result = payload(inviteCode[27]).openGiftCodeRedeemModal(giftCode.giftCode.code);
-      }).catch(() => {
+        obj.track(constants.OPEN_MODAL, { type: "gift_accept", location: null });
+        const obj2 = payload(inviteCode[27]);
+        const result = obj2.openGiftCodeRedeemModal(giftCode.code);
+      });
+      nextPromise.catch(() => {
 
       });
       flag3 = true;
-      const nextPromise = giftCode1.then((giftCode) => {
-        rootNavigationRef1(inviteCode[26]).track(constants.OPEN_MODAL, { type: "gift_accept", location: null });
-        const obj = rootNavigationRef1(inviteCode[26]);
-        const result = payload(inviteCode[27]).openGiftCodeRedeemModal(giftCode.giftCode.code);
-      });
     }
     flag = flag3;
   } else if (tmp.ROLL_DICE === type) {
@@ -194,13 +241,12 @@ export default function handleSupportedURL(payload) {
       flag2 = null != channelId2;
     }
     if (flag2) {
-      payload(inviteCode[28]).startDiceRoll(channelId2, diceCount, diceSides);
-      const obj22 = { guildId: guildId2, channelId: channelId2, messageId: "Array", navigationSettings: 1095172098 };
-      const obj23 = { safe, navigationReplace, waitForConnection, skipMessageFetch };
-      obj22.navigationSettings = obj23;
+      const obj26 = payload(inviteCode[28]);
+      obj26.startDiceRoll(channelId2, diceCount, diceSides);
+      const obj22 = { guildId: guildId2, channelId: channelId2, messageId: "Array", navigationSettings: obj23 };
+      obj23 = { safe, navigationReplace, waitForConnection, skipMessageFetch };
       rootNavigationRef1(inviteCode[29])(obj22);
       flag2 = true;
-      const obj26 = payload(inviteCode[28]);
     }
     flag = flag2;
   } else {
@@ -208,9 +254,11 @@ export default function handleSupportedURL(payload) {
       if (tmp.MESSAGE !== type) {
         if (tmp.SESSION_MANAGEMENT === type) {
           pathname(() => {
-            rootNavigationRef1(inviteCode[17]).popAll();
             const obj = rootNavigationRef1(inviteCode[17]);
-            payload(inviteCode[21]).openUserSettings({ screen: constants3.SESSIONS });
+            obj.popAll();
+            const obj2 = payload(inviteCode[21]);
+            const obj3 = { screen: constants3.SESSIONS };
+            obj2.openUserSettings(obj3);
           });
           flag = true;
         } else if (tmp.FAMILY_CENTER === type) {
@@ -225,104 +273,125 @@ export default function handleSupportedURL(payload) {
           }
           pathname = tmp116;
           pathname(() => {
-            ModalActionCreatorsDefault.popAll();
-            openUserSettings.openUserSettings({ screen: constants3.FAMILY_CENTER });
+            const obj = ModalActionCreatorsDefault;
+            obj.popAll();
+            const obj2 = openUserSettings;
+            const obj3 = { screen: constants2.FAMILY_CENTER };
+            obj2.openUserSettings(obj3);
             let isMatch = null != pathname;
             if (isMatch) {
               isMatch = regex.test(tmp5);
             }
             if (isMatch) {
-              const result = FamilyCenterNativeUtils.handleFamilyCenterQRCodeScan(tmp5, "NativeCameraScan");
               const tmp3Result = FamilyCenterNativeUtils;
+              const result = tmp3Result.handleFamilyCenterQRCodeScan(tmp5, "NativeCameraScan");
             }
           });
           flag = true;
         } else if (tmp.OAUTH2_AUTHORIZE === type) {
           pathname(() => {
-            ModalActionCreatorsDefault.popAll();
+            let type;
+            const tmp = importDefault;
+            let obj = ModalActionCreatorsDefault;
+            obj.popAll();
+            let obj2 = MidjourneyOnboardingUtils;
             if (obj2.isMidjourneyOnboardingFlow()) {
-              tmp(12205).openCreateGuildModal((guildId) => {
+              const tmpResult = CreateGuildModalActionCreatorsDefault;
+              tmpResult.openCreateGuildModal((guildId) => {
                 if (type.type === OAUTH2_AUTHORIZE.OAUTH2_AUTHORIZE) {
-                  rootNavigationRef1(inviteCode[17]).popAll();
-                  const obj = rootNavigationRef1(inviteCode[17]);
-                  const obj3 = {};
-                  const obj2 = rootNavigationRef1(inviteCode[17]);
-                  const merged = Object.assign(tmp.props);
-                  obj3.guildId = guildId;
-                  obj3.callback = rootNavigationRef1(inviteCode[35]);
-                  obj3.dismissOAuthModal = function dismissOAuthModal() {
-                    closure_1_1(closure_1_3[17]).popWithKey(closure_1_21);
+                  let obj = rootNavigationRef1(inviteCode[17]);
+                  obj.popAll();
+                  const pushLazy = rootNavigationRef1(inviteCode[17]).pushLazy;
+                  const obj2 = {
+                    guildId,
+                    callback: rootNavigationRef1(inviteCode[35]),
+                    dismissOAuthModal() {
+                        const obj = closure_1_1(closure_1_3[17]);
+                        obj.popWithKey(closure_1_21);
+                      }
                   };
-                  obj2.pushLazy(payload(inviteCode[34])(inviteCode[33], inviteCode.paths), obj3, closure_2_21);
-                  const tmp7 = payload(inviteCode[34])(inviteCode[33], inviteCode.paths);
+                  rootNavigationRef1(inviteCode[17]);
+                  const tmp8 = payload(inviteCode[34])(inviteCode[33], inviteCode.paths);
+                  const merged = Object.assign(tmp.props);
+                  pushLazy(tmp8, obj2, closure_2_21);
                 }
               });
-              const tmpResult = tmp(12205);
             } else {
-              let obj3 = {};
+              const obj3 = { callback: authorizeCallbackDefault };
+              const openOAuth2Modal = tmp4(8506).openOAuth2Modal;
+              ApplicationUtils;
               let merged = Object.assign(payload.props);
-              obj3.callback = tmp(8508);
-              ApplicationUtils.openOAuth2Modal(obj3);
-              const tmp4Result = ApplicationUtils;
+              openOAuth2Modal(obj3);
             }
           });
           flag = true;
         } else if (tmp.ONE_TIME_LOGIN === type) {
-          rootNavigationRef1(inviteCode[17]).popAll();
           const obj20 = rootNavigationRef1(inviteCode[17]);
+          obj20.popAll();
           const obj25 = { token: payload.token };
-          rootNavigationRef1(inviteCode[17]).pushLazy(payload(inviteCode[34])(inviteCode[37], inviteCode.paths), obj25, "ONE_TIME_LOGIN_MODAL");
-          flag = true;
           const obj21 = rootNavigationRef1(inviteCode[17]);
+          obj21.pushLazy(payload(inviteCode[34])(inviteCode[37], inviteCode.paths), obj25, "ONE_TIME_LOGIN_MODAL");
+          flag = true;
         } else if (tmp.REMOTE_AUTH === type) {
           remoteAuthFingerprint = payload.remoteAuthFingerprint;
           pathname(null != remoteAuthFingerprint ? (() => {
-            ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(13408, dependencyMap.paths), { remoteAuthFingerprint }, "REMOTE_AUTH_MODAL");
+            const obj = ModalActionCreatorsDefault;
+            const obj2 = { remoteAuthFingerprint };
+            obj.pushLazy(asyncRequire(13408, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
           }) : (() => {
+            let paths;
+            let tmp = inviteCode;
             let obj = payload(inviteCode[39]);
-            const tmp = inviteCode;
-            const tmp3 = payload(inviteCode[39]).isMetaQuest() ? NativePermissionTypes.HEADSET_CAMERA : NativePermissionTypes.CAMERA;
-            const permission = rootNavigationRef1(tmp[40]).requestPermission(tmp3);
+            const tmp3 = obj.isMetaQuest() ? NativePermissionTypes.HEADSET_CAMERA : NativePermissionTypes.CAMERA;
             const obj2 = rootNavigationRef1(tmp[40]);
-            permission.then((result) => {
-              if (result) {
-                rootNavigationRef1(paths[17]).pushLazy(payload(paths[34])(paths[41], paths.paths), { showHelp: true });
+            const permission = obj2.requestPermission(tmp3);
+            const nextPromise = permission.then((result) => {
+              const tmp = result;
+              if (tmp) {
                 const obj = rootNavigationRef1(paths[17]);
+                obj.pushLazy(payload(paths[34])(paths[41], paths.paths), { showHelp: true });
               }
-            }).catch(() => {
+            });
+            nextPromise.catch(() => {
 
             });
           }));
           flag = true;
         } else if (tmp.PROMOTIONS === type) {
-          rootNavigationRef1(inviteCode[42]).performURLNavigation(payload.url);
-          flag = true;
           const obj19 = rootNavigationRef1(inviteCode[42]);
-        } else if (tmp.FEATURE_PROMO_URL === type) {
-          rootNavigationRef1(inviteCode[42]).openURLExternally(payload.promoUrl);
+          obj19.performURLNavigation(payload.url);
           flag = true;
+        } else if (tmp.FEATURE_PROMO_URL === type) {
           const obj18 = rootNavigationRef1(inviteCode[42]);
+          obj18.openURLExternally(payload.promoUrl);
+          flag = true;
         } else if (tmp.USER_PROFILE === type) {
           flag = true;
           if (null != payload.userId) {
             const obj27 = { userId: payload.userId };
-            const result3 = payload(inviteCode[20]).showUserProfileActionSheetPostConnection(obj27);
-            flag = true;
             const obj16 = payload(inviteCode[20]);
+            const result3 = obj16.showUserProfileActionSheetPostConnection(obj27);
+            flag = true;
           }
         } else if (tmp.BUILD_OVERRIDE === type) {
-          rootNavigationRef1(inviteCode[17]).popAll();
-          let obj13 = rootNavigationRef1(inviteCode[17]);
-          const obj28 = { overrideUrl: payload.overrideUrl };
-          rootNavigationRef1(inviteCode[17]).pushLazy(payload(inviteCode[34])(inviteCode[43], inviteCode.paths), obj28);
-          flag = true;
+          const overrideUrl = payload.overrideUrl;
+          const obj13 = rootNavigationRef1(inviteCode[17]);
+          obj13.popAll();
+          const obj28 = { overrideUrl };
           const obj14 = rootNavigationRef1(inviteCode[17]);
+          obj14.pushLazy(payload(inviteCode[34])(inviteCode[43], inviteCode.paths), obj28);
+          flag = true;
         } else if (tmp.GUILD_EVENT_DETAILS === type) {
           pathname(guildTemplateCode(function*(arg0, value) {
+            let c0;
+            let c1;
+            let closure_1;
+            let guildScheduledEvent;
+            let paths;
             if (c4 === 2) {
               c4 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp5 === 3) {
+            } else if (tmp4 === 3) {
               if (arg0 === 1) {
                 throw value;
               } else if (arg0 === 2) {
@@ -333,8 +402,9 @@ export default function handleSupportedURL(payload) {
               }
             } else {
               try {
+                let event;
                 c4 = 2;
-                if (0 === paths) {
+                if (0 === inviteCode) {
                   if (arg0 === 1) {
                     c4 = 3;
                     throw value;
@@ -343,19 +413,19 @@ export default function handleSupportedURL(payload) {
                     const obj6 = { value, done: true };
                     return obj6;
                   } else {
-                    closure_2 = tmp2;
-                    closure_129_0 = undefined;
-                    closure_129_1 = undefined;
-                    closure_129_2 = undefined;
-                    tmp3(paths[17]).popAll();
-                    ({ guildId: closure_129_0, guildEventId: closure_129_1 } = payload);
-                    paths = 1;
+                    c0 = undefined;
+                    c1 = undefined;
+                    event = undefined;
+                    const obj11 = tmp2(inviteCode[17]);
+                    obj11.popAll();
+                    ({ guildId: c0, guildEventId: c1 } = payload);
+                    inviteCode = 1;
                     c4 = 1;
-                    const obj7 = { value: payload(paths[34])(paths[44], paths.paths), done: false };
+                    const obj7 = { value: guildScheduledEvent(inviteCode[34])(inviteCode[44], inviteCode.paths), done: false };
                     return obj7;
                   }
                 } else {
-                  if (1 === tmp6) {
+                  if (1 === tmp5) {
                     if (arg0 === 1) {
                       c4 = 3;
                       throw value;
@@ -364,19 +434,19 @@ export default function handleSupportedURL(payload) {
                       const obj8 = { value, done: true };
                       return obj8;
                     } else {
-                      if (null != _default.getGuild(closure_129_0)) {
-                        payload(paths[45]).transitionToGuild(closure_129_0);
-                        const obj2 = payload(paths[45]);
+                      const _default = value.default;
+                      if (null != _default.getGuild(c0)) {
+                        const obj2 = guildScheduledEvent(inviteCode[45]);
+                        obj2.transitionToGuild(c0);
                       }
-                      guildScheduledEvent = guildScheduledEvent.getGuildScheduledEvent(closure_129_1);
-                      payload = guildScheduledEvent;
+                      guildScheduledEvent = guildScheduledEvent.getGuildScheduledEvent(c1);
                       if (guildScheduledEvent == null) {
-                        paths = 2;
+                        const obj5 = tmp2(inviteCode[46]);
+                        inviteCode = 2;
                         c4 = 1;
-                        const obj9 = { value: tmp3(paths[46]).fetchGuildEvent(closure_129_0, closure_129_1), done: false };
+                        const obj9 = { value: obj5.fetchGuildEvent(c0, c1), done: false };
                         return obj9;
                       }
-                      _default = value.default;
                     }
                   } else if (arg0 === 1) {
                     c4 = 3;
@@ -386,20 +456,20 @@ export default function handleSupportedURL(payload) {
                     const obj = { value, done: true };
                     return obj;
                   } else {
-                    payload = value;
+                    guildScheduledEvent = value;
                   }
-                  closure_129_2 = payload;
-                  if (null != closure_129_2) {
-                    const obj10 = { eventId: closure_129_2.id, event: closure_129_2 };
-                    const result = payload(paths[47]).openGuildEventDetails(obj10);
-                    const obj3 = payload(paths[47]);
+                  event = guildScheduledEvent;
+                  if (null != event) {
+                    const obj10 = { eventId: event.id, event };
+                    const obj3 = guildScheduledEvent(inviteCode[47]);
+                    const result = obj3.openGuildEventDetails(obj10);
                   }
                   c4 = 3;
                   return { value: "HermesInternal", done: null };
                 }
-              } catch (tmp35) {
-                c4 = tmp;
-                throw tmp35;
+              } catch (tmp34) {
+                c4 = 3;
+                throw tmp34;
               }
             }
           }));
@@ -407,17 +477,19 @@ export default function handleSupportedURL(payload) {
         } else if (tmp.MOBILE_WEB_HANDOFF === type) {
           const redirectUrl = payload.redirectUrl;
           ({ nonce, fingerprint } = payload);
+          let obj11 = rootNavigationRef1(inviteCode[48]);
           const _HermesInternal = HermesInternal;
           const obj31 = { nonce, fingerprint, skipLoginRedirect: true };
-          const result4 = rootNavigationRef1(inviteCode[48]).redirectWithHandoffToken("" + redirectUrl.pathname + redirectUrl.search, obj31);
+          const result4 = obj11.redirectWithHandoffToken("" + redirectUrl.pathname + redirectUrl.search, obj31);
           flag = true;
-          let obj11 = rootNavigationRef1(inviteCode[48]);
         } else if (tmp.VOICE_CHANNEL === type) {
           pathname(guildTemplateCode(function*(arg0, value) {
+            let closure_0;
+            let v1;
             if (c2 === 2) {
               c2 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp3 === 3) {
+            } else if (tmp2 === 3) {
               if (arg0 === 1) {
                 throw value;
               } else if (arg0 === 2) {
@@ -429,7 +501,7 @@ export default function handleSupportedURL(payload) {
             } else {
               try {
                 c2 = 2;
-                if (0 === v1) {
+                if (0 === rootNavigationRef1) {
                   if (arg0 === 1) {
                     c2 = 3;
                     throw value;
@@ -438,18 +510,13 @@ export default function handleSupportedURL(payload) {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    let tmp19 = null != payload.guildId;
-                    if (tmp19) {
-                      tmp19 = null != payload.channelId;
-                    }
-                    if (tmp19) {
-                      tmp19 = null != payload.userId;
-                    }
-                    if (tmp19) {
-                      v1(paths[17]).popAll();
-                      v1 = 1;
+                    const tmp18 = null != payload.guildId && null != payload.channelId && null != payload.userId;
+                    if (tmp18) {
+                      const obj5 = rootNavigationRef1(paths[17]);
+                      obj5.popAll();
+                      rootNavigationRef1 = 1;
                       c2 = 1;
-                      const obj6 = { value: tmp4(paths[34])(paths[44], paths.paths), done: false };
+                      const obj6 = { value: tmp3(paths[34])(paths[44], paths.paths), done: false };
                       return obj6;
                     }
                   }
@@ -461,34 +528,32 @@ export default function handleSupportedURL(payload) {
                   const obj7 = { value, done: true };
                   return obj7;
                 } else {
+                  const _default = value.default;
                   if (null != _default.getGuild(closure_128_0.guildId)) {
-                    tmp4(paths[45]).transitionToGuild(closure_128_0.guildId);
-                    const obj = tmp4(paths[45]);
+                    const obj = tmp3(paths[45]);
+                    obj.transitionToGuild(closure_128_0.guildId);
                   }
                   const obj8 = { streamType: constants.GUILD, ownerId: closure_128_0.userId, guildId: closure_128_0.guildId, channelId: closure_128_0.channelId };
-                  v1(paths[49])(obj8);
-                  _default = value.default;
+                  rootNavigationRef1(paths[49])(obj8);
                 }
-                let tmp23 = "transfer_cancelled" === closure_128_0.action;
-                if (tmp23) {
-                  tmp23 = "xbox" === closure_128_0.via;
-                }
-                if (tmp23) {
-                  tmp4(paths[50]).disconnectRemote();
-                  const obj4 = tmp4(paths[50]);
+                const tmp22 = "transfer_cancelled" === closure_128_0.action && "xbox" === closure_128_0.via;
+                if (tmp22) {
+                  const obj4 = tmp3(paths[50]);
+                  obj4.disconnectRemote();
                 }
                 c2 = 3;
                 return { value: "HermesInternal", done: null };
-              } catch (tmp37) {
-                c2 = tmp;
-                throw tmp37;
+              } catch (tmp36) {
+                c2 = 3;
+                throw tmp36;
               }
             }
           }));
           flag = true;
         } else if (tmp.ICYMI === type) {
           pathname(() => {
-            payload(inviteCode[51]).navigateToRootTab({ screen: "icymi" });
+            const obj = payload(inviteCode[51]);
+            obj.navigateToRootTab({ screen: "icymi" });
           });
           flag = true;
         } else if (tmp.GUILD_HOME === type) {
@@ -497,39 +562,45 @@ export default function handleSupportedURL(payload) {
             let tmp71;
             if (null != payload.highlightChannelId) {
               if (null != payload.highlightMessageId) {
-                const obj34 = { search: null };
+                const obj34 = { search: obj8.stringify(obj35) };
+                obj8 = payload(inviteCode[52]);
+                obj35 = { highlight_channel_id: null, highlight_message_id: null };
                 ({ highlightChannelId: obj9.highlight_channel_id, highlightMessageId: obj9.highlight_message_id } = payload);
-                obj34.search = payload(inviteCode[52]).stringify({ highlight_channel_id: null, highlight_message_id: null });
                 tmp71 = obj34;
-                const obj35 = { highlight_channel_id: null, highlight_message_id: null };
-                let obj8 = payload(inviteCode[52]);
               }
             }
-            payload(inviteCode[53]).transitionTo(closure_14.CHANNEL(payload.guildId, StaticChannelRoute.GUILD_HOME), tmp71);
-            flag = true;
             let obj10 = payload(inviteCode[53]);
+            obj10.transitionTo(closure_14.CHANNEL(payload.guildId, StaticChannelRoute.GUILD_HOME), tmp71);
+            flag = true;
           }
         } else if (tmp.USER_CONNECTIONS_LINK_CALLBACK === type) {
           pathname(() => {
             let hasItem = null != payload.callbackCode && null != tmp.callbackState && null != tmp.provider;
             if (hasItem) {
               const items = [, , , ];
-              ({ XBOX: arr[0], PLAYSTATION: arr[1], PLAYSTATION_STAGING: arr[2], CRUNCHYROLL: arr[3] } = value2);
+              ({ XBOX: arr[0], PLAYSTATION: arr[1], PLAYSTATION_STAGING: arr[2], CRUNCHYROLL: arr[3] } = authStore3);
               hasItem = items.includes(tmp.provider);
             }
             if (hasItem) {
-              ({ provider: obj2.provider, callbackCode: obj2.callbackCode, callbackState: obj2.callbackState } = tmp);
-              DispatcherDefault.dispatch({ type: "USER_CONNECTIONS_LINK_CALLBACK", provider: null, callbackCode: null, callbackState: null });
               const obj3 = { type: "USER_CONNECTIONS_LINK_CALLBACK", provider: null, callbackCode: null, callbackState: null };
+              ({ provider: obj2.provider, callbackCode: obj2.callbackCode, callbackState: obj2.callbackState } = payload);
+              const obj = DispatcherDefault;
+              obj.dispatch(obj3);
             }
           });
           flag = true;
         } else if (tmp.USER_CONNECTIONS_CALLBACK === type) {
           pathname(guildTemplateCode(function*(arg0, value) {
+            let closure_0;
+            let closure_1;
+            let closure_3;
+            let closure_5;
+            let obj3;
+            let obj8;
             if (c8 === 2) {
               c8 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp4 === 3) {
+            } else if (tmp3 === 3) {
               if (arg0 === 1) {
                 throw value;
               } else if (arg0 === 2) {
@@ -550,37 +621,41 @@ export default function handleSupportedURL(payload) {
                     const obj4 = { value, done: true };
                     return obj4;
                   } else {
-                    closure_6 = tmp5;
-                    closure_133_0 = undefined;
-                    closure_133_1 = undefined;
+                    let closure_6 = tmp4;
+                    payload = undefined;
+                    rootNavigationRef1 = undefined;
                     const searchParams = payload.searchParams;
                     const state = searchParams.state;
-                    const tmp50 = tmp2(searchParams, obj3);
+                    const provider = payload.provider;
+                    const code = searchParams.code;
+                    const tmp49 = tmp(searchParams, obj3);
                     if (null != state) {
-                      const obj7 = { code: searchParams.code, state };
-                      closure_1 = tmp50;
+                      let closure_2;
+                      const obj7 = { code, state };
+                      rootNavigationRef1 = tmp49;
                       const keys = Object.keys();
+                      const tmp9 = tmp49;
                       if (keys === undefined) {
-                        let dependencyMap2 = tmp12;
-                        closure_2 = tmp11;
-                        closure_1 = tmp50;
-                        dependencyMap = keys;
+                        inviteCode = tmp11;
+                        closure_2 = tmp10;
+                        rootNavigationRef1 = tmp49;
+                        payload = keys;
                       } else {
-                        dependencyMap2 = tmp12;
-                        closure_2 = tmp11;
-                        closure_1 = tmp10;
-                        dependencyMap = keys;
-                        obj3 = dependencyMap[closure_2];
+                        inviteCode = tmp11;
+                        closure_2 = tmp10;
+                        rootNavigationRef1 = tmp9;
+                        payload = keys;
+                        obj3 = payload[closure_2];
                         while (obj3 !== undefined) {
-                          dependencyMap2 = tmp17;
-                          closure_2 = tmp16;
-                          closure_1 = tmp15;
-                          dependencyMap = tmp14;
+                          inviteCode = tmp16;
+                          closure_2 = tmp15;
+                          rootNavigationRef1 = tmp14;
+                          payload = tmp13;
                           if (!obj3.startsWith("openid.")) {
                             continue;
                           } else {
-                            let obj9 = tmp19;
-                            if (null == tmp19) {
+                            let obj9 = tmp18;
+                            if (null == tmp18) {
                               obj9 = {};
                             }
                             obj9[obj3] = searchParams[obj3];
@@ -588,113 +663,127 @@ export default function handleSupportedURL(payload) {
                           }
                           continue;
                         }
-                        dependencyMap2 = tmp17;
-                        closure_2 = tmp16;
-                        closure_1 = tmp15;
-                        dependencyMap = tmp14;
+                        inviteCode = tmp16;
+                        closure_2 = tmp15;
+                        rootNavigationRef1 = tmp14;
+                        payload = tmp13;
                       }
-                      if (null != tmp19) {
-                        obj7.openid_params = tmp19;
+                      if (null != tmp18) {
+                        obj7.openid_params = tmp18;
                       }
-                      closure_1(5039).popAll();
-                      const obj5 = closure_1(5039);
-                      tmp10 = tmp50;
+                      const obj5 = rootNavigationRef1(inviteCode[17]);
+                      obj5.popAll();
                       const obj10 = { screen: constants.CONNECTIONS };
-                      dependencyMap(6800).openUserSettings(obj10);
-                      const obj6 = dependencyMap(6800);
+                      const obj6 = payload(inviteCode[21]);
+                      obj6.openUserSettings(obj10);
                       c7 = 1;
                       c8 = 1;
-                      const obj11 = { value: closure_1(5718).callback(payload.provider, obj7), done: false };
+                      const obj11 = { value: obj8.callback(provider, obj7), done: false };
+                      obj8 = rootNavigationRef1(inviteCode[55]);
                       return obj11;
-                    } else {
-                      c8 = 3;
                     }
                   }
                 } else if (arg0 === 1) {
                   c8 = 3;
                   throw value;
-                } else if (arg0 !== 2) {
-                  closure_133_0 = value;
-                  const body = closure_133_0.body;
+                } else if (arg0 === 2) {
+                  c8 = 3;
+                  const obj = { value, done: true };
+                  return obj;
+                } else {
+                  payload = value;
+                  const body = payload.body;
                   let redirect;
+                  const toURLSafe = rootNavigationRef1(inviteCode[56]).toURLSafe;
+                  const tmp37 = rootNavigationRef1(inviteCode[56]);
                   if (body != null) {
                     redirect = body.redirect;
                   }
-                  closure_133_1 = closure_1(1366).toURLSafe(redirect);
-                  if (null != closure_133_1) {
-                    closure_1(4525).openURL(closure_133_1.toString());
-                    const obj13 = closure_1(4525);
+                  rootNavigationRef1 = toURLSafe(redirect);
+                  if (null != rootNavigationRef1) {
+                    const obj12 = rootNavigationRef1(inviteCode[42]);
+                    obj12.openURL(rootNavigationRef1.toString());
                   }
-                  const obj12 = closure_1(1366);
                 }
                 c8 = 3;
-                const obj = { value, done: true };
-                return obj;
-              } catch (tmp30) {
-                c8 = tmp;
-                throw tmp30;
+                return { value: "HermesInternal", done: null };
+              } catch (tmp29) {
+                c8 = 3;
+                throw tmp29;
               }
             }
           }));
           flag = true;
         } else if (tmp.CONNECTIONS === type) {
           pathname(() => {
-            rootNavigationRef1(inviteCode[17]).popAll();
             const obj = rootNavigationRef1(inviteCode[17]);
-            payload(inviteCode[21]).openUserSettings({ screen: constants3.CONNECTIONS });
+            obj.popAll();
+            const obj2 = payload(inviteCode[21]);
+            const obj3 = { screen: constants3.CONNECTIONS };
+            obj2.openUserSettings(obj3);
           });
           flag = true;
         } else if (tmp.GUILD_SETTINGS === type) {
           pathname(() => {
             if (null != payload.guildId) {
               const obj = GuildSettingsActionCreatorsDefault;
-              obj.open(tmp.guildId, tmp.settingsSection, undefined, tmp.settingsSubsection);
+              obj.open(payload.guildId, payload.settingsSection, undefined, payload.settingsSubsection);
             }
           });
           flag = true;
         } else if (tmp.ACTIVATE_DEVICE === type) {
-          rootNavigationRef1(inviteCode[58]).showModal(payload.userCode);
-          flag = true;
+          let tmp58 = rootNavigationRef1;
+          let tmp59 = inviteCode;
           let obj6 = rootNavigationRef1(inviteCode[58]);
+          obj6.showModal(payload.userCode);
+          flag = true;
         } else if (tmp.GUILD_SETTINGS_PICKER === type) {
-          pathname(() => {
-            const result = GuildSettingsPickerActionCreators.openGuildSettingsPickerModal({ section: payload.settingsSection, subsection: payload.settingsSubsection, feature: payload.feature });
+          let tmp56 = pathname;
+          let tmp57 = pathname(() => {
+            const obj = GuildSettingsPickerActionCreators;
+            const obj2 = { section: payload.settingsSection, subsection: payload.settingsSubsection, feature: payload.feature };
+            const result = obj.openGuildSettingsPickerModal(obj2);
           });
           flag = true;
         } else if (tmp.SHARE === type) {
+          let tmp49 = inviteCode;
+          let obj2 = payload(inviteCode[60]);
           flag = true;
+          const tmp48 = payload;
           if (obj2.isIOS()) {
-            rootNavigationRef1(tmp49[17]).popAll();
+            let obj3 = rootNavigationRef1(tmp49[17]);
+            obj3.popAll();
             let obj4 = rootNavigationRef1(tmp49[17]);
             const obj36 = { text: null, channelId: null, shareId: null, attachmentManifest: null };
             ({ text: obj5.text, channelId: obj5.channelId, shareId: obj5.shareId, attachmentManifest: obj5.attachmentManifest } = payload);
             obj4.pushLazy(tmp48(tmp49[34])(tmp49[61], tmp49.paths), obj36, SHARE_SCREEN_MODAL_KEY, { presentation: "modal" });
             flag = true;
-            let obj3 = rootNavigationRef1(tmp49[17]);
           }
-          obj2 = payload(inviteCode[60]);
-          tmp48 = payload;
         } else {
           if (tmp.CREATE_VOICE_INVITE !== type) {
             if (tmp.SEND_VOICE_HANGOUT_WAVE !== type) {
               if (tmp.ACCOUNT_STANDING === type) {
                 pathname(() => {
-                  rootNavigationRef1(inviteCode[17]).popAll();
                   const obj = rootNavigationRef1(inviteCode[17]);
-                  payload(inviteCode[63]).openAccountStanding();
+                  obj.popAll();
+                  const obj2 = payload(inviteCode[63]);
+                  obj2.openAccountStanding();
                 });
                 flag = true;
               } else if (tmp.MOBILE_NATIVE_UPDATE === type) {
-                const result5 = rootNavigationRef2(inviteCode[64]).openBuildInstallerUrl(payload.url);
-                flag = true;
                 let obj = rootNavigationRef2(inviteCode[64]);
+                const result5 = obj.openBuildInstallerUrl(payload.url);
+                flag = true;
               } else if (tmp.MOBILE_WEB_REDIRECT_CHECKOUT === type) {
                 deepLinkAction = payload.deepLinkAction;
                 pathname(guildTemplateCode(function*(arg0, value) {
-                  if (paths === 2) {
-                    paths = 3;
+                  let closure_0;
+                  let closure_1;
+                  let paths;
+                  if (inviteCode === 2) {
+                    inviteCode = 3;
                     throw new TypeError("Generator functions may not be called on executing generators");
-                  } else if (tmp5 === 3) {
+                  } else if (tmp4 === 3) {
                     if (arg0 === 1) {
                       throw value;
                     } else if (arg0 === 2) {
@@ -705,92 +794,110 @@ export default function handleSupportedURL(payload) {
                     }
                   } else {
                     try {
-                      paths = 2;
+                      let tmp;
+                      inviteCode = 2;
                       if (0 === c2) {
                         if (arg0 === 1) {
-                          paths = 3;
+                          inviteCode = 3;
                           throw value;
                         } else if (arg0 === 2) {
-                          paths = 3;
+                          inviteCode = 3;
                           const obj4 = { value, done: true };
                           return obj4;
                         } else {
                           guildId = undefined;
-                          let guild;
+                          tmp = undefined;
                           if (deepLinkAction === constants.PREMIUM_CHECKOUT_SUCCESS) {
                             deepLinkAction("succeeded");
-                          } else if (tmp31 === tmp32.PREMIUM_SUBSCRIPTION_UPDATE) {
-                            const subscriptions = tmp3(paths[65]).fetchSubscriptions();
-                            const obj3 = tmp3(paths[65]);
-                          } else if (tmp31 === tmp32.GUILD_BOOST_CHECKOUT_SUCCESS) {
-                            tmp2(paths[17]).popAll();
+                          } else if (deepLinkAction === constants.PREMIUM_SUBSCRIPTION_UPDATE) {
+                            const obj3 = tmp2(inviteCode[65]);
+                            const subscriptions = obj3.fetchSubscriptions();
+                          } else if (deepLinkAction === constants.GUILD_BOOST_CHECKOUT_SUCCESS) {
+                            const obj7 = tmp(inviteCode[17]);
+                            obj7.popAll();
                             guildId = payload.guildId;
                             c2 = 1;
-                            paths = 1;
-                            const obj5 = { value: tmp3(paths[34])(paths[44], paths.paths), done: false };
+                            inviteCode = 1;
+                            const obj5 = { value: tmp2(inviteCode[34])(inviteCode[44], inviteCode.paths), done: false };
                             return obj5;
                           }
-                          paths = 3;
                         }
                       } else if (arg0 === 1) {
-                        paths = 3;
+                        inviteCode = 3;
                         throw value;
-                      } else if (arg0 !== 2) {
-                        guild = value.default.getGuild(guildId);
-                        if (null != guild) {
-                          tmp3(paths[45]).transitionToGuild(guildId);
-                          tmp2(paths[66])(guild);
-                          const obj6 = tmp3(paths[45]);
-                        }
+                      } else if (arg0 === 2) {
+                        inviteCode = 3;
+                        const obj = { value, done: true };
+                        return obj;
+                      } else {
                         const _default = value.default;
+                        tmp = _default.getGuild(guildId);
+                        if (null != tmp) {
+                          const obj6 = tmp2(inviteCode[45]);
+                          obj6.transitionToGuild(guildId);
+                          tmp(inviteCode[66])(tmp);
+                        }
                       }
-                      paths = 3;
-                      const obj = { value, done: true };
-                      return obj;
-                    } catch (tmp16) {
-                      paths = tmp;
-                      throw tmp16;
+                      inviteCode = 3;
+                      return { value: "HermesInternal", done: null };
+                    } catch (tmp15) {
+                      inviteCode = 3;
+                      throw tmp15;
                     }
                   }
                 }));
                 flag = true;
               } else if (tmp.SHOP === type) {
-                pathname(() => {
-                  const obj3 = { analyticsLocations: null, analyticsSource: null, screen: null, initialProductSkuId: null };
-                  const items = [AnalyticsLocationDefault.DEEPLINK];
-                  obj3.analyticsLocations = items;
-                  obj3.analyticsSource = AnalyticsLocationDefault.DEEPLINK;
-                  ({ screen: obj2.screen, skuId: obj2.initialProductSkuId } = payload);
-                  const result = CollectiblesActionCreators.openCollectiblesShopMobile(obj3);
+                const tmp36 = pathname;
+                let tmp37 = pathname(() => {
+                  let items;
+                  const obj = { analyticsLocations: items, analyticsSource: AnalyticsLocationDefault.DEEPLINK, screen: null, initialProductSkuId: null };
+                  const openCollectiblesShopMobile = CollectiblesActionCreators.openCollectiblesShopMobile;
+                  items = [];
+                  CollectiblesActionCreators;
+                  items[0] = AnalyticsLocationDefault.DEEPLINK;
+                  ({ screen: obj.screen, skuId: obj.initialProductSkuId } = payload);
+                  const result = openCollectiblesShopMobile(obj);
                 });
                 flag = true;
               } else if (tmp.AUTHORIZED_APPS === type) {
+                const tmp34 = pathname;
                 pathname(() => {
-                  rootNavigationRef1(inviteCode[17]).popAll();
                   const obj = rootNavigationRef1(inviteCode[17]);
-                  payload(inviteCode[21]).openUserSettings({ screen: constants3.AUTHORIZED_APPS });
+                  obj.popAll();
+                  const obj2 = payload(inviteCode[21]);
+                  const obj3 = { screen: constants3.AUTHORIZED_APPS };
+                  obj2.openUserSettings(obj3);
                 });
                 flag = true;
               } else if (tmp.DAVE_PROTOCOL_VERIFICATION === type) {
                 pathname(() => {
-                  const obj2 = { userId: payload.userId, fingerprint: null };
-                  const fingerprint = payload.fingerprint;
-                  obj2.fingerprint = fingerprint.replaceAll(" ", "+");
-                  const result = SecureFramesPlatformUtilsDefault.handleSecureFramesUserVerificationLink(obj2);
+                  let fingerprint;
+                  const obj = { userId: payload.userId, fingerprint: fingerprint.replaceAll(" ", "+") };
+                  fingerprint = payload.fingerprint;
+                  const handleSecureFramesUserVerificationLink = SecureFramesPlatformUtilsDefault.handleSecureFramesUserVerificationLink;
+                  SecureFramesPlatformUtilsDefault;
+                  const result = handleSecureFramesUserVerificationLink(obj);
                 });
                 flag = true;
               } else if (tmp.AGE_VERIFICATION_AGEKEY_RETURN === type) {
                 pathname(() => {
-                  AgeKeyReturnHandler.handleAgeKeyReturn({ result: payload.result, ageKeySaved: payload.ageKeySaved, verificationId: payload.verificationId });
+                  const obj = AgeKeyReturnHandler;
+                  const obj2 = { result: payload.result, ageKeySaved: payload.ageKeySaved, verificationId: payload.verificationId };
+                  obj.handleAgeKeyReturn(obj2);
                 });
                 flag = true;
               } else if (tmp.QUESTS === type) {
-                pathname(() => {
+                const tmp29 = pathname(() => {
+                  let obj2;
+                  let tmp11;
+                  let tmp12;
                   if (null != payload.questId) {
-                    const obj2 = { questId: arr.questId, event: constants.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT, sourceQuestContent: QuestContent.QuestContent.QUEST_EMBED_MOBILE, properties: null };
-                    const obj3 = { referrer_id: arr.referrerId };
-                    obj2.properties = obj3;
-                    AnalyticsActions.trackQuestEvent(obj2);
+                    const obj = { questId: payload.questId, event: constants.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT, sourceQuestContent: QuestContent.QuestContent.QUEST_EMBED_MOBILE, properties: obj2 };
+                    const trackQuestEvent = AnalyticsActions.trackQuestEvent;
+                    AnalyticsActions;
+                    obj2 = { referrer_id: payload.referrerId };
+                    trackQuestEvent(obj);
                   }
                   let sort;
                   if (payload != null) {
@@ -800,129 +907,165 @@ export default function handleSupportedURL(payload) {
                   if (payload != null) {
                     filter = arr.filter;
                   }
-                  const obj5 = { scrollToQuestId: payload.questId, sort: null, filter: null, fromContent: null };
-                  let tmp9 = null;
+                  const obj3 = { scrollToQuestId: payload.questId, sort: tmp11, filter: tmp12, fromContent: QuestContent.QuestContent.QUEST_SHARE_LINK };
+                  tmp11 = null;
+                  const openQuestHome = QuestUtils.openQuestHome;
+                  QuestUtils;
                   if (null != sort) {
-                    tmp9 = null;
+                    tmp11 = null;
                     if ("" !== sort) {
-                      tmp9 = sort;
+                      tmp11 = sort;
                     }
                   }
-                  obj5.sort = tmp9;
-                  let tmp10 = null;
+                  tmp12 = null;
                   if (null != filter) {
-                    tmp10 = null;
+                    tmp12 = null;
                     if ("" !== filter) {
-                      tmp10 = filter;
+                      tmp12 = filter;
                     }
                   }
-                  obj5.filter = tmp10;
-                  obj5.fromContent = QuestContent.QuestContent.QUEST_SHARE_LINK;
-                  QuestUtils.openQuestHome(obj5);
+                  openQuestHome(obj3);
                 });
                 flag = true;
               } else if (tmp.QUEST_HOME_PREVIEW === type) {
                 pathname(() => {
-                  const obj2 = { screen: constants3.QUESTS, params: { previewAdCreativeIds: payload.adCreativeIds } };
-                  openUserSettings.openUserSettings(obj2);
+                  let obj3;
+                  const obj2 = { screen: constants2.QUESTS, params: obj3 };
+                  obj3 = { previewAdCreativeIds: payload.adCreativeIds };
+                  const obj = openUserSettings;
+                  obj.openUserSettings(obj2);
                 });
                 flag = true;
               } else if (tmp.QUEST_BAR_PREVIEW === type) {
                 pathname(() => {
-                  ModalActionCreatorsDefault.popAll();
-                  NavigationRouteUtils.navigateToRootTab({ screen: "guilds", guildId });
+                  const obj = ModalActionCreatorsDefault;
+                  obj.popAll();
+                  const obj2 = NavigationRouteUtils;
                   const obj3 = { screen: "guilds", guildId };
-                  const dockCreativePreview = BountyActionCreators.fetchDockCreativePreview(payload.adCreativeId);
+                  obj2.navigateToRootTab(obj3);
+                  const obj4 = BountyActionCreators;
+                  const dockCreativePreview = obj4.fetchDockCreativePreview(payload.adCreativeId);
                 });
                 flag = true;
               } else if (tmp.GIFT === type) {
+                let tmp22 = pathname;
                 pathname(() => {
-                  const obj2 = { analyticsLocations: null };
-                  const items = [rootNavigationRef1(inviteCode[68]).DEEPLINK];
-                  obj2.analyticsLocations = items;
-                  payload(inviteCode[75]).openGiftModal(obj2);
+                  let items;
+                  const obj = { analyticsLocations: items };
+                  const openGiftModal = payload(inviteCode[75]).openGiftModal;
+                  items = [];
+                  payload(inviteCode[75]);
+                  items[0] = rootNavigationRef1(inviteCode[68]).DEEPLINK;
+                  openGiftModal(obj);
                 });
                 flag = true;
               } else if (tmp.NITRO_HOME === type) {
                 pathname(() => {
                   const section = payload.section;
-                  PremiumNitroNavigationStore.setState({ scrollToSectionId: section });
-                  openUserSettings.openUserSettings({ screen: constants3.PREMIUM });
+                  const setState = PremiumNitroNavigationStore.setState;
+                  setState({ scrollToSectionId: section });
+                  const obj = openUserSettings;
+                  const obj2 = { screen: constants2.PREMIUM };
+                  obj.openUserSettings(obj2);
                 });
                 flag = true;
               } else if (tmp.ACTIVITY === type) {
-                rootNavigationRef1(inviteCode[76])(payload.applicationId, payload.referrerId, payload.customId, payload.linkId, payload.isDeepLink);
+                let tmp18 = inviteCode;
+                let tmp19 = rootNavigationRef1(inviteCode[76])(payload.applicationId, payload.referrerId, payload.customId, payload.linkId, payload.isDeepLink);
                 flag = true;
               } else if (tmp.CONNECTED_GAMES === type) {
-                pathname(() => {
-                  rootNavigationRef1(inviteCode[17]).popAll();
+                const tmp15 = pathname;
+                const tmp16 = pathname(() => {
+                  let obj4;
                   const obj = rootNavigationRef1(inviteCode[17]);
-                  const obj3 = { screen: constants3.CONTENT_AND_SOCIAL, params: { tab: constants2.CONNECTED_GAMES } };
-                  payload(inviteCode[21]).openUserSettings(obj3);
+                  obj.popAll();
+                  const obj3 = { screen: constants3.CONTENT_AND_SOCIAL, params: obj4 };
+                  obj4 = { tab: constants2.CONNECTED_GAMES };
+                  const obj2 = payload(inviteCode[21]);
+                  obj2.openUserSettings(obj3);
                 });
                 flag = true;
               } else if (tmp.BOOST_MARKETING === type) {
-                pathname(() => {
-                  actions_BoostingActionCreators.openApplyBoostModal(payload.guildId);
+                const tmp13 = pathname;
+                const tmp14 = pathname(() => {
+                  const obj = actions_BoostingActionCreators;
+                  obj.openApplyBoostModal(payload.guildId);
                 });
                 flag = true;
               } else if (tmp.BOOST_SETTINGS === type) {
-                pathname(() => {
-                  rootNavigationRef1(inviteCode[17]).popAll();
+                let tmp11 = pathname;
+                let tmp12 = pathname(() => {
                   const obj = rootNavigationRef1(inviteCode[17]);
-                  payload(inviteCode[21]).openUserSettings({ screen: constants3.GUILD_BOOSTING });
+                  obj.popAll();
+                  const obj2 = payload(inviteCode[21]);
+                  const obj3 = { screen: constants3.GUILD_BOOSTING };
+                  obj2.openUserSettings(obj3);
                 });
                 flag = true;
               } else if (tmp.QUEST_PREVIEW_TOOL === type) {
-                pathname(() => {
-                  ModalActionCreatorsDefault.popAll();
+                let tmp9 = pathname;
+                const tmp10 = pathname(() => {
+                  let questId;
+                  let obj = ModalActionCreatorsDefault;
+                  obj.popAll();
                   closeVoicePanelsDefault();
                   const timerId = setTimeout(() => {
-                    const obj2 = { screen: constants3.QUEST_PREVIEW_TOOL_2, params: { questId: questId.questId } };
-                    payload(inviteCode[21]).openUserSettings(obj2);
+                    let obj3;
+                    const obj2 = { screen: constants3.QUEST_PREVIEW_TOOL_2, params: obj3 };
+                    obj3 = { questId: questId.questId };
+                    const obj = payload(inviteCode[21]);
+                    obj.openUserSettings(obj2);
                   }, 1);
                 });
                 flag = true;
               } else if (tmp.SUBSCRIPTION_SETTINGS === type) {
-                pathname(() => {
-                  rootNavigationRef1(inviteCode[17]).popAll();
+                let tmp8 = pathname(() => {
                   const obj = rootNavigationRef1(inviteCode[17]);
-                  payload(inviteCode[21]).openUserSettings({ screen: constants3.GUILD_ROLE_SUBSCRIPTIONS });
+                  obj.popAll();
+                  const obj2 = payload(inviteCode[21]);
+                  const obj3 = { screen: constants3.GUILD_ROLE_SUBSCRIPTIONS };
+                  obj2.openUserSettings(obj3);
                 });
                 flag = true;
               } else if (tmp.GAME_PROFILE === type) {
                 gameId = payload.gameId;
-                pathname(() => {
-                  ModalActionCreatorsDefault.popAll();
+                const tmp5 = pathname;
+                let tmp6 = pathname(() => {
+                  const obj = ModalActionCreatorsDefault;
+                  obj.popAll();
+                  const GameProfileSources = GameProfileAnalyticUtils.GameProfileSources;
                   const _default = GameProfileActionCreators.default;
-                  _default.openGameProfileModal({ gameId, source: GameProfileAnalyticUtils.GameProfileSources.Deeplink, gameProfileModalChecks: { shouldOpenGameProfile: true, gameId } });
+                  const obj2 = { gameId, source: GameProfileSources.Deeplink, gameProfileModalChecks: { shouldOpenGameProfile: true, gameId } };
+                  _default.openGameProfileModal(obj2);
                 });
                 flag = true;
               } else {
                 flag = false;
                 if (tmp.MESSAGE_REQUESTS === type) {
-                  rootNavigationRef1(inviteCode[17]).popAll();
                   const obj48 = rootNavigationRef1(inviteCode[17]);
-                  rootNavigationRef3 = payload(inviteCode[18]).getRootNavigationRef();
+                  obj48.popAll();
+                  const obj49 = payload(inviteCode[18]);
+                  rootNavigationRef3 = obj49.getRootNavigationRef();
                   flag = true;
                   if (null != rootNavigationRef3) {
                     if (rootNavigationRef3.isReady()) {
                       rootNavigationRef3.navigate("message-requests");
                       flag = true;
                     } else {
-                      pathname(() => {
+                      const tmp2 = pathname;
+                      let tmp3 = pathname(() => {
                         rootNavigationRef3.navigate("message-requests");
                       });
                       flag = true;
                     }
                   }
-                  const obj49 = payload(inviteCode[18]);
                 }
               }
             }
           }
           pathname(() => {
-            const result = instant_invite_InstantInviteUtils.showInstantInviteActionSheetForChannel(payload.channelId);
+            const obj = instant_invite_InstantInviteUtils;
+            const result = obj.showInstantInviteActionSheetForChannel(payload.channelId);
           });
           flag = true;
         }
@@ -933,19 +1076,17 @@ export default function handleSupportedURL(payload) {
       ({ messageId, summaryId } = payload);
     }
     flag = true;
+    const tmp122 = null != guildId && null != channelId;
     if (tmp122) {
-      const obj39 = { guildId, channelId, messageId, navigationSettings: null, summaryId: null };
-      const obj40 = { safe, navigationReplace, waitForConnection, skipMessageFetch };
-      obj39.navigationSettings = obj40;
-      obj39.summaryId = summaryId;
+      const obj39 = { guildId, channelId, messageId, navigationSettings: obj40, summaryId };
+      obj40 = { safe, navigationReplace, waitForConnection, skipMessageFetch };
       rootNavigationRef1(inviteCode[29])(obj39);
       flag = true;
     }
-    tmp122 = null != guildId && null != channelId;
   }
   if (flag) {
-    const result6 = payload(inviteCode[81]).browserManagerCloseBrowser();
     const obj47 = payload(inviteCode[81]);
+    const result6 = obj47.browserManagerCloseBrowser();
   }
   return flag;
 };

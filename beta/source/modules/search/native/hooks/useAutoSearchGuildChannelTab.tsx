@@ -8,39 +8,47 @@
 import _mod12 from "module_12" /* 12 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11821 */;
 import SearchUtils from "SearchUtils" /* 11823 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 11836 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11844 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_4 = fn(11836).SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
-const size = fn(2);
+let closure_4 = SearchPlatformConstants.SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
 let result = size.fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
 
 export const useAutoSearchGuildChannelTab = function useAutoSearchGuildChannelTab(searchContext, arg1) {
-  closure_1 = arg1;
+  let closure_0 = searchContext;
+  let closure_1 = arg1;
   const items = [searchContext];
-  const callback = noop.useCallback((searchQueryString) => {
-    const guildIdFromSearchContext = SearchUtils.getGuildIdFromSearchContext(searchContext);
+  const callback = react.useCallback((searchQueryString) => {
+    const obj = SearchUtils;
+    const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
+    const tmp2 = searchContext;
     if (null != guildIdFromSearchContext) {
-      const obj3 = { searchContext, searchQueryString, guildId: guildIdFromSearchContext };
-      const result = SearchPlatformActionCreatorsDefault.searchGuildChannelTab(obj3);
+      const obj3 = { searchContext: tmp2, searchQueryString, guildId: guildIdFromSearchContext };
+      const obj2 = SearchPlatformActionCreatorsDefault;
+      const result = obj2.searchGuildChannelTab(obj3);
     }
   }, items);
   const items1 = [arg1, callback];
-  const effect = noop.useEffect(() => {
-    if (!closure_1) {
+  const effect = react.useEffect(() => {
+    const tmp = closure_1;
+    if (!tmp) {
       callback("");
     }
   }, items1);
   const items2 = [searchContext, arg1, callback];
-  const effect1 = noop.useEffect(() => {
+  const effect1 = react.useEffect(() => {
     if (!closure_1) {
-      const debounceResult = _mod12.debounce(callback, closure_4);
-      return SearchPlatformUtilsDefault.subscribeTextInputValue(closure_0, debounceResult, true);
+      const obj = _mod12;
+      const debounceResult = obj.debounce(callback, closure_4);
+      const obj2 = SearchPlatformUtilsDefault;
+      return obj2.subscribeTextInputValue(searchContext, debounceResult, true);
     }
   }, items2);
   const items3 = [searchContext];
-  const effect2 = noop.useEffect(() => () => {
-    const result = closure_1(callback[3]).cleanupGuildChannelTab(searchContext);
+  const effect2 = react.useEffect(() => () => {
+    const obj = closure_1(callback[3]);
+    const result = obj.cleanupGuildChannelTab(searchContext);
   }, items3);
 };

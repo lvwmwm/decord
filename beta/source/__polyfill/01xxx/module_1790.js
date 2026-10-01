@@ -4,19 +4,24 @@
 // Exports: useSharedValue
 
 // Module 1790
-import runOnRuntime from "runOnRuntime" /* 1682 */;
-import _slicedToArray from "module_32" /* 32 */;
+import startMapper from "startMapper" /* 1682 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-require = fn;
-const noop = fn(19);
-({ useEffect: c3, useState: closure_4 } = noop);
+let c3;
+let closure_4;
+({ useEffect: c3, useState: closure_4 } = react);
 
 export const useSharedValue = function useSharedValue(UNDETERMINED) {
-  closure_0 = UNDETERMINED;
-  const first = _slicedToArray(closure_4(() => runOnRuntime.makeMutable(closure_0)), 1)[0];
+  let closure_0 = UNDETERMINED;
+  const first = _slicedToArray(closure_4(() => {
+    const obj = startMapper;
+    return obj.makeMutable(UNDETERMINED);
+  }), 1)[0];
   const items = [first];
   closure_3(() => () => {
-    closure_0(first[3]).cancelAnimation(closure_1_1);
+    const obj = UNDETERMINED(first[3]);
+    obj.cancelAnimation(closure_1_1);
   }, items);
   return first;
 };

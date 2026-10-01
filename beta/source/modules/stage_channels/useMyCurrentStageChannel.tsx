@@ -5,17 +5,19 @@
 // Exports: default
 
 // Module 8964 (useMyCurrentStageChannel)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let channel, voiceChannelId;
+
 const result = size.fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannel.tsx");
 
 export default function useMyCurrentStageChannel() {
   const items = [SelectedChannelStore, ChannelStore];
-  return initialize.useStateFromStores(items, () => {
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => {
     voiceChannelId = voiceChannelId.getVoiceChannelId();
     if (null != voiceChannelId) {
       channel = channel.getChannel(voiceChannelId);

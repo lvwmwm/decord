@@ -9,20 +9,36 @@ import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9088 */;
 import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9090 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { marginTop: 16 }, scrollView: { marginTop: 8, marginBottom: 8, borderRadius: nativeDefault.radii.sm, maxHeight: 140 } };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let obj = { container: { marginTop: 16 }, scrollView: obj2 };
+obj2 = { marginTop: 8, marginBottom: 8, borderRadius: nativeDefault.radii.sm, maxHeight: 140 };
+let closure_8 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventRecurrences.tsx");
 
 export default function GuildEventRecurrences(guildEventId) {
+  let _undefined;
+  let c4;
+  let canViewMoreRecurrences;
+  let guildId;
+  let hideViewMoreButton;
+  let intl;
+  let intl2;
+  let items;
+  let onPress;
+  let recurrenceRule;
+  let recurrenceStartTimes;
   guildEventId = guildEventId.guildEventId;
   ({ onRecurrencePress: importDefault, activeRecurrenceId: dependencyMap } = guildEventId);
   let ref;
@@ -31,41 +47,46 @@ export default function GuildEventRecurrences(guildEventId) {
   ref = ref.useRef(null);
   const tmp2 = closure_8();
   ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: c4 } = useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule));
-  const obj = { style: tmp2.container, children: null };
-  const obj2 = { variant: "heading-md/semibold", children: null };
-  const intl = guildEventId(1115).intl;
-  obj2.children = intl.string(guildEventId(1115).t["D/jjoa"]);
-  const items = [closure_6(guildEventId(4832).Text, obj2), , ];
-  const tmp4 = useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule);
-  const tmp5 = closure_7;
-  const tmp6 = c4;
-  const tmp7 = closure_6;
-  items[1] = closure_6(closure_5, {
+  let obj = { style: tmp2.container, children: items };
+  let obj2 = { variant: "heading-md/semibold", children: intl.string(guildEventId(1115).t["D/jjoa"]) };
+  useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule);
+  const Text = guildEventId(4832).Text;
+  intl = guildEventId(1115).intl;
+  items = [closure_6(Text, obj2), , ];
+  const obj3 = {
     style: tmp2.scrollView,
     ref,
     children: recurrenceStartTimes.map((getTime) => {
-      const fromTimestampResult = SnowflakeUtilsDefault.fromTimestamp(getTime.getTime());
-      return timestampProducer(GuildEventRecurrenceDefault, { recurrenceId: fromTimestampResult, guildEventId, onPress, isActive: fromTimestampResult === dependencyMap }, fromTimestampResult);
+      const obj = SnowflakeUtilsDefault;
+      const fromTimestampResult = obj.fromTimestamp(getTime.getTime());
+      const obj2 = { recurrenceId: fromTimestampResult, guildEventId, onPress: importDefault, isActive: fromTimestampResult === dependencyMap };
+      return metroRequire(GuildEventRecurrenceDefault, obj2, fromTimestampResult);
     })
-  });
+  };
+  items[1] = closure_6(closure_5, obj3);
+  const tmp5 = closure_7;
+  const tmp6 = c4;
+  const tmp7 = closure_6;
   if (canViewMoreRecurrences) {
     canViewMoreRecurrences = !hideViewMoreButton;
   }
   if (canViewMoreRecurrences) {
-    const obj4 = { text: null, onPress: null, size: "sm" };
-    const intl2 = tmp8(1115).intl;
-    obj4.text = intl2.string(tmp8(1115).t["8O7Hpy"]);
-    obj4.onPress = function onPress(stopPropagation) {
-      stopPropagation.stopPropagation();
-      _undefined();
-      const current = ref.current;
-      if (current != null) {
-        current.scrollToEnd();
-      }
+    const obj4 = {
+      text: intl2.string(guildEventId(1115).t["8O7Hpy"]),
+      onPress(stopPropagation) {
+          stopPropagation.stopPropagation();
+          _undefined();
+          const current = ref.current;
+          if (current != null) {
+            current.scrollToEnd();
+          }
+        },
+      size: "sm"
     };
-    canViewMoreRecurrences = tmp7(tmp8(5281).Button, obj4);
+    const Button = tmp8(5281).Button;
+    intl2 = tmp8(1115).intl;
+    canViewMoreRecurrences = tmp7(Button, obj4);
   }
   items[2] = canViewMoreRecurrences;
-  obj.children = items;
   return tmp5(tmp6, obj);
 };

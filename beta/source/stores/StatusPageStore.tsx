@@ -4,57 +4,59 @@
 // Dependencies: [510, 504, 573, 2]
 
 // Module 13300 (StatusPageStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MaintenanceStore = "MaintenanceStore";
+const MaintenanceStore_str = "MaintenanceStore";
 let incident = null;
 let maintenance = null;
 let id = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class MaintenanceStore extends Store {
-}
-const prototype = MaintenanceStore.prototype;
-prototype["initialize"] = function initialize() {
-  const Storage = Storage2.Storage;
-  id = Storage.get(MaintenanceStore);
-};
-prototype["getIncident"] = function getIncident() {
-  return incident;
-};
-prototype["getScheduledMaintenance"] = function getScheduledMaintenance() {
-  let scheduled_until;
-  if (maintenance != null) {
-    scheduled_until = maintenance.scheduled_until;
+  initialize() {
+    const Storage = Storage2.Storage;
+    id = Storage.get(MaintenanceStore_str);
   }
-  if (scheduled_until == null) {
-    let scheduled_for;
+  getIncident() {
+    return incident;
+  }
+  getScheduledMaintenance() {
+    let scheduled_until;
     if (maintenance != null) {
-      scheduled_for = maintenance.scheduled_for;
+      scheduled_until = maintenance.scheduled_until;
     }
-    scheduled_until = scheduled_for;
-  }
-  let tmp3 = null;
-  if (null != maintenance) {
-    tmp3 = null;
-    if (maintenance.id !== id) {
-      if (null == scheduled_until) {
-        tmp3 = maintenance;
-      } else {
-        const _Date = Date;
-        const _Date2 = Date;
-        const timestamp = Date.now();
-        const date = new Date(scheduled_until);
-        tmp3 = null;
+    if (scheduled_until == null) {
+      let scheduled_for;
+      if (maintenance != null) {
+        scheduled_for = maintenance.scheduled_for;
+      }
+      scheduled_until = scheduled_for;
+    }
+    let tmp3 = null;
+    if (null != maintenance) {
+      tmp3 = null;
+      if (maintenance.id !== id) {
+        if (null == scheduled_until) {
+          tmp3 = maintenance;
+        } else {
+          const _Date = Date;
+          const _Date2 = Date;
+          const self = this;
+          const self2 = this;
+          const timestamp = Date.now();
+          new Date(scheduled_until);
+          tmp3 = null;
+        }
       }
     }
+    return tmp3;
   }
-  return tmp3;
-};
+}
+const prototype = MaintenanceStore.prototype;
 MaintenanceStore.displayName = "MaintenanceStore";
-const maintenanceStore = new MaintenanceStore(DispatcherDefault, {
+const obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
     incident = null;
   },
@@ -70,11 +72,11 @@ const maintenanceStore = new MaintenanceStore(DispatcherDefault, {
     } else {
       id = maintenance.id;
       const Storage = Storage2.Storage;
-      const result = Storage.set(MaintenanceStore, id);
+      const result = Storage.set(MaintenanceStore_str, id);
     }
   }
-});
-const size = fn(2);
+};
+const maintenanceStore = new MaintenanceStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("stores/StatusPageStore.tsx");
 
 export default maintenanceStore;

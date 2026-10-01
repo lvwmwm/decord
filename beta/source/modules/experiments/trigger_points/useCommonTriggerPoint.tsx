@@ -5,26 +5,28 @@
 // Exports: useCommonTriggerPoint
 
 // Module 12997 (useCommonTriggerPoint)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import ExperimentStore from "ExperimentStore" /* 4750 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/experiments/trigger_points/useCommonTriggerPoint.tsx");
 
 export const useCommonTriggerPoint = function useCommonTriggerPoint(OpenNitroTriggerPoint) {
-  _require = OpenNitroTriggerPoint;
-  let items = [ExperimentStore];
-  const obj = require("initialize");
-  const items1 = [OpenNitroTriggerPoint, , ];
-  [arr2[1], arr2[2]] = require("initialize").useStateFromStoresArray(items, () => {
+  const f97314 = () => {
     const items = [authStore.getAllUserExperimentDescriptors(), authStore.getGuildExperiments()];
     return items;
-  });
-  const effect = noop.useEffect(() => {
+  };
+  _require = OpenNitroTriggerPoint;
+  let items = [ExperimentStore];
+  const obj = require("get initialized");
+  const items1 = [OpenNitroTriggerPoint, , ];
+  [arr2[1], arr2[2]] = obj.useStateFromStoresArray(items, f97314);
+  _slicedToArray(obj.useStateFromStoresArray(items, f97314), 2);
+  const effect = react.useEffect(() => {
     OpenNitroTriggerPoint.trigger();
   }, items1);
 };

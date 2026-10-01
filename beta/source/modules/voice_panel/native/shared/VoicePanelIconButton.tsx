@@ -4,28 +4,27 @@
 // Dependencies: [19, 21, 6494, 7363, 2]
 
 // Module 16859 (VoicePanelIconButton)
+import Fragment from "Fragment" /* 21 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6494 */;
-import IconButton from "IconButton" /* 7363 */;
-import noop from "module_19" /* 19 */;
+import IconButton2 from "IconButton" /* 7363 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelIconButton.tsx");
-
-export default noop.memo(noop.forwardRef((overrideVariant, ref) => {
+const jsx = Fragment.jsx;
+const memoResult = react.memo(react.forwardRef((overrideVariant, ref) => {
+  let layout;
+  let style;
   let str = overrideVariant.overrideVariant;
   ({ style, layout } = overrideVariant);
   const merged = Object.assign(overrideVariant, Object.assign({ style: 0, overrideVariant: 0, layout: 0 }));
-  const obj = { ref, style, layout, children: null };
-  const obj2 = {};
+  ReanimatedNativeViewDefault;
+  const IconButton = IconButton2.IconButton;
   const merged1 = Object.assign(merged);
-  obj2.size = "sm";
   if (str == null) {
     str = "secondary-overlay";
   }
-  obj2.variant = str;
-  obj2.maxFontSizeMultiplier = 2;
-  obj.children = jsx(IconButton.IconButton, {});
-  return jsx(ReanimatedNativeViewDefault, { ref, style, layout, children: null });
+  return <tmp3 ref={arg1} style={style} layout={layout}>{null}</tmp3>;
 }));
+const result = size.fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelIconButton.tsx");
+
+export default memoResult;

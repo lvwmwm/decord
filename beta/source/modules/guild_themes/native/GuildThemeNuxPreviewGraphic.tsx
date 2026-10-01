@@ -5,25 +5,25 @@
 // Exports: default
 
 // Module 15795 (GuildThemeNuxPreviewGraphic)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import GuildThemePreviewArtDefault from "GuildThemePreviewArt" /* 15796 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { container: { width: "100%", aspectRatio: 1.7777777777777777, alignItems: "center", justifyContent: "center", marginBottom: nativeDefault.space.PX_24 } };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const obj = { container: { width: "100%", aspectRatio: 1.7777777777777777, alignItems: "center", justifyContent: "center", marginBottom: nativeDefault.space.PX_24 } };
+({ width: "100%", aspectRatio: 1.7777777777777777, alignItems: "center", justifyContent: "center", marginBottom: nativeDefault.space.PX_24 });
+let closure_4 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_themes/native/GuildThemeNuxPreviewGraphic.tsx");
 
 export default function GuildThemeNuxPreviewGraphic(arg0) {
+  let isPersonal;
+  let themeSettings;
   ({ themeSettings, isPersonal } = arg0);
-  const obj = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", style: closure_4().container, children: null };
-  let tmp4 = null;
-  if (!isPersonal) {
-    tmp4 = themeSettings;
-  }
-  obj.children = jsx(GuildThemePreviewArtDefault, { themeSettings: tmp4 });
-  return <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={closure_4().container}>{null}</View>;
+  GuildThemePreviewArtDefault;
+  return <tmp2 accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={closure_4().container}>{null}</tmp2>;
 };

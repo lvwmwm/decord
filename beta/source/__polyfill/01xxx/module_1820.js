@@ -6,8 +6,6 @@
 // Module 1820
 import configureProps from "configureProps" /* 1737 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const createAnimatedPropAdapter = function createAnimatedPropAdapter(arg0, arr) {
   const obj = {};
@@ -16,6 +14,7 @@ export const createAnimatedPropAdapter = function createAnimatedPropAdapter(arg0
       obj[item] = true;
     });
   }
-  const result = configureProps.addWhitelistedNativeProps(obj);
+  const obj2 = configureProps;
+  const result = obj2.addWhitelistedNativeProps(obj);
   return arg0;
 };

@@ -6,56 +6,78 @@
 
 // Module 15448 (PersonalizationDisclaimerActionSheet)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl4 from "intl" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
-import ButtonGroup from "ButtonGroup" /* 5745 */;
+import ButtonGroup2 from "ButtonGroup" /* 5745 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8037 */;
-import noop from "module_19" /* 19 */;
+import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8037 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_16 }, header: null };
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
-obj2.header = { paddingVertical: nativeDefault.space.PX_8, alignSelf: "center", textAlign: "center" };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let BottomSheet;
+
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, header: obj3 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { paddingVertical: nativeDefault.space.PX_8, alignSelf: "center", textAlign: "center" };
+let closure_7 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/collectibles/native/PersonalizationDisclaimerActionSheet.tsx");
 
 export default function PersonalizationDisclaimerActionSheet() {
+  let LinkExternalSmallIcon;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let items1;
+  let obj5;
   const tmp = closure_7();
-  const callback = noop.useCallback(() => {
-    const obj = LinkingDefault;
-    obj.openURL(HelpdeskUtilsDefault.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
+  const callback = react.useCallback(() => {
+    const openURL = LinkingDefault.openURL;
+    LinkingDefault;
+    const obj = HelpdeskUtilsDefault;
+    openURL(obj.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
   }, []);
-  let obj = { contentStyles: tmp.container, children: null };
-  const obj2 = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header, children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t.euks4U);
-  const items = [hasOwnProperty(Text_Text.Text, obj2), ];
-  const obj3 = { children: null };
-  const obj4 = { size: "lg", text: null, onPress: null, icon: null, iconPosition: "end" };
-  const intl2 = util.intl;
-  obj4.text = intl2.string(util.t.hvVgAZ);
-  obj4.onPress = callback;
-  obj4.icon = hasOwnProperty(LinkExternalSmallIcon.LinkExternalSmallIcon, { color: nativeDefault.colors.WHITE });
-  const items1 = [hasOwnProperty(components_Button_Button.Button, obj4), ];
-  const obj6 = { variant: "tertiary", size: "lg", text: null, onPress: null };
-  const intl3 = util.intl;
-  obj6.text = intl3.string(util.t.WAI6xu);
-  obj6.onPress = function onPress() {
-    return ActionSheetActionCreatorsDefault.hideActionSheet();
+  let obj = { contentStyles: tmp.container, children: items };
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const obj2 = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header, children: intl.string(intl4.t.euks4U) };
+  const Text = Text_Text.Text;
+  intl = intl4.intl;
+  items = [hasOwnProperty(Text, obj2), ];
+  const obj3 = { children: items1 };
+  const ButtonGroup = ButtonGroup2.ButtonGroup;
+  const obj4 = { size: "lg", text: intl2.string(intl4.t.hvVgAZ), onPress: callback, icon: hasOwnProperty(LinkExternalSmallIcon, obj5), iconPosition: "end" };
+  const Button = components_Button_Button.Button;
+  intl2 = intl4.intl;
+  obj5 = { color: nativeDefault.colors.WHITE };
+  LinkExternalSmallIcon = LinkExternalSmallIcon2.LinkExternalSmallIcon;
+  items1 = [hasOwnProperty(Button, obj4), ];
+  const obj6 = {
+    variant: "tertiary",
+    size: "lg",
+    text: intl3.string(intl4.t.WAI6xu),
+    onPress() {
+      const obj = ActionSheetActionCreatorsDefault;
+      return obj.hideActionSheet();
+    }
   };
-  items1[1] = hasOwnProperty(components_Button_Button.Button, obj6);
-  obj3.children = items1;
-  items[1] = timestampProducer(ButtonGroup.ButtonGroup, obj3);
-  obj.children = items;
-  return timestampProducer(Sheet_BottomSheet.BottomSheet, obj);
+  const Button2 = components_Button_Button.Button;
+  intl3 = intl4.intl;
+  items1[1] = hasOwnProperty(Button2, obj6);
+  items[1] = metroRequire(ButtonGroup, obj3);
+  return metroRequire(BottomSheet, obj);
 };

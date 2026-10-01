@@ -7,24 +7,30 @@
 // Module 8141 (useGameProfileStoreWebsites)
 import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 8142 */;
 import SteamReleaseStatus from "SteamReleaseStatus" /* 8144 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let importDefault;
 
-require = fn;
-const set = new Set(["1402418703554842694", "356877880938070016"]);
-let items = [fn(8142).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES, fn(8142).ThirdPartyGameApplicationWebsiteCategory.STEAM, fn(8142).ThirdPartyGameApplicationWebsiteCategory.ROBLOX, fn(8142).ThirdPartyGameApplicationWebsiteCategory.BATTLENET, fn(8142).ThirdPartyGameApplicationWebsiteCategory.RIOT, fn(8142).ThirdPartyGameApplicationWebsiteCategory.MINECRAFT];
-const size = fn(2);
+new Set(["1402418703554842694", "356877880938070016"]);
+let items = [ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.EPICGAMES, ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.STEAM, ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.ROBLOX, ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.BATTLENET, ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.RIOT, ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.MINECRAFT];
 const result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileStoreWebsites.tsx");
 
 export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(data) {
+  let closure_1;
+  let id1;
+  let steamWebsiteUrl;
+  let tmp = id1;
+  let tmp2 = steamWebsiteUrl(id1[2]);
   let id;
+  const useSteamWebsiteUrl = tmp2.useSteamWebsiteUrl;
   if (data != null) {
     id = data.id;
   }
-  steamWebsiteUrl = steamWebsiteUrl(id1[2]).useSteamWebsiteUrl(id);
-  const tmp4 = require("useXboxGamePassStoreUrl")(data);
-  importDefault = tmp4;
+  steamWebsiteUrl = useSteamWebsiteUrl(id);
+  const tmp5 = require("useXboxGamePassStoreUrl")(data);
+  importDefault = tmp5;
   id1 = undefined;
   if (data != null) {
     id1 = data.id;
@@ -37,26 +43,18 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
   if (data != null) {
     steamReleaseStatus = data.steamReleaseStatus;
   }
-  items = [steamWebsiteUrl, websites, id1, steamReleaseStatus, tmp4];
+  items = [steamWebsiteUrl, websites, id1, steamReleaseStatus, tmp5];
   return websites.useMemo(() => {
     if (null != websites) {
+      let tmp2 = id1;
       if (null != id1) {
         let found;
-        if (arr != null) {
+        if (websites != null) {
           found = arr.filter((category) => {
-            let tmp3 = category.category === steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES;
-            if (tmp3) {
-              tmp3 = !steamReleaseStatus.has(dependencyMap);
-            }
-            let tmp6 = !tmp3;
-            if (!tmp3) {
-              let hasItem = category.category !== tmp(tmp2[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM;
-              if (!hasItem) {
-                hasItem = closure_1_4 !== tmp(tmp2[4]).SteamReleaseStatus.RETIRED_ABANDONED;
-              }
-              if (hasItem) {
-                hasItem = items.includes(category.category);
-              }
+            let tmp6 = !(category.category === steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES && !steamReleaseStatus.has(closure_1_2));
+            const tmp3 = category.category === steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES && !steamReleaseStatus.has(closure_1_2);
+            if (tmp6) {
+              const hasItem = (category.category !== tmp(tmp2[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM || closure_1_4 !== tmp(tmp2[4]).SteamReleaseStatus.RETIRED_ABANDONED) && items.includes(category.category);
               tmp6 = hasItem;
             }
             return tmp6;
@@ -66,21 +64,26 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
           found = [];
         }
         let someResult = null == steamWebsiteUrl;
+        let tmp3 = steamWebsiteUrl;
         if (!someResult) {
+          let tmp6 = require;
           someResult = steamReleaseStatus === SteamReleaseStatus.SteamReleaseStatus.RETIRED_ABANDONED;
         }
         if (!someResult) {
-          someResult = found.some((category) => category.category === steamWebsiteUrl(8142).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          someResult = found.some((category) => category.category === steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM);
         }
         if (!someResult) {
-          const obj = { category: ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.STEAM, url: steamWebsiteUrl };
-          found.push(obj);
+          const push = found.push;
+          const obj = { category: ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.STEAM, url: tmp3 };
+          push(obj);
         }
         const sorted = found.sort((category, category2) => {
           let num = -1;
-          if (category.category !== steamWebsiteUrl(8142).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
+          const tmp = steamWebsiteUrl;
+          const tmp2 = id1;
+          if (category.category !== steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
             let num2 = 0;
-            if (category2.category === steamWebsiteUrl(8142).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
+            if (category2.category === tmp(tmp2[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
               num2 = 1;
             }
             num = num2;
@@ -93,6 +96,8 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
         }
         return sorted;
       }
+    } else {
+      let tmp = closure_1;
     }
     return [];
   }, items);

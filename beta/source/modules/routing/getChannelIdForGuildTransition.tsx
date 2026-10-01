@@ -5,9 +5,12 @@
 // Exports: getChannelIdForGuildTransition
 
 // Module 6638 (getChannelIdForGuildTransition)
+import Constants from "Constants" /* 1074 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import VibegrationsUtils from "VibegrationsUtils" /* 5370 */;
 import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6643 */;
+import canUseGuildSpace from "canUseGuildSpace" /* 6645 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6647 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 import GuildOnboardingStore from "GuildOnboardingStore" /* 6517 */;
@@ -16,23 +19,22 @@ import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6639 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ME = fn(1074).ME;
-const StaticChannelRoute = fn(2052).StaticChannelRoute;
-const size = fn(2);
+const ME = Constants.ME;
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 const result = size.fileFinishedImporting("modules/routing/getChannelIdForGuildTransition.tsx");
 
-export const getChannelIdForGuildTransition = function getChannelIdForGuildTransition(guildId) {
-  const channelId = SelectedChannelStore.getChannelId(guildId);
-  const defaultChannel = GuildChannelStore.getDefaultChannel(guildId);
-  let id;
+export const getChannelIdForGuildTransition = function getChannelIdForGuildTransition(id) {
+  const channelId = SelectedChannelStore.getChannelId(id);
+  const defaultChannel = GuildChannelStore.getDefaultChannel(id);
+  id = undefined;
   if (defaultChannel != null) {
     id = defaultChannel.id;
   }
   if (id == null) {
     let tmp5;
-    if (guildId === ME) {
+    if (id === ME) {
       const privateChannelIds = PrivateChannelSortStore.getPrivateChannelIds();
       let first;
       if (privateChannelIds.length > 0) {
@@ -43,48 +45,50 @@ export const getChannelIdForGuildTransition = function getChannelIdForGuildTrans
     id = tmp5;
   }
   if (channelId === StaticChannelRoute.GUILD_ONBOARDING) {
-    if (!GuildOnboardingStore.shouldShowOnboarding(guildId)) {
+    if (!GuildOnboardingStore.shouldShowOnboarding(id)) {
       return id;
     }
   }
   if (channelId === StaticChannelRoute.GUILD_HOME) {
-    if (!obj.canSeeOnboardingHome(guildId)) {
+    const obj = OnboardingHomeUtils;
+    if (!obj.canSeeOnboardingHome(id)) {
       return id;
     }
-    obj = OnboardingHomeUtils;
   }
   if (channelId === StaticChannelRoute.GUILD_SPACE) {
-    if (obj6.canUseGuildSpace(GuildStore.getGuild(guildId), "getChannelIdForGuildTransition")) {
+    const obj6 = canUseGuildSpace;
+    if (obj6.canUseGuildSpace(GuildStore.getGuild(id), "getChannelIdForGuildTransition")) {
       id = channelId;
     }
     return id;
   } else {
-    if (channelId === tmp8.GAME_SHOP) {
-      if (obj2.canSeeGameShop(guildId)) {
+    if (channelId === StaticChannelRoute.GAME_SHOP) {
+      const obj2 = SlayerStorefrontUtils;
+      if (obj2.canSeeGameShop(id)) {
         return channelId;
       }
-      obj2 = SlayerStorefrontUtils;
     }
-    if (channelId === tmp8.VIBEGRATIONS) {
-      const guild = GuildStore.getGuild(guildId);
+    if (channelId === StaticChannelRoute.VIBEGRATIONS) {
+      const guild = GuildStore.getGuild(id);
       let tmp21 = id;
       if (null != guild) {
         tmp21 = id;
+        const obj5 = VibegrationsUtils;
         if (obj5.canAccessVibegrations(guild, "getChannelIdForGuildTransition")) {
           tmp21 = channelId;
         }
-        obj5 = VibegrationsUtils;
       }
       return tmp21;
     } else {
       const channel = ChannelStore.getChannel(channelId);
       if (null != channel) {
+        let tmp17;
         if (!channel.isGuildVocal()) {
-          let tmp17 = channelId;
-          if (obj4.isFavoritesGuildId(guildId)) {
+          tmp17 = channelId;
+          const obj4 = FavoritesUtils;
+          if (obj4.isFavoritesGuildId(id)) {
             tmp17 = channelId;
           }
-          obj4 = FavoritesUtils;
         }
         return tmp17;
       }

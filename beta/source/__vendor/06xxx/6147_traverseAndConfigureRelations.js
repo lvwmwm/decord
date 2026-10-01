@@ -6,38 +6,40 @@
 
 // Module 6147 (traverseAndConfigureRelations)
 import tagMessage from "tagMessage" /* 6078 */;
-import ComposedGestureName from "ComposedGestureName" /* 6132 */;
+import _mod6140 from "module_6140" /* 6140 */;
 
-require = arg1;
-let dependencyMap = arg6;
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+let tmp;
+const ComposedGestureName = tmp(6132);
 function traverseAndConfigureRelations(gestures, map, set, items) {
   _require = gestures;
   dependencyMap = map;
   if (items === undefined) {
     items = [];
   }
+  let obj = require("module_6140");
+  const tmp2 = _require;
   if (obj.isComposedGesture(gestures)) {
     gestures = gestures.gestures;
     let item = gestures.forEach((type) => {
+      const obj = _mod6140;
       if (obj.isComposedGesture(type)) {
-        let tmp13 = gestures.type !== tmp(6132).ComposedGestureName.Simultaneous;
-        if (tmp13) {
-          tmp13 = type.type === tmp(6132).ComposedGestureName.Simultaneous;
-        }
+        const tmp13 = gestures.type !== tmp(6132).ComposedGestureName.Simultaneous && type.type === tmp(6132).ComposedGestureName.Simultaneous;
         if (tmp13) {
           const handlerTags = type.handlerTags;
           const item = handlerTags.forEach((item) => set.add(item));
         }
-        let tmp15 = tmp12.type === tmp(6132).ComposedGestureName.Simultaneous;
-        if (tmp15) {
-          tmp15 = type.type !== tmp(6132).ComposedGestureName.Simultaneous;
-        }
+        const tmp15 = tmp12.type === tmp(6132).ComposedGestureName.Simultaneous && type.type !== tmp(6132).ComposedGestureName.Simultaneous;
         if (tmp15) {
           const handlerTags1 = type.handlerTags;
           const item1 = handlerTags1.forEach((item) => set.delete(item));
         }
-        traverseAndConfigureRelations(type, closure_1, set, items);
+        const length = items.length;
+        traverseAndConfigureRelations(type, map, set, items);
         let tmp24 = type.type === tmp(6132).ComposedGestureName.Simultaneous;
+        const tmp17 = items;
         if (tmp24) {
           tmp24 = tmp12.type !== tmp(6132).ComposedGestureName.Simultaneous;
         }
@@ -45,63 +47,61 @@ function traverseAndConfigureRelations(gestures, map, set, items) {
           const handlerTags2 = tmp12.handlerTags;
           const item2 = handlerTags2.forEach((item) => set.delete(item));
         }
-        let tmp26 = type.type !== tmp(6132).ComposedGestureName.Simultaneous;
-        if (tmp26) {
-          tmp26 = tmp12.type === tmp(6132).ComposedGestureName.Simultaneous;
-        }
+        const tmp26 = type.type !== tmp(6132).ComposedGestureName.Simultaneous && tmp12.type === tmp(6132).ComposedGestureName.Simultaneous;
         if (tmp26) {
           const handlerTags3 = tmp12.handlerTags;
           const item3 = handlerTags3.forEach((item) => set.add(item));
         }
-        if (gestures.type === tmp(6132).ComposedGestureName.Exclusive) {
+        if (gestures.type === ComposedGestureName.ComposedGestureName.Exclusive) {
           const handlerTags4 = type.handlerTags;
           const item4 = handlerTags4.forEach((item) => items.push(item));
         }
-        let tmp29 = type.type === tmp(6132).ComposedGestureName.Exclusive;
+        const tmp29 = type.type === tmp(6132).ComposedGestureName.Exclusive && tmp12.type !== tmp(6132).ComposedGestureName.Exclusive;
         if (tmp29) {
-          tmp29 = tmp12.type !== tmp(6132).ComposedGestureName.Exclusive;
+          tmp17.length = length;
         }
-        if (tmp29) {
-          tmp17.length = items.length;
-        }
-        tmp17 = items;
       } else {
-        traverseAndConfigureRelations(type, closure_1, set, items);
+        const deleteResult = set.delete(type.handlerTag);
+        traverseAndConfigureRelations(type, map, set, items);
+        const arr = items;
+        const obj2 = set;
         if (deleteResult) {
           obj2.add(type.handlerTag);
         }
-        if (gestures.type === tmp(6132).ComposedGestureName.Exclusive) {
+        if (gestures.type === ComposedGestureName.ComposedGestureName.Exclusive) {
           arr.push(type.handlerTag);
         }
-        arr = items;
-        deleteResult = set.delete(type.handlerTag);
-        obj2 = set;
       }
     });
   } else {
-    gestures.gestureRelations = tmp(6140).prepareRelations(gestures.config, gestures.handlerTag);
+    const tmp2Result = tmp2(6140);
+    gestures.gestureRelations = tmp2Result.prepareRelations(gestures.config, gestures.handlerTag);
     const push = simultaneousHandlers.push;
     const items1 = [];
-    HermesBuiltin.arraySpread(set, 0);
-    HermesBuiltin.apply(items1, gestures.gestureRelations.simultaneousHandlers);
+    HermesBuiltin.arraySpread(items1, set, 0);
+    HermesBuiltin.apply(push, items1, gestures.gestureRelations.simultaneousHandlers);
     const waitFor = gestures.gestureRelations.waitFor;
     const push2 = waitFor.push;
     const items2 = [];
-    HermesBuiltin.arraySpread(items, 0);
-    HermesBuiltin.apply(items2, waitFor);
+    const tmp12 = items;
+    HermesBuiltin.arraySpread(items2, items, 0);
+    let tmp15 = items2;
+    HermesBuiltin.apply(push2, items2, waitFor);
     let obj2 = { waitFor: gestures.gestureRelations.waitFor, simultaneousHandlers: gestures.gestureRelations.simultaneousHandlers, blocksHandlers: gestures.gestureRelations.blocksHandlers };
     const result = map.set(gestures.handlerTag, obj2);
   }
-  obj = require("module_6140");
-  tmp = _require;
 }
+let set = new Set();
 
 export { traverseAndConfigureRelations };
 export const configureRelations = function configureRelations(externalSimultaneousHandlers) {
-  const map = new Map();
+  map = new Map();
+  const obj2 = _mod6140;
   if (obj2.isComposedGesture(externalSimultaneousHandlers)) {
     const _Set = Set;
-    const set = new Set(externalSimultaneousHandlers.externalSimultaneousHandlers);
+    const self = this;
+    const self2 = this;
+    set = new Set(externalSimultaneousHandlers.externalSimultaneousHandlers);
     if (externalSimultaneousHandlers.type === ComposedGestureName.ComposedGestureName.Simultaneous) {
       const handlerTags = externalSimultaneousHandlers.handlerTags;
       const item = handlerTags.forEach((item) => set.add(item));
@@ -113,10 +113,14 @@ export const configureRelations = function configureRelations(externalSimultaneo
   return map;
 };
 export const ensureNativeDetectorComponent = function ensureNativeDetectorComponent(ReanimatedNativeDetector) {
-  if (!ReanimatedNativeDetector) {
+  const tmp = ReanimatedNativeDetector;
+  if (!tmp) {
     const _Error = Error;
-    const error = new Error(tagMessage.tagMessage("Gesture expects to run on the UI thread, but failed to create the Reanimated NativeDetector."));
+    const self = this;
+    const self2 = this;
+    const obj = tagMessage;
+    const error = new Error(obj.tagMessage("Gesture expects to run on the UI thread, but failed to create the Reanimated NativeDetector."));
     throw error;
   }
 };
-export const EMPTY_SET = new Set();
+export const EMPTY_SET = set;

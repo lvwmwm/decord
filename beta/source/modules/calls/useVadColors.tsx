@@ -5,18 +5,18 @@
 // Exports: default
 
 // Module 8904 (useVadColors)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/calls/useVadColors.tsx");
 
 export default function useVadColors(arg0) {
   ({ userId: require, guildId: dependencyMap } = arg0);
   const items = [UserStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => {
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let user = null;
     if (null != require) {
       user = UserStore.getUser(tmp);
@@ -24,7 +24,8 @@ export default function useVadColors(arg0) {
     return user;
   });
   const items1 = [GuildMemberStore];
-  const stateFromStores1 = initialize.useStateFromStores(items1, () => {
+  const obj2 = get_initialized;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     let member = null;
     if (null != require) {
       member = null;

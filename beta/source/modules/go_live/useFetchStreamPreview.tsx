@@ -5,57 +5,63 @@
 // Exports: default
 
 // Module 9522 (useFetchStreamPreview)
+import Constants from "Constants" /* 1085 */;
 import StreamActionCreators from "StreamActionCreators" /* 4978 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
 import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 4980 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_4, dependencyMap;
 
-require = fn;
-const BasicPermissions = fn(1085).BasicPermissions;
-const size = fn(2);
+let react = react_mod;
+const BasicPermissions = Constants.BasicPermissions;
 const result = size.fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
 
 export default function useFetchStreamPreview(arg0, arg1, arg2) {
+  let closure_0;
+  let closure_1;
+  let closure_2;
+  let isLoading;
+  let previewUrl;
+  let shouldFetchPreview;
   _require = arg0;
   dependencyMap = arg1;
-  noop = arg2;
-  closure_3 = tmp;
+  react = arg2;
+  let tmp = null == arg1 || null == arg2;
+  let closure_3 = tmp;
+  let obj = require("get initialized");
   const items = [closure_4];
-  closure_4 = require("initialize").useStateFromStores(items, () => ChannelStore.getChannel(closure_1));
-  let obj = require("initialize");
+  closure_4 = obj.useStateFromStores(items, () => ChannelStore.getChannel(closure_1));
   const items1 = [shouldFetchPreview];
-  let stateFromStores = require("initialize").useStateFromStores(items1, () => {
-    let canBasicChannelResult = null != closure_4;
-    if (canBasicChannelResult) {
-      canBasicChannelResult = PermissionStore.canBasicChannel(BasicPermissions.CONNECT, tmp);
-    }
+  const obj2 = require("get initialized");
+  let stateFromStores = obj2.useStateFromStores(items1, () => {
+    const canBasicChannelResult = null != closure_4 && PermissionStore.canBasicChannel(BasicPermissions.CONNECT, tmp);
     return canBasicChannelResult;
   });
-  const obj2 = require("initialize");
   const items2 = [stateFromStores];
-  const stateFromStores1 = require("initialize").useStateFromStores(items2, () => SelectedChannelStore.getVoiceChannelId() === closure_1);
-  const obj3 = require("initialize");
+  const obj3 = require("get initialized");
+  const stateFromStores1 = obj3.useStateFromStores(items2, () => SelectedChannelStore.getVoiceChannelId() === closure_1);
   const items3 = [closure_3];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items3, () => {
+  const obj4 = require("get initialized");
+  const stateFromStoresObject = obj4.useStateFromStoresObject(items3, () => {
+    let previewURL;
     let isPreviewLoading = !closure_3;
     let shouldFetchPreviewResult = isPreviewLoading;
     if (!closure_3) {
       shouldFetchPreviewResult = ApplicationStreamPreviewStore.shouldFetchPreview(closure_0, closure_1, closure_2);
     }
-    const obj = { shouldFetchPreview: shouldFetchPreviewResult, previewUrl: null, isLoading: null };
-    let previewURL = null;
+    const obj = { shouldFetchPreview: shouldFetchPreviewResult, previewUrl: previewURL, isLoading: isPreviewLoading };
+    previewURL = null;
     if (!closure_3) {
       previewURL = ApplicationStreamPreviewStore.getPreviewURL(closure_0, closure_1, closure_2);
     }
-    obj.previewUrl = previewURL;
     if (!closure_3) {
       isPreviewLoading = ApplicationStreamPreviewStore.getIsPreviewLoading(closure_0, closure_1, closure_2);
     }
-    obj.isLoading = isPreviewLoading;
     return obj;
   });
   shouldFetchPreview = stateFromStoresObject.shouldFetchPreview;
@@ -63,22 +69,18 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
   if (!stateFromStores) {
     stateFromStores = stateFromStores1;
   }
-  const items4 = [shouldFetchPreview, arg1, arg0, arg2, null == arg1 || null == arg2, stateFromStores];
-  const effect = noop.useEffect(() => {
-    let tmp = shouldFetchPreview;
-    if (shouldFetchPreview) {
-      tmp = !closure_3;
-    }
+  const items4 = [shouldFetchPreview, arg1, arg0, arg2, tmp, stateFromStores];
+  const effect = react.useEffect(() => {
+    const tmp = shouldFetchPreview && !closure_3 && stateFromStores;
     if (tmp) {
-      tmp = stateFromStores;
-    }
-    if (tmp) {
-      const streamPreview = StreamActionCreators.fetchStreamPreview(closure_0, closure_1, closure_2);
+      const obj = StreamActionCreators;
+      const streamPreview = obj.fetchStreamPreview(closure_0, closure_1, closure_2);
     }
   }, items4);
-  if (!(null == arg1 || null == arg2)) {
+  if (!tmp) {
+    let obj5;
     if (stateFromStores) {
-      let obj5 = { previewUrl, isLoading };
+      obj5 = { previewUrl, isLoading };
     }
     return obj5;
   }

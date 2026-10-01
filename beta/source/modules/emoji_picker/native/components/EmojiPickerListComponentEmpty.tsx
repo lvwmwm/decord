@@ -4,48 +4,54 @@
 // Dependencies: [19, 17, 21, 4836, 576, 9778, 9782, 6045, 1177, 1115, 2]
 
 // Module 9777 (EmojiPickerListComponentEmpty)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
+import intl2 from "intl" /* 1115 */;
 import SearchEmpty from "SearchEmpty" /* 9778 */;
 import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9782 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ScrollView = fn(17).ScrollView;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: { color: nativeDefault.colors.TEXT_SUBTLE }, emptyStateImage: null };
-let obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
-obj.emptyStateImage = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
-let closure_5 = createStyles.createStyles(obj);
-const obj4 = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponentEmpty.tsx");
-
-export default noop.memo(function EmojiPickerListComponentEmpty(insetBottom) {
+let obj2;
+let obj3;
+const ScrollView = react_native.ScrollView;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: obj2, emptyStateImage: obj3 };
+obj2 = { color: nativeDefault.colors.TEXT_SUBTLE };
+createStyles = createStyles.createStyles;
+obj3 = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
+let closure_5 = createStyles(obj);
+const memoResult = react.memo(function EmojiPickerListComponentEmpty(insetBottom) {
+  let inActionSheet;
+  let insetTop;
+  let intl;
   ({ inActionSheet, insetTop } = insetBottom);
   insetBottom = insetBottom.insetBottom;
   const items = [insetBottom, insetTop];
-  const memo = noop.useMemo(() => ({ marginBottom: insetBottom, marginTop: insetTop, flex: 1 }), items);
   const tmp = closure_5();
-  const searchEmptySource = SearchEmpty.useSearchEmptySource();
-  const modalDismissGuardRefreshControl = useModalDismissGuardRefreshControl.useModalDismissGuardRefreshControl();
+  const memo = react.useMemo(() => ({ marginBottom: insetBottom, marginTop: insetTop, flex: 1 }), items);
+  const obj = SearchEmpty;
+  const searchEmptySource = obj.useSearchEmptySource();
+  const obj2 = useModalDismissGuardRefreshControl;
+  const modalDismissGuardRefreshControl = obj2.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
     let BottomSheetScrollView = tmp3(6045).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
-  const obj3 = { contentContainerStyle: memo, keyboardShouldPersistTaps: "always", refreshControl: null, children: null };
   let tmp8;
   if (inActionSheet) {
     tmp8 = modalDismissGuardRefreshControl;
   }
-  obj3.refreshControl = tmp8;
-  const obj6 = { source: searchEmptySource, body: null, bodyStyle: null, containerStyle: null, imageStyle: null };
-  const intl = tmp3(1115).intl;
-  obj6.body = intl.string(util.t.IxxiKF);
+  ({ source: searchEmptySource, body: intl.string(intl2.t.IxxiKF), bodyStyle: null, containerStyle: null, imageStyle: null });
+  const RefreshEmptyState = tmp3(1177).RefreshEmptyState;
+  intl = tmp3(1115).intl;
   ({ emptyStateBody: obj4.bodyStyle, emptyStateContainer: obj4.containerStyle, emptyStateImage: obj4.imageStyle } = tmp);
-  obj3.children = jsx(native.RefreshEmptyState, { source: searchEmptySource, body: null, bodyStyle: null, containerStyle: null, imageStyle: null });
-  return <BottomSheetScrollView contentContainerStyle={memo} keyboardShouldPersistTaps="always" refreshControl={null}>{null}</BottomSheetScrollView>;
+  return <BottomSheetScrollView contentContainerStyle={memo} keyboardShouldPersistTaps="always" refreshControl={tmp8}>{null}</BottomSheetScrollView>;
 });
+const result = size.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponentEmpty.tsx");
+
+export default memoResult;

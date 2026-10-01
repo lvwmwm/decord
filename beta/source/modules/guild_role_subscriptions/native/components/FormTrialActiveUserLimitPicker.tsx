@@ -5,42 +5,57 @@
 // Exports: default
 
 // Module 17576 (FormTrialActiveUserLimitPicker)
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-let c4 = "GuildRoleSubscriptionTrialActiveUserLimitSelect";
-const size = fn(2);
+let dependencyMap;
+
+const jsx = Fragment.jsx;
+const GuildRoleSubscriptionTrialActiveUserLimitSelect = "GuildRoleSubscriptionTrialActiveUserLimitSelect";
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormTrialActiveUserLimitPicker.tsx");
 
 export default function FormTrialActiveUserLimitPicker(activeTrialUserlimit) {
+  let items;
+  let stringResult;
   const str = activeTrialUserlimit.activeTrialUserlimit;
   const onChange = activeTrialUserlimit.onChange;
+  dependencyMap = undefined;
+  let tmp = dependencyMap;
+  const disabled = activeTrialUserlimit.disabled;
   dependencyMap = onChange(17577)();
+  let tmp2 = jsx;
+  const tmp3 = onChange(13440);
   if (null == str) {
     let intl = str(1115).intl;
-    let stringResult = intl.string(str(1115).t.zHfL6o);
+    stringResult = intl.string(str(1115).t.zHfL6o);
   } else {
     stringResult = str.toString();
   }
-  return jsx(onChange(13440), {
+  let obj = {
     label: stringResult,
     onPress() {
-      const obj2 = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
-      const obj = ActionSheetActionCreatorsDefault;
-      const intl = util.intl;
-      obj2.title = intl.string(util.t["/JD9oe"]);
-      obj2.items = items;
-      obj2.onItemSelect = function onItemSelect(arg0) {
-        closure_1_1(arg0);
-        onChange(closure_2[5]).hideActionSheet(closure_2_4);
+      let intl;
+      const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+      let obj = {
+        title: intl.string(intl2.t["/JD9oe"]),
+        items,
+        onItemSelect(arg0) {
+          closure_1_1(arg0);
+          const obj = onChange(items[5]);
+          obj.hideActionSheet(GuildRoleSubscriptionTrialActiveUserLimitSelect);
+        },
+        selectedItem: str,
+        hasIcons: false
       };
-      obj2.selectedItem = str;
-      obj.openLazy(asyncRequireImpl(8729, dependencyMap.paths), c4, obj2);
+      const tmp2 = asyncRequire(8729, dependencyMap.paths);
+      intl = intl2.intl;
+      openLazy(tmp2, GuildRoleSubscriptionTrialActiveUserLimitSelect, obj);
     },
-    disabled: activeTrialUserlimit.disabled
-  });
+    disabled
+  };
+  return tmp2(tmp3, obj);
 };

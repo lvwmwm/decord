@@ -6,111 +6,129 @@
 
 // Module 8389 (UserProfileApplicationWidgetTopHeroLayout)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
 import _modDef5976 from "module_5976" /* 5976 */;
+import Constants2 from "Constants" /* 6629 */;
 import UserProfileSharedStyles from "UserProfileSharedStyles" /* 7687 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 8390 */;
+import _mod8390 from "module_8390" /* 8390 */;
 import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 8477 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const HorizontalGradient = fn(1074).HorizontalGradient;
-const CARD_PADDING = fn(6629).CARD_PADDING;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let c9;
+let hasOwnProperty;
+let metroImportAll;
+let metroRequire;
+let obj2;
+let obj3;
+let size;
+({ Image: hasOwnProperty, View: metroRequire } = react_native);
+const HorizontalGradient = Constants.HorizontalGradient;
+const CARD_PADDING = Constants2.CARD_PADDING;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 const colors = ["transparent", "black"];
-const createStyles = fn(4836);
-let obj2 = { root: { position: "relative" }, contentRow: { flexDirection: "row", gap: nativeDefault.space.PX_12, minHeight: 140 }, heroText: null, heroImageColumn: null, heroImageSkeleton: null, heroImagePositioner: null, heroImageMask: null, heroImageFadeGradient: null, heroImageMaskRemainder: null };
-let obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_12, minHeight: 140 };
-obj2.heroText = { flex: 1, minWidth: 120, gap: nativeDefault.space.PX_4, justifyContent: "center" };
-obj2.heroImageColumn = { flex: 1, alignItems: "flex-end" };
-let size = { width: 86, height: 86, marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16 };
-obj2.heroImageSkeleton = size;
-obj2.heroImagePositioner = { position: "absolute", left: "50%", right: -CARD_PADDING, top: -CARD_PADDING, bottom: 0, overflow: "hidden" };
-obj2.heroImageMask = { flex: 1, flexDirection: "row" };
-obj2.heroImageFadeGradient = { width: 130 };
-obj2.heroImageMaskRemainder = { flex: 1, backgroundColor: "black" };
-let closure_11 = createStyles.createStyles(obj2);
-size = fn(2);
+let createStyles = createStyles_mod;
+let obj = { root: { position: "relative" }, contentRow: obj2, heroText: obj3, heroImageColumn: { flex: 1, alignItems: "flex-end" }, heroImageSkeleton: size, heroImagePositioner: { position: "absolute", left: "50%", right: -CARD_PADDING, top: -CARD_PADDING, bottom: 0, overflow: "hidden" }, heroImageMask: { flex: 1, flexDirection: "row" }, heroImageFadeGradient: { width: 130 }, heroImageMaskRemainder: { flex: 1, backgroundColor: "black" } };
+obj2 = { flexDirection: "row", gap: nativeDefault.space.PX_12, minHeight: 140 };
+createStyles = createStyles.createStyles;
+obj3 = { flex: 1, minWidth: 120, gap: nativeDefault.space.PX_4, justifyContent: "center" };
+size = { width: 86, height: 86, marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16 };
+let closure_11 = createStyles(obj);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetTopHeroLayout.tsx");
 
 export default function UserProfileApplicationWidgetTopHeroLayout(header) {
+  let c0;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let numberFormat;
+  let obj13;
+  let obj17;
+  let obj18;
+  let resolveFieldValue;
+  let tmp15Result;
+  let tmp15Result3;
+  let tmp3;
+  let topConfig;
   ({ topConfig, resolveFieldValue, numberFormat } = header);
   c0 = undefined;
+  header = header.header;
   const tmp = closure_11();
-  [tmp3, c0] = noop.useState(null);
-  const tmp2 = _slicedToArray(noop.useState(null), 2);
-  const textComponentValues = resolvedValuesFromUserApplicationIdentityProfile.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  const textComponentValues1 = resolvedValuesFromUserApplicationIdentityProfile.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  const textComponentValues2 = resolvedValuesFromUserApplicationIdentityProfile.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
+  [tmp3, c0] = react.useState(null);
+  _slicedToArray(react.useState(null), 2);
+  const obj = _mod8390;
+  const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
+  const obj2 = _mod8390;
+  const textComponentValues1 = obj2.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
+  const obj3 = _mod8390;
+  const textComponentValues2 = obj3.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
   const hero_image = topConfig.components.hero_image;
   let image;
-  const textComponentValues3 = resolvedValuesFromUserApplicationIdentityProfile.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
+  const obj4 = _mod8390;
+  const textComponentValues3 = obj4.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (hero_image != null) {
     image = hero_image.fields.image;
   }
-  const items = [resolvedValuesFromUserApplicationIdentityProfile.ResolvedValueType.MEDIA];
+  const items = [_mod8390.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  const obj5 = { style: tmp.root, children: null };
-  const items1 = [header.header, , ];
-  const obj6 = { style: tmp.contentRow, children: null };
-  const obj7 = { style: tmp.heroText, children: null };
-  const userProfileCardRadius = UserProfileSharedStyles.useUserProfileCardRadius();
-  const items2 = [React6(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues, variant: "text-lg/medium", color: "text-default" }), React6(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" }), React6(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" }), React6(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" })];
-  obj7.children = items2;
-  const items3 = [React7(timestampProducer, obj7), ];
-  const obj8 = { style: tmp.heroImageColumn, children: null };
-  let tmp15Result = null == fieldValue || null == tmp3;
+  const obj5 = { style: tmp.root, children: items1 };
+  items1 = [header, , ];
+  const obj6 = { style: tmp.contentRow, children: items3 };
+  const obj7 = { style: tmp.heroText, children: items2 };
+  const tmp4Result = UserProfileSharedStyles;
+  const userProfileCardRadius = tmp4Result.useUserProfileCardRadius();
+  items2 = [metroImportAll(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues, variant: "text-lg/medium", color: "text-default" }), metroImportAll(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" }), metroImportAll(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" }), metroImportAll(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" })];
+  items3 = [React4(metroRequire, obj7), ];
+  const obj8 = { style: tmp.heroImageColumn, children: tmp15Result };
+  tmp15Result = null == fieldValue || null == tmp3;
   if (tmp15Result) {
     const obj9 = { style: tmp.heroImageSkeleton };
     tmp15Result = tmp15(tmp4(8478).ImageSkeleton, obj9);
   }
-  obj8.children = tmp15Result;
-  items3[1] = React6(timestampProducer, obj8);
-  obj6.children = items3;
-  items1[1] = React7(timestampProducer, obj6);
+  items3[1] = metroImportAll(metroRequire, obj8);
+  items1[1] = React4(metroRequire, obj6);
   let tmp15Result4 = null != fieldValue;
   if (tmp15Result4) {
-    const obj10 = { style: null, pointerEvents: "none", onLayout: null, children: null };
-    const items4 = [tmp.heroImagePositioner, ];
+    const obj10 = {
+      style: items4,
+      pointerEvents: "none",
+      onLayout(nativeEvent) {
+          const layout = nativeEvent.nativeEvent.layout;
+          size = { width: layout.width, height: layout.height };
+          _undefined(size);
+        },
+      children: tmp15Result3
+    };
+    items4 = [tmp.heroImagePositioner, ];
     const obj11 = { borderTopRightRadius: userProfileCardRadius };
     items4[1] = obj11;
-    obj10.style = items4;
-    obj10.onLayout = function onLayout(nativeEvent) {
-      const layout = nativeEvent.nativeEvent.layout;
-      const size = { width: layout.width, height: layout.height };
-      _undefined(size);
-    };
-    let tmp15Result3 = null != tmp3;
+    tmp15Result3 = null != tmp3;
     if (tmp15Result3) {
       const result = fieldValue.media.height * (tmp3.width / fieldValue.media.width);
-      const obj12 = { style: null, androidRenderingMode: "software", maskElement: null, children: null };
-      let size = { width: tmp3.width, height: result };
-      obj12.style = size;
-      const obj13 = { style: tmp.heroImageMask, children: null };
-      const obj14 = { start: null, end: null, colors: null, style: null };
+      const obj12 = { style: size, androidRenderingMode: "software", maskElement: React4(metroRequire, obj13), children: metroImportAll(hasOwnProperty, obj17) };
+      size = { width: tmp3.width, height: result };
+      obj13 = { style: tmp.heroImageMask, children: items5 };
+      const obj14 = { start: null, end: null, colors, style: tmp.heroImageFadeGradient };
       ({ START: obj16.start, END: obj16.end } = HorizontalGradient);
-      obj14.colors = colors;
-      obj14.style = tmp.heroImageFadeGradient;
-      const items5 = [tmp15(LinearGradientDefault, obj14), ];
+      items5 = [, ];
+      const tmp21 = _modDef5976;
+      items5[0] = metroImportAll(LinearGradientDefault, obj14);
       const obj15 = { style: tmp.heroImageMaskRemainder };
-      items5[1] = tmp15(tmp14, obj15);
-      obj13.children = items5;
-      obj12.maskElement = tmp13(tmp14, obj13);
-      const obj17 = { source: null, style: null };
-      const obj18 = { uri: fieldValue.media.url };
-      obj17.source = obj18;
-      obj17.style = { width: "100%", height: "100%" };
-      obj12.children = tmp15(hasOwnProperty, obj17);
-      tmp15Result3 = tmp15(_modDef5976, obj12);
+      items5[1] = metroImportAll(metroRequire, obj15);
+      obj17 = { source: obj18, style: { width: "100%", height: "100%" } };
+      obj18 = { uri: fieldValue.media.url };
+      tmp15Result3 = tmp15(tmp21, obj12);
     }
-    obj10.children = tmp15Result3;
     tmp15Result4 = tmp15(tmp14, obj10);
   }
   items1[2] = tmp15Result4;
-  obj5.children = items1;
-  return React7(timestampProducer, obj5);
+  return React4(metroRequire, obj5);
 };

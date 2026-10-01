@@ -5,23 +5,28 @@
 // Exports: getGuildIdsToFetchSoundsFor, useGuildIdsToFetchSoundsFor
 
 // Module 6758 (useGuildIdsToFetchSoundsFor)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SoundboardStore from "SoundboardStore" /* 5319 */;
 import size from "module_2" /* 2 */;
 
-const useMemo = _mod19.useMemo;
+const useMemo = react.useMemo;
 const result = size.fileFinishedImporting("modules/soundboard/useGuildIdsToFetchSoundsFor.tsx");
 
 export const useGuildIdsToFetchSoundsFor = function useGuildIdsToFetchSoundsFor() {
+  let guildIds;
+  let sounds;
+  let stateFromStores;
+  let stateFromStoresArray;
   const items = [GuildStore];
-  stateFromStoresArray = stateFromStoresArray(stateFromStores[3]).useStateFromStoresArray(items, () => guildIds.getGuildIds());
   const obj = stateFromStoresArray(stateFromStores[3]);
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => guildIds.getGuildIds());
   const items1 = [SoundboardStore];
-  stateFromStores = stateFromStoresArray(stateFromStores[3]).useStateFromStores(items1, () => sounds.getSounds());
+  const obj2 = stateFromStoresArray(stateFromStores[3]);
+  stateFromStores = obj2.useStateFromStores(items1, () => sounds.getSounds());
   const items2 = [stateFromStoresArray, stateFromStores];
   return useMemo(() => {
-    closure_0 = stateFromStores;
+    let closure_0 = stateFromStores;
     return stateFromStoresArray.filter((item) => null == closure_0.get(item));
   }, items2);
 };

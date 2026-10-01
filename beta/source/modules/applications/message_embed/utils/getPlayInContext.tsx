@@ -8,20 +8,28 @@
 import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 8800 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/applications/message_embed/utils/getPlayInContext.tsx");
 
 export const usePlayInContext = function usePlayInContext(arg0) {
+  let CAN_LAUNCH;
+  let channelId;
+  let closure_0;
+  let currentEmbeddedActivity;
+  let stateFromStores;
+  let tmp10;
   _require = arg0;
+  const tmp = _require;
   const items = [SelectedChannelStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => channelId.getChannelId());
-  const obj = require("initialize");
+  const obj = require("get initialized");
+  stateFromStores = obj.useStateFromStores(items, () => channelId.getChannelId());
   const items1 = [EmbeddedActivitiesStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => {
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     if (null == stateFromStores) {
       return null;
     } else {
@@ -35,6 +43,7 @@ export const usePlayInContext = function usePlayInContext(arg0) {
     }
   });
   let compositeInstanceId;
+  const tmp4 = EmbeddedActivitiesStore;
   if (stateFromStores1 != null) {
     compositeInstanceId = stateFromStores1.compositeInstanceId;
   }
@@ -42,14 +51,14 @@ export const usePlayInContext = function usePlayInContext(arg0) {
   if (stateFromStores1 != null) {
     _location = stateFromStores1.location;
   }
-  const obj2 = require("initialize");
-  const tmp4 = EmbeddedActivitiesStore;
   const items2 = [tmp4];
-  const stateFromStores2 = require("initialize").useStateFromStores(items2, () => currentEmbeddedActivity.getCurrentEmbeddedActivity());
-  const tmpResult = require("initialize");
-  const embeddedActivityLaunchability = require("getEmbeddedActivityLaunchability").useEmbeddedActivityLaunchability(stateFromStores);
-  const obj3 = { currentChannelId: stateFromStores, instanceId: compositeInstanceId, instanceLocation: _location, isCurrentlyInInstance: null, canLaunchInChannel: null };
-  let tmp10 = null != compositeInstanceId;
+  const tmpResult = tmp(stateFromStores[2]);
+  const stateFromStores2 = tmpResult.useStateFromStores(items2, () => currentEmbeddedActivity.getCurrentEmbeddedActivity());
+  const tmpResult2 = tmp(stateFromStores[3]);
+  const embeddedActivityLaunchability = tmpResult2.useEmbeddedActivityLaunchability(stateFromStores);
+  const obj3 = { currentChannelId: stateFromStores, instanceId: compositeInstanceId, instanceLocation: _location, isCurrentlyInInstance: tmp10, canLaunchInChannel: embeddedActivityLaunchability === CAN_LAUNCH };
+  tmp10 = null != compositeInstanceId;
+  CAN_LAUNCH = tmp(tmp2[3]).EmbeddedActivityLaunchability.CAN_LAUNCH;
   if (tmp10) {
     let compositeInstanceId1;
     if (stateFromStores2 != null) {
@@ -57,12 +66,11 @@ export const usePlayInContext = function usePlayInContext(arg0) {
     }
     tmp10 = compositeInstanceId1 === compositeInstanceId;
   }
-  obj3.isCurrentlyInInstance = tmp10;
-  obj3.canLaunchInChannel = embeddedActivityLaunchability === require("getEmbeddedActivityLaunchability").EmbeddedActivityLaunchability.CAN_LAUNCH;
   return obj3;
 };
 export const getPlayInContext = function getPlayInContext(id, channel_id) {
-  closure_0 = id;
+  let tmp11;
+  let closure_0 = id;
   let channelId = channel_id;
   if (channel_id == null) {
     channelId = SelectedChannelStore.getChannelId();
@@ -70,16 +78,21 @@ export const getPlayInContext = function getPlayInContext(id, channel_id) {
   if (null == channelId) {
     return { currentChannelId: null, instanceId: null, instanceLocation: null, isCurrentlyInInstance: false, canLaunchInChannel: false };
   } else {
+    let NO_CHANNEL;
+    let tmp3;
     if (null != channelId) {
-      let NO_CHANNEL = getEmbeddedActivityLaunchability.getEmbeddedActivityLaunchabilityForChannel(channelId);
-      let tmp3 = require;
+      const obj = getEmbeddedActivityLaunchability;
+      NO_CHANNEL = obj.getEmbeddedActivityLaunchabilityForChannel(channelId);
+      tmp3 = require;
     } else {
       tmp3 = require;
       NO_CHANNEL = getEmbeddedActivityLaunchability.EmbeddedActivityLaunchability.NO_CHANNEL;
     }
+    const CAN_LAUNCH = tmp3(8800).EmbeddedActivityLaunchability.CAN_LAUNCH;
     const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channelId);
     const found = embeddedActivitiesForChannel.filter((applicationId) => applicationId.applicationId === closure_0);
     let first;
+    const obj2 = EmbeddedActivitiesStore;
     if (found.length > 0) {
       first = found[0];
     }
@@ -91,9 +104,9 @@ export const getPlayInContext = function getPlayInContext(id, channel_id) {
     if (first != null) {
       _location = first.location;
     }
-    const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
-    const obj3 = { currentChannelId: channelId, instanceId: compositeInstanceId, instanceLocation: _location, isCurrentlyInInstance: null, canLaunchInChannel: null };
-    let tmp11 = null != compositeInstanceId;
+    const currentEmbeddedActivity = obj2.getCurrentEmbeddedActivity();
+    const obj3 = { currentChannelId: channelId, instanceId: compositeInstanceId, instanceLocation: _location, isCurrentlyInInstance: tmp11, canLaunchInChannel: NO_CHANNEL === CAN_LAUNCH };
+    tmp11 = null != compositeInstanceId;
     if (tmp11) {
       let compositeInstanceId1;
       if (currentEmbeddedActivity != null) {
@@ -101,8 +114,6 @@ export const getPlayInContext = function getPlayInContext(id, channel_id) {
       }
       tmp11 = compositeInstanceId1 === compositeInstanceId;
     }
-    obj3.isCurrentlyInInstance = tmp11;
-    obj3.canLaunchInChannel = NO_CHANNEL === tmp3(8800).EmbeddedActivityLaunchability.CAN_LAUNCH;
     return obj3;
   }
 };

@@ -6,87 +6,89 @@
 
 // Module 8105 (useUserLinks)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 6958 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const FamilyCenterConstants = fn(6958);
-({ ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER: metroRequire, FAMILY_CENTER_REQUEST_QR_CODE_URL: closure_7, MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_8, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: closure_9, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER: c10, UserLinkStatus: closure_11, UserLinkType: closure_12 } = FamilyCenterConstants);
-const size = fn(2);
+let c10;
+let c9;
+let closure_12;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let unpackModuleId;
+const f85773 = () => linkedUsers.getLinkedUsers();
+const f85775 = () => {
+  let user;
+  return closure_0.map((item) => user.getUser(item));
+};
+const f85776 = (item) => null != item;
+({ ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER: metroRequire, FAMILY_CENTER_REQUEST_QR_CODE_URL: metroImportDefault, MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: metroImportAll, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: c9, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER: c10, UserLinkStatus: unpackModuleId, UserLinkType: closure_12 } = FamilyCenterConstants);
 let result = size.fileFinishedImporting("modules/parent_tools/hooks/useUserLinks.tsx");
 
 export const useUserIdsForLinkStatus = function useUserIdsForLinkStatus(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [FamilyCenterStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const obj = require("useStateFromStores");
+  const stateFromStores = obj.useStateFromStores(items, f85773);
   const items1 = [stateFromStores, arg0];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     const values = Object.values(stateFromStores);
-    const found = values.filter((link_status) => {
-      let tmp = null != link_status;
-      if (tmp) {
-        tmp = link_status.link_status === ACTIVE;
-      }
-      return tmp;
-    });
+    const found = values.filter((link_status) => null != link_status && link_status.link_status === ACTIVE);
     const sorted = found.sort((updated_at, updated_at2) => {
-      const time = new Date(updated_at.updated_at).getTime();
       const date = new Date(updated_at.updated_at);
-      return time - new Date(updated_at2.updated_at).getTime();
+      const time = date.getTime();
+      const date1 = new Date(updated_at2.updated_at);
+      return time - date1.getTime();
     });
     const mapped = sorted.map((user_id) => user_id.user_id);
     return mapped.filter((item) => null != item);
   }, items1);
 };
 export const useUsersForLinkStatus = function useUsersForLinkStatus(PENDING) {
-  closure_129_0 = PENDING;
+  let closure_0;
+  _require = PENDING;
   const items = [FamilyCenterStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => linkedUsers.getLinkedUsers());
-  closure_129_1 = stateFromStores;
+  const obj = require("useStateFromStores");
+  const stateFromStores = obj.useStateFromStores(items, f85773);
   const items1 = [stateFromStores, PENDING];
-  _require = noop.useMemo(() => {
+  _require = react.useMemo(() => {
     const values = Object.values(stateFromStores);
-    const found = values.filter((link_status) => {
-      let tmp = null != link_status;
-      if (tmp) {
-        tmp = link_status.link_status === ACTIVE;
-      }
-      return tmp;
-    });
+    const found = values.filter((link_status) => null != link_status && link_status.link_status === ACTIVE);
     const sorted = found.sort((updated_at, updated_at2) => {
-      const time = new Date(updated_at.updated_at).getTime();
       const date = new Date(updated_at.updated_at);
-      return time - new Date(updated_at2.updated_at).getTime();
+      const time = date.getTime();
+      const date1 = new Date(updated_at2.updated_at);
+      return time - date1.getTime();
     });
     const mapped = sorted.map((user_id) => user_id.user_id);
     return mapped.filter((item) => null != item);
   }, items1);
-  const obj = require("useStateFromStores");
   const items2 = [UserStore];
-  const stateFromStoresArray = require("useStateFromStores").useStateFromStoresArray(items2, () => closure_0.map((item) => user.getUser(item)));
-  return stateFromStoresArray.filter((item) => null != item);
+  const obj2 = require("useStateFromStores");
+  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, f85775);
+  return stateFromStoresArray.filter(f85776);
 };
 export const useActiveLinkUserIds = function useActiveLinkUserIds() {
   const ACTIVE = constants.ACTIVE;
   const items = [FamilyCenterStore];
-  const stateFromStores = ACTIVE(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const obj = ACTIVE(563);
+  const stateFromStores = obj.useStateFromStores(items, f85773);
   const items1 = [stateFromStores, ACTIVE];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     const values = Object.values(stateFromStores);
-    const found = values.filter((link_status) => {
-      let tmp = null != link_status;
-      if (tmp) {
-        tmp = link_status.link_status === ACTIVE;
-      }
-      return tmp;
-    });
+    const found = values.filter((link_status) => null != link_status && link_status.link_status === ACTIVE);
     const sorted = found.sort((updated_at, updated_at2) => {
-      const time = new Date(updated_at.updated_at).getTime();
       const date = new Date(updated_at.updated_at);
-      return time - new Date(updated_at2.updated_at).getTime();
+      const time = date.getTime();
+      const date1 = new Date(updated_at2.updated_at);
+      return time - date1.getTime();
     });
     const mapped = sorted.map((user_id) => user_id.user_id);
     return mapped.filter((item) => null != item);
@@ -94,102 +96,87 @@ export const useActiveLinkUserIds = function useActiveLinkUserIds() {
 };
 export const getActiveLinkUserIds = function getActiveLinkUserIds() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  const found = values.filter((link_status) => {
-    let tmp = null != link_status;
-    if (tmp) {
-      tmp = link_status.link_status === constants.ACTIVE;
-    }
-    return tmp;
-  });
+  const found = values.filter((link_status) => null != link_status && link_status.link_status === constants.ACTIVE);
   const sorted = found.sort((updated_at, updated_at2) => {
-    const time = new Date(updated_at.updated_at).getTime();
     const date = new Date(updated_at.updated_at);
-    return time - new Date(updated_at2.updated_at).getTime();
+    const time = date.getTime();
+    const date1 = new Date(updated_at2.updated_at);
+    return time - date1.getTime();
   });
   const mapped = sorted.map((user_id) => user_id.user_id);
   return mapped.filter((item) => null != item);
 };
 export const useActiveLinkUsers = function useActiveLinkUsers() {
+  let closure_0;
   const ACTIVE = constants.ACTIVE;
   _require = undefined;
-  closure_129_0 = ACTIVE;
   const items = [FamilyCenterStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => linkedUsers.getLinkedUsers());
-  closure_129_1 = stateFromStores;
+  const obj = require("useStateFromStores");
+  const stateFromStores = obj.useStateFromStores(items, f85773);
   const items1 = [stateFromStores, ACTIVE];
-  _require = noop.useMemo(() => {
+  _require = react.useMemo(() => {
     const values = Object.values(stateFromStores);
-    const found = values.filter((link_status) => {
-      let tmp = null != link_status;
-      if (tmp) {
-        tmp = link_status.link_status === ACTIVE;
-      }
-      return tmp;
-    });
+    const found = values.filter((link_status) => null != link_status && link_status.link_status === ACTIVE);
     const sorted = found.sort((updated_at, updated_at2) => {
-      const time = new Date(updated_at.updated_at).getTime();
       const date = new Date(updated_at.updated_at);
-      return time - new Date(updated_at2.updated_at).getTime();
+      const time = date.getTime();
+      const date1 = new Date(updated_at2.updated_at);
+      return time - date1.getTime();
     });
     const mapped = sorted.map((user_id) => user_id.user_id);
     return mapped.filter((item) => null != item);
   }, items1);
-  const obj = require("useStateFromStores");
   const items2 = [UserStore];
-  const stateFromStoresArray = require("useStateFromStores").useStateFromStoresArray(items2, () => closure_0.map((item) => user.getUser(item)));
-  return stateFromStoresArray.filter((item) => null != item);
+  const obj2 = require("useStateFromStores");
+  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, f85775);
+  return stateFromStoresArray.filter(f85776);
 };
 export const useHasActiveLinks = function useHasActiveLinks() {
   const ACTIVE = constants.ACTIVE;
   const items = [FamilyCenterStore];
-  const stateFromStores = ACTIVE(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const obj = ACTIVE(563);
+  const stateFromStores = obj.useStateFromStores(items, f85773);
   const items1 = [stateFromStores, ACTIVE];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     const values = Object.values(stateFromStores);
-    const found = values.filter((link_status) => {
-      let tmp = null != link_status;
-      if (tmp) {
-        tmp = link_status.link_status === ACTIVE;
-      }
-      return tmp;
-    });
+    const found = values.filter((link_status) => null != link_status && link_status.link_status === ACTIVE);
     const sorted = found.sort((updated_at, updated_at2) => {
-      const time = new Date(updated_at.updated_at).getTime();
       const date = new Date(updated_at.updated_at);
-      return time - new Date(updated_at2.updated_at).getTime();
+      const time = date.getTime();
+      const date1 = new Date(updated_at2.updated_at);
+      return time - date1.getTime();
     });
     const mapped = sorted.map((user_id) => user_id.user_id);
     return mapped.filter((item) => null != item);
   }, items1).length > 0;
 };
 export const useHasActiveParentLinks = function useHasActiveParentLinks() {
+  let linkedUsers;
+  let stateFromStores;
   const items = [FamilyCenterStore];
-  stateFromStores = stateFromStores(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const obj = stateFromStores(563);
+  stateFromStores = obj.useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    let constants2;
     const values = Object.values(stateFromStores);
-    return values.some((link_status) => {
-      let tmp = null != link_status;
-      if (tmp) {
-        tmp = link_status.link_status === constants.ACTIVE;
-      }
-      if (tmp) {
-        tmp = link_status.link_type === constants2.PARENT;
-      }
-      return tmp;
-    });
+    return values.some((link_status) => null != link_status && link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT);
   }, items1);
 };
 export const useUserQRLinkUrl = function useUserQRLinkUrl() {
+  let currentUser;
+  let linkCode;
   const items = [FamilyCenterStore];
-  const stateFromStores = useStateFromStores.useStateFromStores(items, () => linkCode.getLinkCode());
+  const obj = useStateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => linkCode.getLinkCode());
   const items1 = [UserStore];
-  const stateFromStores1 = useStateFromStores.useStateFromStores(items1, () => currentUser.getCurrentUser());
+  const obj2 = useStateFromStores;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => currentUser.getCurrentUser());
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;
     if (null != stateFromStores1) {
-      tmp3 = React5(stateFromStores1.id, stateFromStores);
+      tmp3 = metroImportDefault(stateFromStores1.id, stateFromStores);
     }
   }
   return tmp3;
@@ -197,53 +184,46 @@ export const useUserQRLinkUrl = function useUserQRLinkUrl() {
 export const useHasMaxConnections = function useHasMaxConnections() {
   const ACTIVE = constants.ACTIVE;
   let stateFromStores;
-  const tmp = stateFromStores(8106)();
   const items = [FamilyCenterStore];
-  stateFromStores = ACTIVE(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const tmp = stateFromStores(8106)();
+  const obj = ACTIVE(563);
+  stateFromStores = obj.useStateFromStores(items, f85773);
   const items1 = [stateFromStores, ACTIVE];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     const values = Object.values(stateFromStores);
-    const found = values.filter((link_status) => {
-      let tmp = null != link_status;
-      if (tmp) {
-        tmp = link_status.link_status === ACTIVE;
-      }
-      return tmp;
-    });
+    const found = values.filter((link_status) => null != link_status && link_status.link_status === ACTIVE);
     const sorted = found.sort((updated_at, updated_at2) => {
-      const time = new Date(updated_at.updated_at).getTime();
       const date = new Date(updated_at.updated_at);
-      return time - new Date(updated_at2.updated_at).getTime();
+      const time = date.getTime();
+      const date1 = new Date(updated_at2.updated_at);
+      return time - date1.getTime();
     });
     const mapped = sorted.map((user_id) => user_id.user_id);
     return mapped.filter((item) => null != item);
   }, items1).length >= (tmp ? closure_8 : closure_9);
 };
 export const usePendingRequestCount = function usePendingRequestCount() {
+  let currentUser;
+  let linkedUsers;
+  let stateFromStores;
   const items = [UserStore];
-  stateFromStores = stateFromStores(563).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj = stateFromStores(563);
+  stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   stateFromStores(563);
   [][0] = FamilyCenterStore;
   let num = 0;
   if (null != stateFromStores) {
     const _Object = Object;
     const values = Object.values(tmp3);
-    num = values.filter((link_status) => {
-      let tmp = null != link_status;
-      if (tmp) {
-        tmp = link_status.link_status === constants.PENDING;
-      }
-      if (tmp) {
-        tmp = stateFromStores.id !== link_status.requestor_id;
-      }
-      return tmp;
-    }).length;
+    num = values.filter((link_status) => null != link_status && link_status.link_status === unpackModuleId.PENDING && stateFromStores.id !== link_status.requestor_id).length;
   }
   return num;
 };
 export const useRequiresParentalConsent = function useRequiresParentalConsent(id) {
+  let linkedUsers;
   const items = [FamilyCenterStore];
   let tmp = null != id;
+  const obj = useStateFromStores;
   if (tmp) {
     const tmp2 = obj.useStateFromStores(items, () => linkedUsers.getLinkedUsers())[id];
     let flag;
@@ -258,23 +238,20 @@ export const useRequiresParentalConsent = function useRequiresParentalConsent(id
   return tmp;
 };
 export const useAcceptedRequestsCount = function useAcceptedRequestsCount() {
+  let linkedUsers;
   const ACTIVE = constants.ACTIVE;
   const items = [FamilyCenterStore];
-  const stateFromStores = ACTIVE(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const obj = ACTIVE(563);
+  const stateFromStores = obj.useStateFromStores(items, f85773);
   const items1 = [stateFromStores, ACTIVE];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     const values = Object.values(stateFromStores);
-    const found = values.filter((link_status) => {
-      let tmp = null != link_status;
-      if (tmp) {
-        tmp = link_status.link_status === ACTIVE;
-      }
-      return tmp;
-    });
+    const found = values.filter((link_status) => null != link_status && link_status.link_status === ACTIVE);
     const sorted = found.sort((updated_at, updated_at2) => {
-      const time = new Date(updated_at.updated_at).getTime();
       const date = new Date(updated_at.updated_at);
-      return time - new Date(updated_at2.updated_at).getTime();
+      const time = date.getTime();
+      const date1 = new Date(updated_at2.updated_at);
+      return time - date1.getTime();
     });
     const mapped = sorted.map((user_id) => user_id.user_id);
     return mapped.filter((item) => null != item);
@@ -282,11 +259,11 @@ export const useAcceptedRequestsCount = function useAcceptedRequestsCount() {
 };
 export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(activityWindowTimestampFormatter) {
   _require = activityWindowTimestampFormatter;
-  closure_1 = require("useSelectedTeen").useSelectedTeenId();
   const obj = require("useSelectedTeen");
-  const tmp = _require;
+  let closure_1 = obj.useSelectedTeenId();
   const items = [FamilyCenterStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => {
+  const obj2 = require("useStateFromStores");
+  const stateFromStores = obj2.useStateFromStores(items, () => {
     let rangeStartTimestamp = null;
     if (null != closure_1) {
       rangeStartTimestamp = FamilyCenterStore.getRangeStartTimestamp();
@@ -296,21 +273,26 @@ export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(ac
   let result = null;
   if (null != stateFromStores) {
     const _Date = Date;
+    const self = this;
+    const self2 = this;
+    const formatUserActivityTimestamp = tmp(7012).formatUserActivityTimestamp;
+    require("FamilyCenterUtils");
     const date = new Date(stateFromStores);
-    result = tmp(7012).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
-    const tmpResult = tmp(7012);
+    result = formatUserActivityTimestamp(date.getTime(), () => activityWindowTimestampFormatter, 7);
   }
   return result;
 };
 export const useLinkTimestampText = function useLinkTimestampText(id, status) {
   _require = id;
   const items = [FamilyCenterStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => FamilyCenterStore.getLinkTimestamp(closure_0));
-  if (null == stateFromStores) {
-    return null;
-  } else {
+  const obj = require("useStateFromStores");
+  const stateFromStores = obj.useStateFromStores(items, () => FamilyCenterStore.getLinkTimestamp(id));
+  let formatLinkTimestampResult = null;
+  const tmp = _require;
+  if (null != stateFromStores) {
     const _Date = Date;
-    require("FamilyCenterUtils").formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
-    const tmpResult = require("FamilyCenterUtils");
+    const tmpResult = tmp(7012);
+    formatLinkTimestampResult = tmpResult.formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
   }
+  return formatLinkTimestampResult;
 };

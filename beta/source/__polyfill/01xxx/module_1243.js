@@ -4,17 +4,21 @@
 // Exports: createWithEqualityFn, useStoreWithEqualityFn
 
 // Module 1243
-import is from "is" /* 1244 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 1244 */;
+import react from "react" /* 19 */;
 
 const require = globalThis.__r;
+let _require;
 
 function identity(arg0) {
   return arg0;
 }
 function createWithEqualityFnImpl(arg0, arg1) {
+  let closure_0;
+  let store;
   _require = arg1;
-  store = require("module_561").createStore(arg0);
+  const obj = require("module_561");
+  store = obj.createStore(arg0);
   function useBoundStoreWithEqualityFn(arg0) {
     let tmp = arg1;
     if (arg1 === undefined) {
@@ -24,8 +28,9 @@ function createWithEqualityFnImpl(arg0, arg1) {
     if (arg0 === undefined) {
       tmp2 = identity;
     }
-    const syncExternalStoreWithSelector = is.useSyncExternalStoreWithSelector(store.subscribe, store.getState, store.getInitialState, tmp2, tmp);
-    const debugValue = noop.useDebugValue(syncExternalStoreWithSelector);
+    const obj = react2;
+    const syncExternalStoreWithSelector = obj.useSyncExternalStoreWithSelector(store.subscribe, store.getState, store.getInitialState, tmp2, tmp);
+    const debugValue = react.useDebugValue(syncExternalStoreWithSelector);
     return syncExternalStoreWithSelector;
   }
   const merged = Object.assign(useBoundStoreWithEqualityFn, store);
@@ -33,10 +38,15 @@ function createWithEqualityFnImpl(arg0, arg1) {
 }
 
 export const createWithEqualityFn = (arg0, arg1) => {
+  let closure_0;
+  let store;
+  let tmp2;
+  let tmp = createWithEqualityFnImpl;
   if (arg0) {
     if (typeof tmp === "function") {
       _require = arg1;
-      store = require("module_561").createStore(arg0);
+      let obj = require("module_561");
+      store = obj.createStore(arg0);
       function useBoundStoreWithEqualityFn(arg0) {
         let tmp = arg1;
         if (arg1 === undefined) {
@@ -46,14 +56,14 @@ export const createWithEqualityFn = (arg0, arg1) => {
         if (arg0 === undefined) {
           tmp2 = identity;
         }
-        const syncExternalStoreWithSelector = is.useSyncExternalStoreWithSelector(store.subscribe, store.getState, store.getInitialState, tmp2, tmp);
-        const debugValue = noop.useDebugValue(syncExternalStoreWithSelector);
+        const obj = react2;
+        const syncExternalStoreWithSelector = obj.useSyncExternalStoreWithSelector(store.subscribe, store.getState, store.getInitialState, tmp2, tmp);
+        const debugValue = react.useDebugValue(syncExternalStoreWithSelector);
         return syncExternalStoreWithSelector;
       }
       const _Object = Object;
       const merged = Object.assign(useBoundStoreWithEqualityFn, store);
-      let tmp2 = useBoundStoreWithEqualityFn;
-      const obj = require("module_561");
+      tmp2 = useBoundStoreWithEqualityFn;
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -67,7 +77,8 @@ export const useStoreWithEqualityFn = function useStoreWithEqualityFn(context, a
   if (arg1 === undefined) {
     tmp = identity;
   }
-  const syncExternalStoreWithSelector = is.useSyncExternalStoreWithSelector(context.subscribe, context.getState, context.getInitialState, tmp, shallow);
-  const debugValue = noop.useDebugValue(syncExternalStoreWithSelector);
+  const obj = react2;
+  const syncExternalStoreWithSelector = obj.useSyncExternalStoreWithSelector(context.subscribe, context.getState, context.getInitialState, tmp, shallow);
+  const debugValue = react.useDebugValue(syncExternalStoreWithSelector);
   return syncExternalStoreWithSelector;
 };

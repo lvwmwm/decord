@@ -5,380 +5,370 @@
 
 // Module 11914 (ChatInputContextBar)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl9 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import useToken from "useToken" /* 4531 */;
 import Text_Text from "Text/Text" /* 4832 */;
+import DraftStore2 from "DraftStore" /* 5200 */;
 import Pressables from "Pressables" /* 5435 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 7196 */;
 import ScheduledMessageTypes from "ScheduledMessageTypes" /* 7267 */;
 import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 11693 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import DraftStore from "DraftStore" /* 5200 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const _modDef6359 = tmp4(6359);
-require = fn;
+const DraftStore = DraftStore2;
+let children, currentUser, id, set;
+
+let c10;
+let closure_12;
+let closure_14;
+let closure_4;
+let hasOwnProperty;
+let map1;
+let tmp4;
+let unpackModuleId;
+const AssetRegistryDefault = tmp4(6359);
 function ChatInputReplyBarNoAuthor(onCancelReplying) {
-  const tmp = closure_17();
-  const token = useToken.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
-  const bound = Math.max(0, (token - useToken.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
-  const obj3 = { style: tmp.contextBarRow, children: null };
-  const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: null };
-  const intl = util.intl;
-  obj4.children = intl.string(util.t["5IEsGx"]);
-  const items = [closure_1_12(Text_Text.Text, obj4), ];
-  const obj5 = { style: tmp.floatingRightActions, children: null };
-  const obj6 = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: null, hitSlop: null, onPress: null, children: null };
-  const intl2 = util.intl;
-  obj6.accessibilityLabel = intl2.string(util.t.jSnJGT);
+  let Icon;
+  let PressableOpacity;
+  let intl;
+  let intl2;
+  let items;
+  let obj6;
+  let obj7;
   let tmp10;
+  onCancelReplying = onCancelReplying.onCancelReplying;
+  const tmp = closure_17();
+  obj = useToken;
+  const token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const obj2 = useToken;
+  const bound = Math.max(0, (token - obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
+  const obj3 = { style: tmp.contextBarRow, children: items };
+  const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: intl.string(intl9.t["5IEsGx"]) };
+  const Text = Text_Text.Text;
+  intl = intl9.intl;
+  items = [closure_12(Text, obj4), ];
+  const obj5 = { style: tmp.floatingRightActions, children: closure_12(PressableOpacity, obj6) };
+  obj6 = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl2.string(intl9.t.jSnJGT), hitSlop: tmp10, onPress: onCancelReplying, children: closure_12(Icon, obj7) };
+  PressableOpacity = Pressables.PressableOpacity;
+  intl2 = intl9.intl;
+  tmp10 = undefined;
+  const tmp7 = map1;
   if (bound > 0) {
     tmp10 = bound;
   }
-  obj6.hitSlop = tmp10;
-  obj6.onPress = onCancelReplying.onCancelReplying;
-  const tmp7 = map1;
-  obj6.children = closure_1_12(native.Icon, { source: _modDef6359, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
-  obj5.children = closure_1_12(Pressables.PressableOpacity, obj6);
-  items[1] = closure_1_12(component, obj5);
-  obj3.children = items;
-  return tmp7(component, obj3);
+  obj7 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+  Icon = tmp2(1177).Icon;
+  items[1] = closure_12(hasOwnProperty, obj5);
+  return tmp7(hasOwnProperty, obj3);
 }
 class ChatInputReplyBar {
-  constructor(arg0) {
-    pendingReply = global.pendingReply;
-    ({ pendingReplyAuthor, onTapContextBarReply, onCancelReplying } = global);
-    closure_1 = undefined;
-    colorString = undefined;
-    colorStrings = undefined;
-    nick = undefined;
-    guildId = undefined;
-    closure_6 = undefined;
-    closure_7 = undefined;
-    closure_8 = undefined;
-    closure_9 = undefined;
-    tmp = closure_17();
-    tmp2 = pendingReply;
-    tmp3 = colorString;
+  constructor(pendingReply) {
+    let Icon;
+    let Text3;
+    let accessibilityRole;
+    let accessibilityState;
+    let intl;
+    let intl2;
+    let intl3;
+    let intl6;
+    let intl7;
+    let intl8;
+    let items2;
+    let items3;
+    let items4;
+    let items5;
+    let obj11;
+    let obj13;
+    let obj14;
+    let obj15;
+    let obj17;
+    let onCancelReplying;
+    let onTapContextBarReply;
+    let pendingReplyAuthor;
+    let string2Result;
+    let stringResult;
+    let tmp12;
+    let tmp13;
+    let tmp15;
+    function userHook(arg0, arg1) {
+      let items1;
+      let tmp19;
+      let tmp6;
+      if ("dot" === stateFromStores) {
+        let tmp3Result;
+        if (null != colorString) {
+          const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
+          const items = [closure_12(native.RoleDot, obj2), ];
+          const obj3 = { variant: "text-sm/semibold", style: tmp19, children: nick };
+          tmp19 = undefined;
+          const Text2 = Text_Text.Text;
+          const tmp15 = closure_12;
+          const tmp8 = map1;
+          const tmp9 = authStore2;
+          if (null != closure_7) {
+            tmp19 = { fontFamily: tmp18 };
+            const obj4 = { fontFamily: tmp18 };
+          }
+          const obj5 = { children: items };
+          items[1] = tmp15(Text2, obj3, arg1);
+          tmp3Result = tmp8(tmp9, obj5);
+        }
+        return tmp3Result;
+      }
+      obj = { variant: "text-sm/semibold", style: items1, gradientColors: tmp6, children: nick };
+      items1 = [roleStyle, ];
+      let tmp5 = null != closure_7;
+      const Text = Text_Text.Text;
+      const tmp3 = closure_12;
+      if (tmp5) {
+        tmp5 = { fontFamily: tmp4 };
+        const obj6 = { fontFamily: tmp4 };
+      }
+      items1[1] = tmp5;
+      tmp6 = undefined;
+      if (closure_9) {
+        tmp6 = processColorStringsArray;
+      }
+      tmp3Result = tmp3(Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
+    }
+    pendingReply = pendingReply.pendingReply;
+    ({ pendingReplyAuthor, onTapContextBarReply, onCancelReplying } = pendingReply);
+    let stateFromStores;
+    let colorString;
+    let roleStyle;
+    const onToggleReplyMention = pendingReply.onToggleReplyMention;
+    let tmp = closure_17();
+    const tmp2 = pendingReply;
+    let tmp3 = colorString;
     obj = pendingReply(colorString[10]);
-    tmp4 = closure_1;
-    token = obj.useToken(closure_1(colorString[9]).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
-    obj2 = pendingReply(colorString[10]);
-    bound = Math.max(0, (token - obj2.useToken(closure_1(colorString[9]).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
-    obj3 = pendingReply(colorString[15]);
-    items = [];
-    items[0] = closure_6;
+    const tmp4 = stateFromStores;
+    const token = obj.useToken(stateFromStores(colorString[9]).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+    let obj2 = pendingReply(colorString[10]);
+    const bound = Math.max(0, (token - obj2.useToken(stateFromStores(colorString[9]).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
+    let obj3 = pendingReply(colorString[15]);
+    let items = [roleStyle];
     stateFromStores = obj3.useStateFromStores(items, () => roleStyle.roleStyle);
-    closure_1 = stateFromStores;
-    obj4 = pendingReply(colorString[16]);
-    obj1 = { checked: pendingReply.shouldMention };
-    checkboxA11yNative = obj4.useCheckboxA11yNative(obj1);
+    let obj4 = pendingReply(colorString[16]);
+    let obj5 = { checked: pendingReply.shouldMention };
+    const checkboxA11yNative = obj4.useCheckboxA11yNative(obj5);
     colorString = pendingReplyAuthor.colorString;
-    colorStrings = pendingReplyAuthor.colorStrings;
-    nick = pendingReplyAuthor.nick;
-    guildId = pendingReplyAuthor.guildId;
-    items1 = [, ];
-    items1[0] = colorString;
-    items1[1] = stateFromStores;
+    const colorStrings = pendingReplyAuthor.colorStrings;
+    const nick = pendingReplyAuthor.nick;
+    const guildId = pendingReplyAuthor.guildId;
+    let items1 = [colorString, stateFromStores];
     ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-    closure_6 = colorStrings.useMemo(() => {
+    roleStyle = colorStrings.useMemo(() => {
       let tmp;
       if ("hidden" !== stateFromStores) {
         if (null != colorString) {
-          obj = { color: tmp2 };
-          const items = [obj];
+          const items = [{ color: tmp2 }];
           tmp = items;
+          obj = { color: tmp2 };
         }
       }
       return tmp;
     }, items1);
-    obj24 = { userId: pendingReply.message.author.id, guildId };
-    tmp9 = closure_1(colorString[17])(obj24);
-    obj7 = pendingReply(colorString[18]);
-    closure_7 = obj7.useDisplayNameStylesFont({ displayNameStyles: tmp9 });
-    obj8 = pendingReply(colorString[19]);
-    processColorStringsArray = obj8.useProcessColorStringsArray(colorStrings);
-    closure_8 = processColorStringsArray;
-    obj9 = pendingReply(colorString[19]);
-    closure_9 = obj9.useIsRoleStyleAndRoleColorsEligibleForERC(guildId, pendingReply.message.author.id, stateFromStores, processColorStringsArray);
+    let obj6 = { userId: pendingReply.message.author.id, guildId };
+    let tmp9 = stateFromStores(colorString[17])(obj6);
+    const obj7 = pendingReply(colorString[18]);
+    let closure_7 = obj7.useDisplayNameStylesFont({ displayNameStyles: tmp9 });
+    const obj8 = pendingReply(colorString[19]);
+    const processColorStringsArray = obj8.useProcessColorStringsArray(colorStrings);
+    const obj9 = pendingReply(colorString[19]);
+    let closure_9 = obj9.useIsRoleStyleAndRoleColorsEligibleForERC(guildId, pendingReply.message.author.id, stateFromStores, processColorStringsArray);
     if (null == onTapContextBarReply) {
-      tmp11 = jsx;
-      obj25 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: null };
+      const obj10 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: intl.format(tmp2(tmp3[12]).t["8E4GxS"], obj11) };
+      let Text = tmp2(tmp3[11]).Text;
       intl = tmp2(tmp3[12]).intl;
-      obj26 = { userHook: null };
-      obj26.userHook = function userHook(arg0, arg1) {
-        if ("dot" === stateFromStores) {
-          if (null != colorString) {
-            const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
-            const items = [closure_2_12(native.RoleDot, obj2), ];
-            const obj3 = { variant: "text-sm/semibold", style: null, children: null };
-            let tmp19;
-            if (null != closure_7) {
-              const obj4 = { fontFamily: tmp18 };
-              tmp19 = obj4;
-            }
-            const obj5 = { children: null };
-            obj3.style = tmp19;
-            obj3.children = nick;
-            items[1] = closure_2_12(Text_Text.Text, obj3, arg1);
-            obj5.children = items;
-            let tmp3Result = map1(closure_2_14, obj5);
-          }
-          return tmp3Result;
-        }
-        obj = { variant: "text-sm/semibold", style: null, gradientColors: null, children: null };
-        const items1 = [closure_6, ];
-        let tmp5 = null != closure_7;
-        if (tmp5) {
-          const obj6 = { fontFamily: tmp4 };
-          tmp5 = obj6;
-        }
-        items1[1] = tmp5;
-        obj.style = items1;
-        let tmp6;
-        if (closure_9) {
-          tmp6 = processColorStringsArray;
-        }
-        obj.gradientColors = tmp6;
-        obj.children = nick;
-        tmp3Result = closure_2_12(Text_Text.Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
-      };
-      obj25.children = intl.format(tmp2(tmp3[12]).t["8E4GxS"], obj26);
-      tmp12 = jsx(tmp2(tmp3[11]).Text, obj25);
-      tmp13 = jsx;
+      obj11 = { userHook };
+      tmp12 = closure_12(Text, obj10);
+      tmp13 = closure_12;
     } else {
-      tmp13 = jsx;
-      obj27 = { style: null, accessibilityRole: "link", accessibilityLabel: null, accessibilityHint: null, activeOpacity: 0.5, onPress: null, children: null };
-      obj27.style = tmp.floatingReplyTextWrapper;
+      tmp13 = closure_12;
+      const obj12 = { style: tmp.floatingReplyTextWrapper, accessibilityRole: "link", accessibilityLabel: intl6.formatToPlainString(tmp2(tmp3[12]).t.EpJL4E, obj13), accessibilityHint: intl7.string(tmp2(tmp3[12]).t["0CfCVW"]), activeOpacity: 0.5, onPress: onTapContextBarReply, children: closure_12(Text3, obj14) };
+      const PressableOpacity3 = tmp2(tmp3[13]).PressableOpacity;
       intl6 = tmp2(tmp3[12]).intl;
-      obj28 = { username: null };
-      obj28.username = nick;
-      obj27.accessibilityLabel = intl6.formatToPlainString(tmp2(tmp3[12]).t.EpJL4E, obj28);
+      obj13 = { username: nick };
       intl7 = tmp2(tmp3[12]).intl;
-      obj27.accessibilityHint = intl7.string(tmp2(tmp3[12]).t["0CfCVW"]);
-      obj27.onPress = onTapContextBarReply;
-      obj29 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: null };
+      obj14 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: intl8.format(tmp2(tmp3[12]).t["8E4GxS"], obj15) };
+      Text3 = tmp2(tmp3[11]).Text;
       intl8 = tmp2(tmp3[12]).intl;
-      obj30 = { userHook: null };
-      obj30.userHook = function userHook(arg0, arg1) {
-        if ("dot" === stateFromStores) {
-          if (null != colorString) {
-            const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
-            const items = [closure_2_12(native.RoleDot, obj2), ];
-            const obj3 = { variant: "text-sm/semibold", style: null, children: null };
-            let tmp19;
-            if (null != closure_7) {
-              const obj4 = { fontFamily: tmp18 };
-              tmp19 = obj4;
-            }
-            const obj5 = { children: null };
-            obj3.style = tmp19;
-            obj3.children = nick;
-            items[1] = closure_2_12(Text_Text.Text, obj3, arg1);
-            obj5.children = items;
-            let tmp3Result = map1(closure_2_14, obj5);
-          }
-          return tmp3Result;
-        }
-        obj = { variant: "text-sm/semibold", style: null, gradientColors: null, children: null };
-        const items1 = [closure_6, ];
-        let tmp5 = null != closure_7;
-        if (tmp5) {
-          const obj6 = { fontFamily: tmp4 };
-          tmp5 = obj6;
-        }
-        items1[1] = tmp5;
-        obj.style = items1;
-        let tmp6;
-        if (closure_9) {
-          tmp6 = processColorStringsArray;
-        }
-        obj.gradientColors = tmp6;
-        obj.children = nick;
-        tmp3Result = closure_2_12(Text_Text.Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
-      };
-      obj29.children = intl8.format(tmp2(tmp3[12]).t["8E4GxS"], obj30);
-      obj27.children = jsx(tmp2(tmp3[11]).Text, obj29);
-      tmp12 = jsx(tmp2(tmp3[13]).PressableOpacity, obj27);
+      obj15 = { userHook };
+      tmp12 = closure_12(PressableOpacity3, obj12);
     }
-    tmp13Result = null;
+    let tmp13Result = null;
     if (null != onCancelReplying) {
-      obj31 = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.5, hitSlop: null, onPress: null, children: null };
+      const obj16 = { accessibilityRole: "button", accessibilityLabel: intl2.string(tmp2(tmp3[12]).t.jSnJGT), activeOpacity: 0.5, hitSlop: tmp15, onPress: onCancelReplying, children: tmp13(Icon, obj17) };
+      const PressableOpacity = tmp2(tmp3[13]).PressableOpacity;
       intl2 = tmp2(tmp3[12]).intl;
-      obj31.accessibilityLabel = intl2.string(tmp2(tmp3[12]).t.jSnJGT);
       tmp15 = undefined;
       if (bound > 0) {
         tmp15 = bound;
       }
-      obj31.hitSlop = tmp15;
-      obj31.onPress = onCancelReplying;
-      obj32 = { source: null, size: null, style: null };
-      obj32.source = tmp4(tmp3[14]);
-      obj32.size = tmp2(tmp3[7]).Icon.Sizes.CUSTOM;
-      obj32.style = tmp.floatingCloseIcon;
-      obj31.children = tmp13(tmp2(tmp3[7]).Icon, obj32);
-      tmp13Result = tmp13(tmp2(tmp3[13]).PressableOpacity, obj31);
+      obj17 = { source: tmp4(tmp3[14]), size: tmp2(tmp3[7]).Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+      Icon = tmp2(tmp3[7]).Icon;
+      tmp13Result = tmp13(PressableOpacity, obj16);
     }
-    showMentionToggle = undefined;
+    let showMentionToggle;
     if (pendingReply != null) {
       showMentionToggle = pendingReply.showMentionToggle;
     }
-    if (!showMentionToggle) {
-      showMentionToggle1 = undefined;
-      if (pendingReply != null) {
-        showMentionToggle1 = pendingReply.showMentionToggle;
-      }
-      tmp13Result1 = null;
-      if (showMentionToggle1) {
-        tmp13Result1 = null;
-        if (null != tmp13Result) {
-          tmp24 = guildId;
-          obj33 = { style: null };
-          obj33.style = tmp.floatingDivider;
-          tmp13Result1 = tmp13(guildId, obj33);
-        }
-      }
-      tmp25 = jsxs;
-      tmp26 = guildId;
-      obj34 = { style: null, children: null };
-      obj34.style = tmp.contextBarRow;
-      items2 = [, ];
-      items2[0] = tmp12;
-      obj35 = { style: null, children: null };
-      obj35.style = tmp.floatingRightActions;
-      items3 = [, , ];
-      items3[0] = null;
-      items3[1] = tmp13Result1;
-      items3[2] = tmp13Result;
-      obj35.children = items3;
-      items2[1] = jsxs(guildId, obj35);
-      obj34.children = items2;
-      return jsxs(guildId, obj34);
-    } else {
-      tmp17 = jsxs;
-      obj36 = { accessibilityRole: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, activeOpacity: 0.5, onPress: null, style: null, children: null };
-      obj36.accessibilityRole = accessibilityRole;
-      obj36.accessibilityState = accessibilityState;
+    let tmp18Result = null;
+    if (showMentionToggle) {
+      const tmp18 = closure_13;
+      const obj18 = { accessibilityRole, accessibilityState, accessibilityLabel: intl3.string(tmp2(tmp3[12]).t.P8tvKG), accessibilityHint: stringResult, activeOpacity: 0.5, onPress: onToggleReplyMention, style: tmp.floatingMentionGroup, children: items3 };
+      const PressableOpacity2 = tmp2(tmp3[13]).PressableOpacity;
       intl3 = tmp2(tmp3[12]).intl;
-      obj36.accessibilityLabel = intl3.string(tmp2(tmp3[12]).t.P8tvKG);
-      intl4 = tmp2(tmp3[12]).intl;
-      string = intl4.string;
-      t = tmp2(tmp3[12]).t;
-      if (pendingReply.shouldMention) {
+      const shouldMention = pendingReply.shouldMention;
+      const intl4 = tmp2(tmp3[12]).intl;
+      const string = intl4.string;
+      const t = tmp2(tmp3[12]).t;
+      if (shouldMention) {
         stringResult = string(t.PBgTSF);
       } else {
         stringResult = string(t["+LXBxU"]);
       }
-      obj36.accessibilityHint = stringResult;
-      obj36.onPress = global.onToggleReplyMention;
-      obj36.style = tmp.floatingMentionGroup;
-      obj37 = { source: null, size: null, style: null };
-      obj37.source = tmp4(tmp3[20]);
-      obj37.size = tmp2(tmp3[7]).Icon.Sizes.CUSTOM;
-      items4 = [, ];
-      items4[0] = tmp.replyMentionIcon;
-      items4[1] = pendingReply.shouldMention && tmp.replyMentionIconActive;
-      obj37.style = items4;
-      items5 = [, ];
-      items5[0] = tmp13(tmp2(tmp3[7]).Icon, obj37);
-      prop = undefined;
+      const obj19 = { source: tmp4(tmp3[20]), size: tmp2(tmp3[7]).Icon.Sizes.CUSTOM, style: items2 };
+      const Icon2 = tmp2(tmp3[7]).Icon;
+      items2 = [tmp.replyMentionIcon, pendingReply.shouldMention && tmp.replyMentionIconActive];
+      items3 = [tmp13(Icon2, obj19), ];
+      let prop;
+      let Text2 = tmp2(tmp3[11]).Text;
       if (pendingReply.shouldMention) {
         prop = tmp.replyMentionButtonActive;
       }
-      obj38 = { variant: "text-sm/semibold", color: "text-muted", style: null, children: null };
-      obj38.style = prop;
-      intl5 = tmp2(tmp3[12]).intl;
-      string2 = intl5.string;
-      p9jC2r = tmp2(tmp3[12]).t;
-      if (pendingReply.shouldMention) {
-        p9jC2r = p9jC2r.p9jC2r;
-        string2Result = string2(p9jC2r);
+      const shouldMention2 = pendingReply.shouldMention;
+      const obj20 = { variant: "text-sm/semibold", color: "text-muted", style: prop, children: string2Result };
+      const intl5 = tmp2(tmp3[12]).intl;
+      const string2 = intl5.string;
+      const t2 = tmp2(tmp3[12]).t;
+      if (shouldMention2) {
+        string2Result = string2(t2.p9jC2r);
       } else {
-        string2Result = string2(p9jC2r.U7f3bK);
+        string2Result = string2(t2.U7f3bK);
       }
-      obj38.children = string2Result;
-      obj38 = tmp13(tmp2(tmp3[11]).Text, obj38);
-      items5[1] = obj38;
-      obj36.children = items5;
-      tmp17Result = tmp17(tmp2(tmp3[13]).PressableOpacity, obj36);
+      items3[1] = tmp13(Text2, obj20);
+      tmp18Result = tmp18(PressableOpacity2, obj18);
     }
-    return;
+    let showMentionToggle1;
+    if (pendingReply != null) {
+      showMentionToggle1 = pendingReply.showMentionToggle;
+    }
+    let tmp13Result2 = null;
+    if (showMentionToggle1) {
+      tmp13Result2 = null;
+      if (null != tmp13Result) {
+        const obj21 = { style: tmp.floatingDivider };
+        tmp13Result2 = tmp13(guildId, obj21);
+      }
+    }
+    const obj22 = { style: tmp.contextBarRow, children: items4 };
+    items4 = [tmp12, ];
+    const obj23 = { style: tmp.floatingRightActions, children: items5 };
+    items5 = [tmp18Result, tmp13Result2, tmp13Result];
+    items4[1] = closure_13(guildId, obj23);
+    return closure_13(guildId, obj22);
   }
 }
 function ChatInputEditBar(onCancelEditing) {
-  const tmp = closure_17();
-  const token = useToken.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
-  const bound = Math.max(0, (token - useToken.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
-  const obj3 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: null };
-  const intl = util.intl;
-  obj3.children = intl.string(util.t.rtNXxN);
-  const obj4 = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.5, hitSlop: null, onPress: null, children: null };
-  const intl2 = util.intl;
-  obj4.accessibilityLabel = intl2.string(util.t.qv9j1K);
+  let Icon;
+  let intl;
+  let intl2;
+  let items;
+  let obj5;
+  let obj7;
   let tmp9;
+  onCancelEditing = onCancelEditing.onCancelEditing;
+  const tmp = closure_17();
+  obj = useToken;
+  const token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const obj2 = useToken;
+  const bound = Math.max(0, (token - obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
+  const obj3 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: intl.string(intl9.t.rtNXxN) };
+  const Text = Text_Text.Text;
+  intl = intl9.intl;
+  const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl9.t.qv9j1K), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelEditing, children: closure_12(Icon, obj5) };
+  const tmp8 = closure_12(Text, obj3);
+  const PressableOpacity = Pressables.PressableOpacity;
+  intl2 = intl9.intl;
+  tmp9 = undefined;
   if (bound > 0) {
     tmp9 = bound;
   }
-  obj4.hitSlop = tmp9;
-  obj4.onPress = onCancelEditing.onCancelEditing;
-  const tmp8 = closure_1_12(Text_Text.Text, obj3);
-  obj4.children = closure_1_12(native.Icon, { source: _modDef6359, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
-  const obj6 = { style: tmp.contextBarRow, children: null };
-  const obj7 = { children: null };
-  const items = [tmp8, ];
-  const obj5 = { source: _modDef6359, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-  items[1] = closure_1_12(component, { style: tmp.floatingRightActions, children: closure_1_12(Pressables.PressableOpacity, obj4) });
-  obj7.children = items;
-  obj6.children = map1(closure_1_14, obj7);
-  return closure_1_12(component, obj6);
+  obj5 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+  Icon = tmp2(1177).Icon;
+  const obj6 = { style: tmp.contextBarRow, children: map1(authStore2, obj7) };
+  obj7 = { children: items };
+  items = [tmp8, ];
+  const obj8 = { style: tmp.floatingRightActions, children: closure_12(PressableOpacity, obj4) };
+  items[1] = closure_12(hasOwnProperty, obj8);
+  return closure_12(hasOwnProperty, obj6);
 }
 function ChatInputScheduledMessageBar(scheduledTimestamp) {
+  let Icon;
+  let Text;
+  let ZN3tIx;
+  let date;
+  let formatToPlainString;
+  let intl;
+  let intl3;
+  let items;
+  let obj4;
+  let obj5;
+  let obj7;
+  let obj9;
+  let onCancelScheduling;
+  let onEditSchedule;
+  let tmp9;
+  scheduledTimestamp = scheduledTimestamp.scheduledTimestamp;
   ({ onCancelScheduling, onEditSchedule } = scheduledTimestamp);
   const tmp = closure_17();
-  const token = useToken.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
-  const bound = Math.max(0, (token - useToken.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
-  const obj3 = { style: tmp.floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.5, onPress: null, children: null };
-  const intl = util.intl;
-  obj3.accessibilityLabel = intl.string(util.t.SBcdAN);
-  obj3.onPress = onEditSchedule;
-  const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: null };
-  const intl2 = util.intl;
-  const obj5 = { timestamp: null };
-  obj5.timestamp = new Date(scheduledTimestamp.scheduledTimestamp).valueOf();
-  obj4.children = intl2.formatToPlainString(util.t.ZN3tIx, obj5);
-  obj3.children = closure_1_12(Text_Text.Text, obj4);
-  const date = new Date(scheduledTimestamp.scheduledTimestamp);
-  const obj6 = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.5, hitSlop: null, onPress: null, children: null };
-  const intl3 = util.intl;
-  obj6.accessibilityLabel = intl3.string(util.t.cpT0Cq);
-  let tmp9;
+  obj = useToken;
+  const token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const obj2 = useToken;
+  const bound = Math.max(0, (token - obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
+  const obj3 = { style: tmp.floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: intl.string(intl9.t.SBcdAN), activeOpacity: 0.5, onPress: onEditSchedule, children: closure_12(Text, obj4) };
+  const PressableOpacity = Pressables.PressableOpacity;
+  intl = intl9.intl;
+  obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: formatToPlainString(ZN3tIx, obj5) };
+  Text = Text_Text.Text;
+  const intl2 = intl9.intl;
+  formatToPlainString = intl2.formatToPlainString;
+  obj5 = { timestamp: date.valueOf() };
+  ZN3tIx = intl9.t.ZN3tIx;
+  date = new Date(scheduledTimestamp);
+  const obj6 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl9.t.cpT0Cq), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelScheduling, children: closure_12(Icon, obj7) };
+  const tmp8 = closure_12(PressableOpacity, obj3);
+  const PressableOpacity2 = Pressables.PressableOpacity;
+  intl3 = intl9.intl;
+  tmp9 = undefined;
   if (bound > 0) {
     tmp9 = bound;
   }
-  obj6.hitSlop = tmp9;
-  obj6.onPress = onCancelScheduling;
-  const tmp8 = closure_1_12(Pressables.PressableOpacity, obj3);
-  obj6.children = closure_1_12(native.Icon, { source: _modDef6359, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
-  const obj8 = { style: tmp.contextBarRow, children: null };
-  const obj9 = { children: null };
-  const items = [tmp8, ];
-  const obj7 = { source: _modDef6359, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-  items[1] = closure_1_12(component, { style: tmp.floatingRightActions, children: closure_1_12(Pressables.PressableOpacity, obj6) });
-  obj9.children = items;
-  obj8.children = map1(closure_1_14, obj9);
-  return closure_1_12(component, obj8);
+  obj7 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+  Icon = tmp2(1177).Icon;
+  const obj8 = { style: tmp.contextBarRow, children: map1(authStore2, obj9) };
+  obj9 = { children: items };
+  items = [tmp8, ];
+  const obj10 = { style: tmp.floatingRightActions, children: closure_12(PressableOpacity2, obj6) };
+  items[1] = closure_12(hasOwnProperty, obj10);
+  return closure_12(hasOwnProperty, obj8);
 }
-get_ActivityIndicator = fn(17);
-({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const DraftType = fn(5200).DraftType;
-const Constants = fn(1074);
-({ AnalyticEvents: c10, Routes: closure_11 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-let obj = { duration: 250, easing: fn(1177).STANDARD_EASING };
-let createStyles = fn(4836);
+let react = react_mod;
+({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
+const DraftType = DraftStore2.DraftType;
+({ AnalyticEvents: c10, Routes: unpackModuleId } = Constants);
+({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
+let obj = { duration: 250, easing: native.STANDARD_EASING };
+let createStyles = createStyles_mod;
 let closure_16 = createStyles.createStyles((arg0) => {
   let MOBILE_FLOATING_ACCESSORY_BACKGROUND = arg0;
   if (arg0 == null) {
@@ -386,192 +376,220 @@ let closure_16 = createStyles.createStyles((arg0) => {
   }
   return { contextBar: { backgroundColor: MOBILE_FLOATING_ACCESSORY_BACKGROUND } };
 });
-createStyles = fn(4836);
+createStyles = createStyles_mod;
 let closure_17 = createStyles.createStyles(() => {
-  obj = { contextBarRow: { overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP }, floatingReplyTextWrapper: { flexShrink: 1, minWidth: 0 }, floatingContextBar: null, replyMentionButtonActive: null, replyMentionIcon: null, replyMentionIconActive: null, floatingRightActions: null, floatingMentionGroup: null, floatingDivider: null, floatingCloseIcon: null };
-  const obj2 = { overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP };
-  obj.floatingContextBar = { borderBottomWidth: React4.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_MUTED, overflow: "hidden" };
-  const obj3 = { borderBottomWidth: React4.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_MUTED, overflow: "hidden" };
-  obj.replyMentionButtonActive = { color: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
-  const size = { width: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: nativeDefault.colors.TEXT_MUTED, marginRight: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_MARGIN_RIGHT };
-  obj.replyMentionIcon = size;
-  const obj4 = { color: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
-  obj.replyMentionIconActive = { tintColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
-  obj.floatingRightActions = { flexGrow: 1, flexShrink: 0, flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: 8 };
-  obj.floatingMentionGroup = { flexDirection: "row", alignItems: "center", gap: 2 };
-  const obj5 = { tintColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
-  obj.floatingDivider = { width: React4.hairlineWidth, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-  const size1 = { width: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-  obj.floatingCloseIcon = size1;
+  let size1;
+  obj = { contextBarRow: { overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP }, floatingReplyTextWrapper: { flexShrink: 1, minWidth: 0 }, floatingContextBar: { borderBottomWidth: React3.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_MUTED, overflow: "hidden" }, replyMentionButtonActive: { color: nativeDefault.colors.CONTROL_BRAND_FOREGROUND }, replyMentionIcon: size, replyMentionIconActive: { tintColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND }, floatingRightActions: { flexGrow: 1, flexShrink: 0, flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: 8 }, floatingMentionGroup: { flexDirection: "row", alignItems: "center", gap: 2 }, floatingDivider: { width: React3.hairlineWidth, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE }, floatingCloseIcon: size1 };
+  ({ overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP });
+  ({ borderBottomWidth: React3.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_MUTED, overflow: "hidden" });
+  ({ color: nativeDefault.colors.CONTROL_BRAND_FOREGROUND });
+  size = { width: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: nativeDefault.colors.TEXT_MUTED, marginRight: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_MARGIN_RIGHT };
+  ({ tintColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND });
+  ({ width: React3.hairlineWidth, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE });
+  size1 = { width: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
   return obj;
 });
 const __initData = { code: "function ChatInputContextBarTsx1(){const{stylesBackgroundColor,heightSv}=this.__closure;return{backgroundColor:stylesBackgroundColor,...{maxHeight:heightSv.get()}};}" };
 let closure_23 = { code: "function ChatInputContextBarTsx2(finished){const{runOnJS,handleTransitionFinished}=this.__closure;if(finished){runOnJS(handleTransitionFinished)();}}" };
-let closure_24 = noop.forwardRef((children, ref) => {
+let closure_24 = react.forwardRef((children, ref) => {
+  let closure_3;
+  let items1;
   let backgroundColor;
   ref = undefined;
-  noop = undefined;
-  backgroundColor = closure_16(backgroundColor(ref[21]).useGradientValue(backgroundColor(ref[21]).GradientPercentage.END)).contextBar.backgroundColor;
+  react = undefined;
+  children = children.children;
   obj = backgroundColor(ref[21]);
-  const tmp = closure_17();
-  const sharedValue = backgroundColor(ref[22]).useSharedValue(0);
+  backgroundColor = closure_16(obj.useGradientValue(backgroundColor(ref[21]).GradientPercentage.END)).contextBar.backgroundColor;
+  let tmp = closure_17();
   const obj2 = backgroundColor(ref[22]);
+  const sharedValue = obj2.useSharedValue(0);
   let fn = function o() {
-    return { backgroundColor, maxHeight: sharedValue.get() };
+    obj = { backgroundColor, maxHeight: sharedValue.get() };
+    return obj;
   };
   fn.__closure = { stylesBackgroundColor: backgroundColor, heightSv: sharedValue };
   fn.__workletHash = 16731072716488;
   fn.__initData = __initData;
-  const animatedStyle = backgroundColor(ref[22]).useAnimatedStyle(fn);
-  ref = noop.useRef(null);
+  const obj3 = backgroundColor(ref[22]);
+  const animatedStyle = obj3.useAnimatedStyle(fn);
+  ref = react.useRef(null);
   const items = [ref];
-  noop = noop.useCallback(() => {
+  react = react.useCallback(() => {
     const current = ref.current;
     if (current != null) {
       current();
     }
   }, items);
-  const imperativeHandle = noop.useImperativeHandle(ref, () => ({
-    componentDidAppear() {
-      const result = sharedValue.set(backgroundColor(ref[23]).withTiming(60, obj));
-    },
-    componentDidEnter() {
-      const result = sharedValue.set(backgroundColor(ref[23]).withTiming(60, obj));
-    },
-    componentWillLeave(current) {
-      closure_1_2.current = current;
-      const fn = function n(arg0) {
-        if (arg0) {
-          backgroundColor(ref[22]).runOnJS(handleTransitionFinished)();
-          obj = backgroundColor(ref[22]);
-        }
-      };
-      obj = backgroundColor(ref[23]);
-      fn.__closure = { runOnJS: backgroundColor(ref[22]).runOnJS, handleTransitionFinished };
-      fn.__workletHash = 10908592279914;
-      fn.__initData = __initData;
-      const result = sharedValue.set(obj.withTiming(0, closure_2_15, "respect-motion-settings", fn));
-    }
-  }));
-  const obj4 = { style: null, children: children.children };
-  const items1 = [animatedStyle, tmp.floatingContextBar];
-  obj4.style = items1;
+  const imperativeHandle = react.useImperativeHandle(ref, () => {
+    let handleTransitionFinished;
+    obj = {
+      componentDidAppear() {
+        set = sharedValue.set;
+        obj = backgroundColor(ref[23]);
+        const result = set(obj.withTiming(60, closure_2_15));
+      },
+      componentDidEnter() {
+        set = sharedValue.set;
+        obj = backgroundColor(ref[23]);
+        const result = set(obj.withTiming(60, closure_2_15));
+      },
+      componentWillLeave(current) {
+        closure_1_2.current = current;
+        set = sharedValue.set;
+        obj = backgroundColor(ref[23]);
+        const fn = function n(arg0) {
+          const tmp = arg0;
+          if (tmp) {
+            obj = backgroundColor(ref[22]);
+            obj.runOnJS(handleTransitionFinished)();
+          }
+        };
+        fn.__closure = { runOnJS: backgroundColor(ref[22]).runOnJS, handleTransitionFinished };
+        fn.__workletHash = 10908592279914;
+        fn.__initData = __initData;
+        ({ runOnJS: backgroundColor(ref[22]).runOnJS, handleTransitionFinished });
+        const result = set(obj.withTiming(0, closure_2_15, "respect-motion-settings", fn));
+      }
+    };
+    return obj;
+  });
+  const obj4 = { style: items1, children };
+  items1 = [animatedStyle, tmp.floatingContextBar];
   return closure_12(sharedValue(ref[22]).View, obj4);
 });
-let size = fn(2);
-let result = size.fileFinishedImporting("modules/chat_input/native/ChatInputContextBar.tsx");
-
-export default noop.memo(function ChatInputContextBar(channel) {
+const memoResult = react.memo(function ChatInputContextBar(channel) {
+  let items2;
+  let obj3;
+  let obj5;
+  let obj7;
+  let obj9;
+  let onCancelEditing;
+  let onTapContextBarReply;
+  let onToggleReplyMention;
   channel = channel.channel;
   const chatInputRef = channel.chatInputRef;
   const pendingReply = channel.pendingReply;
   let stateFromStores;
   const items = [channel, chatInputRef, pendingReply];
-  const memo = stateFromStores.useMemo(() => ({
-    onCancelEditing() {
-      const current = ref.current;
-      if (current != null) {
-        current.handleCancelEditing();
-      }
-    },
-    onCancelReplying() {
-      if (null != closure_1_2) {
-        channel(pendingReply[24]).deletePendingReply(id.id);
-        const obj3 = channel(pendingReply[24]);
-        const tmp10 = id;
-        const tmp8 = channel;
-        const tmp9 = pendingReply;
-        id = undefined;
-        if (tmp != null) {
-          id = tmp.message.id;
+  const pendingEdit = channel.pendingEdit;
+  const memo = stateFromStores.useMemo(() => {
+    let ref;
+    obj = {
+      onCancelEditing() {
+        const current = ref.current;
+        if (current != null) {
+          current.handleCancelEditing();
         }
-        obj = { message_id: id, channel_id: null, guild_id: null, context_action: "reply", reason: null, is_own_message: null };
-        ({ id: obj.channel_id, guild_id: obj.guild_id } = tmp10);
-        const obj4 = chatInputRef(pendingReply[25]);
-        obj.reason = tmp8(tmp9[26]).getContextBarCancelReason("reply", "cancel");
-        currentUser = currentUser.getCurrentUser();
+      },
+      onCancelReplying() {
         let id1;
-        if (currentUser != null) {
-          id1 = currentUser.id;
-        }
         let id2;
-        if (tmp != null) {
-          id2 = tmp.message.author.id;
+        let tmp8Result;
+        if (null != closure_1_2) {
+          const obj3 = channel(pendingReply[24]);
+          obj3.deletePendingReply(id.id);
+          const tmp10 = id;
+          id = undefined;
+          const track = chatInputRef(pendingReply[25]).track;
+          const CHAT_CONTEXT_BAR_ACTION_CANCELED = constants.CHAT_CONTEXT_BAR_ACTION_CANCELED;
+          chatInputRef(pendingReply[25]);
+          const tmp8 = channel;
+          const tmp9 = pendingReply;
+          if (closure_1_2 != null) {
+            id = tmp.message.id;
+          }
+          obj = { message_id: id, channel_id: null, guild_id: null, context_action: "reply", reason: tmp8Result.getContextBarCancelReason("reply", "cancel"), is_own_message: id1 === id2 };
+          ({ id: obj.channel_id, guild_id: obj.guild_id } = tmp10);
+          tmp8Result = tmp8(tmp9[26]);
+          currentUser = currentUser.getCurrentUser();
+          id1 = undefined;
+          if (currentUser != null) {
+            id1 = currentUser.id;
+          }
+          id2 = undefined;
+          if (closure_1_2 != null) {
+            id2 = tmp.message.author.id;
+          }
+          track(CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
         }
-        obj.is_own_message = id1 === id2;
-        obj4.track(constants.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-        const tmp8Result = tmp8(tmp9[26]);
+      },
+      onTapContextBarReply() {
+        if (null != closure_1_2) {
+          obj = channel(pendingReply[27]);
+          channel = tmp.channel;
+          obj.transitionTo(closure_2_11.CHANNEL(channel.getGuildId(), closure_1_2.channel.id, closure_1_2.message.id));
+        }
+      },
+      onToggleReplyMention() {
+        if (null != closure_1_2) {
+          obj = channel(pendingReply[24]);
+          const result = obj.setPendingReplyShouldMention(tmp.channel.id, !tmp.shouldMention);
+        }
       }
-    },
-    onTapContextBarReply() {
-      if (null != closure_1_2) {
-        channel = tmp.channel;
-        channel(pendingReply[27]).transitionTo(closure_2_11.CHANNEL(channel.getGuildId(), tmp.channel.id, tmp.message.id));
-        obj = channel(pendingReply[27]);
-      }
-    },
-    onToggleReplyMention() {
-      if (null != closure_1_2) {
-        const result = channel(pendingReply[24]).setPendingReplyShouldMention(tmp.channel.id, !tmp.shouldMention);
-        obj = channel(pendingReply[24]);
-      }
-    }
-  }), items);
+    };
+    return obj;
+  }, items);
   const onCancelReplying = memo.onCancelReplying;
   ({ onCancelEditing, onTapContextBarReply, onToggleReplyMention } = memo);
   let message;
+  const useNullableMessageAuthor = channel(pendingReply[28]).useNullableMessageAuthor;
+  const tmp4 = channel(pendingReply[28]);
   if (pendingReply != null) {
     message = pendingReply.message;
   }
-  const nullableMessageAuthor = channel(pendingReply[28]).useNullableMessageAuthor(message);
-  obj = channel(pendingReply[28]);
+  const nullableMessageAuthor = useNullableMessageAuthor(message);
   const items1 = [DraftStore];
-  stateFromStores = channel(pendingReply[15]).useStateFromStores(items1, () => DraftStore.getScheduledMessage(channel.id));
-  const obj2 = { component, children: null };
-  let tmp8 = null != pendingReply;
-  if (tmp8) {
-    tmp8 = null != nullableMessageAuthor;
+  const tmp2Result = channel(pendingReply[15]);
+  stateFromStores = tmp2Result.useStateFromStores(items1, () => DraftStore.getScheduledMessage(channel.id));
+  let tmp8 = closure_13;
+  obj = { component, children: items2 };
+  let tmp9 = null != pendingReply;
+  const TransitionGroup = tmp2(tmp3[29]).TransitionGroup;
+  if (tmp9) {
+    tmp9 = null != nullableMessageAuthor;
   }
-  if (tmp8) {
-    let obj3 = { children: null };
-    let obj4 = { pendingReply, pendingReplyAuthor: nullableMessageAuthor, onTapContextBarReply, onCancelReplying, onToggleReplyMention };
-    obj3.children = closure_12(ChatInputReplyBar, obj4);
-    tmp8 = closure_12(closure_24, obj3);
+  if (tmp9) {
+    let tmp10 = closure_12;
+    const obj2 = { children: closure_12(ChatInputReplyBar, obj3) };
+    obj3 = { pendingReply, pendingReplyAuthor: nullableMessageAuthor, onTapContextBarReply, onCancelReplying, onToggleReplyMention };
+    tmp9 = closure_12(closure_24, obj2);
   }
-  const items2 = [tmp8, , , ];
-  let tmp12 = null != pendingReply && null == nullableMessageAuthor;
-  if (tmp12) {
-    const obj5 = { children: null };
-    const obj6 = { onCancelReplying };
-    obj5.children = closure_12(ChatInputReplyBarNoAuthor, obj6);
-    tmp12 = closure_12(closure_24, obj5);
+  items2 = [tmp9, , , ];
+  let tmp13 = null != pendingReply && null == nullableMessageAuthor;
+  if (tmp13) {
+    const obj4 = { children: closure_12(ChatInputReplyBarNoAuthor, obj5) };
+    obj5 = { onCancelReplying };
+    tmp13 = closure_12(closure_24, obj4);
   }
-  items2[1] = tmp12;
-  let tmp16 = null != channel.pendingEdit;
-  if (tmp16) {
-    const obj7 = { children: null };
-    const obj8 = { onCancelEditing };
-    obj7.children = closure_12(ChatInputEditBar, obj8);
-    tmp16 = closure_12(closure_24, obj7);
+  items2[1] = tmp13;
+  let tmp17 = null != pendingEdit;
+  if (tmp17) {
+    const obj6 = { children: closure_12(ChatInputEditBar, obj7) };
+    obj7 = { onCancelEditing };
+    tmp17 = closure_12(closure_24, obj6);
   }
-  items2[2] = tmp16;
-  let tmp20 = null != stateFromStores;
-  if (tmp20) {
-    const obj9 = { children: null };
-    const obj10 = {
+  items2[2] = tmp17;
+  let tmp21 = null != stateFromStores;
+  if (tmp21) {
+    const obj8 = { children: closure_12(ChatInputScheduledMessageBar, obj9) };
+    obj9 = {
       scheduledTimestamp: stateFromStores.scheduledTimestamp,
       onCancelScheduling() {
-          return DraftActionCreatorsDefault.clearDraft(channel.id, DraftType.ScheduledMessage);
+          obj = DraftActionCreatorsDefault;
+          return obj.clearDraft(channel.id, DraftType.ScheduledMessage);
         },
       onEditSchedule() {
-          return ScheduledMessagesUtils.openScheduleMessageActionSheet(channel.id, ScheduledMessageTypes.ScheduledMessageEntryPoint.COMPOSER_BAR, stateFromStores.scheduledTimestamp);
+          obj = ScheduledMessagesUtils;
+          return obj.openScheduleMessageActionSheet(channel.id, ScheduledMessageTypes.ScheduledMessageEntryPoint.COMPOSER_BAR, stateFromStores.scheduledTimestamp);
         }
     };
-    obj9.children = closure_12(ChatInputScheduledMessageBar, obj10);
-    tmp20 = closure_12(closure_24, obj9);
+    tmp21 = closure_12(closure_24, obj8);
   }
-  items2[3] = tmp20;
-  obj2.children = items2;
-  return closure_13(channel(pendingReply[29]).TransitionGroup, obj2);
+  items2[3] = tmp21;
+  return tmp8(TransitionGroup, obj);
 });
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/chat_input/native/ChatInputContextBar.tsx");
+
+export default memoResult;
 export { ChatInputReplyBar };

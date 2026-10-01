@@ -4,9 +4,9 @@
 // Dependencies: [6427]
 
 // Module 6426 (PanGestureHandler)
-const require = globalThis.__r;
+import _mod6427 from "module_6427" /* 6427 */;
 
-for (const key10013 in require("module_6427")) {
-  arg5[key10013] = require("module_6427")[key10013];
+for (const key10013 in _mod6427) {
+  exports[key10013] = _mod6427[key10013];
   continue;
 }

@@ -4,19 +4,23 @@
 // Dependencies: [15032, 7417, 1364, 15034, 1115, 11006, 14011, 15038, 2]
 
 // Module 15047 (AndroidNotificationSoundsSetting)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14011 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15034 */;
 import MobileNotifSettings from "MobileNotifSettings" /* 15038 */;
 import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15032 */;
 import SettingBuilders_mod from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
+let c2;
+let setAndroidNotificationSoundsEnabled;
 ({ useAndroidNotificationSoundsEnabled: c2, setAndroidNotificationSoundsEnabled } = AndroidNotificationSettingsStore);
 let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["1CWknJ"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["1CWknJ"]);
   },
   useValue: function useAndroidNotificationSoundsSettingValue() {
     let flag = React2();
@@ -27,49 +31,58 @@ let obj = {
   },
   onValueChange: setAndroidNotificationSoundsEnabled
 };
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let SettingBuilders = SettingBuilders_mod;
-const obj2 = {};
+const createToggle = SettingBuilders.createToggle;
+const obj2 = {
+  parent: MobileUserSettings.NOTIFICATIONS,
+  usePredicate() {
+    const tmp = React2();
+    const obj = PlatformUtils;
+    let tmp5 = !obj.isIOS();
+    obj.isIOS();
+    if (tmp5) {
+      const tmp2Result = SettingsNotificationUtils;
+      tmp5 = !tmp2Result.hasAndroidNotificationChannels();
+    }
+    if (tmp5) {
+      tmp5 = null != tmp;
+    }
+    const tmp2Result2 = notifications_NotificationSettingsUtils;
+    if (tmp5) {
+      tmp5 = !tmp2Result2.useIsDeclarativeSettingsUIAvailable("AndroidNotificationSoundsSetting");
+    }
+    return tmp5;
+  }
+};
 const merged = Object.assign(obj);
-obj2.parent = SettingsConstants.MobileUserSettings.NOTIFICATIONS;
-obj2.usePredicate = function usePredicate() {
-  const tmp = React2();
-  const isIOSResult = PlatformUtils.isIOS();
-  let tmp5 = !isIOSResult;
-  if (!isIOSResult) {
-    tmp5 = !tmp2(15034).hasAndroidNotificationChannels();
-    const tmp2Result = tmp2(15034);
+const toggle = createToggle(obj2);
+SettingBuilders = SettingBuilders_mod;
+const createToggle2 = SettingBuilders.createToggle;
+const obj3 = {
+  parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
+  usePredicate() {
+    const tmp = React2();
+    const obj = PlatformUtils;
+    let isDeclarativeSettingsUIAvailable = !obj.isIOS();
+    obj.isIOS();
+    if (isDeclarativeSettingsUIAvailable) {
+      const tmp2Result = SettingsNotificationUtils;
+      isDeclarativeSettingsUIAvailable = !tmp2Result.hasAndroidNotificationChannels();
+    }
+    if (isDeclarativeSettingsUIAvailable) {
+      isDeclarativeSettingsUIAvailable = null != tmp;
+    }
+    const tmp2Result2 = notifications_NotificationSettingsUtils;
+    if (isDeclarativeSettingsUIAvailable) {
+      isDeclarativeSettingsUIAvailable = tmp2Result2.useIsDeclarativeSettingsUIAvailable("RedesignAndroidNotificationSoundsSetting");
+    }
+    return isDeclarativeSettingsUIAvailable;
   }
-  if (tmp5) {
-    tmp5 = null != tmp;
-  }
-  if (tmp5) {
-    tmp5 = !tmp2Result2.useIsDeclarativeSettingsUIAvailable("AndroidNotificationSoundsSetting");
-  }
-  return tmp5;
 };
-const toggle = SettingBuilders.createToggle(obj2);
-let SettingBuilders = SettingBuilders_mod;
-const obj3 = {};
 const merged1 = Object.assign(obj);
-obj3.parent = MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN;
-obj3.usePredicate = function usePredicate() {
-  const tmp = React2();
-  const isIOSResult = PlatformUtils.isIOS();
-  let isDeclarativeSettingsUIAvailable = !isIOSResult;
-  if (!isIOSResult) {
-    isDeclarativeSettingsUIAvailable = !tmp2(15034).hasAndroidNotificationChannels();
-    const tmp2Result = tmp2(15034);
-  }
-  if (isDeclarativeSettingsUIAvailable) {
-    isDeclarativeSettingsUIAvailable = null != tmp;
-  }
-  if (isDeclarativeSettingsUIAvailable) {
-    isDeclarativeSettingsUIAvailable = tmp2Result2.useIsDeclarativeSettingsUIAvailable("RedesignAndroidNotificationSoundsSetting");
-  }
-  return isDeclarativeSettingsUIAvailable;
-};
-const toggle1 = SettingBuilders.createToggle(obj3);
+const toggle2 = createToggle2(obj3);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AndroidNotificationSoundsSetting.tsx");
 
 export default toggle;
-export const RedesignAndroidNotificationSoundsSetting = toggle1;
+export const RedesignAndroidNotificationSoundsSetting = toggle2;

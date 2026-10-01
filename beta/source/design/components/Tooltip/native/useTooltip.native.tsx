@@ -6,179 +6,285 @@
 
 // Module 10590 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
+import Fragment from "Fragment" /* 21 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import AnimatedTooltip from "AnimatedTooltip" /* 10591 */;
-import _slicedToArray from "module_32" /* 32 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import AnimatedTooltip2 from "AnimatedTooltip" /* 10591 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_2, dependencyMap, importDefault, ref2, surfaceRef;
 
-require = fn;
-const jsx = fn(21).jsx;
-const logger = new LoggerDefault("useTooltip.native");
-const size = fn(2);
+const jsx = Fragment.jsx;
+let tmp2 = new LoggerDefault("useTooltip.native");
+const logger = tmp2;
 const result = size.fileFinishedImporting("design/components/Tooltip/native/useTooltip.native.tsx");
 
 export const useTooltip = function useTooltip(ref, memo) {
-  ref = noop.useRef(require("v1").v4());
+  let obj = react;
+  const tmp2 = dependencyMap;
+  const useRef = react.useRef;
+  const tmp = _require;
+  const obj2 = require("v1");
+  ref = useRef(obj2.v4());
   _require = memo;
-  const context = noop.useContext(require("LayerContext").LayerContext);
+  const context = react.useContext(require("LayerContext").LayerContext);
   if (null == context) {
     logger.warn("Tooltip called with no layer context. It will not show without a LayerScope.");
   }
   let items = [context, memo];
   const callback = obj.useCallback((arg0, targetMeasurements, surfaceMeasurements) => {
-    const obj = {};
-    const merged = Object.assign(closure_0);
-    obj.targetMeasurements = targetMeasurements;
-    obj.surfaceMeasurements = surfaceMeasurements;
-    context.add(arg0, jsx(AnimatedTooltip.AnimatedTooltip, {}));
+    const AnimatedTooltip = AnimatedTooltip2.AnimatedTooltip;
+    const merged = Object.assign(memo);
+    context.add(arg0, <AnimatedTooltip targetMeasurements={arg1} surfaceMeasurements={arg2} />);
   }, items);
-  closure_129_0 = ref;
-  closure_129_1 = ref;
-  closure_129_2 = callback;
+  let closure_1 = ref;
   const tmp8 = context(1479)();
-  closure_129_3 = tmp8;
-  closure_129_4 = obj.useRef(tmp8);
-  const context1 = obj.useContext(require("LayerContext").LayerContext);
-  closure_129_5 = context1;
-  closure_129_6 = obj.useRef(null);
+  let closure_3 = tmp8;
+  let closure_4 = obj.useRef(tmp8);
+  const context1 = obj.useContext(tmp(6578).LayerContext);
+  let closure_6 = obj.useRef(null);
   const items1 = [context1, ref];
   const effect = obj.useEffect(() => {
+    let current;
     current = current.current;
     return () => {
       if (null != current) {
-        noop.remove(tmp);
+        context1.remove(tmp);
       }
-      closure_0.current = null;
+      ref.current = null;
     };
   }, items1);
   const items2 = [context1.surfaceRef, ref, ref, callback];
   const callback1 = obj.useCallback((arg0) => {
-    memo = arg0;
-    closure_1 = async function _measureHelper(arg0, arg1) {
-      closure_129_0 = ref;
-      const measurements = memo(10595).getMeasurements(surfaceRef.surfaceRef, memo);
-      const items = [measurements, memo(10595).getMeasurements(closure_1, memo)];
-      await Promise.all(items);
-      if (1 === tmp7) {
-        c4 = 0;
-        ref2 = 3;
-      } else if (arg0 === 1) {
-        ref2 = 3;
-        throw arg1;
-      } else if (arg0 !== 2) {
-        closure_129_1 = arg1;
-        closure_129_2 = _slicedToArray(closure_129_1, 2);
-        closure_129_3 = closure_129_2[0];
-        closure_129_4 = closure_129_2[1];
-        let tmp12 = null != ref.current;
-        if (tmp12) {
-          tmp12 = ref2.current === closure_129_0;
-        }
-        if (tmp12) {
-          tmp3(ref.current, closure_129_4, closure_129_3);
-        }
-        c4 = 0;
-      }
-      return arg1;
+    function measureHelper(current) {
+      return obj(...arguments);
+    }
+    let closure_0 = arg0;
+    let obj = function _measureHelper() {
+      obj = _asyncToGenerator(async (arg0) => {
+        ref = arg0;
+        let c5 = 0;
+        let c6 = 0;
+        let c4 = 0;
+        return (async (arg0, value) => {
+          if (ref2 === 2) {
+            ref2 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              return { value, done: true };
+            } else {
+              return { value: "HermesInternal", done: null };
+            }
+          } else {
+            try {
+              let closure_4;
+              ref2 = 2;
+              if (0 === surfaceRef) {
+                if (arg0 === 1) {
+                  ref2 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  ref2 = 3;
+                  return { value, done: true };
+                } else {
+                  closure_1 = undefined;
+                  closure_2 = undefined;
+                  closure_3 = undefined;
+                  closure_4 = undefined;
+                  c4 = 1;
+                  const obj5 = closure_2_0(closure_2_2[9]);
+                  const measurements = obj5.getMeasurements(surfaceRef.surfaceRef, closure_2_0);
+                  const items = [measurements, ];
+                  const obj6 = closure_2_0(closure_2_2[9]);
+                  items[1] = obj6.getMeasurements(closure_1, closure_2_0);
+                  surfaceRef = 2;
+                  ref2 = 1;
+                  const obj4 = { value: Promise.all(items), done: false };
+                  return obj4;
+                }
+              } else {
+                if (1 === surfaceRef) {
+                  c4 = 0;
+                } else if (arg0 === 1) {
+                  ref2 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 0;
+                  ref2 = 3;
+                  return { value, done: true };
+                } else {
+                  closure_1 = value;
+                  closure_2 = closure_2_3(closure_1, 2);
+                  closure_3 = closure_2[0];
+                  closure_4 = closure_2[1];
+                  const tmp9 = null != ref.current && ref2.current === ref;
+                  if (tmp9) {
+                    closure_2(ref.current, closure_4, closure_3);
+                  }
+                  c4 = 0;
+                }
+                ref2 = 3;
+                return { value: "HermesInternal", done: null };
+              }
+            } catch (tmp18) {
+              closure_3 = tmp18;
+              if (0 === c4) {
+                ref2 = 3;
+                throw tmp18;
+              } else {
+                surfaceRef = 1;
+              }
+            }
+          }
+        })();
+      });
+      return obj(...arguments);
     };
-    ref2.current = memo(dependencyMap[5]).v4();
-    return (function measureHelper(current) {
-      const self = this;
-      const apply = closure_1.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    })(ref2.current);
+    obj = ref(callback[5]);
+    ref2.current = obj.v4();
+    return measureHelper(ref2.current);
   }, items2);
-  closure_129_7 = callback1;
   const items3 = [context1, tmp8, callback1, ref];
   const effect1 = obj.useEffect(() => {
-    if (ref.current !== _slicedToArray) {
-      if (null != memo.current) {
-        noop.remove(tmp4.current);
+    if (ref.current !== closure_3) {
+      if (null != ref.current) {
+        context1.remove(tmp4.current);
       }
       tmp.current = tmp2;
     }
-    logger(ref.current !== _slicedToArray);
+    callback1(ref.current !== closure_3);
   }, items3);
   return callback1;
 };
 export const useTooltipHelper = function useTooltipHelper(ref, targetRef, callback) {
+  let context;
   _require = ref;
   importDefault = targetRef;
   dependencyMap = callback;
   const tmp = useWindowDimensionsDefault();
-  closure_3 = tmp;
-  closure_4 = context.useRef(tmp);
+  let closure_3 = tmp;
+  let closure_4 = context.useRef(tmp);
   context = context.useContext(require("LayerContext").LayerContext);
-  closure_6 = context.useRef(null);
+  let closure_6 = context.useRef(null);
   const items = [context, ref];
   const effect = context.useEffect(() => {
+    let current;
     current = current.current;
     return () => {
       if (null != current) {
-        noop.remove(tmp);
+        context1.remove(tmp);
       }
-      closure_0.current = null;
+      ref.current = null;
     };
   }, items);
   const items1 = [context.surfaceRef, targetRef, ref, callback];
   callback = context.useCallback((arg0) => {
-    memo = arg0;
-    closure_1 = async function _measureHelper(arg0, arg1) {
-      closure_129_0 = ref;
-      const measurements = memo(10595).getMeasurements(surfaceRef.surfaceRef, memo);
-      const items = [measurements, memo(10595).getMeasurements(closure_1, memo)];
-      await Promise.all(items);
-      if (1 === tmp7) {
-        c4 = 0;
-        ref2 = 3;
-      } else if (arg0 === 1) {
-        ref2 = 3;
-        throw arg1;
-      } else if (arg0 !== 2) {
-        closure_129_1 = arg1;
-        closure_129_2 = _slicedToArray(closure_129_1, 2);
-        closure_129_3 = closure_129_2[0];
-        closure_129_4 = closure_129_2[1];
-        let tmp12 = null != ref.current;
-        if (tmp12) {
-          tmp12 = ref2.current === closure_129_0;
-        }
-        if (tmp12) {
-          tmp3(ref.current, closure_129_4, closure_129_3);
-        }
-        c4 = 0;
-      }
-      return arg1;
+    function measureHelper(current) {
+      return obj(...arguments);
+    }
+    let closure_0 = arg0;
+    let obj = function _measureHelper() {
+      obj = _asyncToGenerator(async (arg0) => {
+        ref = arg0;
+        let c5 = 0;
+        let c6 = 0;
+        let c4 = 0;
+        return (async (arg0, value) => {
+          if (ref2 === 2) {
+            ref2 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              return { value, done: true };
+            } else {
+              return { value: "HermesInternal", done: null };
+            }
+          } else {
+            try {
+              let closure_4;
+              ref2 = 2;
+              if (0 === surfaceRef) {
+                if (arg0 === 1) {
+                  ref2 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  ref2 = 3;
+                  return { value, done: true };
+                } else {
+                  closure_1 = undefined;
+                  closure_2 = undefined;
+                  closure_3 = undefined;
+                  closure_4 = undefined;
+                  c4 = 1;
+                  const obj5 = closure_2_0(closure_2_2[9]);
+                  const measurements = obj5.getMeasurements(surfaceRef.surfaceRef, closure_2_0);
+                  const items = [measurements, ];
+                  const obj6 = closure_2_0(closure_2_2[9]);
+                  items[1] = obj6.getMeasurements(closure_1, closure_2_0);
+                  surfaceRef = 2;
+                  ref2 = 1;
+                  const obj4 = { value: Promise.all(items), done: false };
+                  return obj4;
+                }
+              } else {
+                if (1 === surfaceRef) {
+                  c4 = 0;
+                } else if (arg0 === 1) {
+                  ref2 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 0;
+                  ref2 = 3;
+                  return { value, done: true };
+                } else {
+                  closure_1 = value;
+                  closure_2 = closure_2_3(closure_1, 2);
+                  closure_3 = closure_2[0];
+                  closure_4 = closure_2[1];
+                  const tmp9 = null != ref.current && ref2.current === ref;
+                  if (tmp9) {
+                    closure_2(ref.current, closure_4, closure_3);
+                  }
+                  c4 = 0;
+                }
+                ref2 = 3;
+                return { value: "HermesInternal", done: null };
+              }
+            } catch (tmp18) {
+              closure_3 = tmp18;
+              if (0 === c4) {
+                ref2 = 3;
+                throw tmp18;
+              } else {
+                surfaceRef = 1;
+              }
+            }
+          }
+        })();
+      });
+      return obj(...arguments);
     };
-    ref2.current = memo(dependencyMap[5]).v4();
-    return (function measureHelper(current) {
-      const self = this;
-      const apply = closure_1.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    })(ref2.current);
+    obj = ref(callback[5]);
+    ref2.current = obj.v4();
+    return measureHelper(ref2.current);
   }, items1);
   const items2 = [context, tmp, callback, ref];
   const effect1 = context.useEffect(() => {
-    if (ref.current !== _slicedToArray) {
-      if (null != memo.current) {
-        noop.remove(tmp4.current);
+    if (ref.current !== closure_3) {
+      if (null != ref.current) {
+        context1.remove(tmp4.current);
       }
       tmp.current = tmp2;
     }
-    logger(ref.current !== _slicedToArray);
+    callback1(ref.current !== closure_3);
   }, items2);
   return callback;
 };

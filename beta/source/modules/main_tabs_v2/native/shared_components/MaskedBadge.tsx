@@ -5,46 +5,51 @@
 // Exports: default
 
 // Module 7293 (MaskedBadge)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import BadgeDefault from "Badge" /* 7294 */;
-import noop from "module_19" /* 19 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 7294 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { maskStyle: { position: "relative", right: "HermesInternal" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 } };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const jsx = Fragment.jsx;
+const obj = { maskStyle: { position: "relative", right: "HermesInternal" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: obj2 };
+obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
+let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MaskedBadge.tsx");
 
 export default function MaskedBadge(backgroundColor) {
+  let items;
+  let items1;
+  let lowPriority;
+  let maxValue;
+  let style;
+  let tmp7Result;
+  let unread;
   backgroundColor = backgroundColor.backgroundColor;
-  value = backgroundColor.value;
+  const value = backgroundColor.value;
   ({ unread, maxValue, lowPriority, size, style } = backgroundColor);
   const tmp = closure_5();
   [][0] = backgroundColor;
   if (value > 0) {
-    const obj2 = { maskStyle: null, dotStyle: null, style: null, value: null, maxValue: null };
-    const items = [tmp2, tmp.maskStyle];
-    obj2.maskStyle = items;
-    obj2.dotStyle = tmp.unreadDot;
-    const items1 = [tmp.badgeStyle, , ];
+    const obj2 = { maskStyle: items, dotStyle: tmp.unreadDot, style: items1, value, maxValue };
+    items = [tmp2, tmp.maskStyle];
+    items1 = [tmp.badgeStyle, , ];
     let lowPriorityBadge = null;
+    const MaskedBadge = native.MaskedBadge;
+    const tmp7 = jsx;
     if (lowPriority) {
       lowPriorityBadge = tmp.lowPriorityBadge;
     }
     items1[1] = lowPriorityBadge;
     items1[2] = style;
-    obj2.style = items1;
-    obj2.value = value;
-    obj2.maxValue = maxValue;
-    let tmp7Result = jsx(native.MaskedBadge, { maskStyle: null, dotStyle: null, style: null, value: null, maxValue: null });
+    tmp7Result = tmp7(MaskedBadge, obj2);
   } else {
     tmp7Result = null;
     if (unread) {
-      const obj = { size, maskColor: backgroundColor, style: tmp.unreadBadge };
-      tmp7Result = jsx(BadgeDefault, { size, maskColor: backgroundColor, style: tmp.unreadBadge });
+      tmp7Result = jsx(shared_components_BadgeDefault, { size, maskColor: backgroundColor, style: tmp.unreadBadge });
     }
   }
   return tmp7Result;

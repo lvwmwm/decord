@@ -5,18 +5,23 @@
 // Exports: default
 
 // Module 10666 (useShowBadgePersonalizationNotice)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
 import BadgeUtils from "BadgeUtils" /* 10659 */;
 import ConsentStore from "ConsentStore" /* 6012 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Consents = fn(1074).Consents;
-const size = fn(2);
+const Consents = Constants.Consents;
 const result = size.fileFinishedImporting("modules/badges/useShowBadgePersonalizationNotice.tsx");
 
 export default function useShowBadgePersonalizationNotice(arg0) {
+  let badge;
+  let isViewingOtherUser;
   ({ badge, isViewingOtherUser } = arg0);
   const items = [ConsentStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => ConsentStore.hasConsented(constants.PERSONALIZATION));
-  return BadgeUtils.isPersonalizationGatedBadge(badge.badge_id) && !isViewingOtherUser && !stateFromStores;
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => ConsentStore.hasConsented(constants.PERSONALIZATION));
+  const obj2 = BadgeUtils;
+  const tmp2 = obj2.isPersonalizationGatedBadge(badge.badge_id) && !isViewingOtherUser && !stateFromStores;
+  return tmp2;
 };

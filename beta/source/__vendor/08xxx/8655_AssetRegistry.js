@@ -1,0 +1,10 @@
+// Module ID: 8655
+// Function ID: 8656
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 8655 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 261.5, height: 152, scales: [2, 3], hash: "2e477535efb98674ba22b5552594b6ab", name: "img_nitro_longer_message_upsell_dark", type: "png" });

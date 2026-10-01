@@ -6,24 +6,29 @@
 
 // Module 7685 (useUserProfileGradientColors)
 import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7675 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
-const size = fn(2);
+let react = react_mod;
 let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileGradientColors.tsx");
 
 export const useUserProfileGradientColors = function useUserProfileGradientColors(primaryColor, secondaryColor, fallbackBackground) {
+  let overlay;
   _require = primaryColor;
   dependencyMap = secondaryColor;
-  noop = fallbackBackground;
+  react = fallbackBackground;
+  let obj = require("get initialized");
   const items = [overlay];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => overlay.syncProfileThemeWithUserTheme);
-  let obj = require("initialize");
+  const stateFromStores = obj.useStateFromStores(items, () => overlay.syncProfileThemeWithUserTheme);
   let obj2 = require("native");
-  const profileThemeValues = require("useProfileThemeValues").useProfileThemeValues(obj2.useThemeContext().theme);
+  const theme = obj2.useThemeContext().theme;
+  let obj3 = require("useProfileThemeValues");
+  const profileThemeValues = obj3.useProfileThemeValues(theme);
+  const tmp3 = profileThemeValues == null;
   if (stateFromStores) {
     let prop;
     if (!tmp3) {
@@ -34,21 +39,24 @@ export const useUserProfileGradientColors = function useUserProfileGradientColor
     overlay = profileThemeValues.overlay;
   }
   const items1 = [fallbackBackground, primaryColor, secondaryColor, overlay];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     let result = null;
-    if (null != closure_0) {
+    if (null != primaryColor) {
       result = null;
       if (null != overlay) {
-        result = UserProfileGradientUtils.calculateOverlayedColor(tmp, tmp3);
+        const obj = UserProfileGradientUtils;
+        result = obj.calculateOverlayedColor(tmp, tmp3);
       }
     }
     let result1 = null;
-    if (null != closure_1) {
+    if (null != secondaryColor) {
       result1 = null;
       if (null != overlay) {
-        result1 = UserProfileGradientUtils.calculateOverlayedColor(tmp6, tmp8);
+        const obj2 = UserProfileGradientUtils;
+        result1 = obj2.calculateOverlayedColor(tmp6, tmp8);
       }
     }
-    return UserProfileGradientUtils.getUserProfileGradientContainerColors(result, result1, closure_2);
+    const obj3 = UserProfileGradientUtils;
+    return obj3.getUserProfileGradientContainerColors(result, result1, fallbackBackground);
   }, items1);
 };

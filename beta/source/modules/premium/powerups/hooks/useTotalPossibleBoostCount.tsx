@@ -5,20 +5,29 @@
 // Exports: default
 
 // Module 15854 (useTotalPossibleBoostCount)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4724 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
-let useMemo = _mod19.useMemo;
-({ MULTIPLE_PURCHASEABLE_PREMIUM_FEATURES_BOOST_INFO: closure_1, PURCHASABLE_PREMIUM_FEATURES_BOOST_INFO: c2 } = GuildPowerupsConstants);
+let c2;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let map;
+let useMemo = react.useMemo;
+({ MULTIPLE_PURCHASEABLE_PREMIUM_FEATURES_BOOST_INFO: map, PURCHASABLE_PREMIUM_FEATURES_BOOST_INFO: c2 } = GuildPowerupsConstants);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: c3, BoostedGuildTiers: closure_4, GuildFeatures: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useTotalPossibleBoostCount.tsx");
 
 export default function useTotalPossibleBoostCount(arg0) {
+  let TIER_3;
+  let closure_0;
   useMemo = arg0;
   const items = [arg0];
   return useMemo(() => {
+    let id;
+    let tmp = id;
     if (null == id) {
       return 0;
     } else {

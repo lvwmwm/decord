@@ -5,28 +5,28 @@
 // Exports: default
 
 // Module 17546 (GuildSettingsRoleSubscriptionsEnableMonetization)
+import Fragment from "Fragment" /* 21 */;
 import UnavailableNoticeDefault from "UnavailableNotice" /* 16185 */;
 import PlaceholderDefault from "Placeholder" /* 17508 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsEnableMonetization.tsx");
 
 export default function GuildSubscriptionEnableMonetization(guildId) {
+  let tmp5;
   guildId = guildId.guildId;
   const items = [GuildStore];
+  const obj = guildId(504);
   if (null == obj.useStateFromStores(items, () => GuildStore.getGuild(guildId))) {
-    let tmp5 = jsx(PlaceholderDefault, {});
+    tmp5 = jsx(PlaceholderDefault, {});
   } else {
-    const obj2 = { brightTitle: true, title: null, description: null };
+    UnavailableNoticeDefault;
     const intl = tmp(1115).intl;
-    obj2.title = intl.string(tmp(1115).t.KeeWp0);
     const intl2 = tmp(1115).intl;
-    obj2.description = intl2.string(tmp(1115).t["tJLG+L"]);
-    tmp5 = jsx(UnavailableNoticeDefault, { brightTitle: true, title: null, description: null });
+    tmp5 = <tmp8 brightTitle title={intl.string(guildId(1115).t.KeeWp0)} description={intl2.string(guildId(1115).t["tJLG+L"])} />;
   }
   return tmp5;
 };

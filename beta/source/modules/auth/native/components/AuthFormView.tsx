@@ -7,55 +7,73 @@
 // Module 6391 (AuthFormView)
 import nativeDefault from "native" /* 576 */;
 import useWideAuthViewDefault from "useWideAuthView" /* 6363 */;
-import WideAuthScrollContext from "WideAuthScrollContext" /* 6392 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 6392 */;
+import BackgroundImageDefault from "BackgroundImage" /* 6394 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 6397 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles((arg0) => {
-  const obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, flex: { flex: 1 }, content: null, subHeader: null };
+  let num2;
+  let num3;
+  let num4;
+  let num5;
+  let obj3;
   let num = 0;
+  const obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, flex: { flex: 1 }, content: obj3, subHeader: { marginTop: 8, alignItems: "center" } };
+  ({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 });
   if (arg0) {
     num = 12;
   }
-  const obj3 = { paddingTop: num, paddingRight: null, paddingLeft: null, paddingBottom: null, flex: null };
-  let num2 = 16;
+  obj3 = { paddingTop: num, paddingRight: num2, paddingLeft: num3, paddingBottom: num4, flex: num5 };
+  num2 = 16;
   if (arg0) {
     num2 = 24;
   }
-  obj3.paddingRight = num2;
-  let num3 = 16;
+  num3 = 16;
   if (arg0) {
     num3 = 24;
   }
-  obj3.paddingLeft = num3;
-  let num4 = 0;
+  num4 = 0;
   if (arg0) {
     num4 = 16;
   }
-  obj3.paddingBottom = num4;
-  let num5 = 1;
+  num5 = 1;
   if (arg0) {
     num5 = 0;
   }
-  obj3.flex = num5;
-  obj.content = obj3;
-  obj.subHeader = { marginTop: 8, alignItems: "center" };
   return obj;
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/AuthFormView.tsx");
 
 export default function AuthFormView(arg0) {
+  let backgroundImageCover;
+  let backgroundImageSource;
+  let children;
+  let contentStyle;
+  let headerText;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let subHeader;
+  let tmp5Result;
   ({ children, headerText, subHeader, contentStyle } = arg0);
   ({ backgroundImageSource, backgroundImageCover } = arg0);
   const tmp3 = useWideAuthViewDefault();
   const tmp4 = closure_8(tmp3);
-  closure_0 = noop.useContext(WideAuthScrollContext.WideAuthScrollContext);
+  let closure_0 = react.useContext(react2.WideAuthScrollContext);
   if (tmp3) {
     const obj2 = {
       contentInset: { top: 0 },
@@ -67,44 +85,42 @@ export default function AuthFormView(arg0) {
           return closure_0(nativeEvent.nativeEvent.contentOffset.y > 0);
         },
       style: tmp4.container,
-      contentContainerStyle: null,
-      children: null
+      contentContainerStyle: items,
+      children: items1
     };
-    const items = [tmp4.content, contentStyle];
-    obj2.contentContainerStyle = items;
+    items = [tmp4.content, contentStyle];
     let tmp15 = null;
+    const tmp13 = hasOwnProperty;
     if (null != headerText) {
       const obj3 = { children: headerText };
-      tmp15 = timestampProducer(tmp(6393), obj3);
+      tmp15 = metroRequire(tmp(6393), obj3);
     }
-    const items1 = [tmp15, , ];
+    items1 = [tmp15, , ];
     let tmp17 = null;
     if (null != subHeader) {
       const obj4 = { style: tmp4.subHeader, children: subHeader };
-      tmp17 = timestampProducer(React4, obj4);
+      tmp17 = metroRequire(React3, obj4);
     }
     items1[1] = tmp17;
     items1[2] = children;
-    obj2.children = items1;
-    let tmp5Result = tmp5(hasOwnProperty, obj2);
+    tmp5Result = tmp5(tmp13, obj2);
   } else {
-    const obj = { style: null, children: null };
-    const items2 = [, ];
+    const obj = { style: items2, children: items3 };
+    items2 = [, ];
     ({ container: arr[0], flex: arr[1] } = tmp4);
-    obj.style = items2;
     const obj5 = { backgroundImageSource, backgroundImageCover };
-    const items3 = [timestampProducer(tmp(6394), obj5), timestampProducer(tmp(6397), {}), ];
-    const obj6 = { contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, style: tmp4.flex, contentContainerStyle: null, children: null };
-    const items4 = [, , ];
+    items3 = [metroRequire(BackgroundImageDefault, obj5), metroRequire(AuthNavbarPlaceholderDefault, {}), ];
+    const obj6 = { contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, style: tmp4.flex, contentContainerStyle: items4, children: items5 };
+    items4 = [, , ];
     ({ content: arr3[0], flex: arr3[1] } = tmp4);
     items4[2] = contentStyle;
-    obj6.contentContainerStyle = items4;
     let tmp7Result = null;
+    const tmp8 = hasOwnProperty;
     if (null != headerText) {
       const obj7 = { children: headerText };
       tmp7Result = tmp7(tmp(6393), obj7);
     }
-    const items5 = [tmp7Result, , ];
+    items5 = [tmp7Result, , ];
     let tmp7Result2 = null;
     if (null != subHeader) {
       const obj8 = { style: tmp4.subHeader, children: subHeader };
@@ -112,9 +128,7 @@ export default function AuthFormView(arg0) {
     }
     items5[1] = tmp7Result2;
     items5[2] = children;
-    obj6.children = items5;
-    items3[2] = tmp5(hasOwnProperty, obj6);
-    obj.children = items3;
+    items3[2] = metroImportDefault(tmp8, obj6);
     tmp5Result = tmp5(tmp6, obj);
   }
   return tmp5Result;

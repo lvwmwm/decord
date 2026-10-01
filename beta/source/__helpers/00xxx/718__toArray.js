@@ -11,5 +11,6 @@ import _iterableToArray from "_iterableToArray" /* 719 */;
 
 
 export default function _toArray(current) {
-  return _arrayWithHoles(current) || _iterableToArray(current) || _unsupportedIterableToArray(current) || _nonIterableRest();
+  const tmp3 = _arrayWithHoles(current) || _iterableToArray(current) || _unsupportedIterableToArray(current) || _nonIterableRest();
+  return tmp3;
 };

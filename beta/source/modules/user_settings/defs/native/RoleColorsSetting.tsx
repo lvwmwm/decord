@@ -5,49 +5,54 @@
 // Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
 // Module 14878 (RoleColorsSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl4 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function useRoleColorSettingValue() {
+  let roleStyle;
   const items = [AccessibilityStore];
-  return initialize.useStateFromStores(items, () => roleStyle.roleStyle);
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => roleStyle.roleStyle);
 }
 function onRoleColorSettingValueChange(roleStyle) {
-  AccessibilityActionCreators.setRoleStyle(roleStyle);
+  const obj = AccessibilityActionCreators;
+  obj.setRoleStyle(roleStyle);
 }
 function useRoleColorSettingOptions() {
-  return noop.useMemo(() => {
-    const obj = { label: null, value: "username" };
-    const intl = util.intl;
-    obj.label = intl.string(util.t.YEOEi6);
+  return react.useMemo(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    const obj = { label: intl.string(intl4.t.YEOEi6), value: "username" };
+    intl = intl4.intl;
     const items = [obj, , ];
-    const obj2 = { label: null, value: "dot" };
-    const intl2 = util.intl;
-    obj2.label = intl2.string(util.t.mQaro3);
+    const obj2 = { label: intl2.string(intl4.t.mQaro3), value: "dot" };
+    intl2 = intl4.intl;
     items[1] = obj2;
-    const obj3 = { label: null, value: "hidden" };
-    const intl3 = util.intl;
-    obj3.label = intl3.string(util.t.Ji2EVJ);
+    const obj3 = { label: intl3.string(intl4.t.Ji2EVJ), value: "hidden" };
+    intl3 = intl4.intl;
     items[2] = obj3;
     return items;
   }, []);
 }
-const SettingBuilders = fn(11006);
-const radio = SettingBuilders.createRadio({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.uSOPWm);
+    const intl = intl4.intl;
+    return intl.string(intl4.t.uSOPWm);
   },
-  parent: fn(7417).MobileUserSettings.ACCESSIBILITY,
+  parent: MobileUserSettings.ACCESSIBILITY,
   useValue: useRoleColorSettingValue,
   onValueChange: onRoleColorSettingValueChange,
   useOptions: useRoleColorSettingOptions
-});
-const size = fn(2);
+};
+const radio = SettingBuilders.createRadio(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/RoleColorsSetting.tsx");
 
 export default radio;

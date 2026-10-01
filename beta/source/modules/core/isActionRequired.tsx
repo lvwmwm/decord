@@ -7,8 +7,8 @@
 // Module 2041 (isActionRequired)
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2036 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/core/isActionRequired.tsx");
 
 export default function isActionRequired() {

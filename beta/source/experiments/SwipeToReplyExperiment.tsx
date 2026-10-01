@@ -7,6 +7,7 @@
 // Module 11001 (SwipeToReplyExperiment)
 import LaunchPadConstants from "LaunchPadConstants" /* 11002 */;
 import useLaunchPadTypeDefault from "useLaunchPadType" /* 11003 */;
+import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11004 */;
 import size from "module_2" /* 2 */;
 
 const LaunchPadTypes = LaunchPadConstants.LaunchPadTypes;
@@ -14,9 +15,7 @@ const result = size.fileFinishedImporting("experiments/SwipeToReplyExperiment.ts
 
 export const useIsMessageSwipeActionsEnabled = function useIsMessageSwipeActionsEnabled() {
   const tmp = useLaunchPadTypeDefault() === LaunchPadTypes.GESTURE_FULL;
-  let tmp2 = !tmp;
-  if (!tmp) {
-    tmp2 = !obj.useIsSwipeToMemberListEnabled();
-  }
+  const obj = SwipeToMemberListUtils;
+  const tmp2 = !tmp && !obj.useIsSwipeToMemberListEnabled();
   return tmp2;
 };

@@ -5,17 +5,15 @@
 // Exports: isPerModeThemingActive
 
 // Module 4681 (isPerModeThemingActive)
+import ThemeConstants from "ThemeConstants" /* 1185 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
+import size from "module_2" /* 2 */;
 
-const SystemThemeState = fn(1185).SystemThemeState;
-const size = fn(2);
+const SystemThemeState = ThemeConstants.SystemThemeState;
 let result = size.fileFinishedImporting("modules/user_settings/isPerModeThemingActive.tsx");
 
 export const isPerModeThemingActive = function isPerModeThemingActive() {
-  let result = UnsyncedUserSettingsStore.useSystemTheme === SystemThemeState.ON;
-  if (result) {
-    result = ThemeStore.isSameAsDeviceThemeEnabled();
-  }
+  const result = UnsyncedUserSettingsStore.useSystemTheme === SystemThemeState.ON && ThemeStore.isSameAsDeviceThemeEnabled();
   return result;
 };

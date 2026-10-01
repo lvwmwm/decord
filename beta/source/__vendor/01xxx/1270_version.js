@@ -7,8 +7,6 @@
 // Module 1270 (version)
 import validateDefault from "validate" /* 1259 */;
 
-importDefault = arg2;
-const dependencyMap = arg6;
 
 export default function version(arr) {
   if (validateDefault(arr)) {

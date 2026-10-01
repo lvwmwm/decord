@@ -6,55 +6,71 @@
 
 // Module 17022 (VoicePanelSoundboardButton)
 import nativeDefault from "native" /* 576 */;
+import intl2 from "intl" /* 1115 */;
+import NativeViewDefault from "NativeView" /* 5901 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
+import SoundboardIcon from "SoundboardIcon" /* 12024 */;
 import VoicePanelStyles from "VoicePanelStyles" /* 17008 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17009 */;
 import useSoundboardConfig from "useSoundboardConfig" /* 17023 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
 const useSoundboardConfigDefault = useSoundboardConfig;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { circle: null, iconContainer: null };
-let size = { width: "100%", height: "100%", borderRadius: nativeDefault.radii.round };
-obj2.circle = size;
-obj2.iconContainer = { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" };
-let closure_6 = createStyles.createStyles(obj2);
-size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let size;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { circle: size, iconContainer: { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" } };
+size = { width: "100%", height: "100%", borderRadius: nativeDefault.radii.round };
+let closure_6 = createStyles.createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelSoundboardButton.tsx");
 
 export default function SoundboardButton(arg0) {
+  let color;
+  let disabled;
+  let disabledAccessibilityHint;
+  let handlePress;
+  let intl;
+  let items;
+  let items1;
+  let obj5;
+  let props;
+  let visible;
+  let wrapperSpecs;
   ({ props, wrapperSpecs } = arg0);
+  const channelId = react.useContext(VoicePanelStateContextDefault).channelId;
   const tmp3 = closure_6();
-  const voicePanelButtonStyles = VoicePanelStyles.useVoicePanelButtonStyles(wrapperSpecs);
-  ({ disabled, handlePress, disabledAccessibilityHint, visible } = useSoundboardConfigDefault(noop.useContext(VoicePanelStateContextDefault).channelId, useSoundboardConfig.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
+  const obj = VoicePanelStyles;
+  const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
+  const backgroundColor = voicePanelButtonStyles.iconBg.backgroundColor;
+  const tmp6 = useSoundboardConfigDefault;
+  ({ disabled, handlePress, disabledAccessibilityHint, visible } = tmp6(channelId, useSoundboardConfig.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
+  tmp6(channelId, useSoundboardConfig.SoundboardButtonLocation.VOICE_PANEL_CONTROLS);
   if (disabled) {
-    let color = tmp(576).colors.ICON_MUTED;
+    color = tmp(576).colors.ICON_MUTED;
   } else {
     color = voicePanelButtonStyles.iconFill.color;
   }
   let tmp8 = null;
   if (visible) {
-    const element = { onPress: handlePress, disabled, props, accessibilityLabel: null, accessibilityHint: null, children: null };
-    const intl = tmp4(1115).intl;
-    element.accessibilityLabel = intl.string(tmp4(1115).t["6EJvHt"]);
-    element.accessibilityHint = disabledAccessibilityHint;
-    const obj2 = { style: null };
-    const items = [tmp3.circle, ];
-    const obj3 = { backgroundColor: voicePanelButtonStyles.iconBg.backgroundColor };
+    const element = { onPress: handlePress, disabled, props, accessibilityLabel: intl.string(intl2.t["6EJvHt"]), accessibilityHint: disabledAccessibilityHint, children: items1 };
+    const tmpResult = VoicePanelAnimatedButtonWrapperDefault;
+    intl = tmp4(1115).intl;
+    const obj2 = { style: items };
+    items = [tmp3.circle, ];
+    const obj3 = { backgroundColor };
     items[1] = obj3;
-    obj2.style = items;
-    const items1 = [React4(tmp(5901), obj2), ];
-    const obj4 = { style: tmp3.iconContainer, children: null };
-    const tmpResult = tmp(17009);
-    const obj5 = { color };
-    obj4.children = React4(tmp4(12024).SoundboardIcon, obj5);
-    items1[1] = React4(tmp(5901), obj4);
-    element.children = items1;
+    items1 = [React3(NativeViewDefault, obj2), ];
+    const obj4 = { style: tmp3.iconContainer, children: React3(SoundboardIcon.SoundboardIcon, obj5) };
+    obj5 = { color };
+    const tmpResult2 = NativeViewDefault;
+    items1[1] = React3(tmpResult2, obj4);
     tmp8 = hasOwnProperty(tmpResult, element);
-    const tmpResult2 = tmp(5901);
   }
   return tmp8;
 };

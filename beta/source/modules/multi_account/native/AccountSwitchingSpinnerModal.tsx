@@ -4,26 +4,25 @@
 // Dependencies: [19, 17, 21, 4836, 1115, 5889, 1094, 2]
 
 // Module 17196 (AccountSwitchingSpinnerModal)
-import util from "util" /* 1115 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5889 */;
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import ConstantsIOS from "ConstantsIOS" /* 1094 */;
+import intl2 from "intl" /* 1115 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 class AccountSwitchingSpinnerModal {
   constructor() {
-    obj = { style: closure_4().switchingSpinnerContainer, accessible: true, accessibilityLabel: null, children: null };
-    intl = closure_0(closure_1[4]).intl;
-    obj.accessibilityLabel = intl.string(closure_0(closure_1[4]).t.n8qMH0);
-    obj.children = jsx(closure_0(closure_1[5]).ActivityIndicator, {});
-    return jsx(View, obj);
+    const intl = intl2.intl;
+    return <View style={closure_4().switchingSpinnerContainer} accessible accessibilityLabel={intl.string(intl2.t.n8qMH0)}>{null}</View>;
   }
 }
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const React4 = createStyles.createStyles({ switchingSpinnerContainer: { flex: 1, alignItems: "center", justifyContent: "center" } });
-AccountSwitchingSpinnerModal.modalConfig = { animation: fn(1094).ModalAnimation.FADE, closable: false };
-const size = fn(2);
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const React3 = createStyles.createStyles({ switchingSpinnerContainer: { flex: 1, alignItems: "center", justifyContent: "center" } });
+AccountSwitchingSpinnerModal.modalConfig = { animation: ConstantsIOS.ModalAnimation.FADE, closable: false };
+const obj = { animation: ConstantsIOS.ModalAnimation.FADE, closable: false };
 const result = size.fileFinishedImporting("modules/multi_account/native/AccountSwitchingSpinnerModal.tsx");
 
 export default AccountSwitchingSpinnerModal;

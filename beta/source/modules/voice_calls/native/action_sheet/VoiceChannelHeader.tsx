@@ -4,34 +4,52 @@
 // Dependencies: [19, 17, 2044, 2067, 4469, 1074, 21, 4836, 576, 13339, 13340, 4832, 13341, 504, 9394, 4989, 9275, 1115, 11085, 1177, 5373, 13343, 9471, 9491, 5435, 2]
 
 // Module 13338 (VoiceChannelHeader)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 5373 */;
 import Pressables from "Pressables" /* 5435 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
 import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9394 */;
-import _modDef9491 from "module_9491" /* 9491 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9491 */;
 import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11085 */;
 import CallStateHooks from "CallStateHooks" /* 13339 */;
 import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13340 */;
-import OngoingCallTimerDefault from "OngoingCallTimer" /* 13341 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const CallStateHooksDefault = CallStateHooks;
+let applicationId, importDefault;
 
-require = fn;
+let c10;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let tmp2;
+let unpackModuleId;
+const OngoingCallTimerDefault = tmp2(13341);
 function PrivateChannelSubtitle(channel) {
+  let items;
   channel = channel.channel;
   const tmp = closure_12();
   const state = CallStateHooksDefault(channel.id).state;
-  const obj = { style: tmp.subtitleWrapper, children: null };
-  const items = [closure_1_10(OngoingCallStatusLabelDefault, { useAllAloneText: false, channel, voiceState: state, style: tmp.subtitle }), , ];
+  const obj = { style: tmp.subtitleWrapper, children: items };
+  items = [, , ];
+  const obj2 = { useAllAloneText: false, channel, voiceState: state, style: tmp.subtitle };
+  items[0] = authStore(OngoingCallStatusLabelDefault, obj2);
   let tmp6Result = state === CallStateHooks.CallStates.CONNECTED;
+  const tmp4 = unpackModuleId;
+  const tmp5 = View;
   if (tmp6Result) {
     const obj3 = { style: tmp.subtitle, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
     tmp6Result = tmp6(tmp7(4832).Text, obj3);
@@ -43,137 +61,123 @@ function PrivateChannelSubtitle(channel) {
     tmp6Result2 = tmp6(OngoingCallTimerDefault, obj4);
   }
   items[2] = tmp6Result2;
-  obj.children = items;
-  return closure_1_11(View, obj);
+  return tmp4(tmp5, obj);
 }
 class VoiceChannelHeader {
-  constructor(arg0) {
-    channel = global.channel;
-    closure_1 = undefined;
-    tmp = closure_12();
-    tmp2 = channel;
-    tmp3 = closure_2;
-    obj = channel(closure_2[13]);
-    items = [];
-    items[0] = closure_5;
-    stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.getGuildId()));
-    tmp5 = closure_1;
-    tmp6 = closure_1(closure_2[14])(channel);
-    obj2 = channel(closure_2[13]);
-    items1 = [];
-    items1[0] = closure_4;
-    items2 = [];
-    items2[0] = channel;
-    closure_1 = obj2.useStateFromStores(items1, () => EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id), items2);
-    name = undefined;
-    tmp7 = closure_1(closure_2[15])(channel);
+  constructor(channel) {
+    let items3;
+    let items4;
+    let tmp14Result4;
+    let tmp5Result;
+    channel = channel.channel;
+    const tmp = closure_12();
+    let tmp2 = channel;
+    let obj = channel(504);
+    const items = [GuildStore];
+    const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.getGuildId()));
+    const items1 = [EmbeddedActivitiesStore];
+    const items2 = [channel];
+    const tmp6 = useIsVoiceChannelFullDefault(channel);
+    const obj2 = channel(504);
+    importDefault = obj2.useStateFromStores(items1, () => EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id), items2);
+    let name;
+    const tmp7 = useChannelNameDefault(channel);
     if (stateFromStores != null) {
       name = stateFromStores.name;
     }
-    E = null;
-    if (closure_6.can(Permissions.CREATE_INSTANT_INVITE, channel)) {
+    let E = null;
+    if (PermissionStore.can(constants.CREATE_INSTANT_INVITE, channel)) {
       E = null;
       if (!tmp6) {
         E = () => {
-          const obj2 = { source: constants3.VOICE_CHANNEL, targetApplicationId: null };
+          const obj = { source: constants.VOICE_CHANNEL, targetApplicationId: applicationId };
           applicationId = undefined;
+          const showInstantInviteActionSheet = instant_invite_InstantInviteUtils.showInstantInviteActionSheet;
+          instant_invite_InstantInviteUtils;
+          const tmp2 = channel;
           if (applicationId != null) {
             applicationId = applicationId.applicationId;
           }
-          obj2.targetApplicationId = applicationId;
-          return instant_invite_InstantInviteUtils.showInstantInviteActionSheet(channel, obj2);
+          return showInstantInviteActionSheet(tmp2, obj);
         };
       }
     }
-    formatToPlainStringResult = tmp7;
+    let formatToPlainStringResult = tmp7;
     if (channel.isPrivate()) {
-      intl = tmp2(tmp3[17]).intl;
-      obj1 = { count: null };
-      num = 1;
-      obj1.count = channel.recipients.length + 1;
-      formatToPlainStringResult = intl.formatToPlainString(tmp2(tmp3[17]).t["8bn8Br"], obj1);
-      tmp10 = jsx;
-      tmp11 = PrivateChannelSubtitle;
-      obj12 = { channel: null };
-      obj12.channel = channel;
-      name = jsx(PrivateChannelSubtitle, obj12);
+      const intl = tmp2(1115).intl;
+      const obj3 = { count: channel.recipients.length + 1 };
+      formatToPlainStringResult = intl.formatToPlainString(tmp2(1115).t["8bn8Br"], obj3);
+      const obj4 = { channel };
+      name = closure_10(PrivateChannelSubtitle, obj4);
       class E {
         constructor() {
-          return closure_1(closure_2[18])(channel.id, AnalyticsPages.CHANNEL_CALL);
+          return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
         }
       }
     }
-    tmp12 = jsxs;
-    tmp13 = View;
-    obj13 = { style: tmp.container, children: null };
-    tmp14 = jsx;
-    obj14 = { size: tmp2(tmp3[19]).Icon.Sizes.MEDIUM, source: null, disableColor: true, style: null };
-    if (tmp5(tmp3[20])(channel)) {
-      tmp5Result = tmp5(tmp3[21]);
+    const obj5 = { style: tmp.container, children: items3 };
+    const obj6 = { size: tmp2(1177).Icon.Sizes.MEDIUM, source: tmp5Result, disableColor: true, style: tmp.icons };
+    const Icon = tmp2(1177).Icon;
+    if (isRoleRequiredDefault(channel)) {
+      tmp5Result = tmp5(13343);
     } else {
-      tmp5Result = tmp5(tmp3[22]);
+      tmp5Result = tmp5(9471);
     }
-    obj14.source = tmp5Result;
-    obj14.style = tmp.icons;
-    items3 = [, , ];
-    items3[0] = tmp14(tmp2(tmp3[19]).Icon, obj14);
-    obj15 = { style: tmp.middle, children: null };
-    tmp14Result = formatToPlainStringResult;
+    items3 = [closure_10(Icon, obj6), , ];
+    let tmp14Result = formatToPlainStringResult;
+    const obj7 = { style: tmp.middle, children: items4 };
     if (typeof formatToPlainStringResult === "string") {
-      obj16 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: null };
-      obj16.children = formatToPlainStringResult;
-      tmp14Result = tmp14(tmp2(tmp3[11]).Text, obj16);
+      const obj8 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
+      tmp14Result = tmp14(tmp2(4832).Text, obj8);
     }
-    items4 = [, ];
-    items4[0] = tmp14Result;
-    tmp14Result1 = name;
+    items4 = [tmp14Result, ];
+    let tmp14Result3 = name;
     if (typeof name === "string") {
-      obj17 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: null };
-      obj17.children = name;
-      tmp14Result1 = tmp14(tmp2(tmp3[11]).Text, obj17);
+      const obj9 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: name };
+      tmp14Result3 = tmp14(tmp2(4832).Text, obj9);
     }
-    items4[1] = tmp14Result1;
-    obj15.children = items4;
-    items3[1] = tmp12(tmp13, obj15);
-    obj18 = { style: tmp.icons, children: null };
-    tmp14Result2 = null != E;
-    if (tmp14Result2) {
-      tmp19 = AddMemberButton;
-      obj19 = { onPress: null };
-      obj19.onPress = E;
-      tmp14Result2 = tmp14(AddMemberButton, obj19);
+    items4[1] = tmp14Result3;
+    items3[1] = closure_11(View, obj7);
+    const obj10 = { style: tmp.icons, children: tmp14Result4 };
+    tmp14Result4 = null != E;
+    if (tmp14Result4) {
+      const obj11 = { onPress: E };
+      tmp14Result4 = tmp14(AddMemberButton, obj11);
     }
-    obj18.children = tmp14Result2;
-    items3[2] = tmp14(tmp13, obj18);
-    obj13.children = items3;
-    return tmp12(tmp13, obj13);
+    items3[2] = closure_10(View, obj10);
+    return closure_11(View, obj5);
   }
 }
 function AddMemberButton(onPress) {
-  const obj = { onPress: onPress.onPress, iconSource: _modDef9491, iconStyle: closure_12().icons, accessibilityLabel: null };
-  const intl = util.intl;
-  obj.accessibilityLabel = intl.string(util.t["6Qgrev"]);
-  return closure_1_10(IconButton, obj);
+  let intl;
+  let tmp;
+  const obj = { onPress: onPress.onPress, iconSource: AssetRegistryDefault, iconStyle: tmp.icons, accessibilityLabel: intl.string(intl2.t["6Qgrev"]) };
+  tmp = closure_12();
+  intl = intl2.intl;
+  return authStore(IconButton, obj);
 }
 class IconButton {
   constructor(arg0) {
-    ({ onPress, iconStyle, iconSource, accessibilityLabel, style } = global);
-    obj = { accessibilityRole: "button", accessibilityLabel, onPress, style, children: jsx(closure_0(closure_2[19]).Icon, { source: iconSource, style: iconStyle }) };
-    return jsx(closure_0(closure_2[24]).PressableOpacity, obj);
+    let accessibilityLabel;
+    let iconSource;
+    let iconStyle;
+    let onPress;
+    let style;
+    ({ onPress, iconStyle, iconSource, accessibilityLabel, style } = arg0);
+    const obj = { accessibilityRole: "button", accessibilityLabel, onPress, style, children: authStore(native.Icon, { source: iconSource, style: iconStyle }) };
+    const PressableOpacity = Pressables.PressableOpacity;
+    return authStore(PressableOpacity, obj);
   }
 }
-const View = fn(17).View;
-const Constants = fn(1074);
-({ Permissions: closure_7, AnalyticsPages: closure_8, InstantInviteSources: closure_9 } = Constants);
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { alignSelf: "stretch", flexDirection: "row", paddingVertical: 10, paddingHorizontal: 16, alignItems: "center" }, middle: { flex: 1, justifyContent: "space-around", marginHorizontal: 16 }, icons: { flexDirection: "row", tintColor: nativeDefault.colors.WHITE }, subtitle: null, subtitleWrapper: null };
-let obj3 = { flexDirection: "row", tintColor: nativeDefault.colors.WHITE };
-obj2.subtitle = { fontSize: 12, lineHeight: 16, color: nativeDefault.colors.WHITE };
-obj2.subtitleWrapper = { flexDirection: "row" };
-let closure_12 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+({ Permissions: metroImportDefault, AnalyticsPages: metroImportAll, InstantInviteSources: c9 } = Constants);
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { alignSelf: "stretch", flexDirection: "row", paddingVertical: 10, paddingHorizontal: 16, alignItems: "center" }, middle: { flex: 1, justifyContent: "space-around", marginHorizontal: 16 }, icons: obj2, subtitle: obj3, subtitleWrapper: { flexDirection: "row" } };
+obj2 = { flexDirection: "row", tintColor: nativeDefault.colors.WHITE };
+createStyles = createStyles.createStyles;
+obj3 = { fontSize: 12, lineHeight: 16, color: nativeDefault.colors.WHITE };
+let closure_12 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceChannelHeader.tsx");
 
 export default VoiceChannelHeader;

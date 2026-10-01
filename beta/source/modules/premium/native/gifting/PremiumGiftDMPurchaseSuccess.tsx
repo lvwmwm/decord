@@ -5,62 +5,79 @@
 // Exports: PremiumGiftDMSuccessActions, default
 
 // Module 10540 (PremiumGiftDMPurchaseSuccess)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import PremiumGiftModal from "PremiumGiftModal" /* 10125 */;
 import NativeGiftContext from "NativeGiftContext" /* 10162 */;
 import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10290 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { title: { marginTop: nativeDefault.space.PX_24, textAlign: "center" }, description: null };
-let obj3 = { marginTop: nativeDefault.space.PX_24, textAlign: "center" };
-obj2.description = { marginTop: nativeDefault.space.PX_8, textAlign: "center" };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let navigation;
+
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+const View = react_native.View;
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { title: obj2, description: obj3 };
+obj2 = { marginTop: nativeDefault.space.PX_24, textAlign: "center" };
+createStyles = createStyles.createStyles;
+obj3 = { marginTop: nativeDefault.space.PX_8, textAlign: "center" };
+let closure_8 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumGiftDMPurchaseSuccess.tsx");
 
 export default function PremiumGiftDMSuccessBody() {
+  let intl;
+  let intl2;
+  let items;
   const tmp = closure_8();
-  const obj2 = { children: null };
-  const items = [hasOwnProperty(View, { children: hasOwnProperty(PremiumGiftBackgroundAnimationDefault, { giftStyle: NativeGiftContext.useNativeGiftContext().giftStyle }) }), , ];
-  const obj4 = { style: tmp.title, variant: "heading-lg/bold", children: null };
-  const intl = util.intl;
-  obj4.children = intl.string(util.t.MqZXbv);
-  items[1] = hasOwnProperty(Text_Text.Text, obj4);
-  const obj5 = { style: tmp.description, variant: "text-md/medium", children: null };
-  const intl2 = util.intl;
-  obj5.children = intl2.string(util.t.Y1keV0);
-  items[2] = hasOwnProperty(Text_Text.Text, obj5);
-  obj2.children = items;
-  return React5(timestampProducer, obj2);
+  const obj2 = { children: items };
+  items = [, , ];
+  const obj = NativeGiftContext;
+  const obj3 = { children: hasOwnProperty(PremiumGiftBackgroundAnimationDefault, { giftStyle: obj.useNativeGiftContext().giftStyle }) };
+  items[0] = hasOwnProperty(View, obj3);
+  const obj4 = { style: tmp.title, variant: "heading-lg/bold", children: intl.string(intl3.t.MqZXbv) };
+  const Text = Text_Text.Text;
+  intl = intl3.intl;
+  items[1] = hasOwnProperty(Text, obj4);
+  const obj5 = { style: tmp.description, variant: "text-md/medium", children: intl2.string(intl3.t.Y1keV0) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl3.intl;
+  items[2] = hasOwnProperty(Text2, obj5);
+  return metroImportDefault(metroRequire, obj2);
 };
 export const PremiumGiftDMSuccessActions = function PremiumGiftDMSuccessActions() {
-  const nativeGiftContext = onClose(navigation[5]).useNativeGiftContext();
+  let intl;
+  let onClose;
+  let obj = onClose(navigation[5]);
+  const nativeGiftContext = obj.useNativeGiftContext();
   onClose = nativeGiftContext.onClose;
   const prePurchaseGiftingBadgeProgress = nativeGiftContext.prePurchaseGiftingBadgeProgress;
-  let obj = onClose(navigation[5]);
-  navigation = onClose(navigation[6]).useNavigation();
+  const obj2 = onClose(navigation[6]);
+  navigation = obj2.useNavigation();
   const GiftingBadgeExperiment = onClose(navigation[7]).GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig({ location: "PremiumGiftDMSuccessActions" }).enabled;
   const items = [enabled, prePurchaseGiftingBadgeProgress, navigation, onClose];
   const callback = enabled.useCallback(() => {
-    if (enabled) {
+    const tmp = enabled;
+    if (tmp) {
       if (null != prePurchaseGiftingBadgeProgress) {
-        const obj = { currentProgress: tmp };
+        const obj = { currentProgress: tmp2 };
         navigation.navigate(PremiumGiftModal.PremiumGiftScreens.GIFTING_BADGE, obj);
       }
     }
     onClose();
   }, items);
-  const obj3 = { text: null, variant: "primary", onPress: null };
-  const intl = onClose(navigation[10]).intl;
-  obj3.text = intl.string(prePurchaseGiftingBadgeProgress(navigation[11]).bGKjmg);
-  obj3.onPress = callback;
-  return closure_5(onClose(navigation[9]).Button, obj3);
+  const obj3 = { text: intl.string(prePurchaseGiftingBadgeProgress(navigation[11]).bGKjmg), variant: "primary", onPress: callback };
+  const Button = onClose(navigation[9]).Button;
+  intl = onClose(navigation[10]).intl;
+  return closure_5(Button, obj3);
 };

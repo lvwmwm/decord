@@ -4,25 +4,34 @@
 // Dependencies: [1993, 1074, 504, 1115, 11006, 9465, 14792, 2]
 
 // Module 14791 (VoiceSetting)
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl3 from "intl" /* 1115 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 9465 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import Constants from "Constants" /* 1074 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+const require = globalThis.__r;
+
+let UserSettingsSections;
+let c3;
 ({ InputModes: c3, UserSettingsSections } = Constants);
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.B1fFpf);
+    const intl = intl3.intl;
+    return intl.string(intl3.t.B1fFpf);
   },
   parent: null,
-  IconComponent: fn(9465).MicrophoneIcon,
+  IconComponent: MicrophoneIcon.MicrophoneIcon,
   useTrailing: function useVoiceSettingTrailing() {
+    let mode;
+    let stringResult;
     const items = [MediaEngineStore];
+    const obj = get_initialized;
     if (obj.useStateFromStores(items, () => mode.getMode()) === constants.PUSH_TO_TALK) {
       const intl2 = tmp(1115).intl;
-      let stringResult = intl2.string(tmp(1115).t.Q8gkVL);
+      stringResult = intl2.string(tmp(1115).t.Q8gkVL);
     } else {
       const intl = tmp(1115).intl;
       stringResult = intl.string(tmp(1115).t.cHCEOJ);
@@ -36,12 +45,12 @@ const route = SettingBuilders.createRoute({
     }
   },
   useSearchTerms() {
-    const intl = util.intl;
-    const items = [intl.string(util.t.nuFtHH)];
+    const intl = intl3.intl;
+    const items = [intl.string(intl3.t.nuFtHH)];
     return items;
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/VoiceSetting.tsx");
 
 export default route;

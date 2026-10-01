@@ -4,56 +4,61 @@
 // Dependencies: [502, 2099, 5733, 5726, 1983, 573, 510, 12484, 2]
 
 // Module 12483 (StageChannelNewUserManager)
+import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5726 */;
+import StageChannelAlertActionCreatorsAll from "StageChannelAlertActionCreators" /* 12484 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 5733 */;
 import LifecycleManager from "LifecycleManager" /* 1983 */;
+import size from "module_2" /* 2 */;
 
-let require = fn;
-let closure_7 = fn(5726).STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY;
-class StageChannelNewUserManager extends tmp2 {
+let voiceChannelId;
+
+let closure_7 = StageChannelsConstants.STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY;
+class StageChannelNewUserManager extends LifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    let audienceMember;
+    let id;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
     applyArgumentsResult.handleVoiceStateUpdates = function handleVoiceStateUpdates(voiceStates) {
       voiceStates = voiceStates.voiceStates;
       const item = voiceStates.forEach((channelId) => {
         if (null != channelId.channelId) {
           if (channelId.userId === id.getId()) {
             closure_1_0.terminate();
-            const Storage2 = applyArgumentsResult(dependencyMap[6]).Storage;
+            const Storage2 = Storage3.Storage;
+            const tmp11 = require;
+            const tmp13 = closure_2_7;
             if (!Storage2.get(closure_2_7, false)) {
               voiceChannelId = voiceChannelId.getVoiceChannelId();
-              let isAudienceMemberResult = null != voiceChannelId && channelId.channelId === voiceChannelId;
-              if (isAudienceMemberResult) {
-                isAudienceMemberResult = audienceMember.isAudienceMember(channelId.userId, voiceChannelId);
-              }
+              const isAudienceMemberResult = null != voiceChannelId && channelId.channelId === voiceChannelId && audienceMember.isAudienceMember(channelId.userId, voiceChannelId);
               if (isAudienceMemberResult) {
                 const Storage = tmp11(tmp12[6]).Storage;
                 const result = Storage.set(tmp13, true);
-                const result1 = require("StageChannelAlertActionCreators").openStageChannelAudienceNoticeModal(voiceChannelId);
-                const obj = require("StageChannelAlertActionCreators");
+                const obj = StageChannelAlertActionCreatorsAll;
+                const result1 = obj.openStageChannelAudienceNoticeModal(voiceChannelId);
               }
             }
-            tmp11 = applyArgumentsResult;
-            tmp13 = closure_2_7;
           }
         }
       });
     };
     return applyArgumentsResult;
   }
+  _initialize() {
+    const obj = DispatcherDefault;
+    const subscription = obj.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates);
+  }
+  _terminate() {
+    const obj = DispatcherDefault;
+    obj.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates);
+  }
 }
 const prototype = StageChannelNewUserManager.prototype;
-prototype["_initialize"] = function _initialize() {
-  const subscription = DispatcherDefault.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates);
-};
-prototype["_terminate"] = function _terminate() {
-  DispatcherDefault.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates);
-};
 const stageChannelNewUserManager = new StageChannelNewUserManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/stage_channels/StageChannelNewUserManager.tsx");
 
 export default stageChannelNewUserManager;

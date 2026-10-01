@@ -6,23 +6,24 @@
 
 // Module 16056 (useNotificationCenterItemAcked)
 import NotificationCenterStore from "NotificationCenterStore" /* 16049 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/notification_center/useNotificationCenterItemAcked.tsx");
 
 export const useNotificationCenterItemAcked = function useNotificationCenterItemAcked(forceUnacked, ackedBeforeId) {
   _require = forceUnacked;
   const items = [NotificationCenterStore];
-  let stateFromStores = require("initialize").useStateFromStores(items, () => NotificationCenterStore.isLocalItemAcked(closure_0));
-  forceUnacked = forceUnacked.forceUnacked;
-  let tmp4 = !forceUnacked;
-  if (!forceUnacked) {
+  const obj = require("get initialized");
+  let stateFromStores = obj.useStateFromStores(items, () => NotificationCenterStore.isLocalItemAcked(forceUnacked));
+  let tmp4 = !forceUnacked.forceUnacked;
+  const tmp = _require;
+  if (tmp4) {
     if (!stateFromStores) {
-      stateFromStores = require("NotificationCenterUtils").isRemoteAcked(forceUnacked, ackedBeforeId);
-      const tmpResult = require("NotificationCenterUtils");
+      const tmpResult = tmp(7055);
+      stateFromStores = tmpResult.isRemoteAcked(forceUnacked, ackedBeforeId);
     }
     tmp4 = stateFromStores;
   }

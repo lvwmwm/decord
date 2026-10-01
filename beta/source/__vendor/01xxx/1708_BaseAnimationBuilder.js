@@ -5,10 +5,12 @@
 
 // Module 1708 (BaseAnimationBuilder)
 import _mod1709 from "module_1709" /* 1709 */;
-import _mod1722 from "module_1722" /* 1722 */;
-import InnerKeyframe from "InnerKeyframe" /* 1723 */;
+import ComplexAnimationBuilder from "ComplexAnimationBuilder" /* 1722 */;
+import Keyframe from "Keyframe" /* 1723 */;
 
+const ComplexAnimationBuilder_export = ComplexAnimationBuilder.ComplexAnimationBuilder;
+const Keyframe_export = Keyframe.Keyframe;
 
 export const BaseAnimationBuilder = _mod1709.BaseAnimationBuilder;
-export const ComplexAnimationBuilder = _mod1722.ComplexAnimationBuilder;
-export const Keyframe = InnerKeyframe.Keyframe;
+export { ComplexAnimationBuilder_export as ComplexAnimationBuilder };
+export { Keyframe_export as Keyframe };

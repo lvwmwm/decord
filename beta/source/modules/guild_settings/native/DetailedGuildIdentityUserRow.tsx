@@ -4,104 +4,125 @@
 // Dependencies: [19, 17, 1372, 21, 4836, 576, 4988, 4678, 9094, 1177, 504, 8053, 5917, 2]
 
 // Module 10404 (DetailedGuildIdentityUserRow)
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
+import UserUtilsDefault from "UserUtils" /* 4678 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
 import DiscordTagDefault from "DiscordTag" /* 9094 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-const obj = { mainIdentity: { flexDirection: "row", alignItems: "center" }, primaryAvatar: { marginRight: nativeDefault.space.PX_4 }, mainTag: null };
-let obj3 = { marginRight: nativeDefault.space.PX_4 };
-obj.mainTag = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontSize: 12 };
-let closure_7 = createStyles.createStyles(obj);
-const memoResult = noop.memo((height) => {
-  ({ guildId, user } = height);
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { mainIdentity: { flexDirection: "row", alignItems: "center" }, primaryAvatar: obj2, mainTag: obj3 };
+obj2 = { marginRight: nativeDefault.space.PX_4 };
+createStyles = createStyles.createStyles;
+obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontSize: 12 };
+let closure_7 = createStyles(obj);
+const memoResult = react.memo((contentHeight) => {
+  let guildId;
+  let items;
+  let items1;
+  let tmp6Result;
+  let user;
+  ({ guildId, user } = contentHeight);
+  contentHeight = contentHeight.contentHeight;
   const tmp = closure_7();
-  let nickname = NicknameUtilsDefault.getNickname(guildId, undefined, user);
+  const obj = NicknameUtilsDefault;
+  let nickname = obj.getNickname(guildId, undefined, user);
   if (nickname == null) {
-    nickname = tmp2(4678).getGlobalName(user);
-    const tmp2Result = tmp2(4678);
+    const tmp2Result = UserUtilsDefault;
+    nickname = tmp2Result.getGlobalName(user);
   }
   const hasAvatarForGuildResult = user.hasAvatarForGuild(guildId);
-  const obj2 = { style: { height: height.contentHeight }, children: null };
-  const items = [hasOwnProperty(DiscordTagDefault, { user, nick: nickname }), ];
+  const obj2 = { style: { height: contentHeight }, children: items };
+  items = [hasOwnProperty(DiscordTagDefault, { user, nick: nickname }), ];
   if (hasAvatarForGuildResult) {
-    const obj3 = { style: tmp.mainIdentity, children: null };
     let tmp8Result = null;
+    const obj3 = { style: tmp.mainIdentity, children: items1 };
     if (hasAvatarForGuildResult) {
       const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "a" };
-      tmp8Result = tmp8(native.Avatar, obj4);
+      const Avatar = native.Avatar;
+      tmp8Result = tmp8(Avatar, obj4);
     }
-    const items1 = [tmp8Result, ];
+    items1 = [tmp8Result, ];
     const obj5 = { user, usernameStyle: tmp.mainTag, hideBotTag: true };
-    items1[1] = tmp8(tmp2(9094), obj5);
-    obj3.children = items1;
-    let tmp6Result = tmp6(tmp7, obj3);
+    items1[1] = hasOwnProperty(DiscordTagDefault, obj5);
+    tmp6Result = tmp6(tmp7, obj3);
   } else {
     tmp6Result = null;
   }
   items[1] = tmp6Result;
-  obj2.children = items;
-  return timestampProducer(View, obj2);
+  return metroRequire(View, obj2);
 });
-let obj4 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontSize: 12 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_settings/native/DetailedGuildIdentityUserRow.tsx");
-
-export default noop.memo(function DetailedGuildIdentityUserRow(arrow) {
+const metroImportAll = memoResult;
+const memoResult1 = react.memo(function DetailedGuildIdentityUserRow(arrow) {
+  let accessibilityLabel;
+  let accessibilityRole;
+  let accessibilityState;
+  let contentHeight;
+  let deprecatedFormRow;
+  let disabled;
+  let end;
+  let guildId;
+  let leading;
+  let obj4;
+  let obj7;
+  let onPress;
+  let start;
+  let subLabel;
+  let tmp4Result2;
+  let trailing;
   ({ accessibilityLabel, contentHeight, deprecatedFormRow } = arrow);
+  arrow = arrow.arrow;
   if (deprecatedFormRow === undefined) {
     deprecatedFormRow = false;
   }
   ({ disabled, guildId, leading, onPress, trailing, userId: require, subLabel, accessibilityRole, accessibilityState } = arrow);
-  let SMALL = dependencyMap;
   ({ end, start } = arrow);
   const items = [UserStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => UserStore.getUser(require));
-  if (null == stateFromStores) {
-    return null;
-  } else if (deprecatedFormRow) {
-    const obj2 = { accessibilityLabel, disabled, leading: null, label: null, onPress: null, subLabel: null, trailing: null, accessibilityRole: null, accessibilityState: null };
-    if (leading == null) {
-      disabled = { source: stateFromStores.getAvatarSource(guildId), size: null };
-      SMALL = tmp(1177).AvatarSizes.SMALL;
-      disabled.size = SMALL;
-      leading = tmp2(tmp(1177).Avatar, disabled);
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(require));
+  let tmp3 = null;
+  if (null != stateFromStores) {
+    let tmp4Result;
+    if (deprecatedFormRow) {
+      const obj2 = { accessibilityLabel, disabled, leading, label: closure_5(closure_8, obj4), onPress, subLabel, trailing, accessibilityRole, accessibilityState };
+      const FormRow = tmp(8053).FormRow;
+      if (leading == null) {
+        const obj3 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
+        const Avatar2 = tmp(1177).Avatar;
+        leading = tmp4(Avatar2, obj3);
+      }
+      obj4 = { contentHeight, user: stateFromStores, guildId };
+      tmp4Result = tmp4(FormRow, obj2);
+    } else {
+      const obj5 = { accessibilityLabel, arrow, disabled, end, icon: tmp4Result2, label: closure_5(closure_8, obj7), onPress, start, subLabel, trailing, accessibilityRole, accessibilityState };
+      tmp4Result2 = leading;
+      const TableRow = tmp(5917).TableRow;
+      if (leading == null) {
+        const obj6 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
+        const Avatar = tmp(1177).Avatar;
+        tmp4Result2 = tmp4(Avatar, obj6);
+      }
+      obj7 = { contentHeight, user: stateFromStores, guildId };
+      tmp4Result = tmp4(TableRow, obj5);
     }
-    obj2.leading = leading;
-    leading = closure_8;
-    const obj3 = { contentHeight, user: stateFromStores, guildId };
-    obj2.label = tmp2(closure_8, obj3);
-    obj2.onPress = onPress;
-    obj2.subLabel = subLabel;
-    obj2.trailing = trailing;
-    obj2.accessibilityRole = accessibilityRole;
-    obj2.accessibilityState = accessibilityState;
-    let tmp2Result = tmp2(tmp(8053).FormRow, obj2);
-  } else {
-    const obj4 = { accessibilityLabel, arrow: arrow.arrow, disabled, end, icon: null, label: null, onPress: null, start: null, subLabel: null, trailing: null, accessibilityRole: null, accessibilityState: null };
-    let tmp2Result2 = leading;
-    if (leading == null) {
-      const obj5 = { source: stateFromStores.getAvatarSource(guildId), size: tmp(1177).AvatarSizes.SMALL };
-      tmp2Result2 = tmp2(tmp(1177).Avatar, obj5);
-    }
-    obj4.icon = tmp2Result2;
-    const obj6 = { contentHeight, user: stateFromStores, guildId };
-    obj4.label = tmp2(closure_8, obj6);
-    obj4.onPress = onPress;
-    obj4.start = start;
-    obj4.subLabel = subLabel;
-    obj4.trailing = trailing;
-    obj4.accessibilityRole = accessibilityRole;
-    obj4.accessibilityState = accessibilityState;
-    tmp2Result = tmp2(tmp(5917).TableRow, obj4);
+    tmp3 = tmp4Result;
   }
+  return tmp3;
 });
+const result = size.fileFinishedImporting("modules/guild_settings/native/DetailedGuildIdentityUserRow.tsx");
+
+export default memoResult1;
 export const DetailedGuildIdentityUser = memoResult;

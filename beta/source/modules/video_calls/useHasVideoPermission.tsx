@@ -8,18 +8,20 @@
 import StreamPermissionUtils from "StreamPermissionUtils" /* 7139 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/useHasVideoPermission.tsx");
 
 export default function useHasVideoPermission(arg0) {
+  let closure_0;
   _require = arg0;
+  const obj = require("get initialized");
   const items = [GuildStore, PermissionStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
     let tmp = null != closure_0;
     if (tmp) {
       let isPrivateResult = obj.isPrivate();

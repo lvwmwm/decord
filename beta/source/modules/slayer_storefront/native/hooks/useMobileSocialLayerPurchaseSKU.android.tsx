@@ -5,27 +5,28 @@
 // Exports: default
 
 // Module 10274 (useMobileSocialLayerPurchaseSKU)
+import Constants from "Constants" /* 1074 */;
 import GPlayActionCreators from "GPlayActionCreators" /* 8668 */;
 import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10275 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const constants = fn(1074).PriceSetAssignmentPurchaseTypes;
-const size = fn(2);
+const constants = Constants.PriceSetAssignmentPurchaseTypes;
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/hooks/useMobileSocialLayerPurchaseSKU.android.tsx");
 
 export default function useMobileSocialLayerPurchaseSKU(sku) {
   sku = sku.sku;
   const merged = Object.assign(sku, Object.assign({ sku: 0 }));
-  c0 = undefined;
+  let c0;
   const giftParams = merged.giftParams;
   let isGift;
   if (giftParams != null) {
     isGift = giftParams.isGift;
   }
   if (isGift != null) {
+    let DEFAULT;
     if (isGift) {
-      let DEFAULT = constants.GIFT;
+      DEFAULT = constants.GIFT;
     }
     let googleSkuIds;
     if (sku != null) {
@@ -40,17 +41,17 @@ export default function useMobileSocialLayerPurchaseSKU(sku) {
     }
     c0 = tmp4;
     let items = [tmp4];
-    const effect = noop.useEffect(() => {
+    const effect = react.useEffect(() => {
       if (null != c0) {
         const items = [tmp];
-        const inAppSkus = GPlayActionCreators.loadInAppSkus(items);
+        const obj = GPlayActionCreators;
+        const inAppSkus = obj.loadInAppSkus(items);
       }
     }, items);
-    let obj = {};
+    let obj = { platformSkuId: tmp4, isFreeForStaffSelfPurchase: false };
+    const tmp9 = useMobilePurchaseSKUDefault;
     const merged1 = Object.assign(merged);
-    obj.platformSkuId = tmp4;
-    obj.isFreeForStaffSelfPurchase = false;
-    return useMobilePurchaseSKUDefault(obj);
+    return tmp9(obj);
   }
   DEFAULT = constants.DEFAULT;
 };

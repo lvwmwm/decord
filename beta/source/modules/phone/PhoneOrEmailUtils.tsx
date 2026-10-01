@@ -13,15 +13,13 @@ const result = size.fileFinishedImporting("modules/phone/PhoneOrEmailUtils.tsx")
 
 export { PhoneOrEmailSelectorForceMode };
 export const shouldShowCountryCodeSelector = function shouldShowCountryCodeSelector(forceMode, value) {
+  let tmp2;
   if (forceMode === obj.PHONE) {
-    let tmp2 = !value.startsWith("+");
+    tmp2 = !value.startsWith("+");
   } else {
     tmp2 = forceMode !== tmp.EMAIL;
     if (tmp2) {
-      let isMatch = value.length >= 3;
-      if (isMatch) {
-        isMatch = re1.test(value);
-      }
+      const isMatch = value.length >= 3 && re1.test(value);
       tmp2 = isMatch;
     }
   }

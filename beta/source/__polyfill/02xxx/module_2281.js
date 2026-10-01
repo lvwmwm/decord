@@ -1,9 +1,0 @@
-// Module ID: 2281
-// Function ID: 2282
-// Dependencies: [1121]
-
-// Module 2281
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", scales: [1], hash: "5c7a4b80a6eb2539d5a473ea6002b1b7", name: "sv-SE.messages.5c7a4b80a6eb2539d5a473ea6002b1b7.compiled.messages", type: "jsona" });

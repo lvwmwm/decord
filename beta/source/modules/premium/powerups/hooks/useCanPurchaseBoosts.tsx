@@ -5,18 +5,22 @@
 // Exports: default
 
 // Module 12001 (useCanPurchaseBoosts)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 6813 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const FractionalPremiumStates = fn(1374).FractionalPremiumStates;
-const size = fn(2);
+let currentUser;
+
+const FractionalPremiumStates = PremiumConstants.FractionalPremiumStates;
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useCanPurchaseBoosts.tsx");
 
 export default function useCanPurchaseBoosts() {
+  const fractionalState = useFractionalPremiumInfoDefault().fractionalState;
   const items = [UserStore];
-  return useFractionalPremiumInfoDefault().fractionalState === FractionalPremiumStates.NONE && !initialize.useStateFromStores(items, () => {
+  const obj = get_initialized;
+  const tmp = fractionalState === FractionalPremiumStates.NONE && !obj.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let isPremiumGroupMemberResult;
     if (currentUser != null) {
@@ -24,4 +28,5 @@ export default function useCanPurchaseBoosts() {
     }
     return true === isPremiumGroupMemberResult;
   });
+  return tmp;
 };

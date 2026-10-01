@@ -5,21 +5,29 @@
 // Exports: generateBoxShadowStyle
 
 // Module 13666 (Shadows)
-import size from "module_2" /* 2 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import size_mod from "module_2" /* 2 */;
 
+let size = size_mod;
 const result = size.fileFinishedImporting("design/void/Shadows/native/Shadows.tsx");
 
 export const generateBoxShadowStyle = (arg0) => {
+  let elevation;
+  let obj3;
+  let shadowColorAndroid;
+  let shadowColorIos;
+  let shadowOpacity;
+  let shadowRadius;
+  let xOffset;
+  let yOffset;
   ({ xOffset, yOffset, shadowColorIos, shadowOpacity, shadowRadius, elevation, shadowColorAndroid } = arg0);
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
+    obj3 = { elevation, shadowColor: shadowColorAndroid };
     const obj2 = { elevation, shadowColor: shadowColorAndroid };
-    let obj3 = obj2;
   } else {
-    obj3 = { shadowColor: shadowColorIos, shadowOffset: null, shadowOpacity: null, shadowRadius: null };
-    const size = { width: xOffset, height: yOffset };
-    obj3.shadowOffset = size;
-    obj3.shadowOpacity = shadowOpacity;
-    obj3.shadowRadius = shadowRadius;
+    obj3 = { shadowColor: shadowColorIos, shadowOffset: size, shadowOpacity, shadowRadius };
+    size = { width: xOffset, height: yOffset };
   }
   return obj3;
 };

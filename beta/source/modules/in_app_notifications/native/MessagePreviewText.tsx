@@ -5,37 +5,61 @@
 // Exports: default
 
 // Module 9566 (MessagePreviewText)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1096 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useMessageAuthor from "useMessageAuthor" /* 5083 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7304 */;
 import InAppNotificationUtils from "InAppNotificationUtils" /* 9554 */;
 import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 9567 */;
-import ChannelRowPreview from "ChannelRowPreview" /* 9568 */;
+import ChannelRowPreview2 from "ChannelRowPreview" /* 9568 */;
 import usePreviewableMedia from "usePreviewableMedia" /* 9590 */;
 import usePreviewableMediaText from "usePreviewableMediaText" /* 9595 */;
 import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 9596 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 9555 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1365 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj4;
+let obj5;
+let obj6;
+let size;
 function NativeMessagePreviewContent(arg0) {
+  let gradientColors;
+  let gradientStyles;
+  let message;
   ({ message, lineClamp, maxHeight } = arg0);
   const tmp = useTruncatedGradientColorsDefault();
+  const obj = { children: metroImportAll(ChannelRowPreview2.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) };
   ({ gradientColors, gradientStyles } = tmp);
-  return React6(View, { children: React6(ChannelRowPreview.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) });
+  return metroImportAll(View, obj);
 }
 class SystemMessageText {
-  constructor(arg0) {
-    tmp = closure_10();
-    obj = closure_0(closure_2[11]);
-    messagePreviewTextVariant = obj.getMessagePreviewTextVariant();
-    obj1 = { variant: messagePreviewTextVariant, color: "text-subtle", style: tmp.italic, lineClamp: closure_7, children: global.text };
-    return jsx(closure_0(closure_2[12]).Text, obj1);
+  constructor(text) {
+    text = text.text;
+    const tmp = closure_10();
+    const obj = InAppNotificationUtils;
+    const messagePreviewTextVariant = obj.getMessagePreviewTextVariant();
+    const obj2 = { variant: messagePreviewTextVariant, color: "text-subtle", style: tmp.italic, lineClamp: metroImportDefault, children: text };
+    return metroImportAll(Text_Text.Text, obj2);
   }
 }
 function EmbedMediaThumbnail(media) {
+  let items;
+  let obj2;
   media = media.media;
   const tmp = closure_11();
   let url = media.proxyURL;
@@ -50,12 +74,17 @@ function EmbedMediaThumbnail(media) {
       num = result;
     }
   }
-  const obj = { style: null, children: React6(FastImageDefault, { source: { uri: url }, style: tmp.embedMedia, resizeMode: "contain" }) };
-  const items = [tmp.embedMediaContainer, { aspectRatio: num }];
-  obj.style = items;
-  return React6(View, obj);
+  const obj = { style: items, children: metroImportAll(FastImageDefault, obj2) };
+  items = [tmp.embedMediaContainer, { aspectRatio: num }];
+  obj2 = { source: { uri: url }, style: tmp.embedMedia, resizeMode: "contain" };
+  return metroImportAll(View, obj);
 }
 function EmbedCard(embed) {
+  let items;
+  let items1;
+  let items2;
+  let rawTitle;
+  let thumbnail;
   embed = embed.embed;
   const tmp = closure_11();
   const provider = embed.provider;
@@ -74,38 +103,39 @@ function EmbedCard(embed) {
   }
   let color;
   if (null != embed.color) {
+    const str = embed.color;
     if ("#ffffff" !== str.toLowerCase()) {
       color = embed.color;
     }
-    str = embed.color;
   }
-  const obj = { style: tmp.embedContainer, children: null };
   let tmp7 = null != color;
+  const obj = { style: tmp.embedContainer, children: items1 };
   if (tmp7) {
-    const obj2 = { style: null };
-    const items = [tmp.embedAccentBar, ];
+    const obj2 = { style: items };
+    items = [tmp.embedAccentBar, ];
     const obj3 = { backgroundColor: color };
     items[1] = obj3;
-    obj2.style = items;
-    tmp7 = React6(tmp6, obj2);
+    tmp7 = metroImportAll(tmp6, obj2);
   }
-  const items1 = [tmp7, , ];
-  const obj4 = { style: tmp.embedTextContainer, children: null };
+  items1 = [tmp7, , ];
   let tmp9 = null != name;
+  const obj4 = { style: tmp.embedTextContainer, children: items2 };
   if (tmp9) {
     const obj5 = { variant: "text-xxs/normal", color: "text-subtle", lineClamp: 1, children: name };
-    tmp9 = React6(Text_Text.Text, obj5);
+    tmp9 = metroImportAll(Text_Text.Text, obj5);
   }
-  const items2 = [tmp9, , , ];
+  items2 = [tmp9, , , ];
   let tmp13 = null != name1;
   if (tmp13) {
     const obj6 = { variant: "text-xs/medium", color: "text-default", lineClamp: 1, children: name1 };
-    tmp13 = React6(Text_Text.Text, obj6);
+    tmp13 = metroImportAll(Text_Text.Text, obj6);
   }
   items2[1] = tmp13;
   let tmp18Result = null != rawTitle;
   if (tmp18Result) {
     let num2 = 1;
+    const Text = Text_Text.Text;
+    const tmp18 = metroImportAll;
     if (null == name) {
       num2 = 1;
       if (null == name1) {
@@ -113,153 +143,160 @@ function EmbedCard(embed) {
       }
     }
     const obj7 = { variant: "text-xs/medium", color: "text-link", lineClamp: num2, children: rawTitle };
-    tmp18Result = React6(Text_Text.Text, obj7);
+    tmp18Result = tmp18(Text, obj7);
   }
   items2[2] = tmp18Result;
   let tmp21 = null != embed.rawDescription;
   if (tmp21) {
     const obj8 = { variant: "text-xs/medium", color: "text-default", lineClamp: 3, children: embed.rawDescription };
-    tmp21 = React6(Text_Text.Text, obj8);
+    tmp21 = metroImportAll(Text_Text.Text, obj8);
   }
   items2[3] = tmp21;
-  obj4.children = items2;
-  items1[1] = React7(View, obj4);
+  items1[1] = React4(View, obj4);
   let tmp25 = null != thumbnail;
   if (tmp25) {
     const obj9 = { media: thumbnail };
-    tmp25 = React6(EmbedMediaThumbnail, obj9);
+    tmp25 = metroImportAll(EmbedMediaThumbnail, obj9);
   }
   items1[2] = tmp25;
-  obj.children = items1;
-  return React7(View, obj);
+  return React4(View, obj);
 }
-const View = fn(17).View;
-const InAppNotificationConstants = fn(9555);
-({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroRequire, NOTIFICATION_PREVIEW_LINE_CLAMP: closure_7 } = InAppNotificationConstants);
-const Fonts = fn(1085).Fonts;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let createStyles = fn(4836);
-const PlatformUtils = fn(1365);
-let obj3 = { italic: { fontStyle: "italic", fontFamily: PlatformUtils.isIOS() ? Fonts.PRIMARY_NORMAL_ITALIC : Fonts.PRIMARY_MEDIUM_ITALIC } };
-let closure_10 = createStyles.createStyles(obj3);
-createStyles = fn(4836);
-let obj6 = { embedContainer: null, embedAccentBar: null, embedTextContainer: null, embedMediaContainer: null, embedMedia: null };
-let obj4 = { fontStyle: "italic", fontFamily: PlatformUtils.isIOS() ? Fonts.PRIMARY_NORMAL_ITALIC : Fonts.PRIMARY_MEDIUM_ITALIC };
-obj6.embedContainer = { borderRadius: nativeDefault.radii.sm, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8, paddingRight: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, flexDirection: "row", overflow: "hidden" };
-let obj7 = { borderRadius: nativeDefault.radii.sm, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8, paddingRight: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, flexDirection: "row", overflow: "hidden" };
-obj6.embedAccentBar = { width: 4, marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_8, alignSelf: "stretch" };
-let obj8 = { width: 4, marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_8, alignSelf: "stretch" };
-obj6.embedTextContainer = { flex: 1, gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8 };
-let size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "__closure" };
-obj6.embedMediaContainer = size;
-obj6.embedMedia = { width: "100%", height: "100%" };
-let closure_11 = createStyles.createStyles(obj6);
-size = fn(2);
+const View = react_native.View;
+({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroRequire, NOTIFICATION_PREVIEW_LINE_CLAMP: metroImportDefault } = InAppNotificationConstants);
+const Fonts = Constants.Fonts;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let createStyles = createStyles_mod;
+createStyles = createStyles.createStyles;
+let obj = { italic: obj2 };
+obj2 = { fontStyle: "italic", fontFamily: PlatformUtils.isIOS() ? Fonts.PRIMARY_NORMAL_ITALIC : Fonts.PRIMARY_MEDIUM_ITALIC };
+const authStore = createStyles(obj);
+createStyles = createStyles_mod;
+let obj3 = { embedContainer: obj4, embedAccentBar: obj5, embedTextContainer: obj6, embedMediaContainer: size, embedMedia: { width: "100%", height: "100%" } };
+obj4 = { borderRadius: nativeDefault.radii.sm, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8, paddingRight: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, flexDirection: "row", overflow: "hidden" };
+const createStyles2 = createStyles.createStyles;
+obj5 = { width: 4, marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_8, alignSelf: "stretch" };
+obj6 = { flex: 1, gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8 };
+size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "__closure" };
+let closure_11 = createStyles2(obj3);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/in_app_notifications/native/MessagePreviewText.tsx");
 
 export default function MessagePreviewText(message) {
+  let items1;
+  let items3;
+  let secondaryText;
+  let showMessageAuthor;
+  let text;
   message = message.message;
   ({ lineClamp, maxHeight, showMessageAuthor } = message);
   if (showMessageAuthor === undefined) {
     showMessageAuthor = false;
   }
-  const previewableMedia = usePreviewableMedia.usePreviewableMedia(message);
-  let tmp3 = null;
+  const obj = usePreviewableMedia;
+  const previewableMedia = obj.usePreviewableMedia(message);
+  let tmp4 = null;
+  const useNullableMessageAuthor = useMessageAuthor.useNullableMessageAuthor;
+  useMessageAuthor;
   if (showMessageAuthor) {
-    tmp3 = message;
+    tmp4 = message;
   }
-  const nullableMessageAuthor = useMessageAuthor.useNullableMessageAuthor(tmp3);
-  const previewableMediaText = usePreviewableMediaText.usePreviewableMediaText({ previewableMedia, author: nullableMessageAuthor });
-  ({ text, secondaryText } = previewableMediaText);
+  const nullableMessageAuthor = useNullableMessageAuthor(tmp4);
   const tmpResult = usePreviewableMediaText;
-  const getInitialMessagePreview = useGetInitialMessagePreview.useGetInitialMessagePreview({ message });
+  const previewableMediaText = tmpResult.usePreviewableMediaText({ previewableMedia, author: nullableMessageAuthor });
+  ({ text, secondaryText } = previewableMediaText);
+  const tmpResult3 = useGetInitialMessagePreview;
+  const getInitialMessagePreview = tmpResult3.useGetInitialMessagePreview({ message });
   const items = [message.embeds];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     const embeds = message.embeds;
     return embeds.filter((image) => null != image.image || null != image.thumbnail);
   }, items);
   if (memo.length > 0) {
     const first = memo[0];
-    if (first.type === tmp(1096).MessageEmbedTypes.GIFV) {
+    if (first.type === MessageEmbedTypes.MessageEmbedTypes.GIFV) {
+      let tmp44;
       if (null != text) {
-        const obj3 = { text };
-        let tmp43 = React6(SystemMessageText, obj3);
+        const obj2 = { text };
+        tmp44 = metroImportAll(SystemMessageText, obj2);
       }
-      return tmp43;
+      return tmp44;
     }
-    const obj4 = { children: null };
-    const obj5 = { message: getInitialMessagePreview, lineClamp, maxHeight };
-    const items1 = [React6(NativeMessagePreviewContent, obj5), ];
-    const obj6 = { embed: first };
-    items1[1] = React6(EmbedCard, obj6);
-    obj4.children = items1;
-    tmp43 = React7(View, obj4);
+    const obj3 = { children: items1 };
+    const obj4 = { message: getInitialMessagePreview, lineClamp: metroImportDefault, maxHeight: metroRequire };
+    items1 = [metroImportAll(NativeMessagePreviewContent, obj4), ];
+    const obj5 = { embed: first };
+    items1[1] = metroImportAll(EmbedCard, obj5);
+    tmp44 = React4(View, obj3);
   } else if (isForwardMessageDefault(message)) {
-    let tmp29 = previewableMedia.length > 0;
-    if (tmp29) {
-      tmp29 = previewableMedia[0].type === tmp(9590).PreviewableMediaTypes.GIF;
+    let tmp30 = previewableMedia.length > 0;
+    if (tmp30) {
+      tmp30 = previewableMedia[0].type === tmp(9590).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
+      let formatResult;
       if (null != nullableMessageAuthor) {
         const intl4 = tmp(1115).intl;
-        const obj7 = { username: nullableMessageAuthor.nick };
-        let formatResult = intl4.format(tmp(1115).t.sLDHDi, obj7);
+        const obj6 = { username: nullableMessageAuthor.nick };
+        formatResult = intl4.format(tmp(1115).t.sLDHDi, obj6);
       } else {
         const intl3 = tmp(1115).intl;
         formatResult = intl3.string(tmp(1115).t["9ddYKt"]);
       }
-      const obj8 = { text: formatResult };
-      return React6(SystemMessageText, obj8);
+      const obj7 = { text: formatResult };
+      return metroImportAll(SystemMessageText, obj7);
     }
-    const obj9 = { message: getInitialMessagePreview, lineClamp, maxHeight };
-    return React6(NativeMessagePreviewContent, obj9);
+    const obj8 = { message: getInitialMessagePreview, lineClamp: metroImportDefault, maxHeight: metroRequire };
+    return metroImportAll(NativeMessagePreviewContent, obj8);
   } else if (message.content.length > 0) {
     if (null != nullableMessageAuthor) {
       const channel = ChannelStore.getChannel(message.channel_id);
-      tmp(9554);
+      InAppNotificationUtils;
       if (null != channel) {
-        const obj10 = { channel, message, color: "text-default", layout: tmp(7304).ChannelListLayoutTypes.COZY, variant: tmp24, muted: false, lineClamp };
-        return React6(tmp(9568).ChannelRowPreview, obj10);
+        const obj9 = { channel, message, color: "text-default", layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, variant: tmp25, muted: false, lineClamp: metroImportDefault };
+        const ChannelRowPreview = tmp(9568).ChannelRowPreview;
+        return metroImportAll(ChannelRowPreview, obj9);
       }
     }
-    const obj11 = { message: getInitialMessagePreview, lineClamp, maxHeight };
-    return React6(NativeMessagePreviewContent, obj11);
+    const obj10 = { message: getInitialMessagePreview, lineClamp: metroImportDefault, maxHeight: metroRequire };
+    return metroImportAll(NativeMessagePreviewContent, obj10);
   } else {
     if (previewableMedia.length > 0) {
       if (null !== text) {
-        const obj12 = { text };
-        const items2 = [React6(SystemMessageText, obj12), ];
-        let tmp17Result = null !== secondaryText;
-        if (tmp17Result) {
-          const obj13 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp, children: secondaryText };
-          tmp17Result = React6(tmp(4832).Text, obj13);
+        const obj11 = { text };
+        const items2 = [metroImportAll(SystemMessageText, obj11), ];
+        let tmp18Result = null !== secondaryText;
+        const tmp16 = React4;
+        const tmp17 = View;
+        const tmp18 = metroImportAll;
+        if (tmp18Result) {
+          const obj12 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
+          tmp18Result = tmp18(tmp(4832).Text, obj12);
         }
-        const obj14 = { children: null };
-        items2[1] = tmp17Result;
-        obj14.children = items2;
-        return React7(View, obj14);
+        const obj13 = { children: items2 };
+        items2[1] = tmp18Result;
+        return tmp16(tmp17, obj13);
       }
     }
     if (null != message.poll) {
+      let formatResult1;
+      const text2 = message.poll.question.text;
       if (null != nullableMessageAuthor) {
         const intl2 = tmp(1115).intl;
-        const obj15 = { username: nullableMessageAuthor.nick };
-        let formatResult1 = intl2.format(tmp(1115).t["1wtRlq"], obj15);
+        const obj14 = { username: nullableMessageAuthor.nick };
+        formatResult1 = intl2.format(tmp(1115).t["1wtRlq"], obj14);
       } else {
         const intl = tmp(1115).intl;
         formatResult1 = intl.string(tmp(1115).t.n3shVJ);
       }
-      const obj16 = { children: null };
-      const obj17 = { text: formatResult1 };
-      const items3 = [React6(SystemMessageText, obj17), ];
-      const obj18 = { variant: "redesign/message-preview/medium", color: "text-default", lineClamp, children: message.poll.question.text };
-      items3[1] = React6(tmp(4832).Text, obj18);
-      obj16.children = items3;
-      return React7(View, obj16);
+      const obj15 = { children: items3 };
+      const obj16 = { text: formatResult1 };
+      items3 = [metroImportAll(SystemMessageText, obj16), ];
+      const obj17 = { variant: "redesign/message-preview/medium", color: "text-default", lineClamp: metroImportDefault, children: text2 };
+      items3[1] = metroImportAll(Text_Text.Text, obj17);
+      return React4(View, obj15);
     } else {
-      const obj19 = { message, lineClamp, maxHeight };
-      return React6(NativeMessagePreviewContent, obj19);
+      const obj18 = { message, lineClamp: metroImportDefault, maxHeight: metroRequire };
+      return metroImportAll(NativeMessagePreviewContent, obj18);
     }
   }
 };

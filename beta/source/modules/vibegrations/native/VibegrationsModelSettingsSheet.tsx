@@ -5,43 +5,44 @@
 // Exports: default
 
 // Module 16264 (VibegrationsModelSettingsSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
-import ActionSheet from "ActionSheet" /* 6618 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6570 */;
+import ActionSheet2 from "ActionSheet" /* 6618 */;
+import VibegrationsConnectionStore2 from "VibegrationsConnectionStore" /* 12642 */;
 import VibegrationsEffortPickerDefault from "VibegrationsEffortPicker" /* 16244 */;
-import noop from "module_19" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const VibegrationsConnectionStore = VibegrationsConnectionStore2;
+
+let metroImportAll;
+let metroImportDefault;
 class VibegrationsModelSettingsContent {
-  constructor(arg0) {
-    projectId = global.projectId;
-    tmp = projectId;
-    tmp2 = closure_2;
-    obj = projectId(closure_2[4]);
-    items = [];
-    items[0] = closure_5;
-    items1 = [];
-    items1[0] = projectId;
-    stateFromStores = obj.useStateFromStores(items, () => VibegrationsConnectionStore.getModelSettings(projectId), items1);
-    obj2 = projectId(closure_2[4]);
-    items2 = [];
-    items2[0] = closure_5;
-    items3 = [];
-    items3[0] = projectId;
-    stateFromStores1 = obj2.useStateFromStores(items2, () => VibegrationsConnectionStore.getConnState(projectId), items3);
-    obj3 = projectId(closure_2[4]);
-    items4 = [];
-    items4[0] = closure_5;
-    items5 = [];
-    items5[0] = projectId;
-    tmp5 = "open" !== stateFromStores1 || obj3.useStateFromStores(items4, () => VibegrationsConnectionStore.isChatStopped(projectId), items5);
-    items6 = [];
-    items6[0] = projectId;
-    tierSettings1 = undefined;
-    callback = closure_3.useCallback((arg0) => {
+  constructor(projectId) {
+    let choices;
+    let items7;
+    let tierSettings;
+    let tiers;
+    projectId = projectId.projectId;
+    const items = [VibegrationsConnectionStore];
+    const items1 = [projectId];
+    const obj = projectId(504);
+    const stateFromStores = obj.useStateFromStores(items, () => VibegrationsConnectionStore.getModelSettings(projectId), items1);
+    const items2 = [VibegrationsConnectionStore];
+    const items3 = [projectId];
+    const obj2 = projectId(504);
+    const stateFromStores1 = obj2.useStateFromStores(items2, () => VibegrationsConnectionStore.getConnState(projectId), items3);
+    const items4 = [VibegrationsConnectionStore];
+    const items5 = [projectId];
+    const obj3 = projectId(504);
+    const tmp5 = "open" !== stateFromStores1 || obj3.useStateFromStores(items4, () => VibegrationsConnectionStore.isChatStopped(projectId), items5);
+    const items6 = [projectId];
+    let tierSettings1;
+    const callback = react.useCallback((arg0) => {
       try {
         sendModelSettings(projectId, arg0);
       } catch (err) {
@@ -53,51 +54,47 @@ class VibegrationsModelSettingsContent {
     if (null == tierSettings1) {
       return null;
     } else {
+      let stringResult;
       ({ tierSettings, tiers, choices } = stateFromStores);
-      tmp9 = jsxs;
-      obj1 = { direction: "vertical", spacing: null, children: null };
-      tmp10 = closure_1;
-      obj1.spacing = closure_1(tmp2[6]).space.PX_16;
-      tmp11 = jsx;
-      obj7 = { settings: null, tiers: null, choices: null, disabled: null, onChange: null };
-      obj7.settings = tierSettings;
-      obj7.tiers = tiers;
-      obj7.choices = choices;
-      obj7.disabled = tmp5;
-      obj7.onChange = callback;
-      items7 = [, ];
-      items7[0] = jsx(closure_1(tmp2[7]), obj7);
-      intl = tmp(tmp2[9]).intl;
-      string = intl.string;
-      tmp12 = closure_1(tmp2[10]);
+      const obj4 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items7 };
+      const Stack = tmp(5279).Stack;
+      const obj5 = { settings: tierSettings, tiers, choices, disabled: tmp5, onChange: callback };
+      items7 = [closure_7(VibegrationsEffortPickerDefault, obj5), ];
+      const Text = tmp(4832).Text;
+      const intl = tmp(1115).intl;
+      const string = intl.string;
+      const tmp12 = _modDef3715;
+      const tmp11 = closure_7;
+      const tmp9 = closure_8;
       if (tmp5) {
         stringResult = string(tmp12.t5mTfU);
       } else {
         stringResult = string(tmp12.ICU5aW);
       }
-      obj8 = { variant: "text-xs/normal", color: "text-muted", children: null };
-      obj8.children = stringResult;
-      items7[1] = tmp11(tmp(tmp2[8]).Text, obj8);
-      obj1.children = items7;
-      return tmp9(tmp(tmp2[5]).Stack, obj1);
+      const obj6 = { variant: "text-xs/normal", color: "text-muted", children: stringResult };
+      items7[1] = tmp11(Text, obj6);
+      return tmp9(Stack, obj4);
     }
   }
 }
-const View = fn(17).View;
-const sendModelSettings = fn(12642).sendModelSettings;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const size = fn(2);
+const View = react_native.View;
+const sendModelSettings = VibegrationsConnectionStore2.sendModelSettings;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsModelSettingsSheet.tsx");
 
 export default function VibegrationsModelSettingsSheet(projectId) {
-  const obj = { header: null, children: null };
-  const obj2 = { title: null };
-  const intl = util.intl;
-  obj2.title = intl.string(_modDef3715["2NWMqY"]);
-  obj.header = React5(BottomSheetTitleHeader.BottomSheetTitleHeader, obj2);
-  obj.children = React5(View, { children: React5(VibegrationsModelSettingsContent, { projectId: projectId.projectId }) });
-  return React5(ActionSheet.ActionSheet, obj);
+  let BottomSheetTitleHeader;
+  let intl;
+  let obj2;
+  let obj3;
+  projectId = projectId.projectId;
+  const obj = { header: metroImportDefault(BottomSheetTitleHeader, obj2), children: metroImportDefault(View, obj3) };
+  const ActionSheet = ActionSheet2.ActionSheet;
+  obj2 = { title: intl.string(_modDef3715["2NWMqY"]) };
+  BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  intl = intl2.intl;
+  obj3 = { children: metroImportDefault(VibegrationsModelSettingsContent, { projectId }) };
+  return metroImportDefault(ActionSheet, obj);
 };
 export const VIBEGRATIONS_MODEL_SETTINGS_SHEET_KEY = "VibegrationsModelSettingsSheet";
 export { VibegrationsModelSettingsContent };

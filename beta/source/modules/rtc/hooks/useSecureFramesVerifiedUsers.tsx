@@ -5,14 +5,15 @@
 // Exports: useSecureFramesVerifiedUserIds
 
 // Module 15466 (useSecureFramesVerifiedUsers)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import VerifiedKeyStore from "VerifiedKeyStore" /* 9147 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesVerifiedUsers.tsx");
 
 export const useSecureFramesVerifiedUserIds = function useSecureFramesVerifiedUserIds() {
+  let userIds;
   const items = [VerifiedKeyStore];
-  return initialize.useStateFromStoresArray(items, () => userIds.getUserIds());
+  const obj = get_initialized;
+  return obj.useStateFromStoresArray(items, () => userIds.getUserIds());
 };

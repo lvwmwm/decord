@@ -12,8 +12,6 @@ import _mod13776 from "module_13776" /* 13776 */;
 import _mod13778 from "module_13778" /* 13778 */;
 import _mod13780 from "module_13780" /* 13780 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const supportedValuesOf = function supportedValuesOf(collation, locale) {
   if ("calendar" === collation) {

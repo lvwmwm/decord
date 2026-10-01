@@ -5,37 +5,48 @@
 // Exports: default
 
 // Module 11892 (ApplicationCommandLoadingItem)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import useFontScale from "useFontScale" /* 5288 */;
-import noop from "module_19" /* 19 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9726 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const AUTOCOMPLETE_ROW_HEIGHT = fn(9726).AUTOCOMPLETE_ROW_HEIGHT;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+let hasOwnProperty;
+let metroRequire;
+const View = react_native.View;
+const AUTOCOMPLETE_ROW_HEIGHT = ApplicationCommandsConstants.AUTOCOMPLETE_ROW_HEIGHT;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let c7 = 16;
-const createStyles = fn(4836);
 let closure_8 = createStyles.createStyles((arg0) => {
-  const obj = { applicationCommandLoadingItem: { flexDirection: "row", paddingVertical: 4, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) }, applicationCommandLoadingLeftWrapper: { flexDirection: "column", width: "75%", height: "100%", justifyContent: "space-between" }, applicationCommandLoadingName: null, applicationCommandLoadingDescription: null, applicationCommandLoadingSectionName: null };
-  const size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, height: v16, borderRadius: v16, width: "20%" };
-  obj.applicationCommandLoadingName = size;
-  const size1 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, height: v16, borderRadius: v16, width: "80%" };
-  obj.applicationCommandLoadingDescription = size1;
-  const size2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, paddingLeft: 16, width: "25%", marginLeft: "auto", height: v16, borderRadius: v16 };
-  obj.applicationCommandLoadingSectionName = size2;
+  let size1;
+  let size2;
+  const obj = { applicationCommandLoadingItem: { flexDirection: "row", paddingVertical: 4, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) }, applicationCommandLoadingLeftWrapper: { flexDirection: "column", width: "75%", height: "100%", justifyContent: "space-between" }, applicationCommandLoadingName: size, applicationCommandLoadingDescription: size1, applicationCommandLoadingSectionName: size2 };
+  ({ flexDirection: "row", paddingVertical: 4, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) });
+  size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, height: v16, borderRadius: v16, width: "20%" };
+  size1 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, height: v16, borderRadius: v16, width: "80%" };
+  size2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, paddingLeft: 16, width: "25%", marginLeft: "auto", height: v16, borderRadius: v16 };
   return obj;
 });
-let size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandLoadingItem.tsx");
 
 export default function ApplicationCommandLoadingItem() {
-  const tmp = closure_8(useFontScale.useFontScale());
-  const obj2 = { style: tmp.applicationCommandLoadingItem, children: null };
-  const obj3 = { style: tmp.applicationCommandLoadingLeftWrapper, children: null };
-  const items = [hasOwnProperty(View, { style: tmp.applicationCommandLoadingName }), hasOwnProperty(View, { style: tmp.applicationCommandLoadingDescription })];
-  obj3.children = items;
-  const items1 = [timestampProducer(View, obj3), hasOwnProperty(View, { style: tmp.applicationCommandLoadingSectionName })];
-  obj2.children = items1;
-  return timestampProducer(View, obj2);
+  let items;
+  let items1;
+  const obj = useFontScale;
+  const tmp = closure_8(obj.useFontScale());
+  const obj3 = { style: tmp.applicationCommandLoadingLeftWrapper, children: items };
+  items = [, ];
+  const obj2 = { style: tmp.applicationCommandLoadingItem, children: items1 };
+  const obj4 = { style: tmp.applicationCommandLoadingName };
+  items[0] = hasOwnProperty(View, obj4);
+  const obj5 = { style: tmp.applicationCommandLoadingDescription };
+  items[1] = hasOwnProperty(View, obj5);
+  items1 = [metroRequire(View, obj3), ];
+  const obj6 = { style: tmp.applicationCommandLoadingSectionName };
+  items1[1] = hasOwnProperty(View, obj6);
+  return metroRequire(View, obj2);
 };

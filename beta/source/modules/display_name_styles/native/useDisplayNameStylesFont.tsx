@@ -17,6 +17,8 @@ const result = size.fileFinishedImporting("modules/display_name_styles/native/us
 
 export { DISPLAY_NAME_STYLES_FONT_FAMILY_MAP };
 export const useDisplayNameStylesFont = function useDisplayNameStylesFont(arg0) {
+  let displayNameStyles;
+  let ignoreDisabledStylesSetting;
   ({ displayNameStyles, ignoreDisabledStylesSetting } = arg0);
   if (ignoreDisabledStylesSetting === undefined) {
     ignoreDisabledStylesSetting = false;

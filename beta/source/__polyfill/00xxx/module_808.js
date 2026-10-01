@@ -6,10 +6,8 @@
 // Module 808
 import _mod765 from "module_765" /* 765 */;
 import CLIENT_ADDRESS_ATTRIBUTE from "CLIENT_ADDRESS_ATTRIBUTE" /* 805 */;
-import extractTargetInfo from "extractTargetInfo" /* 807 */;
+import extractTargetInfo2 from "extractTargetInfo" /* 807 */;
 
-require = arg1;
-const dependencyMap = arg6;
 function getNotificationAttributes(arg0, requestId, arg2) {
   const obj = {};
   if ("notifications/cancelled" === arg0) {
@@ -52,16 +50,17 @@ function getNotificationAttributes(arg0, requestId, arg2) {
     }
     if (undefined !== data1) {
       obj[CLIENT_ADDRESS_ATTRIBUTE.MCP_LOGGING_DATA_TYPE_ATTRIBUTE] = typeof requestId.data;
+      const tmp33 = require;
       if (arg2) {
         const data = requestId.data;
         let json = data;
+        const MCP_LOGGING_MESSAGE_ATTRIBUTE = tmp33(805).MCP_LOGGING_MESSAGE_ATTRIBUTE;
         if (typeof data !== "string") {
           const _JSON = JSON;
           json = JSON.stringify(data);
         }
-        obj[tmp33(805).MCP_LOGGING_MESSAGE_ATTRIBUTE] = json;
+        obj[MCP_LOGGING_MESSAGE_ATTRIBUTE] = json;
       }
-      tmp33 = require;
     }
   } else if ("notifications/progress" === arg0) {
     let progressToken;
@@ -110,16 +109,18 @@ function getNotificationAttributes(arg0, requestId, arg2) {
       const _String = String;
       obj[CLIENT_ADDRESS_ATTRIBUTE.MCP_RESOURCE_URI_ATTRIBUTE] = String(requestId.uri);
       const _String2 = String;
-      const result = _mod765.parseStringToURLObject(String(requestId.uri));
+      const obj2 = _mod765;
+      const result = obj2.parseStringToURLObject(String(requestId.uri));
       let tmp7 = result;
-      if (result) {
-        tmp7 = !tmp3(765).isURLObjectRelative(result);
+      const tmp3 = require;
+      if (tmp7) {
         const tmp3Result = tmp3(765);
+        tmp7 = !tmp3Result.isURLObjectRelative(result);
       }
       if (tmp7) {
-        obj["mcp.resource.protocol"] = result.protocol.replace(":", "");
+        const str2 = result.protocol;
+        obj["mcp.resource.protocol"] = str2.replace(":", "");
       }
-      tmp3 = require;
     }
   } else if ("notifications/initialized" === arg0) {
     obj["mcp.lifecycle.phase"] = "initialization_complete";
@@ -127,42 +128,51 @@ function getNotificationAttributes(arg0, requestId, arg2) {
   }
   return obj;
 }
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const buildTypeSpecificAttributes = function buildTypeSpecificAttributes(request, message, params, recordInputs) {
   let obj = params;
   if ("request" === request) {
+    let requestArguments;
     let obj2 = obj;
+    const extractTargetInfo = extractTargetInfo2.extractTargetInfo;
+    const method2 = message.method;
+    extractTargetInfo2;
     if (!obj) {
       obj2 = {};
     }
-    let tmp5 = undefined !== message.id;
-    if (tmp5) {
-      const obj4 = {};
+    let tmp6 = undefined !== message.id;
+    const extractTargetInfoResult = extractTargetInfo(method2, obj2);
+    if (tmp6) {
+      const obj3 = {};
       const _String = String;
-      obj4[tmp2(805).MCP_REQUEST_ID_ATTRIBUTE] = String(message.id);
-      tmp5 = obj4;
+      obj3[CLIENT_ADDRESS_ATTRIBUTE.MCP_REQUEST_ID_ATTRIBUTE] = String(message.id);
+      tmp6 = obj3;
     }
-    const obj5 = {};
-    const merged = Object.assign(tmp5);
-    const merged1 = Object.assign(extractTargetInfo.extractTargetInfo(message.method, obj2).attributes);
+    const obj4 = {};
+    const merged = Object.assign(tmp6);
+    const merged1 = Object.assign(extractTargetInfoResult.attributes);
     if (recordInputs) {
+      const getRequestArguments = extractTargetInfo2.getRequestArguments;
+      const method3 = message.method;
+      extractTargetInfo2;
       if (!obj) {
         obj = {};
       }
-      let requestArguments = tmp2(807).getRequestArguments(message.method, obj);
-      const tmp2Result = tmp2(807);
+      requestArguments = getRequestArguments(method3, obj);
     } else {
       requestArguments = {};
     }
     const merged2 = Object.assign(requestArguments);
-    return obj5;
+    return obj4;
   } else {
-    let obj6 = obj;
+    let obj5 = obj;
+    const method = message.method;
+    const tmp = getNotificationAttributes;
     if (!obj) {
-      obj6 = {};
+      obj5 = {};
     }
-    return getNotificationAttributes(message.method, obj6, recordInputs);
+    return tmp(method, obj5, recordInputs);
   }
 };
 export { getNotificationAttributes };

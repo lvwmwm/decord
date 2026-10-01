@@ -6,21 +6,25 @@
 
 // Module 4695 (useChatLayout)
 import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4696 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const useWindowSizeClassifierDefault = useWindowSizeClassifier;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat/native/useChatLayout.tsx");
 
 export default function useChatLayout() {
   const tmp = useWindowSizeClassifierDefault();
-  closure_0 = tmp;
+  let closure_0 = tmp;
   const items = [tmp];
-  return noop.useMemo(() => ({ isChatBesideChannelList: closure_0 >= useWindowSizeClassifier.WindowSizeClassifier.LARGE, isChatLockedOpen: closure_0 >= useWindowSizeClassifier.WindowSizeClassifier.XLARGE }), items);
+  return react.useMemo(() => {
+    const obj = { isChatBesideChannelList: closure_0 >= useWindowSizeClassifier.WindowSizeClassifier.LARGE, isChatLockedOpen: closure_0 >= useWindowSizeClassifier.WindowSizeClassifier.XLARGE };
+    return obj;
+  }, items);
 };
 export const getChatLayout = function getChatLayout() {
-  const windowSizeClassifier = useWindowSizeClassifier.getWindowSizeClassifier();
-  return { isChatBesideChannelList: windowSizeClassifier >= useWindowSizeClassifier.WindowSizeClassifier.LARGE, isChatLockedOpen: windowSizeClassifier >= useWindowSizeClassifier.WindowSizeClassifier.XLARGE };
+  const obj = useWindowSizeClassifier;
+  const windowSizeClassifier = obj.getWindowSizeClassifier();
+  const obj2 = { isChatBesideChannelList: windowSizeClassifier >= useWindowSizeClassifier.WindowSizeClassifier.LARGE, isChatLockedOpen: windowSizeClassifier >= useWindowSizeClassifier.WindowSizeClassifier.XLARGE };
+  return obj2;
 };

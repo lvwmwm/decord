@@ -5,18 +5,21 @@
 // Exports: default
 
 // Module 8823 (isActivitySupportedOnClientPlatform)
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/isActivitySupportedOnClientPlatform.tsx");
 
 export default function isActivitySupportedOnClientPlatform(arr) {
+  let IOS;
+  const obj = PlatformUtils;
   if (obj.isIOS()) {
-    let IOS = tmp(1979).EmbeddedActivitySupportedPlatforms.IOS;
+    IOS = tmp(1979).EmbeddedActivitySupportedPlatforms.IOS;
   } else {
-    const tmpResult = tmp(1364);
+    const tmpResult = PlatformUtils;
+    const isAndroidResult = tmpResult.isAndroid();
     const EmbeddedActivitySupportedPlatforms = tmp(1979).EmbeddedActivitySupportedPlatforms;
-    IOS = tmp(1364).isAndroid() ? EmbeddedActivitySupportedPlatforms.ANDROID : EmbeddedActivitySupportedPlatforms.WEB;
-    const isAndroidResult = tmp(1364).isAndroid();
+    IOS = isAndroidResult ? EmbeddedActivitySupportedPlatforms.ANDROID : EmbeddedActivitySupportedPlatforms.WEB;
   }
   let flag;
   if (arr != null) {

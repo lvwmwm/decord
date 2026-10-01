@@ -7,7 +7,7 @@
 // Module 11103 (channel_permissions/ChannelPermissionsUtils)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import size from "module_2" /* 2 */;
 
@@ -19,12 +19,20 @@ export const openAddMembersActionSheet = function openAddMembersActionSheet(stat
   if (arg1 === undefined) {
     flag = false;
   }
-  AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
-  const obj2 = ActionSheetActionCreatorsDefault;
-  obj2.openLazy(asyncRequireImpl(9031, dependencyMap.paths), "channel-add-members-" + stateFromStores.id, { channel: stateFromStores, canSkip: flag });
+  const obj = AnalyticsUtilsDefault;
+  obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
+  const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+  ActionSheetActionCreatorsDefault;
+  const obj2 = { channel: stateFromStores, canSkip: flag };
+  const tmp3 = asyncRequire(9031, dependencyMap.paths);
+  openLazy(tmp3, "channel-add-members-" + stateFromStores.id, obj2);
 };
 export const openChannelMembersActionSheet = function openChannelMembersActionSheet(id, guild_id) {
-  AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, { type: "Manage Channel Access" });
-  const obj2 = ActionSheetActionCreatorsDefault;
-  obj2.openLazy(asyncRequireImpl(11104, dependencyMap.paths), "channel-members-" + id, { channelId: id, guildId: guild_id });
+  const obj = AnalyticsUtilsDefault;
+  obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Manage Channel Access" });
+  const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+  ActionSheetActionCreatorsDefault;
+  const obj2 = { channelId: id, guildId: guild_id };
+  const tmp3 = asyncRequire(11104, dependencyMap.paths);
+  openLazy(tmp3, "channel-members-" + id, obj2);
 };

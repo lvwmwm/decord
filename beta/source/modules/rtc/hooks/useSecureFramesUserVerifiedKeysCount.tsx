@@ -6,11 +6,10 @@
 
 // Module 9177 (useSecureFramesUserVerifiedKeysCount)
 import _mod9148 from "module_9148" /* 9148 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import VerifiedKeyStore from "VerifiedKeyStore" /* 9147 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeysCount.tsx");
 
 export const useSecureFramesUserVerifiedKeysCount = function useSecureFramesUserVerifiedKeysCount(userId) {
@@ -18,18 +17,22 @@ export const useSecureFramesUserVerifiedKeysCount = function useSecureFramesUser
   const keyToOmit = userId.keyToOmit;
   let memo;
   const items = [keyToOmit];
-  memo = memo.useMemo(() => {
+  memo = memo.useMemo(function() {
     if (null == keyToOmit) {
       return null;
     } else {
       const _Uint8Array = Uint8Array;
+      const self = this;
+      const self2 = this;
       const uint8Array = new Uint8Array(tmp);
-      return _mod9148.serializeKey(uint8Array);
+      const obj = _mod9148;
+      return obj.serializeKey(uint8Array);
     }
   }, items);
+  let obj = userId(keyToOmit[3]);
   const items1 = [VerifiedKeyStore];
   const items2 = [memo, userId];
-  return userId(keyToOmit[3]).useStateFromStores(items1, () => {
+  return obj.useStateFromStores(items1, () => {
     const userVerifiedKeys = VerifiedKeyStore.getUserVerifiedKeys(userId);
     let num = 0;
     if (null != userVerifiedKeys) {

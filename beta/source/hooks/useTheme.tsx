@@ -10,7 +10,8 @@ import shared from "shared" /* 4685 */;
 import size from "module_2" /* 2 */;
 
 function useTheme() {
-  return shared.useThemeContext().theme;
+  const obj = shared;
+  return obj.useThemeContext().theme;
 }
 const ThemeTypes = Constants.ThemeTypes;
 const result = size.fileFinishedImporting("hooks/useTheme.tsx");
@@ -18,7 +19,8 @@ const result = size.fileFinishedImporting("hooks/useTheme.tsx");
 export default useTheme;
 export { useTheme };
 export const useThemeIndex = function useThemeIndex() {
-  const theme = shared.useThemeContext().theme;
+  const obj = shared;
+  const theme = obj.useThemeContext().theme;
   let num = 0;
   if (ThemeTypes.DARK !== theme) {
     if (ThemeTypes.LIGHT === theme) {

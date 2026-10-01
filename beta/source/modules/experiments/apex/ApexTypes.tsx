@@ -4,13 +4,12 @@
 // Dependencies: [2, 1238]
 
 // Module 1438 (apex/ApexTypes)
+import ApexTypes from "ApexTypes" /* 1238 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
 const result = size.fileFinishedImporting("modules/experiments/apex/ApexTypes.tsx");
-for (const key10018 in require("ApexTypes")) {
-  arg5[key10018] = require("ApexTypes")[key10018];
+for (const key10018 in ApexTypes) {
+  exports[key10018] = ApexTypes[key10018];
   continue;
 }
 

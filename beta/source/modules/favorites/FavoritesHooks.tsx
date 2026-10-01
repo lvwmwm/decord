@@ -6,86 +6,115 @@
 
 // Module 9685 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1970 */;
+import FavoritesConstants from "FavoritesConstants" /* 2058 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 9687 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import UserStore from "UserStore" /* 1372 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
+let tmp;
 const FavoritesLimits = tmp(9686);
-require = fn;
+const f89196 = () => favoriteChannels.getFavoriteChannels();
+const f89197 = () => guildId.getGuildId();
 function useFavoritesAccess(FavoritesGuildActionSheet) {
+  let currentUser;
+  let enabled;
+  let isFreemium;
   let str = FavoritesGuildActionSheet;
   if (FavoritesGuildActionSheet === undefined) {
     str = "useFavoritesAccess";
   }
-  const favoritesGuildConfig = FavoritesGuildExperiment.useFavoritesGuildConfig({ location: str });
+  const obj = FavoritesGuildExperiment;
+  const favoritesGuildConfig = obj.useFavoritesGuildConfig({ location: str });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   const items = [UserStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const isPremiumExactlyResult = PremiumTypeUtilsDefault.isPremiumExactly(stateFromStores, PremiumTypes.TIER_2);
+  const obj2 = get_initialized;
+  const stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj3 = PremiumTypeUtilsDefault;
+  const isPremiumExactlyResult = obj3.isPremiumExactly(stateFromStores, PremiumTypes.TIER_2);
   let tmp6 = enabled;
+  if (tmp6) {
+    tmp6 = isPremiumExactlyResult || isFreemium;
+  }
+  let num = 0;
+  if (tmp6) {
+    let num2;
+    if (isPremiumExactlyResult) {
+      num2 = MAX_FAVORITE_CHANNELS;
+    } else {
+      num2 = 0;
+      if (isFreemium) {
+        num2 = FavoritesLimits.FREE_FAVORITE_LIMIT;
+      }
+    }
+    num = num2;
+  }
+  const obj4 = { hasAccess: tmp6, isExperimentEnabled: enabled, isFreemium, favoriteLimit: num, canUpsellFavoriteLimit: enabled };
   if (enabled) {
-    let tmp7 = isPremiumExactlyResult;
-    if (!isPremiumExactlyResult) {
-      tmp7 = isFreemium;
-    }
-    tmp6 = tmp7;
+    enabled = isFreemium;
   }
-  if (!tmp6) {
-    const obj4 = { hasAccess: tmp6, isExperimentEnabled: enabled, isFreemium, favoriteLimit: 0, canUpsellFavoriteLimit: null };
-    if (enabled) {
-      enabled = isFreemium;
-    }
-    if (enabled) {
-      enabled = !isPremiumExactlyResult;
-    }
-    obj4.canUpsellFavoriteLimit = enabled;
-    return obj4;
-  } else if (isPremiumExactlyResult) {
+  if (enabled) {
+    enabled = !isPremiumExactlyResult;
   }
+  return obj4;
 }
-const MAX_FAVORITE_CHANNELS = fn(2058).MAX_FAVORITE_CHANNELS;
-const PremiumTypes = fn(1374).PremiumTypes;
-const size = fn(2);
+const MAX_FAVORITE_CHANNELS = FavoritesConstants.MAX_FAVORITE_CHANNELS;
+const PremiumTypes = PremiumConstants.PremiumTypes;
 let result = size.fileFinishedImporting("modules/favorites/FavoritesHooks.tsx");
 
 export { useFavoritesAccess };
 export const getFavoritesAccess = function getFavoritesAccess() {
-  const favoritesGuildConfig = FavoritesGuildExperiment.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
+  let enabled;
+  let isFreemium;
+  const obj = FavoritesGuildExperiment;
+  const favoritesGuildConfig = obj.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
   ({ enabled, isFreemium } = favoritesGuildConfig);
-  const isPremiumExactlyResult = PremiumTypeUtilsDefault.isPremiumExactly(UserStore.getCurrentUser(), PremiumTypes.TIER_2);
+  const obj2 = PremiumTypeUtilsDefault;
+  const isPremiumExactlyResult = obj2.isPremiumExactly(UserStore.getCurrentUser(), PremiumTypes.TIER_2);
   let tmp5 = enabled;
+  if (tmp5) {
+    tmp5 = isPremiumExactlyResult || isFreemium;
+  }
+  let num = 0;
+  if (tmp5) {
+    let num2;
+    if (isPremiumExactlyResult) {
+      num2 = MAX_FAVORITE_CHANNELS;
+    } else {
+      num2 = 0;
+      if (isFreemium) {
+        num2 = FavoritesLimits.FREE_FAVORITE_LIMIT;
+      }
+    }
+    num = num2;
+  }
+  const obj3 = { hasAccess: tmp5, isExperimentEnabled: enabled, isFreemium, favoriteLimit: num, canUpsellFavoriteLimit: enabled };
   if (enabled) {
-    let tmp6 = isPremiumExactlyResult;
-    if (!isPremiumExactlyResult) {
-      tmp6 = isFreemium;
-    }
-    tmp5 = tmp6;
+    enabled = isFreemium;
   }
-  if (!tmp5) {
-    const obj3 = { hasAccess: tmp5, isExperimentEnabled: enabled, isFreemium, favoriteLimit: 0, canUpsellFavoriteLimit: null };
-    if (enabled) {
-      enabled = isFreemium;
-    }
-    if (enabled) {
-      enabled = !isPremiumExactlyResult;
-    }
-    obj3.canUpsellFavoriteLimit = enabled;
-    return obj3;
-  } else if (isPremiumExactlyResult) {
+  if (enabled) {
+    enabled = !isPremiumExactlyResult;
   }
+  return obj3;
 };
 export const useFavoritesLimitUpsell = function useFavoritesLimitUpsell() {
+  let canUpsellFavoriteLimit;
+  let favoriteLimit;
+  let favoritesCountAgainstLimit;
   ({ canUpsellFavoriteLimit, favoriteLimit } = useFavoritesAccess("useFavoritesLimitUpsell"));
-  const tmp = useFavoritesAccess("useFavoritesLimitUpsell");
+  useFavoritesAccess("useFavoritesLimitUpsell");
   const items = [FavoriteStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => favoritesCountAgainstLimit.getFavoritesCountAgainstLimit());
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => favoritesCountAgainstLimit.getFavoritesCountAgainstLimit());
   if (canUpsellFavoriteLimit) {
     canUpsellFavoriteLimit = true;
   }
@@ -93,20 +122,27 @@ export const useFavoritesLimitUpsell = function useFavoritesLimitUpsell() {
 };
 export const useFavorites = function useFavorites() {
   const items = [FavoriteStore];
-  return initialize.useStateFromStoresObject(items, () => favoriteChannels.getFavoriteChannels());
+  const obj = get_initialized;
+  return obj.useStateFromStoresObject(items, f89196);
 };
 export const useFavorite = function useFavorite(id) {
   _require = id;
   const items = [FavoriteStore];
-  return require("initialize").useStateFromStores(items, () => FavoriteStore.getFavorite(closure_0));
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => FavoriteStore.getFavorite(id));
 };
 export const useFavoritedChannelIds = function useFavoritedChannelIds() {
+  let favoriteChannels;
   const items = [FavoriteStore];
-  const stateFromStoresObject = initialize.useStateFromStoresObject(items, () => favoriteChannels.getFavoriteChannels());
-  return SnowflakeUtilsDefault.keys(stateFromStoresObject);
+  const obj = get_initialized;
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f89196);
+  const obj2 = SnowflakeUtilsDefault;
+  return obj2.keys(stateFromStoresObject);
 };
 export const getFavoritesCategories = function getFavoritesCategories(favoriteChannels) {
+  let nickname;
   if (favoriteChannels === undefined) {
+    const tmp2 = FavoriteStore;
     favoriteChannels = FavoriteStore.getFavoriteChannels();
   }
   const items = [{ id: null, name: "" }];
@@ -115,19 +151,20 @@ export const getFavoritesCategories = function getFavoritesCategories(favoriteCh
     if (tmp6.type !== preloaded_user_settings.FavoriteChannelType.CATEGORY) {
       continue;
     } else {
-      let obj = { id: null, name: null };
+      let obj = { id: null, name: nickname };
       ({ id: obj.id, nickname } = tmp6);
+      let push = items.push;
       if (nickname == null) {
         nickname = "";
       }
-      obj.name = nickname;
-      let arr = items.push(obj);
+      let arr = push(obj);
       continue;
     }
     continue;
   }
   const sorted = items.sort((arg0, arg1) => {
     let num;
+    const tmp = favoriteChannels;
     if (favoriteChannels[arg0.id] != null) {
       num = tmp2.order;
     }
@@ -135,7 +172,7 @@ export const getFavoritesCategories = function getFavoritesCategories(favoriteCh
       num = 0;
     }
     let num2;
-    if (favoriteChannels[arg1.id] != null) {
+    if (tmp[arg1.id] != null) {
       num2 = tmp3.order;
     }
     if (num2 == null) {
@@ -147,31 +184,37 @@ export const getFavoritesCategories = function getFavoritesCategories(favoriteCh
 };
 export const useIsFavoritesGuildSelected = function useIsFavoritesGuildSelected() {
   const items = [SelectedGuildStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => guildId.getGuildId());
-  return FavoritesUtils.isFavoritesGuildId(stateFromStores);
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, f89197);
+  const obj2 = FavoritesUtils;
+  return obj2.isFavoritesGuildId(stateFromStores);
 };
 export const useFavoritesAwareChannel = function useFavoritesAwareChannel(arg0, FavoritesGuildActionSheet) {
+  let closure_0;
+  let guildId;
+  let tmp7;
   let tmp = arg0;
   _require = arg0;
   const items = [SelectedGuildStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => guildId.getGuildId());
-  const obj = require("initialize");
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, f89197);
   const obj2 = require("FavoritesUtils");
-  require("initialize");
+  const isFavoritesGuildIdResult = obj2.isFavoritesGuildId(stateFromStores);
+  const hasAccess = useFavoritesAccess(FavoritesGuildActionSheet).hasAccess;
+  require("get initialized");
   [][0] = arg0;
   if (!isFavoritesGuildIdResult) {
     if (tmp == null) {
       tmp = null;
     }
-    let tmp7 = tmp;
+    tmp7 = tmp;
   } else {
     tmp7 = null;
-    if (useFavoritesAccess(FavoritesGuildActionSheet).hasAccess) {
+    if (hasAccess) {
       tmp7 = null;
       if (tmp5) {
-        let isCategoryResult;
         if (tmp != null) {
-          isCategoryResult = tmp.isCategory();
+          tmp.isCategory();
         }
         tmp7 = null;
       }

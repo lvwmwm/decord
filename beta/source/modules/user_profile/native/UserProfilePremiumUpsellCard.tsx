@@ -5,8 +5,8 @@
 // Exports: UserProfilePremiumUpsellCard
 
 // Module 14201 (UserProfilePremiumUpsellCard)
+import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import Text_Text from "Text/Text" /* 4832 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
@@ -14,74 +14,87 @@ import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8663 */;
 import openPremiumModalDefault from "openPremiumModal" /* 8695 */;
 import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9422 */;
 import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 14179 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let navigation;
+
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
 function UpsellCardLayout(arg0) {
+  let ctaText;
+  let description;
+  let disabled;
+  let onPress;
+  let style;
   ({ style, ctaText, description, disabled, onPress } = arg0);
-  const obj = { style, ctaText, showLinearGradient: true, disabled, onPress, children: jsx(Text_Text.Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5, children: description }) };
-  return jsx(UserProfileUpsellCardDefault, { style, ctaText, showLinearGradient: true, disabled, onPress, children: jsx(Text_Text.Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5, children: description }) });
+  UserProfileUpsellCardDefault;
+  return <tmp style={style} ctaText={ctaText} showLinearGradient disabled={disabled} onPress={onPress}>{null}</tmp>;
 }
 function PreviewNitroCard(style) {
-  let navigation;
-  navigation = navigation(1485).useNavigation();
+  navigation = undefined;
+  style = style.style;
+  let obj = navigation(1485);
+  navigation = obj.useNavigation();
   items = [navigation];
-  const obj2 = { style: style.style, ctaText: null, description: null, onPress: null };
-  const callback = noop.useCallback(() => {
-    UserSettingsModalActionCreatorsDefault.setSection(constants4.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
-    navigation.push(constants4.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
+  const callback = react.useCallback(() => {
+    const obj = UserSettingsModalActionCreatorsDefault;
+    obj.setSection(metroImportDefault.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
+    navigation.push(metroImportDefault.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
   }, items);
   const intl = navigation(1115).intl;
-  obj2.ctaText = intl.string(navigation(1115).t.PxUx8e);
   const intl2 = navigation(1115).intl;
-  obj2.description = intl2.string(navigation(1115).t.Tii53U);
-  obj2.onPress = callback;
-  return <UpsellCardLayout style={arg0.style} ctaText={null} description={null} onPress={null} />;
+  return <UpsellCardLayout style={style} ctaText={intl.string(navigation(1115).t.PxUx8e)} description={intl2.string(navigation(1115).t.Tii53U)} onPress={callback} />;
 }
 function GetNitroCard(style) {
+  let intl2;
+  let loading;
+  let onPress;
   let analyticsLocations;
-  let nitroTrialCtaOverride = analyticsLocations(6866).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
+  let tmp = analyticsLocations;
+  style = style.style;
+  let obj = analyticsLocations(6866);
+  let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_premium_upsell_card");
   analyticsLocations = useAnalyticsLocationsDefault(items).analyticsLocations;
   items = [analyticsLocations];
-  let callback = noop.useCallback(() => {
-    const obj = { analyticsLocation: { page: constants2.USER_SETTINGS, section: constants3.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT, object: constants.BUTTON_CTA }, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
-    openPremiumModalDefault(obj);
+  let callback = react.useCallback(() => {
+    let obj2;
+    const obj = { analyticsLocation: obj2, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
+    obj2 = { page: hasOwnProperty.USER_SETTINGS, section: metroRequire.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT, object: constants.BUTTON_CTA };
+    const tmp = openPremiumModalDefault;
+    tmp(obj);
   }, items);
-  let obj = analyticsLocations(6866);
   ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, callback, constants2.USER_SETTINGS, undefined, items));
-  const tmp5 = usePremiumFeatureUpsellGetNitroDefault(false, callback, constants2.USER_SETTINGS, undefined, items);
-  const mobileNitroPreviewDirectCheckoutEnabled = analyticsLocations(14202).useMobileNitroPreviewDirectCheckoutEnabled();
-  const obj3 = { style: style.style, ctaText: null, description: null, disabled: null, onPress: null };
+  usePremiumFeatureUpsellGetNitroDefault(false, callback, constants2.USER_SETTINGS, undefined, items);
+  let obj2 = analyticsLocations(14202);
+  const mobileNitroPreviewDirectCheckoutEnabled = obj2.useMobileNitroPreviewDirectCheckoutEnabled();
+  const obj3 = { style, ctaText: nitroTrialCtaOverride, description: intl2.string(tmp(1115).t.ZFR9LF), disabled: mobileNitroPreviewDirectCheckoutEnabled && loading, onPress: callback };
+  const tmp7 = jsx;
+  const tmp8 = UpsellCardLayout;
   if (nitroTrialCtaOverride == null) {
     const intl = tmp(1115).intl;
     nitroTrialCtaOverride = intl.string(tmp(1115).t.pj0XBN);
   }
-  obj3.ctaText = nitroTrialCtaOverride;
-  const intl2 = tmp(1115).intl;
-  obj3.description = intl2.string(analyticsLocations(1115).t.ZFR9LF);
-  let tmp9 = mobileNitroPreviewDirectCheckoutEnabled;
-  if (mobileNitroPreviewDirectCheckoutEnabled) {
-    tmp9 = loading;
-  }
-  obj3.disabled = tmp9;
+  intl2 = tmp(1115).intl;
   if (mobileNitroPreviewDirectCheckoutEnabled) {
     callback = onPress;
   }
-  obj3.onPress = callback;
-  return <UpsellCardLayout style={arg0.style} ctaText={null} description={null} disabled={null} onPress={null} />;
+  return tmp7(tmp8, obj3);
 }
-const Constants = fn(1074);
-({ AnalyticsObjects: closure_4, AnalyticsPages: hasOwnProperty, AnalyticsSections: metroRequire, UserSettingsSections: closure_7 } = Constants);
-const jsx = fn(21).jsx;
+({ AnalyticsObjects: closure_4, AnalyticsPages: hasOwnProperty, AnalyticsSections: metroRequire, UserSettingsSections: metroImportDefault } = Constants);
+const jsx = Fragment.jsx;
 let items = [AnalyticsLocationDefault.USER_SETTINGS_TRY_OUT_PREMIUM];
-const createStyles = fn(4836);
 let closure_10 = createStyles.createStyles((bottom) => {
-  const obj = { container: { position: "absolute", bottom, start: 0, end: 0 } };
+  const obj = { container: obj2 };
   return obj;
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfilePremiumUpsellCard.tsx");
 
 export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCard(isTryItOut) {
-  return jsx(isTryItOut.isTryItOut ? GetNitroCard : PreviewNitroCard, { style: closure_10(useSafeAreaInsetsDefault().bottom).container });
+  isTryItOut = isTryItOut.isTryItOut;
+  return jsx(isTryItOut ? GetNitroCard : PreviewNitroCard, { style: closure_10(useSafeAreaInsetsDefault().bottom).container });
 };

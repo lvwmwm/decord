@@ -9,5 +9,6 @@ import baseSortedIndexBy from "baseSortedIndexBy" /* 4466 */;
 
 
 export default function sortedIndexBy(arg0, arg1, arg2) {
-  return baseSortedIndexBy(arg0, arg1, baseIteratee(arg2, 2));
+  const tmp = baseSortedIndexBy;
+  return tmp(arg0, arg1, baseIteratee(arg2, 2));
 };

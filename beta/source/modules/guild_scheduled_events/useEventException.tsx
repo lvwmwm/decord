@@ -6,17 +6,19 @@
 
 // Module 8950 (useEventException)
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/useEventException.tsx");
 
 export default function useEventException(arg0, arg1) {
+  let closure_0;
   _require = arg1;
-  const items = [GuildScheduledEventStore];
-  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => {
+  let obj = require("get initialized");
+  let items = [GuildScheduledEventStore];
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     const guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(closure_0);
     let prop;
     if (guildScheduledEvent != null) {
@@ -43,7 +45,7 @@ export const getEventException = function getEventException(recurrenceId, eventI
   if (prop == null) {
     prop = [];
   }
-  closure_0 = recurrenceId;
+  let closure_0 = recurrenceId;
   let found;
   if (prop != null) {
     found = prop.find((event_exception_id) => event_exception_id.event_exception_id === closure_0);

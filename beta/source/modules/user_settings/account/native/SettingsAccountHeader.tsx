@@ -4,72 +4,91 @@
 // Dependencies: [19, 17, 4479, 1372, 1074, 7847, 21, 4836, 576, 14245, 1115, 6800, 504, 6419, 5933, 5917, 5281, 2]
 
 // Module 14244 (SettingsAccountHeader)
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl from "intl" /* 1115 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
 import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5933 */;
 import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6419 */;
 import openUserSettings from "openUserSettings" /* 6800 */;
+import Constants2 from "Constants" /* 7847 */;
 import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14245 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c10;
+let c9;
+let obj2;
 function RestrictedAccountRedirect() {
-  const obj = {
-    label: util.t.zqv4nV,
+  let obj = {
+    label: intl.t.zqv4nV,
     labelHook() {
-      openUserSettings.openUserSettings({ screen: constants.SETTINGS_CONTENT_AND_SOCIAL });
+      const obj = openUserSettings;
+      const obj2 = { screen: constants.SETTINGS_CONTENT_AND_SOCIAL };
+      obj.openUserSettings(obj2);
     },
     noticeType: SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE
   };
-  return React7(SafetySettingsNoticeDefault, obj);
+  const tmp = SafetySettingsNoticeDefault;
+  return React4(tmp, obj);
 }
-const View = fn(17).View;
-const AnalyticsSections = fn(1074).AnalyticsSections;
-const SafetySettingsNoticeType = fn(7847).SafetySettingsNoticeType;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { header: { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 } };
+const View = react_native.View;
+const AnalyticsSections = Constants.AnalyticsSections;
+const SafetySettingsNoticeType = Constants2.SafetySettingsNoticeType;
+({ jsx: c9, jsxs: c10 } = Fragment);
+let obj = { header: obj2 };
+obj2 = { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
 let closure_11 = createStyles.createStyles(obj);
-const obj3 = { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
-
-export default noop.memo(() => {
+const memoResult = react.memo(() => {
+  let blockedOrIgnoredIDs;
+  let currentUser;
+  let items2;
+  let obj10;
+  let tmp9Result;
   const tmp = closure_11();
+  let obj = get_initialized;
   const items = [UserStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const bannerText = UserSettingsAccountUnverifiedHeader.getBannerText(stateFromStores);
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj2 = UserSettingsAccountUnverifiedHeader;
+  const bannerText = obj2.getBannerText(stateFromStores);
   const items1 = [RelationshipStore];
-  const stateFromStores1 = initialize.useStateFromStores(items1, () => blockedOrIgnoredIDs.getBlockedOrIgnoredIDs().size > 0);
-  const callback = noop.useCallback(() => {
-    EmailVerificationModalActionCreatorsDefault.open();
+  const obj3 = get_initialized;
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => blockedOrIgnoredIDs.getBlockedOrIgnoredIDs().size > 0);
+  const callback = react.useCallback(() => {
+    const obj = EmailVerificationModalActionCreatorsDefault;
+    obj.open();
   }, []);
   if (null != bannerText) {
-    const obj4 = { style: tmp.header, children: null };
     let tmp11 = null;
+    const obj4 = { style: tmp.header, children: items2 };
+    const tmp10 = View;
+    const tmp9 = authStore;
     if (stateFromStores1) {
-      tmp11 = React7(RestrictedAccountRedirect, {});
+      tmp11 = React4(RestrictedAccountRedirect, {});
     }
-    const items2 = [tmp11, ];
+    items2 = [tmp11, ];
     let tmp14 = null;
     if (null != bannerText) {
-      const obj9 = { onPress: callback, variant: "danger", label: null, accessibilityLabel: null, trailing: null, start: true, end: true };
       ({ title: obj5.label, title: obj5.accessibilityLabel } = bannerText);
-      const obj10 = { text: null, accessibilityLabel: null, onPress: null };
+      const obj9 = { onPress: callback, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj10), start: true, end: true };
+      const TableRow = tmp2(5917).TableRow;
+      obj10 = { text: null, accessibilityLabel: null, onPress: callback };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
-      obj10.onPress = callback;
-      obj9.trailing = React7(tmp2(5281).Button, obj10);
-      tmp14 = React7(tmp2(5917).TableRow, obj9);
+      tmp14 = React4(TableRow, obj9);
     }
     items2[1] = tmp14;
-    obj4.children = items2;
-    let tmp9Result = closure_1_10(View, obj4);
+    tmp9Result = tmp9(tmp10, obj4);
   } else {
     tmp9Result = null;
   }
   return tmp9Result;
 });
+const result = size.fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
+
+export default memoResult;

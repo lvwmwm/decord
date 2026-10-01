@@ -5,18 +5,22 @@
 // Exports: RedesignCompat
 
 // Module 5998 (RedesignCompat)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const context = noop.createContext(false);
-const size = fn(2);
+const jsx = Fragment.jsx;
+const context = react.createContext(false);
 const result = size.fileFinishedImporting("design/components/RedesignCompat/native/RedesignCompat.native.tsx");
 
 export const RedesignCompatContext = context;
-export const RedesignCompat = function RedesignCompat(children) {
-  let enabled = children.enabled;
+export const RedesignCompat = function RedesignCompat(enabled) {
+  enabled = enabled.enabled;
+  const children = enabled.children;
+  const Provider = context.Provider;
+  const tmp = jsx;
   if (enabled == null) {
     enabled = true;
   }
-  return <context.Provider value={enabled}>{arg0.children}</context.Provider>;
+  return tmp(Provider, { value: enabled, children });
 };

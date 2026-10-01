@@ -5,27 +5,25 @@
 // Exports: default
 
 // Module 17011 (VoicePanelNoJoinPermissionsAlert)
-import util from "util" /* 1115 */;
-import AlertModal from "AlertModal" /* 5209 */;
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17012 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import intl4 from "intl" /* 1115 */;
+import AlertModal2 from "AlertModal" /* 5209 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNoJoinPermissionsAlert.tsx");
 
 export default function VoicePanelNoJoinPermissionsAlert() {
-  const obj2 = { header: jsx(VoicePanelLockedIconDefault, {}), title: null, content: null, actions: null };
-  const intl = util.intl;
-  obj2.title = intl.string(util.t["7/2/3M"]);
-  const intl2 = util.intl;
-  obj2.content = intl2.string(util.t.xsenup);
-  const obj3 = { variant: "secondary", text: null, onPress: null };
-  const intl3 = util.intl;
-  obj3.text = intl3.string(util.t["NX+WJN"]);
-  obj3.onPress = AlertModal.useDismissModalCallback();
-  obj2.actions = jsx(AlertModal.AlertActionButton, { variant: "secondary", text: null, onPress: null });
-  return jsx(AlertModal.AlertModal, { header: jsx(VoicePanelLockedIconDefault, {}), title: null, content: null, actions: null });
+  let intl3;
+  const obj = AlertModal2;
+  const dismissModalCallback = obj.useDismissModalCallback();
+  const AlertModal = AlertModal2.AlertModal;
+  const intl = intl4.intl;
+  const intl2 = intl4.intl;
+  ({ variant: "secondary", text: intl3.string(intl4.t["NX+WJN"]), onPress: dismissModalCallback });
+  const AlertActionButton = AlertModal2.AlertActionButton;
+  intl3 = intl4.intl;
+  return <AlertModal header={null} title={intl.string(intl4.t["7/2/3M"])} content={intl2.string(intl4.t.xsenup)} actions={null} />;
 };
 export const VOICE_PANEL_NO_JOIN_PERMS_KEY = "voice-panel-no-join-perms";

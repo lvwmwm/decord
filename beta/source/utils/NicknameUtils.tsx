@@ -5,14 +5,17 @@
 // Exports: getNickname, useName
 
 // Module 4988 (NicknameUtils)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function getNickname(id, arg1, id) {
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+function getNickname(id, arg1, id2) {
   if (null == id) {
     return null;
   } else if (null != id) {
@@ -31,10 +34,11 @@ function getNickname(id, arg1, id) {
     return null;
   }
 }
-function getName(id, arg1, id) {
+function getName(id, arg1, id2) {
+  let stringResult;
   if (null == id) {
-    const intl = util.intl;
-    let stringResult = intl.string(util.t.sKdZ6U);
+    const intl = intl2.intl;
+    stringResult = intl.string(intl2.t.sKdZ6U);
   } else {
     stringResult = null;
     if (null != id) {
@@ -56,19 +60,22 @@ function getName(id, arg1, id) {
       }
     }
     if (stringResult == null) {
-      stringResult = UserUtilsDefault.getName(id);
+      const obj2 = UserUtilsDefault;
+      stringResult = obj2.getName(id);
     }
   }
   return stringResult;
 }
 function useName(arg0, arg1, arg2) {
+  let closure_0;
+  let closure_2;
   _require = arg0;
-  closure_1 = arg1;
+  let closure_1 = arg1;
   dependencyMap = arg2;
   const items = [GuildMemberStore, ChannelStore, RelationshipStore];
-  return require("initialize").useStateFromStores(items, () => getName(closure_0, closure_1, closure_2));
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => getName(closure_0, closure_1, closure_2));
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("utils/NicknameUtils.tsx");
 
 export default { getNickname, getName, useName };

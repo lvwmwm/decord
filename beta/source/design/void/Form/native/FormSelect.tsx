@@ -6,107 +6,128 @@
 
 // Module 8064 (FormSelect)
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import Constants from "Constants" /* 1074 */;
+import react_native from "react-native" /* 4548 */;
 import Pressables from "Pressables" /* 5435 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native2 from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let StyleSheet;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let tmp2;
+const Text_Text = tmp2(4832);
 function OptionButton(item) {
+  let Text;
+  let accessibilityRole;
+  let accessibilityState;
+  let items1;
+  let label;
+  let obj3;
+  let onPress;
+  let selected;
+  let str;
   item = item.item;
   ({ selected, onPress } = item);
   const tmp = closure_7();
-  const radioA11yNative = useA11yRolesNative.useRadioA11yNative({ selected });
+  const obj = react_native;
+  const radioA11yNative = obj.useRadioA11yNative({ selected });
   const items = [item, onPress];
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     if (onPress != null) {
       tmp(item);
     }
   }, items);
-  const obj2 = { accessibilityRole, accessibilityState, accessibilityLabel: null, style: null, onPress: null, children: null };
-  let label = item.descriptiveLabel;
+  const obj2 = { accessibilityRole, accessibilityState, accessibilityLabel: label, style: items1, onPress: callback, children: hasOwnProperty(Text, obj3) };
+  label = item.descriptiveLabel;
+  const PressableOpacity = Pressables.PressableOpacity;
   if (label == null) {
     label = item.label;
   }
-  obj2.accessibilityLabel = label;
-  const items1 = [tmp.button, ];
+  items1 = [tmp.button, ];
   let buttonSelected = null;
   if (selected) {
     buttonSelected = tmp.buttonSelected;
   }
   items1[1] = buttonSelected;
-  obj2.style = items1;
-  obj2.onPress = callback;
-  const obj3 = { variant: "text-sm/semibold", style: selected ? tmp.labelSelected : tmp.label, children: item.label.toUpperCase() };
-  obj2.children = hasOwnProperty(Text_Text.Text, obj3);
-  return hasOwnProperty(Pressables.PressableOpacity, obj2);
+  obj3 = { variant: "text-sm/semibold", style: selected ? tmp.labelSelected : tmp.label, children: str.toUpperCase() };
+  str = item.label;
+  Text = Text_Text.Text;
+  return hasOwnProperty(PressableOpacity, obj2);
 }
 function extractKey(value) {
   return "" + value.value;
 }
-get_ActivityIndicator = fn(17);
-({ View: c3, FlatList: closure_4, StyleSheet } = get_ActivityIndicator);
-const Fonts = fn(1074).Fonts;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let createStyles = fn(4836);
-let obj2 = { button: { minWidth: 95, height: 36, margin: 4, borderRadius: 3, justifyContent: "center", alignItems: "center", paddingHorizontal: 10, borderWidth: StyleSheet.hairlineWidth, shadowColor: nativeDefault.colors.BLACK, shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.12, shadowRadius: 6, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, buttonSelected: null, label: null, labelSelected: null };
-let obj3 = { minWidth: 95, height: 36, margin: 4, borderRadius: 3, justifyContent: "center", alignItems: "center", paddingHorizontal: 10, borderWidth: StyleSheet.hairlineWidth, shadowColor: nativeDefault.colors.BLACK, shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.12, shadowRadius: 6, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-obj2.buttonSelected = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-const obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-obj2.label = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, color: nativeDefault.colors.TEXT_MUTED };
-const obj5 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, color: nativeDefault.colors.TEXT_MUTED };
-obj2.labelSelected = { color: nativeDefault.unsafe_rawColors.BRAND_100 };
-let closure_7 = createStyles.createStyles(obj2);
-createStyles = fn(4836);
-const obj8 = { row: { paddingVertical: 12, paddingHorizontal: 16 }, label: null, optionsWrapper: null, optionsContainer: null };
-const obj6 = { color: nativeDefault.unsafe_rawColors.BRAND_100 };
-obj8.label = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: nativeDefault.colors.TEXT_MUTED };
-obj8.optionsWrapper = { marginHorizontal: -16, paddingTop: 20, marginTop: -20, paddingBottom: 8, marginBottom: -8 };
-obj8.optionsContainer = { paddingHorizontal: 12 };
-let closure_9 = createStyles.createStyles(obj8);
-const size = fn(2);
+({ View: c3, FlatList: closure_4, StyleSheet } = react_native2);
+const Fonts = Constants.Fonts;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { button: obj2, buttonSelected: obj3, label: { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, color: nativeDefault.colors.TEXT_MUTED }, labelSelected: { color: nativeDefault.unsafe_rawColors.BRAND_100 } };
+obj2 = { minWidth: 95, height: 36, margin: 4, borderRadius: 3, justifyContent: "center", alignItems: "center", paddingHorizontal: 10, borderWidth: StyleSheet.hairlineWidth, shadowColor: nativeDefault.colors.BLACK, shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.12, shadowRadius: 6, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+({ fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, color: nativeDefault.colors.TEXT_MUTED });
+({ color: nativeDefault.unsafe_rawColors.BRAND_100 });
+let closure_7 = createStyles(obj);
+createStyles = createStyles_mod;
+const obj6 = { row: { paddingVertical: 12, paddingHorizontal: 16 }, label: { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: nativeDefault.colors.TEXT_MUTED }, optionsWrapper: { marginHorizontal: -16, paddingTop: 20, marginTop: -20, paddingBottom: 8, marginBottom: -8 }, optionsContainer: { paddingHorizontal: 12 } };
+({ fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: nativeDefault.colors.TEXT_MUTED });
+let closure_9 = createStyles.createStyles(obj6);
 const result = size.fileFinishedImporting("design/void/Form/native/FormSelect.tsx");
 
 export default function FormSelect(onChange) {
+  let items;
+  let label;
+  let onScrollBeginDrag;
+  let options;
+  let value;
   ({ label, value } = onChange);
   require = value;
   onChange = onChange.onChange;
   ({ options, onScrollBeginDrag } = onChange);
   let tmp = closure_9();
-  const obj = { style: tmp.row, children: null };
+  let obj = { style: tmp.row, children: items };
   let tmp4 = null != label;
+  const tmp2 = closure_6;
+  const tmp3 = closure_3;
   if (tmp4) {
     const obj2 = { style: tmp.label, variant: "heading-md/medium", accessibilityRole: "header", children: label.toUpperCase() };
-    tmp4 = closure_5(require("Text/Text").Text, obj2);
+    const Text = require("Text/Text").Text;
+    tmp4 = closure_5(Text, obj2);
   }
-  const items = [
-    tmp4,
-    closure_5(closure_4, {
-      style: tmp.optionsWrapper,
-      contentContainerStyle: tmp.optionsContainer,
-      data: options,
-      extraData: value,
-      keyExtractor: extractKey,
-      renderItem(item) {
-        return hasOwnProperty(OptionButton, {
-          item: item.item,
-          selected: item.item.value === value,
-          onPress(value) {
-            let tmp;
-            if (onChange != null) {
-              tmp = onChange(value.value);
-            }
-            return tmp;
+  items = [tmp4, ];
+  const obj3 = {
+    style: tmp.optionsWrapper,
+    contentContainerStyle: tmp.optionsContainer,
+    data: options,
+    extraData: value,
+    keyExtractor: extractKey,
+    renderItem(item) {
+      const obj = {
+        item: item.item,
+        selected: item.item.value === require,
+        onPress(value) {
+          let tmp;
+          if (onChange != null) {
+            tmp = onChange(value.value);
           }
-        });
-      },
-      showsHorizontalScrollIndicator: false,
-      horizontal: true,
-      onScrollBeginDrag
-    })
-  ];
-  obj.children = items;
-  return closure_6(closure_3, obj);
+          return tmp;
+        }
+      };
+      return hasOwnProperty(OptionButton, obj);
+    },
+    showsHorizontalScrollIndicator: false,
+    horizontal: true,
+    onScrollBeginDrag
+  };
+  items[1] = closure_5(closure_4, obj3);
+  return tmp2(tmp3, obj);
 };

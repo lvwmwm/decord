@@ -5,71 +5,79 @@
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
 // Module 9535 (ThemeContextProvider/RootThemeContextProvider)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1085 */;
 import native from "native" /* 4540 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ThemeTypes = fn(1085).ThemeTypes;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const ThemeTypes = Constants.ThemeTypes;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/ThemeContextProvider/native/RootThemeContextProvider.native.tsx");
 
-export const RootThemeContextProvider = function RootThemeContextProvider(children) {
-  let DARK = children.theme;
+export const RootThemeContextProvider = function RootThemeContextProvider(theme) {
+  let gradient;
+  let DARK = theme.theme;
+  const children = theme.children;
   if (DARK === undefined) {
     DARK = gradient.DARK;
   }
-  let primaryColor = children.primaryColor;
+  let primaryColor = theme.primaryColor;
   if (primaryColor === undefined) {
     primaryColor = null;
   }
-  let secondaryColor = children.secondaryColor;
+  let secondaryColor = theme.secondaryColor;
   if (secondaryColor === undefined) {
     secondaryColor = null;
   }
-  gradient = children.gradient;
+  gradient = theme.gradient;
   if (gradient === undefined) {
     gradient = null;
   }
-  let num = children.flags;
+  let num = theme.flags;
   if (num === undefined) {
     num = 0;
   }
-  let num2 = children.contrast;
+  let num2 = theme.contrast;
   if (num2 === undefined) {
     num2 = 1;
   }
-  let num3 = children.saturation;
+  let num3 = theme.saturation;
   if (num3 === undefined) {
     num3 = 1;
   }
-  const enabledExperiments = children.enabledExperiments;
-  let str = children.density;
+  const enabledExperiments = theme.enabledExperiments;
+  let str = theme.density;
   if (str === undefined) {
     str = "compact";
   }
-  let flag = children.disableAdaptiveTheme;
+  let flag = theme.disableAdaptiveTheme;
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = children.reduceAdaptiveTheme;
+  let flag2 = theme.reduceAdaptiveTheme;
   if (flag2 === undefined) {
     flag2 = false;
   }
   const items = [DARK, primaryColor, secondaryColor, gradient, num, num2, num3, enabledExperiments, str, flag, flag2];
-  value = secondaryColor.useMemo(() => native.createThemedContext({ theme: DARK, primaryColor, secondaryColor, gradient, flags: num, contrast: num2, saturation: num3, enabledExperiments, density: str, disableAdaptiveTheme: flag, reduceAdaptiveTheme: flag2 }), items);
-  return num(DARK(primaryColor[3]).ThemeContext.Provider, { value, children: children.children });
+  const value = secondaryColor.useMemo(() => {
+    const obj = native;
+    const obj2 = { theme: DARK, primaryColor, secondaryColor, gradient, flags: num, contrast: num2, saturation: num3, enabledExperiments, density: str, disableAdaptiveTheme: flag, reduceAdaptiveTheme: flag2 };
+    return obj.createThemedContext(obj2);
+  }, items);
+  return num(DARK(primaryColor[3]).ThemeContext.Provider, { value, children });
 };
 export const DisableCustomTheme = function DisableCustomTheme(children) {
-  themeContext = themeContext(4540).useThemeContext();
+  let themeContext;
+  let obj = themeContext(4540);
+  themeContext = obj.useThemeContext();
   const items = [themeContext];
-  const memo = noop.useMemo(() => {
-    const obj2 = {};
+  const memo = react.useMemo(() => {
+    const obj = { primaryColor: null, secondaryColor: null, gradient: null };
+    const createThemedContext = native.createThemedContext;
+    native;
     const merged = Object.assign(themeContext);
-    obj2.primaryColor = null;
-    obj2.secondaryColor = null;
-    obj2.gradient = null;
-    return native.createThemedContext(obj2);
+    return createThemedContext(obj);
   }, items);
   return jsx(themeContext(4540).ThemeContext.Provider, { value: memo, children: children.children });
 };

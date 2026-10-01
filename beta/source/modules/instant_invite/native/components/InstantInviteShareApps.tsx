@@ -4,99 +4,79 @@
 // Dependencies: [32, 19, 17, 9311, 21, 4836, 576, 5288, 6073, 9345, 7363, 9066, 2]
 
 // Module 9310 (InstantInviteShareApps)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import InstantInviteConstants from "components/InstantInviteConstants" /* 9311 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const InstantInviteConstants = fn(9311);
-({ SHARE_ITEMS: closure_7, SHARE_ITEMS_DEFAULT: closure_8 } = InstantInviteConstants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { contentContainer: { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, alignItems: "center" } };
+let dependencyMap, type;
+
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
+({ SHARE_ITEMS: metroImportDefault, SHARE_ITEMS_DEFAULT: metroImportAll } = InstantInviteConstants);
+const jsx = Fragment.jsx;
+let obj = { contentContainer: obj2 };
+obj2 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, alignItems: "center" };
 let closure_10 = createStyles.createStyles(obj);
-let obj3 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, alignItems: "center" };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
-
-export default noop.memo(function InstantInviteShareApps(onItemPressed) {
+const memoResult = react.memo(function InstantInviteShareApps(onItemPressed) {
+  let _undefined;
+  let arr;
+  let c2;
   onItemPressed = onItemPressed.onItemPressed;
   dependencyMap = undefined;
-  const tmp = closure_10();
-  closure_1 = onItemPressed(5288).useFontScale();
-  let obj = onItemPressed(5288);
-  [arr, c2] = noop.useState(closure_8);
-  const tmp2 = _slicedToArray(noop.useState(closure_8), 2);
-  const gesture = onItemPressed(6073).useNativeGesture({ disallowInterruption: true });
-  const effect = noop.useEffect(() => {
-    Promise.all(React5.map((isAvailable) => isAvailable.isAvailable)).then((arr) => {
+  const contentContainerStyle = onItemPressed.contentContainerStyle;
+  let tmp = closure_10();
+  const obj = onItemPressed(5288);
+  let closure_1 = obj.useFontScale();
+  const tmp2 = _slicedToArray(react.useState(closure_8), 2);
+  [arr, c2] = tmp2;
+  let obj2 = onItemPressed(6073);
+  const gesture = obj2.useNativeGesture({ disallowInterruption: true });
+  const effect = react.useEffect(() => {
+    const allPromises = Promise.all(metroImportDefault.map((isAvailable) => isAvailable.isAvailable));
+    allPromises.then((arr) => {
       const items = [];
       const item = arr.forEach((item, index) => {
-        if (item) {
+        const tmp = item;
+        if (tmp) {
           items.push(closure_2_7[index]);
         }
       });
       _undefined(items);
     });
   }, []);
-  let obj3 = {
-    contentContainerStyle: null,
-    showsHorizontalScrollIndicator: false,
-    horizontal: true,
-    children: arr.map((type) => {
-      ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
-      const obj = { style: { maxWidth: 76 * closure_1 }, children: null };
-      if (null != fullIcon) {
-        const obj3 = {
-          image: fullIcon,
-          label: getLabel(),
-          onPress() {
-              return onItemPressed(closure_1_0);
-            },
-          maxFontSizeMultiplier: 2
-        };
-        let tmpResult = tmp(onItemPressed(_undefined[9]).ImageButton, obj3);
-      } else {
-        if (null == IconComponent) {
-          if (icon == null) {
-            icon = closure_1(tmp4[11]);
-          }
-          IconComponent = icon;
-        }
-        const obj4 = {
-          variant: "secondary",
-          icon: IconComponent,
-          label: getLabel(),
-          onPress() {
-              return onItemPressed(closure_1_0);
-            },
-          maxFontSizeMultiplier: 2
-        };
-        tmpResult = tmp(onItemPressed(_undefined[10]).IconButton, obj4);
-        tmp4 = _undefined;
-      }
-      obj.children = tmpResult;
-      return <closure_1_5 key={arg0.type} style={{ maxWidth: 76 * closure_1 }}>{null}</closure_1_5>;
-    })
-  };
-  let items = [tmp.contentContainer, onItemPressed.contentContainerStyle];
-  obj3.contentContainerStyle = items;
-  const children = <closure_6 contentContainerStyle={null} showsHorizontalScrollIndicator={false} horizontal>{arr.map((type) => {
+  let items = [tmp.contentContainer, contentContainerStyle];
+  const children = <closure_6 contentContainerStyle={items} showsHorizontalScrollIndicator={false} horizontal>{arr.map((type) => {
+    let IconComponent;
+    let fullIcon;
+    let getLabel;
+    let icon;
+    let tmpResult;
     ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
-    const obj = { style: { maxWidth: 76 * closure_1 }, children: null };
+    type = type.type;
+    const obj2 = { maxWidth: 76 * closure_1 };
     if (null != fullIcon) {
       const obj3 = {
         image: fullIcon,
         label: getLabel(),
         onPress() {
-            return onItemPressed(closure_1_0);
+            return onItemPressed(onItemPressed);
           },
         maxFontSizeMultiplier: 2
       };
-      let tmpResult = tmp(onItemPressed(_undefined[9]).ImageButton, obj3);
+      const ImageButton = onItemPressed(c2[9]).ImageButton;
+      tmpResult = tmp(ImageButton, obj3);
     } else {
+      const IconButton = onItemPressed(c2[10]).IconButton;
+      const tmp4 = c2;
       if (null == IconComponent) {
         if (icon == null) {
           icon = closure_1(tmp4[11]);
@@ -108,15 +88,16 @@ export default noop.memo(function InstantInviteShareApps(onItemPressed) {
         icon: IconComponent,
         label: getLabel(),
         onPress() {
-            return onItemPressed(closure_1_0);
+            return onItemPressed(onItemPressed);
           },
         maxFontSizeMultiplier: 2
       };
-      tmpResult = tmp(onItemPressed(_undefined[10]).IconButton, obj4);
-      tmp4 = _undefined;
+      tmpResult = tmp(IconButton, obj4);
     }
-    obj.children = tmpResult;
-    return <closure_1_5 key={arg0.type} style={{ maxWidth: 76 * closure_1 }}>{null}</closure_1_5>;
+    return <tmp2 key={type} style={obj2}>{tmpResult}</tmp2>;
   })}</closure_6>;
   return jsx(onItemPressed(6073).GestureDetector, { gesture, children });
 });
+const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
+
+export default memoResult;

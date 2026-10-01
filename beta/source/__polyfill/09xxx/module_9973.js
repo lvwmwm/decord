@@ -3,17 +3,17 @@
 // Dependencies: [41, 42, 9965, 9922]
 
 // Module 9973
-import alphaNum from "alphaNum" /* 9965 */;
+import NUMBER from "NUMBER" /* 9965 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-const JPWeekdayWithParenthesesParser = require;
-const keys = Object.keys(alphaNum.WEEKDAY_OFFSET);
+let tmp;
+const _mod9922 = tmp(9922);
+const keys = Object.keys(NUMBER.WEEKDAY_OFFSET);
 const regExp = new RegExp("(?:\\(|\\\uFF08)(?<weekday>" + keys.join("|") + ")(?:\\)|\\\uFF09)", "i");
 class JPWeekdayWithParenthesesParser {
   constructor() {
-    tmp = c2(this, JPWeekdayWithParenthesesParser);
-    return;
+    _classCallCheck(this, JPWeekdayWithParenthesesParser);
   }
 }
 const entry = {
@@ -27,10 +27,10 @@ const items = [
   {
     key: "extract",
     value: function extract(reference, arg1) {
-      const tmp3 = JPWeekdayWithParenthesesParser(9965).WEEKDAY_OFFSET[arg1.groups.weekday];
+      const tmp3 = NUMBER.WEEKDAY_OFFSET[arg1.groups.weekday];
       let parsingComponentsAtWeekday = null;
       if (undefined !== tmp3) {
-        parsingComponentsAtWeekday = JPWeekdayWithParenthesesParser(9922).createParsingComponentsAtWeekday(reference.reference, tmp3);
+        parsingComponentsAtWeekday = _mod9922.createParsingComponentsAtWeekday(reference.reference, tmp3);
       }
       return parsingComponentsAtWeekday;
     }

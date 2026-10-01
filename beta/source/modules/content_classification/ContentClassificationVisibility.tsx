@@ -5,25 +5,27 @@
 // Exports: getContentClassificationVisibility, useContentClassificationVisibility
 
 // Module 11421 (ContentClassificationVisibility)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import ContentClassificationToAgeRestriction from "ContentClassificationToAgeRestriction" /* 5425 */;
 import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5427 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 const ContentClassificationVisibility = { DISPLAY: "display", BLOCK_UNDERAGE: "block_underage", BLOCK_CHANNEL_RESTRICTION: "block_channel_restriction" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/content_classification/ContentClassificationVisibility.tsx");
 
 export { ContentClassificationVisibility };
 export const getContentClassificationVisibility = function getContentClassificationVisibility(contentClassification, channel, nsfwAllowed) {
+  let obj;
   if (null != contentClassification) {
-    const obj = ContentClassificationToAgeRestriction;
-    const obj2 = { type: ContentClassificationToAgeRestriction.ContentClassificationVariant.MINIMAL, data: contentClassification };
-    const result = obj.contentClassificationToAgeRestriction(obj2);
+    let DISPLAY;
+    obj = { type: ContentClassificationToAgeRestriction.ContentClassificationVariant.MINIMAL, data: contentClassification };
+    const contentClassificationToAgeRestriction = ContentClassificationToAgeRestriction.contentClassificationToAgeRestriction;
+    ContentClassificationToAgeRestriction;
+    const result = contentClassificationToAgeRestriction(obj);
     if (result === AgeRestrictionStatus.AgeRestrictionStatus.ADULT) {
       if (true !== nsfwAllowed) {
-        let DISPLAY = obj.BLOCK_UNDERAGE;
+        DISPLAY = obj.BLOCK_UNDERAGE;
       } else {
         if (!channel.isPrivate()) {
           if (!channel.nsfw) {
@@ -38,14 +40,18 @@ export const getContentClassificationVisibility = function getContentClassificat
   DISPLAY = obj.DISPLAY;
 };
 export const useContentClassificationVisibility = function useContentClassificationVisibility(data, isPrivate) {
-  initialize;
+  let obj;
+  get_initialized;
   [][0] = UserStore;
   if (null != data) {
-    const obj = { type: tmp(5425).ContentClassificationVariant.MINIMAL, data };
-    const result = tmp(5425).contentClassificationToAgeRestriction(obj);
-    if (result === tmp(5427).AgeRestrictionStatus.ADULT) {
+    let DISPLAY;
+    obj = { type: ContentClassificationToAgeRestriction.ContentClassificationVariant.MINIMAL, data };
+    const contentClassificationToAgeRestriction = ContentClassificationToAgeRestriction.contentClassificationToAgeRestriction;
+    ContentClassificationToAgeRestriction;
+    const result = contentClassificationToAgeRestriction(obj);
+    if (result === AgeRestrictionStatus.AgeRestrictionStatus.ADULT) {
       if (true !== tmp4) {
-        let DISPLAY = obj.BLOCK_UNDERAGE;
+        DISPLAY = obj.BLOCK_UNDERAGE;
       } else {
         if (!isPrivate.isPrivate()) {
           if (!isPrivate.nsfw) {

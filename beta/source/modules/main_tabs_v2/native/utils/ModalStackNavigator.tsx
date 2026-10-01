@@ -4,67 +4,50 @@
 // Dependencies: [19, 21, 7339, 6421, 7288, 10386, 1364, 2]
 
 // Module 10385 (ModalStackNavigator)
-import Navigator from "Navigator" /* 6421 */;
+import Fragment from "Fragment" /* 21 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import Navigator2 from "Navigator" /* 6421 */;
 import HeaderShared from "HeaderShared" /* 7288 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10386 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import NativeStackView from "NativeStackView" /* 7339 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const NativeStackNavigator = fn(7339);
-let closure_4 = NativeStackNavigator.createNativeStackNavigator();
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/utils/ModalStackNavigator.tsx");
+const require = globalThis.__r;
+let dependencyMap;
 
-export default noop.memo(function ModalStackNavigator(children) {
-  ({ screenKey, title: require, titleIcon: importDefault } = children);
-  dependencyMap = Navigator.useAccessibilityNativeStackOptions();
-  const obj2 = {
-    initialRouteName: screenKey,
-    screenOptions(navigation) {
-      const obj = {
-        headerTitle(children) {
-          const merged = Object.assign(children, Object.assign({ children: 0 }));
-          const merged1 = Object.assign(merged);
-          return jsx(title(closure_2[4]).GenericHeaderTitle, { title: children.children, icon });
-        },
-        headerLeft: HeaderShared.getRenderModalCloseImage(navigation.navigation),
-        headerTitleAlign: "center"
-      };
-      let merged = Object.assign(closure_2);
-      let merged1 = Object.assign(getNavigationModalPresentationDefault());
-      return obj;
-    },
-    children: <closure_4.Screen name={screenKey} options={function options() {
-      const obj = { title, orientation: null };
-      let str;
-      if (obj2.isIOS()) {
-        str = "portrait";
-      }
-      obj.orientation = str;
-      return obj;
-    }}>{arg0.render}</closure_4.Screen>
-  };
-  return <closure_4.Navigator initialRouteName={screenKey} screenOptions={function screenOptions(navigation) {
+const jsx = Fragment.jsx;
+let Navigator = NativeStackView.createNativeStackNavigator();
+const memoResult = react.memo(function ModalStackNavigator(render) {
+  let closure_2;
+  let screenKey;
+  let title;
+  ({ screenKey, title: require, titleIcon: importDefault } = render);
+  render = render.render;
+  let obj = Navigator2;
+  dependencyMap = obj.useAccessibilityNativeStackOptions();
+  Navigator = Navigator.Navigator;
+  return <Navigator initialRouteName={screenKey} screenOptions={function screenOptions(navigation) {
+    let icon;
+    let obj2;
     const obj = {
       headerTitle(children) {
+        children = children.children;
         const merged = Object.assign(children, Object.assign({ children: 0 }));
+        const GenericHeaderTitle = require("HeaderShared").GenericHeaderTitle;
         const merged1 = Object.assign(merged);
-        return jsx(title(closure_2[4]).GenericHeaderTitle, { title: children.children, icon });
+        return <GenericHeaderTitle title={children} icon={icon} />;
       },
-      headerLeft: HeaderShared.getRenderModalCloseImage(navigation.navigation),
+      headerLeft: obj2.getRenderModalCloseImage(navigation),
       headerTitleAlign: "center"
     };
+    navigation = navigation.navigation;
+    obj2 = HeaderShared;
     let merged = Object.assign(closure_2);
     let merged1 = Object.assign(getNavigationModalPresentationDefault());
     return obj;
-  }}><closure_4.Screen name={screenKey} options={function options() {
-    const obj = { title, orientation: null };
-    let str;
-    if (obj2.isIOS()) {
-      str = "portrait";
-    }
-    obj.orientation = str;
-    return obj;
-  }}>{arg0.render}</closure_4.Screen></closure_4.Navigator>;
+  }}>{null}</Navigator>;
 });
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/utils/ModalStackNavigator.tsx");
+
+export default memoResult;

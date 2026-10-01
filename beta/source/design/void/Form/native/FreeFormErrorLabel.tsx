@@ -5,28 +5,27 @@
 // Exports: default
 
 // Module 6360 (FreeFormErrorLabel)
+import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 4685 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/void/Form/native/FreeFormErrorLabel.tsx");
 
-export default function Label(style) {
-  const children = style.children;
+export default function Label(children) {
+  children = children.children;
   let nodeText;
-  nodeText = nodeText(4533).getNodeText(children);
+  const style = children.style;
+  const obj = nodeText(4533);
+  nodeText = obj.getNodeText(children);
   const items = [nodeText];
-  const effect = noop.useEffect(() => {
-    let tmp2 = null != nodeText;
-    if (tmp2) {
-      tmp2 = "" !== tmp;
-    }
+  const effect = react.useEffect(() => {
+    const tmp2 = null != nodeText && "" !== tmp;
     if (tmp2) {
       const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
-      AccessibilityAnnouncer.announce(tmp);
+      AccessibilityAnnouncer.announce(nodeText);
     }
   }, items);
-  return jsx(nodeText(4832).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+  return jsx(nodeText(4832).Text, { style, variant: "text-xs/medium", color: "text-feedback-critical", children });
 };

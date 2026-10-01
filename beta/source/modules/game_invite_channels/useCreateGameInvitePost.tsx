@@ -5,34 +5,53 @@
 // Exports: useCreateGameInvitePost
 
 // Module 12288 (useCreateGameInvitePost)
+import Constants from "Constants" /* 1074 */;
 import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6690 */;
 import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11261 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import LocalActivityStore from "LocalActivityStore" /* 8814 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ActivityActionTypes = fn(1074).ActivityActionTypes;
-const size = fn(2);
+let c1, c3;
+
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const ActivityActionTypes = Constants.ActivityActionTypes;
 const result = size.fileFinishedImporting("modules/game_invite_channels/useCreateGameInvitePost.tsx");
 
 export const useCreateGameInvitePost = function useCreateGameInvitePost(appliedTagIds) {
+  let _undefined;
+  let c4;
+  let closure_5;
+  let description;
+  let id;
+  let noMicTag;
+  let onThreadCreated;
+  let parentChannel;
+  let tmp12;
+  let tmpResult2;
+  let upload;
+  let voiceToggleDisabled;
   ({ parentChannel, description } = appliedTagIds);
   appliedTagIds = appliedTagIds.appliedTagIds;
   let stateFromStores;
   let createForumPostCommon;
   _slicedToArray = undefined;
-  noop = undefined;
+  react = undefined;
+  const tmp = description;
+  const tmp2 = stateFromStores;
   ({ upload, onThreadCreated } = appliedTagIds);
-  const application = description(stateFromStores[6]).useGameInvitesChannelOfficialApplication(parentChannel.id).application;
   let obj = description(stateFromStores[6]);
-  const applicationIdsForGame = description(stateFromStores[7]).useApplicationIdsForGame(parentChannel.gameId);
+  const application = obj.useGameInvitesChannelOfficialApplication(parentChannel.id).application;
   let obj2 = description(stateFromStores[7]);
+  const applicationIdsForGame = obj2.useApplicationIdsForGame(parentChannel.gameId);
+  let obj3 = description(stateFromStores[8]);
   const items = [LocalActivityStore, SelfPresenceStore];
   const items1 = [applicationIdsForGame];
-  stateFromStores = description(stateFromStores[8]).useStateFromStores(items, () => {
+  stateFromStores = obj3.useStateFromStores(items, () => {
     const obj = applicationIdsForGame[Symbol.iterator]();
     while (obj !== undefined) {
       let tmp7 = getCurrentUserPresenceActivityDefault(LocalActivityStore, SelfPresenceStore, tmp2);
@@ -47,63 +66,57 @@ export const useCreateGameInvitePost = function useCreateGameInvitePost(appliedT
     }
     return null;
   }, items1);
-  let obj3 = description(stateFromStores[8]);
+  let tmp5 = description(stateFromStores[6]);
   let availableTags = parentChannel.availableTags;
+  const useGameInviteVoiceChatState = tmp5.useGameInviteVoiceChatState;
   if (availableTags == null) {
     availableTags = [];
   }
-  const gameInviteVoiceChatState = description(stateFromStores[6]).useGameInviteVoiceChatState(availableTags, appliedTagIds);
+  const gameInviteVoiceChatState = useGameInviteVoiceChatState(availableTags, appliedTagIds);
   const voiceChatEnabled = gameInviteVoiceChatState.voiceChatEnabled;
+  let obj4 = react;
   const items2 = [stateFromStores];
   ({ noMicTag, voiceToggleDisabled } = gameInviteVoiceChatState);
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     if (null != stateFromStores) {
-      if (obj.canInviteToActivity(tmp)) {
-        const obj2 = { type: ActivityActionTypes.JOIN, activity: tmp };
-        return obj2;
+      const obj = GameInvitesChannelUtils;
+      if (obj.canInviteToActivity(stateFromStores)) {
+        return { type: ActivityActionTypes.JOIN, activity: stateFromStores };
       }
-      obj = GameInvitesChannelUtils;
     }
   }, items2);
-  let obj4 = description(stateFromStores[6]);
-  const obj6 = { parentChannel, name: null, appliedTags: null, activityAction: null, applicationId: null, voiceChatEnabled: null, upload: null, onThreadCreated: null };
-  const tmpResult = description(stateFromStores[10]);
-  obj6.name = description(stateFromStores[6]).deriveThreadName(description);
-  obj6.appliedTags = appliedTagIds;
-  obj6.activityAction = memo;
-  let id;
+  const obj5 = { parentChannel, name: tmpResult2.deriveThreadName(description), appliedTags: appliedTagIds, activityAction: memo, applicationId: id, voiceChatEnabled, upload, onThreadCreated };
+  const useCreateForumPostCommon = tmp(tmp2[10]).useCreateForumPostCommon;
+  tmp(tmp2[10]);
+  id = undefined;
+  tmpResult2 = tmp(tmp2[6]);
   if (application != null) {
     id = application.id;
   }
-  obj6.applicationId = id;
-  obj6.voiceChatEnabled = voiceChatEnabled;
-  obj6.upload = upload;
-  obj6.onThreadCreated = onThreadCreated;
-  createForumPostCommon = tmpResult.useCreateForumPostCommon(obj6);
-  const tmpResult2 = description(stateFromStores[6]);
-  [tmp10, c4] = noop.useState(false);
-  let tmp11 = !tmp10;
-  if (!tmp10) {
-    tmp11 = description.trim().length > 0;
+  createForumPostCommon = useCreateForumPostCommon(obj5);
+  let tmp11 = _slicedToArray(obj4.useState(false), 2);
+  [tmp12, c4] = tmp11;
+  let tmp13 = !tmp12;
+  if (tmp13) {
+    tmp13 = description.trim().length > 0;
   }
-  if (tmp11) {
-    tmp11 = description.length <= tmp(tmp2[6]).GAME_INVITE_POST_MESSAGE_MAX_LENGTH;
+  if (tmp13) {
+    tmp13 = description.length <= tmp(tmp2[6]).GAME_INVITE_POST_MESSAGE_MAX_LENGTH;
   }
-  noop = tmp11;
-  const items3 = [tmp11, createForumPostCommon, description];
-  let tmp9 = _slicedToArray(noop.useState(false), 2);
-  return {
+  react = tmp13;
+  const items3 = [tmp13, createForumPostCommon, description];
+  const obj6 = {
     application,
     noMicTag,
     voiceChatEnabled,
     voiceToggleDisabled,
-    submitting: tmp10,
-    canSubmit: tmp11,
-    submit: noop.useCallback(createForumPostCommon(function*(arg0, value) {
+    submitting: tmp12,
+    canSubmit: tmp13,
+    submit: obj4.useCallback(createForumPostCommon(function*(arg0, value) {
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -113,6 +126,7 @@ export const useCreateGameInvitePost = function useCreateGameInvitePost(appliedT
           return { value: "HermesInternal", done: null };
         }
       } else {
+        let c2;
         try {
           c3 = 2;
           if (0 === c1) {
@@ -124,8 +138,9 @@ export const useCreateGameInvitePost = function useCreateGameInvitePost(appliedT
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              closure_0 = tmp3;
-              if (closure_5) {
+              let closure_0 = tmp;
+              const tmp8 = closure_5;
+              if (tmp8) {
                 _undefined(true);
                 c2 = 1;
                 c1 = 2;
@@ -134,31 +149,32 @@ export const useCreateGameInvitePost = function useCreateGameInvitePost(appliedT
                 return obj4;
               }
             }
-          } else {
-            if (1 === tmp7) {
-              c2 = 0;
-              closure_128_4(false);
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              c2 = 0;
-            }
+          } else if (1 === tmp4) {
+            c2 = 0;
+            closure_128_4(false);
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
             c2 = 0;
             c3 = 3;
             const obj = { value, done: true };
             return obj;
+          } else {
+            c2 = 0;
           }
           c3 = 3;
-        } catch (tmp16) {
-          if (tmp4 === c2) {
-            c3 = tmp2;
-            throw tmp16;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp13) {
+          if (0 === c2) {
+            c3 = 3;
+            throw tmp13;
           } else {
-            c1 = tmp;
+            c1 = 1;
           }
         }
       }
     }), items3)
   };
+  return obj6;
 };

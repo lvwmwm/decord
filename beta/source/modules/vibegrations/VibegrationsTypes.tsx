@@ -14,6 +14,7 @@ let c3 = 52428800;
 const items = [{ id: "claude-fable-5-1", label: "Claude Fable 5.1", provider: "anthropic" }, { id: "claude-opus-5-5", label: "Claude Opus 5.5", provider: "anthropic" }, { id: "claude-sonnet-5", label: "Claude Sonnet 5", provider: "anthropic" }, { id: "claude-haiku-4-5", label: "Claude Haiku 4.5", provider: "anthropic" }, { id: "gpt-6-astra", label: "GPT-6 Astra", provider: "openai", supports_fast: true }, { id: "gpt-6-sol", label: "GPT-6 Sol", provider: "openai", supports_fast: true }, { id: "gpt-6-luna", label: "GPT-6 Luna", provider: "openai", supports_fast: true }, { id: "xai/grok-4.7", label: "Grok 4.7", provider: "xai" }];
 let obj = { main: items, subagent: items, thinking: ["low", "medium", "high", "xhigh", "max"] };
 const items1 = [{ id: "deepseek/deepseek-flash", label: "DeepSeek V4.1 Flash", provider: "deepseek" }, { id: "moonshotai/kimi-k3", label: "Kimi K3", provider: "moonshotai" }];
+const obj2 = { main: items1, subagent: items1, thinking: obj.thinking };
 const result = size.fileFinishedImporting("modules/vibegrations/VibegrationsTypes.tsx");
 
 export const UNNAMED_PROJECT_NAME = "Untitled App";
@@ -77,11 +78,11 @@ export const vibegrationsAttachmentLimit = function vibegrationsAttachmentLimit(
 export const isVibegrationsAttachmentWithinLimit = function isVibegrationsAttachmentWithinLimit(size, contentType) {
   return size <= (set.has(contentType) ? c2 : c3);
 };
-export const formatVibegrationsAttachmentLimit = function formatVibegrationsAttachmentLimit(tmp6Result2) {
-  return "" + Math.round(tmp6Result2 / 1048576) + " MB";
+export const formatVibegrationsAttachmentLimit = function formatVibegrationsAttachmentLimit(tmp7Result2) {
+  return "" + Math.round(tmp7Result2 / 1048576) + " MB";
 };
 export const VIBEGRATIONS_MODEL_TIERS = ["simple", "balanced", "complex"];
 export const VIBEGRATIONS_FALLBACK_MODEL_CHOICES = obj;
-export const VIBEGRATIONS_DEV_FALLBACK_MODEL_CHOICES = { main: items1, subagent: items1, thinking: obj.thinking };
+export const VIBEGRATIONS_DEV_FALLBACK_MODEL_CHOICES = obj2;
 export const VIBEGRATIONS_DEFAULT_TIER_SETTINGS = { tier: "balanced", provider: "openai" };
 export const VIBEGRATIONS_LANDING_TIER_SEATS = { simple: { model: "gpt-6-luna", thinking: "high" }, balanced: { model: "gpt-6-sol", thinking: "high" }, complex: { model: "gpt-6-astra", thinking: "high" } };

@@ -5,17 +5,17 @@
 // Exports: useFocus
 
 // Module 4537 (useFocus)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("design/utils/native/useFocus.native.tsx");
 
 export const useFocus = function useFocus() {
-  const tmp = _slicedToArray(noop.useState(false), 2);
-  closure_0 = tmp[1];
-  return {
-    focusProps: noop.useMemo(() => ({
+  const tmp = _slicedToArray(react.useState(false), 2);
+  let closure_0 = tmp[1];
+  const obj = {
+    focusProps: react.useMemo(() => ({
       onFocus() {
         return closure_1_0(true);
       },
@@ -25,4 +25,5 @@ export const useFocus = function useFocus() {
     }), []),
     isFocused: tmp[0]
   };
+  return obj;
 };

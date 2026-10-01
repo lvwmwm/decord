@@ -7,18 +7,20 @@
 // Module 10967 (useAllowedChatOverlays)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4458 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8502 */;
 import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 8803 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 10965 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ChatOverlays = fn(10965).ChatOverlays;
-const ActivityPanelModes = fn(8502).ActivityPanelModes;
+let items;
+const ChatOverlays = ChatOverlayConstants.ChatOverlays;
+const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const no_text_activity = "no_text_activity";
-let obj = { no_text_activity: null };
-let items = [, , ];
+let obj = { no_text_activity: items };
+items = [, , ];
 ({ NEW_MESSAGES: arr[0], OPT_IN_CHANNEL: arr[1], SUMMARIES: arr[2] } = ChatOverlays);
-obj.no_text_activity = items;
 let items1 = [, , ];
 ({ NEW_MESSAGES: arr2[0], OPT_IN_CHANNEL: arr2[1], SUMMARIES: arr2[2] } = ChatOverlays);
 obj[ActivityPanelModes.DISCONNECTED] = items1;
@@ -32,7 +34,6 @@ obj[ActivityPanelModes.PIP] = items3;
 const items4 = [, , ];
 ({ NEW_MESSAGES: arr5[0], OPT_IN_CHANNEL: arr5[1], SUMMARIES: arr5[2] } = ChatOverlays);
 obj[ActivityPanelModes.ACTIVITY_POPOUT_WINDOW] = items4;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/useAllowedChatOverlays.tsx");
 
 export default function useAllowedChatOverlays() {
@@ -40,14 +41,16 @@ export default function useAllowedChatOverlays() {
   const items = [EmbeddedActivitiesStore];
   const stateFromStores = obj.useStateFromStores(items, () => EmbeddedActivitiesStore.getCurrentEmbeddedActivity());
   const items1 = [EmbeddedActivitiesStore];
-  const stateFromStores1 = useStateFromStores.useStateFromStores(items1, () => EmbeddedActivitiesStore.getActivityPanelMode());
+  const obj2 = useStateFromStores;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => EmbeddedActivitiesStore.getActivityPanelMode());
   embeddedActivityLocationUtils;
   if (stateFromStores != null) {
     const _location = stateFromStores.location;
   }
   if (undefined !== stateFromStores) {
+    let tmp9;
     if (!isVoiceEmbeddedActivityDefault(tmp5, ChannelStore)) {
-      let tmp9 = obj[stateFromStores1];
+      tmp9 = obj[stateFromStores1];
     }
     return tmp9;
   }

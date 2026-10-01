@@ -4,19 +4,20 @@
 // Dependencies: [32, 2045, 6529, 5056, 1370, 504, 573, 2]
 
 // Module 6528 (AuthorizedAppsStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import ConnectedAppsStore from "ConnectedAppsStore" /* 6529 */;
 import MessageStore from "MessageStore" /* 5056 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const f82413 = (application) => null == application.application.parent_id;
 function recomputeFromAppTokens() {
   const items = [...map.values()];
   closure_8 = items;
-  closure_9 = items.filter((application) => null == application.application.parent_id);
+  closure_9 = items.filter(f82413);
 }
 function updateFetchStates(FETCHED, applicationIds) {
   if (null == applicationIds) {
@@ -39,50 +40,51 @@ let closure_9 = [];
 let NOT_FETCHED = FetchState.NOT_FETCHED;
 const map1 = new Map();
 let closure_12 = 0;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class AuthorizedAppsStore extends Store {
+  initialize() {
+    this.waitFor(ChannelStore, ConnectedAppsStore, MessageStore);
+  }
+  getNewestTokenForApplication(id) {
+    let tmp = null;
+    if (null != id) {
+      let value = map.get(id);
+      if (value == null) {
+        value = null;
+      }
+      tmp = value;
+    }
+    return tmp;
+  }
+  getNewestTokens() {
+    return closure_8;
+  }
+  getNewestTokensForNonChildrenApplications() {
+    return closure_9;
+  }
+  getFetchState() {
+    return NOT_FETCHED;
+  }
+  getFetchStateForApplication(arg0) {
+    if (NOT_FETCHED !== obj.FETCHING) {
+      let value;
+      if (NOT_FETCHED !== tmp.FETCHED) {
+        value = map1.get(arg0);
+        if (value == null) {
+          value = NOT_FETCHED;
+        }
+      }
+      return value;
+    }
+    value = NOT_FETCHED;
+  }
+  getApplicationFetchStateVersion() {
+    return closure_12;
+  }
 }
 const prototype = AuthorizedAppsStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(ChannelStore, ConnectedAppsStore, MessageStore);
-};
-prototype["getNewestTokenForApplication"] = function getNewestTokenForApplication(applicationId) {
-  let tmp = null;
-  if (null != applicationId) {
-    value = map.get(applicationId);
-    if (value == null) {
-      value = null;
-    }
-    tmp = value;
-  }
-  return tmp;
-};
-prototype["getNewestTokens"] = function getNewestTokens() {
-  return closure_8;
-};
-prototype["getNewestTokensForNonChildrenApplications"] = function getNewestTokensForNonChildrenApplications() {
-  return closure_9;
-};
-prototype["getFetchState"] = function getFetchState() {
-  return NOT_FETCHED;
-};
-prototype["getFetchStateForApplication"] = function getFetchStateForApplication(arg0) {
-  if (NOT_FETCHED !== obj.FETCHING) {
-    if (NOT_FETCHED !== tmp.FETCHED) {
-      value = map1.get(arg0);
-      if (value == null) {
-        value = NOT_FETCHED;
-      }
-    }
-    return value;
-  }
-  value = NOT_FETCHED;
-};
-prototype["getApplicationFetchStateVersion"] = function getApplicationFetchStateVersion() {
-  return closure_12;
-};
 AuthorizedAppsStore.displayName = "AuthorizedAppsStore";
-const authorizedAppsStore = new AuthorizedAppsStore(DispatcherDefault, {
+const obj2 = {
   USER_AUTHORIZED_APPS_REQUEST: function handleUserAuthorizedAppsRequest(request) {
     if ("full" === request.request.type) {
       updateFetchStates(obj.FETCHING);
@@ -90,13 +92,14 @@ const authorizedAppsStore = new AuthorizedAppsStore(DispatcherDefault, {
       updateFetchStates(obj.FETCHING, request.request.applicationIds);
     }
   },
-  USER_AUTHORIZED_APPS_REQUEST_CANCELLED: function handleUserAuthorizedAppsRequestCancelled(arg0) {
+  USER_AUTHORIZED_APPS_REQUEST_CANCELLED: function handleUserAuthorizedAppsRequestCancelled(applicationIds) {
     let flag = false;
-    for (const item10008 of tmp) {
+    applicationIds = applicationIds.applicationIds;
+    for (const item10008 of applicationIds) {
       let obj = map1;
-      let tmp2 = item10008;
+      let tmp = item10008;
       if (map1.get(item10008) === obj.FETCHING) {
-        let deleteResult = obj.delete(tmp2);
+        let deleteResult = obj.delete(tmp);
         flag = true;
       }
       continue;
@@ -113,17 +116,21 @@ const authorizedAppsStore = new AuthorizedAppsStore(DispatcherDefault, {
     }
   },
   USER_AUTHORIZED_APPS_UPDATE: function handleAuthorizedAppsUpdate(isFullFetch) {
+    let tmp12;
+    let tmp13;
     const FETCHED = obj.FETCHED;
     if (isFullFetch.isFullFetch) {
-      tmp(FETCHED);
+      updateFetchStates(FETCHED);
       const _Map = Map;
       const _Object3 = Object;
       const entries = Object.entries(isFullFetch.tokens);
+      const self = this;
+      const self2 = this;
       map = new Map(entries.filter(GlobalUtils.isObjectEntryNotNullish));
       recomputeFromAppTokens();
     } else {
       const _Object = Object;
-      tmp(FETCHED, Object.keys(isFullFetch.tokens));
+      updateFetchStates(FETCHED, Object.keys(isFullFetch.tokens));
       const _Object2 = Object;
       const entries1 = Object.entries(isFullFetch.tokens);
       const tmp5 = entries1[Symbol.iterator]();
@@ -142,34 +149,36 @@ const authorizedAppsStore = new AuthorizedAppsStore(DispatcherDefault, {
   },
   OAUTH2_TOKEN_CREATE: function handleOAuth2TokenCreate(application) {
     application = application.application;
-    const result = map.set(application.id, { id: application.id, application, scopes: application.scopes });
+    const obj = { id: application.id, application, scopes: application.scopes };
+    const result = map.set(application.id, obj);
     const items = [...map.values()];
     closure_8 = items;
-    closure_9 = items.filter((application) => null == application.application.parent_id);
+    closure_9 = items.filter(f82413);
   },
-  OAUTH2_TOKEN_DELETE: function handleOAuth2TokenDelete(applicationId) {
-    value = map.get(applicationId.applicationId);
+  OAUTH2_TOKEN_DELETE: function handleOAuth2TokenDelete(id) {
+    id = id.id;
+    const value = map.get(id.applicationId);
     if (null != value) {
-      if (value.id === applicationId.id) {
+      if (value.id === id) {
         map.delete(value.application.id);
         const items = [];
-        HermesBuiltin.arraySpread(map.values(), 0);
+        HermesBuiltin.arraySpread(items, map.values(), 0);
         closure_8 = items;
-        closure_9 = items.filter((application) => null == application.application.parent_id);
+        closure_9 = items.filter(f82413);
       }
     }
     return false;
   },
   LOGOUT: function handleLogout() {
-    map = new Map();
+    new Map();
     closure_8 = [];
     closure_9 = [];
     NOT_FETCHED = obj.NOT_FETCHED;
     map1.clear();
     closure_12 = closure_12 + 1;
   }
-});
-const size = fn(2);
+};
+const authorizedAppsStore = new AuthorizedAppsStore(DispatcherDefault, obj2);
 let result = size.fileFinishedImporting("modules/oauth2/AuthorizedAppsStore.tsx");
 
 export default authorizedAppsStore;

@@ -9,11 +9,12 @@ import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 *
 import ChannelStore from "ChannelStore" /* 2045 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/calls/toggleVoiceChannelChat.tsx");
 
 export const toggleVoiceChannelChat = function toggleVoiceChannelChat(open) {
+  const obj = RTCConnectionStore;
   if (RTCConnectionStore.isConnected()) {
     const channelId = obj.getChannelId();
     if (null == channelId) {
@@ -26,9 +27,9 @@ export const toggleVoiceChannelChat = function toggleVoiceChannelChat(open) {
           if (open == null) {
             tmp3 = !ChannelRTCStore.getChatOpen(channelId);
           }
-          ChannelRTCActionCreatorsDefault.updateChatOpen(channelId, tmp3);
-          const obj2 = { channelId, chatOpen: tmp3 };
-          return obj2;
+          const obj3 = ChannelRTCActionCreatorsDefault;
+          obj3.updateChatOpen(channelId, tmp3);
+          return { channelId, chatOpen: tmp3 };
         }
       }
       return null;
@@ -36,5 +37,4 @@ export const toggleVoiceChannelChat = function toggleVoiceChannelChat(open) {
   } else {
     return null;
   }
-  obj = RTCConnectionStore;
 };

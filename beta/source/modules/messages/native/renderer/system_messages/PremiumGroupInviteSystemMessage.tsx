@@ -8,31 +8,34 @@
 import nativeDefault from "native" /* 576 */;
 import createCommonMessageDefault from "createCommonMessage" /* 7406 */;
 import PremiumGroupInviteEmbed from "PremiumGroupInviteEmbed" /* 7491 */;
-import _modDef7495 from "module_7495" /* 7495 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7495 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+let tmp3;
 const renderer_EmbedUtils = tmp3(7388);
-require = fn;
-const createStyles = fn(4836);
-let closure_5 = createStyles.createNativeStyleProperties({ iconTintColor: nativeDefault.colors.ICON_STRONG, iconDividerColor: nativeDefault.colors.ICON_STRONG });
-const size = fn(2);
+let obj = { iconTintColor: nativeDefault.colors.ICON_STRONG, iconDividerColor: nativeDefault.colors.ICON_STRONG };
+let closure_5 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/PremiumGroupInviteSystemMessage.tsx");
 
 export const createPremiumGroupInviteSystemMessage = function createPremiumGroupInviteSystemMessage(message) {
+  let theme;
+  let tmp3Result;
   ({ message, theme } = message);
   const channel = ChannelStore.getChannel(message.getChannelId());
   const id = AuthenticationStore.getId();
-  const premiumGroupInviteEmbed = PremiumGroupInviteEmbed.createPremiumGroupInviteEmbed(message, theme, id, channel);
+  const obj = PremiumGroupInviteEmbed;
+  const premiumGroupInviteEmbed = obj.createPremiumGroupInviteEmbed(message, theme, id, channel);
   if (null == premiumGroupInviteEmbed) {
     return null;
   } else {
-    const obj3 = {};
-    const merged = Object.assign(createCommonMessageDefault(message));
-    obj3.premiumGroupInviteInfo = premiumGroupInviteEmbed;
+    const obj3 = { premiumGroupInviteInfo: premiumGroupInviteEmbed, iconUrl: tmp3Result.getAssetUriForEmbed(AssetRegistryDefault) };
     const tmp7 = closure_5(theme);
-    obj3.iconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef7495);
+    const merged = Object.assign(createCommonMessageDefault(message));
     ({ iconTintColor: obj2.iconTintColor, iconDividerColor: obj2.iconDividerColor } = tmp7);
+    tmp3Result = renderer_EmbedUtils;
     return obj3;
   }
 };

@@ -11,9 +11,14 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/rpc/native/server/transports/WebViewWindowProxySocketFactory.tsx");
 
 export default function _default(logger) {
+  let encoding;
+  let postClose;
+  let postMessageToRPCClient;
+  let source;
+  let version;
   logger = logger.logger;
   ({ source, postMessageToRPCClient, version, encoding, postClose } = logger);
-  return new logger(8779)({
+  const obj = {
     source,
     postMessageToRPCClient,
     version,
@@ -21,8 +26,11 @@ export default function _default(logger) {
     logger,
     postClose,
     onSendingToRPCClient(arg0, id) {
+      const info = logger.info;
       const combined = "Socket Emit: " + id;
-      logger.info(combined, stripSensitiveLoggingDataDefault(arg0));
+      info(combined, stripSensitiveLoggingDataDefault(arg0));
     }
-  });
+  };
+  const tmp = new logger(8779)(obj);
+  return tmp;
 };

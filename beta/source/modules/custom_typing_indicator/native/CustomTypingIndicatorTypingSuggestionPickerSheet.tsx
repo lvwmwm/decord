@@ -5,55 +5,55 @@
 // Exports: default
 
 // Module 14907 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef3717 from "module_3717" /* 3717 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { content: { paddingHorizontal: nativeDefault.space.PX_16 } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let importDefault;
+
+let obj2;
+const jsx = Fragment.jsx;
+const obj = { content: obj2 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorTypingSuggestionPickerSheet.tsx");
 
 export default function CustomTypingIndicatorTypingSuggestionPickerSheet(onChange) {
+  let closure_1;
+  let customTypingIndicatorSuggestionPresets;
+  let first;
+  let intl;
   onChange = onChange.onChange;
-  const tmp2 = _slicedToArray(noop.useState(onChange.initialValue), 2);
-  importDefault = tmp2[1];
-  let obj = { contentStyles: closure_6().content, header: null, dismissAccessibilityLabel: null, children: null };
-  const obj2 = { title: null };
-  let intl = onChange(1115).intl;
-  obj2.title = intl.string(_modDef3717["X+ijyw"]);
-  obj.header = jsx(onChange(6570).BottomSheetTitleHeader, { title: null });
-  const intl2 = onChange(1115).intl;
-  obj.dismissAccessibilityLabel = intl2.string(_modDef3717.hrl2cG);
-  const obj3 = {
-    value: tmp2[0],
-    onChange(arg0) {
-      closure_1(arg0);
-      onChange(arg0);
-    },
-    hasIcons: false,
-    children: null
-  };
+  importDefault = undefined;
+  const initialValue = onChange.initialValue;
   const tmp = closure_6();
-  const customTypingIndicatorSuggestionPresets = onChange(11453).getCustomTypingIndicatorSuggestionPresets();
-  obj3.children = customTypingIndicatorSuggestionPresets.map((value) => {
-    const obj = { value, label: null };
-    const intl = onChange(1115).intl;
-    obj.label = intl.string(onChange(11453).getCustomTypingIndicatorSuggestionMessage(value));
-    return jsx(onChange(6000).TableRadioRow, { value, label: null }, value);
-  });
-  obj.children = jsx(onChange(5997).TableRadioGroup, {
-    value: tmp2[0],
+  [first, importDefault] = react.useState(initialValue);
+  const ActionSheet = onChange(6618).ActionSheet;
+  let obj2 = { title: intl.string(_modDef3717["X+ijyw"]) };
+  const BottomSheetTitleHeader = onChange(6570).BottomSheetTitleHeader;
+  intl = onChange(1115).intl;
+  const intl2 = onChange(1115).intl;
+  ({
+    value: first,
     onChange(arg0) {
       closure_1(arg0);
       onChange(arg0);
     },
     hasIcons: false,
-    children: null
+    children: customTypingIndicatorSuggestionPresets.map((value) => {
+      const TableRadioRow = onChange(dependencyMap[11]).TableRadioRow;
+      const intl = onChange(dependencyMap[7]).intl;
+      const string = intl.string;
+      const obj2 = onChange(dependencyMap[10]);
+      return <TableRadioRow key={arg0} value={arg0} label={string(obj2.getCustomTypingIndicatorSuggestionMessage(arg0))} />;
+    })
   });
-  return jsx(onChange(6618).ActionSheet, { contentStyles: closure_6().content, header: null, dismissAccessibilityLabel: null, children: null });
+  const TableRadioGroup = onChange(5997).TableRadioGroup;
+  const obj4 = onChange(11453);
+  customTypingIndicatorSuggestionPresets = obj4.getCustomTypingIndicatorSuggestionPresets();
+  return <ActionSheet contentStyles={tmp.content} header={null} dismissAccessibilityLabel={intl2.string(_modDef3717.hrl2cG)}>{null}</ActionSheet>;
 };

@@ -5,18 +5,19 @@
 // Exports: default
 
 // Module 9240 (useGameConsoleAccounts)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PlatformTypes = fn(1074).PlatformTypes;
-const size = fn(2);
+const PlatformTypes = Constants.PlatformTypes;
 const result = size.fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");
 
 export default function useGameConsoleAccounts() {
   let items = [ConnectedAccountsStore];
-  return initialize.useStateFromStoresArray(items, () => {
+  const obj = get_initialized;
+  return obj.useStateFromStoresArray(items, () => {
     const items = [ConnectedAccountsStore.getAccount(null, constants.XBOX), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION_STAGING)];
     return items.filter(GlobalUtils.isNotNullish);
   });

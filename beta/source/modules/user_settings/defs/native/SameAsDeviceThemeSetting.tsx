@@ -4,37 +4,42 @@
 // Dependencies: [1182, 7417, 504, 14706, 11006, 1115, 2]
 
 // Module 14849 (SameAsDeviceThemeSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 14706 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.c445ix);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.c445ix);
   },
-  parent: fn(7417).MobileUserSettings.APPEARANCE,
+  parent: MobileUserSettings.APPEARANCE,
   useValue: function useSameAsDeviceThemeValue() {
+    let sameAsDeviceThemeEnabled;
     const items = [ThemeStore];
-    return initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
   },
   onValueChange: function onSameAsDeviceThemeValueChange(arg0) {
     const obj = UserSettingsAppearanceThemeUtils;
-    if (arg0) {
+    const tmp = arg0;
+    if (tmp) {
       const result = obj.enableSameAsDeviceTheme();
     } else {
       const result1 = obj.disableSameAsDeviceTheme();
     }
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t["+tBsvs"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["+tBsvs"]);
   }
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/SameAsDeviceThemeSetting.tsx");
 
 export default toggle;

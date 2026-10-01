@@ -5,31 +5,39 @@
 // Exports: default, getRedirectPath
 
 // Module 16572 (RedirectUnauthenticated)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import ConferenceModeConstants from "ConferenceModeConstants" /* 1081 */;
 import utils_PathUtils from "utils/PathUtils" /* 1083 */;
-import _mod4666 from "module_4666" /* 4666 */;
-import noop from "module_19" /* 19 */;
+import MemoryRouter from "MemoryRouter" /* 4666 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Routes = fn(1074).Routes;
-const CONFERENCE_MODE_ENABLED = fn(1081).CONFERENCE_MODE_ENABLED;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const Routes = Constants.Routes;
+const CONFERENCE_MODE_ENABLED = ConferenceModeConstants.CONFERENCE_MODE_ENABLED;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/auth/RedirectUnauthenticated.tsx");
 
 export default function RedirectUnauthenticated() {
+  let to;
+  const Redirect = MemoryRouter.Redirect;
+  const tmp = jsx;
   if (CONFERENCE_MODE_ENABLED) {
-    let to = Routes.REGISTER;
+    to = Routes.REGISTER;
   } else {
-    to = utils_PathUtils.getLoginPath(tmp4, false);
     const tmp2Result = utils_PathUtils;
+    to = tmp2Result.getLoginPath(tmp4, false);
   }
-  return jsx(_mod4666.Redirect, { to });
+  return tmp(Redirect, { to });
 };
 export const getRedirectPath = function getRedirectPath() {
-  if (CONFERENCE_MODE_ENABLED) {
-    let REGISTER = Routes.REGISTER;
+  let REGISTER;
+  const tmp2 = CONFERENCE_MODE_ENABLED;
+  if (tmp2) {
+    REGISTER = Routes.REGISTER;
   } else {
-    REGISTER = utils_PathUtils.getLoginPath(tmp, false);
+    const obj = utils_PathUtils;
+    REGISTER = obj.getLoginPath(tmp, false);
   }
   return REGISTER;
 };

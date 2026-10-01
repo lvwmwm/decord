@@ -6,80 +6,90 @@
 
 // Module 10121 (MediaKeyboardEmptyState)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl7 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 5045 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
 import SettingsIcon from "SettingsIcon" /* 6798 */;
 import CameraIcon from "CameraIcon" /* 10116 */;
-import _modDef10122 from "module_10122" /* 10122 */;
-import _modDef10123 from "module_10123" /* 10123 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10122 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10123 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c3;
+let closure_4;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
 class MediaKeyboardEmptyState {
   constructor(arg0) {
-    ({ actionIcon, actionLabel, actionPress, imageSource, label } = global);
-    tmp = closure_8();
-    obj = { style: tmp.container, children: null };
-    items = [, , ];
-    items[0] = jsx(Image, { source: imageSource });
-    obj1 = { variant: "text-sm/semibold", color: "text-muted", style: tmp.label, children: label };
-    items[1] = jsx(closure_0(closure_2[6]).Text, obj1);
-    items[2] = jsx(closure_0(closure_2[7]).Button, { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress });
-    obj.children = items;
-    return jsxs(View, obj);
+    let actionIcon;
+    let actionLabel;
+    let actionPress;
+    let imageSource;
+    let items;
+    let label;
+    ({ actionIcon, actionLabel, actionPress, imageSource, label } = arg0);
+    const tmp = closure_8();
+    const obj = { style: tmp.container, children: items };
+    items = [metroRequire(_false, { source: imageSource }), , ];
+    const obj2 = { variant: "text-sm/semibold", color: "text-muted", style: tmp.label, children: label };
+    items[1] = metroRequire(Text_Text.Text, obj2);
+    items[2] = metroRequire(components_Button_Button.Button, { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress });
+    return metroImportDefault(React3, obj);
   }
 }
-get_ActivityIndicator = fn(17);
-({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const NativePermissionStatus = fn(5045).NativePermissionStatus;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { marginHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center" }, label: null };
-let obj3 = { marginHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center" };
-obj2.label = { textAlign: "center", marginVertical: nativeDefault.space.PX_16 };
-const React6 = createStyles.createStyles(obj2);
-const size = fn(2);
+({ Image: c3, View: closure_4 } = react_native);
+const NativePermissionStatus = NativePermissionConstants.NativePermissionStatus;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, label: obj3 };
+obj2 = { marginHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center" };
+createStyles = createStyles.createStyles;
+obj3 = { textAlign: "center", marginVertical: nativeDefault.space.PX_16 };
+const metroImportAll = createStyles(obj);
 const result = size.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardEmptyState.tsx");
 
 export default MediaKeyboardEmptyState;
 export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComponentOrNull(photosEmpty) {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let photoPermissionStatus;
+  let showCameraButton;
   ({ photoPermissionStatus, showCameraButton } = photosEmpty);
+  photosEmpty = photosEmpty.photosEmpty;
   if (showCameraButton === undefined) {
     showCameraButton = true;
   }
+  const onPressPrivacySettings = photosEmpty.onPressPrivacySettings;
   if (photoPermissionStatus !== NativePermissionStatus.DENIED) {
-    if (photoPermissionStatus !== tmp3.RESTRICTED) {
-      if (photosEmpty.photosEmpty) {
-        if (photoPermissionStatus === tmp3.LIMITED) {
-          const obj2 = { actionIcon: timestampProducer(SettingsIcon.SettingsIcon, { color: "white", size: "sm" }), actionLabel: null, actionPress: null, imageSource: null, label: null };
-          const intl3 = util.intl;
-          obj2.actionLabel = intl3.string(util.t.JuXTi6);
-          obj2.actionPress = tmp2;
-          obj2.imageSource = _modDef10122;
-          const intl4 = util.intl;
-          obj2.label = intl4.string(util.t["5g7NcN"]);
-          return timestampProducer(MediaKeyboardEmptyState, obj2);
+    if (photoPermissionStatus !== NativePermissionStatus.RESTRICTED) {
+      if (photosEmpty) {
+        if (photoPermissionStatus === NativePermissionStatus.LIMITED) {
+          const obj2 = { actionIcon: metroRequire(SettingsIcon.SettingsIcon, { color: "white", size: "sm" }), actionLabel: intl3.string(intl7.t.JuXTi6), actionPress: tmp2, imageSource: AssetRegistryDefault, label: intl4.string(intl7.t["5g7NcN"]) };
+          intl3 = intl7.intl;
+          intl4 = intl7.intl;
+          return metroRequire(MediaKeyboardEmptyState, obj2);
         } else if (showCameraButton) {
-          const obj = { actionIcon: timestampProducer(CameraIcon.CameraIcon, { color: "white", size: "sm" }), actionLabel: null, actionPress: null, imageSource: null, label: null };
-          const intl = util.intl;
-          obj.actionLabel = intl.string(util.t.tpoWUd);
-          obj.actionPress = tmp;
-          obj.imageSource = _modDef10123;
-          const intl2 = util.intl;
-          obj.label = intl2.string(util.t.YOvRBZ);
-          return timestampProducer(MediaKeyboardEmptyState, obj);
+          const obj = { actionIcon: metroRequire(CameraIcon.CameraIcon, { color: "white", size: "sm" }), actionLabel: intl.string(intl7.t.tpoWUd), actionPress: tmp, imageSource: AssetRegistryDefault2, label: intl2.string(intl7.t.YOvRBZ) };
+          intl = intl7.intl;
+          intl2 = intl7.intl;
+          return metroRequire(MediaKeyboardEmptyState, obj);
         }
       }
     }
   }
-  const obj3 = { actionIcon: timestampProducer(SettingsIcon.SettingsIcon, { color: "white", size: "sm" }), actionLabel: null, actionPress: null, imageSource: null, label: null };
-  const intl5 = util.intl;
-  obj3.actionLabel = intl5.string(util.t["457oeG"]);
-  obj3.actionPress = photosEmpty.onPressPrivacySettings;
-  obj3.imageSource = _modDef10122;
-  const intl6 = util.intl;
-  obj3.label = intl6.string(util.t["8p9jGu"]);
-  return timestampProducer(MediaKeyboardEmptyState, obj3);
+  const obj3 = { actionIcon: metroRequire(SettingsIcon.SettingsIcon, { color: "white", size: "sm" }), actionLabel: intl5.string(intl7.t["457oeG"]), actionPress: onPressPrivacySettings, imageSource: AssetRegistryDefault, label: intl6.string(intl7.t["8p9jGu"]) };
+  intl5 = intl7.intl;
+  intl6 = intl7.intl;
+  return metroRequire(MediaKeyboardEmptyState, obj3);
 };

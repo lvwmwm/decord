@@ -5,16 +5,18 @@
 // Exports: default
 
 // Module 6859 (useCountdown)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import DateUtils from "DateUtils" /* 4512 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-_mod19.useCallback;
+react.useCallback;
 const result = size.fileFinishedImporting("hooks/useCountdown.tsx");
 
 export default function useCountdown(expiresAt) {
+  let closure_1;
   _require = expiresAt;
   let num = arg1;
   if (arg1 === undefined) {
@@ -25,14 +27,16 @@ export default function useCountdown(expiresAt) {
   if (arg3 === undefined) {
     flag = false;
   }
-  const obj = require("DateUtils");
-  const diffAsUnitsResult = require("DateUtils").diffAsUnits(Date.now(), expiresAt);
-  const forceUpdate = require("areHookInputsEqual").useForceUpdate();
+  let obj = require("DateUtils");
+  const diffAsUnitsResult = obj.diffAsUnits(Date.now(), expiresAt);
+  const obj2 = require("module_6860");
+  const forceUpdate = obj2.useForceUpdate();
   const items = [expiresAt, flag, forceUpdate, arg2];
-  const obj2 = require("areHookInputsEqual");
   let tmp5 = null;
   const tmp3 = forceUpdate(() => {
-    const time = DateUtils.diffAsUnits(Date.now(), closure_0);
+    const obj = DateUtils;
+    const time = obj.diffAsUnits(Date.now(), expiresAt);
+    const tmp = 0 === time.days && 0 === time.hours && 0 === time.minutes && 0 === time.seconds || flag;
     if (!tmp) {
       forceUpdate();
       if (closure_1 != null) {
@@ -40,9 +44,10 @@ export default function useCountdown(expiresAt) {
       }
     }
   }, items);
+  const tmp4 = require("useInterval");
   if (!flag) {
     tmp5 = num;
   }
-  require("useInterval")(tmp3, tmp5);
+  tmp4(tmp3, tmp5);
   return diffAsUnitsResult;
 };

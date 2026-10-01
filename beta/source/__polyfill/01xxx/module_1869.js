@@ -4,13 +4,13 @@
 // Exports: useExtraContentPadding
 
 // Module 1869
-import _mod17 from "module_17" /* 17 */;
-import _mod19 from "module_19" /* 19 */;
-import cancelAnimation from "cancelAnimation" /* 1638 */;
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 19 */;
+import _mod1638 from "module_1638" /* 1638 */;
 import _mod1868 from "module_1868" /* 1868 */;
 
-_mod19.useCallback;
-const Platform = _mod17.Platform;
+react.useCallback;
+const Platform = react_native.Platform;
 let closure_4 = { code: "function pnpm_indexTs1(target){const{contentOffsetY,IS_FABRIC,Platform,scrollTo,scrollViewRef}=this.__closure;if(contentOffsetY&&IS_FABRIC){contentOffsetY.value=target;}else if(Platform.OS===\"android\"){requestAnimationFrame(function(){scrollTo(scrollViewRef,0,target,false);});}else{scrollTo(scrollViewRef,0,target,false);}}" };
 let closure_5 = { code: "function pnpm_indexTs2(){const{extraContentPadding}=this.__closure;return extraContentPadding.value;}" };
 let closure_6 = { code: "function pnpm_indexTs3(current,previous){const{freeze,blankSpace,keyboardPadding,isScrollAtEnd,scroll,layout,size,inverted,keyboardLiftBehavior,shouldShiftContent,scrollToTarget}=this.__closure;if(freeze.value||previous===null){return;}const rawDelta=current-previous;if(rawDelta===0){return;}const previousTotal=Math.max(blankSpace.value,keyboardPadding.value+previous);const currentTotal=Math.max(blankSpace.value,keyboardPadding.value+current);const effectiveDelta=currentTotal-previousTotal;if(effectiveDelta===0){return;}const atEnd=isScrollAtEnd(scroll.value,layout.value.height,size.value.height,inverted);if(keyboardLiftBehavior===\"persistent\"&&effectiveDelta<0&&!atEnd){return;}if(!shouldShiftContent(keyboardLiftBehavior,atEnd)){return;}if(inverted){const target=Math.max(scroll.value-effectiveDelta,-currentTotal);scrollToTarget(target);}else{const maxScroll=Math.max(size.value.height-layout.value.height+currentTotal,0);const target=Math.min(scroll.value+effectiveDelta,maxScroll);scrollToTarget(target);}}" };
@@ -22,29 +22,31 @@ export const useExtraContentPadding = function useExtraContentPadding(scrollView
   const blankSpace = scrollViewRef.blankSpace;
   const scroll = scrollViewRef.scroll;
   const layout = scrollViewRef.layout;
-  const size = scrollViewRef.size;
+  size = scrollViewRef.size;
   const contentOffsetY = scrollViewRef.contentOffsetY;
   const inverted = scrollViewRef.inverted;
   const keyboardLiftBehavior = scrollViewRef.keyboardLiftBehavior;
   const freeze = scrollViewRef.freeze;
   const fn = function u(value) {
-    closure_0 = value;
+    let closure_0 = value;
     if (contentOffsetY) {
       if (scrollViewRef(extraContentPadding[2]).IS_FABRIC) {
         tmp.value = value;
       }
     }
     const animationFrame = requestAnimationFrame(() => {
-      cancelAnimation.scrollTo(scrollViewRef, 0, closure_0, false);
+      const obj = _mod1638;
+      obj.scrollTo(scrollViewRef, 0, closure_0, false);
     });
   };
-  fn.__closure = { contentOffsetY, IS_FABRIC: scrollViewRef(extraContentPadding[2]).IS_FABRIC, Platform: blankSpace, scrollTo: scrollViewRef(extraContentPadding[3]).scrollTo, scrollViewRef };
+  let obj = { contentOffsetY, IS_FABRIC: scrollViewRef(extraContentPadding[2]).IS_FABRIC, Platform: blankSpace, scrollTo: scrollViewRef(extraContentPadding[3]).scrollTo, scrollViewRef };
+  fn.__closure = obj;
   fn.__workletHash = 2925167321956;
   fn.__initData = scroll;
   const items = [scrollViewRef, contentOffsetY];
   const tmp = keyboardPadding(fn, items);
-  closure_11 = tmp;
-  const obj = { contentOffsetY, IS_FABRIC: scrollViewRef(extraContentPadding[2]).IS_FABRIC, Platform: blankSpace, scrollTo: scrollViewRef(extraContentPadding[3]).scrollTo, scrollViewRef };
+  let closure_11 = tmp;
+  let obj2 = scrollViewRef(extraContentPadding[3]);
   const fn2 = function v() {
     return extraContentPadding.value;
   };
@@ -63,29 +65,29 @@ export const useExtraContentPadding = function useExtraContentPadding(scrollView
           if (0 !== diff) {
             const obj2 = _mod1868;
             const isScrollAtEndResult = obj2.isScrollAtEnd(scroll.value, layout.value.height, size.value.height, inverted);
+            const iter2 = layout;
+            const iter3 = size;
+            const tmp14Result = _mod1868;
+            const tmp16 = inverted;
+            const tmp20 = keyboardLiftBehavior;
             if (tmp14Result.shouldShiftContent(tmp20, isScrollAtEndResult)) {
               const _Math = Math;
               if (tmp16) {
-                closure_11(max(iter.value - diff, -bound1));
+                closure_11(max(scroll.value - diff, -bound1));
               } else {
                 const _Math2 = Math;
-                closure_11(Math.min(iter.value + diff, max(iter3.value.height - iter2.value.height + bound1, 0)));
+                closure_11(Math.min(scroll.value + diff, max(iter3.value.height - iter2.value.height + bound1, 0)));
               }
             }
-            iter2 = layout;
-            iter3 = size;
-            tmp14Result = _mod1868;
-            tmp16 = inverted;
-            tmp20 = keyboardLiftBehavior;
           }
         }
       }
     }
   };
-  let obj2 = scrollViewRef(extraContentPadding[3]);
   fn3.__closure = { freeze, blankSpace, keyboardPadding, isScrollAtEnd: scrollViewRef(extraContentPadding[4]).isScrollAtEnd, scroll, layout, size, inverted, keyboardLiftBehavior, shouldShiftContent: scrollViewRef(extraContentPadding[4]).shouldShiftContent, scrollToTarget: tmp };
   fn3.__workletHash = 14660760767987;
   fn3.__initData = size;
   const items1 = [inverted, keyboardLiftBehavior];
+  ({ freeze, blankSpace, keyboardPadding, isScrollAtEnd: scrollViewRef(extraContentPadding[4]).isScrollAtEnd, scroll, layout, size, inverted, keyboardLiftBehavior, shouldShiftContent: scrollViewRef(extraContentPadding[4]).shouldShiftContent, scrollToTarget: tmp });
   const animatedReaction = obj2.useAnimatedReaction(fn2, fn3, items1);
 };

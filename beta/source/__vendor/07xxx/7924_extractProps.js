@@ -5,16 +5,27 @@
 // Exports: extract, propsAndStyles, withoutXY
 
 // Module 7924 (extractProps)
+import extractOpacityDefault from "extractOpacity" /* 7915 */;
 import extractResponderDefault from "extractResponder" /* 7916 */;
-import appendTransformPropsDefault from "appendTransformProps" /* 7917 */;
-import pickNotNil from "pickNotNil" /* 7925 */;
-import actionDefault from "action" /* 7926 */;
+import extractTransformDefault from "extractTransform" /* 7917 */;
+import warnOnce from "warnOnce" /* 7925 */;
+import extractFillDefault from "extractFill" /* 7926 */;
 import extractStrokeDefault from "extractStroke" /* 7929 */;
 
-require = arg1;
-importDefault = arg2;
-const dependencyMap = arg6;
 function extractProps(markerMid, arg1) {
+  let accessibilityLabel;
+  let accessible;
+  let clipPath;
+  let clipRule;
+  let display;
+  let filter;
+  let id;
+  let marker;
+  let markerStart;
+  let mask;
+  let onLayout;
+  let opacity;
+  let testID;
   ({ id, opacity, onLayout, clipPath, clipRule, display, mask, filter, marker, markerStart } = markerMid);
   if (undefined === markerStart) {
     markerStart = marker;
@@ -31,7 +42,7 @@ function extractProps(markerMid, arg1) {
   const obj = {};
   const items = [];
   extractResponderDefault(obj, markerMid, arg1);
-  actionDefault(obj, markerMid, items);
+  extractFillDefault(obj, markerMid, items);
   extractStrokeDefault(obj, markerMid, items);
   if (markerMid.color) {
     obj.color = markerMid.color;
@@ -39,12 +50,12 @@ function extractProps(markerMid, arg1) {
   if (items.length) {
     obj.propList = items;
   }
-  const tmp6 = appendTransformPropsDefault(markerMid);
+  const tmp6 = extractTransformDefault(markerMid);
   if (null !== tmp6) {
     obj.matrix = tmp6;
   }
   if (null != opacity) {
-    obj.opacity = tmp(7915)(opacity);
+    obj.opacity = extractOpacityDefault(opacity);
   }
   if (null != display) {
     let str4;
@@ -59,7 +70,7 @@ function extractProps(markerMid, arg1) {
   if (markerStart) {
     let tmp7;
     if (markerStart) {
-      const match = markerStart.match(pickNotNil.idPattern);
+      const match = markerStart.match(warnOnce.idPattern);
       let tmp10;
       if (match) {
         tmp10 = match[1];
@@ -71,7 +82,7 @@ function extractProps(markerMid, arg1) {
   if (str) {
     let tmp11;
     if (str) {
-      const match1 = str.match(pickNotNil.idPattern);
+      const match1 = str.match(warnOnce.idPattern);
       let tmp14;
       if (match1) {
         tmp14 = match1[1];
@@ -83,7 +94,7 @@ function extractProps(markerMid, arg1) {
   if (str2) {
     let tmp15;
     if (str2) {
-      const match2 = str2.match(pickNotNil.idPattern);
+      const match2 = str2.match(warnOnce.idPattern);
       let tmp18;
       if (match2) {
         tmp18 = match2[1];
@@ -113,7 +124,7 @@ function extractProps(markerMid, arg1) {
     obj.clipRule = num;
   }
   if (clipPath) {
-    const match3 = clipPath.match(pickNotNil.idPattern);
+    const match3 = clipPath.match(warnOnce.idPattern);
     if (match3) {
       obj.clipPath = match3[1];
     } else {
@@ -122,7 +133,7 @@ function extractProps(markerMid, arg1) {
     }
   }
   if (mask) {
-    const match4 = mask.match(pickNotNil.idPattern);
+    const match4 = mask.match(warnOnce.idPattern);
     if (match4) {
       obj.mask = match4[1];
     } else {
@@ -131,7 +142,7 @@ function extractProps(markerMid, arg1) {
     }
   }
   if (filter) {
-    const match5 = filter.match(pickNotNil.idPattern);
+    const match5 = filter.match(warnOnce.idPattern);
     if (match5) {
       obj.filter = match5[1];
     } else {
@@ -146,46 +157,6 @@ let closure_3 = { evenodd: 0, nonzero: 1 };
 export default extractProps;
 export const propsAndStyles = function propsAndStyles(props) {
   const style = props.style;
-  let tmp = props;
-  if (style) {
-    const _Array = Array;
-    let applyResult = style;
-    if (Array.isArray(style)) {
-      const _Object = Object;
-      const items = [{}];
-      HermesBuiltin.arraySpread(style, 1);
-      const _Object2 = Object;
-      applyResult = HermesBuiltin.apply(items, Object);
-    }
-    const obj = {};
-    const merged = Object.assign(applyResult);
-    const merged1 = Object.assign(props);
-    tmp = obj;
-  }
-  return tmp;
-};
-export const extract = function extract(arg0, style) {
-  style = style.style;
-  let tmp2 = style;
-  if (style) {
-    const _Array = Array;
-    let applyResult = style;
-    if (Array.isArray(style)) {
-      const _Object = Object;
-      const items = [{}];
-      HermesBuiltin.arraySpread(style, 1);
-      const _Object2 = Object;
-      applyResult = HermesBuiltin.apply(items, Object);
-    }
-    const obj = {};
-    const merged = Object.assign(applyResult);
-    const merged1 = Object.assign(style);
-    tmp2 = obj;
-  }
-  return extractProps(tmp2, arg0);
-};
-export const withoutXY = function withoutXY(self, props) {
-  const style = props.style;
   let tmp2 = props;
   if (style) {
     const _Array = Array;
@@ -193,18 +164,58 @@ export const withoutXY = function withoutXY(self, props) {
     if (Array.isArray(style)) {
       const _Object = Object;
       const items = [{}];
-      HermesBuiltin.arraySpread(style, 1);
+      HermesBuiltin.arraySpread(items, style, 1);
       const _Object2 = Object;
-      applyResult = HermesBuiltin.apply(items, Object);
+      applyResult = HermesBuiltin.apply(assign, items, Object);
     }
     const obj = {};
     const merged = Object.assign(applyResult);
     const merged1 = Object.assign(props);
     tmp2 = obj;
   }
-  const obj2 = {};
-  const merged2 = Object.assign(tmp2);
-  obj2.x = null;
-  obj2.y = null;
-  return extractProps(obj2, self);
+  return tmp2;
+};
+export const extract = function extract(arg0, style) {
+  style = style.style;
+  let tmp3 = style;
+  const tmp2 = extractProps;
+  if (style) {
+    const _Array = Array;
+    let applyResult = style;
+    if (Array.isArray(style)) {
+      const _Object = Object;
+      const items = [{}];
+      HermesBuiltin.arraySpread(items, style, 1);
+      const _Object2 = Object;
+      applyResult = HermesBuiltin.apply(assign, items, Object);
+    }
+    const obj = {};
+    const merged = Object.assign(applyResult);
+    const merged1 = Object.assign(style);
+    tmp3 = obj;
+  }
+  return tmp2(tmp3, arg0);
+};
+export const withoutXY = function withoutXY(self, props) {
+  const style = props.style;
+  let tmp3 = props;
+  const tmp2 = extractProps;
+  if (style) {
+    const _Array = Array;
+    let applyResult = style;
+    if (Array.isArray(style)) {
+      const _Object = Object;
+      const items = [{}];
+      HermesBuiltin.arraySpread(items, style, 1);
+      const _Object2 = Object;
+      applyResult = HermesBuiltin.apply(assign, items, Object);
+    }
+    const obj = {};
+    const merged = Object.assign(applyResult);
+    const merged1 = Object.assign(props);
+    tmp3 = obj;
+  }
+  const obj2 = { x: null, y: null };
+  const merged2 = Object.assign(tmp3);
+  return tmp2(obj2, self);
 };

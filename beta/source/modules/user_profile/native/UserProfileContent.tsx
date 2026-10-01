@@ -4,11 +4,15 @@
 // Dependencies: [32, 19, 17, 7637, 8239, 2067, 4479, 1372, 7605, 7035, 7628, 6629, 1074, 6572, 2042, 21, 7687, 504, 4800, 10611, 1981, 10578, 10574, 7635, 6583, 9195, 4678, 7363, 12635, 1115, 12117, 12636, 4771, 7688, 4988, 6610, 4527, 10614, 9226, 12570, 5281, 9713, 576, 8761, 12638, 12639, 8127, 12650, 7676, 7689, 1613, 12637, 12656, 12657, 6729, 10612, 7614, 10653, 7642, 12658, 7673, 7684, 8238, 12659, 12458, 12459, 12640, 12660, 12661, 12662, 12663, 12664, 12124, 12665, 12572, 12670, 10777, 6606, 12622, 12671, 12625, 12676, 12681, 9083, 7702, 7690, 12687, 4566, 12544, 12688, 12689, 12694, 12695, 6577, 12111, 12113, 12700, 2]
 
 // Module 12634 (UserProfileContent)
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import Constants2 from "Constants" /* 1074 */;
+import intl5 from "intl" /* 1115 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6572 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
+import Constants3 from "Constants" /* 7628 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7642 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7687 */;
 import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 8127 */;
@@ -26,8 +30,9 @@ import UserProfileConnections from "UserProfileConnections" /* 12671 */;
 import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12676 */;
 import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12681 */;
 import UserProfileIncomingFriendRequestDefault from "UserProfileIncomingFriendRequest" /* 12689 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
 import WishlistStore from "WishlistStore" /* 8239 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -35,20 +40,37 @@ import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7605 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
+import Constants from "Constants" /* 6629 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
 const UserProfileWishlistGridDefault = UserProfileWishlistGrid;
+let dependencyMap;
 
-require = fn;
+let closure_15;
+let closure_16;
+let closure_20;
+let closure_21;
+let closure_22;
+let hasOwnProperty;
+let metroRequire;
 function CustomStatusBubble(guildId) {
+  let bubbleRef;
+  let customStatusActivity;
+  let hasCustomProfileTheme;
+  let items3;
+  let tmp12;
+  let user;
   ({ customStatusActivity, user } = guildId);
   guildId = guildId.guildId;
   const channelId = guildId.channelId;
   const isPreviewingChanges = guildId.isPreviewingChanges;
   ({ hasCustomProfileTheme, bubbleRef } = guildId);
   const tmp3 = guildId(channelId[16])();
+  let obj = user(channelId[17]);
   const items = [UserStore];
   const items1 = [user];
-  let stateFromStores = user(channelId[17]).useStateFromStores(items, () => {
+  let stateFromStores = obj.useStateFromStores(items, () => {
     const currentUser = UserStore.getCurrentUser();
     let id;
     if (currentUser != null) {
@@ -58,9 +80,12 @@ function CustomStatusBubble(guildId) {
   }, items1);
   const items2 = [channelId, guildId, user];
   let tmp7 = null;
-  const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10611, dependencyMap.paths), "UserProfileCustomStatusActionSheet", { user, guildId, channelId }, "stack");
+  const callback = react.useCallback(() => {
+    const obj = ActionSheetActionCreatorsDefault;
+    const obj2 = { user, guildId, channelId };
+    obj.openLazy(asyncRequire(10611, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj2, "stack");
   }, items2);
+  const useRef = react.useRef;
   if (null == customStatusActivity) {
     tmp7 = null;
     if (stateFromStores) {
@@ -70,232 +95,331 @@ function CustomStatusBubble(guildId) {
       }
     }
   }
-  const ref = noop.useRef(tmp7);
+  const ref = useRef(tmp7);
   let labelResult;
   if (null != ref.current) {
     const current = ref.current;
     labelResult = current.label();
   }
-  const obj2 = { ref: bubbleRef, customStatusActivity, hasCustomProfileTheme, editEnabled: null, onPressTruncatedStatus: null, style: null, emojiOnlyStyle: null, placeholderText: null, prompt: null };
-  const obj = user(channelId[17]);
+  let obj2 = { ref: bubbleRef, customStatusActivity, hasCustomProfileTheme, editEnabled: stateFromStores, onPressTruncatedStatus: tmp12, style: items3, emojiOnlyStyle: tmp3.emojiOnlyCustomStatusBubble, placeholderText: labelResult, prompt: ref.current };
   const tmp10 = closure_20;
+  const tmpResult = guildId(channelId[22]);
   if (stateFromStores) {
     stateFromStores = !isPreviewingChanges;
   }
-  obj2.editEnabled = stateFromStores;
-  let tmp12;
+  tmp12 = undefined;
   if (!isPreviewingChanges) {
     tmp12 = callback;
   }
-  obj2.onPressTruncatedStatus = tmp12;
-  const items3 = [, ];
+  items3 = [, ];
   ({ customStatusBubble: arr4[0], customStatusBubbleInset: arr4[1] } = tmp3);
-  obj2.style = items3;
-  obj2.emojiOnlyStyle = tmp3.emojiOnlyCustomStatusBubble;
-  obj2.placeholderText = labelResult;
-  obj2.prompt = ref.current;
-  return tmp10(guildId(channelId[22]), obj2);
+  return tmp10(tmpResult, obj2);
 }
 function RemoveFriendIconButton(user) {
+  let intl;
   user = user.user;
   let newestAnalyticsLocation;
   function handleConfirm() {
     trackUserProfileAction({ action: "REMOVE_FRIEND" });
-    RelationshipActionCreatorsDefault.removeFriend(user.id, { location: newestAnalyticsLocation });
+    const obj = RelationshipActionCreatorsDefault;
+    const obj2 = { location: newestAnalyticsLocation };
+    obj.removeFriend(user.id, obj2);
   }
-  const trackUserProfileAction = user(newestAnalyticsLocation[23]).useUserProfileAnalyticsContext().trackUserProfileAction;
+  let obj = user(newestAnalyticsLocation[23]);
+  const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   newestAnalyticsLocation = trackUserProfileAction(newestAnalyticsLocation[24])().newestAnalyticsLocation;
-  const obj = user(newestAnalyticsLocation[23]);
-  const userDisplayName = trackUserProfileAction(newestAnalyticsLocation[26]).useName(user);
-  const obj3 = { size: "sm", variant: "secondary-overlay", icon: closure_20(user(newestAnalyticsLocation[28]).UserCheckIcon, { size: "sm", color: "white" }), accessibilityLabel: null, onPress: null };
-  const intl = user(newestAnalyticsLocation[29]).intl;
-  obj3.accessibilityLabel = intl.string(user(newestAnalyticsLocation[29]).t.cvSt1J);
-  obj3.onPress = function onPress() {
-    UserProfileAlertUtils.confirmRemoveFriend({ userDisplayName, onConfirm: handleConfirm });
+  let obj2 = trackUserProfileAction(newestAnalyticsLocation[26]);
+  const userDisplayName = obj2.useName(user);
+  const obj3 = {
+    size: "sm",
+    variant: "secondary-overlay",
+    icon: closure_20(user(newestAnalyticsLocation[28]).UserCheckIcon, { size: "sm", color: "white" }),
+    accessibilityLabel: intl.string(user(newestAnalyticsLocation[29]).t.cvSt1J),
+    onPress() {
+      const obj = UserProfileAlertUtils;
+      const obj2 = { userDisplayName, onConfirm: handleConfirm };
+      obj.confirmRemoveFriend(obj2);
+    }
   };
-  return closure_20(user(newestAnalyticsLocation[27]).IconButton, obj3);
+  const IconButton = user(newestAnalyticsLocation[27]).IconButton;
+  intl = user(newestAnalyticsLocation[29]).intl;
+  return closure_20(IconButton, obj3);
 }
 function RemoveGameFriendIconButton(user) {
+  let intl;
   user = user.user;
   const guildId = user.guildId;
   const channelId = user.channelId;
   const items = [channelId, guildId, user];
-  const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12636, dependencyMap.paths), "UserProfileGameFriendActionSheet", { user, guildId, channelId }, "stack");
+  const callback = react.useCallback(() => {
+    const obj = ActionSheetActionCreatorsDefault;
+    const obj2 = { user, guildId, channelId };
+    obj.openLazy(asyncRequire(12636, dependencyMap.paths), "UserProfileGameFriendActionSheet", obj2, "stack");
   }, items);
-  const obj = { size: "sm", variant: "secondary-overlay", icon: closure_20(user(channelId[32]).UserPlatformIcon, { size: "sm", color: "white" }), accessibilityLabel: null, onPress: null };
-  const intl = user(channelId[29]).intl;
-  obj.accessibilityLabel = intl.string(user(channelId[29]).t.cvSt1J);
-  obj.onPress = callback;
-  return closure_20(user(channelId[27]).IconButton, obj);
+  let obj = { size: "sm", variant: "secondary-overlay", icon: closure_20(user(channelId[32]).UserPlatformIcon, { size: "sm", color: "white" }), accessibilityLabel: intl.string(user(channelId[29]).t.cvSt1J), onPress: callback };
+  const IconButton = user(channelId[27]).IconButton;
+  intl = user(channelId[29]).intl;
+  return closure_20(IconButton, obj);
 }
 class PrimaryInfo {
   constructor(arg0) {
-    ({ user, guildId, displayProfile, displayNameOverride, pronounsOverride, badgesOverride, isPreviewingChanges } = global);
-    closure_0 = undefined;
-    trackUserProfileAction = undefined;
-    tmp2 = closure_2;
-    ({ channelId, pendingDisplayNameStyles, style, badgeContainerBackground } = global);
-    tmp = trackUserProfileAction;
-    obj = trackUserProfileAction(closure_2[26]);
-    userTag = obj.useUserTag(user);
-    closure_0 = userTag;
-    tmp4 = trackUserProfileAction(closure_2[33])(displayProfile);
-    obj2 = trackUserProfileAction(closure_2[34]);
-    name = obj2.useName(guildId, channelId, user);
-    tmp6 = name;
+    let badgeContainerBackground;
+    let badgesOverride;
+    let channelId;
+    let displayNameOverride;
+    let displayProfile;
+    let fn;
+    let guildId;
+    let intl;
+    let isPreviewingChanges;
+    let pendingDisplayNameStyles;
+    let pronounsOverride;
+    let style;
+    let tmp12;
+    let tmp13;
+    let user;
+    ({ user, guildId, displayProfile, displayNameOverride, pronounsOverride, badgesOverride, isPreviewingChanges } = arg0);
+    let trackUserProfileAction;
+    ({ channelId, pendingDisplayNameStyles, style, badgeContainerBackground } = arg0);
+    let obj = trackUserProfileAction(4678);
+    const userTag = obj.useUserTag(user);
+    const tmp4 = trackUserProfileAction(7688)(displayProfile);
+    let obj2 = trackUserProfileAction(4988);
+    const name = obj2.useName(guildId, channelId, user);
+    let tmp6 = name;
+    const tmp = trackUserProfileAction;
     if (null != displayNameOverride) {
-      num = 0;
       tmp6 = name;
       if (displayNameOverride.trim().length > 0) {
         tmp6 = displayNameOverride;
       }
     }
-    tmp7 = closure_0;
-    obj3 = closure_0(tmp2[23]);
+    const obj3 = userTag(7635);
     trackUserProfileAction = obj3.useUserProfileAnalyticsContext().trackUserProfileAction;
-    items = [, ];
-    items[0] = trackUserProfileAction;
-    items[1] = userTag;
-    callback = closure_4.useCallback(() => {
+    const items = [trackUserProfileAction, userTag];
+    const callback = react.useCallback(() => {
       trackUserProfileAction({ action: "COPY_USERNAME" });
-      ClipboardUtils.copy(userTag);
-      const result = ToastUtils.presentUsernameCopied();
+      const obj = ClipboardUtils;
+      obj.copy(userTag);
+      const obj2 = ToastUtils;
+      const result = obj2.presentUsernameCopied();
     }, items);
-    tmp9 = jsx;
-    obj1 = { user, guildId, displayName: tmp6, pronouns: null, badges: null, style: null, badgeContainerBackground: null, onPressDisplayName: null, displayNameAccessibilityHint: null, onPressUserTag: null, onPressPronouns: null, showBadgeToastOnPress: null, canOpenBadgeDirectory: true, pendingDisplayNameStyles: null };
-    tmpResult = tmp(tmp2[37]);
+    const obj4 = { user, guildId, displayName: tmp6, pronouns: pronounsOverride, badges: badgesOverride, style, badgeContainerBackground, onPressDisplayName: tmp12, displayNameAccessibilityHint: intl.string(userTag(1115).t.y5MwJy), onPressUserTag: tmp13, onPressPronouns: fn, showBadgeToastOnPress: !isPreviewingChanges, canOpenBadgeDirectory: true, pendingDisplayNameStyles };
+    const tmp9 = closure_20;
+    const tmpResult = tmp(10614);
     if (pronounsOverride == null) {
-      pronouns = undefined;
+      let pronouns;
       if (displayProfile != null) {
         pronouns = displayProfile.pronouns;
       }
       pronounsOverride = pronouns;
     }
-    obj1.pronouns = pronounsOverride;
     if (badgesOverride == null) {
       badgesOverride = tmp4;
     }
-    obj1.badges = badgesOverride;
-    obj1.style = style;
-    obj1.badgeContainerBackground = badgeContainerBackground;
     tmp12 = undefined;
     if (!isPreviewingChanges) {
       tmp12 = callback;
     }
-    obj1.onPressDisplayName = tmp12;
-    intl = tmp7(tmp2[29]).intl;
-    obj1.displayNameAccessibilityHint = intl.string(tmp7(tmp2[29]).t.y5MwJy);
+    intl = tmp7(1115).intl;
     tmp13 = undefined;
     if (!isPreviewingChanges) {
       tmp13 = callback;
     }
-    obj1.onPressUserTag = tmp13;
     fn = undefined;
     if (!isPreviewingChanges) {
       fn = () => {
         trackUserProfileAction({ action: "PRESS_PRONOUNS" });
-        ToastUtils.presentUserPronouns();
+        const obj = ToastUtils;
+        obj.presentUserPronouns();
       };
     }
-    obj1.onPressPronouns = fn;
-    obj1.showBadgeToastOnPress = !isPreviewingChanges;
-    obj1.pendingDisplayNameStyles = pendingDisplayNameStyles;
-    return tmp9(tmpResult, obj1);
+    return tmp9(tmpResult, obj4);
   }
 }
 function EditSection(guildId) {
+  let Button;
+  let PencilIcon;
+  let PencilIcon2;
+  let closure_2;
+  let intl3;
+  let obj4;
+  let obj5;
+  let obj7;
+  let stringResult;
+  let tmp6Result;
   guildId = guildId.guildId;
   let trackUserProfileAction;
-  const tmp = trackUserProfileAction;
   const tmp3 = trackUserProfileAction(7687)();
-  trackUserProfileAction = guildId(7635).useUserProfileAnalyticsContext().trackUserProfileAction;
-  const obj = guildId(7635);
+  let obj = guildId(7635);
+  const tmp = trackUserProfileAction;
+  trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const items = [GuildStore];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => GuildStore.getGuild(guildId));
-  dependencyMap = trackUserProfileAction(9226)();
-  closure_3 = trackUserProfileAction(9226)({ guild: stateFromStores });
-  const obj3 = { style: tmp3.primaryButtons, maxWidth: ACTION_SHEET_MAX_WIDTH, primaryButton: null, secondaryButton: null };
   const obj2 = guildId(504);
-  const obj4 = { variant: "primary", icon: null, text: null, onPress: null, grow: true };
+  const stateFromStores = obj2.useStateFromStores(items, () => GuildStore.getGuild(guildId));
+  dependencyMap = trackUserProfileAction(9226)();
+  let closure_3 = trackUserProfileAction(9226)({ guild: stateFromStores });
+  const obj3 = { style: tmp3.primaryButtons, maxWidth: ACTION_SHEET_MAX_WIDTH, primaryButton: closure_20(Button, obj4), secondaryButton: tmp6Result };
+  obj4 = {
+    variant: "primary",
+    icon: closure_20(PencilIcon, obj5),
+    text: stringResult,
+    onPress() {
+      trackUserProfileAction({ action: "EDIT_PROFILE" });
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideAllActionSheets();
+      closeVoicePanelsDefault();
+      closure_2();
+    },
+    grow: true
+  };
   const tmp7 = trackUserProfileAction(12570);
-  obj4.icon = closure_20(guildId(9713).PencilIcon, { size: "sm", color: trackUserProfileAction(576).colors.WHITE });
+  Button = guildId(5281).Button;
+  obj5 = { size: "sm", color: trackUserProfileAction(576).colors.WHITE };
+  PencilIcon = guildId(9713).PencilIcon;
   if (null != stateFromStores) {
     const intl2 = tmp4(1115).intl;
-    let stringResult = intl2.string(tmp4(1115).t.HmFaFB);
+    stringResult = intl2.string(tmp4(1115).t.HmFaFB);
   } else {
     const intl = tmp4(1115).intl;
     stringResult = intl.string(tmp4(1115).t.s5vZlQ);
   }
-  obj4.text = stringResult;
-  obj4.onPress = function onPress() {
-    trackUserProfileAction({ action: "EDIT_PROFILE" });
-    ActionSheetActionCreatorsDefault.hideAllActionSheets();
-    closeVoicePanelsDefault();
-    closure_2();
-  };
-  obj3.primaryButton = closure_20(guildId(5281).Button, obj4);
-  let tmp6Result;
+  tmp6Result = undefined;
   if (null != stateFromStores) {
-    const obj6 = { variant: "primary", icon: null, text: null, onPress: null, grow: true };
-    const obj7 = { size: "sm", color: tmp(576).colors.WHITE };
-    obj6.icon = tmp6(tmp4(9713).PencilIcon, obj7);
-    const intl3 = tmp4(1115).intl;
-    obj6.text = intl3.string(tmp4(1115).t["PKQB/H"]);
-    obj6.onPress = function onPress() {
-      trackUserProfileAction({ action: "EDIT_GUILD_PROFILE" });
-      ActionSheetActionCreatorsDefault.hideAllActionSheets();
-      closeVoicePanelsDefault();
-      closure_3();
+    const obj6 = {
+      variant: "primary",
+      icon: closure_20(PencilIcon2, obj7),
+      text: intl3.string(guildId(1115).t["PKQB/H"]),
+      onPress() {
+          trackUserProfileAction({ action: "EDIT_GUILD_PROFILE" });
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideAllActionSheets();
+          closeVoicePanelsDefault();
+          closure_3();
+        },
+      grow: true
     };
-    tmp6Result = tmp6(tmp4(5281).Button, obj6);
+    const Button2 = tmp4(5281).Button;
+    obj7 = { size: "sm", color: tmp(576).colors.WHITE };
+    PencilIcon2 = tmp4(9713).PencilIcon;
+    intl3 = tmp4(1115).intl;
+    tmp6Result = tmp6(Button2, obj6);
   }
-  obj3.secondaryButton = tmp6Result;
   return closure_20(tmp7, obj3);
 }
 function UserProfileWidgetsBoardContainer(isCurrentUser) {
+  let containerBackground;
+  let isVisible;
+  let items1;
+  let userId;
   isCurrentUser = isCurrentUser.isCurrentUser;
   ({ userId, isVisible, containerBackground } = isCurrentUser);
   const tmp3 = UserProfileSharedStylesDefault();
   const items = [tmp3.card, { backgroundColor: containerBackground }];
-  const obj = { style: tmp3.profileContent, children: null };
   let tmp6 = isCurrentUser;
+  const obj = { style: tmp3.profileContent, children: items1 };
+  const tmp4 = closure_21;
+  const tmp5 = metroRequire;
   if (isCurrentUser) {
-    tmp6 = closure_1_20(tmp(12638), {});
+    tmp6 = closure_20(tmp(12638), {});
   }
-  const items1 = [tmp6, , ];
+  items1 = [tmp6, , ];
   if (isCurrentUser) {
-    isCurrentUser = closure_1_20(tmp(12639), {});
+    isCurrentUser = closure_20(tmp(12639), {});
   }
   items1[1] = isCurrentUser;
-  items1[2] = closure_1_20(UserProfileWidgetsBoardDefault, { userId, isVisible, cardStyle: items });
-  obj.children = items1;
-  return __initData(timestampProducer, obj);
+  items1[2] = closure_20(UserProfileWidgetsBoardDefault, { userId, isVisible, cardStyle: items });
+  return tmp4(tmp5, obj);
 }
 function UserProfileActivityTabContainer(arg0) {
+  let channelId;
+  let containerBackground;
+  let currentUser;
+  let guildId;
+  let items1;
+  let user;
   ({ user, currentUser, guildId, channelId, containerBackground } = arg0);
   const tmp = UserProfileSharedStylesDefault();
   const items = [tmp.card, { backgroundColor: containerBackground }];
-  const obj = { style: null, children: closure_1_20(UserProfileActivityTabDefault, { user, currentUser, guildId, channelId, cardStyle: items }) };
-  const items1 = [, ];
+  const obj = { style: items1, children: closure_20(UserProfileActivityTabDefault, { user, currentUser, guildId, channelId, cardStyle: items }) };
+  items1 = [, ];
   ({ cards: arr2[0], profileContent: arr2[1] } = tmp);
-  obj.style = items1;
-  return closure_1_20(timestampProducer, obj);
+  return closure_20(metroRequire, obj);
 }
-get_ActivityIndicator = fn(17);
-({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const UserProfileSections = fn(7628).UserProfileSections;
-const Constants = fn(6629);
+({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
+const UserProfileSections = Constants3.UserProfileSections;
 ({ PROFILE_CONTENT_BOTTOM_PADDING: closure_15, PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: closure_16 } = Constants);
-let RelationshipTypes = fn(1074).RelationshipTypes;
-const ACTION_SHEET_MAX_WIDTH = fn(6572).ACTION_SHEET_MAX_WIDTH;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsxProd = fn(21);
-({ jsx: closure_20, jsxs: closure_21, Fragment: closure_22 } = jsxProd);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileContent.tsx");
-
-export default noop.memo(function UserProfileContent(user) {
+let RelationshipTypes = Constants2.RelationshipTypes;
+const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+({ jsx: closure_20, jsxs: closure_21, Fragment: closure_22 } = Fragment);
+const memoResult = react.memo(function UserProfileContent(user) {
+  let LayerScope;
+  let _location;
+  let _undefined;
+  let activeProfileTabSection;
+  let activeProfileTabSectionIndex;
+  let avatarBackground;
+  let avatarDecorationOverride;
+  let bannerAnimatedStyle;
+  let bannerImageAnimatedStyle;
+  let blurAnimatedProps;
+  let c30;
+  let closure_17;
+  let contentAnimatedStyle;
+  let disableCalls;
+  let disableMessage;
+  let disableStatus;
+  let fillHeight;
+  let handleTabChange;
+  let id3;
+  let id4;
+  let id5;
+  let initialSection;
+  let isPreviewingChanges;
+  let items22;
+  let items26;
+  let items27;
+  let items28;
+  let items29;
+  let measureFill;
+  let navigateToPremium;
+  let obj18;
+  let obj33;
+  let obj36;
+  let originApplicationId;
+  let pagerRef;
+  let pendingAccentColor;
+  let pendingAvatar;
+  let pendingAvatarDecoration;
+  let pendingBadgeDisplayOrder;
+  let pendingBanner;
+  let pendingDisplayNameStyles;
+  let pendingGlobalName;
+  let pendingLegacyUsernameDisabled;
+  let pendingPronouns;
+  let pendingThemeColors;
+  let rect;
+  let relationshipType;
+  let secondaryColor;
+  let setActiveProfileTabSection;
+  let showBlur;
+  let statusBackground;
+  let str;
+  let theme;
+  let tmp27;
+  let tmp45;
+  let tmp65Result;
+  let tmp67;
+  let tmp68;
+  let tmp69;
+  let tmp70;
+  let tmp80;
+  let tmp81;
+  let tmp89;
+  let tmp90;
+  let tmp91;
+  let tmp92;
   user = user.user;
   const channel = user.channel;
   const guildId = user.guildId;
@@ -318,9 +442,9 @@ export default noop.memo(function UserProfileContent(user) {
   let containerBackground;
   let stateFromStores1;
   let stateFromStores2;
-  closure_24 = undefined;
-  closure_25 = undefined;
-  closure_26 = undefined;
+  let closure_24;
+  let closure_25;
+  let closure_26;
   let boardTabIndex;
   let activityTabIndex;
   let wishlistTabIndex;
@@ -336,237 +460,260 @@ export default noop.memo(function UserProfileContent(user) {
   let callback4;
   let callback5;
   let segmentedControlState;
-  let obj8;
+  let obj9;
+  let tmp = channel;
+  let tmp2 = guildId;
   ({ disableMessage, disableStatus, location: _location, initialSection } = user);
-  const tmp3 = channel(guildId[16])();
-  closure_8 = tmp3;
+  let tmp3 = channel(guildId[16])();
+  let closure_8 = tmp3;
   const tmp4 = channel(guildId[48])(stateFromStoresArray);
-  ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = channel(guildId[49])({ scrollPosition, bannerHeight: tmp4 }));
-  const tmp5 = channel(guildId[49])({ scrollPosition, bannerHeight: tmp4 });
-  const trackUserProfileAction = user(guildId[23]).useUserProfileAnalyticsContext().trackUserProfileAction;
+  let tmp5 = channel(guildId[49])({ scrollPosition, bannerHeight: tmp4 });
+  ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = tmp5);
+  const bottom = channel(guildId[50])().bottom;
   let obj = user(guildId[23]);
+  const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
+  let obj2 = user(guildId[17]);
   let items = [isCurrentUser];
-  const stateFromStores = user(guildId[17]).useStateFromStores(items, () => isCurrentUser.getCurrentUser());
+  const stateFromStores = obj2.useStateFromStores(items, () => isCurrentUser.getCurrentUser());
   let id;
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
+  let tmp9 = id === user.id;
   isCurrentUser = tmp9;
-  let obj2 = user(guildId[17]);
   let items1 = [stateFromStores];
-  const stateFromStoresObject = user(guildId[17]).useStateFromStoresObject(items1, () => ({ relationshipType: RelationshipStore.getRelationshipType(user.id), originApplicationId: RelationshipStore.getOriginApplicationId(user.id) }));
+  const tmp6Result = user(tmp2[17]);
+  const stateFromStoresObject = tmp6Result.useStateFromStoresObject(items1, () => {
+    const obj = { relationshipType: RelationshipStore.getRelationshipType(user.id), originApplicationId: RelationshipStore.getOriginApplicationId(user.id) };
+    return obj;
+  });
   ({ relationshipType, originApplicationId } = stateFromStoresObject);
-  const tmp6Result = user(guildId[17]);
-  const incomingGameRelationshipsForUser = user(guildId[51]).useIncomingGameRelationshipsForUser(user.id);
-  const tmp6Result24 = user(guildId[51]);
-  const isGameFriends = user(guildId[52]).useIsGameFriends(user.id);
-  const tmp6Result25 = user(guildId[52]);
-  userProfileGameFriendApplicationIds = user(guildId[53]).useUserProfileGameFriendApplicationIds({ userId: user.id });
+  const tmp6Result24 = user(tmp2[51]);
+  const incomingGameRelationshipsForUser = tmp6Result24.useIncomingGameRelationshipsForUser(user.id);
+  const tmp6Result25 = user(tmp2[52]);
+  const isGameFriends = tmp6Result25.useIsGameFriends(user.id);
   let obj3 = { userId: user.id };
-  const tmp6Result26 = user(guildId[53]);
+  const tmp6Result26 = user(tmp2[53]);
+  userProfileGameFriendApplicationIds = tmp6Result26.useUserProfileGameFriendApplicationIds(obj3);
   let id1;
+  const useName = tmp(tmp2[34]).useName;
+  tmp(tmp2[34]);
   if (channel != null) {
     id1 = channel.id;
   }
-  name = channel(guildId[34]).useName(guildId, id1, user);
+  name = useName(guildId, id1, user);
+  let obj8 = showUserProfileActionSheet;
   let items2 = [guildId, user];
   const memo = showUserProfileActionSheet.useMemo(() => {
     if (null != guildId) {
       if (null != user) {
-        const obj = {};
         const items = [tmp2.id];
+        const obj = {};
         obj[tmp] = items;
       }
       return {};
     }
   }, items2);
-  const tmpResult = channel(guildId[34]);
-  const subscribeGuildMembers = user(guildId[54]).useSubscribeGuildMembers(memo, "UserProfileContent");
-  const tmp17 = channel(guildId[55])(user.id);
-  const tmp6Result27 = user(guildId[54]);
+  const tmp6Result27 = user(tmp2[54]);
+  const subscribeGuildMembers = tmp6Result27.useSubscribeGuildMembers(memo, "UserProfileContent");
+  const tmp18 = tmp(tmp2[55])(user.id);
   const items3 = [userProfileGameFriendApplicationIds];
-  const stateFromStoresObject1 = user(guildId[17]).useStateFromStoresObject(items3, () => userProfileGameFriendApplicationIds.getPendingChanges());
+  const tmp6Result28 = user(tmp2[17]);
+  const stateFromStoresObject1 = tmp6Result28.useStateFromStoresObject(items3, () => userProfileGameFriendApplicationIds.getPendingChanges());
   pendingBio = stateFromStoresObject1.pendingBio;
   ({ pendingAccentColor, pendingThemeColors, pendingBadgeDisplayOrder } = stateFromStoresObject1);
   pendingBadgeHiddenBadges = stateFromStoresObject1.pendingBadgeHiddenBadges;
   ({ pendingBanner, pendingAvatar, pendingAvatarDecoration, pendingGlobalName, pendingPronouns, pendingLegacyUsernameDisabled, pendingDisplayNameStyles } = stateFromStoresObject1);
-  const tmp6Result28 = user(guildId[17]);
-  const pendingAvatarSrc = user(guildId[56]).getPendingAvatarSrc({ userId: user.id, image: pendingAvatar });
-  const tmp20 = channel(guildId[33])(displayProfile, pendingLegacyUsernameDisabled);
-  RelationshipTypes = tmp20;
   let obj4 = { userId: user.id, image: pendingAvatar };
-  const tmp6Result29 = user(guildId[56]);
+  const tmp6Result29 = user(tmp2[56]);
+  const pendingAvatarSrc = tmp6Result29.getPendingAvatarSrc(obj4);
+  const tmp21 = tmp(tmp2[33])(displayProfile, pendingLegacyUsernameDisabled);
+  RelationshipTypes = tmp21;
   const items4 = [navigateToShop];
   const items5 = [user.id];
-  stateFromStoresArray = user(guildId[17]).useStateFromStoresArray(items4, () => BadgeDirectoryStore.getBadges(user.id), items5);
-  const tmp6Result30 = user(guildId[17]);
-  isBadgeManagementEnabled = user(guildId[57]).useIsBadgeManagementEnabled({ location: "UserProfileContent" });
+  const tmp6Result30 = user(tmp2[17]);
+  stateFromStoresArray = tmp6Result30.useStateFromStoresArray(items4, () => BadgeDirectoryStore.getBadges(user.id), items5);
+  const tmp6Result31 = user(tmp2[57]);
+  isBadgeManagementEnabled = tmp6Result31.useIsBadgeManagementEnabled({ location: "UserProfileContent" });
   const items6 = [user.id, isBadgeManagementEnabled];
   const effect = showUserProfileActionSheet.useEffect(() => {
-    if (isBadgeManagementEnabled) {
-      if (!tmp2) {
-        const badgeDirectory = BadgeDirectoryActionCreators.fetchBadgeDirectory(tmp.id);
+    const tmp = isBadgeManagementEnabled;
+    if (tmp) {
+      const tmp3 = BadgeDirectoryStore.hasCatalogFor(user.id) && !BadgeDirectoryStore.isCatalogStaleFor(user.id);
+      if (!tmp3) {
+        const obj2 = BadgeDirectoryActionCreators;
+        const badgeDirectory = obj2.fetchBadgeDirectory(tmp2.id);
       }
-      tmp2 = BadgeDirectoryStore.hasCatalogFor(user.id) && !BadgeDirectoryStore.isCatalogStaleFor(user.id);
     }
   }, items6);
-  const items7 = [tmp20, stateFromStoresArray, pendingBadgeDisplayOrder, pendingBadgeHiddenBadges];
-  const memo1 = showUserProfileActionSheet.useMemo(() => PendingBadgeSettings.getPendingProfileBadges(closure_17, stateFromStoresArray, { pendingBadgeDisplayOrder, pendingBadgeHiddenBadges }), items7);
-  let obj5 = { user, displayProfile, pendingThemeColors: null };
-  let tmp26;
-  const tmp6Result31 = user(guildId[57]);
+  const items7 = [tmp21, stateFromStoresArray, pendingBadgeDisplayOrder, pendingBadgeHiddenBadges];
+  const memo1 = showUserProfileActionSheet.useMemo(() => {
+    const obj = PendingBadgeSettings;
+    const obj2 = { pendingBadgeDisplayOrder, pendingBadgeHiddenBadges };
+    return obj.getPendingProfileBadges(closure_17, stateFromStoresArray, obj2);
+  }, items7);
+  let obj5 = { user, displayProfile, pendingThemeColors: tmp27 };
+  tmp27 = undefined;
+  const tmpResult5 = tmp(tmp2[60]);
   if (isPreviewingChanges) {
-    tmp26 = pendingThemeColors;
+    tmp27 = pendingThemeColors;
   }
-  obj5.pendingThemeColors = tmp26;
-  const tmpResult1Result = channel(guildId[60])(obj5);
+  const tmpResult1Result = tmpResult5(obj5);
   const primaryColor = tmpResult1Result.primaryColor;
-  hasCustomProfileTheme = tmp28;
+  hasCustomProfileTheme = tmp29;
   ({ theme, secondaryColor } = tmpResult1Result);
-  const tmpResult5 = channel(guildId[60]);
-  const userProfileColors = user(guildId[61]).useUserProfileColors({ theme, primaryColor, secondaryColor });
+  const tmp6Result32 = user(tmp2[61]);
+  const userProfileColors = tmp6Result32.useUserProfileColors({ theme, primaryColor, secondaryColor });
   containerBackground = userProfileColors.containerBackground;
   ({ avatarBackground, statusBackground } = userProfileColors);
-  const tmp6Result32 = user(guildId[61]);
-  const ref1 = showUserProfileActionSheet.useRef(null);
-  const ref = showUserProfileActionSheet.useRef(null);
+  const ref = obj8.useRef(null);
+  const ref1 = obj8.useRef(null);
   const items8 = [name];
-  stateFromStores1 = user(guildId[17]).useStateFromStores(items8, () => UserProfileStore.getFirstWishlistId(user.id));
-  const tmp6Result33 = user(guildId[17]);
-  const fetchWishlist = user(guildId[62]).useFetchWishlist({ wishlistId: stateFromStores1, userId: user.id });
+  const tmp6Result33 = user(tmp2[17]);
+  stateFromStores1 = tmp6Result33.useStateFromStores(items8, () => UserProfileStore.getFirstWishlistId(user.id));
   let obj6 = { wishlistId: stateFromStores1, userId: user.id };
-  const tmp6Result34 = user(guildId[62]);
+  const tmp6Result34 = user(tmp2[62]);
+  const fetchWishlist = tmp6Result34.useFetchWishlist(obj6);
   const items9 = [closure_8];
   const items10 = [stateFromStores1];
-  stateFromStores2 = user(guildId[17]).useStateFromStores(items9, () => {
+  const tmp6Result35 = user(tmp2[17]);
+  stateFromStores2 = tmp6Result35.useStateFromStores(items9, () => {
     let wishlist = null;
     if (null != stateFromStores1) {
       wishlist = WishlistStore.getWishlist(tmp);
     }
     return wishlist;
   }, items10);
-  const items11 = [stateFromStores2, id === user.id];
-  let tmp35 = tmp9;
-  if (id !== user.id) {
-    let tmp36 = null != stateFromStores2;
-    if (tmp36) {
-      tmp36 = arr14.length > 0;
+  const items11 = [stateFromStores2, tmp9];
+  let tmp36 = tmp9;
+  if (!tmp36) {
+    let tmp37 = null != stateFromStores2;
+    if (tmp37) {
+      tmp37 = arr14.length > 0;
     }
-    tmp35 = tmp36;
+    tmp36 = tmp37;
   }
-  closure_24 = tmp35;
-  const tmp6Result35 = user(guildId[17]);
-  const displayableBoardWidgets = user(guildId[64]).useDisplayableBoardWidgets(user.id);
-  const tmp6Result36 = user(guildId[64]);
-  const isMobileGameCollectionExperimentEnabled = user(guildId[65]).useIsMobileGameCollectionExperimentEnabled("UserProfileContent");
-  const tmp6Result37 = user(guildId[65]);
-  let tmp38 = tmp9;
-  if (id === user.id) {
-    tmp38 = isMobileGameCollectionExperimentEnabled;
+  closure_24 = tmp36;
+  const tmp6Result36 = user(tmp2[64]);
+  const displayableBoardWidgets = tmp6Result36.useDisplayableBoardWidgets(user.id);
+  const tmp6Result37 = user(tmp2[65]);
+  const isMobileGameCollectionExperimentEnabled = tmp6Result37.useIsMobileGameCollectionExperimentEnabled("UserProfileContent");
+  let tmp40 = tmp9;
+  const useCanConjureVibegrationsCustomWidget = tmp6(tmp2[66]).useCanConjureVibegrationsCustomWidget;
+  user(tmp2[66]);
+  if (tmp9) {
+    tmp40 = isMobileGameCollectionExperimentEnabled;
   }
-  const tmp39 = displayableBoardWidgets.length > 0 || user(guildId[66]).useCanConjureVibegrationsCustomWidget("UserProfileContent", tmp38);
-  closure_25 = tmp39;
-  const tmp6Result38 = user(guildId[66]);
-  const tmp40 = user(guildId[67]).useIsRecentActivityMobileEnabled("UserProfileContent") && null != stateFromStores;
-  closure_26 = tmp40;
-  const tmp6Result39 = user(guildId[67]);
-  const profileTabIndices = user(guildId[68]).useProfileTabIndices(tmp39, tmp40, tmp35);
+  const tmp41 = displayableBoardWidgets.length > 0 || useCanConjureVibegrationsCustomWidget("UserProfileContent", tmp40);
+  closure_25 = tmp41;
+  const tmp6Result39 = user(tmp2[67]);
+  const tmp42 = tmp6Result39.useIsRecentActivityMobileEnabled("UserProfileContent") && null != stateFromStores;
+  closure_26 = tmp42;
+  const tmp6Result40 = user(tmp2[68]);
+  const profileTabIndices = tmp6Result40.useProfileTabIndices(tmp41, tmp42, tmp36);
   boardTabIndex = profileTabIndices.boardTabIndex;
   activityTabIndex = profileTabIndices.activityTabIndex;
   wishlistTabIndex = profileTabIndices.wishlistTabIndex;
-  const tmp6Result40 = user(guildId[68]);
-  [tmp43, c30] = displayProfile(showUserProfileActionSheet.useState(0), 2);
-  const callback = obj9.useCallback((nativeEvent) => {
+  [tmp45, c30] = displayProfile(obj8.useState(0), 2);
+  displayProfile(obj8.useState(0), 2);
+  const callback = obj8.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);
-  const tmp42 = displayProfile(showUserProfileActionSheet.useState(0), 2);
-  const pageHeights = user(guildId[69]).usePageHeights();
-  handlePageContentSize = pageHeights.handlePageContentSize;
-  const tmp6Result41 = user(guildId[69]);
-  const wishlistViewerCoachmark = user(guildId[70]).useWishlistViewerCoachmark({ isCurrentUser: tmp9, shouldShowWishlistTab: tmp35 });
+  const tmp6Result41 = user(tmp2[69]);
+  const pageHeights1 = tmp6Result41.usePageHeights();
+  handlePageContentSize = pageHeights1.handlePageContentSize;
+  const pageHeights = pageHeights1.pageHeights;
+  const tmp6Result42 = user(tmp2[70]);
+  const wishlistViewerCoachmark = tmp6Result42.useWishlistViewerCoachmark({ isCurrentUser: tmp9, shouldShowWishlistTab: tmp36 });
   isVisible = wishlistViewerCoachmark.isVisible;
   markAsDismissed = wishlistViewerCoachmark.markAsDismissed;
   const items12 = [trackUserProfileAction, isVisible, markAsDismissed];
-  const callback1 = obj9.useCallback((section) => {
-    trackUserProfileAction({ action: "PRESS_SECTION", section });
+  const callback1 = obj8.useCallback((section) => {
+    const obj = { action: "PRESS_SECTION", section };
+    trackUserProfileAction(obj);
+    const tmp2 = section === UserProfileSections.WISHLIST && isVisible;
     if (tmp2) {
       markAsDismissed(ContentDismissActionType.INDIRECT_ACTION);
     }
   }, items12);
-  const tmp6Result42 = user(guildId[70]);
-  const profileSectionTabs = user(guildId[68]).useProfileSectionTabs({ initialUserProfileSection: initialSection, wishlistTabIndex, boardTabIndex, activityTabIndex, onTabChange: callback1 });
+  const tmp6Result43 = user(tmp2[68]);
+  const profileSectionTabs = tmp6Result43.useProfileSectionTabs({ initialUserProfileSection: initialSection, wishlistTabIndex, boardTabIndex, activityTabIndex, onTabChange: callback1 });
   ({ activeProfileTabSection, setActiveProfileTabSection } = profileSectionTabs);
   restoreActiveIndex = profileSectionTabs.restoreActiveIndex;
-  isVisible = tmp49;
-  isVisible2 = tmp50;
+  isVisible = tmp51;
+  isVisible2 = tmp52;
   const items13 = [navigateToPremium];
   ({ handleTabChange, activeProfileTabSectionIndex } = profileSectionTabs);
-  callback2 = obj9.useCallback(() => {
-    ActionSheetActionCreatorsDefault.hideAllActionSheets();
+  callback2 = obj8.useCallback(() => {
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideAllActionSheets();
     if (navigateToPremium != null) {
       navigateToPremium();
     }
   }, items13);
   const items14 = [navigateToShop];
-  callback3 = obj9.useCallback(() => {
-    ActionSheetActionCreatorsDefault.hideAllActionSheets();
+  callback3 = obj8.useCallback(() => {
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideAllActionSheets();
     if (navigateToShop != null) {
       navigateToShop();
     }
   }, items14);
   const items15 = [user, stateFromStores, containerBackground, tmp3, isPreviewingChanges, callback2, callback3, null != primaryColor, guildId, userProfileGameFriendApplicationIds, displayProfile, name, pendingBio, channel, showUserProfileActionSheet];
-  callback4 = obj9.useCallback(() => {
+  callback4 = obj8.useCallback(() => {
+    let items1;
+    let items2;
+    let tmp26;
     if (null != user) {
       if (null != stateFromStores) {
         const items = [closure_8.card, ];
         const obj2 = { backgroundColor: containerBackground };
         items[1] = obj2;
-        const obj3 = { style: null, children: null };
-        const items1 = [, ];
+        const obj3 = { style: items1, children: items2 };
+        items1 = [, ];
         ({ cards: arr3[0], profileContent: arr3[1] } = closure_8);
-        obj3.style = items1;
         let _private;
+        const tmp37 = containerBackground;
+        const tmp38 = closure_21;
+        const tmp39 = metroRequire;
         if (displayProfile != null) {
           _private = tmp40.private;
         }
         if (_private) {
-          const obj = { username: name, containerBackground };
-          _private = closure_2_20(UserProfilePrivateInfoBannerDefault, obj);
+          const obj = { username: name, containerBackground: tmp37 };
+          _private = hasCustomProfileTheme(UserProfilePrivateInfoBannerDefault, obj);
         }
-        const items2 = [_private, , , , , , , , , , ];
+        items2 = [_private, , , , , , , , , , ];
         let isProvisional = tmp.isProvisional;
         if (isProvisional) {
-          const obj4 = { style: items, userId: tmp.id, iconSize: 16 };
-          isProvisional = closure_2_20(ProvisionalAccountExplainer.UserProfileProvisionalAccountExplainerCard, obj4);
+          const obj4 = { style: items, userId: user.id, iconSize: 16 };
+          isProvisional = hasCustomProfileTheme(ProvisionalAccountExplainer.UserProfileProvisionalAccountExplainerCard, obj4);
         }
         items2[1] = isProvisional;
-        let tmp10 = tmp.id === tmp35.id;
-        if (tmp10) {
-          tmp10 = !isPreviewingChanges;
-        }
+        let tmp10 = tmp.id === tmp35.id && !isPreviewingChanges;
         if (tmp10) {
           const obj5 = { navigateToPremium: callback2, navigateToShop: callback3, hasCustomProfileTheme };
-          tmp10 = closure_2_20(UserProfileDismissibleUpsellsDefault, obj5);
+          tmp10 = hasCustomProfileTheme(UserProfileDismissibleUpsellsDefault, obj5);
         }
         items2[2] = tmp10;
-        const obj6 = { user: tmp, currentUser: tmp35, guildId, style: items };
-        items2[3] = closure_2_20(UserProfileActivityDefault, obj6);
+        const obj6 = { user, currentUser: stateFromStores, guildId, style: items };
+        items2[3] = hasCustomProfileTheme(UserProfileActivityDefault, obj6);
         let tmp18Result = userProfileGameFriendApplicationIds.length > 0;
         if (tmp18Result) {
-          const obj7 = { userId: tmp.id, applicationIds: tmp22 };
+          const obj7 = { userId: user.id, applicationIds: tmp22 };
           tmp18Result = tmp18(tmp19(12670), obj7);
         }
         items2[4] = tmp18Result;
-        const obj9 = { userId: tmp.id, displayProfile, pendingBio: null };
-        let tmp26;
+        obj9 = { userId: user.id, displayProfile, pendingBio: tmp26 };
+        tmp26 = undefined;
+        const tmp19Result = UserProfileAboutMeCardDefault;
         if (isPreviewingChanges) {
           tmp26 = pendingBio;
         }
-        obj9.pendingBio = tmp26;
-        items2[5] = closure_2_20(UserProfileAboutMeCardDefault, obj9);
+        items2[5] = hasCustomProfileTheme(tmp19Result, obj9);
         let tmp18Result4 = null != tmp21;
         if (tmp18Result4) {
-          const obj10 = { userId: tmp.id, guildId: tmp21 };
+          const obj10 = { userId: user.id, guildId };
           tmp18Result4 = tmp18(tmp19(6606), obj10);
         }
         items2[6] = tmp18Result4;
@@ -576,421 +723,391 @@ export default noop.memo(function UserProfileContent(user) {
         }
         let tmp18Result5 = null != guild_id;
         if (tmp18Result5) {
-          const obj11 = { user: tmp, currentUser: tmp35, guildId: null, channelId: null, showUserProfile: null };
-          ({ guild_id: obj8.guildId, id: obj8.channelId } = tmp28);
-          obj11.showUserProfile = showUserProfileActionSheet;
+          const obj11 = { user, currentUser: stateFromStores, guildId: null, channelId: null, showUserProfile: showUserProfileActionSheet };
+          ({ guild_id: obj8.guildId, id: obj8.channelId } = channel);
           tmp18Result5 = tmp18(tmp19(12622), obj11);
         }
         items2[7] = tmp18Result5;
-        const obj12 = { userId: tmp.id };
-        items2[8] = closure_2_20(UserProfileConnections.UserProfileAccountConnectionsCard, obj12);
-        const obj13 = { userId: tmp.id };
-        items2[9] = closure_2_20(UserProfileConnections.UserProfileApplicationRoleConnectionsCard, obj13);
+        const obj12 = { userId: user.id };
+        items2[8] = hasCustomProfileTheme(UserProfileConnections.UserProfileAccountConnectionsCard, obj12);
+        const obj13 = { userId: user.id };
+        items2[9] = hasCustomProfileTheme(UserProfileConnections.UserProfileApplicationRoleConnectionsCard, obj13);
         let tmp18Result6 = !tmp25;
-        if (!isPreviewingChanges) {
-          const obj25 = { userId: tmp.id, onBack: showUserProfileActionSheet };
+        if (tmp18Result6) {
+          const obj25 = { userId: user.id, onBack: showUserProfileActionSheet };
           tmp18Result6 = tmp18(tmp19(12625), obj25);
         }
         items2[10] = tmp18Result6;
-        obj3.children = items2;
-        return __initData(timestampProducer, obj3);
+        return tmp38(tmp39, obj3);
       }
     }
     return null;
   }, items15);
-  const items16 = [tmp3.profileContent, stateFromStores1, activeProfileTabSection === pendingBio.WISHLIST, user.id, id === user.id];
-  callback5 = obj9.useCallback(() => {
-    const obj = { style: closure_8.profileContent, children: null };
+  const items16 = [tmp3.profileContent, stateFromStores1, activeProfileTabSection === pendingBio.WISHLIST, user.id, tmp9];
+  callback5 = obj8.useCallback(() => {
+    let items;
+    let tmp10;
+    let tmp9;
+    const obj = { style: closure_8.profileContent, children: items };
+    const tmp = closure_21;
+    const tmp2 = metroRequire;
     if (null == stateFromStores1) {
-      let tmp10 = closure_2_20(UserProfileWishlistGrid.WishlistEmptyState, {});
-      let tmp9 = closure_2_20;
+      tmp10 = hasCustomProfileTheme(UserProfileWishlistGrid.WishlistEmptyState, {});
+      tmp9 = hasCustomProfileTheme;
     } else {
-      const obj2 = { wishlistId: tmp3, maxWidth: ACTION_SHEET_MAX_WIDTH, isVisible };
-      tmp9 = closure_2_20;
-      tmp10 = closure_2_20(UserProfileWishlistGridDefault, obj2);
+      tmp9 = hasCustomProfileTheme;
+      const obj2 = { wishlistId: stateFromStores1, maxWidth: ACTION_SHEET_MAX_WIDTH, isVisible };
+      tmp10 = hasCustomProfileTheme(UserProfileWishlistGridDefault, obj2);
     }
-    const items = [tmp10, ];
-    let tmp9Result = closure_11;
-    if (closure_11) {
-      const obj3 = { userId: user.id, wishlistId: tmp3, maxWidth: ACTION_SHEET_MAX_WIDTH };
+    items = [tmp10, ];
+    let tmp9Result = isCurrentUser;
+    if (tmp9Result) {
+      const obj3 = { userId: user.id, wishlistId: stateFromStores1, maxWidth: ACTION_SHEET_MAX_WIDTH };
       tmp9Result = tmp9(UserProfileWishlistSuggestionsGridDefault, obj3);
     }
     items[1] = tmp9Result;
-    obj.children = items;
-    return __initData(timestampProducer, obj);
+    return tmp(tmp2, obj);
   }, items16);
-  const items17 = [handlePageContentSize, callback4, callback5, tmp39, tmp40, tmp35, boardTabIndex, activityTabIndex, wishlistTabIndex, user, stateFromStores, guildId, , , , ];
+  const items17 = [handlePageContentSize, callback4, callback5, tmp41, tmp42, tmp36, boardTabIndex, activityTabIndex, wishlistTabIndex, user, stateFromStores, guildId, , , , ];
   let id2;
+  const useMemo = obj8.useMemo;
   if (channel != null) {
     id2 = channel.id;
   }
   items17[12] = id2;
   items17[13] = activeProfileTabSection === pendingBio.WIDGETS;
-  items17[14] = id === user.id;
+  items17[14] = tmp9;
   items17[15] = containerBackground;
-  const memo2 = obj9.useMemo(() => {
-    const obj = { id: "main", label: null, page: null };
-    const intl = util.intl;
-    obj.label = intl.string(util.t.LXw470);
-    obj.page = closure_2_20(hasOwnProperty, {
+  const memo2 = useMemo(() => {
+    let id;
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    let obj10;
+    let obj2;
+    let obj4;
+    let obj5;
+    let obj7;
+    let obj8;
+    let tmp16;
+    const obj = { id: "main", label: intl.string(intl5.t.LXw470), page: hasCustomProfileTheme(hasOwnProperty, obj2) };
+    intl = intl5.intl;
+    const items = [obj];
+    obj2 = {
       scrollEnabled: false,
       onContentSizeChange(arg0, arg1) {
         return handlePageContentSize(0, arg0, arg1);
       },
       children: callback4()
-    });
-    const items = [obj];
-    if (closure_25) {
-      const obj3 = { id: "board", label: null, page: null };
-      const intl2 = tmp(1115).intl;
-      obj3.label = intl2.string(tmp(1115).t.laViwx);
-      const obj4 = {
+    };
+    const tmp5 = closure_25;
+    if (tmp5) {
+      const push = items.push;
+      const obj3 = { id: "board", label: intl2.string(intl5.t.laViwx), page: hasCustomProfileTheme(hasOwnProperty, obj4, boardTabIndex) };
+      intl2 = tmp(1115).intl;
+      obj4 = {
         scrollEnabled: false,
         onContentSizeChange(arg0, arg1) {
             return handlePageContentSize(boardTabIndex, arg0, arg1);
           },
-        children: null
+        children: hasCustomProfileTheme(UserProfileWidgetsBoardContainer, obj5)
       };
-      const obj5 = { userId: user.id, isVisible: isVisible2, isCurrentUser, containerBackground };
-      obj4.children = tmp3(UserProfileWidgetsBoardContainer, obj5);
-      obj3.page = tmp3(tmp4, obj4, boardTabIndex);
-      items.push(obj3);
+      obj5 = { userId: user.id, isVisible: isVisible2, isCurrentUser, containerBackground };
+      push(obj3);
     }
-    let tmp12 = closure_26;
-    if (closure_26) {
-      tmp12 = null != stateFromStores;
-    }
-    if (tmp12) {
-      const obj6 = { id: "activity", label: null, page: null };
-      const intl3 = tmp(1115).intl;
-      obj6.label = intl3.string(tmp(1115).t.chq59f);
-      const obj7 = {
+    const tmp13 = closure_26 && null != stateFromStores;
+    if (tmp13) {
+      const push2 = items.push;
+      const obj6 = { id: "activity", label: intl3.string(intl5.t.chq59f), page: hasCustomProfileTheme(hasOwnProperty, obj7, activityTabIndex) };
+      intl3 = tmp(1115).intl;
+      obj7 = {
         scrollEnabled: false,
         onContentSizeChange(arg0, arg1) {
             return handlePageContentSize(activityTabIndex, arg0, arg1);
           },
-        children: null
+        children: hasCustomProfileTheme(tmp16, obj8)
       };
-      obj8 = { user, currentUser: stateFromStores, guildId, channelId: null, containerBackground: null };
-      let id;
+      obj8 = { user, currentUser: stateFromStores, guildId, channelId: id, containerBackground };
+      id = undefined;
+      tmp16 = UserProfileActivityTabContainer;
       if (channel != null) {
         id = channel.id;
       }
-      obj8.channelId = id;
-      obj8.containerBackground = containerBackground;
-      obj7.children = tmp3(UserProfileActivityTabContainer, obj8);
-      obj6.page = tmp3(tmp4, obj7, activityTabIndex);
-      items.push(obj6);
+      push2(obj6);
     }
-    if (closure_24) {
-      const obj9 = { id: "wishlist", label: null, page: null };
-      const intl4 = tmp(1115).intl;
-      obj9.label = intl4.string(tmp(1115).t["7lZ31J"]);
-      const obj10 = {
+    const tmp25 = closure_24;
+    if (tmp25) {
+      const push3 = items.push;
+      obj9 = { id: "wishlist", label: intl4.string(intl5.t["7lZ31J"]), page: hasCustomProfileTheme(hasOwnProperty, obj10, wishlistTabIndex) };
+      intl4 = tmp(1115).intl;
+      obj10 = {
         scrollEnabled: false,
         onContentSizeChange(arg0, arg1) {
             return handlePageContentSize(wishlistTabIndex, arg0, arg1);
           },
         children: callback5()
       };
-      obj9.page = tmp3(tmp4, obj10, wishlistTabIndex);
-      items.push(obj9);
+      push3(obj9);
     }
     return items;
   }, items17);
-  const tmp6Result43 = user(guildId[68]);
-  const tmp6Result44 = user(guildId[83]);
-  segmentedControlState = tmp6Result44.useSegmentedControlState({ pageWidth: tmp43, defaultIndex: activeProfileTabSectionIndex, itemSpacing: channel(guildId[42]).space.PX_24, items: memo2, onPageChange: handleTabChange });
-  let obj7 = { pageWidth: tmp43, defaultIndex: activeProfileTabSectionIndex, itemSpacing: channel(guildId[42]).space.PX_24, items: memo2, onPageChange: handleTabChange };
-  const pagerFillHeight = user(guildId[69]).usePagerFillHeight(scrollPosition);
+  const tmp6Result44 = user(tmp2[83]);
+  let obj7 = { pageWidth: tmp45, defaultIndex: activeProfileTabSectionIndex, itemSpacing: tmp(tmp2[42]).space.PX_24, items: memo2, onPageChange: handleTabChange };
+  segmentedControlState = tmp6Result44.useSegmentedControlState(obj7);
+  const tmp6Result45 = user(tmp2[69]);
+  const pagerFillHeight = tmp6Result45.usePagerFillHeight(scrollPosition);
   const items18 = [segmentedControlState, restoreActiveIndex];
   ({ pagerRef, fillHeight, measureFill } = pagerFillHeight);
-  const layoutEffect = obj9.useLayoutEffect(() => {
+  const layoutEffect = obj8.useLayoutEffect(() => {
     restoreActiveIndex(segmentedControlState);
   }, items18);
-  const tmp6Result45 = user(guildId[69]);
   const items19 = [segmentedControlState, wishlistTabIndex, markAsDismissed, setActiveProfileTabSection];
-  const pagesHeightStyle = user(guildId[69]).usePagesHeightStyle(segmentedControlState, pageHeights.pageHeights, fillHeight);
+  const tmp6Result46 = user(tmp2[69]);
+  const pagesHeightStyle = tmp6Result46.usePagesHeightStyle(segmentedControlState, pageHeights, fillHeight);
   if (null != user) {
     if (null != stateFromStores) {
-      obj8 = { backgroundColor: containerBackground };
+      let OpenableUserProfileAvatar;
+      let num2;
+      obj9 = { backgroundColor: containerBackground };
       if (isPreviewingChanges) {
-        let OpenableUserProfileAvatar = tmp(tmp103);
+        OpenableUserProfileAvatar = tmp(tmp104);
       } else {
-        OpenableUserProfileAvatar = tmp6(tmp103).OpenableUserProfileAvatar;
+        OpenableUserProfileAvatar = tmp6(tmp104).OpenableUserProfileAvatar;
       }
-      let obj10 = { user, displayProfile, bannerHeight: tmp4, pendingBanner: null, pendingAvatarSrc: null, pendingAccentColor: null, pendingThemeColors: null, disableInteraction: null, bannerAnimatedStyle: null, bannerImageAnimatedStyle: null, blurAnimatedProps: null, showBlur: null, privateBanner: null };
-      let tmp65;
+      let obj10 = { user, displayProfile, bannerHeight: tmp4, pendingBanner: tmp67, pendingAvatarSrc: tmp68, pendingAccentColor: tmp69, pendingThemeColors: tmp70, disableInteraction: isPreviewingChanges, bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur, privateBanner: tmp65Result };
+      tmp67 = undefined;
+      const tmp64 = stateFromStores1;
+      const tmpResult6 = tmp(tmp2[85]);
       if (isPreviewingChanges) {
-        tmp65 = pendingBanner;
+        tmp67 = pendingBanner;
       }
-      obj10.pendingBanner = tmp65;
-      let tmp66;
+      tmp68 = undefined;
       if (isPreviewingChanges) {
-        tmp66 = pendingAvatarSrc;
+        tmp68 = pendingAvatarSrc;
       }
-      obj10.pendingAvatarSrc = tmp66;
-      let tmp67;
+      tmp69 = undefined;
       if (isPreviewingChanges) {
         if (null != pendingAccentColor) {
-          tmp67 = pendingAccentColor;
+          tmp69 = pendingAccentColor;
         }
       }
-      obj10.pendingAccentColor = tmp67;
-      let tmp68;
+      tmp70 = undefined;
       if (isPreviewingChanges) {
         if (null != pendingThemeColors) {
-          tmp68 = pendingThemeColors;
+          tmp70 = pendingThemeColors;
         }
       }
-      obj10.pendingThemeColors = tmp68;
-      obj10.disableInteraction = isPreviewingChanges;
-      obj10.bannerAnimatedStyle = bannerAnimatedStyle;
-      obj10.bannerImageAnimatedStyle = bannerImageAnimatedStyle;
-      obj10.blurAnimatedProps = blurAnimatedProps;
-      obj10.showBlur = showBlur;
       let _private;
       if (displayProfile != null) {
         _private = displayProfile.private;
       }
-      let tmp63Result;
+      tmp65Result = undefined;
       if (true === _private) {
         let obj11 = { primaryColor };
-        tmp63Result = tmp63(tmp(tmp2[86]), obj11);
+        tmp65Result = tmp65(tmp(tmp2[86]), obj11);
       }
-      obj10.privateBanner = tmp63Result;
-      const items20 = [hasCustomProfileTheme(tmp(tmp2[85]), obj10), , ];
-      let tmp61Result = !isPreviewingChanges;
-      if (!isPreviewingChanges) {
+      const items20 = [hasCustomProfileTheme(tmpResult6, obj10), , ];
+      let tmp63Result = !isPreviewingChanges;
+      if (tmp63Result) {
         const items21 = [tmp3.bannerButtons, , ];
         let _private1;
+        const View = tmp(tmp2[87]).View;
         if (displayProfile != null) {
           _private1 = displayProfile.private;
         }
         if (_private1) {
           _private1 = tmp3.bannerButtonsWithPrivateBanner;
         }
-        let obj12 = { style: null, children: null };
+        let obj12 = { style: items21, children: items22 };
         items21[1] = _private1;
         items21[2] = bannerAnimatedStyle;
-        obj12.style = items21;
-        let tmp73 = null;
+        let tmp75 = null;
         if (null != stateFromStores) {
-          tmp73 = null;
+          tmp75 = null;
           if (user.id !== stateFromStores.id) {
-            tmp73 = null;
+            tmp75 = null;
             if (!user.bot) {
+              let tmp65Result6;
               if (relationshipType === RelationshipTypes.FRIEND) {
                 let obj13 = { user };
-                let tmp63Result6 = tmp63(closure_24, obj13);
+                tmp65Result6 = tmp65(closure_24, obj13);
               } else {
-                tmp63Result6 = null;
+                tmp65Result6 = null;
                 if (isGameFriends) {
                   const obj14 = { user };
-                  tmp63Result6 = tmp63(closure_25, obj14);
+                  tmp65Result6 = tmp65(closure_25, obj14);
                 }
               }
+              tmp75 = tmp65Result6;
             }
           }
         }
-        const items22 = [tmp73, ];
+        items22 = [tmp75, ];
         const obj15 = { user, currentUser: stateFromStores, displayProfile, channel };
-        items22[1] = tmp63(tmp(tmp2[88]), obj15);
-        obj12.children = items22;
-        tmp61Result = tmp61(tmp(tmp2[87]).View, obj12);
+        items22[1] = hasCustomProfileTheme(tmp(tmp2[88]), obj15);
+        tmp63Result = tmp63(View, obj12);
       }
-      items20[1] = tmp61Result;
+      items20[1] = tmp63Result;
       const obj16 = { style: contentAnimatedStyle, children: null };
-      const obj17 = { user, guildId, disableStatus, pendingAvatarSrc: null, pendingAvatarDecoration: null, backgroundColor: null, statusStyle: null };
-      let tmp79;
+      const obj17 = { user, guildId, disableStatus, pendingAvatarSrc: tmp80, pendingAvatarDecoration: tmp81, backgroundColor: avatarBackground, statusStyle: obj18 };
+      tmp80 = undefined;
+      const View2 = tmp(tmp2[87]).View;
       if (isPreviewingChanges) {
-        tmp79 = pendingAvatarSrc;
+        tmp80 = pendingAvatarSrc;
       }
-      obj17.pendingAvatarSrc = tmp79;
-      let tmp80;
+      tmp81 = undefined;
       if (isPreviewingChanges) {
         if (avatarDecorationOverride == null) {
           avatarDecorationOverride = pendingAvatarDecoration;
         }
-        tmp80 = avatarDecorationOverride;
+        tmp81 = avatarDecorationOverride;
       }
-      obj17.pendingAvatarDecoration = tmp80;
-      obj17.backgroundColor = avatarBackground;
-      const obj18 = { backgroundColor: statusBackground };
-      obj17.statusStyle = obj18;
+      obj18 = { backgroundColor: statusBackground };
       const items23 = [hasCustomProfileTheme(OpenableUserProfileAvatar, obj17), ];
       const items24 = [tmp3.profileContentWrapper, ];
       if (!tmp9) {
-        let num2 = 0;
-        if (null == tmp17) {
+        num2 = 0;
+        if (null == tmp18) {
           num2 = pendingBadgeHiddenBadges;
         }
       } else {
         num2 = 0;
       }
-      const obj19 = { style: null, children: null };
-      const obj20 = { paddingTop: num2, paddingBottom: channel(guildId[50])().bottom + pendingBadgeDisplayOrder };
+      const obj19 = { style: items24, children: null };
+      const obj20 = { paddingTop: num2, paddingBottom: bottom + pendingBadgeDisplayOrder };
       items24[1] = obj20;
-      obj19.style = items24;
-      const obj21 = { customStatusActivity: tmp17, user, guildId, channelId: null, hasCustomProfileTheme: null, showUserProfileActionSheet: null, isPreviewingChanges: null, bubbleRef: null };
-      let id3;
+      const obj21 = { customStatusActivity: tmp18, user, guildId, channelId: id3, hasCustomProfileTheme: null != primaryColor, showUserProfileActionSheet, isPreviewingChanges, bubbleRef: ref };
+      id3 = undefined;
+      const tmp84 = stateFromStores2;
       if (channel != null) {
         id3 = channel.id;
       }
-      obj21.channelId = id3;
-      obj21.hasCustomProfileTheme = tmp28;
-      obj21.showUserProfileActionSheet = showUserProfileActionSheet;
-      obj21.isPreviewingChanges = isPreviewingChanges;
-      obj21.bubbleRef = ref;
-      const items25 = [hasCustomProfileTheme(stateFromStores2, obj21), , ];
-      let tmp61Result2 = null;
+      const items25 = [hasCustomProfileTheme(tmp84, obj21), , ];
+      let tmp63Result2 = null;
       if (null != stateFromStores) {
-        const obj22 = { style: null, children: null };
-        const items26 = [, ];
+        const obj22 = { style: items26, children: items27 };
+        items26 = [, ];
         ({ primaryInfo: arr31[0], profileContent: arr31[1] } = tmp3);
-        obj22.style = items26;
-        const obj23 = { user, channelId: null, guildId: null, displayProfile: null, displayNameOverride: null, pronounsOverride: null, badgesOverride: null, pendingDisplayNameStyles: null, badgeContainerBackground: null, isPreviewingChanges: null };
-        let id4;
+        const obj23 = { user, channelId: id4, guildId, displayProfile, displayNameOverride: tmp89, pronounsOverride: tmp90, badgesOverride: tmp91, pendingDisplayNameStyles: tmp92, badgeContainerBackground: containerBackground, isPreviewingChanges };
+        id4 = undefined;
+        const tmp87 = closure_26;
         if (channel != null) {
           id4 = channel.id;
         }
-        obj23.channelId = id4;
-        obj23.guildId = guildId;
-        obj23.displayProfile = displayProfile;
-        let tmp88;
+        tmp89 = undefined;
         if (isPreviewingChanges) {
-          tmp88 = pendingGlobalName;
+          tmp89 = pendingGlobalName;
         }
-        obj23.displayNameOverride = tmp88;
-        let tmp89;
+        tmp90 = undefined;
         if (isPreviewingChanges) {
-          tmp89 = pendingPronouns;
+          tmp90 = pendingPronouns;
         }
-        obj23.pronounsOverride = tmp89;
-        let tmp90;
+        tmp91 = undefined;
         if (isPreviewingChanges) {
-          tmp90 = memo1;
+          tmp91 = memo1;
         }
-        obj23.badgesOverride = tmp90;
-        let tmp91;
+        tmp92 = undefined;
         if (isPreviewingChanges) {
-          tmp91 = pendingDisplayNameStyles;
+          tmp92 = pendingDisplayNameStyles;
         }
-        obj23.pendingDisplayNameStyles = tmp91;
-        obj23.badgeContainerBackground = containerBackground;
-        obj23.isPreviewingChanges = isPreviewingChanges;
-        const items27 = [tmp63(closure_26, obj23), , , , , , ];
-        let tmp63Result7 = user.id !== stateFromStores.id;
-        if (tmp63Result7) {
+        items27 = [hasCustomProfileTheme(tmp87, obj23), , , , , , ];
+        let tmp65Result7 = user.id !== stateFromStores.id;
+        if (tmp65Result7) {
           const obj24 = { user, guildId };
-          tmp63Result7 = tmp63(tmp(tmp2[89]), obj24);
+          tmp65Result7 = tmp65(tmp(tmp2[89]), obj24);
         }
-        items27[1] = tmp63Result7;
-        let tmp63Result8 = relationshipType === RelationshipTypes.PENDING_INCOMING;
-        if (tmp63Result8) {
-          let obj25 = { user, channelId: null, guildId: null, applicationId: null, style: null, showUserProfile: null };
-          let id5;
+        items27[1] = tmp65Result7;
+        let tmp65Result8 = relationshipType === RelationshipTypes.PENDING_INCOMING;
+        const tmp94 = RelationshipTypes;
+        if (tmp65Result8) {
+          let obj25 = { user, channelId: id5, guildId, applicationId: originApplicationId, style: obj9, showUserProfile: showUserProfileActionSheet };
+          id5 = undefined;
+          const tmpResult7 = tmp(tmp2[90]);
           if (channel != null) {
             id5 = channel.id;
           }
-          obj25.channelId = id5;
-          obj25.guildId = guildId;
-          obj25.applicationId = originApplicationId;
-          obj25.style = obj8;
-          obj25.showUserProfile = showUserProfileActionSheet;
-          tmp63Result8 = tmp63(tmp(tmp2[90]), obj25);
-          const tmpResult7 = tmp(tmp2[90]);
+          tmp65Result8 = tmp65(tmpResult7, obj25);
         }
-        items27[2] = tmp63Result8;
+        items27[2] = tmp65Result8;
         items27[3] = incomingGameRelationshipsForUser.map((applicationId) => {
-          const obj = { user, isGameRelationship: true, applicationId: applicationId.applicationId, channelId: null, guildId: null, style: null, showUserProfile: null };
           let id;
+          const obj = { user, isGameRelationship: true, applicationId: applicationId.applicationId, channelId: id, guildId, style: obj9, showUserProfile: showUserProfileActionSheet };
+          id = undefined;
+          const tmp = closure_20;
+          const tmp2 = UserProfileIncomingFriendRequestDefault;
           if (channel != null) {
             id = channel.id;
           }
-          obj.channelId = id;
-          obj.guildId = guildId;
-          obj.style = obj8;
-          obj.showUserProfile = showUserProfileActionSheet;
-          return closure_2_20(UserProfileIncomingFriendRequestDefault, obj, applicationId.applicationId);
+          return tmp(tmp2, obj, applicationId.applicationId);
         });
-        const obj26 = { user, style: obj8 };
-        items27[4] = tmp63(tmp(tmp2[91]), obj26);
-        let tmp63Result9 = user.id === stateFromStores.id && !isPreviewingChanges;
-        if (tmp63Result9) {
+        const obj26 = { user, style: obj9 };
+        items27[4] = hasCustomProfileTheme(tmp(tmp2[91]), obj26);
+        let tmp65Result9 = user.id === stateFromStores.id && !isPreviewingChanges;
+        if (tmp65Result9) {
           const obj27 = { guildId };
-          tmp63Result9 = tmp63(boardTabIndex, obj27);
+          tmp65Result9 = tmp65(boardTabIndex, obj27);
         }
-        items27[5] = tmp63Result9;
-        let tmp63Result10 = user.id !== stateFromStores.id;
-        if (tmp63Result10) {
-          const obj28 = { user, disableCalls: null, disableMessage: null, location: null, hasCustomProfileTheme: null, style: null };
+        items27[5] = tmp65Result9;
+        let tmp65Result10 = user.id !== stateFromStores.id;
+        if (tmp65Result10) {
+          const obj28 = { user, disableCalls, disableMessage, location: _location, hasCustomProfileTheme: null != primaryColor, style: tmp3.primaryButtons };
+          const tmpResult8 = tmp(tmp2[92]);
           if (!disableCalls) {
-            disableCalls = relationshipType === tmp93.BLOCKED;
+            disableCalls = relationshipType === tmp94.BLOCKED;
           }
           if (!disableCalls) {
             disableCalls = user.isProvisional;
           }
-          obj28.disableCalls = disableCalls;
-          obj28.disableMessage = disableMessage;
-          obj28.location = _location;
-          obj28.hasCustomProfileTheme = tmp28;
-          obj28.style = tmp3.primaryButtons;
-          tmp63Result10 = tmp63(tmp(tmp2[92]), obj28);
-          const tmpResult8 = tmp(tmp2[92]);
+          tmp65Result10 = tmp65(tmpResult8, obj28);
         }
-        items27[6] = tmp63Result10;
-        obj22.children = items27;
-        tmp61Result2 = tmp61(tmp81, obj22);
-        tmp93 = RelationshipTypes;
+        items27[6] = tmp65Result10;
+        tmp63Result2 = tmp63(tmp82, obj22);
       }
-      items25[1] = tmp61Result2;
-      if (!tmp35) {
-        if (!tmp39) {
-          if (!tmp40) {
-            let callback4Result = callback4();
+      items25[1] = tmp63Result2;
+      if (!tmp36) {
+        if (!tmp41) {
+          let callback4Result;
+          if (!tmp42) {
+            callback4Result = callback4();
           }
-          const obj29 = { children: null };
+          const obj29 = { children: items20 };
           items25[2] = callback4Result;
           obj19.children = items25;
-          items23[1] = tmp61(tmp81, obj19);
+          items23[1] = containerBackground(navigateToPremium, obj19);
           obj16.children = items23;
-          items20[2] = tmp61(tmp(tmp2[87]).View, obj16);
-          obj29.children = items20;
-          return tmp61(tmp62, obj29);
+          items20[2] = containerBackground(View2, obj16);
+          return containerBackground(tmp64, obj29);
         }
       }
-      const obj30 = { onLayout: callback, children: null };
-      const obj31 = { style: tmp3.profileTablist, children: null };
-      const obj32 = { state: segmentedControlState, variant: null };
-      let str;
-      if (tmp28) {
+      const obj30 = { onLayout: callback, children: containerBackground(LayerScope, obj33) };
+      const obj31 = { style: tmp3.profileTablist, children: items28 };
+      LayerScope = tmp6(tmp2[93]).LayerScope;
+      const obj32 = { state: segmentedControlState, variant: str };
+      str = undefined;
+      const Tabs = tmp6(tmp2[94]).Tabs;
+      if (null != primaryColor) {
         str = "overlay";
       }
-      const obj33 = { children: null };
-      obj32.variant = str;
-      const items28 = [hasCustomProfileTheme(tmp6(tmp2[94]).Tabs, obj32), ];
-      const obj34 = { ref: ref1, style: null, collapsable: false, pointerEvents: "box-none" };
-      const rect = { position: "absolute", left: null, top: 0, right: 0, bottom: 0 };
+      obj33 = { children: items29 };
+      items28 = [hasCustomProfileTheme(Tabs, obj32), ];
+      const obj34 = { ref: ref1, style: rect, collapsable: false, pointerEvents: "box-none" };
+      rect = { position: "absolute", left: `${Math.max(wishlistTabIndex, 0) / arr22.length * 100}%`, top: 0, right: 0, bottom: 0 };
       const _Math = Math;
-      rect.left = `${Math.max(wishlistTabIndex, 0) / arr22.length * 100}%`;
-      obj34.style = rect;
       items28[1] = hasCustomProfileTheme(navigateToPremium, obj34);
-      obj31.children = items28;
-      const items29 = [containerBackground(navigateToPremium, obj31), , ];
-      const obj35 = { ref: pagerRef, onLayout: measureFill, style: pagesHeightStyle, children: null };
-      const obj36 = { state: segmentedControlState };
-      obj35.children = hasCustomProfileTheme(tmp6(tmp2[95]).SegmentedControlPages, obj36);
-      items29[1] = hasCustomProfileTheme(tmp(tmp2[87]).View, obj35);
-      const obj37 = { anchorRef: ref1, isVisible, markAsDismissed, onViewWishlist: tmp60 };
+      items29 = [containerBackground(navigateToPremium, obj31), , ];
+      const obj35 = { ref: pagerRef, onLayout: measureFill, style: pagesHeightStyle, children: hasCustomProfileTheme(user(tmp2[95]).SegmentedControlPages, obj36) };
+      const View3 = tmp(tmp2[87]).View;
+      obj36 = { state: segmentedControlState };
+      items29[1] = hasCustomProfileTheme(View3, obj35);
+      const obj37 = { anchorRef: ref1, isVisible, markAsDismissed, onViewWishlist: tmp62 };
       items29[2] = hasCustomProfileTheme(tmp(tmp2[96]), obj37);
-      obj33.children = items29;
-      obj30.children = containerBackground(tmp6(tmp2[93]).LayerScope, obj33);
-      callback4Result = tmp63(tmp81, obj30);
-      tmp62 = stateFromStores1;
-      const tmpResult6 = tmp(tmp2[85]);
+      callback4Result = tmp65(tmp82, obj30);
     }
   }
   return null;
 });
+let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileContent.tsx");
+
+export default memoResult;
 export { PrimaryInfo };

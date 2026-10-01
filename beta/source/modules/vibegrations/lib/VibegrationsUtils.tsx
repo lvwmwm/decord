@@ -15,7 +15,34 @@ import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
+let c10;
+let c2;
+let c3;
+let c9;
+let metroImportAll;
+const f80441 = (guildId) => {
+  const obj = VibegrationsGuildExperiment;
+  const obj2 = { guildId: guildId.id, location: _location };
+  let result = obj.isVibegrationsGuildEnabled(obj2);
+  if (result) {
+    const features = guildId.features;
+    result = !features.has(constants.INTERNAL_EMPLOYEE_ONLY);
+  }
+  return result;
+};
+const f80442 = (id, id2) => {
+  let num = -1;
+  if (id.id >= id2.id) {
+    let num2 = 0;
+    if (id.id > id2.id) {
+      num2 = 1;
+    }
+    num = num2;
+  }
+  return num;
+};
 function vibegrationsAppIdFromTopic(topic) {
   if (null != topic) {
     if (topic.startsWith(c11)) {
@@ -30,12 +57,13 @@ function vibegrationsAppIdFromTopic(topic) {
   return null;
 }
 function vibegrationsTextChannelsIn(guildId) {
-  return GuildChannelStore.getChannels(guildId)[React2].filter((channel) => channel.channel.type === constants.GUILD_TEXT);
+  const arr = GuildChannelStore.getChannels(guildId)[React2];
+  return arr.filter((channel) => channel.channel.type === constants.GUILD_TEXT);
 }
 let GuildChannelStore = GuildChannelStore_mod;
 ({ GUILD_SELECTABLE_CHANNELS_KEY: c2, GUILD_VOCAL_CHANNELS_KEY: c3 } = GuildChannelStore);
-let GuildChannelStore = GuildChannelStore_mod;
-({ Permissions: closure_8, ChannelTypes: closure_9, GuildFeatures: c10 } = Constants);
+GuildChannelStore = GuildChannelStore_mod;
+({ Permissions: metroImportAll, ChannelTypes: c9, GuildFeatures: c10 } = Constants);
 let c11 = "vibegrations_application_id=";
 const re12 = /^\d{17,20}$/;
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsUtils.tsx");
@@ -61,22 +89,25 @@ export const vibegrationsSettingsGuildId = function vibegrationsSettingsGuildId(
   return tmp;
 };
 export const vibegrationsSettingChannels = function vibegrationsSettingChannels(stateFromStores1, channel_filter) {
+  let items;
+  let items2;
   if ("voice" === channel_filter) {
-    let items = [];
+    items = [];
   } else {
     items = stateFromStores1[React2];
   }
   const items1 = [...items];
   if ("text" === channel_filter) {
-    let items2 = [];
+    items2 = [];
   } else {
-    items2 = stateFromStores1[React3];
+    items2 = stateFromStores1[_false];
   }
-  HermesBuiltin.arraySpread(items2, tmp2);
+  HermesBuiltin.arraySpread(items1, items2, tmp3);
   return items1.map((channel) => channel.channel);
 };
 export const getVibegrationsProjectAccessSettings = function getVibegrationsProjectAccessSettings(first1) {
-  return { isPublic: first1 & VibegrationsTypes.VibegrationsProjectFlags.PUBLIC, isShared: first1 & VibegrationsTypes.VibegrationsProjectFlags.SHAREABLE };
+  const obj = { isPublic: first1 & VibegrationsTypes.VibegrationsProjectFlags.PUBLIC, isShared: first1 & VibegrationsTypes.VibegrationsProjectFlags.SHAREABLE };
+  return obj;
 };
 export { vibegrationsAppIdFromTopic };
 export const vibegrationsTopicForApp = function vibegrationsTopicForApp(arg0) {
@@ -88,7 +119,6 @@ export const isVibegrationsProjectInGuild = function isVibegrationsProjectInGuil
     let tmp3 = guild_id.guild_id === arg1 || guild_id.preview_guild_id === arg1;
     if (!tmp3) {
       tmp3 = null == guild_id.guild_id && null == guild_id.preview_guild_id;
-      const tmp4 = null == guild_id.guild_id && null == guild_id.preview_guild_id;
     }
     tmp = tmp3;
   }
@@ -96,17 +126,21 @@ export const isVibegrationsProjectInGuild = function isVibegrationsProjectInGuil
 };
 export { vibegrationsTextChannelsIn };
 export const findVibegrationChannelId = function findVibegrationChannelId(guildId, applicationId) {
+  const tmp = vibegrationsTextChannelsIn(guildId);
   for (const item10009 of tmp) {
     let channel = item10009.channel;
-    if (vibegrationsAppIdFromTopic(channel.topic) === arg1) {
+    if (vibegrationsAppIdFromTopic(channel.topic) === applicationId) {
+      let id = channel.id;
       obj.return();
-      return channel.id;
+      return id;
     }
   }
   return null;
 };
 export const isVibegrationsGuildEligible = function isVibegrationsGuildEligible(guildId, VibegrationsRemixSheet) {
-  let result = VibegrationsGuildExperiment.isVibegrationsGuildEnabled({ guildId: guildId.id, location: VibegrationsRemixSheet });
+  const obj = VibegrationsGuildExperiment;
+  const obj2 = { guildId: guildId.id, location: VibegrationsRemixSheet };
+  let result = obj.isVibegrationsGuildEnabled(obj2);
   if (result) {
     const features = guildId.features;
     result = !features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
@@ -114,67 +148,36 @@ export const isVibegrationsGuildEligible = function isVibegrationsGuildEligible(
   return result;
 };
 export const eligibleVibegrationsGuilds = function eligibleVibegrationsGuilds(guildsArray, useIsOwnedVibegrationsApplication) {
-  closure_0 = useIsOwnedVibegrationsApplication;
-  const found = guildsArray.filter((guildId) => {
-    let result = VibegrationsGuildExperiment.isVibegrationsGuildEnabled({ guildId: guildId.id, location: _location });
-    if (result) {
-      const features = guildId.features;
-      result = !features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
-    }
-    return result;
-  });
-  return found.sort((id, id2) => {
-    let num = -1;
-    if (id.id >= id2.id) {
-      let num2 = 0;
-      if (id.id > id2.id) {
-        num2 = 1;
-      }
-      num = num2;
-    }
-    return num;
-  });
+  let closure_0 = useIsOwnedVibegrationsApplication;
+  const found = guildsArray.filter(f80441);
+  return found.sort(f80442);
 };
 export const resolveVibegrationsWorkspaceGuildId = function resolveVibegrationsWorkspaceGuildId(VibegrationsCustomWidgetSheet) {
+  let _location;
+  let id;
   const guildId = SelectedGuildStore.getGuildId();
   let guild = null;
   if (null != guildId) {
     guild = GuildStore.getGuild(guildId);
   }
   if (null != guild) {
-    const obj2 = { guildId: guild.id, location: VibegrationsCustomWidgetSheet };
-    let result = require("VibegrationsGuildExperiment").isVibegrationsGuildEnabled(obj2);
+    let obj = require("VibegrationsGuildExperiment");
+    let obj2 = { guildId: guild.id, location: VibegrationsCustomWidgetSheet };
+    let result = obj.isVibegrationsGuildEnabled(obj2);
     if (result) {
       let features = guild.features;
       result = !features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
     }
     if (result) {
-      let id = guild.id;
+      id = guild.id;
     }
     return id;
   }
   const guildsArray = GuildStore.getGuildsArray();
   _require = VibegrationsCustomWidgetSheet;
-  const found = guildsArray.filter((guildId) => {
-    let result = VibegrationsGuildExperiment.isVibegrationsGuildEnabled({ guildId: guildId.id, location: _location });
-    if (result) {
-      const features = guildId.features;
-      result = !features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
-    }
-    return result;
-  });
+  const found = guildsArray.filter(f80441);
   id = undefined;
-  const first = found.sort((id, id2) => {
-    let num = -1;
-    if (id.id >= id2.id) {
-      let num2 = 0;
-      if (id.id > id2.id) {
-        num2 = 1;
-      }
-      num = num2;
-    }
-    return num;
-  })[0];
+  const first = found.sort(f80442)[0];
   if (first != null) {
     id = first.id;
   }
@@ -183,7 +186,9 @@ export const resolveVibegrationsWorkspaceGuildId = function resolveVibegrationsW
   }
 };
 export const canAccessVibegrations = function canAccessVibegrations(guild, getChannelIdForGuildTransition) {
-  let result = VibegrationsGuildExperiment.isVibegrationsGuildEnabled({ guildId: guild.id, location: getChannelIdForGuildTransition });
+  const obj = VibegrationsGuildExperiment;
+  const obj2 = { guildId: guild.id, location: getChannelIdForGuildTransition };
+  let result = obj.isVibegrationsGuildEnabled(obj2);
   if (result) {
     const features = guild.features;
     result = !features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
@@ -193,21 +198,18 @@ export const canAccessVibegrations = function canAccessVibegrations(guild, getCh
 export const canStartVibegrationsProject = function canStartVibegrationsProject(features, location) {
   features = features.features;
   const hasItem = features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
-  let canResult = !hasItem;
-  if (!hasItem) {
-    canResult = PermissionStore.can(constants.MANAGE_CHANNELS, features);
-  }
-  if (canResult) {
-    canResult = PermissionStore.can(constants.MANAGE_GUILD, features);
-  }
+  let canResult = !hasItem && PermissionStore.can(metroImportAll.MANAGE_CHANNELS, features) && PermissionStore.can(metroImportAll.MANAGE_GUILD, features);
   if (canResult) {
     const obj2 = { guildId: features.id, location };
-    canResult = VibegrationsGuildExperiment.isVibegrationsGuildEnabled(obj2);
+    const obj = VibegrationsGuildExperiment;
+    canResult = obj.isVibegrationsGuildEnabled(obj2);
   }
   return canResult;
 };
 export const useCanAccessVibegrations = function useCanAccessVibegrations(guildId, useGuildActionRows) {
-  let isVibegrationsGuildEnabled = VibegrationsGuildExperiment.useIsVibegrationsGuildEnabled({ guildId: guildId.id, location: useGuildActionRows });
+  const obj = VibegrationsGuildExperiment;
+  const obj2 = { guildId: guildId.id, location: useGuildActionRows };
+  let isVibegrationsGuildEnabled = obj.useIsVibegrationsGuildEnabled(obj2);
   const features = guildId.features;
   if (isVibegrationsGuildEnabled) {
     isVibegrationsGuildEnabled = !features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
@@ -216,14 +218,12 @@ export const useCanAccessVibegrations = function useCanAccessVibegrations(guildI
 };
 export const isVibegrationsChannelCandidate = function isVibegrationsChannelCandidate(channel, ActivitySounds) {
   let guild_id;
+  const getGuild = GuildStore.getGuild;
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  const guild = GuildStore.getGuild(guild_id);
-  let result = null != channel;
-  if (result) {
-    result = channel.type === constants2.GUILD_TEXT;
-  }
+  const guild = getGuild(guild_id);
+  let result = null != channel && channel.type === constants2.GUILD_TEXT;
   if (result) {
     const topic = channel.topic;
     let tmp6 = null;
@@ -250,60 +250,66 @@ export const isVibegrationsChannelCandidate = function isVibegrationsChannelCand
   }
   if (result) {
     let guild_id1;
+    const isVibegrationsGuildEnabled = VibegrationsGuildExperiment.isVibegrationsGuildEnabled;
+    VibegrationsGuildExperiment;
     if (channel != null) {
       guild_id1 = channel.guild_id;
     }
-    const obj2 = { guildId: guild_id1, location: ActivitySounds };
-    result = VibegrationsGuildExperiment.isVibegrationsGuildEnabled(obj2);
+    const obj = { guildId: guild_id1, location: ActivitySounds };
+    result = isVibegrationsGuildEnabled(obj);
   }
   return result;
 };
 export const useIsVibegrationsChannelCandidate = function useIsVibegrationsChannelCandidate(channel, ChannelActions) {
   _require = channel;
   const items = [GuildStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    guild_id = undefined;
-    if (guild_id != null) {
-      guild_id = guild_id.guild_id;
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let guild_id;
+    const getGuild = GuildStore.getGuild;
+    if (channel != null) {
+      guild_id = channel.guild_id;
     }
-    return GuildStore.getGuild(guild_id);
+    return getGuild(guild_id);
   });
-  const obj = require("initialize");
   let guild_id;
+  const useIsVibegrationsGuildEnabled = require("VibegrationsGuildExperiment").useIsVibegrationsGuildEnabled;
+  require("VibegrationsGuildExperiment");
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  let tmp4 = null != channel;
-  const isVibegrationsGuildEnabled = require("VibegrationsGuildExperiment").useIsVibegrationsGuildEnabled({ guildId: guild_id, location: ChannelActions });
-  if (tmp4) {
-    tmp4 = channel.type === constants2.GUILD_TEXT;
+  let tmp5 = null != channel;
+  const obj2 = { guildId: guild_id, location: ChannelActions };
+  const isVibegrationsGuildEnabled = useIsVibegrationsGuildEnabled(obj2);
+  if (tmp5) {
+    tmp5 = channel.type === constants2.GUILD_TEXT;
   }
-  if (tmp4) {
+  if (tmp5) {
     const topic = channel.topic;
-    let tmp6 = null;
+    let tmp7 = null;
     if (null != topic) {
-      tmp6 = null;
+      tmp7 = null;
       if (topic.startsWith(c11)) {
         const substr = topic.slice(28);
-        let tmp10 = null;
+        let tmp11 = null;
         if (regex.test(substr)) {
-          tmp10 = substr;
+          tmp11 = substr;
         }
-        tmp6 = tmp10;
+        tmp7 = tmp11;
       }
     }
-    tmp4 = null != tmp6;
+    tmp5 = null != tmp7;
   }
-  if (tmp4) {
+  if (tmp5) {
     let hasItem;
     if (stateFromStores != null) {
       const features = stateFromStores.features;
       hasItem = features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
     }
-    tmp4 = !hasItem;
+    tmp5 = !hasItem;
   }
-  if (tmp4) {
-    tmp4 = isVibegrationsGuildEnabled;
+  if (tmp5) {
+    tmp5 = isVibegrationsGuildEnabled;
   }
-  return tmp4;
+  return tmp5;
 };

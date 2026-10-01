@@ -4,7 +4,7 @@
 // Dependencies: [7830]
 
 // Module 7829 (head)
-import _mod7830 from "module_7830" /* 7830 */;
+import head from "head" /* 7830 */;
 
 
-export default _mod7830;
+export default head;

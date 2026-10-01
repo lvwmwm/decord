@@ -8,11 +8,13 @@
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 7285 */;
 import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 12861 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 11155 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap, importDefault, map;
+
 function getSavedMessagesForType(arg0) {
   if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === arg0) {
     return SavedMessagesStore.getMessageBookmarks();
@@ -22,48 +24,66 @@ function getSavedMessagesForType(arg0) {
     return SavedMessagesStore.getSavedMessages();
   }
 }
-const size = fn(2);
+let _slicedToArray = _slicedToArray_mod;
 const result = size.fileFinishedImporting("modules/saved_messages/useSavedMessagesForPage.tsx");
 
 export default function useSavedMessagesForPage() {
+  let _undefined;
+  let c1;
+  let c2;
+  let closure_3;
+  const f97147 = (saveData) => saveData.saveData;
   let ALL = arg0;
   if (arg0 === undefined) {
+    let tmp = ALL;
+    let tmp2 = dependencyMap;
     ALL = ALL(7285).SavedMessageSortTypes.ALL;
   }
   importDefault = undefined;
   dependencyMap = undefined;
-  [c1, c2] = noop.useState(() => {
+  _slicedToArray = undefined;
+  let tmp3 = _slicedToArray(react.useState(() => {
+    let messageBookmarks;
+    const tmp = ALL;
     if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
-      let messageBookmarks = SavedMessagesStore.getMessageBookmarks();
-    } else if (SavedMessagesTypes.SavedMessageSortTypes.REMINDER === ALL) {
+      messageBookmarks = SavedMessagesStore.getMessageBookmarks();
+    } else if (SavedMessagesTypes.SavedMessageSortTypes.REMINDER === tmp) {
       messageBookmarks = SavedMessagesStore.getMessageReminders();
     } else {
       messageBookmarks = SavedMessagesStore.getSavedMessages();
     }
-    return messageBookmarks.map((saveData) => saveData.saveData);
-  });
-  _slicedToArray = noop.useRef(SavedMessagesStore.getIsStale());
+    return messageBookmarks.map(f97147);
+  }), 2);
+  [c1, c2] = tmp3;
+  _slicedToArray = react.useRef(SavedMessagesStore.getIsStale());
   let items = [ALL];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let ref;
     function handleChange() {
       lastChanged = SavedMessagesStore.getLastChanged();
       if (lastChanged !== lastChanged) {
         if (ref.current) {
-          if (!obj.getIsStale()) {
+          if (!SavedMessagesStore.getIsStale()) {
+            let messageBookmarks;
             tmp9.current = false;
+            let tmp2 = c2;
+            let tmp3 = ALL;
+            let tmp5 = dependencyMap;
+            const tmp4 = require;
             if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
-              let messageBookmarks = obj.getMessageBookmarks();
-            } else if (SavedMessagesTypes.SavedMessageSortTypes.REMINDER === ALL) {
+              messageBookmarks = obj.getMessageBookmarks();
+            } else if (tmp4(7285).SavedMessageSortTypes.REMINDER === tmp3) {
               messageBookmarks = obj.getMessageReminders();
             } else {
               messageBookmarks = obj.getSavedMessages();
             }
-            c2(messageBookmarks.map((saveData) => saveData.saveData));
+            tmp2(messageBookmarks.map(f97147));
           }
         }
         c2((arg0) => {
           let items = [...arg0];
-          const map = new Map(closure_2_6(lastChanged).map((saveData) => {
+          const arr2 = closure_2_6(lastChanged);
+          map = new Map(arr2.map((saveData) => {
             const items = [saveData.saveData.messageId, saveData];
             return items;
           }));
@@ -93,19 +113,11 @@ export default function useSavedMessagesForPage() {
       SavedMessagesStore.removeChangeListener(handleChange);
     };
   }, items);
-  useRefreshSavedMessagesDefault();
-  let tmp3 = _slicedToArray(noop.useState(() => {
-    if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
-      let messageBookmarks = SavedMessagesStore.getMessageBookmarks();
-    } else if (SavedMessagesTypes.SavedMessageSortTypes.REMINDER === ALL) {
-      messageBookmarks = SavedMessagesStore.getMessageReminders();
-    } else {
-      messageBookmarks = SavedMessagesStore.getSavedMessages();
-    }
-    return messageBookmarks.map((saveData) => saveData.saveData);
-  }), 2);
+  let tmp5 = useRefreshSavedMessagesDefault();
+  const obj = ALL(504);
   const items1 = [SavedMessagesStore];
-  return ALL(504).useStateFromStoresArray(items1, () => {
+  return obj.useStateFromStoresArray(items1, () => {
+    let savedMessage;
     const mapped = _undefined.map((channelId) => savedMessage.getSavedMessage(channelId.channelId, channelId.messageId));
     return mapped.filter(GlobalUtils.isNotNullish);
   });

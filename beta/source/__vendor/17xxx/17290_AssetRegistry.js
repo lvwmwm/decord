@@ -1,0 +1,10 @@
+// Module ID: 17290
+// Function ID: 17291
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 17290 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b4bc35e77125dd7a659435efd876e4cc", name: "ChannelListIcon", type: "png" });

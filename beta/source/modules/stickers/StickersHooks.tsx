@@ -5,30 +5,39 @@
 // Exports: useFavoriteStickerIds, useFavoriteStickers, useFetchStickerPack, useFetchStickerPacks, useFilteredStickerPackCategories, useHasSendableSticker, useLatestFrecentStickerIds, useLatestFrecentStickers, useShouldAnimateSticker, useStickerForRenderableSticker, useStickersGrid
 
 // Module 9848 (StickersHooks)
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl3 from "intl" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
 import StickersUtils from "StickersUtils" /* 5198 */;
 import StickersTypes from "StickersTypes" /* 5581 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 8952 */;
 import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 9832 */;
 import StickersActionCreators from "StickersActionCreators" /* 9849 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 import UserStore from "UserStore" /* 1372 */;
 import StickersPersistedStore from "StickersPersistedStore" /* 5813 */;
 import StickersStore from "StickersStore" /* 5814 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c1, dependencyMap, flattenedGuildIds, rowCount, rowIndex, visibleRowIndex;
 
-require = fn;
+const f89515 = () => {
+  const obj = pack_id(dependencyMap[11]);
+  const stickerPacks = obj.fetchStickerPacks();
+};
 function useStickerPackCategories(channel) {
+  let memo;
+  let packs;
   _require = channel;
-  const favoriteStickers = require("FrecencyUserSettingsHooks").useFrecencySettings().favoriteStickers;
+  let tmp = _require;
+  let tmp2 = packs;
+  let obj = require("FrecencyUserSettingsHooks");
+  const favoriteStickers = obj.useFrecencySettings().favoriteStickers;
   let stickerIds;
   if (favoriteStickers != null) {
     stickerIds = favoriteStickers.stickerIds;
@@ -36,143 +45,150 @@ function useStickerPackCategories(channel) {
   if (stickerIds == null) {
     stickerIds = closure_13;
   }
-  closure_129_0 = stickerIds;
-  let obj = require("FrecencyUserSettingsHooks");
+  let tmpResult = tmp(tmp2[10]);
   let items = [StickersStore];
   const items1 = [stickerIds];
-  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => {
-    const mapped = channel.map((item) => stickerById.getStickerById(item));
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(items, () => {
+    let stickerById;
+    const mapped = stickerIds.map((item) => stickerById.getStickerById(item));
     return mapped.filter((item) => {
       let tmp = null != item;
       if (tmp) {
-        const isGuildStickerResult = channel(packs[13]).isGuildSticker(item);
+        const obj = stickerIds(closure_1_2[13]);
+        const isGuildStickerResult = obj.isGuildSticker(item);
         let result = !isGuildStickerResult;
+        const tmp2 = stickerIds;
+        const tmp3 = closure_1_2;
         if (isGuildStickerResult) {
-          result = tmp2(tmp3[13]).isAvailableGuildSticker(item);
           const tmp2Result = tmp2(tmp3[13]);
+          result = tmp2Result.isAvailableGuildSticker(item);
         }
         tmp = result;
-        const obj = channel(packs[13]);
-        tmp2 = channel;
-        tmp3 = packs;
       }
       return tmp;
     });
   }, items1);
-  let tmpResult = require("initialize");
   const items2 = [StickersStore, StickersPersistedStore];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items2, () => ({ packs: StickersStore.getPremiumPacks(), frequentlyUsedStickers: StickersPersistedStore.stickerFrecencyWithoutFetchingLatest.frequently }), []);
+  const tmpResult6 = tmp(tmp2[10]);
+  const stateFromStoresObject = tmpResult6.useStateFromStoresObject(items2, () => {
+    const obj = { packs: StickersStore.getPremiumPacks(), frequentlyUsedStickers: StickersPersistedStore.stickerFrecencyWithoutFetchingLatest.frequently };
+    return obj;
+  }, []);
   packs = stateFromStoresObject.packs;
   const frequentlyUsedStickers = stateFromStoresObject.frequentlyUsedStickers;
-  const tmpResult6 = require("initialize");
   const items3 = [UserStore];
-  const stateFromStores = require("initialize").useStateFromStores(items3, () => authStore.getCurrentUser());
-  closure_130_0 = channel;
-  const tmpResult7 = require("initialize");
+  const tmpResult7 = tmp(tmp2[10]);
+  const stateFromStores = tmpResult7.useStateFromStores(items3, () => authStore.getCurrentUser());
+  _require = channel;
   const items4 = [StickersStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items4, () => StickersStore.getAllGuildStickers());
-  closure_130_1 = stateFromStores1;
-  const tmpResult8 = require("initialize");
+  const tmpResult8 = tmp(tmp2[10]);
+  const stateFromStores1 = tmpResult8.useStateFromStores(items4, () => StickersStore.getAllGuildStickers());
   const items5 = [SortedGuildStore, GuildStore];
-  const stateFromStoresArray1 = require("initialize").useStateFromStoresArray(items5, () => {
+  const tmpResult9 = tmp(tmp2[10]);
+  const stateFromStoresArray1 = tmpResult9.useStateFromStoresArray(items5, () => {
     flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
     const items = [];
     const item = flattenedGuildIds.forEach((item) => {
-      guild = guild.getGuild(item);
+      const guild = GuildStore.getGuild(item);
       if (null != guild) {
         items.push(guild);
       }
     });
     return items;
   }, []);
-  closure_130_2 = stateFromStoresArray1;
-  const tmpResult9 = require("initialize");
   const items6 = [UserStore];
-  const stateFromStores2 = require("initialize").useStateFromStores(items6, () => authStore.getCurrentUser());
-  closure_130_3 = stateFromStores2;
+  const tmpResult10 = tmp(tmp2[10]);
+  const stateFromStores2 = tmpResult10.useStateFromStores(items6, () => authStore.getCurrentUser());
   const items7 = [stateFromStores1, stateFromStoresArray1, stateFromStores2, channel];
   memo = memo.useMemo(() => {
+    let guildId;
+    let id;
+    let name;
     const items = [];
-    const iter = packs[Symbol.iterator]();
+    const iter = stateFromStoresArray1[Symbol.iterator]();
+    const nextResult = iter.next();
     while (iter !== undefined) {
       ({ name, id } = nextResult);
       let tmp3 = id;
-      value = stateFromStoresArray.get(id);
+      let value = stateFromStores1.get(id);
       let arr2 = value;
       let tmp6 = null != value;
       if (tmp6) {
         tmp6 = 0 !== arr2.length;
       }
       if (tmp6) {
-        let obj = { type: null, id: null, name: null, stickers: null };
-        obj.type = StickersTypes.StickerCategoryTypes.GUILD;
-        obj.id = tmp3;
-        obj.name = name;
-        obj.stickers = arr2;
-        let arr = items.push(obj);
+        let obj = { type: guildId(packs[15]).StickerCategoryTypes.GUILD, id: tmp3, name, stickers: arr2 };
+        let push = items.push;
+        let arr = push(obj);
       }
       continue;
     }
-    let guildId;
+    guildId = undefined;
     if (guildId != null) {
       guildId = obj2.getGuildId();
     }
     if (null != guildId) {
-      guild = GuildStore.getGuild(obj2.getGuildId());
+      const guild = GuildStore.getGuild(obj2.getGuildId());
+      const obj6 = guildId(packs[14]);
+      const canManageAllExpressions = obj6.getManageResourcePermissions(guild).canManageAllExpressions;
       const findIndexResult = items.findIndex((id) => id.id === guildId.getGuildId());
       if (findIndexResult >= 1) {
         items.unshift(items.splice(findIndexResult, 1)[0]);
       } else {
+        const tmp15 = -1 === findIndexResult && null != guild && canManageAllExpressions;
         if (tmp15) {
-          const obj5 = { type: StickersTypes.StickerCategoryTypes.EMPTY_GUILD_UPSELL, id: null, name: null, stickers: null };
+          const unshift = items.unshift;
           ({ id: obj3.id, name: obj3.name } = guild);
-          obj5.stickers = [];
-          items.unshift(obj5);
+          const obj5 = { type: guildId(packs[15]).StickerCategoryTypes.EMPTY_GUILD_UPSELL, id: null, name: null, stickers: [] };
+          unshift(obj5);
         }
-        tmp15 = -1 === findIndexResult && null != guild && obj6.getManageResourcePermissions(guild).canManageAllExpressions;
       }
-      if (null != frequentlyUsedStickers) {
-        const obj8 = { permission: Permissions.USE_EXTERNAL_EMOJIS, user: tmp20, context: obj2 };
-        PermissionUtilsAll.can(obj8);
+      if (null != stateFromStores2) {
+        const obj8 = { permission: constants.USE_EXTERNAL_EMOJIS, user: tmp20, context: guildId };
+        const obj4 = stateFromStoresArray(packs[18]);
+        obj4.can(obj8);
       }
-      obj6 = useManageResourcePermissions;
     }
     return items;
   }, items7);
   const items8 = [packs, stateFromStoresArray, frequentlyUsedStickers, memo, stateFromStores, channel];
   return memo.useMemo(() => {
-    const mapped = packs.map(StickersUtils.createStickerPackCategory);
-    const obj = { type: StickersTypes.StickerCategoryTypes.FAVORITE, id: StickersTypes.StickerCategoryTypes.FAVORITE, name: null, stickers: null };
-    const intl = util.intl;
-    obj.name = intl.string(util.t.y3LQCG);
-    obj.stickers = stateFromStoresArray;
-    const items = [obj, ];
-    const obj2 = { type: StickersTypes.StickerCategoryTypes.RECENT, id: StickersTypes.StickerCategoryTypes.RECENT, name: null, stickers: null };
-    const intl2 = util.intl;
-    obj2.name = intl2.string(util.t["6hjpXW"]);
     let found;
+    let intl;
+    let intl2;
+    const mapped = packs.map(StickersUtils.createStickerPackCategory);
+    let obj = { type: StickersTypes.StickerCategoryTypes.FAVORITE, id: StickersTypes.StickerCategoryTypes.FAVORITE, name: intl.string(intl3.t.y3LQCG), stickers: stateFromStoresArray };
+    intl = intl3.intl;
+    const items = [obj, ];
+    const obj2 = { type: StickersTypes.StickerCategoryTypes.RECENT, id: StickersTypes.StickerCategoryTypes.RECENT, name: intl2.string(intl3.t["6hjpXW"]), stickers: found };
+    intl2 = intl3.intl;
+    found = undefined;
+    const arr2 = frequentlyUsedStickers;
     if (frequentlyUsedStickers != null) {
-      found = frequentlyUsedStickers.filter((guild_id) => {
+      found = arr2.filter((guild_id) => {
+        let someResult;
+        let closure_0 = guild_id;
+        const obj = closure_0(packs[13]);
         if (obj.isGuildSticker(guild_id)) {
           const stickersByGuildId = StickersStore.getStickersByGuildId(guild_id.guild_id);
           let flag;
           if (stickersByGuildId != null) {
-            flag = stickersByGuildId.some((id) => id.id === guild_id.id);
+            flag = stickersByGuildId.some((id) => id.id === closure_0.id);
           }
           if (flag == null) {
             flag = false;
           }
           if (flag) {
-            const stickerSendability = tmp(tmp2[20]).getStickerSendability(guild_id, stateFromStores, channel);
+            const tmpResult = closure_0(packs[20]);
+            const stickerSendability = tmpResult.getStickerSendability(guild_id, stateFromStores, channel);
             flag = stickerSendability !== tmp(tmp2[20]).StickerSendability.NONSENDABLE;
-            const tmpResult = tmp(tmp2[20]);
           }
-          let someResult = flag;
+          someResult = flag;
         } else {
+          const tmpResult2 = closure_0(packs[13]);
           if (tmpResult2.isStandardSticker(guild_id)) {
-            someResult = packs.some((id) => id.id === guild_id.pack_id);
+            someResult = closure_1_2.some((id) => id.id === closure_0.pack_id);
           }
-          tmpResult2 = tmp(tmp2[13]);
         }
         return someResult;
       });
@@ -180,39 +196,36 @@ function useStickerPackCategories(channel) {
     if (found == null) {
       found = [];
     }
-    obj2.stickers = found;
     items[1] = obj2;
-    HermesBuiltin.arraySpread(mapped, HermesBuiltin.arraySpread(memo, 2));
+    HermesBuiltin.arraySpread(items, mapped, HermesBuiltin.arraySpread(items, memo, 2));
     return items;
   }, items8);
 }
-const Permissions = fn(1074).Permissions;
+let react = react_mod;
+const Permissions = Constants.Permissions;
 let closure_13 = [];
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/stickers/StickersHooks.tsx");
 
 export const useFetchStickerPack = function useFetchStickerPack(pack_id) {
   _require = pack_id;
-  const effect = noop.useEffect(() => {
-    const stickerPacks = pack_id(dependencyMap[11]).fetchStickerPacks();
-  }, []);
+  const effect = react.useEffect(f89515, []);
+  let obj = require("get initialized");
   const items = [StickersStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => StickersStore.hasLoadedStickerPacks);
+  const stateFromStores = obj.useStateFromStores(items, () => StickersStore.hasLoadedStickerPacks);
   const items1 = [pack_id, stateFromStores];
-  const effect1 = noop.useEffect(() => {
-    let tmp = stateFromStores;
-    if (stateFromStores) {
-      tmp = null == StickersStore.getStickerPack(closure_0);
-    }
+  const effect1 = react.useEffect(() => {
+    const tmp = stateFromStores && null == StickersStore.getStickerPack(pack_id);
     if (tmp) {
-      const stickerPack = StickersActionCreators.fetchStickerPack(closure_0);
+      const obj = StickersActionCreators;
+      const stickerPack = obj.fetchStickerPack(pack_id);
     }
   }, items1);
 };
 export const useShouldAnimateSticker = function useShouldAnimateSticker(isFocused) {
   const AnimateStickers = UserSettings.AnimateStickers;
   const setting = AnimateStickers.useSetting();
-  return StickersUtils.shouldAnimateSticker(setting, isFocused);
+  const obj = StickersUtils;
+  return obj.shouldAnimateSticker(setting, isFocused);
 };
 export const useStickersGrid = function useStickersGrid(collapsedStickersCategories) {
   collapsedStickersCategories = collapsedStickersCategories.collapsedStickersCategories;
@@ -233,6 +246,11 @@ export const useStickersGrid = function useStickersGrid(collapsedStickersCategor
   let stickersCategories = collapsedStickersCategories.stickersCategories;
   let items = [collapsedStickersCategories, filteredStickers, num, num2, num3, stickerNodeWidth, stickersCategories];
   return stickerNodeWidth.useMemo(() => {
+    let gridSectionIndex;
+    let items1;
+    let items2;
+    let stickers;
+    let type;
     let rounded = Math.floor((items2 - items1 + rowCount) / (gridSectionIndex + rowCount));
     const items = [];
     items1 = [];
@@ -243,78 +261,74 @@ export const useStickersGrid = function useStickersGrid(collapsedStickersCategor
     const rounded1 = Math.floor(Math.max(rowCount, (items2 - items1 - gridSectionIndex * rounded) / (rounded - 1)));
     if (0 !== items2) {
       function addGridSection(sendable, SEARCH_RESULTS, arg2) {
+        let intl;
         const category = SEARCH_RESULTS;
         let flag = arg2;
         if (arg2 === undefined) {
           flag = false;
         }
+        let obj = collapsedStickersCategories(num[13]);
         let guild;
         if (obj.isGuildSticker(sendable[0])) {
           guild = stickersCategories.getGuild(sendable[0].guild_id);
         }
-        obj = collapsedStickersCategories(num[13]);
-        guildId = guildId.getGuildId();
         const tmpResult = collapsedStickersCategories(num[14]);
-        let canCreateExpressions = null != guild;
-        const findIndexResult = visibleRowIndex.findIndex((type) => type.type === category(5581).StickerCategoryTypes.FAVORITE);
-        if (canCreateExpressions) {
-          canCreateExpressions = guildId === guild.id;
+        const canCreateExpressions = tmpResult.getManageResourcePermissions(guild).canCreateExpressions;
+        guildId = guildId.getGuildId();
+        let tmp8 = null != guild;
+        const findIndexResult = visibleRowIndex.findIndex((type) => type.type === category(items1[15]).StickerCategoryTypes.FAVORITE);
+        const findIndexResult1 = visibleRowIndex.findIndex((type) => type.type === category(items1[15]).StickerCategoryTypes.RECENT);
+        if (tmp8) {
+          tmp8 = guildId === guild.id;
         }
-        if (canCreateExpressions) {
-          canCreateExpressions = tmpResult.getManageResourcePermissions(guild).canCreateExpressions;
+        if (tmp8) {
+          tmp8 = canCreateExpressions;
         }
-        if (canCreateExpressions) {
-          canCreateExpressions = sendable.length < tmp(tmp2[16]).getTotalStickerCountForTier(guild.premiumTier);
-          const tmpResult2 = tmp(tmp2[16]);
+        if (tmp8) {
+          const length2 = sendable.length;
+          const tmpResult2 = collapsedStickersCategories(num[16]);
+          tmp8 = length2 < tmpResult2.getTotalStickerCountForTier(guild.premiumTier);
         }
         let sum = length;
-        if (canCreateExpressions) {
+        if (tmp8) {
           sum = length + 1;
         }
         rounded = Math.ceil(sum / category);
         num = 0;
+        const tmp11 = items1;
+        const tmp12 = gridSectionIndex;
         if (!flag) {
           num = rounded;
         }
-        items1[gridSectionIndex] = num;
+        tmp11[tmp12] = num;
         for (let num2 = 0; num2 < rounded; num2 = num2 + 1) {
           let result = num2 * category;
           let substr = sendable.slice(result, result + category);
           let mapped = substr.map((sticker, columnIndex) => {
-            const obj = { type: StickersTypes.StickerGridItemTypes.STICKER, sticker, packId: null, gridSectionIndex: null, rowIndex: null, columnIndex: null, visibleRowIndex: null, category: null };
-            let str = "TODO - fix";
+            let str;
+            const obj = { type: StickersTypes.StickerGridItemTypes.STICKER, sticker, packId: str, gridSectionIndex, rowIndex, columnIndex, visibleRowIndex, category };
+            str = "TODO - fix";
+            const obj2 = StickersUtils;
             if (obj2.isStandardSticker(sticker)) {
               str = sticker.pack_id;
             }
-            obj.packId = str;
-            obj.gridSectionIndex = gridSectionIndex;
-            obj.rowIndex = rowIndex;
-            obj.columnIndex = columnIndex;
-            obj.visibleRowIndex = visibleRowIndex;
-            obj.category = category;
             return obj;
           });
-          let tmp15 = gridSectionIndex > findIndexResult1;
-          if (tmp15) {
-            tmp15 = gridSectionIndex > findIndexResult;
+          let tmp16 = gridSectionIndex > findIndexResult1;
+          if (tmp16) {
+            tmp16 = gridSectionIndex > findIndexResult;
           }
-          if (tmp15) {
-            tmp15 = null != guild;
+          if (tmp16) {
+            tmp16 = null != guild;
           }
-          if (tmp15) {
-            tmp15 = sum > sendable.length;
+          if (tmp16) {
+            tmp16 = sum > sendable.length;
           }
-          if (tmp15) {
-            let obj2 = { type: null, guild_id: null, name: null, gridSectionIndex: null, rowIndex: null, columnIndex: null, visibleRowIndex: null };
-            obj2.type = collapsedStickersCategories(num[15]).StickerGridItemTypes.CREATE_STICKER;
-            obj2.guild_id = guild.id;
-            let intl = collapsedStickersCategories(num[17]).intl;
-            obj2.name = intl.string(collapsedStickersCategories(num[17]).t["UwF+Cw"]);
-            obj2.gridSectionIndex = gridSectionIndex;
-            obj2.rowIndex = rowIndex;
-            obj2.columnIndex = mapped.length;
-            obj2.visibleRowIndex = visibleRowIndex;
-            let arr = mapped.push(obj2);
+          if (tmp16) {
+            let obj2 = { type: collapsedStickersCategories(num[15]).StickerGridItemTypes.CREATE_STICKER, guild_id: guild.id, name: intl.string(collapsedStickersCategories(num[17]).t["UwF+Cw"]), gridSectionIndex, rowIndex, columnIndex: mapped.length, visibleRowIndex };
+            let push = mapped.push;
+            intl = collapsedStickersCategories(num[17]).intl;
+            let arr = push(obj2);
           }
           if (!flag) {
             visibleRowIndex = visibleRowIndex + 1;
@@ -325,23 +339,36 @@ export const useStickersGrid = function useStickersGrid(collapsedStickersCategor
         }
         gridSectionIndex = gridSectionIndex + 1;
       }
+      let tmp22 = items;
+      let tmp23 = null;
       if (null == items) {
         const iter = stickersCategories[Symbol.iterator]();
+        let flag = true;
+        let tmp8 = stickersCategories;
         const nextResult = iter.next();
         while (iter !== undefined) {
           let tmp11 = nextResult;
           if (nextResult.stickers.length > 0) {
+            let tmp17 = rowCount;
             rowCount = rowCount + 1;
+            let tmp18 = nextResult;
             let obj = rounded;
             let hasItem;
             ({ stickers, type } = tmp11);
             if (rounded != null) {
+              let tmp20 = nextResult;
               hasItem = obj.has(tmp11.id);
             }
             let addGridSectionResult = addGridSection(stickers, type, true === hasItem);
-          } else if (tmp11.type === collapsedStickersCategories(num[15]).StickerCategoryTypes.EMPTY_GUILD_UPSELL) {
-            items1[gridSectionIndex] = 0;
-            gridSectionIndex = gridSectionIndex + 1;
+          } else {
+            let tmp12 = nextResult;
+            let tmp13 = collapsedStickersCategories;
+            if (tmp11.type === collapsedStickersCategories(num[15]).StickerCategoryTypes.EMPTY_GUILD_UPSELL) {
+              let tmp15 = gridSectionIndex;
+              items1[gridSectionIndex] = 0;
+              let tmp16 = gridSectionIndex;
+              gridSectionIndex = gridSectionIndex + 1;
+            }
           }
           continue;
         }
@@ -350,23 +377,24 @@ export const useStickersGrid = function useStickersGrid(collapsedStickersCategor
           addGridSection(tmp22.sendable, collapsedStickersCategories(num[15]).StickerCategoryTypes.SEARCH_RESULTS);
         }
         if (tmp22.sendableWithPremium.length > 0) {
+          let tmp25 = num;
           addGridSection(tmp22.sendableWithPremium, collapsedStickersCategories(num[15]).StickerCategoryTypes.SEARCH_RESULTS);
         }
       }
     }
-    return { rowCount, rowCountBySection: items1, stickersGrid: items2, gutterWidth: rounded1, columnCounts: items };
+    let obj2 = { rowCount, rowCountBySection: items1, stickersGrid: items2, gutterWidth: rounded1, columnCounts: items };
+    return obj2;
   }, items);
 };
 export function useHasSendableSticker() {
   return true;
 }
 export const useFetchStickerPacks = function useFetchStickerPacks() {
-  const effect = noop.useEffect(() => {
-    const stickerPacks = pack_id(dependencyMap[11]).fetchStickerPacks();
-  }, []);
+  const effect = react.useEffect(f89515, []);
 };
 export const useFavoriteStickerIds = function useFavoriteStickerIds() {
-  const favoriteStickers = FrecencyUserSettingsHooks.useFrecencySettings().favoriteStickers;
+  const obj = FrecencyUserSettingsHooks;
+  const favoriteStickers = obj.useFrecencySettings().favoriteStickers;
   let stickerIds;
   if (favoriteStickers != null) {
     stickerIds = favoriteStickers.stickerIds;
@@ -377,7 +405,10 @@ export const useFavoriteStickerIds = function useFavoriteStickerIds() {
   return stickerIds;
 };
 export const useFavoriteStickers = function useFavoriteStickers() {
-  const favoriteStickers = stickerIds(9832).useFrecencySettings().favoriteStickers;
+  let stickerIds;
+  const obj = stickerIds(9832);
+  const favoriteStickers = obj.useFrecencySettings().favoriteStickers;
+  const tmp = stickerIds;
   stickerIds = undefined;
   if (favoriteStickers != null) {
     stickerIds = favoriteStickers.stickerIds;
@@ -385,32 +416,34 @@ export const useFavoriteStickers = function useFavoriteStickers() {
   if (stickerIds == null) {
     stickerIds = closure_13;
   }
-  const obj = stickerIds(9832);
   const items = [StickersStore];
   const items1 = [stickerIds];
-  return stickerIds(504).useStateFromStoresArray(items, () => {
-    const mapped = channel.map((item) => stickerById.getStickerById(item));
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStoresArray(items, () => {
+    let stickerById;
+    const mapped = stickerIds.map((item) => stickerById.getStickerById(item));
     return mapped.filter((item) => {
       let tmp = null != item;
       if (tmp) {
-        const isGuildStickerResult = channel(packs[13]).isGuildSticker(item);
+        const obj = stickerIds(closure_1_2[13]);
+        const isGuildStickerResult = obj.isGuildSticker(item);
         let result = !isGuildStickerResult;
+        const tmp2 = stickerIds;
+        const tmp3 = closure_1_2;
         if (isGuildStickerResult) {
-          result = tmp2(tmp3[13]).isAvailableGuildSticker(item);
           const tmp2Result = tmp2(tmp3[13]);
+          result = tmp2Result.isAvailableGuildSticker(item);
         }
         tmp = result;
-        const obj = channel(packs[13]);
-        tmp2 = channel;
-        tmp3 = packs;
       }
       return tmp;
     });
   }, items1);
 };
 export const useLatestFrecentStickerIds = function useLatestFrecentStickerIds() {
-  const frecencySettings = FrecencyUserSettingsHooks.useFrecencySettings();
-  let keys = closure_13;
+  const obj = FrecencyUserSettingsHooks;
+  const frecencySettings = obj.useFrecencySettings();
+  let keys1 = closure_13;
   let stickers;
   if (frecencySettings != null) {
     const stickerFrecency = frecencySettings.stickerFrecency;
@@ -420,19 +453,23 @@ export const useLatestFrecentStickerIds = function useLatestFrecentStickerIds() 
   }
   if (null != stickers) {
     let stickers1;
+    const _Object = Object;
     if (frecencySettings != null) {
       const stickerFrecency2 = frecencySettings.stickerFrecency;
       if (stickerFrecency2 != null) {
         stickers1 = stickerFrecency2.stickers;
       }
     }
-    keys = Object.keys(stickers1);
+    keys1 = keys(stickers1);
   }
-  return keys;
+  return keys1;
 };
 export const useLatestFrecentStickers = function useLatestFrecentStickers() {
-  const frecencySettings = keys(9832).useFrecencySettings();
-  keys = closure_13;
+  let keys1;
+  const obj = keys1(9832);
+  const frecencySettings = obj.useFrecencySettings();
+  const tmp = keys1;
+  keys1 = closure_13;
   let stickers;
   if (frecencySettings != null) {
     const stickerFrecency = frecencySettings.stickerFrecency;
@@ -442,24 +479,31 @@ export const useLatestFrecentStickers = function useLatestFrecentStickers() {
   }
   if (null != stickers) {
     let stickers1;
+    const _Object = Object;
     if (frecencySettings != null) {
       const stickerFrecency2 = frecencySettings.stickerFrecency;
       if (stickerFrecency2 != null) {
         stickers1 = stickerFrecency2.stickers;
       }
     }
-    keys = Object.keys(stickers1);
+    keys1 = keys(stickers1);
   }
-  const obj = keys(9832);
   const items = [StickersStore];
-  const items1 = [keys];
-  return keys(504).useStateFromStoresArray(items, () => {
-    const mapped = keys.map((item) => stickerById.getStickerById(item));
+  const items1 = [keys1];
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStoresArray(items, () => {
+    let stickerById;
+    const mapped = keys1.map((item) => stickerById.getStickerById(item));
     return mapped.filter((item) => undefined !== item);
   }, items1);
 };
 export { useStickerPackCategories };
 export const useStickerForRenderableSticker = function useStickerForRenderableSticker(renderableSticker, arg1) {
+  let c3;
+  let closure_2;
+  let closure_5;
+  let items3;
+  let tmp7;
   _require = renderableSticker;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -467,32 +511,38 @@ export const useStickerForRenderableSticker = function useStickerForRenderableSt
   }
   c3 = undefined;
   let obj4;
-  noop = undefined;
+  react = undefined;
+  let tmp = _require;
+  let obj = require("get initialized");
   const items = [StickersStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => StickersStore.getStickerById(id.id));
-  const tmp4 = obj4(noop.useState(true), 2);
+  const stateFromStores = obj.useStateFromStores(items, () => StickersStore.getStickerById(renderableSticker.id));
+  let obj2 = react;
+  const tmp4 = obj4(react.useState(true), 2);
   dependencyMap = tmp4[1];
-  let obj = require("initialize");
-  const tmp = _require;
-  [tmp6, c3] = obj4(noop.useState(false), 2);
-  const tmp5 = obj4(noop.useState(false), 2);
-  let isGuildStickerResult = require("StickersUtils").isGuildSticker(renderableSticker);
+  const first = tmp4[0];
+  [tmp7, c3] = obj4(react.useState(false), 2);
+  const tmp6 = obj4(react.useState(false), 2);
+  let obj3 = require("StickersUtils");
+  let isGuildStickerResult = obj3.isGuildSticker(renderableSticker);
   if (!isGuildStickerResult) {
-    isGuildStickerResult = tmp(5198).isStandardSticker(renderableSticker);
     const tmpResult = tmp(5198);
+    isGuildStickerResult = tmpResult.isStandardSticker(renderableSticker);
   }
-  obj4 = { hasFetched: tmp6, isReturnable: isGuildStickerResult, renderableSticker, shouldFetch: tmp4[0], stickersStoreDefinition: stateFromStores };
-  noop = obj2.useRef(obj4);
+  obj4 = { hasFetched: tmp7, isReturnable: isGuildStickerResult, renderableSticker, shouldFetch: first, stickersStoreDefinition: stateFromStores };
+  react = obj2.useRef(obj4);
   const effect = obj2.useEffect(() => {
     closure_5.current = obj4;
   });
   const items1 = [flag];
   const effect1 = obj2.useEffect(() => {
-    (async (arg0, value) => {
+    let ref;
+    const tmp = (async (arg0, value) => {
+      let closure_0;
+      let obj2;
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -502,6 +552,7 @@ export const useStickerForRenderableSticker = function useStickerForRenderableSt
           return { value: "HermesInternal", done: null };
         }
       } else {
+        let c2;
         try {
           c3 = 2;
           if (0 === c1) {
@@ -514,7 +565,7 @@ export const useStickerForRenderableSticker = function useStickerForRenderableSt
               return obj4;
             } else {
               const current = ref.current;
-              if (flag) {
+              if (false) {
                 if (!current.isReturnable) {
                   if (null == current.stickersStoreDefinition) {
                     if (current.shouldFetch) {
@@ -523,7 +574,8 @@ export const useStickerForRenderableSticker = function useStickerForRenderableSt
                         c2 = 1;
                         c1 = 2;
                         c3 = 1;
-                        const obj5 = { value: tmp3(c2[11]).fetchSticker(tmp23.id), done: false };
+                        const obj5 = { value: obj2.fetchSticker(tmp19.id), done: false };
+                        obj2 = tmp(c2[11]);
                         return obj5;
                       }
                     }
@@ -532,7 +584,7 @@ export const useStickerForRenderableSticker = function useStickerForRenderableSt
               }
             }
           } else {
-            if (1 === tmp7) {
+            if (1 === tmp4) {
               c2 = 0;
             } else if (arg0 === 1) {
               c3 = 3;
@@ -548,38 +600,36 @@ export const useStickerForRenderableSticker = function useStickerForRenderableSt
             closure_128_3(true);
           }
           c3 = 3;
-        } catch (tmp15) {
-          if (tmp4 === c2) {
-            c3 = tmp2;
-            throw tmp15;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp12) {
+          if (0 === c2) {
+            c3 = 3;
+            throw tmp12;
           } else {
-            c1 = tmp;
+            c1 = 1;
           }
         }
       }
     })();
   }, items1);
   if (isGuildStickerResult) {
-    const items2 = [renderableSticker, tmp6];
-    let items3 = items2;
+    const items2 = [renderableSticker, tmp7];
+    items3 = items2;
   } else {
-    let tmp11 = stateFromStores;
+    let tmp12 = stateFromStores;
     if (stateFromStores == null) {
-      tmp11 = null;
+      tmp12 = null;
     }
-    items3 = [tmp11, tmp6];
+    items3 = [tmp12, tmp7];
   }
   return items3;
 };
 export const useFilteredStickerPackCategories = function useFilteredStickerPackCategories(channel) {
   let tmp = useStickerPackCategories(channel);
-  closure_0 = tmp;
+  let closure_0 = tmp;
   const items = [tmp];
-  return noop.useMemo(() => closure_0.filter((type) => {
-    let tmp = type.type === closure_1_0(closure_1_2[15]).StickerCategoryTypes.EMPTY_GUILD_UPSELL;
-    if (!tmp) {
-      tmp = type.stickers.length > 0;
-    }
+  return react.useMemo(() => closure_0.filter((type) => {
+    const tmp = type.type === closure_1_0(closure_1_2[15]).StickerCategoryTypes.EMPTY_GUILD_UPSELL || type.stickers.length > 0;
     return tmp;
   }, []), items);
 };

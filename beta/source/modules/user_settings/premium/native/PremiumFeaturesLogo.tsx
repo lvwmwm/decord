@@ -5,30 +5,31 @@
 // Exports: default
 
 // Module 8685 (PremiumFeaturesLogo)
+import Fragment from "Fragment" /* 21 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
-import _modDef6857 from "module_6857" /* 6857 */;
-import _modDef8686 from "module_8686" /* 8686 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6857 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8686 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PremiumTypes = fn(1374).PremiumTypes;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const PremiumTypes = PremiumConstants.PremiumTypes;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesLogo.tsx");
 
 export default function PremiumFeaturesLogo(premiumType) {
+  let tmp;
+  let tmp3;
   premiumType = premiumType.premiumType;
+  const style = premiumType.style;
   if (premiumType === PremiumTypes.TIER_0) {
-    let tmp3 = _modDef8686;
-    let tmp = importDefault;
+    tmp3 = AssetRegistryDefault2;
+    tmp = importDefault;
   } else {
     tmp = importDefault;
-    tmp3 = _modDef6857;
+    tmp3 = AssetRegistryDefault;
   }
-  const obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, resizeMode: "contain", source: null };
-  const tmpResult = tmp(5899);
-  obj.accessibilityLabel = PremiumUtils.getPremiumTypeDisplayName(premiumType);
-  obj.style = premiumType.style;
-  obj.source = tmp3;
-  return <tmpResult accessible accessibilityLabel={null} accessibilityRole="header" style={null} resizeMode="contain" source={null} />;
+  tmp(5899);
+  const obj2 = PremiumUtils;
+  return <tmpResult accessible accessibilityLabel={obj2.getPremiumTypeDisplayName(premiumType)} accessibilityRole="header" style={style} resizeMode="contain" source={tmp3} />;
 };

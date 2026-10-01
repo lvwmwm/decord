@@ -3,6 +3,8 @@
 // Dependencies: [41, 42, 93, 95, 98, 10064, 9897, 9898, 9902]
 
 // Module 10071
+import EmptyDuration from "EmptyDuration" /* 9897 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9898 */;
 import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
 import _mod10064 from "module_10064" /* 10064 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
@@ -11,19 +13,14 @@ import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ENTimeUnitAgoFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -34,21 +31,21 @@ function _isNativeReflectConstruct() {
 const regExp = new RegExp("(" + _mod10064.TIME_UNITS_PATTERN + ")\\s{0,5}(?:fa|prima|precedente)(?=(?:\\W|$))", "i");
 const regExp1 = new RegExp("(" + _mod10064.TIME_UNITS_PATTERN + ")\\s{0,5}fa(?=(?:\\W|$))", "i");
 class ENTimeUnitAgoFormatParser {
-  constructor(arg0) {
-    self = this;
-    tmp = c2(this, ENTimeUnitAgoFormatParser);
-    tmp2 = closure_4;
-    obj = closure_4(ENTimeUnitAgoFormatParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
+  constructor(strictMode) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitAgoFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
       constructResult = obj.apply(self, undefined);
     }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = global;
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
     return tmp3Result;
   }
 }
@@ -64,9 +61,10 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const parseDurationResult = ENTimeUnitAgoFormatParser(10064).parseDuration(arg1[1]);
-      const ParsingComponents = ENTimeUnitAgoFormatParser(9898).ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, ENTimeUnitAgoFormatParser(9897).reverseDuration(ENTimeUnitAgoFormatParser(10064).parseDuration(arg1[1])));
+      const parseDurationResult = _mod10064.parseDuration(arg1[1]);
+      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
     }
   }
 ];

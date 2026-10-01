@@ -9,7 +9,8 @@ import size from "module_2" /* 2 */;
 
 const fn = function t(top, arg1) {
   const bound = Math.max(arg1, top.top);
-  return { height: 44 + bound, paddingTop: bound, paddingLeft: Math.max(arg1, top.left), paddingRight: Math.max(arg1, top.right) };
+  const obj = { height: 44 + bound, paddingTop: bound, paddingLeft: Math.max(arg1, top.left), paddingRight: Math.max(arg1, top.right) };
+  return obj;
 };
 fn.__closure = { BASE_VOICE_PANEL_HEADER_HEIGHT: 44 };
 fn.__workletHash = 6201232972174;

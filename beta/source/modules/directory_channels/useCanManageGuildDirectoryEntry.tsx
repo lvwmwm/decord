@@ -5,44 +5,43 @@
 // Exports: default, useCanCreateOrAddGuildInDirectory
 
 // Module 11790 (useCanManageGuildDirectoryEntry)
+import Constants from "Constants" /* 1074 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_2, dependencyMap;
 
-const require = fn;
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
+const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/directory_channels/useCanManageGuildDirectoryEntry.tsx");
 
 export default function useCanManageGuildDirectoryEntry(arg0) {
+  let closure_0;
+  let closure_1;
   _require = arg0;
   const items = [GuildStore];
-  dependencyMap = require("initialize").useStateFromStores(items, () => GuildStore.getGuild(closure_0.guildId));
-  const obj = require("initialize");
+  const obj = require("get initialized");
+  dependencyMap = obj.useStateFromStores(items, () => GuildStore.getGuild(closure_0.guildId));
   const items1 = [closure_2];
-  closure_2 = require("initialize").useStateFromStores(items1, () => ChannelStore.getChannel(closure_0.channelId));
-  const obj2 = require("initialize");
+  const obj2 = require("get initialized");
+  closure_2 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(closure_0.channelId));
   const items2 = [PermissionStore];
-  let stateFromStores = require("initialize").useStateFromStores(items2, () => PermissionStore.can(Permissions.ADMINISTRATOR, closure_1));
-  const obj3 = require("initialize");
+  const obj3 = require("get initialized");
+  let stateFromStores = obj3.useStateFromStores(items2, () => PermissionStore.can(Permissions.ADMINISTRATOR, closure_1));
   const items3 = [PermissionStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items3, () => PermissionStore.can(Permissions.MANAGE_MESSAGES, closure_2));
-  const obj5 = { isEntryAdmin: stateFromStores, canEdit: null, canRemove: null };
-  let tmp3 = stateFromStores;
-  if (!stateFromStores) {
-    tmp3 = stateFromStores1;
-  }
-  obj5.canEdit = tmp3;
+  const obj4 = require("get initialized");
+  const stateFromStores1 = obj4.useStateFromStores(items3, () => PermissionStore.can(Permissions.MANAGE_MESSAGES, closure_2));
+  const obj5 = { isEntryAdmin: stateFromStores, canEdit: stateFromStores || stateFromStores1, canRemove: stateFromStores };
   if (!stateFromStores) {
     stateFromStores = stateFromStores1;
   }
-  obj5.canRemove = stateFromStores;
   return obj5;
 };
 export const useCanCreateOrAddGuildInDirectory = function useCanCreateOrAddGuildInDirectory(channel) {
   _require = channel;
   const items = [PermissionStore];
-  return require("initialize").useStateFromStores(items, () => PermissionStore.can(Permissions.SEND_MESSAGES, closure_0));
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => PermissionStore.can(Permissions.SEND_MESSAGES, channel));
 };

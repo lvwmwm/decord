@@ -5,157 +5,170 @@
 // Exports: usePreviewableMediaText
 
 // Module 9595 (usePreviewableMediaText)
-import util from "util" /* 1115 */;
+import intl21 from "intl" /* 1115 */;
 import usePreviewableMedia from "usePreviewableMedia" /* 9590 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/hooks/usePreviewableMediaText.tsx");
 
 export const usePreviewableMediaText = function usePreviewableMediaText(previewableMedia) {
   previewableMedia = previewableMedia.previewableMedia;
   const author = previewableMedia.author;
   const items = [author, previewableMedia];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    let intl10;
+    let intl11;
+    let intl12;
+    let intl13;
+    let intl14;
+    let intl15;
+    let intl16;
+    let intl17;
+    let intl18;
+    let intl19;
+    let intl20;
+    let intl5;
+    let intl6;
+    let intl7;
+    let intl8;
+    let intl9;
+    let obj12;
+    let obj15;
+    let obj18;
+    let obj21;
+    let obj24;
+    let obj3;
+    let obj6;
+    let obj9;
     if (0 === previewableMedia.length) {
       return { text: null, secondaryText: null };
-    } else if (1 === arr.length) {
+    } else if (1 === previewableMedia.length) {
       const first = arr[0];
       const type = first.type;
       if (usePreviewableMedia.PreviewableMediaTypes.IMAGE === type) {
+        let obj4;
         if (null != author) {
-          const obj2 = { text: null, secondaryText: null };
-          const intl20 = util.intl;
-          const obj3 = { username: tmp90.nick };
-          obj2.text = intl20.formatToPlainString(util.t.pTiyNB, obj3);
-          let obj4 = obj2;
+          const obj2 = { text: intl20.formatToPlainString(intl21.t.pTiyNB, obj3), secondaryText: null };
+          intl20 = intl21.intl;
+          obj4 = obj2;
+          obj3 = { username: tmp90.nick };
         } else {
-          obj4 = { text: null, secondaryText: null };
-          const intl19 = util.intl;
-          obj4.text = intl19.string(util.t.tCcq5p);
+          obj4 = { text: intl19.string(intl21.t.tCcq5p), secondaryText: null };
+          intl19 = intl21.intl;
         }
         return obj4;
       } else if (usePreviewableMedia.PreviewableMediaTypes.VIDEO === type) {
+        let obj7;
         if (null != author) {
-          const obj5 = { text: null, secondaryText: null };
-          const intl18 = util.intl;
-          const obj6 = { username: tmp80.nick };
-          obj5.text = intl18.formatToPlainString(util.t.zqhHWH, obj6);
-          let obj7 = obj5;
+          const obj5 = { text: intl18.formatToPlainString(intl21.t.zqhHWH, obj6), secondaryText: null };
+          intl18 = intl21.intl;
+          obj7 = obj5;
+          obj6 = { username: tmp80.nick };
         } else {
-          obj7 = { text: null, secondaryText: null };
-          const intl17 = util.intl;
-          obj7.text = intl17.string(util.t.KxO2Yl);
+          obj7 = { text: intl17.string(intl21.t.KxO2Yl), secondaryText: null };
+          intl17 = intl21.intl;
         }
         return obj7;
       } else if (usePreviewableMedia.PreviewableMediaTypes.AUDIO === type) {
+        let obj10;
         if (null != author) {
-          const obj8 = { text: null, secondaryText: null };
-          const intl16 = util.intl;
-          const obj9 = { username: tmp70.nick };
-          obj8.text = intl16.formatToPlainString(util.t.HADQ6n, obj9);
-          obj8.secondaryText = first.media.filename;
-          let obj10 = obj8;
+          const obj8 = { text: intl16.formatToPlainString(intl21.t.HADQ6n, obj9), secondaryText: first.media.filename };
+          intl16 = intl21.intl;
+          obj10 = obj8;
+          obj9 = { username: tmp70.nick };
         } else {
-          obj10 = { text: null, secondaryText: null };
-          const intl15 = util.intl;
-          obj10.text = intl15.string(util.t.FWqQt5);
-          obj10.secondaryText = first.media.filename;
+          obj10 = { text: intl15.string(intl21.t.FWqQt5), secondaryText: first.media.filename };
+          intl15 = intl21.intl;
         }
         return obj10;
       } else if (usePreviewableMedia.PreviewableMediaTypes.FILE === type) {
+        let obj13;
         if (null != author) {
-          const obj11 = { text: null, secondaryText: null };
-          const intl14 = util.intl;
-          const obj12 = { username: tmp60.nick };
-          obj11.text = intl14.formatToPlainString(util.t["ifW/ef"], obj12);
-          obj11.secondaryText = first.media.filename;
-          let obj13 = obj11;
+          const obj11 = { text: intl14.formatToPlainString(intl21.t["ifW/ef"], obj12), secondaryText: first.media.filename };
+          intl14 = intl21.intl;
+          obj13 = obj11;
+          obj12 = { username: tmp60.nick };
         } else {
-          obj13 = { text: null, secondaryText: null };
-          const intl13 = util.intl;
-          obj13.text = intl13.string(util.t.mX8M6i);
-          obj13.secondaryText = first.media.filename;
+          obj13 = { text: intl13.string(intl21.t.mX8M6i), secondaryText: first.media.filename };
+          intl13 = intl21.intl;
         }
         return obj13;
       } else if (usePreviewableMedia.PreviewableMediaTypes.STICKER === type) {
+        let obj16;
         if (null != author) {
-          const obj14 = { text: null, secondaryText: null };
-          const intl12 = util.intl;
-          const obj15 = { username: tmp50.nick };
-          obj14.text = intl12.formatToPlainString(util.t["3iI/fs"], obj15);
-          let obj16 = obj14;
+          const obj14 = { text: intl12.formatToPlainString(intl21.t["3iI/fs"], obj15), secondaryText: null };
+          intl12 = intl21.intl;
+          obj16 = obj14;
+          obj15 = { username: tmp50.nick };
         } else {
-          obj16 = { text: null, secondaryText: null };
-          const intl11 = util.intl;
-          obj16.text = intl11.string(util.t.dyquw8);
+          obj16 = { text: intl11.string(intl21.t.dyquw8), secondaryText: null };
+          intl11 = intl21.intl;
         }
         return obj16;
       } else if (usePreviewableMedia.PreviewableMediaTypes.VOICE_MESSAGE === type) {
+        let obj19;
         if (null != author) {
-          const obj17 = { text: null, secondaryText: null };
-          const intl10 = util.intl;
-          const obj18 = { username: tmp40.nick };
-          obj17.text = intl10.formatToPlainString(util.t.Y7wlOj, obj18);
-          let obj19 = obj17;
+          const obj17 = { text: intl10.formatToPlainString(intl21.t.Y7wlOj, obj18), secondaryText: null };
+          intl10 = intl21.intl;
+          obj19 = obj17;
+          obj18 = { username: tmp40.nick };
         } else {
-          obj19 = { text: null, secondaryText: null };
-          const intl9 = util.intl;
-          obj19.text = intl9.string(util.t.slFYgi);
+          obj19 = { text: intl9.string(intl21.t.slFYgi), secondaryText: null };
+          intl9 = intl21.intl;
         }
         return obj19;
       } else if (usePreviewableMedia.PreviewableMediaTypes.GIF === type) {
+        let obj22;
         if (null != author) {
-          const obj20 = { text: null, secondaryText: null };
-          const intl8 = util.intl;
-          const obj21 = { username: tmp30.nick };
-          obj20.text = intl8.formatToPlainString(util.t.mikhon, obj21);
-          let obj22 = obj20;
+          const obj20 = { text: intl8.formatToPlainString(intl21.t.mikhon, obj21), secondaryText: null };
+          intl8 = intl21.intl;
+          obj22 = obj20;
+          obj21 = { username: tmp30.nick };
         } else {
-          obj22 = { text: null, secondaryText: null };
-          const intl7 = util.intl;
-          obj22.text = intl7.string(util.t.p0oZmy);
+          obj22 = { text: intl7.string(intl21.t.p0oZmy), secondaryText: null };
+          intl7 = intl21.intl;
         }
         return obj22;
       } else {
+        let obj25;
         if (null != author) {
-          const obj23 = { text: null, secondaryText: null };
-          const intl6 = util.intl;
-          const obj24 = { username: tmp115.nick };
-          obj23.text = intl6.formatToPlainString(util.t["7FJeVi"], obj24);
-          let obj25 = obj23;
+          const obj23 = { text: intl6.formatToPlainString(intl21.t["7FJeVi"], obj24), secondaryText: null };
+          intl6 = intl21.intl;
+          obj25 = obj23;
+          obj24 = { username: tmp115.nick };
         } else {
-          obj25 = { text: null, secondaryText: null };
-          const intl5 = util.intl;
-          obj25.text = intl5.string(util.t.sDqZHL);
+          obj25 = { text: intl5.string(intl21.t.sDqZHL), secondaryText: null };
+          intl5 = intl21.intl;
         }
         return obj25;
       }
     } else {
+      let formatResult;
+      let formatResult1;
+      const everyResult = previewableMedia.every((type) => type.type === previewableMedia(author[1]).PreviewableMediaTypes.FILE);
       if (null != author) {
-        const intl2 = util.intl;
-        const obj26 = { count: length, username: tmp101.nick };
-        let formatResult = intl2.format(util.t["319zWs"], obj26);
+        const intl2 = intl21.intl;
+        const obj26 = { count: previewableMedia.length, username: author.nick };
+        formatResult = intl2.format(intl21.t["319zWs"], obj26);
       } else {
-        const intl = util.intl;
-        const obj = { count: length };
-        formatResult = intl.formatToPlainString(util.t.y0gZht, obj);
+        const intl = intl21.intl;
+        const obj = { count: previewableMedia.length };
+        formatResult = intl.formatToPlainString(intl21.t.y0gZht, obj);
       }
       if (null != author) {
-        const intl4 = util.intl;
-        const obj27 = { count: length, username: tmp101.nick };
-        let formatResult1 = intl4.format(util.t["1OSGGk"], obj27);
+        const intl4 = intl21.intl;
+        const obj27 = { count: previewableMedia.length, username: author.nick };
+        formatResult1 = intl4.format(intl21.t["1OSGGk"], obj27);
       } else {
-        const intl3 = util.intl;
-        const obj28 = { count: length };
-        formatResult1 = intl3.formatToPlainString(util.t["8/qgDd"], obj28);
+        const intl3 = intl21.intl;
+        const obj28 = { count: previewableMedia.length };
+        formatResult1 = intl3.formatToPlainString(intl21.t["8/qgDd"], obj28);
       }
       if (everyResult) {
         formatResult1 = formatResult;
       }
-      const obj29 = { text: formatResult1, secondaryText: null };
-      return obj29;
+      return { text: formatResult1, secondaryText: null };
     }
   }, items);
 };

@@ -5,60 +5,74 @@
 // Exports: default
 
 // Module 12629 (UserProfileEditNoteModal)
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
+import useNavigation from "useNavigation" /* 1485 */;
+import Text_Text from "Text/Text" /* 4832 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import NavigatorHeader from "NavigatorHeader" /* 5936 */;
+import Navigator2 from "Navigator" /* 6421 */;
 import UserProfileEditNote from "UserProfileEditNote" /* 12630 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let navigation;
+
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
 
 export default function UserProfileEditNoteModal(arg0) {
-  ({ userId: navigation, onSave: closure_1, onBack: dependencyMap } = arg0);
-  _slicedToArray = undefined;
+  let intl;
+  let obj4;
+  let obj5;
+  let obj6;
+  let tmpResult2;
+  let userId;
+  ({ userId: require, onSave: importDefault, onBack: dependencyMap } = arg0);
+  let shouldFocusInput;
   function handleClose() {
-    ModalActionCreatorsDefault.pop();
+    const arr = ModalActionCreatorsDefault;
+    arr.pop();
     if (dependencyMap != null) {
       dependencyMap();
     }
   }
-  navigation = undefined;
-  onSave = undefined;
-  navigation = navigation(1485).useNavigation();
-  [_slicedToArray, onSave] = handleClose.useState(false);
+  const obj = useNavigation;
+  navigation = obj.useNavigation();
+  const tmp4 = shouldFocusInput(handleClose.useState(false), 2);
+  const onSave = tmp4[1];
   const items = [navigation];
+  shouldFocusInput = tmp4[0];
   const effect = handleClose.useEffect(() => navigation.addListener("transitionEnd", (data) => {
     if (!data.data.closing) {
-      onSave(true);
+      closure_1_1(true);
     }
   }), items);
-  let obj = navigation(1485);
-  const tmp6 = jsx;
-  const obj3 = { initialRouteName: "root", headerStatusBarHeight: 12, headerStyle: null, screens: null };
-  const obj2 = navigation(1365);
-  let obj4;
+  const Navigator = Navigator2.Navigator;
+  utils_PlatformUtils;
+  const obj3 = { initialRouteName: "root", headerStatusBarHeight: 12, headerStyle: obj4, screens: obj5 };
+  obj4 = undefined;
+  const tmp7 = jsx;
+  const tmpResult = utils_PlatformUtils;
   if (!tmpResult.isAndroid()) {
     obj4 = { height: 56 };
   }
-  obj3.headerStyle = obj4;
-  const obj5 = { root: null };
-  const obj6 = { title: null, headerTitle: null, headerLeft: null, render: null };
-  let intl = tmp(1115).intl;
-  obj6.title = intl.string(navigation(1115).t.sHHsOM);
-  obj6.headerTitle = function headerTitle() {
-    const obj = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null };
-    const intl = navigation(1115).intl;
-    obj.children = intl.string(navigation(1115).t.sHHsOM);
-    return jsx(navigation(4832).Text, { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null });
+  obj5 = { root: obj6 };
+  obj6 = {
+    title: intl.string(intl2.t.sHHsOM),
+    headerTitle() {
+      const Text = Text_Text.Text;
+      const intl = intl2.intl;
+      return <Text variant="redesign/heading-18/bold" accessibilityRole="header">{intl.string(intl2.t.sHHsOM)}</Text>;
+    },
+    headerLeft: tmpResult2.getHeaderCloseButton(handleClose),
+    render() {
+      return jsx(UserProfileEditNote.default, { userId: require, onSave: importDefault, onClose: handleClose, shouldFocusInput });
+    }
   };
-  tmpResult = navigation(1365);
-  obj6.headerLeft = navigation(5936).getHeaderCloseButton(handleClose);
-  obj6.render = function render() {
-    return jsx(UserProfileEditNote.default, { userId: navigation, onSave, onClose: handleClose, shouldFocusInput });
-  };
-  obj5.root = obj6;
-  obj3.screens = obj5;
-  return tmp6(navigation(6421).Navigator, obj3);
+  intl = tmp(1115).intl;
+  tmpResult2 = NavigatorHeader;
+  return tmp7(Navigator, obj3);
 };

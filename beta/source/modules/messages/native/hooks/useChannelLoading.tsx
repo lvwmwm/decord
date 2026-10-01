@@ -5,31 +5,41 @@
 // Exports: default
 
 // Module 11034 (useChannelLoading)
-import hooks_useMountEffectDefault from "hooks/useMountEffect" /* 5299 */;
+import reactDefault from "react" /* 5299 */;
 import messages_MessagesUtils from "messages/MessagesUtils" /* 10822 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import ChannelLatestMessageLoadingStatsManagerDefault from "ChannelLatestMessageLoadingStatsManager" /* 11035 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/hooks/useChannelLoading.tsx");
 
 export default function useChannelLoading(arg0) {
+  let channelId;
+  let first;
+  let jumpTargetId;
+  let oldestUnreadMessageId;
   ({ channelId: require, jumpTargetId: importDefault, oldestUnreadMessageId: dependencyMap, shouldJumpToOriginalPost: _slicedToArray } = arg0);
   let channelLatestMessageLoadingStatsManager;
-  channelLatestMessageLoadingStatsManager = _slicedToArray(channelLatestMessageLoadingStatsManager.useState(() => new jumpTargetId(oldestUnreadMessageId[2])("Messages")), 1)[0];
-  hooks_useMountEffectDefault(() => {
+  channelLatestMessageLoadingStatsManager = _slicedToArray(channelLatestMessageLoadingStatsManager.useState(() => {
+    const tmp = new ChannelLatestMessageLoadingStatsManagerDefault("Messages");
+    return tmp;
+  }), 1)[0];
+  reactDefault(() => {
     const obj = messages_MessagesUtils;
-    const result = obj.startOrCancelChannelLatestMessagesLoad({ jumpTargetId, oldestUnreadMessageId, shouldJumpToOriginalPost: _slicedToArray(false), channelId, tracker });
+    const obj2 = { jumpTargetId: importDefault, oldestUnreadMessageId: dependencyMap, shouldJumpToOriginalPost: _slicedToArray(false), channelId: require, tracker };
+    const result = obj.startOrCancelChannelLatestMessagesLoad(obj2);
     return () => {
       first.cancel();
     };
   });
-  return {
+  let obj = {
     channelLatestMessageLoadingStatsManager,
     startOrCancelLatestMessagesLoad(arg0) {
       const obj = messages_MessagesUtils;
-      const result = obj.startOrCancelChannelLatestMessagesLoad({ jumpTargetId, oldestUnreadMessageId, shouldJumpToOriginalPost: _slicedToArray(arg0), channelId, tracker });
+      const obj2 = { jumpTargetId: importDefault, oldestUnreadMessageId: dependencyMap, shouldJumpToOriginalPost: _slicedToArray(arg0), channelId: require, tracker };
+      const result = obj.startOrCancelChannelLatestMessagesLoad(obj2);
     }
   };
+  return obj;
 };

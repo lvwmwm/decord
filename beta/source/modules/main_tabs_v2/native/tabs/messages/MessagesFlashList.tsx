@@ -4,6 +4,7 @@
 // Dependencies: [32, 19, 21, 15689, 15663, 15728, 15729, 15675, 15673, 15678, 15690, 15727, 15730, 8179, 2]
 
 // Module 15733 (MessagesFlashList)
+import Fragment from "Fragment" /* 21 */;
 import MessagesItemChannel from "MessagesItemChannel" /* 15663 */;
 import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15673 */;
 import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 15675 */;
@@ -13,15 +14,18 @@ import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 15727 */;
 import MessagesItemSeparatorDefault from "MessagesItemSeparator" /* 15728 */;
 import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 15729 */;
 import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 15730 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesFlashList.tsx");
+let item;
 
-export default noop.memo(noop.forwardRef(function MessagesFlashList(listItemHeight, ref) {
+const jsx = Fragment.jsx;
+const memoResult = react.memo(react.forwardRef(function MessagesFlashList(listItemHeight, ref) {
+  let accessibilityLabel;
+  let data;
+  let handleScrollAnimated;
+  let insetEnd;
   ({ data, insetEnd } = listItemHeight);
   listItemHeight = listItemHeight.listItemHeight;
   const listItemSuggestedFriendHeight = listItemHeight.listItemSuggestedFriendHeight;
@@ -42,19 +46,23 @@ export default noop.memo(noop.forwardRef(function MessagesFlashList(listItemHeig
   const extraData = tmp2.friendsHeaderOffset;
   const listHeaderHeight = tmp2.listHeaderHeight;
   let items = [listHeaderHeight];
-  const imperativeHandle = listRefHappeningNow.useImperativeHandle(ref, () => ({
-    scrollToTop() {
-      let flag = arg0;
-      if (arg0 === undefined) {
-        flag = false;
+  const imperativeHandle = listRefHappeningNow.useImperativeHandle(ref, () => {
+    let offset;
+    let obj = {
+      scrollToTop() {
+        let flag = arg0;
+        if (arg0 === undefined) {
+          flag = false;
+        }
+        const current = ref.current;
+        if (current != null) {
+          const obj = { offset, animated: flag };
+          current.scrollToOffset(obj);
+        }
       }
-      const current = ref.current;
-      if (current != null) {
-        const obj = { offset, animated: flag };
-        current.scrollToOffset(obj);
-      }
-    }
-  }), items);
+    };
+    return obj;
+  }, items);
   const items1 = [listItemHeight, scrollPosition, extraData, listTop, listLeft, listItemSuggestedFriendHeight, friendSuggestions, setAddedFriendSuggestions];
   const renderItem = listRefHappeningNow.useCallback((item) => {
     item = item.item;
@@ -64,13 +72,10 @@ export default noop.memo(noop.forwardRef(function MessagesFlashList(listItemHeig
         if ("separator" === kind) {
           return jsx(MessagesItemSeparatorDefault, {});
         } else if ("friendsHeader" === kind) {
-          const obj2 = { scrollPosition, stickyAt: extraData, stickyTop: listTop, stickyLeft: listLeft };
           return jsx(MessagesItemSuggestedFriendsHeaderDefault, { scrollPosition, stickyAt: extraData, stickyTop: listTop, stickyLeft: listLeft });
         } else if ("suggestedFriend" === kind) {
-          const obj3 = { height: listItemSuggestedFriendHeight, suggestedFriend: friendSuggestions[item.row], onAddFriendSuggestions: setAddedFriendSuggestions };
           return jsx(MessagesItemSuggestedFriend.MessagesItemSuggestedFriendFlash, { height: listItemSuggestedFriendHeight, suggestedFriend: friendSuggestions[item.row], onAddFriendSuggestions: setAddedFriendSuggestions });
         } else if ("placeholder" === kind) {
-          const obj = { row: item.row, height: listItemHeight };
           return jsx(MessagesItemPlaceholderDefault, { row: item.row, height: listItemHeight });
         }
       }
@@ -109,15 +114,14 @@ export default noop.memo(noop.forwardRef(function MessagesFlashList(listItemHeig
   }, items2);
   const items4 = [renderFooter];
   const ListHeaderComponent = listRefHappeningNow.useMemo(() => {
+    const tmp = renderHeader;
     if (useMessagesData.MessagesDataHeader.HappeningNow === renderHeader) {
-      const obj = { listRef: listRefHappeningNow };
       return jsx(MessagesItemHappeningNowDefault, { listRef: listRefHappeningNow });
     } else if (useMessagesData.MessagesDataHeader.EmptyState === tmp) {
       return jsx(MessagesItemEmptyStateDefault, {});
     } else {
       return null;
     }
-    tmp = renderHeader;
   }, items3);
   const ListFooterComponent = listRefHappeningNow.useMemo(() => {
     let tmp = null;
@@ -128,7 +132,7 @@ export default noop.memo(noop.forwardRef(function MessagesFlashList(listItemHeig
   }, items4);
   const tmp9 = listLeft(listRefHappeningNow.useState(null), 2);
   const first = tmp9[0];
-  closure_18 = tmp9[1];
+  let closure_18 = tmp9[1];
   const items5 = [data2];
   const onCommitLayoutEffect = listRefHappeningNow.useCallback(() => closure_18(data2), items5);
   const items6 = [first, data2, friendsHeaderIndex];
@@ -148,3 +152,6 @@ export default noop.memo(noop.forwardRef(function MessagesFlashList(listItemHeig
   const scrollIndicatorInsets = listRefHappeningNow.useMemo(() => ({ bottom: scrollIndicatorInsetBottom }), items8);
   return listTop(insetEnd(listItemSuggestedFriendHeight[13]).AnimatedFlashList, { ref, accessibilityLabel, contentContainerStyle, data: data2, extraData, getItemType, keyExtractor, ListFooterComponent, ListHeaderComponent, onCommitLayoutEffect, onLoad: onCommitLayoutEffect, onScroll, renderItem, scrollIndicatorInsets, stickyHeaderIndices });
 }));
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesFlashList.tsx");
+
+export default memoResult;

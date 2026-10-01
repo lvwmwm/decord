@@ -5,13 +5,15 @@
 // Exports: getPendingRelationshipIds
 
 // Module 16598 (getPendingRelationshipIds)
+import Constants from "Constants" /* 1074 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import size from "module_2" /* 2 */;
 
 function filterFromPending(arg0) {
-  return RelationshipStore.isSpam(arg0) || RelationshipStore.isIgnored(arg0);
+  const tmp = RelationshipStore.isSpam(arg0) || RelationshipStore.isIgnored(arg0);
+  return tmp;
 }
-const RelationshipTypes = fn(1074).RelationshipTypes;
-const size = fn(2);
+const RelationshipTypes = Constants.RelationshipTypes;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/hooks/getPendingRelationshipIds.tsx");
 
 export const getPendingRelationshipIds = function getPendingRelationshipIds(mutableRelationships) {
@@ -24,7 +26,7 @@ export const getPendingRelationshipIds = function getPendingRelationshipIds(muta
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp3 = nextResult;
-    value = mutableRelationships.get(nextResult);
+    let value = mutableRelationships.get(nextResult);
     let tmp5 = value;
     let tmp6 = RelationshipTypes;
     let tmp7 = value !== RelationshipTypes.PENDING_INCOMING;

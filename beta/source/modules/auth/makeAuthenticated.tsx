@@ -5,22 +5,27 @@
 // Exports: makeAuthenticated
 
 // Module 16571 (makeAuthenticated)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import AuthenticationUtils from "AuthenticationUtils" /* 7081 */;
 import RedirectUnauthenticatedDefault from "RedirectUnauthenticated" /* 16572 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const LoginStates = fn(1074).LoginStates;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let _require, importDefault, merged, obj1, obj2, obj5, tmp, tmp10, tmp10Result, tmp11, tmp12, tmp2, tmp4, tmp5, tmp6, tmp8, tmp9;
+
+const LoginStates = Constants.LoginStates;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/auth/makeAuthenticated.tsx");
 
 export const makeAuthenticated = function makeAuthenticated(displayName, arg1) {
+  let closure_1;
   _require = displayName;
   importDefault = arg1;
+  let obj = arg2;
   if (arg2 === undefined) {
-    let obj = { passProps: true };
+    obj = { passProps: true };
   }
   let str = displayName.displayName;
   if (str == null) {

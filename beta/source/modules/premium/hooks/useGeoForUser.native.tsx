@@ -6,18 +6,24 @@
 
 // Module 6838 (useGeoForUser)
 import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 5174 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import BillingInfoStore from "BillingInfoStore" /* 4490 */;
 import IAPStore from "IAPStore" /* 6658 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
+let ipLocation, product;
+
 const result = size.fileFinishedImporting("modules/premium/hooks/useGeoForUser.native.tsx");
 
 export default function useGeoForUser() {
+  let authenticated;
+  let countryCode;
+  let stateFromStores2;
+  let subdivisionCode;
+  let obj = stateFromStores2(504);
   const items = [IAPStore];
-  const stateFromStores = stateFromStores2(504).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     product = product.getProduct(stateFromStores2(dependencyMap[5]).ProductIds.PREMIUM_TIER_2_MONTHLY);
     let countryCode;
     if (product != null) {
@@ -25,32 +31,28 @@ export default function useGeoForUser() {
     }
     return countryCode;
   });
-  let obj = stateFromStores2(504);
   const items1 = [BillingInfoStore];
-  const stateFromStores1 = stateFromStores2(504).useStateFromStores(items1, () => ipLocation.ipLocation);
   const obj2 = stateFromStores2(504);
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => ipLocation.ipLocation);
   const items2 = [AuthenticationStore];
-  stateFromStores2 = stateFromStores2(504).useStateFromStores(items2, () => authenticated.isAuthenticated());
+  const obj3 = stateFromStores2(504);
+  stateFromStores2 = obj3.useStateFromStores(items2, () => authenticated.isAuthenticated());
   const items3 = [stateFromStores1, stateFromStores2];
-  const effect = noop.useEffect(() => {
-    let tmp = stateFromStores2;
-    if (stateFromStores2) {
-      tmp = !BillingInfoStore.ipLocationLoaded;
-    }
+  const effect = react.useEffect(() => {
+    const tmp = stateFromStores2 && !BillingInfoStore.ipLocationLoaded;
     if (tmp) {
-      ipLocation = actions_BillingActionCreatorsAll.fetchIpLocation();
+      const obj = actions_BillingActionCreatorsAll;
+      ipLocation = obj.fetchIpLocation();
     }
   }, items3);
-  const obj4 = { defaultBillingCountryCode: stateFromStores, ipCountryCode: null, ipSubdivisionCode: null };
-  let countryCode;
+  const obj4 = { defaultBillingCountryCode: stateFromStores, ipCountryCode: countryCode, ipSubdivisionCode: subdivisionCode };
+  countryCode = undefined;
   if (stateFromStores1 != null) {
     countryCode = stateFromStores1.countryCode;
   }
-  obj4.ipCountryCode = countryCode;
-  let subdivisionCode;
+  subdivisionCode = undefined;
   if (stateFromStores1 != null) {
     subdivisionCode = stateFromStores1.subdivisionCode;
   }
-  obj4.ipSubdivisionCode = subdivisionCode;
   return obj4;
 };

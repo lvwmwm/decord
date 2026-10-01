@@ -4,32 +4,49 @@
 // Dependencies: [32, 19, 17, 9826, 1074, 21, 4836, 9827, 1241, 6364, 9830, 12, 9833, 504, 8972, 9834, 9835, 9838, 9839, 9843, 2]
 
 // Module 9825 (GIFPicker)
+import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import GIFPickerActionCreatorsAll from "GIFPickerActionCreators" /* 9827 */;
 import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9830 */;
 import GifPickerUtils from "GifPickerUtils" /* 9833 */;
 import GIFPickerSearchSuggestionsDefault from "GIFPickerSearchSuggestions" /* 9834 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import GIFPickerViewStore from "GIFPickerViewStore" /* 9826 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
-({ AnalyticEvents: closure_8, ChatInputComponentViewedTypes: closure_9, GIF_FETCH_LIMIT_IOS: c10, GIFPickerResultTypes: closure_11, TooltipNames: closure_12 } = Constants);
-const jsxProd = fn(21);
-({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4836);
+let constants3, limit;
+
+let c10;
+let c9;
+let closure_12;
+let closure_14;
+let map1;
+let metroImportAll;
+let unpackModuleId;
+const View = react_native.View;
+({ AnalyticEvents: metroImportAll, ChatInputComponentViewedTypes: c9, GIF_FETCH_LIMIT_IOS: c10, GIFPickerResultTypes: unpackModuleId, TooltipNames: closure_12 } = Constants);
+({ jsx: map1, jsxs: closure_14 } = Fragment);
 let closure_15 = createStyles.createStyles({ container: { flex: 1 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/gif_picker/native/GIFPicker.tsx");
-
-export default noop.memo(function GIFPicker(bottomSheetRef) {
+const memoResult = react.memo(function GIFPicker(bottomSheetRef) {
+  let c13;
+  let columnWidth;
+  let columns;
+  let items11;
+  let keyboardDismissMode;
+  let selectedGifSrc;
+  let tmp14;
+  let tmp34Result;
+  let tmp36;
   bottomSheetRef = bottomSheetRef.bottomSheetRef;
   const channelId = bottomSheetRef.channelId;
   const guildId = bottomSheetRef.guildId;
   const initialQuery = bottomSheetRef.initialQuery;
   let flag = bottomSheetRef.inActionSheet;
+  const hideFavorites = bottomSheetRef.hideFavorites;
   if (flag === undefined) {
     flag = true;
   }
@@ -39,80 +56,99 @@ export default noop.memo(function GIFPicker(bottomSheetRef) {
   closure_15 = undefined;
   ({ selectedGifSrc, keyboardDismissMode } = bottomSheetRef);
   const items = [channelId, guildId];
+  let tmp = closure_15();
   const effect = onPressGIF.useEffect(() => {
-    GIFPickerActionCreatorsAll.initializeSearch();
-    GIFPickerActionCreatorsAll.resetSearch();
+    const obj = GIFPickerActionCreatorsAll;
+    obj.initializeSearch();
+    const obj2 = GIFPickerActionCreatorsAll;
+    obj2.resetSearch();
     if (null != channelId) {
-      const obj4 = { type: constants2.GIF, channel_id: tmp4, guild_id: guildId };
-      AnalyticsUtilsDefault.track(constants.CHAT_INPUT_COMPONENT_VIEWED, obj4);
+      const obj4 = { type: ref.GIF, channel_id: tmp4, guild_id: guildId };
+      const obj3 = AnalyticsUtilsDefault;
+      obj3.track(metroImportAll.CHAT_INPUT_COMPONENT_VIEWED, obj4);
     }
   }, items);
   let tmp3 = channelId;
-  let obj = initialQuery;
-  const tmp4 = channelId(initialQuery[9])();
-  closure_6 = tmp4;
-  const tmp5 = contentHorizontalPadding(onPressGIF.useState(0), 2);
-  const first = tmp5[0];
-  closure_8 = tmp5[1];
-  const items1 = [tmp4, first, contentHorizontalPadding];
+  const tmp4 = initialQuery;
+  let tmp5 = channelId(initialQuery[9])();
+  let closure_6 = tmp5;
+  const tmp6 = contentHorizontalPadding(onPressGIF.useState(0), 2);
+  const first = tmp6[0];
+  let closure_8 = tmp6[1];
+  const items1 = [tmp5, first, contentHorizontalPadding];
   const callback = onPressGIF.useCallback((nativeEvent) => {
     closure_8(nativeEvent.nativeEvent.layout.width);
   }, []);
   const memo = onPressGIF.useMemo(() => {
+    let max;
+    let sum;
     let num = 2;
     if (closure_6) {
       num = 3;
     }
-    const obj = { columns: num, columnWidth: null };
     let num2 = contentHorizontalPadding;
+    const _Math = Math;
+    const obj = { columns: num, columnWidth: max(0, sum / num - gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING) };
+    max = Math.max;
+    const tmp = first;
     if (contentHorizontalPadding == null) {
       num2 = 0;
     }
-    const diff = first - 2 * num2;
-    const sum = diff + gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING;
-    obj.columnWidth = Math.max(0, sum / num - gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING);
+    const diff = tmp - 2 * num2;
+    sum = diff + gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING;
     return obj;
   }, items1);
   ({ columns, columnWidth } = memo);
   const ref = onPressGIF.useRef(null);
-  const tmp10 = contentHorizontalPadding(onPressGIF.useState(false), 2);
-  closure_10 = tmp10[1];
+  const tmp11 = contentHorizontalPadding(onPressGIF.useState(false), 2);
+  limit = tmp11[1];
+  const first1 = tmp11[0];
   constants3 = onPressGIF.useRef("");
-  onPressGIF.useRef(false);
-  const tmp = closure_15();
-  [tmp12, c13] = contentHorizontalPadding(onPressGIF.useState(false), 2);
-  const tmp14 = contentHorizontalPadding(onPressGIF.useState(constants3.SEARCH), 2);
-  const first1 = tmp14[0];
-  closure_15 = tmp14[1];
-  const tmp16 = contentHorizontalPadding(onPressGIF.useState(""), 2);
+  const ref2 = onPressGIF.useRef(false);
+  [tmp14, c13] = contentHorizontalPadding(onPressGIF.useState(false), 2);
+  const tmp13 = contentHorizontalPadding(onPressGIF.useState(false), 2);
+  const tmp16 = contentHorizontalPadding(onPressGIF.useState(constants3.SEARCH), 2);
   const first2 = tmp16[0];
-  closure_17 = tmp17;
+  closure_15 = tmp16[1];
+  const tmp18 = contentHorizontalPadding(onPressGIF.useState(""), 2);
+  const first3 = tmp18[0];
+  let tmp19 = tmp18[1];
+  let closure_17 = tmp19;
   const items2 = [ref];
   const callback1 = onPressGIF.useCallback(() => {
-    closure_10(false);
-    closure_15(constants3.SEARCH);
+    limit(false);
+    closure_15(unpackModuleId.SEARCH);
     closure_17("");
-    GIFPickerActionCreatorsAll.resetSearch();
+    const obj = GIFPickerActionCreatorsAll;
+    obj.resetSearch();
     const current = ref.current;
     if (current != null) {
       current.blur();
     }
   }, items2);
-  const memo1 = onPressGIF.useMemo(() => bottomSheetRef(initialQuery[11]).debounce(guildId(initialQuery[7]).search, 200), []);
-  const tmp11 = contentHorizontalPadding(onPressGIF.useState(false), 2);
-  const favoriteGIFsMobile = bottomSheetRef(initialQuery[10]).useFavoriteGIFsMobile();
+  const memo1 = onPressGIF.useMemo(() => {
+    const obj = bottomSheetRef(initialQuery[11]);
+    return obj.debounce(guildId(initialQuery[7]).search, 200);
+  }, []);
+  let obj = bottomSheetRef(initialQuery[10]);
+  const favoriteGIFsMobile = obj.useFavoriteGIFsMobile();
   const favorites = favoriteGIFsMobile.favorites;
-  const items3 = [favorites, first2];
-  closure_20 = onPressGIF.useMemo(() => GifPickerUtils.filterFavoriteGIFsByQuery(favorites, first2), items3);
-  const obj2 = bottomSheetRef(initialQuery[10]);
+  const items3 = [favorites, first3];
+  const favoritesCategory = favoriteGIFsMobile.favoritesCategory;
+  let closure_20 = onPressGIF.useMemo(() => {
+    const obj = GifPickerUtils;
+    return obj.filterFavoriteGIFsByQuery(favorites, first3);
+  }, items3);
+  let obj2 = bottomSheetRef(initialQuery[13]);
   const items4 = [first];
-  const stateFromStoresObject = bottomSheetRef(initialQuery[13]).useStateFromStoresObject(items4, () => {
-    if (first1 !== constants3.FAVORITES) {
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items4, () => {
+    if (first2 !== unpackModuleId.FAVORITES) {
       resultItems = GIFPickerViewStore.getResultItems();
     } else {
       resultItems = closure_20;
     }
-    return { resultItems, resultQuery: GIFPickerViewStore.getResultQuery() };
+    const obj = { resultItems, resultQuery: GIFPickerViewStore.getResultQuery() };
+    return obj;
   });
   let resultItems = stateFromStoresObject.resultItems;
   const resultQuery = stateFromStoresObject.resultQuery;
@@ -123,17 +159,20 @@ export default noop.memo(function GIFPicker(bottomSheetRef) {
       flag = true;
     }
     if (ref.current !== current) {
+      let search;
       ref.current = current;
-      closure_15(constants3.SEARCH);
+      closure_15(unpackModuleId.SEARCH);
       const tmp21 = current.trim().length > 0;
       let tmp2 = tmp21;
+      const tmp19 = unpackModuleId;
+      const tmp22 = c13;
       if (tmp2) {
         tmp2 = resultQuery !== current;
       }
-      _undefined(tmp2);
-      closure_10(tmp21);
+      tmp22(tmp2);
+      limit(tmp21);
       if (flag) {
-        let search = memo1;
+        search = memo1;
       } else {
         search = GIFPickerActionCreatorsAll.search;
       }
@@ -141,65 +180,70 @@ export default noop.memo(function GIFPicker(bottomSheetRef) {
       if ("" !== current) {
         SEARCH = tmp19.SEARCH;
       }
-      search(current, SEARCH, !flag, limit);
+      search(current, SEARCH, !flag, c10);
       if (!flag) {
         current = ref.current;
         if (current != null) {
           current.setText(current);
         }
       }
-      tmp19 = constants3;
     }
   }, items5);
   const items6 = [callback2, initialQuery];
   const effect1 = onPressGIF.useEffect(() => {
     if (!ref2.current) {
-      let tmp3 = null != initialQuery;
-      if (tmp3) {
-        tmp3 = str.trim().length > 0;
-      }
+      const tmp3 = null != initialQuery && str.trim().length > 0;
       if (tmp3) {
         tmp.current = true;
-        callback2(str, false);
+        callback2(initialQuery, false);
       }
     }
   }, items6);
   const effect2 = onPressGIF.useEffect(() => {
-    channelId(initialQuery[14]).acknowledgeTooltip(ref2.GIF_PICKER_TOOLTIP);
     const obj = channelId(initialQuery[14]);
-    const trendingSearchTerms = guildId(initialQuery[7]).fetchTrendingSearchTerms();
+    obj.acknowledgeTooltip(ref2.GIF_PICKER_TOOLTIP);
+    const obj2 = guildId(initialQuery[7]);
+    const trendingSearchTerms = obj2.fetchTrendingSearchTerms();
   }, []);
   const items7 = [resultQuery, ref];
   const effect3 = onPressGIF.useEffect(() => {
     if ("" !== resultQuery) {
-      const suggestions = GIFPickerActionCreatorsAll.fetchSuggestions(tmp);
+      const obj = GIFPickerActionCreatorsAll;
+      const suggestions = obj.fetchSuggestions(tmp);
     }
     const current = ref.current;
     let text;
+    const tmp5 = c13;
     if (current != null) {
       text = current.getText();
     }
-    _undefined(resultQuery !== text);
+    tmp5(resultQuery !== text);
   }, items7);
   const items8 = [callback2];
   const items9 = [onPressGIF, resultItems.length, resultQuery];
-  const memo2 = onPressGIF.useMemo(() => map1(GIFPickerSearchSuggestionsDefault, {
-    onClickSuggestion(dependencyMap) {
-      return callback2(dependencyMap, false);
-    }
-  }), items8);
+  const memo2 = onPressGIF.useMemo(() => {
+    const obj = {
+      onClickSuggestion(dependencyMap) {
+        return callback2(dependencyMap, false);
+      }
+    };
+    return map1(GIFPickerSearchSuggestionsDefault, obj);
+  }, items8);
   const items10 = [bottomSheetRef, callback2];
   const callback3 = onPressGIF.useCallback((gifId, index) => {
-    GIFPickerActionCreatorsAll.trackSelectGIF({ type: constants3.SEARCH, index, offset: 0, limit, results: resultItems.length, totalResults: resultItems.length, query: resultQuery, gifId: gifId.id });
+    const obj = GIFPickerActionCreatorsAll;
+    const obj2 = { type: unpackModuleId.SEARCH, index, offset: 0, limit, results: resultItems.length, totalResults: resultItems.length, query: resultQuery, gifId: gifId.id };
+    obj.trackSelectGIF(obj2);
     onPressGIF(gifId);
   }, items9);
   const callback4 = onPressGIF.useCallback((arg0, arg1) => {
-    if (arg0 === constants3.TRENDING_GIFS) {
-      closure_10(false);
+    if (arg0 === unpackModuleId.TRENDING_GIFS) {
+      limit(false);
       closure_15(arg0);
-      const trendingGIFs = GIFPickerActionCreatorsAll.fetchTrendingGIFs(limit);
+      const obj = GIFPickerActionCreatorsAll;
+      const trendingGIFs = obj.fetchTrendingGIFs(c10);
     } else if (arg0 === tmp.FAVORITES) {
-      closure_10(false);
+      limit(false);
       closure_15(arg0);
     } else {
       callback2(arg1, false);
@@ -209,39 +253,43 @@ export default noop.memo(function GIFPicker(bottomSheetRef) {
       current.expandActionSheet();
     }
   }, items10);
-  let obj4 = { onLayout: callback, style: null, children: null };
-  const items11 = [tmp.container, ];
-  let tmp31 = null;
+  let obj3 = { onLayout: callback, style: items11, children: null };
+  items11 = [tmp.container, ];
+  let tmp33 = null;
+  const tmp31 = first2;
+  const tmp32 = closure_6;
   if (null != contentHorizontalPadding) {
-    const obj5 = { paddingHorizontal: contentHorizontalPadding };
-    tmp31 = obj5;
+    let obj4 = { paddingHorizontal: contentHorizontalPadding };
+    tmp33 = obj4;
   }
-  items11[1] = tmp31;
-  obj4.style = items11;
-  const items12 = [c13(tmp3(obj[16]), { categoryType: first1, columnWidth, onQueryClear: callback1, onQueryChange: callback2, onFavoritesQueryChange: tmp16[1], searchInputRef: ref }), ];
+  items11[1] = tmp33;
+  const items12 = [c13(tmp3(tmp4[16]), { categoryType: first2, columnWidth, onQueryClear: callback1, onQueryChange: callback2, onFavoritesQueryChange: tmp19, searchInputRef: ref }), ];
   if (resultItems.length <= 0) {
-    if (!tmp10[0]) {
-      if (first2.length <= 0) {
-        const obj6 = { columns, onSelectCategory: callback4, favoritesCategory: null, inActionSheet: null };
-        let favoritesCategory;
-        if (true !== bottomSheetRef.hideFavorites) {
-          favoritesCategory = favoriteGIFsMobile.favoritesCategory;
+    if (!first1) {
+      if (first3.length <= 0) {
+        const obj5 = { columns, onSelectCategory: callback4, favoritesCategory: tmp36, inActionSheet: flag };
+        tmp36 = undefined;
+        const tmp3Result = tmp3(tmp4[19]);
+        if (true !== hideFavorites) {
+          tmp36 = favoritesCategory;
         }
-        obj6.favoritesCategory = favoritesCategory;
-        obj6.inActionSheet = flag;
-        items12[1] = tmp32(tmp3(obj[19]), obj6);
-        obj4.children = items12;
-        return first1(closure_6, obj4);
+        tmp34Result = tmp34(tmp3Result, obj5);
       }
+      items12[1] = tmp34Result;
+      obj3.children = items12;
+      return tmp31(tmp32, obj3);
     }
   }
   if (0 === resultItems.length) {
-    if (!tmp12) {
-      const obj7 = { categoryType: first1, inActionSheet: flag };
-      let tmp32Result = tmp32(tmp3(obj[17]), obj7);
+    let tmp34Result2;
+    if (!tmp14) {
+      const obj6 = { categoryType: first2, inActionSheet: flag };
+      tmp34Result2 = tmp34(tmp3(tmp4[17]), obj6);
     }
+    tmp34Result = tmp34Result2;
   }
-  tmp3 = tmp3(obj[18]);
-  obj = { columns, columnWidth, loading: tmp12, inActionSheet: flag, resultItems, onPressGIF: callback3, selectedGifSrc, keyboardDismissMode, ListFooterComponent: memo2 };
-  tmp32Result = tmp32(tmp3, obj);
+  tmp34Result2 = tmp34(tmp3(tmp4[18]), { columns, columnWidth, loading: tmp14, inActionSheet: flag, resultItems, onPressGIF: callback3, selectedGifSrc, keyboardDismissMode, ListFooterComponent: memo2 });
 });
+const result = size.fileFinishedImporting("modules/gif_picker/native/GIFPicker.tsx");
+
+export default memoResult;

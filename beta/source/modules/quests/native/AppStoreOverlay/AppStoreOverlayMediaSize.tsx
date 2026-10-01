@@ -5,36 +5,42 @@
 // Exports: getAppStoreOverlayCarouselImageUrl, getMediaSizeFromLoadEvent, getMediaTileSize, useAppStoreOverlayMediaSizes
 
 // Module 10730 (AppStoreOverlayMediaSize)
+import react_native from "react-native" /* 17 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import ImageProxyUtils from "ImageProxyUtils" /* 2015 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const Image = fn(17).Image;
+let c0, dependencyMap;
+
+const Image = react_native.Image;
 let closure_5 = { width: 166, height: 289 };
 let closure_6 = { width: 289, height: 166 };
 let map = new Map();
-let size = fn(2);
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayMediaSize.tsx");
 
 export const MEDIA_FALLBACK_WIDTH = 1080;
 export const MEDIA_FALLBACK_HEIGHT = 1920;
 export const getMediaTileSize = function getMediaTileSize(value) {
   if (null != value) {
+    let tmp;
     if (value.width > value.height) {
-      let tmp = closure_6;
+      tmp = closure_6;
     }
     return tmp;
   }
   tmp = closure_5;
 };
 export const getAppStoreOverlayCarouselImageUrl = function getAppStoreOverlayCarouselImageUrl(posterUrl) {
+  const getSizedImageAssetURL = ImageProxyUtils.getSizedImageAssetURL;
   let format = null;
+  ImageProxyUtils;
   if (AvatarUtils.SUPPORTS_WEBP) {
     format = "webp";
   }
-  return ImageProxyUtils.getSizedImageAssetURL(posterUrl, { size: 289, keepAspectRatio: true, format });
+  return getSizedImageAssetURL(posterUrl, { size: 289, keepAspectRatio: true, format });
 };
 export const getMediaSizeFromLoadEvent = function getMediaSizeFromLoadEvent(nativeEvent) {
   nativeEvent = nativeEvent.nativeEvent;
@@ -62,7 +68,7 @@ export const getMediaSizeFromLoadEvent = function getMediaSizeFromLoadEvent(nati
       if (width > 0) {
         tmp3 = null;
         if (height > 0) {
-          const size = { width, height };
+          size = { width, height };
           tmp3 = size;
         }
       }
@@ -71,23 +77,29 @@ export const getMediaSizeFromLoadEvent = function getMediaSizeFromLoadEvent(nati
   return tmp3;
 };
 export const useAppStoreOverlayMediaSizes = function useAppStoreOverlayMediaSizes(memo) {
-  const first = _slicedToArray(noop.useState(memo), 1)[0];
-  [tmp3, dependencyMap] = noop.useState(map);
+  let tmp3;
+  let first = _slicedToArray(react.useState(memo), 1)[0];
+  [tmp3, dependencyMap] = _slicedToArray(react.useState(map), 2);
   const items = [first];
-  const recordMediaSize = noop.useCallback((arg0, arg1) => {
-    closure_0 = arg0;
-    closure_1 = arg1;
-    dependencyMap((get) => {
+  const tmp2 = _slicedToArray(react.useState(map), 2);
+  const recordMediaSize = react.useCallback((arg0, arg1) => {
+    let closure_0 = arg0;
+    dependencyMap = arg1;
+    let tmp = dependencyMap(function(get) {
+      let result;
       size = closure_1;
       const size2 = get.get(closure_0);
       let width;
+      const tmp = closure_0;
       if (size2 != null) {
         width = size2.width;
       }
       if (width !== size.width) {
         const _Map = Map;
+        const self = this;
+        const self2 = this;
         map = new Map(get);
-        let result = map.set(closure_0, size);
+        result = map.set(tmp, size);
       } else {
         let height;
         if (size2 != null) {
@@ -98,23 +110,28 @@ export const useAppStoreOverlayMediaSizes = function useAppStoreOverlayMediaSize
       return result;
     });
   }, []);
-  const effect = noop.useEffect(() => {
-    c0 = false;
-    const item = c0.forEach((item) => {
-      closure_0 = item;
+  const effect = react.useEffect(() => {
+    first = false;
+    const item = first.forEach((item) => {
+      let closure_0 = item;
       size = size.getSize(item, (width, height) => {
-        if (!width) {
-          closure_2_1((get) => {
+        let tmp = width;
+        if (!tmp) {
+          closure_2_1(function(get) {
+            let result;
             size = { width, height };
             const size2 = get.get(width);
+            const tmp = width;
             width = undefined;
             if (size2 != null) {
               width = size2.width;
             }
             if (width !== size.width) {
               const _Map = Map;
+              const self = this;
+              const self2 = this;
               map = new Map(get);
-              let result = map.set(width, size);
+              result = map.set(tmp, size);
             } else {
               height = undefined;
               if (size2 != null) {

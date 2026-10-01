@@ -6,63 +6,68 @@
 // Module 17253 (SelectedChannelManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import router_utils from "router_utils" /* 1101 */;
+import SelectedChannelStore2 from "SelectedChannelStore" /* 2099 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
 import transitionToGuild from "transitionToGuild" /* 6760 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import Constants from "Constants" /* 1074 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const findFirstVoiceChannelId = fn(2099).findFirstVoiceChannelId;
-const Constants = fn(1074);
-({ ChannelTypes: closure_7, Routes: closure_8, ME: closure_9, NULL_STRING_GUILD_ID: c10 } = Constants);
-class SelectedChannelManager extends tmp3 {
+const SelectedChannelStore = SelectedChannelStore2;
+
+let c10;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+const findFirstVoiceChannelId = SelectedChannelStore2.findFirstVoiceChannelId;
+({ ChannelTypes: metroImportDefault, Routes: metroImportAll, ME: c9, NULL_STRING_GUILD_ID: c10 } = Constants);
+class SelectedChannelManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.actions = { GUILD_CREATE: applyArgumentsResult.handleGuildCreate, CHANNEL_CREATE: applyArgumentsResult.handleChannelCreate, LOGOUT: applyArgumentsResult.handleLogout };
     return applyArgumentsResult;
   }
+  handleGuildCreate(guild) {
+    guild = guild.guild;
+    const channelId = SelectedChannelStore.getChannelId(React4);
+    const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
+    if (guild.id === channelId) {
+      const obj = transitionToGuild;
+      obj.transitionToGuild(guild.id);
+    }
+    const tmp6 = guild.id === voiceChannelId && false !== guild.unavailable && null == voiceChannelId;
+    if (tmp6) {
+      const obj2 = SelectedChannelActionCreatorsDefault;
+      const voiceChannel = obj2.selectVoiceChannel(findFirstVoiceChannelId(guild.id));
+    }
+  }
+  handleChannelCreate(channel) {
+    channel = channel.channel;
+    if (channel.type === metroImportDefault.GROUP_DM) {
+      const originChannelId = channel.originChannelId;
+      const channelId = SelectedChannelStore.getChannelId(authStore);
+      const obj3 = SelectedChannelStore;
+      const tmp = null == SelectedGuildStore.getGuildId() && null != originChannelId && originChannelId === channelId;
+      if (tmp) {
+        const obj = router_utils;
+        obj.transitionTo(metroImportAll.CHANNEL(React4, channel.id));
+      }
+      const tmp7 = null != originChannelId && originChannelId === obj3.getVoiceChannelId();
+      if (tmp7) {
+        const obj2 = SelectedChannelActionCreatorsDefault;
+        const voiceChannel = obj2.selectVoiceChannel(channel.id, MediaEngineStore.isVideoEnabled());
+      }
+    }
+  }
+  handleLogout() {
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "VOICE_CHANNEL_SELECT", channelId: null, guildId: null, video: false, currentVoiceChannelId: null, joinVoiceId: null });
+  }
 }
 const prototype = SelectedChannelManager.prototype;
-prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
-  guild = guild.guild;
-  const channelId = SelectedChannelStore.getChannelId(React7);
-  const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
-  if (guild.id === channelId) {
-    transitionToGuild.transitionToGuild(guild.id);
-  }
-  let tmp6 = guild.id === voiceChannelId;
-  if (tmp6) {
-    tmp6 = false !== guild.unavailable;
-  }
-  if (tmp6) {
-    tmp6 = null == voiceChannelId;
-  }
-  if (tmp6) {
-    const voiceChannel = SelectedChannelActionCreatorsDefault.selectVoiceChannel(findFirstVoiceChannelId(guild.id));
-  }
-};
-prototype["handleChannelCreate"] = function handleChannelCreate(channel) {
-  channel = channel.channel;
-  if (channel.type === constants.GROUP_DM) {
-    const originChannelId = channel.originChannelId;
-    const channelId = SelectedChannelStore.getChannelId(closure_1_10);
-    if (tmp) {
-      router_utils.transitionTo(React6.CHANNEL(React7, channel.id));
-    }
-    tmp = null == SelectedGuildStore.getGuildId() && null != originChannelId && originChannelId === channelId;
-    if (tmp7) {
-      const voiceChannel = SelectedChannelActionCreatorsDefault.selectVoiceChannel(channel.id, MediaEngineStore.isVideoEnabled());
-    }
-    tmp7 = null != originChannelId && originChannelId === SelectedChannelStore.getVoiceChannelId();
-  }
-};
-prototype["handleLogout"] = function handleLogout() {
-  DispatcherDefault.dispatch({ type: "VOICE_CHANNEL_SELECT", channelId: null, guildId: null, video: false, currentVoiceChannelId: null, joinVoiceId: null });
-};
 const selectedChannelManager = new SelectedChannelManager();
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel/SelectedChannelManager.tsx");
 
 export default selectedChannelManager;

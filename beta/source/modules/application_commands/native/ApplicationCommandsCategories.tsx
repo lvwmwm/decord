@@ -5,140 +5,154 @@
 // Exports: default
 
 // Module 11891 (ApplicationCommandsCategories)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11713 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 11888 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, FlatList: hasOwnProperty } = get_ActivityIndicator);
-const ApplicationCommandsCategoriesConstants = fn(11888);
-({ ICON_SIZE, NODE_SIZE, NODE_MARGIN, ITEM_WIDTH: closure_7 } = ApplicationCommandsCategoriesConstants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { container: { backgroundColor: nativeDefault.colors.MOBILE_COMMAND_CATEGORIES_BACKGROUND, borderTopWidth: nativeDefault.modules.mobile.CHAT_INPUT_COMMAND_CATEGORIES_BORDER_TOP_WIDTH, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, paddingHorizontal: 8, paddingVertical: 4, flexDirection: "row", alignItems: "center" }, categoryImage: null, fadedItem: { opacity: 0.5 }, activeItem: null, item: null };
-let size = { height: ICON_SIZE, width: ICON_SIZE, borderRadius: ICON_SIZE / 2 };
-obj.categoryImage = size;
-let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_COMMAND_CATEGORIES_BACKGROUND, borderTopWidth: nativeDefault.modules.mobile.CHAT_INPUT_COMMAND_CATEGORIES_BORDER_TOP_WIDTH, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, paddingHorizontal: 8, paddingVertical: 4, flexDirection: "row", alignItems: "center" };
-obj.activeItem = { opacity: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-obj.item = { marginVertical: NODE_MARGIN, marginHorizontal: NODE_MARGIN, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2, alignItems: "center", justifyContent: "center" };
-let closure_9 = createStyles.createStyles(obj);
-let closure_10 = noop.memo((section) => {
+let nativeEvent, section;
+
+let ICON_SIZE;
+let NODE_MARGIN;
+let NODE_SIZE;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let obj2;
+let obj3;
+let size;
+let react = react_mod;
+({ View: closure_4, FlatList: hasOwnProperty } = react_native);
+({ ICON_SIZE, NODE_SIZE, NODE_MARGIN, ITEM_WIDTH: metroImportDefault } = ApplicationCommandsCategoriesConstants);
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { container: obj2, categoryImage: size, fadedItem: { opacity: 0.5 }, activeItem: obj3, item: { marginVertical: NODE_MARGIN, marginHorizontal: NODE_MARGIN, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2, alignItems: "center", justifyContent: "center" } };
+obj2 = { backgroundColor: nativeDefault.colors.MOBILE_COMMAND_CATEGORIES_BACKGROUND, borderTopWidth: nativeDefault.modules.mobile.CHAT_INPUT_COMMAND_CATEGORIES_BORDER_TOP_WIDTH, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, paddingHorizontal: 8, paddingVertical: 4, flexDirection: "row", alignItems: "center" };
+createStyles = createStyles.createStyles;
+size = { height: ICON_SIZE, width: ICON_SIZE, borderRadius: ICON_SIZE / 2 };
+obj3 = { opacity: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+let closure_9 = createStyles(obj);
+let closure_10 = react.memo((section) => {
+  let active;
+  let formatToPlainStringResult;
   section = section.section;
-  ({ handlePressCategory: importDefault, active, index: dependencyMap, guildId: noop } = section);
+  ({ handlePressCategory: importDefault, active, index: dependencyMap, guildId: react } = section);
   const tmp = closure_9();
+  const tmp2 = section;
+  let obj = section(504);
   const items = [GuildMemberStore];
-  const stateFromStores = section(504).useStateFromStores(items, () => {
-    if (null != noop) {
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    if (null != react) {
       let botId;
       if (section != null) {
         botId = tmp2.botId;
       }
       if (null != botId) {
-        return GuildMemberStore.getMember(tmp, tmp2.botId);
+        return GuildMemberStore.getMember(tmp, section.botId);
       }
     }
   });
   const items1 = [section, stateFromStores];
-  const memo = noop.useMemo(() => application_commands_ApplicationCommandUtils.getApplicationCommandsIconSource(section, stateFromStores), items1);
-  let tmp6 = null != memo;
-  if (tmp6) {
-    const obj2 = { style: tmp.categoryImage, source: memo };
-    tmp6 = jsx(FastImageDefault, { style: tmp.categoryImage, source: memo });
-  }
-  const obj3 = {
-    onPress() {
-      return importDefault(dependencyMap);
-    },
-    accessibilityRole: "button",
-    accessibilityLabel: null,
-    children: null
-  };
+  const memo = react.useMemo(() => {
+    const obj = application_commands_ApplicationCommandUtils;
+    return obj.getApplicationCommandsIconSource(section, stateFromStores);
+  }, items1);
+  null != memo && jsx(FastImageDefault, { style: tmp.categoryImage, source: memo });
+  const PressableOpacity = tmp2(5435).PressableOpacity;
   const intl = tmp2(1115).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp2(1115).t;
   if (active) {
     const obj4 = { applicationName: section.name };
-    let formatToPlainStringResult = formatToPlainString(t.yl24Gd, obj4);
+    formatToPlainStringResult = formatToPlainString(t.yl24Gd, obj4);
   } else {
     const obj5 = { applicationName: section.name };
     formatToPlainStringResult = formatToPlainString(t["9uqD4O"], obj5);
   }
-  obj3.accessibilityLabel = formatToPlainStringResult;
   const items2 = [tmp.item, active ? tmp.activeItem : tmp.fadedItem];
-  obj3.children = <stateFromStores style={items2}>{tmp6}</stateFromStores>;
-  return jsx(section(5435).PressableOpacity, {
-    onPress() {
-      return importDefault(dependencyMap);
-    },
-    accessibilityRole: "button",
-    accessibilityLabel: null,
-    children: null
-  }, section.name);
+  return <PressableOpacity key={section.name} onPress={function onPress() {
+    return importDefault(dependencyMap);
+  }} accessibilityRole="button" accessibilityLabel={formatToPlainStringResult}>{null}</PressableOpacity>;
 });
-size = fn(2);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandsCategories.tsx");
 
 export default function ApplicationCommandsCategories(onPressSection) {
+  let sections;
+  let style;
   onPressSection = onPressSection.onPressSection;
   const selectedIndex = onPressSection.selectedIndex;
   const guildId = onPressSection.guildId;
-  noop = undefined;
+  react = undefined;
   ({ style, sections } = onPressSection);
-  noop = noop.useRef(null);
-  const ref2 = noop.useRef(null);
-  const ref3 = noop.useRef(null);
-  const ref = noop.useRef(null);
+  const tmp = closure_9();
+  react = react.useRef(null);
+  const ref2 = react.useRef(null);
+  const ref3 = react.useRef(null);
+  const ref = react.useRef(null);
   const items = [selectedIndex];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (null != ref.current) {
       if (null != ref2.current) {
         if (null != ref.current) {
           if (null != ref3.current) {
-            const result = selectedIndex * React5;
+            const result = selectedIndex * metroImportDefault;
+            const tmp8 = result > tmp2.current || result < tmp.current;
             if (tmp8) {
               const current = tmp3.current;
               const obj = { offset: result };
               current.scrollToOffset(obj);
             }
-            tmp8 = result > tmp2.current || result < tmp.current;
           }
         }
       }
     }
   }, items);
   const items1 = [onPressSection];
-  const handlePressCategory = noop.useCallback((arg0) => {
+  const handlePressCategory = react.useCallback((arg0) => {
     onPressSection(arg0);
-    const result = HapticUtils.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
+    const obj = HapticUtils;
+    const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
   }, items1);
-  const callback1 = noop.useCallback((nativeEvent) => {
+  const callback1 = react.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
     const contentOffset = nativeEvent.contentOffset;
-    closure_3.current = contentOffset.x;
-    closure_4.current = contentOffset.x + nativeEvent.layoutMeasurement.width;
+    ref.current = contentOffset.x;
+    ref2.current = contentOffset.x + nativeEvent.layoutMeasurement.width;
   }, []);
-  const callback2 = noop.useCallback((nativeEvent) => {
+  const callback2 = react.useCallback((nativeEvent) => {
     const layout = nativeEvent.nativeEvent.layout;
-    closure_3.current = 0;
-    closure_4.current = layout.width;
-    closure_5.current = layout.width;
+    ref.current = 0;
+    ref2.current = layout.width;
+    ref3.current = layout.width;
   }, []);
   const items2 = [selectedIndex, handlePressCategory, guildId];
-  const callback3 = noop.useCallback((arg0, index) => ({ length: callback, offset: callback * index, index }), []);
-  let obj = { style: null, children: null };
-  const items3 = [closure_9().container, style];
-  obj.style = items3;
-  const tmp = closure_9();
-  obj.children = <ref3 ref={ref} getItemLayout={callback3} data={sections} keyboardShouldPersistTaps="always" horizontal keyExtractor={function keyExtractor(id) {
-    return id.id;
-  }} renderItem={noop.useCallback((section) => {
-    const index = section.index;
-    return <closure_10 active={index === selectedIndex} section={arg0.item} index={index} handlePressCategory={handlePressCategory} guildId={guildId} />;
-  }, items2)} showsHorizontalScrollIndicator={false} onScroll={callback1} onLayout={callback2} />;
-  return <ref2 style={null}>{null}</ref2>;
+  const callback3 = react.useCallback((arg0, index) => ({ length: callback, offset: callback * index, index }), []);
+  const items3 = [tmp.container, style];
+  ({
+    ref,
+    getItemLayout: callback3,
+    data: sections,
+    keyboardShouldPersistTaps: "always",
+    horizontal: true,
+    keyExtractor(id) {
+      return id.id;
+    },
+    renderItem: react.useCallback((section) => {
+      const index = section.index;
+      return <closure_10 active={index === selectedIndex} section={arg0.item} index={index} handlePressCategory={handlePressCategory} guildId={guildId} />;
+    }, items2),
+    showsHorizontalScrollIndicator: false,
+    onScroll: callback1,
+    onLayout: callback2
+  });
+  return <ref2 style={items3}>{null}</ref2>;
 };

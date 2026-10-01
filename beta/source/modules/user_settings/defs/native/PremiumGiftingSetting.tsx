@@ -4,51 +4,60 @@
 // Dependencies: [19, 1074, 21, 6837, 10977, 13096, 1177, 11006, 1115, 10496, 4501, 13095, 2]
 
 // Module 14529 (PremiumGiftingSetting)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 4501 */;
 import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 6837 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 10977 */;
+import GiftIcon from "GiftIcon" /* 10496 */;
 import PromotionsHooks from "PromotionsHooks" /* 13096 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+
+const UserSettingsSections = Constants.UserSettingsSections;
+const jsx = Fragment.jsx;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["jcSP+g"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["jcSP+g"]);
   },
   parent: null,
-  IconComponent: fn(10496).GiftIcon,
+  IconComponent: GiftIcon.GiftIcon,
   usePredicate() {
-    return BillingPlatformUtils.isPremiumGiftingSupported();
+    const obj = BillingPlatformUtils;
+    return obj.isPremiumGiftingSupported();
   },
   usePreNavigationAction: function useCanNavigateToPaymentSetting() {
-    return noop.useCallback(() => {
-      const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();
+    return react.useCallback(() => {
+      const obj = BlockedPaymentsCountryExperiment;
+      const isPaymentsBlocked = obj.getIsPaymentsBlocked();
       let flag = !isPaymentsBlocked;
+      const tmp = dependencyMap;
       if (isPaymentsBlocked) {
-        openBlockedPaymentsCountryActionSheetDefault();
+        require("openBlockedPaymentsCountryActionSheet")();
         flag = false;
       }
       return flag;
     }, []);
   },
   useTrailing: function usePremiumGiftingSettingTrailing() {
-    const unseenOutboundPromotions = PromotionsHooks.useUnseenOutboundPromotions();
+    const obj = PromotionsHooks;
+    const unseenOutboundPromotions = obj.useUnseenOutboundPromotions();
     return jsx(native.Badge, { value: unseenOutboundPromotions.length });
   },
   unsearchable: true,
   screen: {
-    route: fn(1074).UserSettingsSections.PREMIUM_GIFTING,
+    route: UserSettingsSections.PREMIUM_GIFTING,
     getComponent() {
       return require("UserSettingsPremiumGifting").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/PremiumGiftingSetting.tsx");
 
 export default route;

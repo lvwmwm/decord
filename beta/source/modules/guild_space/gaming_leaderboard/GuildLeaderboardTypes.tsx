@@ -14,6 +14,8 @@ const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboar
 export { GamingLeaderboardStat };
 export const GuildSpaceLeaderboardEvent = obj2;
 export const parseGuildSpaceLeaderboardMessageData = function parseGuildSpaceLeaderboardMessageData(leaderboard) {
+  let obj;
+  let previous_user_id;
   let tmp = null;
   if (null != leaderboard) {
     tmp = null;
@@ -32,13 +34,11 @@ export const parseGuildSpaceLeaderboardMessageData = function parseGuildSpaceLea
                 if (leaderboard.stat !== obj.GAMING_LEADERBOARD_STAT_UNSPECIFIED) {
                   tmp = null;
                   if (leaderboard.stat in tmp3) {
-                    obj = { event: null, stat: null, userId: null, previousUserId: null, value: null };
+                    obj = { event: null, stat: null, userId: null, previousUserId: previous_user_id, value: leaderboard.value };
                     ({ event: obj.event, stat: obj.stat, user_id: obj.userId, previous_user_id } = leaderboard);
                     if (previous_user_id == null) {
                       previous_user_id = null;
                     }
-                    obj.previousUserId = previous_user_id;
-                    obj.value = leaderboard.value;
                     tmp = obj;
                   }
                 }
@@ -52,6 +52,7 @@ export const parseGuildSpaceLeaderboardMessageData = function parseGuildSpaceLea
   return tmp;
 };
 export const parseServerMemberGamingLeaderboardData = function parseServerMemberGamingLeaderboardData(member_gaming_leaderboard_data) {
+  let winning_value;
   if (null == member_gaming_leaderboard_data) {
     return null;
   } else {
@@ -68,17 +69,17 @@ export const parseServerMemberGamingLeaderboardData = function parseServerMember
       winning_week = null;
     }
     if (null == winning_stat) {
+      let tmp4;
       if (null == winning_streak) {
-        let tmp4 = null;
+        tmp4 = null;
       }
       return tmp4;
     }
-    const obj = { winningStat: winning_stat, winningStreak: winning_streak, winningWeek: winning_week, winningValue: null };
-    let winning_value = member_gaming_leaderboard_data.winning_value;
+    const obj = { winningStat: winning_stat, winningStreak: winning_streak, winningWeek: winning_week, winningValue: winning_value };
+    winning_value = member_gaming_leaderboard_data.winning_value;
     if (winning_value == null) {
       winning_value = null;
     }
-    obj.winningValue = winning_value;
     tmp4 = obj;
   }
 };

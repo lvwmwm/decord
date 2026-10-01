@@ -4,16 +4,16 @@
 // Dependencies: [1924, 1317]
 
 // Module 1923 (_default2)
-import CanonicalizeLocaleList from "CanonicalizeLocaleList" /* 1924 */;
+import _mod1924 from "module_1924" /* 1924 */;
 import module_1317 from "module_1317" /* 1317 */;
 
-global.IntlPolyfill = CanonicalizeLocaleList.default;
+global.IntlPolyfill = _mod1924.default;
 if (!global.Intl) {
-  global.Intl = CanonicalizeLocaleList.default;
-  const result = CanonicalizeLocaleList.default.__applyLocaleSensitivePrototypes();
-  const _default = CanonicalizeLocaleList.default;
+  global.Intl = _mod1924.default;
+  const _default = _mod1924.default;
+  const result = _default.__applyLocaleSensitivePrototypes();
 }
-const _default2 = CanonicalizeLocaleList.default;
-_default2.default = CanonicalizeLocaleList.default;
+const _default2 = _mod1924.default;
+_default2.default = _mod1924.default;
 
 export default _default2;

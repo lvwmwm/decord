@@ -7,14 +7,14 @@
 // Module 50 (processColor)
 import normalizeColor from "normalizeColor" /* 51 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export default function processColor(arg0) {
   if (null == arg0) {
     return arg0;
   } else {
-    const defaultResult = normalizeColor.default(arg0);
+    const obj = normalizeColor;
+    const defaultResult = obj.default(arg0);
+    const tmp = require;
     if (null != defaultResult) {
       if (typeof defaultResult === "object") {
         const processColorObjectResult = tmp(52).processColorObject(defaultResult);
@@ -28,6 +28,5 @@ export default function processColor(arg0) {
       }
       return tmp4;
     }
-    tmp = require;
   }
 };

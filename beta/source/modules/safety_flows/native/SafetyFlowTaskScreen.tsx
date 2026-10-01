@@ -7,49 +7,65 @@
 // Module 17701 (SafetyFlowTaskScreen)
 import Text_Text from "Text/Text" /* 4832 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;
-import ModalScreen from "ModalScreen" /* 7870 */;
-import ModalContent from "ModalContent" /* 7871 */;
+import ModalScreen2 from "ModalScreen" /* 7870 */;
+import ModalContent2 from "ModalContent" /* 7871 */;
 import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 17699 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
+let c3;
+let closure_4;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ header: { textAlign: "center" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_flows/native/SafetyFlowTaskScreen.tsx");
 
-export default function SafetyFlowTaskScreen(action) {
-  ({ ImageComponent, subtitle, subtitleColor } = action);
+export default function SafetyFlowTaskScreen(title) {
+  let ImageComponent;
+  let children;
+  let footer;
+  let items1;
+  let onAction;
+  let submitting;
+  let subtitle;
+  let subtitleColor;
+  let withLogout;
+  ({ ImageComponent, subtitle, subtitleColor } = title);
+  title = title.title;
   if (subtitleColor === undefined) {
     subtitleColor = "text-strong";
   }
-  action = action.action;
+  let action = title.action;
   if (action === undefined) {
     action = null;
   }
-  ({ footer, withLogout, onAction, children, submitting } = action);
+  ({ footer, withLogout, onAction, children, submitting } = title);
   if (withLogout === undefined) {
     withLogout = true;
   }
   const tmp2 = closure_5();
+  const ModalScreen = ModalScreen2.ModalScreen;
+  const ModalContent = ModalContent2.ModalContent;
   let tmp6 = null != ImageComponent;
+  const Stack = Stack_Stack.Stack;
   if (tmp6) {
     tmp6 = ImageComponent;
   }
-  const items = [tmp6, React3(Text_Text.Text, { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.header, children: action.title }), ];
+  const items = [tmp6, , ];
+  const obj = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.header, children: title };
+  items[1] = _false(Text_Text.Text, obj);
   let tmp7Result = null != subtitle;
   if (tmp7Result) {
     const obj2 = { variant: "text-md/medium", color: subtitleColor, style: tmp2.header, children: subtitle };
     tmp7Result = tmp7(tmp4(4832).Text, obj2);
   }
-  const obj3 = { children: null };
+  const obj3 = { children: items1 };
   items[2] = tmp7Result;
-  const items1 = [React4(Stack_Stack.Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
-  obj3.children = items1;
-  const children1 = [React4(ModalContent.ModalContent, obj3), ];
+  items1 = [React3(Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
+  const children1 = [React3(ModalContent, obj3), ];
   if (undefined === footer) {
+    const ModalFooter = tmp4(11405).ModalFooter;
     if (withLogout) {
       withLogout = tmp7(LogOutDisclaimerDefault, {});
     }
@@ -59,11 +75,10 @@ export default function SafetyFlowTaskScreen(action) {
       const obj4 = { variant: "primary", text: action, onPress: onAction, loading: submitting };
       tmp7Result2 = tmp7(tmp4(10459).ModalActionButton, obj4);
     }
-    const obj5 = { children: null };
+    const obj5 = { children: items3 };
     items3[1] = tmp7Result2;
-    obj5.children = items3;
-    footer = tmp3(tmp4(11405).ModalFooter, obj5);
+    footer = tmp3(ModalFooter, obj5);
   }
   children1[1] = footer;
-  return React4(ModalScreen.ModalScreen, { children: children1 });
+  return React3(ModalScreen, { children: children1 });
 };

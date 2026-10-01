@@ -5,28 +5,35 @@
 // Exports: default
 
 // Module 17162 (LabelLayoutComponent)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import Server from "Server" /* 1979 */;
-import Input from "Input" /* 6025 */;
 import ComponentStateContext from "ComponentStateContext" /* 7569 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let tmp;
+const Input2 = tmp(6025);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/interaction_components/native/layouts/LabelLayoutComponent.tsx");
 
 export default function LabelLayoutComponent(arg0) {
+  let component;
+  let description;
+  let label;
+  let renderComponent;
+  let renderComponentResult;
   ({ component, renderComponent } = arg0);
   ({ label, description } = arg0);
-  const componentError = ComponentStateContext.useComponentError(component);
+  const obj = ComponentStateContext;
+  const componentError = obj.useComponentError(component);
   if (component.type === Server.ComponentType.CHECKBOX) {
-    let renderComponentResult = renderComponent(component, "label-child");
+    renderComponentResult = renderComponent(component, "label-child");
   } else {
-    const obj2 = { label, description, required: component.required, errorMessage: componentError, children: null };
-    const obj3 = { style: { width: "100%" }, children: renderComponent(component, "label-child") };
-    obj2.children = <View style={{ width: "100%" }}>{renderComponent(component, "label-child")}</View>;
-    renderComponentResult = jsx(Input.Input, { label, description, required: component.required, errorMessage: componentError, children: null });
+    ({ style: { width: "100%" }, children: renderComponent(component, "label-child") });
+    const Input = Input2.Input;
+    renderComponentResult = <Input label={label} description={description} required={component.required} errorMessage={componentError}>{null}</Input>;
   }
   return renderComponentResult;
 };

@@ -5,7 +5,7 @@
 // Exports: showYouAccountActionSheet
 
 // Module 16006 (showYouAccountActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import YouConstants from "YouConstants" /* 16007 */;
 import size from "module_2" /* 2 */;
@@ -22,5 +22,6 @@ export const showYouAccountActionSheet = function showYouAccountActionSheet() {
   if (arg1 === undefined) {
     flag2 = true;
   }
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16008, dependencyMap.paths), closure_3, { statusOnly: flag, disableHapticOnOpen: flag2 });
+  const obj = ActionSheetActionCreatorsDefault;
+  obj.openLazy(asyncRequire(16008, dependencyMap.paths), closure_3, { statusOnly: flag, disableHapticOnOpen: flag2 });
 };

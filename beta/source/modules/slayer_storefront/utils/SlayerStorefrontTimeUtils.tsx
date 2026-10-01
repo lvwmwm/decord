@@ -5,83 +5,95 @@
 // Exports: useTickingFormattedLimitedOfferTimeLeft
 
 // Module 16751 (SlayerStorefrontTimeUtils)
-import util from "util" /* 1115 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import intl4 from "intl" /* 1115 */;
 import _modDef3585 from "module_3585" /* 3585 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import useIntervalDefault from "useInterval" /* 6865 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let importDefault;
+
 function getLimitedOfferTimeLeft(arg0) {
+  let floor;
+  let floor2;
+  let result;
+  let result1;
   if (null == arg0) {
     return null;
   } else {
-    const diffResult = _modDef4421(arg0).diff(_modDef4421(), "seconds");
+    const obj2 = _modDef4421(arg0);
+    const diffResult = obj2.diff(_modDef4421(), "seconds");
     let tmp4 = null;
     if (diffResult > 0) {
-      const time = { days: null, hours: null, minutes: null, seconds: null };
+      const time = { days: Math.floor(diffResult / DurationsDefault.Seconds.DAY), hours: floor(result / DurationsDefault.Seconds.HOUR), minutes: floor2(result1 / DurationsDefault.Seconds.MINUTE), seconds: diffResult % DurationsDefault.Seconds.MINUTE };
       const _Math = Math;
-      time.days = Math.floor(diffResult / tmp5(1091).Seconds.DAY);
       const _Math2 = Math;
-      const result = diffResult % tmp5(1091).Seconds.DAY;
-      time.hours = Math.floor(result / tmp5(1091).Seconds.HOUR);
+      floor = Math.floor;
+      result = diffResult % tmp5(1091).Seconds.DAY;
       const _Math3 = Math;
-      const result1 = diffResult % tmp5(1091).Seconds.HOUR;
-      time.minutes = Math.floor(result1 / tmp5(1091).Seconds.MINUTE);
-      time.seconds = diffResult % tmp5(1091).Seconds.MINUTE;
+      floor2 = Math.floor;
+      result1 = diffResult % tmp5(1091).Seconds.HOUR;
       tmp4 = time;
     }
     return tmp4;
   }
 }
 function formatLimitedOfferTimeLeft(arg0) {
+  let days;
+  let hours;
   const tmp = getLimitedOfferTimeLeft(arg0);
   if (null == tmp) {
     return null;
   } else {
+    let formatToPlainStringResult;
     ({ days, hours } = tmp);
     if (days > 0) {
-      const intl3 = util.intl;
+      const intl3 = intl4.intl;
       const obj2 = { days };
-      let formatToPlainStringResult = intl3.formatToPlainString(util.t.BXpdIg, obj2);
+      formatToPlainStringResult = intl3.formatToPlainString(intl4.t.BXpdIg, obj2);
     } else if (hours > 0) {
-      const intl2 = util.intl;
+      const intl2 = intl4.intl;
       const obj3 = { hours };
       formatToPlainStringResult = intl2.formatToPlainString(_modDef3585.PPaJSw, obj3);
     } else {
-      const intl = util.intl;
-      const obj = { minutes: null };
+      const intl = intl4.intl;
+      const formatToPlainString = intl.formatToPlainString;
       const _Math = Math;
-      obj.minutes = Math.max(tmp12, 1);
-      formatToPlainStringResult = intl.formatToPlainString(_modDef3585["7Z+aIf"], obj);
+      const obj = { minutes: Math.max(tmp13, 1) };
+      const prop = _modDef3585["7Z+aIf"];
+      formatToPlainStringResult = formatToPlainString(prop, obj);
     }
     return formatToPlainStringResult;
   }
 }
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/slayer_storefront/utils/SlayerStorefrontTimeUtils.tsx");
 
 export { getLimitedOfferTimeLeft };
 export { formatLimitedOfferTimeLeft };
 export const useTickingFormattedLimitedOfferTimeLeft = function useTickingFormattedLimitedOfferTimeLeft(endDate) {
-  closure_0 = endDate;
+  let closure_1;
+  let first;
+  let closure_0 = endDate;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
-  const tmp = _slicedToArray(noop.useState(() => formatLimitedOfferTimeLeft(closure_0)), 2);
-  importDefault = tmp[1];
+  importDefault = undefined;
+  [first, importDefault] = react.useState(() => formatLimitedOfferTimeLeft(endDate));
   let num = null;
+  const tmp3 = useIntervalDefault;
   if (flag) {
     num = 1000;
   }
-  useIntervalDefault(() => {
-    closure_1(formatLimitedOfferTimeLeft(closure_0));
+  tmp3(() => {
+    closure_1(formatLimitedOfferTimeLeft(endDate));
   }, num);
-  let first = null;
+  let tmp5 = null;
   if (flag) {
-    first = tmp[0];
+    tmp5 = first;
   }
-  return first;
+  return tmp5;
 };

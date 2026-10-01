@@ -4,67 +4,79 @@
 // Dependencies: [5763, 7137, 14631, 7153, 7142, 7152, 7131, 5039, 14643, 1981, 2]
 
 // Module 14642 (QuestDisclosureModalActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import AdCreativeType from "AdCreativeType" /* 5763 */;
+import AnalyticsActions from "AnalyticsActions" /* 7131 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7137 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 7142 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7152 */;
 import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7153 */;
 import QuestDockCreativeContext from "QuestDockCreativeContext" /* 14631 */;
 import size from "module_2" /* 2 */;
 
 const QUEST_DISCLOSURE_MODAL = "QUEST_DISCLOSURE_MODAL";
-let result = size.fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModalActionCreators.tsx");
-
-export default {
+let obj = {
   showModal(isTargetedDisclosure) {
+    let creative;
+    let gamePublisher;
+    let gameTitle;
+    let name;
+    let tmp13;
+    let tmpResult6;
+    let trackingCtx;
     ({ creative, trackingCtx } = isTargetedDisclosure);
-    const creativeAnalyticsParams = QuestDockCreativeContext.getCreativeAnalyticsParams(creative);
+    isTargetedDisclosure = isTargetedDisclosure.isTargetedDisclosure;
+    const obj = QuestDockCreativeContext;
+    const creativeAnalyticsParams = obj.getCreativeAnalyticsParams(creative);
+    const obj2 = AdAnalyticsInterfaceExperiment;
     const tmp2 = dependencyMap;
     if (obj2.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_disclosure_modal")) {
-      const obj3 = { type: tmp(7152).AdUserActionType.CLICK_INTERNAL };
+      const obj3 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL };
+      const captureAdUserAction = captureAdUserAction2.captureAdUserAction;
+      captureAdUserAction2;
       const merged = Object.assign(creativeAnalyticsParams);
-      ({ ctaContent: obj8.questContentCTA, content: obj8.surfaceId, sourceQuestContent: obj8.sourceQuestContent, position: obj8.questContentPosition } = trackingCtx);
-      tmp(7142).captureAdUserAction(obj3);
-      const tmpResult = tmp(7142);
-    } else if (creativeAnalyticsParams.adCreativeType === tmp(5763).AdCreativeType.QUEST) {
+      ({ ctaContent: obj7.questContentCTA, content: obj7.surfaceId, sourceQuestContent: obj7.sourceQuestContent, position: obj7.questContentPosition } = trackingCtx);
+      captureAdUserAction(obj3);
+    } else if (creativeAnalyticsParams.adCreativeType === AdCreativeType.AdCreativeType.QUEST) {
       const obj5 = { questId: creativeAnalyticsParams.adCreativeId, questContent: null, questContentCTA: null, questContentPosition: null, sourceQuestContent: null };
       ({ content: obj6.questContent, ctaContent: obj6.questContentCTA, position: obj6.questContentPosition, sourceQuestContent: obj6.sourceQuestContent } = trackingCtx);
-      const result = tmp(7131).trackQuestContentClicked(obj5);
-      const tmpResult4 = tmp(7131);
+      const tmpResult4 = AnalyticsActions;
+      const result = tmpResult4.trackQuestContentClicked(obj5);
     } else {
+      const obj8 = { adContentId: null, adCreativeType: null, questContent: null, questContentCTA: null, questContentPosition: null, sourceQuestContent: null };
       ({ adCreativeId: obj4.adContentId, adCreativeType: obj4.adCreativeType } = creativeAnalyticsParams);
       ({ content: obj4.questContent, ctaContent: obj4.questContentCTA, position: obj4.questContentPosition, sourceQuestContent: obj4.sourceQuestContent } = trackingCtx);
-      const result1 = tmp(7131).trackAdContentClicked({ adContentId: null, adCreativeType: null, questContent: null, questContentCTA: null, questContentPosition: null, sourceQuestContent: null });
-      const obj7 = { adContentId: null, adCreativeType: null, questContent: null, questContentCTA: null, questContentPosition: null, sourceQuestContent: null };
-      const tmpResult5 = tmp(7131);
+      const tmpResult5 = AnalyticsActions;
+      const result1 = tmpResult5.trackAdContentClicked(obj8);
     }
-    obj2 = AdAnalyticsInterfaceExperiment;
+    const pushLazy = ModalActionCreatorsDefault.pushLazy;
     const type = creative.type;
-    const obj9 = ModalActionCreatorsDefault;
+    ModalActionCreatorsDefault;
+    const tmp12 = asyncRequire(14643, tmp2.paths);
     if (AdCreativeType.AdCreativeType.QUEST === type) {
-      const obj10 = { adCreativeType: null, gamePublisher: null, gameTitle: null, cosponsorName: null, isVideoQuest: null };
+      const obj9 = { adCreativeType: AdCreativeType.AdCreativeType.QUEST, gamePublisher, gameTitle, cosponsorName: name, isVideoQuest: tmpResult6.hasWatchVideoTasks(creative.quest) };
       ({ gamePublisher, gameTitle } = creative.quest.config.messages);
-      obj10.adCreativeType = tmp(5763).AdCreativeType.QUEST;
-      obj10.gamePublisher = gamePublisher;
-      obj10.gameTitle = gameTitle;
       const cosponsorMetadata = creative.quest.config.cosponsorMetadata;
-      let name;
+      name = undefined;
       if (cosponsorMetadata != null) {
         name = cosponsorMetadata.name;
       }
-      obj10.cosponsorName = name;
-      obj10.isVideoQuest = tmp(7137).hasWatchVideoTasks(creative.quest);
-      let tmp11 = obj10;
-      const tmpResult6 = tmp(7137);
-    } else if (tmp(5763).AdCreativeType.BOUNTY === type) {
-      const obj11 = { adCreativeType: tmp(5763).AdCreativeType.BOUNTY, gamePublisher: creative.bounty.advertiserName };
-      tmp11 = obj11;
+      tmp13 = obj9;
+      tmpResult6 = QuestTaskUtils;
+    } else if (AdCreativeType.AdCreativeType.BOUNTY === type) {
+      tmp13 = { adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, gamePublisher: creative.bounty.advertiserName };
+      const obj10 = { adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, gamePublisher: creative.bounty.advertiserName };
     }
-    const obj12 = {};
-    const merged1 = Object.assign(tmp11);
-    obj12.isTargetedDisclosure = isTargetedDisclosure.isTargetedDisclosure;
-    obj9.pushLazy(asyncRequireImpl(14643, tmp2.paths), obj12, QUEST_DISCLOSURE_MODAL);
+    const obj11 = { isTargetedDisclosure };
+    const merged1 = Object.assign(tmp13);
+    pushLazy(tmp12, obj11, QUEST_DISCLOSURE_MODAL);
   },
   hideModal() {
-    ModalActionCreatorsDefault.popWithKey(QUEST_DISCLOSURE_MODAL);
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(QUEST_DISCLOSURE_MODAL);
   }
 };
+let result = size.fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModalActionCreators.tsx");
+
+export default obj;

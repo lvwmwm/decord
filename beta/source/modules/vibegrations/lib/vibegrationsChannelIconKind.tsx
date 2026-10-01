@@ -15,6 +15,7 @@ export const vibegrationsChannelIconKind = function vibegrationsChannelIconKind(
   let tmp = null;
   if (null != channel) {
     tmp = null;
+    const obj = VibegrationsUtils;
     if (obj.isVibegrationsChannelCandidate(channel, getChannelIconComponent)) {
       let str = "apps";
       if (isRoleRequiredDefault(channel)) {
@@ -22,7 +23,6 @@ export const vibegrationsChannelIconKind = function vibegrationsChannelIconKind(
       }
       tmp = str;
     }
-    obj = VibegrationsUtils;
   }
   return tmp;
 };

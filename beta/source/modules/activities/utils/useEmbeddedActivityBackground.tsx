@@ -5,15 +5,22 @@
 // Exports: default
 
 // Module 8933 (useEmbeddedActivityBackground)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 let closure_4 = ["embedded_cover", "embedded_background"];
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/utils/useEmbeddedActivityBackground.tsx");
 
 export default function useEmbeddedActivityBackground(applicationId) {
+  let c2;
+  let closure_3;
+  let first;
+  let names;
+  let ref;
+  let tmp2;
   applicationId = applicationId.applicationId;
   ({ size, names } = applicationId);
   if (names === undefined) {
@@ -24,15 +31,16 @@ export default function useEmbeddedActivityBackground(applicationId) {
     str = "png";
   }
   _slicedToArray = undefined;
-  noop = undefined;
+  react = undefined;
   ref = undefined;
-  [tmp2, c2] = noop.useState(null);
-  const tmp3 = _slicedToArray(noop.useState(true), 2);
-  noop = tmp3[1];
-  const tmp = _slicedToArray(noop.useState(null), 2);
-  const url = applicationId(names[2]).getAssetImage(applicationId, tmp2, size, str);
+  let obj = react;
+  const tmp = _slicedToArray(react.useState(null), 2);
+  [tmp2, c2] = tmp;
+  [first, react] = react.useState(true);
+  const obj2 = applicationId(names[2]);
+  const url = obj2.getAssetImage(applicationId, tmp2, size, str);
   let state = "loading";
-  if (!tmp3[0]) {
+  if (!first) {
     let str3 = "not-found";
     if (null != url) {
       str3 = "fetched";
@@ -41,14 +49,17 @@ export default function useEmbeddedActivityBackground(applicationId) {
   }
   ref = obj.useRef(names);
   const effect = obj.useEffect(() => {
-    closure_4.current = names;
+    ref.current = names;
   });
   const items = [applicationId];
   const effect1 = obj.useEffect(() => {
     const current = ref.current;
     if (null != current) {
-      const assets = applicationId(names[2]).getAssets(tmp);
+      const tmp3 = names;
+      let obj = applicationId(names[2]);
+      const assets = obj.getAssets(tmp);
       assets.then((result) => {
+        let tmp6;
         closure_3(false);
         const entries = Object.entries(result);
         const obj = entries[Symbol.iterator]();
@@ -67,7 +78,6 @@ export default function useEmbeddedActivityBackground(applicationId) {
           continue;
         }
       });
-      let obj = applicationId(names[2]);
     }
   }, items);
   return { url, state };

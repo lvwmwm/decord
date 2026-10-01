@@ -4,10 +4,11 @@
 // Dependencies: [2067, 4479, 504, 573, 2]
 
 // Module 7056 (NUFStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import size from "module_2" /* 2 */;
 
 function handleCacheOrSocketLoaded() {
   let flag = false;
@@ -24,17 +25,18 @@ function handleCacheOrSocketLoaded() {
   return flag;
 }
 function handleUpdate() {
-  if (c2) {
+  const tmp = c2;
+  if (tmp) {
     return false;
   } else {
-    const tmp2 = GuildStore.getGuildCount() > 0;
+    const tmp3 = GuildStore.getGuildCount() > 0;
     let flag = false;
-    if (tmp2 !== closure_3) {
-      closure_3 = tmp2;
+    if (tmp3 !== closure_3) {
+      closure_3 = tmp3;
       flag = true;
     }
-    if (tmp2 !== closure_4) {
-      closure_4 = tmp2;
+    if (tmp3 !== closure_4) {
+      closure_4 = tmp3;
       flag = true;
     }
     return flag;
@@ -43,18 +45,18 @@ function handleUpdate() {
 let c2 = false;
 let closure_3 = false;
 let closure_4 = false;
-const PersistedStore = initializeDefault.PersistedStore;
+const PersistedStore = get_initializedDefault.PersistedStore;
 class NUFStore extends PersistedStore {
+  initialize() {
+    this.waitFor(RelationshipStore, GuildStore);
+    const items = [RelationshipStore, GuildStore];
+    this.syncWith(items, handleUpdate);
+  }
+  getState() {
+    return {};
+  }
 }
 const prototype = NUFStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(RelationshipStore, GuildStore);
-  const items = [RelationshipStore, GuildStore];
-  this.syncWith(items, handleUpdate);
-};
-prototype["getState"] = function getState() {
-  return {};
-};
 Object.defineProperty(prototype, "showMentionsInNotificationTab", {
   get: function showMentionsInNotificationTab() {
     return closure_4;
@@ -69,14 +71,14 @@ Object.defineProperty(prototype, "showQuickSwitcher", {
 });
 NUFStore.displayName = "NUFStore";
 NUFStore.persistKey = "NUFStore";
-const nUFStore = new NUFStore(DispatcherDefault, {
+const obj = {
   CACHE_LOADED: function handleCacheLoaded() {
     c2 = true;
   },
   CACHE_LOADED_LAZY: handleCacheOrSocketLoaded,
   CONNECTION_OPEN: handleCacheOrSocketLoaded
-});
-const size = fn(2);
+};
+const nUFStore = new NUFStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/native/NUFStore.tsx");
 
 export default nUFStore;

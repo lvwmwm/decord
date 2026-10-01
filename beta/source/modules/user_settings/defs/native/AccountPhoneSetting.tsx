@@ -4,25 +4,31 @@
 // Dependencies: [1372, 7417, 6464, 504, 5039, 6463, 1981, 6466, 11006, 1115, 2]
 
 // Module 14272 (AccountPhoneSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import PhoneConstants from "PhoneConstants" /* 6464 */;
 import PhoneActionCreators from "PhoneActionCreators" /* 6466 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import UserStore from "UserStore" /* 1372 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_4 = fn(6464).PHONE_VERIFICATION_MODAL_KEY;
-const SettingBuilders = fn(11006);
-const pressable = SettingBuilders.createPressable({
+let currentUser;
+
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let closure_4 = PhoneConstants.PHONE_VERIFICATION_MODAL_KEY;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.dEYpSt);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.dEYpSt);
   },
-  parent: fn(7417).MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountPhoneSettingTrailing() {
     const items = [UserStore];
-    return initialize.useStateFromStores(items, () => {
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => {
       currentUser = currentUser.getCurrentUser();
       let phone;
       if (currentUser != null) {
@@ -32,14 +38,15 @@ const pressable = SettingBuilders.createPressable({
     });
   },
   onPress: function onAccountPhoneSettingPress() {
-    const obj2 = { allowDeletePhone: true, reason: null };
-    const obj = ModalActionCreatorsDefault;
-    obj2.reason = PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE;
-    obj.pushLazy(asyncRequireImpl(6463, dependencyMap.paths), obj2, closure_4);
+    const pushLazy = ModalActionCreatorsDefault.pushLazy;
+    const obj = { allowDeletePhone: true, reason: PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE };
+    ModalActionCreatorsDefault;
+    const tmp2 = asyncRequire(6463, dependencyMap.paths);
+    pushLazy(tmp2, obj, closure_4);
   },
   withArrow: true
-});
-const size = fn(2);
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountPhoneSetting.tsx");
 
 export default pressable;

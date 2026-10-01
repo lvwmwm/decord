@@ -5,55 +5,72 @@
 // Exports: default
 
 // Module 9445 (UserSettingsSoundboardVolume)
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1074 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
 import SoundboardActionCreators from "SoundboardActionCreators" /* 6756 */;
 import VolumeSliderDefault from "VolumeSlider" /* 9442 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+const View = react_native.View;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ slider: { marginTop: 4 }, text: { marginTop: 4 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/voice/native/UserSettingsSoundboardVolume.tsx");
 
 export default function SoundboardVolume() {
+  let BPbGq7;
+  let TableRow;
+  let analyticsLocations;
+  let format;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let obj3;
+  let obj4;
+  let obj6;
+  let obj8;
+  let obj9;
+  let tmp3;
   const tmp = closure_8();
-  const amplitudinalSoundboardVolume = analyticsLocations(6762).getAmplitudinalSoundboardVolume();
+  let obj = analyticsLocations(6762);
+  const amplitudinalSoundboardVolume = obj.getAmplitudinalSoundboardVolume();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  const obj2 = { title: null, hasIcons: false, children: null };
-  const intl = analyticsLocations(1115).intl;
-  obj2.title = intl.string(analyticsLocations(1115).t.xbMc8r);
-  const obj3 = { label: null, subLabel: null };
-  const intl2 = analyticsLocations(1115).intl;
-  obj3.label = intl2.string(analyticsLocations(1115).t.kbFsAD);
-  const obj4 = { children: null };
-  const obj5 = { style: tmp.slider, children: null };
-  const obj6 = {
+  const obj2 = { title: intl.string(analyticsLocations(1115).t.xbMc8r), hasIcons: false, children: closure_5(TableRow, obj3) };
+  const UserSettingsTableRowGroup = analyticsLocations(9434).UserSettingsTableRowGroup;
+  intl = analyticsLocations(1115).intl;
+  obj3 = { label: intl2.string(analyticsLocations(1115).t.kbFsAD), subLabel: closure_7(closure_6, obj4) };
+  TableRow = analyticsLocations(5917).TableRow;
+  intl2 = analyticsLocations(1115).intl;
+  obj4 = { children: items };
+  const obj5 = { style: tmp.slider, children: closure_5(tmp3, obj6) };
+  obj6 = {
     value: amplitudinalSoundboardVolume,
     maxVolume: 100,
     onValueChange(volume) {
-      return SoundboardActionCreators.updateUserSoundboardVolume(volume, analyticsLocations);
+      const obj = SoundboardActionCreators;
+      return obj.updateUserSoundboardVolume(volume, analyticsLocations);
     },
-    accessibilityLabel: null
+    accessibilityLabel: intl3.string(analyticsLocations(1115).t.kbFsAD)
   };
-  const obj = analyticsLocations(6762);
-  const intl3 = analyticsLocations(1115).intl;
-  obj6.accessibilityLabel = intl3.string(analyticsLocations(1115).t.kbFsAD);
-  obj5.children = closure_5(VolumeSliderDefault, obj6);
-  const items = [closure_5(View, obj5), ];
-  const obj7 = { style: tmp.text, variant: "text-sm/medium", children: null };
+  tmp3 = VolumeSliderDefault;
+  intl3 = analyticsLocations(1115).intl;
+  items = [closure_5(View, obj5), ];
+  const obj7 = { style: tmp.text, variant: "text-sm/medium", children: format(BPbGq7, obj8) };
+  const Text = analyticsLocations(4832).Text;
   const intl4 = analyticsLocations(1115).intl;
-  const obj8 = { helpCenterArticle: null };
-  obj8.helpCenterArticle = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.SOUNDBOARD);
-  obj7.children = intl4.format(analyticsLocations(1115).t.BPbGq7, obj8);
-  items[1] = closure_5(analyticsLocations(4832).Text, obj7);
-  obj4.children = items;
-  obj3.subLabel = closure_7(closure_6, obj4);
-  obj2.children = closure_5(analyticsLocations(5917).TableRow, obj3);
-  return closure_5(analyticsLocations(9434).UserSettingsTableRowGroup, obj2);
+  format = intl4.format;
+  obj8 = { helpCenterArticle: obj9.getArticleURL(HelpdeskArticles.SOUNDBOARD) };
+  BPbGq7 = analyticsLocations(1115).t.BPbGq7;
+  obj9 = HelpdeskUtilsDefault;
+  items[1] = closure_5(Text, obj7);
+  return closure_5(UserSettingsTableRowGroup, obj2);
 };

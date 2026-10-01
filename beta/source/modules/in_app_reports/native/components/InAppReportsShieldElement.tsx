@@ -5,15 +5,16 @@
 // Exports: default
 
 // Module 8108 (InAppReportsShieldElement)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import ShieldSpotIllustration from "ShieldSpotIllustration" /* 7872 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flex: 0, alignSelf: "center", marginBottom: 16 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsShieldElement.tsx");
 
 export default function ShieldElement(element) {
@@ -22,7 +23,6 @@ export default function ShieldElement(element) {
   if (null != element) {
     tmp2 = null;
     if ("success" === element.type) {
-      const obj = { style: tmp.container, children: jsx(ShieldSpotIllustration.ShieldSpotIllustration, { width: 100, height: 100 }) };
       tmp2 = <View style={tmp.container}>{jsx(ShieldSpotIllustration.ShieldSpotIllustration, { width: 100, height: 100 })}</View>;
     }
   }

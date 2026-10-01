@@ -5,30 +5,38 @@
 // Exports: default
 
 // Module 8294 (PremiumFeaturesBackground)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import noop from "module_19" /* 19 */;
+import ColorConstants from "ColorConstants" /* 6852 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const Gradients = fn(6852).Gradients;
-const PremiumTypes = fn(1374).PremiumTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { cardContainer: { display: "flex", borderRadius: nativeDefault.radii.lg, flexDirection: "column", justifyContent: "space-between", overflow: "hidden" } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+const Gradients = ColorConstants.Gradients;
+const PremiumTypes = PremiumConstants.PremiumTypes;
+const jsx = Fragment.jsx;
+let obj = { cardContainer: { display: "flex", borderRadius: nativeDefault.radii.lg, flexDirection: "column", justifyContent: "space-between", overflow: "hidden" } };
+({ display: "flex", borderRadius: nativeDefault.radii.lg, flexDirection: "column", justifyContent: "space-between", overflow: "hidden" });
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesBackground.tsx");
 
 export default function PremiumFeaturesBackground(opacity) {
+  let PREMIUM_TIER_0;
+  let children;
+  let style;
   let num = opacity.opacity;
+  const premiumType = opacity.premiumType;
   if (num === undefined) {
     num = 1;
   }
   ({ children, style } = opacity);
   const merged = Object.assign(opacity, Object.assign({ premiumType: 0, opacity: 0, children: 0, style: 0 }));
-  if (opacity.premiumType === PremiumTypes.TIER_0) {
-    let PREMIUM_TIER_0 = Gradients.PREMIUM_TIER_0;
+  const tmp2 = closure_6();
+  if (premiumType === PremiumTypes.TIER_0) {
+    PREMIUM_TIER_0 = Gradients.PREMIUM_TIER_0;
   } else {
     PREMIUM_TIER_0 = Gradients.PREMIUM_TIER_2_TRI_COLOR;
   }
@@ -36,16 +44,12 @@ export default function PremiumFeaturesBackground(opacity) {
   if (num < 1) {
     mapped = PREMIUM_TIER_0.map((item) => {
       const obj = _modDef672(item);
-      return _modDef672(item).alpha(num).hex();
+      const alphaResult = obj.alpha(num);
+      return alphaResult.hex();
     });
   }
-  let obj = { style: null, colors: mapped, start: null, end: null };
-  const items = [closure_6().cardContainer, style];
-  obj.style = items;
-  const tmp2 = closure_6();
-  obj.start = num(1094).HorizontalGradient.START;
-  obj.end = num(1094).HorizontalGradient.END;
+  const items = [tmp2.cardContainer, style];
+  LinearGradientDefault;
   const merged1 = Object.assign(merged);
-  obj.children = children;
-  return jsx(LinearGradientDefault, { style: null, colors: mapped, start: null, end: null });
+  return <tmp6 style={items} colors={mapped} start={num(1094).HorizontalGradient.START} end={num(1094).HorizontalGradient.END}>{children}</tmp6>;
 };

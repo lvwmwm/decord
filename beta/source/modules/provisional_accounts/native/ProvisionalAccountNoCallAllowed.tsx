@@ -5,36 +5,34 @@
 // Exports: default
 
 // Module 13344 (ProvisionalAccountNoCallAllowed)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import intl4 from "intl" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import AlertModal from "AlertModal" /* 5209 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6028 */;
-import noop from "module_19" /* 19 */;
+import AlertModal2 from "AlertModal" /* 5209 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const HelpdeskArticles = Constants.HelpdeskArticles;
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ header: { alignSelf: "center" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountNoCallAllowed.tsx");
 
 export default function ProvisionalAccountNoCallAllowed() {
-  const obj = { header: null, title: null, content: null, actions: null };
+  let intl3;
+  let obj4;
   const tmp = closure_5();
-  obj.header = jsx(CircleErrorIcon.CircleErrorIcon, { size: "lg", style: closure_5().header });
-  const intl = util.intl;
-  obj.title = intl.string(util.t["vh+Zpq"]);
-  const intl2 = util.intl;
-  const obj3 = { helpdeskArticle: null };
-  const obj2 = { size: "lg", style: closure_5().header };
-  obj3.helpdeskArticle = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS);
-  obj.content = intl2.format(util.t["tx08s+"], obj3);
-  const obj5 = { children: null };
-  const obj6 = { variant: "secondary", text: null };
-  const intl3 = util.intl;
-  obj6.text = intl3.string(util.t["NX+WJN"]);
-  obj5.children = jsx(AlertModal.AlertActionButton, { variant: "secondary", text: null }, "got-it");
-  obj.actions = jsx(AlertModal.AlertActions, { children: null });
-  return jsx(AlertModal.AlertModal, { header: null, title: null, content: null, actions: null });
+  const AlertModal = AlertModal2.AlertModal;
+  const intl = intl4.intl;
+  const intl2 = intl4.intl;
+  const format = intl2.format;
+  const obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS) };
+  const prop = intl4.t["tx08s+"];
+  obj4 = HelpdeskUtilsDefault;
+  const AlertActions = AlertModal2.AlertActions;
+  ({ variant: "secondary", text: intl3.string(intl4.t["NX+WJN"]) });
+  const AlertActionButton = AlertModal2.AlertActionButton;
+  intl3 = intl4.intl;
+  return <AlertModal header={null} title={intl.string(intl4.t["vh+Zpq"])} content={format(prop, obj3)} actions={null} />;
 };

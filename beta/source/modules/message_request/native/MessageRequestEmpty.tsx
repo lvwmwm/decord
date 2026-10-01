@@ -5,15 +5,17 @@
 // Exports: default
 
 // Module 16709 (MessageRequestEmpty)
+import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1177 */;
 import Pending from "Pending" /* 16710 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/message_request/native/MessageRequestEmpty.tsx");
 
-export default function MessageRequestEmpty(body) {
-  return jsx(native.EmptyState, { Illustration: Pending.Pending, body: body.bodyText });
+export default function MessageRequestEmpty(bodyText) {
+  bodyText = bodyText.bodyText;
+  const EmptyState = native.EmptyState;
+  return <EmptyState Illustration={Pending.Pending} body={bodyText} />;
 };

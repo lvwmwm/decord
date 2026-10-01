@@ -5,9 +5,10 @@
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
 // Module 9679 (ForumPostReactionButton)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import ReactionUtils from "ReactionUtils" /* 4481 */;
@@ -19,180 +20,196 @@ import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 96
 import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10824 */;
 import useEmojiColorPalette from "useEmojiColorPalette" /* 10829 */;
 import useReactionPermissionsDefault from "useReactionPermissions" /* 10856 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 10858 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let tmp10;
+const AnimatedCounterDefault = tmp10(10858);
 class BurstReactionButton {
   constructor(arg0) {
-    ({ colors, emoji, onPress, onLongPress, containerStyle, count, emojiSize, selected, animate, animateCount, accessible } = global);
-    tmp = closure_0;
-    tmp2 = closure_2;
-    obj = closure_0(closure_2[13]);
-    emojiColorPalette = obj.useEmojiColorPalette(colors);
-    str = "";
+    let accentColor;
+    let accessible;
+    let animate;
+    let animateCount;
+    let backgroundColor1;
+    let colors;
+    let containerStyle;
+    let count;
+    let emoji;
+    let emojiSize;
+    let num2;
+    let onLongPress;
+    let onPress;
+    let selected;
+    ({ colors, emoji, onPress, onLongPress, containerStyle, count, emojiSize, selected, animate, animateCount, accessible } = arg0);
+    const obj = useEmojiColorPalette;
+    const emojiColorPalette = obj.useEmojiColorPalette(colors);
+    let str = "";
     if (null != emojiColorPalette) {
-      tmpResult = tmp(tmp2[14]);
-      backgroundColor = undefined;
+      let backgroundColor;
+      const hex2rgb = tmp(1092).hex2rgb;
+      utils_ColorUtils;
       if (emojiColorPalette != null) {
         backgroundColor = emojiColorPalette.backgroundColor;
       }
-      num = undefined;
+      let num;
       if (emojiColorPalette != null) {
         num = emojiColorPalette.opacity;
       }
       if (num == null) {
         num = 0.15;
       }
-      str2 = tmpResult.hex2rgb(backgroundColor, num);
+      let str2 = hex2rgb(backgroundColor, num);
       if (str2 == null) {
         str2 = "";
       }
       str = str2;
     }
-    items = [, ];
-    items[0] = containerStyle;
-    obj1 = { backgroundColor: str, borderColor: null, borderWidth: null };
+    const items = [containerStyle, ];
+    const obj2 = { backgroundColor: str, borderColor: backgroundColor1, borderWidth: num2 };
     backgroundColor1 = undefined;
-    tmp5 = jsx;
-    tmp6 = ReactionButton;
+    const tmp6 = metroRequire;
+    const tmp7 = ReactionButton;
     if (emojiColorPalette != null) {
       backgroundColor1 = emojiColorPalette.backgroundColor;
     }
-    obj1.borderColor = backgroundColor1;
     num2 = 0;
     if (selected) {
       num2 = 1;
     }
-    obj5 = { containerStyle: items, textStyle: null, selected: false, emoji: null, count: null, animate: null, onPress: null, onLongPress: null, emojiSize: null, animateCount: null, accessible: null };
-    obj1.borderWidth = num2;
-    items[1] = obj1;
+    const obj3 = { containerStyle: items, textStyle: { color: accentColor }, selected: false, emoji, count, animate, onPress, onLongPress, emojiSize, animateCount, accessible };
+    items[1] = obj2;
     accentColor = undefined;
     if (emojiColorPalette != null) {
       accentColor = emojiColorPalette.accentColor;
     }
-    obj5.textStyle = { color: accentColor };
-    obj5.emoji = emoji;
-    obj5.count = count;
-    obj5.animate = animate;
-    obj5.onPress = onPress;
-    obj5.onLongPress = onLongPress;
-    obj5.emojiSize = emojiSize;
-    obj5.animateCount = animateCount;
-    obj5.accessible = accessible;
-    return tmp5(tmp6, obj5);
+    return tmp6(tmp7, obj3);
   }
 }
 class ReactionButton {
   constructor(arg0) {
-    ({ emoji, count, selected, animate, disabled } = global);
-    ({ onPress, onLongPress, textStyle, containerStyle, emojiSize, animateCount, accessible } = global);
+    let accessible;
+    let animate;
+    let animateCount;
+    let containerStyle;
+    let count;
+    let disabled;
+    let emoji;
+    let emojiSize;
+    let items;
+    let items1;
+    let obj3;
+    let obj6;
+    let onLongPress;
+    let onPress;
+    let selected;
+    let textStyle;
+    ({ emoji, count, selected, animate, disabled } = arg0);
+    ({ onPress, onLongPress, textStyle, containerStyle, emojiSize, animateCount, accessible } = arg0);
     if (disabled === undefined) {
       disabled = false;
     }
-    tmp = closure_7();
-    emojiURL = undefined;
+    const tmp = closure_7();
+    let emojiURL;
     if (null != emoji.id) {
-      tmp3 = closure_1;
-      tmp4 = closure_2;
-      obj = closure_1(closure_2[15]);
-      obj1 = { id: null, animated: null, size: null };
-      obj1.id = emoji.id;
+      const obj = { id: emoji.id, animated: animate, size: emojiSize };
+      const getEmojiURL = AvatarUtilsDefault.getEmojiURL;
+      AvatarUtilsDefault;
       if (animate) {
         animate = emoji.animated;
       }
-      obj1.animated = animate;
-      obj1.size = emojiSize;
-      emojiURL = obj.getEmojiURL(obj1);
+      emojiURL = getEmojiURL(obj);
     }
-    selected1 = undefined;
+    let selected1;
     if (selected) {
       selected1 = tmp.selected;
     }
-    tmp6 = jsxs;
-    tmp7 = closure_2;
-    obj8 = { style: null, accessible, accessibilityLabel: null, onPress: null, onLongPress: null, disabled: null, children: null };
-    items = [, , ];
-    items[0] = tmp.container;
-    items[1] = containerStyle;
-    items[2] = selected1;
-    obj8.style = items;
-    obj4 = closure_0(closure_2[16]);
-    obj8.accessibilityLabel = obj4.getAccessibleEmojiDisplayName(selected, count, emoji, false);
-    obj8.onPress = onPress;
-    obj8.onLongPress = onLongPress;
-    obj8.disabled = disabled;
-    tmp8 = jsx;
-    tmp9 = closure_1;
-    obj9 = { textEmojiStyle: tmp.textEmoji, fastImageStyle: tmp.imageEmoji, src: emojiURL, name: emoji.name };
+    const obj2 = { style: items, accessible, accessibilityLabel: obj3.getAccessibleEmojiDisplayName(selected, count, emoji, false), onPress, onLongPress, disabled, children: items1 };
+    items = [tmp.container, containerStyle, selected1];
+    const PressableOpacity = Pressables.PressableOpacity;
     items1 = [, ];
-    items1[0] = jsx(closure_1(closure_2[17]), obj9);
-    tmp8Result = null != count;
-    if (tmp8Result) {
-      num = 0;
-      tmp8Result = count > 0;
+    obj3 = ReactionUtils;
+    const obj4 = { textEmojiStyle: tmp.textEmoji, fastImageStyle: tmp.imageEmoji, src: emojiURL, name: emoji.name };
+    items1[0] = metroRequire(EmojiDefault, obj4);
+    let tmp9Result = null != count;
+    const tmp7 = hasOwnProperty;
+    if (tmp9Result) {
+      tmp9Result = count > 0;
     }
-    if (tmp8Result) {
-      tmp11 = View;
-      obj10 = { style: null, children: null };
-      obj10.style = tmp.countContainer;
-      obj11 = { textStyle: null, count: null, animate: null };
-      obj11.textStyle = textStyle;
-      obj11.count = count;
-      obj11.animate = animateCount;
-      obj10.children = tmp8(tmp9(tmp7[18]), obj11);
-      tmp8Result = tmp8(View, obj10);
+    if (tmp9Result) {
+      const obj5 = { style: tmp.countContainer, children: metroRequire(AnimatedCounterDefault, obj6) };
+      obj6 = { textStyle, count, animate: animateCount };
+      tmp9Result = tmp9(View, obj5);
     }
-    items1[1] = tmp8Result;
-    obj8.children = items1;
-    return tmp6(closure_0(closure_2[6]).PressableOpacity, obj8);
+    items1[1] = tmp9Result;
+    return tmp7(PressableOpacity, obj2);
   }
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsxs: hasOwnProperty, jsx: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: 8, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.REACTION_BORDER_DEFAULT, backgroundColor: nativeDefault.colors.REACTION_BACKGROUND_DEFAULT, minWidth: 32, minHeight: 26, maxHeight: 26 }, selected: null, textEmoji: null, imageEmoji: null, countContainer: null };
-let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: 8, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.REACTION_BORDER_DEFAULT, backgroundColor: nativeDefault.colors.REACTION_BACKGROUND_DEFAULT, minWidth: 32, minHeight: 26, maxHeight: 26 };
-obj2.selected = { borderColor: nativeDefault.colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: nativeDefault.colors.REACTION_BACKGROUND_REACTED_DEFAULT };
-obj2.textEmoji = { fontSize: 12 };
-obj2.imageEmoji = { height: 16, width: 16 };
-obj2.countContainer = { paddingStart: 4 };
-const React5 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+({ jsxs: hasOwnProperty, jsx: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, selected: obj3, textEmoji: { fontSize: 12 }, imageEmoji: { height: 16, width: 16 }, countContainer: { paddingStart: 4 } };
+obj2 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: 8, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.REACTION_BORDER_DEFAULT, backgroundColor: nativeDefault.colors.REACTION_BACKGROUND_DEFAULT, minWidth: 32, minHeight: 26, maxHeight: 26 };
+createStyles = createStyles.createStyles;
+obj3 = { borderColor: nativeDefault.colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: nativeDefault.colors.REACTION_BACKGROUND_REACTED_DEFAULT };
+const metroImportDefault = createStyles(obj);
 const result = size.fileFinishedImporting("modules/forums/native/posts/reactions/ForumPostReactionButton.tsx");
 
 export const DEFAULT_EMOJI_SIZE = 14;
 export const AdditionalReactionCount = function AdditionalReactionCount(arg0) {
+  let containerStyle;
+  let count;
+  let intl;
+  let items;
+  let items1;
+  let obj2;
+  let threadId;
   ({ count, threadId, containerStyle } = arg0);
-  const obj = { accessible: true, accessibilityLabel: null, style: null, onPress: null, children: null };
-  const intl = util.intl;
-  obj.accessibilityLabel = intl.string(util.t.N8hbZB);
-  const items = [closure_7().container, containerStyle];
-  obj.style = items;
-  obj.onPress = useNativeForumPostHandlersDefault({ threadId }).onTapReactionCount;
-  const obj2 = { variant: "heading-sm/medium", color: "interactive-text-default", children: null };
-  const items1 = ["+", count];
-  obj2.children = items1;
-  obj.children = hasOwnProperty(Text_Text.Text, obj2);
-  return timestampProducer(Pressables.PressableOpacity, obj);
+  const tmp = closure_7();
+  const onTapReactionCount = useNativeForumPostHandlersDefault({ threadId }).onTapReactionCount;
+  const obj = { accessible: true, accessibilityLabel: intl.string(intl2.t.N8hbZB), style: items, onPress: onTapReactionCount, children: hasOwnProperty(Text_Text.Text, obj2) };
+  const PressableOpacity = Pressables.PressableOpacity;
+  intl = intl2.intl;
+  items = [tmp.container, containerStyle];
+  obj2 = { variant: "heading-sm/medium", color: "interactive-text-default", children: items1 };
+  items1 = ["+", count];
+  return metroRequire(PressableOpacity, obj);
 };
 export const AddReactionButton = function AddReactionButton(reactionType) {
+  let containerStyle;
+  let intl;
+  let items;
+  let threadId;
+  let tmp4;
   let NORMAL = reactionType.reactionType;
   ({ threadId, containerStyle } = reactionType);
   if (NORMAL === undefined) {
     NORMAL = MessageReactionsTypes.ReactionTypes.NORMAL;
   }
-  const obj = { style: null, accessible: true, accessibilityLabel: null, onPress: null, children: null };
-  const items = [closure_7().container, containerStyle];
-  obj.style = items;
-  const intl = util.intl;
-  obj.accessibilityLabel = intl.string(util.t.lfIHs4);
-  obj.onPress = useNativeForumPostHandlersDefault({ threadId, reactionType: NORMAL }).onTapAddReaction;
-  obj.children = timestampProducer(reactions_ReactionUtils.ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
-  return timestampProducer(Pressables.PressableOpacity, obj);
+  const tmp3 = closure_7();
+  const onTapAddReaction = useNativeForumPostHandlersDefault({ threadId, reactionType: NORMAL }).onTapAddReaction;
+  const obj = { style: items, accessible: true, accessibilityLabel: intl.string(intl2.t.lfIHs4), onPress: onTapAddReaction, children: metroRequire(tmp4, { size: "xs" }) };
+  items = [tmp3.container, containerStyle];
+  tmp4 = reactions_ReactionUtils.ADD_REACTION_ICON_COMPONENTS[NORMAL];
+  const PressableOpacity = Pressables.PressableOpacity;
+  intl = intl2.intl;
+  return metroRequire(PressableOpacity, obj);
 };
 export const ForumPostReactionButton = function ForumPostReactionButton(emojiSize) {
+  let animateCount;
+  let burst_colors;
+  let containerStyle;
+  let locationAnalyticsObject;
+  let reaction;
+  let textStyle;
+  let thread;
+  let tmp10Result;
   ({ thread, reaction } = emojiSize);
   ({ animateCount, containerStyle, textStyle, locationAnalyticsObject } = emojiSize);
   let num = emojiSize.emojiSize;
@@ -202,17 +219,19 @@ export const ForumPostReactionButton = function ForumPostReactionButton(emojiSiz
   const tmp = useReactionPermissionsDefault(thread);
   const disableReactionCreates = tmp.disableReactionCreates;
   const disableReactionUpdates = tmp.disableReactionUpdates;
-  const tmp2 = useNativeForumPostHandlersDefault({ threadId: thread.id });
+  let obj = { threadId: thread.id };
+  const tmp2 = useNativeForumPostHandlersDefault(obj);
   const onTapReaction = tmp2.onTapReaction;
   const onLongTapReaction = tmp2.onLongTapReaction;
   const AnimateEmoji = UserSettings.AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   const items = [disableReactionCreates, disableReactionUpdates, locationAnalyticsObject, onTapReaction, reaction];
-  const callback = noop.useCallback(() => {
-    onTapReaction({ reaction, disableReactionCreates, disableReactionUpdates, locationAnalyticsObject });
+  const callback = react.useCallback(() => {
+    const obj = { reaction, disableReactionCreates, disableReactionUpdates, locationAnalyticsObject };
+    onTapReaction(obj);
   }, items);
   const items1 = [onLongTapReaction, reaction];
-  const callback1 = noop.useCallback(() => {
+  const callback1 = react.useCallback(() => {
     onLongTapReaction(reaction);
   }, items1);
   let tmp6 = !disableReactionCreates;
@@ -220,32 +239,18 @@ export const ForumPostReactionButton = function ForumPostReactionButton(emojiSiz
     tmp6 = !disableReactionUpdates;
   }
   if (reaction.burst_count > 0) {
-    const obj5 = { accessible: tmp6, emoji: null, selected: null, colors: null, count: null, onPress: null, onLongPress: null, containerStyle: null, textStyle: null, emojiSize: null, animate: null, animateCount: null };
+    const obj5 = { accessible: tmp6, emoji: null, selected: null, colors: burst_colors, count: reaction.burst_count, onPress: callback, onLongPress: callback1, containerStyle, textStyle, emojiSize: num, animate: setting, animateCount };
     ({ emoji: obj3.emoji, me_burst: obj3.selected, burst_colors } = reaction);
+    const tmp10 = metroRequire;
+    const tmp11 = BurstReactionButton;
     if (burst_colors == null) {
       burst_colors = [];
     }
-    obj5.colors = burst_colors;
-    obj5.count = reaction.burst_count;
-    obj5.onPress = callback;
-    obj5.onLongPress = callback1;
-    obj5.containerStyle = containerStyle;
-    obj5.textStyle = textStyle;
-    obj5.emojiSize = num;
-    obj5.animate = setting;
-    obj5.animateCount = animateCount;
-    let tmp10Result = timestampProducer(BurstReactionButton, obj5);
+    tmp10Result = tmp10(tmp11, obj5);
   } else {
-    const obj6 = { accessible: tmp6, emoji: null, selected: null, count: null, onPress: null, onLongPress: null, containerStyle: null, textStyle: null, emojiSize: null, animate: null, animateCount: null };
+    const obj6 = { accessible: tmp6, emoji: null, selected: null, count: null, onPress: callback, onLongPress: callback1, containerStyle, textStyle, emojiSize: num, animate: setting, animateCount };
     ({ emoji: obj2.emoji, me: obj2.selected, count: obj2.count } = reaction);
-    obj6.onPress = callback;
-    obj6.onLongPress = callback1;
-    obj6.containerStyle = containerStyle;
-    obj6.textStyle = textStyle;
-    obj6.emojiSize = num;
-    obj6.animate = setting;
-    obj6.animateCount = animateCount;
-    tmp10Result = timestampProducer(ReactionButton, obj6);
+    tmp10Result = metroRequire(ReactionButton, obj6);
   }
   return tmp10Result;
 };

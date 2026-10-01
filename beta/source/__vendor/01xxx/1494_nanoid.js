@@ -26,7 +26,12 @@ export const nanoid = () => {
   }
   return str2;
 };
-export (arg0) => {
+export const customAlphabet = (arg0) => {
+  const length = arg0;
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 21;
+  }
   return () => {
     let tmp5;
     let tmp = arg0;
@@ -47,4 +52,4 @@ export (arg0) => {
     }
     return str2;
   };
-}
+};

@@ -7,12 +7,13 @@
 // Module 8912 (useCurrentEmbeddedApplication)
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6589 */;
 import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 8913 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedApplication.tsx");
 
 export default function useCurrentEmbeddedApplication() {
+  let items;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -22,11 +23,12 @@ export default function useCurrentEmbeddedApplication() {
     flag = true;
   }
   const tmp = useCurrentEmbeddedActivityDefault();
+  const tmp2 = useGetOrFetchApplicationsDefault;
   if (null == tmp) {
-    let items = [];
+    items = [];
   } else {
     items = [tmp.applicationId];
   }
-  const first = _slicedToArray(useGetOrFetchApplicationsDefault(items, flag), 1)[0];
+  const first = _slicedToArray(tmp2(items, flag), 1)[0];
   return first;
 };

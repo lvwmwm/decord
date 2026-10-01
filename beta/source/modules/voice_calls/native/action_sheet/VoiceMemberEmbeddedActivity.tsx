@@ -7,44 +7,67 @@
 // Module 13329 (VoiceMemberEmbeddedActivity)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
+import FormConstants from "FormConstants" /* 1181 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6572 */;
 import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 8824 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const ACTION_SHEET_MAX_WIDTH = fn(6572).ACTION_SHEET_MAX_WIDTH;
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const XSMALL = fn(1177).AvatarSizes.XSMALL;
-const androidRippleConfig = fn(1181).getThemedRippleConfig({ foreground: true });
+let applicationId;
+
+let c10;
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let unpackModuleId;
+let _slicedToArray = _slicedToArray_mod;
+({ Image: closure_4, View: hasOwnProperty } = react_native);
+const getThemedRippleConfig = FormConstants.getThemedRippleConfig;
+const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+const XSMALL = native.AvatarSizes.XSMALL;
+const androidRippleConfig = getThemedRippleConfig({ foreground: true });
 let size = { width: 32, height: 32, marginRight: 16, borderRadius: 4 };
 let c14 = 1.7777777777777777;
-const createStyles = fn(4836);
-let obj = { voiceMemberItemRow: { paddingTop: 12, paddingBottom: 16, flexDirection: "column", display: "flex", justifyContent: "flex-start" }, innerRow: { paddingHorizontal: 16, alignItems: "center" }, activityDetails: { marginBottom: 8, flexDirection: "row", display: "flex" }, appIcon: size, appIconPlaceholder: null, centerGroup: null, applicationName: null, joinButton: null, joinButtonPill: null, joinButtonContainer: null, overflow: null, overflowBackgroundColor: null, overflowBackgroundColorActionSheet: null };
-let obj3 = {};
+let createStyles = createStyles_mod;
+let obj = { voiceMemberItemRow: { paddingTop: 12, paddingBottom: 16, flexDirection: "column", display: "flex", justifyContent: "flex-start" }, innerRow: { paddingHorizontal: 16, alignItems: "center" }, activityDetails: { marginBottom: 8, flexDirection: "row", display: "flex" }, appIcon: size, appIconPlaceholder: obj2, centerGroup: { flex: 1, paddingRight: 4 }, applicationName: { lineHeight: 20 }, joinButton: { alignSelf: "center" }, joinButtonPill: { borderRadius: 100, paddingHorizontal: 24 }, joinButtonContainer: { alignItems: "center", justifyContent: "center", display: "flex", width: "100%", paddingHorizontal: 16 }, overflow: obj3, overflowBackgroundColor: obj4, overflowBackgroundColorActionSheet: obj5 };
+obj2 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+createStyles = createStyles.createStyles;
 const merged = Object.assign(size);
-obj3.tintColor = nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT;
-obj.appIconPlaceholder = obj3;
-obj.centerGroup = { flex: 1, paddingRight: 4 };
-obj.applicationName = { lineHeight: 20 };
-obj.joinButton = { alignSelf: "center" };
-obj.joinButtonPill = { borderRadius: 100, paddingHorizontal: 24 };
-obj.joinButtonContainer = { alignItems: "center", justifyContent: "center", display: "flex", width: "100%", paddingHorizontal: 16 };
-obj.overflow = { height: fn(1177).AVATAR_SIZE_MAP[XSMALL] };
-let obj4 = { height: fn(1177).AVATAR_SIZE_MAP[XSMALL] };
-obj.overflowBackgroundColor = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
-const obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
-obj.overflowBackgroundColorActionSheet = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-let closure_15 = createStyles.createStyles(obj);
-size = fn(2);
+obj3 = { height: native.AVATAR_SIZE_MAP[XSMALL] };
+obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
+obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+let closure_15 = createStyles(obj);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceMemberEmbeddedActivity.tsx");
 
 export default function VoiceMemberEmbeddedActivity(onItemPress) {
+  let channelId;
+  let closure_3;
+  let embeddedActivity;
+  let intl;
+  let intl2;
+  let items3;
+  let items4;
+  let items5;
+  let items7;
+  let items8;
+  let items9;
+  let obj11;
+  let obj5;
+  let obj6;
+  let tmp17Result;
+  let user;
   ({ embeddedActivity, channelId } = onItemPress);
   onItemPress = onItemPress.onItemPress;
   let application;
@@ -53,39 +76,46 @@ export default function VoiceMemberEmbeddedActivity(onItemPress) {
   function handleCanJoin() {
     onItemPress(closure_3, first, stateFromStores);
   }
-  const tmp = closure_15();
+  const isActionSheet = onItemPress.isActionSheet;
+  let tmp = closure_15();
+  let tmp2 = onItemPress;
+  let tmp3 = application;
   const items = [embeddedActivity.applicationId];
   application = _slicedToArray(onItemPress(application[12])(items), 1)[0];
-  const mapped = Array.from(embeddedActivity.userIds).map((item) => user.getUser(item));
-  let found = mapped.filter(channelId(application[13]).isNotNullish);
   const arr = Array.from(embeddedActivity.userIds);
-  const items1 = [handleCanJoin];
-  _slicedToArray = channelId(application[14]).useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
+  const mapped = arr.map((item) => user.getUser(item));
+  let tmp4 = channelId;
+  let found = mapped.filter(channelId(application[13]).isNotNullish);
   let obj2 = channelId(application[14]);
+  const items1 = [handleCanJoin];
+  _slicedToArray = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
   const items2 = [embeddedActivityJoinability];
-  const stateFromStores = channelId(application[14]).useStateFromStores(items2, () => {
+  const obj3 = channelId(application[14]);
+  const stateFromStores = obj3.useStateFromStores(items2, () => {
     let found = null;
     if (null != closure_3) {
       const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(tmp.id);
       found = embeddedActivitiesForChannel.find((applicationId) => {
         id = undefined;
+        applicationId = applicationId.applicationId;
         if (id != null) {
           id = id.id;
         }
-        return applicationId.applicationId === id;
+        return applicationId === id;
       });
     }
     return found;
   });
-  const obj3 = channelId(application[14]);
-  const guildId = channelId(application[15]).getEmbeddedActivityLocationGuildId(embeddedActivity.location);
   const obj4 = channelId(application[15]);
+  const guildId = obj4.getEmbeddedActivityLocationGuildId(embeddedActivity.location);
+  const useEmbeddedActivityJoinability = channelId(application[16]).useEmbeddedActivityJoinability;
+  channelId(application[16]);
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
     id = currentUser.id;
   }
-  embeddedActivityJoinability = channelId(application[16]).useEmbeddedActivityJoinability({ userId: id, channelId, application });
+  embeddedActivityJoinability = useEmbeddedActivityJoinability({ userId: id, channelId, application });
   const bound = Math.min(ACTION_SHEET_MAX_WIDTH, tmp2(tmp3[17])().width);
   if (null != application) {
     if (null != stateFromStores) {
@@ -95,85 +125,87 @@ export default function VoiceMemberEmbeddedActivity(onItemPress) {
       }
       const name = application.name;
       const diff = bound - 32;
-      const sum = 40 + tmp11 / tmp12 + 12 + 16;
-      let obj = { accessibilityRole: "button", accessibilityLabel: null, androidRippleConfig: null, onPress: null, children: null };
-      const intl = tmp4(tmp3[21]).intl;
-      const obj6 = { applicationName: name };
-      obj.accessibilityLabel = intl.formatToPlainString(tmp4(tmp3[21]).t.Yw5Hr2, obj6);
-      obj.androidRippleConfig = androidRippleConfig;
-      obj.onPress = function onPress() {
-        handlePressJoinActivityDefault({ embeddedActivityJoinability, handleCanJoin });
+      const sum = 40 + tmp12 / tmp13 + 12 + 16;
+      let obj = {
+        accessibilityRole: "button",
+        accessibilityLabel: intl.formatToPlainString(tmp4(tmp3[21]).t.Yw5Hr2, obj5),
+        androidRippleConfig,
+        onPress() {
+              const obj = { embeddedActivityJoinability, handleCanJoin };
+              handlePressJoinActivityDefault(obj);
+            },
+        children: closure_11(guildId, obj6)
       };
-      const obj7 = { style: null, children: null };
-      const items3 = [tmp.voiceMemberItemRow, ];
-      const obj8 = { height: sum };
-      items3[1] = obj8;
-      obj7.style = items3;
-      const obj9 = { style: null, children: null };
-      const items4 = [, ];
+      const PressableOpacity = tmp4(tmp3[20]).PressableOpacity;
+      intl = tmp4(tmp3[21]).intl;
+      obj6 = { style: items3, children: items7 };
+      items3 = [tmp.voiceMemberItemRow, ];
+      obj5 = { applicationName: name };
+      const obj7 = { height: sum };
+      items3[1] = obj7;
+      const obj8 = { style: items4, children: items5 };
+      items4 = [, ];
       ({ innerRow: arr7[0], activityDetails: arr7[1] } = tmp);
-      obj9.style = items4;
-      const obj10 = { style: iconSource === tmp2(tmp3[18]) ? tmp.appIconPlaceholder : tmp.appIcon, source: iconSource };
-      const items5 = [closure_10(stateFromStores, obj10), , ];
-      const obj11 = { style: tmp.centerGroup, children: null };
-      const obj12 = { style: tmp.applicationName, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
-      obj11.children = closure_10(tmp4(tmp3[22]).Text, obj12);
-      items5[1] = closure_10(guildId, obj11);
+      const obj9 = { style: iconSource === tmp2(tmp3[18]) ? tmp.appIconPlaceholder : tmp.appIcon, source: iconSource };
+      items5 = [closure_10(stateFromStores, obj9), , ];
+      const obj10 = { style: tmp.centerGroup, children: closure_10(tmp4(tmp3[22]).Text, obj11) };
+      obj11 = { style: tmp.applicationName, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
+      items5[1] = closure_10(guildId, obj10);
       const items6 = [tmp.overflow, ];
-      const result = diff / tmp12;
-      const obj13 = { offsetAmount: -6, overflowStyle: null, overflowComponent: null, items: null, max: 5, renderItem: null };
-      items6[1] = onItemPress.isActionSheet ? tmp.overflowBackgroundColorActionSheet : tmp.overflowBackgroundColor;
-      obj13.overflowStyle = items6;
-      obj13.overflowComponent = tmp4(tmp3[9]).OverflowText;
-      obj13.items = found;
-      obj13.renderItem = function renderItem(user, arg1) {
-        const obj = { user, guildId, size: XSMALL, cutout: null };
-        let tmp5;
-        if (!arg1) {
-          const obj2 = { radius: tmp2(1177).AVATAR_SIZE_MAP[tmp4] / 2 + 3, direction: tmp2(1177).CutoutDirection.RIGHT, inset: -6 };
-          tmp5 = obj2;
-        }
-        obj.cutout = tmp5;
-        return closure_2_10(native.CutoutableAvatarImage, obj);
+      const result = diff / tmp13;
+      items6[1] = isActionSheet ? tmp.overflowBackgroundColorActionSheet : tmp.overflowBackgroundColor;
+      const obj12 = {
+        offsetAmount: -6,
+        overflowStyle: items6,
+        overflowComponent: tmp4(tmp3[9]).OverflowText,
+        items: found,
+        max: 5,
+        renderItem(user, arg1) {
+              let tmp5;
+              const obj = { user, guildId, size: XSMALL, cutout: tmp5 };
+              tmp5 = undefined;
+              const CutoutableAvatarImage = native.CutoutableAvatarImage;
+              const tmp = authStore;
+              if (!arg1) {
+                tmp5 = { radius: native.AVATAR_SIZE_MAP[tmp4] / 2 + 3, direction: native.CutoutDirection.RIGHT, inset: -6 };
+                const obj2 = { radius: native.AVATAR_SIZE_MAP[tmp4] / 2 + 3, direction: native.CutoutDirection.RIGHT, inset: -6 };
+              }
+              return tmp(CutoutableAvatarImage, obj);
+            }
       };
-      items5[2] = closure_10(tmp4(tmp3[9]).SummarizedIconRow, obj13);
-      obj9.children = items5;
-      const items7 = [closure_11(guildId, obj9), ];
-      const obj14 = { style: null, children: null };
-      const items8 = [tmp.innerRow, ];
-      const obj15 = { height: result, justifyContent: "center" };
-      items8[1] = obj15;
-      obj14.style = items8;
-      const obj16 = { application, dimensionsStyle: null, borderRadius: 8, resizeMode: "contain" };
-      const size = { position: "absolute", width: diff, height: result };
-      obj16.dimensionsStyle = size;
-      const items9 = [closure_10(tmp2(tmp3[23]), obj16), ];
-      const obj17 = { style: tmp.joinButtonContainer, children: null };
-      let tmp16Result = null;
+      const SummarizedIconRow = tmp4(tmp3[9]).SummarizedIconRow;
+      items5[2] = closure_10(SummarizedIconRow, obj12);
+      items7 = [closure_11(guildId, obj8), ];
+      const obj13 = { style: items8, children: items9 };
+      items8 = [tmp.innerRow, ];
+      const obj14 = { height: result, justifyContent: "center" };
+      items8[1] = obj14;
+      const obj15 = { application, dimensionsStyle: size, borderRadius: 8, resizeMode: "contain" };
+      size = { position: "absolute", width: diff, height: result };
+      items9 = [closure_10(tmp2(tmp3[23]), obj15), ];
+      const obj16 = { style: tmp.joinButtonContainer, children: tmp17Result };
+      tmp17Result = null;
       if (embeddedActivityJoinability === tmp4(tmp3[16]).EmbeddedActivityJoinability.CAN_JOIN) {
-        const obj18 = {
+        ({ joinButton: obj19.style, joinButtonPill: obj19.pillStyle } = tmp);
+        const obj17 = {
           onPress() {
-                  handlePressJoinActivityDefault({ embeddedActivityJoinability, handleCanJoin });
+                  const obj = { embeddedActivityJoinability, handleCanJoin };
+                  handlePressJoinActivityDefault(obj);
                 },
           style: null,
           pillStyle: null,
-          text: null,
+          text: intl2.string(tmp4(tmp3[21]).t["4i2vj+"]),
           variant: "secondary",
           size: "sm",
           shrink: true
         };
-        ({ joinButton: obj20.style, joinButtonPill: obj20.pillStyle } = tmp);
-        const intl2 = tmp4(tmp3[21]).intl;
-        obj18.text = intl2.string(tmp4(tmp3[21]).t["4i2vj+"]);
-        tmp16Result = tmp16(tmp4(tmp3[24]).BaseTextButton, obj18);
+        const BaseTextButton = tmp4(tmp3[24]).BaseTextButton;
+        intl2 = tmp4(tmp3[21]).intl;
+        tmp17Result = tmp17(BaseTextButton, obj17);
       }
-      obj17.children = tmp16Result;
-      items9[1] = closure_10(guildId, obj17);
-      obj14.children = items9;
-      items7[1] = closure_11(guildId, obj14);
-      obj7.children = items7;
-      obj.children = closure_11(guildId, obj7);
-      return closure_10(tmp4(tmp3[20]).PressableOpacity, obj);
+      items9[1] = closure_10(guildId, obj16);
+      items7[1] = closure_11(guildId, obj13);
+      return closure_10(PressableOpacity, obj);
     }
   }
   return null;

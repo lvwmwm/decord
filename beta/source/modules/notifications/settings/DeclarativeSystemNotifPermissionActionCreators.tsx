@@ -5,21 +5,23 @@
 // Exports: refreshSystemNotifPermissionsAsync
 
 // Module 15538 (DeclarativeSystemNotifPermissionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
 import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 15540 */;
 import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 15541 */;
 import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 15539 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let tmp;
+const DispatcherDefault = tmp(573);
 let result = size.fileFinishedImporting("modules/notifications/settings/DeclarativeSystemNotifPermissionActionCreators.tsx");
 
 export const refreshSystemNotifPermissionsAsync = function refreshSystemNotifPermissionsAsync(app_state_active) {
-  const result = DeclarativeSystemNotifPermissionHelpersDefault.refreshSystemNotifPermissions();
+  const obj = DeclarativeSystemNotifPermissionHelpersDefault;
+  const result = obj.refreshSystemNotifPermissions();
   if (null != result) {
     const disabledSettings = DeclarativeSystemNotifPermissionStore.getDisabledSettings();
-    DispatcherDefault.dispatch(result);
     const tmpResult = DispatcherDefault;
-    const result1 = DeclarativeSystemNotifPermissionAnalytics.trackSystemNotifSettingsReenabled(disabledSettings, result.disabledSettings, app_state_active);
+    tmpResult.dispatch(result);
+    const obj3 = DeclarativeSystemNotifPermissionAnalytics;
+    const result1 = obj3.trackSystemNotifSettingsReenabled(disabledSettings, result.disabledSettings, app_state_active);
   }
 };

@@ -3,6 +3,6 @@
 // Dependencies: []
 
 // Module 686
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const GLOBAL_OBJ = globalThis;

@@ -5,153 +5,150 @@
 // Exports: default
 
 // Module 14439 (FamilyCenterActivityItemPreview)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import utils from "utils" /* 1971 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
 import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 7646 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 7667 */;
 import NameplateUtils from "NameplateUtils" /* 8282 */;
-import ShopIcon from "ShopIcon" /* 11620 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 8285 */;
 import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14438 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let c3;
+let closure_4;
+let size;
+let size1;
+let size2;
+let size3;
+let size4;
 function AvatarDecorationPreviewImage(arg0) {
+  let product;
+  let styles;
   ({ product, styles } = arg0);
-  const avatarDecorationPreviewUrl = FamilyCenterActivityPurchaseRowUtils.getAvatarDecorationPreviewUrl(product);
+  const obj = FamilyCenterActivityPurchaseRowUtils;
+  const avatarDecorationPreviewUrl = obj.getAvatarDecorationPreviewUrl(product);
   let tmp2 = null;
   if (null != avatarDecorationPreviewUrl) {
-    const obj2 = { source: null, style: null, fadeDuration: 0 };
+    tmp2 = <React3 source={{ uri: avatarDecorationPreviewUrl }} style={styles.avatarDecorationPreview} fadeDuration={0} />;
     const obj3 = { uri: avatarDecorationPreviewUrl };
-    obj2.source = obj3;
-    obj2.style = styles.avatarDecorationPreview;
-    tmp2 = <React4 source={null} style={null} fadeDuration={0} />;
   }
   return tmp2;
 }
 function NameplatePreviewImage(styles) {
   styles = styles.styles;
-  const staticImageUrl = NameplateUtils.getNameplateAssets(styles.nameplateData).staticImageUrl;
+  const nameplateData = styles.nameplateData;
+  const obj = NameplateUtils;
+  const staticImageUrl = obj.getNameplateAssets(nameplateData).staticImageUrl;
   let tmp = null;
   if (null != staticImageUrl) {
-    const obj2 = { style: styles.nameplateContainer, children: null };
-    const obj3 = { source: null, style: null, resizeMode: "cover", fadeDuration: 0 };
+    tmp = <_false style={styles.nameplateContainer}>{null}</_false>;
     const obj4 = { uri: staticImageUrl };
-    obj3.source = obj4;
-    obj3.style = styles.nameplatePreview;
-    obj2.children = <React4 source={null} style={null} resizeMode="cover" fadeDuration={0} />;
-    tmp = <React3 style={styles.nameplateContainer}>{null}</React3>;
   }
   return tmp;
 }
 function ProfileEffectPreviewImage(arg0) {
+  let product;
+  let styles;
   ({ product, styles } = arg0);
-  const profileEffectPreviewUrl = FamilyCenterActivityPurchaseRowUtils.getProfileEffectPreviewUrl(product);
+  const obj = FamilyCenterActivityPurchaseRowUtils;
+  const profileEffectPreviewUrl = obj.getProfileEffectPreviewUrl(product);
   let tmp2 = null;
   if (null != profileEffectPreviewUrl) {
-    const obj2 = { source: null, style: null, fadeDuration: 0 };
+    tmp2 = <React3 source={{ uri: profileEffectPreviewUrl }} style={styles.avatarDecorationPreview} fadeDuration={0} />;
     const obj3 = { uri: profileEffectPreviewUrl };
-    obj2.source = obj3;
-    obj2.style = styles.avatarDecorationPreview;
-    tmp2 = <React4 source={null} style={null} fadeDuration={0} />;
   }
   return tmp2;
 }
 function ProfileFramePreviewImage(arg0) {
+  let product;
+  let styles;
   ({ product, styles } = arg0);
   const tmp3 = useMaybeFetchProfileFrameDefault(product.skuId);
   let tmp4 = null;
   if (null != tmp3) {
-    const obj = { style: styles.profileFrameContainer, children: null };
-    const obj2 = { profileFrame: tmp3, previewWidth: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_5, previewHeight: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, profileBackgroundColor: tmp(576).colors.BACKGROUND_BASE_LOW };
-    obj.children = jsx(tmp(8285), { profileFrame: tmp3, previewWidth: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_5, previewHeight: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, profileBackgroundColor: tmp(576).colors.BACKGROUND_BASE_LOW });
-    tmp4 = <React3 style={styles.profileFrameContainer}>{null}</React3>;
-    const tmpResult = tmp(8285);
+    ({ profileFrame: tmp3, previewWidth: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_5, previewHeight: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, profileBackgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW });
+    ProfileFrameSamplePreviewDefault;
+    tmp4 = <_false style={styles.profileFrameContainer}>{null}</_false>;
   }
   return tmp4;
 }
 function SubscriptionPreview(arg0) {
+  let styles;
+  let subscriptionPlanId;
   ({ subscriptionPlanId, styles } = arg0);
   if (null == subscriptionPlanId) {
-    const obj2 = { style: styles.purchasePlaceholder, children: null };
-    const obj3 = { size: "custom", style: { width: 20, height: 20 } };
-    obj2.children = jsx(ShopIcon.ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
-    return <React3 style={styles.purchasePlaceholder}>{null}</React3>;
+    return <_false style={styles.purchasePlaceholder}>{null}</_false>;
   } else {
-    const obj5 = { style: styles.purchasePlaceholder, children: null };
+    const obj4 = FamilyCenterActivityPurchaseRowUtils;
     if (obj4.isGuildBoostSubscription(subscriptionPlanId)) {
       let NitroWheelIcon = tmp5(8678).BoostGemIcon;
     } else {
       NitroWheelIcon = tmp5(8122).NitroWheelIcon;
     }
-    const obj = { size: "custom", style: { width: 20, height: 20 } };
-    obj5.children = <NitroWheelIcon size="custom" style={{ width: 20, height: 20 }} />;
-    return <React3 style={styles.purchasePlaceholder}>{null}</React3>;
+    return <tmp8 style={styles.purchasePlaceholder}>{null}</tmp8>;
   }
 }
 function CollectiblePreview(arg0) {
+  let product;
+  let styles;
   ({ product, styles } = arg0);
   if (null == product) {
-    const obj2 = { style: styles.purchasePlaceholder, children: null };
-    const obj3 = { size: "custom", style: { width: 20, height: 20 } };
-    obj2.children = jsx(ShopIcon.ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
-    return <React3 style={styles.purchasePlaceholder}>{null}</React3>;
+    return <_false style={styles.purchasePlaceholder}>{null}</_false>;
   } else {
     const type = product.type;
     if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-      const obj4 = { product, styles };
       return <AvatarDecorationPreviewImage product={product} styles={styles} />;
-    } else if (tmp17(1974).CollectiblesItemType.NAMEPLATE === type) {
-      const nameplateDataFromProductRecord = tmp17(1971).getNameplateDataFromProductRecord(product);
+    } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
+      const tmp17Result = utils;
+      const nameplateDataFromProductRecord = tmp17Result.getNameplateDataFromProductRecord(product);
       let tmp8 = null;
       if (null != nameplateDataFromProductRecord) {
-        const obj5 = { nameplateData: nameplateDataFromProductRecord, styles };
         tmp8 = <NameplatePreviewImage nameplateData={nameplateDataFromProductRecord} styles={styles} />;
       }
       return tmp8;
-    } else if (tmp17(1974).CollectiblesItemType.PROFILE_EFFECT === type) {
-      const obj6 = { product, styles };
+    } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
       return <ProfileEffectPreviewImage product={product} styles={styles} />;
-    } else if (tmp17(1974).CollectiblesItemType.PROFILE_FRAME === type) {
-      const obj7 = { product, styles };
+    } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === type) {
       return <ProfileFramePreviewImage product={product} styles={styles} />;
     } else {
-      const obj = { style: styles.purchasePlaceholder, children: null };
-      const obj8 = { size: "custom", style: { width: 20, height: 20 } };
-      obj.children = jsx(tmp17(11620).ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
-      return <React3 style={styles.purchasePlaceholder}>{null}</React3>;
+      return <_false style={styles.purchasePlaceholder}>{null}</_false>;
     }
   }
 }
-get_ActivityIndicator = fn(17);
-({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-let closure_5 = fn(7667).PROFILE_FRAME_ASPECT_RATIO;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { purchasePlaceholder: null, avatarDecorationPreview: null, nameplateContainer: null, nameplatePreview: null, profileFrameContainer: null };
-let size = { width: fn(14438).PREVIEW_SIZE, height: fn(14438).PREVIEW_SIZE, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 12 };
-obj2.purchasePlaceholder = size;
-const size1 = { width: fn(14438).PREVIEW_SIZE, height: fn(14438).PREVIEW_SIZE, marginRight: 12 };
-obj2.avatarDecorationPreview = size1;
-const size2 = { width: fn(14438).PREVIEW_SIZE, height: fn(14438).PREVIEW_SIZE, marginRight: 12, borderRadius: nativeDefault.radii.xs, overflow: "hidden", position: "relative" };
-obj2.nameplateContainer = size2;
-const size3 = { position: "absolute", right: 0, width: fn(14438).PREVIEW_SIZE * fn(14438).NAMEPLATE_ASPECT_RATIO, height: fn(14438).PREVIEW_SIZE };
-obj2.nameplatePreview = size3;
-const size4 = { width: fn(14438).PREVIEW_SIZE, height: fn(14438).PREVIEW_SIZE, marginRight: 12, alignItems: "center", justifyContent: "center" };
-obj2.profileFrameContainer = size4;
-let closure_7 = createStyles.createStyles(obj2);
-size = fn(2);
+({ View: c3, Image: closure_4 } = react_native);
+let closure_5 = ProfileFrameConstants.PROFILE_FRAME_ASPECT_RATIO;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { purchasePlaceholder: size, avatarDecorationPreview: size1, nameplateContainer: size2, nameplatePreview: size3, profileFrameContainer: size4 };
+size = { width: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, height: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 12 };
+createStyles = createStyles.createStyles;
+size1 = { width: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, height: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, marginRight: 12 };
+size2 = { width: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, height: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, marginRight: 12, borderRadius: nativeDefault.radii.xs, overflow: "hidden", position: "relative" };
+size3 = { position: "absolute", right: 0, width: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * FamilyCenterActivityPurchaseRowUtils.NAMEPLATE_ASPECT_RATIO, height: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE };
+size4 = { width: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, height: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, marginRight: 12, alignItems: "center", justifyContent: "center" };
+let closure_7 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityItemPreview.tsx");
 
 export default function FamilyCenterActivityItemPreview(arg0) {
+  let displayName;
+  let isSubscription;
+  let product;
+  let subscriptionPlanId;
+  let tmp2Result;
   ({ displayName, product, isSubscription, subscriptionPlanId } = arg0);
   const tmp = closure_7();
-  const obj = { accessible: true, accessibilityLabel: displayName, children: null };
   if (isSubscription) {
     const obj2 = { subscriptionPlanId, styles: tmp };
-    let tmp2Result = tmp2(SubscriptionPreview, obj2);
+    tmp2Result = tmp2(SubscriptionPreview, obj2);
   } else {
     const obj3 = { product, styles: tmp };
     tmp2Result = tmp2(CollectiblePreview, obj3);
   }
-  obj.children = tmp2Result;
-  return <React3 accessible accessibilityLabel={displayName}>{null}</React3>;
+  return <tmp3 accessible accessibilityLabel={displayName}>{tmp2Result}</tmp3>;
 };

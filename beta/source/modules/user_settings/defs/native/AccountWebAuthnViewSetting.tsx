@@ -4,24 +4,33 @@
 // Dependencies: [19, 14214, 1372, 7417, 1074, 5203, 1115, 6014, 504, 11006, 14217, 2]
 
 // Module 14333 (AccountWebAuthnViewSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl3 from "intl" /* 1115 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
 import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6014 */;
-import noop from "module_19" /* 19 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import react from "react" /* 19 */;
 import WebAuthnStore from "WebAuthnStore" /* 14214 */;
 import UserStore from "UserStore" /* 1372 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+let currentUser;
+
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.y7SXYX);
+    const intl = intl3.intl;
+    return intl.string(intl3.t.y7SXYX);
   },
-  parent: fn(7417).MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   usePreNavigationAction: function useAccountCanUseWebAuthnView() {
-    return noop.useCallback(() => {
+    return react.useCallback(() => {
+      let intl;
+      let intl2;
       currentUser = currentUser.getCurrentUser();
       let flag;
       if (currentUser != null) {
@@ -31,35 +40,42 @@ const route = SettingBuilders.createRoute({
         flag = false;
       }
       if (!flag) {
-        const obj2 = { title: null, body: null };
-        const intl = util.intl;
-        obj2.title = intl.string(util.t.v740sh);
-        const intl2 = util.intl;
-        obj2.body = intl2.string(util.t.uggF7o);
-        AlertActionCreatorsDefault.show(obj2);
+        const obj = { title: intl.string(intl3.t.v740sh), body: intl2.string(intl3.t.uggF7o) };
+        const show = AlertActionCreatorsDefault.show;
+        AlertActionCreatorsDefault;
+        intl = intl3.intl;
+        intl2 = intl3.intl;
+        show(obj);
       }
       return flag;
     }, []);
   },
   useTrailing: function useAccountSecurityKeysSettingTrailing() {
+    let credentials;
+    const tmp = WebAuthnStore;
     if (!WebAuthnStore.hasFetchedCredentials()) {
-      const webAuthnCredentials = WebAuthnActionCreators.fetchWebAuthnCredentials();
+      let obj = WebAuthnActionCreators;
+      const webAuthnCredentials = obj.fetchWebAuthnCredentials();
     }
-    const items = [WebAuthnStore];
-    return initialize.useStateFromStores(items, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.n8mZ0X, { count: credentials.getCredentials().length });
+    const items = [tmp];
+    const obj2 = get_initialized;
+    return obj2.useStateFromStores(items, () => {
+      const intl = intl3.intl;
+      const formatToPlainString = intl.formatToPlainString;
+      const obj = { count: credentials.getCredentials().length };
+      const n8mZ0X = intl3.t.n8mZ0X;
+      return formatToPlainString(n8mZ0X, obj);
     });
   },
   unsearchable: true,
   screen: {
-    route: fn(1074).UserSettingsSections.WEBAUTHN_VIEW,
+    route: UserSettingsSections.WEBAUTHN_VIEW,
     getComponent() {
       return require("UserSettingsWebAuthn").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountWebAuthnViewSetting.tsx");
 
 export default route;

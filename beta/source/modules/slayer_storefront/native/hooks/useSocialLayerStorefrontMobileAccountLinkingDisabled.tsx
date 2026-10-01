@@ -6,19 +6,20 @@
 
 // Module 10472 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
 import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6649 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/hooks/useSocialLayerStorefrontMobileAccountLinkingDisabled.tsx");
 
 export const useSocialLayerStorefrontMobileAccountLinkingDisabled = function useSocialLayerStorefrontMobileAccountLinkingDisabled(applicationId) {
   _require = applicationId;
   const items = [SocialLayerStorefrontStore];
   const items1 = [applicationId];
-  return require("initialize").useStateFromStores(items, () => {
-    let tmp2 = null != closure_0;
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    let tmp2 = null != applicationId;
     if (tmp2) {
       const configForApplicationId = SocialLayerStorefrontStore.getConfigForApplicationId(tmp);
       let prop;

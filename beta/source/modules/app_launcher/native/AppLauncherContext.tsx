@@ -8,12 +8,11 @@
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 8712 */;
 import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 10786 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 const AppLauncherKeyboardCloseReason = { DISMISSED: 0, [0]: "DISMISSED", COMMAND: 1, [1]: "COMMAND", ACTIVITY: 2, [2]: "ACTIVITY", BACK: 3, [3]: "BACK", OAUTH_MODAL: 4, [4]: "OAUTH_MODAL" };
-let context = noop.createContext(undefined);
-const size = fn(2);
+let context = react.createContext(undefined);
 const result = size.fileFinishedImporting("modules/app_launcher/native/AppLauncherContext.tsx");
 
 export { AppLauncherKeyboardCloseReason };
@@ -21,34 +20,46 @@ export const AppLauncherBottomSheetExpandReason = { GESTURE: 0, [0]: "GESTURE", 
 export const AppLauncherContext = context;
 export const useAppLauncherChatInputRefDummy = function useAppLauncherChatInputRefDummy(noop) {
   noop = noop.noop;
-  return noop.useRef({
+  const obj = {
     getApplicationCommandManager() {
-      if (!c0) {
+      const tmp = c0;
+      if (!tmp) {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
         throw error;
       }
     },
     openCustomKeyboard() {
-      if (!c0) {
+      const tmp = c0;
+      if (!tmp) {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
         throw error;
       }
     },
     closeCustomKeyboard() {
-      if (!c0) {
+      const tmp = c0;
+      if (!tmp) {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
         throw error;
       }
     }
-  });
+  };
+  return react.useRef(obj);
 };
 export const useRequiredAppLauncherContext = function useRequiredAppLauncherContext() {
-  context = noop.useContext(context);
+  context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error("AppLauncherContext not found, must be used within AppLauncherNavigator");
     throw error;
   } else {
@@ -56,40 +67,53 @@ export const useRequiredAppLauncherContext = function useRequiredAppLauncherCont
   }
 };
 export const useAppLauncherContext = function useAppLauncherContext() {
-  noop.useRef(obj.DISMISSED);
-  const bottomSheetExpandReasonRef = noop.useRef(undefined);
+  let obj;
+  let closure_0 = react.useRef(obj.DISMISSED);
+  let closure_1 = react.useRef(undefined);
   obj = ReanimatedRexport;
   const sharedValue = obj.useSharedValue(-1);
-  const sharedValue1 = ReanimatedRexport.useSharedValue(0);
+  const obj2 = ReanimatedRexport;
+  const sharedValue1 = obj2.useSharedValue(0);
   const TEXT = AppLauncherTypes.AppLauncherEntrypoint.TEXT;
-  const defaultAppLauncherWidth = useDefaultAppLauncherWidth.useDefaultAppLauncherWidth(TEXT);
-  c0 = false;
-  const ref = noop.useRef({
+  const obj3 = useDefaultAppLauncherWidth;
+  const defaultAppLauncherWidth = obj3.useDefaultAppLauncherWidth(TEXT);
+  let c0 = false;
+  const obj4 = {
     getApplicationCommandManager() {
-      if (!c0) {
+      const tmp = c0;
+      if (!tmp) {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
         throw error;
       }
     },
     openCustomKeyboard() {
-      if (!c0) {
+      const tmp = c0;
+      if (!tmp) {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
         throw error;
       }
     },
     closeCustomKeyboard() {
-      if (!c0) {
+      const tmp = c0;
+      if (!tmp) {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
         throw error;
       }
     }
-  });
+  };
+  const ref = react.useRef(obj4);
   const items = [defaultAppLauncherWidth, TEXT, ref, sharedValue, sharedValue1];
-  const memo = noop.useMemo(() => ({ keyboardCloseReasonRef, bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef, chatInputRef: ref, width: defaultAppLauncherWidth, entrypoint: TEXT, onActivityItemSelected: "Boolean" }), items);
-  context = noop.useContext(context);
+  const memo = react.useMemo(() => ({ keyboardCloseReasonRef, bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef, chatInputRef: ref, width: defaultAppLauncherWidth, entrypoint: TEXT, onActivityItemSelected: "Boolean" }), items);
+  context = react.useContext(context);
   if (context == null) {
     context = memo;
   }

@@ -5,31 +5,31 @@
 // Exports: default
 
 // Module 15876 (IAPUpsellActionSheet)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import router_utils from "router_utils" /* 1101 */;
-import util from "util" /* 1115 */;
-import noop from "module_19" /* 19 */;
+import intl4 from "intl" /* 1115 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Routes = fn(1074).Routes;
-const StaticChannelRoute = fn(2052).StaticChannelRoute;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const Routes = Constants.Routes;
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/feature_education/IAPUpsellActionSheet.tsx");
 
 export default function IAPUpsellActionSheet(arg0) {
+  let markAsDismissed;
   ({ guildId: require, markAsDismissed } = arg0);
-  const obj = { imageSource: markAsDismissed(15878), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null };
-  const intl = util.intl;
-  obj.header = intl.string(util.t.rBw4cE);
-  const intl2 = util.intl;
-  obj.body = intl2.string(util.t.mKHibc);
-  const intl3 = util.intl;
-  obj.cta = intl3.string(util.t.RzWDqY);
-  obj.onCTAPress = function onCTAPress() {
-    router_utils.transitionTo(Routes.CHANNEL(closure_1_0, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
+  markAsDismissed(15877);
+  const intl = intl4.intl;
+  const intl2 = intl4.intl;
+  const intl3 = intl4.intl;
+  return <tmp imageSource={markAsDismissed(15878)} header={intl.string(intl4.t.rBw4cE)} body={intl2.string(intl4.t.mKHibc)} cta={intl3.string(intl4.t.RzWDqY)} onCTAPress={function onCTAPress() {
+    const obj = router_utils;
+    obj.transitionTo(Routes.CHANNEL(require, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
     markAsDismissed(ContentDismissActionType.UNKNOWN);
-  };
-  obj.markAsDismissed = markAsDismissed;
-  return jsx(markAsDismissed(15877), { imageSource: markAsDismissed(15878), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null });
+  }} markAsDismissed={markAsDismissed} />;
 };

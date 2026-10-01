@@ -4,34 +4,37 @@
 // Dependencies: [19, 21, 11879, 8347, 6379, 8535, 4836, 11880, 5279, 576, 2]
 
 // Module 11878 (GamePlatformBadgeRow)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 6379 */;
+import ScreenIcon from "ScreenIcon" /* 8347 */;
+import GameControllerIcon from "GameControllerIcon" /* 8535 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 11879 */;
 import GamePlatformBadges from "GamePlatformBadges" /* 11880 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 let obj = {};
-obj[fn(11879).GamePlatformAvailability.DESKTOP] = fn(8347).ScreenIcon;
-obj[fn(11879).GamePlatformAvailability.MOBILE] = fn(6379).MobilePhoneIcon;
-obj[fn(11879).GamePlatformAvailability.CONSOLE] = fn(8535).GameControllerIcon;
-const createStyles = fn(4836);
+obj[GamePlatformAvailability.GamePlatformAvailability.DESKTOP] = ScreenIcon.ScreenIcon;
+obj[GamePlatformAvailability.GamePlatformAvailability.MOBILE] = MobilePhoneIcon.MobilePhoneIcon;
+obj[GamePlatformAvailability.GamePlatformAvailability.CONSOLE] = GameControllerIcon.GameControllerIcon;
 let closure_6 = createStyles.createStyles({ row: { width: "auto" } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/games/native/GamePlatformBadgeRow.tsx");
-
-export default noop.memo(function GamePlatformBadgeRow(platforms) {
+const memoResult = react.memo(function GamePlatformBadgeRow(platforms) {
   platforms = platforms.platforms;
   const items = [platforms];
-  const memo = noop.useMemo(() => GamePlatformBadges.sortGamePlatformAvailability(platforms), items);
   const tmp = closure_6();
-  return jsx(platforms(5279).Stack, {
-    direction: "horizontal",
-    align: "center",
-    spacing: nativeDefault.space.PX_4,
-    style: closure_6().row,
-    children: memo.map((item) => {
-      obj = { size: "xs", color: "icon-subtle", accessibilityLabel: platforms(dependencyMap[7]).getGamePlatformAvailabilityLabel(item) };
-      return jsx(obj[item], { size: "xs", color: "icon-subtle", accessibilityLabel: platforms(dependencyMap[7]).getGamePlatformAvailabilityLabel(item) }, item);
-    })
-  });
+  const memo = react.useMemo(() => {
+    obj = GamePlatformBadges;
+    return obj.sortGamePlatformAvailability(platforms);
+  }, items);
+  const Stack = platforms(5279).Stack;
+  return <Stack direction="horizontal" align="center" spacing={nativeDefault.space.PX_4} style={tmp.row}>{memo.map((item) => {
+    const obj2 = platforms(dependencyMap[7]);
+    return <tmp key={arg0} size="xs" color="icon-subtle" accessibilityLabel={obj2.getGamePlatformAvailabilityLabel(arg0)} />;
+  })}</Stack>;
 });
+const result = size.fileFinishedImporting("modules/games/native/GamePlatformBadgeRow.tsx");
+
+export default memoResult;

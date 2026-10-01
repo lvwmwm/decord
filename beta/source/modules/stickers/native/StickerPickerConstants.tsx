@@ -8,6 +8,8 @@ import StickersTypes from "StickersTypes" /* 5581 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1218 */;
 import size from "module_2" /* 2 */;
 
+let MIN_MARGIN;
+let PADDING_HORIZONTAL;
 const PADDING_VERTICAL = ExpressionPickerConstants.PADDING_VERTICAL;
 ({ PADDING_HORIZONTAL, MIN_MARGIN } = ExpressionPickerConstants);
 const result = 2 * PADDING_VERTICAL;

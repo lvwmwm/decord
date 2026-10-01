@@ -5,18 +5,21 @@
 // Exports: useDebouncedGameAutocomplete
 
 // Module 8367 (useGameAutocomplete)
+import Constants from "Constants" /* 1074 */;
 import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5421 */;
 import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 8368 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import GameAutocompleteStore from "GameAutocompleteStore" /* 5420 */;
+import get_initialized from "get initialized" /* 504 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const QueryIds = fn(1074).QueryIds;
-const initialize = fn(504);
-const fetchStore = initialize.createFetchStore(GameAutocompleteStore, {
+const QueryIds = Constants.QueryIds;
+let obj = {
   getQueryId(query) {
-    return QueryIds.GAME_AUTOCOMPLETE(GameAutocompleteUtils.normalizeGameAutocompleteQuery(query));
+    const GAME_AUTOCOMPLETE = QueryIds.GAME_AUTOCOMPLETE;
+    const obj = GameAutocompleteUtils;
+    return GAME_AUTOCOMPLETE(obj.normalizeGameAutocompleteQuery(query));
   },
   get(arg0) {
     let results = GameAutocompleteStore.getResults(arg0);
@@ -26,7 +29,8 @@ const fetchStore = initialize.createFetchStore(GameAutocompleteStore, {
     return results;
   },
   load(arg0) {
-    return GameAutocompleteActionCreators.fetchGameAutocomplete(arg0);
+    const obj = GameAutocompleteActionCreators;
+    return obj.fetchGameAutocomplete(arg0);
   },
   getIsLoading(arg0) {
     return GameAutocompleteStore.isFetching(arg0);
@@ -38,11 +42,8 @@ const fetchStore = initialize.createFetchStore(GameAutocompleteStore, {
       if (tmp) {
         let tmp2 = 429 === status;
         if (!tmp2) {
-          let tmp3 = status >= 500;
-          if (tmp3) {
-            tmp3 = 503 !== status;
-          }
-          tmp2 = tmp3;
+          tmp2 = status >= 500 && 503 !== status;
+          const tmp3 = status >= 500 && 503 !== status;
         }
         tmp = tmp2;
       }
@@ -51,25 +52,34 @@ const fetchStore = initialize.createFetchStore(GameAutocompleteStore, {
   },
   staleAfter: 3600,
   failureStaleAfter: 60
-});
-const size = fn(2);
+};
+const fetchStore = get_initialized.createFetchStore(GameAutocompleteStore, obj);
 let result = size.fileFinishedImporting("modules/games/autocomplete/useGameAutocomplete.tsx");
 
 export const GAME_AUTOCOMPLETE_DEBOUNCE_MS = 200;
 export const GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS = 500;
 export const useGameAutocomplete = fetchStore;
 export const useDebouncedGameAutocomplete = function useDebouncedGameAutocomplete(query) {
-  const result = GameAutocompleteUtils.normalizeGameAutocompleteQuery(query);
-  require = result;
+  let c1;
+  let data;
+  let isLoading;
+  let tmp13;
+  let tmp3;
+  let tmp7;
+  let tmp8;
+  const obj = GameAutocompleteUtils;
+  const result = obj.normalizeGameAutocompleteQuery(query);
   c1 = undefined;
-  [tmp3, c1] = noop.useState(result);
-  noop.useRef(tmp3);
-  noop.useRef(0);
+  [tmp3, c1] = _slicedToArray(react.useState(result), 2);
+  const tmp2 = _slicedToArray(react.useState(result), 2);
+  let closure_2 = react.useRef(tmp3);
+  let closure_3 = react.useRef(0);
   const items = [result];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let current;
     if (current !== ref.current) {
-      if (null != tmp) {
-        if (null != tmp2.current) {
+      if (null != current) {
+        if (null != ref.current) {
           const _Date2 = Date;
           function emit() {
             ref2.current = Date.now();
@@ -81,29 +91,30 @@ export const useDebouncedGameAutocomplete = function useDebouncedGameAutocomplet
           const _setTimeout = setTimeout;
           current = setTimeout(emit, Math.min(200, Math.max(0, 500 - (Date.now() - ref2.current))));
           return () => {
-            clearTimeout(closure_0);
+            clearTimeout(current);
           };
         }
       }
       const _Date = Date;
       ref2.current = Date.now();
-      tmp2.current = tmp;
-      _undefined(tmp);
+      ref.current = current;
+      _undefined(current);
     }
   }, items);
   const tmp5 = fetchStore(tmp3);
   ({ data, isLoading } = tmp5);
-  const tmp2 = _slicedToArray(noop.useState(result), 2);
-  [tmp7, tmp8] = noop.useState(null);
+  const error = tmp5.error;
+  [tmp7, tmp8] = _slicedToArray(react.useState(null), 2);
+  const tmp6 = _slicedToArray(react.useState(null), 2);
   if (null == result) {
     if (null != tmp7) {
       tmp8(null);
     }
   } else {
+    const tmp9 = null != data && data !== tmp7;
     if (tmp9) {
       tmp8(data);
     }
-    tmp9 = null != data && data !== tmp7;
   }
   let tmp12 = null;
   if (null != result) {
@@ -112,15 +123,13 @@ export const useDebouncedGameAutocomplete = function useDebouncedGameAutocomplet
     }
     tmp12 = data;
   }
-  const obj2 = { results: tmp12, isLoading: null, error: null };
+  const obj2 = { results: tmp12, isLoading, error: tmp13 };
   if (!isLoading) {
     isLoading = tmp3 !== result;
   }
-  obj2.isLoading = isLoading;
-  let error = null;
+  tmp13 = null;
   if (tmp3 === result) {
-    error = tmp5.error;
+    tmp13 = error;
   }
-  obj2.error = error;
   return obj2;
 };

@@ -5,68 +5,68 @@
 // Module 5542
 import _modDef5543 from "module_5543" /* 5543 */;
 
-importDefault = arg2;
-const dependencyMap = arg6;
 
 export default {
   read(dataView, sum) {
-    const shortAt = _modDef5543.getShortAt(dataView, sum);
+    let str6;
+    let tmp11;
+    let tmp14;
+    let tmp8;
+    const obj = _modDef5543;
+    const shortAt = obj.getShortAt(dataView, sum);
     let tmp4;
     if (8 <= shortAt) {
-      const byteAt = tmp(5543).getByteAt(dataView, sum + 7);
+      const tmpResult = _modDef5543;
+      const byteAt = tmpResult.getByteAt(dataView, sum + 7);
+      tmp4 = { value: byteAt, description: "" + byteAt };
       const obj2 = { value: byteAt, description: "" + byteAt };
-      tmp4 = obj2;
-      const tmpResult = tmp(5543);
     }
     let tmp6;
     if (3 <= shortAt) {
-      const byteAt1 = tmp(5543).getByteAt(dataView, sum + 2);
+      const tmpResult4 = _modDef5543;
+      const byteAt1 = tmpResult4.getByteAt(dataView, sum + 2);
+      tmp6 = { value: byteAt1, description: "" + byteAt1 };
       const obj3 = { value: byteAt1, description: "" + byteAt1 };
-      tmp6 = obj3;
-      const tmpResult4 = tmp(5543);
     }
-    const obj4 = { "Bits Per Sample": tmp6, "Image Height": null, "Image Width": null, "Color Components": null, Subsampling: null };
-    let tmp8;
+    const obj4 = { "Bits Per Sample": tmp6, "Image Height": tmp8, "Image Width": tmp11, "Color Components": tmp4, Subsampling: tmp14 };
+    tmp8 = undefined;
     if (5 <= shortAt) {
-      const shortAt1 = tmp(5543).getShortAt(dataView, sum + 3);
-      const obj5 = { value: shortAt1, description: null };
+      const tmpResult5 = _modDef5543;
+      const shortAt1 = tmpResult5.getShortAt(dataView, sum + 3);
       const _HermesInternal = HermesInternal;
-      obj5.description = "" + shortAt1 + "px";
-      tmp8 = obj5;
-      const tmpResult5 = tmp(5543);
+      tmp8 = { value: shortAt1, description: "" + shortAt1 + "px" };
+      const obj5 = { value: shortAt1, description: "" + shortAt1 + "px" };
     }
-    obj4["Image Height"] = tmp8;
-    let tmp11;
+    tmp11 = undefined;
     if (7 <= shortAt) {
-      const shortAt2 = tmp(5543).getShortAt(dataView, sum + 5);
-      const obj6 = { value: shortAt2, description: null };
+      const tmpResult6 = _modDef5543;
+      const shortAt2 = tmpResult6.getShortAt(dataView, sum + 5);
       const _HermesInternal2 = HermesInternal;
-      obj6.description = "" + shortAt2 + "px";
-      tmp11 = obj6;
-      const tmpResult6 = tmp(5543);
+      tmp11 = { value: shortAt2, description: "" + shortAt2 + "px" };
+      const obj6 = { value: shortAt2, description: "" + shortAt2 + "px" };
     }
-    obj4["Image Width"] = tmp11;
-    obj4["Color Components"] = tmp4;
-    let tmp14 = tmp4;
-    if (tmp4) {
-      value = tmp4.value;
+    tmp14 = tmp4;
+    if (tmp14) {
+      const value = tmp4.value;
       let tmp15;
       if (8 + 3 * value <= shortAt) {
+        let num6;
         const items = [];
         for (let num6 = 0; num6 < value; num6 = num6 + 1) {
           sum = sum + 8 + 3 * num6;
+          let push = items.push;
           let obj11 = _modDef5543;
           let items1 = [obj11.getByteAt(dataView, sum), , ];
           let obj12 = _modDef5543;
           items1[1] = obj12.getByteAt(dataView, sum + 1);
           let obj13 = _modDef5543;
           items1[2] = obj13.getByteAt(dataView, sum + 2);
-          let arr = items.push(items1);
+          let arr = push(items1);
         }
-        const obj7 = { value: items, description: null };
-        let str6 = "";
+        const obj7 = { value: items, description: str6 };
+        str6 = "";
         if (items.length > 1) {
-          closure_0 = { 1: "Y", 2: "Cb", 3: "Cr", 4: "I", 5: "Q" };
+          let closure_0 = { 1: "Y", 2: "Cb", 3: "Cr", 4: "I", 5: "Q" };
           const mapped = items.map((item) => closure_0[item[0]]);
           let str7 = "";
           const joined = mapped.join("");
@@ -82,12 +82,10 @@ export default {
           }
           str6 = joined + str7;
         }
-        obj7.description = str6;
         tmp15 = obj7;
       }
       tmp14 = tmp15;
     }
-    obj4.Subsampling = tmp14;
     return obj4;
   }
 };

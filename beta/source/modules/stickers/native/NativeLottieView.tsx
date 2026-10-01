@@ -5,60 +5,71 @@
 // Exports: default
 
 // Module 7442 (NativeLottieView)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import codegenNativeCommandsDefault from "codegenNativeCommands" /* 113 */;
 import LottieNodeNativeComponentDefault from "LottieNodeNativeComponent" /* 7443 */;
-import noop_mod from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
-let noop = noop_mod;
-({ useEffect: closure_0, useRef: closure_1 } = noop);
-let noop = noop_mod;
-let jsx = jsxProd.jsx;
+let _window;
+let map;
+let react = react_mod;
+({ useEffect: _window, useRef: map } = react);
+react = react_mod;
+const requireNativeComponent = react_native.requireNativeComponent;
+let jsx = Fragment.jsx;
 if (PlatformUtils.isAndroid()) {
-  let importDefaultResult = LottieNodeNativeComponentDefault;
+  LottieNodeNativeComponentDefault;
 } else {
-  importDefaultResult = _mod17.requireNativeComponent("NativeLottieNode");
+  requireNativeComponent("NativeLottieNode");
 }
 let closure_5 = codegenNativeCommandsDefault({ supportedCommands: ["setup"] });
 const NativeLottieRenderMode = { LOOP: 0, [0]: "LOOP", STILL: 1, [1]: "STILL", ONCE: 2, [2]: "ONCE" };
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/stickers/native/NativeLottieView.tsx");
 
-export default function NativeLottieView(accessibilityLabel) {
-  ({ width, height, opacity } = accessibilityLabel);
-  ({ asset, url } = accessibilityLabel);
+export default function NativeLottieView(renderMode) {
+  let asset;
+  let height;
+  let obj;
+  let opacity;
+  let url;
+  let width;
+  ({ width, height, opacity } = renderMode);
+  ({ asset, url } = renderMode);
   if (opacity === undefined) {
     opacity = 1;
   }
-  let LOOP = accessibilityLabel.renderMode;
+  let LOOP = renderMode.renderMode;
   if (LOOP === undefined) {
     LOOP = obj.LOOP;
   }
-  let flag = accessibilityLabel.animating;
+  let flag = renderMode.animating;
   if (flag === undefined) {
     flag = true;
   }
-  let size;
+  size = undefined;
+  const accessibilityLabel = renderMode.accessibilityLabel;
   const ref = size.useRef(null);
-  size = { asset, url, width, height, animating: flag, accessibilityLabel: accessibilityLabel.accessibilityLabel };
+  size = { asset, url, width, height, animating: flag, accessibilityLabel };
   jsx = ref(size);
   LOOP(() => {
-    closure_3.current = size;
+    ref.current = size;
   });
   const items = [LOOP];
   LOOP(() => {
+    let accessibilityLabel;
+    let animating;
+    let asset;
+    let height;
+    let url;
+    let width;
     ({ asset, url, width, height, animating, accessibilityLabel } = ref.current);
-    let tmp2 = "" !== url;
+    const tmp2 = "" !== url && 0 !== width && 0 !== height;
     if (tmp2) {
-      tmp2 = 0 !== width;
-    }
-    if (tmp2) {
-      tmp2 = 0 !== height;
-    }
-    if (tmp2) {
-      closure_5.setup(ref.current, asset, url, width, height, tmp, animating, accessibilityLabel);
+      closure_5.setup(ref.current, asset, url, width, height, LOOP, animating, accessibilityLabel);
     }
   }, items);
   obj = { ref, style: { width, height, opacity } };

@@ -5,14 +5,18 @@
 // Exports: useProfileSectionTabs, useProfileTabIndices
 
 // Module 12661 (useProfileSectionTabs)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 7628 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const UserProfileSections = fn(7628).UserProfileSections;
-const size = fn(2);
+let activeIndex;
+
+const UserProfileSections = Constants.UserProfileSections;
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useProfileSectionTabs.tsx");
 
 export function useProfileTabIndices(arg0, isRecentActivityMobileEnabled, arg2) {
+  let tmp2;
   let num = -1;
   let num2 = 1;
   let num3 = -1;
@@ -20,50 +24,53 @@ export function useProfileTabIndices(arg0, isRecentActivityMobileEnabled, arg2) 
     num2 = 2;
     num3 = 1;
   }
-  const obj = { boardTabIndex: num3, activityTabIndex: null, wishlistTabIndex: null };
   let sum = num2;
-  let tmp2 = num;
+  const obj = { boardTabIndex: num3, activityTabIndex: tmp2, wishlistTabIndex: num };
+  tmp2 = num;
   if (isRecentActivityMobileEnabled) {
     sum = num2 + 1;
     tmp2 = num2;
   }
-  obj.activityTabIndex = tmp2;
   if (arg2) {
     num = sum;
   }
-  obj.wishlistTabIndex = num;
   return obj;
 }
 export const useProfileSectionTabs = function useProfileSectionTabs(boardTabIndex) {
+  let _undefined;
+  let tmp2;
+  let tmp3;
+  let wishlistTabIndex;
   ({ initialUserProfileSection: _slicedToArray, wishlistTabIndex } = boardTabIndex);
   boardTabIndex = boardTabIndex.boardTabIndex;
   const activityTabIndex = boardTabIndex.activityTabIndex;
   const onTabChange = boardTabIndex.onTabChange;
   let num2;
-  [tmp2, tmp3] = wishlistTabIndex.useState(() => {
+  const tmp = _slicedToArray(wishlistTabIndex.useState(() => {
     if (UserProfileSections.WISHLIST === _slicedToArray) {
-      return tmp2.WISHLIST;
-    } else if (tmp2.WIDGETS === tmp) {
-      return tmp2.WIDGETS;
+      return UserProfileSections.WISHLIST;
+    } else if (UserProfileSections.WIDGETS === _slicedToArray) {
+      return UserProfileSections.WIDGETS;
     } else {
-      return tmp2.ACTIVITY === tmp ? tmp2.ACTIVITY : tmp2.MAIN;
+      return UserProfileSections.ACTIVITY === _slicedToArray ? UserProfileSections.ACTIVITY : UserProfileSections.MAIN;
     }
-  });
-  c5 = tmp3;
+  }), 2);
+  [tmp2, tmp3] = tmp;
+  let c5 = tmp3;
   let num = wishlistTabIndex;
   if (boardTabIndex.WISHLIST !== tmp2) {
     num = boardTabIndex;
-    if (tmp4.WIDGETS !== tmp2) {
+    if (boardTabIndex.WIDGETS !== tmp2) {
       num = activityTabIndex;
-      if (tmp4.ACTIVITY !== tmp2) {
-        if (tmp4.MAIN === tmp2) {
+      if (boardTabIndex.ACTIVITY !== tmp2) {
+        if (boardTabIndex.MAIN === tmp2) {
           num = 0;
         }
       }
     }
   }
   if (num < 0) {
-    tmp3(tmp4.MAIN);
+    tmp3(boardTabIndex.MAIN);
   }
   num2 = 0;
   if (num >= 0) {
@@ -72,8 +79,9 @@ export const useProfileSectionTabs = function useProfileSectionTabs(boardTabInde
   const items = [wishlistTabIndex, boardTabIndex, activityTabIndex, onTabChange];
   const items1 = [num2];
   const callback = obj.useCallback((arg0) => {
+    let MAIN;
     if (wishlistTabIndex === arg0) {
-      let MAIN = UserProfileSections.WISHLIST;
+      MAIN = UserProfileSections.WISHLIST;
     } else if (boardTabIndex === arg0) {
       MAIN = UserProfileSections.WIDGETS;
     } else if (activityTabIndex === arg0) {
@@ -86,16 +94,7 @@ export const useProfileSectionTabs = function useProfileSectionTabs(boardTabInde
       onTabChange(MAIN);
     }
   }, items);
-  const tmp = _slicedToArray(wishlistTabIndex.useState(() => {
-    if (UserProfileSections.WISHLIST === _slicedToArray) {
-      return tmp2.WISHLIST;
-    } else if (tmp2.WIDGETS === tmp) {
-      return tmp2.WIDGETS;
-    } else {
-      return tmp2.ACTIVITY === tmp ? tmp2.ACTIVITY : tmp2.MAIN;
-    }
-  }), 2);
-  return {
+  const obj2 = {
     activeProfileTabSection: tmp2,
     setActiveProfileTabSection: tmp3,
     handleTabChange: callback,
@@ -107,4 +106,5 @@ export const useProfileSectionTabs = function useProfileSectionTabs(boardTabInde
     }, items1),
     activeProfileTabSectionIndex: num2
   };
+  return obj2;
 };

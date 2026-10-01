@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 15985 (GuildsBarFooterWrapper)
-import jsxProd from "jsxProd" /* 21 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import NativeViewDefault from "NativeView" /* 5901 */;
@@ -14,23 +14,29 @@ import GuildsBarConstants from "GuildsBarConstants" /* 15918 */;
 import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
+let obj2;
 const GUILD_ITEM_HIT_SLOP = GuildsBarConstants.GUILD_ITEM_HIT_SLOP;
-const jsx = jsxProd.jsx;
-let obj = { footerWrapper: { display: "flex", alignSelf: "stretch", alignItems: "center", gap: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING } };
+const jsx = Fragment.jsx;
+let obj = { footerWrapper: obj2 };
+obj2 = { display: "flex", alignSelf: "stretch", alignItems: "center", gap: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING };
 let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFooterWrapper.tsx");
 
 export default function GuildsBarFooterWrapper(children) {
-  const token = useToken.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
+  children = children.children;
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
   const tmp2 = closure_5();
-  const isHomeDrawerEnabled = useHomeDrawerGesture.useIsHomeDrawerEnabled();
+  const obj2 = useHomeDrawerGesture;
+  const isHomeDrawerEnabled = obj2.useIsHomeDrawerEnabled();
   const style = [tmp2.footerWrapper, ];
   let tmp6 = null;
   const tmp4 = jsx;
+  const tmp5 = NativeViewDefault;
   if (!isHomeDrawerEnabled) {
+    tmp6 = { width: token + GUILD_ITEM_HIT_SLOP.left + GUILD_ITEM_HIT_SLOP.right };
     const obj3 = { width: token + GUILD_ITEM_HIT_SLOP.left + GUILD_ITEM_HIT_SLOP.right };
-    tmp6 = obj3;
   }
   style[1] = tmp6;
-  return tmp4(NativeViewDefault, { style, children: children.children });
+  return tmp4(tmp5, { style, children });
 };

@@ -4,47 +4,50 @@
 // Dependencies: [19, 9577, 5018, 21, 4836, 576, 4528, 1115, 4787, 4989, 10374, 15748, 2]
 
 // Module 15856 (UnknownChannel)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4787 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
+import ReadStateConstants from "ReadStateConstants" /* 5018 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 9577 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10374 */;
 import ChannelItemDefault from "ChannelItem" /* 15748 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let channel;
+
 function handlePress() {
-  const obj2 = { key: "UNKNOWN_CHANNEL_UPDATE_DISCORD", content: null, IconComponent: null };
-  const intl = util.intl;
-  obj2.content = intl.string(util.t["/ZjyYE"]);
-  obj2.IconComponent = CircleInformationIcon.CircleInformationIcon;
-  ToastActionCreatorsDefault.open(obj2);
+  let intl;
+  const obj = { key: "UNKNOWN_CHANNEL_UPDATE_DISCORD", content: intl.string(intl2.t["/ZjyYE"]), IconComponent: CircleInformationIcon.CircleInformationIcon };
+  const open = ToastActionCreatorsDefault.open;
+  ToastActionCreatorsDefault;
+  intl = intl2.intl;
+  open(obj);
 }
-const UnreadSetting = fn(5018).UnreadSetting;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { container: { marginVertical: fn(9577).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
+const CHANNEL_MARGIN_VERTICAL = RedesignChannelListConstants.CHANNEL_MARGIN_VERTICAL;
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+const jsx = Fragment.jsx;
+let obj = { container: { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
+({ marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md });
 let closure_6 = createStyles.createStyles(obj);
-const obj3 = { marginVertical: fn(9577).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/channel_list_v2/native/items/UnknownChannel.tsx");
-
-export default noop.memo((channel) => {
+const memoResult = react.memo((channel) => {
   channel = channel.channel;
   const selected = channel.selected;
   const items = [channel.id];
   const tmp = closure_6();
-  const callback = noop.useCallback(() => {
-    const result = openChannelLongPressActionSheet.openChannelLongPressActionSheet(channel.id);
-  }, items);
-  const obj = { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null };
   const tmp2 = useChannelNameDefault(channel);
+  const callback = react.useCallback(() => {
+    const obj = openChannelLongPressActionSheet;
+    const result = obj.openChannelLongPressActionSheet(channel.id);
+  }, items);
+  ChannelItemDefault;
   const intl = channel(1115).intl;
-  obj.accessibilityLabel = intl.formatToPlainString(channel(1115).t.yjQ9P8, { channelName: tmp2 });
-  obj.accessibilityState = { selected };
-  obj.channel = channel;
-  obj.selected = selected;
-  obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-  return jsx(ChannelItemDefault, { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
+  return <tmp4 onPress={handlePress} onLongPress={callback} style={tmp.container} accessible accessibilityLabel={intl.formatToPlainString(channel(1115).t.yjQ9P8, { channelName: tmp2 })} accessibilityState={{ selected }} channel={channel} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
 });
+let result = size.fileFinishedImporting("modules/channel_list_v2/native/items/UnknownChannel.tsx");
+
+export default memoResult;

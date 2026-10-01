@@ -5,24 +5,25 @@
 // Module 4919
 import arrayPush from "arrayPush" /* 658 */;
 import stubArray from "stubArray" /* 659 */;
-import _mod660 from "module_660" /* 660 */;
-import _mod4915 from "module_4915" /* 4915 */;
+import stubArray2 from "stubArray" /* 660 */;
+import overArg from "overArg" /* 4915 */;
 
+let fn;
 if (Object.getOwnPropertySymbols) {
-  let fn = (arg0) => {
+  fn = (arg0) => {
     let tmp = arg0;
     const items = [];
     if (arg0) {
       do {
         let tmp4 = arrayPush;
         let tmp4Result = tmp4(items, stubArray(tmp));
-        tmp = _mod4915(tmp);
+        tmp = overArg(tmp);
       } while (tmp);
     }
     return items;
   };
 } else {
-  fn = _mod660;
+  fn = stubArray2;
 }
 
 export default fn;

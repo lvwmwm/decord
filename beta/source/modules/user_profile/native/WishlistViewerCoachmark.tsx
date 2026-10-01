@@ -5,25 +5,27 @@
 // Exports: default
 
 // Module 12700 (WishlistViewerCoachmark)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl4 from "intl" /* 1115 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import _modDef12701 from "module_12701" /* 12701 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let closure_4;
+let hasOwnProperty;
 function CoachmarkImage() {
   const tmp = closure_8();
-  const obj = { style: tmp.imageContainer, children: null };
-  const obj2 = { source: { uri: _modDef12701 }, style: tmp.image };
-  obj.children = <hasOwnProperty source={{ uri: _modDef12701 }} style={tmp.image} />;
-  return <React4 style={tmp.imageContainer}>{null}</React4>;
+  ({ source: { uri: _modDef12701 }, style: tmp.image });
+  ({ uri: _modDef12701 });
+  return <React3 style={tmp.imageContainer}>{null}</React3>;
 }
-get_ActivityIndicator = fn(17);
-({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+({ View: closure_4, Image: hasOwnProperty } = react_native);
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" }, image: { width: 160, height: 106 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/WishlistViewerCoachmark.tsx");
 
 export default function WishlistViewerCoachmark(isVisible) {
@@ -32,28 +34,36 @@ export default function WishlistViewerCoachmark(isVisible) {
   const onViewWishlist = isVisible.onViewWishlist;
   let onButtonPress;
   const items = [onViewWishlist];
+  const anchorRef = isVisible.anchorRef;
   onButtonPress = onButtonPress.useCallback(() => {
     onViewWishlist();
   }, items);
   const items1 = [isVisible, markAsDismissed, onButtonPress];
   const memo = onButtonPress.useMemo(() => {
-    const obj = { title: null, description: null, position: "bottom", visible: null, onDismiss: null, renderImgComponent: null, buttonLabel: null, buttonVariant: "primary", onButtonPress: null };
-    const intl = util.intl;
-    obj.title = intl.string(util.t["+b6iUl"]);
-    const intl2 = util.intl;
-    obj.description = intl2.string(util.t.Howsng);
-    obj.visible = isVisible;
-    obj.onDismiss = function onDismiss() {
-      return markAsDismissed(constants.USER_DISMISS);
+    let intl;
+    let intl2;
+    let intl3;
+    const obj = {
+      title: intl.string(intl4.t["+b6iUl"]),
+      description: intl2.string(intl4.t.Howsng),
+      position: "bottom",
+      visible: isVisible,
+      onDismiss() {
+        return markAsDismissed(constants.USER_DISMISS);
+      },
+      renderImgComponent() {
+        return closure_1_7(closure_1_9, {});
+      },
+      buttonLabel: intl3.string(intl4.t.TxBQzD),
+      buttonVariant: "primary",
+      onButtonPress
     };
-    obj.renderImgComponent = function renderImgComponent() {
-      return closure_1_7(closure_1_9, {});
-    };
-    const intl3 = util.intl;
-    obj.buttonLabel = intl3.string(util.t.TxBQzD);
-    obj.onButtonPress = onButtonPress;
+    intl = intl4.intl;
+    intl2 = intl4.intl;
+    intl3 = intl4.intl;
     return obj;
   }, items1);
-  const coachmark = isVisible(onViewWishlist[7]).useCoachmark(isVisible.anchorRef, memo);
+  let obj = isVisible(onViewWishlist[7]);
+  const coachmark = obj.useCoachmark(anchorRef, memo);
   return null;
 };

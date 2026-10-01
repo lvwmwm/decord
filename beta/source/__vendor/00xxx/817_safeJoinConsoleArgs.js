@@ -5,18 +5,33 @@
 // Exports: createConsoleTemplateAttributes, formatConsoleArgs, hasConsoleSubstitutions, safeJoinConsoleArgs
 
 // Module 817 (safeJoinConsoleArgs)
-import normalize from "normalize" /* 730 */;
+import _mod692 from "module_692" /* 692 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = arg1;
-let dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+let tmp;
+const normalize = tmp(730);
+const f72079 = (item) => {
+  let StringResult;
+  const obj = _mod692;
+  if (obj.isPrimitive(item)) {
+    const _String = String;
+    StringResult = String(item);
+  } else {
+    const _JSON = JSON;
+    const normalizer = normalize;
+    StringResult = stringify(normalizer.normalize(item, normalizeDepth, normalizeMaxBreadth));
+  }
+  return StringResult;
+};
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const createConsoleTemplateAttributes = function createConsoleTemplateAttributes(args, substr) {
-  const obj = {};
+  let fillResult;
+  const obj = { "sentry.message.template": "" + args + " " + fillResult.join(" ") };
   const array = new Array(substr.length);
-  obj["sentry.message.template"] = "" + args + " " + array.fill("{}").join(" ");
+  fillResult = array.fill("{}");
   const item = substr.forEach((item, index) => {
     obj["sentry.message.parameter." + index] = item;
   });
@@ -24,46 +39,28 @@ export const createConsoleTemplateAttributes = function createConsoleTemplateAtt
 };
 export const formatConsoleArgs = function formatConsoleArgs(args, normalizeDepth, normalizeMaxBreadth) {
   if ("util" in require("module_686").GLOBAL_OBJ) {
-    if (typeof tmp(686).GLOBAL_OBJ.util.format === "function") {
-      const util = tmp(686).GLOBAL_OBJ.util;
+    let applyResult;
+    if (typeof require("module_686").GLOBAL_OBJ.util.format === "function") {
+      const util = tmp2(686).GLOBAL_OBJ.util;
       const format = util.format;
       const items = [];
-      HermesBuiltin.arraySpread(args, 0);
-      let applyResult = HermesBuiltin.apply(items, util);
+      HermesBuiltin.arraySpread(items, args, 0);
+      applyResult = HermesBuiltin.apply(format, items, util);
     }
     return applyResult;
   }
   _require = normalizeDepth;
   dependencyMap = normalizeMaxBreadth;
-  const mapped = args.map((item) => {
-    if (obj.isPrimitive(item)) {
-      const _String = String;
-      let StringResult = String(item);
-    } else {
-      const _JSON = JSON;
-      const normalizer = normalize;
-      StringResult = JSON.stringify(normalizer.normalize(item, closure_0, closure_1));
-    }
-    return StringResult;
-  });
+  const mapped = args.map(f72079);
   applyResult = mapped.join(" ");
 };
 export const hasConsoleSubstitutions = function hasConsoleSubstitutions(args) {
-  return /%[sdifocO]/.test(args);
+  const obj = /%[sdifocO]/;
+  return obj.test(args);
 };
 export const safeJoinConsoleArgs = function safeJoinConsoleArgs(arr, arg1, arg2) {
-  closure_0 = arg1;
-  closure_1 = arg2;
-  const mapped = arr.map((item) => {
-    if (obj.isPrimitive(item)) {
-      const _String = String;
-      let StringResult = String(item);
-    } else {
-      const _JSON = JSON;
-      const normalizer = normalize;
-      StringResult = JSON.stringify(normalizer.normalize(item, closure_0, closure_1));
-    }
-    return StringResult;
-  });
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  const mapped = arr.map(f72079);
   return mapped.join(" ");
 };

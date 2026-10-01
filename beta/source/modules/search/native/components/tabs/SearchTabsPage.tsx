@@ -5,7 +5,11 @@
 // Exports: default
 
 // Module 16455 (SearchTabsPage)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
+import Constants from "Constants" /* 1074 */;
+import SearchConstants from "SearchConstants" /* 7303 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7715 */;
 import GuildNSFWDefault from "GuildNSFW" /* 12162 */;
 import ChannelSpoilerDefault from "ChannelSpoiler" /* 12164 */;
@@ -18,33 +22,46 @@ import FilesScreenDefault from "FilesScreen" /* 16532 */;
 import LinksScreenDefault from "LinksScreen" /* 16534 */;
 import MessagesScreenDefault from "MessagesScreen" /* 16541 */;
 import messages_PinsScreenDefault from "messages/PinsScreen" /* 16543 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let importDefault;
+
 function SearchTabsPage(selectMediaTab) {
+  let c1;
+  let isFocused;
+  let searchContext;
+  let tab;
+  let tmp2;
+  let width;
   ({ tab, searchContext } = selectMediaTab);
   ({ isFocused, width } = selectMediaTab);
   importDefault = undefined;
-  [tmp2, c1] = noop.useState(isFocused);
-  const effect = noop.useEffect(() => {
+  selectMediaTab = selectMediaTab.selectMediaTab;
+  [tmp2, c1] = _slicedToArray(react.useState(isFocused), 2);
+  const tmp = _slicedToArray(react.useState(isFocused), 2);
+  const effect = react.useEffect(() => {
     const timerId = setTimeout(() => {
       closure_1_1(true);
     }, 10);
   }, []);
-  const tmp = _slicedToArray(noop.useState(isFocused), 2);
-  const tmp4 = searchContext;
   const items = [ChannelStore];
-  const stateFromStores = searchContext(504).useStateFromStores(items, () => {
-    if (searchContext.type === SearchTypes.GUILD_CHANNEL) {
-      const channelId = tmp2.channelId;
-    }
-    return ChannelStore.getChannel(channelId);
-  });
   const obj = searchContext(504);
-  const isChannelSpoilerGated = searchContext(6747).useIsChannelSpoilerGated(stateFromStores);
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let channelId;
+    const getChannel = ChannelStore.getChannel;
+    if (searchContext.type === SearchTypes.GUILD_CHANNEL) {
+      channelId = tmp2.channelId;
+    }
+    return getChannel(channelId);
+  });
+  const obj2 = searchContext(6747);
+  const isChannelSpoilerGated = obj2.useIsChannelSpoilerGated(stateFromStores);
   searchContext(5046);
+  const tmp4 = searchContext;
   if (tmp2) {
     if (tab !== SearchTabs.MEMBERS) {
       if (searchContext.type === SearchTypes.GUILD_CHANNEL) {
@@ -58,34 +75,24 @@ function SearchTabsPage(selectMediaTab) {
       }
     }
     if (SearchTabs.RECENT === tab) {
-      const obj5 = { onJumpToMedia: selectMediaTab.selectMediaTab, searchContext, width };
-      return jsx(RecentScreenDefault, { onJumpToMedia: selectMediaTab.selectMediaTab, searchContext, width });
-    } else if (tmp11.PEOPLE === tab) {
-      const obj6 = { searchContext };
+      return jsx(RecentScreenDefault, { onJumpToMedia: selectMediaTab, searchContext, width });
+    } else if (SearchTabs.PEOPLE === tab) {
       return jsx(PeopleScreenDefault, { searchContext });
-    } else if (tmp11.MEMBERS === tab) {
-      const obj7 = { searchContext };
+    } else if (SearchTabs.MEMBERS === tab) {
       return jsx(MembersScreenDefault, { searchContext });
-    } else if (tmp11.GUILD_CHANNELS === tab) {
-      const obj8 = { searchContext };
+    } else if (SearchTabs.GUILD_CHANNELS === tab) {
       return jsx(ChannelsScreenDefault, { searchContext });
-    } else if (tmp11.MEDIA === tab) {
-      const obj9 = { tab, searchContext, isFocused, width };
+    } else if (SearchTabs.MEDIA === tab) {
       return jsx(MediaScreenDefault, { tab, searchContext, isFocused, width });
-    } else if (tmp11.FILES === tab) {
-      const obj10 = { tab, searchContext, isFocused, width };
+    } else if (SearchTabs.FILES === tab) {
       return jsx(FilesScreenDefault, { tab, searchContext, isFocused, width });
-    } else if (tmp11.LINKS === tab) {
-      const obj11 = { tab, searchContext, isFocused, width };
+    } else if (SearchTabs.LINKS === tab) {
       return jsx(LinksScreenDefault, { tab, searchContext, isFocused, width });
-    } else if (tmp11.THREADS === tab) {
-      const obj12 = { searchContext };
+    } else if (SearchTabs.THREADS === tab) {
       return jsx(tmp4(16535).SearchTabsThreadScreen, { searchContext });
-    } else if (tmp11.MESSAGES === tab) {
-      const obj26 = { tab, searchContext, isFocused };
+    } else if (SearchTabs.MESSAGES === tab) {
       return jsx(MessagesScreenDefault, { tab, searchContext, isFocused });
-    } else if (tmp11.PINS === tab) {
-      const obj27 = { tab, searchContext, isFocused };
+    } else if (SearchTabs.PINS === tab) {
       return jsx(messages_PinsScreenDefault, { tab, searchContext, isFocused });
     } else {
       return null;
@@ -93,26 +100,23 @@ function SearchTabsPage(selectMediaTab) {
   } else {
     return null;
   }
-  const obj2 = searchContext(6747);
 }
-const View = fn(17).View;
-const SearchTabs = fn(7303).SearchTabs;
-const SearchTypes = fn(1074).SearchTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const SearchTabs = SearchConstants.SearchTabs;
+const SearchTypes = Constants.SearchTypes;
+const jsx = Fragment.jsx;
 let closure_10 = createStyles.createStyles({ container: { flex: 1 } });
-let context = noop.createContext(undefined);
-const size = fn(2);
+let context = react.createContext(undefined);
 const result = size.fileFinishedImporting("modules/search/native/components/tabs/SearchTabsPage.tsx");
 
 export default function ConnectedSearchTabsPage(tab) {
+  let searchContext;
+  let width;
   tab = tab.tab;
   ({ searchContext, width } = tab);
-  context = noop.useContext(context);
+  context = react.useContext(context);
   _modDef38(null != context, "[SearchTabsPageContext] Context should not be null.");
-  const obj = { style: closure_10().container, children: null };
-  const tmp3 = closure_10();
-  obj.children = <SearchTabsPage isFocused={useStateFromSharedValueDefault(context.selectedTab) === tab} selectMediaTab={context.selectMediaTab} tab={tab} searchContext={searchContext} width={width} />;
+  ({ isFocused: useStateFromSharedValueDefault(context.selectedTab) === tab, selectMediaTab: context.selectMediaTab, tab, searchContext, width });
   return <View style={closure_10().container}>{null}</View>;
 };
 export const SearchTabsPageContext = context;

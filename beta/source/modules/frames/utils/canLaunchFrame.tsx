@@ -6,6 +6,7 @@
 
 // Module 8783 (canLaunchFrame)
 import Constants from "Constants" /* 1074 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8321 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 8590 */;
 import size from "module_2" /* 2 */;
 
@@ -14,15 +15,16 @@ const result = size.fileFinishedImporting("modules/frames/utils/canLaunchFrame.t
 
 export const canLaunchFrame = function canLaunchFrame(application) {
   if (null != application) {
+    const obj = AppLauncherUtils;
     if (obj.isRealApplication(application)) {
-      let hasApplicationFlagResult = tmp(8321).hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-      const tmpResult = tmp(8321);
+      const tmpResult = ApplicationFlagUtils;
+      let hasApplicationFlagResult = tmpResult.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+      const tmpResult2 = ApplicationFlagUtils;
       if (hasApplicationFlagResult) {
         hasApplicationFlagResult = tmpResult2.hasApplicationFlag(application, ApplicationFlags.CONTEXTLESS_ACTIVITY);
       }
       return hasApplicationFlagResult;
     }
-    obj = AppLauncherUtils;
   }
   return false;
 };

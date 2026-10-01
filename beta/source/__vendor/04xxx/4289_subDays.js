@@ -5,37 +5,39 @@
 // Exports: default
 
 // Module 4289 (subDays)
-import module_4066_mod from "module_4066" /* 4066 */;
+import addDays_mod from "addDays" /* 4066 */;
 import requiredArgs_mod from "requiredArgs" /* 3919 */;
-import module_3922_mod from "module_3922" /* 3922 */;
+import toInteger_mod from "toInteger" /* 3922 */;
 
-let module_4066 = module_4066_mod;
-if (!module_4066) {
-  const obj = { default: module_4066 };
-  let tmp3 = obj;
+let tmp3;
+let tmp5;
+let tmp7;
+let addDays = addDays_mod;
+if (!addDays) {
+  tmp3 = { default: addDays };
+  const obj = { default: addDays };
 } else {
-  tmp3 = module_4066;
+  tmp3 = addDays;
 }
-module_4066 = tmp3;
+addDays = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
+  tmp5 = { default: requiredArgs };
   const obj2 = { default: requiredArgs };
-  let tmp5 = obj2;
 } else {
   tmp5 = requiredArgs;
 }
 requiredArgs = tmp5;
-let module_3922 = module_3922_mod;
-if (!module_3922) {
-  const obj3 = { default: module_3922 };
-  let tmp7 = obj3;
+let toInteger = toInteger_mod;
+if (!toInteger) {
+  tmp7 = { default: toInteger };
+  const obj3 = { default: toInteger };
 } else {
-  tmp7 = module_3922;
+  tmp7 = toInteger;
 }
-module_3922 = tmp7;
+toInteger = tmp7;
 
 export default function subDays(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  return module_4066.default(arg0, -module_3922.default(arg1));
+  return addDays.default(arg0, -toInteger.default(arg1));
 };
-export default exports.default;

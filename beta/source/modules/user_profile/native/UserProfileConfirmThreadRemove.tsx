@@ -5,38 +5,49 @@
 // Exports: default
 
 // Module 12123 (UserProfileConfirmThreadRemove)
-import util from "util" /* 1115 */;
+import intl5 from "intl" /* 1115 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
-import AlertModal from "AlertModal" /* 5209 */;
-import noop from "module_19" /* 19 */;
+import AlertModal2 from "AlertModal" /* 5209 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const size = fn(2);
+let c3;
+let closure_4;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileConfirmThreadRemove.tsx");
 
 export default function UserProfileConfirmThreadRemove(isForumPost) {
+  let AlertActions;
+  let formatToPlainString;
+  let intl3;
+  let intl4;
+  let items;
+  let obj3;
+  let onConfirm;
+  let t2;
+  let user;
   isForumPost = isForumPost.isForumPost;
   ({ user, onConfirm } = isForumPost);
-  const name = UserUtilsDefault.useName(user);
-  const intl = util.intl;
-  const t = util.t;
-  const obj2 = { title: intl.string(isForumPost ? t["8sKSjm"] : t.ZPm8jN), content: null, actions: null };
+  const obj = UserUtilsDefault;
+  const name = obj.useName(user);
+  const AlertModal = AlertModal2.AlertModal;
+  const intl = intl5.intl;
+  const string = intl.string;
+  const t = intl5.t;
+  const obj2 = { title: string(isForumPost ? t["8sKSjm"] : t.ZPm8jN), content: formatToPlainString(isForumPost ? t2["6UGfnx"] : t2["hL+Znb"], { user: name }), actions: React3(AlertActions, obj3) };
   const intl2 = tmp4(1115).intl;
-  const t2 = tmp4(1115).t;
-  obj2.content = intl2.formatToPlainString(isForumPost ? t2["6UGfnx"] : t2["hL+Znb"], { user: name });
-  const obj3 = { children: null };
-  const obj4 = { variant: "destructive", text: null, onPress: null };
-  const intl3 = tmp4(1115).intl;
-  obj4.text = intl3.string(util.t.N86XcP);
-  obj4.onPress = onConfirm;
-  const items = [React3(AlertModal.AlertActionButton, obj4, "remove-user-from-thread"), ];
-  const obj5 = { variant: "secondary", text: null };
-  const intl4 = tmp4(1115).intl;
-  obj5.text = intl4.string(util.t.yNbnce);
-  items[1] = React3(AlertModal.AlertActionButton, obj5, "cancel-remove-user-from-thread");
-  obj3.children = items;
-  obj2.actions = React4(AlertModal.AlertActions, obj3);
-  return React3(AlertModal.AlertModal, obj2);
+  formatToPlainString = intl2.formatToPlainString;
+  t2 = tmp4(1115).t;
+  obj3 = { children: items };
+  AlertActions = tmp4(5209).AlertActions;
+  const obj4 = { variant: "destructive", text: intl3.string(intl5.t.N86XcP), onPress: onConfirm };
+  const AlertActionButton = tmp4(5209).AlertActionButton;
+  intl3 = tmp4(1115).intl;
+  items = [_false(AlertActionButton, obj4, "remove-user-from-thread"), ];
+  const obj5 = { variant: "secondary", text: intl4.string(intl5.t.yNbnce) };
+  const AlertActionButton2 = tmp4(5209).AlertActionButton;
+  intl4 = tmp4(1115).intl;
+  items[1] = _false(AlertActionButton2, obj5, "cancel-remove-user-from-thread");
+  return _false(AlertModal, obj2);
 };

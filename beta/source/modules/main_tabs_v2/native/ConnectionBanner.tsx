@@ -7,184 +7,233 @@
 // Module 16033 (ConnectionBanner)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import useToken from "useToken" /* 4531 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import spring from "spring" /* 5280 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
 import _modDef5976 from "module_5976" /* 5976 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13230 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 13230 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import YouBarConstants from "YouBarConstants" /* 14627 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const ReanimatedRexportDefault = ReanimatedRexport;
+const require = globalThis.__r;
+const ConnectivityIndicatorStateStore = ConnectivityIndicatorStateStore2;
+let _require, dependencyMap, importDefault, set;
 
-require = fn;
+let closure_12;
+let hasOwnProperty;
+let items;
+let map1;
+let metroRequire;
+let obj2;
+let rect;
+let tmp2;
+const ReanimatedRexport = tmp2(4566);
 function ConnectionBannerIcon(state) {
+  let ConnectionFineIcon;
+  let ConnectionUnknownIcon;
+  let obj3;
+  let obj5;
+  let obj6;
   state = state.state;
   const tmp = closure_21();
   useToken;
   if (constants.WAITING_FOR_NETWORK === state) {
-    const obj2 = { style: tmp.leadingSlot, children: null };
-    const obj3 = { size: "small", color: tmp6, style: tmp.spinner };
-    obj2.children = closure_1_12(hasOwnProperty, obj3);
-    return closure_1_12(timestampProducer, obj2);
-  } else if (tmp7.NO_CONNECTION === state) {
-    const obj4 = { style: tmp.leadingSlot, children: null };
-    const obj5 = { size: "xs", color: tmp5(576).colors.INTERACTIVE_ICON_DEFAULT };
-    obj4.children = closure_1_12(tmp2(16034).ConnectionUnknownIcon, obj5);
-    return closure_1_12(timestampProducer, obj4);
-  } else if (tmp7.BACK_ONLINE === state) {
-    const obj = { style: tmp.leadingSlot, children: null };
-    const obj6 = { size: "xs", color: tmp5(576).colors.ICON_FEEDBACK_POSITIVE };
-    obj.children = closure_1_12(tmp2(16036).ConnectionFineIcon, obj6);
-    return closure_1_12(timestampProducer, obj);
+    const obj2 = { style: tmp.leadingSlot, children: closure_12(hasOwnProperty, obj3) };
+    obj3 = { size: "small", color: tmp6, style: tmp.spinner };
+    return closure_12(metroRequire, obj2);
+  } else if (constants.NO_CONNECTION === state) {
+    const obj4 = { style: tmp.leadingSlot, children: closure_12(ConnectionUnknownIcon, obj5) };
+    obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
+    ConnectionUnknownIcon = tmp2(16034).ConnectionUnknownIcon;
+    return closure_12(metroRequire, obj4);
+  } else if (constants.BACK_ONLINE === state) {
+    const obj = { style: tmp.leadingSlot, children: closure_12(ConnectionFineIcon, obj6) };
+    obj6 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
+    ConnectionFineIcon = tmp2(16036).ConnectionFineIcon;
+    return closure_12(metroRequire, obj);
   }
 }
 function ConnectionBannerContent(state) {
+  let items;
+  let stringResult;
   state = state.state;
-  const obj = { style: closure_21().content, children: null };
-  const items = [closure_1_12(ConnectionBannerIcon, { state }), ];
+  const obj = { style: closure_21().content, children: items };
+  items = [closure_12(ConnectionBannerIcon, { state }), ];
   let str = "text-muted";
+  const Text = Text_Text.Text;
+  const tmp = map1;
+  const tmp2 = metroRequire;
+  const tmp3 = closure_12;
   if (state === constants.BACK_ONLINE) {
     str = "text-feedback-positive";
   }
-  const obj2 = { variant: "text-sm/medium", color: str, maxFontSizeMultiplier: 1.5, children: null };
+  const obj2 = { variant: "text-sm/medium", color: str, maxFontSizeMultiplier: 1.5, children: stringResult };
   if (constants.WAITING_FOR_NETWORK === state) {
     const intl2 = tmp4(1115).intl;
-    let stringResult = intl2.string(tmp4(1115).t.XKk1gp);
-  } else if (tmp6.NO_CONNECTION === state) {
+    stringResult = intl2.string(tmp4(1115).t.XKk1gp);
+  } else if (constants.NO_CONNECTION === state) {
     const intl = tmp4(1115).intl;
     stringResult = intl.string(tmp4(1115).t.zPerw8);
-  } else if (tmp6.BACK_ONLINE === state) {
+  } else if (constants.BACK_ONLINE === state) {
     const intl3 = tmp4(1115).intl;
     stringResult = intl3.string(tmp4(1115).t.j8lYE2);
   }
-  obj2.children = stringResult;
-  items[1] = closure_1_12(Text_Text.Text, obj2);
-  obj.children = items;
-  return map1(timestampProducer, obj);
+  items[1] = tmp3(Text, obj2);
+  return tmp(tmp2, obj);
 }
-function BackOnlineGlow(opacity) {
+function BackOnlineGlow(progress) {
+  let items1;
+  let obj3;
+  let obj4;
+  let obj5;
+  let tmp4;
   let token;
+  progress = progress.progress;
   const tmp = closure_21();
-  token = token(4531).useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
+  let obj = token(4531);
+  token = obj.useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
   let items = [token];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     const obj = _modDef672(token);
-    const items = [obj.alpha(0).css(), , , ];
+    const items = [, , , ];
     const alphaResult = obj.alpha(0);
-    items[1] = obj.alpha(0.1).css();
+    items[0] = alphaResult.css();
     const alphaResult1 = obj.alpha(0.1);
-    items[2] = obj.alpha(0.28).css();
+    items[1] = alphaResult1.css();
     const alphaResult2 = obj.alpha(0.28);
-    items[3] = obj.alpha(0.55).css();
+    items[2] = alphaResult2.css();
+    const alphaResult3 = obj.alpha(0.55);
+    items[3] = alphaResult3.css();
     return items;
   }, items);
-  const obj2 = { style: null, pointerEvents: "none", children: null };
-  const items1 = [tmp.glow, { opacity: opacity.progress }];
-  obj2.style = items1;
-  const obj3 = { style: tmp.glow, maskElement: null, children: null };
-  let obj = token(4531);
-  obj3.maskElement = closure_12(LinearGradientDefault, { style: tmp.glowMaskGradient, colors, locations, start, end });
-  obj3.children = closure_12(LinearGradientDefault, { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 });
-  obj2.children = closure_12(_modDef5976, obj3);
-  return closure_12(ReanimatedRexportDefault.View, obj2);
+  const obj2 = { style: items1, pointerEvents: "none", children: closure_12(tmp4, obj3) };
+  items1 = [tmp.glow, { opacity: progress }];
+  const View = ReanimatedRexportDefault.View;
+  obj3 = { style: tmp.glow, maskElement: closure_12(LinearGradientDefault, obj4), children: closure_12(LinearGradientDefault, obj5) };
+  obj4 = { style: tmp.glowMaskGradient, colors, locations, start, end };
+  obj5 = { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 };
+  tmp4 = _modDef5976;
+  return closure_12(View, obj2);
 }
 function ConnectionBannerInner() {
-  const tmp = closure_21();
-  const youBarBottomMargin = require("useYouBarMargins").useYouBarBottomMargin();
+  let closure_0;
+  let closure_1;
+  let items3;
+  let items4;
+  let setRenderState;
+  let sharedValue;
+  let sharedValue1;
+  let state;
+  let tmp12;
+  let tmp13;
+  let tmp2 = _require;
+  const tmp3 = sharedValue;
+  let tmp = closure_21();
   let obj = require("useYouBarMargins");
+  const youBarBottomMargin = obj.useYouBarBottomMargin();
+  const obj2 = require("get initialized");
   let items = [ConnectivityIndicatorStateStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => state.getState());
+  const stateFromStores = obj2.useStateFromStores(items, () => state.getState());
   _require = tmp7;
   importDefault = tmp8;
   let tmp9 = null;
+  const tmp6 = constants;
   if (stateFromStores !== constants.HIDDEN) {
     tmp9 = stateFromStores;
   }
-  const obj2 = require("initialize");
-  const tmp6 = constants;
-  sharedValue = require("ReanimatedRexport").useSharedValue(0);
-  const tmp2Result = require("ReanimatedRexport");
+  const tmp2Result = tmp2(tmp3[15]);
+  sharedValue = tmp2Result.useSharedValue(0);
   [tmp12, tmp13] = sharedValue1.useState(tmp9);
+  _slicedToArray(sharedValue1.useState(tmp9), 2);
   _slicedToArray = tmp13;
-  const tmp11 = _slicedToArray(sharedValue1.useState(tmp9), 2);
-  sharedValue1 = require("ReanimatedRexport").useSharedValue(0);
+  const tmp2Result3 = tmp2(tmp3[15]);
+  sharedValue1 = tmp2Result3.useSharedValue(0);
+  const tmp15 = null != tmp9 && tmp12 !== tmp9;
   if (tmp15) {
     tmp13(tmp9);
   }
   const items1 = [stateFromStores !== constants.HIDDEN, sharedValue1];
   const effect = obj4.useEffect(() => {
+    let tmp = sharedValue1;
+    set = sharedValue1.set;
     let num = 0;
-    if (shouldShowBanner) {
+    const withSpring = spring.withSpring;
+    if (closure_0) {
       num = 1;
     }
     const fn = function n(arg0) {
+      const tmp = true !== arg0 || closure_1_0;
       if (!tmp) {
-        closure_0(sharedValue[15]).runOnJS(setRenderState)(null);
         const obj = closure_0(sharedValue[15]);
+        obj.runOnJS(setRenderState)(null);
       }
     };
-    let obj = spring;
-    fn.__closure = { shouldShowBanner, runOnJS: ReanimatedRexport.runOnJS, setRenderState };
+    let obj = { shouldShowBanner: tmp5, runOnJS: ReanimatedRexport.runOnJS, setRenderState: _slicedToArray };
+    fn.__closure = obj;
     fn.__workletHash = 3065113239920;
     fn.__initData = __initData;
-    const result = sharedValue1.set(obj.withSpring(num, YOU_BAR_SPRING_CONFIG, "respect-motion-settings", fn));
+    const result = set(withSpring(num, YOU_BAR_SPRING_CONFIG, "respect-motion-settings", fn));
   }, items1);
   const items2 = [stateFromStores === constants.BACK_ONLINE, sharedValue];
   const effect1 = obj4.useEffect(() => {
     let num = 0;
+    set = sharedValue.set;
+    const withSpring = spring.withSpring;
+    spring;
     if (closure_1) {
       num = 1;
     }
-    const result = sharedValue.set(spring.withSpring(num, YOU_BAR_SPRING_CONFIG));
+    const result = set(withSpring(num, YOU_BAR_SPRING_CONFIG));
   }, items2);
-  tmp15 = null != tmp9 && tmp12 !== tmp9;
-  const tmp2Result3 = require("ReanimatedRexport");
+  const tmp2Result4 = tmp2(tmp3[15]);
   class A {
     constructor() {
-      obj = { transform: null, opacity: null };
-      obj1 = { translateY: (1 - closure_4.get()) * CONNECTION_BANNER_HEIGHT };
-      items = [];
-      items[0] = obj1;
-      obj.transform = items;
-      obj.opacity = closure_4.get();
+      let items;
+      const obj = { transform: items, opacity: sharedValue1.get() };
+      items = [{ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT }];
+      ({ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT });
       return obj;
     }
   }
-  A.__closure = { progress: sharedValue1, CONNECTION_BANNER_HEIGHT };
+  const obj3 = { progress: sharedValue1, CONNECTION_BANNER_HEIGHT };
+  A.__closure = obj3;
   A.__workletHash = 13973493587548;
   A.__initData = __initData;
-  const animatedStyle = require("ReanimatedRexport").useAnimatedStyle(A);
-  const obj5 = { pointerEvents: "none", style: null, children: null };
-  const items3 = [tmp.container, { height: youBarBottomMargin + CONNECTION_BANNER_HEIGHT }, animatedStyle];
-  obj5.style = items3;
+  const animatedStyle = tmp2Result4.useAnimatedStyle(A);
+  const obj5 = { pointerEvents: "none", style: items3, children: items4 };
+  items3 = [tmp.container, { height: youBarBottomMargin + CONNECTION_BANNER_HEIGHT }, animatedStyle];
   let tmp21 = null;
+  const View = require("ReanimatedRexport").View;
+  const tmp20 = closure_13;
   if (tmp12 === tmp6.BACK_ONLINE) {
     const obj6 = { progress: sharedValue };
     tmp21 = closure_12(BackOnlineGlow, obj6);
   }
-  const items4 = [tmp21, ];
+  items4 = [tmp21, ];
   let tmp24 = null;
   if (null != tmp12) {
     const obj7 = { state: tmp12 };
     tmp24 = closure_12(ConnectionBannerContent, obj7);
   }
   items4[1] = tmp24;
-  obj5.children = items4;
-  return closure_13(require("ReanimatedRexport").View, obj5);
+  return tmp20(View, obj5);
 }
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const constants = fn(13230).ConnectivityIndicatorState;
-const YouBarConstants = fn(14627);
+let _slicedToArray = _slicedToArray_mod;
+({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
+const constants = ConnectivityIndicatorStateStore2.ConnectivityIndicatorState;
 const CONNECTION_BANNER_HEIGHT = YouBarConstants.CONNECTION_BANNER_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = YouBarConstants.YOU_BAR_SPRING_CONFIG;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
+const AnalyticEvents = Constants.AnalyticEvents;
+({ jsx: closure_12, jsxs: map1 } = Fragment);
 const colors = ["transparent", "black", "black", "transparent"];
 const locations = [0, 0.25, 0.75, 1];
 const start = { x: 0, y: 0.5 };
@@ -192,54 +241,53 @@ const end = { x: 1, y: 0.5 };
 const locations2 = [0, 0.4, 0.75, 1];
 const start2 = { x: 0, y: 0 };
 const end2 = { x: 0, y: 1 };
-const createStyles = fn(4836);
-let obj2 = { container: { position: "absolute", left: 0, right: 0, bottom: 0 }, glow: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }, glowMaskGradient: { flex: 1 }, content: null, leadingSlot: null, spinner: null };
-const rect = { position: "absolute", top: 0, left: 0, right: 0, height: CONNECTION_BANNER_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12 };
-obj2.content = rect;
-obj2.leadingSlot = { width: 16, height: 16, alignItems: "center", justifyContent: "center" };
-let obj3 = { transform: null };
-let items = [{ scale: 0.8 }];
-obj3.transform = items;
-obj2.spinner = obj3;
-let closure_21 = createStyles.createStyles(obj2);
+let obj = { container: { position: "absolute", left: 0, right: 0, bottom: 0 }, glow: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }, glowMaskGradient: { flex: 1 }, content: rect, leadingSlot: { width: 16, height: 16, alignItems: "center", justifyContent: "center" }, spinner: obj2 };
+rect = { position: "absolute", top: 0, left: 0, right: 0, height: CONNECTION_BANNER_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12 };
+obj2 = { transform: items };
+items = [{ scale: 0.8 }];
+let closure_21 = createStyles.createStyles(obj);
 let closure_25 = { code: "function ConnectionBannerTsx1(finished){const{shouldShowBanner,runOnJS,setRenderState}=this.__closure;if(finished===true&&!shouldShowBanner){runOnJS(setRenderState)(null);}}" };
 const __initData = { code: "function ConnectionBannerTsx2(){const{progress,CONNECTION_BANNER_HEIGHT}=this.__closure;return{transform:[{translateY:(1-progress.get())*CONNECTION_BANNER_HEIGHT}],opacity:progress.get()};}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/ConnectionBanner.tsx");
 
 export default function ConnectionBanner() {
-  const config = stateFromStores(13231).useConfig({ location: "ConnectionBanner" });
-  const hidden = config.hidden;
-  stateFromStores = undefined;
+  let ref;
+  let state;
+  let stateFromStores;
   let obj = stateFromStores(13231);
+  const config = obj.useConfig({ location: "ConnectionBanner" });
+  const hidden = config.hidden;
+  const timeoutMs = config.timeoutMs;
+  let obj2 = hidden(504);
   const items = [ConnectivityIndicatorStateStore];
-  stateFromStores = hidden(504).useStateFromStores(items, () => state.getState());
-  dependencyMap = noop.useRef(null);
+  stateFromStores = obj2.useStateFromStores(items, () => state.getState());
+  dependencyMap = react.useRef(null);
   const items1 = [stateFromStores, hidden];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     const current = ref.current;
     ref.current = stateFromStores;
     if (null != current) {
       if (current === constants.HIDDEN) {
-        if (tmp !== tmp7.HIDDEN) {
-          if (tmp !== tmp7.BACK_ONLINE) {
+        if (stateFromStores !== constants.HIDDEN) {
+          if (stateFromStores !== constants.BACK_ONLINE) {
             let str = "hidden";
             if (!hidden) {
               let str2 = "connecting";
-              if (tmp === tmp7.NO_CONNECTION) {
+              if (stateFromStores === constants.NO_CONNECTION) {
                 str2 = "offline";
               }
               str = str2;
             }
             const obj2 = { connection_indicator_type: str };
-            AnalyticsUtilsDefault.track(AnalyticEvents.CONNECTION_INDICATOR_SHOWN, obj2);
+            const obj = AnalyticsUtilsDefault;
+            obj.track(AnalyticEvents.CONNECTION_INDICATOR_SHOWN, obj2);
           }
         }
       }
     }
   }, items1);
   let tmp4 = null;
-  if (null != config.timeoutMs) {
+  if (null != timeoutMs) {
     tmp4 = null;
     if (!hidden) {
       tmp4 = closure_12(ConnectionBannerInner, {});

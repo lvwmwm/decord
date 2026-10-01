@@ -4,20 +4,25 @@
 // Dependencies: [19, 17, 21, 4836, 6402, 5998, 2]
 
 // Module 6559 (Form/Form)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import RedesignCompat from "RedesignCompat" /* 5998 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ScrollView = fn(17).ScrollView;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const ScrollView = react_native.ScrollView;
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ form: { flex: 1 }, redesign: { paddingTop: 16 } });
-const context = noop.createContext({ isForm: false });
-const size = fn(2);
-const result = size.fileFinishedImporting("design/void/Form/native/Form.tsx");
-
-export default noop.forwardRef((keyboardShouldPersistTaps, ref) => {
+const context = react.createContext({ isForm: false });
+const forwardRefResult = react.forwardRef((keyboardShouldPersistTaps, ref) => {
+  let children;
+  let contentContainerStyle;
+  let onLayout;
+  let onScroll;
+  let scrollsToTop;
+  let style;
   let str = keyboardShouldPersistTaps.keyboardShouldPersistTaps;
   ({ style, children } = keyboardShouldPersistTaps);
   if (str === undefined) {
@@ -29,23 +34,21 @@ export default noop.forwardRef((keyboardShouldPersistTaps, ref) => {
   }
   ({ contentContainerStyle, onScroll, scrollsToTop, onLayout } = keyboardShouldPersistTaps);
   const tmp = closure_6();
-  let redesign = noop.useContext(RedesignCompat.RedesignCompatContext);
-  const obj = { value: { isForm: true }, children: null };
-  const obj2 = { ref, onLayout, scrollsToTop, style: null, contentContainerStyle: null, contentInset: null, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: null, alwaysBounceVertical: null, onScroll: null, children: null };
+  const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
+  let redesign = react.useContext(RedesignCompat.RedesignCompatContext);
   const items = [tmp.form, style, ];
+  const Provider = context.Provider;
   if (redesign) {
     redesign = tmp.redesign;
   }
   items[2] = redesign;
-  obj2.style = items;
-  const items1 = [{ paddingBottom: 38 + useSafeAreaInsetsKeyboardAwareDefault().insets.bottom }, contentContainerStyle];
-  obj2.contentContainerStyle = items1;
-  obj2.contentInset = { top: 0 };
-  obj2.keyboardShouldPersistTaps = str;
-  obj2.alwaysBounceVertical = flag;
-  obj2.onScroll = onScroll;
-  obj2.children = children;
-  obj.children = <ScrollView ref={arg1} onLayout={onLayout} scrollsToTop={scrollsToTop} style={null} contentContainerStyle={null} contentInset={null} automaticallyAdjustContentInsets={false} keyboardShouldPersistTaps={null} alwaysBounceVertical={null} onScroll={null}>{null}</ScrollView>;
-  return <context.Provider value={{ isForm: true }}>{null}</context.Provider>;
+  const items1 = [, ];
+  const obj3 = { paddingBottom: 38 + insets.bottom };
+  items1[0] = obj3;
+  items1[1] = contentContainerStyle;
+  return <Provider value={{ isForm: true }}>{null}</Provider>;
 });
+const result = size.fileFinishedImporting("design/void/Form/native/Form.tsx");
+
+export default forwardRefResult;
 export const FormContext = context;

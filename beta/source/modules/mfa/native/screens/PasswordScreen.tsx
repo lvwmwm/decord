@@ -5,129 +5,198 @@
 // Exports: default
 
 // Module 15238 (PasswordScreen)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let c6, closure_1, closure_3, importDefault;
 
-const require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const View = react_native.View;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/mfa/native/screens/PasswordScreen.tsx");
 
 export default function PasswordScreen(finish) {
+  let EyeIcon;
+  let TextInput;
+  let _undefined;
+  let _undefined2;
+  let c3;
+  let c4;
+  let c5;
+  let first;
+  let first1;
+  let intl;
+  let intl2;
+  let intl4;
+  let obj3;
+  let obj4;
+  let obj5;
+  let stringResult;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp18;
+  let tmp21;
+  let tmp8;
+  let tmpResult;
   finish = finish.finish;
   importDefault = undefined;
-  let first;
+  first1 = undefined;
   c3 = undefined;
   _slicedToArray = undefined;
-  noop = undefined;
+  react = undefined;
   function sendPassword() {
-    const self = this;
-    const apply = closure_6.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+    return obj(...arguments);
   }
-  closure_6 = async function _sendPassword() {
-    closure_2 = tmp3;
-    importDefault(null);
-    asyncGeneratorStep(true);
-    await finish({ mfaType: "password", data });
-    if (1 === tmp7) {
-      c4 = 0;
-      closure_129_0 = closure_3;
-      const body = closure_129_0.body;
-      let message;
-      if (body != null) {
-        message = body.message;
+  let obj = function _sendPassword() {
+    let data;
+    obj = _asyncToGenerator(async (arg0, value) => {
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_2 = tmp;
+              closure_1 = tmp4;
+              closure_2_1(null);
+              _undefined(true);
+              c4 = 1;
+              const obj4 = { mfaType: "password", data };
+              c5 = 2;
+              c6 = 1;
+              const obj5 = { value: finish(obj4), done: false };
+              return obj5;
+            }
+          } else {
+            if (1 === c5) {
+              c4 = 0;
+              let message2 = closure_3;
+              const body = message2.body;
+              let message;
+              const tmp12 = closure_130_1;
+              if (body != null) {
+                message = body.message;
+              }
+              message2 = message;
+              if (message == null) {
+                message2 = message2.message;
+              }
+              tmp12(message2);
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              closure_130_4(true);
+              c4 = 0;
+            }
+            closure_130_3(false);
+            c6 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp28) {
+          closure_3 = tmp28;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp28;
+          } else {
+            c5 = 1;
+          }
+        }
       }
-      if (message == null) {
-        message = closure_129_0.message;
-      }
-      closure_130_1(message);
-      closure_130_3(false);
-      c6 = 3;
-    } else if (arg0 === 1) {
-      c6 = 3;
-      throw arg1;
-    } else if (arg0 !== 2) {
-      closure_130_4(true);
-      c4 = 0;
-    }
-    return arg1;
+    });
+    return obj(...arguments);
   };
+  const mfaChallenge = finish.mfaChallenge;
   const tmp = importDefault;
   const tmp3 = require("useWideAuthView")();
-  const screenStyles = require("MfaScreenUtils").useScreenStyles(tmp3);
-  [obj4.errorMessage, importDefault] = noop.useState(null);
-  const tmp6 = _slicedToArray(noop.useState(""), 2);
-  first = tmp6[0];
-  const obj = require("MfaScreenUtils");
-  [tmp8, c3] = _slicedToArray(noop.useState(false), 2);
-  const tmp7 = _slicedToArray(noop.useState(false), 2);
-  [tmp10, c4] = _slicedToArray(noop.useState(false), 2);
-  const tmp9 = _slicedToArray(noop.useState(false), 2);
-  [tmp12, c5] = _slicedToArray(noop.useState(false), 2);
-  const obj2 = { headerText: null, input: null, submit: null, screenProps: null, mfaMethod: "password" };
-  const tmp11 = _slicedToArray(noop.useState(false), 2);
-  const intl = finish(first[8]).intl;
-  obj2.headerText = intl.string(finish(first[8]).t.Rw1XuM);
-  const obj3 = { style: screenStyles.inputContainer, children: null };
-  const obj4 = { autoFocus: true, required: true, textContentType: "password", label: null, autoComplete: "current-password", autoCapitalize: "none", errorMessage: null, returnKeyType: "done", onChange: null, onSubmitEditing: null, disabled: null, secureTextEntry: null, trailingIcon: null, trailingPressableProps: null };
-  const intl2 = finish(first[8]).intl;
-  obj4.label = intl2.string(finish(first[8]).t["CIGa+7"]);
-  obj4.onChange = tmp6[1];
-  obj4.onSubmitEditing = sendPassword;
-  let tmp17 = tmp8;
-  if (!tmp8) {
-    tmp17 = tmp10;
-  }
-  obj4.disabled = tmp17;
-  obj4.secureTextEntry = !tmp12;
-  if (tmp12) {
-    let EyeIcon = tmp15(tmp2[10]).EyeSlashIcon;
+  obj = require("MfaScreenUtils");
+  const screenStyles = obj.useScreenStyles(tmp3);
+  [first, importDefault] = react.useState(null);
+  [first1, tmp8] = react.useState("");
+  [tmp10, c3] = _slicedToArray(react.useState(false), 2);
+  const tmp9 = _slicedToArray(react.useState(false), 2);
+  [tmp12, c4] = _slicedToArray(react.useState(false), 2);
+  const tmp11 = _slicedToArray(react.useState(false), 2);
+  [tmp14, c5] = _slicedToArray(react.useState(false), 2);
+  const tmp13 = _slicedToArray(react.useState(false), 2);
+  let obj2 = { headerText: intl.string(finish(first1[8]).t.Rw1XuM), input: tmp15(tmp18, obj3), submit: tmp15(tmpResult, obj5), screenProps: { mfaChallenge, finish }, mfaMethod: "password" };
+  const tmp16 = require("MfaOptionScreen");
+  intl = finish(first1[8]).intl;
+  obj3 = { style: screenStyles.inputContainer, children: tmp15(TextInput, obj4) };
+  obj4 = {
+    autoFocus: true,
+    required: true,
+    textContentType: "password",
+    label: intl2.string(finish(first1[8]).t["CIGa+7"]),
+    autoComplete: "current-password",
+    autoCapitalize: "none",
+    errorMessage: first,
+    returnKeyType: "done",
+    onChange: tmp8,
+    onSubmitEditing: sendPassword,
+    disabled: tmp10 || tmp12,
+    secureTextEntry: !tmp14,
+    trailingIcon: EyeIcon,
+    trailingPressableProps: {
+      accessibilityLabel: stringResult,
+      onPress() {
+        return _undefined2((arg0) => !arg0);
+      },
+      hitSlop: { top: 8, bottom: 8 }
+    }
+  };
+  TextInput = finish(first1[9]).TextInput;
+  intl2 = finish(first1[8]).intl;
+  tmp18 = obj;
+  if (tmp14) {
+    EyeIcon = tmp17(tmp2[10]).EyeSlashIcon;
   } else {
-    EyeIcon = tmp15(tmp2[11]).EyeIcon;
+    EyeIcon = tmp17(tmp2[11]).EyeIcon;
   }
-  obj4.trailingIcon = EyeIcon;
-  const intl3 = tmp15(tmp2[8]).intl;
+  const intl3 = tmp17(tmp2[8]).intl;
   const string = intl3.string;
-  const t = tmp15(tmp2[8]).t;
-  if (tmp12) {
-    let stringResult = string(t.Nusip4);
+  const t = tmp17(tmp2[8]).t;
+  if (tmp14) {
+    stringResult = string(t.Nusip4);
   } else {
     stringResult = string(t.nFzpM5);
   }
-  obj4.trailingPressableProps = {
-    accessibilityLabel: stringResult,
-    onPress() {
-      return _undefined((arg0) => !arg0);
-    },
-    hitSlop: { top: 8, bottom: 8 }
-  };
-  obj3.children = jsx(finish(first[9]).TextInput, { autoFocus: true, required: true, textContentType: "password", label: null, autoComplete: "current-password", autoCapitalize: "none", errorMessage: null, returnKeyType: "done", onChange: null, onSubmitEditing: null, disabled: null, secureTextEntry: null, trailingIcon: null, trailingPressableProps: null });
-  obj2.input = <closure_6 style={screenStyles.inputContainer}>{null}</closure_6>;
-  const obj5 = { text: null, disabled: null, loading: null, onPress: null };
-  const tmp14 = require("MfaOptionScreen");
-  const intl4 = tmp15(tmp2[8]).intl;
-  obj5.text = intl4.string(finish(first[8]).t.geKm7t);
-  let tmp20 = tmp8;
-  if (!tmp8) {
-    tmp20 = tmp10;
+  obj5 = { text: intl4.string(tmp17(tmp2[8]).t.geKm7t), disabled: tmp21, loading: tmp10, onPress: sendPassword };
+  tmpResult = tmp(first1[12]);
+  intl4 = tmp17(tmp2[8]).intl;
+  tmp21 = tmp10 || tmp12;
+  if (!tmp21) {
+    tmp21 = 0 === first1.length;
   }
-  if (!tmp20) {
-    tmp20 = 0 === first.length;
-  }
-  obj5.disabled = tmp20;
-  obj5.loading = tmp8;
-  obj5.onPress = sendPassword;
-  obj2.submit = jsx(tmp(first[12]), { text: null, disabled: null, loading: null, onPress: null });
-  obj2.screenProps = { mfaChallenge: finish.mfaChallenge, finish };
-  return <tmp14 headerText={null} input={null} submit={null} screenProps={null} mfaMethod="password" />;
+  return jsx(tmp16, obj2);
 };

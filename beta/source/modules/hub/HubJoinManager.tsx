@@ -5,16 +5,17 @@
 
 // Module 12255 (HubJoinManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 1074 */;
 import transitionToGuild from "transitionToGuild" /* 6760 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import LifecycleManager from "LifecycleManager" /* 1983 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-class HubJoinManager extends tmp2 {
+const GuildFeatures = Constants.GuildFeatures;
+class HubJoinManager extends LifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
     applyArgumentsResult.handleGuildCreate = function handleGuildCreate(guild) {
       guild = GuildStore.getGuild(guild.guild.id);
       let tmp2 = null != guild;
@@ -27,26 +28,28 @@ class HubJoinManager extends tmp2 {
         tmp2 = hasItem;
       }
       if (tmp2) {
-        const onClose = applyArgumentsResult.onClose;
+        const onClose = require.onClose;
         if (onClose != null) {
           onClose();
         }
-        transitionToGuild.transitionToGuild(guild.id);
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     };
     return applyArgumentsResult;
   }
+  _initialize(onClose) {
+    this.onClose = onClose;
+    const obj = DispatcherDefault;
+    const subscription = obj.subscribe("GUILD_CREATE", this.handleGuildCreate);
+  }
+  _terminate() {
+    const obj = DispatcherDefault;
+    obj.unsubscribe("GUILD_CREATE", this.handleGuildCreate);
+  }
 }
 const prototype = HubJoinManager.prototype;
-prototype["_initialize"] = function _initialize(onClose) {
-  this.onClose = onClose;
-  const subscription = DispatcherDefault.subscribe("GUILD_CREATE", this.handleGuildCreate);
-};
-prototype["_terminate"] = function _terminate() {
-  DispatcherDefault.unsubscribe("GUILD_CREATE", this.handleGuildCreate);
-};
 const hubJoinManager = new HubJoinManager();
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/hub/HubJoinManager.tsx");
 
 export default hubJoinManager;

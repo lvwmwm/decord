@@ -4,14 +4,12 @@
 // Dependencies: []
 
 // Module 572 (DepGraph)
+let arr1, captureStackTraceResult, setPrototypeOfResult, str, str2, str3, tmp10, tmp15, tmp17, tmp22, tmp23, tmp25, tmp6, tmp7, tmp8;
+
+let obj2;
 class DepGraph {
-  constructor(arg0) {
-    tmp = arg0;
-    if (arg0) {
-      tmp = arg0.circular;
-    }
-    { nodes: {}, outgoingEdges: {}, incomingEdges: {} }.circular = tmp;
-    return;
+  constructor(circular) {
+
   }
 }
 DepGraph.prototype = {
@@ -21,47 +19,51 @@ DepGraph.prototype = {
   addNode(arg0, arg1) {
     const self = this;
     if (!this.hasNode(arg0)) {
-      let tmp = arg0;
+      tmp = arg0;
+      const nodes = self.nodes;
       if (2 === arguments.length) {
         tmp = arg1;
       }
-      self.nodes[arg0] = tmp;
+      nodes[arg0] = tmp;
       self.outgoingEdges[arg0] = [];
       self.incomingEdges[arg0] = [];
     }
   },
   removeNode(arg0) {
     const self = this;
-    closure_0 = arg0;
+    tmp = arg0;
+    let closure_0 = arg0;
     if (this.hasNode(arg0)) {
-      const nodes = self.nodes;
-      delete tmp[tmp2];
-      const outgoingEdges = self.outgoingEdges;
-      delete tmp[tmp2];
-      const incomingEdges = self.incomingEdges;
-      delete tmp[tmp2];
+      delete self.nodes[tmp];
+      delete self.outgoingEdges[tmp];
+      delete self.incomingEdges[tmp];
       const items = [, ];
       ({ incomingEdges: arr[0], outgoingEdges: arr[1] } = self);
       let item = items.forEach(function(item) {
         const keys = Object.keys(item);
         item = keys.forEach((item) => {
-          const index = item[item].indexOf(item);
+          const arr = item[item];
+          const index = arr.indexOf(item);
+          tmp = item;
           if (index >= 0) {
-            item[item].splice(index, 1);
+            const arr2 = tmp[item];
+            arr2.splice(index, 1);
           }
         }, this);
       });
     }
   },
-  hasNode(key10009) {
+  hasNode(keys) {
     const nodes = this.nodes;
-    return nodes.hasOwnProperty(key10009);
+    return nodes.hasOwnProperty(keys);
   },
   getNodeData(prop) {
     if (this.hasNode(prop)) {
       return this.nodes[prop];
     } else {
       const _Error = Error;
+      const self = this;
+      const self2 = this;
       const error = new Error("Node does not exist: " + prop);
       throw error;
     }
@@ -71,6 +73,8 @@ DepGraph.prototype = {
       this.nodes[arg0] = arg1;
     } else {
       const _Error = Error;
+      const self = this;
+      const self2 = this;
       const error = new Error("Node does not exist: " + arg0);
       throw error;
     }
@@ -79,43 +83,56 @@ DepGraph.prototype = {
     const self = this;
     if (this.hasNode(arg0)) {
       if (self.hasNode(arg1)) {
+        const arr = self.outgoingEdges[arg0];
         if (-1 === arr.indexOf(arg1)) {
-          self.outgoingEdges[arg0].push(arg1);
+          const arr2 = self.outgoingEdges[arg0];
+          arr2.push(arg1);
         }
+        const arr3 = self.incomingEdges[arg1];
         if (-1 === arr3.indexOf(arg0)) {
-          self.incomingEdges[arg1].push(arg0);
+          const arr4 = self.incomingEdges[arg1];
+          arr4.push(arg0);
         }
         return true;
       } else {
         const _Error2 = Error;
+        const self4 = this;
+        const self5 = this;
         const error = new Error("Node does not exist: " + arg1);
         throw error;
       }
     } else {
       const _Error = Error;
+      const self2 = this;
+      const self3 = this;
       const error1 = new Error("Node does not exist: " + arg0);
       throw error1;
     }
   },
   removeDependency(arg0, arg1) {
+    let tmp2;
     const self = this;
     let hasNodeResult = this.hasNode(arg0);
     if (hasNodeResult) {
-      const index = self.outgoingEdges[arg0].indexOf(arg1);
+      const arr = self.outgoingEdges[arg0];
+      const index = arr.indexOf(arg1);
       hasNodeResult = index >= 0;
-      let tmp2 = index;
+      tmp2 = index;
     }
     if (hasNodeResult) {
-      self.outgoingEdges[arg0].splice(tmp2, 1);
+      const arr2 = self.outgoingEdges[arg0];
+      arr2.splice(tmp2, 1);
     }
     let hasNodeResult1 = self.hasNode(arg1);
     if (hasNodeResult1) {
-      const index1 = self.incomingEdges[arg1].indexOf(arg0);
+      const arr3 = self.incomingEdges[arg1];
+      const index1 = arr3.indexOf(arg0);
       hasNodeResult1 = index1 >= 0;
       tmp2 = index1;
     }
     if (hasNodeResult1) {
-      self.incomingEdges[arg1].splice(tmp2, 1);
+      const arr4 = self.incomingEdges[arg1];
+      arr4.splice(tmp2, 1);
     }
   },
   clone() {
@@ -126,8 +143,10 @@ DepGraph.prototype = {
       const keys = Object.keys(tmp.nodes);
       const item = keys.forEach((item) => {
         obj.nodes[item] = self.nodes[item];
-        obj.outgoingEdges[item] = self.outgoingEdges[item].slice(0);
-        obj.incomingEdges[item] = self.incomingEdges[item].slice(0);
+        const arr = self.outgoingEdges[item];
+        obj.outgoingEdges[item] = arr.slice(0);
+        const arr2 = self.incomingEdges[item];
+        obj.incomingEdges[item] = arr2.slice(0);
       });
       return obj;
     } else {
@@ -139,59 +158,60 @@ DepGraph.prototype = {
     if (this.hasNode(item)) {
       const items = [];
       const outgoingEdges = self.outgoingEdges;
-      closure_1 = arg1;
-      circular = self.circular;
-      closure_4 = [];
-      dependencyMap = {};
-      dependencyMap2 = {};
-      dependencyMap3 = {};
+      let closure_1 = arg1;
+      const circular = self.circular;
+      let closure_4 = [];
+      let closure_5 = {};
+      let closure_6 = {};
+      let closure_7 = {};
       class DFS {
         constructor(arg0) {
-          closure_5[item] = true;
-          arr = closure_4.push(item);
-          closure_7[item] = true;
-          tmp4 = outgoingEdges;
+          closure_1_5[item] = true;
+          tmp = item;
+          arr = closure_1_4.push(item);
+          closure_1_7[item] = true;
+          tmp3 = self;
           num = 0;
-          if (0 < outgoingEdges[item].length) {
+          if (0 < self[item].length) {
             while (true) {
-              tmp5 = outgoingEdges;
-              tmp6 = outgoingEdges[item][num];
-              tmp7 = closure_5;
-              tmp8 = num;
-              if (closure_5[tmp6]) {
-                tmp11 = closure_7;
-                if (closure_7[tmp6]) {
-                  obj = closure_4;
-                  arr1 = closure_4.push(tmp6);
-                  tmp13 = circular;
-                  if (!circular) {
+              tmp4 = self;
+              tmp5 = self[item][num];
+              tmp6 = closure_1_5;
+              tmp7 = num;
+              if (closure_1_5[tmp5]) {
+                tmp10 = closure_1_7;
+                if (closure_1_7[tmp5]) {
+                  obj = closure_1_4;
+                  arr1 = closure_1_4.push(tmp5);
+                  tmp12 = closure_1_3;
+                  if (!tmp12) {
                     break;
                   }
                 }
               } else {
-                tmp9 = DFS;
-                tmp10 = DFS(tmp6);
+                tmp8 = closure_1_8;
+                tmp9 = closure_1_8(tmp5);
               }
               num = num + 1;
-              tmp4 = tmp5;
+              tmp3 = tmp4;
             }
-            if (typeof f19683 === "function") {
+            if (typeof c1 === "function") {
               str = " -> ";
               str2 = "Dependency Cycle Found: ";
-              tmp16 = globalThis;
+              tmp15 = globalThis;
               _Error = Error;
-              tmp17 = new.target;
-              tmp18 = new.target;
+              self = this;
+              self2 = this;
               error = new Error("Dependency Cycle Found: " + obj.join(" -> "));
-              tmp20 = error;
+              tmp17 = error;
               error.cyclePath = obj;
               _Object = Object;
               _Object2 = Object;
-              setPrototypeOfResult = Object.setPrototypeOf(error, Object.getPrototypeOf(tmp15));
+              setPrototypeOfResult = Object.setPrototypeOf(error, Object.getPrototypeOf(tmp14));
               _Error2 = Error;
               if (Error.captureStackTrace) {
                 _Error3 = Error;
-                captureStackTraceResult = Error.captureStackTrace(error, tmp14);
+                captureStackTraceResult = Error.captureStackTrace(error, tmp13);
               }
               throw error;
             } else {
@@ -199,21 +219,18 @@ DepGraph.prototype = {
               throw new TypeError("Trying to call a non-function");
             }
           }
-          arr2 = closure_4.pop();
-          delete tmp2[tmp];
-          tmp24 = DFS;
-          if (DFS) {
-            tmp24 = 0 !== tmp4[item].length;
+          arr2 = closure_1_4.pop();
+          delete closure_1_7[tmp];
+          tmp21 = DFS && 0 !== tmp3[item].length;
+          if (!tmp21) {
+            tmp22 = closure_1_6;
+            tmp21 = closure_1_6[item];
           }
-          if (!tmp24) {
-            tmp25 = closure_6;
-            tmp24 = closure_6[item];
-          }
-          if (!tmp24) {
-            tmp26 = DFS;
+          if (!tmp21) {
+            tmp23 = DFS;
             arr3 = DFS.push(item);
-            tmp28 = closure_6;
-            closure_6[item] = true;
+            tmp25 = closure_1_6;
+            closure_1_6[item] = true;
           }
           return;
         }
@@ -226,6 +243,8 @@ DepGraph.prototype = {
       return items;
     } else {
       const _Error = Error;
+      const self2 = this;
+      const self3 = this;
       const error = new Error("Node does not exist: " + item);
       throw error;
     }
@@ -235,59 +254,60 @@ DepGraph.prototype = {
     if (this.hasNode(item)) {
       const items = [];
       const incomingEdges = self.incomingEdges;
-      closure_1 = arg1;
-      circular = self.circular;
-      closure_4 = [];
-      dependencyMap = {};
-      dependencyMap2 = {};
-      dependencyMap3 = {};
+      let closure_1 = arg1;
+      const circular = self.circular;
+      let closure_4 = [];
+      let closure_5 = {};
+      let closure_6 = {};
+      let closure_7 = {};
       class DFS {
         constructor(arg0) {
-          closure_5[item] = true;
-          arr = closure_4.push(item);
-          closure_7[item] = true;
-          tmp4 = outgoingEdges;
+          closure_1_5[item] = true;
+          tmp = item;
+          arr = closure_1_4.push(item);
+          closure_1_7[item] = true;
+          tmp3 = self;
           num = 0;
-          if (0 < outgoingEdges[item].length) {
+          if (0 < self[item].length) {
             while (true) {
-              tmp5 = outgoingEdges;
-              tmp6 = outgoingEdges[item][num];
-              tmp7 = closure_5;
-              tmp8 = num;
-              if (closure_5[tmp6]) {
-                tmp11 = closure_7;
-                if (closure_7[tmp6]) {
-                  obj = closure_4;
-                  arr1 = closure_4.push(tmp6);
-                  tmp13 = circular;
-                  if (!circular) {
+              tmp4 = self;
+              tmp5 = self[item][num];
+              tmp6 = closure_1_5;
+              tmp7 = num;
+              if (closure_1_5[tmp5]) {
+                tmp10 = closure_1_7;
+                if (closure_1_7[tmp5]) {
+                  obj = closure_1_4;
+                  arr1 = closure_1_4.push(tmp5);
+                  tmp12 = closure_1_3;
+                  if (!tmp12) {
                     break;
                   }
                 }
               } else {
-                tmp9 = DFS;
-                tmp10 = DFS(tmp6);
+                tmp8 = closure_1_8;
+                tmp9 = closure_1_8(tmp5);
               }
               num = num + 1;
-              tmp4 = tmp5;
+              tmp3 = tmp4;
             }
-            if (typeof f19683 === "function") {
+            if (typeof c1 === "function") {
               str = " -> ";
               str2 = "Dependency Cycle Found: ";
-              tmp16 = globalThis;
+              tmp15 = globalThis;
               _Error = Error;
-              tmp17 = new.target;
-              tmp18 = new.target;
+              self = this;
+              self2 = this;
               error = new Error("Dependency Cycle Found: " + obj.join(" -> "));
-              tmp20 = error;
+              tmp17 = error;
               error.cyclePath = obj;
               _Object = Object;
               _Object2 = Object;
-              setPrototypeOfResult = Object.setPrototypeOf(error, Object.getPrototypeOf(tmp15));
+              setPrototypeOfResult = Object.setPrototypeOf(error, Object.getPrototypeOf(tmp14));
               _Error2 = Error;
               if (Error.captureStackTrace) {
                 _Error3 = Error;
-                captureStackTraceResult = Error.captureStackTrace(error, tmp14);
+                captureStackTraceResult = Error.captureStackTrace(error, tmp13);
               }
               throw error;
             } else {
@@ -295,21 +315,18 @@ DepGraph.prototype = {
               throw new TypeError("Trying to call a non-function");
             }
           }
-          arr2 = closure_4.pop();
-          delete tmp2[tmp];
-          tmp24 = DFS;
-          if (DFS) {
-            tmp24 = 0 !== tmp4[item].length;
+          arr2 = closure_1_4.pop();
+          delete closure_1_7[tmp];
+          tmp21 = DFS && 0 !== tmp3[item].length;
+          if (!tmp21) {
+            tmp22 = closure_1_6;
+            tmp21 = closure_1_6[item];
           }
-          if (!tmp24) {
-            tmp25 = closure_6;
-            tmp24 = closure_6[item];
-          }
-          if (!tmp24) {
-            tmp26 = DFS;
+          if (!tmp21) {
+            tmp23 = DFS;
             arr3 = DFS.push(item);
-            tmp28 = closure_6;
-            closure_6[item] = true;
+            tmp25 = closure_1_6;
+            closure_1_6[item] = true;
           }
           return;
         }
@@ -322,206 +339,118 @@ DepGraph.prototype = {
       return items;
     } else {
       const _Error = Error;
+      const self2 = this;
+      const self3 = this;
       const error = new Error("Node does not exist: " + item);
       throw error;
     }
   },
   overallOrder(arg0) {
-    const self = this;
-    let outgoingEdges = this;
+    let tmp3;
+    let self = this;
     const items = [];
     const keys = Object.keys(this.nodes);
     if (0 === keys.length) {
       return items;
     } else {
-      outgoingEdges = self.outgoingEdges;
-      const DFS = [];
-      circular = self.circular;
-      closure_4 = [];
-      dependencyMap = {};
-      dependencyMap2 = {};
-      dependencyMap3 = {};
+      tmp = arg0;
+      let outgoingEdges = self.outgoingEdges;
+      let c1 = false;
+      let closure_2 = [];
+      let circular = self.circular;
+      let closure_4 = [];
+      let closure_5 = {};
+      let closure_6 = {};
+      let closure_7 = {};
       class DFS {
-        constructor(arg0) {
-          closure_5[arg0] = true;
-          arr = closure_4.push(arg0);
-          closure_7[arg0] = true;
-          tmp4 = outgoingEdges;
-          num = 0;
-          if (0 < outgoingEdges[arg0].length) {
+        constructor(item) {
+          let obj;
+          closure_5[item] = true;
+          closure_4.push(item);
+          closure_7[item] = true;
+          let tmp3 = outgoingEdges;
+          let num = 0;
+          tmp = item;
+          if (0 < outgoingEdges[item].length) {
             while (true) {
-              tmp5 = outgoingEdges;
-              tmp6 = outgoingEdges[arg0][num];
-              tmp7 = closure_5;
-              tmp8 = num;
-              if (closure_5[tmp6]) {
-                tmp11 = closure_7;
-                if (closure_7[tmp6]) {
+              let tmp4 = outgoingEdges;
+              let tmp5 = outgoingEdges[item][num];
+              if (closure_5[tmp5]) {
+                if (closure_7[tmp5]) {
                   obj = closure_4;
-                  arr1 = closure_4.push(tmp6);
-                  tmp13 = circular;
-                  if (!circular) {
+                  let arr4 = closure_4.push(tmp5);
+                  let tmp12 = circular;
+                  if (!tmp12) {
                     break;
                   }
                 }
               } else {
-                tmp9 = DFS;
-                tmp10 = DFS(tmp6);
+                let tmp9 = self(tmp5);
               }
               num = num + 1;
-              tmp4 = tmp5;
+              tmp3 = tmp4;
             }
-            if (typeof f19683 === "function") {
-              str = " -> ";
-              str2 = "Dependency Cycle Found: ";
-              tmp16 = globalThis;
-              _Error = Error;
-              tmp17 = new.target;
-              tmp18 = new.target;
-              error = new Error("Dependency Cycle Found: " + obj.join(" -> "));
-              tmp20 = error;
+            if (typeof c1 === "function") {
+              const _Error = Error;
+              self = this;
+              const self2 = this;
+              const error = new Error("Dependency Cycle Found: " + obj.join(" -> "));
               error.cyclePath = obj;
-              _Object = Object;
-              _Object2 = Object;
-              setPrototypeOfResult = Object.setPrototypeOf(error, Object.getPrototypeOf(tmp15));
-              _Error2 = Error;
+              const _Object = Object;
+              const _Object2 = Object;
+              Object.setPrototypeOf(error, Object.getPrototypeOf(tmp14));
+              const _Error2 = Error;
               if (Error.captureStackTrace) {
-                _Error3 = Error;
-                captureStackTraceResult = Error.captureStackTrace(error, tmp14);
+                const _Error3 = Error;
+                Error.captureStackTrace(error, tmp13);
               }
               throw error;
             } else {
-              str3 = "Trying to call a non-function";
               throw new TypeError("Trying to call a non-function");
             }
           }
-          arr2 = closure_4.pop();
-          delete tmp2[tmp];
-          tmp24 = DFS;
-          if (DFS) {
-            tmp24 = 0 !== tmp4[arg0].length;
+          closure_4.pop();
+          delete closure_7[tmp];
+          const tmp21 = closure_1 && 0 !== tmp3[item].length || closure_6[item];
+          if (!tmp21) {
+            items.push(item);
+            closure_6[item] = true;
           }
-          if (!tmp24) {
-            tmp25 = closure_6;
-            tmp24 = closure_6[arg0];
-          }
-          if (!tmp24) {
-            tmp26 = DFS;
-            arr3 = DFS.push(arg0);
-            tmp28 = closure_6;
-            closure_6[arg0] = true;
-          }
-          return;
         }
       }
       const item = keys.forEach((item) => {
         DFS(item);
       });
-      const outgoingEdges2 = self.outgoingEdges;
-      closure_129_1 = arg0;
-      closure_129_2 = items;
-      const circular2 = self.circular;
-      closure_129_4 = [];
-      closure_129_5 = {};
-      closure_129_6 = {};
-      closure_129_7 = {};
-      class DFS {
-        constructor(arg0) {
-          closure_5[arg0] = true;
-          arr = closure_4.push(arg0);
-          closure_7[arg0] = true;
-          tmp4 = outgoingEdges;
-          num = 0;
-          if (0 < outgoingEdges[arg0].length) {
-            while (true) {
-              tmp5 = outgoingEdges;
-              tmp6 = outgoingEdges[arg0][num];
-              tmp7 = closure_5;
-              tmp8 = num;
-              if (closure_5[tmp6]) {
-                tmp11 = closure_7;
-                if (closure_7[tmp6]) {
-                  obj = closure_4;
-                  arr1 = closure_4.push(tmp6);
-                  tmp13 = circular;
-                  if (!circular) {
-                    break;
-                  }
-                }
-              } else {
-                tmp9 = DFS;
-                tmp10 = DFS(tmp6);
-              }
-              num = num + 1;
-              tmp4 = tmp5;
-            }
-            if (typeof f19683 === "function") {
-              str = " -> ";
-              str2 = "Dependency Cycle Found: ";
-              tmp16 = globalThis;
-              _Error = Error;
-              tmp17 = new.target;
-              tmp18 = new.target;
-              error = new Error("Dependency Cycle Found: " + obj.join(" -> "));
-              tmp20 = error;
-              error.cyclePath = obj;
-              _Object = Object;
-              _Object2 = Object;
-              setPrototypeOfResult = Object.setPrototypeOf(error, Object.getPrototypeOf(tmp15));
-              _Error2 = Error;
-              if (Error.captureStackTrace) {
-                _Error3 = Error;
-                captureStackTraceResult = Error.captureStackTrace(error, tmp14);
-              }
-              throw error;
-            } else {
-              str3 = "Trying to call a non-function";
-              throw new TypeError("Trying to call a non-function");
-            }
-          }
-          arr2 = closure_4.pop();
-          delete tmp2[tmp];
-          tmp24 = DFS;
-          if (DFS) {
-            tmp24 = 0 !== tmp4[arg0].length;
-          }
-          if (!tmp24) {
-            tmp25 = closure_6;
-            tmp24 = closure_6[arg0];
-          }
-          if (!tmp24) {
-            tmp26 = DFS;
-            arr3 = DFS.push(arg0);
-            tmp28 = closure_6;
-            closure_6[arg0] = true;
-          }
-          return;
-        }
-      }
-      closure_129_8 = DFS;
-      const found = keys.filter((item) => 0 === outgoingEdges.incomingEdges[item].length);
+      outgoingEdges = self.outgoingEdges;
+      let closure_1 = arg0;
+      circular = self.circular;
+      closure_4 = [];
+      closure_5 = {};
+      closure_6 = {};
+      closure_7 = {};
+      self = tmp3;
+      const found = keys.filter((item) => 0 === self.incomingEdges[item].length);
       const item1 = found.forEach((item) => {
-        DFS(item);
+        self(item);
       });
       return items;
     }
   }
 };
 class tmp {
-  constructor(arg0) {
-    error = new Error("Dependency Cycle Found: " + arg0.join(" -> "));
-    error.cyclePath = arg0;
-    setPrototypeOfResult = Object.setPrototypeOf(error, Object.getPrototypeOf(this));
+  constructor(join) {
+    const error = new Error("Dependency Cycle Found: " + join.join(" -> "));
+    error.cyclePath = join;
+    Object.setPrototypeOf(error, Object.getPrototypeOf(this));
     if (Error.captureStackTrace) {
-      _Error = Error;
-      tmp3 = f19683;
-      captureStackTraceResult = Error.captureStackTrace(error, f19683);
+      const _Error = Error;
+      Error.captureStackTrace(error, tmp);
     }
     return error;
   }
 }
-let circular = tmp;
-let obj = { constructor: { value: Error, enumerable: false, writable: true, configurable: true } };
+let obj = { constructor: obj2 };
+obj2 = { value: Error, enumerable: false, writable: true, configurable: true };
 tmp.prototype = Object.create(Error.prototype, obj);
 Object.setPrototypeOf(tmp, Error);
 

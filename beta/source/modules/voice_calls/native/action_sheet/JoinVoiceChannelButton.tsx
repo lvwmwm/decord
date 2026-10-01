@@ -5,49 +5,47 @@
 // Exports: default
 
 // Module 13327 (JoinVoiceChannelButton)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
 import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9394 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const Permissions = fn(1074).Permissions;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const Permissions = Constants.Permissions;
+const jsx = Fragment.jsx;
 let closure_9 = createStyles.createStyles({ container: { flexDirection: "row" } });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/JoinVoiceChannelButton.tsx");
 
 export default function JoinVoiceChannelButton(channel) {
   channel = channel.channel;
+  const style = channel.style;
   const tmp = closure_9();
   const tmp3 = useIsVoiceChannelFullDefault(channel);
+  let obj = channel(504);
   const items = [PermissionStore];
-  const stateFromStores = channel(504).useStateFromStores(items, () => !PermissionStore.can(Permissions.CONNECT, channel));
+  const stateFromStores = obj.useStateFromStores(items, () => !PermissionStore.can(Permissions.CONNECT, channel));
   const intl = channel(1115).intl;
-  let stringResult = intl.string(channel(1115).t.eIi3Om);
+  intl.string(channel(1115).t.eIi3Om);
   if (tmp3) {
     const intl3 = tmp4(1115).intl;
-    stringResult = intl3.string(tmp4(1115).t.rZfiNq);
-    let flag = true;
-  } else {
-    flag = false;
-    if (stateFromStores) {
-      const intl2 = tmp4(1115).intl;
-      stringResult = intl2.string(tmp4(1115).t.TVBCKZ);
-      flag = true;
-    }
+    intl3.string(tmp4(1115).t.rZfiNq);
+  } else if (stateFromStores) {
+    const intl2 = tmp4(1115).intl;
+    intl2.string(tmp4(1115).t.TVBCKZ);
   }
   const items1 = [channel.id];
-  const obj2 = { style: null, children: null };
-  const items2 = [tmp.container, channel.style];
-  obj2.style = items2;
-  const callback = noop.useCallback(() => {
-    const result = KeyboardManagerUtilsAll.dismissGlobalKeyboard();
-    const voiceChannel = SelectedChannelActionCreatorsDefault.selectVoiceChannel(channel.id);
+  const items2 = [tmp.container, style];
+  const callback = react.useCallback(() => {
+    const obj = KeyboardManagerUtilsAll;
+    const result = obj.dismissGlobalKeyboard();
+    const obj2 = SelectedChannelActionCreatorsDefault;
+    const voiceChannel = obj2.selectVoiceChannel(channel.id);
   }, items1);
-  obj2.children = jsx(channel(5281).Button, { disabled: flag, text: stringResult, onPress: callback });
-  return <View style={null}>{null}</View>;
+  return <View style={items2}>{null}</View>;
 };

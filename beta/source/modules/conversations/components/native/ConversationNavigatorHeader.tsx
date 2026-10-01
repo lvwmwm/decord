@@ -5,132 +5,138 @@
 // Exports: conversationNavigatorFocusHeaderOptions, conversationNavigatorListHeaderOptions
 
 // Module 7352 (ConversationNavigatorHeader)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import useToken from "useToken" /* 4531 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
 import HeaderShared from "HeaderShared" /* 7288 */;
 import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 7353 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
+let tmp;
 const utils_PlatformUtils = tmp(1365);
-require = fn;
 function ConversationNavigatorHeader(channelId) {
   channelId = channelId.channelId;
   let flag = channelId.hasRightAction;
+  const title = channelId.title;
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = closure_6(flag);
   const items = [ChannelStore];
   const items1 = [channelId];
-  const stateFromStores = channelId(504).useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
+  const tmp = closure_6(flag);
+  const obj = channelId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const tmp3 = useChannelNameDefault(stateFromStores, true);
-  const obj2 = { style: tmp.container, children: null };
-  const obj3 = { title: channelId.title, subtitle: tmp3, variant: "heading-lg/semibold", subtitleColor: "text-muted" };
-  obj2.children = jsx(channelId(7288).GenericHeaderTitle, { title: channelId.title, subtitle: tmp3, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
-  return <View style={tmp.container}>{null}</View>;
+  const GenericHeaderTitle = channelId(7288).GenericHeaderTitle;
+  return <tmp5 style={tmp.container}>{null}</tmp5>;
 }
 function HeaderWithBorder(shouldHandleSafeArea) {
-  const token = useToken.useToken(nativeDefault.colors.BORDER_SUBTLE);
-  const token1 = useToken.useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
-  const obj4 = {};
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.colors.BORDER_SUBTLE);
+  const obj2 = useToken;
+  const token1 = obj2.useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  const obj3 = { shouldHandleSafeArea, style: { borderColor: token, backgroundColor: token1 } };
+  const renderHeader = HeaderShared.renderHeader;
+  HeaderShared;
   const merged = Object.assign(shouldHandleSafeArea);
   shouldHandleSafeArea = shouldHandleSafeArea.shouldHandleSafeArea;
   if (shouldHandleSafeArea == null) {
-    shouldHandleSafeArea = utils_PlatformUtils.isAndroid();
     const tmpResult = utils_PlatformUtils;
+    shouldHandleSafeArea = tmpResult.isAndroid();
   }
-  obj4.shouldHandleSafeArea = shouldHandleSafeArea;
-  obj4.style = { borderColor: token, backgroundColor: token1 };
-  return HeaderShared.renderHeader(obj4);
+  return renderHeader(obj3);
 }
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((arg0) => {
-  const container = { flex: 1, paddingVertical: nativeDefault.space.PX_16, paddingRight: null, alignItems: "center", justifyContent: "center" };
-  let num = 0;
+  let num;
+  const container = { flex: 1, paddingVertical: nativeDefault.space.PX_16, paddingRight: num, alignItems: "center", justifyContent: "center" };
+  num = 0;
   if (!arg0) {
     num = nativeDefault.space.PX_64;
   }
-  container.paddingRight = num;
   return { container };
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorHeader.tsx");
 
 export const conversationNavigatorListHeaderOptions = function conversationNavigatorListHeaderOptions(route, navigation, backgroundColor) {
+  let getRenderBackImage;
   _require = route;
   let obj = {
     headerShown: true,
     header(arg0) {
-      const obj = {};
-      const merged = Object.assign(arg0);
       let shouldHandleSafeArea;
+      const obj = { shouldHandleSafeArea };
+      const merged = Object.assign(arg0);
+      shouldHandleSafeArea = undefined;
+      const tmp = jsx;
+      const tmp2 = HeaderWithBorder;
       if (backgroundColor != null) {
         shouldHandleSafeArea = backgroundColor.shouldHandleSafeArea;
       }
-      obj.shouldHandleSafeArea = shouldHandleSafeArea;
-      return <HeaderWithBorder />;
+      return tmp(tmp2, obj);
     },
-    headerLeft: null,
-    headerTitle: null
+    headerLeft: getRenderBackImage(navigation, { badgeCutoutColor: backgroundColor }),
+    headerTitle() {
+      const intl = intl2.intl;
+      return <ConversationNavigatorHeader channelId={route.params.channelId} title={intl.string(intl2.t.T3WBRp)} />;
+    }
   };
+  let tmp = require("HeaderShared");
   backgroundColor = undefined;
+  getRenderBackImage = tmp.getRenderBackImage;
   if (backgroundColor != null) {
     backgroundColor = backgroundColor.backgroundColor;
   }
-  obj.headerLeft = require("HeaderShared").getRenderBackImage(navigation, { badgeCutoutColor: backgroundColor });
-  obj.headerTitle = function headerTitle() {
-    const obj = { channelId: navigation.params.channelId, title: null };
-    const intl = util.intl;
-    obj.title = intl.string(util.t.T3WBRp);
-    return <ConversationNavigatorHeader channelId={navigation.params.channelId} title={null} />;
-  };
   return obj;
 };
 export const conversationNavigatorFocusHeaderOptions = function conversationNavigatorFocusHeaderOptions(route, navigation, backgroundColor) {
+  let getRenderBackImage;
   _require = route;
   let obj = {
     headerShown: true,
     header(arg0) {
-      const obj = {};
-      const merged = Object.assign(arg0);
       let shouldHandleSafeArea;
+      const obj = { shouldHandleSafeArea };
+      const merged = Object.assign(arg0);
+      shouldHandleSafeArea = undefined;
+      const tmp = jsx;
+      const tmp2 = HeaderWithBorder;
       if (backgroundColor != null) {
         shouldHandleSafeArea = backgroundColor.shouldHandleSafeArea;
       }
-      obj.shouldHandleSafeArea = shouldHandleSafeArea;
-      return <HeaderWithBorder />;
+      return tmp(tmp2, obj);
     },
-    headerLeft: null,
-    headerTitle: null,
-    headerRight: null
+    headerLeft: getRenderBackImage(navigation, { badgeCutoutColor: backgroundColor }),
+    headerTitle() {
+      let tmp2 = null;
+      if (null != route.params) {
+        tmp2 = <ConversationNavigatorHeader channelId={route.params.channelId} title={route.params.title} hasRightAction />;
+      }
+      return tmp2;
+    },
+    headerRight() {
+      let tmp2 = null;
+      if (null != route.params) {
+        tmp2 = jsx(ConversationNavigatorMoreMenuDefault, { channelId: route.params.channelId, conversationId: route.params.conversationId });
+      }
+      return tmp2;
+    }
   };
+  let tmp = require("HeaderShared");
   backgroundColor = undefined;
+  getRenderBackImage = tmp.getRenderBackImage;
   if (backgroundColor != null) {
     backgroundColor = backgroundColor.backgroundColor;
   }
-  obj.headerLeft = require("HeaderShared").getRenderBackImage(navigation, { badgeCutoutColor: backgroundColor });
-  obj.headerTitle = function headerTitle() {
-    let tmp2 = null;
-    if (null != closure_0.params) {
-      const obj = { channelId: tmp.params.channelId, title: tmp.params.title, hasRightAction: true };
-      tmp2 = <ConversationNavigatorHeader channelId={tmp.params.channelId} title={tmp.params.title} hasRightAction />;
-    }
-    return tmp2;
-  };
-  obj.headerRight = function headerRight() {
-    let tmp2 = null;
-    if (null != closure_0.params) {
-      const obj = { channelId: tmp.params.channelId, conversationId: tmp.params.conversationId };
-      tmp2 = jsx(ConversationNavigatorMoreMenuDefault, { channelId: tmp.params.channelId, conversationId: tmp.params.conversationId });
-    }
-    return tmp2;
-  };
   return obj;
 };

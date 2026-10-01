@@ -4,31 +4,39 @@
 // Dependencies: [19, 4825, 7417, 21, 13998, 14859, 10774, 11006, 1115, 1177, 2]
 
 // Module 14962 (ReduceSaturationSetting)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import CirclePlusIcon from "CirclePlusIcon" /* 10774 */;
 import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
 import CircleMinusIcon from "CircleMinusIcon" /* 14859 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const SettingBuilders = fn(11006);
-const slider = SettingBuilders.createSlider({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const jsx = Fragment.jsx;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["5PWWCY"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["5PWWCY"]);
   },
-  parent: fn(7417).MobileUserSettings.ACCESSIBILITY,
+  parent: MobileUserSettings.ACCESSIBILITY,
   useTrailing() {
-    return jsx(native.BetaTag, { size: native.BetaSizes.SMALL });
+    const BetaTag = native.BetaTag;
+    return <BetaTag size={native.BetaSizes.SMALL} />;
   },
   useProps: function useSaturationSettingProps() {
-    return noop.useMemo(() => ({ value: saturation.saturation, onSlidingComplete: AccessibilityActionCreators.setSaturation, minimumValue: 0, maximumValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) }), []);
+    let saturation;
+    return react.useMemo(() => {
+      const obj = { value: saturation.saturation, onSlidingComplete: AccessibilityActionCreators.setSaturation, minimumValue: 0, maximumValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
+      return obj;
+    }, []);
   }
-});
-const size = fn(2);
+};
+const slider = SettingBuilders.createSlider(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ReduceSaturationSetting.tsx");
 
 export default slider;

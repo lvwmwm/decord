@@ -4,15 +4,21 @@
 // Dependencies: [504, 573, 2]
 
 // Module 7148 (AdUserStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import size from "module_2" /* 2 */;
+
+let closure_0;
 
 let c1 = false;
 let c2 = false;
 let c3 = null;
 let closure_4 = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class AdUserStore extends Store {
+  setFetchPromise(arg0) {
+    c3 = arg0;
+  }
 }
 const prototype = AdUserStore.prototype;
 Object.defineProperty(prototype, "adUser", {
@@ -56,11 +62,8 @@ Object.defineProperty(prototype, "hasFetchedRecently", {
   },
   set: undefined
 });
-prototype["setFetchPromise"] = function setFetchPromise(arg0) {
-  c3 = arg0;
-};
 AdUserStore.displayName = "AdUserStore";
-const adUserStore = new AdUserStore(DispatcherDefault, {
+const obj = {
   POST_CONNECTION_OPEN: function handlePostConnectionOpen() {
 
   },
@@ -79,8 +82,8 @@ const adUserStore = new AdUserStore(DispatcherDefault, {
     c2 = true;
     c3 = null;
   }
-});
-const size = fn(2);
+};
+const adUserStore = new AdUserStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/ads/native/AdUserStore.tsx");
 
 export default adUserStore;

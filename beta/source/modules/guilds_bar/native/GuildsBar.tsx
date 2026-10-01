@@ -6,63 +6,82 @@
 // Module 15919 (GuildsBar)
 import NativeViewDefault from "NativeView" /* 5901 */;
 import FastListDefault from "FastList" /* 6493 */;
-import FavoritesGuildIntroPopoverDefault from "FavoritesGuildIntroPopover" /* 9701 */;
 import StartupProfilerDefault from "StartupProfiler" /* 11027 */;
 import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 15812 */;
 import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 15920 */;
 import useGuildsBarPropsDefault from "useGuildsBarProps" /* 15928 */;
-import GuildsBarDragPreviewDefault from "GuildsBarDragPreview" /* 15997 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+let closure_4;
+let hasOwnProperty;
+let tmp2;
+const FavoritesGuildIntroPopoverDefault = tmp2(9701);
+const GuildsBarDragPreviewDefault = tmp2(15997);
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ wrapper: { position: "relative", overflow: "visible", flex: 1 } });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBar.tsx");
-
-export default noop.memo(function GuildsBar(enableHome) {
+const memoResult = react.memo(function GuildsBar(enableHome) {
+  let GestureDetector;
+  let gesture;
+  let items2;
+  let listDataProps;
+  let listProps;
+  let obj2;
+  let obj3;
+  let obj5;
+  let onFastListScroll;
+  let onFastListScrollWorklet;
+  let persistantKeys;
+  let scrollPosition;
+  let scrollerRef;
+  let tmp11;
+  let tmp12;
   let flag = enableHome.enableHome;
   if (flag === undefined) {
     flag = false;
   }
+  const tmp2 = importDefault;
+  let tmp = closure_6();
   let tmp4 = useGuildsBarGestureDefault();
   const fastListRef = tmp4.fastListRef;
   ({ scrollPosition, gesture, scrollerRef, persistantKeys, onFastListScroll, onFastListScrollWorklet } = tmp4);
-  let tmp = closure_6();
   ({ listProps, listDataProps } = useGuildsBarPropsDefault(fastListRef));
   const items = [fastListRef];
-  const effect = noop.useEffect(() => {
-    const result = registerSidebarVisibilityMethods.registerGuildVisibilityMethod(fastListRef);
+  const tmp5 = useGuildsBarPropsDefault(fastListRef);
+  const effect = react.useEffect(() => {
+    const obj = registerSidebarVisibilityMethods;
+    const result = obj.registerGuildVisibilityMethod(fastListRef);
   }, items);
-  closure_129_0 = listProps;
-  closure_129_1 = fastListRef;
-  closure_129_2 = noop.useRef(listProps);
-  closure_129_3 = noop.useRef(false);
-  const effect1 = noop.useEffect(() => {
+  let closure_2 = react.useRef(listProps);
+  let closure_3 = react.useRef(false);
+  const effect1 = react.useEffect(() => {
+    let tmp = ref;
+    let obj = listProps(ref[3]);
     if (obj.isAndroid()) {
-      closure_0 = ref(tmp[4]).addOnPipModeChangedListener((arg0) => {
-        if (arg0) {
-          ref3.current = true;
+      const obj2 = fastListRef(tmp[4]);
+      let closure_0 = obj2.addOnPipModeChangedListener((arg0) => {
+        const tmp = arg0;
+        if (tmp) {
+          ref2.current = true;
         }
       });
       return () => {
         let removeResult;
+        const obj = closure_0;
         if (closure_0 != null) {
-          removeResult = closure_0.remove();
+          removeResult = obj.remove();
         }
         return removeResult;
       };
     }
-    obj = fastListRef(ref2[3]);
-    tmp = ref2;
   }, []);
   const items1 = [fastListRef, listProps];
-  const effect2 = noop.useEffect(() => {
-    const current = ref2.current;
-    ref2.current = fastListRef;
-    if (ref3.current) {
+  const effect2 = react.useEffect(() => {
+    const current = ref.current;
+    ref.current = listProps;
+    if (ref2.current) {
       let num = tmp.chunkBase;
       if (num == null) {
         num = 0;
@@ -73,46 +92,34 @@ export default noop.memo(function GuildsBar(enableHome) {
       }
       if (num > num2) {
         tmp2.current = false;
+        const tmp4 = listProps.insetStart === current.insetStart && listProps.insetEnd === current.insetEnd;
         if (tmp4) {
-          const current2 = ref.current;
+          const current2 = fastListRef.current;
           if (current2 != null) {
             const blocks = current2.computeBlocks();
           }
         }
-        tmp4 = tmp.insetStart === current.insetStart && tmp.insetEnd === current.insetEnd;
       }
     }
   }, items1);
-  let obj = { profile: null, children: null };
-  const tmp5 = useGuildsBarPropsDefault(fastListRef);
-  obj.profile = fastListRef(11027).Profiles.Guilds;
-  const obj2 = { gesture, children: null };
-  const obj3 = { style: tmp.wrapper, collapsable: false, nativeID: "guilds-bar-view", children: null };
+  let obj = { profile: fastListRef(11027).Profiles.Guilds, children: closure_4(GestureDetector, obj2) };
   const tmp10 = StartupProfilerDefault;
-  const tmp11 = closure_5;
-  const obj4 = {};
-  const tmp12 = NativeViewDefault;
+  obj2 = { gesture, children: tmp11(tmp12, obj3) };
+  GestureDetector = fastListRef(6073).GestureDetector;
+  obj3 = { style: tmp.wrapper, collapsable: false, nativeID: "guilds-bar-view", children: items2 };
+  const obj4 = { ref: fastListRef, manualRef: scrollerRef, disableContentWrappers: true, onScroll: onFastListScroll, onScrollWorklet: onFastListScrollWorklet, scrollPosValue: scrollPosition, stickySectionsVariant: "sticky-mount", optimizeListItemRender: true, persistantKeys, disableRecyclingOnFullCompute: true, style: obj5, nativeID: "guilds-bar-fast-list" };
+  tmp12 = NativeViewDefault;
+  const tmp13 = FastListDefault;
   const merged = Object.assign(listProps);
   const merged1 = Object.assign(listDataProps);
-  obj4.ref = fastListRef;
-  obj4.manualRef = scrollerRef;
-  obj4.disableContentWrappers = true;
-  obj4.onScroll = onFastListScroll;
-  obj4.onScrollWorklet = onFastListScrollWorklet;
-  obj4.scrollPosValue = scrollPosition;
-  obj4.stickySectionsVariant = "sticky-mount";
-  obj4.optimizeListItemRender = true;
-  obj4.persistantKeys = persistantKeys;
-  obj4.disableRecyclingOnFullCompute = true;
-  let obj5;
+  obj5 = undefined;
+  tmp11 = closure_5;
   if (flag) {
     obj5 = { overflow: "visible" };
   }
-  obj4.style = obj5;
-  obj4.nativeID = "guilds-bar-fast-list";
-  const items2 = [closure_4(FastListDefault, obj4), closure_4(GuildsBarDragPreviewDefault, {}), closure_4(FavoritesGuildIntroPopoverDefault, {})];
-  obj3.children = items2;
-  obj2.children = tmp11(tmp12, obj3);
-  obj.children = closure_4(fastListRef(6073).GestureDetector, obj2);
+  items2 = [closure_4(tmp13, obj4), closure_4(GuildsBarDragPreviewDefault, {}), closure_4(FavoritesGuildIntroPopoverDefault, {})];
   return closure_4(tmp10, obj);
 });
+let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBar.tsx");
+
+export default memoResult;

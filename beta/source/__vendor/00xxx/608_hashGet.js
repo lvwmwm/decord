@@ -4,23 +4,22 @@
 // Dependencies: [600]
 
 // Module 608 (hashGet)
-import _mod600 from "module_600" /* 600 */;
+import getNative from "getNative" /* 600 */;
 
 
 export default function hashGet(arg0) {
   const __data__ = this.__data__;
-  if (_mod600) {
-    let tmp4;
+  if (getNative) {
+    let tmp3;
     if ("__lodash_hash_undefined__" !== __data__[arg0]) {
-      tmp4 = tmp3;
+      tmp3 = tmp2;
     }
-    return tmp4;
+    return tmp3;
   } else {
-    const call = hasOwnProperty.call;
-    let tmp2;
-    if (typeof call === "unknown" ? hasOwnProperty(arg0) : call(__data__, arg0)) {
-      tmp2 = __data__[arg0];
+    let tmp;
+    if (hasOwnProperty.call(__data__, arg0)) {
+      tmp = __data__[arg0];
     }
-    return tmp2;
+    return tmp;
   }
 };

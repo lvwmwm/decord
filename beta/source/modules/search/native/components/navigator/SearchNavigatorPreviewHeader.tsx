@@ -4,14 +4,22 @@
 // Dependencies: [19, 17, 21, 4836, 12840, 2]
 
 // Module 16682 (SearchNavigatorPreviewHeader)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import ChannelHeaderDefault from "ChannelHeader" /* 12840 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let channelId;
+
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flexShrink: 1, paddingRight: 12, flexDirection: "row", alignItems: "center" } });
-const size = fn(2);
+const memoResult = react.memo((channelId) => {
+  channelId = channelId.channelId;
+  return <View style={closure_4().container}>{jsx(ChannelHeaderDefault, { channelId, screenIndex: "none", pressable: false, isGuildMemberCountVisible: false, isNavigationScreen: true })}</View>;
+});
 const result = size.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorPreviewHeader.tsx");
 
-export default noop.memo((channelId) => <View style={closure_4().container}>{jsx(ChannelHeaderDefault, { channelId: arg0.channelId, screenIndex: "none", pressable: false, isGuildMemberCountVisible: false, isNavigationScreen: true })}</View>);
+export default memoResult;

@@ -8,284 +8,261 @@ import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import useToken from "useToken" /* 4531 */;
 import useFontScale from "useFontScale" /* 5288 */;
-import TableRowGroupContext from "TableRowGroupContext" /* 5918 */;
-import Card from "Card" /* 5919 */;
+import TableRowDivider from "TableRowDivider" /* 5914 */;
+import react2 from "react" /* 5918 */;
+import TableRowIcon from "TableRowIcon" /* 5923 */;
+import TableRowArrow from "TableRowArrow" /* 5924 */;
 import TableRowTrailingText from "TableRowTrailingText" /* 5926 */;
-import noop from "module_19" /* 19 */;
+import DragIcon from "DragIcon" /* 5927 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 class TableRow {
   constructor(arg0) {
-    ({ icon, disabled } = global);
-    ({ label, subLabel, trailing, arrow, onPress } = global);
+    let arrow;
+    let disabled;
+    let dragHandlePressableProps;
+    let draggable;
+    let end;
+    let height;
+    let icon;
+    let items;
+    let label;
+    let labelLineClamp;
+    let onPress;
+    let start;
+    let subLabel;
+    let subLabelLineClamp;
+    let tmp8;
+    let trailing;
+    let variant;
+    ({ icon, disabled } = arg0);
+    ({ label, subLabel, trailing, arrow, onPress } = arg0);
     if (disabled === undefined) {
       disabled = false;
     }
-    ({ variant, start, end, labelLineClamp, subLabelLineClamp } = global);
+    ({ variant, start, end, labelLineClamp, subLabelLineClamp } = arg0);
     if (variant === undefined) {
       variant = "default";
     }
-    ({ draggable, dragHandlePressableProps, height } = global);
-    merged = Object.assign(global, Object.assign({ label: 0, subLabel: 0, icon: 0, trailing: 0, arrow: 0, onPress: 0, disabled: 0, start: 0, end: 0, labelLineClamp: 0, subLabelLineClamp: 0, variant: 0, draggable: 0, dragHandlePressableProps: 0, height: 0 }));
-    tmp2 = closure_0;
-    tmp3 = closure_2;
-    context = closure_3.useContext(closure_0(closure_2[5]).TableRowGroupContext);
-    tmp5 = !context;
-    if (!context) {
-      flag = true;
-      tmp5 = true === end;
-    }
-    tmp2Result = tmp2(tmp3[6]);
-    tmp7 = jsx;
-    token = tmp2Result.useToken(closure_1(tmp3[4]).modules.mobile.TABLE_ROW_BORDER_RADIUS);
-    obj1 = { radius: token, shadow: "none", border: "none", variant: "muted", start: null, end: null, onPress: null, disabled: null, style: null };
+    ({ draggable, dragHandlePressableProps, height } = arg0);
+    const merged = Object.assign(arg0, Object.assign({ label: 0, subLabel: 0, icon: 0, trailing: 0, arrow: 0, onPress: 0, disabled: 0, start: 0, end: 0, labelLineClamp: 0, subLabelLineClamp: 0, variant: 0, draggable: 0, dragHandlePressableProps: 0, height: 0 }));
+    const context = react.useContext(react2.TableRowGroupContext);
+    const tmp2Result = useToken;
+    const token = tmp2Result.useToken(nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS);
+    const obj = { radius: token, shadow: "none", border: "none", variant: "muted", start: tmp8, end: !context && true === end, onPress, disabled, style, children: metroRequire(TableRowInner, { height, label, subLabel, icon, trailing, arrow, disabled, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps }) };
     tmp8 = !context;
+    const InternalCard = tmp2(5919).InternalCard;
     if (!context) {
-      flag2 = true;
       tmp8 = true === start;
     }
-    obj1.start = tmp8;
-    obj1.end = tmp5;
-    obj1.onPress = onPress;
-    obj1.disabled = disabled;
-    obj1.style = closure_9;
-    merged1 = Object.assign(merged);
-    obj1.children = tmp7(TableRowInner, { height, label, subLabel, icon, trailing, arrow, disabled, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps });
-    tmp7Result = tmp7(tmp2(tmp3[7]).InternalCard, obj1);
-    tmp11 = tmp7Result;
+    const merged1 = Object.assign(merged);
+    const tmp7Result = metroRequire(InternalCard, obj);
+    let tmp11 = tmp7Result;
     if (!context) {
       tmp11 = tmp7Result;
-      if (!tmp5) {
-        tmp12 = jsxs;
-        tmp13 = Fragment;
-        obj5 = { children: null };
-        items = [, ];
-        items[0] = tmp7Result;
-        obj6 = { adjustSpacingForIcon: null };
-        obj6.adjustSpacingForIcon = null != icon;
-        items[1] = tmp7(tmp2(tmp3[8]).TableRowDivider, obj6);
-        obj5.children = items;
-        tmp11 = jsxs(Fragment, obj5);
+      if (!(!context && true === end)) {
+        const obj2 = { children: items };
+        items = [tmp7Result, ];
+        const obj3 = { adjustSpacingForIcon: null != icon };
+        items[1] = metroRequire(TableRowDivider.TableRowDivider, obj3);
+        tmp11 = metroImportAll(metroImportDefault, obj2);
       }
     }
     return tmp11;
   }
 }
 class TableRowInner {
-  constructor(arg0) {
-    ({ label, subLabel, icon, trailing, arrow, variant } = global);
-    ({ labelLineClamp, subLabelLineClamp, disabled } = global);
+  constructor(draggable) {
+    let arrow;
+    let borderRadius;
+    let disabled;
+    let height;
+    let icon;
+    let items;
+    let items1;
+    let items2;
+    let items3;
+    let items4;
+    let label;
+    let labelLineClamp;
+    let obj6;
+    let str;
+    let str2;
+    let subLabel;
+    let subLabelLineClamp;
+    let tmp7;
+    let trailing;
+    let variant;
+    ({ label, subLabel, icon, trailing, arrow, variant } = draggable);
+    ({ labelLineClamp, subLabelLineClamp, disabled } = draggable);
     if (variant === undefined) {
       variant = "default";
     }
-    flag = global.draggable;
+    let flag = draggable.draggable;
     if (flag === undefined) {
       flag = false;
     }
-    dragHandlePressableProps = global.dragHandlePressableProps;
-    obj = closure_3;
-    ({ borderRadius, height } = global);
-    tmp = undefined;
-    if (closure_3.isValidElement(trailing)) {
-      tmp2 = closure_0;
-      tmp3 = closure_2;
-      if (trailing.type === closure_0(closure_2[11]).TableRowTrailingText) {
+    const dragHandlePressableProps = draggable.dragHandlePressableProps;
+    ({ borderRadius, height } = draggable);
+    let tmp;
+    if (react.isValidElement(trailing)) {
+      if (trailing.type === TableRowTrailingText.TableRowTrailingText) {
         tmp = trailing;
       }
     }
-    tmp4 = closure_0;
-    tmp5 = closure_2;
-    obj2 = closure_0(closure_2[12]);
-    fontScale = obj2.useFontScale();
-    obj3 = closure_0(closure_2[13]);
+    const obj2 = useFontScale;
+    const fontScale = obj2.useFontScale();
+    const obj3 = PlatformUtils;
     if (obj3.isAndroid()) {
-      num2 = 1.2;
       tmp7 = fontScale > 1.2;
     } else {
-      num = 1.5;
       tmp7 = fontScale > 1.5;
     }
-    tmp8 = closure_10(true === disabled, null != tmp, tmp7);
-    tmp4Result = tmp4(tmp5[6]);
-    token = tmp4Result.useToken(closure_1(tmp5[4]).modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
-    tmp4Result1 = tmp4(tmp5[6]);
-    tmp11 = jsxs;
-    tmp12 = View;
-    obj1 = { style: null, children: null };
-    items = [, ];
-    items[0] = tmp8.row;
-    items[1] = { borderRadius, height };
-    obj1.style = items;
-    tmp13 = flag;
-    token1 = tmp4Result1.useToken(closure_1(tmp5[4]).modules.mobile.TABLE_ROW_LABEL_COLOR);
+    const tmp8 = closure_10(true === disabled, null != tmp, tmp7);
+    const tmp4Result = useToken;
+    const token = tmp4Result.useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
+    const obj4 = { style: items, children: items1 };
+    items = [tmp8.row, { borderRadius, height }];
+    let tmp13 = flag;
+    const tmp4Result2 = useToken;
+    const token1 = tmp4Result2.useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_COLOR);
     if (flag) {
-      tmp14 = jsx;
-      tmp15 = Pressable;
-      obj16 = {};
-      tmp16 = obj16;
-      tmp17 = dragHandlePressableProps;
-      merged = Object.assign(dragHandlePressableProps);
-      obj17 = { size: "xs", style: null };
-      obj17.style = tmp8.dragHandle;
-      obj16.children = jsx(tmp4(tmp5[14]).DragIcon, obj17);
-      tmp13 = jsx(Pressable, obj16);
+      const obj5 = { children: metroRequire(DragIcon.DragIcon, obj6) };
+      const merged = Object.assign(dragHandlePressableProps);
+      obj6 = { size: "xs", style: tmp8.dragHandle };
+      tmp13 = metroRequire(React3, obj5);
     }
-    items1 = [, , , , ];
-    items1[0] = tmp13;
-    tmp19 = null != icon;
+    items1 = [tmp13, , , , ];
+    let tmp19 = null != icon;
     if (tmp19) {
-      tmp20 = jsx;
-      obj18 = { style: null, children: null };
-      obj18.style = tmp8.iconContainer;
-      obj18.children = icon;
-      tmp19 = jsx(tmp12, obj18);
+      const obj7 = { style: tmp8.iconContainer, children: icon };
+      tmp19 = metroRequire(tmp12, obj7);
     }
     items1[1] = tmp19;
-    obj19 = { style: tmp8.content, children: null };
-    obj20 = { style: tmp8.labels, accessible: null, accessibilityRole: null, children: null };
-    tmp21 = flag;
-    obj20.accessible = tmp21;
+    const obj9 = { style: tmp8.labels, accessible: flag || undefined, accessibilityRole: str, children: items2 };
     str = undefined;
+    const obj8 = { style: tmp8.content, children: items3 };
     if (flag) {
       str = "text";
     }
-    obj20.accessibilityRole = str;
-    tmp23Result = label;
-    if (!obj.isValidElement(label)) {
-      tmp23 = jsx;
-      obj21 = { variant: null, color: null, lineClamp: null, includeFontPadding: true, children: null };
-      obj21.variant = token;
+    let tmp22Result = label;
+    if (!react.isValidElement(label)) {
+      const obj10 = { variant: token, color: str2, lineClamp: labelLineClamp, includeFontPadding: true, children: label };
       str2 = "text-feedback-critical";
-      str3 = "danger";
+      const Text = tmp4(4832).Text;
+      const tmp22 = metroRequire;
       if ("danger" !== variant) {
         str2 = token1;
       }
-      obj21.color = str2;
-      obj21.lineClamp = labelLineClamp;
-      obj21.children = label;
-      tmp23Result = tmp23(tmp4(tmp5[15]).Text, obj21);
+      tmp22Result = tmp22(Text, obj10);
     }
-    items2 = [, ];
-    items2[0] = tmp23Result;
-    tmp24 = null != subLabel;
-    if (tmp24) {
-      tmp26Result = subLabel;
-      if (!obj.isValidElement(subLabel)) {
-        tmp26 = jsx;
-        str4 = "text-subtle";
-        str5 = "danger";
+    items2 = [tmp22Result, ];
+    let tmp23 = null != subLabel;
+    if (tmp23) {
+      let tmp25Result = subLabel;
+      if (!react.isValidElement(subLabel)) {
+        let str4 = "text-subtle";
+        const Text2 = tmp4(4832).Text;
+        const tmp25 = metroRequire;
         if ("danger" === variant) {
           str4 = "text-feedback-critical";
         }
-        obj22 = { variant: "text-xs/medium", color: null, lineClamp: null, includeFontPadding: true, children: null };
-        obj22.color = str4;
-        obj22.lineClamp = subLabelLineClamp;
-        obj22.children = subLabel;
-        tmp26Result = tmp26(tmp4(tmp5[15]).Text, obj22);
+        const obj11 = { variant: "text-xs/medium", color: str4, lineClamp: subLabelLineClamp, includeFontPadding: true, children: subLabel };
+        tmp25Result = tmp25(Text2, obj11);
       }
-      tmp24 = tmp26Result;
+      tmp23 = tmp25Result;
     }
-    items2[1] = tmp24;
-    obj20.children = items2;
-    items3 = [, ];
-    items3[0] = tmp11(tmp12, obj20);
-    tmp27 = null != tmp;
-    if (tmp27) {
-      tmp28 = jsx;
-      obj23 = { style: null, children: null };
+    items2[1] = tmp23;
+    items3 = [metroImportAll(hasOwnProperty, obj9), ];
+    let tmp26 = null != tmp;
+    if (tmp26) {
+      const obj12 = { style: items4, children: tmp };
       items4 = [, ];
       ({ trailing: arr5[0], trailingText: arr5[1] } = tmp8);
-      obj23.style = items4;
-      obj23.children = tmp;
-      tmp27 = jsx(tmp12, obj23);
+      tmp26 = metroRequire(tmp12, obj12);
     }
-    items3[1] = tmp27;
-    obj19.children = items3;
-    items1[2] = tmp11(tmp12, obj19);
-    tmp29 = null != trailing && null == tmp;
-    if (tmp29) {
-      tmp30 = jsx;
-      obj24 = { style: null, children: null };
-      obj24.style = tmp8.trailing;
-      obj24.children = trailing;
-      tmp29 = jsx(tmp12, obj24);
+    items3[1] = tmp26;
+    items1[2] = metroImportAll(hasOwnProperty, obj8);
+    let tmp28 = null != trailing && null == tmp;
+    if (tmp28) {
+      const obj13 = { style: tmp8.trailing, children: trailing };
+      tmp28 = metroRequire(tmp12, obj13);
     }
-    items1[3] = tmp29;
+    items1[3] = tmp28;
     if (arrow) {
-      tmp31 = jsx;
-      arrow = jsx(tmp4(tmp5[10]).TableRowArrow, {});
+      arrow = metroRequire(tmp4(5924).TableRowArrow, {});
     }
     items1[4] = arrow;
-    obj1.children = items1;
-    return tmp11(tmp12, obj1);
+    return metroImportAll(hasOwnProperty, obj4);
   }
 }
-get_ActivityIndicator = fn(17);
-({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const React7 = { padding: 0 };
-const createStyles = fn(4836);
-let closure_10 = createStyles.createStyles((arg0, arg1, arg2) => {
-  const obj = { padding: nativeDefault.modules.mobile.TABLE_ROW_PADDING, minHeight: nativeDefault.modules.mobile.TABLE_ROW_HEIGHT, flexDirection: "row", alignItems: "center", opacity: null, borderRadius: null };
-  let num = 1;
+({ Pressable: closure_4, View: hasOwnProperty } = react_native);
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
+const React4 = { padding: 0 };
+const authStore = createStyles.createStyles((arg0, arg1, arg2) => {
+  let num;
+  let num2;
+  let num3;
+  let num4;
+  let obj4;
+  let obj5;
+  let str2;
+  let str4;
+  const obj = { padding: nativeDefault.modules.mobile.TABLE_ROW_PADDING, minHeight: nativeDefault.modules.mobile.TABLE_ROW_HEIGHT, flexDirection: "row", alignItems: "center", opacity: num, borderRadius: nativeDefault.radii.md };
+  num = 1;
   if (arg0) {
     num = 0.5;
   }
-  const obj2 = { row: null, iconContainer: null, trailing: null, content: null, labels: null, trailingText: null, dragHandle: null };
-  obj.opacity = num;
-  obj.borderRadius = nativeDefault.radii.md;
-  obj2.row = obj;
-  obj2.iconContainer = { minWidth: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, marginEnd: nativeDefault.modules.mobile.TABLE_ROW_PADDING, alignItems: "center", justifyContent: "center" };
-  obj2.trailing = { marginStart: 18 };
   let str = "row";
+  const obj2 = { row: obj, iconContainer: { minWidth: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, marginEnd: nativeDefault.modules.mobile.TABLE_ROW_PADDING, alignItems: "center", justifyContent: "center" }, trailing: { marginStart: 18 }, content: obj4, labels: obj5, trailingText: { flexShrink: 1, marginStart: num4 }, dragHandle: { marginEnd: 8 } };
+  ({ minWidth: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, marginEnd: nativeDefault.modules.mobile.TABLE_ROW_PADDING, alignItems: "center", justifyContent: "center" });
   if (arg2) {
     str = "column";
   }
-  const obj4 = { flexShrink: 1, flexGrow: 1, flexDirection: str, alignItems: null, justifyContent: "space-between" };
-  let str2 = "center";
+  obj4 = { flexShrink: 1, flexGrow: 1, flexDirection: str, alignItems: str2, justifyContent: "space-between" };
+  str2 = "center";
   if (arg2) {
     str2 = "stretch";
   }
-  obj4.alignItems = str2;
-  obj2.content = obj4;
   let str3 = "100%";
   if (arg1) {
     str3 = "100%";
   }
-  const obj5 = { width: str3, flexGrow: null, flexShrink: null, maxWidth: null };
-  let num2;
+  obj5 = { width: str3, flexGrow: num2, flexShrink: num3, maxWidth: str4 };
+  num2 = undefined;
   if (arg1) {
     if (!arg2) {
       num2 = 1;
     }
   }
-  obj5.flexGrow = num2;
-  let num3 = 1;
+  num3 = 1;
   if (arg1) {
     num3 = 1;
   }
-  obj5.flexShrink = num3;
-  let str4;
+  str4 = undefined;
   if (arg1) {
     if (!arg2) {
       str4 = "70%";
     }
   }
-  obj5.maxWidth = str4;
-  obj2.labels = obj5;
-  let num4 = 18;
+  num4 = 18;
   if (arg2) {
     num4 = 0;
   }
-  obj2.trailingText = { flexShrink: 1, marginStart: num4 };
-  obj2.dragHandle = { marginEnd: 8 };
   return obj2;
 });
-TableRow.Icon = fn(5923).TableRowIcon;
-TableRow.Arrow = fn(5924).TableRowArrow;
-TableRow.TrailingText = fn(5926).TableRowTrailingText;
-const size = fn(2);
+TableRow.Icon = TableRowIcon.TableRowIcon;
+TableRow.Arrow = TableRowArrow.TableRowArrow;
+TableRow.TrailingText = TableRowTrailingText.TableRowTrailingText;
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRow.native.tsx");
 
 export { TableRow };

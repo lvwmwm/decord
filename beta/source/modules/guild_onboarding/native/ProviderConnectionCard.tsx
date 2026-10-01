@@ -5,55 +5,70 @@
 // Exports: default
 
 // Module 6599 (ProviderConnectionCard)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import native from "native" /* 1177 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import shared from "shared" /* 4685 */;
 import LinkIcon from "LinkIcon" /* 4775 */;
 import PlatformsDefault from "Platforms" /* 5595 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let c2;
+
+let _asyncToGenerator = _asyncToGenerator_mod;
+const AnalyticEvents = Constants.AnalyticEvents;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_onboarding/native/ProviderConnectionCard.tsx");
 
 export default function ProviderConnectionCard(connection) {
+  let canConnect;
+  let closure_3;
+  let hasConnection;
+  let loading;
   connection = connection.connection;
-  const guildId = connection.guildId;
+  let guildId = connection.guildId;
   const _location = connection.location;
   let startConnection;
+  const tmp = guildId;
+  const tmp2 = _location;
   const tmp3 = guildId(_location[4])();
-  asyncGeneratorStep = tmp3;
+  _asyncToGenerator = tmp3;
   let stringResult = null;
   if (null != connection.provider_id) {
-    value = tmp(tmp2[5]).get(connection.provider_id);
+    const tmpResult = tmp(tmp2[5]);
+    let value = tmpResult.get(connection.provider_id);
     let name;
     if (value != null) {
       name = value.name;
     }
     stringResult = name;
-    const tmpResult = tmp(tmp2[5]);
   }
   if (stringResult == null) {
     const intl = connection(tmp2[6]).intl;
     stringResult = intl.string(connection(tmp2[6]).t.NzCoRx);
   }
   if (null != connection.description) {
+    let description;
     if (connection.description.length > 0) {
-      let description = connection.description;
+      description = connection.description;
     }
-    const startProviderConnection = connection(tmp2[8]).useStartProviderConnection(connection.provider_id);
+    const tmp8 = connection;
+    let obj2 = connection(tmp2[8]);
+    const startProviderConnection = obj2.useStartProviderConnection(connection.provider_id);
     startConnection = startProviderConnection.startConnection;
     ({ hasConnection, canConnect, loading } = startProviderConnection);
     const items = [startConnection, guildId, connection.provider_id, _location];
     const items1 = [connection.provider_id, tmp3];
-    const callback = startConnection.useCallback(asyncGeneratorStep(async (arg0, value) => {
-      if (v3 === 2) {
-        v3 = 3;
+    const callback = startConnection.useCallback(_asyncToGenerator(async (arg0, value) => {
+      let provider_id;
+      let v3;
+      if (guildId === 2) {
+        guildId = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -64,70 +79,69 @@ export default function ProviderConnectionCard(connection) {
         }
       } else {
         try {
-          v3 = 2;
-          if (0 === dependencyMap) {
+          guildId = 2;
+          if (0 === c2) {
             if (arg0 === 1) {
-              v3 = 3;
+              guildId = 3;
               throw value;
             } else if (arg0 === 2) {
-              v3 = 3;
+              guildId = 3;
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              const obj4 = {};
-              const obj5 = v3(1241);
-              const merged = Object.assign(provider_id(5016).collectGuildAnalyticsMetadata(guildId));
-              obj4.connection_type = "provider";
-              provider_id = connection.provider_id;
-              if (provider_id == null) {
-                provider_id = undefined;
-              }
-              obj4.provider_id = provider_id;
-              obj4.location = _location;
-              obj5.track(constants.GUILD_ONBOARDING_CONNECTION_CLICKED, obj4);
-              dependencyMap = 1;
-              v3 = 1;
-              const obj6 = { value: startConnection("Guild Onboarding"), done: false };
-              return obj6;
+              const obj4 = { connection_type: "provider", provider_id, location: _location };
+              const track = guildId(c2[9]).track;
+              const GUILD_ONBOARDING_CONNECTION_CLICKED = constants.GUILD_ONBOARDING_CONNECTION_CLICKED;
+              const tmp14 = guildId(c2[9]);
+              const obj6 = provider_id(c2[10]);
+              const merged = Object.assign(obj6.collectGuildAnalyticsMetadata(guildId));
+              provider_id = connection.provider_id ?? undefined;
+              track(GUILD_ONBOARDING_CONNECTION_CLICKED, obj4);
+              c2 = 1;
+              guildId = 1;
+              const obj5 = { value: startConnection("Guild Onboarding"), done: false };
+              return obj5;
             }
           } else if (arg0 === 1) {
-            v3 = 3;
+            guildId = 3;
             throw value;
           } else if (arg0 === 2) {
-            v3 = 3;
+            guildId = 3;
             const obj = { value, done: true };
             return obj;
           } else {
-            v3 = 3;
+            guildId = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp9) {
-          v3 = tmp;
-          throw tmp9;
+        } catch (tmp8) {
+          guildId = 3;
+          throw tmp8;
         }
       }
     }), items);
+    let tmp14 = jsx;
     const memo = startConnection.useMemo(() => {
       if (null != connection.provider_id) {
-        value = PlatformsDefault.get(tmp.provider_id);
+        const obj = PlatformsDefault;
+        const value = obj.get(tmp.provider_id);
         let icon1;
+        const makeSource = AvatarUtils.makeSource;
+        AvatarUtils;
         if (value != null) {
           icon1 = value.icon;
         }
-        if (null == icon1) {
-          const source = obj2.makeSource(null);
-          const obj4 = { source, style: { width: 32, height: 32 }, disableColor: true };
-          return jsx(native.Icon, { source, style: { width: 32, height: 32 }, disableColor: true });
-        } else {
+        let tmp12 = null;
+        if (null != icon1) {
           const icon = value.icon;
-          shared.isThemeDark(closure_3) ? icon.darkPNG : icon.lightPNG;
+          const obj2 = shared;
+          tmp12 = obj2.isThemeDark(closure_3) ? icon.darkPNG : icon.lightPNG;
         }
-        obj2 = AvatarUtils;
+        const source = makeSource(tmp12);
+        return jsx(native.Icon, { source, style: { width: 32, height: 32 }, disableColor: true });
       } else {
         return jsx(LinkIcon.LinkIcon, { size: "lg", color: "text-subtle" });
       }
     }, items1);
-    let obj = { displayName: stringResult, description, icon: memo, isLoading: loading, isConnected: hasConnection, canConnect, onConnect: callback };
     return jsx(tmp(tmp2[15]), { displayName: stringResult, description, icon: memo, isLoading: loading, isConnected: hasConnection, canConnect, onConnect: callback });
   }
   description = tmp(tmp2[7])(connection.provider_id);

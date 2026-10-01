@@ -5,38 +5,32 @@
 // Exports: CollectiblesProgressiveImage
 
 // Module 15463 (CollectiblesProgressiveImage)
+import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import size from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: c3, StyleSheet: closure_4 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const size = fn(2);
+let c3;
+let closure_4;
+({ View: c3, StyleSheet: closure_4 } = react_native);
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesProgressiveImage.tsx");
 
 export const CollectiblesProgressiveImage = function CollectiblesProgressiveImage(arg0) {
+  let source;
+  let style;
   ({ source, style } = arg0);
   let sharedValue;
   const merged = Object.assign(arg0, Object.assign({ source: 0, style: 0 }));
-  sharedValue = sharedValue(4566).useSharedValue(0);
-  let obj2 = { style, children: null };
-  const obj3 = {};
+  let obj = sharedValue(4566);
+  sharedValue = obj.useSharedValue(0);
+  const Image = ReanimatedRexportDefault.Image;
   const merged1 = Object.assign(merged);
-  obj3.source = source;
-  const obj4 = {};
+  const obj4 = { opacity: sharedValue };
   const merged2 = Object.assign(absoluteFillObject.absoluteFillObject);
-  obj4.opacity = sharedValue;
-  obj3.style = obj4;
-  obj3.onLoad = function onLoad() {
-    const obj2 = { duration: 500, easing: null };
-    const Easing = ReanimatedRexport.Easing;
-    obj2.easing = Easing.inOut(ReanimatedRexport.Easing.ease);
-    const result = sharedValue.set(timing.withTiming(1, obj2));
-  };
-  obj2.children = jsx(ReanimatedRexportDefault.Image, {});
   return <closure_3 style={style}>{null}</closure_3>;
 };

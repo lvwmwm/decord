@@ -5,19 +5,21 @@
 // Exports: useSafetyAlertsSettingOrDefault
 
 // Module 10433 (useSafetyAlertsSettingOrDefault)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import useUserIsTeen from "useUserIsTeen" /* 8104 */;
+import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 10434 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx");
 
 export const useSafetyAlertsSettingOrDefault = function useSafetyAlertsSettingOrDefault() {
+  let settings;
   const currentUser = UserStore.getCurrentUser();
   const items = [UserSettingsProtoStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => {
+  const obj2 = get_initialized;
+  const stateFromStores = obj2.useStateFromStores(items, () => {
     const privacy = settings.settings.privacy;
     let flag;
     if (privacy != null) {
@@ -30,8 +32,10 @@ export const useSafetyAlertsSettingOrDefault = function useSafetyAlertsSettingOr
     }
     return flag;
   });
-  let userIsTeen = useUserIsTeen.useUserIsTeen();
+  const obj3 = useUserIsTeen;
+  let userIsTeen = obj3.useUserIsTeen();
   let tmp3 = !userIsTeen;
+  const obj4 = InappropriateConversationsDefaultOn;
   if (userIsTeen) {
     tmp3 = !obj4.useIsEligibleForInappropriateConversationDefaultOn({ location: "useSafetyAlertsSettingOrDefault" });
   }
@@ -42,6 +46,7 @@ export const useSafetyAlertsSettingOrDefault = function useSafetyAlertsSettingOr
       if (currentUser != null) {
         isStaffResult = currentUser.isStaff();
       }
+      let flag = true;
       userIsTeen = true === isStaffResult;
     }
     if (userIsTeen) {

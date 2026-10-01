@@ -5,10 +5,14 @@
 // Exports: default
 
 // Module 12655 (UserProfileRecentActivityCard)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import AvatarUtils from "AvatarUtils" /* 1397 */;
 import StringUtils from "StringUtils" /* 2011 */;
+import native from "native" /* 4540 */;
+import shared from "shared" /* 4685 */;
 import FastImageDefault from "FastImage" /* 5899 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6583 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import utils from "utils" /* 7592 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 7789 */;
@@ -18,270 +22,267 @@ import BadgesAll from "Badges" /* 12582 */;
 import TrendingType from "TrendingType" /* 12587 */;
 import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 12594 */;
 import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 12595 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const useAnalyticsLocationsDefault = useAnalyticsLocations;
+let poster;
 
+let metroImportDefault;
+let metroRequire;
+let obj10;
+let obj8;
+let obj9;
+let rect;
+let size;
+let tmp4;
 const useOpenGameProfileModalDefault = tmp4(8128);
-require = fn;
 function GamingEntryBadges(entry) {
+  let mapped;
+  let obj4;
   entry = entry.entry;
   const tmp = closure_9();
   const badgeCell = tmp;
   const found = items.filter((predicate) => predicate.predicate(entry));
-  let obj = { location: "user-profile", style: tmp.badges, children: null };
+  let obj = { location: "user-profile", style: tmp.badges, children: mapped };
+  const BadgesContainer = BadgesAll.BadgesContainer;
+  let obj2 = entry(7789);
   if (obj2.isTopGameEntry(entry)) {
-    const obj3 = { style: tmp.badgeCell, children: null };
-    const obj4 = { entry };
-    obj3.children = tmp2(BadgesAll.TopGameBadge, obj4);
-    let mapped = tmp2(View, obj3);
+    const obj3 = { style: tmp.badgeCell, children: closure_6(BadgesAll.TopGameBadge, obj4) };
+    obj4 = { entry };
+    mapped = tmp2(View, obj3);
   } else {
     mapped = found.map((Badge, index) => {
-      const obj = { style: badgeCell.badgeCell, children: timestampProducer(Badge.Badge, { entry }) };
-      return timestampProducer(View, obj, index);
+      let obj2;
+      const obj = { style: badgeCell.badgeCell, children: metroRequire(Badge.Badge, obj2) };
+      obj2 = { entry };
+      return metroRequire(View, obj, index);
     });
   }
-  obj.children = mapped;
-  return closure_6(BadgesAll.BadgesContainer, obj);
+  return closure_6(BadgesContainer, obj);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let items = [
-  {
-    Badge: BadgesAll.GameTimestampBadge,
-    predicate() {
-      return true;
-    }
-  },
-,
-,
-,
-,
-
-];
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = {
   Badge: BadgesAll.GameTimestampBadge,
   predicate() {
     return true;
   }
 };
-items[1] = { Badge: BadgesAll.NewGameBadge, predicate: fn(7592).isEntryNew };
-let obj2 = { Badge: BadgesAll.NewGameBadge, predicate: fn(7592).isEntryNew };
-items[2] = {
-  Badge: BadgesAll.StreakBadge,
-  predicate(entry) {
-    let num = utils.getStreakCount(entry);
-    if (num == null) {
-      num = 0;
-    }
-    return num >= 2;
-  }
-};
+let items = [obj, , , , , ];
+let obj2 = { Badge: BadgesAll.NewGameBadge, predicate: utils.isEntryNew };
+items[1] = obj2;
 let obj3 = {
   Badge: BadgesAll.StreakBadge,
   predicate(entry) {
-    let num = utils.getStreakCount(entry);
+    const obj = utils;
+    let num = obj.getStreakCount(entry);
     if (num == null) {
       num = 0;
     }
     return num >= 2;
   }
 };
-items[3] = {
-  Badge: BadgesAll.TrendingBadge,
-  predicate(entry) {
-    const trendingType = utils.getTrendingType(entry);
-    return null != trendingType && trendingType !== TrendingType.TrendingType.TRENDING_TYPE_UNSPECIFIED;
-  }
-};
+items[2] = obj3;
 let obj4 = {
   Badge: BadgesAll.TrendingBadge,
   predicate(entry) {
-    const trendingType = utils.getTrendingType(entry);
-    return null != trendingType && trendingType !== TrendingType.TrendingType.TRENDING_TYPE_UNSPECIFIED;
+    const obj = utils;
+    const trendingType = obj.getTrendingType(entry);
+    const tmp4 = null != trendingType && trendingType !== TrendingType.TrendingType.TRENDING_TYPE_UNSPECIFIED;
+    return tmp4;
   }
 };
-items[4] = {
-  Badge: BadgesAll.ResurrectedBadge,
-  predicate(entry) {
-    return null != utils.getResurrectedEntryLastPlayTime(entry);
-  }
-};
+items[3] = obj4;
 let obj5 = {
   Badge: BadgesAll.ResurrectedBadge,
   predicate(entry) {
-    return null != utils.getResurrectedEntryLastPlayTime(entry);
+    const obj = utils;
+    return null != obj.getResurrectedEntryLastPlayTime(entry);
   }
 };
-items[5] = {
-  Badge: BadgesAll.MarathonBadge,
-  predicate(entry) {
-    let tmp3 = true === utils.isEntryMarathon(entry);
-    if (tmp3) {
-      tmp3 = null != utils.getMarathonDescription(entry).text;
-      const tmpResult = utils;
-    }
-    return tmp3;
-  }
-};
-const createStyles = fn(4836);
-let obj7 = { body: null, content: null, imageContainer: null, imageAspectRatio: null, posterImageAspectRatio: null, largeImage: null, smallImageBackground: null, smallImage: null, badges: null, badgeCell: null };
+items[4] = obj5;
 let obj6 = {
   Badge: BadgesAll.MarathonBadge,
   predicate(entry) {
-    let tmp3 = true === utils.isEntryMarathon(entry);
+    const obj = utils;
+    let tmp3 = true === obj.isEntryMarathon(entry);
     if (tmp3) {
-      tmp3 = null != utils.getMarathonDescription(entry).text;
       const tmpResult = utils;
+      tmp3 = null != tmpResult.getMarathonDescription(entry).text;
     }
     return tmp3;
   }
 };
-obj7.body = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 };
-obj7.content = { flex: 1 };
-obj7.imageContainer = { position: "relative" };
-obj7.imageAspectRatio = { width: 60, maxHeight: 60, aspectRatio: "1 / 1" };
-obj7.posterImageAspectRatio = { width: 60, maxHeight: 100, aspectRatio: "2 / 3" };
-let size = { borderRadius: nativeDefault.radii.xs, width: "100%", height: "100%" };
-obj7.largeImage = size;
-const rect = { borderRadius: 16, position: "absolute", right: -4, bottom: -4, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj7.smallImageBackground = rect;
-obj7.smallImage = { width: 24, height: 24, borderRadius: 12 };
-let obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 };
-obj7.badges = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", rowGap: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_8 };
-let obj10 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", rowGap: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_8 };
-obj7.badgeCell = { width: "50%", paddingRight: nativeDefault.space.PX_8 };
-let closure_9 = createStyles.createStyles(obj7);
-let closure_11 = noop.memo((poster) => {
+items[5] = obj6;
+let createStyles = createStyles_mod;
+let obj7 = { body: obj8, content: { flex: 1 }, imageContainer: { position: "relative" }, imageAspectRatio: { width: 60, maxHeight: 60, aspectRatio: "1 / 1" }, posterImageAspectRatio: { width: 60, maxHeight: 100, aspectRatio: "2 / 3" }, largeImage: size, smallImageBackground: rect, smallImage: { width: 24, height: 24, borderRadius: 12 }, badges: obj9, badgeCell: obj10 };
+obj8 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+size = { borderRadius: nativeDefault.radii.xs, width: "100%", height: "100%" };
+rect = { borderRadius: 16, position: "absolute", right: -4, bottom: -4, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj9 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", rowGap: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_8 };
+obj10 = { width: "50%", paddingRight: nativeDefault.space.PX_8 };
+let closure_9 = createStyles(obj7);
+let closure_11 = react.memo((poster) => {
+  let UnknownGameIcon;
+  let colors;
+  let isThemeDarkResult;
+  let items2;
+  let largeImage;
+  let obj3;
+  let obj7;
+  let smallImage;
+  let tmp16Result;
+  let tmp2Result3;
+  let tmp2Result4;
+  let tmp6Result;
   ({ largeImage, smallImage } = poster);
+  poster = poster.poster;
   const tmp = closure_9();
   let src;
+  const obj = native;
+  const theme = obj.useThemeContext().theme;
   if (largeImage != null) {
     src = largeImage.src;
   }
   if (null == src) {
-    const obj2 = { style: null, children: null };
+    const obj2 = { style: items, children: metroRequire(UnknownGameIcon, obj3) };
     items = [, ];
     ({ imageContainer: arr2[0], imageAspectRatio: arr2[1] } = tmp);
-    obj2.style = items;
-    let obj3 = { size: "custom", style: tmp.largeImage, color: null };
-    const tmp12 = View;
-    const tmp2Result = tmp2(4685);
-    const colors = nativeDefault.colors;
-    obj3.color = tmp2(4685).isThemeDark(obj.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
-    obj3 = tmp11(tmp2(8021).UnknownGameIcon, obj3);
-    obj2.children = obj3;
-    timestampProducer(tmp12, obj2);
-    const isThemeDarkResult = tmp2(4685).isThemeDark(obj.useThemeContext().theme);
+    obj3 = { size: "custom", style: tmp.largeImage, color: isThemeDarkResult ? colors.WHITE : colors.BLACK };
+    UnknownGameIcon = tmp2(8021).UnknownGameIcon;
+    const tmp2Result = shared;
+    isThemeDarkResult = tmp2Result.isThemeDark(theme);
+    colors = nativeDefault.colors;
+    tmp16Result = tmp12(View, obj2);
   } else {
     const items1 = [tmp.imageContainer, ];
-    const obj4 = { style: null, children: null };
-    items1[1] = poster.poster ? tmp.posterImageAspectRatio : tmp.imageAspectRatio;
-    obj4.style = items1;
-    const obj5 = { source: null, alt: null, style: null };
-    const tmp16 = React5;
-    const tmp6 = importDefault;
+    const obj4 = { style: items1, children: items2 };
+    items1[1] = poster ? tmp.posterImageAspectRatio : tmp.imageAspectRatio;
+    const obj5 = { source: tmp2Result3.makeSource(largeImage.src), alt: largeImage.alt, style: tmp.largeImage };
     const tmp7 = FastImageDefault;
-    obj5.source = tmp2(1397).makeSource(largeImage.src);
-    obj5.alt = largeImage.alt;
-    obj5.style = tmp.largeImage;
-    const items2 = [timestampProducer(tmp7, obj5), ];
+    tmp2Result3 = AvatarUtils;
+    items2 = [metroRequire(tmp7, obj5), ];
     let src1;
+    const tmp16 = metroImportDefault;
+    const tmp6 = importDefault;
     if (smallImage != null) {
       src1 = smallImage.src;
     }
     let tmp5Result = null != src1;
     if (tmp5Result) {
-      const obj6 = { style: tmp.smallImageBackground, children: null };
-      const obj7 = { source: null, alt: null, style: null };
-      const tmp6Result = tmp6(5899);
-      obj7.source = tmp2(1397).makeSource(smallImage.src);
-      obj7.alt = smallImage.alt;
-      obj7.style = tmp.smallImage;
-      obj6.children = tmp5(tmp6Result, obj7);
+      const obj6 = { style: tmp.smallImageBackground, children: metroRequire(tmp6Result, obj7) };
+      obj7 = { source: tmp2Result4.makeSource(smallImage.src), alt: smallImage.alt, style: tmp.smallImage };
+      tmp6Result = tmp6(5899);
+      tmp2Result4 = AvatarUtils;
       tmp5Result = tmp5(tmp17, obj6);
-      const tmp2Result4 = tmp2(1397);
     }
     items2[1] = tmp5Result;
-    obj4.children = items2;
-    return tmp16(View, obj4);
+    tmp16Result = tmp16(tmp17, obj4);
   }
+  return tmp16Result;
 });
-let closure_12 = noop.memo((arg0) => {
+let closure_12 = react.memo((arg0) => {
+  let entry;
+  let items1;
+  let largeImage;
+  let obj2;
+  let obj4;
+  let smallImage;
+  let style;
+  let subtitle;
+  let title;
   ({ entry, title, subtitle } = arg0);
   ({ largeImage, smallImage, style } = arg0);
   const tmp = closure_9();
-  const obj = { style, children: null };
-  const obj2 = { style: tmp.body, children: null };
-  const obj3 = { largeImage, smallImage, poster: ContentInventoryTypes.isWatchedMediaEntry(entry) };
-  items = [timestampProducer(closure_11, obj3), ];
-  const obj5 = { style: tmp.content, children: null };
-  const isNullOrEmptyResult = StringUtils.isNullOrEmpty(title);
-  let tmp2Result = !isNullOrEmptyResult;
-  if (!isNullOrEmptyResult) {
+  const obj = { style, children: metroImportDefault(View, obj2) };
+  obj2 = { style: tmp.body, children: items };
+  const obj3 = { largeImage, smallImage, poster: obj4.isWatchedMediaEntry(entry) };
+  obj4 = ContentInventoryTypes;
+  items = [metroRequire(closure_11, obj3), ];
+  const obj5 = { style: tmp.content, children: items1 };
+  const obj6 = StringUtils;
+  let tmp2Result = !obj6.isNullOrEmpty(title);
+  obj6.isNullOrEmpty(title);
+  if (tmp2Result) {
     const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: title };
     tmp2Result = tmp2(tmp5(4832).Text, obj7);
   }
-  const items1 = [tmp2Result, , ];
-  const isNullOrEmptyResult1 = StringUtils.isNullOrEmpty(subtitle);
-  let tmp2Result2 = !isNullOrEmptyResult1;
-  if (!isNullOrEmptyResult1) {
+  items1 = [tmp2Result, , ];
+  const tmp5Result = StringUtils;
+  let tmp2Result2 = !tmp5Result.isNullOrEmpty(subtitle);
+  tmp5Result.isNullOrEmpty(subtitle);
+  if (tmp2Result2) {
     const obj8 = { variant: "text-xs/medium", lineClamp: 1, children: subtitle };
     tmp2Result2 = tmp2(tmp5(4832).Text, obj8);
   }
   items1[1] = tmp2Result2;
-  const tmp5Result = StringUtils;
-  let isGamingLikeEntryResult = ContentInventoryTypes.isGamingLikeEntry(entry);
+  const tmp5Result2 = ContentInventoryTypes;
+  let isGamingLikeEntryResult = tmp5Result2.isGamingLikeEntry(entry);
   if (isGamingLikeEntryResult) {
     const obj9 = { entry };
     isGamingLikeEntryResult = tmp2(GamingEntryBadges, obj9);
   }
   items1[2] = isGamingLikeEntryResult;
-  obj5.children = items1;
-  items[1] = React5(View, obj5);
-  obj2.children = items;
-  obj.children = React5(View, obj2);
-  return timestampProducer(View, obj);
+  items[1] = metroImportDefault(View, obj5);
+  return metroRequire(View, obj);
 });
-size = fn(2);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileRecentActivityCard.tsx");
 
 export default function UserProfileRecentActivityCard(style) {
+  let entry;
+  let formatToPlainString;
+  let largeImage;
+  let name;
+  let obj11;
+  let obj8;
+  let smallImage;
+  let subtitle;
+  let title;
+  let tmp19Result;
+  let user;
+  let v9sZWVp;
   ({ user, entry } = style);
-  closure_1 = undefined;
-  const imageForContentEntry = ContentInventoryActivityImageUtils.useImageForContentEntry({ entry, showCoverImage: false, trackingSource: "user_profile_recent_activity_native" });
+  let closure_1;
+  style = style.style;
+  const obj = ContentInventoryActivityImageUtils;
+  const imageForContentEntry = obj.useImageForContentEntry({ entry, showCoverImage: false, trackingSource: "user_profile_recent_activity_native" });
   ({ largeImage, smallImage } = imageForContentEntry);
-  const analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.USER_PROFILE_RECENT_ACTIVITY_CARD).analyticsLocations;
+  const tmp5 = useAnalyticsLocationsDefault;
+  const analyticsLocations = tmp5(AnalyticsLocationDefault.USER_PROFILE_RECENT_ACTIVITY_CARD).analyticsLocations;
   const tmp6 = useTrackUserProfileActivityActionDefault({ display: "recent", user, entry, analyticsLocations });
-  closure_0 = tmp6;
-  useTrackUserProfileActivityViewDefault({ userId: user.id, onAction: tmp6 });
+  let closure_0 = tmp6;
+  const obj2 = { userId: user.id, onAction: tmp6 };
+  useTrackUserProfileActivityViewDefault(obj2);
   let application_id;
   if ("application_id" in entry.extra) {
     application_id = entry.extra.application_id;
   }
-  const obj3 = { location: "UserProfileRecentActivityCard", applicationId: application_id, source: null, trackEntryPointImpression: true, sourceUserId: null };
-  const obj2 = { userId: user.id, onAction: tmp6 };
-  obj3.source = GameProfileAnalyticUtils.GameProfileSources.UserProfile;
-  obj3.sourceUserId = user.id;
-  const tmp4ResultResult = useOpenGameProfileModalDefault(obj3);
+  const obj3 = { location: "UserProfileRecentActivityCard", applicationId: application_id, source: GameProfileAnalyticUtils.GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
+  const tmp4Result = useOpenGameProfileModalDefault;
+  const tmp4ResultResult = tmp4Result(obj3);
   closure_1 = tmp4ResultResult;
   items = [tmp6, tmp4ResultResult];
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     closure_0({ action: "PRESS_TEXT" });
     if (closure_1 != null) {
       closure_1();
     }
   }, items);
-  const tmp4Result = useOpenGameProfileModalDefault;
+  const tmpResult = ContentInventoryTypes;
   if (tmpResult.isGamingLikeEntry(entry)) {
+    obj8 = { title: entry.extra.game_name };
     const obj4 = { title: entry.extra.game_name };
-    let obj8 = obj4;
   } else {
+    const tmpResult4 = ContentInventoryTypes;
     if (tmpResult4.isWatchedMediaEntry(entry)) {
+      obj8 = { title: entry.extra.media_title, subtitle: entry.extra.media_subtitle };
       const obj5 = { title: entry.extra.media_title, subtitle: entry.extra.media_subtitle };
-      obj8 = obj5;
     } else {
+      const tmpResult5 = ContentInventoryTypes;
       if (tmpResult5.isListenedSessionEntry(entry)) {
         const first = entry.extra.entries[0];
         let media;
@@ -292,28 +293,25 @@ export default function UserProfileRecentActivityCard(style) {
         if (media != null) {
           title1 = media.title;
         }
-        const obj6 = { title: title1, subtitle: null };
-        let name;
+        const obj6 = { title: title1, subtitle: name };
+        name = undefined;
         if (media != null) {
           const first1 = media.artists[0];
           if (first1 != null) {
             name = first1.name;
           }
         }
-        obj6.subtitle = name;
         obj8 = obj6;
       } else {
+        const tmpResult6 = ContentInventoryTypes;
         if (tmpResult6.isLaunchedActivityEntry(entry)) {
+          obj8 = { title: entry.extra.activity_name };
           const obj7 = { title: entry.extra.activity_name };
-          obj8 = obj7;
         } else {
-          obj8 = { title: "r" };
+          obj8 = { title: "Path" };
         }
-        tmpResult6 = tmp(7789);
       }
-      tmpResult5 = tmp(7789);
     }
-    tmpResult4 = tmp(7789);
   }
   ({ title, subtitle } = obj8);
   let str;
@@ -324,20 +322,21 @@ export default function UserProfileRecentActivityCard(style) {
   if (subtitle != null) {
     trimmed = subtitle.trim();
   }
-  const tmp20 = timestampProducer(closure_12, { entry, largeImage, smallImage, title: str, subtitle: trimmed, style: style.style });
-  const obj9 = { value: analyticsLocations, children: null };
-  let tmp19Result = tmp20;
+  const tmp20 = metroRequire(closure_12, { entry, largeImage, smallImage, title: str, subtitle: trimmed, style });
+  const obj9 = { value: analyticsLocations, children: tmp19Result };
+  tmp19Result = tmp20;
+  const AnalyticsLocationProvider = tmp(6583).AnalyticsLocationProvider;
   if (null != tmp4ResultResult) {
-    const obj10 = { onPress: callback, accessibilityRole: "button", accessibilityLabel: null, children: null };
+    const obj10 = { onPress: callback, accessibilityRole: "button", accessibilityLabel: formatToPlainString(v9sZWVp, obj11), children: tmp20 };
+    const PressableOpacity = tmp(5435).PressableOpacity;
     const intl = tmp(1115).intl;
+    formatToPlainString = intl.formatToPlainString;
+    v9sZWVp = tmp(1115).t["9sZWVp"];
     if (str == null) {
       str = "";
     }
-    const obj11 = { gameName: str };
-    obj10.accessibilityLabel = intl.formatToPlainString(tmp(1115).t["9sZWVp"], obj11);
-    obj10.children = tmp20;
-    tmp19Result = tmp19(tmp(5435).PressableOpacity, obj10);
+    obj11 = { gameName: str };
+    tmp19Result = tmp19(PressableOpacity, obj10);
   }
-  obj9.children = tmp19Result;
-  return timestampProducer(useAnalyticsLocations.AnalyticsLocationProvider, obj9);
+  return metroRequire(AnalyticsLocationProvider, obj9);
 };

@@ -7,32 +7,36 @@
 // Module 4697 (useBaseAppContainerDimensions)
 import useWindowDimensions from "useWindowDimensions" /* 1479 */;
 import useSafeAreaInsets from "useSafeAreaInsets" /* 1613 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size_mod from "module_2" /* 2 */;
 
 const useWindowDimensionsDefault = useWindowDimensions;
 const useSafeAreaInsetsDefault = useSafeAreaInsets;
 
-require = fn;
-let size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/screen/native/useBaseAppContainerDimensions.tsx");
 
 export default function useBaseAppContainerDimensions() {
-  let size = useWindowDimensionsDefault();
+  size = useWindowDimensionsDefault();
   const width = size.width;
   const height = size.height;
   const rect = useSafeAreaInsetsDefault();
   const left = rect.left;
   const right = rect.right;
   const items = [width, height, left, right];
-  return noop.useMemo(() => {
-    const size = { width: width - left - right, height };
+  return react.useMemo(() => {
+    size = { width: width - left - right, height };
     return size;
   }, items);
 };
 export const getBaseAppContainerDimensions = function getBaseAppContainerDimensions() {
-  const windowDimensions = useWindowDimensions.getWindowDimensions();
+  let height;
+  let width;
+  const obj = useWindowDimensions;
+  const windowDimensions = obj.getWindowDimensions();
   ({ width, height } = windowDimensions);
-  const rect = useSafeAreaInsets.getSafeAreaInsets();
-  const size = { width: width - rect.left - rect.right, height };
+  const obj2 = useSafeAreaInsets;
+  const rect = obj2.getSafeAreaInsets();
+  size = { width: width - rect.left - rect.right, height };
   return size;
 };

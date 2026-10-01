@@ -12,19 +12,16 @@ import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const NLWeekdayParser = require;
+let tmp2;
+const _mod9922 = tmp2(9922);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -35,19 +32,16 @@ function _isNativeReflectConstruct() {
 const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:op\\s*?)?(?:(deze|vorige|volgende)\\s*(?:week\\s*)?)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod9989.WEEKDAY_DICTIONARY) + ")(?=\\W|$)", "i");
 class NLWeekdayParser {
   constructor() {
-    self = this;
-    tmp = c2(this, NLWeekdayParser);
-    tmp2 = closure_4;
-    obj = closure_4(NLWeekdayParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, NLWeekdayParser);
+    const obj = _getPrototypeOf(NLWeekdayParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
@@ -65,8 +59,10 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const formatted = arg1[2].toLowerCase();
+      const str = arg1[2];
+      const formatted = str.toLowerCase();
       let str2 = arg1[1];
+      const tmp4 = _mod9989.WEEKDAY_DICTIONARY[formatted];
       if (!str2) {
         str2 = arg1[3];
       }
@@ -84,7 +80,7 @@ const items = [
           }
         }
       }
-      return NLWeekdayParser(9922).createParsingComponentsAtWeekday(reference.reference, NLWeekdayParser(9989).WEEKDAY_DICTIONARY[formatted], str3);
+      return _mod9922.createParsingComponentsAtWeekday(reference.reference, tmp4, str3);
     }
   }
 ];

@@ -7,20 +7,23 @@
 // Module 6644 (useIsNewMember)
 import DurationsDefault from "Durations" /* 1091 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4455 */;
 import ImpersonateStore from "ImpersonateStore" /* 2101 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const GuildMemberFlags = fn(4455).GuildMemberFlags;
-const size = fn(2);
+const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/useIsNewMember.tsx");
 
 export default function useIsNewMember(arg0) {
+  let closure_0;
   _require = arg0;
+  const obj = require("get initialized");
   const items = [GuildMemberStore, ImpersonateStore];
-  return require("initialize").useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
     let flag = true;
     if (!ImpersonateStore.isFullServerPreview(closure_0)) {
       const selfMember = obj.getSelfMember(tmp);
@@ -30,18 +33,20 @@ export default function useIsNewMember(arg0) {
         let tmp4 = null != selfMemberJoinedAt;
         if (tmp4) {
           let num = selfMember.flags;
+          const hasFlag = FlagUtils.hasFlag;
+          FlagUtils;
           if (num == null) {
             num = 0;
           }
-          const hasFlagResult = FlagUtils.hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
-          let tmp9 = !hasFlagResult;
-          if (!hasFlagResult) {
+          let tmp10 = !hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+          hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+          if (tmp10) {
             const _Date = Date;
             const timestamp = Date.now();
             const diff = timestamp - selfMemberJoinedAt.getTime();
-            tmp9 = diff < DurationsDefault.Millis.WEEK;
+            tmp10 = diff < DurationsDefault.Millis.WEEK;
           }
-          tmp4 = tmp9;
+          tmp4 = tmp10;
         }
         flag = tmp4;
       }
@@ -59,18 +64,20 @@ export const getIsNewMember = function getIsNewMember(id) {
       let tmp3 = null != selfMemberJoinedAt;
       if (tmp3) {
         let num = selfMember.flags;
+        const hasFlag = FlagUtils.hasFlag;
+        FlagUtils;
         if (num == null) {
           num = 0;
         }
-        const hasFlagResult = FlagUtils.hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
-        let tmp8 = !hasFlagResult;
-        if (!hasFlagResult) {
+        let tmp9 = !hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+        hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+        if (tmp9) {
           const _Date = Date;
           const timestamp = Date.now();
           const diff = timestamp - selfMemberJoinedAt.getTime();
-          tmp8 = diff < DurationsDefault.Millis.WEEK;
+          tmp9 = diff < DurationsDefault.Millis.WEEK;
         }
-        tmp3 = tmp8;
+        tmp3 = tmp9;
       }
       flag = tmp3;
     }

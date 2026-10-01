@@ -6,45 +6,58 @@
 
 // Module 12002 (useFeaturedExpiringPowerup)
 import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GameServerStore from "GameServerStore" /* 4744 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4723 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useFeaturedExpiringPowerup.tsx");
 
 export default function useFeaturedExpiringPowerup(arg0) {
+  let closure_0;
+  let expiringPowerupCoachmarkEnabled;
+  let stateFromStores;
   _require = arg0;
+  let obj = require("get initialized");
   let items = [GuildPowerupsStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
-  let obj = require("initialize");
+  stateFromStores = obj.useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
   const items1 = [expiringPowerupCoachmarkEnabled];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => GameServerStore.getStateForGuild(closure_0));
-  const obj2 = require("initialize");
-  expiringPowerupCoachmarkEnabled = require("ExpiringPowerupCoachmarkExperiment").useExpiringPowerupCoachmarkEnabled("useFeaturedExpiringPowerup");
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => GameServerStore.getStateForGuild(closure_0));
+  const obj3 = require("ExpiringPowerupCoachmarkExperiment");
+  expiringPowerupCoachmarkEnabled = obj3.useExpiringPowerupCoachmarkEnabled("useFeaturedExpiringPowerup");
   const items2 = [stateFromStores, stateFromStores1, expiringPowerupCoachmarkEnabled];
-  return stateFromStores1.useMemo(() => {
-    if (expiringPowerupCoachmarkEnabled) {
+  return stateFromStores1.useMemo(function() {
+    let date;
+    let getDaysRemaining;
+    let max;
+    let num3;
+    const tmp2 = expiringPowerupCoachmarkEnabled;
+    if (tmp2) {
       let unlockedPowerups;
+      const _Object = Object;
       if (stateFromStores != null) {
-        unlockedPowerups = tmp2.unlockedPowerups;
+        unlockedPowerups = tmp4.unlockedPowerups;
       }
       if (unlockedPowerups == null) {
         unlockedPowerups = {};
       }
       const items = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(Object.values(unlockedPowerups), 0);
+      let num = 0;
       let entitlements;
+      const _Object2 = Object;
+      const values2 = Object.values;
+      const arraySpreadResult = HermesBuiltin.arraySpread(items, values(unlockedPowerups), 0);
       if (stateFromStores1 != null) {
         entitlements = stateFromStores1.entitlements;
       }
       if (entitlements == null) {
         entitlements = {};
       }
-      HermesBuiltin.arraySpread(Object.values(entitlements), arraySpreadResult);
+      HermesBuiltin.arraySpread(items, values2(entitlements), arraySpreadResult);
       const found = items.filter((ends_at) => {
         let tmp = null != ends_at.ends_at;
         if (tmp) {
@@ -69,9 +82,9 @@ export default function useFeaturedExpiringPowerup(arg0) {
           return tmp;
         });
         let title;
-        if (tmp2 != null) {
-          if (tmp2.allPowerups[reduced.sku_id] != null) {
-            title = tmp9.title;
+        if (stateFromStores != null) {
+          if (stateFromStores.allPowerups[reduced.sku_id] != null) {
+            title = tmp11.title;
           }
         }
         if (title == null) {
@@ -88,22 +101,23 @@ export default function useFeaturedExpiringPowerup(arg0) {
             }
           }
         }
-        const obj = { name: title, daysUntilExpiry: null, numExpiringBoosts: null, isGameServer: null, skuId: null };
         const _Math = Math;
+        const obj = { name: title, daysUntilExpiry: max(0, getDaysRemaining(date)), numExpiringBoosts: num3, isGameServer: null != game_server, skuId: reduced.sku_id };
+        max = Math.max;
         const _Date = Date;
-        const date = new Date(reduced.ends_at);
-        obj.daysUntilExpiry = Math.max(0, CollectiblesUtils.getDaysRemaining(date));
+        const self = this;
+        const self2 = this;
+        getDaysRemaining = CollectiblesUtils.getDaysRemaining;
+        CollectiblesUtils;
         let metadata = reduced.metadata;
-        let num3;
+        num3 = undefined;
+        date = new Date(reduced.ends_at);
         if (metadata != null) {
           num3 = metadata.num_expiring_boosts;
         }
         if (num3 == null) {
           num3 = 0;
         }
-        obj.numExpiringBoosts = num3;
-        obj.isGameServer = null != game_server;
-        obj.skuId = reduced.sku_id;
         return obj;
       }
     }

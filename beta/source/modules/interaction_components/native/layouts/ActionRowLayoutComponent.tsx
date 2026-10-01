@@ -5,11 +5,13 @@
 // Exports: default
 
 // Module 17160 (ActionRowLayoutComponent)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/interaction_components/native/layouts/ActionRowLayoutComponent.tsx");
 
 export default function ActionRowLayoutComponent(components) {
@@ -18,7 +20,6 @@ export default function ActionRowLayoutComponent(components) {
   if (null != components) {
     tmp2 = null;
     if (0 !== components.length) {
-      const obj = { children: tmp(components) };
       tmp2 = <View>{tmp(components)}</View>;
     }
   }

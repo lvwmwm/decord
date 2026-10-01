@@ -5,20 +5,21 @@
 // Exports: default
 
 // Module 14737 (useIsQuestDockContentVisible)
-import initialize from "initialize" /* 504 */;
-import QuestDockVisibilityContextDefault from "QuestDockVisibilityContext" /* 14711 */;
-import noop from "module_19" /* 19 */;
+import get_initialized from "get initialized" /* 504 */;
+import QuestConstants from "QuestConstants" /* 5756 */;
+import reactDefault from "react" /* 14711 */;
+import react from "react" /* 19 */;
 import QuestDockStore from "QuestDockStore" /* 14622 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const QuestDockMode = fn(5756).QuestDockMode;
-const size = fn(2);
+const QuestDockMode = QuestConstants.QuestDockMode;
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/useIsQuestDockContentVisible.tsx");
 
 export default function useIsQuestDockContentVisible() {
-  let isVisibleToUser = noop.useContext(QuestDockVisibilityContextDefault).isVisibleToUser;
+  let isVisibleToUser = react.useContext(reactDefault).isVisibleToUser;
   const items = [QuestDockStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => QuestDockStore.prevRestingQuestDockMode);
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => QuestDockStore.prevRestingQuestDockMode);
   if (isVisibleToUser) {
     isVisibleToUser = stateFromStores !== QuestDockMode.CLOSED;
   }

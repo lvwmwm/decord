@@ -21,7 +21,8 @@ export default function useSystemKeyboardHeight() {
   if (flag === undefined) {
     flag = false;
   }
-  closure_1 = AppEntryKeyContext.useAppEntryKey();
+  const obj = AppEntryKeyContext;
+  let closure_1 = obj.useAppEntryKey();
   return KeyboardUIStoreDefault((arg0) => flag ? arg0.byAppEntry[closure_1].keyboardHeightExcludingSafeAreaInsets : arg0.byAppEntry[closure_1].keyboardHeight);
 };
 export const getSystemKeyboardHeight = function getSystemKeyboardHeight(arg0) {
@@ -37,6 +38,7 @@ export const getSystemKeyboardHeight = function getSystemKeyboardHeight(arg0) {
   if (DEFAULT_APP_ENTRY_KEY === undefined) {
     DEFAULT_APP_ENTRY_KEY = AppEntryKeyContext.DEFAULT_APP_ENTRY_KEY;
   }
-  const tmp4 = KeyboardUIStoreDefault.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY];
+  const obj = KeyboardUIStoreDefault;
+  const tmp4 = obj.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY];
   return flag ? tmp4.keyboardHeightExcludingSafeAreaInsets : tmp4.keyboardHeight;
 };

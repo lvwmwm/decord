@@ -5,36 +5,48 @@
 // Exports: PlayStationLinkDiscordConsent
 
 // Module 8567 (PlayStationLinkDiscordConsent)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 8545 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 8562 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_3 = fn(8562).PlayStationLinkModalScenes;
-const PlatformTypes = fn(1074).PlatformTypes;
-const PLAYSTATION_CLIENT_SCOPES = fn(8545).PLAYSTATION_CLIENT_SCOPES;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let navigation;
+
+let closure_3 = PlayStationLinkConstants.PlayStationLinkModalScenes;
+const PlatformTypes = Constants.PlatformTypes;
+const PLAYSTATION_CLIENT_SCOPES = GameConsoleConstants.PLAYSTATION_CLIENT_SCOPES;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkDiscordConsent.tsx");
 
 export const PlayStationLinkDiscordConsent = function PlayStationLinkDiscordConsent(platformType) {
+  let PLAYSTATION;
+  let PLAYSTATION_APPLICATION_ID;
+  let callbackCode;
+  let callbackState;
   platformType = platformType.platformType;
-  let navigation;
+  navigation = undefined;
   ({ callbackCode, callbackState } = platformType);
-  navigation = navigation(1485).useNavigation();
+  let obj = navigation(1485);
+  navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     navigation.push(constants.SUCCESS);
   }, items);
-  const callback1 = noop.useCallback((errorCode) => {
-    navigation.push(constants.ERROR, { errorCode });
+  const callback1 = react.useCallback((errorCode) => {
+    const obj = { errorCode };
+    navigation.push(constants.ERROR, obj);
   }, items1);
+  const tmp6 = PlatformTypes;
   if (platformType === PlatformTypes.PLAYSTATION_STAGING) {
-    let PLAYSTATION_APPLICATION_ID = tmp(8547).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
+    PLAYSTATION_APPLICATION_ID = tmp(8547).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
   } else {
     PLAYSTATION_APPLICATION_ID = tmp(8547).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
   }
-  if (platformType === PlatformTypes.PLAYSTATION_STAGING) {
-    let PLAYSTATION = tmp(8568).ConsoleAuthorizationRedirectURIs.PLAYSTATION_STAGING;
+  if (platformType === tmp6.PLAYSTATION_STAGING) {
+    PLAYSTATION = tmp(8568).ConsoleAuthorizationRedirectURIs.PLAYSTATION_STAGING;
   } else {
     PLAYSTATION = tmp(8568).ConsoleAuthorizationRedirectURIs.PLAYSTATION;
   }

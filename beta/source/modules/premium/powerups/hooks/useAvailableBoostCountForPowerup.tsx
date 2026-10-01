@@ -5,46 +5,56 @@
 // Exports: default
 
 // Module 12033 (useAvailableBoostCountForPowerup)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4723 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4724 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_0, importDefault;
 
-const require = fn;
-const GuildPowerupsConstants = fn(4724);
-({ GuildPowerupType: metroRequire, POWERUPS_INCLUDED_IN_LEVEL: closure_7, LEVEL_SKU_ID_TO_BOOSTING_TIER: closure_8 } = GuildPowerupsConstants);
-const size = fn(2);
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+({ GuildPowerupType: metroRequire, POWERUPS_INCLUDED_IN_LEVEL: metroImportDefault, LEVEL_SKU_ID_TO_BOOSTING_TIER: metroImportAll } = GuildPowerupsConstants);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useAvailableBoostCountForPowerup.tsx");
 
 export default function useAvailableBoostCountForPowerup(arg0, arg1) {
+  let closure_1;
+  let stateFromStores1;
   _require = arg0;
   importDefault = arg1;
   let items = [GuildStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => GuildStore.getGuild(closure_0));
-  const obj = require("initialize");
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(closure_0));
   const items1 = [GuildPowerupsStore];
-  stateFromStores1 = require("initialize").useStateFromStores(items1, () => GuildPowerupsStore.getStateForGuild(closure_0));
+  const obj2 = require("get initialized");
+  stateFromStores1 = obj2.useStateFromStores(items1, () => GuildPowerupsStore.getStateForGuild(closure_0));
   const items2 = [arg1, stateFromStores1];
-  const memo = noop.useMemo(() => {
+  const spent = require("useGuildPowerupsBoostCount")(arg0).spent;
+  const memo = react.useMemo(() => {
+    let allPowerups;
+    const tmp = closure_1;
     if (null != closure_1) {
       if (tmp.type === constants.LEVEL) {
         if (null != stateFromStores1) {
+          let items;
           closure_0 = tmp9;
           if (null == closure_1_8[tmp.skuId]) {
-            let items = [];
+            items = [];
           } else {
+            const tmp2 = globalThis;
             const _Object = Object;
             const entries = Object.entries(closure_1_7);
             const found = entries.filter((item) => {
+              let tmp;
+              let tmp2;
               [tmp, tmp2] = item;
-              let tmp3 = tmp2 === closure_0;
-              if (tmp3) {
-                tmp3 = null != stateFromStores1.unlockedPowerups[tmp];
-              }
-              return tmp3;
+              return tmp2 === closure_0 && null != stateFromStores1.unlockedPowerups[tmp];
             });
             const mapped = found.map((item) => {
+              let tmp;
               [tmp] = item;
               return allPowerups.allPowerups[tmp];
             });
@@ -61,15 +71,16 @@ export default function useAvailableBoostCountForPowerup(arg0, arg1) {
     num = memo.reduce((acc, cost) => acc + cost.cost, 0);
   }
   let num3;
+  const _Math = Math;
   if (stateFromStores != null) {
     num3 = stateFromStores.premiumSubscriberCount;
   }
   if (num3 == null) {
     num3 = 0;
   }
-  const diff = num3 - require("useGuildPowerupsBoostCount")(arg0).spent;
+  const diff = num3 - spent;
   if (num == null) {
     num = 0;
   }
-  return Math.max(diff + num, 0);
+  return max(diff + num, 0);
 };

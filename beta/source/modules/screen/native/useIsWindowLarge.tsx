@@ -13,9 +13,11 @@ const useWindowSizeClassifierDefault = useWindowSizeClassifier;
 const result = size.fileFinishedImporting("modules/screen/native/useIsWindowLarge.tsx");
 
 export default function useIsWindowLarge() {
-  return useWindowSizeClassifierDefault() >= useWindowSizeClassifier.WindowSizeClassifier.LARGE;
+  const tmp = useWindowSizeClassifierDefault();
+  return tmp >= useWindowSizeClassifier.WindowSizeClassifier.LARGE;
 };
 export const getIsWindowLarge = function getIsWindowLarge() {
-  const windowSizeClassifier = useWindowSizeClassifier.getWindowSizeClassifier();
+  const obj = useWindowSizeClassifier;
+  const windowSizeClassifier = obj.getWindowSizeClassifier();
   return windowSizeClassifier >= useWindowSizeClassifier.WindowSizeClassifier.LARGE;
 };

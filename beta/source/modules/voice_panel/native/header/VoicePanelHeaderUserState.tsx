@@ -4,97 +4,93 @@
 // Dependencies: [19, 4852, 21, 4566, 8370, 4836, 576, 16931, 16929, 9132, 5901, 11754, 504, 4837, 2]
 
 // Module 16930 (VoicePanelHeaderUserState)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4837 */;
 import NativeViewDefault from "NativeView" /* 5901 */;
+import native from "native" /* 8370 */;
 import useStableParticipant from "useStableParticipant" /* 16929 */;
 import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 16931 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
 const useVoicePanelCardUserStateIconsDefault = useVoicePanelCardUserStateIcons;
 
-require = fn;
+let rect;
+let size;
+let size1;
 function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
+  let obj5;
   const tmp = closure_8();
   let type;
+  const tmp4 = useVoicePanelCardUserStateIconsDefault;
   if (participant != null) {
     type = participant.type;
   }
-  const tmp4 = useVoicePanelCardUserStateIconsDefault;
   let id;
+  const obj = useStableParticipant;
   if (obj.isStableParticipantWithUser(participant)) {
     id = participant.user.id;
   }
-  obj = useStableParticipant;
   const items = [];
-  const iter = tmp4(type, id, guildId)[Symbol.iterator]();
+  const tmp4Result = tmp4(type, id, guildId);
+  const iter = tmp4Result[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp9 = nextResult;
     let tmp11 = require;
     if (nextResult.type === useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
-      let obj2 = { blurTheme: "dark", style: tmp.floatingIconWrapper, children: null };
-      let obj3 = { style: tmp.floatingIcon, state: null };
-      obj3.state = tmp9.videoIconState;
-      obj2.children = jsx(tmp11(9132).VideoIcon, { style: tmp.floatingIcon, state: null });
-      let arr = items.push(jsx(tmp11(8370).BackgroundBlurView, { blurTheme: "dark", style: tmp.floatingIconWrapper, children: null }, "video"));
+      let push = items.push;
+      let BackgroundBlurView = tmp11(8370).BackgroundBlurView;
+      let obj3 = { style: tmp.floatingIcon, state: tmp9.videoIconState };
+      let arr = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
     if (tmp9.type === tmp11(16931).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
+      let push2 = items.push;
       let tmp36 = jsx;
       let items1 = [tmp.floatingIconWrapper, ];
       let leftMargin;
+      let BackgroundBlurView2 = tmp11(8370).BackgroundBlurView;
       if (tmp9.withLeftMargin) {
         leftMargin = tmp.leftMargin;
       }
-      let obj4 = { blurTheme: "dark", style: null, children: null };
+      let obj4 = { blurTheme: "dark", style: items1, children: tmp36(tmp11(9132).MuteDeafenIcon, obj5) };
       items1[1] = leftMargin;
-      obj4.style = items1;
-      let obj5 = { style: tmp.floatingIcon, state: null };
-      obj5.state = tmp9.muteDeafenIconState;
-      obj4.children = tmp36(tmp11(9132).MuteDeafenIcon, obj5);
-      let arr2 = items.push(tmp35(tmp11(8370).BackgroundBlurView, obj4, "mute-deafen"));
+      obj5 = { style: tmp.floatingIcon, state: tmp9.muteDeafenIconState };
+      let push2Result = push2(tmp35(BackgroundBlurView2, obj4, "mute-deafen"));
     }
     continue;
   }
   if (0 !== items.length) {
-    const obj6 = { style: null, children: null };
     const items2 = [tmp.iconContainer, userIcons];
-    obj6.style = items2;
-    obj6.children = items;
-    return jsx(NativeViewDefault, { style: null, children: null });
+    return jsx(NativeViewDefault, { style: items2, children: items });
   }
-  const tmp4Result = tmp4(type, id, guildId);
 }
-const jsx = fn(21).jsx;
-let closure_6 = ReanimatedRexport.createAnimatedComponent(fn(8370).BackgroundBlurView);
+const jsx = Fragment.jsx;
+let closure_6 = ReanimatedRexport.createAnimatedComponent(native.BackgroundBlurView);
 const OPACITY_TIMING = { duration: 100 };
-const createStyles = fn(4836);
-let obj = { container: null, iconContainer: null, floatingIconWrapper: null, floatingIcon: null, leftMargin: null };
-const rect = { position: "absolute", top: 0, left: 0, borderRadius: nativeDefault.radii.round, padding: 6 };
-obj.container = rect;
-obj.iconContainer = { flexDirection: "row" };
-let size = { width: 20, height: 20, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center" };
-obj.floatingIconWrapper = size;
-const size1 = { width: 12, height: 12, tintColor: nativeDefault.colors.WHITE };
-obj.floatingIcon = size1;
-obj.leftMargin = { marginLeft: 4 };
-let closure_8 = createStyles.createStyles(obj);
+let createStyles = createStyles_mod;
+let obj = { container: rect, iconContainer: { flexDirection: "row" }, floatingIconWrapper: size, floatingIcon: size1, leftMargin: { marginLeft: 4 } };
+rect = { position: "absolute", top: 0, left: 0, borderRadius: nativeDefault.radii.round, padding: 6 };
+createStyles = createStyles.createStyles;
+size = { width: 20, height: 20, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center" };
+size1 = { width: 12, height: 12, tintColor: nativeDefault.colors.WHITE };
+let closure_8 = createStyles(obj);
 const __initData = { code: "function VoicePanelHeaderUserStateTsx1(){const{withTiming,isHeaderHidden,OPACITY_TIMING}=this.__closure;return{opacity:withTiming(isHeaderHidden.get()?1:0,OPACITY_TIMING)};}" };
-size = fn(2);
-const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderUserState.tsx");
-
-export default noop.memo(function VoicePanelHeaderUserState(isHeaderHidden) {
+const memoResult = react.memo(function VoicePanelHeaderUserState(isHeaderHidden) {
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
   let channelId;
-  const context = noop.useContext(channelId(11754));
+  const context = react.useContext(channelId(11754));
   channelId = context.channelId;
   const guildId = context.guildId;
   const tmp2 = closure_8();
+  let obj = isHeaderHidden(504);
   const items = [ChannelRTCStore];
-  const stateFromStores = isHeaderHidden(504).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const selectedParticipant = ChannelRTCStore.getSelectedParticipant(channelId);
     let id;
     if (selectedParticipant != null) {
@@ -105,24 +101,28 @@ export default noop.memo(function VoicePanelHeaderUserState(isHeaderHidden) {
   const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(16929)(stateFromStores, channelId, guildId), guildId);
   isHeaderHidden(4566);
   const fn = function h() {
+    const withTiming = timing.withTiming;
     let num = 0;
+    timing;
     if (isHeaderHidden.get()) {
       num = 1;
     }
-    return { opacity: timing.withTiming(num, closure_7) };
+    const obj = { opacity: withTiming(num, OPACITY_TIMING) };
+    return obj;
   };
-  let obj = isHeaderHidden(504);
   fn.__closure = { withTiming: isHeaderHidden(4837).withTiming, isHeaderHidden, OPACITY_TIMING };
   fn.__workletHash = 7032221979181;
   fn.__initData = __initData;
   let tmp7 = null;
+  ({ withTiming: isHeaderHidden(4837).withTiming, isHeaderHidden, OPACITY_TIMING });
   if (null != tmp4) {
-    const obj3 = { blurTheme: "dark", style: null, pointerEvents: "none", children: null };
     const items1 = [tmp2.container, tmp6];
-    obj3.style = items1;
-    obj3.children = tmp4;
-    tmp7 = <closure_6 blurTheme="dark" style={null} pointerEvents="none">{null}</closure_6>;
+    tmp7 = <closure_6 blurTheme="dark" style={items1} pointerEvents="none">{tmp4}</closure_6>;
   }
   return tmp7;
 });
+size = size_mod;
+const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderUserState.tsx");
+
+export default memoResult;
 export { useVoicePanelHeaderUserStateIcons };

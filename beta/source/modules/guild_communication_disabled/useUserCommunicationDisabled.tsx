@@ -8,29 +8,34 @@
 import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4456 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_communication_disabled/useUserCommunicationDisabled.tsx");
 
 export default function useUserCommunicationDisabled(arg0, arg1) {
+  let closure_0;
+  let closure_1;
   _require = arg0;
   dependencyMap = arg1;
   const items = [GuildMemberStore];
   const items1 = [arg1, arg0];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
-    if (null != closure_1) {
+    const obj = GuildMemberStore;
+    if (null != guild_id) {
       member = null;
-      if (null != tmp) {
-        member = GuildMemberStore.getMember(tmp2, tmp);
+      if (null != id) {
+        member = obj.getMember(tmp2, tmp);
       }
     }
     return member;
   }, items1);
   let prop;
+  const tmp = _require;
   if (stateFromStores != null) {
     prop = stateFromStores.communicationDisabledUntil;
   }
@@ -38,27 +43,33 @@ export default function useUserCommunicationDisabled(arg0, arg1) {
     prop = null;
   }
   const items2 = [prop, ];
-  const obj = require("initialize");
-  items2[1] = require("CommunicationDisabledUtils").isMemberCommunicationDisabled(stateFromStores);
+  const tmpResult = tmp(4456);
+  items2[1] = tmpResult.isMemberCommunicationDisabled(stateFromStores);
   return items2;
 };
 export const useCurrentUserCommunicationDisabled = function useCurrentUserCommunicationDisabled(guild_id) {
+  let currentUser;
+  let id;
+  const tmp = id;
+  const tmp2 = dependencyMap;
+  let obj = id(504);
   const items = [UserStore];
-  const stateFromStores = id(504).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   id = undefined;
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
   dependencyMap = guild_id;
-  const obj = id(504);
   const items1 = [GuildMemberStore];
   const items2 = [guild_id, id];
-  const stateFromStores1 = id(504).useStateFromStores(items1, () => {
+  const tmpResult = tmp(504);
+  const stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
     let member = null;
-    if (null != closure_1) {
+    const obj = GuildMemberStore;
+    if (null != guild_id) {
       member = null;
-      if (null != tmp) {
-        member = GuildMemberStore.getMember(tmp2, tmp);
+      if (null != id) {
+        member = obj.getMember(tmp2, tmp);
       }
     }
     return member;
@@ -71,16 +82,17 @@ export const useCurrentUserCommunicationDisabled = function useCurrentUserCommun
     prop = null;
   }
   const items3 = [prop, ];
-  const tmpResult = id(504);
-  items3[1] = id(4456).isMemberCommunicationDisabled(stateFromStores1);
+  const tmpResult2 = tmp(4456);
+  items3[1] = tmpResult2.isMemberCommunicationDisabled(stateFromStores1);
   return items3;
 };
 export const userCommunicationDisabled = function userCommunicationDisabled(id, guildId) {
   let member = null;
+  const obj = GuildMemberStore;
   if (null != guildId) {
     member = null;
     if (null != id) {
-      member = GuildMemberStore.getMember(guildId, id);
+      member = obj.getMember(guildId, id);
     }
   }
   let prop;
@@ -90,6 +102,8 @@ export const userCommunicationDisabled = function userCommunicationDisabled(id, 
   if (prop == null) {
     prop = null;
   }
-  const items = [prop, CommunicationDisabledUtils.isMemberCommunicationDisabled(member)];
+  const items = [prop, ];
+  const obj2 = CommunicationDisabledUtils;
+  items[1] = obj2.isMemberCommunicationDisabled(member);
   return items;
 };

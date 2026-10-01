@@ -5,24 +5,33 @@
 // Exports: default
 
 // Module 14164 (useScrollToUserProfileEditFormSection)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9227 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const findNodeHandle = fn(17).findNodeHandle;
-const size = fn(2);
+const findNodeHandle = react_native.findNodeHandle;
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useScrollToUserProfileEditFormSection.tsx");
 
 export default function useScrollToUserProfileEditFormSection(arg0, arg1) {
+  let closure_0;
+  let closure_1;
+  let ref;
+  let state;
+  let useReducedMotion;
   _require = arg0;
   dependencyMap = arg1;
   ref = ref.useRef({});
   const items = [AccessibilityStore];
-  closure_3 = require("initialize").useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const obj = require("get initialized");
+  let closure_3 = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const effect = ref.useEffect(() => {
+    let ref2;
+    let tmp;
     let tmp2 = null != closure_1;
     if (tmp2) {
       let current = ref.current;
@@ -37,8 +46,8 @@ export default function useScrollToUserProfileEditFormSection(arg0, arg1) {
       const timerId = setTimeout(() => {
         const tmp = closure_3(ref.current);
         if (null != tmp) {
-          if (obj != null) {
-            obj.measureLayout(tmp, (x, y) => {
+          if (ref2.current[closure_1_1] != null) {
+            ref2.current[closure_1_1].measureLayout(tmp, (x, y) => {
               const current = ref.current;
               if (current != null) {
                 const point = { x, y, animated: !closure_1_3 };

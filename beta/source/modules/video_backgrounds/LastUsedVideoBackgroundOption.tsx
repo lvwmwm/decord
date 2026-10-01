@@ -7,62 +7,73 @@
 // Module 9114 (LastUsedVideoBackgroundOption)
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
 import VideoBackgroundUtils from "VideoBackgroundUtils" /* 9115 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx");
 
 export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgroundOption(currentUser) {
+  let tmp5;
   const videoBackground = UnsyncedUserSettingsStore.videoBackground;
+  const obj = VideoBackgroundUtils;
   if (!obj.isCustomBackgroundOption(videoBackground)) {
+    let tmp6;
     if (typeof videoBackground !== "number") {
-      let tmp6 = videoBackground;
+      tmp6 = videoBackground;
     } else {
       tmp6 = null;
-      const tmpResult = VideoBackgroundUtils;
+      VideoBackgroundUtils;
     }
-    let tmp5 = tmp6;
+    tmp5 = tmp6;
   } else {
     tmp5 = null;
+    PremiumUtilsDefault;
   }
   return tmp5;
 };
 export const useLastUsedVideoBackgroundOption = function useLastUsedVideoBackgroundOption() {
-  const items = [UnsyncedUserSettingsStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => videoBackground.videoBackground);
+  let currentUser;
+  let settings;
+  let stateFromStores;
+  let videoBackground;
   let obj = stateFromStores(504);
+  const items = [UnsyncedUserSettingsStore];
+  stateFromStores = obj.useStateFromStores(items, () => videoBackground.videoBackground);
+  const obj2 = stateFromStores(504);
   const items1 = [UserSettingsProtoStore];
-  const stateFromStores1 = stateFromStores(504).useStateFromStores(items1, () => settings.settings);
-  let obj2 = stateFromStores(504);
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => settings.settings);
   const items2 = [UserStore];
-  const stateFromStores2 = stateFromStores(504).useStateFromStores(items2, () => currentUser.getCurrentUser());
+  const obj3 = stateFromStores(504);
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => currentUser.getCurrentUser());
   const voiceAndVideo = stateFromStores1.voiceAndVideo;
   let prop;
   if (voiceAndVideo != null) {
     prop = voiceAndVideo.videoBackgroundFilterDesktop;
   }
   const items3 = [prop, stateFromStores2, stateFromStores];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     let tmp2 = null;
     if (null != stateFromStores2) {
+      let tmp7;
+      const obj = VideoBackgroundUtils;
+      const tmp4 = require;
       if (!obj.isCustomBackgroundOption(stateFromStores)) {
-        if (typeof tmp3 !== "number") {
-          let tmp8 = tmp3;
+        let tmp8;
+        if (typeof stateFromStores !== "number") {
+          tmp8 = tmp3;
         } else {
           tmp8 = null;
-          const tmp4Result = tmp4(9115);
+          tmp4(9115);
         }
-        let tmp7 = tmp8;
+        tmp7 = tmp8;
       } else {
         tmp7 = null;
+        PremiumUtilsDefault;
       }
       tmp2 = tmp7;
-      obj = VideoBackgroundUtils;
-      tmp4 = require;
     }
     return tmp2;
   }, items3);

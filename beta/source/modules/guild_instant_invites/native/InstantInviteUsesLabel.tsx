@@ -5,23 +5,24 @@
 // Exports: default
 
 // Module 10410 (InstantInviteUsesLabel)
+import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxs = fn(21).jsxs;
-const size = fn(2);
+const jsxs = Fragment.jsxs;
 const result = size.fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteUsesLabel.tsx");
 
 export default function InstantInviteUsesLabel(style) {
+  let maxUses;
+  let uses;
   ({ uses, maxUses } = style);
   let combined = uses;
+  style = style.style;
   if (0 !== maxUses) {
     const _HermesInternal = HermesInternal;
     combined = "" + uses + "/" + maxUses;
   }
-  const obj = { variant: "text-md/semibold", color: "text-default", style: style.style, children: null };
   const items = ["Uses: ", combined];
-  obj.children = items;
-  return jsxs(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", style: style.style, children: null });
+  return jsxs(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", style, children: items });
 };

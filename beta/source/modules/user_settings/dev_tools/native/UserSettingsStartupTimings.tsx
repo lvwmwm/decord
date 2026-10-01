@@ -5,63 +5,92 @@
 // Exports: default
 
 // Module 15120 (UserSettingsStartupTimings)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;
 import TableCheckboxRow from "TableCheckboxRow" /* 5916 */;
-import TableRow from "TableRow" /* 5917 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
+import TableRow4 from "TableRow" /* 5917 */;
+import TableRowGroup6 from "TableRowGroup" /* 5999 */;
 import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 9653 */;
 import ShareIcon from "ShareIcon" /* 12470 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
-import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4699 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import react_native2 from "react-native" /* 4699 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c2, c3;
 
-require = fn;
+let c10;
+let c9;
+let metroImportAll;
+let obj2;
+let obj3;
 function Code(arg0) {
+  let children;
+  let color;
   ({ children, color } = arg0);
-  const tmp = closure_11();
-  return React6(Text_Text.Text, { variant: "text-sm/normal", color, lineClamp: 1, style: closure_11().code, children });
+  const obj = { variant: "text-sm/normal", color, lineClamp: 1, style: closure_11().code, children };
+  return metroImportAll(Text_Text.Text, obj);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, code: { fontFamily: fn(1074).Fonts.CODE_BOLD }, border: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj2.border = { height: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
-let closure_11 = createStyles.createStyles(obj2);
-const appStartedTimestamp = NativeTTIManagerModule.getAppStartedTimestamp();
-const size = fn(2);
+let react = react_mod;
+const View = react_native.View;
+const Fonts = Constants.Fonts;
+({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { wrap: obj2, code: { fontFamily: Fonts.CODE_BOLD }, border: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { height: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
+let closure_11 = createStyles(obj);
+const appStartedTimestamp = react_native2.getAppStartedTimestamp();
 let result = size.fileFinishedImporting("modules/user_settings/dev_tools/native/UserSettingsStartupTimings.tsx");
 
 export default function UserSettingsStartupTimings() {
-  const tmp = closure_11();
+  let FlashList;
+  let alertStartupMetrics;
+  let border;
+  let checked;
+  let closure_2;
+  let closure_4;
+  let first1;
+  let num;
+  let obj5;
+  let obj6;
+  let tmp = closure_11();
   _require = tmp;
-  [checked, dependencyMap] = noop.useState(true);
-  [first1, _slicedToArray] = noop.useState(true);
-  const useResult = noop.use(num);
-  noop = useResult;
+  const tmp3 = dependencyMap;
+  let obj = react;
+  const bottom = checked(1613)().bottom;
+  const tmp2 = checked;
+  [checked, dependencyMap] = react.useState(true);
+  [first1, _slicedToArray] = react.useState(true);
+  const useResult = react.use(num);
+  react = useResult;
   let items = [useResult, checked, first1];
-  const memo = noop.useMemo(() => serializeAppStartLogsDefault(useResult, !first, first1).split("\n"), items);
+  const memo = react.useMemo(() => {
+    const str = serializeAppStartLogsDefault(react, !first, first1);
+    return str.split("\n");
+  }, items);
+  let obj2 = require("get initialized");
   let items1 = [alertStartupMetrics];
-  checked = require("initialize").useStateFromStores(items1, () => alertStartupMetrics.alertStartupMetrics);
+  checked = obj2.useStateFromStores(items1, () => alertStartupMetrics.alertStartupMetrics);
   alertStartupMetrics = checked(9).loadIndex.start - useResult;
   const diff = checked(9).loadMiniCache.end - checked(9).loadMiniCache.start;
-  closure_8 = diff + (checked(9).parseStorage.end - checked(9).parseStorage.start);
-  closure_9 = checked(9).loadLazyCache.end - checked(9).loadLazyCache.start;
-  closure_10 = checked(9).ready.end - checked(9).ready.start;
+  let closure_8 = diff + (checked(9).parseStorage.end - checked(9).parseStorage.start);
+  let closure_9 = checked(9).loadLazyCache.end - checked(9).loadLazyCache.start;
+  let closure_10 = checked(9).ready.end - checked(9).ready.start;
   closure_11 = Math.ceil(checked(9).renderLatestMessages.importTime);
-  let obj = noop;
-  let obj2 = require("initialize");
-  const tmp10 = _require;
-  const tmp2 = checked;
-  const lastTrackedAppUiViewed2Properties = require("TTIAnalyticsUtils").getLastTrackedAppUiViewed2Properties();
+  let obj3 = require("TTIAnalyticsUtils");
+  const lastTrackedAppUiViewed2Properties = obj3.getLastTrackedAppUiViewed2Properties();
   num = undefined;
+  const tmp10 = _require;
   if (lastTrackedAppUiViewed2Properties != null) {
     num = lastTrackedAppUiViewed2Properties.time_first_contentful_paint;
   }
@@ -69,10 +98,11 @@ export default function UserSettingsStartupTimings() {
     num = 0;
   }
   const onPress = obj.useCallback(first1(function*(arg0, value) {
+    let closure_0;
     if (c3 === 2) {
       c3 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -83,8 +113,10 @@ export default function UserSettingsStartupTimings() {
       }
     } else {
       try {
+        let tmp;
+        let message;
         c3 = 2;
-        if (0 === dependencyMap) {
+        if (0 === c2) {
           if (arg0 === 1) {
             c3 = 3;
             throw value;
@@ -93,11 +125,12 @@ export default function UserSettingsStartupTimings() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_128_0 = undefined;
-            closure_128_1 = undefined;
-            dependencyMap = 1;
+            tmp = undefined;
+            message = undefined;
+            const obj4 = message(c2[10]);
+            c2 = 1;
             c3 = 1;
-            const obj5 = { value: tmp5(4699).getAppFirstVisibleTimestamp(), done: false };
+            const obj5 = { value: obj4.getAppFirstVisibleTimestamp(), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -108,159 +141,177 @@ export default function UserSettingsStartupTimings() {
           const obj6 = { value, done: true };
           return obj6;
         } else {
-          closure_128_0 = value;
-          closure_128_1 = tmp5(9653)(closure_128_0);
-          const obj7 = { message: closure_128_1 };
-          tmp2(7809).showShareActionSheet(obj7, "Startup Timing");
+          tmp = value;
+          message = message(c2[12])(tmp);
+          const obj7 = { message };
+          const obj = tmp(c2[16]);
+          obj.showShareActionSheet(obj7, "Startup Timing");
           c3 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp17) {
-        c3 = tmp;
-        throw tmp17;
+      } catch (tmp16) {
+        c3 = 3;
+        throw tmp16;
       }
     }
   }), []);
-  let obj4 = { style: tmp.wrap, children: null };
-  let obj5 = { contentContainerStyle: null, ListHeaderComponent: null, data: null, renderItem: null };
-  let obj3 = require("TTIAnalyticsUtils");
-  obj5.contentContainerStyle = { paddingBottom: checked(1613)().bottom + tmp2(576).space.PX_16 };
-  obj5.ListHeaderComponent = function ListHeaderComponent() {
-    const obj = { spacing: 16, style: { padding: 16 }, children: null };
-    const obj2 = {
-      title: "Performance testing",
-      hasIcons: false,
-      children: React6(TableCheckboxRow.TableCheckboxRow, {
+  let obj4 = { style: tmp.wrap, children: closure_8(FlashList, obj5) };
+  obj5 = {
+    contentContainerStyle: obj6,
+    ListHeaderComponent() {
+      let TableRow2;
+      let TableRow3;
+      let items;
+      let items1;
+      let items10;
+      let items11;
+      let items12;
+      let items3;
+      let items4;
+      let items5;
+      let items6;
+      let items7;
+      let items8;
+      let items9;
+      let obj18;
+      let obj19;
+      let obj22;
+      let obj23;
+      let obj28;
+      let obj3;
+      let result;
+      let result1;
+      let result2;
+      let result3;
+      let result4;
+      let obj = { spacing: 16, style: { padding: 16 }, children: items };
+      const Stack = Stack_Stack.Stack;
+      let obj2 = { title: "Performance testing", hasIcons: false, children: metroImportAll(TableCheckboxRow.TableCheckboxRow, obj3) };
+      const TableRowGroup = TableRowGroup6.TableRowGroup;
+      obj3 = {
         label: "Show start times at launch",
         onPress() {
-          return closure_0(1347).setDeveloperOptionSettings({ alertStartupMetrics: !checked });
+          const obj = border(closure_2[21]);
+          const obj2 = { alertStartupMetrics: !checked };
+          return obj.setDeveloperOptionSettings(obj2);
         },
         checked
-      })
-    };
-    const items = [React6(TableRowGroup.TableRowGroup, obj2), , , , ];
-    const obj4 = { children: null };
-    const obj5 = { color: "text-brand", children: null };
-    const result = closure_7 / 1000;
-    obj5.children = "" + result + "s (" + Math.round(closure_7 / num * 100) + "%)";
-    const items1 = ["Native: ", React6(Code, obj5)];
-    obj4.children = items1;
-    const items2 = [React7(Code, obj4), , , , , , , ];
-    const obj6 = { children: null };
-    const obj7 = { color: "text-brand", children: null };
-    const result1 = closure_11 / 1000;
-    obj7.children = "" + result1 + "s (" + Math.round(closure_11 / num * 100) + "%)";
-    const items3 = ["JS Imports: ", React6(Code, obj7)];
-    obj6.children = items3;
-    items2[1] = React7(Code, obj6);
-    const obj8 = { children: null };
-    const obj9 = { color: "text-brand", children: null };
-    const result2 = closure_8 / 1000;
-    obj9.children = "" + result2 + "s (" + Math.round(closure_8 / num * 100) + "%)";
-    const items4 = ["Mini Cache: ", React6(Code, obj9)];
-    obj8.children = items4;
-    items2[2] = React7(Code, obj8);
-    const obj10 = { children: null };
-    const obj11 = { color: "text-brand", children: null };
-    const result3 = closure_9 / 1000;
-    obj11.children = "" + result3 + "s (" + Math.round(closure_9 / num * 100) + "%)";
-    const items5 = ["Lazy Cache: ", React6(Code, obj11)];
-    obj10.children = items5;
-    items2[3] = React7(Code, obj10);
-    const obj12 = { children: null };
-    const obj13 = { color: "text-brand", children: null };
-    const result4 = closure_10 / 1000;
-    obj13.children = "" + result4 + "s (" + Math.round(closure_10 / num * 100) + "%)";
-    const items6 = ["Ready: ", React6(Code, obj13)];
-    obj12.children = items6;
-    items2[4] = React7(Code, obj12);
-    let str = "";
-    if (null != num) {
-      str = "";
-      if (tmp8 > 0) {
-        str = `${tmp8 / 1000}s`;
+      };
+      items = [metroImportAll(TableRowGroup, obj2), , , , ];
+      const TableRowGroup2 = TableRowGroup6.TableRowGroup;
+      const obj4 = { children: items1 };
+      const obj5 = { color: "text-brand", children: "" + result + "s (" + Math.round(alertStartupMetrics / num * 100) + "%)" };
+      result = alertStartupMetrics / 1000;
+      const TableRow = TableRow4.TableRow;
+      items1 = ["Native: ", metroImportAll(Code, obj5)];
+      const items2 = [React4(Code, obj4), , , , , , , ];
+      const obj6 = { children: items3 };
+      const obj7 = { color: "text-brand", children: "" + result1 + "s (" + Math.round(closure_11 / num * 100) + "%)" };
+      result1 = closure_11 / 1000;
+      items3 = ["JS Imports: ", metroImportAll(Code, obj7)];
+      items2[1] = React4(Code, obj6);
+      const obj8 = { children: items4 };
+      const obj9 = { color: "text-brand", children: "" + result2 + "s (" + Math.round(metroImportAll / num * 100) + "%)" };
+      result2 = metroImportAll / 1000;
+      items4 = ["Mini Cache: ", metroImportAll(Code, obj9)];
+      items2[2] = React4(Code, obj8);
+      const obj10 = { children: items5 };
+      const obj11 = { color: "text-brand", children: "" + result3 + "s (" + Math.round(c9 / num * 100) + "%)" };
+      result3 = c9 / 1000;
+      items5 = ["Lazy Cache: ", metroImportAll(Code, obj11)];
+      items2[3] = React4(Code, obj10);
+      const obj12 = { children: items6 };
+      const obj13 = { color: "text-brand", children: "" + result4 + "s (" + Math.round(c10 / num * 100) + "%)" };
+      result4 = c10 / 1000;
+      items6 = ["Ready: ", metroImportAll(Code, obj13)];
+      items2[4] = React4(Code, obj12);
+      let str = "";
+      if (null != num) {
+        str = "";
+        if (num > 0) {
+          str = `${tmp8 / 1000}s`;
+        }
       }
-    }
-    const obj14 = { children: null };
-    const items7 = ["TTI (first contentful paint): ", React6(Code, { color: "text-brand", children: str })];
-    obj14.children = items7;
-    items2[5] = React7(Code, obj14);
-    let prop;
-    if (lastTrackedAppUiViewed2Properties != null) {
-      prop = tmp13.time_display_messages_with_cache_end;
-    }
-    let str3 = "";
-    if (null != prop) {
-      str3 = "";
-      if (prop > 0) {
-        str3 = `${tmp14 / 1000}s`;
+      const obj14 = { children: items7 };
+      items7 = ["TTI (first contentful paint): ", metroImportAll(Code, { color: "text-brand", children: str })];
+      items2[5] = React4(Code, obj14);
+      let prop;
+      if (lastTrackedAppUiViewed2Properties != null) {
+        prop = tmp13.time_display_messages_with_cache_end;
       }
-    }
-    const obj15 = { children: null };
-    const items8 = ["Cached Messages Render: ", React6(Code, { color: "text-brand", children: str3 })];
-    obj15.children = items8;
-    items2[6] = React7(Code, obj15);
-    let prop1;
-    if (lastTrackedAppUiViewed2Properties != null) {
-      prop1 = tmp13.time_display_latest_messages_end;
-    }
-    let str5 = "";
-    if (null != prop1) {
-      str5 = "";
-      if (prop1 > 0) {
-        str5 = `${tmp15 / 1000}s`;
+      let str3 = "";
+      if (null != prop) {
+        str3 = "";
+        if (prop > 0) {
+          str3 = `${tmp14 / 1000}s`;
+        }
       }
-    }
-    const obj16 = { children: null };
-    const obj17 = { title: "Key Cold Start Times", hasIcons: false, children: null };
-    const obj18 = { label: null };
-    const obj19 = { children: null };
-    const obj20 = { children: null };
-    const items9 = ["Latest Messages Render: ", React6(Code, { color: "text-brand", children: str5 })];
-    obj20.children = items9;
-    items2[7] = React7(Code, obj20);
-    obj19.children = items2;
-    obj18.label = React7(closure_2_10, obj19);
-    obj17.children = React6(TableRow.TableRow, obj18);
-    items[1] = React6(TableRowGroup.TableRowGroup, obj17);
-    const obj21 = { title: "Legend", hasIcons: false, children: null };
-    const obj22 = { label: null };
-    const obj23 = { children: null };
-    const items10 = [React6(Code, { children: "\u2615 - Java / Kotlin" }), React6(Code, { children: "\u{1F3A8} - React render" }), React6(Code, { children: "\u{1F4BE} - CacheStore" }), React6(Code, { children: "\u{1F9A5} - Slow Store Update / Handler" }), React6(Code, { children: "\u{1F3C3} - Startup Event" }), React6(Code, { children: "\u{1F310} - Socket Event" })];
-    obj23.children = items10;
-    obj22.label = React7(closure_2_10, obj23);
-    obj21.children = React6(TableRow.TableRow, obj22);
-    items[2] = React6(TableRowGroup.TableRowGroup, obj21);
-    const obj24 = { title: "Detailed Times", hasIcons: false, children: null };
-    const items11 = [
-      React6(TableCheckboxRow.TableCheckboxRow, {
+      const obj15 = { children: items8 };
+      items8 = ["Cached Messages Render: ", metroImportAll(Code, { color: "text-brand", children: str3 })];
+      items2[6] = React4(Code, obj15);
+      let prop1;
+      if (lastTrackedAppUiViewed2Properties != null) {
+        prop1 = tmp13.time_display_latest_messages_end;
+      }
+      let str5 = "";
+      if (null != prop1) {
+        str5 = "";
+        if (prop1 > 0) {
+          str5 = `${tmp15 / 1000}s`;
+        }
+      }
+      const obj16 = { children: items12 };
+      const obj17 = { title: "Key Cold Start Times", hasIcons: false, children: metroImportAll(TableRow, obj18) };
+      obj18 = { label: React4(authStore, obj19) };
+      obj19 = { children: items2 };
+      const obj20 = { children: items9 };
+      items9 = ["Latest Messages Render: ", metroImportAll(Code, { color: "text-brand", children: str5 })];
+      items2[7] = React4(Code, obj20);
+      items[1] = metroImportAll(TableRowGroup2, obj17);
+      const obj21 = { title: "Legend", hasIcons: false, children: metroImportAll(TableRow2, obj22) };
+      const TableRowGroup3 = tmp3(5999).TableRowGroup;
+      obj22 = { label: React4(authStore, obj23) };
+      obj23 = { children: items10 };
+      TableRow2 = tmp3(5917).TableRow;
+      items10 = [metroImportAll(Code, { children: "\u2615 - Java / Kotlin" }), metroImportAll(Code, { children: "\u{1F3A8} - React render" }), metroImportAll(Code, { children: "\u{1F4BE} - CacheStore" }), metroImportAll(Code, { children: "\u{1F9A5} - Slow Store Update / Handler" }), metroImportAll(Code, { children: "\u{1F3C3} - Startup Event" }), metroImportAll(Code, { children: "\u{1F310} - Socket Event" })];
+      items[2] = metroImportAll(TableRowGroup3, obj21);
+      const obj24 = { title: "Detailed Times", hasIcons: false, children: items11 };
+      const TableRowGroup4 = tmp3(5999).TableRowGroup;
+      items11 = [, ];
+      const obj25 = {
         label: "Hide the Noise",
         onPress() {
-          return dependencyMap((arg0) => !arg0);
+          return closure_1_2((arg0) => !arg0);
         },
         checked
-      }),
-      React6(TableCheckboxRow.TableCheckboxRow, {
+      };
+      items11[0] = metroImportAll(TableCheckboxRow.TableCheckboxRow, obj25);
+      const obj26 = {
         label: "Hide paints",
         onPress() {
           return closure_1_4((arg0) => !arg0);
         },
         checked: !first1
-      })
-    ];
-    obj24.children = items11;
-    items[3] = React7(TableRowGroup.TableRowGroup, obj24);
-    const obj27 = { title: "Share Timings", hasIcons: true, children: React6(TableRow.TableRow, { icon: React6(ShareIcon.ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress }) };
-    items[4] = React6(TableRowGroup.TableRowGroup, obj27);
-    obj.children = items;
-    const items12 = [React7(Stack_Stack.Stack, obj), React6(View, { style: border.border })];
-    obj16.children = items12;
-    return React7(closure_2_10, obj16);
+      };
+      items11[1] = metroImportAll(TableCheckboxRow.TableCheckboxRow, obj26);
+      items[3] = React4(TableRowGroup4, obj24);
+      const obj27 = { title: "Share Timings", hasIcons: true, children: metroImportAll(TableRow3, obj28) };
+      const TableRowGroup5 = tmp3(5999).TableRowGroup;
+      obj28 = { icon: metroImportAll(ShareIcon.ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress };
+      TableRow3 = tmp3(5917).TableRow;
+      items[4] = metroImportAll(TableRowGroup5, obj27);
+      items12 = [React4(Stack, obj), ];
+      const obj29 = { style: border.border };
+      items12[1] = metroImportAll(View, obj29);
+      return React4(authStore, obj16);
+    },
+    data: memo,
+    renderItem(children) {
+      const obj = { children: children.item };
+      return closure_8(lastTrackedAppUiViewed2Properties, obj);
+    }
   };
-  obj5.data = memo;
-  obj5.renderItem = function renderItem(children) {
-    return closure_8(lastTrackedAppUiViewed2Properties, { children: children.item });
-  };
-  obj4.children = closure_8(tmp10(8179).FlashList, obj5);
+  obj6 = { paddingBottom: bottom + tmp2(576).space.PX_16 };
+  FlashList = tmp10(8179).FlashList;
   return closure_8(checked, obj4);
 };

@@ -5,29 +5,29 @@
 // Exports: default
 
 // Module 7291 (PressableNavigatorButtonWrapper)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import MainTabsV2Constants from "MainTabsV2Constants" /* 7289 */;
+import react_native2 from "react-native" /* 7289 */;
 import createStyles from "createStyles" /* 4836 */;
 import size_mod from "module_2" /* 2 */;
 
-const View = _mod17.View;
-const MIN_HEADER_HEIGHT = MainTabsV2Constants.MIN_HEADER_HEIGHT;
-const jsx = jsxProd.jsx;
-const obj = { buttonWrapper: null, buttonWrapperModal: null };
-let size = { flexShrink: 0, flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_8, height: MIN_HEADER_HEIGHT, width: MIN_HEADER_HEIGHT };
-obj.buttonWrapper = size;
-obj.buttonWrapperModal = { marginLeft: -8 };
+let size;
+const View = react_native.View;
+const MIN_HEADER_HEIGHT = react_native2.MIN_HEADER_HEIGHT;
+const jsx = Fragment.jsx;
+const obj = { buttonWrapper: size, buttonWrapperModal: { marginLeft: -8 } };
+size = { flexShrink: 0, flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_8, height: MIN_HEADER_HEIGHT, width: MIN_HEADER_HEIGHT };
 let closure_2 = createStyles.createStyles(obj);
-let size = size_mod;
+size = size_mod;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorButtonWrapper.tsx");
 
-export default function PressableNavigatorButtonWrapper(children) {
-  let flag = children.isModal;
+export default function PressableNavigatorButtonWrapper(isModal) {
+  let flag = isModal.isModal;
+  const children = isModal.children;
   if (flag === undefined) {
     flag = false;
   }
   const tmp = closure_2();
-  return <View collapsable={false} style={flag ? tmp.buttonWrapperModal : tmp.buttonWrapper} importantForAccessibility="yes">{arg0.children}</View>;
+  return <View collapsable={false} style={flag ? tmp.buttonWrapperModal : tmp.buttonWrapper} importantForAccessibility="yes">{children}</View>;
 };

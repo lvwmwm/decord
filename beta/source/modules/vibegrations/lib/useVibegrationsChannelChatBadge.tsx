@@ -6,25 +6,30 @@
 
 // Module 12828 (useVibegrationsChannelChatBadge)
 import ReadStateStore from "ReadStateStore" /* 4851 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsChannelChatBadge.tsx");
 
 export default function useVibegrationsChannelChatBadge(arg0) {
+  let closure_0;
   _require = arg0;
+  let obj = require("get initialized");
   const items = [ReadStateStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStoresObject(items, () => {
+  return obj.useStateFromStoresObject(items, () => {
+    let obj4;
     const mentionCount = ReadStateStore.getMentionCount(closure_0);
+    const obj = ReadStateStore;
+    const tmp = closure_0;
     if (mentionCount > 0) {
+      obj4 = { badge: "mention", mentionCount };
       const obj2 = { badge: "mention", mentionCount };
-      let obj4 = obj2;
-    } else if (ReadStateStore.hasUnread(closure_0)) {
+    } else if (obj.hasUnread(tmp)) {
+      obj4 = { badge: "unread", mentionCount };
       const obj3 = { badge: "unread", mentionCount };
-      obj4 = obj3;
     } else {
       obj4 = { badge: null, mentionCount };
     }

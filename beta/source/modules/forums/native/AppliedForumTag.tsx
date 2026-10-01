@@ -5,103 +5,124 @@
 // Exports: AppliedForumTagPill
 
 // Module 10090 (AppliedForumTag)
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import intl2 from "intl" /* 1115 */;
+import EmojiConstants from "EmojiConstants" /* 1375 */;
 import EmojiDefault from "Emoji" /* 6551 */;
 import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10091 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 5771 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap, importDefault;
+
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let tmp5;
+const Text_Text = tmp5(4832);
 class AppliedForumTag {
-  constructor(arg0) {
-    ({ tag, containerStyle } = global);
-    closure_1 = undefined;
-    name = undefined;
-    emojiId = undefined;
-    emojiName = undefined;
-    closure_5 = undefined;
-    c6 = undefined;
-    closure_1 = closure_8();
-    ({ name, emojiId, emojiName } = tag);
-    tmp = name;
-    obj = containerStyle(name[7]);
-    items = [];
-    items[0] = emojiName;
-    closure_5 = obj.useStateFromStores(items, () => {
+  constructor(hasUnreads) {
+    let c2;
+    let c3;
+    let c4;
+    let container;
+    let tag;
+    let tagName;
+    ({ tag, containerStyle: require } = hasUnreads);
+    dependencyMap = undefined;
+    c3 = undefined;
+    c4 = undefined;
+    hasUnreads = hasUnreads.hasUnreads;
+    importDefault = closure_8();
+    ({ name: c2, emojiId: c3, emojiName: c4 } = tag);
+    const tmp = dependencyMap;
+    let obj = get_initialized;
+    let items = [c4];
+    let closure_5 = obj.useStateFromStores(items, () => {
       let usableCustomEmojiById = null;
       if (null != c3) {
         usableCustomEmojiById = EmojiStore.getUsableCustomEmojiById(tmp);
       }
       return usableCustomEmojiById;
     });
-    str = "text-muted";
-    if (global.hasUnreads) {
+    let str = "text-muted";
+    if (hasUnreads) {
       str = "text-default";
     }
-    c6 = str;
-    obj1 = {
+    let obj2 = {
       tagId: tag.id,
       children(ref) {
-            const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-            const obj = { style: null, accessible: true, accessibilityLabel: null, ref: null };
-            const items = [container.container, closure_1_0];
-            obj.style = items;
-            const intl = util.intl;
-            obj.accessibilityLabel = intl.formatToPlainString(util.t.tXXD6v, { tagName });
-            obj.ref = ref.ref;
-            const merged1 = Object.assign(merged);
-            str = c4;
-            let tmp11Result = null != c4;
-            if (!tmp11Result) {
-              tmp11Result = null != c3;
-            }
-            if (tmp11Result) {
-              const obj4 = { textEmojiStyle: null, fastImageStyle: null, src: null, name: null };
-              ({ textEmoji: obj3.textEmojiStyle, emoji: obj3.fastImageStyle } = tmp4);
-              let emojiURL;
-              if (null != closure_5) {
-                const obj6 = { id: null, animated: null, size: null };
-                ({ id: obj5.id, animated: obj5.animated } = tmp14);
-                obj6.size = EMOJI_URL_BASE_SIZE;
-                emojiURL = tmp12(1397).getEmojiURL(obj6);
-                const tmp12Result = tmp12(1397);
-              }
-              obj4.src = emojiURL;
-              if (str == null) {
-                str = "";
-              }
-              obj4.name = str;
-              tmp11Result = timestampProducer(EmojiDefault, obj4);
-              tmp12 = importDefault;
-              tmp14 = closure_5;
-            }
-            const items1 = [tmp11Result, timestampProducer(Text_Text.Text, { lineClamp: 1, style: container.tagName, variant: "text-xs/semibold", color: str, children: tagName })];
-            obj.children = items1;
-            return React5(View, obj);
+        let emojiURL;
+        let intl;
+        let items;
+        let items1;
+        let obj2;
+        ref = ref.ref;
+        const merged = Object.assign(ref, Object.assign({ ref: 0 }));
+        const obj = { style: items, accessible: true, accessibilityLabel: intl.formatToPlainString(intl2.t.tXXD6v, obj2), ref, children: items1 };
+        items = [container.container, require];
+        intl = intl2.intl;
+        obj2 = { tagName };
+        const merged1 = Object.assign(merged);
+        str = c4;
+        let tmp11Result = null != c4;
+        const tmp2 = metroImportDefault;
+        const tmp3 = View;
+        const tmp7 = tagName;
+        if (!tmp11Result) {
+          tmp11Result = null != c3;
+        }
+        if (tmp11Result) {
+          const obj4 = { textEmojiStyle: null, fastImageStyle: null, src: emojiURL, name: str };
+          ({ textEmoji: obj3.textEmojiStyle, emoji: obj3.fastImageStyle } = container);
+          emojiURL = undefined;
+          const tmp11 = metroRequire;
+          const tmp12 = importDefault;
+          const tmp13 = EmojiDefault;
+          const tmp14 = closure_5;
+          if (null != closure_5) {
+            const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
+            ({ id: obj5.id, animated: obj5.animated } = tmp14);
+            const tmp12Result = tmp12(1397);
+            emojiURL = tmp12Result.getEmojiURL(obj6);
           }
+          if (str == null) {
+            str = "";
+          }
+          tmp11Result = tmp11(tmp13, obj4);
+        }
+        items1 = [tmp11Result, ];
+        const obj10 = { lineClamp: 1, style: container.tagName, variant: "text-xs/semibold", color: str, children: tmp7 };
+        items1[1] = metroRequire(Text_Text.Text, obj10);
+        return tmp2(tmp3, obj);
+      }
     };
-    return c6(closure_1(tmp[8]), obj1);
+    return str(ForumTagContextMenuDefault, obj2);
   }
 }
-const View = fn(17).View;
-const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-const obj2 = { pill: { height: 24, paddingHorizontal: 8, borderRadius: 20, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, marginRight: 4, flexShrink: 1 }, disableEndMargin: { marginRight: 0 }, emoji: { height: 12, width: 12, marginRight: 4, flexShrink: 0 }, textEmoji: { fontSize: 10, marginRight: 4 }, tagName: { flexShrink: 1 }, container: { display: "flex", flexDirection: "row", alignItems: "center" } };
-const React6 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let obj = { pill: obj2, disableEndMargin: { marginRight: 0 }, emoji: { height: 12, width: 12, marginRight: 4, flexShrink: 0 }, textEmoji: { fontSize: 10, marginRight: 4 }, tagName: { flexShrink: 1 }, container: { display: "flex", flexDirection: "row", alignItems: "center" } };
+obj2 = { height: 24, paddingHorizontal: 8, borderRadius: 20, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, marginRight: 4, flexShrink: 1 };
+const metroImportAll = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/forums/native/AppliedForumTag.tsx");
 
 export const AppliedForumTagPill = function AppliedForumTagPill(arg0) {
+  let containerStyle;
+  let disableEndMargin;
+  let hasUnreads;
+  let items;
+  let tag;
   ({ tag, hasUnreads, containerStyle, disableEndMargin } = arg0);
   const tmp = closure_8();
-  const obj = { tag, hasUnreads, containerStyle: null };
-  const items = [tmp.pill, containerStyle, disableEndMargin ? tmp.disableEndMargin : {}];
-  obj.containerStyle = items;
-  return timestampProducer(AppliedForumTag, obj);
+  const obj = { tag, hasUnreads, containerStyle: items };
+  items = [tmp.pill, containerStyle, disableEndMargin ? tmp.disableEndMargin : {}];
+  return metroRequire(AppliedForumTag, obj);
 };
 export { AppliedForumTag };

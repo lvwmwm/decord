@@ -6,11 +6,10 @@
 
 // Module 5438 (useIsScreenLandscape)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1482 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import DimensionsStore from "DimensionsStore" /* 1480 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/screen/useIsScreenLandscape.native.tsx");
 
 export const getIsScreenLandscape = function getIsScreenLandscape() {
@@ -21,7 +20,8 @@ export const getIsScreenLandscape = function getIsScreenLandscape() {
   return DimensionsStore.getState().byAppEntry[str].screenIsLandscape;
 };
 export const useIsScreenLandscape = function useIsScreenLandscape() {
-  const appEntryKey = AppEntryKeyContext.useAppEntryKey();
+  const obj = AppEntryKeyContext;
+  const appEntryKey = obj.useAppEntryKey();
   const items = [appEntryKey];
-  return DimensionsStore(noop.useCallback((arg0) => arg0.byAppEntry[appEntryKey].screenIsLandscape, items));
+  return DimensionsStore(react.useCallback((arg0) => arg0.byAppEntry[appEntryKey].screenIsLandscape, items));
 };

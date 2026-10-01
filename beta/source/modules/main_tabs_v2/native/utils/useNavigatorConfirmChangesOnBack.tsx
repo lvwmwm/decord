@@ -5,46 +5,22 @@
 // Exports: default
 
 // Module 10382 (useNavigatorConfirmChangesOnBack)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1074 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const Keyboard = fn(17).Keyboard;
-const NOOP = fn(1074).NOOP;
-const size = fn(2);
+let dependencyMap;
+
+const Keyboard = react_native.Keyboard;
+const NOOP = Constants.NOOP;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/utils/useNavigatorConfirmChangesOnBack.tsx");
 
 export default function useNavigatorConfirmChangesOnBack() {
-  const ref = noop.useRef(null);
-  dependencyMap = noop.useRef(false);
-  let obj = {
-    onGoBack: ref(10383)({
-      onBeforeGoBack(navigation) {
-        if (navigation.preventable) {
-          let current = ref2.current;
-          if (!current) {
-            const current2 = ref.current;
-            let hasUnsavedChangesResult;
-            if (current2 != null) {
-              hasUnsavedChangesResult = current2.hasUnsavedChanges();
-            }
-            current = true !== hasUnsavedChangesResult;
-          }
-          if (!current) {
-            navigation.preventDefault();
-            Keyboard.dismiss();
-            const obj = {
-              hasEdits: true,
-              resetPending,
-              onConfirm() {
-                    closure_1.current = true;
-                    navigation.goBack();
-                  }
-            };
-            ref(ref2[4])(obj);
-          }
-        }
-      }
-    }).onGoBack,
-    ref
-  };
+  let ref2;
+  let resetPending;
+  const ref = react.useRef(null);
+  dependencyMap = react.useRef(false);
+  let obj = { onGoBack: ref(10383)(obj2).onGoBack, ref };
   return obj;
 };

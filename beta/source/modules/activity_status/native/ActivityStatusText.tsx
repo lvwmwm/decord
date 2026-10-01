@@ -5,27 +5,28 @@
 // Exports: default
 
 // Module 10344 (ActivityStatusText)
+import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ text: { flexShrink: 1 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activity_status/native/ActivityStatusText.tsx");
 
 export default function ActivityStatusText(variant) {
+  let children;
+  let style;
   let str = variant.variant;
   ({ children, style } = variant);
   if (str === undefined) {
     str = "text-xs/medium";
   }
   const merged = Object.assign(variant, Object.assign({ children: 0, style: 0, variant: 0 }));
-  const obj = { variant: str, color: "text-muted", style: null, lineClamp: 1 };
   const items = [closure_3().text, style];
-  obj.style = items;
+  closure_3();
+  const Text = Text_Text.Text;
   const merged1 = Object.assign(merged);
-  obj.children = children;
-  return jsx(Text_Text.Text, { variant: str, color: "text-muted", style: null, lineClamp: 1 });
+  return <Text variant={str} color="text-muted" style={items} lineClamp={1}>{children}</Text>;
 };

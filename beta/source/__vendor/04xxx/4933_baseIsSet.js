@@ -4,12 +4,13 @@
 // Dependencies: [535, 634]
 
 // Module 4933 (baseIsSet)
-import _mod535 from "module_535" /* 535 */;
-import _mod634 from "module_634" /* 634 */;
+import isObjectLike from "isObjectLike" /* 535 */;
 
+let tmp;
+const _mod634 = tmp(634);
 
 export default function baseIsSet(arg0) {
-  let tmp3 = _mod535(arg0);
+  let tmp3 = isObjectLike(arg0);
   if (tmp3) {
     tmp3 = "[object Set]" == _mod634(arg0);
   }

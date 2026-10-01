@@ -4,16 +4,22 @@
 // Exports: useRegisterNavigator
 
 // Module 1560
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-const require = arg1;
 
 export const useRegisterNavigator = function useRegisterNavigator() {
-  const first = _slicedToArray(noop.useState(() => first(context[2]).nanoid()), 1)[0];
-  context = noop.useContext(first(context[3]).SingleNavigatorContext);
+  let context;
+  let obj = react;
+  const first = _slicedToArray(react.useState(() => {
+    const obj = first(context[2]);
+    return obj.nanoid();
+  }), 1)[0];
+  context = react.useContext(first(context[3]).SingleNavigatorContext);
   if (undefined === context) {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error("Couldn't register the navigator. Have you wrapped your app with 'NavigationContainer'?\n\nThis can also happen if there are multiple copies of '@react-navigation' packages installed.");
     throw error;
   } else {
@@ -25,5 +31,4 @@ export const useRegisterNavigator = function useRegisterNavigator() {
     }, items);
     return first;
   }
-  obj = noop;
 };

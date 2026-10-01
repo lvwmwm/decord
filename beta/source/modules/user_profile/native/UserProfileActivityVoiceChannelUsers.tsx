@@ -5,54 +5,48 @@
 // Exports: default
 
 // Module 12600 (UserProfileActivityVoiceChannelUsers)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
-import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 10613 */;
-import noop from "module_19" /* 19 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 10613 */;
+import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
+import size from "module_2" /* 2 */;
 
-const UserProfileStackedActionSheetDefault = UserProfileStackedActionSheet;
-
-require = fn;
 function UserRow(user) {
+  let end;
+  let isMobileOnline;
+  let isVROnline;
+  let onPress;
+  let start;
+  let status;
   user = user.user;
   const channel = user.channel;
   ({ onPress, start, end } = user);
-  const avatarDecoration = user(7661).useAvatarDecoration(user, channel.guild_id);
-  const obj = user(7661);
+  let obj = user(7661);
+  const avatarDecoration = obj.useAvatarDecoration(user, channel.guild_id);
   const items = [PresenceStore];
-  const stateFromStoresObject = user(504).useStateFromStoresObject(items, () => ({ status: PresenceStore.getStatus(user.id), isMobileOnline: PresenceStore.isMobileOnline(user.id), isVROnline: PresenceStore.isVROnline(user.id) }));
-  ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  const obj3 = { onPress, label: null, icon: null, start: null, end: null };
   const obj2 = user(504);
-  obj3.label = NicknameUtilsDefault.getName(channel.guild_id, channel.id, user);
-  obj3.icon = jsx(user(1177).Avatar, { user, avatarDecoration, size: user(1177).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
-  obj3.start = start;
-  obj3.end = end;
-  return jsx(user(5917).TableRow, { onPress, label: null, icon: null, start: null, end: null });
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
+    const obj = { status: PresenceStore.getStatus(user.id), isMobileOnline: PresenceStore.isMobileOnline(user.id), isVROnline: PresenceStore.isVROnline(user.id) };
+    return obj;
+  });
+  ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
+  const TableRow = user(5917).TableRow;
+  const obj4 = NicknameUtilsDefault;
+  ({ user, avatarDecoration, size: user(1177).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
+  const Avatar = user(1177).Avatar;
+  return <TableRow onPress={onPress} label={obj4.getName(channel.guild_id, channel.id, user)} icon={null} start={start} end={end} />;
 }
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileActivityVoiceChannelUsers.tsx");
 
 export default function UserProfileActivityVoiceChannelUsers(arg0) {
+  let onBack;
+  let users;
   ({ channel: require, onPressUser: importDefault } = arg0);
   ({ users, onBack } = arg0);
-  const obj = { title: null, onBack: null, scrollable: true, children: null };
-  const intl = util.intl;
-  obj.title = intl.string(util.t["3xHUJ+"]);
-  obj.onBack = onBack;
-  obj.children = jsx(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, {
-    data: users,
-    keyExtractor(id) {
-      return id.id;
-    },
-    renderItem(start) {
-      const item = start.item;
-      return <UserRow key={item.id} user={item} channel={item} onPress={function onPress() {
-        return importDefault(item.id);
-      }} start={arg0.start} end={arg0.end} />;
-    }
-  });
-  return jsx(UserProfileStackedActionSheetDefault, { title: null, onBack: null, scrollable: true, children: null });
+  UserProfileStackedActionSheetDefault;
+  const intl = intl2.intl;
+  return <tmp title={intl.string(intl2.t["3xHUJ+"])} onBack={onBack} scrollable>{null}</tmp>;
 };

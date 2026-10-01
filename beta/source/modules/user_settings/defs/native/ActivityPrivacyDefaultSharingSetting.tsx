@@ -4,41 +4,46 @@
 // Dependencies: [19, 7417, 1186, 1115, 2021, 15526, 14387, 4800, 15527, 1981, 11006, 2]
 
 // Module 15525 (ActivityPrivacyDefaultSharingSetting)
-import util from "util" /* 1115 */;
+import intl6 from "intl" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14387 */;
 import ActivityPrivacyMatchingExperiment from "ActivityPrivacyMatchingExperiment" /* 15526 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const radio = SettingBuilders.createRadio({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.vpgck1);
+    const intl = intl6.intl;
+    return intl.string(intl6.t.vpgck1);
   },
-  parent: fn(7417).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   usePredicate() {
-    return ActivityPrivacyMatchingExperiment.useIsInActivityPrivacyCopyExperiment("ActivityPrivacyDefaultSharingSetting");
+    const obj = ActivityPrivacyMatchingExperiment;
+    return obj.useIsInActivityPrivacyCopyExperiment("ActivityPrivacyDefaultSharingSetting");
   },
   useOptions() {
-    return noop.useMemo(() => {
-      const obj = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF, label: null, subLabel: null };
-      const intl = util.intl;
-      obj.label = intl.string(util.t.FzgQna);
-      const intl2 = util.intl;
-      obj.subLabel = intl2.string(util.t.SQxoyc);
+    return react.useMemo(() => {
+      let intl;
+      let intl2;
+      let intl3;
+      let intl4;
+      let intl5;
+      const obj = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF, label: intl.string(intl6.t.FzgQna), subLabel: intl2.string(intl6.t.SQxoyc) };
+      intl = intl6.intl;
+      intl2 = intl6.intl;
       const items = [obj, , ];
-      const obj2 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS, label: null, subLabel: null };
-      const intl3 = util.intl;
-      obj2.label = intl3.string(util.t["1hvuGH"]);
-      const intl4 = util.intl;
-      obj2.subLabel = intl4.string(util.t.odUCPE);
+      const obj2 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS, label: intl3.string(intl6.t["1hvuGH"]), subLabel: intl4.string(intl6.t.odUCPE) };
+      intl3 = intl6.intl;
+      intl4 = intl6.intl;
       items[1] = obj2;
-      const obj3 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON, label: null };
-      const intl5 = util.intl;
-      obj3.label = intl5.string(util.t.fQc5la);
+      const obj3 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON, label: intl5.string(intl6.t.fQc5la) };
+      intl5 = intl6.intl;
       items[2] = obj3;
       return items;
     }, []);
@@ -53,21 +58,23 @@ const radio = SettingBuilders.createRadio({
     const setting = DefaultGuildsActivityRestrictedV2.getSetting();
     const DefaultGuildsActivityRestrictedV22 = UserSettings.DefaultGuildsActivityRestrictedV2;
     DefaultGuildsActivityRestrictedV22.updateSetting(NumberResult);
+    const obj = ActivityPrivacyMatchingExperiment;
+    const tmp3 = dependencyMap;
     if (obj.getIsInActivityPrivacyUpsellExperiment("ActivityPrivacyDefaultSharingSetting")) {
-      const affectedGuilds = tmp2(14387).computeAffectedGuilds(setting, NumberResult);
+      const tmp2Result = ActivityPrivacyUpsellUtils;
+      const affectedGuilds = tmp2Result.computeAffectedGuilds(setting, NumberResult);
       if (null != affectedGuilds) {
-        const activityRestrictionSettingName = tmp2(14387).getActivityRestrictionSettingName(NumberResult);
-        const tmp2Result2 = tmp2(14387);
-        const obj2 = { direction: null, affectedGuildIds: null, settingName: null };
+        const tmp2Result2 = ActivityPrivacyUpsellUtils;
+        const activityRestrictionSettingName = tmp2Result2.getActivityRestrictionSettingName(NumberResult);
+        const obj2 = { direction: null, affectedGuildIds: null, settingName: activityRestrictionSettingName };
         ({ direction: obj5.direction, affectedGuildIds: obj5.affectedGuildIds } = affectedGuilds);
-        obj2.settingName = activityRestrictionSettingName;
-        ActionSheetActionCreatorsDefault.openLazy(tmp2(1981)(15527, dependencyMap.paths), "ActivityPrivacyUpsellActionSheet", obj2);
+        const obj4 = ActionSheetActionCreatorsDefault;
+        obj4.openLazy(asyncRequire(15527, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
       }
-      const tmp2Result = tmp2(14387);
     }
   }
-});
-const size = fn(2);
+};
+const radio = SettingBuilders.createRadio(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ActivityPrivacyDefaultSharingSetting.tsx");
 
 export default radio;

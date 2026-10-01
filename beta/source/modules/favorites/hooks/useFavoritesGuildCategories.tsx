@@ -5,19 +5,24 @@
 // Exports: default
 
 // Module 10462 (useFavoritesGuildCategories)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import FavoritesHooks from "FavoritesHooks" /* 9685 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function areCategoriesEqual(arr, arg1) {
-  closure_0 = arg1;
-  return arr.length === arg1.length && arr.every((id, index) => id.id === closure_0[index].id && id.name === tmp[index].name);
+  let closure_0 = arg1;
+  const tmp = arr.length === arg1.length && arr.every((id, index) => id.id === closure_0[index].id && id.name === tmp[index].name);
+  return tmp;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildCategories.tsx");
 
 export default function useFavoritesGuildCategories() {
+  let favoriteChannels;
+  let obj = get_initialized;
   const items = [FavoriteStore];
-  return initialize.useStateFromStores(items, () => FavoritesHooks.getFavoritesCategories(favoriteChannels.getFavoriteChannels()), [], areCategoriesEqual);
+  return obj.useStateFromStores(items, () => {
+    const obj = FavoritesHooks;
+    return obj.getFavoritesCategories(favoriteChannels.getFavoriteChannels());
+  }, [], areCategoriesEqual);
 };

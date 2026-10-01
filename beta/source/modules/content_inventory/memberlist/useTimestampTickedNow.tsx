@@ -6,17 +6,24 @@
 
 // Module 12580 (useTimestampTickedNow)
 import DurationsDefault from "Durations" /* 1091 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-const require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/content_inventory/memberlist/useTimestampTickedNow.tsx");
 
 export const useTimestampTickedNow = function useTimestampTickedNow() {
+  let _undefined;
+  let closure_0;
+  let hovered;
+  let isAppFocused;
+  let now;
+  let result;
+  let useReducedMotion;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -25,16 +32,18 @@ export const useTimestampTickedNow = function useTimestampTickedNow() {
   if (isAppFocused === undefined) {
     isAppFocused = true;
   }
+  _require = undefined;
   importDefault = undefined;
-  const now = _slicedToArray(noop.useState(() => {
+  [now, _require] = react.useState(() => {
     const timestamp = Date.now();
-    const rounded = Math.floor(timestamp / _undefined(1091).Millis.SECOND);
-    return rounded * _undefined(1091).Millis.SECOND;
-  }), 2);
-  _require = now[1];
+    const rounded = Math.floor(timestamp / _undefined(dependencyMap[3]).Millis.SECOND);
+    return rounded * _undefined(dependencyMap[3]).Millis.SECOND;
+  });
   const items = [AccessibilityStore];
-  let stateFromStores = require("initialize").useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const obj3 = require("get initialized");
+  let stateFromStores = obj3.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let slowTickMode = !isAppFocused;
+  const obj2 = react;
   if (isAppFocused) {
     if (stateFromStores) {
       stateFromStores = !hovered;
@@ -43,20 +52,20 @@ export const useTimestampTickedNow = function useTimestampTickedNow() {
   }
   const SECOND = DurationsDefault.Millis.SECOND;
   if (slowTickMode) {
-    let result = 15 * SECOND;
+    result = 15 * SECOND;
   } else {
     result = SECOND;
   }
   importDefault = result;
   const items1 = [result];
-  const effect = noop.useEffect(() => {
-    const interval = new closure_0(2040).Interval();
+  const effect = obj2.useEffect(() => {
+    const interval = new closure_0(dependencyMap[5]).Interval();
     interval.start(c1, () => {
       const timestamp = Date.now();
-      const rounded = Math.floor(timestamp / c1(1091).Millis.SECOND);
-      interval(rounded * c1(1091).Millis.SECOND);
+      const rounded = Math.floor(timestamp / c1(dependencyMap[3]).Millis.SECOND);
+      interval(rounded * c1(dependencyMap[3]).Millis.SECOND);
     });
     return () => interval.stop();
   }, items1);
-  return { now: now[0], slowTickMode };
+  return { now, slowTickMode };
 };

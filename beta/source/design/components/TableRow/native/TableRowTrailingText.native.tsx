@@ -5,12 +5,12 @@
 // Exports: TableRowTrailingText
 
 // Module 5926 (TableRowTrailingText)
+import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowTrailingText.native.tsx");
 
 export const TableRowTrailingText = function TableRowTrailingText(children) {

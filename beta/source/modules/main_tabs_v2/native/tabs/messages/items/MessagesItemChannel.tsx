@@ -5,82 +5,86 @@
 // Exports: getMessagesItemChannelSizes
 
 // Module 15663 (MessagesItemChannel)
-import initialize from "initialize" /* 504 */;
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import _mod8179 from "module_8179" /* 8179 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 8179 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
 import MessagesItemChannelBase from "MessagesItemChannelBase" /* 15664 */;
 import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15673 */;
-import _mod15674 from "module_15674" /* 15674 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import LegendList from "LegendList" /* 15674 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
 const MessagesItemChannelBaseDefault = MessagesItemChannelBase;
 
-require = fn;
-const jsx = fn(21).jsx;
-let closure_7 = noop.memo(function MessagesItemChannel(arg0) {
+const jsx = Fragment.jsx;
+let closure_7 = react.memo(function MessagesItemChannel(arg0) {
+  let isPressed;
+  let placeholderHeight;
+  let row;
+  let setIsPressed;
+  let tmp5;
   ({ channelId: require, placeholderHeight } = arg0);
   ({ row, isPressed, setIsPressed } = arg0);
   const items = [ChannelStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => ChannelStore.getChannel(require));
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(require));
   let isPrivateResult;
   if (stateFromStores != null) {
     isPrivateResult = stateFromStores.isPrivate();
   }
   if (true === isPrivateResult) {
-    const obj2 = { channel: stateFromStores, height: placeholderHeight, isPressed, setIsPressed };
-    let tmp5 = jsx(MessagesItemChannelBaseDefault, { channel: stateFromStores, height: placeholderHeight, isPressed, setIsPressed });
+    tmp5 = jsx(MessagesItemChannelBaseDefault, { channel: stateFromStores, height: placeholderHeight, isPressed, setIsPressed });
   } else {
-    const obj3 = { height: placeholderHeight, row };
     tmp5 = jsx(MessagesItemPlaceholderDefault, { height: placeholderHeight, row });
   }
   return tmp5;
 });
-const memoResult = noop.memo((arg0) => {
-  const obj = {};
-  [tmp2, tmp3] = noop.useState(false);
+const memoResult = react.memo((arg0) => {
+  let tmp2;
+  let tmp3;
+  [tmp2, tmp3] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
   const merged = Object.assign(arg0);
-  obj.isPressed = tmp2;
-  obj.setIsPressed = tmp3;
-  return <closure_7 />;
+  return <closure_7 isPressed={tmp2} setIsPressed={tmp3} />;
 });
-const memoResult1 = noop.memo((channelId) => {
+const memoResult1 = react.memo((channelId) => {
   const items = [channelId.channelId];
-  const tmp = _slicedToArray(_mod8179.useRecyclingState(false, items), 2);
-  closure_0 = tmp2;
+  const obj = defaultMVCPConfig;
+  const tmp = _slicedToArray(obj.useRecyclingState(false, items), 2);
+  let closure_0 = tmp3;
   const items1 = [tmp[1]];
-  const obj2 = {};
-  const callback = noop.useCallback((arg0) => closure_0(arg0, true), items1);
+  const first = tmp[0];
+  const callback = react.useCallback((arg0) => closure_0(arg0, true), items1);
   const merged = Object.assign(channelId);
-  obj2.isPressed = tmp[0];
-  obj2.setIsPressed = callback;
-  return <closure_7 />;
+  return <closure_7 isPressed={first} setIsPressed={callback} />;
 });
-const size = fn(2);
+const memoResult2 = react.memo((arg0) => {
+  let tmp2;
+  let tmp3;
+  const obj = LegendList;
+  [tmp2, tmp3] = obj.useRecyclingState(false);
+  _slicedToArray(obj.useRecyclingState(false), 2);
+  const merged = Object.assign(arg0);
+  return <closure_7 isPressed={tmp2} setIsPressed={tmp3} />;
+});
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemChannel.tsx");
 
 export const getMessagesItemChannelSizes = function getMessagesItemChannelSizes(fontScale) {
-  const scaleTextLineHeightResult = useScaledTextLineHeight.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
-  const scaleTextLineHeightResult1 = useScaledTextLineHeight.scaleTextLineHeight("text-xs/medium", fontScale);
+  let sum;
+  const obj = useScaledTextLineHeight;
+  const scaleTextLineHeightResult = obj.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
+  const obj2 = useScaledTextLineHeight;
+  const scaleTextLineHeightResult1 = obj2.scaleTextLineHeight("text-xs/medium", fontScale);
   const PX_16 = nativeDefault.space.PX_16;
   const PX_32 = nativeDefault.space.PX_32;
-  const obj3 = { avatar: PX_32, height: null, label: null, labelSecondary: null, padding: null };
-  const sum = Math.max(PX_32, scaleTextLineHeightResult + scaleTextLineHeightResult1) + PX_16;
-  obj3.height = sum + MessagesItemChannelBase.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
-  obj3.label = scaleTextLineHeightResult;
-  obj3.labelSecondary = scaleTextLineHeightResult1;
-  obj3.padding = PX_16;
+  const obj3 = { avatar: PX_32, height: sum + MessagesItemChannelBase.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING, label: scaleTextLineHeightResult, labelSecondary: scaleTextLineHeightResult1, padding: PX_16 };
+  sum = Math.max(PX_32, scaleTextLineHeightResult + scaleTextLineHeightResult1) + PX_16;
   return obj3;
 };
 export const MessagesItemChannelFast = memoResult;
 export const MessagesItemChannelFlash = memoResult1;
-export const MessagesItemChannelLegend = noop.memo((arg0) => {
-  const obj2 = {};
-  [tmp2, tmp3] = _mod15674.useRecyclingState(false);
-  const merged = Object.assign(arg0);
-  obj2.isPressed = tmp2;
-  obj2.setIsPressed = tmp3;
-  return <closure_7 />;
-});
+export const MessagesItemChannelLegend = memoResult2;

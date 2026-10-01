@@ -5,37 +5,47 @@
 // Exports: default
 
 // Module 17066 (useCaptchaModalEffects)
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let dependencyMap;
 
-const require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/captcha/useCaptchaModalEffects.tsx");
 
 export default function useCaptchaModalEffects(arg0) {
+  let analyticsType;
+  let closure_2;
   ({ onReject: require, analyticsType } = arg0);
   if (analyticsType === undefined) {
     analyticsType = "Guild Join Captcha";
   }
-  dependencyMap = noop.useRef(true);
-  analyticsType(5298)(() => () => {
-    if (ref.current) {
-      if (closure_1_0 != null) {
-        tmp(require("SharedCaptchaUtils").CaptchaError.CANCEL);
+  dependencyMap = react.useRef(true);
+  const tmp = analyticsType(5298)(() => {
+    let ref;
+    return () => {
+      if (ref.current) {
+        if (closure_1_0 != null) {
+          tmp(require("SharedCaptchaUtils").CaptchaError.CANCEL);
+        }
       }
-    }
+    };
   });
   const items = [analyticsType];
-  const effect = noop.useEffect(() => {
-    AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_MODAL, { type: analyticsType });
+  const effect = react.useEffect(() => {
+    let ref;
+    let type;
+    let obj = AnalyticsUtilsDefault;
+    let obj2 = { type: analyticsType };
+    obj.track(AnalyticEvents.OPEN_MODAL, obj2);
     return () => {
       if (ref.current) {
         const obj2 = { type };
-        analyticsType(ref[4]).track(constants.MODAL_DISMISSED, obj2);
         const obj = analyticsType(ref[4]);
+        obj.track(constants.MODAL_DISMISSED, obj2);
       }
     };
   }, items);

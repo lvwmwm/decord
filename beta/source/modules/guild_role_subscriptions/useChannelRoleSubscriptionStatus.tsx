@@ -5,14 +5,17 @@
 // Exports: default
 
 // Module 5314 (useChannelRoleSubscriptionStatus)
+import Constants from "Constants" /* 1074 */;
 import GatedChannelStore from "GatedChannelStore" /* 2100 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
 function getChannelRoleSubscriptionStatus(id, ChannelStore, GatedChannelStore, PermissionStore) {
+  let obj3;
   let obj = ChannelStore;
   if (ChannelStore === undefined) {
     obj = ChannelStore;
@@ -31,33 +34,35 @@ function getChannelRoleSubscriptionStatus(id, ChannelStore, GatedChannelStore, P
     result = channel.isRoleSubscriptionTemplatePreviewChannel();
   }
   if (result) {
-    let obj3 = { isSubscriptionGated: true, needSubscriptionToAccess: true };
+    obj3 = { isSubscriptionGated: true, needSubscriptionToAccess: true };
   } else {
     if (null != channel) {
       if (obj2.isChannelGated(channel.guild_id, channel.id)) {
+        let tmp4;
         const can = tmp.can;
-        let obj4 = Permissions;
         if (channel.isGuildVocal()) {
-          let tmp3 = !can(obj4.CONNECT, channel);
+          tmp4 = !can(tmp3.CONNECT, channel);
         } else {
-          tmp3 = !can(obj4.VIEW_CHANNEL, channel);
+          tmp4 = !can(tmp3.VIEW_CHANNEL, channel);
         }
-        obj4 = { isSubscriptionGated: true, needSubscriptionToAccess: tmp3 };
+        obj3 = { isSubscriptionGated: true, needSubscriptionToAccess: tmp4 };
+        const obj4 = { isSubscriptionGated: true, needSubscriptionToAccess: tmp4 };
       }
     }
     obj3 = closure_6;
   }
   return obj3;
 }
-const Permissions = fn(1074).Permissions;
+const Permissions = Constants.Permissions;
 let closure_6 = { needSubscriptionToAccess: false, isSubscriptionGated: false };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/useChannelRoleSubscriptionStatus.tsx");
 
 export default function useChannelRoleSubscriptionStatus(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [ChannelStore, GatedChannelStore, PermissionStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStoresObject(items, () => getChannelRoleSubscriptionStatus(closure_0, ChannelStore, GatedChannelStore, PermissionStore), items1);
+  const obj = require("get initialized");
+  return obj.useStateFromStoresObject(items, () => getChannelRoleSubscriptionStatus(closure_0, ChannelStore, GatedChannelStore, PermissionStore), items1);
 };
 export { getChannelRoleSubscriptionStatus };

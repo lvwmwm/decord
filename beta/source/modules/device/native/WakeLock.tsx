@@ -5,30 +5,34 @@
 // Exports: default, useWakeLock
 
 // Module 8919 (WakeLock)
-import NativeScreenWakeLockModuleDefault from "NativeScreenWakeLockModule" /* 8920 */;
-import noop from "module_19" /* 19 */;
+import react_nativeDefault from "react-native" /* 8920 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/device/native/WakeLock.tsx");
 
 export default function WakeLock(wakeLockKey) {
   wakeLockKey = wakeLockKey.wakeLockKey;
   const items = [wakeLockKey];
-  const effect = noop.useEffect(() => {
-    const lock = NativeScreenWakeLockModuleDefault.requestLock(wakeLockKey);
+  const effect = react.useEffect(() => {
+    let obj = react_nativeDefault;
+    const lock = obj.requestLock(wakeLockKey);
     return () => {
-      wakeLockKey(dependencyMap[1]).releaseLock(closure_1_0);
+      const obj = wakeLockKey(dependencyMap[1]);
+      obj.releaseLock(closure_1_0);
     };
   }, items);
   return null;
 };
 export const useWakeLock = function useWakeLock(VoiceMessageOverlay) {
-  closure_0 = VoiceMessageOverlay;
+  let closure_0 = VoiceMessageOverlay;
   const items = [VoiceMessageOverlay];
-  const effect = noop.useEffect(() => {
-    const lock = NativeScreenWakeLockModuleDefault.requestLock(wakeLockKey);
+  const effect = react.useEffect(() => {
+    let obj = react_nativeDefault;
+    const lock = obj.requestLock(wakeLockKey);
     return () => {
-      wakeLockKey(dependencyMap[1]).releaseLock(closure_1_0);
+      const obj = wakeLockKey(dependencyMap[1]);
+      obj.releaseLock(closure_1_0);
     };
   }, items);
 };

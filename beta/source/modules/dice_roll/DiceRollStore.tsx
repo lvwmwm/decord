@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/dice_roll/DiceRollStore.tsx")
 export default obj2;
 export { INITIAL_STATE };
 export const useDiceRollState = function useDiceRollState(channelId) {
-  closure_0 = channelId;
+  let closure_0 = channelId;
   return obj2((channelId) => {
     let tmp = null;
     if (channelId.channelId === closure_0) {

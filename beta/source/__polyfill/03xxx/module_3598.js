@@ -1,9 +1,0 @@
-// Module ID: 3598
-// Function ID: 3599
-// Dependencies: [1121]
-
-// Module 3598
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "f91fb3ef4b9d0db7621bf27383d31456", name: "hu.messages.f91fb3ef4b9d0db7621bf27383d31456.compiled.messages", type: "jsona" });

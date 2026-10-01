@@ -4,63 +4,75 @@
 // Dependencies: [5099, 1282, 5146, 5150, 1283, 5163, 1303, 5155, 5151, 5164, 5165]
 
 // Module 5162 (OrdinaryDefineOwnProperty)
-import _mod5099 from "module_5099" /* 5099 */;
+import _mod1282 from "module_1282" /* 1282 */;
+import _mod1283 from "module_1283" /* 1283 */;
+import _mod1303 from "module_1303" /* 1303 */;
+import isObject from "isObject" /* 5099 */;
+import isPropertyKey from "isPropertyKey" /* 5146 */;
+import isPropertyDescriptor from "isPropertyDescriptor" /* 5150 */;
+import ToPropertyDescriptor from "ToPropertyDescriptor" /* 5151 */;
+import SameValue from "SameValue" /* 5155 */;
+import IsAccessorDescriptor from "IsAccessorDescriptor" /* 5163 */;
+import GetIntrinsic from "GetIntrinsic" /* 5164 */;
+import ValidateAndApplyPropertyDescriptor from "ValidateAndApplyPropertyDescriptor" /* 5165 */;
 
 
 export default function OrdinaryDefineOwnProperty(arg0, arg1, __Writable__) {
-  if (_mod5099(arg0)) {
-    if (tmp(5146)(arg1)) {
-      if (tmp(5150)(__Writable__)) {
-        if (tmp(1283)) {
-          const tmp30 = tmp(1283)(arg0, arg1);
-          let tmp31 = tmp30;
-          if (tmp30) {
-            tmp31 = tmp(5151)(tmp30);
-          }
-          return tmp(5165)(arg0, arg1, tmp(5164)(arg0), __Writable__, tmp31);
-        } else if (tmp(5163)(__Writable__)) {
-          const tmp28 = new tmp(1303)("This environment does not support accessor property descriptors.");
-          throw tmp28;
+  if (isObject(arg0)) {
+    if (isPropertyKey(arg1)) {
+      if (isPropertyDescriptor(__Writable__)) {
+        if (_mod1283) {
+          const tmp20 = _mod1283(arg0, arg1);
+          const tmp21 = tmp20 && ToPropertyDescriptor(tmp20);
+          const tmp22 = GetIntrinsic(arg0);
+          return ValidateAndApplyPropertyDescriptor(arg0, arg1, tmp22, __Writable__, tmp21);
+        } else if (IsAccessorDescriptor(__Writable__)) {
+          const self9 = this;
+          const self10 = this;
+          const tmp18 = new _mod1303("This environment does not support accessor property descriptors.");
+          throw tmp18;
         } else {
-          let tmp17 = !(arg1 in arg0) && __Writable__["[[Writable]]"] && __Writable__["[[Enumerable]]"] && __Writable__["[[Configurable]]"];
-          if (tmp17) {
-            tmp17 = "[[Value]]" in __Writable__;
+          let tmp12 = arg1 in arg0;
+          const tmp11 = !(arg1 in arg0) && __Writable__["[[Writable]]"] && __Writable__["[[Enumerable]]"] && __Writable__["[[Configurable]]"] && "[[Value]]" in __Writable__;
+          if (tmp12) {
+            tmp12 = !("[[Configurable]]" in __Writable__) || __Writable__["[[Configurable]]"];
           }
-          let tmp18 = arg1 in arg0;
-          if (tmp18) {
-            tmp18 = !("[[Configurable]]" in __Writable__) || __Writable__["[[Configurable]]"];
-            const tmp19 = !("[[Configurable]]" in __Writable__) || __Writable__["[[Configurable]]"];
+          if (tmp12) {
+            tmp12 = !("[[Enumerable]]" in __Writable__) || __Writable__["[[Enumerable]]"];
           }
-          if (tmp18) {
-            tmp18 = !("[[Enumerable]]" in __Writable__) || __Writable__["[[Enumerable]]"];
-            const tmp20 = !("[[Enumerable]]" in __Writable__) || __Writable__["[[Enumerable]]"];
+          if (tmp12) {
+            tmp12 = !("[[Writable]]" in __Writable__) || __Writable__["[[Writable]]"];
           }
-          if (tmp18) {
-            tmp18 = !("[[Writable]]" in __Writable__) || __Writable__["[[Writable]]"];
-            const tmp21 = !("[[Writable]]" in __Writable__) || __Writable__["[[Writable]]"];
+          if (tmp12) {
+            tmp12 = "[[Value]]" in __Writable__;
           }
-          if (tmp18) {
-            tmp18 = "[[Value]]" in __Writable__;
-          }
-          if (!tmp17) {
-            if (!tmp18) {
-              const tmp24 = new tmp(1303)("This environment does not support defining non-writable, non-enumerable, or non-configurable properties");
-              throw tmp24;
+          if (!tmp11) {
+            if (!tmp12) {
+              const self7 = this;
+              const self8 = this;
+              const tmp16 = new _mod1303("This environment does not support defining non-writable, non-enumerable, or non-configurable properties");
+              throw tmp16;
             }
           }
           arg0[arg1] = __Writable__["[[Value]]"];
-          return tmp(5155)(arg0[arg1], __Writable__["[[Value]]"]);
+          return SameValue(arg0[arg1], __Writable__["[[Value]]"]);
         }
       } else {
-        const tmp15 = new tmp(1282)("Assertion failed: Desc must be a Property Descriptor");
-        throw tmp15;
+        const self5 = this;
+        const self6 = this;
+        const tmp9 = new _mod1282("Assertion failed: Desc must be a Property Descriptor");
+        throw tmp9;
       }
     } else {
-      const tmp10 = new tmp(1282)("Assertion failed: P must be a Property Key");
-      throw tmp10;
+      const self3 = this;
+      const self4 = this;
+      const tmp6 = new _mod1282("Assertion failed: P must be a Property Key");
+      throw tmp6;
     }
   } else {
-    const tmp5 = new tmp(1282)("Assertion failed: O must be an Object");
-    throw tmp5;
+    const self = this;
+    const self2 = this;
+    const tmp3 = new _mod1282("Assertion failed: O must be an Object");
+    throw tmp3;
   }
 };

@@ -4,25 +4,28 @@
 // Exports: prepareConfigForNativeSide, resolveInternalConfigProps, useClonedAndRemappedConfig
 
 // Module 6142
-import _mod6116 from "module_6116" /* 6116 */;
-import hash from "hash" /* 6130 */;
+import react from "react" /* 19 */;
+import Reanimated2 from "Reanimated" /* 6116 */;
+import SHARED_VALUE_OFFSET from "SHARED_VALUE_OFFSET" /* 6130 */;
 import allowedNativeProps2 from "allowedNativeProps" /* 6131 */;
+import _mod6140 from "module_6140" /* 6140 */;
 import _mod6143 from "module_6143" /* 6143 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-require = fn;
-const useMemo = fn(19).useMemo;
+const useMemo = react.useMemo;
 const map = new Map();
 function DEFAULT_PROPS_TRANSFORMER(arg0) {
   return arg0;
 }
 function isGestureEnabled(gestures) {
+  let someResult;
+  const obj = _mod6140;
   if (obj.isComposedGesture(gestures)) {
     gestures = gestures.gestures;
-    let someResult = gestures.some(isGestureEnabled);
+    someResult = gestures.some(isGestureEnabled);
   } else {
-    someResult = false !== hash.maybeUnpackValue(gestures.config.enabled);
-    const tmpResult = hash;
+    const tmpResult = SHARED_VALUE_OFFSET;
+    someResult = false !== tmpResult.maybeUnpackValue(gestures.config.enabled);
   }
   return someResult;
 }
@@ -31,30 +34,32 @@ export { isGestureEnabled };
 export const resolveInternalConfigProps = function resolveInternalConfigProps(useAnimated) {
   useAnimated = useAnimated.useAnimated;
   if (!useAnimated) {
-    useAnimated = _mod6143.isNativeAnimatedEvent(useAnimated.onUpdate);
+    const obj = _mod6143;
+    useAnimated = obj.isNativeAnimatedEvent(useAnimated.onUpdate);
   }
   useAnimated.dispatchesAnimatedEvents = useAnimated;
   if (useAnimated.dispatchesAnimatedEvents) {
     useAnimated.disableReanimated = true;
   }
-  const disableReanimated = useAnimated.disableReanimated;
-  let result = !disableReanimated;
-  if (!disableReanimated) {
-    result = undefined !== _mod6116.Reanimated;
-  }
+  let result = !useAnimated.disableReanimated && undefined !== Reanimated2.Reanimated;
   if (result) {
-    result = hash.hasWorkletEventHandlers(useAnimated);
+    const obj2 = SHARED_VALUE_OFFSET;
+    result = obj2.hasWorkletEventHandlers(useAnimated);
   }
   if (result) {
     result = !useAnimated.dispatchesAnimatedEvents;
   }
   useAnimated.shouldUseReanimatedDetector = result;
-  useAnimated.needsPointerData = _mod6143.shouldHandleTouchEvents(useAnimated);
+  const obj3 = _mod6143;
+  useAnimated.needsPointerData = obj3.shouldHandleTouchEvents(useAnimated);
 };
 export const prepareConfigForNativeSide = function prepareConfigForNativeSide(arg0, shouldUseReanimatedDetector) {
+  let first;
+  let iter;
   shouldUseReanimatedDetector = shouldUseReanimatedDetector.shouldUseReanimatedDetector;
   if (shouldUseReanimatedDetector) {
-    shouldUseReanimatedDetector = !hash.maybeUnpackValue(shouldUseReanimatedDetector.runOnJS);
+    const obj = SHARED_VALUE_OFFSET;
+    shouldUseReanimatedDetector = !obj.maybeUnpackValue(shouldUseReanimatedDetector.runOnJS);
   }
   const obj2 = { dispatchesReanimatedEvents: shouldUseReanimatedDetector };
   const PropsWhiteLists = allowedNativeProps2.PropsWhiteLists;
@@ -63,6 +68,7 @@ export const prepareConfigForNativeSide = function prepareConfigForNativeSide(ar
     EMPTY_WHITE_LIST = allowedNativeProps2.EMPTY_WHITE_LIST;
   }
   const entries = Object.entries(shouldUseReanimatedDetector);
+  const tmp12 = entries[Symbol.iterator]();
   while (tmp12 !== undefined) {
     [first, iter] = tmp13;
     let tmp17 = first;
@@ -80,11 +86,11 @@ export const prepareConfigForNativeSide = function prepareConfigForNativeSide(ar
           let str = "";
           let str2 = " is not a valid property for ";
           let str3 = " and will be ignored.";
-          let warnResult = console.warn(tmp19Result.tagMessage("" + tmp17 + " is not a valid property for " + arg0 + " and will be ignored."));
-          continue;
+          let warnResult = warn(tmp19Result.tagMessage("" + tmp17 + " is not a valid property for " + arg0 + " and will be ignored."));
         }
         continue;
       }
+      continue;
     }
     let Reanimated = tmp19(6116).Reanimated;
     let isSharedValueResult;
@@ -96,49 +102,48 @@ export const prepareConfigForNativeSide = function prepareConfigForNativeSide(ar
   return obj2;
 };
 export const useClonedAndRemappedConfig = function useClonedAndRemappedConfig(gestureHandlerProps, map, transformHoverProps) {
-  closure_0 = gestureHandlerProps;
+  let closure_0 = gestureHandlerProps;
   let tmp = map;
   if (map === undefined) {
     tmp = map;
   }
-  closure_1 = tmp;
+  let closure_1 = tmp;
   let tmp2 = transformHoverProps;
   if (transformHoverProps === undefined) {
     tmp2 = DEFAULT_PROPS_TRANSFORMER;
   }
-  closure_2 = tmp2;
+  let closure_2 = tmp2;
   const items = [gestureHandlerProps, tmp, tmp2];
   return useMemo(() => {
     const obj = {};
-    const merged = Object.assign(closure_0);
+    const merged = Object.assign(gestureHandlerProps);
     const item = closure_1.forEach((item, index) => {
       if (index in obj) {
-        tmp3[item] = tmp3[index];
-        delete tmp[tmp2];
+        obj[item] = obj[index];
+        delete obj[tmp];
       }
     });
     const tmp3 = closure_2(obj);
     let useAnimated = tmp3.useAnimated;
     if (!useAnimated) {
-      useAnimated = _mod6143.isNativeAnimatedEvent(tmp3.onUpdate);
+      const obj2 = _mod6143;
+      useAnimated = obj2.isNativeAnimatedEvent(tmp3.onUpdate);
     }
     tmp3.dispatchesAnimatedEvents = useAnimated;
     if (tmp3.dispatchesAnimatedEvents) {
       tmp3.disableReanimated = true;
     }
-    const disableReanimated = tmp3.disableReanimated;
-    let result = !disableReanimated;
-    if (!disableReanimated) {
-      result = undefined !== _mod6116.Reanimated;
-    }
+    let result = !tmp3.disableReanimated && undefined !== Reanimated2.Reanimated;
     if (result) {
-      result = hash.hasWorkletEventHandlers(tmp3);
+      const obj3 = SHARED_VALUE_OFFSET;
+      result = obj3.hasWorkletEventHandlers(tmp3);
     }
     if (result) {
       result = !tmp3.dispatchesAnimatedEvents;
     }
     tmp3.shouldUseReanimatedDetector = result;
-    tmp3.needsPointerData = _mod6143.shouldHandleTouchEvents(tmp3);
+    const obj4 = _mod6143;
+    tmp3.needsPointerData = obj4.shouldHandleTouchEvents(tmp3);
     return tmp3;
   }, items);
 };

@@ -6,38 +6,46 @@
 // Module 7290 (PressableNavigatorBackIcon)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7050 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+let channel, currentlySelectedChannelId, navigation, totalMentionCount;
+
+let c10;
+let c9;
+let closure_4;
+let hasOwnProperty;
+({ View: closure_4, Image: hasOwnProperty } = react_native);
+({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles(() => {
-  const obj = { maskWrapper: null, maskStroke: null, actionButtonPressable: null, actionButtonIcon: null };
-  const rect = { position: "absolute", minWidth: native.BADGE_SIZE, height: native.BADGE_SIZE, top: 10, left: 8, flexShrink: 0, flexGrow: 1, zIndex: 100 };
-  obj.maskWrapper = rect;
-  obj.maskStroke = { backgroundColor: nativeDefault.colors.PANEL_BG };
-  obj.actionButtonPressable = { padding: 8, zIndex: 100, borderRadius: 20 };
-  const obj2 = { backgroundColor: nativeDefault.colors.PANEL_BG };
-  obj.actionButtonIcon = { tintColor: nativeDefault.colors.ICON_SUBTLE };
+  let rect;
+  const obj = { maskWrapper: rect, maskStroke: { backgroundColor: nativeDefault.colors.PANEL_BG }, actionButtonPressable: { padding: 8, zIndex: 100, borderRadius: 20 }, actionButtonIcon: { tintColor: nativeDefault.colors.ICON_SUBTLE } };
+  rect = { position: "absolute", minWidth: native.BADGE_SIZE, height: native.BADGE_SIZE, top: 10, left: 8, flexShrink: 0, flexGrow: 1, zIndex: 100 };
+  ({ backgroundColor: nativeDefault.colors.PANEL_BG });
+  ({ tintColor: nativeDefault.colors.ICON_SUBTLE });
   return obj;
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorBackIcon.tsx");
-
-export const PressableNavigatorBackIcon = noop.forwardRef((navigation, ref) => {
+const forwardRefResult = react.forwardRef((navigation, ref) => {
+  let formatToPlainStringResult;
+  let items3;
+  let obj8;
+  let tmp15;
   navigation = navigation.navigation;
   const onPress = navigation.onPress;
+  const badgeCutoutColor = navigation.badgeCutoutColor;
   const merged = Object.assign(navigation, Object.assign({ navigation: 0, onPress: 0, badgeCutoutColor: 0 }));
   let stateFromStores;
   const tmp2 = closure_11();
+  let obj = navigation(stateFromStores[9]);
   const items = [GuildReadStateStore, SelectedChannelStore, ChannelStore];
-  stateFromStores = navigation(stateFromStores[9]).useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
+    const obj = totalMentionCount;
     totalMentionCount = totalMentionCount.getTotalMentionCount();
     currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
     if (null == currentlySelectedChannelId) {
@@ -53,27 +61,28 @@ export const PressableNavigatorBackIcon = noop.forwardRef((navigation, ref) => {
       }
       return totalMentionCount - obj.getHighImportanceMentionCountForChannel(guild_id, currentlySelectedChannelId);
     }
-    obj = totalMentionCount;
   });
+  let obj2 = react;
   const items1 = [stateFromStores];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     if (stateFromStores >= 10) {
+      let obj;
       if (tmp < 100) {
+        obj = { minWidth: native.BADGE_SIZE + 8 };
         const obj2 = { minWidth: native.BADGE_SIZE + 8 };
-        let obj = obj2;
       } else {
         obj = { minWidth: native.BADGE_SIZE + 12 };
       }
       return obj;
     }
   }, items1);
-  let obj = navigation(stateFromStores[9]);
-  let obj2 = noop;
-  const token = navigation(stateFromStores[10]).useToken(navigation.badgeCutoutColor);
   const obj3 = navigation(stateFromStores[10]);
+  const token = obj3.useToken(badgeCutoutColor);
+  const useGradientValue = navigation(stateFromStores[11]).useGradientValue;
   let backgroundColor = token;
+  navigation(stateFromStores[11]);
   if (token == null) {
-    backgroundColor = obj4.useGradientValue(navigation(stateFromStores[11]).GradientPercentage.START);
+    backgroundColor = useGradientValue(navigation(stateFromStores[11]).GradientPercentage.START);
   }
   if (backgroundColor == null) {
     backgroundColor = tmp2.maskStroke.backgroundColor;
@@ -81,41 +90,40 @@ export const PressableNavigatorBackIcon = noop.forwardRef((navigation, ref) => {
   const items2 = [navigation, onPress];
   const callback = obj2.useCallback(() => {
     if (null == onPress) {
+      const obj = navigation;
       if (navigation != null) {
         obj.goBack();
       }
-      obj = navigation;
     } else {
       tmp();
     }
   }, items2);
-  obj4 = navigation(stateFromStores[11]);
-  const obj5 = { ref };
+  const obj4 = { ref, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: callback, style: tmp2.actionButtonPressable, children: tmp15(closure_4, { children: items3 }) };
+  const tmp12 = onPress(stateFromStores[12]);
+  const PressableOpacity = tmp3(tmp4[13]).PressableOpacity;
   const merged1 = Object.assign(merged);
-  obj5.accessibilityRole = "button";
   if (stateFromStores > 0) {
     const intl2 = tmp3(tmp4[14]).intl;
-    const obj6 = { mentionCount: stateFromStores };
-    let formatToPlainStringResult = intl2.formatToPlainString(tmp3(tmp4[14]).t.vxFYaM, obj6);
+    const obj5 = { mentionCount: stateFromStores };
+    formatToPlainStringResult = intl2.formatToPlainString(tmp3(tmp4[14]).t.vxFYaM, obj5);
   } else {
     const intl = tmp3(tmp4[14]).intl;
     formatToPlainStringResult = intl.string(tmp3(tmp4[14]).t["13/7kX"]);
   }
-  obj5.accessibilityLabel = formatToPlainStringResult;
-  obj5.onPress = callback;
-  obj5.style = tmp2.actionButtonPressable;
-  const tmp11 = onPress(stateFromStores[12]);
-  const items3 = [closure_9(closure_5, { source: onPress(stateFromStores[15]), style: { tintColor: tmp2.actionButtonIcon.tintColor } }), ];
-  let tmp9Result = null;
+  items3 = [, ];
+  const obj6 = { source: onPress(stateFromStores[15]), style: { tintColor: tmp2.actionButtonIcon.tintColor } };
+  items3[0] = closure_9(closure_5, obj6);
+  let tmp10Result = null;
+  tmp15 = closure_10;
   if (stateFromStores > 0) {
-    const obj8 = { style: tmp2.maskWrapper, children: null };
-    const obj9 = { value: stateFromStores, maxValue: 99, backgroundColor, unread: false, style: memo };
-    obj8.children = tmp9(tmp10(tmp4[16]), obj9);
-    tmp9Result = tmp9(tmp15, obj8);
+    const obj7 = { style: tmp2.maskWrapper, children: closure_9(onPress(stateFromStores[16]), obj8) };
+    obj8 = { value: stateFromStores, maxValue: 99, backgroundColor, unread: false, style: memo };
+    tmp10Result = tmp10(tmp16, obj7);
   }
-  const obj10 = { children: null };
-  items3[1] = tmp9Result;
-  obj5.children = closure_10(closure_4, { children: items3 });
-  obj10.children = closure_9(navigation(stateFromStores[13]).PressableOpacity, obj5);
-  return closure_9(tmp11, obj10);
+  items3[1] = tmp10Result;
+  const obj9 = { children: closure_9(PressableOpacity, obj4) };
+  return closure_9(tmp12, obj9);
 });
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorBackIcon.tsx");
+
+export const PressableNavigatorBackIcon = forwardRefResult;

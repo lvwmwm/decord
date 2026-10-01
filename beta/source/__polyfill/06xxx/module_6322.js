@@ -4,65 +4,68 @@
 // Exports: useOnListLoad
 
 // Module 6322
-import _mod6320 from "module_6320" /* 6320 */;
-import _slicedToArray from "module_6275" /* 6275 */;
+import _slicedToArray2 from "_slicedToArray" /* 6320 */;
+import _slicedToArray from "_slicedToArray" /* 6275 */;
+import react from "react" /* 19 */;
 
-require = fn;
-const noop = fn(19);
-({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty, useState: metroRequire } = noop);
+let isFirstLayoutComplete;
+
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
 function useOnLoad(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  closure_2 = hasOwnProperty(false);
-  React3(() => {
-    let isFirstLayoutComplete = getDataLength.getIsFirstLayoutComplete();
-    if (isFirstLayoutComplete) {
-      isFirstLayoutComplete = !ref.current;
-    }
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = hasOwnProperty(false);
+  _false(() => {
+    isFirstLayoutComplete = isFirstLayoutComplete.getIsFirstLayoutComplete() && !ref.current;
     if (isFirstLayoutComplete) {
       ref.current = true;
-      f82052();
+      f82053();
     }
   });
 }
 
 export const useOnListLoad = (getDataLength, arg1) => {
-  let f82052 = arg1;
-  hasOwnProperty(Date.now());
-  [tmp3, closure_3] = timestampProducer(false);
+  let closure_129_3;
+  let tmp3;
+  let closure_0 = getDataLength;
+  let closure_1 = arg1;
+  let tmp = hasOwnProperty;
+  let closure_2 = hasOwnProperty(Date.now());
+  [tmp3, closure_129_3] = _slicedToArray(metroRequire(false), 2);
+  const tmp2 = _slicedToArray(metroRequire(false), 2);
   const dataLength = getDataLength.getDataLength();
-  const tmp = hasOwnProperty;
-  const tmp2 = _slicedToArray(timestampProducer(false), 2);
-  const requestAnimationFrame = _mod6320.useUnmountAwareAnimationFrame().requestAnimationFrame;
+  let obj = _slicedToArray2;
+  const requestAnimationFrame = obj.useUnmountAwareAnimationFrame().requestAnimationFrame;
   const items = [dataLength];
-  React4(() => {
+  React3(() => {
     closure_2.current = Date.now();
   }, items);
   if (typeof useOnLoad === "function") {
-    f82052 = () => {
+    closure_0 = getDataLength;
+    const f82053 = () => {
       const elapsedTimeInMs = Date.now() - ref.current;
-      requestAnimationFrame(() => {
+      const tmp = closure_4(() => {
         elapsedTimeInMs.isFirstPaintOnUiComplete = true;
-        if (f82052 != null) {
+        if (f82053 != null) {
           const obj = { elapsedTimeInMs };
           tmp(obj);
         }
         closure_2_3(true);
       });
     };
-    tmp(false);
-    React3(() => {
-      let isFirstLayoutComplete = getDataLength.getIsFirstLayoutComplete();
-      if (isFirstLayoutComplete) {
-        isFirstLayoutComplete = !ref.current;
-      }
+    closure_2 = tmp(false);
+    _false(() => {
+      isFirstLayoutComplete = isFirstLayoutComplete.getIsFirstLayoutComplete() && !ref.current;
       if (isFirstLayoutComplete) {
         ref.current = true;
-        f82052();
+        f82053();
       }
     });
-    const obj2 = { isLoaded: tmp3 };
-    return obj2;
+    return { isLoaded: tmp3 };
   } else {
     throw new TypeError("Trying to call a non-function");
   }

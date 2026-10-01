@@ -6,18 +6,18 @@
 
 // Module 7662 (useNameplate)
 import utils from "utils" /* 1971 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/nameplates/hooks/useNameplate.tsx");
 
 export const useNameplate = function useNameplate(user) {
   user = user.user;
   const guildId = user.guildId;
   const items = [GuildMemberStore];
-  const stateFromStores = user(guildId[2]).useStateFromStores(items, () => {
+  const obj = user(guildId[2]);
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
     if (null != guildId) {
       member = null;
@@ -31,13 +31,15 @@ export const useNameplate = function useNameplate(user) {
   return stateFromStores.useMemo(() => {
     if (null != user) {
       let nameplate1;
+      const getNameplateData = utils.getNameplateData;
+      utils;
       if (stateFromStores != null) {
         const collectibles = stateFromStores.collectibles;
         if (collectibles != null) {
           nameplate1 = collectibles.nameplate;
         }
       }
-      let nameplate = utils.getNameplateData(nameplate1);
+      let nameplate = getNameplateData(nameplate1);
       if (nameplate == null) {
         nameplate = tmp.nameplate;
       }

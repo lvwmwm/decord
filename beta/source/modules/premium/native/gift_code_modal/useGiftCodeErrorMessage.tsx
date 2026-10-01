@@ -5,32 +5,38 @@
 // Exports: default
 
 // Module 10984 (useGiftCodeErrorMessage)
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6977 */;
 import GiftCodeStore from "GiftCodeStore" /* 10973 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/useGiftCodeErrorMessage.tsx");
 
 export default function useGiftCodeErrorMessage(arg0, id) {
+  let closure_0;
+  let first;
+  let stringResult;
   _require = arg0;
   let items = [GiftCodeStore];
-  [first] = require("initialize").useStateFromStoresArray(items, () => {
+  const obj = require("get initialized");
+  const tmp3 = _slicedToArray(obj.useStateFromStoresArray(items, () => {
     const items = [GiftCodeStore.get(closure_0), GiftCodeStore.getError(closure_0)];
     return items;
-  });
-  const obj = require("initialize");
+  }), 2);
+  first = tmp3[0];
   const items1 = [CollectiblesPurchaseStore];
   let userId;
-  const stateFromStores = require("initialize").useStateFromStores(items1, () => {
+  const obj2 = require("get initialized");
+  const stateFromStores = obj2.useStateFromStores(items1, () => {
     let skuId;
+    const getPurchase = CollectiblesPurchaseStore.getPurchase;
     if (first != null) {
       skuId = first.skuId;
     }
-    return CollectiblesPurchaseStore.getPurchase(skuId);
+    return getPurchase(skuId);
   });
   if (first != null) {
     userId = first.userId;
@@ -41,7 +47,7 @@ export default function useGiftCodeErrorMessage(arg0, id) {
   }
   if (userId === id) {
     const intl3 = tmp(tmp2[4]).intl;
-    let stringResult = intl3.string(tmp(tmp2[4]).t.JZxgJX);
+    stringResult = intl3.string(tmp(tmp2[4]).t.JZxgJX);
   } else {
     let isClaimed;
     if (first != null) {
@@ -55,9 +61,9 @@ export default function useGiftCodeErrorMessage(arg0, id) {
       stringResult = intl.string(tmp(tmp2[4]).t.mdLtb5);
     } else {
       stringResult = null;
-      if (null != tmp5) {
-        stringResult = tmp(tmp2[5]).getGiftCodeRedeemError(tmp5);
-        const tmpResult = tmp(tmp2[5]);
+      if (null != tmp3[1]) {
+        const tmpResult = require("GiftCodeUtils");
+        stringResult = tmpResult.getGiftCodeRedeemError(tmp5);
       }
     }
   }

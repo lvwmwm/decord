@@ -4,20 +4,24 @@
 // Dependencies: [19, 21, 14097, 4454, 17045, 17047, 2]
 
 // Module 17044 (MediaPlaybackPanelContainer)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 4454 */;
 import MediaPlayerManager from "MediaPlayerManager" /* 14097 */;
 import MediaPlaybackPanelControllerDefault from "MediaPlaybackPanelController" /* 17045 */;
-import MediaPlaybackPanelUIDefault from "MediaPlaybackPanelUI" /* 17047 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelContainer.tsx");
+let showPip;
 
-export default noop.memo(function MediaPlaybackPanelContainer() {
-  const obj = MediaPlayerManager;
-  let tmp2 = null;
-  if (obj.useMediaPlayerManagerStore(obj2.useShallow((showPip) => {
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function MediaPlaybackPanelContainer() {
+  let tmp = dependencyMap;
+  const useMediaPlayerManagerStore = MediaPlayerManager.useMediaPlayerManagerStore;
+  let tmp3 = null;
+  const obj = react2;
+  if (useMediaPlayerManagerStore(obj.useShallow((showPip) => {
+    let activeMediaPlayerSource;
+    let mediaSourceMessage;
     showPip = showPip.showPip;
     let tmp = !showPip;
     if (showPip) {
@@ -27,10 +31,11 @@ export default noop.memo(function MediaPlaybackPanelContainer() {
       tmp = null == showPip.activeMediaPlayerSource;
     }
     let tmp3 = !tmp;
-    if (!tmp) {
+    if (tmp3) {
+      let attachmentIndex;
       ({ mediaSourceMessage, activeMediaPlayerSource } = showPip);
       if (activeMediaPlayerSource != null) {
-        const attachmentIndex = activeMediaPlayerSource.attachmentIndex;
+        attachmentIndex = activeMediaPlayerSource.attachmentIndex;
       }
       let flag = false;
       if (null != mediaSourceMessage) {
@@ -60,8 +65,12 @@ export default noop.memo(function MediaPlaybackPanelContainer() {
     }
     return tmp3;
   }))) {
-    const obj3 = { children: jsx(MediaPlaybackPanelUIDefault, {}) };
-    tmp2 = jsx(MediaPlaybackPanelControllerDefault, { children: jsx(MediaPlaybackPanelUIDefault, {}) });
+    let tmp5 = importDefault;
+    MediaPlaybackPanelControllerDefault;
+    tmp3 = <tmp6>{null}</tmp6>;
   }
-  return tmp2;
+  return tmp3;
 });
+const result = size.fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelContainer.tsx");
+
+export default memoResult;

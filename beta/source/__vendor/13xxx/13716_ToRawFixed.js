@@ -5,30 +5,36 @@
 // Exports: ToRawFixed
 
 // Module 13716 (ToRawFixed)
-import digitsToString2 from "digitsToString" /* 13696 */;
-import _mod13697 from "module_13697" /* 13697 */;
+import _mod13696 from "module_13696" /* 13696 */;
 import ApplyUnsignedRoundingMode from "ApplyUnsignedRoundingMode" /* 13709 */;
-import e from "e" /* 1161 */;
+import module_1161 from "module_1161" /* 1161 */;
 
-const digitsToString = e.__importDefault(digitsToString2);
-let result = digitsToString.default.set({ toExpPos: 100 });
+let tmp3;
+const UNICODE_EXTENSION_SEQUENCE_REGEX = tmp3(13697);
+const module_13696 = module_1161.__importDefault(_mod13696);
+let _default = module_13696.default;
+let result = _default.set({ toExpPos: 100 });
 
-export const ToRawFixed = function ToRawFixed(ZERO, minimumFractionDigits, maximumFractionDigits, roundingIncrement, formattedString) {
-  const _default = digitsToString.default;
-  const timesResult = ZERO.times(digitsToString.default.pow(10, maximumFractionDigits));
-  const floorResult = ZERO.times(digitsToString.default.pow(10, maximumFractionDigits)).floor();
-  const divResult = ZERO.times(digitsToString.default.pow(10, maximumFractionDigits)).floor().div(roundingIncrement);
-  const timesResult1 = ZERO.times(digitsToString.default.pow(10, maximumFractionDigits)).floor().div(roundingIncrement).floor().times(roundingIncrement);
-  const timesResult2 = timesResult1.times(digitsToString.default.pow(10, -maximumFractionDigits));
-  const _default2 = digitsToString.default;
-  const _default3 = digitsToString.default;
-  const floorResult1 = ZERO.times(digitsToString.default.pow(10, maximumFractionDigits)).floor().div(roundingIncrement).floor();
-  const timesResult3 = ZERO.times(digitsToString.default.pow(10, maximumFractionDigits));
-  const ceilResult = ZERO.times(digitsToString.default.pow(10, maximumFractionDigits)).ceil();
-  const divResult1 = ZERO.times(digitsToString.default.pow(10, maximumFractionDigits)).ceil().div(roundingIncrement);
-  let str = ZERO.times(digitsToString.default.pow(10, maximumFractionDigits)).ceil().div(roundingIncrement).ceil().times(roundingIncrement);
-  let timesResult4 = str.times(digitsToString.default.pow(10, -maximumFractionDigits));
-  const result = ApplyUnsignedRoundingMode.ApplyUnsignedRoundingMode(ZERO, timesResult2, timesResult4, formattedString);
+export const ToRawFixed = function ToRawFixed(ZERO, minimumFractionDigits, maximumFractionDigits, roundingIncrement, result) {
+  let length;
+  let text;
+  const _default = module_13696.default;
+  const timesResult = ZERO.times(_default.pow(10, maximumFractionDigits));
+  const floorResult = timesResult.floor();
+  const divResult = floorResult.div(roundingIncrement);
+  const floorResult1 = divResult.floor();
+  const timesResult1 = floorResult1.times(roundingIncrement);
+  const _default2 = module_13696.default;
+  const timesResult2 = timesResult1.times(_default2.pow(10, -maximumFractionDigits));
+  const _default3 = module_13696.default;
+  const timesResult3 = ZERO.times(_default3.pow(10, maximumFractionDigits));
+  const ceilResult = timesResult3.ceil();
+  const divResult1 = ceilResult.div(roundingIncrement);
+  const ceilResult1 = divResult1.ceil();
+  let str = ceilResult1.times(roundingIncrement);
+  const _default4 = module_13696.default;
+  let timesResult4 = str.times(_default4.pow(10, -maximumFractionDigits));
+  result = ApplyUnsignedRoundingMode.ApplyUnsignedRoundingMode(ZERO, timesResult2, timesResult4, result);
   if (result.eq(timesResult2)) {
     timesResult4 = timesResult2;
     str = timesResult1;
@@ -41,12 +47,12 @@ export const ToRawFixed = function ToRawFixed(ZERO, minimumFractionDigits, maxim
     let sum = str2;
     let sum1 = length2;
     if (str2.length <= maximumFractionDigits) {
-      sum = _mod13697.repeat("0", maximumFractionDigits - length2 + 1) + str2;
+      sum = UNICODE_EXTENSION_SEQUENCE_REGEX.repeat("0", maximumFractionDigits - length2 + 1) + str2;
       sum1 = maximumFractionDigits + 1;
     }
     const substr = sum.slice(0, sum1 - maximumFractionDigits);
-    let text = `${arr3}.${arr2.slice(arr2.length - maximumFractionDigits)}`;
-    let length = substr.length;
+    text = `${arr3}.${arr2.slice(arr2.length - maximumFractionDigits)}`;
+    length = substr.length;
   } else {
     length = str2.length;
     text = str2;

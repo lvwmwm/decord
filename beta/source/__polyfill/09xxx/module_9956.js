@@ -12,19 +12,16 @@ import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const FRWeekdayParser = require;
+let tmp2;
+const _mod9922 = tmp2(9922);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -35,19 +32,16 @@ function _isNativeReflectConstruct() {
 const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:(?:ce)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod9957.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(dernier|prochain)\\s*)?(?=\\W|\\d|$)", "i");
 class FRWeekdayParser {
   constructor() {
-    self = this;
-    tmp = c2(this, FRWeekdayParser);
-    tmp2 = closure_4;
-    obj = closure_4(FRWeekdayParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, FRWeekdayParser);
+    const obj = _getPrototypeOf(FRWeekdayParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
@@ -65,12 +59,14 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const formatted = arg1[1].toLowerCase();
-      const tmp4 = FRWeekdayParser(9957).WEEKDAY_DICTIONARY[formatted];
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const tmp4 = _mod9957.WEEKDAY_DICTIONARY[formatted];
       if (undefined === tmp4) {
         return null;
       } else {
-        const formatted1 = arg1[2] || "".toLowerCase();
+        const str2 = arg1[2] || "";
+        const formatted1 = str2.toLowerCase();
         let str4 = "last";
         if ("dernier" != formatted1) {
           str4 = null;
@@ -78,9 +74,8 @@ const items = [
             str4 = "next";
           }
         }
-        return tmp2(9922).createParsingComponentsAtWeekday(reference.reference, tmp4, str4);
+        return _mod9922.createParsingComponentsAtWeekday(reference.reference, tmp4, str4);
       }
-      tmp2 = FRWeekdayParser;
     }
   }
 ];

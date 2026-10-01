@@ -8,78 +8,94 @@ import renderElement from "renderElement" /* 114 */;
 import legacySendAccessibilityEventDefault from "legacySendAccessibilityEvent" /* 279 */;
 import AccessibilityInfoDefault from "AccessibilityInfo" /* 448 */;
 
-require = arg1;
-importDefault = arg2;
-const dependencyMap = arg6;
 const items = [["change", "touchExplorationDidChange"], ["reduceMotionChanged", "reduceMotionDidChange"], ["highTextContrastChanged", "highTextContrastDidChange"], ["screenReaderChanged", "touchExplorationDidChange"], ["accessibilityServiceChanged", "accessibilityServiceDidChange"], ["invertColorsChanged", "invertColorDidChange"], ["grayscaleChanged", "grayscaleModeDidChange"]];
 const map = new Map(items);
-
-export default {
+let obj = {
   isBoldTextEnabled() {
     return Promise.resolve(false);
   },
   isGrayscaleEnabled() {
-    return new Promise((arg0, fn) => {
+    const promise = new Promise(function(arg0, fn) {
       const tmp3 = AccessibilityInfoDefault;
       let isGrayscaleEnabled;
+      const tmp = importDefault;
+      const tmp2 = dependencyMap;
       if (tmp3 != null) {
         isGrayscaleEnabled = tmp3.isGrayscaleEnabled;
       }
       if (null != isGrayscaleEnabled) {
-        AccessibilityInfoDefault.isGrayscaleEnabled(arg0);
-        const tmpResult = AccessibilityInfoDefault;
+        const tmpResult = tmp(tmp2[0]);
+        tmpResult.isGrayscaleEnabled(arg0);
       } else {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("NativeAccessibilityInfoAndroid.isGrayscaleEnabled is not available");
         fn(error);
       }
     });
+    return promise;
   },
   isInvertColorsEnabled() {
-    return new Promise((arg0, fn) => {
+    const promise = new Promise(function(arg0, fn) {
       const tmp3 = AccessibilityInfoDefault;
       let prop;
+      const tmp = importDefault;
+      const tmp2 = dependencyMap;
       if (tmp3 != null) {
         prop = tmp3.isInvertColorsEnabled;
       }
       if (null != prop) {
-        const result = AccessibilityInfoDefault.isInvertColorsEnabled(arg0);
-        const tmpResult = AccessibilityInfoDefault;
+        const tmpResult = tmp(tmp2[0]);
+        const result = tmpResult.isInvertColorsEnabled(arg0);
       } else {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("NativeAccessibilityInfoAndroid.isInvertColorsEnabled is not available");
         fn(error);
       }
     });
+    return promise;
   },
   isReduceMotionEnabled() {
-    return new Promise((arg0, fn) => {
+    const promise = new Promise(function(arg0, fn) {
+      const tmp = importDefault;
+      const tmp2 = dependencyMap;
       if (null != AccessibilityInfoDefault) {
-        const result = AccessibilityInfoDefault.isReduceMotionEnabled(arg0);
-        const tmpResult = AccessibilityInfoDefault;
+        const tmpResult = tmp(tmp2[0]);
+        const result = tmpResult.isReduceMotionEnabled(arg0);
       } else {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("NativeAccessibilityInfoAndroid is not available");
         fn(error);
       }
     });
+    return promise;
   },
   isHighTextContrastEnabled() {
-    return new Promise((arg0, fn) => {
+    const promise = new Promise(function(arg0, fn) {
       const tmp3 = AccessibilityInfoDefault;
       let prop;
+      const tmp = importDefault;
+      const tmp2 = dependencyMap;
       if (tmp3 != null) {
         prop = tmp3.isHighTextContrastEnabled;
       }
       if (null != prop) {
-        const result = AccessibilityInfoDefault.isHighTextContrastEnabled(arg0);
-        const tmpResult = AccessibilityInfoDefault;
+        const tmpResult = tmp(tmp2[0]);
+        const result = tmpResult.isHighTextContrastEnabled(arg0);
       } else {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("NativeAccessibilityInfoAndroid.isHighTextContrastEnabled is not available");
         fn(error);
       }
     });
+    return promise;
   },
   isDarkerSystemColorsEnabled() {
     return Promise.resolve(false);
@@ -91,40 +107,47 @@ export default {
     return Promise.resolve(false);
   },
   isScreenReaderEnabled() {
-    return new Promise((arg0, fn) => {
+    const promise = new Promise(function(arg0, fn) {
+      const tmp = importDefault;
+      const tmp2 = dependencyMap;
       if (null != AccessibilityInfoDefault) {
-        const result = AccessibilityInfoDefault.isTouchExplorationEnabled(arg0);
-        const tmpResult = AccessibilityInfoDefault;
+        const tmpResult = tmp(tmp2[0]);
+        const result = tmpResult.isTouchExplorationEnabled(arg0);
       } else {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("NativeAccessibilityInfoAndroid is not available");
         fn(error);
       }
     });
+    return promise;
   },
   isAccessibilityServiceEnabled() {
-    return new Promise((arg0, fn) => {
+    const promise = new Promise((arg0, fn) => {
       if (null != AccessibilityInfoDefault) {
-        if (null != tmp(tmp2[0]).isAccessibilityServiceEnabled) {
-          const result = tmp(tmp2[0]).isAccessibilityServiceEnabled(arg0);
-          const tmpResult = tmp(tmp2[0]);
+        if (null != AccessibilityInfoDefault.isAccessibilityServiceEnabled) {
+          const tmpResult = AccessibilityInfoDefault;
+          const result = tmpResult.isAccessibilityServiceEnabled(arg0);
         }
       }
       const error = new Error("NativeAccessibilityInfoAndroid.isAccessibilityServiceEnabled is not available");
       fn(error);
     });
+    return promise;
   },
   addEventListener(arg0, arg1) {
-    value = map.get(arg0);
-    if (null == value) {
-      const obj2 = {
-        remove() {
+    let addListenerResult;
+    function remove() {
 
-          }
-      };
-      let addListenerResult = obj2;
+    }
+    const value = map.get(arg0);
+    if (null == value) {
+      addListenerResult = { remove };
+      const obj2 = { remove };
     } else {
-      addListenerResult = _modDef92.addListener(value, arg1);
+      const obj = _modDef92;
+      addListenerResult = obj.addListener(value, arg1);
     }
     return addListenerResult;
   },
@@ -132,7 +155,8 @@ export default {
     legacySendAccessibilityEventDefault(arg0, "focus");
   },
   sendAccessibilityEvent(arg0, arg1) {
-    const result = renderElement.sendAccessibilityEvent(arg0, arg1);
+    const obj = renderElement;
+    const result = obj.sendAccessibilityEvent(arg0, arg1);
   },
   announceForAccessibility(intl) {
     const obj = AccessibilityInfoDefault;
@@ -147,19 +171,22 @@ export default {
     }
   },
   getRecommendedTimeoutMillis(arg0) {
-    closure_0 = arg0;
-    return new Promise((fn, arg1) => {
+    let closure_0 = arg0;
+    const promise = new Promise((fn, arg1) => {
       const tmp3 = AccessibilityInfoDefault;
       let prop;
       if (tmp3 != null) {
         prop = tmp3.getRecommendedTimeoutMillis;
       }
       if (null != prop) {
-        const recommendedTimeoutMillis = AccessibilityInfoDefault.getRecommendedTimeoutMillis(closure_0, fn);
         const tmpResult = AccessibilityInfoDefault;
+        const recommendedTimeoutMillis = tmpResult.getRecommendedTimeoutMillis(closure_0, fn);
       } else {
         fn(closure_0);
       }
     });
+    return promise;
   }
 };
+
+export default obj;

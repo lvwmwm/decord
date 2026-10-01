@@ -5,39 +5,43 @@
 // Exports: captureError
 
 // Module 812 (captureError)
+import TRACE_FLAG_NONE from "TRACE_FLAG_NONE" /* 684 */;
+import SPAN_STATUS_ERROR from "SPAN_STATUS_ERROR" /* 705 */;
 import _mod713 from "module_713" /* 713 */;
+import _mod734 from "module_734" /* 734 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const captureError = function captureError(error, prompt_execution, arg2) {
+  let obj4;
+  let obj5;
   try {
+    const obj = _mod713;
     if (obj.getClient()) {
-      const activeSpan = tmp(684).getActiveSpan();
+      const tmpResult = TRACE_FLAG_NONE;
+      const activeSpan = tmpResult.getActiveSpan();
       let isRecordingResult;
+      const tmp3 = activeSpan;
       if (activeSpan != null) {
         isRecordingResult = activeSpan.isRecording();
       }
       if (isRecordingResult) {
-        const obj2 = { code: tmp(705).SPAN_STATUS_ERROR, message: "internal_error" };
-        obj4.setStatus(obj2);
+        const setStatus = tmp3.setStatus;
+        const obj2 = { code: SPAN_STATUS_ERROR.SPAN_STATUS_ERROR, message: "internal_error" };
+        setStatus(obj2);
       }
       let str = prompt_execution;
-      obj4 = activeSpan;
-      const tmpResult = tmp(684);
+      const captureException = _mod734.captureException;
+      _mod734;
       if (!prompt_execution) {
         str = "handler_execution";
       }
-      const obj3 = { mechanism: null };
-      const obj5 = { type: "auto.ai.mcp_server", handled: false, data: null };
-      const obj6 = { error_type: str };
+      const obj3 = { mechanism: obj4 };
+      obj4 = { type: "auto.ai.mcp_server", handled: false, data: obj5 };
+      obj5 = { error_type: str };
       const merged = Object.assign(arg2);
-      obj5.data = obj6;
-      obj3.mechanism = obj5;
-      tmp(734).captureException(error, obj3);
+      captureException(error, obj3);
     }
-    obj = _mod713;
   } catch (err) {
   }
 };

@@ -6,7 +6,7 @@
 
 // Module 12291 (NavigationPathUtils)
 import Constants from "Constants" /* 1074 */;
-import _mod4666 from "module_4666" /* 4666 */;
+import MemoryRouter from "MemoryRouter" /* 4666 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -20,7 +20,7 @@ export const getSelectedSpecialNavigationPath = function getSelectedSpecialNavig
   }
 };
 export const useSelectedSpecialNavigationPath = function useSelectedSpecialNavigationPath() {
-  const obj = _mod4666;
+  const obj = MemoryRouter;
   let FRIENDS;
   if (obj.useLocation().pathname === Routes.FRIENDS) {
     FRIENDS = obj.FRIENDS;

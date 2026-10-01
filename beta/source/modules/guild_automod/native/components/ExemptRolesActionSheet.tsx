@@ -5,11 +5,13 @@
 // Exports: default
 
 // Module 17338 (ExemptRolesActionSheet)
+import Fragment from "Fragment" /* 21 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2103 */;
 import RoleNameDefault from "RoleName" /* 11316 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
 function renderRoleName(role) {
   return jsx(RoleNameDefault, { role, children: role.name });
 }
@@ -19,30 +21,23 @@ function getRoleId(id) {
 function getRoleName(name) {
   return name.name;
 }
-const isEveryoneRole = fn(2103).isEveryoneRole;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/ExemptRolesActionSheet.tsx");
 
 export default function ExemptRolesActionSheet(guildId) {
+  let exemptRoles;
+  let onSave;
   guildId = guildId.guildId;
   ({ exemptRoles, onSave } = guildId);
   const items = [GuildRoleStore];
   const items1 = [guildId];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => GuildRoleStore.getSortedRoles(guildId), items1);
-  const items2 = [stateFromStores];
-  const memo = noop.useMemo(() => stateFromStores.filter((item) => !closure_1_4(item)), items2);
-  const obj2 = { title: null, searchPlaceholder: null, listId: "automod-exempt-roles", items: null, initialSelected: null, getId: null, getSearchText: null, renderLabel: null, onSave: null };
   const obj = guildId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => GuildRoleStore.getSortedRoles(guildId), items1);
+  const items2 = [stateFromStores];
+  const memo = react.useMemo(() => stateFromStores.filter((item) => !closure_1_4(item)), items2);
+  stateFromStores(17339);
   const intl = guildId(1115).intl;
-  obj2.title = intl.string(guildId(1115).t["LPJmL/"]);
   const intl2 = guildId(1115).intl;
-  obj2.searchPlaceholder = intl2.string(guildId(1115).t.aFO1I6);
-  obj2.items = memo;
-  obj2.initialSelected = exemptRoles;
-  obj2.getId = getRoleId;
-  obj2.getSearchText = getRoleName;
-  obj2.renderLabel = renderRoleName;
-  obj2.onSave = onSave;
-  return jsx(stateFromStores(17339), { title: null, searchPlaceholder: null, listId: "automod-exempt-roles", items: null, initialSelected: null, getId: null, getSearchText: null, renderLabel: null, onSave: null });
+  return <tmp3 title={intl.string(guildId(1115).t["LPJmL/"])} searchPlaceholder={intl2.string(guildId(1115).t.aFO1I6)} listId="automod-exempt-roles" items={memo} initialSelected={exemptRoles} getId={getRoleId} getSearchText={getRoleName} renderLabel={renderRoleName} onSave={onSave} />;
 };

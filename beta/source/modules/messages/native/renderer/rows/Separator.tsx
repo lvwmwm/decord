@@ -11,27 +11,29 @@ import RowGeneratorConstants from "RowGeneratorConstants" /* 7375 */;
 import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
+let c2;
+let c3;
 ({ RowType: c2, SeparatorType: c3 } = RowGeneratorConstants);
-let closure_4 = createStyles.createNativeStyleProperties({ dayColor: nativeDefault.colors.TEXT_MUTED, unreadTextColor: nativeDefault.colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: nativeDefault.colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: nativeDefault.colors.TEXT_BRAND });
+let obj = { dayColor: nativeDefault.colors.TEXT_MUTED, unreadTextColor: nativeDefault.colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: nativeDefault.colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: nativeDefault.colors.TEXT_BRAND };
+let closure_4 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/rows/Separator.tsx");
 
 export const generateSeparatorRowData = function generateSeparatorRowData(text, theme) {
+  let changeType;
+  let rowType;
   ({ rowType, changeType } = text);
   const tmp = closure_4(theme);
   if (constants2.DAY === rowType) {
-    const obj2 = { type: constants.SEPARATOR, id: rowType, color: tmp.dayColor, text: text.text, changeType };
-    return obj2;
-  } else if (tmp2.UNREAD === rowType) {
-    const obj4 = { type: constants.SEPARATOR, id: rowType, color: null, borderColor: null, changeType: null, text: null };
+    return { type: constants.SEPARATOR, id: rowType, color: tmp.dayColor, text: text.text, changeType };
+  } else if (constants2.UNREAD === rowType) {
+    const obj4 = { type: constants.SEPARATOR, id: rowType, color: null, borderColor: null, changeType, text: text.text };
     ({ unreadTextColor: obj3.color, unreadBorderColor: obj3.borderColor } = tmp);
-    obj4.changeType = changeType;
-    obj4.text = text.text;
     return obj4;
-  } else if (tmp2.SUMMARY === rowType) {
+  } else if (constants2.SUMMARY === rowType) {
     const summary = text.summary;
-    const obj7 = { type: constants.SEPARATOR, id: rowType, color: tmp.summaryColor, text: summary.topic, summary, isBeforeContent: text.isBeforeContent, changeType };
-    return obj7;
+    return { type: constants.SEPARATOR, id: rowType, color: tmp.summaryColor, text: summary.topic, summary, isBeforeContent: text.isBeforeContent, changeType };
   } else {
-    GlobalUtils.assertNever(rowType);
+    const obj = GlobalUtils;
+    obj.assertNever(rowType);
   }
 };

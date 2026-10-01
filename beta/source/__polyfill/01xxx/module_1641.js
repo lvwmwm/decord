@@ -4,11 +4,11 @@
 // Exports: isAndroid, isChromeDebugger, isFabric, isIOS, isJest, isMacOS, isReact19, isWeb, isWindowAvailable, shouldBeUseWeb
 
 // Module 1641
-import _mod17 from "module_17" /* 17 */;
-import _mod19 from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 19 */;
 
-const version = _mod19.version;
-const Platform = _mod17.Platform;
+const version = react.version;
+const Platform = react_native.Platform;
 
 export const isJest = function isJest() {
   return process.env.JEST_WORKER_ID;
@@ -32,7 +32,6 @@ export const shouldBeUseWeb = function shouldBeUseWeb() {
   let flag = process.env.JEST_WORKER_ID;
   if (!flag) {
     flag = !(global.nativeCallSyncHook && !global.__REMOTEDEV__ || global.RN$Bridgeless);
-    const tmp2 = global.nativeCallSyncHook && !global.__REMOTEDEV__ || global.RN$Bridgeless;
   }
   if (!flag) {
     flag = false;

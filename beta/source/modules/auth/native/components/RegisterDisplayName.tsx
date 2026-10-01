@@ -5,91 +5,123 @@
 // Exports: default
 
 // Module 15590 (RegisterDisplayName)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14267 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15570 */;
+import RegistrationConstants from "RegistrationConstants" /* 15571 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let importDefault, navigation;
 
-const require = fn;
-const View = fn(17).View;
-const RegistrationUIStore = fn(15570);
-({ updateRegistrationOptions: closure_8, useRegistrationUIStore: closure_9 } = RegistrationUIStore);
-const RegistrationConstants = fn(15571);
-({ RegisterTransitionSteps: c10, RegistrationTransitionActionTypes: closure_11 } = RegistrationConstants);
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { globalName: { marginTop: nativeDefault.space.PX_24 }, button: null, page: null };
-let obj3 = { marginTop: nativeDefault.space.PX_24 };
-obj2.button = { marginTop: nativeDefault.space.PX_24 };
-obj2.page = { flex: 1 };
-let closure_14 = createStyles.createStyles(obj2);
+let c10;
+let c9;
+let closure_12;
+let map1;
+let metroImportAll;
+let obj2;
+let obj3;
+let unpackModuleId;
+let _asyncToGenerator = _asyncToGenerator_mod;
+const View = react_native.View;
+({ updateRegistrationOptions: metroImportAll, useRegistrationUIStore: c9 } = RegistrationUIStore);
+({ RegisterTransitionSteps: c10, RegistrationTransitionActionTypes: unpackModuleId } = RegistrationConstants);
+({ jsx: closure_12, jsxs: map1 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { globalName: obj2, button: obj3, page: { flex: 1 } };
+obj2 = { marginTop: nativeDefault.space.PX_24 };
+createStyles = createStyles.createStyles;
+obj3 = { marginTop: nativeDefault.space.PX_24 };
+let closure_14 = createStyles(obj);
 let closure_15 = ["discord", "hypesquad", "snowsgiving", "system message", "system mesage", "sustem mesage", "sustem message"];
 let closure_16 = ["everyone", "here"];
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/auth/native/components/RegisterDisplayName.tsx");
 
 export default function RegisterDisplayName() {
-  const tmp = closure_14();
-  let tmp4 = require("useWideAuthView")();
-  const navigation = require("useNavigation").useNavigation();
-  _require = navigation;
-  const tmp7 = context(callback.useState(false), 2);
-  importDefault = tmp7[1];
-  let obj = require("useNavigation");
-  const tmp9 = context(callback.useState(() => {
-    str = closure_1_9.getState().registrationOptions.globalName;
-    if (str == null) {
-      str = "";
-    }
-    return str;
-  }), 2);
-  str = tmp9[0];
-  asyncGeneratorStep = tmp9[1];
-  const tmp10 = (function getGlobalNameError(str) {
+  let Button;
+  let TextInput;
+  let callback;
+  let closure_1;
+  let closure_3;
+  let context;
+  let intl;
+  let intl2;
+  let intl4;
+  let items3;
+  let obj5;
+  let obj7;
+  let str;
+  let stringResult;
+  let tmp28;
+  function getGlobalNameError(str) {
     if (closure_1_16.includes(str)) {
-      const intl2 = options(str[10]).intl;
-      return intl2.string(options(str[10]).t.WeJZyy);
+      const intl2 = navigation(str[10]).intl;
+      return intl2.string(navigation(str[10]).t.WeJZyy);
     } else {
       for (const item10009 of closure_1_15) {
-        let formatted = arg0.toLowerCase();
+        let formatted = str.toLowerCase();
         if (formatted.includes(item10009)) {
-          let intl = options(str[10]).intl;
-          let stringResult = intl.string(options(str[10]).t.WeJZyy);
+          let intl = navigation(str[10]).intl;
+          let stringResult = intl.string(navigation(str[10]).t.WeJZyy);
           obj.return();
           return stringResult;
         }
       }
     }
-  })(str);
-  context = callback.useContext(require("Auth").TrackRegistrationContext);
-  const tmp8 = closure_9((errors) => errors.errors);
-  const tmp12 = require("useAuthFlowBackHandler");
-  tmp12(require("RegistrationStepsUtils").getPreviousRegistrationTransitionStep(require("ConstantsIOS").AuthStates.REGISTER_DISPLAY_NAME));
-  const obj2 = require("RegistrationStepsUtils");
-  require("useInitialRegistrationStep")(require("ConstantsIOS").AuthStates.REGISTER_DISPLAY_NAME);
+  }
+  let tmp = closure_14();
+  let tmp3 = str;
+  let tmp5 = navigation;
+  let tmp4 = require("useWideAuthView")();
+  let obj = navigation(str[12]);
+  navigation = obj.useNavigation();
+  const tmp7 = context(callback.useState(false), 2);
+  importDefault = tmp7[1];
+  const first = tmp7[0];
+  const tmp9 = state((errors) => errors.errors);
+  const tmp10 = context(callback.useState(() => {
+    str = state.getState().registrationOptions.globalName;
+    if (str == null) {
+      str = "";
+    }
+    return str;
+  }), 2);
+  str = tmp10[0];
+  _asyncToGenerator = tmp10[1];
+  const tmp11 = getGlobalNameError(str);
+  context = callback.useContext(navigation(str[13]).TrackRegistrationContext);
+  const tmp13 = require("useAuthFlowBackHandler");
+  let obj2 = navigation(str[15]);
+  tmp13(obj2.getPreviousRegistrationTransitionStep(navigation(str[16]).AuthStates.REGISTER_DISPLAY_NAME));
+  const tmp15 = require("useInitialRegistrationStep");
+  tmp15(navigation(str[16]).AuthStates.REGISTER_DISPLAY_NAME);
   const items = [context];
   const effect = callback.useEffect(() => {
-    context({ step: constants.ACCOUNT_DISPLAY_NAME, actionType: constants2.VIEWED });
+    const obj = { step: constants.ACCOUNT_DISPLAY_NAME, actionType: unpackModuleId.VIEWED };
+    context(obj);
   }, items);
   const ref = callback.useRef(null);
   require("useFocusRefOnNavigation")({ inputRef: ref });
-  _require = asyncGeneratorStep(async (globalName) => {
-    c2 = 0;
-    c3 = 0;
+  const useCallback = callback.useCallback;
+  let closure_0 = _asyncToGenerator(async (globalName) => {
+    let c2 = 0;
+    let c3 = 0;
     return (async (arg0, value) => {
+      let obj2;
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
+          return { value, done: true };
         } else {
           return { value: "HermesInternal", done: null };
         }
@@ -102,28 +134,26 @@ export default function RegisterDisplayName() {
               throw value;
             } else if (arg0 === 2) {
               c3 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
+              return { value, done: true };
             } else {
               const obj6 = { globalName };
               closure_2_8(obj6);
-              const registrationOptions = closure_2_9.getState().registrationOptions;
+              const registrationOptions = state.getState().registrationOptions;
               const obj7 = { step: constants.ACCOUNT_DISPLAY_NAME, actionType: constants2.SUBMITTED };
-              context(obj7);
-              let tmp6 = null != registrationOptions.username;
-              if (tmp6) {
-                tmp6 = "" !== registrationOptions.username;
-              }
-              if (!tmp6) {
-                tmp2(true);
-                if (!UniqueUsernamesStore.wasRegistrationSuggestionFetched(tmp27)) {
+              closure_1_4(obj7);
+              const tmp5 = null != registrationOptions.username && "" !== registrationOptions.username;
+              if (!tmp5) {
+                tmp(true);
+                if (!closure_2_7.wasRegistrationSuggestionFetched(globalName)) {
                   c2 = 1;
                   c3 = 1;
-                  const obj8 = { value: tmp2(str[19]).fetchSuggestionsRegistration(tmp27), done: false };
+                  const obj8 = { value: obj2.fetchSuggestionsRegistration(globalName), done: false };
+                  obj2 = closure_2_1(str[19]);
                   return obj8;
                 }
               }
-              const result = globalName(str[15]).handleNextOrSubmitRegistration(globalName(str[16]).AuthStates.REGISTER_DISPLAY_NAME, globalName, context);
+              const obj4 = globalName(str[15]);
+              const result = obj4.handleNextOrSubmitRegistration(globalName(str[16]).AuthStates.REGISTER_DISPLAY_NAME, globalName, closure_1_4);
               c3 = 3;
               return { value: "HermesInternal", done: null };
             }
@@ -132,99 +162,95 @@ export default function RegisterDisplayName() {
             throw value;
           } else if (arg0 === 2) {
             c3 = 3;
-            const obj = { value, done: true };
-            return obj;
+            return { value, done: true };
           }
-          tmp2(false);
-        } catch (tmp22) {
-          c3 = tmp;
-          throw tmp22;
+          tmp(false);
+        } catch (tmp21) {
+          c3 = 3;
+          throw tmp21;
         }
       }
     })();
   });
   const items1 = [navigation, context];
-  callback = callback.useCallback(function() {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+  callback = useCallback(function() {
+    return closure_0(...arguments);
   }, items1);
   const items2 = [callback, navigation];
   const layoutEffect = callback.useLayoutEffect(() => {
-    options.setOptions({
+    let obj = {
       headerRight() {
-        const obj = { text: null, onPress: null };
-        const intl = closure_0(str[10]).intl;
-        obj.text = intl.string(closure_0(str[10]).t["5Wxrcd"]);
-        obj.onPress = function onPress() {
-          return closure_1_5(null);
+        let intl;
+        const obj = {
+          text: intl.string(navigation(str[10]).t["5Wxrcd"]),
+          onPress() {
+            return closure_1_5(null);
+          }
         };
-        return closure_2_12(closure_0(str[20]).HeaderActionButton, obj);
+        const HeaderActionButton = navigation(str[20]).HeaderActionButton;
+        intl = navigation(str[10]).intl;
+        return closure_2_12(HeaderActionButton, obj);
       }
-    });
+    };
+    navigation.setOptions(obj);
   }, items2);
-  let tmp21 = require("getError")("global_name", tmp8);
-  if (tmp21 == null) {
-    tmp21 = tmp10;
+  let tmp22 = require("getError")("global_name", tmp9);
+  if (tmp22 == null) {
+    tmp22 = tmp11;
   }
-  let obj3 = { headerText: null, children: null };
-  const tmp14 = require("useInitialRegistrationStep");
-  const tmp22 = closure_13;
-  let intl = tmp5(tmp3[10]).intl;
-  obj3.headerText = intl.string(require("util").t.LYIh7j);
-  const obj4 = { style: tmp.globalName, children: null };
-  let obj5 = {
+  const obj3 = { headerText: intl.string(tmp5(tmp3[10]).t.LYIh7j), children: items3 };
+  const tmp2Result = require("AuthFormView");
+  intl = tmp5(tmp3[10]).intl;
+  let obj4 = { style: tmp.globalName, children: tmp25(TextInput, obj5) };
+  obj5 = {
     ref,
     value: str,
     onChange(str) {
       str = "";
-      closure_3(str);
+      const tmp = closure_3;
+      tmp(str);
     },
     returnKeyType: "next",
     onSubmitEditing() {
       return callback(str);
     },
     textContentType: "nickname",
-    errorMessage: tmp21,
-    label: null,
-    description: null,
+    errorMessage: tmp22,
+    label: intl2.string(tmp5(tmp3[10]).t["9AjdkD"]),
+    description: stringResult,
     clearable: true
   };
-  let intl2 = tmp5(tmp3[10]).intl;
-  obj5.label = intl2.string(require("util").t["9AjdkD"]);
-  let stringResult;
-  if (null == tmp21) {
+  TextInput = tmp5(tmp3[23]).TextInput;
+  intl2 = tmp5(tmp3[10]).intl;
+  stringResult = undefined;
+  const tmp23 = closure_13;
+  if (null == tmp22) {
     const intl3 = tmp5(tmp3[10]).intl;
     stringResult = intl3.string(tmp5(tmp3[10]).t.fbKwSs);
   }
-  obj5.description = stringResult;
-  obj4.children = closure_12(require("TextInput").TextInput, obj5);
-  const items3 = [closure_12(View, obj4), ];
-  let obj6 = { style: tmp.button, children: null };
-  let obj7 = { size: "lg", loading: tmp7[0], text: null, onPress: null, disabled: null };
-  const intl4 = tmp5(tmp3[10]).intl;
-  obj7.text = intl4.string(require("util").t.PDTjLN);
-  obj7.onPress = function onPress() {
-    return callback(str);
+  items3 = [tmp25(tmp26, obj4), ];
+  let obj6 = { style: tmp.button, children: tmp25(Button, obj7) };
+  obj7 = {
+    size: "lg",
+    loading: first,
+    text: intl4.string(tmp5(tmp3[10]).t.PDTjLN),
+    onPress() {
+      return callback(str);
+    },
+    disabled: tmp28
   };
-  let tmp27 = null != tmp10;
-  if (!tmp27) {
-    tmp27 = "" === str.trim();
+  Button = tmp5(tmp3[24]).Button;
+  intl4 = tmp5(tmp3[10]).intl;
+  tmp28 = null != tmp11;
+  if (!tmp28) {
+    tmp28 = "" === str.trim();
   }
-  obj7.disabled = tmp27;
-  obj6.children = closure_12(require("components/Button/Button").Button, obj7);
   items3[1] = closure_12(View, obj6);
-  obj3.children = items3;
-  const tmp22Result = tmp22(require("AuthFormView"), obj3);
-  let tmp24Result = tmp22Result;
+  const tmp23Result = tmp23(tmp2Result, obj3);
+  let tmp25Result = tmp23Result;
   if (!tmp4) {
-    let obj8 = { style: tmp.page, children: tmp22Result };
-    tmp24Result = tmp24(tmp2(tmp3[25]), obj8);
+    let obj8 = { style: tmp.page, children: tmp23Result };
+    tmp25Result = tmp25(tmp2(tmp3[25]), obj8);
   }
-  return tmp24Result;
+  return tmp25Result;
 };

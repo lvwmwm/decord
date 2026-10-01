@@ -5,169 +5,200 @@
 // Exports: default
 
 // Module 14820 (SettingsAppearanceThemeSelectorItem)
+import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1085 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1230 */;
 import useToken from "useToken" /* 4531 */;
 import themes from "themes" /* 4538 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
+import react_native2 from "react-native" /* 4548 */;
 import utils_ColorDefault from "utils/Color" /* 4684 */;
-import Pressables from "Pressables" /* 5435 */;
-import ThemedGradient from "ThemedGradient" /* 5437 */;
-import noop from "module_19" /* 19 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5437 */;
+import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 14819 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const ThemedGradientDefault = ThemedGradient;
-
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let size;
+let tmp;
+let tmp5;
+let tmp8;
 const native = tmp(1177);
-const _modDef14821 = tmp8(14821);
+const AssetRegistryDefault = tmp8(14821);
 const SynchronizeIconNativeDefault = tmp5(14822);
-require = fn;
 function GradientThemeBackground(arg0) {
+  let isThemeLocked;
+  let item;
+  let items1;
+  let obj5;
   ({ item, isThemeLocked } = arg0);
-  const isThemeDarkResult = themes.isThemeDark(item.theme);
+  const obj = themes;
+  const isThemeDarkResult = obj.isThemeDark(item.theme);
   const tmp4 = closure_9(isThemeDarkResult);
   const items = [tmp4.themeSelectorGradientBackground, ];
   let obj2 = isThemeLocked;
+  const tmp5 = metroImportDefault;
+  const tmp6 = View;
   if (isThemeLocked) {
     obj2 = { opacity: 0.5 };
   }
-  const obj3 = { style: items, children: null };
+  const obj3 = { style: items, children: items1 };
   items[1] = obj2;
-  const obj4 = { componentStyles: null, gradientOverride: null, mix: true, mixColorOverride: null };
-  const obj5 = { borderRadius: null };
-  const tmp5 = React5;
-  const tmp6 = View;
-  obj5.borderRadius = nativeDefault.radii.sm;
-  obj4.componentStyles = obj5;
-  obj4.gradientOverride = item;
-  obj4.mixColorOverride = isThemeDarkResult ? closure_10 : closure_11;
-  const items1 = [timestampProducer(ThemedGradientDefault, obj4), ];
+  const obj4 = { componentStyles: obj5, gradientOverride: item, mix: true, mixColorOverride: isThemeDarkResult ? closure_10 : closure_11 };
+  obj5 = { borderRadius: nativeDefault.radii.sm };
+  const tmp9 = ThemedGradientDefault;
+  items1 = [metroRequire(tmp9, obj4), ];
   if (isThemeLocked) {
-    const obj6 = { source: _modDef14821, style: tmp4.lock };
-    isThemeLocked = tmp7(native.Icon, obj6);
+    const obj6 = { source: AssetRegistryDefault, style: tmp4.lock };
+    const Icon = native.Icon;
+    isThemeLocked = tmp7(Icon, obj6);
   }
   items1[1] = isThemeLocked;
-  obj3.children = items1;
   return tmp5(tmp6, obj3);
 }
 function DefaultThemeBackground(item) {
+  let obj4;
+  let systemTheme;
+  let theme;
+  let tmp9Result;
   item = item.item;
   useStateFromStores;
   [][0] = ThemeStore;
+  const obj = ThemeStore;
   if ("system" === item.theme) {
-    let theme = obj.themePreferenceForSystemTheme(tmp4);
+    theme = obj.themePreferenceForSystemTheme(tmp4);
   } else {
     theme = item.theme;
   }
-  const token = useToken.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER, theme);
-  obj = ThemeStore;
   const tmpResult = useToken;
-  const token1 = useToken.useToken(nativeDefault.colors.BORDER_STRONG, theme);
+  const token = tmpResult.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER, theme);
   const tmpResult3 = useToken;
-  const obj2 = { style: null, children: null };
-  const size = { width: "100%", height: "100%", backgroundColor: token, borderColor: token1, borderWidth: 1, borderRadius: null };
-  const token2 = useToken.useToken(nativeDefault.colors.ICON_STRONG, theme);
-  size.borderRadius = nativeDefault.radii.sm;
-  obj2.style = size;
-  let tmp9Result = null;
+  const token1 = tmpResult3.useToken(nativeDefault.colors.BORDER_STRONG, theme);
+  const obj2 = { style: size, children: tmp9Result };
+  size = { width: "100%", height: "100%", backgroundColor: token, borderColor: token1, borderWidth: 1, borderRadius: nativeDefault.radii.sm };
+  const tmpResult4 = useToken;
+  const token2 = tmpResult4.useToken(nativeDefault.colors.ICON_STRONG, theme);
+  tmp9Result = null;
   if ("system" === item.theme) {
-    const obj3 = { style: { alignSelf: "center", justifyContent: "center", flex: 1 }, children: null };
-    const obj4 = { fill: token2 };
-    obj3.children = tmp9(SynchronizeIconNativeDefault, obj4);
+    const obj3 = { style: { alignSelf: "center", justifyContent: "center", flex: 1 }, children: metroRequire(SynchronizeIconNativeDefault, obj4) };
+    obj4 = { fill: token2 };
     tmp9Result = tmp9(tmp10, obj3);
   }
-  obj2.children = tmp9Result;
-  return timestampProducer(View, obj2);
+  return metroRequire(View, obj2);
 }
 function CustomThemeBackground(arg0) {
+  let isThemeLocked;
+  let item;
+  let items1;
+  let obj5;
   ({ item, isThemeLocked } = arg0);
-  const isThemeDarkResult = themes.isThemeDark(item.theme);
+  const obj = themes;
+  const isThemeDarkResult = obj.isThemeDark(item.theme);
   const tmp4 = closure_9(isThemeDarkResult);
   const items = [tmp4.themeSelectorGradientBackground, ];
   let obj2 = isThemeLocked;
+  const tmp5 = metroImportDefault;
+  const tmp6 = View;
   if (isThemeLocked) {
     obj2 = { opacity: 0.5 };
   }
-  const obj3 = { style: items, children: null };
+  const obj3 = { style: items, children: items1 };
   items[1] = obj2;
-  const obj4 = { componentStyles: null, mix: true, mixColorOverride: null, customTheme: null };
-  const tmp5 = React5;
-  const tmp6 = View;
-  obj4.componentStyles = { borderRadius: nativeDefault.radii.sm };
-  obj4.mixColorOverride = isThemeDarkResult ? closure_10 : closure_11;
-  obj4.customTheme = item;
-  const items1 = [timestampProducer(ThemedGradient.CustomThemedGradient, obj4), ];
+  const obj4 = { componentStyles: obj5, mix: true, mixColorOverride: isThemeDarkResult ? closure_10 : closure_11, customTheme: item };
+  obj5 = { borderRadius: nativeDefault.radii.sm };
+  const CustomThemedGradient = tmp(5437).CustomThemedGradient;
+  items1 = [metroRequire(CustomThemedGradient, obj4), ];
   if (isThemeLocked) {
-    const obj6 = { source: _modDef14821, style: tmp4.lock };
-    isThemeLocked = tmp7(tmp(1177).Icon, obj6);
+    const obj6 = { source: AssetRegistryDefault, style: tmp4.lock };
+    const Icon = tmp(1177).Icon;
+    isThemeLocked = tmp7(Icon, obj6);
   }
   items1[1] = isThemeLocked;
-  obj3.children = items1;
   return tmp5(tmp6, obj3);
 }
-const View = fn(17).View;
-const ThemeTypes = fn(1085).ThemeTypes;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let createStyles = fn(4836);
-let obj2 = { rippleColor: { color: nativeDefault.unsafe_rawColors.TRANSPARENT }, themeSelectorItemContainer: { width: SettingsAppearanceConstants.THEME_ITEM_WIDTH, height: SettingsAppearanceConstants.THEME_ITEM_HEIGHT }, themeSelectorItem: null, newRedCircle: null };
-let obj3 = { color: nativeDefault.unsafe_rawColors.TRANSPARENT };
-obj2.themeSelectorItem = { borderRadius: nativeDefault.radii.sm, padding: SettingsAppearanceConstants.THEME_ITEM_PADDING };
-let size = { backgroundColor: nativeDefault.unsafe_rawColors.RED_430, width: 12, height: 12, borderRadius: nativeDefault.radii.sm, position: "absolute", top: 0, right: 0 };
-obj2.newRedCircle = size;
-let closure_8 = createStyles.createStyles(obj2);
-createStyles = fn(4836);
+const View = react_native.View;
+const ThemeTypes = Constants.ThemeTypes;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { rippleColor: obj2, themeSelectorItemContainer: { width: SettingsAppearanceConstants.THEME_ITEM_WIDTH, height: SettingsAppearanceConstants.THEME_ITEM_HEIGHT }, themeSelectorItem: obj3, newRedCircle: size };
+obj2 = { color: nativeDefault.unsafe_rawColors.TRANSPARENT };
+createStyles = createStyles.createStyles;
+obj3 = { borderRadius: nativeDefault.radii.sm, padding: SettingsAppearanceConstants.THEME_ITEM_PADDING };
+size = { backgroundColor: nativeDefault.unsafe_rawColors.RED_430, width: 12, height: 12, borderRadius: nativeDefault.radii.sm, position: "absolute", top: 0, right: 0 };
+let closure_8 = createStyles(obj);
+createStyles = createStyles_mod;
 let closure_9 = createStyles.createStyles((arg0) => {
-  const obj = { themeSelectorGradientBackground: { justifyContent: "center", width: "100%", height: "100%" }, lock: null };
+  let semanticColor;
+  const obj = { themeSelectorGradientBackground: { justifyContent: "center", width: "100%", height: "100%" }, lock: { position: "absolute", alignSelf: "center", opacity: 0.6, tintColor: semanticColor } };
   const internal = nativeDefault.internal;
   const resolveSemanticColor = internal.resolveSemanticColor;
-  if (arg0) {
-    let semanticColor = resolveSemanticColor(tmp3.DARK, tmp(576).colors.INTERACTIVE_TEXT_DEFAULT);
+  const tmp4 = arg0;
+  if (tmp4) {
+    semanticColor = resolveSemanticColor(tmp3.DARK, tmp(576).colors.INTERACTIVE_TEXT_DEFAULT);
   } else {
     semanticColor = resolveSemanticColor(tmp3.LIGHT, tmp(576).colors.INTERACTIVE_TEXT_DEFAULT);
   }
-  obj.lock = { position: "absolute", alignSelf: "center", opacity: 0.6, tintColor: semanticColor };
   return obj;
 });
-let obj4 = { borderRadius: nativeDefault.radii.sm, padding: SettingsAppearanceConstants.THEME_ITEM_PADDING };
-let closure_10 = new utils_ColorDefault(0, 0, 0, 0.2);
-tmp5 = new utils_ColorDefault(0, 0, 0, 0.2);
-let closure_11 = new utils_ColorDefault(255, 255, 255, 0.5);
-size = fn(2);
+let tmp6 = new utils_ColorDefault(0, 0, 0, 0.2);
+let closure_10 = tmp6;
+const tmp7 = new utils_ColorDefault(255, 255, 255, 0.5);
+let closure_11 = tmp7;
+size = size_mod;
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceThemeSelectorItem.tsx");
 
 export default function ThemeSelectorItem(onPress) {
+  let accessibilityRole;
+  let accessibilityState;
+  let isNew;
+  let isPreview;
+  let isSelected;
+  let items;
+  let obj5;
+  let stringResult;
+  let themePreset;
+  let tmp16;
+  let tmp8;
+  let tmp9;
   ({ themePreset, isPreview, isSelected, isNew } = onPress);
+  onPress = onPress.onPress;
   const tmp = closure_8();
   if (isPreview) {
     isPreview = themePreset.type !== ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME;
   }
   if (themePreset.type === ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME) {
     const obj2 = { item: themePreset };
-    let tmp8 = timestampProducer(DefaultThemeBackground, obj2);
-    let tmp9 = timestampProducer;
-  } else if (themePreset.type === tmp4(1230).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
+    tmp8 = metroRequire(DefaultThemeBackground, obj2);
+    tmp9 = metroRequire;
+  } else if (themePreset.type === ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
     const obj3 = { item: themePreset, isThemeLocked: isPreview };
-    tmp8 = timestampProducer(CustomThemeBackground, obj3);
-    tmp9 = timestampProducer;
+    tmp8 = metroRequire(CustomThemeBackground, obj3);
+    tmp9 = metroRequire;
   } else {
     const obj = { isThemeLocked: isPreview, item: themePreset };
-    tmp8 = timestampProducer(GradientThemeBackground, obj);
-    tmp9 = timestampProducer;
+    tmp8 = metroRequire(GradientThemeBackground, obj);
+    tmp9 = metroRequire;
   }
-  const radioA11yNative = useA11yRolesNative.useRadioA11yNative({ selected: isSelected, disabled: isPreview });
+  const tmp4Result = react_native2;
+  const radioA11yNative = tmp4Result.useRadioA11yNative({ selected: isSelected, disabled: isPreview });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const obj4 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress: onPress.onPress, accessibilityRole, accessibilityLabel: themePreset.getName(), accessibilityState, accessibilityHint: null, children: null };
-  let stringResult;
+  const obj4 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress, accessibilityRole, accessibilityLabel: themePreset.getName(), accessibilityState, accessibilityHint: stringResult, children: tmp16(View, obj5) };
+  const PressableOpacity = tmp4(5435).PressableOpacity;
+  stringResult = undefined;
   if (isPreview) {
     const intl = tmp4(1115).intl;
     stringResult = intl.string(tmp4(1115).t.VqGKm0);
   }
-  obj4.accessibilityHint = stringResult;
-  const obj5 = { style: tmp.themeSelectorItem, children: null };
-  const items = [tmp8, ];
+  obj5 = { style: tmp.themeSelectorItem, children: items };
+  items = [tmp8, ];
+  tmp16 = metroImportDefault;
   if (isNew) {
     isNew = !isSelected;
   }
@@ -176,7 +207,5 @@ export default function ThemeSelectorItem(onPress) {
     isNew = tmp9(tmp17, obj6);
   }
   items[1] = isNew;
-  obj5.children = items;
-  obj4.children = React5(View, obj5);
-  return tmp9(Pressables.PressableOpacity, obj4);
+  return tmp9(PressableOpacity, obj4);
 };

@@ -6,9 +6,7 @@
 // Module 4830 (CrossPlatformNativeUtils)
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("utils/CrossPlatformNativeUtils.native.tsx");
-
-export default {
+const obj = {
   clearNavigationHistory() {
 
   },
@@ -46,3 +44,6 @@ export default {
     return null;
   }
 };
+const result = size.fileFinishedImporting("utils/CrossPlatformNativeUtils.native.tsx");
+
+export default obj;

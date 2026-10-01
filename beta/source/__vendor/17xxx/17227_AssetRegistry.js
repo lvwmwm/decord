@@ -1,0 +1,10 @@
+// Module ID: 17227
+// Function ID: 17228
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 17227 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf/native/components/notification", width: 302, height: 202, scales: [1, 2], hash: "21f19c3533062eebc26337b4e7ba590a", name: "notification_upsell", type: "png" });

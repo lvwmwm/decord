@@ -4,54 +4,37 @@
 // Exports: addMatrices, decomposeMatrixIntoMatricesAndAngles, getRotationMatrix, multiplyMatrices, scaleMatrix, subtractMatrices
 
 // Module 1680
-import _mod1649 from "module_1649" /* 1649 */;
-import _slicedToArray from "module_32" /* 32 */;
+import ReanimatedError from "ReanimatedError" /* 1649 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-require = arg1;
+const f110811 = (item) => {
+  let tmp = typeof item === "number";
+  if (typeof item === "number") {
+    const _isNaN = isNaN;
+    tmp = !isNaN(item);
+  }
+  return tmp;
+};
+const f110812 = (arr) => {
+  const isArray = Array.isArray(arr) && 4 === arr.length && arr.every((item) => {
+    let tmp = typeof item === "number";
+    if (typeof item === "number") {
+      const _isNaN = isNaN;
+      tmp = !isNaN(item);
+    }
+    return tmp;
+  });
+  return isArray;
+};
 function isAffineMatrixFlat(arr) {
-  let isArray = Array.isArray(arr);
-  if (isArray) {
-    isArray = 16 === arr.length;
-  }
-  if (isArray) {
-    isArray = arr.every((item) => {
-      let tmp = typeof item === "number";
-      if (typeof item === "number") {
-        const _isNaN = isNaN;
-        tmp = !isNaN(item);
-      }
-      return tmp;
-    });
-  }
+  const isArray = Array.isArray(arr) && 16 === arr.length && arr.every(f110811);
   return isArray;
 }
 isAffineMatrixFlat.__closure = {};
 isAffineMatrixFlat.__workletHash = 7766400476414;
 isAffineMatrixFlat.__initData = { code: "function isAffineMatrixFlat_Pnpm_matrixUtilsTsx1(x){return Array.isArray(x)&&x.length===16&&x.every(function(element){return typeof element==='number'&&!isNaN(element);});}" };
 function isAffineMatrix(arr) {
-  let isArray = Array.isArray(arr);
-  if (isArray) {
-    isArray = 4 === arr.length;
-  }
-  if (isArray) {
-    isArray = arr.every((arr) => {
-      let isArray = Array.isArray(arr);
-      if (isArray) {
-        isArray = 4 === arr.length;
-      }
-      if (isArray) {
-        isArray = arr.every((item) => {
-          let tmp = typeof item === "number";
-          if (typeof item === "number") {
-            const _isNaN = isNaN;
-            tmp = !isNaN(item);
-          }
-          return tmp;
-        });
-      }
-      return isArray;
-    });
-  }
+  const isArray = Array.isArray(arr) && 4 === arr.length && arr.every(f110812);
   return isArray;
 }
 isAffineMatrix.__closure = {};
@@ -81,29 +64,7 @@ unflatten.__initData = { code: "function unflatten_Pnpm_matrixUtilsTsx4(m){retur
 function maybeFlattenMatrix(arr) {
   if (typeof isAffineMatrix === "function") {
     const _Array = Array;
-    let isArray = Array.isArray(arr);
-    if (isArray) {
-      isArray = 4 === arr.length;
-    }
-    if (isArray) {
-      isArray = arr.every((arr) => {
-        let isArray = Array.isArray(arr);
-        if (isArray) {
-          isArray = 4 === arr.length;
-        }
-        if (isArray) {
-          isArray = arr.every((item) => {
-            let tmp = typeof item === "number";
-            if (typeof item === "number") {
-              const _isNaN = isNaN;
-              tmp = !isNaN(item);
-            }
-            return tmp;
-          });
-        }
-        return isArray;
-      });
-    }
+    const isArray = Array.isArray(arr) && 4 === arr.length && arr.every(f110812);
     let flatResult = arr;
     if (isArray) {
       if (typeof flatten === "function") {
@@ -137,46 +98,11 @@ multiplyMatrices.__initData = { code: "function multiplyMatrices_Pnpm_matrixUtil
 function subtractMatrices(arr, arr2) {
   if (typeof isAffineMatrixFlat === "function") {
     const _Array = Array;
-    let isArray = Array.isArray(arr);
-    if (isArray) {
-      isArray = 16 === arr.length;
-    }
-    if (isArray) {
-      isArray = arr.every((item) => {
-        let tmp = typeof item === "number";
-        if (typeof item === "number") {
-          const _isNaN = isNaN;
-          tmp = !isNaN(item);
-        }
-        return tmp;
-      });
-    }
+    const isArray = Array.isArray(arr) && 16 === arr.length && arr.every(f110811);
     if (typeof maybeFlattenMatrix === "function") {
       if (typeof isAffineMatrix === "function") {
         const _Array2 = Array;
-        let isArray1 = Array.isArray(arr);
-        if (isArray1) {
-          isArray1 = 4 === arr.length;
-        }
-        if (isArray1) {
-          isArray1 = arr.every((arr) => {
-            let isArray = Array.isArray(arr);
-            if (isArray) {
-              isArray = 4 === arr.length;
-            }
-            if (isArray) {
-              isArray = arr.every((item) => {
-                let tmp = typeof item === "number";
-                if (typeof item === "number") {
-                  const _isNaN = isNaN;
-                  tmp = !isNaN(item);
-                }
-                return tmp;
-              });
-            }
-            return isArray;
-          });
-        }
+        const isArray1 = Array.isArray(arr) && 4 === arr.length && arr.every(f110812);
         let flatResult = arr;
         if (isArray1) {
           if (typeof flatten === "function") {
@@ -185,33 +111,10 @@ function subtractMatrices(arr, arr2) {
             throw new TypeError("Trying to call a non-function");
           }
         }
-        require = flatResult;
         if (typeof tmp4 === "function") {
           if (typeof tmp5 === "function") {
             const _Array3 = Array;
-            let isArray2 = Array.isArray(arr2);
-            if (isArray2) {
-              isArray2 = 4 === arr2.length;
-            }
-            if (isArray2) {
-              isArray2 = arr2.every((arr) => {
-                let isArray = Array.isArray(arr);
-                if (isArray) {
-                  isArray = 4 === arr.length;
-                }
-                if (isArray) {
-                  isArray = arr.every((item) => {
-                    let tmp = typeof item === "number";
-                    if (typeof item === "number") {
-                      const _isNaN = isNaN;
-                      tmp = !isNaN(item);
-                    }
-                    return tmp;
-                  });
-                }
-                return isArray;
-              });
-            }
+            const isArray2 = Array.isArray(arr2) && 4 === arr2.length && arr2.every(f110812);
             let flatResult1 = arr2;
             if (isArray2) {
               if (typeof flatten === "function") {
@@ -261,46 +164,11 @@ subtractMatrices.__initData = { code: "function subtractMatrices_Pnpm_matrixUtil
 function addMatrices(arr, arr2) {
   if (typeof isAffineMatrixFlat === "function") {
     const _Array = Array;
-    let isArray = Array.isArray(arr);
-    if (isArray) {
-      isArray = 16 === arr.length;
-    }
-    if (isArray) {
-      isArray = arr.every((item) => {
-        let tmp = typeof item === "number";
-        if (typeof item === "number") {
-          const _isNaN = isNaN;
-          tmp = !isNaN(item);
-        }
-        return tmp;
-      });
-    }
+    const isArray = Array.isArray(arr) && 16 === arr.length && arr.every(f110811);
     if (typeof maybeFlattenMatrix === "function") {
       if (typeof isAffineMatrix === "function") {
         const _Array2 = Array;
-        let isArray1 = Array.isArray(arr);
-        if (isArray1) {
-          isArray1 = 4 === arr.length;
-        }
-        if (isArray1) {
-          isArray1 = arr.every((arr) => {
-            let isArray = Array.isArray(arr);
-            if (isArray) {
-              isArray = 4 === arr.length;
-            }
-            if (isArray) {
-              isArray = arr.every((item) => {
-                let tmp = typeof item === "number";
-                if (typeof item === "number") {
-                  const _isNaN = isNaN;
-                  tmp = !isNaN(item);
-                }
-                return tmp;
-              });
-            }
-            return isArray;
-          });
-        }
+        const isArray1 = Array.isArray(arr) && 4 === arr.length && arr.every(f110812);
         let flatResult = arr;
         if (isArray1) {
           if (typeof flatten === "function") {
@@ -309,33 +177,10 @@ function addMatrices(arr, arr2) {
             throw new TypeError("Trying to call a non-function");
           }
         }
-        require = flatResult;
         if (typeof tmp4 === "function") {
           if (typeof tmp5 === "function") {
             const _Array3 = Array;
-            let isArray2 = Array.isArray(arr2);
-            if (isArray2) {
-              isArray2 = 4 === arr2.length;
-            }
-            if (isArray2) {
-              isArray2 = arr2.every((arr) => {
-                let isArray = Array.isArray(arr);
-                if (isArray) {
-                  isArray = 4 === arr.length;
-                }
-                if (isArray) {
-                  isArray = arr.every((item) => {
-                    let tmp = typeof item === "number";
-                    if (typeof item === "number") {
-                      const _isNaN = isNaN;
-                      tmp = !isNaN(item);
-                    }
-                    return tmp;
-                  });
-                }
-                return isArray;
-              });
-            }
+            const isArray2 = Array.isArray(arr2) && 4 === arr2.length && arr2.every(f110812);
             let flatResult1 = arr2;
             if (isArray2) {
               if (typeof flatten === "function") {
@@ -383,49 +228,15 @@ addMatrices.__closure = { isAffineMatrixFlat, maybeFlattenMatrix, unflatten };
 addMatrices.__workletHash = 17429737879880;
 addMatrices.__initData = { code: "function addMatrices_Pnpm_matrixUtilsTsx8(maybeFlatA,maybeFlatB){const{isAffineMatrixFlat,maybeFlattenMatrix,unflatten}=this.__closure;const isFlatOnStart=isAffineMatrixFlat(maybeFlatA);const a=maybeFlattenMatrix(maybeFlatA);const b=maybeFlattenMatrix(maybeFlatB);const c=a.map(function(_,i){return a[i]+b[i];});return isFlatOnStart?c:unflatten(c);}" };
 function scaleMatrix(arr, arg1) {
-  closure_0 = arg1;
+  let closure_0 = arg1;
   if (typeof isAffineMatrixFlat === "function") {
+    let tmp = arr;
     const _Array = Array;
-    let isArray = Array.isArray(arr);
-    if (isArray) {
-      isArray = 16 === arr.length;
-    }
-    if (isArray) {
-      isArray = arr.every((item) => {
-        let tmp = typeof item === "number";
-        if (typeof item === "number") {
-          const _isNaN = isNaN;
-          tmp = !isNaN(item);
-        }
-        return tmp;
-      });
-    }
+    const isArray = Array.isArray(arr) && 16 === arr.length && arr.every(f110811);
     if (typeof maybeFlattenMatrix === "function") {
       if (typeof isAffineMatrix === "function") {
         const _Array2 = Array;
-        let isArray1 = Array.isArray(arr);
-        if (isArray1) {
-          isArray1 = 4 === arr.length;
-        }
-        if (isArray1) {
-          isArray1 = arr.every((arr) => {
-            let isArray = Array.isArray(arr);
-            if (isArray) {
-              isArray = 4 === arr.length;
-            }
-            if (isArray) {
-              isArray = arr.every((item) => {
-                let tmp = typeof item === "number";
-                if (typeof item === "number") {
-                  const _isNaN = isNaN;
-                  tmp = !isNaN(item);
-                }
-                return tmp;
-              });
-            }
-            return isArray;
-          });
-        }
+        const isArray1 = Array.isArray(arr) && 4 === arr.length && arr.every(f110812);
         let flatResult = arr;
         if (isArray1) {
           if (typeof flatten === "function") {
@@ -533,8 +344,8 @@ assertVectorsHaveEqualLengths.__closure = { __DEV__: false };
 assertVectorsHaveEqualLengths.__workletHash = 14349158134583;
 assertVectorsHaveEqualLengths.__initData = { code: "function assertVectorsHaveEqualLengths_Pnpm_matrixUtilsTsx13(a,b){const{__DEV__}=this.__closure;if(__DEV__&&a.length!==b.length){throw new ReanimatedError(\"Cannot calculate inner product of two vectors of different lengths. Length of \"+a.toString()+\" is \"+a.length+\" and length of \"+b.toString()+\" is \"+b.length+\".\");}}" };
 function innerProduct(arr, arg1) {
-  closure_0 = arr;
-  closure_1 = arg1;
+  let closure_0 = arr;
+  let closure_1 = arg1;
   if (typeof assertVectorsHaveEqualLengths === "function") {
     return arr.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
   } else {
@@ -547,13 +358,13 @@ innerProduct.__initData = { code: "function innerProduct_Pnpm_matrixUtilsTsx14(a
 function projection(arr, arg1) {
   if (typeof assertVectorsHaveEqualLengths === "function") {
     if (typeof innerProduct === "function") {
-      closure_0 = arr;
-      closure_1 = arg1;
-      if (typeof tmp === "function") {
+      let closure_0 = arr;
+      let closure_1 = arg1;
+      if (typeof assertVectorsHaveEqualLengths === "function") {
         if (typeof tmp2 === "function") {
           closure_0 = arr;
           closure_1 = arr;
-          if (typeof tmp === "function") {
+          if (typeof assertVectorsHaveEqualLengths === "function") {
             closure_0 = tmp5 / arr.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
             return arr.map((item) => item * closure_0);
           } else {
@@ -576,10 +387,10 @@ projection.__closure = { assertVectorsHaveEqualLengths, innerProduct };
 projection.__workletHash = 12191208971941;
 projection.__initData = { code: "function projection_Pnpm_matrixUtilsTsx15(u,a){const{assertVectorsHaveEqualLengths,innerProduct}=this.__closure;assertVectorsHaveEqualLengths(u,a);const s=innerProduct(u,a)/innerProduct(u,u);return u.map(function(e){return e*s;});}" };
 function subtractVectors(arr, arg1) {
-  closure_0 = arr;
-  closure_1 = arg1;
+  let closure_0 = arr;
+  let closure_1 = arg1;
   if (typeof assertVectorsHaveEqualLengths === "function") {
-    return arr.map((item, index) => arr11[index] - arr3[index]);
+    return arr.map((item, index) => mapped4[index] - closure_1[index]);
   } else {
     throw new TypeError("Trying to call a non-function");
   }
@@ -588,63 +399,69 @@ subtractVectors.__closure = { assertVectorsHaveEqualLengths };
 subtractVectors.__workletHash = 9047017498478;
 subtractVectors.__initData = { code: "function subtractVectors_Pnpm_matrixUtilsTsx16(a,b){const{assertVectorsHaveEqualLengths}=this.__closure;assertVectorsHaveEqualLengths(a,b);return a.map(function(_,i){return a[i]-b[i];});}" };
 function scaleVector(arr, arg1) {
-  closure_0 = arg1;
+  let closure_0 = arg1;
   return arr.map((item) => item * closure_0);
 }
 scaleVector.__closure = {};
 scaleVector.__workletHash = 11236256734309;
 scaleVector.__initData = { code: "function scaleVector_Pnpm_matrixUtilsTsx17(u,a){return u.map(function(e){return e*a;});}" };
 function gramSchmidtAlgorithm(items7) {
+  let arr;
+  let arr10;
+  let arr11;
+  let arr2;
+  let arr3;
+  let arr8;
+  let arr9;
+  let items12;
+  let tmp3;
+  const f110820 = (arr) => {
+    if (typeof innerProduct === "function") {
+      let closure_0 = arr;
+      let closure_1 = arr;
+      if (typeof assertVectorsHaveEqualLengths === "function") {
+        if (typeof tmp === "function") {
+          closure_0 = 1 / tmp3(arr.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0));
+          return arr.map((item) => item * closure_0);
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  };
+  const tmp = _slicedToArray;
   [tmp3, arr, arr2, arr3] = items7;
+  _slicedToArray(items7, 4);
   if (typeof subtractVectors === "function") {
-    arr11 = arr;
-    arr3 = tmp5;
+    let closure_1 = tmp5;
     if (typeof assertVectorsHaveEqualLengths === "function") {
-      const mapped = arr.map((item, index) => arr11[index] - arr3[index]);
-      if (typeof tmp4 === "function") {
-        arr11 = arr2;
-        arr3 = tmp8;
-        if (typeof tmp6 === "function") {
-          const mapped1 = arr2.map((item, index) => arr11[index] - arr3[index]);
-          if (typeof tmp4 === "function") {
-            arr11 = mapped1;
-            arr3 = tmp9;
-            if (typeof tmp6 === "function") {
-              const mapped2 = mapped1.map((item, index) => arr11[index] - arr3[index]);
+      const mapped = arr.map((item, index) => mapped4[index] - closure_1[index]);
+      if (typeof subtractVectors === "function") {
+        closure_1 = tmp8;
+        if (typeof assertVectorsHaveEqualLengths === "function") {
+          const mapped1 = arr2.map((item, index) => mapped4[index] - closure_1[index]);
+          if (typeof subtractVectors === "function") {
+            closure_1 = tmp9;
+            if (typeof assertVectorsHaveEqualLengths === "function") {
+              const mapped2 = mapped1.map((item, index) => mapped4[index] - closure_1[index]);
               const items = [tmp3, mapped, mapped2, ];
-              if (typeof tmp4 === "function") {
-                arr11 = arr3;
-                arr3 = tmp11;
-                if (typeof tmp6 === "function") {
-                  const mapped3 = arr3.map((item, index) => arr11[index] - arr3[index]);
-                  if (typeof tmp4 === "function") {
-                    arr11 = mapped3;
-                    arr3 = tmp12;
-                    if (typeof tmp6 === "function") {
-                      const mapped4 = mapped3.map((item, index) => arr11[index] - arr3[index]);
-                      if (typeof tmp4 === "function") {
-                        arr11 = mapped4;
-                        arr3 = tmp13;
-                        if (typeof tmp6 === "function") {
-                          items[3] = mapped4.map((item, index) => arr11[index] - arr3[index]);
-                          [arr8, arr9, arr10, arr11] = tmp(items.map((arr) => {
-                            if (typeof innerProduct === "function") {
-                              closure_0 = arr;
-                              closure_1 = arr;
-                              if (typeof assertVectorsHaveEqualLengths === "function") {
-                                if (typeof tmp === "function") {
-                                  closure_0 = 1 / tmp3(arr.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0));
-                                  return arr.map((item) => item * closure_0);
-                                } else {
-                                  throw new TypeError("Trying to call a non-function");
-                                }
-                              } else {
-                                throw new TypeError("Trying to call a non-function");
-                              }
-                            } else {
-                              throw new TypeError("Trying to call a non-function");
-                            }
-                          }), 4);
+              if (typeof subtractVectors === "function") {
+                closure_1 = tmp11;
+                if (typeof assertVectorsHaveEqualLengths === "function") {
+                  const mapped3 = arr3.map((item, index) => mapped4[index] - closure_1[index]);
+                  if (typeof subtractVectors === "function") {
+                    closure_1 = tmp12;
+                    if (typeof assertVectorsHaveEqualLengths === "function") {
+                      const mapped4 = mapped3.map((item, index) => mapped4[index] - closure_1[index]);
+                      if (typeof subtractVectors === "function") {
+                        closure_1 = tmp13;
+                        if (typeof assertVectorsHaveEqualLengths === "function") {
+                          items[3] = mapped4.map((item, index) => mapped4[index] - closure_1[index]);
+                          [arr8, arr9, arr10, arr11] = tmp(items.map(f110820), 4);
                           const items1 = [arr8[0], arr9[0], arr10[0], arr11[0]];
                           const items2 = [items1, , , ];
                           const items3 = [arr8[1], arr9[1], arr10[1], arr11[1]];
@@ -653,68 +470,54 @@ function gramSchmidtAlgorithm(items7) {
                           items2[2] = items4;
                           const items5 = [arr8[3], arr9[3], arr10[3], arr11[3]];
                           items2[3] = items5;
+                          tmp(items.map(f110820), 4);
                           if (typeof innerProduct === "function") {
-                            arr11 = arr8;
-                            arr3 = tmp3;
-                            if (typeof tmp6 === "function") {
+                            closure_1 = tmp3;
+                            if (typeof assertVectorsHaveEqualLengths === "function") {
                               const items6 = [arr8.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0), , , ];
-                              if (typeof tmp15 === "function") {
-                                arr11 = arr8;
-                                arr3 = arr;
-                                if (typeof tmp6 === "function") {
+                              if (typeof innerProduct === "function") {
+                                if (typeof assertVectorsHaveEqualLengths === "function") {
                                   items6[1] = arr8.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
-                                  if (typeof tmp15 === "function") {
-                                    arr11 = arr8;
-                                    arr3 = arr2;
-                                    if (typeof tmp6 === "function") {
+                                  if (typeof innerProduct === "function") {
+                                    if (typeof assertVectorsHaveEqualLengths === "function") {
                                       items6[2] = arr8.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
-                                      if (typeof tmp15 === "function") {
-                                        arr11 = arr8;
-                                        if (typeof tmp6 === "function") {
+                                      if (typeof innerProduct === "function") {
+                                        if (typeof assertVectorsHaveEqualLengths === "function") {
                                           items6[3] = arr8.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
                                           items7 = [items6, , , ];
-                                          if (typeof tmp15 === "function") {
-                                            arr11 = arr9;
-                                            arr3 = arr;
-                                            if (typeof tmp6 === "function") {
+                                          if (typeof innerProduct === "function") {
+                                            if (typeof assertVectorsHaveEqualLengths === "function") {
                                               const items8 = [0, arr9.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0)];
-                                              if (typeof tmp15 === "function") {
-                                                arr11 = arr9;
-                                                arr3 = arr2;
-                                                if (typeof tmp6 === "function") {
+                                              if (typeof innerProduct === "function") {
+                                                if (typeof assertVectorsHaveEqualLengths === "function") {
                                                   items8[2] = arr9.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
-                                                  if (typeof tmp15 === "function") {
-                                                    arr11 = arr9;
-                                                    if (typeof tmp6 === "function") {
+                                                  if (typeof innerProduct === "function") {
+                                                    if (typeof assertVectorsHaveEqualLengths === "function") {
                                                       items8[3] = arr9.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
                                                       items7[1] = items8;
-                                                      if (typeof tmp15 === "function") {
-                                                        arr11 = arr10;
-                                                        arr3 = arr2;
-                                                        if (typeof tmp6 === "function") {
+                                                      if (typeof innerProduct === "function") {
+                                                        if (typeof assertVectorsHaveEqualLengths === "function") {
                                                           const items9 = [0, 0, arr10.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0)];
-                                                          if (typeof tmp15 === "function") {
-                                                            arr11 = arr10;
-                                                            if (typeof tmp6 === "function") {
+                                                          if (typeof innerProduct === "function") {
+                                                            if (typeof assertVectorsHaveEqualLengths === "function") {
                                                               items9[3] = arr10.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
                                                               items7[2] = items9;
-                                                              if (typeof tmp15 === "function") {
-                                                                if (typeof tmp6 === "function") {
+                                                              if (typeof innerProduct === "function") {
+                                                                if (typeof assertVectorsHaveEqualLengths === "function") {
                                                                   const items10 = [0, 0, 0, arr11.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0)];
                                                                   items7[3] = items10;
                                                                   if (typeof transposeMatrix === "function") {
                                                                     if (typeof flatten === "function") {
-                                                                      const obj = { rotationMatrix: null, skewMatrix: null };
+                                                                      const obj = { rotationMatrix: items12, skewMatrix: null };
                                                                       const flatResult = items2.flat();
                                                                       const items11 = [flatResult[0], flatResult[4], flatResult[8], flatResult[12]];
-                                                                      const items12 = [items11, , , ];
+                                                                      items12 = [items11, , , ];
                                                                       const items13 = [flatResult[1], flatResult[5], flatResult[9], flatResult[13]];
                                                                       items12[1] = items13;
                                                                       const items14 = [flatResult[2], flatResult[6], flatResult[10], flatResult[14]];
                                                                       items12[2] = items14;
                                                                       const items15 = [flatResult[3], flatResult[7], flatResult[11], flatResult[15]];
                                                                       items12[3] = items15;
-                                                                      obj.rotationMatrix = items12;
                                                                       if (typeof tmp16 === "function") {
                                                                         if (typeof tmp17 === "function") {
                                                                           const flatResult1 = items7.flat();
@@ -800,24 +603,6 @@ function gramSchmidtAlgorithm(items7) {
                           } else {
                             throw new TypeError("Trying to call a non-function");
                           }
-                          const tmpResult = tmp(items.map((arr) => {
-                            if (typeof innerProduct === "function") {
-                              closure_0 = arr;
-                              closure_1 = arr;
-                              if (typeof assertVectorsHaveEqualLengths === "function") {
-                                if (typeof tmp === "function") {
-                                  closure_0 = 1 / tmp3(arr.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0));
-                                  return arr.map((item) => item * closure_0);
-                                } else {
-                                  throw new TypeError("Trying to call a non-function");
-                                }
-                              } else {
-                                throw new TypeError("Trying to call a non-function");
-                              }
-                            } else {
-                              throw new TypeError("Trying to call a non-function");
-                            }
-                          }), 4);
                         } else {
                           throw new TypeError("Trying to call a non-function");
                         }
@@ -854,14 +639,13 @@ function gramSchmidtAlgorithm(items7) {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-  tmp = _slicedToArray;
-  const tmp2 = _slicedToArray(items7, 4);
 }
 gramSchmidtAlgorithm.__closure = { subtractVectors, projection, scaleVector, innerProduct, transposeMatrix };
 gramSchmidtAlgorithm.__workletHash = 1839555089531;
 gramSchmidtAlgorithm.__initData = { code: "function gramSchmidtAlgorithm_Pnpm_matrixUtilsTsx18(matrix){const{subtractVectors,projection,scaleVector,innerProduct,transposeMatrix}=this.__closure;const[a0,a1,a2,a3]=matrix;const u0=a0;const u1=subtractVectors(a1,projection(u0,a1));const u2=subtractVectors(subtractVectors(a2,projection(u0,a2)),projection(u1,a2));const u3=subtractVectors(subtractVectors(subtractVectors(a3,projection(u0,a3)),projection(u1,a3)),projection(u2,a3));const[e0,e1,e2,e3]=[u0,u1,u2,u3].map(function(u){return scaleVector(u,1/Math.sqrt(innerProduct(u,u)));});const rotationMatrix=[[e0[0],e1[0],e2[0],e3[0]],[e0[1],e1[1],e2[1],e3[1]],[e0[2],e1[2],e2[2],e3[2]],[e0[3],e1[3],e2[3],e3[3]]];const skewMatrix=[[innerProduct(e0,a0),innerProduct(e0,a1),innerProduct(e0,a2),innerProduct(e0,a3)],[0,innerProduct(e1,a1),innerProduct(e1,a2),innerProduct(e1,a3)],[0,0,innerProduct(e2,a2),innerProduct(e2,a3)],[0,0,0,innerProduct(e3,a3)]];return{rotationMatrix:transposeMatrix(rotationMatrix),skewMatrix:transposeMatrix(skewMatrix)};}" };
 function decomposeMatrix(arr) {
   if (typeof maybeFlattenMatrix === "function") {
+    let tmp = isAffineMatrix;
     if (typeof isAffineMatrix === "function") {
       const _Array = Array;
       let isArray = Array.isArray(arr);
@@ -869,23 +653,7 @@ function decomposeMatrix(arr) {
         isArray = 4 === arr.length;
       }
       if (isArray) {
-        isArray = arr.every((arr) => {
-          let isArray = Array.isArray(arr);
-          if (isArray) {
-            isArray = 4 === arr.length;
-          }
-          if (isArray) {
-            isArray = arr.every((item) => {
-              let tmp = typeof item === "number";
-              if (typeof item === "number") {
-                const _isNaN = isNaN;
-                tmp = !isNaN(item);
-              }
-              return tmp;
-            });
-          }
-          return isArray;
-        });
+        isArray = arr.every(f110812);
       }
       let flatResult = arr;
       if (isArray) {
@@ -895,9 +663,10 @@ function decomposeMatrix(arr) {
           throw new TypeError("Trying to call a non-function");
         }
       }
-      require = flatResult;
       if (0 === flatResult[15]) {
-        const reanimatedError = new _mod1649.ReanimatedError("Invalid transform matrix.");
+        const self = this;
+        const self2 = this;
+        const reanimatedError = new ReanimatedError.ReanimatedError("Invalid transform matrix.");
         throw reanimatedError;
       } else {
         const item = flatResult.forEach((item, index) => {
@@ -911,11 +680,11 @@ function decomposeMatrix(arr) {
         const first = flatResult[0];
         if (typeof norm3d === "function") {
           const _Math = Math;
-          let result = tmp26 * Math.sqrt(first * first + tmp29 * tmp29 + tmp30 * tmp30);
-          if (typeof tmp27 === "function") {
+          let result = tmp24 * Math.sqrt(first * first + tmp27 * tmp27 + tmp28 * tmp28);
+          if (typeof norm3d === "function") {
             const _Math2 = Math;
             const result1 = tmp7 * Math.sqrt(tmp8 * tmp8 + tmp9 * tmp9 + tmp10 * tmp10);
-            if (typeof tmp27 === "function") {
+            if (typeof norm3d === "function") {
               const _Math3 = Math;
               const result2 = tmp12 * Math.sqrt(tmp13 * tmp13 + tmp14 * tmp14 + tmp15 * tmp15);
               const items2 = [result, 0, 0, 0];
@@ -934,6 +703,7 @@ function decomposeMatrix(arr) {
               items7[3] = [0, 0, 0, 1];
               const obj = { translationMatrix: items, scaleMatrix: items3, rotationMatrix: null, skewMatrix: null };
               ({ rotationMatrix: obj.rotationMatrix, skewMatrix: obj.skewMatrix } = gramSchmidtAlgorithm(items7));
+              gramSchmidtAlgorithm(items7);
               return obj;
             } else {
               throw new TypeError("Trying to call a non-function");
@@ -956,30 +726,32 @@ decomposeMatrix.__closure = { maybeFlattenMatrix, norm3d, gramSchmidtAlgorithm }
 decomposeMatrix.__workletHash = 244684068165;
 decomposeMatrix.__initData = { code: "function decomposeMatrix_Pnpm_matrixUtilsTsx19(unknownTypeMatrix){const{maybeFlattenMatrix,norm3d,gramSchmidtAlgorithm}=this.__closure;const matrix=maybeFlattenMatrix(unknownTypeMatrix);if(matrix[15]===0){throw new ReanimatedError('Invalid transform matrix.');}matrix.forEach(function(_,i){return matrix[i]/=matrix[15];});const translationMatrix=[[1,0,0,0],[0,1,0,0],[0,0,1,0],[matrix[12],matrix[13],matrix[14],1]];const sx=matrix[15]*norm3d(matrix[0],matrix[4],matrix[8]);const sy=matrix[15]*norm3d(matrix[1],matrix[5],matrix[9]);const sz=matrix[15]*norm3d(matrix[2],matrix[6],matrix[10]);const scaleMatrix=[[sx,0,0,0],[0,sy,0,0],[0,0,sz,0],[0,0,0,1]];const rotationAndSkewMatrix=[[matrix[0]/sx,matrix[1]/sx,matrix[2]/sx,0],[matrix[4]/sy,matrix[5]/sy,matrix[6]/sy,0],[matrix[8]/sz,matrix[9]/sz,matrix[10]/sz,0],[0,0,0,1]];const{rotationMatrix:rotationMatrix,skewMatrix:skewMatrix}=gramSchmidtAlgorithm(rotationAndSkewMatrix);return{translationMatrix:translationMatrix,scaleMatrix:scaleMatrix,rotationMatrix:rotationMatrix,skewMatrix:skewMatrix};}" };
 function decomposeMatrixIntoMatricesAndAngles(toValue) {
+  let scaleMatrix;
+  let skewMatrix;
+  let translationMatrix;
   const tmp = decomposeMatrix(toValue);
   const rotationMatrix = tmp.rotationMatrix;
   ({ scaleMatrix, translationMatrix, skewMatrix } = tmp);
   let num = Math.asin(tmp2);
   if (1 !== -rotationMatrix[0][2]) {
-    if (-1 !== tmp2) {
+    let num3;
+    let num4;
+    if (-1 !== -rotationMatrix[0][2]) {
       const _Math = Math;
-      let num3 = Math.atan2(rotationMatrix[0][1], rotationMatrix[0][0]);
+      num3 = Math.atan2(rotationMatrix[0][1], rotationMatrix[0][0]);
       const _Math2 = Math;
-      let num4 = Math.atan2(rotationMatrix[1][2], rotationMatrix[2][2]);
+      num4 = Math.atan2(rotationMatrix[1][2], rotationMatrix[2][2]);
     }
-    const obj = { scaleMatrix, rotationMatrix, translationMatrix, skewMatrix, rx: null, ry: null, rz: null };
+    const obj = { scaleMatrix, rotationMatrix, translationMatrix, skewMatrix, rx: num4, ry: num, rz: num3 };
     if (!num4) {
       num4 = 0;
     }
-    obj.rx = num4;
     if (!num) {
       num = 0;
     }
-    obj.ry = num;
     if (!num3) {
       num3 = 0;
     }
-    obj.rz = num3;
     return obj;
   }
   num4 = Math.atan2(tmp2 * rotationMatrix[0][1], tmp2 * rotationMatrix[0][2]);

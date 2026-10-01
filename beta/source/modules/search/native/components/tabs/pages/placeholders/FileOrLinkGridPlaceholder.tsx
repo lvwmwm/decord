@@ -5,30 +5,32 @@
 // Exports: default
 
 // Module 16487 (FileOrLinkGridPlaceholder)
+import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import useFontScale from "useFontScale" /* 5288 */;
 import usePlaceholderStyles from "usePlaceholderStyles" /* 16462 */;
-import SearchListCard from "SearchListCard" /* 16488 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-let size = fn(2);
+const jsx = Fragment.jsx;
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/FileOrLinkGridPlaceholder.tsx");
 
 export default function FileOrLinkGridPlaceholderItem(imageStyle) {
   imageStyle = imageStyle.imageStyle;
-  const placeholderAnimatedStyle = usePlaceholderStyles.usePlaceholderAnimatedStyle(true);
+  const containerStyle = imageStyle.containerStyle;
+  const obj = usePlaceholderStyles;
+  const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
   const width = imageStyle.width;
-  const sum = imageStyle.height + 108 * useFontScale.useFontScale();
-  c1 = sum;
+  const obj2 = useFontScale;
+  const sum = imageStyle.height + 108 * obj2.useFontScale();
+  let c1 = sum;
   const items = [width, sum];
-  const memo = noop.useMemo(() => {
-    const size = { width, height };
+  const memo = react.useMemo(() => {
+    size = { width, height };
     return size;
   }, items);
-  const obj3 = { style: null, pointerEvents: "none", children: jsx(SearchListCard.SearchListCardContainer, { containerStyle: memo }) };
-  const items1 = [imageStyle.containerStyle, placeholderAnimatedStyle];
-  obj3.style = items1;
-  return jsx(ReanimatedRexportDefault.View, { style: null, pointerEvents: "none", children: jsx(SearchListCard.SearchListCardContainer, { containerStyle: memo }) });
+  const items1 = [containerStyle, placeholderAnimatedStyle];
+  const View = ReanimatedRexportDefault.View;
+  return <View style={items1} pointerEvents="none">{null}</View>;
 };

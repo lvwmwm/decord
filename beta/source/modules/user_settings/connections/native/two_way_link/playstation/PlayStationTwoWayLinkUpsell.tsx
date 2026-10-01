@@ -5,39 +5,40 @@
 // Exports: PlayStationTwoWayLinkUpsell
 
 // Module 14504 (PlayStationTwoWayLinkUpsell)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl3 from "intl" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 8560 */;
-import OneWayToTwoWayLinkUpsell from "OneWayToTwoWayLinkUpsell" /* 14502 */;
-import _modDef14505 from "module_14505" /* 14505 */;
-import noop from "module_19" /* 19 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 14502 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14505 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let c3;
+let closure_4;
+let hasOwnProperty;
 ({ HelpdeskArticles: c3, AnalyticsLocations: closure_4, PlatformTypes: hasOwnProperty } = Constants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ upsellImage: { alignSelf: "center", width: 84, marginLeft: 16 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationTwoWayLinkUpsell.tsx");
 
 export const PlayStationTwoWayLinkUpsell = function PlayStationTwoWayLinkUpsell() {
+  let constants2;
   const tmp = closure_7();
-  const articleURL = HelpdeskUtilsDefault.getArticleURL(constants.PS_CONNECTION);
-  const obj2 = { title: null, body: null, img: null, newIndicatorDismissibleContent: null, onPress: null };
-  const intl = util.intl;
-  obj2.title = intl.string(util.t.v20wwm);
-  const intl2 = util.intl;
-  obj2.body = intl2.format(util.t.lTZBit, { help_article: articleURL });
-  const obj3 = { style: tmp.upsellImage, source: null, resizeMode: "contain" };
-  obj3.source = _modDef14505;
-  obj2.img = jsx(FastImageDefault, { style: tmp.upsellImage, source: null, resizeMode: "contain" });
-  obj2.newIndicatorDismissibleContent = dismissible_content.DismissibleContent.PS_ONE_WAY_RECONNECT;
-  obj2.onPress = function onPress() {
+  let obj = HelpdeskUtilsDefault;
+  const articleURL = obj.getArticleURL(constants.PS_CONNECTION);
+  const OneWayToTwoWayLinkUpsell = OneWayToTwoWayLinkUpsell2.OneWayToTwoWayLinkUpsell;
+  const intl = intl3.intl;
+  const intl2 = intl3.intl;
+  ({ style: tmp.upsellImage, source: AssetRegistryDefault, resizeMode: "contain" });
+  FastImageDefault;
+  return <OneWayToTwoWayLinkUpsell title={intl.string(intl3.t.v20wwm)} body={intl2.format(intl3.t.lTZBit, { help_article: articleURL })} img={null} newIndicatorDismissibleContent={dismissible_content.DismissibleContent.PS_ONE_WAY_RECONNECT} onPress={function onPress() {
     const items = [constants.RELINK_UPSELL];
-    return PlayStationLinkModalActionCreatorsDefault.showModal(items, constants2.PLAYSTATION);
-  };
-  return jsx(OneWayToTwoWayLinkUpsell.OneWayToTwoWayLinkUpsell, { title: null, body: null, img: null, newIndicatorDismissibleContent: null, onPress: null });
+    const obj = PlayStationLinkModalActionCreatorsDefault;
+    return obj.showModal(items, constants2.PLAYSTATION);
+  }} />;
 };

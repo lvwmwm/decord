@@ -5,19 +5,22 @@
 // Exports: default
 
 // Module 8171 (useGameProfileHeroBackgroundURL)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
+let bannerURL;
+
 const result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileHeroBackgroundURL.tsx");
 
 export default function useGameProfileHeroBackgroundURL(arg0, arg1) {
-  let bannerURL = arg0;
-  closure_1 = arg1;
-  const first = _slicedToArray(noop.useState(() => Math.random()), 1)[0];
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const first = _slicedToArray(react.useState(() => Math.random()), 1)[0];
   const items = [arg1, arg0, first];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     bannerURL = bannerURL.getBannerURL(closure_1);
+    const tmp = closure_1;
     if (null != bannerURL) {
       return bannerURL;
     } else {
@@ -36,6 +39,5 @@ export default function useGameProfileHeroBackgroundURL(arg0, arg1) {
       }
       return screenshotURL;
     }
-    tmp = closure_1;
   }, items);
 };

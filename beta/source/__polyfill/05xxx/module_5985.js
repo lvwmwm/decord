@@ -6,8 +6,9 @@
 // Module 5985
 
 export const getLabel = function getLabel(label, arg1) {
+  let title;
   if (undefined !== label.label) {
-    let title = label.label;
+    title = label.label;
   } else {
     title = arg1;
     if (undefined !== label.title) {

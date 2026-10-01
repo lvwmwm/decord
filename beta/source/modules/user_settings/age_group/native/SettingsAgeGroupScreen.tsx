@@ -5,66 +5,83 @@
 // Exports: default
 
 // Module 14284 (SettingsAgeGroupScreen)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl3 from "intl" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import _modDef3039 from "module_3039" /* 3039 */;
 import Text_Text from "Text/Text" /* 4832 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import SettingLayoutDefault from "SettingLayout" /* 14247 */;
-import TinyBroncoAgeGroupHeader2 from "TinyBroncoAgeGroupHeader" /* 14285 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let tmp;
+const TinyBroncoAgeGroupHeader2 = tmp(14285);
 function SettingsAgeGroupHeader() {
-  let obj = { style: closure_9().headerContainer, children: null };
-  const callback = noop.useCallback(() => {
-    const obj = AgeVerificationActionCreatorsDefault;
-    obj.openUrl(HelpdeskUtilsDefault.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+  let intl;
+  let intl2;
+  let items;
+  const tmp = closure_9();
+  let obj = { style: tmp.headerContainer, children: items };
+  const callback = react.useCallback(() => {
+    const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
+    AgeVerificationActionCreatorsDefault;
+    const obj = HelpdeskUtilsDefault;
+    openUrl(obj.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
   }, []);
-  const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(_modDef3039.PY4MA0);
-  const items = [React5(Text_Text.Text, obj2), ];
-  const obj3 = { variant: "text-sm/normal", color: "text-default", children: null };
-  const intl2 = util.intl;
-  obj3.children = intl2.format(_modDef3039["1DN29p"], { handleOnHelpUrlHook: callback });
-  items[1] = React5(Text_Text.Text, obj3);
-  obj.children = items;
-  return React6(View, obj);
+  const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3039.PY4MA0) };
+  const Text = Text_Text.Text;
+  intl = intl3.intl;
+  items = [metroImportDefault(Text, obj2), ];
+  const obj3 = { variant: "text-sm/normal", color: "text-default", children: intl2.format(_modDef3039["1DN29p"], { handleOnHelpUrlHook: callback }) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl3.intl;
+  items[1] = metroImportDefault(Text2, obj3);
+  return metroImportAll(View, obj);
 }
-const View = fn(17).View;
-const MobileUserSettings = fn(7417).MobileUserSettings;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { headerContainer: { gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 } };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { headerContainer: obj2 };
+obj2 = { gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 };
+let closure_9 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupScreen.tsx");
 
 export default function SettingsAgeGroupScreen() {
-  isTinyBroncoSettingsEnabled = isTinyBroncoSettingsEnabled(14243).useIsTinyBroncoSettingsEnabled();
+  let isTinyBroncoSettingsEnabled;
+  let obj = isTinyBroncoSettingsEnabled(14243);
+  isTinyBroncoSettingsEnabled = obj.useIsTinyBroncoSettingsEnabled();
   let items = [isTinyBroncoSettingsEnabled];
-  const node = noop.useMemo(() => {
-    const obj2 = { sections: null, ListHeaderComponent: null };
-    const obj3 = { label: null, settings: null };
-    const intl = util.intl;
-    obj3.label = intl.string(_modDef3039["5Mi5TE"]);
-    const items = [, , ];
+  const node = react.useMemo(() => {
+    let TinyBroncoAgeGroupHeader;
+    let intl;
+    let items;
+    let items1;
+    const obj = { sections: items1, ListHeaderComponent: TinyBroncoAgeGroupHeader };
+    const obj2 = { label: intl.string(_modDef3039["5Mi5TE"]), settings: items };
+    const createList = SettingBuilders.createList;
+    SettingBuilders;
+    intl = intl3.intl;
+    items = [, , ];
     ({ AGE_GROUP_CONFIRM: arr[0], AGE_GROUP_RESET: arr[1], AGE_GROUP_CONFIRM_ACCOUNT_STATUS: arr[2] } = MobileUserSettings);
-    obj3.settings = items;
-    const items1 = [obj3];
-    obj2.sections = items1;
-    if (isTinyBroncoSettingsEnabled) {
-      let TinyBroncoAgeGroupHeader = TinyBroncoAgeGroupHeader2.TinyBroncoAgeGroupHeader;
+    items1 = [obj2];
+    const tmp4 = isTinyBroncoSettingsEnabled;
+    if (tmp4) {
+      TinyBroncoAgeGroupHeader = TinyBroncoAgeGroupHeader2.TinyBroncoAgeGroupHeader;
     } else {
       TinyBroncoAgeGroupHeader = SettingsAgeGroupHeader;
     }
-    obj2.ListHeaderComponent = TinyBroncoAgeGroupHeader;
-    return SettingBuilders.createList(obj2);
+    return createList(obj);
   }, items);
   return closure_7(SettingLayoutDefault, { node });
 };

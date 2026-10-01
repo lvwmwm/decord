@@ -7,15 +7,16 @@
 // Module 10267 (StorefrontNativeUtils)
 import IAPStoreDefault from "IAPStore" /* 6658 */;
 import GPlayActionCreators from "GPlayActionCreators" /* 8668 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/storefront/native/StorefrontNativeUtils.android.tsx");
 
 export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
+  let c0;
   sku = sku.sku;
   _require = undefined;
   let stateFromStores;
@@ -31,31 +32,36 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
   }
   _require = tmp2;
   let items = [tmp2];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (null != c0) {
       const items = [tmp];
-      const inAppSkus = GPlayActionCreators.loadInAppSkus(items);
+      const obj = GPlayActionCreators;
+      const inAppSkus = obj.loadInAppSkus(items);
     }
   }, items);
+  const useStateFromStores = require("get initialized").useStateFromStores;
+  const tmp4 = require("get initialized");
   const items1 = [stateFromStores(6658)];
   const items2 = [tmp2];
-  stateFromStores = require("initialize").useStateFromStores(items1, () => {
+  stateFromStores = useStateFromStores(items1, () => {
     let product = null;
     if (null != c0) {
-      product = IAPStoreDefault.getProduct(tmp);
+      const obj = IAPStoreDefault;
+      product = obj.getProduct(tmp);
     }
     return product;
   }, items2);
   const items3 = [stateFromStores];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    let obj;
     let priceString;
     if (stateFromStores != null) {
       priceString = tmp.priceString;
     }
     if (null != priceString) {
-      ({ priceString: obj2.normalPrice, priceString: obj2.userPrice } = tmp);
-      let obj = { normalPrice: null, discountedPrice: null, discountPercent: null, userPrice: null };
       const obj3 = { normalPrice: null, discountedPrice: null, discountPercent: null, userPrice: null };
+      ({ priceString: obj2.normalPrice, priceString: obj2.userPrice } = stateFromStores);
+      obj = obj3;
     } else {
       obj = { normalPrice: null, discountedPrice: null, discountPercent: null, userPrice: null };
     }

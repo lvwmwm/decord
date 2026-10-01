@@ -4,13 +4,14 @@
 // Dependencies: [1774, 1775]
 
 // Module 1773 (ProgressTransitionManager)
-const require = globalThis.__r;
+import _mod1774 from "module_1774" /* 1774 */;
+import SharedTransition from "SharedTransition" /* 1775 */;
 
-for (const key10013 in require("module_1774")) {
-  arg5[key10013] = require("module_1774")[key10013];
+for (const key10013 in _mod1774) {
+  exports[key10013] = _mod1774[key10013];
   continue;
 }
-for (const key10017 in require("SharedTransition")) {
-  arg5[key10017] = require("SharedTransition")[key10017];
+for (const key10017 in SharedTransition) {
+  exports[key10017] = SharedTransition[key10017];
   continue;
 }

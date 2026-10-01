@@ -5,16 +5,21 @@
 // Exports: StepNumber
 
 // Module 7734 (StepNumber)
-import _mod19 from "module_19" /* 19 */;
-import _mod7731 from "module_7731" /* 7731 */;
+import react2 from "react" /* 19 */;
+import styles from "styles" /* 7731 */;
 import module_7727 from "module_7727" /* 7727 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 
-const noop = module_7727(_mod19);
+const react = module_7727(react2);
 
 export const StepNumber = function StepNumber(arg0) {
-  const obj = { style: _mod7731.styles.stepNumber, children: <get ActivityIndicator.Text testID={"" + index + "th-step"} style={style}>{i}</get ActivityIndicator.Text> };
+  let i;
+  let index;
+  let style;
   ({ i, index, style } = arg0);
-  return <get ActivityIndicator.View style={_mod7731.styles.stepNumber}><get ActivityIndicator.Text testID={"" + index + "th-step"} style={style}>{i}</get ActivityIndicator.Text></get ActivityIndicator.View>;
+  const jsx = Fragment.jsx;
+  const View = react_native.View;
+  ({ testID: "" + index + "th-step", style, children: i });
+  return <View style={styles.styles.stepNumber}>{null}</View>;
 };

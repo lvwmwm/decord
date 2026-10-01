@@ -8,14 +8,12 @@ import _modDef5531 from "module_5531" /* 5531 */;
 import get0thIfdOffset from "get0thIfdOffset" /* 5546 */;
 import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 5547 */;
 
-require = arg1;
-importDefault = arg2;
-const dependencyMap = arg6;
 const MODEL_ID = { K3_III: 78420 };
 let obj2 = { CAMERA_ORIENTATION: 1, ROLL_ANGLE: 3, PITCH_ANGLE: 5 };
 
 export default {
   read(byteLength, arg1, arg2, arg3) {
+    let str6;
     const obj = _modDef5531;
     const byteOrder = obj.getByteOrder(byteLength, arg1 + arg2 + 8);
     const sum = arg1 + arg2;
@@ -28,14 +26,16 @@ export default {
     if (LevelInfo) {
       LevelInfo = ifd.LevelInfo;
     }
-    let tmp10 = ifd;
+    let tmp8 = ifd;
     if (LevelInfo) {
       const sum1 = sum + ifd.LevelInfo.__offset;
       const obj3 = {};
+      const objectAssign = tmp5(5526).objectAssign;
+      _mod5526;
       if (sum1 + 7 <= byteLength.byteLength) {
         const int8 = byteLength.getInt8(sum1 + obj2.CAMERA_ORIENTATION);
-        const obj4 = { value: int8, description: null };
-        let str6 = "Horizontal (normal)";
+        const obj4 = { value: int8, description: str6 };
+        str6 = "Horizontal (normal)";
         if (0 !== int8) {
           let str = "Rotate 270 CW";
           if (1 !== int8) {
@@ -59,23 +59,21 @@ export default {
           }
           str6 = str;
         }
-        obj4.description = str6;
         obj3.CameraOrientation = obj4;
-        const sum2 = sum1 + tmp17.ROLL_ANGLE;
-        const int16 = byteLength.getInt16(sum2, byteOrder === tmp3(5531).LITTLE_ENDIAN);
+        const sum2 = sum1 + tmp16.ROLL_ANGLE;
+        const int16 = byteLength.getInt16(sum2, byteOrder === tmp(5531).LITTLE_ENDIAN);
         const obj5 = { value: int16, description: "" + -0.5 * int16 };
         obj3.RollAngle = obj5;
-        const sum3 = sum1 + tmp17.PITCH_ANGLE;
-        const int161 = byteLength.getInt16(sum3, byteOrder === tmp3(5531).LITTLE_ENDIAN);
+        const sum3 = sum1 + tmp16.PITCH_ANGLE;
+        const int161 = byteLength.getInt16(sum3, byteOrder === tmp(5531).LITTLE_ENDIAN);
         const obj6 = { value: int161, description: "" + -0.5 * int161 };
         obj3.PitchAngle = obj6;
       }
-      const tmp7Result = _mod5526;
-      delete tmp[tmp2];
-      tmp10 = _mod5526.objectAssign({}, ifd, obj3);
-      const objectAssignResult = _mod5526.objectAssign({}, ifd, obj3);
+      const objectAssignResult = objectAssign({}, ifd, obj3);
+      delete tmp15["LevelInfo"];
+      tmp8 = objectAssignResult;
     }
-    return tmp10;
+    return tmp8;
   },
   PENTAX_IFD_OFFSET: 10,
   MODEL_ID,

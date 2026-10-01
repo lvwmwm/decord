@@ -4,46 +4,46 @@
 // Dependencies: [19, 17, 21, 4836, 576, 1115, 4847, 4763, 9630, 9640, 9566, 2]
 
 // Module 9639 (MessageFailedToSendNotification)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import Client from "Client" /* 4763 */;
+import flow_Client from "flow/Client" /* 4763 */;
 import transitionToChannel from "transitionToChannel" /* 4847 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { iconContainer: null };
-let size = { width: 40, height: 40, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, display: "flex", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.md };
-obj.iconContainer = size;
+let size;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let obj = { iconContainer: size };
+size = { width: 40, height: 40, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, display: "flex", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.md };
 let closure_6 = createStyles.createStyles(obj);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/in_app_notifications/native/MessageFailedToSendNotification.tsx");
-
-export default noop.memo(function MessageFailedToSendNotification(notification) {
+const memoResult = react.memo(function MessageFailedToSendNotification(notification) {
+  let intl;
+  let intl2;
   notification = notification.notification;
   let channelId;
-  let obj = { type: "simple", text: null };
-  const intl = channelId(1115).intl;
-  obj.text = intl.string(channelId(1115).t.Q0x94X);
+  let obj = { type: "simple", text: intl.string(channelId(1115).t.Q0x94X) };
+  const tmp = closure_6();
+  intl = channelId(1115).intl;
   channelId = notification.channelId;
   const messageId = notification.messageId;
   const items = [channelId, messageId];
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     const obj = transitionToChannel;
-    obj.transitionToMessage(channelId, messageId, { jumpType: Client.JumpType.INSTANT });
+    const obj2 = { jumpType: flow_Client.JumpType.INSTANT };
+    obj.transitionToMessage(channelId, messageId, obj2);
   }, items);
-  const obj2 = { icon: null, children: null, header: null, onPress: null, notification: null };
-  const obj3 = { style: closure_6().iconContainer, children: null };
-  const tmp = closure_6();
-  obj3.children = jsx(channelId(9640).RetryIcon, { size: "md", color: messageId(576).colors.ICON_SUBTLE });
-  obj2.icon = <View style={closure_6().iconContainer}>{null}</View>;
-  const obj5 = { text: null };
-  const intl2 = channelId(1115).intl;
-  obj5.text = intl2.string(channelId(1115).t.xxRPOT);
-  obj2.children = jsx(channelId(9566).SystemMessageText, { text: null });
-  obj2.header = obj;
-  obj2.onPress = callback;
-  obj2.notification = notification;
-  return jsx(channelId(9630).NotificationPressable, { icon: null, children: null, header: null, onPress: null, notification: null });
+  const NotificationPressable = channelId(9630).NotificationPressable;
+  ({ size: "md", color: messageId(576).colors.ICON_SUBTLE });
+  const RetryIcon = channelId(9640).RetryIcon;
+  ({ text: intl2.string(channelId(1115).t.xxRPOT) });
+  const SystemMessageText = channelId(9566).SystemMessageText;
+  intl2 = channelId(1115).intl;
+  return <NotificationPressable icon={null} header={obj} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 });
+size = size_mod;
+const result = size.fileFinishedImporting("modules/in_app_notifications/native/MessageFailedToSendNotification.tsx");
+
+export default memoResult;

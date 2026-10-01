@@ -5,106 +5,129 @@
 // Exports: default
 
 // Module 17427 (RoleIconActionSheet)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import EmojiConstants from "EmojiConstants" /* 1375 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import TableRow from "TableRow" /* 5917 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
-import ActionSheet from "ActionSheet" /* 6618 */;
 import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 17424 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
 import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 17410 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const UPLOAD_SMALL_SIZE = fn(1074).UPLOAD_SMALL_SIZE;
-const EmojiIntention = fn(1375).EmojiIntention;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let c3, c4, c7, c8, closure_0;
+
+let metroImportAll;
+let metroImportDefault;
+const UPLOAD_SMALL_SIZE = Constants.UPLOAD_SMALL_SIZE;
+const EmojiIntention = EmojiConstants.EmojiIntention;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = ["image/png", "image/jpeg"];
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_settings/roles/native/action_sheet/RoleIconActionSheet.tsx");
 
 export default function RoleIconActionSheet(arg0) {
+  let guildId;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let roleId;
   ({ guildId: require, roleId } = arg0);
-  dependencyMap = async function _handleUploadImage(arg0, value) {
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj4 = { value, done: true };
-        return obj4;
+  let obj = function _handleUploadImage() {
+    obj = _asyncToGenerator(async (arg0, value) => {
+      let closure_1;
+      let includes;
+      let obj8;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
       } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
+        try {
+          let closure_2;
+          let _var;
+          let base64;
+          let mimeType;
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_2 = tmp4;
+              _var = undefined;
+              base64 = undefined;
+              mimeType = undefined;
+              const obj7 = tmp(closure_2[7]);
+              obj7.hideActionSheet();
+              const obj5 = { size, preferredMimeType: "image/png" };
+              c3 = 1;
+              c4 = 1;
+              const obj6 = { value: obj8.openImagePicker(obj5), done: false };
+              obj8 = _var(closure_2[8]);
+              return obj6;
+            }
+          } else if (arg0 === 1) {
             c4 = 3;
             throw value;
           } else if (arg0 === 2) {
             c4 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
+            const obj9 = { value, done: true };
+            return obj9;
           } else {
-            closure_129_0 = undefined;
-            let base64;
-            let mimeType;
-            tmp2(tmp5[7]).hideActionSheet();
-            const obj8 = tmp2(tmp5[7]);
-            const obj6 = { size, preferredMimeType: "image/png" };
-            c3 = 1;
-            c4 = 1;
-            const obj7 = { value: _var(tmp5[8]).openImagePicker(obj6), done: false };
-            return obj7;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj10 = { value, done: true };
-          return obj10;
-        } else {
-          closure_129_0 = value;
-          base64 = closure_129_0.base64;
-          mimeType = closure_129_0.mimeType;
-          if (null == base64) {
-            c4 = 3;
-          } else {
-            _var = mimeType;
-            if (mimeType == null) {
-              _var = "";
-            }
-            if (closure_1_9.includes(_var)) {
-              const obj = _var(tmp5[9]);
-              if (dataUriFileSizeResult <= _var(tmp5[10]).ROLE_ICON_MAX_FILE_SIZE) {
-                _var(tmp5[13]).updateRoleIcon(closure_130_1, base64, null);
-                const obj2 = _var(tmp5[13]);
+            _var = value;
+            base64 = _var.base64;
+            mimeType = _var.mimeType;
+            if (null != base64) {
+              _var = mimeType;
+              includes = includes.includes;
+              if (mimeType == null) {
+                _var = "";
               }
-              dataUriFileSizeResult = _var(tmp5[9]).dataUriFileSize(base64);
+              if (includes(_var)) {
+                obj = _var(closure_2[9]);
+                const dataUriFileSizeResult = obj.dataUriFileSize(base64);
+                if (dataUriFileSizeResult <= _var(closure_2[10]).ROLE_ICON_MAX_FILE_SIZE) {
+                  const obj2 = _var(closure_2[13]);
+                  obj2.updateRoleIcon(closure_130_1, base64, null);
+                }
+              }
+              const presentError = _var(closure_2[11]).presentError;
+              const tmp24 = _var(closure_2[11]);
+              const intl = _var(closure_2[12]).intl;
+              presentError(intl.string(_var(closure_2[12]).t.HFyKsa));
             }
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
           }
-          const intl = _var(tmp5[12]).intl;
-          _var(tmp5[11]).presentError(intl.string(_var(tmp5[12]).t.HFyKsa));
-          const obj3 = _var(tmp5[11]);
+        } catch (tmp30) {
+          c4 = 3;
+          throw tmp30;
         }
-      } catch (tmp30) {
-        c4 = tmp;
-        throw tmp30;
       }
-    }
+    });
+    return obj(...arguments);
   };
+  let tmp = require;
+  obj = require("get initialized");
   const items = [GuildSettingsRolesStore];
   const items1 = [roleId];
-  const stateFromStores = initialize.useStateFromStores(items, () => {
+  const tmp4 = closure_8;
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const role = GuildSettingsRolesStore.getRole(roleId);
     let icon;
     if (role != null) {
@@ -120,139 +143,149 @@ export default function RoleIconActionSheet(arg0) {
     }
     return tmp3;
   }, items1);
-  let obj2 = { title: null };
-  let intl = util.intl;
-  obj2.title = intl.string(util.t.B9grJw);
-  const items2 = [closure_7(BottomSheetTitleHeader.BottomSheetTitleHeader, obj2), , ];
-  let obj3 = { variant: "text-sm/medium", color: "text-muted", children: null };
-  const intl2 = util.intl;
-  obj3.children = intl2.string(util.t.I3YQeV);
-  items2[1] = closure_7(Text_Text.Text, obj3);
-  let obj4 = { label: null, subLabel: null, onPress: null };
-  const intl3 = util.intl;
-  obj4.label = intl3.string(util.t.royWSB);
-  const intl4 = util.intl;
-  obj4.subLabel = intl4.string(util.t["mz++Qq"]);
-  obj4.onPress = function handleUploadImage() {
-    const self = this;
-    const apply = closure_2.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
+  const ActionSheet = require("ActionSheet").ActionSheet;
+  let obj2 = { title: intl.string(require("intl").t.B9grJw) };
+  const BottomSheetTitleHeader = require("BottomSheetTitleHeader").BottomSheetTitleHeader;
+  intl = require("intl").intl;
+  const items2 = [closure_7(BottomSheetTitleHeader, obj2), , ];
+  let obj3 = { variant: "text-sm/medium", color: "text-muted", children: intl2.string(require("intl").t.I3YQeV) };
+  const Text = require("Text/Text").Text;
+  intl2 = require("intl").intl;
+  items2[1] = closure_7(Text, obj3);
+  const TableRowGroup = require("TableRowGroup").TableRowGroup;
+  let obj4 = {
+    label: intl3.string(require("intl").t.royWSB),
+    subLabel: intl4.string(require("intl").t["mz++Qq"]),
+    onPress: function handleUploadImage() {
+      return obj(...arguments);
     }
-    return applyArgumentsResult;
   };
-  const items3 = [closure_7(TableRow.TableRow, obj4), , ];
-  let obj5 = { label: null, onPress: null };
-  const intl5 = util.intl;
-  obj5.label = intl5.string(util.t["/Ny2wZ"]);
-  obj5.onPress = function handleSelectEmoji() {
-    let obj2 = { guildId, pickerIntention: constants.COMMUNITY_CONTENT, onPressEmoji: null };
-    guildId = asyncGeneratorStep(async (arg0, value) => {
-      if (c8 === 2) {
-        c8 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj4 = { value, done: true };
-          return obj4;
-        } else {
-          return { value: "HermesInternal", done: null };
+  const TableRow = require("TableRow").TableRow;
+  intl3 = require("intl").intl;
+  intl4 = require("intl").intl;
+  const items3 = [closure_7(TableRow, obj4), , ];
+  let obj5 = {
+    label: intl5.string(require("intl").t["/Ny2wZ"]),
+    onPress: function handleSelectEmoji() {
+      const tmp = require("openEmojiPickerActionSheet");
+      obj = {
+        guildId: require,
+        pickerIntention: constants.COMMUNITY_CONTENT,
+        onPressEmoji(arg0) {
+          return closure_0(...arguments);
         }
-      } else {
-        try {
-          c8 = 2;
-          if (0 === c7) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
-            } else {
-              closure_5 = tmp3;
-              if (null == closure_0.id) {
-                const optionallyDiverseSequence = tmp38.optionallyDiverseSequence;
-                let surrogates = optionallyDiverseSequence;
-                if (optionallyDiverseSequence == null) {
-                  surrogates = tmp38.surrogates;
-                }
-                if (null != surrogates) {
-                  closure_0(17424).updateRoleIcon(surrogates, null, tmp26);
-                  const obj5 = closure_0(17424);
-                }
-              } else {
-                c6 = 1;
-                const tmp22 = closure_0(17424);
-                closure_4 = tmp22;
-                const updateRoleIcon = tmp22.updateRoleIcon;
-                closure_2 = surrogates;
-                c7 = 2;
-                c8 = 1;
-                const obj7 = { value: closure_0(17428).fetchCustomEmojiAsPngDataUri(tmp38.id), done: false };
-                return obj7;
-              }
-            }
+      };
+      const openEmojiPickerActionSheet = tmp.openEmojiPickerActionSheet;
+      require = _asyncToGenerator(async (arg0, value) => {
+        let obj2;
+        closure_0 = arg0;
+        if (c8 === 2) {
+          c8 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
-            if (1 === tmp7) {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          let c6;
+          try {
+            let updateRoleIcon;
+            let closure_2;
+            c8 = 2;
+            if (0 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                const obj5 = { value, done: true };
+                return obj5;
+              } else {
+                let surrogates;
+                let closure_5 = tmp;
+                if (null == closure_0.id) {
+                  const optionallyDiverseSequence = tmp35.optionallyDiverseSequence;
+                  surrogates = optionallyDiverseSequence;
+                  if (optionallyDiverseSequence == null) {
+                    surrogates = tmp35.surrogates;
+                  }
+                  if (null != surrogates) {
+                    const obj4 = closure_0(closure_2_2[13]);
+                    obj4.updateRoleIcon(surrogates, null, tmp24);
+                  }
+                } else {
+                  c6 = 1;
+                  const tmp20 = closure_0(closure_2_2[13]);
+                  let closure_4 = tmp20;
+                  updateRoleIcon = tmp20.updateRoleIcon;
+                  closure_2 = surrogates;
+                  c7 = 2;
+                  c8 = 1;
+                  const obj6 = { value: obj2.fetchCustomEmojiAsPngDataUri(closure_0.id), done: false };
+                  obj2 = closure_0(closure_2_2[10]);
+                  return obj6;
+                }
+              }
+            } else if (1 === tmp4) {
               c6 = 0;
-              const intl = closure_0(1115).intl;
-              closure_0(4527).presentError(intl.string(closure_0(1115).t.R0RpRX));
-              const obj2 = closure_0(4527);
+              const presentError = closure_0(closure_2_2[11]).presentError;
+              const tmp12 = closure_0(closure_2_2[11]);
+              const intl = closure_0(closure_2_2[12]).intl;
+              presentError(intl.string(closure_0(closure_2_2[12]).t.R0RpRX));
             } else if (arg0 === 1) {
               c8 = 3;
               throw value;
-            } else if (arg0 !== 2) {
+            } else if (arg0 === 2) {
+              c6 = 0;
+              c8 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
               updateRoleIcon(closure_2, value, null);
               c6 = 0;
             }
-            c6 = 0;
             c8 = 3;
-            const obj = { value, done: true };
-            return obj;
-          }
-          c8 = 3;
-        } catch (tmp31) {
-          if (tmp4 === c6) {
-            c8 = tmp2;
-            throw tmp31;
-          } else {
-            c7 = tmp;
+            return { value: "HermesInternal", done: null };
+          } catch (tmp29) {
+            if (0 === c6) {
+              c8 = 3;
+              throw tmp29;
+            } else {
+              c7 = 1;
+            }
           }
         }
-      }
-    });
-    obj2.onPressEmoji = function onPressEmoji(arg0) {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    };
-    const result = guildId(10583).openEmojiPickerActionSheet(obj2, "stack");
+      });
+      const result = openEmojiPickerActionSheet(obj, "stack");
+    }
   };
-  items3[1] = closure_7(TableRow.TableRow, obj5);
+  const TableRow2 = require("TableRow").TableRow;
+  intl5 = require("intl").intl;
+  items3[1] = closure_7(TableRow2, obj5);
   let tmp5Result = null;
+  const tmp5 = closure_7;
   if (stateFromStores) {
-    let obj6 = { variant: "danger", label: null, onPress: null };
-    const intl6 = tmp(1115).intl;
-    obj6.label = intl6.string(tmp(1115).t["uY+Nk/"]);
-    obj6.onPress = function handleRemoveIcon() {
-      ActionSheetActionCreatorsDefault.hideActionSheet();
-      GuildSettingsRolesActionCreators.updateRoleIcon(roleId, null, null);
+    let obj6 = {
+      variant: "danger",
+      label: intl6.string(tmp(tmp2[12]).t["uY+Nk/"]),
+      onPress: function handleRemoveIcon() {
+          obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+          const obj2 = GuildSettingsRolesActionCreators;
+          obj2.updateRoleIcon(roleId, null, null);
+        }
     };
-    tmp5Result = closure_7(tmp(5917).TableRow, obj6);
+    const TableRow3 = tmp(tmp2[18]).TableRow;
+    intl6 = tmp(tmp2[12]).intl;
+    tmp5Result = tmp5(TableRow3, obj6);
   }
-  let obj7 = { children: null };
+  let obj7 = { children: items2 };
   items3[2] = tmp5Result;
-  items2[2] = closure_8(TableRowGroup.TableRowGroup, { hasIcons: false, children: items3 });
-  obj7.children = items2;
-  return closure_8(ActionSheet.ActionSheet, obj7);
+  items2[2] = tmp4(TableRowGroup, { hasIcons: false, children: items3 });
+  return tmp4(ActionSheet, obj7);
 };

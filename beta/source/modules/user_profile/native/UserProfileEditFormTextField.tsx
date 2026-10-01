@@ -5,16 +5,23 @@
 // Exports: default
 
 // Module 14170 (UserProfileEditFormTextField)
-import TextInput from "TextInput" /* 6024 */;
-import TextArea from "TextArea" /* 6506 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6024 */;
+import TextArea2 from "TextArea" /* 6506 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditFormTextField.tsx");
 
 export default function UserProfileEditFormTextField(inputRef) {
+  let containerStyle;
+  let description;
+  let errorMessage;
+  let label;
+  let numberOfLines;
+  let str;
+  let tmp9;
   ({ errorMessage, numberOfLines } = inputRef);
   ({ label, description, containerStyle } = inputRef);
   if (numberOfLines === undefined) {
@@ -22,22 +29,20 @@ export default function UserProfileEditFormTextField(inputRef) {
   }
   inputRef = inputRef.inputRef;
   const merged = Object.assign(inputRef, Object.assign({ label: 0, description: 0, errorMessage: 0, containerStyle: 0, numberOfLines: 0, inputRef: 0 }));
-  const obj = { label, description, errorMessage, containerStyle, status: null };
-  let str;
+  const obj = { label, description, errorMessage, containerStyle, status: str };
+  str = undefined;
   if (null != errorMessage) {
     str = "error";
   }
-  obj.status = str;
   const merged1 = Object.assign(merged);
   if (numberOfLines > 1) {
-    const obj2 = { ref: inputRef };
+    const TextArea = TextArea2.TextArea;
     const merged2 = Object.assign(obj);
-    let tmp9 = jsx(TextArea.TextArea, { ref: inputRef });
+    tmp9 = <TextArea ref={inputRef} />;
   } else {
-    const obj3 = { ref: inputRef };
+    const TextInput = TextInput_TextInput.TextInput;
     const merged3 = Object.assign(obj);
-    obj3.clearable = true;
-    tmp9 = jsx(TextInput.TextInput, { ref: inputRef });
+    tmp9 = <TextInput ref={inputRef} clearable />;
   }
   return tmp9;
 };

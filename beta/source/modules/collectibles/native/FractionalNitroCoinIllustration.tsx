@@ -5,18 +5,22 @@
 // Exports: FractionalNitroCoinIllustration
 
 // Module 8307 (FractionalNitroCoinIllustration)
+import Fragment from "Fragment" /* 21 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
 import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 8308 */;
 import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 8310 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const EXTERNAL_PRODUCT_SKU_IDS = fn(1076).EXTERNAL_PRODUCT_SKU_IDS;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const EXTERNAL_PRODUCT_SKU_IDS = CollectiblesShopConstants.EXTERNAL_PRODUCT_SKU_IDS;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/collectibles/native/FractionalNitroCoinIllustration.tsx");
 
 export const FRACTIONAL_NITRO_COIN_SIZE = { CARD: 80, CHECKOUT: 45, COLLECTED_SHEET: 68 };
 export const FractionalNitroCoinIllustration = function FractionalNitroCoinIllustration(resizeMode) {
+  let height;
+  let skuId;
+  let width;
   resizeMode = resizeMode.resizeMode;
   ({ skuId, width, height } = resizeMode);
   if (resizeMode === undefined) {

@@ -5,55 +5,61 @@
 // Exports: default
 
 // Module 11568 (ActivityShelfBadge)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
+import intl3 from "intl" /* 1115 */;
 import Server from "Server" /* 1979 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import native_mod from "native" /* 1177 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { badge: null, newBadge: null, updatedBadge: null, elevationShadow: null, badgeText: null };
-const rect = { position: "absolute", top: 4, right: 4, display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
-obj2.badge = rect;
-obj2.newBadge = { paddingLeft: 4, paddingRight: 6, borderRadius: nativeDefault.radii.sm, height: 16, backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND };
-let obj3 = { paddingLeft: 4, paddingRight: 6, borderRadius: nativeDefault.radii.sm, height: 16, backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND };
-obj2.updatedBadge = { paddingLeft: 4, paddingRight: 6, borderRadius: nativeDefault.radii.sm, height: 16, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
-const native = fn(1177);
-obj2.elevationShadow = native.generateBoxShadowStyle(fn(1177).FOUR_DP_ELEVATION_SHADOW_PARAMS);
-obj2.badgeText = { textTransform: "uppercase", marginLeft: 2, fontFamily: fn(1074).Fonts.DISPLAY_EXTRABOLD, lineHeight: 16, fontSize: 12 };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
+let native;
+let obj2;
+let obj3;
+let rect;
+const View = react_native.View;
+const Fonts = Constants.Fonts;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+const obj = { badge: rect, newBadge: obj2, updatedBadge: obj3, elevationShadow: native.generateBoxShadowStyle(native.FOUR_DP_ELEVATION_SHADOW_PARAMS), badgeText: { textTransform: "uppercase", marginLeft: 2, fontFamily: Fonts.DISPLAY_EXTRABOLD, lineHeight: 16, fontSize: 12 } };
+rect = { position: "absolute", top: 4, right: 4, display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
+createStyles = createStyles.createStyles;
+obj2 = { paddingLeft: 4, paddingRight: 6, borderRadius: nativeDefault.radii.sm, height: 16, backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND };
+obj3 = { paddingLeft: 4, paddingRight: 6, borderRadius: nativeDefault.radii.sm, height: 16, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
+native = native_mod;
+let closure_4 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/activities/native/ActivityShelfBadge.tsx");
 
 export default function ActivityShelfBadge(arg0) {
+  let intl;
+  let intl2;
+  let labelType;
+  let replacementStyles;
+  let tmp6;
   ({ labelType, replacementStyles } = arg0);
   const tmp = closure_4();
   if (replacementStyles == null) {
     replacementStyles = tmp.badge;
   }
   if (labelType === Server.EmbeddedActivityLabelTypes.NEW) {
-    const obj = { style: null, children: null };
     const items = [replacementStyles, , ];
     ({ newBadge: arr[1], elevationShadow: arr[2] } = tmp);
-    obj.style = items;
-    const obj2 = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null };
-    const intl = tmp2(1115).intl;
-    obj2.children = intl.string(tmp2(1115).t.y2b7CA);
-    obj.children = jsx(tmp2(4832).Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null });
-    let tmp6 = <View style={null}>{null}</View>;
+    ({ variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl.string(intl3.t.y2b7CA) });
+    const Text = tmp2(4832).Text;
+    intl = tmp2(1115).intl;
+    tmp6 = <View style={items}>{null}</View>;
   } else {
     tmp6 = null;
-    if (labelType === tmp2(1979).EmbeddedActivityLabelTypes.UPDATED) {
-      const obj3 = { style: null, children: null };
+    if (labelType === Server.EmbeddedActivityLabelTypes.UPDATED) {
       const items1 = [replacementStyles, , ];
       ({ updatedBadge: arr2[1], elevationShadow: arr2[2] } = tmp);
-      obj3.style = items1;
-      const obj4 = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null };
-      const intl2 = tmp2(1115).intl;
-      obj4.children = intl2.string(tmp2(1115).t["/qdhkk"]);
-      obj3.children = jsx(tmp2(4832).Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null });
-      tmp6 = <View style={null}>{null}</View>;
+      ({ variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl2.string(intl3.t["/qdhkk"]) });
+      const Text2 = tmp2(4832).Text;
+      intl2 = tmp2(1115).intl;
+      tmp6 = <View style={items1}>{null}</View>;
     }
   }
   return tmp6;

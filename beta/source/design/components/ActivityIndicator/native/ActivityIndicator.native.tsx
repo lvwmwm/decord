@@ -5,16 +5,16 @@
 // Exports: ActivityIndicator
 
 // Module 5889 (ActivityIndicator/ActivityIndicator)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import useToken2 from "useToken" /* 4531 */;
 import size from "module_2" /* 2 */;
 
-const ActivityIndicator = _mod17.ActivityIndicator;
-const jsx = jsxProd.jsx;
+const ActivityIndicator = react_native.ActivityIndicator;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/ActivityIndicator/native/ActivityIndicator.native.tsx");
-
-export const ActivityIndicator = function ActivityIndicator(size) {
+const ActivityIndicator_export = function ActivityIndicator(size) {
   let str = size.size;
   if (str === undefined) {
     str = "large";
@@ -24,14 +24,14 @@ export const ActivityIndicator = function ActivityIndicator(size) {
     flag = true;
   }
   const merged = Object.assign(size, Object.assign({ size: 0, animating: 0 }));
+  const useToken = useToken2.useToken;
   let color = merged.color;
+  useToken2;
   if (color == null) {
-    color = obj.useToken(nativeDefault.colors.BACKGROUND_BRAND);
+    color = useToken(nativeDefault.colors.BACKGROUND_BRAND);
   }
-  const obj2 = {};
   const merged1 = Object.assign(merged);
-  obj2.size = str;
-  obj2.animating = flag;
-  obj2.color = color;
-  return <ActivityIndicator />;
+  return <ActivityIndicator size={str} animating={flag} color={color} />;
 };
+
+export { ActivityIndicator_export as ActivityIndicator };

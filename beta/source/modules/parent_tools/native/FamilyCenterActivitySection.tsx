@@ -6,122 +6,150 @@
 
 // Module 14435 (FamilyCenterActivitySection)
 import nativeDefault from "native" /* 576 */;
+import Text_Text from "Text/Text" /* 4832 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 7012 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8106 */;
 import useFamilyCenterActivities from "useFamilyCenterActivities" /* 14430 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 6958 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap;
+
+let c10;
+let c9;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj5;
 function FamilyCenterActivitySectionHeader(displayType) {
   displayType = displayType.displayType;
   const tmp = closure_11();
   let flag = useIsInAdultAgeGroupDefault();
-  const activityTypeTextConfigs = FamilyCenterUtils.getActivityTypeTextConfigs();
-  value = activityTypeTextConfigs.get(displayType);
-  const actionsForDisplayType = useFamilyCenterActivities.useActionsForDisplayType(displayType);
-  const formattedTotalForDisplayType = useFamilyCenterActivities.useFormattedTotalForDisplayType(displayType);
-  if (displayType === constants.PURCHASES) {
+  const obj = FamilyCenterUtils;
+  const activityTypeTextConfigs = obj.getActivityTypeTextConfigs();
+  const value = activityTypeTextConfigs.get(displayType);
+  const obj4 = useFamilyCenterActivities;
+  const actionsForDisplayType = obj4.useActionsForDisplayType(displayType);
+  const obj5 = useFamilyCenterActivities;
+  const formattedTotalForDisplayType = obj5.useFormattedTotalForDisplayType(displayType);
+  if (displayType === metroImportAll.PURCHASES) {
     let length = formattedTotalForDisplayType;
     let sectionHeaderResult;
     if (value != null) {
       sectionHeaderResult = value.sectionHeader(length);
     }
-    let sectionDescription;
+    let sectionDescription1;
     if (value != null) {
-      sectionDescription = value.sectionDescription;
+      sectionDescription1 = value.sectionDescription;
     }
     let tmp10 = null;
-    if (undefined !== sectionDescription) {
+    if (undefined !== sectionDescription1) {
       let sectionDescriptionResult;
       if (value != null) {
+        const sectionDescription = value.sectionDescription;
         if (flag == null) {
           flag = false;
         }
-        sectionDescriptionResult = value.sectionDescription(flag);
+        sectionDescriptionResult = sectionDescription(flag);
       }
       tmp10 = sectionDescriptionResult;
     }
     const obj2 = { variant: "text-sm/semibold", style: tmp.header, children: sectionHeaderResult };
-    const items = [React7(tmp3(4832).Text, obj2), ];
+    const items = [React4(Text_Text.Text, obj2), ];
     let tmp14Result = null;
+    const tmp12 = authStore;
+    const tmp13 = metroRequire;
+    const tmp14 = React4;
     if (null !== tmp10) {
       const obj3 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: tmp10 };
-      tmp14Result = React7(tmp3(4832).Text, obj3);
+      tmp14Result = tmp14(tmp3(4832).Text, obj3);
     }
-    const obj6 = { children: null };
+    const obj6 = { children: items };
     items[1] = tmp14Result;
-    obj6.children = items;
-    return closure_1_10(timestampProducer, obj6);
+    return tmp12(tmp13, obj6);
   }
   length = actionsForDisplayType.length;
 }
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const FamilyCenterConstants = fn(6958);
-({ FAMILY_CENTER_ITEMS_SHOWN_INCREMENTS: closure_7, TeenActionDisplayType: closure_8 } = FamilyCenterConstants);
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-let createStyles = fn(4836);
-let obj2 = { header: { marginBottom: nativeDefault.space.PX_4 }, description: null };
-let obj3 = { marginBottom: nativeDefault.space.PX_4 };
-obj2.description = { marginBottom: nativeDefault.space.PX_8 };
-let closure_11 = createStyles.createStyles(obj2);
-createStyles = fn(4836);
-let obj6 = { container: { display: "flex" }, loadMoreContainer: { display: "flex", flexDirection: "row", flex: 1, alignItems: "center", justifyContent: "center", width: "100%" }, loadMore: null, loadMoreButton: null };
-let obj4 = { marginBottom: nativeDefault.space.PX_8 };
-obj6.loadMore = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderBottomRightRadius: nativeDefault.radii.sm, borderBottomLeftRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, width: "60%" };
-obj6.loadMoreButton = { paddingVertical: 4 };
-let closure_13 = createStyles.createStyles(obj6);
-const size = fn(2);
+({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
+({ FAMILY_CENTER_ITEMS_SHOWN_INCREMENTS: metroImportDefault, TeenActionDisplayType: metroImportAll } = FamilyCenterConstants);
+({ jsx: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { header: obj2, description: obj3 };
+obj2 = { marginBottom: nativeDefault.space.PX_4 };
+createStyles = createStyles.createStyles;
+obj3 = { marginBottom: nativeDefault.space.PX_8 };
+let closure_11 = createStyles(obj);
+createStyles = createStyles_mod;
+let obj4 = { container: { display: "flex" }, loadMoreContainer: { display: "flex", flexDirection: "row", flex: 1, alignItems: "center", justifyContent: "center", width: "100%" }, loadMore: obj5, loadMoreButton: { paddingVertical: 4 } };
+obj5 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderBottomRightRadius: nativeDefault.radii.sm, borderBottomLeftRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, width: "60%" };
+let closure_13 = createStyles.createStyles(obj4);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivitySection.tsx");
 
 export default function FamilyCenterActivitySection(displayType) {
+  let closure_2;
+  let items1;
+  let obj11;
+  let obj9;
+  let tmp19Result;
   displayType = displayType.displayType;
-  let loadMoreButton = closure_13();
-  const actionsForDisplayType = displayType(14430).useActionsForDisplayType(displayType);
-  const obj = displayType(14430);
-  const actionTotalsForDisplayType = displayType(14430).useActionTotalsForDisplayType(displayType);
+  const tmp = closure_13();
+  let obj = displayType(14430);
+  const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
   const obj2 = displayType(14430);
-  const familyCenterActions = displayType(11395).useFamilyCenterActions({});
+  const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
+  const obj3 = displayType(11395);
+  const familyCenterActions = obj3.useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
-  const tmp6 = _slicedToArray(noop.useState(closure_7), 2);
-  dependencyMap = tmp6[1];
-  const substr = actionsForDisplayType.slice(0, tmp6[0]);
+  const isMoreLoading = familyCenterActions.isMoreLoading;
+  const tmp7 = _slicedToArray(react.useState(closure_7), 2);
+  dependencyMap = tmp7[1];
+  const substr = actionsForDisplayType.slice(0, tmp7[0]);
   const items = [loadMore, displayType];
+  const tmp6 = closure_7;
   if (0 === actionsForDisplayType.length) {
     return null;
   } else {
-    const intl = tmp(1115).intl;
-    const obj4 = { pageSize: null };
+    const intl = tmp2(1115).intl;
+    const formatToPlainString = intl.formatToPlainString;
     const _Math = Math;
-    obj4.pageSize = Math.min(actionTotalsForDisplayType - substr.length, closure_7);
-    const formatToPlainStringResult = intl.formatToPlainString(loadMore(2487)["7dMmJY"], obj4);
-    const obj5 = { style: loadMoreButton.container, children: null };
+    const obj4 = { pageSize: Math.min(actionTotalsForDisplayType - substr.length, tmp6) };
+    const v7dMmJY = loadMore(2487)["7dMmJY"];
+    const formatToPlainStringResult = formatToPlainString(v7dMmJY, obj4);
+    const obj5 = { style: tmp.container, children: items1 };
     const obj6 = { displayType };
-    const items1 = [closure_9(FamilyCenterActivitySectionHeader, obj6), substr.map((action) => closure_1_9(loadMore(14436), { action }, action.event_id)), ];
-    if (substr.length >= actionTotalsForDisplayType) {
-      items1[2] = null;
-      obj5.children = items1;
-      return tmp15(tmp16, obj5);
-    } else {
-      const obj7 = { style: loadMoreButton.loadMoreContainer, children: null };
-      if (familyCenterActions.isMoreLoading) {
-        const obj8 = { style: loadMoreButton.loadMore, children: null };
-        const obj9 = { style: null, animating: true, color: "#fff", size: "small" };
-        loadMoreButton = loadMoreButton.loadMoreButton;
-        obj9.style = loadMoreButton;
-        obj8.children = tmp17(closure_5, obj9);
-        let tmp17Result = tmp17(tmp16, obj8);
+    items1 = [
+      closure_9(FamilyCenterActivitySectionHeader, obj6),
+      substr.map((action) => {
+          const obj = { action };
+          return closure_1_9(loadMore(closure_2[14]), obj, action.event_id);
+        }),
+
+    ];
+    let tmp19Result2 = null;
+    const tmp17 = closure_10;
+    if (substr.length < actionTotalsForDisplayType) {
+      const obj7 = { style: tmp.loadMoreContainer, children: tmp19Result };
+      if (isMoreLoading) {
+        const obj8 = { style: tmp.loadMore, children: closure_9(closure_5, obj9) };
+        obj9 = { style: tmp.loadMoreButton, animating: true, color: "#fff", size: "small" };
+        tmp19Result = tmp19(tmp18, obj8);
       } else {
-        const obj10 = { style: loadMoreButton.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp7, children: null };
-        const obj11 = { style: loadMoreButton.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-        obj10.children = tmp17(tmp(4832).Text, obj11);
-        tmp17Result = tmp17(tmp(5435).PressableOpacity, obj10);
+        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp8, children: closure_9(displayType(4832).Text, obj11) };
+        const PressableOpacity = tmp2(5435).PressableOpacity;
+        obj11 = { style: tmp.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
+        tmp19Result = tmp19(PressableOpacity, obj10);
       }
-      obj7.children = tmp17Result;
-      tmp17(tmp16, obj7);
+      tmp19Result2 = tmp19(tmp18, obj7);
     }
-    tmp15 = closure_10;
+    items1[2] = tmp19Result2;
+    return tmp17(closure_6, obj5);
   }
 };

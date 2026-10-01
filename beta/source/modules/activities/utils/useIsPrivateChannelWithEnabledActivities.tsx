@@ -6,17 +6,19 @@
 
 // Module 8860 (useIsPrivateChannelWithEnabledActivities)
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/utils/useIsPrivateChannelWithEnabledActivities.tsx");
 
 export default function useIsPrivateChannelWithEnabledActivities(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [ChannelStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => ChannelStore.getChannel(closure_0));
+  const obj = require("useStateFromStores");
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(closure_0));
   let flag;
   if (stateFromStores != null) {
     flag = stateFromStores.isPrivate();

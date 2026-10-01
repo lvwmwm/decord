@@ -14,9 +14,10 @@ const WindowSizeClassifier = { SMALL: 0, [0]: "SMALL", NORMAL: 1, [1]: "NORMAL",
 const result = size.fileFinishedImporting("modules/screen/native/useWindowSizeClassifier.tsx");
 
 export default function useWindowSizeClassifier() {
+  let XLARGE;
   const width = useBaseAppContainerDimensionsDefault().width;
   if (width <= 360) {
-    let XLARGE = obj.SMALL;
+    XLARGE = obj.SMALL;
   } else if (width <= 600) {
     XLARGE = obj.NORMAL;
   } else if (width <= 840) {
@@ -31,10 +32,11 @@ export const WINDOW_SIZE_THRESHOLD_LARGE = 600;
 export const WINDOW_SIZE_THRESHOLD_XLARGE = 840;
 export { WindowSizeClassifier };
 export const getWindowSizeClassifier = function getWindowSizeClassifier() {
+  let XLARGE;
   const obj = useBaseAppContainerDimensions;
   const width = obj.getBaseAppContainerDimensions().width;
   if (width <= 360) {
-    let XLARGE = obj.SMALL;
+    XLARGE = obj.SMALL;
   } else if (width <= 600) {
     XLARGE = obj.NORMAL;
   } else if (width <= 840) {

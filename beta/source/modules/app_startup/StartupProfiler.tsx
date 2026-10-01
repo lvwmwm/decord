@@ -6,15 +6,17 @@
 
 // Module 11027 (StartupProfiler)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const obj = { App: "App", AppContainer: "AppContainer", MainNavigator: "MainNavigator", StackNavigator: "StackNavigator", MainTabs: "MainTabs", MainDrawers: "MainDrawers", PrivateChannels: "PrivateChannels", Members: "Members", LeftPanel: "LeftPanel", Guilds: "Guilds", Channels: "Channels", RightPanel: "RightPanel", CenterPanel: "CenterPanel", Channel: "Channel", ChatView: "ChatView", Messages: "Messages" };
+const jsx = Fragment.jsx;
+let obj = { App: "App", AppContainer: "AppContainer", MainNavigator: "MainNavigator", StackNavigator: "StackNavigator", MainTabs: "MainTabs", MainDrawers: "MainDrawers", PrivateChannels: "PrivateChannels", Members: "Members", LeftPanel: "LeftPanel", Guilds: "Guilds", Channels: "Channels", RightPanel: "RightPanel", CenterPanel: "CenterPanel", Channel: "Channel", ChatView: "ChatView", Messages: "Messages" };
 let obj2 = {};
 function setLevels(obj, arg1) {
-  for (const key10006 in arg0) {
+  for (const key10006 in obj) {
     obj2[key10006] = arg1;
-    let tmp4 = setLevels(arg0[key10006], arg1 + " ");
+    let tmp4 = setLevels(obj[key10006], arg1 + " ");
     continue;
   }
 }
@@ -35,21 +37,18 @@ for (const key10073 in obj3) {
   }
   continue;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_startup/StartupProfiler.tsx");
 
-export default function StartupProfiler(children) {
-  const profile = children.profile;
-  profile(10).mark("\u{1F3A8}", "" + obj2[profile] + profile + " render");
-  obj2 = {
-    id: profile,
-    onRender(arg0, arg1, arg2) {
-      AppStartPerformanceDefault.mark("\u{1F3A8}", "" + obj2[profile] + profile + " " + arg1, arg2);
-    },
-    children: children.children
-  };
-  return <noop.Profiler id={profile} onRender={function onRender(arg0, arg1, arg2) {
-    AppStartPerformanceDefault.mark("\u{1F3A8}", "" + obj2[profile] + profile + " " + arg1, arg2);
-  }}>{arg0.children}</noop.Profiler>;
+export default function StartupProfiler(profile) {
+  function onRender(arg0, arg1, arg2) {
+    const obj = AppStartPerformanceDefault;
+    obj.mark("\u{1F3A8}", "" + obj2[profile] + profile + " " + arg1, arg2);
+  }
+  profile = profile.profile;
+  const children = profile.children;
+  let obj = profile(10);
+  obj.mark("\u{1F3A8}", "" + obj2[profile] + profile + " render");
+  obj2 = { id: profile, onRender, children };
+  return <react.Profiler id={profile} onRender={onRender}>{children}</react.Profiler>;
 };
 export const Profiles = obj;

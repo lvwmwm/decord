@@ -5,47 +5,60 @@
 // Exports: default
 
 // Module 6551 (Emoji)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4487 */;
+import shared from "shared" /* 4685 */;
 import FastImageDefault from "FastImage" /* 5899 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/emojis/native/Emoji.tsx");
 
 export default function Emoji(arg0) {
+  let adjustsFontSizeToFit;
+  let fastImageStyle;
+  let forceTextEmoji;
+  let name;
+  let obj5;
+  let onError;
+  let src;
+  let style;
+  let textEmojiStyle;
+  let tmp9Result;
   ({ src, name } = arg0);
   ({ style, textEmojiStyle, fastImageStyle, forceTextEmoji, adjustsFontSizeToFit, onError } = arg0);
   let uRL = src;
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
     uRL = src;
     if (null == src) {
-      uRL = EmojiUtilsDefault.getURL(name);
+      const obj2 = EmojiUtilsDefault;
+      uRL = obj2.getURL(name);
     }
   }
   const obj3 = { style, children: null };
   if (!forceTextEmoji) {
     if (null != uRL) {
+      let tmp6Result;
       if ("" !== uRL) {
-        const obj4 = { resizeMode: "contain", style: fastImageStyle, placeholder: null, source: null, onError: null };
+        const obj4 = { resizeMode: "contain", style: fastImageStyle, placeholder: tmp9Result, source: obj5, onError };
         const tmp10 = FastImageDefault;
+        const tmpResult = shared;
         if (tmpResult.isThemeDark(ThemeStore.theme)) {
-          let tmp9Result = tmp9(6552);
+          tmp9Result = tmp9(6552);
         } else {
           tmp9Result = tmp9(6553);
         }
-        obj4.placeholder = tmp9Result;
-        const obj5 = { uri: uRL };
-        obj4.source = obj5;
-        obj4.onError = onError;
-        let tmp6Result = tmp6(tmp10, obj4);
-        tmpResult = tmp(4685);
+        obj5 = { uri: uRL };
+        tmp6Result = tmp6(tmp10, obj4);
       }
       obj3.children = tmp6Result;
-      return tmp6(tmp7, obj3);
+      return <tmp7 {...obj3} />;
     }
   }
   tmp6Result = tmp6(tmp(1177).LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });

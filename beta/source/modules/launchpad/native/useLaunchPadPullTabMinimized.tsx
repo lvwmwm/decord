@@ -5,36 +5,42 @@
 // Exports: default
 
 // Module 16797 (useLaunchPadPullTabMinimized)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-const DCDScrollTracker = get_ActivityIndicator.NativeModules.DCDScrollTracker;
+let isScrollingOrDragging;
+
+const DCDScrollTracker = react_native.NativeModules.DCDScrollTracker;
 let tmp32;
 if (DCDScrollTracker) {
+  const self = this;
+  const self2 = this;
   tmp32 = new tmp3(DCDScrollTracker);
 }
 let closure_3 = tmp32;
 const __initData = { code: "function useLaunchPadPullTabMinimizedTsx1(){const{launchPadPullTabState,isVoicePanelOpen,launchPadSharedState,isMinimizedDuringScroll}=this.__closure;const isMinimized=(launchPadPullTabState.get().minimized||isVoicePanelOpen)&&launchPadSharedState.get()<=0;return isMinimized||isMinimizedDuringScroll.get();}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/launchpad/native/useLaunchPadPullTabMinimized.tsx");
 
 export default function useLaunchPadPullTabMinimized(launchPadSharedState) {
   launchPadSharedState = launchPadSharedState.launchPadSharedState;
-  let launchPadPullTabState = launchPadSharedState.launchPadPullTabState;
-  const isVoicePanelFullscreen = launchPadSharedState(launchPadPullTabState[3]).useIsVoicePanelFullscreen();
-  const obj = launchPadSharedState(launchPadPullTabState[3]);
-  const sharedValue = launchPadSharedState(launchPadPullTabState[2]).useSharedValue(false);
-  closure_129_0 = sharedValue;
+  const launchPadPullTabState = launchPadSharedState.launchPadPullTabState;
+  let obj = launchPadSharedState(launchPadPullTabState[3]);
+  const isVoicePanelFullscreen = obj.useIsVoicePanelFullscreen();
+  const obj2 = launchPadSharedState(launchPadPullTabState[2]);
+  const sharedValue = obj2.useSharedValue(false);
   const items = [sharedValue];
   const effect = isVoicePanelFullscreen.useEffect(() => {
-    closure_0 = -1;
+    let closure_0 = -1;
+    let obj = sharedValue;
     let addListenerResult;
     if (sharedValue != null) {
-      addListenerResult = sharedValue.addListener("isScrollingOrDragging", (isScrollingOrDragging) => {
+      addListenerResult = obj.addListener("isScrollingOrDragging", (isScrollingOrDragging) => {
+        let timeout;
+        isScrollingOrDragging = isScrollingOrDragging.isScrollingOrDragging;
         clearTimeout(timeout);
-        if (isScrollingOrDragging.isScrollingOrDragging) {
-          let result = launchPadSharedState.set(true);
+        if (isScrollingOrDragging) {
+          let result = sharedValue.set(true);
         } else {
           const _setTimeout = setTimeout;
           timeout = setTimeout(() => {
@@ -43,27 +49,22 @@ export default function useLaunchPadPullTabMinimized(launchPadSharedState) {
         }
       });
     }
-    launchPadPullTabState = addListenerResult;
+    let closure_1 = addListenerResult;
     return () => {
       clearTimeout(closure_0);
-      if (addListenerResult != null) {
-        addListenerResult.remove();
+      const obj = closure_1;
+      if (closure_1 != null) {
+        obj.remove();
       }
     };
   }, items);
-  const obj2 = launchPadSharedState(launchPadPullTabState[2]);
   const fn = function u() {
-    value = launchPadPullTabState.get().minimized || isVoicePanelFullscreen;
-    if (value) {
-      value = launchPadSharedState.get() <= 0;
-    }
-    if (!value) {
-      value = sharedValue.get();
-    }
+    const value = (launchPadPullTabState.get().minimized || isVoicePanelFullscreen) && launchPadSharedState.get() <= 0 || sharedValue.get();
     return value;
   };
   fn.__closure = { launchPadPullTabState, isVoicePanelOpen: isVoicePanelFullscreen, launchPadSharedState, isMinimizedDuringScroll: sharedValue };
   fn.__workletHash = 14263056934448;
   fn.__initData = __initData;
-  return launchPadSharedState(launchPadPullTabState[2]).useDerivedValue(fn);
+  const obj3 = launchPadSharedState(launchPadPullTabState[2]);
+  return obj3.useDerivedValue(fn);
 };

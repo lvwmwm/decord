@@ -6,7 +6,8 @@
 
 // Module 12593 (getActivityPlatformDisplayName)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
+import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 12592 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;
@@ -15,17 +16,19 @@ const result = size.fileFinishedImporting("modules/user_profile/utils/getActivit
 export default function getActivityPlatformDisplayName(type, arg1) {
   type = type.type;
   if (PlatformTypes.XBOX === type) {
-    const intl3 = util.intl;
-    return intl3.string(util.t.Nfvo72);
-  } else if (tmp.PLAYSTATION === type) {
-    const intl2 = util.intl;
-    return intl2.string(util.t.fFl4jo);
-  } else if (tmp.META_QUEST_OR_HORIZON === type) {
-    const intl = util.intl;
+    const intl3 = intl4.intl;
+    return intl3.string(intl4.t.Nfvo72);
+  } else if (PlatformTypes.PLAYSTATION === type) {
+    const intl2 = intl4.intl;
+    return intl2.string(intl4.t.fFl4jo);
+  } else if (PlatformTypes.META_QUEST_OR_HORIZON === type) {
+    let stringResult;
+    const tmp5 = isOnMetaHorizonDefault(arg1);
+    const intl = intl4.intl;
     const string = intl.string;
-    const t = util.t;
+    const t = intl4.t;
     if (tmp5) {
-      let stringResult = string(t.BrHQaq);
+      stringResult = string(t.BrHQaq);
     } else {
       stringResult = string(t.p6vL0e);
     }

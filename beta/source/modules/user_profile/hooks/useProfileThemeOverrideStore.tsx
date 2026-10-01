@@ -14,17 +14,20 @@ import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;
 let tmp2 = module_560.create()((arg0) => {
-  closure_0 = arg0;
-  return {
+  let closure_0 = arg0;
+  let obj = {
     themeOverride: null,
     savedClientTheme: null,
     setThemeOverride(themeOverride) {
-      return closure_0({ themeOverride });
+      const obj = { themeOverride };
+      return closure_0(obj);
     },
     setSavedClientTheme(savedClientTheme) {
-      return closure_0({ savedClientTheme });
+      const obj = { savedClientTheme };
+      return closure_0(obj);
     }
   };
+  return obj;
 });
 let closure_4 = tmp2;
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useProfileThemeOverrideStore.tsx");
@@ -36,6 +39,10 @@ export const useEffectiveThemeOverride = function useEffectiveThemeOverride() {
   if (null == tmp) {
     return null;
   } else {
+    let themeType;
+    let tmp4;
+    let tmp5;
+    let DARK;
     if ("nitro" === tmp.mode) {
       const themeColors = tmp.themeColors;
       let first;
@@ -57,16 +64,17 @@ export const useEffectiveThemeOverride = function useEffectiveThemeOverride() {
       if (null != first) {
         tmp8 = tmp3;
         if (null != tmp7) {
-          let profileTheme = UserProfileGradientUtils.getProfileTheme(first);
+          const obj = UserProfileGradientUtils;
+          let profileTheme = obj.getProfileTheme(first);
           if (profileTheme == null) {
             profileTheme = tmp3;
           }
           tmp8 = profileTheme;
         }
       }
-      let themeType = tmp8;
-      let tmp4 = tmp7;
-      let tmp5 = first;
+      themeType = tmp8;
+      tmp4 = tmp7;
+      tmp5 = first;
     } else {
       themeType = tmp.themeType;
       if (themeType == null) {
@@ -78,36 +86,30 @@ export const useEffectiveThemeOverride = function useEffectiveThemeOverride() {
     if (themeType !== ThemeTypes.ASH) {
       let isThemeLightResult = themeType === tmp11.ASH;
       if (isThemeLightResult) {
-        isThemeLightResult = shared.isThemeLight(tmp3);
+        const obj3 = shared;
+        isThemeLightResult = obj3.isThemeLight(tmp3);
       }
-      let DARK = themeType;
+      DARK = themeType;
       if (isThemeLightResult) {
         DARK = tmp11.DARK;
       }
     } else {
       DARK = tmp3;
+      shared;
     }
-    const obj4 = { theme: DARK, primaryColor: tmp5, secondaryColor: tmp4 };
-    return obj4;
+    return { theme: DARK, primaryColor: tmp5, secondaryColor: tmp4 };
   }
 };
 export const useIsBannerDisabledByOverride = function useIsBannerDisabledByOverride() {
   const tmp = closure_4((themeOverride) => themeOverride.themeOverride);
   let tmp2 = null != tmp;
   if (tmp2) {
-    let tmp3 = "non-nitro" === tmp.mode;
-    if (!tmp3) {
-      tmp3 = true === tmp.disableBanner;
-    }
-    tmp2 = tmp3;
+    tmp2 = "non-nitro" === tmp.mode || true === tmp.disableBanner;
+    const tmp3 = "non-nitro" === tmp.mode || true === tmp.disableBanner;
   }
   return tmp2;
 };
 export const useHasNonNitroThemeOverride = function useHasNonNitroThemeOverride() {
   const tmp = closure_4((themeOverride) => themeOverride.themeOverride);
-  let tmp2 = null != tmp;
-  if (tmp2) {
-    tmp2 = "non-nitro" === tmp.mode;
-  }
-  return tmp2;
+  return null != tmp && "non-nitro" === tmp.mode;
 };

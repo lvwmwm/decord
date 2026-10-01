@@ -5,31 +5,33 @@
 // Exports: default
 
 // Module 9801 (EmojiOptionsActionSheet)
+import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/messages/native/emoji/EmojiOptionsActionSheet.tsx");
 
 export default function EmojiOptionsActionSheet(emojiSrc) {
+  let intl;
   emojiSrc = emojiSrc.emojiSrc;
   const items = [emojiSrc];
-  const callback = noop.useCallback(() => {
-    ClipboardUtils.copy(emojiSrc);
-    const result = ToastUtils.presentCopiedToClipboard();
-    ActionSheetActionCreatorsDefault.hideActionSheet();
+  const callback = react.useCallback(() => {
+    const obj = ClipboardUtils;
+    obj.copy(emojiSrc);
+    const obj2 = ToastUtils;
+    const result = obj2.presentCopiedToClipboard();
+    const obj3 = ActionSheetActionCreatorsDefault;
+    obj3.hideActionSheet();
   }, items);
-  let obj = { children: null };
+  const ActionSheet = emojiSrc(6618).ActionSheet;
   let obj2 = { hasIcons: true, children: null };
-  const obj3 = { icon: jsx(emojiSrc(4775).LinkIcon, {}), label: null, onPress: null };
-  const intl = emojiSrc(1115).intl;
-  obj3.label = intl.string(emojiSrc(1115).t.cIoudn);
-  obj3.onPress = callback;
-  obj2.children = jsx(emojiSrc(5917).TableRow, { icon: jsx(emojiSrc(4775).LinkIcon, {}), label: null, onPress: null });
-  obj.children = jsx(emojiSrc(5999).TableRowGroup, { hasIcons: true, children: null });
-  return jsx(emojiSrc(6618).ActionSheet, { children: null });
+  const TableRowGroup = emojiSrc(5999).TableRowGroup;
+  let obj3 = { icon: null, label: intl.string(emojiSrc(1115).t.cIoudn), onPress: callback };
+  const TableRow = emojiSrc(5917).TableRow;
+  intl = emojiSrc(1115).intl;
+  return <ActionSheet>{null}</ActionSheet>;
 };

@@ -6,7 +6,7 @@
 
 // Module 2070 (FavoritesUtils)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import FavoritesConstants from "FavoritesConstants" /* 2058 */;
 import size from "module_2" /* 2 */;
 
@@ -16,14 +16,12 @@ const result = size.fileFinishedImporting("modules/favorites/FavoritesUtils.tsx"
 
 export const getFavoritesAwareGuildName = function getFavoritesAwareGuildName(guild) {
   if (null != guild) {
+    let name;
     const id = guild.id;
-    let tmp2 = id === FAVORITES_RAW_GUILD_ID;
-    if (!tmp2) {
-      tmp2 = id === FAVORITES;
-    }
+    const tmp2 = id === FAVORITES_RAW_GUILD_ID || id === FAVORITES;
     if (tmp2) {
-      const intl = util.intl;
-      let name = intl.string(util.t.wMWyci);
+      const intl = intl2.intl;
+      name = intl.string(intl2.t.wMWyci);
     } else {
       name = guild.name;
     }
@@ -31,11 +29,7 @@ export const getFavoritesAwareGuildName = function getFavoritesAwareGuildName(gu
   }
 };
 export function isFavoritesGuildId(guildId) {
-  let tmp = guildId === FAVORITES_RAW_GUILD_ID;
-  if (!tmp) {
-    tmp = guildId === FAVORITES;
-  }
-  return tmp;
+  return guildId === FAVORITES_RAW_GUILD_ID || guildId === FAVORITES;
 }
 export const isFavoritesGuildCategoryNameValid = function isFavoritesGuildCategoryNameValid(str) {
   return "" !== str.trim();

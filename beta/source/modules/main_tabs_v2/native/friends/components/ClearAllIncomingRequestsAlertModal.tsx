@@ -5,91 +5,98 @@
 // Exports: default
 
 // Module 16597 (ClearAllIncomingRequestsAlertModal)
-import util from "util" /* 1115 */;
-import AlertModal from "AlertModal" /* 5209 */;
+import intl5 from "intl" /* 1115 */;
+import AlertModal2 from "AlertModal" /* 5209 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9195 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c0, c1;
+
+let closure_4;
+let hasOwnProperty;
 function handleConfirm() {
-  const self = this;
-  const apply = closure_7.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_7 = async function _handleConfirm(arg0, value) {
-  if (c0 === 2) {
-    c0 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
+let obj = function _handleConfirm() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj2;
+    if (c0 === 2) {
+      c0 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c0 = 2;
-      if (0 === c1) {
-        if (arg0 === 1) {
+      try {
+        c0 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            c0 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            c1 = 1;
+            c0 = 1;
+            const obj5 = { value: obj2.clearPendingRelationships(), done: false };
+            obj2 = RelationshipActionCreatorsDefault;
+            return obj5;
+          }
+        } else if (arg0 === 1) {
           c0 = 3;
           throw value;
         } else if (arg0 === 2) {
           c0 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
+          obj = { value, done: true };
+          return obj;
         } else {
-          c1 = 1;
-          c0 = 1;
-          const obj5 = { value: RelationshipActionCreatorsDefault.clearPendingRelationships(), done: false };
-          return obj5;
+          c0 = 3;
+          return { value: "HermesInternal", done: null };
         }
-      } else if (arg0 === 1) {
+      } catch (tmp6) {
         c0 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c0 = 3;
-        const obj = { value, done: true };
-        return obj;
-      } else {
-        c0 = 3;
-        return { value: "HermesInternal", done: null };
+        throw tmp6;
       }
-    } catch (tmp7) {
-      c0 = tmp;
-      throw tmp7;
     }
-  }
+  });
+  return obj(...arguments);
 };
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const size = fn(2);
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ClearAllIncomingRequestsAlertModal.tsx");
 
 export default function ClearAllIncomingRequestsAlertModal(incomingRequestCount) {
-  const obj = { title: null, content: null, actions: null };
-  const intl = util.intl;
-  obj.title = intl.string(util.t.z2pFjo);
-  const intl2 = util.intl;
-  obj.content = intl2.formatToPlainString(util.t["0nTvEw"], { incomingRequestCount: incomingRequestCount.incomingRequestCount });
-  const obj2 = { children: null };
-  const obj3 = { variant: "destructive", onPress: handleConfirm, text: null };
-  const intl3 = util.intl;
-  obj3.text = intl3.string(util.t["cY+Oob"]);
-  const items = [React4(AlertModal.AlertActionButton, obj3, "confirm"), ];
-  const obj4 = { variant: "secondary", text: null };
-  const intl4 = util.intl;
-  obj4.text = intl4.string(util.t["ETE/oC"]);
-  items[1] = React4(AlertModal.AlertActionButton, obj4, "cancel");
-  obj2.children = items;
-  obj.actions = hasOwnProperty(AlertModal.AlertActions, obj2);
-  return React4(AlertModal.AlertModal, obj);
+  let AlertActions;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let obj2;
+  incomingRequestCount = incomingRequestCount.incomingRequestCount;
+  obj = { title: intl.string(intl5.t.z2pFjo), content: intl2.formatToPlainString(intl5.t["0nTvEw"], { incomingRequestCount }), actions: hasOwnProperty(AlertActions, obj2) };
+  const AlertModal = AlertModal2.AlertModal;
+  intl = intl5.intl;
+  intl2 = intl5.intl;
+  obj2 = { children: items };
+  AlertActions = AlertModal2.AlertActions;
+  const obj3 = { variant: "destructive", onPress: handleConfirm, text: intl3.string(intl5.t["cY+Oob"]) };
+  const AlertActionButton = AlertModal2.AlertActionButton;
+  intl3 = intl5.intl;
+  items = [React3(AlertActionButton, obj3, "confirm"), ];
+  const obj4 = { variant: "secondary", text: intl4.string(intl5.t["ETE/oC"]) };
+  const AlertActionButton2 = AlertModal2.AlertActionButton;
+  intl4 = intl5.intl;
+  items[1] = React3(AlertActionButton2, obj4, "cancel");
+  return React3(AlertModal, obj);
 };

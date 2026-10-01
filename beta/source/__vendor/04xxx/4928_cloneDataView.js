@@ -8,7 +8,8 @@ import cloneArrayBuffer from "cloneArrayBuffer" /* 4927 */;
 
 
 export default function cloneDataView(buffer, arg1) {
-  if (arg1) {
+  const tmp = arg1;
+  if (tmp) {
     buffer = cloneArrayBuffer(buffer.buffer);
   } else {
     buffer = buffer.buffer;

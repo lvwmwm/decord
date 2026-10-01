@@ -5,37 +5,38 @@
 // Exports: default
 
 // Module 15444 (FeaturedBlock)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 6583 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8229 */;
-import FeaturedCategorySubblockDefault from "FeaturedCategorySubblock" /* 15445 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
-require = fn;
 function Subblocks(style) {
   style = style.style;
   const subblocks = style.featuredBlock.subblocks;
   return subblocks.map((subblock, tilePosition) => {
-    const obj = { newValue: { tilePosition }, children: null };
-    const obj2 = { style, children: jsx(FeaturedCategorySubblockDefault, { subblock }) };
-    obj.children = <View style={style}>{jsx(FeaturedCategorySubblockDefault, { subblock: arg0 })}</View>;
-    return jsx(CollectiblesAnalyticsContext.CollectiblesAnalyticsProvider, { newValue: { tilePosition }, children: null }, tilePosition);
+    const CollectiblesAnalyticsProvider = CollectiblesAnalyticsContext.CollectiblesAnalyticsProvider;
+    return <CollectiblesAnalyticsProvider key={arg1} newValue={{ tilePosition: arg1 }}>{null}</CollectiblesAnalyticsProvider>;
   });
 }
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let closure_5 = createStyles.createStyles({ container: { display: "flex", width: "100%", flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 }, featuredSubblock: { flex: 1, flexBasis: 400, maxWidth: "100%" } });
-const size = fn(2);
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const PX_16 = nativeDefault.space.PX_16;
+const PX_12 = nativeDefault.space.PX_12;
+const obj = { container: { display: "flex", width: "100%", flexDirection: "row", flexWrap: "wrap", gap: PX_12, paddingHorizontal: PX_16 }, featuredSubblock: { flex: 1, flexBasis: 400, maxWidth: "100%" } };
+let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/collectibles/native/FeaturedBlock.tsx");
 
 export default function FeaturedBlock(featuredBlock) {
+  featuredBlock = featuredBlock.featuredBlock;
   const tmp = closure_5();
-  const obj = { value: useAnalyticsLocationsDefault(AnalyticsLocationDefault.COLLECTIBLES_SHOP_FEATURED_BLOCK).analyticsLocations, children: null };
-  const obj2 = { style: tmp.container, children: <Subblocks featuredBlock={arg0.featuredBlock} style={tmp.featuredSubblock} /> };
-  obj.children = <View style={tmp.container}><Subblocks featuredBlock={arg0.featuredBlock} style={tmp.featuredSubblock} /></View>;
-  return jsx(useAnalyticsLocations.AnalyticsLocationProvider, { value: useAnalyticsLocationsDefault(AnalyticsLocationDefault.COLLECTIBLES_SHOP_FEATURED_BLOCK).analyticsLocations, children: null });
+  const tmp2 = useAnalyticsLocationsDefault;
+  const AnalyticsLocationProvider = useAnalyticsLocations.AnalyticsLocationProvider;
+  return <AnalyticsLocationProvider value={tmp2(AnalyticsLocationDefault.COLLECTIBLES_SHOP_FEATURED_BLOCK).analyticsLocations}>{null}</AnalyticsLocationProvider>;
 };

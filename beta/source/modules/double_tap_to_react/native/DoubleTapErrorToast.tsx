@@ -5,55 +5,65 @@
 // Exports: showDoubleTapErrorToast
 
 // Module 7414 (DoubleTapErrorToast)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
+import EmojiConstants from "EmojiConstants" /* 1375 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import XSmallBoldIcon from "XSmallBoldIcon" /* 7415 */;
-import noop from "module_19" /* 19 */;
+import XSmallBoldIcon2 from "XSmallBoldIcon" /* 7415 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let obj2;
 function DoubleTapErrorToastIcon() {
-  const obj = { style: closure_6().icon, "aria-hidden": true, children: jsx(XSmallBoldIcon.XSmallBoldIcon, { color: nativeDefault.colors.WHITE, size: "xs" }) };
-  return <View style={closure_6().icon} aria-hidden>{jsx(XSmallBoldIcon.XSmallBoldIcon, { color: nativeDefault.colors.WHITE, size: "xs" })}</View>;
+  ({ color: nativeDefault.colors.WHITE, size: "xs" });
+  const XSmallBoldIcon = XSmallBoldIcon2.XSmallBoldIcon;
+  return <View style={closure_6().icon} aria-hidden>{null}</View>;
 }
-const View = fn(17).View;
-const EmojiDisabledReasons = fn(1375).EmojiDisabledReasons;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { icon: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.round, padding: nativeDefault.space.PX_4, marginLeft: nativeDefault.space.PX_4 } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+const EmojiDisabledReasons = EmojiConstants.EmojiDisabledReasons;
+const jsx = Fragment.jsx;
+let obj = { icon: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.round, padding: nativeDefault.space.PX_4, marginLeft: nativeDefault.space.PX_4 };
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapErrorToast.tsx");
 
 export const showDoubleTapErrorToast = function showDoubleTapErrorToast(arg0) {
   ({ emojiName: require, reason: importDefault } = arg0);
-  ToastActionCreatorsDefault.open({
+  let obj = ToastActionCreatorsDefault;
+  const obj2 = {
     key: "EMOJI_DOUBLE_TAP_ERROR",
     icon() {
       return <DoubleTapErrorToastIcon />;
     },
     content() {
+      let formatResult;
       if (importDefault === EmojiDisabledReasons.DISALLOW_EXTERNAL) {
-        if (null != closure_1_0) {
-          const obj2 = { variant: "text-sm/normal", children: null };
-          const intl3 = util.intl;
+        let tmp3Result;
+        if (null != require) {
+          const Text2 = Text_Text.Text;
+          const intl3 = intl4.intl;
           const obj3 = { emojiName: tmp };
-          obj2.children = intl3.format(util.t.Dz4vkv, obj3);
-          let tmp3Result = jsx(Text_Text.Text, { variant: "text-sm/normal", children: null });
+          tmp3Result = <Text2 variant="text-sm/normal">{intl3.format(intl4.t.Dz4vkv, obj3)}</Text2>;
         }
         return tmp3Result;
       }
-      if (null != closure_1_0) {
+      const Text = Text_Text.Text;
+      const tmp3 = jsx;
+      if (null != require) {
         const intl2 = tmp4(1115).intl;
         const obj = { emojiName: tmp6 };
-        let formatResult = intl2.format(tmp4(1115).t.WZGLFq, obj);
+        formatResult = intl2.format(tmp4(1115).t.WZGLFq, obj);
       } else {
         const intl = tmp4(1115).intl;
         formatResult = intl.string(tmp4(1115).t.CL5mWi);
       }
-      tmp3Result = jsx(Text_Text.Text, { variant: "text-sm/normal", children: formatResult });
+      tmp3Result = tmp3(Text, { variant: "text-sm/normal", children: formatResult });
     },
     toastDurationMs: 3000
-  });
+  };
+  obj.open(obj2);
 };

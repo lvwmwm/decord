@@ -5,59 +5,71 @@
 // Exports: default
 
 // Module 17519 (EligibilityChecklist)
+import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 4832 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
 import FastImageDefault from "FastImage" /* 5899 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
 function EligibilityChecklistRow(item) {
+  let items1;
+  let items2;
+  let obj8;
+  let tmp5Result2;
+  let tmp6Result;
   item = item.item;
+  const isLast = item.isLast;
   const tmp = closure_7();
   const items = [tmp.row, ];
   let eligibleRow = item.checked;
+  const tmp3 = metroRequire;
   if (eligibleRow) {
     eligibleRow = tmp.eligibleRow;
   }
-  const obj = { style: items, children: null };
+  const obj = { style: items, children: items1 };
   items[1] = eligibleRow;
-  const obj2 = { style: tmp.rowStatusIcon, source: null };
+  const obj2 = { style: tmp.rowStatusIcon, source: tmp6Result };
+  const tmp8 = FastImageDefault;
   if (item.checked) {
-    let tmp6Result = tmp6(17520);
+    tmp6Result = tmp6(17520);
   } else {
     tmp6Result = tmp6(17521);
   }
-  obj2.source = tmp6Result;
-  const items1 = [React4(FastImageDefault, obj2), ];
-  const obj3 = { style: tmp.rowTextColumn, children: null };
-  const items2 = [React4(Text_Text.Text, { style: tmp.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel }), React4(Text_Text.Text, { variant: "text-sm/normal", color: "interactive-text-default", children: item.description }), ];
+  items1 = [React3(tmp8, obj2), ];
+  const obj3 = { style: tmp.rowTextColumn, children: items2 };
+  items2 = [, , ];
+  const obj4 = { style: tmp.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel };
+  items2[0] = React3(Text_Text.Text, obj4);
+  const obj5 = { variant: "text-sm/normal", color: "interactive-text-default", children: item.description };
+  items2[1] = React3(Text_Text.Text, obj5);
   let tmp5Result = null != item.actionHandler && null != item.actionLabel;
   if (tmp5Result) {
-    const obj6 = { style: tmp.actionButtonWrapper, children: null };
+    const obj6 = { style: tmp.actionButtonWrapper, children: React3(components_Button_Button.Button, obj8) };
+    obj8 = { text: null, onPress: null, grow: true };
     ({ actionLabel: obj7.text, actionHandler: obj7.onPress } = item);
-    obj6.children = tmp5(tmp10(5281).Button, { text: null, onPress: null, grow: true });
     tmp5Result = tmp5(tmp4, obj6);
-    const obj8 = { text: null, onPress: null, grow: true };
   }
   items2[2] = tmp5Result;
-  obj3.children = items2;
   items1[1] = hasOwnProperty(View, obj3);
-  obj.children = items1;
   const children = [hasOwnProperty(View, obj), ];
-  if (item.isLast) {
-    let tmp5Result2 = tmp5(tmp10(1177).Spacer, { size: 16 });
+  if (isLast) {
+    tmp5Result2 = tmp5(tmp10(1177).Spacer, { size: 16 });
   } else {
     const obj15 = { style: tmp.divider };
     tmp5Result2 = tmp5(tmp6(14762), obj15);
   }
   children[1] = tmp5Result2;
-  return hasOwnProperty(timestampProducer, { children });
+  return hasOwnProperty(tmp3, { children });
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ row: { paddingHorizontal: 24, paddingTop: 16, flex: 0, flexDirection: "row" }, eligibleRow: { opacity: 0.8 }, rowStatusIcon: { height: 20, width: 20, marginRight: 16 }, rowTextColumn: { flex: 1, flexDirection: "column" }, rowLabel: { marginBottom: 4 }, actionButtonWrapper: { marginTop: 12 }, divider: { marginHorizontal: 24 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/EligibilityChecklist.tsx");
 
 export default function EligibilityChecklist(items) {
@@ -65,7 +77,13 @@ export default function EligibilityChecklist(items) {
   if (0 === items.length) {
     return null;
   } else {
-    const obj = { style: tmp, children: items.map((item, index) => React4(EligibilityChecklistRow, { item, isLast: index === items.length - 1 }, item.checkedLabel)) };
+    let obj = {
+      style: tmp,
+      children: items.map((item, index) => {
+          const obj = { item, isLast: index === items.length - 1 };
+          return React3(EligibilityChecklistRow, obj, item.checkedLabel);
+        })
+    };
     return closure_4(View, obj);
   }
 };

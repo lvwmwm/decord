@@ -7,6 +7,7 @@
 import _mod6241 from "module_6241" /* 6241 */;
 import BottomSheetFooterContainer from "BottomSheetFooterContainer" /* 6243 */;
 
+const BottomSheetFooterContainer_export = BottomSheetFooterContainer.BottomSheetFooterContainer;
 
 export const BottomSheetFooter = _mod6241.BottomSheetFooter;
-export const BottomSheetFooterContainer = BottomSheetFooterContainer.BottomSheetFooterContainer;
+export { BottomSheetFooterContainer_export as BottomSheetFooterContainer };

@@ -5,19 +5,23 @@
 // Exports: NativeFreezeScreens
 
 // Module 15653 (NativeFreezeScreens)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import enableScreens from "enableScreens" /* 5211 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const StyleSheet = fn(17).StyleSheet;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const StyleSheet = react_native.StyleSheet;
+const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ screens: { flex: 1, overflow: "hidden" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/freeze/native/NativeFreezeScreens.tsx");
 
 export const NativeFreezeScreens = function NativeFreezeScreens(detachInactiveScreens) {
+  let activeIndex;
+  let arr4;
+  let children;
   ({ children, activeIndex } = detachInactiveScreens);
   let flag = detachInactiveScreens.detachInactiveScreens;
   if (flag === undefined) {
@@ -40,58 +44,73 @@ export const NativeFreezeScreens = function NativeFreezeScreens(detachInactiveSc
     preloadIndices = [];
   }
   let first;
-  let tmp4 = activeIndex >= 0;
-  const tmp = closure_7();
-  const tmp2 = flag2;
-  if (tmp4) {
+  let tmp2 = closure_7();
+  let tmp5 = activeIndex >= 0;
+  let tmp4 = flag(flag2[4]);
+  const tmp3 = flag2;
+  if (tmp5) {
     const _Array = Array;
     let num = 1;
     if (Array.isArray(children)) {
       num = children.length;
     }
-    tmp4 = activeIndex < num;
+    tmp5 = activeIndex < num;
   }
-  flag(flag2[4])(tmp4, "NativeFreezeScreens: invalid activeIndex");
+  tmp4(tmp5, "NativeFreezeScreens: invalid activeIndex");
   let items = [activeIndex];
-  const tmp7 = flag3(flag4.useState(items), 2);
-  first = tmp7[0];
+  let tmp8 = flag3(flag4.useState(items), 2);
+  first = tmp8[0];
+  const tmp9 = tmp8[1];
   if (!first.includes(activeIndex)) {
     const items1 = [];
-    items1[HermesBuiltin.arraySpread(first, 0)] = activeIndex;
-    tmp7[1](items1);
+    let num2 = 0;
+    items1[HermesBuiltin.arraySpread(items1, first, 0)] = activeIndex;
+    tmp9(items1);
   }
-  const obj = { enabled: flag, hasTwoStates: true, style: tmp.screens, nativeID: "native-freeze-screens-container", children: null };
-  let arr4 = children;
+  let obj = {
+    enabled: flag,
+    hasTwoStates: true,
+    style: tmp2.screens,
+    nativeID: "native-freeze-screens-container",
+    children: arr4.map((children, index) => {
+      const tmp2 = flag3;
+      if (tmp2) {
+        if (activeIndex !== index) {
+          return null;
+        }
+      }
+      const tmp4 = flag2;
+      if (tmp4) {
+        if (!first.includes(index)) {
+          if (activeIndex !== index) {
+            if (!preloadIndices.includes(index)) {
+              return null;
+            }
+          }
+        }
+      }
+      let num = 0;
+      if (activeIndex === index) {
+        num = 2;
+      }
+      const items = [StyleSheet.absoluteFill, ];
+      let num2 = -1;
+      const Screen = enableScreens.Screen;
+      const tmp8 = jsx;
+      if (activeIndex === index) {
+        num2 = 0;
+      }
+      const obj = { style: items, activityState: num, enabled: flag, freezeOnBlur: flag4, children };
+      items[1] = { zIndex: num2 };
+      return tmp8(Screen, obj, index);
+    })
+  };
+  const ScreenContainer = activeIndex(tmp3[5]).ScreenContainer;
+  arr4 = children;
+  const tmp13 = first;
   if (!Array.isArray(children)) {
     const items2 = [children];
     arr4 = items2;
   }
-  obj.children = arr4.map((children, index) => {
-    if (flag3) {
-      if (!tmp) {
-        return null;
-      }
-    }
-    if (flag2) {
-      if (!first.includes(index)) {
-        if (!tmp) {
-          if (!preloadIndices.includes(index)) {
-            return null;
-          }
-        }
-      }
-    }
-    let num = 0;
-    if (activeIndex === index) {
-      num = 2;
-    }
-    const items = [StyleSheet.absoluteFill, ];
-    let num2 = -1;
-    if (activeIndex === index) {
-      num2 = 0;
-    }
-    items[1] = { zIndex: num2 };
-    return jsx(enableScreens.Screen, { style: items, activityState: num, enabled: flag, freezeOnBlur: flag4, children }, index);
-  });
-  return first(activeIndex(tmp2[5]).ScreenContainer, obj);
+  return tmp13(ScreenContainer, obj);
 };

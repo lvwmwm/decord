@@ -5,7 +5,8 @@
 // Exports: useBountiesRecapScroll
 
 // Module 14548 (useBountiesRecapScroll)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 function getRevealProgress(scrollY, c26, height3) {
   let num = 0;
@@ -17,12 +18,12 @@ function getRevealProgress(scrollY, c26, height3) {
 getRevealProgress.__closure = {};
 getRevealProgress.__workletHash = 9769647749947;
 getRevealProgress.__initData = { code: "function getRevealProgress_useBountiesRecapScrollTsx1(scrollOffset,startOffset,revealHeight){if(revealHeight<=0){return 0;}return(scrollOffset-startOffset)/revealHeight;}" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesRecapScroll.tsx");
 
 export const RECAP_SNAP_EPSILON = 2;
 export { getRevealProgress };
 export const useBountiesRecapScroll = function useBountiesRecapScroll(listRef) {
+  let items3;
   listRef = listRef.listRef;
   const enabled = listRef.enabled;
   const offsets = listRef.offsets;
@@ -42,18 +43,19 @@ export const useBountiesRecapScroll = function useBountiesRecapScroll(listRef) {
     callback(offsets.lastBounty);
   }, items1);
   const callback2 = listRef.useCallback((arg0) => {
-    if (enabled) {
+    const tmp = enabled;
+    if (tmp) {
       if (arg0 > offsets.lastBounty) {
-        const revealHeight = tmp2.revealHeight;
+        const revealHeight = tmp3.revealHeight;
         if (typeof getRevealProgress === "function") {
           let num = 0;
           if (revealHeight > 0) {
-            num = (arg0 - tmp8) / revealHeight;
+            num = (arg0 - tmp9) / revealHeight;
           }
-          const tmp3 = num >= 0.25 ? tmp2.fullRecap : tmp2.lastBounty;
+          const tmp4 = num >= 0.25 ? offsets.fullRecap : offsets.lastBounty;
           const _Math = Math;
-          if (Math.abs(arg0 - tmp3) >= 2) {
-            callback(tmp3);
+          if (Math.abs(arg0 - tmp4) >= 2) {
+            callback(tmp4);
           }
         } else {
           throw new TypeError("Trying to call a non-function");
@@ -61,12 +63,15 @@ export const useBountiesRecapScroll = function useBountiesRecapScroll(listRef) {
       }
     }
   }, items2);
-  let obj = { scrollToLastBounty: callback1, handleRecapMomentumEnd: null };
-  const items3 = [enabled, callback2];
-  obj.handleRecapMomentumEnd = listRef.useCallback((contentOffset) => {
-    if (enabled) {
-      callback2(contentOffset.contentOffset.y);
-    }
-  }, items3);
+  let obj = {
+    scrollToLastBounty: callback1,
+    handleRecapMomentumEnd: listRef.useCallback((contentOffset) => {
+      const tmp = enabled;
+      if (tmp) {
+        callback2(contentOffset.contentOffset.y);
+      }
+    }, items3)
+  };
+  items3 = [enabled, callback2];
   return obj;
 };

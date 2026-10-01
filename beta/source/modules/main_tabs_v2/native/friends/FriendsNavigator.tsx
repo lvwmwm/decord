@@ -5,56 +5,102 @@
 // Exports: default
 
 // Module 16573 (FriendsNavigator)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl10 from "intl" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import native from "native" /* 4540 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4688 */;
 import HeaderShared from "HeaderShared" /* 7288 */;
 import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7291 */;
-import _modDef12093 from "module_12093" /* 12093 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12093 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import NativeStackView from "NativeStackView" /* 7339 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let _require;
+
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
 function RequestsSettingsModalButton(onPress) {
-  const obj = { isModal: true, children: null };
-  const obj2 = { source: _modDef12093, onPress: onPress.onPress, accessibilityLabel: null };
-  const intl = util.intl;
-  obj2.accessibilityLabel = intl.string(util.t["3D5yo/"]);
-  obj.children = hasOwnProperty(HeaderShared.HeaderIconButton, obj2);
-  return hasOwnProperty(PressableNavigatorButtonWrapperDefault, obj);
+  let HeaderIconButton;
+  let intl;
+  let obj2;
+  onPress = onPress.onPress;
+  const obj = { isModal: true, children: hasOwnProperty(HeaderIconButton, obj2) };
+  obj2 = { source: AssetRegistryDefault, onPress, accessibilityLabel: intl.string(intl10.t["3D5yo/"]) };
+  const tmp = PressableNavigatorButtonWrapperDefault;
+  HeaderIconButton = HeaderShared.HeaderIconButton;
+  intl = intl10.intl;
+  return hasOwnProperty(tmp, obj);
 }
 function FriendsNavigator() {
+  let closure_0;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  let intl8;
+  let intl9;
+  let items;
+  let obj11;
+  let obj13;
+  let obj15;
+  let obj17;
+  let obj20;
+  let obj22;
+  let obj5;
+  let obj7;
+  let obj9;
   _require = closure_8();
-  const layoutEffect = noop.useLayoutEffect(() => closure_0(6895).trackAppUIViewed(), []);
-  closure_1 = require("Navigator").useAccessibilityNativeStackOptions();
-  const obj2 = {
+  const layoutEffect = react.useLayoutEffect(() => {
+    const obj = closure_0(dependencyMap[10]);
+    return obj.trackAppUIViewed();
+  }, []);
+  let obj = require("Navigator");
+  let closure_1 = obj.useAccessibilityNativeStackOptions();
+  let obj2 = {
     screenOptions(arg0) {
+      let presentation;
+      let route;
       ({ navigation, route } = arg0);
       const params = route.params;
       if (params != null) {
-        const presentation = params.presentation;
+        presentation = params.presentation;
       }
-      const obj = {
+      let obj = {
         headerStyle: closure_0.header,
         headerShadowVisible: false,
         headerTitle(children) {
+          children = children.children;
           const merged = Object.assign(children, Object.assign({ children: 0 }));
+          const obj = { title: children };
+          const GenericHeaderTitle = closure_1_0(closure_1_2[7]).GenericHeaderTitle;
           const merged1 = Object.assign(merged);
-          return closure_1_5(closure_1_0(dependencyMap[7]).GenericHeaderTitle, { title: children.children });
+          return closure_1_5(GenericHeaderTitle, obj);
         },
         headerTitleAlign: "center",
         headerLeft: null,
         fullScreenGestureEnabled: null
       };
       if (navigation.getState().routes[0].key === route.key) {
+        let renderModalCloseImage;
         const params2 = route.params;
         let presentation1;
         if (params2 != null) {
           presentation1 = params2.presentation;
         }
         if ("card" !== presentation1) {
-          let renderModalCloseImage = HeaderShared.getRenderModalCloseImage(navigation);
+          const obj3 = HeaderShared;
+          renderModalCloseImage = obj3.getRenderModalCloseImage(navigation);
         }
         obj.headerLeft = renderModalCloseImage;
         const params3 = route.params;
@@ -66,170 +112,189 @@ function FriendsNavigator() {
         let merged = Object.assign(closure_1);
         return obj;
       }
-      renderModalCloseImage = HeaderShared.getRenderModalBackImage(navigation);
+      const obj2 = HeaderShared;
+      renderModalCloseImage = obj2.getRenderModalBackImage(navigation);
     },
-    children: null
+    children: items
   };
-  const items = [
-    closure_5(closure_7.Screen, {
-      name: "root",
-      options(navigation) {
-        navigation = navigation.navigation;
-        let obj = { title: null, headerRight: null };
-        let intl = navigation(1115).intl;
-        obj.title = intl.string(navigation(1115).t.TdEu5X);
-        obj.headerRight = function headerRight(arg0) {
-          const obj = {};
-          const merged = Object.assign(arg0);
-          const intl = navigation(1115).intl;
-          obj.label = intl.string(navigation(1115).t.zIJnA6);
-          obj.onPress = function onPress() {
-            return navigation.navigate("add-friends", { sourcePage: "Friends Screen Header" });
-          };
-          return closure_2_5(navigation(7288).HeaderTextButton, obj);
-        };
-        return obj;
-      },
-      getComponent() {
-        return closure_0(16574).default;
-      }
-    }),
-  ,
-  ,
-  ,
-  ,
-  ,
-  ,
-  ,
-  ,
-  ,
-
-  ];
-  const obj4 = { name: "new-message", options: null, getComponent: null };
-  const obj5 = { title: null };
-  let intl = require("util").intl;
-  obj5.title = intl.string(require("util").t.jD1qzM);
-  obj4.options = obj5;
-  obj4.getComponent = function getComponent() {
-    return closure_0(16580).default;
-  };
-  items[1] = closure_5(closure_7.Screen, obj4);
-  const obj6 = { name: "gdm", options: null, getComponent: null };
-  const obj7 = { title: null };
-  const intl2 = require("util").intl;
-  obj7.title = intl2.string(require("util").t["3hF1W4"]);
-  obj6.options = obj7;
-  obj6.getComponent = function getComponent() {
-    return closure_0(16583).default;
-  };
-  items[2] = closure_5(closure_7.Screen, obj6);
-  const obj8 = { name: "add-friend", options: null, getComponent: null };
-  const obj9 = { title: null };
-  const intl3 = require("util").intl;
-  obj9.title = intl3.string(require("util").t.w5uwoI);
-  obj8.options = obj9;
-  obj8.getComponent = function getComponent() {
-    return closure_0(16584).default;
-  };
-  items[3] = closure_5(closure_7.Screen, obj8);
-  const obj10 = { name: "add-friends", options: null, getComponent: null };
-  const obj11 = { title: null };
-  const intl4 = require("util").intl;
-  obj11.title = intl4.string(require("util").t.zIJnA6);
-  obj10.options = obj11;
-  obj10.getComponent = function getComponent() {
-    return closure_0(16585).default;
-  };
-  items[4] = closure_5(closure_7.Screen, obj10);
-  const obj12 = { name: "username-search", options: null, getComponent: null };
-  const obj13 = { title: null };
-  const intl5 = require("util").intl;
-  obj13.title = intl5.string(require("util").t.QzVsOs);
-  obj12.options = obj13;
-  obj12.getComponent = function getComponent() {
-    return closure_0(16592).default;
-  };
-  items[5] = closure_5(closure_7.Screen, obj12);
-  const obj14 = { name: "suggested-friends", options: null, getComponent: null };
-  const obj15 = { title: null };
-  const intl6 = require("util").intl;
-  obj15.title = intl6.string(require("util").t["1uAmCw"]);
-  obj14.options = obj15;
-  obj14.getComponent = function getComponent() {
-    return closure_0(16593).default;
-  };
-  items[6] = closure_5(closure_7.Screen, obj14);
-  const obj16 = { name: "requests-settings", options: null, getComponent: null };
-  const obj17 = { title: null };
-  const intl7 = require("util").intl;
-  obj17.title = intl7.string(require("util").t.XT4hVl);
-  obj16.options = obj17;
-  obj16.getComponent = function getComponent() {
-    return closure_0(16594).default;
-  };
-  items[7] = closure_5(closure_7.Screen, obj16);
-  items[8] = closure_5(closure_7.Screen, {
-    name: "requests",
+  let obj3 = {
+    name: "root",
     options(navigation) {
+      let intl;
       navigation = navigation.navigation;
-      const obj = { title: null, headerRight: null };
-      const intl = navigation(1115).intl;
-      obj.title = intl.string(navigation(1115).t.fyA115);
-      obj.headerRight = function headerRight() {
-        return closure_2_5(RequestsSettingsModalButton, {
-          onPress() {
-            return navigation.navigate("requests-settings");
-          }
-        });
+      let obj = {
+        title: intl.string(navigation(closure_2[9]).t.TdEu5X),
+        headerRight(arg0) {
+          let intl;
+          const obj = {
+            label: intl.string(navigation(dependencyMap[9]).t.zIJnA6),
+            onPress() {
+              return navigation.navigate("add-friends", { sourcePage: "Friends Screen Header" });
+            }
+          };
+          const HeaderTextButton = navigation(dependencyMap[7]).HeaderTextButton;
+          const merged = Object.assign(arg0);
+          intl = navigation(dependencyMap[9]).intl;
+          return closure_2_5(HeaderTextButton, obj);
+        }
       };
+      intl = navigation(closure_2[9]).intl;
       return obj;
     },
     getComponent() {
-      return closure_0(16596).default;
+      return closure_0(dependencyMap[12]).default;
     }
-  });
-  const obj19 = { name: "spam-requests", options: null, getComponent: null };
-  const obj20 = { title: null };
-  const intl8 = require("util").intl;
-  obj20.title = intl8.string(require("util").t.oHVeHc);
-  obj19.options = obj20;
-  obj19.getComponent = function getComponent() {
-    return closure_0(16599).default;
   };
-  items[9] = closure_5(closure_7.Screen, obj19);
-  const obj21 = { name: "ignored-user-requests", options: null, getComponent: null };
-  const obj22 = { title: null };
-  const intl9 = require("util").intl;
-  obj22.title = intl9.string(require("util").t.tFY5Zb);
-  obj21.options = obj22;
-  obj21.getComponent = function getComponent() {
-    return closure_0(16600).default;
+  const Navigator = closure_7.Navigator;
+  items = [closure_5(closure_7.Screen, obj3), , , , , , , , , , ];
+  const obj4 = {
+    name: "new-message",
+    options: obj5,
+    getComponent() {
+      return closure_0(dependencyMap[13]).default;
+    }
   };
-  items[10] = closure_5(closure_7.Screen, obj21);
-  obj2.children = items;
-  return closure_6(closure_7.Navigator, obj2);
+  const Screen = closure_7.Screen;
+  obj5 = { title: intl.string(require("intl").t.jD1qzM) };
+  intl = require("intl").intl;
+  items[1] = closure_5(Screen, obj4);
+  const obj6 = {
+    name: "gdm",
+    options: obj7,
+    getComponent() {
+      return closure_0(dependencyMap[14]).default;
+    }
+  };
+  const Screen2 = closure_7.Screen;
+  obj7 = { title: intl2.string(require("intl").t["3hF1W4"]) };
+  intl2 = require("intl").intl;
+  items[2] = closure_5(Screen2, obj6);
+  const obj8 = {
+    name: "add-friend",
+    options: obj9,
+    getComponent() {
+      return closure_0(dependencyMap[15]).default;
+    }
+  };
+  const Screen3 = closure_7.Screen;
+  obj9 = { title: intl3.string(require("intl").t.w5uwoI) };
+  intl3 = require("intl").intl;
+  items[3] = closure_5(Screen3, obj8);
+  const obj10 = {
+    name: "add-friends",
+    options: obj11,
+    getComponent() {
+      return closure_0(dependencyMap[16]).default;
+    }
+  };
+  const Screen4 = closure_7.Screen;
+  obj11 = { title: intl4.string(require("intl").t.zIJnA6) };
+  intl4 = require("intl").intl;
+  items[4] = closure_5(Screen4, obj10);
+  const obj12 = {
+    name: "username-search",
+    options: obj13,
+    getComponent() {
+      return closure_0(dependencyMap[17]).default;
+    }
+  };
+  const Screen5 = closure_7.Screen;
+  obj13 = { title: intl5.string(require("intl").t.QzVsOs) };
+  intl5 = require("intl").intl;
+  items[5] = closure_5(Screen5, obj12);
+  const obj14 = {
+    name: "suggested-friends",
+    options: obj15,
+    getComponent() {
+      return closure_0(dependencyMap[18]).default;
+    }
+  };
+  const Screen6 = closure_7.Screen;
+  obj15 = { title: intl6.string(require("intl").t["1uAmCw"]) };
+  intl6 = require("intl").intl;
+  items[6] = closure_5(Screen6, obj14);
+  const obj16 = {
+    name: "requests-settings",
+    options: obj17,
+    getComponent() {
+      return closure_0(dependencyMap[19]).default;
+    }
+  };
+  const Screen7 = closure_7.Screen;
+  obj17 = { title: intl7.string(require("intl").t.XT4hVl) };
+  intl7 = require("intl").intl;
+  items[7] = closure_5(Screen7, obj16);
+  const obj18 = {
+    name: "requests",
+    options(navigation) {
+      let intl;
+      navigation = navigation.navigation;
+      let obj = {
+        title: intl.string(navigation(closure_2[9]).t.fyA115),
+        headerRight() {
+          const obj = {
+            onPress() {
+              return navigation.navigate("requests-settings");
+            }
+          };
+          return closure_2_5(RequestsSettingsModalButton, obj);
+        }
+      };
+      intl = navigation(closure_2[9]).intl;
+      return obj;
+    },
+    getComponent() {
+      return closure_0(dependencyMap[20]).default;
+    }
+  };
+  items[8] = closure_5(closure_7.Screen, obj18);
+  const obj19 = {
+    name: "spam-requests",
+    options: obj20,
+    getComponent() {
+      return closure_0(dependencyMap[21]).default;
+    }
+  };
+  const Screen8 = closure_7.Screen;
+  obj20 = { title: intl8.string(require("intl").t.oHVeHc) };
+  intl8 = require("intl").intl;
+  items[9] = closure_5(Screen8, obj19);
+  const obj21 = {
+    name: "ignored-user-requests",
+    options: obj22,
+    getComponent() {
+      return closure_0(dependencyMap[22]).default;
+    }
+  };
+  const Screen9 = closure_7.Screen;
+  obj22 = { title: intl9.string(require("intl").t.tFY5Zb) };
+  intl9 = require("intl").intl;
+  items[10] = closure_5(Screen9, obj21);
+  return closure_6(Navigator, obj2);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const NativeStackNavigator = fn(7339);
-let closure_7 = NativeStackNavigator.createNativeStackNavigator();
-const createStyles = fn(4836);
-let obj3 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, header: null };
-let obj4 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-obj3.header = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, shadowColor: "transparent" };
-let closure_8 = createStyles.createStyles(obj3);
-const size = fn(2);
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let closure_7 = NativeStackView.createNativeStackNavigator();
+let createStyles = createStyles_mod;
+let obj = { container: obj2, header: obj3 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+createStyles = createStyles.createStyles;
+obj3 = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, shadowColor: "transparent" };
+let closure_8 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/FriendsNavigator.tsx");
 
 export default function ThemedFriendsNavigator() {
+  let items;
+  let left;
+  let obj2;
+  let right;
   const tmp = useColorThemeBackgroundDefault();
   ({ left, right } = useSafeAreaInsetsDefault());
-  const tmp2 = useSafeAreaInsetsDefault();
-  const obj = { gradient: tmp, children: null };
-  const obj2 = { style: null, children: hasOwnProperty(FriendsNavigator, {}) };
-  const items = [closure_8().container, { paddingLeft: left, paddingRight: right }];
-  obj2.style = items;
-  obj.children = hasOwnProperty(View, obj2);
-  return hasOwnProperty(native.ThemeContextProvider, obj);
+  useSafeAreaInsetsDefault();
+  const obj = { gradient: tmp, children: hasOwnProperty(View, obj2) };
+  obj2 = { style: items, children: hasOwnProperty(FriendsNavigator, {}) };
+  items = [closure_8().container, { paddingLeft: left, paddingRight: right }];
+  closure_8();
+  const ThemeContextProvider = native.ThemeContextProvider;
+  return hasOwnProperty(ThemeContextProvider, obj);
 };

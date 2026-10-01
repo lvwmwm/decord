@@ -7,53 +7,61 @@
 // Module 7499 (ReferralProgramUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2031 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import ReferralTrialStore from "ReferralTrialStore" /* 6872 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const size = fn(2);
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let result = size.fileFinishedImporting("modules/premium/referral_program/ReferralProgramUtils.tsx");
 
 export const getReferralTrialOfferExpirationCopy = function getReferralTrialOfferExpirationCopy(time) {
+  let formatToPlainString3Result;
   const diff = time - Date.now();
   const result = diff / DurationsDefault.Millis.HOUR;
   if (result > 24) {
-    const intl3 = util.intl;
-    const obj2 = { numDays: null };
+    const intl3 = intl4.intl;
+    const formatToPlainString3 = intl3.formatToPlainString;
     const _Math3 = Math;
-    obj2.numDays = Math.floor(result / 24);
-    let formatToPlainStringResult = intl3.formatToPlainString(util.t["g9s+dA"], obj2);
+    const obj2 = { numDays: Math.floor(result / 24) };
+    const prop = intl4.t["g9s+dA"];
+    formatToPlainString3Result = formatToPlainString3(prop, obj2);
   } else if (result >= 1) {
-    const intl2 = util.intl;
-    const obj3 = { numHours: null };
+    const intl2 = intl4.intl;
+    const formatToPlainString2 = intl2.formatToPlainString;
     const _Math2 = Math;
-    obj3.numHours = Math.floor(result);
-    formatToPlainStringResult = intl2.formatToPlainString(util.t.k9v33y, obj3);
+    const obj3 = { numHours: Math.floor(result) };
+    const k9v33y = intl4.t.k9v33y;
+    formatToPlainString3Result = formatToPlainString2(k9v33y, obj3);
   } else {
-    const intl = util.intl;
-    const obj = { numMinutes: null };
+    const intl = intl4.intl;
+    const formatToPlainString = intl.formatToPlainString;
     const _Math = Math;
-    obj.numMinutes = Math.floor(60 * result);
-    formatToPlainStringResult = intl.formatToPlainString(util.t["/d0GmT"], obj);
+    const obj = { numMinutes: Math.floor(60 * result) };
+    const prop1 = intl4.t["/d0GmT"];
+    formatToPlainString3Result = formatToPlainString(prop1, obj);
   }
-  return formatToPlainStringResult;
+  return formatToPlainString3Result;
 };
 export const useIsReferralProgramEntrypointBadgeAcknowledged = function useIsReferralProgramEntrypointBadgeAcknowledged() {
-  return DismissibleContentUnsafeUtils.useIsDismissibleContentDismissed_UNSAFE(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
+  const obj = DismissibleContentUnsafeUtils;
+  return obj.useIsDismissibleContentDismissed_UNSAFE(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
 };
 export const markReferralProgramEntrypointBadgeAcknowledged = function markReferralProgramEntrypointBadgeAcknowledged() {
-  const result = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
+  const obj = DismissibleContentUnsafeUtils;
+  const result = obj.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
 };
 export const isReferralProgramBadgeAcknowledged = function isReferralProgramBadgeAcknowledged() {
-  return DismissibleContentUnsafeUtils.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
+  const obj = DismissibleContentUnsafeUtils;
+  return obj.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
 };
 export const markReferralProgramBadgeAcknowledged = function markReferralProgramBadgeAcknowledged() {
-  const result = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
+  const obj = DismissibleContentUnsafeUtils;
+  const result = obj.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
 };
 export const useIsReferralProgramBadgeShowable = function useIsReferralProgramBadgeShowable(trialOffer) {
   trialOffer = trialOffer.trialOffer;
@@ -62,8 +70,14 @@ export const useIsReferralProgramBadgeShowable = function useIsReferralProgramBa
   } else {
     let isReferralTrial = trialOffer.isReferralTrial;
     const _Date = Date;
-    const date = new Date(SnowflakeUtilsDefault.extractTimestamp(trialOffer.id));
+    const self = this;
+    const self2 = this;
+    const tmp = !trialOffer.isRedeemed;
+    const obj = SnowflakeUtilsDefault;
     const _Date2 = Date;
+    const self3 = this;
+    const self4 = this;
+    const date = new Date(obj.extractTimestamp(trialOffer.id));
     const date1 = new Date();
     if (isReferralTrial) {
       isReferralTrial = tmp;
@@ -77,29 +91,34 @@ export const useIsReferralProgramBadgeShowable = function useIsReferralProgramBa
 export const markReferralProgramPopoverSeen = function markReferralProgramPopoverSeen(promotionId) {
   if (null != promotionId) {
     const obj2 = { dismissAction: ContentDismissActionType.INDIRECT_ACTION };
-    const result = DismissibleContentUtils.markSnowflakeBoundDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, promotionId, obj2);
+    const obj = DismissibleContentUtils;
+    const result = obj.markSnowflakeBoundDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, promotionId, obj2);
   }
 };
 export const markReferralIncentivePopoverSeen = function markReferralIncentivePopoverSeen() {
-  const result = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_INCENTIVE_POPOVER);
+  const obj = DismissibleContentUnsafeUtils;
+  const result = obj.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_INCENTIVE_POPOVER);
 };
 export const useIsReferralProgramPopoverShowable = function useIsReferralProgramPopoverShowable() {
-  let isEligibleSenderForReferralProgram = stateFromStores1(7500).useIsEligibleSenderForReferralProgram(false);
+  let stateFromStores1;
   let obj = stateFromStores1(7500);
+  let isEligibleSenderForReferralProgram = obj.useIsEligibleSenderForReferralProgram(false);
   const items = [ReferralTrialStore];
-  const stateFromStores = stateFromStores1(504).useStateFromStores(items, () => ReferralTrialStore.getReferralsRemaining());
   const obj2 = stateFromStores1(504);
+  const stateFromStores = obj2.useStateFromStores(items, () => ReferralTrialStore.getReferralsRemaining());
   const items1 = [ReferralTrialStore];
-  stateFromStores1 = stateFromStores1(504).useStateFromStores(items1, () => ReferralTrialStore.getReminderStateId());
   const obj3 = stateFromStores1(504);
+  stateFromStores1 = obj3.useStateFromStores(items1, () => ReferralTrialStore.getReminderStateId());
   const items2 = [UserSettingsProtoStore];
   let tmp4 = null != stateFromStores1;
+  const obj4 = stateFromStores1(504);
   if (tmp4) {
     if (isEligibleSenderForReferralProgram) {
       isEligibleSenderForReferralProgram = !obj4.useStateFromStores(items2, () => {
         let isDismissed = null != stateFromStores1;
         if (isDismissed) {
-          isDismissed = DismissibleContentUnsafeUtils.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, tmp).isDismissed;
+          const obj = DismissibleContentUnsafeUtils;
+          isDismissed = obj.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, tmp).isDismissed;
         }
         return isDismissed;
       });

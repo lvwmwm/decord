@@ -4,128 +4,122 @@
 // Dependencies: [19, 17, 7302, 16459, 1074, 21, 4836, 576, 7339, 6421, 11841, 1613, 16688, 7288, 16682, 16683, 7351, 7352, 1365, 16684, 2]
 
 // Module 16687 (SearchNavigator)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import TrackingConstants from "TrackingConstants" /* 7302 */;
 import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 7352 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 16459 */;
 import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 16682 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import NativeStackView from "NativeStackView" /* 7339 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-let closure_5 = fn(7302).SearchEntrypointAnalyticsLocations;
-const SearchNavigatorScreens = fn(16459).SearchNavigatorScreens;
-const SearchTypes = fn(1074).SearchTypes;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST } };
+let navigation;
+
+let c9;
+let metroImportAll;
+let obj2;
+const View = react_native.View;
+let closure_5 = TrackingConstants.SearchEntrypointAnalyticsLocations;
+const SearchNavigatorScreens = SearchNavigatorConstants.SearchNavigatorScreens;
+const SearchTypes = Constants.SearchTypes;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let obj = { container: obj2 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_10 = createStyles.createStyles(obj);
-const NativeStackNavigator = fn(7339);
-let closure_11 = NativeStackNavigator.createNativeStackNavigator();
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigator.tsx");
-
-export default noop.memo((route) => {
+let closure_11 = NativeStackView.createNativeStackNavigator();
+const memoResult = react.memo((route) => {
+  let Navigator;
+  let items1;
+  let items2;
+  let obj3;
+  let obj4;
   const searchContext = route.route.params.searchContext;
-  const accessibilityNativeStackOptions = searchContext(6421).useAccessibilityNativeStackOptions();
+  let obj = searchContext(6421);
+  const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const items = [searchContext];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let DM_LIST;
+    const tmp = searchContext;
     if (searchContext.type === SearchTypes.GUILD) {
-      let DM_LIST = constants.GUILD;
+      DM_LIST = constants.GUILD;
     } else {
       DM_LIST = constants.DM_LIST;
     }
-    search_tracking_TrackingDefault.trackSearchOpened({ searchContext, searchLocation: DM_LIST });
+    let obj = search_tracking_TrackingDefault;
+    obj.trackSearchOpened({ searchContext: tmp, searchLocation: DM_LIST });
     return () => {
-      search_tracking_TrackingDefault.trackSearchClosed({ searchContext });
+      const obj = search_tracking_TrackingDefault;
+      const obj2 = { searchContext };
+      obj.trackSearchClosed(obj2);
     };
   }, items);
-  let obj = searchContext(6421);
+  const tmp3 = closure_10();
   const rect = useSafeAreaInsetsDefault();
-  const obj2 = { style: null, children: null };
-  const items1 = [closure_10().container, { paddingLeft: rect.left, paddingRight: rect.right }];
-  obj2.style = items1;
-  const obj3 = { id: "search-navigator", screenOptions: null, children: null };
+  let obj2 = { style: items1, children: closure_9(Navigator, obj3) };
+  items1 = [tmp3.container, { paddingLeft: rect.left, paddingRight: rect.right }];
+  Navigator = closure_11.Navigator;
+  obj3 = { id: "search-navigator", screenOptions: obj4, children: items2 };
+  obj4 = {};
   const merged = Object.assign(accessibilityNativeStackOptions);
-  obj3.screenOptions = {};
-  const items2 = [
-    closure_8(closure_11.Screen, {
-      initialParams: { searchContext },
-      name: SearchNavigatorScreens.SEARCH_TABS,
-      options: { headerShown: false, fullScreenGestureEnabled: true },
-      getComponent() {
-        return searchContext(16688).default;
-      }
-    }),
-    closure_8(closure_11.Screen, {
-      name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
-      options(route) {
-        route = route.route;
-        const obj = {
-          headerShown: true,
-          header: route(7288).renderHeader,
-          headerLeft: route(7288).getRenderBackImage(route.navigation),
-          headerTitle() {
-            return closure_2_8(SearchNavigatorPreviewHeaderDefault, { channelId: route.params.channelId });
-          },
-          fullScreenGestureEnabled: true
-        };
-        return obj;
-      },
-      getComponent() {
-        return searchContext(16683).default;
-      }
-    }),
-
-  ];
-  const obj4 = {};
+  items2 = [, , ];
   const obj5 = {
     initialParams: { searchContext },
     name: SearchNavigatorScreens.SEARCH_TABS,
     options: { headerShown: false, fullScreenGestureEnabled: true },
     getComponent() {
-      return searchContext(16688).default;
+      return searchContext(dependencyMap[12]).default;
     }
   };
+  items2[0] = closure_8(closure_11.Screen, obj5);
   const obj6 = {
     name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
     options(route) {
+      let obj2;
       route = route.route;
-      const obj = {
+      let obj = {
         headerShown: true,
-        header: route(7288).renderHeader,
-        headerLeft: route(7288).getRenderBackImage(route.navigation),
+        header: route(closure_2[13]).renderHeader,
+        headerLeft: obj2.getRenderBackImage(navigation),
         headerTitle() {
-          return closure_2_8(SearchNavigatorPreviewHeaderDefault, { channelId: route.params.channelId });
+          const obj = { channelId: route.params.channelId };
+          return closure_2_8(SearchNavigatorPreviewHeaderDefault, obj);
         },
         fullScreenGestureEnabled: true
       };
+      navigation = route.navigation;
+      obj2 = route(closure_2[13]);
       return obj;
     },
     getComponent() {
-      return searchContext(16683).default;
+      return searchContext(dependencyMap[15]).default;
     }
   };
-  const tmp3 = closure_10();
-  items2[2] = closure_8(closure_11.Screen, {
+  items2[1] = closure_8(closure_11.Screen, obj6);
+  const obj7 = {
     name: searchContext(7351).ConversationNavigatorScreens.FOCUS,
     options(arg0) {
+      let route;
       ({ route, navigation } = arg0);
-      const obj = ConversationNavigatorHeader;
-      let shouldHandleSafeArea = utils_PlatformUtils.isAndroid();
-      if (!shouldHandleSafeArea) {
-        shouldHandleSafeArea = searchContext.type === SearchTypes.GUILD;
-      }
-      return obj.conversationNavigatorFocusHeaderOptions(route, navigation, { shouldHandleSafeArea });
+      const conversationNavigatorFocusHeaderOptions = ConversationNavigatorHeader.conversationNavigatorFocusHeaderOptions;
+      ConversationNavigatorHeader;
+      const obj = utils_PlatformUtils;
+      const shouldHandleSafeArea = obj.isAndroid() || searchContext.type === SearchTypes.GUILD;
+      return conversationNavigatorFocusHeaderOptions(route, navigation, { shouldHandleSafeArea });
     },
     getComponent() {
-      return searchContext(16684).default;
+      return searchContext(dependencyMap[19]).default;
     }
-  });
-  obj3.children = items2;
-  obj2.children = closure_9(closure_11.Navigator, obj3);
+  };
+  items2[2] = closure_8(closure_11.Screen, obj7);
   return closure_8(View, obj2);
 });
+const result = size.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigator.tsx");
+
+export default memoResult;

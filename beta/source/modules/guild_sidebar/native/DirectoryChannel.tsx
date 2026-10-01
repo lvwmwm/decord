@@ -4,29 +4,35 @@
 // Dependencies: [19, 2045, 4467, 9577, 5018, 21, 4836, 576, 563, 1101, 10374, 15748, 9060, 2]
 
 // Module 15841 (DirectoryChannel)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
+import ReadStateConstants from "ReadStateConstants" /* 5018 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 9577 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10374 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const UnreadSetting = fn(5018).UnreadSetting;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { container: { marginVertical: fn(9577).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
+let guildId;
+
+let obj2;
+const CHANNEL_MARGIN_VERTICAL = RedesignChannelListConstants.CHANNEL_MARGIN_VERTICAL;
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 let closure_8 = createStyles.createStyles(obj);
-let obj3 = { marginVertical: fn(9577).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/guild_sidebar/native/DirectoryChannel.tsx");
-
-export default noop.memo((guildId) => {
+const memoResult = react.memo((guildId) => {
   guildId = guildId.guildId;
   let selected = guildId.selected;
+  const selectedChannelId = guildId.selectedChannelId;
   const tmp = closure_8();
+  let obj = guildId(563);
   const items = [ChannelStore, GuildChannelStore];
-  const stateFromStores = guildId(563).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const directoryChannelIds = GuildChannelStore.getDirectoryChannelIds(guildId);
     let channel = null;
     if (0 !== directoryChannelIds.length) {
@@ -39,25 +45,23 @@ export default noop.memo((guildId) => {
     id = stateFromStores.id;
   }
   if (!selected) {
-    selected = id === guildId.selectedChannelId;
+    selected = id === selectedChannelId;
   }
   const items1 = [guildId, id];
   [][0] = id;
-  const callback = noop.useCallback(() => {
-    router_utils.transitionToGuild(guildId, id);
+  const callback = react.useCallback(() => {
+    const obj = router_utils;
+    obj.transitionToGuild(guildId, id);
   }, items1);
   let tmp7 = null;
   if (null != stateFromStores) {
-    const obj2 = { onPress: callback, onLongPress: tmp6, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null };
     const obj3 = { channel: stateFromStores };
-    obj2.accessibilityLabel = id(9060)(obj3);
+    id(15748);
     const obj4 = { selected };
-    obj2.accessibilityState = obj4;
-    obj2.channel = stateFromStores;
-    obj2.selected = selected;
-    obj2.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-    tmp7 = jsx(id(15748), { onPress: callback, onLongPress: tmp6, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
-    const tmp10 = id(15748);
+    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(9060)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
   }
   return tmp7;
 });
+let result = size.fileFinishedImporting("modules/guild_sidebar/native/DirectoryChannel.tsx");
+
+export default memoResult;

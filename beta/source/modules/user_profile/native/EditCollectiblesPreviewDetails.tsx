@@ -5,31 +5,59 @@
 // Exports: default
 
 // Module 12747 (EditCollectiblesPreviewDetails)
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl6 from "intl" /* 1115 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
+import DateUtils from "DateUtils" /* 4512 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 7618 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
 function EditCollectiblesPreviewDescription(arg0) {
+  let Io7ozn;
+  let eZSTa5;
+  let expiresAt;
+  let format;
+  let format3;
+  let intl4;
+  let intl5;
+  let locale;
+  let nitroJoinCTA;
+  let nitroUpgradeCTA;
+  let obj5;
+  let obj7;
+  let obj9;
+  let product;
+  let purchase;
+  let str;
+  let tmp23;
+  let user;
   ({ user, purchase } = arg0);
-  let stringResult = dependencyMap;
   ({ product, nitroJoinCTA, nitroUpgradeCTA } = arg0);
   const items = [LocaleStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => locale.locale);
-  const canUseCollectiblesResult = PremiumUtilsDefault.canUseCollectibles(user);
-  let result = CollectiblesUtils.isPremiumCollectiblesProduct(product);
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
+  const obj2 = PremiumUtilsDefault;
+  const canUseCollectiblesResult = obj2.canUseCollectibles(user);
+  const obj3 = CollectiblesUtils;
+  let result = obj3.isPremiumCollectiblesProduct(product);
   if (!result) {
-    result = tmp(6974).isPremiumCollectiblesPurchase(purchase);
-    const tmpResult = tmp(6974);
+    const tmpResult = CollectiblesUtils;
+    result = tmpResult.isPremiumCollectiblesPurchase(purchase);
   }
   let result1 = !canUseCollectiblesResult;
-  if (!canUseCollectiblesResult) {
-    result1 = tmp(6974).isPremiumCollectiblesPurchase(purchase);
-    const tmpResult3 = tmp(6974);
+  if (result1) {
+    const tmpResult3 = CollectiblesUtils;
+    result1 = tmpResult3.isPremiumCollectiblesPurchase(purchase);
   }
   if (null != purchase) {
     if (!result1) {
@@ -40,94 +68,113 @@ function EditCollectiblesPreviewDescription(arg0) {
       let diffAsUnitsResult = null;
       if (null != expiresAt1) {
         const _Date = Date;
+        const self = this;
+        const self2 = this;
+        const diffAsUnits = DateUtils.diffAsUnits;
+        DateUtils;
         const date = new Date();
-        diffAsUnitsResult = tmp(4512).diffAsUnits(date, purchase.expiresAt);
-        const tmpResult4 = tmp(4512);
+        diffAsUnitsResult = diffAsUnits(date, purchase.expiresAt);
       }
-      let tmp17 = null != diffAsUnitsResult;
-      if (tmp17) {
-        const obj4 = { variant: "text-sm/medium", color: "text-default", children: null };
+      let tmp16 = null != diffAsUnitsResult;
+      const tmp14 = metroImportDefault;
+      const tmp15 = metroRequire;
+      if (tmp16) {
+        const obj4 = { variant: "text-sm/medium", color: "text-default", children: format(Io7ozn, obj5) };
+        const Text = tmp(4832).Text;
         const intl = tmp(1115).intl;
-        const obj5 = { days: diffAsUnitsResult.days.toString() };
-        obj4.children = intl.format(tmp(1115).t.Io7ozn, obj5);
-        tmp17 = hasOwnProperty(tmp(4832).Text, obj4);
+        format = intl.format;
+        obj5 = { days: str.toString() };
+        str = diffAsUnitsResult.days;
+        Io7ozn = tmp(1115).t.Io7ozn;
+        tmp16 = hasOwnProperty(Text, obj4);
       }
-      const items1 = [tmp17, , ];
+      const items1 = [tmp16, , ];
+      const Text2 = tmp(4832).Text;
       const intl2 = tmp(1115).intl;
+      const format2 = intl2.format;
       let toLocaleDateStringResult;
+      const gW9R4B = tmp(1115).t.gW9R4B;
       if (purchase != null) {
         const purchasedAt = purchase.purchasedAt;
         toLocaleDateStringResult = purchasedAt.toLocaleDateString(stateFromStores, { month: "long", year: "numeric" });
       }
-      const obj6 = { variant: "text-sm/medium", color: "text-default", children: null };
-      const obj7 = { date: toLocaleDateStringResult };
-      obj6.children = intl2.format(tmp(1115).t.gW9R4B, obj7);
-      items1[1] = hasOwnProperty(tmp(4832).Text, obj6);
+      const obj6 = { variant: "text-sm/medium", color: "text-default", children: format2(gW9R4B, obj7) };
+      obj7 = { date: toLocaleDateStringResult };
+      items1[1] = hasOwnProperty(Text2, obj6);
       let expiresAt2;
       if (purchase != null) {
         expiresAt2 = purchase.expiresAt;
       }
-      let tmp19Result = null != expiresAt2;
-      if (tmp19Result) {
-        const obj8 = { variant: "text-sm/medium", color: "text-default", children: null };
+      let tmp18Result = null != expiresAt2;
+      if (tmp18Result) {
+        const obj8 = { variant: "text-sm/medium", color: "text-default", children: format3(eZSTa5, obj9) };
+        const Text3 = tmp(4832).Text;
         const intl3 = tmp(1115).intl;
-        const obj9 = { date: null };
-        const expiresAt = purchase.expiresAt;
-        obj9.date = expiresAt.toLocaleDateString(stateFromStores, { minute: "numeric", hour: "numeric", day: "numeric", month: "long", year: "numeric" });
-        obj8.children = intl3.format(tmp(1115).t.eZSTa5, obj9);
-        tmp19Result = tmp19(tmp(4832).Text, obj8);
+        format3 = intl3.format;
+        obj9 = { date: expiresAt.toLocaleDateString(stateFromStores, { minute: "numeric", hour: "numeric", day: "numeric", month: "long", year: "numeric" }) };
+        expiresAt = purchase.expiresAt;
+        eZSTa5 = tmp(1115).t.eZSTa5;
+        tmp18Result = tmp18(Text3, obj8);
       }
-      const obj10 = { children: null };
-      items1[2] = tmp19Result;
-      obj10.children = items1;
-      return React5(timestampProducer, obj10);
+      const obj10 = { children: items1 };
+      items1[2] = tmp18Result;
+      return tmp14(tmp15, obj10);
     }
   }
   if (result) {
+    let tmp25Result;
     if (canUseCollectiblesResult) {
-      const obj11 = { variant: "text-sm/medium", color: "text-default", children: null };
-      const intl5 = tmp(1115).intl;
-      stringResult = intl5.string(tmp(1115).t.hmyYK8);
-      obj11.children = stringResult;
-      let tmp25Result = hasOwnProperty(tmp(4832).Text, obj11);
+      const obj11 = { variant: "text-sm/medium", color: "text-default", children: intl5.string(intl6.t.hmyYK8) };
+      const Text6 = tmp(4832).Text;
+      intl5 = tmp(1115).intl;
+      tmp25Result = hasOwnProperty(Text6, obj11);
     } else {
       const tmp4Result = PremiumUtilsDefault;
-      const Text = tmp(4832).Text;
+      const isPremiumResult = tmp4Result.isPremium(user);
+      const Text5 = tmp(4832).Text;
       const obj12 = { variant: "text-sm/medium", color: "text-default", children: null };
       if (isPremiumResult) {
         obj12.children = nitroUpgradeCTA;
-        tmp25Result = tmp25(Text, obj12);
+        tmp25Result = tmp25(Text5, obj12);
       } else {
         obj12.children = nitroJoinCTA;
-        tmp25Result = tmp25(Text, obj12);
+        tmp25Result = tmp25(Text5, obj12);
       }
-      isPremiumResult = PremiumUtilsDefault.isPremium(user);
     }
+    tmp23 = tmp25Result;
   } else {
-    const obj13 = { variant: "text-sm/medium", color: "text-default", children: null };
-    const intl4 = tmp(1115).intl;
-    obj13.children = intl4.string(tmp(1115).t.fEGjVQ);
-    return hasOwnProperty(tmp(4832).Text, obj13);
+    const obj13 = { variant: "text-sm/medium", color: "text-default", children: intl4.string(intl6.t.fEGjVQ) };
+    const Text4 = tmp(4832).Text;
+    intl4 = tmp(1115).intl;
+    tmp23 = hasOwnProperty(Text4, obj13);
   }
+  return tmp23;
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const View = react_native.View;
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ productDetailsContainer: { width: "100%", marginTop: 16, alignItems: "center", gap: 2 } });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/EditCollectiblesPreviewDetails.tsx");
 
 export default function EditCollectiblesPreviewDetails(previewSkuId) {
+  let items;
+  let nitroJoinCTA;
+  let nitroUpgradeCTA;
+  let product;
+  let purchase;
+  let user;
   previewSkuId = previewSkuId.previewSkuId;
   ({ user, nitroJoinCTA, nitroUpgradeCTA } = previewSkuId);
   const tmp = closure_8();
   ({ product, purchase } = useCollectiblesDataDefault(previewSkuId));
   let tmp5Result = null;
+  useCollectiblesDataDefault(previewSkuId);
   if (null != previewSkuId) {
     if (null != product) {
-      const obj = { style: tmp.productDetailsContainer, children: null };
       let name;
+      const obj = { style: tmp.productDetailsContainer, children: items };
+      const Text = Text_Text.Text;
+      const tmp5 = metroImportDefault;
+      const tmp6 = View;
       if (product != null) {
         name = product.name;
       }
@@ -139,11 +186,10 @@ export default function EditCollectiblesPreviewDetails(previewSkuId) {
         name = name1;
       }
       const obj2 = { variant: "text-md/bold", color: "text-default", children: name };
-      const items = [hasOwnProperty(Text_Text.Text, obj2), ];
+      items = [hasOwnProperty(Text, obj2), ];
       const obj3 = { user, product, purchase, nitroJoinCTA, nitroUpgradeCTA };
       items[1] = hasOwnProperty(EditCollectiblesPreviewDescription, obj3);
-      obj.children = items;
-      tmp5Result = React5(View, obj);
+      tmp5Result = tmp5(tmp6, obj);
     } else {
       tmp5Result = null;
     }

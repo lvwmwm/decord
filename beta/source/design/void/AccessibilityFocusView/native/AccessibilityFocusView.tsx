@@ -5,19 +5,20 @@
 // Exports: default
 
 // Module 13658 (AccessibilityFocusView)
+import Fragment from "Fragment" /* 21 */;
 import AccessibilityFocusNativeComponentDefault from "AccessibilityFocusNativeComponent" /* 13659 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/void/AccessibilityFocusView/native/AccessibilityFocusView.tsx");
 
 export default function AccessibilityFocusView(arg0) {
+  let onAccessibilityBlur;
+  let onAccessibilityFocus;
   ({ onAccessibilityFocus, onAccessibilityBlur } = arg0);
   const merged = Object.assign(arg0, Object.assign({ onAccessibilityFocus: 0, onAccessibilityBlur: 0 }));
-  const obj = {};
+  AccessibilityFocusNativeComponentDefault;
   const merged1 = Object.assign(merged);
-  obj.onAccessibilityFocus = onAccessibilityFocus;
-  obj.onAccessibilityBlur = onAccessibilityBlur;
-  return jsx(AccessibilityFocusNativeComponentDefault, {});
+  return <tmp2 onAccessibilityFocus={onAccessibilityFocus} onAccessibilityBlur={onAccessibilityBlur} />;
 };

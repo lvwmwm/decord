@@ -6,37 +6,47 @@
 
 // Module 10164 (useGiftOptionsSyncDebounce)
 import _modDef12 from "module_12" /* 12 */;
-import useInitialValueDefault from "useInitialValue" /* 5910 */;
-import noop from "module_19" /* 19 */;
+import reactDefault from "react" /* 5910 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
+let dependencyMap, importDefault;
+
+let react = react_mod;
 const result = size.fileFinishedImporting("modules/payments/native/hooks/useGiftOptionsSyncDebounce.tsx");
 
 export default function useGiftOptionsSyncDebounce(arg0) {
+  let closure_0;
+  let closure_1;
+  let ref;
   importDefault = arg0;
-  dependencyMap = noop.useRef(null);
-  noop = noop.useRef(null);
-  noop.useRef([]);
-  const tmp = useInitialValueDefault(() => _modDef12.debounce(() => {
-    closure_1_2.current = ref.current;
-    closure_1_0((arg0) => arg0 + 1);
-  }, 500));
-  closure_4 = tmp;
-  const resolveSyncs = noop.useCallback((arg0) => {
-    closure_3.current = [];
-    for (const item10008 of tmp) {
+  dependencyMap = react.useRef(null);
+  react = react.useRef(null);
+  const ref2 = react.useRef([]);
+  const tmp = reactDefault(() => {
+    const obj = _modDef12;
+    return obj.debounce(() => {
+      closure_1_2.current = ref.current;
+      closure_1_0((arg0) => arg0 + 1);
+    }, 500);
+  });
+  let closure_4 = tmp;
+  const resolveSyncs = react.useCallback((arg0) => {
+    const current = ref2.current;
+    ref2.current = [];
+    for (const item10008 of current) {
       let item10008Result = item10008(arg0);
       continue;
     }
   }, []);
   const items = [tmp, resolveSyncs];
-  const effect = noop.useEffect(() => () => {
+  const effect = react.useEffect(() => () => {
     closure_1_4.cancel();
     resolveSyncs(false);
   }, items);
   const items1 = [tmp];
   const items2 = [tmp];
-  const callback1 = noop.useCallback((current) => {
+  const callback1 = react.useCallback((current) => {
     closure_1.current = current;
     let flag = ref.current !== current;
     if (flag) {
@@ -45,13 +55,17 @@ export default function useGiftOptionsSyncDebounce(arg0) {
     }
     return flag;
   }, items1);
-  const callback2 = noop.useCallback((current) => {
+  const callback2 = react.useCallback((current) => {
     closure_4.cancel();
-    closure_2.current = current;
+    ref.current = current;
   }, items2);
-  const callback3 = noop.useCallback(() => new Promise((arg0) => {
-    const current = ref.current;
-    return current.push(arg0);
-  }), []);
-  return { waitForPause: callback1, flush: callback2, waitForSync: callback3, resolveSyncs, isAwaitingSync: noop.useCallback(() => ref2.current.length > 0, []) };
+  const callback3 = react.useCallback(() => {
+    const promise = new Promise((arg0) => {
+      const current = ref.current;
+      return current.push(arg0);
+    });
+    return promise;
+  }, []);
+  let obj = { waitForPause: callback1, flush: callback2, waitForSync: callback3, resolveSyncs, isAwaitingSync: react.useCallback(() => ref2.current.length > 0, []) };
+  return obj;
 };

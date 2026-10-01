@@ -3,7 +3,7 @@
 // Dependencies: [13860]
 
 // Module 13872
-import replaceByteInByteSequence from "replaceByteInByteSequence" /* 13860 */;
+import _mod13860 from "module_13860" /* 13860 */;
 
 
-export const URLSearchParams = replaceByteInByteSequence.URLSearchParams;
+export const URLSearchParams = _mod13860.URLSearchParams;

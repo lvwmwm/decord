@@ -5,53 +5,71 @@
 // Exports: default
 
 // Module 15838 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
-import ActionSheet from "ActionSheet" /* 6618 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6570 */;
+import ActionSheet2 from "ActionSheet" /* 6618 */;
 import Form from "Form" /* 8053 */;
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10418 */;
-import _modDef12295 from "module_12295" /* 12295 */;
-import _modDef15731 from "module_15731" /* 15731 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12295 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15731 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const StaticChannelRoute = fn(2052).StaticChannelRoute;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { headerIcon: null };
-let size = { marginRight: 16, tintColor: nativeDefault.colors.CHANNEL_ICON, width: 20, height: 20 };
-obj2.headerIcon = size;
-let closure_7 = createStyles.createStyles(obj2);
-size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+let size;
+const View = react_native.View;
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { headerIcon: size };
+size = { marginRight: 16, tintColor: nativeDefault.colors.CHANNEL_ICON, width: 20, height: 20 };
+let closure_7 = createStyles.createStyles(obj);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_sidebar/GuildRoleSubscriptionsChannelLongPressActionSheet.tsx");
 
 export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) {
+  let FormLabel;
+  let Icon;
+  let Icon2;
+  let intl;
+  let intl2;
+  let items;
+  let obj3;
+  let obj4;
+  let obj6;
+  let obj7;
   ({ guildId: require, onClose: importDefault } = arg0);
-  const obj = { children: null };
-  const obj2 = { leading: null, title: null };
-  const obj3 = { style: closure_7().headerIcon, children: null };
+  let obj = { children: items };
   const tmp = closure_7();
-  obj3.children = closure_5(native.Icon, { disableColor: true, source: _modDef12295 });
-  obj2.leading = closure_5(View, obj3);
-  const intl = util.intl;
-  obj2.title = intl.string(util.t["KzCF/6"]);
-  const items = [closure_5(BottomSheetTitleHeader.BottomSheetTitleHeader, obj2), ];
-  const obj5 = { leading: null, label: null, onPress: null };
-  const obj4 = { disableColor: true, source: _modDef12295 };
-  obj5.leading = closure_5(native.Icon, { source: _modDef15731 });
-  const obj7 = { text: null };
-  const intl2 = util.intl;
-  obj7.text = intl2.string(util.t.WqhZss);
-  obj5.label = closure_5(Form.FormLabel, obj7);
-  obj5.onPress = function onPress() {
-    importDefault();
-    const result = ChannelActionSheetUtils.copyGuildChannelOrThreadLink(closure_1_0, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
+  const ActionSheet = ActionSheet2.ActionSheet;
+  const obj2 = { leading: closure_5(View, obj3), title: intl.string(intl3.t["KzCF/6"]) };
+  obj3 = { style: tmp.headerIcon, children: closure_5(Icon, obj4) };
+  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  obj4 = { disableColor: true, source: AssetRegistryDefault };
+  Icon = native.Icon;
+  intl = intl3.intl;
+  items = [closure_5(BottomSheetTitleHeader, obj2), ];
+  const obj5 = {
+    leading: closure_5(Icon2, obj6),
+    label: closure_5(FormLabel, obj7),
+    onPress() {
+      importDefault();
+      const obj = ChannelActionSheetUtils;
+      const result = obj.copyGuildChannelOrThreadLink(require, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
+    }
   };
-  items[1] = closure_5(Form.FormRow, obj5);
-  obj.children = items;
-  return closure_6(ActionSheet.ActionSheet, obj);
+  const FormRow = Form.FormRow;
+  obj6 = { source: AssetRegistryDefault2 };
+  Icon2 = native.Icon;
+  obj7 = { text: intl2.string(intl3.t.WqhZss) };
+  FormLabel = Form.FormLabel;
+  intl2 = intl3.intl;
+  items[1] = closure_5(FormRow, obj5);
+  return closure_6(ActionSheet, obj);
 };

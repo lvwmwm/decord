@@ -6,19 +6,34 @@
 
 // Module 9178 (SecureFramesCode)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
 function SecureFramesCodeGrid(chunks) {
+  let row;
   chunks = chunks.chunks;
   const columns = chunks.columns;
-  noop = closure_8();
+  react = closure_8();
   let items = [chunks, columns];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
+    let num;
     const items = [];
     const rounded = Math.ceil(chunks.length / columns);
     for (let num = 0; num < rounded; num = num + 1) {
+      let num2;
       let items1 = [];
       for (let num2 = 0; num2 < columns; num2 = num2 + 1) {
         let arr = items1.push(chunks[num * columns + num2]);
@@ -27,53 +42,68 @@ function SecureFramesCodeGrid(chunks) {
     }
     return items;
   }, items);
-  return closure_5(closure_7, {
+  let obj = {
     children: memo.map((join, index) => {
-      const children = [hasOwnProperty(React4, { style: row.row, children: join.map((children, index) => closure_2_5(chunks(columns[6]).Text, { style: codeText.codeText, variant: "text-md/normal", color: "text-default", children }, "" + children + "-" + index)) }), ];
+      let codeText;
+      let obj = {
+        style: row.row,
+        children: join.map((children, index) => {
+          const obj = { style: codeText.codeText, variant: "text-md/normal", color: "text-default", children };
+          return closure_2_5(chunks(columns[6]).Text, obj, "" + children + "-" + index);
+        })
+      };
+      const children = [hasOwnProperty(React3, obj), ];
       let tmp3Result = index < memo.length - 1;
+      const tmp = metroRequire;
+      const tmp3 = hasOwnProperty;
+      const tmp4 = row;
       if (tmp3Result) {
-        const obj2 = { style: row.divider };
-        tmp3Result = hasOwnProperty(tmp2, obj2);
+        const obj2 = { style: tmp4.divider };
+        tmp3Result = tmp3(tmp2, obj2);
       }
       children[1] = tmp3Result;
-      return timestampProducer(React4, { children }, "" + join.join(" ") + "-" + index);
+      return tmp(React3, { children }, "" + join.join(" ") + "-" + index);
     })
-  });
+  };
+  return closure_5(closure_7, obj);
 }
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: c3, View: closure_4 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { codeText: { fontFamily: fn(1085).Fonts.CODE_NORMAL }, row: { flexDirection: "row", justifyContent: "space-around", paddingVertical: 8 }, divider: { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE }, codeHeader: null, code: null, loading: null };
-let obj3 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-obj2.codeHeader = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderTopRightRadius: nativeDefault.radii.lg, borderTopLeftRadius: nativeDefault.radii.lg, paddingVertical: 10, paddingHorizontal: 16, justifyContent: "space-between", alignItems: "center", flexDirection: "row" };
-let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderTopRightRadius: nativeDefault.radii.lg, borderTopLeftRadius: nativeDefault.radii.lg, paddingVertical: 10, paddingHorizontal: 16, justifyContent: "space-between", alignItems: "center", flexDirection: "row" };
-obj2.code = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, paddingVertical: 8, paddingHorizontal: 16, borderBottomRightRadius: nativeDefault.radii.lg, borderBottomLeftRadius: nativeDefault.radii.lg };
-obj2.loading = { minHeight: 126 };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let react = react_mod;
+({ ActivityIndicator: c3, View: closure_4 } = react_native);
+const Fonts = Constants.Fonts;
+({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { codeText: { fontFamily: Fonts.CODE_NORMAL }, row: { flexDirection: "row", justifyContent: "space-around", paddingVertical: 8 }, divider: obj2, codeHeader: obj3, code: obj4, loading: { minHeight: 126 } };
+obj2 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderTopRightRadius: nativeDefault.radii.lg, borderTopLeftRadius: nativeDefault.radii.lg, paddingVertical: 10, paddingHorizontal: 16, justifyContent: "space-between", alignItems: "center", flexDirection: "row" };
+obj4 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, paddingVertical: 8, paddingHorizontal: 16, borderBottomRightRadius: nativeDefault.radii.lg, borderBottomLeftRadius: nativeDefault.radii.lg };
+let closure_8 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/rtc/native/SecureFramesCode.tsx");
 
 export default function SecureFramesCode(chunks) {
+  let columns;
+  let items;
+  let title;
+  let tmp5Result;
+  let trailing;
   chunks = chunks.chunks;
   ({ title, trailing, columns } = chunks);
   const tmp = closure_8();
-  const obj = { style: tmp.codeHeader, children: null };
-  const items = [hasOwnProperty(Text_Text.Text, { color: "mobile-text-heading-primary", variant: "heading-md/semibold", children: title }), trailing];
-  obj.children = items;
-  const items1 = [timestampProducer(React4, obj), ];
-  const obj2 = { style: tmp.code, children: null };
+  const obj = { style: tmp.codeHeader, children: items };
+  items = [hasOwnProperty(Text_Text.Text, { color: "mobile-text-heading-primary", variant: "heading-md/semibold", children: title }), trailing];
+  const items1 = [metroRequire(React3, obj), ];
+  const obj2 = { style: tmp.code, children: tmp5Result };
+  const tmp2 = metroRequire;
+  const tmp3 = metroImportDefault;
+  const tmp4 = React3;
   if (null != chunks) {
     const obj3 = { chunks, columns };
-    let tmp5Result = tmp5(SecureFramesCodeGrid, obj3);
+    tmp5Result = tmp5(SecureFramesCodeGrid, obj3);
   } else {
     const obj4 = { style: tmp.loading };
-    tmp5Result = tmp5(React3, obj4);
+    tmp5Result = tmp5(_false, obj4);
   }
-  const obj5 = { children: null };
-  obj2.children = tmp5Result;
-  items1[1] = hasOwnProperty(React4, obj2);
-  obj5.children = items1;
-  return timestampProducer(React5, obj5);
+  const obj5 = { children: items1 };
+  items1[1] = hasOwnProperty(tmp4, obj2);
+  return tmp2(tmp3, obj5);
 };

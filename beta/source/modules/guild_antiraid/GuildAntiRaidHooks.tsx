@@ -9,6 +9,7 @@ import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
 import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 7458 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 7459 */;
 import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 9558 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -16,39 +17,46 @@ import PermissionStore from "PermissionStore" /* 4469 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import UserStore from "UserStore" /* 1372 */;
 import GuildIncidentsStore from "GuildIncidentsStore" /* 9540 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
+let closure_12;
+let unpackModuleId;
 function getFirstGuildIncidentId(guildId) {
+  let guild;
   const currentUser = UserStore.getCurrentUser();
   const incidentsByGuild = GuildIncidentsStore.getIncidentsByGuild();
-  const keys = SnowflakeUtilsDefault.keys(incidentsByGuild);
+  const obj = SnowflakeUtilsDefault;
+  const keys = obj.keys(incidentsByGuild);
   const mapped = keys.map((item) => guild.getGuild(item));
   const iter = mapped[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp5 = nextResult;
     if (null != nextResult) {
-      let tmp17 = incidentsByGuild[tmp5.id];
-      let tmp18 = tmp17;
-      if (null != tmp17) {
-        let tmp19 = require;
-        let obj7 = GuildAntiRaidUtils;
-        if (obj7.hasDetectedActivity(tmp18)) {
-          let tmp19Result = tmp19(7458);
-          if (!tmp19Result.isUnderLockdown(tmp18)) {
-            let obj4 = BigFlagUtilsAll;
-            let obj5 = PermissionUtilsAll;
-            let obj2 = { user: currentUser, context: null, checkElevated: false };
-            obj2.context = tmp5;
-            if (obj4.hasAny(obj5.computePermissions(obj2), closure_10)) {
+      let tmp18 = incidentsByGuild[tmp5.id];
+      let tmp19 = tmp18;
+      if (null != tmp18) {
+        let tmp20 = require;
+        let obj6 = GuildAntiRaidUtils;
+        if (obj6.hasDetectedActivity(tmp19)) {
+          let tmp20Result = tmp20(7458);
+          if (!tmp20Result.isUnderLockdown(tmp19)) {
+            let tmp13 = BigFlagUtilsAll;
+            let hasAny = tmp13.hasAny;
+            let obj4 = PermissionUtilsAll;
+            let obj2 = { user: currentUser, context: tmp5, checkElevated: false };
+            if (hasAny(obj4.computePermissions(obj2), closure_10)) {
+              let id = nextResult.id;
               iter.return();
-              return nextResult.id;
+              return id;
             }
           }
         } else {
-          let tmp19Result2 = tmp19(7458);
+          let tmp20Result2 = tmp20(7458);
         }
       }
     }
@@ -56,22 +64,26 @@ function getFirstGuildIncidentId(guildId) {
   }
   return null;
 }
-let closure_10 = fn(7459).IncidentAlertModeratorPermissions;
-const Constants = fn(1074);
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_11, GuildFeatures: closure_12 } = Constants);
-const size = fn(2);
+let closure_10 = GuildAntiRaidConstants.IncidentAlertModeratorPermissions;
+({ EMPTY_STRING_SNOWFLAKE_ID: unpackModuleId, GuildFeatures: closure_12 } = Constants);
 const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidHooks.tsx");
 
 export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
+  let currentUser;
+  let incidentsByGuild;
+  let stateFromStores1;
+  let obj = stateFromStores1(563);
   const items = [UserStore];
-  const stateFromStores = stateFromStores1(563).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = stateFromStores1(563);
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [GuildIncidentsStore];
-  stateFromStores1 = stateFromStores1(563).useStateFromStores(items1, () => incidentsByGuild.getIncidentsByGuild());
   const obj2 = stateFromStores1(563);
+  stateFromStores1 = obj2.useStateFromStores(items1, () => incidentsByGuild.getIncidentsByGuild());
   const items2 = [GuildStore];
-  const stateFromStoresArray = stateFromStores1(563).useStateFromStoresArray(items2, () => {
-    const keys = SnowflakeUtilsDefault.keys(stateFromStores1);
+  const obj3 = stateFromStores1(563);
+  const stateFromStoresArray = obj3.useStateFromStoresArray(items2, () => {
+    let guild;
+    const obj = SnowflakeUtilsDefault;
+    const keys = obj.keys(stateFromStores1);
     return keys.map((item) => guild.getGuild(item));
   });
   const iter = stateFromStoresArray[Symbol.iterator]();
@@ -79,22 +91,23 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
   while (iter !== undefined) {
     let tmp5 = nextResult;
     if (null != nextResult) {
-      let tmp15 = stateFromStores1[tmp5.id];
-      let tmp16 = tmp15;
-      if (null != tmp15) {
-        let tmp18 = stateFromStores1;
-        let obj8 = stateFromStores1(7458);
-        if (obj8.hasDetectedActivity(tmp16)) {
-          let obj5 = BigFlagUtilsAll;
-          let obj6 = PermissionUtilsAll;
-          let obj4 = { user: stateFromStores, context: null, checkElevated: false };
-          obj4.context = tmp5;
-          if (obj5.hasAny(obj6.computePermissions(obj4), closure_10)) {
+      let tmp16 = stateFromStores1[tmp5.id];
+      let tmp17 = tmp16;
+      if (null != tmp16) {
+        let tmp19 = stateFromStores1;
+        let obj7 = stateFromStores1(7458);
+        if (obj7.hasDetectedActivity(tmp17)) {
+          let tmp11 = BigFlagUtilsAll;
+          let hasAny = tmp11.hasAny;
+          let obj5 = PermissionUtilsAll;
+          let obj4 = { user: stateFromStores, context: tmp5, checkElevated: false };
+          if (hasAny(obj5.computePermissions(obj4), closure_10)) {
+            let id = nextResult.id;
             iter.return();
-            return nextResult.id;
+            return id;
           }
         } else {
-          let tmp18Result = tmp18(7458);
+          let tmp19Result = tmp19(7458);
         }
       }
     }
@@ -103,38 +116,40 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
   return null;
 };
 export const useGuildIncidentsState = function useGuildIncidentsState(id) {
+  let isUnderLockdownResult;
   _require = id;
+  const tmp = _require;
+  let obj = require("useStateFromStores");
   const items = [GuildStore, PermissionStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(id);
     if (null == guild) {
       return false;
     } else {
       const guildPermissions = PermissionStore.getGuildPermissions(guild);
       let hasAnyResult = null != guildPermissions;
       if (hasAnyResult) {
-        hasAnyResult = BigFlagUtilsAll.hasAny(guildPermissions, closure_10);
+        const obj = BigFlagUtilsAll;
+        hasAnyResult = obj.hasAny(guildPermissions, closure_10);
       }
       return hasAnyResult;
     }
   });
-  let obj = require("useStateFromStores");
-  const tmp = _require;
   const items1 = [GuildIncidentsStore];
-  const stateFromStores1 = require("useStateFromStores").useStateFromStores(items1, () => {
+  const obj2 = require("useStateFromStores");
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     let guildIncident = null;
-    if (null != closure_0) {
+    if (null != id) {
       guildIncident = GuildIncidentsStore.getGuildIncident(tmp);
     }
     return guildIncident;
   });
-  const obj3 = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: null };
-  let isUnderLockdownResult = null != stateFromStores1;
+  const obj3 = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: isUnderLockdownResult };
+  isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = tmp(7458).isUnderLockdown(stateFromStores1);
     const tmpResult = tmp(7458);
+    isUnderLockdownResult = tmpResult.isUnderLockdown(stateFromStores1);
   }
-  obj3.isUnderLockdown = isUnderLockdownResult;
   return obj3;
 };
 export const shouldShowRaidNotificationNagbar = function shouldShowRaidNotificationNagbar() {
@@ -161,17 +176,20 @@ export const shouldShowRaidInAppNotification = function shouldShowRaidInAppNotif
     tmp2 = guildsProto[guildId];
   }
   let guildIncident = null;
+  const tmp3 = null != tmp2 && tmp2.disableRaidAlertNag;
   if (null != guildId) {
     guildIncident = GuildIncidentsStore.getGuildIncident(guildId);
   }
   let isUnderLockdownResult = null != guildIncident;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = GuildAntiRaidUtils.isUnderLockdown(guildIncident);
+    const obj2 = GuildAntiRaidUtils;
+    isUnderLockdownResult = obj2.isUnderLockdown(guildIncident);
   }
-  const show = null != guildId && !isUnderLockdownResult && !(null != tmp2 && tmp2.disableRaidAlertNag);
+  const show = null != guildId && !isUnderLockdownResult && !tmp3;
   return { show, guildId };
 };
 export const getDisabledActions = function getDisabledActions(id) {
+  let tmp11;
   if (null == id) {
     return { dmsDisabled: false, invitesDisabled: false };
   } else {
@@ -189,31 +207,40 @@ export const getDisabledActions = function getDisabledActions(id) {
       let tmp4 = null != invitesDisabledUntil;
       if (tmp4) {
         const _Date = Date;
-        const date = new Date(guildIncident.invitesDisabledUntil);
+        const self = this;
+        const self2 = this;
         const _Date2 = Date;
+        const self3 = this;
+        const self4 = this;
+        const date = new Date(guildIncident.invitesDisabledUntil);
+        tmp4 = date > new Date();
         const date1 = new Date();
-        tmp4 = date > date1;
       }
       hasItem = tmp4;
     }
-    const obj = { invitesDisabled: hasItem, dmsDisabled: null };
     let dmsDisabledUntil;
+    const obj = { invitesDisabled: hasItem, dmsDisabled: tmp11 };
     if (guildIncident != null) {
       dmsDisabledUntil = guildIncident.dmsDisabledUntil;
     }
-    let tmp15 = null != dmsDisabledUntil;
-    if (tmp15) {
+    tmp11 = null != dmsDisabledUntil;
+    if (tmp11) {
       const _Date3 = Date;
-      const date2 = new Date(guildIncident.dmsDisabledUntil);
+      const self5 = this;
+      const self6 = this;
       const _Date4 = Date;
+      const self7 = this;
+      const self8 = this;
+      const date2 = new Date(guildIncident.dmsDisabledUntil);
+      tmp11 = date2 > new Date();
       const date3 = new Date();
-      tmp15 = date2 > date3;
     }
-    obj.dmsDisabled = tmp15;
     return obj;
   }
 };
 export const useDisabledActions = function useDisabledActions(id) {
+  let obj2;
+  let tmp13;
   id = undefined;
   if (id != null) {
     id = id.id;
@@ -223,9 +250,10 @@ export const useDisabledActions = function useDisabledActions(id) {
   }
   const items = [GuildIncidentsStore];
   const items1 = [id];
-  const stateFromStores = id(563).useStateFromStores(items, () => GuildIncidentsStore.getGuildIncident(id), items1);
+  const obj = id(563);
+  const stateFromStores = obj.useStateFromStores(items, () => GuildIncidentsStore.getGuildIncident(id), items1);
   if (null == id) {
-    let obj2 = { dmsDisabled: false, invitesDisabled: false };
+    obj2 = { dmsDisabled: false, invitesDisabled: false };
   } else {
     let hasItem;
     if (id != null) {
@@ -240,35 +268,45 @@ export const useDisabledActions = function useDisabledActions(id) {
       let tmp6 = null != invitesDisabledUntil;
       if (tmp6) {
         const _Date = Date;
-        const date = new Date(stateFromStores.invitesDisabledUntil);
+        const self = this;
+        const self2 = this;
         const _Date2 = Date;
+        const self3 = this;
+        const self4 = this;
+        const date = new Date(stateFromStores.invitesDisabledUntil);
+        tmp6 = date > new Date();
         const date1 = new Date();
-        tmp6 = date > date1;
       }
       hasItem = tmp6;
     }
-    obj2 = { invitesDisabled: hasItem, dmsDisabled: null };
+    obj2 = { invitesDisabled: hasItem, dmsDisabled: tmp13 };
     let dmsDisabledUntil;
     if (stateFromStores != null) {
       dmsDisabledUntil = stateFromStores.dmsDisabledUntil;
     }
-    let tmp17 = null != dmsDisabledUntil;
-    if (tmp17) {
+    tmp13 = null != dmsDisabledUntil;
+    if (tmp13) {
       const _Date3 = Date;
-      const date2 = new Date(stateFromStores.dmsDisabledUntil);
+      const self5 = this;
+      const self6 = this;
       const _Date4 = Date;
+      const self7 = this;
+      const self8 = this;
+      const date2 = new Date(stateFromStores.dmsDisabledUntil);
+      tmp13 = date2 > new Date();
       const date3 = new Date();
-      tmp17 = date2 > date3;
     }
-    obj2.dmsDisabled = tmp17;
   }
   return obj2;
 };
 export const useShowAntiRaidInGuildNotifSettings = function useShowAntiRaidInGuildNotifSettings(arg0) {
+  let closure_0;
   _require = arg0;
+  let obj = require("useStateFromStores");
   const items = [PermissionStore, GuildStore];
-  return require("useStateFromStores").useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
     const guild = GuildStore.getGuild(closure_0);
-    return GuildAntiRaidPermissionsUtils.canReportRaid(guild, PermissionStore);
+    const obj = GuildAntiRaidPermissionsUtils;
+    return obj.canReportRaid(guild, PermissionStore);
   });
 };

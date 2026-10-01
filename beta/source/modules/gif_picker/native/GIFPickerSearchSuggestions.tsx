@@ -4,42 +4,49 @@
 // Dependencies: [19, 17, 9826, 21, 4836, 576, 504, 4832, 1115, 5281, 2]
 
 // Module 9834 (GIFPickerSearchSuggestions)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GIFPickerViewStore from "GIFPickerViewStore" /* 9826 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-const obj = { suggestionsContainer: { justifyContent: "center", flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_8 }, footerSuggestionsContainer: null, footerSuggestionsTitle: null };
-let obj3 = { justifyContent: "center", flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
-obj.footerSuggestionsContainer = { justifyContent: "flex-start", paddingVertical: nativeDefault.space.PX_16 };
-let obj4 = { justifyContent: "flex-start", paddingVertical: nativeDefault.space.PX_16 };
-obj.footerSuggestionsTitle = { marginBottom: nativeDefault.space.PX_16, textAlign: "center" };
-let closure_7 = createStyles.createStyles(obj);
-const obj5 = { marginBottom: nativeDefault.space.PX_16, textAlign: "center" };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerSearchSuggestions.tsx");
-
-export default noop.memo(function GIFPickerSearchSuggestions(onClickSuggestion) {
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { suggestionsContainer: obj2, footerSuggestionsContainer: obj3, footerSuggestionsTitle: obj4 };
+obj2 = { justifyContent: "center", flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+obj3 = { justifyContent: "flex-start", paddingVertical: nativeDefault.space.PX_16 };
+obj4 = { marginBottom: nativeDefault.space.PX_16, textAlign: "center" };
+let closure_7 = createStyles(obj);
+const memoResult = react.memo(function GIFPickerSearchSuggestions(onClickSuggestion) {
+  let intl;
+  let items1;
+  let suggestions;
   onClickSuggestion = onClickSuggestion.onClickSuggestion;
   const tmp = closure_7();
+  let obj = onClickSuggestion(504);
   const items = [GIFPickerViewStore];
-  const stateFromStoresArray = onClickSuggestion(504).useStateFromStoresArray(items, () => suggestions.getSuggestions());
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => suggestions.getSuggestions());
   let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
-    const obj2 = { style: tmp.footerSuggestionsContainer, children: null };
-    const obj3 = { style: tmp.footerSuggestionsTitle, variant: "text-md/medium", color: "text-default", children: null };
-    const intl = tmp2(1115).intl;
-    obj3.children = intl.string(tmp2(1115).t["3JGJo2"]);
-    const items1 = [closure_5(tmp2(4832).Text, obj3), ];
+    const obj2 = { style: tmp.footerSuggestionsContainer, children: items1 };
+    const obj3 = { style: tmp.footerSuggestionsTitle, variant: "text-md/medium", color: "text-default", children: intl.string(onClickSuggestion(1115).t["3JGJo2"]) };
+    const Text = tmp2(4832).Text;
+    intl = tmp2(1115).intl;
+    items1 = [closure_5(Text, obj3), ];
     const obj4 = {
       style: tmp.suggestionsContainer,
       children: stateFromStoresArray.map((text) => {
-          closure_0 = text;
-          return closure_1_5(onClickSuggestion(5281).Button, {
+          let closure_0 = text;
+          const obj = {
             size: "sm",
             variant: "secondary",
             hitSlop: nativeDefault.space.PX_8,
@@ -47,12 +54,16 @@ export default noop.memo(function GIFPickerSearchSuggestions(onClickSuggestion) 
             onPress() {
               return onClickSuggestion(closure_0);
             }
-          }, text);
+          };
+          const Button = onClickSuggestion(dependencyMap[9]).Button;
+          return closure_1_5(Button, obj, text);
         })
     };
     items1[1] = closure_5(View, obj4);
-    obj2.children = items1;
     tmp4 = closure_6(View, obj2);
   }
   return tmp4;
 });
+const result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerSearchSuggestions.tsx");
+
+export default memoResult;

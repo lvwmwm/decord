@@ -5,23 +5,25 @@
 // Exports: useShouldRenderChannelList
 
 // Module 15895 (useShouldRenderChannelList)
+import Constants from "Constants" /* 1074 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import CacheStore from "CacheStore" /* 6896 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ComponentActions = fn(1074).ComponentActions;
+const ComponentActions = Constants.ComponentActions;
 let c7 = false;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_sidebar/native/useShouldRenderChannelList.tsx");
 
 export const useShouldRenderChannelList = function useShouldRenderChannelList() {
-  [first, dependencyMap] = noop.useState(c7);
+  let closure_1;
+  let first;
+  [first, closure_1] = react.useState(c7);
   const items = [first];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     function allowRender() {
       c7 = true;
       handleGatewayChange(true);
@@ -39,23 +41,27 @@ export const useShouldRenderChannelList = function useShouldRenderChannelList() 
       }
     }
     function handleNavigationChange() {
-      const obj = first(handleGatewayChange[5]);
-      const rootNavigationRef = first(handleGatewayChange[6]).getRootNavigationRef();
+      const coerceGuildsRoute = first(handleGatewayChange[5]).coerceGuildsRoute;
+      first(handleGatewayChange[5]);
+      const obj = first(handleGatewayChange[6]);
+      const rootNavigationRef = obj.getRootNavigationRef();
       let currentRoute;
       if (rootNavigationRef != null) {
         currentRoute = rootNavigationRef.getCurrentRoute();
       }
-      if (null != obj.coerceGuildsRoute(currentRoute)) {
+      if (null != coerceGuildsRoute(currentRoute)) {
         c7 = true;
         handleGatewayChange(true);
       }
     }
-    if (!allowRender) {
+    const tmp = allowRender;
+    if (!tmp) {
       let result = GatewayConnectionStore.addReactChangeListener(handleGatewayChange);
       let result1 = CacheStore.addReactChangeListener(handleCacheChange);
-      let ComponentDispatch = first(1110).ComponentDispatch;
+      let ComponentDispatch = first(handleGatewayChange[7]).ComponentDispatch;
       const subscription = ComponentDispatch.subscribe(constants.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-      let rootNavigationRef = first(4693).getRootNavigationRef();
+      let obj = first(handleGatewayChange[6]);
+      let rootNavigationRef = obj.getRootNavigationRef();
       if (rootNavigationRef != null) {
         rootNavigationRef.addListener("state", handleNavigationChange);
       }
@@ -64,7 +70,8 @@ export const useShouldRenderChannelList = function useShouldRenderChannelList() 
         const result1 = CacheStore.addReactChangeListener(handleCacheChange);
         const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
         ComponentDispatch.unsubscribe(ComponentActions.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-        const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+        const obj = RootNavigationRef;
+        const rootNavigationRef = obj.getRootNavigationRef();
         if (rootNavigationRef != null) {
           rootNavigationRef.removeListener("state", handleNavigationChange);
         }

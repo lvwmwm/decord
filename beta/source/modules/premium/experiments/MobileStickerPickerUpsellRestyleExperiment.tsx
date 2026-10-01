@@ -14,10 +14,12 @@ const result = size.fileFinishedImporting("modules/premium/experiments/MobileSti
 
 export const MobileStickerPickerUpsellRestyleExperiment = apexExperiment;
 export const useMobileStickerPickerUpsellRestyleEnabled = function useMobileStickerPickerUpsellRestyleEnabled(location) {
-  return apexExperiment.useConfig({ location });
+  const obj = { location };
+  return apexExperiment.useConfig(obj);
 };
 export const getMobileStickerPickerUpsellRestyleEnabled = function getMobileStickerPickerUpsellRestyleEnabled(location) {
-  return apexExperiment.getConfig({ location });
+  const obj = { location };
+  return apexExperiment.getConfig(obj);
 };
 export const getMobileStickerPickerUpsellRestyleEnabledForFeature = function getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, location) {
   let config = featureName === EntitlementFeatureNames.EntitlementFeatureNames.STICKERS_EVERYWHERE;

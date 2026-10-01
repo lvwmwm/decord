@@ -5,11 +5,9 @@
 
 // Module 6162
 import ComposedGestureName from "ComposedGestureName" /* 6132 */;
-import DEFAULT_PROPS_TRANSFORMER from "DEFAULT_PROPS_TRANSFORMER" /* 6141 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6141 */;
 import _mod6156 from "module_6156" /* 6156 */;
 
-require = arg1;
-const dependencyMap = arg6;
 function transformLongPressProps(shouldCancelWhenOutside) {
   if (undefined === shouldCancelWhenOutside.shouldCancelWhenOutside) {
     shouldCancelWhenOutside.shouldCancelWhenOutside = true;
@@ -25,6 +23,8 @@ export const useLongPressGesture = function useLongPressGesture(gestureHandlerPr
   if (gestureHandlerProps === undefined) {
     tmp = closure_4;
   }
-  const clonedAndRemappedConfig = DEFAULT_PROPS_TRANSFORMER.useClonedAndRemappedConfig(tmp, map, transformLongPressProps);
-  return _mod6156.useGesture(ComposedGestureName.SingleGestureName.LongPress, clonedAndRemappedConfig);
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformLongPressProps);
+  const obj2 = _mod6156;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.LongPress, clonedAndRemappedConfig);
 };

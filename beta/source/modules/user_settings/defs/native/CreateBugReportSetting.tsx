@@ -4,41 +4,51 @@
 // Dependencies: [1346, 1347, 9675, 504, 1364, 11006, 1115, 15115, 15340, 2]
 
 // Module 15353 (CreateBugReportSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
 import DeveloperOptionsActionCreators from "DeveloperOptionsActionCreators" /* 1347 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import BugReportManagerDefault from "BugReportManager" /* 9675 */;
+import WrenchIcon from "WrenchIcon" /* 15115 */;
+import BugReporterSetting from "BugReporterSetting" /* 15340 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const toggle = SettingBuilders.createToggle({
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.aIkGJD);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.aIkGJD);
   },
   parent: null,
-  IconComponent: fn(15115).WrenchIcon,
+  IconComponent: WrenchIcon.WrenchIcon,
   onValueChange: function handleCreateBugReportSettingToggle(arg0) {
     const setDeveloperOptionSettings = DeveloperOptionsActionCreators.setDeveloperOptionSettings;
-    if (arg0) {
+    DeveloperOptionsActionCreators;
+    const tmp3 = arg0;
+    if (tmp3) {
       const result = setDeveloperOptionSettings({ bugReporterEnabled: true });
-      BugReportManagerDefault.initialize();
+      const obj2 = BugReportManagerDefault;
+      obj2.initialize();
     } else {
       const result1 = setDeveloperOptionSettings({ bugReporterEnabled: false });
-      BugReportManagerDefault.terminate(true);
+      const obj = BugReportManagerDefault;
+      obj.terminate(true);
     }
   },
   useValue: function useCreateBugReportSettingToggleValue() {
+    let isBugReporterEnabled;
     const items = [DeveloperOptionsStore];
-    return initialize.useStateFromStores(items, () => isBugReporterEnabled.isBugReporterEnabled);
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => isBugReporterEnabled.isBugReporterEnabled);
   },
   useDescription: function useCreateBugReportSettingDescription() {
+    PlatformUtils;
     return "Photo permission is required";
   },
-  usePredicate: fn(15340).useBugReporterExperimentSettingPredicate
-});
-const size = fn(2);
+  usePredicate: BugReporterSetting.useBugReporterExperimentSettingPredicate
+};
+const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/CreateBugReportSetting.tsx");
 
 export default toggle;

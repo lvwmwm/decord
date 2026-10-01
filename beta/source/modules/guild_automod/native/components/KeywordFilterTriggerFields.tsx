@@ -5,76 +5,109 @@
 // Exports: default
 
 // Module 17333 (KeywordFilterTriggerFields)
-import util from "util" /* 1115 */;
+import Constants2 from "Constants" /* 1074 */;
+import intl7 from "intl" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
+import TableRowGroup2 from "TableRowGroup" /* 5999 */;
 import KeywordsRowDefault from "KeywordsRow" /* 17327 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 11341 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(11341);
+let c3;
+let closure_4;
+let metroImportDefault;
+let metroRequire;
 ({ MAX_KEYWORDS_PER_ALLOWLIST_KEYWORD_FILTER_RULE: c3, MAX_KEYWORDS_PER_KEYWORD_FILTER: closure_4 } = Constants);
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const size = fn(2);
+const HelpdeskArticles = Constants2.HelpdeskArticles;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/KeywordFilterTriggerFields.tsx");
 
 export default function KeywordFilterTriggerFields(rule) {
+  let allowList;
+  let format;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl5;
+  let intl6;
+  let items;
+  let keywordFilter;
+  let obj4;
+  let obj5;
+  let prop;
+  let regexPatterns;
   rule = rule.rule;
   const onChangeRule = rule.onChangeRule;
   ({ keywordFilter, regexPatterns, allowList } = rule.triggerMetadata);
-  const obj = { hasIcons: false, children: null };
-  let obj2 = { label: null, description: null, type: "keywords", keywords: null, maxWordCount: null, onChangeKeywords: null };
-  const intl = util.intl;
-  obj2.label = intl.string(util.t["ue+tnb"]);
-  const intl2 = util.intl;
-  obj2.description = intl2.string(util.t.Gm6G5x);
-  obj2.keywords = keywordFilter;
-  obj2.maxWordCount = maxWordCount2;
-  obj2.onChangeKeywords = function onChangeKeywords(keywordFilter) {
-    const obj2 = {};
-    const merged = Object.assign(rule);
-    const merged1 = Object.assign(rule.triggerMetadata);
-    const merged2 = Object.assign({ keywordFilter });
-    obj2.triggerMetadata = {};
-    onChangeRule(obj2);
+  let obj = { hasIcons: false, children: items };
+  const TableRowGroup = TableRowGroup2.TableRowGroup;
+  let obj2 = {
+    label: intl.string(intl7.t["ue+tnb"]),
+    description: intl2.string(intl7.t.Gm6G5x),
+    type: "keywords",
+    keywords: keywordFilter,
+    maxWordCount: maxWordCount2,
+    onChangeKeywords(keywordFilter) {
+      let obj3;
+      const obj = { keywordFilter };
+      const obj2 = { triggerMetadata: obj3 };
+      const merged = Object.assign(rule);
+      obj3 = {};
+      const merged1 = Object.assign(rule.triggerMetadata);
+      const merged2 = Object.assign(obj);
+      onChangeRule(obj2);
+    }
   };
-  const items = [timestampProducer(KeywordsRowDefault, obj2), , ];
-  const obj3 = { label: null, description: null, type: "regex", keywords: null, onChangeKeywords: null };
-  const intl3 = util.intl;
-  obj3.label = intl3.string(util.t["dnunm+"]);
-  const intl4 = util.intl;
-  const obj4 = { helpArticle: null };
+  const tmp = KeywordsRowDefault;
+  intl = intl7.intl;
+  intl2 = intl7.intl;
+  items = [metroRequire(tmp, obj2), , ];
+  let obj3 = {
+    label: intl3.string(intl7.t["dnunm+"]),
+    description: format(prop, obj4),
+    type: "regex",
+    keywords: regexPatterns,
+    onChangeKeywords(regexPatterns) {
+      let obj3;
+      const obj = { regexPatterns };
+      const obj2 = { triggerMetadata: obj3 };
+      const merged = Object.assign(rule);
+      obj3 = {};
+      const merged1 = Object.assign(rule.triggerMetadata);
+      const merged2 = Object.assign(obj);
+      onChangeRule(obj2);
+    }
+  };
   const tmp2 = KeywordsRowDefault;
-  obj4.helpArticle = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.GUILD_AUTOMOD_REGEX);
-  obj3.description = intl4.format(util.t["PGC/AJ"], obj4);
-  obj3.keywords = regexPatterns;
-  obj3.onChangeKeywords = function onChangeKeywords(regexPatterns) {
-    const obj2 = {};
-    const merged = Object.assign(rule);
-    const merged1 = Object.assign(rule.triggerMetadata);
-    const merged2 = Object.assign({ regexPatterns });
-    obj2.triggerMetadata = {};
-    onChangeRule(obj2);
+  intl3 = intl7.intl;
+  const intl4 = intl7.intl;
+  format = intl4.format;
+  obj4 = { helpArticle: obj5.getArticleURL(HelpdeskArticles.GUILD_AUTOMOD_REGEX) };
+  prop = intl7.t["PGC/AJ"];
+  obj5 = HelpdeskUtilsDefault;
+  items[1] = metroRequire(tmp2, obj3);
+  const obj6 = {
+    label: intl5.string(intl7.t.lbE2Nm),
+    description: intl6.string(intl7.t.qm7UZ8),
+    type: "keywords",
+    keywords: allowList,
+    maxWordCount,
+    onChangeKeywords(allowList) {
+      let obj3;
+      const obj = { allowList };
+      const obj2 = { triggerMetadata: obj3 };
+      const merged = Object.assign(rule);
+      obj3 = {};
+      const merged1 = Object.assign(rule.triggerMetadata);
+      const merged2 = Object.assign(obj);
+      onChangeRule(obj2);
+    }
   };
-  items[1] = timestampProducer(tmp2, obj3);
-  const obj6 = { label: null, description: null, type: "keywords", keywords: null, maxWordCount: null, onChangeKeywords: null };
-  const intl5 = util.intl;
-  obj6.label = intl5.string(util.t.lbE2Nm);
-  const intl6 = util.intl;
-  obj6.description = intl6.string(util.t.qm7UZ8);
-  obj6.keywords = allowList;
-  obj6.maxWordCount = maxWordCount;
-  obj6.onChangeKeywords = function onChangeKeywords(allowList) {
-    const obj2 = {};
-    const merged = Object.assign(rule);
-    const merged1 = Object.assign(rule.triggerMetadata);
-    const merged2 = Object.assign({ allowList });
-    obj2.triggerMetadata = {};
-    onChangeRule(obj2);
-  };
-  items[2] = timestampProducer(KeywordsRowDefault, obj6);
-  obj.children = items;
-  return React5(TableRowGroup.TableRowGroup, obj);
+  const tmp4 = KeywordsRowDefault;
+  intl5 = intl7.intl;
+  intl6 = intl7.intl;
+  items[2] = metroRequire(tmp4, obj6);
+  return metroImportDefault(TableRowGroup, obj);
 };

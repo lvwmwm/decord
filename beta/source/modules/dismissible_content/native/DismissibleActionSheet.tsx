@@ -7,29 +7,38 @@
 // Module 10089 (DismissibleActionSheet)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import useMountEffectDefault from "useMountEffect" /* 5298 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
+let importDefault;
+
 const result = size.fileFinishedImporting("modules/dismissible_content/native/DismissibleActionSheet.tsx");
 
 export const DismissibleActionSheet = function DismissibleActionSheet(arg0) {
+  let closure_0;
   importDefault = arg0;
-  useMountEffectDefault(() => {
-    const obj2 = {};
-    const obj = ActionSheetActionCreatorsDefault;
-    const merged = Object.assign(closure_0);
-    obj2.markAsDismissed = function markAsDismissed(arg0) {
-      closure_0(4800).hideActionSheet(closure_1_0.actionSheetKey);
-      closure_1_0.markAsDismissed(arg0);
+  const tmp = useMountEffectDefault(() => {
+    const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+    let obj = {
+      markAsDismissed(arg0) {
+        const obj = closure_0(dependencyMap[2]);
+        obj.hideActionSheet(closure_1_0.actionSheetKey);
+        closure_1_0.markAsDismissed(arg0);
+      }
     };
-    obj.openLazy(closure_0.importer(), closure_0.actionSheetKey, obj2);
+    ActionSheetActionCreatorsDefault;
+    const actionSheetKey = closure_0.actionSheetKey;
+    const importerResult = closure_0.importer();
+    const merged = Object.assign(closure_0);
+    openLazy(importerResult, actionSheetKey, obj);
   });
   const items = [, ];
   ({ actionSheetKey: arr[0], hideSheetOnUnmount: arr[1] } = arg0);
-  const effect = noop.useEffect(() => () => {
+  const effect = react.useEffect(() => () => {
+    const tmp2 = null != closure_1_0.hideSheetOnUnmount && closure_1_0.hideSheetOnUnmount;
     if (tmp2) {
-      closure_0(4800).hideActionSheet(tmp.actionSheetKey);
-      const obj = closure_0(4800);
+      const obj = closure_0(dependencyMap[2]);
+      obj.hideActionSheet(closure_1_0.actionSheetKey);
     }
   }, items);
   return null;

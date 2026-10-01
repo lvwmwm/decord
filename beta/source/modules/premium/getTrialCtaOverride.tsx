@@ -20,12 +20,12 @@ export const getTrialCtaOverride = function getTrialCtaOverride(premiumTrialOffe
     result = null;
     if (true === isReferralTrial) {
       result = null;
+      const obj = ReferralTrialCtaExperiment;
+      const tmp4 = require;
       if (obj.getReferralTrialCtaExperimentEnabled()) {
-        result = tmp4(4488).formatTrialCtaIntervalDurationFromTrialOffer(premiumTrialOffer, TIER_2);
         const tmp4Result = tmp4(4488);
+        result = tmp4Result.formatTrialCtaIntervalDurationFromTrialOffer(premiumTrialOffer, TIER_2);
       }
-      obj = ReferralTrialCtaExperiment;
-      tmp4 = require;
     }
   }
   return result;

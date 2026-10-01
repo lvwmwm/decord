@@ -5,30 +5,42 @@
 // Exports: ChatInputScrimGradient, useChatInputFloatingOverlayStyle
 
 // Module 11743 (ChatInputScrimGradient)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import useToken from "useToken" /* 4531 */;
+import useToken2 from "useToken" /* 4531 */;
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4652 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
+let closure_4;
+let hasOwnProperty;
+let tmp4;
 const LinearGradientDefault = tmp4(5293);
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const size = fn(2);
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let result = size.fileFinishedImporting("modules/chat_input/native/ChatInputScrimGradient.tsx");
 
 export const ChatInputScrimGradient = function ChatInputScrimGradient(scrimBase) {
+  let gradientHeight;
+  let inline;
+  let items;
+  let items1;
+  let result;
   ({ gradientHeight, inline } = scrimBase);
   if (inline === undefined) {
     inline = false;
   }
   scrimBase = scrimBase.scrimBase;
-  const gradientValue = client_themes_ClientThemesUtils.useGradientValue(client_themes_ClientThemesUtils.GradientPercentage.END);
-  const token = useToken.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
+  const obj = client_themes_ClientThemesUtils;
+  const gradientValue = obj.useGradientValue(client_themes_ClientThemesUtils.GradientPercentage.END);
+  const obj2 = useToken2;
+  const token = obj2.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
+  const useToken = useToken2.useToken;
+  useToken2;
   if (gradientHeight == null) {
-    gradientHeight = obj3.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT);
+    gradientHeight = useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT);
   }
   if (scrimBase == null) {
     scrimBase = gradientValue;
@@ -36,30 +48,33 @@ export const ChatInputScrimGradient = function ChatInputScrimGradient(scrimBase)
   if (scrimBase == null) {
     scrimBase = token;
   }
-  obj3 = useToken;
-  let hex2rgbResult = utils_ColorUtils.hex2rgb(scrimBase, 1);
+  const tmpResult = utils_ColorUtils;
+  let hex2rgbResult = tmpResult.hex2rgb(scrimBase, 1);
   if (hex2rgbResult == null) {
     hex2rgbResult = scrimBase;
   }
-  const tmpResult = utils_ColorUtils;
-  let str = utils_ColorUtils.hex2rgb(scrimBase, 0);
+  const tmpResult2 = utils_ColorUtils;
+  let str = tmpResult2.hex2rgb(scrimBase, 0);
   if (str == null) {
     str = "transparent";
   }
+  const tmp8 = hasOwnProperty;
   if (inline) {
-    let result = tmp9;
+    result = tmp10;
   } else {
-    result = tmp9 / 2;
+    result = tmp10 / 2;
   }
-  const obj4 = { style: { position: "absolute", top: result, left: 0, right: 0, bottom: 0 }, pointerEvents: "none", children: null };
-  const obj5 = { colors: null, style: { height: gradientHeight }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: [0, 1] };
-  const items = [str, hex2rgbResult];
-  obj5.colors = items;
-  const items1 = [React4(LinearGradientDefault, obj5), React4(View, { style: { flex: 1, backgroundColor: hex2rgbResult } })];
-  obj4.children = items1;
-  return hasOwnProperty(View, obj4);
+  const obj4 = { colors: items, style: { height: gradientHeight }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: [0, 1] };
+  items = [str, hex2rgbResult];
+  const obj3 = { style: { position: "absolute", top: result, left: 0, right: 0, bottom: 0 }, pointerEvents: "none", children: items1 };
+  items1 = [React3(LinearGradientDefault, obj4), ];
+  const obj5 = { style: { flex: 1, backgroundColor: hex2rgbResult } };
+  items1[1] = React3(View, obj5);
+  return tmp8(View, obj3);
 };
 export const useChatInputFloatingOverlayStyle = function useChatInputFloatingOverlayStyle() {
-  const obj = { marginTop: -useToken.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT) / 2, overflow: "visible" };
+  let obj2;
+  const obj = { marginTop: -obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT) / 2, overflow: "visible" };
+  obj2 = useToken2;
   return obj;
 };

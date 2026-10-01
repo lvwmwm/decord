@@ -5,51 +5,67 @@
 // Exports: default
 
 // Module 16641 (ChannelSettingsInstantInvites)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import FastestListDefault from "FastestList" /* 6476 */;
 import InstantInvite from "InstantInvite" /* 10393 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10411 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10412 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import ChannelSettingsStore from "ChannelSettingsStore" /* 8086 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const InstantInviteDefault = InstantInvite;
+let _require, dependencyMap, inviter, invites;
 
-const FastestListDefault = tmp2(6476);
-const _modDef10411 = tmp2(10411);
-const _modDef10412 = tmp2(10412);
-const InstantInviteSelfMeasurerDefault = tmp2(16642);
-require = fn;
-const View = fn(17).View;
-const ChannelSettingsSections = fn(1074).ChannelSettingsSections;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { content: { paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 }, gap: null };
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 };
-obj2.gap = { height: nativeDefault.space.PX_16 };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
+let c10;
+let c9;
+let obj2;
+let obj3;
+const View = react_native.View;
+const ChannelSettingsSections = Constants.ChannelSettingsSections;
+({ jsx: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { content: obj2, gap: obj3 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { height: nativeDefault.space.PX_16 };
+let closure_11 = createStyles(obj);
 const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsInstantInvites.tsx");
 
 export default function ConnectedChannelSettingsInstantInvites() {
-  let tmp = closure_11();
+  let closure_2;
+  let gap;
+  let intl;
+  let intl2;
+  let items8;
+  let memo;
+  let memo1;
+  let obj6;
+  let tmp21;
+  let tmp5;
+  const tmp = closure_11();
   _require = tmp;
-  let tmp2 = importDefault;
-  let obj = dependencyMap;
-  [tmp4, importDefault] = invites(memo.useState(undefined), 2);
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  [tmp5, importDefault] = invites(memo.useState(undefined), 2);
   let items = [tmp];
-  let tmpResult = _require;
+  const tmp4 = invites(memo.useState(undefined), 2);
   const callback = memo.useCallback((arg0) => {
     importDefault(arg0 + gap.gap.height);
   }, items);
-  const tmp3 = invites(memo.useState(undefined), 2);
+  let obj = require("get initialized");
   const items1 = [memo1];
-  dependencyMap = require("initialize").useStateFromStores(items1, () => memo1.getChannel());
-  let obj2 = require("initialize");
+  dependencyMap = obj.useStateFromStores(items1, () => memo1.getChannel());
+  let obj2 = require("get initialized");
   const items2 = [memo1];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items2, () => memo1.getInvites());
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items2, () => memo1.getInvites());
   invites = stateFromStoresObject.invites;
   const loading = stateFromStoresObject.loading;
   const items3 = [invites];
@@ -76,12 +92,13 @@ export default function ConnectedChannelSettingsInstantInvites() {
       return formatted.localeCompare(str2.toLowerCase());
     });
   }, items3);
-  const obj3 = require("initialize");
   const items4 = [ChannelStore];
-  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items4, () => {
+  const obj3 = require("get initialized");
+  const stateFromStoresArray = obj3.useStateFromStoresArray(items4, () => {
+    let found;
     if (null != id) {
       const sortedLinkedChannelsForGuild = ChannelStore.getSortedLinkedChannelsForGuild(tmp.guild_id);
-      let found = sortedLinkedChannelsForGuild.filter((id) => id.id === id.id);
+      found = sortedLinkedChannelsForGuild.filter((id) => id.id === id.id);
     } else {
       found = [];
     }
@@ -94,50 +111,50 @@ export default function ConnectedChannelSettingsInstantInvites() {
   }, items5);
   const items6 = [memo1.length];
   const effect = memo.useEffect(() => {
-    require("ChannelSettingsActionCreators").setSection(constants.INSTANT_INVITES);
+    const obj = require("ChannelSettingsActionCreators");
+    obj.setSection(constants.INSTANT_INVITES);
   }, []);
   const items7 = [memo1];
   const callback1 = memo.useCallback((arg0, arg1) => {
+    let tmp5;
     if ("invite" === memo1[arg1].type) {
-      const obj2 = { invite: tmp.data };
-      let tmp5 = React7(InstantInviteDefault, obj2);
+      const obj2 = { invite: memo1[arg1].data };
+      tmp5 = React4(InstantInviteDefault, obj2);
     } else {
-      const obj = { channel: tmp.data };
-      tmp5 = React7(InstantInvite.LinkedChannelInvite, obj);
+      const obj = { channel: memo1[arg1].data };
+      tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
     }
     return tmp5;
   }, items7);
   if (!loading) {
     if (0 === memo1.length) {
-      const obj5 = { lightSource: _modDef10411, darkSource: _modDef10412, title: null, body: null };
-      const intl = tmpResult(1115).intl;
-      obj5.title = intl.string(tmpResult(1115).t["+nLJkZ"]);
-      const intl2 = tmpResult(1115).intl;
-      obj5.body = intl2.string(tmpResult(1115).t.F53CAc);
-      return closure_9(tmpResult(1177).EmptyState, obj5);
+      const obj4 = { lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault2, title: intl.string(require("intl").t["+nLJkZ"]), body: intl2.string(require("intl").t.F53CAc) };
+      const EmptyState = tmp7(1177).EmptyState;
+      intl = tmp7(1115).intl;
+      intl2 = tmp7(1115).intl;
+      tmp21 = closure_9(EmptyState, obj4);
     }
+    return tmp21;
   }
   if (!loading) {
-    if (null != tmp4) {
-      const obj6 = { style: tmp.content, children: null };
-      const obj7 = { sections: items6, estimatedListSize: "windowSize", itemSize: tmp4, renderItem: callback1, insetStart: tmp.gap.height, insetEnd: useSafeAreaInsetsDefault().bottom };
-      obj6.children = closure_9(FastestListDefault, obj7);
-      let tmp16Result = closure_9(stateFromStoresArray, obj6);
+    let tmp17Result;
+    if (null != tmp5) {
+      const obj5 = { style: tmp.content, children: closure_9(FastestListDefault, obj6) };
+      obj6 = { sections: items6, estimatedListSize: "windowSize", itemSize: tmp5, renderItem: callback1, insetStart: tmp.gap.height, insetEnd: bottom };
+      tmp17Result = closure_9(stateFromStoresArray, obj5);
     }
+    tmp21 = tmp17Result;
   }
-  const obj8 = { style: tmp.content, children: null };
-  tmp = closure_9;
-  const items8 = [closure_9(tmpResult(6460).SceneLoadingIndicator, {}), ];
-  tmpResult = null;
+  const obj7 = { style: tmp.content, children: items8 };
+  items8 = [closure_9(tmp7(6460).SceneLoadingIndicator, {}), ];
+  let tmp19Result = null;
+  const tmp17 = closure_10;
+  const tmp18 = stateFromStoresArray;
+  const tmp19 = closure_9;
   if (memo1.length > 0) {
-    tmp2 = InstantInviteSelfMeasurerDefault;
-    obj = { item: null, onMeasured: null };
-    memo1 = memo1[0];
-    obj.item = memo1;
-    obj.onMeasured = callback;
-    tmpResult = tmp(tmp2, obj);
+    const obj8 = { item: memo1[0], onMeasured: callback };
+    tmp19Result = tmp19(tmp2(16642), obj8);
   }
-  items8[1] = tmpResult;
-  obj8.children = items8;
-  tmp16Result = closure_10(stateFromStoresArray, obj8);
+  items8[1] = tmp19Result;
+  tmp17Result = tmp17(tmp18, obj7);
 };

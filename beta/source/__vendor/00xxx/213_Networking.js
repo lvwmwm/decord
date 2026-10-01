@@ -4,12 +4,12 @@
 // Dependencies: [214]
 
 // Module 213 (Networking)
-import _modDef214 from "module_214" /* 214 */;
+import _mod214 from "module_214" /* 214 */;
 
-const require = globalThis.__r;
+const _modDef214 = _mod214;
 
-for (const key10016 in require("module_214")) {
-  arg5[key10016] = require("module_214")[key10016];
+for (const key10016 in _mod214) {
+  exports[key10016] = _mod214[key10016];
   continue;
 }
 

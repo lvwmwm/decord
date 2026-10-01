@@ -5,17 +5,20 @@
 // Exports: getGroupDMAddMembersEntryAction, getGroupDMNitroAudience, getGroupDMNitroCapCTAMessage, getGroupDMNitroUpsellRoute, isGroupDMNitroUpsellAudience, shouldUseGroupDMParticipantLimitUI, useGroupDMNitroAudience
 
 // Module 11086 (GroupDMNitroUpsellModel)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl from "intl" /* 1115 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1970 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MAX_GROUP_DM_PARTICIPANTS = fn(1074).MAX_GROUP_DM_PARTICIPANTS;
-const PremiumTypes = fn(1374).PremiumTypes;
+let currentUser;
+
+const MAX_GROUP_DM_PARTICIPANTS = Constants.MAX_GROUP_DM_PARTICIPANTS;
+const PremiumTypes = PremiumConstants.PremiumTypes;
 const GroupDMNitroAcquisitionStrategy = { MARKETING: "marketing", CHECKOUT: "checkout" };
 let obj2 = { NONE: "none", MANAGE: "manage", MARKETING: "marketing", CHECKOUT: "checkout" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/group_dm/native/GroupDMNitroUpsellModel.tsx");
 
 export { GroupDMNitroAcquisitionStrategy };
@@ -27,6 +30,7 @@ export const getGroupDMNitroAudience = function getGroupDMNitroAudience(premiumT
   let str = "staff";
   if (!flag) {
     let str2 = "entitled";
+    const obj = PremiumTypeUtils;
     if (!obj.isPremiumAtLeast(premiumType, PremiumTypes.TIER_2)) {
       let str3 = "acquire";
       if (null != premiumType) {
@@ -35,16 +39,18 @@ export const getGroupDMNitroAudience = function getGroupDMNitroAudience(premiumT
       str2 = str3;
     }
     str = str2;
-    obj = PremiumTypeUtils;
   }
   return str;
 };
 export const useGroupDMNitroAudience = function useGroupDMNitroAudience() {
+  let TIER_2;
   const items = [UserStore];
-  return initialize.useStateFromStores(items, () => {
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => {
+    let premiumType;
     currentUser = currentUser.getCurrentUser();
     if (currentUser != null) {
-      const premiumType = currentUser.premiumType;
+      premiumType = currentUser.premiumType;
     }
     let flag;
     if (currentUser != null) {
@@ -59,6 +65,7 @@ export const useGroupDMNitroAudience = function useGroupDMNitroAudience() {
     let str = "staff";
     if (!flag) {
       let str2 = "entitled";
+      obj2 = PremiumTypeUtils;
       if (!obj2.isPremiumAtLeast(premiumType, TIER_2.TIER_2)) {
         let str3 = "acquire";
         if (null != premiumType) {
@@ -67,51 +74,44 @@ export const useGroupDMNitroAudience = function useGroupDMNitroAudience() {
         str2 = str3;
       }
       str = str2;
-      obj2 = PremiumTypeUtils;
     }
     return str;
   });
 };
 export function isGroupDMNitroUpsellAudience(groupDMNitroAudience) {
-  let tmp = "upgrade" === groupDMNitroAudience;
-  if (!tmp) {
-    tmp = "acquire" === groupDMNitroAudience;
-  }
-  return tmp;
+  return "upgrade" === groupDMNitroAudience || "acquire" === groupDMNitroAudience;
 }
 export const shouldUseGroupDMParticipantLimitUI = function shouldUseGroupDMParticipantLimitUI(enabled, arg1) {
-  let tmp = enabled;
-  if (!enabled) {
-    tmp = arg1 > MAX_GROUP_DM_PARTICIPANTS;
-  }
-  return tmp;
+  return enabled || arg1 > MAX_GROUP_DM_PARTICIPANTS;
 };
 export const getGroupDMNitroCapCTAMessage = function getGroupDMNitroCapCTAMessage(groupDMNitroAudience) {
+  let yZOtoD;
   if ("upgrade" === groupDMNitroAudience) {
-    let yZOtoD = util.t.KfitWs;
+    yZOtoD = intl.t.KfitWs;
   } else if ("acquire" === groupDMNitroAudience) {
-    yZOtoD = util.t.Sqrz1V;
+    yZOtoD = intl.t.Sqrz1V;
   } else {
-    yZOtoD = util.t.yZOtoD;
+    yZOtoD = intl.t.yZOtoD;
   }
   return yZOtoD;
 };
 export const getGroupDMNitroUpsellRoute = function getGroupDMNitroUpsellRoute(audience, acquisitionStrategy) {
-  let tmp2 = tmp;
-  if ("upgrade" !== audience) {
-    tmp2 = "acquire" === audience;
-  }
+  let NONE;
+  const tmp2 = tmp || "acquire" === audience;
   if (tmp2) {
-    if (tmp) {
-      let CHECKOUT = obj2.MANAGE;
+    let CHECKOUT;
+    if ("upgrade" === audience) {
+      CHECKOUT = obj2.MANAGE;
     } else if (acquisitionStrategy === obj.MARKETING) {
       CHECKOUT = obj2.MARKETING;
     } else {
       CHECKOUT = obj2.CHECKOUT;
     }
+    NONE = CHECKOUT;
   } else {
-    return obj2.NONE;
+    NONE = obj2.NONE;
   }
+  return NONE;
 };
 export const getGroupDMAddMembersEntryAction = function getGroupDMAddMembersEntryAction(audience) {
   audience = audience.audience;
@@ -119,11 +119,8 @@ export const getGroupDMAddMembersEntryAction = function getGroupDMAddMembersEntr
   if (audience.memberCount >= audience.recipientLimit) {
     let str3 = "full";
     if (tmp) {
-      let tmp2 = "upgrade" === audience;
-      if (!tmp2) {
-        tmp2 = "acquire" === audience;
-      }
       str3 = "full";
+      const tmp2 = "upgrade" === audience || "acquire" === audience;
       if (tmp2) {
         str3 = "upsell";
       }

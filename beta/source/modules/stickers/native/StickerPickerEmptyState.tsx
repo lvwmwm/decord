@@ -5,120 +5,133 @@
 // Exports: default
 
 // Module 9875 (StickerPickerEmptyState)
+import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import StickersConstants from "StickersConstants" /* 2024 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
 import StickerDefault from "Sticker" /* 9636 */;
 import StickersHooks from "StickersHooks" /* 9848 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import StickersStore from "StickersStore" /* 5814 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
+let c9;
+let closure_12;
+let metroImportAll;
+let unpackModuleId;
 function EmptyStateSticker(sticker) {
   sticker = sticker.sticker;
-  const animated = StickersHooks.useShouldAnimateSticker(sticker.isFocused);
+  const isFocused = sticker.isFocused;
+  const obj = StickersHooks;
+  const animated = obj.useShouldAnimateSticker(isFocused);
   let id;
-  const tmp2 = closure_1_11;
+  const tmp2 = unpackModuleId;
+  const tmp3 = StickerDefault;
   if (sticker != null) {
     id = sticker.id;
   }
-  return tmp2(StickerDefault, { sticker, size: 60, animated }, id);
+  return tmp2(tmp3, { sticker, size: 60, animated }, id);
 }
-const View = fn(17).View;
-const EMPTY_STATE_STICKERS = fn(2024).EMPTY_STATE_STICKERS;
-const Constants = fn(1074);
-({ AnalyticEvents: closure_8, AnalyticsSections: closure_9 } = Constants);
-const PremiumUpsellTypes = fn(1374).PremiumUpsellTypes;
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4836);
+const View = react_native.View;
+const EMPTY_STATE_STICKERS = StickersConstants.EMPTY_STATE_STICKERS;
+({ AnalyticEvents: metroImportAll, AnalyticsSections: c9 } = Constants);
+const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let closure_13 = createStyles.createStyles({ header: { marginBottom: 8, textAlign: "center" }, blurb: { lineHeight: 18, textAlign: "center", marginBottom: 12 }, premiumButton: { marginTop: 20, alignSelf: "center", paddingLeft: 5, paddingRight: 10, flexGrow: 0 }, nitroWheel: { width: 32 }, stickersRow: { flexDirection: "row", alignSelf: "center" }, sticker: { paddingHorizontal: 2 } });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/stickers/native/StickerPickerEmptyState.tsx");
 
 export default function _default() {
-  const tmp = closure_13();
+  let Button;
+  let analyticsLocations;
+  let closure_0;
+  let intl;
+  let intl2;
+  let intl3;
+  let items2;
+  let obj8;
+  let obj9;
+  let tmp6;
+  let tmp = closure_13();
   _require = tmp;
-  const fetchStickerPacks = require("StickersHooks").useFetchStickerPacks();
   let obj = require("StickersHooks");
-  analyticsLocations = analyticsLocations(6583)(analyticsLocations(6603).EMPTY_STATE).analyticsLocations;
+  const fetchStickerPacks = obj.useFetchStickerPacks();
   const tmp3 = analyticsLocations(6583);
+  analyticsLocations = tmp3(analyticsLocations(6603).EMPTY_STATE).analyticsLocations;
+  let obj2 = require("get initialized");
   const items = [StickersStore];
-  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => {
+  const stateFromStoresArray = obj2.useStateFromStoresArray(items, () => {
+    let stickerById;
     const mapped = EMPTY_STATE_STICKERS.map((item) => stickerById.getStickerById(item));
     return mapped.filter((item) => null != item);
   });
-  let obj2 = require("initialize");
-  [dependencyMap, _slicedToArray] = noop.useState(null);
+  const tmp4 = _slicedToArray(react.useState(null), 2);
+  [dependencyMap, _slicedToArray] = tmp4;
   const items1 = [analyticsLocations];
-  const effect = noop.useEffect(() => {
-    const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: { section: constants2.EMPTY_STICKER_PICKER_UPSELL }, location_stack: analyticsLocations };
-    AnalyticsUtilsDefault.track(constants.PREMIUM_UPSELL_VIEWED, obj2);
+  const effect = react.useEffect(() => {
+    let obj3;
+    const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+    obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+    const obj = AnalyticsUtilsDefault;
+    obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
   }, items1);
-  const obj3 = { children: null };
-  const obj4 = { style: tmp.header, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = require("util").intl;
-  obj4.children = intl.string(require("util").t.HEm04J);
-  const items2 = [closure_11(require("Text/Text").Text, obj4), , , ];
-  const obj5 = { style: tmp.blurb, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = require("util").intl;
-  obj5.children = intl2.string(require("util").t.FnNud4);
-  items2[1] = closure_11(require("Text/Text").Text, obj5);
-  const tmp4 = _slicedToArray(noop.useState(null), 2);
-  items2[2] = closure_11(View, {
-    style: tmp.stickersRow,
-    children: stateFromStoresArray.map((sticker) => {
-      const obj = {
-        accessible: false,
-        onLongPress() {
-          const result = HapticUtils.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
-          _slicedToArray(sticker.id);
-        },
-        style: sticker.sticker,
-        children: closure_1_11(EmptyStateSticker, { sticker, isFocused: closure_2 === sticker.id })
-      };
-      let id;
-      if (sticker != null) {
-        id = sticker.id;
-      }
-      return closure_1_11(sticker(5435).PressableOpacity, obj, id);
-    })
-  });
-  const obj7 = { style: tmp.premiumButton, children: null };
-  const obj8 = { icon: null, text: null, variant: "active", size: "sm", onPress: null };
-  const obj9 = { source: null, style: null, resizeMode: "contain" };
+  let obj3 = { children: items2 };
+  const obj4 = { style: tmp.header, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.HEm04J) };
+  const Text = require("Text/Text").Text;
+  intl = require("intl").intl;
+  items2 = [closure_11(Text, obj4), , , ];
+  const obj5 = { style: tmp.blurb, variant: "text-sm/medium", color: "text-default", children: intl2.string(require("intl").t.FnNud4) };
+  const Text2 = require("Text/Text").Text;
+  intl2 = require("intl").intl;
+  items2[1] = closure_11(Text2, obj5);
   const obj6 = {
     style: tmp.stickersRow,
     children: stateFromStoresArray.map((sticker) => {
-      const obj = {
+      let obj2;
+      let obj = {
         accessible: false,
         onLongPress() {
-          const result = HapticUtils.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
+          const obj = HapticUtils;
+          const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
           _slicedToArray(sticker.id);
         },
         style: sticker.sticker,
-        children: closure_1_11(EmptyStateSticker, { sticker, isFocused: closure_2 === sticker.id })
+        children: closure_1_11(EmptyStateSticker, obj2)
       };
+      obj2 = { sticker, isFocused: dependencyMap === sticker.id };
+      const PressableOpacity = sticker(dependencyMap[17]).PressableOpacity;
       let id;
+      const tmp = closure_1_11;
       if (sticker != null) {
         id = sticker.id;
       }
-      return closure_1_11(sticker(5435).PressableOpacity, obj, id);
+      return tmp(PressableOpacity, obj, id);
     })
   };
-  obj9.source = analyticsLocations(8661);
-  obj9.style = tmp.nitroWheel;
-  obj8.icon = closure_11(analyticsLocations(5899), obj9);
-  const intl3 = require("util").intl;
-  obj8.text = intl3.string(require("util").t.pj0XBN);
-  obj8.onPress = function onPress() {
-    return analyticsLocations(9869)({ section: constants.EXPRESSION_PICKER });
+  items2[2] = closure_11(View, obj6);
+  const obj7 = { style: tmp.premiumButton, children: closure_11(Button, obj8) };
+  obj8 = {
+    icon: closure_11(tmp6, obj9),
+    text: intl3.string(require("intl").t.pj0XBN),
+    variant: "active",
+    size: "sm",
+    onPress() {
+      const obj = { section: constants.EXPRESSION_PICKER };
+      return analyticsLocations(dependencyMap[23])(obj);
+    }
   };
-  obj7.children = closure_11(require("components/Button/Button").Button, obj8);
+  Button = require("components/Button/Button").Button;
+  obj9 = { source: analyticsLocations(8661), style: tmp.nitroWheel, resizeMode: "contain" };
+  tmp6 = analyticsLocations(5899);
+  intl3 = require("intl").intl;
   items2[3] = closure_11(View, obj7);
-  obj3.children = items2;
   return closure_12(View, obj3);
 };

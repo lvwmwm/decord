@@ -8,16 +8,18 @@
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", name: "2025-11-hide-manual-link", defaultConfig: { isHidden: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+let obj = { kind: "user", name: "2025-11-hide-manual-link", defaultConfig: { isHidden: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { isHidden: true };
-obj.variations = obj2;
 let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/age_assurance/HideManualAgeVerificationExperiment.tsx");
 
 export const useIsManualAgeVerificationHidden = function useIsManualAgeVerificationHidden(age_verification_get_started_modal) {
-  return closure_0.useConfig({ location: age_verification_get_started_modal }).isHidden;
+  const obj = { location: age_verification_get_started_modal };
+  return closure_0.useConfig(obj).isHidden;
 };
 export const isManualAgeVerificationHidden = function isManualAgeVerificationHidden(location) {
-  return closure_0.getConfig({ location }).isHidden;
+  const obj = { location };
+  return closure_0.getConfig(obj).isHidden;
 };

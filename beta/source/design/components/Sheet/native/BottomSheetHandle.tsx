@@ -1,21 +1,21 @@
 // Module ID: 6574
 // Function ID: 6575
-// Name: Sheet/BottomSheetHandle
+// Name: react
 // Dependencies: [19, 2]
 // Exports: useBottomSheetImperativeHandle
 
-// Module 6574 (Sheet/BottomSheetHandle)
-import noop from "module_19" /* 19 */;
+// Module 6574 (react)
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Sheet/native/BottomSheetHandle.tsx");
 
-export const useBottomSheetImperativeHandle = function useBottomSheetImperativeHandle(ref, ref) {
-  closure_0 = ref;
+export const useBottomSheetImperativeHandle = function useBottomSheetImperativeHandle(ref, ref2) {
+  let closure_0 = ref;
   const items = [ref];
-  const imperativeHandle = noop.useImperativeHandle(ref, () => ({
+  const imperativeHandle = react.useImperativeHandle(ref, () => ({
     expandActionSheet() {
-      const current = ref.current;
+      const current = closure_1_0.current;
       if (current != null) {
         current.expand();
       }
@@ -26,25 +26,25 @@ export const useBottomSheetImperativeHandle = function useBottomSheetImperativeH
         force = force.force;
       }
       if (true === force) {
-        const current2 = ref.current;
+        const current2 = closure_1_0.current;
         if (current2 != null) {
           current2.forceClose();
         }
       } else {
-        const current = ref.current;
+        const current = closure_1_0.current;
         if (current != null) {
           current.close();
         }
       }
     },
     collapseActionSheet() {
-      const current = ref.current;
+      const current = closure_1_0.current;
       if (current != null) {
         current.collapse();
       }
     },
     snapToIndex(collapse) {
-      const current = ref.current;
+      const current = closure_1_0.current;
       if (current != null) {
         current.snapToIndex(collapse);
       }

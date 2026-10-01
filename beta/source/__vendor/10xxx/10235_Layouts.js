@@ -4,5 +4,8 @@
 // Dependencies: [10236, 10237, 10238]
 
 // Module 10235 (Layouts)
+const require = globalThis.__r;
 
-export const Layouts = { normal: fn(10236).normalLayout, parallax: fn(10237).parallaxLayout, horizontalStack: fn(10238).horizontalStackLayout, verticalStack: fn(10238).verticalStackLayout };
+({ normal: require("normalLayout").normalLayout, parallax: require("parallaxLayout").parallaxLayout, horizontalStack: require("horizontalStackLayout").horizontalStackLayout, verticalStack: require("horizontalStackLayout").verticalStackLayout });
+
+export const Layouts = { normal: require("normalLayout").normalLayout, parallax: require("parallaxLayout").parallaxLayout, horizontalStack: require("horizontalStackLayout").horizontalStackLayout, verticalStack: require("horizontalStackLayout").verticalStackLayout };

@@ -10,11 +10,12 @@ import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8501 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
+let obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN };
 const obj2 = { MAIN: 0, [0]: "MAIN", INLINE: 1, [1]: "INLINE" };
 const result = size.fileFinishedImporting("modules/frames/FramesConstants.tsx");
 
 export const FrameLayoutModes = { FOCUSED: 0, [0]: "FOCUSED", PIP: 1, [1]: "PIP" };
-export const MAIN_SURFACE = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN };
+export const MAIN_SURFACE = obj;
 export const FrameIntent = obj2;
 export const getFrameIntentForSurface = function getFrameIntentForSurface(type) {
   type = type.type;
@@ -29,10 +30,10 @@ export const makeFrameId = function makeFrameId(arg0, type) {
   if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
     const _HermesInternal3 = HermesInternal;
     return "main:" + arg0;
-  } else if (tmp(8501).EmbeddedSurfaceType.APP_CHANNEL === type) {
+  } else if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL === type) {
     const _HermesInternal2 = HermesInternal;
     return "app-channel:" + arg0 + ":" + type.channelId;
-  } else if (tmp(8501).EmbeddedSurfaceType.VOICE_CHANNEL === type) {
+  } else if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL === type) {
     const _HermesInternal = HermesInternal;
     return "voice-channel:" + arg0 + ":" + type.channelId;
   }
@@ -40,8 +41,8 @@ export const makeFrameId = function makeFrameId(arg0, type) {
 export const getFrameSurfaceForChannel = function getFrameSurfaceForChannel(type) {
   type = type.type;
   if (ChannelTypes.GUILD_APP === type) {
-    const obj3 = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: null, guildId: null };
     ({ id: obj2.channelId, guild_id: obj2.guildId } = type);
+    const obj3 = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: null, guildId: null };
     return obj3;
   } else if (tmp.GUILD_VOICE === type) {
     const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL, channelId: null, guildId: null };

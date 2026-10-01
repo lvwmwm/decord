@@ -5,26 +5,28 @@
 // Exports: default
 
 // Module 12466 (InAppReportsRemediationsElement)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
-import noop from "module_19" /* 19 */;
+import intl2 from "intl" /* 1115 */;
+import TableRowGroup2 from "TableRowGroup" /* 5999 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_32 } };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const obj = { container: obj2 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_32 };
+let closure_4 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsRemediationsElement.tsx");
 
 export default function RemediationsElement(children) {
-  const obj = { style: closure_4().container, children: null };
-  const obj2 = { title: null, hasIcons: true, children: null };
-  const intl = util.intl;
-  obj2.title = intl.string(util.t["k+QA9N"]);
-  obj2.children = children.children;
-  obj.children = jsx(TableRowGroup.TableRowGroup, { title: null, hasIcons: true, children: null });
+  let intl;
+  children = children.children;
+  ({ title: intl.string(intl2.t["k+QA9N"]), hasIcons: true, children });
+  const TableRowGroup = TableRowGroup2.TableRowGroup;
+  intl = intl2.intl;
   return <View style={closure_4().container}>{null}</View>;
 };

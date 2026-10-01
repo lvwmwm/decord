@@ -5,24 +5,43 @@
 // Exports: default
 
 // Module 10832 (TabBar)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let onScrollToIndexFailed;
+
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
 function Tab(index) {
+  let children;
+  let isSelected;
+  let onSelect;
+  let tabStyle;
+  let tabStyleActive;
+  let tabStyleSelected;
+  let tmp3;
+  let tmp4;
+  const f92063 = () => false;
   index = index.index;
   ({ isSelected, onSelect } = index);
   ({ children, tabStyle, tabStyleActive, tabStyleSelected } = index);
   const tmp = closure_9();
-  [tmp3, tmp4] = noop.useState(() => false);
-  c2 = tmp4;
+  [tmp3, tmp4] = react.useState(f92063);
+  let c2 = tmp4;
   const items = [tmp4];
   const items1 = [tmp4];
-  const callback = noop.useCallback(() => _undefined(true), items);
+  _slicedToArray(react.useState(f92063), 2);
+  const callback = react.useCallback(() => _undefined(true), items);
   const items2 = [onSelect, index];
-  const callback1 = noop.useCallback(() => _undefined(false), items1);
-  const obj = { accessibilityRole: "tab", onPressIn: callback, onPressOut: callback1, onPress: noop.useCallback(() => onSelect(index), items2), children: null };
+  const callback1 = react.useCallback(() => _undefined(false), items1);
   const items3 = [tmp.tab, tabStyle, , , , ];
   let tabSelected = null;
   if (isSelected) {
@@ -44,22 +63,28 @@ function Tab(index) {
     tmp13 = tabStyleActive;
   }
   items3[5] = tmp13;
-  obj.children = <React4 style={items3}>{children}</React4>;
-  return <hasOwnProperty accessibilityRole="tab" onPressIn={callback} onPressOut={callback1} onPress={noop.useCallback(() => onSelect(index), items2)}>{null}</hasOwnProperty>;
+  return <tmp8 accessibilityRole="tab" onPressIn={callback} onPressOut={callback1} onPress={react.useCallback(() => onSelect(index), items2)}>{null}</tmp8>;
 }
-get_ActivityIndicator = fn(17);
-({ View: closure_4, TouchableWithoutFeedback: hasOwnProperty, FlatList: metroRequire } = get_ActivityIndicator);
-const NOOP = fn(1074).NOOP;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { innerContainer: { flexDirection: "row", alignItems: "stretch" }, tab: { flexGrow: 1, flexBasis: "auto", flexShrink: 0, alignItems: "center", justifyContent: "center", marginBottom: 1, marginHorizontal: 1, padding: 10, borderBottomWidth: 2, borderBottomColor: "transparent" }, tabActive: { backgroundColor: "rgba(0,0,0,0.1)" }, tabSelected: { borderBottomColor: nativeDefault.unsafe_rawColors.BRAND_600 }, container: { flex: 0 } };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+({ View: closure_4, TouchableWithoutFeedback: hasOwnProperty, FlatList: metroRequire } = react_native);
+const NOOP = Constants.NOOP;
+const jsx = Fragment.jsx;
+let obj = { innerContainer: { flexDirection: "row", alignItems: "stretch" }, tab: { flexGrow: 1, flexBasis: "auto", flexShrink: 0, alignItems: "center", justifyContent: "center", marginBottom: 1, marginHorizontal: 1, padding: 10, borderBottomWidth: 2, borderBottomColor: "transparent" }, tabActive: { backgroundColor: "rgba(0,0,0,0.1)" }, tabSelected: obj2, container: { flex: 0 } };
+obj2 = { borderBottomColor: nativeDefault.unsafe_rawColors.BRAND_600 };
+let closure_9 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("components_native/common/TabBar.tsx");
 
 export default function TabBar(tabIndexSelected) {
+  let GestureDetector;
+  let closure_7;
+  let containerStyle;
+  let initialNumTabsToRender;
+  let intl;
+  let items4;
+  let obj2;
+  let obj3;
+  let tabs;
   tabIndexSelected = tabIndexSelected.tabIndexSelected;
-  let tabStyle = tabIndexSelected.tabStyle;
+  const tabStyle = tabIndexSelected.tabStyle;
   const tabStyleActive = tabIndexSelected.tabStyleActive;
   const tabStyleSelected = tabIndexSelected.tabStyleSelected;
   const onSelect = tabIndexSelected.onSelect;
@@ -88,11 +113,12 @@ export default function TabBar(tabIndexSelected) {
       current.scrollToIndex(obj);
     }
   }, items1);
-  tabStyle = tabStyleActive(tabStyleSelected.useState(() => tabIndexSelected), 1)[0];
-  const items2 = [tabStyle];
+  const first = tabStyleActive(tabStyleSelected.useState(() => tabIndexSelected), 1)[0];
+  const items2 = [first];
   const effect1 = tabStyleSelected.useEffect(() => {
+    let closure_0;
     const timeout = setTimeout(() => {
-      if (ref.current === tabStyle) {
+      if (ref2.current === first) {
         const current = ref.current;
         if (current != null) {
           const obj = { index: tmp, viewPosition: 1 };
@@ -110,18 +136,16 @@ export default function TabBar(tabIndexSelected) {
     const index = children.index;
     return <Tab index={index} isSelected={index === tabIndexSelected} tabStyle={tabStyle} tabStyleActive={tabStyleActive} tabStyleSelected={tabStyleSelected} onSelect={flag2 ? callback : onSelect}>{arg0.item}</Tab>;
   }, items3);
-  let obj = { style: tmp.container, accessibilityRole: "tablist", accessibilityLabel: null, children: null };
+  let obj = { style: tmp.container, accessibilityRole: "tablist", accessibilityLabel: intl.string(tabIndexSelected(tabStyle[8]).t.t1qXlK), children: callback(GestureDetector, obj2) };
   const memo = tabStyleSelected.useMemo(() => {
-    const Gesture = tabIndexSelected(first[7]).Gesture;
-    return Gesture.Native().disallowInterruption(true);
+    const Gesture = tabIndexSelected(tabStyle[7]).Gesture;
+    const NativeResult = Gesture.Native();
+    return NativeResult.disallowInterruption(true);
   }, []);
-  const intl = tabIndexSelected(tabStyle[8]).intl;
-  obj.accessibilityLabel = intl.string(tabIndexSelected(tabStyle[8]).t.t1qXlK);
-  const obj2 = { gesture: memo, children: null };
-  const obj3 = { ref, contentContainerStyle: null, horizontal: true, data: tabs, renderItem: callback2, keyExtractor: callback1, initialNumToRender: initialNumTabsToRender, onScrollToIndexFailed, showsHorizontalScrollIndicator: !flag };
-  const items4 = [containerStyle, tmp.innerContainer];
-  obj3.contentContainerStyle = items4;
-  obj2.children = callback(ref, obj3);
-  obj.children = callback(tabIndexSelected(tabStyle[7]).GestureDetector, obj2);
+  intl = tabIndexSelected(tabStyle[8]).intl;
+  obj2 = { gesture: memo, children: callback(ref, obj3) };
+  obj3 = { ref, contentContainerStyle: items4, horizontal: true, data: tabs, renderItem: callback2, keyExtractor: callback1, initialNumToRender: initialNumTabsToRender, onScrollToIndexFailed, showsHorizontalScrollIndicator: !flag };
+  items4 = [containerStyle, tmp.innerContainer];
+  GestureDetector = tabIndexSelected(tabStyle[7]).GestureDetector;
   return callback(onSelect, obj);
 };

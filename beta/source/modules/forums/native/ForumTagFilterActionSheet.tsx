@@ -5,127 +5,143 @@
 // Exports: default
 
 // Module 12280 (ForumTagFilterActionSheet)
-import initialize from "initialize" /* 504 */;
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
 import EmojiDefault from "Emoji" /* 6551 */;
 import tracking_Tracking from "tracking/Tracking" /* 7186 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 5771 */;
+import ForumChannelStore from "ForumChannelStore" /* 11483 */;
+import Constants from "Constants" /* 1074 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+let set;
+
+let c10;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let tmp5;
 const AvatarUtilsDefault = tmp5(1397);
-require = fn;
 function EmojiIcon(arg0) {
+  let emojiName;
+  let emojiURL;
   ({ emojiId: require, emojiName } = arg0);
   const tmp = closure_12();
   const items = [EmojiStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => {
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let usableCustomEmojiById = null;
     if (null != require) {
       usableCustomEmojiById = EmojiStore.getUsableCustomEmojiById(tmp);
     }
     return usableCustomEmojiById;
   });
-  const obj2 = { style: tmp.emoji, textEmojiStyle: tmp.textEmoji, fastImageStyle: tmp.imageEmoji, src: null, name: null };
-  let emojiURL;
+  const obj2 = { style: tmp.emoji, textEmojiStyle: tmp.textEmoji, fastImageStyle: tmp.imageEmoji, src: emojiURL, name: emojiName };
+  emojiURL = undefined;
   const tmp4 = jsx;
+  const tmp6 = EmojiDefault;
   if (null != stateFromStores) {
-    ({ id: obj4.id, animated: obj4.animated } = stateFromStores);
-    emojiURL = AvatarUtilsDefault.getEmojiURL({ id: null, animated: null, size: 18 });
     const obj3 = { id: null, animated: null, size: 18 };
+    ({ id: obj4.id, animated: obj4.animated } = stateFromStores);
     const tmp5Result = AvatarUtilsDefault;
+    emojiURL = tmp5Result.getEmojiURL(obj3);
   }
-  obj2.src = emojiURL;
   if (emojiName == null) {
     emojiName = "";
   }
-  obj2.name = emojiName;
-  return tmp4(EmojiDefault, obj2);
+  return tmp4(tmp6, obj2);
 }
-const ForumChannelStore = fn(11483);
-({ useForumChannelStore: metroRequire, useForumChannelStoreApi: closure_7 } = ForumChannelStore);
-const Constants = fn(1074);
-({ AnalyticsObjects: closure_8, AnalyticsPages: closure_9, AnalyticsSections: c10 } = Constants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let _slicedToArray = _slicedToArray_mod;
+({ useForumChannelStore: metroRequire, useForumChannelStoreApi: metroImportDefault } = ForumChannelStore);
+({ AnalyticsObjects: metroImportAll, AnalyticsPages: c9, AnalyticsSections: c10 } = Constants);
+const jsx = Fragment.jsx;
 let closure_12 = createStyles.createStyles({ emoji: { height: 18, width: 18, marginRight: 4, display: "flex", alignItems: "center", justifyContent: "center" }, imageEmoji: { height: 18, width: 18 }, textEmoji: { fontSize: 14, lineHeight: 20 } });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/forums/native/ForumTagFilterActionSheet.tsx");
 
 export default function ForumPostTagsActionSheet(channel) {
+  let ActionSheetHeaderPressableText;
+  let BottomSheetScrollView;
+  let TableRowGroup;
+  let availableTags;
+  let closure_3;
+  let first;
+  let intl;
+  let intl3;
+  let obj5;
+  let obj6;
+  let obj7;
+  let str;
   channel = channel.channel;
   first = undefined;
   _slicedToArray = undefined;
+  const tagFilter = closure_6(channel.id).tagFilter;
   let state = closure_7();
-  [first, _slicedToArray] = noop.useState(new Set(closure_6(channel.id).tagFilter));
-  let set = new Set(closure_6(channel.id).tagFilter);
-  const unmountEffect = channel(first[8]).useUnmountEffect(() => {
+  const useState = react.useState;
+  set = new Set(tagFilter);
+  [first, _slicedToArray] = useState(set);
+  let obj = channel(first[8]);
+  const unmountEffect = obj.useUnmountEffect(() => {
     state = state.getState();
     state.setTagFilter(channel.id, first);
   });
-  let obj2 = { title: null, subtitle: null, leading: null };
-  let intl = channel(first[11]).intl;
-  obj2.title = intl.string(channel(first[11]).t.TdqRTh);
-  let str = " ";
+  const ActionSheet = channel(first[9]).ActionSheet;
+  let obj2 = { title: intl.string(channel(first[11]).t.TdqRTh), subtitle: str, leading: tmp7(ActionSheetHeaderPressableText, obj5) };
+  const BottomSheetTitleHeader = channel(first[10]).BottomSheetTitleHeader;
+  intl = channel(first[11]).intl;
+  str = " ";
   if (first.size > 0) {
     const intl2 = tmp4(tmp5[11]).intl;
-    const obj3 = { count: first.size };
+    let obj3 = { count: first.size };
     str = intl2.formatToPlainString(tmp4(tmp5[11]).t["/FzHJK"], obj3);
   }
-  let obj4 = { scrollable: true, header: null, children: null };
-  obj2.subtitle = str;
-  const obj5 = {
+  const obj4 = { scrollable: true, header: jsx(BottomSheetTitleHeader, obj2), children: jsx(BottomSheetScrollView, obj6) };
+  obj5 = {
     onPress() {
-      closure_3(new Set());
+      set = new Set();
+      closure_3(set);
     },
-    label: null
+    label: intl3.string(channel(first[11]).t.VkKicb)
   };
-  const intl3 = tmp4(tmp5[11]).intl;
-  obj5.label = intl3.string(channel(first[11]).t.VkKicb);
-  obj2.leading = jsx(channel(first[12]).ActionSheetHeaderPressableText, {
-    onPress() {
-      closure_3(new Set());
-    },
-    label: null
-  });
-  obj4.header = jsx(channel(first[10]).BottomSheetTitleHeader, { title: null, subtitle: null, leading: null });
-  const obj6 = { children: null };
-  const obj7 = { hasIcons: true, children: null };
-  const availableTags = channel.availableTags;
-  obj7.children = availableTags.map((emojiId) => {
-    closure_0 = emojiId;
-    let obj = { icon: <EmojiIcon emojiId={arg0.emojiId} emojiName={arg0.emojiName} />, label: emojiId.name, accessibilityLabel: null, checked: null, onPress: null };
-    const intl = channel(first[11]).intl;
-    obj.accessibilityLabel = intl.formatToPlainString(channel(first[11]).t.tXXD6v, { tagName: emojiId.name });
-    obj.checked = first.has(emojiId.id);
-    obj.onPress = function onPress() {
-      let obj = closure_0;
-      if (null != closure_0) {
-        let FORUM_CHANNEL_HEADER = globalThis;
-        const _Set = Set;
-        const set = new Set(first);
-        if (set.has(obj.id)) {
-          set.delete(obj.id);
-        } else {
-          set.add(obj.id);
+  ActionSheetHeaderPressableText = tmp4(tmp5[12]).ActionSheetHeaderPressableText;
+  intl3 = tmp4(tmp5[11]).intl;
+  obj6 = { children: jsx(TableRowGroup, obj7) };
+  BottomSheetScrollView = tmp4(tmp5[13]).BottomSheetScrollView;
+  obj7 = {
+    hasIcons: true,
+    children: availableTags.map((emojiId) => {
+      let obj2 = { emojiId: emojiId.emojiId, emojiName: emojiId.emojiName };
+      const TableCheckboxRow = channel(first[15]).TableCheckboxRow;
+      const intl = channel(first[11]).intl;
+      const obj3 = { tagName: emojiId.name };
+      return <TableCheckboxRow key={arg0.id} icon={null} label={arg0.name} accessibilityLabel={intl.formatToPlainString(channel(first[11]).t.tXXD6v, obj3)} checked={first.has(arg0.id)} onPress={function onPress() {
+        let obj2;
+        if (null != emojiId) {
+          const _Set = Set;
+          const self = this;
+          const self2 = this;
+          set = new Set(first);
+          if (set.has(emojiId.id)) {
+            set.delete(emojiId.id);
+          } else {
+            set.add(emojiId.id);
+          }
+          const obj = { guildId: null, channelId: null, tagId: emojiId.id, filterTagIds: Array.from(set), added: !set.has(emojiId.id), location: obj2 };
+          ({ guild_id: obj.guildId, id: obj.channelId } = channel);
+          const _Array = Array;
+          const trackForumTagFilterClicked = tracking_Tracking.trackForumTagFilterClicked;
+          tracking_Tracking;
+          obj2 = { page: constants.GUILD_CHANNEL, section: constants2.FORUM_CHANNEL_HEADER, object: metroImportAll.CHANNEL_TAG };
+          const result = trackForumTagFilterClicked(obj);
+          closure_3(set);
         }
-        const obj4 = { guildId: null, channelId: null, tagId: null, filterTagIds: null, added: null, location: null };
-        ({ guild_id: obj3.guildId, id: obj3.channelId } = channel);
-        obj4.tagId = obj.id;
-        const _Array = FORUM_CHANNEL_HEADER.Array;
-        obj4.filterTagIds = _Array.from(set);
-        obj4.added = !set.has(obj.id);
-        obj = { page: constants2.GUILD_CHANNEL, section: null, object: null };
-        FORUM_CHANNEL_HEADER = constants3.FORUM_CHANNEL_HEADER;
-        obj.section = FORUM_CHANNEL_HEADER;
-        obj.object = constants.CHANNEL_TAG;
-        obj4.location = obj;
-        const result = tracking_Tracking.trackForumTagFilterClicked(obj4);
-        closure_3(set);
-      }
-    };
-    return jsx(channel(first[15]).TableCheckboxRow, { icon: <EmojiIcon emojiId={arg0.emojiId} emojiName={arg0.emojiName} />, label: emojiId.name, accessibilityLabel: null, checked: null, onPress: null }, emojiId.id);
-  });
-  obj6.children = jsx(channel(first[14]).TableRowGroup, { hasIcons: true, children: null });
-  obj4.children = jsx(channel(first[13]).BottomSheetScrollView, { children: null });
-  return jsx(channel(first[9]).ActionSheet, { scrollable: true, header: null, children: null });
+      }} />;
+    })
+  };
+  availableTags = channel.availableTags;
+  TableRowGroup = tmp4(tmp5[14]).TableRowGroup;
+  return jsx(ActionSheet, obj4);
 };

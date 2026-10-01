@@ -14,9 +14,10 @@ export const ThemeContextFlags = { MOBILE_DARK_GRADIENT_THEME_ENABLED: 4, [4]: "
 export const hasThemeFlag = function hasThemeFlag(flags, MOBILE_DARK_GRADIENT_THEME_ENABLED) {
   return (flags.flags & MOBILE_DARK_GRADIENT_THEME_ENABLED) === MOBILE_DARK_GRADIENT_THEME_ENABLED;
 };
-export const setThemeFlag = function setThemeFlag(tmpResult, MOBILE_DARK_GRADIENT_THEME_ENABLED) {
-  return tmpResult | MOBILE_DARK_GRADIENT_THEME_ENABLED;
+export const setThemeFlag = function setThemeFlag(setThemeFlagResult, MOBILE_DARK_GRADIENT_THEME_ENABLED) {
+  return setThemeFlagResult | MOBILE_DARK_GRADIENT_THEME_ENABLED;
 };
 export const useThemeFlag = function useThemeFlag(arg0) {
-  return (ThemeContext.useThemeContext().flags & arg0) === arg0;
+  const obj = ThemeContext;
+  return (obj.useThemeContext().flags & arg0) === arg0;
 };

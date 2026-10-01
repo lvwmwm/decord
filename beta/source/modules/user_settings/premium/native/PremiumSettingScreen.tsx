@@ -5,25 +5,27 @@
 // Exports: default
 
 // Module 14520 (PremiumSettingScreen)
+import Fragment from "Fragment" /* 21 */;
 import useNavigation from "useNavigation" /* 1485 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
 import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6415 */;
 import UserSettingsPremiumDefault from "UserSettingsPremium" /* 6833 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumSettingScreen.tsx");
 
 export default function PremiumScreen() {
-  const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
-  const stackNavigation = useNavigation.useStackNavigation();
+  const obj = useSettingNavigationRoute;
+  const settingNavigationRoute = obj.useSettingNavigationRoute();
+  const obj2 = useNavigation;
+  const stackNavigation = obj2.useStackNavigation();
   let close;
   if (!stackNavigation.canGoBack()) {
     close = UserSettingsModalActionCreatorsDefault.close;
   }
-  const obj3 = { onClose: close };
+  UserSettingsPremiumDefault;
   const merged = Object.assign(settingNavigationRoute.params);
-  return jsx(UserSettingsPremiumDefault, { onClose: close });
+  return <tmp5 onClose={close} />;
 };

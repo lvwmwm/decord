@@ -4,30 +4,29 @@
 // Dependencies: [19, 21, 5286, 4832, 4836, 5282, 2]
 
 // Module 8373 (Button/HeaderButton)
-import BaseTextButton from "BaseTextButton" /* 5282 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import BaseTextButton2 from "BaseTextButton" /* 5282 */;
+import ButtonConstants from "ButtonConstants" /* 5286 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 class HeaderButton {
   constructor(arg0) {
-    tmp = closure_4();
-    obj = { accessibilityRole: "header" };
-    merged = Object.assign(global);
-    obj.pillStyle = tmp.pill;
-    obj.size = "sm";
-    obj.textVariant = c3;
-    obj.variant = "secondary-overlay";
-    return jsx(closure_0(closure_1[5]).BaseTextButton, obj);
+    const tmp = closure_4();
+    const BaseTextButton = BaseTextButton2.BaseTextButton;
+    const merged = Object.assign(arg0);
+    return <BaseTextButton accessibilityRole="header" pillStyle={tmp.pill} size="sm" textVariant={textVariant} variant="secondary-overlay" />;
   }
 }
-const jsx = fn(21).jsx;
-const React3 = "heading-md/bold";
-const diff = fn(5286).SMALL_BUTTON_HEIGHT - 2 * fn(5286).BUTTON_BORDER_WIDTH;
-const diff1 = diff - fn(4832).TextStyleSheet["heading-md/bold"].lineHeight;
-const createStyles = fn(4836);
-const React4 = createStyles.createStyles({ pill: { paddingVertical: diff1 / 2 } });
-HeaderButton.Icon = fn(5282).BaseTextButton.Icon;
-const size = fn(2);
+const jsx = Fragment.jsx;
+const _false = "heading-md/bold";
+const diff = ButtonConstants.SMALL_BUTTON_HEIGHT - 2 * ButtonConstants.BUTTON_BORDER_WIDTH;
+const diff1 = diff - Text_Text.TextStyleSheet["heading-md/bold"].lineHeight;
+const obj = { pill: { paddingVertical: diff1 / 2 } };
+const React3 = createStyles.createStyles(obj);
+HeaderButton.Icon = BaseTextButton2.BaseTextButton.Icon;
 const result = size.fileFinishedImporting("design/components/experimental/Button/native/HeaderButton.native.tsx");
 
 export { HeaderButton };

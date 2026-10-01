@@ -5,55 +5,66 @@
 // Exports: useMediaItemSpoilerState
 
 // Module 12520 (useMediaItemSpoilerState)
-import native from "native" /* 1177 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let set;
+
 let closure_4 = { code: "function useMediaItemSpoilerStateTsx1(){const{runOnJS,setSpoilerActive,hasSpoiler}=this.__closure;runOnJS(setSpoilerActive)(hasSpoiler);}" };
 const __initData = { code: "function useMediaItemSpoilerStateTsx2(){const{spoilerOpacity}=this.__closure;return{opacity:spoilerOpacity.get()};}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/media_viewer/native/useMediaItemSpoilerState.tsx");
 
 export const useMediaItemSpoilerState = function useMediaItemSpoilerState(index) {
-  mediaItemHasSpoiler = mediaItemHasSpoiler(7712).useMediaItemHasSpoiler(index);
-  let obj = mediaItemHasSpoiler(7712);
-  let obj2 = noop;
+  let mediaItemHasSpoiler;
+  let setSpoilerActive;
+  let sharedValue;
+  let tmp5;
   const tmp = mediaItemHasSpoiler;
-  [tmp5, dependencyMap] = sharedValue(noop.useState(mediaItemHasSpoiler), 2);
-  let tmp4 = sharedValue(noop.useState(mediaItemHasSpoiler), 2);
+  const tmp2 = dependencyMap;
+  let obj = mediaItemHasSpoiler(7712);
+  mediaItemHasSpoiler = obj.useMediaItemHasSpoiler(index);
+  const obj2 = react;
+  const tmp4 = sharedValue(react.useState(mediaItemHasSpoiler), 2);
+  [tmp5, dependencyMap] = tmp4;
   let num = 0;
+  const useSharedValue = mediaItemHasSpoiler(4566).useSharedValue;
+  mediaItemHasSpoiler(4566);
   if (mediaItemHasSpoiler) {
     num = 1;
   }
-  sharedValue = mediaItemHasSpoiler(4566).useSharedValue(num);
+  sharedValue = useSharedValue(num);
   const items = [mediaItemHasSpoiler, sharedValue];
   const effect = obj2.useEffect(() => {
     let num = 0;
+    set = sharedValue.set;
+    const withTiming = timing.withTiming;
+    timing;
     if (mediaItemHasSpoiler) {
       num = 1;
     }
-    const obj = timing;
-    const tmp4 = mediaItemHasSpoiler;
+    let obj = { duration: 200, easing: tmp2(1177).STANDARD_EASING };
     const fn = function t() {
-      mediaItemHasSpoiler(setSpoilerActive[3]).runOnJS(closure_1_1)(closure_1_0);
+      const obj = mediaItemHasSpoiler(dependencyMap[3]);
+      obj.runOnJS(setSpoilerActive)(closure_1_0);
     };
-    const obj2 = { duration: 200, easing: native.STANDARD_EASING };
-    fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, setSpoilerActive, hasSpoiler: tmp4 };
+    fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, setSpoilerActive: dependencyMap, hasSpoiler: mediaItemHasSpoiler };
     fn.__workletHash = 15930548853488;
     fn.__initData = __initData;
-    const result = sharedValue.set(obj.withTiming(num, obj2, "respect-motion-settings", fn));
+    ({ runOnJS: ReanimatedRexport.runOnJS, setSpoilerActive: dependencyMap, hasSpoiler: mediaItemHasSpoiler });
+    const result = set(withTiming(num, obj, "respect-motion-settings", fn));
   }, items);
   const items1 = [tmp5, ];
-  const obj3 = mediaItemHasSpoiler(4566);
   let fn = function l() {
-    return { opacity: sharedValue.get() };
+    const obj = { opacity: sharedValue.get() };
+    return obj;
   };
   fn.__closure = { spoilerOpacity: sharedValue };
   fn.__workletHash = 8496335051493;
   fn.__initData = __initData;
-  items1[1] = tmp(4566).useAnimatedStyle(fn);
+  const tmpResult = tmp(4566);
+  items1[1] = tmpResult.useAnimatedStyle(fn);
   return items1;
 };

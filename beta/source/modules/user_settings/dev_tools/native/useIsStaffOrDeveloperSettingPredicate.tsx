@@ -5,14 +5,15 @@
 // Exports: useStaffOrDeveloperSettingPredicate
 
 // Module 14378 (useIsStaffOrDeveloperSettingPredicate)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7133 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/dev_tools/native/useIsStaffOrDeveloperSettingPredicate.tsx");
 
 export const useStaffOrDeveloperSettingPredicate = function useStaffOrDeveloperSettingPredicate() {
+  let isDeveloper;
   const items = [DeveloperExperimentStore];
-  return initialize.useStateFromStores(items, () => isDeveloper.isDeveloper);
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => isDeveloper.isDeveloper);
 };

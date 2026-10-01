@@ -5,111 +5,118 @@
 // Exports: default
 
 // Module 16745 (MobileSurvey)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import native from "native" /* 1177 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import SurveyActionCreators from "SurveyActionCreators" /* 5028 */;
-import _modDef8552 from "module_8552" /* 8552 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8552 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
 import SurveyStore from "SurveyStore" /* 5027 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c0, c1;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const AnalyticEvents = Constants.AnalyticEvents;
+const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ confirmIcon: { marginLeft: 4 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("components_native/MobileSurvey.tsx");
 
 export default function MobileSurvey() {
+  let confirmIcon;
+  let currentSurvey;
   _require = closure_8();
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("get initialized");
   const items = [SurveyStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => currentSurvey.getCurrentSurvey());
+  const stateFromStores = obj.useStateFromStores(items, () => currentSurvey.getCurrentSurvey());
   const items1 = [stateFromStores];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    function setSurveySeen() {
+      return obj(...arguments);
+    }
     if (null != stateFromStores) {
-      closure_0 = async function _setSurveySeen(arg0, value) {
-        if (c0 === 2) {
-          c0 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj3 = { value, done: true };
-            return obj3;
+      let obj = function _setSurveySeen() {
+        obj = _asyncToGenerator(async (arg0, value) => {
+          let obj2;
+          if (c0 === 2) {
+            c0 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp2 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              return { value: "HermesInternal", done: null };
+            }
           } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          try {
-            c0 = 2;
-            if (0 === c1) {
-              if (arg0 === 1) {
+            try {
+              c0 = 2;
+              if (0 === c1) {
+                if (arg0 === 1) {
+                  c0 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c0 = 3;
+                  const obj4 = { value, done: true };
+                  return obj4;
+                } else if (null != c1) {
+                  c1 = 1;
+                  c0 = 1;
+                  const obj5 = { value: obj2.surveySeen(tmp4.key), done: false };
+                  obj2 = closure_2_0(closure_2_2[8]);
+                  return obj5;
+                }
+              } else if (arg0 === 1) {
                 c0 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c0 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
-              } else if (null != c1) {
-                c1 = 1;
-                c0 = 1;
-                const obj5 = { value: confirmIcon(dependencyMap[8]).surveySeen(tmp5.key), done: false };
-                return obj5;
+                obj = { value, done: true };
+                return obj;
               }
-            } else if (arg0 === 1) {
               c0 = 3;
-              throw value;
-            } else if (arg0 === 2) {
+              return { value: "HermesInternal", done: null };
+            } catch (tmp8) {
               c0 = 3;
-              const obj = { value, done: true };
-              return obj;
+              throw tmp8;
             }
-            c0 = 3;
-            return { value: "HermesInternal", done: null };
-          } catch (tmp9) {
-            c0 = tmp;
-            throw tmp9;
           }
-        }
+        });
+        return obj(...arguments);
       };
-      const obj2 = { type: "survey", promotion_id: tmp.id };
-      stateFromStores(dependencyMap[7]).track(constants.OPEN_MODAL, obj2);
-      (function setSurveySeen() {
-        const self = this;
-        const apply = closure_0.apply;
-        if (typeof apply === "unknown") {
-          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-        } else {
-          applyArgumentsResult = apply(self, arguments);
-        }
-        return applyArgumentsResult;
-      })();
-      let obj = stateFromStores(dependencyMap[7]);
+      const tmp2 = stateFromStores;
+      obj = stateFromStores(dependencyMap[7]);
+      const tmp4 = constants;
+      let obj2 = { type: "survey", promotion_id: tmp.id };
+      obj.track(constants.OPEN_MODAL, obj2);
+      setSurveySeen();
     }
   }, items1);
   let tmp5 = null;
   if (null != stateFromStores) {
-    let obj3 = { body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, renderConfirmRightIcon: null };
     ({ prompt: obj2.body, cta: obj2.confirmText } = stateFromStores);
-    const intl = tmp(1115).intl;
-    obj3.cancelText = intl.string(tmp(1115).t.f3Pet9);
-    obj3.onConfirm = function onConfirm() {
-      LinkingDefault.openURL(stateFromStores.url);
-      SurveyActionCreators.surveyHide(stateFromStores.key, false);
-    };
-    obj3.onCancel = function onCancel() {
-      return SurveyActionCreators.surveyHide(stateFromStores.key, true);
-    };
-    obj3.renderConfirmRightIcon = function renderConfirmRightIcon() {
-      return jsx(native.Icon, { style: confirmIcon.confirmIcon, color: nativeDefault.unsafe_rawColors.WHITE, size: native.Icon.Sizes.SMALL, source: _modDef8552 });
-    };
-    tmp5 = jsx(stateFromStores(5300), { body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, renderConfirmRightIcon: null });
     const tmp8 = stateFromStores(5300);
+    const intl = tmp(1115).intl;
+    tmp5 = <tmp8 body={null} confirmText={null} cancelText={intl.string(tmp(1115).t.f3Pet9)} onConfirm={function onConfirm() {
+      const obj = LinkingDefault;
+      obj.openURL(stateFromStores.url);
+      const obj2 = SurveyActionCreators;
+      obj2.surveyHide(stateFromStores.key, false);
+    }} onCancel={function onCancel() {
+      const obj = SurveyActionCreators;
+      return obj.surveyHide(stateFromStores.key, true);
+    }} renderConfirmRightIcon={function renderConfirmRightIcon() {
+      const Icon = native.Icon;
+      return <Icon style={confirmIcon.confirmIcon} color={nativeDefault.unsafe_rawColors.WHITE} size={native.Icon.Sizes.SMALL} source={AssetRegistryDefault} />;
+    }} />;
   }
   return tmp5;
 };

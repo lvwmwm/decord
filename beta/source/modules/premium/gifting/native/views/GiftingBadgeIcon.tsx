@@ -5,17 +5,18 @@
 // Exports: default
 
 // Module 10214 (GiftingBadgeIcon)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size_mod from "module_2" /* 2 */;
 
-const Image = fn(17).Image;
-const jsx = fn(21).jsx;
-let size = fn(2);
+const Image = react_native.Image;
+const jsx = Fragment.jsx;
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeIcon.tsx");
 
 export default function GiftingBadgeIcon(uri) {
-  const size = uri.size;
-  const obj = { source: { uri: uri.icon }, resizeMode: "contain", style: null };
+  size = uri.size;
   const items = [{ width: size, height: size }, uri.style];
-  obj.style = items;
-  return <Image source={{ uri: arg0.icon }} resizeMode="contain" style={null} />;
+  return <Image source={{ uri: arg0.icon }} resizeMode="contain" style={items} />;
 };

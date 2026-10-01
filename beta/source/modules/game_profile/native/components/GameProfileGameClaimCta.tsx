@@ -5,25 +5,31 @@
 // Exports: default
 
 // Module 8364 (GameProfileGameClaimCta)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const RelativeMarketingURLs = fn(1074).RelativeMarketingURLs;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let c1;
+
+const RelativeMarketingURLs = Constants.RelativeMarketingURLs;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileGameClaimCta.tsx");
 
 export default function GameProfileGameClaimCta(trackAction) {
+  let tmp3;
   trackAction = trackAction.trackAction;
   const items = [trackAction];
   const linkedApplications = trackAction.game.linkedApplications;
   let someResult;
-  const callback = noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
-    if (v3 === 2) {
-      v3 = 3;
+  const callback = react.useCallback(_asyncToGenerator(async (arg0, value) => {
+    let v1;
+    let v3;
+    if (trackAction === 2) {
+      trackAction = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -34,36 +40,37 @@ export default function GameProfileGameClaimCta(trackAction) {
       }
     } else {
       try {
-        v3 = 2;
-        if (0 === v1) {
+        trackAction = 2;
+        if (0 === c1) {
           if (arg0 === 1) {
-            v3 = 3;
+            trackAction = 3;
             throw value;
           } else if (arg0 === 2) {
-            v3 = 3;
+            trackAction = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            trackAction(v3(8139).GameProfileTrackActionActions.ClaimGame);
-            v1 = 1;
-            v3 = 1;
-            const obj4 = { value: v1(6735).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(6739).LoginHandoffSource.GAME_CLAIM), done: false };
+            trackAction(trackAction(dependencyMap[4]).GameProfileTrackActionActions.ClaimGame);
+            const obj5 = c1(dependencyMap[5]);
+            c1 = 1;
+            trackAction = 1;
+            const obj4 = { value: obj5.redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, trackAction(dependencyMap[6]).LoginHandoffSource.GAME_CLAIM), done: false };
             return obj4;
           }
         } else if (arg0 === 1) {
-          v3 = 3;
+          trackAction = 3;
           throw value;
         } else if (arg0 === 2) {
-          v3 = 3;
+          trackAction = 3;
           const obj = { value, done: true };
           return obj;
         } else {
-          v3 = 3;
+          trackAction = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp5) {
-        v3 = tmp;
-        throw tmp5;
+      } catch (tmp4) {
+        trackAction = 3;
+        throw tmp4;
       }
     }
   }), items);
@@ -71,11 +78,10 @@ export default function GameProfileGameClaimCta(trackAction) {
     someResult = linkedApplications.some((type) => type.type === trackAction(dependencyMap[7]).GameLinkTypes.OFFICIAL);
   }
   if (someResult == null) {
-    let obj = { variant: "secondary", size: "md", text: null, onPress: null };
+    const tmp4 = jsx;
+    const Button = trackAction(5281).Button;
     const intl = trackAction(1115).intl;
-    obj.text = intl.string(trackAction(1115).t["mqg+to"]);
-    obj.onPress = callback;
-    let tmp3 = jsx(trackAction(5281).Button, { variant: "secondary", size: "md", text: null, onPress: null });
+    tmp3 = <Button variant="secondary" size="md" text={intl.string(trackAction(1115).t["mqg+to"])} onPress={callback} />;
   } else {
     tmp3 = null;
   }

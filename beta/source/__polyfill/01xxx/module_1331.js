@@ -3,7 +3,8 @@
 // Dependencies: [1332, 1333]
 
 // Module 1331
-import supported from "supported" /* 1332 */;
+import _mod1332 from "module_1332" /* 1332 */;
+import _mod1333 from "module_1333" /* 1333 */;
 
 function isUndefinedOrNull(arg0) {
   return null == arg0;
@@ -17,7 +18,7 @@ function isBuffer(copy) {
     tmp = typeof copy.length !== "number";
   }
   let tmp2 = !tmp;
-  if (!tmp) {
+  if (tmp2) {
     copy = copy.copy;
     let tmp3 = typeof copy === "function";
     if (typeof copy === "function") {
@@ -25,104 +26,103 @@ function isBuffer(copy) {
     }
     if (tmp3) {
       tmp3 = !(copy.length > 0 && typeof copy[0] !== "number");
-      const tmp4 = copy.length > 0 && typeof copy[0] !== "number";
     }
     tmp2 = tmp3;
   }
   return tmp2;
 }
-const exports = (time, getTime, arg2) => {
-  let obj = arg2;
-  if (!arg2) {
-    obj = {};
-  }
-  let tmp = time === getTime;
-  if (tmp) {
-    return tmp;
-  } else {
-    const _Date = Date;
-    if (!(time instanceof Date)) {
-      if (time) {
-        if (getTime) {
-          let tmp3 = (function objEquiv(time, getTime, arg2) {
-            if (!isUndefinedOrNull(time)) {
-              if (!isUndefinedOrNull(getTime)) {
-                if (time.prototype !== getTime.prototype) {
+exports = (getTime, getTime2, arg2) => {
+  function objEquiv(getTime, getTime2, arg2) {
+    const tmp = isUndefinedOrNull;
+    if (!isUndefinedOrNull(getTime)) {
+      if (!tmp(getTime2)) {
+        if (getTime.prototype !== getTime2.prototype) {
+          return false;
+        } else if (_mod1332(getTime)) {
+          let tmp17 = tmp21(tmp22[0])(getTime2);
+          if (tmp17) {
+            const callResult = slice.call(getTime);
+            tmp17 = exports(callResult, slice.call(getTime2), arg2);
+          }
+          return tmp17;
+        } else {
+          const tmp3 = isBuffer;
+          if (isBuffer(getTime)) {
+            if (tmp3(getTime2)) {
+              if (getTime.length !== getTime2.length) {
+                return false;
+              } else {
+                let num = 0;
+                if (0 < getTime.length) {
+                  while (getTime[num] === getTime2[num]) {
+                    num = num + 1;
+                  }
                   return false;
-                } else if (supported(time)) {
-                  const tmp17 = tmp23(tmp24[0])(getTime);
-                  if (!tmp17) {
-                    return tmp17;
-                  } else {
-                    const call = slice.call;
-                    const call2 = tmp18.call;
-                    exports(typeof call === "unknown" ? slice() : call(time), typeof call2 === "unknown" ? slice() : call2(getTime), arg2);
-                    const tmp19 = typeof call === "unknown" ? slice() : call(time);
-                  }
-                } else {
-                  if (isBuffer(time)) {
-                    if (tmp3(getTime)) {
-                      if (time.length !== getTime.length) {
-                        return false;
-                      } else {
-                        let num = 0;
-                        if (0 < time.length) {
-                          while (time[num] === getTime[num]) {
-                            num = num + 1;
-                          }
-                          return false;
-                        }
-                        return true;
-                      }
-                    } else {
-                      return false;
-                    }
-                  } else {
-                    try {
-                      const arr = tmp23(tmp24[1])(time);
-                      const arr2 = tmp23(tmp24[1])(getTime);
-                      if (arr.length != arr2.length) {
-                        return false;
-                      } else {
-                        const sorted = arr.sort();
-                        const sorted1 = arr2.sort();
-                        let diff = arr.length - 1;
-                        if (0 <= diff) {
-                          while (arr[diff] == arr2[diff]) {
-                            diff = diff - 1;
-                          }
-                          return false;
-                        }
-                        let diff1 = arr.length - 1;
-                        if (0 <= diff1) {
-                          while (exports(time[arr[diff1]], getTime[arr[diff1]], arg2)) {
-                            diff1 = diff1 - 1;
-                          }
-                          return false;
-                        }
-                        return typeof time === typeof getTime;
-                      }
-                    } catch (err) {
-                      return false;
-                    }
-                  }
-                  tmp3 = isBuffer;
                 }
+                return true;
               }
+            } else {
+              return false;
             }
-            return false;
-          })(time, getTime, obj);
+          } else {
+            try {
+              const arr = _mod1333(getTime);
+              const arr2 = _mod1333(getTime2);
+              if (arr.length != arr2.length) {
+                return false;
+              } else {
+                const sorted = arr.sort();
+                const sorted1 = arr2.sort();
+                let diff = arr.length - 1;
+                if (0 <= diff) {
+                  while (arr[diff] == arr2[diff]) {
+                    diff = diff - 1;
+                  }
+                  return false;
+                }
+                let diff1 = arr.length - 1;
+                if (0 <= diff1) {
+                  while (exports(getTime[arr[diff1]], getTime2[arr[diff1]], arg2)) {
+                    diff1 = diff1 - 1;
+                  }
+                  return false;
+                }
+                return typeof getTime === typeof getTime2;
+              }
+            } catch (err) {
+              return false;
+            }
+          }
         }
       }
-      if (!obj.strict) {
-        tmp = time == getTime;
-      }
-    } else {
-      const _Date2 = Date;
     }
-    time = time.getTime();
-    tmp3 = time === getTime.getTime();
+    return false;
   }
+  let tmp = arg2 || {};
+  let tmp2 = getTime === getTime2;
+  let tmp3 = tmp2;
+  if (!tmp3) {
+    let tmp5;
+    const _Date = Date;
+    if (getTime instanceof Date) {
+      const _Date2 = Date;
+      if (getTime2 instanceof Date) {
+        const time = getTime.getTime();
+        tmp5 = time === getTime2.getTime();
+      }
+      tmp3 = tmp5;
+    }
+    if (getTime) {
+      if (getTime2) {
+        tmp5 = objEquiv(getTime, getTime2, tmp);
+      }
+    }
+    if (!tmp.strict) {
+      tmp2 = getTime == getTime2;
+    }
+    tmp5 = tmp2;
+  }
+  return tmp3;
 };
 
 export default exports;

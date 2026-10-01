@@ -4,7 +4,7 @@
 // Dependencies: [15486, 7417, 2021, 6416, 11006, 1115, 2]
 
 // Module 15500 (GuildSettingActivityJoining)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
@@ -12,26 +12,32 @@ import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuil
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
+let c2;
+let c3;
 ({ getSelectedGuildId: c2, useUserSafetySettingsSelectedGuildStore: c3 } = UserSettingsSafetySelectedGuildStore);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["T+nevN"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["T+nevN"]);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t["b+bVSw"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["b+bVSw"]);
   },
-  parent: SettingsConstants.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
+    const selectedGuildId = _false().selectedGuildId;
     const ActivityJoiningRestrictedGuilds = UserSettings.ActivityJoiningRestrictedGuilds;
     const setting = ActivityJoiningRestrictedGuilds.useSetting();
-    return !setting.includes(React3().selectedGuildId);
+    return !setting.includes(selectedGuildId);
   },
   onValueChange(arg0) {
     const tmp = React2();
-    const sanitizedActivityJoiningRestrictedGuilds = UserSettingsUtils.getSanitizedActivityJoiningRestrictedGuilds();
-    if (arg0) {
+    const obj = UserSettingsUtils;
+    const sanitizedActivityJoiningRestrictedGuilds = obj.getSanitizedActivityJoiningRestrictedGuilds();
+    const tmp4 = arg0;
+    if (tmp4) {
       sanitizedActivityJoiningRestrictedGuilds.delete(tmp);
     } else {
       sanitizedActivityJoiningRestrictedGuilds.add(tmp);
@@ -40,7 +46,8 @@ const toggle = SettingBuilders.createToggle({
     const items = [...sanitizedActivityJoiningRestrictedGuilds];
     ActivityJoiningRestrictedGuilds.updateSetting(items);
   }
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/GuildSettingActivityJoining.tsx");
 
 export default toggle;

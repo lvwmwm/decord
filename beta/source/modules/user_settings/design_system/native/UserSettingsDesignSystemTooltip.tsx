@@ -5,21 +5,37 @@
 // Exports: default, useCanRotate
 
 // Module 15390 (UserSettingsDesignSystemTooltip)
+import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import LayerScope from "LayerScope" /* 6577 */;
+import LayerScope2 from "LayerScope" /* 6577 */;
 import DeviceOrientation from "DeviceOrientation" /* 7780 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
 function Content() {
-  const tmp2 = first2(noop.useState(false), 2);
-  const first = tmp2[0];
-  dependencyMap = tmp2[1];
-  const tmp4 = first2(noop.useState(false), 2);
-  const first1 = tmp4[0];
-  const effect = noop.useEffect(() => {
+  let closure_1;
+  let first;
+  let first1;
+  let first2;
+  let items2;
+  let obj5;
+  let tmp10;
+  let tmp11;
+  let tmp14;
+  let tmp6;
+  let obj = react;
+  const tmp = closure_8();
+  [first, closure_1] = react.useState(false);
+  first1 = undefined;
+  [first1, tmp6] = react.useState(false);
+  const effect = react.useEffect(() => {
     const obj = DeviceOrientation;
     if (first1) {
       obj.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
@@ -27,17 +43,19 @@ function Content() {
       const result = obj.lockOrientationForiOS();
     }
   });
-  const effect1 = noop.useEffect(() => () => first1(closure_1_1[5]).lockOrientationForiOS(), []);
-  const items = [first1, tmp4[1]];
-  const tmp = closure_8();
-  [tmp9, tmp10] = first2(items, 2);
-  const tmp11 = first2(noop.useState(false), 2);
-  first2 = tmp11[0];
+  const effect1 = react.useEffect(() => () => {
+    const obj = first1(closure_1_1[5]);
+    return obj.lockOrientationForiOS();
+  }, []);
+  const items = [first1, tmp6];
+  [tmp10, tmp11] = items;
+  _slicedToArray(items, 2);
+  [first2, tmp14] = react.useState(false);
   let str = "Show tooltip";
   if (first) {
     str = "Hide tooltip";
   }
-  const ref = noop.useRef(null);
+  const ref = obj.useRef(null);
   const items1 = [first2, first];
   const memo = obj.useMemo(() => {
     let str = "top";
@@ -47,59 +65,56 @@ function Content() {
     return {
       label: "NEW",
       position: str,
-      visible: first1,
+      visible,
       onPress() {
         return closure_1_1(false);
       }
     };
   }, items1);
-  const tmp8 = first2(items, 2);
-  const tooltip = first1(10590).useTooltip(ref, memo);
-  const obj3 = { children: null };
-  const obj4 = {
-    style: tmp.container,
-    children: closure_5(first1(5281).Button, {
-      ref,
-      onPress() {
-        closure_1(!first1);
-      },
-      variant: "primary",
-      text: str,
-      size: "md"
-    })
+  const obj2 = first1(10590);
+  const tooltip = obj2.useTooltip(ref, memo);
+  const obj3 = { children: items2 };
+  const obj4 = { style: tmp.container, children: closure_5(first1(5281).Button, obj5) };
+  obj5 = {
+    ref,
+    onPress() {
+      closure_1(!first);
+    },
+    variant: "primary",
+    text: str,
+    size: "md"
   };
-  const items2 = [closure_5(View, obj4), closure_5(first1(6621).TableSwitchRow, { label: "Unlock Orientation", value: tmp9, onValueChange: tmp10 }), closure_5(first1(6621).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp11[1] }), closure_5(TooltipNote, {})];
-  obj3.children = items2;
+  items2 = [closure_5(View, obj4), closure_5(first1(6621).TableSwitchRow, { label: "Unlock Orientation", value: tmp10, onValueChange: tmp11 }), closure_5(first1(6621).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp14 }), closure_5(TooltipNote, {})];
   return closure_7(closure_6, obj3);
 }
 class TooltipNote {
   constructor() {
-    obj = { variant: "text-sm/normal", style: { padding: 16, paddingTop: 16 }, children: null };
-    items = ["Note: If your tooltip is not displaying or it is not in the right position/zIndex, consider adding or moving an existing"];
-    items[1] = jsx(closure_0(closure_1[9]).Text, { variant: "text-sm/bold", children: " <LayerScope/>" });
-    items[2] = " on the surface you expect to see the tooltip.";
-    obj.children = items;
-    return jsxs(closure_0(closure_1[9]).Text, obj);
+    let items;
+    const obj = { variant: "text-sm/normal", style: { padding: 16, paddingTop: 16 }, children: items };
+    const Text = Text_Text.Text;
+    items = ["Note: If your tooltip is not displaying or it is not in the right position/zIndex, consider adding or moving an existing", hasOwnProperty(Text_Text.Text, { variant: "text-sm/bold", children: " <LayerScope/>" }), " on the surface you expect to see the tooltip."];
+    return metroImportDefault(Text, obj);
   }
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const View = react_native.View;
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center", justifyContent: "center" }, flex: { flex: 1 } });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTooltip.tsx");
 
 export default function UserSettingsDesignSystemTooltip() {
-  const obj = { style: closure_8().flex, bottom: true, children: null };
-  const tmp = closure_8();
-  obj.children = hasOwnProperty(LayerScope.LayerScope, { children: hasOwnProperty(Content, {}) });
-  return hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj);
+  let LayerScope;
+  let obj2;
+  const obj = { style: closure_8().flex, bottom: true, children: hasOwnProperty(LayerScope, obj2) };
+  const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
+  obj2 = { children: hasOwnProperty(Content, {}) };
+  LayerScope = LayerScope2.LayerScope;
+  return hasOwnProperty(SafeAreaPaddingView, obj);
 };
 export const useCanRotate = function useCanRotate() {
-  const tmp = _slicedToArray(noop.useState(false), 2);
-  const first = tmp[0];
-  const effect = noop.useEffect(() => {
+  let first;
+  let tmp3;
+  [first, tmp3] = react.useState(false);
+  const effect = react.useEffect(() => {
     const obj = DeviceOrientation;
     if (first1) {
       obj.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
@@ -107,8 +122,11 @@ export const useCanRotate = function useCanRotate() {
       const result = obj.lockOrientationForiOS();
     }
   });
-  const effect1 = noop.useEffect(() => () => first1(closure_1_1[5]).lockOrientationForiOS(), []);
-  const items = [first, tmp[1]];
+  const effect1 = react.useEffect(() => () => {
+    const obj = first1(closure_1_1[5]);
+    return obj.lockOrientationForiOS();
+  }, []);
+  const items = [first, tmp3];
   return items;
 };
 export { TooltipNote };

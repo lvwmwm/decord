@@ -5,52 +5,54 @@
 // Exports: AnimatedTooltip
 
 // Module 10591 (AnimatedTooltip)
-import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4550 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 4550 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9424 */;
-import Tooltip from "Tooltip" /* 10592 */;
+import Tooltip2 from "Tooltip" /* 10592 */;
 import TooltipConstants from "TooltipConstants" /* 10594 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const StyleSheet = fn(17).StyleSheet;
-const jsx = fn(21).jsx;
+const StyleSheet = react_native.StyleSheet;
+const jsx = Fragment.jsx;
 function renderTooltipItem(arg0, arg1) {
-  const obj = { style: null, pointerEvents: "box-none", children: null };
   const items = [arg1, StyleSheet.absoluteFill];
-  obj.style = items;
   let tmpResult = null;
+  const View = ReanimatedRexportDefault.View;
   if (null != arg0) {
     const obj2 = {};
+    const Tooltip = Tooltip2.Tooltip;
     const merged = Object.assign(arg0);
-    tmpResult = tmp(Tooltip.Tooltip, obj2);
+    tmpResult = tmp(Tooltip, obj2);
   }
-  obj.children = tmpResult;
-  return jsx(ReanimatedRexportDefault.View, { style: null, pointerEvents: "box-none", children: null });
+  return <View style={items} pointerEvents="box-none">{tmpResult}</View>;
 }
-const size = fn(2);
 let result = size.fileFinishedImporting("design/components/Tooltip/native/AnimatedTooltip.native.tsx");
 
 export const AnimatedTooltip = function AnimatedTooltip(visible) {
+  let closure_1;
+  let first;
+  let tmp8;
   visible = visible.visible;
   const merged = Object.assign(visible, Object.assign({ visible: 0 }));
-  const result = TooltipConstants.tooltipEnterExitAnimation(merged.position);
-  const tmp3 = _slicedToArray(noop.useState(false), 2);
-  closure_1 = tmp3[1];
+  closure_1 = undefined;
+  const enabled = react.useContext(react2.AccessibilityPreferencesContext).reducedMotion.enabled;
+  const obj = TooltipConstants;
+  const result = obj.tooltipEnterExitAnimation(merged.position);
+  [first, closure_1] = react.useState(false);
   const items = [visible];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     closure_1(visible);
   }, items);
-  const obj2 = { useReducedMotion: noop.useContext(AccessibilityPreferencesContext.AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null };
-  let tmp7;
-  const tmp5 = jsx;
-  if (tmp3[0]) {
-    tmp7 = merged;
+  const obj2 = { useReducedMotion: enabled, item: tmp8, entering: result, exiting: result, renderItem: renderTooltipItem };
+  tmp8 = undefined;
+  const tmp6 = jsx;
+  const tmp7 = AnimatedEnterExitItemDefault;
+  if (first) {
+    tmp8 = merged;
   }
-  obj2.item = tmp7;
-  obj2.entering = result;
-  obj2.exiting = result;
-  obj2.renderItem = renderTooltipItem;
-  return tmp5(AnimatedEnterExitItemDefault, obj2);
+  return tmp6(tmp7, obj2);
 };

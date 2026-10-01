@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 16011 (openManageAccountsModal)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import Constants from "Constants" /* 11907 */;
@@ -15,6 +15,9 @@ const SWITCH_ACCOUNTS_MODAL_KEY = Constants.SWITCH_ACCOUNTS_MODAL_KEY;
 const result = size.fileFinishedImporting("modules/multi_account/native/openManageAccountsModal.tsx");
 
 export default function openManageAccountsModal(initialRouteName) {
-  ActionSheetActionCreatorsDefault.hideActionSheet();
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(16012, dependencyMap.paths), { initialRouteName }, SWITCH_ACCOUNTS_MODAL_KEY);
+  const obj = ActionSheetActionCreatorsDefault;
+  obj.hideActionSheet();
+  const obj2 = ModalActionCreatorsDefault;
+  const obj3 = { initialRouteName };
+  obj2.pushLazy(asyncRequire(16012, dependencyMap.paths), obj3, SWITCH_ACCOUNTS_MODAL_KEY);
 };

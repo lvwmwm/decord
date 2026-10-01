@@ -5,16 +5,18 @@
 // Exports: default
 
 // Module 12673 (useConnectionFilteredAppIdentities)
-import noop from "module_19" /* 19 */;
+import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2007 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_0;
 
-const require = fn;
-let closure_3 = fn(2007).APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS;
-const size = fn(2);
+let closure_3 = UserApplicationIdentityConstants.APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS;
 const result = size.fileFinishedImporting("modules/user_application_identity/hooks/useConnectionFilteredAppIdentities.tsx");
 
 export default function useConnectionFilteredAppIdentities(arg0) {
+  let items;
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -22,35 +24,29 @@ export default function useConnectionFilteredAppIdentities(arg0) {
   let data;
   const includeHidden = obj.includeHidden;
   _require = tmp;
-  const userApplicationIdentities = require("UserApplicationIdentityActionCreators").useUserApplicationIdentities(arg0);
+  const obj2 = require("UserApplicationIdentityActionCreators");
+  const userApplicationIdentities = obj2.useUserApplicationIdentities(arg0);
   data = userApplicationIdentities.data;
-  const obj3 = { isLoading: userApplicationIdentities.isLoading, filteredAppIdentities: null };
-  let items = [data, undefined !== includeHidden && includeHidden];
-  obj3.filteredAppIdentities = noop.useMemo(() => {
-    let items = data;
-    if (data == null) {
-      items = [];
-    }
-    return items.filter((profile) => {
-      let someResult = closure_2_3.some((applicationId) => {
-        let migrationExperimentEnabled = applicationId.applicationId === profile.application_id;
-        if (migrationExperimentEnabled) {
-          migrationExperimentEnabled = applicationId.getMigrationExperimentEnabled("useConnectionFilteredAppIdentities");
+  const obj3 = {
+    isLoading: userApplicationIdentities.isLoading,
+    filteredAppIdentities: react.useMemo(() => {
+      let items = data;
+      if (data == null) {
+        items = [];
+      }
+      return items.filter((profile) => {
+        closure_0 = profile;
+        let someResult = closure_2_3.some((applicationId) => {
+          const migrationExperimentEnabled = applicationId.applicationId === application_id.application_id && applicationId.getMigrationExperimentEnabled("useConnectionFilteredAppIdentities");
+          return migrationExperimentEnabled;
+        }) && null != profile.profile && null != profile.profile.username;
+        if (someResult) {
+          someResult = true === profile.profile.connection_visible || closure_1_0;
         }
-        return migrationExperimentEnabled;
+        return someResult;
       });
-      if (someResult) {
-        someResult = null != profile.profile;
-      }
-      if (someResult) {
-        someResult = null != profile.profile.username;
-      }
-      if (someResult) {
-        someResult = true === profile.profile.connection_visible || closure_1_0;
-        const tmp4 = true === profile.profile.connection_visible || closure_1_0;
-      }
-      return someResult;
-    });
-  }, items);
+    }, items)
+  };
+  items = [data, undefined !== includeHidden && includeHidden];
   return obj3;
 };

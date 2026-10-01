@@ -12,11 +12,12 @@ let result = size.fileFinishedImporting("modules/chat/native/ChatChangesetUpdate
 
 export const getAndIncrementChangesetIdForChat = function getAndIncrementChangesetIdForChat(arg0) {
   let num = weakMap.get(arg0);
+  const obj = weakMap;
   if (num == null) {
     num = 0;
   }
   const sum = num + 1;
-  const result = weakMap.set(arg0, sum);
+  const result = obj.set(arg0, sum);
   return sum;
 };
 export const getChangesetIdForChat = function getChangesetIdForChat(current) {

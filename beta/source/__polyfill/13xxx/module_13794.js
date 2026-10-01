@@ -9,10 +9,14 @@ import _mod13797 from "module_13797" /* 13797 */;
 
 let fn = Object;
 let closure_3 = _mod13795("".split);
-if (_mod13792(() => !Object("z").propertyIsEnumerable(0))) {
+if (_mod13792(() => {
+  const obj = Object("z");
+  return !obj.propertyIsEnumerable(0);
+})) {
   fn = (arg0) => {
+    let tmp2;
     if ("String" === _mod13797(arg0)) {
-      let tmp2 = closure_3(arg0, "");
+      tmp2 = closure_3(arg0, "");
     } else {
       tmp2 = Object(arg0);
     }

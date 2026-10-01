@@ -5,16 +5,14 @@
 // Exports: default
 
 // Module 7822 (isChangelogChannel)
+import ChangelogConstants from "ChangelogConstants" /* 2098 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
-const SYSTEM_UPDATES_USER_ID = fn(2098).SYSTEM_UPDATES_USER_ID;
-const size = fn(2);
+const SYSTEM_UPDATES_USER_ID = ChangelogConstants.SYSTEM_UPDATES_USER_ID;
 const result = size.fileFinishedImporting("modules/changelog/utils/isChangelogChannel.tsx");
 
 export default function isChangelogChannel(arg0) {
-  let tmp = null != arg0;
-  if (tmp) {
-    tmp = arg0 === ChannelStore.getDMFromUserId(SYSTEM_UPDATES_USER_ID);
-  }
+  const tmp = null != arg0 && arg0 === ChannelStore.getDMFromUserId(SYSTEM_UPDATES_USER_ID);
   return tmp;
 };

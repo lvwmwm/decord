@@ -5,29 +5,35 @@
 // Exports: useIsEligibleForBogoOffer
 
 // Module 10171 (useIsEligibleForBogoOffer)
-import noop from "module_19" /* 19 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 import PromotionsStore from "PromotionsStore" /* 10128 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const PremiumTypes = fn(1374).PremiumTypes;
-const size = fn(2);
+let dependencyMap;
+
+const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/premium/native/hooks/useIsEligibleForBogoOffer.android.tsx");
 
 export const useIsEligibleForBogoOffer = function useIsEligibleForBogoOffer() {
+  let activeBogoRewardPromotion;
+  let forceUpdate;
+  let premiumTypeSubscription;
   const items = [PromotionsStore];
-  const stateFromStores = forceUpdate(504).useStateFromStores(items, () => activeBogoRewardPromotion.getActiveBogoRewardPromotion());
   const obj = forceUpdate(504);
+  const stateFromStores = obj.useStateFromStores(items, () => activeBogoRewardPromotion.getActiveBogoRewardPromotion());
   const items1 = [SubscriptionStore];
-  const stateFromStores1 = forceUpdate(504).useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
   const obj2 = forceUpdate(504);
-  const premiumTrialOffer = forceUpdate(6867).usePremiumTrialOffer();
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
   const obj4 = forceUpdate(6867);
-  const premiumDiscountOffer = forceUpdate(10170).usePremiumDiscountOffer();
+  const premiumTrialOffer = obj4.usePremiumTrialOffer();
   const obj5 = forceUpdate(10170);
-  const isPaymentsBlocked = forceUpdate(6837).useIsPaymentsBlocked();
+  const premiumDiscountOffer = obj5.usePremiumDiscountOffer();
   const obj6 = forceUpdate(6837);
-  forceUpdate = forceUpdate(6860).useForceUpdate();
+  const isPaymentsBlocked = obj6.useIsPaymentsBlocked();
+  const obj7 = forceUpdate(6860);
+  forceUpdate = obj7.useForceUpdate();
   let valueOfResult = null;
   if (null != stateFromStores) {
     const endDate = stateFromStores.endDate;
@@ -35,8 +41,8 @@ export const useIsEligibleForBogoOffer = function useIsEligibleForBogoOffer() {
   }
   dependencyMap = valueOfResult;
   const items2 = [valueOfResult, forceUpdate];
-  const effect = noop.useEffect(() => {
-    if (null != valueOfResult) {
+  const effect = react.useEffect(() => {
+    if (null != dependencyMap) {
       const _Date = Date;
       const diff = tmp - Date.now();
       if (diff > 0) {

@@ -5,41 +5,48 @@
 // Exports: CollectiblesShopPricePlaceholder
 
 // Module 8326 (CollectiblesShopPricePlaceholder)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
+let set;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { skeletonContainer: { height: 16, flex: 1, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND } };
-let closure_5 = createStyles.createStyles(obj2);
+let obj2;
+const jsx = Fragment.jsx;
+let obj = { skeletonContainer: obj2 };
+obj2 = { height: 16, flex: 1, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+let closure_5 = createStyles.createStyles(obj);
 const __initData = { code: "function CollectiblesShopPricePlaceholderTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopPricePlaceholder.tsx");
 
 export const CollectiblesShopPricePlaceholder = function CollectiblesShopPricePlaceholder(style) {
   let sharedValue;
+  style = style.style;
   const tmp = closure_5();
-  sharedValue = sharedValue(4566).useSharedValue(0.3);
-  const items = [sharedValue];
-  const effect = noop.useEffect(() => {
-    const obj = ReanimatedRexport;
-    const result = sharedValue.set(obj.withRepeat(timing.withTiming(1, { duration: 650 }), -1, true));
-  }, items);
   let obj = sharedValue(4566);
+  sharedValue = obj.useSharedValue(0.3);
+  const items = [sharedValue];
+  const effect = react.useEffect(() => {
+    set = sharedValue.set;
+    const withRepeat = ReanimatedRexport.withRepeat;
+    ReanimatedRexport;
+    const obj = timing;
+    const result = set(withRepeat(obj.withTiming(1, { duration: 650 }), -1, true));
+  }, items);
   const fn = function h() {
-    return { opacity: sharedValue.get() };
+    const obj = { opacity: sharedValue.get() };
+    return obj;
   };
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 10107093534072;
   fn.__initData = __initData;
-  const animatedStyle = sharedValue(4566).useAnimatedStyle(fn);
-  const obj3 = { style: null };
-  const items1 = [tmp.skeletonContainer, style.style, animatedStyle];
-  obj3.style = items1;
-  return jsx(ReanimatedRexportDefault.View, { style: null });
+  const obj2 = sharedValue(4566);
+  const animatedStyle = obj2.useAnimatedStyle(fn);
+  const items1 = [tmp.skeletonContainer, style, animatedStyle];
+  return jsx(ReanimatedRexportDefault.View, { style: items1 });
 };

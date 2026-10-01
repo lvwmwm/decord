@@ -4,34 +4,42 @@
 // Dependencies: [9540, 7417, 1074, 504, 1115, 11006, 15071, 2]
 
 // Module 15070 (CommunityActivityAlertsSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import GuildIncidentsStore from "GuildIncidentsStore" /* 9540 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.D9yVAH);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.D9yVAH);
   },
-  parent: fn(7417).MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.NOTIFICATIONS,
   useDescription: function useCommunityActivityAlertsSettingDescription() {
-    const intl = util.intl;
-    return intl.string(util.t["0PhAOH"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["0PhAOH"]);
   },
   usePredicate: function useHasCommunityActivityAlertsSetting() {
+    let guildAlertSettings;
     const items = [GuildIncidentsStore];
-    return initialize.useStateFromStores(items, () => Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0);
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0);
   },
   screen: {
-    route: fn(1074).UserSettingsSections.COMMUNITY_ALERTS,
+    route: UserSettingsSections.COMMUNITY_ALERTS,
     getComponent() {
       return require("UserSettingsCommunityNotifications").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/CommunityActivityAlertsSetting.tsx");
 
 export default route;

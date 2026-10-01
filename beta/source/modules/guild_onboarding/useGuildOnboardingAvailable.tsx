@@ -5,33 +5,37 @@
 // Exports: default, isGuildOnboardingAvailable
 
 // Module 6753 (useGuildOnboardingAvailable)
+import Constants from "Constants" /* 1074 */;
 import ImpersonateStore from "ImpersonateStore" /* 2101 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
+const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/guild_onboarding/useGuildOnboardingAvailable.tsx");
 
 export default function useGuildOnboardingAvailable(features) {
   _require = features;
   const items = [ImpersonateStore];
-  let stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  let stateFromStores = obj.useStateFromStores(items, () => {
     let id;
-    if (closure_0 != null) {
+    if (features != null) {
       id = tmp.id;
     }
     if (null == id) {
       return false;
     } else {
-      return ImpersonateStore.isFullServerPreview(tmp.id) && ImpersonateStore.isOnboardingEnabled(tmp.id);
+      const tmp4 = ImpersonateStore.isFullServerPreview(features.id) && ImpersonateStore.isOnboardingEnabled(features.id);
+      return tmp4;
     }
   });
   if (!stateFromStores) {
     let hasItem;
     if (features != null) {
       features = features.features;
+      let tmp4 = GuildFeatures;
       hasItem = features.has(GuildFeatures.GUILD_ONBOARDING_HAS_PROMPTS);
     }
     stateFromStores = hasItem;

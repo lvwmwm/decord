@@ -5,57 +5,52 @@
 // Exports: default
 
 // Module 16114 (ICYMIFeedbackSheet)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl8 from "intl" /* 1115 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7799 */;
 import ICYMIAnalytics2 from "ICYMIAnalytics" /* 7807 */;
 import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 11142 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/icymi/native/ICYMIFeedbackSheet.tsx");
 
 export default function ICYMIFeedbackSheet() {
-  const obj = { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, otherKey: "other", trackOpen: null, feedbackReasons: null, trackReport: null };
-  const intl = util.intl;
-  obj.headerLabel = intl.string(util.t["ppfH9+"]);
-  const intl2 = util.intl;
-  obj.ratingsBodyLabel = intl2.string(util.t["ePk/Cf"]);
-  const intl3 = util.intl;
-  obj.reasonsHeaderLabel = intl3.string(util.t.sBOuOf);
-  let obj2 = { label: null, value: "irrelevant_content" };
-  const intl4 = util.intl;
-  obj2.label = intl4.string(util.t.F6TmZA);
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  FeedbackActionSheetDefault;
+  const intl = intl8.intl;
+  const intl2 = intl8.intl;
+  const intl3 = intl8.intl;
+  let obj2 = { label: intl4.string(intl8.t.F6TmZA), value: "irrelevant_content" };
+  intl4 = intl8.intl;
   let items = [obj2, , , , ];
-  const obj3 = { label: null, value: "not_enough_content" };
-  const intl5 = util.intl;
-  obj3.label = intl5.string(util.t.voWAzi);
+  const obj3 = { label: intl5.string(intl8.t.voWAzi), value: "not_enough_content" };
+  intl5 = intl8.intl;
   items[1] = obj3;
-  const obj4 = { label: null, value: "too_much_content" };
-  const intl6 = util.intl;
-  obj4.label = intl6.string(util.t.Ay8iwx);
+  const obj4 = { label: intl6.string(intl8.t.Ay8iwx), value: "too_much_content" };
+  intl6 = intl8.intl;
   items[2] = obj4;
-  const obj5 = { label: null, value: "laggy" };
-  const intl7 = util.intl;
-  obj5.label = intl7.string(util.t["Yu+52W"]);
+  const obj5 = { label: intl7.string(intl8.t["Yu+52W"]), value: "laggy" };
+  intl7 = intl8.intl;
   items[3] = obj5;
   items[4] = { label: "Other", value: "other" };
-  obj.reasons = items;
-  obj.trackOpen = ICYMIAnalytics2.ICYMIAnalytics.trackFeedFeedbackPromptViewed;
-  obj.feedbackReasons = ["other"];
-  obj.trackReport = function trackReport(reason) {
-    ICYMIActionCreatorsDefault.giveFeedback();
+  return <tmp headerLabel={intl.string(intl8.t["ppfH9+"])} showHeaderCloseButton hideDontShowAgainCheckbox ratingsBodyLabel={intl2.string(intl8.t["ePk/Cf"])} reasonsHeaderLabel={intl3.string(intl8.t.sBOuOf)} reasons={items} otherKey="other" trackOpen={ICYMIAnalytics2.ICYMIAnalytics.trackFeedFeedbackPromptViewed} feedbackReasons={["other"]} trackReport={function trackReport(reason) {
+    let rating;
+    const obj = ICYMIActionCreatorsDefault;
+    obj.giveFeedback();
     const ICYMIAnalytics = ICYMIAnalytics2.ICYMIAnalytics;
     let tmp2;
+    const trackFeedFeedbackSubmitted = ICYMIAnalytics.trackFeedFeedbackSubmitted;
     if (null != reason.reason) {
       const items = [reason.reason.value];
       tmp2 = items;
     }
-    const obj2 = { reason_descriptions: tmp2, rating: null, user_feedback: reason.feedback };
-    const rating = reason.rating;
-    obj2.rating = rating;
-    const result = ICYMIAnalytics.trackFeedFeedbackSubmitted(obj2);
-  };
-  return jsx(FeedbackActionSheetDefault, { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, otherKey: "other", trackOpen: null, feedbackReasons: null, trackReport: null });
+    const obj2 = { reason_descriptions: tmp2, rating, user_feedback: reason.feedback };
+    rating = reason.rating;
+    const result = trackFeedFeedbackSubmitted(obj2);
+  }} />;
 };

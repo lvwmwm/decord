@@ -5,19 +5,24 @@
 // Exports: CreatorRevenueButton
 
 // Module 9760 (CreatorRevenueButton)
+import Fragment from "Fragment" /* 21 */;
 import ShinyButtonDefault from "ShinyButton" /* 9761 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ container: { borderRadius: 3 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/CreatorRevenueButton.tsx");
 
 export const CreatorRevenueButton = function CreatorRevenueButton(arg0) {
+  let disabled;
+  let loading;
+  let onPress;
+  let style;
+  let text;
   ({ disabled, text, onPress, style, loading } = arg0);
-  const obj = { style: null, loading, disabled, onPress, text };
   const items = [closure_3().container, style];
-  obj.style = items;
-  return jsx(ShinyButtonDefault, { style: null, loading, disabled, onPress, text });
+  closure_3();
+  return jsx(ShinyButtonDefault, { style: items, loading, disabled, onPress, text });
 };

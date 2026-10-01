@@ -5,25 +5,32 @@
 // Exports: useCanShowGameClaimCoachmark
 
 // Module 15893 (useGameClaimCoachmark)
+import Constants from "Constants" /* 1074 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
+const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/game_claim/useGameClaimCoachmark.tsx");
 
 export const useCanShowGameClaimCoachmark = function useCanShowGameClaimCoachmark(id) {
+  let guildId;
   _require = id;
-  let gameClaimCoachmarkEnabled = require("GameClaimCoachmarkExperiment").useGameClaimCoachmarkEnabled(id, "useCanShowGameClaimCoachmark");
-  const obj = require("GameClaimCoachmarkExperiment");
+  let obj = require("GameClaimCoachmarkExperiment");
+  let gameClaimCoachmarkEnabled = obj.useGameClaimCoachmarkEnabled(id, "useCanShowGameClaimCoachmark");
   const items = [PermissionStore];
   const items1 = [id];
+  const obj2 = require("get initialized");
+  const tmp = _require;
   if (gameClaimCoachmarkEnabled) {
-    gameClaimCoachmarkEnabled = obj2.useStateFromStores(items, () => PermissionStore.canWithPartialContext(Permissions.ADMINISTRATOR, { guildId }), items1);
+    gameClaimCoachmarkEnabled = obj2.useStateFromStores(items, () => {
+      const obj = { guildId };
+      return PermissionStore.canWithPartialContext(Permissions.ADMINISTRATOR, obj);
+    }, items1);
   }
-  obj2 = require("initialize");
+  const tmpResult = tmp(15824);
   if (gameClaimCoachmarkEnabled) {
     gameClaimCoachmarkEnabled = tmpResult.useHasUnclaimedGames(id, gameClaimCoachmarkEnabled);
   }

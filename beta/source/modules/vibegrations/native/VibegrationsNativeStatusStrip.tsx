@@ -5,61 +5,84 @@
 // Exports: default
 
 // Module 16399 (VibegrationsNativeStatusStrip)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
+import AILoaderConstants from "AILoaderConstants" /* 13936 */;
 import VibegrationsStatusLabels from "VibegrationsStatusLabels" /* 16393 */;
 import VibegrationsUsageSheet from "VibegrationsUsageSheet" /* 16400 */;
 import VibegrationsNativeTurnTimerDefault from "VibegrationsNativeTurnTimer" /* 16401 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const VibegrationsUsageSheetDefault = VibegrationsUsageSheet;
 
-require = fn;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
 function ThinkingIndicator(line) {
+  let AIShimmer;
+  let closure_3;
+  let first;
+  let items3;
+  let obj3;
+  let str;
+  let text;
   line = line.line;
   const rotating = line.rotating;
   text = undefined;
   _slicedToArray = undefined;
-  noop = undefined;
+  react = undefined;
   const tmp = closure_9();
-  [text, _slicedToArray] = noop.useState(line);
-  noop = noop.useRef(line);
-  const ref2 = noop.useRef(text);
-  const ref = noop.useRef(null);
+  [text, _slicedToArray] = react.useState(line);
+  react = react.useRef(line);
+  const ref2 = react.useRef(text);
+  const ref = react.useRef(null);
   const items = [line];
-  const effect = noop.useEffect(() => {
-    closure_4.current = line;
+  const effect = react.useEffect(() => {
+    ref.current = line;
   }, items);
   const items1 = [text];
-  const effect1 = noop.useEffect(() => {
-    closure_5.current = current;
+  const effect1 = react.useEffect(() => {
+    ref2.current = current;
   }, items1);
-  closure_7 = noop.useRef(rotating);
-  closure_8 = noop.useRef(0);
+  let closure_7 = react.useRef(rotating);
+  let closure_8 = react.useRef(0);
   const items2 = [rotating];
-  const effect2 = noop.useEffect(() => {
+  const effect2 = react.useEffect(() => {
     closure_7.current = rotating;
     let isRecallingLineResult = !rotating;
-    if (!rotating) {
-      isRecallingLineResult = VibegrationsStatusLabels.isRecallingLine(ref2.current);
+    if (isRecallingLineResult) {
+      const obj = VibegrationsStatusLabels;
+      isRecallingLineResult = obj.isRecallingLine(ref2.current);
     }
     if (isRecallingLineResult) {
       closure_3(ref.current);
     }
   }, items2);
-  const effect3 = noop.useEffect(() => {
+  const effect3 = react.useEffect(() => {
+    let closure_2;
+    let ref3;
+    let ref4;
     function beat() {
       if (ref4.current) {
         let num = 0;
+        const obj = line(first[7]);
+        const tmp8 = line;
+        const tmp9 = first;
         if (obj.isRecallingLine(ref2.current)) {
           num = tmp7.current + 1;
         }
         ref.current = num;
-        obj = line(first[7]);
-        closure_1_3(line(first[7]).recallingLine(ref.current));
-        const tmp8Result = line(first[7]);
+        const tmp8Result = tmp8(tmp9[7]);
+        closure_1_3(tmp8Result.recallingLine(ref.current));
       } else if (ref.current !== ref2.current) {
         closure_1_3(tmp.current);
       } else {
@@ -69,7 +92,7 @@ function ThinkingIndicator(line) {
         }
       }
     }
-    closure_0 = null;
+    let closure_0 = null;
     const timeout = setTimeout(() => {
       beat();
       const interval = setInterval(beat, AI_LOADER_CYCLE_MS);
@@ -82,143 +105,155 @@ function ThinkingIndicator(line) {
       }
     };
   }, []);
-  let obj = { style: tmp.indicator, children: null };
-  const items3 = [closure_7(line(text[8]).AILoader, { size: 10, color: "text-subtle" }), ];
-  const obj2 = { style: tmp.label, accessibilityElementsHidden: rotating, importantForAccessibility: null, children: null };
-  let str = "auto";
+  let obj = { style: tmp.indicator, children: items3 };
+  let tmp9 = closure_8;
+  items3 = [closure_7(line(text[8]).AILoader, { size: 10, color: "text-subtle" }), ];
+  const obj2 = { style: tmp.label, accessibilityElementsHidden: rotating, importantForAccessibility: str, children: closure_7(AIShimmer, obj3) };
+  str = "auto";
   if (rotating) {
     str = "no-hide-descendants";
   }
-  obj2.importantForAccessibility = str;
-  obj2.children = closure_7(line(text[9]).AIShimmer, { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: line(text[7]).INDICATOR_PASS_MS, delay: null });
+  obj3 = { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: line(text[7]).INDICATOR_PASS_MS, delay: null };
+  AIShimmer = tmp12(tmp13[9]).AIShimmer;
   items3[1] = closure_7(ref2, obj2);
-  obj.children = items3;
-  return closure_8(ref2, obj);
+  return tmp9(ref2, obj);
 }
-const View = fn(17).View;
-const AI_LOADER_CYCLE_MS = fn(13936).AI_LOADER_CYCLE_MS;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { row: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_4, minHeight: nativeDefault.space.PX_4 + nativeDefault.space.PX_24 }, activity: null, live: null, indicator: null, label: null, runes: null };
-let obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_4, minHeight: nativeDefault.space.PX_4 + nativeDefault.space.PX_24 };
-obj2.activity = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_16 };
-obj2.live = { flexShrink: 1 };
-let obj4 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_16 };
-obj2.indicator = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, alignSelf: "flex-start" };
-obj2.label = { flexShrink: 1 };
-let obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, alignSelf: "flex-start" };
-obj2.runes = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const View = react_native.View;
+const AI_LOADER_CYCLE_MS = AILoaderConstants.AI_LOADER_CYCLE_MS;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { row: obj2, activity: obj3, live: { flexShrink: 1 }, indicator: obj4, label: { flexShrink: 1 }, runes: obj5 };
+obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_4, minHeight: nativeDefault.space.PX_4 + nativeDefault.space.PX_24 };
+createStyles = createStyles.createStyles;
+obj3 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_16 };
+obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, alignSelf: "flex-start" };
+obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+let closure_9 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsNativeStatusStrip.tsx");
 
-export default function VibegrationsNativeStatusStrip(compacting) {
-  const projectId = compacting.projectId;
-  ({ thinking, turnStartedAt, recalling } = compacting);
+export default function VibegrationsNativeStatusStrip(projectId) {
+  let activity;
+  let connFailed;
+  let connLabel;
+  let controlling;
+  let items1;
+  let items2;
+  let items3;
+  let obj7;
+  let onToggleThinking;
+  let projectUsage;
+  let recalling;
+  let str2;
+  let stringResult1;
+  let thinking;
+  let thinkingOpen;
+  let tmp13Result;
+  let tmp17;
+  let tmp18;
+  let turnStartedAt;
+  projectId = projectId.projectId;
+  ({ thinking, turnStartedAt, recalling } = projectId);
+  const compacting = projectId.compacting;
   if (recalling === undefined) {
     recalling = false;
   }
-  ({ activity, projectUsage, connLabel, thinkingOpen } = compacting);
-  ({ connFailed, controlling, onToggleThinking } = compacting);
-  const tmp = closure_9();
-  const thinkingLabelResult = projectId(16393).thinkingLabel({ activity, compacting: compacting.compacting, recalling, controlling });
+  ({ activity, projectUsage, connLabel, thinkingOpen } = projectId);
+  ({ connFailed, controlling, onToggleThinking } = projectId);
+  let tmp = closure_9();
+  let obj = projectId(16393);
+  const thinkingLabelResult = obj.thinkingLabel({ activity, compacting, recalling, controlling });
   const intl = projectId(1115).intl;
   const stringResult = intl.string(thinkingLabelResult);
   let runesUsedLabelsResult = null;
+  const first = projectId(16393).RECALLING_LINES[0];
   if (null != projectUsage) {
-    runesUsedLabelsResult = tmp2(16393).runesUsedLabels(projectUsage);
-    const tmp2Result = tmp2(16393);
+    const tmp2Result = projectId(16393);
+    runesUsedLabelsResult = tmp2Result.runesUsedLabels(projectUsage);
   }
-  let tmp7 = null != activity;
-  if (tmp7) {
-    tmp7 = "" !== activity.text;
-  }
-  let tmp8 = thinking;
-  if (thinking) {
-    if (!tmp7) {
-      tmp7 = thinkingOpen;
+  let tmp8 = null != activity && "" !== activity.text;
+  let tmp9 = thinking;
+  if (tmp9) {
+    if (!tmp8) {
+      tmp8 = thinkingOpen;
     }
-    tmp8 = tmp7;
+    tmp9 = tmp8;
   }
   const items = [projectId];
-  let obj2 = { style: tmp.row, children: null };
-  const obj3 = { style: tmp.activity, children: null };
-  const obj4 = { style: tmp.live, accessibilityRole: "none", accessibilityLiveRegion: "polite", children: null };
-  const callback = noop.useCallback(() => {
-    const obj2 = { content: React5(VibegrationsUsageSheetDefault, { projectId }), key: VibegrationsUsageSheet.VIBEGRATIONS_USAGE_SHEET_KEY };
-    ActionSheetActionCreators.showActionSheet(obj2);
+  let obj2 = { style: tmp.row, children: items2 };
+  const obj3 = { style: tmp.activity, children: items1 };
+  const obj4 = { style: tmp.live, accessibilityRole: "none", accessibilityLiveRegion: "polite", children: tmp13Result };
+  const callback = react.useCallback(() => {
+    let obj2;
+    const tmp = ActionSheetActionCreators;
+    const showActionSheet = tmp.showActionSheet;
+    const obj = { content: metroImportDefault(VibegrationsUsageSheetDefault, obj2), key: VibegrationsUsageSheet.VIBEGRATIONS_USAGE_SHEET_KEY };
+    obj2 = { projectId };
+    showActionSheet(obj);
   }, items);
   if (thinking) {
-    const tmp14 = thinkingLabelResult === projectId(16393).RECALLING_LINES[0];
-    let tmp15 = tmp8;
-    if (!tmp8) {
-      tmp15 = tmp14;
+    let tmp16 = tmp9;
+    const PressableOpacity = tmp2(5435).PressableOpacity;
+    if (!tmp9) {
+      tmp16 = tmp15;
     }
-    const obj5 = { accessible: tmp15, accessibilityRole: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, hitSlop: 8, disabled: null, onPress: null, children: null };
-    let str2;
-    if (tmp8) {
+    const obj5 = { accessible: tmp16, accessibilityRole: str2, accessibilityState: tmp17, accessibilityLabel: tmp18, accessibilityHint: stringResult1, hitSlop: 8, disabled: !tmp9, onPress: onToggleThinking, children: closure_7(ThinkingIndicator, obj7) };
+    str2 = undefined;
+    if (tmp9) {
       str2 = "button";
     }
-    obj5.accessibilityRole = str2;
-    let tmp16;
-    if (tmp8) {
+    tmp17 = undefined;
+    if (tmp9) {
+      tmp17 = { expanded: thinkingOpen };
       const obj6 = { expanded: thinkingOpen };
-      tmp16 = obj6;
     }
-    obj5.accessibilityState = tmp16;
-    if (tmp8) {
-      const tmp17 = stringResult;
+    if (tmp9) {
+      tmp18 = stringResult;
     }
-    obj5.accessibilityLabel = tmp17;
-    let stringResult1;
-    if (tmp8) {
+    stringResult1 = undefined;
+    if (tmp9) {
       const intl2 = tmp2(1115).intl;
       stringResult1 = intl2.string(_modDef3715["0PGVTy"]);
     }
-    obj5.accessibilityHint = stringResult1;
-    obj5.disabled = !tmp8;
-    obj5.onPress = onToggleThinking;
-    const obj7 = { line: stringResult, rotating: tmp14 };
-    obj5.children = tmp12(ThinkingIndicator, obj7);
-    let tmp12Result = tmp12(tmp2(5435).PressableOpacity, obj5);
+    obj7 = { line: stringResult, rotating: thinkingLabelResult === first };
+    tmp13Result = tmp13(PressableOpacity, obj5);
   } else {
-    tmp12Result = null;
+    tmp13Result = null;
   }
-  obj4.children = tmp12Result;
-  const items1 = [closure_7(View, obj4), ];
-  let tmp12Result3 = null;
+  items1 = [closure_7(View, obj4), ];
+  let tmp13Result3 = null;
   if (thinking) {
-    tmp12Result3 = null;
+    tmp13Result3 = null;
     if (null != turnStartedAt) {
       const obj8 = { startedAt: turnStartedAt, variant: "text-xs/medium" };
-      tmp12Result3 = tmp12(VibegrationsNativeTurnTimerDefault, obj8);
+      tmp13Result3 = tmp13(VibegrationsNativeTurnTimerDefault, obj8);
     }
   }
-  items1[1] = tmp12Result3;
-  obj3.children = items1;
-  const items2 = [closure_8(View, obj3), , ];
-  let tmp12Result4 = null;
+  items1[1] = tmp13Result3;
+  items2 = [closure_8(View, obj3), , ];
+  let tmp13Result4 = null;
   if (null != connLabel) {
     let str3 = "text-muted";
+    const Text = tmp2(4832).Text;
     if (connFailed) {
       str3 = "text-feedback-critical";
     }
     const obj9 = { variant: "text-xs/medium", color: str3, children: connLabel };
-    tmp12Result4 = tmp12(tmp2(4832).Text, obj9);
+    tmp13Result4 = tmp13(Text, obj9);
   }
-  items2[1] = tmp12Result4;
-  let tmp10Result = null;
+  items2[1] = tmp13Result4;
+  let tmp11Result = null;
   if (null != runesUsedLabelsResult) {
-    const obj10 = { accessibilityRole: "button", accessibilityLabel: runesUsedLabelsResult.aria, hitSlop: 8, style: tmp.runes, onPress: callback, children: null };
+    const obj10 = { accessibilityRole: "button", accessibilityLabel: runesUsedLabelsResult.aria, hitSlop: 8, style: tmp.runes, onPress: callback, children: items3 };
+    const PressableOpacity2 = tmp2(5435).PressableOpacity;
     const obj11 = { variant: "text-xs/medium", color: "text-muted", children: runesUsedLabelsResult.text };
-    const items3 = [tmp12(tmp2(4832).Text, obj11), ];
+    items3 = [closure_7(projectId(4832).Text, obj11), ];
     const obj12 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    items3[1] = tmp12(tmp2(4787).CircleInformationIcon, obj12);
-    obj10.children = items3;
-    tmp10Result = tmp10(tmp2(5435).PressableOpacity, obj10);
+    const CircleInformationIcon = tmp2(4787).CircleInformationIcon;
+    items3[1] = closure_7(CircleInformationIcon, obj12);
+    tmp11Result = tmp11(PressableOpacity2, obj10);
   }
-  items2[2] = tmp10Result;
-  obj2.children = items2;
+  items2[2] = tmp11Result;
   return closure_8(View, obj2);
 };

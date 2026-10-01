@@ -6,43 +6,55 @@
 
 // Module 12099 (useUserProfileMutuals)
 import _mod12 from "module_12" /* 12 */;
-import usePrevValueDefault from "usePrevValue" /* 9089 */;
-import _slicedToArray from "module_32" /* 32 */;
+import react from "react" /* 19 */;
+import reactDefault from "react" /* 9089 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7072 */;
 import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_0, dependencyMap, importDefault;
 
-require = fn;
-const useMemo = fn(19).useMemo;
-const size = fn(2);
+const useMemo = react.useMemo;
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useUserProfileMutuals.tsx");
 
 export default function useUserProfileMutuals(arg0) {
+  let closure_1;
+  let flattenedGuildIds;
+  let stateFromStores;
+  let tmp2;
+  let tmp3;
+  let userAffinitiesMap;
   _require = arg0;
+  let obj = require("get initialized");
   let items = [UserProfileStore];
-  const tmp = stateFromStores(require("initialize").useStateFromStoresArray(items, () => {
+  const tmp = stateFromStores(obj.useStateFromStoresArray(items, () => {
     const items = [UserProfileStore.getMutualFriendsCount(closure_0.id), UserProfileStore.getMutualFriends(closure_0.id), UserProfileStore.getMutualGuilds(closure_0.id), UserProfileStore.isFetchingProfile(closure_0.id), UserProfileStore.isFetchingFriends(closure_0.id)];
     return items;
   }), 5);
   [tmp2, tmp3] = tmp;
   importDefault = tmp3;
   dependencyMap = tmp4;
-  let obj = require("initialize");
   const items1 = [UserAffinitiesV2Store];
-  stateFromStores = require("initialize").useStateFromStores(items1, () => userAffinitiesMap.getUserAffinitiesMap());
-  const obj2 = require("initialize");
+  const tmp5 = tmp[3];
+  const tmp6 = tmp[4];
+  const obj2 = require("get initialized");
+  stateFromStores = obj2.useStateFromStores(items1, () => userAffinitiesMap.getUserAffinitiesMap());
   const items2 = [SortedGuildStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items2, () => flattenedGuildIds.getFlattenedGuildIds());
+  const obj3 = require("get initialized");
+  const stateFromStores1 = obj3.useStateFromStores(items2, () => flattenedGuildIds.getFlattenedGuildIds());
   const items3 = [tmp3, stateFromStores];
-  let tmp7 = stateFromStores1(() => {
-    let sortByResult = closure_1;
-    if (null != closure_1) {
+  let tmp9 = stateFromStores1(() => {
+    let sortByResult = importDefault;
+    if (null != importDefault) {
+      let num = 2;
       sortByResult = arr;
-      if (arr.length >= 2) {
-        sortByResult = _mod12.sortBy(arr, (user) => {
-          value = stateFromStores.get(user.user.id);
+      if (importDefault.length >= 2) {
+        const obj = _mod12;
+        sortByResult = obj.sortBy(arr, (user) => {
+          const value = stateFromStores.get(user.user.id);
           let num;
           if (value != null) {
             num = value.communicationProbability;
@@ -56,17 +68,18 @@ export default function useUserProfileMutuals(arg0) {
     }
     return sortByResult;
   }, items3);
-  const items4 = [tmp[2], stateFromStores1];
-  let tmp8 = stateFromStores1(() => {
-    if (null != closure_2) {
-      if (arr.length >= 2) {
+  const items4 = [tmp4, stateFromStores1];
+  let tmp10 = stateFromStores1(() => {
+    if (null != length) {
+      if (length.length >= 2) {
         const _Object = Object;
         closure_0 = Object.fromEntries(stateFromStores1.map((item, index) => {
           const items = [item, index];
           return items;
         }));
-        return closure_0(closure_2[6]).sortBy(arr, (arg0) => {
-          let length = closure_0[arg0.guild.id];
+        const obj = closure_0(length[6]);
+        return obj.sortBy(length, (arg0) => {
+          length = closure_0[arg0.guild.id];
           if (length == null) {
             length = stateFromStores1.length;
           }
@@ -74,21 +87,17 @@ export default function useUserProfileMutuals(arg0) {
         });
       }
     }
-    return closure_2;
+    return length;
   }, items4);
-  const obj3 = require("initialize");
-  const tmp9 = usePrevValueDefault(tmp2);
-  const tmp10 = usePrevValueDefault(tmp7);
-  const obj4 = { mutualFriendsCount: tmp2, mutualFriends: null, mutualGuilds: null, isFetching: null, isFetchingFriends: null };
-  if (tmp7 == null) {
-    tmp7 = tmp10;
+  const tmp11 = reactDefault(tmp2);
+  const tmp12 = reactDefault(tmp9);
+  const tmp13 = reactDefault(tmp10);
+  const obj4 = { mutualFriendsCount: tmp2, mutualFriends: tmp9, mutualGuilds: tmp10, isFetching: tmp5, isFetchingFriends: tmp6 };
+  if (tmp9 == null) {
+    tmp9 = tmp12;
   }
-  obj4.mutualFriends = tmp7;
-  if (tmp8 == null) {
-    tmp8 = tmp11;
+  if (tmp10 == null) {
+    tmp10 = tmp13;
   }
-  obj4.mutualGuilds = tmp8;
-  obj4.isFetching = tmp[3];
-  obj4.isFetchingFriends = tmp[4];
   return obj4;
 };

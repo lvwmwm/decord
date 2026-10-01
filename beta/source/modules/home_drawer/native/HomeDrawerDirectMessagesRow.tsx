@@ -5,55 +5,65 @@
 // Exports: default
 
 // Module 15946 (HomeDrawerDirectMessagesRow)
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl3 from "intl" /* 1115 */;
 import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4698 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 15942 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let friendIDs;
+
+let metroImportAll;
+let metroImportDefault;
+let size;
 function HomeDrawerDMsRow() {
+  let Text2;
+  let intl;
+  let intl2;
+  let items1;
+  let obj5;
+  let obj7;
   const tmp = closure_9();
   const items = [RelationshipStore, PresenceStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => {
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let status;
     friendIDs = friendIDs.getFriendIDs();
     return friendIDs.filter((item) => status.getStatus(item) !== constants.OFFLINE).length;
   });
   let tmp5 = null;
   if (stateFromStores > 0) {
-    const obj2 = { style: tmp.subtitle, children: null };
+    const obj2 = { style: tmp.subtitle, children: items1 };
     const obj3 = { style: tmp.onlineDot };
-    const items1 = [React5(View, obj3), ];
-    const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: null };
-    const intl = tmp2(1115).intl;
-    const obj5 = { numFriends: stateFromStores };
-    obj4.children = intl.format(tmp2(1115).t.N5UIKr, obj5);
-    items1[1] = React5(tmp2(4832).Text, obj4);
-    obj2.children = items1;
-    tmp5 = React6(View, obj2);
+    items1 = [metroImportDefault(View, obj3), ];
+    const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: intl.format(intl3.t.N5UIKr, obj5) };
+    const Text = tmp2(4832).Text;
+    intl = tmp2(1115).intl;
+    obj5 = { numFriends: stateFromStores };
+    items1[1] = metroImportDefault(Text, obj4);
+    tmp5 = metroImportAll(View, obj2);
   }
-  const obj6 = { title: null, subtitle: null };
-  const obj7 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null };
-  const intl2 = tmp2(1115).intl;
-  obj7.children = intl2.string(util.t.YUU0RF);
-  obj6.title = React5(Text_Text.Text, obj7);
-  obj6.subtitle = tmp5;
-  return React5(HomeDrawerShared.HomeDrawerSharedItem, obj6);
+  const obj6 = { title: metroImportDefault(Text2, obj7), subtitle: tmp5 };
+  const HomeDrawerSharedItem = tmp2(15942).HomeDrawerSharedItem;
+  obj7 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
+  Text2 = tmp2(4832).Text;
+  intl2 = tmp2(1115).intl;
+  return metroImportDefault(HomeDrawerSharedItem, obj6);
 }
-const View = fn(17).View;
-const StatusTypes = fn(1074).StatusTypes;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { subtitle: { flexDirection: "row", alignItems: "center", gap: 4 }, onlineDot: null };
-let size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
-obj2.onlineDot = size;
-let closure_9 = createStyles.createStyles(obj2);
-size = fn(2);
+const View = react_native.View;
+const StatusTypes = Constants.StatusTypes;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { subtitle: { flexDirection: "row", alignItems: "center", gap: 4 }, onlineDot: size };
+size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
+let closure_9 = createStyles.createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerDirectMessagesRow.tsx");
 
 export default function HomeDrawerDMsRowWrapper() {
@@ -62,7 +72,7 @@ export default function HomeDrawerDMsRowWrapper() {
   if (MobileHomeDrawerExperiment.useConfig({ location: "dm-expanded-children" }).enableHome) {
     tmp2 = null;
     if (!tmp) {
-      tmp2 = React5(HomeDrawerDMsRow, {});
+      tmp2 = metroImportDefault(HomeDrawerDMsRow, {});
     }
   }
   return tmp2;

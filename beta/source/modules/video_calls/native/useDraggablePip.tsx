@@ -5,15 +5,22 @@
 // Exports: useDraggablePip
 
 // Module 8852 (useDraggablePip)
-import native from "native" /* 1177 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
 import spring from "spring" /* 5280 */;
-import _slicedToArray from "module_32" /* 32 */;
+import ChannelCallStore from "ChannelCallStore" /* 8829 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 8853 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import Constants from "Constants" /* 8836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const useChannelCallStore = fn(8829).useChannelCallStore;
-const Constants = fn(8836);
+let set, set2;
+
+let closure_4;
+let hasOwnProperty;
+let tmp;
+const native = tmp(1177);
+const useChannelCallStore = ChannelCallStore.useChannelCallStore;
 ({ PIP_FOCUS_SCALE: closure_4, PIP_GESTURE_ACTIVE_OFFSET: hasOwnProperty } = Constants);
 let closure_6 = { mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001, damping: 20 };
 let __initData = { code: "function useDraggablePipTsx1(){const{withTiming,pipFocus,PIP_FOCUS_SCALE,STANDARD_EASING}=this.__closure;return withTiming(pipFocus?PIP_FOCUS_SCALE:1,{easing:STANDARD_EASING,duration:250});}" };
@@ -37,10 +44,14 @@ function clamp(arg0, arg1, arg2) {
 clamp.__closure = {};
 clamp.__workletHash = 1988116204206;
 clamp.__initData = { code: "function clamp_useDraggablePipTsx16(value,min,max){return Math.min(Math.max(value,min),max);}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/video_calls/native/useDraggablePip.tsx");
 
 export const useDraggablePip = function useDraggablePip(size1) {
+  let Gesture3;
+  let ce;
+  let closure_7;
+  let obj29;
+  let onStartResult;
   const width = size1.width;
   const height = size1.height;
   const containerWidth = size1.containerWidth;
@@ -62,25 +73,25 @@ export const useDraggablePip = function useDraggablePip(size1) {
   let sharedValue4;
   let tmp = containerHeight((pipFocus) => pipFocus.pipFocus);
   __initData = tmp;
+  let obj = width(height[3]);
   class X {
     constructor() {
-      tmp = closure_0;
-      tmp2 = closure_1;
-      obj = closure_0(closure_1[4]);
-      num = 1;
+      let num = 1;
+      const withTiming = timing.withTiming;
+      timing;
       if (closure_7) {
-        num = PIP_FOCUS_SCALE;
+        num = React3;
       }
-      obj1 = { easing: tmp(tmp2[5]).STANDARD_EASING, duration: 250 };
-      return obj.withTiming(num, obj1);
+      const obj = { easing: native.STANDARD_EASING, duration: 250 };
+      return withTiming(num, obj);
     }
   }
-  let obj = width(height[3]);
-  X.__closure = { withTiming: width(height[4]).withTiming, pipFocus: tmp, PIP_FOCUS_SCALE: onPress, STANDARD_EASING: width(height[5]).STANDARD_EASING };
+  let obj2 = { withTiming: width(height[4]).withTiming, pipFocus: tmp, PIP_FOCUS_SCALE: onPress, STANDARD_EASING: width(height[5]).STANDARD_EASING };
+  X.__closure = obj2;
   X.__workletHash = 7848271415351;
   X.__initData = __initData;
   derivedValue = obj.useDerivedValue(X);
-  let obj2 = { withTiming: width(height[4]).withTiming, pipFocus: tmp, PIP_FOCUS_SCALE: onPress, STANDARD_EASING: width(height[5]).STANDARD_EASING };
+  let obj3 = width(height[3]);
   class Y {
     constructor() {
       return width;
@@ -89,8 +100,8 @@ export const useDraggablePip = function useDraggablePip(size1) {
   Y.__closure = { width };
   Y.__workletHash = 14810909441301;
   Y.__initData = derivedValue;
-  derivedValue1 = width(height[3]).useDerivedValue(Y);
-  let obj3 = width(height[3]);
+  derivedValue1 = obj3.useDerivedValue(Y);
+  let obj4 = width(height[3]);
   class N {
     constructor() {
       return height;
@@ -99,28 +110,28 @@ export const useDraggablePip = function useDraggablePip(size1) {
   N.__closure = { height };
   N.__workletHash = 15343935194036;
   N.__initData = derivedValue1;
-  derivedValue2 = width(height[3]).useDerivedValue(N);
-  let obj4 = width(height[3]);
+  derivedValue2 = obj4.useDerivedValue(N);
+  let obj5 = width(height[3]);
   class V {
     constructor() {
-      return closure_8.get() * width;
+      return derivedValue.get() * width;
     }
   }
   V.__closure = { pipScale: derivedValue, width };
   V.__workletHash = 3468337829868;
   V.__initData = derivedValue2;
-  derivedValue3 = width(height[3]).useDerivedValue(V);
-  let obj5 = width(height[3]);
+  derivedValue3 = obj5.useDerivedValue(V);
+  let obj6 = width(height[3]);
   class F {
     constructor() {
-      return closure_8.get() * height;
+      return derivedValue.get() * height;
     }
   }
   F.__closure = { pipScale: derivedValue, height };
   F.__workletHash = 7163944260205;
   F.__initData = derivedValue3;
-  derivedValue4 = width(height[3]).useDerivedValue(F);
-  let obj6 = width(height[3]);
+  derivedValue4 = obj6.useDerivedValue(F);
+  const obj7 = width(height[3]);
   class G {
     constructor() {
       return containerWidth;
@@ -129,8 +140,8 @@ export const useDraggablePip = function useDraggablePip(size1) {
   G.__closure = { containerWidth };
   G.__workletHash = 13449836478609;
   G.__initData = derivedValue4;
-  derivedValue5 = width(height[3]).useDerivedValue(G);
-  let obj7 = width(height[3]);
+  derivedValue5 = obj7.useDerivedValue(G);
+  const obj8 = width(height[3]);
   class I {
     constructor() {
       return containerHeight;
@@ -139,23 +150,21 @@ export const useDraggablePip = function useDraggablePip(size1) {
   I.__closure = { containerHeight };
   I.__workletHash = 4105281399152;
   I.__initData = derivedValue5;
-  derivedValue6 = width(height[3]).useDerivedValue(I);
-  let obj8 = width(height[3]);
-  sharedValue = width(height[3]).useSharedValue(0);
+  derivedValue6 = obj8.useDerivedValue(I);
   const obj9 = width(height[3]);
-  sharedValue1 = width(height[3]).useSharedValue(sharedValue.get());
+  sharedValue = obj9.useSharedValue(0);
   const obj11 = width(height[3]);
-  sharedValue2 = width(height[3]).useSharedValue(0);
+  sharedValue1 = obj11.useSharedValue(sharedValue.get());
   const obj12 = width(height[3]);
-  sharedValue3 = width(height[3]).useSharedValue(sharedValue2.get());
+  sharedValue2 = obj12.useSharedValue(0);
   const obj14 = width(height[3]);
-  sharedValue4 = width(height[3]).useSharedValue(false);
+  sharedValue3 = obj14.useSharedValue(sharedValue2.get());
   const obj15 = width(height[3]);
+  sharedValue4 = obj15.useSharedValue(false);
+  const obj16 = width(height[3]);
   class J {
     constructor() {
-      items = [, ];
-      items[0] = containerWidth - closure_11.get();
-      items[1] = closure_16.get();
+      const items = [containerWidth - derivedValue3.get(), sharedValue1.get()];
       return items;
     }
   }
@@ -163,18 +172,24 @@ export const useDraggablePip = function useDraggablePip(size1) {
   J.__workletHash = 2741340788440;
   J.__initData = derivedValue6;
   const fn = function q(arg0, arg1) {
-    if (!obj.cheapWorkletArrayShallowEqual(arg0, arg1)) {
+    let first;
+    const cheapWorkletArrayShallowEqual = cheapWorkletShallowEqual.cheapWorkletArrayShallowEqual;
+    cheapWorkletShallowEqual;
+    const tmp2 = arg1;
+    if (!cheapWorkletArrayShallowEqual(arg0, tmp2)) {
       [first] = arg0;
       let items = arg1;
+      const tmp3 = _slicedToArray;
       if (arg1 == null) {
         items = [0, 0];
       }
+      const first1 = tmp3(items, 1)[0];
       if (null != arg1) {
-        if (first !== tmp2(items, 1)[0]) {
+        if (first !== first1) {
           if (typeof clamp === "function") {
             const _Math = Math;
             const _Math2 = Math;
-            const bound = Math.min(Math.max(tmp7, 0), first);
+            const bound = Math.min(Math.max(tmp9, 0), first);
             const result = sharedValue1.set(bound);
             const result1 = sharedValue.set(bound);
           } else {
@@ -182,20 +197,17 @@ export const useDraggablePip = function useDraggablePip(size1) {
           }
         }
       }
-      tmp2 = _slicedToArray;
     }
   };
-  const obj16 = width(height[3]);
   fn.__closure = { cheapWorkletArrayShallowEqual: width(height[6]).cheapWorkletArrayShallowEqual, clamp, xPosition: sharedValue1, xDestination: sharedValue };
   fn.__workletHash = 15748808822770;
   fn.__initData = sharedValue;
+  ({ cheapWorkletArrayShallowEqual: width(height[6]).cheapWorkletArrayShallowEqual, clamp, xPosition: sharedValue1, xDestination: sharedValue });
   const animatedReaction = obj16.useAnimatedReaction(J, fn);
-  let obj10 = { cheapWorkletArrayShallowEqual: width(height[6]).cheapWorkletArrayShallowEqual, clamp, xPosition: sharedValue1, xDestination: sharedValue };
+  const obj18 = width(height[3]);
   class U {
     constructor() {
-      items = [, ];
-      items[0] = containerHeight - closure_12.get();
-      items[1] = closure_18.get();
+      const items = [containerHeight - derivedValue4.get(), sharedValue3.get()];
       return items;
     }
   }
@@ -204,72 +216,68 @@ export const useDraggablePip = function useDraggablePip(size1) {
   U.__initData = sharedValue1;
   class R {
     constructor(arg0, arg1) {
-      obj = closure_0(closure_1[6]);
-      tmp = arg1;
-      if (!obj.cheapWorkletArrayShallowEqual(size1, tmp)) {
-        num = 2;
-        tmp2 = closure_2;
-        tmp3 = closure_2(size1, 2);
-        first = tmp3[0];
-        items = arg1;
-        tmp5 = tmp3[1];
+      let first;
+      const cheapWorkletArrayShallowEqual = cheapWorkletShallowEqual.cheapWorkletArrayShallowEqual;
+      cheapWorkletShallowEqual;
+      const tmp2 = arg1;
+      if (!cheapWorkletArrayShallowEqual(arg0, tmp2)) {
+        [first] = arg0;
+        let items = arg1;
+        const tmp3 = _slicedToArray;
         if (arg1 == null) {
           items = [0, 0];
         }
-        num2 = 1;
+        const first1 = tmp3(items, 1)[0];
         if (null != arg1) {
-          if (first !== tmp2(items, 1)[0]) {
-            tmp6 = clamp;
+          if (first !== first1) {
             if (typeof clamp === "function") {
-              tmp8 = globalThis;
-              _Math = Math;
-              _Math2 = Math;
-              num3 = 0;
-              bound = Math.min(Math.max(tmp7, 0), first);
-              tmp10 = closure_18;
-              result = closure_18.set(bound);
-              tmp12 = closure_17;
-              result1 = closure_17.set(bound);
+              const _Math = Math;
+              const _Math2 = Math;
+              const bound = Math.min(Math.max(tmp9, 0), first);
+              const result = sharedValue3.set(bound);
+              const result1 = sharedValue2.set(bound);
             } else {
-              str = "Trying to call a non-function";
               throw new TypeError("Trying to call a non-function");
             }
           }
         }
       }
-      return;
     }
   }
-  const obj18 = width(height[3]);
   R.__closure = { cheapWorkletArrayShallowEqual: width(height[6]).cheapWorkletArrayShallowEqual, clamp, yPosition: sharedValue3, yDestination: sharedValue2 };
   R.__workletHash = 7685377389843;
   R.__initData = sharedValue2;
+  ({ cheapWorkletArrayShallowEqual: width(height[6]).cheapWorkletArrayShallowEqual, clamp, yPosition: sharedValue3, yDestination: sharedValue2 });
   const animatedReaction1 = obj18.useAnimatedReaction(U, R);
   const Gesture = width(height[7]).Gesture;
-  const obj13 = { cheapWorkletArrayShallowEqual: width(height[6]).cheapWorkletArrayShallowEqual, clamp, yPosition: sharedValue3, yDestination: sharedValue2 };
   let items = [-onMoved, onMoved];
-  const PanResult = Gesture.Pan();
   const items1 = [-onMoved, onMoved];
-  const activeOffsetXResult = Gesture.Pan().activeOffsetX(items);
+  const PanResult = Gesture.Pan();
   function ae(translationX) {
     const result = sharedValue1.set(sharedValue.get() + translationX.translationX);
     const result1 = sharedValue3.set(sharedValue2.get() + translationX.translationY);
+    const obj = sharedValue4;
     if (!sharedValue4.get()) {
       if (null != onMoved) {
-        ReanimatedRexport.runOnJS(tmp3)();
+        const obj2 = ReanimatedRexport;
+        obj2.runOnJS(tmp3)();
       }
-      const result2 = sharedValue4.set(true);
+      const result2 = obj.set(true);
     }
   }
-  const activeOffsetYResult = Gesture.Pan().activeOffsetX(items).activeOffsetY(items1);
+  const activeOffsetXResult = PanResult.activeOffsetX(items);
+  const activeOffsetYResult = activeOffsetXResult.activeOffsetY(items1);
   ae.__closure = { xPosition: sharedValue1, xDestination: sharedValue, yPosition: sharedValue3, yDestination: sharedValue2, trackedVoiceControlsToggleMovedForGestureSv: sharedValue4, onMoved, runOnJS: width(height[3]).runOnJS };
   ae.__workletHash = 14964390506971;
   ae.__initData = sharedValue4;
-  const obj17 = { xPosition: sharedValue1, xDestination: sharedValue, yPosition: sharedValue3, yDestination: sharedValue2, trackedVoiceControlsToggleMovedForGestureSv: sharedValue4, onMoved, runOnJS: width(height[3]).runOnJS };
+  ({ xPosition: sharedValue1, xDestination: sharedValue, yPosition: sharedValue3, yDestination: sharedValue2, trackedVoiceControlsToggleMovedForGestureSv: sharedValue4, onMoved, runOnJS: width(height[3]).runOnJS });
   function se(velocityX) {
     const sum = sharedValue1.get() + 0.0875 * velocityX.velocityX;
-    value = derivedValue5.get();
+    const value = derivedValue5.get();
     const diff = value - derivedValue3.get();
+    const obj = derivedValue5;
+    const obj2 = derivedValue3;
+    const tmp = sharedValue1;
     if (typeof clamp === "function") {
       const _Math = Math;
       const _Math2 = Math;
@@ -277,20 +285,25 @@ export const useDraggablePip = function useDraggablePip(size1) {
       const sum1 = sharedValue3.get() + 0.0875 * velocityX.velocityY;
       const value4 = derivedValue6.get();
       const diff1 = value4 - derivedValue4.get();
-      if (typeof tmp4 === "function") {
+      const obj3 = derivedValue6;
+      const obj4 = derivedValue4;
+      const tmp8 = sharedValue3;
+      if (typeof tmp5 === "function") {
+        let num2;
+        let num3;
         const _Math3 = Math;
         const _Math4 = Math;
         const bound1 = Math.min(Math.max(sum1, 0), diff1);
-        const value5 = obj5.get();
-        const diff2 = value5 - obj6.get() - bound1;
-        const value6 = obj2.get();
-        const diff3 = value6 - obj3.get() - bound;
+        const value5 = obj3.get();
+        const diff2 = value5 - obj4.get() - bound1;
+        const value6 = obj.get();
+        const diff3 = value6 - obj2.get() - bound;
         const _Math5 = Math;
         const _Math6 = Math;
         const bound2 = Math.min(bound1, diff2, bound, diff3);
         if (bound1 === bound2) {
-          let num2 = 0;
-          let num3 = bound;
+          num2 = 0;
+          num3 = bound;
           if (snapToCorners) {
             let num7 = 0;
             if (bound >= diff3) {
@@ -337,69 +350,70 @@ export const useDraggablePip = function useDraggablePip(size1) {
             }
           }
         }
-        const obj8 = {};
+        const obj5 = { velocity: velocityX.velocityX };
+        set = tmp.set;
+        const withSpring = spring.withSpring;
+        spring;
         const merged = Object.assign(closure_6);
-        obj8.velocity = velocityX.velocityX;
-        const result = obj.set(spring.withSpring(num3, obj8));
+        const result = set(withSpring(num3, obj5));
         const result1 = sharedValue.set(num3);
-        const obj10 = {};
+        const obj6 = { velocity: velocityX.velocityY };
+        set2 = tmp8.set;
+        const withSpring2 = spring.withSpring;
+        spring;
         const merged1 = Object.assign(closure_6);
-        obj10.velocity = velocityX.velocityY;
-        const result2 = obj4.set(spring.withSpring(num2, obj10));
-        const result3 = sharedValue2.set(num2);
+        set2(withSpring2(num2, obj6));
+        const result2 = sharedValue2.set(num2);
       } else {
         throw new TypeError("Trying to call a non-function");
       }
-      obj4 = sharedValue3;
-      obj5 = derivedValue6;
-      obj6 = derivedValue4;
     } else {
       throw new TypeError("Trying to call a non-function");
     }
-    obj = sharedValue1;
-    obj2 = derivedValue5;
-    obj3 = derivedValue3;
   }
   const onUpdateResult = activeOffsetYResult.onUpdate(ae);
   se.__closure = { xPosition: sharedValue1, containerWidthDv: derivedValue5, scaledWidthDv: derivedValue3, clamp, yPosition: sharedValue3, containerHeightDv: derivedValue6, scaledHeightDv: derivedValue4, snapToCorners, withSpring: width(height[8]).withSpring, spring: snapToCorners, xDestination: sharedValue, yDestination: sharedValue2 };
   se.__workletHash = 690760681755;
   se.__initData = sharedValue3;
-  const obj19 = { xPosition: sharedValue1, containerWidthDv: derivedValue5, scaledWidthDv: derivedValue3, clamp, yPosition: sharedValue3, containerHeightDv: derivedValue6, scaledHeightDv: derivedValue4, snapToCorners, withSpring: width(height[8]).withSpring, spring: snapToCorners, xDestination: sharedValue, yDestination: sharedValue2 };
-  const Gesture2 = width(height[7]).Gesture;
+  ({ xPosition: sharedValue1, containerWidthDv: derivedValue5, scaledWidthDv: derivedValue3, clamp, yPosition: sharedValue3, containerHeightDv: derivedValue6, scaledHeightDv: derivedValue4, snapToCorners, withSpring: width(height[8]).withSpring, spring: snapToCorners, xDestination: sharedValue, yDestination: sharedValue2 });
   const onEndResult = onUpdateResult.onEnd(se);
+  const Gesture2 = width(height[7]).Gesture;
   function re() {
     if (null != onPress) {
-      ReanimatedRexport.runOnJS(tmp)();
+      const obj = ReanimatedRexport;
+      obj.runOnJS(tmp)();
     }
   }
   const TapResult = Gesture2.Tap();
   re.__closure = { onPress, runOnJS: width(height[3]).runOnJS };
   re.__workletHash = 4692146362189;
   re.__initData = __initData2;
-  const obj21 = { gesture: null, draggableGridItemStyles: null };
-  const obj20 = { onPress, runOnJS: width(height[3]).runOnJS };
-  const Gesture3 = width(height[7]).Gesture;
-  obj21.gesture = Gesture3.Race(onEndResult, TapResult.onStart(re));
-  const onStartResult = TapResult.onStart(re);
-  function ce() {
-    const obj = { transform: null };
-    const obj2 = { translateX: null };
+  const obj21 = { gesture: Gesture3.Race(onEndResult, onStartResult), draggableGridItemStyles: obj29.useAnimatedStyle(ce) };
+  ({ onPress, runOnJS: width(height[3]).runOnJS });
+  onStartResult = TapResult.onStart(re);
+  Gesture3 = width(height[7]).Gesture;
+  ce = function ce() {
+    let items;
+    let value;
+    let value4;
+    let value5;
+    let value6;
+    const obj = { transform: items };
+    const obj2 = { translateX: value + (value4 - derivedValue1.get()) / 2 };
     value = sharedValue1.get();
-    const value4 = derivedValue3.get();
-    obj2.translateX = value + (value4 - derivedValue1.get()) / 2;
-    const items = [obj2, , ];
-    const obj3 = { translateY: null };
-    const value5 = sharedValue3.get();
-    const value6 = derivedValue4.get();
-    obj3.translateY = value5 + (value6 - derivedValue2.get()) / 2;
+    value4 = derivedValue3.get();
+    items = [obj2, , ];
+    const obj3 = { translateY: value5 + (value6 - derivedValue2.get()) / 2 };
+    value5 = sharedValue3.get();
+    value6 = derivedValue4.get();
     items[1] = obj3;
     items[2] = { scale: derivedValue.get() };
-    obj.transform = items;
+    ({ scale: derivedValue.get() });
     return obj;
-  }
+  };
   ce.__closure = { xPosition: sharedValue1, scaledWidthDv: derivedValue3, widthDv: derivedValue1, yPosition: sharedValue3, scaledHeightDv: derivedValue4, heightDv: derivedValue2, pipScale: derivedValue };
   ce.__workletHash = 12534173786665;
   ce.__initData = __initData3;
-  obj21.draggableGridItemStyles = width(height[3]).useAnimatedStyle(ce);
+  obj29 = width(height[3]);
   return obj21;
 };

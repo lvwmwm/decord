@@ -5,144 +5,154 @@
 // Exports: default
 
 // Module 12665 (UserProfileDismissibleUpsells)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import intl5 from "intl" /* 1115 */;
+import native from "native" /* 1177 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
-import noop from "module_19" /* 19 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
+import XSmallIcon from "XSmallIcon" /* 5992 */;
+import ColorConstants from "ColorConstants" /* 6852 */;
+import Constants from "Constants" /* 7628 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;
+import ShopIcon from "ShopIcon" /* 11620 */;
+import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const util = ShopIcon(1115);
-const native = ShopIcon(1177);
-const Text_Text = ShopIcon(4832);
-const components_Button_Button = ShopIcon(5281);
-const Pressables = ShopIcon(5435);
-const XSmallIcon = ShopIcon(5992);
-const NitroWheelIcon = ShopIcon(8122);
-const ShopIcon2 = ShopIcon(11620);
-require = fn;
-const View = fn(17).View;
-const TrackUserProfileActions = fn(7628).TrackUserProfileActions;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let items = [...fn(6852).Gradients.PREMIUM_GUILD];
+let c9;
+let metroImportAll;
+let obj2;
+let obj3;
+let react = react_mod;
+const View = react_native.View;
+const TrackUserProfileActions = Constants.TrackUserProfileActions;
+const Gradients = ColorConstants.Gradients;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let items = [...Gradients.PREMIUM_GUILD];
 let closure_10 = items.reverse();
-const createStyles = fn(4836);
-let obj2 = { upsellContainer: { paddingVertical: 16, paddingHorizontal: 12, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, customProfileThemeUpsellContainer: null, header: null, upsellButtonsContainer: null, upsellButton: null };
-let obj3 = { paddingVertical: 16, paddingHorizontal: 12, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-obj2.customProfileThemeUpsellContainer = { backgroundColor: nativeDefault.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME };
-obj2.header = { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" };
-obj2.upsellButtonsContainer = { display: "flex", flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap", gap: 10, marginTop: 12 };
-obj2.upsellButton = { flex: 1 };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
+let createStyles = createStyles_mod;
+let obj = { upsellContainer: obj2, customProfileThemeUpsellContainer: obj3, header: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, upsellButtonsContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap", gap: 10, marginTop: 12 }, upsellButton: { flex: 1 } };
+obj2 = { paddingVertical: 16, paddingHorizontal: 12, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME };
+let closure_11 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDismissibleUpsells.tsx");
 
 export default function UserProfileDismissibleUpsells(navigateToShop) {
+  let colors;
+  let items4;
+  let tmp5Result;
+  let upsellContainer;
   navigateToShop = navigateToShop.navigateToShop;
   const navigateToPremium = navigateToShop.navigateToPremium;
   const hasCustomProfileTheme = navigateToShop.hasCustomProfileTheme;
   let currentUser;
-  noop = closure_11();
-  const isPrivacyNoticeVisible = navigateToShop(hasCustomProfileTheme[9]).useIsPrivacyNoticeVisible();
+  react = closure_11();
+  const tmp = navigateToShop;
   let obj = navigateToShop(hasCustomProfileTheme[9]);
-  let tmp = navigateToShop;
-  const trackUserProfileAction = navigateToShop(hasCustomProfileTheme[10]).useUserProfileAnalyticsContext().trackUserProfileAction;
+  const isPrivacyNoticeVisible = obj.useIsPrivacyNoticeVisible();
   let obj2 = navigateToShop(hasCustomProfileTheme[10]);
-  let items = [currentUser];
-  const stateFromStores = navigateToShop(hasCustomProfileTheme[11]).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   let obj3 = navigateToShop(hasCustomProfileTheme[11]);
-  currentUser = navigateToShop(hasCustomProfileTheme[12]).isPremium(stateFromStores);
+  let items = [currentUser];
+  const stateFromStores = obj3.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj4 = navigateToShop(hasCustomProfileTheme[12]);
+  currentUser = obj4.isPremium(stateFromStores);
   let items1 = [navigateToShop, trackUserProfileAction];
-  const onPress = noop.useCallback(() => {
-    trackUserProfileAction({ action: TrackUserProfileActions.VISIT_SHOP });
+  const onPress = react.useCallback(() => {
+    const obj = { action: TrackUserProfileActions.VISIT_SHOP };
+    trackUserProfileAction(obj);
     navigateToShop();
   }, items1);
-  const items2 = [navigateToPremium, trackUserProfileAction];
-  closure_7 = noop.useCallback(() => {
-    trackUserProfileAction({ action: TrackUserProfileActions.GET_PREMIUM });
+  let items2 = [navigateToPremium, trackUserProfileAction];
+  let closure_7 = react.useCallback(() => {
+    const obj = { action: TrackUserProfileActions.GET_PREMIUM };
+    trackUserProfileAction(obj);
     navigateToPremium();
   }, items2);
   const items3 = [navigateToPremium, trackUserProfileAction];
-  closure_8 = noop.useCallback(() => {
-    trackUserProfileAction({ action: TrackUserProfileActions.VIEW_PREMIUM_PERKS });
+  let closure_8 = react.useCallback(() => {
+    const obj = { action: TrackUserProfileActions.VIEW_PREMIUM_PERKS };
+    trackUserProfileAction(obj);
     navigateToPremium();
   }, items3);
   if (isPrivacyNoticeVisible) {
-    let tmp5Result = tmp5(tmp6(tmp2[9]), {});
+    tmp5Result = tmp5(tmp6(tmp2[9]), {});
   } else {
-    let obj5 = { contentTypes: null, children: null };
-    const items4 = [tmp(tmp2[14]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS];
-    obj5.contentTypes = items4;
-    obj5.children = function children(markAsDismissed) {
-      markAsDismissed = markAsDismissed.markAsDismissed;
-      let ShopIcon = require;
-      let tmp = dependencyMap;
-      if (markAsDismissed.visibleContent !== dismissible_content.DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
-        return null;
-      } else {
-        const obj = { borderWidth: 2, direction: native.GradientBorder.Direction.VERTICAL, colors, borderRadius: nativeDefault.radii.lg, children: null };
-        const obj2 = {};
-        let tmp12Result3 = upsellContainer;
-        const merged = Object.assign(upsellContainer.upsellContainer);
-        const tmp2 = hasCustomProfileTheme ? tmp12Result3.customProfileThemeUpsellContainer : {};
-        let obj3 = { style: null, children: null };
-        const merged1 = Object.assign(tmp2);
-        obj3.style = obj2;
-        const obj4 = { style: tmp12Result3.header, children: null };
-        const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", children: null };
-        const intl = util.intl;
-        obj5.children = intl.string(util.t.EIYbj6);
-        const items = [React6(Text_Text.Text, obj5), ];
-        const obj6 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
-        const intl2 = util.intl;
-        obj6.accessibilityLabel = intl2.string(util.t["6Xcq+Y"]);
-        obj6.onPress = function onPress() {
-          return markAsDismissed(constants.USER_DISMISS);
-        };
-        obj6.children = React6(XSmallIcon.XSmallIcon, { size: "sm" });
-        items[1] = React6(Pressables.PressableOpacity, obj6);
-        obj4.children = items;
-        const items1 = [React7(View, obj4), ];
-        let obj7 = { style: tmp12Result3.upsellButtonsContainer, children: null };
-        let obj8 = { style: tmp12Result3.upsellButton, children: null };
-        let Button = components_Button_Button.Button;
-        const intl3 = util.intl;
-        const string = intl3.string;
-        const t = util.t;
-        if (closure_5) {
-          let stringResult = string(t["0Q61kF"]);
-        } else {
-          stringResult = string(t.x6rkDp);
+    let obj5 = {
+      contentTypes: items4,
+      children(markAsDismissed) {
+          let Button;
+          let Button2;
+          let intl;
+          let intl2;
+          let intl4;
+          let items;
+          let items1;
+          let items2;
+          let obj;
+          let obj11;
+          let obj9;
+          markAsDismissed = markAsDismissed.markAsDismissed;
+          let tmp11Result = null;
+          if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
+            let stringResult;
+            const obj2 = { borderWidth: 2, direction: native.GradientBorder.Direction.VERTICAL, colors, borderRadius: nativeDefault.radii.lg, children: React4(View, obj) };
+            const GradientBorder = tmp(1177).GradientBorder;
+            const obj3 = {};
+            const merged = Object.assign(upsellContainer.upsellContainer);
+            obj = { style: obj3, children: items1 };
+            const tmp4 = hasCustomProfileTheme ? upsellContainer.customProfileThemeUpsellContainer : {};
+            const merged1 = Object.assign(tmp4);
+            const obj4 = { style: upsellContainer.header, children: items };
+            const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", children: intl.string(intl5.t.EIYbj6) };
+            const Text = tmp(4832).Text;
+            intl = tmp(1115).intl;
+            items = [metroImportAll(Text, obj5), ];
+            const obj6 = {
+              accessibilityRole: "button",
+              accessibilityLabel: intl2.string(intl5.t["6Xcq+Y"]),
+              onPress() {
+                  return markAsDismissed(constants.USER_DISMISS);
+                },
+              children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
+            };
+            const PressableOpacity = tmp(5435).PressableOpacity;
+            intl2 = tmp(1115).intl;
+            items[1] = metroImportAll(PressableOpacity, obj6);
+            items1 = [React4(View, obj4), ];
+            const obj7 = { style: upsellContainer.upsellButtonsContainer, children: items2 };
+            const obj8 = { style: upsellContainer.upsellButton, children: metroImportAll(Button, obj9) };
+            Button = tmp(5281).Button;
+            const intl3 = tmp(1115).intl;
+            const string = intl3.string;
+            const t = tmp(1115).t;
+            if (currentUser) {
+              stringResult = string(t["0Q61kF"]);
+            } else {
+              stringResult = string(t.x6rkDp);
+            }
+            obj9 = { text: stringResult, onPress: currentUser ? metroImportAll : constants, icon: metroImportAll(NitroWheelIcon.NitroWheelIcon, { size: "sm" }), iconPosition: "start", variant: "secondary", shiny: true };
+            items2 = [metroImportAll(View, obj8), ];
+            const obj10 = { style: upsellContainer.upsellButton, children: metroImportAll(Button2, obj11) };
+            obj11 = { text: intl4.string(intl5.t.pWG4ze), onPress, icon: metroImportAll(ShopIcon.ShopIcon, { size: "sm" }), iconPosition: "start", variant: "secondary" };
+            Button2 = tmp(5281).Button;
+            intl4 = tmp(1115).intl;
+            items2[1] = metroImportAll(View, obj10);
+            items1[1] = React4(View, obj7);
+            tmp11Result = tmp11(GradientBorder, obj2);
+          }
+          return tmp11Result;
         }
-        let obj9 = { text: stringResult, onPress: closure_5 ? closure_8 : constants, icon: React6(NitroWheelIcon.NitroWheelIcon, { size: "sm" }), iconPosition: "start", variant: "secondary", shiny: true };
-        obj8.children = React6(Button, obj9);
-        obj8 = [, ];
-        obj8[0] = React6(View, obj8);
-        const obj10 = { style: tmp12Result3.upsellButton, children: null };
-        Button = components_Button_Button.Button;
-        const obj20 = { text: null, onPress: null, icon: null, iconPosition: "start", variant: "secondary" };
-        const intl4 = util.intl;
-        obj20.text = intl4.string(util.t.pWG4ze);
-        obj20.onPress = onPress;
-        ShopIcon = ShopIcon2.ShopIcon;
-        tmp = tmp12(ShopIcon, { size: "sm" });
-        obj20.icon = tmp;
-        tmp12Result3 = tmp12(Button, obj20);
-        obj10.children = tmp12Result3;
-        obj9 = tmp12(tmp16, obj10);
-        obj8[1] = obj9;
-        obj7.children = obj8;
-        obj7 = tmp15(tmp16, obj7);
-        items1[1] = obj7;
-        obj3.children = items1;
-        obj3 = tmp15(tmp16, obj3);
-        obj.children = obj3;
-        React6(native.GradientBorder, obj);
-        const tmp12Result = React6(View, obj8);
-      }
     };
-    tmp5Result = tmp5(tmp6(tmp2[13]), obj5);
-    const tmp6Result = tmp6(tmp2[13]);
+    items4 = [];
+    const tmp6Result = navigateToPremium(hasCustomProfileTheme[13]);
+    items4[0] = tmp(hasCustomProfileTheme[14]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS;
+    tmp5Result = tmp5(tmp6Result, obj5);
   }
   return tmp5Result;
 };

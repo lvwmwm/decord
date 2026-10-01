@@ -5,23 +5,25 @@
 // Exports: default
 
 // Module 14511 (SettingsClipsScreen)
+import Fragment from "Fragment" /* 21 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import SettingLayoutDefault from "SettingLayout" /* 14247 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MobileUserSettings = fn(7417).MobileUserSettings;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/clips/native/SettingsClipsScreen.tsx");
 
 export default function ClipsSettingsScreen() {
-  const node = noop.useMemo(() => {
-    const obj = { settings: null };
-    const items = [constants.CLIPS_OPT_OUT_OF_VOICE_RECORDING];
-    obj.settings = items;
+  const node = react.useMemo(() => {
+    let items;
+    const obj = { settings: items };
+    items = [constants.CLIPS_OPT_OUT_OF_VOICE_RECORDING];
     const sections = [obj];
-    return SettingBuilders.createList({ sections });
+    const obj2 = SettingBuilders;
+    return obj2.createList({ sections });
   }, []);
   return jsx(SettingLayoutDefault, { node });
 };

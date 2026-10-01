@@ -4,24 +4,29 @@
 // Dependencies: [17, 17757, 7826, 7178, 2]
 
 // Module 17765 (GenerateInvite)
-import _mod17 from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7826 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = _mod17.NativeModules;
+let RNCClipboard;
+
+const NativeModules = react_native.NativeModules;
 const result = size.fileFinishedImporting("modules/headless_tasks/android/GenerateInvite.tsx");
 
 export default (channelId) => {
   channelId = channelId.channelId;
-  return new Promise((arg0) => {
-    closure_0 = arg0;
-    channelId(17757).awaitStorage(() => {
-      const invite = InstantInviteActionCreatorsDefault.createInvite(channelId, {}, "Mobile Voice Overlay");
+  const promise = new Promise((arg0) => {
+    let closure_0 = arg0;
+    let obj = channelId(dependencyMap[1]);
+    obj.awaitStorage(() => {
+      const obj = InstantInviteActionCreatorsDefault;
+      const invite = obj.createInvite(channelId, {}, "Mobile Voice Overlay");
       invite.then((code) => {
         RNCClipboard = RNCClipboard.RNCClipboard;
-        RNCClipboard.setString(channelId(7178)(code.code));
+        RNCClipboard.setString(channelId(dependencyMap[3])(code.code));
         closure_1_0(true);
       });
     });
   });
+  return promise;
 };

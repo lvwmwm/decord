@@ -5,14 +5,15 @@
 // Exports: useAdPersonalizationTogglesDisabled
 
 // Module 15473 (useAdPersonalizationTogglesDisabled)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import AdPersonalizationStore from "AdPersonalizationStore" /* 13228 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/ads/hooks/useAdPersonalizationTogglesDisabled.tsx");
 
 export const useAdPersonalizationTogglesDisabled = function useAdPersonalizationTogglesDisabled() {
+  let togglesDisabled;
   const items = [AdPersonalizationStore];
-  return initialize.useStateFromStores(items, () => togglesDisabled.isTogglesDisabled());
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => togglesDisabled.isTogglesDisabled());
 };

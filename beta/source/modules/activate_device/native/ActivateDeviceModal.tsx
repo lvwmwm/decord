@@ -5,46 +5,45 @@
 // Exports: default
 
 // Module 13418 (ActivateDeviceModal)
-import _modDef6413 from "module_6413" /* 6413 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 const constants = { ACTIVATE_DEVICE: "activate-device" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDeviceModal.tsx");
 
 export default function ActivateDeviceModal(userCode) {
   userCode = userCode.userCode;
   const items = [userCode];
-  const memo = noop.useMemo(() => {
-    const prefilledUserCode = userCode;
+  const memo = react.useMemo(() => {
     function onClose() {
-      return onClose(dependencyMap[2]).hideModal();
+      const obj = onClose(closure_1_2[2]);
+      return obj.hideModal();
     }
-    return {
-      [closure_2_5.ACTIVATE_DEVICE]: {
-        fullscreen: true,
-        headerTitle() {
-          return null;
-        },
-        headerLeft() {
-          const obj = { source: _modDef6413, onPress: onClose, accessibilityLabel: null };
-          const intl = userCode(1115).intl;
-          obj.accessibilityLabel = intl.string(userCode(1115).t.cpT0Cq);
-          return jsx(userCode(6795).HeaderActionButton, { source: _modDef6413, onPress: onClose, accessibilityLabel: null });
-        },
-        headerRight() {
-          return null;
-        },
-        render() {
-          return jsx(userCode(13419).ActivateDevice, { onClose, prefilledUserCode });
-        }
+    let obj = {
+      fullscreen: true,
+      headerTitle() {
+        return null;
+      },
+      headerLeft() {
+        let intl;
+        const obj = { source: closure_2_1(closure_2_2[4]), onPress: onClose, accessibilityLabel: intl.string(userCode(closure_2_2[5]).t.cpT0Cq) };
+        const HeaderActionButton = userCode(closure_2_2[3]).HeaderActionButton;
+        intl = userCode(closure_2_2[5]).intl;
+        return closure_2_4(HeaderActionButton, obj);
+      },
+      headerRight() {
+        return null;
+      },
+      render() {
+        const obj = { onClose, prefilledUserCode };
+        return closure_2_4(userCode(closure_2_2[6]).ActivateDevice, obj);
       }
     };
+    return { [closure_2_5.ACTIVATE_DEVICE]: obj };
   }, items);
-  let obj = { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: null };
+  const Navigator = userCode(6421).Navigator;
   let intl = userCode(1115).intl;
-  obj.headerBackTitle = intl.string(userCode(1115).t["13/7kX"]);
-  return jsx(userCode(6421).Navigator, { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: null });
+  return <Navigator screens={memo} initialRouteName={constants.ACTIVATE_DEVICE} headerBackTitle={intl.string(userCode(1115).t["13/7kX"])} />;
 };

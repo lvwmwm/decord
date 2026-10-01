@@ -4,14 +4,15 @@
 // Dependencies: [1458, 5120, 1459]
 
 // Module 5127 (shimStringTrim)
-import _mod1458 from "module_1458" /* 1458 */;
-import defineDataProperty from "defineDataProperty" /* 1459 */;
-import _mod5120 from "module_5120" /* 5120 */;
+import hasPropertyDescriptors from "hasPropertyDescriptors" /* 1458 */;
+import getPolyfill from "getPolyfill" /* 5120 */;
 
-let closure_2 = _mod1458();
+let tmp;
+const defineDataProperty = tmp(1459);
+let closure_2 = hasPropertyDescriptors();
 
 export default function shimStringTrim() {
-  const tmp3 = _mod5120();
+  const tmp3 = getPolyfill();
   if (String.prototype.trim !== tmp3) {
     const tmpResult = defineDataProperty;
     const _String = String;

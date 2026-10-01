@@ -5,56 +5,64 @@
 // Exports: default
 
 // Module 15910 (useFavoritesGuildSuggestionCandidates)
-import sortByMatchScore from "sortByMatchScore" /* 9290 */;
+import _mod9290 from "module_9290" /* 9290 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9299 */;
-import noop from "module_19" /* 19 */;
+import ShareConstants from "ShareConstants" /* 10445 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 15834 */;
+import react from "react" /* 19 */;
 import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 15911 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7072 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_1, importDefault, set;
 
-require = fn;
 function getAffineChannelId(channelId) {
   return channelId.channelId;
 }
 function getAffineUserDMId(otherUserId) {
   return ChannelStore.getDMFromUserId(otherUserId.otherUserId);
 }
-const NO_SUGGESTIONS = fn(15834).NO_SUGGESTIONS;
-const isAllowedType = fn(10445).isAllowedType;
-const size = fn(2);
+const NO_SUGGESTIONS = FavoritesGuildSuggestionsStore.NO_SUGGESTIONS;
+const isAllowedType = ShareConstants.isAllowedType;
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildSuggestionCandidates.tsx");
 
 export default function useFavoritesGuildSuggestionCandidates(arg0) {
+  let closure_0;
+  let memo;
+  let memo1;
+  let results;
+  let userAffinitiesMap;
   _require = arg0;
   const tmp = require("useFavoritesGuildChannelFilter")();
   importDefault = tmp;
-  results = require("useShareSearchResults").useShareSearchResults({ channelFilter: tmp, includeFrecency: false }).results;
-  const effect = memo.useEffect(() => {
-    const channelAffinitiesV2 = closure_0(results[6]).fetchChannelAffinitiesV2();
-  }, []);
   let obj = require("useShareSearchResults");
+  results = obj.useShareSearchResults({ channelFilter: tmp, includeFrecency: false }).results;
+  const effect = memo.useEffect(() => {
+    const obj = closure_0(results[6]);
+    const channelAffinitiesV2 = obj.fetchChannelAffinitiesV2();
+  }, []);
+  let obj2 = require("get initialized");
   let items = [memo1];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => memo1.getChannelAffinities());
-  closure_129_0 = stateFromStores;
+  const stateFromStores = obj2.useStateFromStores(items, () => memo1.getChannelAffinities());
   const items1 = [stateFromStores];
   memo = memo.useMemo(() => {
-    const substr = closure_0.slice();
+    const substr = stateFromStores.slice();
     return substr.sort((score, score2) => score2.score - score.score);
   }, items1);
   const effect1 = memo.useEffect(() => {
-    const userAffinitiesV2 = closure_0(results[8]).fetchUserAffinitiesV2();
+    const obj = closure_0(results[8]);
+    const userAffinitiesV2 = obj.fetchUserAffinitiesV2();
   }, []);
-  let obj2 = require("initialize");
   const items2 = [UserAffinitiesV2Store];
-  const stateFromStores1 = require("initialize").useStateFromStores(items2, () => userAffinitiesMap.getUserAffinitiesMap());
-  closure_130_0 = stateFromStores1;
+  const obj3 = require("get initialized");
+  const stateFromStores1 = obj3.useStateFromStores(items2, () => userAffinitiesMap.getUserAffinitiesMap());
   const items3 = [stateFromStores1];
   memo1 = memo.useMemo(() => {
-    const array = new Array(closure_0.size);
+    const array = new Array(stateFromStores1.size);
     closure_1 = 0;
-    const item = closure_0.forEach((item) => {
+    const item = stateFromStores1.forEach((item) => {
       closure_1 = tmp + 1;
       array[+closure_1] = item;
     });
@@ -63,7 +71,7 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
   const items4 = [memo, tmp, arg0, results, memo1];
   return memo.useMemo(() => {
     let items = [];
-    const set = new Set();
+    set = new Set();
     const obj = { affinities: memo, getChannelId: getAffineChannelId, index: 0 };
     const obj2 = { affinities: memo1, getChannelId: getAffineUserDMId, index: 0 };
     let num = 0;
@@ -146,8 +154,9 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
               let tmp20 = results[tmp25];
               let sum = tmp25 + 1;
               if (null != tmp20) {
-                if (tmp20.type !== sortByMatchScore.AutocompleterResultTypes.HEADER) {
-                  let tmp24 = sum;
+                let tmp24;
+                if (tmp20.type !== _mod9290.AutocompleterResultTypes.HEADER) {
+                  tmp24 = sum;
                   if (!set.has(tmp20.record.id)) {
                     break;
                   }

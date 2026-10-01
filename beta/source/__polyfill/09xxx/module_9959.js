@@ -4,6 +4,7 @@
 
 // Module 9959
 import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9895 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9896 */;
 import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
 import _mod9957 from "module_9957" /* 9957 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
@@ -12,19 +13,14 @@ import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const FRMonthNameLittleEndianParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -32,22 +28,22 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:on\\s*?)?(" + _mod9957.ORDINAL_NUMBER_PATTERN + ")(?:\\s*(?:au|\\-|\\\u2013|jusqu'au?|\\s)\\s*(" + _mod9957.ORDINAL_NUMBER_PATTERN + "))?(?:-|/|\\s*(?:de)?\\s*)(" + repeatedTimeunitPattern.matchAnyPattern(_mod9957.MONTH_DICTIONARY) + ")(?:(?:-|/|,?\\s*)(" + _mod9957.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
+const ORDINAL_NUMBER_PATTERN = _mod9957.ORDINAL_NUMBER_PATTERN;
+const ORDINAL_NUMBER_PATTERN2 = _mod9957.ORDINAL_NUMBER_PATTERN;
+const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod9957.MONTH_DICTIONARY);
+const regExp = new RegExp("(?:on\\s*?)?(" + ORDINAL_NUMBER_PATTERN + ")(?:\\s*(?:au|\\-|\\\u2013|jusqu'au?|\\s)\\s*(" + ORDINAL_NUMBER_PATTERN2 + "))?(?:-|/|\\s*(?:de)?\\s*)(" + matchAnyPatternResult + ")(?:(?:-|/|,?\\s*)(" + _mod9957.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
 class FRMonthNameLittleEndianParser {
   constructor() {
-    self = this;
-    tmp = c2(this, FRMonthNameLittleEndianParser);
-    tmp2 = closure_4;
-    obj = closure_4(FRMonthNameLittleEndianParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, FRMonthNameLittleEndianParser);
+    const obj = _getPrototypeOf(FRMonthNameLittleEndianParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
@@ -66,8 +62,8 @@ const items = [
     key: "innerExtract",
     value: function innerExtract(createParsingResult, index) {
       const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp4 = FRMonthNameLittleEndianParser(9957).MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
-      const result = FRMonthNameLittleEndianParser(9957).parseOrdinalNumberPattern(index[1]);
+      const tmp4 = _mod9957.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const result = _mod9957.parseOrdinalNumberPattern(index[1]);
       if (result > 31) {
         index.index = index.index + index[1].length;
         return null;
@@ -78,10 +74,10 @@ const items = [
         start5.assign("day", result);
         if (index[4]) {
           const start2 = parsingResult.start;
-          start2.assign("year", tmp2(9957).parseYear(index[4]));
+          start2.assign("year", _mod9957.parseYear(index[4]));
         } else {
           const start = parsingResult.start;
-          start.imply("year", tmp2(9896).findYearClosestToRef(createParsingResult.refDate, result, tmp4));
+          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, result, tmp4));
         }
         if (index[2]) {
           const start3 = parsingResult.start;

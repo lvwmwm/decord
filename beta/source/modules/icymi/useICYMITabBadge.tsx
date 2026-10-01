@@ -5,17 +5,18 @@
 // Exports: default, icymiTabBadgeShown
 
 // Module 16028 (useICYMITabBadge)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import ICYMIStore from "ICYMIStore" /* 7783 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/icymi/useICYMITabBadge.tsx");
 
 export default function useICYMITabBadge() {
-  const obj = { value: 0, showDot: null };
-  const items = [ICYMIStore];
-  obj.showDot = initialize.useStateFromStores(items, () => ICYMIStore.hasNewContent(), []);
+  let items;
+  let obj2;
+  const obj = { value: 0, showDot: obj2.useStateFromStores(items, () => ICYMIStore.hasNewContent(), []) };
+  items = [ICYMIStore];
+  obj2 = get_initialized;
   return obj;
 };
 export const icymiTabBadgeShown = function icymiTabBadgeShown() {

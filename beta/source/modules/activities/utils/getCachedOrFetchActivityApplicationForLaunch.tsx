@@ -6,130 +6,133 @@
 
 // Module 8793 (getCachedOrFetchActivityApplicationForLaunch)
 import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8782 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
 import ApplicationRecord from "ApplicationRecord" /* 2003 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_7 = async function _getCachedOrFetchActivityApplicationForLaunch(arg0, value) {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp5 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c5 = 2;
-      if (0 === c4) {
+let application, channel, closure_2, closure_3;
+
+let obj = function _getCachedOrFetchActivityApplicationForLaunch() {
+  obj = _asyncToGenerator(async (applicationId, arg1) => {
+    let closure_1 = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    return (async (arg0, value) => {
+      let obj3;
+      let obj7;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp4 === 3) {
         if (arg0 === 1) {
-          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
+          return { value, done: true };
         } else {
-          closure_3 = tmp3;
-          closure_2 = tmp2;
-          closure_130_0 = closure_0;
-          closure_130_1 = undefined;
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
           let activityConfigs;
           let applications;
-          closure_130_4 = undefined;
-          closure_130_5 = undefined;
-          application = application.getApplication(closure_0);
-          if (isUsableApplicationRecord(application)) {
-            c5 = 3;
-            const obj5 = { value: application, done: true };
-            return obj5;
-          } else {
-            channel = channel.getChannel(tmp41);
-            let guild_id;
-            if (channel != null) {
-              guild_id = channel.guild_id;
+          let closure_4;
+          let closure_5;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              closure_3 = tmp2;
+              closure_2 = tmp;
+              closure_1 = undefined;
+              activityConfigs = undefined;
+              applications = undefined;
+              closure_4 = undefined;
+              closure_5 = undefined;
+              application = application.getApplication(applicationId);
+              const tmp39 = closure_1;
+              if (isUsableApplicationRecord(application)) {
+                c5 = 3;
+                return { value: application, done: true };
+              } else {
+                channel = channel.getChannel(tmp39);
+                let guild_id;
+                if (channel != null) {
+                  guild_id = channel.guild_id;
+                }
+                c4 = 1;
+                c5 = 1;
+                const obj6 = { guildId: guild_id };
+                const obj8 = { value: obj7.fetchShelf(obj6), done: false };
+                obj7 = EmbeddedActivitiesActionCreators;
+                return obj8;
+              }
             }
-            const obj6 = { guildId: guild_id };
-            c4 = 1;
-            c5 = 1;
-            const obj8 = { value: EmbeddedActivitiesActionCreators.fetchShelf(obj6), done: false };
-            return obj8;
-          }
-          tmp41 = closure_1;
-        }
-      } else if (1 === tmp6) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj9 = { value, done: true };
-          return obj9;
-        } else {
-          closure_130_1 = value;
-          activityConfigs = closure_130_1.activityConfigs;
-          applications = closure_130_1.applications;
-          const obj10 = { applicationId: closure_130_0, activityConfigs, applications };
-          closure_130_4 = closure_131_1(closure_131_2[5])(obj10);
-          let application1;
-          if (closure_130_4 != null) {
-            application1 = closure_130_4.application;
-          }
-          if (tmp38(application1)) {
-            let application2;
-            if (closure_130_4 != null) {
-              application2 = closure_130_4.application;
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              closure_1 = value;
+              activityConfigs = closure_1.activityConfigs;
+              applications = closure_1.applications;
+              const obj10 = { applicationId, activityConfigs, applications };
+              closure_4 = closure_131_1(closure_131_2[5])(obj10);
+              let application1;
+              const tmp36 = closure_131_8;
+              if (closure_4 != null) {
+                application1 = closure_4.application;
+              }
+              if (tmp36(application1)) {
+                let application2;
+                if (closure_4 != null) {
+                  application2 = closure_4.application;
+                }
+                c5 = 3;
+                return { value: application2, done: true };
+              } else {
+                c4 = 2;
+                c5 = 1;
+                const obj12 = { value: obj3.fetchApplication(applicationId), done: false };
+                obj3 = closure_131_0(closure_131_2[6]);
+                return obj12;
+              }
             }
+          } else if (arg0 === 1) {
             c5 = 3;
-            const obj11 = { value: application2, done: true };
-            return obj11;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            return { value, done: true };
           } else {
-            c4 = 2;
-            c5 = 1;
-            const obj12 = { value: closure_131_0(closure_131_2[6]).fetchApplication(closure_130_0), done: false };
-            return obj12;
+            closure_5 = value;
+            c5 = 3;
+            obj = { value: closure_131_5.createFromServer(closure_5), done: true };
+            return obj;
           }
-          tmp38 = closure_131_8;
+        } catch (tmp23) {
+          c5 = 3;
+          throw tmp23;
         }
-      } else if (arg0 === 1) {
-        c5 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 3;
-        const obj13 = { value, done: true };
-        return obj13;
-      } else {
-        closure_130_5 = value;
-        c5 = 3;
-        const obj = { value: closure_131_5.createFromServer(closure_130_5), done: true };
-        return obj;
       }
-    } catch (tmp24) {
-      c5 = tmp;
-      throw tmp24;
-    }
-  }
+    })();
+  });
+  return obj(...arguments);
 };
 function isUsableApplicationRecord(embeddedActivityConfig) {
   return null != embeddedActivityConfig && null != embeddedActivityConfig.embeddedActivityConfig;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/utils/getCachedOrFetchActivityApplicationForLaunch.tsx");
 
 export default function getCachedOrFetchActivityApplicationForLaunch() {
-  const self = this;
-  const apply = closure_7.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

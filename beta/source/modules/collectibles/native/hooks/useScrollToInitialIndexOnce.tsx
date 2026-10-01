@@ -1,13 +1,13 @@
 // Module ID: 15428
 // Function ID: 15429
-// Name: useScrollToInitialIndexOnce
+// Name: react
 // Dependencies: [19, 2]
 // Exports: useScrollToInitialIndexOnce
 
-// Module 15428 (useScrollToInitialIndexOnce)
-import noop from "module_19" /* 19 */;
+// Module 15428 (react)
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/hooks/useScrollToInitialIndexOnce.tsx");
 
 export const INITIAL_SCROLL_DELAY_MS = 100;
@@ -20,18 +20,16 @@ export const useScrollToInitialIndexOnce = function useScrollToInitialIndexOnce(
     num = 100;
   }
   const resetKey = initialScrollIndex.resetKey;
-  noop.useRef(false);
-  noop.useRef(resetKey);
+  let closure_5 = react.useRef(false);
+  let closure_6 = react.useRef(resetKey);
   const items = [shouldScroll, initialScrollIndex, num, flashListRef, resetKey];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let index;
     if (ref2.current !== resetKey) {
       ref2.current = resetKey;
       ref.current = false;
     }
-    let tmp2 = null != initialScrollIndex && shouldScroll;
-    if (tmp2) {
-      tmp2 = !ref.current;
-    }
+    const tmp2 = null != initialScrollIndex && shouldScroll && !ref.current;
     if (tmp2) {
       ref.current = true;
       const _setTimeout = setTimeout;

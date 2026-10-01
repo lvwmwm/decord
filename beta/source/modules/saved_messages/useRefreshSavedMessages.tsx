@@ -6,14 +6,14 @@
 
 // Module 12861 (useRefreshSavedMessages)
 import SavedMessagesActions from "SavedMessagesActions" /* 11205 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/saved_messages/useRefreshSavedMessages.tsx");
 
 export default function useRefreshSavedMessages() {
-  const effect = noop.useEffect(() => {
-    const andUpdateSavedMessages = SavedMessagesActions.fetchAndUpdateSavedMessages();
+  const effect = react.useEffect(() => {
+    const obj = SavedMessagesActions;
+    const andUpdateSavedMessages = obj.fetchAndUpdateSavedMessages();
   }, []);
 };

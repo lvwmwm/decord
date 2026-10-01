@@ -7,7 +7,9 @@
 import AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5827 */;
 import size from "module_2" /* 2 */;
 
-({ FindResultDirections: closure_0, AutocompleterResultTypes: closure_1 } = AutocompleterConstants);
+let _window;
+let map;
+({ FindResultDirections: _window, AutocompleterResultTypes: map } = AutocompleterConstants);
 const result = size.fileFinishedImporting("modules/autocompleter/findNextSelectedResult.tsx");
 function findNextSelectedResult(DOWN, selectedIndex, arr, arg3) {
   if (0 === arr.length) {
@@ -21,24 +23,26 @@ function findNextSelectedResult(DOWN, selectedIndex, arr, arg3) {
       }
     }
     let num = 1;
-    if (DOWN === constants.UP) {
+    if (DOWN === _window.UP) {
       num = -1;
     }
     const sum = selectedIndex + num;
     if (sum >= 0) {
-      if (sum < length) {
-        let tmp13Result = sum;
-        if (arr[sum].type === constants2.HEADER) {
+      let tmp13Result;
+      if (sum < arr.length) {
+        tmp13Result = sum;
+        if (arr[sum].type === map.HEADER) {
           tmp13Result = findNextSelectedResult(DOWN, sum, arr, tmp);
         }
       }
       return tmp13Result;
     }
     let num2 = -1;
+    const tmp13 = findNextSelectedResult;
     if (sum < 0) {
       num2 = length;
     }
-    tmp13Result = findNextSelectedResult(DOWN, num2, arr, tmp);
+    tmp13Result = tmp13(DOWN, num2, arr, tmp);
   }
 }
 let c2 = findNextSelectedResult;

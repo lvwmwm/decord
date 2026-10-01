@@ -5,17 +5,21 @@
 // Exports: isNlpSearchEnabled, useIsNlpSearchEnabled
 
 // Module 11858 (IntelligenceSearchExperiments)
+import Constants from "Constants" /* 1074 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1435 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-let ApexExperiment = fn(1435);
-const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-09-mobile-nlp-search-user-flag", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
-ApexExperiment = fn(1435);
-const apexExperiment1 = ApexExperiment.createApexExperiment({ kind: "guild", name: "2026-09-mobile-nlp-search-guild-experiment", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
-const size = fn(2);
+const GuildFeatures = Constants.GuildFeatures;
+let ApexExperiment = ApexExperiment_mod;
+let obj = { kind: "user", name: "2026-09-mobile-nlp-search-user-flag", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+ApexExperiment = ApexExperiment_mod;
+let obj2 = { kind: "guild", name: "2026-09-mobile-nlp-search-guild-experiment", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const apexExperiment1 = ApexExperiment.createApexExperiment(obj2);
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/IntelligenceSearchExperiments.tsx");
 
 export const NlpSearchUserExperiment = apexExperiment;
@@ -43,11 +47,13 @@ export const isNlpSearchEnabled = function isNlpSearchEnabled(guildId, fetch_ans
   }
 };
 export const useIsNlpSearchEnabled = function useIsNlpSearchEnabled(guildIdFromSearchContext, search) {
+  let str = guildIdFromSearchContext;
   _require = guildIdFromSearchContext;
   const items = [GuildStore];
   const items1 = [guildIdFromSearchContext];
-  let enabled = require("initialize").useStateFromStores(items, () => {
-    let tmp2 = null != closure_0;
+  const obj = require("get initialized");
+  let stateFromStores = obj.useStateFromStores(items, () => {
+    let tmp2 = null != guildIdFromSearchContext;
     if (tmp2) {
       const guild = GuildStore.getGuild(tmp);
       let flag;
@@ -62,14 +68,20 @@ export const useIsNlpSearchEnabled = function useIsNlpSearchEnabled(guildIdFromS
     }
     return tmp2;
   }, items1);
+  const obj2 = { location: search };
+  const enabled = apexExperiment.useConfig(obj2).enabled;
+  let tmp2 = apexExperiment1;
+  const useConfig = apexExperiment1.useConfig;
   if (guildIdFromSearchContext == null) {
-    const str = "";
+    str = "";
   }
-  if (enabled) {
-    enabled = apexExperiment.useConfig(obj2).enabled;
+  const obj3 = { guildId: str, location: search };
+  const enabled2 = useConfig(obj3).enabled;
+  if (stateFromStores) {
+    stateFromStores = enabled;
   }
-  if (enabled) {
-    enabled = apexExperiment1.useConfig(obj3).enabled;
+  if (stateFromStores) {
+    stateFromStores = enabled2;
   }
-  return enabled;
+  return stateFromStores;
 };

@@ -6,32 +6,36 @@
 
 // Module 9237 (useGetJoinRequestGuild)
 import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5853 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useGetJoinRequestGuild.tsx");
 
 export default function useGetGuildJoinRequest(arg0) {
+  let closure_0;
   _require = arg0;
+  let obj = require("get initialized");
   const items = [UserGuildJoinRequestStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let request = null;
     if (null != closure_0) {
       request = UserGuildJoinRequestStore.getRequest(tmp);
     }
     return request;
   });
-  let obj = require("initialize");
   const items1 = [UserGuildJoinRequestStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => UserGuildJoinRequestStore.hasFetchedRequestToJoinGuilds);
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => UserGuildJoinRequestStore.hasFetchedRequestToJoinGuilds);
   const items2 = [stateFromStores1];
-  const effect = noop.useEffect(() => {
-    if (!stateFromStores1) {
-      const requestToJoinGuilds = GuildJoinRequestActionCreatorsDefault.fetchRequestToJoinGuilds();
+  const effect = react.useEffect(() => {
+    const tmp = stateFromStores1;
+    if (!tmp) {
+      const obj = GuildJoinRequestActionCreatorsDefault;
+      const requestToJoinGuilds = obj.fetchRequestToJoinGuilds();
     }
   }, items2);
   return stateFromStores;

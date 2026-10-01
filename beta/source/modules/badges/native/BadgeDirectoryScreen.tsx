@@ -5,22 +5,28 @@
 // Exports: default
 
 // Module 10656 (BadgeDirectoryScreen)
+import Fragment from "Fragment" /* 21 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10655 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
+let currentUser;
+
+const jsx = Fragment.jsx;
 let c6 = "badge-directory";
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/badges/native/BadgeDirectoryScreen.tsx");
 
 export default function BadgeDirectoryScreen(targetUserId) {
+  let title;
   targetUserId = targetUserId.targetUserId;
-  c1 = undefined;
+  let c1;
+  const tmp = targetUserId;
+  let tmp2 = dependencyMap;
+  let obj = targetUserId(504);
   const items = [UserStore];
-  const stateFromStores = targetUserId(504).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let id;
     if (currentUser != null) {
@@ -28,9 +34,9 @@ export default function BadgeDirectoryScreen(targetUserId) {
     }
     return id;
   });
-  let obj = targetUserId(504);
+  let obj2 = targetUserId(504);
   const items1 = [UserStore];
-  const stateFromStores1 = targetUserId(504).useStateFromStores(items1, () => {
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     let tmp2;
     if (null != targetUserId) {
       const user = UserStore.getUser(tmp);
@@ -44,26 +50,28 @@ export default function BadgeDirectoryScreen(targetUserId) {
   });
   if (null != targetUserId) {
     if (targetUserId !== stateFromStores) {
+      let formatToPlainStringResult;
       if (null != stateFromStores1) {
         const intl2 = tmp(1115).intl;
-        const obj3 = { username: stateFromStores1 };
-        let formatToPlainStringResult = intl2.formatToPlainString(tmp(1115).t.EIcwoe, obj3);
+        let obj3 = { username: stateFromStores1 };
+        formatToPlainStringResult = intl2.formatToPlainString(tmp(1115).t.EIcwoe, obj3);
       }
       c1 = formatToPlainStringResult;
       const items2 = [formatToPlainStringResult, targetUserId];
-      const memo = noop.useMemo(() => {
+      const memo = react.useMemo(() => {
+        let obj3;
         const obj = {};
         const obj2 = {
           title,
-          headerLeft: NavigatorHeader.getHeaderCloseButton(openBadgeDirectoryScreen.closeBadgeDirectoryScreen),
+          headerLeft: obj3.getHeaderCloseButton(openBadgeDirectoryScreen.closeBadgeDirectoryScreen),
           render() {
             return jsx(c1(dependencyMap[7]), { targetUserId });
           }
         };
         obj[c6] = obj2;
+        obj3 = NavigatorHeader;
         return obj;
       }, items2);
-      const obj4 = { screens: memo, initialRouteName };
       return jsx(tmp(10769).Modal, { screens: memo, initialRouteName });
     }
   }

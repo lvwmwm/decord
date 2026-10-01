@@ -6,11 +6,8 @@
 
 // Module 51 (normalizeColor)
 import PlatformColor from "PlatformColor" /* 52 */;
-import hslToRgbDefault from "hslToRgb" /* 53 */;
+import normalizeColorDefault from "normalizeColor" /* 53 */;
 
-require = arg1;
-importDefault = arg2;
-const dependencyMap = arg6;
 
 export default function normalizeColor(obj) {
   if (typeof obj === "object") {
@@ -21,5 +18,5 @@ export default function normalizeColor(obj) {
       }
     }
   }
-  return hslToRgbDefault(obj);
+  return normalizeColorDefault(obj);
 };

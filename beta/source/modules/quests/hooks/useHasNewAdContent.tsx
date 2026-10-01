@@ -6,41 +6,49 @@
 
 // Module 16605 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1091 */;
+import QuestConstants from "QuestConstants" /* 5756 */;
 import AdCreativeType from "AdCreativeType" /* 5763 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import AdContentSeenStore from "AdContentSeenStore" /* 14609 */;
 import QuestStore from "QuestStore" /* 7116 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const QuestsExperimentLocations = fn(5756).QuestsExperimentLocations;
+const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 const DAY = DurationsDefault.Millis.DAY;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/hooks/useHasNewAdContent.tsx");
 
 export default function useHasNewAdContent() {
+  let enabled;
+  let stateFromStoresArray;
+  let tmp = enabled;
+  let tmp2 = stateFromStoresArray;
   const MobileQuestHomeRedDotNotificationExperiment = enabled(stateFromStoresArray[5]).MobileQuestHomeRedDotNotificationExperiment;
-  enabled = MobileQuestHomeRedDotNotificationExperiment.useConfig({ location: QuestsExperimentLocations.YOU_TAB_PROFILE_HEADER }).enabled;
+  let obj = { location: QuestsExperimentLocations.YOU_TAB_PROFILE_HEADER };
+  enabled = MobileQuestHomeRedDotNotificationExperiment.useConfig(obj).enabled;
   const items = [QuestStore];
   const items1 = [enabled];
-  stateFromStoresArray = enabled(stateFromStoresArray[6]).useStateFromStoresArray(items, () => {
-    if (enabled) {
+  const obj2 = enabled(stateFromStoresArray[6]);
+  stateFromStoresArray = obj2.useStateFromStoresArray(items, () => {
+    let mapped;
+    const tmp = enabled;
+    if (tmp) {
       const _Array = Array;
       const quests = QuestStore.quests;
-      const found = Array.from(quests.values()).filter((item) => !enabled(stateFromStoresArray[7]).isQuestExpired(item));
-      let mapped = found.map((id) => id.id);
       const arr = Array.from(quests.values());
+      const found = arr.filter((item) => {
+        const obj = enabled(stateFromStoresArray[7]);
+        return !obj.isQuestExpired(item);
+      });
+      mapped = found.map((id) => id.id);
     } else {
       mapped = [];
     }
     return mapped;
   }, items1);
-  const obj = { location: QuestsExperimentLocations.YOU_TAB_PROFILE_HEADER };
-  const obj2 = enabled(stateFromStoresArray[6]);
-  let tmp = enabled;
-  let tmp2 = stateFromStoresArray;
   const items2 = [AdContentSeenStore];
   const items3 = [stateFromStoresArray];
-  const stateFromStores = enabled(stateFromStoresArray[6]).useStateFromStores(items2, () => {
+  const obj3 = enabled(stateFromStoresArray[6]);
+  const stateFromStores = obj3.useStateFromStores(items2, () => {
     for (const item10005 of stateFromStoresArray) {
       if (AdContentSeenStore.hasSeen(AdCreativeType.AdCreativeType.QUEST, item10005)) {
         continue;
@@ -52,14 +60,16 @@ export default function useHasNewAdContent() {
     }
     return false;
   }, items3);
-  const obj3 = enabled(stateFromStoresArray[6]);
   let prop = null;
+  const useSelectedTimeRecurringDismissibleContent = enabled(stateFromStoresArray[9]).useSelectedTimeRecurringDismissibleContent;
+  enabled(stateFromStoresArray[9]);
   if (stateFromStores) {
     prop = null;
     if (enabled) {
       prop = tmp(tmp2[10]).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
     }
   }
-  const tmp6 = _slicedToArray(enabled(stateFromStoresArray[9]).useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: DAY }, undefined, true), 2);
-  return { showBadge: null != tmp6[0], dismissBadge: tmp6[1] };
+  const obj4 = { cooldownDurationMs: DAY };
+  const tmp7 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, obj4, undefined, true), 2);
+  return { showBadge: null != tmp7[0], dismissBadge: tmp7[1] };
 };

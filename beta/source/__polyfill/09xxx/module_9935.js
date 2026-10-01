@@ -3,25 +3,21 @@
 // Dependencies: [41, 42, 93, 95, 98, 9914]
 
 // Module 9935
-import Filter from "Filter" /* 9914 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
+import _mod9914 from "module_9914" /* 9914 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -29,47 +25,50 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let _classCallCheck = _classCallCheck_mod;
 class UnlikelyFormatFilter {
-  constructor(arg0) {
-    self = this;
-    tmp = closure_0(this, UnlikelyFormatFilter);
-    tmp2 = c2;
-    obj = c2(UnlikelyFormatFilter);
-    tmp3 = closure_1;
-    if (closure_3()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
+  constructor(strictMode) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, UnlikelyFormatFilter);
+    const obj = _getPrototypeOf(UnlikelyFormatFilter);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
       constructResult = obj.apply(self, undefined);
     }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = global;
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
     return tmp3Result;
   }
 }
-_classCallCheck = UnlikelyFormatFilter;
-_inherits(UnlikelyFormatFilter, Filter.Filter);
+_inherits(UnlikelyFormatFilter, _mod9914.Filter);
 const entry = {
   key: "isValid",
   value: function isValid(debug, text) {
+    let flag;
+    const str = text.text;
+    const str2 = str.replace(" ", "");
     if (str2.match(/^\d*(\.\d*)?$/)) {
       debug.debug(() => {
         console.log("Removing unlikely result '" + text.text + "'");
       });
-      let flag = false;
+      flag = false;
     } else {
       const start = text.start;
       if (start.isValidDate()) {
         if (text.end) {
+          let flag2;
           const end = text.end;
           if (!end.isValidDate()) {
             debug.debug(() => {
               console.log("Removing invalid result: " + text + " (" + text.end + ")");
             });
-            let flag2 = false;
+            flag2 = false;
           }
+          flag = flag2;
         }
         const self = this;
         const strictMode = this.strictMode;

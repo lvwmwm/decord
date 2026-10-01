@@ -5,34 +5,44 @@
 // Exports: default
 
 // Module 11505 (ForumPostMessageContent)
+import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 11506 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ text: { alignSelf: "flex-start" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostMessageContent.tsx");
 
-export default function ForumPostMessageContent(senderModifier) {
-  let num = senderModifier.lineClamp;
-  ({ messageContent, message, isMessageDeleted, hasUnreads, messageLoaded } = senderModifier);
+export default function ForumPostMessageContent(lineClamp) {
+  let content;
+  let hasUnreads;
+  let isMessageDeleted;
+  let items;
+  let message;
+  let messageContent;
+  let messageLoaded;
+  let str;
+  let style;
+  let variant;
+  let num = lineClamp.lineClamp;
+  ({ messageContent, message, isMessageDeleted, hasUnreads, messageLoaded } = lineClamp);
   if (num === undefined) {
     num = 2;
   }
+  const senderModifier = lineClamp.senderModifier;
   const tmp = closure_4();
-  ({ content, style, variant } = useNativeForumPostContentDefault({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier: senderModifier.senderModifier }));
-  const obj = { variant, color: null, lineClamp: null, ellipsizeMode: "tail", includeFontPadding: true, style: null, children: null };
-  let str = "text-muted";
+  ({ content, style, variant } = useNativeForumPostContentDefault({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier }));
+  const obj = { variant, color: str, lineClamp: num, ellipsizeMode: "tail", includeFontPadding: true, style: items, children: content };
+  str = "text-muted";
+  useNativeForumPostContentDefault({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier });
+  const Text = Text_Text.Text;
+  const tmp3 = jsx;
   if (hasUnreads) {
     str = "text-default";
   }
-  obj.color = str;
-  obj.lineClamp = num;
-  const items = [style, tmp.text];
-  obj.style = items;
-  obj.children = content;
-  return jsx(Text_Text.Text, { variant, color: null, lineClamp: null, ellipsizeMode: "tail", includeFontPadding: true, style: null, children: null });
+  items = [style, tmp.text];
+  return tmp3(Text, obj);
 };

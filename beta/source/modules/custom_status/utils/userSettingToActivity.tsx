@@ -5,71 +5,76 @@
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
 // Module 8819 (userSettingToActivity)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import Constants from "Constants" /* 1074 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
 import EmojiStore from "EmojiStore" /* 5771 */;
 import size from "module_2" /* 2 */;
 
 function _activityFromSetting(emojiName, stateFromStores) {
+  let text;
+  let tmp;
+  let tmp6;
   if (null != stateFromStores) {
-    ({ id: obj2.id, name: obj2.name, animated: obj2.animated } = stateFromStores);
-    let tmp = { id: null, name: null, animated: null };
     const obj3 = { id: null, name: null, animated: null };
+    ({ id: obj2.id, name: obj2.name, animated: obj2.animated } = stateFromStores);
+    tmp = obj3;
   } else {
     tmp = null;
     if (null != emojiName.emojiName) {
       tmp = null;
       if ("" !== emojiName.emojiName) {
+        const getByName = UnicodeEmojisDefault.getByName;
+        UnicodeEmojisDefault;
         const obj5 = UnicodeEmojisDefault;
-        const byName = obj5.getByName(UnicodeEmojisDefault.convertSurrogateToName(emojiName.emojiName, false));
+        const byName = getByName(obj5.convertSurrogateToName(emojiName.emojiName, false));
         let tmp2 = null;
         if (null != byName) {
+          tmp2 = { id: null, name: byName.surrogates, animated: false };
           const obj = { id: null, name: byName.surrogates, animated: false };
-          tmp2 = obj;
         }
         tmp = tmp2;
       }
     }
   }
   const NumberResult = Number(emojiName.expiresAtMs);
-  value = undefined;
+  let value;
   if (emojiName.label != null) {
     value = iter.value;
   }
-  const obj4 = { name: "Custom Status", type: ActivityTypes.CUSTOM_STATUS, state: null, timestamps: null, emoji: null, details: null, metadata: null };
-  let text;
+  const obj4 = { name: "Custom Status", type: ActivityTypes.CUSTOM_STATUS, state: text, timestamps: tmp6, emoji: tmp, details: value, metadata: { label: value } };
+  text = undefined;
   if (emojiName.text.length > 0) {
     text = emojiName.text;
   }
-  obj4.state = text;
-  let tmp6;
+  tmp6 = undefined;
   if (NumberResult > 0) {
-    const obj9 = { end: NumberResult };
-    tmp6 = obj9;
+    tmp6 = { end: NumberResult };
+    const obj8 = { end: NumberResult };
   }
-  obj4.timestamps = tmp6;
-  obj4.emoji = tmp;
-  obj4.details = value;
-  obj4.metadata = { label: value };
   return obj4;
 }
-const useMemo = _mod19.useMemo;
+const useMemo = react.useMemo;
 const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/custom_status/utils/userSettingToActivity.tsx");
 
 export const getActivityFromCustomStatus = function getActivityFromCustomStatus(setting) {
   const emojiId = setting.emojiId;
   let usableCustomEmojiById = null;
+  const tmp = _activityFromSetting;
   if (null != emojiId) {
     usableCustomEmojiById = null;
     if ("0" !== emojiId) {
       usableCustomEmojiById = EmojiStore.getUsableCustomEmojiById(emojiId);
     }
   }
-  return _activityFromSetting(setting, usableCustomEmojiById);
+  return tmp(setting, usableCustomEmojiById);
 };
 export const useCustomStatusActivity = function useCustomStatusActivity() {
+  let setting;
+  let stateFromStores;
+  const tmp = setting;
+  let tmp2 = stateFromStores;
   const CustomStatusSetting = setting(stateFromStores[4]).CustomStatusSetting;
   setting = CustomStatusSetting.useSetting();
   let emojiId;
@@ -78,11 +83,12 @@ export const useCustomStatusActivity = function useCustomStatusActivity() {
   }
   const items = [EmojiStore];
   const items1 = [emojiId];
-  stateFromStores = setting(stateFromStores[5]).useStateFromStores(items, () => {
+  const tmpResult = tmp(tmp2[5]);
+  stateFromStores = tmpResult.useStateFromStores(items, () => {
     let usableCustomEmojiById = null;
     if (null != emojiId) {
       usableCustomEmojiById = null;
-      if ("0" !== tmp) {
+      if ("0" !== emojiId) {
         usableCustomEmojiById = EmojiStore.getUsableCustomEmojiById(tmp);
       }
     }

@@ -6,12 +6,14 @@
 // Module 16496 (SearchResultLinkPreviewMarkup)
 import MarkupRulesDefault from "MarkupRules" /* 5304 */;
 import combineMarkupRules from "combineMarkupRules" /* 5303 */;
+import MarkupSearchResultLinkPreviewReactRules from "MarkupSearchResultLinkPreviewReactRules" /* 16497 */;
 import MarkupParser from "MarkupParser" /* 7429 */;
+import size from "module_2" /* 2 */;
 
-const items = [MarkupRulesDefault.NATIVE_SEARCH_RESULT_LINK_RULES, fn(16497).createSearchResultLinkPreviewReactRules()];
-const MarkupSearchResultLinkPreviewReactRules = fn(16497);
+const items = [MarkupRulesDefault.NATIVE_SEARCH_RESULT_LINK_RULES, ];
+items[1] = MarkupSearchResultLinkPreviewReactRules.createSearchResultLinkPreviewReactRules();
 const importDefaultResultResult = combineMarkupRules(items);
-const size = fn(2);
+const reactParserForResult = MarkupParser.reactParserFor(importDefaultResultResult);
 const result = size.fileFinishedImporting("modules/search/native/SearchResultLinkPreviewMarkup.tsx");
 
-export const NativeSearchResultLinkPreviewParser = MarkupParser.reactParserFor(combineMarkupRules(items));
+export const NativeSearchResultLinkPreviewParser = reactParserForResult;

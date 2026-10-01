@@ -5,15 +5,20 @@
 // Exports: CardVerticalSeparator, MediaVerticalSeparator, MessageVerticalSeparator
 
 // Module 16465 (Separators)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import SearchConstants from "SearchConstants" /* 7303 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const SearchConstants = fn(7303);
+let FILES_OR_LINKS_GAP_WIDTH;
+let MEDIA_ITEM_GAP_WIDTH;
+const View = react_native.View;
 ({ MEDIA_ITEM_GAP_WIDTH, FILES_OR_LINKS_GAP_WIDTH } = SearchConstants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let closure_2 = createStyles.createStyles({ filesOrLinksSeparator: { height: FILES_OR_LINKS_GAP_WIDTH }, mediaSeparator: { height: MEDIA_ITEM_GAP_WIDTH }, messageSeparator: { height: 4 } });
-const size = fn(2);
+const jsx = Fragment.jsx;
+const obj = { filesOrLinksSeparator: { height: FILES_OR_LINKS_GAP_WIDTH }, mediaSeparator: { height: MEDIA_ITEM_GAP_WIDTH }, messageSeparator: { height: 4 } };
+let closure_2 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/Separators.tsx");
 
 export const MessageVerticalSeparator = function MessageVerticalSeparator() {

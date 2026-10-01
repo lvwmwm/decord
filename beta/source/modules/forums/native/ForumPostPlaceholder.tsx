@@ -4,57 +4,69 @@
 // Dependencies: [32, 19, 4825, 21, 4836, 576, 504, 4566, 4837, 5919, 2]
 
 // Module 11509 (ForumPostPlaceholder)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { postPlaceholder: { height: 2 * nativeDefault.space.PX_64, marginBottom: nativeDefault.space.PX_12 } };
+let obj2;
+const jsx = Fragment.jsx;
+let obj = { postPlaceholder: obj2 };
+obj2 = { height: 2 * nativeDefault.space.PX_64, marginBottom: nativeDefault.space.PX_12 };
 let closure_7 = createStyles.createStyles(obj);
 let c8 = 0.55;
 const __initData = { code: "function ForumPostPlaceholderTsx1(){const{reducedMotion,ROW_OPACITY_END,withDelay,INITIAL_DELAY_MS,withRepeat,withSequence,withTiming,timingConfig}=this.__closure;if(reducedMotion){return{opacity:ROW_OPACITY_END};}return{opacity:withDelay(INITIAL_DELAY_MS,withRepeat(withSequence(withTiming(ROW_OPACITY_END,timingConfig),withTiming(1,timingConfig)),-1,true))};}" };
-let obj3 = { height: 2 * nativeDefault.space.PX_64, marginBottom: nativeDefault.space.PX_12 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/forums/native/ForumPostPlaceholder.tsx");
-
-export default noop.memo(() => {
+const memoResult = react.memo(() => {
+  let opacity;
+  let stateFromStores;
+  let useReducedMotion;
   const tmp = closure_7();
+  let obj = stateFromStores(504);
   const items = [AccessibilityStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const timingConfig = _slicedToArray(noop.useState(() => {
-    const obj = { timingConfig: null };
-    const obj2 = { duration: 1000 + 500 * Math.random(), easing: null };
-    const Easing = stateFromStores(4566).Easing;
-    obj2.easing = Easing.inOut(stateFromStores(4566).Easing.sin);
-    obj.timingConfig = obj2;
+  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const timingConfig = _slicedToArray(react.useState(() => {
+    let Easing;
+    let obj2;
+    const obj = { timingConfig: obj2 };
+    obj2 = { duration: 1000 + 500 * Math.random(), easing: Easing.inOut(stateFromStores(dependencyMap[7]).Easing.sin) };
+    Easing = stateFromStores(dependencyMap[7]).Easing;
     return obj;
   }), 1)[0].timingConfig;
-  let obj = stateFromStores(504);
+  let obj2 = stateFromStores(4566);
   const fn = function _() {
+    let tmp9;
     const obj = { opacity: null };
     if (stateFromStores) {
       obj.opacity = opacity;
-      let tmp6 = obj;
+      tmp9 = obj;
     } else {
-      const obj2 = ReanimatedRexport;
-      const obj3 = ReanimatedRexport;
-      const obj4 = ReanimatedRexport;
-      const withTimingResult = timing.withTiming(opacity, timingConfig);
-      obj.opacity = obj2.withDelay(1000, obj3.withRepeat(obj4.withSequence(withTimingResult, timing.withTiming(1, timingConfig)), -1, true));
-      tmp6 = obj;
+      const withDelay = ReanimatedRexport.withDelay;
+      ReanimatedRexport;
+      const withRepeat = ReanimatedRexport.withRepeat;
+      ReanimatedRexport;
+      const withSequence = ReanimatedRexport.withSequence;
+      ReanimatedRexport;
+      const obj2 = timing;
+      const withTimingResult = obj2.withTiming(opacity, timingConfig);
+      const obj3 = timing;
+      obj.opacity = withDelay(1000, withRepeat(withSequence(withTimingResult, obj3.withTiming(1, timingConfig)), -1, true));
+      tmp9 = obj;
     }
-    return tmp6;
+    return tmp9;
   };
-  let obj2 = stateFromStores(4566);
-  fn.__closure = { reducedMotion: stateFromStores, ROW_OPACITY_END, withDelay: stateFromStores(4566).withDelay, INITIAL_DELAY_MS: 1000, withRepeat: stateFromStores(4566).withRepeat, withSequence: stateFromStores(4566).withSequence, withTiming: stateFromStores(4837).withTiming, timingConfig };
+  let obj3 = { reducedMotion: stateFromStores, ROW_OPACITY_END, withDelay: stateFromStores(4566).withDelay, INITIAL_DELAY_MS: 1000, withRepeat: stateFromStores(4566).withRepeat, withSequence: stateFromStores(4566).withSequence, withTiming: stateFromStores(4837).withTiming, timingConfig };
+  fn.__closure = obj3;
   fn.__workletHash = 9488742940898;
   fn.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  let obj4 = { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5919).Card, { variant: "secondary", style: tmp.postPlaceholder }) };
-  return jsx(timingConfig(4566).View, { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5919).Card, { variant: "secondary", style: tmp.postPlaceholder }) });
+  const View = timingConfig(4566).View;
+  return <View style={animatedStyle} pointerEvents="none">{null}</View>;
 });
+const result = size.fileFinishedImporting("modules/forums/native/ForumPostPlaceholder.tsx");
+
+export default memoResult;

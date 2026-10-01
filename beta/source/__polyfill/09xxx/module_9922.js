@@ -7,8 +7,6 @@
 import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9898 */;
 import Meridiem from "Meridiem" /* 9900 */;
 
-require = arg1;
-const dependencyMap = arg6;
 function getDaysToWeekday(dateWithAdjustedTimezone, sum, next) {
   const day = dateWithAdjustedTimezone.getDay();
   if ("this" === next) {
@@ -26,17 +24,18 @@ function getDaysToWeekday(dateWithAdjustedTimezone, sum, next) {
     }
     return diff2;
   } else if ("next" === next) {
+    let sum3;
     if (day == Meridiem.Weekday.SUNDAY) {
       let num12 = 7;
-      if (sum != tmp6(9900).Weekday.SUNDAY) {
+      if (sum != Meridiem.Weekday.SUNDAY) {
         num12 = sum;
       }
-      let sum3 = num12;
-    } else if (day == tmp6(9900).Weekday.SATURDAY) {
+      sum3 = num12;
+    } else if (day == Meridiem.Weekday.SATURDAY) {
       let num9 = 7;
-      if (sum != tmp6(9900).Weekday.SATURDAY) {
+      if (sum != Meridiem.Weekday.SATURDAY) {
         let num10 = 8;
-        if (sum != tmp6(9900).Weekday.SUNDAY) {
+        if (sum != Meridiem.Weekday.SUNDAY) {
           num10 = 1 + sum;
         }
         num9 = num10;
@@ -44,7 +43,7 @@ function getDaysToWeekday(dateWithAdjustedTimezone, sum, next) {
       sum3 = num9;
     } else {
       if (sum < day) {
-        if (sum != tmp6(9900).Weekday.SUNDAY) {
+        if (sum != Meridiem.Weekday.SUNDAY) {
           const diff3 = sum - dateWithAdjustedTimezone.getDay();
           let sum1 = diff3;
           if (diff3 < 0) {
@@ -80,8 +79,9 @@ function getDaysToWeekday(dateWithAdjustedTimezone, sum, next) {
 }
 
 export const createParsingComponentsAtWeekday = function createParsingComponentsAtWeekday(reference, sum, next) {
+  const tmp = getDaysToWeekday(reference.getDateWithAdjustedTimezone(), sum, next);
   const parsingComponents = new ReferenceWithTimezone.ParsingComponents(reference);
-  const addDurationAsImpliedResult = parsingComponents.addDurationAsImplied({ day: getDaysToWeekday(reference.getDateWithAdjustedTimezone(), sum, next) });
+  const addDurationAsImpliedResult = parsingComponents.addDurationAsImplied({ day: tmp });
   addDurationAsImpliedResult.assign("weekday", sum);
   return addDurationAsImpliedResult;
 };

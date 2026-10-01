@@ -5,41 +5,48 @@
 // Exports: default
 
 // Module 9483 (SingleScreenshare)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import ChannelCallStore from "ChannelCallStore" /* 8829 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const ChannelCallStore = fn(8829);
+let c2;
+let c3;
 ({ resetFocus: c2, toggleFocus: c3 } = ChannelCallStore);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { stageStreamContainer: { backgroundColor: nativeDefault.colors.BLACK } };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
+const jsx = Fragment.jsx;
+let obj = { stageStreamContainer: { backgroundColor: nativeDefault.colors.BLACK } };
+({ backgroundColor: nativeDefault.colors.BLACK });
+let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/video_calls/native/components/SingleScreenshare.tsx");
 
 export default function SingleScreenshare(channel) {
+  let stageStreamContainer;
   channel = channel.channel;
+  let participant = channel.participant;
+  const tmp = closure_5();
   channel(5298)(() => {
     closure_1_2();
   });
-  const obj = {
-    participant: channel.participant,
+  let obj = {
+    participant,
     onSingleTap() {
       closure_1_3();
     },
     onDoubleTap() {
       React2();
-      const participant = ChannelRTCActionCreatorsDefault.selectParticipant(channel.id, null);
+      const obj = ChannelRTCActionCreatorsDefault;
+      const participant = obj.selectParticipant(channel.id, null);
     },
-    containerStyle: null
+    containerStyle: stageStreamContainer
   };
-  const tmp = closure_5();
+  stageStreamContainer = undefined;
   const tmp3 = jsx;
-  let stageStreamContainer;
+  const tmp4 = channel(9484);
   if (channel.isGuildStageVoice()) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
-  obj.containerStyle = stageStreamContainer;
-  return tmp3(channel(9484), obj);
+  return tmp3(tmp4, obj);
 };

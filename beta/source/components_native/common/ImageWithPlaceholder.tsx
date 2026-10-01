@@ -5,19 +5,22 @@
 // Exports: ImageWithPlaceholder
 
 // Module 8217 (ImageWithPlaceholder)
-import jsxProd from "jsxProd" /* 21 */;
+import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import ImageWithThumbhashPlaceholderNativeComponentDefault from "ImageWithThumbhashPlaceholderNativeComponent" /* 8218 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 
-({ View: c2, requireNativeComponent } = get_ActivityIndicator);
-const jsx = jsxProd.jsx;
+let c2;
+let importDefaultResult;
+let requireNativeComponent;
+({ View: c2, requireNativeComponent } = react_native);
+const jsx = Fragment.jsx;
 const style = { flex: 1 };
 const ImagePlaceholderVersions = { THUMBHASH: 1, [1]: "THUMBHASH" };
 if (PlatformUtils.isAndroid()) {
-  let importDefaultResult = ImageWithThumbhashPlaceholderNativeComponentDefault;
+  importDefaultResult = ImageWithThumbhashPlaceholderNativeComponentDefault;
 } else {
   importDefaultResult = requireNativeComponent("DCDImageWithThumbhashPlaceholderView");
 }
@@ -26,23 +29,22 @@ const result = size.fileFinishedImporting("components_native/common/ImageWithPla
 
 export { ImagePlaceholderVersions };
 export const ImageWithPlaceholder = function ImageWithPlaceholder(arg0) {
+  let alt;
+  let obj;
+  let placeholder;
+  let placeholderVersion;
+  let uri;
   ({ uri, placeholder, placeholderVersion, alt, style } = arg0);
   const merged = Object.assign(arg0, Object.assign({ uri: 0, placeholder: 0, placeholderVersion: 0, alt: 0, style: 0 }));
   if (null != placeholder) {
+    let tmp4;
     if (placeholderVersion === obj.THUMBHASH) {
-      const obj2 = {};
       const merged1 = Object.assign(merged);
-      obj2.style = style;
-      obj2.uri = uri;
-      obj2.placeholder = placeholder;
-      obj2.placeholderVersion = placeholderVersion;
-      obj2.alt = alt;
-      let tmp4 = <importDefaultResult />;
+      tmp4 = <metroRequire style={style} uri={uri} placeholder={placeholder} placeholderVersion={placeholderVersion} alt={alt} />;
     }
     return tmp4;
   }
-  obj = { style };
+  obj = { style, children: jsx(FastImageDefault, obj3) };
   const merged2 = Object.assign(merged);
-  obj.children = jsx(FastImageDefault, { style, resizeMode: "cover", source: { uri }, alt });
-  tmp4 = <React2 style={style} />;
+  tmp4 = <React2 style={style}>{jsx(FastImageDefault, { style, resizeMode: "cover", source: { uri }, alt })}</React2>;
 };

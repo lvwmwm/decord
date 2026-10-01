@@ -5,32 +5,38 @@
 // Exports: default
 
 // Module 14746 (useNoFillDecision)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import AdDeliveryStore from "AdDeliveryStore" /* 7113 */;
 import QuestStore from "QuestStore" /* 7116 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/hooks/useNoFillDecision.tsx");
 
 export default function useNoFillDecision(arg0, location) {
+  let closure_0;
+  let closure_2;
+  let first;
+  let stateFromStores;
   _require = arg0;
+  const tmp = dependencyMap;
   const obj = stateFromStores(14747);
   const obj2 = { location };
-  const tmp2 = _require;
+  const enableNoFill = obj.useConfig(obj2).enableNoFill;
   const items = [AdDeliveryStore];
   const items1 = [arg0];
-  stateFromStores = require("initialize").useStateFromStores(items, () => AdDeliveryStore.getNoFillForPlacement(closure_0), items1);
-  const obj3 = require("initialize");
+  const obj3 = require("get initialized");
+  stateFromStores = obj3.useStateFromStores(items, () => AdDeliveryStore.getNoFillForPlacement(closure_0), items1);
   const items2 = [QuestStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items2, () => null != QuestStore.questEnrollmentBlockedUntil);
-  const tmp5 = _slicedToArray(noop.useState(null), 2);
-  dependencyMap = tmp5[1];
+  const obj4 = require("get initialized");
+  const stateFromStores1 = obj4.useStateFromStores(items2, () => null != QuestStore.questEnrollmentBlockedUntil);
+  [first, dependencyMap] = react.useState(null);
   const items3 = [stateFromStores];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let decisionId;
     if (null != stateFromStores) {
       const _Date = Date;
       const sum = tmp.fetchedAt + tmp.ttlMillis;
@@ -40,22 +46,23 @@ export default function useNoFillDecision(arg0, location) {
       return () => clearTimeout(closure_0);
     }
   }, items3);
-  let tmp7 = null;
-  if (obj.useConfig(obj2).enableNoFill) {
-    tmp7 = null;
+  let tmp8 = null;
+  const tmp2 = _require;
+  if (enableNoFill) {
+    tmp8 = null;
     if (null != stateFromStores) {
-      tmp7 = null;
-      if (stateFromStores.decisionId !== tmp5[0]) {
-        tmp7 = null;
+      tmp8 = null;
+      if (stateFromStores.decisionId !== first) {
+        tmp8 = null;
+        const tmp2Result = tmp2(10682);
         if (tmp2Result.getIsEligibleForQuests()) {
-          tmp7 = null;
+          tmp8 = null;
           if (!stateFromStores1) {
-            tmp7 = stateFromStores;
+            tmp8 = stateFromStores;
           }
         }
-        tmp2Result = tmp2(10682);
       }
     }
   }
-  return tmp7;
+  return tmp8;
 };

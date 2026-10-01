@@ -5,171 +5,194 @@
 
 // Module 16925 (VoicePanelHeader)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1115 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
+import CallConstants from "CallConstants" /* 4857 */;
 import useChannelName from "useChannelName" /* 4989 */;
+import spring from "spring" /* 5280 */;
 import StageMusicActionCreators from "StageMusicActionCreators" /* 9368 */;
 import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 9493 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11753 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11758 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11759 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 16859 */;
 import useStableParticipant from "useStableParticipant" /* 16929 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import ExperimentStore from "ExperimentStore" /* 4750 */;
 import StageMusicStore from "StageMusicStore" /* 9354 */;
-import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import AuthenticationStore_mod from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import SpeakingStore from "SpeakingStore" /* 5731 */;
 import UserStore from "UserStore" /* 1372 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const spring = tmp3(5280);
-require = fn;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_23;
+let closure_24;
+let obj2;
+let size;
+let size1;
 function MusicMuteButton(channelId) {
+  let muted;
+  let speaker;
   channelId = channelId.channelId;
   let stateFromStores;
   const tmp3 = useMyCurrentStageChannelRoleDefault(channelId);
   if (tmp3 != null) {
-    const speaker = tmp3.speaker;
+    speaker = tmp3.speaker;
   }
+  let obj = stateFromStores(504);
   const items = [StageMusicStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => muted.isMuted());
-  const obj = stateFromStores(504);
-  let tmp6 = null;
+  stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
+  let tmp7Result = null;
+  const obj2 = stateFromStores(9356);
   if (obj2.useShowStageMusicMuteButton(channelId)) {
-    tmp6 = null;
+    tmp7Result = null;
     if (speaker) {
+      let stringResult;
+      const tmpResult = VoicePanelIconButtonDefault;
       const intl = tmp4(1115).intl;
       const string = intl.string;
       const t = tmp4(1115).t;
+      const tmp7 = closure_23;
       if (stateFromStores) {
-        let stringResult = string(t.ScHlfl);
+        stringResult = string(t.ScHlfl);
       } else {
         stringResult = string(t.zqxfrf);
       }
-      const obj3 = {
+      obj3 = {
         accessibilityLabel: stringResult,
-        icon: tmp(stateFromStores ? 9365 : 9367),
+        icon: importDefault(stateFromStores ? 9365 : 9367),
         onPress() {
-              return StageMusicActionCreators.updateStageMusicMuted(!stateFromStores);
+              const obj = StageMusicActionCreators;
+              return obj.updateStageMusicMuted(!stateFromStores);
             }
       };
-      closure_23(tmp(16859), obj3);
-      const tmpResult = tmp(16859);
+      tmp7Result = tmp7(tmpResult, obj3);
     }
   }
-  return tmp6;
+  return tmp7Result;
 }
-get_ActivityIndicator = fn(17);
-const StyleSheet = get_ActivityIndicator.StyleSheet;
-const VoicePanelConstants = fn(11755);
+const StyleSheet = react_native.StyleSheet;
+let AuthenticationStore = AuthenticationStore_mod;
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
 ({ UI_SHOW_HIDE_PHYSICS: closure_16, VoicePanelModes: closure_17, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_18 } = VoicePanelConstants);
-const EDGE_GUTTER = fn(11758).EDGE_GUTTER;
-const VoicePanelControlsModes = fn(11753).VoicePanelControlsModes;
-const ParticipantTypes = fn(4857).ParticipantTypes;
-const ThemeTypes = fn(1085).ThemeTypes;
-const jsxProd = fn(21);
-({ jsx: closure_23, jsxs: closure_24 } = jsxProd);
+const EDGE_GUTTER = VoicePanelCardConstants.EDGE_GUTTER;
+const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
+const ParticipantTypes = CallConstants.ParticipantTypes;
+const ThemeTypes = Constants.ThemeTypes;
+({ jsx: closure_23, jsxs: closure_24 } = Fragment);
 const OPACITY_TIMING = { duration: 300 };
-const createStyles = fn(4836);
-let obj = { headerWrapper: { zIndex: 1, position: "absolute", top: 0, left: 0, width: "100%", paddingBottom: EDGE_GUTTER, overflow: "hidden" }, blurStyles: null, leftWrapper: null, rightWrapper: null, headerOuter: null, headerInner: null, headerContentWrapper: null, stroke: null, strokeAlt: null, strokeContainer: null, focusedSpeakingDotWrapper: null, focusedSpeakingDot: null, shieldIconMargin: null };
-let obj3 = {};
+let createStyles = createStyles_mod;
+let obj = { headerWrapper: { zIndex: 1, position: "absolute", top: 0, left: 0, width: "100%", paddingBottom: EDGE_GUTTER, overflow: "hidden" }, blurStyles: obj2, leftWrapper: { position: "relative", justifyContent: "flex-start", flexDirection: "row", alignItems: "center", flexShrink: 1, gap: 12 }, rightWrapper: { flexDirection: "row", alignItems: "center", gap: 12, paddingLeft: 12 }, headerOuter: { flexDirection: "row", alignItems: "center" }, headerInner: { flexDirection: "row", alignItems: "center", flexShrink: 1, flexGrow: 1 }, headerContentWrapper: { position: "relative" }, stroke: { height: StyleSheet.hairlineWidth, opacity: 0.2 }, strokeAlt: { height: StyleSheet.hairlineWidth, opacity: 0.8 }, strokeContainer: { position: "absolute", left: 0, right: 0, bottom: 0, height: StyleSheet.hairlineWidth }, focusedSpeakingDotWrapper: size, focusedSpeakingDot: size1, shieldIconMargin: { marginLeft: -8 } };
+obj2 = { opacity: 0.7 };
+createStyles = createStyles.createStyles;
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3.opacity = 0.7;
-obj.blurStyles = obj3;
-obj.leftWrapper = { position: "relative", justifyContent: "flex-start", flexDirection: "row", alignItems: "center", flexShrink: 1, gap: 12 };
-obj.rightWrapper = { flexDirection: "row", alignItems: "center", gap: 12, paddingLeft: 12 };
-obj.headerOuter = { flexDirection: "row", alignItems: "center" };
-obj.headerInner = { flexDirection: "row", alignItems: "center", flexShrink: 1, flexGrow: 1 };
-obj.headerContentWrapper = { position: "relative" };
-obj.stroke = { height: StyleSheet.hairlineWidth, opacity: 0.2 };
-obj.strokeAlt = { height: StyleSheet.hairlineWidth, opacity: 0.8 };
-obj.strokeContainer = { position: "absolute", left: 0, right: 0, bottom: 0, height: StyleSheet.hairlineWidth };
-let size = { width: 12, height: 12, borderRadius: nativeDefault.radii.round, padding: 2 };
-obj.focusedSpeakingDotWrapper = size;
-const size1 = { width: 8, height: 8, borderRadius: nativeDefault.radii.round };
-obj.focusedSpeakingDot = size1;
-obj.shieldIconMargin = { marginLeft: -8 };
-let closure_26 = createStyles.createStyles(obj);
+size = { width: 12, height: 12, borderRadius: nativeDefault.radii.round, padding: 2 };
+size1 = { width: 8, height: 8, borderRadius: nativeDefault.radii.round };
+let closure_26 = createStyles(obj);
 const constants = { DOWN: 0, [0]: "DOWN", LEFT: 1, [1]: "LEFT" };
-let obj4 = {};
+let obj3 = { overshootClamping: true };
 const merged1 = Object.assign(MODE_CHANGE_PHYSICS);
-obj4.overshootClamping = true;
 const __initData = { code: "function VoicePanelHeaderTsx1(){const{isHeaderHidden,focused,scrollPosition}=this.__closure;return!isHeaderHidden.get()&&(focused.get()!=null||scrollPosition.get()>0);}" };
 const __initData2 = { code: "function VoicePanelHeaderTsx2(){const{withSpring,showHeaderBlur}=this.__closure;return{blurAmount:withSpring(showHeaderBlur.get()?0.3:0)};}" };
 const __initData3 = { code: "function VoicePanelHeaderTsx3(){const{withSpring,showHeaderBlur,HEADER_CHANGE_PHYSICS}=this.__closure;return{opacity:withSpring(showHeaderBlur.get()?1:0,HEADER_CHANGE_PHYSICS)};}" };
-let closure_32 = noop.memo((isHeaderHidden) => {
+let closure_32 = react.memo((isHeaderHidden) => {
+  let items;
+  let items1;
+  let items2;
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
   const scrollPosition = isHeaderHidden.scrollPosition;
   const focused = isHeaderHidden.focused;
   const tmp = closure_26();
+  let obj = isHeaderHidden(focused[20]);
   const fn = function l() {
-    value = isHeaderHidden.get();
+    const value = isHeaderHidden.get();
     let tmp2 = !value;
-    if (!value) {
-      let tmp5 = null != focused.get();
-      if (!tmp5) {
-        tmp5 = scrollPosition.get() > 0;
-      }
-      tmp2 = tmp5;
+    if (tmp2) {
+      tmp2 = null != focused.get() || scrollPosition.get() > 0;
+      const tmp5 = null != focused.get() || scrollPosition.get() > 0;
     }
     return tmp2;
   };
   fn.__closure = { isHeaderHidden, focused, scrollPosition };
   fn.__workletHash = 8127245112238;
   fn.__initData = __initData;
-  const derivedValue = isHeaderHidden(focused[20]).useDerivedValue(fn);
-  let obj = isHeaderHidden(focused[20]);
+  const derivedValue = obj.useDerivedValue(fn);
   const fn2 = function c() {
+    const withSpring = spring.withSpring;
     let num = 0;
+    spring;
     if (derivedValue.get()) {
       num = 0.3;
     }
-    return { blurAmount: spring.withSpring(num) };
+    const obj = { blurAmount: withSpring(num) };
+    return obj;
   };
   const obj2 = isHeaderHidden(focused[20]);
-  fn2.__closure = { withSpring: isHeaderHidden(focused[21]).withSpring, showHeaderBlur: derivedValue };
+  obj3 = { withSpring: isHeaderHidden(focused[21]).withSpring, showHeaderBlur: derivedValue };
+  fn2.__closure = obj3;
   fn2.__workletHash = 10074943135400;
   fn2.__initData = __initData2;
   const animatedProps = obj2.useAnimatedProps(fn2);
-  obj4 = isHeaderHidden(focused[20]);
   const fn3 = function u() {
+    const withSpring = spring.withSpring;
     let num = 0;
+    spring;
     if (derivedValue.get()) {
       num = 1;
     }
-    return { opacity: spring.withSpring(num, obj4) };
+    const obj = { opacity: withSpring(num, obj3) };
+    return obj;
   };
-  const obj3 = { withSpring: isHeaderHidden(focused[21]).withSpring, showHeaderBlur: derivedValue };
-  fn3.__closure = { withSpring: isHeaderHidden(focused[21]).withSpring, showHeaderBlur: derivedValue, HEADER_CHANGE_PHYSICS: obj4 };
+  const obj4 = isHeaderHidden(focused[20]);
+  fn3.__closure = { withSpring: isHeaderHidden(focused[21]).withSpring, showHeaderBlur: derivedValue, HEADER_CHANGE_PHYSICS: obj3 };
   fn3.__workletHash = 2825977044105;
   fn3.__initData = __initData3;
+  ({ withSpring: isHeaderHidden(focused[21]).withSpring, showHeaderBlur: derivedValue, HEADER_CHANGE_PHYSICS: obj3 });
   const animatedStyle = obj4.useAnimatedStyle(fn3);
-  const obj6 = { style: null, pointerEvents: "none", children: null };
-  const items = [StyleSheet.absoluteFill, animatedStyle];
-  obj6.style = items;
-  const obj5 = { withSpring: isHeaderHidden(focused[21]).withSpring, showHeaderBlur: derivedValue, HEADER_CHANGE_PHYSICS: obj4 };
-  const items1 = [closure_23(scrollPosition(focused[23]), { style: tmp.blurStyles, blurStyle: "ultra-thin", blurTheme: "dark", animatedProps }), ];
-  const obj8 = { style: tmp.strokeContainer, children: null };
-  const obj7 = { style: tmp.blurStyles, blurStyle: "ultra-thin", blurTheme: "dark", animatedProps };
+  const obj6 = { style: items, pointerEvents: "none", children: items1 };
+  items = [StyleSheet.absoluteFill, animatedStyle];
   let tmp5 = scrollPosition(focused[22]);
-  const items2 = [closure_23(scrollPosition(focused[24]), { style: tmp.stroke }), closure_23(scrollPosition(focused[24]), { style: tmp.strokeAlt })];
-  obj8.children = items2;
-  items1[1] = closure_24(scrollPosition(focused[24]), obj8);
-  obj6.children = items1;
+  items1 = [, ];
+  const obj7 = { style: tmp.blurStyles, blurStyle: "ultra-thin", blurTheme: "dark", animatedProps };
+  items1[0] = closure_23(scrollPosition(focused[23]), obj7);
+  const obj8 = { style: tmp.strokeContainer, children: items2 };
+  items2 = [, ];
+  const obj9 = { style: tmp.stroke };
+  const tmp6 = scrollPosition(focused[24]);
+  items2[0] = closure_23(scrollPosition(focused[24]), obj9);
+  const obj10 = { style: tmp.strokeAlt };
+  items2[1] = closure_23(scrollPosition(focused[24]), obj10);
+  items1[1] = closure_24(tmp6, obj8);
   return closure_24(tmp5, obj6);
 });
 const __initData4 = { code: "function VoicePanelHeaderTsx4(){const{focused,controlsSpecs,VoicePanelControlsModes,speaking}=this.__closure;return focused.get()!=null&&controlsSpecs.get().mode!==VoicePanelControlsModes.HIDDEN&&speaking.get();}" };
 const __initData5 = { code: "function VoicePanelHeaderTsx5(){const{showSpeakingIndicator}=this.__closure;return{opacity:showSpeakingIndicator.get()?1:0};}" };
-let closure_35 = noop.memo(() => {
+let closure_35 = react.memo(() => {
+  let controlsSpecs;
+  let derivedValue;
+  let focused;
+  let items1;
+  let obj6;
   const id = AuthenticationStore.getId();
   const context = derivedValue.useContext(focused(controlsSpecs[25]));
   focused = context.focused;
   controlsSpecs = context.controlsSpecs;
-  const sharedValue = id(controlsSpecs[20]).useSharedValue(SpeakingStore.isSpeaking(id));
+  const obj = id(controlsSpecs[20]);
+  const sharedValue = obj.useSharedValue(SpeakingStore.isSpeaking(id));
   const items = [id, sharedValue];
   const layoutEffect = derivedValue.useLayoutEffect(() => {
     function handleChange() {
@@ -182,23 +205,16 @@ let closure_35 = noop.memo(() => {
     };
   }, items);
   const tmp5 = closure_26();
-  const obj = id(controlsSpecs[20]);
   const fn = function u() {
-    value = null != focused.get();
-    if (value) {
-      value = controlsSpecs.get().mode !== VoicePanelControlsModes.HIDDEN;
-    }
-    if (value) {
-      value = sharedValue.get();
-    }
+    const value = null != focused.get() && controlsSpecs.get().mode !== VoicePanelControlsModes.HIDDEN && sharedValue.get();
     return value;
   };
-  fn.__closure = { focused, controlsSpecs, VoicePanelControlsModes, speaking: sharedValue };
+  obj3 = { focused, controlsSpecs, VoicePanelControlsModes, speaking: sharedValue };
+  fn.__closure = obj3;
   fn.__workletHash = 5466722752449;
   fn.__initData = __initData4;
-  derivedValue = id(controlsSpecs[20]).useDerivedValue(fn);
   const obj2 = id(controlsSpecs[20]);
-  const obj3 = { focused, controlsSpecs, VoicePanelControlsModes, speaking: sharedValue };
+  derivedValue = obj2.useDerivedValue(fn);
   const fn2 = function _() {
     let opacity = 0;
     if (derivedValue.get()) {
@@ -209,13 +225,13 @@ let closure_35 = noop.memo(() => {
   fn2.__closure = { showSpeakingIndicator: derivedValue };
   fn2.__workletHash = 16177124708898;
   fn2.__initData = __initData5;
-  const animatedStyle = id(controlsSpecs[20]).useAnimatedStyle(fn2);
-  const obj5 = { style: null, pointerEvents: "none", children: null };
-  const items1 = [tmp5.focusedSpeakingDotWrapper, animatedStyle];
-  obj5.style = items1;
-  obj4 = id(controlsSpecs[20]);
-  obj5.children = closure_23(focused(controlsSpecs[22]), { style: tmp5.focusedSpeakingDot });
-  return closure_23(focused(controlsSpecs[22]), obj5);
+  const obj4 = id(controlsSpecs[20]);
+  const animatedStyle = obj4.useAnimatedStyle(fn2);
+  const obj5 = { style: items1, pointerEvents: "none", children: closure_23(focused(controlsSpecs[22]), obj6) };
+  items1 = [tmp5.focusedSpeakingDotWrapper, animatedStyle];
+  obj6 = { style: tmp5.focusedSpeakingDot };
+  const tmp8 = focused(controlsSpecs[22]);
+  return closure_23(tmp8, obj5);
 });
 const __initData6 = { code: "function VoicePanelHeaderTsx6(){const{focused}=this.__closure;var _focused$get;return(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id;}" };
 const __initData7 = { code: "function VoicePanelHeaderTsx7(manualId,previousManualId){const{runOnJS,handleFocusChange}=this.__closure;if(manualId!==previousManualId){runOnJS(handleFocusChange)(manualId);}}" };
@@ -224,10 +240,30 @@ const __initData9 = { code: "function VoicePanelHeaderTsx9(){const{calculateVoic
 const __initData10 = { code: "function VoicePanelHeaderTsx10(){const{controlsSpecs,VoicePanelControlsModes,isScreenReaderEnabled}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN&&!isScreenReaderEnabled;}" };
 const __initData11 = { code: "function VoicePanelHeaderTsx11(){const{calculateVoicePanelHeaderSpecs,safeArea,edgeGutter,withTiming,isHeaderHidden,OPACITY_TIMING,withSpring,MODE_CHANGE_PHYSICS}=this.__closure;const{height:height}=calculateVoicePanelHeaderSpecs(safeArea.get(),edgeGutter);return{opacity:withTiming(isHeaderHidden.get()?0:1,OPACITY_TIMING),transform:[{translateY:withSpring(isHeaderHidden.get()?-height:0,MODE_CHANGE_PHYSICS)}]};}" };
 const __initData12 = { code: "function VoicePanelHeaderTsx12(){const{isHeaderHidden}=this.__closure;return{pointerEvents:isHeaderHidden.get()?'none':'box-none',importantForAccessibility:isHeaderHidden.get()?'no-hide-descendants':'auto',accessibilityElementsHidden:isHeaderHidden.get()};}" };
-size = fn(2);
-let result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeader.tsx");
-
-export default noop.memo(function VoicePanelHeader(wrapperOffset) {
+const memoResult = react.memo(function VoicePanelHeader(wrapperOffset) {
+  let _undefined;
+  let c10;
+  let c9;
+  let channelType;
+  let closure_16;
+  let guildId;
+  let intl3;
+  let items10;
+  let items11;
+  let items12;
+  let items13;
+  let items6;
+  let items7;
+  let items8;
+  let items9;
+  let obj21;
+  let obj33;
+  let scrollPosition;
+  let stringResult;
+  let tmp10;
+  let tmp12;
+  let tmp25;
+  let tmp2Result11;
   wrapperOffset = wrapperOffset.wrapperOffset;
   const gestureState = wrapperOffset.gestureState;
   const layout = wrapperOffset.layout;
@@ -241,6 +277,9 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
   let DOWN;
   UI_SHOW_HIDE_PHYSICS = undefined;
   let tmp = closure_26();
+  let obj = controlsSpecs;
+  let tmp2 = gestureState;
+  let tmp3 = channelId;
   const context = controlsSpecs.useContext(gestureState(channelId[25]));
   channelId = context.channelId;
   const focused = context.focused;
@@ -248,32 +287,37 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
   const mode = context.mode;
   const safeArea = context.safeArea;
   const connected = context.connected;
+  const tmp5 = wrapperOffset;
   ({ guildId, channelType, scrollPosition } = context);
-  const isScreenReaderEnabled = wrapperOffset(channelId[34]).useIsScreenReaderEnabled();
-  let tmp38Result10 = gestureState(channelId[35])(channelId);
   let obj2 = wrapperOffset(channelId[34]);
-  let obj3 = gestureState(channelId[36]);
+  const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
+  let tmp40Result10 = gestureState(channelId[35])(channelId);
+  obj3 = gestureState(channelId[36]);
+  const treatment = obj3.useConfig({ location: "VoicePanelHeader" }).treatment;
+  let obj4 = wrapperOffset(channelId[27]);
   let items = [derivedValue1, token, c10, connected];
   const items1 = [channelId];
-  const stateFromStores = wrapperOffset(channelId[27]).useStateFromStores(items, () => {
+  const stateFromStores = obj4.useStateFromStores(items, () => {
     const channel = ChannelStore.getChannel(channelId);
     let channelName;
     if (null != channel) {
-      channelName = useChannelName.computeChannelName(channel, UserStore, RelationshipStore);
+      const obj = useChannelName;
+      channelName = obj.computeChannelName(channel, UserStore, RelationshipStore);
     }
     if (channelName == null) {
-      const intl = util.intl;
-      channelName = intl.string(util.t.zLZPmk);
+      const intl = intl5.intl;
+      channelName = intl.string(intl5.t.zLZPmk);
     }
     return channelName;
   }, items1);
-  obj4 = wrapperOffset(channelId[27]);
   [tmp10, c9] = focused(controlsSpecs.useState(undefined), 2);
-  const tmp9 = focused(controlsSpecs.useState(undefined), 2);
-  [tmp12, c10] = focused(controlsSpecs.useState(null), 2);
+  focused(controlsSpecs.useState(undefined), 2);
+  const tmp11 = focused(controlsSpecs.useState(null), 2);
+  [tmp12, c10] = tmp11;
   const items2 = [channelId];
   const handleFocusChange = controlsSpecs.useCallback((arg0) => {
     let tmp3 = null;
+    const tmp = c10;
     if (null != arg0) {
       const participant = ChannelRTCStore.getParticipant(tmp2, arg0);
       let type = null;
@@ -282,14 +326,14 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
       }
       tmp3 = type;
     }
-    _undefined(tmp3);
+    tmp(tmp3);
     _undefined(arg0);
   }, items2);
-  const tmp11 = focused(controlsSpecs.useState(null), 2);
+  const obj5 = wrapperOffset(channelId[20]);
   class I {
     constructor() {
-      value = focused.get();
-      id = undefined;
+      const value = focused.get();
+      let id;
       if (value != null) {
         id = value.id;
       }
@@ -301,21 +345,24 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
   I.__initData = __initData6;
   const fn = function f(arg0, arg1) {
     if (arg0 !== arg1) {
-      ReanimatedRexport.runOnJS(callback)(arg0);
+      const obj = ReanimatedRexport;
+      obj.runOnJS(callback)(arg0);
     }
   };
-  let obj5 = wrapperOffset(channelId[20]);
   fn.__closure = { runOnJS: wrapperOffset(channelId[20]).runOnJS, handleFocusChange };
   fn.__workletHash = 13084116412140;
   fn.__initData = __initData7;
+  ({ runOnJS: wrapperOffset(channelId[20]).runOnJS, handleFocusChange });
   const animatedReaction = obj5.useAnimatedReaction(I, fn);
-  const obj6 = { runOnJS: wrapperOffset(channelId[20]).runOnJS, handleFocusChange };
-  token = wrapperOffset(channelId[38]).useToken(gestureState(channelId[19]).modules.mobile.VOICE_PANEL_GUTTER);
   const obj7 = wrapperOffset(channelId[38]);
+  token = obj7.useToken(gestureState(channelId[19]).modules.mobile.VOICE_PANEL_GUTTER);
   function he() {
+    let num;
+    const tmp = calculateVoicePanelHeaderSpecsDefault;
     const obj = mode;
-    if (mode.get() === VoicePanelModes.PIP) {
-      let num = -tmpResult.height + EDGE_GUTTER;
+    const tmpResult = tmp(safeArea.get(), token);
+    if (mode.get() === constants.PIP) {
+      num = -tmpResult.height + EDGE_GUTTER;
     } else {
       num = 0;
       if (obj.get() === tmp3.DISMISSED) {
@@ -328,157 +375,165 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
   he.__closure = { calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, mode, VoicePanelModes, gestureState, connected, EDGE_GUTTER };
   he.__workletHash = 13290333964417;
   he.__initData = __initData8;
+  ({ calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, mode, VoicePanelModes, gestureState, connected, EDGE_GUTTER });
   derivedValue = obj8.useDerivedValue(he);
-  const obj9 = { calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, mode, VoicePanelModes, gestureState, connected, EDGE_GUTTER };
   function _e() {
-    const tmp2Result = calculateVoicePanelHeaderSpecsDefault(safeArea.get(), token);
-    value = mode.get();
+    let num;
+    let num2;
+    let num3;
+    let sum;
+    let tmp8;
+    let withTiming;
+    const tmp2 = calculateVoicePanelHeaderSpecsDefault;
+    const tmp2Result = tmp2(safeArea.get(), token);
+    const value = mode.get();
+    const PIP = constants.PIP;
     const height = tmp2Result.height;
     if (connected.get()) {
-      let sum = height;
+      sum = height;
     } else {
       sum = height - tmp2Result.paddingTop + EDGE_GUTTER;
     }
-    const obj3 = {};
+    obj3 = { paddingTop: tmp8, borderTopLeftRadius: num2, borderTopRightRadius: num, height: sum, opacity: withTiming(num3, OPACITY_TIMING) };
+    tmp8 = connected.get() ? tmp2Result.paddingTop : EDGE_GUTTER;
     const merged = Object.assign(tmp2Result);
-    obj3.paddingTop = connected.get() ? tmp2Result.paddingTop : EDGE_GUTTER;
-    let num = 24;
-    let num2 = 24;
+    num = 24;
+    num2 = 24;
     if (connected.get()) {
       num2 = 0;
     }
-    obj3.borderTopLeftRadius = num2;
     if (connected.get()) {
       num = 0;
     }
-    obj3.borderTopRightRadius = num;
-    obj3.height = sum;
-    const tmp8 = connected.get() ? tmp2Result.paddingTop : EDGE_GUTTER;
-    if (value === VoicePanelModes.PIP) {
-      let num3 = 0;
+    withTiming = timing.withTiming;
+    timing;
+    if (value === PIP) {
+      num3 = 0;
     } else {
       num3 = 1;
     }
-    obj3.opacity = timing.withTiming(num3, closure_25);
-    value2 = derivedValue.get();
+    const withSpring = tmp10(5280).withSpring;
+    spring;
+    const value2 = derivedValue.get();
     if (!connected.get()) {
+      let tmp15;
       if (wrapperOffset.get().gestureActive) {
-        let tmp13 = DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE;
+        tmp15 = closure_18;
       }
-      const obj5 = { translateY: tmp10Result.withSpring(value2, tmp13) };
-      const items = [obj5];
+      const items = [{ translateY: withSpring(value2, tmp15) }];
       obj3.transform = items;
+      const obj4 = { translateY: withSpring(value2, tmp15) };
       return obj3;
     }
-    tmp13 = UI_SHOW_HIDE_PHYSICS;
+    tmp15 = closure_16;
   }
   const obj10 = wrapperOffset(channelId[20]);
   _e.__closure = { calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, mode, VoicePanelModes, connected, EDGE_GUTTER, withTiming: wrapperOffset(channelId[40]).withTiming, OPACITY_TIMING, withSpring: wrapperOffset(channelId[21]).withSpring, yOffset: derivedValue, wrapperOffset, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE, UI_SHOW_HIDE_PHYSICS };
   _e.__workletHash = 11065699618122;
   _e.__initData = __initData9;
+  ({ calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, mode, VoicePanelModes, connected, EDGE_GUTTER, withTiming: wrapperOffset(channelId[40]).withTiming, OPACITY_TIMING, withSpring: wrapperOffset(channelId[21]).withSpring, yOffset: derivedValue, wrapperOffset, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE, UI_SHOW_HIDE_PHYSICS });
   const animatedStyle = obj10.useAnimatedStyle(_e);
-  const obj11 = { calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, mode, VoicePanelModes, connected, EDGE_GUTTER, withTiming: wrapperOffset(channelId[40]).withTiming, OPACITY_TIMING, withSpring: wrapperOffset(channelId[21]).withSpring, yOffset: derivedValue, wrapperOffset, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE, UI_SHOW_HIDE_PHYSICS };
   function pe() {
-    let tmp = controlsSpecs.get().mode === VoicePanelControlsModes.HIDDEN;
-    if (tmp) {
-      tmp = !isScreenReaderEnabled;
-    }
+    const tmp = controlsSpecs.get().mode === VoicePanelControlsModes.HIDDEN && !isScreenReaderEnabled;
     return tmp;
   }
-  pe.__closure = { controlsSpecs, VoicePanelControlsModes, isScreenReaderEnabled };
+  const obj13 = { controlsSpecs, VoicePanelControlsModes, isScreenReaderEnabled };
+  pe.__closure = obj13;
   pe.__workletHash = 16725581527938;
   pe.__initData = __initData10;
-  derivedValue1 = wrapperOffset(channelId[20]).useDerivedValue(pe);
   const obj12 = wrapperOffset(channelId[20]);
-  const obj13 = { controlsSpecs, VoicePanelControlsModes, isScreenReaderEnabled };
+  derivedValue1 = obj12.useDerivedValue(pe);
+  const obj14 = wrapperOffset(channelId[20]);
   class Se {
     constructor() {
-      tmp = closure_2;
-      tmp2 = closure_1(closure_2[39]);
-      tmp3 = closure_0;
-      obj = closure_0(closure_2[40]);
-      obj2 = closure_14;
-      num = 1;
-      if (closure_14.get()) {
+      let items;
+      const tmp2 = calculateVoicePanelHeaderSpecsDefault;
+      const height = tmp2(safeArea.get(), token).height;
+      const withTiming = timing.withTiming;
+      let num = 1;
+      timing;
+      const obj = derivedValue1;
+      if (derivedValue1.get()) {
         num = 0;
       }
-      obj1 = { opacity: obj.withTiming(num, closure_25), transform: null };
-      tmp3Result = tmp3(tmp[21]);
-      num2 = 0;
-      if (obj2.get()) {
-        num2 = -tmp2(safeArea.get(), closure_12).height;
+      const obj2 = { opacity: withTiming(num, OPACITY_TIMING), transform: items };
+      const withSpring = tmp3(5280).withSpring;
+      let num2 = 0;
+      spring;
+      if (obj.get()) {
+        num2 = -height;
       }
-      obj6 = { translateY: tmp3Result.withSpring(num2, MODE_CHANGE_PHYSICS) };
-      items = [];
-      items[0] = obj6;
-      obj1.transform = items;
-      return obj1;
+      items = [{ translateY: withSpring(num2, MODE_CHANGE_PHYSICS) }];
+      ({ translateY: withSpring(num2, MODE_CHANGE_PHYSICS) });
+      return obj2;
     }
   }
-  const obj14 = wrapperOffset(channelId[20]);
   Se.__closure = { calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, withTiming: wrapperOffset(channelId[40]).withTiming, isHeaderHidden: derivedValue1, OPACITY_TIMING, withSpring: wrapperOffset(channelId[21]).withSpring, MODE_CHANGE_PHYSICS: DOWN };
   Se.__workletHash = 13148362186846;
   Se.__initData = __initData11;
+  ({ calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, withTiming: wrapperOffset(channelId[40]).withTiming, isHeaderHidden: derivedValue1, OPACITY_TIMING, withSpring: wrapperOffset(channelId[21]).withSpring, MODE_CHANGE_PHYSICS: DOWN });
   const animatedStyle1 = obj14.useAnimatedStyle(Se);
-  const obj15 = { calculateVoicePanelHeaderSpecs: gestureState(channelId[39]), safeArea, edgeGutter: token, withTiming: wrapperOffset(channelId[40]).withTiming, isHeaderHidden: derivedValue1, OPACITY_TIMING, withSpring: wrapperOffset(channelId[21]).withSpring, MODE_CHANGE_PHYSICS: DOWN };
   function fe() {
+    let str2;
     let str = "box-none";
     if (derivedValue1.get()) {
       str = "none";
     }
-    const obj2 = { pointerEvents: str, importantForAccessibility: null, accessibilityElementsHidden: null };
-    let str2 = "auto";
+    const obj2 = { pointerEvents: str, importantForAccessibility: str2, accessibilityElementsHidden: derivedValue1.get() };
+    str2 = "auto";
     if (derivedValue1.get()) {
       str2 = "no-hide-descendants";
     }
-    obj2.importantForAccessibility = str2;
-    obj2.accessibilityElementsHidden = derivedValue1.get();
     return obj2;
   }
   fe.__closure = { isHeaderHidden: derivedValue1 };
   fe.__workletHash = 4740985143159;
   fe.__initData = __initData12;
-  const animatedProps = wrapperOffset(channelId[20]).useAnimatedProps(fe);
   const obj16 = wrapperOffset(channelId[20]);
-  let canInviteMembers = wrapperOffset(channelId[41]).useCanInviteMembers(channelId);
+  const animatedProps = obj16.useAnimatedProps(fe);
   const obj17 = wrapperOffset(channelId[41]);
+  let canInviteMembers = obj17.useCanInviteMembers(channelId);
   const obj18 = wrapperOffset(channelId[42]);
+  const inviteMembersCallback = obj18.useInviteMembersCallback(channelId);
   const tmp23 = gestureState(channelId[43])();
-  const inviteMembersCallback = wrapperOffset(channelId[42]).useInviteMembersCallback(channelId);
-  wrapperOffset(channelId[44]).useNavigatorBackPressHandler(tmp23);
+  const obj19 = wrapperOffset(channelId[44]);
+  obj19.useNavigatorBackPressHandler(tmp23);
   if (null != tmp12) {
     DOWN = constants.LEFT;
-    let tmp25 = constants;
+    tmp25 = constants;
   } else {
     tmp25 = constants;
     DOWN = constants.DOWN;
   }
   if (DOWN === tmp25.LEFT) {
     let intl2 = tmp5(tmp3[30]).intl;
-    let stringResult = intl2.string(tmp5(tmp3[30]).t["9M6OdC"]);
+    stringResult = intl2.string(tmp5(tmp3[30]).t["9M6OdC"]);
   } else {
     let intl = tmp5(tmp3[30]).intl;
     const string = intl.string;
     const t = tmp5(tmp3[30]).t;
-    if (tmp38Result10) {
+    if (tmp40Result10) {
       stringResult = string(t.RLCTQG);
     } else {
       stringResult = string(t["5lPjGj"]);
     }
   }
-  const obj19 = wrapperOffset(channelId[44]);
-  const tmp2ResultResult = gestureState(channelId[45])(AuthenticationStore.getId(), channelId, guildId);
+  let tmp2Result = tmp2(tmp3[45]);
+  const tmp2ResultResult = tmp2Result(AuthenticationStore.getId(), channelId, guildId);
   UI_SHOW_HIDE_PHYSICS = tmp2ResultResult;
-  let tmp2Result = gestureState(channelId[45]);
   const items3 = [handleFocusChange];
   const items4 = [tmp2ResultResult];
-  const stateFromStores1 = wrapperOffset(channelId[27]).useStateFromStores(items3, () => {
+  const tmp5Result = tmp5(tmp3[27]);
+  const stateFromStores1 = tmp5Result.useStateFromStores(items3, () => {
     if (null != closure_16) {
-      if (obj3.isStableUserParticipant(tmp)) {
-        if (tmp10Result.stableParticipantHasVideo(tmp)) {
+      obj3 = useStableParticipant;
+      if (obj3.isStableUserParticipant(closure_16)) {
+        const tmp10Result = useStableParticipant;
+        if (tmp10Result.stableParticipantHasVideo(closure_16)) {
           const videoDevices = MediaEngineStore.getVideoDevices();
           const _Object = Object;
           const keys = Object.keys(videoDevices);
+          const obj2 = MediaEngineStore;
           if (keys.length >= 2) {
             const videoDeviceId = obj2.getVideoDeviceId();
             let facing;
@@ -493,11 +548,12 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
               }
             }
             if (null != facing) {
+              let stringResult;
               if (null != tmp6) {
                 if ("back" === facing) {
                   if ("front" === tmp6) {
                     const intl3 = tmp10(1115).intl;
-                    let stringResult = intl3.string(tmp10(1115).t["/R1SBx"]);
+                    stringResult = intl3.string(tmp10(1115).t["/R1SBx"]);
                   }
                 }
                 if ("front" === facing) {
@@ -514,11 +570,8 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
             const intl4 = tmp10(1115).intl;
             stringResult = intl4.string(tmp10(1115).t["t9eQ/g"]);
           }
-          obj2 = MediaEngineStore;
         }
-        tmp10Result = tmp10(16929);
       }
-      obj3 = useStableParticipant;
     }
   }, items4);
   const items5 = [DOWN];
@@ -527,142 +580,138 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
     const keys = Object.keys(callback.getVideoDevices());
     const found = keys.find((item) => item !== closure_0);
     if (null != found) {
-      gestureState(channelId[46]).setVideoDevice(found);
       const obj = gestureState(channelId[46]);
+      obj.setVideoDevice(found);
     }
   }, []);
   const memo = obj.useMemo(() => {
+    let items;
     let str = "0deg";
     if (DOWN === constants.LEFT) {
       str = "90deg";
     }
-    const obj = { transform: null };
-    const items = [{ rotateZ: str }];
-    obj.transform = items;
+    const obj = { transform: items };
+    items = [{ rotateZ: str }];
     return obj;
   }, items5);
-  const tmp5Result = wrapperOffset(channelId[27]);
-  const isSecureFramesUIEnabled = wrapperOffset(channelId[47]).useIsSecureFramesUIEnabled({ channelId });
-  const tmp5Result4 = wrapperOffset(channelId[47]);
-  let tmp35 = null;
+  const tmp5Result4 = tmp5(tmp3[47]);
+  const isSecureFramesUIEnabled = tmp5Result4.useIsSecureFramesUIEnabled({ channelId });
+  let tmp36 = null;
+  const useIsUserSecureFramesVerified = tmp5(tmp3[48]).useIsUserSecureFramesVerified;
+  tmp5(tmp3[48]);
   if (tmp12 === ParticipantTypes.USER) {
-    tmp35 = null;
+    tmp36 = null;
     if (null != tmp10) {
-      tmp35 = tmp10;
+      tmp36 = tmp10;
     }
   }
-  const isUserSecureFramesVerified = wrapperOffset(channelId[48]).useIsUserSecureFramesVerified({ userId: tmp35, channelId });
-  const tmp5Result5 = wrapperOffset(channelId[48]);
-  let tmp37 = null;
+  const isUserSecureFramesVerified = useIsUserSecureFramesVerified({ userId: tmp36, channelId });
+  let tmp39 = null;
+  const useIsStreamSecureFramesVerified = tmp5(tmp3[48]).useIsStreamSecureFramesVerified;
+  tmp5(tmp3[48]);
   if (tmp12 === ParticipantTypes.STREAM) {
-    tmp37 = null;
+    tmp39 = null;
     if (null != tmp10) {
-      tmp37 = tmp10;
+      tmp39 = tmp10;
     }
   }
-  let flag = wrapperOffset(channelId[48]).useIsStreamSecureFramesVerified({ streamKey: tmp37, channelId });
+  let flag = useIsStreamSecureFramesVerified({ streamKey: tmp39, channelId });
   if (ParticipantTypes.STREAM !== tmp12) {
     flag = false;
-    if (tmp34.USER === tmp12) {
+    if (ParticipantTypes.USER === tmp12) {
       flag = isUserSecureFramesVerified;
     }
   }
   let ONYX;
-  if (tmp38Result10) {
+  const ThemeContextProvider = tmp5(tmp3[49]).ThemeContextProvider;
+  if (tmp40Result10) {
     ONYX = ThemeTypes.ONYX;
   }
-  const obj20 = { theme: ONYX, children: null };
-  const obj21 = { style: null, pointerEvents: "box-none", layout, children: null };
-  const items6 = [tmp.headerWrapper, animatedStyle];
-  obj21.style = items6;
-  const tmp5Result6 = wrapperOffset(channelId[48]);
-  const items7 = [closure_23(closure_32, { isHeaderHidden: derivedValue1, scrollPosition, focused }), , ];
-  let tmp38Result = tmp38Result10;
-  if (tmp38Result10) {
+  const obj20 = { theme: ONYX, children: closure_24(tmp2Result11, obj21) };
+  obj21 = { style: items6, pointerEvents: "box-none", layout, children: items7 };
+  items6 = [tmp.headerWrapper, animatedStyle];
+  items7 = [, , ];
+  tmp2Result11 = tmp2(tmp3[22]);
+  items7[0] = closure_23(closure_32, { isHeaderHidden: derivedValue1, scrollPosition, focused });
+  let tmp40Result = tmp40Result10;
+  if (tmp40Result) {
     const obj22 = { baseColor: tmp2(tmp3[19]).colors.BLACK, minHeight: 0 };
-    tmp38Result = tmp38(tmp2(tmp3[50]), obj22);
     const tmp2Result12 = tmp2(tmp3[50]);
+    tmp40Result = tmp40(tmp2Result12, obj22);
   }
-  items7[1] = tmp38Result;
-  const obj23 = { style: tmp.headerContentWrapper, pointerEvents: "box-none", layout, children: null };
-  let tmp38Result6 = null;
-  const tmp2Result11 = gestureState(channelId[22]);
+  items7[1] = tmp40Result;
+  let tmp40Result6 = null;
+  const obj23 = { style: tmp.headerContentWrapper, pointerEvents: "box-none", layout, children: items8 };
+  const tmp2Result13 = tmp2(tmp3[22]);
   if (tmp12 === ParticipantTypes.USER) {
     const obj24 = { isHeaderHidden: derivedValue1 };
-    tmp38Result6 = tmp38(tmp2(tmp3[51]), obj24);
+    tmp40Result6 = tmp40(tmp2(tmp3[51]), obj24);
   }
-  const items8 = [tmp38Result6, ];
-  const obj25 = { style: null, animatedProps, children: null };
-  const items9 = [tmp.headerOuter, animatedStyle1];
-  obj25.style = items9;
-  const tmp2Result13 = gestureState(channelId[22]);
-  const obj26 = { style: tmp.leftWrapper, pointerEvents: "box-none", children: null };
-  const tmp2Result14 = gestureState(channelId[22]);
-  const obj27 = { icon: null, accessibilityLabel: null, onPress: null, style: null };
-  const tmp2Result15 = gestureState(channelId[24]);
-  obj27.icon = gestureState(channelId[52]);
-  obj27.accessibilityLabel = stringResult;
-  obj27.onPress = tmp23;
-  obj27.style = memo;
-  const items10 = [closure_23(gestureState(channelId[29]), obj27), ];
-  const obj28 = { style: tmp.headerInner, children: null };
-  const tmp2Result16 = gestureState(channelId[29]);
-  const items11 = [closure_23(gestureState(channelId[53]), {}), ];
-  let tmp38Result7 = null;
+  items8 = [tmp40Result6, ];
+  const obj25 = { style: items9, animatedProps, children: items12 };
+  items9 = [tmp.headerOuter, animatedStyle1];
+  const obj26 = { style: tmp.leftWrapper, pointerEvents: "box-none", children: items10 };
+  const tmp2Result14 = tmp2(tmp3[22]);
+  const obj27 = { icon: tmp2(tmp3[52]), accessibilityLabel: stringResult, onPress: tmp23, style: memo };
+  const tmp2Result15 = tmp2(tmp3[24]);
+  const tmp2Result16 = tmp2(tmp3[29]);
+  items10 = [closure_23(tmp2Result16, obj27), ];
+  const obj28 = { style: tmp.headerInner, children: items11 };
+  items11 = [, ];
+  const tmp2Result17 = tmp2(tmp3[22]);
+  items11[0] = closure_23(tmp2(tmp3[53]), {});
+  let tmp40Result7 = null;
   if (isSecureFramesUIEnabled) {
-    tmp38Result7 = null;
+    tmp40Result7 = null;
     if (flag) {
       const obj29 = { size: "xs", color: tmp2(tmp3[19]).colors.TEXT_SUBTLE, style: tmp.shieldIconMargin };
-      tmp38Result7 = tmp38(tmp5(tmp3[54]).ShieldLockIcon, obj29);
+      const ShieldLockIcon = tmp5(tmp3[54]).ShieldLockIcon;
+      tmp40Result7 = tmp40(ShieldLockIcon, obj29);
     }
   }
-  items11[1] = tmp38Result7;
-  obj28.children = items11;
-  items10[1] = closure_24(gestureState(channelId[22]), obj28);
-  obj26.children = items10;
-  const items12 = [closure_24(tmp2Result15, obj26), ];
-  const obj30 = { style: tmp.rightWrapper, layout, children: null };
-  const tmp2Result17 = gestureState(channelId[22]);
-  const items13 = [closure_23(closure_35, {}), , , , , ];
-  let tmp38Result8 = channelType === tmp5(tmp3[55]).ChannelTypes.GUILD_STAGE_VOICE;
-  if (tmp38Result8) {
+  items11[1] = tmp40Result7;
+  items10[1] = closure_24(tmp2Result17, obj28);
+  items12 = [closure_24(tmp2Result15, obj26), ];
+  const obj30 = { style: tmp.rightWrapper, layout, children: items13 };
+  items13 = [, , , , , ];
+  const tmp2Result18 = tmp2(tmp3[22]);
+  items13[0] = closure_23(closure_35, {});
+  let tmp40Result8 = channelType === tmp5(tmp3[55]).ChannelTypes.GUILD_STAGE_VOICE;
+  if (tmp40Result8) {
     const obj31 = { channelId };
-    tmp38Result8 = tmp38(MusicMuteButton, obj31);
+    tmp40Result8 = tmp40(MusicMuteButton, obj31);
   }
-  items13[1] = tmp38Result8;
-  items13[2] = closure_23(gestureState(channelId[56]), { isConnectedToVoiceChannel: tmp38Result10, channelId });
+  items13[1] = tmp40Result8;
+  items13[2] = closure_23(tmp2(tmp3[56]), { isConnectedToVoiceChannel: tmp40Result10, channelId });
   if (canInviteMembers) {
-    const obj32 = { icon: tmp2(tmp3[57]), accessibilityLabel: null, onPress: null };
-    let intl3 = tmp5(tmp3[30]).intl;
-    const obj33 = { channelName: stateFromStores };
-    obj32.accessibilityLabel = intl3.formatToPlainString(tmp5(tmp3[30]).t["dHHb/2"], obj33);
-    obj32.onPress = inviteMembersCallback;
-    canInviteMembers = tmp38(tmp2(tmp3[29]), obj32);
+    const obj32 = { icon: tmp2(tmp3[57]), accessibilityLabel: intl3.formatToPlainString(tmp5(tmp3[30]).t["dHHb/2"], obj33), onPress: inviteMembersCallback };
     const tmp2Result19 = tmp2(tmp3[29]);
+    intl3 = tmp5(tmp3[30]).intl;
+    obj33 = { channelName: stateFromStores };
+    canInviteMembers = tmp40(tmp2Result19, obj32);
   }
   items13[3] = canInviteMembers;
-  let tmp38Result9 = null;
+  let tmp40Result9 = null;
   if (null != stateFromStores1) {
     const obj34 = { icon: tmp2(tmp3[58]), onPress: callback1, accessibilityLabel: stateFromStores1 };
-    tmp38Result9 = tmp38(tmp2(tmp3[29]), obj34);
     const tmp2Result20 = tmp2(tmp3[29]);
+    tmp40Result9 = tmp40(tmp2Result20, obj34);
   }
-  items13[4] = tmp38Result9;
-  if (tmp38Result10) {
-    tmp38Result10 = obj3.useConfig({ location: "VoicePanelHeader" }).treatment === tmp5(tmp3[36]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT;
+  items13[4] = tmp40Result9;
+  if (tmp40Result10) {
+    tmp40Result10 = treatment === tmp5(tmp3[36]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT;
   }
-  if (tmp38Result10) {
+  if (tmp40Result10) {
     const obj35 = { channelId };
-    tmp38Result10 = tmp38(tmp2(tmp3[59]), obj35);
+    tmp40Result10 = tmp40(tmp2(tmp3[59]), obj35);
   }
-  items13[5] = tmp38Result10;
-  obj30.children = items13;
-  items12[1] = closure_24(gestureState(channelId[22]), obj30);
-  obj25.children = items12;
+  items13[5] = tmp40Result10;
+  items12[1] = closure_24(tmp2Result18, obj30);
   items8[1] = closure_24(tmp2Result14, obj25);
-  obj23.children = items8;
   items7[2] = closure_24(tmp2Result13, obj23);
-  obj21.children = items7;
-  obj20.children = closure_24(tmp2Result11, obj21);
-  return closure_23(wrapperOffset(channelId[49]).ThemeContextProvider, obj20);
+  return closure_23(ThemeContextProvider, obj20);
 });
+size = size_mod;
+let result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeader.tsx");
+
+export default memoResult;

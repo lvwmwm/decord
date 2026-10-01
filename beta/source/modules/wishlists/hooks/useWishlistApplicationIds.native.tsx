@@ -5,14 +5,15 @@
 // Exports: useWishlistApplicationIds
 
 // Module 10259 (useWishlistApplicationIds)
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-let closure_1 = fn(1074).COLLECTIBLES_APPLICATION_ID;
-const size = fn(2);
+let closure_1 = Constants.COLLECTIBLES_APPLICATION_ID;
 const result = size.fileFinishedImporting("modules/wishlists/hooks/useWishlistApplicationIds.native.tsx");
 
 export const useWishlistApplicationIds = function useWishlistApplicationIds() {
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     const items = [closure_1_1];
     return items;
   }, []);

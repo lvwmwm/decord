@@ -9,12 +9,18 @@ import Constants from "Constants" /* 1074 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 4986 */;
 import size from "module_2" /* 2 */;
 
+let filename;
+
 const MessageReferenceTypes = Constants.MessageReferenceTypes;
 const result = size.fileFinishedImporting("modules/forwarding/getInlineForwardOptions.tsx");
 
 export const getInlineForwardOptions = function getInlineForwardOptions(message, nativeSyntheticEventData) {
+  let embedIndex;
+  let items;
+  let targetKind;
   ({ targetKind, embedIndex } = nativeSyntheticEventData);
   if ("media" === targetKind) {
+    let tmp2 = message;
     const messageReference = message.messageReference;
     let type;
     if (messageReference != null) {
@@ -34,24 +40,27 @@ export const getInlineForwardOptions = function getInlineForwardOptions(message,
       const attachments = tmp6.attachments;
       const found = attachments.filter((filename) => {
         filename = filename.filename;
-        let isImageFileResult = MediaFormatTesters.isImageFile(filename);
+        const obj = MediaFormatTesters;
+        let isImageFileResult = obj.isImageFile(filename);
+        const tmp = require;
+        const tmp2 = dependencyMap;
         if (!isImageFileResult) {
-          isImageFileResult = MediaFormatTesters.isVideoFile(filename);
-          const tmpResult = MediaFormatTesters;
+          const tmpResult = tmp(tmp2[1]);
+          isImageFileResult = tmpResult.isVideoFile(filename);
         }
         return isImageFileResult;
       });
       mapped = found.map((id) => id.id);
     }
-    const obj2 = { onlyAttachmentIds: mapped };
-    return obj2;
+    return { onlyAttachmentIds: mapped };
   } else {
+    let obj;
     if ("embed" === targetKind) {
+      let tmp = null;
       if (null != embedIndex) {
-        const obj3 = { onlyEmbedIndices: null };
-        const items = [embedIndex];
-        obj3.onlyEmbedIndices = items;
-        let obj = obj3;
+        const obj3 = { onlyEmbedIndices: items };
+        items = [embedIndex];
+        obj = obj3;
       }
       return obj;
     }

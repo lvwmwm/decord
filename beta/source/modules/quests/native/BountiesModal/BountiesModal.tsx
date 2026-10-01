@@ -4,15 +4,13 @@
 // Dependencies: [19, 21, 14541, 14542, 14592, 10758, 10769, 2]
 
 // Module 14540 (BountiesModal)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 const bounty_main = "bounty_main";
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModal.tsx");
-
-export default noop.memo(function BountiesModal(bountyId) {
+const memoResult = react.memo(function BountiesModal(bountyId) {
   bountyId = bountyId.bountyId;
   const sourceQuestContent = bountyId.sourceQuestContent;
   const variant = bountyId.variant;
@@ -25,11 +23,10 @@ export default noop.memo(function BountiesModal(bountyId) {
         return null;
       },
       render() {
+        let tmp7;
         if (closure_1_2 === bountyId(variant[2]).BountiesModalVariant.VERTICAL_SCROLL) {
-          const obj2 = { bountyId, sourceQuestContent };
-          let tmp7 = jsx(sourceQuestContent(tmp[3]), { bountyId, sourceQuestContent });
+          tmp7 = jsx(sourceQuestContent(tmp[3]), { bountyId, sourceQuestContent });
         } else {
-          const obj = { bountyId, sourceQuestContent, bounty };
           tmp7 = jsx(sourceQuestContent(tmp[4]), { bountyId, sourceQuestContent, bounty });
         }
         return tmp7;
@@ -37,8 +34,12 @@ export default noop.memo(function BountiesModal(bountyId) {
     }
   }), items);
   const layoutEffect = bounty.useLayoutEffect(() => {
-    bountyId(variant[5]).applyOrientationLock("PORTRAIT");
+    const obj = bountyId(variant[5]);
+    obj.applyOrientationLock("PORTRAIT");
     return bountyId(variant[5]).restoreDefaultOrientationLock;
   }, []);
   return jsx(bountyId(variant[6]).Modal, { hideTitle: true, initialRouteName: bounty_main, screens: memo, viewStyle: { backgroundColor: "#000000" } });
 });
+const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModal.tsx");
+
+export default memoResult;

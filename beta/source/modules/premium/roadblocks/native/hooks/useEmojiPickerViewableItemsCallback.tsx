@@ -5,32 +5,39 @@
 // Exports: default
 
 // Module 9787 (useEmojiPickerViewableItemsCallback)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_0, currentUser;
 
-const require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/roadblocks/native/hooks/useEmojiPickerViewableItemsCallback.tsx");
 
 export default function useEmojiPickerViewableItemsChanged(arg0) {
+  let stateFromStores;
   _require = arg0;
-  closure_1 = noop.useRef(0);
+  let closure_1 = react.useRef(0);
+  let obj = require("get initialized");
   const items = [UserStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
-    const result = closure_1(stateFromStores[3]).canUseEmojisEverywhere(currentUser);
+    const obj = closure_1(stateFromStores[3]);
+    const result = obj.canUseEmojisEverywhere(currentUser);
     let tmp5 = !result;
+    const tmp2 = closure_1;
+    const tmp3 = stateFromStores;
     if (result) {
-      tmp5 = !closure_1(stateFromStores[3]).canUseAnimatedEmojis(currentUser);
-      const tmp2Result = closure_1(stateFromStores[3]);
+      const tmp2Result = tmp2(tmp3[3]);
+      tmp5 = !tmp2Result.canUseAnimatedEmojis(currentUser);
     }
     return tmp5;
   });
   const items1 = [arg0, stateFromStores];
-  return noop.useMemo(() => {
-    closure_0 = closure_0(stateFromStores[4]).debounce(() => {
+  return react.useMemo(() => {
+    let ref;
+    const obj = closure_0(stateFromStores[4]);
+    closure_0 = obj.debounce(() => {
       closure_0(ref.current > 7);
     }, 200);
     let onViewableItemsChanged;
@@ -43,6 +50,8 @@ export default function useEmojiPickerViewableItemsChanged(arg0) {
           let isSectionNitroLocked;
           let tmp2 = nextResult;
           let tmp3 = ref;
+          let _Math = Math;
+          let current = ref.current;
           if (item != null) {
             isSectionNitroLocked = item.isSectionNitroLocked;
           }
@@ -54,7 +63,7 @@ export default function useEmojiPickerViewableItemsChanged(arg0) {
             }
             num = num2;
           }
-          tmp3.current = Math.max(0, ref.current + num);
+          tmp3.current = max(0, current + num);
           continue;
         }
         closure_0();

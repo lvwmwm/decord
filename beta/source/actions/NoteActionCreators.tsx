@@ -9,12 +9,15 @@ import HTTPUtils from "HTTPUtils" /* 1271 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
-const result = size.fileFinishedImporting("actions/NoteActionCreators.tsx");
-
-export default {
+let obj = {
   updateNote(arg0, note) {
+    let obj;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: Endpoints.NOTE(arg0), body: { note }, oldFormErrors: true, rejectWithError: true };
+    const request = { url: Endpoints.NOTE(arg0), body: obj, oldFormErrors: true, rejectWithError: true };
+    obj = { note };
     return HTTP.put(request);
   }
 };
+const result = size.fileFinishedImporting("actions/NoteActionCreators.tsx");
+
+export default obj;

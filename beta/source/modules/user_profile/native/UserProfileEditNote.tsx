@@ -5,21 +5,31 @@
 // Exports: default
 
 // Module 12630 (UserProfileEditNote)
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1074 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ScrollView = fn(17).ScrollView;
-const NOTE_MAX_LENGTH = fn(1074).NOTE_MAX_LENGTH;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
+let navigation;
+
+let metroImportAll;
+let metroImportDefault;
+const ScrollView = react_native.ScrollView;
+const NOTE_MAX_LENGTH = Constants.NOTE_MAX_LENGTH;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ contentContainer: { paddingVertical: 24, paddingHorizontal: 16, gap: 8 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditNote.tsx");
 
 export default function UserProfileEditNote(userId) {
+  let first;
+  let intl;
+  let intl3;
+  let items2;
+  let stringResult;
   userId = userId.userId;
   const onSave = userId.onSave;
   const onClose = userId.onClose;
@@ -28,23 +38,29 @@ export default function UserProfileEditNote(userId) {
     flag = false;
   }
   let maxLength;
-  closure_7 = undefined;
+  let closure_7;
   let ref;
-  const tmp = closure_9();
-  const navigation = userId(onClose[6]).useNavigation();
+  let tmp2 = userId;
+  let tmp = closure_9();
+  let obj = userId(onClose[6]);
+  navigation = obj.useNavigation();
   const tmp5 = onSave(onClose[7])(userId);
   const note = tmp5.note;
+  let obj2 = navigation;
   let str = note;
+  const loading = tmp5.loading;
+  const useState = navigation.useState;
   if (note == null) {
     str = "";
   }
-  const tmp6 = flag(navigation.useState(str), 2);
+  const tmp6 = flag(useState(str), 2);
   maxLength = tmp6[0];
   closure_7 = tmp8;
   ref = obj2.useRef(null);
   const items = [flag];
   const effect = obj2.useEffect(() => {
-    if (flag) {
+    const tmp = flag;
+    if (tmp) {
       const current = ref.current;
       if (current != null) {
         current.focus();
@@ -53,74 +69,90 @@ export default function UserProfileEditNote(userId) {
   }, items);
   const items1 = [navigation, userId, note, maxLength, onSave, onClose];
   const layoutEffect = obj2.useLayoutEffect(() => {
+    let obj2;
     let obj = {
-      headerLeft: NavigatorHeader.getHeaderConditionalBackButton(() => new Promise((arg0) => {
-        closure_0 = arg0;
-        let str = closure_5;
-        if (closure_5 == null) {
-          str = "";
-        }
-        const tmp2 = closure_1_1(10384);
-        tmp2({
-          hasEdits: str !== closure_6,
-          onHasEdits: closure_1_0(4701).dismissKeyboard,
-          resetPending() {
-            let str = closure_1_5;
-            if (closure_1_5 == null) {
-              str = "";
+      headerLeft: obj2.getHeaderConditionalBackButton(() => {
+        const promise = new Promise((arg0) => {
+          let closure_0 = arg0;
+          let tmp = closure_1_2;
+          let str = closure_5;
+          const tmp2 = closure_1_1(closure_1_2[9]);
+          if (closure_5 == null) {
+            str = "";
+          }
+          const obj = {
+            hasEdits: str !== closure_6,
+            onHasEdits: closure_1_0(tmp[10]).dismissKeyboard,
+            resetPending() {
+              let str = closure_1_5;
+              const tmp = closure_1_7;
+              if (closure_1_5 == null) {
+                str = "";
+              }
+              return tmp(str);
+            },
+            onConfirm() {
+              closure_0(true);
+              if (closure_2_2 != null) {
+                closure_2_2();
+              }
             }
-            return closure_1_7(str);
-          },
-          onConfirm() {
-            closure_0(true);
-            if (dependencyMap != null) {
-              dependencyMap();
+          };
+          tmp2(obj);
+        });
+        return promise;
+      }),
+      headerRight(arg0) {
+        let intl;
+        let str;
+        let obj = {
+          label: intl.string(userId(onClose[12]).t["R3BPH+"]),
+          disabled: str === first,
+          onPress() {
+            const obj = onSave(onClose[13]);
+            obj.updateNote(closure_1_0, closure_1_6);
+            if (closure_1_1 != null) {
+              closure_1_1();
+            }
+            if (closure_1_2 != null) {
+              closure_1_2();
             }
           }
-        });
-      })),
-      headerRight(arg0) {
-        const obj = {};
+        };
+        const HeaderTextButton = userId(onClose[11]).HeaderTextButton;
         const merged = Object.assign(arg0);
-        const intl = userId(onClose[12]).intl;
-        obj.label = intl.string(userId(onClose[12]).t["R3BPH+"]);
-        let str = note;
+        intl = userId(onClose[12]).intl;
+        str = note;
+        const tmp = closure_7;
         if (note == null) {
           str = "";
         }
-        obj.disabled = str === first;
-        obj.onPress = function onPress() {
-          onSave(onClose[13]).updateNote(closure_1_0, closure_1_6);
-          if (closure_1_1 != null) {
-            closure_1_1();
-          }
-          if (closure_1_2 != null) {
-            closure_1_2();
-          }
-        };
-        return closure_7(userId(onClose[11]).HeaderTextButton, obj);
+        return tmp(HeaderTextButton, obj);
       }
     };
-    navigation.setOptions(obj);
+    const setOptions = navigation.setOptions;
+    obj2 = NavigatorHeader;
+    setOptions(obj);
   }, items1);
-  const obj3 = { contentContainerStyle: tmp.contentContainer, keyboardShouldPersistTaps: "always", children: null };
-  const obj4 = { variant: "text-sm/semibold", children: null };
-  let intl = tmp2(tmp3[12]).intl;
-  obj4.children = intl.string(userId(onClose[12]).t["mQKv+v"]);
-  const items2 = [closure_7(userId(onClose[14]).Text, obj4), ];
-  const obj5 = { ref, value: maxLength, onChange: tmp6[1], maxLength, autoCorrect: false, autoCapitalize: "none", placeholder: null, accessibilityLabel: null };
+  const obj3 = { contentContainerStyle: tmp.contentContainer, keyboardShouldPersistTaps: "always", children: items2 };
+  const obj4 = { variant: "text-sm/semibold", children: intl.string(tmp2(onClose[12]).t["mQKv+v"]) };
+  const Text = tmp2(tmp3[14]).Text;
+  intl = tmp2(tmp3[12]).intl;
+  items2 = [closure_7(Text, obj4), ];
+  const obj5 = { ref, value: maxLength, onChange: tmp6[1], maxLength, autoCorrect: false, autoCapitalize: "none", placeholder: stringResult, accessibilityLabel: intl3.string(tmp2(onClose[12]).t["mQKv+v"]) };
+  const TextArea = tmp2(tmp3[15]).TextArea;
   const intl2 = tmp2(tmp3[12]).intl;
   const string = intl2.string;
   const t = tmp2(tmp3[12]).t;
-  if (tmp5.loading) {
-    let stringResult = string(t["WLKx/9"]);
+  const tmp12 = ref;
+  const tmp13 = note;
+  const tmp14 = closure_7;
+  if (loading) {
+    stringResult = string(t["WLKx/9"]);
   } else {
     stringResult = string(t.tRZR6T);
   }
-  obj5.placeholder = stringResult;
-  const intl3 = tmp2(tmp3[12]).intl;
-  obj5.accessibilityLabel = intl3.string(userId(onClose[12]).t["mQKv+v"]);
-  items2[1] = closure_7(userId(onClose[15]).TextArea, obj5);
-  obj3.children = items2;
-  return ref(note, obj3);
+  intl3 = tmp2(tmp3[12]).intl;
+  items2[1] = tmp14(TextArea, obj5);
+  return tmp12(tmp13, obj3);
 };

@@ -5,39 +5,45 @@
 // Exports: useCalculatePowerupCardStatus
 
 // Module 12015 (useCalculatePowerupCardStatus)
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import _modDef2519 from "module_2519" /* 2519 */;
-import noop from "module_19" /* 19 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4724 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PowerupActiveStatusType = fn(4724).PowerupActiveStatusType;
-const size = fn(2);
+const PowerupActiveStatusType = GuildPowerupsConstants.PowerupActiveStatusType;
 const result = size.fileFinishedImporting("modules/premium/powerups/utils/useCalculatePowerupCardStatus.tsx");
 
 export const useCalculatePowerupCardStatus = function useCalculatePowerupCardStatus(powerup, arg1, arg2) {
   let sourceEntitlement = arg1;
-  closure_2 = arg2;
+  let closure_2 = arg2;
   const items = [arg1, arg2, powerup];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    let intl;
+    let obj5;
+    let tmp5;
     sourceEntitlement = sourceEntitlement.sourceEntitlement;
     let ends_at;
     if (sourceEntitlement != null) {
       ends_at = sourceEntitlement.ends_at;
     }
     if (null != ends_at) {
-      const obj2 = { type: "expiring", expiringAt: tmp.sourceEntitlement.ends_at };
-      let tmp5 = obj2;
+      tmp5 = { type: "expiring", expiringAt: sourceEntitlement.sourceEntitlement.ends_at };
+      const obj2 = { type: "expiring", expiringAt: sourceEntitlement.sourceEntitlement.ends_at };
     } else {
-      if (closure_2) {
+      const tmp13 = closure_2;
+      if (tmp13) {
         if (null != powerup.storeRemovalDate) {
+          tmp5 = { type: "removing", removingAt: tmp3.storeRemovalDate };
           const obj3 = { type: "removing", removingAt: tmp3.storeRemovalDate };
-          tmp5 = obj3;
         }
       }
-      if (tmp.type === PowerupActiveStatusType.LEVEL_ACTIVATED) {
-        const intl2 = util.intl;
+      if (sourceEntitlement.type === PowerupActiveStatusType.LEVEL_ACTIVATED) {
+        const intl2 = intl4.intl;
+        const formatToPlainString = intl2.formatToPlainString;
         const sourcePowerup = tmp.sourcePowerup;
         let title;
+        const WRRYUT = _modDef2519.WRRYUT;
         if (sourcePowerup != null) {
           title = sourcePowerup.title;
         }
@@ -45,14 +51,12 @@ export const useCalculatePowerupCardStatus = function useCalculatePowerupCardSta
           const intl3 = tmp9(1115).intl;
           title = intl3.string(tmp9(1115).t.BfF6ED);
         }
-        const obj4 = { type: "active", statusText: null };
-        const obj5 = { perkName: title };
-        obj4.statusText = intl2.formatToPlainString(_modDef2519.WRRYUT, obj5);
+        const obj4 = { type: "active", statusText: formatToPlainString(WRRYUT, obj5) };
         tmp5 = obj4;
-      } else if (tmp.type !== tmp4.INACTIVE) {
-        const obj = { type: "active", statusText: null };
-        const intl = util.intl;
-        obj.statusText = intl.string(_modDef2519.FFLkmx);
+        obj5 = { perkName: title };
+      } else if (sourceEntitlement.type !== tmp4.INACTIVE) {
+        const obj = { type: "active", statusText: intl.string(_modDef2519.FFLkmx) };
+        intl = intl4.intl;
         tmp5 = obj;
       }
     }

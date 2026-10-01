@@ -4,7 +4,7 @@
 // Dependencies: [7417, 11006, 1115, 6762, 6756, 6603, 2]
 
 // Module 14798 (SoundboardVolumeSetting)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import SoundboardActionCreators from "SoundboardActionCreators" /* 6756 */;
 import SoundboardUtils from "SoundboardUtils" /* 6762 */;
@@ -12,19 +12,24 @@ import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
-const volumeSlider = SettingBuilders.createVolumeSlider({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.kbFsAD);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.kbFsAD);
   },
-  parent: SettingsConstants.MobileUserSettings.VOICE,
+  parent: MobileUserSettings.VOICE,
   maximum: 100,
   useValue: SoundboardUtils.getAmplitudinalSoundboardVolume,
   onValueChange(volume) {
-    const items = [AnalyticsLocationDefault.USER_SETTINGS];
-    return SoundboardActionCreators.updateUserSoundboardVolume(volume, items);
+    const updateUserSoundboardVolume = SoundboardActionCreators.updateUserSoundboardVolume;
+    const items = [];
+    SoundboardActionCreators;
+    items[0] = AnalyticsLocationDefault.USER_SETTINGS;
+    return updateUserSoundboardVolume(volume, items);
   }
-});
+};
+const volumeSlider = SettingBuilders.createVolumeSlider(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/SoundboardVolumeSetting.tsx");
 
 export default volumeSlider;

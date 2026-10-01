@@ -1,0 +1,10 @@
+// Module ID: 13020
+// Function ID: 13021
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 13020 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 51, height: 13, scales: [2, 3], hash: "224e933808a00a22a9d03c8af389d91f", name: "img_logo_basic_small_dark", type: "png" });

@@ -5,27 +5,29 @@
 // Exports: default
 
 // Module 8581 (CrunchyrollLinkError)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl3 from "intl" /* 1115 */;
 import useNavigation from "useNavigation" /* 1485 */;
-import useConnectRetry from "useConnectRetry" /* 8556 */;
-import TwoWayLinkError from "TwoWayLinkError" /* 8557 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 8556 */;
+import TwoWayLinkError2 from "TwoWayLinkError" /* 8557 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 8573 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const constants = fn(8573).CrunchyrollLinkModalScenes;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let navigation;
+
+const constants = CrunchyrollLinkConstants.CrunchyrollLinkModalScenes;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkError.tsx");
 
 export default function CrunchyrollLinkDiscordError(onClose) {
-  const navigation = useNavigation.useNavigation();
-  const connectRetry = useConnectRetry.useConnectRetry(navigation, constants.PRE_CONNECT);
-  const obj3 = { title: null, body: null, onClose: null, onRetry: null };
-  const intl = util.intl;
-  obj3.title = intl.string(util.t["8YK70c"]);
-  const intl2 = util.intl;
-  obj3.body = intl2.string(util.t.moyYLf);
-  obj3.onClose = onClose.onClose;
-  obj3.onRetry = connectRetry;
-  return jsx(TwoWayLinkError.TwoWayLinkError, { title: null, body: null, onClose: null, onRetry: null });
+  onClose = onClose.onClose;
+  const obj = useNavigation;
+  navigation = obj.useNavigation();
+  const obj2 = react2;
+  const connectRetry = obj2.useConnectRetry(navigation, constants.PRE_CONNECT);
+  const TwoWayLinkError = TwoWayLinkError2.TwoWayLinkError;
+  const intl = intl3.intl;
+  const intl2 = intl3.intl;
+  return <TwoWayLinkError title={intl.string(intl3.t["8YK70c"])} body={intl2.string(intl3.t.moyYLf)} onClose={onClose} onRetry={connectRetry} />;
 };

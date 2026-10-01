@@ -12,6 +12,9 @@ import size from "module_2" /* 2 */;
 let result = size.fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
 
 export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSku(sku) {
+  let formatToPlainStringResult;
+  let name;
+  let tenantMetadata;
   ({ name, tenantMetadata } = sku);
   let type;
   if (tenantMetadata != null) {
@@ -23,14 +26,14 @@ export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSk
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl2 = tmp2(1115).intl;
     const obj2 = { product: name };
-    let formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t.lvBzLi, obj2);
-  } else if (tmp2(1974).CollectiblesItemType.PROFILE_EFFECT === type) {
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t.lvBzLi, obj2);
+  } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl = tmp2(1115).intl;
     const obj = { product: name };
     formatToPlainStringResult = intl.formatToPlainString(tmp2(1115).t.eR7moP, obj);
   } else {
     formatToPlainStringResult = name;
-    if (tmp2(1974).CollectiblesItemType.NAMEPLATE === type) {
+    if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
       const intl3 = tmp2(1115).intl;
       const obj3 = { product: name };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1115).t.YFOwHj, obj3);
@@ -39,9 +42,10 @@ export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSk
   return formatToPlainStringResult;
 };
 export const isWishlistableCollectiblesProduct = function isWishlistableCollectiblesProduct(selectedProduct) {
-  const result = CollectiblesUtils.isPremiumCollectiblesProduct(selectedProduct);
+  const obj = CollectiblesUtils;
+  const result = obj.isPremiumCollectiblesProduct(selectedProduct);
   let tmp4 = !result;
-  if (!result) {
+  if (tmp4) {
     tmp4 = selectedProduct.type !== CollectiblesItemType.CollectiblesItemType.EXTERNAL_SKU;
   }
   return tmp4;

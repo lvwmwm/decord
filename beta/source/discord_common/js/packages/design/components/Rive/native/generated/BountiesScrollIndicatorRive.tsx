@@ -4,20 +4,27 @@
 // Dependencies: [109, 19, 21, 4560, 4621, 4615, 2]
 
 // Module 4620 (BountiesScrollIndicatorRive)
-import BaseRive from "BaseRive" /* 4560 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4615 */;
+import Fragment from "Fragment" /* 21 */;
+import BaseRive2 from "BaseRive" /* 4560 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 4615 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 const artboardProperties = { "Bounties Scroll Indicator": { startAnimation: "trigger", looping: "boolean", color: "color" } };
 const artboardViewModelInstances = { "Bounties Scroll Indicator": ["Instance"] };
 let closure_9 = {
   "Bounties Scroll Indicator": function BountiesScrollIndicatorBindings(arg0) {
+    let dataBinding;
+    let instance;
+    let onDataBindingChange;
+    let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = arg0);
     let startAnimation;
+    const useTriggerBinding = BaseRive2.useTriggerBinding;
+    BaseRive2;
     if (dataBinding != null) {
       startAnimation = dataBinding.startAnimation;
     }
@@ -25,8 +32,10 @@ let closure_9 = {
     if (onDataBindingChange != null) {
       startAnimation1 = onDataBindingChange.startAnimation;
     }
-    const triggerBinding = BaseRive.useTriggerBinding("startAnimation", instance, startAnimation, startAnimation1, playIfNeeded);
+    const triggerBinding = useTriggerBinding("startAnimation", instance, startAnimation, startAnimation1, playIfNeeded);
     let looping;
+    const useBooleanBinding = BaseRive2.useBooleanBinding;
+    BaseRive2;
     if (dataBinding != null) {
       looping = dataBinding.looping;
     }
@@ -34,9 +43,10 @@ let closure_9 = {
     if (onDataBindingChange != null) {
       looping1 = onDataBindingChange.looping;
     }
-    const booleanBinding = BaseRive.useBooleanBinding("looping", instance, looping, looping1, playIfNeeded);
-    const tmpResult = BaseRive;
+    const booleanBinding = useBooleanBinding("looping", instance, looping, looping1, playIfNeeded);
     let color;
+    const useColorBinding = BaseRive2.useColorBinding;
+    BaseRive2;
     if (dataBinding != null) {
       color = dataBinding.color;
     }
@@ -44,11 +54,13 @@ let closure_9 = {
     if (onDataBindingChange != null) {
       color1 = onDataBindingChange.color;
     }
-    const colorBinding = BaseRive.useColorBinding("color", instance, color, color1, playIfNeeded);
+    const colorBinding = useColorBinding("color", instance, color, color1, playIfNeeded);
     return null;
   }
 };
-let closure_10 = noop.forwardRef(function BountiesScrollIndicatorRiveInner(defaultViewModelInstance, ref) {
+let closure_10 = react.forwardRef(function BountiesScrollIndicatorRiveInner(defaultViewModelInstance, ref) {
+  let artboard;
+  let fallback;
   ({ fallback, artboard } = defaultViewModelInstance);
   let str = "Bounties Scroll Indicator";
   if (undefined !== artboard) {
@@ -56,33 +68,31 @@ let closure_10 = noop.forwardRef(function BountiesScrollIndicatorRiveInner(defau
   }
   defaultViewModelInstance = defaultViewModelInstance.defaultViewModelInstance;
   let str2 = "Instance";
+  const stateMachine = defaultViewModelInstance.stateMachine;
   if (undefined !== defaultViewModelInstance) {
     str2 = defaultViewModelInstance;
   }
   const dataBinding = defaultViewModelInstance.dataBinding;
   const onDataBindingChange = defaultViewModelInstance.onDataBindingChange;
   const items = [str, dataBinding, onDataBindingChange];
-  const callback = noop.useCallback((arg0) => {
+  const tmp = _objectWithoutProperties(defaultViewModelInstance, closure_3);
+  const callback = react.useCallback((arg0) => {
     let tmp2 = null;
     if (null != closure_9[str]) {
-      const obj = {};
       const merged = Object.assign(arg0);
-      obj.dataBinding = dataBinding;
-      obj.onDataBindingChange = onDataBindingChange;
-      tmp2 = <tmp />;
+      tmp2 = <tmp dataBinding={dataBinding} onDataBindingChange={onDataBindingChange} />;
     }
     return tmp2;
   }, items);
-  const tmp = _objectWithoutProperties(defaultViewModelInstance, closure_3);
+  const BaseRive = str(onDataBindingChange[3]).BaseRive;
   let merged = Object.assign(tmp);
-  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback });
+  return <BaseRive ref={arg1} src={dataBinding(onDataBindingChange[4])} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={stateMachine} renderDataBinding={callback} />;
 });
-const size = fn(2);
+const forwardRefResult = react.forwardRef(function BountiesScrollIndicatorRiveWithBoundary(fallback, ref) {
+  const RiveErrorBoundary = RiveErrorBoundary2.RiveErrorBoundary;
+  const merged = Object.assign(fallback);
+  return <RiveErrorBoundary fallback={arg0.fallback}>{null}</RiveErrorBoundary>;
+});
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BountiesScrollIndicatorRive.tsx");
 
-export const BountiesScrollIndicatorRive = noop.forwardRef(function BountiesScrollIndicatorRiveWithBoundary(fallback, ref) {
-  const obj = { fallback: fallback.fallback, children: null };
-  const merged = Object.assign(fallback);
-  obj.children = <closure_10 ref={arg1} />;
-  return jsx(RiveErrorBoundary.RiveErrorBoundary, { fallback: fallback.fallback, children: null });
-});
+export const BountiesScrollIndicatorRive = forwardRefResult;

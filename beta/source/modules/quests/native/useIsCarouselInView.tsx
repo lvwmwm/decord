@@ -6,32 +6,33 @@
 
 // Module 14613 (useIsCarouselInView)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/useIsCarouselInView.tsx");
 
 export default function useIsCarouselInView() {
-  const containerRef = noop.useRef(null);
+  let closure_129_3;
+  let tmp4;
+  const containerRef = react.useRef(null);
   const height = useWindowDimensionsDefault().height;
-  closure_2 = noop.useRef(height);
+  let closure_2 = react.useRef(height);
   const items = [height];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     closure_2.current = height;
   }, items);
-  [tmp4, noop] = noop.useState(true);
-  closure_4 = noop.useRef(isInView);
-  const effect1 = noop.useEffect(() => {
-    setInterval(() => {
+  [tmp4, closure_129_3] = _slicedToArray(react.useState(true), 2);
+  const tmp3 = _slicedToArray(react.useState(true), 2);
+  let closure_4 = react.useRef(isInView);
+  const effect1 = react.useEffect(() => {
+    const ref = setInterval(() => {
+      let ref2;
       if (null != ref.current) {
         const current = ref.current;
         current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
           const bound = Math.min(arg5 + arg3, ref.current);
-          let tmp2 = arg3 > 0;
-          if (tmp2) {
-            tmp2 = Math.max(0, bound - Math.max(arg5, 0)) / arg3 >= 0.5;
-          }
+          const tmp2 = arg3 > 0 && max(0, bound - Math.max(arg5, 0)) / arg3 >= 0.5;
           if (tmp2 !== ref2.current) {
             ref2.current = tmp2;
             closure_1_3(tmp2);
@@ -39,7 +40,7 @@ export default function useIsCarouselInView() {
         });
       }
     }, 1000);
-    return () => clearInterval(closure_0);
+    return () => clearInterval(ref);
   }, []);
   return { containerRef, isInView };
 };

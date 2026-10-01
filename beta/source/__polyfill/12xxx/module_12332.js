@@ -5,22 +5,25 @@
 
 // Module 12332
 import _mod12331 from "module_12331" /* 12331 */;
-import _mod12333 from "module_12333" /* 12333 */;
 
-require = arg1;
-const dependencyMap = arg6;
+let tmp;
+const _mod12333 = tmp(12333);
 
 export const getAsyncContextStrategy = function getAsyncContextStrategy(arg0) {
-  const sentryCarrier = _mod12331.getSentryCarrier(arg0);
+  let acs;
+  const obj = _mod12331;
+  const sentryCarrier = obj.getSentryCarrier(arg0);
   if (sentryCarrier.acs) {
-    let acs = sentryCarrier.acs;
+    acs = sentryCarrier.acs;
   } else {
-    acs = _mod12333.getStackAsyncContextStrategy();
     const tmpResult = _mod12333;
+    acs = tmpResult.getStackAsyncContextStrategy();
   }
   return acs;
 };
 export const setAsyncContextStrategy = function setAsyncContextStrategy(acs) {
-  const mainCarrier = _mod12331.getMainCarrier();
+  const obj = _mod12331;
+  const mainCarrier = obj.getMainCarrier();
   _mod12331.getSentryCarrier(mainCarrier).acs = acs;
+  _mod12331;
 };

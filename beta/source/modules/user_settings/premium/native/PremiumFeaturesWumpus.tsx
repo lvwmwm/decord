@@ -5,52 +5,70 @@
 // Exports: default
 
 // Module 8687 (PremiumFeaturesWumpus)
-import _modDef8688 from "module_8688" /* 8688 */;
-import _modDef8693 from "module_8693" /* 8693 */;
-import noop from "module_19" /* 19 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8688 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8693 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const PremiumTypes = fn(1374).PremiumTypes;
-const jsxProd = fn(21);
-({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { clouds: { position: "absolute", top: 0, right: 0 }, wumpus: { position: "absolute", top: 22, right: 22, height: 90 }, wumpusLeft: null };
-const obj3 = { transform: null };
-let items = [{ scaleX: -1 }];
-obj3.transform = items;
-obj2.wumpusLeft = obj3;
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let dependencyMap;
+
+let closure_4;
+let hasOwnProperty;
+let items;
+let metroRequire;
+let obj2;
+const PremiumTypes = PremiumConstants.PremiumTypes;
+({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { clouds: { position: "absolute", top: 0, right: 0 }, wumpus: { position: "absolute", top: 22, right: 22, height: 90 }, wumpusLeft: obj2 };
+obj2 = { transform: items };
+items = [{ scaleX: -1 }];
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesWumpus.tsx");
 
 export default function PremiumFeaturesWumpus(premiumType) {
+  let closure_1;
+  let cloudsImageSource;
+  let wumpusImageSource;
   premiumType = premiumType.premiumType;
   const tmp = closure_7();
   const tmp2 = premiumType(6364)();
   dependencyMap = tmp2;
   const items = [premiumType, tmp2];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
+    let obj;
+    let tmpResult;
     if (premiumType === PremiumTypes.TIER_0) {
-      const obj2 = { wumpusImageSource: _modDef8688, cloudsImageSource: importDefault(closure_1 ? 8689 : 8690) };
+      obj = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 8689 : 8690) };
+      const obj2 = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 8689 : 8690) };
     } else {
+      let tmp4;
       if (closure_1) {
-        let tmp4 = 8691;
+        tmp4 = 8691;
       } else {
         tmp4 = 8692;
       }
-      const obj = { wumpusImageSource: _modDef8693, cloudsImageSource: importDefault(tmp4) };
-      return obj;
+      obj = { wumpusImageSource: AssetRegistryDefault2, cloudsImageSource: tmpResult };
+      tmpResult = importDefault(tmp4);
     }
+    return obj;
   }, items);
   ({ wumpusImageSource, cloudsImageSource } = memo);
-  const items1 = [closure_4(premiumType(5899), { style: tmp.clouds, resizeMode: "contain", source: cloudsImageSource }), ];
+  let tmp4 = closure_6;
+  let obj = { style: tmp.clouds, resizeMode: "contain", source: cloudsImageSource };
+  const items1 = [closure_4(premiumType(5899), obj), ];
   const items2 = [tmp.wumpus, ];
   let wumpusLeft = premiumType === PremiumTypes.TIER_0;
+  const tmp7 = premiumType(5899);
+  const tmp5 = closure_5;
+  const tmp6 = closure_4;
   if (wumpusLeft) {
     wumpusLeft = tmp.wumpusLeft;
   }
-  let obj2 = { children: null };
+  let obj2 = { children: items1 };
   items2[1] = wumpusLeft;
-  items1[1] = closure_4(premiumType(5899), { style: items2, resizeMode: "contain", source: wumpusImageSource });
-  obj2.children = items1;
-  return closure_6(closure_5, obj2);
+  items1[1] = tmp6(tmp7, { style: items2, resizeMode: "contain", source: wumpusImageSource });
+  return tmp4(tmp5, obj2);
 };

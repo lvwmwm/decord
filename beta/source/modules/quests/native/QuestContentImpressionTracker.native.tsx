@@ -5,113 +5,144 @@
 // Exports: BillableAdPlacementImpressionTrackerNative, QuestContentImpressionTrackerNative
 
 // Module 10753 (QuestContentImpressionTracker)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 7146 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+const react = react2;
+let dependencyMap;
+
 function AdContentImpressionTrackerBaseNative(skipRemountKey) {
-  let items = [AppStateStore];
-  let tmp3 = adContentIds2(504).useStateFromStores(items, () => state.getState()) === AppStates.ACTIVE;
+  let adContentIds2;
+  let setVisible;
+  let state;
+  let tmp20;
+  let visibilityRef;
+  let tmp = adContentIds2;
+  let tmp2 = dependencyMap;
   let obj = adContentIds2(504);
-  const ref = noop.useRef(null);
+  let items = [AppStateStore];
+  let tmp3 = obj.useStateFromStores(items, () => state.getState()) === AppStates.ACTIVE;
   const tmp5 = visibilityRef;
+  const ref = react.useRef(null);
   let tmp6 = visibilityRef(7720)(tmp3);
-  const adContentImpressionTrackerProps = adContentIds2(10711).useAdContentImpressionTrackerProps(skipRemountKey);
+  const obj2 = adContentIds2(10711);
+  const adContentImpressionTrackerProps = obj2.useAdContentImpressionTrackerProps(skipRemountKey);
   const adContentIds = adContentImpressionTrackerProps.adContentIds;
-  const obj3 = {};
+  const obj3 = { adContentIds };
+  const key = adContentImpressionTrackerProps.key;
   let merged = Object.assign(skipRemountKey);
-  obj3.adContentIds = adContentIds;
   adContentIds2 = obj3.adContentIds;
   visibilityRef = obj3.visibilityRef;
   let overrideVisibility = obj3.overrideVisibility;
   const joined = adContentIds2.join("_");
-  const obj2 = adContentIds2(10711);
   let items1 = [joined];
-  const tmp10 = _slicedToArray(adContentIds2(8179).useRecyclingState(false, items1), 2);
-  dependencyMap = tmp11;
+  const obj4 = adContentIds2(8179);
+  const tmp10 = _slicedToArray(obj4.useRecyclingState(false, items1), 2);
+  dependencyMap = tmp12;
   let items2 = [adContentIds2, tmp10[1], visibilityRef];
-  const effect = noop.useEffect(() => {
-    (function initHandlers(arg0) {
+  const first = tmp10[0];
+  const effect = react.useEffect(() => {
+    let children;
+    function initHandlers(arg0) {
+      let adContentIds;
       ({ adContentIds, setVisible: children, visibilityRef } = arg0);
       if (null != visibilityRef) {
+        let tmp = adContentIds;
         function _loop(iter) {
-          closure_0 = iter;
-          const obj = {};
-          const merged = Object.assign(visibilityRef.current.children[iter]);
-          obj.calculateVisibility = function calculateVisibility() {
-            let tmp4;
-            if (visibilityRef != null) {
-              const current = tmp2.current;
-              if (current != null) {
-                children = current.children;
-                if (children != null) {
-                  tmp4 = children[tmp3];
+          let closure_0 = iter;
+          children = visibilityRef.current.children;
+          const obj = {
+            calculateVisibility() {
+              let tmp4;
+              const tmp = closure_2_0;
+              if (visibilityRef != null) {
+                const current = tmp2.current;
+                if (current != null) {
+                  children = current.children;
+                  if (children != null) {
+                    tmp4 = children[tmp3];
+                  }
                 }
               }
-            }
-            let layout;
-            if (tmp4 != null) {
-              layout = tmp4.layout;
-            }
-            let num = 0;
-            if (null != layout) {
-              let layout1;
-              if (tmp2 != null) {
-                const parent = tmp2.current.parent;
-                if (parent != null) {
-                  layout1 = parent.layout;
-                }
+              let layout;
+              if (tmp4 != null) {
+                layout = tmp4.layout;
               }
-              num = 0;
-              if (null != layout1) {
-                let str = tmp2.current.axis;
-                if (str == null) {
-                  str = "vertical";
+              let num = 0;
+              if (null != layout) {
+                let layout1;
+                if (visibilityRef != null) {
+                  const parent = tmp2.current.parent;
+                  if (parent != null) {
+                    layout1 = parent.layout;
+                  }
                 }
-                if ("horizontal" === str) {
-                  num = 0;
-                  if (null != tmp2.current.parent.scrollX) {
-                    const items = [tmp4.layout.x, tmp4.layout.x + tmp4.layout.width];
-                    const items1 = [tmp2.current.parent.scrollX, tmp2.current.parent.scrollX + tmp2.current.parent.layout.width];
-                    let items3 = items1;
-                    let items2 = items;
-                    if (null != tmp2.current.parent.firstItemOffset) {
-                      const firstItemOffset = tmp2.current.parent.firstItemOffset;
-                      items2[0] = items2[0] + firstItemOffset;
-                      items2[1] = items2[1] + firstItemOffset;
+                num = 0;
+                if (null != layout1) {
+                  let items2;
+                  let items3;
+                  let height;
+                  let str = tmp2.current.axis;
+                  if (str == null) {
+                    str = "vertical";
+                  }
+                  if ("horizontal" === str) {
+                    num = 0;
+                    if (null != visibilityRef.current.parent.scrollX) {
+                      const items = [tmp4.layout.x, tmp4.layout.x + tmp4.layout.width];
+                      const items1 = [visibilityRef.current.parent.scrollX, visibilityRef.current.parent.scrollX + visibilityRef.current.parent.layout.width];
+                      height = tmp4.layout.width;
+                      items3 = items1;
+                      items2 = items;
+                      if (null != visibilityRef.current.parent.firstItemOffset) {
+                        const firstItemOffset = tmp2.current.parent.firstItemOffset;
+                        items2[0] = items2[0] + firstItemOffset;
+                        items2[1] = items2[1] + firstItemOffset;
+                      }
+                      const _Math = Math;
+                      const _Math2 = Math;
+                      const bound = Math.max(items2[0], items3[0]);
+                      const _Math3 = Math;
+                      const _Math4 = Math;
+                      num = Math.min(Math.max(0, Math.min(items2[1], items3[1]) - bound) / height, 1);
                     }
-                    const _Math = Math;
-                    const _Math2 = Math;
-                    const bound = Math.max(items2[0], items3[0]);
-                    const _Math3 = Math;
-                    const _Math4 = Math;
-                    num = Math.min(Math.max(0, Math.min(items2[1], items3[1]) - bound) / tmp4.layout.width, 1);
-                  }
-                } else {
-                  num = 0;
-                  if (null != tmp2.current.parent.scrollY) {
-                    items2 = [tmp4.layout.y, tmp4.layout.y + tmp4.layout.height];
-                    items3 = [tmp2.current.parent.scrollY, tmp2.current.parent.scrollY + tmp2.current.parent.layout.height];
-                    const height = tmp4.layout.height;
+                  } else {
+                    num = 0;
+                    if (null != visibilityRef.current.parent.scrollY) {
+                      items2 = [tmp4.layout.y, tmp4.layout.y + tmp4.layout.height];
+                      items3 = [visibilityRef.current.parent.scrollY, visibilityRef.current.parent.scrollY + visibilityRef.current.parent.layout.height];
+                      height = tmp4.layout.height;
+                    }
                   }
                 }
               }
+              tmp(num >= closure_3_6);
             }
-            closure_2_0(num >= closure_3_6);
           };
-          visibilityRef.current.children[iter] = obj;
+          const merged = Object.assign(visibilityRef.current.children[iter]);
+          children[iter] = obj;
         }
         const iter = adContentIds[Symbol.iterator]();
+        let num = 0;
+        const tmp2 = adContentIds;
+        const tmp3 = iter;
         while (iter !== undefined) {
           let _loopResult = _loop(iter.next());
           continue;
         }
       }
-    })({ adContentIds: children, setVisible, visibilityRef });
+    }
+    let obj = { adContentIds: children, setVisible, visibilityRef };
+    let tmp = visibilityRef;
+    let tmp2 = initHandlers(obj);
     children = undefined;
     if (visibilityRef != null) {
-      let current = visibilityRef.current;
+      let current = tmp.current;
       if (current != null) {
         children = current.children;
       }
@@ -129,38 +160,34 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
     };
   }, items2);
   if (overrideVisibility == null) {
-    overrideVisibility = tmp10[0];
+    overrideVisibility = first;
   }
-  const obj4 = adContentIds2(8179);
-  const obj6 = {};
+  const obj6 = { focused: tmp3, focusedChanged: tmp3 !== tmp6, reference: ref, isFocused: tmp3 };
+  const obj5 = { visible: overrideVisibility, visibleChanged: overrideVisibility !== tmp5(7720)(overrideVisibility) };
   const merged1 = Object.assign(skipRemountKey);
-  const merged2 = Object.assign({ visible: overrideVisibility, visibleChanged: overrideVisibility !== tmp5(7720)(overrideVisibility) });
-  obj6.focused = tmp3;
-  obj6.focusedChanged = tmp3 !== tmp6;
-  obj6.reference = ref;
-  obj6.isFocused = tmp3;
-  let key;
+  const merged2 = Object.assign(obj5);
+  let tmp16;
   if (!skipRemountKey.skipRemountKey) {
-    key = adContentImpressionTrackerProps.key;
+    tmp16 = key;
   }
-  const obj7 = {};
+  const obj7 = { key: tmp16, adContentIds };
+  const QuestContentImpressionTracker = tmp(10712).QuestContentImpressionTracker;
+  const tmp18 = "questOrQuests" in skipRemountKey;
   const merged3 = Object.assign(obj6);
-  obj7.key = key;
-  obj7.adContentIds = adContentIds;
-  if (tmp17) {
+  const tmp17 = createElement;
+  if (tmp18) {
     obj7.adCreativeType = tmp(5763).AdCreativeType.QUEST;
-    let tmp19 = obj7;
+    tmp20 = obj7;
   } else {
     obj7.adCreativeType = skipRemountKey.adCreativeType;
-    tmp19 = obj7;
+    tmp20 = obj7;
   }
-  return createElement(adContentIds2(10712).QuestContentImpressionTracker, tmp19);
+  return tmp17(QuestContentImpressionTracker, tmp20);
 }
-let closure_6 = fn(7146).MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE;
-const AppStates = fn(1074).AppStates;
-const createElement = fn(19).createElement;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let closure_6 = ContentImpressionTrackerConstants.MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE;
+const AppStates = Constants.AppStates;
+const createElement = react2.createElement;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/quests/native/QuestContentImpressionTracker.native.tsx");
 
 export const QuestContentImpressionTrackerNative = function QuestContentImpressionTrackerNative(arg0) {

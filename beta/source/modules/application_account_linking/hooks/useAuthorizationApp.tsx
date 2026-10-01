@@ -5,15 +5,16 @@
 // Exports: getAuthorizationApp, useAuthorizationApp
 
 // Module 6588 (useAuthorizationApp)
-import noop from "module_19" /* 19 */;
+import ApplicationConstants from "ApplicationConstants" /* 1349 */;
+import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
 import ApplicationRecord from "ApplicationRecord" /* 2003 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const ApplicationTypes = fn(1349).ApplicationTypes;
-const size = fn(2);
+const ApplicationTypes = ApplicationConstants.ApplicationTypes;
 const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
 
 export const getAuthorizationApp = function getAuthorizationApp(type) {
@@ -33,10 +34,11 @@ export const getAuthorizationApp = function getAuthorizationApp(type) {
     }
     if (application == null) {
       let id;
+      const getApplication = ApplicationStore.getApplication;
       if (found != null) {
         id = found.id;
       }
-      application = ApplicationStore.getApplication(id);
+      application = getApplication(id);
     }
     if (application == null) {
       application = null;
@@ -45,43 +47,59 @@ export const getAuthorizationApp = function getAuthorizationApp(type) {
   }
 };
 export const useAuthorizationApp = function useAuthorizationApp(getOfficialApplicationId) {
+  let getOrFetchApplication;
   _require = getOfficialApplicationId;
   let officialApplicationId;
   if (null != getOfficialApplicationId) {
+    let tmp2 = ApplicationRecord;
     if (!(getOfficialApplicationId instanceof ApplicationRecord)) {
       officialApplicationId = getOfficialApplicationId.getOfficialApplicationId();
     }
   }
-  getOrFetchApplication = require("useGetOrFetchApplications").useGetOrFetchApplication(officialApplicationId);
+  const obj = require("useGetOrFetchApplications");
+  getOrFetchApplication = obj.useGetOrFetchApplication(officialApplicationId);
   const items = [getOfficialApplicationId, getOrFetchApplication];
-  return noop.useMemo(() => {
-    let application = closure_0;
-    if (null == closure_0) {
-      return null;
-    } else if (application instanceof ApplicationRecord) {
-      if (null != application) {
-        if (application.type === ApplicationTypes.GAME) {
-          const linkedGames = application.linkedGames;
-          let found;
-          if (linkedGames != null) {
-            found = linkedGames.find((type) => type.type === getOfficialApplicationId(getOrFetchApplication[4]).GameLinkTypes.OFFICIAL);
-          }
-          application = undefined;
-          if (found != null) {
-            application = found.application;
-          }
-          if (application == null) {
-            let id;
-            if (found != null) {
-              id = found.id;
+  return react.useMemo(() => {
+    let tmp2 = null;
+    if (null != getOfficialApplicationId) {
+      let tmp4;
+      if (getOfficialApplicationId instanceof ApplicationRecord) {
+        let tmp5 = null;
+        if (null != getOfficialApplicationId) {
+          tmp5 = tmp;
+          if (getOfficialApplicationId.type === ApplicationTypes.GAME) {
+            const linkedGames = tmp.linkedGames;
+            let found;
+            if (linkedGames != null) {
+              found = linkedGames.find((type) => type.type === getOfficialApplicationId(getOrFetchApplication[4]).GameLinkTypes.OFFICIAL);
             }
-            application = ApplicationStore.getApplication(id);
-          }
-          if (application == null) {
-            application = null;
+            let application;
+            if (found != null) {
+              application = found.application;
+            }
+            if (application == null) {
+              let id;
+              const getApplication = ApplicationStore.getApplication;
+              if (found != null) {
+                id = found.id;
+              }
+              application = getApplication(id);
+            }
+            if (application == null) {
+              application = null;
+            }
+            tmp5 = application;
           }
         }
+        tmp4 = tmp5;
+      } else {
+        tmp4 = getOrFetchApplication;
+        if (getOrFetchApplication == null) {
+          tmp4 = null;
+        }
       }
+      tmp2 = tmp4;
     }
+    return tmp2;
   }, items);
 };

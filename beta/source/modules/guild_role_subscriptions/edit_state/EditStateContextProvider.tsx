@@ -5,17 +5,20 @@
 // Exports: EditStateContextProvider, useEditStateContext
 
 // Module 17569 (EditStateContextProvider)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const redux = noop.createContext(undefined);
-const size = fn(2);
+const jsx = Fragment.jsx;
+const redux = react.createContext(undefined);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/edit_state/EditStateContextProvider.tsx");
 
 export const useEditStateContext = function useEditStateContext() {
-  const context = noop.useContext(closure_2);
+  const context = react.useContext(redux);
   if (null == context) {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error("No edit state; are you missing an <EditStateContextProvider />?");
     throw error;
   } else {

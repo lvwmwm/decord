@@ -5,27 +5,29 @@
 // Exports: getAvatarDecoration, useAvatarDecoration
 
 // Module 7661 (useAvatarDecoration)
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecoration.tsx");
 
 export const useAvatarDecoration = function useAvatarDecoration(user, guildId) {
   _require = user;
   dependencyMap = guildId;
   let items = [GuildMemberStore];
-  return require("useStateFromStores").useStateFromStores(items, () => {
+  const obj = require("useStateFromStores");
+  return obj.useStateFromStores(items, () => {
     const items = [GuildMemberStore];
     const first = _slicedToArray(items, 1)[0];
     let member = null;
-    if (null != closure_1) {
+    const tmp2 = guildId;
+    if (null != guildId) {
       member = null;
-      if (null != tmp) {
-        member = first.getMember(closure_1, tmp.id);
+      if (null != user) {
+        member = first.getMember(tmp2, tmp.id);
       }
     }
     let avatarDecoration;
@@ -34,7 +36,7 @@ export const useAvatarDecoration = function useAvatarDecoration(user, guildId) {
     }
     if (avatarDecoration == null) {
       let avatarDecoration1;
-      if (tmp != null) {
+      if (user != null) {
         avatarDecoration1 = tmp.avatarDecoration;
       }
       avatarDecoration = avatarDecoration1;

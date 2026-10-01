@@ -5,145 +5,122 @@
 // Exports: default
 
 // Module 15487 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SortedGuildStore from "SortedGuildStore" /* 5750 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15486 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const UserSettingsSafetySelectedGuildStore = fn(15486);
-({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: closure_7, setSelectedGuildId: closure_8, useUserSafetySettingsSelectedGuildStore: closure_9 } = UserSettingsSafetySelectedGuildStore);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { iconContainer: { marginRight: nativeDefault.space.PX_12 } };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
+let flattenedGuildIds, record;
+
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: metroImportDefault, setSelectedGuildId: metroImportAll, useUserSafetySettingsSelectedGuildStore: c9 } = UserSettingsSafetySelectedGuildStore);
+const jsx = Fragment.jsx;
+let obj = { iconContainer: obj2 };
+obj2 = { marginRight: nativeDefault.space.PX_12 };
+let closure_11 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsPrivacyAndSafetyGuildSelectActionSheet.tsx");
 
 export default function SettingsPrivacyAndSafetyGuildSelectActionSheet() {
-  const tmp2 = _slicedToArray(noop.useState(""), 2);
-  const first = tmp2[0];
+  let callback;
+  let dangerouslyConstructGuildRecordFromUntypedObject;
+  let first;
+  let intl;
+  let intl2;
+  let intl3;
+  let obj12;
+  let tmp4;
+  let obj = react;
+  let tmp = closure_11();
+  [first, tmp4] = react.useState("");
   const selectedGuildId = closure_9().selectedGuildId;
-  closure_129_0 = selectedGuildId;
-  const tmp = closure_11();
+  let tmp6 = callback;
+  let obj2 = first(callback[11]);
   let items = [GuildStore];
-  const stateFromStores = first(callback[11]).useStateFromStores(items, () => GuildStore.getGuild(first));
-  if (selectedGuildId !== value) {
+  const stateFromStores = obj2.useStateFromStores(items, () => guild.getGuild(selectedGuildId));
+  if (selectedGuildId !== id) {
+    let obj4;
     if (null != stateFromStores) {
-      let obj4 = { type: tmp4(tmp5[8]).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
+      obj4 = { type: tmp5(tmp6[8]).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
       ({ name: obj3.label, id: obj3.value } = stateFromStores);
     }
-    let obj5 = { maxValues: 1, minValues: 1, placeholder: null };
     function submitSelection() {
-      return obj4(callback[12]).hideActionSheet();
+      const obj = obj4(callback[12]);
+      return obj.hideActionSheet();
     }
-    const intl3 = tmp4(tmp5[10]).intl;
-    obj5.placeholder = intl3.string(tmp4(tmp5[10]).t["ZImm/x"]);
+    const obj5 = { maxValues: 1, minValues: 1, placeholder: intl3.string(first(tmp6[10]).t["ZImm/x"]) };
+    intl3 = tmp5(tmp6[10]).intl;
     callback = obj.useCallback((query) => {
-      let obj = { type: first(callback[8]).SelectOptionType.GUILD, guild: null, label: null, value: null };
-      const obj3 = { id: value, name: null };
-      const intl = first(callback[10]).intl;
-      obj3.name = intl.string(first(callback[10]).t["32u1Dx"]);
-      obj.guild = first(callback[9]).dangerouslyConstructGuildRecordFromUntypedObject(obj3);
-      const intl2 = first(callback[10]).intl;
-      obj.label = intl2.string(first(callback[10]).t["32u1Dx"]);
-      obj.value = value;
+      let dangerouslyConstructGuildRecordFromUntypedObject;
+      let intl;
+      let intl2;
+      let obj2;
+      let reduced;
+      let obj = { type: first(callback[8]).SelectOptionType.GUILD, guild: dangerouslyConstructGuildRecordFromUntypedObject(obj2), label: intl2.string(first(callback[10]).t["32u1Dx"]), value };
+      const tmp2 = first(callback[9]);
+      dangerouslyConstructGuildRecordFromUntypedObject = tmp2.dangerouslyConstructGuildRecordFromUntypedObject;
+      obj2 = { id: value, name: intl.string(first(callback[10]).t["32u1Dx"]) };
+      intl = first(callback[10]).intl;
+      intl2 = first(callback[10]).intl;
       const items = [obj];
+      const tmp = callback;
       if (0 === query.length) {
         flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
-        let reduced = flattenedGuildIds.reduce((arr, item) => {
+        reduced = flattenedGuildIds.reduce((acc, item) => {
           guild = guild.getGuild(item);
           if (null != guild) {
-            const obj = { type: first(5067).SelectOptionType.GUILD, value: null, label: null, guild: null };
+            const obj = { type: first(callback[8]).SelectOptionType.GUILD, value: null, label: null, guild };
+            const push = acc.push;
             ({ id: obj.value, name: obj.label } = guild);
-            obj.guild = guild;
-            arr.push(obj);
+            push(obj);
           }
-          return arr;
+          return acc;
         }, items);
       } else {
-        obj4 = obj4(callback[16]);
-        const obj5 = { query };
-        reduced = obj4.queryGuilds(obj5).map((record) => {
+        const obj3 = obj4(tmp[16]);
+        obj4 = { query };
+        const queryGuildsResult = obj3.queryGuilds(obj4);
+        reduced = queryGuildsResult.map((record) => {
           record = record.record;
-          return { type: first(5067).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+          const obj = { type: first(callback[8]).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+          return obj;
         });
-        const queryGuildsResult = obj4.queryGuilds(obj5);
       }
       return reduced;
     }, []);
     const items1 = [first, callback];
     const memo = obj.useMemo(() => callback(first), items1);
-    const obj6 = {
-      onPressOptionItem(arg0, guild) {
-          closure_1_8(guild.guild.id);
-          obj4(callback[12]).hideActionSheet();
-        },
-      renderHeaderIcon(value) {
-          if (value.value === closure_1_7) {
-            let tmp6 = jsx(first(callback[14]).GuildSelectDefaultIcon, { size: "xs" });
-          } else {
-            const obj = { guild: value.guild, size: first(callback[15]).GuildIconSizes.XSMALL };
-            tmp6 = jsx(obj4(callback[15]), { guild: value.guild, size: first(callback[15]).GuildIconSizes.XSMALL });
-            const tmp4 = obj4(callback[15]);
-          }
-          return tmp6;
-        },
-      renderIcon(value) {
-          if (value.value === closure_1_7) {
-            let tmp6 = jsx(first(callback[14]).GuildSelectDefaultIcon, {});
-          } else {
-            const obj = { guild: value.guild, size: first(callback[15]).GuildIconSizes.SMALL_32 };
-            tmp6 = jsx(obj4(callback[15]), { guild: value.guild, size: first(callback[15]).GuildIconSizes.SMALL_32 });
-            const tmp4 = obj4(callback[15]);
-          }
-          return tmp6;
-        },
-      iconContainerStyle: tmp.iconContainer,
-      selectionActionComponent: obj5,
-      options: memo,
-      selectedCount: 1,
-      selectedOptions: null,
-      isSelected: null,
-      submitSelection: null,
-      onQueryChange: null,
-      itemAccessibilityLabel: null,
-      allowEmpty: false,
-      expanded: true
-    };
     const items2 = [obj4];
-    obj6.selectedOptions = items2;
-    obj6.isSelected = function isSelected(value) {
-      return value.value === obj4.value;
-    };
-    obj6.submitSelection = submitSelection;
-    obj6.onQueryChange = tmp2[1];
-    obj6.itemAccessibilityLabel = function itemAccessibilityLabel(label) {
-      return label.label;
-    };
-    return jsx(obj4(tmp5[13]), {
+    return jsx(obj4(tmp6[13]), {
       onPressOptionItem(arg0, guild) {
           closure_1_8(guild.guild.id);
-          obj4(callback[12]).hideActionSheet();
+          const obj = obj4(callback[12]);
+          obj.hideActionSheet();
         },
       renderHeaderIcon(value) {
+          let tmp6;
           if (value.value === closure_1_7) {
-            let tmp6 = jsx(first(callback[14]).GuildSelectDefaultIcon, { size: "xs" });
+            tmp6 = jsx(first(callback[14]).GuildSelectDefaultIcon, { size: "xs" });
           } else {
-            const obj = { guild: value.guild, size: first(callback[15]).GuildIconSizes.XSMALL };
-            tmp6 = jsx(obj4(callback[15]), { guild: value.guild, size: first(callback[15]).GuildIconSizes.XSMALL });
-            const tmp4 = obj4(callback[15]);
+            obj4(callback[15]);
+            tmp6 = <tmp4 guild={arg0.guild} size={first(callback[15]).GuildIconSizes.XSMALL} />;
           }
           return tmp6;
         },
       renderIcon(value) {
+          let tmp6;
           if (value.value === closure_1_7) {
-            let tmp6 = jsx(first(callback[14]).GuildSelectDefaultIcon, {});
+            tmp6 = jsx(first(callback[14]).GuildSelectDefaultIcon, {});
           } else {
-            const obj = { guild: value.guild, size: first(callback[15]).GuildIconSizes.SMALL_32 };
-            tmp6 = jsx(obj4(callback[15]), { guild: value.guild, size: first(callback[15]).GuildIconSizes.SMALL_32 });
-            const tmp4 = obj4(callback[15]);
+            obj4(callback[15]);
+            tmp6 = <tmp4 guild={arg0.guild} size={first(callback[15]).GuildIconSizes.SMALL_32} />;
           }
           return tmp6;
         },
@@ -151,23 +128,24 @@ export default function SettingsPrivacyAndSafetyGuildSelectActionSheet() {
       selectionActionComponent: obj5,
       options: memo,
       selectedCount: 1,
-      selectedOptions: null,
-      isSelected: null,
-      submitSelection: null,
-      onQueryChange: null,
-      itemAccessibilityLabel: null,
+      selectedOptions: items2,
+      isSelected(value) {
+          return value.value === obj4.value;
+        },
+      submitSelection,
+      onQueryChange: tmp4,
+      itemAccessibilityLabel(label) {
+          return label.label;
+        },
       allowEmpty: false,
       expanded: true
     });
   }
-  const obj7 = { type: first(callback[8]).SelectOptionType.GUILD, guild: null, label: null, value: null };
-  const obj2 = first(callback[11]);
-  const obj8 = { id: value, name: null };
-  let intl = tmp4(tmp5[10]).intl;
-  obj8.name = intl.string(first(callback[10]).t["32u1Dx"]);
-  obj7.guild = first(callback[9]).dangerouslyConstructGuildRecordFromUntypedObject(obj8);
-  let intl2 = tmp4(tmp5[10]).intl;
-  obj7.label = intl2.string(first(callback[10]).t["32u1Dx"]);
-  obj7.value = value;
+  const obj7 = { type: first(tmp6[8]).SelectOptionType.GUILD, guild: dangerouslyConstructGuildRecordFromUntypedObject(obj12), label: intl2.string(first(tmp6[10]).t["32u1Dx"]), value: id };
+  obj12 = { id, name: intl.string(first(tmp6[10]).t["32u1Dx"]) };
+  dangerouslyConstructGuildRecordFromUntypedObject = tmp5(tmp6[9]).dangerouslyConstructGuildRecordFromUntypedObject;
+  first(tmp6[9]);
+  intl = tmp5(tmp6[10]).intl;
+  intl2 = tmp5(tmp6[10]).intl;
   obj4 = obj7;
 };

@@ -5,11 +5,13 @@
 // Exports: default
 
 // Module 12679 (useTrackUserProfileWishlistView)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import WishlistStore from "WishlistStore" /* 8239 */;
 import size from "module_2" /* 2 */;
 
-({ useEffect: c2, useRef: c3 } = noop);
+let c2;
+let c3;
+({ useEffect: c2, useRef: c3 } = react);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileWishlistView.tsx");
 
 export default function useTrackUserProfileWishlistView(wishlistId) {
@@ -21,20 +23,21 @@ export default function useTrackUserProfileWishlistView(wishlistId) {
     flag = true;
   }
   let stateFromStores;
+  let obj = wishlistId(onAction[2]);
   const items = [stateFromStores];
-  stateFromStores = wishlistId(onAction[2]).useStateFromStores(items, () => WishlistStore.isFetching(wishlistId));
-  flag(false);
+  stateFromStores = obj.useStateFromStores(items, () => WishlistStore.isFetching(wishlistId));
+  const ref = flag(false);
   const items1 = [flag, stateFromStores, onAction, wishlistId, productLines];
   productLines(() => {
-    if (flag) {
-      let current = stateFromStores;
-      if (!stateFromStores) {
-        current = ref.current;
-      }
+    let tmp6;
+    const tmp = flag;
+    if (tmp) {
+      const current = stateFromStores || ref.current;
       if (!current) {
-        const obj = { action: "VIEW_WISHLIST", wishlistId, productLines };
+        const obj = { action: "VIEW_WISHLIST", wishlistId, productLines: tmp6 };
         onAction(obj);
         ref.current = true;
+        tmp6 = productLines;
       }
     } else {
       ref.current = false;

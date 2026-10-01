@@ -5,52 +5,63 @@
 // Exports: Tag
 
 // Module 13981 (Tag)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import TagGroupTypes from "TagGroupTypes" /* 13979 */;
 import TagGraphic from "TagGraphic" /* 13982 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+let closure_4;
+let hasOwnProperty;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles((arg0, arg1) => {
-  const obj = { tag: null, inline: null, label: null };
-  const obj2 = { flexDirection: "row", alignItems: "center", gap: TagGroupTypes.getTagGap(arg0), minHeight: null, paddingVertical: null, paddingHorizontal: null, borderWidth: null, borderRadius: null, borderColor: null, backgroundColor: null };
-  obj2.minHeight = TagGroupTypes.getTagMinHeight(arg0);
-  obj2.paddingVertical = TagGroupTypes.getTagVerticalPadding(arg0);
-  obj2.paddingHorizontal = TagGroupTypes.getTagHorizontalPadding(arg0);
-  obj2.borderWidth = TagGroupTypes.TAG_BORDER_WIDTH;
-  obj2.borderRadius = TagGroupTypes.getTagBorderRadius(arg0, arg1);
-  obj2.borderColor = nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT;
-  obj2.backgroundColor = nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT;
-  obj.tag = obj2;
-  obj.inline = { flexShrink: 1, minWidth: 0 };
-  obj.label = { flexShrink: 1, color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
+  let obj2;
+  let obj3;
+  let obj4;
+  let obj5;
+  let obj6;
+  let obj7;
+  const obj = { tag: obj2, inline: { flexShrink: 1, minWidth: 0 }, label: { flexShrink: 1, color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT } };
+  obj2 = { flexDirection: "row", alignItems: "center", gap: obj3.getTagGap(arg0), minHeight: obj4.getTagMinHeight(arg0), paddingVertical: obj5.getTagVerticalPadding(arg0), paddingHorizontal: obj6.getTagHorizontalPadding(arg0), borderWidth: TagGroupTypes.TAG_BORDER_WIDTH, borderRadius: obj7.getTagBorderRadius(arg0, arg1), borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT, backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
+  obj3 = TagGroupTypes;
+  obj4 = TagGroupTypes;
+  obj5 = TagGroupTypes;
+  obj6 = TagGroupTypes;
+  obj7 = TagGroupTypes;
+  ({ flexShrink: 1, color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT });
   return obj;
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/TagGroup/native/Tag.native.tsx");
 
 export const Tag = function Tag(variant) {
+  let inline;
+  let item;
+  let items1;
+  let obj4;
   ({ item, size, inline } = variant);
   const tmp = closure_6(size, variant.variant);
   const items = [tmp.tag, ];
+  const tmp2 = hasOwnProperty;
+  const tmp3 = View;
   if (inline) {
     inline = tmp.inline;
   }
-  const obj = { style: items, children: null };
+  const obj = { style: items, children: items1 };
   items[1] = inline;
   let tmp4 = null;
   if (null != item.icon) {
     const obj2 = { graphic: item.icon, size };
-    tmp4 = React4(TagGraphic.TagGraphic, obj2);
+    tmp4 = React3(TagGraphic.TagGraphic, obj2);
   }
-  const items1 = [tmp4, ];
-  const obj3 = { color: "none", variant: TagGroupTypes.getTagTextVariant(size), style: tmp.label, lineClamp: 1, children: item.label };
-  items1[1] = React4(Text_Text.Text, obj3);
-  obj.children = items1;
-  return hasOwnProperty(View, obj);
+  items1 = [tmp4, ];
+  const obj3 = { color: "none", variant: obj4.getTagTextVariant(size), style: tmp.label, lineClamp: 1, children: item.label };
+  const Text = Text_Text.Text;
+  obj4 = TagGroupTypes;
+  items1[1] = React3(Text, obj3);
+  return tmp2(tmp3, obj);
 };

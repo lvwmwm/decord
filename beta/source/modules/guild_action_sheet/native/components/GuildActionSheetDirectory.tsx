@@ -5,38 +5,50 @@
 // Exports: default
 
 // Module 13511 (GuildActionSheetDirectory)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import BottomSheetModal from "BottomSheetModal" /* 6045 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
 import GuildActionSheetActions from "GuildActionSheetActions" /* 13455 */;
 import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 13512 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, actions: { paddingHorizontal: 16, gap: 24 } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let BottomSheet;
+
+let closure_4;
+let hasOwnProperty;
+let obj2;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { container: obj2, actions: { paddingHorizontal: 16, gap: 24 } };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetDirectory.tsx");
 
 export default function GuildActionSheetDirectory(arg0) {
+  let BottomSheetScrollView;
+  let expanded;
+  let guild;
+  let items;
+  let items1;
+  let obj2;
   ({ guild, expanded } = arg0);
   if (expanded === undefined) {
     expanded = false;
   }
   const tmp = closure_6();
-  const obj = { scrollable: true, startExpanded: expanded, children: null };
-  const obj2 = { scrollsToTop: false, style: tmp.container, contentContainerStyle: { paddingBottom: useSafeAreaInsetsDefault().bottom }, children: null };
-  const items = [React4(GuildActionSheetHeaderDefault, { guild }), ];
-  const obj3 = { style: tmp.actions, children: null };
-  const items1 = [React4(GuildActionSheetActions.GuildActionSheetDirectoryActions, { guild }), React4(GuildActionSheetActions.GuildDeveloperOptionAction, { guild })];
-  obj3.children = items1;
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  const obj = { scrollable: true, startExpanded: expanded, children: hasOwnProperty(BottomSheetScrollView, obj2) };
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  obj2 = { scrollsToTop: false, style: tmp.container, contentContainerStyle: { paddingBottom: bottom }, children: items };
+  BottomSheetScrollView = BottomSheetModal.BottomSheetScrollView;
+  items = [React3(GuildActionSheetHeaderDefault, { guild }), ];
+  const obj3 = { style: tmp.actions, children: items1 };
+  items1 = [React3(GuildActionSheetActions.GuildActionSheetDirectoryActions, { guild }), React3(GuildActionSheetActions.GuildDeveloperOptionAction, { guild })];
   items[1] = hasOwnProperty(View, obj3);
-  obj2.children = items;
-  obj.children = hasOwnProperty(BottomSheetModal.BottomSheetScrollView, obj2);
-  return React4(Sheet_BottomSheet.BottomSheet, obj);
+  return React3(BottomSheet, obj);
 };

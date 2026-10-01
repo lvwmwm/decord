@@ -5,20 +5,20 @@
 // Exports: default
 
 // Module 15750 (GuildRoleSubscriptionGatedChannelIcon)
+import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1177 */;
-import _modDef9762 from "module_9762" /* 9762 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9762 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/premium_channel/GuildRoleSubscriptionGatedChannelIcon.tsx");
 
 export default function SubscriptionGatedChannelIcon(arg0) {
+  let isInMainTabsExperiment;
+  let locked;
   ({ locked, isInMainTabsExperiment } = arg0);
-  const obj = { source: _modDef9762, size: null, disableColor: null };
+  const Icon = native.Icon;
   const Sizes = native.Icon.Sizes;
-  obj.size = isInMainTabsExperiment ? Sizes.EXTRA_SMALL_10 : Sizes.SMALL;
-  obj.disableColor = false !== locked;
-  return jsx(native.Icon, { source: _modDef9762, size: null, disableColor: null });
+  return <Icon source={AssetRegistryDefault} size={isInMainTabsExperiment ? Sizes.EXTRA_SMALL_10 : Sizes.SMALL} disableColor={false !== locked} />;
 };

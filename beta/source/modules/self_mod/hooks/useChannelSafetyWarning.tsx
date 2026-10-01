@@ -6,11 +6,11 @@
 
 // Module 10436 (useChannelSafetyWarning)
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10376 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/hooks/useChannelSafetyWarning.tsx");
 
 export const useChannelSafetyWarning = function useChannelSafetyWarning(channelId, LIKELY_ATO) {
@@ -18,8 +18,9 @@ export const useChannelSafetyWarning = function useChannelSafetyWarning(channelI
   dependencyMap = LIKELY_ATO;
   const items = [ChannelSafetyWarningsStore];
   const items1 = [channelId];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => ChannelSafetyWarningsStore.getChannelSafetyWarnings(closure_0), items1);
-  const found = stateFromStores.filter((type) => type.type === closure_1);
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelSafetyWarningsStore.getChannelSafetyWarnings(channelId), items1);
+  const found = stateFromStores.filter((type) => type.type === LIKELY_ATO);
   return found.find((dismiss_timestamp) => {
     let tmp = null == dismiss_timestamp.dismiss_timestamp;
     if (tmp) {

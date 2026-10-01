@@ -5,40 +5,28 @@
 // Exports: default, isConversationStartMessage
 
 // Module 11432 (createConversationHeader)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef3617 from "module_3617" /* 3617 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7388 */;
-import _modDef11433 from "module_11433" /* 11433 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11433 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conversations/native/createConversationHeader.tsx");
 
 export default function createConversationHeader(startMessageId, arg1) {
+  let intl;
+  let obj2;
   if (null != startMessageId) {
-    let tmp = null != startMessageId;
+    const tmp = null != startMessageId && startMessageId.startMessageId === arg1 && startMessageId.messageCount > 1;
     if (tmp) {
-      tmp = startMessageId.startMessageId === arg1;
-    }
-    if (tmp) {
-      tmp = startMessageId.messageCount > 1;
-    }
-    if (tmp) {
-      const obj = { conversationId: null, title: null, expandIconUrl: null, expandAccessibilityLabel: null };
+      const obj = { conversationId: null, title: null, expandIconUrl: obj2.getAssetUriForEmbed(AssetRegistryDefault), expandAccessibilityLabel: intl.string(_modDef3617.pU5Dut) };
       ({ id: obj.conversationId, title: obj.title } = startMessageId);
-      obj.expandIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef11433);
-      const intl = util.intl;
-      obj.expandAccessibilityLabel = intl.string(_modDef3617.pU5Dut);
+      obj2 = renderer_EmbedUtils;
+      intl = intl2.intl;
       return obj;
     }
   }
 };
 export const isConversationStartMessage = function isConversationStartMessage(startMessageId, id) {
-  let tmp = null != startMessageId;
-  if (tmp) {
-    tmp = startMessageId.startMessageId === id;
-  }
-  if (tmp) {
-    tmp = startMessageId.messageCount > 1;
-  }
-  return tmp;
+  return null != startMessageId && startMessageId.startMessageId === id && startMessageId.messageCount > 1;
 };

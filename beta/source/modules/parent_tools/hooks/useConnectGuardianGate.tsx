@@ -5,24 +5,35 @@
 // Exports: useConnectGuardianGate
 
 // Module 17224 (useConnectGuardianGate)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import useMountEffectDefault from "useMountEffect" /* 5298 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
+let dependencyMap;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useConnectGuardianGate.tsx");
 
 export const useConnectGuardianGate = function useConnectGuardianGate() {
+  let closure_1;
+  let expiresAt;
+  let first;
+  let linkCode;
+  let obj2;
+  let ref;
+  let tmp3;
+  let obj = get_initialized;
   const items = [FamilyCenterStore];
-  const stateFromStoresObject = initialize.useStateFromStoresObject(items, () => ({ linkCode: FamilyCenterStore.getLinkCode(), expiresAt: FamilyCenterStore.getLinkCodeExpiresAt() }));
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { linkCode: FamilyCenterStore.getLinkCode(), expiresAt: FamilyCenterStore.getLinkCodeExpiresAt() };
+    return obj;
+  });
   ({ linkCode, expiresAt } = stateFromStoresObject);
-  [tmp3, require] = noop.useState(false);
-  const tmp4 = _slicedToArray(noop.useState(() => {
+  let tmp2 = _slicedToArray(react.useState(false), 2);
+  [tmp3, require] = tmp2;
+  [first, importDefault] = react.useState(() => {
     const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
     let tmp2 = null != FamilyCenterStore.getLinkCode() && null != linkCodeExpiresAt;
     if (tmp2) {
@@ -30,23 +41,23 @@ export const useConnectGuardianGate = function useConnectGuardianGate() {
       tmp2 = linkCodeExpiresAt > Date.now();
     }
     return tmp2;
-  }), 2);
-  importDefault = tmp4[1];
-  dependencyMap = noop.useRef(0);
-  const callback = noop.useCallback(() => {
+  });
+  dependencyMap = react.useRef(0);
+  const callback = react.useCallback(() => {
     const sum = ref.current + 1;
     ref.current = sum;
-    closure_0 = sum;
-    closure_0(false);
-    const linkCodeForCurrentUser = require("FamilyCenterActionCreators").getLinkCodeForCurrentUser();
+    require = sum;
+    require(false);
     const obj = require("FamilyCenterActionCreators");
-    linkCodeForCurrentUser.then(() => {
-      if (sum === ref.current) {
+    const linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+    const nextPromise = linkCodeForCurrentUser.then(() => {
+      if (closure_0 === ref.current) {
         require(false);
         closure_1(true);
       }
-    }).catch(() => {
-      if (sum === ref.current) {
+    });
+    nextPromise.catch(() => {
+      if (closure_0 === ref.current) {
         const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
         if (null != FamilyCenterStore.getLinkCode()) {
           if (null != linkCodeExpiresAt) {
@@ -62,12 +73,17 @@ export const useConnectGuardianGate = function useConnectGuardianGate() {
   }, []);
   useMountEffectDefault(callback);
   if (tmp3) {
-    let obj2 = { state: "error" };
-  } else if (tmp4[0]) {
-    if (null == linkCode) {
-      const obj3 = { state: "error" };
+    obj2 = { state: "error" };
+  } else if (first) {
+    if (null != linkCode) {
+      let obj4;
+      if (null != expiresAt) {
+        obj4 = { state: "gate", linkCode, expiresAt, refresh: callback };
+        const obj3 = { state: "gate", linkCode, expiresAt, refresh: callback };
+      }
+      obj2 = obj4;
     }
-    const obj4 = { state: "gate", linkCode, expiresAt, refresh: callback };
+    obj4 = { state: "error" };
   } else {
     obj2 = { state: "loading" };
   }

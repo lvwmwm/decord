@@ -6,20 +6,22 @@
 
 // Module 12127 (useProvisionalAccountApplication)
 import GameRelationshipStore from "GameRelationshipStore" /* 7071 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountApplication.tsx");
 
 export default function useProvisionalAccountApplication(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [GameRelationshipStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const gameRelationshipsForUser = GameRelationshipStore.getGameRelationshipsForUser(closure_0);
     return 0 !== gameRelationshipsForUser.length ? gameRelationshipsForUser[0].applicationId : undefined;
   });
-  const obj = require("initialize");
-  return require("useGetOrFetchApplications").useGetOrFetchApplication(stateFromStores);
+  const obj2 = require("useGetOrFetchApplications");
+  return obj2.useGetOrFetchApplication(stateFromStores);
 };

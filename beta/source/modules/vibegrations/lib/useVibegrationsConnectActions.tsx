@@ -5,124 +5,126 @@
 // Exports: useVibegrationsConnectActions
 
 // Module 16310 (useVibegrationsConnectActions)
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
 import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 12649 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_6 = fn(12642).requestExternalAuthorizeUrl;
+let c2, c3;
+
+let closure_6 = VibegrationsConnectionStore.requestExternalAuthorizeUrl;
 const set = new Set();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsConnectActions.tsx");
 
 export const useVibegrationsConnectActions = function useVibegrationsConnectActions(projectId, presentError) {
-  [tmp2, dependencyMap] = callback(noop.useState(set), 2);
-  noop.useRef(set);
-  callback = noop.useCallback((arg0) => {
-    ref.current = vibegrationsExternalConnections.endExternalAuthorization(ref.current, arg0);
+  let callback;
+  let tmp2;
+  let closure_1 = presentError;
+  let tmp = callback(react.useState(set), 2);
+  [tmp2, dependencyMap] = tmp;
+  const ref = react.useRef(set);
+  callback = react.useCallback((arg0) => {
+    const obj = vibegrationsExternalConnections;
+    ref.current = obj.endExternalAuthorization(ref.current, arg0);
     dependencyMap(ref.current);
   }, []);
   const items = [presentError, projectId, callback];
-  const tmp = callback(noop.useState(set), 2);
-  return {
+  let obj = {
     pending: tmp2,
-    connect: noop.useCallback((type) => {
+    connect: react.useCallback((type) => {
+      function startAuthorization() {
+        return obj(...arguments);
+      }
       projectId = type;
-      closure_1 = async function _startAuthorization(arg0, value) {
-        if (c3 === 2) {
-          c3 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp4 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
+      let obj = function _startAuthorization() {
+        obj = _asyncToGenerator(async (arg0, value) => {
+          let closure_0;
+          if (c3 === 2) {
+            c3 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj2 = { value, done: true };
+              return obj2;
+            } else {
+              return { value: "HermesInternal", done: null };
+            }
           } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          try {
-            c3 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
+            try {
+              let closure_1;
+              let tmp;
+              c3 = 2;
+              if (0 === c2) {
+                if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj4 = { value, done: true };
+                  return obj4;
+                } else {
+                  closure_1 = tmp4;
+                  tmp = undefined;
+                  c2 = 1;
+                  c3 = 1;
+                  const obj5 = { value: closure_2_6(tmp, type.type), done: false };
+                  return obj5;
+                }
+              } else if (arg0 === 1) {
                 c3 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c3 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
+                const obj6 = { value, done: true };
+                return obj6;
               } else {
-                closure_1 = tmp5;
-                closure_0 = tmp2;
-                closure_128_0 = undefined;
-                c2 = 1;
-                c3 = 1;
-                const obj5 = { value: closure_2_6(closure_0, type.type), done: false };
-                return obj5;
-              }
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
-            } else {
-              closure_128_0 = value;
-              callback(closure_129_0.type);
-              if ("url" === closure_128_0.type) {
-                const obj7 = { href: closure_128_0.url, trusted: false };
-                type(7818).handleClick(obj7);
+                tmp = value;
+                closure_1_4(closure_129_0.type);
+                if ("url" !== tmp.type) {
+                  let stringResult;
+                  const obj3 = type(closure_2_2[4]);
+                  const tmp13 = closure_1;
+                  if ("setup" === obj3.externalAuthErrorCopy(tmp.error)) {
+                    const intl2 = type(closure_2_2[6]).intl;
+                    stringResult = intl2.string(closure_2_1(closure_2_2[7]).avu1u4);
+                  } else {
+                    const intl = type(closure_2_2[6]).intl;
+                    stringResult = intl.string(closure_2_1(closure_2_2[7])["5fwOcF"]);
+                  }
+                  tmp13(stringResult);
+                } else {
+                  const obj7 = { href: tmp.url, trusted: false };
+                  obj = type(closure_2_2[5]);
+                  obj.handleClick(obj7);
+                }
                 c3 = 3;
-                const obj = type(7818);
+                return { value: "HermesInternal", done: null };
               }
-              if ("setup" === obj3.externalAuthErrorCopy(closure_128_0.error)) {
-                const intl2 = type(1115).intl;
-                let stringResult = intl2.string(presentError(3715).avu1u4);
-              } else {
-                const intl = type(1115).intl;
-                stringResult = intl.string(presentError(3715)["5fwOcF"]);
-              }
-              closure_1(stringResult);
-              obj3 = type(12649);
+            } catch (tmp32) {
+              c3 = 3;
+              throw tmp32;
             }
-          } catch (tmp33) {
-            c3 = tmp;
-            throw tmp33;
           }
-        }
+        });
+        return obj(...arguments);
       };
       if (null != projectId) {
-        const result = projectId(12649).beginExternalAuthorization(ref.current, type.type);
+        let tmp = projectId;
+        obj = projectId(dependencyMap[4]);
+        const tmp3 = ref;
+        const result = obj.beginExternalAuthorization(ref.current, type.type);
         if (null != result) {
           tmp3.current = result;
           dependencyMap(result);
-          (function startAuthorization() {
-            const self = this;
-            const apply = closure_1.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          })().catch(() => callback(type.type));
-          const promise = (function startAuthorization() {
-            const self = this;
-            const apply = closure_1.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          })();
+          const promise = startAuthorization();
+          promise.catch(() => callback(type.type));
         }
-        let obj = projectId(12649);
-        tmp3 = ref;
       }
     }, items)
   };
+  return obj;
 };

@@ -8,23 +8,26 @@
 import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7048 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTieredTenureBadgeForUser.tsx");
 
 export const useTieredTenureBadgeForUser = function useTieredTenureBadgeForUser(id) {
   _require = id;
+  let obj = require("get initialized");
   const items = [UserProfileStore, UserStore];
-  return require("initialize").useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
+    let premiumSince;
+    let tieredTenureBadge;
     let userProfile = null;
-    if (null != tieredTenureBadge) {
+    if (null != closure_0) {
       userProfile = UserProfileStore.getUserProfile(tmp);
     }
     if (userProfile != null) {
-      const premiumSince = userProfile.premiumSince;
+      premiumSince = userProfile.premiumSince;
     }
     if (null != userProfile) {
       if (null != premiumSince) {
@@ -32,7 +35,8 @@ export const useTieredTenureBadgeForUser = function useTieredTenureBadgeForUser(
           const badges = userProfile.badges;
           if (badges != null) {
             const item = badges.forEach((id) => {
-              tieredTenureBadge = tieredTenureBadge(dependencyMap[3]).getTieredTenureBadge(id.id);
+              const obj = id(closure_2_1[3]);
+              tieredTenureBadge = obj.getTieredTenureBadge(id.id);
             });
           }
         }
@@ -45,14 +49,15 @@ export const useTieredTenureBadgeForUser = function useTieredTenureBadgeForUser(
             id = currentUser.id;
           }
           let earnedTenureBadge = null;
-          if (tmp === id) {
+          if (closure_0 === id) {
             let result;
             if (currentUser != null) {
               result = currentUser.hasPaidTier2Subscription();
             }
             earnedTenureBadge = null;
             if (result) {
-              earnedTenureBadge = TieredTenureBadgeUtils.getEarnedTenureBadge(premiumSince);
+              const obj2 = TieredTenureBadgeUtils;
+              earnedTenureBadge = obj2.getEarnedTenureBadge(premiumSince);
             }
           }
           return earnedTenureBadge;

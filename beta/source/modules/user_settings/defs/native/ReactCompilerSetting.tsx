@@ -21,18 +21,7 @@ const obj = {
     return false;
   }
 };
+const createStaticResult = SettingBuilders.createStatic(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ReactCompilerSetting.tsx");
 
-export default SettingBuilders.createStatic({
-  useTitle() {
-    return "React Compiler";
-  },
-  parent: null,
-  IconComponent: WrenchIcon.WrenchIcon,
-  useTrailing() {
-    return "Enabled";
-  },
-  usePredicate() {
-    return false;
-  }
-});
+export default createStaticResult;

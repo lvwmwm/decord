@@ -5,24 +5,27 @@
 // Exports: FormatNumericToString
 
 // Module 13713 (FormatNumericToString)
-import _mod13697 from "module_13697" /* 13697 */;
+import UNICODE_EXTENSION_SEQUENCE_REGEX from "UNICODE_EXTENSION_SEQUENCE_REGEX" /* 13697 */;
 import TEN from "TEN" /* 13699 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const FormatNumericToString = function FormatNumericToString(roundingType, timesResult) {
+  let ZERO;
+  let formattedString;
+  let roundedNumber;
+  let str2;
+  let tmp5;
   if (timesResult.isZero()) {
+    let ToRawPrecisionResult;
     if (timesResult.isNegative()) {
-      let ZERO = TEN.ZERO;
-      let str2 = "negative";
-      let tmp5Result = dependencyMap;
-      let tmp5 = require;
+      ZERO = TEN.ZERO;
+      str2 = "negative";
+      tmp5 = require;
     }
     roundingType = roundingType.roundingType;
     const result = tmp5(13714).GetUnsignedRoundingMode(roundingType.roundingMode, tmp9);
     if ("significantDigits" === roundingType) {
-      let ToRawPrecisionResult = tmp5(13715).ToRawPrecision(ZERO, roundingType.minimumSignificantDigits, roundingType.maximumSignificantDigits, result);
+      ToRawPrecisionResult = tmp5(13715).ToRawPrecision(ZERO, roundingType.minimumSignificantDigits, roundingType.maximumSignificantDigits, result);
     } else if ("fractionDigits" === roundingType) {
       ToRawPrecisionResult = tmp5(13716).ToRawFixed(ZERO, roundingType.minimumFractionDigits, roundingType.maximumFractionDigits, roundingType.roundingIncrement, result);
     } else {
@@ -59,29 +62,29 @@ export const FormatNumericToString = function FormatNumericToString(roundingType
     if (integerDigitsCount < minimumIntegerDigits) {
       sum = tmp5(13697).repeat("0", minimumIntegerDigits - integerDigitsCount) + substr;
     }
-    if ("negative" !== str2) {
-      const obj = { roundedNumber, formattedString: sum };
-      return obj;
-    } else if (roundedNumber.isZero()) {
-      tmp5Result = tmp5(13699);
-      let NEGATIVE_ZERO = tmp5Result.NEGATIVE_ZERO;
-    } else {
-      NEGATIVE_ZERO = roundedNumber.negated();
+    let tmp22 = roundedNumber;
+    if ("negative" === str2) {
+      let NEGATIVE_ZERO;
+      if (roundedNumber.isZero()) {
+        NEGATIVE_ZERO = tmp5(13699).NEGATIVE_ZERO;
+      } else {
+        NEGATIVE_ZERO = roundedNumber.negated();
+      }
+      tmp22 = NEGATIVE_ZERO;
     }
+    return { roundedNumber: tmp22, formattedString: sum };
   }
-  _mod13697.invariant(timesResult.isFinite(), "NumberFormatDigitInternalSlots value is not finite");
+  UNICODE_EXTENSION_SEQUENCE_REGEX.invariant(timesResult.isFinite(), "NumberFormatDigitInternalSlots value is not finite");
   let str = "positive";
   if (timesResult.lessThan(0)) {
     str = "negative";
   }
   ZERO = timesResult;
   str2 = str;
-  tmp5Result = tmp2;
   tmp5 = tmp;
   if ("negative" === str) {
     ZERO = timesResult.negated();
     str2 = str;
-    tmp5Result = tmp2;
     tmp5 = tmp;
   }
 };

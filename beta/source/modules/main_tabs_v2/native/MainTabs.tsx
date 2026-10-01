@@ -4,33 +4,40 @@
 // Dependencies: [19, 17, 21, 4836, 4688, 7299, 1613, 4540, 5437, 15628, 2]
 
 // Module 15627 (MainTabs)
+import react_native from "react-native" /* 17 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import native from "native" /* 4540 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4688 */;
 import ThemedGradientDefault from "ThemedGradient" /* 5437 */;
 import useActiveTheme from "useActiveTheme" /* 7299 */;
 import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 15628 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+let closure_4;
+let hasOwnProperty;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { flex: 1 } });
-const size = fn(2);
+const memoResult = react.memo(function MainTabs() {
+  let ThemeContextProvider;
+  let items;
+  let items1;
+  let obj3;
+  const tmp = useColorThemeBackgroundDefault();
+  const obj = useActiveTheme;
+  const isCustomThemeActive = obj.useIsCustomThemeActive();
+  const tmp3 = closure_6();
+  const rect = useSafeAreaInsetsDefault();
+  const obj2 = { style: items, children: hasOwnProperty(ThemeContextProvider, obj3) };
+  items = [tmp3.container, { marginLeft: rect.left, marginRight: rect.right }];
+  obj3 = { gradient: tmp, children: items1 };
+  ThemeContextProvider = native.ThemeContextProvider;
+  items1 = [React3(ThemedGradientDefault, { absolute: true, mix: isCustomThemeActive }), React3(MainTabsNavigatorPanelDefault, {})];
+  return React3(View, obj2);
+});
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/MainTabs.tsx");
 
-export default noop.memo(function MainTabs() {
-  const tmp = useColorThemeBackgroundDefault();
-  const isCustomThemeActive = useActiveTheme.useIsCustomThemeActive();
-  const rect = useSafeAreaInsetsDefault();
-  const obj2 = { style: null, children: null };
-  const items = [closure_6().container, { marginLeft: rect.left, marginRight: rect.right }];
-  obj2.style = items;
-  const obj3 = { gradient: tmp, children: null };
-  const items1 = [React4(ThemedGradientDefault, { absolute: true, mix: isCustomThemeActive }), React4(MainTabsNavigatorPanelDefault, {})];
-  obj3.children = items1;
-  obj2.children = hasOwnProperty(native.ThemeContextProvider, obj3);
-  return React4(View, obj2);
-});
+export default memoResult;

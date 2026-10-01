@@ -4,26 +4,34 @@
 // Dependencies: [19, 1074, 21, 14401, 14402, 8048, 576, 1115, 2487, 11006, 5403, 14405, 2]
 
 // Module 14400 (FamilyCenterSetting)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
+import GroupIcon from "GroupIcon" /* 5403 */;
 import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 14401 */;
 import useParentalConsentWarning from "useParentalConsentWarning" /* 14402 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+
+const UserSettingsSections = Constants.UserSettingsSections;
+const jsx = Fragment.jsx;
+let obj = {
   useTitle() {
-    const intl = util.intl;
+    const intl = intl2.intl;
     return intl.string(_modDef2487.RZqaJn);
   },
   parent: null,
-  IconComponent: fn(5403).GroupIcon,
+  IconComponent: GroupIcon.GroupIcon,
   useTrailing: function useFamilyCenterTrailing() {
-    const isParentalConsentBannerActive = useIsParentalConsentBannerActive.useIsParentalConsentBannerActive();
-    const parentalConsentWarning = useParentalConsentWarning.useParentalConsentWarning();
+    const obj = useIsParentalConsentBannerActive;
+    const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
+    const obj2 = useParentalConsentWarning;
+    const parentalConsentWarning = obj2.useParentalConsentWarning();
     let daysRemaining;
     if (parentalConsentWarning != null) {
       daysRemaining = parentalConsentWarning.daysRemaining;
@@ -37,23 +45,22 @@ const route = SettingBuilders.createRoute({
       if (null != daysRemaining) {
         tmp6 = null;
         if (daysRemaining >= 0) {
-          const obj3 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null };
+          const WarningIcon = tmp(8048).WarningIcon;
           const intl = tmp(1115).intl;
-          obj3.accessibilityLabel = intl.string(_modDef2487.wucWfE);
-          tmp6 = jsx(tmp(8048).WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
+          tmp6 = <WarningIcon size="sm" color={nativeDefault.colors.ICON_FEEDBACK_WARNING} accessible accessibilityLabel={intl.string(_modDef2487.wucWfE)} />;
         }
       }
     }
     return tmp6;
   },
   screen: {
-    route: fn(1074).UserSettingsSections.FAMILY_CENTER,
+    route: UserSettingsSections.FAMILY_CENTER,
     getComponent() {
       return require("UserSettingsFamilyCenter").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterSetting.tsx");
 
 export default route;

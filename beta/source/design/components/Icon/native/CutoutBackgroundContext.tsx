@@ -5,28 +5,35 @@
 // Exports: CutoutBackgroundProvider, useCutoutBackgroundColor
 
 // Module 8277 (CutoutBackgroundContext)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import _modDef672 from "module_672" /* 672 */;
-import shared_colors from "shared/colors" /* 8278 */;
-import noop from "module_19" /* 19 */;
+import useToken from "useToken" /* 4531 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-let context = noop.createContext(undefined);
-const size = fn(2);
+let tmp3;
+let tmp6;
+const _modDef672 = tmp3(672);
+const colors = tmp6(8278);
+const jsx = Fragment.jsx;
+let context = react.createContext(undefined);
 const result = size.fileFinishedImporting("design/components/Icon/native/CutoutBackgroundContext.tsx");
 
 export const useCutoutBackgroundColor = function useCutoutBackgroundColor() {
-  return noop.useContext(closure_5);
+  return react.useContext(closure_5);
 };
-export const CutoutBackgroundProvider = function CutoutBackgroundProvider(children) {
-  const backgroundColor = children.backgroundColor;
-  const context = noop.useContext(closure_5);
+export const CutoutBackgroundProvider = function CutoutBackgroundProvider(backgroundColor) {
+  let tmp5;
+  let value;
+  backgroundColor = backgroundColor.backgroundColor;
+  const children = backgroundColor.children;
+  const context = react.useContext(closure_5);
   const internal = nativeDefault.internal;
   if (internal.isSemanticColor(backgroundColor)) {
-    const tmp5 = backgroundColor;
+    tmp5 = backgroundColor;
   }
   let token = null;
+  const obj = useToken;
   if (null !== backgroundColor) {
     token = obj.useToken(tmp5);
     if (typeof backgroundColor === "string") {
@@ -35,15 +42,15 @@ export const CutoutBackgroundProvider = function CutoutBackgroundProvider(childr
   }
   if (null != token) {
     value = token;
+    const obj2 = _modDef672(token);
     if (1 !== obj2.alpha()) {
       if (null != context) {
-        value = shared_colors.flattenColorOverOpaqueBackground(token, context);
-        const tmp6Result = shared_colors;
+        const tmp6Result = colors;
+        value = tmp6Result.flattenColorOverOpaqueBackground(token, context);
       }
     }
-    obj2 = _modDef672(token);
   } else if (undefined === token) {
     value = context;
   }
-  return <closure_5.Provider value={value}>{arg0.children}</closure_5.Provider>;
+  return <tmp.Provider value={value}>{children}</tmp.Provider>;
 };

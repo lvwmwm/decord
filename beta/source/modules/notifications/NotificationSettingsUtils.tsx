@@ -7,34 +7,39 @@
 // Module 14011 (notifications/NotificationSettingsUtils)
 import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 14012 */;
 import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14013 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14005 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, set;
 
-require = fn;
+let closure_4;
+let hasOwnProperty;
 function getNamedExperiment(experiment) {
   const tmp = NotificationSettingsExperiments.knownExperimentConfigs[experiment];
   if (tmp.definition.name !== experiment) {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
     const error = new Error("Experiment called " + tmp.definition.name + " assigned to name " + experiment);
     throw error;
   } else {
     return tmp;
   }
 }
-const NotificationSettingsConstants = fn(14005);
 ({ NOTIF_SETTING_MAPPING: closure_4, NOTIF_SETTINGS: hasOwnProperty } = NotificationSettingsConstants);
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/notifications/NotificationSettingsUtils.tsx");
 
 export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSettingsAndMappings() {
   const settings = [];
   const mappings = [];
-  const result = DeclarativeNotificationSettingsRedesignExperiment.isDeclarativeNotificationSettingsRedesignEnabled("getAssignedNotifSettingsAndMappings");
-  const set = new Set();
-  const iter = dependencyMap[Symbol.iterator]();
+  const obj = DeclarativeNotificationSettingsRedesignExperiment;
+  const result = obj.isDeclarativeNotificationSettingsRedesignEnabled("getAssignedNotifSettingsAndMappings");
+  set = new Set();
+  const iter = hasOwnProperty[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp4 = nextResult;
@@ -50,7 +55,8 @@ export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSett
     }
     continue;
   }
-  const entries = Object.entries(React4);
+  const entries = Object.entries(React3);
+  const tmp14 = entries[Symbol.iterator]();
   while (tmp14 !== undefined) {
     let tmp17 = _slicedToArray(tmp15, 2);
     let tmp18 = tmp17[1];
@@ -59,9 +65,7 @@ export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSett
     for (const item10071 of tmp18) {
       let tmp22 = item10071;
       if (set.has(item10071)) {
-        let obj2 = { notifType: null, notifSetting: null };
-        obj2.notifType = parsed;
-        obj2.notifSetting = tmp22;
+        let obj2 = { notifType: parsed, notifSetting: tmp22 };
         let arr2 = mappings.push(obj2);
         obj4.return();
         break;
@@ -73,58 +77,66 @@ export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSett
   return { settings, mappings };
 };
 export const useIsDeclarativeSettingsUIAvailable = function useIsDeclarativeSettingsUIAvailable(AndroidMessageNotificationsSetting) {
-  return DeclarativeNotificationSettingsRedesignExperiment.useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + AndroidMessageNotificationsSetting);
+  const obj = DeclarativeNotificationSettingsRedesignExperiment;
+  return obj.useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + AndroidMessageNotificationsSetting);
 };
 export const useNotifCategoryVisibility = function useNotifCategoryVisibility(CATEGORY_OTHER) {
-  return DeclarativeNotificationSettingsRedesignExperiment.useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + CATEGORY_OTHER);
+  const obj = DeclarativeNotificationSettingsRedesignExperiment;
+  return obj.useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + CATEGORY_OTHER);
 };
 export const useNotifSettingVisibility = function useNotifSettingVisibility(GAMING_DEFAULT) {
   _require = GAMING_DEFAULT;
   const items = [GAMING_DEFAULT];
-  const memo = noop.useMemo(() => (function getExperimentAndConfigBySettingId(arg0) {
-    const iter = dependencyMap[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp3 = nextResult;
-      if (nextResult.id === arg0) {
-        let redesignState = tmp3.redesignState;
-        if (null != tmp3.experiment) {
-          let obj2 = { redesignState, experiment: null, variations: null };
-          obj2.experiment = closure_1_6(nextResult.experiment);
-          obj2.variations = nextResult.variations;
-          iter.return();
-          return obj2;
-        } else if (null != redesignState) {
-          let obj = { redesignState: null };
-          obj.redesignState = redesignState;
-          iter.return();
-          return obj;
+  const memo = react.useMemo(() => {
+    function getExperimentAndConfigBySettingId(arg0) {
+      const iter = closure_1_5[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp3 = nextResult;
+        if (nextResult.id === arg0) {
+          let redesignState = tmp3.redesignState;
+          if (null != tmp3.experiment) {
+            let obj2 = { redesignState, experiment: closure_1_6(nextResult.experiment), variations: nextResult.variations };
+            iter.return();
+            return obj2;
+          } else if (null != redesignState) {
+            let obj = { redesignState };
+            iter.return();
+            return obj;
+          }
         }
+        continue;
       }
-      continue;
+      return {};
     }
-    return {};
-  })(closure_0), items);
+    return getExperimentAndConfigBySettingId(GAMING_DEFAULT);
+  }, items);
   const experiment = memo.experiment;
   const variations = memo.variations;
-  const items1 = [require("ApexExperiment").ApexExperimentStore];
+  let redesignState = memo.redesignState;
+  const useStateFromStores = require("get initialized").useStateFromStores;
+  const items1 = [];
+  require("get initialized");
+  items1[0] = require("ApexExperiment").ApexExperimentStore;
   const items2 = [experiment];
-  const stateFromStores = require("initialize").useStateFromStores(items1, () => {
+  const stateFromStores = useStateFromStores(items1, () => {
     let config;
+    const obj = experiment;
     if (experiment != null) {
-      config = experiment.getConfig({ location: "useNotifSettingVisibility" });
+      config = obj.getConfig({ location: "useNotifSettingVisibility" });
     }
     return config;
   }, items2);
-  let obj = require("initialize");
-  let isDeclarativeNotificationSettingsRedesignEnabled = require("DeclarativeNotificationSettingsRedesignExperiment").useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + "useNotifSettingVisibility");
+  let obj = require("DeclarativeNotificationSettingsRedesignExperiment");
+  let isDeclarativeNotificationSettingsRedesignEnabled = obj.useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + "useNotifSettingVisibility");
   if (isDeclarativeNotificationSettingsRedesignEnabled) {
-    let tmp4 = false !== memo.redesignState;
-    if (tmp4) {
-      tmp4 = null == stateFromStores || null == variations || variations.includes(stateFromStores.variation);
-      let tmp6 = null == stateFromStores || null == variations || variations.includes(stateFromStores.variation);
+    let tmp5 = false !== redesignState;
+    if (tmp5) {
+      let tmp6 = null;
+      let tmp7 = null == stateFromStores || null == variations || variations.includes(stateFromStores.variation);
+      tmp5 = tmp7;
     }
-    isDeclarativeNotificationSettingsRedesignEnabled = tmp4;
+    isDeclarativeNotificationSettingsRedesignEnabled = tmp5;
   }
   return isDeclarativeNotificationSettingsRedesignEnabled;
 };

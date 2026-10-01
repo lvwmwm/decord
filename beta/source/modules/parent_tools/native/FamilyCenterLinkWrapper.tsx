@@ -5,37 +5,34 @@
 // Exports: default
 
 // Module 14455 (FamilyCenterLinkWrapper)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { container: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: 14, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12 } };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
+const jsx = Fragment.jsx;
+let obj = { container: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: 14, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12 } };
+({ display: "flex", flexDirection: "row", alignItems: "center", paddingTop: 14, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12 });
+let closure_4 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkWrapper.tsx");
 
 export default function FamilyCenterLinkRowWrapper(userId) {
   userId = userId.userId;
   let analyticsLocations;
+  const children = userId.children;
+  const tmp = closure_4();
   analyticsLocations = analyticsLocations(6583)().analyticsLocations;
   let tmp3 = null;
   if (undefined !== userId) {
-    const obj = {
-      style: tmp.container,
-      onPress() {
-          showUserProfileActionSheetDefault({ userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations });
-        },
-      children: userId.children
-    };
     tmp3 = jsx(userId(5435).PressableOpacity, {
       style: tmp.container,
       onPress() {
-          showUserProfileActionSheetDefault({ userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations });
+          const obj = { userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations };
+          showUserProfileActionSheetDefault(obj);
         },
-      children: userId.children
+      children
     });
   }
   return tmp3;

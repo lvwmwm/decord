@@ -5,16 +5,18 @@
 // Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus, default
 
 // Module 16939 (useCanSetVoiceChannelStatus)
-import PermissionStore from "PermissionStore" /* 4469 */;
+import Constants from "Constants" /* 1085 */;
+import PermissionStore_mod from "PermissionStore" /* 4469 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const Permissions = fn(1085).Permissions;
+let PermissionStore = PermissionStore_mod;
+const Permissions = Constants.Permissions;
 let items = [, , ];
 ({ SET_VOICE_CHANNEL_STATUS: arr[0], CONNECT: arr[1], VIEW_CHANNEL: arr[2] } = Permissions);
 let items1 = [Permissions.SET_VOICE_CHANNEL_STATUS];
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/calls/useCanSetVoiceChannelStatus.tsx");
 
 export default function useCanSetVoiceChannelStatus(arg0) {
@@ -24,33 +26,37 @@ export default function useCanSetVoiceChannelStatus(arg0) {
     flag = false;
   }
   dependencyMap = arg2;
+  let obj = require("get initialized");
   items = [PermissionStore];
   items1 = [arg0, flag, arg2];
-  return require("initialize").useStateFromStores(items, () => {
-    closure_1 = PermissionStore;
-    return flag ? items1 : items.every((permission) => {
-      if (null == dependencyMap) {
-        let canResult = closure_1.can(permission, context);
+  return obj.useStateFromStores(items, () => {
+    let obj = flag ? items1 : items;
+    return obj.every((permission) => {
+      let canResult;
+      if (null == closure_2) {
+        canResult = closure_1.can(permission, context);
       } else {
         const obj2 = { permission, user: tmp, context };
-        canResult = flag(dependencyMap[2]).can(obj2);
-        const obj = flag(dependencyMap[2]);
+        const obj = PermissionStore(closure_2_2[2]);
+        canResult = obj.can(obj2);
       }
       return canResult;
     });
   }, items1);
 };
 export const _canSetVoiceChannelStatus = function _canSetVoiceChannelStatus(arg0, arg1, arg2, arg3) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  closure_2 = arg3;
-  return arg2 ? items1 : items.every((permission) => {
-    if (null == dependencyMap) {
-      let canResult = closure_1.can(permission, context);
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg3;
+  const obj = arg2 ? items1 : items;
+  return obj.every((permission) => {
+    let canResult;
+    if (null == closure_2) {
+      canResult = closure_1.can(permission, context);
     } else {
       const obj2 = { permission, user: tmp, context };
-      canResult = flag(dependencyMap[2]).can(obj2);
-      const obj = flag(dependencyMap[2]);
+      const obj = PermissionStore(closure_2_2[2]);
+      canResult = obj.can(obj2);
     }
     return canResult;
   });
@@ -60,16 +66,18 @@ export const canSetVoiceChannelStatus = function canSetVoiceChannelStatus(arg0) 
   if (arg1 === undefined) {
     flag = false;
   }
-  closure_0 = arg0;
-  closure_1 = PermissionStore;
-  closure_2 = arg2;
-  return flag ? items1 : items.every((permission) => {
-    if (null == dependencyMap) {
-      let canResult = closure_1.can(permission, context);
+  let closure_0 = arg0;
+  let closure_1 = PermissionStore;
+  let closure_2 = arg2;
+  const obj = flag ? items1 : items;
+  return obj.every((permission) => {
+    let canResult;
+    if (null == closure_2) {
+      canResult = closure_1.can(permission, context);
     } else {
       const obj2 = { permission, user: tmp, context };
-      canResult = flag(dependencyMap[2]).can(obj2);
-      const obj = flag(dependencyMap[2]);
+      const obj = PermissionStore(closure_2_2[2]);
+      canResult = obj.can(obj2);
     }
     return canResult;
   });

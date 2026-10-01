@@ -4,22 +4,29 @@
 // Dependencies: [19, 5018, 21, 4847, 10374, 4836, 576, 16479, 15980, 14864, 11, 5288, 16807, 5435, 16478, 16808, 9568, 7304, 4989, 2]
 
 // Module 16815 (shared/DMChannel)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import transitionToChannel from "transitionToChannel" /* 4847 */;
+import ReadStateConstants from "ReadStateConstants" /* 5018 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10374 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const UnreadSetting = fn(5018).UnreadSetting;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { pressable: { flex: 1 }, pressableUnderlayColor: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE } };
+let obj2;
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+const jsx = Fragment.jsx;
+let obj = { pressable: { flex: 1 }, pressableUnderlayColor: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE };
 let closure_6 = createStyles.createStyles(obj);
-let obj3 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/launchpad/native/shared/DMChannel.tsx");
-
-export default noop.memo(function DMChannel(navigationReplace) {
+const memoResult = react.memo(function DMChannel(navigationReplace) {
+  let channel;
+  let items1;
+  let items2;
+  let mentionCount;
+  let muted;
+  let tmp11Result;
+  let unread;
   ({ channel, muted } = navigationReplace);
   if (muted === undefined) {
     muted = false;
@@ -30,13 +37,14 @@ export default noop.memo(function DMChannel(navigationReplace) {
   }
   const tmp = closure_6();
   const tmp4 = flag(16479)();
-  const baseChannelUnreadBadgeState = channel(15980).useBaseChannelUnreadBadgeState(channel, muted);
+  let obj = channel(15980);
+  const baseChannelUnreadBadgeState = obj.useBaseChannelUnreadBadgeState(channel, muted);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
   const tmp7 = flag(14864)(channel, { unread });
   let extractTimestampResult;
   if (null != tmp7) {
-    extractTimestampResult = tmp2(11).extractTimestamp(tmp7.id);
-    const tmp2Result = tmp2(11);
+    const tmp2Result = flag(11);
+    extractTimestampResult = tmp2Result.extractTimestamp(tmp7.id);
   }
   let str = "text-muted";
   if (unread) {
@@ -45,32 +53,35 @@ export default noop.memo(function DMChannel(navigationReplace) {
       str = "text-default";
     }
   }
-  const obj = channel(15980);
-  const fontScale = channel(5288).useFontScale();
   const tmp5Result = channel(5288);
-  const obj2 = { style: null, underlayColor: tmp.pressableUnderlayColor.backgroundColor };
+  const fontScale = tmp5Result.useFontScale();
   const items = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
-  obj2.style = items;
-  const obj3 = { onPress: null, onLongPress: null };
-  const items1 = [channel.id, flag];
-  obj3.onPress = noop.useCallback(() => {
-    transitionToChannel.transitionToChannel(channel.id, { navigationReplace: flag });
-  }, items1);
-  const items2 = [channel.id];
-  obj3.onLongPress = noop.useCallback(() => openChannelLongPressActionSheet.openChannelLongPressActionSheet(channel.id), items2);
-  const merged = Object.assign(obj3);
-  const obj4 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount, unreadBadge: null, subtitle: null, latestMessageTimestamp: null, channelName: null, fontScale: null };
   const tmp2Result3 = flag(16807);
-  obj4.unreadBadge = jsx(flag(16808), { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted });
-  let tmp11Result = null != tmp7;
+  const obj3 = {
+    onPress: react.useCallback(() => {
+      const obj = transitionToChannel;
+      const obj2 = { navigationReplace: flag };
+      obj.transitionToChannel(channel.id, obj2);
+    }, items1),
+    onLongPress: react.useCallback(() => {
+      const obj = openChannelLongPressActionSheet;
+      return obj.openChannelLongPressActionSheet(channel.id);
+    }, items2)
+  };
+  items1 = [channel.id, flag];
+  const PressableHighlight = tmp5(5435).PressableHighlight;
+  items2 = [channel.id];
+  const merged = Object.assign(obj3);
+  const obj4 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount, unreadBadge: null, subtitle: tmp11Result, latestMessageTimestamp: extractTimestampResult, channelName: flag(4989)(channel), fontScale };
+  tmp11Result = null != tmp7;
+  const tmp2Result4 = flag(16478);
   if (tmp11Result) {
-    const obj6 = { channel, message: tmp7, color: str, muted, layout: tmp5(7304).ChannelListLayoutTypes.COMPACT };
-    tmp11Result = tmp11(tmp5(9568).ChannelRowPreview, obj6);
+    const obj6 = { channel, message: tmp7, color: str, muted, layout: channel(7304).ChannelListLayoutTypes.COMPACT };
+    const ChannelRowPreview = tmp5(9568).ChannelRowPreview;
+    tmp11Result = tmp11(ChannelRowPreview, obj6);
   }
-  obj4.subtitle = tmp11Result;
-  obj4.latestMessageTimestamp = extractTimestampResult;
-  obj4.channelName = flag(4989)(channel);
-  obj4.fontScale = fontScale;
-  obj2.children = flag(16478)(obj4);
-  return tmp2Result3(jsx(channel(5435).PressableHighlight, { style: null, underlayColor: tmp.pressableUnderlayColor.backgroundColor }));
+  return tmp2Result3(<PressableHighlight style={items} underlayColor={tmp.pressableUnderlayColor.backgroundColor}>{tmp2Result4(obj4)}</PressableHighlight>);
 });
+const result = size.fileFinishedImporting("modules/launchpad/native/shared/DMChannel.tsx");
+
+export default memoResult;

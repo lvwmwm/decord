@@ -6,24 +6,26 @@
 
 // Module 16703 (useMutualGuilds)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/message_request/hooks/useMutualGuilds.tsx");
 
 export const useMutualGuildsForMessageRequests = function useMutualGuildsForMessageRequests(userId) {
+  let stateFromStoresArray;
   _require = userId;
+  let obj = require("get initialized");
   const items = [UserStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => UserStore.getUser(closure_0));
-  let obj = require("initialize");
+  const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(userId));
   const items1 = [UserProfileStore];
-  stateFromStoresArray = require("initialize").useStateFromStoresArray(items1, () => {
-    const mutualGuilds = UserProfileStore.getMutualGuilds(closure_0);
+  const obj2 = require("get initialized");
+  stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => {
+    const mutualGuilds = UserProfileStore.getMutualGuilds(userId);
     let mapped;
     if (mutualGuilds != null) {
       mapped = mutualGuilds.map((guild) => guild.guild);
@@ -34,16 +36,11 @@ export const useMutualGuildsForMessageRequests = function useMutualGuildsForMess
     return mapped;
   });
   const items2 = [stateFromStoresArray, stateFromStores, userId];
-  const effect = noop.useEffect(() => {
-    let tmp = 0 === stateFromStoresArray.length;
+  const effect = react.useEffect(() => {
+    const tmp = 0 === stateFromStoresArray.length && null != stateFromStores && null == UserProfileStore.getMutualGuilds(userId);
     if (tmp) {
-      tmp = null != stateFromStores;
-    }
-    if (tmp) {
-      tmp = null == UserProfileStore.getMutualGuilds(closure_0);
-    }
-    if (tmp) {
-      DispatcherDefault.wait(() => stateFromStores(stateFromStoresArray[5])(userId, undefined, { withMutualGuilds: true }));
+      const obj = DispatcherDefault;
+      obj.wait(() => stateFromStores(stateFromStoresArray[5])(userId, undefined, { withMutualGuilds: true }));
     }
   }, items2);
   return stateFromStoresArray;

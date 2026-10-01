@@ -4,44 +4,72 @@
 // Exports: tryActivateLayoutTransition
 
 // Module 1693
-import _mod1642 from "module_1642" /* 1642 */;
-import _mod1663 from "module_1663" /* 1663 */;
+import react_native from "react-native" /* 1642 */;
+import LayoutAnimationType from "LayoutAnimationType" /* 1663 */;
 import TransitionType from "TransitionType" /* 1694 */;
 import maybeModifyStyleForKeyframe from "maybeModifyStyleForKeyframe" /* 1707 */;
-import findDescendantWithExitingAnimation from "findDescendantWithExitingAnimation" /* 1725 */;
+import _mod1724 from "module_1724" /* 1724 */;
+import configureWebLayoutAnimations from "configureWebLayoutAnimations" /* 1725 */;
+import TransitionGenerator from "TransitionGenerator" /* 1726 */;
 
-require = arg1;
-const dependencyMap = arg6;
+let set, size;
+
 function startWebLayoutAnimation(props, _componentDOMRef, ENTERING, easingY) {
-  if (ENTERING === _mod1663.LayoutAnimationType.ENTERING) {
-    let entering = props.entering;
-  } else if (ENTERING === tmp(1663).LayoutAnimationType.EXITING) {
+  let entering;
+  function maybeReportOverwrittenProperties(style, style2) {
+    set = new Set();
+    const matchAllResult = style.matchAll(/([a-zA-Z-]+)(?=:)/g);
+    for (const item10014 of matchAllResult) {
+      let addResult = set.add(item10014[1]);
+      continue;
+    }
+    const arr = Array.from(style2);
+    const found = arr.filter((item) => set.has(item));
+    if (0 !== found.length) {
+      const logger = react_native.logger;
+      let str = "Properties";
+      const warn = logger.warn;
+      if (1 === found.length) {
+        str = "Property";
+      }
+      const _HermesInternal = HermesInternal;
+      warn("" + str + " [" + found.join(", ") + "] may be overwritten by a layout animation. Please wrap your component with an animated view and apply the layout animation on the wrapper.");
+    }
+  }
+  if (ENTERING === LayoutAnimationType.LayoutAnimationType.ENTERING) {
+    entering = props.entering;
+  } else if (ENTERING === LayoutAnimationType.LayoutAnimationType.EXITING) {
     entering = props.exiting;
   } else {
     entering = null;
-    if (ENTERING === tmp(1663).LayoutAnimationType.LAYOUT) {
+    if (ENTERING === LayoutAnimationType.LayoutAnimationType.LAYOUT) {
       entering = props.layout;
     }
   }
   let processedConfig = null;
   if (entering) {
+    let presetName;
+    const LAYOUT = tmp(1663).LayoutAnimationType.LAYOUT;
     const tmp5 = entering instanceof tmp(1708).Keyframe;
+    const initialValues = entering.initialValues;
     if (tmp5) {
-      let presetName = tmp(1726).createCustomKeyFrameAnimation(entering.definitions);
-      const tmpResult = tmp(1726);
+      const tmpResult = TransitionGenerator;
+      presetName = tmpResult.createCustomKeyFrameAnimation(entering.definitions);
     } else if (typeof entering === "function") {
       presetName = entering.presetName;
     } else {
       presetName = entering.constructor.presetName;
     }
     let animationWithInitialValues = presetName;
-    if (undefined !== entering.initialValues) {
-      animationWithInitialValues = tmp(1726).createAnimationWithInitialValues(presetName, entering.initialValues);
-      const tmpResult8 = tmp(1726);
+    if (undefined !== initialValues) {
+      const tmpResult8 = TransitionGenerator;
+      animationWithInitialValues = tmpResult8.createAnimationWithInitialValues(presetName, entering.initialValues);
     }
-    let flag = !(animationWithInitialValues in tmp(1694).Animations) && !(ENTERING === tmp(1663).LayoutAnimationType.LAYOUT || tmp5 || undefined !== entering.initialValues);
+    const tmp8 = ENTERING === LAYOUT || tmp5 || undefined !== initialValues;
+    let flag = !(animationWithInitialValues in tmp(1694).Animations) && !tmp8;
     if (flag) {
       let logger = tmp(1642).logger;
+      let str = "Couldn't load entering/exiting animation. Current version supports only predefined animations with modifiers: duration, delay, easing, randomizeDelay, withCallback, reducedMotion.";
       logger.warn("Couldn't load entering/exiting animation. Current version supports only predefined animations with modifiers: duration, delay, easing, randomizeDelay, withCallback, reducedMotion.");
       flag = true;
     }
@@ -59,62 +87,49 @@ function startWebLayoutAnimation(props, _componentDOMRef, ENTERING, easingY) {
           logger2.warn("Neither '100' nor 'to' was specified in Keyframe definition. This may result in wrong final position of your component. One possible solution is to duplicate last timestamp in definition as '100' (or 'to')");
         }
       }
-      processedConfig = tmp(1707).getProcessedConfig(animationWithInitialValues, ENTERING, entering);
-      const tmpResult9 = tmp(1707);
+      const tmpResult9 = maybeModifyStyleForKeyframe;
+      processedConfig = tmpResult9.getProcessedConfig(animationWithInitialValues, ENTERING, entering);
     }
-    const tmp8 = ENTERING === tmp(1663).LayoutAnimationType.LAYOUT || tmp5 || undefined !== entering.initialValues;
   }
-  const result = maybeModifyStyleForKeyframe.maybeModifyStyleForKeyframe(_componentDOMRef, props.entering);
+  const tmpResult10 = maybeModifyStyleForKeyframe;
+  const result = tmpResult10.maybeModifyStyleForKeyframe(_componentDOMRef, props.entering);
   let animationName;
   if (processedConfig != null) {
     animationName = processedConfig.animationName;
   }
   if (animationName in TransitionType.Animations) {
     let animationName1;
+    const Animations = tmp(1694).Animations;
     if (processedConfig != null) {
       animationName1 = processedConfig.animationName;
     }
-    (function maybeReportOverwrittenProperties(style, style2) {
-      const set = new Set();
-      for (const item10014 of matchAllResult) {
-        let addResult = set.add(item10014[1]);
-        continue;
-      }
-      const matchAllResult = style.matchAll(/([a-zA-Z-]+)(?=:)/g);
-      const found = Array.from(style2).filter((item) => set.has(item));
-      if (0 !== found.length) {
-        const logger = _mod1642.logger;
-        let str = "Properties";
-        if (1 === found.length) {
-          str = "Property";
-        }
-        const _HermesInternal = HermesInternal;
-        logger.warn("" + str + " [" + found.join(", ") + "] may be overwritten by a layout animation. Please wrap your component with an animated view and apply the layout animation on the wrapper.");
-      }
-    })(tmp(1694).Animations[animationName1].style, _componentDOMRef.style);
+    maybeReportOverwrittenProperties(Animations[animationName1].style, _componentDOMRef.style);
   }
   if (processedConfig) {
-    if (tmp(1663).LayoutAnimationType.ENTERING === ENTERING) {
-      tmp(1707).setElementAnimation(_componentDOMRef, processedConfig, true);
-      const tmpResult11 = tmp(1707);
-    } else if (tmp(1663).LayoutAnimationType.LAYOUT === ENTERING) {
+    if (LayoutAnimationType.LayoutAnimationType.ENTERING === ENTERING) {
+      const tmpResult11 = maybeModifyStyleForKeyframe;
+      tmpResult11.setElementAnimation(_componentDOMRef, processedConfig, true);
+    } else if (LayoutAnimationType.LayoutAnimationType.LAYOUT === ENTERING) {
       easingY.reversed = processedConfig.reversed;
-      const result1 = tmp(1707).handleLayoutTransition(_componentDOMRef, processedConfig, easingY);
-      const tmpResult12 = tmp(1707);
-    } else if (tmp(1663).LayoutAnimationType.EXITING === ENTERING) {
-      const result2 = tmp(1707).handleExitingAnimation(_componentDOMRef, processedConfig);
-      const tmpResult13 = tmp(1707);
+      const tmpResult12 = maybeModifyStyleForKeyframe;
+      const result1 = tmpResult12.handleLayoutTransition(_componentDOMRef, processedConfig, easingY);
+    } else if (LayoutAnimationType.LayoutAnimationType.EXITING === ENTERING) {
+      const tmpResult13 = maybeModifyStyleForKeyframe;
+      const result2 = tmpResult13.handleExitingAnimation(_componentDOMRef, processedConfig);
     }
   } else {
-    const elementVisible = tmp(1724).makeElementVisible(_componentDOMRef, 0);
-    const tmpResult14 = tmp(1724);
+    const tmpResult14 = _mod1724;
+    const elementVisible = tmpResult14.makeElementVisible(_componentDOMRef, 0);
   }
 }
 
 export { startWebLayoutAnimation };
 export const tryActivateLayoutTransition = function tryActivateLayoutTransition(props, _componentDOMRef, arg2) {
+  let str;
+  let str2;
   if (props.layout) {
-    const size = _componentDOMRef.getBoundingClientRect();
+    size = _componentDOMRef.getBoundingClientRect();
+    const obj = configureWebLayoutAnimations;
     if (!obj.areDOMRectsEqual(size, arg2)) {
       const enteringV = props.layout.enteringV;
       let presetName;
@@ -126,29 +141,24 @@ export const tryActivateLayoutTransition = function tryActivateLayoutTransition(
       if (exitingV != null) {
         presetName1 = exitingV.presetName;
       }
-      const obj2 = { translateX: arg2.x - size.x + (arg2.width - size.width) / 2, translateY: arg2.y - size.y + (arg2.height - size.height) / 2, scaleX: arg2.width / size.width, scaleY: arg2.height / size.height, reversed: false, easingX: null, easingY: null, entering: null, exiting: null };
       const easingXV = props.layout.easingXV;
-      let str;
+      const obj2 = { translateX: arg2.x - size.x + (arg2.width - size.width) / 2, translateY: arg2.y - size.y + (arg2.height - size.height) / 2, scaleX: arg2.width / size.width, scaleY: arg2.height / size.height, reversed: false, easingX: str, easingY: str2, entering: presetName, exiting: presetName1 };
+      str = undefined;
       if (easingXV != null) {
         str = easingXV[tmp3(undefined, 1690).EasingNameSymbol];
       }
       if (str == null) {
         str = "ease";
       }
-      obj2.easingX = str;
       const easingYV = props.layout.easingYV;
-      let str2;
+      str2 = undefined;
       if (easingYV != null) {
         str2 = easingYV[tmp3(undefined, 1690).EasingNameSymbol];
       }
       if (str2 == null) {
         str2 = "ease";
       }
-      obj2.easingY = str2;
-      obj2.entering = presetName;
-      obj2.exiting = presetName1;
-      startWebLayoutAnimation(props, _componentDOMRef, tmp3(1663).LayoutAnimationType.LAYOUT, obj2);
+      startWebLayoutAnimation(props, _componentDOMRef, LayoutAnimationType.LayoutAnimationType.LAYOUT, obj2);
     }
-    obj = findDescendantWithExitingAnimation;
   }
 };

@@ -5,47 +5,58 @@
 // Exports: default
 
 // Module 11925 (ScheduledMessageDraftCoachmark)
-import util from "util" /* 1115 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import intl3 from "intl" /* 1115 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import useCoachmark from "useCoachmark" /* 10589 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function AttachedCoachmark(buttonRef) {
+  buttonRef = buttonRef.buttonRef;
   const merged = Object.assign(buttonRef, Object.assign({ buttonRef: 0 }));
-  const coachmark = useCoachmark.useCoachmark(buttonRef.buttonRef, merged);
+  const obj = useCoachmark;
+  const coachmark = obj.useCoachmark(buttonRef, merged);
   return null;
 }
-const Image = fn(17).Image;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const Image = react_native.Image;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ image: { width: 100, height: 80 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessageDraftCoachmark.tsx");
 
 export default function ScheduledMessageDraftCoachmark(onDismiss) {
+  let buttonRef;
+  let isVisible;
   onDismiss = onDismiss.onDismiss;
   ({ buttonRef, isVisible } = onDismiss);
   const tmp = closure_7();
-  closure_1 = tmp;
+  let closure_1 = tmp;
   const items = [onDismiss, tmp.image];
-  const memo = noop.useMemo(() => {
-    const obj = { title: null, description: null, position: "top", offsetY: 4, visible: true, onDismiss: null, renderImgComponent: null };
-    const intl = util.intl;
-    obj.title = intl.string(util.t.Pu7sCU);
-    const intl2 = util.intl;
-    obj.description = intl2.format(util.t.Juk17F, {});
-    obj.onDismiss = function onDismiss() {
-      return onDismiss(constants.USER_DISMISS);
+  const memo = react.useMemo(() => {
+    let intl;
+    let intl2;
+    const obj = {
+      title: intl.string(intl3.t.Pu7sCU),
+      description: intl2.format(intl3.t.Juk17F, {}),
+      position: "top",
+      offsetY: 4,
+      visible: true,
+      onDismiss() {
+        return onDismiss(constants.USER_DISMISS);
+      },
+      renderImgComponent() {
+        return <Image source={closure_1(dependencyMap[6])} style={closure_1_1.image} />;
+      }
     };
-    obj.renderImgComponent = function renderImgComponent() {
-      return <Image source={closure_1(dependencyMap[6])} style={closure_1_1.image} />;
-    };
+    intl = intl3.intl;
+    intl2 = intl3.intl;
     return obj;
   }, items);
   let tmp3 = null;
   if (isVisible) {
-    let obj = { buttonRef };
     const merged = Object.assign(memo);
     tmp3 = <AttachedCoachmark buttonRef={buttonRef} />;
   }

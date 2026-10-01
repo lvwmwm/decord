@@ -12,13 +12,16 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Text/useTypographyVariantRemap.native.tsx");
 
 export const useTypographyVariantRemap = function useTypographyVariantRemap(variant, arg1) {
-  let themeContext = ThemeContext.useThemeContext();
+  const obj = ThemeContext;
+  let themeContext = obj.useThemeContext();
   if (themeContext == null) {
     themeContext = [];
   }
   let enabledExperiments = themeContext.enabledExperiments;
+  const remapTypographyVariant = tmp(4843).remapTypographyVariant;
+  typographyVariantRemap;
   if (enabledExperiments == null) {
     enabledExperiments = [];
   }
-  return typographyVariantRemap.remapTypographyVariant(enabledExperiments, variant, arg1);
+  return remapTypographyVariant(enabledExperiments, variant, arg1);
 };

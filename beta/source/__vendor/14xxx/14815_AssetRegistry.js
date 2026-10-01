@@ -1,0 +1,10 @@
+// Module ID: 14815
+// Function ID: 14816
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 14815 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "86d4e70a86169368d49d086c67a043a3", name: "ThemeLightIcon", type: "png" });

@@ -6,11 +6,10 @@
 
 // Module 9083 (SegmentedControlState)
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5266 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 let closure_4 = { code: "function SegmentedControlStateNativeTsx1(index,dimensions){const{itemDimensions,itemCount}=this.__closure;itemDimensions.get()[index]=dimensions;itemDimensions.set([...itemDimensions.get()].slice(0,itemCount));}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("design/components/SegmentedControl/native/SegmentedControlState.native.tsx");
 
 export const useSegmentedControlState = function useSegmentedControlState(pageWidth) {
@@ -22,6 +21,7 @@ export const useSegmentedControlState = function useSegmentedControlState(pageWi
   }
   let PX_24 = pageWidth.itemSpacing;
   if (PX_24 === undefined) {
+    let tmp = pageWidth;
     PX_24 = pageWidth(PX_24[1]).space.PX_24;
   }
   const onPageChange = pageWidth.onPageChange;
@@ -29,30 +29,31 @@ export const useSegmentedControlState = function useSegmentedControlState(pageWi
   const onSetActiveIndex = pageWidth.onSetActiveIndex;
   let callback1;
   const enabled = onPageChange.useContext(items(PX_24[2]).AccessibilityPreferencesContext).reducedMotion.enabled;
-  const sharedValue = items(PX_24[3]).useSharedValue([]);
   let obj = items(PX_24[3]);
-  const sharedValue1 = items(PX_24[3]).useSharedValue(-1);
+  const sharedValue = obj.useSharedValue([]);
   let obj2 = items(PX_24[3]);
-  const sharedValue2 = items(PX_24[3]).useSharedValue(0);
+  const sharedValue1 = obj2.useSharedValue(-1);
   let obj3 = items(PX_24[3]);
-  const sharedValue3 = items(PX_24[3]).useSharedValue(0);
+  const sharedValue2 = obj3.useSharedValue(0);
   let obj4 = items(PX_24[3]);
-  const sharedValue4 = items(PX_24[3]).useSharedValue(num);
+  const sharedValue3 = obj4.useSharedValue(0);
   const obj5 = items(PX_24[3]);
+  const sharedValue4 = obj5.useSharedValue(num);
   const items1 = [num, num];
-  const sharedValue5 = items(PX_24[3]).useSharedValue(items1);
   const obj6 = items(PX_24[3]);
-  const animatedRef = items(PX_24[3]).useAnimatedRef();
+  const sharedValue5 = obj6.useSharedValue(items1);
   const obj7 = items(PX_24[3]);
-  const sharedValue6 = items(PX_24[3]).useSharedValue(-1);
+  const animatedRef = obj7.useAnimatedRef();
+  const obj8 = items(PX_24[3]);
+  const sharedValue6 = obj8.useSharedValue(-1);
   const onPageChangeRef = onPageChange.useRef(onPageChange);
   const items2 = [onPageChange];
   const layoutEffect = onPageChange.useLayoutEffect(() => {
-    closure_15.current = onPageChange;
+    onPageChangeRef.current = onPageChange;
   }, items2);
   const items3 = [sharedValue4, onPageChangeStart, pageWidth, sharedValue1, animatedRef, enabled, onSetActiveIndex];
   const setActiveIndex = onPageChange.useCallback((arg0) => {
-    closure_0 = arg0;
+    let closure_0 = arg0;
     let flag = arg1;
     if (arg1 === undefined) {
       flag = true;
@@ -62,12 +63,15 @@ export const useSegmentedControlState = function useSegmentedControlState(pageWi
       flag2 = false;
     }
     if (flag) {
+      let tmp = sharedValue4;
       flag = sharedValue4.get() !== arg0;
     }
     if (flag) {
-      let result = items(PX_24[4]).triggerHapticFeedback(items(PX_24[4]).HapticFeedbackTypes.IMPACT_MEDIUM);
       let obj = items(PX_24[4]);
+      let tmp5 = PX_24;
+      let result = obj.triggerHapticFeedback(items(PX_24[4]).HapticFeedbackTypes.IMPACT_MEDIUM);
     }
+    let obj2 = sharedValue4;
     if (arg0 !== sharedValue4.get()) {
       if (null != onPageChangeStart) {
         tmp14(arg0, () => {
@@ -75,11 +79,13 @@ export const useSegmentedControlState = function useSegmentedControlState(pageWi
           const result1 = closure_0 * pageWidth;
           const result2 = sharedValue1.set(result1);
           let tmp5 = !flag2;
-          if (!flag2) {
+          const tmp = closure_0;
+          if (tmp5) {
             tmp5 = !enabled;
           }
           if (tmp5) {
-            tmp5 = !useIsScreenReaderEnabled.getIsScreenReaderEnabled();
+            const obj = useIsScreenReaderEnabled;
+            tmp5 = !obj.getIsScreenReaderEnabled();
           }
           if (animatedRef != null) {
             const current = animatedRef.current;
@@ -89,20 +95,21 @@ export const useSegmentedControlState = function useSegmentedControlState(pageWi
             }
           }
           if (onSetActiveIndex != null) {
-            tmp10(closure_0);
+            tmp10(tmp);
           }
         });
       } else {
-        let result1 = sharedValue4.set(arg0);
+        let result1 = obj2.set(arg0);
         let result2 = arg0 * flag2;
         const result3 = sharedValue1.set(result2);
         let tmp8 = !flag2;
-        if (!flag2) {
+        if (tmp8) {
           tmp8 = !enabled;
         }
         if (tmp8) {
-          tmp8 = !items(PX_24[5]).getIsScreenReaderEnabled();
+          const tmp10 = PX_24;
           const obj3 = items(PX_24[5]);
+          tmp8 = !obj3.getIsScreenReaderEnabled();
         }
         if (animatedRef != null) {
           let current = animatedRef.current;
@@ -120,10 +127,9 @@ export const useSegmentedControlState = function useSegmentedControlState(pageWi
   const length = items.length;
   class M {
     constructor(arg0, arg1) {
-      closure_7.get()[pageWidth] = arg1;
-      items = [...closure_7.get()];
-      result = closure_7.set(items.slice(0, length));
-      return;
+      sharedValue.get()[arg0] = arg1;
+      items = [...sharedValue.get()];
+      const result = sharedValue.set(items.slice(0, length));
     }
   }
   M.__closure = { itemDimensions: sharedValue, itemCount: length };

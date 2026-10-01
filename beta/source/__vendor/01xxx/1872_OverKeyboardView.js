@@ -4,9 +4,9 @@
 // Dependencies: [1873, 1874]
 
 // Module 1872 (OverKeyboardView)
-import heightDefault from "height" /* 1873 */;
+import _modDef1873 from "module_1873" /* 1873 */;
 import _modDef1874 from "module_1874" /* 1874 */;
 
 
-export const OverKeyboardView = heightDefault;
+export const OverKeyboardView = _modDef1873;
 export const KeyboardExtender = _modDef1874;

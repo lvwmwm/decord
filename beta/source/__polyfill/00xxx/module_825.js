@@ -5,11 +5,9 @@
 
 // Module 825
 import ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE from "ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE" /* 823 */;
-import truncateTextByBytes from "truncateTextByBytes" /* 826 */;
+import DEFAULT_GEN_AI_MESSAGES_BYTE_LIMIT from "DEFAULT_GEN_AI_MESSAGES_BYTE_LIMIT" /* 826 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const buildMethodPath = function buildMethodPath(arg0, arg1) {
   let combined = arg1;
@@ -30,7 +28,7 @@ export const getFinalOperationName = function getFinalOperationName(arr) {
         if (!arr.includes("chat")) {
           const parts = arr.split(".");
           str4 = parts.pop() || "unknown";
-          const tmp = parts.pop() || "unknown";
+          parts.pop() || "unknown";
         }
         str3 = str4;
       }
@@ -51,7 +49,7 @@ export const getSpanOperation = function getSpanOperation(arr) {
         if (!arr.includes("chat")) {
           const parts = arr.split(".");
           str4 = parts.pop() || "unknown";
-          const tmp = parts.pop() || "unknown";
+          parts.pop() || "unknown";
         }
         str3 = str4;
       }
@@ -63,12 +61,14 @@ export const getSpanOperation = function getSpanOperation(arr) {
 };
 export const getTruncatedJsonString = function getTruncatedJsonString(arr) {
   if (typeof arr === "string") {
-    return truncateTextByBytes.truncateGenAiStringInput(arr);
+    const obj2 = DEFAULT_GEN_AI_MESSAGES_BYTE_LIMIT;
+    return obj2.truncateGenAiStringInput(arr);
   } else {
     const _Array = Array;
     if (Array.isArray(arr)) {
       const _JSON2 = JSON;
-      return JSON.stringify(truncateTextByBytes.truncateGenAiMessages(arr));
+      const obj = DEFAULT_GEN_AI_MESSAGES_BYTE_LIMIT;
+      return JSON.stringify(obj.truncateGenAiMessages(arr));
     } else {
       const _JSON = JSON;
       return JSON.stringify(arr);

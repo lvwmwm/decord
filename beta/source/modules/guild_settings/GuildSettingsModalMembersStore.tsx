@@ -4,9 +4,11 @@
 // Dependencies: [2108, 1074, 504, 573, 2]
 
 // Module 11315 (GuildSettingsModalMembersStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 1074 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import size from "module_2" /* 2 */;
 
 function handleStopEditingRoles() {
   SUBMITTING = null;
@@ -18,19 +20,19 @@ function handleStopEditingRoles() {
 function handleChangeNicknameSuccess() {
   error = null;
 }
-const FormStates = fn(1074).FormStates;
+const FormStates = Constants.FormStates;
 let SUBMITTING = null;
 let c3 = false;
 let error = null;
 let userId = null;
 let found = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class GuildSettingsModalMembersStore extends Store {
+  initialize() {
+    this.waitFor(GuildMemberStore);
+  }
 }
 const prototype = GuildSettingsModalMembersStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(GuildMemberStore);
-};
 Object.defineProperty(prototype, "isSubmitting", {
   get: function isSubmitting() {
     return SUBMITTING === FormStates.SUBMITTING;
@@ -62,7 +64,7 @@ Object.defineProperty(prototype, "nicknameError", {
   set: undefined
 });
 GuildSettingsModalMembersStore.displayName = "GuildSettingsModalMembersStore";
-const guildSettingsModalMembersStore = new GuildSettingsModalMembersStore(DispatcherDefault, {
+const obj = {
   GUILD_SETTINGS_MODAL_MEMBERS_START_EDITING: function handleStartEditingRoles(userId) {
     userId = userId.userId;
     const member = GuildMemberStore.getMember(userId.guildId, userId);
@@ -80,9 +82,9 @@ const guildSettingsModalMembersStore = new GuildSettingsModalMembersStore(Dispat
     roleId = roleId.roleId;
     if (null == found) {
       return false;
-    } else if (tmp) {
+    } else if (tmp2) {
       const items = [];
-      items[HermesBuiltin.arraySpread(arr, 0)] = roleId;
+      items[HermesBuiltin.arraySpread(items, found, 0)] = roleId;
       found = items;
     } else {
       found = arr.filter((item) => item !== roleId);
@@ -96,8 +98,8 @@ const guildSettingsModalMembersStore = new GuildSettingsModalMembersStore(Dispat
   GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME_FAILURE: function handleChangeNicknameFailure(error) {
     error = error.error;
   }
-});
-const size = fn(2);
+};
+const guildSettingsModalMembersStore = new GuildSettingsModalMembersStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/guild_settings/GuildSettingsModalMembersStore.tsx");
 
 export default guildSettingsModalMembersStore;

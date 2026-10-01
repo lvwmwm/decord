@@ -7,38 +7,45 @@
 // Module 12038 (useDeactivateWarningText)
 import _modDef2519 from "module_2519" /* 2519 */;
 import Powerups from "Powerups" /* 4727 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault, vanityURLCode;
 
-require = fn;
-const size = fn(2);
+let react = react_mod;
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useDeactivateWarningText.tsx");
 
 export default function useDeactivateWarningText(arg0, skuId) {
+  let closure_0;
+  let closure_3;
+  let stateFromStores;
+  let stateFromStores1;
+  let stateFromStores2;
   _require = arg0;
   importDefault = skuId;
+  let obj = require("get initialized");
   let items = [stateFromStores1];
-  stateFromStores = require("initialize").useStateFromStores(items, () => GuildMemberCountStore.getMemberCount(closure_0));
+  stateFromStores = obj.useStateFromStores(items, () => GuildMemberCountStore.getMemberCount(closure_0));
   const tmp2 = require("useGuildRoleMemberCounts")(arg0);
-  noop = tmp2;
-  let obj = require("initialize");
+  react = tmp2;
+  let obj2 = require("get initialized");
   const items1 = [GuildStore];
-  stateFromStores1 = require("initialize").useStateFromStores(items1, () => {
+  stateFromStores1 = obj2.useStateFromStores(items1, () => {
     const guild = GuildStore.getGuild(closure_0);
-    let vanityURLCode;
+    vanityURLCode = undefined;
     if (guild != null) {
       vanityURLCode = guild.vanityURLCode;
     }
     return null != vanityURLCode;
   });
-  let obj2 = require("initialize");
+  let obj3 = require("get initialized");
   const items2 = [stateFromStores2];
   const items3 = [arg0, skuId.skuId, tmp2];
-  stateFromStores2 = require("initialize").useStateFromStores(items2, () => {
+  stateFromStores2 = obj3.useStateFromStores(items2, () => {
     let num = 0;
     if (skuId.skuId === Powerups.GUILD_POWERUP_ROLE_COLOR_SKU_ID) {
       num = 0;
@@ -65,67 +72,79 @@ export default function useDeactivateWarningText(arg0, skuId) {
     return num;
   }, items3);
   const items4 = [skuId, stateFromStores2, stateFromStores, stateFromStores1];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    let formatToPlainStringResult1;
+    let intl6;
+    let num;
+    let tmp8;
     skuId = skuId.skuId;
     if (Powerups.GUILD_POWERUP_ROLE_COLOR_SKU_ID === skuId) {
+      let formatToPlainStringResult;
+      let tmp16;
       if (stateFromStores2 > 0) {
         const intl5 = tmp2(1115).intl;
-        const obj2 = { perk: tmp.title, memberCount: tmp14 };
-        let formatToPlainStringResult = intl5.formatToPlainString(_modDef2519["4jSvr1"], obj2);
+        const obj2 = { perk: skuId.title, memberCount: tmp15 };
+        formatToPlainStringResult = intl5.formatToPlainString(_modDef2519["4jSvr1"], obj2);
+        tmp16 = importDefault;
       } else {
         const intl4 = tmp2(1115).intl;
-        const obj3 = { perk: tmp.title };
+        tmp16 = importDefault;
+        const obj3 = { perk: skuId.title };
         formatToPlainStringResult = intl4.formatToPlainString(_modDef2519.cavtEo, obj3);
       }
-    } else {
-      if (tmp2(4727).VANITY_URL_POWERUP_SKU_ID === skuId) {
-        const intl3 = tmp2(1115).intl;
-        const string = intl3.string;
-        const tmp11 = _modDef2519;
-        if (stateFromStores1) {
-          let stringResult = string(tmp11.hN75yb);
-          let tmp13 = tmp10;
-        } else {
-          stringResult = string(tmp11.Du91Rb);
-          tmp13 = tmp10;
-        }
-        let tmp7 = tmp13;
-        let formatToPlainStringResult1 = stringResult;
+      tmp8 = tmp16;
+      formatToPlainStringResult1 = formatToPlainStringResult;
+    } else if (Powerups.VANITY_URL_POWERUP_SKU_ID === skuId) {
+      let stringResult;
+      let tmp14;
+      const intl3 = tmp2(1115).intl;
+      const string = intl3.string;
+      const tmp12 = _modDef2519;
+      if (stateFromStores1) {
+        stringResult = string(tmp12.hN75yb);
+        tmp14 = tmp11;
       } else {
-        if (tmp2(4727).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID !== skuId) {
-          if (tmp2(4727).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID !== skuId) {
-            if (tmp2(4727).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID !== skuId) {
-              if (tmp2(4727).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID !== skuId) {
-                const intl = tmp2(1115).intl;
-                const obj = { perk: tmp.title, memberCount: null };
-                let num = stateFromStores;
-                if (stateFromStores == null) {
-                  num = 0;
-                }
-                obj.memberCount = num;
-                formatToPlainStringResult1 = intl.formatToPlainString(_modDef2519["4jSvr1"], obj);
-                tmp7 = importDefault;
+        stringResult = string(tmp12.Du91Rb);
+        tmp14 = tmp11;
+      }
+      tmp8 = tmp14;
+      formatToPlainStringResult1 = stringResult;
+    } else {
+      if (Powerups.GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID !== skuId) {
+        if (Powerups.GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID !== skuId) {
+          if (Powerups.GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID !== skuId) {
+            if (Powerups.GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID !== skuId) {
+              const intl = tmp2(1115).intl;
+              const formatToPlainString = intl.formatToPlainString;
+              const obj = { perk: skuId.title, memberCount: num };
+              num = stateFromStores;
+              const v4jSvr1 = _modDef2519["4jSvr1"];
+              const tmp4 = importDefault;
+              if (stateFromStores == null) {
+                num = 0;
               }
+              formatToPlainStringResult1 = formatToPlainString(v4jSvr1, obj);
+              tmp8 = tmp4;
             }
           }
         }
-        const intl2 = tmp2(1115).intl;
-        formatToPlainStringResult1 = intl2.string(_modDef2519.Vf2ZcR);
-        tmp7 = importDefault;
       }
-      const obj4 = { text: formatToPlainStringResult1, critical: tmp.skuId === tmp2(4727).VANITY_URL_POWERUP_SKU_ID };
-      const items = [obj4];
-      let tmp20 = stateFromStores1;
-      if (stateFromStores1) {
-        tmp20 = tmp.skuId === tmp2(4727).GUILD_POWERUP_LEVEL_3_SKU_ID;
-      }
-      if (tmp20) {
-        const obj5 = { text: null, critical: true };
-        const intl6 = tmp2(1115).intl;
-        obj5.text = intl6.string(tmp7(2519).M4XL5n);
-        items.push(obj5);
-      }
-      return items;
+      const intl2 = tmp2(1115).intl;
+      formatToPlainStringResult1 = intl2.string(_modDef2519.Vf2ZcR);
+      tmp8 = importDefault;
     }
+    const items = [{ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID }];
+    let tmp19 = stateFromStores1;
+    ({ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID });
+    if (tmp19) {
+      tmp19 = tmp.skuId === tmp2(4727).GUILD_POWERUP_LEVEL_3_SKU_ID;
+    }
+    if (tmp19) {
+      const push = items.push;
+      const obj5 = { text: intl6.string(tmp8(2519).M4XL5n), critical: true };
+      intl6 = tmp2(1115).intl;
+      push(obj5);
+    }
+    return items;
   }, items4);
 };

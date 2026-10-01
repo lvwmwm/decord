@@ -5,20 +5,26 @@
 // Exports: default
 
 // Module 15739 (useFavoritesGuildCategoryFullNotice)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import FavoritesConstants from "FavoritesConstants" /* 2058 */;
+import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import _modDef3361 from "module_3361" /* 3361 */;
 import FavoritesHooks from "FavoritesHooks" /* 9685 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_4 = fn(2058).FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME;
-const ChannelTypes = fn(1074).ChannelTypes;
-const size = fn(2);
+let closure_4 = FavoritesConstants.FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME;
+const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildCategoryFullNotice.tsx");
 
 export default function useFavoritesGuildCategoryFullNotice(getGuildId, str) {
+  let autoAddJoinedThreads;
+  let intl;
+  let intl2;
   const items = [FavoriteStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => autoAddJoinedThreads.autoAddJoinedThreads);
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => autoAddJoinedThreads.autoAddJoinedThreads);
   FavoritesHooks;
   let tmp6 = null;
   if (stateFromStores) {
@@ -27,23 +33,21 @@ export default function useFavoritesGuildCategoryFullNotice(getGuildId, str) {
       tmp6 = null;
       if (null != str) {
         tmp6 = null;
+        const tmpResult = FavoritesUtils;
         if (tmpResult.isFavoritesGuildId(getGuildId.getGuildId())) {
           tmp6 = null;
           if (getGuildId.type === ChannelTypes.GUILD_CATEGORY) {
-            const formatted = str.trim().toLowerCase();
+            str = str.trim();
+            const formatted = str.toLowerCase();
             tmp6 = null;
             if (formatted === closure_4.toLowerCase()) {
-              const obj2 = { label: null, tooltip: null };
-              const intl = tmp(1115).intl;
-              obj2.label = intl.string(_modDef3361.WsUrMD);
-              const intl2 = tmp(1115).intl;
-              obj2.tooltip = intl2.string(_modDef3361.dW9Kov);
+              const obj2 = { label: intl.string(_modDef3361.WsUrMD), tooltip: intl2.string(_modDef3361.dW9Kov) };
+              intl = tmp(1115).intl;
+              intl2 = tmp(1115).intl;
               tmp6 = obj2;
             }
-            str = str.trim();
           }
         }
-        tmpResult = tmp(2070);
       }
     }
   }

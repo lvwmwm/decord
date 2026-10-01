@@ -5,25 +5,26 @@
 // Exports: default, isVideoMode
 
 // Module 9260 (useIsVideoMode)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/useIsVideoMode.tsx");
 
 export default function useIsVideoMode() {
+  let voiceChannelId;
+  const obj = get_initialized;
   const items = [ChannelStore, SelectedChannelStore, MediaEngineStore, VoiceStateStore, ApplicationStreamingStore];
-  return initialize.useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
     channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
     let tmp2 = null != channel;
     if (tmp2) {
-      tmp2 = ApplicationStreamingStore.getAllActiveStreams().length > 0 || VoiceStateStore.hasVideo(channel.id) || MediaEngineStore.isVideoEnabled();
-      const tmp3 = ApplicationStreamingStore.getAllActiveStreams().length > 0 || VoiceStateStore.hasVideo(channel.id) || MediaEngineStore.isVideoEnabled();
+      tmp2 = obj.getAllActiveStreams().length > 0 || obj2.hasVideo(channel.id) || obj3.isVideoEnabled();
+      ApplicationStreamingStore.getAllActiveStreams().length > 0 || VoiceStateStore.hasVideo(channel.id) || MediaEngineStore.isVideoEnabled();
     }
     return tmp2;
   });
@@ -53,7 +54,7 @@ export const isVideoMode = function isVideoMode(arg0, arg1, arg2, arg3, arg4) {
   let tmp2 = null != channel;
   if (tmp2) {
     tmp2 = obj3.getAllActiveStreams().length > 0 || obj4.hasVideo(channel.id) || obj5.isVideoEnabled();
-    const tmp3 = obj3.getAllActiveStreams().length > 0 || obj4.hasVideo(channel.id) || obj5.isVideoEnabled();
+    obj3.getAllActiveStreams().length > 0 || obj4.hasVideo(channel.id) || obj5.isVideoEnabled();
   }
   return tmp2;
 };

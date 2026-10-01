@@ -5,35 +5,51 @@
 // Exports: default
 
 // Module 12275 (TabsGradient)
-import spring from "spring" /* 5280 */;
+import Constants from "Constants" /* 1074 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const HorizontalGradient = fn(1074).HorizontalGradient;
-const jsxProd = fn(21);
-({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+const HorizontalGradient = Constants.HorizontalGradient;
+({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const LinearGradient = ReanimatedRexport.createAnimatedComponent(LinearGradientDefault);
 const SPRING_CONFIG = { mass: 1, damping: 30, stiffness: 250 };
-const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles({ gradient: { width: 50, position: "absolute", top: 0, bottom: 0, zIndex: 100 }, left: { left: 0 }, right: { right: 0 } });
 const __initData = { code: "function TabsGradientNativeTsx1(){const{withSpring,visible,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(visible.get()?1:0,SPRING_CONFIG)};}" };
 const __initData2 = { code: "function TabsGradientNativeTsx2(){const{itemDimensions,state}=this.__closure;const items=itemDimensions.get();const itemWidths=items.reduce(function(s,layout){var _layout$width;return s+((_layout$width=layout===null||layout===void 0?void 0:layout.width)!==null&&_layout$width!==void 0?_layout$width:0);},0);const itemsSpacing=items.length*state.itemSpacing;return itemWidths+itemsSpacing;}" };
 const __initData3 = { code: "function TabsGradientNativeTsx3(){const{scrollOffset,totalItemWidth,pageWidth}=this.__closure;return scrollOffset.get()>0&&totalItemWidth.get()>pageWidth;}" };
 const __initData4 = { code: "function TabsGradientNativeTsx4(){const{scrollOffset,totalItemWidth,pageWidth}=this.__closure;return scrollOffset.get()<totalItemWidth.get()-pageWidth&&totalItemWidth.get()>pageWidth;}" };
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Tabs/native/TabsGradient.native.tsx");
 
 export default function TabsGradient(state) {
+  let derivedValue1;
+  let items1;
+  let items2;
+  let items3;
+  function s() {
+    const withSpring = derivedValue1(dependencyMap[6]).withSpring;
+    let num = 0;
+    derivedValue1(dependencyMap[6]);
+    if (derivedValue2.get()) {
+      num = 1;
+    }
+    const obj = { opacity: withSpring(num, SPRING_CONFIG) };
+    return obj;
+  }
   state = state.state;
-  let derivedValue1 = state;
   const colors = state.colors;
   const scrollOffset = state.scrollOffset;
   const itemDimensions = state.itemDimensions;
   const pageWidth = state.pageWidth;
+  let obj = derivedValue1(4566);
   const fn = function f() {
-    value = itemDimensions.get();
+    const value = itemDimensions.get();
     return value.reduce((acc, width) => {
       let num;
       if (width != null) {
@@ -43,83 +59,63 @@ export default function TabsGradient(state) {
         num = 0;
       }
       return acc + num;
-    }, 0) + value.length * derivedValue1.itemSpacing;
+    }, 0) + value.length * state.itemSpacing;
   };
   fn.__closure = { itemDimensions, state };
   fn.__workletHash = 456613763143;
   fn.__initData = __initData2;
-  const derivedValue = derivedValue1(colors[3]).useDerivedValue(fn);
-  let obj = derivedValue1(colors[3]);
+  const derivedValue = obj.useDerivedValue(fn);
   const fn2 = function y() {
-    let tmp = scrollOffset.get() > 0;
-    if (tmp) {
-      tmp = derivedValue.get() > pageWidth;
-    }
+    const tmp = scrollOffset.get() > 0 && derivedValue.get() > pageWidth;
     return tmp;
   };
   fn2.__closure = { scrollOffset, totalItemWidth: derivedValue, pageWidth };
   fn2.__workletHash = 13237586618288;
   fn2.__initData = __initData3;
-  derivedValue1 = derivedValue1(colors[3]).useDerivedValue(fn2);
-  const obj2 = derivedValue1(colors[3]);
-  const fn3 = function s() {
-    let num = 0;
-    if (derivedValue1.get()) {
-      num = 1;
-    }
-    return { opacity: spring.withSpring(num, closure_8) };
-  };
-  const obj3 = derivedValue1(colors[3]);
-  fn3.__closure = { withSpring: derivedValue1(colors[6]).withSpring, visible: derivedValue1, SPRING_CONFIG };
+  const obj2 = derivedValue1(4566);
+  derivedValue1 = obj2.useDerivedValue(fn2);
+  const fn3 = s;
+  const obj3 = derivedValue1(4566);
+  fn3.__closure = { withSpring: derivedValue1(5280).withSpring, visible: derivedValue1, SPRING_CONFIG };
   fn3.__workletHash = 14959306962615;
   fn3.__initData = __initData;
+  ({ withSpring: derivedValue1(5280).withSpring, visible: derivedValue1, SPRING_CONFIG });
   const animatedStyle = obj3.useAnimatedStyle(fn3);
-  const obj4 = { withSpring: derivedValue1(colors[6]).withSpring, visible: derivedValue1, SPRING_CONFIG };
+  const obj5 = derivedValue1(4566);
   class W {
     constructor() {
-      obj = closure_5;
-      value = scrollOffset.get();
-      tmp3 = value < closure_5.get() - pageWidth && obj.get() > tmp2;
+      const value = scrollOffset.get();
+      const tmp3 = value < derivedValue.get() - pageWidth && derivedValue.get() > tmp2;
       return tmp3;
     }
   }
   W.__closure = { scrollOffset, totalItemWidth: derivedValue, pageWidth };
   W.__workletHash = 13808489302165;
   W.__initData = __initData4;
-  const derivedValue2 = derivedValue1(colors[3]).useDerivedValue(W);
-  closure_129_0 = derivedValue2;
-  const obj5 = derivedValue1(colors[3]);
-  const fn4 = function s() {
-    let num = 0;
-    if (derivedValue1.get()) {
-      num = 1;
-    }
-    return { opacity: spring.withSpring(num, closure_8) };
-  };
-  const obj6 = derivedValue1(colors[3]);
-  fn4.__closure = { withSpring: derivedValue1(colors[6]).withSpring, visible: derivedValue2, SPRING_CONFIG };
+  const derivedValue2 = obj5.useDerivedValue(W);
+  const fn4 = s;
+  const obj6 = derivedValue1(4566);
+  fn4.__closure = { withSpring: derivedValue1(5280).withSpring, visible: derivedValue2, SPRING_CONFIG };
   fn4.__workletHash = 14959306962615;
   fn4.__initData = __initData;
+  ({ withSpring: derivedValue1(5280).withSpring, visible: derivedValue2, SPRING_CONFIG });
   const animatedStyle1 = obj6.useAnimatedStyle(fn4);
   const tmp6 = closure_9();
   let items = [colors];
-  const obj8 = { children: null };
-  const obj9 = { start: itemDimensions.START, end: itemDimensions.END, colors, style: null, pointerEvents: "none" };
-  const items1 = [, , ];
+  const obj9 = { start: HorizontalGradient.START, end: HorizontalGradient.END, colors, style: items1, pointerEvents: "none" };
+  items1 = [, , ];
+  const obj8 = { children: items2 };
   ({ left: arr2[0], gradient: arr2[1] } = tmp6);
   items1[2] = animatedStyle;
-  obj9.style = items1;
-  const memo = scrollOffset.useMemo(() => {
+  const memo = react.useMemo(() => {
     const items = [...colors];
     return items.reverse();
   }, items);
-  const items2 = [pageWidth(LinearGradient, obj9), ];
-  const obj10 = { start: itemDimensions.START, end: itemDimensions.END, colors: memo, style: null, pointerEvents: "none" };
-  const items3 = [, , ];
+  items2 = [closure_4(LinearGradient, obj9), ];
+  const obj10 = { start: HorizontalGradient.START, end: HorizontalGradient.END, colors: memo, style: items3, pointerEvents: "none" };
+  items3 = [, , ];
   ({ right: arr4[0], gradient: arr4[1] } = tmp6);
   items3[2] = animatedStyle1;
-  obj10.style = items3;
-  items2[1] = pageWidth(LinearGradient, obj10);
-  obj8.children = items2;
-  return closure_6(derivedValue, obj8);
+  items2[1] = closure_4(LinearGradient, obj10);
+  return closure_6(closure_5, obj8);
 };

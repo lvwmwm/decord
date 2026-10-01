@@ -7,13 +7,16 @@
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("actions/native/PhoneVerificationActionCreators.tsx");
-
-export default {
+let obj = {
   openCountrySelector() {
-    DispatcherDefault.dispatch({ type: "VERIFICATION_OPEN_COUNTRY_SELECTOR" });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "VERIFICATION_OPEN_COUNTRY_SELECTOR" });
   },
   setCountrySelectorClosed() {
-    DispatcherDefault.dispatch({ type: "VERIFICATION_CLOSE_COUNTRY_SELECTOR" });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "VERIFICATION_CLOSE_COUNTRY_SELECTOR" });
   }
 };
+const result = size.fileFinishedImporting("actions/native/PhoneVerificationActionCreators.tsx");
+
+export default obj;

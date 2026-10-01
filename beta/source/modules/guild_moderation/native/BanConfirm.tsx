@@ -6,238 +6,234 @@
 // Module 11330 (BanConfirm)
 import nativeDefault from "native" /* 576 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import util from "util" /* 1115 */;
+import intl7 from "intl" /* 1115 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: hasOwnProperty, View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-let items = [
-  {
-    value: 0,
-    getLabel() {
-      const intl = util.intl;
-      return intl.string(util.t["4obaMS"]);
-    }
-  },
-  {
-    value: DurationsDefault.Seconds.HOUR,
-    getLabel() {
-      const intl = util.intl;
-      return intl.string(util.t.RKpitY);
-    }
-  },
-,
-,
-,
-,
-
-];
+let c10;
+let closure_12;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj10;
+let obj11;
+let obj12;
+let obj13;
+let obj14;
+let obj9;
+let unpackModuleId;
+({ Image: hasOwnProperty, View: metroRequire, ScrollView: metroImportDefault } = react_native);
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let obj = {
   value: 0,
   getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t["4obaMS"]);
+    const intl = intl7.intl;
+    return intl.string(intl7.t["4obaMS"]);
   }
 };
+let items = [obj, , , , , , ];
 let obj2 = {
   value: DurationsDefault.Seconds.HOUR,
   getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t.RKpitY);
+    const intl = intl7.intl;
+    return intl.string(intl7.t.RKpitY);
   }
 };
-items[2] = {
-  value: 6 * DurationsDefault.Seconds.HOUR,
-  getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t["8WfJZ8"]);
-  }
-};
+items[1] = obj2;
 let obj3 = {
   value: 6 * DurationsDefault.Seconds.HOUR,
   getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t["8WfJZ8"]);
+    const intl = intl7.intl;
+    return intl.string(intl7.t["8WfJZ8"]);
   }
 };
-items[3] = {
-  value: 12 * DurationsDefault.Seconds.HOUR,
-  getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t.p1up7u);
-  }
-};
+items[2] = obj3;
 let obj4 = {
   value: 12 * DurationsDefault.Seconds.HOUR,
   getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t.p1up7u);
+    const intl = intl7.intl;
+    return intl.string(intl7.t.p1up7u);
   }
 };
-items[4] = {
-  value: DurationsDefault.Seconds.DAY,
-  getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t.XuVkkD);
-  }
-};
+items[3] = obj4;
 let obj5 = {
   value: DurationsDefault.Seconds.DAY,
   getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t.XuVkkD);
+    const intl = intl7.intl;
+    return intl.string(intl7.t.XuVkkD);
   }
 };
-items[5] = {
-  value: 3 * DurationsDefault.Seconds.DAY,
-  getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t["gMcDS+"]);
-  }
-};
+items[4] = obj5;
 let obj6 = {
   value: 3 * DurationsDefault.Seconds.DAY,
   getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t["gMcDS+"]);
+    const intl = intl7.intl;
+    return intl.string(intl7.t["gMcDS+"]);
   }
 };
-items[6] = {
-  value: 7 * DurationsDefault.Seconds.DAY,
-  getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t.FA7IUk);
-  }
-};
-const createStyles = fn(4836);
-let obj8 = { container: null, iconLabelBlock: null, iconStyles: null, blurb: null, redText: null, errorText: null };
+items[5] = obj6;
 let obj7 = {
   value: 7 * DurationsDefault.Seconds.DAY,
   getLabel() {
-    const intl = util.intl;
-    return intl.string(util.t.FA7IUk);
+    const intl = intl7.intl;
+    return intl.string(intl7.t.FA7IUk);
   }
 };
-obj8.container = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let obj10 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj8.iconLabelBlock = { marginTop: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16, alignItems: "center" };
-let obj11 = { marginTop: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16, alignItems: "center" };
-obj8.iconStyles = { height: 1.25 * nativeDefault.space.PX_96 };
-let obj12 = { height: 1.25 * nativeDefault.space.PX_96 };
-obj8.blurb = { marginVertical: nativeDefault.space.PX_16 };
-let obj13 = { marginVertical: nativeDefault.space.PX_16 };
-obj8.redText = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_4, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-let obj14 = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_4, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-obj8.errorText = { marginBottom: nativeDefault.space.PX_16 };
-let closure_14 = createStyles.createStyles(obj8);
-let obj15 = { marginBottom: nativeDefault.space.PX_16 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_moderation/native/BanConfirm.tsx");
-
-export default noop.memo(function BanConfirm(arg0) {
+items[6] = obj7;
+let createStyles = createStyles_mod;
+let obj8 = { container: obj9, iconLabelBlock: obj10, iconStyles: obj11, blurb: obj12, redText: obj13, errorText: obj14 };
+obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj10 = { marginTop: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16, alignItems: "center" };
+obj11 = { height: 1.25 * nativeDefault.space.PX_96 };
+obj12 = { marginVertical: nativeDefault.space.PX_16 };
+obj13 = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_4, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
+obj14 = { marginBottom: nativeDefault.space.PX_16 };
+let closure_14 = createStyles(obj8);
+const memoResult = react.memo(function BanConfirm(arg0) {
+  let Button;
+  let Qd6w7T;
+  let _undefined;
+  let c7;
+  let format;
+  let format2;
+  let format3;
+  let intl3;
+  let intl4;
+  let intl5;
+  let items4;
+  let obj12;
+  let obj15;
+  let obj17;
+  let obj18;
+  let obj20;
+  let obj21;
+  let obj5;
+  let obj9;
+  let onBan;
+  let prop;
+  let tmp11;
+  let tmp16;
+  let tmp17;
+  let tmp4Result;
+  let tmp4Result3;
+  let tmp4Result4;
+  let v8jV9fx;
+  const f93427 = () => ({ banning: false, banError: false });
   ({ guildId: require, userId: importDefault, onBan } = arg0);
   let stateFromStores1;
   c7 = undefined;
-  const tmp = closure_14();
+  let tmp = closure_14();
   let ref = stateFromStores1.useRef(null);
   const ref1 = stateFromStores1.useRef(null);
   const insets = require("useSafeAreaInsetsKeyboardAware")({ includeKeyboardHeight: true }).insets;
-  let obj = { insets, inputs: null, scrollViewRef: ref };
+  let obj = { insets, inputs: items, scrollViewRef: ref };
   items = [{ ref: ref1, offset: { type: "toBottom" } }];
-  obj.inputs = items;
   require("useSafeAreaAvoidingInputs")(obj);
   const items1 = [GuildStore];
-  const stateFromStores = require("initialize").useStateFromStores(items1, () => GuildStore.getGuild(require));
-  const obj2 = require("initialize");
+  const obj2 = require("get initialized");
+  const stateFromStores = obj2.useStateFromStores(items1, () => GuildStore.getGuild(require));
   const items2 = [UserStore];
-  stateFromStores1 = require("initialize").useStateFromStores(items2, () => UserStore.getUser(importDefault));
+  const obj3 = require("get initialized");
+  stateFromStores1 = obj3.useStateFromStores(items2, () => UserStore.getUser(importDefault));
   ref = stateFromStores1.useRef(0);
   const ref2 = stateFromStores1.useRef("");
-  const obj3 = require("initialize");
-  [tmp11, c7] = stateFromStores(stateFromStores1.useState(() => ({ banning: false, banError: false })), 2);
+  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f93427), 2);
   const items3 = [stateFromStores, stateFromStores1, onBan];
   let tmp14Result2 = null;
+  const tmp10 = stateFromStores(stateFromStores1.useState(f93427), 2);
   if (null != stateFromStores1) {
     tmp14Result2 = null;
     if (null != stateFromStores) {
-      const obj4 = { style: tmp.container, ref, contentContainerStyle: null, children: null };
-      const obj5 = { paddingHorizontal: tmp4(tmp5[9]).space.PX_24, paddingBottom: insets.bottom };
-      obj4.contentContainerStyle = obj5;
-      const obj6 = { style: tmp.iconLabelBlock, children: null };
-      const obj7 = { style: tmp.iconStyles, source: tmp4(tmp5[14]), resizeMode: "contain" };
-      const items4 = [closure_10(ref, obj7), , ];
-      const obj8 = { style: tmp.redText, variant: "text-md/semibold", children: null };
+      const obj4 = { style: tmp.container, ref, contentContainerStyle: obj5, children: tmp16(tmp17, obj21) };
+      obj5 = { paddingHorizontal: require("native").space.PX_24, paddingBottom: insets.bottom };
+      const obj6 = { style: tmp.iconLabelBlock, children: items4 };
+      const obj7 = { style: tmp.iconStyles, source: require("AssetRegistry"), resizeMode: "contain" };
+      items4 = [closure_10(ref, obj7), , ];
+      const obj8 = { style: tmp.redText, variant: "text-md/semibold", children: format(Qd6w7T, obj9) };
+      const Text = tmp7(tmp5[15]).Text;
       const intl = tmp7(tmp5[6]).intl;
-      const obj9 = { username: tmp4(tmp5[16]).getName(stateFromStores1) };
-      obj8.children = intl.format(tmp7(tmp5[6]).t.Qd6w7T, obj9);
-      items4[1] = closure_10(tmp7(tmp5[15]).Text, obj8);
+      format = intl.format;
+      obj9 = { username: tmp4Result.getName(stateFromStores1) };
+      Qd6w7T = tmp7(tmp5[6]).t.Qd6w7T;
+      tmp4Result = require("UserUtils");
+      items4[1] = closure_10(Text, obj8);
       const obj10 = { variant: "text-lg/bold", color: "text-feedback-warning", children: stateFromStores.name };
-      items4[2] = closure_10(tmp7(tmp5[15]).Text, obj10);
-      obj6.children = items4;
+      items4[2] = closure_10(require("Text/Text").Text, obj10);
       const items5 = [closure_11(ref2, obj6), , , , , ];
-      const obj11 = { style: tmp.blurb, variant: "heading-md/normal", color: "text-feedback-warning", children: null };
+      const obj11 = { style: tmp.blurb, variant: "heading-md/normal", color: "text-feedback-warning", children: format2(v8jV9fx, obj12) };
+      const Text2 = tmp7(tmp5[15]).Text;
       const intl2 = tmp7(tmp5[6]).intl;
-      const obj12 = { user: null };
-      const tmp15 = c7;
-      const tmp16 = closure_11;
-      const tmp17 = closure_12;
-      const tmp4Result = tmp4(tmp5[16]);
-      obj12.user = tmp4(tmp5[16]).getName(stateFromStores1);
-      obj11.children = intl2.format(tmp7(tmp5[6]).t["8jV9fx"], obj12);
-      items5[1] = closure_10(tmp7(tmp5[15]).Text, obj11);
-      const obj13 = { title: null, defaultValue: null, onChange: null, hasIcons: false, children: null };
-      const intl3 = tmp7(tmp5[6]).intl;
-      obj13.title = intl3.string(tmp7(tmp5[6]).t["8l3W0y"]);
-      obj13.defaultValue = items[0].value;
-      obj13.onChange = function onChange(current) {
-        closure_5.current = current;
+      format2 = intl2.format;
+      obj12 = { user: tmp4Result3.getName(stateFromStores1) };
+      v8jV9fx = tmp7(tmp5[6]).t["8jV9fx"];
+      tmp4Result3 = require("UserUtils");
+      items5[1] = closure_10(Text2, obj11);
+      const obj13 = {
+        title: intl3.string(require("intl").t["8l3W0y"]),
+        defaultValue: items[0].value,
+        onChange(current) {
+              ref.current = current;
+            },
+        hasIcons: false,
+        children: items.map((getLabel, value) => {
+              const obj = { value, label: getLabel.getLabel() };
+              const TableRadioRow = require("TableRadioRow").TableRadioRow;
+              return closure_1_10(TableRadioRow, obj, value);
+            })
       };
-      obj13.children = items.map((getLabel, value) => closure_1_10(require("TableRadioRow").TableRadioRow, { value, label: getLabel.getLabel() }, value));
-      items5[2] = closure_10(tmp7(tmp5[17]).TableRadioGroup, obj13);
-      const obj14 = { ref: ref1, containerStyle: null, label: null, maxLength: 512, onChange: null };
-      const obj15 = { marginVertical: tmp4(tmp5[9]).space.PX_16 };
-      obj14.containerStyle = obj15;
-      const intl4 = tmp7(tmp5[6]).intl;
-      obj14.label = intl4.string(tmp7(tmp5[6]).t.w4Ivys);
-      obj14.onChange = function onChange(current) {
-        closure_6.current = current;
+      const TableRadioGroup = tmp7(tmp5[17]).TableRadioGroup;
+      intl3 = tmp7(tmp5[6]).intl;
+      items5[2] = closure_10(TableRadioGroup, obj13);
+      const obj14 = {
+        ref: ref1,
+        containerStyle: obj15,
+        label: intl4.string(require("intl").t.w4Ivys),
+        maxLength: 512,
+        onChange(current) {
+              ref2.current = current;
+            }
       };
-      items5[3] = closure_10(tmp7(tmp5[19]).TextArea, obj14);
-      const obj16 = { style: null, children: null };
-      const obj17 = { marginBottom: tmp4(tmp5[9]).space.PX_16 };
-      obj16.style = obj17;
-      const obj18 = { variant: "destructive", text: null, onPress: null, disabled: null };
-      const intl5 = tmp7(tmp5[6]).intl;
-      obj18.text = intl5.string(tmp7(tmp5[6]).t["5MBJ5M"]);
-      obj18.onPress = tmp12;
-      obj18.disabled = tmp11.banning;
-      obj16.children = closure_10(tmp7(tmp5[20]).Button, obj18);
+      obj15 = { marginVertical: require("native").space.PX_16 };
+      const TextArea = tmp7(tmp5[19]).TextArea;
+      intl4 = tmp7(tmp5[6]).intl;
+      items5[3] = closure_10(TextArea, obj14);
+      const obj16 = { style: obj17, children: closure_10(Button, obj18) };
+      obj17 = { marginBottom: require("native").space.PX_16 };
+      obj18 = { variant: "destructive", text: intl5.string(require("intl").t["5MBJ5M"]), onPress: tmp12, disabled: tmp11.banning };
+      Button = tmp7(tmp5[20]).Button;
+      intl5 = tmp7(tmp5[6]).intl;
       items5[4] = closure_10(ref2, obj16);
       let tmp14Result = null;
+      const tmp15 = c7;
+      tmp16 = closure_11;
+      tmp17 = closure_12;
       if (tmp11.banError) {
-        const obj19 = { style: tmp.errorText, variant: "text-md/semibold", color: "input-text-error-default", children: null };
+        const obj19 = { style: tmp.errorText, variant: "text-md/semibold", color: "input-text-error-default", children: format3(prop, obj20) };
+        const Text3 = tmp7(tmp5[15]).Text;
         const intl6 = tmp7(tmp5[6]).intl;
-        const obj20 = { user: tmp4(tmp5[16]).getName(stateFromStores1) };
-        obj19.children = intl6.format(tmp7(tmp5[6]).t["/K6eer"], obj20);
-        tmp14Result = tmp14(tmp7(tmp5[15]).Text, obj19);
-        const tmp4Result4 = tmp4(tmp5[16]);
+        format3 = intl6.format;
+        obj20 = { user: tmp4Result4.getName(stateFromStores1) };
+        prop = tmp7(tmp5[6]).t["/K6eer"];
+        tmp4Result4 = require("UserUtils");
+        tmp14Result = tmp14(Text3, obj19);
       }
-      const obj21 = { children: null };
+      obj21 = { children: items5 };
       items5[5] = tmp14Result;
-      obj21.children = items5;
-      obj4.children = tmp16(tmp17, obj21);
       tmp14Result2 = tmp14(tmp15, obj4);
-      const tmp4Result3 = tmp4(tmp5[16]);
     }
   }
   return tmp14Result2;
 });
+const result = size.fileFinishedImporting("modules/guild_moderation/native/BanConfirm.tsx");
+
+export default memoResult;

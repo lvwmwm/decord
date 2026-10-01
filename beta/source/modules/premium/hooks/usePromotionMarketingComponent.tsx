@@ -5,30 +5,37 @@
 // Exports: usePromotionMarketingComponent
 
 // Module 12959 (usePromotionMarketingComponent)
-import constants from "constants" /* 10160 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import promotions_constants from "promotions/constants" /* 10160 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import UserOfferStore from "UserOfferStore" /* 6870 */;
 import PromotionsStore from "PromotionsStore" /* 10128 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/hooks/usePromotionMarketingComponent.tsx");
 
 export const usePromotionMarketingComponent = function usePromotionMarketingComponent(PREMIUM_TAB) {
+  let ref;
+  let stateFromStores;
+  let tmp6;
   _require = PREMIUM_TAB;
-  const effect = noop.useEffect(() => {
-    const result = PREMIUM_TAB(stateFromStores[4]).maybeFetchActivePromotions();
+  let obj = react;
+  const effect = react.useEffect(() => {
+    const obj = PREMIUM_TAB(stateFromStores[4]);
+    const result = obj.maybeFetchActivePromotions();
   }, []);
   const items = [PromotionsStore, ref];
-  stateFromStores = require("initialize").useStateFromStores(items, () => {
-    const marketingComponentByType = PromotionsStore.getMarketingComponentByType(closure_0);
+  const obj2 = require("get initialized");
+  stateFromStores = obj2.useStateFromStores(items, () => {
+    const marketingComponentByType = PromotionsStore.getMarketingComponentByType(PREMIUM_TAB);
+    const obj = PromotionsStore;
     if (null == marketingComponentByType) {
       return null;
     } else {
-      const promotionByTypeAndId = obj.getPromotionByTypeAndId(constants.PromotionTypes.MARKETING_MOMENT, marketingComponentByType.promotionId);
+      const promotionByTypeAndId = obj.getPromotionByTypeAndId(promotions_constants.PromotionTypes.MARKETING_MOMENT, marketingComponentByType.promotionId);
       let trialId;
       if (promotionByTypeAndId != null) {
         trialId = promotionByTypeAndId.trialId;
@@ -39,36 +46,38 @@ export const usePromotionMarketingComponent = function usePromotionMarketingComp
       }
       return marketingComponentByType;
     }
-    obj = PromotionsStore;
   });
-  const obj2 = require("initialize");
   const items1 = [PromotionsStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => {
+  const obj3 = require("get initialized");
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => {
+    const getPromotionByTypeAndId = PromotionsStore.getPromotionByTypeAndId;
     let str;
+    const MARKETING_MOMENT = promotions_constants.PromotionTypes.MARKETING_MOMENT;
     if (stateFromStores != null) {
       str = stateFromStores.promotionId;
     }
     if (str == null) {
       str = "";
     }
-    return PromotionsStore.getPromotionByTypeAndId(constants.PromotionTypes.MARKETING_MOMENT, str);
+    return getPromotionByTypeAndId(MARKETING_MOMENT, str);
   });
   let endDate;
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
   }
-  const obj3 = require("initialize");
-  [tmp6, noop] = endDate(noop.useState(false), 2);
-  const tmp5 = endDate(noop.useState(false), 2);
+  [tmp6, react] = endDate(obj.useState(false), 2);
+  endDate(obj.useState(false), 2);
+  ref = obj.useRef(null);
   const items2 = [endDate];
   const effect1 = obj.useEffect(() => {
+    const obj = endDate;
     if (null != endDate) {
       const _Date = Date;
-      const time = endDate.getTime();
+      const time = obj.getTime();
       const diff = time - Date.now();
       if (diff > 0) {
         if (diff < 86400000) {
-          noop(false);
+          react(false);
           const _clearTimeout2 = clearTimeout;
           clearTimeout(ref.current);
           const _setTimeout = setTimeout;
@@ -81,10 +90,10 @@ export const usePromotionMarketingComponent = function usePromotionMarketingComp
         };
       }
       if (diff <= 0) {
-        noop(true);
+        react(true);
       }
     } else {
-      noop(false);
+      react(false);
       const _clearTimeout = clearTimeout;
       clearTimeout(ref.current);
     }

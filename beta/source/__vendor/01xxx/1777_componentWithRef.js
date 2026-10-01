@@ -5,14 +5,16 @@
 // Exports: componentWithRef, isFirstReactRender, isReactRendering
 
 // Module 1777 (componentWithRef)
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 19 */;
+import module_1641 from "module_1641" /* 1641 */;
 
-const forwardRef = fn(19).forwardRef;
-const module_1641 = fn(1641);
+const react = react2;
+
+const forwardRef = react2.forwardRef;
 let closure_2 = module_1641.isReact19();
 
 export const isReactRendering = function isReactRendering() {
-  const __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = noop.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+  const __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = react.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
   let owner;
   if (__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE != null) {
     const A = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.A;
@@ -48,7 +50,7 @@ export const isReactRendering = function isReactRendering() {
   return owner;
 };
 export const isFirstReactRender = function isFirstReactRender() {
-  const __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = noop.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+  const __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = react.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
   let owner;
   if (__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE != null) {
     const A = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.A;
@@ -82,7 +84,7 @@ export const isFirstReactRender = function isFirstReactRender() {
     owner = current1;
   }
   let tmp5 = owner;
-  if (owner) {
+  if (tmp5) {
     let alternate;
     if (owner != null) {
       alternate = owner.alternate;
@@ -92,8 +94,11 @@ export const isFirstReactRender = function isFirstReactRender() {
   return tmp5;
 };
 export const componentWithRef = function componentWithRef(BottomSheet) {
-  if (closure_2) {
-    let fn = (ref) => BottomSheet(Object.assign(ref, Object.assign({ ref: 0 })), ref.ref);
+  let fn;
+  let closure_0 = BottomSheet;
+  const tmp = closure_2;
+  if (tmp) {
+    fn = (ref) => closure_0(Object.assign(ref, Object.assign({ ref: 0 })), ref.ref);
   } else {
     fn = forwardRef(BottomSheet);
   }

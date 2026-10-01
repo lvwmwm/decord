@@ -5,24 +5,34 @@
 // Exports: default
 
 // Module 14454 (FamilyCenterLinkRow)
+import react_native from "react-native" /* 17 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 6958 */;
 import FamilyCenterLinkWrapperDefault from "FamilyCenterLinkWrapper" /* 14455 */;
 import FamilyCenterRequestorDetailsDefault from "FamilyCenterRequestorDetails" /* 14456 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const UserLinkStatus = fn(6958).UserLinkStatus;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+let closure_4;
+let hasOwnProperty;
+const View = react_native.View;
+const UserLinkStatus = FamilyCenterConstants.UserLinkStatus;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ actionContainer: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", height: "100%" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkRow.tsx");
 
-export default function FamilyCenterLinkRow(children) {
-  const otherUser = children.otherUser;
-  const obj = { userId: otherUser.id, children: null };
+export default function FamilyCenterLinkRow(otherUser) {
+  let items;
+  otherUser = otherUser.otherUser;
+  const actions = otherUser.actions;
+  const obj = { userId: otherUser.id, children: items };
+  items = [, ];
+  const obj2 = { otherUser, status: UserLinkStatus.PENDING };
   const tmp = closure_6();
-  const items = [React4(FamilyCenterRequestorDetailsDefault, { otherUser, status: UserLinkStatus.PENDING }), React4(View, { style: tmp.actionContainer, children: children.actions })];
-  obj.children = items;
-  return hasOwnProperty(FamilyCenterLinkWrapperDefault, obj);
+  const tmp2 = FamilyCenterLinkWrapperDefault;
+  items[0] = React3(FamilyCenterRequestorDetailsDefault, obj2);
+  const obj3 = { style: tmp.actionContainer, children: actions };
+  items[1] = React3(View, obj3);
+  return hasOwnProperty(tmp2, obj);
 };

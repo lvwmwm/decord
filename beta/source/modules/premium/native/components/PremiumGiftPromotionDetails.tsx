@@ -5,75 +5,94 @@
 // Exports: PremiumGiftPromotionCollectibleRewardDetails, default
 
 // Module 10219 (PremiumGiftPromotionDetails)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import SKUPreview from "SKUPreview" /* 8234 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let size;
 function PremiumGiftPromotionDetailsBase(arg0) {
+  let graphic;
+  let items;
+  let items1;
+  let items2;
+  let style;
+  let subtitle;
+  let subtitleColor;
+  let subtitleVariant;
+  let title;
+  let titleColor;
+  let titleVariant;
   ({ titleVariant, titleColor, subtitleVariant, subtitleColor } = arg0);
   ({ style, graphic, title, subtitle } = arg0);
   const tmp = closure_10();
-  const obj = { style: null, children: null };
-  const items = [tmp.container, style];
-  obj.style = items;
-  const items1 = [graphic, ];
-  const obj2 = { style: tmp.textContainer, children: null };
+  const obj = { style: items, children: items1 };
+  items = [tmp.container, style];
+  items1 = [graphic, ];
+  const obj2 = { style: tmp.textContainer, children: items2 };
+  const Text = Text_Text.Text;
   if (titleVariant == null) {
     titleVariant = "text-md/semibold";
   }
-  const obj3 = { variant: titleVariant, color: null, children: null };
+  const obj3 = { variant: titleVariant, color: titleColor, children: title };
   if (titleColor == null) {
     titleColor = "text-default";
   }
-  obj3.color = titleColor;
-  obj3.children = title;
-  const items2 = [React5(Text_Text.Text, obj3), ];
+  items2 = [metroImportDefault(Text, obj3), ];
+  const Text2 = Text_Text.Text;
   if (subtitleVariant == null) {
     subtitleVariant = "text-sm/medium";
   }
-  const obj4 = { variant: subtitleVariant, color: null, children: null };
+  const obj4 = { variant: subtitleVariant, color: subtitleColor, children: subtitle };
   if (subtitleColor == null) {
     subtitleColor = "text-subtle";
   }
-  obj4.color = subtitleColor;
-  obj4.children = subtitle;
-  items2[1] = React5(Text_Text.Text, obj4);
-  obj2.children = items2;
-  items1[1] = React6(View, obj2);
-  obj.children = items1;
-  return React6(View, obj);
+  items2[1] = metroImportDefault(Text2, obj4);
+  items1[1] = metroImportAll(View, obj2);
+  return metroImportAll(View, obj);
 }
 function AnimatedImage(arg0) {
+  let closure_4;
+  let imageUrl;
+  let shouldAnimate;
+  let style;
+  let useReducedMotion;
   ({ imageUrl, style, shouldAnimate } = arg0);
   if (shouldAnimate === undefined) {
     shouldAnimate = true;
   }
   let aPNGPlayerControls;
   let first;
-  noop = undefined;
+  react = undefined;
+  let tmp = shouldAnimate;
+  let obj = shouldAnimate(aPNGPlayerControls[8]);
   const items = [AccessibilityStore];
-  const stateFromStores = shouldAnimate(aPNGPlayerControls[8]).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let num = null;
-  const ref = noop.useRef(null);
-  const obj = shouldAnimate(aPNGPlayerControls[8]);
-  aPNGPlayerControls = shouldAnimate(aPNGPlayerControls[9]).useAPNGPlayerControls(ref);
-  const tmp6 = first(noop.useState(false), 2);
+  const ref = react.useRef(null);
+  const obj2 = shouldAnimate(aPNGPlayerControls[9]);
+  aPNGPlayerControls = obj2.useAPNGPlayerControls(ref);
+  const tmp6 = first(react.useState(false), 2);
   first = tmp6[0];
-  noop = tmp6[1];
+  react = tmp6[1];
   const items1 = [shouldAnimate, aPNGPlayerControls, stateFromStores];
-  const effect = noop.useEffect(() => {
-    let isAndroidResult = utils_PlatformUtils.isAndroid();
+  const effect = react.useEffect(() => {
+    const obj = utils_PlatformUtils;
+    const isAndroidResult = obj.isAndroid() && !stateFromStores;
     if (isAndroidResult) {
-      isAndroidResult = !stateFromStores;
-    }
-    if (isAndroidResult) {
-      if (shouldAnimate) {
+      const tmp3 = shouldAnimate;
+      if (tmp3) {
         aPNGPlayerControls.seek(0);
         closure_4(true);
       } else {
@@ -82,86 +101,98 @@ function AnimatedImage(arg0) {
       }
     }
   }, items1);
-  const obj2 = shouldAnimate(aPNGPlayerControls[9]);
+  const tmp10 = stateFromStores(aPNGPlayerControls[11]);
   const tmp9 = stateFromStores;
   if (first) {
     num = 100;
   }
-  stateFromStores(aPNGPlayerControls[11])(() => {
-    if (first) {
+  tmp10(() => {
+    const tmp = first;
+    if (tmp) {
       aPNGPlayerControls.play();
     }
   }, num);
-  const tmp10 = stateFromStores(aPNGPlayerControls[11]);
+  const tmpResult = tmp(aPNGPlayerControls[10]);
   if (tmpResult.isAndroid()) {
+    let tmp13;
     if (!stateFromStores) {
       const obj3 = { ref, url: imageUrl, autoplay: false, style };
-      let tmp13 = closure_7(tmp(tmp2[9]).APNGPlayer, obj3);
+      tmp13 = closure_7(tmp(tmp2[9]).APNGPlayer, obj3);
     }
     return tmp13;
   }
-  tmp13 = closure_7(tmp9(tmp2[12]), { style, resizeMode: "contain", source: { uri: imageUrl } });
+  const obj4 = { style, resizeMode: "contain", source: { uri: imageUrl } };
+  tmp13 = closure_7(tmp9(tmp2[12]), obj4);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let react = react_mod;
+const View = react_native.View;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const PX_40 = nativeDefault.space.PX_40;
-let createStyles = fn(4836);
+let createStyles = createStyles_mod;
 let closure_10 = createStyles.createStyles(() => {
-  const obj = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 }, image: null, textContainer: null };
-  const size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs };
-  obj.image = size;
-  obj.textContainer = { flex: 1 };
+  const obj = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 }, image: size, textContainer: { flex: 1 } };
+  ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 });
+  size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs };
   return obj;
 });
-createStyles = fn(4836);
-let obj3 = { preview: null };
-let size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, border: { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1 }, overflow: "hidden" };
-obj3.preview = size;
-let closure_13 = createStyles.createStyles(obj3);
-size = fn(2);
+createStyles = createStyles_mod;
+let obj = { preview: size };
+size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, border: obj2, overflow: "hidden" };
+createStyles = createStyles.createStyles;
+obj2 = { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1 };
+let closure_13 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/premium/native/components/PremiumGiftPromotionDetails.tsx");
 
 export default function PremiumGiftPromotionDetails(imageUrl) {
   imageUrl = imageUrl.imageUrl;
+  const shouldAnimate = imageUrl.shouldAnimate;
   const merged = Object.assign(imageUrl, Object.assign({ imageUrl: 0, shouldAnimate: 0 }));
   let tmp3Result = null != imageUrl;
+  const tmp4 = PremiumGiftPromotionDetailsBase;
   if (tmp3Result) {
-    const obj = { style: tmp2.image, imageUrl, shouldAnimate: imageUrl.shouldAnimate };
+    const obj = { style: tmp2.image, imageUrl, shouldAnimate };
     tmp3Result = tmp3(AnimatedImage, obj);
   }
+  const obj2 = { graphic: tmp3Result };
   const merged1 = Object.assign(merged);
-  return React5(PremiumGiftPromotionDetailsBase, { graphic: tmp3Result });
+  return metroImportDefault(tmp4, obj2);
 };
 export const PremiumGiftPromotionCollectibleRewardDetails = function PremiumGiftPromotionCollectibleRewardDetails(product) {
+  let CollectiblesPreview;
+  let obj2;
+  let rounded;
   product = product.product;
   require = product;
   const merged = Object.assign(product, Object.assign({ product: 0 }));
   const items = [product];
-  const memo = noop.useMemo(() => {
-    if (null != product) {
-      if (0 !== tmp.items.length) {
-        if (tmp.type === CollectiblesItemType.CollectiblesItemType.BUNDLE) {
-          ({ items: obj2.items, previewAssets: obj2.previewAssets } = tmp);
-          let obj = { type: "bundle", items: null, previewAssets: null };
+  const tmp2 = closure_13();
+  const memo = react.useMemo(() => {
+    if (null != require) {
+      if (0 !== require.items.length) {
+        let obj;
+        if (require.type === CollectiblesItemType.CollectiblesItemType.BUNDLE) {
           const obj3 = { type: "bundle", items: null, previewAssets: null };
+          ({ items: obj2.items, previewAssets: obj2.previewAssets } = require);
+          obj = obj3;
         } else {
-          obj = { type: "single", item: tmp.items[0] };
+          obj = { type: "single", item: require.items[0] };
         }
         return obj;
       }
     }
   }, items);
-  if (null == memo) {
-    const obj2 = { graphic: tmp6 };
-    const merged1 = Object.assign(merged);
-    return tmp4(tmp5, obj2);
-  } else {
-    let obj = { style: tmp2.preview, children: null };
-    let obj3 = { collectiblesItemData: memo, size: null };
+  let tmp4Result = null != memo;
+  const tmp5 = PremiumGiftPromotionDetailsBase;
+  if (tmp4Result) {
+    let obj = { style: tmp2.preview, children: closure_7(CollectiblesPreview, obj2) };
+    obj2 = { collectiblesItemData: memo, size: rounded };
+    CollectiblesPreview = SKUPreview.CollectiblesPreview;
+    const tmp7 = View;
+    const tmp8 = require;
     if ("bundle" === memo.type) {
       const _Math2 = Math;
-      let rounded = Math.floor(1.2 * tmp10);
+      rounded = Math.floor(1.2 * tmp10);
     } else {
       rounded = tmp10;
       if (memo.item.type === tmp8(1974).CollectiblesItemType.AVATAR_DECORATION) {
@@ -169,10 +200,9 @@ export const PremiumGiftPromotionCollectibleRewardDetails = function PremiumGift
         rounded = Math.floor(1.5 * tmp10);
       }
     }
-    obj3.size = rounded;
-    obj3 = tmp4(SKUPreview.CollectiblesPreview, obj3);
-    obj.children = obj3;
-    tmp4(View, obj);
-    tmp8 = require;
+    tmp4Result = tmp4(tmp7, obj);
   }
+  let obj3 = { graphic: tmp4Result };
+  const merged1 = Object.assign(merged);
+  return closure_7(tmp5, obj3);
 };

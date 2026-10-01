@@ -4,30 +4,35 @@
 // Exports: useAnimatedKeyboard
 
 // Module 1786
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 
-({ useEffect: c2, useRef: c3 } = noop);
+let dependencyMap;
+
+let c2;
+let c3;
+({ useEffect: c2, useRef: c3 } = react);
 let closure_4 = { code: "function pnpm_useAnimatedKeyboardTs1(state,height){const{keyboardEventData}=this.__closure;keyboardEventData.state.value=state;keyboardEventData.height.value=height;}" };
 let closure_5 = { code: "function pnpm_useAnimatedKeyboardTs2(state,height){const{_keyboardEventData}=this.__closure;_keyboardEventData.state.value=state;_keyboardEventData.height.value=height;}" };
 
 export const useAnimatedKeyboard = function useAnimatedKeyboard() {
+  let obj3;
+  let obj4;
+  let ref;
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = { isStatusBarTranslucentAndroid: "Array", isNavigationBarTranslucentAndroid: "flex" };
+    obj = { isStatusBarTranslucentAndroid: "Array", isNavigationBarTranslucentAndroid: "channel" };
   }
   let ref2;
   let obj2;
   const tmp = ref2(null);
   dependencyMap = tmp;
   const tmp2 = ref2(-1);
-  closure_2 = tmp2;
+  let closure_2 = tmp2;
   const tmp3 = ref2(false);
   ref2 = tmp3;
   if (null === tmp.current) {
-    obj2 = { state: obj(1682).makeMutable(obj(1663).KeyboardState.UNKNOWN), height: null };
-    const obj3 = obj(1682);
-    obj2.height = obj(1682).makeMutable(0);
-    const obj4 = obj(1682);
+    obj2 = { state: obj3.makeMutable(obj(1663).KeyboardState.UNKNOWN), height: obj4.makeMutable(0) };
+    obj3 = obj(1682);
     let fn = function c(value, value2) {
       obj2.state.value = value;
       obj2.height.value = value2;
@@ -36,10 +41,11 @@ export const useAnimatedKeyboard = function useAnimatedKeyboard() {
     fn.__closure = obj6;
     fn.__workletHash = 4393537867728;
     fn.__initData = obj2;
-    tmp2.current = obj(1682).subscribeForKeyboardEvents(fn, obj);
+    obj4 = obj(1682);
+    const obj5 = obj(1682);
+    tmp2.current = obj5.subscribeForKeyboardEvents(fn, obj);
     tmp.current = obj2;
     tmp3.current = true;
-    const obj5 = obj(1682);
   }
   closure_2(() => {
     if (false === ref2.current) {

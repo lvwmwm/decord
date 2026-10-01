@@ -9,30 +9,35 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 124
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6973 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
 import useTrackImpression from "useTrackImpression" /* 8230 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/native/hooks/useTrackShopCardImpression.tsx");
 
 export const useTrackShopCardImpression = function useTrackShopCardImpression(product, selectedProduct) {
+  let closure_4;
+  let closure_5;
+  let collectiblesAnalyticsContext;
   _require = product;
   importDefault = selectedProduct;
-  collectiblesAnalyticsContext = require("CollectiblesAnalyticsContext").useCollectiblesAnalyticsContext();
-  const analyticsLocations = require("useAnalyticsLocations")().analyticsLocations;
   let obj = require("CollectiblesAnalyticsContext");
   const tmp = collectiblesAnalyticsContext;
-  const tmp3 = importDefault;
-  ({ width: closure_4, height: closure_5 } = require("useWindowDimensions")());
+  collectiblesAnalyticsContext = obj.useCollectiblesAnalyticsContext();
+  let tmp3 = importDefault;
+  const analyticsLocations = require("useAnalyticsLocations")().analyticsLocations;
   const tmp4 = require("useWindowDimensions")();
-  const currentUser = require("useCurrentUser").useCurrentUser();
+  ({ width: closure_4, height: closure_5 } = tmp4);
   let obj2 = require("useCurrentUser");
-  const shopDiscountSource = require("CollectiblesUtils").getShopDiscountSource(currentUser);
+  const currentUser = obj2.useCurrentUser();
+  const obj3 = require("CollectiblesUtils");
+  const shopDiscountSource = obj3.getShopDiscountSource(currentUser);
+  const tmp7 = analyticsLocations;
   const ref = analyticsLocations.useRef(null);
-  closure_8 = analyticsLocations.useRef(false);
-  closure_9 = analyticsLocations.useRef(false);
+  let closure_8 = analyticsLocations.useRef(false);
+  let closure_9 = analyticsLocations.useRef(false);
   const items = [selectedProduct.skuId];
   const effect = analyticsLocations.useEffect(() => {
     closure_8.current = false;
@@ -40,6 +45,7 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   }, items);
   const items1 = [product, selectedProduct, , , , , ];
   let cardId;
+  const useCallback = analyticsLocations.useCallback;
   if (collectiblesAnalyticsContext != null) {
     cardId = collectiblesAnalyticsContext.cardId;
   }
@@ -56,43 +62,46 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   items1[4] = tilePosition;
   items1[5] = analyticsLocations;
   items1[6] = shopDiscountSource;
-  closure_10 = analyticsLocations.useCallback(() => {
-    const obj2 = { name: discord_common_AnalyticsUtils.ImpressionNames.SHOP_CARD, type: discord_common_AnalyticsUtils.ImpressionTypes.VIEW, properties: null };
-    const obj3 = { sku_id: selectedProduct.skuId, card_id: null, shop_session_id: null, position_in_section: null, product_sku_ids: null, location_stack: null, discount_source: null };
+  let closure_10 = useCallback(() => {
     let cardId;
-    if (collectiblesAnalyticsContext != null) {
-      cardId = tmp3.cardId;
-    }
-    obj3.card_id = cardId;
+    let obj2;
     let sessionId;
-    if (collectiblesAnalyticsContext != null) {
-      sessionId = tmp3.sessionId;
-    }
-    obj3.shop_session_id = sessionId;
     let tilePosition;
+    let tmpResult;
+    let tmpResult2;
+    const tmp3 = useTrackImpression;
+    const trackImpression = tmp3.trackImpression;
+    const obj = { name: discord_common_AnalyticsUtils.ImpressionNames.SHOP_CARD, type: discord_common_AnalyticsUtils.ImpressionTypes.VIEW, properties: obj2 };
+    obj2 = { sku_id: selectedProduct.skuId, card_id: cardId, shop_session_id: sessionId, position_in_section: tilePosition, product_sku_ids: tmpResult.getProductSkuIds(_require), location_stack: analyticsLocations, discount_source: tmpResult2.getAnalyticsShopDiscountSource(shopDiscountSource) };
+    cardId = undefined;
     if (collectiblesAnalyticsContext != null) {
-      tilePosition = tmp3.tilePosition;
+      cardId = tmp4.cardId;
     }
-    obj3.position_in_section = tilePosition;
-    const obj = useTrackImpression;
-    obj3.product_sku_ids = CollectiblesProductUtils.getProductSkuIds(closure_0);
-    obj3.location_stack = analyticsLocations;
-    const tmpResult = CollectiblesProductUtils;
-    obj3.discount_source = CollectiblesUtils.getAnalyticsShopDiscountSource(shopDiscountSource);
-    obj2.properties = obj3;
-    obj.trackImpression(obj2, false, true);
+    sessionId = undefined;
+    if (collectiblesAnalyticsContext != null) {
+      sessionId = tmp4.sessionId;
+    }
+    tilePosition = undefined;
+    if (collectiblesAnalyticsContext != null) {
+      tilePosition = tmp4.tilePosition;
+    }
+    tmpResult = CollectiblesProductUtils;
+    tmpResult2 = CollectiblesUtils;
+    trackImpression(obj, false, true);
   }, items1);
   tmp3(tmp[9])(() => {
+    let ref2;
     const current = ref.current;
     if (current != null) {
       current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
         const bound = Math.min(arg4 + arg2, closure_1_4);
-        const bound1 = Math.max(0, bound - Math.max(arg4, 0));
-        const bound2 = Math.min(arg5 + arg3, closure_1_5);
+        const max2 = Math.max;
+        const maxResult = max(0, bound - Math.max(arg4, 0));
+        const bound1 = Math.min(arg5 + arg3, closure_1_5);
         const result = arg2 * arg3;
         let num = 0;
         if (result > 0) {
-          num = bound1 * Math.max(0, bound2 - Math.max(arg5, 0)) / result;
+          num = maxResult * max2(0, bound1 - Math.max(arg5, 0)) / result;
         }
         if (num >= 0.5) {
           if (ref.current) {
@@ -100,7 +109,7 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
               closure_1_10();
               tmp7.current = true;
             }
-            ref.current = tmp5;
+            ref.current = num >= 0.5;
           }
         }
         if (num < 0.5) {

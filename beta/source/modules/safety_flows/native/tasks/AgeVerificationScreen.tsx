@@ -5,41 +5,49 @@
 // Exports: default
 
 // Module 17705 (AgeVerificationScreen)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import Server from "Server" /* 1979 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
 import types from "types" /* 17692 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Pressable = fn(17).Pressable;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const Pressable = react_native.Pressable;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ helpLink: { textAlign: "center" } });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/safety_flows/native/tasks/AgeVerificationScreen.tsx");
 
 export default function AgeVerificationScreen() {
-  const memo = noop.useMemo(() => memo(stateFromStores[6]).v4(), []);
-  const tmp2 = closure_8();
-  const onTaskComplete = memo(stateFromStores[7]).useOnTaskComplete();
+  let ageVerificationMethods;
+  let currentUser;
+  let intl3;
+  let loading;
+  let stateFromStores;
+  const memo = react.useMemo(() => {
+    const obj = memo(stateFromStores[6]);
+    return obj.v4();
+  }, []);
+  let tmp2 = closure_8();
   let obj = memo(stateFromStores[7]);
+  const onTaskComplete = obj.useOnTaskComplete();
   const items = [UserStore];
-  stateFromStores = memo(stateFromStores[8]).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj2 = memo(stateFromStores[8]);
+  stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj3 = {
     onClose() {
-      return onTaskComplete({ type: types.TaskInputType.Empty });
+      const obj = { type: types.TaskInputType.Empty };
+      return onTaskComplete(obj);
     }
   };
   const items1 = [onTaskComplete, stateFromStores];
-  ({ loading, ageVerificationMethods } = onTaskComplete(stateFromStores[9])({
-    onClose() {
-      return onTaskComplete({ type: types.TaskInputType.Empty });
-    }
-  }));
-  const effect = noop.useEffect(() => {
+  ({ loading, ageVerificationMethods } = onTaskComplete(stateFromStores[9])(obj3));
+  const tmp5 = onTaskComplete(stateFromStores[9])(obj3);
+  const effect = react.useEffect(() => {
     let prop;
     if (stateFromStores != null) {
       prop = stateFromStores.ageVerificationStatus;
@@ -50,42 +58,25 @@ export default function AgeVerificationScreen() {
     }
   }, items1);
   const items2 = [memo];
-  const effect1 = noop.useEffect(() => {
-    const result = AgeVerificationAnalyticsUtils.trackAgeVerificationModalViewed(memo, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.SAFETY_FLOWS);
+  const effect1 = react.useEffect(() => {
+    const trackAgeVerificationModalViewed = AgeVerificationAnalyticsUtils.trackAgeVerificationModalViewed;
+    AgeVerificationAnalyticsUtils;
+    const result = trackAgeVerificationModalViewed(memo, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.SAFETY_FLOWS);
   }, items2);
-  const obj4 = { ImageComponent: null, title: null, subtitle: null, footer: null, submitting: null, children: null };
-  const tmp5 = onTaskComplete(stateFromStores[9])({
-    onClose() {
-      return onTaskComplete({ type: types.TaskInputType.Empty });
-    }
-  });
-  obj4.ImageComponent = jsx(memo(stateFromStores[14]).ShieldSpotIllustration, {});
+  onTaskComplete(stateFromStores[13]);
   const intl = memo(stateFromStores[15]).intl;
-  obj4.title = intl.string(onTaskComplete(stateFromStores[16])["dSkE/A"]);
   const intl2 = memo(stateFromStores[15]).intl;
-  obj4.subtitle = intl2.format(onTaskComplete(stateFromStores[17]).RpMIT0, {
+  const obj5 = {
     handleOnHelpUrlHook() {
-      const obj = onTaskComplete(stateFromStores[18]);
-      obj.openUrl(onTaskComplete(stateFromStores[19]).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+      const openUrl = onTaskComplete(stateFromStores[18]).openUrl;
+      onTaskComplete(stateFromStores[18]);
+      const obj = onTaskComplete(stateFromStores[19]);
+      openUrl(obj.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
     }
-  });
-  const obj6 = { children: null };
-  const obj7 = {
-    accessibilityRole: "button",
-    onPress() {
-      onTaskComplete(stateFromStores[21]).logout("age_verification_screen");
-    },
-    children: null
   };
-  const obj8 = { variant: "text-sm/medium", color: "text-link", style: tmp2.helpLink, children: null };
-  const intl3 = memo(stateFromStores[15]).intl;
-  obj8.children = intl3.string(memo(stateFromStores[15]).t["2jxGer"]);
-  obj7.children = jsx(memo(stateFromStores[22]).Text, { variant: "text-sm/medium", color: "text-link", style: tmp2.helpLink, children: null });
-  obj6.children = <Pressable accessibilityRole="button" onPress={function onPress() {
-    onTaskComplete(stateFromStores[21]).logout("age_verification_screen");
-  }}>{null}</Pressable>;
-  obj4.footer = jsx(memo(stateFromStores[20]).ModalDisclaimer, { children: null });
-  obj4.submitting = loading;
-  obj4.children = jsx(memo(stateFromStores[23]).AgeVerificationMethodsContainer, { ageVerificationMethods, modalSessionId: memo });
-  return jsx(onTaskComplete(stateFromStores[13]), { ImageComponent: null, title: null, subtitle: null, footer: null, submitting: null, children: null });
+  const ModalDisclaimer = memo(stateFromStores[20]).ModalDisclaimer;
+  ({ variant: "text-sm/medium", color: "text-link", style: tmp2.helpLink, children: intl3.string(memo(stateFromStores[15]).t["2jxGer"]) });
+  const Text = memo(stateFromStores[22]).Text;
+  intl3 = memo(stateFromStores[15]).intl;
+  return <tmp8 ImageComponent={null} title={intl.string(onTaskComplete(stateFromStores[16])["dSkE/A"])} subtitle={intl2.format(onTaskComplete(stateFromStores[17]).RpMIT0, obj5)} footer={null} submitting={loading}>{null}</tmp8>;
 };

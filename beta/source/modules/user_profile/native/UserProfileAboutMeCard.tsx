@@ -6,10 +6,12 @@
 
 // Module 10777 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants2 from "Constants" /* 1074 */;
+import intl4 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
-import KeyboardTypes from "KeyboardTypes" /* 1611 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1484 */;
 import useToken from "useToken" /* 4531 */;
 import ChatInputUtils from "ChatInputUtils" /* 4701 */;
 import Text_Text from "Text/Text" /* 4832 */;
@@ -18,57 +20,88 @@ import MaskedLinkUtils from "MaskedLinkUtils" /* 7818 */;
 import BioTextDefault from "BioText" /* 10778 */;
 import useFriendsSinceDate from "useFriendsSinceDate" /* 10779 */;
 import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10781 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import Constants from "Constants" /* 6629 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const GuildIconDefault = tmp9(5896);
-require = fn;
-function Heading(children) {
-  const themeType = children.themeType;
+let children;
+
+let UserProfileThemeTypes;
+let closure_12;
+let map1;
+let metroImportAll;
+let tmp;
+let tmp10;
+let unpackModuleId;
+const KeyboardTypes = tmp(1611);
+const GuildIconDefault = tmp10(5896);
+function Heading(themeType) {
+  let headingSpacing;
+  let headingVariant;
+  themeType = themeType.themeType;
   let tmp;
+  children = themeType.children;
   if (null != themeType) {
-    tmp = dependencyMap[themeType];
+    tmp = closure_15[themeType];
   }
   if (tmp == null) {
     tmp = closure_14;
   }
   ({ headingVariant, headingSpacing } = tmp);
-  let token = useToken.useToken(nativeDefault.modules.mobile.USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE);
+  const obj = useToken;
+  let token = obj.useToken(nativeDefault.modules.mobile.USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE);
+  const Text = Text_Text.Text;
+  const tmp4 = unpackModuleId;
   if (token == null) {
     token = headingVariant;
   }
-  return closure_1_11(Text_Text.Text, { accessibilityRole: "header", variant: token, color: "user-profile-about-me-heading-text", style: { marginBottom: headingSpacing }, children: children.children });
+  const obj2 = { accessibilityRole: "header", variant: token, color: "user-profile-about-me-heading-text", style: { marginBottom: headingSpacing }, children };
+  return tmp4(Text, obj2);
 }
 function TextWithIcon(themeType) {
+  let accessibilityLabel;
+  let icon;
+  let items;
+  let items1;
   themeType = themeType.themeType;
   ({ icon, children, accessibilityLabel } = themeType);
   let tmp2;
+  const tmp = closure_16();
   if (null != themeType) {
-    tmp2 = dependencyMap[themeType];
+    tmp2 = closure_15[themeType];
   }
   if (tmp2 == null) {
     tmp2 = closure_14;
   }
-  const obj = { style: null, accessible: true, accessibilityLabel, children: null };
-  const items = [closure_16().textWithIcon, { columnGap: tmp2.columnGap }];
-  obj.style = items;
-  const items1 = [icon, closure_1_11(Text_Text.Text, { variant: tmp2.textVariant, color: "text-default", children })];
-  obj.children = items1;
-  return closure_1_12(View, obj);
+  const obj = { style: items, accessible: true, accessibilityLabel, children: items1 };
+  items = [tmp.textWithIcon, { columnGap: tmp2.columnGap }];
+  items1 = [icon, unpackModuleId(Text_Text.Text, { variant: tmp2.textVariant, color: "text-default", children })];
+  return closure_12(View, obj);
 }
 function Bio(arg0) {
+  let displayProfile;
+  let intl;
+  let items;
+  let lineClamp;
+  let pendingBio;
+  let themeType;
+  let userId;
   ({ displayProfile, themeType } = arg0);
   let tmp;
   ({ userId, pendingBio, lineClamp } = arg0);
   if (null != themeType) {
-    tmp = dependencyMap[themeType];
+    tmp = closure_15[themeType];
   }
   if (tmp == null) {
     tmp = closure_14;
   }
   let previewBio;
+  const textVariant = tmp.textVariant;
   if (displayProfile != null) {
     previewBio = displayProfile.getPreviewBio(pendingBio);
   }
@@ -76,269 +109,308 @@ function Bio(arg0) {
   if (null != previewBio) {
     tmp4 = null;
     if ("" !== previewBio) {
-      const obj = { children: null };
-      const obj2 = { themeType, children: null };
-      const intl = util.intl;
-      obj2.children = intl.string(util.t.ZzAR2Y);
-      const items = [closure_1_11(Heading, obj2), ];
-      const obj3 = { bio: previewBio, userId, textVariant: tmp.textVariant, lineClamp };
-      items[1] = closure_1_11(BioTextDefault, obj3);
-      obj.children = items;
-      tmp4 = closure_1_12(View, obj);
+      const obj = { children: items };
+      const obj2 = { themeType, children: intl.string(intl4.t.ZzAR2Y) };
+      intl = intl4.intl;
+      items = [unpackModuleId(Heading, obj2), ];
+      const obj3 = { bio: previewBio, userId, textVariant, lineClamp };
+      items[1] = unpackModuleId(BioTextDefault, obj3);
+      tmp4 = closure_12(View, obj);
     }
   }
   return tmp4;
 }
 function MemberJoinDates(userId) {
+  let columnGap;
+  let intl;
+  let intl2;
+  let intl3;
+  let items4;
+  let items5;
+  let items6;
+  let locale;
+  let obj11;
+  let obj12;
+  let textVariant;
+  let themeType;
+  let tmp10Result;
   userId = userId.userId;
   ({ guildId: importDefault, themeType } = userId);
   let tmp2;
+  const tmp = closure_16();
   if (null != themeType) {
-    tmp2 = dependencyMap[themeType];
+    tmp2 = closure_15[themeType];
   }
   if (tmp2 == null) {
     tmp2 = closure_14;
   }
   ({ textVariant, columnGap } = tmp2);
-  const tmp = closure_16();
   const items = [LocaleStore];
-  const stateFromStores = userId(504).useStateFromStores(items, () => locale.locale);
   const obj = userId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   const items1 = [GuildStore];
-  const stateFromStores1 = userId(504).useStateFromStores(items1, () => {
+  const obj2 = userId(504);
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     let guild = null;
     if (null != importDefault) {
       guild = GuildStore.getGuild(tmp);
     }
     return guild;
   });
-  const obj2 = userId(504);
   const items2 = [GuildMemberStore];
-  const stateFromStores2 = userId(504).useStateFromStores(items2, () => {
+  const obj3 = userId(504);
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => {
     let member = null;
     if (null != importDefault) {
       member = GuildMemberStore.getMember(tmp, userId);
     }
     return member;
   });
-  const obj3 = userId(504);
-  const obj4 = userId(5719);
-  const createdAtDate = obj4.getCreatedAtDate(SnowflakeUtilsDefault.extractTimestamp(userId), stateFromStores);
+  const getCreatedAtDate = userId(5719).getCreatedAtDate;
+  userId(5719);
+  const obj4 = SnowflakeUtilsDefault;
+  const createdAtDate = getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
   let joinedAt;
+  const getCreatedAtDate2 = userId(5719).getCreatedAtDate;
+  userId(5719);
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
   }
-  const createdAtDate1 = userId(5719).getCreatedAtDate(joinedAt, stateFromStores);
-  const obj7 = { themeType, children: null };
-  const intl = tmp4(1115).intl;
-  obj7.children = intl.string(userId(1115).t.a6XYD9);
-  const items3 = [closure_11(Heading, obj7), ];
-  const obj8 = { style: null, children: null };
-  const items4 = [tmp.memberJoinDates, { columnGap }];
-  obj8.style = items4;
-  const obj9 = { themeType, icon: closure_11(userId(10278).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
-  const intl2 = tmp4(1115).intl;
-  obj9.accessibilityLabel = intl2.formatToPlainString(userId(1115).t["9t7w53"], { date: createdAtDate });
-  obj9.children = createdAtDate;
-  const items5 = [closure_11(TextWithIcon, obj9), ];
-  let tmp13Result = null != stateFromStores1 && null != createdAtDate1;
-  if (tmp13Result) {
-    const obj10 = { children: null };
-    const obj11 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
-    const items6 = [tmp15(tmp4(4832).Text, obj11), ];
-    const obj12 = { themeType, icon: null, accessibilityLabel: null, children: null };
-    const obj13 = { guild: stateFromStores1, size: tmp4(5896).GuildIconSizes.XXSMALL };
-    obj12.icon = tmp15(GuildIconDefault, obj13);
-    const intl3 = tmp4(1115).intl;
-    const obj14 = { guildName: stateFromStores1.name, date: createdAtDate1 };
-    obj12.accessibilityLabel = intl3.formatToPlainString(tmp4(1115).t.FdLNDK, obj14);
-    obj12.children = createdAtDate1;
-    items6[1] = tmp15(TextWithIcon, obj12);
-    obj10.children = items6;
-    tmp13Result = tmp13(closure_13, obj10);
-    const tmp9Result = GuildIconDefault;
+  const createdAtDate2 = getCreatedAtDate2(joinedAt, stateFromStores);
+  const obj5 = { themeType, children: intl.string(userId(1115).t.a6XYD9) };
+  intl = tmp4(1115).intl;
+  const items3 = [closure_11(Heading, obj5), ];
+  const obj6 = { style: items4, children: items5 };
+  items4 = [tmp.memberJoinDates, { columnGap }];
+  const obj7 = { themeType, icon: closure_11(userId(10278).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1115).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
+  intl2 = tmp4(1115).intl;
+  items5 = [closure_11(TextWithIcon, obj7), ];
+  let tmp15Result = null != stateFromStores1 && null != createdAtDate2;
+  const tmp18 = TextWithIcon;
+  if (tmp15Result) {
+    const obj8 = { children: items6 };
+    const obj9 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
+    items6 = [closure_11(tmp4(4832).Text, obj9), ];
+    const obj10 = { themeType, icon: closure_11(tmp10Result, obj11), accessibilityLabel: intl3.formatToPlainString(userId(1115).t.FdLNDK, obj12), children: createdAtDate2 };
+    obj11 = { guild: stateFromStores1, size: userId(5896).GuildIconSizes.XXSMALL };
+    tmp10Result = GuildIconDefault;
+    intl3 = tmp4(1115).intl;
+    obj12 = { guildName: stateFromStores1.name, date: createdAtDate2 };
+    items6[1] = closure_11(tmp18, obj10);
+    tmp15Result = tmp15(closure_13, obj8);
   }
-  const obj15 = { children: null };
-  items5[1] = tmp13Result;
-  obj8.children = items5;
-  items3[1] = closure_12(View, obj8);
-  obj15.children = items3;
-  return closure_12(View, obj15);
+  const obj13 = { children: items3 };
+  items5[1] = tmp15Result;
+  items3[1] = closure_12(View, obj6);
+  return closure_12(View, obj13);
 }
 function FriendsSinceDate(themeType) {
+  let intl;
+  let items;
   themeType = themeType.themeType;
   let tmp;
+  const userId = themeType.userId;
   if (null != themeType) {
-    tmp = dependencyMap[themeType];
+    tmp = closure_15[themeType];
   }
   if (tmp == null) {
     tmp = closure_14;
   }
-  const friendsSinceDate = useFriendsSinceDate.useFriendsSinceDate(themeType.userId);
+  const textVariant = tmp.textVariant;
+  const obj = useFriendsSinceDate;
+  const friendsSinceDate = obj.useFriendsSinceDate(userId);
   let tmp6 = null;
   if (null != friendsSinceDate) {
-    const obj2 = { children: null };
-    const obj3 = { themeType, children: null };
-    const intl = tmp3(1115).intl;
-    obj3.children = intl.string(tmp3(1115).t.wlTO8v);
-    const items = [closure_1_11(Heading, obj3), ];
-    const obj4 = { variant: tmp.textVariant, color: "text-default", children: friendsSinceDate };
-    items[1] = closure_1_11(tmp3(4832).Text, obj4);
-    obj2.children = items;
-    tmp6 = closure_1_12(View, obj2);
+    const obj2 = { children: items };
+    const obj3 = { themeType, children: intl.string(intl4.t.wlTO8v) };
+    intl = tmp3(1115).intl;
+    items = [unpackModuleId(Heading, obj3), ];
+    const obj4 = { variant: textVariant, color: "text-default", children: friendsSinceDate };
+    items[1] = unpackModuleId(Text_Text.Text, obj4);
+    tmp6 = closure_12(View, obj2);
   }
   return tmp6;
 }
 function PolicyLinks(arg0) {
+  let intl;
+  let intl2;
+  let intl3;
+  let items1;
+  let privacyPolicyUrl;
+  let termsOfServiceUrl;
+  let themeType;
+  let tmp3Result;
   ({ termsOfServiceUrl, privacyPolicyUrl, themeType } = arg0);
   if (null != termsOfServiceUrl) {
-    const obj = { themeType, children: null };
-    const intl = util.intl;
-    obj.children = intl.string(util.t.l6DP2n);
-    const items = [closure_1_11(Heading, obj), ];
-    const obj2 = { style: tmp.policyLinks, children: null };
+    const obj = { themeType, children: intl.string(intl4.t.l6DP2n) };
+    intl = intl4.intl;
+    const items = [unpackModuleId(Heading, obj), ];
     let tmp5Result = null != termsOfServiceUrl;
+    const obj2 = { style: tmp.policyLinks, children: items1 };
     if (tmp5Result) {
-      const obj3 = { url: termsOfServiceUrl, label: null, themeType: null };
-      const intl2 = tmp7(1115).intl;
-      obj3.label = intl2.string(tmp7(1115).t.s7STcY);
-      obj3.themeType = themeType;
+      const obj3 = { url: termsOfServiceUrl, label: intl2.string(intl4.t.s7STcY), themeType };
+      intl2 = tmp7(1115).intl;
       tmp5Result = tmp5(PolicyLink, obj3);
     }
-    const items1 = [tmp5Result, ];
+    items1 = [tmp5Result, ];
     let tmp5Result2 = null != privacyPolicyUrl;
     if (tmp5Result2) {
-      const obj4 = { url: privacyPolicyUrl, label: null, themeType: null };
-      const intl3 = tmp7(1115).intl;
-      obj4.label = intl3.string(tmp7(1115).t.kH3JR5);
-      obj4.themeType = themeType;
+      const obj4 = { url: privacyPolicyUrl, label: intl3.string(intl4.t.kH3JR5), themeType };
+      intl3 = tmp7(1115).intl;
       tmp5Result2 = tmp5(PolicyLink, obj4);
     }
-    const obj5 = { children: null };
+    const obj5 = { children: items };
     items1[1] = tmp5Result2;
-    obj2.children = items1;
-    items[1] = closure_1_12(View, obj2);
-    obj5.children = items;
-    let tmp3Result = tmp3(tmp4, obj5);
+    items[1] = closure_12(View, obj2);
+    tmp3Result = tmp3(tmp4, obj5);
   } else {
     tmp3Result = null;
   }
   return tmp3Result;
 }
-function PolicyLink(children) {
-  ({ url: require, themeType } = children);
+function PolicyLink(label) {
+  let href;
+  let themeType;
+  ({ url: require, themeType } = label);
   let tmp;
+  label = label.label;
   if (null != themeType) {
-    tmp = dependencyMap[themeType];
+    tmp = closure_15[themeType];
   }
   if (tmp == null) {
     tmp = closure_14;
   }
-  return closure_11(native.PressableOpacity, {
+  const textVariant = tmp.textVariant;
+  let obj = {
     accessibilityRole: "link",
     onPress() {
-      return MaskedLinkUtils.handleClick({ href });
+      const obj = MaskedLinkUtils;
+      const obj2 = { href: require };
+      return obj.handleClick(obj2);
     },
-    children: closure_11(Text_Text.Text, { variant: tmp.textVariant, color: "text-link", children: children.label })
-  });
+    children: closure_11(Text_Text.Text, { variant: textVariant, color: "text-link", children: label })
+  };
+  const PressableOpacity = native.PressableOpacity;
+  return closure_11(PressableOpacity, obj);
 }
 function BotSlashCommands(channel) {
+  let application;
+  let applicationId;
+  let commandIds;
+  let commands;
+  let intl;
+  let intl2;
+  let themeType;
   channel = channel.channel;
   let analyticsLocations;
   let context;
   application = undefined;
   ({ applicationId, commandIds, themeType } = channel);
+  let tmp = closure_16();
   analyticsLocations = analyticsLocations(context[23])().analyticsLocations;
-  const tmp = closure_16();
-  context = channel(context[24]).useUserProfileAnalyticsContext().context;
   let obj = channel(context[24]);
-  ({ commands, application } = analyticsLocations(context[25])(channel, applicationId, commandIds));
+  context = obj.useUserProfileAnalyticsContext().context;
+  const tmp4 = analyticsLocations(context[25])(channel, applicationId, commandIds);
+  ({ commands, application } = tmp4);
   const items = [application, , , , ];
   ({ id: arr[1], guild_id: arr[2] } = channel);
   items[3] = context;
   items[4] = analyticsLocations;
   let tmp8Result = null;
   if (null != commands) {
+    let num = 0;
     tmp8Result = null;
     if (0 !== commands.length) {
-      let obj2 = { themeType, children: null };
-      const intl2 = tmp3(tmp2[13]).intl;
-      obj2.children = intl2.string(tmp3(tmp2[13]).t["0hKkS+"]);
+      let obj2 = { themeType, children: intl2.string(channel(tmp2[13]).t["0hKkS+"]) };
+      let tmp9 = View;
+      let tmp10 = closure_11;
+      intl2 = tmp3(tmp2[13]).intl;
       const items1 = [closure_11(Heading, obj2), , ];
-      let obj3 = { style: tmp.slashCommands, children: commands.map((command) => closure_2_11(UserProfileAboutMeCardCommandDefault, { application, channel, command }, command.id)) };
+      let obj3 = {
+        style: tmp.slashCommands,
+        children: commands.map((command) => {
+              const obj = { application, channel, command };
+              return unpackModuleId(UserProfileAboutMeCardCommandDefault, obj, command.id);
+            })
+      };
       items1[1] = closure_11(View, obj3);
       let tmp10Result = null != application && null != application.bot;
+      const tmp8 = closure_12;
       if (tmp10Result) {
-        let obj4 = { size: "sm", variant: "tertiary", text: null, onPress: null };
-        const intl = tmp3(tmp2[13]).intl;
-        obj4.text = intl.string(tmp3(tmp2[13]).t.VEfKyb);
-        obj4.onPress = tmp5;
-        tmp10Result = tmp10(tmp3(tmp2[34]).Button, obj4);
+        let obj4 = { size: "sm", variant: "tertiary", text: intl.string(channel(tmp2[13]).t.VEfKyb), onPress: tmp5 };
+        const Button = tmp3(tmp2[34]).Button;
+        intl = tmp3(tmp2[13]).intl;
+        tmp10Result = tmp10(Button, obj4);
       }
-      const obj5 = { children: null };
+      const obj5 = { children: items1 };
       items1[2] = tmp10Result;
-      obj5.children = items1;
-      tmp8Result = closure_12(View, obj5);
-      tmp10 = closure_11;
+      tmp8Result = tmp8(tmp9, obj5);
     }
   }
   return tmp8Result;
 }
-const View = fn(17).View;
-const Constants = fn(6629);
-({ DIVIDER_DOT: closure_8, UserProfileThemeTypes } = Constants);
-const Routes = fn(1074).Routes;
-const AppLauncherRouteName = fn(1484).AppLauncherRouteName;
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
+const View = react_native.View;
+({ DIVIDER_DOT: metroImportAll, UserProfileThemeTypes } = Constants);
+const Routes = Constants2.Routes;
+const AppLauncherRouteName = AppLauncherNativeConstants.AppLauncherRouteName;
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
 let closure_14 = { headingVariant: "text-sm/semibold", textVariant: "text-md/normal", headingSpacing: 8, rowGap: 24, columnGap: 6 };
-const dependencyMap = { [UserProfileThemeTypes.PREVIEW]: { headingVariant: "text-xs/semibold", textVariant: "text-sm/normal", headingSpacing: 4, rowGap: 12, columnGap: 3 } };
-const createStyles = fn(4836);
+let closure_15 = { [UserProfileThemeTypes.PREVIEW]: { headingVariant: "text-xs/semibold", textVariant: "text-sm/normal", headingSpacing: 4, rowGap: 12, columnGap: 3 } };
 let closure_16 = createStyles.createStyles({ card: { flexDirection: "column" }, textWithIcon: { flexDirection: "row", alignItems: "center" }, memberJoinDates: { flexDirection: "row", flexWrap: "wrap" }, slashCommands: { flex: 1, flexDirection: "row", flexWrap: "wrap", marginBottom: 12 }, policyLinks: { rowGap: 8 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCard.tsx");
 
 export default function UserProfileAboutMeCard(arg0) {
+  let bioLineClamp;
+  let channel;
+  let displayProfile;
+  let guildId;
+  let items;
+  let items1;
+  let pendingBio;
+  let privacyPolicyUrl;
+  let style;
+  let themeType;
+  let userId;
   ({ userId, displayProfile, channel, themeType } = arg0);
   ({ pendingBio, bioLineClamp, style } = arg0);
   let tmp2;
+  const tmp = closure_16();
   if (null != themeType) {
-    tmp2 = dependencyMap[themeType];
+    tmp2 = closure_15[themeType];
   }
   if (tmp2 == null) {
     tmp2 = closure_14;
   }
   let application;
+  const rowGap = tmp2.rowGap;
   if (displayProfile != null) {
     application = displayProfile.application;
   }
-  const obj = { style: null, children: null };
-  const items = [closure_16().card, { rowGap: tmp2.rowGap }, style];
-  obj.style = items;
-  const tmp = closure_16();
-  const tmp5 = closure_1_12;
-  const items1 = [closure_1_11(Bio, { userId, displayProfile, pendingBio, themeType, lineClamp: bioLineClamp }), , , , ];
-  const obj2 = { userId, guildId: null, themeType: null };
-  let guildId;
+  const obj = { style: items, children: items1 };
+  items = [tmp.card, { rowGap }, style];
+  items1 = [, , , , ];
+  const tmp6 = UserProfileCardDefault;
+  items1[0] = unpackModuleId(Bio, { userId, displayProfile, pendingBio, themeType, lineClamp: bioLineClamp });
+  const obj2 = { userId, guildId, themeType };
+  guildId = undefined;
+  const tmp5 = closure_12;
+  const tmp8 = MemberJoinDates;
   if (displayProfile != null) {
     guildId = displayProfile.guildId;
   }
-  obj2.guildId = guildId;
-  obj2.themeType = themeType;
-  items1[1] = closure_1_11(MemberJoinDates, obj2);
-  items1[2] = closure_1_11(FriendsSinceDate, { userId, themeType });
+  items1[1] = unpackModuleId(tmp8, obj2);
+  items1[2] = unpackModuleId(FriendsSinceDate, { userId, themeType });
   let termsOfServiceUrl;
+  const tmp10 = PolicyLinks;
   if (application != null) {
     termsOfServiceUrl = application.termsOfServiceUrl;
   }
-  const obj3 = { termsOfServiceUrl, privacyPolicyUrl: null, themeType: null };
-  let privacyPolicyUrl;
+  const obj3 = { termsOfServiceUrl, privacyPolicyUrl, themeType };
+  privacyPolicyUrl = undefined;
   if (application != null) {
     privacyPolicyUrl = application.privacyPolicyUrl;
   }
-  obj3.privacyPolicyUrl = privacyPolicyUrl;
-  obj3.themeType = themeType;
-  items1[3] = closure_1_11(PolicyLinks, obj3);
+  items1[3] = unpackModuleId(tmp10, obj3);
   let prop;
   if (application != null) {
     prop = application.popularApplicationCommandIds;
@@ -349,6 +421,5 @@ export default function UserProfileAboutMeCard(arg0) {
     tmp7Result = tmp7(BotSlashCommands, obj4);
   }
   items1[4] = tmp7Result;
-  obj.children = items1;
-  return tmp5(UserProfileCardDefault, obj);
+  return tmp5(tmp6, obj);
 };

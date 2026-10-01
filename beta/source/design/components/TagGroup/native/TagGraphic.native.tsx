@@ -5,27 +5,30 @@
 // Exports: TagGraphic
 
 // Module 13982 (TagGraphic)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import TagGroupTypes from "TagGroupTypes" /* 13979 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let c3;
+let closure_4;
+({ Image: c3, View: closure_4 } = react_native);
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((width, backgroundColor) => {
-  const obj = { image: { width, height: width }, avatar: null, roleDot: null };
-  const size = { width, height: width, borderRadius: nativeDefault.radii.round, overflow: "hidden" };
-  obj.avatar = size;
-  const size1 = { width, height: width, borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.TEXT_STRONG, backgroundColor };
-  obj.roleDot = size1;
+  let size1;
+  const obj = { image: { width, height: width }, avatar: size, roleDot: size1 };
+  size = { width, height: width, borderRadius: nativeDefault.radii.round, overflow: "hidden" };
+  size1 = { width, height: width, borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.TEXT_STRONG, backgroundColor };
   return obj;
 });
-let size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("design/components/TagGroup/native/TagGraphic.native.tsx");
 
 export const TagGraphic = function TagGraphic(arg0) {
+  let graphic;
   ({ graphic, size } = arg0);
   let color;
   if ("type" in graphic) {
@@ -33,22 +36,18 @@ export const TagGraphic = function TagGraphic(arg0) {
       color = graphic.color;
     }
   }
-  const tmp4 = closure_6(TagGroupTypes.getTagGraphicDimension(size), color);
+  const obj = TagGroupTypes;
+  const tmp4 = closure_6(obj.getTagGraphicDimension(size), color);
   if ("type" in graphic) {
     const type = graphic.type;
     if ("role" === type) {
-      const obj2 = { style: tmp4.roleDot, accessible: false };
-      return <React4 style={tmp4.roleDot} accessible={false} />;
+      return <React3 style={tmp4.roleDot} accessible={false} />;
     } else if ("avatar" === type) {
-      const obj3 = { source: graphic.source, style: tmp4.avatar, resizeMode: "cover", accessible: false };
-      return <React3 source={graphic.source} style={tmp4.avatar} resizeMode="cover" accessible={false} />;
+      return <_false source={graphic.source} style={tmp4.avatar} resizeMode="cover" accessible={false} />;
     } else if ("image" === type) {
-      const obj4 = { source: graphic.source, style: tmp4.image, resizeMode: "contain", accessible: false };
-      return <React3 source={graphic.source} style={tmp4.image} resizeMode="contain" accessible={false} />;
+      return <_false source={graphic.source} style={tmp4.image} resizeMode="contain" accessible={false} />;
     }
   }
-  const obj5 = { size: null, color: null, accessible: false };
-  obj5.size = TagGroupTypes.getTagIconSize(size);
-  obj5.color = nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT;
-  return <graphic size={null} color={null} accessible={false} />;
+  const tmp2Result = TagGroupTypes;
+  return <graphic size={tmp2Result.getTagIconSize(size)} color={nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT} accessible={false} />;
 };

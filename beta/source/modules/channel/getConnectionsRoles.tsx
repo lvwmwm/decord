@@ -7,19 +7,22 @@
 // Module 5721 (getConnectionsRoles)
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import Constants from "Constants" /* 1074 */;
 import BigFlagUtils from "BigFlagUtils" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-const Constants = fn(1074);
+let ChannelTypes;
+let Permissions;
 ({ ChannelTypes, Permissions } = Constants);
 let items = [, , , , , , ];
 ({ GUILD_TEXT: arr[0], GUILD_VOICE: arr[1], GUILD_ANNOUNCEMENT: arr[2], GUILD_FORUM: arr[3], GUILD_APP: arr[4], PUBLIC_THREAD: arr[5], PRIVATE_THREAD: arr[6] } = ChannelTypes);
 let closure_5 = BigFlagUtils.combine(Permissions.VIEW_CHANNEL, Permissions.SEND_MESSAGES);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel/getConnectionsRoles.tsx");
 
 export default function getConnectionsRoles(type) {
   if (null != type) {
     if (items.includes(type.type)) {
+      let tmp = GuildStore;
       const guild = GuildStore.getGuild(type.guild_id);
       if (null == guild) {
         items = [];
@@ -40,7 +43,8 @@ export default function getConnectionsRoles(type) {
             tmp = null === guild_connections;
           }
           if (tmp) {
-            tmp = !BigFlagUtils.hasAny(type.deny, closure_5);
+            const obj = BigFlagUtils;
+            tmp = !obj.hasAny(type.deny, closure_5);
           }
           return tmp;
         });

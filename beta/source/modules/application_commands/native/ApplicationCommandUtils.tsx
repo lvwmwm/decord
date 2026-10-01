@@ -6,62 +6,71 @@
 
 // Module 11713 (application_commands/ApplicationCommandUtils)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import _modDef1969 from "module_1969" /* 1969 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1969 */;
 import DraftStore from "DraftStore" /* 5200 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5305 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8608 */;
 import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10096 */;
-import _modDef11714 from "module_11714" /* 11714 */;
-import _modDef11715 from "module_11715" /* 11715 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11714 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11715 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 5199 */;
 import size from "module_2" /* 2 */;
+
+let dependencyMap, importDefault;
 
 const DraftType = DraftStore.DraftType;
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
 let result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandUtils.tsx");
 
 export const getApplicationCommandsIconSource = function getApplicationCommandsIconSource(section, stateFromStores) {
+  let application;
+  let bot;
   if (null == section) {
     return null;
   } else {
     const id = section.id;
     if (BuiltInSectionId.BUILT_IN === id) {
-      return AvatarUtilsDefault.makeSource(_modDef11714);
-    } else if (tmp10.FRECENCY === id) {
-      return AvatarUtilsDefault.makeSource(_modDef11715);
+      const obj3 = AvatarUtilsDefault;
+      return obj3.makeSource(AssetRegistryDefault2);
+    } else if (tmp11.FRECENCY === id) {
+      const obj2 = AvatarUtilsDefault;
+      return obj2.makeSource(AssetRegistryDefault3);
     } else {
+      let applicationIconSource;
       if (section.type === ApplicationCommandTypes.ApplicationCommandSectionType.APPLICATION) {
-        const obj5 = { id: null, icon: null, bot: null, botIconFirst: true, guildMember: null };
-        ({ id: obj2.id, icon: obj2.icon, application } = section);
-        let bot;
+        const obj = { id: null, icon: null, bot, botIconFirst: true, guildMember: stateFromStores };
+        ({ id: obj.id, icon: obj.icon, application } = section);
+        bot = undefined;
+        const getApplicationIconSource = AvatarUtilsDefault.getApplicationIconSource;
+        AvatarUtilsDefault;
         if (application != null) {
           bot = application.bot;
         }
-        obj5.bot = bot;
-        obj5.guildMember = stateFromStores;
-        let applicationIconSource = AvatarUtilsDefault.getApplicationIconSource(obj5);
+        applicationIconSource = getApplicationIconSource(obj);
       } else {
-        applicationIconSource = _modDef1969;
+        applicationIconSource = AssetRegistryDefault;
       }
       return applicationIconSource;
     }
   }
 };
 export const openCommandAttachmentPreview = function openCommandAttachmentPreview(applicationCommandManager, channelId, name, fn) {
-  closure_0 = applicationCommandManager;
+  let upload;
+  let closure_0 = applicationCommandManager;
   importDefault = channelId;
   dependencyMap = name;
   upload = UploadAttachmentStore.getUpload(channelId, name, upload.SlashCommand);
   if (null != upload) {
-    const obj = {
+    let obj = {
       channelId,
       disableSpoiler: true,
       onClose: fn,
       onRemove() {
-          UploadAttachmentActionCreatorsDefault.remove(closure_1, upload.id, DraftType.SlashCommand);
+          const obj = UploadAttachmentActionCreatorsDefault;
+          obj.remove(channelId, upload.id, DraftType.SlashCommand);
           let found;
-          if (closure_0 != null) {
+          if (applicationCommandManager != null) {
             const activeCommand = obj2.props.activeCommand;
             if (activeCommand != null) {
               const options = activeCommand.options;
@@ -71,7 +80,7 @@ export const openCommandAttachmentPreview = function openCommandAttachmentPrevie
             }
           }
           if (null != found) {
-            if (obj2 != null) {
+            if (applicationCommandManager != null) {
               const result = obj2.insertOrJumpCommandOption(found, undefined, false, { displayText: "" });
             }
           }

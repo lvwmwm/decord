@@ -1,25 +1,28 @@
 // Module ID: 7294
 // Function ID: 7295
-// Name: Badge
+// Name: shared_components/Badge
 // Dependencies: [19, 17, 21, 4836, 576, 2]
 
-// Module 7294 (Badge)
+// Module 7294 (shared_components/Badge)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { badge: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, badgeClassic: null, mask: null };
-const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-obj.badgeClassic = { backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-obj.mask = { alignItems: "center", justifyContent: "center" };
-let closure_2 = createStyles.createStyles(obj);
-const obj4 = { backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-let size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/Badge.tsx");
-
-export default noop.memo(function Badge(size) {
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+const obj = { badge: obj2, badgeClassic: { backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE }, mask: { alignItems: "center", justifyContent: "center" } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+createStyles = createStyles.createStyles;
+({ backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE });
+let closure_2 = createStyles(obj);
+const memoResult = react.memo(function Badge(size) {
+  let badgeStyle;
+  let style;
   let num = size.size;
   if (num === undefined) {
     num = 12;
@@ -41,15 +44,14 @@ export default noop.memo(function Badge(size) {
     size = { backgroundColor: maskColor, height: sum, width: sum, borderRadius: sum / 2 };
     tmp3 = size;
   }
-  const obj = { style: null, children: null };
   const items = [tmp.mask, tmp3, style];
-  obj.style = items;
-  const obj2 = { style: null };
   const items1 = [flag ? tmp.badgeClassic : tmp.badge, { height: num, width: num, borderRadius: num / 2 }, badgeStyle];
-  obj2.style = items1;
-  obj.children = <View style={null} />;
-  return <View style={null}>{null}</View>;
+  return <View style={items}>{null}</View>;
 });
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/Badge.tsx");
+
+export default memoResult;
 export const DEFAULT_BADGE_SIZE = 12;
 export const CHANNEL_BADGE_SIZE = 8;
 export const DEFAULT_BADGE_MASK_SIZE = 4;

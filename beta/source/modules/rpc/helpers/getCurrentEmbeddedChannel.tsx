@@ -5,14 +5,14 @@
 // Exports: default
 
 // Module 14033 (getCurrentEmbeddedChannel)
+import Constants from "Constants" /* 4739 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8501 */;
 import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14029 */;
 import FramesStore from "FramesStore" /* 8499 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const TransportTypes = fn(4739).TransportTypes;
-const size = fn(2);
+const TransportTypes = Constants.TransportTypes;
 const result = size.fileFinishedImporting("modules/rpc/helpers/getCurrentEmbeddedChannel.tsx");
 
 export default function getCurrentEmbeddedChannel(source) {

@@ -5,11 +5,12 @@
 // Exports: default
 
 // Module 14522 (PremiumManagePlanScreen)
+import Fragment from "Fragment" /* 21 */;
 import PremiumManagePlanDefault from "PremiumManagePlan" /* 13036 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumManagePlanScreen.tsx");
 
 export default function PremiumPlanSelectSettingScreen() {

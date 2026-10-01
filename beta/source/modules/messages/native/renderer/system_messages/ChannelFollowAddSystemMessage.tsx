@@ -5,7 +5,7 @@
 // Exports: createChannelFollowAddSystemMessage
 
 // Module 7449 (ChannelFollowAddSystemMessage)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7402 */;
 import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7404 */;
 import createCommonMessageDefault from "createCommonMessage" /* 7406 */;
@@ -13,12 +13,19 @@ import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelFollowAddSystemMessage.tsx");
 
-export const createChannelFollowAddSystemMessage = function createChannelFollowAddSystemMessage(roleStyle) {
-  const message = roleStyle.message;
-  const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
-  const obj2 = { content: null };
-  const intl = util.intl;
-  obj2.content = intl.formatToParts(util.t.xH8qGO, { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), webhookName: message.content, webhookNameOnClick: { action: "bindGuildMenu", messageReference: message.messageReference, medium: true } });
-  const merged = Object.assign(createCommonMessageDefault(roleStyle));
+export const createChannelFollowAddSystemMessage = function createChannelFollowAddSystemMessage(message) {
+  let formatToParts;
+  let obj3;
+  let xH8qGO;
+  message = message.message;
+  const roleStyle = message.roleStyle;
+  const obj = useAuthorWithProcessedColor;
+  const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
+  const obj2 = { content: formatToParts(xH8qGO, obj3) };
+  const intl = intl2.intl;
+  formatToParts = intl.formatToParts;
+  obj3 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }), webhookName: message.content, webhookNameOnClick: { action: "bindGuildMenu", messageReference: message.messageReference, medium: true } };
+  xH8qGO = intl2.t.xH8qGO;
+  const merged = Object.assign(createCommonMessageDefault(message));
   return obj2;
 };

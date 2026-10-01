@@ -5,11 +5,15 @@
 // Exports: getAutomodErrorMessage
 
 // Module 7381 (AutomodErrorUtils)
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl5 from "intl" /* 1115 */;
+import MessageQueue from "MessageQueue" /* 7253 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
+  let code;
+  let message;
   if (null == errorResponseBody) {
     return null;
   } else {
@@ -26,8 +30,8 @@ function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
           isThreadResult = channel.isThread();
         }
         if (isThreadResult) {
-          const intl3 = util.intl;
-          return intl3.string(util.t.DVdG9E);
+          const intl3 = intl5.intl;
+          return intl3.string(intl5.t.DVdG9E);
         } else {
           let isForumPostResult;
           if (channel != null) {
@@ -35,17 +39,14 @@ function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
           }
           if (isForumPostResult) {
             if (code === AbortCodes.AUTOMOD_TITLE_BLOCKED) {
-              const intl2 = util.intl;
-              return intl2.string(util.t.ipgKDg);
+              const intl2 = intl5.intl;
+              return intl2.string(intl5.t.ipgKDg);
             } else if (code === tmp4.AUTOMOD_MESSAGE_BLOCKED) {
-              const intl = util.intl;
-              return intl.string(util.t.ipgKDg);
+              const intl = intl5.intl;
+              return intl.string(intl5.t.ipgKDg);
             }
-          } else {
-            let isForumLikeChannelResult;
-            if (channel != null) {
-              isForumLikeChannelResult = channel.isForumLikeChannel();
-            }
+          } else if (channel != null) {
+            channel.isForumLikeChannel();
           }
           return null;
         }
@@ -56,10 +57,12 @@ function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
   }
 }
 function getAutomodErrorMessageFromMessageData(message) {
+  let stringResult;
   const channel = ChannelStore.getChannel(message.message.channelId);
+  const obj2 = MessageQueue;
   if (obj2.isMessageDataEdit(message)) {
     const intl4 = tmp(1115).intl;
-    let stringResult = intl4.string(tmp(1115).t.bU6o0z);
+    stringResult = intl4.string(tmp(1115).t.bU6o0z);
   } else {
     let isThreadResult;
     if (channel != null) {
@@ -89,33 +92,32 @@ function getAutomodErrorMessageFromMessageData(message) {
   }
   return stringResult;
 }
-const AbortCodes = fn(1074).AbortCodes;
+const AbortCodes = Constants.AbortCodes;
 class InvalidKeywordError extends Error {
 }
-const prototype = function InvalidRegexPatternError() {
-  return HermesBuiltin.applyArguments(new.target, new.target);
-}.prototype;
-class prototype extends Error {
+class InvalidRegexPatternError extends Error {
 }
 const items = [, , ];
 ({ AUTOMOD_MESSAGE_BLOCKED: arr[0], AUTOMOD_TITLE_BLOCKED: arr[1], AUTOMOD_INVALID_RUST_SERVICE_RESPONSE: arr[2] } = AbortCodes);
 const set = new Set(items);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodErrorUtils.tsx");
 
 export { InvalidKeywordError };
-export const InvalidRegexPatternError = prototype;
+export { InvalidRegexPatternError };
 export const AUTOMOD_ERROR_CODES = set;
 export { getAutomodErrorMessageFromErrorResponse };
 export { getAutomodErrorMessageFromMessageData };
 export const getAutomodErrorMessage = function getAutomodErrorMessage(messageData, errorResponseBody) {
-  const tmp = getAutomodErrorMessageFromErrorResponse(errorResponseBody);
-  if (null != tmp) {
-    return tmp;
-  } else if (null == messageData) {
-    const intl = util.intl;
-    let stringResult = intl.string(util.t.zQ69pv);
-  } else {
-    stringResult = getAutomodErrorMessageFromMessageData(messageData);
+  let tmp = getAutomodErrorMessageFromErrorResponse(errorResponseBody);
+  if (null == tmp) {
+    let stringResult;
+    if (null == messageData) {
+      const intl = intl5.intl;
+      stringResult = intl.string(intl5.t.zQ69pv);
+    } else {
+      stringResult = getAutomodErrorMessageFromMessageData(messageData);
+    }
+    tmp = stringResult;
   }
+  return tmp;
 };

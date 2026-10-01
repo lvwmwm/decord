@@ -5,30 +5,33 @@
 // Exports: useDiscountedPremiumProductInfo
 
 // Module 8682 (useDiscountedPremiumProductInfo)
+import Constants from "Constants" /* 1085 */;
 import ProductIds from "ProductIds" /* 6661 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_0;
 
-require = fn;
-const CurrencyCodes = fn(1085).CurrencyCodes;
-const size = fn(2);
+const CurrencyCodes = Constants.CurrencyCodes;
 let result = size.fileFinishedImporting("modules/premium/native/hooks/useDiscountedPremiumProductInfo.android.tsx");
 
 export const useDiscountedPremiumProductInfo = function useDiscountedPremiumProductInfo(premiumDiscountOffer, items3) {
+  let discountedProduct;
   _require = premiumDiscountOffer;
-  const discountedPremiumPlan = require("useDiscountedPremiumPlan").useDiscountedPremiumPlan(premiumDiscountOffer, items3);
+  const obj = require("useDiscountedPremiumPlan");
+  const discountedPremiumPlan = obj.useDiscountedPremiumPlan(premiumDiscountOffer, items3);
   discountedProduct = discountedPremiumPlan.discountedProduct;
   const items = [premiumDiscountOffer, discountedProduct];
-  const obj = require("useDiscountedPremiumPlan");
-  return {
+  const obj2 = {
     discountedPlan: discountedPremiumPlan.discountedPlan,
     discountedProduct,
-    discountedPriceString: noop.useMemo(() => {
+    discountedPriceString: react.useMemo(() => {
       if (null != closure_0) {
         if (null != discountedProduct) {
           const tmp8 = ProductIds.DiscountIdToProductOfferId[tmp.discountId];
           let tmp2;
+          const tmp6 = require;
           if (tmp8 != null) {
             tmp2 = tmp8[tmp5.identifier];
           }
@@ -36,29 +39,33 @@ export const useDiscountedPremiumProductInfo = function useDiscountedPremiumProd
           if (null == tmp2) {
             return null;
           } else {
+            let USD;
+            const str2 = discountedProduct.currencyCode;
             if (str2.toUpperCase() in CurrencyCodes) {
-              let USD = tmp5.currencyCode.toLowerCase();
+              const str = discountedProduct.currencyCode;
+              USD = str.toLowerCase();
             } else {
               USD = tmp9.USD;
             }
-            if (null != tmp5.subscriptionOffers) {
+            if (null != discountedProduct.subscriptionOffers) {
               const subscriptionOffers = tmp5.subscriptionOffers;
               const found = subscriptionOffers.find((offerId) => offerId.offerId === closure_0);
               if (null != found) {
                 if (null != found.pricingPhases) {
                   if (found.pricingPhases.length > 0) {
                     const result = found.pricingPhases[0].price / 100;
-                    return tmp6(6655).formatPrice(result, USD, { convertToMajorUnits: false });
+                    const tmp6Result = tmp6(6655);
+                    return tmp6Result.formatPrice(result, USD, { convertToMajorUnits: false });
                   }
                 }
               }
             }
             return null;
           }
-          tmp6 = require;
         }
       }
       return null;
     }, items)
   };
+  return obj2;
 };

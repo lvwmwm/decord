@@ -5,40 +5,62 @@
 // Exports: default
 
 // Module 17327 (KeywordsRow)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import Fragment from "Fragment" /* 21 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/KeywordsRow.tsx");
 
 export default function KeywordsRow(label) {
+  let StringResult;
+  let Text;
+  let closure_4;
+  let closure_5;
+  let description;
+  let end;
+  let keywords;
+  let maxWordCount;
+  let onSave;
+  let start;
   label = label.label;
   ({ description: importDefault, type: dependencyMap, keywords } = label);
   ({ maxWordCount: closure_4, onChangeKeywords: closure_5 } = label);
+  const tmp = keywords;
+  let tmp2 = label;
   ({ start, end } = label);
-  let obj = { start, end, label, trailing: null, arrow: true, onPress: null };
+  let obj = {
+    start,
+    end,
+    label,
+    trailing: tmp(Text, { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: StringResult }),
+    arrow: true,
+    onPress() {
+      let obj3;
+      const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+      const obj = { title: label, description: importDefault, keywords, onSave };
+      ActionSheetActionCreatorsDefault;
+      const tmp2 = asyncRequire(17328, dependencyMap.paths);
+      if ("regex" === dependencyMap) {
+        obj3 = { type: dependencyMap };
+        const obj2 = { type: dependencyMap };
+      } else {
+        obj3 = { type: dependencyMap, maxWordCount };
+      }
+      const merged = Object.assign(obj3);
+      openLazy(tmp2, "AutomodKeywords", obj);
+    }
+  };
+  const TableRow = label(5917).TableRow;
+  Text = label(4832).Text;
   if (keywords.length > 0) {
     const _String = String;
-    let StringResult = String(keywords.length);
+    StringResult = String(keywords.length);
   } else {
     const intl = tmp2(1115).intl;
     StringResult = intl.string(tmp2(1115).t.PoWNfe);
   }
-  obj.trailing = keywords(label(4832).Text, { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: StringResult });
-  obj.onPress = function onPress() {
-    const obj = ActionSheetActionCreatorsDefault;
-    const obj2 = { title: label, description, keywords, onSave };
-    if ("regex" === closure_1_2) {
-      const obj3 = { type: tmp2 };
-      let obj4 = obj3;
-    } else {
-      obj4 = { type: tmp2, maxWordCount };
-    }
-    const merged = Object.assign(obj4);
-    obj.openLazy(asyncRequireImpl(17328, dependencyMap.paths), "AutomodKeywords", obj2);
-  };
-  return keywords(label(5917).TableRow, obj);
+  return tmp(TableRow, obj);
 };

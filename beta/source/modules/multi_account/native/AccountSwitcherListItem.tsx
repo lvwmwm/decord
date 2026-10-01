@@ -5,59 +5,79 @@
 // Exports: default
 
 // Module 15576 (AccountSwitcherListItem)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 576 */;
+import intl4 from "intl" /* 1115 */;
+import native from "native" /* 1177 */;
+import react_native from "react-native" /* 4548 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
-import noop from "module_19" /* 19 */;
+import MultiAccountStore from "MultiAccountStore" /* 11906 */;
+import react from "react" /* 19 */;
+import react_native2 from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1386 */;
 import StreamerModeStore from "StreamerModeStore" /* 4679 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c10;
+let c3;
+let c9;
+let closure_4;
 class AccountStatusIcon {
-  constructor(arg0) {
-    user = global.user;
-    tmp = closure_0;
-    tmp2 = closure_2;
-    obj = closure_0(closure_2[8]);
-    items = [];
-    items[0] = closure_7;
-    stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-    id = undefined;
+  constructor(user) {
+    let currentUser;
+    let tmp6;
+    user = user.user;
+    const items = [UserStore];
+    const obj = get_initialized;
+    const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+    let id1;
+    const id = user.id;
     if (stateFromStores != null) {
-      id = stateFromStores.id;
+      id1 = stateFromStores.id;
     }
-    if (user.id === id) {
-      tmp9 = jsx;
-      obj1 = { color: null };
-      tmp10 = closure_1;
-      obj1.color = closure_1(tmp2[10]).colors.TEXT_BRAND;
-      tmp6 = jsx(tmp(tmp2[9]).CircleCheckIcon, obj1);
+    if (id === id1) {
+      const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
+      const CircleCheckIcon = tmp(4792).CircleCheckIcon;
+      tmp6 = React4(CircleCheckIcon, obj2);
     } else {
-      tmp5 = MultiAccountTokenStatus;
       tmp6 = null;
       if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
-        tmp7 = jsx;
-        obj4 = { color: null };
-        tmp8 = closure_1;
-        obj4.color = closure_1(tmp2[10]).colors.ICON_FEEDBACK_CRITICAL;
-        tmp6 = jsx(tmp(tmp2[11]).CircleInformationIcon, obj4);
+        const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
+        const CircleInformationIcon = tmp(4787).CircleInformationIcon;
+        tmp6 = React4(CircleInformationIcon, obj3);
       }
     }
     return tmp6;
   }
 }
-get_ActivityIndicator = fn(17);
-({ Pressable: c3, View: closure_4 } = get_ActivityIndicator);
-const MultiAccountTokenStatus = fn(11906).MultiAccountTokenStatus;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
+({ Pressable: c3, View: closure_4 } = react_native2);
+const MultiAccountTokenStatus = MultiAccountStore.MultiAccountTokenStatus;
+({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles({ accountListTag: { marginLeft: 12, flex: 1 }, tagContainer: { display: "flex", flexDirection: "row" }, accountSwitcherListItem: { display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", paddingVertical: 8, paddingHorizontal: 16 }, username: { flexShrink: 1 }, accountInfo: { flex: 1, minWidth: "30%", display: "flex", flexDirection: "row", alignItems: "center" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/multi_account/native/AccountSwitcherListItem.tsx");
 
 export default function AccountSwitcherListItem(arg0) {
+  let currentUser;
+  let delayLongPress;
+  let getUserTag;
+  let intl;
+  let intl3;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let leading;
+  let obj13;
+  let onPressUser;
+  let showActiveAccountLabel;
+  let sortHandlers;
+  let stringResult;
+  let tmp8;
+  let trailing;
+  let user;
   ({ user, onPressUser, showActiveAccountLabel } = arg0);
   if (showActiveAccountLabel === undefined) {
     showActiveAccountLabel = false;
@@ -66,86 +86,81 @@ export default function AccountSwitcherListItem(arg0) {
   ({ delayLongPress, leading } = arg0);
   const tmp = closure_11();
   const items = [StreamerModeStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => StreamerModeStore.hidePersonalInformation);
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => StreamerModeStore.hidePersonalInformation);
   const items1 = [UserStore];
-  const stateFromStores1 = initialize.useStateFromStores(items1, () => currentUser.getCurrentUser());
-  let id;
+  const obj2 = get_initialized;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => currentUser.getCurrentUser());
+  let id1;
+  const id = user.id;
   if (stateFromStores1 != null) {
-    id = stateFromStores1.id;
+    id1 = stateFromStores1.id;
   }
   const obj3 = new UserRecord(user);
-  if (user.id === id) {
+  if (id === id1) {
+    let PressableOpacity;
     if (showActiveAccountLabel) {
-      const obj4 = { variant: "text-sm/semibold", color: "text-brand", children: null };
-      const intl = tmp2(1115).intl;
-      obj4.children = intl.string(tmp2(1115).t.seV8yt);
-      let tmp8 = React7(tmp2(4832).Text, obj4);
+      const obj4 = { variant: "text-sm/semibold", color: "text-brand", children: intl.string(intl4.t.seV8yt) };
+      const Text = tmp2(4832).Text;
+      intl = tmp2(1115).intl;
+      tmp8 = React4(Text, obj4);
     }
     if (null == onPressUser) {
-      let PressableOpacity = React3;
+      PressableOpacity = _false;
     } else {
       PressableOpacity = tmp2(5435).PressableOpacity;
     }
-    const obj5 = { selected: tmp7 };
-    const radioA11yNative = tmp2(4548).useRadioA11yNative(obj5);
-    const obj6 = { accessibilityRole: null, accessibilityState: null, accessibilityHint: null, style: null, delayLongPress: null, onPress: null };
+    const obj5 = { selected: id === id1 };
+    const tmp2Result = react_native;
+    const radioA11yNative = tmp2Result.useRadioA11yNative(obj5);
+    const obj6 = { accessibilityRole: null, accessibilityState: null, accessibilityHint: stringResult, style: tmp.accountSwitcherListItem, delayLongPress, onPress: onPressUser, children: items2 };
     ({ accessibilityRole: obj7.accessibilityRole, accessibilityState: obj7.accessibilityState } = radioA11yNative);
-    let stringResult;
-    if (!tmp7) {
+    stringResult = undefined;
+    if (id !== id1) {
       const intl2 = tmp2(1115).intl;
       stringResult = intl2.string(tmp2(1115).t.wY4y0R);
     }
-    obj6.accessibilityHint = stringResult;
-    obj6.style = tmp.accountSwitcherListItem;
-    obj6.delayLongPress = delayLongPress;
-    obj6.onPress = onPressUser;
     const merged = Object.assign(sortHandlers);
-    const items2 = [leading, , ];
-    const obj8 = { style: tmp.accountInfo, children: null };
+    items2 = [leading, , ];
+    const obj8 = { style: tmp.accountInfo, children: items3 };
     const obj9 = { user: obj3, guildId: "a" };
-    const items3 = [React7(tmp2(1177).Avatar, obj9), ];
-    const obj10 = { style: tmp.accountListTag, children: null };
-    const obj11 = { style: tmp.tagContainer, children: null };
-    const obj12 = { variant: "text-md/semibold", color: "text-default", style: tmp.username, lineClamp: 1, children: null };
-    const tmp2Result = tmp2(4548);
+    items3 = [React4(native.Avatar, obj9), ];
+    const obj10 = { style: tmp.accountListTag, children: items5 };
+    const obj11 = { style: tmp.tagContainer, children: items4 };
+    const obj12 = { variant: "text-md/semibold", color: "text-default", style: tmp.username, lineClamp: 1, children: getUserTag(obj3, obj13) };
+    const Text2 = tmp2(4832).Text;
     let str = "always";
+    getUserTag = UserUtilsDefault.getUserTag;
+    UserUtilsDefault;
     if (stateFromStores) {
       str = "never";
     }
-    const obj14 = { mode: "username", identifiable: str };
-    obj12.children = UserUtilsDefault.getUserTag(obj3, obj14);
-    const items4 = [React7(tmp2(4832).Text, obj12), ];
-    let tmp18Result = !stateFromStores;
-    if (!stateFromStores) {
-      tmp18Result = !obj3.hasUniqueUsername();
-    }
+    obj13 = { mode: "username", identifiable: str };
+    items4 = [React4(Text2, obj12), ];
+    let tmp18Result = !stateFromStores && !obj3.hasUniqueUsername();
     if (tmp18Result) {
-      const obj15 = { variant: "text-md/normal", color: "text-muted", children: null };
       const _HermesInternal = HermesInternal;
-      obj15.children = "#" + obj3.discriminator;
-      tmp18Result = tmp18(tmp2(4832).Text, obj15);
+      const obj14 = { variant: "text-md/normal", color: "text-muted", children: "#" + obj3.discriminator };
+      const Text3 = tmp2(4832).Text;
+      tmp18Result = tmp18(Text3, obj14);
     }
     items4[1] = tmp18Result;
-    obj11.children = items4;
-    const items5 = [closure_1_10(React4, obj11), tmp8];
-    obj10.children = items5;
-    items3[1] = closure_1_10(React4, obj10);
-    obj8.children = items3;
-    items2[1] = closure_1_10(React4, obj8);
+    items5 = [authStore(React3, obj11), tmp8];
+    items3[1] = authStore(React3, obj10);
+    items2[1] = authStore(React3, obj8);
     if (undefined === trailing) {
-      const obj16 = { user };
-      trailing = tmp18(AccountStatusIcon, obj16);
+      const obj15 = { user };
+      trailing = tmp18(AccountStatusIcon, obj15);
     }
     items2[2] = trailing;
-    obj6.children = items2;
-    return closure_1_10(PressableOpacity, obj6, user.id);
+    return authStore(PressableOpacity, obj6, user.id);
   }
   tmp8 = null;
   if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
-    const obj17 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: null };
-    const intl3 = tmp2(1115).intl;
-    obj17.children = intl3.string(tmp2(1115).t.tYX2ps);
-    tmp8 = React7(tmp2(4832).Text, obj17);
+    const obj16 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl3.string(intl4.t.tYX2ps) };
+    const Text4 = tmp2(4832).Text;
+    intl3 = tmp2(1115).intl;
+    tmp8 = React4(Text4, obj16);
   }
 };
 export { AccountStatusIcon };

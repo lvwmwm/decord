@@ -7,23 +7,26 @@
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/stickers/native/StickerPickerStore.tsx");
-
-export const useStickerPickerStore = module_560.create((arg0) => {
-  closure_0 = arg0;
-  return {
+let obj = module_560.create((arg0) => {
+  let closure_0 = arg0;
+  let obj = {
     packToScrollTo: null,
-    setPackToScrollTo(dependencyMap) {
-      return dependencyMap(closure_1_1[1]).batchUpdates(() => {
-        dependencyMap((packToScrollTo) => {
+    setPackToScrollTo(pack_id) {
+      let obj = pack_id(dependencyMap[1]);
+      return obj.batchUpdates(() => {
+        let tmp = pack_id((packToScrollTo) => {
           let tmp = packToScrollTo;
-          if (packToScrollTo.packToScrollTo !== dependencyMap) {
+          if (packToScrollTo.packToScrollTo !== pack_id) {
+            tmp = { packToScrollTo: tmp2 };
             const obj = { packToScrollTo: tmp2 };
-            tmp = obj;
           }
           return tmp;
         });
       });
     }
   };
+  return obj;
 });
+const result = size.fileFinishedImporting("modules/stickers/native/StickerPickerStore.tsx");
+
+export const useStickerPickerStore = obj;

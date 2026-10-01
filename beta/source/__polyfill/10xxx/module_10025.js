@@ -3,26 +3,24 @@
 // Dependencies: [41, 42, 93, 95, 98, 10024, 9895, 9896, 10026]
 
 // Module 10025
-import _mod10026 from "module_10026" /* 10026 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9895 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9896 */;
+import REGEX_PARTS from "REGEX_PARTS" /* 10024 */;
+import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10026 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const RUMonthNameLittleEndianParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -32,29 +30,29 @@ function _isNativeReflectConstruct() {
 }
 class RUMonthNameLittleEndianParser {
   constructor() {
-    self = this;
-    tmp = c2(this, RUMonthNameLittleEndianParser);
-    tmp2 = closure_4;
-    obj = closure_4(RUMonthNameLittleEndianParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, RUMonthNameLittleEndianParser);
+    const obj = _getPrototypeOf(RUMonthNameLittleEndianParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUMonthNameLittleEndianParser, _mod10026.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(RUMonthNameLittleEndianParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
   key: "innerPatternString",
   value: function innerPatternString(arg0) {
-    return "(?:\u0441)?\\s*(" + RUMonthNameLittleEndianParser(10024).ORDINAL_NUMBER_PATTERN + ")(?:\\s{0,3}(?:\u043F\u043E|-|\u2013|\u0434\u043E)?\\s{0,3}(" + RUMonthNameLittleEndianParser(10024).ORDINAL_NUMBER_PATTERN + "))?(?:-|\\/|\\s{0,3}(?:of)?\\s{0,3})(" + RUMonthNameLittleEndianParser(9895).matchAnyPattern(RUMonthNameLittleEndianParser(10024).MONTH_DICTIONARY) + ")(?:(?:-|\\/|,?\\s{0,3})(" + RUMonthNameLittleEndianParser(10024).YEAR_PATTERN + "(?![^\\s]\\d)))?";
+    const ORDINAL_NUMBER_PATTERN = REGEX_PARTS.ORDINAL_NUMBER_PATTERN;
+    const ORDINAL_NUMBER_PATTERN2 = REGEX_PARTS.ORDINAL_NUMBER_PATTERN;
+    const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(REGEX_PARTS.MONTH_DICTIONARY);
+    return "(?:\u0441)?\\s*(" + ORDINAL_NUMBER_PATTERN + ")(?:\\s{0,3}(?:\u043F\u043E|-|\u2013|\u0434\u043E)?\\s{0,3}(" + ORDINAL_NUMBER_PATTERN2 + "))?(?:-|\\/|\\s{0,3}(?:of)?\\s{0,3})(" + matchAnyPatternResult + ")(?:(?:-|\\/|,?\\s{0,3})(" + REGEX_PARTS.YEAR_PATTERN + "(?![^\\s]\\d)))?";
   }
 };
 const items = [
@@ -63,8 +61,8 @@ const items = [
     key: "innerExtract",
     value: function innerExtract(createParsingResult, index) {
       const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp4 = RUMonthNameLittleEndianParser(10024).MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
-      const result = RUMonthNameLittleEndianParser(10024).parseOrdinalNumberPattern(index[1]);
+      const tmp4 = REGEX_PARTS.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const result = REGEX_PARTS.parseOrdinalNumberPattern(index[1]);
       if (result > 31) {
         index.index = index.index + index[1].length;
         return null;
@@ -75,10 +73,10 @@ const items = [
         start5.assign("day", result);
         if (index[4]) {
           const start2 = parsingResult.start;
-          start2.assign("year", tmp2(10024).parseYear(index[4]));
+          start2.assign("year", REGEX_PARTS.parseYear(index[4]));
         } else {
           const start = parsingResult.start;
-          start.imply("year", tmp2(9896).findYearClosestToRef(createParsingResult.refDate, result, tmp4));
+          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, result, tmp4));
         }
         if (index[2]) {
           const start3 = parsingResult.start;

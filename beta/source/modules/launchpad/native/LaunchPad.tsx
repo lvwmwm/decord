@@ -4,23 +4,24 @@
 // Dependencies: [32, 19, 17, 4521, 6945, 6746, 5818, 2049, 502, 2045, 7133, 7050, 2067, 13297, 4851, 5750, 5017, 4855, 1074, 21, 576, 4836, 5435, 4832, 504, 4566, 4701, 6471, 1115, 12585, 9067, 15131, 1364, 14139, 10429, 9299, 4692, 9300, 9290, 1479, 1613, 9291, 12305, 1241, 16799, 16806, 15346, 16819, 16820, 2]
 
 // Module 16798 (LaunchPad)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import ChatInputUtils from "ChatInputUtils" /* 4701 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Pressables from "Pressables" /* 5435 */;
-import AutocompleterDefault from "Autocompleter" /* 9291 */;
+import _mod9290 from "module_9290" /* 9290 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9299 */;
 import hideLaunchPadDefault from "hideLaunchPad" /* 10429 */;
-import RouteManagerDefault from "RouteManager" /* 12305 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14139 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 4521 */;
 import ChannelListStore from "ChannelListStore" /* 6945 */;
 import NavigationHistoryStore_mod from "NavigationHistoryStore" /* 6746 */;
 import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5818 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7133 */;
@@ -31,92 +32,129 @@ import ReadStateStore from "ReadStateStore" /* 4851 */;
 import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, basicChannel, channel, flattenedGuildIds, guild, set, tab;
 
-require = fn;
+let c10;
+let c9;
+let closure_14;
+let closure_25;
+let closure_26;
+let closure_27;
+let closure_28;
+let map1;
+let metroImportAll;
+let obj2;
+let obj3;
+let obj4;
+let size;
+let tmp;
+const DevToolsNavigator = tmp(14139);
 function TabButton(selected) {
+  let accessibilityLabel;
+  let colors;
+  let icon;
+  let onPress;
+  let style;
   selected = selected.selected;
   ({ onPress, icon, accessibilityLabel, style } = selected);
   const tmp = closure_29();
-  const obj = { onPress, style: null, accessibilityLabel: null, accessibilityRole: "tab", accessibilityState: null, children: null };
+  const obj = { onPress, style: items, accessibilityLabel, accessibilityRole: "tab", accessibilityState: { selected }, children: icon(selected ? colors.INTERACTIVE_TEXT_ACTIVE : colors.INTERACTIVE_TEXT_DEFAULT) };
   items = [tmp.tab, style, ];
   let tabSelected;
+  const PressableHighlight = Pressables.PressableHighlight;
+  const tmp2 = closure_27;
   if (selected) {
     tabSelected = tmp.tabSelected;
   }
   items[2] = tabSelected;
-  obj.style = items;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.accessibilityState = { selected };
-  const colors = nativeDefault.colors;
-  obj.children = icon(selected ? colors.INTERACTIVE_TEXT_ACTIVE : colors.INTERACTIVE_TEXT_DEFAULT);
-  return __initData5(Pressables.PressableHighlight, obj);
+  colors = nativeDefault.colors;
+  return tmp2(PressableHighlight, obj);
 }
-function TabHeader(children) {
-  const tmp = closure_29();
-  return __initData5(Text_Text.Text, { style: closure_29().subheader, variant: "heading-md/extrabold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: children.text });
+function TabHeader(text) {
+  text = text.text;
+  const obj = { style: closure_29().subheader, variant: "heading-md/extrabold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: text };
+  return closure_27(Text_Text.Text, obj);
 }
-function createAndAppendChannel(item10022, set, items) {
-  if (!set.has(item10022)) {
-    const tmp3 = createAutocompleterResultForChannelIdDefault(item10022);
+function createAndAppendChannel(arg0, has, arr) {
+  if (!has.has(arg0)) {
+    const tmp3 = createAutocompleterResultForChannelIdDefault(arg0);
     if (null != tmp3) {
-      items.push(tmp3);
-      set.add(item10022);
+      arr.push(tmp3);
+      has.add(arg0);
     }
   }
 }
-const View = fn(17).View;
-let NavigationHistoryStore = fn(6746);
-({ CHANNEL_PREFIX: closure_8, getIdFromHistoryItem: closure_9, GUILD_PREFIX: c10 } = NavigationHistoryStore);
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const View = react_native.View;
 let NavigationHistoryStore = NavigationHistoryStore_mod;
-const ChannelRecord = fn(2049);
+({ CHANNEL_PREFIX: metroImportAll, getIdFromHistoryItem: c9, GUILD_PREFIX: c10 } = NavigationHistoryStore);
+NavigationHistoryStore = NavigationHistoryStore_mod;
 ({ isGuildSelectableChannelType: map1, isGuildVocalChannelType: closure_14 } = ChannelRecord);
-const Constants = fn(1074);
 ({ AnalyticEvents: closure_25, GuildFeatures: closure_26 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_27, jsxs: closure_28 } = jsxProd);
+({ jsx: closure_27, jsxs: closure_28 } = Fragment);
 const md = nativeDefault.radii.md;
-const createStyles = fn(4836);
-let obj = { wrapper: { flexGrow: 0, marginHorizontal: 16, marginBottom: 16, flexShrink: 1, borderRadius: 24, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", justifyContent: "flex-start", alignItems: "stretch", overflow: "hidden" }, launchPadContent: { flex: -1, overflow: "hidden", borderBottomLeftRadius: 24, borderBottomRightRadius: 24 }, header: { paddingHorizontal: 16, paddingTop: 16, flexDirection: "row", flexShrink: 0, flexGrow: 0 }, subheader: { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", alignSelf: "center", paddingStart: 8 }, tabs: null, tab: null, tabSelected: null };
-let obj3 = { flexGrow: 0, marginHorizontal: 16, marginBottom: 16, flexShrink: 1, borderRadius: 24, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", justifyContent: "flex-start", alignItems: "stretch", overflow: "hidden" };
-obj.tabs = { marginStart: 8, flexDirection: "row", flexShrink: 0, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: md, padding: 5, alignItems: "stretch", justifyContent: "center", gap: 5, borderWidth: 1, borderColor: nativeDefault.colors.INPUT_BORDER_DEFAULT };
-let size = { width: 32, height: 32, borderRadius: md - 5, alignItems: "center", justifyContent: "center" };
-obj.tab = size;
-let obj4 = { marginStart: 8, flexDirection: "row", flexShrink: 0, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: md, padding: 5, alignItems: "stretch", justifyContent: "center", gap: 5, borderWidth: 1, borderColor: nativeDefault.colors.INPUT_BORDER_DEFAULT };
-obj.tabSelected = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_29 = createStyles.createStyles(obj);
-const constants3 = { SEARCH: 0, [0]: "SEARCH", MEMBERS: 1, [1]: "MEMBERS", NOTIFICATIONS: 2, [2]: "NOTIFICATIONS", DEV_TOOLS: 3, [3]: "DEV_TOOLS" };
+let createStyles = createStyles_mod;
+let obj = { wrapper: obj2, launchPadContent: { flex: -1, overflow: "hidden", borderBottomLeftRadius: 24, borderBottomRightRadius: 24 }, header: { paddingHorizontal: 16, paddingTop: 16, flexDirection: "row", flexShrink: 0, flexGrow: 0 }, subheader: { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", alignSelf: "center", paddingStart: 8 }, tabs: obj3, tab: size, tabSelected: obj4 };
+obj2 = { flexGrow: 0, marginHorizontal: 16, marginBottom: 16, flexShrink: 1, borderRadius: 24, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", justifyContent: "flex-start", alignItems: "stretch", overflow: "hidden" };
+createStyles = createStyles.createStyles;
+obj3 = { marginStart: 8, flexDirection: "row", flexShrink: 0, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: md, padding: 5, alignItems: "stretch", justifyContent: "center", gap: 5, borderWidth: 1, borderColor: nativeDefault.colors.INPUT_BORDER_DEFAULT };
+size = { width: 32, height: 32, borderRadius: md - 5, alignItems: "center", justifyContent: "center" };
+obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+let closure_29 = createStyles(obj);
+const constants2 = { SEARCH: 0, [0]: "SEARCH", MEMBERS: 1, [1]: "MEMBERS", NOTIFICATIONS: 2, [2]: "NOTIFICATIONS", DEV_TOOLS: 3, [3]: "DEV_TOOLS" };
 const __initData = { code: "function LaunchPadTsx1(){const{sharedState}=this.__closure;return sharedState.get();}" };
 const __initData2 = { code: "function LaunchPadTsx2(sharedState){const{keyboardShown,runOnJS,setFocused}=this.__closure;if(!keyboardShown.get()&&sharedState>0.75){runOnJS(setFocused)(true);}else if(keyboardShown.get()&&sharedState<=0){runOnJS(setFocused)(false);}}" };
-let closure_35 = noop.memo((tab) => {
+let closure_35 = react.memo((tab) => {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let isDeveloper;
+  let items5;
+  let items6;
+  let ref;
+  let sharedState;
+  let tmp17;
+  let tmp18;
   tab = tab.tab;
   ({ setTab: importDefault, sharedState } = tab);
   const searchRef = tab.searchRef;
-  noop = undefined;
+  react = undefined;
+  const updateQuery = tab.updateQuery;
   let tmp = closure_29();
-  items = [DeveloperExperimentStore];
-  const stateFromStores = tab(sharedState[24]).useStateFromStores(items, () => isDeveloper.isDeveloper);
-  noop = noop.useRef(false);
   let obj = tab(sharedState[24]);
-  const sharedValue = tab(sharedState[25]).useSharedValue(false);
-  const ref2 = noop.useRef(tab);
-  const effect = noop.useEffect(() => {
-    closure_6.current = tab;
+  items = [DeveloperExperimentStore];
+  const stateFromStores = obj.useStateFromStores(items, () => isDeveloper.isDeveloper);
+  react = react.useRef(false);
+  let obj2 = tab(sharedState[25]);
+  const sharedValue = obj2.useSharedValue(false);
+  const ref2 = react.useRef(tab);
+  const effect = react.useEffect(() => {
+    ref2.current = tab;
   });
   const items1 = [sharedValue, searchRef];
-  const setFocused = noop.useCallback((arg0, arg1) => {
-    if (arg0) {
+  const setFocused = react.useCallback((arg0, arg1) => {
+    const tmp = arg0;
+    if (tmp) {
       if (ref2.current === constants.SEARCH) {
-        const bestActiveInput = ChatInputUtils.getBestActiveInput();
+        const obj3 = ChatInputUtils;
+        const bestActiveInput = obj3.getBestActiveInput();
         let isFocusedResult;
+        const tmp15 = ref;
         if (bestActiveInput != null) {
           isFocusedResult = bestActiveInput.isFocused();
         }
-        ref.current = true === isFocusedResult;
+        tmp15.current = true === isFocusedResult;
         if (null != searchRef.current) {
           const result = sharedValue.set(true);
-          const current3 = tmp19.current;
+          const current3 = tmp20.current;
           if (current3 != null) {
             current3.focus();
           }
@@ -125,11 +163,13 @@ let closure_35 = noop.memo((tab) => {
     }
     if (!arg0) {
       let current = ref.current;
+      const tmp4 = ref;
       if (current) {
         current = !arg1;
       }
       if (current) {
-        const bestActiveInput1 = ChatInputUtils.getBestActiveInput();
+        const obj = ChatInputUtils;
+        const bestActiveInput1 = obj.getBestActiveInput();
         if (bestActiveInput1 != null) {
           bestActiveInput1.focus();
         }
@@ -138,28 +178,25 @@ let closure_35 = noop.memo((tab) => {
       if (current2 != null) {
         current2.blur();
       }
-      ref.current = false;
+      tmp4.current = false;
       const result1 = sharedValue.set(false);
     }
   }, items1);
-  let obj2 = tab(sharedState[25]);
+  let obj3 = tab(sharedState[24]);
   const items2 = [ref2];
-  const stateFromStores1 = tab(sharedState[24]).useStateFromStores(items2, () => ref2.isOpen());
+  const stateFromStores1 = obj3.useStateFromStores(items2, () => ref2.isOpen());
   const items3 = [stateFromStores1, setFocused];
-  const effect1 = noop.useEffect(() => {
+  const effect1 = react.useEffect(() => {
     callback(!stateFromStores1, stateFromStores1);
   }, items3);
   const items4 = [tab, sharedState, setFocused];
-  const effect2 = noop.useEffect(() => {
-    let tmp = tab === constants.SEARCH;
-    if (tmp) {
-      tmp = 1 === sharedState.get();
-    }
+  const effect2 = react.useEffect(() => {
+    const tmp = tab === constants.SEARCH && 1 === sharedState.get();
     if (tmp) {
       callback(true);
     }
   }, items4);
-  let obj3 = tab(sharedState[24]);
+  const obj4 = tab(sharedState[25]);
   class T {
     constructor() {
       return sharedState.get();
@@ -169,100 +206,99 @@ let closure_35 = noop.memo((tab) => {
   T.__workletHash = 17067823098320;
   T.__initData = __initData;
   const fn = function p(arg0) {
+    const obj = sharedValue;
     if (!sharedValue.get()) {
       if (arg0 > 0.75) {
-        ReanimatedRexport.runOnJS(callback)(true);
+        const obj2 = ReanimatedRexport;
+        obj2.runOnJS(callback)(true);
       }
     }
-    value = sharedValue.get();
+    const value = obj.get() && arg0 <= 0;
     if (value) {
-      value = arg0 <= 0;
-    }
-    if (value) {
-      ReanimatedRexport.runOnJS(callback)(false);
+      const obj3 = ReanimatedRexport;
+      obj3.runOnJS(callback)(false);
     }
   };
-  const obj4 = tab(sharedState[25]);
   fn.__closure = { keyboardShown: sharedValue, runOnJS: tab(sharedState[25]).runOnJS, setFocused };
   fn.__workletHash = 3784684686013;
   fn.__initData = __initData2;
+  ({ keyboardShown: sharedValue, runOnJS: tab(sharedState[25]).runOnJS, setFocused });
   const animatedReaction = obj4.useAnimatedReaction(T, fn);
-  const obj6 = { style: tmp.header, children: null };
-  if (tab === constants3.SEARCH) {
-    const obj7 = { size: "md", returnKeyType: "done", ref: searchRef, onChange: tab.updateQuery, autoComplete: "off", spellCheck: false, autoFocus: false };
-    let tmp18 = closure_27(tmp2(tmp3[27]).SearchField, obj7);
-    let tmp17 = closure_27;
-  } else if (tab === tmp14.MEMBERS) {
-    const obj8 = { text: null };
-    const intl2 = tmp2(tmp3[28]).intl;
-    obj8.text = intl2.string(tmp2(tmp3[28]).t["9Oq93m"]);
+  const obj6 = { style: tmp.header, children: items5 };
+  if (tab === constants2.SEARCH) {
+    const obj7 = { size: "md", returnKeyType: "done", ref: searchRef, onChange: updateQuery, autoComplete: "off", spellCheck: false, autoFocus: false };
+    tmp18 = closure_27(tmp2(tmp3[27]).SearchField, obj7);
+    tmp17 = closure_27;
+  } else if (tab === constants2.MEMBERS) {
+    const obj8 = { text: intl2.string(tab(sharedState[28]).t["9Oq93m"]) };
+    intl2 = tmp2(tmp3[28]).intl;
     tmp18 = closure_27(TabHeader, obj8);
     tmp17 = closure_27;
-  } else if (tab === tmp14.NOTIFICATIONS) {
-    const obj9 = { text: null };
-    const intl = tmp2(tmp3[28]).intl;
-    obj9.text = intl.string(tmp2(tmp3[28]).t.HcoRu0);
+  } else if (tab === constants2.NOTIFICATIONS) {
+    const tmp20 = TabHeader;
+    const obj9 = { text: intl.string(tab(sharedState[28]).t.HcoRu0) };
+    intl = tmp2(tmp3[28]).intl;
     tmp18 = closure_27(TabHeader, obj9);
     tmp17 = closure_27;
   } else {
+    let tmp15 = closure_27;
     tmp17 = closure_27;
     tmp18 = closure_27(TabHeader, { text: "Dev Tools" });
   }
-  const items5 = [tmp18, ];
-  const obj10 = { style: tmp.tabs, children: null };
+  items5 = [tmp18, ];
+  const obj10 = { style: tmp.tabs, children: items6 };
   const obj11 = {
     icon(color) {
-      return closure_1_27(tab(sharedState[29]).FlashIcon, { size: "sm", color });
+      const obj = { size: "sm", color };
+      return closure_1_27(tab(sharedState[29]).FlashIcon, obj);
     },
-    accessibilityLabel: null,
-    onPress: null,
-    selected: null
+    accessibilityLabel: intl3.string(tab(sharedState[28]).t.JqV7IC),
+    onPress() {
+      importDefault(constants.SEARCH);
+      const current = searchRef.current;
+      if (current != null) {
+        current.focus();
+      }
+    },
+    selected: tab === constants2.SEARCH
   };
-  const intl3 = tmp2(tmp3[28]).intl;
-  obj11.accessibilityLabel = intl3.string(tab(sharedState[28]).t.JqV7IC);
-  obj11.onPress = function onPress() {
-    importDefault(constants.SEARCH);
-    const current = searchRef.current;
-    if (current != null) {
-      current.focus();
-    }
-  };
-  obj11.selected = tab === constants3.SEARCH;
-  const items6 = [tmp17(TabButton, obj11), , ];
+  intl3 = tmp2(tmp3[28]).intl;
+  items6 = [tmp17(TabButton, obj11), , ];
   const obj12 = {
     icon(color) {
-      return closure_1_27(tab(sharedState[30]).BellIcon, { size: "sm", color });
+      const obj = { size: "sm", color };
+      return closure_1_27(tab(sharedState[30]).BellIcon, obj);
     },
-    accessibilityLabel: null,
-    onPress: null,
-    selected: null
+    accessibilityLabel: intl4.string(tab(sharedState[28]).t.HcoRu0),
+    onPress() {
+      importDefault(constants.NOTIFICATIONS);
+      const current = searchRef.current;
+      if (current != null) {
+        current.blur();
+      }
+    },
+    selected: tab === constants2.NOTIFICATIONS
   };
-  const intl4 = tmp2(tmp3[28]).intl;
-  obj12.accessibilityLabel = intl4.string(tab(sharedState[28]).t.HcoRu0);
-  obj12.onPress = function onPress() {
-    importDefault(constants.NOTIFICATIONS);
-    const current = searchRef.current;
-    if (current != null) {
-      current.blur();
-    }
-  };
-  obj12.selected = tab === constants3.NOTIFICATIONS;
+  intl4 = tmp2(tmp3[28]).intl;
   items6[1] = tmp17(TabButton, obj12);
   let tmp17Result = null;
+  const tmp24 = TabButton;
   if (stateFromStores) {
     const obj13 = {
       icon(color) {
-          return closure_1_27(tab(sharedState[31]).StaffBadgeIcon, { size: "sm", color });
+          const obj = { size: "sm", color };
+          return closure_1_27(tab(sharedState[31]).StaffBadgeIcon, obj);
         },
       accessibilityLabel: "Dev Tools",
-      selected: tab === tmp14.DEV_TOOLS,
+      selected: tab === constants2.DEV_TOOLS,
       onPress() {
+          const obj = PlatformUtils;
           if (obj.isAndroid()) {
-            DevToolsNavigator.navigateToDevTools();
-            hideLaunchPadDefault();
             const tmpResult = DevToolsNavigator;
+            tmpResult.navigateToDevTools();
+            hideLaunchPadDefault();
           } else {
-            closure_1_1(constants.DEV_TOOLS);
+            importDefault(constants.DEV_TOOLS);
           }
           const current = searchRef.current;
           if (current != null) {
@@ -270,138 +306,162 @@ let closure_35 = noop.memo((tab) => {
           }
         }
     };
-    tmp17Result = tmp17(TabButton, obj13);
+    tmp17Result = tmp17(tmp24, obj13);
   }
   items6[2] = tmp17Result;
-  obj10.children = items6;
   items5[1] = closure_28(sharedValue, obj10);
-  obj6.children = items5;
   return closure_28(sharedValue, obj6);
 });
 let closure_37 = [];
-let items = [fn(9290).AutocompleterResultTypes.GUILD, fn(9290).AutocompleterResultTypes.TEXT_CHANNEL, fn(9290).AutocompleterResultTypes.GROUP_DM, fn(9290).AutocompleterResultTypes.VOICE_CHANNEL, fn(9290).AutocompleterResultTypes.USER];
+let items = [_mod9290.AutocompleterResultTypes.GUILD, _mod9290.AutocompleterResultTypes.TEXT_CHANNEL, _mod9290.AutocompleterResultTypes.GROUP_DM, _mod9290.AutocompleterResultTypes.VOICE_CHANNEL, _mod9290.AutocompleterResultTypes.USER];
 const __initData3 = { code: "function LaunchPadTsx3(){const{sharedState}=this.__closure;return sharedState.get()===0;}" };
 const __initData4 = { code: "function LaunchPadTsx4(hidden,prevHidden){const{runOnJS,clearQuery,cancelTimeout}=this.__closure;if(hidden===prevHidden)return;if(hidden&&hidden!==prevHidden){runOnJS(clearQuery)();}else if(!hidden&&hidden!==prevHidden){runOnJS(cancelTimeout)();}}" };
-let obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-size = fn(2);
-let result = size.fileFinishedImporting("modules/launchpad/native/LaunchPad.tsx");
-
-export default noop.memo(function LaunchPad(arg0) {
+const memoResult = react.memo(function LaunchPad(arg0) {
+  let activeJoinedUnreadThreadsForGuild;
+  let c0;
+  let c1;
+  let c2;
+  let channelHistory;
+  let closure_3;
+  let first1;
+  let first3;
+  let mentionCount;
+  let sharedState;
+  let state;
+  let str;
+  let tmp22;
+  let tmp3;
+  let tmp42;
+  let tmp54Result2;
+  let tmp9;
+  let unreadPrivateChannelIds;
+  let unreads;
+  let visible;
   ({ visible, sharedState } = arg0);
   _require = undefined;
-  let top;
-  let bottom;
+  str = undefined;
+  let first2;
+  _slicedToArray = undefined;
   let tmp = closure_29();
-  [tmp3, closure_0] = bottom(noop.useState(false), 2);
-  const callback = noop.useCallback(() => closure_0((arg0) => !arg0), []);
-  const ref = noop.useRef(null);
-  closure_129_0 = visible;
-  closure_129_1 = undefined;
-  closure_129_2 = undefined;
-  let tmp2 = bottom(noop.useState(false), 2);
-  [str, closure_129_1] = bottom(noop.useState(""), 2);
-  let tmp6 = bottom(noop.useState(""), 2);
-  [tmp9, closure_129_2] = bottom(noop.useState(closure_37), 2);
-  const first = bottom(noop.useState(() => new AutocompleterDefault((arg0, str) => {
-    if ("" === str.trim()) {
-      top(closure_2_37);
-    } else {
-      top(arg0);
-    }
-  }, items, undefined, { frecencyBoosters: true })), 1)[0];
-  closure_129_3 = first;
+  let tmp2 = _slicedToArray(react.useState(false), 2);
+  [tmp3, c0] = tmp2;
+  const callback = react.useCallback(() => _undefined((arg0) => !arg0), []);
+  const ref = react.useRef(null);
+  c1 = undefined;
+  c2 = undefined;
+  let tmp6 = _slicedToArray(react.useState(""), 2);
+  [str, c1] = tmp6;
+  let tmp7 = closure_37;
+  let tmp8 = _slicedToArray(react.useState(closure_37), 2);
+  [tmp9, c2] = tmp8;
+  const first = _slicedToArray(react.useState(() => {
+    const tmp = new str(first2[41])((arg0, str) => {
+      str = str.trim();
+      if ("" === str.trim()) {
+        closure_1_2(closure_2_37);
+      } else {
+        closure_1_2(arg0);
+      }
+    }, items, undefined, { frecencyBoosters: true });
+    return tmp;
+  }), 1)[0];
   items = [first];
-  const effect = noop.useEffect(() => () => bottom.clean(), items);
+  const effect = react.useEffect(() => () => first.clean(), items);
   let items1 = [first];
-  const effect1 = noop.useEffect(() => RouteManagerDefault.addRouteChangeListener(() => {
-    items = ["user:" + ref5.getId()];
-    const set = new Set(items);
-    const selectedGuildFromRoute = closure_0(top[36]).getSelectedGuildFromRoute();
-    if (null != selectedGuildFromRoute) {
-      const _HermesInternal = HermesInternal;
-      set.add("guild:" + selectedGuildFromRoute);
-    }
-    options.setOptions({ blacklist: set }, true);
-  }), items1);
+  const effect1 = react.useEffect(() => {
+    let options;
+    const obj = str(first2[42]);
+    return obj.addRouteChangeListener(() => {
+      items = ["user:" + id.getId()];
+      set = new Set(items);
+      const obj2 = visible(c2[36]);
+      const selectedGuildFromRoute = obj2.getSelectedGuildFromRoute();
+      if (null != selectedGuildFromRoute) {
+        const _HermesInternal = HermesInternal;
+        set.add("guild:" + selectedGuildFromRoute);
+      }
+      options.setOptions({ blacklist: set }, true);
+    });
+  }, items1);
   let items2 = [visible, first];
-  const effect2 = noop.useEffect(() => {
-    if (closure_0) {
-      obj.resume();
+  const effect2 = react.useEffect(() => {
+    if (visible) {
+      first.resume();
     } else {
-      obj.pause();
+      first.pause();
     }
   }, items2);
   let items3 = [first];
-  const callback1 = noop.useCallback((arg0) => {
-    height(arg0);
-    bottom.search(arg0);
+  const callback1 = react.useCallback((arg0) => {
+    _undefined(arg0);
+    first.search(arg0);
   }, items3);
   let tmp15 = str.trim().length > 0;
-  closure_130_0 = tmp15;
-  closure_130_1 = visible;
-  let tmp8 = bottom(noop.useState(closure_37), 2);
-  let selectedGuildFromRoute = require("NavigationRouteUtils").getSelectedGuildFromRoute();
-  closure_130_2 = selectedGuildFromRoute;
+  first1 = undefined;
+  let tmp16 = _require;
   let obj = require("NavigationRouteUtils");
-  const selectedChannelFromRoute = require("NavigationRouteUtils").getSelectedChannelFromRoute();
-  closure_130_3 = selectedChannelFromRoute;
-  const tmp20 = bottom(noop.useState(undefined), 2);
-  const first1 = tmp20[0];
-  closure_130_4 = first1;
-  closure_130_5 = tmp22;
+  let selectedGuildFromRoute = obj.getSelectedGuildFromRoute();
+  let obj2 = require("NavigationRouteUtils");
+  const selectedChannelFromRoute = obj2.getSelectedChannelFromRoute();
+  [first1, tmp22] = react.useState(undefined);
+  let closure_5 = tmp22;
   let items4 = [visible];
-  const effect3 = noop.useEffect(() => {
-    if (!height) {
-      View(undefined);
+  const effect3 = react.useEffect(() => {
+    const tmp = visible;
+    if (!tmp) {
+      closure_5(undefined);
     }
   }, items4);
-  closure_130_6 = noop.useRef([]);
-  let obj2 = require("NavigationRouteUtils");
+  let closure_6 = react.useRef([]);
+  let obj3 = require("get initialized");
   let items5 = [PrivateChannelReadStateStore];
-  const stateFromStores = require("initialize").useStateFromStores(items5, () => {
-    if (height) {
-      current = PrivateChannelReadStateStore.getUnreadPrivateChannelIds();
+  const stateFromStores = obj3.useStateFromStores(items5, () => {
+    let current;
+    const tmp = visible;
+    if (tmp) {
+      current = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
     } else {
       current = ref.current;
     }
     return current;
   });
-  closure_130_7 = stateFromStores;
-  const effect4 = noop.useEffect(() => {
-    ref.current = current;
+  const effect4 = react.useEffect(() => {
+    ref.current = stateFromStores;
   });
-  closure_130_8 = noop.useRef([]);
-  let obj3 = require("initialize");
+  let closure_8 = react.useRef([]);
   let items6 = [SortedGuildStore, GuildReadStateStore, GuildStore];
   const items7 = [visible, selectedGuildFromRoute];
-  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items6, () => {
-    if (height) {
+  const obj4 = require("get initialized");
+  const stateFromStoresArray = obj4.useStateFromStoresArray(items6, () => {
+    const tmp2 = visible;
+    if (tmp2) {
       items = [];
       const items1 = [];
-      const flattenedGuildIds = SortedGuildStore.getFlattenedGuildIds();
+      flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
       const iter = flattenedGuildIds[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
-        let tmp9 = nextResult;
-        if (nextResult !== top) {
-          let obj = GuildReadStateStore;
-          let hasUnreadResult = GuildReadStateStore.getMentionCount(tmp9) > 0;
-          let tmp31 = hasUnreadResult;
-          if (!hasUnreadResult) {
-            hasUnreadResult = obj.hasUnread(tmp9);
+        let tmp11 = nextResult;
+        if (nextResult !== selectedGuildFromRoute) {
+          let obj = mentionCount;
+          let hasUnreadResult = mentionCount.getMentionCount(tmp11) > 0;
+          let tmp33 = hasUnreadResult;
+          if (!tmp33) {
+            hasUnreadResult = obj.hasUnread(tmp11);
           }
           if (hasUnreadResult) {
-            let guild = GuildStore.getGuild(tmp9);
+            guild = GuildStore.getGuild(tmp11);
             let hasItem;
             if (guild != null) {
               let features = guild.features;
-              hasItem = features.has(constants2.HUB);
+              hasItem = features.has(constants.HUB);
             }
             if (!hasItem) {
-              if (tmp31) {
-                let arr = items.push(tmp9);
+              let tmp20 = tmp33;
+              if (tmp20) {
+                let arr = items.push(tmp11);
               } else {
-                let arr2 = items1.push(tmp9);
+                let arr2 = items1.push(tmp11);
               }
             }
           }
@@ -410,35 +470,38 @@ export default noop.memo(function LaunchPad(arg0) {
       }
       const push = items.push;
       const items2 = [];
-      HermesBuiltin.arraySpread(items1, 0);
-      HermesBuiltin.apply(items2, items);
+      HermesBuiltin.arraySpread(items2, items1, 0);
+      HermesBuiltin.apply(push, items2, items);
       return items;
     } else {
       return ref2.current;
     }
   }, items7);
-  closure_130_9 = stateFromStoresArray;
-  const effect5 = noop.useEffect(() => {
-    ref2.current = current2;
+  const effect5 = react.useEffect(() => {
+    ref2.current = stateFromStoresArray;
   });
-  closure_130_10 = noop.useRef([]);
-  const obj4 = require("initialize");
+  let closure_10 = react.useRef([]);
   const items8 = [ChannelListStore, VoiceStateStore, ReadStateStore, UserGuildSettingsStore, ActiveJoinedThreadsStore];
   const items9 = [tmp15, selectedGuildFromRoute, visible, first1];
-  const stateFromStoresArray1 = require("initialize").useStateFromStoresArray(items8, () => {
-    let tmp = noop;
-    if (noop == null) {
-      tmp = top;
+  const obj5 = require("get initialized");
+  const stateFromStoresArray1 = obj5.useStateFromStoresArray(items8, () => {
+    let channelMuted;
+    let voiceStatesForChannel;
+    let tmp2 = first1;
+    if (first1 == null) {
+      tmp2 = selectedGuildFromRoute;
     }
-    if (!items) {
-      if (null != tmp) {
-        if (height) {
+    const tmp3 = closure_0;
+    if (!tmp3) {
+      if (null != tmp2) {
+        const tmp34 = visible;
+        if (tmp34) {
           items = [];
           const items1 = [];
           const items2 = [];
           const items3 = [];
           const _Object = Object;
-          const values = Object.values(ActiveJoinedThreadsStore.getActiveJoinedUnreadThreadsForGuild(tmp));
+          const values = Object.values(activeJoinedUnreadThreadsForGuild.getActiveJoinedUnreadThreadsForGuild(tmp2));
           for (const item10020 of values) {
             for (const key10024 in item10020) {
               let arr = items1.push(key10024);
@@ -446,20 +509,21 @@ export default noop.memo(function LaunchPad(arg0) {
             }
             continue;
           }
-          const guildChannels = ChannelListStore.getGuild(tmp).guildChannels;
+          const guildChannels = guild.getGuild(tmp2).guildChannels;
           guildChannels.forEachChannel((type) => {
-            const tmp2 = current4(type.type);
+            const tmp2 = memo(type.type);
             if (tmp2) {
               if (!channelMuted.isChannelMuted(type.guild_id, type.id)) {
                 if (null == type.parent_id) {
+                  const obj2 = mentionCount;
                   if (mentionCount.getMentionCount(type.id) > 0) {
                     items.push(type.id);
                   } else {
                     if (!tmp2) {
+                      const obj3 = closure_2_0(selectedGuildFromRoute[37]);
                       if (obj3.getHasImportantUnread(type)) {
                         items1.push(type.id);
                       }
-                      obj3 = items(top[37]);
                     }
                     if (tmp2) {
                       const keys = Object.keys();
@@ -472,23 +536,22 @@ export default noop.memo(function LaunchPad(arg0) {
                       items2.push(type.id);
                     }
                   }
-                  obj2 = mentionCount;
                 }
               }
             }
           }, { ignoreRecents: true, withThreads: true });
           const push = items.push;
           const items4 = [];
-          HermesBuiltin.arraySpread(items1, 0);
-          HermesBuiltin.apply(items4, items);
+          HermesBuiltin.arraySpread(items4, items1, 0);
+          HermesBuiltin.apply(push, items4, items);
           const push2 = items.push;
           const items5 = [];
-          HermesBuiltin.arraySpread(items3, 0);
-          HermesBuiltin.apply(items5, items);
+          HermesBuiltin.arraySpread(items5, items3, 0);
+          HermesBuiltin.apply(push2, items5, items);
           const push3 = items.push;
           const items6 = [];
-          HermesBuiltin.arraySpread(items2, 0);
-          HermesBuiltin.apply(items6, items);
+          HermesBuiltin.arraySpread(items6, items2, 0);
+          HermesBuiltin.apply(push3, items6, items);
           return items;
         } else {
           return ref3.current;
@@ -497,49 +560,55 @@ export default noop.memo(function LaunchPad(arg0) {
     }
     return [];
   }, items9);
-  closure_130_11 = stateFromStoresArray1;
-  const effect6 = noop.useEffect(() => {
-    ref3.current = current3;
+  const effect6 = react.useEffect(() => {
+    ref3.current = stateFromStoresArray1;
   });
-  const obj5 = require("initialize");
   const items10 = [NavigationHistoryStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items10, () => current3.getState().history);
-  closure_130_12 = stateFromStores1;
-  closure_130_13 = noop.useRef([]);
+  const obj6 = require("get initialized");
+  const stateFromStores1 = obj6.useStateFromStores(items10, () => state.getState().history);
+  let closure_13 = react.useRef([]);
   const items11 = [tmp15, visible, selectedGuildFromRoute, stateFromStoresArray, stateFromStores1];
-  const memo = noop.useMemo(() => {
-    if (!closure_0) {
-      if (height) {
+  const memo = react.useMemo(function() {
+    const tmp = closure_0;
+    if (!tmp) {
+      const tmp2 = visible;
+      if (tmp2) {
         const _Set = Set;
-        const set = new Set(current2);
-        if (null != top) {
-          set.add(tmp7);
+        const self = this;
+        const self2 = this;
+        set = new Set(stateFromStoresArray);
+        if (null != selectedGuildFromRoute) {
+          set.add(tmp6);
         }
         items = [];
         const _Set2 = Set;
+        const self3 = this;
+        const self4 = this;
         const set1 = new Set();
-        let diff = length.length - 1;
+        let diff = stateFromStores1.length - 1;
+        const tmp9 = stateFromStores1;
         if (0 <= diff) {
-          while (null != length[diff]) {
-            if (obj3.startsWith(React6)) {
-              let channel = ChannelStore.getChannel(React7(obj3));
+          while (null != tmp9[diff]) {
+            let tmp14;
+            if (obj3.startsWith(closure_2_8)) {
+              channel = channel.getChannel(closure_2_9(obj3));
               let guild_id;
               if (channel != null) {
                 guild_id = channel.guild_id;
               }
-              let tmp17 = guild_id;
+              tmp14 = guild_id;
             } else {
-              tmp17 = React7(obj3);
+              tmp14 = closure_2_9(obj3);
             }
-            let guild = GuildStore.getGuild(tmp17);
-            let hasItem = null == tmp17 || set.has(tmp17) || set1.has(tmp17) || null == guild;
+            guild = GuildStore.getGuild(tmp14);
+            let hasItem = null == tmp14 || set.has(tmp14) || set1.has(tmp14) || null == guild;
             if (!hasItem) {
               let features = guild.features;
-              hasItem = features.has(constants2.HUB);
+              hasItem = features.has(constants.HUB);
             }
             if (!hasItem) {
-              let addResult1 = set1.add(tmp17);
-              let arr = items.push(tmp17);
+              let addResult1 = set1.add(tmp14);
+              let arr = items.push(tmp14);
             }
             if (items.length >= 20) {
               break;
@@ -556,135 +625,142 @@ export default noop.memo(function LaunchPad(arg0) {
     }
     return ref4.current;
   }, items11);
-  closure_130_14 = memo;
-  const effect7 = noop.useEffect(() => {
-    ref4.current = current4;
+  const effect7 = react.useEffect(() => {
+    ref4.current = memo;
   });
-  closure_130_15 = noop.useRef(undefined);
+  let closure_15 = react.useRef(undefined);
   const items12 = [tmp15, visible, stateFromStoresArray1, selectedChannelFromRoute, first1, stateFromStores1];
-  const memo1 = noop.useMemo(() => {
-    if (!closure_0) {
-      if (height) {
-        const tmp5 = (function getChannelHistory(arg0, bottom) {
-          if (null != bottom) {
-            const _HermesInternal = HermesInternal;
-            const combined = "" + ref2 + bottom;
-          }
-          items = [];
-          let diff = arg0.length - 1;
-          if (0 <= diff) {
-            while (null != arg0[diff]) {
-              if (!obj.startsWith(ref3)) {
-                if (obj !== combined) {
-                  let tmp8 = current2(obj);
-                  basicChannel = basicChannel.getBasicChannel(tmp8);
-                  if (null != basicChannel) {
-                    if (null == basicChannel.guild_id) {
-                      let arr = items.push(tmp8);
-                      if (items.length >= 20) {
-                        break;
-                      }
-                    }
+  const memo1 = react.useMemo(function() {
+    function getChannelHistory(stateFromStores1, selectedChannelFromRoute) {
+      let combined;
+      if (null != selectedChannelFromRoute) {
+        const _HermesInternal = HermesInternal;
+        combined = "" + ref2 + selectedChannelFromRoute;
+      }
+      items = [];
+      let diff = stateFromStores1.length - 1;
+      if (0 <= diff) {
+        while (null != stateFromStores1[diff]) {
+          if (!obj.startsWith(ref3)) {
+            if (obj !== combined) {
+              let tmp8 = stateFromStoresArray(obj);
+              basicChannel = basicChannel.getBasicChannel(tmp8);
+              if (null != basicChannel) {
+                if (null == basicChannel.guild_id) {
+                  let arr = items.push(tmp8);
+                  if (items.length >= 20) {
+                    break;
                   }
-                  break;
                 }
               }
-              diff = diff - 1;
-              if (0 > diff) {
-                break;
-              }
+              break;
             }
           }
-          return items;
-        })(length, bottom);
+          diff = diff - 1;
+          if (0 > diff) {
+            break;
+          }
+        }
+      }
+      return items;
+    }
+    const tmp = closure_0;
+    if (!tmp) {
+      const tmp2 = visible;
+      if (tmp2) {
+        let tmp24;
+        let tmp6 = getChannelHistory(stateFromStores1, selectedChannelFromRoute);
         items = [];
-        if (null == noop) {
+        let tmp7 = first1;
+        let tmp8 = null;
+        if (null == first1) {
+          let tmp9 = globalThis;
           const _Set = Set;
-          const set = new Set();
-          for (const item10022 of tmp5) {
-            let tmp16 = createAndAppendChannel(item10022, set, items);
+          const self = this;
+          const self2 = this;
+          set = new Set();
+          let tmp11 = set;
+          for (const item10022 of tmp6) {
+            let tmp15 = createAndAppendChannel(item10022, set, items);
             continue;
           }
         }
         const items1 = [];
         const _Set2 = Set;
+        const self3 = this;
+        const self4 = this;
         const set1 = new Set();
-        if (current3.length > 0) {
-          for (const item10040 of tmp22) {
-            let tmp26 = createAndAppendChannel(item10040, set1, items1);
+        if (stateFromStoresArray1.length > 0) {
+          for (const item10040 of tmp19) {
+            let tmp23 = createAndAppendChannel(item10040, set1, items1);
             continue;
           }
         }
         if (items.length > 0) {
           const obj = { channelHistory: items, unreads: items1 };
-          const tmp27 = obj;
+          tmp24 = obj;
         }
-        return tmp27;
+        return tmp24;
       } else {
         return ref5.current;
       }
     }
   }, items12);
-  closure_130_16 = memo1;
-  const effect8 = noop.useEffect(() => {
-    ref5.current = current5;
+  const effect8 = react.useEffect(() => {
+    ref5.current = memo1;
   });
-  const deferredValue = noop.useDeferredValue(memo1);
-  const tmp36 = bottom(noop.useState(false), 2);
-  const first2 = tmp36[0];
-  bottom = tmp38;
-  const tmp40 = bottom(noop.useState(constants3.SEARCH), 2);
-  const first3 = tmp40[0];
-  let height;
-  top = undefined;
-  const tmp42 = closure_29();
-  _require = tmp42;
-  height = height(top[39])().height;
-  const rect = height(top[40])();
-  top = rect.top;
-  bottom = rect.bottom;
-  const items13 = [height, top, bottom, tmp42];
+  const deferredValue = react.useDeferredValue(memo1);
+  const tmp36 = _slicedToArray(react.useState(false), 2);
+  first2 = tmp36[0];
+  [first3, tmp42] = react.useState(constants2.SEARCH);
+  const tmp43 = closure_29();
+  const _undefined = tmp43;
+  const height = str(first2[39])().height;
+  const rect = str(first2[40])();
+  const top = rect.top;
+  const bottom = rect.bottom;
+  const items13 = [height, top, bottom, tmp43];
   const items14 = [str, tmp36[1], first2];
-  const memo2 = noop.useMemo(() => {
-    items = [closure_0.wrapper, { maxHeight: height - top - bottom - 16 }];
+  const memo2 = react.useMemo(() => {
+    items = [wrapper.wrapper, ];
+    const obj = { maxHeight: height - top - bottom - 16 };
+    items[1] = obj;
     return items;
   }, items13);
-  const effect9 = noop.useEffect(() => {
-    if (height.length > 0) {
-      if (!top) {
-        AnalyticsUtilsDefault.track(constants.LAUNCHPAD_SEARCHED);
-        bottom(true);
+  const effect9 = react.useEffect(() => {
+    const arr = str;
+    if (str.length > 0) {
+      const tmp = first2;
+      if (!tmp) {
+        const obj = AnalyticsUtilsDefault;
+        obj.track(constants.LAUNCHPAD_SEARCHED);
+        closure_3(true);
       }
     }
-    if (0 === height.length) {
-      bottom(false);
+    if (0 === arr.length) {
+      closure_3(false);
     }
   }, items14);
-  closure_131_0 = callback1;
-  closure_131_1 = ref;
-  closure_131_2 = sharedState;
-  closure_131_3 = noop.useRef(-1);
+  _slicedToArray = react.useRef(-1);
   const items15 = [callback1, ref];
-  const callback2 = noop.useCallback(() => {
-    clearTimeout(bottom.current);
-    bottom.current = setTimeout(() => {
+  const callback2 = react.useCallback(() => {
+    let ref2;
+    clearTimeout(ref.current);
+    ref.current = setTimeout(() => {
       clearTimeout(ref2.current);
-      closure_1_0("");
-      current = ref.current;
+      callback1("");
+      const current = ref.current;
       if (current != null) {
         current.setText("");
       }
     }, 100);
   }, items15);
-  closure_131_4 = callback2;
-  const callback3 = noop.useCallback(() => {
-    clearTimeout(bottom.current);
+  const callback3 = react.useCallback(() => {
+    clearTimeout(ref.current);
   }, []);
-  closure_131_5 = callback3;
-  const effect10 = noop.useEffect(() => () => clearTimeout(ref.current), []);
-  const obj6 = require("initialize");
+  const effect10 = react.useEffect(() => () => clearTimeout(ref.current), []);
   const fn = function l() {
-    return 0 === top.get();
+    return 0 === sharedState.get();
   };
   fn.__closure = { sharedState };
   fn.__workletHash = 7315121230879;
@@ -692,16 +768,15 @@ export default noop.memo(function LaunchPad(arg0) {
   const fn2 = function i(arg0, arg1) {
     if (arg0 !== arg1) {
       if (arg0) {
-        if (tmp) {
-          ReanimatedRexport.runOnJS(noop)();
+        if (arg0 !== arg1) {
+          const obj2 = callback1(first2[25]);
+          obj2.runOnJS(callback2)();
         }
       }
-      let tmp2 = arg0;
-      if (!arg0) {
-        tmp2 = arg0 === arg1;
-      }
+      const tmp2 = arg0 || arg0 === arg1;
       if (!tmp2) {
-        ReanimatedRexport.runOnJS(View)();
+        const obj = callback1(first2[25]);
+        obj.runOnJS(callback3)();
       }
     }
   };
@@ -709,53 +784,61 @@ export default noop.memo(function LaunchPad(arg0) {
   fn2.__closure = { runOnJS: require("ReanimatedRexport").runOnJS, clearQuery: callback2, cancelTimeout: callback3 };
   fn2.__workletHash = 6379173436444;
   fn2.__initData = __initData4;
+  ({ runOnJS: require("ReanimatedRexport").runOnJS, clearQuery: callback2, cancelTimeout: callback3 });
   const animatedReaction = obj7.useAnimatedReaction(fn, fn2);
   const obj9 = { style: memo2, children: null };
-  const obj8 = { runOnJS: require("ReanimatedRexport").runOnJS, clearQuery: callback2, cancelTimeout: callback3 };
-  const items16 = [closure_27(closure_35, { tab: first3, setTab: tmp40[1], updateQuery: callback1, searchRef: ref, sharedState }), , ];
-  let tmp53Result = 0 === str.trim().length && first3 === tmp39.SEARCH;
-  if (tmp53Result) {
+  const items16 = [, , ];
+  const tmp51 = str.trim().length > 0;
+  items16[0] = closure_27(closure_35, { tab: first3, setTab: tmp42, updateQuery: callback1, searchRef: ref, sharedState });
+  let tmp54Result = 0 === str.trim().length && first3 === tmp39.SEARCH;
+  const tmp52 = closure_28;
+  if (tmp54Result) {
     const obj10 = { selectedGuildId: first1, setSelectedGuild: tmp22, unreadPrivateChannelIds: stateFromStores, unreadGuilds: stateFromStoresArray, guildHistory: memo, visible };
-    tmp53Result = tmp53(tmp43(tmp17[44]), obj10);
+    tmp54Result = tmp54(tmp44(tmp17[44]), obj10);
   }
-  items16[1] = tmp53Result;
+  items16[1] = tmp54Result;
   const obj11 = { style: tmp.launchPadContent, children: null };
-  if (first3 === constants3.SEARCH) {
-    if (tmp50) {
+  if (first3 === constants2.SEARCH) {
+    if (tmp51) {
+      const SearchResults = tmp16(first2[45]).SearchResults;
+      if (tmp9 == null) {
+        tmp9 = tmp7;
+      }
       const obj12 = { results: tmp9, query: str };
-      let tmp53Result2 = tmp53(tmp16(tmp17[45]).SearchResults, obj12);
+      tmp54Result2 = tmp54(SearchResults, obj12);
     }
-    obj11.children = tmp53Result2;
-    items16[2] = tmp53(tmp52, obj11);
+    obj11.children = tmp54Result2;
+    items16[2] = closure_27(View, obj11);
     obj9.children = items16;
-    return closure_28(tmp52, obj9);
+    return tmp52(View, obj9);
   }
-  if (first3 === constants3.SEARCH) {
-    const obj13 = { selectedGuildId: first1, unreads: null, history: null, expandedHistory: null, toggleExpandedHistory: null };
-    let unreads;
+  if (first3 === constants2.SEARCH) {
+    const obj13 = { selectedGuildId: first1, unreads, history: channelHistory, expandedHistory: tmp3, toggleExpandedHistory: callback };
+    unreads = undefined;
+    const InitialResults = tmp16(first2[45]).InitialResults;
     if (deferredValue != null) {
       unreads = deferredValue.unreads;
     }
     if (unreads == null) {
       unreads = tmp7;
     }
-    obj13.unreads = unreads;
-    let channelHistory;
+    channelHistory = undefined;
     if (deferredValue != null) {
       channelHistory = deferredValue.channelHistory;
     }
     if (channelHistory == null) {
       channelHistory = tmp7;
     }
-    obj13.history = channelHistory;
-    obj13.expandedHistory = tmp3;
-    obj13.toggleExpandedHistory = callback;
-    tmp53Result2 = tmp53(tmp16(tmp17[45]).InitialResults, obj13);
-  } else if (first3 === tmp39.DEV_TOOLS) {
-    tmp53Result2 = tmp53(tmp43(tmp17[46]), {});
-  } else if (first3 === tmp39.MEMBERS) {
-    tmp53Result2 = tmp53(tmp43(tmp17[47]), {});
+    tmp54Result2 = tmp54(InitialResults, obj13);
+  } else if (first3 === constants2.DEV_TOOLS) {
+    tmp54Result2 = tmp54(tmp44(tmp17[46]), {});
+  } else if (first3 === constants2.MEMBERS) {
+    tmp54Result2 = tmp54(tmp44(tmp17[47]), {});
   } else {
-    tmp53Result2 = tmp53(tmp43(tmp17[48]), {});
+    tmp54Result2 = tmp54(tmp44(tmp17[48]), {});
   }
 });
+size = size_mod;
+let result = size.fileFinishedImporting("modules/launchpad/native/LaunchPad.tsx");
+
+export default memoResult;

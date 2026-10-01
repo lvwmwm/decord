@@ -5,24 +5,39 @@
 // Exports: default
 
 // Module 13636 (NewTag)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl3 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: c3, Platform } = get_ActivityIndicator);
-const HorizontalGradient = fn(1074).HorizontalGradient;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { tagContainer: { height: "auto", backgroundColor: nativeDefault.unsafe_rawColors.RED_400, justifyContent: "center", alignItems: "center", paddingHorizontal: 4, marginBottom: 2, borderRadius: nativeDefault.radii.round }, tagText: { textTransform: "uppercase" } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let Platform;
+let c3;
+let obj2;
+({ View: c3, Platform } = react_native);
+const HorizontalGradient = Constants.HorizontalGradient;
+const jsx = Fragment.jsx;
+let obj = { tagContainer: obj2, tagText: { textTransform: "uppercase" } };
+obj2 = { height: "auto", backgroundColor: nativeDefault.unsafe_rawColors.RED_400, justifyContent: "center", alignItems: "center", paddingHorizontal: 4, marginBottom: 2, borderRadius: nativeDefault.radii.round };
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("design/void/NewTag/native/NewTag.tsx");
 
 export default function NewTag(color) {
+  let containerStyle;
+  let intl;
+  let intl2;
+  let items2;
+  let items3;
+  let items4;
+  let obj4;
+  let textStyle;
+  let tmp7Result;
+  let variant;
   ({ containerStyle, textStyle, variant } = color);
   if (variant === undefined) {
     variant = "heading-sm/semibold";
@@ -47,35 +62,26 @@ export default function NewTag(color) {
   const merged = Object.assign(color, Object.assign({ containerStyle: 0, textStyle: 0, variant: 0, color: 0, gradient: 0, borderRadius: 0, colors: 0 }));
   const tmp6 = closure_6();
   if (flag) {
-    const obj2 = { style: null, start: null, end: null, colors: null, children: null };
-    const obj4 = { borderRadius: sm, marginLeft: nativeDefault.space.PX_4 };
-    obj2.style = obj4;
+    const obj2 = { style: obj4, start: null, end: null, colors, children: null };
+    obj4 = { borderRadius: sm, marginLeft: nativeDefault.space.PX_4 };
     ({ START: obj3.start, END: obj3.end } = HorizontalGradient);
-    obj2.colors = colors;
-    const obj5 = { style: null, children: null };
     const items1 = [tmp6.tagContainer, containerStyle];
-    obj5.style = items1;
-    const obj6 = { variant, color: str };
+    const tmp17 = LinearGradientDefault;
+    ({ variant, color: str, style: items2, children: intl2.string(intl3.t.y2b7CA) });
+    const Text2 = Text_Text.Text;
     const merged1 = Object.assign(merged);
-    const items2 = [tmp6.tagText, textStyle];
-    obj6.style = items2;
-    const intl2 = util.intl;
-    obj6.children = intl2.string(util.t.y2b7CA);
-    obj5.children = tmp7(Text_Text.Text, obj6);
-    obj2.children = tmp7(React3, obj5);
-    let tmp7Result = tmp7(LinearGradientDefault, obj2);
+    items2 = [tmp6.tagText, textStyle];
+    intl2 = intl3.intl;
+    tmp7Result = tmp7(tmp17, obj2);
   } else {
-    const obj = { style: null, children: null };
-    const items3 = [tmp6.tagContainer, containerStyle];
-    obj.style = items3;
-    const obj11 = { variant, color: str };
+    const obj = { style: items3, children: null };
+    items3 = [tmp6.tagContainer, containerStyle];
+    ({ variant, color: str, style: items4, children: intl.string(intl3.t.y2b7CA) });
+    const Text = Text_Text.Text;
     const merged2 = Object.assign(merged);
-    const items4 = [tmp6.tagText, textStyle];
-    obj11.style = items4;
-    const intl = util.intl;
-    obj11.children = intl.string(util.t.y2b7CA);
-    obj.children = tmp7(Text_Text.Text, obj11);
-    tmp7Result = tmp7(React3, obj);
+    items4 = [tmp6.tagText, textStyle];
+    intl = intl3.intl;
+    tmp7Result = tmp7(_false, obj);
   }
   return tmp7Result;
 };

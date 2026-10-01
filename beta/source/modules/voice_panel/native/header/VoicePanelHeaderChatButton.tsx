@@ -6,53 +6,62 @@
 
 // Module 16953 (VoicePanelHeaderChatButton)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import util from "util" /* 1115 */;
-import ChatIcon from "ChatIcon" /* 5385 */;
+import intl2 from "intl" /* 1115 */;
+import ChatIcon2 from "ChatIcon" /* 5385 */;
 import NativeViewDefault from "NativeView" /* 5901 */;
 import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 16859 */;
 import useChatBadgeDefault from "useChatBadge" /* 16954 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const ComponentActions = fn(1074).ComponentActions;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-const obj2 = { badgeContainer: { position: "absolute", top: -2, right: -2 }, badge: null, notificationBadge: null };
-let size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round };
-obj2.badge = size;
-obj2.notificationBadge = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION };
-let closure_7 = createStyles.createStyles(obj2);
-size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let size;
+const ComponentActions = Constants.ComponentActions;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { badgeContainer: { position: "absolute", top: -2, right: -2 }, badge: size, notificationBadge: obj2 };
+size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round };
+createStyles = createStyles.createStyles;
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION };
+let closure_7 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderChatButton.tsx");
 
 export default function VoicePanelHeaderChatButton(channelId) {
+  let ChatIcon;
+  let intl;
+  let items1;
+  let obj2;
+  let obj4;
+  channelId = channelId.channelId;
   const tmp = closure_7();
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
     ComponentDispatch.dispatch(constants.VOICE_PANEL_OPEN_CHAT_TAB);
   }, []);
-  const tmp5 = useChatBadgeDefault(channelId.channelId);
-  const tmp6 = timestampProducer;
-  const obj = { icon: null, accessibilityLabel: null, onPress: null };
+  const tmp5 = useChatBadgeDefault(channelId);
+  const obj = { icon: hasOwnProperty(ChatIcon, obj2), accessibilityLabel: intl.string(intl2.t["5KxXrK"]), onPress: callback };
   const tmp7 = NativeViewDefault;
+  obj2 = { color: nativeDefault.colors.WHITE, size: "sm" };
   const tmp9 = VoicePanelIconButtonDefault;
-  obj.icon = hasOwnProperty(ChatIcon.ChatIcon, { color: nativeDefault.colors.WHITE, size: "sm" });
-  const intl = util.intl;
-  obj.accessibilityLabel = intl.string(util.t["5KxXrK"]);
-  obj.onPress = callback;
+  ChatIcon = ChatIcon2.ChatIcon;
+  intl = intl2.intl;
   const children = [hasOwnProperty(tmp9, obj), ];
   let tmp8Result = null != tmp5;
+  const tmp6 = metroRequire;
   if (tmp8Result) {
-    const obj3 = { style: tmp.badgeContainer, children: null };
-    const obj4 = { style: null };
-    const items1 = [, ];
+    const obj3 = { style: tmp.badgeContainer, children: hasOwnProperty(NativeViewDefault, obj4) };
+    obj4 = { style: items1 };
+    items1 = [, ];
     ({ badge: arr2[0], notificationBadge: arr2[1] } = tmp);
-    obj4.style = items1;
-    obj3.children = tmp8(tmp3(5901), obj4);
-    tmp8Result = tmp8(tmp3(5901), obj3);
-    const tmp3Result = tmp3(5901);
+    const tmp3Result = NativeViewDefault;
+    tmp8Result = tmp8(tmp3Result, obj3);
   }
   children[1] = tmp8Result;
   return tmp6(tmp7, { children });

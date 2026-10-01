@@ -5,222 +5,211 @@
 // Exports: default
 
 // Module 16271 (useUserApplicationWidgetData)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
-import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 8488 */;
+import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 8487 */;
 import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 8489 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 8490 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
-import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 8487 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 8490 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const UserApplicationIdentityStore = UserApplicationIdentityStore2;
+const ApplicationWidgetConfigStore = ApplicationWidgetConfigStore2;
+let _require, config, dependencyMap, importDefault, widgets;
 
-const require = fn;
-fn(8487).FetchState;
-const FetchState = fn(8490).FetchState;
-const size = fn(2);
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const FetchState = ApplicationWidgetConfigStore2.FetchState;
 let result = size.fileFinishedImporting("modules/application_widget/hooks/useUserApplicationWidgetData.tsx");
 
 export default function useUserApplicationWidgetData(arg0, applicationId) {
+  let application;
+  let constants2;
+  let first2;
+  let items1;
+  let tmp25;
+  let tmp26;
+  let tmp7;
+  let tmp8;
+  let userApplicationIdentity;
+  const f119822 = () => {
+    if (null == closure_0) {
+      const items = [false, null];
+      return items;
+    } else {
+      const obj = config;
+      config = config.getConfig(tmp);
+      if (config == null) {
+        config = null;
+      }
+      const fetchState = obj.getFetchState(tmp);
+      const items1 = [, ];
+      const tmp4 = (fetchState === constants2.NOT_FETCHED || fetchState === constants2.FETCHING) && null == config;
+      items1[0] = tmp4;
+      items1[1] = config;
+      return items1;
+    }
+  };
+  const f119823 = () => {
+    const result = null != closure_0 && first2.isFetchingApplication(tmp);
+    return result;
+  };
+  const f119827 = () => {
+    let items1;
+    if (null != closure_0) {
+      const items = [UserProfileStore.isFetchingProfile(closure_0), ];
+      let userProfile = UserProfileStore.getUserProfile(tmp);
+      if (userProfile == null) {
+        userProfile = null;
+      }
+      items[1] = userProfile;
+      items1 = items;
+    } else {
+      items1 = [false, null];
+    }
+    return items1;
+  };
   _require = applicationId;
-  closure_129_0 = applicationId;
+  let tmp = dependencyMap;
+  let tmp2 = useApplicationWidgetConfigsDefault;
   if (null != applicationId) {
     let items = [applicationId];
-    let items1 = items;
+    items1 = items;
   } else {
     items1 = [];
   }
-  useApplicationWidgetConfigsDefault(items1);
+  tmp2(items1);
+  let tmp4 = _require;
+  let obj = require("get initialized");
   const items2 = [ApplicationWidgetConfigStore];
   const items3 = [applicationId];
-  let obj = require("initialize");
-  [tmp7, tmp8] = require("initialize").useStateFromStoresArray(items2, () => {
-    if (null == closure_0) {
-      const items = [false, null];
-      return items;
-    } else {
-      let config = ApplicationWidgetConfigStore.getConfig(tmp);
-      if (config == null) {
-        config = null;
-      }
-      const fetchState = ApplicationWidgetConfigStore.getFetchState(tmp);
-      const items1 = [(fetchState === FetchState.NOT_FETCHED || fetchState === FetchState.FETCHING) && null == config, config];
-      return items1;
-    }
-  }, items3);
+  [tmp7, tmp8] = _slicedToArray(obj.useStateFromStoresArray(items2, f119822, items3), 2);
   importDefault = tmp8;
   let tmp9 = null;
+  const tmp6 = _slicedToArray(obj.useStateFromStoresArray(items2, f119822, items3), 2);
   if (null != tmp8) {
     tmp9 = applicationId;
   }
-  closure_130_0 = tmp9;
-  const tmp6 = _slicedToArray(require("initialize").useStateFromStoresArray(items2, () => {
-    if (null == closure_0) {
-      const items = [false, null];
-      return items;
-    } else {
-      let config = ApplicationWidgetConfigStore.getConfig(tmp);
-      if (config == null) {
-        config = null;
-      }
-      const fetchState = ApplicationWidgetConfigStore.getFetchState(tmp);
-      const items1 = [(fetchState === FetchState.NOT_FETCHED || fetchState === FetchState.FETCHING) && null == config, config];
-      return items1;
-    }
-  }, items3), 2);
-  let getOrFetchApplication = require("useGetOrFetchApplications").useGetOrFetchApplication(tmp9);
-  const tmp4Result = require("useGetOrFetchApplications");
-  const items4 = [isLoading];
+  _require = tmp9;
+  const tmp4Result = tmp4(6589);
+  let getOrFetchApplication = tmp4Result.useGetOrFetchApplication(tmp9);
+  const items4 = [first2];
   const items5 = [tmp9];
-  const tmp4Result5 = require("initialize");
-  const items6 = [
-    require("initialize").useStateFromStores(items4, () => {
-      let result = null != closure_0;
-      if (result) {
-        result = ApplicationStore.isFetchingApplication(tmp);
-      }
-      return result;
-    }, items5) && null == getOrFetchApplication,
-
-  ];
+  const tmp4Result5 = tmp4(504);
+  const items6 = [tmp4Result5.useStateFromStores(items4, f119823, items5) && null == getOrFetchApplication, ];
+  tmp4Result5.useStateFromStores(items4, f119823, items5) && null == getOrFetchApplication;
   if (getOrFetchApplication == null) {
     getOrFetchApplication = null;
   }
   items6[1] = getOrFetchApplication;
   const tmp5Result = _slicedToArray(items6, 2);
-  dependencyMap = tmp13;
-  let tmp14 = null != tmp8;
-  if (tmp14) {
-    tmp14 = null != tmp13;
-  }
-  let tmp15 = null;
-  if (tmp14) {
-    tmp15 = arg0;
+  dependencyMap = tmp14;
+  let tmp15 = null != tmp8;
+  const first = tmp5Result[0];
+  if (tmp15) {
+    tmp15 = null != tmp14;
   }
   let tmp16 = null;
-  if (tmp14) {
-    tmp16 = applicationId;
+  if (tmp15) {
+    tmp16 = arg0;
   }
-  closure_131_0 = tmp15;
-  closure_131_1 = tmp16;
-  const tmp11 = require("initialize").useStateFromStores(items4, () => {
-    let result = null != closure_0;
-    if (result) {
-      result = ApplicationStore.isFetchingApplication(tmp);
-    }
-    return result;
-  }, items5) && null == getOrFetchApplication;
+  let tmp17 = null;
+  if (tmp15) {
+    tmp17 = applicationId;
+  }
+  _require = tmp16;
+  let applicationWidgetConfig = tmp17;
   const items7 = [UserApplicationIdentityStore];
-  const items8 = [tmp15];
-  const stateFromStores = require("initialize").useStateFromStores(items7, () => {
-    let tmp2 = null != closure_0;
-    if (tmp2) {
-      tmp2 = UserApplicationIdentityStore.getFetchState(tmp) === FetchState.NOT_FETCHED;
-    }
+  const items8 = [tmp16];
+  const tmp4Result6 = tmp4(504);
+  const stateFromStores = tmp4Result6.useStateFromStores(items7, () => {
+    const tmp2 = null != closure_0 && authStore.getFetchState(tmp) === constants.NOT_FETCHED;
     return tmp2;
   }, items8);
-  closure_131_2 = stateFromStores;
-  const items9 = [stateFromStores, tmp15];
-  const effect = noop.useEffect(() => {
-    let tmp = closure_2;
-    if (closure_2) {
-      tmp = null != closure_0;
-    }
+  const items9 = [stateFromStores, tmp16];
+  const effect = react.useEffect(() => {
+    const tmp = stateFromStores && null != closure_0;
     if (tmp) {
-      const userApplicationIdentitiesWithProfiles = UserApplicationIdentityActionCreatorsDefault.fetchUserApplicationIdentitiesWithProfiles(closure_0);
+      const obj = require("UserApplicationIdentityActionCreators");
+      const userApplicationIdentitiesWithProfiles = obj.fetchUserApplicationIdentitiesWithProfiles(closure_0);
     }
   }, items9);
-  const tmp4Result6 = require("initialize");
   const items10 = [UserApplicationIdentityStore];
-  const items11 = [tmp15, tmp16];
-  const tmp5Result4 = _slicedToArray(require("initialize").useStateFromStoresArray(items10, () => {
+  const items11 = [tmp16, tmp17];
+  const tmp4Result7 = tmp4(504);
+  const tmp5Result4 = _slicedToArray(tmp4Result7.useStateFromStoresArray(items10, () => {
     if (null != closure_0) {
       if (null != closure_1) {
-        let userIdentityByApplication = UserApplicationIdentityStore.getUserIdentityByApplication(tmp, tmp2);
+        let userIdentityByApplication = authStore.getUserIdentityByApplication(tmp, tmp2);
         if (userIdentityByApplication == null) {
           userIdentityByApplication = null;
         }
-        let isFetchingUserResult = obj.isFetchingUser(tmp);
-        if (!isFetchingUserResult) {
-          isFetchingUserResult = obj.getFetchState(tmp) === FetchState.NOT_FETCHED;
-        }
-        if (isFetchingUserResult) {
-          isFetchingUserResult = null == userIdentityByApplication;
-        }
-        const items = [isFetchingUserResult, userIdentityByApplication];
+        const items = [(obj.isFetchingUser(tmp) || obj.getFetchState(tmp) === constants.NOT_FETCHED) && null == userIdentityByApplication, userIdentityByApplication];
+        const isFetchingUserResult = (obj.isFetchingUser(tmp) || obj.getFetchState(tmp) === constants.NOT_FETCHED) && null == userIdentityByApplication;
         return items;
       }
     }
     const items1 = [false, null];
     return items1;
   }, items11), 2);
-  _slicedToArray = tmp20;
-  let tmp21 = null;
-  if (tmp14) {
-    tmp21 = arg0;
+  _slicedToArray = tmp22;
+  let tmp23 = null;
+  const first1 = tmp5Result4[0];
+  if (tmp15) {
+    tmp23 = arg0;
   }
-  closure_132_0 = tmp21;
-  const tmp4Result7 = require("initialize");
+  _require = tmp23;
   const items12 = [UserProfileStore];
-  const items13 = [tmp21];
-  const tmp4Result8 = require("initialize");
-  [tmp23, tmp24] = require("initialize").useStateFromStoresArray(items12, () => {
-    if (null != closure_0) {
-      const items = [UserProfileStore.isFetchingProfile(tmp), ];
-      let userProfile = UserProfileStore.getUserProfile(tmp);
-      if (userProfile == null) {
-        userProfile = null;
-      }
-      items[1] = userProfile;
-      let items1 = items;
-    } else {
-      items1 = [false, null];
-    }
-    return items1;
-  }, items13);
-  closure_132_1 = tmp25;
-  const items14 = [null != tmp21 && !tmp23 && null == tmp24, tmp21];
+  const items13 = [tmp23];
+  const tmp4Result8 = tmp4(504);
+  [tmp25, tmp26] = _slicedToArray(tmp4Result8.useStateFromStoresArray(items12, f119827, items13), 2);
+  applicationWidgetConfig = tmp27;
+  const items14 = [null != tmp23 && !tmp25 && null == tmp26, tmp23];
+  _slicedToArray(tmp4Result8.useStateFromStoresArray(items12, f119827, items13), 2);
   const effect1 = obj5.useEffect(() => {
-    let tmp = closure_1;
-    if (closure_1) {
-      tmp = null != closure_0;
-    }
+    const tmp = closure_1 && null != closure_0;
     if (tmp) {
-      maybeFetchUserProfileDefault(closure_0);
+      closure_1(application[10])(closure_0);
     }
   }, items14);
-  if (!tmp23) {
-    tmp23 = tmp25;
+  if (!tmp25) {
+    tmp25 = tmp27;
   }
-  if (tmp23) {
-    tmp23 = null == tmp24;
+  if (tmp25) {
+    tmp25 = null == tmp26;
   }
-  const items15 = [tmp23, tmp24];
+  const items15 = [tmp25, tmp26];
   const tmp5Result6 = _slicedToArray(items15, 2);
-  noop = tmp28;
-  if (!isLoading) {
-    isLoading = tmp5Result[0];
+  react = tmp31;
+  first2 = tmp5Result6[0];
+  if (!tmp7) {
+    tmp7 = first;
   }
-  if (!isLoading) {
-    isLoading = tmp5Result4[0];
+  if (!tmp7) {
+    tmp7 = first1;
   }
-  if (!isLoading) {
-    isLoading = tmp5Result6[0];
+  if (!tmp7) {
+    tmp7 = first2;
   }
-  const items16 = [tmp5Result[1], applicationId, tmp8, tmp5Result4[1], isLoading, tmp5Result6[1]];
-  return noop.useMemo(() => {
+  first2 = tmp7;
+  const items16 = [tmp5Result[1], applicationId, tmp8, tmp5Result4[1], tmp7, tmp5Result6[1]];
+  return react.useMemo(() => {
     let found;
     if (widgets != null) {
       widgets = widgets.widgets;
       if (widgets != null) {
-        found = widgets.find((item) => closure_0(closure_2[11]).isApplicationWidgetWithId(item, applicationId));
+        found = widgets.find((item) => {
+          const obj = closure_0(application[11]);
+          return obj.isApplicationWidgetWithId(item, closure_1_0);
+        });
       }
     }
     if (found == null) {
       found = null;
     }
-    return { isLoading, application, applicationWidgetConfig, userApplicationIdentity, profileApplicationWidget: found };
+    let obj = { isLoading: first2, application, applicationWidgetConfig: importDefault, userApplicationIdentity, profileApplicationWidget: found };
+    return obj;
   }, items16);
 };

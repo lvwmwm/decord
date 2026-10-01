@@ -5,12 +5,12 @@
 // Exports: _trackINP, registerInpInteractionListener, startTrackingINP
 
 // Module 935 (_onInp)
+import _mod682 from "module_682" /* 682 */;
 import _mod899 from "module_899" /* 899 */;
 import _mod904 from "module_904" /* 904 */;
+import extractNetworkProtocol from "extractNetworkProtocol" /* 924 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_2 = [];
 const map = new Map();
 const map1 = new Map();
@@ -18,27 +18,27 @@ let closure_5 = { click: "click", pointerdown: "click", pointerup: "click", mous
 function _onInp(metric) {
   const iter = metric.metric;
   if (null != iter.value) {
-    const msToSecResult = iter(924).msToSec(iter.value);
+    const obj12 = iter(924);
+    const msToSecResult = obj12.msToSec(iter.value);
     if (msToSecResult <= 60) {
       const entries = iter.entries;
-      const found = entries.find((duration) => {
-        let tmp = duration.duration === iter.value;
-        if (tmp) {
-          tmp = closure_5[duration.name];
-        }
-        return tmp;
-      });
+      const found = entries.find((duration) => duration.duration === iter.value && closure_5[duration.name]);
       if (found) {
+        let rootSpan;
+        let transactionName;
         const interactionId = found.interactionId;
-        const tmp12Result = tmp12(924);
-        const msToSecResult1 = tmp12Result.msToSec(tmp12(682).browserPerformanceTimeOrigin() + found.startTime);
-        const tmp12Result7 = tmp12(682);
-        const activeSpan = tmp12(682).getActiveSpan();
+        const tmp2 = closure_5[found.name];
+        const msToSec = iter(924).msToSec;
+        iter(924);
+        const tmp14Result7 = iter(682);
+        const msToSecResult1 = msToSec(tmp14Result7.browserPerformanceTimeOrigin() + found.startTime);
+        const tmp14Result8 = iter(682);
+        const activeSpan = tmp14Result8.getActiveSpan();
         if (activeSpan) {
-          const rootSpan = tmp12(682).getRootSpan(activeSpan);
-          const tmp12Result9 = tmp12(682);
+          const tmp14Result9 = iter(682);
+          rootSpan = tmp14Result9.getRootSpan(activeSpan);
         }
-        value = undefined;
+        let value;
         if (null != interactionId) {
           value = map.get(interactionId);
         }
@@ -49,11 +49,11 @@ function _onInp(metric) {
         if (!span) {
           span = rootSpan;
         }
-        const tmp12Result10 = tmp12(682);
+        const tmp14Result10 = iter(682);
         if (span) {
-          let transactionName = tmp12Result10.spanToJSON(span).description;
+          transactionName = tmp14Result10.spanToJSON(span).description;
         } else {
-          const currentScope = tmp12Result10.getCurrentScope();
+          const currentScope = tmp14Result10.getCurrentScope();
           transactionName = currentScope.getScopeData().transactionName;
         }
         let elementName;
@@ -61,53 +61,56 @@ function _onInp(metric) {
           elementName = value.elementName;
         }
         if (!elementName) {
-          elementName = tmp12(682).htmlTreeAsString(found.target);
-          const tmp12Result11 = tmp12(682);
+          const tmp14Result11 = iter(682);
+          elementName = tmp14Result11.htmlTreeAsString(found.target);
         }
         const obj = {};
-        obj[tmp12(682).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = "auto.http.browser.inp";
+        obj[iter(682).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = "auto.http.browser.inp";
         const _HermesInternal = HermesInternal;
-        obj[tmp12(682).SEMANTIC_ATTRIBUTE_SENTRY_OP] = "ui.interaction." + closure_5[found.name];
-        obj[tmp12(682).SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME] = found.duration;
-        const tmp12Result8 = tmp12(682);
+        obj[iter(682).SEMANTIC_ATTRIBUTE_SENTRY_OP] = "ui.interaction." + tmp2;
+        obj[iter(682).SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME] = found.duration;
         const obj2 = { name: elementName, transaction: transactionName, attributes: obj, startTime: msToSecResult1 };
-        const result = tmp12(924).startStandaloneWebVitalSpan(obj2);
+        const tmp14Result12 = iter(924);
+        const result = tmp14Result12.startStandaloneWebVitalSpan(obj2);
         if (result) {
           const obj3 = {};
-          obj3[tmp12(682).SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = "millisecond";
-          obj3[tmp12(682).SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = iter.value;
+          obj3[iter(682).SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = "millisecond";
+          obj3[iter(682).SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = iter.value;
           result.addEvent("inp", obj3);
           result.end(msToSecResult1 + msToSecResult);
         }
-        const tmp12Result12 = tmp12(924);
       }
     }
-    const obj13 = iter(924);
   }
 }
 
 export { _onInp };
 export const _trackINP = function _trackINP() {
-  return _mod899.addInpInstrumentationHandler(_onInp);
+  const obj = _mod899;
+  return obj.addInpInstrumentationHandler(_onInp);
 };
 export const registerInpInteractionListener = function registerInpInteractionListener() {
+  let length;
   function captureElementFromEvent(dependencyMap) {
     const target = dependencyMap.target;
     if (target) {
       const _Math = Math;
-      const obj = captureElementFromEvent(682);
-      const result = map1.set(Math.round(dependencyMap.timeStamp), captureElementFromEvent(682).htmlTreeAsString(target));
+      const obj = captureElementFromEvent(dependencyMap[1]);
+      const htmlTreeAsStringResult = obj.htmlTreeAsString(target);
+      const result = map1.set(Math.round(dependencyMap.timeStamp), htmlTreeAsStringResult);
       if (map1.size > 50) {
-        value = obj2.keys().next().value;
+        const iter = map1.keys();
+        const value = iter.next().value;
         if (undefined !== value) {
-          obj2.delete(value);
+          map1.delete(value);
         }
-        const iter = obj2.keys();
       }
-      const htmlTreeAsStringResult = captureElementFromEvent(682).htmlTreeAsString(target);
     }
   }
   const keys = Object.keys(closure_5);
+  let tmp = captureElementFromEvent;
+  let tmp2 = dependencyMap;
+  let obj = captureElementFromEvent(682);
   if (obj.isBrowser()) {
     let item = keys.forEach((item) => {
       const WINDOW = _mod904.WINDOW;
@@ -117,27 +120,34 @@ export const registerInpInteractionListener = function registerInpInteractionLis
   function handleEntries(arg0) {
     const entries = arg0.entries;
     let rootSpan;
-    const activeSpan = rootSpan(682).getActiveSpan();
+    let tmp = rootSpan;
+    let tmp2 = closure_1;
+    let obj = rootSpan(closure_1[1]);
+    const activeSpan = obj.getActiveSpan();
     rootSpan = activeSpan;
-    if (activeSpan) {
-      rootSpan = rootSpan(682).getRootSpan(activeSpan);
-      let tmpResult = rootSpan(682);
+    if (rootSpan) {
+      let tmpResult = tmp(tmp2[1]);
+      rootSpan = tmpResult.getRootSpan(activeSpan);
     }
     const item = entries.forEach((interactionId) => {
+      const obj = captureElementFromEvent(dependencyMap[2]);
+      const tmp = captureElementFromEvent;
+      const tmp2 = dependencyMap;
       if (obj.isPerformanceEventTiming(interactionId)) {
         interactionId = interactionId.interactionId;
         if (null != interactionId) {
           if (!map.has(interactionId)) {
+            let str;
             if (interactionId.target) {
-              let str = captureElementFromEvent(682).htmlTreeAsString(interactionId.target);
-              const tmpResult = captureElementFromEvent(682);
+              const tmpResult = tmp(tmp2[1]);
+              str = tmpResult.htmlTreeAsString(interactionId.target);
             } else {
               const _Math = Math;
               const rounded = Math.round(interactionId.startTime);
-              value = map1.get(rounded);
+              const value = map1.get(rounded);
               let num = -5;
               str = value;
-              if (!value) {
+              if (!str) {
                 str = map1.get(rounded + num);
                 while (!str) {
                   num = num + 1;
@@ -152,7 +162,7 @@ export const registerInpInteractionListener = function registerInpInteractionLis
               }
             }
             if (length.length > 10) {
-              map.delete(arr.shift());
+              map.delete(length.shift());
             }
             length.push(interactionId);
             const obj2 = { span: rootSpan, elementName: str };
@@ -162,20 +172,22 @@ export const registerInpInteractionListener = function registerInpInteractionLis
       }
     });
   }
-  obj = captureElementFromEvent(682);
-  let result = captureElementFromEvent(899).addPerformanceInstrumentationHandler("event", handleEntries);
-  let tmpResult = captureElementFromEvent(899);
-  const result1 = captureElementFromEvent(899).addPerformanceInstrumentationHandler("first-input", handleEntries);
+  let tmpResult = tmp(899);
+  let result = tmpResult.addPerformanceInstrumentationHandler("event", handleEntries);
+  const tmpResult2 = tmp(899);
+  const result1 = tmpResult2.addPerformanceInstrumentationHandler("first-input", handleEntries);
 };
 export const startTrackingINP = function startTrackingINP() {
+  const obj = extractNetworkProtocol;
   if (obj.getBrowserPerformanceAPI()) {
+    const tmpResult = _mod682;
     if (tmpResult.browserPerformanceTimeOrigin()) {
-      closure_0 = tmp(899).addInpInstrumentationHandler(_onInp);
+      const tmpResult2 = _mod899;
+      let closure_0 = tmpResult2.addInpInstrumentationHandler(_onInp);
       return () => {
         closure_0();
       };
     }
-    tmpResult = tmp(682);
   }
   return () => {
 

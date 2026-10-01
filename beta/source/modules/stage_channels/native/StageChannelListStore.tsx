@@ -5,26 +5,34 @@
 // Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState
 
 // Module 9505 (StageChannelListStore)
-import _mod4452 from "module_4452" /* 4452 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray2 from "_slicedToArray" /* 4452 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import module_1243 from "module_1243" /* 1243 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const identity = fn(1243);
-let closure_4 = identity.createWithEqualityFn((arg0) => {
-  closure_0 = arg0;
-  return {
+let closure_4 = module_1243.createWithEqualityFn((arg0) => {
+  let closure_0 = arg0;
+  let obj = {
     showActiveSpeakerPill: false,
     setShowActiveSpeakerPill(showActiveSpeakerPill) {
-      return showActiveSpeakerPill(1248).batchUpdates(() => showActiveSpeakerPill({ showActiveSpeakerPill }));
+      let obj = showActiveSpeakerPill(dependencyMap[3]);
+      return obj.batchUpdates(() => {
+        const obj = { showActiveSpeakerPill };
+        return showActiveSpeakerPill(obj);
+      });
     },
     listRef: null,
     setListRef(listRef) {
-      return listRef(1248).batchUpdates(() => listRef({ listRef }));
+      let obj = listRef(dependencyMap[3]);
+      return obj.batchUpdates(() => {
+        const obj = { listRef };
+        return listRef(obj);
+      });
     }
   };
+  return obj;
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/native/StageChannelListStore.tsx");
 
 export const useActiveSpeakerPillScrollHandler = function useActiveSpeakerPillScrollHandler() {
@@ -32,20 +40,21 @@ export const useActiveSpeakerPillScrollHandler = function useActiveSpeakerPillSc
     const items = [, ];
     ({ listRef: arr[0], setListRef: arr[1] } = arg0);
     return items;
-  }, _mod4452.shallow), 2);
+  }, _slicedToArray2.shallow), 2);
   const first = tmp[0];
-  closure_1 = tmp3;
+  let closure_1 = tmp3;
   let items = [tmp[1]];
   const items1 = [
-    noop.useCallback((arg0) => {
+    react.useCallback((arg0) => {
       closure_1(arg0);
     }, items),
 
   ];
   const items2 = [first];
-  items1[1] = noop.useCallback(() => {
+  items1[1] = react.useCallback(() => {
+    const obj = first;
     if (first != null) {
-      first.scrollToLocation({ section: 0, item: 0, animated: true });
+      obj.scrollToLocation({ section: 0, item: 0, animated: true });
     }
   }, items2);
   return items1;
@@ -55,5 +64,5 @@ export const useActiveSpeakerPillState = function useActiveSpeakerPillState() {
     const items = [, ];
     ({ showActiveSpeakerPill: arr[0], setShowActiveSpeakerPill: arr[1] } = arg0);
     return items;
-  }, _mod4452.shallow);
+  }, _slicedToArray2.shallow);
 };

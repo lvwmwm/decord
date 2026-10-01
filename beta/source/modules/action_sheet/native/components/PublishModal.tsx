@@ -5,29 +5,34 @@
 // Exports: default
 
 // Module 11165 (PublishModal)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
+import LegacyTokens from "LegacyTokens" /* 5753 */;
 import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11166 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, ActivityIndicator: hasOwnProperty } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 }, alertBodyText: { marginBottom: 16, fontSize: 16, lineHeight: 24, color: fn(5753).DARK_PRIMARY_300_LIGHT_PRIMARY_400 } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let obj2;
+({ View: closure_4, ActivityIndicator: hasOwnProperty } = react_native);
+const jsx = Fragment.jsx;
+const obj = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 }, alertBodyText: obj2 };
+obj2 = { marginBottom: 16, fontSize: 16, lineHeight: 24, color: LegacyTokens.DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/action_sheet/native/components/PublishModal.tsx");
 
 export default function PublishModal(channelId) {
+  channelId = channelId.channelId;
   const tmp = closure_7();
-  const tmp3 = _slicedToArray(useChannelFollowerStatsDefault(channelId.channelId), 2);
+  const tmp3 = _slicedToArray(useChannelFollowerStatsDefault(channelId), 2);
   const first = tmp3[0];
   if (tmp3[1]) {
-    const obj2 = { style: tmp.alertLoading, children: <hasOwnProperty animating /> };
-    return <React4 style={tmp.alertLoading}><hasOwnProperty animating /></React4>;
+    return <React3 style={tmp.alertLoading}><hasOwnProperty animating /></React3>;
   } else {
     let guildsFollowing;
     if (first != null) {
@@ -41,11 +46,13 @@ export default function PublishModal(channelId) {
       }
       tmp7 = guildsFollowing1 > 0;
     }
-    const obj = { style: tmp.alertContainer, children: null };
     const obj3 = { style: tmp.alertBodyText, children: null };
-    const intl = util.intl;
+    const LegacyText = native.LegacyText;
+    const intl = intl2.intl;
     if (tmp7) {
+      const format = intl.format;
       let num2;
+      const GCGrNP = tmp11(1115).t.GCGrNP;
       if (first != null) {
         num2 = first.guildsFollowing;
       }
@@ -53,13 +60,10 @@ export default function PublishModal(channelId) {
         num2 = 0;
       }
       const obj4 = { numGuildsFollowing: num2 };
-      obj3.children = intl.format(tmp11(1115).t.GCGrNP, obj4);
-      let tmp12 = obj3;
+      obj3.children = format(GCGrNP, obj4);
     } else {
-      obj3.children = intl.string(tmp11(1115).t["8FpqOs"]);
-      tmp12 = obj3;
+      obj3.children = intl.string(intl2.t["8FpqOs"]);
     }
-    obj.children = jsx(native.LegacyText, tmp12);
-    return <React4 style={tmp.alertContainer}>{null}</React4>;
+    return <tmp10 style={tmp.alertContainer}>{null}</tmp10>;
   }
 };

@@ -7,8 +7,6 @@
 import _mod5498 from "module_5498" /* 5498 */;
 import _mod5499 from "module_5499" /* 5499 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const isBLEND = function isBLEND(fileChunk) {
   fileChunk = _mod5498.getFileChunk(fileChunk);

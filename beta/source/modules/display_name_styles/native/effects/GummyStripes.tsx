@@ -5,34 +5,40 @@
 // Exports: default
 
 // Module 14174 (GummyStripes)
+import react_native from "react-native" /* 17 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: c3, Fragment: closure_4 } = jsxProd);
-const createStyles = fn(4836);
+let c3;
+let closure_4;
+const View = react_native.View;
+({ jsx: c3, Fragment: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ stripe: { flex: 1 }, stripeOverlap: { marginLeft: -1 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/display_name_styles/native/effects/GummyStripes.tsx");
 
 export default function GummyStripes(colors) {
   colors = colors.colors;
-  closure_0 = closure_5();
-  return closure_3(closure_4, {
+  let closure_0 = closure_5();
+  let obj = {
     children: colors.map((item, index) => {
+      let obj3;
       const items = [closure_0.stripe, , ];
       let stripeOverlap = index > 0;
+      const tmp = _false;
+      const tmp2 = View;
       if (stripeOverlap) {
         stripeOverlap = closure_0.stripeOverlap;
       }
-      const obj = { style: null };
+      const obj = { style: items };
       items[1] = stripeOverlap;
-      const obj2 = { backgroundColor: utils_ColorUtils.int2hex(item) };
+      const obj2 = { backgroundColor: obj3.int2hex(item) };
       items[2] = obj2;
-      obj.style = items;
-      return React3(View, obj, index);
+      obj3 = utils_ColorUtils;
+      return tmp(tmp2, obj, index);
     })
-  });
+  };
+  return closure_3(closure_4, obj);
 };

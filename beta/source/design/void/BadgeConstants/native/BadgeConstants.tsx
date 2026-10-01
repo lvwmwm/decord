@@ -5,12 +5,12 @@
 
 // Module 1179 (BadgeConstants)
 import nativeDefault from "native" /* 576 */;
+import size from "module_2" /* 2 */;
 
 const PX_16 = nativeDefault.space.PX_16;
 const PX_12 = nativeDefault.space.PX_12;
 const sum = PX_16 + 6;
 const sum1 = PX_12 + 6;
-const size = fn(2);
 const result = size.fileFinishedImporting("design/void/BadgeConstants/native/BadgeConstants.tsx");
 
 export const BADGE_SIZE = PX_16;

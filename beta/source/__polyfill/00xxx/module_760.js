@@ -5,17 +5,16 @@
 
 // Module 760
 import _mod688 from "module_688" /* 688 */;
-import consoleSandbox from "consoleSandbox" /* 689 */;
+import CONSOLE_LEVELS from "CONSOLE_LEVELS" /* 689 */;
 import _mod713 from "module_713" /* 713 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const initAndBind = function initAndBind(arg0, debug) {
   if (true === debug.debug) {
-    const obj = consoleSandbox;
-    if (_mod688.DEBUG_BUILD) {
+    const DEBUG_BUILD = _mod688.DEBUG_BUILD;
+    const obj = CONSOLE_LEVELS;
+    if (DEBUG_BUILD) {
       debug = obj.debug;
       debug.enable();
     } else {
@@ -24,15 +23,18 @@ export const initAndBind = function initAndBind(arg0, debug) {
       });
     }
   }
-  const currentScope = _mod713.getCurrentScope();
+  const obj2 = _mod713;
+  const currentScope = obj2.getCurrentScope();
   currentScope.update(debug.initialScope);
   const obj4 = new arg0(debug);
-  const currentScope1 = _mod713.getCurrentScope();
+  const obj5 = _mod713;
+  const currentScope1 = obj5.getCurrentScope();
   currentScope1.setClient(obj4);
   obj4.init();
   return obj4;
 };
 export const setCurrentClient = function setCurrentClient(arg0) {
-  const currentScope = _mod713.getCurrentScope();
+  const obj = _mod713;
+  const currentScope = obj.getCurrentScope();
   currentScope.setClient(arg0);
 };

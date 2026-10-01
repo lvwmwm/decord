@@ -5,20 +5,18 @@
 // Exports: useDisplayNameStylesEnabled
 
 // Module 5085 (useDisplayNameStylesEnabled)
-import _mod19 from "module_19" /* 19 */;
-import initialize from "initialize" /* 504 */;
-import DisplayNameStylesContext from "DisplayNameStylesContext" /* 5086 */;
+import react from "react" /* 19 */;
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 5086 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import size from "module_2" /* 2 */;
 
-const useContext = _mod19.useContext;
+const useContext = react.useContext;
 const result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEnabled.tsx");
 
 export const useDisplayNameStylesEnabled = function useDisplayNameStylesEnabled() {
   const items = [AccessibilityStore];
-  let overrideSettings = initialize.useStateFromStores(items, () => AccessibilityStore.displayNameStylesEnabled);
-  if (!overrideSettings) {
-    overrideSettings = useContext(DisplayNameStylesContext.DisplayNameStylesContext).overrideSettings;
-  }
+  const obj = get_initialized;
+  const overrideSettings = obj.useStateFromStores(items, () => AccessibilityStore.displayNameStylesEnabled) || useContext(react2.DisplayNameStylesContext).overrideSettings;
   return overrideSettings;
 };

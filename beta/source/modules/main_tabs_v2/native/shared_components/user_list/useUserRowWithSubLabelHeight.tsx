@@ -23,9 +23,14 @@ export const useUserRowWithSubLabelHeight = function useUserRowWithSubLabelHeigh
   if (arg0 === undefined) {
     num = 1;
   }
-  const token = useToken.useToken(nativeDefault.modules.mobile.TABLE_ROW_HEIGHT);
-  const token1 = useToken.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
-  const scaledTextLineHeight = useScaledTextLineHeight.useScaledTextLineHeight("text-md/semibold");
-  const fontScale = useFontScale.useFontScale();
-  return roundToNearestPixelDefault(Math.max(token, 2 * token1 + scaledTextLineHeight + num * (ActionStatusSubLabel.ACTION_STATUS_SUB_LABEL_LINE_HEIGHT * fontScale)));
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_HEIGHT);
+  const obj2 = useToken;
+  const token1 = obj2.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
+  const obj3 = useScaledTextLineHeight;
+  const scaledTextLineHeight = obj3.useScaledTextLineHeight("text-md/semibold");
+  const obj4 = useFontScale;
+  const fontScale = obj4.useFontScale();
+  const tmp5 = roundToNearestPixelDefault;
+  return tmp5(Math.max(token, 2 * token1 + scaledTextLineHeight + num * (ActionStatusSubLabel.ACTION_STATUS_SUB_LABEL_LINE_HEIGHT * fontScale)));
 };

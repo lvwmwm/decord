@@ -8,11 +8,11 @@
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import TypingStore from "TypingStore" /* 11447 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat/useTypingUsersIds.tsx");
 
 export const useTypingUserIds = function useTypingUserIds(id, arg1) {
@@ -24,7 +24,8 @@ export const useTypingUserIds = function useTypingUserIds(id, arg1) {
   }
   let items = [UserStore, TypingStore, RelationshipStore];
   const items1 = [id, MAX_SAFE_INTEGER];
-  return require("initialize").useStateFromStoresArray(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStoresArray(items, () => {
     const currentUser = UserStore.getCurrentUser();
     if (currentUser != null) {
       id = currentUser.id;

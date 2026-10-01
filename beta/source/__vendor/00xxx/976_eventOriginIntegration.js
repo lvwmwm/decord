@@ -6,7 +6,7 @@
 
 // Module 976 (eventOriginIntegration)
 
-export () => ({
+export const eventOriginIntegration = () => ({
   name: "EventOrigin",
   setupOnce() {
 
@@ -21,4 +21,4 @@ export () => ({
     tags.tags["event.environment"] = "javascript";
     return tags;
   }
-})
+});

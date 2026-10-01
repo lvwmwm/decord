@@ -5,51 +5,65 @@
 // Exports: default
 
 // Module 17575 (FormTrialIntervalPicker)
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import FormDropdownDefault from "FormDropdown" /* 13440 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
-require = fn;
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 const GuildRoleSubscriptionTrialIntervalSelect = "GuildRoleSubscriptionTrialIntervalSelect";
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormTrialIntervalPicker.tsx");
 
-export default function FormTrialIntervalPicker(disabled) {
-  const interval = disabled.interval;
-  ({ onChange: importDefault, trialIntervalOptions: dependencyMap } = disabled);
+export default function FormTrialIntervalPicker(interval) {
+  let items;
+  let stringResult;
+  interval = interval.interval;
+  ({ onChange: importDefault, trialIntervalOptions: dependencyMap } = interval);
+  let tmp2 = dependencyMap;
+  const disabled = interval.disabled;
+  let tmp = jsx;
+  let tmp3 = FormDropdownDefault;
   if (null == interval) {
     let intl = interval(1115).intl;
-    let stringResult = intl.string(interval(1115).t.WZG1BU);
+    stringResult = intl.string(interval(1115).t.WZG1BU);
   } else {
-    stringResult = interval(14776).formatPlanIntervalDuration(interval);
+    let tmp4 = interval;
     let obj = interval(14776);
+    stringResult = obj.formatPlanIntervalDuration(interval);
   }
-  return jsx(FormDropdownDefault, {
+  const obj2 = {
     label: stringResult,
     onPress() {
-      const obj2 = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
-      const obj = ActionSheetActionCreatorsDefault;
-      const intl = util.intl;
-      obj2.title = intl.string(util.t.m1KuWd);
-      obj2.items = items;
-      obj2.onItemSelect = function onItemSelect(arg0) {
-        if (closure_1_1 != null) {
-          tmp(arg0);
-        }
-        require("ActionSheetActionCreators").hideActionSheet(GuildRoleSubscriptionTrialIntervalSelect);
+      let intl;
+      let tmp4;
+      const tmp = ActionSheetActionCreatorsDefault;
+      const openLazy = tmp.openLazy;
+      let obj = {
+        title: intl.string(intl2.t.m1KuWd),
+        items: dependencyMap,
+        onItemSelect(arg0) {
+          if (closure_1_1 != null) {
+            tmp(arg0);
+          }
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(GuildRoleSubscriptionTrialIntervalSelect);
+        },
+        selectedItem: tmp4,
+        hasIcons: false
       };
-      let tmp3 = interval;
+      const tmp2 = asyncRequire(8729, dependencyMap.paths);
+      intl = intl2.intl;
+      tmp4 = interval;
+      const tmp3 = GuildRoleSubscriptionTrialIntervalSelect;
       if (interval == null) {
-        tmp3 = null;
+        tmp4 = null;
       }
-      obj2.selectedItem = tmp3;
-      obj.openLazy(asyncRequireImpl(8729, dependencyMap.paths), GuildRoleSubscriptionTrialIntervalSelect, obj2);
+      openLazy(tmp2, tmp3, obj);
     },
-    disabled: disabled.disabled
-  });
+    disabled
+  };
+  return tmp(tmp3, obj2);
 };

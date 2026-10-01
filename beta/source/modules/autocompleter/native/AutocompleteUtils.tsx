@@ -5,48 +5,62 @@
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
 // Module 9725 (autocompleter/AutocompleteUtils)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
 import useChannelName from "useChannelName" /* 4989 */;
 import TimestampUtils from "TimestampUtils" /* 5330 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5754 */;
 import FormDividerDefault from "FormDivider" /* 8059 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9726 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5306 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c10;
+let c9;
+let closure_12;
+let closure_14;
+let map1;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let tmp;
+let unpackModuleId;
+const UserUtilsDefault = tmp(4678);
 function AutocompleteFormDivider() {
-  const tmp = closure_17();
   return jsx(FormDividerDefault, { style: closure_17().itemDivider });
 }
-let closure_3 = fn(2049).isGuildSelectableChannelType;
-const Constants = fn(1074);
-({ AutoCompleteResultTypes: closure_7, WHITESPACE_RE: closure_8 } = Constants);
-const ApplicationCommandsConstants = fn(9726);
-({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: closure_9, AUTOCOMPLETE_ROW_HEIGHT: c10 } = ApplicationCommandsConstants);
-const ChannelAutocompleteConstants = fn(5306);
-({ CHANNEL_SENTINEL: closure_11, EMOJI_SENTINEL: closure_12, GAME_MENTION_SENTINEL: map1, MENTION_SENTINEL: closure_14 } = ChannelAutocompleteConstants);
-const jsx = fn(21).jsx;
-const hairlineWidth = fn(17).StyleSheet.hairlineWidth;
-const createStyles = fn(4836);
-const obj2 = { itemDivider: { marginLeft: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE } };
-let closure_17 = createStyles.createStyles(obj2);
+const StyleSheet = react_native.StyleSheet;
+let closure_3 = ChannelRecord.isGuildSelectableChannelType;
+({ AutoCompleteResultTypes: metroImportDefault, WHITESPACE_RE: metroImportAll } = Constants);
+({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: c9, AUTOCOMPLETE_ROW_HEIGHT: c10 } = ApplicationCommandsConstants);
+({ CHANNEL_SENTINEL: unpackModuleId, EMOJI_SENTINEL: closure_12, GAME_MENTION_SENTINEL: map1, MENTION_SENTINEL: closure_14 } = ChannelAutocompleteConstants);
+const jsx = Fragment.jsx;
+const hairlineWidth = StyleSheet.hairlineWidth;
+let obj = { itemDivider: obj2 };
+obj2 = { marginLeft: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+let closure_17 = createStyles.createStyles(obj);
 const re19 = /[\r\n]/;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/autocompleter/native/AutocompleteUtils.tsx");
 
 export const getItemLayout = function getItemLayout(arg0, index) {
+  let result;
   let type;
   if (arg0 != null) {
     if (arg0[index] != null) {
       type = tmp2.type;
     }
   }
-  const tmp3 = type === constants.EMOJI ? React7 : closure_1_10;
-  const obj = { length: tmp3, offset: null, index };
-  const result = index * tmp3;
-  obj.offset = result + Math.max(0, (index - 1) * hairlineWidth);
+  const tmp3 = type === metroImportDefault.EMOJI ? React4 : authStore;
+  const obj = { length: tmp3, offset: result + Math.max(0, (index - 1) * hairlineWidth), index };
+  result = index * tmp3;
   return obj;
 };
 export const getAutocompleteResultText = function getAutocompleteResultText(type, channel, set) {
@@ -56,28 +70,33 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
     }
   }
   type = type.type;
-  if (constants.USER === type) {
+  if (metroImportDefault.USER === type) {
+    let combined;
     const user = type.user;
-    if (obj6.hasSameRoleAsUsername(channel, user)) {
+    const obj5 = AutocompleteUtilsDefault;
+    const tmp35 = importDefault;
+    if (obj5.hasSameRoleAsUsername(channel, user)) {
       const _HermesInternal9 = HermesInternal;
-      let combined = "" + tmp36 + user.tag;
+      combined = "" + tmp37 + user.tag;
     } else {
       const _HermesInternal8 = HermesInternal;
-      combined = "" + tmp36 + UserUtilsDefault.getUserTag(user);
-      const tmp34Result = UserUtilsDefault;
+      const tmp35Result = tmp35(4678);
+      combined = "" + tmp37 + tmp35Result.getUserTag(user);
     }
     return combined;
-  } else if (tmp.GLOBAL === type) {
+  } else if (metroImportDefault.GLOBAL === type) {
     return type.text;
-  } else if (tmp.ROLE === type) {
+  } else if (metroImportDefault.ROLE === type) {
     const _HermesInternal7 = HermesInternal;
-    return "" + closure_1_14 + type.name;
-  } else if (tmp.CHANNEL === type) {
+    return "" + authStore2 + type.name;
+  } else if (metroImportDefault.CHANNEL === type) {
     channel = type.channel;
     if (channel.isThread()) {
-      const obj4 = useChannelName;
+      const escapeChannelName = useChannelName.escapeChannelName;
+      useChannelName;
       const _HermesInternal6 = HermesInternal;
-      return "#\"" + obj4.escapeChannelName(useChannelName.computeChannelName(type.channel, UserStore, RelationshipStore)) + "\"";
+      const obj4 = useChannelName;
+      return "#\"" + escapeChannelName(obj4.computeChannelName(type.channel, UserStore, RelationshipStore)) + "\"";
     } else {
       const channel2 = type.channel;
       const guildId = channel2.getGuildId();
@@ -89,27 +108,30 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
             name = tmp18.name;
           }
           if (name == null) {
-            name = useChannelName.computeChannelName(type.channel, UserStore, RelationshipStore);
+            const obj3 = useChannelName;
+            name = obj3.computeChannelName(type.channel, UserStore, RelationshipStore);
           }
           const _HermesInternal5 = HermesInternal;
-          return "" + closure_1_11 + name;
+          return "" + unpackModuleId + name;
         }
       }
       const _HermesInternal4 = HermesInternal;
-      return "" + closure_1_11 + useChannelName.computeChannelName(type.channel, UserStore, RelationshipStore);
+      const obj2 = useChannelName;
+      return "" + unpackModuleId + obj2.computeChannelName(type.channel, UserStore, RelationshipStore);
     }
-  } else if (tmp.GAME_MENTION === type) {
+  } else if (metroImportDefault.GAME_MENTION === type) {
     const _HermesInternal3 = HermesInternal;
     return "" + map1 + type.game.name;
-  } else if (tmp.TIMESTAMP_MENTION === type) {
-    return TimestampUtils.unparseTimestamp(type.mention.timestamp, type.mention.format);
-  } else if (tmp.EMOJI === type) {
+  } else if (metroImportDefault.TIMESTAMP_MENTION === type) {
+    const obj = TimestampUtils;
+    return obj.unparseTimestamp(type.mention.timestamp, type.mention.format);
+  } else if (metroImportDefault.EMOJI === type) {
     const _HermesInternal2 = HermesInternal;
-    return "" + closure_1_12 + type.name + ":";
+    return "" + closure_12 + type.name + ":";
   } else {
-    if (tmp.EMOJI_PREMIUM_UPSELL !== type) {
-      if (tmp.SLASH !== type) {
-        if (tmp.CHOICE === type) {
+    if (metroImportDefault.EMOJI_PREMIUM_UPSELL !== type) {
+      if (metroImportDefault.SLASH !== type) {
+        if (metroImportDefault.CHOICE === type) {
           const _HermesInternal = HermesInternal;
           return "" + type.choice.displayName;
         } else {
@@ -121,13 +143,15 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
   }
 };
 export const getMentionTextWithUser = function getMentionTextWithUser(messageChannel, user) {
+  let combined;
+  const obj = AutocompleteUtilsDefault;
   if (obj.hasSameRoleAsUsername(messageChannel, user)) {
     const _HermesInternal2 = HermesInternal;
-    let combined = "" + tmp3 + user.tag;
+    combined = "" + tmp3 + user.tag;
   } else {
     const _HermesInternal = HermesInternal;
-    combined = "" + tmp3 + UserUtilsDefault.getUserTag(user);
     const tmpResult = UserUtilsDefault;
+    combined = "" + tmp3 + tmpResult.getUserTag(user);
   }
   return combined;
 };
@@ -138,17 +162,15 @@ export const getPrefix = function getPrefix(substr1) {
   return substr1[0];
 };
 export const getQuery = function getQuery(arr) {
-  return arr.slice(1).toLowerCase();
+  const str = arr.slice(1);
+  return str.toLowerCase();
 };
 export const isWhitespaceSeparatingBoundary = function isWhitespaceSeparatingBoundary(seenText, lastIndexOfResult) {
-  let isMatch = 0 === lastIndexOfResult;
-  if (!isMatch) {
-    isMatch = regex.test(seenText[lastIndexOfResult - 1]);
-  }
+  const isMatch = 0 === lastIndexOfResult || metroImportAll.test(seenText[lastIndexOfResult - 1]);
   return isMatch;
 };
 export const isUnbrokenRun = function isUnbrokenRun(arr, sum, arg2) {
-  return !regex.test(arr.slice(sum, arg2));
+  return !metroImportAll.test(arr.slice(sum, arg2));
 };
 export const isSingleLineRun = function isSingleLineRun(arr, sum, arg2) {
   return !re19.test(arr.slice(sum, arg2));
@@ -158,13 +180,13 @@ export const findWordStart = function findWordStart(arg0, arg1) {
   if (arg1 > 0) {
     let tmp4 = arg1;
     tmp = arg1;
-    if (!regex.test(arg0[arg1 - 1])) {
+    if (!metroImportAll.test(arg0[arg1 - 1])) {
       const diff = tmp4 - 1;
       tmp = diff;
       while (diff > 0) {
         tmp4 = diff;
         tmp = diff;
-        if (regex.test(arg0[diff - 1])) {
+        if (metroImportAll.test(arg0[diff - 1])) {
           break;
         }
       }
@@ -204,13 +226,13 @@ export const findAutoInsertOnSpaceToken = function findAutoInsertOnSpaceToken(c2
       if (0 < diff) {
         let tmp2 = diff;
         tmp3 = diff;
-        if (!regex.test(c22[diff - 1])) {
+        if (!metroImportAll.test(c22[diff - 1])) {
           const diff1 = tmp2 - 1;
           tmp3 = diff1;
           while (0 < diff1) {
             tmp2 = diff1;
             tmp3 = diff1;
-            if (regex.test(c22[diff1 - 1])) {
+            if (metroImportAll.test(c22[diff1 - 1])) {
               break;
             }
           }

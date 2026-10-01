@@ -5,26 +5,33 @@
 // Exports: default
 
 // Module 15253 (useCheckpointMusic)
-import _mod17 from "module_17" /* 17 */;
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 19 */;
 import CheckpointStore from "CheckpointStore" /* 15246 */;
 import size from "module_2" /* 2 */;
 
-({ useEffect: c3, useRef: closure_4 } = noop);
-const AppState = _mod17.AppState;
+let c3;
+let closure_4;
+({ useEffect: c3, useRef: closure_4 } = react);
+const AppState = react_native.AppState;
 const result = size.fileFinishedImporting("modules/checkpoint/native/useCheckpointMusic.tsx");
 
 export default function useCheckpointMusic() {
+  let stateFromStores;
   const items = [CheckpointStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => CheckpointStore.isMuted);
-  closure_4(null);
-  closure_3(() => {
+  const obj = stateFromStores(504);
+  stateFromStores = obj.useStateFromStores(items, () => CheckpointStore.isMuted);
+  let ref = closure_4(null);
+  let tmp2 = closure_3(() => {
+    let closure_1;
+    const createSound = stateFromStores(dependencyMap[4]).createSound;
     let num = 1;
-    const obj = stateFromStores(9357);
+    const tmp = stateFromStores(dependencyMap[4]);
+    const tmp2 = ref(dependencyMap[5]);
     if (CheckpointStore.isMuted) {
       num = 0;
     }
-    const sound = obj.createSound(ref(15254), "vibing_wumpus", num);
+    const sound = createSound(tmp2, "vibing_wumpus", num);
     ref.current = sound;
     sound.loop();
     ref = AppState.addEventListener("change", (event) => {
@@ -44,10 +51,11 @@ export default function useCheckpointMusic() {
   closure_3(() => {
     if (null != ref.current) {
       let num = 1;
+      const current = ref.current;
       if (stateFromStores) {
         num = 0;
       }
-      ref.current.volume = num;
+      current.volume = num;
     }
   }, items1);
 };

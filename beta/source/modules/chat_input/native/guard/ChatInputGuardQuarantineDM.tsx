@@ -4,22 +4,22 @@
 // Dependencies: [19, 11945, 21, 11941, 11946, 1115, 2]
 
 // Module 11944 (ChatInputGuardQuarantineDM)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl3 from "intl" /* 1115 */;
 import ChatInputGuardDefault from "ChatInputGuard" /* 11941 */;
-import ChatWarningIcon from "ChatWarningIcon" /* 11946 */;
-import noop from "module_19" /* 19 */;
+import QuarantineConstants from "QuarantineConstants" /* 11945 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const QUARANTINE_APPEAL_LINK = fn(11945).QUARANTINE_APPEAL_LINK;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const QUARANTINE_APPEAL_LINK = QuarantineConstants.QUARANTINE_APPEAL_LINK;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function ChatInputGuardQuarantineDM() {
+  ChatInputGuardDefault;
+  const intl = intl3.intl;
+  const intl2 = intl3.intl;
+  const obj2 = { appealLink: QUARANTINE_APPEAL_LINK };
+  return <tmp type="simple-action" icon={null} message={intl.string(intl3.t.EouHwv)} subtext={intl2.format(intl3.t.PThBel, obj2)} />;
+});
 const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardQuarantineDM.tsx");
 
-export default noop.memo(function ChatInputGuardQuarantineDM() {
-  const obj = { type: "simple-action", icon: jsx(ChatWarningIcon.ChatWarningIcon, {}), message: null, subtext: null };
-  const intl = util.intl;
-  obj.message = intl.string(util.t.EouHwv);
-  const intl2 = util.intl;
-  obj.subtext = intl2.format(util.t.PThBel, { appealLink: QUARANTINE_APPEAL_LINK });
-  return jsx(ChatInputGuardDefault, { type: "simple-action", icon: jsx(ChatWarningIcon.ChatWarningIcon, {}), message: null, subtext: null });
-});
+export default memoResult;

@@ -6,12 +6,14 @@
 
 // Module 12539 (getMediaViewerStateForScreen)
 import MediaSourceUtil from "MediaSourceUtil" /* 7713 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/media_viewer/native/getMediaViewerStateForScreen.tsx");
 
 export default function getMediaViewerStateForScreen(width, height, arr) {
-  const size = MediaSourceUtil.flattenSource(arr, true);
+  const obj = MediaSourceUtil;
+  size = obj.flattenSource(arr, true);
   if (null == size) {
     const size1 = { maximumZoomScale: 1, width, height };
     return size1;
@@ -20,8 +22,9 @@ export default function getMediaViewerStateForScreen(width, height, arr) {
     const result1 = size.width / size.height;
     if (size.width < width) {
       if (size.height < height) {
+        let result2;
         if (result1 > result) {
-          let result2 = size.width / width;
+          result2 = size.width / width;
         } else {
           result2 = size.height / height;
         }
@@ -38,19 +41,15 @@ export default function getMediaViewerStateForScreen(width, height, arr) {
     }
     if (result1 > result) {
       const result3 = width / size.width;
-      const size3 = { maximumZoomScale: 1 / result3 + 1, width: null, height: null };
+      const size3 = { maximumZoomScale: 1 / result3 + 1, width: Math.floor(width), height: Math.floor(size.height * result3) };
       const _Math3 = Math;
-      size3.width = Math.floor(width);
       const _Math4 = Math;
-      size3.height = Math.floor(size.height * result3);
       return size3;
     } else {
       const result4 = height / size.height;
-      const size4 = { maximumZoomScale: 1 / result4 + 1, width: null, height: null };
+      const size4 = { maximumZoomScale: 1 / result4 + 1, width: Math.floor(size.width * result4), height: Math.floor(height) };
       const _Math = Math;
-      size4.width = Math.floor(size.width * result4);
       const _Math2 = Math;
-      size4.height = Math.floor(height);
       return size4;
     }
   }

@@ -3,16 +3,15 @@
 // Dependencies: [41, 42, 9899]
 
 // Module 9932
+import TIMEZONE_ABBR_MAP from "TIMEZONE_ABBR_MAP" /* 9899 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-const ExtractTimezoneAbbrRefiner = require;
 const regExp = new RegExp("^\\s*,?\\s*\\(?([A-Z]{2,4})\\)?(?=\\W|$)", "i");
 class ExtractTimezoneAbbrRefiner {
-  constructor(arg0) {
-    tmp = c2(this, ExtractTimezoneAbbrRefiner);
-    this.timezoneOverrides = global;
-    return;
+  constructor(timezoneOverrides) {
+    _classCallCheck(this, ExtractTimezoneAbbrRefiner);
+    this.timezoneOverrides = timezoneOverrides;
   }
 }
 const entry = {
@@ -23,37 +22,40 @@ const entry = {
     if (null === timezones) {
       timezones = {};
     }
-    let item = arr.forEach((item) => {
-      const match = regExp.exec(option.text.substring(item.index + item.text.length));
+    const item = arr.forEach(function(item) {
+      let closure_0 = item;
+      const str = option.text;
+      const match = regExp.exec(str.substring(item.index + item.text.length));
+      const obj = option;
       if (match) {
-        const formatted = match[1].toUpperCase();
+        const str2 = match[1];
+        const formatted = str2.toUpperCase();
         const start = item.start;
-        let refDate = start.date();
-        if (null === refDate) {
-          refDate = item.refDate;
-        }
+        let refDate = start.date() ?? item.refDate;
         if (null === refDate) {
           const _Date = Date;
+          self = this;
+          const self2 = this;
           refDate = new Date();
         }
         const _Object = Object;
         const _Object2 = Object;
         const merged = Object.assign(Object.assign({}, self.timezoneOverrides), timezones);
-        const toTimezoneOffsetResult = ExtractTimezoneAbbrRefiner(9899).toTimezoneOffset(formatted, refDate, merged);
-        self = toTimezoneOffsetResult;
+        const toTimezoneOffsetResult = TIMEZONE_ABBR_MAP.toTimezoneOffset(formatted, refDate, merged);
         if (null != toTimezoneOffsetResult) {
-          option.debug(() => {
-            console.log("Extracting timezone: '" + formatted + "' into: " + toTimezoneOffsetResult + " for: " + item.start);
+          obj.debug(() => {
+            console.log("Extracting timezone: '" + formatted + "' into: " + toTimezoneOffsetResult + " for: " + start.start);
           });
           const start6 = item.start;
-          value = start6.get("timezoneOffset");
+          const value = start6.get("timezoneOffset");
           if (null !== value) {
             if (toTimezoneOffsetResult != value) {
               const start2 = item.start;
             }
           }
           const start3 = item.start;
-          if (!tmp14) {
+          const tmp12 = start3.isOnlyDate() && formatted != match[1];
+          if (!tmp12) {
             item.text = item.text + match[0];
             const start4 = item.start;
             if (!start4.isCertain("timezoneOffset")) {
@@ -70,7 +72,6 @@ const entry = {
               end2.assign("timezoneOffset", toTimezoneOffsetResult);
             }
           }
-          tmp14 = start3.isOnlyDate() && formatted != match[1];
         }
       }
     });

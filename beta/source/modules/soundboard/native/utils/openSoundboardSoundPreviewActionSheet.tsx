@@ -5,12 +5,14 @@
 // Exports: default
 
 // Module 16898 (openSoundboardSoundPreviewActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/soundboard/native/utils/openSoundboardSoundPreviewActionSheet.tsx");
 
 export default function openSoundboardSoundPreviewActionSheet(channel, sound, analyticsSource, soundGridLocation) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16899, dependencyMap.paths), "SoundboardSoundPreviewActionSheet", { channel, sound, soundGridLocation, analyticsSource });
+  const obj = ActionSheetActionCreatorsDefault;
+  const obj2 = { channel, sound, soundGridLocation, analyticsSource };
+  obj.openLazy(asyncRequire(16899, dependencyMap.paths), "SoundboardSoundPreviewActionSheet", obj2);
 };

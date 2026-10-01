@@ -6,8 +6,8 @@
 
 // Module 13531 (isActivityParticipantCurrentUserCurrentSession)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/isActivityParticipantCurrentUserCurrentSession.tsx");
 
 export const isActivityParticipantCurrentUserCurrentSession = function isActivityParticipantCurrentUserCurrentSession(userId) {
@@ -19,7 +19,6 @@ export const isActivityParticipantCurrentUserCurrentSession = function isActivit
   let tmp3 = userId.userId === id;
   if (tmp3) {
     tmp3 = null == userId.sessionId || undefined === userId.sessionId || userId.sessionId === tmp2;
-    const tmp5 = null == userId.sessionId || undefined === userId.sessionId || userId.sessionId === tmp2;
   }
   return tmp3;
 };

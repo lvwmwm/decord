@@ -4,12 +4,12 @@
 // Dependencies: [7910]
 
 // Module 7909 (inlineStyles)
-import _modDef7910 from "module_7910" /* 7910 */;
+import _mod7910 from "module_7910" /* 7910 */;
 
-const require = globalThis.__r;
+const _modDef7910 = _mod7910;
 
-for (const key10013 in require("module_7910")) {
-  arg5[key10013] = require("module_7910")[key10013];
+for (const key10013 in _mod7910) {
+  exports[key10013] = _mod7910[key10013];
   continue;
 }
 

@@ -16,22 +16,22 @@ const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationBannerForChannel.tsx");
 
 export const useInappropriateConversationBannerForChannel = function useInappropriateConversationBannerForChannel(channelId, LOCATION_CONTEXT_MOBILE) {
-  const isEligibleForInappropriateConversationWarning = SelfModInappropriateConversationExperiment.useIsEligibleForInappropriateConversationWarning({ location: LOCATION_CONTEXT_MOBILE });
+  const obj = SelfModInappropriateConversationExperiment;
   const obj2 = { location: LOCATION_CONTEXT_MOBILE };
-  const safetyAlertsSettingOrDefault = useSafetyAlertsSettingOrDefault.useSafetyAlertsSettingOrDefault();
-  const inappropriateConversationWarningsForChannel = useInappropriateConversationWarningsForChannel.useInappropriateConversationWarningsForChannel(channelId);
-  useChannelSafetyWarning;
+  const isEligibleForInappropriateConversationWarning = obj.useIsEligibleForInappropriateConversationWarning(obj2);
+  const obj3 = useSafetyAlertsSettingOrDefault;
+  const safetyAlertsSettingOrDefault = obj3.useSafetyAlertsSettingOrDefault();
+  const obj4 = useInappropriateConversationWarningsForChannel;
+  const inappropriateConversationWarningsForChannel = obj4.useInappropriateConversationWarningsForChannel(channelId);
+  let tmp3 = useChannelSafetyWarning;
   if (isEligibleForInappropriateConversationWarning) {
     if (safetyAlertsSettingOrDefault) {
       if (0 !== inappropriateConversationWarningsForChannel.length) {
         if (!inappropriateConversationWarningsForChannel.some((type) => {
           let tmp2 = type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1;
           if (!tmp2) {
-            let tmp3 = type.type === tmp.INAPPROPRIATE_CONVERSATION_TIER_2;
-            if (tmp3) {
-              tmp3 = null != type.dismiss_timestamp;
-            }
-            tmp2 = tmp3;
+            tmp2 = type.type === tmp.INAPPROPRIATE_CONVERSATION_TIER_2 && null != type.dismiss_timestamp;
+            const tmp3 = type.type === tmp.INAPPROPRIATE_CONVERSATION_TIER_2 && null != type.dismiss_timestamp;
           }
           return tmp2;
         })) {

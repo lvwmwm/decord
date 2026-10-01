@@ -5,34 +5,29 @@
 // Exports: default
 
 // Module 10665 (useShowBadgeProgress)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
 import BadgeUtils from "BadgeUtils" /* 10659 */;
 import ConsentStore from "ConsentStore" /* 6012 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Consents = fn(1074).Consents;
-const size = fn(2);
+const Consents = Constants.Consents;
 const result = size.fileFinishedImporting("modules/badges/useShowBadgeProgress.tsx");
 
 export default function useShowBadgeProgress(arg0) {
+  let badge;
+  let isViewingOtherUser;
+  let viewerBadge;
   ({ badge, viewerBadge, isViewingOtherUser } = arg0);
   const items = [ConsentStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => ConsentStore.hasConsented(constants.PERSONALIZATION));
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => ConsentStore.hasConsented(constants.PERSONALIZATION));
   if (viewerBadge == null) {
     viewerBadge = badge;
   }
   const tmpResult = BadgeUtils;
-  const tmp4 = null != BadgeUtils.findTier(viewerBadge, viewerBadge.next_tier);
+  const tmp4 = null != tmpResult.findTier(viewerBadge, viewerBadge.next_tier);
   const tmpResult2 = BadgeUtils;
-  let owned = !isViewingOtherUser;
-  if (!isViewingOtherUser) {
-    owned = viewerBadge.owned;
-  }
-  if (owned) {
-    owned = tmp4;
-  }
-  if (owned) {
-    owned = !tmp5;
-  }
-  return owned;
+  const tmp6 = !isViewingOtherUser && viewerBadge.owned && tmp4 && !(tmpResult2.isPersonalizationGatedBadge(badge.badge_id) && !stateFromStores);
+  return tmp6;
 };

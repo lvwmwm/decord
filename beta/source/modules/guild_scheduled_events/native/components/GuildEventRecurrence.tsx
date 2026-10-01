@@ -5,71 +5,91 @@
 // Exports: default
 
 // Module 9090 (GuildEventRecurrence)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import ScheduleUtils from "ScheduleUtils" /* 8946 */;
 import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8976 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { alignSelf: "stretch", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, eventHeader: { marginStart: 8, flexShrink: 0, flexGrow: 1 }, active: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED, borderRadius: nativeDefault.radii.xs }, actions: { alignItems: "center", flexDirection: "row", flexShrink: 0 }, secondarySmallButton: null, secondarySmallIcon: null };
-let obj3 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED, borderRadius: nativeDefault.radii.xs };
-obj2.secondarySmallButton = { flexShrink: 0, alignItems: "center", flexDirection: "row", padding: 8, marginLeft: 8, borderRadius: nativeDefault.radii.xs };
-let obj4 = { flexShrink: 0, alignItems: "center", flexDirection: "row", padding: 8, marginLeft: 8, borderRadius: nativeDefault.radii.xs };
-obj2.secondarySmallIcon = { tintColor: nativeDefault.colors.TEXT_STRONG };
-let closure_10 = createStyles.createStyles(obj2);
-const size = fn(2);
+let c9;
+let metroImportAll;
+let obj2;
+let obj3;
+let obj4;
+const View = react_native.View;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { alignSelf: "stretch", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, eventHeader: { marginStart: 8, flexShrink: 0, flexGrow: 1 }, active: obj2, actions: { alignItems: "center", flexDirection: "row", flexShrink: 0 }, secondarySmallButton: obj3, secondarySmallIcon: obj4 };
+obj2 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED, borderRadius: nativeDefault.radii.xs };
+createStyles = createStyles.createStyles;
+obj3 = { flexShrink: 0, alignItems: "center", flexDirection: "row", padding: 8, marginLeft: 8, borderRadius: nativeDefault.radii.xs };
+obj4 = { tintColor: nativeDefault.colors.TEXT_STRONG };
+let closure_10 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventRecurrence.tsx");
 
 export default function GuildEventRecurrence(recurrenceId) {
+  let Icon;
+  let intl2;
+  let intl3;
+  let isActive;
+  let items5;
+  let items6;
+  let obj5;
+  let obj9;
   recurrenceId = recurrenceId.recurrenceId;
   const guildEventId = recurrenceId.guildEventId;
   ({ onPress: dependencyMap, isActive } = recurrenceId);
   let stateFromStores1;
-  closure_5 = undefined;
-  c6 = undefined;
-  closure_7 = undefined;
+  let closure_5;
+  let c6;
+  let closure_7;
   const tmp = closure_10();
-  const items = [closure_7];
-  const stateFromStores = recurrenceId(504).useStateFromStores(items, () => GuildScheduledEventStore.getGuildScheduledEvent(guildEventId));
-  let id;
+  let tmp2 = recurrenceId;
+  const tmp3 = dependencyMap;
   let obj = recurrenceId(504);
+  const items = [closure_7];
+  const stateFromStores = obj.useStateFromStores(items, () => GuildScheduledEventStore.getGuildScheduledEvent(guildEventId));
+  let id;
   const tmp5 = guildEventId;
+  const tmp6 = guildEventId(8950);
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  let obj2 = guildEventId(8950)(recurrenceId, id);
-  const tmp6 = guildEventId(8950);
+  let obj2 = tmp6(recurrenceId, id);
   const items1 = [c6];
-  stateFromStores1 = recurrenceId(504).useStateFromStores(items1, () => {
+  const tmp2Result = tmp2(504);
+  stateFromStores1 = tmp2Result.useStateFromStores(items1, () => {
     let guild_id;
+    const getGuild = GuildStore.getGuild;
     if (stateFromStores != null) {
       guild_id = stateFromStores.guild_id;
     }
-    return GuildStore.getGuild(guild_id);
+    return getGuild(guild_id);
   });
-  const tmp2Result = recurrenceId(504);
   const items2 = [closure_5];
-  let stateFromStores2 = recurrenceId(504).useStateFromStores(items2, () => {
+  const tmp2Result4 = tmp2(504);
+  let stateFromStores2 = tmp2Result4.useStateFromStores(items2, () => {
     let channel_id;
+    const getChannel = ChannelStore.getChannel;
     if (stateFromStores != null) {
       channel_id = stateFromStores.channel_id;
     }
-    return ChannelStore.getChannel(channel_id);
+    return getChannel(channel_id);
   });
-  const tmp2Result4 = recurrenceId(504);
+  const useManageResourcePermissions = tmp2(8952).useManageResourcePermissions;
+  tmp2(8952);
   if (stateFromStores2 == null) {
     stateFromStores2 = stateFromStores1;
   }
-  closure_5 = recurrenceId(8952).useManageResourcePermissions(stateFromStores2).canManageGuildEvent(stateFromStores);
-  const tmp2Result5 = recurrenceId(8952);
-  const eventScheduleById = recurrenceId(8949).useEventScheduleById(guildEventId, recurrenceId);
+  closure_5 = useManageResourcePermissions(stateFromStores2).canManageGuildEvent(stateFromStores);
+  const tmp2Result6 = tmp2(8949);
+  const eventScheduleById = tmp2Result6.useEventScheduleById(guildEventId, recurrenceId);
   let toISOStringResult;
   if (eventScheduleById != null) {
     const startTime = eventScheduleById.startTime;
@@ -80,7 +100,8 @@ export default function GuildEventRecurrence(recurrenceId) {
   const memo = stateFromStores.useMemo(() => {
     let eventTimeData = null;
     if (null != c6) {
-      eventTimeData = ScheduleUtils.getEventTimeData(tmp);
+      const obj = ScheduleUtils;
+      eventTimeData = obj.getEventTimeData(tmp);
     }
     return eventTimeData;
   }, items3);
@@ -91,10 +112,10 @@ export default function GuildEventRecurrence(recurrenceId) {
       obj2 = {};
     }
     const is_canceled = obj2.is_canceled;
-    let tmp21Result = undefined !== is_canceled && is_canceled;
-    closure_7 = tmp21Result;
+    let tmp22Result = undefined !== is_canceled && is_canceled;
+    closure_7 = tmp22Result;
     let str2 = "";
-    if (tmp21Result) {
+    if (tmp22Result) {
       const intl = tmp2(1115).intl;
       const _HermesInternal = HermesInternal;
       str2 = "" + intl.string(tmp2(1115).t.fyBVRm) + ", ";
@@ -111,55 +132,58 @@ export default function GuildEventRecurrence(recurrenceId) {
     if (isActive) {
       active = tmp.active;
     }
-    const obj3 = { style: null, children: null };
+    const obj3 = { style: items4, children: items5 };
     items4[1] = active;
-    obj3.style = items4;
     const obj4 = {
       accessible: true,
       accessibilityRole: "button",
       accessibilityLabel: sum1,
       onPress(stopPropagation) {
           stopPropagation.stopPropagation();
-          if (!closure_7) {
+          const tmp2 = closure_7;
+          if (!tmp2) {
             if (dependencyMap != null) {
-              tmp2(recurrenceId);
+              tmp3(recurrenceId);
             }
           }
         },
       style: tmp.eventHeader,
-      children: null
+      children: closure_8(tmp2(9062).GuildEventCardHeader, obj5)
     };
-    const obj5 = { isActive, event: stateFromStores, showUserCount: false, showCreator: false, recurrenceId };
-    obj4.children = closure_8(tmp2(9062).GuildEventCardHeader, obj5);
-    const items5 = [closure_8(tmp2(5435).PressableOpacity, obj4), ];
-    const obj6 = { style: tmp.actions, children: null };
-    if (tmp21Result) {
-      const obj7 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: null };
-      const intl2 = tmp2(1115).intl;
-      obj7.children = intl2.string(tmp2(1115).t.fyBVRm);
-      tmp21Result = tmp21(tmp2(4832).Text, obj7);
+    const PressableOpacity = tmp2(5435).PressableOpacity;
+    obj5 = { isActive, event: stateFromStores, showUserCount: false, showCreator: false, recurrenceId };
+    items5 = [closure_8(PressableOpacity, obj4), ];
+    const obj6 = { style: tmp.actions, children: items6 };
+    if (tmp22Result) {
+      const obj7 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl2.string(tmp2(1115).t.fyBVRm) };
+      const Text = tmp2(4832).Text;
+      intl2 = tmp2(1115).intl;
+      tmp22Result = tmp22(Text, obj7);
     }
-    const items6 = [tmp21Result, ];
-    const obj8 = { accessible: true, accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-    const intl3 = tmp2(1115).intl;
-    const _HermesInternal3 = HermesInternal;
-    obj8.accessibilityLabel = "" + intl3.string(tmp2(1115).t.HIgA5a) + ", " + sum1;
-    obj8.onPress = function onPress(stopPropagation) {
-      if (null != stateFromStores) {
-        stopPropagation.stopPropagation();
-        if (null != stateFromStores1) {
-          const result = GuildScheduledEventModalActionCreators.showGuildEventModeratorActionSheet(tmp, closure_5, recurrenceId);
-        }
-      }
+    items6 = [tmp22Result, ];
+    const obj8 = {
+      accessible: true,
+      accessibilityRole: "button",
+      accessibilityLabel: "" + intl3.string(tmp2(1115).t.HIgA5a) + ", " + sum1,
+      onPress(stopPropagation) {
+          if (null != stateFromStores) {
+            stopPropagation.stopPropagation();
+            if (null != stateFromStores1) {
+              const obj = GuildScheduledEventModalActionCreators;
+              const result = obj.showGuildEventModeratorActionSheet(tmp, closure_5, recurrenceId);
+            }
+          }
+        },
+      style: tmp.secondarySmallButton,
+      children: closure_8(Icon, obj9)
     };
-    obj8.style = tmp.secondarySmallButton;
-    const obj9 = { source: tmp5(9091), size: tmp2(1177).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
-    obj8.children = closure_8(tmp2(1177).Icon, obj9);
-    items6[1] = closure_8(tmp2(5435).PressableOpacity, obj8);
-    obj6.children = items6;
+    const PressableOpacity2 = tmp2(5435).PressableOpacity;
+    intl3 = tmp2(1115).intl;
+    const _HermesInternal3 = HermesInternal;
+    obj9 = { source: tmp5(9091), size: tmp2(1177).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
+    Icon = tmp2(1177).Icon;
+    items6[1] = closure_8(PressableOpacity2, obj8);
     items5[1] = closure_9(stateFromStores1, obj6);
-    obj3.children = items5;
     return closure_9(stateFromStores1, obj3);
   }
-  const tmp2Result6 = recurrenceId(8949);
 };

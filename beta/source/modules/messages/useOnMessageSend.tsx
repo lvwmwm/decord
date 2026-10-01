@@ -6,47 +6,47 @@
 
 // Module 16581 (useOnMessageSend)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const MessageStates = fn(1074).MessageStates;
-const size = fn(2);
+const MessageStates = Constants.MessageStates;
 const result = size.fileFinishedImporting("modules/messages/useOnMessageSend.tsx");
 
 export default function useOnMessageSend(arg0) {
-  closure_0 = arg0;
-  dependencyMap = tmp;
-  const items = [arg0, arg1];
-  const effect = noop.useEffect(() => {
+  let closure_0 = arg0;
+  const tmp = arg1;
+  let closure_1 = tmp;
+  const items = [arg0, tmp];
+  const effect = react.useEffect(() => {
     function handleMessage(channelId) {
-      let tmp2 = undefined !== handleMessageCreate;
-      if (tmp2) {
-        tmp2 = channelId.channelId !== tmp;
-      }
+      const tmp2 = undefined !== handleMessageCreate && channelId.channelId !== tmp;
       if (!tmp2) {
         handleMessage();
       }
     }
     function handleMessageCreate(optimistic) {
-      optimistic = optimistic.optimistic;
-      if (!optimistic) {
-        optimistic = optimistic.message.state === constants.SENDING;
-      }
+      optimistic = optimistic.optimistic || optimistic.message.state === constants.SENDING;
       if (optimistic) {
+        const tmp3 = undefined !== handleMessageCreate && optimistic.channelId !== tmp2;
         if (!tmp3) {
           handleMessage();
         }
-        tmp3 = undefined !== handleMessageCreate && optimistic.channelId !== tmp2;
       }
     }
-    const subscription = closure_0(573).subscribe("MESSAGE_CREATE", handleMessageCreate);
-    let obj = closure_0(573);
-    const subscription1 = closure_0(573).subscribe("UPLOAD_START", handleMessage);
-    let obj2 = closure_0(573);
-    const subscription2 = closure_0(573).subscribe("CALL_CREATE", handleMessage);
+    let obj = closure_0(closure_1[2]);
+    const subscription = obj.subscribe("MESSAGE_CREATE", handleMessageCreate);
+    let obj2 = closure_0(closure_1[2]);
+    const subscription1 = obj2.subscribe("UPLOAD_START", handleMessage);
+    let obj3 = closure_0(closure_1[2]);
+    const subscription2 = obj3.subscribe("CALL_CREATE", handleMessage);
     return () => {
-      DispatcherDefault.unsubscribe("MESSAGE_CREATE", handleMessageCreate);
-      DispatcherDefault.unsubscribe("UPLOAD_START", handleMessage);
-      DispatcherDefault.unsubscribe("CALL_CREATE", handleMessage);
+      const obj = DispatcherDefault;
+      obj.unsubscribe("MESSAGE_CREATE", handleMessageCreate);
+      const obj2 = DispatcherDefault;
+      obj2.unsubscribe("UPLOAD_START", handleMessage);
+      const obj3 = DispatcherDefault;
+      obj3.unsubscribe("CALL_CREATE", handleMessage);
     };
   }, items);
 };

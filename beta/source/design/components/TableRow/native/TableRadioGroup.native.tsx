@@ -5,47 +5,74 @@
 // Exports: TableRadioGroup
 
 // Module 5997 (TableRadioGroup)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let jsx = fn(21).jsx;
-const context = noop.createContext({ selectedValue: null, onSelect: fn(1074).NOOP });
-const size = fn(2);
+let dependencyMap;
+
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const NOOP = Constants.NOOP;
+let jsx = Fragment.jsx;
+const context = react.createContext({ selectedValue: null, onSelect: NOOP });
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRadioGroup.native.tsx");
 
 export const TableRadioGroupContext = context;
 export const TableRadioGroup = function TableRadioGroup(arg0) {
+  let Children;
+  let _undefined;
+  let accessibilityLabel;
+  let c2;
+  let children;
+  let closure_1;
+  let closure_4;
+  let defaultValue;
+  let description;
+  let groupRef;
+  let hasIcons;
+  let helperText;
+  let onChange;
+  let selectedValue;
+  let title;
+  let tmp4;
+  let value;
   ({ value, defaultValue, onChange } = arg0);
   _slicedToArray = undefined;
-  noop = undefined;
+  react = undefined;
   jsx = undefined;
   let onSelect;
+  let tmp = undefined !== value;
   dependencyMap = tmp;
   let tmp2 = null;
   ({ children, title, description, helperText, hasIcons, groupRef, accessibilityLabel } = arg0);
-  if (undefined === value) {
+  const useState = react.useState;
+  if (!tmp) {
     if (defaultValue == null) {
       defaultValue = null;
     }
     tmp2 = defaultValue;
   }
-  [tmp4, c2] = noop.useState(tmp2);
-  if (undefined !== value) {
+  [tmp4, c2] = _slicedToArray(useState(tmp2), 2);
+  const tmp3 = _slicedToArray(useState(tmp2), 2);
+  if (tmp) {
     tmp4 = value;
   }
   if (tmp4 == null) {
     tmp4 = null;
   }
-  noop = tmp4;
-  const items = [undefined !== value, onChange, tmp4];
+  react = tmp4;
+  const items = [tmp, onChange, tmp4];
   const imperativeHandle = obj.useImperativeHandle(groupRef, () => ({
     setValue(arg0) {
-      if (!closure_1_1) {
+      const tmp = closure_1_1;
+      if (!tmp) {
         _undefined(arg0);
       }
       if (onChange != null) {
-        tmp3(arg0);
+        tmp4(arg0);
       }
     },
     getValue() {
@@ -53,26 +80,34 @@ export const TableRadioGroup = function TableRadioGroup(arg0) {
     }
   }), items);
   jsx = obj.useContext(onChange(5998).RedesignCompatContext);
-  const items1 = [undefined !== value, onChange];
+  const items1 = [tmp, onChange];
   onSelect = obj.useCallback((arg0) => {
-    if (!closure_1) {
+    const tmp = closure_1;
+    if (!tmp) {
       _undefined(arg0);
     }
     if (onChange != null) {
-      tmp3(arg0);
+      tmp4(arg0);
     }
   }, items1);
   const items2 = [tmp4, onSelect];
-  const obj2 = { value: noop.useMemo(() => ({ selectedValue, onSelect }), items2), children: null };
-  const obj3 = { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: null };
-  const Children = obj.Children;
-  obj3.children = Children.map(children, (type) => {
-    if (!noop.isValidElement(type)) {
-      let tmp4 = null;
-      return tmp4;
-    }
-    tmp4 = type;
+  const Provider = onSelect.Provider;
+  ({
+    accessibilityRole: "radiogroup",
+    accessibilityLabel,
+    title,
+    description,
+    helperText,
+    hasIcons,
+    children: Children.map(children, (type) => {
+      if (!react.isValidElement(type)) {
+        let tmp4 = null;
+        return tmp4;
+      }
+      tmp4 = type;
+    })
   });
-  obj2.children = jsx(onChange(5999).TableRowGroup, { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: null });
-  return <onSelect.Provider value={noop.useMemo(() => ({ selectedValue, onSelect }), items2)}>{null}</onSelect.Provider>;
+  Children = obj.Children;
+  const TableRowGroup = onChange(5999).TableRowGroup;
+  return <Provider value={react.useMemo(() => ({ selectedValue, onSelect }), items2)}>{null}</Provider>;
 };

@@ -5,67 +5,91 @@
 // Exports: default
 
 // Module 14182 (UserProfileAvatarDecorationEditButton)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import Constants2 from "Constants" /* 6629 */;
 import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7602 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const COLLECTIBLES_PREVIEW_SIZE = fn(6629).COLLECTIBLES_PREVIEW_SIZE;
-const NOOP = fn(1085).NOOP;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { previewContainer: null, noneIcon: null };
-let size = { position: "relative", height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
-obj2.previewContainer = size;
-obj2.noneIcon = { tintColor: nativeDefault.colors.TEXT_SUBTLE };
-let closure_10 = createStyles.createStyles(obj2);
-size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let size;
+let react = react_mod;
+({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
+const COLLECTIBLES_PREVIEW_SIZE = Constants2.COLLECTIBLES_PREVIEW_SIZE;
+const NOOP = Constants.NOOP;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { previewContainer: size, noneIcon: obj2 };
+size = { position: "relative", height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
+createStyles = createStyles.createStyles;
+obj2 = { tintColor: nativeDefault.colors.TEXT_SUBTLE };
+let closure_10 = createStyles(obj);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileAvatarDecorationEditButton.tsx");
 
 export default function UserProfileAvatarDecorationEditButton(user) {
+  let avatarDecoration;
+  let closure_3;
+  let intl3;
+  let intl4;
+  let intl5;
+  let isFetching;
+  let isTryItOut;
+  let obj5;
+  let obj6;
+  let pendingAvatarDecoration;
+  let product;
+  let tmp18Result;
   user = user.user;
   const guildId = user.guildId;
   ({ pendingAvatarDecoration, isTryItOut } = user);
   let userAvatarDecoration;
   const tmp = closure_10();
-  noop = tmp2;
+  react = tmp2;
+  let obj = user(isTryItOut[8]);
   const items = [GuildMemberStore];
-  const stateFromStores = user(isTryItOut[8]).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
     if (closure_3) {
       member = GuildMemberStore.getMember(guildId, user.id);
     }
     return member;
   });
-  const obj = user(isTryItOut[8]);
+  let obj2 = { pendingValue: pendingAvatarDecoration, userValue: user.avatarDecoration, guildValue: avatarDecoration, guildId };
+  avatarDecoration = undefined;
   const tmp7 = guildId(isTryItOut[9]);
-  const obj3 = { pendingValue: pendingAvatarDecoration, userValue: user.avatarDecoration, guildValue: null, guildId: null };
-  let avatarDecoration;
+  const getProfilePreviewValue = user(isTryItOut[10]).getProfilePreviewValue;
+  user(isTryItOut[10]);
   if (stateFromStores != null) {
     avatarDecoration = stateFromStores.avatarDecoration;
   }
-  obj3.guildValue = avatarDecoration;
-  obj3.guildId = guildId;
-  const tmp7Result = tmp7(user(isTryItOut[10]).getProfilePreviewValue(obj3));
-  const obj2 = user(isTryItOut[10]);
+  const tmp7Result = tmp7(getProfilePreviewValue(obj2));
   let skuId;
+  const useFetchCollectiblesProduct = tmp3(tmp4[11]).useFetchCollectiblesProduct;
+  user(isTryItOut[11]);
   if (tmp7Result != null) {
     skuId = tmp7Result.skuId;
   }
-  const fetchCollectiblesProduct = user(isTryItOut[11]).useFetchCollectiblesProduct(skuId);
+  const fetchCollectiblesProduct = useFetchCollectiblesProduct(skuId);
   ({ product, isFetching } = fetchCollectiblesProduct);
-  const tmp3Result = user(isTryItOut[11]);
-  userAvatarDecoration = user(isTryItOut[10]).useUserAvatarDecoration({ user, guildId });
+  const tmp3Result2 = user(isTryItOut[10]);
+  userAvatarDecoration = tmp3Result2.useUserAvatarDecoration({ user, guildId });
   if (undefined !== pendingAvatarDecoration) {
     userAvatarDecoration = pendingAvatarDecoration;
   }
   const items1 = [user, guildId, userAvatarDecoration, isTryItOut];
   let name;
-  const callback = noop.useCallback(() => {
-    const result = avatar_decorations_AvatarDecorationUtils.openAvatarDecorationActionSheet({ user, guildId, currentAvatarDecoration: userAvatarDecoration, isTryItOut });
+  const callback = react.useCallback(() => {
+    const obj = avatar_decorations_AvatarDecorationUtils;
+    const obj2 = { user, guildId, currentAvatarDecoration: userAvatarDecoration, isTryItOut };
+    const result = obj.openAvatarDecorationActionSheet(obj2);
   }, items1);
   if (product != null) {
     name = product.name;
@@ -79,38 +103,30 @@ export default function UserProfileAvatarDecorationEditButton(user) {
     formatToPlainStringResult = name;
     if (null == userAvatarDecoration) {
       const intl2 = tmp3(tmp4[13]).intl;
-      const obj4 = { label: name };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp3(tmp4[13]).t.ep5D4i, obj4);
+      const obj3 = { label: name };
+      formatToPlainStringResult = intl2.formatToPlainString(tmp3(tmp4[13]).t.ep5D4i, obj3);
     }
   }
+  const UserProfileEditFormButton = tmp3(tmp4[14]).UserProfileEditFormButton;
   if (isFetching) {
-    const obj5 = { label: null, buttonText: null, onPress: null, leading: null, loading: true, disabled: true, hideArrow: true };
-    const intl4 = tmp3(tmp4[13]).intl;
-    obj5.label = intl4.string(tmp3(tmp4[13]).t["7v0T9P"]);
-    const intl5 = tmp3(tmp4[13]).intl;
-    obj5.buttonText = intl5.string(tmp3(tmp4[13]).t.MKDeyL);
-    obj5.onPress = NOOP;
-    obj5.leading = tmp16(userAvatarDecoration, { animating: true, size: "large" });
-    let obj6 = obj5;
+    const obj4 = { label: intl4.string(user(isTryItOut[13]).t["7v0T9P"]), buttonText: intl5.string(user(isTryItOut[13]).t.MKDeyL), onPress: NOOP, leading: null, loading: true, disabled: true, hideArrow: true };
+    intl4 = tmp3(tmp4[13]).intl;
+    intl5 = tmp3(tmp4[13]).intl;
+    obj5 = obj4;
   } else {
-    obj6 = { label: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null };
-    const intl3 = tmp3(tmp4[13]).intl;
-    obj6.label = intl3.string(tmp3(tmp4[13]).t["7v0T9P"]);
-    obj6.buttonText = formatToPlainStringResult;
-    const obj7 = { text: formatToPlainStringResult };
-    obj6.accessibilityValue = obj7;
-    obj6.onPress = callback;
+    obj5 = { label: intl3.string(tmp3(tmp4[13]).t["7v0T9P"]), buttonText: formatToPlainStringResult, accessibilityValue: obj6, onPress: callback, leading: tmp18Result };
+    intl3 = tmp3(tmp4[13]).intl;
+    obj6 = { text: formatToPlainStringResult };
     if (null != product) {
-      const obj8 = { style: tmp.previewContainer, children: null };
-      const obj9 = { avatarDecoration: tmp7Result, size: COLLECTIBLES_PREVIEW_SIZE - 2 * tmp6(tmp4[7]).space.PX_4, animate: false };
-      obj8.children = tmp16(tmp6(tmp4[15]), obj9);
-      let tmp16Result = tmp16(closure_5, obj8);
-      const tmp6Result = tmp6(tmp4[15]);
+      const obj7 = { style: tmp.previewContainer, children: null };
+      ({ avatarDecoration: tmp7Result, size: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(isTryItOut[7]).space.PX_4, animate: false });
+      guildId(isTryItOut[15]);
+      tmp18Result = tmp18(closure_5, obj7);
     } else {
-      const obj10 = { source: tmp6(tmp4[17]), style: tmp.noneIcon };
-      tmp16Result = tmp16(tmp3(tmp4[16]).Icon, obj10);
+      const obj9 = { source: guildId(isTryItOut[17]), style: tmp.noneIcon };
+      const Icon = tmp3(tmp4[16]).Icon;
+      tmp18Result = tmp18(Icon, obj9);
     }
-    obj6.leading = tmp16Result;
   }
-  return jsx(user(isTryItOut[14]).UserProfileEditFormButton, obj6);
+  return <UserProfileEditFormButton {...obj5} />;
 };

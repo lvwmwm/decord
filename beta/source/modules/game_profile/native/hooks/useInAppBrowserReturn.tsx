@@ -7,27 +7,34 @@
 // Module 8140 (useInAppBrowserReturn)
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8133 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GameProfileStore from "GameProfileStore" /* 8135 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let c0;
+
 let result = size.fileFinishedImporting("modules/game_profile/native/hooks/useInAppBrowserReturn.tsx");
 
 export default function useInAppBrowserReturn(gameId) {
   gameId = gameId.gameId;
   const scrollY = gameId.scrollY;
   const items = [gameId, scrollY];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (null != c0) {
+      let tmp = gameId;
+      let obj = gameId(dependencyMap[2]);
+      const tmp2 = dependencyMap;
       if (obj.isIOS()) {
         c0 = false;
-        closure_1 = tmp(tmp2[3]).subscribeToIsInAppBrowserOpen((arg0, arg1) => {
-          if (!arg1) {
+        const tmpResult = tmp(tmp2[3]);
+        let closure_1 = tmpResult.subscribeToIsInAppBrowserOpen((arg0, arg1) => {
+          const tmp = arg1;
+          if (!tmp) {
             if (arg0) {
               c0 = true;
-              const obj2 = { gameId, initialScrollOffset: scrollY.get() };
-              const result = GameProfileActionCreatorsDefault.setGameProfilePendingReturn(obj2);
+              const obj = { gameId, initialScrollOffset: scrollY.get() };
+              const setGameProfilePendingReturn = GameProfileActionCreatorsDefault.setGameProfilePendingReturn;
+              const result = setGameProfilePendingReturn(obj);
             }
           }
           if (arg1) {
@@ -36,21 +43,21 @@ export default function useInAppBrowserReturn(gameId) {
               c0 = false;
               const pendingReturn = GameProfileStore.getPendingReturn();
               if (null != pendingReturn) {
-                const obj4 = { gameId: pendingReturn.gameId, source: GameProfileAnalyticUtils.GameProfileSources.InAppBrowserReturn, initialScrollOffset: pendingReturn.initialScrollOffset };
-                GameProfileActionCreatorsDefault.returnToGameProfile(obj4);
+                const obj2 = { gameId: pendingReturn.gameId, source: GameProfileAnalyticUtils.GameProfileSources.InAppBrowserReturn, initialScrollOffset: pendingReturn.initialScrollOffset };
+                const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
+                GameProfileActionCreatorsDefault;
+                returnToGameProfile(obj2);
               }
             }
           }
         });
         return () => {
-          if (!c0) {
+          const tmp = c0;
+          if (!tmp) {
             closure_1();
           }
         };
       }
-      obj = gameId(dependencyMap[2]);
-      tmp = gameId;
-      tmp2 = dependencyMap;
     }
   }, items);
 };

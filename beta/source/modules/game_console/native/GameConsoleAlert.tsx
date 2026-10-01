@@ -5,47 +5,51 @@
 // Exports: SelfDismissibleAlertBody
 
 // Module 9248 (GameConsoleAlert)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 4853 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+let hasOwnProperty;
+let metroRequire;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ errorCodeText: { marginTop: 16 }, alertBody: { marginTop: 0 }, container: { flex: 1 }, body: { marginTop: 16 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_console/native/GameConsoleAlert.tsx");
 
 export const SelfDismissibleAlertBody = function SelfDismissibleAlertBody(errorCodeMessage) {
+  let body;
+  let dismissCallback;
+  let items2;
+  let items3;
+  let items4;
+  let remoteSessionId;
   ({ body, dismissCallback } = errorCodeMessage);
   errorCodeMessage = errorCodeMessage.errorCodeMessage;
   let stateFromStores;
   const tmp = closure_7();
   const items = [GameConsoleStore];
-  stateFromStores = dismissCallback(stateFromStores[5]).useStateFromStores(items, () => remoteSessionId.getRemoteSessionId());
+  const obj = dismissCallback(stateFromStores[5]);
+  stateFromStores = obj.useStateFromStores(items, () => remoteSessionId.getRemoteSessionId());
   const items1 = [stateFromStores, dismissCallback];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (null != stateFromStores) {
       dismissCallback();
     }
   }, items1);
   let tmp6 = body;
   if (null != errorCodeMessage) {
-    const obj2 = { style: tmp.container, children: null };
-    const obj3 = { maxFontSizeMultiplier: 1, variant: "text-md/normal", style: null, children: null };
-    const items2 = [, ];
+    const obj3 = { maxFontSizeMultiplier: 1, variant: "text-md/normal", style: items2, children: body };
+    items2 = [, ];
+    const obj2 = { style: tmp.container, children: items3 };
     ({ body: arr3[0], alertBody: arr3[1] } = tmp);
-    obj3.style = items2;
-    obj3.children = body;
-    const items3 = [closure_5(tmp2(tmp3[6]).Text, obj3), ];
-    const obj4 = { maxFontSizeMultiplier: 1, variant: "text-md/normal", style: null, children: null };
-    const items4 = [, ];
+    items3 = [closure_5(tmp2(stateFromStores[6]).Text, obj3), ];
+    const obj4 = { maxFontSizeMultiplier: 1, variant: "text-md/normal", style: items4, children: errorCodeMessage };
+    items4 = [, ];
     ({ body: arr5[0], errorCodeText: arr5[1] } = tmp);
-    obj4.style = items4;
-    obj4.children = errorCodeMessage;
-    items3[1] = closure_5(tmp2(tmp3[6]).Text, obj4);
-    obj2.children = items3;
+    items3[1] = closure_5(dismissCallback(stateFromStores[6]).Text, obj4);
     tmp6 = closure_6(View, obj2);
   }
   return tmp6;

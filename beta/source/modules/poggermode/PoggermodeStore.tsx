@@ -5,24 +5,34 @@
 // Exports: getComboId, isComboing, shouldTrackMessage
 
 // Module 7250 (PoggermodeStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 1074 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4464 */;
 import PoggermodeUtils from "PoggermodeUtils" /* 7251 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7091 */;
+import PoggermodeConstants from "PoggermodeConstants" /* 7092 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let hasOwnProperty;
+let metroRequire;
 function updateCombo(userId) {
+  let decayInterval1;
+  let min;
+  let num;
+  let num2;
   const flag = true;
+  let obj = secondaryIndexMap;
   const iter = secondaryIndexMap.get("" + userId.userId + "-" + userId.channelId);
-  let obj2 = {};
+  let obj2 = { value: num, multiplier: min(num2, 7), decayInterval: decayInterval1 };
   let merged = Object.assign(iter);
   let merged1 = Object.assign(userId);
-  let num = userId.value;
+  num = userId.value;
   if (num == null) {
-    value = undefined;
+    let value;
     if (iter != null) {
       value = iter.value;
     }
@@ -31,8 +41,9 @@ function updateCombo(userId) {
   if (num == null) {
     num = 0;
   }
-  obj2.value = num;
-  let num2 = userId.multiplier;
+  num2 = userId.multiplier;
+  const _Math = Math;
+  min = Math.min;
   if (num2 == null) {
     let multiplier;
     if (iter != null) {
@@ -43,27 +54,27 @@ function updateCombo(userId) {
   if (num2 == null) {
     num2 = 1;
   }
-  obj2.multiplier = Math.min(num2, 7);
-  let decayInterval1;
+  decayInterval1 = undefined;
   if (iter != null) {
     decayInterval1 = iter.decayInterval;
   }
   if (decayInterval1 == null) {
+    const self = this;
+    const self2 = this;
     decayInterval1 = new obj2(2040).Interval();
   }
-  obj2.decayInterval = decayInterval1;
-  const result = secondaryIndexMap.set("" + userId.userId + "-" + userId.channelId, obj2);
+  const result = obj.set("" + userId.userId + "-" + userId.channelId, obj2);
   if (flag) {
     let decayInterval = obj2.decayInterval;
     if (decayInterval != null) {
       decayInterval.start(1000, () => {
         const iter2 = secondaryIndexMap.get("" + obj2.userId + "-" + obj2.channelId);
         if (null != iter2) {
+          const tmp = obj2.multiplier !== iter2.multiplier && obj2.value !== iter2.value;
           if (iter2.value > 0) {
             if (!tmp) {
-              const obj = {};
+              const obj = { value: iter2.value - 1 };
               const merged = Object.assign(iter2);
-              obj.value = iter2.value - 1;
               updateCombo(obj);
               poggermodeStore.emitChange();
             }
@@ -73,97 +84,92 @@ function updateCombo(userId) {
             decayInterval.stop();
           }
           if (iter2.value <= 0) {
-            obj2 = {};
+            obj2 = { value: 0, multiplier: 1 };
             const merged1 = Object.assign(iter2);
-            obj2.value = 0;
-            obj2.multiplier = 1;
             updateCombo(obj2);
             poggermodeStore.emitChange();
           }
-          tmp = iter.multiplier !== iter2.multiplier && iter.value !== iter2.value;
         }
       });
     }
   }
 }
-const PoggermodeConstants = fn(7092);
 ({ ShakeLevel: hasOwnProperty, ShakeLocation: metroRequire } = PoggermodeConstants);
-const ComponentActions = fn(1074).ComponentActions;
+const ComponentActions = Constants.ComponentActions;
 const set = new Set();
-const secondaryIndexMap = new fn(4464).SecondaryIndexMap((arg0) => {
+const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap((arg0) => {
   const items = [, ];
   ({ userId: arr[0], channelId: arr[1] } = arg0);
   return items;
 }, (channelId) => "" + channelId.channelId + "-" + channelId.userId);
-const secondaryIndexMap1 = new fn(4464).SecondaryIndexMap((combo) => {
+const secondaryIndexMap1 = new SecondaryIndexMap.SecondaryIndexMap((combo) => {
   const items = [, , ];
   ({ messageId: arr[0], channelId: arr[1] } = combo);
   items[2] = combo.combo.userId;
   return items;
 }, (channelId) => "" + channelId.channelId + "-" + channelId.combo.userId + "-" + channelId.messageId);
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class PoggermodeStore extends Store {
+  initialize() {
+    this.waitFor(AuthenticationStore, PoggermodeSettingsStore, SelectedChannelStore);
+  }
+  getComboScore(arg0, arg1) {
+    const value = secondaryIndexMap.get("" + arg0 + "-" + arg1);
+    let num = 0;
+    if (null != value) {
+      const obj = PoggermodeUtils;
+      num = obj.getComboScore(value);
+    }
+    return num;
+  }
+  getUserCombo(id, channelId) {
+    return secondaryIndexMap.get("" + id + "-" + channelId);
+  }
+  isComboing(id, channelId) {
+    const iter = this.getUserCombo(id, channelId);
+    let tmp = null != iter && iter.value >= PoggermodeSettingsStore.combosRequiredCount;
+    if (tmp) {
+      let tmp3 = null != iter;
+      if (tmp3) {
+        let tmp4 = iter.value > 0;
+        if (!tmp4) {
+          let multiplier;
+          if (iter != null) {
+            multiplier = iter.multiplier;
+          }
+          tmp4 = multiplier > 1;
+        }
+        tmp3 = tmp4;
+      }
+      tmp = tmp3;
+    }
+    return tmp;
+  }
+  getMessageCombo(arg0) {
+    const value = secondaryIndexMap1.get(arg0);
+    let combo;
+    if (value != null) {
+      combo = value.combo;
+    }
+    return combo;
+  }
+  getMostRecentMessageCombo(arg0) {
+    const values = secondaryIndexMap1.values(arg0);
+    return values[values.length - 1];
+  }
+  getUserComboShakeIntensity(id, channelId, arg2, LEVEL_4) {
+    const userCombo = this.getUserCombo(id, channelId);
+    let num = 0;
+    if (null != userCombo) {
+      const obj = PoggermodeUtils;
+      num = obj.getComboShakeIntensity(userCombo, LEVEL_4) * arg2;
+    }
+    return num;
+  }
 }
 const prototype = PoggermodeStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(AuthenticationStore, PoggermodeSettingsStore, SelectedChannelStore);
-};
-prototype["getComboScore"] = function getComboScore(arg0, arg1) {
-  value = secondaryIndexMap.get("" + arg0 + "-" + arg1);
-  let num = 0;
-  if (null != value) {
-    num = PoggermodeUtils.getComboScore(value);
-  }
-  return num;
-};
-prototype["getUserCombo"] = function getUserCombo(id, channelId) {
-  return secondaryIndexMap.get("" + id + "-" + channelId);
-};
-prototype["isComboing"] = function isComboing(id, channelId) {
-  const iter = this.getUserCombo(id, channelId);
-  let tmp = null != iter;
-  if (tmp) {
-    tmp = iter.value >= PoggermodeSettingsStore.combosRequiredCount;
-  }
-  if (tmp) {
-    let tmp3 = null != iter;
-    if (tmp3) {
-      let tmp4 = iter.value > 0;
-      if (!tmp4) {
-        let multiplier;
-        if (iter != null) {
-          multiplier = iter.multiplier;
-        }
-        tmp4 = multiplier > 1;
-      }
-      tmp3 = tmp4;
-    }
-    tmp = tmp3;
-  }
-  return tmp;
-};
-prototype["getMessageCombo"] = function getMessageCombo(arg0) {
-  value = secondaryIndexMap1.get(arg0);
-  let combo;
-  if (value != null) {
-    combo = value.combo;
-  }
-  return combo;
-};
-prototype["getMostRecentMessageCombo"] = function getMostRecentMessageCombo(arg0) {
-  const values = secondaryIndexMap1.values(arg0);
-  return values[values.length - 1];
-};
-prototype["getUserComboShakeIntensity"] = function getUserComboShakeIntensity(id, channelId, arg2, LEVEL_4) {
-  const userCombo = this.getUserCombo(id, channelId);
-  let num = 0;
-  if (null != userCombo) {
-    num = PoggermodeUtils.getComboShakeIntensity(userCombo, LEVEL_4) * arg2;
-  }
-  return num;
-};
 PoggermodeStore.displayName = "PoggermodeStore";
-const poggermodeStore = new PoggermodeStore(DispatcherDefault, {
+let obj = {
   POGGERMODE_UPDATE_COMBO: function handleComboing(arg0) {
     const merged = Object.assign(arg0, Object.assign({ type: 0 }));
     if (PoggermodeSettingsStore.isEnabled()) {
@@ -181,8 +187,12 @@ const poggermodeStore = new PoggermodeStore(DispatcherDefault, {
     }
   },
   MESSAGE_CREATE: function handleIncomingMessage(message) {
+    let author;
+    let mentions;
+    let nonce;
     ({ mentions, author, nonce } = message.message);
     let id;
+    const channelId = message.channelId;
     if (PoggermodeSettingsStore.isEnabled()) {
       id = AuthenticationStore.getId();
       let id1;
@@ -193,13 +203,14 @@ const poggermodeStore = new PoggermodeStore(DispatcherDefault, {
       if (tmp6) {
         let flag2 = null != nonce && !obj.has(nonce);
         if (flag2) {
-          obj.add(nonce);
+          set.add(nonce);
           flag2 = true;
         }
         tmp6 = flag2;
       }
       if (tmp6) {
         let str;
+        const get = secondaryIndexMap.get;
         if (author != null) {
           str = author.id;
         }
@@ -207,17 +218,19 @@ const poggermodeStore = new PoggermodeStore(DispatcherDefault, {
           str = "???";
         }
         const _HermesInternal = HermesInternal;
-        value = secondaryIndexMap.get("" + str + "-" + message.channelId);
-        if (tmp.screenshakeEnabled) {
-          if (tmp.screenshakeEnabledLocations[constants.MENTION]) {
+        const value = get("" + str + "-" + channelId);
+        if (PoggermodeSettingsStore.screenshakeEnabled) {
+          if (PoggermodeSettingsStore.screenshakeEnabledLocations[metroRequire.MENTION]) {
             if (null != mentions) {
               if (null != mentions.find((id) => id.id === id)) {
+                let result;
                 if (null != value) {
-                  let num2 = PoggermodeUtils.getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
+                  const obj2 = PoggermodeUtils;
+                  let num2 = obj2.getComboShakeIntensity(value, hasOwnProperty.LEVEL_4);
                   if (num2 == null) {
                     num2 = 0.001;
                   }
-                  let result = num2;
+                  result = num2;
                 } else {
                   const _Math = Math;
                   result = 4 * Math.random();
@@ -238,8 +251,8 @@ const poggermodeStore = new PoggermodeStore(DispatcherDefault, {
       return false;
     }
   }
-});
-const size = fn(2);
+};
+const poggermodeStore = new PoggermodeStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/poggermode/PoggermodeStore.tsx");
 
 export default poggermodeStore;

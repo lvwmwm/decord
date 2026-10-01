@@ -5,174 +5,218 @@
 // Exports: default
 
 // Module 15308 (DevToolsTogglesScreen)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
+import DevSettingsStore2 from "DevSettingsStore" /* 4835 */;
 import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import DesignTogglesStore from "DesignTogglesStore" /* 5939 */;
-import DevSettingsStore from "DevSettingsStore" /* 4835 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+const DevSettingsStore = DevSettingsStore2;
+
+let c10;
+let c9;
+let obj2;
+let obj3;
 function fuzzySearchToggle(str, str2, str3) {
   let tmp = 0 === str.length;
   if (!tmp) {
+    const tmp5 = fuzzysearchDefault;
     const formatted = str.toLowerCase();
-    let tmp3ResultResult = fuzzysearchDefault(formatted, str2.toLowerCase());
+    let tmp3ResultResult = tmp5(formatted, str2.toLowerCase());
+    const tmp3 = importDefault;
     if (!tmp3ResultResult) {
-      const formatted1 = str.toLowerCase();
-      tmp3ResultResult = tmp3(5829)(formatted1, str3.toLowerCase());
       const tmp3Result = tmp3(5829);
+      const formatted1 = str.toLowerCase();
+      tmp3ResultResult = tmp3Result(formatted1, str3.toLowerCase());
     }
     tmp = tmp3ResultResult;
-    tmp3 = importDefault;
   }
   return tmp;
 }
 function ToggleTableRow(toggleName) {
+  let onValueChange;
+  let value;
   toggleName = toggleName.toggleName;
   const description = toggleName.description;
   ({ value, onValueChange } = toggleName);
-  return closure_9(toggleName(5917).TableRow, {
+  let obj = {
     label: description,
     labelLineClamp: 1,
     subLabel: toggleName,
     subLabelLineClamp: 1,
     onPress() {
-      ToastActionCreatorsDefault.open({ content: description, key: toggleName });
+      const obj = ToastActionCreatorsDefault;
+      const obj2 = { content: description, key: toggleName };
+      obj.open(obj2);
     },
     trailing: closure_9(toggleName(6622).FormSwitch, { value, onValueChange })
-  }, toggleName);
+  };
+  const TableRow = toggleName(5917).TableRow;
+  return closure_9(TableRow, obj, toggleName);
 }
 function DevTogglesForCategory(title) {
+  let category;
+  let query;
   ({ category, query } = title);
+  title = title.title;
+  const tmp = category;
+  const tmp2 = dependencyMap;
+  let obj = category(504);
   const items = [DevSettingsStore];
   const items1 = [query, category];
-  const stateFromStores = category(504).useStateFromStores(items, () => DevSettingsStore.allByCategory(category).filter((item) => {
-    [tmp, , ] = item;
-    return fuzzySearchToggle(query, tmp, tmp2);
-  }), items1, category(504).statesWillNeverBeEqual);
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const allByCategoryResult = DevSettingsStore.allByCategory(category);
+    return allByCategoryResult.filter((item) => {
+      let tmp;
+      [tmp, , ] = item;
+      return fuzzySearchToggle(query, tmp, tmp2);
+    });
+  }, items1, category(504).statesWillNeverBeEqual);
   let tmp3 = null;
   if (0 !== stateFromStores.length) {
     const obj2 = {
-      title: title.title,
+      title,
       hasIcons: false,
       children: stateFromStores.map((item) => {
+          let tmp;
+          let tmp2;
           [tmp, tmp2, ] = item;
-          return closure_9(closure_13, {
+          let obj = {
             toggleName: tmp,
             description: tmp3,
             value: tmp2,
             onValueChange(arg0) {
-              return category(dependencyMap[14]).toggle(closure_1_0, arg0);
+              const obj = category(dependencyMap[14]);
+              return obj.toggle(closure_1_0, arg0);
             }
-          }, tmp);
+          };
+          return closure_9(closure_13, obj, tmp);
         })
     };
-    tmp3 = closure_9(category(5999).TableRowGroup, obj2);
+    const TableRowGroup = tmp(5999).TableRowGroup;
+    tmp3 = closure_9(TableRowGroup, obj2);
   }
   return tmp3;
 }
-const ScrollView = fn(17).ScrollView;
-const CATEGORY_LABELS = fn(4835).CATEGORY_LABELS;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 }, container: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 };
-obj2.container = { paddingVertical: nativeDefault.space.PX_16 };
-let closure_12 = createStyles.createStyles(obj2);
-const size = fn(2);
+const ScrollView = react_native.ScrollView;
+const CATEGORY_LABELS = DevSettingsStore2.CATEGORY_LABELS;
+({ jsx: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { wrap: obj2, container: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { paddingVertical: nativeDefault.space.PX_16 };
+let closure_12 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsTogglesScreen.tsx");
 
 export default function DevToolsTogglesScreen() {
+  let Stack;
+  let items2;
+  let items3;
+  let obj9;
+  let query;
+  let tmp10;
+  let tmp5;
   let tmp = closure_12();
-  const tmp3 = _slicedToArray(noop.useState(""), 2);
-  const query = tmp3[0];
-  const manaTextMigrationHighlightRestartNotice = query(13986).useManaTextMigrationHighlightRestartNotice();
+  let tmp2 = dependencyMap;
+  const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;
+  [query, tmp5] = react.useState("");
   let obj = query(13986);
-  const tmp5 = query;
+  const manaTextMigrationHighlightRestartNotice = obj.useManaTextMigrationHighlightRestartNotice();
+  let obj2 = query(504);
   const items = [DesignTogglesStore];
   const items1 = [query];
-  const stateFromStores = query(504).useStateFromStores(items, () => DesignTogglesStore.allWithDescriptions().filter((item) => {
-    [str, , str2] = item;
-    let tmp = 0 === length.length;
-    if (!tmp) {
-      const formatted = str3.toLowerCase();
-      let tmp2ResultResult = fuzzysearchDefault(formatted, str.toLowerCase());
-      if (!tmp2ResultResult) {
-        const formatted1 = str3.toLowerCase();
-        tmp2ResultResult = tmp2(5829)(formatted1, str2.toLowerCase());
-        const tmp2Result = tmp2(5829);
+  const stateFromStores = obj2.useStateFromStores(items, () => {
+    let length;
+    const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+    return allWithDescriptionsResult.filter((item) => {
+      let str;
+      let str2;
+      [str, , str2] = item;
+      let tmp = 0 === length.length;
+      if (!tmp) {
+        const tmp4 = fuzzysearchDefault;
+        const formatted = str3.toLowerCase();
+        let tmp2ResultResult = tmp4(formatted, str.toLowerCase());
+        const tmp2 = importDefault;
+        const tmp3 = dependencyMap;
+        if (!tmp2ResultResult) {
+          const tmp2Result = tmp2(tmp3[6]);
+          const formatted1 = str3.toLowerCase();
+          tmp2ResultResult = tmp2Result(formatted1, str2.toLowerCase());
+        }
+        tmp = tmp2ResultResult;
       }
-      tmp = tmp2ResultResult;
-      tmp2 = importDefault;
-    }
-    return tmp;
-  }), items1, query(504).statesWillNeverBeEqual);
-  const obj3 = { style: tmp.wrap, contentContainerStyle: null, children: null };
-  const items2 = [tmp.container, ];
-  const obj2 = query(504);
-  items2[1] = { paddingBottom: nativeDefault.space.PX_16 + useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets.bottom };
-  obj3.contentContainerStyle = items2;
-  const obj5 = { title: "Actions", hasIcons: false, children: null };
-  const items3 = [
-    closure_9(query(5917).TableRow, {
-      label: "Clear All",
-      variant: "danger",
-      onPress() {
-        first(15309).clearAll();
-        const obj = first(15309);
-        first(15292).clearAll();
-      },
-      arrow: true
-    }),
-
-  ];
-  const obj4 = { paddingBottom: nativeDefault.space.PX_16 + useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets.bottom };
+      return tmp;
+    });
+  }, items1, query(504).statesWillNeverBeEqual);
+  const obj3 = { style: tmp.wrap, contentContainerStyle: items2, children: tmp10(Stack, obj9) };
+  items2 = [tmp.container, { paddingBottom: nativeDefault.space.PX_16 + insets.bottom }];
+  ({ paddingBottom: nativeDefault.space.PX_16 + insets.bottom });
+  Stack = query(5279).Stack;
+  const obj5 = { title: "Actions", hasIcons: false, children: items3 };
+  const TableRowGroup = query(5999).TableRowGroup;
+  items3 = [, ];
   const obj6 = {
     label: "Clear All",
     variant: "danger",
     onPress() {
-      first(15309).clearAll();
-      const obj = first(15309);
-      first(15292).clearAll();
+      const obj = first(dependencyMap[18]);
+      obj.clearAll();
+      const obj2 = first(dependencyMap[14]);
+      obj2.clearAll();
     },
     arrow: true
   };
-  const tmp8 = ScrollView;
-  const tmp9 = closure_10;
-  items3[1] = closure_9(query(5917).TableRow, { label: closure_9(query(6471).SearchField, { size: "md", placeholder: "Search design toggles", onChange: tmp3[1] }) });
-  obj5.children = items3;
-  const items4 = [closure_10(query(5999).TableRowGroup, obj5), , ];
-  let tmp7Result = null;
+  items3[0] = closure_9(query(5917).TableRow, obj6);
+  const obj7 = { label: closure_9(query(6471).SearchField, { size: "md", placeholder: "Search design toggles", onChange: tmp5 }) };
+  const TableRow = query(5917).TableRow;
+  items3[1] = closure_9(TableRow, obj7);
+  const items4 = [closure_10(TableRowGroup, obj5), , ];
+  let tmp8Result = null;
+  tmp10 = closure_10;
+  const tmp6 = query;
+  const tmp9 = ScrollView;
   if (stateFromStores.length > 0) {
     const obj8 = {
       title: "Design Toggles",
       hasIcons: false,
       children: stateFromStores.map((item) => {
+          let tmp;
+          let tmp2;
+          let tmp3;
           [tmp, tmp2, tmp3] = item;
-          return closure_9(closure_13, {
+          let obj = {
             toggleName: tmp,
             description: tmp3,
             value: tmp2,
             onValueChange(arg0) {
-              return first(15309).toggle(query, arg0);
+              const obj = first(dependencyMap[18]);
+              return obj.toggle(query, arg0);
             }
-          }, tmp);
+          };
+          return closure_9(closure_13, obj, tmp);
         })
     };
-    tmp7Result = tmp7(tmp5(5999).TableRowGroup, obj8);
+    const TableRowGroup2 = tmp6(5999).TableRowGroup;
+    tmp8Result = tmp8(TableRowGroup2, obj8);
   }
-  const obj9 = { spacing: 16, children: null };
-  items4[1] = tmp7Result;
+  obj9 = { spacing: 16, children: items4 };
+  items4[1] = tmp8Result;
   const entries = Object.entries(CATEGORY_LABELS);
   items4[2] = entries.map((item) => {
+    let tmp;
+    let tmp2;
     [tmp, tmp2] = item;
-    return React7(DevTogglesForCategory, { category: parseInt(tmp), title: tmp2, query }, tmp);
+    const obj = { category: parseInt(tmp), title: tmp2, query };
+    return React4(DevTogglesForCategory, obj, tmp);
   });
-  obj9.children = items4;
-  obj3.children = tmp9(query(5279).Stack, obj9);
-  return closure_9(tmp8, obj3);
+  return closure_9(tmp9, obj3);
 };

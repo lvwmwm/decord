@@ -5,56 +5,74 @@
 // Exports: default
 
 // Module 12051 (GuildPowerupsNotificationContainer)
-import _mod17 from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import _modDef2519 from "module_2519" /* 2519 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6401 */;
 import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12052 */;
 import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12053 */;
-import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
-function Tier3OverrideNotice(children) {
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let obj3;
+function Tier3OverrideNotice(text) {
+  let Text;
+  let str;
+  text = text.text;
   const tmp = closure_6();
-  const obj2 = { style: tmp.staffContainer, children: null };
-  const manaTypeConsolidationExperiment = ManaTypeConsolidationExperiment.useManaTypeConsolidationExperiment("Tier3OverrideNotice");
-  let str = "text-sm/medium";
+  const obj2 = { style: tmp.staffContainer, children: React3(Text, { variant: str, children: text }) };
+  const obj = ManaTypeConsolidationExperiment;
+  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("Tier3OverrideNotice");
+  str = "text-sm/medium";
+  Text = Text_Text.Text;
+  const tmp4 = View;
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-sm/normal";
   }
-  obj2.children = React4(Text_Text.Text, { variant: str, children: children.text });
-  return React4(View, obj2);
+  return React3(tmp4, obj2);
 }
-const View = _mod17.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const obj = { container: { gap: nativeDefault.space.PX_12, margin: nativeDefault.space.PX_16 }, staffContainer: null };
-let obj2 = { gap: nativeDefault.space.PX_12, margin: nativeDefault.space.PX_16 };
-obj.staffContainer = { padding: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_SUBTLE };
-let closure_6 = createStyles.createStyles(obj);
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, staffContainer: obj3 };
+obj2 = { gap: nativeDefault.space.PX_12, margin: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_SUBTLE };
+let closure_6 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsNotificationContainer.tsx");
 
 export default function GuildPowerupsNotificationContainer(guildId) {
+  let intl;
+  let items;
+  let str2;
+  let tmp9Result;
   guildId = guildId.guildId;
+  const tmp = closure_6();
   const tmp4 = useGuildPowerupTier3OverrideConfigDefault(guildId);
   const tmp5 = useGuildPowerupExpiringNotificationsConfigDefault(guildId);
-  const tmp = closure_6();
-  const manaTypeConsolidationExperiment = ManaTypeConsolidationExperiment.useManaTypeConsolidationExperiment("GuildPowerupsNotificationContainer");
+  const obj = ManaTypeConsolidationExperiment;
+  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsNotificationContainer");
   if (tmp4.shouldShow) {
-    const obj2 = { style: tmp.container, children: null };
     let str = "text-subtle";
+    const obj2 = { style: tmp.container, children: items };
+    const Text = tmp6(4832).Text;
+    const tmp10 = View;
+    const tmp9 = hasOwnProperty;
     if (manaTypeConsolidationExperiment) {
       str = "text-strong";
     }
-    const obj3 = { color: str, variant: null, children: null };
-    let str2 = "eyebrow";
+    const obj3 = { color: str, variant: str2, children: intl.string(_modDef2519["3FRirU"]) };
+    str2 = "eyebrow";
     if (manaTypeConsolidationExperiment) {
       str2 = "experimental/heading-lg/semibold";
     }
-    obj3.variant = str2;
-    const intl = tmp6(1115).intl;
-    obj3.children = intl.string(tmp2(2519)["3FRirU"]);
-    const items = [React4(tmp6(4832).Text, obj3), , ];
+    intl = tmp6(1115).intl;
+    items = [React3(Text, obj3), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
       const obj4 = { text: tmp4.text };
@@ -68,8 +86,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
       shouldShow2 = tmp11(tmp2(12056), obj9);
     }
     items[2] = shouldShow2;
-    obj2.children = items;
-    let tmp9Result = hasOwnProperty(View, obj2);
+    tmp9Result = tmp9(tmp10, obj2);
   } else {
     tmp9Result = null;
   }

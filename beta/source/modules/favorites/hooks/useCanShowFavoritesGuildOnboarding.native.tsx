@@ -5,22 +5,26 @@
 // Exports: default
 
 // Module 9702 (useCanShowFavoritesGuildOnboarding)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
 import ActionSheetStore from "ActionSheetStore" /* 4521 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/favorites/hooks/useCanShowFavoritesGuildOnboarding.native.tsx");
 
 export default function useCanShowFavoritesGuildOnboarding() {
+  let open;
+  let voiceChannelId;
   const items = [SelectedChannelStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => null != voiceChannelId.getVoiceChannelId());
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => null != voiceChannelId.getVoiceChannelId());
   const items1 = [ActionSheetStore];
-  const stateFromStores1 = initialize.useStateFromStores(items1, () => open.isOpen());
+  const obj2 = get_initialized;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => open.isOpen());
   let tmp4 = !stateFromStores;
-  const isModalOpen = NavigationRouteUtils.useIsModalOpen();
+  const obj3 = NavigationRouteUtils;
+  const isModalOpen = obj3.useIsModalOpen();
   if (!stateFromStores) {
     tmp4 = !stateFromStores1;
   }

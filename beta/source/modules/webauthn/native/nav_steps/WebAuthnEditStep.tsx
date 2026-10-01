@@ -8,93 +8,106 @@
 import nativeDefault from "native" /* 576 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6014 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { inputField: { marginBottom: nativeDefault.space.PX_16 }, form: null };
-let obj3 = { marginBottom: nativeDefault.space.PX_16 };
-obj2.form = { paddingHorizontal: nativeDefault.space.PX_16 };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let dependencyMap, navigation;
+
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let react = react_mod;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { inputField: obj2, form: obj3 };
+obj2 = { marginBottom: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
+let closure_7 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnEditStep.tsx");
 
 export default function EditCredentialModal(credential) {
+  let _undefined;
+  let c2;
+  let closure_4;
+  let intl;
+  let intl2;
+  let items1;
+  let tmp15;
+  let tmp6;
   credential = credential.credential;
   dependencyMap = undefined;
-  value = undefined;
-  noop = undefined;
-  const tmp = closure_7();
-  const navigation = credential(1485).useNavigation();
+  let value;
+  react = undefined;
+  let tmp = closure_7();
   let obj = credential(1485);
-  [tmp6, c2] = value(noop.useState(false), 2);
-  const tmp7 = value(noop.useState(""), 2);
+  navigation = obj.useNavigation();
+  [tmp6, c2] = value(react.useState(false), 2);
+  value(react.useState(false), 2);
+  const tmp7 = value(react.useState(""), 2);
   value = tmp7[0];
-  const tmp9 = value(noop.useState(null), 2);
-  noop = tmp9[1];
+  const tmp9 = tmp7[1];
+  const tmp10 = value(react.useState(null), 2);
+  react = tmp10[1];
   const items = [navigation];
-  const layoutEffect = noop.useLayoutEffect(() => {
+  const first1 = tmp10[0];
+  const layoutEffect = react.useLayoutEffect(() => {
+    let obj2;
+    const setOptions = navigation.setOptions;
     const obj = {
-      headerLeft: NavigatorHeader.getHeaderBackButton(() => {
+      headerLeft: obj2.getHeaderBackButton(() => {
         navigation.pop();
       })
     };
-    navigation.setOptions(obj);
+    obj2 = NavigatorHeader;
+    setOptions(obj);
   }, items);
-  let obj2 = { style: tmp.form, children: null };
-  const obj3 = { showTopContainer: false, value, onChange: tmp7[1], style: tmp.inputField, error: tmp9[0], title: null, placeholder: null, disabled: null, clearButtonVisibility: null, autoFocus: true, showBorder: true, required: true, large: true };
-  let intl = credential(1115).intl;
-  obj3.title = intl.string(credential(1115).t["Jzd+z/"]);
-  obj3.placeholder = credential.name;
-  obj3.disabled = tmp6;
-  obj3.clearButtonVisibility = credential(1177).ClearButtonVisibility.WITH_CONTENT;
-  const items1 = [closure_5(credential(8053).FormInput, obj3), closure_5(credential(8053).FormDivider, {}), ];
+  let obj2 = { style: tmp.form, children: items1 };
+  const Form = credential(8053).Form;
+  const obj3 = { showTopContainer: false, value, onChange: tmp9, style: tmp.inputField, error: first1, title: intl.string(credential(1115).t["Jzd+z/"]), placeholder: credential.name, disabled: tmp6, clearButtonVisibility: credential(1177).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
+  const FormInput = credential(8053).FormInput;
+  intl = credential(1115).intl;
+  items1 = [closure_5(FormInput, obj3), closure_5(credential(8053).FormDivider, {}), ];
   const obj4 = {
     onPress() {
-      _undefined(true);
+      const tmp = _undefined(true);
       closure_4(null);
-      const result = WebAuthnActionCreators.editWebAuthnCredential(credential.id, first);
+      let obj = WebAuthnActionCreators;
+      const result = obj.editWebAuthnCredential(credential.id, first);
       const nextPromise = result.then(() => {
-        const obj2 = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
-        const intl = credential(1115).intl;
-        obj2.content = intl.string(credential(1115).t.IV13mH);
-        obj2.icon = navigation(10115);
-        obj2.IconComponent = credential(4792).CircleCheckIcon;
-        navigation(4528).open(obj2);
+        let intl;
+        const obj = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY", content: intl.string(credential(c2[8]).t.IV13mH), icon: navigation(c2[13]), IconComponent: credential(c2[14]).CircleCheckIcon, iconColor: "status-positive" };
+        const open = navigation(c2[12]).open;
+        navigation(c2[12]);
+        intl = credential(c2[8]).intl;
+        open(obj);
         closure_1_1.popToTop();
       });
-      result.then(() => {
-        const obj2 = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
-        const intl = credential(1115).intl;
-        obj2.content = intl.string(credential(1115).t.IV13mH);
-        obj2.icon = navigation(10115);
-        obj2.IconComponent = credential(4792).CircleCheckIcon;
-        navigation(4528).open(obj2);
-        closure_1_1.popToTop();
-      }).catch((error) => {
+      const catchPromise = nextPromise.catch((error) => {
         closure_1_4(error.body.message);
-      }).finally(() => {
-        dependencyMap(false);
+      });
+      catchPromise.finally(() => {
+        _undefined(false);
       });
     },
-    disabled: null,
-    loading: null,
+    disabled: tmp15,
+    loading: tmp6,
     size: "lg",
-    text: null,
+    text: intl2.string(credential(1115).t["7asiR3"]),
     grow: true
   };
-  let tmp13 = tmp6;
+  tmp15 = tmp6;
+  const Button = credential(5281).Button;
+  const tmp13 = closure_6;
+  const tmp14 = closure_5;
   if (!tmp6) {
-    tmp13 = "" === value;
+    tmp15 = "" === value;
   }
-  obj4.disabled = tmp13;
-  obj4.loading = tmp6;
-  const intl2 = tmp2(1115).intl;
-  obj4.text = intl2.string(credential(1115).t["7asiR3"]);
-  items1[2] = closure_5(credential(5281).Button, obj4);
-  obj2.children = items1;
-  return closure_6(credential(8053).Form, obj2);
+  intl2 = tmp2(1115).intl;
+  items1[2] = tmp14(Button, obj4);
+  return tmp13(Form, obj2);
 };

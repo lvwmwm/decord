@@ -6,11 +6,11 @@
 
 // Module 12640 (VibegrationsCustomWidget)
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsCustomWidget.tsx");
 
 export const VIBEGRATIONS_CUSTOM_WIDGET_PROMPT_MAX_LENGTH = 2000;
@@ -20,18 +20,24 @@ export const useCanConjureVibegrationsCustomWidget = function useCanConjureVibeg
   if (isMobileGameCollectionExperimentEnabled === undefined) {
     flag = true;
   }
-  const items = [GuildStore, require("ApexExperiment").ApexExperimentStore];
+  const items = [GuildStore, ];
+  const useStateFromStores = require("get initialized").useStateFromStores;
+  require("get initialized");
+  items[1] = require("ApexExperiment").ApexExperimentStore;
   const items1 = [UserProfileContent, flag];
-  return require("initialize").useStateFromStores(items, () => {
+  return useStateFromStores(items, () => {
     let someResult = flag;
-    if (flag) {
+    if (someResult) {
       const guildsArray = GuildStore.getGuildsArray();
-      someResult = guildsArray.some((item) => closure_0(flag[3]).isVibegrationsGuildEligible(item, UserProfileContent));
+      someResult = guildsArray.some((item) => {
+        const obj = closure_0(flag[3]);
+        return obj.isVibegrationsGuildEligible(item, closure_1_0);
+      });
     }
     return someResult;
   }, items1);
 };
-export const composeVibegrationsCustomWidgetPrompt = function composeVibegrationsCustomWidgetPrompt(arg0) {
-  const items = ["Build a profile card (an application profile widget) for my Discord profile.", "Read the data from the public source below \u2014 it must be reachable without a login.", "Recommend which fields the card should show and ask me to confirm or edit them before you build.", "", arg0];
+export const composeVibegrationsCustomWidgetPrompt = function composeVibegrationsCustomWidgetPrompt(trimmed) {
+  const items = ["Build a profile card (an application profile widget) for my Discord profile.", "Read the data from the public source below \u2014 it must be reachable without a login.", "Recommend which fields the card should show and ask me to confirm or edit them before you build.", "", trimmed];
   return items.join("\n");
 };

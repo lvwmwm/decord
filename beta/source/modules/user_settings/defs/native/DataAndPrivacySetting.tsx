@@ -4,35 +4,42 @@
 // Dependencies: [19, 1074, 14391, 14394, 11006, 1115, 9238, 15482, 2]
 
 // Module 15481 (DataAndPrivacySetting)
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 9238 */;
 import ConsentActionCreators from "ConsentActionCreators" /* 14391 */;
 import RequestYourDataSetting from "RequestYourDataSetting" /* 14394 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.OAuOHD);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.OAuOHD);
   },
   parent: null,
-  IconComponent: fn(9238).ShieldLockIcon,
+  IconComponent: ShieldLockIcon.ShieldLockIcon,
   screen: {
-    route: fn(1074).UserSettingsSections.DATA_AND_PRIVACY,
+    route: UserSettingsSections.DATA_AND_PRIVACY,
     getComponent() {
       return require("DataAndPrivacyScreen").default;
     }
   },
   usePreNavigationAction() {
-    return noop.useCallback(() => {
-      const consents = ConsentActionCreators.fetchConsents();
-      const harvestStatus = RequestYourDataSetting.fetchHarvestStatus();
+    return react.useCallback(() => {
+      const obj = ConsentActionCreators;
+      const consents = obj.fetchConsents();
+      const obj2 = RequestYourDataSetting;
+      const harvestStatus = obj2.fetchHarvestStatus();
       return true;
     }, []);
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DataAndPrivacySetting.tsx");
 
 export default route;

@@ -5,22 +5,25 @@
 // Exports: default
 
 // Module 10216 (usePremiumProductPricingString)
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import IAPStore from "IAPStore" /* 6658 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const PRICE_PLACEHOLDER = fn(1374).PRICE_PLACEHOLDER;
-const size = fn(2);
+const PRICE_PLACEHOLDER = PremiumConstants.PRICE_PLACEHOLDER;
 const result = size.fileFinishedImporting("modules/premium/native/hooks/usePremiumProductPricingString.tsx");
 
 export default function usePremiumProductPricingString(premiumType, YEAR) {
-  const planIdForPremiumType = require("PremiumUtils").getPlanIdForPremiumType(premiumType, YEAR);
+  let closure_0;
   const obj = require("PremiumUtils");
-  _require = require("ProductIds").getProductIdForGift(planIdForPremiumType);
+  const planIdForPremiumType = obj.getPlanIdForPremiumType(premiumType, YEAR);
   const obj2 = require("ProductIds");
+  _require = obj2.getProductIdForGift(planIdForPremiumType);
   const items = [IAPStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => IAPStore.getProduct(closure_0));
+  const obj3 = require("get initialized");
+  const stateFromStores = obj3.useStateFromStores(items, () => IAPStore.getProduct(closure_0));
   let priceString;
   if (stateFromStores != null) {
     priceString = stateFromStores.priceString;

@@ -5,16 +5,17 @@
 // Exports: PlainTextExperimentProvider, usePlainTextExperimentEnabled
 
 // Module 4841 (PlainTextExperimentContext)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const context = noop.createContext(false);
-const size = fn(2);
+const jsx = Fragment.jsx;
+const context = react.createContext(false);
 const result = size.fileFinishedImporting("design/components/Text/native/PlainTextExperimentContext.tsx");
 
 export const PlainTextExperimentProvider = function PlainTextExperimentProvider(enabled) {
   return <closure_2 value={arg0.enabled}>{arg0.children}</closure_2>;
 };
 export const usePlainTextExperimentEnabled = function usePlainTextExperimentEnabled() {
-  return noop.useContext(closure_2);
+  return react.useContext(closure_2);
 };

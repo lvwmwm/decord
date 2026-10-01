@@ -3,13 +3,14 @@
 // Dependencies: [6179, 6154]
 
 // Module 6178
-const require = globalThis.__r;
+import _mod6154 from "module_6154" /* 6154 */;
+import _mod6179 from "module_6179" /* 6179 */;
 
-for (const key10013 in require("module_6179")) {
-  arg5[key10013] = require("module_6179")[key10013];
+for (const key10013 in _mod6179) {
+  exports[key10013] = _mod6179[key10013];
   continue;
 }
-for (const key10017 in require("transformLongPressProps")) {
-  arg5[key10017] = require("transformLongPressProps")[key10017];
+for (const key10017 in _mod6154) {
+  exports[key10017] = _mod6154[key10017];
   continue;
 }

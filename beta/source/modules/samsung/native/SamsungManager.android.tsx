@@ -1,19 +1,17 @@
 // Module ID: 8518
 // Function ID: 8519
-// Name: SamsungManager
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 8518 (SamsungManager)
-import _mod17 from "module_17" /* 17 */;
+// Module 8518 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = _mod17.NativeModules;
-const result = size.fileFinishedImporting("modules/samsung/native/SamsungManager.android.tsx");
-
-export default {
-  checkIfOAuthRequest(arg0) {
+const NativeModules = react_native.NativeModules;
+const obj = {
+  checkIfOAuthRequest(clientId) {
     const Samsung = NativeModules.Samsung;
-    return Samsung.checkIfOAuthRequest(arg0);
+    return Samsung.checkIfOAuthRequest(clientId);
   },
   showConnectionDisclaimer() {
     const Samsung = NativeModules.Samsung;
@@ -28,3 +26,6 @@ export default {
     return Samsung.finishSamsungAuthorization(arg0, arg1, arg2);
   }
 };
+const result = size.fileFinishedImporting("modules/samsung/native/SamsungManager.android.tsx");
+
+export default obj;

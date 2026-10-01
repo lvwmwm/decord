@@ -6,8 +6,11 @@
 import _mod13792 from "module_13792" /* 13792 */;
 
 
-export default !_mod13792(() => 7 !== Object.defineProperty({}, 1, {
-  get() {
-    return 7;
-  }
-})[1]);
+export default !_mod13792(() => {
+  const obj = {
+    get() {
+      return 7;
+    }
+  };
+  return 7 !== Object.defineProperty({}, 1, obj)[1];
+});

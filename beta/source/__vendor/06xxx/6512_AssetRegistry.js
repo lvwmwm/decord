@@ -1,0 +1,10 @@
+// Module ID: 6512
+// Function ID: 6513
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 6512 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_member_verification/images", width: 88, height: 80, scales: [1, 2, 3], hash: "c8acaccaced63579ec708b5154ef923d", name: "updateAppIcon", type: "png" });

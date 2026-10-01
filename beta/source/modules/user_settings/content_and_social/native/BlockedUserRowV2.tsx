@@ -5,20 +5,49 @@
 // Exports: default
 
 // Module 14340 (BlockedUserRowV2)
+import Fragment from "Fragment" /* 21 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9195 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
 function BlockedUserRow(userRecord) {
+  let Button;
+  let intl;
+  let intl2;
+  let items;
+  let obj4;
+  let tmp4;
+  let tmp6;
   userRecord = userRecord.userRecord;
   let analyticsLocations;
   analyticsLocations = analyticsLocations(6583)().analyticsLocations;
-  const obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
-  const obj2 = { user: userRecord, guildId: "Array", size: userRecord(1177).AvatarSizes.REFRESH_MEDIUM_32 };
-  obj.icon = jsx(userRecord(1177).Avatar, { user: userRecord, guildId: "Array", size: userRecord(1177).AvatarSizes.REFRESH_MEDIUM_32 });
-  let tmp4 = null != userRecord;
+  let obj = {
+    icon: null,
+    label: tmp4,
+    subLabel: tmp6,
+    labelLineClamp: 1,
+    subLabelLineClamp: 1,
+    accessibilityRole: "button",
+    accessibilityActions: items,
+    onAccessibilityAction(nativeEvent) {
+      if ("unblock" === nativeEvent.nativeEvent.actionName) {
+        const id = userRecord.id;
+        const obj = RelationshipActionCreatorsDefault;
+        obj.unblockUser(id, { location: "blocked-users-list-mobile-v2" });
+      }
+    },
+    onPress() {
+      const obj = { userId: userRecord.id, sourceAnalyticsLocations: analyticsLocations };
+      return showUserProfileActionSheetDefault(obj);
+    },
+    trailing: tmp2(Button, obj4)
+  };
+  const TableRow = userRecord(5917).TableRow;
+  ({ user: userRecord, guildId: "Array", size: userRecord(1177).AvatarSizes.REFRESH_MEDIUM_32 });
+  const Avatar = userRecord(1177).Avatar;
+  tmp4 = null != userRecord;
   if (tmp4) {
     let username = userRecord.globalName;
     if (username == null) {
@@ -26,12 +55,11 @@ function BlockedUserRow(userRecord) {
     }
     tmp4 = username;
   }
-  obj.label = tmp4;
   let globalName;
   if (userRecord != null) {
     globalName = userRecord.globalName;
   }
-  let tmp6;
+  tmp6 = undefined;
   if (null != globalName) {
     let username1;
     if (userRecord != null) {
@@ -39,40 +67,33 @@ function BlockedUserRow(userRecord) {
     }
     tmp6 = username1;
   }
-  obj.subLabel = tmp6;
-  const obj3 = { name: "unblock", label: null };
-  const intl = tmp3(1115).intl;
-  obj3.label = intl.string(userRecord(1115).t.XyHpKH);
-  const items = [obj3];
-  obj.accessibilityActions = items;
-  obj.onAccessibilityAction = function onAccessibilityAction(nativeEvent) {
-    if ("unblock" === nativeEvent.nativeEvent.actionName) {
-      RelationshipActionCreatorsDefault.unblockUser(userRecord.id, { location: "blocked-users-list-mobile-v2" });
+  const obj3 = { name: "unblock", label: intl.string(userRecord(1115).t.XyHpKH) };
+  intl = tmp3(1115).intl;
+  items = [obj3];
+  obj4 = {
+    size: "sm",
+    variant: "secondary",
+    text: intl2.string(userRecord(1115).t["PR/xUz"]),
+    onPress() {
+      const id = userRecord.id;
+      const obj = RelationshipActionCreatorsDefault;
+      obj.unblockUser(id, { location: "blocked-users-list-mobile-v2" });
     }
   };
-  obj.onPress = function onPress() {
-    return showUserProfileActionSheetDefault({ userId: userRecord.id, sourceAnalyticsLocations: analyticsLocations });
-  };
-  const obj4 = { size: "sm", variant: "secondary", text: null, onPress: null };
-  const intl2 = tmp3(1115).intl;
-  obj4.text = intl2.string(userRecord(1115).t["PR/xUz"]);
-  obj4.onPress = function onPress() {
-    RelationshipActionCreatorsDefault.unblockUser(userRecord.id, { location: "blocked-users-list-mobile-v2" });
-  };
-  obj.trailing = jsx(userRecord(5281).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
-  return jsx(userRecord(5917).TableRow, { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null });
+  Button = tmp3(5281).Button;
+  intl2 = tmp3(1115).intl;
+  return jsx(TableRow, obj);
 }
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");
 
 export default function ConnectedBlockedUserRow(userId) {
   userId = userId.userId;
   const items = [UserStore];
-  const stateFromStores = userId(504).useStateFromStores(items, () => UserStore.getUser(userId));
+  const obj = userId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(userId));
   let tmp2 = null;
   if (null != stateFromStores) {
-    const obj2 = { userRecord: stateFromStores };
     tmp2 = <BlockedUserRow userRecord={stateFromStores} />;
   }
   return tmp2;

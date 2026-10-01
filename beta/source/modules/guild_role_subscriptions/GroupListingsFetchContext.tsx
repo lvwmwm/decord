@@ -5,54 +5,64 @@
 // Exports: GroupListingsFetchContextProvider, useGroupListingsFetchContext
 
 // Module 14758 (GroupListingsFetchContext)
+import Fragment from "Fragment" /* 21 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4462 */;
 import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6673 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4462 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const FetchState = fn(4462).FetchState;
-const jsx = fn(21).jsx;
-const redux = noop.createContext(undefined);
-const size = fn(2);
+const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
+
+const FetchState = GuildRoleSubscriptionsStore2.FetchState;
+const jsx = Fragment.jsx;
+const redux = react.createContext(undefined);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GroupListingsFetchContext.tsx");
 
 export const useGroupListingsFetchContext = function useGroupListingsFetchContext(useGroupListingsForGuild) {
-  const context = noop.useContext(closure_9);
+  const context = react.useContext(redux);
+  const obj = react;
   if (null == context) {
     let str = useGroupListingsForGuild;
+    const _Error = Error;
     if (useGroupListingsForGuild == null) {
       str = "useGroupListingsFetchContext";
     }
     const _HermesInternal = HermesInternal;
-    const error = new Error("" + str + " must be used within a GroupListingsFetchContextProvider");
-    throw error;
+    const self = this;
+    const self2 = this;
+    const _Error1 = new _Error("" + str + " must be used within a GroupListingsFetchContextProvider");
+    throw _Error1;
   } else {
     const fetchGroupListingsForGuild = context.fetchGroupListingsForGuild;
     const items = [fetchGroupListingsForGuild];
+    const listingsLoaded = context.listingsLoaded;
     const effect = obj.useEffect(() => {
       fetchGroupListingsForGuild();
     }, items);
-    return context.listingsLoaded;
+    return listingsLoaded;
   }
-  obj = noop;
 };
 export const GroupListingsFetchContextProvider = function GroupListingsFetchContextProvider(guildId) {
+  let children;
+  let refetchOnMount;
   guildId = guildId.guildId;
   const includeSoftDeleted = guildId.includeSoftDeleted;
   const countryCode = guildId.countryCode;
   const dontFetchWhileTrue = guildId.dontFetchWhileTrue;
   let first;
-  closure_6 = undefined;
+  let closure_6;
   ({ children, refetchOnMount } = guildId);
-  const items = [first];
-  const stateFromStores = guildId(countryCode[5]).useStateFromStores(items, () => first.isConnected());
   let obj = guildId(countryCode[5]);
+  const items = [first];
+  const stateFromStores = obj.useStateFromStores(items, () => first.isConnected());
+  let obj2 = guildId(countryCode[5]);
   const items1 = [closure_6];
-  const stateFromStores1 = guildId(countryCode[5]).useStateFromStores(items1, () => {
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    let FETCHED;
     if (null != guildId) {
-      let FETCHED = GuildRoleSubscriptionsStore.getSubscriptionGroupListingsForGuildFetchState(tmp);
+      FETCHED = GuildRoleSubscriptionsStore.getSubscriptionGroupListingsForGuildFetchState(tmp);
     } else {
       FETCHED = FetchState.FETCHED;
     }
@@ -64,17 +74,17 @@ export const GroupListingsFetchContextProvider = function GroupListingsFetchCont
   const items2 = [stateFromStores, guildId, includeSoftDeleted, countryCode, dontFetchWhileTrue, first];
   let tmp6 = stateFromStores1 === FetchState.FETCHED;
   const callback = stateFromStores.useCallback(() => {
+    const tmp = guildId;
     if (null != guildId) {
-      if (stateFromStores) {
+      const tmp14 = stateFromStores;
+      if (tmp14) {
         if (true !== dontFetchWhileTrue) {
-          let tmp5 = first;
-          if (!first) {
-            tmp5 = tmp4 === FetchState.NOT_FETCHED;
-          }
+          const tmp5 = first || tmp4 === FetchState.NOT_FETCHED;
           if (tmp5) {
             closure_6(false);
             const obj2 = { includeSoftDeleted, countryCode };
-            const allSubscriptionListingsDataForGuild = GuildRoleSubscriptionsActionCreatorsAll.fetchAllSubscriptionListingsDataForGuild(guildId, obj2);
+            const obj = GuildRoleSubscriptionsActionCreatorsAll;
+            const allSubscriptionListingsDataForGuild = obj.fetchAllSubscriptionListingsDataForGuild(tmp, obj2);
           }
         }
       }

@@ -5,33 +5,34 @@
 // Exports: default
 
 // Module 12595 (useTrackUserProfileActivityView)
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8254 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const require = fn;
-const noop = fn(19);
-({ useEffect: c3, useState: closure_4 } = noop);
-const size = fn(2);
+let c3;
+let closure_4;
+let _slicedToArray = _slicedToArray_mod;
+({ useEffect: c3, useState: closure_4 } = react);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileActivityView.tsx");
 
 export default function useTrackUserProfileActivityView(arg0) {
+  let closure_2;
+  let onAction;
   ({ userId: require, onAction } = arg0);
   _slicedToArray = undefined;
-  closure_3 = undefined;
   const items = [ContentInventoryOutboxStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => ContentInventoryOutboxStore.isFetchingUserOutbox(require));
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => ContentInventoryOutboxStore.isFetchingUserOutbox(require));
   const tmp2 = _slicedToArray(closure_4(false), 2);
   _slicedToArray = tmp2[1];
-  let tmp3 = !stateFromStores;
-  if (!stateFromStores) {
-    tmp3 = !tmp2[0];
-  }
-  closure_3 = tmp3;
+  let closure_3 = tmp3;
   const items1 = [tmp3, onAction];
   closure_3(() => {
-    if (closure_3) {
+    const tmp = closure_3;
+    if (tmp) {
       onAction({ action: "VIEW_ACTIVITY_CARD" });
       closure_2(true);
     }

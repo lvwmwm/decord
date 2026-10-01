@@ -12,257 +12,316 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 6531 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6534 */;
 import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7184 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 10965 */;
 import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 10966 */;
 import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 10967 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let StyleSheet;
+let c10;
+let c9;
+let closure_12;
+let closure_4;
+let map1;
+let metroImportAll;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let unpackModuleId;
 class OptInChannelBanner {
-  constructor(arg0) {
-    channel = global.channel;
-    tmp = closure_14();
-    items = [];
-    items[0] = channel;
-    effect = closure_3.useEffect(() => {
-      const obj2 = {};
-      const obj = AnalyticsUtilsDefault;
-      const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(channel.getGuildId()));
-      const merged1 = Object.assign(AppAnalyticsUtils.collectChannelAnalyticsMetadata(channel));
-      obj2.banner_type = "channel_opt_in";
-      obj.track(constants3.CHANNEL_BANNER_VIEWED, obj2);
+  constructor(channel) {
+    let Button;
+    let intl;
+    let intl2;
+    let items3;
+    let obj4;
+    channel = channel.channel;
+    const ctaProps = channel.ctaProps;
+    const topBorder = channel.topBorder;
+    const tmp = closure_14();
+    const items = [channel];
+    const effect = react.useEffect(() => {
+      const obj = { banner_type: "channel_opt_in" };
+      const track = AnalyticsUtilsDefault.track;
+      const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
+      AnalyticsUtilsDefault;
+      const obj2 = AppAnalyticsUtils;
+      const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+      const obj3 = AppAnalyticsUtils;
+      const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+      track(CHANNEL_BANNER_VIEWED, obj);
     }, items);
-    items1 = [];
-    items1[0] = channel;
-    tmp5 = View;
-    items2 = [, ];
-    items2[0] = tmp.optInChannelBannerContainer;
-    topBorder = null;
-    callback = closure_3.useCallback(() => {
-      const obj2 = {};
-      const obj = AnalyticsUtilsDefault;
-      const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(channel.getGuildId()));
-      const merged1 = Object.assign(AppAnalyticsUtils.collectChannelAnalyticsMetadata(channel));
-      obj2.banner_type = "channel_opt_in";
-      obj2.cta_type = "add channel";
-      obj.track(constants3.CHANNEL_BANNER_CTA_CLICKED, obj2);
-      OptInChannelsActionCreators.setOptInChannel(channel.guild_id, channel.id, true, { section: constants4.CHANNEL });
+    const items1 = [channel];
+    const items2 = [tmp.optInChannelBannerContainer, ];
+    let topBorder1 = null;
+    const callback = react.useCallback(() => {
+      const obj = { banner_type: "channel_opt_in", cta_type: "add channel" };
+      const track = AnalyticsUtilsDefault.track;
+      const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
+      AnalyticsUtilsDefault;
+      const obj2 = AppAnalyticsUtils;
+      const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+      const obj3 = AppAnalyticsUtils;
+      const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+      track(CHANNEL_BANNER_CTA_CLICKED, obj);
+      const obj4 = OptInChannelsActionCreators;
+      const obj5 = { section: unpackModuleId.CHANNEL };
+      obj4.setOptInChannel(channel.guild_id, channel.id, true, obj5);
     }, items1);
-    tmp4 = jsxs;
-    if (global.topBorder) {
-      topBorder = tmp.topBorder;
+    const tmp4 = closure_13;
+    if (topBorder) {
+      topBorder1 = tmp.topBorder;
     }
-    obj = { style: items2, children: null };
-    items2[1] = topBorder;
-    obj1 = { lineClamp: 2, style: tmp.optInChannelBannerText, variant: "text-sm/semibold", children: null };
-    intl = channel(closure_2[17]).intl;
-    obj1.children = intl.string(channel(closure_2[17]).t.iOWmmB);
-    items3 = [, ];
-    items3[0] = jsx(channel(closure_2[16]).Text, obj1);
-    obj5 = { style: tmp.optInChannelBannerButtonContainer, children: null };
-    obj6 = {};
-    merged = Object.assign(global.ctaProps);
-    obj6.onPress = callback;
-    obj6.size = "sm";
-    intl2 = channel(closure_2[17]).intl;
-    obj6.text = intl2.string(channel(closure_2[17]).t["TD/+zP"]);
-    obj5.children = jsx(channel(closure_2[18]).Button, obj6);
-    items3[1] = jsx(tmp5, obj5);
-    obj.children = items3;
-    return tmp4(tmp5, obj);
+    let obj = { style: items2, children: items3 };
+    items2[1] = topBorder1;
+    let obj2 = { lineClamp: 2, style: tmp.optInChannelBannerText, variant: "text-sm/semibold", children: intl.string(channel(1115).t.iOWmmB) };
+    const Text = channel(4832).Text;
+    intl = channel(1115).intl;
+    items3 = [closure_12(Text, obj2), ];
+    let obj3 = { style: tmp.optInChannelBannerButtonContainer, children: closure_12(Button, obj4) };
+    obj4 = { onPress: callback, size: "sm", text: intl2.string(channel(1115).t["TD/+zP"]) };
+    Button = channel(5281).Button;
+    let merged = Object.assign(ctaProps);
+    intl2 = channel(1115).intl;
+    items3[1] = closure_12(closure_4, obj3);
+    return tmp4(closure_4, obj);
   }
 }
 function ArchivedLockedThreadChatBanner(channel) {
+  let Button;
+  let intl2;
+  let items1;
+  let obj5;
+  let stringResult;
   channel = channel.channel;
   const tmp = closure_14();
   const items = [channel];
-  const effect = noop.useEffect(() => {
-    const obj2 = {};
-    const obj = AnalyticsUtilsDefault;
-    const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(channel.getGuildId()));
-    const merged1 = Object.assign(AppAnalyticsUtils.collectChannelAnalyticsMetadata(channel));
-    obj2.banner_type = "thread";
-    obj.track(constants3.CHANNEL_BANNER_VIEWED, obj2);
+  const effect = react.useEffect(() => {
+    const obj = { banner_type: "thread" };
+    const track = AnalyticsUtilsDefault.track;
+    const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
+    AnalyticsUtilsDefault;
+    const obj2 = AppAnalyticsUtils;
+    const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+    const obj3 = AppAnalyticsUtils;
+    const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+    track(CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let canUnarchiveThread = channel(6687).useCanUnarchiveThread(channel);
-  let obj2 = { style: tmp.threadBannerContainer, children: null };
-  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: null };
   let obj = channel(6687);
-  const tmp6 = closure_13;
+  let canUnarchiveThread = obj.useCanUnarchiveThread(channel);
+  let obj2 = { style: tmp.threadBannerContainer, children: items1 };
+  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: stringResult };
+  const Text = channel(4832).Text;
+  const isForumPostResult = channel.isForumPost();
   const intl = channel(1115).intl;
   const string = intl.string;
   const t = channel(1115).t;
+  const tmp6 = closure_13;
   if (isForumPostResult) {
-    let stringResult = string(t["833FDn"]);
+    stringResult = string(t["833FDn"]);
   } else {
     stringResult = string(t.rEeodK);
   }
-  obj3.children = stringResult;
-  const items1 = [closure_12(channel(4832).Text, obj3), ];
+  items1 = [closure_12(Text, obj3), ];
   if (canUnarchiveThread) {
-    let obj4 = { style: tmp.threadBannerButton, children: null };
-    const obj5 = { variant: "secondary", size: "sm", text: null, onPress: null };
-    const intl2 = tmp3(1115).intl;
-    obj5.text = intl2.string(tmp3(1115).t["0dvvEi"]);
-    obj5.onPress = function onPress() {
-      const obj2 = {};
-      const obj = AnalyticsUtilsDefault;
-      const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(channel.getGuildId()));
-      const merged1 = Object.assign(AppAnalyticsUtils.collectChannelAnalyticsMetadata(channel));
-      obj2.banner_type = "thread";
-      obj2.cta_type = "unarchive";
-      obj.track(constants3.CHANNEL_BANNER_CTA_CLICKED, obj2);
-      ThreadActionCreatorsDefault.unarchiveThread(channel, false);
+    let obj4 = { style: tmp.threadBannerButton, children: closure_12(Button, obj5) };
+    obj5 = {
+      variant: "secondary",
+      size: "sm",
+      text: intl2.string(channel(1115).t["0dvvEi"]),
+      onPress() {
+          const obj = { banner_type: "thread", cta_type: "unarchive" };
+          const track = AnalyticsUtilsDefault.track;
+          const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
+          AnalyticsUtilsDefault;
+          const obj2 = AppAnalyticsUtils;
+          const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+          const obj3 = AppAnalyticsUtils;
+          const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+          track(CHANNEL_BANNER_CTA_CLICKED, obj);
+          const obj4 = ThreadActionCreatorsDefault;
+          obj4.unarchiveThread(channel, false);
+        }
     };
-    obj4.children = tmp8(tmp3(5281).Button, obj5);
+    Button = tmp3(5281).Button;
+    intl2 = tmp3(1115).intl;
     canUnarchiveThread = tmp8(tmp7, obj4);
   }
   items1[1] = canUnarchiveThread;
-  obj2.children = items1;
   return tmp6(closure_4, obj2);
 }
 function LockedThreadChatBanner(channel) {
+  let Button;
+  let intl2;
+  let items1;
+  let obj5;
+  let stringResult;
   channel = channel.channel;
   const tmp = closure_14();
   const items = [channel];
-  const effect = noop.useEffect(() => {
-    const obj2 = {};
-    const obj = AnalyticsUtilsDefault;
-    const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(channel.getGuildId()));
-    const merged1 = Object.assign(AppAnalyticsUtils.collectChannelAnalyticsMetadata(channel));
-    obj2.banner_type = "thread";
-    obj.track(constants3.CHANNEL_BANNER_VIEWED, obj2);
+  const effect = react.useEffect(() => {
+    const obj = { banner_type: "thread" };
+    const track = AnalyticsUtilsDefault.track;
+    const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
+    AnalyticsUtilsDefault;
+    const obj2 = AppAnalyticsUtils;
+    const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+    const obj3 = AppAnalyticsUtils;
+    const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+    track(CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let isThreadModerator = channel(6687).useIsThreadModerator(channel);
-  let obj2 = { style: tmp.threadBannerContainer, children: null };
-  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: null };
   let obj = channel(6687);
-  const tmp6 = closure_13;
+  let isThreadModerator = obj.useIsThreadModerator(channel);
+  let obj2 = { style: tmp.threadBannerContainer, children: items1 };
+  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: stringResult };
+  const Text = channel(4832).Text;
+  const isForumPostResult = channel.isForumPost();
   const intl = channel(1115).intl;
   const string = intl.string;
   const t = channel(1115).t;
+  const tmp6 = closure_13;
   if (isForumPostResult) {
-    let stringResult = string(t.E7oO8u);
+    stringResult = string(t.E7oO8u);
   } else {
     stringResult = string(t["V/JF2N"]);
   }
-  obj3.children = stringResult;
-  const items1 = [closure_12(channel(4832).Text, obj3), ];
+  items1 = [closure_12(Text, obj3), ];
   if (isThreadModerator) {
-    let obj4 = { style: tmp.threadBannerButton, children: null };
-    const obj5 = { variant: "secondary", size: "sm", text: null, onPress: null };
-    const intl2 = tmp3(1115).intl;
-    obj5.text = intl2.string(tmp3(1115).t.zA9d1J);
-    obj5.onPress = function onPress() {
-      const obj2 = {};
-      const obj = AnalyticsUtilsDefault;
-      const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(channel.getGuildId()));
-      const merged1 = Object.assign(AppAnalyticsUtils.collectChannelAnalyticsMetadata(channel));
-      obj2.banner_type = "thread";
-      obj2.cta_type = "unlock";
-      obj.track(constants3.CHANNEL_BANNER_CTA_CLICKED, obj2);
-      ThreadActionCreatorsDefault.unlockThread(channel);
+    let obj4 = { style: tmp.threadBannerButton, children: closure_12(Button, obj5) };
+    obj5 = {
+      variant: "secondary",
+      size: "sm",
+      text: intl2.string(channel(1115).t.zA9d1J),
+      onPress() {
+          const obj = { banner_type: "thread", cta_type: "unlock" };
+          const track = AnalyticsUtilsDefault.track;
+          const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
+          AnalyticsUtilsDefault;
+          const obj2 = AppAnalyticsUtils;
+          const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+          const obj3 = AppAnalyticsUtils;
+          const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+          track(CHANNEL_BANNER_CTA_CLICKED, obj);
+          const obj4 = ThreadActionCreatorsDefault;
+          obj4.unlockThread(channel);
+        }
     };
-    obj4.children = tmp8(tmp3(5281).Button, obj5);
+    Button = tmp3(5281).Button;
+    intl2 = tmp3(1115).intl;
     isThreadModerator = tmp8(tmp7, obj4);
   }
   items1[1] = isThreadModerator;
-  obj2.children = items1;
   return tmp6(closure_4, obj2);
 }
 function NewMessagesChatBar(channel) {
+  let Text;
+  let XSmallBoldIcon;
+  let connected;
+  let handleScrollToNewMessages;
+  let intl;
+  let intl2;
+  let items1;
+  let obj4;
+  let obj5;
+  let obj7;
+  let oldestUnreadTimestamp;
   channel = channel.channel;
-  ({ unreadCount, handleScrollToNewMessages } = channel);
-  let stringResult = closure_14();
-  let XSmallBoldIcon = channel;
-  let WHITE = dependencyMap;
+  const unreadCount = channel.unreadCount;
+  ({ oldestUnreadTimestamp, handleScrollToNewMessages } = channel);
+  const tmp = closure_14();
+  let obj = channel(504);
   const items = [GatewayConnectionStore];
-  let tmp2 = null;
+  let tmp4 = null;
   if (obj.useStateFromStores(items, () => connected.isConnected(), [])) {
-    if (unreadCount <= 0) {
-      tmp2 = null;
-    } else {
-      XSmallBoldIcon(1115).t;
+    let tmp5 = null;
+    if (unreadCount > 0) {
       const isEstimatedResult = ReadStateStore.isEstimated(channel.id);
-      const t = { style: stringResult.newMessageBar, children: null };
-      const obj2 = { accessibilityRole: "button", style: stringResult.newMessageBarTextContainer, onPress: handleScrollToNewMessages, children: null };
-      const obj3 = { variant: "text-sm/semibold", color: "text-overlay-light", children: null };
-      const intl = XSmallBoldIcon(1115).intl;
-      const obj4 = { count: unreadCount, timestamp: channel.oldestUnreadTimestamp };
-      obj3.children = intl.format(ReadStateStore.isEstimated(channel.id) ? t.wvtbbG : t["BctFH/"], obj4);
-      obj2.children = closure_12(XSmallBoldIcon(4832).Text, obj3);
-      const items1 = [closure_12(XSmallBoldIcon(5435).PressableOpacity, obj2), ];
-      handleScrollToNewMessages = XSmallBoldIcon(5435).PressableOpacity;
-      const obj5 = { style: stringResult.newMessageBarCloseButton, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
-      const intl2 = XSmallBoldIcon(1115).intl;
-      stringResult = intl2.string(XSmallBoldIcon(1115).t.e6RscS);
-      obj5.accessibilityLabel = stringResult;
-      obj5.onPress = function onPress() {
-        return ReadStateActionCreators.ack(channel.id, { section: constants4.NEW_MESSAGES_BANNER, object: constants2.MARK_CHANNEL_AS_READ_BUTTON, objectType: constants.ACK_MANUAL });
+      const t = tmp2(1115).t;
+      let obj2 = { style: tmp.newMessageBar, children: items1 };
+      const obj3 = { accessibilityRole: "button", style: tmp.newMessageBarTextContainer, onPress: handleScrollToNewMessages, children: closure_12(Text, obj4) };
+      const tmp8 = isEstimatedResult ? t.wvtbbG : t["BctFH/"];
+      const PressableOpacity = tmp2(5435).PressableOpacity;
+      obj4 = { variant: "text-sm/semibold", color: "text-overlay-light", children: intl.format(tmp8, obj5) };
+      Text = tmp2(4832).Text;
+      intl = tmp2(1115).intl;
+      obj5 = { count: unreadCount, timestamp: oldestUnreadTimestamp };
+      items1 = [closure_12(PressableOpacity, obj3), ];
+      const obj6 = {
+        style: tmp.newMessageBarCloseButton,
+        accessibilityRole: "button",
+        accessibilityLabel: intl2.string(channel(1115).t.e6RscS),
+        onPress() {
+              const obj = ReadStateActionCreators;
+              const obj2 = { section: unpackModuleId.NEW_MESSAGES_BANNER, object: constants.MARK_CHANNEL_AS_READ_BUTTON, objectType: metroImportAll.ACK_MANUAL };
+              return obj.ack(channel.id, obj2);
+            },
+        children: closure_12(XSmallBoldIcon, obj7)
       };
-      XSmallBoldIcon = XSmallBoldIcon(7415).XSmallBoldIcon;
-      const obj6 = { size: "sm", color: null };
-      WHITE = nativeDefault.colors.WHITE;
-      obj6.color = WHITE;
-      obj5.children = closure_12(XSmallBoldIcon, obj6);
-      items1[1] = closure_12(handleScrollToNewMessages, obj5);
-      t.children = items1;
-      closure_13(closure_4, t);
-      const tmp6 = ReadStateStore.isEstimated(channel.id) ? t.wvtbbG : t["BctFH/"];
+      const PressableOpacity2 = tmp2(5435).PressableOpacity;
+      intl2 = tmp2(1115).intl;
+      obj7 = { size: "sm", color: nativeDefault.colors.WHITE };
+      XSmallBoldIcon = tmp2(7415).XSmallBoldIcon;
+      items1[1] = closure_12(PressableOpacity2, obj6);
+      tmp5 = closure_13(closure_4, obj2);
     }
+    tmp4 = tmp5;
   }
-  return tmp2;
+  return tmp4;
 }
-get_ActivityIndicator = fn(17);
-({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
-const ChatOverlays = fn(10965).ChatOverlays;
-const Constants = fn(1074);
-({ AnalyticsObjectTypes: closure_8, AnalyticsObjects: closure_9, AnalyticEvents: c10, AnalyticsSections: closure_11 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { threadBannerContainer: { alignSelf: "stretch", minHeight: 60, flexDirection: "row", paddingHorizontal: 16, paddingVertical: 12, alignItems: "center", flexGrow: 0, zIndex: 100, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, threadBannerTitle: { flex: 1, lineHeight: 18 }, threadBannerButton: { flexGrow: 0, paddingVertical: 7, paddingHorizontal: 16, marginLeft: 16 }, newMessageBar: null, newMessageBarTextContainer: null, newMessageBarCloseButton: null, optInChannelBannerContainer: null, topBorder: null, optInChannelBannerText: null, optInChannelBannerButtonContainer: null };
-let obj3 = { alignSelf: "stretch", minHeight: 60, flexDirection: "row", paddingHorizontal: 16, paddingVertical: 12, alignItems: "center", flexGrow: 0, zIndex: 100, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-obj2.newMessageBar = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, flexDirection: "row", justifyContent: "center", alignItems: "center", overflow: "hidden", zIndex: 100, minHeight: 45 };
-obj2.newMessageBarTextContainer = { flex: 1, paddingLeft: 16, paddingVertical: 10 };
-obj2.newMessageBarCloseButton = { paddingHorizontal: 12 };
-let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, flexDirection: "row", justifyContent: "center", alignItems: "center", overflow: "hidden", zIndex: 100, minHeight: 45 };
-obj2.optInChannelBannerContainer = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", overflow: "hidden", padding: 8, paddingLeft: 16, paddingRight: 16, zIndex: 100, backgroundColor: nativeDefault.colors.CHAT_BANNER_BG, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.CHAT_BORDER };
-let obj5 = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", overflow: "hidden", padding: 8, paddingLeft: 16, paddingRight: 16, zIndex: 100, backgroundColor: nativeDefault.colors.CHAT_BANNER_BG, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.CHAT_BORDER };
-obj2.topBorder = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.CHAT_BORDER };
-obj2.optInChannelBannerText = { flex: 1 };
-obj2.optInChannelBannerButtonContainer = { flexShrink: 0, marginLeft: 8 };
-const value = createStyles.createStyles(obj2);
-const size = fn(2);
+({ StyleSheet, View: closure_4 } = react_native);
+const ChatOverlays = ChatOverlayConstants.ChatOverlays;
+({ AnalyticsObjectTypes: metroImportAll, AnalyticsObjects: c9, AnalyticEvents: c10, AnalyticsSections: unpackModuleId } = Constants);
+({ jsx: closure_12, jsxs: map1 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { threadBannerContainer: obj2, threadBannerTitle: { flex: 1, lineHeight: 18 }, threadBannerButton: { flexGrow: 0, paddingVertical: 7, paddingHorizontal: 16, marginLeft: 16 }, newMessageBar: obj3, newMessageBarTextContainer: { flex: 1, paddingLeft: 16, paddingVertical: 10 }, newMessageBarCloseButton: { paddingHorizontal: 12 }, optInChannelBannerContainer: obj4, topBorder: obj5, optInChannelBannerText: { flex: 1 }, optInChannelBannerButtonContainer: { flexShrink: 0, marginLeft: 8 } };
+obj2 = { alignSelf: "stretch", minHeight: 60, flexDirection: "row", paddingHorizontal: 16, paddingVertical: 12, alignItems: "center", flexGrow: 0, zIndex: 100, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, flexDirection: "row", justifyContent: "center", alignItems: "center", overflow: "hidden", zIndex: 100, minHeight: 45 };
+obj4 = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", overflow: "hidden", padding: 8, paddingLeft: 16, paddingRight: 16, zIndex: 100, backgroundColor: nativeDefault.colors.CHAT_BANNER_BG, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.CHAT_BORDER };
+obj5 = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.CHAT_BORDER };
+const authStore2 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/messages/native/ChatBanner.tsx");
 
 export default function ChatBanner(channel) {
+  let oldestUnreadTimestamp;
+  let tmp4;
+  let unreadCount;
   channel = channel.channel;
+  const handleScrollToNewMessages = channel.handleScrollToNewMessages;
+  let tmp = useShowChannelOptInNoticeDefault(channel);
   let obj = useAllowedChatOverlaysDefault();
-  const tmp = useShowChannelOptInNoticeDefault(channel);
+  let obj2 = channel(504);
   const items = [ReadStateStore];
   const items1 = [channel.id];
-  const stateFromStoresObject = channel(504).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
     let oldestUnreadTimestamp = ReadStateStore.getOldestUnreadTimestamp(channel.id);
-    const obj = { unreadCount: ReadStateStore.getUnreadCount(channel.id), oldestUnreadTimestamp: null };
+    const obj = { unreadCount: ReadStateStore.getUnreadCount(channel.id), oldestUnreadTimestamp };
+    const tmp = channel;
     if (0 === oldestUnreadTimestamp) {
-      oldestUnreadTimestamp = SnowflakeUtilsDefault.extractTimestamp(channel.id);
+      const obj2 = SnowflakeUtilsDefault;
+      oldestUnreadTimestamp = obj2.extractTimestamp(tmp.id);
     }
-    obj.oldestUnreadTimestamp = oldestUnreadTimestamp;
     return obj;
   }, items1);
   ({ unreadCount, oldestUnreadTimestamp } = stateFromStoresObject);
   if (channel.isArchivedLockedThread()) {
     const obj3 = { channel };
-    let tmp4 = closure_12(ArchivedLockedThreadChatBanner, obj3);
+    tmp4 = closure_12(ArchivedLockedThreadChatBanner, obj3);
   } else if (channel.isLockedThread()) {
     const obj4 = { channel };
     tmp4 = closure_12(LockedThreadChatBanner, obj4);
   } else {
     if (unreadCount > 0) {
       if (obj.includes(ChatOverlays.NEW_MESSAGES)) {
-        const obj5 = { unreadCount, oldestUnreadTimestamp, channel, handleScrollToNewMessages: channel.handleScrollToNewMessages };
+        const obj5 = { unreadCount, oldestUnreadTimestamp, channel, handleScrollToNewMessages };
         tmp4 = closure_12(NewMessagesChatBar, obj5);
       }
     }

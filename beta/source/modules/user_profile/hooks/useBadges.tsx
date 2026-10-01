@@ -6,24 +6,25 @@
 
 // Module 7688 (useBadges)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import StreamerModeStore from "StreamerModeStore" /* 4679 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 const legacy_username = "legacy_username";
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useBadges.tsx");
 
 export default function useBadges(getBadges, arg1) {
+  let currentUser;
   const LegacyUsernameDisabled = UserSettings.LegacyUsernameDisabled;
   let setting = LegacyUsernameDisabled.useSetting();
   if (undefined !== arg1) {
     setting = arg1;
   }
   const items = [UserStore];
-  const stateFromStores = useStateFromStores.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const tmpResult = useStateFromStores;
+  const stateFromStores = tmpResult.useStateFromStores(items, () => currentUser.getCurrentUser());
   useStateFromStores;
   [][0] = StreamerModeStore;
   if (null == getBadges) {
@@ -37,26 +38,26 @@ export default function useBadges(getBadges, arg1) {
       badges = [];
     }
     let found = badges;
+    const tmp7 = null != stateFromStores && stateFromStores.id === getBadges.userId && setting;
     if (tmp7) {
       found = badges.filter((id) => id.id !== legacy_username);
     }
     let mapped = found;
     if (tmp6) {
       mapped = found.map((id) => {
-        const obj = {};
+        let description;
+        const obj = { description };
         const merged = Object.assign(id);
         if (id.id === legacy_username) {
-          const intl = util.intl;
-          let description = intl.string(util.t.Br1ls3);
+          const intl = intl2.intl;
+          description = intl.string(intl2.t.Br1ls3);
         } else {
           description = id.description;
         }
-        obj.description = description;
         return obj;
       });
     }
     return mapped;
   }
-  const tmpResult = useStateFromStores;
 };
 export const QUEST_COMPLETED_BADGE = "quest_completed";

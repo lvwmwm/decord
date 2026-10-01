@@ -6,24 +6,30 @@
 
 // Module 17615 (GuildRoleSubscriptionTierTemplateUtils)
 import ChannelTypes from "ChannelTypes" /* 1095 */;
+import TextLockIcon from "TextLockIcon" /* 5392 */;
+import ImageLockIcon from "ImageLockIcon" /* 5399 */;
+import ForumLockIcon from "ForumLockIcon" /* 5400 */;
+import AnnouncementsLockIcon from "AnnouncementsLockIcon" /* 5407 */;
+import StageLockIcon from "StageLockIcon" /* 5410 */;
+import VoiceLockIcon from "VoiceLockIcon" /* 5412 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUtils.tsx");
 
 export const getPrivateChannelIconComponent = function getPrivateChannelIconComponent(type) {
   if (ChannelTypes.ChannelTypes.GUILD_TEXT === type) {
-    return tmp(5392).TextLockIcon;
-  } else if (tmp(1095).ChannelTypes.GUILD_VOICE === type) {
-    return tmp(5412).VoiceLockIcon;
-  } else if (tmp(1095).ChannelTypes.GUILD_STAGE_VOICE === type) {
-    return tmp(5410).StageLockIcon;
-  } else if (tmp(1095).ChannelTypes.GUILD_FORUM === type) {
-    return tmp(5400).ForumLockIcon;
-  } else if (tmp(1095).ChannelTypes.GUILD_MEDIA === type) {
-    return tmp(5399).ImageLockIcon;
-  } else if (tmp(1095).ChannelTypes.GUILD_ANNOUNCEMENT === type) {
-    return tmp(5407).AnnouncementsLockIcon;
+    return TextLockIcon.TextLockIcon;
+  } else if (ChannelTypes.ChannelTypes.GUILD_VOICE === type) {
+    return VoiceLockIcon.VoiceLockIcon;
+  } else if (ChannelTypes.ChannelTypes.GUILD_STAGE_VOICE === type) {
+    return StageLockIcon.StageLockIcon;
+  } else if (ChannelTypes.ChannelTypes.GUILD_FORUM === type) {
+    return ForumLockIcon.ForumLockIcon;
+  } else if (ChannelTypes.ChannelTypes.GUILD_MEDIA === type) {
+    return ImageLockIcon.ImageLockIcon;
+  } else if (ChannelTypes.ChannelTypes.GUILD_ANNOUNCEMENT === type) {
+    return AnnouncementsLockIcon.AnnouncementsLockIcon;
   } else {
-    return tmp(5392).TextLockIcon;
+    return TextLockIcon.TextLockIcon;
   }
 };

@@ -5,17 +5,19 @@
 // Exports: installSystrace
 
 // Module 13882 (installSystrace)
-import _mod17 from "module_17" /* 17 */;
-import NativeSystraceModule from "NativeSystraceModule" /* 13883 */;
+import react_native from "react-native" /* 17 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import react_native2 from "react-native" /* 13883 */;
 import size from "module_2" /* 2 */;
 
-const Systrace = _mod17.Systrace;
+const Systrace = react_native.Systrace;
 const result = size.fileFinishedImporting("modules/systrace/native/installSystrace.tsx");
 
 export const installSystrace = function installSystrace() {
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
     Systrace.isEnabled = () => {
-      const _default = NativeSystraceModule.default;
+      const _default = react_native2.default;
       let flag;
       if (_default != null) {
         flag = _default.isEnabled();
@@ -26,30 +28,32 @@ export const installSystrace = function installSystrace() {
       return flag;
     };
     Systrace.beginEvent = (fn) => {
-      const _default = NativeSystraceModule.default;
+      const _default = react_native2.default;
       if (_default != null) {
         let tmp2 = fn;
+        const beginEvent = _default.beginEvent;
         if (typeof fn !== "string") {
           tmp2 = fn();
         }
-        _default.beginEvent(tmp2);
+        beginEvent(tmp2);
       }
     };
     Systrace.endEvent = () => {
-      const _default = NativeSystraceModule.default;
+      const _default = react_native2.default;
       if (_default != null) {
         _default.endEvent();
       }
     };
     Systrace.beginAsyncEvent = (fn) => {
-      const _default = NativeSystraceModule.default;
+      const _default = react_native2.default;
       let num;
       if (_default != null) {
         let tmp2 = fn;
+        const beginAsyncEvent = _default.beginAsyncEvent;
         if (typeof fn !== "string") {
           tmp2 = fn();
         }
-        num = _default.beginAsyncEvent(tmp2);
+        num = beginAsyncEvent(tmp2);
       }
       if (num == null) {
         num = 0;
@@ -57,23 +61,25 @@ export const installSystrace = function installSystrace() {
       return num;
     };
     Systrace.endAsyncEvent = (fn, arg1) => {
-      const _default = NativeSystraceModule.default;
+      const _default = react_native2.default;
       if (_default != null) {
         let tmp2 = fn;
+        const endAsyncEvent = _default.endAsyncEvent;
         if (typeof fn !== "string") {
           tmp2 = fn();
         }
-        _default.endAsyncEvent(tmp2, arg1);
+        endAsyncEvent(tmp2, arg1);
       }
     };
     Systrace.counterEvent = (pending_js_to_native_queue, length) => {
-      const _default = NativeSystraceModule.default;
+      const _default = react_native2.default;
       if (_default != null) {
         let tmp2 = pending_js_to_native_queue;
+        const counterEvent = _default.counterEvent;
         if (typeof pending_js_to_native_queue !== "string") {
           tmp2 = pending_js_to_native_queue();
         }
-        _default.counterEvent(tmp2, length);
+        counterEvent(tmp2, length);
       }
     };
   }

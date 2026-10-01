@@ -5,26 +5,37 @@
 // Exports: default
 
 // Module 16188 (useActiveSubscriptionListingForGroup)
+import Constants from "Constants" /* 1074 */;
 import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6675 */;
 import subscriptionUtils from "subscriptionUtils" /* 14759 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4493 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4462 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const SubscriptionTypes = fn(1074).SubscriptionTypes;
-const size = fn(2);
+let react = react_mod;
+const SubscriptionTypes = Constants.SubscriptionTypes;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useActiveSubscriptionListingForGroup.tsx");
 
 export default function useActiveSubscriptionListingForGroup(arg0) {
+  let activeSubscriptionPlanFromStore;
+  let closure_0;
+  let closure_2;
+  let sku_id;
+  let stateFromStores;
   _require = arg0;
+  let tmp = _require;
+  let tmp2 = stateFromStores;
+  let obj = require("get initialized");
   const items = [sku_id];
-  stateFromStores = require("initialize").useStateFromStores(items, () => sku_id.getSubscriptions());
+  stateFromStores = obj.useStateFromStores(items, () => sku_id.getSubscriptions());
+  let obj2 = react;
   const items1 = [stateFromStores];
-  noop = noop.useMemo(() => {
+  react = react.useMemo(() => {
     if (null == stateFromStores) {
       return {};
     } else {
@@ -42,12 +53,9 @@ export default function useActiveSubscriptionListingForGroup(arg0) {
       return obj;
     }
   }, items1);
-  let obj = require("initialize");
-  let obj2 = noop;
-  let tmp = _require;
-  let tmp2 = stateFromStores;
   const items2 = [activeSubscriptionPlanFromStore];
-  const activeSubscription = require("initialize").useStateFromStoresObject(items2, () => {
+  const obj3 = require("get initialized");
+  const stateFromStoresObject = obj3.useStateFromStoresObject(items2, () => {
     let tmp2 = null;
     let subscriptionGroupListing = null;
     if (null != closure_0) {
@@ -67,10 +75,11 @@ export default function useActiveSubscriptionListingForGroup(arg0) {
         id = subscriptionListing.subscription_plans[0].id;
       }
       if (null != id) {
+        let tmp;
         let tmp13 = closure_2[tmp10];
         if (null != tmp13) {
           tmp2 = tmp13;
-          let tmp = subscriptionListing;
+          tmp = subscriptionListing;
           obj.return();
           break;
         }
@@ -80,8 +89,9 @@ export default function useActiveSubscriptionListingForGroup(arg0) {
       continue;
     }
   });
-  const activeSubscriptionListing = activeSubscription.activeSubscriptionListing;
+  const activeSubscriptionListing = stateFromStoresObject.activeSubscriptionListing;
   let first;
+  const activeSubscription = stateFromStoresObject.activeSubscription;
   if (activeSubscriptionListing != null) {
     first = activeSubscriptionListing.subscription_plans[0];
   }
@@ -93,10 +103,10 @@ export default function useActiveSubscriptionListingForGroup(arg0) {
   if (first != null) {
     sku_id = first.sku_id;
   }
-  const obj3 = require("initialize");
   const items3 = [id];
-  activeSubscriptionPlanFromStore = tmp(tmp2[5]).useStateFromStores(items3, () => {
-    value = null;
+  const tmpResult = tmp(tmp2[5]);
+  activeSubscriptionPlanFromStore = tmpResult.useStateFromStores(items3, () => {
+    let value = null;
     if (null != id) {
       value = SubscriptionPlanStore.get(tmp);
     }
@@ -108,17 +118,11 @@ export default function useActiveSubscriptionListingForGroup(arg0) {
   }
   const items4 = [activeSubscriptionPlanFromStore, sku_id, soft_deleted];
   const effect = obj2.useEffect(() => {
-    let isFetchingForSKUResult = null != activeSubscriptionPlanFromStore;
-    if (!isFetchingForSKUResult) {
-      isFetchingForSKUResult = null == sku_id;
-    }
-    if (!isFetchingForSKUResult) {
-      isFetchingForSKUResult = SubscriptionPlanStore.isFetchingForSKU(sku_id);
-    }
+    const isFetchingForSKUResult = null != activeSubscriptionPlanFromStore || null == sku_id || SubscriptionPlanStore.isFetchingForSKU(sku_id);
     if (!isFetchingForSKUResult) {
       const obj = SubscriptionPlanActionCreators;
       const subscriptionPlansForSKU = obj.fetchSubscriptionPlansForSKU(sku_id, undefined, undefined, soft_deleted);
     }
   }, items4);
-  return { activeSubscription: activeSubscription.activeSubscription, activeSubscriptionListing, activeSubscriptionPlanFromStore };
+  return { activeSubscription, activeSubscriptionListing, activeSubscriptionPlanFromStore };
 };

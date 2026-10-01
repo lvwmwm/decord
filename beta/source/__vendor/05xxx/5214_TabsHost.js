@@ -4,7 +4,7 @@
 // Dependencies: [5215]
 
 // Module 5214 (TabsHost)
-import _modDef5215 from "module_5215" /* 5215 */;
+import TabsHostDefault from "TabsHost" /* 5215 */;
 
 
-export const TabsHost = _modDef5215;
+export const TabsHost = TabsHostDefault;

@@ -1,0 +1,10 @@
+// Module ID: 3021
+// Function ID: 3022
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 3021 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jaGVja3BvaW50", scales: [1], hash: "bd7340f54daabaee4df621c433059980", name: "ko.messages.bd7340f54daabaee4df621c433059980.compiled.messages", type: "jsona" });

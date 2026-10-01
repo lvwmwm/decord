@@ -6,10 +6,13 @@
 // Module 4927 (cloneArrayBuffer)
 import _mod652 from "module_652" /* 652 */;
 
+let set;
+
 
 export default function cloneArrayBuffer(byteLength) {
   const constructor = new byteLength.constructor(byteLength.byteLength);
-  const obj = new _mod652(constructor);
-  const result = obj.set(new _mod652(byteLength));
+  set = new _mod652(constructor).set;
+  const tmp3 = new _mod652(byteLength);
+  const result = set(tmp3);
   return constructor;
 };

@@ -5,52 +5,59 @@
 // Exports: default
 
 // Module 11658 (AppLauncherSelectOptionFormRow)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Form from "Form" /* 8053 */;
 import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11651 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { formRow: { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center", flex: 1 } };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const jsx = Fragment.jsx;
+let obj = { formRow: obj2 };
+obj2 = { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center", flex: 1 };
+let closure_4 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherSelectOptionFormRow.tsx");
 
 export default function AppLauncherSelectOptionFormRow(arg0) {
+  let autoFocus;
+  let children;
+  let fn;
+  let option;
+  let selected;
+  let style;
+  let unselectedSubLabel;
   ({ selected, selectedItemName: require, unselectedSubLabel } = arg0);
   ({ style, option, autoFocus } = arg0);
   const merged = Object.assign(arg0, Object.assign({ style: 0, option: 0, selected: 0, selectedItemName: 0, unselectedSubLabel: 0, autoFocus: 0 }));
+  const onPress = merged.onPress;
   const tmp2 = closure_4();
-  const animationDelayedAutoFocus = useAnimationDelayedAutoFocus.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
-  const obj2 = { start: true, end: true, style: null, label: null, subLabel: null, trailing: null };
+  const obj = useAnimationDelayedAutoFocus;
+  const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, onPress);
   const items = [tmp2.formRow, style];
-  obj2.style = items;
+  const FormRow = Form.FormRow;
   let str = "text-md/medium";
+  const Text = Text_Text.Text;
   if (selected) {
     str = "text-sm/medium";
   }
-  const obj3 = { variant: str, color: null, lineClamp: 1, children: null };
   let str2 = "text-default";
   if (selected) {
     str2 = "interactive-text-default";
   }
-  obj3.color = str2;
-  obj3.children = option.displayName;
-  obj2.label = jsx(Text_Text.Text, { variant: str, color: null, lineClamp: 1, children: null });
   if (selected) {
-    let fn = () => jsx(Text_Text.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children });
+    fn = () => jsx(Text_Text.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: require });
   } else {
     fn = null;
     if (null != unselectedSubLabel) {
       fn = () => jsx(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: unselectedSubLabel });
     }
   }
-  obj2.subLabel = fn;
-  obj2.trailing = jsx(native.Icon, { source: unselectedSubLabel(6563), size: native.IconSizes.SMALL_20 });
+  ({ source: unselectedSubLabel(6563), size: native.IconSizes.SMALL_20 });
+  const Icon = tmp3(1177).Icon;
   const merged1 = Object.assign(merged);
-  return jsx(Form.FormRow, { start: true, end: true, style: null, label: null, subLabel: null, trailing: null });
+  return <FormRow start end style={items} label={null} subLabel={fn} trailing={null} />;
 };

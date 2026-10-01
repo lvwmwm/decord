@@ -9,17 +9,19 @@ import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8106 */;
 import UserStore from "UserStore" /* 1372 */;
 import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 6960 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeenUser.tsx");
 
 export const useSelectedTeenUser = function useSelectedTeenUser() {
+  let closure_0;
   _require = useIsInAdultAgeGroupDefault();
   const items = [FamilyCenterStore, UserStore];
-  return require("useStateFromStores").useStateFromStores(items, () => {
+  const obj = require("useStateFromStores");
+  return obj.useStateFromStores(items, () => {
     if (true !== closure_0) {
       return UserStore.getCurrentUser();
     } else {
@@ -35,29 +37,24 @@ export const useSelectedTeenUser = function useSelectedTeenUser() {
 export const useTeenUserForId = function useTeenUserForId(gifterUserId) {
   _require = gifterUserId;
   const items = [UserStore];
-  return require("useStateFromStores").useStateFromStores(items, () => {
-    const user = UserStore.getUser(closure_0);
+  const obj = require("useStateFromStores");
+  return obj.useStateFromStores(items, () => {
+    const user = UserStore.getUser(gifterUserId);
     return null != user ? user : undefined;
   });
 };
 export const useShouldLoadSettingsForSelectedTeenUser = function useShouldLoadSettingsForSelectedTeenUser() {
   const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
   const items = [FamilyCenterControlledSettingsStore];
-  const stateFromStoresObject = selectedTeenId(563).useStateFromStoresObject(items, () => {
-    let hasSettingsForUserResult = null != selectedTeenId;
-    if (hasSettingsForUserResult) {
-      hasSettingsForUserResult = FamilyCenterControlledSettingsStore.hasSettingsForUser(tmp);
-    }
+  const obj = selectedTeenId(563);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const hasSettingsForUserResult = null != selectedTeenId && FamilyCenterControlledSettingsStore.hasSettingsForUser(tmp);
     return { hasLoadedSettings: hasSettingsForUserResult, isLoading: FamilyCenterControlledSettingsStore.isLoading };
   });
   const hasLoadedSettings = stateFromStoresObject.hasLoadedSettings;
   let tmp4 = null !== selectedTeenId;
   if (tmp4) {
-    let tmp5 = !hasLoadedSettings;
-    if (!hasLoadedSettings) {
-      tmp5 = !tmp3;
-    }
-    tmp4 = tmp5;
+    tmp4 = !hasLoadedSettings && !tmp3;
   }
   return tmp4;
 };

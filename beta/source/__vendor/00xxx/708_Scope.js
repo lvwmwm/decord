@@ -4,14 +4,24 @@
 // Dependencies: [41, 42, 694, 696, 709, 710, 692, 703, 697, 711, 695, 688, 689]
 
 // Module 708 (Scope)
+import _mod688 from "module_688" /* 688 */;
+import _mod692 from "module_692" /* 692 */;
+import generateSpanId from "generateSpanId" /* 694 */;
+import uuid4 from "uuid4" /* 695 */;
+import safeDateNow from "safeDateNow" /* 696 */;
+import browserPerformanceTimeOrigin from "browserPerformanceTimeOrigin" /* 703 */;
+import _getSpanForScope from "_getSpanForScope" /* 709 */;
+import closeSession from "closeSession" /* 710 */;
+import merge from "merge" /* 711 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-const Scope = require;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 class Scope {
   constructor() {
-    tmp = c2(this, Scope);
+    let obj2;
+    let obj3;
+    _classCallCheck(this, Scope);
     this._notifyingListeners = false;
     this._scopeListeners = [];
     this._eventProcessors = [];
@@ -23,18 +33,18 @@ class Scope {
     this._extra = {};
     this._contexts = {};
     this._sdkProcessingMetadata = {};
-    obj = { traceId: null, sampleRand: null };
-    obj2 = closure_0(closure_1[2]);
-    obj.traceId = obj2.generateTraceId();
-    obj3 = closure_0(closure_1[3]);
-    obj.sampleRand = obj3.safeMathRandom();
+    const obj = { traceId: obj2.generateTraceId(), sampleRand: obj3.safeMathRandom() };
+    obj2 = generateSpanId;
     this._propagationContext = obj;
-    return;
+    obj3 = safeDateNow;
   }
 }
 const entry = {
   key: "clone",
   value: function clone() {
+    let items1;
+    let obj2;
+    let obj3;
     const self = this;
     const obj4 = Object.create(Scope.prototype);
     _classCallCheck(obj4, Scope);
@@ -49,45 +59,46 @@ const entry = {
     obj4._extra = {};
     obj4._contexts = {};
     obj4._sdkProcessingMetadata = {};
-    const obj = { traceId: Scope(694).generateTraceId(), sampleRand: null };
-    const obj2 = Scope(694);
-    obj.sampleRand = Scope(696).safeMathRandom();
+    const obj = { traceId: obj2.generateTraceId(), sampleRand: obj3.safeMathRandom() };
+    obj2 = generateSpanId;
     obj4._propagationContext = obj;
     const items = [...this._breadcrumbs];
     obj4._breadcrumbs = items;
+    obj3 = safeDateNow;
+    const obj5 = {};
     const merged = Object.assign(this._tags);
-    obj4._tags = {};
+    obj4._tags = obj5;
+    const obj6 = {};
     const merged1 = Object.assign(this._attributes);
-    obj4._attributes = {};
+    obj4._attributes = obj6;
+    const obj7 = {};
     const merged2 = Object.assign(this._extra);
-    obj4._extra = {};
+    obj4._extra = obj7;
+    const obj8 = {};
     const merged3 = Object.assign(this._contexts);
-    obj4._contexts = {};
+    obj4._contexts = obj8;
     if (this._contexts.flags) {
-      const obj9 = { values: null };
-      const items1 = [];
-      HermesBuiltin.arraySpread(self._contexts.flags.values, 0);
-      obj9.values = items1;
-      obj4._contexts.flags = obj9;
+      const obj9 = { values: items1 };
+      items1 = [];
+      const _contexts = obj4._contexts;
+      HermesBuiltin.arraySpread(items1, self._contexts.flags.values, 0);
+      _contexts.flags = obj9;
     }
-    ({ _user: tmp._user, _level: tmp._level, _session: tmp._session, _transactionName: tmp._transactionName, _fingerprint: tmp._fingerprint } = self);
+    ({ _user: tmp2._user, _level: tmp2._level, _session: tmp2._session, _transactionName: tmp2._transactionName, _fingerprint: tmp2._fingerprint } = self);
     const items2 = [...self._eventProcessors];
     obj4._eventProcessors = items2;
     obj4._attachments = [...self._attachments];
-    const merged4 = Object.assign(self._sdkProcessingMetadata);
-    obj4._sdkProcessingMetadata = {};
-    const merged5 = Object.assign(self._propagationContext);
-    obj4._propagationContext = {};
-    ({ _client: tmp._client, _lastEventId: tmp._lastEventId } = self);
     const obj10 = {};
+    const merged4 = Object.assign(self._sdkProcessingMetadata);
+    obj4._sdkProcessingMetadata = obj10;
     const obj11 = {};
-    const obj3 = Scope(696);
-    const obj5 = {};
-    const obj6 = {};
-    const obj7 = {};
-    const obj8 = {};
-    const tmp3Result = Scope(709);
-    tmp3Result._setSpanForScope(obj4, Scope(709)._getSpanForScope(self));
+    const merged5 = Object.assign(self._propagationContext);
+    obj4._propagationContext = obj11;
+    ({ _client: tmp2._client, _lastEventId: tmp2._lastEventId } = self);
+    const _setSpanForScope = _getSpanForScope._setSpanForScope;
+    _getSpanForScope;
+    const tmp4Result2 = _getSpanForScope;
+    _setSpanForScope(obj4, tmp4Result2._getSpanForScope(self));
     return obj4;
   }
 };
@@ -135,15 +146,13 @@ let items = [
   {
     key: "setUser",
     value: function setUser(user) {
-      if (!user) {
-        user = { email: "Array", id: "PX_8", ip_address: "y", username: "HermesInternal" };
-      }
       const self = this;
-      this._user = user;
+      const tmp = user || { email: "Array", id: "PX_8", ip_address: "y", username: "HermesInternal" };
+      this._user = tmp;
       if (this._session) {
-        const obj = { user };
-        Scope(710).updateSession(self._session, obj);
-        const obj2 = Scope(710);
+        const obj2 = { user };
+        const obj = closeSession;
+        obj.updateSession(self._session, obj2);
       }
       const result = self._notifyScopeListeners();
       return self;
@@ -158,9 +167,10 @@ let items = [
   {
     key: "setTags",
     value: function setTags(arg0) {
+      const obj = {};
       const merged = Object.assign(this._tags);
       const merged1 = Object.assign(arg0);
-      this._tags = {};
+      this._tags = obj;
       const result = this._notifyScopeListeners();
       return this;
     }
@@ -168,15 +178,17 @@ let items = [
   {
     key: "setTag",
     value: function setTag(arg0, arg1) {
-      return this.setTags({ [arg0]: arg1 });
+      const obj = { [arg0]: arg1 };
+      return this.setTags(obj);
     }
   },
   {
     key: "setAttributes",
     value: function setAttributes(arg0) {
+      const obj = {};
       const merged = Object.assign(this._attributes);
       const merged1 = Object.assign(arg0);
-      this._attributes = {};
+      this._attributes = obj;
       const result = this._notifyScopeListeners();
       return this;
     }
@@ -184,7 +196,8 @@ let items = [
   {
     key: "setAttribute",
     value: function setAttribute(arg0, arg1) {
-      return this.setAttributes({ [arg0]: arg1 });
+      const obj = { [arg0]: arg1 };
+      return this.setAttributes(obj);
     }
   },
   {
@@ -192,8 +205,7 @@ let items = [
     value: function removeAttribute(crossorigin) {
       const self = this;
       if (crossorigin in this._attributes) {
-        const _attributes = self._attributes;
-        delete tmp[tmp2];
+        delete self._attributes[tmp];
         const result = self._notifyScopeListeners();
       }
       return self;
@@ -202,9 +214,10 @@ let items = [
   {
     key: "setExtras",
     value: function setExtras(arg0) {
+      const obj = {};
       const merged = Object.assign(this._extra);
       const merged1 = Object.assign(arg0);
-      this._extra = {};
+      this._extra = obj;
       const result = this._notifyScopeListeners();
       return this;
     }
@@ -249,8 +262,7 @@ let items = [
     value: function setContext(arg0, arg1) {
       const self = this;
       if (null === arg1) {
-        const _contexts = self._contexts;
-        delete tmp[tmp2];
+        delete self._contexts[tmp];
       } else {
         self._contexts[arg0] = arg1;
       }
@@ -262,10 +274,11 @@ let items = [
     key: "setSession",
     value: function setSession(_session) {
       const self = this;
-      if (_session) {
+      const tmp = _session;
+      if (tmp) {
         self._session = _session;
       } else {
-        delete tmp[tmp2];
+        delete self["_session"];
       }
       const result = self._notifyScopeListeners();
       return self;
@@ -280,19 +293,28 @@ let items = [
   {
     key: "update",
     value: function update(fn) {
+      let attributes;
+      let contexts;
+      let extra;
+      let fingerprint;
+      let level;
+      let tags;
+      let user;
       const self = this;
-      if (fn) {
+      const tmp = fn;
+      if (tmp) {
+        let scopeData;
         let obj = fn;
         if (typeof fn === "function") {
           obj = fn(self);
         }
         if (obj instanceof Scope) {
-          let scopeData = obj.getScopeData();
+          scopeData = obj.getScopeData();
         } else {
+          const obj2 = _mod692;
           if (obj2.isPlainObject(obj)) {
             scopeData = fn;
           }
-          obj2 = Scope(692);
         }
         if (!scopeData) {
           scopeData = {};
@@ -319,7 +341,7 @@ let items = [
         const merged7 = Object.assign(contexts);
         self._contexts = obj6;
         let length = user;
-        if (user) {
+        if (length) {
           const _Object = Object;
           length = Object.keys(user).length;
         }
@@ -344,15 +366,16 @@ let items = [
   {
     key: "clear",
     value: function clear() {
-      const obj = { _breadcrumbs: [], _tags: {}, _attributes: {}, _extra: {}, _user: {}, _contexts: {}, _level: undefined, _transactionName: undefined, _fingerprint: undefined, _session: undefined };
-      Scope(709)._setSpanForScope(obj, undefined);
-      obj._attachments = [];
-      const obj3 = { traceId: null, sampleRand: null };
-      const obj2 = Scope(709);
-      obj3.traceId = Scope(694).generateTraceId();
-      const obj4 = Scope(694);
-      obj3.sampleRand = Scope(696).safeMathRandom();
-      const result = obj.setPropagationContext(obj3);
+      let obj4;
+      let obj5;
+      const obj = { _breadcrumbs: [], _tags: {}, _attributes: {}, _extra: {}, _user: {}, _contexts: {}, _level: undefined, _transactionName: undefined, _fingerprint: undefined, _session: undefined, _attachments: [] };
+      const obj2 = _getSpanForScope;
+      obj2._setSpanForScope(obj, undefined);
+      const setPropagationContext = obj.setPropagationContext;
+      const obj3 = { traceId: obj4.generateTraceId(), sampleRand: obj5.safeMathRandom() };
+      obj4 = generateSpanId;
+      obj5 = safeDateNow;
+      const result = setPropagationContext(obj3);
       const result1 = obj._notifyScopeListeners();
       return obj;
     }
@@ -360,20 +383,22 @@ let items = [
   {
     key: "addBreadcrumb",
     value: function addBreadcrumb(message, num) {
+      let obj3;
       num = 100;
       const self = this;
       if (num <= 0) {
         return self;
       } else {
-        const obj = { timestamp: Scope(703).dateTimestampInSeconds() };
+        const obj = { timestamp: obj3.dateTimestampInSeconds(), message };
+        obj3 = browserPerformanceTimeOrigin;
         const merged = Object.assign(message);
+        const tmp6 = require;
         if (message.message) {
-          message = Scope(697).truncate(message.message, 2048);
-          const tmp6Result = Scope(697);
+          const tmp6Result = tmp6(697);
+          message = tmp6Result.truncate(message.message, 2048);
         } else {
           message = message.message;
         }
-        obj.message = message;
         const _breadcrumbs = self._breadcrumbs;
         _breadcrumbs.push(obj);
         if (self._breadcrumbs.length > num) {
@@ -421,15 +446,18 @@ let items = [
   {
     key: "getScopeData",
     value: function getScopeData() {
+      let obj2;
       const self = this;
-      const obj = { breadcrumbs: this._breadcrumbs, attachments: this._attachments, contexts: this._contexts, tags: this._tags, attributes: this._attributes, extra: this._extra, user: this._user, level: this._level, fingerprint: this._fingerprint || [], eventProcessors: self._eventProcessors, propagationContext: self._propagationContext, sdkProcessingMetadata: self._sdkProcessingMetadata, transactionName: self._transactionName, span: Scope(709)._getSpanForScope(self) };
+      const obj = { breadcrumbs: this._breadcrumbs, attachments: this._attachments, contexts: this._contexts, tags: this._tags, attributes: this._attributes, extra: this._extra, user: this._user, level: this._level, fingerprint: this._fingerprint || [], eventProcessors: self._eventProcessors, propagationContext: self._propagationContext, sdkProcessingMetadata: self._sdkProcessingMetadata, transactionName: self._transactionName, span: obj2._getSpanForScope(self) };
+      obj2 = _getSpanForScope;
       return obj;
     }
   },
   {
     key: "setSDKProcessingMetadata",
     value: function setSDKProcessingMetadata(arg0) {
-      this._sdkProcessingMetadata = Scope(711).merge(this._sdkProcessingMetadata, arg0, 2);
+      const obj = merge;
+      this._sdkProcessingMetadata = obj.merge(this._sdkProcessingMetadata, arg0, 2);
       return this;
     }
   },
@@ -454,22 +482,25 @@ let items = [
         event_id = event_id.event_id;
       }
       if (!event_id) {
-        event_id = Scope(695).uuid4();
-        const obj = Scope(695);
+        const obj = uuid4;
+        event_id = obj.uuid4();
       }
       const self = this;
       if (this._client) {
         const _Error = Error;
+        const self2 = this;
+        const self3 = this;
         const error = new Error("Sentry syntheticException");
         const _client = self._client;
-        const obj2 = { originalException, syntheticException: error };
+        const captureException = _client.captureException;
+        const obj2 = { originalException, syntheticException: error, event_id };
         const merged = Object.assign(event_id);
-        obj2.event_id = event_id;
-        _client.captureException(originalException, obj2, self);
+        captureException(originalException, obj2, self);
         return event_id;
       } else {
-        if (Scope(688).DEBUG_BUILD) {
-          const debug = Scope(689).debug;
+        const tmp4 = require;
+        if (_mod688.DEBUG_BUILD) {
+          const debug = tmp4(689).debug;
           debug.warn("No client configured on scope - will not capture exception!");
         }
         return event_id;
@@ -484,8 +515,8 @@ let items = [
         event_id = event_id.event_id;
       }
       if (!event_id) {
-        event_id = Scope(695).uuid4();
-        const obj = Scope(695);
+        const obj = uuid4;
+        event_id = obj.uuid4();
       }
       const self = this;
       if (this._client) {
@@ -495,17 +526,20 @@ let items = [
         }
         if (syntheticException == null) {
           const _Error = Error;
+          const self2 = this;
+          const self3 = this;
           syntheticException = new Error(originalException);
         }
         const _client = self._client;
-        const obj2 = { originalException, syntheticException };
+        const captureMessage = _client.captureMessage;
+        const obj2 = { originalException, syntheticException, event_id };
         const merged = Object.assign(event_id);
-        obj2.event_id = event_id;
-        _client.captureMessage(originalException, arg1, obj2, self);
+        captureMessage(originalException, arg1, obj2, self);
         return event_id;
       } else {
-        if (Scope(688).DEBUG_BUILD) {
-          const debug = Scope(689).debug;
+        const tmp4 = require;
+        if (_mod688.DEBUG_BUILD) {
+          const debug = tmp4(689).debug;
           debug.warn("No client configured on scope - will not capture message!");
         }
         return event_id;
@@ -520,22 +554,22 @@ let items = [
         event_id = event_id.event_id;
       }
       if (!event_id) {
-        event_id = Scope(695).uuid4();
-        const obj = Scope(695);
+        const obj = uuid4;
+        event_id = obj.uuid4();
       }
       const self = this;
       if (this._client) {
         const _client = self._client;
-        const obj2 = {};
+        const captureEvent = _client.captureEvent;
+        const obj2 = { event_id };
         const merged = Object.assign(event_id);
-        obj2.event_id = event_id;
-        _client.captureEvent(arg0, obj2, self);
+        captureEvent(arg0, obj2, self);
       } else {
-        if (Scope(688).DEBUG_BUILD) {
+        const tmp4 = require;
+        if (_mod688.DEBUG_BUILD) {
           const debug = tmp4(689).debug;
           debug.warn("No client configured on scope - will not capture event!");
         }
-        tmp4 = Scope;
       }
       return event_id;
     }
@@ -555,5 +589,6 @@ let items = [
     }
   }
 ];
+const Scope_export = _createClass(Scope, items);
 
-export const Scope = _createClass(Scope, items);
+export { Scope_export as Scope };

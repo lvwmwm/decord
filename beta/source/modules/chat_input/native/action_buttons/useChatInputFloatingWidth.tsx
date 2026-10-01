@@ -7,15 +7,19 @@
 // Module 11741 (useChatInputFloatingWidth)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import noop from "module_19" /* 19 */;
+import ChatInputConstants from "ChatInputConstants" /* 11444 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_3 = fn(11444).CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG;
+let set, set2;
+
+let closure_3 = ChatInputConstants.CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG;
 let closure_4 = { code: "function useChatInputFloatingWidthTsx1(){const{collapsedWidth,expandedWidth,progress}=this.__closure;return{width:collapsedWidth+(expandedWidth-collapsedWidth)*progress.get()};}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingWidth.tsx");
 
 export default function useChatInputFloatingWidth(expanded) {
+  let fn;
+  let tmpResult;
   expanded = expanded.expanded;
   const collapsedWidth = expanded.collapsedWidth;
   const expandedWidth = expanded.expandedWidth;
@@ -24,36 +28,45 @@ export default function useChatInputFloatingWidth(expanded) {
     num = 0;
   }
   let sharedValue;
+  const tmp2 = collapsedWidth;
   let num2 = 0;
+  const useSharedValue = expanded(collapsedWidth[2]).useSharedValue;
+  const tmp = expanded;
+  const tmp3 = expanded(collapsedWidth[2]);
   if (expanded) {
     num2 = 1;
   }
-  sharedValue = expanded(collapsedWidth[2]).useSharedValue(num2);
+  sharedValue = useSharedValue(num2);
   const items = [expanded, num, sharedValue];
   const effect = expandedWidth.useEffect(() => {
     if (expanded) {
       if (0 > 0) {
-        const obj2 = ReanimatedRexport;
-        const result = sharedValue.set(obj2.withDelay(tmp2, timing.withTiming(1, closure_3, "respect-motion-settings")));
+        set2 = sharedValue.set;
+        const withDelay = ReanimatedRexport.withDelay;
+        ReanimatedRexport;
+        const obj = timing;
+        set2(withDelay(tmp2, obj.withTiming(1, closure_3, "respect-motion-settings")));
       }
     }
     let num2 = 0;
+    set = sharedValue.set;
+    const withTiming = timing.withTiming;
+    timing;
     if (expanded) {
       num2 = 1;
     }
-    const result1 = sharedValue.set(timing.withTiming(num2, closure_3, "respect-motion-settings"));
+    const result = set(withTiming(num2, closure_3, "respect-motion-settings"));
   }, items);
-  let obj2 = { animatedStyle: null };
-  let obj = expanded(collapsedWidth[2]);
-  const fn = function p() {
-    const obj = { width: null };
-    const diff = expandedWidth - collapsedWidth;
-    obj.width = collapsedWidth + diff * sharedValue.get();
+  let obj = { animatedStyle: tmpResult.useAnimatedStyle(fn) };
+  fn = function p() {
+    let diff;
+    const obj = { width: collapsedWidth + diff * sharedValue.get() };
+    diff = expandedWidth - collapsedWidth;
     return obj;
   };
   fn.__closure = { collapsedWidth, expandedWidth, progress: sharedValue };
   fn.__workletHash = 2289574047387;
   fn.__initData = sharedValue;
-  obj2.animatedStyle = expanded(collapsedWidth[2]).useAnimatedStyle(fn);
-  return obj2;
+  tmpResult = tmp(tmp2[2]);
+  return obj;
 };

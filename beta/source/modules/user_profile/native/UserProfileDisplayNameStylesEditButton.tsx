@@ -5,136 +5,152 @@
 // Exports: default
 
 // Module 14171 (UserProfileDisplayNameStylesEditButton)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10357 */;
-import _modDef12745 from "module_12745" /* 12745 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12745 */;
 import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14172 */;
 import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14173 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const noop = fn(19);
-({ useCallback: closure_4, useMemo: hasOwnProperty } = noop);
-const View = fn(17).View;
-const Constants = fn(1074);
-({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = Constants);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { ggContainer: null, noneIcon: null };
-let size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, alignItems: "center", justifyContent: "center", paddingBottom: 4 };
-obj2.ggContainer = size;
-obj2.noneIcon = { tintColor: nativeDefault.colors.TEXT_SUBTLE };
-let closure_11 = createStyles.createStyles(obj2);
-size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let size;
+let _slicedToArray = _slicedToArray_mod;
+({ useCallback: closure_4, useMemo: hasOwnProperty } = react);
+const View = react_native.View;
+({ AnalyticEvents: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { ggContainer: size, noneIcon: obj2 };
+size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, alignItems: "center", justifyContent: "center", paddingBottom: 4 };
+createStyles = createStyles.createStyles;
+obj2 = { tintColor: nativeDefault.colors.TEXT_SUBTLE };
+let closure_11 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDisplayNameStylesEditButton.tsx");
 
 export default function UserProfileDisplayNameStylesEditButton(user) {
+  let closure_3;
+  let first;
+  let items1;
+  let pendingDisplayNameStyles;
+  let tmp9;
+  let tryItOutDisplayNameStyles;
   user = user.user;
   const guildId = user.guildId;
   const isTryItOut = user.isTryItOut;
-  closure_5 = undefined;
-  closure_6 = undefined;
+  let closure_5;
+  let closure_6;
   let displayNameStylesEffectConfig;
   const tmp = closure_11();
   _slicedToArray = tmp;
-  const nativeStackNavigation = user(isTryItOut[8]).useNativeStackNavigation();
+  let tmp3 = isTryItOut;
   let obj = user(isTryItOut[8]);
-  const isDisplayNameStylesFlywheelSettersEnabled = user(isTryItOut[9]).useIsDisplayNameStylesFlywheelSettersEnabled("UserProfileDisplayNameStylesEditButton");
+  const nativeStackNavigation = obj.useNativeStackNavigation();
   let obj2 = user(isTryItOut[9]);
+  const isDisplayNameStylesFlywheelSettersEnabled = obj2.useIsDisplayNameStylesFlywheelSettersEnabled("UserProfileDisplayNameStylesEditButton");
+  let tmp6 = user(isTryItOut[10]);
+  const useSelectedDismissibleContent = tmp6.useSelectedDismissibleContent;
   if (isDisplayNameStylesFlywheelSettersEnabled) {
     const items = [tmp2(tmp3[11]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE];
-    let items1 = items;
+    items1 = items;
   } else {
     items1 = [];
   }
-  let tmp6 = _slicedToArray(user(isTryItOut[10]).useSelectedDismissibleContent(items1, undefined, true), 2);
-  closure_5 = tmp7;
-  let obj3 = user(isTryItOut[10]);
-  const guildMemberOrUserPendingDisplayNameStyles = user(isTryItOut[12]).useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
+  [first, tmp9] = useSelectedDismissibleContent(items1, undefined, true);
+  closure_5 = tmp9;
+  const tmp2Result = user(tmp3[12]);
+  const guildMemberOrUserPendingDisplayNameStyles = tmp2Result.useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
   ({ pendingDisplayNameStyles, tryItOutDisplayNameStyles } = guildMemberOrUserPendingDisplayNameStyles);
-  const obj4 = { userId: user.id, guildId, pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true };
-  const tmp2Result = user(isTryItOut[12]);
-  const tmp9 = guildId;
+  const obj3 = { userId: user.id, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting: true };
+  const tmp11 = guildId;
+  const tmp12 = guildId(tmp3[13]);
   if (isTryItOut) {
     pendingDisplayNameStyles = tryItOutDisplayNameStyles;
   }
-  obj4.pendingDisplayNameStyles = pendingDisplayNameStyles;
-  const tmp10Result = guildId(isTryItOut[13])(obj4);
-  closure_6 = tmp10Result;
-  let tmp10 = guildId(isTryItOut[13]);
+  const tmp12Result = tmp12(obj3);
+  closure_6 = tmp12Result;
   let effectId;
-  if (tmp10Result != null) {
-    effectId = tmp10Result.effectId;
+  const useDisplayNameStylesEffectConfig = tmp2(tmp3[14]).useDisplayNameStylesEffectConfig;
+  user(tmp3[14]);
+  if (tmp12Result != null) {
+    effectId = tmp12Result.effectId;
   }
   if (effectId == null) {
     effectId = tmp2(tmp3[15]).DisplayNameEffect.SOLID;
   }
-  displayNameStylesEffectConfig = user(isTryItOut[14]).useDisplayNameStylesEffectConfig(effectId);
-  const items2 = [guildId, isTryItOut, nativeStackNavigation, tmp6[1]];
-  const items3 = [displayNameStylesEffectConfig, tmp10Result];
-  const tmp2Result2 = user(isTryItOut[14]);
-  const tmp15 = closure_5(() => {
+  displayNameStylesEffectConfig = useDisplayNameStylesEffectConfig(effectId);
+  const items2 = [guildId, isTryItOut, nativeStackNavigation, tmp9];
+  const items3 = [displayNameStylesEffectConfig, tmp12Result];
+  const tmp17 = nativeStackNavigation(() => {
+    const obj = AnalyticsUtilsDefault;
+    obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
+    const obj2 = { guildId, isTryItOut };
+    nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
+    closure_5(ContentDismissActionType.TAKE_ACTION);
+  }, items2);
+  const tmp18 = closure_5(() => {
+    let stringResult;
     if (null == closure_6) {
-      const intl2 = util.intl;
-      let stringResult = intl2.string(util.t.PoWNfe);
+      const intl2 = intl3.intl;
+      stringResult = intl2.string(intl3.t.PoWNfe);
     } else {
-      const intl = util.intl;
+      const intl = intl3.intl;
       const _HermesInternal = HermesInternal;
       stringResult = "" + intl.string(getDisplayNameStylesFontNameDefault(tmp.fontId)) + " + " + displayNameStylesEffectConfig.name;
     }
     return stringResult;
   }, items3);
-  const items4 = [tmp10Result, guildId, user.id, tmp];
-  const items5 = [tmp10Result];
-  const tmp14 = nativeStackNavigation(() => {
-    AnalyticsUtilsDefault.track(constants.DISPLAY_NAME_STYLES_FROM_SETTINGS);
-    nativeStackNavigation.navigate(constants2.DISPLAY_NAME_STYLES, { guildId, isTryItOut });
-    closure_5(ContentDismissActionType.TAKE_ACTION);
-  }, items2);
-  const tmp16 = nativeStackNavigation(() => {
+  const items4 = [tmp12Result, guildId, user.id, tmp];
+  const items5 = [tmp12Result];
+  const tmp19 = nativeStackNavigation(() => {
+    let tmp10;
     if (null == closure_6) {
-      const obj2 = { source: _modDef12745, style: closure_3.noneIcon };
-      let tmp10 = jsx(native.Icon, { source: _modDef12745, style: closure_3.noneIcon });
+      const Icon = native.Icon;
+      tmp10 = <Icon source={AssetRegistryDefault} style={closure_3.noneIcon} />;
     } else {
-      const obj = { style: closure_3.ggContainer, children: null };
-      const obj3 = { userId: user.id, guildId, userName: "Gg", pendingDisplayNameStyles: tmp, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-      obj.children = jsx(UsernameWithEffectsDefault, { userId: user.id, guildId, userName: "Gg", pendingDisplayNameStyles: tmp, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" });
       tmp10 = <View style={closure_3.ggContainer}>{null}</View>;
     }
     return tmp10;
   }, items4);
-  const obj5 = { label: null, labelTrailing: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null, trailing: null };
-  let intl = tmp2(tmp3[17]).intl;
-  obj5.label = intl.string(tmp9(isTryItOut[24])["86GtGH"]);
-  const tmp17 = nativeStackNavigation(() => {
+  const tmp20 = nativeStackNavigation(() => {
+    let effectId;
     let tmp3Result = null;
     if (null != closure_6) {
       let colors;
-      if (tmp != null) {
+      const tmp3 = jsx;
+      const tmp6 = DisplayNameStylesColorSwatchDefault;
+      if (closure_6 != null) {
         colors = tmp.colors;
       }
       if (colors == null) {
         colors = [];
       }
-      const obj = { colors, effectId: null };
-      let effectId;
-      if (tmp != null) {
+      const obj = { colors, effectId };
+      effectId = undefined;
+      if (closure_6 != null) {
         effectId = tmp.effectId;
       }
-      obj.effectId = effectId;
-      tmp3Result = jsx(DisplayNameStylesColorSwatchDefault, { colors, effectId: null });
+      tmp3Result = tmp3(tmp6, obj);
     }
     return tmp3Result;
   }, items5);
-  obj5.labelTrailing = jsx(user(isTryItOut[23]).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp6[0] === user(isTryItOut[11]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE });
-  obj5.buttonText = tmp15;
-  obj5.accessibilityValue = { text: tmp15 };
-  obj5.onPress = tmp14;
-  obj5.leading = tmp16();
-  obj5.trailing = tmp17();
-  return jsx(user(isTryItOut[23]).UserProfileEditFormButton, { label: null, labelTrailing: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null, trailing: null });
+  const UserProfileEditFormButton = tmp2(tmp3[23]).UserProfileEditFormButton;
+  let intl = tmp2(tmp3[17]).intl;
+  ({ showPremiumIcon: true, showNewBadge: first === user(tmp3[11]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE });
+  const UserProfileEditFormLabelBadges = tmp2(tmp3[23]).UserProfileEditFormLabelBadges;
+  return <UserProfileEditFormButton label={intl.string(tmp11(tmp3[24])["86GtGH"])} labelTrailing={null} buttonText={tmp18} accessibilityValue={{ text: tmp18 }} onPress={tmp17} leading={tmp19()} trailing={tmp20()} />;
 };

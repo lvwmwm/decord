@@ -11,16 +11,30 @@ import design_shared from "design/shared" /* 4686 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
 import _modDef5976 from "module_5976" /* 5976 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import ColorUtils_mod from "ColorUtils" /* 4683 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
 function PremiumRewardFillGradient(arg0) {
+  let children;
+  let items2;
+  let items3;
+  let style;
   ({ children, style } = arg0);
-  const tmp = closure_8();
-  const token = useToken.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
-  const token1 = useToken.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END);
+  let tmp = closure_8();
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
+  const obj2 = useToken;
+  const token1 = obj2.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END);
   let items = [token, token1];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     const items = [token, token1];
     return items;
   }, items);
@@ -30,74 +44,97 @@ function PremiumRewardFillGradient(arg0) {
   const transparentWhite = tmp5.transparentWhite;
   const opaqueWhite = tmp5.opaqueWhite;
   const tmp6 = useThemeDefault();
-  const isThemeDarkResult = design_shared.isThemeDark(tmp6);
-  c4 = isThemeDarkResult;
+  const obj3 = design_shared;
+  const isThemeDarkResult = obj3.isThemeDark(tmp6);
+  let c4 = isThemeDarkResult;
   let items1 = [transparentBlack, opaqueBlack, transparentWhite, opaqueWhite, isThemeDarkResult];
-  const obj4 = { style: null, children: null };
-  const items2 = [tmp.wrapper, style];
-  obj4.style = items2;
-  const memo1 = noop.useMemo(() => {
-    if (c4) {
+  const obj4 = { style: items2, children: items3 };
+  items2 = [tmp.wrapper, style];
+  const memo1 = react.useMemo(() => {
+    let items1;
+    const tmp = c4;
+    if (tmp) {
       const items = [transparentBlack, opaqueBlack];
-      let items1 = items;
+      items1 = items;
     } else {
       items1 = [transparentWhite, opaqueWhite];
     }
     return items1;
   }, items1);
-  const items3 = [timestampProducer(LinearGradientDefault, { style: tmp.fill, colors: memo, start, end, pointerEvents: "none" }), timestampProducer(LinearGradientDefault, { style: tmp.fill, colors: memo1, start: start2, end: end2, pointerEvents: "none" }), children];
-  obj4.children = items3;
-  return React5(hasOwnProperty, obj4);
+  items3 = [, , ];
+  const obj5 = { style: tmp.fill, colors: memo, start, end, pointerEvents: "none" };
+  items3[0] = metroRequire(LinearGradientDefault, obj5);
+  const obj6 = { style: tmp.fill, colors: memo1, start: start2, end: end2, pointerEvents: "none" };
+  items3[1] = metroRequire(LinearGradientDefault, obj6);
+  items3[2] = children;
+  return metroImportDefault(hasOwnProperty, obj4);
 }
 function PremiumRewardGlowGradient(arg0) {
+  let children;
+  let items1;
+  let items3;
+  let obj6;
+  let obj7;
+  let style;
   ({ children, style } = arg0);
   const tmp = closure_8();
-  const token = useToken.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
-  const token1 = useToken.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END);
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
+  const obj2 = useToken;
+  const token1 = obj2.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END);
   let items = [token, token1];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     const items = [token, token1];
     return items;
   }, items);
   const tmp7 = useThemeDefault();
-  const isThemeDarkResult = design_shared.isThemeDark(tmp7);
-  const obj4 = { style: null, children: null };
-  const items1 = [tmp.wrapper, style];
-  obj4.style = items1;
+  const obj3 = design_shared;
+  const isThemeDarkResult = obj3.isThemeDark(tmp7);
+  const obj4 = { style: items1, children: items3 };
+  items1 = [tmp.wrapper, style];
   const items2 = [tmp.glow, ];
   let glowLight = !isThemeDarkResult;
   const tmp10 = hasOwnProperty;
-  const tmp9 = React5;
+  const tmp12 = _modDef5976;
+  const tmp9 = metroImportDefault;
   if (!isThemeDarkResult) {
     glowLight = tmp.glowLight;
   }
-  const obj5 = { style: items2, maskElement: timestampProducer(LinearGradientDefault, { style: React4.absoluteFill, colors: ["transparent", "black"], start: start2, end: end2 }), children: timestampProducer(LinearGradientDefault, { style: React4.absoluteFill, colors: memo, start, end }) };
   items2[1] = glowLight;
-  const items3 = [timestampProducer(_modDef5976, obj5), children];
-  obj4.children = items3;
+  const obj5 = { style: items2, maskElement: metroRequire(LinearGradientDefault, obj6), children: metroRequire(LinearGradientDefault, obj7) };
+  obj6 = { style: React3.absoluteFill, colors: ["transparent", "black"], start: start2, end: end2 };
+  obj7 = { style: React3.absoluteFill, colors: memo, start, end };
+  items3 = [metroRequire(tmp12, obj5), children];
   return tmp9(tmp10, obj4);
 }
-get_ActivityIndicator = fn(17);
-({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let createStyles = fn(4836);
+({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
 let closure_8 = createStyles.createStyles({ wrapper: { position: "relative", overflow: "hidden" }, fill: { position: "absolute", left: 0, right: 0, bottom: 0, height: "100%" }, glow: { position: "absolute", left: 0, right: 0, bottom: 0, height: "50%" }, glowLight: { opacity: 0.5 } });
 const start = { x: 0, y: 0.5 };
 const end = { x: 1, y: 0.5 };
 const start2 = { x: 0.5, y: 0 };
 const end2 = { x: 0.5, y: 1 };
-fn(4683);
-const ColorUtils = fn(4683);
+let ColorUtils = ColorUtils_mod;
 const hexOpacityToRgbaResult = ColorUtils.hexOpacityToRgba("#000000", 0);
-createStyles = fn(4836);
-let closure_13 = createStyles.createStyleProperties({ transparentBlack: hexOpacityToRgbaResult, opaqueBlack: nativeDefault.colors.BLACK, transparentWhite: ColorUtils.hexOpacityToRgba("#FFFFFF", 0), opaqueWhite: nativeDefault.colors.WHITE });
-const size = fn(2);
+const BLACK = nativeDefault.colors.BLACK;
+ColorUtils = ColorUtils_mod;
+const hexOpacityToRgbaResult1 = ColorUtils.hexOpacityToRgba("#FFFFFF", 0);
+const WHITE = nativeDefault.colors.WHITE;
+createStyles = createStyles_mod;
+let closure_13 = createStyles.createStyleProperties({ transparentBlack: hexOpacityToRgbaResult, opaqueBlack: BLACK, transparentWhite: hexOpacityToRgbaResult1, opaqueWhite: WHITE });
 const result = size.fileFinishedImporting("modules/quests/native/PremiumRewardGradient.tsx");
 
 export default function QuestPremiumRewardGradientWrapper(visible) {
-  if (!visible.visible) {
-    const obj = { style: tmp, children: tmp2 };
-    return tmp3(hasOwnProperty, obj);
+  let children;
+  let style;
+  let tmp2;
+  ({ style, children } = visible);
+  const tmp = metroRequire;
+  if (visible.visible) {
+    tmp2 = visible.glow ? PremiumRewardGlowGradient : PremiumRewardFillGradient;
+  } else {
+    tmp2 = hasOwnProperty;
   }
+  return tmp(tmp2, { style, children });
 };

@@ -5,23 +5,28 @@
 // Exports: default
 
 // Module 16075 (ForYouSuggestedFriendsSectionHeader)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { container: { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 12, marginBottom: 8, paddingHorizontal: 24, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, noDivider: { borderTopWidth: 0, marginTop: 0 }, text: null };
-const obj3 = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 12, marginBottom: 8, paddingHorizontal: 24, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-obj2.text = { marginTop: nativeDefault.space.PX_16 };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+const obj = { container: obj2, noDivider: { borderTopWidth: 0, marginTop: 0 }, text: { marginTop: nativeDefault.space.PX_16 } };
+obj2 = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 12, marginBottom: 8, paddingHorizontal: 24, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+createStyles = createStyles.createStyles;
+({ marginTop: nativeDefault.space.PX_16 });
+let closure_4 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/notification_center/native/ForYouSuggestedFriendsSectionHeader.tsx");
 
 export default function ForYouSuggestedFriendsSectionHeader(showDivider) {
+  let intl;
   showDivider = showDivider.showDivider;
   const tmp = closure_4();
   const items = [tmp.container, ];
@@ -29,11 +34,9 @@ export default function ForYouSuggestedFriendsSectionHeader(showDivider) {
   if (!showDivider) {
     noDivider = tmp.noDivider;
   }
-  const obj = { style: items, children: null };
   items[1] = noDivider;
-  const obj2 = { style: tmp.text, color: "text-muted", variant: "text-sm/semibold", children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t["1uAmCw"]);
-  obj.children = jsx(Text_Text.Text, { style: tmp.text, color: "text-muted", variant: "text-sm/semibold", children: null });
-  return <View style={items}>{null}</View>;
+  ({ style: tmp.text, color: "text-muted", variant: "text-sm/semibold", children: intl.string(intl2.t["1uAmCw"]) });
+  const Text = Text_Text.Text;
+  intl = intl2.intl;
+  return <tmp3 style={items}>{null}</tmp3>;
 };

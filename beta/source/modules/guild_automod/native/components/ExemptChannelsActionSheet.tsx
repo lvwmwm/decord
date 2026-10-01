@@ -5,69 +5,67 @@
 // Exports: default
 
 // Module 17340 (ExemptChannelsActionSheet)
+import Fragment from "Fragment" /* 21 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
-import TableRow from "TableRow" /* 5917 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6533 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 6532 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let tmp;
+const TableRow = tmp(5917);
 function getChannelOptionId(channel) {
   return channel.channel.id;
 }
 function getChannelOptionName(name) {
   return name.name;
 }
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/ExemptChannelsActionSheet.tsx");
 
 export default function ExemptChannelsActionSheet(guildId) {
+  let categories;
+  let exemptChannels;
+  let onSave;
   guildId = guildId.guildId;
   ({ exemptChannels, onSave } = guildId);
+  let obj = guildId(504);
   const items = [GuildStore];
   const items1 = [guildId];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => GuildStore.getGuild(guildId), items1);
-  closure_129_0 = guildId;
-  let obj = guildId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId), items1);
+  let obj2 = guildId(504);
   const items2 = [GuildCategoryStore];
   const items3 = [guildId];
-  const stateFromStores1 = guildId(504).useStateFromStores(items2, () => GuildCategoryStore.getCategories(guildId), items3);
-  closure_129_1 = stateFromStores1;
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => categories.getCategories(guildId), items3);
   const items4 = [stateFromStores1];
   const items5 = [stateFromStores];
-  const memo = noop.useMemo(() => getFlattedChannelListDefault(stateFromStores._categories, stateFromStores, (channel) => {
+  const memo = react.useMemo(() => {
+    const arr = stateFromStores(dependencyMap[7])(stateFromStores1._categories, stateFromStores1, (channel) => {
+      channel = channel.channel;
+      return !channel.isThread();
+    });
+    return arr.map((channel) => {
+      let obj2;
+      channel = channel.channel;
+      const obj = { channel, name: obj2.computeChannelName(channel, closure_1_7, closure_1_6) };
+      obj2 = guildId(closure_1_2[8]);
+      return obj;
+    });
+  }, items4);
+  const callback = react.useCallback((channel) => {
     channel = channel.channel;
-    return !channel.isThread();
-  }).map((channel) => {
-    channel = channel.channel;
-    const obj = { channel, name: guildId(closure_1_2[8]).computeChannelName(channel, closure_1_7, closure_1_6) };
-    return obj;
-  }), items4);
-  const callback = noop.useCallback((channel) => {
-    const channelIconComponentWithGuild = utils_ChannelUtils.getChannelIconComponentWithGuild(channel.channel, stateFromStores);
+    const obj = utils_ChannelUtils;
+    const channelIconComponentWithGuild = obj.getChannelIconComponentWithGuild(channel, stateFromStores);
     let tmp4 = null;
     if (null != channelIconComponentWithGuild) {
-      const obj2 = { IconComponent: channelIconComponentWithGuild };
       tmp4 = jsx(TableRow.TableRow.Icon, { IconComponent: channelIconComponentWithGuild });
     }
     return tmp4;
   }, items5);
-  const obj3 = { title: null, searchPlaceholder: null, listId: "automod-exempt-channels", items: null, initialSelected: null, getId: null, getSearchText: null, renderLabel: null, renderIcon: null, onSave: null };
-  let obj2 = guildId(504);
+  stateFromStores(17339);
   const intl = guildId(1115).intl;
-  obj3.title = intl.string(guildId(1115).t.OGiMXJ);
   const intl2 = guildId(1115).intl;
-  obj3.searchPlaceholder = intl2.string(guildId(1115).t.vephiL);
-  obj3.items = memo;
-  obj3.initialSelected = exemptChannels;
-  obj3.getId = getChannelOptionId;
-  obj3.getSearchText = getChannelOptionName;
-  obj3.renderLabel = getChannelOptionName;
-  obj3.renderIcon = callback;
-  obj3.onSave = onSave;
-  return jsx(stateFromStores(17339), { title: null, searchPlaceholder: null, listId: "automod-exempt-channels", items: null, initialSelected: null, getId: null, getSearchText: null, renderLabel: null, renderIcon: null, onSave: null });
+  return <tmp5 title={intl.string(guildId(1115).t.OGiMXJ)} searchPlaceholder={intl2.string(guildId(1115).t.vephiL)} listId="automod-exempt-channels" items={memo} initialSelected={exemptChannels} getId={getChannelOptionId} getSearchText={getChannelOptionName} renderLabel={getChannelOptionName} renderIcon={callback} onSave={onSave} />;
 };

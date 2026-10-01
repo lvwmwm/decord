@@ -1,9 +1,9 @@
 // Module ID: 4763
 // Function ID: 4764
-// Name: Client
+// Name: flow/Client
 // Dependencies: [2, 1186]
 
-// Module 4763 (Client)
+// Module 4763 (flow/Client)
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import size from "module_2" /* 2 */;
 

@@ -5,23 +5,20 @@
 // Exports: NavigationIndependentTree
 
 // Module 1552 (NavigationIndependentTree)
-import NavigationIndependentTreeContext from "NavigationIndependentTreeContext" /* 1504 */;
+import Fragment from "Fragment" /* 21 */;
 import _mod1526 from "module_1526" /* 1526 */;
-import context1 from "context1" /* 1527 */;
-import NavigationContext from "NavigationContext" /* 1529 */;
-import NavigationFocusedRouteStateContext from "NavigationFocusedRouteStateContext" /* 1553 */;
-import noop from "module_19" /* 19 */;
+import _mod1527 from "module_1527" /* 1527 */;
+import react2 from "react" /* 1529 */;
+import react3 from "react" /* 1553 */;
+import react from "react" /* 19 */;
 
-require = fn;
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 
 export const NavigationIndependentTree = function NavigationIndependentTree(children) {
-  const obj = { value: "Array", children: 0 };
-  const obj2 = { value: "Array", children: 0 };
-  const obj3 = { value: "Array", children: 0 };
-  const obj4 = { value: "Array", children: jsx(NavigationIndependentTreeContext.NavigationIndependentTreeContext.Provider, { value: true, children: children.children }) };
-  obj3.children = jsx(context1.IsFocusedContext.Provider, { value: "Array", children: jsx(NavigationIndependentTreeContext.NavigationIndependentTreeContext.Provider, { value: true, children: children.children }) });
-  obj2.children = jsx(NavigationFocusedRouteStateContext.NavigationFocusedRouteStateContext.Provider, { value: "Array", children: 0 });
-  obj.children = jsx(NavigationContext.NavigationContext.Provider, { value: "Array", children: 0 });
-  return jsx(_mod1526.NavigationRouteContext.Provider, { value: "Array", children: 0 });
+  children = children.children;
+  const Provider = _mod1526.NavigationRouteContext.Provider;
+  const Provider2 = react2.NavigationContext.Provider;
+  const Provider3 = react3.NavigationFocusedRouteStateContext.Provider;
+  const Provider4 = _mod1527.IsFocusedContext.Provider;
+  return <Provider value="Array">{0}</Provider>;
 };

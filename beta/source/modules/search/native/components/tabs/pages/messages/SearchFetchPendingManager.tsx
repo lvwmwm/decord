@@ -5,11 +5,14 @@
 // Exports: useSearchFetchPendingManager
 
 // Module 16528 (SearchFetchPendingManager)
-import useInitialValueDefault from "useInitialValue" /* 5910 */;
+import reactDefault from "react" /* 5910 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11821 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-let closure_3 = function SearchFetchPendingManager() {
+let dependencyMap, importDefault, set;
+
+function SearchFetchPendingManager() {
   const obj = Object.create(new.target.prototype);
   obj.pending = new Set();
   obj.add = function add(arg0) {
@@ -26,27 +29,31 @@ let closure_3 = function SearchFetchPendingManager() {
   };
   obj.flush = function flush(searchContext, tab) {
     if (obj.has(tab)) {
+      const obj2 = searchContext(closure_1[1]);
       if (obj2.fetchNextMessages(searchContext, tab)) {
         obj.remove(tab);
       }
-      obj2 = closure_0(closure_1[1]);
     }
   };
   obj.reset = function reset() {
     obj.pending = new Set();
+    new Set();
   };
+  new Set();
   return obj;
-}.prototype;
-const size = fn(2);
+}
 const result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchFetchPendingManager.tsx");
 
 export const useSearchFetchPendingManager = function useSearchFetchPendingManager(searchContext) {
+  let closure_1;
   importDefault = searchContext;
-  const tmp = useInitialValueDefault(() => {
+  const tmp = reactDefault(function() {
     if (typeof closure_3 === "function") {
       const obj = Object.create(closure_3.prototype);
       const _Set = Set;
-      const set = new Set();
+      const self = this;
+      const self2 = this;
+      set = new Set();
       obj.pending = set;
       obj.add = function add(arg0) {
         const pending = obj.pending;
@@ -62,14 +69,15 @@ export const useSearchFetchPendingManager = function useSearchFetchPendingManage
       };
       obj.flush = function flush(searchContext, tab) {
         if (obj.has(tab)) {
+          const obj2 = searchContext(closure_1[1]);
           if (obj2.fetchNextMessages(searchContext, tab)) {
             obj.remove(tab);
           }
-          obj2 = closure_0(closure_1[1]);
         }
       };
       obj.reset = function reset() {
         obj.pending = new Set();
+        new Set();
       };
       return obj;
     } else {
@@ -78,10 +86,13 @@ export const useSearchFetchPendingManager = function useSearchFetchPendingManage
   });
   dependencyMap = tmp;
   const items = [searchContext, tmp];
-  const effect = noop.useEffect(() => SearchPlatformUtilsDefault.subscribeTextInputValue(closure_0, (arg0, arg1) => {
-    if (arg1 !== arg0) {
-      navigation.reset();
-    }
-  }), items);
+  const effect = react.useEffect(() => {
+    const obj = SearchPlatformUtilsDefault;
+    return obj.subscribeTextInputValue(searchContext, (arg0, arg1) => {
+      if (arg1 !== arg0) {
+        navigation.reset();
+      }
+    });
+  }, items);
   return tmp;
 };

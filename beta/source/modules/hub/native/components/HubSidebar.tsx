@@ -5,103 +5,136 @@
 // Exports: default
 
 // Module 15843 (HubSidebar)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import transitionToChannel from "transitionToChannel" /* 4847 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 9577 */;
 import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11791 */;
 import BaseChannelItem from "BaseChannelItem" /* 11868 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const BaseChannelItemDefault = BaseChannelItem;
+let dependencyMap;
 
-require = fn;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
 function HubItem(arg0) {
+  let DEFAULT;
+  let IconComponent;
+  let active;
+  let handleItemClick;
+  let label;
+  let tmp5;
+  let tmp6Result;
+  let unreadCount;
   ({ label, unreadCount } = arg0);
   ({ IconComponent, handleItemClick, active } = arg0);
+  const tmp = closure_9();
   const ChannelModes = BaseChannelItem.ChannelModes;
   if (active) {
-    let DEFAULT = ChannelModes.SELECTED;
-    let tmp5 = tmp2;
+    DEFAULT = ChannelModes.SELECTED;
+    tmp5 = tmp2;
   } else {
     DEFAULT = ChannelModes.DEFAULT;
     tmp5 = tmp2;
   }
-  const obj = { style: closure_9().container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: null, icon: null, channelInfo: null };
-  const tmp = closure_9();
-  obj.name = React5(tmp5(11868).BaseChannelName, { name: label, mode: DEFAULT });
-  obj.icon = React5(tmp5(11868).BaseChannelIcon, { mode: DEFAULT, IconComponent });
-  let tmp6Result = null;
+  const obj = { style: tmp.container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: metroImportDefault(tmp5(11868).BaseChannelName, { name: label, mode: DEFAULT }), icon: metroImportDefault(tmp5(11868).BaseChannelIcon, { mode: DEFAULT, IconComponent }), channelInfo: tmp6Result };
+  tmp6Result = null;
+  const tmp7 = BaseChannelItemDefault;
   if (null != unreadCount) {
     const obj2 = { value: unreadCount };
     tmp6Result = tmp6(tmp5(1177).Badge, obj2);
   }
-  obj.channelInfo = tmp6Result;
-  return React5(BaseChannelItemDefault, obj);
+  return metroImportDefault(tmp7, obj);
 }
-const View = fn(17).View;
-const InstantInviteSources = fn(1074).InstantInviteSources;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { marginVertical: fn(9577).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md }, row: { flex: 1 } };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+const View = react_native.View;
+const InstantInviteSources = Constants.InstantInviteSources;
+const CHANNEL_MARGIN_VERTICAL = RedesignChannelListConstants.CHANNEL_MARGIN_VERTICAL;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { container: obj2, row: { flex: 1 } };
+obj2 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
+let closure_9 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/hub/native/components/HubSidebar.tsx");
 
 export default function HubSidebar(guild) {
+  let closure_2;
+  let intl;
+  let intl2;
+  let intl3;
+  let items4;
   guild = guild.guild;
+  dependencyMap = undefined;
+  const tmp = guild;
+  let tmp2 = dependencyMap;
+  const flashList = guild.flashList;
+  let obj = guild(504);
   const items = [GuildChannelStore];
   const items1 = [guild.id];
-  const stateFromStores = guild(504).useStateFromStores(items, () => GuildChannelStore.getDefaultChannel(guild.id), items1);
-  const obj = guild(504);
+  const stateFromStores = obj.useStateFromStores(items, () => GuildChannelStore.getDefaultChannel(guild.id), items1);
   const tmp4 = closure_9();
+  let obj2 = guild(504);
   const items2 = [GuildChannelStore];
-  dependencyMap = guild(504).useStateFromStoresObject(items2, () => GuildChannelStore.getChannels(guild.id));
-  const obj2 = guild(504);
+  dependencyMap = obj2.useStateFromStoresObject(items2, () => GuildChannelStore.getChannels(guild.id));
   const items3 = [SelectedChannelStore];
-  const stateFromStores1 = guild(504).useStateFromStores(items3, () => {
-    let tmp2 = null != stateFromStores;
-    if (tmp2) {
-      tmp2 = SelectedChannelStore.getChannelId() === tmp.id;
-    }
+  const obj3 = guild(504);
+  const stateFromStores1 = obj3.useStateFromStores(items3, () => {
+    const tmp2 = null != stateFromStores && SelectedChannelStore.getChannelId() === tmp.id;
     return tmp2;
   });
   guild(15844);
   let tmp9Result = null;
   if (null != stateFromStores) {
     let row = null;
-    if (guild.flashList) {
+    const tmp10 = View;
+    const tmp9 = closure_8;
+    if (flashList) {
       row = tmp4.row;
     }
-    const obj4 = { style: row, children: null };
+    const obj4 = { style: row, children: items4 };
     const obj5 = { guild };
-    const items4 = [closure_7(stateFromStores(15845), obj5), , , ];
-    const obj6 = { active: stateFromStores1, IconComponent: tmp(15149).CompassIcon, label: null, handleItemClick: null, unreadCount: null };
-    const intl = tmp(1115).intl;
-    obj6.label = intl.string(tmp(1115).t.K50GHd);
-    obj6.handleItemClick = function handleItemClick() {
-      transitionToChannel.transitionToChannel(stateFromStores.id);
+    items4 = [closure_7(stateFromStores(15845), obj5), , , ];
+    const obj6 = {
+      active: stateFromStores1,
+      IconComponent: tmp(15149).CompassIcon,
+      label: intl.string(tmp(1115).t.K50GHd),
+      handleItemClick() {
+          const obj = transitionToChannel;
+          obj.transitionToChannel(stateFromStores.id);
+        },
+      unreadCount: tmp7
     };
-    obj6.unreadCount = tmp7;
+    intl = tmp(1115).intl;
     items4[1] = closure_7(HubItem, obj6);
-    const obj7 = { IconComponent: tmp(12269).PlusMediumIcon, label: null, handleItemClick: null };
-    const intl2 = tmp(1115).intl;
-    obj7.label = intl2.string(tmp(1115).t.emRpdS);
-    obj7.handleItemClick = function handleItemClick() {
-      return GuildDirectoryAddModalActionCreatorsDefault.open({ directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: stateFromStores.id });
+    const obj7 = {
+      IconComponent: tmp(12269).PlusMediumIcon,
+      label: intl2.string(tmp(1115).t.emRpdS),
+      handleItemClick() {
+          const obj = GuildDirectoryAddModalActionCreatorsDefault;
+          const obj2 = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: stateFromStores.id };
+          return obj.open(obj2);
+        }
     };
+    intl2 = tmp(1115).intl;
     items4[2] = closure_7(HubItem, obj7);
-    const obj8 = { IconComponent: tmp(4769).UserPlusIcon, label: null, handleItemClick: null };
-    const intl3 = tmp(1115).intl;
-    obj8.label = intl3.string(tmp(1115).t.MJQOuJ);
-    obj8.handleItemClick = function handleItemClick() {
-      const result = instant_invite_InstantInviteUtils.handleOpenInviteActionsheet(guild, stateFromStores.id, closure_2, InstantInviteSources.GUILD_HEADER);
+    const obj8 = {
+      IconComponent: tmp(4769).UserPlusIcon,
+      label: intl3.string(tmp(1115).t.MJQOuJ),
+      handleItemClick() {
+          const obj = instant_invite_InstantInviteUtils;
+          const result = obj.handleOpenInviteActionsheet(guild, stateFromStores.id, closure_2, InstantInviteSources.GUILD_HEADER);
+        }
     };
+    intl3 = tmp(1115).intl;
     items4[3] = closure_7(HubItem, obj8);
-    obj4.children = items4;
-    tmp9Result = closure_8(View, obj4);
+    tmp9Result = tmp9(tmp10, obj4);
   }
   return tmp9Result;
 };

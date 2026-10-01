@@ -3,7 +3,8 @@
 // Dependencies: [41, 42, 93, 95, 96, 98, 46, 89]
 
 // Module 92
-import EventEmitterDefault from "EventEmitter" /* 89 */;
+import _mod46 from "module_46" /* 46 */;
+import _modDef89 from "module_89" /* 89 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -11,19 +12,14 @@ import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
-let RCTDeviceEventEmitterImpl = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -33,73 +29,61 @@ function _isNativeReflectConstruct() {
 }
 class RCTDeviceEventEmitterImpl {
   constructor() {
-    self = this;
-    tmp = c2(this, RCTDeviceEventEmitterImpl);
-    tmp2 = closure_4;
-    obj = closure_4(RCTDeviceEventEmitterImpl);
-    tmp3 = closure_3;
-    if (metroRequire()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, RCTDeviceEventEmitterImpl);
+    const obj = _getPrototypeOf(RCTDeviceEventEmitterImpl);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(RCTDeviceEventEmitterImpl, EventEmitterDefault);
+_inherits(RCTDeviceEventEmitterImpl, _modDef89);
 const entry = {
   key: "emit",
   value: function emit(arg0) {
-    RCTDeviceEventEmitterImpl = arg0;
+    function _superPropGet(RCTDeviceEventEmitterImpl, emit, arg2, arg3) {
+      let closure_0 = arg2;
+      let prototype = RCTDeviceEventEmitterImpl;
+      const tmp = closure_1_5;
+      const tmp2 = closure_1_4;
+      if (1) {
+        prototype = RCTDeviceEventEmitterImpl.prototype;
+      }
+      const tmpResult = tmp(tmp2(prototype), "emit", arg2);
+      let closure_1 = tmpResult;
+      let fn = tmpResult;
+      if (2) {
+        fn = tmpResult;
+        if (typeof tmpResult === "function") {
+          fn = (arg0) => closure_1.apply(closure_0, arg0);
+        }
+      }
+      return fn;
+    }
+    let closure_0 = arg0;
     const substr = [...arguments].slice();
-    RCTDeviceEventEmitterImpl(46).beginEvent(() => "RCTDeviceEventEmitter.emit#" + closure_0);
+    let tmp2 = require;
+    const obj = _mod46;
+    obj.beginEvent(() => "RCTDeviceEventEmitter.emit#" + closure_0);
     try {
       const self = this;
       const items = [arg0];
-      HermesBuiltin.arraySpread(substr, 1);
-      !(function _superPropGet(RCTDeviceEventEmitterImpl, emit, arg2, arg3) {
-        closure_0 = arg2;
-        let prototype = RCTDeviceEventEmitterImpl;
-        if (1) {
-          prototype = RCTDeviceEventEmitterImpl.prototype;
-        }
-        const tmpResult = _get(_getPrototypeOf(prototype), "emit", arg2);
-        closure_1 = tmpResult;
-        let fn = tmpResult;
-        if (2) {
-          fn = tmpResult;
-          if (typeof tmpResult === "function") {
-            fn = (arg0) => closure_1.apply(closure_0, arg0);
-          }
-        }
-        return fn;
-      })(RCTDeviceEventEmitterImpl, "emit", this, 3)(items);
-      const tmp9 = (function _superPropGet(RCTDeviceEventEmitterImpl, emit, arg2, arg3) {
-        closure_0 = arg2;
-        let prototype = RCTDeviceEventEmitterImpl;
-        if (1) {
-          prototype = RCTDeviceEventEmitterImpl.prototype;
-        }
-        const tmpResult = _get(_getPrototypeOf(prototype), "emit", arg2);
-        closure_1 = tmpResult;
-        let fn = tmpResult;
-        if (2) {
-          fn = tmpResult;
-          if (typeof tmpResult === "function") {
-            fn = (arg0) => closure_1.apply(closure_0, arg0);
-          }
-        }
-        return fn;
-      })(RCTDeviceEventEmitterImpl, "emit", this, 3);
-      RCTDeviceEventEmitterImpl(46).endEvent();
-    } catch (tmp15) {
-      tmp3(tmp[6]).endEvent();
-      throw tmp15;
+      const tmp6 = _superPropGet(RCTDeviceEventEmitterImpl, "emit", this, 3);
+      HermesBuiltin.arraySpread(items, substr, 1);
+      !tmp6(items);
+      const tmp2Result = _mod46;
+      tmp2Result.endEvent();
+    } catch (tmp12) {
+      const tmp2Result2 = _mod46;
+      tmp2Result2.endEvent();
+      throw tmp12;
     }
   }
 };

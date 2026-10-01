@@ -5,82 +5,96 @@
 // Exports: default
 
 // Module 17097 (AutomodRemovedContentSheet)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
 import RowGeneratorDefault from "RowGenerator" /* 7374 */;
 import ChatItemDefault from "ChatItem" /* 8112 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const MessageFlags = fn(1074).MessageFlags;
-const jsx = fn(21).jsx;
+let obj2;
+let obj3;
+const View = react_native.View;
+const MessageFlags = Constants.MessageFlags;
+const jsx = Fragment.jsx;
 const rowGenerator = new RowGeneratorDefault();
-const createStyles = fn(4836);
-let obj2 = { content: null, blockedMessage: null };
 const tmp2 = new RowGeneratorDefault();
-obj2.content = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
-obj2.blockedMessage = { backgroundColor: nativeDefault.colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT, borderLeftWidth: 2, borderLeftColor: nativeDefault.unsafe_rawColors.RED_345 };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let createStyles = createStyles_mod;
+let obj = { content: obj2, blockedMessage: obj3 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT, borderLeftWidth: 2, borderLeftColor: nativeDefault.unsafe_rawColors.RED_345 };
+let closure_8 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_automod/native/AutomodRemovedContentSheet.tsx");
 
 export default function AutomodRemovedContentSheet(action) {
+  let StrErG;
+  let name;
+  let obj3;
+  let obj5;
+  let tmp4Result;
   action = action.action;
   const tmp = closure_8();
   let message = action.message;
   const thread = action.thread;
+  const notice = action.notice;
   const items = [message];
-  const callback = noop.useCallback((message) => {
+  const callback = react.useCallback((message) => {
     message = message.message;
-    let ephemeralIndication;
+    let ephemeralIndication1;
     if (message != null) {
-      ephemeralIndication = message.ephemeralIndication;
+      ephemeralIndication1 = message.ephemeralIndication;
     }
-    if (null != ephemeralIndication) {
-      const intl = message(1115).intl;
-      message.message.ephemeralIndication.content = intl.string(message(1115).t.Nb1EQx);
+    if (null != ephemeralIndication1) {
+      const ephemeralIndication = message.message.ephemeralIndication;
+      const intl = message(dependencyMap[7]).intl;
+      ephemeralIndication.content = intl.string(message(dependencyMap[7]).t.Nb1EQx);
     }
   }, []);
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
+    let num;
     let messageRecord;
     if (null != message) {
-      const obj2 = {};
+      const obj = { flags: num | MessageFlags.EPHEMERAL };
+      const createMessageRecord = MessageRecordUtils.createMessageRecord;
+      MessageRecordUtils;
       const merged = Object.assign(tmp);
-      let num = tmp.flags;
+      num = tmp.flags;
       if (num == null) {
         num = 0;
       }
-      obj2.flags = num | MessageFlags.EPHEMERAL;
-      messageRecord = MessageRecordUtils.createMessageRecord(obj2);
+      messageRecord = createMessageRecord(obj);
     }
     return messageRecord;
   }, items);
+  const tmp5 = message;
+  const ActionSheet = message(6618).ActionSheet;
+  const BottomSheetTitleHeader = message(6570).BottomSheetTitleHeader;
   let intl = message(1115).intl;
+  const string = intl.string;
   if (null != thread) {
-    let StrErG = tmp5(1115).t["8czF24"];
+    StrErG = tmp5(1115).t["8czF24"];
   } else {
     StrErG = tmp5(1115).t.StrErG;
   }
-  let obj = { title: intl.string(StrErG), subtitle: null };
-  let name;
+  let obj = { title: string(StrErG), subtitle: name };
+  name = undefined;
   if (thread != null) {
     name = thread.name;
   }
-  let obj2 = { header: jsx(message(6570).BottomSheetTitleHeader, { title: intl.string(StrErG), subtitle: null }), children: null };
-  obj.subtitle = name;
-  const obj3 = { style: tmp.content, children: null };
+  const obj2 = { header: jsx(BottomSheetTitleHeader, obj), children: jsx(View, obj3) };
+  obj3 = { style: tmp.content, children: tmp4Result };
   if (null != memo) {
-    const obj4 = { style: tmp.blockedMessage, children: null };
-    const obj5 = { rowGenerator, message: memo, modifyRow: callback, pointerEvents: "none" };
-    obj4.children = tmp4(ChatItemDefault, obj5);
-    let tmp4Result = tmp4(tmp8, obj4);
+    const obj4 = { style: tmp.blockedMessage, children: jsx(ChatItemDefault, obj5) };
+    obj5 = { rowGenerator, message: memo, modifyRow: callback, pointerEvents: "none" };
+    tmp4Result = tmp4(tmp8, obj4);
   } else {
-    const obj6 = { variant: "text-md/normal", color: "text-default", children: action.notice };
+    const obj6 = { variant: "text-md/normal", color: "text-default", children: notice };
     tmp4Result = tmp4(tmp5(4832).Text, obj6);
   }
-  obj3.children = tmp4Result;
-  obj2.children = <View style={tmp.content}>{null}</View>;
-  return jsx(message(6618).ActionSheet, { header: jsx(message(6570).BottomSheetTitleHeader, { title: intl.string(StrErG), subtitle: null }), children: null });
+  return jsx(ActionSheet, obj2);
 };

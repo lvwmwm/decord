@@ -6,27 +6,36 @@
 
 // Module 8869 (ScreenshareTile)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
 import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 8870 */;
-import _modDef8871 from "module_8871" /* 8871 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8871 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-const NOOP = fn(1074).NOOP;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BLACK, overflow: "hidden", flex: 1 }, image: { marginBottom: 8, width: 60, height: 40 }, label: { lineHeight: 18, textAlign: "center" }, liveContainer: { position: "absolute", top: 8, right: 8, zIndex: 2 } };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let c3;
+let closure_4;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+({ View: c3, Image: closure_4 } = react_native);
+const NOOP = Constants.NOOP;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let obj = { container: obj2, image: { marginBottom: 8, width: 60, height: 40 }, label: { lineHeight: 18, textAlign: "center" }, liveContainer: { position: "absolute", top: 8, right: 8, zIndex: 2 } };
+obj2 = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BLACK, overflow: "hidden", flex: 1 };
+let closure_8 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ScreenshareTile.tsx");
 
 export default function ScreenShareTile(onSingleTap) {
+  let intl;
+  let items;
+  let obj2;
   onSingleTap = onSingleTap.onSingleTap;
   if (onSingleTap === undefined) {
     onSingleTap = NOOP;
@@ -36,17 +45,16 @@ export default function ScreenShareTile(onSingleTap) {
     onDoubleTap = NOOP;
   }
   const tmp = closure_8();
-  const obj = { gesture: useParticipantTileTapGestureDefault({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap }), children: null };
-  const obj2 = { style: tmp.container, children: null };
-  const tmp2 = useParticipantTileTapGestureDefault({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap });
-  const items = [timestampProducer(React3, { style: tmp.liveContainer, children: timestampProducer(native.LiveTag, {}) }), , ];
-  const obj3 = { style: tmp.liveContainer, children: timestampProducer(native.LiveTag, {}) };
-  items[1] = timestampProducer(React4, { source: _modDef8871, style: tmp.image, resizeMode: "contain" });
-  const obj5 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light", children: null };
-  const intl = util.intl;
-  obj5.children = intl.string(util.t.G84gtR);
-  items[2] = timestampProducer(Text_Text.Text, obj5);
-  obj2.children = items;
-  obj.children = React5(React3, obj2);
-  return timestampProducer(LegacyBaseButton.GestureDetector, obj);
+  const obj = { gesture: useParticipantTileTapGestureDefault({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap }), children: metroImportDefault(_false, obj2) };
+  obj2 = { style: tmp.container, children: items };
+  const obj3 = { style: tmp.liveContainer, children: metroRequire(native.LiveTag, {}) };
+  const GestureDetector = LegacyBaseButton.GestureDetector;
+  items = [metroRequire(_false, obj3), , ];
+  const obj4 = { source: AssetRegistryDefault, style: tmp.image, resizeMode: "contain" };
+  items[1] = metroRequire(React3, obj4);
+  const obj5 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light", children: intl.string(intl2.t.G84gtR) };
+  const Text = Text_Text.Text;
+  intl = intl2.intl;
+  items[2] = metroRequire(Text, obj5);
+  return metroRequire(GestureDetector, obj);
 };

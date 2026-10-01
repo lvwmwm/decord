@@ -4,58 +4,36 @@
 // Dependencies: [19, 21, 7339, 6421, 10282, 7288, 10386, 15301, 2]
 
 // Module 15300 (RevenueSmokeTestModal)
+import Fragment from "Fragment" /* 21 */;
 import HeaderShared from "HeaderShared" /* 7288 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10386 */;
 import BillingFlowsDefault from "BillingFlows" /* 15301 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import NativeStackView from "NativeStackView" /* 7339 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const jsx = fn(21).jsx;
-const NativeStackNavigator = fn(7339);
-let closure_4 = NativeStackNavigator.createNativeStackNavigator();
-const size = fn(2);
+const jsx = Fragment.jsx;
+let closure_4 = NativeStackView.createNativeStackNavigator();
+const memoResult = react.memo(function RevenueSmokeTestModal() {
+  let Navigator;
+  let Screen;
+  let closure_0;
+  let obj = require("Navigator");
+  _require = obj.useAccessibilityNativeStackOptions();
+  ({
+    name: "RunAllFlows",
+    options() {
+      return { title: "Run All Payment Flows" };
+    },
+    component: BillingFlowsDefault.RunAllFlows
+  });
+  const NativePaymentContextProvider = require("NativePaymentContext").NativePaymentContextProvider;
+  ({ Navigator, Screen } = closure_4);
+  return <NativePaymentContextProvider skuIDs={[]} activeSubscription={null}>{null}</NativePaymentContextProvider>;
+});
 const result = size.fileFinishedImporting("modules/user_settings/billing/native/RevenueSmokeTestModal.tsx");
 
-export default noop.memo(function RevenueSmokeTestModal() {
-  _require = require("Navigator").useAccessibilityNativeStackOptions();
-  const obj2 = { skuIDs: [], activeSubscription: null, children: null };
-  const obj3 = {
-    screenOptions(navigation) {
-      const obj = {
-        headerTitle(children) {
-          const merged = Object.assign(children, Object.assign({ children: 0 }));
-          const merged1 = Object.assign(merged);
-          return closure_1_3(closure_1_0(closure_1_2[5]).GenericHeaderTitle, { title: children.children });
-        },
-        headerLeft: HeaderShared.getRenderModalCloseImage(navigation.navigation),
-        headerTitleAlign: "center"
-      };
-      let merged = Object.assign(closure_0);
-      let merged1 = Object.assign(getNavigationModalPresentationDefault());
-      return obj;
-    },
-    children: null
-  };
-  let obj = require("Navigator");
-  ({ Navigator, Screen } = closure_4);
-  obj3.children = <Screen name="RunAllFlows" options={function options() {
-    return { title: "Run All Payment Flows" };
-  }} component={BillingFlowsDefault.RunAllFlows} />;
-  obj2.children = <Navigator screenOptions={function screenOptions(navigation) {
-    const obj = {
-      headerTitle(children) {
-        const merged = Object.assign(children, Object.assign({ children: 0 }));
-        const merged1 = Object.assign(merged);
-        return closure_1_3(closure_1_0(closure_1_2[5]).GenericHeaderTitle, { title: children.children });
-      },
-      headerLeft: HeaderShared.getRenderModalCloseImage(navigation.navigation),
-      headerTitleAlign: "center"
-    };
-    let merged = Object.assign(closure_0);
-    let merged1 = Object.assign(getNavigationModalPresentationDefault());
-    return obj;
-  }}>{null}</Navigator>;
-  return jsx(require("NativePaymentContext").NativePaymentContextProvider, { skuIDs: [], activeSubscription: null, children: null });
-});
+export default memoResult;

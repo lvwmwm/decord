@@ -10,17 +10,25 @@ import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4724 */;
 import usePowerupActiveStatus from "usePowerupActiveStatus" /* 11996 */;
 import size from "module_2" /* 2 */;
 
-const util = tmp(1115);
+let tmp;
+const intl2 = tmp(1115);
 const PowerupActiveStatusType = GuildPowerupsConstants.PowerupActiveStatusType;
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useMultiPerkStatusValues.tsx");
 
 export default function useMultiPerkStatusValues(powerups) {
+  let intl;
+  let str;
   powerups = powerups.powerups;
-  const powerupsActiveStatuses = usePowerupActiveStatus.usePowerupsActiveStatuses(powerups.guildId, powerups);
+  let tmp2 = dependencyMap;
+  const guildId = powerups.guildId;
+  let tmp = require;
+  const obj = usePowerupActiveStatus;
+  const powerupsActiveStatuses = obj.usePowerupsActiveStatuses(guildId, powerups);
   const someResult = powerupsActiveStatuses.some((type) => type.type !== constants.INACTIVE);
   if (powerups.length <= 0) {
     return null;
   } else {
+    let tmp4;
     const reduced = powerupsActiveStatuses.reduce((acc, sourceEntitlement) => {
       sourceEntitlement = sourceEntitlement.sourceEntitlement;
       let ends_at;
@@ -29,8 +37,9 @@ export default function useMultiPerkStatusValues(powerups) {
       }
       let tmp2 = acc;
       if (null != ends_at) {
+        let tmp3;
         if (null == acc) {
-          let tmp3 = ends_at;
+          tmp3 = ends_at;
         } else {
           tmp3 = acc;
         }
@@ -39,12 +48,11 @@ export default function useMultiPerkStatusValues(powerups) {
       return tmp2;
     }, undefined);
     if (null != reduced) {
+      tmp4 = { type: "expiring", expiringAt: reduced };
       const obj2 = { type: "expiring", expiringAt: reduced };
-      let tmp4 = obj2;
     } else if (someResult) {
-      const obj3 = { type: "active", statusText: null };
-      const intl = util.intl;
-      obj3.statusText = intl.string(_modDef2519.FFLkmx);
+      const obj3 = { type: "active", statusText: intl.string(_modDef2519.FFLkmx) };
+      intl = intl2.intl;
       tmp4 = obj3;
     }
     const reduced1 = powerupsActiveStatuses.reduce((acc, type) => {
@@ -56,6 +64,7 @@ export default function useMultiPerkStatusValues(powerups) {
     }, 0);
     const first = powerupsActiveStatuses[0];
     let num;
+    const reduce = powerupsActiveStatuses.reduce;
     if (first != null) {
       let powerup = first.powerup;
       if (powerup != null) {
@@ -65,7 +74,7 @@ export default function useMultiPerkStatusValues(powerups) {
     if (num == null) {
       num = 0;
     }
-    const reduced2 = powerupsActiveStatuses.reduce((acc, powerup) => {
+    const reduced2 = reduce((arg0, powerup) => {
       powerup = powerup.powerup;
       let num;
       if (powerup != null) {
@@ -74,8 +83,8 @@ export default function useMultiPerkStatusValues(powerups) {
       if (num == null) {
         num = 0;
       }
-      let tmp = acc;
-      if (acc >= num) {
+      let tmp = arg0;
+      if (arg0 >= num) {
         let num2;
         if (powerup != null) {
           num2 = powerup.cost;
@@ -102,18 +111,13 @@ export default function useMultiPerkStatusValues(powerups) {
     if (someResult) {
       tmp10 = reduced1;
     }
-    const obj4 = { isActive: someResult, status: tmp4, cost: tmp10, costDecorator: null, expiringAt: null, activeCost: null, minCost: null, totalCost: null };
-    let str;
+    const obj4 = { isActive: someResult, status: tmp4, cost: tmp10, costDecorator: str, expiringAt: reduced, activeCost: reduced1, minCost: reduced2, totalCost: reduced3 };
+    str = undefined;
     if (!someResult) {
       if (reduced3 > tmp10) {
         str = "+";
       }
     }
-    obj4.costDecorator = str;
-    obj4.expiringAt = reduced;
-    obj4.activeCost = reduced1;
-    obj4.minCost = reduced2;
-    obj4.totalCost = reduced3;
     return obj4;
   }
 };

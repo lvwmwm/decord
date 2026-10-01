@@ -8,8 +8,6 @@
 import _mod13695 from "module_13695" /* 13695 */;
 import PartitionNumberPattern from "PartitionNumberPattern" /* 13723 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const FormatNumericToParts = function FormatNumericToParts(arg0, isNaN, getInternalSlots) {
   let length;

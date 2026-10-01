@@ -7,129 +7,130 @@
 // Module 16346 (useVibegrationsRevealedText)
 import VibegrationsStreamReveal from "VibegrationsStreamReveal" /* 16347 */;
 import vibegrationsPageVisibility from "vibegrationsPageVisibility" /* 16348 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap, target;
 
-require = fn;
-const size = fn(2);
+let react = react_mod;
 const result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsRevealedText.tsx");
 
 export const useVibegrationsRevealedText = function useVibegrationsRevealedText(source, streaming) {
+  let _undefined;
+  let arr2;
+  let closure_3;
+  let length;
+  let tmp4;
   _require = source;
   streaming = streaming.streaming;
   dependencyMap = undefined;
-  let obj5;
-  noop = undefined;
+  let obj4;
+  react = undefined;
   let ref;
-  closure_5 = undefined;
-  closure_6 = undefined;
-  target = _require;
+  let closure_5;
+  let closure_6;
+  let tmp = _require;
+  let obj = require("get initialized");
   const items = [ref];
   if (streaming) {
     streaming = !obj.useStateFromStores(items, () => ref.useReducedMotion);
   }
-  length = dependencyMap;
-  obj = require("initialize");
-  [tmp2, tmp3] = obj5(noop.useState(() => ({ target, length: target.length })), 2);
-  dependencyMap = tmp3;
-  obj5 = tmp2;
-  let arr2 = tmp2;
-  if (tmp2.target === source) {
-    let tmp5 = streaming;
-    if (!streaming) {
-      tmp5 = arr2.length === source.length;
-    }
-    if (!tmp5) {
-      let obj3 = { target: source, length: source.length };
-      obj5 = obj3;
-      arr2 = obj3;
-    }
-    if (arr2 !== tmp2) {
-      tmp3(arr2);
-    }
-    let tmp7 = streaming;
+  let obj2 = react;
+  const tmp3 = obj4(react.useState(() => ({ target, length: target.length })), 2);
+  [arr2, tmp4] = tmp3;
+  dependencyMap = tmp4;
+  obj4 = arr2;
+  let arr3 = arr2;
+  if (arr2.target !== source) {
+    let obj3 = { target: source, length };
     if (streaming) {
-      tmp7 = arr2.length < source.length;
+      let tmpResult = tmp(16347);
+      length = tmpResult.reconcileRevealedLength(arr2.target, source, arr2.length);
+    } else {
+      length = source.length;
     }
-    noop = tmp7;
-    ref = obj2.useRef(arr2);
-    const layoutEffect = obj2.useLayoutEffect(() => {
-      closure_4.current = obj5;
-    });
-    closure_5 = obj2.useRef(0);
-    closure_6 = obj2.useRef(0);
-    const items1 = [tmp7];
-    const effect = obj2.useEffect(() => {
-      if (closure_3) {
-        ref3.current = 0;
-        const _requestAnimationFrame = requestAnimationFrame;
-        function step(current) {
-          if (0 === ref3.current) {
-            let REVEAL_FRAME_MS = VibegrationsStreamReveal.REVEAL_FRAME_MS;
-          } else {
-            REVEAL_FRAME_MS = current - tmp.current;
-          }
-          if (REVEAL_FRAME_MS >= VibegrationsStreamReveal.REVEAL_FRAME_MS) {
-            tmp.current = current;
-            current = ref.current;
-            const obj3 = { target: null, revealed: null, elapsedMs: null };
-            ({ target: obj2.target, length: obj2.revealed } = current);
-            obj3.elapsedMs = REVEAL_FRAME_MS;
-            const nextRevealLengthResult = VibegrationsStreamReveal.nextRevealLength(obj3);
-            if (nextRevealLengthResult !== current.length) {
-              obj5 = { target: current.target, length: nextRevealLengthResult };
-              c1(obj5);
-            }
-          }
-          closure_5.current = requestAnimationFrame(step);
+    obj4 = obj3;
+    arr3 = obj3;
+  }
+  const tmp5 = streaming || arr3.length === source.length;
+  if (!tmp5) {
+    obj4 = { target: source, length: source.length };
+    arr3 = obj4;
+  }
+  if (arr3 !== arr2) {
+    tmp4(arr3);
+  }
+  react = tmp7;
+  ref = obj2.useRef(arr3);
+  const layoutEffect = obj2.useLayoutEffect(() => {
+    ref.current = obj4;
+  });
+  closure_5 = obj2.useRef(0);
+  closure_6 = obj2.useRef(0);
+  const items1 = [streaming && arr3.length < source.length];
+  const effect = obj2.useEffect(() => {
+    const tmp = closure_3;
+    if (tmp) {
+      ref3.current = 0;
+      const _requestAnimationFrame = requestAnimationFrame;
+      function step(current) {
+        let REVEAL_FRAME_MS;
+        if (0 === ref3.current) {
+          REVEAL_FRAME_MS = VibegrationsStreamReveal.REVEAL_FRAME_MS;
+        } else {
+          REVEAL_FRAME_MS = current - tmp.current;
         }
-        ref2.current = requestAnimationFrame(step);
-        return () => cancelAnimationFrame(ref2.current);
+        if (REVEAL_FRAME_MS >= VibegrationsStreamReveal.REVEAL_FRAME_MS) {
+          ref3.current = current;
+          current = ref.current;
+          const obj3 = { target: null, revealed: null, elapsedMs: REVEAL_FRAME_MS };
+          ({ target: obj2.target, length: obj2.revealed } = current);
+          const obj = VibegrationsStreamReveal;
+          const nextRevealLengthResult = obj.nextRevealLength(obj3);
+          if (nextRevealLengthResult !== current.length) {
+            const obj5 = { target: current.target, length: nextRevealLengthResult };
+            c1(obj5);
+          }
+        }
+        closure_5.current = requestAnimationFrame(step);
       }
-    }, items1);
-    const items2 = [tmp7];
-    const effect1 = obj2.useEffect(() => {
-      if (closure_3) {
+      ref2.current = requestAnimationFrame(step);
+      return () => cancelAnimationFrame(ref2.current);
+    }
+  }, items1);
+  const items2 = [streaming && arr3.length < source.length];
+  const effect1 = obj2.useEffect(() => {
+    if (closure_3) {
+      let obj = vibegrationsPageVisibility;
+      const tmp = require;
+      if (obj.isPageHidden()) {
+        target = ref.current.target;
+        let obj2 = { target, length: target.length };
+        _undefined(obj2);
+      }
+      function flushIfHidden() {
+        const obj = closure_0(c1[5]);
         if (obj.isPageHidden()) {
           target = ref.current.target;
-          let obj2 = { target, length: target.length };
+          const obj2 = { target, length: target.length };
           _undefined(obj2);
         }
-        function flushIfHidden() {
-          if (obj.isPageHidden()) {
-            target = ref.current.target;
-            const obj2 = { target, length: target.length };
-            dependencyMap(obj2);
-          }
-        }
-        obj = vibegrationsPageVisibility;
-        return vibegrationsPageVisibility.subscribePageVisibility(flushIfHidden);
       }
-    }, items2);
-    const _Math = Math;
-    const bound = Math.min(arr2.length, source.length);
-    let substr = source;
-    if (bound < source.length) {
-      substr = source.slice(0, bound);
+      const tmpResult = tmp(16348);
+      return tmpResult.subscribePageVisibility(flushIfHidden);
     }
-    const obj4 = { text: substr, revealing: null };
-    if (streaming) {
-      streaming = bound < source.length;
-    }
-    obj4.revealing = streaming;
-    return obj4;
-  } else {
-    obj5 = { target: source, length: null };
-    if (streaming) {
-      ({ target, length } = tmp2);
-      let length2 = target(16347).reconcileRevealedLength(target, source, length);
-      const targetResult = target(16347);
-    } else {
-      length2 = source.length;
-    }
-    obj5.length = length2;
+  }, items2);
+  const bound = Math.min(arr3.length, source.length);
+  let substr = source;
+  if (bound < source.length) {
+    substr = source.slice(0, bound);
   }
+  let obj5 = { text: substr, revealing: streaming };
+  if (streaming) {
+    streaming = bound < source.length;
+  }
+  return obj5;
 };

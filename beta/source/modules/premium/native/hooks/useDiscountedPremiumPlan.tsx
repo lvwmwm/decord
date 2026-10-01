@@ -5,21 +5,22 @@
 // Exports: useDiscountedPremiumPlan
 
 // Module 8683 (useDiscountedPremiumPlan)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import IAPStore from "IAPStore" /* 6658 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/hooks/useDiscountedPremiumPlan.tsx");
 
 export const useDiscountedPremiumPlan = function useDiscountedPremiumPlan(premiumDiscountOffer, items3) {
+  let memo;
   _require = premiumDiscountOffer;
   dependencyMap = items3;
   const items = [premiumDiscountOffer, items3];
   memo = memo.useMemo(() => {
-    if (null == closure_0) {
+    if (null == premiumDiscountOffer) {
       return null;
     } else {
       const discount = tmp.discount;
@@ -35,10 +36,10 @@ export const useDiscountedPremiumPlan = function useDiscountedPremiumPlan(premiu
   }, items);
   const items1 = [IAPStore];
   const items2 = [memo];
-  const obj = require("initialize");
-  return {
+  const obj = require("get initialized");
+  const obj2 = {
     discountedPlan: memo,
-    discountedProduct: require("initialize").useStateFromStores(items1, () => {
+    discountedProduct: obj.useStateFromStores(items1, () => {
       let product = null;
       if (null != memo) {
         product = IAPStore.getProduct(tmp.productId);
@@ -46,4 +47,5 @@ export const useDiscountedPremiumPlan = function useDiscountedPremiumPlan(premiu
       return product;
     }, items2)
   };
+  return obj2;
 };

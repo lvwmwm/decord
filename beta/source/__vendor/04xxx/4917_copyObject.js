@@ -6,25 +6,24 @@
 // Module 4917 (copyObject)
 
 export default function copyObject(arg0, arg1, arg2, fn) {
-  let obj = arg2;
-  if (!arg2) {
-    obj = {};
-  }
+  let num;
+  const tmp = arg2 || {};
+  const length = arg1.length;
   for (let num = 0; num < length; num = num + 1) {
-    let tmp = arg1[num];
-    let tmp3;
+    let tmp2 = arg1[num];
+    let tmp4;
     if (fn) {
-      tmp3 = fn(obj[tmp], arg0[tmp], tmp, obj, arg0);
+      tmp4 = fn(tmp[tmp2], arg0[tmp2], tmp2, tmp, arg0);
     }
-    if (undefined === tmp3) {
-      tmp3 = arg0[tmp];
+    if (undefined === tmp4) {
+      tmp4 = arg0[tmp2];
     }
-    let tmp7 = require;
+    let tmp8 = require;
     if (arg2) {
-      let tmp10 = tmp7(4918)(obj, tmp, tmp3);
+      let tmp11 = tmp8(4918)(tmp, tmp2, tmp4);
     } else {
-      let tmp9 = tmp7(668)(obj, tmp, tmp3);
+      let tmp10 = tmp8(668)(tmp, tmp2, tmp4);
     }
   }
-  return obj;
+  return tmp;
 };

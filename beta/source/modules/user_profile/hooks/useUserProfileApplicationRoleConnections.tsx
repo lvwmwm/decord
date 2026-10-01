@@ -5,26 +5,31 @@
 // Exports: default
 
 // Module 12675 (useUserProfileApplicationRoleConnections)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const useMemo = _mod19.useMemo;
+const useMemo = react.useMemo;
 let closure_4 = [];
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useUserProfileApplicationRoleConnections.tsx");
 
 export default function useUserProfileApplicationRoleConnections(arg0) {
+  let closure_0;
+  let stateFromStores;
   _require = arg0;
   const items = [UserProfileStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => UserProfileStore.getUserProfile(closure_0));
+  const obj = require("get initialized");
+  stateFromStores = obj.useStateFromStores(items, () => UserProfileStore.getUserProfile(closure_0));
   let prop;
+  const tmp2 = useMemo;
   if (stateFromStores != null) {
     prop = stateFromStores.applicationRoleConnections;
   }
   const items1 = [prop];
-  return useMemo(() => {
+  return tmp2(() => {
     let prop;
     if (stateFromStores != null) {
       prop = tmp.applicationRoleConnections;

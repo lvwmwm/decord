@@ -5,54 +5,56 @@
 // Exports: default
 
 // Module 17168 (openInteractionIframeModal)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import InteractionIframeConstants from "InteractionIframeConstants" /* 17169 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_5 = async function _openInteractionIframeModal(arg0, value) {
-  if (c1 === 2) {
-    c1 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c1 = 2;
+const require = globalThis.__r;
+let c1;
+
+let obj = function _openInteractionIframeModal() {
+  let paths;
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
-        c1 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c1 = 3;
-        const obj3 = { value, done: true };
-        return obj3;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[3], paths.paths), closure_0, React4);
-        c1 = 3;
         return { value: "HermesInternal", done: null };
       }
-    } catch (tmp10) {
-      c1 = tmp;
-      throw tmp10;
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          obj = require("ModalActionCreators");
+          obj.pushLazy(require("asyncRequire")(paths[3], paths.paths), closure_0, closure_2_4);
+          c1 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp9) {
+        c1 = 3;
+        throw tmp9;
+      }
     }
-  }
+  });
+  return obj(...arguments);
 };
-let closure_4 = fn(17169).INTERACTION_IFRAME_MODAL_KEY;
-const size = fn(2);
+let closure_4 = InteractionIframeConstants.INTERACTION_IFRAME_MODAL_KEY;
 const result = size.fileFinishedImporting("modules/interaction_components/openInteractionIframeModal.native.tsx");
 
 export default function openInteractionIframeModal() {
-  const self = this;
-  const apply = closure_5.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

@@ -4,25 +4,30 @@
 // Dependencies: [7028, 7032, 7033, 654, 650, 646]
 
 // Module 7027 (baseUniq)
+import setToArray from "setToArray" /* 654 */;
 import arrayIncludes from "arrayIncludes" /* 7028 */;
 
 
 export default function baseUniq(arg0, fn, arg2) {
+  let flag;
+  let items1;
   let tmpResult = arrayIncludes;
   const items = [];
   if (arg2) {
     tmpResult = tmp(7032);
-    let flag = false;
-    let items1 = items;
-  } else if (length >= 200) {
+    flag = false;
+    items1 = items;
+  } else if (arg0.length >= 200) {
     let tmp4 = null;
     if (!fn) {
       tmp4 = tmp(7033)(arg0);
     }
     if (tmp4) {
-      return tmp(654)(tmp4);
+      return setToArray(tmp4);
     } else {
       tmpResult = tmp(650);
+      const self = this;
+      const self2 = this;
       items1 = new tmp(646)();
       flag = false;
     }
@@ -36,29 +41,30 @@ export default function baseUniq(arg0, fn, arg2) {
   let num2 = 0;
   if (0 < arg0.length) {
     while (true) {
-      let tmp7 = arg0[num2];
-      let tmp9 = tmp7;
+      let num3;
+      let tmp5 = arg0[num2];
+      let tmp7 = tmp5;
       if (fn) {
-        tmp9 = fn(tmp7);
+        tmp7 = fn(tmp5);
       }
       if (arg2) {
-        let num3 = tmp7;
+        num3 = tmp5;
       } else {
         num3 = 0;
       }
       if (flag) {
-        if (tmp9 == tmp9) {
-          let tmp12 = +items1.length;
-          let diff = tmp12 - 1;
-          if (!tmp12) {
+        if (tmp7 == tmp7) {
+          let tmp10 = +items1.length;
+          let diff = tmp10 - 1;
+          if (!tmp10) {
             if (fn) {
-              let arr = items1.push(tmp9);
+              let arr = items1.push(tmp7);
             }
             let arr2 = items.push(num3);
           } else {
-            while (items1[diff] !== tmp9) {
-              let tmp15 = +diff;
-              diff = tmp15 - 1;
+            while (items1[diff] !== tmp7) {
+              let tmp13 = +diff;
+              diff = tmp13 - 1;
             }
           }
           num2 = num2 + 1;
@@ -67,9 +73,9 @@ export default function baseUniq(arg0, fn, arg2) {
           }
         }
       }
-      if (!tmpResult(items1, tmp9, arg2)) {
+      if (!tmpResult(items1, tmp7, arg2)) {
         if (items1 !== items) {
-          let arr6 = items1.push(tmp9);
+          let arr6 = items1.push(tmp7);
         }
         let arr7 = items.push(num3);
       }

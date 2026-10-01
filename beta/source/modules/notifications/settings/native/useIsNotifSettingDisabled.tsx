@@ -9,34 +9,41 @@ import _modDef2813 from "module_2813" /* 2813 */;
 import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 15540 */;
 import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 15541 */;
 import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 15539 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/notifications/settings/native/useIsNotifSettingDisabled.tsx");
 
 export default function useIsNotifSettingDisabled(arg0) {
+  let closure_0;
+  let intl;
   _require = arg0;
+  let tmp = _require;
+  let obj = require("get initialized");
   const items = [DeclarativeSystemNotifPermissionStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => DeclarativeSystemNotifPermissionStore.isDisabled(closure_0));
+  const stateFromStores = obj.useStateFromStores(items, () => DeclarativeSystemNotifPermissionStore.isDisabled(closure_0));
   let tmp4 = !stateFromStores;
   if (stateFromStores) {
     tmp4 = null == DeclarativeSystemNotifPermissionHelpersDefault.openSystemNotifSettings;
   }
   let tmp7 = !tmp4;
-  if (!tmp4) {
-    const obj2 = { label: null, onPress: null };
-    const intl = require("util").intl;
-    obj2.label = intl.string(_modDef2813.TVZ0Fm);
-    obj2.onPress = function handleOpenSystem() {
-      const result = DeclarativeSystemNotifPermissionAnalytics.trackSystemNotifSettingsOpened(closure_0);
-      const tmp = closure_0;
-      const openSystemNotifSettings = DeclarativeSystemNotifPermissionHelpersDefault.openSystemNotifSettings;
-      if (openSystemNotifSettings != null) {
-        const result1 = openSystemNotifSettings(tmp);
-      }
+  if (tmp7) {
+    const obj2 = {
+      label: intl.string(_modDef2813.TVZ0Fm),
+      onPress: function handleOpenSystem() {
+          const obj = DeclarativeSystemNotifPermissionAnalytics;
+          const result = obj.trackSystemNotifSettingsOpened(closure_0);
+          const openSystemNotifSettings = DeclarativeSystemNotifPermissionHelpersDefault.openSystemNotifSettings;
+          DeclarativeSystemNotifPermissionHelpersDefault;
+          const tmp = closure_0;
+          if (openSystemNotifSettings != null) {
+            const result1 = openSystemNotifSettings(tmp);
+          }
+        }
     };
+    intl = tmp(1115).intl;
     tmp7 = obj2;
   }
   return tmp7;

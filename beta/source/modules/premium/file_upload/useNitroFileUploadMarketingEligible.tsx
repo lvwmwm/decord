@@ -14,13 +14,18 @@ const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/premium/file_upload/useNitroFileUploadMarketingEligible.tsx");
 
 export const useNitroFileUploadAnnouncementEligible = function useNitroFileUploadAnnouncementEligible(MainViewTooltipActionSheets) {
-  let isPremiumSubscriber = useIsPremiumSubscriber.useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  const obj = useIsPremiumSubscriber;
+  let isPremiumSubscriber = obj.useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  const obj2 = NitroFileUploadExperiments;
   if (isPremiumSubscriber) {
     isPremiumSubscriber = obj2.useNitroFileUploadRolloutEnabled(MainViewTooltipActionSheets);
   }
   return isPremiumSubscriber;
 };
 export const useNitroFileUploadUpsellEligible = function useNitroFileUploadUpsellEligible(MainViewTooltipActionSheets) {
-  const isPremiumSubscriber = useIsPremiumSubscriber.useIsPremiumSubscriber(PremiumTypes.TIER_2);
-  return NitroFileUploadExperiments.useNonNitroFileUploadMarketingEnabled(MainViewTooltipActionSheets) && !isPremiumSubscriber;
+  const obj = useIsPremiumSubscriber;
+  const isPremiumSubscriber = obj.useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  const obj2 = NitroFileUploadExperiments;
+  const tmp2 = obj2.useNonNitroFileUploadMarketingEnabled(MainViewTooltipActionSheets) && !isPremiumSubscriber;
+  return tmp2;
 };

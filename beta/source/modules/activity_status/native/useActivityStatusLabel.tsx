@@ -5,31 +5,33 @@
 // Exports: default
 
 // Module 12844 (useActivityStatusLabel)
+import Constants from "Constants" /* 1074 */;
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10337 */;
 import useUserVoiceActivity from "useUserVoiceActivity" /* 10338 */;
 import isGameActivityDefault from "isGameActivity" /* 10345 */;
 import getActivityStatusTextDefault from "getActivityStatusText" /* 10347 */;
+import VoiceActivityStatus from "VoiceActivityStatus" /* 10351 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import size from "module_2" /* 2 */;
 
-const util = v0wJXSh(1115);
-const VoiceActivityStatus = v0wJXSh(10351);
-require = fn;
-const ActivityTypes = fn(1074).ActivityTypes;
-const size = fn(2);
+let type;
+
+const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/activity_status/native/useActivityStatusLabel.tsx");
 
 export default function useActivityStatusLabel(userId) {
   userId = userId.userId;
   const guildId = userId.guildId;
   let gameMentionsAsPlainText;
+  let obj = userId(gameMentionsAsPlainText[7]);
   let items = [PresenceStore];
   let items1 = [userId];
-  const stateFromStores = userId(gameMentionsAsPlainText[7]).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     if (null == userId) {
       return null;
     } else {
@@ -51,25 +53,30 @@ export default function useActivityStatusLabel(userId) {
       return tmp5;
     }
   }, items1);
-  let obj = userId(gameMentionsAsPlainText[7]);
-  gameMentionsAsPlainText = userId(gameMentionsAsPlainText[8]).useGameMentionsAsPlainText(stateFromStores);
   let obj2 = userId(gameMentionsAsPlainText[8]);
+  gameMentionsAsPlainText = obj2.useGameMentionsAsPlainText(stateFromStores);
+  let obj3 = userId(gameMentionsAsPlainText[7]);
   const items2 = [PresenceStore, ApplicationStreamingStore, RelationshipStore, ChannelStore, PermissionStore, VoiceStateStore];
   const items3 = [userId, guildId, gameMentionsAsPlainText];
-  return userId(gameMentionsAsPlainText[7]).useStateFromStores(items2, () => {
+  return obj3.useStateFromStores(items2, () => {
+    let activities;
+    let voiceActivityStatusText;
+    const tmp = userId;
     if (null != userId) {
       if (RelationshipStore.isBlockedOrIgnored(tmp)) {
         return null;
       }
     }
-    if (null != userId) {
-      const activities = PresenceStore.getActivities(tmp);
+    if (null != tmp) {
+      activities = PresenceStore.getActivities(tmp);
     }
-    let v0wJXSh = require;
-    let obj = dependencyMap;
     const items = [ApplicationStreamingStore, RelationshipStore];
-    const discoverableApplicationStream = useDiscoverableApplicationStream.getDiscoverableApplicationStream(tmp, items);
-    const voiceChannel = useUserVoiceActivity.getVisibleUserVoiceActivity({ userId, guildId }, { ChannelStore, PermissionStore, VoiceStateStore }).voiceChannel;
+    const obj = useDiscoverableApplicationStream;
+    const discoverableApplicationStream = obj.getDiscoverableApplicationStream(tmp, items);
+    const obj2 = useUserVoiceActivity;
+    const obj3 = { userId: tmp, guildId };
+    const obj4 = { ChannelStore, PermissionStore, VoiceStateStore };
+    const voiceChannel = obj2.getVisibleUserVoiceActivity(obj3, obj4).voiceChannel;
     if (null != discoverableApplicationStream) {
       let name;
       if (activities != null) {
@@ -78,14 +85,17 @@ export default function useActivityStatusLabel(userId) {
           name = found.name;
         }
       }
-      if (null == name) {
-        const intl = util.intl;
-        let stringResult = intl.string(util.t.eXan7B);
+      if (null != name) {
+        let formatToPlainStringResult;
+        if ("" !== name) {
+          const intl2 = tmp4(1115).intl;
+          const obj5 = { name };
+          formatToPlainStringResult = intl2.formatToPlainString(tmp4(1115).t["0wJXSh"], obj5);
+        }
+        voiceActivityStatusText = formatToPlainStringResult;
       }
-      const intl2 = util.intl;
-      v0wJXSh = util.t["0wJXSh"];
-      obj = { name };
-      stringResult = intl2.formatToPlainString(v0wJXSh, obj);
+      const intl = tmp4(1115).intl;
+      formatToPlainStringResult = intl.string(tmp4(1115).t.eXan7B);
     } else {
       let found1;
       if (activities != null) {
@@ -99,28 +109,22 @@ export default function useActivityStatusLabel(userId) {
         if (text == null) {
           text = null;
         }
-        let voiceActivityStatusText = text;
+        voiceActivityStatusText = text;
       } else {
         voiceActivityStatusText = null;
         if (null != voiceChannel) {
-          voiceActivityStatusText = VoiceActivityStatus.getVoiceActivityStatusText(voiceChannel);
-          const v0wJXShResult = VoiceActivityStatus;
+          const tmp4Result = VoiceActivityStatus;
+          voiceActivityStatusText = tmp4Result.getVoiceActivityStatusText(voiceChannel);
         }
       }
-      const items1 = [voiceActivityStatusText, gameMentionsAsPlainText];
-      const found2 = items1.filter((item) => {
-        let tmp = null != item;
-        if (tmp) {
-          tmp = "" !== item;
-        }
-        return tmp;
-      });
-      const joined = found2.join(", ");
-      let tmp17 = null;
-      if ("" !== joined) {
-        tmp17 = joined;
-      }
-      return tmp17;
     }
+    const items1 = [voiceActivityStatusText, gameMentionsAsPlainText];
+    const found2 = items1.filter((item) => null != item && "" !== item);
+    const joined = found2.join(", ");
+    let tmp16 = null;
+    if ("" !== joined) {
+      tmp16 = joined;
+    }
+    return tmp16;
   }, items3);
 };

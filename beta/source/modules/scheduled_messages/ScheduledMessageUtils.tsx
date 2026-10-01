@@ -6,45 +6,61 @@
 
 // Module 7265 (ScheduledMessageUtils)
 import LoggerDefault from "Logger" /* 3 */;
+import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef38 from "module_38" /* 38 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl7 from "intl" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1970 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
-import parseContentForSuppressNotifications from "parseContentForSuppressNotifications" /* 7097 */;
+import parseContentForSuppressNotificationsDefault from "parseContentForSuppressNotifications" /* 7097 */;
 import ScheduledMessageTypes from "ScheduledMessageTypes" /* 7267 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 7266 */;
+import ApexExperiment from "ApexExperiment" /* 1435 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const parseContentForSuppressNotificationsDefault = parseContentForSuppressNotifications;
+let _require;
 
-require = fn;
-const Constants = fn(1074);
-({ AnalyticEvents: metroRequire, MessageFlags: closure_7, Permissions: closure_8 } = Constants);
-const PremiumTypes = fn(1374).PremiumTypes;
-const ScheduledMessagesConstants = fn(7266);
-({ MAX_SCHEDULE_TIME_AFTER_CREATION_SECONDS: c10, MAX_SCHEDULE_TIME_INTO_FUTURE_SECONDS: closure_11, MAX_SCHEDULED_MESSAGES_PER_USER: closure_12, MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS: map1 } = ScheduledMessagesConstants);
+let c10;
+let closure_12;
+let map1;
+let merged;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let tmp;
+let unpackModuleId;
+const parseContentForSuppressNotifications = tmp(7097);
+({ AnalyticEvents: metroRequire, MessageFlags: metroImportDefault, Permissions: metroImportAll } = Constants);
+const PremiumTypes = PremiumConstants.PremiumTypes;
+({ MAX_SCHEDULE_TIME_AFTER_CREATION_SECONDS: c10, MAX_SCHEDULE_TIME_INTO_FUTURE_SECONDS: unpackModuleId, MAX_SCHEDULED_MESSAGES_PER_USER: closure_12, MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS: map1 } = ScheduledMessagesConstants);
+let tmp4 = new LoggerDefault("Scheduled Messages");
 class ScheduledMessagesConfig {
-  constructor(arg0, arg1) {
-    merged = Object.assign({ enabled: false, limit: 0 });
-    tmp2 = closure_1(closure_2[7])(null != fn.limit, "Config is missing scheduled message limit");
-    merged.enabled = global;
-    merged.limit = fn.limit;
+  constructor(enabled, limit) {
+    const merged = Object.assign({ enabled: false, limit: 0 });
+    _modDef38(null != limit.limit, "Config is missing scheduled message limit");
+    merged.enabled = enabled;
+    merged.limit = limit.limit;
     return merged;
   }
 }
-const ApexExperiment = fn(1435);
-let obj2 = { name: "2026-08-scheduled-messages", kind: "user", defaultConfig: null, variations: null };
-let merged = Object.assign({ enabled: false, limit: 0 });
-_modDef38(true, "Config is missing scheduled message limit");
+let obj = { name: "2026-08-scheduled-messages", kind: "user", defaultConfig: merged, variations: obj2 };
+const createApexExperiment = ApexExperiment.createApexExperiment;
+merged = Object.assign({ enabled: false, limit: 0 });
+let tmp7 = _modDef38(true, "Config is missing scheduled message limit");
 merged.enabled = false;
 merged.limit = 0;
-obj2.defaultConfig = merged;
-let obj3 = {
+obj2 = {
   1: null,
   2: (arg0) => {
     const parsed = JSON.parse(arg0);
@@ -59,7 +75,7 @@ let obj3 = {
     }
   }
 };
-obj3[2] = (arg0) => {
+obj2[2] = (arg0) => {
   const parsed = JSON.parse(arg0);
   if (typeof ScheduledMessagesConfig === "function") {
     const merged = Object.assign({ enabled: false, limit: 0 });
@@ -71,23 +87,26 @@ obj3[2] = (arg0) => {
     throw new TypeError("Trying to call a non-function");
   }
 };
-obj2.variations = obj3;
-let closure_15 = ApexExperiment.createApexExperiment(obj2);
-const size = fn(2);
+let closure_15 = createApexExperiment(obj);
 let result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageUtils.tsx");
 
-export const scheduledMessageLogger = new LoggerDefault("Scheduled Messages");
+export const scheduledMessageLogger = tmp4;
 export const parseContentAndFlagsForSilentMessage = function parseContentAndFlagsForSilentMessage(arg0) {
+  let content;
+  let flags;
+  let tmp4;
   ({ content, flags } = arg0);
   const tmp2 = _slicedToArray(parseContentForSuppressNotificationsDefault(content), 2);
   const items = [, ];
   if (tmp2[0]) {
     items[0] = tmp2[1];
+    const addFlag = FlagUtils.addFlag;
+    FlagUtils;
     if (flags == null) {
       flags = 0;
     }
-    items[1] = FlagUtils.addFlag(flags, constants2.SUPPRESS_NOTIFICATIONS);
-    let tmp4 = items;
+    items[1] = addFlag(flags, metroImportDefault.SUPPRESS_NOTIFICATIONS);
+    tmp4 = items;
   } else {
     items[0] = content;
     let num = flags;
@@ -100,20 +119,28 @@ export const parseContentAndFlagsForSilentMessage = function parseContentAndFlag
   return tmp4;
 };
 export const unparseContentAndFlagsForSilentMessage = function unparseContentAndFlagsForSilentMessage(createArgs) {
+  let content;
+  let flags;
   ({ content, flags } = createArgs);
+  const hasFlag = FlagUtils.hasFlag;
+  FlagUtils;
   if (flags == null) {
     flags = 0;
   }
   let combined = content;
-  if (obj.hasFlag(flags, constants2.SUPPRESS_NOTIFICATIONS)) {
+  if (hasFlag(flags, metroImportDefault.SUPPRESS_NOTIFICATIONS)) {
     const _HermesInternal = HermesInternal;
     combined = "" + parseContentForSuppressNotifications.SILENT_SENTINEL + " " + content;
   }
   return combined;
 };
 export const trackScheduledMessageTimePickerOpened = function trackScheduledMessageTimePickerOpened(arg0) {
+  let channelId;
+  let entryPoint;
+  let isEditing;
   ({ entryPoint, isEditing, channelId } = arg0);
-  AnalyticsUtilsDefault.track(constants.SCHEDULED_MESSAGE_TIME_PICKER_OPENED, { entry_point: entryPoint, is_editing: isEditing, channel_id: channelId });
+  const obj = AnalyticsUtilsDefault;
+  obj.track(metroRequire.SCHEDULED_MESSAGE_TIME_PICKER_OPENED, { entry_point: entryPoint, is_editing: isEditing, channel_id: channelId });
 };
 export const useCanUseScheduledMessages = function useCanUseScheduledMessages() {
   return closure_15.useConfig({ location: "useCanUseScheduledMessages" }).enabled;
@@ -121,16 +148,14 @@ export const useCanUseScheduledMessages = function useCanUseScheduledMessages() 
 export const useCanSendScheduledMessagesInChannel = function useCanSendScheduledMessagesInChannel(channel) {
   _require = channel;
   let enabled = closure_15.useConfig({ location: "useCanUseScheduledMessages" }).enabled;
+  const obj = require("get initialized");
   const items = [PermissionStore];
   if (enabled) {
     enabled = obj.useStateFromStores(items, () => {
-      let tmp = null != closure_0;
+      let tmp = null != channel;
       if (tmp) {
-        let canResult = obj.isPrivate();
-        if (!canResult) {
-          canResult = PermissionStore.can(constants3.SEND_MESSAGES, obj);
-        }
-        tmp = canResult;
+        tmp = obj.isPrivate() || PermissionStore.can(metroImportAll.SEND_MESSAGES, obj);
+        const canResult = obj.isPrivate() || PermissionStore.can(metroImportAll.SEND_MESSAGES, obj);
       }
       return tmp;
     });
@@ -138,37 +163,42 @@ export const useCanSendScheduledMessagesInChannel = function useCanSendScheduled
   return enabled;
 };
 export const canUseScheduledMessages = function canUseScheduledMessages(location) {
-  return closure_15.getConfig({ location }).enabled;
+  const obj = { location };
+  return closure_15.getConfig(obj).enabled;
 };
 export const canSendScheduledMessagesInChannel = function canSendScheduledMessagesInChannel(isPrivate, location) {
-  let enabled = closure_15.getConfig({ location }).enabled;
+  const obj = { location };
+  let enabled = closure_15.getConfig(obj).enabled;
   if (enabled) {
-    let canResult = isPrivate.isPrivate();
-    if (!canResult) {
-      canResult = PermissionStore.can(constants3.SEND_MESSAGES, isPrivate);
-    }
-    enabled = canResult;
+    enabled = isPrivate.isPrivate() || PermissionStore.can(metroImportAll.SEND_MESSAGES, isPrivate);
+    const canResult = isPrivate.isPrivate() || PermissionStore.can(metroImportAll.SEND_MESSAGES, isPrivate);
   }
   return enabled;
 };
 export const getPresetScheduledTimes = function getPresetScheduledTimes() {
-  const addResult = _modDef4421().add(map1, "seconds");
+  let addResult1;
+  let intl3;
+  let tmp6;
+  let tmp7;
+  let tmp9;
   const obj = _modDef4421();
+  const addResult = obj.add(map1, "seconds");
   const obj2 = _modDef4421();
-  const result = _modDef4421().startOf("day").set("hours", 9);
-  const startOfResult = _modDef4421().startOf("day");
+  const startOfResult = obj2.startOf("day");
+  const result = startOfResult.set("hours", 9);
   const obj5 = _modDef4421();
-  const result1 = _modDef4421().startOf("day").set("hours", 13);
+  const startOfResult1 = obj5.startOf("day");
+  const result1 = startOfResult1.set("hours", 13);
   const obj3 = { label: null, value: null };
-  const startOfResult1 = _modDef4421().startOf("day");
-  const intl = util.intl;
+  const isAfterResult = result.isAfter(addResult);
+  const intl = intl7.intl;
   const string = intl.string;
-  const t = util.t;
+  const t = intl7.t;
   if (isAfterResult) {
     obj3.label = string(t["qINKo/"]);
     obj3.value = result;
-    let tmp6 = tmp5;
-    let tmp7 = obj3;
+    tmp6 = tmp5;
+    tmp7 = obj3;
   } else {
     obj3.label = string(t.tjIn9i);
     obj3.value = result.add(1, "day");
@@ -177,152 +207,180 @@ export const getPresetScheduledTimes = function getPresetScheduledTimes() {
   }
   const items = [tmp7, , ];
   const obj4 = { label: null, value: null };
-  isAfterResult = result.isAfter(addResult);
+  const isAfterResult1 = result1.isAfter(addResult);
   const intl2 = tmp6(1115).intl;
   const string2 = intl2.string;
   const t2 = tmp6(1115).t;
   if (isAfterResult1) {
     obj4.label = string2(t2.qT6LjY);
     obj4.value = result1;
-    let tmp9 = obj4;
+    tmp9 = obj4;
   } else {
     obj4.label = string2(t2.EMRZyS);
     obj4.value = result1.add(1, "day");
     tmp9 = obj4;
   }
   items[1] = tmp9;
-  const obj6 = { label: null, value: null };
-  const intl3 = tmp6(1115).intl;
-  obj6.label = intl3.string(tmp6(1115).t["+P5MmK"]);
-  isAfterResult1 = result1.isAfter(addResult);
+  const obj6 = { label: intl3.string(tmp6(1115).t["+P5MmK"]), value: addResult1.set("hours", 9) };
+  intl3 = tmp6(1115).intl;
   const obj11 = _modDef4421();
-  const startOfResult2 = _modDef4421().startOf("isoWeek");
-  obj6.value = _modDef4421().startOf("isoWeek").add(1, "week").set("hours", 9);
+  const startOfResult2 = obj11.startOf("isoWeek");
   items[2] = obj6;
+  addResult1 = startOfResult2.add(1, "week");
   return items;
 };
 export const getDefaultScheduledTime = function getDefaultScheduledTime() {
   const obj = _modDef4421();
-  const addResult = _modDef4421().startOf("hour").add(1, "hour");
-  const startOfResult = _modDef4421().startOf("hour");
+  const startOfResult = obj.startOf("hour");
+  const addResult = startOfResult.add(1, "hour");
+  const isBefore = addResult.isBefore;
   let addResult1 = addResult;
-  if (addResult.isBefore(obj4.add(map1, "seconds"))) {
+  const obj4 = _modDef4421();
+  if (isBefore(obj4.add(map1, "seconds"))) {
     addResult1 = addResult.add(1, "hour");
   }
   return addResult1;
 };
 export const getScheduledTimeError = function getScheduledTimeError(isBefore, arg1) {
-  if (isBefore.isBefore(obj.add(map1, "seconds"))) {
-    const intl2 = util.intl;
-    let stringResult = intl2.string(util.t["w/fgvh"]);
+  let stringResult;
+  isBefore = isBefore.isBefore;
+  const obj = _modDef4421();
+  if (isBefore(obj.add(map1, "seconds"))) {
+    const intl2 = intl7.intl;
+    stringResult = intl2.string(intl7.t["w/fgvh"]);
   } else {
-    const addResult = tmp(4421)().add(closure_1_11, "seconds");
+    const isAfter = isBefore.isAfter;
+    const obj2 = _modDef4421();
+    const addResult = obj2.add(unpackModuleId, "seconds");
     let minResult = addResult;
     if (null != arg1) {
-      const tmpResult = tmp(4421);
-      const tmpResult3 = tmp(11);
-      const tmpResultResult = tmpResult(tmp(11).extractTimestamp(arg1));
-      minResult = tmp(4421).min(addResult, tmpResultResult.add(closure_1_10, "seconds"));
-      const tmpResult4 = tmp(4421);
+      const tmpResult = _modDef4421;
+      const tmpResult3 = SnowflakeUtilsDefault;
+      const tmpResultResult = tmpResult(tmpResult3.extractTimestamp(arg1));
+      const tmpResult4 = _modDef4421;
+      minResult = tmpResult4.min(addResult, tmpResultResult.add(authStore, "seconds"));
     }
     stringResult = null;
-    if (isBefore.isAfter(minResult)) {
-      const intl = util.intl;
-      stringResult = intl.string(util.t.Nt0tz7);
+    if (isAfter(minResult)) {
+      const intl = intl7.intl;
+      stringResult = intl.string(intl7.t.Nt0tz7);
     }
-    const obj2 = tmp(4421)();
   }
   return stringResult;
 };
 export const getEarliestScheduledTime = function getEarliestScheduledTime() {
-  return _modDef4421().add(map1, "seconds");
+  const obj = _modDef4421();
+  return obj.add(map1, "seconds");
 };
 export const getLatestScheduledTime = function getLatestScheduledTime(arg0) {
-  const addResult = _modDef4421().add(closure_1_11, "seconds");
+  const obj = _modDef4421();
+  const addResult = obj.add(unpackModuleId, "seconds");
   if (null == arg0) {
     return addResult;
   } else {
-    const tmpResult = tmp(4421);
-    const tmpResult3 = tmp(11);
-    const tmpResultResult = tmpResult(tmp(11).extractTimestamp(arg0));
-    return tmp(4421).min(addResult, tmpResultResult.add(closure_1_10, "seconds"));
+    const tmpResult = _modDef4421;
+    const tmpResult3 = SnowflakeUtilsDefault;
+    const tmpResultResult = tmpResult(tmpResult3.extractTimestamp(arg0));
+    const tmpResult4 = _modDef4421;
+    return tmpResult4.min(addResult, tmpResultResult.add(authStore, "seconds"));
   }
-  const obj = _modDef4421();
 };
 export const getScheduledMessagesLimit = function getScheduledMessagesLimit(ScheduledMessagesCreateRoadblock) {
+  let obj5;
+  const obj = PremiumTypeUtils;
   const obj2 = { location: ScheduledMessagesCreateRoadblock };
+  const isPremiumResult = obj.isPremium(UserStore.getCurrentUser(), PremiumTypes.TIER_2);
   const config = closure_15.getConfig(obj2);
   if (config.enabled) {
+    let obj4;
     if (isPremiumResult) {
+      obj4 = { limit, isUpgradable: false };
       const obj3 = { limit, isUpgradable: false };
     } else {
-      const obj4 = { limit: config.limit, isUpgradable: true };
+      obj4 = { limit: config.limit, isUpgradable: true };
     }
+    obj5 = obj4;
   } else {
-    return { limit: 0, isUpgradable: false };
+    obj5 = { limit: 0, isUpgradable: false };
   }
+  return obj5;
 };
 export const useScheduledMessagesLimit = function useScheduledMessagesLimit(ScheduledMessagesMobileModal) {
-  const config = closure_15.useConfig({ location: ScheduledMessagesMobileModal });
+  let TIER_2;
+  let currentUser;
+  let obj5;
+  let obj = { location: ScheduledMessagesMobileModal };
+  const config = closure_15.useConfig(obj);
   const items = [UserStore];
+  const obj2 = get_initialized;
   if (config.enabled) {
-    if (obj2.useStateFromStores(items, () => require("PremiumTypeUtils").isPremium(currentUser.getCurrentUser(), TIER_2.TIER_2))) {
+    let obj4;
+    if (obj2.useStateFromStores(items, () => {
+      const obj = require("PremiumTypeUtils");
+      return obj.isPremium(currentUser.getCurrentUser(), TIER_2.TIER_2);
+    })) {
+      obj4 = { limit, isUpgradable: false };
       const obj3 = { limit, isUpgradable: false };
     } else {
-      const obj4 = { limit: config.limit, isUpgradable: true };
+      obj4 = { limit: config.limit, isUpgradable: true };
     }
+    obj5 = obj4;
   } else {
-    return { limit: 0, isUpgradable: false };
+    obj5 = { limit: 0, isUpgradable: false };
   }
+  return obj5;
 };
 export const convertServerScheduledMessageSend = function convertServerScheduledMessageSend(body) {
-  const obj = { userId: body.user_id, scheduledMessageId: body.scheduled_message_id, sendAtTimestamp: body.send_at_timestamp, createArgs: null, state: body.state, attachmentUploads: null, record: null };
-  const create_args = body.create_args;
-  obj.createArgs = { channelId: create_args.channel_id, content: create_args.content, type: create_args.type, flags: create_args.flags, messageReference: create_args.message_reference };
-  let attachment_uploads = body.attachment_uploads;
+  let attachment_uploads;
+  let createMessageRecord;
+  let create_args;
+  let obj2;
+  const obj = { userId: body.user_id, scheduledMessageId: body.scheduled_message_id, sendAtTimestamp: body.send_at_timestamp, createArgs: { channelId: create_args.channel_id, content: create_args.content, type: create_args.type, flags: create_args.flags, messageReference: create_args.message_reference }, state: body.state, attachmentUploads: attachment_uploads.map((filename) => ({ filename: filename.filename, uploadedFilename: filename.uploaded_filename, description: filename.description, title: filename.title })), record: createMessageRecord(obj2) };
+  create_args = body.create_args;
+  attachment_uploads = body.attachment_uploads;
   if (attachment_uploads == null) {
     attachment_uploads = [];
   }
-  obj.attachmentUploads = attachment_uploads.map((filename) => ({ filename: filename.filename, uploadedFilename: filename.uploaded_filename, description: filename.description, title: filename.title }));
-  const obj3 = {};
+  obj2 = { timestamp: body.send_at_timestamp };
+  createMessageRecord = MessageRecordUtils.createMessageRecord;
+  MessageRecordUtils;
   const merged = Object.assign(body.message_preview);
-  obj3.timestamp = body.send_at_timestamp;
-  obj.record = MessageRecordUtils.createMessageRecord(obj3);
   return obj;
 };
 export const getMessageForState = function getMessageForState(state) {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
   if (ScheduledMessageTypes.ScheduledMessageSendState.SCHEDULED === state) {
-    const obj = { isError: false, stateMessage: null };
-    const intl6 = tmp(1115).intl;
-    obj.stateMessage = intl6.string(tmp(1115).t.Fn6Odn);
+    const obj = { isError: false, stateMessage: intl6.string(intl7.t.Fn6Odn) };
+    intl6 = tmp(1115).intl;
     return obj;
-  } else if (tmp(7267).ScheduledMessageSendState.ERROR_CHANNEL_NOT_FOUND === state) {
-    const obj2 = { isError: true, stateMessage: null };
-    const intl5 = tmp(1115).intl;
-    obj2.stateMessage = intl5.string(tmp(1115).t.v5O2dK);
+  } else if (ScheduledMessageTypes.ScheduledMessageSendState.ERROR_CHANNEL_NOT_FOUND === state) {
+    const obj2 = { isError: true, stateMessage: intl5.string(intl7.t.v5O2dK) };
+    intl5 = tmp(1115).intl;
     return obj2;
-  } else if (tmp(7267).ScheduledMessageSendState.ERROR_USER_NOT_FOUND === state) {
-    const obj3 = { isError: true, stateMessage: null };
-    const intl4 = tmp(1115).intl;
-    obj3.stateMessage = intl4.string(tmp(1115).t.j8uIfG);
+  } else if (ScheduledMessageTypes.ScheduledMessageSendState.ERROR_USER_NOT_FOUND === state) {
+    const obj3 = { isError: true, stateMessage: intl4.string(intl7.t.j8uIfG) };
+    intl4 = tmp(1115).intl;
     return obj3;
-  } else if (tmp(7267).ScheduledMessageSendState.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES === state) {
-    const obj4 = { isError: true, stateMessage: null };
-    const intl3 = tmp(1115).intl;
-    obj4.stateMessage = intl3.string(tmp(1115).t["w6zHX/"]);
+  } else if (ScheduledMessageTypes.ScheduledMessageSendState.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES === state) {
+    const obj4 = { isError: true, stateMessage: intl3.string(intl7.t["w6zHX/"]) };
+    intl3 = tmp(1115).intl;
     return obj4;
-  } else if (tmp(7267).ScheduledMessageSendState.ERROR_SEND_FAILED === state) {
-    const obj5 = { isError: true, stateMessage: null };
-    const intl2 = tmp(1115).intl;
-    obj5.stateMessage = intl2.string(tmp(1115).t.pflV7z);
+  } else if (ScheduledMessageTypes.ScheduledMessageSendState.ERROR_SEND_FAILED === state) {
+    const obj5 = { isError: true, stateMessage: intl2.string(intl7.t.pflV7z) };
+    intl2 = tmp(1115).intl;
     return obj5;
-  } else if (tmp(7267).ScheduledMessageSendState.ERROR_SCHEDULED_MESSAGES_DISABLED === state) {
-    const obj6 = { isError: true, stateMessage: null };
-    const intl = tmp(1115).intl;
-    obj6.stateMessage = intl.string(tmp(1115).t.j8uIfG);
+  } else if (ScheduledMessageTypes.ScheduledMessageSendState.ERROR_SCHEDULED_MESSAGES_DISABLED === state) {
+    const obj6 = { isError: true, stateMessage: intl.string(intl7.t.j8uIfG) };
+    intl = tmp(1115).intl;
     return obj6;
   } else {
-    tmp(1370).assertNever(state);
+    const tmpResult = GlobalUtils;
+    tmpResult.assertNever(state);
   }
 };
 export const convertServerScheduledMessageCreateArgs = function convertServerScheduledMessageCreateArgs(channelId) {

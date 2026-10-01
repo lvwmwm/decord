@@ -5,54 +5,55 @@
 // Exports: AnimatedCoachmark
 
 // Module 10596 (AnimatedCoachmark)
-import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4550 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 4550 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9424 */;
 import TooltipConstants from "TooltipConstants" /* 10594 */;
 import Coachmark from "Coachmark" /* 10597 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const StyleSheet = fn(17).StyleSheet;
-const jsx = fn(21).jsx;
+const StyleSheet = react_native.StyleSheet;
+const jsx = Fragment.jsx;
 function renderTooltipItem(arg0, enterExitAnimatedStyles) {
-  const obj = { style: null, pointerEvents: "box-none", children: null };
   const items = [enterExitAnimatedStyles, StyleSheet.absoluteFill];
-  obj.style = items;
   let tmpResult = null;
+  const View = ReanimatedRexportDefault.View;
   if (null != arg0) {
-    const obj2 = {};
+    const obj2 = { enterExitAnimatedStyles };
+    const CoachmarkContainer = Coachmark.CoachmarkContainer;
     const merged = Object.assign(arg0);
-    obj2.enterExitAnimatedStyles = enterExitAnimatedStyles;
-    tmpResult = tmp(Coachmark.CoachmarkContainer, obj2);
+    tmpResult = tmp(CoachmarkContainer, obj2);
   }
-  obj.children = tmpResult;
-  return jsx(ReanimatedRexportDefault.View, { style: null, pointerEvents: "box-none", children: null });
+  return <View style={items} pointerEvents="box-none">{tmpResult}</View>;
 }
-const size = fn(2);
 let result = size.fileFinishedImporting("design/components/Coachmark/native/AnimatedCoachmark.native.tsx");
 
 export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
+  let c1;
+  let tmp3;
+  let tmp8;
   visible = visible.visible;
   const merged = Object.assign(visible, Object.assign({ visible: 0 }));
   c1 = undefined;
-  [tmp3, c1] = noop.useState(visible);
-  const tmp2 = _slicedToArray(noop.useState(visible), 2);
-  const result = TooltipConstants.tooltipEnterExitAnimation(merged.position);
+  const enabled = react.useContext(react2.AccessibilityPreferencesContext).reducedMotion.enabled;
+  [tmp3, c1] = react.useState(visible);
+  _slicedToArray(react.useState(visible), 2);
+  const obj = TooltipConstants;
+  const result = obj.tooltipEnterExitAnimation(merged.position);
   const items = [visible];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     _undefined(visible);
   }, items);
-  const obj2 = { useReducedMotion: noop.useContext(AccessibilityPreferencesContext.AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null };
-  let tmp8;
+  const obj2 = { useReducedMotion: enabled, item: tmp8, entering: result, exiting: result, renderItem: renderTooltipItem };
+  tmp8 = undefined;
   const tmp6 = jsx;
+  const tmp7 = AnimatedEnterExitItemDefault;
   if (tmp3) {
     tmp8 = merged;
   }
-  obj2.item = tmp8;
-  obj2.entering = result;
-  obj2.exiting = result;
-  obj2.renderItem = renderTooltipItem;
-  return tmp6(AnimatedEnterExitItemDefault, obj2);
+  return tmp6(tmp7, obj2);
 };

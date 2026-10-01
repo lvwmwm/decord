@@ -5,30 +5,36 @@
 // Exports: UseThemeContext, createThemedContext, useThemeContext
 
 // Module 4547 (ThemeContext)
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 1085 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-const jsxProd = fn(21);
-({ Fragment: closure_1, jsx: c2 } = jsxProd);
-let obj = { theme: fn(1085).ThemeTypes.LIGHT, primaryColor: null, secondaryColor: null, gradient: null, flags: 0, contrast: 1, saturation: 1, density: "compact", disableAdaptiveTheme: false, reduceAdaptiveTheme: false };
-const obj2 = {};
-let json = JSON.stringify(obj);
+let c2;
+let json;
+let map;
+const ThemeTypes = Constants.ThemeTypes;
+({ Fragment: map, jsx: c2 } = Fragment);
+let obj = { theme: ThemeTypes.LIGHT, primaryColor: null, secondaryColor: null, gradient: null, flags: 0, contrast: 1, saturation: 1, density: "compact", disableAdaptiveTheme: false, reduceAdaptiveTheme: false };
+const obj2 = { key: json };
+json = JSON.stringify(obj);
 let merged = Object.assign(obj);
-obj2.key = json;
-let context = noop.createContext(obj2);
-const size = fn(2);
+let context = react.createContext(obj2);
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/ThemeContextProvider/ThemeContext.tsx");
 
 export const createThemedContext = function createThemedContext(arg0) {
-  const obj = {};
-  const json = JSON.stringify(arg0);
+  let json;
+  const obj = { key: json };
+  json = JSON.stringify(arg0);
   const merged = Object.assign(arg0);
-  obj.key = json;
   return obj;
 };
 export const useThemeContext = function useThemeContext() {
-  context = noop.useContext(context);
+  context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error("useThemeContext must be used within a ThemeContext.Provider");
     throw error;
   } else {
@@ -38,13 +44,16 @@ export const useThemeContext = function useThemeContext() {
 export const FALLBACK_THEME_CONTEXT_VALUE = obj2;
 export const ThemeContext = context;
 export const UseThemeContext = function UseThemeContext(children) {
-  context = noop.useContext(context);
+  children = children.children;
+  context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error("useThemeContext must be used within a ThemeContext.Provider");
     throw error;
   } else {
-    const obj = { children: children.children(context) };
-    return React2(framebus, obj);
+    const obj = { children: children(context) };
+    return React2(map, obj);
   }
 };

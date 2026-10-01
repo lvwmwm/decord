@@ -5,43 +5,55 @@
 // Exports: default
 
 // Module 17392 (GuildSettingsServerTagPickerCell)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
-import noop from "module_19" /* 19 */;
+import react_native2 from "react-native" /* 4548 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Pressable = fn(17).Pressable;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { cell: { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.md, borderWidth: 2, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderColor: nativeDefault.colors.BORDER_MUTED }, cellSelected: null };
-let obj3 = { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.md, borderWidth: 2, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderColor: nativeDefault.colors.BORDER_MUTED };
-obj2.cellSelected = { borderColor: nativeDefault.unsafe_rawColors.BRAND_500 };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+let obj3;
+const Pressable = react_native.Pressable;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { cell: obj2, cellSelected: obj3 };
+obj2 = { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.md, borderWidth: 2, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderColor: nativeDefault.colors.BORDER_MUTED };
+createStyles = createStyles.createStyles;
+obj3 = { borderColor: nativeDefault.unsafe_rawColors.BRAND_500 };
+let closure_4 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagPickerCell.tsx");
 
 export default function GuildSettingsServerTagPickerCell(accessibilityLabel) {
+  let accessibilityRole;
+  let children;
+  let items;
+  let obj3;
+  let onPress;
+  let selected;
   ({ size, selected, accessibilityRole } = accessibilityLabel);
+  accessibilityLabel = accessibilityLabel.accessibilityLabel;
   if (accessibilityRole === undefined) {
     accessibilityRole = "radio";
   }
   ({ onPress, children } = accessibilityLabel);
   const tmp = closure_4();
-  let radioA11yNative = useA11yRolesNative.useRadioA11yNative({ selected });
+  const obj = react_native2;
+  let radioA11yNative = obj.useRadioA11yNative({ selected });
   if ("button" === accessibilityRole) {
-    const obj2 = { accessibilityRole: "button", accessibilityState: null };
-    const obj3 = { selected };
-    obj2.accessibilityState = obj3;
+    const obj2 = { accessibilityRole: "button", accessibilityState: obj3 };
     radioA11yNative = obj2;
+    obj3 = { selected };
   }
-  const obj4 = { accessibilityRole: radioA11yNative.accessibilityRole, accessibilityState: radioA11yNative.accessibilityState, accessibilityLabel: accessibilityLabel.accessibilityLabel, onPress, style: null, children: null };
-  const items = [tmp.cell, , ];
+  const obj4 = { accessibilityRole: radioA11yNative.accessibilityRole, accessibilityState: radioA11yNative.accessibilityState, accessibilityLabel, onPress, style: items, children };
+  items = [tmp.cell, , ];
+  const tmp3 = jsx;
+  const tmp4 = Pressable;
   if (selected) {
     selected = tmp.cellSelected;
   }
   items[1] = selected;
   items[2] = { width: size, height: size };
-  obj4.style = items;
-  obj4.children = children;
-  return <Pressable accessibilityRole={radioA11yNative.accessibilityRole} accessibilityState={radioA11yNative.accessibilityState} accessibilityLabel={arg0.accessibilityLabel} onPress={onPress} style={null}>{null}</Pressable>;
+  return tmp3(tmp4, obj4);
 };

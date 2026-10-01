@@ -5,52 +5,44 @@
 // Exports: default
 
 // Module 17332 (SelectApplicationActionSheet)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import TableRadioGroup from "TableRadioGroup" /* 5997 */;
-import TableRadioRow from "TableRadioRow" /* 6000 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
-import ActionSheet from "ActionSheet" /* 6618 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 9023 */;
-import noop from "module_19" /* 19 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 5997 */;
+import TableRadioRow2 from "TableRadioRow" /* 6000 */;
+import ActionSheet2 from "ActionSheet" /* 6618 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/SelectApplicationActionSheet.tsx");
 
 export default function SelectApplicationActionSheet(arg0) {
+  let TableRadioGroup;
+  let applications;
+  let obj2;
+  let selectedApplicationId;
   ({ applications, selectedApplicationId, onSelectApplication: require } = arg0);
-  const intl = util.intl;
-  const stringResult = intl.string(util.t.FKSiso);
-  let obj = { header: jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: stringResult }), children: null };
-  const obj2 = {
+  const intl = intl2.intl;
+  const stringResult = intl.string(intl2.t.FKSiso);
+  let obj = { header: null, children: tmp2(TableRadioGroup, obj2) };
+  const ActionSheet = ActionSheet2.ActionSheet;
+  obj2 = {
     hasIcons: true,
     accessibilityLabel: stringResult,
     defaultValue: selectedApplicationId,
     onChange(arg0) {
-      ActionSheetActionCreatorsDefault.hideActionSheet();
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
       require(arg0);
     },
     children: applications.map((application) => {
-      const obj = { value: application.id, label: application.name, icon: jsx(TableRowApplicationIconDefault, { application }) };
-      return jsx(TableRadioRow.TableRadioRow, { value: application.id, label: application.name, icon: jsx(TableRowApplicationIconDefault, { application }) }, application.id);
+      const TableRadioRow = TableRadioRow2.TableRadioRow;
+      return <TableRadioRow key={arg0.id} value={arg0.id} label={arg0.name} icon={null} />;
     })
   };
-  obj.children = jsx(TableRadioGroup.TableRadioGroup, {
-    hasIcons: true,
-    accessibilityLabel: stringResult,
-    defaultValue: selectedApplicationId,
-    onChange(arg0) {
-      ActionSheetActionCreatorsDefault.hideActionSheet();
-      require(arg0);
-    },
-    children: applications.map((application) => {
-      const obj = { value: application.id, label: application.name, icon: jsx(TableRowApplicationIconDefault, { application }) };
-      return jsx(TableRadioRow.TableRadioRow, { value: application.id, label: application.name, icon: jsx(TableRowApplicationIconDefault, { application }) }, application.id);
-    })
-  });
-  return jsx(ActionSheet.ActionSheet, { header: jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: stringResult }), children: null });
+  TableRadioGroup = TableRadioGroup2.TableRadioGroup;
+  return jsx(ActionSheet, obj);
 };

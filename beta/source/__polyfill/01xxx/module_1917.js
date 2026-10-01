@@ -3,9 +3,10 @@
 // Dependencies: []
 
 // Module 1917
-globalThis.IntlMessageFormat.__addLocaleData({
+const obj = {
   locale: "th",
   pluralRuleFunction(arg0, arg1) {
     return "other";
   }
-});
+};
+globalThis.IntlMessageFormat.__addLocaleData(obj);

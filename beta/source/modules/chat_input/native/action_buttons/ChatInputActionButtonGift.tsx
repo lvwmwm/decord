@@ -4,49 +4,71 @@
 // Dependencies: [32, 19, 17, 4825, 10128, 11444, 2042, 21, 4836, 576, 504, 10203, 2011, 6806, 2029, 11731, 10496, 1115, 5293, 11721, 2031, 11732, 2]
 
 // Module 11730 (ChatInputActionButtonGift)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2031 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
+import ChatInputConstants from "ChatInputConstants" /* 11444 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import PromotionsStore from "PromotionsStore" /* 10128 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const View = fn(17).View;
-const ChatInputActionType = fn(11444).ChatInputActionType;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4836);
+let c10;
+let unpackModuleId;
+const View = react_native.View;
+const ChatInputActionType = ChatInputConstants.ChatInputActionType;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles(() => {
-  const obj = { gradientContainerRefresh: null, transparentBackground: null };
-  const rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, borderRadius: nativeDefault.radii.sm };
-  obj.gradientContainerRefresh = rect;
-  obj.transparentBackground = { backgroundColor: "transparent" };
+  let rect;
+  const obj = { gradientContainerRefresh: rect, transparentBackground: { backgroundColor: "transparent" } };
+  rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, borderRadius: nativeDefault.radii.sm };
   return obj;
 });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButtonGift.tsx");
-
-export default noop.memo(function ChatInputActionButtonGift(arg0) {
+const memoResult = react.memo(function ChatInputActionButtonGift(arg0) {
+  let _undefined;
+  let _undefined2;
+  let accessible;
+  let c5;
+  let c6;
+  let channel;
+  let disabled;
+  let intl;
+  let intl2;
+  let items5;
+  let items6;
+  let num2;
+  let prop;
+  let style;
+  let styleButton;
+  let tmp17;
+  let tmp22;
+  let tmp25Result;
+  let tmp31;
   ({ accessible, disabled, onPress: require } = arg0);
   let stateFromStores;
   let stateFromStores2;
   c5 = undefined;
   c6 = undefined;
-  closure_7 = undefined;
-  closure_8 = undefined;
+  let closure_7;
+  let closure_8;
+  let obj = stateFromStores2;
   ({ channel, style, styleButton } = arg0);
   const ref = stateFromStores2.useRef(null);
+  let obj2 = require("get initialized");
   const items = [c6];
-  stateFromStores = require("initialize").useStateFromStores(items, () => _undefined2.useReducedMotion);
+  stateFromStores = obj2.useStateFromStores(items, () => _undefined2.useReducedMotion);
   const tmp5 = closure_12();
-  let obj2 = require("initialize");
   const items1 = [closure_7];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => {
+  const obj3 = require("get initialized");
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => {
     const marketingComponentByType = closure_7.getMarketingComponentByType(require("MarketingComponentType").MarketingComponentType.GIFT_ICON);
     let giftIcon = null;
     if (null != marketingComponentByType) {
@@ -57,9 +79,9 @@ export default noop.memo(function ChatInputActionButtonGift(arg0) {
     }
     return giftIcon;
   });
-  const obj3 = require("initialize");
   const items2 = [closure_7];
-  stateFromStores2 = require("initialize").useStateFromStores(items2, () => {
+  const obj4 = require("get initialized");
+  stateFromStores2 = obj4.useStateFromStores(items2, () => {
     const giftPromotion = closure_7.getGiftPromotion();
     let str;
     if (giftPromotion != null) {
@@ -82,59 +104,51 @@ export default noop.memo(function ChatInputActionButtonGift(arg0) {
   if (stateFromStores1 != null) {
     gradient = stateFromStores1.gradient;
   }
-  const obj4 = require("initialize");
-  const isNullOrEmptyResult = require("StringUtils").isNullOrEmpty(boxAnimationUrl);
-  let tmp12 = !isNullOrEmptyResult;
   const tmp2Result = require("StringUtils");
-  const isNullOrEmptyResult1 = require("StringUtils").isNullOrEmpty(trinketAnimationUrl);
-  let tmp30Result = !isNullOrEmptyResult1;
-  if (!isNullOrEmptyResult1) {
-    tmp30Result = !tmp12;
-  }
-  const tmp15 = stateFromStores1;
+  const isNullOrEmptyResult = tmp2Result.isNullOrEmpty(boxAnimationUrl);
+  let tmp12 = !isNullOrEmptyResult;
   const tmp2Result3 = require("StringUtils");
-  [tmp17, c5] = stateFromStores1(stateFromStores2.useState(false), 2);
+  let tmp31Result = !tmp2Result3.isNullOrEmpty(trinketAnimationUrl) && !tmp12;
+  tmp2Result3.isNullOrEmpty(trinketAnimationUrl);
+  [tmp17, c5] = stateFromStores1(obj.useState(false), 2);
+  stateFromStores1(obj.useState(false), 2);
   const callback = obj.useCallback((arg0) => {
-    if (!arg0) {
+    const tmp = arg0;
+    if (!tmp) {
       _undefined(true);
     }
   }, []);
-  const tmp16 = stateFromStores1(stateFromStores2.useState(false), 2);
+  const useSelectedSnowflakeBoundDismissibleContent = tmp2(tmp3[13]).useSelectedSnowflakeBoundDismissibleContent;
+  require("useSelectedDismissibleContent");
   if (!isNullOrEmptyResult) {
-    let prop = null;
+    prop = null;
     if (!tmp17) {
       prop = tmp2(tmp3[14]).DismissibleContent.GIFTING_PROMOTION_ICON;
     }
   } else {
     prop = null;
   }
-  const tmp2Result4 = require("useSelectedDismissibleContent");
-  [tmp21, c6] = tmp15(require("useSelectedDismissibleContent").useSelectedSnowflakeBoundDismissibleContent(prop, stateFromStores2, undefined, true), 2);
-  const tmp22 = tmp21 === require("dismissible_content").DismissibleContent.GIFTING_PROMOTION_ICON;
+  [tmp22, c6] = stateFromStores1(useSelectedSnowflakeBoundDismissibleContent(prop, stateFromStores2, undefined, true), 2);
+  stateFromStores1(useSelectedSnowflakeBoundDismissibleContent(prop, stateFromStores2, undefined, true), 2);
+  const tmp23 = tmp22 === require("dismissible_content").DismissibleContent.GIFTING_PROMOTION_ICON;
   if (!isNullOrEmptyResult) {
-    tmp12 = tmp22;
+    tmp12 = tmp23;
   }
   closure_7 = tmp12;
-  if (tmp30Result) {
-    tmp30Result = tmp22;
+  if (tmp31Result) {
+    tmp31Result = tmp23;
   }
-  closure_8 = tmp30Result;
+  closure_8 = tmp31Result;
   let transparentBackground = null != gradient;
   if (transparentBackground) {
     transparentBackground = gradient.colors.length > 0;
   }
   if (transparentBackground) {
-    transparentBackground = tmp30Result;
+    transparentBackground = tmp31Result;
   }
-  const items3 = [tmp12, tmp22, tmp30Result, stateFromStores];
+  const items3 = [tmp12, tmp23, tmp31Result, stateFromStores];
   const effect = obj.useEffect(() => {
-    let tmp = stateFromStores;
-    if (stateFromStores) {
-      tmp = closure_7;
-    }
-    if (!tmp) {
-      tmp = closure_8;
-    }
+    const tmp = stateFromStores && closure_7 || closure_8;
     if (tmp) {
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
@@ -142,7 +156,7 @@ export default noop.memo(function ChatInputActionButtonGift(arg0) {
       }, 7000);
     }
   }, items3);
-  const obj5 = { style, children: null };
+  const obj5 = { style, children: items6 };
   if (tmp12) {
     const obj6 = {
       channelId: channel.id,
@@ -155,61 +169,64 @@ export default noop.memo(function ChatInputActionButtonGift(arg0) {
           require(arg0, ChatInputActionType.NITRO_GIFT, ref);
         },
       onAnimationFinished: callback,
-      IconComponent: tmp2(tmp3[16]).GiftIcon,
+      IconComponent: require("GiftIcon").GiftIcon,
       accessible,
-      accessibilityLabel: null
+      accessibilityLabel: intl2.string(require("intl").t.Z1RnTk)
     };
-    const intl2 = tmp2(tmp3[17]).intl;
-    obj6.accessibilityLabel = intl2.string(tmp2(tmp3[17]).t.Z1RnTk);
-    let tmp24Result = closure_10(tmp2(tmp3[15]).PremiumAnimatedGiftButton, obj6);
-    let tmp30 = closure_10;
+    const PremiumAnimatedGiftButton = tmp2(tmp3[15]).PremiumAnimatedGiftButton;
+    intl2 = tmp2(tmp3[17]).intl;
+    tmp25Result = closure_10(PremiumAnimatedGiftButton, obj6);
+    tmp31 = closure_10;
   } else {
-    let tmp27Result = transparentBackground;
-    if (transparentBackground) {
-      const obj7 = { style: tmp5.gradientContainerRefresh, useAngle: true, angle: null, angleCenter: null, colors: null };
-      let num2 = gradient.angle;
+    let tmp28Result = transparentBackground;
+    if (tmp28Result) {
+      const obj7 = { style: tmp5.gradientContainerRefresh, useAngle: true, angle: num2, angleCenter: { x: 0.5, y: 0.5 }, colors: gradient.colors };
+      num2 = gradient.angle;
+      const tmp28 = closure_10;
+      const tmp30 = ref(stateFromStores[18]);
       if (num2 == null) {
         num2 = 180;
       }
-      obj7.angle = num2;
-      obj7.angleCenter = { x: 0.5, y: 0.5 };
-      obj7.colors = gradient.colors;
-      tmp27Result = closure_10(ref(tmp3[18]), obj7);
-      const tmp29 = ref(tmp3[18]);
+      tmp28Result = tmp28(tmp30, obj7);
     }
-    const items4 = [tmp27Result, ];
-    tmp30 = closure_10;
-    const obj8 = { ref, style: null, disabled: null, accessible: null, accessibilityLabel: null, active: false, IconComponent: null, onPress: null };
-    const items5 = [styleButton, ];
+    const items4 = [tmp28Result, ];
+    tmp31 = closure_10;
+    const obj8 = {
+      ref,
+      style: items5,
+      disabled,
+      accessible,
+      accessibilityLabel: intl.string(require("intl").t.Z1RnTk),
+      active: false,
+      IconComponent: require("GiftIcon").GiftIcon,
+      onPress(arg0) {
+          if (null != stateFromStores1) {
+            const obj2 = { dismissAction: ContentDismissActionType.TAKE_ACTION };
+            const obj = DismissibleContentUtils;
+            const result = obj.markSnowflakeBoundDismissibleContentAsDismissed(dismissible_content.DismissibleContent.GIFTING_PROMOTION_ICON, stateFromStores2, obj2);
+          }
+          require(arg0, ChatInputActionType.NITRO_GIFT, ref);
+        }
+    };
+    items5 = [styleButton, ];
+    const tmp33 = ref(stateFromStores[19]);
     if (transparentBackground) {
       transparentBackground = tmp5.transparentBackground;
     }
-    const obj9 = { children: null };
+    const obj9 = { children: items4 };
     items5[1] = transparentBackground;
-    obj8.style = items5;
-    obj8.disabled = disabled;
-    obj8.accessible = accessible;
-    const intl = tmp2(tmp3[17]).intl;
-    obj8.accessibilityLabel = intl.string(tmp2(tmp3[17]).t.Z1RnTk);
-    obj8.IconComponent = tmp2(tmp3[16]).GiftIcon;
-    obj8.onPress = function onPress(arg0) {
-      if (null != stateFromStores1) {
-        const obj2 = { dismissAction: ContentDismissActionType.TAKE_ACTION };
-        const result = DismissibleContentUtils.markSnowflakeBoundDismissibleContentAsDismissed(dismissible_content.DismissibleContent.GIFTING_PROMOTION_ICON, stateFromStores2, obj2);
-      }
-      closure_1_0(arg0, ChatInputActionType.NITRO_GIFT, ref);
-    };
-    items4[1] = tmp30(ref(tmp3[19]), obj8);
-    obj9.children = items4;
-    tmp24Result = tmp24(tmp25, obj9);
-    const tmp32 = ref(tmp3[19]);
+    intl = tmp2(tmp3[17]).intl;
+    items4[1] = tmp31(tmp33, obj8);
+    tmp25Result = tmp25(tmp26, obj9);
   }
-  const items6 = [tmp24Result, ];
-  if (tmp30Result) {
+  items6 = [tmp25Result, ];
+  if (tmp31Result) {
     const obj10 = { trinketsAnimationUrl: trinketAnimationUrl };
-    tmp30Result = tmp30(tmp2(tmp3[21]).GiftIconTrinketsAnimation, obj10);
+    tmp31Result = tmp31(tmp2(tmp3[21]).GiftIconTrinketsAnimation, obj10);
   }
-  items6[1] = tmp30Result;
-  obj5.children = items6;
+  items6[1] = tmp31Result;
   return closure_11(c5, obj5);
 });
+let result = size.fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButtonGift.tsx");
+
+export default memoResult;

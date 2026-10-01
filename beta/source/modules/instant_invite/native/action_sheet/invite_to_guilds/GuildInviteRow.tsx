@@ -4,23 +4,28 @@
 // Dependencies: [19, 17, 12546, 7155, 21, 12545, 9351, 5896, 4832, 1115, 5917, 2]
 
 // Module 12550 (GuildInviteRow)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 7155 */;
 import GuildInviteUtils from "GuildInviteUtils" /* 12545 */;
-import noop from "module_19" /* 19 */;
+import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 12546 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const View = fn(17).View;
-const useGuildInviteSendStates = fn(12546).useGuildInviteSendStates;
-const InviteSendStates = fn(7155).InviteSendStates;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/instant_invite/native/action_sheet/invite_to_guilds/GuildInviteRow.tsx");
-
-export default noop.memo(function GuildInviteRow(arg0) {
+const View = react_native.View;
+const useGuildInviteSendStates = GuildInviteSendStateStore.useGuildInviteSendStates;
+const InviteSendStates = Constants.InviteSendStates;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function GuildInviteRow(arg0) {
+  let end;
+  let row;
+  let start;
   ({ row, recipientId: require, source: importDefault } = arg0);
   function handlePress() {
-    GuildInviteUtils.sendGuildInvite(closure_1_0, guild.id, importDefault);
+    const obj = GuildInviteUtils;
+    obj.sendGuildInvite(require, guild.id, importDefault);
   }
   const guild = row.guild;
   ({ start, end } = arg0);
@@ -31,24 +36,24 @@ export default noop.memo(function GuildInviteRow(arg0) {
     }
     return tmp2;
   });
-  const obj = { importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: null };
-  const obj2 = { guild, size: null };
   let tmp2 = jsx;
-  const tmp3 = guild;
+  ({ guild, size: require("GuildIcon").GuildIconSizes.SMALL });
   const tmp4 = jsx(require("InviteButton"), { sendState: tmp, onPressSend: handlePress });
-  obj2.size = require("GuildIcon").GuildIconSizes.SMALL;
-  obj.children = jsx(require("GuildIcon"), { guild, size: null });
-  const tmp5 = require("GuildIcon");
-  const tmp6 = require;
-  const obj3 = { variant: "text-xs/medium", color: "text-default", children: null };
-  const intl = require("util").intl;
-  obj3.children = intl.format(require("util").t.zRl6XR, { count: row.memberCount });
+  require("GuildIcon");
+  const tmp7 = <View importantForAccessibility="no-hide-descendants" accessibilityElementsHidden>{null}</View>;
+  const Text = require("Text/Text").Text;
+  const intl = require("intl").intl;
   let tmp9 = tmp === InviteSendStates.SENDING;
   const obj4 = { count: row.memberCount };
-  const tmp7 = <View importantForAccessibility="no-hide-descendants" accessibilityElementsHidden>{null}</View>;
+  const tmp3 = guild;
+  const tmp6 = require;
+  const tmp8 = <Text variant="text-xs/medium" color="text-default">{intl.format(require("intl").t.zRl6XR, obj4)}</Text>;
   if (!tmp9) {
     tmp9 = tmp === InviteSendStates.SENT;
   }
-  const tmp8 = jsx(require("Text/Text").Text, { variant: "text-xs/medium", color: "text-default", children: null });
-  return tmp2(tmp6(tmp3[10]).TableRow, { icon: tmp7, label: guild.name, trailing: tmp4, subLabel: jsx(require("Text/Text").Text, { variant: "text-xs/medium", color: "text-default", children: null }), onPress: handlePress, disabled: tmp9, accessibilityState: { disabled: tmp9 }, start, end });
+  const obj5 = { icon: tmp7, label: guild.name, trailing: tmp4, subLabel: tmp8, onPress: handlePress, disabled: tmp9, accessibilityState: { disabled: tmp9 }, start, end };
+  return tmp2(tmp6(tmp3[10]).TableRow, obj5);
 });
+const result = size.fileFinishedImporting("modules/instant_invite/native/action_sheet/invite_to_guilds/GuildInviteRow.tsx");
+
+export default memoResult;

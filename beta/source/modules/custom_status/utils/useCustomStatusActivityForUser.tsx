@@ -5,25 +5,28 @@
 // Exports: default
 
 // Module 10612 (useCustomStatusActivityForUser)
+import Constants from "Constants" /* 1074 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const ActivityTypes = fn(1074).ActivityTypes;
-const size = fn(2);
+const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/custom_status/utils/useCustomStatusActivityForUser.tsx");
 
 export default function useCustomStatusActivityForUser(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [AuthenticationStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => AuthenticationStore.getId() === closure_0);
-  const obj = require("initialize");
-  const customStatusActivity = require("userSettingToActivity").useCustomStatusActivity();
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => AuthenticationStore.getId() === closure_0);
   const obj2 = require("userSettingToActivity");
+  const customStatusActivity = obj2.useCustomStatusActivity();
   const items1 = [PresenceStore];
-  let stateFromStores1 = require("initialize").useStateFromStores(items1, () => PresenceStore.findActivity(closure_0, (type) => type.type === constants.CUSTOM_STATUS));
+  const obj3 = require("get initialized");
+  let stateFromStores1 = obj3.useStateFromStores(items1, () => PresenceStore.findActivity(closure_0, (type) => type.type === constants.CUSTOM_STATUS));
   if (stateFromStores) {
     stateFromStores1 = customStatusActivity;
   }

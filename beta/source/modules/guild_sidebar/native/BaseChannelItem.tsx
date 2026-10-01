@@ -5,96 +5,94 @@
 // Exports: BaseChannelIcon, BaseChannelName, default, getChannelSubtitleTextProps, useChannelNameTextProps
 
 // Module 11868 (BaseChannelItem)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import noop from "module_19" /* 19 */;
+import ReadStateConstants from "ReadStateConstants" /* 5018 */;
+import react from "react" /* 19 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 9577 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap;
+
+let c9;
+let hasOwnProperty;
+let metroImportAll;
+let metroRequire;
 class BaseChannelSubtitle {
   constructor(arg0) {
-    ({ mode, subtitle } = global);
-    tmp = closure_11;
-    if (mode !== closure_11.UNREAD_IMPORTANT) {
-      if (mode !== tmp.RELEVANT) {
-        if (mode !== tmp.SELECTED) {
-          MUTED = tmp.MUTED;
-          obj = { variant: null, color: "text-muted" };
-          tmp2 = closure_5;
-          obj.variant = closure_5;
+    let mode;
+    let obj;
+    let subtitle;
+    ({ mode, subtitle } = arg0);
+    if (mode !== obj.UNREAD_IMPORTANT) {
+      if (mode !== obj.RELEVANT) {
+        if (mode !== obj.SELECTED) {
+          const MUTED = tmp.MUTED;
+          obj = { variant: hasOwnProperty, color: "text-muted" };
         }
-        tmp4Result = null;
+        let tmp4Result = null;
         if (null != subtitle) {
-          tmp5 = closure_0;
-          tmp6 = closure_2;
-          tmp4 = jsx;
-          obj3 = closure_0(closure_2[8]);
-          isAndroidResult = obj3.isAndroid();
-          tmp8 = !isAndroidResult;
-          if (!isAndroidResult) {
-            tmp8 = typeof subtitle === "string";
-          }
-          obj1 = { experimental_useNativeText: null, lineClamp: 1 };
-          obj1.experimental_useNativeText = tmp8;
-          tmp9 = obj1;
-          tmp10 = obj;
-          merged = Object.assign(obj);
-          obj1.children = subtitle;
-          tmp4Result = tmp4(closure_0(closure_2[7]).Text, obj1);
+          const Text = Text_Text.Text;
+          const obj3 = utils_PlatformUtils;
+          const obj2 = { experimental_useNativeText: !obj3.isAndroid() && typeof subtitle === "string", lineClamp: 1, children: subtitle };
+          !obj3.isAndroid() && typeof subtitle === "string";
+          const merged = Object.assign(obj);
+          tmp4Result = metroImportAll(Text, obj2);
         }
         return tmp4Result;
       }
     }
-    obj5 = { variant: closure_5, color: "redesign-channel-name-text" };
-    obj = obj5;
-    return;
+    obj = { variant: hasOwnProperty, color: "redesign-channel-name-text" };
   }
 }
-const View = fn(17).View;
-const RedesignChannelListConstants = fn(9577);
+const View = react_native.View;
 ({ CHANNEL_SUBTITLE_TEXT_VARIANT: hasOwnProperty, CHANNEL_TITLE_LINE_HEIGHT: metroRequire } = RedesignChannelListConstants);
-const UnreadSetting = fn(5018).UnreadSetting;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles((arg0) => {
-  const obj = { rowPaddingNoIcon: { paddingHorizontal: 6 }, rowSelected: null, unreadIndicator: null, channelIcon: null, redesignedChannelIcon: null, channelIconNormal: null, channelIconUnread: null, channelIconMuted: null, channel: null, channelNameContainer: null, channelName: null };
-  obj2 = { borderRadius: nativeDefault.modules.mobile.CHANNEL_ITEM_RADIUS, backgroundColor: nativeDefault.colors.MOBILE_CHANNEL_ITEM_BACKGROUND_SELECTED };
-  obj.rowSelected = obj2;
-  obj.unreadIndicator = { left: -nativeDefault.space.PX_8 };
+  let num2;
+  let num3;
+  let obj7;
+  const obj = { rowPaddingNoIcon: { paddingHorizontal: 6 }, rowSelected: { borderRadius: nativeDefault.modules.mobile.CHANNEL_ITEM_RADIUS, backgroundColor: nativeDefault.colors.MOBILE_CHANNEL_ITEM_BACKGROUND_SELECTED }, unreadIndicator: { left: -nativeDefault.space.PX_8 }, channelIcon: { width: 16, height: 16, marginRight: 8, opacity: num2 }, redesignedChannelIcon: { marginRight: 8, opacity: num3 }, channelIconNormal: { tintColor: nativeDefault.colors.CHANNEL_ICON }, channelIconUnread: { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE }, channelIconMuted: { tintColor: nativeDefault.colors.ICON_MUTED }, channel: { paddingHorizontal: 8, paddingVertical: 8, flexDirection: "row", alignItems: "center", position: "relative" }, channelNameContainer: { flex: 1, flexDirection: "column", alignItems: "stretch", justifyContent: "center" }, channelName: obj7 };
+  ({ borderRadius: nativeDefault.modules.mobile.CHANNEL_ITEM_RADIUS, backgroundColor: nativeDefault.colors.MOBILE_CHANNEL_ITEM_BACKGROUND_SELECTED });
   let num = 1;
-  let num2 = 1;
-  if (arg0 === obj2.MUTED) {
+  num2 = 1;
+  ({ left: -nativeDefault.space.PX_8 });
+  if (arg0 === obj.MUTED) {
     num2 = 0.5;
   }
-  obj.channelIcon = { width: 16, height: 16, marginRight: 8, opacity: num2 };
-  let num3 = num;
-  if (arg0 === obj2.MUTED) {
+  num3 = num;
+  if (arg0 === obj.MUTED) {
     num3 = 0.5;
   }
-  obj.redesignedChannelIcon = { marginRight: 8, opacity: num3 };
-  const obj3 = { left: -nativeDefault.space.PX_8 };
-  obj.channelIconNormal = { tintColor: nativeDefault.colors.CHANNEL_ICON };
-  const obj4 = { tintColor: nativeDefault.colors.CHANNEL_ICON };
-  obj.channelIconUnread = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-  const obj5 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-  obj.channelIconMuted = { tintColor: nativeDefault.colors.ICON_MUTED };
-  obj.channel = { paddingHorizontal: 8, paddingVertical: 8, flexDirection: "row", alignItems: "center", position: "relative" };
-  obj.channelNameContainer = { flex: 1, flexDirection: "column", alignItems: "stretch", justifyContent: "center" };
-  const obj7 = { flexGrow: 1, textAlign: "left", lineHeight, opacity: null };
-  if (arg0 === obj2.MUTED) {
+  ({ tintColor: nativeDefault.colors.CHANNEL_ICON });
+  ({ tintColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE });
+  obj7 = { flexGrow: 1, textAlign: "left", lineHeight: metroRequire, opacity: num };
+  ({ tintColor: nativeDefault.colors.ICON_MUTED });
+  if (arg0 === obj.MUTED) {
     num = 0.5;
   }
-  obj7.opacity = num;
-  obj.channelName = obj7;
   return obj;
 });
-let obj2 = { SELECTED: "Selected", LOCKED: "Locked", MUTED: "Muted", RELEVANT: "Relevant", UNREAD_LESS_IMPORTANT: "UnreadLessImportant", UNREAD_IMPORTANT: "UnreadImportant", DEFAULT: "Default" };
-const size = fn(2);
+const ChannelModes = { SELECTED: "Selected", LOCKED: "Locked", MUTED: "Muted", RELEVANT: "Relevant", UNREAD_LESS_IMPORTANT: "UnreadLessImportant", UNREAD_IMPORTANT: "UnreadImportant", DEFAULT: "Default" };
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/BaseChannelItem.tsx");
 
 export default function BaseChannelItem(mode) {
+  let ALL_MESSAGES;
+  let AnimatedPressableHighlight;
+  let channel;
+  let channelInfo;
+  let children;
+  let icon;
+  let items1;
+  let items2;
+  let name;
+  let unread;
   mode = mode.mode;
   const hideIcon = mode.hideIcon;
   let flag = mode.disableHighlightOnPress;
@@ -111,141 +109,154 @@ export default function BaseChannelItem(mode) {
   dependencyMap = tmp2;
   let items = [hideIcon, mode, tmp2];
   const obj = {
-    style: noop.useMemo(() => {
-      const items = [channel.channel, , ];
-      let rowPaddingNoIcon = hideIcon;
-      if (hideIcon) {
-        rowPaddingNoIcon = tmp.rowPaddingNoIcon;
-      }
-      items[1] = rowPaddingNoIcon;
-      items[2] = mode === obj2.SELECTED && channel.rowSelected;
+    style: react.useMemo(() => {
+      const items = [channel.channel, hideIcon && channel.rowPaddingNoIcon, mode === obj.SELECTED && channel.rowSelected];
       return items;
     }, items),
-    children: null
+    children: items1
   };
-  if (hideIcon) {
-    const items1 = [tmp5, , , ];
-    let tmp14 = !hideIcon;
-    if (!hideIcon) {
-      tmp14 = icon;
-    }
-    items1[1] = tmp14;
-    items1[2] = name;
-    items1[3] = channelInfo;
-    obj.children = items1;
-    if (flag) {
-      let AnimatedPressableHighlight = hideIcon(11869);
-    } else {
-      AnimatedPressableHighlight = mode(8370).AnimatedPressableHighlight;
-    }
-    obj2 = {};
-    const merged1 = Object.assign(merged);
-    const items2 = [tmp3(tmp4, obj), children];
-    obj2.children = items2;
-    return tmp3(AnimatedPressableHighlight, obj2);
-  } else {
-    const obj3 = { style: tmp2.unreadIndicator, unread, resolvedUnreadSetting: null };
-    if (mode === obj2.UNREAD_LESS_IMPORTANT) {
-      let ALL_MESSAGES = UnreadSetting.ONLY_MENTIONS;
+  let tmp6Result = !hideIcon;
+  const tmp4 = View;
+  if (!hideIcon) {
+    const obj2 = { style: tmp2.unreadIndicator, unread, resolvedUnreadSetting: ALL_MESSAGES };
+    const tmp6 = closure_8;
+    const tmp9 = hideIcon(9625);
+    if (mode === obj.UNREAD_LESS_IMPORTANT) {
+      ALL_MESSAGES = UnreadSetting.ONLY_MENTIONS;
     } else {
       ALL_MESSAGES = UnreadSetting.ALL_MESSAGES;
     }
-    obj3.resolvedUnreadSetting = ALL_MESSAGES;
-    closure_8(hideIcon(9625), obj3);
-    const tmp9 = hideIcon(9625);
+    tmp6Result = tmp6(tmp9, obj2);
   }
+  items1 = [tmp6Result, !hideIcon && icon, name, channelInfo];
+  const tmp3Result = closure_9(tmp4, obj);
+  if (flag) {
+    AnimatedPressableHighlight = hideIcon(11869);
+  } else {
+    AnimatedPressableHighlight = mode(8370).AnimatedPressableHighlight;
+  }
+  const obj3 = { children: items2 };
+  const merged1 = Object.assign(merged);
+  items2 = [tmp3Result, children];
+  return closure_9(AnimatedPressableHighlight, obj3);
 };
-export const ChannelModes = obj2;
+export { ChannelModes };
 export { BaseChannelSubtitle };
 export const BaseChannelIcon = function BaseChannelIcon(arg0) {
+  let IconComponent;
+  let disableColor;
+  let isChannelLive;
+  let mode;
+  let obj;
+  let source;
+  let str;
+  let style;
+  let tmp11Result;
   ({ disableColor, mode, IconComponent, style } = arg0);
   ({ source, isChannelLive } = arg0);
   const tmp = closure_10(mode);
   const items = [tmp.channelIcon];
-  if (true === disableColor) {
-    if (null != style) {
-      items.push(style);
-    }
-    if (null != IconComponent) {
-      obj2 = { size: "sm", style: tmp.redesignedChannelIcon, color: null };
-      let str = "status-positive";
-      if (!isChannelLive) {
-        let str2 = "icon-muted";
-        if (!tmp2) {
-          if (tmp3) {
-            let str3 = "interactive-text-active";
-          } else {
-            str3 = "channel-icon";
-          }
-          str2 = str3;
-        }
-        str = str2;
-      }
-      obj2.color = str;
-      let tmp12Result = React6(IconComponent, obj2);
+  if (true !== disableColor) {
+    let channelIconUnread;
+    const push = items.push;
+    if (mode === obj.MUTED) {
+      channelIconUnread = tmp.channelIconMuted;
     } else {
-      const obj = { disableColor, size: native.Icon.Sizes.CUSTOM, style: items, source };
-      tmp12Result = React6(native.Icon, obj);
-    }
-    return tmp12Result;
-  } else {
-    if (tmp2) {
-      let channelIconUnread = tmp.channelIconMuted;
-    } else {
-      if (!tmp3) {
-        if (!tmp4) {
+      if (mode !== obj.UNREAD_IMPORTANT) {
+        if (mode !== obj.SELECTED) {
           channelIconUnread = tmp.channelIconNormal;
         }
       }
       channelIconUnread = tmp.channelIconUnread;
     }
-    items.push(channelIconUnread);
+    push(channelIconUnread);
   }
+  if (null != style) {
+    items.push(style);
+  }
+  if (null != IconComponent) {
+    const obj2 = { size: "sm", style: tmp.redesignedChannelIcon, color: str };
+    str = "status-positive";
+    const tmp11 = metroImportAll;
+    if (!isChannelLive) {
+      let str2 = "icon-muted";
+      if (mode !== obj.MUTED) {
+        let str3;
+        if (mode === obj.UNREAD_IMPORTANT) {
+          str3 = "interactive-text-active";
+        } else {
+          str3 = "channel-icon";
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    tmp11Result = tmp11(IconComponent, obj2);
+  } else {
+    obj = { disableColor, size: native.Icon.Sizes.CUSTOM, style: items, source };
+    const Icon = native.Icon;
+    tmp11Result = metroImportAll(Icon, obj);
+  }
+  return tmp11Result;
 };
 export const useChannelNameTextProps = function useChannelNameTextProps(channelMode) {
-  if (channelMode !== obj2.UNREAD_IMPORTANT) {
+  let obj;
+  if (channelMode !== obj.UNREAD_IMPORTANT) {
+    if (channelMode !== obj.RELEVANT) {
+      if (channelMode === obj.UNREAD_LESS_IMPORTANT) {
+        obj = { variant: "text-md/medium", color: "redesign-channel-name-muted-text" };
+      } else if (channelMode === obj.MUTED) {
+        obj = { variant: "text-md/medium", color: "text-muted" };
+      } else {
+        obj = channelMode === tmp.SELECTED ? { variant: "text-md/medium", color: "redesign-channel-name-text" } : { variant: "text-md/medium", color: "redesign-channel-name-muted-text" };
+      }
+    }
     return { variant: "text-md/semibold", color: "redesign-channel-name-text" };
   }
 };
 export const getChannelSubtitleTextProps = function getChannelSubtitleTextProps(channelMode) {
-  if (channelMode !== obj2.UNREAD_IMPORTANT) {
-    if (channelMode !== tmp.RELEVANT) {
-      if (channelMode !== tmp.SELECTED) {
+  let obj;
+  if (channelMode !== obj.UNREAD_IMPORTANT) {
+    if (channelMode !== obj.RELEVANT) {
+      if (channelMode !== obj.SELECTED) {
         const MUTED = tmp.MUTED;
-        let obj = { variant, color: "text-muted" };
+        obj = { variant: hasOwnProperty, color: "text-muted" };
       }
       return obj;
     }
   }
-  obj2 = { variant, color: "redesign-channel-name-text" };
-  obj = obj2;
+  obj = { variant: hasOwnProperty, color: "redesign-channel-name-text" };
 };
 export const BaseChannelName = function BaseChannelName(mode) {
+  let items;
+  let name;
+  let subtitle;
+  let textStyle;
   mode = mode.mode;
   ({ name, subtitle, textStyle } = mode);
   const tmp = closure_10(mode);
   const obj = { style: tmp.channelNameContainer, children: null };
-  if (mode !== obj2.UNREAD_IMPORTANT) {
-    if (mode !== tmp6.RELEVANT) {
-      if (mode === tmp6.UNREAD_LESS_IMPORTANT) {
+  const tmp2 = React4;
+  const tmp3 = View;
+  if (mode !== obj.UNREAD_IMPORTANT) {
+    let obj2;
+    if (mode !== obj.RELEVANT) {
+      if (mode === obj.UNREAD_LESS_IMPORTANT) {
         obj2 = { variant: "text-md/medium", color: "redesign-channel-name-muted-text" };
-      } else if (mode === tmp6.MUTED) {
+      } else if (mode === obj.MUTED) {
         obj2 = { variant: "text-md/medium", color: "text-muted" };
       } else {
         obj2 = mode === tmp6.SELECTED ? { variant: "text-md/medium", color: "redesign-channel-name-text" } : { variant: "text-md/medium", color: "redesign-channel-name-muted-text" };
       }
     }
-    const obj3 = { experimental_useNativeText: true };
+    const obj3 = { experimental_useNativeText: true, lineClamp: 1, style: items, children: name };
     const merged = Object.assign(obj2);
-    obj3.lineClamp = 1;
-    const items = [tmp.channelName, textStyle];
-    obj3.style = items;
-    obj3.children = name;
-    const items1 = [tmp4(tmp5, obj3), ];
+    items = [tmp.channelName, textStyle];
+    const items1 = [metroImportAll(tmp5, obj3), ];
     const obj4 = { mode, subtitle };
-    items1[1] = tmp4(BaseChannelSubtitle, obj4);
+    items1[1] = metroImportAll(BaseChannelSubtitle, obj4);
     obj.children = items1;
-    return React7(View, obj);
+    return tmp2(tmp3, obj);
   }
   obj2 = { variant: "text-md/semibold", color: "redesign-channel-name-text" };
 };

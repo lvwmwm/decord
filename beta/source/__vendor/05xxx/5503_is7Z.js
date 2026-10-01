@@ -8,8 +8,6 @@
 import _mod5498 from "module_5498" /* 5498 */;
 import _mod5499 from "module_5499" /* 5499 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const is7Z = function is7Z(fileChunk) {
   fileChunk = _mod5498.getFileChunk(fileChunk);
@@ -28,13 +26,14 @@ export const isRAR = function isRAR(fileChunk) {
 };
 export const isZIP = function isZIP(fileChunk, chunkSize) {
   let num;
+  const getFileChunk = _mod5498.getFileChunk;
   if (null != chunkSize) {
     num = chunkSize.chunkSize;
   }
   if (!num) {
     num = 64;
   }
-  fileChunk = _mod5498.getFileChunk(fileChunk, num);
+  fileChunk = getFileChunk(fileChunk, num);
   const FileTypes = _mod5499.FileTypes;
   return FileTypes.checkByFileType(fileChunk, "zip");
 };

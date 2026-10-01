@@ -5,10 +5,9 @@
 // Exports: default
 
 // Module 13992 (useFocusRefOnNavigation)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Navigator/native/useFocusRefOnNavigation.tsx");
 
 export default function useFocusRefOnNavigation(inputRef) {
@@ -17,14 +16,13 @@ export default function useFocusRefOnNavigation(inputRef) {
   if (flag === undefined) {
     flag = true;
   }
-  const isFocused = inputRef(flag[1]).useIsFocused();
+  let obj = inputRef(flag[1]);
+  const isFocused = obj.useIsFocused();
   const items = [flag, inputRef, isFocused];
   const effect = isFocused.useEffect(() => {
-    inputRef(flag[2]).runAfterInteractions(() => {
-      let tmp = flag;
-      if (flag) {
-        tmp = isFocused;
-      }
+    const obj = inputRef(flag[2]);
+    const ref = obj.runAfterInteractions(() => {
+      const tmp = flag && isFocused;
       if (tmp) {
         const current = ref.current;
         if (current != null) {

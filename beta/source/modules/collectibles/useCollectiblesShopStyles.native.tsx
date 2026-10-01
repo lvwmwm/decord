@@ -6,15 +6,16 @@
 // Module 10544 (useCollectiblesShopStyles)
 import nativeDefault from "native" /* 576 */;
 import createUseCollectiblesShopStylesDefault from "createUseCollectiblesShopStyles" /* 10545 */;
-import tinycolor_mod from "tinycolor" /* 6972 */;
+import module_6972_mod from "module_6972" /* 6972 */;
+import size from "module_2" /* 2 */;
 
-let tinycolor = tinycolor_mod;
-const importDefaultResultResult = tinycolor(nativeDefault.unsafe_rawColors.WHITE);
-let tinycolor = tinycolor_mod;
-const saturateResult = tinycolor(nativeDefault.unsafe_rawColors.WHITE).saturate(1);
-const importDefaultResult1Result = tinycolor(nativeDefault.unsafe_rawColors.BLACK);
-const saturateResult1 = tinycolor(nativeDefault.unsafe_rawColors.BLACK).saturate(1);
-const size = fn(2);
+let module_6972 = module_6972_mod;
+const importDefaultResultResult = module_6972(nativeDefault.unsafe_rawColors.WHITE);
+const saturateResult = importDefaultResultResult.saturate(1);
+module_6972 = module_6972_mod;
+const importDefaultResult1Result = module_6972(nativeDefault.unsafe_rawColors.BLACK);
+const saturateResult1 = importDefaultResult1Result.saturate(1);
+const tmp6 = createUseCollectiblesShopStylesDefault({ dark: saturateResult1, light: saturateResult });
 const result = size.fileFinishedImporting("modules/collectibles/useCollectiblesShopStyles.native.tsx");
 
-export default createUseCollectiblesShopStylesDefault({ dark: tinycolor(nativeDefault.unsafe_rawColors.BLACK).saturate(1), light: saturateResult });
+export default tmp6;

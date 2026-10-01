@@ -6,50 +6,77 @@
 
 // Module 9672 (BugReporterFeatureActionSheet)
 import _modDef12 from "module_12" /* 12 */;
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { list: { paddingHorizontal: nativeDefault.space.PX_12 }, searchBar: null, sectionHeader: null };
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_12 };
-obj.searchBar = { paddingHorizontal: nativeDefault.space.PX_12 };
-let obj4 = { paddingHorizontal: nativeDefault.space.PX_12 };
-obj.sectionHeader = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center" };
-let closure_8 = createStyles.createStyles(obj);
-let closure_9 = noop.memo((arg0) => {
+let BottomSheet, item;
+
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { list: obj2, searchBar: obj3, sectionHeader: obj4 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_12 };
+createStyles = createStyles.createStyles;
+obj3 = { paddingHorizontal: nativeDefault.space.PX_12 };
+obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center" };
+let closure_8 = createStyles(obj);
+let closure_9 = react.memo((arg0) => {
+  let height;
+  let items;
+  let title;
   ({ title, height } = arg0);
-  const obj = { style: null, children: null };
-  const items = [closure_8().sectionHeader, { height }];
-  obj.style = items;
-  obj.children = timestampProducer(Text_Text.Text, { variant: "text-sm/bold", color: "text-muted", children: title });
-  return timestampProducer(View, obj);
+  const obj = { style: items, children: metroRequire(Text_Text.Text, { variant: "text-sm/bold", color: "text-muted", children: title }) };
+  items = [closure_8().sectionHeader, { height }];
+  return metroRequire(View, obj);
 });
-let closure_10 = noop.memo((item) => {
+let closure_10 = react.memo((item) => {
+  let end;
+  let feature;
+  let featureId;
+  let obj2;
+  let obj4;
+  let start;
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  const obj = { start, end, value: item(9647).getFeatureId(item), label: item.name, legacyCompat_selected: null, legacyCompat_onPress: null };
-  const obj2 = item(9647);
-  const featureId = item(9647).getFeatureId(item);
-  const obj3 = item(9647);
-  obj.legacyCompat_selected = featureId === item(9647).getFeatureId(feature);
-  obj.legacyCompat_onPress = function legacyCompat_onPress() {
-    setFeature(item);
-    ActionSheetActionCreatorsDefault.hideActionSheet();
+  let obj = {
+    start,
+    end,
+    value: obj2.getFeatureId(item),
+    label: item.name,
+    legacyCompat_selected: featureId === obj4.getFeatureId(feature),
+    legacyCompat_onPress() {
+      setFeature(item);
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+    }
   };
-  return closure_6(item(6000).TableRadioRow, obj);
+  const TableRadioRow = item(6000).TableRadioRow;
+  obj2 = item(9647);
+  const obj3 = item(9647);
+  featureId = obj3.getFeatureId(item);
+  obj4 = item(9647);
+  return closure_6(TableRadioRow, obj);
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");
 
 export default function BugReporterFeatureActionSheet(features) {
+  let BottomSheetTitleHeader;
+  let intl;
+  let items4;
+  let obj2;
   features = features.features;
   const feature = features.feature;
   const setFeature = features.setFeature;
@@ -58,14 +85,21 @@ export default function BugReporterFeatureActionSheet(features) {
   let tmp = closure_8();
   const tmp2 = first(items.useState(""), 2);
   first = tmp2[0];
-  const items1 = [features, first];
+  const items1 = [, ];
+  const tmp4 = tmp2[1];
+  items1[0] = features;
+  items1[1] = first;
+  const insets = feature(setFeature[10])().insets;
   const memo = items.useMemo(() => {
+    let mapped;
     const found = features.filter((asana_inbox_id) => {
       let tmp = null != asana_inbox_id.asana_inbox_id;
       if (tmp) {
-        let isEmptyResult = feature(setFeature[11]).isEmpty(first);
+        const obj = feature(setFeature[11]);
+        let isEmptyResult = obj.isEmpty(first);
         if (!isEmptyResult) {
           let str3;
+          const tmp2Result = feature(setFeature[12]);
           const formatted = str.toLowerCase();
           if (asana_inbox_id.name != null) {
             str3 = str2.toLowerCase();
@@ -73,11 +107,11 @@ export default function BugReporterFeatureActionSheet(features) {
           if (str3 == null) {
             str3 = "";
           }
-          isEmptyResult = tmp2(tmp3[12])(formatted, str3);
-          const tmp2Result = tmp2(tmp3[12]);
+          isEmptyResult = tmp2Result(formatted, str3);
         }
         if (!isEmptyResult) {
           let str5;
+          const tmp2Result2 = feature(setFeature[12]);
           const formatted1 = str.toLowerCase();
           if (asana_inbox_id.squad != null) {
             str5 = str4.toLowerCase();
@@ -85,45 +119,55 @@ export default function BugReporterFeatureActionSheet(features) {
           if (str5 == null) {
             str5 = "";
           }
-          isEmptyResult = tmp2(tmp3[12])(formatted1, str5);
-          const tmp2Result2 = tmp2(tmp3[12]);
+          isEmptyResult = tmp2Result2(formatted1, str5);
         }
         tmp = isEmptyResult;
-        const obj = feature(setFeature[11]);
       }
       return tmp;
     });
-    const entries = Object.entries(_modDef12.groupBy(found, (squad) => squad.squad));
-    const obj2 = { items: null, sections: null };
-    const mapped = entries.map((item) => {
+    let obj = _modDef12;
+    const entries1 = entries(obj.groupBy(found, (squad) => squad.squad));
+    const obj2 = {
+      items: entries1.map((item) => {
+        let tmp;
+        let tmp2;
+        [tmp, tmp2] = item;
+        return { title, data };
+      }),
+      sections: mapped
+    };
+    mapped = entries1.map((item) => {
+      let arr;
       [, arr] = item;
       return arr.length;
     });
-    obj2.items = entries.map((item) => {
-      [tmp, tmp2] = item;
-      return { title, data };
-    });
-    obj2.sections = mapped;
     return obj2;
   }, items1);
   items = memo.items;
-  const tmp6 = feature(setFeature[14])();
-  const height = tmp6;
+  const sections = memo.sections;
+  const tmp6 = feature(setFeature[13])();
+  const tmp7 = feature(setFeature[14])();
+  const height = tmp7;
   const items2 = [items, setFeature, feature];
-  const items3 = [tmp6, items];
-  const callback = items.useCallback((arg0, arg1) => timestampProducer(closure_10, { item: items[arg0].data[arg1], feature, setFeature, start: 0 === arg1, end: arg1 === items[arg0].data.length - 1 }), items2);
-  const callback1 = items.useCallback((arg0) => timestampProducer(closure_9, { title: items[arg0].title, height }), items3);
-  let obj = { scrollable: true, startExpanded: true, header: null, children: null };
-  let obj2 = { title: null };
-  const intl = features(setFeature[17]).intl;
-  obj2.title = intl.string(features(setFeature[17]).t["77VVd8"]);
-  obj.header = closure_6(features(setFeature[16]).BottomSheetTitleHeader, obj2);
-  const tmp5 = feature(setFeature[13])();
-  const items4 = [closure_6(height, { style: tmp.searchBar, children: closure_6(features(setFeature[18]).SearchField, { size: "md", onChange: tmp2[1] }) }), ];
-  const obj4 = { style: tmp.list, inActionSheet: true, sections: memo.sections, itemSize: tmp5, estimatedListSize: "windowSize", renderItem: callback, renderSectionHeader: callback1, sectionHeaderSize: tmp6, insetEnd: null };
-  const obj3 = { style: tmp.searchBar, children: closure_6(features(setFeature[18]).SearchField, { size: "md", onChange: tmp2[1] }) };
-  obj4.insetEnd = feature(setFeature[5]).space.PX_16 + feature(setFeature[10])().insets.bottom;
-  items4[1] = closure_6(feature(setFeature[19]), obj4);
-  obj.children = items4;
-  return closure_7(features(setFeature[15]).BottomSheet, obj);
+  const items3 = [tmp7, items];
+  const callback = items.useCallback((arg0, arg1) => {
+    const obj = { item: items[arg0].data[arg1], feature, setFeature, start: 0 === arg1, end: arg1 === items[arg0].data.length - 1 };
+    return metroRequire(closure_10, obj);
+  }, items2);
+  const callback1 = items.useCallback((arg0) => {
+    const obj = { title: items[arg0].title, height };
+    return metroRequire(closure_9, obj);
+  }, items3);
+  let obj = { scrollable: true, startExpanded: true, header: closure_6(BottomSheetTitleHeader, obj2), children: items4 };
+  BottomSheet = features(setFeature[15]).BottomSheet;
+  obj2 = { title: intl.string(features(setFeature[17]).t["77VVd8"]) };
+  BottomSheetTitleHeader = features(setFeature[16]).BottomSheetTitleHeader;
+  intl = features(setFeature[17]).intl;
+  items4 = [, ];
+  const obj3 = { style: tmp.searchBar, children: closure_6(features(setFeature[18]).SearchField, { size: "md", onChange: tmp4 }) };
+  items4[0] = closure_6(height, obj3);
+  const obj4 = { style: tmp.list, inActionSheet: true, sections, itemSize: tmp6, estimatedListSize: "windowSize", renderItem: callback, renderSectionHeader: callback1, sectionHeaderSize: tmp7, insetEnd: feature(setFeature[5]).space.PX_16 + insets.bottom };
+  const tmp10 = feature(setFeature[19]);
+  items4[1] = closure_6(tmp10, obj4);
+  return closure_7(BottomSheet, obj);
 };

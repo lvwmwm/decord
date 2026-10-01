@@ -5,28 +5,33 @@
 // Exports: default
 
 // Module 11485 (ForumPostPinIcon)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import _modDef11486 from "module_11486" /* 11486 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11486 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { pin: null, pinIcon: null };
-let size = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, width: 23, height: 23, marginEnd: 4, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-obj2.pin = size;
-const size1 = { height: 14, width: 14, tintColor: nativeDefault.colors.WHITE };
-obj2.pinIcon = size1;
-let closure_5 = createStyles.createStyles(obj2);
-size = fn(2);
+let size;
+let size1;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+const obj = { pin: size, pinIcon: size1 };
+size = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, width: 23, height: 23, marginEnd: 4, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+createStyles = createStyles.createStyles;
+size1 = { height: 14, width: 14, tintColor: nativeDefault.colors.WHITE };
+let closure_5 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostPinIcon.tsx");
 
 export default function ForumPostPinIcon(containerStyle) {
+  containerStyle = containerStyle.containerStyle;
   const tmp = closure_5();
-  const obj = { style: null, children: jsx(native.Icon, { source: _modDef11486, style: tmp.pinIcon }) };
-  const items = [tmp.pin, containerStyle.containerStyle];
-  obj.style = items;
-  return <View style={null}>{jsx(native.Icon, { source: _modDef11486, style: tmp.pinIcon })}</View>;
+  const items = [tmp.pin, containerStyle];
+  ({ source: AssetRegistryDefault, style: tmp.pinIcon });
+  const Icon = native.Icon;
+  return <View style={items}>{null}</View>;
 };

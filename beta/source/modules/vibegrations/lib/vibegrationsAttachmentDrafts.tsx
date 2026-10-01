@@ -5,29 +5,35 @@
 // Exports: addVibegrationsAttachmentDrafts, clearVibegrationsAttachmentDrafts, removeVibegrationsAttachmentDraft, sendVibegrationsCardReply, useVibegrationsAttachmentDraftList
 
 // Module 16389 (vibegrationsAttachmentDrafts)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
+import ZustandStore from "ZustandStore" /* 4705 */;
 import VibegrationsTypes from "VibegrationsTypes" /* 5371 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
 import Dispatcher_mod from "Dispatcher" /* 573 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let closure_8;
+
+let closure_4;
+let hasOwnProperty;
+const f104720 = () => {
+
+};
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
     StringResult = obj;
-    if (obj) {
+    if (StringResult) {
       const _Symbol = Symbol;
       if (undefined !== obj[Symbol.toPrimitive]) {
-        const call = tmp3.call;
-        if (typeof call === "unknown") {
-          let callResult = tmp3("string");
-        } else {
-          callResult = call(obj, "string");
-        }
+        const callResult = obj[Symbol.toPrimitive].call(obj, "string");
         StringResult = callResult;
         if (typeof callResult === "object") {
           const _TypeError = TypeError;
+          const self = this;
+          const self2 = this;
           const typeError = new TypeError("@@toPrimitive must return a primitive value.");
           throw typeError;
         }
@@ -55,16 +61,17 @@ function getVibegrationsAttachmentDrafts(projectId, chat) {
   return tmp2;
 }
 function setDrafts(projectId, chat, items) {
+  let obj2;
   const draftsByProject = zustandStore.getState().draftsByProject;
-  const obj = { draftsByProject: null };
-  const obj2 = {};
+  const obj = { draftsByProject: obj2 };
+  obj2 = {};
+  const setState = zustandStore.setState;
   const merged = Object.assign(draftsByProject);
   const obj3 = {};
   const merged1 = Object.assign(draftsByProject[projectId]);
   obj3[chat] = items;
   obj2[projectId] = obj3;
-  obj.draftsByProject = obj2;
-  zustandStore.setState(obj);
+  setState(obj);
 }
 function discardDraft(projectId, item10010) {
   if (null != item10010.previewUrl) {
@@ -72,17 +79,16 @@ function discardDraft(projectId, item10010) {
     URL.revokeObjectURL(item10010.previewUrl);
   }
   if (null != item10010.ref) {
-    React4(projectId, item10010.ref.id).catch(() => {
-
-    });
-    const promise = React4(projectId, item10010.ref.id);
+    const promise = React3(projectId, item10010.ref.id);
+    promise.catch(f104720);
   }
 }
-function discardProject(projectId, arg1) {
+function discardProject(projectId, deleteFromWorker) {
+  deleteFromWorker = deleteFromWorker.deleteFromWorker;
   const draftsByProject = zustandStore.getState().draftsByProject;
   if (null != draftsByProject[projectId]) {
     const _Object = Object;
-    const values = Object.values(tmp2);
+    const values = Object.values(tmp);
     const iter = values[Symbol.iterator]();
     let nextResult = iter.next();
     while (iter !== undefined) {
@@ -90,12 +96,12 @@ function discardProject(projectId, arg1) {
         nextResult = closure_7;
       }
       for (const item10017 of nextResult) {
-        let tmp8 = item10017;
-        if (tmp) {
-          let tmp14 = discardDraft(arg0, tmp8);
-        } else if (null != tmp8.previewUrl) {
+        let tmp7 = item10017;
+        if (deleteFromWorker) {
+          let tmp13 = discardDraft(projectId, tmp7);
+        } else if (null != tmp7.previewUrl) {
           let _URL = URL;
-          let revokeObjectURLResult = URL.revokeObjectURL(tmp8.previewUrl);
+          let revokeObjectURLResult = URL.revokeObjectURL(tmp7.previewUrl);
         }
         continue;
       }
@@ -122,9 +128,10 @@ function takeVibegrationsAttachmentRefs(projectId, chat) {
     }
     setDrafts(projectId, chat, closure_7);
     return arr.flatMap((ref) => {
+      let items1;
       if (null != ref.ref) {
         const items = [ref.ref];
-        let items1 = items;
+        items1 = items;
       } else {
         items1 = [];
       }
@@ -132,35 +139,35 @@ function takeVibegrationsAttachmentRefs(projectId, chat) {
     });
   }
 }
-const VibegrationsConnectionStore = fn(12642);
+const createZustandStore = ZustandStore.createZustandStore;
 ({ deleteStagedAttachment: closure_4, sendUserMessage: hasOwnProperty } = VibegrationsConnectionStore);
 let closure_7 = [];
 let c8 = 1;
-const zustandStore = fn(4705).createZustandStore(() => ({ draftsByProject: {} }));
+const zustandStore = createZustandStore(() => ({ draftsByProject: {} }));
 let Dispatcher = Dispatcher_mod;
 const subscription = Dispatcher.subscribe("LOGOUT", () => {
   const keys = Object.keys(zustandStore.getState().draftsByProject);
+  const tmp2 = keys[Symbol.iterator]();
   while (tmp2 !== undefined) {
     let tmp5 = discardProject(tmp3, { deleteFromWorker: true });
     continue;
   }
 });
-let Dispatcher = Dispatcher_mod;
+Dispatcher = Dispatcher_mod;
 const subscription1 = Dispatcher.subscribe("VIBEGRATIONS_PROJECT_DELETE_SUCCESS", (projectId) => {
   discardProject(projectId.projectId, { deleteFromWorker: false });
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsAttachmentDrafts.tsx");
 
 export const VibegrationsAttachmentDraftStore = zustandStore;
 export { getVibegrationsAttachmentDrafts };
 export const useVibegrationsAttachmentDraftList = function useVibegrationsAttachmentDraftList(projectId, chat) {
-  closure_0 = projectId;
-  closure_1 = chat;
+  let closure_0 = projectId;
+  let closure_1 = chat;
   return zustandStore.useState((arg0) => {
     let tmp2;
-    if (arg0.draftsByProject[closure_0] != null) {
-      tmp2 = tmp[closure_1];
+    if (arg0.draftsByProject[projectId] != null) {
+      tmp2 = tmp[chat];
     }
     if (tmp2 == null) {
       tmp2 = closure_7;
@@ -169,32 +176,36 @@ export const useVibegrationsAttachmentDraftList = function useVibegrationsAttach
   });
 };
 export const addVibegrationsAttachmentDrafts = function addVibegrationsAttachmentDrafts(projectId, chat, mapped) {
-  closure_0 = projectId;
-  closure_1 = chat;
+  let state;
+  let closure_0 = projectId;
+  let closure_1 = chat;
   if (0 !== mapped.length) {
-    mapped = mapped.map((draft) => {
-      const obj = { draft: null, upload: null };
-      const obj2 = {};
-      const merged = Object.assign(draft.draft);
+    mapped = mapped.map((upload) => {
+      let obj2;
+      const obj = { draft: obj2, upload };
+      upload = upload.upload;
+      obj2 = { localId: +closure_8 };
+      const merged = Object.assign(upload.draft);
       closure_8 = tmp2 + 1;
-      obj2.localId = +closure_8;
-      obj.draft = obj2;
-      obj.upload = draft.upload;
       return obj;
     });
+    let tmp4 = setDrafts;
     const items = [];
-    HermesBuiltin.arraySpread(mapped.map((draft) => draft.draft), HermesBuiltin.arraySpread(getVibegrationsAttachmentDrafts(projectId, chat), 0));
+    let tmp6 = items;
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, getVibegrationsAttachmentDrafts(projectId, chat), 0);
+    HermesBuiltin.arraySpread(items, mapped.map((draft) => draft.draft), arraySpreadResult);
     setDrafts(projectId, chat, items);
+    let tmp2 = mapped;
     for (const item10006 of mapped) {
       let upload = item10006.upload;
-      let tmp10Result = tmp10(item10006.draft);
+      let tmp11Result = tmp11(item10006.draft);
       continue;
     }
-    const arraySpreadResult = HermesBuiltin.arraySpread(getVibegrationsAttachmentDrafts(projectId, chat), 0);
   }
 };
 export const removeVibegrationsAttachmentDraft = function removeVibegrationsAttachmentDraft(projectId, chat, arg2) {
-  closure_0 = arg2;
+  let obj3;
+  let closure_0 = arg2;
   const tmp = zustandStore.getState().draftsByProject[projectId];
   let tmp2;
   if (tmp != null) {
@@ -210,29 +221,27 @@ export const removeVibegrationsAttachmentDraft = function removeVibegrationsAtta
       URL.revokeObjectURL(found.previewUrl);
     }
     if (null != found.ref) {
-      React4(projectId, found.ref.id).catch(() => {
-
-      });
-      const promise = React4(projectId, found.ref.id);
+      const promise = React3(projectId, found.ref.id);
+      promise.catch(f104720);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;
-    const obj2 = { draftsByProject: null };
-    const obj3 = {};
+    const obj2 = { draftsByProject: obj3 };
+    obj3 = {};
+    const setState = obj.setState;
     const merged = Object.assign(draftsByProject);
     const obj4 = {};
     const merged1 = Object.assign(draftsByProject[projectId]);
     obj4[chat] = found1;
     obj3[projectId] = obj4;
-    obj2.draftsByProject = obj3;
-    obj.setState(obj2);
+    setState(obj2);
   }
 };
 export const clearVibegrationsAttachmentDrafts = function clearVibegrationsAttachmentDrafts(projectId, chat) {
   const arr = getVibegrationsAttachmentDrafts(projectId, chat);
   if (0 !== arr.length) {
     for (const item10010 of arr) {
-      let tmp4 = discardDraft(arg0, item10010);
+      let tmp4 = discardDraft(projectId, item10010);
       continue;
     }
     setDrafts(projectId, chat, closure_7);

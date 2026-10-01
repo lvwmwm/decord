@@ -5,21 +5,25 @@
 // Exports: formatDate, useAuthSessions
 
 // Module 14230 (AuthSessionsUtils)
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import _modDef4421 from "module_4421" /* 4421 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AuthSessionsStore from "AuthSessionsStore" /* 14231 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let approx_last_used_time;
+
 const result = size.fileFinishedImporting("modules/auth_sessions/AuthSessionsUtils.tsx");
 
 export const useAuthSessions = function useAuthSessions() {
+  let sessions;
+  let stateFromStoresObject;
   const items = [AuthSessionsStore];
-  stateFromStoresObject = stateFromStoresObject(504).useStateFromStoresObject(items, () => sessions.getSessions());
+  const obj = stateFromStoresObject(504);
+  stateFromStoresObject = obj.useStateFromStoresObject(items, () => sessions.getSessions());
   const items1 = [stateFromStoresObject];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     const otherSessions = [...stateFromStoresObject];
     const authSessionIdHash = AuthenticationStore.getAuthSessionIdHash();
     let currentSession = null;
@@ -33,19 +37,21 @@ export const useAuthSessions = function useAuthSessions() {
     const sorted = otherSessions.sort((approx_last_used_time, approx_last_used_time2) => {
       approx_last_used_time = approx_last_used_time2.approx_last_used_time;
       approx_last_used_time2 = approx_last_used_time.approx_last_used_time;
-      return approx_last_used_time.valueOf() - approx_last_used_time2.valueOf();
+      const valueOfResult = approx_last_used_time.valueOf();
+      return valueOfResult - approx_last_used_time2.valueOf();
     });
     return { currentSession, otherSessions };
   }, items1);
 };
 export const formatDate = function formatDate(arg0) {
+  let stringResult;
   const timestamp = Date.now();
   if ((timestamp - arg0.valueOf()) / 1000 / 60 / 60 < 1) {
-    const intl = util.intl;
-    let stringResult = intl.string(util.t.TXCmfL);
+    const intl = intl2.intl;
+    stringResult = intl.string(intl2.t.TXCmfL);
   } else {
-    stringResult = _modDef4421(arg0).fromNow();
     const obj = _modDef4421(arg0);
+    stringResult = obj.fromNow();
   }
   return stringResult;
 };

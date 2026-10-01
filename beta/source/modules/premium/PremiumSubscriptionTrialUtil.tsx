@@ -5,20 +5,26 @@
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub, useCurrentPremiumTrialTier, useHasActiveTrial
 
 // Module 7503 (PremiumSubscriptionTrialUtil)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import UserStore from "UserStore" /* 1372 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 import UserOfferStore from "UserOfferStore" /* 6870 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PremiumConstants = fn(1374);
-({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: hasOwnProperty, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: metroRequire, PREMIUM_TIER_2_3P_ONE_MONTH_TRIAL_ID: closure_7, PREMIUM_TIER_2_REFERRAL_TRIAL_ID: closure_8, PREMIUM_TRIAL_IDS_ALL: closure_9 } = PremiumConstants);
-const size = fn(2);
+let c9;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: hasOwnProperty, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: metroRequire, PREMIUM_TIER_2_3P_ONE_MONTH_TRIAL_ID: metroImportDefault, PREMIUM_TIER_2_REFERRAL_TRIAL_ID: metroImportAll, PREMIUM_TRIAL_IDS_ALL: c9 } = PremiumConstants);
 const result = size.fileFinishedImporting("modules/premium/PremiumSubscriptionTrialUtil.tsx");
 
 export const useHasActiveTrial = function useHasActiveTrial() {
+  let premiumTypeSubscription;
   const items = [SubscriptionStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
   let hasActiveTrial;
   if (stateFromStores != null) {
     hasActiveTrial = stateFromStores.hasActiveTrial;
@@ -40,25 +46,20 @@ export const isEligibleTrialSub = function isEligibleTrialSub(trialId) {
   }
   let tmp2 = null != trialId;
   if (tmp2) {
-    let tmp4 = trialId.trialId === hasOwnProperty;
-    if (!tmp4) {
-      tmp4 = trialId.trialId === timestampProducer;
-    }
-    if (!tmp4) {
-      tmp4 = trialId.trialId === React5;
-    }
-    if (!tmp4) {
-      tmp4 = trialId.trialId === React6;
-    }
-    tmp2 = tmp4;
+    tmp2 = trialId.trialId === hasOwnProperty || trialId.trialId === metroRequire || trialId.trialId === metroImportDefault || trialId.trialId === metroImportAll;
+    const tmp4 = trialId.trialId === hasOwnProperty || trialId.trialId === metroRequire || trialId.trialId === metroImportDefault || trialId.trialId === metroImportAll;
   }
   return tmp2;
 };
 export const useCurrentPremiumTrialTier = function useCurrentPremiumTrialTier() {
+  let currentUser;
+  let premiumTypeSubscription;
   const items = [SubscriptionStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
   const items1 = [UserStore];
-  const stateFromStores1 = initialize.useStateFromStores(items1, () => currentUser.getCurrentUser());
+  const obj2 = get_initialized;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => currentUser.getCurrentUser());
   let hasActiveTrial;
   if (stateFromStores != null) {
     hasActiveTrial = stateFromStores.hasActiveTrial;
@@ -74,7 +75,8 @@ export const useCurrentPremiumTrialTier = function useCurrentPremiumTrialTier() 
   return tmp4;
 };
 export const getPremiumTrialOffer = function getPremiumTrialOffer() {
-  const mapped = React7.map((item) => userTrialOffer.getUserTrialOffer(item));
+  let userTrialOffer;
+  const mapped = React4.map((item) => userTrialOffer.getUserTrialOffer(item));
   const found = mapped.filter((hasExpired) => null != hasExpired && !hasExpired.hasExpired);
   return found.shift();
 };

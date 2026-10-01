@@ -5,18 +5,18 @@
 // Exports: default
 
 // Module 15313 (SelectMenuNativeComponent)
+import Fragment from "Fragment" /* 21 */;
 import SelectActionComponentViewNativeComponentDefault from "SelectActionComponentViewNativeComponent" /* 15314 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/interaction_components/native/SelectMenuNativeComponent.tsx");
 
 export default function SelectMenuNativeComponent(model) {
+  model = model.model;
   const merged = Object.assign(model, Object.assign({ model: 0 }));
-  const obj = {};
+  SelectActionComponentViewNativeComponentDefault;
   const merged1 = Object.assign(merged);
-  obj.model = JSON.stringify(model.model);
-  obj.style = { width: "100%" };
-  return jsx(SelectActionComponentViewNativeComponentDefault, {});
+  return <tmp2 model={JSON.stringify(model)} style={{ width: "100%" }} />;
 };

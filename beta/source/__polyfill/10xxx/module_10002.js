@@ -4,25 +4,21 @@
 
 // Module 10002
 import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
+import _mod10003 from "module_10003" /* 10003 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ZHHansDateParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -32,19 +28,16 @@ function _isNativeReflectConstruct() {
 }
 class ZHHansDateParser {
   constructor() {
-    self = this;
-    tmp = c2(this, ZHHansDateParser);
-    tmp2 = closure_4;
-    obj = closure_4(ZHHansDateParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ZHHansDateParser);
+    const obj = _getPrototypeOf(ZHHansDateParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
@@ -54,13 +47,13 @@ _inherits(ZHHansDateParser, AbstractParserWithWordBoundaryChecking.AbstractParse
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    const keys = Object.keys(ZHHansDateParser(10003).NUMBER);
+    const keys = Object.keys(_mod10003.NUMBER);
     const text = `(\\d{2,4}|[${obj.join("")}`;
-    const keys1 = Object.keys(ZHHansDateParser(10003).NUMBER);
+    const keys1 = Object.keys(_mod10003.NUMBER);
     const text1 = `${`(\\d{2,4}|[${obj.join("")}`}]{4}|[${obj2.join("")}`;
-    const keys2 = Object.keys(ZHHansDateParser(10003).NUMBER);
+    const keys2 = Object.keys(_mod10003.NUMBER);
     const text2 = `${tmp2}]{2})?(?:\\s*)(?:年)?(?:[\\s|,|，]*)(\\d{1,2}|[${obj3.join("")}`;
-    const keys3 = Object.keys(ZHHansDateParser(10003).NUMBER);
+    const keys3 = Object.keys(_mod10003.NUMBER);
     const regExp = new RegExp(text2 + "]{1,3})(?:\\s*)(?:\u6708)(?:\\s*)(\\d{1,2}|[" + keys3.join("") + "]{1,3})?(?:\\s*)(?:\u65E5|\u53F7)?");
     return regExp;
   }
@@ -74,7 +67,7 @@ const items = [
       const parsed = parseInt(index[2]);
       let zhStringToNumberResult = parsed;
       if (isNaN(parsed)) {
-        zhStringToNumberResult = ZHHansDateParser(10003).zhStringToNumber(index[2]);
+        zhStringToNumberResult = _mod10003.zhStringToNumber(index[2]);
       }
       const start = parsingResult.start;
       start.assign("month", zhStringToNumberResult);
@@ -84,7 +77,7 @@ const items = [
         const _isNaN = isNaN;
         let zhStringToNumberResult1 = parsed1;
         if (isNaN(parsed1)) {
-          zhStringToNumberResult1 = ZHHansDateParser(10003).zhStringToNumber(index[3]);
+          zhStringToNumberResult1 = _mod10003.zhStringToNumber(index[3]);
         }
         const start3 = parsingResult.start;
         start3.assign("day", zhStringToNumberResult1);
@@ -98,7 +91,7 @@ const items = [
         let parsed2 = parseInt(index[1]);
         const _isNaN2 = isNaN;
         if (isNaN(parsed2)) {
-          parsed2 = ZHHansDateParser(10003).zhStringToYear(index[1]);
+          parsed2 = _mod10003.zhStringToYear(index[1]);
         }
         const start5 = parsingResult.start;
         start5.assign("year", parsed2);

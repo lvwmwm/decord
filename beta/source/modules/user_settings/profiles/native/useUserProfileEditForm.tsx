@@ -5,40 +5,58 @@
 // Exports: default
 
 // Module 14161 (useUserProfileEditForm)
+import Constants from "Constants" /* 1074 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7605 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let c2, c3, c6, c7, closure_12, isSubmitting;
+
 let closure_3 = ["bannerOriginalMd5"];
-const FormStates = fn(1074).FormStates;
-const size = fn(2);
+const FormStates = Constants.FormStates;
 let result = size.fileFinishedImporting("modules/user_settings/profiles/native/useUserProfileEditForm.tsx");
 
 export default function useUserProfileEditForm() {
+  let errors;
+  let pendingChanges;
+  let tryItOutChanges;
+  let obj = pendingChanges(504);
   const items = [UserProfileSettingsStore];
-  const stateFromStoresObject = pendingChanges(504).useStateFromStoresObject(items, () => ({ pendingChanges: UserProfileSettingsStore.getPendingChanges(), tryItOutChanges: UserProfileSettingsStore.getTryItOutChanges(), errors: UserProfileSettingsStore.getErrors() }));
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { pendingChanges: UserProfileSettingsStore.getPendingChanges(), tryItOutChanges: UserProfileSettingsStore.getTryItOutChanges(), errors: UserProfileSettingsStore.getErrors() };
+    return obj;
+  });
   pendingChanges = stateFromStoresObject.pendingChanges;
   ({ tryItOutChanges, errors } = stateFromStoresObject);
-  let obj = pendingChanges(504);
+  let obj2 = pendingChanges(504);
   const items1 = [UserProfileStore, UserProfileSettingsStore];
-  let stateFromStores = pendingChanges(504).useStateFromStores(items1, () => {
-    isSubmitting = UserProfileSettingsStore.getFormState() === constants.SUBMITTING;
-    if (!isSubmitting) {
-      isSubmitting = isSubmitting.isSubmitting;
-    }
+  const stateFromStores = obj2.useStateFromStores(items1, () => {
+    isSubmitting = UserProfileSettingsStore.getFormState() === constants.SUBMITTING || isSubmitting.isSubmitting;
     return isSubmitting;
   });
-  const effect = noop.useEffect(() => () => stateFromStores(573).wait(pendingChanges(6405).resetAllPending), []);
+  const pendingAvatarDecoration = pendingChanges.pendingAvatarDecoration;
+  const effect = react.useEffect(() => () => {
+    const obj = stateFromStores(closure_1_2[8]);
+    return obj.wait(pendingChanges(closure_1_2[9]).resetAllPending);
+  }, []);
   const items2 = [stateFromStores, pendingChanges];
-  const callback = noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
+  const callback = react.useCallback(_asyncToGenerator(async function(arg0, value) {
+    let _false;
+    let assetOrigin;
+    let closure_4;
+    let obj11;
+    let obj28;
+    let obj32;
+    let obj35;
+    let obj37;
     if (c7 === 2) {
       c7 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -48,7 +66,21 @@ export default function useUserProfileEditForm() {
         return { value: "HermesInternal", done: null };
       }
     } else {
+      let c5;
       try {
+        let accountUpdateForUpdateRequest;
+        let _false2;
+        let _false3;
+        let c4;
+        let closure_5;
+        let body;
+        let currentUser;
+        let firstFieldErrorMessage;
+        let closure_11;
+        let id;
+        let primaryGuildId;
+        let closure_15;
+        let firstFieldErrorMessage2;
         c7 = 2;
         if (0 === c6) {
           if (arg0 === 1) {
@@ -59,57 +91,59 @@ export default function useUserProfileEditForm() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            closure_3 = tmp193;
-            closure_131_0 = undefined;
-            let profileChangesForUpdateRequest;
-            let primaryGuildChangesForUpdateRequest;
-            closure_131_3 = undefined;
-            closure_131_4 = undefined;
-            closure_131_5 = undefined;
-            let body3;
+            accountUpdateForUpdateRequest = undefined;
+            _false2 = undefined;
+            _false3 = undefined;
+            value = undefined;
+            c4 = undefined;
+            closure_5 = undefined;
+            body = undefined;
             let bannerOriginalMd5;
-            closure_131_8 = undefined;
-            closure_131_9 = undefined;
-            let firstFieldErrorMessage;
-            closure_131_11 = undefined;
-            closure_131_12 = undefined;
-            closure_131_13 = undefined;
-            let primaryGuildId;
-            closure_131_15 = undefined;
-            let firstFieldErrorMessage2;
-            if (stateFromStores) {
+            let closure_8;
+            currentUser = undefined;
+            firstFieldErrorMessage = undefined;
+            closure_11 = undefined;
+            closure_12 = undefined;
+            id = undefined;
+            primaryGuildId = undefined;
+            closure_15 = undefined;
+            firstFieldErrorMessage2 = undefined;
+            const tmp206 = stateFromStores;
+            if (tmp206) {
               c7 = 3;
               return { value: "HermesInternal", done: null };
             } else {
-              const accountUpdateForUpdateRequest = pendingChanges(10551).getAccountUpdateForUpdateRequest(pendingChanges);
-              closure_131_0 = accountUpdateForUpdateRequest;
-              const obj26 = pendingChanges(10551);
-              profileChangesForUpdateRequest = pendingChanges(10551).getProfileChangesForUpdateRequest(pendingChanges);
-              const obj27 = pendingChanges(10551);
-              primaryGuildChangesForUpdateRequest = pendingChanges(10551).getPrimaryGuildChangesForUpdateRequest(pendingChanges);
-              closure_131_3 = true;
-              closure_131_4 = false;
+              const obj24 = _false(_false3[10]);
+              accountUpdateForUpdateRequest = obj24.getAccountUpdateForUpdateRequest(pendingChanges);
+              const obj25 = _false(_false3[10]);
+              _false2 = obj25.getProfileChangesForUpdateRequest(pendingChanges);
+              const obj26 = _false(_false3[10]);
+              _false3 = obj26.getPrimaryGuildChangesForUpdateRequest(pendingChanges);
+              value = true;
+              c4 = false;
               const _Object = Object;
               if (Object.keys(accountUpdateForUpdateRequest).length > 0) {
                 c6 = 1;
                 c7 = 1;
-                const obj6 = { value: pendingChanges(6405).saveProfileAndAccountChanges(accountUpdateForUpdateRequest), done: false };
+                const obj6 = { value: obj37.saveProfileAndAccountChanges(accountUpdateForUpdateRequest), done: false };
+                obj37 = _false(_false3[9]);
                 return obj6;
               } else {
                 const _Object2 = Object;
-                if (Object.keys(profileChangesForUpdateRequest).length > 0) {
-                  bannerOriginalMd5 = profileChangesForUpdateRequest.bannerOriginalMd5;
-                  closure_131_8 = tmp2(profileChangesForUpdateRequest, closure_3);
+                if (Object.keys(_false2).length > 0) {
+                  bannerOriginalMd5 = _false2.bannerOriginalMd5;
+                  closure_8 = tmp(_false2, value);
                   c6 = 2;
                   c7 = 1;
-                  const obj8 = { value: pendingChanges(7612).saveProfileChanges(closure_131_8, undefined, bannerOriginalMd5), done: false };
+                  const obj8 = { value: obj35.saveProfileChanges(closure_8, undefined, bannerOriginalMd5), done: false };
+                  obj35 = _false(_false3[14]);
                   return obj8;
                 } else {
                   if (undefined === closure_132_0.pendingBadgeDisplayOrder) {
                     if (undefined === closure_132_0.pendingBadgeHiddenBadges) {
                       if (undefined !== closure_132_0.pendingLegacyUsernameDisabled) {
                         c5 = 1;
-                        const LegacyUsernameDisabled = pendingChanges(2021).LegacyUsernameDisabled;
+                        const LegacyUsernameDisabled = _false(_false3[20]).LegacyUsernameDisabled;
                         c6 = 7;
                         c7 = 1;
                         const obj9 = { value: LegacyUsernameDisabled.updateSetting(closure_132_0.pendingLegacyUsernameDisabled), done: false };
@@ -118,320 +152,324 @@ export default function useUserProfileEditForm() {
                     }
                   }
                   const _Object4 = Object;
-                  let tmp162 = 0 === Object.keys(closure_131_0).length;
-                  if (tmp162) {
+                  let tmp158 = 0 === Object.keys(accountUpdateForUpdateRequest).length;
+                  if (tmp158) {
                     const _Object5 = Object;
-                    tmp162 = 0 === Object.keys(profileChangesForUpdateRequest).length;
+                    tmp158 = 0 === Object.keys(_false2).length;
                   }
-                  if (tmp162) {
+                  if (tmp158) {
                     const _Object6 = Object;
-                    tmp162 = 0 === Object.keys(primaryGuildChangesForUpdateRequest).length;
+                    tmp158 = 0 === Object.keys(_false3).length;
                   }
-                  if (tmp162) {
-                    tmp162 = undefined === closure_132_0.pendingLegacyUsernameDisabled;
+                  if (tmp158) {
+                    tmp158 = undefined === closure_132_0.pendingLegacyUsernameDisabled;
                   }
-                  closure_131_11 = tmp162;
-                  if (closure_131_11) {
-                    stateFromStores(573).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
-                    const obj34 = stateFromStores(573);
+                  closure_11 = tmp158;
+                  const tmp166 = closure_11;
+                  if (tmp166) {
+                    const obj31 = _false2(_false3[8]);
+                    obj31.dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
                   }
-                  const obj11 = { displayOrder: closure_132_0.pendingBadgeDisplayOrder, hiddenBadges: closure_132_0.pendingBadgeHiddenBadges };
+                  const obj10 = { displayOrder: closure_132_0.pendingBadgeDisplayOrder, hiddenBadges: closure_132_0.pendingBadgeHiddenBadges };
                   c6 = 3;
                   c7 = 1;
-                  const obj13 = { value: pendingChanges(14163).updateBadgeSettings(obj11), done: false };
-                  return obj13;
+                  const obj12 = { value: obj32.updateBadgeSettings(obj10), done: false };
+                  obj32 = _false(_false3[16]);
+                  return obj12;
                 }
               }
-              const obj28 = pendingChanges(10551);
             }
           }
-        } else if (1 === tmp7) {
+        } else if (1 === c6) {
           if (arg0 === 1) {
             c7 = 3;
             throw value;
           } else if (arg0 === 2) {
             c7 = 3;
-            const obj15 = { value, done: true };
-            return obj15;
+            const obj14 = { value, done: true };
+            return obj14;
           } else {
-            closure_131_5 = value;
+            closure_5 = value;
             let ok;
-            if (closure_131_5 != null) {
-              ok = closure_131_5.ok;
+            if (closure_5 != null) {
+              ok = closure_5.ok;
             }
             if (ok) {
-              body3 = closure_131_5.body;
+              body = closure_5.body;
               if (undefined !== closure_132_0.pendingAvatar) {
-                const obj16 = { avatarHash: body3.avatar, avatarId: closure_131_0.avatarId, avatarAssetOrigin: null };
+                const obj15 = { avatarHash: body.avatar, avatarId: accountUpdateForUpdateRequest.avatarId, avatarAssetOrigin: assetOrigin };
                 const pendingAvatar = closure_132_0.pendingAvatar;
-                let assetOrigin;
+                assetOrigin = undefined;
+                const trackUserAvatarUpdated = _false(_false3[11]).trackUserAvatarUpdated;
+                const tmp99 = _false(_false3[11]);
                 if (pendingAvatar != null) {
                   assetOrigin = pendingAvatar.assetOrigin;
                 }
-                obj16.avatarAssetOrigin = assetOrigin;
-                const result = pendingChanges(6409).trackUserAvatarUpdated(obj16);
-                const obj22 = pendingChanges(6409);
+                const result = trackUserAvatarUpdated(obj15);
               }
-              const result1 = pendingChanges(6405).resetPendingAccountChanges();
-              const obj24 = pendingChanges(6405);
+              const obj22 = _false(_false3[9]);
+              const result1 = obj22.resetPendingAccountChanges();
             } else {
               let username;
-              if (closure_131_5 != null) {
-                const body = closure_131_5.body;
+              if (closure_5 != null) {
+                body = closure_5.body;
                 if (body != null) {
                   username = body.username;
                 }
               }
               if (null != username) {
-                const result2 = pendingChanges(6412).showInvalidUsernameToast();
-                closure_131_4 = true;
-                const obj21 = pendingChanges(6412);
+                const obj20 = _false(_false3[12]);
+                const result2 = obj20.showInvalidUsernameToast();
+                c4 = true;
               } else {
                 let avatar;
-                if (closure_131_5 != null) {
-                  const body2 = closure_131_5.body;
+                if (closure_5 != null) {
+                  const body2 = closure_5.body;
                   if (body2 != null) {
                     avatar = body2.avatar;
                   }
                 }
                 if (null != avatar) {
-                  const result3 = pendingChanges(14162).showGenericProfileUpdateFailureToast(closure_131_5.body.avatar);
-                  closure_131_4 = true;
-                  const obj44 = pendingChanges(14162);
+                  const obj41 = _false(_false3[13]);
+                  const result3 = obj41.showGenericProfileUpdateFailureToast(closure_5.body.avatar);
+                  c4 = true;
                 }
               }
             }
-            let tmp115 = closure_131_3;
-            if (closure_131_3) {
+            let tmp110 = value;
+            if (tmp110) {
               let ok1;
-              if (closure_131_5 != null) {
-                ok1 = closure_131_5.ok;
+              if (closure_5 != null) {
+                ok1 = closure_5.ok;
               }
-              pendingChanges = ok1;
+              _false = ok1;
               if (ok1 == null) {
-                pendingChanges = false;
+                _false = false;
               }
-              tmp115 = pendingChanges;
+              tmp110 = _false;
             }
-            closure_131_3 = tmp115;
+            value = tmp110;
           }
-        } else if (2 === tmp7) {
+        } else if (2 === c6) {
           if (arg0 === 1) {
             c7 = 3;
             throw value;
           } else if (arg0 === 2) {
             c7 = 3;
-            const obj17 = { value, done: true };
-            return obj17;
+            const obj16 = { value, done: true };
+            return obj16;
           } else {
-            closure_131_9 = value;
+            currentUser = value;
             let ok2;
-            if (closure_131_9 != null) {
-              ok2 = closure_131_9.ok;
+            if (currentUser != null) {
+              ok2 = currentUser.ok;
             }
             if (ok2) {
-              const result4 = pendingChanges(7612).resetPendingProfileChanges();
-              const obj19 = pendingChanges(7612);
+              const obj18 = _false(_false3[14]);
+              const result4 = obj18.resetPendingProfileChanges();
             } else {
-              const aPIError = new pendingChanges(4735).APIError(closure_131_9);
+              const self3 = this;
+              const self4 = this;
+              const aPIError = new _false(_false3[15]).APIError(currentUser);
               firstFieldErrorMessage = aPIError.getFirstFieldErrorMessage("banner");
               if (null != firstFieldErrorMessage) {
-                const result5 = pendingChanges(14162).showGenericProfileUpdateFailureToast(firstFieldErrorMessage);
-                closure_131_4 = true;
-                const obj18 = pendingChanges(14162);
+                const obj17 = _false(_false3[13]);
+                const result5 = obj17.showGenericProfileUpdateFailureToast(firstFieldErrorMessage);
+                c4 = true;
               }
             }
-            let tmp85 = closure_131_3;
-            if (closure_131_3) {
+            let tmp79 = value;
+            if (tmp79) {
               let ok3;
-              if (closure_131_9 != null) {
-                ok3 = closure_131_9.ok;
+              if (currentUser != null) {
+                ok3 = currentUser.ok;
               }
-              stateFromStores = ok3;
+              _false2 = ok3;
               if (ok3 == null) {
-                stateFromStores = false;
+                _false2 = false;
               }
-              tmp85 = stateFromStores;
+              tmp79 = _false2;
             }
-            closure_131_3 = tmp85;
+            value = tmp79;
           }
         } else {
-          if (3 === tmp7) {
+          if (3 === c6) {
             if (arg0 === 1) {
               c7 = 3;
               throw value;
             } else if (arg0 === 2) {
               c7 = 3;
-              const obj20 = { value, done: true };
-              return obj20;
+              const obj19 = { value, done: true };
+              return obj19;
             } else {
-              closure_131_12 = value;
-              if (closure_131_12) {
+              closure_12 = value;
+              const tmp197 = closure_12;
+              if (tmp197) {
                 currentUser = currentUser.getCurrentUser();
-                let id;
+                id = undefined;
                 if (currentUser != null) {
                   id = currentUser.id;
                 }
-                closure_131_13 = id;
-                if (null != closure_131_13) {
-                  const profile = pendingChanges(7626).fetchProfile(closure_131_13);
+                if (null != id) {
+                  const obj13 = _false(_false3[17]);
+                  const profile = obj13.fetchProfile(id);
                   c6 = 4;
                   c7 = 1;
-                  const obj23 = {
+                  const obj21 = {
                     value: profile.catch(() => {
 
                                   }),
                     done: false
                   };
-                  return obj23;
+                  return obj21;
                 }
-              } else if (!closure_131_11) {
-                let tmp49 = closure_131_3;
-                if (closure_131_3) {
-                  tmp49 = closure_131_12;
-                }
-                closure_131_3 = tmp49;
               } else {
-                if (closure_131_12) {
-                  let obj25 = { type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" };
-                } else {
-                  obj25 = { type: "USER_PROFILE_SETTINGS_SUBMIT_FAILURE", errors: {} };
+                const tmp37 = closure_11;
+                if (tmp37) {
+                  let obj23;
+                  const dispatch = _false2(_false3[8]).dispatch;
+                  const tmp41 = _false2(_false3[8]);
+                  if (closure_12) {
+                    obj23 = { type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" };
+                  } else {
+                    obj23 = { type: "USER_PROFILE_SETTINGS_SUBMIT_FAILURE", errors: {} };
+                  }
+                  dispatch(obj23);
                 }
-                stateFromStores(573).dispatch(obj25);
-                const obj10 = stateFromStores(573);
+                const tmp45 = value && closure_12;
+                value = tmp45;
               }
             }
-          } else if (4 === tmp7) {
+          } else if (4 === c6) {
             if (arg0 === 1) {
               c7 = 3;
               throw value;
             } else if (arg0 === 2) {
               c7 = 3;
-              const obj30 = { value, done: true };
-              return obj30;
+              const obj27 = { value, done: true };
+              return obj27;
             }
-          } else if (5 === tmp7) {
+          } else if (5 === c6) {
             if (arg0 === 1) {
               c7 = 3;
               throw value;
             } else if (arg0 === 2) {
               c7 = 3;
-              const obj32 = { value, done: true };
-              return obj32;
+              const obj29 = { value, done: true };
+              return obj29;
             } else {
-              const result6 = pendingChanges(12658).resetPendingBadgeSettings();
-              const obj7 = pendingChanges(12658);
+              const obj7 = _false(_false3[19]);
+              const result6 = obj7.resetPendingBadgeSettings();
             }
-          } else if (6 === tmp7) {
+          } else if (6 === c6) {
             c5 = 0;
-            closure_131_3 = false;
+            value = false;
           } else {
-            if (7 === tmp7) {
+            if (7 === c6) {
               if (arg0 === 1) {
                 c7 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c5 = 0;
                 c7 = 3;
-                const obj33 = { value, done: true };
-                return obj33;
+                const obj30 = { value, done: true };
+                return obj30;
               } else {
-                const result7 = pendingChanges(6405).resetPendingLegacyUsernameDisabled();
+                const obj5 = _false(_false3[9]);
+                const result7 = obj5.resetPendingLegacyUsernameDisabled();
                 c5 = 0;
-                const obj5 = pendingChanges(6405);
               }
             } else if (arg0 === 1) {
               c7 = 3;
               throw value;
             } else if (arg0 === 2) {
               c7 = 3;
-              const obj36 = { value, done: true };
-              return obj36;
+              const obj33 = { value, done: true };
+              return obj33;
             } else {
-              closure_131_15 = value;
+              closure_15 = value;
               let ok4;
-              if (closure_131_15 != null) {
-                ok4 = closure_131_15.ok;
+              if (closure_15 != null) {
+                ok4 = closure_15.ok;
               }
               if (ok4) {
-                const result8 = pendingChanges(6405).resetPendingPrimaryGuildChanges();
-                const obj3 = pendingChanges(6405);
+                const obj3 = _false(_false3[9]);
+                const result8 = obj3.resetPendingPrimaryGuildChanges();
               } else {
-                const aPIError1 = new pendingChanges(4735).APIError(closure_131_15);
+                const self = this;
+                const self2 = this;
+                const aPIError1 = new _false(_false3[15]).APIError(closure_15);
                 firstFieldErrorMessage2 = aPIError1.getFirstFieldErrorMessage("banner");
                 if (null != firstFieldErrorMessage2) {
-                  const result9 = pendingChanges(14162).showGenericProfileUpdateFailureToast(firstFieldErrorMessage2);
-                  closure_131_4 = true;
-                  const obj2 = pendingChanges(14162);
+                  const obj2 = _false(_false3[13]);
+                  const result9 = obj2.showGenericProfileUpdateFailureToast(firstFieldErrorMessage2);
+                  c4 = true;
                 }
               }
-              let tmp29 = closure_131_3;
-              if (closure_131_3) {
+              let tmp24 = value;
+              if (tmp24) {
                 let ok5;
-                if (closure_131_15 != null) {
-                  ok5 = closure_131_15.ok;
+                if (closure_15 != null) {
+                  ok5 = closure_15.ok;
                 }
-                dependencyMap = ok5;
+                _false3 = ok5;
                 if (ok5 == null) {
-                  dependencyMap = false;
+                  _false3 = false;
                 }
-                tmp29 = dependencyMap;
+                tmp24 = _false3;
               }
-              closure_131_3 = tmp29;
+              value = tmp24;
             }
-            let tmp140 = closure_131_3;
-            if (!closure_131_3) {
-              tmp140 = closure_131_4;
-            }
-            if (!tmp140) {
-              const intl = pendingChanges(1115).intl;
-              const result10 = pendingChanges(14162).showGenericProfileUpdateFailureToast(intl.string(pendingChanges(1115).t["84MExs"]));
-              const obj29 = pendingChanges(14162);
+            const tmp135 = value || c4;
+            if (!tmp135) {
+              const showGenericProfileUpdateFailureToast = _false(_false3[13]).showGenericProfileUpdateFailureToast;
+              const tmp139 = _false(_false3[13]);
+              const intl = _false(_false3[22]).intl;
+              const result10 = showGenericProfileUpdateFailureToast(intl.string(_false(_false3[22]).t["84MExs"]));
             }
             c7 = 3;
-            const obj37 = { value: closure_131_3, done: true };
-            return obj37;
+            const obj34 = { value, done: true };
+            return obj34;
           }
           c6 = 5;
           c7 = 1;
-          const obj39 = { value: pendingChanges(7642).fetchBadgeDirectory(), done: false };
-          return obj39;
+          const obj36 = { value: obj11.fetchBadgeDirectory(), done: false };
+          obj11 = _false(_false3[18]);
+          return obj36;
         }
         const _Object3 = Object;
-        if (Object.keys(primaryGuildChangesForUpdateRequest).length > 0) {
-          primaryGuildId = primaryGuildChangesForUpdateRequest.primaryGuildId;
+        if (Object.keys(_false3).length > 0) {
+          primaryGuildId = _false3.primaryGuildId;
           if (undefined !== primaryGuildId) {
             c6 = 8;
             c7 = 1;
-            const obj41 = { value: pendingChanges(13459).adoptGuildIdentity(primaryGuildId, null !== primaryGuildId), done: false };
-            return obj41;
+            const obj38 = { value: obj28.adoptGuildIdentity(primaryGuildId, null !== primaryGuildId), done: false };
+            obj28 = _false(_false3[21]);
+            return obj38;
           }
         }
-      } catch (tmp192) {
-        if (tmp3 === c5) {
-          c7 = tmp;
-          throw tmp192;
+      } catch (tmp188) {
+        if (0 === c5) {
+          c7 = 3;
+          throw tmp188;
         } else {
-          c6 = tmp4;
+          c6 = 6;
         }
-        tmp193 = c5;
       }
     }
   }), items2);
   const items3 = [stateFromStores, pendingChanges.pendingAvatarDecoration];
-  let obj2 = pendingChanges(504);
-  const merged = Object.assign(pendingChanges);
-  const merged1 = Object.assign(tryItOutChanges);
-  return {
-    hasAvatarDecorationEdits: undefined !== pendingChanges.pendingAvatarDecoration,
+  let obj3 = {
+    hasAvatarDecorationEdits: undefined !== pendingAvatarDecoration,
     errors,
     isSubmitting: stateFromStores,
     handleSubmit: callback,
-    handleSubmitAvatarDecoration: noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
+    handleSubmitAvatarDecoration: react.useCallback(_asyncToGenerator(async (arg0, value) => {
+      let closure_0;
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -442,8 +480,9 @@ export default function useUserProfileEditForm() {
         }
       } else {
         try {
+          let tmp4;
           c3 = 2;
-          if (0 === dependencyMap) {
+          if (0 === c2) {
             if (arg0 === 1) {
               c3 = 3;
               throw value;
@@ -452,41 +491,47 @@ export default function useUserProfileEditForm() {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              closure_1 = tmp2;
-              closure_128_0 = undefined;
-              if (stateFromStores) {
-                c3 = 3;
-              } else {
+              let closure_1 = tmp;
+              tmp4 = undefined;
+              const tmp19 = stateFromStores;
+              if (!tmp19) {
                 const obj5 = { avatarDecoration: pendingChanges.pendingAvatarDecoration };
-                dependencyMap = 1;
+                const obj3 = tmp4(c2[9]);
+                c2 = 1;
                 c3 = 1;
-                const obj6 = { value: tmp5(6405).saveProfileAndAccountChanges(obj5), done: false };
+                const obj6 = { value: obj3.saveProfileAndAccountChanges(obj5), done: false };
                 return obj6;
               }
             }
           } else if (arg0 === 1) {
             c3 = 3;
             throw value;
-          } else if (arg0 !== 2) {
-            closure_128_0 = value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj7 = { value, done: true };
+            return obj7;
+          } else {
+            tmp4 = value;
             let ok;
-            if (closure_128_0 != null) {
-              ok = closure_128_0.ok;
+            if (tmp4 != null) {
+              ok = tmp4.ok;
             }
             if (ok) {
-              const result = tmp5(6405).resetPendingAccountChanges();
-              const obj = tmp5(6405);
+              const obj = tmp4(c2[9]);
+              const result = obj.resetPendingAccountChanges();
             }
           }
           c3 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
-        } catch (tmp16) {
-          c3 = tmp;
-          throw tmp16;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp15) {
+          c3 = 3;
+          throw tmp15;
         }
       }
     }), items3),
     resetPending: pendingChanges(6405).resetAllPending
   };
+  const merged = Object.assign(pendingChanges);
+  const merged1 = Object.assign(tryItOutChanges);
+  return obj3;
 };

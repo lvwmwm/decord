@@ -5,35 +5,43 @@
 // Exports: useHighlightNotifications
 
 // Module 15072 (HighlightNotificationsSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+
 function useHighlightNotifications() {
+  let guildCount;
   const items = [GuildStore];
-  return initialize.useStateFromStores(items, () => guildCount.getGuildCount() > 0);
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => guildCount.getGuildCount() > 0);
 }
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.o8Bypv);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.o8Bypv);
   },
-  parent: fn(7417).MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.NOTIFICATIONS,
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t["Vw/Xn8"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["Vw/Xn8"]);
   },
   usePredicate: useHighlightNotifications,
   screen: {
-    route: fn(1074).UserSettingsSections.HIGHLIGHT_NOTIFICATIONS,
+    route: UserSettingsSections.HIGHLIGHT_NOTIFICATIONS,
     getComponent() {
       return require("UserSettingsHighlightNotifications").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/HighlightNotificationsSetting.tsx");
 
 export default route;

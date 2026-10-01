@@ -4,13 +4,15 @@
 // Exports: default
 
 // Module 1861
+import Fragment from "Fragment" /* 21 */;
 import TEST_ID_KEYBOARD_TOOLBAR from "TEST_ID_KEYBOARD_TOOLBAR" /* 1856 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ StyleSheet, View: c2 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
+let StyleSheet;
+let c2;
+({ StyleSheet, View: c2 } = react_native);
+const jsx = Fragment.jsx;
 const styles = StyleSheet.create({ flex: { flex: 1 } });
 
 export default function _default(children) {

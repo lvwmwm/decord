@@ -8,17 +8,19 @@
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-04-mobile-boost-progress-bar", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+let obj = { name: "2026-04-mobile-boost-progress-bar", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/premium/powerups/experiments/MobileBoostProgressBarExperiment.tsx");
 
 export const MobileBoostProgressBarExperiment = apexExperiment;
 export const useMobileBoostProgressBarEnabled = function useMobileBoostProgressBarEnabled(GuildHeaderCoachmarks) {
-  return apexExperiment.useConfig({ location: GuildHeaderCoachmarks }).enabled;
+  const obj = { location: GuildHeaderCoachmarks };
+  return apexExperiment.useConfig(obj).enabled;
 };
 export const getMobileBoostProgressBarEnabled = function getMobileBoostProgressBarEnabled(GuildSettingsModalOverview) {
-  return apexExperiment.getConfig({ location: GuildSettingsModalOverview }).enabled;
+  const obj = { location: GuildSettingsModalOverview };
+  return apexExperiment.getConfig(obj).enabled;
 };

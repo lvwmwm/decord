@@ -5,45 +5,49 @@
 // Exports: useVirtualCurrencyBalanceAnimationData
 
 // Module 10555 (useVirtualCurrencyBalanceAnimationData)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
+let react = react_mod;
 const result = size.fileFinishedImporting("modules/virtual_currency/hooks/native/useVirtualCurrencyBalanceAnimationData.tsx");
 
 export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrencyBalanceAnimationData(initialRenderedBalance) {
+  let c7;
+  let closure_4;
+  let tmp6;
   initialRenderedBalance = initialRenderedBalance.initialRenderedBalance;
   const balance = initialRenderedBalance.balance;
   let stateFromStores;
   let currentAnimationType;
-  noop = undefined;
+  react = undefined;
   let useReducedMotion;
   c7 = undefined;
   const items = [useReducedMotion];
-  stateFromStores = initialRenderedBalance(stateFromStores[3]).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let tmp2 = currentAnimationType(noop.useState(null), 2);
-  currentAnimationType = tmp2[0];
-  noop = tmp2[1];
-  useReducedMotion = noop.useRef(null);
-  const lottieRef = noop.useRef(null);
   const obj = initialRenderedBalance(stateFromStores[3]);
-  [tmp6, c7] = currentAnimationType(noop.useState(null != initialRenderedBalance), 2);
-  const tmp7 = currentAnimationType(noop.useState(null == initialRenderedBalance), 2);
+  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let tmp2 = currentAnimationType(react.useState(null), 2);
+  currentAnimationType = tmp2[0];
+  react = tmp2[1];
+  useReducedMotion = react.useRef(null);
+  const lottieRef = react.useRef(null);
+  [tmp6, c7] = currentAnimationType(react.useState(null != initialRenderedBalance), 2);
+  const tmp5 = currentAnimationType(react.useState(null != initialRenderedBalance), 2);
+  const tmp7 = currentAnimationType(react.useState(null == initialRenderedBalance), 2);
   const first1 = tmp7[0];
-  closure_9 = tmp7[1];
+  let closure_9 = tmp7[1];
   const tmp9 = balance(stateFromStores[4])(balance);
-  closure_10 = tmp9;
-  const onValueChange = noop.useCallback(() => {
+  let closure_10 = tmp9;
+  const onValueChange = react.useCallback(() => {
 
   }, []);
   const items1 = [currentAnimationType];
-  const onValueReached = noop.useCallback(() => {
-    closure_5.current = null;
+  const onValueReached = react.useCallback(() => {
+    useReducedMotion.current = null;
     closure_4(null);
   }, []);
-  const callback2 = noop.useCallback((arg0) => {
+  const callback2 = react.useCallback((arg0) => {
     if (0 !== arg0) {
       let str = "spend";
       if (arg0 > 0) {
@@ -56,18 +60,23 @@ export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrenc
           current.play();
         }
       } else {
-        closure_4(tmp.current);
+        closure_4(useReducedMotion.current);
       }
     }
   }, items1);
   const items2 = [initialRenderedBalance, balance, first1, stateFromStores, callback2];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let closure_0;
+    let timeout;
     if (null != timeout) {
+      let tmp = balance;
       if (null !== balance) {
-        if (!first1) {
+        const tmp2 = first1;
+        if (!tmp2) {
           const _setTimeout = setTimeout;
           timeout = setTimeout(() => {
-            if (!stateFromStores) {
+            const tmp = stateFromStores;
+            if (!tmp) {
               callback2(balance - closure_0);
             }
             closure_1_7(false);
@@ -79,22 +88,10 @@ export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrenc
     }
   }, items2);
   const items3 = [balance, tmp9, currentAnimationType, first1, stateFromStores, callback2];
-  const effect1 = noop.useEffect(() => {
-    let tmp2 = null !== balance;
+  const effect1 = react.useEffect(() => {
+    const tmp2 = null !== balance && null !== closure_10 && tmp !== closure_10 && first1 && !stateFromStores;
     if (tmp2) {
-      tmp2 = null !== closure_10;
-    }
-    if (tmp2) {
-      tmp2 = tmp !== closure_10;
-    }
-    if (tmp2) {
-      tmp2 = first1;
-    }
-    if (tmp2) {
-      tmp2 = !stateFromStores;
-    }
-    if (tmp2) {
-      callback2(tmp - closure_10);
+      callback2(balance - closure_10);
     }
   }, items3);
   return { onValueChange, onValueReached, showInitialRenderedBalance, currentAnimationType, lottieRef };

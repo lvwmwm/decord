@@ -5,51 +5,64 @@
 // Exports: renderChannelSubtitle
 
 // Module 16472 (guild_channels/ChannelSubtitle)
-import Text_Text from "Text/Text" /* 4832 */;
+import Fragment from "Fragment" /* 21 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 9575 */;
 import ChannelListLayout from "ChannelListLayout" /* 9580 */;
 import getChannelSubtitleData from "getChannelSubtitleData" /* 15858 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function ChannelSubtitle(arg0) {
+  let channelId;
+  let connected;
+  let guildId;
+  let layout;
+  let muted;
+  let obj3;
+  let renderMessagePreviewMarkup;
+  let subtitle;
+  let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, layout, subtitle } = arg0);
-  const channelSubtitleData = getChannelSubtitleData.getChannelSubtitleData(subtitle);
+  const obj = getChannelSubtitleData;
+  const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;
   } else {
-    const obj2 = {};
+    const obj2 = { children: renderMessagePreviewMarkup(obj3) };
+    const tmp4 = "voice" === channelSubtitleData.type && connected;
+    const Text = tmp(4832).Text;
     const merged = Object.assign(textProps);
-    const obj3 = { content: channelSubtitleData.subtitle, muted: null, channelId: null, guildId: null, layout: null, color: "text-muted", disableAnimatedEmoji: null };
+    obj3 = { content: channelSubtitleData.subtitle, muted, channelId, guildId, layout, color: "text-muted", disableAnimatedEmoji: !tmp4 };
+    renderMessagePreviewMarkup = MessagePreviewMarkup.renderMessagePreviewMarkup;
+    MessagePreviewMarkup;
+    const tmp5 = jsx;
     if (muted == null) {
       muted = false;
     }
-    obj3.muted = muted;
-    obj3.channelId = channelId;
-    obj3.guildId = guildId;
-    obj3.layout = layout;
-    obj3.disableAnimatedEmoji = !("voice" === channelSubtitleData.type && connected);
-    obj2.children = tmp(9575).renderMessagePreviewMarkup(obj3);
-    return jsx(tmp(4832).Text, {});
+    return tmp5(Text, obj2);
   }
 }
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelSubtitle.tsx");
 
 export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
+  let layout;
+  let obj3;
+  let subtitle;
   ({ subtitle, layout } = arg0);
   if (null == subtitle) {
     return null;
   } else {
-    const obj2 = { variant: ChannelListLayout.getLayoutStyles(layout).messagePreview.text.variant, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75 };
+    let tmp9;
+    const obj2 = { variant: obj3.getLayoutStyles(layout).messagePreview.text.variant, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75 };
+    obj3 = ChannelListLayout;
+    const tmp10 = require;
     if (typeof subtitle === "string") {
-      const obj = {};
+      const Text = tmp10(4832).Text;
       const merged = Object.assign(obj2);
-      obj.children = subtitle;
-      let tmp9 = jsx(Text_Text.Text, {});
+      tmp9 = <Text>{subtitle}</Text>;
     } else {
-      const obj4 = { channelId: tmp2, guildId: tmp3, layout, subtitle, muted: tmp, connected: tmp4, textProps: obj2 };
       tmp9 = <ChannelSubtitle channelId={tmp2} guildId={tmp3} layout={layout} subtitle={subtitle} muted={tmp} connected={tmp4} textProps={obj2} />;
     }
     return tmp9;

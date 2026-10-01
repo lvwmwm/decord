@@ -5,40 +5,51 @@
 // Exports: NativeDetector
 
 // Module 6128 (NativeDetector)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
 import _modDef6088 from "module_6088" /* 6088 */;
-import noop from "module_19" /* 19 */;
+import _mod6140 from "module_6140" /* 6140 */;
 
-const require = fn;
-const useMemo = fn(19).useMemo;
-const Platform = fn(17).Platform;
-const jsx = fn(21).jsx;
+const useMemo = react2.useMemo;
+const Platform = react_native.Platform;
+const jsx = Fragment.jsx;
 
 export const NativeDetector = function NativeDetector(gesture) {
+  let ReanimatedNativeDetector;
+  let children;
+  let enableContextMenu;
+  let touchAction;
+  let userSelect;
   gesture = gesture.gesture;
+  const tmp = gesture;
   ({ children, touchAction, userSelect, enableContextMenu } = gesture);
+  let obj = gesture(6129);
+  const handleStartShouldSetResponder = obj.useJSResponderHandler(gesture).handleStartShouldSetResponder;
   if (gesture.config.dispatchesAnimatedEvents) {
-    let ReanimatedNativeDetector = tmp(6087).AnimatedNativeDetector;
+    ReanimatedNativeDetector = tmp(6087).AnimatedNativeDetector;
   } else if (gesture.config.shouldUseReanimatedDetector) {
     ReanimatedNativeDetector = tmp(6146).ReanimatedNativeDetector;
   } else {
     ReanimatedNativeDetector = _modDef6088;
   }
-  const obj = gesture(6129);
-  const result = gesture(6147).ensureNativeDetectorComponent(ReanimatedNativeDetector);
-  const tmpResult = gesture(6147);
-  const gestureRelationsUpdater = gesture(6148).useGestureRelationsUpdater(gesture);
+  const tmpResult = tmp(6147);
+  const result = tmpResult.ensureNativeDetectorComponent(ReanimatedNativeDetector);
+  const tmpResult3 = tmp(6148);
+  const gestureRelationsUpdater = tmpResult3.useGestureRelationsUpdater(gesture);
   const items = [gesture];
   const tmp6 = useMemo(() => {
+    let handlerTags;
+    const obj = _mod6140;
     if (obj.isComposedGesture(gesture)) {
-      let handlerTags = tmp.handlerTags;
+      handlerTags = tmp.handlerTags;
     } else {
-      handlerTags = [tmp.handlerTag];
+      handlerTags = [gesture.handlerTag];
     }
     return handlerTags;
   }, items);
-  const tmpResult3 = gesture(6148);
-  const detectorAttachmentGuard = gesture(6149).useDetectorAttachmentGuard(tmp6);
+  const tmpResult4 = tmp(6149);
+  const detectorAttachmentGuard = tmpResult4.useDetectorAttachmentGuard(tmp6);
   const obj2 = { onGestureHandlerReanimatedEvent: gesture.detectorCallbacks.reanimatedEventHandler };
-  const tmpResult4 = gesture(6149);
-  return <ReanimatedNativeDetector onStartShouldSetResponder={obj.useJSResponderHandler(gesture).handleStartShouldSetResponder} touchAction={touchAction} userSelect={userSelect} enableContextMenu={enableContextMenu} pointerEvents="box-none" onGestureHandlerStateChange={gesture.detectorCallbacks.jsEventHandler} onGestureHandlerEvent={gesture.detectorCallbacks.jsEventHandler} onGestureHandlerTouchEvent={gesture.detectorCallbacks.jsEventHandler} onGestureHandlerReanimatedStateChange={obj2.onGestureHandlerReanimatedStateChange} onGestureHandlerReanimatedEvent={obj2.onGestureHandlerReanimatedEvent} onGestureHandlerReanimatedTouchEvent={obj2.onGestureHandlerReanimatedTouchEvent} onGestureHandlerAnimatedEvent={gesture.detectorCallbacks.animatedEventHandler} moduleId={globalThis._RNGH_MODULE_ID} handlerTags={tmp6} style={gesture(6087).nativeDetectorStyles.detector}>{children}</ReanimatedNativeDetector>;
+  return <ReanimatedNativeDetector onStartShouldSetResponder={handleStartShouldSetResponder} touchAction={touchAction} userSelect={userSelect} enableContextMenu={enableContextMenu} pointerEvents="box-none" onGestureHandlerStateChange={gesture.detectorCallbacks.jsEventHandler} onGestureHandlerEvent={gesture.detectorCallbacks.jsEventHandler} onGestureHandlerTouchEvent={gesture.detectorCallbacks.jsEventHandler} onGestureHandlerReanimatedStateChange={obj2.onGestureHandlerReanimatedStateChange} onGestureHandlerReanimatedEvent={obj2.onGestureHandlerReanimatedEvent} onGestureHandlerReanimatedTouchEvent={obj2.onGestureHandlerReanimatedTouchEvent} onGestureHandlerAnimatedEvent={gesture.detectorCallbacks.animatedEventHandler} moduleId={globalThis._RNGH_MODULE_ID} handlerTags={tmp6} style={tmp(6087).nativeDetectorStyles.detector}>{children}</ReanimatedNativeDetector>;
 };

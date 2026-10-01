@@ -5,46 +5,66 @@
 // Exports: default
 
 // Module 16383 (VibegrationsSecretRequestCard)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
 import VibegrationsSecretsSheet from "VibegrationsSecretsSheet" /* 16384 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const VibegrationsSecretsSheetDefault = VibegrationsSecretsSheet;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, cardAwaiting: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
-obj2.cardAwaiting = { borderColor: nativeDefault.colors.BACKGROUND_BRAND };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { card: obj2, cardAwaiting: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+obj3 = { borderColor: nativeDefault.colors.BACKGROUND_BRAND };
+let closure_7 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsSecretRequestCard.tsx");
 
 export default function VibegrationsSecretRequestCard(projectId) {
+  let intl3;
+  let intl4;
+  let sKNh1M;
+  let string;
+  let tmp13;
   projectId = projectId.projectId;
   const request = projectId.request;
   const awaiting = projectId.awaiting;
-  const tmp = closure_7();
+  let tmp = closure_7();
   const items = [projectId, request];
   const items1 = [request.fields];
-  const callback = noop.useCallback(() => {
-    const obj2 = { content: hasOwnProperty(VibegrationsSecretsSheetDefault, { projectId, request }), key: VibegrationsSecretsSheet.VIBEGRATIONS_SECRETS_SHEET_KEY };
-    ActionSheetActionCreators.showActionSheet(obj2);
+  const callback = react.useCallback(() => {
+    let obj2;
+    const tmp = ActionSheetActionCreators;
+    const showActionSheet = tmp.showActionSheet;
+    const obj = { content: hasOwnProperty(VibegrationsSecretsSheetDefault, obj2), key: VibegrationsSecretsSheet.VIBEGRATIONS_SECRETS_SHEET_KEY };
+    obj2 = { projectId, request };
+    showActionSheet(obj);
   }, items);
   const items2 = [tmp.card, ];
   let cardAwaiting = null != awaiting;
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     const fields = request.fields;
-    return fields.map((id) => ({ id: id.name, label: id.label, icon: projectId(closure_1_2[7]).KeyIcon }));
+    return fields.map((id) => {
+      const obj = { id: id.name, label: id.label, icon: projectId(closure_1_2[7]).KeyIcon };
+      return obj;
+    });
   }, items1);
+  const tmp4 = closure_6;
+  const tmp5 = View;
   if (cardAwaiting) {
     cardAwaiting = tmp.cardAwaiting;
   }
-  const obj = { style: items2, children: null };
+  let obj = { style: items2, children: null };
   items2[1] = cardAwaiting;
   let tmp6 = null;
   if (null != awaiting) {
@@ -52,37 +72,38 @@ export default function VibegrationsSecretRequestCard(projectId) {
   }
   const items3 = [tmp6, , , , ];
   let str = "text-muted";
+  const Text = projectId(4832).Text;
   if (null != awaiting) {
     str = "text-brand";
   }
-  let obj2 = { variant: "text-xs/semibold", color: str, children: null };
+  let obj2 = { variant: "text-xs/semibold", color: str, children: string(sKNh1M) };
   const intl = tmp11(1115).intl;
+  string = intl.string;
   if (null != awaiting) {
-    let sKNh1M = request(3715).sKNh1M;
-    let tmp13 = request;
+    sKNh1M = request(3715).sKNh1M;
+    tmp13 = request;
   } else {
     tmp13 = request;
     sKNh1M = request(3715)["/e28TK"];
   }
-  obj2.children = intl.string(sKNh1M);
-  items3[1] = closure_5(projectId(4832).Text, obj2);
+  items3[1] = closure_5(Text, obj2);
   if (null != request.note) {
+    let note;
     if ("" !== request.note) {
-      let note = request.note;
+      note = request.note;
     }
     const obj3 = { variant: "text-sm/normal", color: "text-default", children: note };
-    items3[2] = tmp10(tmp16, obj3);
-    const obj4 = { label: null, size: "xs", items: null };
-    const intl3 = tmp11(1115).intl;
-    obj4.label = intl3.string(tmp13(3715)["/e28TK"]);
-    obj4.items = memo;
-    items3[3] = tmp10(tmp11(13978).TagGroup, obj4);
-    const obj5 = { variant: "primary", size: "sm", onPress: callback, text: null };
-    const intl4 = tmp11(1115).intl;
-    obj5.text = intl4.string(tmp13(3715)["gVV+HX"]);
-    items3[4] = tmp10(tmp11(5281).Button, obj5);
+    items3[2] = closure_5(tmp16, obj3);
+    const obj4 = { label: intl3.string(tmp13(3715)["/e28TK"]), size: "xs", items: memo };
+    const TagGroup = tmp11(13978).TagGroup;
+    intl3 = tmp11(1115).intl;
+    items3[3] = closure_5(TagGroup, obj4);
+    const obj5 = { variant: "primary", size: "sm", onPress: callback, text: intl4.string(tmp13(3715)["gVV+HX"]) };
+    const Button = tmp11(5281).Button;
+    intl4 = tmp11(1115).intl;
+    items3[4] = closure_5(Button, obj5);
     obj.children = items3;
-    return closure_6(View, obj);
+    return tmp4(tmp5, obj);
   }
   const intl2 = tmp11(1115).intl;
   note = intl2.string(tmp13(3715).jxvtin);

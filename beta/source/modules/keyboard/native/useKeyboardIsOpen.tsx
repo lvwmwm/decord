@@ -9,15 +9,16 @@ import AppEntryKeyContext from "AppEntryKeyContext" /* 1482 */;
 import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1483 */;
 import KeyboardTypes from "KeyboardTypes" /* 1611 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1481 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-require = fn;
 let closure_4 = {};
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/keyboard/native/useKeyboardIsOpen.tsx");
 
 export default function useKeyboardIsOpen() {
+  let closure_1;
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = closure_4;
@@ -26,15 +27,14 @@ export default function useKeyboardIsOpen() {
   if (flag === undefined) {
     flag = false;
   }
-  importDefault = flag(1482).useAppEntryKey();
+  const obj = flag(1482);
+  importDefault = obj.useAppEntryKey();
   return KeyboardUIStoreDefault((arg0) => {
+    let tmp2;
     const systemKeyboardOpen = tmp.systemKeyboardOpen;
     if (flag) {
-      let tmp3 = systemKeyboardOpen;
-      if (!systemKeyboardOpen) {
-        tmp3 = tmp.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
-      }
-      let tmp2 = tmp3;
+      tmp2 = systemKeyboardOpen || tmp.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
+      const tmp3 = systemKeyboardOpen || tmp.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
     } else {
       tmp2 = systemKeyboardOpen;
     }
@@ -42,6 +42,7 @@ export default function useKeyboardIsOpen() {
   });
 };
 export const subscribeToKeyboardIsOpen = function subscribeToKeyboardIsOpen(arg0) {
+  let closure_0;
   _require = arg0;
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -56,8 +57,10 @@ export const subscribeToKeyboardIsOpen = function subscribeToKeyboardIsOpen(arg0
     DEFAULT_APP_ENTRY_KEY = require("AppEntryKeyContext").DEFAULT_APP_ENTRY_KEY;
   }
   return subscribeToKeyboardUIStore(() => {
+    let tmp6;
     const obj = { includeCustomKeyboard: flag, appEntryKey: DEFAULT_APP_ENTRY_KEY };
     flag = obj.includeCustomKeyboard;
+    const tmp = closure_0;
     if (flag === undefined) {
       flag = false;
     }
@@ -65,21 +68,20 @@ export const subscribeToKeyboardIsOpen = function subscribeToKeyboardIsOpen(arg0
     if (DEFAULT_APP_ENTRY_KEY === undefined) {
       DEFAULT_APP_ENTRY_KEY = AppEntryKeyContext.DEFAULT_APP_ENTRY_KEY;
     }
-    const tmp5 = KeyboardUIStoreDefault.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY];
+    const obj2 = KeyboardUIStoreDefault;
+    const tmp5 = obj2.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY];
     const systemKeyboardOpen = tmp5.systemKeyboardOpen;
     if (flag) {
-      let tmp7 = systemKeyboardOpen;
-      if (!systemKeyboardOpen) {
-        tmp7 = tmp5.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
-      }
-      let tmp6 = tmp7;
+      tmp6 = systemKeyboardOpen || tmp5.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
+      const tmp7 = systemKeyboardOpen || tmp5.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
     } else {
       tmp6 = systemKeyboardOpen;
     }
-    return closure_0(tmp6);
+    return tmp(tmp6);
   }, DEFAULT_APP_ENTRY_KEY);
 };
 export const getKeyboardIsOpen = function getKeyboardIsOpen(arg0) {
+  let tmp6;
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = closure_4;
@@ -92,14 +94,12 @@ export const getKeyboardIsOpen = function getKeyboardIsOpen(arg0) {
   if (DEFAULT_APP_ENTRY_KEY === undefined) {
     DEFAULT_APP_ENTRY_KEY = AppEntryKeyContext.DEFAULT_APP_ENTRY_KEY;
   }
-  const tmp5 = KeyboardUIStoreDefault.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY];
+  const obj = KeyboardUIStoreDefault;
+  const tmp5 = obj.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY];
   const systemKeyboardOpen = tmp5.systemKeyboardOpen;
   if (flag) {
-    let tmp7 = systemKeyboardOpen;
-    if (!systemKeyboardOpen) {
-      tmp7 = tmp5.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
-    }
-    let tmp6 = tmp7;
+    tmp6 = systemKeyboardOpen || tmp5.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
+    const tmp7 = systemKeyboardOpen || tmp5.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
   } else {
     tmp6 = systemKeyboardOpen;
   }

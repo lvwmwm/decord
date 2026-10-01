@@ -4,28 +4,53 @@
 // Dependencies: [19, 17, 4825, 2108, 4876, 1074, 21, 4836, 576, 1177, 504, 7704, 7611, 7705, 7693, 5435, 2]
 
 // Module 7703 (HeaderAvatar)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const ActivityTypes = fn(1074).ActivityTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { avatarStatusStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
+let obj2;
+const View = react_native.View;
+const ActivityTypes = Constants.ActivityTypes;
+const jsx = Fragment.jsx;
+let obj = { avatarStatusStyle: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_9 = createStyles.createStyles(obj);
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/profile_customization/native/HeaderAvatar.tsx");
-
-export default noop.forwardRef((animate, ref) => {
+const forwardRefResult = react.forwardRef((animate, ref) => {
+  let activities;
+  let avatarDecoration;
+  let avatarDecoration1;
+  let disableStatus;
+  let guildId;
+  let isMobileOnline;
+  let isVROnline;
+  let items4;
+  let obj11;
+  let obj8;
+  let onPress;
+  let pendingAvatarDecoration;
+  let pendingAvatarSrc;
+  let status;
+  let statusStyle;
+  let style;
+  let tmp11Result;
+  let tmp16;
+  let tmp44Result;
+  let tmp5Result;
+  let tmp5Result2;
+  let useReducedMotion;
+  let user;
   ({ user, guildId } = animate);
   ({ pendingAvatarSrc, style, onPress, size } = animate);
   ({ disableStatus, pendingAvatarDecoration, statusStyle } = animate);
   if (size === undefined) {
+    const tmp = guildId;
     size = guildId(1177).AvatarSizes.XXLARGE;
   }
   let flag = animate.animate;
@@ -34,85 +59,84 @@ export default noop.forwardRef((animate, ref) => {
   }
   const merged = Object.assign(animate, Object.assign({ user: 0, guildId: 0, disableStatus: 0, pendingAvatarSrc: 0, pendingAvatarDecoration: 0, style: 0, statusStyle: 0, onPress: 0, size: 0, animate: 0 }));
   const id = user.id;
-  let obj = guildId;
-  let avatarSource = dependencyMap;
   const tmp4 = closure_9();
+  let obj = guildId(504);
   const items = [AccessibilityStore];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const obj2 = guildId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const items1 = [PresenceStore];
   const items2 = [id];
-  const stateFromStoresObject = guildId(504).useStateFromStoresObject(items1, () => ({ isMobileOnline: PresenceStore.isMobileOnline(id), isVROnline: PresenceStore.isVROnline(id), status: PresenceStore.getStatus(id), activities: PresenceStore.getActivities(id), customStatusActivity: PresenceStore.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) }), items2);
+  const obj2 = guildId(504);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => {
+    const obj = { isMobileOnline: PresenceStore.isMobileOnline(id), isVROnline: PresenceStore.isVROnline(id), status: PresenceStore.getStatus(id), activities: PresenceStore.getActivities(id), customStatusActivity: PresenceStore.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) };
+    return obj;
+  }, items2);
   ({ isMobileOnline, isVROnline, status, activities } = stateFromStoresObject);
-  const obj3 = guildId(504);
   const items3 = [GuildMemberStore];
-  const stateFromStores1 = guildId(504).useStateFromStores(items3, () => {
+  const obj3 = guildId(504);
+  const stateFromStores1 = obj3.useStateFromStores(items3, () => {
     let member = null;
     if (null != guildId) {
       member = GuildMemberStore.getMember(tmp, id);
     }
     return member;
   });
-  const obj4 = guildId(504);
-  const tmp9 = id;
-  const tmp10 = id(7704);
-  const obj6 = { pendingValue: pendingAvatarDecoration, userValue: null, guildValue: null, guildId: null };
-  let avatarDecoration;
+  const obj4 = { pendingValue: pendingAvatarDecoration, userValue: avatarDecoration, guildValue: avatarDecoration1, guildId };
+  avatarDecoration = undefined;
+  const tmp11 = id(7704);
+  const getProfilePreviewValue = guildId(7611).getProfilePreviewValue;
+  guildId(7611);
+  const tmp10 = id;
   if (user != null) {
     avatarDecoration = user.avatarDecoration;
   }
-  obj6.userValue = avatarDecoration;
-  let avatarDecoration1;
+  avatarDecoration1 = undefined;
   if (stateFromStores1 != null) {
     avatarDecoration1 = stateFromStores1.avatarDecoration;
   }
-  obj6.guildValue = avatarDecoration1;
-  obj6.guildId = guildId;
-  let obj7 = { isMobileOnline, isVROnline, size, status: null, statusStyle: null, streaming: null, animate: null, avatarDecoration: null };
-  let tmp14 = null;
-  const obj5 = guildId(7611);
+  const obj5 = { isMobileOnline, isVROnline, size, status: tmp16, statusStyle: items4, streaming: tmp10(7705)(activities), animate: flag, avatarDecoration: tmp11Result };
+  tmp16 = null;
+  tmp11Result = tmp11(getProfilePreviewValue(obj4));
   if (!disableStatus) {
-    tmp14 = status;
+    tmp16 = status;
   }
-  obj7.status = tmp14;
-  const items4 = [tmp4.avatarStatusStyle, statusStyle];
-  obj7.statusStyle = items4;
-  obj7.streaming = tmp9(7705)(activities);
+  items4 = [tmp4.avatarStatusStyle, statusStyle];
   if (flag) {
     flag = !stateFromStores;
   }
-  obj7.animate = flag;
-  obj7.avatarDecoration = tmp10(guildId(7611).getProfilePreviewValue(obj6));
   if (null != onPress) {
-    const obj8 = { ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton" };
+    const obj6 = { ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton", children: <Avatar {...obj8} /> };
+    const PressableOpacity = tmp5(5435).PressableOpacity;
     const merged1 = Object.assign(merged);
+    const Avatar = tmp5(1177).Avatar;
     if (undefined !== pendingAvatarSrc) {
-      const obj9 = { source: null };
-      obj = obj(7693);
-      avatarSource = obj.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
-      obj9.source = avatarSource;
-      obj7 = Object.assign(obj7);
-      let obj10 = obj9;
+      const obj7 = { source: tmp5Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
+      tmp5Result = guildId(7693);
+      const merged2 = Object.assign(obj5);
+      obj8 = obj7;
     } else {
-      obj10 = { user, guildId };
-      const merged2 = Object.assign(obj7);
+      obj8 = { user, guildId };
+      const merged3 = Object.assign(obj5);
     }
-    obj8.children = jsx(obj(1177).Avatar, obj10);
-    jsx(obj(5435).PressableOpacity, { ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton" });
+    tmp44Result = tmp29(PressableOpacity, obj6);
   } else {
-    const obj11 = { ref, style, accessibilityRole: "image", accessible: true };
-    const merged3 = Object.assign(merged);
+    const obj9 = { ref, style, accessibilityRole: "image", accessible: true, children: <Avatar2 {...obj11} /> };
+    const merged4 = Object.assign(merged);
+    const Avatar2 = tmp5(1177).Avatar;
+    const tmp45 = View;
     if (undefined !== pendingAvatarSrc) {
-      const obj12 = { source: null };
-      const objResult = obj(7693);
-      obj12.source = objResult.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
-      const merged4 = Object.assign(obj7);
-      let obj13 = obj12;
+      const obj10 = { source: tmp5Result2.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
+      tmp5Result2 = guildId(7693);
+      const merged5 = Object.assign(obj5);
+      obj11 = obj10;
     } else {
-      obj13 = { user, guildId };
-      const merged5 = Object.assign(obj7);
+      obj11 = { user, guildId };
+      const merged6 = Object.assign(obj5);
     }
-    obj11.children = jsx(obj(1177).Avatar, obj13);
-    return <View ref={arg1} style={style} accessibilityRole="image" accessible />;
+    tmp44Result = tmp44(tmp45, obj9);
   }
+  return tmp44Result;
 });
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/profile_customization/native/HeaderAvatar.tsx");
+
+export default forwardRefResult;

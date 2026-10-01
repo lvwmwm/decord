@@ -22,6 +22,8 @@ export const addBit = function addBit(dismissedContents, CHANNEL_NOTICE_INVITE) 
   let tmp2 = dismissedContents;
   if (dismissedContents.length <= rounded) {
     const _Uint8Array = Uint8Array;
+    const self = this;
+    const self2 = this;
     const uint8Array = new Uint8Array(rounded + 1);
     const result = uint8Array.set(dismissedContents, 0);
     tmp2 = uint8Array;
@@ -46,9 +48,5 @@ export const isUint8Array = function isUint8Array(arg0) {
   return arg0 instanceof Uint8Array;
 };
 export const isSerializedUint8Array = function isSerializedUint8Array(__tag__) {
-  let tmp = null != __tag__ && typeof __tag__ === "object";
-  if (tmp) {
-    tmp = "uint8array" === __tag__.__tag__;
-  }
-  return tmp;
+  return null != __tag__ && typeof __tag__ === "object" && "uint8array" === __tag__.__tag__;
 };

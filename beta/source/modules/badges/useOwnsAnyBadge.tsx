@@ -5,17 +5,21 @@
 // Exports: default
 
 // Module 16620 (useOwnsAnyBadge)
+import useDisplayProfileDefault from "useDisplayProfile" /* 7631 */;
 import useBadgesDefault from "useBadges" /* 7688 */;
 import UserStore from "UserStore" /* 1372 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
+let currentUser;
+
 const result = size.fileFinishedImporting("modules/badges/useOwnsAnyBadge.tsx");
 
 export default function useOwnsAnyBadge() {
+  let stateFromStores;
+  let obj = stateFromStores(504);
   const items = [UserStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let id;
     if (currentUser != null) {
@@ -23,22 +27,22 @@ export default function useOwnsAnyBadge() {
     }
     return id;
   });
-  let obj = stateFromStores(504);
   const items1 = [BadgeDirectoryStore];
   const items2 = [stateFromStores];
-  let stateFromStores1 = stateFromStores(504).useStateFromStores(items1, () => {
+  const obj2 = stateFromStores(504);
+  let stateFromStores1 = obj2.useStateFromStores(items1, () => {
     let someResult = null;
     if (null != stateFromStores) {
       someResult = null;
-      if (BadgeDirectoryStore.hasCatalogFor(tmp)) {
+      const obj = BadgeDirectoryStore;
+      if (BadgeDirectoryStore.hasCatalogFor(stateFromStores)) {
         const badges = obj.getBadges(tmp);
         someResult = badges.some((owned) => owned.owned);
       }
-      obj = BadgeDirectoryStore;
     }
     return someResult;
   }, items2);
-  const obj2 = stateFromStores(504);
+  const tmp3 = useDisplayProfileDefault(stateFromStores);
   if (stateFromStores1 == null) {
     stateFromStores1 = useBadgesDefault(tmp3).length > 0;
   }

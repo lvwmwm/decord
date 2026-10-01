@@ -28,7 +28,9 @@ import vibegrationsVoiceDefault from "vibegrationsVoice" /* 14070 */;
 import activitiesDefault from "activities" /* 14071 */;
 import questsDefault from "quests" /* 14072 */;
 import voiceChannelChatDefault from "voiceChannelChat" /* 14073 */;
+import size from "module_2" /* 2 */;
 
+const obj = {};
 const application = Object.assign(applicationDefault);
 const certifiedDevices = Object.assign(certifiedDevicesDefault);
 const channels = Object.assign(channelsDefault);
@@ -53,7 +55,6 @@ const vibegrationsVoice = Object.assign(vibegrationsVoiceDefault);
 const activities = Object.assign(activitiesDefault);
 const quests = Object.assign(questsDefault);
 const voiceChannelChat = Object.assign(voiceChannelChatDefault);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/rpc/server/commands/crossPlatformRPCCommands.tsx");
 
-export const crossPlatformCommands = {};
+export const crossPlatformCommands = obj;

@@ -5,7 +5,7 @@
 // Exports: generateUniqueID
 
 // Module 910 (generateUniqueID)
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const generateUniqueID = () => {
   const timestamp = Date.now();

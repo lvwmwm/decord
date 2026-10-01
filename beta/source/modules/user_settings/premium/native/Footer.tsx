@@ -5,53 +5,60 @@
 // Exports: default
 
 // Module 13032 (Footer)
-import util from "util" /* 1115 */;
+import react_native from "react-native" /* 17 */;
+import intl2 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 13033 */;
-import _modDef13034 from "module_13034" /* 13034 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13034 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+const View = react_native.View;
+({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "center", width: "100%" }, footerText: { marginBottom: 24 }, button: { marginBottom: 40 }, easterEggSpacing: { position: "absolute", top: 40 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/Footer.tsx");
 
 export default function Footer(showSubscribeButton) {
+  let intl;
+  let items;
+  let items1;
+  let items2;
+  let obj5;
   showSubscribeButton = showSubscribeButton.showSubscribeButton;
+  const style = showSubscribeButton.style;
   const tmp = closure_7();
-  useOpenPremiumMarketingPaymentDefault(AnalyticsLocationDefault.PREMIUM_MARKETING_FOOTER);
-  const obj = { style: null, children: null };
-  const items = [tmp.container, showSubscribeButton.style];
-  obj.style = items;
+  const tmp4 = useOpenPremiumMarketingPaymentDefault;
+  tmp4(AnalyticsLocationDefault.PREMIUM_MARKETING_FOOTER);
+  const obj = { style: items, children: items2 };
+  items = [tmp.container, style];
   let tmp8Result = showSubscribeButton;
-  if (showSubscribeButton) {
-    const obj2 = { children: null };
-    const obj3 = { style: tmp.footerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-    const intl = util.intl;
-    obj3.children = intl.string(util.t["2bSPbq"]);
-    const items1 = [React4(Text_Text.Text, obj3), ];
-    const obj4 = { style: tmp.button, children: null };
-    const obj5 = { text: tmp7, variant: "primary", size: "lg", onPress: tmp6, grow: true };
-    obj4.children = React4(components_Button_Button.Button, obj5);
-    items1[1] = React4(tmp9, obj4);
-    obj2.children = items1;
+  if (tmp8Result) {
+    const obj2 = { children: items1 };
+    const obj3 = { style: tmp.footerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["2bSPbq"]) };
+    const Text = Text_Text.Text;
+    intl = intl2.intl;
+    items1 = [React3(Text, obj3), ];
+    const obj4 = { style: tmp.button, children: React3(components_Button_Button.Button, obj5) };
+    obj5 = { text: tmp7, variant: "primary", size: "lg", onPress: tmp6, grow: true };
+    items1[1] = React3(View, obj4);
     tmp8Result = tmp8(hasOwnProperty, obj2);
   }
-  const items2 = [tmp8Result, ];
+  items2 = [tmp8Result, ];
   let easterEggSpacing = null;
-  const tmp14 = React4;
+  const tmp14 = React3;
+  const tmp2Result = FastImageDefault;
   if (!showSubscribeButton) {
     easterEggSpacing = tmp.easterEggSpacing;
   }
-  const tmp2Result = FastImageDefault;
-  items2[1] = tmp14(tmp2Result, { style: easterEggSpacing, source: _modDef13034 });
-  obj.children = items2;
-  return timestampProducer(View, obj);
+  const obj6 = { style: easterEggSpacing, source: AssetRegistryDefault };
+  items2[1] = tmp14(tmp2Result, obj6);
+  return metroRequire(View, obj);
 };

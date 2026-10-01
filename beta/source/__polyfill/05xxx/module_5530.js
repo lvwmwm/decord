@@ -6,15 +6,10 @@
 import _modDef5529 from "module_5529" /* 5529 */;
 import _modDef5531 from "module_5531" /* 5531 */;
 
-importDefault = arg2;
-const dependencyMap = arg6;
 
 export default {
   isTiffFile(byteLength) {
-    let tmp = byteLength;
-    if (tmp) {
-      tmp = byteLength.byteLength >= 4;
-    }
+    let tmp = byteLength && byteLength.byteLength >= 4;
     if (tmp) {
       const uint16 = byteLength.getUint16(0);
       tmp = byteLength.getUint16(2, uint16 === _modDef5531.LITTLE_ENDIAN) === 42;

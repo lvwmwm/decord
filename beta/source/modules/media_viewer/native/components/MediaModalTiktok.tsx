@@ -5,39 +5,47 @@
 // Exports: createTiktokVideoControls
 
 // Module 7744 (MediaModalTiktok)
+import Fragment from "Fragment" /* 21 */;
 import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7709 */;
 import useVideoControls from "useVideoControls" /* 7710 */;
 import MediaModalWebView from "MediaModalWebView" /* 7745 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let jsx = fn(21).jsx;
+let c4, visible;
+
+let react = react_mod;
+let jsx = Fragment.jsx;
 let closure_6 = { controls: 0, enable_music_info: 0, enable_timestamp: 0, utm_source: "discord.gg" };
-let obj = { "-1": fn(7745).PlayerState.UNSTARTED, 0: null, 1: null, 2: null, 3: null };
-obj[0] = fn(7745).PlayerState.ENDED;
-obj[1] = fn(7745).PlayerState.PLAYING;
-obj[2] = fn(7745).PlayerState.PAUSED;
-obj[3] = fn(7745).PlayerState.BUFFERING;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/media_viewer/native/components/MediaModalTiktok.tsx");
-
-export default noop.memo((style) => {
-  const visible = style.visible;
-  const source = style.source;
-  const controls = style.controls;
-  let merged = Object.assign(style, Object.assign({ visible: 0, style: 0, source: 0, controls: 0 }));
+let obj = { "-1": MediaModalWebView.PlayerState.UNSTARTED, 0: null, 1: null, 2: null, 3: null };
+obj[0] = MediaModalWebView.PlayerState.ENDED;
+obj[1] = MediaModalWebView.PlayerState.PLAYING;
+obj[2] = MediaModalWebView.PlayerState.PAUSED;
+obj[3] = MediaModalWebView.PlayerState.BUFFERING;
+const memoResult = react.memo((visible) => {
+  let closure_4;
+  let closure_5;
+  visible = visible.visible;
+  const source = visible.source;
+  const controls = visible.controls;
+  const style = visible.style;
+  let merged = Object.assign(visible, Object.assign({ visible: 0, style: 0, source: 0, controls: 0 }));
   let playerState;
-  noop = undefined;
+  react = undefined;
   let mediaPlayerMutedStore;
-  const tmp4 = playerState(noop.useState(visible(controls[3]).PlayerState.UNREADY), 2);
+  obj = react;
+  let tmp3 = controls;
+  const tmp4 = playerState(react.useState(visible(controls[3]).PlayerState.UNREADY), 2);
   playerState = tmp4[0];
-  noop = tmp4[1];
+  react = tmp4[1];
   const tmp7 = source(controls[4])(playerState);
   jsx = tmp7;
   let tmp8 = source(controls[4])(visible);
   closure_6 = tmp8;
   let ref;
+  const tmp2 = visible;
+  const tmp6 = source;
   if (controls != null) {
     let props = controls.props;
     if (props != null) {
@@ -45,11 +53,12 @@ export default noop.memo((style) => {
     }
   }
   let props1;
+  const useCallback = obj.useCallback;
   if (controls != null) {
     props1 = controls.props;
   }
   const items = [props1];
-  const callback = obj.useCallback((arg0) => {
+  const callback = useCallback((arg0) => {
     const iter = JSON.parse(arg0);
     const type = iter.type;
     if ("onPlayerReady" === type) {
@@ -59,17 +68,19 @@ export default noop.memo((style) => {
         if (controls != null) {
           const props2 = controls.props;
           if (props2 != null) {
-            props2.onPlayerStateChange(tmp12);
+            props2.onPlayerStateChange(obj[iter.value]);
           }
         }
-        closure_4(tmp12);
+        closure_4(obj[iter.value]);
       }
     } else if ("onError" === type) {
+      let str5;
       closure_4(MediaModalWebView.PlayerState.ERRORED);
       const MediaViewerAnalytics = MediaViewerAnalyticsManager.MediaViewerAnalytics;
-      value = iter.value;
+      const value = iter.value;
+      const trackMessageEmbedsActionCompleted = MediaViewerAnalytics.trackMessageEmbedsActionCompleted;
       if ("1" === value) {
-        let str5 = "MEDIA_ERR_ABORTED";
+        str5 = "MEDIA_ERR_ABORTED";
       } else if ("2" === value) {
         str5 = "MEDIA_ERR_NETWORK";
       } else if ("3" === value) {
@@ -81,7 +92,7 @@ export default noop.memo((style) => {
         }
       }
       obj = { platform: "tiktok", action: "errored", error: str5 };
-      const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted(obj);
+      const result = trackMessageEmbedsActionCompleted(obj);
     } else if ("onCurrentTime" === type) {
       if (controls != null) {
         const props = tmp.props;
@@ -102,28 +113,21 @@ export default noop.memo((style) => {
         }
       }
     } else if ("onMute" === type) {
-      useVideoControls.setMuted(iter.value);
+      const obj2 = useVideoControls;
+      obj2.setMuted(iter.value);
     }
   }, items);
-  mediaPlayerMutedStore = visible(controls[7]).useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
+  const tmp2Result = tmp2(tmp3[7]);
+  mediaPlayerMutedStore = tmp2Result.useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
   const items1 = [ref, visible, tmp8, tmp7, playerState, mediaPlayerMutedStore];
   const effect = obj.useEffect(() => {
     let current1;
     if (ref != null) {
       current1 = tmp.current;
     }
-    let tmp3 = null != current1;
+    const tmp3 = null != current1 && first !== MediaModalWebView.PlayerState.UNREADY;
     if (tmp3) {
-      tmp3 = first !== MediaModalWebView.PlayerState.UNREADY;
-    }
-    if (tmp3) {
-      let tmp8 = visible;
-      if (visible) {
-        tmp8 = closure_5 === MediaModalWebView.PlayerState.UNREADY;
-      }
-      if (tmp8) {
-        tmp8 = first === MediaModalWebView.PlayerState.READY;
-      }
+      const tmp8 = visible && closure_5 === MediaModalWebView.PlayerState.UNREADY && first === MediaModalWebView.PlayerState.READY;
       if (tmp8) {
         const _JSON = JSON;
         const merged = Object.assign({ type: "play" });
@@ -132,38 +136,32 @@ export default noop.memo((style) => {
           const _HermesInternal = HermesInternal;
           current.injectJavaScript("\n    window.postMessage(" + tmp18 + ", '*')\n  ");
         }
-        obj = { "x-tiktok-player": true };
       }
-      let tmp20 = tmp7;
-      if (visible) {
-        tmp20 = !closure_6;
-      }
+      const tmp20 = tmp7 && !closure_6;
       if (tmp20) {
         const _JSON2 = JSON;
+        const stringify2 = JSON.stringify;
         const merged1 = Object.assign({ type: "play" });
         const current2 = tmp.current;
         if (current2 != null) {
           const _HermesInternal2 = HermesInternal;
           current2.injectJavaScript("\n    window.postMessage(" + tmp25 + ", '*')\n  ");
         }
-        const obj2 = { "x-tiktok-player": true };
       }
-      let tmp27 = !tmp7;
-      if (!visible) {
-        tmp27 = closure_6;
-      }
+      const tmp27 = !visible && closure_6;
       if (tmp27) {
         const _JSON3 = JSON;
+        const stringify3 = JSON.stringify;
         const merged2 = Object.assign({ type: "pause" });
         const current3 = tmp.current;
         if (current3 != null) {
           const _HermesInternal3 = HermesInternal;
           current3.injectJavaScript("\n    window.postMessage(" + tmp31 + ", '*')\n  ");
         }
-        const obj3 = { "x-tiktok-player": true };
       }
       if (first === MediaModalWebView.PlayerState.ENDED) {
         const _JSON6 = JSON;
+        const stringify6 = JSON.stringify;
         const merged3 = Object.assign({ type: "seekTo", value: 0 });
         const current6 = tmp.current;
         if (current6 != null) {
@@ -171,28 +169,27 @@ export default noop.memo((style) => {
           current6.injectJavaScript("\n    window.postMessage(" + tmp51 + ", '*')\n  ");
         }
         const _JSON4 = JSON;
+        const stringify4 = JSON.stringify;
         const merged4 = Object.assign({ type: "play" });
         const current4 = tmp.current;
         if (current4 != null) {
           const _HermesInternal5 = HermesInternal;
           current4.injectJavaScript("\n    window.postMessage(" + tmp39 + ", '*')\n  ");
         }
-        const obj4 = { "x-tiktok-player": true };
-        const obj5 = { "x-tiktok-player": true };
       }
       let str11 = "unMute";
       if (mediaPlayerMutedStore) {
         str11 = "mute";
       }
-      const obj6 = { type: str11 };
       const _JSON5 = JSON;
+      const stringify5 = JSON.stringify;
+      const obj6 = { type: str11 };
       const merged5 = Object.assign(obj6);
       const current5 = tmp.current;
       if (current5 != null) {
         const _HermesInternal6 = HermesInternal;
         current5.injectJavaScript("\n    window.postMessage(" + tmp46 + ", '*')\n  ");
       }
-      const obj7 = { "x-tiktok-player": true };
     }
   }, items1);
   const effect1 = obj.useEffect(() => {
@@ -204,31 +201,31 @@ export default noop.memo((style) => {
     const str = new URL(source.uri);
     const entries = Object.entries(closure_6);
     const item = entries.forEach((item) => {
+      let tmp;
       [tmp, str] = item;
       const searchParams = str.searchParams;
       searchParams.append(tmp, str.toString());
     });
     return str.toString();
   }, items2);
-  let obj2 = { ref, style: style.style, source: null, baseURL: "https://www.tiktok.com/player/v1/", injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    if (!event.data[\"x-tiktok-player\"]) {\n      return;\n    }\n    window.ReactNativeWebView.postMessage(JSON.stringify(event.data));\n  }, true);\n", onDataReceived: null, playerState: null };
-  let obj3 = {};
-  const tmp2Result = visible(controls[7]);
+  const obj3 = { uri: memo };
+  tmp6(tmp3[3]);
   let merged1 = Object.assign(source);
-  obj3.uri = memo;
-  obj2.source = obj3;
-  obj2.onDataReceived = callback;
-  obj2.playerState = playerState;
   let merged2 = Object.assign(merged);
-  return jsx(source(controls[3]), { ref, style: style.style, source: null, baseURL: "https://www.tiktok.com/player/v1/", injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    if (!event.data[\"x-tiktok-player\"]) {\n      return;\n    }\n    window.ReactNativeWebView.postMessage(JSON.stringify(event.data));\n  }, true);\n", onDataReceived: null, playerState: null });
+  return <tmp6Result ref={ref} style={style} source={obj3} baseURL="https://www.tiktok.com/player/v1/" injectedJavaScript="\n  window.addEventListener('message', function(event) {\n    if (!event.data[\"x-tiktok-player\"]) {\n      return;\n    }\n    window.ReactNativeWebView.postMessage(JSON.stringify(event.data));\n  }, true);\n" onDataReceived={callback} playerState={playerState} />;
 });
+let result = size.fileFinishedImporting("modules/media_viewer/native/components/MediaModalTiktok.tsx");
+
+export default memoResult;
 export const createTiktokVideoControls = function createTiktokVideoControls() {
-  const ref = noop.createRef();
-  closure_3 = 0;
-  noop = 0;
-  closure_5 = false;
-  return {
+  const ref = react.createRef();
+  let c3 = 0;
+  react = 0;
+  let c5 = false;
+  obj = {
     seek(value) {
-      const merged = Object.assign({ type: "seekTo", value });
+      obj = { type: "seekTo", value };
+      const merged = Object.assign(obj);
       const current = ref.current;
       if (current != null) {
         const _HermesInternal = HermesInternal;
@@ -236,27 +233,27 @@ export const createTiktokVideoControls = function createTiktokVideoControls() {
       }
     },
     pause(arg0) {
-      if (closure_5 !== arg0) {
-        closure_5 = arg0;
+      if (c5 !== arg0) {
+        c5 = arg0;
         let str = "play";
+        const tmp = ref;
         if (arg0) {
           str = "pause";
         }
-        obj = { type: str };
         const _JSON = JSON;
+        obj = { type: str };
         const merged = Object.assign(obj);
-        const current = ref.current;
+        const current = tmp.current;
         if (current != null) {
           const _HermesInternal = HermesInternal;
           current.injectJavaScript("\n    window.postMessage(" + tmp6 + ", '*')\n  ");
         }
-        const obj2 = { "x-tiktok-player": true };
       }
     },
     useSubscribe(arg0, arg1, arg2) {
-      closure_0 = arg0;
-      closure_1 = arg1;
-      const layoutEffect = noop.useLayoutEffect(() => {
+      let closure_1_0 = arg0;
+      let closure_1_1 = arg1;
+      const layoutEffect = react.useLayoutEffect(() => {
         if (closure_1_0 != null) {
           tmp(closure_1_3, closure_1_4);
         }
@@ -268,23 +265,24 @@ export const createTiktokVideoControls = function createTiktokVideoControls() {
     props: {
       ref,
       onPlayerStateChange(arg0) {
-        if (closure_1 != null) {
-          tmp(arg0 === MediaModalWebView.PlayerState.PAUSED || arg0 === MediaModalWebView.PlayerState.ENDED);
+        if (importDefault != null) {
           const tmp5 = arg0 === MediaModalWebView.PlayerState.PAUSED || arg0 === MediaModalWebView.PlayerState.ENDED;
+          tmp(tmp5);
         }
       },
       onCurrentSecond(arg0) {
-        closure_3 = arg0;
-        if (closure_0 != null) {
-          tmp(closure_3, closure_4);
+        c3 = arg0;
+        if (require != null) {
+          tmp(c3, c4);
         }
       },
       onDuration(arg0) {
-        closure_4 = arg0;
-        if (closure_0 != null) {
-          tmp(closure_3, closure_4);
+        c4 = arg0;
+        if (require != null) {
+          tmp(c3, c4);
         }
       }
     }
   };
+  return obj;
 };

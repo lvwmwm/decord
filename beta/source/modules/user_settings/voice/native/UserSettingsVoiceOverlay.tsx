@@ -5,32 +5,31 @@
 // Exports: default
 
 // Module 9446 (UserSettingsVoiceOverlay)
+import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import util from "util" /* 1115 */;
-import TableSwitchRow from "TableSwitchRow" /* 6621 */;
+import intl4 from "intl" /* 1115 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6621 */;
 import UserSettingsVoice from "UserSettingsVoice" /* 9434 */;
 import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 9447 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 9435 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceOverlay.tsx");
 
 export default function UserSettingsVoiceOverlay() {
+  let enabled;
+  let intl2;
+  let intl3;
   const items = [MobileVoiceOverlayStore];
-  const stateFromStores = useStateFromStores.useStateFromStores(items, () => enabled.getEnabled());
-  const obj2 = { title: null, hasIcons: false, children: null };
-  const intl = util.intl;
-  obj2.title = intl.string(util.t.bNqkD9);
-  const obj3 = { label: null, subLabel: null, value: null, onValueChange: null };
-  const intl2 = util.intl;
-  obj3.label = intl2.string(util.t["9CSZJm"]);
-  const intl3 = util.intl;
-  obj3.subLabel = intl3.string(util.t.Wfoivk);
-  obj3.value = stateFromStores;
-  obj3.onValueChange = MobileVoiceOverlayActionCreatorsDefault.setEnabled;
-  obj2.children = jsx(TableSwitchRow.TableSwitchRow, { label: null, subLabel: null, value: null, onValueChange: null });
-  return jsx(UserSettingsVoice.UserSettingsTableRowGroup, { title: null, hasIcons: false, children: null });
+  const obj = useStateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => enabled.getEnabled());
+  const UserSettingsTableRowGroup = UserSettingsVoice.UserSettingsTableRowGroup;
+  const intl = intl4.intl;
+  ({ label: intl2.string(intl4.t["9CSZJm"]), subLabel: intl3.string(intl4.t.Wfoivk), value: stateFromStores, onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled });
+  const TableSwitchRow = TableSwitchRow2.TableSwitchRow;
+  intl2 = intl4.intl;
+  intl3 = intl4.intl;
+  return <UserSettingsTableRowGroup title={intl.string(intl4.t.bNqkD9)} hasIcons={false}>{null}</UserSettingsTableRowGroup>;
 };

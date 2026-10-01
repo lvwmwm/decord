@@ -18,13 +18,16 @@ const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useSho
 
 export default function useShouldShowGuildThemeMemberCoachmark(guildId) {
   const tmp = useHasAllocateBoostPermissionDefault(guildId);
-  let serverThemeEnabled = ServerThemeExperiment.useServerThemeEnabled(guildId, "useShouldShowGuildThemeMemberCoachmark");
-  const serverThemeUserEnabled = ServerThemeUserExperiment.useServerThemeUserEnabled("useShouldShowGuildThemeMemberCoachmark");
-  const serverThemeRollbackEnabled = ServerThemeExperiment.useServerThemeRollbackEnabled(guildId, "useShouldShowGuildThemeMemberCoachmark");
+  const obj = ServerThemeExperiment;
+  let serverThemeEnabled = obj.useServerThemeEnabled(guildId, "useShouldShowGuildThemeMemberCoachmark");
+  const obj2 = ServerThemeUserExperiment;
+  const serverThemeUserEnabled = obj2.useServerThemeUserEnabled("useShouldShowGuildThemeMemberCoachmark");
+  const obj3 = ServerThemeExperiment;
+  const serverThemeRollbackEnabled = obj3.useServerThemeRollbackEnabled(guildId, "useShouldShowGuildThemeMemberCoachmark");
   const tmp5 = useIsGuildThemePerkEnabledDefault(guildId);
-  const isLoading = useGuildPowerupsBoostCountDefault(guildId).isLoading;
-  let tmp8 = !isLoading;
-  if (!isLoading) {
+  let tmp8 = !useGuildPowerupsBoostCountDefault(guildId).isLoading;
+  useGuildPowerupsBoostCountDefault(guildId);
+  if (tmp8) {
     if (serverThemeEnabled) {
       serverThemeEnabled = serverThemeUserEnabled;
     }

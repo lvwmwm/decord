@@ -4,88 +4,115 @@
 // Exports: close, crashedLastRun, flush, init, nativeCrash, withScope, wrap
 
 // Module 1045
-import _mod682 from "module_682" /* 682 */;
-import NativeModules from "NativeModules" /* 866 */;
 import _mod867 from "module_867" /* 867 */;
-import _mod1059 from "module_1059" /* 1059 */;
-import _mod1060 from "module_1060" /* 1060 */;
-import noop from "module_19" /* 19 */;
+import TouchEventBoundary2 from "TouchEventBoundary" /* 1059 */;
+import react from "react" /* 19 */;
 
 const require = globalThis.__r;
+let _require, c0, c1, c4, dependencyMap;
 
-require = fn;
-fn = this;
-if (this) {
-  fn = this.__awaiter;
-}
-if (!fn) {
-  fn = (arg0, arg1, arg2, arg3) => {
-    closure_0 = arg0;
+let tmp;
+const _mod679 = tmp(679);
+const _mod682 = tmp(682);
+const _mod866 = tmp(866);
+const _mod871 = tmp(871);
+const init2 = tmp(1000);
+const ReactNativeClient = tmp(1041);
+const DEFAULT_BUFFER_SIZE = tmp(1046);
+const enableSyncToNative3 = tmp(1047);
+const safeFactory = tmp(1048);
+const _mod1049 = tmp(1049);
+const react_native = tmp(1050);
+const _mod1051 = tmp(1051);
+const FeedbackWidgetProvider = tmp(1060);
+let closure_3 = this && this.__awaiter || ((arg0, arg1, arg2, arg3) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let _Promise = arg2;
+  const Promise = arg2;
+  closure_3 = arg3;
+  if (!arg2) {
+    let tmp = globalThis;
+    _Promise = Promise;
+  }
+  const _Promise1 = new _Promise(function(fn, arg1) {
+    closure_0 = fn;
     closure_1 = arg1;
-    let _Promise = arg2;
-    closure_3 = arg3;
-    if (!arg2) {
-      _Promise = Promise;
+    function fulfilled(result) {
+      try {
+        step(iter.next(result));
+      } catch (tmp5) {
+        closure_1(tmp5);
+      }
     }
-    return new _Promise((fn, arg1) => {
-      closure_0 = fn;
-      closure_1 = arg1;
-      function fulfilled(result) {
-        try {
-          step(iter.next(result));
-        } catch (tmp5) {
-          closure_1(tmp5);
-        }
+    function rejected(arg0) {
+      try {
+        step(iter.throw(arg0));
+      } catch (tmp5) {
+        closure_1(tmp5);
       }
-      function rejected(arg0) {
-        try {
-          step(iter.throw(arg0));
-        } catch (tmp5) {
-          closure_1(tmp5);
-        }
-      }
-      let iter = rejected;
-      function step(done) {
-        if (done.done) {
-          closure_0(done.value);
-        } else {
-          let tmp1 = done.value;
-          closure_0 = tmp1;
-          if (!(tmp1 instanceof Promise)) {
-            tmp1 = new tmp((fn) => {
-              fn(value);
-            });
-          }
-          tmp1.then(fulfilled, iter);
-        }
-      }
-      let items = closure_1;
-      if (!closure_1) {
-        items = [];
-      }
-      iter = iter.apply(closure_0, items);
-      const iter2 = iter.next();
-      value = iter2.value;
-      if (iter2.done) {
-        fn(value);
+    }
+    let iter = rejected;
+    function step(done) {
+      if (done.done) {
+        fn(done.value);
       } else {
-        closure_0 = value;
-        let tmp32 = value;
-        if (!(value instanceof fulfilled)) {
-          tmp32 = new tmp3((fn) => {
+        let tmp1 = done.value;
+        const value = tmp1;
+        if (!(tmp1 instanceof Promise)) {
+          const self = this;
+          const self2 = this;
+          tmp1 = new tmp((fn) => {
             fn(value);
           });
         }
-        tmp32.then(fulfilled, rejected);
+        tmp1.then(fulfilled, iter);
       }
-    });
-  };
-}
-let obj = { enableNativeCrashHandling: true, enableNativeNagger: true, autoInitializeNativeSdk: true, enableAutoPerformanceTracing: true, enableWatchdogTerminationTracking: true, patchGlobalPromise: true, sendClientReports: true, maxQueueSize: fn(1046).DEFAULT_BUFFER_SIZE, attachStacktrace: true, enableCaptureFailedRequests: false, enableNdk: true, enableAppStartTracking: true, enableNativeFramesTracking: true, enableStallTracking: true, enableUserInteractionTracing: false, propagateTraceparent: false };
+    }
+    let items = closure_1;
+    const tmp = iter;
+    const apply = iter.apply;
+    const tmp2 = closure_0;
+    if (!closure_1) {
+      items = [];
+    }
+    iter = apply(tmp2, items);
+    const iter2 = iter.next();
+    let value = iter2.value;
+    if (iter2.done) {
+      const tmp5 = fn(value);
+    } else {
+      let tmp32 = value;
+      if (!(value instanceof fulfilled)) {
+        let self = this;
+        let self2 = this;
+        tmp32 = new tmp3((fn) => {
+          fn(value);
+        });
+      }
+      tmp32.then(fulfilled, rejected);
+    }
+  });
+  return _Promise1;
+});
+let obj = { enableNativeCrashHandling: true, enableNativeNagger: true, autoInitializeNativeSdk: true, enableAutoPerformanceTracing: true, enableWatchdogTerminationTracking: true, patchGlobalPromise: true, sendClientReports: true, maxQueueSize: require("DEFAULT_BUFFER_SIZE").DEFAULT_BUFFER_SIZE, attachStacktrace: true, enableCaptureFailedRequests: false, enableNdk: true, enableAppStartTracking: true, enableNativeFramesTracking: true, enableStallTracking: true, enableUserInteractionTracing: false, propagateTraceparent: false };
 
 export const init = function init(maxQueueSize) {
+  let assign2;
+  let assign3;
+  let defaultStackParser;
+  let makeFetchTransport;
+  let merged1;
+  let obj4;
+  let stackParserFromStackParserOptions;
+  let tmpResult28;
+  let tmpResult31;
+  let tmpResult36;
+  let transportOptions1;
+  const tmp = require;
   obj = _mod867;
   if (!obj.isRunningInMetroDevServer()) {
+    let defaultIntegrations;
     maxQueueSize = maxQueueSize.maxQueueSize;
     if (null === maxQueueSize) {
       const transportOptions = maxQueueSize.transportOptions;
@@ -100,24 +127,28 @@ export const init = function init(maxQueueSize) {
     if (null === maxQueueSize) {
       maxQueueSize = obj.maxQueueSize;
     }
-    let isNativeAvailableResult = !tmp7;
-    if (!(undefined !== maxQueueSize.enableNative && !maxQueueSize.enableNative)) {
-      const NATIVE = tmp(866).NATIVE;
+    let isNativeAvailableResult = !(undefined !== maxQueueSize.enableNative && !maxQueueSize.enableNative);
+    const tmp7 = undefined !== maxQueueSize.enableNative && !maxQueueSize.enableNative;
+    if (isNativeAvailableResult) {
+      const NATIVE = _mod866.NATIVE;
       isNativeAvailableResult = NATIVE.isNativeAvailable();
     }
-    const encodePolyfill = tmp(871).useEncodePolyfill();
+    let tmpResult = _mod871;
+    const encodePolyfill = tmpResult.useEncodePolyfill();
     if (isNativeAvailableResult) {
-      const tmpResult20 = tmp(1047);
-      tmpResult20.enableSyncToNative(tmp(682).getGlobalScope());
-      const tmpResult21 = tmp(682);
-      const tmpResult22 = tmp(1047);
-      tmpResult22.enableSyncToNative(tmp(682).getIsolationScope());
-      const tmpResult23 = tmp(682);
+      const enableSyncToNative = enableSyncToNative3.enableSyncToNative;
+      enableSyncToNative3;
+      const tmpResult21 = _mod682;
+      enableSyncToNative(tmpResult21.getGlobalScope());
+      const enableSyncToNative2 = enableSyncToNative3.enableSyncToNative;
+      enableSyncToNative3;
+      const tmpResult23 = _mod682;
+      enableSyncToNative2(tmpResult23.getIsolationScope());
     }
-    let tmpResult = tmp(871);
-    closure_0 = tmp(1048).safeFactory(maxQueueSize.beforeBreadcrumb, { loggerMessage: "The beforeBreadcrumb threw an error" });
-    const tmpResult24 = tmp(1048);
-    const devServer = tmp(679).getDevServer();
+    const tmpResult24 = safeFactory;
+    let closure_0 = tmpResult24.safeFactory(maxQueueSize.beforeBreadcrumb, { loggerMessage: "The beforeBreadcrumb threw an error" });
+    const tmpResult25 = _mod679;
+    const devServer = tmpResult25.getDevServer();
     let url1;
     if (null !== devServer) {
       if (undefined !== devServer) {
@@ -127,7 +158,8 @@ export const init = function init(maxQueueSize) {
     const dsn = maxQueueSize.dsn;
     let combined;
     if (dsn) {
-      let url = tmp(682).makeDsn(dsn);
+      const tmpResult26 = _mod682;
+      let url = tmpResult26.makeDsn(dsn);
       if (url) {
         let str3 = "";
         if (url.port) {
@@ -137,157 +169,174 @@ export const init = function init(maxQueueSize) {
         const _HermesInternal2 = HermesInternal;
         combined = "" + url.protocol + "://" + url.host + str3;
       } else {
-        const debug = tmp(682).debug;
+        const debug = _mod682.debug;
+        const str = "Failed to extract url from DSN: ";
         debug.error("Failed to extract url from DSN: ", dsn);
       }
-      const tmpResult26 = tmp(682);
     }
-    const _Object = Object;
     const _Object2 = Object;
+    const _Object3 = Object;
+    const _Object = Object;
     let release = maxQueueSize.release;
     const merged = Object.assign(Object.assign({}, obj), maxQueueSize);
+    const tmp22 = obj;
     if (null === release) {
-      release = tmp(1049).getDefaultRelease();
-      const tmpResult27 = tmp(1049);
+      const tmpResult27 = _mod1049;
+      release = tmpResult27.getDefaultRelease();
     }
-    const obj2 = { release, enableNative: isNativeAvailableResult, enableNativeNagger: null, transport: null, transportOptions: null, maxQueueSize: null, integrations: null, stackParser: null, beforeBreadcrumb: null, initialScope: null };
-    const tmp20 = obj;
-    const tmpResult25 = tmp(679);
-    obj2.enableNativeNagger = tmp(1050).shouldEnableNativeNagger(maxQueueSize.enableNativeNagger);
-    let makeFetchTransport = maxQueueSize.transport;
+    const obj2 = {
+      release,
+      enableNative: isNativeAvailableResult,
+      enableNativeNagger: tmpResult28.shouldEnableNativeNagger(maxQueueSize.enableNativeNagger),
+      transport: makeFetchTransport,
+      transportOptions: assign2(assign3(merged1, transportOptions1), obj4),
+      maxQueueSize,
+      integrations: [],
+      stackParser: stackParserFromStackParserOptions(defaultStackParser),
+      beforeBreadcrumb(arg0, arg1) {
+          let tmpResult = arg0;
+          if (closure_0) {
+            tmpResult = tmp(arg0, arg1);
+            if (null === tmpResult) {
+              return null;
+            }
+          }
+          const data = tmpResult.data;
+          let url;
+          const tmp5 = tmpResult.type || "";
+          if (null !== data) {
+            if (undefined !== data) {
+              url = data.url;
+            }
+          }
+          if ("http" === tmp5) {
+            let tmp8;
+            if (!url1) {
+              if (combined) {
+                tmp8 = null;
+              }
+            } else {
+              tmp8 = null;
+            }
+            return tmp8;
+          }
+          tmp8 = tmpResult;
+        },
+      initialScope: tmpResult31.safeFactory(maxQueueSize.initialScope, { loggerMessage: "The initialScope threw an error" })
+    };
+    makeFetchTransport = maxQueueSize.transport;
+    tmpResult28 = react_native;
     if (!makeFetchTransport) {
       const obj3 = { enableNative: isNativeAvailableResult };
-      makeFetchTransport = tmp(1046).makeNativeTransportFactory(obj3);
-      const tmpResult29 = tmp(1046);
+      const tmpResult29 = DEFAULT_BUFFER_SIZE;
+      makeFetchTransport = tmpResult29.makeNativeTransportFactory(obj3);
     }
     if (!makeFetchTransport) {
-      makeFetchTransport = tmp(1000).makeFetchTransport;
+      makeFetchTransport = init2.makeFetchTransport;
     }
-    obj2.transport = makeFetchTransport;
-    const _Object3 = Object;
-    let transportOptions1 = maxQueueSize.transportOptions;
-    const merged1 = Object.assign({}, tmp20.transportOptions);
+    const _Object6 = Object;
+    const _Object4 = Object;
+    assign2 = Object.assign;
+    const _Object5 = Object;
+    assign3 = Object.assign;
+    transportOptions1 = maxQueueSize.transportOptions;
+    merged1 = Object.assign({}, tmp22.transportOptions);
     if (null === transportOptions1) {
       transportOptions1 = {};
     }
-    const obj4 = { bufferSize: maxQueueSize };
-    obj2.transportOptions = Object.assign(Object.assign(merged1, transportOptions1), obj4);
-    obj2.maxQueueSize = maxQueueSize;
-    obj2.integrations = [];
-    const tmpResult28 = tmp(1050);
-    let defaultStackParser = maxQueueSize.stackParser;
+    defaultStackParser = maxQueueSize.stackParser;
+    obj4 = { bufferSize: maxQueueSize };
+    stackParserFromStackParserOptions = _mod682.stackParserFromStackParserOptions;
+    _mod682;
     if (!defaultStackParser) {
-      defaultStackParser = tmp(1000).defaultStackParser;
+      defaultStackParser = init2.defaultStackParser;
     }
-    obj2.stackParser = tmp(682).stackParserFromStackParserOptions(defaultStackParser);
-    obj2.beforeBreadcrumb = function beforeBreadcrumb(arg0, arg1) {
-      let tmpResult = arg0;
-      if (closure_0) {
-        tmpResult = tmp(arg0, arg1);
-        if (null === tmpResult) {
-          return null;
-        }
-      }
-      const data = tmpResult.data;
-      let url;
-      if (null !== data) {
-        if (undefined !== data) {
-          url = data.url;
-        }
-      }
-      const str = "";
-      if ("http" === tmp5) {
-        if (!url1) {
-          if (combined) {
-            let tmp8 = null;
-          }
-        } else {
-          tmp8 = null;
-        }
-        return tmp8;
-      }
-      tmp8 = tmpResult;
-    };
-    const tmpResult30 = tmp(682);
-    obj2.initialScope = tmp(1048).safeFactory(maxQueueSize.initialScope, { loggerMessage: "The initialScope threw an error" });
-    const merged2 = Object.assign(merged, obj2);
-    if ("tracesSampler" in merged2) {
-      merged2.tracesSampler = tmp(1048).safeTracesSampler(merged2.tracesSampler);
-      const tmpResult32 = tmp(1048);
+    tmpResult31 = safeFactory;
+    const obj5 = assign(merged, obj2);
+    if ("tracesSampler" in obj5) {
+      const tmpResult32 = safeFactory;
+      obj5.tracesSampler = tmpResult32.safeTracesSampler(obj5.tracesSampler);
     }
-    if (!("environment" in merged2)) {
-      merged2.environment = tmp(867).getDefaultEnvironment();
-      const tmpResult33 = tmp(867);
+    if (!("environment" in obj5)) {
+      const tmpResult33 = _mod867;
+      obj5.environment = tmpResult33.getDefaultEnvironment();
     }
     if (undefined === maxQueueSize.defaultIntegrations) {
-      let defaultIntegrations = tmp(1051).getDefaultIntegrations(merged2);
-      const tmpResult34 = tmp(1051);
+      const tmpResult34 = _mod1051;
+      defaultIntegrations = tmpResult34.getDefaultIntegrations(obj5);
     } else {
       defaultIntegrations = maxQueueSize.defaultIntegrations;
     }
-    const tmpResult31 = tmp(1048);
-    const obj5 = { integrations: null, defaultIntegrations: null };
-    const tmpResult35 = tmp(682);
-    obj5.integrations = tmp(1048).safeFactory(maxQueueSize.integrations, { loggerMessage: "The integrations threw an error" });
-    obj5.defaultIntegrations = defaultIntegrations;
-    merged2.integrations = tmpResult35.getIntegrationsToSetup(obj5);
-    const tmpResult36 = tmp(1048);
-    const andBind = tmp(682).initAndBind(tmp(1041).ReactNativeClient, merged2);
-    const tmpResult37 = tmp(682);
+    const obj6 = { integrations: tmpResult36.safeFactory(maxQueueSize.integrations, { loggerMessage: "The integrations threw an error" }), defaultIntegrations };
+    const getIntegrationsToSetup = _mod682.getIntegrationsToSetup;
+    _mod682;
+    tmpResult36 = safeFactory;
+    obj5.integrations = getIntegrationsToSetup(obj6);
+    const tmpResult37 = _mod682;
+    const andBind = tmpResult37.initAndBind(ReactNativeClient.ReactNativeClient, obj5);
+    const tmpResult38 = _mod867;
     if (tmpResult38.isExpoGo()) {
-      const debug2 = tmp(682).debug;
+      const debug2 = _mod682.debug;
       debug2.log("Offline caching, native errors features are not available in Expo Go.");
-      const debug3 = tmp(682).debug;
+      const debug3 = _mod682.debug;
       debug3.log("Use EAS Build / Native Release Build to test these features.");
     }
-    tmpResult38 = tmp(867);
   }
 };
 export const wrap = function wrap(displayName, profilerProps) {
   _require = displayName;
   dependencyMap = profilerProps;
   profilerProps = undefined;
+  let _Object = Object;
+  const _Object2 = Object;
+  const assign2 = Object.assign;
   if (null != profilerProps) {
     profilerProps = profilerProps.profilerProps;
   }
   displayName = displayName.displayName;
   let str = "Root";
-  let merged = Object.assign({}, profilerProps);
+  const assign2Result = assign2({}, profilerProps);
   if (null !== displayName) {
     str = "Root";
     if (undefined !== displayName) {
       str = displayName;
     }
   }
-  closure_2 = Object.assign(merged, { name: str, updateProps: {} });
+  let closure_2 = assign(assign2Result, { name: str, updateProps: {} });
+  obj = require("module_867");
   if (obj.isWeb()) {
     let ReactNativeProfiler = tmp3(1000).Profiler;
   } else {
     ReactNativeProfiler = tmp3(1052).ReactNativeProfiler;
   }
   return (arg0) => {
+    const createElement = react.createElement;
     let prop;
+    const TouchEventBoundary = TouchEventBoundary2.TouchEventBoundary;
+    const _Object = Object;
     if (null != profilerProps) {
       prop = profilerProps.touchEventBoundaryProps;
     }
     if (null === prop) {
       prop = {};
     }
-    const merged = Object.assign({}, prop);
-    const merged1 = Object.assign({}, closure_2);
-    return noop.createElement(_mod1059.TouchEventBoundary, merged, <ReactNativeProfiler {......merged1}>{noop.createElement(_mod1060.FeedbackWidgetProvider, null, <closure_0 {......Object.assign({}, arg0)} />)}</ReactNativeProfiler>);
+    const createElement2 = obj.createElement;
+    const obj2 = assign({}, prop);
+    const merged = Object.assign({}, closure_2);
+    const createElement3 = obj.createElement;
+    return <TouchEventBoundary {...obj2}>{createElement2(ReactNativeProfiler, merged, createElement3(FeedbackWidgetProvider.FeedbackWidgetProvider, null, <displayName {...Object.assign({}, arg0)} />))}</TouchEventBoundary>;
   };
 };
 export const nativeCrash = function nativeCrash() {
-  const NATIVE = NativeModules.NATIVE;
+  const NATIVE = _mod866.NATIVE;
   NATIVE.nativeCrash();
 };
 export const flush = function flush() {
-  return fn(this, undefined, undefined, function*(arg0, value) {
+  return closure_3(this, undefined, undefined, function*(arg0, value) {
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -297,6 +346,7 @@ export const flush = function flush() {
         return { value: "HermesInternal", done: null };
       }
     } else {
+      let c3;
       try {
         c4 = 2;
         if (0 === c1) {
@@ -308,9 +358,10 @@ export const flush = function flush() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_0 = tmp3;
+            let closure_0 = tmp;
             c3 = 1;
-            const client = require("module_682").getClient();
+            const obj6 = require("module_682");
+            const client = obj6.getClient();
             if (client) {
               c1 = 2;
               c4 = 1;
@@ -319,9 +370,8 @@ export const flush = function flush() {
             } else {
               c3 = 0;
             }
-            const obj6 = require("module_682");
           }
-        } else if (1 === tmp7) {
+        } else if (1 === tmp4) {
           c3 = 0;
         } else if (arg0 === 1) {
           c4 = 3;
@@ -340,24 +390,25 @@ export const flush = function flush() {
         const debug = closure_128_0(closure_128_1[6]).debug;
         debug.error("Failed to flush the event queue.");
         c4 = 3;
-      } catch (tmp13) {
-        closure_2 = tmp13;
-        if (tmp4 === c3) {
-          c4 = tmp2;
-          throw tmp13;
+        return { value: false, done: true };
+      } catch (tmp10) {
+        let closure_2 = tmp10;
+        if (0 === c3) {
+          c4 = 3;
+          throw tmp10;
         } else {
-          c1 = tmp;
+          c1 = 1;
         }
       }
     }
   });
 };
 export const close = function close() {
-  return fn(this, undefined, undefined, function*(arg0, value) {
+  return closure_3(this, undefined, undefined, function*(arg0, value) {
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -367,6 +418,7 @@ export const close = function close() {
         return { value: "HermesInternal", done: null };
       }
     } else {
+      let c3;
       try {
         c4 = 2;
         if (0 === c1) {
@@ -378,9 +430,10 @@ export const close = function close() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            closure_0 = tmp3;
+            let closure_0 = tmp;
             c3 = 1;
-            const client = require("module_682").getClient();
+            const obj2 = require("module_682");
+            const client = obj2.getClient();
             if (client) {
               c1 = 2;
               c4 = 1;
@@ -389,9 +442,8 @@ export const close = function close() {
             } else {
               c3 = 0;
             }
-            const obj2 = require("module_682");
           }
-        } else if (1 === tmp7) {
+        } else if (1 === tmp4) {
           c3 = 0;
           const debug = closure_128_0(closure_128_1[6]).debug;
           debug.error("Failed to close the SDK");
@@ -405,21 +457,24 @@ export const close = function close() {
           return obj;
         }
         c4 = 3;
-      } catch (tmp15) {
-        closure_2 = tmp15;
-        if (tmp4 === c3) {
-          c4 = tmp2;
-          throw tmp15;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp12) {
+        let closure_2 = tmp12;
+        if (0 === c3) {
+          c4 = 3;
+          throw tmp12;
         } else {
-          c1 = tmp;
+          c1 = 1;
         }
       }
     }
   });
 };
 export const withScope = function withScope(arg0) {
+  let closure_0;
   _require = arg0;
-  return require("module_682").withScope((arg0) => {
+  obj = require("module_682");
+  return obj.withScope((arg0) => {
     try {
       return closure_0(arg0);
     } catch (tmp3) {
@@ -429,11 +484,11 @@ export const withScope = function withScope(arg0) {
   });
 };
 export const crashedLastRun = function crashedLastRun() {
-  return fn(this, undefined, undefined, function*(arg0, value) {
+  return closure_3(this, undefined, undefined, function*(arg0, value) {
     if (c0 === 2) {
       c0 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -453,14 +508,14 @@ export const crashedLastRun = function crashedLastRun() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          const NATIVE = require("NativeModules").NATIVE;
+          const NATIVE = require("module_866").NATIVE;
           c0 = 3;
           obj = { value: NATIVE.crashedLastRun(), done: true };
           return obj;
         }
-      } catch (tmp6) {
-        c0 = tmp;
-        throw tmp6;
+      } catch (tmp5) {
+        c0 = 3;
+        throw tmp5;
       }
     }
   });

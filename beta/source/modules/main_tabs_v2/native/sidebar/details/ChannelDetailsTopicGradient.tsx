@@ -7,18 +7,22 @@
 // Module 16560 (ChannelDetailsTopicGradient)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsTopicGradient.tsx");
 
 export const useChannelTopicGradientBackground = function useChannelTopicGradientBackground() {
-  token = token(4531).useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  let token;
+  let obj = token(4531);
+  token = obj.useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
   let items = [token];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    const items = [, ];
     const obj = _modDef672(token);
-    const items = [_modDef672(token).alpha(0).hex(), token];
+    const alphaResult = obj.alpha(0);
+    items[0] = alphaResult.hex();
+    items[1] = token;
     return items;
   }, items);
 };

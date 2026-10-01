@@ -5,67 +5,68 @@
 // Exports: count, distribution, gauge
 
 // Module 818 (count)
-import _INTERNAL_captureSerializedMetric from "_INTERNAL_captureSerializedMetric" /* 750 */;
+import _INTERNAL_captureMetric2 from "_INTERNAL_captureMetric" /* 750 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const count = function count(name, arg1, unit) {
+  let attributes;
   let num = arg1;
   if (arg1 === undefined) {
     num = 1;
   }
-  const obj2 = { type: "counter", name, value: num, unit: null, attributes: null };
+  const obj = { type: "counter", name, value: num, unit, attributes };
   unit = undefined;
+  const _INTERNAL_captureMetric = _INTERNAL_captureMetric2._INTERNAL_captureMetric;
+  _INTERNAL_captureMetric2;
   if (unit != null) {
     unit = unit.unit;
   }
-  obj2.unit = unit;
-  let attributes;
+  attributes = undefined;
   if (unit != null) {
     attributes = unit.attributes;
   }
-  obj2.attributes = attributes;
   let scope;
   if (unit != null) {
     scope = unit.scope;
   }
-  const result = _INTERNAL_captureSerializedMetric._INTERNAL_captureMetric(obj2, { scope });
+  const result = _INTERNAL_captureMetric(obj, { scope });
 };
 export const distribution = function distribution(name, value, unit) {
-  const obj2 = { type: "distribution", name, value, unit: null, attributes: null };
+  let attributes;
+  const obj = { type: "distribution", name, value, unit, attributes };
   unit = undefined;
+  const _INTERNAL_captureMetric = _INTERNAL_captureMetric2._INTERNAL_captureMetric;
+  _INTERNAL_captureMetric2;
   if (unit != null) {
     unit = unit.unit;
   }
-  obj2.unit = unit;
-  let attributes;
+  attributes = undefined;
   if (unit != null) {
     attributes = unit.attributes;
   }
-  obj2.attributes = attributes;
   let scope;
   if (unit != null) {
     scope = unit.scope;
   }
-  const result = _INTERNAL_captureSerializedMetric._INTERNAL_captureMetric(obj2, { scope });
+  const result = _INTERNAL_captureMetric(obj, { scope });
 };
 export const gauge = function gauge(name, value, unit) {
-  const obj2 = { type: "gauge", name, value, unit: null, attributes: null };
+  let attributes;
+  const obj = { type: "gauge", name, value, unit, attributes };
   unit = undefined;
+  const _INTERNAL_captureMetric = _INTERNAL_captureMetric2._INTERNAL_captureMetric;
+  _INTERNAL_captureMetric2;
   if (unit != null) {
     unit = unit.unit;
   }
-  obj2.unit = unit;
-  let attributes;
+  attributes = undefined;
   if (unit != null) {
     attributes = unit.attributes;
   }
-  obj2.attributes = attributes;
   let scope;
   if (unit != null) {
     scope = unit.scope;
   }
-  const result = _INTERNAL_captureSerializedMetric._INTERNAL_captureMetric(obj2, { scope });
+  const result = _INTERNAL_captureMetric(obj, { scope });
 };

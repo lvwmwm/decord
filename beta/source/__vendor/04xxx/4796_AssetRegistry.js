@@ -1,0 +1,10 @@
+// Module ID: 4796
+// Function ID: 4797
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 4796 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d43523873b246ea97ff723dd8970498f", name: "ClockIcon", type: "png" });

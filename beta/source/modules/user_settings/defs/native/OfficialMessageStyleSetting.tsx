@@ -5,53 +5,58 @@
 // Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
 // Module 14879 (OfficialMessageStyleSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl5 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
 import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function useOfficialMessageStyleSettingValue() {
+  let officialMessageStyle;
   const items = [AccessibilityStore];
-  return initialize.useStateFromStores(items, () => officialMessageStyle.officialMessageStyle);
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => officialMessageStyle.officialMessageStyle);
 }
 function onOfficialMessageStyleSettingValueChange(officialMessageStyle) {
-  const result = AccessibilityActionCreators.setOfficialMessageStyle(officialMessageStyle);
+  const obj = AccessibilityActionCreators;
+  const result = obj.setOfficialMessageStyle(officialMessageStyle);
 }
 function useOfficialMessageStyleSettingOptions() {
-  return noop.useMemo(() => {
-    const obj = { label: null, value: "default" };
-    const intl = util.intl;
-    obj.label = intl.string(util.t.ERaS6f);
+  return react.useMemo(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    const obj = { label: intl.string(intl5.t.ERaS6f), value: "default" };
+    intl = intl5.intl;
     const items = [obj, , , ];
-    const obj2 = { label: null, value: "no_text_color" };
-    const intl2 = util.intl;
-    obj2.label = intl2.string(util.t.JKfipk);
+    const obj2 = { label: intl2.string(intl5.t.JKfipk), value: "no_text_color" };
+    intl2 = intl5.intl;
     items[1] = obj2;
-    const obj3 = { label: null, value: "no_gradient" };
-    const intl3 = util.intl;
-    obj3.label = intl3.string(util.t.O2vBoY);
+    const obj3 = { label: intl3.string(intl5.t.O2vBoY), value: "no_gradient" };
+    intl3 = intl5.intl;
     items[2] = obj3;
-    const obj4 = { label: null, value: "hidden" };
-    const intl4 = util.intl;
-    obj4.label = intl4.string(util.t["+loyQl"]);
+    const obj4 = { label: intl4.string(intl5.t["+loyQl"]), value: "hidden" };
+    intl4 = intl5.intl;
     items[3] = obj4;
     return items;
   }, []);
 }
-const SettingBuilders = fn(11006);
-const radio = SettingBuilders.createRadio({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.nC2XBl);
+    const intl = intl5.intl;
+    return intl.string(intl5.t.nC2XBl);
   },
-  parent: fn(7417).MobileUserSettings.ACCESSIBILITY,
+  parent: MobileUserSettings.ACCESSIBILITY,
   useValue: useOfficialMessageStyleSettingValue,
   onValueChange: onOfficialMessageStyleSettingValueChange,
   useOptions: useOfficialMessageStyleSettingOptions
-});
-const size = fn(2);
+};
+const radio = SettingBuilders.createRadio(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/OfficialMessageStyleSetting.tsx");
 
 export default radio;

@@ -5,22 +5,22 @@
 // Exports: ApplyUnsignedRoundingMode
 
 // Module 13709 (ApplyUnsignedRoundingMode)
-import _mod13697 from "module_13697" /* 13697 */;
+import UNICODE_EXTENSION_SEQUENCE_REGEX from "UNICODE_EXTENSION_SEQUENCE_REGEX" /* 13697 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const ApplyUnsignedRoundingMode = function ApplyUnsignedRoundingMode(eq, timesResult, roundedNumber, formattedString) {
+export const ApplyUnsignedRoundingMode = function ApplyUnsignedRoundingMode(eq, timesResult, roundedNumber, result) {
   if (eq.eq(timesResult)) {
     return timesResult;
   } else {
+    const invariant = UNICODE_EXTENSION_SEQUENCE_REGEX.invariant;
     const concat = "x should be between r1 and r2 but x=".concat;
+    const tmp4 = timesResult.lessThan(eq) && eq.lessThan(roundedNumber);
     const combined = "x should be between r1 and r2 but x=".concat(eq, ", r1=");
     const combined1 = combined.concat(timesResult, ", r2=");
-    _mod13697.invariant(timesResult.lessThan(eq) && eq.lessThan(roundedNumber), combined1.concat(roundedNumber));
-    if ("zero" === formattedString) {
+    invariant(tmp4, combined1.concat(roundedNumber));
+    if ("zero" === result) {
       return timesResult;
-    } else if ("infinity" === formattedString) {
+    } else if ("infinity" === result) {
       return roundedNumber;
     } else {
       const minusResult = eq.minus(timesResult);
@@ -30,18 +30,18 @@ export const ApplyUnsignedRoundingMode = function ApplyUnsignedRoundingMode(eq, 
       } else if (minusResult1.lessThan(minusResult)) {
         return roundedNumber;
       } else {
-        tmp2(13697).invariant(minusResult.eq(minusResult1), "d1 should be equal to d2");
-        if ("half-zero" === formattedString) {
+        UNICODE_EXTENSION_SEQUENCE_REGEX.invariant(minusResult.eq(minusResult1), "d1 should be equal to d2");
+        if ("half-zero" === result) {
           return timesResult;
-        } else if ("half-infinity" === formattedString) {
+        } else if ("half-infinity" === result) {
           return roundedNumber;
         } else {
-          tmp2(13697).invariant("half-even" === formattedString, "unsignedRoundingMode should be half-even");
+          UNICODE_EXTENSION_SEQUENCE_REGEX.invariant("half-even" === result, "unsignedRoundingMode should be half-even");
           const divResult = timesResult.div(roundedNumber.minus(timesResult));
-          return timesResult.div(roundedNumber.minus(timesResult)).mod(2).isZero() ? timesResult : roundedNumber;
+          const modResult = divResult.mod(2);
+          return modResult.isZero() ? timesResult : roundedNumber;
         }
       }
     }
-    const tmp4 = timesResult.lessThan(eq) && eq.lessThan(roundedNumber);
   }
 };

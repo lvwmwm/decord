@@ -7,16 +7,20 @@ import _mod5142 from "module_5142" /* 5142 */;
 import _mod5143 from "module_5143" /* 5143 */;
 import _mod5144 from "module_5144" /* 5144 */;
 
+let setProto;
+let tmp;
 const _mod1282 = tmp(1282);
 if (_mod5142) {
-  function setProto(arg0, arg1) {
+  setProto = function setProto(arg0, arg1) {
     if (_mod5142(arg0, arg1)) {
       return arg0;
     } else {
-      const tmp5 = new _mod1282("Reflect.setPrototypeOf: failed to set [[Prototype]]");
-      throw tmp5;
+      const self = this;
+      const self2 = this;
+      const tmp3 = new _mod1282("Reflect.setPrototypeOf: failed to set [[Prototype]]");
+      throw tmp3;
     }
-  }
+  };
 } else {
   setProto = _mod5143;
   if (!setProto) {

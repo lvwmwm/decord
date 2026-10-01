@@ -7,24 +7,26 @@
 // Module 16491 (useSearchMessageTimestamp)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import NotificationCenterUtils from "NotificationCenterUtils" /* 7055 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/hooks/useSearchMessageTimestamp.tsx");
 
 export const useSearchMessageTimestamp = function useSearchMessageTimestamp(message, channel) {
-  let id = channel;
   const items = [message, channel];
-  return noop.useMemo(() => {
-    id = message.id;
+  return react.useMemo(() => {
+    let obj2;
+    let obj3;
+    let id = message.id;
+    const extractTimestamp = SnowflakeUtilsDefault.extractTimestamp;
+    SnowflakeUtilsDefault;
     if (id == null) {
-      id = id.id;
+      id = channel.id;
     }
-    const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(id);
-    const obj2 = { timestamp: null, timestampAccessibilityLabel: null };
-    obj2.timestamp = NotificationCenterUtils.getRelativeTimestamp(extractTimestampResult, true);
-    obj2.timestampAccessibilityLabel = NotificationCenterUtils.getRelativeTimestamp(extractTimestampResult, false);
-    return obj2;
+    const extractTimestampResult = extractTimestamp(id);
+    const obj = { timestamp: obj2.getRelativeTimestamp(extractTimestampResult, true), timestampAccessibilityLabel: obj3.getRelativeTimestamp(extractTimestampResult, false) };
+    obj2 = NotificationCenterUtils;
+    obj3 = NotificationCenterUtils;
+    return obj;
   }, items);
 };

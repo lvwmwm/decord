@@ -6,46 +6,77 @@
 
 // Module 16794 (LaunchPadWrapper)
 import nativeDefault from "native" /* 576 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import HapticUtils from "HapticUtils" /* 4801 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11002 */;
 import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 16792 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, Pressable: metroRequire, TouchableOpacity: closure_7, StyleSheet: closure_8 } = get_ActivityIndicator);
-const LaunchPadTypes = fn(11002).LaunchPadTypes;
-const Constants = fn(1074);
-({ AnalyticEvents: c10, ComponentActions: closure_11 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { modalWrapper: null, a11yDismiss: null };
-let size = { height: "100%", width: "100%", paddingTop: nativeDefault.space.PX_8 };
-obj2.modalWrapper = size;
-const size1 = { position: "absolute", top: 0, width: "100%", height: nativeDefault.space.PX_8 };
-obj2.a11yDismiss = size1;
-let closure_14 = createStyles.createStyles(obj2);
-size = fn(2);
+let c10;
+let closure_12;
+let hasOwnProperty;
+let map1;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let size;
+let size1;
+let unpackModuleId;
+let _slicedToArray = _slicedToArray_mod;
+({ View: hasOwnProperty, Pressable: metroRequire, TouchableOpacity: metroImportDefault, StyleSheet: metroImportAll } = react_native);
+const LaunchPadTypes = LaunchPadConstants.LaunchPadTypes;
+({ AnalyticEvents: c10, ComponentActions: unpackModuleId } = Constants);
+({ jsx: closure_12, jsxs: map1 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { modalWrapper: size, a11yDismiss: size1 };
+size = { height: "100%", width: "100%", paddingTop: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+size1 = { position: "absolute", top: 0, width: "100%", height: nativeDefault.space.PX_8 };
+let closure_14 = createStyles(obj);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/launchpad/native/LaunchPadWrapper.tsx");
 
 export default function LaunchPadWrapper(launchPadType) {
+  let AccessibilityView;
+  let callback;
+  let closure_3;
+  let gestureState;
+  let intl;
+  let items6;
+  let items7;
+  let launchPadCoverStyles;
+  let launchPadSharedState;
+  let launchPadShown;
+  let launchPadStyles;
+  let obj5;
+  let updaters;
   launchPadType = launchPadType.launchPadType;
   ({ gestureState, launchPadShown, launchPadSharedState, updaters } = launchPadType);
   let isModalOpen;
   let ref;
-  const tmp = closure_14();
-  isModalOpen = launchPadType(isModalOpen[10]).useIsModalOpen();
+  const launchPadPullTabState = launchPadType.launchPadPullTabState;
+  let tmp = closure_14();
+  const tmp2 = launchPadType;
   let obj = launchPadType(isModalOpen[10]);
+  isModalOpen = obj.useIsModalOpen();
+  let tmp5 = updaters;
   ({ launchPadCoverStyles, launchPadStyles } = updaters(isModalOpen[11])({ launchPadSharedState, launchPadShown, gestureState }));
+  updaters(isModalOpen[11])({ launchPadSharedState, launchPadShown, gestureState });
   const tmp7 = updaters(isModalOpen[12])(launchPadShown);
   _slicedToArray = tmp7;
   ref = ref.useRef(!tmp7);
-  closure_5 = _slicedToArray(ref.useState({}), 2)[1];
+  let closure_5 = _slicedToArray(ref.useState({}), 2)[1];
   const items = [tmp7];
   const effect = ref.useEffect(() => {
-    if (closure_3) {
+    let closure_0;
+    const tmp = closure_3;
+    if (tmp) {
       ref.current = false;
     } else {
       const _setTimeout = setTimeout;
@@ -60,32 +91,40 @@ export default function LaunchPadWrapper(launchPadType) {
   const onPress = ref.useCallback(() => updaters.setLaunchPadPosition(0), items1);
   const items2 = [tmp7];
   const effect1 = ref.useEffect(() => {
-    if (closure_3) {
-      AnalyticsUtilsDefault.track(constants.LAUNCHPAD_OPENED);
+    const tmp = closure_3;
+    if (tmp) {
+      const obj = AnalyticsUtilsDefault;
+      obj.track(constants.LAUNCHPAD_OPENED);
     }
   }, items2);
   const items3 = [launchPadType, tmp7, isModalOpen];
   const effect2 = ref.useEffect(() => {
     if (launchPadType === LaunchPadTypes.PULL_TAB) {
-      if (!isModalOpen) {
-        const result = LaunchPadPullTabCache.setLaunchPadPullTabExclusionRect();
-        if (closure_3) {
-          const result1 = tmp2(4801).triggerHapticFeedback(tmp2(4801).HapticFeedbackTypes.IMPACT_LIGHT);
-          const tmp2Result = tmp2(4801);
+      const tmp = isModalOpen;
+      if (!tmp) {
+        const obj = LaunchPadPullTabCache;
+        const result = obj.setLaunchPadPullTabExclusionRect();
+        const tmp5 = closure_3;
+        if (tmp5) {
+          const tmp2Result = HapticUtils;
+          const result1 = tmp2Result.triggerHapticFeedback(tmp2(4801).HapticFeedbackTypes.IMPACT_LIGHT);
         }
       }
     }
-    const result2 = LaunchPadPullTabCache.clearLaunchPadPullTabExclusionRect();
+    const obj3 = LaunchPadPullTabCache;
+    const result2 = obj3.clearLaunchPadPullTabExclusionRect();
   }, items3);
   const items4 = [launchPadShown];
-  const effect3 = ref.useEffect(() => () => launchPadType(isModalOpen[14]).clearLaunchPadPullTabExclusionRect(), items4);
+  const effect3 = ref.useEffect(() => () => {
+    const obj = launchPadType(isModalOpen[14]);
+    return obj.clearLaunchPadPullTabExclusionRect();
+  }, items4);
   updaters(isModalOpen[16])(() => {
     if (closure_3) {
       callback();
     }
     return closure_3;
   });
-  closure_129_0 = updaters;
   const items5 = [updaters];
   const effect4 = ref.useEffect(() => {
     function showLaunchPad() {
@@ -96,54 +135,56 @@ export default function LaunchPadWrapper(launchPadType) {
       showLaunchPad.setLaunchPadShown(false);
       showLaunchPad.setLaunchPadPosition(0);
     }
-    closure_2 = updaters(isModalOpen[8]).addRouteChangeListener(hideLaunchPad);
-    let ComponentDispatch = launchPadType(isModalOpen[9]).ComponentDispatch;
+    const obj = closure_1_1(isModalOpen[8]);
+    let closure_2 = obj.addRouteChangeListener(hideLaunchPad);
+    let ComponentDispatch = updaters(isModalOpen[9]).ComponentDispatch;
     const subscription = ComponentDispatch.subscribe(constants.LAUNCH_PAD_SHOW, showLaunchPad);
-    let ComponentDispatch2 = launchPadType(isModalOpen[9]).ComponentDispatch;
+    let ComponentDispatch2 = updaters(isModalOpen[9]).ComponentDispatch;
     const subscription1 = ComponentDispatch2.subscribe(constants.LAUNCH_PAD_HIDE, hideLaunchPad);
     return () => {
       closure_2();
-      const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-      ComponentDispatch.unsubscribe(constants2.LAUNCH_PAD_SHOW, showLaunchPad);
-      const ComponentDispatch2 = ComponentDispatchUtils.ComponentDispatch;
-      ComponentDispatch2.unsubscribe(constants2.LAUNCH_PAD_HIDE, hideLaunchPad);
+      const ComponentDispatch = launchPadType(isModalOpen[9]).ComponentDispatch;
+      ComponentDispatch.unsubscribe(constants.LAUNCH_PAD_SHOW, showLaunchPad);
+      const ComponentDispatch2 = launchPadType(isModalOpen[9]).ComponentDispatch;
+      ComponentDispatch2.unsubscribe(constants.LAUNCH_PAD_HIDE, hideLaunchPad);
     };
   }, items5);
-  const obj2 = { style: absoluteFill.absoluteFill, pointerEvents: "box-none", children: null };
-  const tmp6 = updaters(isModalOpen[11])({ launchPadSharedState, launchPadShown, gestureState });
-  const items6 = [closure_12(updaters(isModalOpen[18]).View, { style: launchPadCoverStyles, pointerEvents: "none" }), , ];
+  const obj2 = { style: absoluteFill.absoluteFill, pointerEvents: "box-none", children: items6 };
+  items6 = [, , ];
+  const tmp16 = updaters(isModalOpen[17])(ref);
+  items6[0] = closure_12(updaters(isModalOpen[18]).View, { style: launchPadCoverStyles, pointerEvents: "none" });
   let tmp20Result = null;
+  const tmp18 = closure_5;
+  const tmp19 = absoluteFill;
   if (launchPadType === LaunchPadTypes.PULL_TAB) {
     tmp20Result = null;
     if (!isModalOpen) {
-      const obj3 = { gestureState, launchPadSharedState, launchPadPullTabState: launchPadType.launchPadPullTabState, updaters };
+      let obj3 = { gestureState, launchPadSharedState, launchPadPullTabState, updaters };
       tmp20Result = tmp20(tmp5(tmp3[19]), obj3);
     }
   }
   items6[1] = tmp20Result;
-  const obj4 = { style: launchPadStyles, pointerEvents: "none", children: null };
-  const obj5 = { nativeID: "launch-pad", style: tmp.modalWrapper, onAccessibilityEscape: onPress, accessibilityViewIsModal: tmp7, children: null };
+  const obj4 = { style: launchPadStyles, pointerEvents: "none", children: closure_13(AccessibilityView, obj5) };
+  const View = tmp5(tmp3[18]).View;
   let str2 = "no";
+  obj5 = { nativeID: "launch-pad", style: tmp.modalWrapper, onAccessibilityEscape: onPress, accessibilityViewIsModal: tmp7, children: items7 };
+  AccessibilityView = tmp2(tmp3[20]).AccessibilityView;
+  const tmp22 = onPress;
   if (tmp7) {
     str2 = "yes";
   }
-  const obj6 = { importantForAccessibility: str2, accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null };
-  const intl = tmp2(tmp3[21]).intl;
-  obj6.accessibilityLabel = intl.string(launchPadType(isModalOpen[21]).t.WAI6xu);
-  obj6.onPress = onPress;
-  obj6.style = tmp.a11yDismiss;
-  const items7 = [closure_12(onPress, obj6), closure_12(closure_7, { accessible: false, "aria-hidden": true, onPress, style: absoluteFill.absoluteFillObject }), ];
+  const obj6 = { importantForAccessibility: str2, accessibilityRole: "button", accessibilityLabel: intl.string(tmp2(isModalOpen[21]).t.WAI6xu), onPress, style: tmp.a11yDismiss };
+  intl = tmp2(tmp3[21]).intl;
+  items7 = [closure_12(tmp22, obj6), , ];
+  const obj7 = { accessible: false, "aria-hidden": true, onPress, style: tmp19.absoluteFillObject };
+  items7[1] = closure_12(closure_7, obj7);
   let tmp23 = !tmp7;
+  const Freeze = tmp2(tmp3[22]).Freeze;
   if (!tmp7) {
     tmp23 = tmp16;
   }
-  const obj7 = { accessible: false, "aria-hidden": true, onPress, style: absoluteFill.absoluteFillObject };
-  tmp16 = updaters(isModalOpen[17])(ref);
-  const tmp18 = closure_5;
-  items7[2] = closure_12(launchPadType(isModalOpen[22]).Freeze, { freeze: tmp23, children: closure_12(updaters(isModalOpen[23]), { visible: tmp7, sharedState: launchPadSharedState }) });
-  obj5.children = items7;
-  obj4.children = closure_13(launchPadType(isModalOpen[20]).AccessibilityView, obj5);
-  items6[2] = closure_12(updaters(isModalOpen[18]).View, obj4);
-  obj2.children = items6;
+  const obj8 = { freeze: tmp23, children: closure_12(tmp5(isModalOpen[23]), { visible: tmp7, sharedState: launchPadSharedState }) };
+  items7[2] = closure_12(Freeze, obj8);
+  items6[2] = closure_12(View, obj4);
   return closure_13(tmp18, obj2);
 };

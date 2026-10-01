@@ -4,20 +4,16 @@
 // Dependencies: [4221]
 
 // Module 4224 (Parser)
-const Parser = arg1;
-const dependencyMap = arg6;
+import DateToSystemTimezoneSetter from "DateToSystemTimezoneSetter" /* 4221 */;
+
+let num;
 class Parser {
   constructor() {
-    if (this instanceof Parser) {
-      return;
-    } else {
-      tmp = globalThis;
-      _TypeError = TypeError;
-      tmp2 = new.target;
-      str = "Cannot call a class as a function";
-      tmp3 = new.target;
-      typeError = new TypeError("Cannot call a class as a function");
-      tmp5 = typeError;
+    if (!(this instanceof Parser)) {
+      const _TypeError = TypeError;
+      const self = this;
+      const self2 = this;
+      const typeError = new TypeError("Cannot call a class as a function");
       throw typeError;
     }
   }
@@ -25,14 +21,15 @@ class Parser {
 const entry = {
   key: "run",
   value: function run(arg0, arg1, arg2, arg3) {
+    let valueSetter;
     const self = this;
     const iter = this.parse(arg0, arg1, arg2, arg3);
     let tmp = null;
     if (iter) {
-      const obj = { setter: null, rest: null };
-      const valueSetter = new Parser(4221).ValueSetter(iter.value, self.validate, self.set, self.priority, self.subPriority);
-      obj.setter = valueSetter;
-      obj.rest = iter.rest;
+      const self2 = this;
+      const self3 = this;
+      const obj = { setter: valueSetter, rest: iter.rest };
+      valueSetter = new DateToSystemTimezoneSetter.ValueSetter(iter.value, self.validate, self.set, self.priority, self.subPriority);
       tmp = obj;
     }
     return tmp;

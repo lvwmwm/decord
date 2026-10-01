@@ -5,25 +5,41 @@
 // Exports: ItemRenderer
 
 // Module 10247 (ItemRenderer)
-import cancelAnimation from "cancelAnimation" /* 1638 */;
+import _mod1638 from "module_1638" /* 1638 */;
+import convertToSharedIndex from "convertToSharedIndex" /* 10225 */;
 import _mod10248 from "module_10248" /* 10248 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: closure_4, Fragment: hasOwnProperty } = jsxProd);
+let dependencyMap;
+
+let closure_4;
+let hasOwnProperty;
+({ jsx: closure_4, Fragment: hasOwnProperty } = Fragment);
 const __initData = { code: "function pnpm_ItemRendererTsx1(){const{visibleRanges}=this.__closure;return visibleRanges.value;}" };
 let closure_7 = { code: "function pnpm_ItemRendererTsx2(ranges){const{runOnJS,setDisplayedItems}=this.__closure;return runOnJS(setDisplayedItems)(ranges);}" };
 
 export const ItemRenderer = (arg0) => {
+  let autoFillData;
+  let closure_4;
+  let closure_5;
+  let closure_6;
+  let data;
+  let dataLength;
+  let handlerOffset;
+  let loop;
+  let windowSize;
   ({ data, offsetX: require, rawDataLength: dependencyMap, loop } = arg0);
-  ({ autoFillData: noop, layoutConfig: closure_4, renderItem: closure_5, customAnimation: closure_6 } = arg0);
+  ({ autoFillData: react, layoutConfig: closure_4, renderItem: closure_5, customAnimation: closure_6 } = arg0);
   ({ size, windowSize, handlerOffset, dataLength } = arg0);
-  const visibleRanges = _mod10248.useVisibleRanges({ total: dataLength, viewSize: size, translation: handlerOffset, windowSize, loop });
-  const tmp2 = loop(noop.useState(null), 2);
+  let obj = _mod10248;
+  const visibleRanges = obj.useVisibleRanges({ total: dataLength, viewSize: size, translation: handlerOffset, windowSize, loop });
+  let tmp2 = loop(react.useState(null), 2);
   const first = tmp2[0];
-  closure_9 = tmp4;
+  let tmp4 = tmp2[1];
+  let closure_9 = tmp4;
+  let obj2 = _mod1638;
   const fn = function p() {
     return visibleRanges.value;
   };
@@ -31,10 +47,11 @@ export const ItemRenderer = (arg0) => {
   fn.__workletHash = 13618421293040;
   fn.__initData = __initData;
   const fn2 = function c(arg0) {
-    return cancelAnimation.runOnJS(closure_9)(arg0);
+    const obj = _mod1638;
+    return obj.runOnJS(closure_9)(arg0);
   };
-  const obj2 = cancelAnimation;
-  fn2.__closure = { runOnJS: cancelAnimation.runOnJS, setDisplayedItems: tmp2[1] };
+  let obj3 = { runOnJS: _mod1638.runOnJS, setDisplayedItems: tmp4 };
+  fn2.__closure = obj3;
   fn2.__workletHash = 13763650073050;
   fn2.__initData = visibleRanges;
   const items = [visibleRanges];
@@ -43,9 +60,16 @@ export const ItemRenderer = (arg0) => {
   if (first) {
     const obj4 = {
       children: data.map((item, index) => {
-          handlerOffset = item;
-          dataLength = handlerOffset(dataLength[5]).computedRealIndexWithAutoFillData({ index, dataLength, loop, autoFillData });
+          let negativeRange;
+          let positiveRange;
+          let tmp5;
+          require = item;
+          let obj = convertToSharedIndex;
+          const obj2 = { index, dataLength: dependencyMap, loop, autoFillData };
+          const tmp2 = dependencyMap;
+          dependencyMap = obj.computedRealIndexWithAutoFillData(obj2);
           ({ negativeRange, positiveRange } = first);
+          const tmp = require;
           if (index < negativeRange[0]) {
             let tmp4Result = null;
             if (index >= positiveRange[0]) {
@@ -53,16 +77,23 @@ export const ItemRenderer = (arg0) => {
             }
             return tmp4Result;
           }
-          const obj3 = { index, handlerOffset, visibleRanges, animationStyle: null, children: null };
-          let tmp5 = closure_6;
+          const obj3 = {
+            index,
+            handlerOffset: require,
+            visibleRanges,
+            animationStyle: tmp5,
+            children(animationValue) {
+              const obj = { item, index, animationValue: animationValue.animationValue };
+              return closure_5(obj);
+            }
+          };
+          tmp5 = closure_6;
+          const ItemLayout = tmp(tmp2[6]).ItemLayout;
+          const tmp4 = closure_4;
           if (!closure_6) {
             tmp5 = closure_4;
           }
-          obj3.animationStyle = tmp5;
-          obj3.children = function children(animationValue) {
-            return closure_2_5({ item, index, animationValue: animationValue.animationValue });
-          };
-          tmp4Result = closure_1_4(handlerOffset(dataLength[6]).ItemLayout, obj3, index);
+          tmp4Result = tmp4(ItemLayout, obj3, index);
         })
     };
     tmp6 = closure_4(closure_5, obj4);

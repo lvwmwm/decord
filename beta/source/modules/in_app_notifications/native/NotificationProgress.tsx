@@ -5,48 +5,53 @@
 // Exports: default
 
 // Module 9633 (NotificationProgress)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const ReanimatedRexportDefault = ReanimatedRexport;
-
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { progress: { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, height: 4 }, progressContainerBottom: { width: "100%", position: "absolute", bottom: -1 } };
-let closure_7 = createStyles.createStyles(obj2);
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let obj = { progress: obj2, progressContainerBottom: { width: "100%", position: "absolute", bottom: -1 } };
+obj2 = { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, height: 4 };
+let closure_7 = createStyles.createStyles(obj);
 const __initData = { code: "function NotificationProgressTsx1(){const{percent,width}=this.__closure;const percentRemaining=(typeof percent==='number'?percent:percent.get())/100;return{transform:[{translateX:-width+width*percentRemaining}]};}" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/NotificationProgress.tsx");
 
 export default function NotificationProgress(percent) {
+  let closure_2;
+  let first;
+  let items;
   percent = percent.percent;
   const tmp = closure_7();
-  width = undefined;
+  first = undefined;
   closure_2 = undefined;
-  [width, closure_2] = noop.useState(0);
-  const callback = noop.useCallback((nativeEvent) => closure_2(nativeEvent.nativeEvent.layout.width), []);
+  [first, closure_2] = react.useState(0);
+  const callback = react.useCallback((nativeEvent) => closure_2(nativeEvent.nativeEvent.layout.width), []);
+  let obj = ReanimatedRexport;
   const fn = function s() {
-    value = percent;
+    let items;
+    let value = percent;
+    const obj = percent;
     if (typeof percent !== "number") {
-      value = percent.get();
+      value = obj.get();
     }
-    const obj2 = { transform: null };
-    const items = [{ translateX: first * (value / 100) - first }];
-    obj2.transform = items;
+    const obj2 = { transform: items };
+    items = [];
+    const obj3 = { translateX: first * (value / 100) - first };
+    items[0] = obj3;
     return obj2;
   };
-  fn.__closure = { percent, width };
+  fn.__closure = { percent, width: first };
   fn.__workletHash = 14879761869068;
   fn.__initData = __initData;
-  let obj2 = { onLayout: callback, style: tmp.progressContainerBottom, children: null };
-  const animatedStyle = ReanimatedRexport.useAnimatedStyle(fn);
-  const obj3 = { style: null };
-  let items = [tmp.progress, animatedStyle];
-  obj3.style = items;
-  obj2.children = jsx(ReanimatedRexportDefault.View, { style: null });
+  const animatedStyle = obj.useAnimatedStyle(fn);
+  let obj3 = { style: items };
+  items = [tmp.progress, animatedStyle];
   return <View onLayout={callback} style={tmp.progressContainerBottom}>{null}</View>;
 };

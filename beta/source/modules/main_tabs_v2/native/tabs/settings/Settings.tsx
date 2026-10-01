@@ -5,66 +5,58 @@
 // Exports: default
 
 // Module 16725 (Settings)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 6364 */;
 import profileModalTransition from "profileModalTransition" /* 16603 */;
-import SettingsNavigatorDefault from "SettingsNavigator" /* 16726 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
+let obj2;
+let obj3;
+let tmp;
+let tmp4;
+const ReanimatedRexportDefault = tmp4(4566);
 const DeviceUtils = tmp(4812);
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { containerOuter: { flex: 1, overflow: "hidden" }, containerOuterTablet: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, flex: 1 }, container: { flex: 1 }, containerTablet: null };
-const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, flex: 1 };
-obj2.containerTablet = { borderRadius: nativeDefault.radii.md, overflow: "hidden", flex: 1 };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let View = react_native.View;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { containerOuter: { flex: 1, overflow: "hidden" }, containerOuterTablet: obj2, container: { flex: 1 }, containerTablet: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", flex: 1 };
+let closure_6 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/settings/Settings.tsx");
 
 export default function Settings() {
-  const reportProfileModalTransition = profileModalTransition.useReportProfileModalTransition();
+  let obj = profileModalTransition;
+  const reportProfileModalTransition = obj.useReportProfileModalTransition();
   const rect = useSafeAreaInsetsDefault();
   const top = rect.top;
   const left = rect.left;
   const right = rect.right;
   let tmp5 = useIsWindowLargeDefault();
   if (tmp5) {
-    tmp5 = !DeviceUtils.isIpadOS();
     const tmpResult = DeviceUtils;
+    tmp5 = !tmpResult.isIpadOS();
   }
-  closure_3 = tmp5;
+  let closure_3 = tmp5;
   const tmp6 = closure_6();
-  closure_4 = tmp6;
+  let closure_4 = tmp6;
   let items = [tmp6, tmp5, top, left, right];
-  let obj2 = {
-    style: noop.useMemo(() => {
-      if (closure_3) {
-        const items = [tmp.containerOuterTablet, ];
-        const obj2 = { paddingTop: top, paddingLeft: left, paddingRight: right };
-        items[1] = obj2;
-        let items1 = items;
-      } else {
-        items1 = [tmp.containerOuter, ];
-        const obj = { paddingLeft: left, paddingRight: right };
-        items1[1] = obj;
-      }
-      return items1;
-    }, items),
-    children: null
-  };
-  obj2.children = jsx(ReanimatedRexportDefault.View, { style: tmp5 ? tmp6.containerTablet : tmp6.container, children: jsx(SettingsNavigatorDefault, {}) });
-  return <tmp8 style={noop.useMemo(() => {
+  View = ReanimatedRexportDefault.View;
+  return <tmp8 style={react.useMemo(() => {
+    let items1;
     if (closure_3) {
-      const items = [tmp.containerOuterTablet, ];
+      const items = [closure_4.containerOuterTablet, ];
       const obj2 = { paddingTop: top, paddingLeft: left, paddingRight: right };
       items[1] = obj2;
-      let items1 = items;
+      items1 = items;
     } else {
-      items1 = [tmp.containerOuter, ];
+      items1 = [closure_4.containerOuter, ];
       const obj = { paddingLeft: left, paddingRight: right };
       items1[1] = obj;
     }

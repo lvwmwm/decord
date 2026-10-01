@@ -5,20 +5,27 @@
 // Exports: default
 
 // Module 9690 (useTrackFavoritesGuildUpsellModalOpened)
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+let importDefault;
+
+const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/favorites/analytics/useTrackFavoritesGuildUpsellModalOpened.tsx");
 
 export default function useTrackFavoritesGuildUpsellModalOpened(source) {
   importDefault = source;
   const items = [source];
-  const effect = noop.useEffect(() => {
-    AnalyticsUtilsDefault.track(AnalyticEvents.FAVORITES_GUILD_UPSELL_MODAL_OPENED, { source });
+  const tmp = useAnalyticsLocationsDefault;
+  const analyticsLocations = tmp(AnalyticsLocationDefault.FAVORITES_GUILD_UPSELL_MODAL).analyticsLocations;
+  const effect = react.useEffect(() => {
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { source };
+    obj.track(AnalyticEvents.FAVORITES_GUILD_UPSELL_MODAL_OPENED, obj2);
   }, items);
-  return { analyticsLocations: useAnalyticsLocationsDefault(AnalyticsLocationDefault.FAVORITES_GUILD_UPSELL_MODAL).analyticsLocations };
+  return { analyticsLocations };
 };

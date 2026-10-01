@@ -4,156 +4,152 @@
 // Dependencies: [32, 19, 17, 10969, 21, 4836, 576, 8327, 15137, 6402, 504, 11267, 5279, 5999, 5917, 4779, 6610, 4527, 14506, 4790, 5997, 6000, 6024, 5281, 1370, 2]
 
 // Module 15136 (DevToolsBuildOverrideScreen)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
+import TagIcon from "TagIcon" /* 8327 */;
 import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11267 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import HashmarkIcon from "HashmarkIcon" /* 15137 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import BuildOverrideStore from "BuildOverrideStore" /* 10969 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ScrollView = fn(17).ScrollView;
-const jsxProd = fn(21);
-const jsx = jsxProd.jsx;
-const jsxs = jsxProd.jsxs;
-const createStyles = fn(4836);
-let obj = { content: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, contentContainer: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj.contentContainer = { padding: nativeDefault.space.PX_16 };
-let closure_9 = createStyles.createStyles(obj);
-let obj4 = { padding: nativeDefault.space.PX_16 };
-let items = [{ label: "Branch Name", value: "branch", icon: jsx(fn(8327).TagIcon, {}) }, ];
-let obj5 = { label: "Branch Name", value: "branch", icon: jsx(fn(8327).TagIcon, {}) };
-items[1] = { label: "Commit SHA", value: "id", icon: jsx(fn(15137).HashmarkIcon, {}) };
-let obj6 = { label: "Commit SHA", value: "id", icon: jsx(fn(15137).HashmarkIcon, {}) };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsBuildOverrideScreen.tsx");
-
-export default noop.memo(() => {
+let obj2;
+let obj3;
+const ScrollView = react_native.ScrollView;
+const jsx = Fragment.jsx;
+const jsxs = Fragment.jsxs;
+let createStyles = createStyles_mod;
+let obj = { content: obj2, contentContainer: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16 };
+let closure_9 = createStyles(obj);
+let items = [{ label: "Branch Name", value: "branch", icon: jsx(TagIcon.TagIcon, {}) }, ];
+const obj4 = { label: "Branch Name", value: "branch", icon: jsx(TagIcon.TagIcon, {}) };
+let obj5 = { label: "Commit SHA", value: "id", icon: jsx(HashmarkIcon.HashmarkIcon, {}) };
+items[1] = obj5;
+const memoResult = react.memo(() => {
+  let closure_2;
+  let currentBuildOverride;
+  let first;
+  let items1;
+  let stateFromStores;
+  const f118785 = (value) => value.value === first.type;
   let tmp = closure_9();
+  const insets = first(6402)({ includeKeyboardHeight: true }).insets;
+  let obj = stateFromStores(504);
   items = [BuildOverrideStore];
-  const stateFromStores = first(504).useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let tmp;
     if (overrides != null) {
-      tmp = overrides[first(undefined, 11267).DEVICE_FIELD];
+      tmp = overrides[stateFromStores(undefined, closure_2[11]).DEVICE_FIELD];
     }
     return tmp;
   });
-  first = stateFromStores;
-  [first, dependencyMap] = noop.useState({ type: "branch", id: "" });
-  let obj2 = { style: tmp.content, contentContainerStyle: null, children: null };
-  let obj3 = {};
+  [first, dependencyMap] = react.useState({ type: "branch", id: "" });
+  let obj3 = { paddingBottom: tmp.contentContainer.padding + insets.bottom };
   let merged = Object.assign(tmp.contentContainer);
-  obj3.paddingBottom = tmp.contentContainer.padding + first(6402)({ includeKeyboardHeight: true }).insets.bottom;
-  obj2.contentContainerStyle = obj3;
   let tmp10Result = null;
+  const Stack = stateFromStores(5279).Stack;
   if (null != stateFromStores) {
-    const obj4 = { icon: tmp7(tmp3(4779).CopyIcon, {}), label: null, subLabel: null, onPress: null };
-    first = stateFromStores;
-    const found = items.find((value) => value.value === first.type);
+    const TableRowGroup = tmp3(5999).TableRowGroup;
+    const TableRow = tmp3(5917).TableRow;
+    const found = items.find(f118785);
     let label;
     if (found != null) {
       label = found.label;
     }
-    const obj5 = { title: "Current Override", hasIcons: true, children: null };
-    obj4.label = label;
-    obj4.subLabel = stateFromStores.id;
-    obj4.onPress = function onPress() {
-      ClipboardUtils.copy(first.id);
-      const result = ToastUtils.presentCopiedToClipboard();
-    };
-    const items1 = [tmp7(tmp3(5917).TableRow, obj4), , ];
-    const obj6 = { icon: tmp7(tmp3(14506).RefreshIcon, {}), label: "Refresh Override", onPress: tmp3(11267).refreshBuildOverride, arrow: true };
-    items1[1] = tmp7(tmp3(5917).TableRow, obj6);
-    const obj7 = { icon: tmp7(tmp3(4790).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Override", variant: "danger", onPress: tmp3(11267).clearBuildOverride, arrow: true };
-    items1[2] = tmp7(tmp3(5917).TableRow, obj7);
-    obj5.children = items1;
-    tmp10Result = tmp10(tmp3(5999).TableRowGroup, obj5);
+    const obj5 = { title: "Current Override", hasIcons: true, children: items1 };
+    items1 = [
+      <TableRow icon={null} label={label} subLabel={stateFromStores.id} onPress={function onPress() {
+          const obj = ClipboardUtils;
+          obj.copy(stateFromStores.id);
+          const obj2 = ToastUtils;
+          const result = obj2.presentCopiedToClipboard();
+        }} />,
+  ,
+
+    ];
+    const TableRow2 = tmp3(5917).TableRow;
+    items1[1] = <TableRow2 icon={null} label="Refresh Override" onPress={stateFromStores(11267).refreshBuildOverride} arrow />;
+    const TableRow3 = tmp3(5917).TableRow;
+    items1[2] = <TableRow3 icon={null} label="Clear Override" variant="danger" onPress={stateFromStores(11267).clearBuildOverride} arrow />;
+    tmp10Result = tmp10(TableRowGroup, obj5);
   }
   const items2 = [tmp10Result, , , ];
   let str = "";
+  const TableRadioGroup = tmp3(5997).TableRadioGroup;
   if (null != stateFromStores) {
     str = "New";
   }
-  let obj = first(504);
-  items2[1] = jsx(first(5997).TableRadioGroup, {
-    title: `${str} Override Type`,
-    defaultValue: first.type,
-    onChange(type) {
-      dependencyMap({ type, id: "" });
-    },
-    hasIcons: true,
-    children: items.map((value) => {
-      value = value.value;
-      ({ icon, label } = value);
-      return jsx(first(6000).TableRadioRow, { value, label, icon }, value);
-    })
-  });
-  const found1 = items.find((value) => value.value === first.type);
+  items2[1] = <TableRadioGroup title={`${str} Override Type`} defaultValue={first.type} onChange={function onChange(type) {
+    const obj = { type, id: "" };
+    closure_2(obj);
+  }} hasIcons>{items.map((value) => {
+    let icon;
+    let label;
+    value = value.value;
+    ({ icon, label } = value);
+    return jsx(stateFromStores(closure_2[21]).TableRadioRow, { value, label, icon }, value);
+  })}</TableRadioGroup>;
+  const TableRowGroup2 = tmp3(5999).TableRowGroup;
+  const found1 = items.find(f118785);
   let label1;
   if (found1 != null) {
     label1 = found1.label;
   }
-  const obj9 = { title: label1, hasIcons: true, children: null };
+  const TableRow4 = tmp3(5917).TableRow;
   const found2 = arr4.find((value) => value.value === first.type);
   let icon;
   if (found2 != null) {
     icon = found2.icon;
   }
-  const obj10 = { icon, label: null };
-  const found3 = arr4.find((value) => value.value === first.type);
+  const TextInput = tmp3(6024).TextInput;
+  const found3 = arr4.find(f118785);
   let label2;
   if (found3 != null) {
     label2 = found3.label;
   }
-  const obj11 = { spacing: 16, children: null };
-  const obj8 = {
-    title: `${str} Override Type`,
-    defaultValue: first.type,
-    onChange(type) {
-      dependencyMap({ type, id: "" });
-    },
-    hasIcons: true,
-    children: items.map((value) => {
-      value = value.value;
-      ({ icon, label } = value);
-      return jsx(first(6000).TableRadioRow, { value, label, icon }, value);
-    })
-  };
-  obj10.label = jsx(first(6024).TextInput, {
+  ({
     size: "md",
     placeholder: "Enter " + label2,
     onChange(id) {
-      const obj = {};
+      const obj = { id };
       const merged = Object.assign(first);
-      obj.id = id;
-      dependencyMap(obj);
+      closure_2(obj);
     },
     autoCapitalize: "none",
     autoCorrect: false,
     autoComplete: "off",
     clearable: true
   });
-  obj9.children = jsx(first(5917).TableRow, { icon, label: null });
-  items2[2] = jsx(first(5999).TableRowGroup, { title: label1, hasIcons: true, children: null });
-  items2[3] = jsx(first(5281).Button, {
+  items2[2] = <TableRowGroup2 title={label1} hasIcons>{null}</TableRowGroup2>;
+  items2[3] = jsx(stateFromStores(5281).Button, {
     text: "Apply Build Override",
     disabled: "" === first.id,
     onPress() {
       const type = first.type;
       if ("branch" === type) {
-        const result = build_overrides_BuildOverrideUtils.setBuildOverrideForBranch(tmp.id);
+        const obj3 = build_overrides_BuildOverrideUtils;
+        const result = obj3.setBuildOverrideForBranch(tmp.id);
       } else if ("id" === type) {
-        const result1 = build_overrides_BuildOverrideUtils.setBuildOverrideForId(tmp.id);
+        const obj2 = build_overrides_BuildOverrideUtils;
+        const result1 = obj2.setBuildOverrideForId(tmp.id);
       } else {
-        GlobalUtils.assertNever(tmp.type);
+        const obj = GlobalUtils;
+        obj.assertNever(first.type);
       }
     }
   });
-  obj11.children = items2;
-  obj2.children = jsxs(first(5279).Stack, { spacing: 16, children: null });
-  return <tmp8 style={tmp.content} contentContainerStyle={null}>{null}</tmp8>;
+  return <tmp8 style={tmp.content} contentContainerStyle={obj3}>{null}</tmp8>;
 });
+let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsBuildOverrideScreen.tsx");
+
+export default memoResult;

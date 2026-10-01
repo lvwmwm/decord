@@ -6,12 +6,12 @@
 
 // Module 9563 (InAppMessageSoundsStore)
 import Storage2 from "Storage" /* 510 */;
-import _mod4452 from "module_4452" /* 4452 */;
-import identity from "module_1243" /* 1243 */;
+import _slicedToArray from "_slicedToArray" /* 4452 */;
+import module_1243 from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";
-let closure_3 = identity.createWithEqualityFn(() => {
+let closure_3 = module_1243.createWithEqualityFn(() => {
   const Storage = Storage2.Storage;
   let isEnabled = Storage.get(InAppMessageSoundsEnabled);
   if (isEnabled == null) {
@@ -27,8 +27,9 @@ export const isInAppMessageSoundsEnabled = function isInAppMessageSoundsEnabled(
 export const setInAppMessageSoundsEnabled = function setInAppMessageSoundsEnabled(isEnabled) {
   const Storage = Storage2.Storage;
   const result = Storage.set(InAppMessageSoundsEnabled, isEnabled);
-  closure_3.setState({ isEnabled });
+  const obj = { isEnabled };
+  closure_3.setState(obj);
 };
 export const useInAppMessageSoundsEnabled = function useInAppMessageSoundsEnabled() {
-  return closure_3((isEnabled) => isEnabled.isEnabled, _mod4452.shallow);
+  return closure_3((isEnabled) => isEnabled.isEnabled, _slicedToArray.shallow);
 };

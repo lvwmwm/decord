@@ -5,16 +5,19 @@
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, useCanCurrentUserManageAutomod, useIsUndeletableMentionSpamRule, useIsUserProfileRuleEnabled
 
 // Module 16655 (guild_automod/PermissionUtils)
+import Constants2 from "Constants" /* 11341 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const AutomodTriggerType = fn(11341).AutomodTriggerType;
-const Constants = fn(1074);
+let hasOwnProperty;
+let metroRequire;
+const AutomodTriggerType = Constants2.AutomodTriggerType;
 ({ GuildFeatures: hasOwnProperty, Permissions: metroRequire } = Constants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/PermissionUtils.tsx");
 
 export const canCurrentUserManageMessageFilters = function canCurrentUserManageMessageFilters(guild_id) {
@@ -22,34 +25,35 @@ export const canCurrentUserManageMessageFilters = function canCurrentUserManageM
   if (tmp) {
     const guild = GuildStore.getGuild(guild_id);
     let canResult = null != guild;
+    const obj = PermissionStore;
     if (canResult) {
-      canResult = obj.can(constants2.MANAGE_GUILD, guild);
+      canResult = obj.can(metroRequire.MANAGE_GUILD, guild);
     }
     tmp = canResult;
-    obj = PermissionStore;
   }
   return tmp;
 };
 export const canCurrentUserManageAutomod = function canCurrentUserManageAutomod(arg0) {
   const guild = GuildStore.getGuild(arg0);
   let canResult = null != guild;
+  const obj = PermissionStore;
   if (canResult) {
-    canResult = PermissionStore.can(constants2.MANAGE_GUILD, guild);
+    canResult = obj.can(metroRequire.MANAGE_GUILD, guild);
   }
   return canResult;
 };
 export const useCanCurrentUserManageAutomod = function useCanCurrentUserManageAutomod(arg0) {
+  let closure_0;
   _require = arg0;
+  let obj = require("get initialized");
   const items = [GuildStore, PermissionStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
+    const obj = GuildStore;
     if (GuildStore !== undefined) {
-      if (obj2 !== undefined) {
-        const guild = GuildStore.getGuild(tmp);
-        let canResult = null != guild;
-        if (canResult) {
-          canResult = obj2.can(constants2.MANAGE_GUILD, guild);
-        }
+      if (PermissionStore !== undefined) {
+        const guild = obj.getGuild(tmp);
+        const canResult = null != guild && obj2.can(metroRequire.MANAGE_GUILD, guild);
         return canResult;
       }
     }
@@ -60,15 +64,16 @@ export const useIsUndeletableMentionSpamRule = function useIsUndeletableMentionS
   dependencyMap = triggerType;
   const items = [GuildStore];
   const items1 = [guildId, triggerType];
-  return require("initialize").useStateFromStores(items, () => {
-    if (closure_1 !== AutomodTriggerType.MENTION_SPAM) {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    if (triggerType !== AutomodTriggerType.MENTION_SPAM) {
       return false;
     } else {
-      const guild = GuildStore.getGuild(closure_0);
+      const guild = GuildStore.getGuild(guildId);
       let hasItem = null != guild;
       if (hasItem) {
         const features = guild.features;
-        hasItem = features.has(constants.COMMUNITY);
+        hasItem = features.has(hasOwnProperty.COMMUNITY);
       }
       return hasItem;
     }
@@ -78,12 +83,13 @@ export const useIsUserProfileRuleEnabled = function useIsUserProfileRuleEnabled(
   _require = guildId;
   const items = [GuildStore];
   const items1 = [guildId];
-  return require("initialize").useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(guildId);
     let flag;
     if (guild != null) {
       const features = guild.features;
-      flag = features.has(constants.COMMUNITY);
+      flag = features.has(hasOwnProperty.COMMUNITY);
     }
     if (!flag) {
       flag = false;

@@ -6,28 +6,33 @@
 
 // Module 12663 (useWishlistViewerCoachmark)
 import dismissible_content from "dismissible_content" /* 2029 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useWishlistViewerCoachmark.tsx");
 
 export const useWishlistViewerCoachmark = function useWishlistViewerCoachmark(isCurrentUser) {
+  let tmp3;
+  let tmp4;
   isCurrentUser = isCurrentUser.isCurrentUser;
   const shouldShowWishlistTab = isCurrentUser.shouldShowWishlistTab;
   let items = [isCurrentUser, shouldShowWishlistTab];
-  const memo = noop.useMemo(() => {
-    if (!isCurrentUser) {
-      if (shouldShowWishlistTab) {
-        let items = [dismissible_content.DismissibleContent.WISHLIST_MOBILE_VIEWER_COACHMARK];
+  const memo = react.useMemo(() => {
+    const tmp = isCurrentUser;
+    if (!tmp) {
+      let items;
+      const tmp2 = shouldShowWishlistTab;
+      if (tmp2) {
+        items = [dismissible_content.DismissibleContent.WISHLIST_MOBILE_VIEWER_COACHMARK];
       }
       return items;
     }
     items = [];
   }, items);
   const obj = isCurrentUser(shouldShowWishlistTab[3]);
-  const tmp2 = _slicedToArray(isCurrentUser(shouldShowWishlistTab[3]).useSelectedDismissibleContent(memo), 2);
+  let tmp2 = _slicedToArray(obj.useSelectedDismissibleContent(memo), 2);
+  const obj2 = { isVisible: tmp3 === isCurrentUser(shouldShowWishlistTab[2]).DismissibleContent.WISHLIST_MOBILE_VIEWER_COACHMARK, markAsDismissed: tmp4 };
   [tmp3, tmp4] = tmp2;
-  return { isVisible: tmp3 === isCurrentUser(shouldShowWishlistTab[2]).DismissibleContent.WISHLIST_MOBILE_VIEWER_COACHMARK, markAsDismissed: tmp4 };
+  return obj2;
 };

@@ -5,30 +5,31 @@
 // Exports: getHasImportantUnread, useHasImportantUnread
 
 // Module 9300 (ReadStateUtils)
+import ReadStateConstants from "ReadStateConstants" /* 5018 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const UnreadSetting = fn(5018).UnreadSetting;
-const size = fn(2);
+const UnreadSetting = ReadStateConstants.UnreadSetting;
 const result = size.fileFinishedImporting("modules/read_states/ReadStateUtils.tsx");
 
 export const getHasImportantUnread = function getHasImportantUnread(channel) {
-  let hasUnreadResult = ReadStateStore.hasUnread(channel.id);
-  if (hasUnreadResult) {
-    hasUnreadResult = UserGuildSettingsStore.resolveUnreadSetting(channel) === UnreadSetting.ALL_MESSAGES;
-  }
+  const hasUnreadResult = ReadStateStore.hasUnread(channel.id) && UserGuildSettingsStore.resolveUnreadSetting(channel) === UnreadSetting.ALL_MESSAGES;
   return hasUnreadResult;
 };
 export const useHasImportantUnread = function useHasImportantUnread(arg0) {
+  let id;
   _require = arg0;
   const items = [ReadStateStore, UserGuildSettingsStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     let hasUnreadResult = ReadStateStore.hasUnread(id.id);
+    const tmp = id;
     if (hasUnreadResult) {
-      hasUnreadResult = UserGuildSettingsStore.resolveUnreadSetting(id) === UnreadSetting.ALL_MESSAGES;
+      hasUnreadResult = UserGuildSettingsStore.resolveUnreadSetting(tmp) === UnreadSetting.ALL_MESSAGES;
     }
     return hasUnreadResult;
   });

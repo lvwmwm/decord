@@ -5,88 +5,100 @@
 // Exports: default
 
 // Module 16287 (VibegrationsDesignRemarkSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
 import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16238 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const sendUserMessage = fn(12642).sendUserMessage;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const VibegrationsDesignRemarkSheet = "VibegrationsDesignRemarkSheet";
-const createStyles = fn(4836);
-let obj2 = { content: { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, actions: null };
-let obj3 = { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
-obj2.actions = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
-let closure_10 = createStyles.createStyles(obj2);
-const size = fn(2);
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+const View = react_native.View;
+const sendUserMessage = VibegrationsConnectionStore.sendUserMessage;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+const VibegrationsDesignRemarkSheet_str = "VibegrationsDesignRemarkSheet";
+let createStyles = createStyles_mod;
+let obj = { content: obj2, actions: obj3 };
+obj2 = { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
+let closure_10 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsDesignRemarkSheet.tsx");
 
 export default function VibegrationsDesignRemarkSheet(projectId) {
+  let BottomSheetTitleHeader;
+  let intl;
+  let intl3;
+  let intl4;
+  let items2;
+  let items3;
+  let obj4;
+  let obj5;
+  let obj6;
+  let stringResult;
   projectId = projectId.projectId;
   const target = projectId.target;
   const onClose = projectId.onClose;
-  value = undefined;
+  let value;
   let onPress;
-  const tmp = closure_10();
+  let tmp = closure_10();
   const tmp2 = value(onPress.useState(""), 2);
   value = tmp2[0];
   const items = [onClose];
+  const tmp4 = tmp2[1];
   onPress = onPress.useCallback(() => {
-    ActionSheetActionCreatorsDefault.hideActionSheet(VibegrationsDesignRemarkSheet);
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideActionSheet(VibegrationsDesignRemarkSheet_str);
     onClose();
   }, items);
-  const result = projectId(onClose[8]).isVibegrationsDesignCommentUsable(value);
-  c5 = result;
+  let obj = projectId(onClose[8]);
+  const result = obj.isVibegrationsDesignCommentUsable(value);
+  let c5 = result;
   const items1 = [result, projectId, target, value, onPress];
   const callback1 = onPress.useCallback(() => {
-    if (c5) {
-      sendUserMessage(projectId, VibegrationsDesignFeedback.formatVibegrationsDesignRemark(target, first));
+    const tmp = c5;
+    if (tmp) {
+      const obj = VibegrationsDesignFeedback;
+      sendUserMessage(projectId, obj.formatVibegrationsDesignRemark(target, first));
       callback();
     }
   }, items1);
-  let obj = projectId(onClose[8]);
-  const kind = projectId(onClose[8]).labelVibegrationsDesignTarget(target).kind;
-  const obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", onDismiss: onClose, header: null, children: null };
-  const obj4 = { title: null };
   const obj2 = projectId(onClose[8]);
-  obj4.title = projectId(onClose[8]).describeVibegrationsDesignTarget(target);
-  obj3.header = closure_7(projectId(onClose[10]).BottomSheetTitleHeader, obj4);
-  const obj6 = { style: tmp.content, children: null };
-  const obj7 = { autoFocus: true, label: null, placeholder: null, maxLength: null, value: null, onChange: null };
-  const intl = projectId(onClose[12]).intl;
-  obj7.label = intl.string(target(onClose[13])["qR+sGX"]);
+  const kind = obj2.labelVibegrationsDesignTarget(target).kind;
+  const obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", onDismiss: onClose, header: closure_7(BottomSheetTitleHeader, obj4), children: closure_8(c5, obj6) };
+  const ActionSheet = projectId(onClose[9]).ActionSheet;
+  obj4 = { title: obj5.describeVibegrationsDesignTarget(target) };
+  BottomSheetTitleHeader = projectId(onClose[10]).BottomSheetTitleHeader;
+  obj5 = projectId(onClose[8]);
+  obj6 = { style: tmp.content, children: items2 };
+  const obj7 = { autoFocus: true, label: intl.string(target(onClose[13])["qR+sGX"]), placeholder: stringResult, maxLength: projectId(onClose[8]).VIBEGRATIONS_DESIGN_COMMENT_MAX, value, onChange: tmp4 };
+  const TextArea = projectId(onClose[11]).TextArea;
+  intl = projectId(onClose[12]).intl;
   if ("" === kind) {
-    const intl2 = tmp5(tmp6[12]).intl;
-    let stringResult = intl2.string(tmp12(tmp6[13]).FK09JH);
+    const intl2 = tmp6(tmp7[12]).intl;
+    stringResult = intl2.string(tmp13(tmp7[13]).FK09JH);
   } else {
     const _HermesInternal = HermesInternal;
     stringResult = "Edit " + kind;
   }
-  obj7.placeholder = stringResult;
-  obj7.maxLength = projectId(onClose[8]).VIBEGRATIONS_DESIGN_COMMENT_MAX;
-  obj7.value = value;
-  obj7.onChange = tmp2[1];
-  const items2 = [closure_7(projectId(onClose[11]).TextArea, obj7), ];
-  const obj8 = { style: tmp.actions, children: null };
-  const obj9 = { variant: "tertiary", grow: true, text: null, onPress: null };
-  const intl3 = tmp5(tmp6[12]).intl;
-  obj9.text = intl3.string(target(onClose[13]).cLsnYH);
-  obj9.onPress = onPress;
-  const items3 = [closure_7(projectId(onClose[14]).Button, obj9), ];
-  const obj10 = { variant: "primary", grow: true, text: null, disabled: null, onPress: null };
-  const intl4 = tmp5(tmp6[12]).intl;
-  obj10.text = intl4.string(projectId(onClose[12]).t.TXNS7S);
-  obj10.disabled = !result;
-  obj10.onPress = callback1;
-  items3[1] = closure_7(projectId(onClose[14]).Button, obj10);
-  obj8.children = items3;
+  items2 = [tmp10(TextArea, obj7), ];
+  const obj8 = { style: tmp.actions, children: items3 };
+  const obj9 = { variant: "tertiary", grow: true, text: intl3.string(target(onClose[13]).cLsnYH), onPress };
+  const Button = tmp6(tmp7[14]).Button;
+  intl3 = tmp6(tmp7[12]).intl;
+  items3 = [tmp10(Button, obj9), ];
+  const obj10 = { variant: "primary", grow: true, text: intl4.string(projectId(onClose[12]).t.TXNS7S), disabled: !result, onPress: callback1 };
+  const Button2 = tmp6(tmp7[14]).Button;
+  intl4 = tmp6(tmp7[12]).intl;
+  items3[1] = closure_7(Button2, obj10);
   items2[1] = closure_8(c5, obj8);
-  obj6.children = items2;
-  obj3.children = closure_8(c5, obj6);
-  return closure_7(projectId(onClose[9]).ActionSheet, obj3);
+  return closure_7(ActionSheet, obj3);
 };
 export const VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY = "VibegrationsDesignRemarkSheet";

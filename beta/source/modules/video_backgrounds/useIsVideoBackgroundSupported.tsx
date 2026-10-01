@@ -5,15 +5,15 @@
 // Exports: default
 
 // Module 9438 (useIsVideoBackgroundSupported)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 9122 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_backgrounds/useIsVideoBackgroundSupported.tsx");
 
 export default function useIsVideoBackgroundSupported() {
   const items = [MediaEngineStore];
-  return initialize.useStateFromStores(items, () => isVideoBackgroundSupportedDefault(MediaEngineStore));
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => isVideoBackgroundSupportedDefault(MediaEngineStore));
 };

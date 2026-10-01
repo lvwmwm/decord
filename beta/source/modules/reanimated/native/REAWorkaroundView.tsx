@@ -4,20 +4,19 @@
 // Dependencies: [19, 21, 1638, 4568, 2]
 
 // Module 4567 (REAWorkaroundView)
-import _mod19 from "module_19" /* 19 */;
-import jsxProd from "jsxProd" /* 21 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
 import ReanimatedViewNativeComponentDefault from "ReanimatedViewNativeComponent" /* 4568 */;
-import cancelAnimation from "cancelAnimation" /* 1638 */;
+import cancelAnimation from "module_1638" /* 1638 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
+const forwardRef = react.forwardRef;
+const jsx = Fragment.jsx;
 const ReanimatedViewNativeComponent = cancelAnimation.createAnimatedComponent(ReanimatedViewNativeComponentDefault);
-const forwardRefResult = _mod19.forwardRef((entering, ref) => {
-  const obj = {};
+const forwardRefResult = forwardRef((entering, ref) => {
+  const tmp = null != entering.entering;
   const merged = Object.assign(entering);
-  obj.hasEnteringAnimation = null != entering.entering;
-  obj.ref = ref;
-  return <ReanimatedViewNativeComponent />;
+  return <ReanimatedViewNativeComponent hasEnteringAnimation={tmp} ref={arg1} />;
 });
 forwardRefResult.displayName = "REAWorkaroundView";
 const result = size.fileFinishedImporting("modules/reanimated/native/REAWorkaroundView.tsx");

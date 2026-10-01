@@ -4,11 +4,11 @@
 // Exports: useTabsScreen
 
 // Module 5224
+import react_native from "react-native" /* 17 */;
 import RNSLog2 from "RNSLog" /* 5216 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 
-require = fn;
-const findNodeHandle = fn(17).findNodeHandle;
+const findNodeHandle = react_native.findNodeHandle;
 
 export const useTabsScreen = function useTabsScreen(componentNodeRef) {
   componentNodeRef = componentNodeRef.componentNodeRef;
@@ -16,14 +16,16 @@ export const useTabsScreen = function useTabsScreen(componentNodeRef) {
   const onDidDisappear = componentNodeRef.onDidDisappear;
   const onWillAppear = componentNodeRef.onWillAppear;
   const onWillDisappear = componentNodeRef.onWillDisappear;
+  const screenKey = componentNodeRef.screenKey;
   const ref = onDidDisappear.useRef(-1);
   const effect = onDidDisappear.useEffect(() => {
     if (null != componentNodeRef.current) {
       let num2 = findNodeHandle(tmp.current);
+      const tmp3 = ref;
       if (num2 == null) {
         num2 = -1;
       }
-      ref.current = num2;
+      tmp3.current = num2;
     } else {
       ref.current = -1;
     }
@@ -62,9 +64,10 @@ export const useTabsScreen = function useTabsScreen(componentNodeRef) {
   }, items3);
   let RNSLog = componentNodeRef(onDidAppear[2]).RNSLog;
   let num = ref.current;
+  const log = RNSLog.log;
   if (num == null) {
     num = -1;
   }
-  RNSLog.log("TabsScreen [" + num + "] render; screenKey: " + componentNodeRef.screenKey);
+  log("TabsScreen [" + num + "] render; screenKey: " + screenKey);
   return { componentNodeRef, lifecycleCallbacks: { onWillAppear: callback, onDidAppear: callback1, onWillDisappear: callback2, onDidDisappear: callback3 } };
 };

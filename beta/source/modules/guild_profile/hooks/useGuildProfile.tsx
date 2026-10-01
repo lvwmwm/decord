@@ -5,93 +5,103 @@
 // Exports: useGuildProfile
 
 // Module 9029 (useGuildProfile)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
 import GuildProfileStore from "GuildProfileStore" /* 9028 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c3, c4;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_profile/hooks/useGuildProfile.tsx");
 
 export const useGuildProfile = function useGuildProfile(guildId) {
+  let items2;
+  let stateFromStores1;
   _require = guildId;
+  let obj = require("get initialized");
   const items = [GuildProfileStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => GuildProfileStore.getProfile(closure_0));
-  let obj = require("initialize");
+  const stateFromStores = obj.useStateFromStores(items, () => GuildProfileStore.getProfile(guildId));
+  let obj2 = require("get initialized");
   const items1 = [GuildProfileStore];
-  const obj3 = { guildProfile: stateFromStores, fetchGuildProfile: null, fetchStatus: null };
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => GuildProfileStore.getFetchStatus(closure_0));
-  const items2 = [guildId];
-  obj3.fetchGuildProfile = noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_2 = tmp5;
-            closure_129_0 = undefined;
-            let flag = guildId;
-            if (guildId === undefined) {
-              flag = false;
-            }
-            closure_129_0 = flag;
-            c3 = 1;
-            c4 = 1;
-            return { value: "flex", done: true };
-          }
-        } else if (1 === tmp5) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            c3 = 2;
-            c4 = 1;
-            const obj6 = { value: guildId(tmp2[4]).getGuildProfile(closure_130_0, closure_129_0), done: false };
-            return obj6;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
+  let obj3 = {
+    guildProfile: stateFromStores,
+    fetchGuildProfile: react.useCallback(_asyncToGenerator(async (arg0, value) => {
+      let closure_0;
+      let obj3;
+      guildId = arg0;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          c4 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          c4 = 3;
-          const obj = { value, done: true };
-          return obj;
+          return { value: "HermesInternal", done: null };
         }
-      } catch (tmp12) {
-        c4 = tmp;
-        throw tmp12;
+      } else {
+        try {
+          let closure_1;
+          let flag;
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              let closure_2 = tmp4;
+              closure_1 = tmp;
+              flag = guildId;
+              if (guildId === undefined) {
+                flag = false;
+              }
+              c3 = 1;
+              c4 = 1;
+              return { value: "flex", done: true };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            } else {
+              c3 = 2;
+              c4 = 1;
+              const obj6 = { value: obj3.getGuildProfile(closure_130_0, flag), done: false };
+              obj3 = guildId(closure_1[4]);
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj7 = { value, done: true };
+            return obj7;
+          } else {
+            c4 = 3;
+            const obj = { value, done: true };
+            return obj;
+          }
+        } catch (tmp11) {
+          c4 = 3;
+          throw tmp11;
+        }
       }
-    }
-  }), items2);
-  obj3.fetchStatus = stateFromStores1;
+    }), items2),
+    fetchStatus: stateFromStores1
+  };
+  stateFromStores1 = obj2.useStateFromStores(items1, () => GuildProfileStore.getFetchStatus(guildId));
+  items2 = [guildId];
   return obj3;
 };

@@ -4,24 +4,24 @@
 // Dependencies: [4875, 1074, 8875, 17662, 1370, 2]
 
 // Module 17669 (AVErrorStreamBadNetworkQuality)
+import Constants from "Constants" /* 1074 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import AVError from "AVError" /* 8875 */;
 import AVErrorContext from "AVErrorContext" /* 17662 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4875 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const RTCConnectionQuality = fn(1074).RTCConnectionQuality;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamBadNetworkQuality.tsx");
-
-export const AVErrorStreamBadNetworkQualityDefinition = {
+const RTCConnectionQuality = Constants.RTCConnectionQuality;
+let obj = {
   getActiveErrors() {
+    let quality;
     const allActiveStreamKeys = StreamRTCConnectionStore.getAllActiveStreamKeys();
     const mapped = allActiveStreamKeys.map((item) => {
       let tmp = null;
       if (quality.getQuality(item) === constants.BAD) {
         const obj = { type: AVError.AVError.STREAM_BAD_NETWORK_QUALITY };
-        const merged = Object.assign(AVErrorContext.getStreamErrorContext(item));
+        const obj2 = AVErrorContext;
+        const merged = Object.assign(obj2.getStreamErrorContext(item));
         tmp = obj;
       }
       return tmp;
@@ -32,3 +32,6 @@ export const AVErrorStreamBadNetworkQualityDefinition = {
     return "" + streamKey.streamKey + ":" + streamKey.mediaSessionId;
   }
 };
+const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamBadNetworkQuality.tsx");
+
+export const AVErrorStreamBadNetworkQualityDefinition = obj;

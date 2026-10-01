@@ -5,30 +5,36 @@
 // Exports: default
 
 // Module 6848 (ContextUtils)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("utils/ContextUtils.tsx");
 
 export default function createDefinedContext() {
+  let context;
   context = context.createContext(undefined);
   const items = [
     context,
     function useContext() {
-      context = noop.useContext(context);
+      context = react.useContext(context);
       if (null == context) {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("Context was used outside of defined provider.");
         throw error;
       } else {
         return context;
       }
     },
-    () => {
+    function() {
       context = context.useContext(context);
       if (null == context) {
         const _Error = Error;
+        const self = this;
+        const self2 = this;
         const error = new Error("Context was used outside of defined provider.");
         throw error;
       } else {

@@ -5,73 +5,83 @@
 // Exports: default
 
 // Module 16776 (NitroFileUploadUpsellPromoSheet)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import openUserSettings from "openUserSettings" /* 6800 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let importDefault;
 
-require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let react = react_mod;
+const View = react_native.View;
 ({ AnalyticsPages: hasOwnProperty, UserSettingsSections: metroRequire } = Constants);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { illustration: { paddingTop: nativeDefault.space.PX_12 } };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
+let obj = { illustration: obj2 };
+obj2 = { paddingTop: nativeDefault.space.PX_12 };
+let closure_9 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/premium/file_upload/native/NitroFileUploadUpsellPromoSheet.tsx");
 
 export default function NitroFileUploadUpsellPromoSheet(markAsDismissed) {
+  let intl3;
+  let loading;
+  let onPress;
+  let ref;
+  let ref2;
+  let tmp9;
   markAsDismissed = markAsDismissed.markAsDismissed;
-  noop = undefined;
+  react = undefined;
   onPress = undefined;
-  importDefault = noop.useRef(false);
+  const tmp = closure_9();
+  importDefault = react.useRef(false);
   const items = [markAsDismissed];
-  const callback = noop.useCallback((arg0) => {
+  const callback = react.useCallback((arg0) => {
     if (!ref.current) {
       tmp.current = true;
       markAsDismissed(arg0);
     }
   }, items);
-  noop = noop.useRef(ContentDismissActionType.AUTO_DISMISS);
-  const tmp = closure_9();
-  const unmountEffect = markAsDismissed(callback[7]).useUnmountEffect(() => {
+  react = react.useRef(ContentDismissActionType.AUTO_DISMISS);
+  let obj = markAsDismissed(callback[7]);
+  const unmountEffect = obj.useUnmountEffect(() => {
     callback(ref2.current);
   });
   const items1 = [callback];
-  const callback1 = noop.useCallback(() => {
+  const callback1 = react.useCallback(() => {
     callback(ContentDismissActionType.TAKE_ACTION);
-    openUserSettings.openUserSettings({ screen: constants2.PREMIUM });
+    const obj = openUserSettings;
+    const obj2 = { screen: metroRequire.PREMIUM };
+    obj.openUserSettings(obj2);
   }, items1);
-  const obj = markAsDismissed(callback[7]);
   ({ loading, onPress } = require("usePremiumFeatureUpsellGetNitro")(false, callback1, constants.PREMIUM_UPSELL_FILE_UPLOAD));
   const items2 = [onPress];
   const items3 = [callback];
-  const callback2 = noop.useCallback(() => {
-    closure_3.current = ContentDismissActionType.TAKE_ACTION;
+  require("usePremiumFeatureUpsellGetNitro")(false, callback1, constants.PREMIUM_UPSELL_FILE_UPLOAD);
+  const callback2 = react.useCallback(() => {
+    ref2.current = ContentDismissActionType.TAKE_ACTION;
     onPress();
   }, items2);
-  const callback3 = noop.useCallback(() => {
+  const callback3 = react.useCallback(() => {
     callback(ContentDismissActionType.USER_DISMISS);
   }, items3);
-  const obj2 = { illustration: null, title: null, description: null, onDismiss: null, actions: null };
-  const tmp5 = require("usePremiumFeatureUpsellGetNitro")(false, callback1, constants.PREMIUM_UPSELL_FILE_UPLOAD);
-  obj2.illustration = <onPress style={tmp.illustration}>{jsx(markAsDismissed(callback[11]).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" })}</onPress>;
+  const PromoSheet = markAsDismissed(callback[10]).PromoSheet;
   const intl = markAsDismissed(callback[12]).intl;
-  obj2.title = intl.string(require("module_2587")["Uty2/X"]);
   const intl2 = markAsDismissed(callback[12]).intl;
-  obj2.description = intl2.string(require("module_2587").VAgI8Q);
-  obj2.onDismiss = callback3;
-  const obj4 = { grow: true, size: "lg", variant: "primary", loading, text: null, onPress: null };
-  const intl3 = markAsDismissed(callback[12]).intl;
-  obj4.text = intl3.string(require("module_2587").mRy6sO);
-  let tmp9 = null;
+  ({ grow: true, size: "lg", variant: "primary", loading, text: intl3.string(require("module_2587").mRy6sO), onPress: tmp9 });
+  const Button = markAsDismissed(callback[14]).Button;
+  intl3 = markAsDismissed(callback[12]).intl;
+  tmp9 = null;
   if (!loading) {
     tmp9 = callback2;
   }
-  obj4.onPress = tmp9;
-  obj2.actions = jsx(markAsDismissed(callback[14]).Button, { grow: true, size: "lg", variant: "primary", loading, text: null, onPress: null });
-  return jsx(markAsDismissed(callback[10]).PromoSheet, { illustration: null, title: null, description: null, onDismiss: null, actions: null });
+  return <PromoSheet illustration={null} title={intl.string(require("module_2587")["Uty2/X"])} description={intl2.string(require("module_2587").VAgI8Q)} onDismiss={callback3} actions={null} />;
 };

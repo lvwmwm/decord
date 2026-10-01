@@ -5,14 +5,15 @@
 // Exports: useSpamMessageRequestCount
 
 // Module 16708 (useSpamMessageRequestsCount)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6641 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/message_request/hooks/useSpamMessageRequestsCount.tsx");
 
 export const useSpamMessageRequestCount = function useSpamMessageRequestCount() {
+  let spamChannelsCount;
   const items = [SpamMessageRequestStore];
-  return initialize.useStateFromStores(items, () => spamChannelsCount.getSpamChannelsCount());
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => spamChannelsCount.getSpamChannelsCount());
 };

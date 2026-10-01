@@ -4,80 +4,94 @@
 // Dependencies: [2, 4541, 4546, 4548, 4549, 4550, 4551, 4542, 4552, 4553, 4554, 4547, 4555, 4556, 4557, 4558, 4650, 4611, 4651]
 
 // Module 4540 (native)
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4541 */;
+import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4542 */;
+import useBadgeTextVariant from "useBadgeTextVariant" /* 4546 */;
+import ThemeContext from "ThemeContext" /* 4547 */;
+import react_native from "react-native" /* 4548 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4549 */;
+import react from "react" /* 4550 */;
+import ThemeUtils from "ThemeUtils" /* 4552 */;
+import MotionTypes from "MotionTypes" /* 4553 */;
+import TransitionGroup_TransitionGroup from "TransitionGroup/TransitionGroup" /* 4554 */;
+import ThemeContextProvider from "ThemeContextProvider" /* 4555 */;
+import ThemeContextProvider_ThemeTypes from "ThemeContextProvider/ThemeTypes" /* 4556 */;
+import ThemeContextFlags from "ThemeContextFlags" /* 4557 */;
+import _mod4558 from "module_4558" /* 4558 */;
 import ManaContext from "ManaContext" /* 4611 */;
+import Colors from "Colors" /* 4650 */;
 import GraphicTypes from "GraphicTypes" /* 4651 */;
 import size from "module_2" /* 2 */;
 import AccessibilityConstants from "AccessibilityPreferencesContext/AccessibilityConstants" /* 4551 */;
 
-const require = globalThis.__r;
-
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/native.tsx");
-for (const key10018 in require("AccessibilityAnnouncer")) {
-  arg5[key10018] = require("AccessibilityAnnouncer")[key10018];
+for (const key10018 in AccessibilityAnnouncer) {
+  exports[key10018] = AccessibilityAnnouncer[key10018];
   continue;
 }
-for (const key10022 in require("useBadgeTextVariant")) {
-  arg5[key10022] = require("useBadgeTextVariant")[key10022];
+for (const key10022 in useBadgeTextVariant) {
+  exports[key10022] = useBadgeTextVariant[key10022];
   continue;
 }
-for (const key10026 in require("useA11yRolesNative")) {
-  arg5[key10026] = require("useA11yRolesNative")[key10026];
+for (const key10026 in react_native) {
+  exports[key10026] = react_native[key10026];
   continue;
 }
-for (const key10030 in require("useFieldLabelA11yNative")) {
-  arg5[key10030] = require("useFieldLabelA11yNative")[key10030];
+for (const key10030 in useFieldLabelA11yNative) {
+  exports[key10030] = useFieldLabelA11yNative[key10030];
   continue;
 }
-for (const key10034 in require("AccessibilityPreferencesContext")) {
-  arg5[key10034] = require("AccessibilityPreferencesContext")[key10034];
+for (const key10034 in react) {
+  exports[key10034] = react[key10034];
   continue;
 }
-for (const key10039 in _module1) {
-  arg5[key10039] = AccessibilityConstants[key10039];
+for (const key10039 in AccessibilityConstants) {
+  exports[key10039] = AccessibilityConstants[key10039];
   continue;
 }
-for (const key10043 in require("AccessibilityAnnouncerLiveRegion")) {
-  arg5[key10043] = require("AccessibilityAnnouncerLiveRegion")[key10043];
+for (const key10043 in AccessibilityAnnouncerLiveRegion) {
+  exports[key10043] = AccessibilityAnnouncerLiveRegion[key10043];
   continue;
 }
-for (const key10047 in require("ThemeUtils")) {
-  arg5[key10047] = require("ThemeUtils")[key10047];
+for (const key10047 in ThemeUtils) {
+  exports[key10047] = ThemeUtils[key10047];
   continue;
 }
-for (const key10051 in require("MotionTypes")) {
-  arg5[key10051] = require("MotionTypes")[key10051];
+for (const key10051 in MotionTypes) {
+  exports[key10051] = MotionTypes[key10051];
   continue;
 }
-for (const key10055 in require("TransitionGroup/TransitionGroup")) {
-  arg5[key10055] = require("TransitionGroup/TransitionGroup")[key10055];
+for (const key10055 in TransitionGroup_TransitionGroup) {
+  exports[key10055] = TransitionGroup_TransitionGroup[key10055];
   continue;
 }
-for (const key10059 in require("ThemeContext")) {
-  arg5[key10059] = require("ThemeContext")[key10059];
+for (const key10059 in ThemeContext) {
+  exports[key10059] = ThemeContext[key10059];
   continue;
 }
-for (const key10063 in require("ThemeContextProvider")) {
-  arg5[key10063] = require("ThemeContextProvider")[key10063];
+for (const key10063 in ThemeContextProvider) {
+  exports[key10063] = ThemeContextProvider[key10063];
   continue;
 }
-for (const key10067 in require("ThemeContextProvider/ThemeTypes")) {
-  arg5[key10067] = require("ThemeContextProvider/ThemeTypes")[key10067];
+for (const key10067 in ThemeContextProvider_ThemeTypes) {
+  exports[key10067] = ThemeContextProvider_ThemeTypes[key10067];
   continue;
 }
-for (const key10071 in require("ThemeContextFlags")) {
-  arg5[key10071] = require("ThemeContextFlags")[key10071];
+for (const key10071 in ThemeContextFlags) {
+  exports[key10071] = ThemeContextFlags[key10071];
   continue;
 }
-for (const key10075 in require("module_4558")) {
-  arg5[key10075] = require("module_4558")[key10075];
+for (const key10075 in _mod4558) {
+  exports[key10075] = _mod4558[key10075];
   continue;
 }
-for (const key10079 in require("Colors")) {
-  arg5[key10079] = require("Colors")[key10079];
+for (const key10079 in Colors) {
+  exports[key10079] = Colors[key10079];
   continue;
 }
+const ManaContext_export = ManaContext.ManaContext;
 
-export const ManaContext = ManaContext.ManaContext;
+export { ManaContext_export as ManaContext };
 export const ManaContextProvider = ManaContext.ManaContextProvider;
 export const useManaContext = ManaContext.useManaContext;
 export const isImage = GraphicTypes.isImage;

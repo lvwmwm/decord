@@ -8,25 +8,43 @@
 import _modDef672 from "module_672" /* 672 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let dependencyMap, set;
+
+let c9;
+let hasOwnProperty;
+let metroImportAll;
+let metroRequire;
+({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 const locations = [0, 0.4, 0.5, 0.6, 1];
 const start = { x: 0, y: 0.5 };
 const end = { x: 1, y: 0.5 };
-const createStyles = fn(4836);
 let closure_13 = createStyles.createStyles({ root: { position: "relative" }, band: { position: "absolute", top: 0, bottom: 0 }, fill: { flex: 1 } });
 const __initData = { code: "function VibegrationsConjureShimmerTsx1(){const{bandWidth,progress,width}=this.__closure;return{transform:[{translateX:-bandWidth+progress.get()*(bandWidth+width)}]};}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsConjureShimmer.tsx");
 
 export default function VibegrationsConjureShimmer(epoch) {
+  let View;
+  let closure_2;
+  let items3;
+  let items4;
+  let live;
+  let obj10;
+  let obj6;
+  let obj7;
+  let obj8;
+  let renderFace;
+  let tint;
+  let tmp18;
+  let useReducedMotion;
   ({ renderFace, live, tint } = epoch);
   let num = epoch.epoch;
   if (num === undefined) {
@@ -34,16 +52,18 @@ export default function VibegrationsConjureShimmer(epoch) {
   }
   let sharedValue;
   live = undefined;
-  c5 = undefined;
+  let c5;
   let tmp = closure_13();
+  let obj = tint(504);
   let items = [AccessibilityStore];
-  const stateFromStores = tint(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let obj2 = live;
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const tmp5 = sharedValue(live.useState(0), 2);
   const width = tmp5[0];
   dependencyMap = tmp5[1];
-  let obj = tint(504);
+  const obj3 = tint(4566);
+  sharedValue = obj3.useSharedValue(0);
   const tmp2 = tint;
-  sharedValue = tint(4566).useSharedValue(0);
   if (live) {
     live = !stateFromStores;
   }
@@ -52,14 +72,24 @@ export default function VibegrationsConjureShimmer(epoch) {
   }
   const items1 = [live, num, sharedValue];
   const effect = obj2.useEffect(() => {
-    if (live) {
+    let fn;
+    const tmp = live;
+    if (tmp) {
       const result = sharedValue.set(0);
-      const obj2 = ReanimatedRexport;
-      const obj4 = { duration: 2000, easing: ReanimatedRexport.Easing.linear };
-      const result1 = sharedValue.set(obj2.withRepeat(timing.withTiming(1, obj4), -1, false));
-      const fn = () => tint(closure_2[7]).cancelAnimation(sharedValue);
+      set = sharedValue.set;
+      const withRepeat = ReanimatedRexport.withRepeat;
+      ReanimatedRexport;
+      const obj2 = { duration: 2000, easing: ReanimatedRexport.Easing.linear };
+      const withTiming = timing.withTiming;
+      timing;
+      const result1 = set(withRepeat(withTiming(1, obj2), -1, false));
+      fn = () => {
+        const obj = tint(closure_2[7]);
+        return obj.cancelAnimation(sharedValue);
+      };
     } else {
-      ReanimatedRexport.cancelAnimation(sharedValue);
+      let obj = ReanimatedRexport;
+      obj.cancelAnimation(sharedValue);
       const result2 = sharedValue.set(0);
     }
     return fn;
@@ -69,34 +99,34 @@ export default function VibegrationsConjureShimmer(epoch) {
   c5 = result;
   const memo = obj2.useMemo(() => {
     const obj = _modDef672(tint);
-    const cssResult = obj.alpha(0).css();
-    const items = [cssResult, cssResult, , , ];
     const alphaResult = obj.alpha(0);
-    items[2] = obj.alpha(1).css();
+    const cssResult = alphaResult.css();
+    const items = [cssResult, cssResult, , , ];
+    const alphaResult1 = obj.alpha(1);
+    items[2] = alphaResult1.css();
     items[3] = cssResult;
     items[4] = cssResult;
     return items;
   }, items2);
-  let obj3 = tint(4566);
+  const tmp2Result = tmp2(4566);
   class W {
     constructor() {
-      obj = { transform: null };
-      obj1 = { translateX: -closure_5 + closure_3.get() * (closure_5 + closure_1) };
-      items = [];
-      items[0] = obj1;
-      obj.transform = items;
+      let items;
+      const obj = { transform: items };
+      items = [{ translateX: -c5 + sharedValue.get() * (c5 + first) }];
+      ({ translateX: -c5 + sharedValue.get() * (c5 + first) });
       return obj;
     }
   }
   W.__closure = { bandWidth: result, progress: sharedValue, width };
   W.__workletHash = 16230447544169;
   W.__initData = __initData;
-  const animatedStyle = tmp2(4566).useAnimatedStyle(W);
-  let obj4 = {
+  const animatedStyle = tmp2Result.useAnimatedStyle(W);
+  const obj4 = {
     style: tmp.root,
-    onLayout: live.useCallback((nativeEvent) => {
-      closure_0 = Math.round(nativeEvent.nativeEvent.layout.width);
-      closure_2((arg0) => {
+    onLayout: obj2.useCallback((nativeEvent) => {
+      let closure_0 = Math.round(nativeEvent.nativeEvent.layout.width);
+      let tmp = closure_2((arg0) => {
         let tmp = closure_0;
         if (arg0 === closure_0) {
           tmp = arg0;
@@ -104,33 +134,31 @@ export default function VibegrationsConjureShimmer(epoch) {
         return tmp;
       });
     }, []),
-    children: null
+    children: items3
   };
-  const items3 = [renderFace(), ];
+  items3 = [renderFace(), ];
   let tmp14 = null;
+  const tmp12 = closure_9;
   if (live) {
-    const obj5 = { style: c5.absoluteFill, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
-    const obj6 = { style: c5.absoluteFill, androidRenderingMode: "software", maskElement: null, children: null };
-    const obj7 = { children: renderFace() };
-    obj6.maskElement = closure_8(tmp13, obj7);
-    const obj8 = { style: null, children: null };
-    const items4 = [tmp.band, , ];
+    const obj5 = { style: c5.absoluteFill, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_8(tmp18, obj6) };
+    obj6 = { style: c5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
+    obj7 = { children: renderFace() };
+    tmp18 = width(5976);
+    obj8 = { style: items4, children: closure_8(width(5293), obj10) };
+    items4 = [tmp.band, , ];
     const obj9 = { width: result };
     items4[1] = obj9;
     items4[2] = animatedStyle;
-    obj8.style = items4;
-    const obj10 = { style: tmp.fill, start, end, colors: memo, locations };
-    obj8.children = closure_8(width(5293), obj10);
-    obj6.children = closure_8(width(4566).View, obj8);
-    obj5.children = closure_8(width(5976), obj6);
+    View = width(4566).View;
+    obj10 = { style: tmp.fill, start, end, colors: memo, locations };
     tmp14 = closure_8(tmp13, obj5);
-    const tmp18 = width(5976);
   }
   items3[1] = tmp14;
-  obj4.children = items3;
-  return closure_9(closure_6, obj4);
+  return tmp12(closure_6, obj4);
 };
 export const shouldSweep = function shouldSweep(reducedMotion) {
+  let live;
+  let width;
   ({ live, width } = reducedMotion);
   if (live) {
     live = !reducedMotion.reducedMotion;

@@ -5,17 +5,22 @@
 // Exports: default
 
 // Module 16835 (useScreenNameSharedValue)
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let set;
+
 const unknown = "unknown";
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
 
 export default function useScreenNameSharedValue() {
-  let rootNavigationRef = sharedValue(4693).getRootNavigationRef();
+  let sharedValue;
+  let tmp3;
   let obj = sharedValue(4693);
+  let rootNavigationRef = obj.getRootNavigationRef();
   let isReadyResult;
+  const useSharedValue = sharedValue(4566).useSharedValue;
+  sharedValue(4566);
   if (rootNavigationRef != null) {
     isReadyResult = rootNavigationRef.isReady();
   }
@@ -28,36 +33,38 @@ export default function useScreenNameSharedValue() {
     if (name == null) {
       name = unknown;
     }
-    let tmp2 = name;
+    tmp3 = name;
   } else {
-    tmp2 = unknown;
+    tmp3 = unknown;
   }
-  sharedValue = sharedValue(4566).useSharedValue(tmp2);
+  sharedValue = useSharedValue(tmp3);
   const items = [sharedValue];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     function handleStateChange() {
       if (null != rootNavigationRef) {
-        if (obj.isReady()) {
+        if (rootNavigationRef.isReady()) {
           const currentRoute = obj.getCurrentRoute();
           let str;
+          set = sharedValue.set;
           if (currentRoute != null) {
             str = currentRoute.name;
           }
           if (str == null) {
             str = "unknown";
           }
-          const result = sharedValue.set(str);
+          const result = set(str);
         }
       }
     }
-    const rootNavigationRef = sharedValue(dependencyMap[1]).getRootNavigationRef();
+    const obj = sharedValue(dependencyMap[1]);
+    const rootNavigationRef = obj.getRootNavigationRef();
     if (null != rootNavigationRef) {
+      let str = "state";
       rootNavigationRef.addListener("state", handleStateChange);
       return () => {
         rootNavigationRef.removeListener("state", handleStateChange);
       };
     }
-    const obj = sharedValue(dependencyMap[1]);
   }, items);
   return sharedValue;
 };

@@ -5,26 +5,29 @@
 // Exports: default, isCreatorMonetizationEnabledGuild
 
 // Module 6669 (useIsCreatorMonetizationEnabledGuild)
+import Constants from "Constants" /* 1074 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
+const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/useIsCreatorMonetizationEnabledGuild.tsx");
 
 export default function useIsCreatorMonetizationEnabledGuild(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [GuildStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     const guild = GuildStore.getGuild(closure_0);
     let tmp2 = null != guild;
     if (tmp2) {
       const features = guild.features;
       const hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_DISABLED);
       let tmp5 = !hasItem;
-      if (!hasItem) {
+      if (tmp5) {
         const features2 = guild.features;
         let hasItem1 = features2.has(tmp3.CREATOR_MONETIZABLE);
         if (!hasItem1) {
@@ -42,7 +45,7 @@ export const isCreatorMonetizationEnabledGuild = function isCreatorMonetizationE
   const features = guild.features;
   const hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_DISABLED);
   let tmp3 = !hasItem;
-  if (!hasItem) {
+  if (tmp3) {
     const features2 = guild.features;
     let hasItem1 = features2.has(tmp.CREATOR_MONETIZABLE);
     if (!hasItem1) {

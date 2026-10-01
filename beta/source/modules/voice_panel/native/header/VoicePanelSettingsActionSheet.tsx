@@ -4,25 +4,28 @@
 // Dependencies: [19, 21, 4836, 6571, 6045, 6544, 16936, 2]
 
 // Module 16935 (VoicePanelSettingsActionSheet)
+import Fragment from "Fragment" /* 21 */;
 import BottomSheetModal from "BottomSheetModal" /* 6045 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 16936 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let BottomSheet;
+
+const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ wrapper: { gap: 24 } });
-const size = fn(2);
+const memoResult = react.memo(function VoicePanelSettingsActionSheet(arg0) {
+  let channelId;
+  let guildId;
+  ({ guildId, channelId } = arg0);
+  const tmp = closure_4();
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheetScrollView = BottomSheetModal.BottomSheetScrollView;
+  const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
+  return <BottomSheet startExpanded scrollable>{null}</BottomSheet>;
+});
 const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelSettingsActionSheet.tsx");
 
-export default noop.memo(function VoicePanelSettingsActionSheet(arg0) {
-  ({ guildId, channelId } = arg0);
-  const obj = { startExpanded: true, scrollable: true, children: null };
-  const obj2 = { children: null };
-  const tmp = closure_4();
-  obj2.children = jsx(common_SafeAreaView.SafeAreaPaddingView, { bottom: true, style: closure_4().wrapper, children: jsx(VoicePanelSettingsOverviewDefault, { guildId, channelId }) });
-  obj.children = jsx(BottomSheetModal.BottomSheetScrollView, { children: null });
-  return jsx(Sheet_BottomSheet.BottomSheet, { startExpanded: true, scrollable: true, children: null });
-});
+export default memoResult;

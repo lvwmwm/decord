@@ -13,9 +13,11 @@ const ChannelConnectAction = { NORMAL: 0, [0]: "NORMAL", START_EVENT: 1, [1]: "S
 const result = size.fileFinishedImporting("modules/stage_channels/useStageChannelConnectAction.tsx");
 
 export default function useStageChannelConnectAction(arg0) {
+  const tmp = useStateChannelIsLiveDefault(arg0);
   if (!tmp) {
+    let NORMAL;
     if (useCurrentUserStageRolesDefault(arg0, true).moderator) {
-      let NORMAL = obj.START_EVENT;
+      NORMAL = obj.START_EVENT;
     }
     return NORMAL;
   }
@@ -23,5 +25,6 @@ export default function useStageChannelConnectAction(arg0) {
 };
 export { ChannelConnectAction };
 export const useStageChannelStartEvent = function useStageChannelStartEvent(id) {
-  return { isLive: useStateChannelIsLiveDefault(id), isModerator: useCurrentUserStageRolesDefault(id, true).moderator };
+  const obj = { isLive: useStateChannelIsLiveDefault(id), isModerator: useCurrentUserStageRolesDefault(id, true).moderator };
+  return obj;
 };

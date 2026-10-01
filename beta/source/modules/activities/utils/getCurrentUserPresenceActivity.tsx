@@ -10,7 +10,7 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/activities/utils/getCurrentUserPresenceActivity.tsx");
 
 export default function getCurrentUserPresenceActivity(getApplicationActivity, getApplicationActivity2, arg2) {
-  closure_0 = arg2;
+  let closure_0 = arg2;
   let tmp = null;
   if (null != arg2) {
     let applicationActivity = getApplicationActivity.getApplicationActivity(arg2);

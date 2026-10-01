@@ -6,38 +6,48 @@
 
 // Module 9807 (LayoutUtils)
 import native from "native" /* 1177 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const size = fn(2);
+let c3;
+let closure_4;
+let hasOwnProperty;
+({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/LayoutUtils.tsx");
 
 export const GappedList = function GappedList(gap) {
+  let Children1;
   let num = gap.gap;
+  let children = gap.children;
   if (num === undefined) {
     num = 4;
   }
   const renderGap = gap.renderGap;
   let found;
   const Children = found.Children;
-  found = Children.toArray(gap.children).filter((item) => null != item);
-  let obj = { children: null };
-  const Children1 = found.Children;
-  obj.children = Children1.map(found, (arg0, arg1) => {
-    const items = [arg0, ];
-    if (arg1 === found.length - 1) {
-      const obj2 = { children: null };
-      items[1] = tmp3;
-      obj2.children = items;
-      return tmp(tmp2, obj2);
-    } else if (null != renderGap) {
-      let tmp4Result = tmp4();
-    } else {
-      const obj = { size: num };
-      tmp4Result = React3(native.Spacer, obj);
-    }
-  });
+  const toArrayResult = Children.toArray(children);
+  found = toArrayResult.filter((item) => null != item);
+  let obj = {
+    children: Children1.map(found, (arg0, arg1) => {
+      const children = [arg0, ];
+      let tmp3 = arg1 !== found.length - 1;
+      const tmp = hasOwnProperty;
+      const tmp2 = React3;
+      if (tmp3) {
+        let tmp4Result;
+        if (null != renderGap) {
+          tmp4Result = tmp4();
+        } else {
+          const obj = { size: num };
+          tmp4Result = _false(native.Spacer, obj);
+        }
+        tmp3 = tmp4Result;
+      }
+      children[1] = tmp3;
+      return tmp(tmp2, { children });
+    })
+  };
+  Children1 = found.Children;
   return closure_3(closure_4, obj);
 };

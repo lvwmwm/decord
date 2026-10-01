@@ -5,59 +5,61 @@
 // Exports: usePasswordRegistrationStep
 
 // Module 15592 (usePasswordRegistrationStep)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15570 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let c1, c4, importDefault;
 
-const require = fn;
-const useRegistrationUIStore = fn(15570).useRegistrationUIStore;
-const size = fn(2);
+const useRegistrationUIStore = RegistrationUIStore.useRegistrationUIStore;
 const result = size.fileFinishedImporting("modules/auth/native/components/utils/usePasswordRegistrationStep.tsx");
 
 export const usePasswordRegistrationStep = function usePasswordRegistrationStep() {
+  let closure_1;
+  let password;
+  let passwordValid;
+  let tmp4;
+  let tmp = useRegistrationUIStore;
+  let obj = react;
   let str = useRegistrationUIStore((registrationOptions) => registrationOptions.registrationOptions).password;
+  const useState = react.useState;
   if (str == null) {
     str = "";
   }
-  let tmp2 = _slicedToArray(noop.useState(str), 2);
-  const password = tmp2[0];
-  const tmp5 = require("getError")("password", useRegistrationUIStore((errors) => errors.errors));
-  importDefault = tmp5;
-  const tmpResult = useRegistrationUIStore((errors) => errors.errors);
-  const passwordScore = password(passwordValid[5]).usePasswordScore(password);
-  passwordValid = passwordScore.passwordValid;
-  const items = [password, tmp5, passwordValid];
+  [password, tmp4] = useState(str);
+  const tmpResult = tmp((errors) => errors.errors);
+  const tmp6 = require("getError")("password", tmpResult);
+  importDefault = tmp6;
+  let obj2 = password(passwordValid[5]);
+  const passwordScore1 = obj2.usePasswordScore(password);
+  passwordValid = passwordScore1.passwordValid;
+  const items = [password, tmp6, passwordValid];
+  const passwordScore = passwordScore1.passwordScore;
   const memo = obj.useMemo(() => {
-    let tmp = null == first;
+    let tmp = null == first || "" === arr;
     if (!tmp) {
-      tmp = "" === arr;
-    }
-    if (!tmp) {
-      let tmp2 = arr.length < 8;
-      if (!tmp2) {
-        tmp2 = null != closure_1;
-      }
-      if (!tmp2) {
-        tmp2 = false === passwordValid;
-      }
-      tmp = tmp2;
+      tmp = arr.length < 8 || null != closure_1 || false === passwordValid;
+      const tmp2 = arr.length < 8 || null != closure_1 || false === passwordValid;
     }
     return tmp;
   }, items);
-  const items1 = [password, tmp5];
-  let obj2 = password(passwordValid[5]);
-  return {
+  const items1 = [password, tmp6];
+  let obj3 = {
     password,
-    setPassword: tmp2[1],
-    passwordScore: passwordScore.passwordScore,
+    setPassword: tmp4,
+    passwordScore,
     preventSubmitPassword: memo,
-    validatePassword: noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
+    validatePassword: obj.useCallback(_asyncToGenerator(async (arg0, value) => {
+      let closure_0;
+      let closure_2;
+      let obj3;
       if (c4 === 2) {
         c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -67,6 +69,7 @@ export const usePasswordRegistrationStep = function usePasswordRegistrationStep(
           return { value: "HermesInternal", done: null };
         }
       } else {
+        let c3;
         try {
           c4 = 2;
           if (0 === c1) {
@@ -79,34 +82,34 @@ export const usePasswordRegistrationStep = function usePasswordRegistrationStep(
               return obj4;
             } else {
               if (null != first) {
-                if ("" !== arr) {
-                  if (arr.length < 8) {
-                    const intl2 = tmp3(tmp25[6]).intl;
+                if ("" !== first) {
+                  if (first.length < 8) {
+                    const intl2 = tmp(passwordValid[6]).intl;
                     c4 = 3;
-                    const obj5 = { value: intl2.string(tmp3(tmp25[6]).t.DfaKHr), done: true };
+                    const obj5 = { value: intl2.string(tmp(passwordValid[6]).t.DfaKHr), done: true };
                     return obj5;
                   } else if (null != closure_1) {
                     c4 = 3;
-                    const obj6 = { value: tmp14, done: true };
+                    const obj6 = { value: tmp11, done: true };
                     return obj6;
                   } else {
                     c3 = 1;
                     c1 = 2;
                     c4 = 1;
-                    const obj7 = { value: tmp3(tmp25[7]).scorePassword(arr), done: false };
+                    const obj7 = { value: obj3.scorePassword(first), done: false };
+                    obj3 = tmp(passwordValid[7]);
                     return obj7;
                   }
                 }
               }
-              const intl3 = tmp3(tmp25[6]).intl;
+              const intl3 = tmp(passwordValid[6]).intl;
               c4 = 3;
-              const obj8 = { value: intl3.string(tmp3(tmp25[6]).t.R98xD5), done: true };
+              const obj8 = { value: intl3.string(tmp(passwordValid[6]).t.R98xD5), done: true };
               return obj8;
             }
           } else {
-            if (1 === tmp7) {
+            if (1 === tmp4) {
               c3 = 0;
-              c4 = 3;
             } else if (arg0 === 1) {
               c4 = 3;
               throw value;
@@ -115,24 +118,29 @@ export const usePasswordRegistrationStep = function usePasswordRegistrationStep(
               c4 = 3;
               const obj9 = { value, done: true };
               return obj9;
-            } else if (false !== value.valid) {
+            } else if (false === value.valid) {
+              const intl = tmp(passwordValid[6]).intl;
+              c3 = 0;
+              c4 = 3;
+              const obj = { value: intl.string(tmp(passwordValid[6]).t.DfaKHr), done: true };
+              return obj;
+            } else {
               c3 = 0;
             }
-            const intl = tmp3(tmp25[6]).intl;
-            c3 = 0;
             c4 = 3;
-            const obj = { value: intl.string(tmp3(tmp25[6]).t.DfaKHr), done: true };
-            return obj;
+            return { value: null, done: true };
           }
-        } catch (tmp25) {
-          if (tmp4 === c3) {
-            c4 = tmp2;
-            throw tmp25;
+        } catch (tmp22) {
+          passwordValid = tmp22;
+          if (0 === c3) {
+            c4 = 3;
+            throw tmp22;
           } else {
-            c1 = tmp;
+            c1 = 1;
           }
         }
       }
     }), items1)
   };
+  return obj3;
 };

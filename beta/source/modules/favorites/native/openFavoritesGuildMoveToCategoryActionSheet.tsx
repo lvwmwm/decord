@@ -13,24 +13,30 @@ const require = globalThis.__r;
 
 let result = size.fileFinishedImporting("modules/favorites/native/openFavoritesGuildMoveToCategoryActionSheet.tsx");
 
-export default function openFavoritesGuildMoveToCategoryActionSheet(arg0, title) {
-  ({ destinations, perform: require } = title);
+export default function openFavoritesGuildMoveToCategoryActionSheet(arg0, label) {
+  let destinations;
+  ({ destinations, perform: require } = label);
+  label = label.label;
   let obj = Sheet_showSimpleActionSheet;
-  const result = obj.showSimpleActionSheet({
+  const obj2 = {
     key: "FavoritesGuildMoveToCategory-" + arg0,
-    header: { title: title.label },
+    header: { title: label },
     hasIcons: true,
     options: destinations.map((label) => {
-      const obj = { label: label.label, IconComponent: null, onPress: null };
       let FolderIcon;
+      const obj = {
+        label: label.label,
+        IconComponent: FolderIcon,
+        onPress() {
+          return require(label.id);
+        }
+      };
+      FolderIcon = undefined;
       if (null != label.id) {
         FolderIcon = FolderIcon2.FolderIcon;
       }
-      obj.IconComponent = FolderIcon;
-      obj.onPress = function onPress() {
-        return require(label.id);
-      };
       return obj;
     })
-  });
+  };
+  const result = obj.showSimpleActionSheet(obj2);
 };

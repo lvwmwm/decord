@@ -4,26 +4,26 @@
 // Dependencies: [6284, 6285]
 
 // Module 6298 (ConsecutiveNumbers)
-import _modDef6285 from "module_6285" /* 6285 */;
-import _classCallCheck_mod from "module_6284" /* 6284 */;
+import _createClassDefault from "_createClass" /* 6285 */;
+import _classCallCheck from "_classCallCheck" /* 6284 */;
 
-let _classCallCheck = _classCallCheck_mod;
+let closure_1, endIndex;
+
 class ConsecutiveNumbers {
-  constructor(arg0, arg1) {
-    tmp = closure_0(this, ConsecutiveNumbers);
-    this.startIndex = global;
-    this.endIndex = arg1;
-    return;
+  constructor(startIndex, findLastVisibleIndexResult) {
+    _classCallCheck(this, ConsecutiveNumbers);
+    this.startIndex = startIndex;
+    this.endIndex = findLastVisibleIndexResult;
   }
 }
-_classCallCheck = ConsecutiveNumbers;
+let obj = {
+  key: "length",
+  get() {
+    return Math.max(0, this.endIndex - this.startIndex + 1);
+  }
+};
 const items = [
-  {
-    key: "length",
-    get() {
-      return Math.max(0, this.endIndex - this.startIndex + 1);
-    }
-  },
+  obj,
   {
     key: "at",
     value: function at(arg0) {
@@ -45,6 +45,8 @@ const items = [
         return [];
       } else {
         const _Array = Array;
+        const self2 = this;
+        const self3 = this;
         const array = new Array(self.length);
         let num2 = 0;
         if (0 < self.length) {
@@ -116,8 +118,8 @@ const items = [
       }
       const sum = self.startIndex + num;
       const bound = Math.max(sum - 1, self.startIndex + Math.min(length, self.length) - 1);
-      const obj = Object.create(_classCallCheck.prototype);
-      _classCallCheck(obj, _classCallCheck);
+      const obj = Object.create(ConsecutiveNumbers.prototype);
+      _classCallCheck(obj, ConsecutiveNumbers);
       obj.startIndex = sum;
       obj.endIndex = bound;
       return obj;
@@ -129,18 +131,17 @@ const entry = {
   key: Symbol.iterator,
   value() {
     const self = this;
-    c3 = 0;
-    c4 = 0;
+    let c3 = 0;
+    let c4 = 0;
     return (function* value(arg0, value) {
       if (c4 === 2) {
         c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
+          return { value, done: true };
         } else {
           return { value: "HermesInternal", done: null };
         }
@@ -153,41 +154,40 @@ const entry = {
               throw value;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
+              return { value, done: true };
             } else {
               endIndex = self;
-              closure_1 = tmp4;
-              let startIndex;
-              startIndex = self.startIndex;
-              if (startIndex <= self.endIndex) {
-                c3 = 1;
-                c4 = 1;
-                const obj4 = { value: startIndex, done: false };
-                return obj4;
-              } else {
+              closure_1 = tmp3;
+              value = self.startIndex;
+              if (value > self.endIndex) {
                 c4 = 3;
+                return { value: "HermesInternal", done: null };
               }
             }
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
-          } else if (arg0 !== 2) {
-            startIndex = startIndex + 1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            value = value + 1;
           }
+          c3 = 1;
+          c4 = 1;
+          return { value, done: false };
+        } catch (tmp12) {
           c4 = 3;
-          const obj = { value, done: true };
-          return obj;
-        } catch (tmp13) {
-          c4 = tmp;
-          throw tmp13;
+          throw tmp12;
         }
       }
     })();
   }
 };
 items[9] = entry;
-const tmp2 = _modDef6285(ConsecutiveNumbers, items);
+const tmp2 = _createClassDefault(ConsecutiveNumbers, items);
 tmp2.EMPTY = new tmp2(-1, -2);
+new tmp2(-1, -2);
+const ConsecutiveNumbers_export = tmp2;
 
-export const ConsecutiveNumbers = tmp2;
+export { ConsecutiveNumbers_export as ConsecutiveNumbers };

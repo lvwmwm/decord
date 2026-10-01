@@ -5,17 +5,20 @@
 // Exports: default
 
 // Module 11575 (RecommendationAppRow)
+import Fragment from "Fragment" /* 21 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import AppLauncherHomeScreen from "AppLauncherHomeScreen" /* 11565 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/RecommendationAppRow.tsx");
 
 export default function RecommendationAppRow(onPress) {
+  let application;
+  let isFirstRow;
   ({ application, isFirstRow } = onPress);
+  onPress = onPress.onPress;
   if (isFirstRow === undefined) {
     isFirstRow = false;
   }
@@ -27,6 +30,8 @@ export default function RecommendationAppRow(onPress) {
   if (showsPromoted === undefined) {
     showsPromoted = false;
   }
-  const iconSource = AvatarUtilsDefault.getApplicationIconSource({ id: application.id, icon: application.icon, bot: application.bot, botIconFirst: true });
-  return jsx(AppLauncherHomeScreen.BaseAppRow, { application, iconSource, onPress: onPress.onPress, isFirstRow, isLastRow, showsPromoted });
+  const obj = AvatarUtilsDefault;
+  const obj2 = { id: application.id, icon: application.icon, bot: application.bot, botIconFirst: true };
+  const iconSource = obj.getApplicationIconSource(obj2);
+  return jsx(AppLauncherHomeScreen.BaseAppRow, { application, iconSource, onPress, isFirstRow, isLastRow, showsPromoted });
 };

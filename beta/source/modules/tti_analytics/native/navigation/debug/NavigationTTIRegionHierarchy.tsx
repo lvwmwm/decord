@@ -6,10 +6,14 @@
 
 // Module 16182 (NavigationTTIRegionHierarchy)
 import LoggerDefault from "Logger" /* 3 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
+
+let map;
 
 function getNavigationTTIRegionHierarchyViolation(arg0, arg1, arg2, arg3, arg4) {
+  let combined;
   if ("include" === arg0) {
     if (arg3 > 0) {
       let str12 = "s";
@@ -17,7 +21,7 @@ function getNavigationTTIRegionHierarchyViolation(arg0, arg1, arg2, arg3, arg4) 
         str12 = "";
       }
       const _HermesInternal3 = HermesInternal;
-      let combined = "overlaps " + arg3 + " tracked descendant" + str12;
+      combined = "overlaps " + arg3 + " tracked descendant" + str12;
     }
     return combined;
   }
@@ -25,6 +29,7 @@ function getNavigationTTIRegionHierarchyViolation(arg0, arg1, arg2, arg3, arg4) 
   if ("exclude" === arg0) {
     combined = null;
     if (arg2) {
+      let str3;
       if ("excluded" === arg1) {
         let combined1 = null;
         if (arg3 > 0) {
@@ -35,8 +40,9 @@ function getNavigationTTIRegionHierarchyViolation(arg0, arg1, arg2, arg3, arg4) 
           const _HermesInternal2 = HermesInternal;
           combined1 = "declares ignored descendants but contains " + arg3 + " tracked region" + str9;
         }
+        str3 = combined1;
       } else if ("included" === arg1) {
-        const str5 = "declares tracked descendants but no tracked region mounted";
+        let str5 = "declares tracked descendants but no tracked region mounted";
         if (0 !== arg3) {
           let combined2 = null;
           if (arg4 > 0) {
@@ -47,27 +53,37 @@ function getNavigationTTIRegionHierarchyViolation(arg0, arg1, arg2, arg3, arg4) 
             const _HermesInternal = HermesInternal;
             combined2 = "declares tracked descendants but contains " + arg4 + " ignored region" + str6;
           }
+          str5 = combined2;
         }
+        str3 = str5;
       } else {
-        const str3 = "declares mixed descendants but no tracked region mounted";
+        str3 = "declares mixed descendants but no tracked region mounted";
         if (0 !== arg3) {
+          let str4 = null;
           if (0 === arg4) {
-            const str4 = "declares mixed descendants but no ignored region mounted";
+            str4 = "declares mixed descendants but no ignored region mounted";
           }
+          str3 = str4;
         }
       }
+      combined = str3;
     }
   }
 }
 let obj2 = new LoggerDefault("NavTTIVisualizer");
 obj2.enableNativeLogger(true);
-let context = noop.createContext(null);
-const size = fn(2);
+let context = react.createContext(null);
 let result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/debug/NavigationTTIRegionHierarchy.tsx");
 
 export const NavigationTTIRegionHierarchyContext = context;
 export { getNavigationTTIRegionHierarchyViolation };
 export const useNavigationTTIRegionHierarchy = function useNavigationTTIRegionHierarchy(name) {
+  let _undefined;
+  let c3;
+  let closure_4;
+  let descendantTracking;
+  let hasChildren;
+  let tracking;
   name = name.name;
   ({ tracking, descendantTracking, hasChildren } = name);
   let regionId;
@@ -79,12 +95,19 @@ export const useNavigationTTIRegionHierarchy = function useNavigationTTIRegionHi
   let num4;
   let num5;
   let violation;
+  let ref;
+  let obj = regionId;
   regionId = regionId.useId();
   context = regionId.useContext(c3);
-  [obj2, c3] = name(regionId.useState(() => new Map()), 2);
+  const tmp3 = name(regionId.useState(() => {
+    map = new Map();
+    return map;
+  }), 2);
+  [obj2, c3] = tmp3;
   const tmp4 = name(regionId.useState(false), 2);
   getNavigationTTIRegionHierarchyViolation = tmp4[1];
   let num;
+  const first = tmp4[0];
   if (context != null) {
     num = context.depth;
   }
@@ -93,10 +116,10 @@ export const useNavigationTTIRegionHierarchy = function useNavigationTTIRegionHi
   }
   depth = num + 1;
   updateChild = obj.useCallback((arg0, arg1) => {
-    closure_0 = arg0;
-    closure_1 = arg1;
-    _undefined((get) => {
-      value = get.get(closure_0);
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    const tmp = _undefined((get) => {
+      const value = get.get(closure_0);
       if (null == closure_1) {
         if (null == value) {
           return get;
@@ -107,15 +130,15 @@ export const useNavigationTTIRegionHierarchy = function useNavigationTTIRegionHi
         if (value != null) {
           included = value.included;
         }
-        if (included === tmp3.included) {
-          if (value.excluded === tmp3.excluded) {
+        if (included === closure_1.included) {
+          if (value.excluded === closure_1.excluded) {
             return get;
           }
         }
       }
-      const map = new Map(get);
+      map = new Map(get);
       if (null == closure_1) {
-        map.delete(tmp);
+        map.delete(closure_0);
       } else {
         const result = map.set(tmp, tmp3);
       }
@@ -146,37 +169,36 @@ export const useNavigationTTIRegionHierarchy = function useNavigationTTIRegionHi
   }
   const items1 = [excludedDescendants, includedDescendants, num5, num4, context, regionId];
   const effect = regionId.useEffect(() => {
+    let obj = context;
     if (context != null) {
       obj2 = { included: num4 + sum1, excluded: num5 + sum2 };
-      context.updateChild(regionId, obj2);
+      let updateChildResult = obj.updateChild(regionId, obj2);
     }
     return () => {
       let updateChildResult;
+      const obj = context;
       if (context != null) {
-        updateChildResult = context.updateChild(regionId, null);
+        updateChildResult = obj.updateChild(regionId, null);
       }
       return updateChildResult;
     };
   }, items1);
   const effect1 = regionId.useEffect(() => {
-    closure_0 = requestAnimationFrame(() => closure_1_4(true));
+    let closure_0 = requestAnimationFrame(() => closure_1_4(true));
     return () => cancelAnimationFrame(closure_0);
   }, []);
   violation = null;
-  if (tmp4[0]) {
+  if (first) {
     violation = getNavigationTTIRegionHierarchyViolation(tracking, descendantTracking, hasChildren, includedDescendants, excludedDescendants);
   }
-  regionId.useRef(null);
+  ref = obj3.useRef(null);
   const items2 = [name, violation];
   const effect2 = obj3.useEffect(() => {
-    let tmp2 = null != violation;
+    const tmp2 = null != violation && tmp !== ref.current;
     if (tmp2) {
-      tmp2 = tmp !== ref.current;
-    }
-    if (tmp2) {
-      ref.current = tmp;
+      ref.current = violation;
       const _HermesInternal = HermesInternal;
-      obj2.warn("" + name + ": " + tmp);
+      obj2.warn("" + name + ": " + violation);
     }
   }, items2);
   return { regionId, contextValue, includedDescendants, excludedDescendants, depth, violation };

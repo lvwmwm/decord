@@ -4,44 +4,50 @@
 // Dependencies: [41, 42, 1200, 1202, 1204, 1206, 1207, 1209, 1210, 1211, 1212, 1192, 1197, 1195, 1188]
 
 // Module 1199 (MessageType)
+import typeofJsonValue from "typeofJsonValue" /* 1188 */;
+import binaryReadOptions from "binaryReadOptions" /* 1192 */;
+import binaryWriteOptions from "binaryWriteOptions" /* 1195 */;
+import jsonReadOptions from "jsonReadOptions" /* 1197 */;
+import ScalarType from "ScalarType" /* 1200 */;
+import reflectionCreate from "reflectionCreate" /* 1210 */;
+import reflectionEquals from "reflectionEquals" /* 1212 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-const MessageType = require;
+let tmp;
+const reflectionMergePartial = tmp(1211);
 class MessageType {
-  constructor(arg0, arg1, arg2) {
-    self = this;
-    obj = importDefault;
-    tmp = c2(this, MessageType);
+  constructor(typeName, arr, arg2) {
+    const self = this;
+    let obj = arg2;
+    _classCallCheck(this, MessageType);
     this.defaultCheckDepth = 16;
-    this.typeName = global;
-    tmp2 = closure_0;
-    tmp3 = closure_1;
-    this.fields = require.map(closure_0(closure_1[2]).normalizeFieldInfo);
-    if (null == importDefault) {
+    this.typeName = typeName;
+    this.fields = arr.map(ScalarType.normalizeFieldInfo);
+    if (null == arg2) {
       obj = {};
     }
     self.options = obj;
-    reflectionTypeCheck = new tmp2(tmp3[3]).ReflectionTypeCheck(self);
+    const reflectionTypeCheck = new tmp2(1202).ReflectionTypeCheck(self);
     self.refTypeCheck = reflectionTypeCheck;
-    reflectionJsonReader = new tmp2(tmp3[4]).ReflectionJsonReader(self);
+    const reflectionJsonReader = new tmp2(1204).ReflectionJsonReader(self);
     self.refJsonReader = reflectionJsonReader;
-    reflectionJsonWriter = new tmp2(tmp3[5]).ReflectionJsonWriter(self);
+    const reflectionJsonWriter = new tmp2(1206).ReflectionJsonWriter(self);
     self.refJsonWriter = reflectionJsonWriter;
-    reflectionBinaryReader = new tmp2(tmp3[6]).ReflectionBinaryReader(self);
+    const reflectionBinaryReader = new tmp2(1207).ReflectionBinaryReader(self);
     self.refBinReader = reflectionBinaryReader;
-    reflectionBinaryWriter = new tmp2(tmp3[7]).ReflectionBinaryWriter(self);
+    const reflectionBinaryWriter = new tmp2(1209).ReflectionBinaryWriter(self);
     self.refBinWriter = reflectionBinaryWriter;
-    return;
   }
 }
 const entry = {
   key: "create",
   value: function create(arr) {
-    const reflectionCreateResult = MessageType(1210).reflectionCreate(this);
+    const obj = reflectionCreate;
+    const reflectionCreateResult = obj.reflectionCreate(this);
     if (undefined !== arr) {
-      const result = MessageType(1211).reflectionMergePartial(this, reflectionCreateResult, arr);
-      const tmpResult = MessageType(1211);
+      const tmpResult = reflectionMergePartial;
+      const result = tmpResult.reflectionMergePartial(this, reflectionCreateResult, arr);
     }
     return reflectionCreateResult;
   }
@@ -52,14 +58,16 @@ const items = [
     key: "clone",
     value: function clone(arr) {
       const obj2 = this.create();
-      const result = MessageType(1211).reflectionMergePartial(this, obj2, arr);
+      const obj = reflectionMergePartial;
+      const result = obj.reflectionMergePartial(this, obj2, arr);
       return obj2;
     }
   },
   {
     key: "equals",
     value: function equals(arg0, arg1) {
-      return MessageType(1212).reflectionEquals(this, arg0, arg1);
+      const obj = reflectionEquals;
+      return obj.reflectionEquals(this, arg0, arg1);
     }
   },
   {
@@ -89,20 +97,24 @@ const items = [
   {
     key: "mergePartial",
     value: function mergePartial(EmojiFrecency, arr) {
-      const result = MessageType(1211).reflectionMergePartial(this, EmojiFrecency, arr);
+      const obj = reflectionMergePartial;
+      const result = obj.reflectionMergePartial(this, EmojiFrecency, arr);
     }
   },
   {
     key: "fromBinary",
     value: function fromBinary(toBinaryResult, BINARY_READ_OPTIONS) {
-      const binaryReadOptionsResult = MessageType(1192).binaryReadOptions(BINARY_READ_OPTIONS);
+      const obj = binaryReadOptions;
+      const binaryReadOptionsResult = obj.binaryReadOptions(BINARY_READ_OPTIONS);
       return this.internalBinaryRead(binaryReadOptionsResult.readerFactory(toBinaryResult), toBinaryResult.byteLength, binaryReadOptionsResult);
     }
   },
   {
     key: "fromJson",
     value: function fromJson(arg0, arg1) {
-      return this.internalJsonRead(arg0, MessageType(1197).jsonReadOptions(arg1));
+      const internalJsonRead = this.internalJsonRead;
+      const obj = jsonReadOptions;
+      return internalJsonRead(arg0, obj.jsonReadOptions(arg1));
     }
   },
   {
@@ -114,13 +126,17 @@ const items = [
   {
     key: "toJson",
     value: function toJson(arg0, prettySpaces) {
-      return this.internalJsonWrite(arg0, MessageType(1197).jsonWriteOptions(prettySpaces));
+      const internalJsonWrite = this.internalJsonWrite;
+      const obj = jsonReadOptions;
+      return internalJsonWrite(arg0, obj.jsonWriteOptions(prettySpaces));
     }
   },
   {
     key: "toJsonString",
     value: function toJsonString(arg0, prettySpaces) {
       prettySpaces = undefined;
+      const _JSON = JSON;
+      const toJsonResult = this.toJson(arg0, prettySpaces);
       if (null != prettySpaces) {
         prettySpaces = prettySpaces.prettySpaces;
       }
@@ -131,15 +147,16 @@ const items = [
           num = prettySpaces;
         }
       }
-      return JSON.stringify(this.toJson(arg0, prettySpaces), null, num);
+      return stringify(toJsonResult, null, num);
     }
   },
   {
     key: "toBinary",
     value: function toBinary(favoriteGifs, arg1) {
-      const binaryWriteOptionsResult = MessageType(1195).binaryWriteOptions(arg1);
-      const obj = MessageType(1195);
-      return this.internalBinaryWrite(favoriteGifs, binaryWriteOptionsResult.writerFactory(), binaryWriteOptionsResult).finish();
+      const obj = binaryWriteOptions;
+      const binaryWriteOptionsResult = obj.binaryWriteOptions(arg1);
+      const internalBinaryWriteResult = this.internalBinaryWrite(favoriteGifs, binaryWriteOptionsResult.writerFactory(), binaryWriteOptionsResult);
+      return internalBinaryWriteResult.finish();
     }
   },
   {
@@ -160,7 +177,9 @@ const items = [
           }
         }
       }
-      const error = new Error("Unable to parse message " + self.typeName + " from JSON " + MessageType(1188).typeofJsonValue(obj) + ".");
+      const typeName = self.typeName;
+      obj = typeofJsonValue;
+      const error = new Error("Unable to parse message " + typeName + " from JSON " + obj.typeofJsonValue(obj) + ".");
       throw error;
     }
   },
@@ -193,5 +212,6 @@ const items = [
     }
   }
 ];
+const MessageType_export = _createClass(MessageType, items);
 
-export const MessageType = _createClass(MessageType, items);
+export { MessageType_export as MessageType };

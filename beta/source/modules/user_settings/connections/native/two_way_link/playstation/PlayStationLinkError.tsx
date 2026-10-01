@@ -5,35 +5,39 @@
 // Exports: PlayStationLinkError
 
 // Module 8570 (PlayStationLinkError)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import intl4 from "intl" /* 1115 */;
 import useNavigation from "useNavigation" /* 1485 */;
-import useConnectRetry from "useConnectRetry" /* 8556 */;
-import TwoWayLinkError from "TwoWayLinkError" /* 8557 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 8556 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 8562 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const constants = fn(8562).PlayStationLinkModalScenes;
-const AbortCodes = fn(1074).AbortCodes;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let navigation;
+
+const constants = PlayStationLinkConstants.PlayStationLinkModalScenes;
+const AbortCodes = Constants.AbortCodes;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkError.tsx");
 
 export const PlayStationLinkError = function PlayStationLinkError(arg0) {
+  let errorCode;
+  let onClose;
+  let stringResult;
   ({ onClose, errorCode } = arg0);
-  const navigation = useNavigation.useNavigation();
-  const connectRetry = useConnectRetry.useConnectRetry(navigation, constants.PRE_CONNECT);
+  const obj = useNavigation;
+  navigation = obj.useNavigation();
+  const obj2 = react2;
+  const connectRetry = obj2.useConnectRetry(navigation, constants.PRE_CONNECT);
   if (errorCode === AbortCodes.UNDER_MINIMUM_AGE) {
     const intl2 = tmp(1115).intl;
-    let stringResult = intl2.string(tmp(1115).t["3dIn2A"]);
+    stringResult = intl2.string(tmp(1115).t["3dIn2A"]);
   } else {
     const intl = tmp(1115).intl;
     stringResult = intl.string(tmp(1115).t.qE9nqE);
   }
-  const obj3 = { title: null, body: null, onClose: null, onRetry: null };
+  const TwoWayLinkError = tmp(8557).TwoWayLinkError;
   const intl3 = tmp(1115).intl;
-  obj3.title = intl3.string(util.t.eY3qHd);
-  obj3.body = stringResult;
-  obj3.onClose = onClose;
-  obj3.onRetry = connectRetry;
-  return jsx(TwoWayLinkError.TwoWayLinkError, { title: null, body: null, onClose: null, onRetry: null });
+  return <TwoWayLinkError title={intl3.string(intl4.t.eY3qHd)} body={stringResult} onClose={onClose} onRetry={connectRetry} />;
 };

@@ -6,46 +6,56 @@
 
 // Module 15679 (useSuggestedFriends)
 import _modDef12 from "module_12" /* 12 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 12196 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import FriendSuggestionStore from "FriendSuggestionStore" /* 7075 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const SuggestedFriendSource = fn(12196).SuggestedFriendSource;
-const size = fn(2);
+const SuggestedFriendSource = FriendsScreenConstants.SuggestedFriendSource;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx");
 
 export default function useSuggestedFriends(arg0) {
+  let added;
+  let stateFromStoresArray;
+  let suggestions;
+  let tmp3;
   let obj = arg0;
   if (arg0 == null) {
     obj = {};
   }
   let flag = obj.isConnected;
+  let obj2 = stateFromStoresArray(flag[4]);
   const items = [FriendSuggestionStore];
-  stateFromStoresArray = stateFromStoresArray(flag[4]).useStateFromStoresArray(items, () => suggestions.getSuggestions());
-  const tmp = _slicedToArray(noop.useState([]), 2);
-  const added = tmp[0];
+  stateFromStoresArray = obj2.useStateFromStoresArray(items, () => suggestions.getSuggestions());
+  [added, tmp3] = react.useState([]);
+  const obj3 = react;
   if (flag == null) {
     flag = true;
   }
   const items1 = [added, stateFromStoresArray, flag];
-  const memo = noop.useMemo(() => {
-    if (flag) {
+  const memo = obj3.useMemo(() => {
+    const tmp = flag;
+    if (tmp) {
       const found = first.filter((source) => source.source === constants.USER_SUGGESTIONS);
       const mapped = stateFromStoresArray.map((user) => {
-        const obj = { user: user.user, friendSuggestionName: null, source: constants.USER_SUGGESTIONS, contactNames: user.contactNames };
-        const name = user.name;
-        obj.friendSuggestionName = name;
+        let name;
+        const obj = { user: user.user, friendSuggestionName: name, source: constants.USER_SUGGESTIONS, contactNames: user.contactNames };
+        name = user.name;
         return obj;
       });
-      return _modDef12.unionBy(found, mapped, (user) => user.user.id).sort((user, user2) => {
-        const name = added(4678).getName(user.user);
-        const obj = added(4678);
-        return name.localeCompare(added(4678).getName(user2.user));
+      let obj = _modDef12;
+      const unionByResult = obj.unionBy(found, mapped, (user) => user.user.id);
+      return unionByResult.sort((user, user2) => {
+        const obj = added(flag[6]);
+        const name = obj.getName(user.user);
+        const localeCompare = name.localeCompare;
+        const obj2 = added(flag[6]);
+        return localeCompare(obj2.getName(user2.user));
       });
     } else {
       return [];
     }
   }, items1);
-  return { added, setAdded: tmp[1], friendSuggestions: memo, numFriendSuggestions: flag ? memo.length : stateFromStoresArray.length };
+  return { added, setAdded: tmp3, friendSuggestions: memo, numFriendSuggestions: flag ? memo.length : stateFromStoresArray.length };
 };

@@ -4,25 +4,20 @@
 // Exports: isMissingLocaleDataError
 
 // Module 13747
-import e from "e" /* 1161 */;
+import module_1161 from "module_1161" /* 1161 */;
 
-e.__extends(function MissingLocaleDataError() {
+module_1161.__extends(function MissingLocaleDataError() {
   const self = this;
-  let tmp2 = null !== Error;
-  if (!tmp2) {
-    if (!tmp2) {
-      tmp2 = self;
-    }
-    tmp2.type = "MISSING_LOCALE_DATA";
-    return tmp2;
-  } else {
-    const apply = tmp.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
+  let applyResult = null !== Error;
+  const obj = Error;
+  if (applyResult) {
+    applyResult = obj(...arguments);
   }
+  if (!applyResult) {
+    applyResult = self;
+  }
+  applyResult.type = "MISSING_LOCALE_DATA";
+  return applyResult;
 }, Error);
 
 export const isMissingLocaleDataError = function isMissingLocaleDataError(type) {

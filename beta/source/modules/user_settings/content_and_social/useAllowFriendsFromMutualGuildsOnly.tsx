@@ -6,16 +6,19 @@
 
 // Module 15495 (useAllowFriendsFromMutualGuildsOnly)
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/useAllowFriendsFromMutualGuildsOnly.tsx");
 
 export const useAllowFriendsFromMutualGuildsOnly = function useAllowFriendsFromMutualGuildsOnly() {
+  let setting;
   const FriendSourceFlagsSetting = setting(2021).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
-  const memo = noop.useMemo(() => UserSettingsUtils.computeFlags(setting), items);
+  const memo = react.useMemo(() => {
+    const obj = UserSettingsUtils;
+    return obj.computeFlags(setting);
+  }, items);
   return memo.mutualGuilds && !memo.all;
 };

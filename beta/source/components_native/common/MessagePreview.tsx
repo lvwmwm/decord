@@ -5,34 +5,38 @@
 // Exports: default
 
 // Module 16640 (MessagePreview)
-import util from "util" /* 1115 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
+import react from "react" /* 19 */;
 import MessagePreviewStore from "MessagePreviewStore" /* 7808 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let AnalyticsObjects;
+let AnalyticsSections;
 ({ AnalyticsSections, AnalyticsObjects } = Constants);
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 const analyticsLocation = { section: AnalyticsSections.CHANNEL_SEARCH, object: AnalyticsObjects.CHANNEL_SEARCH };
-const size = fn(2);
 const result = size.fileFinishedImporting("components_native/common/MessagePreview.tsx");
 
-export default function MessagePreview(channelId) {
-  const onBeforeJumpToMessage = channelId.onBeforeJumpToMessage;
+export default function MessagePreview(onBeforeJumpToMessage) {
+  onBeforeJumpToMessage = onBeforeJumpToMessage.onBeforeJumpToMessage;
+  const channelId = onBeforeJumpToMessage.channelId;
+  let obj = onBeforeJumpToMessage(504);
   const items = [MessagePreviewStore];
-  const stateFromStoresObject = onBeforeJumpToMessage(504).useStateFromStoresObject(items, () => ({ messages: MessagePreviewStore.messages, jumpTargetId: MessagePreviewStore.jumpTargetId }));
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ messages: MessagePreviewStore.messages, jumpTargetId: MessagePreviewStore.jumpTargetId }));
   const jumpTargetId = stateFromStoresObject.jumpTargetId;
   const items1 = [jumpTargetId, onBeforeJumpToMessage];
-  const memo = noop.useMemo(() => {
-    const obj = { jumpToChatText: null, jumpTargetId: null, onBeforeJumpToMessage: null };
-    const intl = util.intl;
-    obj.jumpToChatText = intl.string(util.t["+TSRGD"]);
-    obj.jumpTargetId = jumpTargetId;
-    obj.onBeforeJumpToMessage = onBeforeJumpToMessage;
+  const messages = stateFromStoresObject.messages;
+  const memo = react.useMemo(() => {
+    let intl;
+    const obj = { jumpToChatText: intl.string(intl2.t["+TSRGD"]), jumpTargetId, onBeforeJumpToMessage };
+    intl = intl2.intl;
     return obj;
   }, items1);
-  const effect = noop.useEffect(() => () => {
-    jumpTargetId(closure_1_2[6]).clearMessages();
+  const effect = react.useEffect(() => () => {
+    const obj = jumpTargetId(closure_1_2[6]);
+    obj.clearMessages();
   }, []);
-  return jsx(onBeforeJumpToMessage(12825).ChatPreview, { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation });
+  return jsx(onBeforeJumpToMessage(12825).ChatPreview, { channelId, messages, jumpToChatProps: memo, analyticsLocation });
 };

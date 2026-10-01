@@ -5,102 +5,127 @@
 // Exports: default
 
 // Module 11044 (ChannelsAndRolesModal)
+import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6522 */;
 import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 6753 */;
 import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10385 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let importDefault;
+
+let c9;
+let metroImportAll;
+let obj2;
+let obj3;
 function ChannelsAndRolesScreen(guildId) {
+  let closure_1;
+  let closure_3;
+  let items1;
+  let items3;
+  let obj6;
+  let tmp19;
   guildId = guildId.guildId;
-  const defaultTab = guildId.defaultTab;
+  let defaultTab = guildId.defaultTab;
   importDefault = undefined;
   let defaultIndex;
   _slicedToArray = undefined;
   let segmentedControlState;
   let tmp = closure_10();
   const items = [GuildStore];
-  const stateFromStores = guildId(defaultIndex[8]).useStateFromStores(items, () => GuildStore.getGuild(guildId));
+  const obj = guildId(defaultIndex[8]);
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
   const tmp6 = require("useGuildOnboardingAvailable")(stateFromStores);
   importDefault = tmp6;
-  if (defaultTab != null) {
-    const tmp10 = _slicedToArray(segmentedControlState.useState(defaultTab), 2);
-    defaultIndex = tmp10[0];
-    _slicedToArray = tmp12;
-    const obj3 = { pageWidth: 0, defaultIndex, onSetActiveIndex: tmp10[1], items: null };
-    const intl = tmp2(tmp3[11]).intl;
-    const items1 = [intl.string(tmp2(tmp3[11]).t.F1VixV), ];
-    const intl2 = tmp2(tmp3[11]).intl;
-    items1[1] = intl2.string(tmp2(tmp3[11]).t.MWmtj8);
-    obj3.items = items1.map((id) => ({ id, label: id, page: null }));
-    segmentedControlState = tmp2(tmp3[10]).useSegmentedControlState(obj3);
-    const items2 = [tmp6, defaultIndex, segmentedControlState];
-    const effect = segmentedControlState.useEffect(() => {
-      let tmp = closure_1;
-      if (!closure_1) {
-        tmp = first !== GuildOnboardingTab.CUSTOMIZE;
-      }
-      if (!tmp) {
-        closure_3(GuildOnboardingTab.BROWSE);
-        segmentedControlState.setActiveIndex(GuildOnboardingTab.BROWSE, false);
-      }
-    }, items2);
-    const obj4 = { style: tmp.screen, children: null };
-    let tmp17 = null;
-    if (tmp6) {
-      const obj5 = { style: tmp.tabBar, children: null };
-      const obj6 = { state: segmentedControlState };
-      obj5.children = closure_8(tmp2(tmp3[12]).SegmentedControl, obj6);
-      tmp17 = closure_8(tmp16, obj5);
-    }
-    const items3 = [tmp17, ];
-    if (defaultIndex === GuildOnboardingTab.CUSTOMIZE) {
-      const obj7 = { setTab: tmp12, guildId };
-      let tmp21 = closure_8(tmp5(tmp3[13]), obj7);
-    } else {
-      const obj8 = { guildId };
-      tmp21 = closure_8(tmp5(tmp3[14]), obj8);
-    }
-    items3[1] = tmp21;
-    obj4.children = items3;
-    return closure_9(View, obj4);
+  const useState = segmentedControlState.useState;
+  const obj2 = segmentedControlState;
+  if (defaultTab == null) {
+    defaultTab = tmp6 ? tmp7.CUSTOMIZE : tmp7.BROWSE;
   }
+  const tmp8 = _slicedToArray(useState(defaultTab), 2);
+  defaultIndex = tmp8[0];
+  _slicedToArray = tmp10;
+  const obj3 = { pageWidth: 0, defaultIndex, onSetActiveIndex: tmp8[1], items: items1.map((id) => ({ id, label: id, page: null })) };
+  const useSegmentedControlState = tmp2(tmp3[10]).useSegmentedControlState;
+  guildId(defaultIndex[10]);
+  const intl = tmp2(tmp3[11]).intl;
+  items1 = [intl.string(tmp2(tmp3[11]).t.F1VixV), ];
+  const intl2 = tmp2(tmp3[11]).intl;
+  items1[1] = intl2.string(guildId(defaultIndex[11]).t.MWmtj8);
+  segmentedControlState = useSegmentedControlState(obj3);
+  const items2 = [tmp6, defaultIndex, segmentedControlState];
+  const effect = obj2.useEffect(() => {
+    const tmp = closure_1 || first !== GuildOnboardingTab.CUSTOMIZE;
+    if (!tmp) {
+      closure_3(GuildOnboardingTab.BROWSE);
+      segmentedControlState.setActiveIndex(GuildOnboardingTab.BROWSE, false);
+    }
+  }, items2);
+  let tmp16 = null;
+  const obj4 = { style: tmp.screen, children: items3 };
+  const tmp14 = closure_9;
+  if (tmp6) {
+    const obj5 = { style: tmp.tabBar, children: closure_8(guildId(defaultIndex[12]).SegmentedControl, obj6) };
+    obj6 = { state: segmentedControlState };
+    tmp16 = closure_8(tmp15, obj5);
+  }
+  items3 = [tmp16, ];
+  if (defaultIndex === GuildOnboardingTab.CUSTOMIZE) {
+    const obj7 = { setTab: tmp8[1], guildId };
+    tmp19 = closure_8(tmp5(tmp3[13]), obj7);
+  } else {
+    const obj8 = { guildId };
+    tmp19 = closure_8(tmp5(tmp3[14]), obj8);
+  }
+  items3[1] = tmp19;
+  return tmp14(View, obj4);
 }
-const View = fn(17).View;
-const GuildOnboardingTab = fn(6522).GuildOnboardingTab;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
-const obj2 = { screen: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, tabBar: null };
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj2.tabBar = { paddingHorizontal: nativeDefault.space.PX_12, paddingTop: nativeDefault.space.PX_16 };
-let closure_10 = createStyles.createStyles(obj2);
-const size = fn(2);
+let _slicedToArray = _slicedToArray_mod;
+const View = react_native.View;
+const GuildOnboardingTab = GuildOnboardingPromptsConstants.GuildOnboardingTab;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { screen: obj2, tabBar: obj3 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { paddingHorizontal: nativeDefault.space.PX_12, paddingTop: nativeDefault.space.PX_16 };
+let closure_10 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_onboarding/native/ChannelsAndRolesModal.tsx");
 
 export default function ChannelsAndRolesModal(arg0) {
+  let defaultTab;
+  let guildId;
+  let stringResult;
   ({ guildId: require, defaultTab: importDefault } = arg0);
+  let obj = useStateFromStores;
   const items = [GuildStore];
-  const stateFromStores = useStateFromStores.useStateFromStores(items, () => GuildStore.getGuild(guildId));
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(require));
   const tmp2 = useGuildOnboardingAvailableDefault(stateFromStores);
-  const tmp3 = closure_8;
-  const intl = util.intl;
+  const tmp4 = ModalStackNavigatorDefault;
+  const intl = intl3.intl;
   const string = intl.string;
-  const t = util.t;
+  const t = intl3.t;
+  const tmp3 = closure_8;
   if (tmp2) {
-    let stringResult = string(t.h9mGOP);
+    stringResult = string(t.h9mGOP);
   } else {
     stringResult = string(t.et6wav);
   }
-  return tmp3(ModalStackNavigatorDefault, {
+  const obj2 = {
     screenKey: "channelAndRolesModal",
     title: stringResult,
     render() {
-      return React6(ChannelsAndRolesScreen, { guildId, defaultTab });
+      const obj = { guildId: require, defaultTab: importDefault };
+      return metroImportAll(ChannelsAndRolesScreen, obj);
     }
-  });
+  };
+  return tmp3(tmp4, obj2);
 };

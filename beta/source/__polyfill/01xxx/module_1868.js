@@ -4,33 +4,37 @@
 // Exports: clampedScrollTarget, computeIOSContentOffset, getEffectiveHeight, getMinimumPaddingAbsorbed, getScrollEffective, getVisibleMinimumPaddingFraction, isScrollAtEnd, shouldShiftContent
 
 // Module 1868
-import cancelAnimation from "cancelAnimation" /* 1638 */;
+import _mod1638 from "module_1638" /* 1638 */;
 
-require = fn;
-const dependencyMap = arg6;
-fn = function t(arg0, arg1, arg2) {
+const require = globalThis.__r;
+
+const fn = function t(arg0, arg1, arg2) {
   let interpolateResult = arg0;
   if (0 !== arg2) {
     interpolateResult = arg0;
     if (0 !== arg1) {
       const items = [0, arg1];
       const _Math = Math;
-      const items1 = [0, Math.max(arg1 - arg2, 0)];
-      interpolateResult = cancelAnimation.interpolate(arg0, items, items1);
+      const interpolate = _mod1638.interpolate;
+      const items1 = [0];
+      _mod1638;
+      items1[1] = Math.max(arg1 - arg2, 0);
+      interpolateResult = interpolate(arg0, items, items1);
     }
   }
   return interpolateResult;
 };
-fn.__closure = { interpolate: fn(1638).interpolate };
+fn.__closure = { interpolate: require("module_1638").interpolate };
 fn.__workletHash = 1787304919616;
 fn.__initData = { code: "function pnpm_helpersTs1(height,targetKeyboardHeight,offset){const{interpolate}=this.__closure;if(offset===0||targetKeyboardHeight===0){return height;}return interpolate(height,[0,targetKeyboardHeight],[0,Math.max(targetKeyboardHeight-offset,0)]);}" };
 const fn2 = function n(arg0, arg1, arg2) {
+  let tmp3;
   let flag = arg3;
   if (arg3 === undefined) {
     flag = false;
   }
   if (flag) {
-    let tmp3 = arg0 <= 20;
+    tmp3 = arg0 <= 20;
   } else {
     tmp3 = arg0 + arg1 >= arg2 - 20;
   }
@@ -107,12 +111,14 @@ const fn8 = function u(arg0, arg1, arg2, arg3, arg4, arg5) {
   } else {
     const _Math2 = Math;
     const _Math3 = Math;
-    return Math.min(Math.max(arg1 + arg0, 0), max(diff + tmp, 0));
+    const maxResult = max(diff + tmp, 0);
+    return Math.min(Math.max(arg1 + arg0, 0), maxResult);
   }
 };
 fn8.__closure = {};
 fn8.__workletHash = 11573218187512;
 fn8.__initData = { code: "function pnpm_helpersTs8(relativeScroll,keyboardHeight,contentHeight,layoutHeight,inverted,totalPaddingForMaxScroll){const paddingForMax=totalPaddingForMaxScroll!==undefined?totalPaddingForMaxScroll:keyboardHeight;if(inverted){const maxScroll=Math.max(contentHeight-layoutHeight,0);return Math.max(Math.min(relativeScroll-keyboardHeight,maxScroll),-paddingForMax);}const maxScroll=Math.max(contentHeight-layoutHeight+paddingForMax,0);return Math.min(Math.max(keyboardHeight+relativeScroll,0),maxScroll);}" };
+({ interpolate: require("module_1638").interpolate });
 
 export const getEffectiveHeight = fn;
 export const isScrollAtEnd = fn2;

@@ -5,31 +5,30 @@
 // Exports: default
 
 // Module 14590 (BountiesModalCloseButton)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import Pressables from "Pressables" /* 5435 */;
-import XSmallIcon from "XSmallIcon" /* 5992 */;
-import noop from "module_19" /* 19 */;
+import XSmallIcon2 from "XSmallIcon" /* 5992 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles(() => {
-  const obj = { closeButton: null };
-  const size = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round, width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32 };
-  obj.closeButton = size;
+  const obj = { closeButton: size };
+  size = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round, width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32 };
   return obj;
 });
-let size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalCloseButton.tsx");
 
 export default function BountiesModalCloseButton(onPress) {
-  const obj = { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12, onPress: null, style: null, children: null };
-  const intl = util.intl;
-  obj.accessibilityLabel = intl.string(util.t.cpT0Cq);
-  obj.onPress = onPress.onPress;
-  obj.style = closure_4().closeButton;
+  onPress = onPress.onPress;
   const tmp = closure_4();
-  obj.children = jsx(XSmallIcon.XSmallIcon, { size: "sm", color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT });
-  return jsx(Pressables.PressableOpacity, { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12, onPress: null, style: null, children: null });
+  const PressableOpacity = Pressables.PressableOpacity;
+  const intl = intl2.intl;
+  ({ size: "sm", color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT });
+  const XSmallIcon = XSmallIcon2.XSmallIcon;
+  return <PressableOpacity accessibilityLabel={intl.string(intl2.t.cpT0Cq)} accessibilityRole="button" hitSlop={12} onPress={onPress} style={tmp.closeButton}>{null}</PressableOpacity>;
 };

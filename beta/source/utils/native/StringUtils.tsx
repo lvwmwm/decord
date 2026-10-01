@@ -4,13 +4,13 @@
 // Exports: splitGraphemes
 
 // Module 10364
-import rawDefault from "raw" /* 10363 */;
+import _modDef10363 from "module_10363" /* 10363 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/native/StringUtils.tsx");
 
 export const splitGraphemes = function splitGraphemes(memo) {
-  const obj = rawDefault();
+  const obj = _modDef10363();
   const items = [];
   let match = obj.exec(memo);
   let num = 0;
@@ -21,8 +21,8 @@ export const splitGraphemes = function splitGraphemes(memo) {
         let push = items.push;
         let _Array = Array;
         let items1 = [];
-        let arraySpreadResult = HermesBuiltin.arraySpread(Array.from(memo.slice(num, match.index)), 0);
-        let applyResult = HermesBuiltin.apply(items1, items);
+        let arraySpreadResult = HermesBuiltin.arraySpread(items1, Array.from(memo.slice(num, match.index)), 0);
+        let applyResult = HermesBuiltin.apply(push, items1, items);
       }
       let arr = items.push(match[0]);
       num = obj.lastIndex;
@@ -34,8 +34,8 @@ export const splitGraphemes = function splitGraphemes(memo) {
     const push2 = items.push;
     const _Array2 = Array;
     const items2 = [];
-    HermesBuiltin.arraySpread(Array.from(memo.slice(num2)), 0);
-    HermesBuiltin.apply(items2, items);
+    HermesBuiltin.arraySpread(items2, Array.from(memo.slice(num2)), 0);
+    HermesBuiltin.apply(push2, items2, items);
   }
   return items;
 };

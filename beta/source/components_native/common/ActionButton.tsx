@@ -5,23 +5,26 @@
 // Exports: default
 
 // Module 10354 (ActionButton)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import ButtonHooks from "ButtonHooks" /* 5287 */;
-import IconButton from "IconButton" /* 7363 */;
-import noop from "module_19" /* 19 */;
+import IconButton2 from "IconButton" /* 7363 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("components_native/common/ActionButton.tsx");
 
-export default function ActionButton(style) {
+export default function ActionButton(IconComponent) {
   let str = "tertiary";
-  if ("positive" === style.type) {
+  IconComponent = IconComponent.IconComponent;
+  if ("positive" === IconComponent.type) {
     str = "active";
   }
-  const obj2 = { style: style.styles, children: null };
-  ({ onPress: obj3.onPress, accessibilityLabel: obj3.accessibilityLabel } = style);
-  obj2.children = jsx(IconButton.IconButton, { icon: jsx(style.IconComponent, { color: ButtonHooks.useButtonTextColorStyles(str).color, size: "sm" }), onPress: null, accessibilityLabel: null, variant: str, size: "sm" });
+  const obj = ButtonHooks;
+  const color = obj.useButtonTextColorStyles(str).color;
+  const IconButton = IconButton2.IconButton;
+  ({ onPress: obj3.onPress, accessibilityLabel: obj3.accessibilityLabel } = IconComponent);
   return <View style={arg0.styles}>{null}</View>;
 };

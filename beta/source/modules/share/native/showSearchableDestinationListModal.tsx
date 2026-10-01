@@ -5,20 +5,26 @@
 // Exports: default
 
 // Module 10440 (showSearchableDestinationListModal)
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import ChatInputUtils from "ChatInputUtils" /* 4701 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
 const useIsWindowLarge = tmp(6364);
 const result = size.fileFinishedImporting("modules/share/native/showSearchableDestinationListModal.tsx");
 
 export default function showSearchableDestinationListModal(promise, merged, c3) {
-  ChatInputUtils.dismissKeyboard();
-  const obj2 = ModalActionCreatorsDefault;
-  if (!obj3.isIOS()) {
-    const obj4 = { presentation: "modal" };
+  let obj3;
+  const obj = ChatInputUtils;
+  obj.dismissKeyboard();
+  const pushLazy = ModalActionCreatorsDefault.pushLazy;
+  ModalActionCreatorsDefault;
+  const obj2 = PlatformUtils;
+  if (!obj2.isIOS()) {
+    obj3 = { presentation: "modal" };
   } else {
-    const tmpResult = useIsWindowLarge;
+    useIsWindowLarge;
   }
-  return obj2.pushLazy(promise, merged, c3, obj4);
+  return pushLazy(promise, merged, c3, obj3);
 };

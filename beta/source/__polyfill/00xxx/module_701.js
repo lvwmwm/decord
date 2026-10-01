@@ -4,7 +4,7 @@
 // Exports: parseSampleRate
 
 // Module 701
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const parseSampleRate = function parseSampleRate(flag) {
   if (typeof flag === "boolean") {

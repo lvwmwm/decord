@@ -5,74 +5,49 @@
 // Exports: default
 
 // Module 16281 (FrameWebView)
+import Fragment from "Fragment" /* 21 */;
 import FramesNativeManagerDefault from "FramesNativeManager" /* 8751 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 8760 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/frames/native/FrameWebView.tsx");
 
-export default function FrameWebView(applicationId) {
-  const frameId = applicationId.frameId;
-  const merged = Object.assign(applicationId, Object.assign({ applicationId: 0, frameId: 0 }));
+export default function FrameWebView(frameId) {
+  frameId = frameId.frameId;
+  const applicationId = frameId.applicationId;
+  const merged = Object.assign(frameId, Object.assign({ applicationId: 0, frameId: 0 }));
   let hadInvalidUrlError;
-  const hasInvalidUrlErrorState = frameId(hadInvalidUrlError[2]).useHasInvalidUrlErrorState();
+  let obj = frameId(hadInvalidUrlError[2]);
+  const hasInvalidUrlErrorState = obj.useHasInvalidUrlErrorState();
   const hasInvalidUrlError = hasInvalidUrlErrorState.hasInvalidUrlError;
   hadInvalidUrlError = hasInvalidUrlErrorState.hadInvalidUrlError;
   const items = [hasInvalidUrlError, hadInvalidUrlError, frameId];
-  const effect = noop.useEffect(() => {
-    let tmp = !hadInvalidUrlError;
-    if (!hadInvalidUrlError) {
-      tmp = hasInvalidUrlError;
-    }
+  const setHasInvalidUrlError = hasInvalidUrlErrorState.setHasInvalidUrlError;
+  const effect = react.useEffect(() => {
+    const tmp = !hadInvalidUrlError && hasInvalidUrlError;
     if (tmp) {
-      FramesNativeManagerDefault.leaveFrame(frameId);
+      const obj = FramesNativeManagerDefault;
+      obj.leaveFrame(frameId);
     }
   }, items);
-  const obj2 = {
-    hasIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).hasIframeId();
-    },
-    getOrCreateIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).getOrCreateIframeId();
-    },
-    releaseIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).releaseIframeId();
-    },
-    onIframeMount(iframeId) {
-      return FramesActionCreatorsDefault.attachFrameIframe(frameId, iframeId);
-    },
-    onIframeUnmount(iframeId) {
-      return FramesActionCreatorsDefault.detachFrameIframe(frameId, iframeId);
-    },
-    hasInvalidUrlError,
-    setHasInvalidUrlError: hasInvalidUrlErrorState.setHasInvalidUrlError,
-    hadInvalidUrlError,
-    applicationId: applicationId.applicationId
-  };
+  const BaseActivityWebView = frameId(hadInvalidUrlError[2]).BaseActivityWebView;
   const merged1 = Object.assign(merged);
-  obj2.allowMotionSensors = true;
-  return jsx(frameId(hadInvalidUrlError[2]).BaseActivityWebView, {
-    hasIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).hasIframeId();
-    },
-    getOrCreateIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).getOrCreateIframeId();
-    },
-    releaseIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).releaseIframeId();
-    },
-    onIframeMount(iframeId) {
-      return FramesActionCreatorsDefault.attachFrameIframe(frameId, iframeId);
-    },
-    onIframeUnmount(iframeId) {
-      return FramesActionCreatorsDefault.detachFrameIframe(frameId, iframeId);
-    },
-    hasInvalidUrlError,
-    setHasInvalidUrlError: hasInvalidUrlErrorState.setHasInvalidUrlError,
-    hadInvalidUrlError,
-    applicationId: applicationId.applicationId
-  });
+  return <BaseActivityWebView hasIframeId={function hasIframeId() {
+    const obj = hasInvalidUrlError(hadInvalidUrlError[3]);
+    return obj.hasIframeId();
+  }} getOrCreateIframeId={function getOrCreateIframeId() {
+    const obj = hasInvalidUrlError(hadInvalidUrlError[3]);
+    return obj.getOrCreateIframeId();
+  }} releaseIframeId={function releaseIframeId() {
+    const obj = hasInvalidUrlError(hadInvalidUrlError[3]);
+    return obj.releaseIframeId();
+  }} onIframeMount={function onIframeMount(iframeId) {
+    const obj = FramesActionCreatorsDefault;
+    return obj.attachFrameIframe(frameId, iframeId);
+  }} onIframeUnmount={function onIframeUnmount(iframeId) {
+    const obj = FramesActionCreatorsDefault;
+    return obj.detachFrameIframe(frameId, iframeId);
+  }} hasInvalidUrlError={hasInvalidUrlError} setHasInvalidUrlError={setHasInvalidUrlError} hadInvalidUrlError={hadInvalidUrlError} applicationId={applicationId} allowMotionSensors />;
 };

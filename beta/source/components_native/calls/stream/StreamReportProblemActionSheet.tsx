@@ -5,76 +5,88 @@
 // Exports: default
 
 // Module 17041 (StreamReportProblemActionSheet)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import useMountEffectDefault from "useMountEffect" /* 5298 */;
 import BottomSheetModal from "BottomSheetModal" /* 6045 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
-import ActionSheet from "ActionSheet" /* 6618 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6570 */;
+import ActionSheet2 from "ActionSheet" /* 6618 */;
 import ActionSheetRow from "ActionSheetRow" /* 6620 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7157 */;
 import trackStreamProblemDefault from "trackStreamProblem" /* 16321 */;
 import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 17042 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { container: { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const AnalyticEvents = Constants.AnalyticEvents;
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("components_native/calls/stream/StreamReportProblemActionSheet.tsx");
 
 export default function ReportProblem(arg0) {
+  let analyticsData;
+  let intl;
+  let stream;
   ({ stream: require, analyticsData: importDefault } = arg0);
-  useMountEffectDefault(() => {
-    const streamerApplication = StreamerApplicationSelectors.getStreamerApplication(stream, PresenceStore);
-    const obj3 = { type: "Stream Issue Sheet", other_user_id: stream.ownerId, application_id: null, application_name: null, game_id: null };
-    let id = null;
+  let tmp = closure_6();
+  const tmp2 = useMountEffectDefault(() => {
+    let id;
+    let id1;
+    let name;
+    const obj = StreamerApplicationSelectors;
+    const streamerApplication = obj.getStreamerApplication(require, PresenceStore);
+    const obj2 = { type: "Stream Issue Sheet", other_user_id: require.ownerId, application_id: id, application_name: name, game_id: id1 };
+    id = null;
+    const track = AnalyticsUtilsDefault.track;
+    const OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+    AnalyticsUtilsDefault;
     if (null != streamerApplication) {
       id = streamerApplication.id;
     }
-    obj3.application_id = id;
-    let name = null;
+    name = null;
     if (null != streamerApplication) {
       name = streamerApplication.name;
     }
-    obj3.application_name = name;
-    let id1 = null;
+    id1 = null;
     if (null != streamerApplication) {
       id1 = streamerApplication.id;
     }
-    obj3.game_id = id1;
-    AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, obj3);
+    track(OPEN_POPOUT, obj2);
   });
-  let tmp = closure_6();
-  const mapped = getStreamIssueReportOptionsDefault({ isStreamer: false, isEndStream: false }).map((label, index) => {
-    value = label.value;
-    return jsx(stream(dependencyMap[13]).ActionSheetRow, {
+  const arr = getStreamIssueReportOptionsDefault({ isStreamer: false, isEndStream: false });
+  const mapped = arr.map((label, index) => {
+    const value = label.value;
+    return jsx(ActionSheetRow.ActionSheetRow, {
       label: label.label,
       arrow: true,
       onPress() {
-        const obj = { problem: value, stream, feedback: "", streamApplication: null, analyticsData: null, location: "Stream" };
+        let obj2;
+        const obj = { problem: value, stream: require, feedback: "", streamApplication: obj2.getStreamerApplication(require, PresenceStore), analyticsData: importDefault, location: "Stream" };
         const tmp = trackStreamProblemDefault;
-        obj.streamApplication = StreamerApplicationSelectors.getStreamerApplication(stream, PresenceStore);
-        obj.analyticsData = analyticsData;
+        obj2 = StreamerApplicationSelectors;
         tmp(obj);
-        ActionSheetActionCreatorsDefault.hideActionSheet();
-        ToastUtils.presentFeedbackSent();
+        const obj3 = ActionSheetActionCreatorsDefault;
+        obj3.hideActionSheet();
+        const obj4 = ToastUtils;
+        obj4.presentFeedbackSent();
       }
     }, index);
   });
-  let obj = { scrollable: true, header: null, children: null };
-  let obj2 = { title: null };
-  const intl = util.intl;
-  obj2.title = intl.string(util.t.XuqqwI);
-  obj.header = jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: null });
-  const arr = getStreamIssueReportOptionsDefault({ isStreamer: false, isEndStream: false });
-  obj.children = jsx(BottomSheetModal.BottomSheetScrollView, { style: tmp.container, children: jsx(ActionSheetRow.ActionSheetRow.Group, { hasIcons: false, children: mapped }) });
-  return jsx(ActionSheet.ActionSheet, { scrollable: true, header: null, children: null });
+  const ActionSheet = ActionSheet2.ActionSheet;
+  let obj2 = { title: intl.string(intl2.t.XuqqwI) };
+  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  intl = intl2.intl;
+  let obj3 = { style: tmp.container, children: null };
+  const BottomSheetScrollView = BottomSheetModal.BottomSheetScrollView;
+  return <ActionSheet scrollable header={null}>{null}</ActionSheet>;
 };

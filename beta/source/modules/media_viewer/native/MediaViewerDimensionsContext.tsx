@@ -5,20 +5,21 @@
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions
 
 // Module 7741 (MediaViewerDimensionsContext)
+import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const redux = noop.createContext(null);
-const size = fn(2);
+const jsx = Fragment.jsx;
+const redux = react.createContext(null);
 const result = size.fileFinishedImporting("modules/media_viewer/native/MediaViewerDimensionsContext.tsx");
 
 export const MediaViewerDimensionsProvider = function MediaViewerDimensionsProvider(children) {
   return <redux.Provider value={useWindowDimensionsDefault({ ignoreKeyboard: true })}>{arg0.children}</redux.Provider>;
 };
 export const useMediaViewerDimensions = function useMediaViewerDimensions() {
-  const context = noop.useContext(closure_4);
+  const context = react.useContext(redux);
   _modDef38(null != context, "useMediaViewerDimensions must be used inside MediaViewerDimensionsProvider");
   return context;
 };

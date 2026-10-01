@@ -6,13 +6,15 @@
 
 // Module 17625 (useInviteApplicationBypassInfo)
 import PermissionStore from "PermissionStore" /* 4469 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Constants = fn(1074);
+let c3;
+let closure_4;
 ({ GuildFeatures: c3, Permissions: closure_4 } = Constants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/instant_invite/useInviteApplicationBypassInfo.tsx");
 
 export const useInviteApplicationBypassInfo = function useInviteApplicationBypassInfo(guild) {
@@ -20,7 +22,8 @@ export const useInviteApplicationBypassInfo = function useInviteApplicationBypas
   const items = [PermissionStore];
   const items1 = [guild];
   let hasItem;
-  const stateFromStores = require("initialize").useStateFromStores(items, () => PermissionStore.can(constants2.KICK_MEMBERS, closure_0), items1);
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(constants.KICK_MEMBERS, guild), items1);
   if (guild != null) {
     const features = guild.features;
     hasItem = features.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);
@@ -35,9 +38,6 @@ export const useInviteApplicationBypassInfo = function useInviteApplicationBypas
     tmp4 = !hasItem1;
   }
   const isManualApprovalGuild = !tmp4;
-  let canCreateApplicationBypassInvites = isManualApprovalGuild;
-  if (isManualApprovalGuild) {
-    canCreateApplicationBypassInvites = stateFromStores;
-  }
+  const canCreateApplicationBypassInvites = isManualApprovalGuild && stateFromStores;
   return { canCreateApplicationBypassInvites, isManualApprovalGuild };
 };

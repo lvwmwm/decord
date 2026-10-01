@@ -4,24 +4,24 @@
 // Exports: getCalendarPreferenceDataForRegion, getHourCyclesPreferenceDataForLocaleOrRegion, getTimeZonePreferenceForRegion, getWeekDataForRegion
 
 // Module 13762
-import e from "e" /* 1161 */;
-import calendars from "calendars" /* 13763 */;
+import _mod1161 from "module_1161" /* 1161 */;
+import calendars2 from "calendars" /* 13763 */;
 import hourCycles from "hourCycles" /* 13764 */;
 import timezones from "timezones" /* 13765 */;
-import weekData from "weekData" /* 13766 */;
+import weekData2 from "weekData" /* 13766 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const getCalendarPreferenceDataForRegion = function getCalendarPreferenceDataForRegion(region) {
   let str = null;
   if (region) {
     str = region.toUpperCase();
   }
+  const calendars = calendars2.calendars;
   if (!str) {
     str = "";
   }
-  return calendars.calendars[str] || calendars.calendars["001"].map((item) => {
+  const arr = calendars[str] || calendars2.calendars["001"];
+  return arr.map((item) => {
     let str = "gregory";
     if ("gregorian" !== item) {
       let str2 = "islamicc";
@@ -47,13 +47,15 @@ export const getHourCyclesPreferenceDataForLocaleOrRegion = function getHourCycl
   if (!v001) {
     v001 = tmp2(13764).hourCycles["001"];
   }
-  return e.__spreadArray([], v001, true);
+  const tmp2Result = _mod1161;
+  return tmp2Result.__spreadArray([], v001, true);
 };
 export const getTimeZonePreferenceForRegion = function getTimeZonePreferenceForRegion(region) {
   const formatted = region.toLowerCase();
   const items = [];
   if (timezones.timezones[formatted]) {
-    return tmp2(1161).__spreadArray(items, tmp2(13765).timezones[formatted], true);
+    const tmp2Result = _mod1161;
+    return tmp2Result.__spreadArray(items, timezones.timezones[formatted], true);
   } else {
     return items;
   }
@@ -63,8 +65,10 @@ export const getWeekDataForRegion = function getWeekDataForRegion(region) {
   if (region) {
     str = region.toUpperCase();
   }
+  const weekData = weekData2.weekData;
   if (!str) {
     str = "001";
   }
-  return weekData.weekData[str] || weekData.weekData["001"];
+  const tmp3 = weekData[str] || weekData2.weekData["001"];
+  return tmp3;
 };

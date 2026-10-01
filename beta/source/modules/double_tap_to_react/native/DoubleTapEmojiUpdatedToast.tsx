@@ -5,93 +5,98 @@
 // Exports: showDoubleTapEmojiUpdatedToast
 
 // Module 10586 (DoubleTapEmojiUpdatedToast)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
+import EmojiConstants from "EmojiConstants" /* 1375 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let num2;
+let obj2;
+let obj3;
+let obj4;
 class ToastEmoji {
-  constructor(arg0) {
-    emoji = global.emoji;
-    closure_1 = undefined;
-    obj = emoji(closure_2[7]);
-    items = [];
-    items[0] = closure_4;
-    stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-    closure_1 = stateFromStores;
-    tmp2 = closure_7();
-    items1 = [, ];
-    items1[0] = emoji;
-    items1[1] = stateFromStores;
-    memo = closure_3.useMemo(() => {
+  constructor(emoji) {
+    let str;
+    let useReducedMotion;
+    emoji = emoji.emoji;
+    let obj = emoji(504);
+    const items = [AccessibilityStore];
+    const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+    const tmp2 = closure_7();
+    const items1 = [emoji, stateFromStores];
+    const memo = react.useMemo(() => {
+      let animated;
+      let url;
       if (null != emoji.id) {
-        const obj2 = { id: tmp.id, animated: null, size: null };
-        let animated = !stateFromStores;
+        const obj = { id: emoji.id, animated, size: EMOJI_URL_BASE_SIZE };
+        animated = !stateFromStores;
+        const getEmojiURL = AvatarUtilsDefault.getEmojiURL;
+        AvatarUtilsDefault;
         if (!stateFromStores) {
           animated = tmp.animated;
         }
-        obj2.animated = animated;
-        obj2.size = EMOJI_URL_BASE_SIZE;
-        let url = AvatarUtilsDefault.getEmojiURL(obj2);
+        url = getEmojiURL(obj);
       } else {
         url = tmp.url;
       }
       return url;
     }, items1);
-    tmp4 = jsx;
-    obj1 = { style: tmp2.toastEmoji, fastImageStyle: tmp2.toastEmojiCustom, textEmojiStyle: tmp2.toastEmojiText, name: null, src: null };
+    const tmp4 = jsx;
+    const obj2 = { style: tmp2.toastEmoji, fastImageStyle: tmp2.toastEmojiCustom, textEmojiStyle: tmp2.toastEmojiText, name: str, src: memo };
     str = "";
-    tmp5 = closure_1(closure_2[9]);
+    const tmp5 = stateFromStores(6551);
     if (null == emoji.id) {
       str = emoji.surrogates;
     }
-    obj1.name = str;
-    obj1.src = memo;
-    return tmp4(tmp5, obj1);
+    return tmp4(tmp5, obj2);
   }
 }
 function ToastText(emoji) {
-  const obj = { variant: "text-sm/normal", style: closure_7().toastText, children: null };
-  const intl = util.intl;
-  obj.children = intl.format(util.t.nKY0Fl, { emojiName: emoji.emoji.name });
-  return jsx(Text_Text.Text, { variant: "text-sm/normal", style: closure_7().toastText, children: null });
+  emoji = emoji.emoji;
+  const Text = Text_Text.Text;
+  const intl = intl2.intl;
+  const obj2 = { emojiName: emoji.name };
+  return <Text variant="text-sm/normal" style={closure_7().toastText}>{intl.format(intl2.t.nKY0Fl, obj2)}</Text>;
 }
-const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj2 = { toastEmoji: { marginLeft: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_8 }, toastEmojiCustom: { width: 24, height: 24 }, toastEmojiText: null, toastText: null };
-let PlatformUtils = fn(1364);
+const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { toastEmoji: obj2, toastEmojiCustom: { width: 24, height: 24 }, toastEmojiText: obj3, toastText: obj4 };
+obj2 = { marginLeft: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+let PlatformUtils = PlatformUtils_mod;
 let num = 16;
 if (PlatformUtils.isIOS()) {
   num = 24;
 }
-const obj5 = { fontSize: num, lineHeight: null, textAlign: "center", color: null };
-PlatformUtils = fn(1364);
-let num2;
+obj3 = { fontSize: num, lineHeight: num2, textAlign: "center", color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+PlatformUtils = PlatformUtils_mod;
+num2 = undefined;
 if (PlatformUtils.isIOS()) {
   num2 = 32;
 }
-obj5.lineHeight = num2;
-obj5.color = nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT;
-obj2.toastEmojiText = obj5;
-let obj3 = { marginLeft: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_8 };
-obj2.toastText = { marginRight: nativeDefault.space.PX_12, marginVertical: nativeDefault.space.PX_8 };
-const React5 = createStyles.createStyles(obj2);
-const size = fn(2);
+obj4 = { marginRight: nativeDefault.space.PX_12, marginVertical: nativeDefault.space.PX_8 };
+const metroImportDefault = createStyles(obj);
 const result = size.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapEmojiUpdatedToast.tsx");
 
 export { ToastEmoji };
 export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
+  const obj = emoji(5266);
   if (obj.getIsScreenReaderEnabled()) {
     const AccessibilityAnnouncer = tmp(4541).AccessibilityAnnouncer;
+    const announce = AccessibilityAnnouncer.announce;
     const intl = tmp(1115).intl;
     const obj3 = { emojiName: emoji.name };
-    AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp(1115).t.nKY0Fl, obj3));
+    announce(intl.formatToPlainString(emoji(1115).t.nKY0Fl, obj3));
   } else {
     const obj4 = {
       key: "DEFAULT_REACTION_EMOJI_UPDATED",
@@ -103,6 +108,7 @@ export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdated
         },
       toastDurationMs: 3000
     };
-    ToastActionCreatorsDefault.open(obj4);
+    const obj2 = ToastActionCreatorsDefault;
+    obj2.open(obj4);
   }
 };

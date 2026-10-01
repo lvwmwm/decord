@@ -10,167 +10,220 @@ import nativeDefault from "native" /* 576 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 17466 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let navigation;
 
-require = fn;
+let c10;
+let closure_12;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_4;
+let hasOwnProperty;
+let map1;
+let metroRequire;
+let obj2;
+let obj3;
+let unpackModuleId;
 function FeatureCard(arg0) {
+  let body;
+  let header;
+  let icon;
+  let items;
+  let items1;
   ({ icon, header, body } = arg0);
   const tmp = closure_17();
-  const obj = { style: tmp.featureCard, children: null };
-  const items = [closure_1_14(React4, { style: tmp.featureIcon, children: icon() }), ];
-  const obj3 = { style: tmp.featureDescription, children: null };
-  const items1 = [closure_1_14(Text_Text.Heading, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header }), closure_1_14(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: body })];
-  obj3.children = items1;
-  items[1] = __initData(React4, obj3);
-  obj.children = items;
-  return __initData(React4, obj);
+  const obj = { style: tmp.featureCard, children: items };
+  items = [, ];
+  const obj2 = { style: tmp.featureIcon, children: icon() };
+  items[0] = authStore2(React3, obj2);
+  const obj3 = { style: tmp.featureDescription, children: items1 };
+  items1 = [authStore2(Text_Text.Heading, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header }), authStore2(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: body })];
+  items[1] = closure_15(React3, obj3);
+  return closure_15(React3, obj);
 }
-get_ActivityIndicator = fn(17);
-({ View: closure_4, Image: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const Constants = fn(1074);
-({ HelpdeskArticles: c10, GuildFeatures: closure_11, GuildSettingsSections: closure_12, Permissions: map1 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { height: "100%" }, contentPadding: { padding: 16 }, header: { textAlign: "center", marginBottom: 8 }, body: { textAlign: "center", marginBottom: 24 }, details: { textAlign: "center", marginTop: 24 }, headerImage: { width: "100%" }, features: { marginTop: 32, marginBottom: 32 }, featureCard: { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, flex: 1, flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 8, alignItems: "flex-start" }, featureIcon: null, featureDescription: null };
-let obj3 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, flex: 1, flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 8, alignItems: "flex-start" };
-obj2.featureIcon = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: 40, marginRight: 16, padding: 8 };
-obj2.featureDescription = { overflow: "hidden", flex: 1 };
-let closure_17 = createStyles.createStyles(obj2);
-const size = fn(2);
+({ View: closure_4, Image: hasOwnProperty, ScrollView: metroRequire } = react_native);
+({ HelpdeskArticles: c10, GuildFeatures: unpackModuleId, GuildSettingsSections: closure_12, Permissions: map1 } = Constants);
+({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { height: "100%" }, contentPadding: { padding: 16 }, header: { textAlign: "center", marginBottom: 8 }, body: { textAlign: "center", marginBottom: 24 }, details: { textAlign: "center", marginTop: 24 }, headerImage: { width: "100%" }, features: { marginTop: 32, marginBottom: 32 }, featureCard: obj2, featureIcon: obj3, featureDescription: { overflow: "hidden", flex: 1 } };
+obj2 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, flex: 1, flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 8, alignItems: "flex-start" };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: 40, marginRight: 16, padding: 8 };
+let closure_17 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_settings/community/native/GuildSettingsModalCommunityIntro.tsx");
 
 export default function GuildSettingsModalCommunityIntro(contentContainerStyle) {
+  let format;
+  let intl;
+  let intl10;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  let intl8;
+  let intl9;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let obj11;
+  let obj12;
+  let obj17;
+  let obj19;
+  let onClose;
+  let submitting;
+  let v52EgsM;
   ({ guildId: require, onClose } = contentContainerStyle);
-  let navigation;
+  navigation = undefined;
+  contentContainerStyle = contentContainerStyle.contentContainerStyle;
   let tmp = closure_17();
-  navigation = require("useNavigation").useNavigation();
   let obj = require("useNavigation");
+  navigation = obj.useNavigation();
+  let obj2 = require("get initialized");
   const items = [GuildStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => GuildStore.getGuild(require));
-  let obj2 = require("initialize");
+  const stateFromStores = obj2.useStateFromStores(items, () => GuildStore.getGuild(require));
   const items1 = [PermissionStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => {
-    let canResult = null != stateFromStores;
-    if (canResult) {
-      canResult = PermissionStore.can(constants4.ADMINISTRATOR, tmp);
-    }
+  const obj3 = require("get initialized");
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => {
+    const canResult = null != stateFromStores && PermissionStore.can(map1.ADMINISTRATOR, tmp);
     return canResult;
   });
-  const obj3 = require("initialize");
   const items2 = [GuildSettingsStore];
-  const stateFromStores2 = require("initialize").useStateFromStores(items2, () => submitting.isSubmitting());
+  const obj4 = require("get initialized");
+  const stateFromStores2 = obj4.useStateFromStores(items2, () => submitting.isSubmitting());
   const items3 = [stateFromStores, stateFromStores2, navigation, onClose];
   const effect = stateFromStores.useEffect(() => {
     let tmp = !stateFromStores2;
-    if (!stateFromStores2) {
+    if (tmp) {
       let hasItem;
       if (stateFromStores != null) {
         const features = stateFromStores.features;
-        hasItem = features.has(constants2.COMMUNITY);
+        hasItem = features.has(unpackModuleId.COMMUNITY);
       }
       tmp = hasItem;
     }
     if (tmp) {
-      DispatcherDefault.wait(() => onClose(navigation[17]).setSection(constants.COMMUNITY));
+      let obj = DispatcherDefault;
+      obj.wait(() => {
+        const obj = onClose(navigation[17]);
+        return obj.setSection(constants.COMMUNITY);
+      });
       const obj2 = { onClose };
-      const replaced = navigation.replace(constants3.COMMUNITY, obj2);
+      const replaced = navigation.replace(constants.COMMUNITY, obj2);
     }
   }, items3);
-  const obj4 = require("initialize");
-  const obj6 = { children: null };
-  const obj7 = { style: tmp.container, contentContainerStyle: null, children: null };
-  const items4 = [tmp.contentPadding, contentContainerStyle.contentContainerStyle];
-  obj7.contentContainerStyle = items4;
+  const obj7 = { style: tmp.container, contentContainerStyle: items4, children: items5 };
+  items4 = [tmp.contentPadding, contentContainerStyle];
+  const obj6 = { children: items7 };
+  items5 = [, , , , , ];
   const obj5 = require("IntroHeader");
-  const items5 = [closure_14(stateFromStores2, { resizeMode: "contain", source: require("IntroHeader").useIntroHeaderSource(), style: tmp.headerImage }), , , , , ];
-  const obj9 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = require("util").intl;
-  obj9.children = intl.string(require("util").t["M/gBcA"]);
-  items5[1] = closure_14(require("Text/Text").Heading, obj9);
-  const obj10 = { style: tmp.body, variant: "text-md/medium", color: "text-default", children: null };
-  const intl2 = require("util").intl;
-  const obj11 = { helpdeskArticle: null };
-  const obj8 = { resizeMode: "contain", source: require("IntroHeader").useIntroHeaderSource(), style: tmp.headerImage };
-  obj11.helpdeskArticle = onClose(navigation[19]).getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES);
-  obj10.children = intl2.format(require("util").t["52EgsM"], obj11);
-  items5[2] = closure_14(require("Text/Text").Text, obj10);
-  const obj13 = { text: null, onPress: null, disabled: null };
-  const intl3 = require("util").intl;
-  obj13.text = intl3.string(require("util").t.LhlgY9);
-  obj13.onPress = function onPress() {
-    if (stateFromStores1) {
-      EnableCommunityModalActionCreatorsDefault.open();
-    } else {
-      ToastUtils.communityAdminOnly();
-    }
+  const obj8 = { resizeMode: "contain", source: obj5.useIntroHeaderSource(), style: tmp.headerImage };
+  items5[0] = closure_14(stateFromStores2, obj8);
+  const obj9 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t["M/gBcA"]) };
+  const Heading = require("Text/Text").Heading;
+  intl = require("intl").intl;
+  items5[1] = closure_14(Heading, obj9);
+  const obj10 = { style: tmp.body, variant: "text-md/medium", color: "text-default", children: format(v52EgsM, obj11) };
+  const Text = require("Text/Text").Text;
+  const intl2 = require("intl").intl;
+  format = intl2.format;
+  obj11 = { helpdeskArticle: obj12.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES) };
+  v52EgsM = require("intl").t["52EgsM"];
+  obj12 = onClose(navigation[19]);
+  items5[2] = closure_14(Text, obj10);
+  const obj13 = {
+    text: intl3.string(require("intl").t.LhlgY9),
+    onPress() {
+      const tmp = stateFromStores1;
+      if (tmp) {
+        const obj2 = EnableCommunityModalActionCreatorsDefault;
+        obj2.open();
+      } else {
+        const obj = ToastUtils;
+        obj.communityAdminOnly();
+      }
+    },
+    disabled: !stateFromStores1
   };
-  obj13.disabled = !stateFromStores1;
-  items5[3] = closure_14(require("components/Button/Button").Button, obj13);
-  const obj14 = { style: tmp.details, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl4 = require("util").intl;
-  obj14.children = intl4.string(require("util").t.HgTI2N);
-  items5[4] = closure_14(require("Text/Text").Text, obj14);
-  const obj15 = { style: tmp.features, children: null };
+  const Button = require("components/Button/Button").Button;
+  intl3 = require("intl").intl;
+  items5[3] = closure_14(Button, obj13);
+  const obj14 = { style: tmp.details, variant: "text-sm/medium", color: "text-default", children: intl4.string(require("intl").t.HgTI2N) };
+  const Text2 = require("Text/Text").Text;
+  intl4 = require("intl").intl;
+  items5[4] = closure_14(Text2, obj14);
+  const obj15 = {
+    style: tmp.features,
+    children: items6.map((item, index) => {
+      const obj = {};
+      const merged = Object.assign(item);
+      return closure_1_14(FeatureCard, obj, index);
+    })
+  };
   const obj16 = {
     icon() {
-      return closure_1_14(require("AnalyticsIcon").AnalyticsIcon, { color: onClose(navigation[8]).unsafe_rawColors.GREEN_360 });
+      const obj = { color: onClose(navigation[8]).unsafe_rawColors.GREEN_360 };
+      const AnalyticsIcon = require("AnalyticsIcon").AnalyticsIcon;
+      return closure_1_14(AnalyticsIcon, obj);
     },
-    header: null,
-    body: null
+    header: intl5.string(require("intl").t.oVQF2y),
+    body: intl6.format(require("intl").t.A6G7ak, obj17)
   };
-  const intl5 = require("util").intl;
-  obj16.header = intl5.string(require("util").t.oVQF2y);
-  const intl6 = require("util").intl;
-  obj16.body = intl6.format(require("util").t.A6G7ak, {
+  intl5 = require("intl").intl;
+  intl6 = require("intl").intl;
+  items6 = [obj16, , ];
+  obj17 = {
     featureHook(children, arg1) {
-      return closure_1_14(require("Text/Text").Text, { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children }, arg1);
+      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+      return closure_1_14(require("Text/Text").Text, obj, arg1);
     }
-  });
-  const items6 = [obj16, , ];
+  };
   const obj18 = {
     icon() {
-      return closure_1_14(require("LightbulbIcon").LightbulbIcon, { color: onClose(navigation[8]).unsafe_rawColors.YELLOW_300 });
+      const obj = { color: onClose(navigation[8]).unsafe_rawColors.YELLOW_300 };
+      const LightbulbIcon = require("LightbulbIcon").LightbulbIcon;
+      return closure_1_14(LightbulbIcon, obj);
     },
-    header: null,
-    body: null
+    header: intl7.string(require("intl").t["0rJl9y"]),
+    body: intl8.format(require("intl").t.XsCNky, obj19)
   };
-  const intl7 = require("util").intl;
-  obj18.header = intl7.string(require("util").t["0rJl9y"]);
-  const intl8 = require("util").intl;
-  obj18.body = intl8.format(require("util").t.XsCNky, {
+  intl7 = require("intl").intl;
+  intl8 = require("intl").intl;
+  obj19 = {
     infoHook() {
       return null;
     },
     featureHook(children, arg1) {
-      return closure_1_14(require("Text/Text").Text, { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children }, arg1);
+      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+      return closure_1_14(require("Text/Text").Text, obj, arg1);
     }
-  });
+  };
   items6[1] = obj18;
   const obj20 = {
     icon() {
-      return closure_1_14(require("CircleInformationIcon").CircleInformationIcon, { color: onClose(navigation[8]).unsafe_rawColors.PLATFORM_PARTNER });
+      const obj = { color: onClose(navigation[8]).unsafe_rawColors.PLATFORM_PARTNER };
+      const CircleInformationIcon = require("CircleInformationIcon").CircleInformationIcon;
+      return closure_1_14(CircleInformationIcon, obj);
     },
-    header: null,
-    body: null
+    header: intl9.string(require("intl").t.W2kLJC),
+    body: intl10.string(require("intl").t.hyNkHz)
   };
-  const intl9 = require("util").intl;
-  obj20.header = intl9.string(require("util").t.W2kLJC);
-  const intl10 = require("util").intl;
-  obj20.body = intl10.string(require("util").t.hyNkHz);
+  intl9 = require("intl").intl;
+  intl10 = require("intl").intl;
   items6[2] = obj20;
-  obj15.children = items6.map((item, index) => {
-    const merged = Object.assign(item);
-    return closure_1_14(FeatureCard, {}, index);
-  });
   items5[5] = closure_14(stateFromStores1, obj15);
-  obj7.children = items5;
-  const items7 = [closure_15(closure_6, obj7), closure_14(require("NavScrim").NavScrim, {})];
-  obj6.children = items7;
+  items7 = [closure_15(closure_6, obj7), closure_14(require("NavScrim").NavScrim, {})];
   return closure_15(closure_16, obj6);
 };

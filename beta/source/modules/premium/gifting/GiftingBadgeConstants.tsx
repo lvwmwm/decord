@@ -15,8 +15,8 @@ export const getTierForProgress = function getTierForProgress(arr, arg1) {
   closure_0 = arg1;
   return arr.reduce((acc, item) => {
     let tmp = acc;
-    const tmp3 = closure_0(item);
     let tmp4 = acc;
+    const tmp3 = closure_0(item);
     if (closure_0 >= tmp3) {
       if (null == tmp) {
         tmp = item;
@@ -30,8 +30,8 @@ export const getNextTierForProgress = function getNextTierForProgress(arr, arg1)
   closure_0 = arg1;
   return arr.reduce((acc, item) => {
     let tmp = acc;
-    const tmp3 = closure_0(item);
     let tmp4 = acc;
+    const tmp3 = closure_0(item);
     if (closure_0 < tmp3) {
       if (null == tmp) {
         tmp = item;
@@ -45,8 +45,8 @@ export const getRemainingGiftsToNextTier = function getRemainingGiftsToNextTier(
   closure_0 = arg1;
   const reduced = arr.reduce((acc, item) => {
     let tmp = acc;
-    const tmp3 = closure_0(item);
     let tmp4 = acc;
+    const tmp3 = closure_0(item);
     if (closure_0 < tmp3) {
       if (null == tmp) {
         tmp = item;
@@ -57,6 +57,7 @@ export const getRemainingGiftsToNextTier = function getRemainingGiftsToNextTier(
   }, null);
   let diff = null;
   if (null != reduced) {
+    let tmp3 = closure_0;
     diff = closure_0(reduced) - arg1;
   }
   return diff;

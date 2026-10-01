@@ -5,75 +5,94 @@
 
 // Module 12535 (MediaModalSpoilerOverlay)
 import nativeDefault from "native" /* 576 */;
+import intl3 from "intl" /* 1115 */;
 import useToken from "useToken" /* 4531 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5269 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 5395 */;
 import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12520 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { spoilerOverlayContainer: { justifyContent: "center", alignContent: "center", flex: 1 }, obscureContentContainer: { gap: nativeDefault.space.PX_4, justifyContent: "center", alignItems: "center", alignSelf: "center" }, spoilerOverlayBackground: null };
-let obj4 = { paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.lg, height: nativeDefault.space.PX_32, backgroundColor: null, flexGrow: 0, justifyContent: "center", alignItems: "center", alignSelf: "center" };
-let PlatformUtils = fn(1364);
+let PlatformUtils;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let unsafe_rawColors;
+({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { spoilerOverlayContainer: { justifyContent: "center", alignContent: "center", flex: 1 }, obscureContentContainer: obj2, spoilerOverlayBackground: obj3 };
+obj2 = { gap: nativeDefault.space.PX_4, justifyContent: "center", alignItems: "center", alignSelf: "center" };
+createStyles = createStyles.createStyles;
+obj3 = { paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.lg, height: nativeDefault.space.PX_32, backgroundColor: PlatformUtils ? unsafe_rawColors.PRIMARY_800 : unsafe_rawColors.PRIMARY_600, flexGrow: 0, justifyContent: "center", alignItems: "center", alignSelf: "center" };
+PlatformUtils = PlatformUtils_mod;
 PlatformUtils = PlatformUtils.isAndroid();
-const unsafe_rawColors = nativeDefault.unsafe_rawColors;
-obj4.backgroundColor = PlatformUtils ? unsafe_rawColors.PRIMARY_800 : unsafe_rawColors.PRIMARY_600;
-obj.spoilerOverlayBackground = obj4;
-let closure_8 = createStyles.createStyles(obj);
-let obj3 = { gap: nativeDefault.space.PX_4, justifyContent: "center", alignItems: "center", alignSelf: "center" };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/media_viewer/native/components/MediaModalSpoilerOverlay.tsx");
-
-export default noop.memo(function MediaModalSpoilerOverlay(source) {
+unsafe_rawColors = nativeDefault.unsafe_rawColors;
+let closure_8 = createStyles(obj);
+const memoResult = react.memo(function MediaModalSpoilerOverlay(source) {
+  let index;
+  let intl2;
+  let items;
+  let items1;
+  let str2;
+  let style;
+  let tmp11Result;
   source = source.source;
   ({ style, index } = source);
-  let items2 = closure_8();
-  let stringResult = dependencyMap;
-  const token = useToken.useToken(nativeDefault.colors.SPOILER_HIDDEN_BACKGROUND);
-  if (!tmp5[0]) {
-    return null;
-  } else {
-    const obj3 = { style: null, children: null };
-    const items = [style, absoluteFill.absoluteFill, tmp6];
-    obj3.style = items;
+  const tmp = closure_8();
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.colors.SPOILER_HIDDEN_BACKGROUND);
+  let tmp9Result2 = null;
+  const obj2 = useMediaItemSpoilerState;
+  const tmp6 = _slicedToArray(obj2.useMediaItemSpoilerState(index), 2);
+  if (tmp6[0]) {
+    let str;
+    const obj3 = { style: items, children: items1 };
+    items = [style, absoluteFill.absoluteFill, tmp7];
+    const View = tmp4(4566).View;
+    const tmp10 = absoluteFill;
+    const tmp4Result = VisualEffectViewDefault;
     if (source.obscure) {
-      let str = "dark";
+      str = "dark";
     } else {
       str = "light";
-      const tmpResult = tmp(1364);
+      PlatformUtils;
     }
-    const obj4 = { blurTheme: str, android_fallbackColor: token, style: absoluteFill.absoluteFill };
-    const items1 = [timestampProducer(tmp3(5269), obj4), ];
-    let obj5 = { style: items2.spoilerOverlayContainer, children: null };
+    const obj4 = { blurTheme: str, android_fallbackColor: token, style: tmp10.absoluteFill };
+    items1 = [metroRequire(tmp4Result, obj4), ];
     const obj6 = { style: null, children: null };
+    const obj5 = { style: tmp.spoilerOverlayContainer, children: tmp11Result };
     if (source.obscure) {
-      obj6.style = items2.obscureContentContainer;
-      items2 = [tmp9(tmp(5395).ImageWarningIcon, { size: "lg", color: "white" }), ];
-      const obj7 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
-      const intl2 = tmp(1115).intl;
-      stringResult = intl2.string(tmp(1115).t.SpxcUR);
-      obj7.children = stringResult;
-      items2[1] = tmp9(tmp(4832).Text, obj7);
+      obj6.style = tmp.obscureContentContainer;
+      const items2 = [metroRequire(ImageWarningIcon.ImageWarningIcon, { size: "lg", color: "white" }), ];
+      const obj7 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: intl2.string(intl3.t.SpxcUR) };
+      const Text2 = tmp2(4832).Text;
+      intl2 = tmp2(1115).intl;
+      items2[1] = metroRequire(Text2, obj7);
       obj6.children = items2;
-      let tmp9Result = tmp7(tmp11, obj6);
+      tmp11Result = tmp9(tmp13, obj6);
     } else {
-      obj6.style = items2.spoilerOverlayBackground;
-      const obj8 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
-      const intl = tmp(1115).intl;
-      obj8.children = intl.string(tmp(1115).t["F+x38C"]).toUpperCase();
-      obj6.children = tmp9(tmp(4832).Text, obj8);
-      tmp9Result = tmp9(tmp11, obj6);
-      const str2 = intl.string(tmp(1115).t["F+x38C"]);
+      obj6.style = tmp.spoilerOverlayBackground;
+      const obj8 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: str2.toUpperCase() };
+      const Text = tmp2(4832).Text;
+      const intl = tmp2(1115).intl;
+      str2 = intl.string(intl3.t["F+x38C"]);
+      obj6.children = metroRequire(Text, obj8);
+      tmp11Result = tmp11(tmp13, obj6);
     }
-    obj5.children = tmp9Result;
-    obj5 = tmp9(tmp11, obj5);
-    items1[1] = obj5;
-    obj3.children = items1;
-    React5(tmp3(4566).View, obj3);
-    const tmp3Result = tmp3(5269);
+    items1[1] = metroRequire(hasOwnProperty, obj5);
+    tmp9Result2 = tmp9(View, obj3);
   }
+  return tmp9Result2;
 });
+const result = size.fileFinishedImporting("modules/media_viewer/native/components/MediaModalSpoilerOverlay.tsx");
+
+export default memoResult;

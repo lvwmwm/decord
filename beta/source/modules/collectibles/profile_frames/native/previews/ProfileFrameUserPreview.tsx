@@ -5,29 +5,33 @@
 // Exports: default
 
 // Module 10789 (ProfileFrameUserPreview)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl3 from "intl" /* 1115 */;
 import UserProfilePreviewDefault from "UserProfilePreview" /* 10572 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/previews/ProfileFrameUserPreview.tsx");
 
 export default function ProfileFrameUserPreview(profileFrame) {
+  let avatarDecorationOverride;
+  let formatToPlainStringResult;
+  let profileEffectOverride;
   profileFrame = profileFrame.profileFrame;
   ({ avatarDecorationOverride, profileEffectOverride } = profileFrame);
   const merged = Object.assign(profileFrame, Object.assign({ profileFrame: 0, avatarDecorationOverride: 0, profileEffectOverride: 0 }));
-  const obj = { profileFrameOverride: profileFrame, avatarDecorationOverride, profileEffectOverride, accessibilityLabel: null };
+  const obj = { profileFrameOverride: profileFrame, avatarDecorationOverride, profileEffectOverride, accessibilityLabel: formatToPlainStringResult };
+  const tmp2 = jsx;
+  const tmp4 = UserProfilePreviewDefault;
   if (null != profileFrame) {
-    const intl2 = util.intl;
+    const intl2 = intl3.intl;
     const obj2 = { a11y_text: profileFrame.label };
-    let formatToPlainStringResult = intl2.formatToPlainString(util.t["DT/PwH"], obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(intl3.t["DT/PwH"], obj2);
   } else {
-    const intl = util.intl;
-    formatToPlainStringResult = intl.string(util.t.vQx51z);
+    const intl = intl3.intl;
+    formatToPlainStringResult = intl.string(intl3.t.vQx51z);
   }
-  obj.accessibilityLabel = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(UserProfilePreviewDefault, { profileFrameOverride: profileFrame, avatarDecorationOverride, profileEffectOverride, accessibilityLabel: null });
+  return tmp2(tmp4, obj);
 };

@@ -4,40 +4,41 @@
 // Dependencies: [504, 573, 2]
 
 // Module 6951 (RecentlyActiveCollapseStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import size from "module_2" /* 2 */;
 
 const set = new Set();
-const PersistedStore = initializeDefault.PersistedStore;
+const PersistedStore = get_initializedDefault.PersistedStore;
 class RecentlyActiveCollapseStore extends PersistedStore {
+  initialize(guilds) {
+    set.clear();
+    if (guilds != null) {
+      guilds = guilds.guilds;
+      const item = guilds.forEach((item) => set.add(item));
+    }
+  }
+  isCollapsed(arg0) {
+    return set.has(arg0);
+  }
+  getState() {
+    return { guilds: set };
+  }
 }
 const prototype = RecentlyActiveCollapseStore.prototype;
-prototype["initialize"] = function initialize(guilds) {
-  set.clear();
-  if (guilds != null) {
-    guilds = guilds.guilds;
-    const item = guilds.forEach((item) => set.add(item));
-  }
-};
-prototype["isCollapsed"] = function isCollapsed(arg0) {
-  return set.has(arg0);
-};
-prototype["getState"] = function getState() {
-  return { guilds: set };
-};
 RecentlyActiveCollapseStore.displayName = "RecentlyActiveCollapseStore";
 RecentlyActiveCollapseStore.persistKey = "RecentlyActiveCollapseStore";
-const recentlyActiveCollapseStore = new RecentlyActiveCollapseStore(DispatcherDefault, {
+const obj = {
   SET_RECENTLY_ACTIVE_COLLAPSED: function handleSetRecentlyActiveCollapsed(guildId) {
     guildId = guildId.guildId;
     if (guildId.collapsed) {
-      obj.add(guildId);
+      set.add(guildId);
     } else {
-      obj.delete(guildId);
+      set.delete(guildId);
     }
   }
-});
-const size = fn(2);
+};
+const recentlyActiveCollapseStore = new RecentlyActiveCollapseStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/opt_in_channels/RecentlyActiveCollapseStore.tsx");
 
 export default recentlyActiveCollapseStore;

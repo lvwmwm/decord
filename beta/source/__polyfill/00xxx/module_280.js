@@ -3,7 +3,8 @@
 // Dependencies: [89]
 
 // Module 280
-import EventEmitterDefault from "EventEmitter" /* 89 */;
+import _modDef89 from "module_89" /* 89 */;
 
+new _modDef89();
 
-export default new EventEmitterDefault();
+export default new _modDef89();

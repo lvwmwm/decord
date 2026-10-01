@@ -5,14 +5,14 @@
 // Exports: default
 
 // Module 14345 (handleDisableAccount)
-import util from "util" /* 1115 */;
+import intl5 from "intl" /* 1115 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6405 */;
 import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 14330 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/account/native/handleDisableAccount.tsx");
 
 export default function handleDisableAccount() {
@@ -26,38 +26,42 @@ export default function handleDisableAccount() {
     const guildsArray = GuildStore.getGuildsArray();
     someResult = guildsArray.some((ownerId) => ownerId.ownerId === currentUser.id);
   }
-  const intl = util.intl;
+  const intl = intl5.intl;
   const string = intl.string;
-  const t = util.t;
+  const t = intl5.t;
   if (someResult) {
-    const intl4 = tmp4(1115).intl;
     const stringResult = string(t.vJiTOL);
-    const stringResult1 = intl4.string(tmp4(1115).t.UyVVan);
-    const obj = { title: stringResult, body: stringResult1 };
-    AlertActionCreatorsDefault.show(obj);
+    const intl4 = tmp4(1115).intl;
+    let obj = { title: stringResult, body: intl4.string(intl5.t.UyVVan) };
+    const stringResult1 = intl4.string(intl5.t.UyVVan);
+    const obj3 = AlertActionCreatorsDefault;
+    obj3.show(obj);
   } else {
-    const formatted = string(t["CIGa+7"]).toUpperCase();
+    let tmp8;
+    const str = string(t["CIGa+7"]);
+    const formatted = str.toUpperCase();
     const obj2 = { onSubmit: null, title: null, placeholder: null, closeOnSuccess: true };
     if (flag) {
       obj2.onSubmit = function onSubmit(password) {
-        return currentUser(6405).disableAccount(password, true);
+        const obj = UserSettingsAccountActionCreators;
+        return obj.disableAccount(password, true);
       };
       const intl3 = tmp4(1115).intl;
-      obj2.title = intl3.string(tmp4(1115).t["8lQ2rR"]).toUpperCase();
-      obj2.placeholder = formatted;
-      let tmp8 = obj2;
-      const str3 = intl3.string(tmp4(1115).t["8lQ2rR"]);
-    } else {
-      obj2.onSubmit = function onSubmit(password) {
-        return currentUser(6405).disableAccount(password, false);
-      };
-      const intl2 = tmp4(1115).intl;
-      obj2.title = intl2.string(tmp4(1115).t.jf5GGb).toUpperCase();
+      const str3 = intl3.string(intl5.t["8lQ2rR"]);
+      obj2.title = str3.toUpperCase();
       obj2.placeholder = formatted;
       tmp8 = obj2;
-      const str2 = intl2.string(tmp4(1115).t.jf5GGb);
+    } else {
+      obj2.onSubmit = function onSubmit(password) {
+        const obj = UserSettingsAccountActionCreators;
+        return obj.disableAccount(password, false);
+      };
+      const intl2 = tmp4(1115).intl;
+      const str2 = intl2.string(intl5.t.jf5GGb);
+      obj2.title = str2.toUpperCase();
+      obj2.placeholder = formatted;
+      tmp8 = obj2;
     }
     showUserSettingsInputAlertDefault(tmp8);
-    const str = string(t["CIGa+7"]);
   }
 };

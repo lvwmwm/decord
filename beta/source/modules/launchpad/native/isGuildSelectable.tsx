@@ -9,15 +9,15 @@ import StageInstanceStore from "StageInstanceStore" /* 2050 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7050 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/launchpad/native/isGuildSelectable.tsx");
 
 export default function isGuildSelectable(id) {
-  closure_0 = id;
-  const isMutedResult = UserGuildSettingsStore.isMuted(id);
-  let tmp2 = !isMutedResult;
-  if (!isMutedResult) {
+  let closure_0 = id;
+  let tmp2 = !UserGuildSettingsStore.isMuted(id);
+  UserGuildSettingsStore.isMuted(id);
+  if (tmp2) {
     let hasUnreadResult = GuildReadStateStore.hasUnread(id);
     if (!hasUnreadResult) {
       const _Object = Object;

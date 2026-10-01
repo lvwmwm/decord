@@ -5,22 +5,26 @@
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
 // Module 4542 (AccessibilityAnnouncerLiveRegion)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import module_4543 from "module_4543" /* 4543 */;
+import size from "module_2" /* 2 */;
 
-get_ActivityIndicator = fn(17);
-({ StyleSheet, Text: closure_0 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const module_4543 = fn(4543);
+let StyleSheet;
+let _window;
+({ StyleSheet, Text: _window } = react_native);
+const jsx = Fragment.jsx;
 const state = module_4543.create(() => ({ message: "disabled", version: false }));
 const liveRegion = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncerLiveRegion.native.tsx");
-
-export const updateAccessibilityAnnouncerLiveRegionMessage = function updateAccessibilityAnnouncerLiveRegionMessage(intl) {
-  const message = intl;
-  state.setState((version) => ({ message, version: version.version + 1 }));
-};
-export const AccessibilityAnnouncerLiveRegion = noop.memo(() => {
+const memoResult = react.memo(() => {
   const tmp = state();
   return <React key={tmp.version} accessibilityLiveRegion="polite" pointerEvents="none" style={liveRegion.liveRegion}>{tmp.message}</React>;
 });
+const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncerLiveRegion.native.tsx");
+
+export const updateAccessibilityAnnouncerLiveRegionMessage = function updateAccessibilityAnnouncerLiveRegionMessage(intl) {
+  let closure_0 = intl;
+  state.setState((version) => ({ message, version: version.version + 1 }));
+};
+export const AccessibilityAnnouncerLiveRegion = memoResult;

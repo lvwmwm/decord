@@ -5,74 +5,101 @@
 // Exports: default
 
 // Module 16595 (UserSettingsFriendRequests)
+import react_native from "react-native" /* 17 */;
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+const View = react_native.View;
 ({ AllFriendSourceFlags: hasOwnProperty, FriendSourceFlags: metroRequire } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const size = fn(2);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/UserSettingsFriendRequests.tsx");
 
 export default function UserSettingsFriendRequests() {
+  let TableRowGroup;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items1;
+  let obj2;
+  let setting;
   let FriendSourceFlagsSetting = setting(2021).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
-  const memo = noop.useMemo(() => UserSettingsUtils.computeFlags(setting), items);
-  let obj = { children: null };
-  const obj2 = { title: null, hasIcons: false, children: null };
-  const intl = setting(1115).intl;
-  obj2.title = intl.string(setting(1115).t.vyodkM);
-  const obj3 = { label: null, value: null, onValueChange: null };
-  const intl2 = setting(1115).intl;
-  obj3.label = intl2.string(setting(1115).t.mGr3CX);
-  obj3.value = memo.all;
-  obj3.onValueChange = function onValueChange(arg0) {
-    const FriendSourceFlagsSetting = setting(dependencyMap[4]).FriendSourceFlagsSetting;
-    if (arg0) {
-      let tmp3 = tmp;
-    } else {
-      tmp3 = tmp & ~constants.NO_RELATION;
+  const memo = react.useMemo(() => {
+    const obj = UserSettingsUtils;
+    return obj.computeFlags(setting);
+  }, items);
+  let obj = { children: closure_8(TableRowGroup, obj2) };
+  obj2 = { title: intl.string(setting(1115).t.vyodkM), hasIcons: false, children: items1 };
+  TableRowGroup = setting(5999).TableRowGroup;
+  intl = setting(1115).intl;
+  const obj3 = {
+    label: intl2.string(setting(1115).t.mGr3CX),
+    value: memo.all,
+    onValueChange(arg0) {
+      let tmp3;
+      const FriendSourceFlagsSetting = setting(dependencyMap[4]).FriendSourceFlagsSetting;
+      const updateSetting = FriendSourceFlagsSetting.updateSetting;
+      if (arg0) {
+        tmp3 = tmp;
+      } else {
+        tmp3 = tmp & ~constants.NO_RELATION;
+      }
+      return updateSetting(tmp3);
     }
-    return FriendSourceFlagsSetting.updateSetting(tmp3);
   };
-  const items1 = [closure_7(setting(6621).TableSwitchRow, obj3), , ];
-  const obj4 = { label: null, value: null, onValueChange: null };
-  const intl3 = setting(1115).intl;
-  obj4.label = intl3.string(setting(1115).t.IqlCSq);
-  obj4.value = memo.mutualFriends;
-  obj4.onValueChange = function onValueChange(arg0) {
-    const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
-    const obj = FlagUtilsAll;
-    if (arg0) {
-      let addFlagResult = obj.addFlag(setting, constants.MUTUAL_FRIENDS);
-    } else {
-      addFlagResult = obj.removeFlags(setting, constants.MUTUAL_FRIENDS, constants.NO_RELATION);
+  const TableSwitchRow = setting(6621).TableSwitchRow;
+  intl2 = setting(1115).intl;
+  items1 = [closure_7(TableSwitchRow, obj3), , ];
+  const obj4 = {
+    label: intl3.string(setting(1115).t.IqlCSq),
+    value: memo.mutualFriends,
+    onValueChange(arg0) {
+      let addFlagResult;
+      const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
+      const updateSetting = FriendSourceFlagsSetting.updateSetting;
+      const obj = FlagUtilsAll;
+      const tmp = arg0;
+      if (tmp) {
+        addFlagResult = obj.addFlag(setting, metroRequire.MUTUAL_FRIENDS);
+      } else {
+        addFlagResult = obj.removeFlags(setting, metroRequire.MUTUAL_FRIENDS, metroRequire.NO_RELATION);
+      }
+      return updateSetting(addFlagResult);
     }
-    return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[1] = closure_7(setting(6621).TableSwitchRow, obj4);
-  const obj5 = { label: null, value: null, onValueChange: null };
-  const intl4 = setting(1115).intl;
-  obj5.label = intl4.string(setting(1115).t.mozb8f);
-  obj5.value = memo.mutualGuilds;
-  obj5.onValueChange = function onValueChange(arg0) {
-    const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
-    const obj = FlagUtilsAll;
-    if (arg0) {
-      let addFlagResult = obj.addFlag(setting, constants.MUTUAL_GUILDS);
-    } else {
-      addFlagResult = obj.removeFlags(setting, constants.MUTUAL_GUILDS, constants.NO_RELATION);
+  const TableSwitchRow2 = setting(6621).TableSwitchRow;
+  intl3 = setting(1115).intl;
+  items1[1] = closure_7(TableSwitchRow2, obj4);
+  const obj5 = {
+    label: intl4.string(setting(1115).t.mozb8f),
+    value: memo.mutualGuilds,
+    onValueChange(arg0) {
+      let addFlagResult;
+      const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
+      const updateSetting = FriendSourceFlagsSetting.updateSetting;
+      const obj = FlagUtilsAll;
+      const tmp = arg0;
+      if (tmp) {
+        addFlagResult = obj.addFlag(setting, metroRequire.MUTUAL_GUILDS);
+      } else {
+        addFlagResult = obj.removeFlags(setting, metroRequire.MUTUAL_GUILDS, metroRequire.NO_RELATION);
+      }
+      return updateSetting(addFlagResult);
     }
-    return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[2] = closure_7(setting(6621).TableSwitchRow, obj5);
-  obj2.children = items1;
-  obj.children = closure_8(setting(5999).TableRowGroup, obj2);
+  const TableSwitchRow3 = setting(6621).TableSwitchRow;
+  intl4 = setting(1115).intl;
+  items1[2] = closure_7(TableSwitchRow3, obj5);
   return closure_7(View, obj);
 };

@@ -4,54 +4,70 @@
 // Dependencies: [19, 17, 21, 4836, 576, 1177, 13335, 4832, 2]
 
 // Module 15752 (VoiceChannelUserLimit)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import _modDef13335 from "module_13335" /* 13335 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13335 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let rect = { videoIcon: null, wrapper: null, left: null, mid: null, right: null };
-let size = { height: 16, width: 16, marginRight: 4, tintColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_ICON };
-rect.videoIcon = size;
-rect.wrapper = { backgroundColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_BACKGROUND, alignItems: "center", flexDirection: "row", borderRadius: 10, borderWidth: nativeDefault.modules.mobile.VOICE_CHANNEL_USER_LIMIT_BORDER_WIDTH, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden" };
-let obj = { backgroundColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_BACKGROUND, alignItems: "center", flexDirection: "row", borderRadius: 10, borderWidth: nativeDefault.modules.mobile.VOICE_CHANNEL_USER_LIMIT_BORDER_WIDTH, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden" };
-rect.left = { height: 20, flexDirection: "row", paddingLeft: 6, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_BACKGROUND };
-let obj3 = { height: 20, flexDirection: "row", paddingLeft: 6, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_BACKGROUND };
-rect.mid = { borderTopWidth: 20, borderBottomWidth: 0, borderTopColor: "transparent", borderBottomColor: "transparent", borderRightWidth: 6, borderRightColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND, paddingRight: 2 };
-let obj4 = { borderTopWidth: 20, borderBottomWidth: 0, borderTopColor: "transparent", borderBottomColor: "transparent", borderRightWidth: 6, borderRightColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND, paddingRight: 2 };
-rect.right = { height: 20, flexDirection: "row", paddingRight: 6, paddingLeft: 2, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND };
-let closure_6 = createStyles.createStyles(rect);
-let obj5 = { height: 20, flexDirection: "row", paddingRight: 6, paddingLeft: 2, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND };
-size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceChannelUserLimit.tsx");
-
-export default noop.memo(function VoiceChannelUserLimit(videoLimit) {
+let closure_4;
+let hasOwnProperty;
+let obj;
+let obj2;
+let obj3;
+let obj4;
+let size;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let rect = { videoIcon: size, wrapper: obj, left: obj2, mid: obj3, right: obj4 };
+size = { height: 16, width: 16, marginRight: 4, tintColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_ICON };
+createStyles = createStyles.createStyles;
+obj = { backgroundColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_BACKGROUND, alignItems: "center", flexDirection: "row", borderRadius: 10, borderWidth: nativeDefault.modules.mobile.VOICE_CHANNEL_USER_LIMIT_BORDER_WIDTH, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden" };
+obj2 = { height: 20, flexDirection: "row", paddingLeft: 6, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_BACKGROUND };
+obj3 = { borderTopWidth: 20, borderBottomWidth: 0, borderTopColor: "transparent", borderBottomColor: "transparent", borderRightWidth: 6, borderRightColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND, paddingRight: 2 };
+obj4 = { height: 20, flexDirection: "row", paddingRight: 6, paddingLeft: 2, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND };
+let closure_6 = createStyles(rect);
+const memoResult = react.memo(function VoiceChannelUserLimit(videoLimit) {
+  let Text2;
+  let items;
+  let items1;
+  let obj7;
+  let str;
+  let str1;
+  let total;
+  let users;
   ({ users, total } = videoLimit);
+  videoLimit = videoLimit.videoLimit;
   const rect = closure_6();
-  const obj = { style: rect.wrapper, children: null };
-  const obj2 = { style: rect.left, children: null };
   let tmp3 = null;
-  if (videoLimit.videoLimit) {
-    const obj3 = { source: _modDef13335, size: native.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
-    tmp3 = React4(native.Icon, obj3);
+  const obj = { style: rect.wrapper, children: items1 };
+  const obj2 = { style: rect.left, children: items };
+  if (videoLimit) {
+    const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
+    const Icon = native.Icon;
+    tmp3 = React3(Icon, obj3);
   }
-  const items = [tmp3, ];
-  const obj4 = { variant: "text-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: users.toString().padStart(2, "0") };
-  items[1] = React4(Text_Text.Text, obj4);
-  obj2.children = items;
-  const items1 = [hasOwnProperty(View, obj2), React4(View, { style: rect.mid }), ];
-  const obj6 = { style: rect.right, children: null };
-  const obj7 = { variant: "text-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: null };
+  items = [tmp3, ];
+  const obj4 = { variant: "text-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: str.padStart(2, "0") };
+  const Text = Text_Text.Text;
+  str = users.toString();
+  items[1] = React3(Text, obj4);
+  items1 = [hasOwnProperty(View, obj2), , ];
   const obj5 = { style: rect.mid };
-  const str = users.toString();
-  obj7.children = total.toString().padStart(2, "0");
-  obj6.children = React4(Text_Text.Text, obj7);
-  items1[2] = React4(View, obj6);
-  obj.children = items1;
+  items1[1] = React3(View, obj5);
+  const obj6 = { style: rect.right, children: React3(Text2, obj7) };
+  obj7 = { variant: "text-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: str1.padStart(2, "0") };
+  Text2 = Text_Text.Text;
+  str1 = total.toString();
+  items1[2] = React3(View, obj6);
   return hasOwnProperty(View, obj);
 });
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceChannelUserLimit.tsx");
+
+export default memoResult;

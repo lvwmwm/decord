@@ -6,190 +6,234 @@
 
 // Module 15303 (DevToolsGuildPowerupsScreen)
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2026 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import _modDef4421 from "module_4421" /* 4421 */;
-import TableSwitchRow from "TableSwitchRow" /* 6621 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6621 */;
 import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 11990 */;
 import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15172 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12058 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 15304 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c1, c2, c5, c6, dependencyMap, importDefault;
+
+let closure_12;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_18;
+let closure_19;
+let hasOwnProperty;
+let map1;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let unpackModuleId;
 function setWarningBoosts() {
-  const self = this;
-  const apply = closure_22.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_22 = async function _setWarningBoosts(arg0, value) {
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp5 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
+let obj = function _setWarningBoosts() {
+  obj = _asyncToGenerator(async (arg0, value, arg2) => {
+    let addResult;
+    let obj6;
+    let closure_0 = arg0;
+    let closure_1 = value;
+    let closure_2 = arg2;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c6 = 2;
-      if (0 === c5) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          closure_4 = tmp3;
-          closure_3 = tmp2;
-          closure_131_0 = closure_0;
-          const HTTP = HTTPUtils.HTTP;
-          const request = { url: constants.APPLIED_BOOST_MODIFY_END_DATE, body: null, rejectWithError: true };
-          const obj6 = { applied_boost_ids: importDefault.map((id) => id.id), ends_at: null };
-          let addResult = null;
-          if (!closure_2) {
-            addResult = _modDef4421().add(1, "day");
-            const obj4 = _modDef4421();
+      try {
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            let closure_4 = tmp2;
+            let closure_3 = tmp;
+            const HTTP = HTTPUtils.HTTP;
+            const request = { url: constants.APPLIED_BOOST_MODIFY_END_DATE, body: obj6, rejectWithError: true };
+            obj6 = { applied_boost_ids: closure_1.map((id) => id.id), ends_at: addResult };
+            const patch = HTTP.patch;
+            addResult = null;
+            if (!closure_2) {
+              const obj4 = _modDef4421();
+              addResult = obj4.add(1, "day");
+            }
+            c5 = 1;
+            c6 = 1;
+            const obj7 = { value: patch(request), done: false };
+            return obj7;
           }
-          obj6.ends_at = addResult;
-          request.body = obj6;
-          c5 = 1;
-          c6 = 1;
-          const obj7 = { value: HTTP.patch(request), done: false };
-          return obj7;
+        } else if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          const obj8 = { value, done: true };
+          return obj8;
+        } else {
+          obj = closure_132_0(closure_132_2[14]);
+          const appliedGuildBoostsForGuild = obj.fetchAppliedGuildBoostsForGuild(closure_0);
+          const obj2 = closure_132_0(closure_132_2[15]);
+          const guildBoostEntitlements = obj2.fetchGuildBoostEntitlements(closure_0, true);
+          c6 = 3;
+          return { value: "HermesInternal", done: null };
         }
-      } else if (arg0 === 1) {
+      } catch (tmp19) {
         c6 = 3;
+        throw tmp19;
+      }
+    }
+  });
+  return obj(...arguments);
+};
+obj = function _sendPowerupsSystemMessage() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        c6 = 3;
-        const obj8 = { value, done: true };
-        return obj8;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        const appliedGuildBoostsForGuild = closure_132_0(closure_132_2[14]).fetchAppliedGuildBoostsForGuild(closure_131_0);
-        const obj = closure_132_0(closure_132_2[14]);
-        const guildBoostEntitlements = closure_132_0(closure_132_2[15]).fetchGuildBoostEntitlements(closure_131_0, true);
-        c6 = 3;
         return { value: "HermesInternal", done: null };
       }
-    } catch (tmp20) {
-      c6 = tmp;
-      throw tmp20;
-    }
-  }
-};
-let closure_23 = async function _sendPowerupsSystemMessage(arg0, value) {
-  if (c1 === 2) {
-    c1 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c1 = 2;
-      if (0 === c2) {
-        if (arg0 === 1) {
+      try {
+        c1 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c1 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            const HTTP = HTTPUtils.HTTP;
+            const obj4 = { url: Endpoints.SEND_POWERUPS_SYSTEM_MESSAGE(closure_0), rejectWithError: true };
+            const post = HTTP.post;
+            c2 = 1;
+            c1 = 1;
+            const obj5 = { value: post(obj4), done: false };
+            return obj5;
+          }
+        } else if (arg0 === 1) {
           c1 = 3;
           throw value;
         } else if (arg0 === 2) {
           c1 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          const HTTP = HTTPUtils.HTTP;
-          const obj4 = { url: Endpoints.SEND_POWERUPS_SYSTEM_MESSAGE(closure_0), rejectWithError: true };
-          c2 = 1;
-          c1 = 1;
-          const obj5 = { value: HTTP.post(obj4), done: false };
-          return obj5;
+          c1 = 3;
+          return { value: "HermesInternal", done: null };
         }
-      } else if (arg0 === 1) {
+      } catch (tmp8) {
         c1 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c1 = 3;
-        const obj = { value, done: true };
-        return obj;
-      } else {
-        c1 = 3;
-        return { value: "HermesInternal", done: null };
+        throw tmp8;
       }
-    } catch (tmp9) {
-      c1 = tmp;
-      throw tmp9;
     }
-  }
+  });
+  return obj(...arguments);
 };
 function UserDCSwitchRow(dc) {
+  let handleToggleDismissState;
+  let isDismissed;
   dc = dc.dc;
   ({ isDismissed, handleToggleDismissState } = toggleDismissibleContentDismissStateDefault(dc));
-  const tmp = toggleDismissibleContentDismissStateDefault(dc);
-  return collapsedCategories(TableSwitchRow.TableSwitchRow, { label: value2(dc), value: isDismissed, onValueChange: handleToggleDismissState });
+  obj = { label: authStore3(dc), value: isDismissed, onValueChange: handleToggleDismissState };
+  toggleDismissibleContentDismissStateDefault(dc);
+  const TableSwitchRow = TableSwitchRow2.TableSwitchRow;
+  return authStore4(TableSwitchRow, obj);
 }
 function GuildDCSwitchRow(dc) {
   dc = dc.dc;
   const guildId = dc.guildId;
   const items = [dc, guildId];
-  const callback = noop.useCallback((arg0) => {
-    if (arg0) {
-      const result = tmp(11990).markContentAsDismissed(dc, guildId, false);
-      const tmpResult = tmp(11990);
+  const isDismissed = dc.isDismissed;
+  const callback = react.useCallback((arg0) => {
+    const tmp3 = arg0;
+    if (tmp3) {
+      const tmpResult = GuildDismissibleContentUtils;
+      const result = tmpResult.markContentAsDismissed(dc, guildId, false);
     } else {
-      const result1 = tmp(2026).removeDismissedRecurringContent(dismissible_content.DismissibleContent.GUILD_POWERUP_NOTIFICATION);
-      const tmpResult2 = tmp(2026);
-      const result2 = GuildDismissibleContentUtils.unmarkContentAsDismissed(dc, guildId);
+      const tmpResult2 = UserSettingsProtoActionCreators;
+      const result1 = tmpResult2.removeDismissedRecurringContent(dismissible_content.DismissibleContent.GUILD_POWERUP_NOTIFICATION);
+      const obj2 = GuildDismissibleContentUtils;
+      const result2 = obj2.unmarkContentAsDismissed(dc, guildId);
     }
   }, items);
-  return closure_18(dc(6621).TableSwitchRow, { label: closure_15(dc), value: dc.isDismissed, onValueChange: callback });
+  obj = { label: closure_15(dc), value: isDismissed, onValueChange: callback };
+  const TableSwitchRow = dc(6621).TableSwitchRow;
+  return closure_18(TableSwitchRow, obj);
 }
-get_ActivityIndicator = fn(17);
-({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const DevToolsGuildPowerupsConstants = fn(15304);
-({ GUILD_DCS: closure_11, SERVER_TAG_GUILD_DCS: closure_12, USER_DCS: map1, VANITY_URL_POWERUP_EDUCATIONAL_DCS: closure_14, getGuildDCString: closure_15, getUserDCString: closure_16 } = DevToolsGuildPowerupsConstants);
-const Endpoints = fn(1074).Endpoints;
-const jsxProd = fn(21);
-({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, scrollContainer: null, noGuildContainer: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj2.scrollContainer = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
-let obj4 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
-obj2.noGuildContainer = { flex: 1, justifyContent: "center", alignItems: "center", padding: nativeDefault.space.PX_32 };
-let closure_20 = createStyles.createStyles(obj2);
-const size = fn(2);
+({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
+({ GUILD_DCS: unpackModuleId, SERVER_TAG_GUILD_DCS: closure_12, USER_DCS: map1, VANITY_URL_POWERUP_EDUCATIONAL_DCS: closure_14, getGuildDCString: closure_15, getUserDCString: closure_16 } = DevToolsGuildPowerupsConstants);
+const Endpoints = Constants.Endpoints;
+({ jsx: closure_18, jsxs: closure_19 } = Fragment);
+let createStyles = createStyles_mod;
+obj = { container: obj2, scrollContainer: obj3, noGuildContainer: obj4 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
+obj4 = { flex: 1, justifyContent: "center", alignItems: "center", padding: nativeDefault.space.PX_32 };
+let closure_20 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildPowerupsScreen.tsx");
 
 export default function DevToolsGuildPowerupsScreen() {
+  let closure_1;
+  let closure_2;
+  let guildId;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let obj18;
+  let obj9;
+  let stateFromStores;
+  let tmp16Result;
   const tmp = closure_20();
+  let tmp2 = importDefault;
   const tmp4 = useSafeAreaInsetsDefault();
+  obj = stateFromStores(504);
   let items = [SelectedGuildStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => guildId.getGuildId());
-  let obj = stateFromStores(504);
+  stateFromStores = obj.useStateFromStores(items, () => guildId.getGuildId());
   const items1 = [GuildStore];
-  const stateFromStores1 = stateFromStores(504).useStateFromStores(items1, () => {
+  const obj2 = stateFromStores(504);
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     let tmp2 = null;
     if (null != stateFromStores) {
       const guild = GuildStore.getGuild(tmp);
@@ -201,106 +245,130 @@ export default function DevToolsGuildPowerupsScreen() {
     }
     return tmp2;
   });
-  const obj2 = stateFromStores(504);
   const items2 = [UserSettingsProtoStore];
-  importDefault = stateFromStores(504).useStateFromStoresArray(items2, () => {
+  const obj3 = stateFromStores(504);
+  importDefault = obj3.useStateFromStoresArray(items2, () => {
     const items = [...closure_2_12];
     return items.filter((item) => {
       let isContentDismissedResult = null != closure_1_0;
       if (isContentDismissedResult) {
-        isContentDismissedResult = stateFromStores(dependencyMap[18]).isContentDismissed(item, tmp);
-        const obj = stateFromStores(dependencyMap[18]);
+        obj = stateFromStores(closure_2[18]);
+        isContentDismissedResult = obj.isContentDismissed(item, tmp);
       }
       return isContentDismissedResult;
     });
   });
-  const obj3 = stateFromStores(504);
   const items3 = [AppliedGuildBoostStore];
-  dependencyMap = stateFromStores(504).useStateFromStoresArray(items3, () => {
+  const obj4 = stateFromStores(504);
+  dependencyMap = obj4.useStateFromStoresArray(items3, () => {
+    let items;
     if (null != stateFromStores) {
       let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
       if (appliedGuildBoostsForGuild == null) {
         appliedGuildBoostsForGuild = [];
       }
-      let items = appliedGuildBoostsForGuild;
+      items = appliedGuildBoostsForGuild;
     } else {
       items = [];
     }
     return items;
   });
   if (null == stateFromStores) {
-    const obj5 = { style: null, children: null };
-    const items4 = [, ];
+    const obj5 = { style: items4, children: closure_18(stateFromStores(4832).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" }) };
+    items4 = [, ];
     ({ container: arr7[0], noGuildContainer: arr7[1] } = tmp);
-    obj5.style = items4;
-    obj5.children = closure_18(tmp5(4832).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" });
-    let tmp16Result = closure_18(closure_6, obj5);
+    tmp16Result = closure_18(closure_6, obj5);
   } else {
-    const obj6 = { style: tmp.container, contentContainerStyle: null, children: null };
-    const items5 = [tmp.scrollContainer, ];
-    const obj7 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-    items5[1] = obj7;
-    obj6.contentContainerStyle = items5;
+    const obj6 = { style: tmp.container, contentContainerStyle: items5, children: items6 };
+    items5 = [tmp.scrollContainer, ];
+    items5[1] = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
     let str = stateFromStores1;
+    const obj7 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
+    const TableRowGroup7 = tmp5(5999).TableRowGroup;
+    const tmp17 = closure_5;
     if (stateFromStores1 == null) {
       str = "Unknown";
     }
-    const obj8 = { title: null, hasIcons: false, children: null };
     const _HermesInternal = HermesInternal;
-    obj8.title = "Current Guild: " + str;
-    const obj9 = {
+    const obj8 = { title: "Current Guild: " + str, hasIcons: false, children: closure_18(stateFromStores(5917).TableRow, obj9) };
+    obj9 = {
       label: "Reset Notification Indicators",
       onPress() {
-          return stateFromStores(closure_2[15]).guildPowerupsResetNotifications();
+          obj = stateFromStores(closure_2[15]);
+          return obj.guildPowerupsResetNotifications();
         }
     };
-    obj8.children = closure_18(tmp5(5917).TableRow, obj9);
-    const items6 = [closure_18(tmp5(5999).TableRowGroup, obj8), , , , , , ];
-    const obj10 = { title: "Warning State", hasIcons: false, children: null };
+    items6 = [closure_18(TableRowGroup7, obj8), , , , , , ];
+    const obj10 = { title: "Warning State", hasIcons: false, children: items7 };
+    const TableRowGroup = tmp5(5999).TableRowGroup;
     const obj11 = {
       label: "Set Half Boosts expiring in 1 day",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2.slice(Math.floor(closure_2.length / 2)), false);
         }
     };
-    const items7 = [closure_18(tmp5(5917).TableRow, obj11), ];
+    items7 = [closure_18(tmp5(5917).TableRow, obj11), ];
     const obj12 = {
       label: "Reset End Date",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2, true);
         }
     };
-    items7[1] = closure_18(tmp5(5917).TableRow, obj12);
-    obj10.children = items7;
-    items6[1] = closure_19(tmp5(5999).TableRowGroup, obj10);
-    const obj13 = { title: "User Level DCs", hasIcons: false, children: closure_13.map((dc) => closure_1_18(UserDCSwitchRow, { dc }, dc)) };
-    items6[2] = closure_18(tmp5(5999).TableRowGroup, obj13);
-    const obj14 = { title: "Guild Level DCs", hasIcons: false, children: closure_11.map((dc) => collapsedCategories(GuildDCSwitchRow, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
-    items6[3] = closure_18(tmp5(5999).TableRowGroup, obj14);
-    const obj15 = { title: "Server Tag Guild Level DCs", hasIcons: false, children: closure_12.map((dc) => collapsedCategories(GuildDCSwitchRow, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
-    items6[4] = closure_18(tmp5(5999).TableRowGroup, obj15);
-    const obj16 = { title: "Vanity URL Powerup DCs", hasIcons: false, children: closure_14.map((dc) => closure_1_18(UserDCSwitchRow, { dc }, dc)) };
-    items6[5] = closure_18(tmp5(5999).TableRowGroup, obj16);
-    const obj17 = { title: "System Messages", hasIcons: false, children: null };
-    const obj18 = {
+    items7[1] = closure_18(stateFromStores(5917).TableRow, obj12);
+    items6[1] = closure_19(TableRowGroup, obj10);
+    const obj13 = {
+      title: "User Level DCs",
+      hasIcons: false,
+      children: closure_13.map((dc) => {
+          obj = { dc };
+          return closure_1_18(UserDCSwitchRow, obj, dc);
+        })
+    };
+    const TableRowGroup2 = tmp5(5999).TableRowGroup;
+    items6[2] = closure_18(TableRowGroup2, obj13);
+    const obj14 = {
+      title: "Guild Level DCs",
+      hasIcons: false,
+      children: closure_11.map((dc) => {
+          obj = { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) };
+          return authStore4(GuildDCSwitchRow, obj, dc);
+        })
+    };
+    const TableRowGroup3 = tmp5(5999).TableRowGroup;
+    items6[3] = closure_18(TableRowGroup3, obj14);
+    const obj15 = {
+      title: "Server Tag Guild Level DCs",
+      hasIcons: false,
+      children: closure_12.map((dc) => {
+          obj = { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) };
+          return authStore4(GuildDCSwitchRow, obj, dc);
+        })
+    };
+    const TableRowGroup4 = tmp5(5999).TableRowGroup;
+    items6[4] = closure_18(TableRowGroup4, obj15);
+    const obj16 = {
+      title: "Vanity URL Powerup DCs",
+      hasIcons: false,
+      children: closure_14.map((dc) => {
+          obj = { dc };
+          return closure_1_18(UserDCSwitchRow, obj, dc);
+        })
+    };
+    const TableRowGroup5 = tmp5(5999).TableRowGroup;
+    items6[5] = closure_18(TableRowGroup5, obj16);
+    const obj17 = { title: "System Messages", hasIcons: false, children: closure_18(stateFromStores(5917).TableRow, obj18) };
+    const TableRowGroup6 = tmp5(5999).TableRowGroup;
+    obj18 = {
       label: "Send Powerups System Message",
       onPress() {
-          return (function sendPowerupsSystemMessage() {
-            const self = this;
-            const apply = closure_1_23.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          })(stateFromStores);
+          function sendPowerupsSystemMessage() {
+            return closure_1_23(...arguments);
+          }
+          return sendPowerupsSystemMessage(stateFromStores);
         }
     };
-    obj17.children = closure_18(tmp5(5917).TableRow, obj18);
-    items6[6] = closure_18(tmp5(5999).TableRowGroup, obj17);
-    obj6.children = items6;
-    tmp16Result = tmp16(closure_5, obj6);
+    items6[6] = closure_18(TableRowGroup6, obj17);
+    tmp16Result = tmp16(tmp17, obj6);
   }
   return tmp16Result;
 };

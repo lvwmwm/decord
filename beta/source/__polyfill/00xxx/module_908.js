@@ -6,9 +6,7 @@
 // Module 908
 import _mod904 from "module_904" /* 904 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const getNavigationEntry = () => {
   let flag = arg0;

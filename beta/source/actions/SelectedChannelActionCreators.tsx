@@ -11,29 +11,42 @@ import GameConsoleActionCreatorsAll from "GameConsoleActionCreators" /* 9243 */;
 import GameConsoleStore from "GameConsoleStore" /* 4853 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
-({ ME: closure_7, PopoutWindowKeys, Routes: closure_8 } = Constants);
-const size = fn(2);
-const result = size.fileFinishedImporting("actions/SelectedChannelActionCreators.tsx");
-
-export default {
+let PopoutWindowKeys;
+let metroImportAll;
+let metroImportDefault;
+({ ME: metroImportDefault, PopoutWindowKeys, Routes: metroImportAll } = Constants);
+let obj = {
   selectChannel(guildId) {
+    let channelId;
+    let fromChannelId;
+    let fromGuildId;
+    let jumpType;
+    let messageId;
+    let opensChannel;
+    let skipMessageFetch;
+    let source;
     guildId = guildId.guildId;
     ({ channelId, messageId, jumpType, source, skipMessageFetch, opensChannel } = guildId);
-    const channelSelectionOrigin = SelectedChannelActionCreatorsAdditional.getChannelSelectionOrigin();
+    const obj = SelectedChannelActionCreatorsAdditional;
+    const channelSelectionOrigin = obj.getChannelSelectionOrigin();
     ({ fromGuildId, fromChannelId } = channelSelectionOrigin);
-    let tmp2 = null;
-    if (guildId !== React5) {
-      tmp2 = guildId;
+    let tmp3 = null;
+    const dispatch = DispatcherDefault.dispatch;
+    DispatcherDefault;
+    if (guildId !== metroImportDefault) {
+      tmp3 = guildId;
     }
-    DispatcherDefault.dispatch({ type: "CHANNEL_SELECT", guildId: tmp2, channelId, fromGuildId, fromChannelId, messageId, jumpType, source, skipMessageFetch, opensChannel });
+    dispatch({ type: "CHANNEL_SELECT", guildId: tmp3, channelId, fromGuildId, fromChannelId, messageId, jumpType, source, skipMessageFetch, opensChannel });
   },
   selectPrivateChannel(id) {
-    router_utils.transitionTo(React6.CHANNEL(React5, id));
+    const obj = router_utils;
+    obj.transitionTo(metroImportAll.CHANNEL(metroImportDefault, id));
   },
   selectVoiceChannel(id, MediaEngineStore, flag2) {
+    let guildId;
     let flag = MediaEngineStore;
     if (MediaEngineStore === undefined) {
       flag = false;
@@ -47,11 +60,12 @@ export default {
     }
     const channel = ChannelStore.getChannel(id);
     if (channel != null) {
-      const guildId = channel.getGuildId();
+      guildId = channel.getGuildId();
     }
+    const obj3 = MediaEngineStore;
     if (MediaEngineStore.isSupported()) {
       if (null != id) {
-        const mediaEngine = MediaEngineStore.getMediaEngine();
+        const mediaEngine = obj3.getMediaEngine();
         mediaEngine.interact();
       }
       const obj5 = SelectedChannelActionCreatorsAdditional;
@@ -61,8 +75,12 @@ export default {
   disconnect() {
     const remoteSessionId = GameConsoleStore.getRemoteSessionId();
     if (null != remoteSessionId) {
-      GameConsoleActionCreatorsAll.remoteDisconnect(remoteSessionId);
+      const obj = GameConsoleActionCreatorsAll;
+      obj.remoteDisconnect(remoteSessionId);
     }
     const voiceChannel = this.selectVoiceChannel(null);
   }
 };
+const result = size.fileFinishedImporting("actions/SelectedChannelActionCreators.tsx");
+
+export default obj;

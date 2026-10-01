@@ -4,12 +4,12 @@
 // Dependencies: [17, 1364, 16618, 2]
 
 // Module 16617 (VisualEffectViewTarget)
-import _mod17 from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 import VisualEffectViewTargetAndroidNativeComponentDefault from "VisualEffectViewTargetAndroidNativeComponent" /* 16618 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 
-let View = _mod17.View;
+let View = react_native.View;
 if (PlatformUtils.isAndroid()) {
   View = VisualEffectViewTargetAndroidNativeComponentDefault;
 }

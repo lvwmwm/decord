@@ -5,21 +5,24 @@
 // Exports: useUserAvailableGuildsWithTags
 
 // Module 14198 (useUserAvailableGuildsWithTags)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let guildsArray, selfMember;
+
 const result = size.fileFinishedImporting("modules/guild_tag/useUserAvailableGuildsWithTags.tsx");
 
 export const useUserAvailableGuildsWithTags = function useUserAvailableGuildsWithTags() {
+  let obj = get_initialized;
   const items = [GuildStore, GuildMemberStore];
-  return initialize.useStateFromStoresArray(items, () => {
+  return obj.useStateFromStoresArray(items, () => {
     guildsArray = guildsArray.getGuildsArray();
     return guildsArray.filter((id) => {
       selfMember = selfMember.getSelfMember(id.id);
-      let guildSupportsTagsResult = closure_1_0(closure_1_1[3]).guildSupportsTags(id);
+      const obj = closure_1_0(closure_1_1[3]);
+      let guildSupportsTagsResult = obj.guildSupportsTags(id);
       if (guildSupportsTagsResult) {
         let joinedAt;
         if (selfMember != null) {

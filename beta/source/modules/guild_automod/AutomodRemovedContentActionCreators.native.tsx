@@ -5,34 +5,39 @@
 // Exports: openRemovedContentModal, showRemovedMessageToast
 
 // Module 17096 (AutomodRemovedContentActionCreators)
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import intl2 from "intl" /* 1115 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodRemovedContentActionCreators.native.tsx");
 
 export const showRemovedMessageToast = function showRemovedMessageToast(arg0, channel_id) {
+  let formatToPlainString;
+  let obj2;
+  let v9U3Wb3;
   const channel = ChannelStore.getChannel(channel_id);
   let name;
   if (channel != null) {
     name = channel.name;
   }
   if (null != name) {
-    const obj2 = { key: null, content: null };
     const _HermesInternal = HermesInternal;
-    obj2.key = "AUTOMOD_REMOVED_" + channel_id;
-    const intl = util.intl;
-    const obj3 = { channel: null };
+    const obj = { key: "AUTOMOD_REMOVED_" + channel_id, content: formatToPlainString(v9U3Wb3, obj2) };
+    const open = ToastActionCreatorsDefault.open;
+    ToastActionCreatorsDefault;
+    const intl = intl2.intl;
+    formatToPlainString = intl.formatToPlainString;
     const _HermesInternal2 = HermesInternal;
-    obj3.channel = "#" + name;
-    obj2.content = intl.formatToPlainString(util.t["9U3Wb3"], obj3);
-    ToastActionCreatorsDefault.open(obj2);
+    obj2 = { channel: "#" + name };
+    v9U3Wb3 = intl2.t["9U3Wb3"];
+    open(obj);
   }
 };
 export const openRemovedContentModal = function openRemovedContentModal(action) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17097, dependencyMap.paths), "AutomodRemovedContentSheet", { action });
+  const obj = ActionSheetActionCreatorsDefault;
+  const obj2 = { action };
+  obj.openLazy(asyncRequire(17097, dependencyMap.paths), "AutomodRemovedContentSheet", obj2);
 };

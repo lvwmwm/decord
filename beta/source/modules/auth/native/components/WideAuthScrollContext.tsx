@@ -1,15 +1,15 @@
 // Module ID: 6392
 // Function ID: 6393
-// Name: WideAuthScrollContext
+// Name: react
 // Dependencies: [19, 2]
 
-// Module 6392 (WideAuthScrollContext)
-import noop from "module_19" /* 19 */;
+// Module 6392 (react)
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const context = noop.createContext(() => {
+const context = react.createContext(() => {
 
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/WideAuthScrollContext.tsx");
 
 export const WideAuthScrollContext = context;

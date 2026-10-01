@@ -4,53 +4,57 @@
 // Dependencies: [32, 19, 17, 21]
 
 // Module 6445 (CardA11yWrapper)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-get_ActivityIndicator = fn(17);
-({ Platform, StyleSheet: c2, View: c3 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const forwardRefResult = noop.forwardRef((arg0, ref) => {
+let Platform;
+let c2;
+let c3;
+({ Platform, StyleSheet: c2, View: c3 } = react_native);
+const jsx = Fragment.jsx;
+const forwardRefResult = react.forwardRef((arg0, ref) => {
+  let active;
+  let animated;
+  let c0;
+  let children;
+  let detachCurrentScreen;
+  let focused;
+  let isNextScreenTransparent;
+  let items;
+  let str;
+  let str3;
+  let str4;
+  let tmp2;
   ({ focused, animated } = arg0);
   c0 = undefined;
   ({ active, isNextScreenTransparent, detachCurrentScreen, children } = arg0);
-  [tmp2, c0] = noop.useState(false);
-  const imperativeHandle = noop.useImperativeHandle(ref, () => ({ setInert }), []);
-  let tmp4 = !animated;
-  if (!animated) {
-    tmp4 = false === isNextScreenTransparent;
-  }
-  if (tmp4) {
-    tmp4 = false !== detachCurrentScreen;
-  }
-  if (tmp4) {
-    tmp4 = !focused;
-  }
-  const obj = { "aria-hidden": !focused, pointerEvents: null, style: null, collapsable: false, children: null };
+  [tmp2, c0] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  const imperativeHandle = react.useImperativeHandle(ref, () => ({ setInert }), []);
+  const obj = { "aria-hidden": !focused, pointerEvents: str, style: items, collapsable: false, children };
+  const tmp5 = jsx;
+  const tmp6 = _false;
   if (!animated) {
     tmp2 = !focused;
   }
-  let str = "box-none";
+  str = "box-none";
   if (tmp2) {
     str = "none";
   }
-  obj.pointerEvents = str;
-  const items = [absoluteFill.absoluteFill, ];
-  const obj2 = { overflow: "hidden", display: null, visibility: null };
-  let str3 = "flex";
-  if (tmp4) {
+  items = [absoluteFill.absoluteFill, ];
+  const obj2 = { overflow: "hidden", display: str3, visibility: str4 };
+  str3 = "flex";
+  if (!animated && false === isNextScreenTransparent && false !== detachCurrentScreen && !focused) {
     str3 = "none";
   }
-  obj2.display = str3;
-  let str4 = "visible";
-  if (tmp4) {
+  str4 = "visible";
+  if (!animated && false === isNextScreenTransparent && false !== detachCurrentScreen && !focused) {
     str4 = "hidden";
   }
-  obj2.visibility = str4;
   items[1] = obj2;
-  obj.style = items;
-  obj.children = children;
-  return <React3 aria-hidden={!focused} pointerEvents={null} style={null} collapsable={false}>{null}</React3>;
+  return tmp5(tmp6, obj);
 });
 forwardRefResult.displayName = "CardA11yWrapper";
 

@@ -8,77 +8,98 @@
 import nativeDefault from "native" /* 576 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
 import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11791 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: c3, ScrollView: closure_4 } = get_ActivityIndicator);
-const Constants = fn(1074);
+let dependencyMap;
+
+let Fonts;
+let c3;
+let closure_4;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+({ Image: c3, ScrollView: closure_4 } = react_native);
 ({ InstantInviteSources: metroRequire, Fonts } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { flex: 1, justifyContent: "flex-end", padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, header: { marginBottom: 16, alignSelf: "center" }, title: null, description: null, ctaContainer: null };
-let obj3 = { flex: 1, justifyContent: "flex-end", padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj2.title = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8, alignSelf: "center" };
-obj2.description = { textAlign: "center", alignSelf: "center", marginBottom: 24 };
-obj2.ctaContainer = { marginBottom: 8 };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, header: { marginBottom: 16, alignSelf: "center" }, title: obj3, description: { textAlign: "center", alignSelf: "center", marginBottom: 24 }, ctaContainer: { marginBottom: 8 } };
+obj2 = { flex: 1, justifyContent: "flex-end", padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8, alignSelf: "center" };
+let closure_9 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEmpty.tsx");
 
 export default function GuildDirectoryEmpty(guild) {
+  let closure_2;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items1;
+  let items2;
+  let obj7;
   guild = guild.guild;
   const channel = guild.channel;
   const tmp = closure_9();
+  const bottom = channel(1613)().bottom;
+  let obj = guild(504);
   const items = [GuildChannelStore];
-  dependencyMap = guild(504).useStateFromStores(items, () => GuildChannelStore.getChannels(guild.id));
-  const obj = guild(504);
-  const obj3 = { contentContainerStyle: null, children: null };
-  const items1 = [tmp.container, ];
-  const obj2 = guild(11790);
-  items1[1] = { paddingBottom: channel(1613)().bottom + 16 };
-  obj3.contentContainerStyle = items1;
-  const obj5 = { source: null, style: null };
+  dependencyMap = obj.useStateFromStores(items, () => GuildChannelStore.getChannels(guild.id));
+  let obj2 = guild(11790);
+  const obj3 = { contentContainerStyle: items1, children: items2 };
+  items1 = [tmp.container, ];
+  const obj4 = { paddingBottom: bottom + 16 };
+  items1[1] = obj4;
+  const obj5 = { source: channel(12271), style: tmp.header };
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
-  obj5.source = channel(12271);
-  obj5.style = tmp.header;
-  const items2 = [closure_7(closure_3, obj5), , , , ];
-  const obj6 = { style: tmp.title, accessibilityRole: "header", children: null };
-  const intl = guild(1115).intl;
-  obj6.children = intl.format(guild(1115).t.vyvrpC, { guildName: guild.name });
-  items2[1] = closure_7(guild(1177).LegacyText, obj6);
-  const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = guild(1115).intl;
-  obj8.children = intl2.string(guild(1115).t.WypE0i);
-  items2[2] = closure_7(guild(4832).Text, obj8);
+  items2 = [closure_7(closure_3, obj5), , , , ];
+  const obj6 = { style: tmp.title, accessibilityRole: "header", children: intl.format(guild(1115).t.vyvrpC, obj7) };
+  const LegacyText = guild(1177).LegacyText;
+  intl = guild(1115).intl;
+  obj7 = { guildName: guild.name };
+  items2[1] = closure_7(LegacyText, obj6);
+  const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(guild(1115).t.WypE0i) };
+  const Text = guild(4832).Text;
+  intl2 = guild(1115).intl;
+  items2[2] = closure_7(Text, obj8);
   let tmp8Result = null;
+  const tmp6 = closure_8;
+  const tmp7 = closure_4;
   if (canCreateOrAddGuildInDirectory) {
     const obj9 = {
       style: tmp.ctaContainer,
       onPress() {
-          return GuildDirectoryAddModalActionCreatorsDefault.open({ directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id });
+          const obj = GuildDirectoryAddModalActionCreatorsDefault;
+          const obj2 = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
+          return obj.open(obj2);
         },
-      iconSource: tmp2(12272),
-      title: null
+      iconSource: channel(12272),
+      title: intl3.string(guild(1115).t.hyK15i)
     };
-    const intl3 = tmp4(1115).intl;
-    obj9.title = intl3.string(tmp4(1115).t.hyK15i);
-    tmp8Result = tmp8(tmp4(8053).FormCTA, obj9);
+    const FormCTA = tmp4(8053).FormCTA;
+    intl3 = tmp4(1115).intl;
+    tmp8Result = tmp8(FormCTA, obj9);
   }
   items2[3] = tmp8Result;
   const obj10 = {
     style: tmp.ctaContainer,
     onPress() {
-      return instant_invite_InstantInviteUtils.handleOpenInviteActionsheet(guild, channel.id, closure_2, constants.HUB_EMPTY_STATE);
+      const obj = instant_invite_InstantInviteUtils;
+      return obj.handleOpenInviteActionsheet(guild, channel.id, closure_2, metroRequire.HUB_EMPTY_STATE);
     },
     iconSource: channel(12273),
-    title: null
+    title: intl4.string(guild(1115).t.L4bwJ9)
   };
-  const intl4 = tmp4(1115).intl;
-  obj10.title = intl4.string(guild(1115).t.L4bwJ9);
-  items2[4] = closure_7(guild(8053).FormCTA, obj10);
-  obj3.children = items2;
-  return closure_8(closure_4, obj3);
+  const FormCTA2 = tmp4(8053).FormCTA;
+  intl4 = tmp4(1115).intl;
+  items2[4] = closure_7(FormCTA2, obj10);
+  return tmp6(tmp7, obj3);
 };

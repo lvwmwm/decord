@@ -4,84 +4,99 @@
 // Dependencies: [19, 17, 14249, 21, 4836, 576, 4566, 4837, 2]
 
 // Module 14254 (SettingListItemHighlight)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const StyleSheet = fn(17).StyleSheet;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-let obj = { background: { backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_HOVER } };
+let start;
+
+let obj2;
+const StyleSheet = react_native.StyleSheet;
+const jsx = Fragment.jsx;
+let obj = { background: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_HOVER };
 let closure_7 = createStyles.createStyles(obj);
 const __initData = { code: "function SettingListItemHighlightTsx1(){const{withSequence,withDelay,withTiming,Easing,runOnJS,clearSelectedSearchResult}=this.__closure;return{opacity:withSequence(withDelay(500,withTiming(0,{duration:0})),withTiming(0.2,{duration:300,easing:Easing.ease}),withTiming(0,{duration:300,easing:Easing.ease},'respect-motion-settings',function(finished){if(finished){runOnJS(clearSelectedSearchResult);}}))};}" };
 let closure_9 = { code: "function SettingListItemHighlightTsx2(finished){const{runOnJS,clearSelectedSearchResult}=this.__closure;if(finished){runOnJS(clearSelectedSearchResult);}}" };
-let obj3 = { backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_HOVER };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingListItemHighlight.tsx");
-
-export default noop.memo((start) => {
+const memoResult = react.memo((start) => {
+  let state;
   start = start.start;
   const end = start.end;
+  const style = start.style;
   const items = [end, start];
-  const memo = noop.useMemo(() => {
+  let tmp = closure_7();
+  const memo = react.useMemo(() => {
+    let lg1;
+    let lg2;
+    let lg3;
     let lg;
     if (start) {
       lg = nativeDefault.radii.lg;
     }
-    const obj = { borderTopStartRadius: lg, borderTopEndRadius: null, borderBottomStartRadius: null, borderBottomEndRadius: null };
-    let lg1;
+    const obj = { borderTopStartRadius: lg, borderTopEndRadius: lg1, borderBottomStartRadius: lg2, borderBottomEndRadius: lg3 };
+    lg1 = undefined;
     if (start) {
       lg1 = nativeDefault.radii.lg;
     }
-    obj.borderTopEndRadius = lg1;
-    let lg2;
+    lg2 = undefined;
     if (end) {
       lg2 = nativeDefault.radii.lg;
     }
-    obj.borderBottomStartRadius = lg2;
-    let lg3;
+    lg3 = undefined;
     if (end) {
       lg3 = nativeDefault.radii.lg;
     }
-    obj.borderBottomEndRadius = lg3;
     return obj;
   }, items);
-  const clearSelectedSearchResult = noop.useCallback(() => {
+  const clearSelectedSearchResult = react.useCallback(() => {
     state.setState({ selected: null });
   }, []);
-  const tmp = closure_7();
+  let obj = start(clearSelectedSearchResult[6]);
   let fn = function _() {
-    let obj = { opacity: null };
-    const obj2 = ReanimatedRexport;
-    const obj3 = ReanimatedRexport;
-    const withDelayResult = obj3.withDelay(500, timing.withTiming(0, { duration: 0 }));
-    const obj5 = timing;
-    const obj6 = { duration: 300, easing: ReanimatedRexport.Easing.ease };
-    const withTimingResult = obj5.withTiming(0.2, { duration: 300, easing: ReanimatedRexport.Easing.ease });
-    const obj7 = timing;
-    const fn = function t(arg0) {
-      if (arg0) {
-        start(callback[6]).runOnJS(closure_1_2);
+    let fn;
+    let obj5;
+    let withDelayResult;
+    let withSequence;
+    let withTiming;
+    let withTimingResult;
+    let obj = { opacity: withSequence(withDelayResult, withTimingResult, withTiming(0, obj5, "respect-motion-settings", fn)) };
+    let tmp = ReanimatedRexport;
+    withSequence = tmp.withSequence;
+    const withDelay = ReanimatedRexport.withDelay;
+    const obj2 = timing;
+    withDelayResult = withDelay(500, obj2.withTiming(0, { duration: 0 }));
+    const obj3 = timing;
+    const obj4 = { duration: 300, easing: ReanimatedRexport.Easing.ease };
+    withTimingResult = obj3.withTiming(0.2, obj4);
+    withTiming = timing.withTiming;
+    fn = function t(arg0) {
+      const tmp = arg0;
+      if (tmp) {
         const obj = start(callback[6]);
+        obj.runOnJS(closure_1_2);
       }
     };
-    const obj8 = { duration: 300, easing: ReanimatedRexport.Easing.ease };
+    obj5 = { duration: 300, easing: ReanimatedRexport.Easing.ease };
     fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, clearSelectedSearchResult };
     fn.__workletHash = 13391094209244;
     fn.__initData = __initData;
-    obj.opacity = obj2.withSequence(withDelayResult, withTimingResult, obj7.withTiming(0, obj8, "respect-motion-settings", fn));
+    ({ runOnJS: ReanimatedRexport.runOnJS, clearSelectedSearchResult });
     return obj;
   };
-  let obj = start(clearSelectedSearchResult[6]);
-  fn.__closure = { withSequence: start(clearSelectedSearchResult[6]).withSequence, withDelay: start(clearSelectedSearchResult[6]).withDelay, withTiming: start(clearSelectedSearchResult[7]).withTiming, Easing: start(clearSelectedSearchResult[6]).Easing, runOnJS: start(clearSelectedSearchResult[6]).runOnJS, clearSelectedSearchResult };
+  let obj2 = { withSequence: start(clearSelectedSearchResult[6]).withSequence, withDelay: start(clearSelectedSearchResult[6]).withDelay, withTiming: start(clearSelectedSearchResult[7]).withTiming, Easing: start(clearSelectedSearchResult[6]).Easing, runOnJS: start(clearSelectedSearchResult[6]).runOnJS, clearSelectedSearchResult };
+  fn.__closure = obj2;
   fn.__workletHash = 13630242918990;
   fn.__initData = __initData;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj3 = { pointerEvents: "none", style: null };
-  const items1 = [StyleSheet.absoluteFill, tmp.background, memo, animatedStyle, start.style];
-  obj3.style = items1;
-  return jsx(end(clearSelectedSearchResult[6]).View, { pointerEvents: "none", style: null });
+  const items1 = [StyleSheet.absoluteFill, tmp.background, memo, animatedStyle, style];
+  return jsx(end(clearSelectedSearchResult[6]).View, { pointerEvents: "none", style: items1 });
 });
+const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingListItemHighlight.tsx");
+
+export default memoResult;

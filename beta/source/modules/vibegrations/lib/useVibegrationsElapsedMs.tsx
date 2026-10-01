@@ -5,26 +5,31 @@
 // Exports: useVibegrationsElapsedMs
 
 // Module 16402 (useVibegrationsElapsedMs)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
+let _slicedToArray = _slicedToArray_mod;
 let closure_2 = { second: 1000, minute: 60000 };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsElapsedMs.tsx");
 
 export const useVibegrationsElapsedMs = function useVibegrationsElapsedMs(startedAt) {
+  let first;
   _slicedToArray = startedAt;
   let str = arg1;
   if (arg1 === undefined) {
     str = "second";
   }
-  const tmp = _slicedToArray(str.useState(() => Date.now()), 2);
-  closure_2 = tmp[1];
+  closure_2 = undefined;
+  [first, closure_2] = str.useState(() => Date.now());
   const items = [startedAt, str];
   const effect = str.useEffect(() => {
+    let closure_0;
+    let timeout;
     if (null != timeout) {
-      closure_1 = tmp4;
+      let closure_1 = tmp4;
       function tick() {
+        let timeout;
         const timestamp = Date.now();
         tick(timestamp);
         timeout = setTimeout(tick, closure_1 - ((timestamp - timeout) % closure_1 + closure_1) % closure_1);
@@ -40,7 +45,7 @@ export const useVibegrationsElapsedMs = function useVibegrationsElapsedMs(starte
   let bound;
   if (null != startedAt) {
     const _Math = Math;
-    bound = Math.max(0, tmp[0] - startedAt);
+    bound = Math.max(0, first - startedAt);
   }
   return bound;
 };

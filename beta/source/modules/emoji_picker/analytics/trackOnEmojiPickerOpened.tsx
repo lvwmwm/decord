@@ -5,17 +5,38 @@
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
 // Module 9743 (trackOnEmojiPickerOpened)
+import Constants from "Constants" /* 1074 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1218 */;
+import EmojiConstants from "EmojiConstants" /* 1375 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4487 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
 import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 9744 */;
-import useEmojiHotrail from "useEmojiHotrail" /* 9745 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 5771 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let animated;
+
+let tmp6;
+const useEmojiHotrail = tmp6(9745);
 function trackOnEmojiPickerOpened(current) {
+  let EXPRESSION_PICKER_OPENED;
+  let analyticsObject;
+  let containerWidth;
+  let guildEmoji;
+  let intention;
+  let isBurstReaction;
+  let newlyAddedEmojis;
+  let numFrequentlyItems;
+  let obj2;
+  let prop;
+  let rowSize;
+  let substr;
+  let topEmojis;
+  let visibleNewlyAddedEmojis;
+  let visibleTopEmojis;
   ({ intention, analyticsObject } = current);
   ({ containerWidth, rowSize, isBurstReaction } = current);
   const channel = ChannelStore.getChannel(SelectedChannelStore.getChannelId());
@@ -25,63 +46,56 @@ function trackOnEmojiPickerOpened(current) {
   }
   if (intention === EmojiIntention.REACTION) {
     const frequently = EmojiStore.emojiReactionFrecencyWithoutFetchingLatest.frequently;
-    let substr = frequently.slice();
-    let obj2 = EmojiStore;
+    substr = frequently.slice();
+    obj2 = EmojiStore;
   } else {
     obj2 = EmojiStore;
     const frequently1 = EmojiStore.emojiFrecencyWithoutFetchingLatest.frequently;
     substr = frequently1.slice();
   }
   if (null != channel) {
-    let prop = obj2.getDisambiguatedEmojiContext(channel.getGuildId()).favoriteEmojisWithoutFetchingLatest;
+    prop = obj2.getDisambiguatedEmojiContext(channel.getGuildId()).favoriteEmojisWithoutFetchingLatest;
   } else {
     prop = [];
   }
   if (intention === EmojiIntention.REACTION) {
-    let numFrequentlyItems = obj2.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems;
+    numFrequentlyItems = obj2.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems;
   } else {
     numFrequentlyItems = obj2.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems;
   }
   const substr1 = substr.slice(0, numFrequentlyItems);
   if (null != guildId) {
-    let guildEmoji = obj2.getGuildEmoji(guildId);
+    guildEmoji = obj2.getGuildEmoji(guildId);
   } else {
     guildEmoji = [];
   }
   let guildId1;
+  const getDisambiguatedEmojiContext = obj2.getDisambiguatedEmojiContext;
   if (channel != null) {
     guildId1 = channel.getGuildId();
   }
-  const disambiguatedEmojiContext = obj2.getDisambiguatedEmojiContext(guildId1);
+  const disambiguatedEmojiContext = getDisambiguatedEmojiContext(guildId1);
   const customEmoji = disambiguatedEmojiContext.getCustomEmoji();
   let guildId2;
+  const getTopAndNewlyAddedEmojis = useTopAndNewlyAddedEmojis.getTopAndNewlyAddedEmojis;
+  useTopAndNewlyAddedEmojis;
   if (channel != null) {
     guildId2 = channel.getGuildId();
   }
-  const topAndNewlyAddedEmojis = useTopAndNewlyAddedEmojis.getTopAndNewlyAddedEmojis({ guildId: guildId2, pickerIntention: intention });
+  const topAndNewlyAddedEmojis = getTopAndNewlyAddedEmojis({ guildId: guildId2, pickerIntention: intention });
   ({ topEmojis, newlyAddedEmojis } = topAndNewlyAddedEmojis);
-  const emojiHotrail = useEmojiHotrail.getEmojiHotrail({ topEmojis, newlyAddedEmojis, rowSize });
-  ({ visibleTopEmojis, visibleNewlyAddedEmojis } = emojiHotrail);
   const tmp6Result = useEmojiHotrail;
+  const emojiHotrail = tmp6Result.getEmojiHotrail({ topEmojis, newlyAddedEmojis, rowSize });
+  ({ visibleTopEmojis, visibleNewlyAddedEmojis } = emojiHotrail);
+  const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
+  AppAnalyticsUtilsDefault;
   if (intention === EmojiIntention.REACTION) {
-    let EXPRESSION_PICKER_OPENED = AnalyticEvents.REACTION_PICKER_OPENED;
+    EXPRESSION_PICKER_OPENED = AnalyticEvents.REACTION_PICKER_OPENED;
   } else {
     EXPRESSION_PICKER_OPENED = AnalyticEvents.EXPRESSION_PICKER_OPENED;
   }
-  const obj6 = AppAnalyticsUtilsDefault;
-  let tmp14 = intention === tmp2.REACTION;
-  if (tmp14) {
-    const obj3 = { is_burst: isBurstReaction };
-    tmp14 = obj3;
-  }
-  const merged = Object.assign(tmp14);
-  let tmp16 = null != analyticsObject;
-  if (tmp16) {
-    const obj5 = { location_object: analyticsObject };
-    tmp16 = obj5;
-  }
-  const merged1 = Object.assign(tmp16);
-  obj6.trackWithMetadata(EXPRESSION_PICKER_OPENED, {
+  let tmp16 = intention === tmp2.REACTION;
+  const obj = {
     width: containerWidth,
     tab: ExpressionPickerViewType.EMOJI,
     badged: false,
@@ -111,18 +125,29 @@ function trackOnEmojiPickerOpened(current) {
     num_animated_expressions_top_server: visibleTopEmojis.filter((animated) => animated.animated).length,
     num_expressions_newly_added: visibleNewlyAddedEmojis.length,
     num_animated_expressions_newly_added: visibleNewlyAddedEmojis.filter((animated) => animated.animated).length
-  });
+  };
+  if (tmp16) {
+    tmp16 = { is_burst: isBurstReaction };
+    const obj3 = { is_burst: isBurstReaction };
+  }
+  const merged = Object.assign(tmp16);
+  let tmp18 = null != analyticsObject;
+  if (tmp18) {
+    tmp18 = { location_object: analyticsObject };
+    const obj4 = { location_object: analyticsObject };
+  }
+  const merged1 = Object.assign(tmp18);
+  trackWithMetadata(EXPRESSION_PICKER_OPENED, obj);
 }
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const EmojiIntention = fn(1375).EmojiIntention;
-const ExpressionPickerViewType = fn(1218).ExpressionPickerViewType;
-const size = fn(2);
+const AnalyticEvents = Constants.AnalyticEvents;
+const EmojiIntention = EmojiConstants.EmojiIntention;
+const ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewType;
 const result = size.fileFinishedImporting("modules/emoji_picker/analytics/trackOnEmojiPickerOpened.tsx");
 
 export default trackOnEmojiPickerOpened;
 export const useTrackOnEmojiPickerOpenedForReactions = function useTrackOnEmojiPickerOpenedForReactions(set) {
-  noop.useRef(set);
-  const effect = noop.useEffect(() => {
+  const ref = react.useRef(set);
+  const effect = react.useEffect(() => {
     if (ref.current.intention === EmojiIntention.REACTION) {
       trackOnEmojiPickerOpened(tmp.current);
     }

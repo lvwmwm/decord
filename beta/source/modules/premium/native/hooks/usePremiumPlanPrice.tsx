@@ -5,65 +5,76 @@
 // Exports: default
 
 // Module 8665 (usePremiumPlanPrice)
+import Constants from "Constants" /* 1085 */;
 import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6675 */;
-import noop from "module_19" /* 19 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4493 */;
+import react_mod from "react" /* 19 */;
+import SubscriptionPlanStore_mod from "SubscriptionPlanStore" /* 4493 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 import IAPStore from "IAPStore" /* 6658 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_5;
 
-require = fn;
-const PaymentGateways = fn(1085).PaymentGateways;
+let react = react_mod;
+let SubscriptionPlanStore = SubscriptionPlanStore_mod;
+const PaymentGateways = Constants.PaymentGateways;
 const PremiumPlanPriceSource = { IAP: "IAP", API: "API" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/hooks/usePremiumPlanPrice.tsx");
 
 export default function usePremiumPlanPrice(arg0) {
+  let closure_0;
+  let closure_3;
+  let country;
+  let country1;
+  let mobileStoreFront;
+  let price;
+  let priceState;
+  let tmpResult4;
   _require = arg0;
-  let formatPrice = _require;
-  let amount = priceState;
-  let obj = require("initialize");
+  let tmp = _require;
+  let tmp2 = priceState;
+  let obj = require("get initialized");
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => closure_5.getPremiumTypeSubscription());
   const NitroACOMSubscriptionExperiment = require("ACOMExperiments").NitroACOMSubscriptionExperiment;
   let enabled = NitroACOMSubscriptionExperiment.useConfig({ location: "usePremiumPlanPrice" }).enabled;
-  mobileStoreFront = mobileStoreFront(priceState[7]).useMobileStoreFront();
+  let tmp4 = mobileStoreFront;
   const obj2 = mobileStoreFront(priceState[7]);
-  const tmp2 = mobileStoreFront;
+  mobileStoreFront = obj2.useMobileStoreFront();
   const items1 = [SubscriptionPlanStore];
   const items2 = [arg0];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => {
-    value = null;
+  const obj3 = require("get initialized");
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => {
+    let value = null;
     if (null != closure_0) {
       value = SubscriptionPlanStore.get(tmp);
     }
     return value;
   }, items2);
-  const obj3 = require("initialize");
-  ({ price, priceState } = mobileStoreFront(priceState[8])(stateFromStores1, mobileStoreFront));
-  let tmp6 = null;
-  let tmp7 = null;
+  const tmp7 = mobileStoreFront(priceState[8])(stateFromStores1, mobileStoreFront);
+  ({ price, priceState } = tmp7);
+  let tmp8 = null;
   if (null != arg0) {
-    tmp7 = formatPrice(amount[9]).BasePlanIdToProductId[arg0];
+    tmp8 = tmp(tmp2[9]).BasePlanIdToProductId[arg0];
   }
-  noop = tmp7;
-  const tmp5 = mobileStoreFront(priceState[8])(stateFromStores1, mobileStoreFront);
+  react = tmp8;
   const items3 = [IAPStore];
-  const items4 = [tmp7];
-  const stateFromStores2 = formatPrice(amount[5]).useStateFromStores(items3, () => {
+  const items4 = [tmp8];
+  const tmpResult = tmp(tmp2[5]);
+  const stateFromStores2 = tmpResult.useStateFromStores(items3, () => {
     let product = null;
     if (null != closure_3) {
       product = IAPStore.getProduct(tmp);
     }
     return product;
   }, items4);
-  const formatPriceResult = formatPrice(amount[5]);
-  let isIOSResult = formatPrice(amount[10]).isIOS();
+  const tmpResult3 = tmp(tmp2[10]);
+  let isIOSResult = tmpResult3.isIOS();
   if (isIOSResult) {
     if (!enabled) {
       let isACOM;
-      if (stateFromStores != tmp6) {
+      if (stateFromStores != null) {
         isACOM = stateFromStores.isACOM;
       }
       enabled = true === isACOM;
@@ -71,26 +82,34 @@ export default function usePremiumPlanPrice(arg0) {
     isIOSResult = enabled;
   }
   SubscriptionPlanStore = isIOSResult;
-  const tmp11 = tmp2(amount[11])(() => new mobileStoreFront(priceState[12])(500, 10000));
-  closure_5 = tmp11;
-  const items5 = [isIOSResult, priceState, mobileStoreFront, tmp11];
-  const effect = noop.useEffect(() => {
-    if (closure_4) {
+  const tmp12 = tmp4(tmp2[11])(() => {
+    const tmp = new mobileStoreFront(priceState[12])(500, 10000);
+    return tmp;
+  });
+  closure_5 = tmp12;
+  const items5 = [isIOSResult, priceState, mobileStoreFront, tmp12];
+  const effect = react.useEffect(() => {
+    const tmp = closure_4;
+    if (tmp) {
+      const tmp2 = priceState;
+      const tmp3 = closure_0;
+      const tmp4 = priceState;
       if (priceState !== closure_0(priceState[8]).PriceStates.PRICE_AVAILABLE) {
-        if (tmp === tmp2(tmp3[8]).PriceStates.MISMATCHING_COUNTRIES) {
+        if (tmp2 === tmp3(tmp4[8]).PriceStates.MISMATCHING_COUNTRIES) {
           let country;
           if (mobileStoreFront != null) {
-            country = tmp6.country;
+            country = tmp7.country;
           }
           if (null != country) {
+            let obj = closure_5;
             if (!closure_5.pending) {
-              if (!isIOSResult.isFetchingForPremiumSKUs()) {
+              if (!SubscriptionPlanStore.isFetchingForPremiumSKUs()) {
                 if (obj.fails < 3) {
-                  country = tmp6.country;
+                  const country2 = tmp7.country;
                   obj.fail(() => {
                     if (!SubscriptionPlanStore.isFetchingForPremiumSKUs()) {
                       const obj = SubscriptionPlanActionCreators;
-                      const premiumSubscriptionPlans = obj.fetchPremiumSubscriptionPlans(country, undefined, undefined, PaymentGateways.APPLE_ADVANCED_COMMERCE);
+                      const premiumSubscriptionPlans = obj.fetchPremiumSubscriptionPlans(country2, undefined, undefined, PaymentGateways.APPLE_ADVANCED_COMMERCE);
                       premiumSubscriptionPlans.catch(() => {
 
                       });
@@ -109,40 +128,42 @@ export default function usePremiumPlanPrice(arg0) {
       }
     }
   }, items5);
-  if (tmp6 == arg0) {
-    return null;
-  } else if (isIOSResult) {
-    if (priceState === formatPrice(amount[8]).PriceStates.PRICE_AVAILABLE) {
-      if (tmp6 != price) {
-        const obj4 = { price: null, currency: null, countryCode: null, priceString: null, source: null };
-        ({ amount: obj7.price, currency: obj7.currency } = price);
-        tmp6 = mobileStoreFront == tmp6;
-        let country;
-        if (!tmp6) {
-          country = mobileStoreFront.country;
+  let tmp14 = null;
+  if (null != arg0) {
+    let tmp15;
+    if (isIOSResult) {
+      let tmp18 = null;
+      if (priceState === tmp(tmp2[8]).PriceStates.PRICE_AVAILABLE) {
+        tmp18 = null;
+        if (null != price) {
+          ({ amount: obj7.price, currency: obj7.currency } = price);
+          const obj4 = { price: null, currency: null, countryCode: country, priceString: tmpResult4.formatPrice(price.amount, price.currency), source: obj.API };
+          country = undefined;
+          if (mobileStoreFront != null) {
+            country = mobileStoreFront.country;
+          }
+          tmp18 = obj4;
+          tmpResult4 = tmp(tmp2[14]);
         }
-        obj4.countryCode = country;
-        priceState = formatPrice(amount[14]);
-        formatPrice = priceState.formatPrice;
-        amount = price.amount;
-        price = formatPrice(amount, price.currency);
-        obj4.priceString = price;
-        obj4.source = obj.API;
+      }
+      tmp15 = tmp18;
+    } else {
+      tmp15 = null;
+      if (null != stateFromStores2) {
+        const obj5 = { price: null, currency: null, countryCode: country1, priceString: stateFromStores2.priceString, source: obj.IAP };
+        ({ price: obj6.price, currencyCode: obj6.currency } = stateFromStores2);
+        country1 = undefined;
+        if (mobileStoreFront != null) {
+          country1 = mobileStoreFront.country;
+        }
+        if (country1 == null) {
+          country1 = stateFromStores2.countryCode;
+        }
+        tmp15 = obj5;
       }
     }
-  } else if (tmp6 != stateFromStores2) {
-    const obj5 = { price: null, currency: null, countryCode: null, priceString: null, source: null };
-    ({ price: obj6.price, currencyCode: obj6.currency } = stateFromStores2);
-    let country1;
-    if (mobileStoreFront != tmp6) {
-      country1 = mobileStoreFront.country;
-    }
-    if (country1 == tmp6) {
-      country1 = stateFromStores2.countryCode;
-    }
-    obj5.countryCode = country1;
-    obj5.priceString = stateFromStores2.priceString;
-    obj5.source = obj.IAP;
+    tmp14 = tmp15;
   }
+  return tmp14;
 };
 export { PremiumPlanPriceSource };

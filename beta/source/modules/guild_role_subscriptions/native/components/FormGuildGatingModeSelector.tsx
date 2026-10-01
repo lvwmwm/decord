@@ -5,75 +5,80 @@
 // Exports: default
 
 // Module 17551 (FormGuildGatingModeSelector)
-import util from "util" /* 1115 */;
+import react_native from "react-native" /* 17 */;
+import intl5 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+let dependencyMap;
+
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+const View = react_native.View;
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ container: { padding: 16 }, space: { height: 8 }, alertHeader: { paddingBottom: 16 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormGuildGatingModeSelector.tsx");
 
 export default function FormGuildGatingModeSelector(isFullServerGating) {
+  let alertHeader;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items2;
   isFullServerGating = isFullServerGating.isFullServerGating;
   const onChange = isFullServerGating.onChange;
-  const tmp = closure_8();
+  let tmp = closure_8();
   dependencyMap = tmp;
-  const roleSubscriptionSettingsDisabled = isFullServerGating(17552).useRoleSubscriptionSettingsDisabled();
+  let obj = isFullServerGating(17552);
+  const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   let items = [onChange];
   const items1 = [onChange, isFullServerGating, tmp];
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     onChange(false);
   }, items);
-  let obj2 = { style: tmp.container, accessibilityRole: "radiogroup", accessibilityState: { disabled: roleSubscriptionSettingsDisabled }, children: null };
-  const callback1 = noop.useCallback(() => {
-    if (!isFullServerGating) {
-      const obj2 = { confirmText: null, children: null };
-      const intl = util.intl;
-      obj2.confirmText = intl.string(util.t["NX+WJN"]);
-      const obj3 = { children: null };
-      const obj4 = { style: alertHeader.alertHeader, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: null };
-      const intl2 = util.intl;
-      obj4.children = intl2.string(util.t.dmVoOz);
-      const items = [hasOwnProperty(Text_Text.Text, obj4), ];
-      const obj5 = { variant: "text-md/normal", children: null };
-      const intl3 = util.intl;
-      obj5.children = intl3.string(util.t.mtwzdD);
-      items[1] = hasOwnProperty(Text_Text.Text, obj5);
-      obj3.children = items;
-      obj2.children = React5(timestampProducer, obj3);
-      actions_AlertActionCreatorsDefault.show(obj2);
+  let obj2 = { style: tmp.container, accessibilityRole: "radiogroup", accessibilityState: { disabled: roleSubscriptionSettingsDisabled }, children: items2 };
+  const callback1 = react.useCallback(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    let items;
+    let obj2;
+    const tmp = isFullServerGating;
+    if (!tmp) {
+      const obj = { confirmText: intl.string(intl5.t["NX+WJN"]), children: metroImportDefault(metroRequire, obj2) };
+      const show = actions_AlertActionCreatorsDefault.show;
+      actions_AlertActionCreatorsDefault;
+      intl = intl5.intl;
+      obj2 = { children: items };
+      const obj3 = { style: alertHeader.alertHeader, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: intl2.string(intl5.t.dmVoOz) };
+      const Text = Text_Text.Text;
+      intl2 = intl5.intl;
+      items = [hasOwnProperty(Text, obj3), ];
+      const obj4 = { variant: "text-md/normal", children: intl3.string(intl5.t.mtwzdD) };
+      const Text2 = Text_Text.Text;
+      intl3 = intl5.intl;
+      items[1] = hasOwnProperty(Text2, obj4);
+      show(obj);
     }
     onChange(true);
   }, items1);
-  let obj3 = { icon: null, title: null, description: null, selected: null, onPress: null, disabled: null };
-  let obj = isFullServerGating(17552);
-  obj3.icon = onChange(11282);
-  let intl = isFullServerGating(1115).intl;
-  obj3.title = intl.string(isFullServerGating(1115).t.rXqxhF);
-  let intl2 = isFullServerGating(1115).intl;
-  obj3.description = intl2.string(isFullServerGating(1115).t.yQiJne);
-  obj3.selected = !isFullServerGating;
-  obj3.onPress = callback;
-  obj3.disabled = roleSubscriptionSettingsDisabled;
-  const items2 = [closure_5(onChange(17554), obj3), closure_5(View, { style: tmp.space }), ];
-  let obj5 = { icon: null, title: null, description: null, selected: null, onPress: null, disabled: null };
-  let obj4 = { style: tmp.space };
+  let obj3 = { icon: onChange(11282), title: intl.string(isFullServerGating(1115).t.rXqxhF), description: intl2.string(isFullServerGating(1115).t.yQiJne), selected: !isFullServerGating, onPress: callback, disabled: roleSubscriptionSettingsDisabled };
   const tmp5 = onChange(17554);
-  obj5.icon = onChange(17555);
-  let intl3 = isFullServerGating(1115).intl;
-  obj5.title = intl3.string(isFullServerGating(1115).t.WzC9s6);
-  const intl4 = isFullServerGating(1115).intl;
-  obj5.description = intl4.string(isFullServerGating(1115).t.WmagiB);
-  obj5.selected = isFullServerGating;
-  obj5.onPress = callback1;
-  obj5.disabled = roleSubscriptionSettingsDisabled;
-  items2[2] = closure_5(onChange(17554), obj5);
-  obj2.children = items2;
+  intl = isFullServerGating(1115).intl;
+  intl2 = isFullServerGating(1115).intl;
+  items2 = [closure_5(tmp5, obj3), , ];
+  let obj4 = { style: tmp.space };
+  items2[1] = closure_5(View, obj4);
+  const obj5 = { icon: onChange(17555), title: intl3.string(isFullServerGating(1115).t.WzC9s6), description: intl4.string(isFullServerGating(1115).t.WmagiB), selected: isFullServerGating, onPress: callback1, disabled: roleSubscriptionSettingsDisabled };
+  const tmp6 = onChange(17554);
+  intl3 = isFullServerGating(1115).intl;
+  intl4 = isFullServerGating(1115).intl;
+  items2[2] = closure_5(tmp6, obj5);
   return closure_7(View, obj2);
 };

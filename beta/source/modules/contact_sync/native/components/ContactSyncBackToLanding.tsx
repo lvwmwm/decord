@@ -9,18 +9,24 @@ import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 1
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
 let result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncBackToLanding.tsx");
 
 export default function ContactSyncBackToLanding(arg0) {
+  let closure_0;
+  let closure_1;
   _require = arg0;
-  dependencyMap = require("useNavigation").useNavigation();
-  const obj = require("useNavigation");
-  return require("NavigatorHeader").getHeaderBackButton(() => {
+  let obj = require("useNavigation");
+  dependencyMap = obj.useNavigation();
+  let obj2 = require("NavigatorHeader");
+  return obj2.getHeaderBackButton(() => {
+    const obj = closure_0;
     if (null != closure_0.navigateToLandingPage) {
-      const result = closure_0.navigateToLandingPage();
+      const result = obj.navigateToLandingPage();
     } else {
-      ContactSyncModalActionCreators.goBackToLanding(closure_1);
+      const obj2 = ContactSyncModalActionCreators;
+      obj2.goBackToLanding(closure_1);
     }
   }, true)(arg0);
 };

@@ -7,24 +7,26 @@
 // Module 13772 (collations)
 import _mod13773 from "module_13773" /* 13773 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const getSupportedCollations = function getSupportedCollations(locale) {
-  closure_0 = locale;
+  let closure_0 = locale;
   const collations = _mod13773.collations;
-  return collations.filter((item) => (function isSupported(item, arg1) {
-    let str = arg1;
-    if (undefined === arg1) {
-      str = "en";
+  return collations.filter((item) => {
+    function isSupported(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const _Intl = Intl;
+        const concat = "".concat;
+        const combined = "".concat(str, "-u-co-");
+        const CollatorResult = Collator(combined.concat(item));
+        return CollatorResult.resolvedOptions().collation === item;
+      } catch (err) {
+        return false;
+      }
     }
-    try {
-      const _Intl = Intl;
-      const concat = "".concat;
-      const combined = "".concat(str, "-u-co-");
-      return Intl.Collator(combined.concat(item)).resolvedOptions().collation === item;
-    } catch (err) {
-      return false;
-    }
-  })(item, closure_0));
+    return isSupported(item, closure_0);
+  });
 };

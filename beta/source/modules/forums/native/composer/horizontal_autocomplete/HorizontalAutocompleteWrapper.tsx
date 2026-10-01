@@ -5,29 +5,41 @@
 // Exports: default
 
 // Module 9884 (HorizontalAutocompleteWrapper)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import timing from "timing" /* 4837 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const FlatList = fn(17).FlatList;
-fn(1074).AutoCompleteResultTypes;
-const jsx = fn(21).jsx;
+let item;
+
+const FlatList = react_native.FlatList;
+Constants.AutoCompleteResultTypes;
+const jsx = Fragment.jsx;
 const __initData = { code: "function HorizontalAutocompleteWrapperTsx1(){const{withTiming,toValue}=this.__closure;return{opacity:withTiming(toValue)};}" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/composer/horizontal_autocomplete/HorizontalAutocompleteWrapper.tsx");
 
 export default function HorizontalAutocompleteWrapper(channel) {
+  let autocompleteSelectionStart;
+  let results;
+  let selection;
+  let style;
+  let text;
   channel = channel.channel;
   const onPressAutocompleteItem = channel.onPressAutocompleteItem;
   autocompleteSelectionStart = undefined;
+  let tmp2 = autocompleteSelectionStart;
   ({ style, text, selection } = channel);
-  const horizontalAutocompleteResults = channel(autocompleteSelectionStart[4]).useHorizontalAutocompleteResults({ channel, text, selection });
+  let obj = channel(autocompleteSelectionStart[4]);
+  const horizontalAutocompleteResults = obj.useHorizontalAutocompleteResults({ channel, text, selection });
   ({ results, autocompleteSelectionStart } = horizontalAutocompleteResults);
   const query = horizontalAutocompleteResults.query;
   const items = [onPressAutocompleteItem, autocompleteSelectionStart, query];
   const callback = query.useCallback((stopPropagation, arg1) => {
     stopPropagation.stopPropagation();
     num = autocompleteSelectionStart;
+    const tmp2 = onPressAutocompleteItem;
     if (autocompleteSelectionStart == null) {
       num = 0;
     }
@@ -35,7 +47,7 @@ export default function HorizontalAutocompleteWrapper(channel) {
     if (query == null) {
       str = "";
     }
-    onPressAutocompleteItem(arg1, num, str);
+    tmp2(arg1, num, str);
   }, items);
   const items1 = [channel.guild_id, callback];
   let num = 0;
@@ -43,35 +55,29 @@ export default function HorizontalAutocompleteWrapper(channel) {
     item = item.item;
     const type = item.type;
     if (num.USER === type) {
-      const obj2 = {};
+      const User = onPressAutocompleteItem(autocompleteSelectionStart[5]).User;
       const merged = Object.assign(item);
-      obj2.guildId = item.guild_id;
-      obj2.onPress = function onPress(arg0) {
+      return <User guildId={item.guild_id} onPress={function onPress(arg0) {
         return callback(arg0, item);
-      };
-      return jsx(onPressAutocompleteItem(autocompleteSelectionStart[5]).User, {});
-    } else if (tmp.ROLE === type) {
-      const obj3 = {};
+      }} />;
+    } else if (num.ROLE === type) {
+      const Role = onPressAutocompleteItem(autocompleteSelectionStart[5]).Role;
       const merged1 = Object.assign(item);
-      obj3.guildId = item.guild_id;
-      obj3.onPress = function onPress(arg0) {
+      return <Role guildId={item.guild_id} onPress={function onPress(arg0) {
         return callback(arg0, item);
-      };
-      return jsx(onPressAutocompleteItem(autocompleteSelectionStart[5]).Role, {});
-    } else if (tmp.CHANNEL === type) {
-      const obj4 = {};
+      }} />;
+    } else if (num.CHANNEL === type) {
+      const Channel = onPressAutocompleteItem(autocompleteSelectionStart[5]).Channel;
       const merged2 = Object.assign(item);
-      obj4.onPress = function onPress(arg0) {
+      return <Channel onPress={function onPress(arg0) {
         return callback(arg0, item);
-      };
-      return jsx(onPressAutocompleteItem(autocompleteSelectionStart[5]).Channel, {});
-    } else if (tmp.EMOJI === type) {
-      const obj = {};
+      }} />;
+    } else if (num.EMOJI === type) {
+      const Emoji = onPressAutocompleteItem(autocompleteSelectionStart[5]).Emoji;
       const merged3 = Object.assign(item);
-      obj.onPress = function onPress(arg0) {
+      return <Emoji onPress={function onPress(arg0) {
         return callback(arg0, item);
-      };
-      return jsx(onPressAutocompleteItem(autocompleteSelectionStart[5]).Emoji, {});
+      }} />;
     } else {
       return null;
     }
@@ -79,28 +85,19 @@ export default function HorizontalAutocompleteWrapper(channel) {
   if (results.length > 0) {
     num = 1;
   }
-  let obj = channel(autocompleteSelectionStart[4]);
   const fn = function _() {
-    const obj = { opacity: timing.withTiming(num) };
+    let obj2;
+    const obj = { opacity: obj2.withTiming(num) };
+    obj2 = timing;
     return obj;
   };
-  const tmpResult = channel(autocompleteSelectionStart[6]);
-  fn.__closure = { withTiming: channel(autocompleteSelectionStart[7]).withTiming, toValue: num };
+  const tmpResult = channel(tmp2[6]);
+  let obj2 = { withTiming: tmp(tmp2[7]).withTiming, toValue: num };
+  fn.__closure = obj2;
   fn.__workletHash = 7895652904738;
   fn.__initData = __initData;
   const animatedStyle = tmpResult.useAnimatedStyle(fn);
-  let obj3 = {
-    style: null,
-    children: <callback keyboardShouldPersistTaps="always" horizontal keyExtractor={function keyExtractor(arg0, arg1) {
-      return String(arg1);
-    }} data={results} renderItem={callback1} />
-  };
   const items2 = [style, animatedStyle];
-  obj3.style = items2;
-  return jsx(onPressAutocompleteItem(autocompleteSelectionStart[6]).View, {
-    style: null,
-    children: <callback keyboardShouldPersistTaps="always" horizontal keyExtractor={function keyExtractor(arg0, arg1) {
-      return String(arg1);
-    }} data={results} renderItem={callback1} />
-  });
+  const View = onPressAutocompleteItem(tmp2[6]).View;
+  return <View style={items2}>{null}</View>;
 };

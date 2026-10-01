@@ -5,13 +5,15 @@
 // Exports: ThemeProvider
 
 // Module 1521 (ThemeProvider)
-import _mod1522 from "module_1522" /* 1522 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 1522 */;
+import react from "react" /* 19 */;
 
-require = fn;
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 
 export const ThemeProvider = function ThemeProvider(arg0) {
+  let children;
+  let value;
   ({ value, children } = arg0);
-  return jsx(_mod1522.ThemeContext.Provider, { value, children });
+  return jsx(react2.ThemeContext.Provider, { value, children });
 };

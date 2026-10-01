@@ -5,26 +5,31 @@
 // Exports: default, getGuildIdForGenericRedirect
 
 // Module 4848 (useGuildIdForChannelRoute)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const FAVORITES = fn(1074).FAVORITES;
-const size = fn(2);
+const FAVORITES = Constants.FAVORITES;
 const result = size.fileFinishedImporting("modules/routing/useGuildIdForChannelRoute.tsx");
 
 export default function useGuildIdForChannelRoute(getGuildId) {
+  let guildId;
   const items = [SelectedGuildStore];
-  let stateFromStores = initialize.useStateFromStores(items, () => guildId.getGuildId());
+  const obj = get_initialized;
+  let stateFromStores = obj.useStateFromStores(items, () => guildId.getGuildId());
   if (null == stateFromStores) {
     stateFromStores = getGuildId.getGuildId();
   }
   return stateFromStores;
 };
 export const getGuildIdForGenericRedirect = function getGuildIdForGenericRedirect(channel) {
+  let guildId;
+  const obj = FavoritesUtils;
   if (!obj.isFavoritesGuildId(SelectedGuildStore.getGuildId())) {
-    let guildId = channel.getGuildId();
+    guildId = channel.getGuildId();
   } else if (FavoriteStore.isFavorite(channel.id)) {
     guildId = FAVORITES;
   }

@@ -27,13 +27,14 @@ export default function usePremiumGroupPrimaryName() {
   }
   const premiumGroupMembership = usePremiumGroupMembershipDefault({ useCachedData: flag, fetch: flag2 }).premiumGroupMembership;
   let subscriptionId;
+  const tmp2 = usePremiumGroupMembersDefault;
   if (premiumGroupMembership != null) {
     subscriptionId = premiumGroupMembership.subscriptionId;
   }
   if (subscriptionId == null) {
     subscriptionId = null;
   }
-  const premiumGroupMembers = usePremiumGroupMembersDefault(subscriptionId, { useCachedData: flag, fetch: flag2 }).premiumGroupMembers;
+  const premiumGroupMembers = tmp2(subscriptionId, { useCachedData: flag, fetch: flag2 }).premiumGroupMembers;
   let primary;
   if (premiumGroupMembers != null) {
     primary = premiumGroupMembers.primary;
@@ -41,10 +42,12 @@ export default function usePremiumGroupPrimaryName() {
   let nameFromUserResult = null;
   if (null != primary) {
     let primary1;
+    const nameFromUser = UserUtils.nameFromUser;
+    UserUtils;
     if (premiumGroupMembers != null) {
       primary1 = premiumGroupMembers.primary;
     }
-    nameFromUserResult = UserUtils.nameFromUser(primary1);
+    nameFromUserResult = nameFromUser(primary1);
   }
   return nameFromUserResult;
 };

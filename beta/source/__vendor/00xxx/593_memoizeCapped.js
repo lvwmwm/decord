@@ -4,26 +4,25 @@
 // Dependencies: [594]
 
 // Module 593 (memoizeCapped)
-import _mod594 from "module_594" /* 594 */;
+import memoizeCapped from "memoizeCapped" /* 594 */;
 
 const re0 = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
 const re1 = /\\(\\)?/g;
 
-export default _mod594((str) => {
+export default memoizeCapped((str) => {
   const items = [];
   if (46 === str.charCodeAt(0)) {
     items.push("");
   }
   let replaced = str.replace(items, (arg0, arg1, arg2, str) => {
+    let replaced;
+    const push = items.push;
     if (arg2) {
-      let replaced = str.replace(re1, "$1");
+      replaced = str.replace(re1, "$1");
     } else {
-      replaced = arg1;
-      if (!arg1) {
-        replaced = arg0;
-      }
+      replaced = arg1 || arg0;
     }
-    items.push(replaced);
+    push(replaced);
   });
   return items;
 });

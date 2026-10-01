@@ -5,32 +5,32 @@
 // Exports: default
 
 // Module 6505 (ParagraphField)
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import TextArea from "TextArea" /* 6506 */;
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 5366 */;
+import TextArea2 from "TextArea" /* 6506 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const maxLength = fn(5366).MAX_PARAGRAPH_RESPONSE_LENGTH;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const maxLength = MemberVerificationConstants.MAX_PARAGRAPH_RESPONSE_LENGTH;
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ container: { marginVertical: 12, flexDirection: "column" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/ParagraphField.tsx");
 
 export default function ParagraphField(field) {
+  let intl;
   field = field.field;
+  const onChange = field.onChange;
   let str = field.response;
-  const obj = { style: closure_5().container, children: null };
-  const obj2 = { label: jsx(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: field.label }), maxLength, value: null, placeholder: null, onChange: null };
+  const label = field.label;
+  ({ label: null, maxLength, value: str, placeholder: intl.string(intl2.t["Sqn+Wh"]), onChange });
+  const TextArea = TextArea2.TextArea;
   if (str == null) {
     str = "";
   }
-  obj2.value = str;
-  const intl = tmp3(1115).intl;
-  obj2.placeholder = intl.string(util.t["Sqn+Wh"]);
-  obj2.onChange = field.onChange;
-  obj.children = jsx(TextArea.TextArea, { label: jsx(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: field.label }), maxLength, value: null, placeholder: null, onChange: null });
-  return <View style={closure_5().container}>{null}</View>;
+  intl = tmp3(1115).intl;
+  return <tmp2 style={closure_5().container}>{null}</tmp2>;
 };

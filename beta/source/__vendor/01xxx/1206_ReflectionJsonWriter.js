@@ -4,20 +4,18 @@
 // Dependencies: [32, 41, 42, 1196, 1200, 1194, 1189]
 
 // Module 1206 (ReflectionJsonWriter)
-import _slicedToArray from "module_32" /* 32 */;
+import base64decode from "base64decode" /* 1189 */;
+import assert4 from "assert" /* 1196 */;
+import ScalarType from "ScalarType" /* 1200 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-const ReflectionJsonWriter = require;
 class ReflectionJsonWriter {
-  constructor(arg0) {
-    tmp = closure_3(this, ReflectionJsonWriter);
-    fields = global.fields;
-    if (null === fields) {
-      fields = [];
-    }
+  constructor(self) {
+    _classCallCheck(this, ReflectionJsonWriter);
+    const fields = self.fields ?? [];
     this.fields = fields;
-    return;
   }
 }
 const entry = {
@@ -32,20 +30,19 @@ const entry = {
       if (nextResult.oneof) {
         let tmp8 = arg0[tmp2.oneof];
         if (tmp8.oneofKind === tmp2.localName) {
+          let merged;
           if ("scalar" == tmp2.kind) {
             let _Object = Object;
             let _Object2 = Object;
-            let merged = Object.assign(Object.assign({}, useProtoFieldName), { emitDefaultValues: true });
+            merged = Object.assign(Object.assign({}, useProtoFieldName), { emitDefaultValues: true });
           } else {
             merged = useProtoFieldName;
           }
           let fieldResult = self.field(tmp2, tmp9[tmp2.localName], merged);
-          let obj2 = ReflectionJsonWriter(1196);
+          let tmp15 = fieldResult;
+          let obj2 = assert4;
           let assertResult = obj2.assert(undefined !== fieldResult);
-          let tmp19 = nextResult;
-          let tmp20 = useProtoFieldName.useProtoFieldName ? tmp19.name : tmp19.jsonName;
-          tmp19 = fieldResult;
-          obj[tmp20] = fieldResult;
+          obj[useProtoFieldName.useProtoFieldName ? tmp2.name : tmp2.jsonName] = tmp15;
         }
       } else {
         let fieldResult1 = self.field(tmp2, arg0[tmp2.localName], useProtoFieldName);
@@ -65,28 +62,33 @@ let items = [
     value: function field(kind, obj, enumAsInteger) {
       let length;
       let length2;
+      let scalarResult2;
+      let str6;
+      let tmp58;
       const self = this;
       if ("map" == kind.kind) {
-        let tmp49 = typeof obj === "object";
+        let tmp51 = typeof obj === "object";
+        const assert2 = assert4.assert;
+        assert4;
         if (typeof obj === "object") {
-          tmp49 = null !== obj;
+          tmp51 = null !== obj;
         }
-        ReflectionJsonWriter(1196).assert(tmp49);
+        assert2(tmp51);
         const kind3 = kind.V.kind;
-        const obj4 = {};
+        const obj3 = {};
         if ("scalar" === kind3) {
           const _Object2 = Object;
           const entries = Object.entries(obj);
-          const tmp95 = entries[Symbol.iterator]();
-          while (tmp95 !== undefined) {
-            let tmp100 = _slicedToArray(tmp97, 2);
-            let str8 = tmp100[0];
+          const tmp98 = entries[Symbol.iterator]();
+          while (tmp98 !== undefined) {
+            let tmp103 = _slicedToArray(tmp100, 2);
+            let str8 = tmp103[0];
             let flag5 = false;
             let flag6 = true;
-            let scalarResult = self.scalar(kind.V.T, tmp100[1], kind.name, false, true);
-            let obj11 = ReflectionJsonWriter(1196);
-            let assertResult1 = obj11.assert(undefined !== scalarResult);
-            obj4[str8.toString()] = scalarResult;
+            let scalarResult = self.scalar(kind.V.T, tmp103[1], kind.name, false, true);
+            let obj8 = assert4;
+            let assertResult = obj8.assert(undefined !== scalarResult);
+            obj3[str8.toString()] = scalarResult;
             continue;
           }
         } else if ("message" === kind3) {
@@ -94,14 +96,14 @@ let items = [
           const TResult = V.T();
           const _Object = Object;
           const entries1 = Object.entries(obj);
-          const tmp77 = entries1[Symbol.iterator]();
-          while (tmp77 !== undefined) {
-            let tmp82 = _slicedToArray(tmp79, 2);
-            let str7 = tmp82[0];
-            let messageResult = self.message(TResult, tmp82[1], kind.name, enumAsInteger);
-            let obj10 = ReflectionJsonWriter(1196);
-            let assertResult2 = obj10.assert(undefined !== messageResult);
-            obj4[str7.toString()] = messageResult;
+          const tmp80 = entries1[Symbol.iterator]();
+          while (tmp80 !== undefined) {
+            let tmp85 = _slicedToArray(tmp82, 2);
+            let str7 = tmp85[0];
+            let messageResult = self.message(TResult, tmp85[1], kind.name, enumAsInteger);
+            let obj7 = assert4;
+            let assertResult1 = obj7.assert(undefined !== messageResult);
+            obj3[str7.toString()] = messageResult;
             continue;
           }
         } else if ("enum" === kind3) {
@@ -109,39 +111,40 @@ let items = [
           const TResult1 = V2.T();
           const _Object4 = Object;
           const entries2 = Object.entries(obj);
-          const tmp118 = entries2[Symbol.iterator]();
-          while (tmp118 !== undefined) {
-            let tmp55 = _slicedToArray(tmp52, 2);
-            [str6, tmp56] = tmp55;
-            let tmp57 = tmp56;
-            let tmp59 = ReflectionJsonWriter;
-            let obj8 = ReflectionJsonWriter(1196);
-            let tmp62 = undefined === tmp56;
-            if (!tmp62) {
-              tmp62 = typeof tmp57 === "number";
+          const tmp121 = entries2[Symbol.iterator]();
+          while (tmp121 !== undefined) {
+            let tmp57 = _slicedToArray(tmp54, 2);
+            [str6, tmp58] = tmp57;
+            let tmp59 = tmp58;
+            let tmp61 = require;
+            let tmp64 = assert4;
+            let tmp65 = undefined === tmp58;
+            let assert3 = tmp64.assert;
+            if (!tmp65) {
+              tmp65 = typeof tmp59 === "number";
             }
-            let assertResult3 = obj8.assert(tmp62);
+            let assert3Result = assert3(tmp65);
             let flag3 = false;
             let flag4 = true;
-            let enumResult = self.enum(TResult1, tmp57, kind.name, false, true, enumAsInteger.enumAsInteger);
-            let tmp59Result = tmp59(1196);
-            let assertResult4 = tmp59Result.assert(undefined !== enumResult);
-            obj4[str6.toString()] = enumResult;
+            let enumResult = self.enum(TResult1, tmp59, kind.name, false, true, enumAsInteger.enumAsInteger);
+            let tmp61Result = tmp61(1196);
+            let assertResult2 = tmp61Result.assert(undefined !== enumResult);
+            obj3[str6.toString()] = enumResult;
             continue;
           }
         }
         let emitDefaultValues2 = enumAsInteger.emitDefaultValues;
         if (!emitDefaultValues2) {
           const _Object3 = Object;
-          emitDefaultValues2 = Object.keys(obj4).length > 0;
+          emitDefaultValues2 = Object.keys(obj3).length > 0;
         }
         if (emitDefaultValues2) {
-          let scalarResult2 = obj4;
+          scalarResult2 = obj3;
         }
-        const obj6 = ReflectionJsonWriter(1196);
       } else if (kind.repeat) {
         const _Array = Array;
-        ReflectionJsonWriter(1196).assert(Array.isArray(obj));
+        obj = assert4;
+        obj.assert(Array.isArray(obj));
         const kind2 = kind.kind;
         const items = [];
         if ("scalar" === kind2) {
@@ -150,27 +153,29 @@ let items = [
             do {
               let flag2 = true;
               let scalarResult1 = self.scalar(kind.T, obj[num4], kind.name, kind.opt, true);
-              let obj5 = ReflectionJsonWriter(1196);
-              let assertResult6 = obj5.assert(undefined !== scalarResult1);
+              let obj4 = assert4;
+              let assertResult4 = obj4.assert(undefined !== scalarResult1);
               let arr = items.push(scalarResult1);
               num4 = num4 + 1;
               length2 = obj.length;
             } while (num4 < length2);
           }
         } else if ("enum" === kind2) {
+          let num2;
           const TResult2 = kind.T();
           for (let num2 = 0; num2 < obj.length; num2 = num2 + 1) {
-            let tmp24 = ReflectionJsonWriter;
-            let obj3 = ReflectionJsonWriter(1196);
-            let tmp27 = undefined === obj[num2];
-            if (!tmp27) {
-              tmp27 = typeof obj[num2] === "number";
+            let tmp24 = require;
+            let tmp27 = assert4;
+            let tmp28 = undefined === obj[num2];
+            let assert = tmp27.assert;
+            if (!tmp28) {
+              tmp28 = typeof obj[num2] === "number";
             }
-            let assertResult7 = obj3.assert(tmp27);
+            let assertResult5 = assert(tmp28);
             let flag = true;
             let enumResult1 = self.enum(TResult2, obj[num2], kind.name, kind.opt, true, enumAsInteger.enumAsInteger);
             let tmp24Result = tmp24(1196);
-            let assertResult8 = tmp24Result.assert(undefined !== enumResult1);
+            let assertResult6 = tmp24Result.assert(undefined !== enumResult1);
             let arr4 = items.push(enumResult1);
           }
         } else if ("message" === kind2) {
@@ -179,25 +184,18 @@ let items = [
           if (0 < obj.length) {
             do {
               let messageResult1 = self.message(TResult3, obj[num], kind.name, enumAsInteger);
-              let obj2 = ReflectionJsonWriter(1196);
-              let assertResult9 = obj2.assert(undefined !== messageResult1);
+              let obj2 = assert4;
+              let assertResult7 = obj2.assert(undefined !== messageResult1);
               let arr5 = items.push(messageResult1);
               num = num + 1;
               length = obj.length;
             } while (num < length);
           }
         }
-        let emitDefaultValues = enumAsInteger.emitDefaultValues;
-        if (!emitDefaultValues) {
-          emitDefaultValues = items.length > 0;
-        }
-        if (!emitDefaultValues) {
-          emitDefaultValues = enumAsInteger.emitDefaultValues;
-        }
+        const emitDefaultValues = enumAsInteger.emitDefaultValues || items.length > 0 || enumAsInteger.emitDefaultValues;
         if (emitDefaultValues) {
           scalarResult2 = items;
         }
-        obj = ReflectionJsonWriter(1196);
       } else {
         kind = kind.kind;
         if ("scalar" === kind) {
@@ -213,44 +211,46 @@ let items = [
   },
   {
     key: "enum",
-    value: function _enum(arg0, key10009, arg2, arg3, arg4, arg5) {
-      let tmp = arg0;
+    value: function _enum(arg0, keys, arg2, arg3, arg4, arg5) {
       if ("google.protobuf.NullValue" == arg0[0]) {
         return null;
-      } else if (undefined !== key10009) {
-        ReflectionJsonWriter(1196).assert(typeof key10009 === "number");
-        const obj2 = ReflectionJsonWriter(1196);
+      } else if (undefined !== keys) {
+        const obj2 = assert4;
+        obj2.assert(typeof keys === "number");
         const _Number = Number;
-        ReflectionJsonWriter(1196).assert(Number.isInteger(key10009));
-        let tmp12 = key10009;
+        const obj3 = assert4;
+        obj3.assert(Number.isInteger(keys));
+        let tmp11 = keys;
         if (!arg5) {
-          tmp12 = key10009;
-          if (obj4.hasOwnProperty(key10009)) {
-            if (tmp[2]) {
-              tmp = tmp[1][key10009];
-              let sum = tmp[2] + tmp;
+          tmp11 = keys;
+          const obj4 = arg0[1];
+          if (obj4.hasOwnProperty(keys)) {
+            let sum;
+            if (arg0[2]) {
+              sum = arg0[2] + arg0[1][keys];
             } else {
-              sum = tmp[1][key10009];
+              sum = arg0[1][keys];
             }
+            tmp11 = sum;
           }
-          obj4 = tmp[1];
         }
-        return tmp12;
+        return tmp11;
       } else {
-        ReflectionJsonWriter(1196).assert(arg3);
-        const obj = ReflectionJsonWriter(1196);
+        const obj = assert4;
+        obj.assert(arg3);
       }
     }
   },
   {
     key: "message",
     value: function message(internalJsonWrite, arg1, arg2, emitDefaultValues) {
+      let internalJsonWriteResult;
       if (undefined === arg1) {
         let tmp3;
         if (emitDefaultValues.emitDefaultValues) {
           tmp3 = null;
         }
-        let internalJsonWriteResult = tmp3;
+        internalJsonWriteResult = tmp3;
       } else {
         internalJsonWriteResult = internalJsonWrite.internalJsonWrite(arg1, emitDefaultValues);
       }
@@ -262,55 +262,56 @@ let items = [
     value: function scalar(arg0, NumberResult, arg2, arg3, arg4) {
       let tmp = NumberResult;
       if (undefined !== NumberResult) {
-        let tmp5 = arg4;
-        if (!arg4) {
-          tmp5 = arg3;
-        }
-        if (ReflectionJsonWriter(1200).ScalarType.INT32 !== arg0) {
-          if (tmp7(1200).ScalarType.SFIXED32 !== arg0) {
-            if (tmp7(1200).ScalarType.SINT32 !== arg0) {
-              if (tmp7(1200).ScalarType.FIXED32 !== arg0) {
-                if (tmp7(1200).ScalarType.UINT32 !== arg0) {
-                  if (tmp7(1200).ScalarType.FLOAT === arg0) {
-                    tmp7(1196).assertFloat32(tmp);
-                    const tmp7Result = tmp7(1196);
-                  } else if (tmp7(1200).ScalarType.DOUBLE !== arg0) {
-                    if (tmp7(1200).ScalarType.STRING === arg0) {
+        if (ScalarType.ScalarType.INT32 !== arg0) {
+          if (ScalarType.ScalarType.SFIXED32 !== arg0) {
+            if (ScalarType.ScalarType.SINT32 !== arg0) {
+              let tmp26;
+              if (ScalarType.ScalarType.FIXED32 !== arg0) {
+                if (ScalarType.ScalarType.UINT32 !== arg0) {
+                  let str6;
+                  if (ScalarType.ScalarType.FLOAT === arg0) {
+                    const tmp7Result = assert4;
+                    tmp7Result.assertFloat32(tmp);
+                  } else if (ScalarType.ScalarType.DOUBLE !== arg0) {
+                    if (ScalarType.ScalarType.STRING === arg0) {
+                      let tmp21;
                       if ("" === tmp) {
                         let str5;
-                        if (tmp5) {
+                        if (arg4 || arg3) {
                           str5 = "";
                         }
-                        let tmp19 = str5;
+                        tmp21 = str5;
                       } else {
-                        tmp7(1196).assert(typeof tmp === "string");
-                        tmp19 = tmp;
-                        const tmp7Result10 = tmp7(1196);
+                        const tmp7Result10 = assert4;
+                        tmp7Result10.assert(typeof tmp === "string");
+                        tmp21 = tmp;
                       }
-                      return tmp19;
-                    } else if (tmp7(1200).ScalarType.BOOL === arg0) {
+                      return tmp21;
+                    } else if (ScalarType.ScalarType.BOOL === arg0) {
+                      let tmp18;
                       if (false === tmp) {
-                        let tmp16 = !tmp5;
-                        const tmp17 = !tmp5;
+                        tmp18 = !(arg4 || arg3) && undefined;
                       } else {
-                        tmp7(1196).assert(typeof tmp === "boolean");
-                        tmp16 = tmp;
-                        const tmp7Result11 = tmp7(1196);
+                        const tmp7Result11 = assert4;
+                        tmp7Result11.assert(typeof tmp === "boolean");
+                        tmp18 = tmp;
                       }
-                      return tmp16;
+                      return tmp18;
                     } else {
-                      if (tmp7(1200).ScalarType.UINT64 !== arg0) {
-                        if (tmp7(1200).ScalarType.FIXED64 !== arg0) {
-                          if (tmp7(1200).ScalarType.INT64 !== arg0) {
-                            if (tmp7(1200).ScalarType.SFIXED64 !== arg0) {
-                              if (tmp7(1200).ScalarType.SINT64 !== arg0) {
-                                if (tmp7(1200).ScalarType.BYTES === arg0) {
+                      if (ScalarType.ScalarType.UINT64 !== arg0) {
+                        if (ScalarType.ScalarType.FIXED64 !== arg0) {
+                          if (ScalarType.ScalarType.INT64 !== arg0) {
+                            if (ScalarType.ScalarType.SFIXED64 !== arg0) {
+                              if (ScalarType.ScalarType.SINT64 !== arg0) {
+                                if (ScalarType.ScalarType.BYTES === arg0) {
+                                  let str;
                                   const _Uint8Array = Uint8Array;
-                                  tmp7(1196).assert(tmp instanceof Uint8Array);
+                                  const tmp7Result12 = assert4;
+                                  tmp7Result12.assert(tmp instanceof Uint8Array);
                                   if (tmp.byteLength) {
-                                    let str = tmp7(1189).base64encode(tmp);
-                                    const tmp7Result13 = tmp7(1189);
-                                  } else if (tmp5) {
+                                    const tmp7Result13 = base64decode;
+                                    str = tmp7Result13.base64encode(tmp);
+                                  } else if (arg4 || arg3) {
                                     str = "";
                                   }
                                   return str;
@@ -318,27 +319,31 @@ let items = [
                               }
                             }
                           }
-                          let tmp11 = typeof tmp === "number";
+                          let tmp12 = typeof tmp === "number";
+                          const assert = assert4.assert;
+                          assert4;
                           if (typeof tmp !== "number") {
-                            tmp11 = typeof tmp === "string";
+                            tmp12 = typeof tmp === "string";
                           }
-                          if (!tmp11) {
-                            tmp11 = typeof tmp === "bigint";
+                          if (!tmp12) {
+                            tmp12 = typeof tmp === "bigint";
                           }
-                          tmp7(1196).assert(tmp11);
+                          assert(tmp12);
                           const PbLong = tmp7(1194).PbLong;
                           const str2 = PbLong.from(tmp);
                           return str2.toString();
                         }
                       }
-                      let tmp13 = typeof tmp === "number";
+                      let tmp15 = typeof tmp === "number";
+                      const assert2 = assert4.assert;
+                      assert4;
                       if (typeof tmp !== "number") {
-                        tmp13 = typeof tmp === "string";
+                        tmp15 = typeof tmp === "string";
                       }
-                      if (!tmp13) {
-                        tmp13 = typeof tmp === "bigint";
+                      if (!tmp15) {
+                        tmp15 = typeof tmp === "bigint";
                       }
-                      tmp7(1196).assert(tmp13);
+                      assert2(tmp15);
                       const PbULong = tmp7(1194).PbULong;
                       const str3 = PbULong.from(tmp);
                       return str3.toString();
@@ -346,12 +351,13 @@ let items = [
                   }
                   if (0 === tmp) {
                     let num2;
-                    if (tmp5) {
+                    if (arg4 || arg3) {
                       num2 = 0;
                     }
-                    let str6 = num2;
+                    str6 = num2;
                   } else {
-                    tmp7(1196).assert(typeof tmp === "number");
+                    const tmp7Result16 = assert4;
+                    tmp7Result16.assert(typeof tmp === "number");
                     const _Number = Number;
                     str6 = "NaN";
                     if (!Number.isNaN(tmp)) {
@@ -367,43 +373,43 @@ let items = [
                       }
                       str6 = str7;
                     }
-                    const tmp7Result16 = tmp7(1196);
                   }
                   return str6;
                 }
               }
               if (0 === tmp) {
                 let num4;
-                if (tmp5) {
+                if (arg4 || arg3) {
                   num4 = 0;
                 }
-                let tmp24 = num4;
+                tmp26 = num4;
               } else {
-                tmp7(1196).assertUInt32(tmp);
-                tmp24 = tmp;
-                const tmp7Result17 = tmp7(1196);
+                const tmp7Result17 = assert4;
+                tmp7Result17.assertUInt32(tmp);
+                tmp26 = tmp;
               }
-              return tmp24;
+              return tmp26;
             }
           }
         }
         if (0 === tmp) {
           let num6;
-          if (tmp5) {
+          if (arg4 || arg3) {
             num6 = 0;
           }
           tmp = num6;
         } else {
-          tmp7(1196).assertInt32(tmp);
-          const tmp7Result18 = tmp7(1196);
+          const tmp7Result18 = assert4;
+          tmp7Result18.assertInt32(tmp);
         }
         return tmp;
       } else {
-        ReflectionJsonWriter(1196).assert(arg3);
-        const obj = ReflectionJsonWriter(1196);
+        const obj = assert4;
+        obj.assert(arg3);
       }
     }
   }
 ];
+const ReflectionJsonWriter_export = _createClass(ReflectionJsonWriter, items);
 
-export const ReflectionJsonWriter = _createClass(ReflectionJsonWriter, items);
+export { ReflectionJsonWriter_export as ReflectionJsonWriter };

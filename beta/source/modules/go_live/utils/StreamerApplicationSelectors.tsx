@@ -5,33 +5,28 @@
 // Exports: getStreamerActivity, getStreamerActivityByUserId, getStreamerApplication, useGetStreamApplication
 
 // Module 7157 (StreamerApplicationSelectors)
-import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
+import shallowEqualDefault from "shallowEqual" /* 558 */;
+import Constants from "Constants" /* 1074 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7158 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
 function _findPlayingActivity(type) {
-  let tmp = type.type === ActivityTypes.PLAYING;
-  if (tmp) {
-    tmp = !isEmbeddedActivityDefault(type);
-  }
+  const tmp = type.type === ActivityTypes.PLAYING && !isEmbeddedActivityDefault(type);
   return tmp;
 }
 function streamApplicationEqualityCheck(arg0, arg1) {
   let tmp = arg0 === arg1;
   if (!tmp) {
-    let tmp3 = null != arg0 && null != arg1;
-    if (tmp3) {
-      tmp3 = discord_common_shallowEqualDefault(arg0, arg1);
-    }
-    tmp = tmp3;
+    tmp = null != arg0 && null != arg1 && shallowEqualDefault(arg0, arg1);
+    const tmp3 = null != arg0 && null != arg1 && shallowEqualDefault(arg0, arg1);
   }
   return tmp;
 }
-const ActivityTypes = fn(1074).ActivityTypes;
-const size = fn(2);
+const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/go_live/utils/StreamerApplicationSelectors.tsx");
 
 export const getStreamerActivityByUserId = function getStreamerActivityByUserId(id, PresenceStore) {
@@ -63,20 +58,22 @@ export const getStreamerApplication = function getStreamerApplication(decodeStre
 };
 export const useGetStreamApplication = function useGetStreamApplication(stream) {
   _require = stream;
+  let obj = require("get initialized");
   const items = [PresenceStore];
   const items1 = [stream];
-  return require("initialize").useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
     let tmp2 = null;
-    if (null != closure_0) {
+    const obj = PresenceStore;
+    if (null != stream) {
       let findActivityResult = null;
-      if (null != tmp) {
-        findActivityResult = PresenceStore.findActivity(tmp.ownerId, _findPlayingActivity);
+      if (null != stream) {
+        findActivityResult = obj.findActivity(tmp.ownerId, _findPlayingActivity);
       }
       let tmp5 = null;
       if (null != findActivityResult) {
-        ({ application_id: obj2.id, name: obj2.name } = findActivityResult);
-        tmp5 = { id: null, name: null };
         const obj3 = { id: null, name: null };
+        ({ application_id: obj2.id, name: obj2.name } = findActivityResult);
+        tmp5 = obj3;
       }
       tmp2 = tmp5;
     }

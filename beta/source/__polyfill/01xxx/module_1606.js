@@ -5,16 +5,20 @@
 
 // Module 1606
 import BaseNavigationContainer from "BaseNavigationContainer" /* 1488 */;
-import get_options from "get options" /* 1585 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 1585 */;
+import react from "react" /* 19 */;
 
-require = arg1;
 
 export const useRoutePath = function useRoutePath() {
-  const options = noop.useContext(get_options.LinkingContext).options;
-  const stateForPath = BaseNavigationContainer.useStateForPath();
+  const tmp = react;
+  let tmp3 = dependencyMap;
+  const options = react.useContext(react2.LinkingContext).options;
+  const obj = BaseNavigationContainer;
+  const stateForPath = obj.useStateForPath();
   if (undefined === stateForPath) {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error("Couldn't find a state for the route object. Is your component inside a screen in a navigator?");
     throw error;
   } else {
@@ -26,6 +30,7 @@ export const useRoutePath = function useRoutePath() {
       getPathFromState = BaseNavigationContainer.getPathFromState;
     }
     let enabled;
+    const useMemo = tmp.useMemo;
     if (options != null) {
       enabled = options.enabled;
     }
@@ -37,19 +42,20 @@ export const useRoutePath = function useRoutePath() {
     items[1] = config;
     items[2] = stateForPath;
     items[3] = getPathFromState;
-    return obj.useMemo(() => {
+    return useMemo(() => {
       let enabled;
       if (options != null) {
         enabled = tmp.enabled;
       }
       if (false !== enabled) {
         let config;
-        if (tmp != null) {
+        const tmp3 = getPathFromState;
+        const tmp4 = stateForPath;
+        if (options != null) {
           config = tmp.config;
         }
-        return getPathFromState(stateForPath, config);
+        return tmp3(tmp4, config);
       }
     }, items);
   }
-  obj = noop;
 };

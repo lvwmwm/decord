@@ -4,16 +4,15 @@
 // Dependencies: [19, 21, 4836, 8889, 2]
 
 // Module 16540 (ThreadListLoadingIndicator)
+import Fragment from "Fragment" /* 21 */;
 import MessageLoadingSpinnerDefault from "MessageLoadingSpinner" /* 8889 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ spinner: { width: 32, height: 32 } });
-const size = fn(2);
+const memoResult = react.memo(() => jsx(MessageLoadingSpinnerDefault, { style: closure_3().spinner, animate: true }));
 const result = size.fileFinishedImporting("modules/threads/native/components/redesign/ThreadListLoadingIndicator.tsx");
 
-export default noop.memo(() => {
-  const tmp = closure_3();
-  return jsx(MessageLoadingSpinnerDefault, { style: closure_3().spinner, animate: true });
-});
+export default memoResult;

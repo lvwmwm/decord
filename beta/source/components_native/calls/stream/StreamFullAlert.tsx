@@ -5,40 +5,46 @@
 // Exports: default
 
 // Module 17683 (StreamFullAlert)
-import util from "util" /* 1115 */;
+import react_native from "react-native" /* 17 */;
+import intl4 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import common_AlertDefault from "common/Alert" /* 5300 */;
+import AlertDefault from "Alert" /* 5300 */;
 import AVError from "AVError" /* 8875 */;
-import _modDef17684 from "module_17684" /* 17684 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17684 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Image = fn(17).Image;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
+let closure_4;
+let hasOwnProperty;
+const Image = react_native.Image;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = { image: { alignSelf: "center", marginTop: 32 }, body: { marginTop: 16 } };
-const size = fn(2);
 const result = size.fileFinishedImporting("components_native/calls/stream/StreamFullAlert.tsx");
 
 export default function StreamFullAlert(arg0) {
-  const errorInfo = AVError.getErrorInfo(AVError.AVError.STREAM_FULL);
+  let intl2;
+  let intl3;
+  let items;
+  const obj = AVError;
+  const errorInfo = obj.getErrorInfo(AVError.AVError.STREAM_FULL);
   let errorCode;
   if (errorInfo != null) {
     errorCode = errorInfo.errorCode;
   }
   const intl = tmp(1115).intl;
-  const obj2 = {};
-  const formatToPlainStringResult = intl.formatToPlainString(util.t.ejOT95, { errorCode });
+  const obj2 = { title: intl2.string(intl4.t.GzjdO5), children: items };
+  const formatToPlainStringResult = intl.formatToPlainString(intl4.t.ejOT95, { errorCode });
+  const tmp6 = AlertDefault;
   const merged = Object.assign(arg0);
-  const intl2 = tmp(1115).intl;
-  obj2.title = intl2.string(util.t.GzjdO5);
-  const obj3 = { variant: "text-md/normal", style: closure_6.body, children: null };
-  const intl3 = tmp(1115).intl;
-  obj3.children = intl3.string(util.t.VVZDBL);
-  const items = [React4(Text_Text.Text, obj3), React4(Text_Text.Text, { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult }), ];
+  intl2 = tmp(1115).intl;
+  const obj3 = { variant: "text-md/normal", style: closure_6.body, children: intl3.string(intl4.t.VVZDBL) };
+  const Text = tmp(4832).Text;
+  intl3 = tmp(1115).intl;
+  items = [React3(Text, obj3), , ];
   const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult };
-  const tmp6 = common_AlertDefault;
-  items[2] = React4(Image, { source: _modDef17684, style: closure_6.image });
-  obj2.children = items;
+  items[1] = React3(Text_Text.Text, obj4);
+  const obj5 = { source: AssetRegistryDefault, style: closure_6.image };
+  items[2] = React3(Image, obj5);
   return hasOwnProperty(tmp6, obj2);
 };

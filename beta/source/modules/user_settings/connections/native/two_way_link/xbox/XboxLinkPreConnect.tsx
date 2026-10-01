@@ -5,34 +5,40 @@
 // Exports: default
 
 // Module 8540 (XboxLinkPreConnect)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 8531 */;
 import _modDef8541 from "module_8541" /* 8541 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const XboxLinkModalScenes = fn(8531).XboxLinkModalScenes;
-const PlatformTypes = fn(1074).PlatformTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let navigation;
+
+const XboxLinkModalScenes = XboxLinkConstants.XboxLinkModalScenes;
+const PlatformTypes = Constants.PlatformTypes;
+const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ image: { width: 231, height: 160 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkPreConnect.tsx");
 
 export default function XboxLinkPreConnect() {
   const tmp = closure_7();
-  navigation = navigation(1485).useNavigation();
+  let obj = navigation(1485);
+  navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
-  const callback = noop.useCallback((arg0) => {
+  const callback = react.useCallback((arg0) => {
     navigation.push(XboxLinkModalScenes.DISCORD_CONSENT, arg0);
   }, items);
-  const callback1 = noop.useCallback(() => {
+  const callback1 = react.useCallback(() => {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
-  const memo = noop.useMemo(() => ({ uri: _modDef8541 }), []);
-  const obj2 = { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: tmp.image, title: null, body: null };
+  const memo = react.useMemo(() => {
+    const obj = { uri: _modDef8541 };
+    return obj;
+  }, []);
+  const TwoWayLinkPreConnect = navigation(8542).TwoWayLinkPreConnect;
   const intl = navigation(1115).intl;
-  obj2.title = intl.string(navigation(1115).t["e/z3na"]);
   const intl2 = navigation(1115).intl;
-  obj2.body = intl2.string(navigation(1115).t["7tXu0i"]);
-  return jsx(navigation(8542).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: tmp.image, title: null, body: null });
+  return <TwoWayLinkPreConnect platformType={PlatformTypes.XBOX} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1115).t["e/z3na"])} body={intl2.string(navigation(1115).t["7tXu0i"])} />;
 };

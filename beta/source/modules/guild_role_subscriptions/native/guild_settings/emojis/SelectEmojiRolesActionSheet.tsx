@@ -5,149 +5,192 @@
 // Exports: default
 
 // Module 17609 (SelectEmojiRolesActionSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1177 */;
+import FormConstants from "FormConstants" /* 1181 */;
 import Pressables from "Pressables" /* 5435 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
-import ActionSheet from "ActionSheet" /* 6618 */;
 import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 14757 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
 import TextStyles_mod from "TextStyles" /* 5836 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let dependencyMap, set;
 
-require = fn;
-const View = fn(17).View;
-const Fonts = fn(1085).Fonts;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const itemSize = fn(1181).FORM_ROW_VERTICAL_PADDING + 22;
-const createStyles = fn(4836);
-let obj2 = { list: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, label: { flex: 1, flexDirection: "row", alignItems: "center" }, roleName: null, archivedBadge: null, archivedBadgeText: null, divider: null, saveButton: null, saveButtonDisabled: null };
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+let tmp5;
+const intl5 = tmp5(1115);
+const BottomSheetTitleHeader2 = tmp5(6570);
+const ActionSheet2 = tmp5(6618);
+let react = react_mod;
+const View = react_native.View;
+const FORM_ROW_VERTICAL_PADDING = FormConstants.FORM_ROW_VERTICAL_PADDING;
+const Fonts = Constants.Fonts;
+({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
+const itemSize = FORM_ROW_VERTICAL_PADDING + 22;
+let createStyles = createStyles_mod;
+let obj = { list: obj2, label: { flex: 1, flexDirection: "row", alignItems: "center" }, roleName: obj3, archivedBadge: obj4, archivedBadgeText: obj5, divider: obj6, saveButton: obj7, saveButtonDisabled: { opacity: 0.3 } };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { flexShrink: 1 };
 let TextStyles = TextStyles_mod;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, 16));
-obj2.roleName = { flexShrink: 1 };
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let obj4 = { flexShrink: 1 };
-obj2.archivedBadge = { borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.unsafe_rawColors.RED_400, marginLeft: 8, paddingHorizontal: 4, height: 16 };
-let TextStyles = TextStyles_mod;
-const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_BOLD, nativeDefault.unsafe_rawColors.WHITE, 12, { uppercase: true }));
-obj2.archivedBadgeText = {};
-let obj5 = { borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.unsafe_rawColors.RED_400, marginLeft: 8, paddingHorizontal: 4, height: 16 };
-let obj6 = {};
-obj2.divider = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-let TextStyles = TextStyles_mod;
+obj4 = { borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.unsafe_rawColors.RED_400, marginLeft: 8, paddingHorizontal: 4, height: 16 };
+obj5 = {};
+const PRIMARY_BOLD = Fonts.PRIMARY_BOLD;
+TextStyles = TextStyles_mod;
+const merged1 = Object.assign(TextStyles(PRIMARY_BOLD, nativeDefault.unsafe_rawColors.WHITE, 12, { uppercase: true }));
+obj6 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+obj7 = {};
+TextStyles = TextStyles_mod;
 const merged2 = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.CONTROL_BRAND_FOREGROUND, 16));
-obj2.saveButton = {};
-obj2.saveButtonDisabled = { opacity: 0.3 };
-let closure_10 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_10 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/emojis/SelectEmojiRolesActionSheet.tsx");
 
 export default function SelectEmojiRolesActionSheet(arg0) {
+  let LegacyText;
+  let closure_2;
+  let closure_4;
+  let emoji;
+  let guildId;
+  let intl3;
+  let intl4;
+  let items1;
+  let obj3;
+  let obj6;
+  let onCancel;
+  let saveButtonDisabled;
+  let stringResult;
+  let tmp7Result;
   ({ onSave: require, emoji } = arg0);
   let first;
-  noop = undefined;
+  react = undefined;
   ({ guildId, onCancel } = arg0);
   const tmp = closure_10();
   dependencyMap = tmp;
-  const tmp2 = first(noop.useState(() => {
+  const tmp2 = first(react.useState(() => {
     let roles;
+    const _Set = Set;
     if (emoji != null) {
       roles = emoji.roles;
     }
     if (roles == null) {
       roles = [];
     }
-    return new Set(roles);
+    const _Set1 = new _Set(roles);
+    return _Set1;
   }), 2);
   first = tmp2[0];
-  noop = tmp2[1];
-  const subscriptionListingsForGuild = GuildRoleSubscriptionsHooks.useSubscriptionListingsForGuild(guildId, { includeSoftDeleted: true, sortDeletedListingsLast: true });
-  const obj2 = {
+  react = tmp2[1];
+  let tmp4 = first.size > 0;
+  const tmp5 = require;
+  const tmp6 = dependencyMap;
+  let obj = GuildRoleSubscriptionsHooks;
+  const subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { includeSoftDeleted: true, sortDeletedListingsLast: true });
+  const tmp7 = closure_6;
+  let obj2 = {
     onPress() {
       require(Array.from(first));
     },
-    disabled: null,
+    disabled: saveButtonDisabled,
     accessibilityRole: "button",
-    children: null
+    children: tmp7(LegacyText, obj3)
   };
-  let saveButtonDisabled = !tmp4;
-  obj2.disabled = saveButtonDisabled;
+  saveButtonDisabled = !tmp4;
+  const PressableOpacity = Pressables.PressableOpacity;
   let items = [tmp.saveButton, ];
-  if (first.size <= 0) {
+  LegacyText = native.LegacyText;
+  if (!tmp4) {
     saveButtonDisabled = tmp.saveButtonDisabled;
   }
-  let obj3 = { style: items, children: null };
+  obj3 = { style: items, children: stringResult };
   items[1] = saveButtonDisabled;
   if (null == emoji) {
-    const intl2 = tmp5(1115).intl;
-    let stringResult = intl2.string(tmp5(1115).t["3UB9ad"]);
+    const intl2 = intl5.intl;
+    stringResult = intl2.string(intl5.t["3UB9ad"]);
   } else {
-    let intl = tmp5(1115).intl;
-    stringResult = intl.string(tmp5(1115).t["R3BPH+"]);
+    let intl = intl5.intl;
+    stringResult = intl.string(intl5.t["R3BPH+"]);
   }
-  obj3.children = stringResult;
-  obj2.children = closure_6(native.LegacyText, obj3);
-  let obj4 = { title: null, subtitle: null, trailing: null };
-  const intl3 = tmp5(1115).intl;
-  obj4.title = intl3.string(util.t.JPU0EF);
-  const intl4 = tmp5(1115).intl;
-  obj4.subtitle = intl4.string(util.t.MZusPv);
-  obj4.trailing = closure_6(Pressables.PressableOpacity, obj2);
-  const tmp7Result = closure_6(Pressables.PressableOpacity, obj2);
-  let obj5 = { scrollable: true, header: closure_6(BottomSheetTitleHeader.BottomSheetTitleHeader, obj4), startExpanded: true, onDismiss: onCancel, children: null };
-  const obj6 = {
+  let obj4 = { title: intl3.string(intl5.t.JPU0EF), subtitle: intl4.string(intl5.t.MZusPv), trailing: tmp7Result };
+  tmp7Result = tmp7(PressableOpacity, obj2);
+  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  intl3 = intl5.intl;
+  intl4 = intl5.intl;
+  let obj5 = { scrollable: true, header: tmp7(BottomSheetTitleHeader, obj4), startExpanded: true, onDismiss: onCancel, children: tmp7(emoji(6493), obj6) };
+  tmp7(BottomSheetTitleHeader, obj4);
+  const ActionSheet = ActionSheet2.ActionSheet;
+  obj6 = {
     inActionSheet: true,
     style: tmp.list,
     itemSize,
-    sections: null,
+    sections: items1,
     renderItem(arg0, arg1) {
+      let Checkbox;
+      let Text;
+      let intl;
+      let items;
+      let obj4;
+      let obj6;
       let role_id = tmp;
       const diff = subscriptionListingsForGuild.length - 1;
-      const obj = { style: closure_2.label, children: null };
-      const items = [closure_1_6(require("Text/Text").Text, { style: closure_2.roleName, lineClamp: 1, variant: "text-md/medium", color: "interactive-text-active", children: subscriptionListingsForGuild[arg1].name }), ];
+      const obj = { style: closure_2.label, children: items };
+      const FormRow = require("Form").FormRow;
+      items = [, ];
+      const obj2 = { style: closure_2.roleName, lineClamp: 1, variant: "text-md/medium", color: "interactive-text-active", children: subscriptionListingsForGuild[arg1].name };
+      items[0] = closure_1_6(require("Text/Text").Text, obj2);
       let archived = tmp.archived;
+      const tmp4 = closure_1_8;
       if (archived) {
-        const obj3 = { style: tmp9.archivedBadge, children: null };
-        const obj4 = { style: tmp9.archivedBadgeText, variant: "text-xs/bold", color: "text-overlay-light", children: null };
-        const intl = tmp6(tmp7[12]).intl;
-        obj4.children = intl.string(tmp6(tmp7[12]).t.HRtfn9);
-        obj3.children = tmp5(tmp6(tmp7[17]).Text, obj4);
+        const obj3 = { style: closure_2.archivedBadge, children: closure_1_6(Text, obj4) };
+        obj4 = { style: closure_2.archivedBadgeText, variant: "text-xs/bold", color: "text-overlay-light", children: intl.string(require("intl").t.HRtfn9) };
+        Text = tmp6(tmp7[17]).Text;
+        intl = tmp6(tmp7[12]).intl;
         archived = tmp5(tmp8, obj3);
       }
+      const tmp10 = arg1 === diff;
+      items[1] = archived;
       const obj5 = {
         label: closure_1_7(subscriptionListingsForGuild, obj),
         onPress() {
           role_id = role_id.role_id;
           return closure_4((has) => {
-            const set = new Set(has);
+            set = new Set(has);
             if (has.has(role_id)) {
-              set.delete(tmp);
+              set.delete(role_id);
             } else {
-              set.add(tmp);
+              set.add(role_id);
             }
             return set;
           });
         },
-        trailing: closure_1_6(require("Form").FormRow.Checkbox, { selected: first.has(subscriptionListingsForGuild[arg1].role_id) })
+        trailing: closure_1_6(Checkbox, obj6)
       };
-      items[1] = archived;
-      obj.children = items;
-      const children = [closure_1_6(require("Form").FormRow, obj5), ];
+      obj6 = { selected: first.has(subscriptionListingsForGuild[arg1].role_id) };
+      Checkbox = tmp6(tmp7[16]).FormRow.Checkbox;
+      const children = [closure_1_6(FormRow, obj5), ];
       let tmp5Result = !tmp10;
-      if (arg1 !== diff) {
-        const obj7 = { style: tmp9.divider };
+      if (tmp5Result) {
+        const obj7 = { style: closure_2.divider };
         tmp5Result = tmp5(tmp6(tmp7[16]).FormDivider, obj7);
       }
       children[1] = tmp5Result;
-      return closure_1_7(closure_1_8, { children });
+      return closure_1_7(tmp4, { children });
     }
   };
-  const items1 = [subscriptionListingsForGuild.length];
-  obj6.sections = items1;
-  obj5.children = closure_6(emoji(6493), obj6);
-  return closure_6(ActionSheet.ActionSheet, obj5);
+  items1 = [subscriptionListingsForGuild.length];
+  return tmp7(ActionSheet, obj5);
 };

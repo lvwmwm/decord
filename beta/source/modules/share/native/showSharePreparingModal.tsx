@@ -5,54 +5,52 @@
 // Exports: showSharePreparingModal
 
 // Module 7814 (showSharePreparingModal)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import asyncRequire from "asyncRequire" /* 1981 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import SharePreparingModalConstants from "SharePreparingModalConstants" /* 7812 */;
 import size from "module_2" /* 2 */;
+
+let _true;
 
 const SHARE_PREPARING_MODAL_KEY = SharePreparingModalConstants.SHARE_PREPARING_MODAL_KEY;
 const result = size.fileFinishedImporting("modules/share/native/showSharePreparingModal.tsx");
 
 export const showSharePreparingModal = function showSharePreparingModal(onCancel) {
+  let closure_2;
   onCancel = onCancel.onCancel;
-  c1 = false;
+  let c1 = false;
   const timeout = setTimeout(() => {
+    let obj = ModalActionCreatorsDefault;
     const obj2 = {
       onCancel() {
-        if (!_true) {
+        const tmp = _true;
+        if (!tmp) {
           _true = true;
           const _clearTimeout = clearTimeout;
-          clearTimeout(dependencyMap);
-          _true(5039).popWithKey(SHARE_PREPARING_MODAL_KEY);
+          clearTimeout(closure_1_2);
+          const obj = _true(closure_2[1]);
+          obj.popWithKey(SHARE_PREPARING_MODAL_KEY);
           onCancel();
-          const obj = _true(5039);
         }
       }
     };
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(7815, dependencyMap.paths), {
-      onCancel() {
-        if (!_true) {
-          _true = true;
-          const _clearTimeout = clearTimeout;
-          clearTimeout(dependencyMap);
-          _true(5039).popWithKey(SHARE_PREPARING_MODAL_KEY);
-          onCancel();
-          const obj = _true(5039);
-        }
-      }
-    }, SHARE_PREPARING_MODAL_KEY, { animation: "fade", presentation: "transparentModal" }).then(() => {
-      if (_true) {
-        _true(5039).popWithKey(SHARE_PREPARING_MODAL_KEY);
-        const obj = _true(5039);
+    const pushLazyResult = obj.pushLazy(asyncRequire(7815, dependencyMap.paths), obj2, SHARE_PREPARING_MODAL_KEY, { animation: "fade", presentation: "transparentModal" });
+    pushLazyResult.then(() => {
+      const tmp = _true;
+      if (tmp) {
+        const obj = _true(closure_2[1]);
+        obj.popWithKey(SHARE_PREPARING_MODAL_KEY);
       }
     });
   }, 1000);
   return () => {
-    if (!c1) {
+    const tmp = c1;
+    if (!tmp) {
       c1 = true;
       const _clearTimeout = clearTimeout;
       clearTimeout(closure_2);
-      ModalActionCreatorsDefault.popWithKey(SHARE_PREPARING_MODAL_KEY);
+      const obj = ModalActionCreatorsDefault;
+      obj.popWithKey(SHARE_PREPARING_MODAL_KEY);
     }
   };
 };

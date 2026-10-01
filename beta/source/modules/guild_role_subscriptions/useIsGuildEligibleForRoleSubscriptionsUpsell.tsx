@@ -12,23 +12,28 @@ import UserStore from "UserStore" /* 1372 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 const isGuildOwner = GuildRecord.isGuildOwner;
 const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useIsGuildEligibleForRoleSubscriptionsUpsell.tsx");
 
 export default function useIsGuildEligibleForRoleSubscriptionsUpsell(arg0) {
+  let closure_0;
+  let currentUser;
   _require = arg0;
   const items = [GuildStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => GuildStore.getGuild(closure_0));
-  require("initialize");
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(closure_0));
+  require("get initialized");
   [][0] = UserStore;
   let tmp6 = null != stateFromStores;
+  const tmp = _require;
   if (tmp6) {
     tmp6 = isGuildOwner(stateFromStores, tmp5);
   }
-  const obj = require("initialize");
-  const isUserInCreatorMonetizationEligibleCountry = require("CreatorMonetizationEligibilityExperimentUtils").useIsUserInCreatorMonetizationEligibleCountry();
+  const tmpResult = tmp(6679);
+  const isUserInCreatorMonetizationEligibleCountry = tmpResult.useIsUserInCreatorMonetizationEligibleCountry();
   if (tmp6) {
     let flag;
     if (stateFromStores != null) {

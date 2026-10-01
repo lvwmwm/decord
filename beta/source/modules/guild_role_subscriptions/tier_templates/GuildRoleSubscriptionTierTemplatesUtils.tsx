@@ -5,23 +5,30 @@
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
 // Module 14778 (GuildRoleSubscriptionTierTemplatesUtils)
+import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 1074 */;
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
 import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6678 */;
-import GuildRoleSubscriptionsExperimentUtils from "GuildRoleSubscriptionsExperimentUtils" /* 13437 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 14773 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4462 */;
 import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 14779 */;
 import allSettled_mod from "allSettled" /* 5093 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c3, c4, set;
 
-require = fn;
+let tmp;
+const GuildRoleSubscriptionsExperimentUtils = tmp(13437);
 function getUsedTemplateChannelsForGuild(arg0) {
   const arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
   const listings = useEditStateStore.getState().listings;
-  const set = new Set();
+  set = new Set();
+  const tmp2 = set;
   if (null != arr) {
     let item = arr.forEach((item) => {
       let channelBenefits;
@@ -38,9 +45,10 @@ function getUsedTemplateChannelsForGuild(arg0) {
     });
   }
   const items = [];
+  const tmp4 = tmp2[Symbol.iterator]();
   while (tmp4 !== undefined) {
     let channel = GuildRoleSubscriptionTierTemplatesStore.getChannel(tmp5);
-    let obj = channel;
+    obj = channel;
     if (null != channel) {
       let arr2 = items.push(obj.set("guild_id", arg0));
     }
@@ -48,128 +56,139 @@ function getUsedTemplateChannelsForGuild(arg0) {
   }
   return items;
 }
-let closure_14 = async function _createChannelsFromTemplateTierBenefits(arg0, value) {
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+let obj = function _createChannelsFromTemplateTierBenefits() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0;
+    let tmp;
+    let closure_1 = value;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c4 = 2;
-      if (0 === c3) {
-        if (arg0 === 1) {
+      try {
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_2 = tmp;
+            const items = [];
+            let closure_3 = [];
+            let item = closure_1.forEach((ref_id) => {
+              channel = channel.getChannel(ref_id.ref_id);
+              if (null != channel) {
+                const push = navigation.push;
+                obj = closure_2_1(closure_2_3[12]);
+                push(obj.createRoleSubscriptionTemplateChannel(closure_1_0, channel.name, channel.type, channel.topic));
+                closure_1_3.push(channel);
+              }
+            });
+            if (0 !== items.length) {
+              c3 = 1;
+              c4 = 1;
+              const obj4 = { value: Promise.allSettled(items), done: false };
+              return obj4;
+            }
+          }
+        } else if (arg0 === 1) {
           c4 = 3;
           throw value;
         } else if (arg0 === 2) {
           c4 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          closure_2 = tmp2;
-          closure_130_0 = closure_0;
-          closure_130_1 = importDefault;
-          const items = [];
-          closure_130_2 = items;
-          closure_130_3 = [];
-          let item = importDefault.forEach((ref_id) => {
-            channel = channel.getChannel(ref_id.ref_id);
-            if (null != channel) {
-              const obj = closure_1(c3[12]);
-              closure_1_2.push(obj.createRoleSubscriptionTemplateChannel(closure_1_0, channel.name, channel.type, channel.topic));
-              closure_1_3.push(channel);
-            }
-          });
-          if (0 !== items.length) {
-            c3 = 1;
-            c4 = 1;
-            const obj4 = { value: Promise.allSettled(items), done: false };
-            return obj4;
-          } else {
-            c4 = 3;
-          }
-        }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 !== 2) {
-        const item1 = value.forEach((status, index) => {
-          const id = closure_1_3[index].id;
-          if ("fulfilled" === status.status) {
-            const body = status.value.body;
-            const arr2 = closure_2_8.getState().editStateIdsForGroup[closure_1_0];
-            const listings = closure_2_8.getState().listings;
-            if (null != arr2) {
-              let item = arr2.forEach((item) => {
-                let channelBenefits;
-                if (listings[item] != null) {
-                  channelBenefits = tmp.channelBenefits;
+          const item1 = value.forEach((status, index) => {
+            const id = closure_1_3[index].id;
+            if ("fulfilled" === status.status) {
+              const body = status.value.body;
+              const arr2 = closure_2_8.getState().editStateIdsForGroup[closure_1_0];
+              const listings = closure_2_8.getState().listings;
+              if (null != arr2) {
+                let item = arr2.forEach((item) => {
+                  let channelBenefits;
+                  if (listings[item] != null) {
+                    channelBenefits = tmp.channelBenefits;
+                  }
+                  if (channelBenefits != null) {
+                    item = channelBenefits.forEach((ref_id) => {
+                      if (ref_id.ref_id === closure_1_0) {
+                        ref_id.ref_id = id.id;
+                      }
+                    });
+                  }
+                });
+              }
+            } else {
+              const tmp = null;
+              if (null != closure_1_1) {
+                const findIndexResult = closure_1_1.findIndex((ref_id) => ref_id.ref_id === id);
+                if (-1 !== findIndexResult) {
+                  if (closure_1_1 != null) {
+                    closure_1_1.splice(findIndexResult, 1);
+                  }
                 }
-                if (channelBenefits != null) {
-                  item = channelBenefits.forEach((ref_id) => {
-                    if (ref_id.ref_id === closure_1_0) {
-                      ref_id.ref_id = id.id;
-                    }
-                  });
-                }
-              });
-            }
-          } else if (null != closure_1_1) {
-            const findIndexResult = arr.findIndex((ref_id) => ref_id.ref_id === id);
-            if (-1 !== findIndexResult) {
-              if (arr != null) {
-                arr.splice(findIndexResult, 1);
               }
             }
-          }
-        });
+          });
+        }
+        c4 = 3;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp8) {
+        c4 = 3;
+        throw tmp8;
       }
-      c4 = 3;
-      let obj = { value, done: true };
-      return obj;
-    } catch (tmp9) {
-      c4 = tmp;
-      throw tmp9;
     }
-  }
+  });
+  return obj(...arguments);
 };
-const useMemo = fn(19).useMemo;
-const useEditStateStore = fn(14773).useEditStateStore;
-const GuildFeatures = fn(1074).GuildFeatures;
-const ChannelFlags = fn(2052).ChannelFlags;
+const useMemo = react.useMemo;
+const useEditStateStore = GuildRoleSubscriptionEditStore.useEditStateStore;
+const GuildFeatures = Constants.GuildFeatures;
+const ChannelFlags = ChannelConstants.ChannelFlags;
 let allSettled = allSettled_mod;
 allSettled = allSettled.shim();
 let closure_12 = {};
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/GuildRoleSubscriptionTierTemplatesUtils.tsx");
 
 export const useChannelWithTemplateFallback = function useChannelWithTemplateFallback(ref_id) {
   _require = ref_id;
+  obj = require("useStateFromStores");
   const items = [ChannelStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => ChannelStore.getChannel(closure_0));
-  const obj = require("useStateFromStores");
-  const items1 = [GuildRoleSubscriptionTierTemplatesStore];
-  let stateFromStores1 = require("useStateFromStores").useStateFromStores(items1, () => GuildRoleSubscriptionTierTemplatesStore.getChannel(closure_0));
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(ref_id));
   let obj3 = require("useStateFromStores");
+  const items1 = [GuildRoleSubscriptionTierTemplatesStore];
+  let stateFromStores1 = obj3.useStateFromStores(items1, () => GuildRoleSubscriptionTierTemplatesStore.getChannel(ref_id));
   const items2 = [GuildRoleSubscriptionsStore];
-  const stateFromStores2 = require("useStateFromStores").useStateFromStores(items2, () => GuildRoleSubscriptionsStore.getBenefitChannel(closure_0));
+  const obj4 = require("useStateFromStores");
+  const stateFromStores2 = obj4.useStateFromStores(items2, () => GuildRoleSubscriptionsStore.getBenefitChannel(ref_id));
   const items3 = [stateFromStores, stateFromStores2];
   let tmp3 = useMemo(() => {
+    let obj3;
     let mergeResult = null;
     if (null != stateFromStores) {
       mergeResult = null;
-      if (obj.isObfuscated()) {
+      if (stateFromStores.isObfuscated()) {
         mergeResult = null;
         if (null != stateFromStores2) {
-          const obj2 = { name: tmp2.name, flags: FlagUtilsAll.removeFlag(obj.flags, ChannelFlags.OBFUSCATED) };
-          mergeResult = obj.merge(obj2);
+          const merge = obj.merge;
+          const obj2 = { name: tmp2.name, flags: obj3.removeFlag(stateFromStores.flags, ChannelFlags.OBFUSCATED) };
+          obj3 = FlagUtilsAll;
+          mergeResult = merge(obj2);
         }
       }
     }
@@ -190,19 +209,13 @@ export const useChannelWithTemplateFallback = function useChannelWithTemplateFal
 export const useSuggestedUnusedPrices = function useSuggestedUnusedPrices(guildId, priceTiers, price_tier) {
   _require = guildId;
   const items = [GuildRoleSubscriptionsStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => GuildRoleSubscriptionsStore.getSubscriptionListingsForGuild(closure_0));
-  const arr3 = useEditStateStore((arg0) => arg0.editStateIdsForGroup[closure_0]);
-  closure_1 = useEditStateStore((listings) => listings.listings);
+  obj = require("useStateFromStores");
+  const stateFromStores = obj.useStateFromStores(items, () => GuildRoleSubscriptionsStore.getSubscriptionListingsForGuild(guildId));
+  const arr3 = useEditStateStore((arg0) => arg0.editStateIdsForGroup[guildId]);
+  let closure_1 = useEditStateStore((listings) => listings.listings);
   if (undefined !== price_tier) {
     if (undefined !== priceTiers) {
-      const found = stateFromStores.filter((soft_deleted) => {
-        soft_deleted = soft_deleted.soft_deleted;
-        let tmp = !soft_deleted;
-        if (!soft_deleted) {
-          tmp = !soft_deleted.archived;
-        }
-        return tmp;
-      });
+      const found = stateFromStores.filter((soft_deleted) => !soft_deleted.soft_deleted && !soft_deleted.archived);
       const items1 = [];
       const mapped = found.map((item) => item.subscription_plans[0].price);
       if (undefined !== arr3) {
@@ -217,7 +230,9 @@ export const useSuggestedUnusedPrices = function useSuggestedUnusedPrices(guildI
         });
       }
       const _Set = Set;
-      const set = new Set(items1.concat(mapped));
+      const self = this;
+      const self2 = this;
+      set = new Set(items1.concat(mapped));
       if (set.has(price_tier)) {
         const index = priceTiers.indexOf(price_tier);
         if (-1 === index) {
@@ -252,7 +267,8 @@ export const announceCreateTemplateChannels = function announceCreateTemplateCha
   closure_12[arg0] = arr;
   const item = arr.forEach((set) => {
     const result = set.set("flags", constants.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
-    DispatcherDefault.dispatch({ type: "CHANNEL_CREATE", channel: result });
+    obj = DispatcherDefault;
+    obj.dispatch({ type: "CHANNEL_CREATE", channel: result });
   });
 };
 export const announceDeleteTemplateChannels = function announceDeleteTemplateChannels(arg0) {
@@ -261,21 +277,16 @@ export const announceDeleteTemplateChannels = function announceDeleteTemplateCha
     arr = getUsedTemplateChannelsForGuild(arg0);
   }
   const item = arr.forEach((channel) => {
-    DispatcherDefault.dispatch({ type: "CHANNEL_DELETE", channel });
+    obj = DispatcherDefault;
+    const obj2 = { type: "CHANNEL_DELETE", channel };
+    obj.dispatch(obj2);
   });
 };
 export const createChannelsFromTemplateTierBenefits = function createChannelsFromTemplateTierBenefits() {
-  const self = this;
-  const apply = closure_14.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
-export const getTemplateTierCreationAnalyticsContext = function getTemplateTierCreationAnalyticsContext(arg0, arg1) {
-  const tmp = useEditStateStore.getState().listings[arg0];
+export const getTemplateTierCreationAnalyticsContext = function getTemplateTierCreationAnalyticsContext(c1, c0) {
+  const tmp = useEditStateStore.getState().listings[c1];
   let usedTemplate;
   if (tmp != null) {
     usedTemplate = tmp.usedTemplate;
@@ -283,7 +294,7 @@ export const getTemplateTierCreationAnalyticsContext = function getTemplateTierC
   if (null == usedTemplate) {
     return { templateCategory: null, hasChangeFromTemplate: null };
   } else {
-    const templateWithCategory = GuildRoleSubscriptionTierTemplatesStore.getTemplateWithCategory(arg1, usedTemplate);
+    const templateWithCategory = GuildRoleSubscriptionTierTemplatesStore.getTemplateWithCategory(c0, usedTemplate);
     if (null == templateWithCategory) {
       return { templateCategory: null, hasChangeFromTemplate: null };
     } else {
@@ -340,8 +351,7 @@ export const getTemplateTierCreationAnalyticsContext = function getTemplateTierC
                           num4 = num4 + 1;
                         }
                       }
-                      const obj2 = { templateCategory: templateWithCategory.category, hasChangeFromTemplate: true };
-                      return obj2;
+                      return { templateCategory: templateWithCategory.category, hasChangeFromTemplate: true };
                     }
                     let num = 0;
                     if (0 < first.additional_perks.length) {
@@ -354,34 +364,31 @@ export const getTemplateTierCreationAnalyticsContext = function getTemplateTierC
                           num = num + 1;
                         }
                       }
-                      const obj3 = { templateCategory: templateWithCategory.category, hasChangeFromTemplate: true };
-                      return obj3;
+                      return { templateCategory: templateWithCategory.category, hasChangeFromTemplate: true };
                     }
-                    const obj = { templateCategory: templateWithCategory.category, hasChangeFromTemplate: false };
-                    return obj;
+                    return { templateCategory: templateWithCategory.category, hasChangeFromTemplate: false };
                   }
                 }
-                const obj4 = { templateCategory: templateWithCategory.category, hasChangeFromTemplate: true };
-                return obj4;
+                return { templateCategory: templateWithCategory.category, hasChangeFromTemplate: true };
               }
             }
           }
         }
       }
-      const obj5 = { templateCategory: templateWithCategory.category, hasChangeFromTemplate: true };
-      return obj5;
+      return { templateCategory: templateWithCategory.category, hasChangeFromTemplate: true };
     }
   }
 };
 export const isEligibleForNewBadge = function isEligibleForNewBadge(features) {
-  let result = GuildRoleSubscriptionSettingUtils.canManageGuildRoleSubscriptions(features);
+  obj = GuildRoleSubscriptionSettingUtils;
+  let result = obj.canManageGuildRoleSubscriptions(features);
   if (result) {
     features = features.features;
     result = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
   }
   if (result) {
-    result = GuildRoleSubscriptionsExperimentUtils.isGuildEligibleForTierTemplates(features.id);
     const tmpResult = GuildRoleSubscriptionsExperimentUtils;
+    result = tmpResult.isGuildEligibleForTierTemplates(features.id);
   }
   return result;
 };

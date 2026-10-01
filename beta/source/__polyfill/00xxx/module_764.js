@@ -6,35 +6,36 @@
 // Module 764
 import _mod765 from "module_765" /* 765 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
+  let dsn;
+  let tunnel;
   if (getDsn != null) {
-    const dsn = getDsn.getDsn();
+    dsn = getDsn.getDsn();
   }
   if (getDsn != null) {
-    const tunnel = getDsn.getOptions().tunnel;
+    tunnel = getDsn.getOptions().tunnel;
   }
-  const result = _mod765.parseStringToURLObject(arr);
+  const obj = _mod765;
+  const result = obj.parseStringToURLObject(arr);
   let flag = false;
   if (result) {
     flag = false;
+    const tmp2Result = _mod765;
     if (!tmp2Result.isURLObjectRelative(result)) {
       let tmp5 = dsn;
       if (tmp5) {
         const host = result.host;
         let hasItem = host.includes(dsn.host);
         if (hasItem) {
-          hasItem = /(^|&|\?)sentry_key=/.test(result.search);
           const obj3 = /(^|&|\?)sentry_key=/;
+          hasItem = obj3.test(result.search);
         }
         tmp5 = hasItem;
       }
       flag = tmp5;
     }
-    tmp2Result = _mod765;
   }
   if (!flag) {
     let flag2 = false;

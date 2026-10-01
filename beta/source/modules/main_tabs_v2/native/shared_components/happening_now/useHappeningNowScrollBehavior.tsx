@@ -5,24 +5,25 @@
 // Exports: default, useHappeningNowScrollSnapping
 
 // Module 15701 (useHappeningNowScrollBehavior)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowScrollBehavior.tsx");
 
 export default function useHappeningNowScrollBehavior(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  const tmp = _slicedToArray(noop.useState(false), 2);
-  closure_2 = tmp[1];
+  let closure_2;
+  let first;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  [first, closure_2] = react.useState(false);
   const items = [arg0, arg1];
   const items1 = [
-    noop.useCallback((nativeEvent) => {
+    react.useCallback((nativeEvent) => {
       closure_2(nativeEvent.nativeEvent.contentOffset.x < closure_0);
       closure_1(nativeEvent.nativeEvent.contentOffset.x, nativeEvent.nativeEvent.layoutMeasurement.width);
     }, items),
-    tmp[0]
+    first
   ];
   return items1;
 };

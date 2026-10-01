@@ -14,9 +14,11 @@ const result = size.fileFinishedImporting("modules/app_analytics/native/useTrack
 export const useTrackNavigatorScreenImpression = function useTrackNavigatorScreenImpression(impressionProperties, params) {
   impressionProperties = impressionProperties.impressionProperties;
   let impressionPropertiesResult = impressionProperties;
+  const impressionName = impressionProperties.impressionName;
   if (typeof impressionProperties === "function") {
     impressionPropertiesResult = impressionProperties(params.params);
   }
-  const obj = { type: discord_common_AnalyticsUtils.ImpressionTypes.PAGE, name: impressionProperties.impressionName, properties: impressionPropertiesResult };
-  useTrackImpressionDefault(obj);
+  const obj = { type: discord_common_AnalyticsUtils.ImpressionTypes.PAGE, name: impressionName, properties: impressionPropertiesResult };
+  const tmp2 = useTrackImpressionDefault;
+  tmp2(obj);
 };

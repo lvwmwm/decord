@@ -4,19 +4,20 @@
 // Dependencies: [19, 21, 1601, 1488]
 
 // Module 1600 (ServerContainer)
-import BaseNavigationContainer from "BaseNavigationContainer" /* 1488 */;
-import ServerContext from "ServerContext" /* 1601 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 1601 */;
+import react from "react" /* 19 */;
 
-require = fn;
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 
-export const ServerContainer = noop.forwardRef(function ServerContainer(arg0, fn) {
+export const ServerContainer = react.forwardRef(function ServerContainer(arg0, fn) {
+  let _location;
+  let children;
   ({ children, location: _location } = arg0);
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     console.error("'ServerContainer' should only be used on the server with 'react-dom/server' for SSR.");
   }, []);
-  value = {};
+  const obj = {};
   if (fn) {
     const obj2 = {
       getCurrentOptions() {
@@ -29,5 +30,6 @@ export const ServerContainer = noop.forwardRef(function ServerContainer(arg0, fn
       fn.current = obj2;
     }
   }
-  return jsx(ServerContext.ServerContext.Provider, { value: { location: _location }, children: jsx(BaseNavigationContainer.CurrentRenderContext.Provider, { value, children }) });
+  const Provider = react2.ServerContext.Provider;
+  return <Provider value={{ location: _location }}>{null}</Provider>;
 });

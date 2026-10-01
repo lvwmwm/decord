@@ -5,14 +5,16 @@
 // Exports: default
 
 // Module 16187 (useTrackRoleSubscriptionUpsellAnalytics)
+import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4462 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+let subscriptionListing;
+
+const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useTrackRoleSubscriptionUpsellAnalytics.tsx");
 
 export default function useTrackRoleSubscriptionUpsellAnalytics(guildId) {
@@ -21,13 +23,15 @@ export default function useTrackRoleSubscriptionUpsellAnalytics(guildId) {
   const _location = guildId.location;
   const relevantSubscriptionListingIds = guildId.relevantSubscriptionListingIds;
   let analyticsLocations;
-  const groupListingsFetchContext = guildId(_location[3]).useGroupListingsFetchContext("useTrackRoleSubscriptionUpsellAnalytics");
+  let ref;
+  let obj = guildId(_location[3]);
+  const groupListingsFetchContext = obj.useGroupListingsFetchContext("useTrackRoleSubscriptionUpsellAnalytics");
   const tmp2 = null != groupListingId(_location[4])(groupListingId).activeSubscription;
   const is_premium_member = tmp2;
-  let obj = guildId(_location[3]);
+  let obj2 = guildId(_location[5]);
   let items = [groupListingsFetchContext];
   const items1 = [relevantSubscriptionListingIds];
-  const stateFromStoresArray = guildId(_location[5]).useStateFromStoresArray(items, () => {
+  const stateFromStoresArray = obj2.useStateFromStoresArray(items, () => {
     let items = relevantSubscriptionListingIds;
     if (relevantSubscriptionListingIds == null) {
       items = [];
@@ -41,32 +45,26 @@ export default function useTrackRoleSubscriptionUpsellAnalytics(guildId) {
       return true === published;
     });
   }, items1);
-  let obj2 = guildId(_location[5]);
   const tmp4 = groupListingId(_location[6]);
-  let lastRouteChangeSourceLocationStack = guildId(_location[7]).getLastRouteChangeSourceLocationStack();
+  const obj3 = guildId(_location[7]);
+  let lastRouteChangeSourceLocationStack = obj3.getLastRouteChangeSourceLocationStack();
   if (lastRouteChangeSourceLocationStack == null) {
     lastRouteChangeSourceLocationStack = [];
   }
   analyticsLocations = tmp4(lastRouteChangeSourceLocationStack).analyticsLocations;
-  relevantSubscriptionListingIds.useRef(false);
+  ref = relevantSubscriptionListingIds.useRef(false);
   const items2 = [guildId, groupListingId, groupListingsFetchContext, _location, stateFromStoresArray, tmp2, analyticsLocations];
   const effect = relevantSubscriptionListingIds.useEffect(() => {
-    let tmp = groupListingsFetchContext;
-    if (groupListingsFetchContext) {
-      tmp = null != groupListingId;
-    }
-    if (tmp) {
-      tmp = null != stateFromStoresArray;
-    }
-    if (tmp) {
-      tmp = !ref.current;
-    }
+    const tmp = groupListingsFetchContext && null != groupListingId && null != stateFromStoresArray && !ref.current;
     if (tmp) {
       ref.current = true;
-      const obj2 = { role_subscription_group_listing_id: groupListingId, role_subscription_listing_ids: stateFromStoresArray, is_premium_member, location_stack: analyticsLocations, location: _location };
-      const obj = AnalyticsUtilsDefault;
-      const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(guildId));
-      obj.track(AnalyticEvents.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, obj2);
+      const obj = { role_subscription_group_listing_id: groupListingId, role_subscription_listing_ids: stateFromStoresArray, is_premium_member, location_stack: analyticsLocations, location: _location };
+      const track = AnalyticsUtilsDefault.track;
+      const ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED = AnalyticEvents.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED;
+      AnalyticsUtilsDefault;
+      const obj2 = AppAnalyticsUtils;
+      const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(guildId));
+      track(ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, obj);
     }
   }, items2);
 };

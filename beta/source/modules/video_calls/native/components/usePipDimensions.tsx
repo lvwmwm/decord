@@ -6,21 +6,23 @@
 
 // Module 8850 (usePipDimensions)
 import DeviceOrientation from "DeviceOrientation" /* 7780 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
 let c4 = 0.5625;
-let size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/video_calls/native/components/usePipDimensions.tsx");
 
-export default function usePipDimensions(channelId) {
-  let forcedOrientation = channelId.forcedOrientation;
+export default function usePipDimensions(forcedOrientation) {
+  forcedOrientation = forcedOrientation.forcedOrientation;
+  const channelId = forcedOrientation.channelId;
   if (forcedOrientation === undefined) {
     forcedOrientation = null;
   }
   let width;
-  const isViewingActivity = forcedOrientation(width[1]).useIsViewingActivity({ channelId: channelId.channelId });
-  const size = isViewingActivity(width[2])();
+  const obj = forcedOrientation(width[1]);
+  const isViewingActivity = obj.useIsViewingActivity({ channelId });
+  size = isViewingActivity(width[2])();
   width = size.width;
   let height = size.height;
   const items = [height, width, forcedOrientation, isViewingActivity];
@@ -28,11 +30,8 @@ export default function usePipDimensions(channelId) {
     let tmp3 = width > height;
     let tmp7 = forcedOrientation === DeviceOrientation.OrientationType.LANDSCAPE;
     if (!tmp7) {
-      let tmp8 = tmp3;
-      if (tmp3) {
-        tmp8 = forcedOrientation !== DeviceOrientation.OrientationType.PORTRAIT;
-      }
-      tmp7 = tmp8;
+      tmp7 = tmp3 && tmp4 !== tmp5(7780).OrientationType.PORTRAIT;
+      tmp3 && forcedOrientation !== DeviceOrientation.OrientationType.PORTRAIT;
     }
     height = 96;
     width = 96;

@@ -1,0 +1,10 @@
+// Module ID: 6475
+// Function ID: 6476
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 6475 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 160, height: 160, scales: [2, 3], hash: "b7eca7761481c5ff3cc170b16fbdff57", name: "img_no_results", type: "png" });

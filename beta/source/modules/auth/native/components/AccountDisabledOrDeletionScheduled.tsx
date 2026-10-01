@@ -5,66 +5,87 @@
 // Exports: default
 
 // Module 15600 (AccountDisabledOrDeletionScheduled)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6010 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const LoginStates = fn(1074).LoginStates;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
+let navigation;
+
+let metroImportAll;
+let metroImportDefault;
+const View = react_native.View;
+const LoginStates = Constants.LoginStates;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles((arg0) => {
+  let PX_16;
+  let num;
+  let str;
+  let str2;
+  let tmp4;
   const space = nativeDefault.space;
   if (arg0) {
-    let PX_16 = space.PX_8;
-    let tmp4 = tmp;
+    PX_16 = space.PX_8;
+    tmp4 = tmp;
   } else {
     PX_16 = space.PX_16;
     tmp4 = tmp;
   }
-  const container = { display: "flex", height: "100%", flex: 1, paddingBottom: PX_16, paddingHorizontal: null, backgroundColor: null, justifyContent: null };
-  let num = 0;
+  const container = { display: "flex", height: "100%", flex: 1, paddingBottom: PX_16, paddingHorizontal: num, backgroundColor: str, justifyContent: str2 };
+  num = 0;
   if (!arg0) {
     num = tmp4(576).space.PX_16;
   }
-  container.paddingHorizontal = num;
-  let str = "transparent";
+  str = "transparent";
   if (!arg0) {
     str = tmp4(576).colors.BACKGROUND_BASE_LOW;
   }
-  container.backgroundColor = str;
-  let str2 = "center";
+  str2 = "center";
   if (arg0) {
     str2 = "space-between";
   }
-  container.justifyContent = str2;
   return { container, image: { marginBottom: 32, alignSelf: "center" }, title: { textAlign: "center", marginBottom: 8 }, description: { lineHeight: 18, marginBottom: 24, textAlign: "center" } };
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/AccountDisabledOrDeletionScheduled.tsx");
 
 export default function AccountDisabledOrDeletionScheduled(handleLogin) {
+  let ButtonGroup;
+  let intl3;
+  let intl4;
+  let items4;
+  let items5;
+  let items6;
+  let loginStatus;
+  let obj10;
+  let obj4;
+  let string2Result;
+  let stringResult;
   handleLogin = handleLogin.handleLogin;
   const onReset = handleLogin.onReset;
-  let navigation;
-  navigation = handleLogin(navigation[7]).useNavigation();
+  navigation = undefined;
+  const tmp = handleLogin;
+  let tmp2 = navigation;
   let obj = handleLogin(navigation[7]);
+  navigation = obj.useNavigation();
   const items = [AuthenticationStore];
-  const stateFromStores = handleLogin(navigation[8]).useStateFromStores(items, () => loginStatus.getLoginStatus());
+  const obj2 = handleLogin(navigation[8]);
+  const stateFromStores = obj2.useStateFromStores(items, () => loginStatus.getLoginStatus());
   const ref = stateFromStores.useRef(null);
   const items1 = [stateFromStores, navigation];
   const effect = stateFromStores.useEffect(() => {
     if (ref.current !== stateFromStores) {
-      if (null != tmp.current) {
+      if (null != ref.current) {
+        const tmp4 = stateFromStores !== LoginStates.ACCOUNT_SCHEDULED_FOR_DELETION && stateFromStores !== LoginStates.ACCOUNT_DISABLED;
         if (tmp4) {
           navigation.pop();
         }
-        tmp4 = tmp2 !== LoginStates.ACCOUNT_SCHEDULED_FOR_DELETION && tmp2 !== LoginStates.ACCOUNT_DISABLED;
       } else {
-        tmp.current = tmp2;
+        ref.current = stateFromStores;
       }
     }
   }, items1);
@@ -72,7 +93,8 @@ export default function AccountDisabledOrDeletionScheduled(handleLogin) {
   const items3 = [handleLogin];
   const callback = stateFromStores.useCallback(() => {
     if (null == onReset) {
-      AuthenticationActionCreatorsDefault.loginReset();
+      const obj = AuthenticationActionCreatorsDefault;
+      obj.loginReset();
     } else {
       tmp();
     }
@@ -81,17 +103,20 @@ export default function AccountDisabledOrDeletionScheduled(handleLogin) {
     const credentials = AuthenticationStore.getCredentials();
     const password = credentials.password;
     let str = "";
+    const login = credentials.login;
+    const tmp2 = handleLogin;
     if (undefined !== password) {
       str = password;
     }
-    handleLogin(credentials.login, str, true);
+    tmp2(login, str, true);
   }, items3);
   const tmp9 = closure_9(onReset(navigation[10])());
   const intl = handleLogin(navigation[11]).intl;
   const string = intl.string;
   const t = handleLogin(navigation[11]).t;
+  const tmp8 = onReset;
   if (stateFromStores === LoginStates.ACCOUNT_DISABLED) {
-    let stringResult = string(t["j3rC+U"]);
+    stringResult = string(t["j3rC+U"]);
   } else {
     stringResult = string(t.ZFWofo);
   }
@@ -99,33 +124,33 @@ export default function AccountDisabledOrDeletionScheduled(handleLogin) {
   const string2 = intl2.string;
   const t2 = tmp(tmp2[11]).t;
   if (stateFromStores === LoginStates.ACCOUNT_DISABLED) {
-    let string2Result = string2(t2["6eNTWe"]);
+    string2Result = string2(t2["6eNTWe"]);
   } else {
     string2Result = string2(t2["pCBti+"]);
   }
-  const obj3 = { contentStyle: { flexGrow: 1 }, children: null };
-  const obj4 = { style: tmp9.container, children: null };
-  const obj5 = { children: null };
-  const obj2 = handleLogin(navigation[8]);
-  const items4 = [closure_7(handleLogin(navigation[13]).WumpTrash, { style: tmp9.image }), closure_7(handleLogin(navigation[14]).Text, { style: tmp9.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult }), closure_7(handleLogin(navigation[14]).Text, { style: tmp9.description, variant: "text-sm/medium", color: "text-default", children: string2Result })];
-  obj5.children = items4;
-  const items5 = [closure_8(ref, obj5), ];
-  const obj9 = { children: null };
-  const obj10 = { children: null };
-  const obj11 = { variant: "primary", text: null, onPress: null };
-  const intl3 = tmp(tmp2[11]).intl;
-  obj11.text = intl3.string(handleLogin(navigation[11]).t.JhDw5o);
-  obj11.onPress = callback;
-  const items6 = [closure_7(handleLogin(navigation[16]).Button, obj11), ];
-  const obj12 = { variant: "secondary", text: null, onPress: null };
-  const intl4 = tmp(tmp2[11]).intl;
-  obj12.text = intl4.string(handleLogin(navigation[11]).t.v51oiN);
-  obj12.onPress = callback1;
-  items6[1] = closure_7(handleLogin(navigation[16]).Button, obj12);
-  obj10.children = items6;
-  obj9.children = closure_8(handleLogin(navigation[15]).ButtonGroup, obj10);
+  const obj3 = { contentStyle: { flexGrow: 1 }, children: closure_8(ref, obj4) };
+  const obj5 = { children: items4 };
+  items4 = [, , ];
+  obj4 = { style: tmp9.container, children: items5 };
+  const obj6 = { style: tmp9.image };
+  const tmp8Result = tmp8(tmp2[12]);
+  items4[0] = closure_7(tmp(tmp2[13]).WumpTrash, obj6);
+  const obj7 = { style: tmp9.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
+  items4[1] = closure_7(tmp(tmp2[14]).Text, obj7);
+  const obj8 = { style: tmp9.description, variant: "text-sm/medium", color: "text-default", children: string2Result };
+  items4[2] = closure_7(tmp(tmp2[14]).Text, obj8);
+  items5 = [closure_8(ref, obj5), ];
+  const obj9 = { children: closure_8(ButtonGroup, obj10) };
+  obj10 = { children: items6 };
+  ButtonGroup = tmp(tmp2[15]).ButtonGroup;
+  const obj11 = { variant: "primary", text: intl3.string(tmp(tmp2[11]).t.JhDw5o), onPress: callback };
+  const Button = tmp(tmp2[16]).Button;
+  intl3 = tmp(tmp2[11]).intl;
+  items6 = [closure_7(Button, obj11), ];
+  const obj12 = { variant: "secondary", text: intl4.string(tmp(tmp2[11]).t.v51oiN), onPress: callback1 };
+  const Button2 = tmp(tmp2[16]).Button;
+  intl4 = tmp(tmp2[11]).intl;
+  items6[1] = closure_7(Button2, obj12);
   items5[1] = closure_7(ref, obj9);
-  obj4.children = items5;
-  obj3.children = closure_8(ref, obj4);
-  return closure_7(onReset(navigation[12]), obj3);
+  return closure_7(tmp8Result, obj3);
 };

@@ -5,45 +5,51 @@
 // Exports: default
 
 // Module 9027 (CreateChannelTypeDescription)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import GuildProfileStore from "GuildProfileStore" /* 9028 */;
 import useGuildProfile from "useGuildProfile" /* 9029 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const GuildProfileFetchStatus = fn(9028).GuildProfileFetchStatus;
-const ChannelTypes = fn(1074).ChannelTypes;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const View = react_native.View;
+const GuildProfileFetchStatus = GuildProfileStore.GuildProfileFetchStatus;
+const ChannelTypes = Constants.ChannelTypes;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/channel/native/components/CreateChannelTypeDescription.tsx");
 
 export default function CreateChannelTypeDescription(guildId) {
+  let fetchGuildProfile;
+  let guildProfile;
+  let intl;
   guildId = guildId.guildId;
   fetchGuildProfile = undefined;
-  const guildProfile1 = useGuildProfile.useGuildProfile(guildId);
+  const channelType = guildId.channelType;
+  const obj = useGuildProfile;
+  const guildProfile1 = obj.useGuildProfile(guildId);
   ({ guildProfile, fetchGuildProfile } = guildProfile1);
   let hasItem = null != guildProfile;
+  const fetchStatus = guildProfile1.fetchStatus;
+  const FETCHED = GuildProfileFetchStatus.FETCHED;
   if (hasItem) {
     const VISIBLE = tmp(5863).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
-  let tmp6 = !tmp5;
-  if (guildProfile1.fetchStatus === GuildProfileFetchStatus.FETCHED) {
-    tmp6 = !hasItem;
-  }
+  let tmp6 = fetchStatus === FETCHED && !hasItem;
   if (tmp6) {
-    tmp6 = guildId.channelType === ChannelTypes.GUILD_ANNOUNCEMENT;
+    tmp6 = channelType === ChannelTypes.GUILD_ANNOUNCEMENT;
   }
   const items = [guildId, fetchGuildProfile];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     fetchGuildProfile();
   }, items);
   let tmp9 = null;
   if (tmp6) {
-    const obj2 = { children: null };
-    const obj3 = { variant: "text-sm/normal", color: "text-subtle", children: null };
-    const intl = tmp(1115).intl;
-    obj3.children = intl.string(tmp(1115).t["2Ab4Id"]);
-    obj2.children = jsx(tmp(4832).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
+    ({ variant: "text-sm/normal", color: "text-subtle", children: intl.string(intl2.t["2Ab4Id"]) });
+    const Text = tmp(4832).Text;
+    intl = tmp(1115).intl;
     tmp9 = <View>{null}</View>;
   }
   return tmp9;

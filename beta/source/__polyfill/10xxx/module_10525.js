@@ -4,14 +4,56 @@
 // Exports: buyPromotedProductIOS, clearProductsIOS, clearTransactionIOS, deepLinkToSubscriptionsIos, getPendingPurchasesIOS, getPromotedProductIOS, getReceiptIOS, presentCodeRedemptionSheetIOS, validateReceiptIos
 
 // Module 10525
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import _mod10517 from "module_10517" /* 10517 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react_native from "react-native" /* 17 */;
 
-get_ActivityIndicator = fn(17);
-const Linking = get_ActivityIndicator.Linking;
-const RNIapIos = get_ActivityIndicator.NativeModules.RNIapIos;
-asyncGeneratorStep(async (arg0, value) => {
-  if (v3 === 2) {
-    v3 = 3;
+let c3, c4, c5;
+
+const Linking = react_native.Linking;
+const RNIapIos = react_native.NativeModules.RNIapIos;
+_asyncToGenerator(async (arg0, value) => {
+  let v3;
+  if (c0 === 2) {
+    c0 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp2 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
+    } else {
+      return { value: "HermesInternal", done: null };
+    }
+  } else {
+    try {
+      c0 = 2;
+      if (arg0 === 1) {
+        c0 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c0 = 3;
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        const obj = c0(dependencyMap[2]);
+        const iosModule = obj.getIosModule();
+        c0 = 3;
+        const obj4 = { value: iosModule.getPendingTransactions(), done: true };
+        return obj4;
+      }
+    } catch (tmp5) {
+      c0 = 3;
+      throw tmp5;
+    }
+  }
+});
+_asyncToGenerator(async (arg0, value) => {
+  let _false;
+  closure_0 = arg0;
+  if (c5 === 2) {
+    c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
   } else if (tmp3 === 3) {
     if (arg0 === 1) {
@@ -24,41 +66,8 @@ asyncGeneratorStep(async (arg0, value) => {
     }
   } else {
     try {
-      v3 = 2;
-      if (arg0 === 1) {
-        v3 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        v3 = 3;
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        const iosModule = v3(dependencyMap[2]).getIosModule();
-        v3 = 3;
-        const obj4 = { value: iosModule.getPendingTransactions(), done: true };
-        return obj4;
-      }
-    } catch (tmp6) {
-      v3 = tmp;
-      throw tmp6;
-    }
-  }
-});
-asyncGeneratorStep(async (arg0, value) => {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
+      let requestReceipt;
+      let forceRefresh;
       c5 = 2;
       if (0 === c4) {
         if (arg0 === 1) {
@@ -69,8 +78,8 @@ asyncGeneratorStep(async (arg0, value) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          closure_2 = tmp2;
-          let forceRefresh;
+          requestReceipt = tmp4;
+          let closure_2 = tmp;
           forceRefresh = closure_0.forceRefresh;
           c4 = 1;
           c5 = 1;
@@ -81,32 +90,37 @@ asyncGeneratorStep(async (arg0, value) => {
         throw value;
       } else if (arg0 === 2) {
         c5 = 3;
-        const obj = { value, done: true };
-        return obj;
+        const obj4 = { value, done: true };
+        return obj4;
       } else {
-        if (obj4.isIosStorekit2()) {
-          Promise.reject("Only available on Sk1");
+        let rejectResult;
+        const obj5 = closure_0(_false[2]);
+        if (obj5.isIosStorekit2()) {
+          rejectResult = Promise.reject("Only available on Sk1");
         } else {
-          dependencyMap = forceRefresh;
+          _false = forceRefresh;
+          requestReceipt = requestReceipt.requestReceipt;
           if (forceRefresh == null) {
-            dependencyMap = false;
+            _false = false;
           }
-          const receipt = tmp5.requestReceipt(dependencyMap);
+          rejectResult = requestReceipt(_false);
         }
         c5 = 3;
-        obj4 = closure_0(dependencyMap[2]);
+        const obj = { value: rejectResult, done: true };
+        return obj;
       }
-    } catch (tmp16) {
-      c5 = tmp;
-      throw tmp16;
+    } catch (tmp14) {
+      c5 = 3;
+      throw tmp14;
     }
   }
 });
-asyncGeneratorStep(async (arg0, value) => {
-  if (v3 === 2) {
-    v3 = 3;
+_asyncToGenerator(async (arg0, value) => {
+  let v3;
+  if (c0 === 2) {
+    c0 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
+  } else if (tmp2 === 3) {
     if (arg0 === 1) {
       throw value;
     } else if (arg0 === 2) {
@@ -117,31 +131,34 @@ asyncGeneratorStep(async (arg0, value) => {
     }
   } else {
     try {
-      v3 = 2;
+      c0 = 2;
       if (arg0 === 1) {
-        v3 = 3;
+        c0 = 3;
         throw value;
       } else if (arg0 === 2) {
-        v3 = 3;
+        c0 = 3;
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        const iosModule = v3(dependencyMap[2]).getIosModule();
-        v3 = 3;
+        const obj = c0(dependencyMap[2]);
+        const iosModule = obj.getIosModule();
+        c0 = 3;
         const obj4 = { value: iosModule.presentCodeRedemptionSheet(), done: true };
         return obj4;
       }
-    } catch (tmp6) {
-      v3 = tmp;
-      throw tmp6;
+    } catch (tmp5) {
+      c0 = 3;
+      throw tmp5;
     }
   }
 });
-let closure_129_0 = asyncGeneratorStep(async (arg0, value) => {
+_asyncToGenerator(async function(arg0, value) {
+  closure_0 = arg0;
+  let closure_1 = value;
   if (c4 === 2) {
     c4 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
+  } else if (tmp2 === 3) {
     if (arg0 === 1) {
       throw value;
     } else if (arg0 === 2) {
@@ -162,12 +179,11 @@ let closure_129_0 = asyncGeneratorStep(async (arg0, value) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          closure_2 = tmp4;
-          closure_130_0 = undefined;
+          let closure_2 = tmp3;
+          closure_0 = undefined;
           const _fetch = fetch;
-          const request = { method: "POST", headers: { Accept: "application/json", "Content-Type": "application/json" }, body: null };
+          const request = { method: "POST", headers: { Accept: "application/json", "Content-Type": "application/json" }, body: JSON.stringify(closure_1) };
           const _JSON = JSON;
-          request.body = JSON.stringify(closure_1);
           c3 = 1;
           c4 = 1;
           const obj4 = { value: fetch(closure_0, request), done: false };
@@ -181,84 +197,83 @@ let closure_129_0 = asyncGeneratorStep(async (arg0, value) => {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        closure_130_0 = value;
-        if (closure_130_0.ok) {
+        closure_0 = value;
+        if (closure_0.ok) {
           c4 = 3;
-          const obj6 = { value: closure_130_0.json(), done: true };
+          const obj6 = { value: closure_0.json(), done: true };
           return obj6;
         } else {
           const _Object = Object;
           const _Error = Error;
-          const error = new Error(closure_130_0.statusText);
-          const obj = { statusCode: closure_130_0.status };
-          throw Object.assign(error, obj);
+          const self = this;
+          const self2 = this;
+          const error = new Error(closure_0.statusText);
+          const obj = { statusCode: closure_0.status };
+          throw assign(error, obj);
         }
       }
-    } catch (tmp16) {
-      c4 = tmp;
-      throw tmp16;
+    } catch (tmp13) {
+      c4 = 3;
+      throw tmp13;
     }
   }
 });
 function fetchJsonOrThrow(arg0, arg1) {
-  const self = this;
-  const apply = closure_0.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return closure_0(...arguments);
 }
-asyncGeneratorStep(async (arg0, value) => {
-  closure_1 = tmp2;
-  closure_129_0 = closure_0;
-  await v3("https://buy.itunes.apple.com/verifyReceipt", closure_0);
-  if (1 === tmp5) {
+_asyncToGenerator(async (arg0, value) => {
+  let closure_2;
+  let tmp5;
+  let v3;
+  closure_0 = arg0;
+  let status = tmp;
+  await c4("https://buy.itunes.apple.com/verifyReceipt", closure_0);
+  if (1 === c3) {
     if (arg0 === 1) {
-      v3 = 3;
+      c4 = 3;
       throw value;
     } else if (arg0 === 2) {
-      v3 = 3;
-      return { value, done: true };
+      c4 = 3;
+      const obj5 = { value, done: true };
+      return obj5;
     } else {
-      closure_129_1 = value;
-      if (closure_129_1) {
-        if (21007 === closure_129_1.status) {
+      status = value;
+      const tmp19 = status;
+      if (tmp19) {
+        if (21007 === status.status) {
           c3 = 2;
-          v3 = 1;
-          return { value: v3("https://sandbox.itunes.apple.com/verifyReceipt", closure_129_0), done: false };
+          c4 = 1;
+          const obj6 = { value: c4("https://sandbox.itunes.apple.com/verifyReceipt", closure_0), done: false };
+          return obj6;
         }
       }
-      let tmp6 = closure_129_1;
+      tmp5 = status;
     }
   } else if (arg0 === 1) {
-    v3 = 3;
+    c4 = 3;
     throw value;
   } else {
-    tmp6 = value;
+    tmp5 = value;
     if (arg0 === 2) {
-      v3 = 3;
-      return { value, done: true };
+      c4 = 3;
+      const obj = { value, done: true };
+      return obj;
     }
   }
-  return tmp6;
+  return tmp5;
 });
 function requestAgnosticReceiptValidationIos(arg0) {
-  const self = this;
-  const apply = closure_0.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return closure_0(...arguments);
 }
-let closure_0 = asyncGeneratorStep(async (arg0, value) => {
-  if (v3 === 2) {
-    v3 = 3;
+let closure_0 = _asyncToGenerator(async (arg0, value) => {
+  let c0;
+  let c1;
+  let v3;
+  closure_0 = arg0;
+  if (c4 === 2) {
+    c4 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
+  } else if (tmp3 === 3) {
     if (arg0 === 1) {
       throw value;
     } else if (arg0 === 2) {
@@ -269,140 +284,117 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
     }
   } else {
     try {
-      v3 = 2;
+      let str;
+      c4 = 2;
       if (0 === c3) {
         if (arg0 === 1) {
-          v3 = 3;
+          c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          v3 = 3;
+          c4 = 3;
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          closure_2 = tmp5;
-          closure_1 = tmp2;
-          closure_129_0 = undefined;
-          closure_129_1 = undefined;
-          ({ receiptBody: closure_129_0, isTest: closure_129_1 } = closure_0);
-          closure_129_2 = undefined;
+          let closure_2 = tmp4;
+          let closure_1 = tmp;
+          c0 = undefined;
+          c1 = undefined;
+          ({ receiptBody: c0, isTest: c1 } = closure_0);
+          str = undefined;
           c3 = 1;
-          v3 = 1;
+          c4 = 1;
           return { value: "flex", done: true };
         }
-      } else if (1 === tmp5) {
+      } else if (1 === c3) {
         if (arg0 === 1) {
-          v3 = 3;
+          c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          v3 = 3;
+          c4 = 3;
           const obj4 = { value, done: true };
           return obj4;
-        } else if (null == closure_129_1) {
+        } else if (null == c1) {
           c3 = 2;
-          v3 = 1;
-          const obj5 = { value: requestAgnosticReceiptValidationIos(closure_129_0), done: false };
+          c4 = 1;
+          const obj5 = { value: requestAgnosticReceiptValidationIos(c0), done: false };
           return obj5;
         } else {
-          let str = "https://buy.itunes.apple.com/verifyReceipt";
-          if (closure_129_1) {
+          str = "https://buy.itunes.apple.com/verifyReceipt";
+          if (c1) {
             str = "https://sandbox.itunes.apple.com/verifyReceipt";
           }
-          closure_129_2 = str;
           c3 = 3;
-          v3 = 1;
-          const obj6 = { value: v3(closure_129_2, closure_129_0), done: false };
+          c4 = 1;
+          const obj6 = { value: c4(str, c0), done: false };
           return obj6;
         }
-      } else if (2 === tmp5) {
+      } else if (2 === c3) {
         if (arg0 === 1) {
-          v3 = 3;
+          c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          v3 = 3;
+          c4 = 3;
           const obj7 = { value, done: true };
           return obj7;
         } else {
-          v3 = 3;
+          c4 = 3;
           const obj8 = { value, done: true };
           return obj8;
         }
       } else if (arg0 === 1) {
-        v3 = 3;
+        c4 = 3;
         throw value;
       } else if (arg0 === 2) {
-        v3 = 3;
+        c4 = 3;
         const obj9 = { value, done: true };
         return obj9;
       } else {
-        v3 = 3;
+        c4 = 3;
         const obj = { value, done: true };
         return obj;
       }
-    } catch (tmp17) {
-      v3 = tmp;
-      throw tmp17;
+    } catch (tmp16) {
+      c4 = 3;
+      throw tmp16;
     }
   }
 });
 
 export const getPendingPurchasesIOS = function getPendingPurchasesIOS() {
-  const self = this;
-  const apply = closure_0.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return closure_0(...arguments);
 };
 export const getReceiptIOS = function getReceiptIOS(arg0) {
-  const self = this;
-  const apply = closure_0.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return closure_0(...arguments);
 };
 export const presentCodeRedemptionSheetIOS = function presentCodeRedemptionSheetIOS() {
-  const self = this;
-  const apply = closure_0.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return closure_0(...arguments);
 };
 export const getPromotedProductIOS = () => {
+  let rejectResult;
+  const obj = _mod10517;
   if (obj.isIosStorekit2()) {
-    let rejectResult = Promise.reject("Only available on Sk1");
+    rejectResult = Promise.reject("Only available on Sk1");
   } else {
     rejectResult = RNIapIos.promotedProduct();
   }
   return rejectResult;
 };
 export const buyPromotedProductIOS = () => {
-  const iosModule = closure_0(10517).getIosModule();
+  const obj = _mod10517;
+  const iosModule = obj.getIosModule();
   return iosModule.buyPromotedProduct();
 };
 export const validateReceiptIos = function validateReceiptIos(arg0) {
-  const self = this;
-  const apply = closure_0.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return closure_0(...arguments);
 };
 export const clearTransactionIOS = () => {
-  const iosModule = closure_0(10517).getIosModule();
+  const obj = _mod10517;
+  const iosModule = obj.getIosModule();
   return iosModule.clearTransaction();
 };
 export const clearProductsIOS = () => {
-  const iosModule = closure_0(10517).getIosModule();
+  const obj = _mod10517;
+  const iosModule = obj.getIosModule();
   return iosModule.clearProducts();
 };
 export const deepLinkToSubscriptionsIos = () => Linking.openURL("https://apps.apple.com/account/subscriptions");

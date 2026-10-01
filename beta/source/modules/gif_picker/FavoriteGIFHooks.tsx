@@ -7,20 +7,21 @@
 // Module 9831 (FavoriteGIFHooks)
 import _modDef12 from "module_12" /* 12 */;
 import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 9832 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, src;
 
-require = fn;
 let closure_4 = {};
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/gif_picker/FavoriteGIFHooks.tsx");
 
 export const useFavoriteGIFs = function useFavoriteGIFs(flag) {
   if (flag === undefined) {
     flag = true;
   }
-  const favoriteGifs = FrecencyUserSettingsHooks.useFrecencySettings(flag).favoriteGifs;
+  const obj = FrecencyUserSettingsHooks;
+  const favoriteGifs = obj.useFrecencySettings(flag).favoriteGifs;
   let gifs;
   if (favoriteGifs != null) {
     gifs = favoriteGifs.gifs;
@@ -32,7 +33,8 @@ export const useFavoriteGIFs = function useFavoriteGIFs(flag) {
 };
 export const useSortedFavoriteGIFs = function useSortedFavoriteGIFs(transformFavoriteGifUrl) {
   _require = transformFavoriteGifUrl;
-  const favoriteGifs = require("FrecencyUserSettingsHooks").useFrecencySettings(true).favoriteGifs;
+  let obj = require("FrecencyUserSettingsHooks");
+  const favoriteGifs = obj.useFrecencySettings(true).favoriteGifs;
   let gifs;
   if (favoriteGifs != null) {
     gifs = favoriteGifs.gifs;
@@ -41,11 +43,11 @@ export const useSortedFavoriteGIFs = function useSortedFavoriteGIFs(transformFav
     gifs = closure_4;
   }
   const items = [gifs, transformFavoriteGifUrl];
-  return noop.useMemo(() => {
-    const mapped = _modDef12(gifs).map((src, url) => {
-      const obj = {};
+  return react.useMemo(() => {
+    const arr = _modDef12(gifs);
+    const mapped = arr.map((src, url) => {
+      const obj = { url, src };
       const merged = Object.assign(src);
-      obj.url = url;
       src = undefined;
       if (transformFavoriteGifUrl != null) {
         src = tmp2(src.src, url);
@@ -53,16 +55,16 @@ export const useSortedFavoriteGIFs = function useSortedFavoriteGIFs(transformFav
       if (src == null) {
         src = src.src;
       }
-      obj.src = src;
       return obj;
     });
-    const arr = _modDef12(gifs);
     const sortByResult = mapped.sortBy("order");
-    return mapped.sortBy("order").reverse().value();
+    const iter = sortByResult.reverse();
+    return iter.value();
   }, items);
 };
 export const useShouldShowTooltipOnFavorite = function useShouldShowTooltipOnFavorite() {
-  const favoriteGifs = FrecencyUserSettingsHooks.useFrecencySettings().favoriteGifs;
+  const obj = FrecencyUserSettingsHooks;
+  const favoriteGifs = obj.useFrecencySettings().favoriteGifs;
   let flag;
   if (favoriteGifs != null) {
     flag = favoriteGifs.hideTooltip;
@@ -79,7 +81,8 @@ export const useIsFavoriteGIF = function useIsFavoriteGIF(arg0, flag) {
   if (flag === undefined) {
     flag = true;
   }
-  const favoriteGifs = FrecencyUserSettingsHooks.useFrecencySettings(flag).favoriteGifs;
+  const obj = FrecencyUserSettingsHooks;
+  const favoriteGifs = obj.useFrecencySettings(flag).favoriteGifs;
   let gifs;
   if (favoriteGifs != null) {
     gifs = favoriteGifs.gifs;

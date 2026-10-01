@@ -12,37 +12,41 @@ import size from "module_2" /* 2 */;
 
 const isGuildReadableType = ChannelRecord.isGuildReadableType;
 const CREATE_CHANNEL_MODAL_KEY = "CREATE_CHANNEL_MODAL_KEY";
-const result = size.fileFinishedImporting("actions/native/CreateChannelModalActionCreators.tsx");
-
-export default {
+let obj = {
   CREATE_CHANNEL_MODAL_KEY: "CREATE_CHANNEL_MODAL_KEY",
-  open(arg0, guildId, categoryId, cloneChannelId) {
+  open(channelType, guildId, arg2, arg3) {
+    let tmp2;
+    let tmp3;
     const self = this;
     if (null != guildId) {
-      const obj2 = ModalActionCreatorsDefault;
-      const tmp = arg0;
+      const pushLazy = ModalActionCreatorsDefault.pushLazy;
+      ModalActionCreatorsDefault;
       let obj = {
-        channelType: tmp,
+        channelType,
         guildId,
-        categoryId,
-        cloneChannelId,
+        categoryId: tmp2,
+        cloneChannelId: tmp3,
         onChannelCreated(id, arg1) {
             self.close();
             const channel = ChannelStore.getChannel(id);
-            let tmp3 = null != arg1 && null != channel;
+            const tmp3 = null != arg1 && null != channel && isGuildReadableType(channel.type);
             if (tmp3) {
-              tmp3 = isGuildReadableType(channel.type);
-            }
-            if (tmp3) {
-              transitionToChannel.transitionToChannel(id);
+              const obj = transitionToChannel;
+              obj.transitionToChannel(id);
             }
           }
       };
-      obj2.pushLazy(self(1981)(9010, dependencyMap.paths), obj, CREATE_CHANNEL_MODAL_KEY);
-      const tmp9 = self(1981)(9010, dependencyMap.paths);
+      tmp3 = arg3;
+      const tmp10 = self(1981)(9010, dependencyMap.paths);
+      pushLazy(tmp10, obj, CREATE_CHANNEL_MODAL_KEY);
+      tmp2 = arg2;
     }
   },
   close() {
-    ModalActionCreatorsDefault.popWithKey(CREATE_CHANNEL_MODAL_KEY);
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(CREATE_CHANNEL_MODAL_KEY);
   }
 };
+const result = size.fileFinishedImporting("actions/native/CreateChannelModalActionCreators.tsx");
+
+export default obj;

@@ -5,26 +5,37 @@
 // Exports: default
 
 // Module 11894 (ApplicationCommandList)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9726 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const FlatList = fn(17).FlatList;
-const jsx = fn(21).jsx;
-let closure_7 = 3 * fn(9726).AUTOCOMPLETE_ROW_HEIGHT;
-const size = fn(2);
+let item, nativeEvent;
+
+const FlatList = react_native.FlatList;
+const AUTOCOMPLETE_ROW_HEIGHT = ApplicationCommandsConstants.AUTOCOMPLETE_ROW_HEIGHT;
+const jsx = Fragment.jsx;
+let closure_7 = 3 * AUTOCOMPLETE_ROW_HEIGHT;
 const result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandList.tsx");
 
 export default function ApplicationCommandList(channel) {
+  let ItemSeparatorComponent;
+  let getItemLayout;
+  let items;
+  let query;
+  let style;
   channel = channel.channel;
   const onPressCommandItem = channel.onPressCommandItem;
   const onCommandsChange = channel.onCommandsChange;
   let commands;
   ({ style, query, ItemSeparatorComponent, getItemLayout } = channel);
-  const obj2 = { text: query, commandTypes: null };
-  const items = [channel(commands[5]).ApplicationCommandType.CHAT];
-  obj2.commandTypes = items;
-  let obj = onCommandsChange(commands[4]);
-  const query1 = obj.useQuery({ channel, type: "channel" }, obj2, { placeholderCount: 3, limit: 7, scoreMethod: channel(commands[6]).ScoreMethod.COMMAND_OR_APPLICATION });
+  const tmp = onCommandsChange(commands[4]);
+  const useQuery = tmp.useQuery;
+  const obj = { text: query, commandTypes: items };
+  items = [channel(commands[5]).ApplicationCommandType.CHAT];
+  const obj2 = { placeholderCount: 3, limit: 7, scoreMethod: channel(commands[6]).ScoreMethod.COMMAND_OR_APPLICATION };
+  const query1 = useQuery({ channel, type: "channel" }, obj, obj2);
   commands = query1.commands;
   const sections = query1.sections;
   const scrollDown = query1.scrollDown;
@@ -33,38 +44,33 @@ export default function ApplicationCommandList(channel) {
   const callback = sections.useCallback((item) => {
     item = item.item;
     let found;
+    const index = item.index;
     if (item.inputType === channel(commands[7]).ApplicationCommandInputType.PLACEHOLDER) {
-      return jsx(onPressCommandItem(tmp[8]), {});
+      return jsx(onPressCommandItem(commands[8]), {});
     } else {
       found = undefined;
+      const arr = sections;
       if (sections != null) {
-        found = sections.find((id) => id.id === item.applicationId);
+        found = arr.find((id) => id.id === item.applicationId);
       }
-      const obj = {
+      return jsx(onPressCommandItem(commands[9]), {
         command: item,
         section: found,
         onPress() {
             return onPressCommandItem(item, found);
           },
         guildId: item.guild_id,
-        highlighted: 0 === item.index
-      };
-      return jsx(onPressCommandItem(tmp[9]), {
-        command: item,
-        section: found,
-        onPress() {
-            return onPressCommandItem(item, found);
-          },
-        guildId: item.guild_id,
-        highlighted: 0 === item.index
+        highlighted: 0 === index
       });
     }
   }, items1);
+  const useEffect = sections.useEffect;
+  const obj3 = sections;
   if (commands != null) {
     length = commands.length;
   }
   const items2 = [length, onCommandsChange];
-  const effect = sections.useEffect(() => {
+  const effect = useEffect(() => {
     if (onCommandsChange != null) {
       let num;
       if (commands != null) {
@@ -77,10 +83,9 @@ export default function ApplicationCommandList(channel) {
     }
   }, items2);
   const items3 = [scrollDown];
-  const obj3 = { placeholderCount: 3, limit: 7, scoreMethod: channel(commands[6]).ScoreMethod.COMMAND_OR_APPLICATION };
   return <scrollDown style={style} keyExtractor={function keyExtractor(id) {
     return id.id;
-  }} data={commands} renderItem={callback} ItemSeparatorComponent={ItemSeparatorComponent} getItemLayout={getItemLayout} onScroll={sections.useCallback((nativeEvent) => {
+  }} data={commands} renderItem={callback} ItemSeparatorComponent={ItemSeparatorComponent} getItemLayout={getItemLayout} onScroll={obj3.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
     if (nativeEvent.contentOffset.y + nativeEvent.layoutMeasurement.height >= nativeEvent.contentSize.height - closure_7) {
       scrollDown();

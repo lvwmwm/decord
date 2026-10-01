@@ -5,15 +5,17 @@
 // Exports: default
 
 // Module 13667 (NitroWheel)
+import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5899 */;
-import _modDef8661 from "module_8661" /* 8661 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8661 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/void/NitroWheel/native/NitroWheel.tsx");
 
 export default function NitroWheel(style) {
-  const obj = { source: _modDef8661, style: style.style, resizeMode: "contain" };
-  return jsx(FastImageDefault, { source: _modDef8661, style: style.style, resizeMode: "contain" });
+  style = style.style;
+  FastImageDefault;
+  return <tmp source={AssetRegistryDefault} style={style} resizeMode="contain" />;
 };

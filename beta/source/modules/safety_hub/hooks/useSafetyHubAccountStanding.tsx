@@ -5,14 +5,15 @@
 // Exports: useSafetyHubAccountStanding
 
 // Module 11361 (useSafetyHubAccountStanding)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import SafetyHubStore from "SafetyHubStore" /* 7881 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubAccountStanding.tsx");
 
 export const useSafetyHubAccountStanding = function useSafetyHubAccountStanding() {
+  let accountStanding;
   const items = [SafetyHubStore];
-  return initialize.useStateFromStores(items, () => accountStanding.getAccountStanding());
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => accountStanding.getAccountStanding());
 };

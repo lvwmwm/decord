@@ -5,32 +5,36 @@
 // Exports: default, useIsVoiceChannelLocked
 
 // Module 9394 (useIsVoiceChannelFull)
+import Constants from "Constants" /* 1085 */;
 import ChannelUtils from "ChannelUtils" /* 4981 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const Permissions = fn(1085).Permissions;
-const size = fn(2);
+const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/voice_calls/useIsVoiceChannelFull.tsx");
 
 export default function useIsVoiceChannelFull(arg0) {
+  let closure_0;
   _require = arg0;
+  let obj = require("get initialized");
   const items = [VoiceStateStore, GuildStore];
-  return require("initialize").useStateFromStores(items, () => ChannelUtils.isChannelFull(closure_0, VoiceStateStore, GuildStore));
+  return obj.useStateFromStores(items, () => {
+    const obj = ChannelUtils;
+    return obj.isChannelFull(closure_0, VoiceStateStore, GuildStore);
+  });
 };
 export const useIsVoiceChannelLocked = function useIsVoiceChannelLocked(channel) {
   _require = channel;
   const items = [PermissionStore];
   const items1 = [channel];
-  return require("initialize").useStateFromStores(items, () => {
-    let tmp2 = null == closure_0;
-    if (!tmp2) {
-      tmp2 = !PermissionStore.can(Permissions.CONNECT, tmp);
-    }
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const tmp2 = null == channel || !PermissionStore.can(Permissions.CONNECT, tmp);
     return tmp2;
   }, items1);
 };

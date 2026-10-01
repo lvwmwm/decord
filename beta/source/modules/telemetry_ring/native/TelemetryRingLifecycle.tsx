@@ -5,80 +5,90 @@
 
 // Module 1234 (telemetry_ring/TelemetryRingLifecycle)
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 1074 */;
 import ProcessUtilsDefault from "ProcessUtils" /* 1358 */;
 import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1984 */;
+import TelemetryRingNativeDefault from "TelemetryRingNative" /* 1988 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 import UserStore from "UserStore" /* 1372 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
 import LifecycleManager from "LifecycleManager" /* 1983 */;
+import size from "module_2" /* 2 */;
 
-const AppStates = fn(1074).AppStates;
-class TelemetryRingLifecycleImpl extends tmp2 {
+let importDefault;
+
+const AppStates = Constants.AppStates;
+class TelemetryRingLifecycleImpl extends LifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    importDefault = applyArgumentsResult;
     applyArgumentsResult._initialized = false;
     applyArgumentsResult._experimentUnsubscribe = null;
     applyArgumentsResult._handleEligibilityChange = function _handleEligibilityChange() {
-      const result = applyArgumentsResult._updateZoomedInExport();
+      const result = importDefault._updateZoomedInExport();
     };
     applyArgumentsResult._handleLogout = function _handleLogout() {
-      applyArgumentsResult(1988).clear();
-      const obj = applyArgumentsResult(1988);
-      applyArgumentsResult(1984).reset();
+      const obj = TelemetryRingNativeDefault;
+      obj.clear();
+      const obj2 = ZoomedInTelemetryDefault;
+      obj2.reset();
     };
     return applyArgumentsResult;
   }
+  _updateZoomedInExport() {
+    const state = AppStateStore.getState();
+    let shouldRunResult = state === AppStates.ACTIVE;
+    const tmp2 = AppStates;
+    if (shouldRunResult) {
+      const obj = ZoomedInTelemetryDefault;
+      shouldRunResult = obj.shouldRun();
+    }
+    const obj2 = ProcessUtilsDefault;
+    const result = obj2.setShouldCollectHermesInstrumentedStats(shouldRunResult);
+    if (state === tmp2.ACTIVE) {
+      const tmp6Result = ZoomedInTelemetryDefault;
+      tmp6Result.start();
+    } else {
+      const tmp6Result2 = ZoomedInTelemetryDefault;
+      tmp6Result2.stop();
+    }
+  }
+  _initialize() {
+    const self = this;
+    if (!this._initialized) {
+      self._initialized = true;
+      const obj = self(573);
+      const subscription = obj.subscribe("LOGOUT", self._handleLogout);
+      AppStateStore.addChangeListener(self._handleEligibilityChange);
+      UserStore.addChangeListener(self._handleEligibilityChange);
+      ApexExperimentStore.addChangeListener(self._handleEligibilityChange);
+      self._experimentUnsubscribe = () => {
+        ApexExperimentStore.removeChangeListener(self._handleEligibilityChange);
+      };
+      const obj2 = self(1984);
+      obj2.initialize();
+      const result = self._updateZoomedInExport();
+    }
+  }
+  _terminate() {
+    const self = this;
+    const obj = DispatcherDefault;
+    obj.unsubscribe("LOGOUT", this._handleLogout);
+    AppStateStore.removeChangeListener(this._handleEligibilityChange);
+    UserStore.removeChangeListener(this._handleEligibilityChange);
+    if (null != this._experimentUnsubscribe) {
+      const result = self._experimentUnsubscribe();
+      self._experimentUnsubscribe = null;
+    }
+    const tmpResult = ZoomedInTelemetryDefault;
+    tmpResult.stop();
+    const tmpResult2 = ProcessUtilsDefault;
+    const result1 = tmpResult2.setShouldCollectHermesInstrumentedStats(false);
+    self._initialized = false;
+  }
 }
 const prototype = TelemetryRingLifecycleImpl.prototype;
-prototype["_updateZoomedInExport"] = function _updateZoomedInExport() {
-  const state = AppStateStore.getState();
-  let shouldRunResult = state === AppStates.ACTIVE;
-  if (shouldRunResult) {
-    shouldRunResult = ZoomedInTelemetryDefault.shouldRun();
-  }
-  const result = ProcessUtilsDefault.setShouldCollectHermesInstrumentedStats(shouldRunResult);
-  if (state === AppStates.ACTIVE) {
-    tmp6(1984).start();
-    const tmp6Result = tmp6(1984);
-  } else {
-    tmp6(1984).stop();
-    const tmp6Result2 = tmp6(1984);
-  }
-};
-prototype["_initialize"] = function _initialize() {
-  const self = this;
-  if (!this._initialized) {
-    self._initialized = true;
-    const subscription = self(573).subscribe("LOGOUT", self._handleLogout);
-    AppStateStore.addChangeListener(self._handleEligibilityChange);
-    UserStore.addChangeListener(self._handleEligibilityChange);
-    ApexExperimentStore.addChangeListener(self._handleEligibilityChange);
-    self._experimentUnsubscribe = () => {
-      ApexExperimentStore.removeChangeListener(self._handleEligibilityChange);
-    };
-    const obj = self(573);
-    self(1984).initialize();
-    const result = self._updateZoomedInExport();
-    const obj2 = self(1984);
-  }
-};
-prototype["_terminate"] = function _terminate() {
-  const self = this;
-  DispatcherDefault.unsubscribe("LOGOUT", this._handleLogout);
-  AppStateStore.removeChangeListener(this._handleEligibilityChange);
-  UserStore.removeChangeListener(this._handleEligibilityChange);
-  if (null != this._experimentUnsubscribe) {
-    const result = self._experimentUnsubscribe();
-    self._experimentUnsubscribe = null;
-  }
-  ZoomedInTelemetryDefault.stop();
-  const tmpResult = ZoomedInTelemetryDefault;
-  const result1 = ProcessUtilsDefault.setShouldCollectHermesInstrumentedStats(false);
-  self._initialized = false;
-};
 const telemetryRingLifecycleImpl = new TelemetryRingLifecycleImpl();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/telemetry_ring/native/TelemetryRingLifecycle.tsx");
 
 export default telemetryRingLifecycleImpl;

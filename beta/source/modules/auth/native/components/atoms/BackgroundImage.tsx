@@ -5,44 +5,49 @@
 // Exports: default
 
 // Module 6394 (BackgroundImage)
+import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 4685 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: closure_4, View: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const size = fn(2);
+let dependencyMap;
+
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+({ Image: closure_4, View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/auth/native/components/atoms/BackgroundImage.tsx");
 
 export default function BackgroundImage(backgroundImageSource) {
+  let closure_2;
   backgroundImageSource = backgroundImageSource.backgroundImageSource;
   let flag = backgroundImageSource.backgroundImageCover;
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = flag(4767)();
+  let tmp = flag(4767)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
-  let obj = { style: absoluteFill.absoluteFill, children: null };
-  const merged = Object.assign(noop.useMemo(() => {
-    const items = [timestampProducer.absoluteFill, ];
-    const obj = { style: items, source: null };
+  let obj2 = {};
+  const merged = Object.assign(react.useMemo(() => {
+    let tmp;
+    const items = [metroRequire.absoluteFill, ];
+    const obj = { style: items, source: tmp };
     items[1] = flag ? { width: "100%", height: "100%" } : { width: "100%" };
-    if (null != backgroundImageSource) {
-      obj.source = backgroundImageSource;
-      return obj;
-    } else {
-      let tmp2 = dependencyMap;
+    tmp = backgroundImageSource;
+    if (null == backgroundImageSource) {
+      let tmp5Result;
+      const obj2 = shared;
       if (obj2.isThemeDark(closure_2)) {
-        tmp2 = 6395;
-        let tmp4Result = tmp4(tmp2);
+        tmp5Result = tmp5(6395);
       } else {
-        tmp4Result = tmp4(6396);
+        tmp5Result = tmp5(6396);
       }
-      obj2 = shared;
+      tmp = tmp5Result;
     }
+    return obj;
   }, items));
-  obj.children = <closure_4 />;
   return <closure_5 style={closure_6.absoluteFill}>{null}</closure_5>;
 };

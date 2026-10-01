@@ -16,54 +16,62 @@ import module_13914 from "module_13914" /* 13914 */;
 import repl from "repl" /* 13915 */;
 import serialize_mod from "serialize" /* 13916 */;
 
-const ReactotronImpl = require;
+let onCommand;
+
+let obj11;
+let obj13;
+let obj15;
+let obj6;
+let obj8;
+let tmp14;
+let tmp7;
 function emptyPromise() {
   return Promise.resolve("");
 }
 let module_13908 = module_13908_mod;
 if (!module_13908) {
+  tmp7 = { default: module_13908 };
   const obj4 = { default: module_13908 };
-  let tmp7 = obj4;
 } else {
   tmp7 = module_13908;
 }
 module_13908 = tmp7;
 const assertHasLoggerPlugin = _interopRequireWildcard(assertHasLoggerPlugin2);
 if (!module_13910) {
+  obj6 = { default: module_13910 };
   const obj7 = { default: module_13910 };
-  let obj6 = obj7;
 } else {
   obj6 = module_13910;
 }
 if (!module_13911) {
+  obj8 = { default: module_13911 };
   const obj9 = { default: module_13911 };
-  let obj8 = obj9;
 } else {
   obj8 = module_13911;
 }
 const assertHasStateResponsePlugin = _interopRequireWildcard(assertHasStateResponsePlugin2);
 if (!module_13913) {
+  obj11 = { default: module_13913 };
   const obj12 = { default: module_13913 };
-  let obj11 = obj12;
 } else {
   obj11 = module_13913;
 }
 if (!module_13914) {
+  obj13 = { default: module_13914 };
   const obj14 = { default: module_13914 };
-  let obj13 = obj14;
 } else {
   obj13 = module_13914;
 }
 if (!repl) {
+  obj15 = { default: repl };
   const obj16 = { default: repl };
-  let obj15 = obj16;
 } else {
   obj15 = repl;
 }
 let serialize = serialize_mod;
 if (!serialize) {
+  tmp14 = { default: serialize };
   const obj17 = { default: serialize };
-  let tmp14 = obj17;
 } else {
   tmp14 = serialize;
 }
@@ -72,18 +80,18 @@ const items = [obj6.default(), assertHasLoggerPlugin.default(), obj8.default(), 
 let closure_9 = ["configure", "connect", "connected", "options", "plugins", "send", "socket", "startTimer", "use"];
 class ReactotronImpl {
   constructor() {
-    self = this;
-    tmp = c2(this, ReactotronImpl);
+    const self = this;
+    _classCallCheck(this, ReactotronImpl);
     this.connected = false;
     this.socket = null;
     this.plugins = [];
     this.sendQueue = [];
     this.isReady = false;
-    date = new Date();
+    let date = new Date();
     this.lastMessageDate = date;
     this.customCommands = [];
     this.customCommandLatestId = 1;
-    this.startTimer = () => self(dependencyMap[11]).start();
+    this.startTimer = () => ReactotronImpl(closure_1_1[11]).start();
     this.send = (type, payload, important) => {
       const date = new Date();
       const lastMessageDate = self.lastMessageDate;
@@ -94,22 +102,21 @@ class ReactotronImpl {
       }
       self.lastMessageDate = date;
       const action = { type, payload, important, date: date.toISOString(), deltaTime: num };
-      const defaultResult = serialize.default(action, self.options.proxyHack);
+      const defaultResult = closure_2_6.default(action, self.options.proxyHack);
       if (self.isReady) {
         try {
-          const socket = tmp4.socket;
+          const socket = tmp2.socket;
           socket.send(defaultResult);
         } catch (err) {
-          tmp2.isReady = false;
-          const _console = tmp.console;
-          _console.log("An error occurred communicating with reactotron. Please reload your app");
+          self.isReady = false;
+          const _console = console;
+          console.log("An error occurred communicating with reactotron. Please reload your app");
         }
       } else {
-        const sendQueue = tmp4.sendQueue;
+        const sendQueue = tmp2.sendQueue;
         sendQueue.push(defaultResult);
       }
     };
-    return;
   }
 }
 const entry = {
@@ -151,6 +158,7 @@ const items1 = [
     value: function close() {
       const self = this;
       this.connected = false;
+      const tmp = this.socket && self.socket.close;
       if (tmp) {
         const socket = self.socket;
         socket.close();
@@ -160,6 +168,11 @@ const items1 = [
   {
     key: "connect",
     value: function connect() {
+      let client;
+      let createSocket;
+      let host;
+      let port;
+      let secure;
       const self = this;
       this.connected = true;
       let options = this.options;
@@ -176,30 +189,33 @@ const items1 = [
       }
       let socket = createSocket("" + str + "://" + host + ":" + port);
       function onOpen() {
+        let environment;
+        let name;
+        let tmp;
         if (serialize) {
           tmp();
         }
         const plugins = self.plugins;
-        const item = plugins.forEach((onConnect) => onConnect.onConnect && onConnect.onConnect());
-        let tmp4 = getClientId;
-        if (!getClientId) {
-          tmp4 = emptyPromise;
-        }
-        tmp4(_classCallCheck).then((clientId) => {
+        const item = plugins.forEach((onConnect) => {
+          const tmp = onConnect.onConnect && onConnect.onConnect();
+          return tmp;
+        });
+        const tmp4 = getClientId || emptyPromise;
+        const tmp4Result = tmp4(_classCallCheck);
+        tmp4Result.then((clientId) => {
           let length;
           self.isReady = true;
-          const obj = { environment };
+          const send = self.send;
+          const obj = { environment, name, clientId, reactotronCoreClientVersion: "REACTOTRON_CORE_CLIENT_VERSION" };
           const merged = Object.assign(client);
-          obj.name = name;
-          obj.clientId = clientId;
-          obj.reactotronCoreClientVersion = "REACTOTRON_CORE_CLIENT_VERSION";
-          self.send("client.intro", obj);
+          send("client.intro", obj);
           if (self.sendQueue.length > 0) {
             do {
               let sendQueue = self.sendQueue;
+              let first = self.sendQueue[0];
               self.sendQueue = sendQueue.slice(1);
               let socket = self.socket;
-              let sendResult1 = socket.send(self.sendQueue[0]);
+              let sendResult1 = socket.send(first);
               length = self.sendQueue.length;
             } while (length > 0);
           }
@@ -207,16 +223,23 @@ const items1 = [
       }
       function onClose() {
         self.isReady = false;
+        let tmp = self;
         if (_interopRequireWildcard) {
           tmp2();
         }
-        const plugins = self.plugins;
-        const item = plugins.forEach((onDisconnect) => onDisconnect.onDisconnect && onDisconnect.onDisconnect());
+        const plugins = tmp.plugins;
+        const item = plugins.forEach((onDisconnect) => {
+          const tmp = onDisconnect.onDisconnect && onDisconnect.onDisconnect();
+          return tmp;
+        });
       }
       function onMessage(str) {
+        let action;
+        let tmp2;
         if (typeof str === "string") {
+          const tmp = globalThis;
           const _JSON2 = JSON;
-          let action = JSON.parse(str);
+          action = JSON.parse(str);
         } else {
           const _Buffer = Buffer;
           action = str;
@@ -230,17 +253,15 @@ const items1 = [
         }
         const plugins = self.plugins;
         const item = plugins.forEach((onCommand) => {
-          onCommand = onCommand.onCommand;
-          if (onCommand) {
-            onCommand = onCommand.onCommand(action);
-          }
+          onCommand = onCommand.onCommand && onCommand.onCommand(action);
           return onCommand;
         });
         if ("custom" === action.type) {
           const customCommands = tmp4.customCommands;
           const found = customCommands.filter((command) => {
+            let tmp2;
             if (typeof action.payload === "string") {
-              let tmp2 = command.command === tmp.payload;
+              tmp2 = command.command === tmp.payload;
             } else {
               tmp2 = command.command === tmp.payload.command;
             }
@@ -248,17 +269,18 @@ const items1 = [
           });
           const item1 = found.forEach((handler) => {
             let args;
+            handler = handler.handler;
             if (typeof action.payload === "object") {
               args = action.payload.args;
             }
-            return handler.handler(args);
+            return handler(args);
           });
         } else {
+          const tmp6 = "setClientId" === action.type && self.options.setClientId;
           if (tmp6) {
             const options = tmp4.options;
             options.setClientId(action.payload);
           }
-          tmp6 = "setClientId" === action.type && tmp4.options.setClientId;
         }
       }
       if ("on" in socket) {
@@ -281,12 +303,17 @@ const items1 = [
   {
     key: "display",
     value: function display(activity) {
+      let image;
+      let important;
+      let preview;
+      let value;
       ({ value, preview, image, important } = activity);
       let tmp = undefined !== important;
+      const name = activity.name;
       if (tmp) {
         tmp = important;
       }
-      const obj = { name: activity.name, value, preview, image };
+      const obj = { name, value, preview, image };
       this.send("display", obj, tmp);
     }
   },
@@ -299,22 +326,28 @@ const items1 = [
   {
     key: "use",
     value: function use(bind) {
-      const self = this;
+      let self = this;
       if (typeof bind !== "function") {
         const _Error3 = Error;
+        const self6 = this;
+        const self7 = this;
         let error = new Error("plugins must be a function");
         throw error;
       } else {
-        const tmp19 = bind.bind(self)(self);
-        const features = tmp19;
-        if (typeof tmp19 !== "object") {
+        const tmp13 = bind.bind(self)(self);
+        const features = tmp13;
+        if (typeof tmp13 !== "object") {
           let _Error2 = Error;
+          let self4 = this;
+          const self5 = this;
           let error1 = new Error("plugins must return an object");
           throw error1;
         } else {
-          if (tmp19.features) {
-            if (typeof tmp19.features !== "object") {
+          if (tmp13.features) {
+            if (typeof tmp13.features !== "object") {
               let _Error = Error;
+              let self2 = this;
+              let self3 = this;
               const error2 = new Error("features must be an object");
               throw error2;
             } else {
@@ -322,23 +355,27 @@ const items1 = [
 
               }
               const _Object = Object;
-              const keys = Object.keys(tmp19.features);
-              const item = keys.forEach((item) => {
+              const keys = Object.keys(tmp13.features);
+              const item = keys.forEach(function(item) {
                 if (typeof inject === "function") {
                   if (typeof features.features[item] !== "function") {
                     const _Error2 = Error;
                     const _HermesInternal2 = HermesInternal;
+                    const self3 = this;
+                    const self4 = this;
                     const error = new Error("feature " + item + " is not a function");
                     throw error;
                   } else {
-                    closure_0 = item;
+                    let closure_0 = item;
                     if (closure_9.some((item) => item === closure_0)) {
                       const _Error = Error;
                       const _HermesInternal = HermesInternal;
+                      self = this;
+                      const self2 = this;
                       const error1 = new Error("feature " + item + " is a reserved name");
                       throw error1;
                     } else {
-                      self[item] = tmp3;
+                      self[item] = features.features[item];
                     }
                   }
                 } else {
@@ -348,9 +385,10 @@ const items1 = [
             }
           }
           const plugins = self.plugins;
-          plugins.push(tmp19);
+          plugins.push(tmp13);
+          const tmp2 = tmp13.onPlugin && typeof tmp13.onPlugin === "function";
           if (tmp2) {
-            const onPlugin = tmp19.onPlugin;
+            const onPlugin = tmp13.onPlugin;
             onPlugin.bind(self)(self);
           }
           return self;
@@ -361,7 +399,11 @@ const items1 = [
   {
     key: "onCustomCommand",
     value: function onCustomCommand(command, arg1) {
-      const self = this;
+      let args;
+      let description;
+      let handler;
+      let title;
+      let self = this;
       if (typeof command === "string") {
         handler = arg1;
       } else {
@@ -374,27 +416,33 @@ const items1 = [
           const found = customCommands.filter((command) => command.command === command);
           if (found.length > 0) {
             const item = found.forEach((id) => {
+              let closure_0 = id;
               const customCommands = self.customCommands;
               self.customCommands = customCommands.filter((id) => id.id !== id.id);
-              self.send("customCommand.unregister", { id: id.id, command: id.command });
+              obj = { id: id.id, command: id.command };
+              self.send("customCommand.unregister", obj);
             });
           }
           if (args) {
-            closure_2 = [];
-            const item1 = args.forEach((name) => {
+            let closure_2 = [];
+            const item1 = args.forEach(function(name) {
               if (name.name) {
+                const arr = closure_2;
                 if (closure_2.indexOf(name.name) > -1) {
                   const _Error2 = Error;
                   const _HermesInternal2 = HermesInternal;
+                  const self3 = this;
+                  const self4 = this;
                   const error = new Error("A arg with the name \"" + name.name + "\" already exists in the command \"" + command + "\"");
                   throw error;
                 } else {
                   arr.push(name.name);
                 }
-                arr = closure_2;
               } else {
                 const _Error = Error;
                 const _HermesInternal = HermesInternal;
+                self = this;
+                const self2 = this;
                 const error1 = new Error("A arg on the command \"" + command + "\" is missing a name");
                 throw error1;
               }
@@ -403,10 +451,12 @@ const items1 = [
           let obj = { id: self.customCommandLatestId, command: tmp, handler, title, description, args };
           self.customCommandLatestId = self.customCommandLatestId + 1;
           const customCommands1 = self.customCommands;
-          customCommands1.push(obj);
+          let arr = customCommands1.push(obj);
+          const obj3 = { id: null, command: null, title: null, description: null, args: null };
           ({ id: obj2.id, command: obj2.command, title: obj2.title, description: obj2.description, args: obj2.args } = obj);
-          self.send("customCommand.register", { id: null, command: null, title: null, description: null, args: null });
+          self.send("customCommand.register", obj3);
           return () => {
+            let id;
             const customCommands = self.customCommands;
             self.customCommands = customCommands.filter((id) => id.id !== id.id);
             obj = { id: obj.id, command: obj.command };
@@ -415,11 +465,15 @@ const items1 = [
         } else {
           let _Error2 = Error;
           let _HermesInternal = HermesInternal;
+          let self4 = this;
+          const self5 = this;
           let error = new Error("A handler is required for command \"" + tmp + "\"");
           throw error;
         }
       } else {
         let _Error = Error;
+        let self2 = this;
+        let self3 = this;
         let error1 = new Error("A command is required");
         throw error1;
       }
@@ -427,13 +481,18 @@ const items1 = [
   }
 ];
 const _moduleResult = _createClass(ReactotronImpl, items1);
+const unpackModuleId = _moduleResult;
+const assertHasLoggerPlugin_export = assertHasLoggerPlugin.assertHasLoggerPlugin;
+const assertHasStateResponsePlugin_export = assertHasStateResponsePlugin.assertHasStateResponsePlugin;
+const ReactotronImpl_export = _moduleResult;
 
-export const assertHasLoggerPlugin = assertHasLoggerPlugin.assertHasLoggerPlugin;
-export const assertHasStateResponsePlugin = assertHasStateResponsePlugin.assertHasStateResponsePlugin;
+export { assertHasLoggerPlugin_export as assertHasLoggerPlugin };
+export { assertHasStateResponsePlugin_export as assertHasStateResponsePlugin };
 export const createClient = function createClient(url) {
-  return new _moduleResult().configure(url);
+  const obj = new unpackModuleId();
+  return obj.configure(url);
 };
 export const hasStateResponsePlugin = assertHasStateResponsePlugin.hasStateResponsePlugin;
 export const ArgType = { String: "string" };
 export const corePlugins = items;
-export const ReactotronImpl = _moduleResult;
+export { ReactotronImpl_export as ReactotronImpl };

@@ -6,8 +6,9 @@
 // Module 4911 (copyArray)
 
 export default function copyArray(arg0, arg1) {
+  let num;
   let ArrayResult = arg1;
-  if (!arg1) {
+  if (!ArrayResult) {
     const _Array = Array;
     ArrayResult = Array(length);
   }

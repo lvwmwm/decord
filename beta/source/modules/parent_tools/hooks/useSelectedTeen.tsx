@@ -8,19 +8,22 @@
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import UserStore from "UserStore" /* 1372 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeen.tsx");
 
 export const useSelectedTeen = function useSelectedTeen() {
+  let closure_0;
+  let selectedTeenId;
   const items = [FamilyCenterStore];
-  _require = require("useStateFromStores").useStateFromStores(items, () => selectedTeenId.getSelectedTeenId());
   const obj = require("useStateFromStores");
+  _require = obj.useStateFromStores(items, () => selectedTeenId.getSelectedTeenId());
   const items1 = [UserStore];
-  return require("useStateFromStores").useStateFromStores(items1, () => {
+  const obj2 = require("useStateFromStores");
+  return obj2.useStateFromStores(items1, () => {
     let user;
     if (null !== closure_0) {
       user = UserStore.getUser(tmp);
@@ -29,6 +32,8 @@ export const useSelectedTeen = function useSelectedTeen() {
   });
 };
 export const useSelectedTeenId = function useSelectedTeenId() {
+  let selectedTeenId;
   const items = [FamilyCenterStore];
-  return useStateFromStores.useStateFromStores(items, () => selectedTeenId.getSelectedTeenId());
+  const obj = useStateFromStores;
+  return obj.useStateFromStores(items, () => selectedTeenId.getSelectedTeenId());
 };

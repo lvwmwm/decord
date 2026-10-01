@@ -5,36 +5,56 @@
 // Exports: default
 
 // Module 8582 (DomainVerifyModal)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl7 from "intl" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import useNavigation from "useNavigation" /* 1485 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
 import DomainVerifyUtils from "DomainVerifyUtils" /* 8583 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let dependencyMap, importDefault;
+
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
 function DomainScreen(onClose) {
+  let closure_1;
+  let closure_3;
+  let closure_4;
+  let first;
+  let first1;
+  let first2;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let tmp4;
   onClose = onClose.onClose;
   first = undefined;
   _slicedToArray = undefined;
-  noop = undefined;
+  react = undefined;
   function verify() {
     closure_4(true);
-    closure_3(null);
+    let tmp2 = closure_3(null);
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: timestampProducer.CONNECTION(constants.DOMAIN, first), body: {}, rejectWithError: false };
+    const request = { url: metroRequire.CONNECTION(metroImportDefault.DOMAIN, first), body: {}, rejectWithError: false };
     const postResult = HTTP.post(request);
-    const nextPromise = HTTP.post(request).then(() => {
+    const nextPromise = postResult.then(() => {
       onClose();
     });
-    HTTP.post(request).then(() => {
-      onClose();
-    }).catch((error) => {
+    const catchPromise = nextPromise.catch((error) => {
       const body = error.body;
       let proof;
       if (body != null) {
@@ -46,6 +66,7 @@ function DomainScreen(onClose) {
       } else {
         const body2 = error.body;
         let message;
+        const tmp2 = closure_1_3;
         if (body2 != null) {
           const errors = body2.errors;
           if (errors != null) {
@@ -72,296 +93,363 @@ function DomainScreen(onClose) {
         if (!message) {
           message = error.message;
         }
-        closure_1_3(message);
+        tmp2(message);
       }
-    }).finally(() => {
+    });
+    catchPromise.finally(() => {
       closure_1_4(false);
     });
   }
   const tmp = closure_10();
-  importDefault = onClose(first[7]).useNavigation();
-  [first, obj4.onChangeText] = noop.useState("");
-  const tmp4 = _slicedToArray(noop.useState(null), 2);
-  _slicedToArray = tmp4[1];
-  const tmp5 = _slicedToArray(noop.useState(false), 2);
-  noop = tmp5[1];
-  const obj2 = { bottom: true, style: tmp.container, children: null };
-  const obj3 = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: null };
-  const intl = onClose(first[11]).intl;
-  obj3.children = intl.string(onClose(first[11]).t.NxPUqY);
-  const items = [closure_8(onClose(first[10]).Text, obj3), , ];
-  const obj4 = { autoFocus: true, style: tmp.input, label: null, placeholder: null, error: null, returnKeyType: "done", onChangeText: null, onSubmitEditing: null };
   let obj = onClose(first[7]);
-  const intl2 = onClose(first[11]).intl;
-  obj4.label = intl2.string(onClose(first[11]).t["4jIAa+"]);
-  obj4.placeholder = onClose(first[13]).EXAMPLE_DOMAIN;
-  obj4.error = tmp4[0];
-  obj4.onSubmitEditing = verify;
-  items[1] = closure_8(require("FreeFormInputGroup"), obj4);
-  const obj5 = { loading: tmp5[0], disabled: "" === first, text: null, onPress: null };
-  const intl3 = onClose(first[11]).intl;
-  obj5.text = intl3.string(onClose(first[11]).t.PDTjLN);
-  obj5.onPress = verify;
-  items[2] = closure_8(onClose(first[14]).Button, obj5);
-  obj2.children = items;
-  return closure_9(onClose(first[9]).SafeAreaPaddingView, obj2);
+  importDefault = obj.useNavigation();
+  [first, tmp4] = react.useState("");
+  [first1, _slicedToArray] = react.useState(null);
+  [first2, react] = react.useState(false);
+  const obj2 = { bottom: true, style: tmp.container, children: items };
+  const SafeAreaPaddingView = onClose(first[9]).SafeAreaPaddingView;
+  const obj3 = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: intl.string(onClose(first[11]).t.NxPUqY) };
+  const Text = onClose(first[10]).Text;
+  intl = onClose(first[11]).intl;
+  items = [closure_8(Text, obj3), , ];
+  const obj4 = { autoFocus: true, style: tmp.input, label: intl2.string(onClose(first[11]).t["4jIAa+"]), placeholder: onClose(first[13]).EXAMPLE_DOMAIN, error: first1, returnKeyType: "done", onChangeText: tmp4, onSubmitEditing: verify };
+  const tmp9 = require("FreeFormInputGroup");
+  intl2 = onClose(first[11]).intl;
+  items[1] = closure_8(tmp9, obj4);
+  const obj5 = { loading: first2, disabled: "" === first, text: intl3.string(onClose(first[11]).t.PDTjLN), onPress: verify };
+  const Button = onClose(first[14]).Button;
+  intl3 = onClose(first[11]).intl;
+  items[2] = closure_8(Button, obj5);
+  return closure_9(SafeAreaPaddingView, obj2);
 }
 function DNSProofScreen(proof) {
+  let Button;
+  let Button2;
+  let _undefined;
+  let _undefined2;
+  let c4;
+  let c5;
+  let closure_3;
+  let domain;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let items;
+  let items1;
+  let obj14;
+  let obj16;
+  let obj7;
+  let tmp5;
+  let tmp7;
   ({ onClose: require, domain } = proof);
   proof = proof.proof;
-  noop = undefined;
+  react = undefined;
   c5 = undefined;
-  const tmp = closure_10();
-  _slicedToArray = require("useNavigation").useNavigation();
-  const obj = require("useNavigation");
-  [tmp5, c4] = noop.useState(null);
-  const tmp4 = _slicedToArray(noop.useState(null), 2);
-  [tmp7, c5] = noop.useState(false);
-  const obj2 = { bottom: true, style: tmp.container, children: null };
-  const obj3 = { variant: "text-md/normal", children: null };
-  const intl = require("util").intl;
-  obj3.children = intl.string(require("util").t.cSURbq);
-  const items = [closure_8(require("Text/Text").Text, obj3), , , , ];
-  const obj4 = { style: tmp.dns, children: null };
-  const obj5 = { variant: "text-md/normal", children: null };
-  const intl2 = require("util").intl;
-  obj5.children = intl2.string(require("util").t.GL3q7k);
-  const items1 = [closure_8(require("Text/Text").Text, obj5), , , , , ];
-  const obj6 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: null };
-  const tmp6 = _slicedToArray(noop.useState(false), 2);
-  const tmp8 = closure_9;
-  obj6.children = require("DomainVerifyUtils").getDnsName(domain);
-  items1[1] = closure_8(require("Text/Text").Text, obj6);
-  const obj8 = { variant: "text-md/normal", children: null };
-  const intl3 = require("util").intl;
-  obj8.children = intl3.string(require("util").t.Ccmixu);
-  items1[2] = closure_8(require("Text/Text").Text, obj8);
-  items1[3] = closure_8(require("Text/Text").Text, { variant: "text-md/normal", selectable: true, style: tmp.code, children: "TXT" });
-  const obj10 = { variant: "text-md/normal", children: null };
-  const intl4 = require("util").intl;
-  obj10.children = intl4.string(require("util").t.PVLriT);
-  items1[4] = closure_8(require("Text/Text").Text, obj10);
-  items1[5] = closure_8(require("Text/Text").Text, { variant: "text-md/normal", selectable: true, style: tmp.code, children: proof });
-  obj4.children = items1;
+  let tmp = closure_10();
+  let obj = require("useNavigation");
+  _slicedToArray = obj.useNavigation();
+  [tmp5, c4] = react.useState(null);
+  _slicedToArray(react.useState(null), 2);
+  [tmp7, c5] = react.useState(false);
+  const obj2 = { bottom: true, style: tmp.container, children: items };
+  _slicedToArray(react.useState(false), 2);
+  const SafeAreaPaddingView = require("common/SafeAreaView").SafeAreaPaddingView;
+  const obj3 = { variant: "text-md/normal", children: intl.string(require("intl").t.cSURbq) };
+  const Text = require("Text/Text").Text;
+  intl = require("intl").intl;
+  items = [closure_8(Text, obj3), , , , ];
+  const obj4 = { style: tmp.dns, children: items1 };
+  const obj5 = { variant: "text-md/normal", children: intl2.string(require("intl").t.GL3q7k) };
+  const Text2 = require("Text/Text").Text;
+  intl2 = require("intl").intl;
+  items1 = [closure_8(Text2, obj5), , , , , ];
+  const obj6 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: obj7.getDnsName(domain) };
+  const Text3 = require("Text/Text").Text;
+  obj7 = require("DomainVerifyUtils");
+  items1[1] = closure_8(Text3, obj6);
+  const obj8 = { variant: "text-md/normal", children: intl3.string(require("intl").t.Ccmixu) };
+  const Text4 = require("Text/Text").Text;
+  intl3 = require("intl").intl;
+  items1[2] = closure_8(Text4, obj8);
+  const obj9 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: "TXT" };
+  items1[3] = closure_8(require("Text/Text").Text, obj9);
+  const obj10 = { variant: "text-md/normal", children: intl4.string(require("intl").t.PVLriT) };
+  const Text5 = require("Text/Text").Text;
+  intl4 = require("intl").intl;
+  items1[4] = closure_8(Text5, obj10);
+  const obj11 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: proof };
+  items1[5] = closure_8(require("Text/Text").Text, obj11);
   items[1] = closure_9(c5, obj4);
   let tmp9Result = null != tmp5;
+  const tmp8 = closure_9;
   if (tmp9Result) {
     const obj12 = { variant: "text-md/normal", color: "text-feedback-critical", style: tmp.error, children: tmp5 };
     tmp9Result = tmp9(tmp2(tmp3[10]).Text, obj12);
   }
   items[2] = tmp9Result;
-  const obj13 = { style: tmp.button, children: null };
-  const obj14 = { loading: tmp7, text: null, onPress: null };
-  const intl5 = tmp2(tmp3[11]).intl;
-  obj14.text = intl5.string(require("util").t["13ofGu"]);
-  obj14.onPress = function onPress() {
-    _undefined2(true);
-    _undefined(null);
-    const HTTP = HTTPUtils.HTTP;
-    const request = { url: timestampProducer.CONNECTION(constants.DOMAIN, domain), body: {}, rejectWithError: false };
-    const postResult = HTTP.post(request);
-    const nextPromise = HTTP.post(request).then(() => {
-      closure_1_0();
-    });
-    HTTP.post(request).then(() => {
-      closure_1_0();
-    }).catch((error) => {
-      const body = error.body;
-      let message;
-      if (body != null) {
-        const errors = body.errors;
-        if (errors != null) {
-          domain = errors.domain;
-          if (domain != null) {
-            const _errors = domain._errors;
-            if (_errors != null) {
-              const first = _errors[0];
-              if (first != null) {
-                message = first.message;
+  const obj13 = { style: tmp.button, children: closure_8(Button, obj14) };
+  obj14 = {
+    loading: tmp7,
+    text: intl5.string(require("intl").t["13ofGu"]),
+    onPress() {
+      let tmp = _undefined2(true);
+      _undefined(null);
+      const HTTP = HTTPUtils.HTTP;
+      const request = { url: metroRequire.CONNECTION(metroImportDefault.DOMAIN, domain), body: {}, rejectWithError: false };
+      const postResult = HTTP.post(request);
+      const nextPromise = postResult.then(() => {
+        closure_1_0();
+      });
+      const catchPromise = nextPromise.catch((error) => {
+        const body = error.body;
+        let message;
+        const tmp = _undefined;
+        if (body != null) {
+          const errors = body.errors;
+          if (errors != null) {
+            domain = errors.domain;
+            if (domain != null) {
+              const _errors = domain._errors;
+              if (_errors != null) {
+                const first = _errors[0];
+                if (first != null) {
+                  message = first.message;
+                }
               }
             }
           }
         }
-      }
-      if (!message) {
-        const body2 = error.body;
-        let message1;
-        if (body2 != null) {
-          message1 = body2.message;
+        if (!message) {
+          const body2 = error.body;
+          let message1;
+          if (body2 != null) {
+            message1 = body2.message;
+          }
+          message = message1;
         }
-        message = message1;
-      }
-      if (!message) {
-        message = error.message;
-      }
-      _undefined(message);
-    }).finally(() => {
-      _undefined2(false);
-    });
+        if (!message) {
+          message = error.message;
+        }
+        tmp(message);
+      });
+      catchPromise.finally(() => {
+        _undefined2(false);
+      });
+    }
   };
-  obj13.children = closure_8(require("components/Button/Button").Button, obj14);
+  Button = tmp2(tmp3[14]).Button;
+  intl5 = tmp2(tmp3[11]).intl;
   items[3] = closure_8(c5, obj13);
-  const obj15 = { style: tmp.button, children: null };
-  const obj16 = { variant: "secondary", text: null, onPress: null };
-  const intl6 = tmp2(tmp3[11]).intl;
-  obj16.text = intl6.string(require("util").t.CkfdNx);
-  obj16.onPress = function onPress() {
-    closure_3.push(constants.PROOF_HTTP, { proof, domain });
+  const obj15 = { style: tmp.button, children: closure_8(Button2, obj16) };
+  obj16 = {
+    variant: "secondary",
+    text: intl6.string(require("intl").t.CkfdNx),
+    onPress() {
+      const obj = { proof, domain };
+      closure_3.push(constants.PROOF_HTTP, obj);
+    }
   };
-  obj15.children = closure_8(require("components/Button/Button").Button, obj16);
+  Button2 = tmp2(tmp3[14]).Button;
+  intl6 = tmp2(tmp3[11]).intl;
   items[4] = closure_8(c5, obj15);
-  obj2.children = items;
-  return tmp8(require("common/SafeAreaView").SafeAreaPaddingView, obj2);
+  return tmp8(SafeAreaPaddingView, obj2);
 }
-function HTTPProofScreen(children) {
-  ({ onClose: require, domain } = children);
+function HTTPProofScreen(proof) {
+  let Button;
+  let Button2;
+  let _undefined;
+  let _undefined2;
+  let c3;
+  let c4;
+  let closure_2;
+  let domain;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let items;
+  let items1;
+  let obj12;
+  let obj14;
+  let obj7;
+  let tmp5;
+  let tmp7;
+  ({ onClose: require, domain } = proof);
   _slicedToArray = undefined;
-  noop = undefined;
-  const tmp = closure_10();
-  dependencyMap = useNavigation.useNavigation();
-  [tmp5, c3] = noop.useState(null);
-  const tmp4 = _slicedToArray(noop.useState(null), 2);
-  [tmp7, c4] = noop.useState(false);
-  const obj2 = { bottom: true, style: tmp.container, children: null };
-  const obj3 = { variant: "text-md/normal", children: null };
-  const intl = util.intl;
-  obj3.children = intl.string(util.t.p4ql7y);
-  const items = [closure_8(Text_Text.Text, obj3), , , , ];
-  const obj4 = { style: tmp.dns, children: null };
-  const obj5 = { variant: "text-md/normal", children: null };
-  const intl2 = util.intl;
-  obj5.children = intl2.string(util.t.GL3q7k);
-  const items1 = [closure_8(Text_Text.Text, obj5), , , ];
-  const obj6 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: null };
-  const tmp6 = _slicedToArray(noop.useState(false), 2);
-  const tmp8 = closure_9;
-  obj6.children = DomainVerifyUtils.getHttpName(domain);
-  items1[1] = closure_8(Text_Text.Text, obj6);
-  const obj8 = { variant: "text-md/normal", children: null };
-  const intl3 = util.intl;
-  obj8.children = intl3.string(util.t.PVLriT);
-  items1[2] = closure_8(Text_Text.Text, obj8);
-  items1[3] = closure_8(Text_Text.Text, { variant: "text-md/normal", selectable: true, style: tmp.code, children: children.proof });
-  obj4.children = items1;
+  react = undefined;
+  proof = proof.proof;
+  let tmp = closure_10();
+  const obj = useNavigation;
+  dependencyMap = obj.useNavigation();
+  [tmp5, c3] = react.useState(null);
+  _slicedToArray(react.useState(null), 2);
+  [tmp7, c4] = react.useState(false);
+  const obj2 = { bottom: true, style: tmp.container, children: items };
+  _slicedToArray(react.useState(false), 2);
+  const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
+  const obj3 = { variant: "text-md/normal", children: intl.string(intl7.t.p4ql7y) };
+  const Text = Text_Text.Text;
+  intl = intl7.intl;
+  items = [closure_8(Text, obj3), , , , ];
+  const obj4 = { style: tmp.dns, children: items1 };
+  const obj5 = { variant: "text-md/normal", children: intl2.string(intl7.t.GL3q7k) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl7.intl;
+  items1 = [closure_8(Text2, obj5), , , ];
+  const obj6 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: obj7.getHttpName(domain) };
+  const Text3 = Text_Text.Text;
+  obj7 = DomainVerifyUtils;
+  items1[1] = closure_8(Text3, obj6);
+  const obj8 = { variant: "text-md/normal", children: intl3.string(intl7.t.PVLriT) };
+  const Text4 = Text_Text.Text;
+  intl3 = intl7.intl;
+  items1[2] = closure_8(Text4, obj8);
+  const obj9 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: proof };
+  items1[3] = closure_8(Text_Text.Text, obj9);
   items[1] = closure_9(View, obj4);
   let tmp9Result = null != tmp5;
+  const tmp8 = closure_9;
   if (tmp9Result) {
     const obj10 = { variant: "text-md/normal", color: "text-feedback-critical", style: tmp.error, children: tmp5 };
     tmp9Result = tmp9(tmp2(4832).Text, obj10);
   }
   items[2] = tmp9Result;
-  const obj11 = { style: tmp.button, children: null };
-  const obj12 = { loading: tmp7, text: null, onPress: null };
-  const intl4 = tmp2(1115).intl;
-  obj12.text = intl4.string(util.t["13ofGu"]);
-  obj12.onPress = function onPress() {
-    _undefined2(true);
-    _undefined(null);
-    const HTTP = HTTPUtils.HTTP;
-    const request = { url: timestampProducer.CONNECTION(constants.DOMAIN, domain), body: {}, rejectWithError: false };
-    const postResult = HTTP.post(request);
-    const nextPromise = HTTP.post(request).then(() => {
-      closure_1_0();
-    });
-    HTTP.post(request).then(() => {
-      closure_1_0();
-    }).catch((error) => {
-      const body = error.body;
-      let message;
-      if (body != null) {
-        const errors = body.errors;
-        if (errors != null) {
-          domain = errors.domain;
-          if (domain != null) {
-            const _errors = domain._errors;
-            if (_errors != null) {
-              const first = _errors[0];
-              if (first != null) {
-                message = first.message;
+  const obj11 = { style: tmp.button, children: closure_8(Button, obj12) };
+  obj12 = {
+    loading: tmp7,
+    text: intl4.string(intl7.t["13ofGu"]),
+    onPress() {
+      let tmp = _undefined2(true);
+      _undefined(null);
+      const HTTP = HTTPUtils.HTTP;
+      const request = { url: metroRequire.CONNECTION(metroImportDefault.DOMAIN, domain), body: {}, rejectWithError: false };
+      const postResult = HTTP.post(request);
+      const nextPromise = postResult.then(() => {
+        closure_1_0();
+      });
+      const catchPromise = nextPromise.catch((error) => {
+        const body = error.body;
+        let message;
+        const tmp = _undefined;
+        if (body != null) {
+          const errors = body.errors;
+          if (errors != null) {
+            domain = errors.domain;
+            if (domain != null) {
+              const _errors = domain._errors;
+              if (_errors != null) {
+                const first = _errors[0];
+                if (first != null) {
+                  message = first.message;
+                }
               }
             }
           }
         }
-      }
-      if (!message) {
-        const body2 = error.body;
-        let message1;
-        if (body2 != null) {
-          message1 = body2.message;
+        if (!message) {
+          const body2 = error.body;
+          let message1;
+          if (body2 != null) {
+            message1 = body2.message;
+          }
+          message = message1;
         }
-        message = message1;
-      }
-      if (!message) {
-        message = error.message;
-      }
-      _undefined(message);
-    }).finally(() => {
-      _undefined2(false);
-    });
+        if (!message) {
+          message = error.message;
+        }
+        tmp(message);
+      });
+      catchPromise.finally(() => {
+        _undefined2(false);
+      });
+    }
   };
-  obj11.children = closure_8(components_Button_Button.Button, obj12);
+  Button = tmp2(5281).Button;
+  intl4 = tmp2(1115).intl;
   items[3] = closure_8(View, obj11);
-  const obj13 = { style: tmp.button, children: null };
-  const obj14 = { variant: "secondary", text: null, onPress: null };
-  const intl5 = tmp2(1115).intl;
-  obj14.text = intl5.string(util.t.RhJMVQ);
-  obj14.onPress = function onPress() {
-    closure_2.pop();
+  const obj13 = { style: tmp.button, children: closure_8(Button2, obj14) };
+  obj14 = {
+    variant: "secondary",
+    text: intl5.string(intl7.t.RhJMVQ),
+    onPress() {
+      closure_2.pop();
+    }
   };
-  obj13.children = closure_8(components_Button_Button.Button, obj14);
+  Button2 = tmp2(5281).Button;
+  intl5 = tmp2(1115).intl;
   items[4] = closure_8(View, obj13);
-  obj2.children = items;
-  return tmp8(common_SafeAreaView.SafeAreaPaddingView, obj2);
+  return tmp8(SafeAreaPaddingView, obj2);
 }
-const View = fn(17).View;
-const Constants = fn(1074);
-({ Endpoints: metroRequire, PlatformTypes: closure_7 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { padding: 16 }, description: { textAlign: "center" }, input: { paddingHorizontal: 0, paddingVertical: 0, marginVertical: 16 }, dns: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, padding: 8, marginTop: 16 }, error: { marginTop: 16 }, code: { fontFamily: "monospace", marginBottom: 4 }, button: { marginTop: 16 } };
-let closure_10 = createStyles.createStyles(obj2);
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const View = react_native.View;
+({ Endpoints: metroRequire, PlatformTypes: metroImportDefault } = Constants);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let obj = { container: { padding: 16 }, description: { textAlign: "center" }, input: { paddingHorizontal: 0, paddingVertical: 0, marginVertical: 16 }, dns: obj2, error: { marginTop: 16 }, code: { fontFamily: "monospace", marginBottom: 4 }, button: { marginTop: 16 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, padding: 8, marginTop: 16 };
+let closure_10 = createStyles.createStyles(obj);
 const constants2 = { DOMAIN: "DOMAIN", PROOF_DNS: "PROOF_DNS", PROOF_HTTP: "PROOF_HTTP" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/connections/native/DomainVerifyModal.tsx");
 
 export default function DomainVerifyModal(arg0) {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let obj3;
+  let obj5;
+  let obj7;
   if (arg0 == null) {
     throw new TypeError("Cannot destructure 'undefined' or 'null'.");
   } else {
     function onClose() {
-      return ModalActionCreatorsDefault.pop();
+      const arr = ModalActionCreatorsDefault;
+      return arr.pop();
     }
-    const obj = {};
-    const obj2 = { headerTitle: null, headerLeft: null, render: null };
-    const intl = onClose(1115).intl;
-    obj2.headerTitle = intl.string(onClose(1115).t["7lo8+e"]);
-    obj2.headerLeft = onClose(5936).getHeaderBackButton(onClose);
-    obj2.render = function render() {
-      return React6(DomainScreen, { onClose });
+    let obj = {};
+    const DOMAIN = constants2.DOMAIN;
+    const obj2 = {
+      headerTitle: intl.string(onClose(1115).t["7lo8+e"]),
+      headerLeft: obj3.getHeaderBackButton(onClose),
+      render() {
+          const obj = { onClose };
+          return metroImportAll(DomainScreen, obj);
+        }
     };
-    obj[constants2.DOMAIN] = obj2;
-    const obj4 = { headerTitle: null, headerLeft: null, render: null };
-    const intl2 = onClose(1115).intl;
-    obj4.headerTitle = intl2.string(onClose(1115).t["7lo8+e"]);
-    const obj3 = onClose(5936);
-    obj4.headerLeft = onClose(5936).getHeaderBackButton(onClose);
-    obj4.render = function render(domain) {
-      return React6(DNSProofScreen, { domain: domain.domain, proof: domain.proof, onClose });
+    intl = onClose(1115).intl;
+    obj[DOMAIN] = obj2;
+    obj3 = onClose(5936);
+    const PROOF_DNS = constants2.PROOF_DNS;
+    const obj4 = {
+      headerTitle: intl2.string(onClose(1115).t["7lo8+e"]),
+      headerLeft: obj5.getHeaderBackButton(onClose),
+      render(domain) {
+          const obj = { domain: domain.domain, proof: domain.proof, onClose };
+          return metroImportAll(DNSProofScreen, obj);
+        }
     };
-    obj[constants2.PROOF_DNS] = obj4;
-    const obj6 = { headerTitle: null, headerLeft: null, render: null };
-    const intl3 = onClose(1115).intl;
-    obj6.headerTitle = intl3.string(onClose(1115).t["7lo8+e"]);
-    const obj5 = onClose(5936);
-    obj6.headerLeft = onClose(5936).getHeaderBackButton(onClose);
-    obj6.render = function render(domain) {
-      return React6(HTTPProofScreen, { domain: domain.domain, proof: domain.proof, onClose });
+    intl2 = onClose(1115).intl;
+    obj[PROOF_DNS] = obj4;
+    obj5 = onClose(5936);
+    const PROOF_HTTP = constants2.PROOF_HTTP;
+    const obj6 = {
+      headerTitle: intl3.string(onClose(1115).t["7lo8+e"]),
+      headerLeft: obj7.getHeaderBackButton(onClose),
+      render(domain) {
+          const obj = { domain: domain.domain, proof: domain.proof, onClose };
+          return metroImportAll(HTTPProofScreen, obj);
+        }
     };
-    obj[constants2.PROOF_HTTP] = obj6;
-    const obj8 = { screens: obj, initialRouteName: constants2.DOMAIN, headerBackTitle: null };
-    const intl4 = onClose(1115).intl;
-    obj8.headerBackTitle = intl4.string(onClose(1115).t["13/7kX"]);
-    return closure_8(onClose(6421).Navigator, obj8);
+    intl3 = onClose(1115).intl;
+    obj[PROOF_HTTP] = obj6;
+    obj7 = onClose(5936);
+    const obj8 = { screens: obj, initialRouteName: constants2.DOMAIN, headerBackTitle: intl4.string(onClose(1115).t["13/7kX"]) };
+    const Navigator = onClose(6421).Navigator;
+    intl4 = onClose(1115).intl;
+    return closure_8(Navigator, obj8);
   }
 };

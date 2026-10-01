@@ -5,16 +5,17 @@
 // Exports: default
 
 // Module 14479 (AuthorizedAppPermissionsScreen)
+import Fragment from "Fragment" /* 21 */;
 import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6415 */;
 import UserSettingsAuthedAppPermissionsDefault from "UserSettingsAuthedAppPermissions" /* 14480 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/authorized_apps/native/AuthorizedAppPermissionsScreen.tsx");
 
 export default function AuthorizedAppPermissionsScreen() {
-  const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
+  const obj = useSettingNavigationRoute;
+  const settingNavigationRoute = obj.useSettingNavigationRoute();
   return jsx(UserSettingsAuthedAppPermissionsDefault, { oauth2Token: settingNavigationRoute.params.oauth2Token });
 };

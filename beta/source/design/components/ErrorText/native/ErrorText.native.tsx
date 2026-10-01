@@ -6,31 +6,32 @@
 
 // Module 6027 (ErrorText)
 import shared from "shared" /* 4685 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const size = fn(2);
+let c3;
+let closure_4;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
 const result = size.fileFinishedImporting("design/components/ErrorText/native/ErrorText.native.tsx");
 
 export const ErrorText = function ErrorText(children) {
+  let items1;
   children = children.children;
   let nodeText;
-  nodeText = nodeText(4533).getNodeText(children);
+  const style = children.style;
+  const obj = nodeText(4533);
+  nodeText = obj.getNodeText(children);
   const items = [nodeText];
-  const effect = noop.useEffect(() => {
-    let tmp2 = null != nodeText;
-    if (tmp2) {
-      tmp2 = "" !== tmp;
-    }
+  const effect = react.useEffect(() => {
+    const tmp2 = null != nodeText && "" !== tmp;
     if (tmp2) {
       const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
-      AccessibilityAnnouncer.announce(tmp);
+      AccessibilityAnnouncer.announce(nodeText);
     }
   }, items);
-  const obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", style: children.style, children: null };
-  const items1 = [closure_3(nodeText(6028).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(4832).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })];
-  obj2.children = items1;
-  return closure_4(nodeText(5279).Stack, obj2);
+  const obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", style, children: items1 };
+  const Stack = nodeText(5279).Stack;
+  items1 = [closure_3(nodeText(6028).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(4832).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })];
+  return closure_4(Stack, obj2);
 };

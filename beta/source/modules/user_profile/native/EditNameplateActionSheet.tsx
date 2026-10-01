@@ -5,102 +5,135 @@
 // Exports: default
 
 // Module 14193 (EditNameplateActionSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
+import NameplateRecord from "NameplateRecord" /* 1972 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7609 */;
 import useShopProductItems from "useShopProductItems" /* 7616 */;
 import EditNameplateSection from "EditNameplateSection" /* 14195 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6977 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let BottomSheet, _require;
+
+let c10;
+let closure_12;
+let obj2;
+let obj3;
+let size;
+let unpackModuleId;
 function EditNameplateInner(user) {
+  let intl;
+  let intl2;
+  let isFetching;
+  let nameplate;
+  let nameplate1;
+  let selectedNameplate;
+  let setSelectedNameplate;
+  let skuId1;
+  let skuId2;
   user = user.user;
   ({ selectedNameplate, setSelectedNameplate } = user);
   const guildId = user.guildId;
-  const getOrFetchCollectiblesCategoriesAndPurchases = user(guildId[20]).useGetOrFetchCollectiblesCategoriesAndPurchases();
-  const obj = user(guildId[20]);
+  const tmp = user;
+  let obj = user(guildId[20]);
+  const getOrFetchCollectiblesCategoriesAndPurchases = obj.useGetOrFetchCollectiblesCategoriesAndPurchases();
   const items = [CollectiblesPurchaseStore];
-  const stateFromStores = user(guildId[21]).useStateFromStores(items, () => isFetching.isFetching);
   const obj2 = user(guildId[21]);
-  const tmp5 = setSelectedNameplate;
-  const tmp6 = setSelectedNameplate(guildId[22])();
+  const stateFromStores = obj2.useStateFromStores(items, () => isFetching.isFetching);
   const items1 = [GuildMemberStore];
-  const stateFromStores1 = user(guildId[21]).useStateFromStores(items1, () => {
+  const tmp6 = setSelectedNameplate(guildId[22])();
+  const obj3 = user(guildId[21]);
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => {
     let member = null;
     if (null != guildId) {
       member = GuildMemberStore.getMember(tmp, user.id);
     }
     return member;
   });
-  const obj3 = user(guildId[21]);
-  const obj5 = { pendingValue: selectedNameplate, userValue: null, guildValue: null, guildId: null };
-  let nameplate;
+  const obj4 = { pendingValue: selectedNameplate, userValue: nameplate, guildValue: nameplate1, guildId };
+  nameplate = undefined;
+  const getProfilePreviewValue = user(guildId[23]).getProfilePreviewValue;
+  user(guildId[23]);
+  const tmp5 = setSelectedNameplate;
   if (user != null) {
     const collectibles = user.collectibles;
     if (collectibles != null) {
       nameplate = collectibles.nameplate;
     }
   }
-  obj5.userValue = nameplate;
-  let nameplate1;
+  nameplate1 = undefined;
   if (stateFromStores1 != null) {
     const collectibles2 = stateFromStores1.collectibles;
     if (collectibles2 != null) {
       nameplate1 = collectibles2.nameplate;
     }
   }
-  obj5.guildValue = nameplate1;
-  obj5.guildId = guildId;
-  const profilePreviewValue = user(guildId[23]).getProfilePreviewValue(obj5);
+  const profilePreviewValue = getProfilePreviewValue(obj4);
   const items2 = [setSelectedNameplate, guildId];
   let skuId;
-  const callback = noop.useCallback((arg0) => {
+  const callback = react.useCallback((arg0) => {
+    let items;
+    let selectedSkuId;
     ({ items, size, selectedSkuId } = arg0);
-    return closure_2_10(EditNameplateSection.EditNameplateRow, { items, size, selectedSkuId, setSelectedNameplate, guildId });
+    const obj = { items, size, selectedSkuId, setSelectedNameplate, guildId };
+    return authStore(EditNameplateSection.EditNameplateRow, obj);
   }, items2);
+  const tmp13 = closure_11;
+  const tmp14 = closure_12;
+  const tmp16 = NameplateActionSheetPreview;
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
   }
-  const items3 = [closure_10(NameplateActionSheetPreview, { previewSkuId: skuId, user, guildId }), , ];
-  const obj6 = { user, previewSkuId: null, nitroJoinCTA: null, nitroUpgradeCTA: null };
-  let skuId1;
-  const obj4 = user(guildId[23]);
-  const tmp12 = closure_11;
-  const tmp13 = closure_12;
+  const items3 = [closure_10(tmp16, { previewSkuId: skuId, user, guildId }), , ];
+  const obj5 = { user, previewSkuId: skuId1, nitroJoinCTA: intl.string(tmp(guildId[18]).t["V+IE93"]), nitroUpgradeCTA: intl2.string(tmp(guildId[18]).t.a6SrkR) };
+  skuId1 = undefined;
+  const tmp5Result = tmp5(guildId[25]);
   if (profilePreviewValue != null) {
     skuId1 = profilePreviewValue.skuId;
   }
-  obj6.previewSkuId = skuId1;
-  const intl = tmp(tmp2[18]).intl;
-  obj6.nitroJoinCTA = intl.string(user(guildId[18]).t["V+IE93"]);
-  const intl2 = tmp(tmp2[18]).intl;
-  obj6.nitroUpgradeCTA = intl2.string(user(guildId[18]).t.a6SrkR);
-  items3[1] = closure_10(tmp5(guildId[25]), obj6);
-  const obj7 = { sections: tmp6, selectedSkuId: null, renderRow: null, isFetching: null };
-  let skuId2;
+  intl = tmp(tmp2[18]).intl;
+  intl2 = tmp(tmp2[18]).intl;
+  items3[1] = closure_10(tmp5Result, obj5);
+  const obj6 = { sections: tmp6, selectedSkuId: skuId2, renderRow: callback, isFetching: stateFromStores };
+  skuId2 = undefined;
+  const EditCollectiblesPickerList = tmp(tmp2[26]).EditCollectiblesPickerList;
   if (selectedNameplate != null) {
     skuId2 = selectedNameplate.skuId;
   }
-  const obj8 = { children: null };
-  obj7.selectedSkuId = skuId2;
-  obj7.renderRow = callback;
-  obj7.isFetching = stateFromStores;
-  items3[2] = closure_10(user(guildId[26]).EditCollectiblesPickerList, obj7);
-  obj8.children = items3;
-  return tmp12(tmp13, obj8);
+  const obj7 = { children: items3 };
+  items3[2] = closure_10(EditCollectiblesPickerList, obj6);
+  return tmp13(tmp14, obj7);
 }
 function NameplateActionSheetPreview(arg0) {
+  let _undefined;
+  let formatToPlainStringResult;
+  let guildId;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let previewSkuId;
+  let tmp10;
+  let user;
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_13();
+  let tmp3 = dependencyMap;
   const tmp4 = purchase(7618)(previewSkuId);
   const product = tmp4.product;
   _require = product;
   purchase = tmp4.purchase;
   const items = [purchase, product];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     let first;
     if (_undefined != null) {
       first = _undefined.items[0];
@@ -118,115 +151,123 @@ function NameplateActionSheetPreview(arg0) {
     }
     return tmp3;
   }, items);
-  const obj = { style: tmp.nameplatePreviewContainer, accessibilityLabel: null, accessibilityRole: "image", accessible: true, children: null };
+  const obj = { style: tmp.nameplatePreviewContainer, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "image", accessible: true, children: items3 };
   if (null != memo) {
-    const intl2 = require("util").intl;
+    const intl2 = require("intl").intl;
     const obj2 = { a11y_text: memo.label };
-    let formatToPlainStringResult = intl2.formatToPlainString(require("util").t.YJig7C, obj2);
-    let tmp10 = _require;
+    formatToPlainStringResult = intl2.formatToPlainString(require("intl").t.YJig7C, obj2);
+    tmp10 = _require;
   } else {
-    const intl = require("util").intl;
-    formatToPlainStringResult = intl.string(require("util").t.aqlsGS);
+    const intl = require("intl").intl;
+    formatToPlainStringResult = intl.string(require("intl").t.aqlsGS);
     tmp10 = _require;
   }
-  obj.accessibilityLabel = formatToPlainStringResult;
-  const obj3 = { style: tmp.nameplateGradientContainer, children: null };
-  const items1 = [closure_10(tmp10(8280).NameplateDummyUserPreview, { width: 100 }), closure_10(tmp10(8280).NameplateDummyUserPreview, { width: 140 }), ];
-  const obj4 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.1 }, end: { x: 0, y: 0.8 }, colors: null };
-  const items2 = [tmp.nameplatePreviewGradient.color, "" + tmp.nameplatePreviewGradient.color + "00"];
-  obj4.colors = items2;
-  items1[2] = closure_10(purchase(5293), obj4);
-  obj3.children = items1;
-  const items3 = [closure_11(View, obj3), closure_10(tmp10(10790).NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
-  const obj5 = { style: tmp.nameplateGradientContainer, children: null };
-  const items4 = [closure_10(tmp10(8280).NameplateDummyUserPreview, { width: 140 }), closure_10(tmp10(8280).NameplateDummyUserPreview, { width: 100 }), ];
-  const obj6 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.2 }, end: { x: 0, y: 0.9 }, colors: null };
+  const obj3 = { style: tmp.nameplateGradientContainer, children: items1 };
+  items1 = [closure_10(tmp10(8280).NameplateDummyUserPreview, { width: 100 }), closure_10(tmp10(8280).NameplateDummyUserPreview, { width: 140 }), ];
+  const obj4 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.1 }, end: { x: 0, y: 0.8 }, colors: items2 };
+  items2 = [tmp.nameplatePreviewGradient.color, ];
   const tmp2Result = purchase(5293);
-  const items5 = ["" + tmp.nameplatePreviewGradient.color + "00", tmp.nameplatePreviewGradient.color];
-  obj6.colors = items5;
-  items4[2] = closure_10(purchase(5293), obj6);
-  obj5.children = items4;
+  items2[1] = "" + tmp.nameplatePreviewGradient.color + "00";
+  items1[2] = closure_10(tmp2Result, obj4);
+  items3 = [closure_11(View, obj3), closure_10(tmp10(10790).NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
+  const obj5 = { style: tmp.nameplateGradientContainer, children: items4 };
+  items4 = [closure_10(tmp10(8280).NameplateDummyUserPreview, { width: 140 }), closure_10(tmp10(8280).NameplateDummyUserPreview, { width: 100 }), ];
+  const obj6 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.2 }, end: { x: 0, y: 0.9 }, colors: items5 };
+  items5 = [, ];
+  const tmp2Result2 = purchase(5293);
+  items5[0] = "" + tmp.nameplatePreviewGradient.color + "00";
+  items5[1] = tmp.nameplatePreviewGradient.color;
+  items4[2] = closure_10(tmp2Result2, obj6);
   items3[2] = closure_11(View, obj5);
-  obj.children = items3;
   return closure_11(View, obj);
 }
-const View = fn(17).View;
-const isNameplateRecord = fn(1972).isNameplateRecord;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, bounceOffset: { position: "absolute", top: -250, height: 250, right: 0, left: 0 }, title: null, nameplatePreviewContainer: null, nameplateGradientContainer: null, nameplatePreviewGradient: null };
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj2.title = { alignSelf: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };
-obj2.nameplatePreviewContainer = { width: "80%", alignSelf: "center", justifyContent: "center", alignItems: "center" };
-obj2.nameplateGradientContainer = { width: "100%" };
-let size = { position: "absolute", width: "100%", height: "100%", color: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj2.nameplatePreviewGradient = size;
-let closure_13 = createStyles.createStyles(obj2);
-size = fn(2);
+const View = react_native.View;
+const isNameplateRecord = NameplateRecord.isNameplateRecord;
+const AnalyticEvents = Constants.AnalyticEvents;
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, bounceOffset: { position: "absolute", top: -250, height: 250, right: 0, left: 0 }, title: obj3, nameplatePreviewContainer: { width: "80%", alignSelf: "center", justifyContent: "center", alignItems: "center" }, nameplateGradientContainer: { width: "100%" }, nameplatePreviewGradient: size };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createStyles = createStyles.createStyles;
+obj3 = { alignSelf: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };
+size = { position: "absolute", width: "100%", height: "100%", color: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let closure_13 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/EditNameplateActionSheet.tsx");
 
 export default function EditNameplateActionSheet(arg0) {
+  let currentNameplate;
+  let first;
+  let guildId;
+  let intl;
+  let items1;
+  let items2;
+  let obj4;
+  let skuId;
+  let skuId1;
+  let tmp13;
+  let tmp6;
+  let tmp8;
+  let user;
   ({ user, currentNameplate, guildId } = arg0);
+  first = undefined;
   const tmp = closure_13();
-  const tmp4 = _slicedToArray(noop.useState(undefined), 2);
-  const first = tmp4[0];
-  let tmp6 = currentNameplate;
-  if (undefined !== first) {
-    tmp6 = first;
-  }
   let obj = guildId(7615);
-  const tmp7 = first;
-  const analyticsLocations = first(6583)(first(6603).EDIT_NAMEPLATE_SHEET).analyticsLocations;
+  let obj2 = react;
+  const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
+  [first, tmp6] = react.useState(undefined);
+  let tmp7 = currentNameplate;
+  if (undefined !== first) {
+    tmp7 = first;
+  }
+  const tmp9 = first(6583);
+  const analyticsLocations = tmp9(first(6603).EDIT_NAMEPLATE_SHEET).analyticsLocations;
   const items = [first, guildId];
   const callback = obj2.useCallback(() => {
-    const obj = first(1241);
-    obj.track(constants.OPEN_POPOUT, { type: first(6603).EDIT_NAMEPLATE_SHEET, is_fullscreen: true });
+    const obj = first(dependencyMap[13]);
+    const obj2 = { type: first(dependencyMap[12]).EDIT_NAMEPLATE_SHEET, is_fullscreen: true };
+    obj.track(constants.OPEN_POPOUT, obj2);
   }, []);
   const callback1 = obj2.useCallback((arg0) => {
-    const obj2 = { guildId, nameplate: null };
-    const obj = UserProfileSettingsActionCreators;
-    let purchasedItem = useShopProductItems.getPurchasedItem(arg0, "firstNameplate");
+    let purchasedItem;
+    const obj = { guildId, nameplate: purchasedItem };
+    const setPendingChanges = UserProfileSettingsActionCreators.setPendingChanges;
+    UserProfileSettingsActionCreators;
+    const obj2 = useShopProductItems;
+    purchasedItem = obj2.getPurchasedItem(arg0, "firstNameplate");
     if (purchasedItem == null) {
       purchasedItem = first;
     }
     if (purchasedItem == null) {
       purchasedItem = null;
     }
-    obj2.nameplate = purchasedItem;
-    obj.setPendingChanges(obj2);
+    setPendingChanges(obj);
   }, items);
-  const obj3 = { value: analyticsLocations, children: null };
-  const obj4 = { scrollable: true, ref: obj.useBottomSheetRef().bottomSheetRef, onExpand: callback, startExpanded: true, children: null };
-  const obj5 = { style: tmp.container, children: null };
-  const items1 = [closure_10(View, { style: tmp.bounceOffset }), , ];
-  const obj7 = { variant: "redesign/heading-18/bold", style: tmp.title, accessibilityRole: "header", children: null };
-  const intl = tmp2(1115).intl;
-  obj7.children = intl.string(guildId(1115).t.BwdeM1);
-  items1[1] = closure_10(guildId(4832).Text, obj7);
-  items1[2] = closure_10(EditNameplateInner, { user, selectedNameplate: tmp6, setSelectedNameplate: tmp4[1], guildId });
-  obj5.children = items1;
-  const items2 = [closure_11(View, obj5), ];
-  const obj8 = { user, currentSkuId: null, selectedSkuId: null, onApply: null, analyticsLocations: null, analyticsSource: null };
-  let skuId;
+  const obj3 = { value: analyticsLocations, children: tmp13(BottomSheet, obj4) };
+  const AnalyticsLocationProvider = tmp2(6583).AnalyticsLocationProvider;
+  obj4 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, children: items2 };
+  const obj5 = { style: tmp.container, children: items1 };
   const obj6 = { style: tmp.bounceOffset };
-  const tmp12 = closure_11;
-  const tmp8 = first(6583);
+  BottomSheet = tmp2(6571).BottomSheet;
+  items1 = [closure_10(View, obj6), , ];
+  const obj7 = { variant: "redesign/heading-18/bold", style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(1115).t.BwdeM1) };
+  const Text = tmp2(4832).Text;
+  intl = tmp2(1115).intl;
+  items1[1] = closure_10(Text, obj7);
+  items1[2] = closure_10(EditNameplateInner, { user, selectedNameplate: tmp7, setSelectedNameplate: tmp6, guildId });
+  items2 = [closure_11(View, obj5), ];
+  const obj8 = { user, currentSkuId: skuId, selectedSkuId: skuId1, onApply: callback1, analyticsLocations, analyticsSource: tmp8(6603).EDIT_NAMEPLATE_SHEET };
+  skuId = undefined;
+  tmp13 = closure_11;
+  const tmp14 = first(7617);
+  tmp8 = first;
   if (currentNameplate != null) {
     skuId = currentNameplate.skuId;
   }
-  obj8.currentSkuId = skuId;
-  let skuId1;
-  if (tmp6 != null) {
-    skuId1 = tmp6.skuId;
+  skuId1 = undefined;
+  if (tmp7 != null) {
+    skuId1 = tmp7.skuId;
   }
-  obj8.selectedSkuId = skuId1;
-  obj8.onApply = callback1;
-  obj8.analyticsLocations = analyticsLocations;
-  obj8.analyticsSource = tmp7(6603).EDIT_NAMEPLATE_SHEET;
-  items2[1] = closure_10(first(7617), obj8);
-  obj4.children = items2;
-  obj3.children = tmp12(guildId(6571).BottomSheet, obj4);
-  return closure_10(guildId(6583).AnalyticsLocationProvider, obj3);
+  items2[1] = closure_10(tmp14, obj8);
+  return closure_10(AnalyticsLocationProvider, obj3);
 };

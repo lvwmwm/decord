@@ -6,21 +6,23 @@
 
 // Module 6044 (useBottomSheetKeyboardHandling)
 import BottomSheetModal from "BottomSheetModal" /* 6045 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("design/components/Sheet/native/useBottomSheetKeyboardHandling.tsx");
 
 export default function useBottomSheetKeyboardHandling(onFocus) {
   onFocus = onFocus.onFocus;
   const onBlur = onFocus.onBlur;
-  const bottomSheetInternal = BottomSheetModal.useBottomSheetInternal(true);
+  let obj = BottomSheetModal;
+  const bottomSheetInternal = obj.useBottomSheetInternal(true);
   const items = [bottomSheetInternal, onBlur, onFocus];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    let obj;
     if (null == bottomSheetInternal) {
+      const tmp2 = onBlur;
+      obj = { onFocus, onBlur };
       const obj2 = { onFocus, onBlur };
-      let obj = obj2;
     } else {
       obj = {
         onFocus(arg0) {

@@ -4,11 +4,13 @@
 // Dependencies: [4750, 1235, 2099, 1074, 13240, 4865, 13241, 4693, 4692, 6043, 13243, 1094, 510, 1241, 504, 573, 2]
 
 // Module 13239 (RequestReviewStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 1074 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;
 import TimeUtils from "TimeUtils" /* 4865 */;
 import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6043 */;
@@ -18,32 +20,35 @@ import InstallTime from "InstallTime" /* 13243 */;
 import ExperimentStore from "ExperimentStore" /* 4750 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function showReviewRequestModal() {
+  let timeout;
   obj = RootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   let tmp3 = null != rootNavigationRef && rootNavigationRef.isReady();
   if (tmp3) {
-    tmp3 = null != tmp(4692).coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
-    const tmpResult = tmp(4692);
+    const tmpResult = NavigationRouteUtils;
+    tmp3 = null != tmpResult.coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
   }
-  const keyboardIsOpen = useKeyboardIsOpen.getKeyboardIsOpen();
+  const tmpResult2 = useKeyboardIsOpen;
+  const keyboardIsOpen = tmpResult2.getKeyboardIsOpen();
   const tmp5 = null != SelectedChannelStore.getVoiceChannelId();
   if (tmp3) {
     if (!keyboardIsOpen) {
       if (!tmp5) {
-        AnalyticsUtilsDefault.track(AnalyticEvents.REVIEW_REQUEST_SHOW_ATTEMPTED);
+        const obj5 = AnalyticsUtilsDefault;
+        obj5.track(AnalyticEvents.REVIEW_REQUEST_SHOW_ATTEMPTED);
         obj.revision = 1;
         const Storage = tmp(510).Storage;
-        const result = Storage.set(RequestReviewStore, obj);
+        const result = Storage.set(RequestReviewStore_str, obj);
         requestReviewModalDefault();
         closure_10 = false;
       }
     }
   }
-  const tmpResult2 = useKeyboardIsOpen;
-  AnalyticsUtilsDefault.track(AnalyticEvents.REVIEW_REQUEST_DEFERRED, { is_keyboard_open: keyboardIsOpen, is_in_voice: tmp5, is_viewing_chat: tmp3 });
+  const obj6 = AnalyticsUtilsDefault;
+  obj6.track(AnalyticEvents.REVIEW_REQUEST_DEFERRED, { is_keyboard_open: keyboardIsOpen, is_in_voice: tmp5, is_viewing_chat: tmp3 });
   if (-1 !== timeout) {
     const _clearTimeout = clearTimeout;
     clearTimeout(timeout);
@@ -52,13 +57,10 @@ function showReviewRequestModal() {
   const RequestReviewNoTTIExperiment = tmp(13240).RequestReviewNoTTIExperiment;
   let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
   let tmp18 = closure_10;
-  if (closure_10) {
+  if (tmp18) {
     if (!skipTTICheck) {
-      let tmp20 = undefined !== tti;
-      if (tmp20) {
-        tmp20 = tmp19 < 2300;
-      }
-      skipTTICheck = tmp20;
+      skipTTICheck = undefined !== tti && tmp19 < 2300;
+      const tmp20 = undefined !== tti && tmp19 < 2300;
     }
     tmp18 = skipTTICheck;
   }
@@ -74,32 +76,37 @@ function handleConnectionClosedOrInterrupted() {
     c11 = -1;
   }
 }
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const RequestReviewStore = "RequestReviewStore";
+const AnalyticEvents = Constants.AnalyticEvents;
+const RequestReviewStore_str = "RequestReviewStore";
 let obj = { revision: 0 };
 let closure_10 = false;
 let c11 = -1;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class RequestReviewStore extends Store {
-}
-RequestReviewStore.prototype["initialize"] = function initialize() {
-  const Storage = Storage2.Storage;
-  obj = Storage.get(RequestReviewStore);
-  if (obj == null) {
-    obj = { revision: 0 };
+  initialize() {
+    const Storage = Storage2.Storage;
+    obj = Storage.get(RequestReviewStore_str);
+    if (obj == null) {
+      obj = { revision: 0 };
+    }
+    this.waitFor(ApexExperimentStore, ExperimentStore, SelectedChannelStore);
   }
-  this.waitFor(ApexExperimentStore, ExperimentStore, SelectedChannelStore);
-};
+}
+const prototype = RequestReviewStore.prototype;
 RequestReviewStore.displayName = "RequestReviewStore";
 obj = {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
+    let timeout;
     guilds = guilds.guilds;
+    const user = guilds.user;
     obj = InstallTime;
-    let tmp3 = obj.getFirstInstallTimeElapsed({ from: "authed", unit: TimeUtils.TimeUnits.DAYS }) >= 10;
+    const obj2 = { from: "authed", unit: TimeUtils.TimeUnits.DAYS };
+    let tmp3 = obj.getFirstInstallTimeElapsed(obj2) >= 10;
     const someResult = guilds.some((member_count) => member_count.member_count >= 5);
     if (obj.revision < 1) {
-      const obj4 = { is_hfu: true, is_install_old_enough: tmp3, is_in_large_enough_guild: someResult, is_account_verified: tmp5 };
-      AnalyticsUtilsDefault.track(AnalyticEvents.REVIEW_REQUEST_ELIGIBILITY_CHECKED, obj4);
+      const obj4 = { is_hfu: true, is_install_old_enough: tmp3, is_in_large_enough_guild: someResult, is_account_verified: true === user.verified };
+      const obj3 = AnalyticsUtilsDefault;
+      obj3.track(AnalyticEvents.REVIEW_REQUEST_ELIGIBILITY_CHECKED, obj4);
     }
     if (tmp3) {
       tmp3 = tmp5;
@@ -119,13 +126,10 @@ obj = {
     const RequestReviewNoTTIExperiment = tmp(13240).RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp13 = closure_10;
-    if (closure_10) {
+    if (tmp13) {
       if (!skipTTICheck) {
-        let tmp15 = undefined !== tti;
-        if (tmp15) {
-          tmp15 = tmp14 < 2300;
-        }
-        skipTTICheck = tmp15;
+        skipTTICheck = undefined !== tti && tmp14 < 2300;
+        const tmp15 = undefined !== tti && tmp14 < 2300;
       }
       tmp13 = skipTTICheck;
     }
@@ -135,6 +139,7 @@ obj = {
     }
   },
   CONNECTION_RESUMED: function handleConnectionResumed() {
+    let timeout;
     if (-1 !== timeout) {
       const _clearTimeout = clearTimeout;
       clearTimeout(timeout);
@@ -143,13 +148,10 @@ obj = {
     const RequestReviewNoTTIExperiment = RequestReviewNoTTIExperiment2.RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp6 = closure_10;
-    if (closure_10) {
+    if (tmp6) {
       if (!skipTTICheck) {
-        let tmp8 = undefined !== tti;
-        if (tmp8) {
-          tmp8 = tmp7 < 2300;
-        }
-        skipTTICheck = tmp8;
+        skipTTICheck = undefined !== tti && tmp7 < 2300;
+        const tmp8 = undefined !== tti && tmp7 < 2300;
       }
       tmp6 = skipTTICheck;
     }
@@ -161,6 +163,7 @@ obj = {
   CONNECTION_CLOSED: handleConnectionClosedOrInterrupted,
   CONNECTION_INTERRUPTED: handleConnectionClosedOrInterrupted,
   TTI_RECORDED: function handleTTIRecorded(tti) {
+    let timeout;
     tti = tti.tti;
     if (-1 !== timeout) {
       const _clearTimeout = clearTimeout;
@@ -170,13 +173,10 @@ obj = {
     const RequestReviewNoTTIExperiment = RequestReviewNoTTIExperiment2.RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp6 = closure_10;
-    if (closure_10) {
+    if (tmp6) {
       if (!skipTTICheck) {
-        let tmp8 = undefined !== tti;
-        if (tmp8) {
-          tmp8 = tmp7 < 2300;
-        }
-        skipTTICheck = tmp8;
+        skipTTICheck = undefined !== tti && tmp7 < 2300;
+        const tmp8 = undefined !== tti && tmp7 < 2300;
       }
       tmp6 = skipTTICheck;
     }
@@ -186,6 +186,7 @@ obj = {
     }
   },
   APP_STATE_UPDATE: function handleAppStateUpdate(state) {
+    let timeout;
     if (state.state === ConstantsIOS.AppStates.ACTIVE) {
       if (-1 !== timeout) {
         const _clearTimeout = clearTimeout;
@@ -195,13 +196,10 @@ obj = {
       const RequestReviewNoTTIExperiment = tmp(13240).RequestReviewNoTTIExperiment;
       let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
       let tmp8 = closure_10;
-      if (closure_10) {
+      if (tmp8) {
         if (!skipTTICheck) {
-          let tmp10 = undefined !== tti;
-          if (tmp10) {
-            tmp10 = tmp9 < 2300;
-          }
-          skipTTICheck = tmp10;
+          skipTTICheck = undefined !== tti && tmp9 < 2300;
+          const tmp10 = undefined !== tti && tmp9 < 2300;
         }
         tmp8 = skipTTICheck;
       }
@@ -217,7 +215,6 @@ obj = {
   }
 };
 const requestReviewStore = new RequestReviewStore(DispatcherDefault, obj);
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/feedback/native/RequestReviewStore.tsx");
 
 export default requestReviewStore;

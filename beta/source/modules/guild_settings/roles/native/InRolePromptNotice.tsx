@@ -5,56 +5,66 @@
 // Exports: default
 
 // Module 17432 (InRolePromptNotice)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import _modDef8905 from "module_8905" /* 8905 */;
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 1074 */;
+import intl3 from "intl" /* 1115 */;
+import FlagUtils from "FlagUtils" /* 1385 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8905 */;
+import GuildSettingsUtils from "GuildSettingsUtils" /* 17433 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const RoleFlags = fn(1074).RoleFlags;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { promptRow: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center" }, promptText: null, icon: null };
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center" };
-obj2.promptText = { marginLeft: nativeDefault.space.PX_4 };
-obj2.icon = { height: 16, width: 16 };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+const View = react_native.View;
+const RoleFlags = Constants.RoleFlags;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { promptRow: obj2, promptText: obj3, icon: { height: 16, width: 16 } };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center" };
+createStyles = createStyles.createStyles;
+obj3 = { marginLeft: nativeDefault.space.PX_4 };
+let closure_7 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_settings/roles/native/InRolePromptNotice.tsx");
 
 export default function InRolePromptNotice(role) {
+  let intl;
+  let intl2;
   role = role.role;
-  let string = closure_7();
-  let stringResult = dependencyMap;
-  if (!obj.hasFlag(role.flags, RoleFlags.IN_PROMPT)) {
-    return null;
-  } else {
-    const obj2 = { style: string.promptRow, children: null };
-    const tmpResult = tmp(17433);
-    let Icon = tmp(1177).Icon;
+  const tmp = closure_7();
+  let tmp4 = null;
+  const obj = FlagUtils;
+  if (obj.hasFlag(role.flags, RoleFlags.IN_PROMPT)) {
+    let tmp6Result;
+    const obj2 = { style: tmp.promptRow, children: null };
+    const tmp2Result = GuildSettingsUtils;
+    const isRolePowerfulResult = tmp2Result.isRolePowerful(role);
+    const Icon = tmp2(1177).Icon;
     if (isRolePowerfulResult) {
-      const obj3 = { style: string.icon, source: _modDef8905, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-      const items = [tmp6(Icon, obj3), ];
-      const obj4 = { style: string.promptText, variant: "text-sm/medium", children: null };
-      const intl2 = tmp(1115).intl;
-      string = intl2.string;
-      stringResult = string(tmp(1115).t.YRbgXz);
-      obj4.children = stringResult;
-      Icon = tmp6(tmp(4832).Text, obj4);
-      items[1] = Icon;
+      const obj3 = { style: tmp.icon, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
+      const items = [hasOwnProperty(Icon, obj3), ];
+      const obj4 = { style: tmp.promptText, variant: "text-sm/medium", children: intl2.string(intl3.t.YRbgXz) };
+      const Text2 = tmp2(4832).Text;
+      intl2 = tmp2(1115).intl;
+      items[1] = hasOwnProperty(Text2, obj4);
       obj2.children = items;
-      let tmp4Result = tmp4(tmp5, obj2);
+      tmp6Result = tmp6(tmp7, obj2);
     } else {
-      const obj5 = { style: string.icon, source: _modDef8905 };
-      const items1 = [tmp6(Icon, obj5), ];
-      const obj6 = { style: string.promptText, variant: "text-sm/medium", children: null };
-      const intl = tmp(1115).intl;
-      obj6.children = intl.string(tmp(1115).t.mqeO2v);
-      items1[1] = tmp6(tmp(4832).Text, obj6);
+      const obj5 = { style: tmp.icon, source: AssetRegistryDefault };
+      const items1 = [hasOwnProperty(Icon, obj5), ];
+      const obj6 = { style: tmp.promptText, variant: "text-sm/medium", children: intl.string(intl3.t.mqeO2v) };
+      const Text = tmp2(4832).Text;
+      intl = tmp2(1115).intl;
+      items1[1] = hasOwnProperty(Text, obj6);
       obj2.children = items1;
-      tmp4Result = tmp4(tmp5, obj2);
+      tmp6Result = tmp6(tmp7, obj2);
     }
-    isRolePowerfulResult = tmp(17433).isRolePowerful(role);
+    tmp4 = tmp6Result;
   }
+  return tmp4;
 };

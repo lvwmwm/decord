@@ -5,186 +5,278 @@
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, handleTabPressPrefetch, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
 // Module 17656 (GlobalDiscoveryServersUtils)
-import util from "util" /* 1115 */;
+import Constants from "Constants" /* 1074 */;
+import intl8 from "intl" /* 1115 */;
 import v1 from "v1" /* 1255 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13249 */;
 import GlobalDiscoveryServersFeaturedSearchManagerDefault from "GlobalDiscoveryServersFeaturedSearchManager" /* 17655 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
+import GlobalDiscoveryServersSearchResultsStore from "GlobalDiscoveryServersSearchResultsStore" /* 13249 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9050 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_15 = async function _navigateToGuild() {
-  const obj6 = {};
-  const merged = Object.assign(closure_129_5);
-  obj6.loadId = closure_129_0;
-  closure_129_6 = obj6;
-  await closure_130_2(closure_130_3[7]).startLurking(closure_129_1, closure_129_4, closure_129_6);
-  closure_130_1(closure_130_3[8]).track(closure_130_14.GUILD_DISCOVERY_GUILD_SELECTED, { guild_id: closure_129_1, load_id: closure_129_0, card_index: closure_129_2, category_id: closure_129_3, location: closure_129_4 });
-  await "HermesInternal";
-  closure_1 = tmp2;
-  ({ loadId: closure_129_0, guildId: closure_129_1, index: closure_129_2, categoryId: closure_129_3, analyticsLocation: closure_129_4, options: closure_129_5 } = closure_0);
-  return "flex";
+let c10;
+let c9;
+let closure_12;
+let map1;
+let metroImportAll;
+let metroImportDefault;
+let unpackModuleId;
+let obj = function _navigateToGuild() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let _location;
+    let c0;
+    let c1;
+    let c2;
+    let c3;
+    let c4;
+    let c5;
+    let category_id;
+    let obj5;
+    let closure_0 = arg0;
+    if (_location === 2) {
+      _location = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        let load_id;
+        let guild_id;
+        let card_index;
+        let obj6;
+        _location = 2;
+        if (0 === category_id) {
+          if (arg0 === 1) {
+            _location = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            _location = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_2 = tmp4;
+            let closure_1 = tmp;
+            load_id = undefined;
+            guild_id = undefined;
+            card_index = undefined;
+            c5 = undefined;
+            ({ loadId: c0, guildId: c1, index: c2, categoryId: c3, analyticsLocation: c4, options: c5 } = closure_0);
+            obj6 = undefined;
+            category_id = 1;
+            _location = 1;
+            return { value: "flex", done: true };
+          }
+        } else if (1 === category_id) {
+          if (arg0 === 1) {
+            _location = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            _location = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            obj6 = { loadId: load_id };
+            const merged = Object.assign(c5);
+            category_id = 2;
+            _location = 1;
+            const obj7 = { value: obj5.startLurking(guild_id, _location, obj6), done: false };
+            obj5 = closure_130_2(closure_130_3[7]);
+            return obj7;
+          }
+        } else if (arg0 === 1) {
+          _location = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          _location = 3;
+          const obj8 = { value, done: true };
+          return obj8;
+        } else {
+          const obj9 = { guild_id, load_id, card_index, category_id, location: _location };
+          obj = closure_130_1(closure_130_3[8]);
+          obj.track(closure_130_14.GUILD_DISCOVERY_GUILD_SELECTED, obj9);
+          _location = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp27) {
+        _location = 3;
+        throw tmp27;
+      }
+    }
+  });
+  return obj(...arguments);
 };
-GlobalDiscoveryServersSearchResultsStoreDefault;
-const GlobalDiscoveryServersConstants = fn(9050);
-({ GlobalDiscoveryServerTab: closure_7, FEATURED_GUILDS_CACHE_DURATION: closure_8, FEATURED_GUILDS_SEARCH_OPTIONS: closure_9, CategoryId: c10, DISCOVERY_ALL_CATEGORIES_ID: closure_11, getLanguageOptions: closure_12, HUBS_CATEGORY_ID: map1 } = GlobalDiscoveryServersConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+({ GlobalDiscoveryServerTab: metroImportDefault, FEATURED_GUILDS_CACHE_DURATION: metroImportAll, FEATURED_GUILDS_SEARCH_OPTIONS: c9, CategoryId: c10, DISCOVERY_ALL_CATEGORIES_ID: unpackModuleId, getLanguageOptions: closure_12, HUBS_CATEGORY_ID: map1 } = GlobalDiscoveryServersConstants);
+const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/global_discovery_servers/GlobalDiscoveryServersUtils.tsx");
 
 export const getGlobalDiscoveryServersTabTitle = function getGlobalDiscoveryServersTabTitle(arg0) {
-  if (constants.FEATURED === arg0) {
-    const intl7 = util.intl;
-    return intl7.string(util.t["RU+DCe"]);
-  } else if (tmp.GAMING === arg0) {
-    const intl6 = util.intl;
-    return intl6.string(util.t["CD/USA"]);
-  } else if (tmp.MUSIC === arg0) {
-    const intl5 = util.intl;
-    return intl5.string(util.t["nt9PL+"]);
-  } else if (tmp.ENTERTAINMENT === arg0) {
-    const intl4 = util.intl;
-    return intl4.string(util.t.gSbmdt);
-  } else if (tmp.TECH === arg0) {
-    const intl3 = util.intl;
-    return intl3.string(util.t["0A0By5"]);
-  } else if (tmp.EDUCATION === arg0) {
-    const intl2 = util.intl;
-    return intl2.string(util.t.Gy9woq);
-  } else if (tmp.HUBS === arg0) {
-    const intl = util.intl;
-    return intl.string(util.t["q469/Z"]);
+  if (metroImportDefault.FEATURED === arg0) {
+    const intl7 = intl8.intl;
+    return intl7.string(intl8.t["RU+DCe"]);
+  } else if (metroImportDefault.GAMING === arg0) {
+    const intl6 = intl8.intl;
+    return intl6.string(intl8.t["CD/USA"]);
+  } else if (metroImportDefault.MUSIC === arg0) {
+    const intl5 = intl8.intl;
+    return intl5.string(intl8.t["nt9PL+"]);
+  } else if (metroImportDefault.ENTERTAINMENT === arg0) {
+    const intl4 = intl8.intl;
+    return intl4.string(intl8.t.gSbmdt);
+  } else if (metroImportDefault.TECH === arg0) {
+    const intl3 = intl8.intl;
+    return intl3.string(intl8.t["0A0By5"]);
+  } else if (metroImportDefault.EDUCATION === arg0) {
+    const intl2 = intl8.intl;
+    return intl2.string(intl8.t.Gy9woq);
+  } else if (metroImportDefault.HUBS === arg0) {
+    const intl = intl8.intl;
+    return intl.string(intl8.t["q469/Z"]);
   }
 };
 export const getGlobalDiscoveryServersBannerTitle = function getGlobalDiscoveryServersBannerTitle(arg0) {
-  if (constants.FEATURED === arg0) {
-    const intl7 = util.intl;
-    return intl7.string(util.t.OlDfzP);
-  } else if (tmp.GAMING === arg0) {
-    const intl6 = util.intl;
-    return intl6.string(util.t["CD/USA"]);
-  } else if (tmp.MUSIC === arg0) {
-    const intl5 = util.intl;
-    return intl5.string(util.t["nt9PL+"]);
-  } else if (tmp.ENTERTAINMENT === arg0) {
-    const intl4 = util.intl;
-    return intl4.string(util.t.gSbmdt);
-  } else if (tmp.TECH === arg0) {
-    const intl3 = util.intl;
-    return intl3.string(util.t["0A0By5"]);
-  } else if (tmp.EDUCATION === arg0) {
-    const intl2 = util.intl;
-    return intl2.string(util.t.Gy9woq);
-  } else if (tmp.HUBS === arg0) {
-    const intl = util.intl;
-    return intl.string(util.t.X5xPlb);
+  if (metroImportDefault.FEATURED === arg0) {
+    const intl7 = intl8.intl;
+    return intl7.string(intl8.t.OlDfzP);
+  } else if (metroImportDefault.GAMING === arg0) {
+    const intl6 = intl8.intl;
+    return intl6.string(intl8.t["CD/USA"]);
+  } else if (metroImportDefault.MUSIC === arg0) {
+    const intl5 = intl8.intl;
+    return intl5.string(intl8.t["nt9PL+"]);
+  } else if (metroImportDefault.ENTERTAINMENT === arg0) {
+    const intl4 = intl8.intl;
+    return intl4.string(intl8.t.gSbmdt);
+  } else if (metroImportDefault.TECH === arg0) {
+    const intl3 = intl8.intl;
+    return intl3.string(intl8.t["0A0By5"]);
+  } else if (metroImportDefault.EDUCATION === arg0) {
+    const intl2 = intl8.intl;
+    return intl2.string(intl8.t.Gy9woq);
+  } else if (metroImportDefault.HUBS === arg0) {
+    const intl = intl8.intl;
+    return intl.string(intl8.t.X5xPlb);
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
     const error = new Error("[getGlobalDiscoveryServerTabTitle] Unsupported tab: " + arg0);
     throw error;
   }
 };
 export const getGlobalDiscoveryServersBannerDescription = function getGlobalDiscoveryServersBannerDescription(arg0) {
-  if (constants.FEATURED === arg0) {
-    const intl7 = util.intl;
-    return intl7.string(util.t.SdMhrk);
-  } else if (tmp.GAMING === arg0) {
-    const intl6 = util.intl;
-    return intl6.string(util.t.AAJ5ov);
-  } else if (tmp.MUSIC === arg0) {
-    const intl5 = util.intl;
-    return intl5.string(util.t["SOio+D"]);
-  } else if (tmp.ENTERTAINMENT === arg0) {
-    const intl4 = util.intl;
-    return intl4.string(util.t.R09vf0);
-  } else if (tmp.TECH === arg0) {
-    const intl3 = util.intl;
-    return intl3.string(util.t.Ew4d56);
-  } else if (tmp.EDUCATION === arg0) {
-    const intl2 = util.intl;
-    return intl2.string(util.t.sasIWU);
-  } else if (tmp.HUBS === arg0) {
-    const intl = util.intl;
-    return intl.string(util.t["F/IQCI"]);
+  if (metroImportDefault.FEATURED === arg0) {
+    const intl7 = intl8.intl;
+    return intl7.string(intl8.t.SdMhrk);
+  } else if (metroImportDefault.GAMING === arg0) {
+    const intl6 = intl8.intl;
+    return intl6.string(intl8.t.AAJ5ov);
+  } else if (metroImportDefault.MUSIC === arg0) {
+    const intl5 = intl8.intl;
+    return intl5.string(intl8.t["SOio+D"]);
+  } else if (metroImportDefault.ENTERTAINMENT === arg0) {
+    const intl4 = intl8.intl;
+    return intl4.string(intl8.t.R09vf0);
+  } else if (metroImportDefault.TECH === arg0) {
+    const intl3 = intl8.intl;
+    return intl3.string(intl8.t.Ew4d56);
+  } else if (metroImportDefault.EDUCATION === arg0) {
+    const intl2 = intl8.intl;
+    return intl2.string(intl8.t.sasIWU);
+  } else if (metroImportDefault.HUBS === arg0) {
+    const intl = intl8.intl;
+    return intl.string(intl8.t["F/IQCI"]);
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
     const error = new Error("[getGlobalDiscoveryServerTabTitle] Unsupported tab: " + arg0);
     throw error;
   }
 };
 export const getGlobalDiscoveryServersTabSectionTitle = function getGlobalDiscoveryServersTabSectionTitle(arg0) {
-  if (constants.FEATURED === arg0) {
-    const intl6 = util.intl;
-    return intl6.string(util.t.crt84X);
-  } else if (tmp.GAMING === arg0) {
-    const intl5 = util.intl;
-    return intl5.string(util.t.fWbIpf);
-  } else if (tmp.MUSIC === arg0) {
-    const intl4 = util.intl;
-    return intl4.string(util.t.nfgDzz);
-  } else if (tmp.ENTERTAINMENT === arg0) {
-    const intl3 = util.intl;
-    return intl3.string(util.t.k1CYxv);
-  } else if (tmp.TECH === arg0) {
-    const intl2 = util.intl;
-    return intl2.string(util.t["4dawps"]);
-  } else if (tmp.EDUCATION === arg0) {
-    const intl = util.intl;
-    return intl.string(util.t.uexPgT);
+  if (metroImportDefault.FEATURED === arg0) {
+    const intl6 = intl8.intl;
+    return intl6.string(intl8.t.crt84X);
+  } else if (metroImportDefault.GAMING === arg0) {
+    const intl5 = intl8.intl;
+    return intl5.string(intl8.t.fWbIpf);
+  } else if (metroImportDefault.MUSIC === arg0) {
+    const intl4 = intl8.intl;
+    return intl4.string(intl8.t.nfgDzz);
+  } else if (metroImportDefault.ENTERTAINMENT === arg0) {
+    const intl3 = intl8.intl;
+    return intl3.string(intl8.t.k1CYxv);
+  } else if (metroImportDefault.TECH === arg0) {
+    const intl2 = intl8.intl;
+    return intl2.string(intl8.t["4dawps"]);
+  } else if (metroImportDefault.EDUCATION === arg0) {
+    const intl = intl8.intl;
+    return intl.string(intl8.t.uexPgT);
   } else {
     return null;
   }
 };
 export const getCategoryIdFromServerTab = function getCategoryIdFromServerTab(arg0) {
-  if (constants.FEATURED === arg0) {
-    return closure_1_11;
-  } else if (tmp.GAMING === arg0) {
-    return closure_1_10.Activity;
-  } else if (tmp.MUSIC === arg0) {
-    return closure_1_10.Music;
-  } else if (tmp.ENTERTAINMENT === arg0) {
-    return closure_1_10.Television;
-  } else if (tmp.TECH === arg0) {
-    return closure_1_10.Science;
-  } else if (tmp.EDUCATION === arg0) {
-    return closure_1_10.Education;
-  } else if (tmp.HUBS === arg0) {
+  if (metroImportDefault.FEATURED === arg0) {
+    return unpackModuleId;
+  } else if (metroImportDefault.GAMING === arg0) {
+    return authStore.Activity;
+  } else if (metroImportDefault.MUSIC === arg0) {
+    return authStore.Music;
+  } else if (metroImportDefault.ENTERTAINMENT === arg0) {
+    return authStore.Television;
+  } else if (metroImportDefault.TECH === arg0) {
+    return authStore.Science;
+  } else if (metroImportDefault.EDUCATION === arg0) {
+    return authStore.Education;
+  } else if (metroImportDefault.HUBS === arg0) {
     return map1;
   } else {
-    GlobalUtils.assertNever(arg0);
+    obj = GlobalUtils;
+    obj.assertNever(arg0);
   }
 };
 export const isStaleFeaturedGuilds = function isStaleFeaturedGuilds(arg0) {
   let tmp = null == arg0;
   if (!tmp) {
     const _Date = Date;
-    tmp = Date.now() - arg0 > React6;
+    tmp = Date.now() - arg0 > metroImportAll;
   }
   return tmp;
 };
 export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(id) {
-  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: null, preferredLocale: null, discoverySplash: null, emojis: null, emojiCount: null };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: null, preferredLocale: null, discoverySplash: null, emojis: null, emojiCount: null };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, premium_subscription_count: obj.premiumSubscriptionCount, preferred_locale: obj.preferredLocale, discovery_splash: obj.discoverySplash, emojis: obj.emojis, emoji_count: obj.emojiCount } = id);
+  new Set(id.features);
   return obj;
 };
 export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "add", discoverySplash: false, emojis: false };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "sa", discoverySplash: null, emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
-  obj.emojis = [];
+  new Set(id.features);
   return obj;
 };
 export const getLanguageCodeFallback = function getLanguageCodeFallback() {
+  let tmp3;
   let tmp = arg0;
   if (arg0 === undefined) {
     const items = [LocaleStore];
     tmp = items;
   }
   [tmp3] = tmp;
-  const arr2 = closure_1_12();
-  locale = tmp3.locale;
+  const arr2 = closure_12();
+  const locale = tmp3.locale;
   let found = arr2.find((code) => code.code === locale);
   if (found == null) {
     found = arr2[0];
@@ -192,22 +284,16 @@ export const getLanguageCodeFallback = function getLanguageCodeFallback() {
   return found.code;
 };
 export const navigateToGuild = function navigateToGuild() {
-  const self = this;
-  const apply = closure_15.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const handleTabPressPrefetch = function handleTabPressPrefetch() {
-  const error = GlobalDiscoveryServersSearchResultsStore.getError(React7);
-  const isFetching = GlobalDiscoveryServersSearchResultsStore.getIsFetching(React7);
-  let isInitialFetchComplete = GlobalDiscoveryServersSearchResultsStore.getIsInitialFetchComplete(React7);
+  const error = GlobalDiscoveryServersSearchResultsStore.getError(React4);
+  const isFetching = GlobalDiscoveryServersSearchResultsStore.getIsFetching(React4);
+  let isInitialFetchComplete = GlobalDiscoveryServersSearchResultsStore.getIsInitialFetchComplete(React4);
   if (!isInitialFetchComplete) {
     if (!isFetching) {
-      const featuredGuilds = GlobalDiscoveryServersFeaturedSearchManagerDefault.fetchFeaturedGuilds();
+      obj = GlobalDiscoveryServersFeaturedSearchManagerDefault;
+      const featuredGuilds = obj.fetchFeaturedGuilds();
     }
   }
   if (isInitialFetchComplete) {
@@ -217,9 +303,12 @@ export const handleTabPressPrefetch = function handleTabPressPrefetch() {
     isInitialFetchComplete = null != error;
   }
   if (isInitialFetchComplete) {
-    const featuredGuilds1 = GlobalDiscoveryServersFeaturedSearchManagerDefault.fetchFeaturedGuilds({ forceRefresh: true });
+    const obj2 = GlobalDiscoveryServersFeaturedSearchManagerDefault;
+    const featuredGuilds1 = obj2.fetchFeaturedGuilds({ forceRefresh: true });
   }
 };
 export const makeAnalyticsID = function makeAnalyticsID() {
-  return v1.v4().replace(/-/g, "");
+  obj = v1;
+  const str = obj.v4();
+  return str.replace(/-/g, "");
 };

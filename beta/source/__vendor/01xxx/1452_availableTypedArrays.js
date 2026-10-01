@@ -7,7 +7,7 @@
 import _mod1453 from "module_1453" /* 1453 */;
 
 if (typeof globalThis !== "undefined") {
-  const global = globalThis;
+  global = globalThis;
 }
 
 export default function availableTypedArrays() {

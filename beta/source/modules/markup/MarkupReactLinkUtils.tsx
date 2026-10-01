@@ -11,16 +11,19 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/markup/MarkupReactLinkUtils.tsx");
 
 export const isLinkTrusted = function isLinkTrusted(target) {
-  if (null == target.target) {
-    return tmp;
-  } else {
+  let tmp = null != target.target;
+  if (tmp) {
     MaskedLinkUtils;
-    if (null == target.title) {
-      let title = tmp2(7429).astToString(target.content);
-      tmp5(tmp6, title);
-      const tmp2Result = tmp2(7429);
+    const tmp2 = require;
+    if (null != target.title) {
+      let title;
+      if ("" !== target.title) {
+        title = target.title;
+      }
+      tmp = tmp5(tmp6, title);
     }
-    title = target.title;
-    tmp2 = require;
+    const tmp2Result = tmp2(7429);
+    title = tmp2Result.astToString(target.content);
   }
+  return tmp;
 };

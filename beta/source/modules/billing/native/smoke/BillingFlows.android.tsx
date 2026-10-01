@@ -4,16 +4,17 @@
 // Dependencies: [17, 21, 2]
 
 // Module 15301 (BillingFlows)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
-const View = _mod17.View;
-const jsx = jsxProd.jsx;
-const result = size.fileFinishedImporting("modules/billing/native/smoke/BillingFlows.android.tsx");
-
-export default {
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const obj = {
   RunAllFlows() {
     return <View />;
   }
 };
+const result = size.fileFinishedImporting("modules/billing/native/smoke/BillingFlows.android.tsx");
+
+export default obj;

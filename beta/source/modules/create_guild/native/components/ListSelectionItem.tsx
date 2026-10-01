@@ -5,15 +5,19 @@
 // Exports: default
 
 // Module 11807 (ListSelectionItem)
-import TableRow from "TableRow" /* 5917 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import TableRow2 from "TableRow" /* 5917 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/create_guild/native/components/ListSelectionItem.tsx");
 
 export default function ListSelectionItem(arg0) {
+  let Icon;
+  let message;
+  let onPress;
   ({ Icon, message, onPress } = arg0);
-  return jsx(TableRow.TableRow, { onPress, label: message, icon: <Icon size={24} /> });
+  const TableRow = TableRow2.TableRow;
+  return <TableRow onPress={onPress} label={message} icon={null} />;
 };

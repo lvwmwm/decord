@@ -4,24 +4,22 @@
 // Exports: getHybridObjectConstructor
 
 // Module 4577
-import _mod4569 from "module_4569" /* 4569 */;
+import installedNitro1 from "installedNitro1" /* 4569 */;
 
-require = arg1;
-const dependencyMap = arg6;
 const map = new Map();
 
 export const getHybridObjectConstructor = function getHybridObjectConstructor(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   if (map.has(arg0)) {
-    return obj.get(arg0);
+    return map.get(arg0);
   } else {
     function constructorFunc() {
-      const NitroModules = _mod4569.NitroModules;
+      const NitroModules = installedNitro1.NitroModules;
       const hybridObject = NitroModules.createHybridObject(closure_0);
       const prototypeOf = Object.getPrototypeOf(hybridObject);
       if (constructorFunc.prototype !== prototypeOf) {
-        tmp3.prototype = prototypeOf;
-        tmp3.prototypeInitialized = true;
+        constructorFunc.prototype = prototypeOf;
+        constructorFunc.prototypeInitialized = true;
       }
       return hybridObject;
     }
@@ -31,10 +29,10 @@ export const getHybridObjectConstructor = function getHybridObjectConstructor(ar
     const obj2 = {
       value(arg0) {
           if (!constructorFunc.prototypeInitialized) {
-            const NitroModules = _mod4569.NitroModules;
+            const NitroModules = installedNitro1.NitroModules;
             const _Object = Object;
-            tmp.prototype = Object.getPrototypeOf(NitroModules.createHybridObject(closure_0));
-            tmp.prototypeInitialized = true;
+            constructorFunc.prototype = Object.getPrototypeOf(NitroModules.createHybridObject(closure_0));
+            constructorFunc.prototypeInitialized = true;
           }
           let prototypeOf = Object.getPrototypeOf(arg0);
           if (null != prototypeOf) {

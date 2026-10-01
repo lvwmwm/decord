@@ -5,32 +5,30 @@
 // Exports: default
 
 // Module 13321 (NUFVoiceChannelsTemplate)
+import Fragment from "Fragment" /* 21 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
 import NUFChannelsManagerDefault from "NUFChannelsManager" /* 13311 */;
 import NUFTemplateDefault from "NUFTemplate" /* 13322 */;
-import _modDef13323 from "module_13323" /* 13323 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13323 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/nuf_channels/native/components/NUFVoiceChannelsTemplate.tsx");
 
 export default function NUFVoiceChannelsTemplate(channel) {
   channel = channel.channel;
-  let obj = { title: null, description: null, imageSrc: null, CTALabel: null, onCTAPress: null };
+  NUFTemplateDefault;
   const intl = channel(1115).intl;
-  obj.title = intl.string(channel(1115).t.w5HAll);
   const intl2 = channel(1115).intl;
-  obj.description = intl2.string(channel(1115).t.Ww4hhq);
-  obj.imageSrc = _modDef13323;
   const intl3 = channel(1115).intl;
-  obj.CTALabel = intl3.string(channel(1115).t.eIi3Om);
-  obj.onCTAPress = function onCTAPress() {
-    const result = NUFChannelsManagerDefault.handleVoiceChannelsOnboard();
-    const result1 = KeyboardManagerUtilsAll.dismissGlobalKeyboard();
-    const voiceChannel = SelectedChannelActionCreatorsDefault.selectVoiceChannel(channel.id);
-  };
-  return jsx(NUFTemplateDefault, { title: null, description: null, imageSrc: null, CTALabel: null, onCTAPress: null });
+  return <tmp title={intl.string(channel(1115).t.w5HAll)} description={intl2.string(channel(1115).t.Ww4hhq)} imageSrc={AssetRegistryDefault} CTALabel={intl3.string(channel(1115).t.eIi3Om)} onCTAPress={function onCTAPress() {
+    const obj = NUFChannelsManagerDefault;
+    const result = obj.handleVoiceChannelsOnboard();
+    const obj2 = KeyboardManagerUtilsAll;
+    const result1 = obj2.dismissGlobalKeyboard();
+    const obj3 = SelectedChannelActionCreatorsDefault;
+    const voiceChannel = obj3.selectVoiceChannel(channel.id);
+  }} />;
 };

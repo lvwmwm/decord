@@ -6,47 +6,141 @@
 
 // Module 10983 (GiftCodeRedeemStart)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import GiftCodeUtils from "GiftCodeUtils" /* 5089 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6647 */;
 import SoundboardActionCreators from "SoundboardActionCreators" /* 6756 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10263 */;
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10571 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10789 */;
 import NameplatePreview from "NameplatePreview" /* 10790 */;
 import actions_GiftCodeActionCreatorsDefault from "actions/GiftCodeActionCreators" /* 10976 */;
 import GiftCodeRedeemModal from "GiftCodeRedeemModal" /* 10982 */;
 import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 10992 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import GiftCodeStore from "GiftCodeStore" /* 10973 */;
 import UserStore from "UserStore" /* 1372 */;
 import SKUStore from "SKUStore" /* 5822 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ ImageBackground: hasOwnProperty, View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const Constants = fn(1074);
-({ AnalyticEvents: closure_11, GiftCodeModalStates: closure_12 } = Constants);
-const jsxProd = fn(21);
-({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { flex: 1, justifyContent: "space-between", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, body: { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28 }, bodyWithMessage: { flex: 0 }, nameplateContainer: { width: "100%" }, nameplateContainerOffCenter: { paddingBottom: 56 }, message: { gap: 8 }, text: { textAlign: "center", paddingHorizontal: 32 }, footer: { paddingHorizontal: 24, paddingBottom: 12 }, confettiBackground: { justifyContent: "center", width: "100%", position: "absolute", top: 0, left: 0, opacity: 0.4, height: 275 }, emojiContainer: { justifyContent: "center", alignItems: "center" }, imageWrapper: { position: "relative", width: "100%", alignItems: "center", justifyContent: "center" }, collectiblesAsset: { margin: 40 }, collectiblesAssetBundle: { margin: 20, alignSelf: "stretch", minHeight: 250, alignItems: "center", justifyContent: "center" }, giftCardAsset: { marginTop: 20, marginBottom: 40 }, linkAccountIcon: { marginRight: 4 } };
-let closure_15 = createStyles.createStyles(obj2);
-let size = fn(2);
+let closure_12;
+let closure_14;
+let hasOwnProperty;
+let map1;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let tmp;
+let unpackModuleId;
+const SocialLayerStorefrontActionCreators = tmp(10263);
+({ ImageBackground: hasOwnProperty, View: metroRequire, ScrollView: metroImportDefault } = react_native);
+({ AnalyticEvents: unpackModuleId, GiftCodeModalStates: closure_12 } = Constants);
+({ jsx: map1, jsxs: closure_14 } = Fragment);
+let obj = { container: obj2, body: { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28 }, bodyWithMessage: { flex: 0 }, nameplateContainer: { width: "100%" }, nameplateContainerOffCenter: { paddingBottom: 56 }, message: { gap: 8 }, text: { textAlign: "center", paddingHorizontal: 32 }, footer: { paddingHorizontal: 24, paddingBottom: 12 }, confettiBackground: { justifyContent: "center", width: "100%", position: "absolute", top: 0, left: 0, opacity: 0.4, height: 275 }, emojiContainer: { justifyContent: "center", alignItems: "center" }, imageWrapper: { position: "relative", width: "100%", alignItems: "center", justifyContent: "center" }, collectiblesAsset: { margin: 40 }, collectiblesAssetBundle: { margin: 20, alignSelf: "stretch", minHeight: 250, alignItems: "center", justifyContent: "center" }, giftCardAsset: { marginTop: 20, marginBottom: 40 }, linkAccountIcon: { marginRight: 4 } };
+obj2 = { flex: 1, justifyContent: "space-between", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+let closure_15 = createStyles.createStyles(obj);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemStart.tsx");
 
 export default function GiftCodeRedeemStart(giftCode) {
+  let ExperimentalGameControllerLinkIcon;
+  let P;
+  let P2;
+  let P3;
+  let P4;
+  let P5;
+  let _undefined;
+  let _with14Result;
+  let c16;
+  let firstAvatarDecoration;
+  let firstNameplate;
+  let firstProfileEffect;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl6;
+  let intl7;
+  let items10;
+  let obj11;
+  let obj12;
+  let obj16;
+  let obj22;
+  let stringResult;
+  let subscriptionGiftStartHeaderText;
+  let tmp27;
+  let tmp32Result;
+  let tmp32Result5;
+  let tmp32Result6;
+  let type;
+  const f92443 = () => {
+    const intl = giftCode(soundId[10]).intl;
+    const obj = { sender: str };
+    return intl.formatToPlainString(giftCode(soundId[10]).t.JUV1tL, obj);
+  };
+  const f92444 = () => {
+    const intl = giftCode(soundId[10]).intl;
+    return intl.string(giftCode(soundId[10]).t.iJ8823);
+  };
+  const f92445 = () => {
+    const intl = giftCode(soundId[10]).intl;
+    const obj = { sender: str };
+    return intl.formatToPlainString(giftCode(soundId[10]).t.SKduyh, obj);
+  };
+  const f92446 = () => {
+    const intl = giftCode(soundId[10]).intl;
+    const obj = { sender: str };
+    return intl.formatToPlainString(giftCode(soundId[10]).t["1w42T2"], obj);
+  };
+  const f92447 = () => {
+    const intl = giftCode(soundId[10]).intl;
+    const obj = { sender: str };
+    return intl.formatToPlainString(giftCode(soundId[10]).t.vFiQlU, obj);
+  };
+  const f92448 = () => {
+    const intl = giftCode(soundId[10]).intl;
+    const obj = { sender: str };
+    return intl.formatToPlainString(giftCode(soundId[10]).t["UH/EQL"], obj);
+  };
+  const f92449 = () => {
+    const intl = giftCode(soundId[10]).intl;
+    return intl.string(giftCode(soundId[10]).t["2ZO6CC"]);
+  };
+  const f92450 = () => {
+    const intl = giftCode(soundId[10]).intl;
+    return intl.string(giftCode(soundId[10]).t["2NxdjX"]);
+  };
+  const f92451 = () => {
+    const intl = giftCode(soundId[10]).intl;
+    return intl.string(giftCode(soundId[10]).t.v7F232);
+  };
+  const f92463 = (avatarDecoration) => {
+    let getAvatarSource;
+    const obj = { source: getAvatarSource(null, true, native.AVATAR_SIZE_MAP[native.AvatarSizes.GIFT_START]), avatarDecoration, size: native.AvatarSizes.GIFT_START, animate: true };
+    const Avatar = native.Avatar;
+    getAvatarSource = user.getAvatarSource;
+    return map1(Avatar, obj);
+  };
+  const f92464 = (profileEffect) => {
+    const obj = { user, profileEffect };
+    return map1(ProfileEffectUserPreviewDefault, obj);
+  };
+  const f92465 = (profileFrame) => {
+    const obj = { user, profileFrame };
+    return map1(ProfileFrameUserPreviewDefault, obj);
+  };
   giftCode = giftCode.giftCode;
   const customMessage = giftCode.customMessage;
   const soundId = giftCode.soundId;
   const emojiName = giftCode.emojiName;
   const user = giftCode.user;
   let message;
-  closure_8 = undefined;
+  let closure_8;
   let stateFromStores1;
   let fetched;
   let hasAlreadyLinked;
@@ -56,32 +150,37 @@ export default function GiftCodeRedeemStart(giftCode) {
   let ref;
   c16 = undefined;
   let tmp = ref();
-  closure_5 = tmp;
-  const tmp2 = giftCode;
+  let closure_5 = tmp;
+  let tmp2 = giftCode;
   const tmp3 = soundId;
-  closure_6 = giftCode(soundId[15]).useNavigation();
   let obj = giftCode(soundId[15]);
-  let items = [closure_8];
-  const stateFromStores = giftCode(soundId[16]).useStateFromStores(items, () => GiftCodeStore.getIsAccepting(giftCode.code));
+  let closure_6 = obj.useNavigation();
   let obj2 = giftCode(soundId[16]);
+  let items = [closure_8];
+  const stateFromStores = obj2.useStateFromStores(items, () => GiftCodeStore.getIsAccepting(giftCode.code));
+  let obj3 = giftCode(soundId[16]);
   const items1 = [stateFromStores1];
-  let str = giftCode(soundId[16]).useStateFromStores(items1, () => UserUtilsDefault.getName(UserStore.getUser(giftCode.userId)));
+  let str = obj3.useStateFromStores(items1, () => {
+    const obj = UserUtilsDefault;
+    return obj.getName(UserStore.getUser(giftCode.userId));
+  });
   if (str == null) {
     str = "";
   }
   const tmp6 = customMessage(tmp3[18])(giftCode.code, user);
   message = tmp6;
-  let obj3 = giftCode(soundId[16]);
-  const getOrFetchSubscriptionPlan = tmp2(tmp3[19]).useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
   const tmp2Result = tmp2(tmp3[19]);
-  const getOrFetchApplication = tmp2(tmp3[20]).useGetOrFetchApplication(giftCode.applicationId);
+  const getOrFetchSubscriptionPlan = tmp2Result.useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
   const tmp2Result11 = tmp2(tmp3[20]);
-  const tmp2Result12 = tmp2(tmp3[21]);
+  const getOrFetchApplication = tmp2Result11.useGetOrFetchApplication(giftCode.applicationId);
+  const useFetchCollectiblesProduct = tmp2(tmp3[21]).useFetchCollectiblesProduct;
+  tmp2(tmp3[21]);
   let skuId = null;
+  const tmp2Result13 = tmp2(tmp3[22]);
   if (tmp2Result13.isCollectiblesGiftCode(giftCode)) {
     skuId = giftCode.skuId;
   }
-  const product = tmp2Result12.useFetchCollectiblesProduct(skuId, true).product;
+  const product = useFetchCollectiblesProduct(skuId, true).product;
   let first;
   if (product != null) {
     first = product.items[0];
@@ -90,76 +189,85 @@ export default function GiftCodeRedeemStart(giftCode) {
   if (product != null) {
     type1 = product.type;
   }
-  tmp2Result13 = tmp2(tmp3[22]);
-  let tmp12 = product;
+  const BUNDLE = tmp2(tmp3[12]).CollectiblesItemType.BUNDLE;
+  let tmp14 = product;
+  const useShopProductItems = tmp2(tmp3[23]).useShopProductItems;
+  tmp2(tmp3[23]);
   if (product == null) {
-    const obj4 = { items: [] };
-    tmp12 = obj4;
+    let obj4 = { items: [] };
+    tmp14 = obj4;
   }
-  const shopProductItems = tmp2(tmp3[23]).useShopProductItems(tmp12);
-  let tmp27Result = null != customMessage;
+  const shopProductItems = useShopProductItems(tmp14);
+  let tmp29Result = null != customMessage;
   ({ firstAvatarDecoration, firstProfileEffect, firstNameplate } = shopProductItems);
-  if (tmp27Result) {
-    tmp27Result = customMessage.length > 0;
+  if (tmp29Result) {
+    tmp29Result = customMessage.length > 0;
   }
-  closure_8 = tmp27Result;
-  const tmp2Result14 = tmp2(tmp3[23]);
+  closure_8 = tmp29Result;
   const items2 = [fetched];
-  stateFromStores1 = tmp2(tmp3[16]).useStateFromStores(items2, () => SKUStore.get(giftCode.skuId));
-  const tmp16 = customMessage(tmp3[24])(getOrFetchApplication);
-  fetched = tmp16.fetched;
-  hasAlreadyLinked = tmp16.hasAlreadyLinked;
-  canStartAuthorization = tmp16.canStartAuthorization;
-  startAuthorization = tmp16.startAuthorization;
   const tmp2Result15 = tmp2(tmp3[16]);
-  const socialLayerStorefrontMobileAccountLinkingDisabled = tmp2(tmp3[25]).useSocialLayerStorefrontMobileAccountLinkingDisabled(giftCode.applicationId);
+  stateFromStores1 = tmp2Result15.useStateFromStores(items2, () => SKUStore.get(giftCode.skuId));
+  const tmp18 = customMessage(tmp3[24])(getOrFetchApplication);
+  fetched = tmp18.fetched;
+  hasAlreadyLinked = tmp18.hasAlreadyLinked;
+  canStartAuthorization = tmp18.canStartAuthorization;
+  startAuthorization = tmp18.startAuthorization;
   const tmp2Result16 = tmp2(tmp3[25]);
-  analyticsLocations = customMessage(tmp3[26])(tmp5(tmp3[27]).GIFT_CODE_MODAL).analyticsLocations;
-  ref = user.useRef({ analyticsLocations, skuId: giftCode.skuId, applicationId: giftCode.applicationId, canStartAuthorization });
+  const socialLayerStorefrontMobileAccountLinkingDisabled = tmp2Result16.useSocialLayerStorefrontMobileAccountLinkingDisabled(giftCode.applicationId);
+  const tmp5Result = customMessage(tmp3[26]);
+  analyticsLocations = tmp5Result(tmp5(tmp3[27]).GIFT_CODE_MODAL).analyticsLocations;
+  const obj5 = { analyticsLocations, skuId: giftCode.skuId, applicationId: giftCode.applicationId, canStartAuthorization };
+  ref = user.useRef(obj5);
   const items3 = [canStartAuthorization];
   const effect = user.useEffect(() => {
     ref.current.canStartAuthorization = canStartAuthorization;
   }, items3);
   const items4 = [fetched, hasAlreadyLinked, stateFromStores1];
   const effect1 = user.useEffect(() => {
-    if (fetched) {
+    let applicationId;
+    let skuId;
+    const tmp = fetched;
+    if (tmp) {
+      const obj = SlayerStorefrontUtils;
       if (obj.isGameItemSKU(stateFromStores1)) {
         ({ analyticsLocations, skuId, applicationId, canStartAuthorization } = ref.current);
         const obj3 = { location_stack: analyticsLocations, sku_id: skuId, application_id: applicationId, is_gift: true, is_account_linked: hasAlreadyLinked, can_start_authorization: canStartAuthorization };
-        AnalyticsUtilsDefault.track(constants.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED, obj3);
+        const obj2 = AnalyticsUtilsDefault;
+        obj2.track(unpackModuleId.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED, obj3);
       }
-      obj = SlayerStorefrontUtils;
     }
   }, items4);
   const items5 = [stateFromStores1];
   const effect2 = user.useEffect(() => {
+    const obj = SlayerStorefrontUtils;
     if (obj.isGameItemSKU(stateFromStores1)) {
-      const socialLayerStorefrontConfig = SocialLayerStorefrontActionCreators.fetchSocialLayerStorefrontConfig();
       const tmpResult = SocialLayerStorefrontActionCreators;
+      const socialLayerStorefrontConfig = tmpResult.fetchSocialLayerStorefrontConfig();
     }
   }, items5);
   const items6 = [giftCode, customMessage, emojiName, soundId];
   const effect3 = user.useEffect(() => {
-    GiftCodeUtils.trackStep({ step: constants2.CONFIRM, giftCode, customMessage, emojiName, soundId });
+    const obj = GiftCodeUtils;
+    const obj2 = { step: canStartAuthorization.CONFIRM, giftCode, customMessage, emojiName, soundId };
+    obj.trackStep(obj2);
   }, items6);
   const items7 = [soundId, giftCode.giftStyle];
   const effect4 = user.useEffect(() => {
-    let tmp = null != giftCode.giftStyle;
-    if (tmp) {
-      tmp = null != soundId;
-    }
+    const tmp = null != giftCode.giftStyle && null != soundId;
     if (tmp) {
       const obj2 = { soundId, volume: 1 };
-      SoundboardActionCreators.playSoundLocally(null, obj2);
+      const obj = SoundboardActionCreators;
+      obj.playSoundLocally(null, obj2);
     }
   }, items7);
-  const obj5 = { analyticsLocations, skuId: giftCode.skuId, applicationId: giftCode.applicationId, canStartAuthorization };
-  const tmp5Result = customMessage(tmp3[26]);
-  [tmp25, c16] = emojiName(user.useState(), 2);
+  [tmp27, c16] = emojiName(user.useState(), 2);
+  emojiName(user.useState(), 2);
   const callback = user.useCallback((nativeEvent) => {
-    ({ width: giftCode, height: customMessage } = nativeEvent.nativeEvent.layout);
+    let closure_129_0;
+    let closure_129_1;
+    ({ width: closure_129_0, height: closure_129_1 } = nativeEvent.nativeEvent.layout);
     _undefined((arg0) => {
-      let size = arg0;
+      size = arg0;
       if (null != arg0) {
         return size;
       }
@@ -170,437 +278,284 @@ export default function GiftCodeRedeemStart(giftCode) {
   const obj6 = { bottom: true, style: tmp.container, children: null };
   const items8 = [tmp.body, ];
   let bodyWithMessage;
-  if (tmp27Result) {
+  const SafeAreaPaddingView = tmp2(tmp3[31]).SafeAreaPaddingView;
+  const tmp30 = message;
+  if (tmp29Result) {
     bodyWithMessage = tmp.bodyWithMessage;
   }
   const obj7 = { contentContainerStyle: items8, alwaysBounceVertical: false, children: null };
   items8[1] = bodyWithMessage;
   const obj8 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.text, accessibilityRole: "header", children: null };
+  const Text = tmp2(tmp3[32]).Text;
+  const isSubscription = giftCode.isSubscription;
   if (first != null) {
-    const type = first.type;
+    type = first.type;
   }
-  const tmp31 = type1 === tmp2(tmp3[12]).CollectiblesItemType.BUNDLE;
-  closure_129_0 = str;
-  if (giftCode.isSubscription) {
+  if (isSubscription) {
+    let tmp32Result4;
     if (null != getOrFetchSubscriptionPlan) {
       let name;
+      const getSubscriptionGiftStartHeaderText = tmp2(tmp3[8]).getSubscriptionGiftStartHeaderText;
+      tmp2(tmp3[8]);
       if (stateFromStores1 != null) {
         name = stateFromStores1.name;
       }
-      let subscriptionGiftStartHeaderText = tmp2(tmp3[8]).getSubscriptionGiftStartHeaderText(getOrFetchSubscriptionPlan, str, name);
-      const tmp2Result17 = tmp2(tmp3[8]);
+      subscriptionGiftStartHeaderText = getSubscriptionGiftStartHeaderText(getOrFetchSubscriptionPlan, str, name);
     }
     obj8.children = subscriptionGiftStartHeaderText;
-    const items9 = [tmp30(tmp2(tmp3[32]).Text, obj8), , , ];
-    const obj9 = { style: tmp.imageWrapper, children: null };
-    let tmp30Result = null != emojiName;
-    if (tmp30Result) {
-      const obj10 = { source: tmp2(tmp3[33]), style: tmp.confettiBackground, children: null };
-      const obj11 = { style: tmp.emojiContainer, children: null };
-      const obj12 = { emojiName, randomizeSizing: true };
-      obj11.children = tmp30(tmp5(tmp3[34]), obj12);
-      obj10.children = tmp30(tmp34, obj11);
-      tmp30Result = tmp30(closure_5, obj10);
+    const items9 = [startAuthorization(Text, obj8), , , ];
+    const obj9 = { style: tmp.imageWrapper, children: tmp32Result };
+    tmp32Result = null != emojiName;
+    if (tmp32Result) {
+      const obj10 = { source: tmp2(tmp3[33]), style: tmp.confettiBackground, children: startAuthorization(closure_6, obj11) };
+      obj11 = { style: tmp.emojiContainer, children: startAuthorization(customMessage(tmp3[34]), obj12) };
+      obj12 = { emojiName, randomizeSizing: true };
+      tmp32Result = tmp32(closure_5, obj10);
     }
-    obj9.children = tmp30Result;
-    items9[1] = tmp30(closure_6, obj9);
+    items9[1] = startAuthorization(closure_6, obj9);
     if (null == first) {
       if (null != getOrFetchApplication) {
+        const tmp2Result18 = tmp2(tmp3[9]);
         if (tmp2Result18.isGameItemSKU(stateFromStores1)) {
           const obj13 = { sku: stateFromStores1, application: getOrFetchApplication, sender: str, hasAccountLinked: hasAlreadyLinked, canStartAuthorization, mobileAccountLinkingDisabled: socialLayerStorefrontMobileAccountLinkingDisabled };
-          let tmp30Result5 = tmp30(tmp5(tmp3[35]), obj13);
+          tmp32Result4 = tmp32(tmp5(tmp3[35]), obj13);
         }
-        items9[2] = tmp30Result5;
-        if (tmp27Result) {
-          const obj14 = { style: tmp.message, children: null };
-          const obj15 = { variant: "eyebrow", color: "text-default", style: tmp.text, children: null };
-          const intl2 = tmp2(tmp3[10]).intl;
-          const obj16 = { sender: str };
-          obj15.children = intl2.format(tmp2(tmp3[10]).t["6yrIzU"], obj16);
-          const items10 = [tmp30(tmp2(tmp3[32]).Text, obj15), ];
+        items9[2] = tmp32Result4;
+        if (tmp29Result) {
+          const obj14 = { style: tmp.message, children: items10 };
+          const obj15 = { variant: "eyebrow", color: "text-default", style: tmp.text, children: intl2.format(tmp2(tmp3[10]).t["6yrIzU"], obj16) };
+          const Text2 = tmp2(tmp3[32]).Text;
+          intl2 = tmp2(tmp3[10]).intl;
+          obj16 = { sender: str };
+          items10 = [startAuthorization(Text2, obj15), ];
           let str4 = "heading-xxl/semibold";
+          const Text3 = tmp2(tmp3[32]).Text;
           if (customMessage.length > 110) {
             str4 = "heading-xl/semibold";
           }
           const obj17 = { variant: str4, style: tmp.text, children: customMessage };
-          items10[1] = tmp30(tmp2(tmp3[32]).Text, obj17);
-          obj14.children = items10;
-          tmp27Result = tmp27(tmp34, obj14);
+          items10[1] = startAuthorization(Text3, obj17);
+          tmp29Result = tmp29(tmp47, obj14);
         }
-        items9[3] = tmp27Result;
+        items9[3] = tmp29Result;
         obj7.children = items9;
-        const items11 = [tmp27(tmp28, obj7), ];
-        const obj18 = { style: tmp.footer, children: null };
+        const items11 = [analyticsLocations(tmp30, obj7), ];
+        const obj18 = { style: tmp.footer, children: tmp32Result5 };
         if (giftCode.isClaimed) {
-          const obj19 = { text: null, size: "md", onPress: null };
-          const intl7 = tmp2(tmp3[10]).intl;
-          obj19.text = intl7.string(tmp2(tmp3[10]).t.XiOHRX);
-          obj19.onPress = function onPress() {
-            return closure_6.push(GiftCodeRedeemModal.GiftCodeModalScreens.SUCCESS, { giftCode });
+          const obj19 = {
+            text: intl7.string(tmp2(tmp3[10]).t.XiOHRX),
+            size: "md",
+            onPress() {
+                      const obj = { giftCode };
+                      return closure_6.push(GiftCodeRedeemModal.GiftCodeModalScreens.SUCCESS, obj);
+                    }
           };
-          let tmp30Result6 = tmp30(tmp2(tmp3[43]).Button, obj19);
+          const Button3 = tmp2(tmp3[43]).Button;
+          intl7 = tmp2(tmp3[10]).intl;
+          tmp32Result5 = tmp32(Button3, obj19);
         } else if (null != tmp6) {
-          const obj20 = { text: null, size: "md", onPress: null };
-          const intl6 = tmp2(tmp3[10]).intl;
-          obj20.text = intl6.string(tmp2(tmp3[10]).t["3nWhcJ"]);
-          obj20.onPress = function onPress() {
-            GiftCodeUtils.trackStep({ step: constants2.ERROR, giftCode, customMessage, emojiName, soundId });
-            closure_6.push(GiftCodeRedeemModal.GiftCodeModalScreens.ERROR, { message });
+          const obj20 = {
+            text: intl6.string(tmp2(tmp3[10]).t["3nWhcJ"]),
+            size: "md",
+            onPress() {
+                      const obj = GiftCodeUtils;
+                      const obj2 = { step: canStartAuthorization.ERROR, giftCode, customMessage, emojiName, soundId };
+                      obj.trackStep(obj2);
+                      const obj3 = { message };
+                      closure_6.push(GiftCodeRedeemModal.GiftCodeModalScreens.ERROR, obj3);
+                    }
           };
-          tmp30Result6 = tmp30(tmp2(tmp3[43]).Button, obj20);
+          const Button2 = tmp2(tmp3[43]).Button;
+          intl6 = tmp2(tmp3[10]).intl;
+          tmp32Result5 = tmp32(Button2, obj20);
         } else {
+          const tmp2Result19 = tmp2(tmp3[9]);
           if (tmp2Result19.isGameItemSKU(stateFromStores1)) {
             if (!hasAlreadyLinked) {
               if (canStartAuthorization) {
+                let obj21;
                 if (!socialLayerStorefrontMobileAccountLinkingDisabled) {
-                  let obj21 = { text: null, size: "md", icon: null, onPress: null };
-                  const intl3 = tmp2(tmp3[10]).intl;
-                  obj21.text = intl3.string(tmp2(tmp3[10]).t["VDAhr+"]);
-                  const obj22 = { size: "xs", color: tmp5(tmp3[14]).colors.WHITE, style: tmp.linkAccountIcon };
-                  obj21.icon = tmp30(tmp2(tmp3[46]).ExperimentalGameControllerLinkIcon, obj22);
-                  obj21.onPress = function onPress() {
-                    AnalyticsUtilsDefault.track(constants.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED, { location_stack: analyticsLocations, sku_id: giftCode.skuId, application_id: giftCode.applicationId, is_gift: true });
-                    startAuthorization({ analyticsLocations });
+                  obj21 = {
+                    text: intl3.string(tmp2(tmp3[10]).t["VDAhr+"]),
+                    size: "md",
+                    icon: startAuthorization(ExperimentalGameControllerLinkIcon, obj22),
+                    onPress() {
+                                      const obj = AnalyticsUtilsDefault;
+                                      const obj2 = { location_stack: analyticsLocations, sku_id: giftCode.skuId, application_id: giftCode.applicationId, is_gift: true };
+                                      obj.track(unpackModuleId.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED, obj2);
+                                      const obj3 = { analyticsLocations };
+                                      startAuthorization(obj3);
+                                    }
                   };
+                  intl3 = tmp2(tmp3[10]).intl;
+                  obj22 = { size: "xs", color: customMessage(tmp3[14]).colors.WHITE, style: tmp.linkAccountIcon };
+                  ExperimentalGameControllerLinkIcon = tmp2(tmp3[46]).ExperimentalGameControllerLinkIcon;
                 }
-                tmp30Result6 = tmp30(tmp40, obj21);
+                tmp32Result5 = tmp32(tmp57, obj21);
               }
-              const obj23 = { text: null, size: "md", onPress: null };
-              const intl4 = tmp2(tmp3[10]).intl;
-              obj23.text = intl4.string(tmp2(tmp3[10]).t.cpT0Cq);
-              obj23.onPress = function onPress() {
-                customMessage(soundId[45]).pop();
+              const obj23 = {
+                text: intl4.string(tmp2(tmp3[10]).t.cpT0Cq),
+                size: "md",
+                onPress() {
+                              const arr = customMessage(soundId[45]);
+                              arr.pop();
+                            }
               };
+              intl4 = tmp2(tmp3[10]).intl;
               obj21 = obj23;
             }
           }
-          const obj24 = { disabled: stateFromStores, text: null, size: "md", onPress: null };
+          const obj24 = {
+            disabled: stateFromStores,
+            text: stringResult,
+            size: "md",
+            onPress() {
+                      let obj = actions_GiftCodeActionCreatorsDefault;
+                      let obj2 = {
+                        code: giftCode.code,
+                        onRedeemed() {
+                          const obj = giftCode(soundId[8]);
+                          const obj2 = { step: canStartAuthorization.SUCCESS, giftCode, customMessage, emojiName, soundId };
+                          obj.trackStep(obj2);
+                          const obj3 = { giftCode };
+                          closure_1_6.push(giftCode(soundId[44]).GiftCodeModalScreens.SUCCESS, obj3);
+                        },
+                        onError(error) {
+                          let obj4;
+                          const obj = giftCode(soundId[8]);
+                          const obj2 = { step: canStartAuthorization.ERROR, giftCode, customMessage, emojiName, soundId };
+                          obj.trackStep(obj2);
+                          const push = closure_1_6.push;
+                          const obj3 = { message: obj4.getGiftCodeRedeemError(error, user) };
+                          const ERROR = giftCode(soundId[44]).GiftCodeModalScreens.ERROR;
+                          obj4 = giftCode(soundId[8]);
+                          push(ERROR, obj3);
+                        }
+                      };
+                      obj.redeemGiftCode(obj2);
+                    }
+          };
+          const Button = tmp2(tmp3[43]).Button;
           const intl5 = tmp2(tmp3[10]).intl;
           const string = intl5.string;
-          let rTeOBK = tmp2(tmp3[10]).t;
+          const t = tmp2(tmp3[10]).t;
           if (stateFromStores) {
-            rTeOBK = rTeOBK.rTeOBK;
-            let stringResult = string(rTeOBK);
+            stringResult = string(t.rTeOBK);
           } else {
-            stringResult = string(rTeOBK["3nWhcJ"]);
+            stringResult = string(t["3nWhcJ"]);
           }
-          obj24.text = stringResult;
-          obj24.onPress = function onPress() {
-            actions_GiftCodeActionCreatorsDefault.redeemGiftCode({
-              code: giftCode.code,
-              onRedeemed() {
-                giftCode(soundId[8]).trackStep({ step: canStartAuthorization.SUCCESS, giftCode, customMessage, emojiName, soundId });
-                closure_1_6.push(giftCode(soundId[44]).GiftCodeModalScreens.SUCCESS, { giftCode });
-              },
-              onError(error) {
-                giftCode(soundId[8]).trackStep({ step: canStartAuthorization.ERROR, giftCode, customMessage, emojiName, soundId });
-                const obj3 = { message: null };
-                const obj = giftCode(soundId[8]);
-                const obj2 = { step: canStartAuthorization.ERROR, giftCode, customMessage, emojiName, soundId };
-                obj3.message = giftCode(soundId[8]).getGiftCodeRedeemError(error, user);
-                closure_1_6.push(giftCode(soundId[44]).GiftCodeModalScreens.ERROR, obj3);
-              }
-            });
-          };
-          tmp30(tmp2(tmp3[43]).Button, obj24);
-          tmp2Result19 = tmp2(tmp3[9]);
+          tmp32Result5 = tmp32(Button, obj24);
         }
-        obj18.children = tmp30Result6;
-        items11[1] = tmp30(tmp34, obj18);
+        items11[1] = startAuthorization(closure_6, obj18);
         obj6.children = items11;
-        return tmp27(tmp2(tmp3[31]).SafeAreaPaddingView, obj6);
+        return analyticsLocations(SafeAreaPaddingView, obj6);
       }
     }
     if (null == first) {
       if (null != getOrFetchApplication) {
         if (null == giftCode.giftStyle) {
           const obj25 = { game: getOrFetchApplication, size: tmp2(tmp3[36]).GameIconSizes.LARGE, skuId: giftCode.skuId };
-          tmp30Result5 = tmp30(tmp5(tmp3[36]), obj25);
-          const tmp5Result2 = tmp5(tmp3[36]);
+          const tmp5Result2 = customMessage(tmp3[36]);
+          tmp32Result4 = tmp32(tmp5Result2, obj25);
         }
       }
     }
-    if (tmp31) {
+    if (type1 === BUNDLE) {
+      let obj28;
       if (null != product) {
-        const obj26 = { style: tmp.collectiblesAssetBundle, onLayout: callback, children: null };
-        let tmp30Result8 = null != tmp25;
-        if (tmp30Result8) {
-          const obj27 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp25 };
-          tmp30Result8 = tmp30(tmp5(tmp3[37]), obj27);
+        const obj26 = { style: tmp.collectiblesAssetBundle, onLayout: callback, children: tmp32Result6 };
+        tmp32Result6 = null != tmp27;
+        if (tmp32Result6) {
+          const obj27 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp27 };
+          tmp32Result6 = tmp32(tmp5(tmp3[37]), obj27);
         }
-        obj26.children = tmp30Result8;
-        let obj28 = obj26;
+        obj28 = obj26;
       }
-      tmp30Result5 = tmp30(tmp34, obj28);
+      tmp32Result4 = tmp32(tmp47, obj28);
     }
-    obj28 = { style: giftCode.isSubscription ? tmp.giftCardAsset : tmp.collectiblesAsset, children: null };
-    const match = tmp2(tmp3[11]).match(first);
-    const obj29 = { type: tmp2(tmp3[12]).CollectiblesItemType.AVATAR_DECORATION };
+    obj28 = {
+      style: giftCode.isSubscription ? tmp.giftCardAsset : tmp.collectiblesAsset,
+      children: _with14Result.otherwise(() => {
+          const obj = { giftStyle: giftCode.giftStyle };
+          return map1(GiftBoxAnimationDefault, obj);
+        })
+    };
     const str3 = tmp2(tmp3[11]);
+    const match = str3.match(first);
+    const obj29 = { type: tmp2(tmp3[12]).CollectiblesItemType.AVATAR_DECORATION };
+    const _with11 = match.with;
     const obj30 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_EFFECT };
-    const withResult = match.with(obj29, (avatarDecoration) => map1(native.Avatar, { source: user.getAvatarSource(null, true, native.AVATAR_SIZE_MAP[native.AvatarSizes.GIFT_START]), avatarDecoration, size: native.AvatarSizes.GIFT_START, animate: true }));
+    const _with12 = _with11(obj29, f92463).with;
+    _with11(obj29, f92463);
     const obj31 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_FRAME };
-    const withResult1 = match.with(obj29, (avatarDecoration) => map1(native.Avatar, { source: user.getAvatarSource(null, true, native.AVATAR_SIZE_MAP[native.AvatarSizes.GIFT_START]), avatarDecoration, size: native.AvatarSizes.GIFT_START, animate: true })).with(obj30, (profileEffect) => map1(ProfileEffectUserPreviewDefault, { user, profileEffect }));
+    const _with13 = _with12(obj30, f92464).with;
+    _with12(obj30, f92464);
     const obj32 = { type: tmp2(tmp3[12]).CollectiblesItemType.NAMEPLATE };
-    const withResult2 = match.with(obj29, (avatarDecoration) => map1(native.Avatar, { source: user.getAvatarSource(null, true, native.AVATAR_SIZE_MAP[native.AvatarSizes.GIFT_START]), avatarDecoration, size: native.AvatarSizes.GIFT_START, animate: true })).with(obj30, (profileEffect) => map1(ProfileEffectUserPreviewDefault, { user, profileEffect })).with(obj31, (profileFrame) => map1(ProfileFrameUserPreviewDefault, { user, profileFrame }));
-    obj28.children = match.with(obj29, (avatarDecoration) => map1(native.Avatar, { source: user.getAvatarSource(null, true, native.AVATAR_SIZE_MAP[native.AvatarSizes.GIFT_START]), avatarDecoration, size: native.AvatarSizes.GIFT_START, animate: true })).with(obj30, (profileEffect) => map1(ProfileEffectUserPreviewDefault, { user, profileEffect })).with(obj31, (profileFrame) => map1(ProfileFrameUserPreviewDefault, { user, profileFrame })).with(obj32, (nameplate) => {
+    const _with14 = _with13(obj31, f92465).with;
+    _with13(obj31, f92465);
+    _with14Result = _with14(obj32, (nameplate) => {
+      let obj2;
       const items = [closure_5.nameplateContainer, ];
       let prop;
+      const tmp2 = metroRequire;
       if (!closure_8) {
         prop = closure_5.nameplateContainerOffCenter;
       }
-      const obj = { style: items, children: map1(NameplatePreview.NameplatePreview, { user, nameplate }) };
       items[1] = prop;
-      return map1(timestampProducer, obj);
-    }).otherwise(() => map1(GiftBoxAnimationDefault, { giftStyle: giftCode.giftStyle }));
-    const withResult3 = match.with(obj29, (avatarDecoration) => map1(native.Avatar, { source: user.getAvatarSource(null, true, native.AVATAR_SIZE_MAP[native.AvatarSizes.GIFT_START]), avatarDecoration, size: native.AvatarSizes.GIFT_START, animate: true })).with(obj30, (profileEffect) => map1(ProfileEffectUserPreviewDefault, { user, profileEffect })).with(obj31, (profileFrame) => map1(ProfileFrameUserPreviewDefault, { user, profileFrame })).with(obj32, (nameplate) => {
-      const items = [closure_5.nameplateContainer, ];
-      let prop;
-      if (!closure_8) {
-        prop = closure_5.nameplateContainerOffCenter;
-      }
-      const obj = { style: items, children: map1(NameplatePreview.NameplatePreview, { user, nameplate }) };
-      items[1] = prop;
-      return map1(timestampProducer, obj);
+      const obj = { style: items, children: map1(NameplatePreview.NameplatePreview, obj2) };
+      obj2 = { user, nameplate };
+      return map1(tmp2, obj);
     });
   }
-  const tmp24 = emojiName(user.useState(), 2);
-  tmp28 = message;
+  const tmp2Result20 = tmp2(tmp3[9]);
   if (tmp2Result20.isGameItemSKU(stateFromStores1)) {
     let intl = tmp2(tmp3[10]).intl;
     subscriptionGiftStartHeaderText = intl.string(tmp2(tmp3[10]).t["Bn1J+a"]);
   } else {
-    const obj33 = { type, isBundle: tmp31, sender: str };
-    const match1 = tmp2(tmp3[11]).match(obj33);
-    const obj34 = { isBundle: true, sender: null };
-    const P = tmp2(tmp3[11]).P;
-    obj34.sender = P.not(tmp2(tmp3[11]).P.nullish);
+    const obj33 = { type, isBundle: type1 === BUNDLE, sender: str };
     const str2 = tmp2(tmp3[11]);
+    const match1 = str2.match(obj33);
+    const obj34 = { isBundle: true, sender: P.not(tmp2(tmp3[11]).P.nullish) };
+    const _with = match1.with;
+    P = tmp2(tmp3[11]).P;
     const obj35 = { isBundle: true, sender: tmp2(tmp3[11]).P.nullish };
-    const withResult4 = match1.with(obj34, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.JUV1tL, { sender: giftCode });
-    });
-    const obj36 = { type: tmp2(tmp3[12]).CollectiblesItemType.AVATAR_DECORATION, sender: null };
-    const P2 = tmp2(tmp3[11]).P;
-    obj36.sender = P2.not(tmp2(tmp3[11]).P.nullish);
-    const withResult5 = match1.with(obj34, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.JUV1tL, { sender: giftCode });
-    }).with(obj35, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.iJ8823);
-    });
-    const obj37 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_EFFECT, sender: null };
-    const P3 = tmp2(tmp3[11]).P;
-    obj37.sender = P3.not(tmp2(tmp3[11]).P.nullish);
-    const withResult6 = match1.with(obj34, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.JUV1tL, { sender: giftCode });
-    }).with(obj35, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.iJ8823);
-    }).with(obj36, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.SKduyh, { sender: giftCode });
-    });
-    const obj38 = { type: tmp2(tmp3[12]).CollectiblesItemType.NAMEPLATE, sender: null };
-    const P4 = tmp2(tmp3[11]).P;
-    obj38.sender = P4.not(tmp2(tmp3[11]).P.nullish);
-    const withResult7 = match1.with(obj34, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.JUV1tL, { sender: giftCode });
-    }).with(obj35, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.iJ8823);
-    }).with(obj36, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.SKduyh, { sender: giftCode });
-    }).with(obj37, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["1w42T2"], { sender: giftCode });
-    });
-    const obj39 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_FRAME, sender: null };
-    const P5 = tmp2(tmp3[11]).P;
-    obj39.sender = P5.not(tmp2(tmp3[11]).P.nullish);
-    const withResult8 = match1.with(obj34, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.JUV1tL, { sender: giftCode });
-    }).with(obj35, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.iJ8823);
-    }).with(obj36, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.SKduyh, { sender: giftCode });
-    }).with(obj37, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["1w42T2"], { sender: giftCode });
-    }).with(obj38, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.vFiQlU, { sender: giftCode });
-    });
+    const _with2 = _with(obj34, f92443).with;
+    _with(obj34, f92443);
+    const obj36 = { type: tmp2(tmp3[12]).CollectiblesItemType.AVATAR_DECORATION, sender: P2.not(tmp2(tmp3[11]).P.nullish) };
+    const _with3 = _with2(obj35, f92444).with;
+    _with2(obj35, f92444);
+    P2 = tmp2(tmp3[11]).P;
+    const obj37 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_EFFECT, sender: P3.not(tmp2(tmp3[11]).P.nullish) };
+    const _with4 = _with3(obj36, f92445).with;
+    _with3(obj36, f92445);
+    P3 = tmp2(tmp3[11]).P;
+    const obj38 = { type: tmp2(tmp3[12]).CollectiblesItemType.NAMEPLATE, sender: P4.not(tmp2(tmp3[11]).P.nullish) };
+    const _with5 = _with4(obj37, f92446).with;
+    _with4(obj37, f92446);
+    P4 = tmp2(tmp3[11]).P;
+    const obj39 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_FRAME, sender: P5.not(tmp2(tmp3[11]).P.nullish) };
+    const _with6 = _with5(obj38, f92447).with;
+    _with5(obj38, f92447);
+    P5 = tmp2(tmp3[11]).P;
     const obj40 = { type: tmp2(tmp3[12]).CollectiblesItemType.AVATAR_DECORATION, sender: tmp2(tmp3[11]).P.nullish };
-    const withResult9 = match1.with(obj34, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.JUV1tL, { sender: giftCode });
-    }).with(obj35, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.iJ8823);
-    }).with(obj36, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.SKduyh, { sender: giftCode });
-    }).with(obj37, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["1w42T2"], { sender: giftCode });
-    }).with(obj38, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.vFiQlU, { sender: giftCode });
-    }).with(obj39, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["UH/EQL"], { sender: giftCode });
-    });
+    const _with7 = _with6(obj39, f92448).with;
+    _with6(obj39, f92448);
     const obj41 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_EFFECT, sender: tmp2(tmp3[11]).P.nullish };
-    const withResult10 = match1.with(obj34, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.JUV1tL, { sender: giftCode });
-    }).with(obj35, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.iJ8823);
-    }).with(obj36, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.SKduyh, { sender: giftCode });
-    }).with(obj37, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["1w42T2"], { sender: giftCode });
-    }).with(obj38, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.vFiQlU, { sender: giftCode });
-    }).with(obj39, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["UH/EQL"], { sender: giftCode });
-    }).with(obj40, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t["2ZO6CC"]);
-    });
+    const _with8 = _with7(obj40, f92449).with;
+    _with7(obj40, f92449);
     const obj42 = { type: tmp2(tmp3[12]).CollectiblesItemType.NAMEPLATE, sender: tmp2(tmp3[11]).P.nullish };
-    const withResult11 = match1.with(obj34, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.JUV1tL, { sender: giftCode });
-    }).with(obj35, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.iJ8823);
-    }).with(obj36, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.SKduyh, { sender: giftCode });
-    }).with(obj37, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["1w42T2"], { sender: giftCode });
-    }).with(obj38, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.vFiQlU, { sender: giftCode });
-    }).with(obj39, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["UH/EQL"], { sender: giftCode });
-    }).with(obj40, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t["2ZO6CC"]);
-    }).with(obj41, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t["2NxdjX"]);
-    });
+    const _with9 = _with8(obj41, f92450).with;
+    _with8(obj41, f92450);
     const obj43 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_FRAME, sender: tmp2(tmp3[11]).P.nullish };
-    const withResult12 = match1.with(obj34, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.JUV1tL, { sender: giftCode });
-    }).with(obj35, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.iJ8823);
-    }).with(obj36, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.SKduyh, { sender: giftCode });
-    }).with(obj37, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["1w42T2"], { sender: giftCode });
-    }).with(obj38, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.vFiQlU, { sender: giftCode });
-    }).with(obj39, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["UH/EQL"], { sender: giftCode });
-    }).with(obj40, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t["2ZO6CC"]);
-    }).with(obj41, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t["2NxdjX"]);
-    }).with(obj42, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.v7F232);
-    });
-    subscriptionGiftStartHeaderText = match1.with(obj34, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.JUV1tL, { sender: giftCode });
-    }).with(obj35, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.iJ8823);
-    }).with(obj36, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.SKduyh, { sender: giftCode });
-    }).with(obj37, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["1w42T2"], { sender: giftCode });
-    }).with(obj38, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.vFiQlU, { sender: giftCode });
-    }).with(obj39, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["UH/EQL"], { sender: giftCode });
-    }).with(obj40, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t["2ZO6CC"]);
-    }).with(obj41, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t["2NxdjX"]);
-    }).with(obj42, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.v7F232);
-    }).with(obj43, () => {
+    const _with10 = _with9(obj42, f92451).with;
+    _with9(obj42, f92451);
+    const _with10Result = _with10(obj43, () => {
       const intl = giftCode(soundId[10]).intl;
       return intl.string(giftCode(soundId[10]).t["1+tgC0"]);
-    }).otherwise(() => {
+    });
+    subscriptionGiftStartHeaderText = _with10Result.otherwise(() => {
       const intl = giftCode(soundId[10]).intl;
       return intl.string(giftCode(soundId[10]).t["2BWscv"]);
-    });
-    const withResult13 = match1.with(obj34, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.JUV1tL, { sender: giftCode });
-    }).with(obj35, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.iJ8823);
-    }).with(obj36, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.SKduyh, { sender: giftCode });
-    }).with(obj37, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["1w42T2"], { sender: giftCode });
-    }).with(obj38, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.vFiQlU, { sender: giftCode });
-    }).with(obj39, () => {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t["UH/EQL"], { sender: giftCode });
-    }).with(obj40, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t["2ZO6CC"]);
-    }).with(obj41, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t["2NxdjX"]);
-    }).with(obj42, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t.v7F232);
-    }).with(obj43, () => {
-      const intl = giftCode(soundId[10]).intl;
-      return intl.string(giftCode(soundId[10]).t["1+tgC0"]);
     });
   }
 };

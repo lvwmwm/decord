@@ -5,41 +5,68 @@
 // Exports: useGames
 
 // Module 6727 (useGame)
+import Constants from "Constants" /* 1074 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import GameActionCreators from "GameActionCreators" /* 6728 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2001 */;
+import get_initialized from "get initialized" /* 504 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const initialize = fn(504);
-const obj2 = {
-  getQueryId: fn(1074).QueryIds.GAME,
+const require = globalThis.__r;
+let c1, c2;
+
+const QueryIds = Constants.QueryIds;
+let obj = {
+  getQueryId: QueryIds.GAME,
   failureStaleAfter: 15 * DurationsDefault.Seconds.SECOND,
   get(gameId) {
-    if (null == gameId) {
-      return null;
-    } else {
+    let tmp = null;
+    if (null != gameId) {
+      let NO_DATA;
+      const obj = GameStore;
       if (GameStore.hasNoData(gameId)) {
-        let NO_DATA = require("initialize").NO_DATA;
+        NO_DATA = require("get initialized").NO_DATA;
       } else {
         NO_DATA = obj.getGame(gameId);
         if (NO_DATA == null) {
           NO_DATA = null;
         }
       }
-      obj = GameStore;
+      tmp = NO_DATA;
     }
+    return tmp;
   },
-  load: null,
-  getIsLoading: null,
-  getError: null
+  load: function() {
+    return closure_2(...arguments);
+  },
+  getIsLoading(arg0) {
+    const isFetchingResult = null != arg0 && GameStore.isFetching(arg0);
+    return isFetchingResult;
+  },
+  getError(item) {
+    let error = null;
+    if (null != item) {
+      error = null;
+      if (GameStore.didFetchingFail(item)) {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        error = new Error("Failed to fetch game data");
+      }
+    }
+    return error;
+  }
 };
-let closure_2 = asyncGeneratorStep(async (arg0, value) => {
+const createFetchStore = get_initialized.createFetchStore;
+let closure_2 = _asyncToGenerator(async (arg0, value) => {
+  let obj2;
+  let closure_0 = arg0;
   if (c1 === 2) {
     c1 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
+  } else if (tmp2 === 3) {
     if (arg0 === 1) {
       throw value;
     } else if (arg0 === 2) {
@@ -60,10 +87,11 @@ let closure_2 = asyncGeneratorStep(async (arg0, value) => {
           const obj4 = { value, done: true };
           return obj4;
         } else if (null != closure_0) {
-          const items = [tmp5];
+          const items = [tmp4];
           c2 = 1;
           c1 = 1;
-          const obj5 = { value: GameActionCreators.fetchGamesWithSupplementalData(items), done: false };
+          const obj5 = { value: obj2.fetchGamesWithSupplementalData(items), done: false };
+          obj2 = GameActionCreators;
           return obj5;
         }
       } else if (arg0 === 1) {
@@ -76,48 +104,19 @@ let closure_2 = asyncGeneratorStep(async (arg0, value) => {
       }
       c1 = 3;
       return { value: "HermesInternal", done: null };
-    } catch (tmp9) {
-      c1 = tmp;
-      throw tmp9;
+    } catch (tmp8) {
+      c1 = 3;
+      throw tmp8;
     }
   }
 });
-obj2.load = function() {
-  const self = this;
-  const apply = closure_2.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-obj2.getIsLoading = function getIsLoading(arg0) {
-  let isFetchingResult = null != arg0;
-  if (isFetchingResult) {
-    isFetchingResult = GameStore.isFetching(arg0);
-  }
-  return isFetchingResult;
-};
-obj2.getError = function getError(item) {
-  let error = null;
-  if (null != item) {
-    error = null;
-    if (GameStore.didFetchingFail(item)) {
-      const _Error = Error;
-      error = new Error("Failed to fetch game data");
-    }
-  }
-  return error;
-};
-const fetchStore = initialize.createFetchStore(GameStore, obj2);
-const size = fn(2);
+const fetchStore = createFetchStore(GameStore, obj);
 const result = size.fileFinishedImporting("modules/games/hooks/useGame.tsx");
 
 export const useGame = fetchStore;
 export const useGames = function useGames(memo) {
   let items = [memo];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     let items = [
       ...closure_0.map((item) => {
         const items = [item];

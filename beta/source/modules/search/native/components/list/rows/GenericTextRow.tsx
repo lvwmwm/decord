@@ -4,32 +4,35 @@
 // Dependencies: [5, 19, 17, 21, 4836, 4832, 16468, 2]
 
 // Module 16501 (GenericTextRow)
-import Text_Text from "Text/Text" /* 4832 */;
-import SearchListRow from "SearchListRow" /* 16468 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import SearchListRow2 from "SearchListRow" /* 16468 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let c0, c1;
+
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ title: { flexDirection: "row" }, container: { padding: 10 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/search/native/components/list/rows/GenericTextRow.tsx");
-
-export default noop.memo(function GenericTextRow(text) {
+const memoResult = react.memo(function GenericTextRow(text) {
+  let accessibilityActions;
+  let icon;
+  let onAccessibilityAction;
+  let onPress;
+  let trailing;
   text = text.text;
-  require = text;
   ({ icon, onPress } = text);
   ({ trailing, accessibilityActions, onAccessibilityAction } = text);
   const tmp = closure_6();
   const items = [onPress, text];
-  let obj = { style: tmp.title, children: null };
-  const onPress1 = noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
+  const onPress1 = react.useCallback(_asyncToGenerator(async (arg0, value) => {
     if (c0 === 2) {
       c0 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -66,17 +69,21 @@ export default noop.memo(function GenericTextRow(text) {
           c0 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp7) {
-        c0 = tmp;
-        throw tmp7;
+      } catch (tmp6) {
+        c0 = 3;
+        throw tmp6;
       }
     }
   }), items);
-  obj.children = jsx(Text_Text.Text, { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.container, children: text });
+  let obj2 = { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.container, children: text };
   const label = <View style={tmp.title}>{null}</View>;
   let icon1 = null != icon;
+  const SearchListRow = SearchListRow2.SearchListRow;
   if (icon1) {
     icon1 = tmp3(icon, { size: "sm", color: "mobile-text-heading-primary" });
   }
-  return jsx(SearchListRow.SearchListRow, { icon: icon1, label, onPress: onPress1, trailing, accessibilityActions, onAccessibilityAction });
+  return jsx(SearchListRow, { icon: icon1, label, onPress: onPress1, trailing, accessibilityActions, onAccessibilityAction });
 });
+const result = size.fileFinishedImporting("modules/search/native/components/list/rows/GenericTextRow.tsx");
+
+export default memoResult;

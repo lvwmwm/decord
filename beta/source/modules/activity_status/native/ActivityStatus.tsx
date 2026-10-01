@@ -5,54 +5,74 @@
 // Exports: default
 
 // Module 10335 (ActivityStatus)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1074 */;
+import ActivityStatusConstants from "ActivityStatusConstants" /* 10336 */;
+import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const DOT_UNICODE = fn(10336).DOT_UNICODE;
-const ActivityTypes = fn(1074).ActivityTypes;
-const jsxProd = fn(21);
-({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4836);
+let type;
+
+let c10;
+let closure_12;
+let unpackModuleId;
+const View = react_native.View;
+const DOT_UNICODE = ActivityStatusConstants.DOT_UNICODE;
+const ActivityTypes = Constants.ActivityTypes;
+({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
 let closure_13 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center", gap: 4 }, icon: { marginTop: 1 }, emoji: { marginRight: 0 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activity_status/native/ActivityStatus.tsx");
 
-export default function ActivityStatus(guildId) {
-  const userId = guildId.userId;
-  ({ iconStyle, textStyle, emojiSize } = guildId);
+export default function ActivityStatus(userId) {
+  let animate;
+  let emojiSize;
+  let iconStyle;
+  let items4;
+  let items5;
+  let items6;
+  let items8;
+  let maxFontSizeMultiplier;
+  let textStyle;
+  userId = userId.userId;
+  ({ iconStyle, textStyle, emojiSize } = userId);
+  const guildId = userId.guildId;
   if (emojiSize === undefined) {
     emojiSize = 14;
   }
-  ({ maxFontSizeMultiplier, animate } = guildId);
+  ({ maxFontSizeMultiplier, animate } = userId);
   if (animate === undefined) {
     animate = true;
   }
-  let flag = guildId.hideEmoji;
+  let flag = userId.hideEmoji;
   if (flag === undefined) {
     flag = false;
   }
   const tmp = closure_13();
+  let tmp3 = dependencyMap;
   const items = [UserStore];
-  const stateFromStores = userId(504).useStateFromStores(items, () => UserStore.getUser(userId));
   const obj = userId(504);
-  const tmp2 = userId;
+  const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(userId));
   const items1 = [PresenceStore];
-  const stateFromStores1 = userId(504).useStateFromStores(items1, () => PresenceStore.getActivities(userId));
   const obj2 = userId(504);
-  const voiceChannel = stateFromStores1(10338)({ userId, guildId: guildId.guildId }).voiceChannel;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => PresenceStore.getActivities(userId));
+  const tmp6 = stateFromStores1(10337)(userId);
+  const voiceChannel = stateFromStores1(10338)({ userId, guildId }).voiceChannel;
   const items2 = [stateFromStores1];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     let found;
+    const arr = stateFromStores1;
     if (stateFromStores1 != null) {
       found = arr.find((type) => type.type === constants.CUSTOM_STATUS);
     }
     if (null == found) {
       return null;
     } else {
+      let tmp4;
       let trimmed;
       if (found.state != null) {
         trimmed = str.trim();
@@ -65,25 +85,27 @@ export default function ActivityStatus(guildId) {
         tmp3 = trimmed;
       }
       if (null != tmp3) {
-        let tmp4 = found;
+        tmp4 = found;
       } else {
         tmp4 = null;
       }
       return tmp4;
     }
-    arr = stateFromStores1;
   }, items2);
-  const tmp6 = stateFromStores1(10337)(userId);
   let state;
+  const useGameMentionsAsPlainText = userId(10339).useGameMentionsAsPlainText;
+  userId(10339);
+  const tmp2 = userId;
   if (memo != null) {
     state = memo.state;
   }
-  const gameMentionsAsPlainText = userId(10339).useGameMentionsAsPlainText(state);
-  const obj3 = userId(10339);
+  const gameMentionsAsPlainText = useGameMentionsAsPlainText(state);
   const items3 = [RelationshipStore];
+  const tmp2Result = tmp2(504);
   if (tmp2Result.useStateFromStores(items3, () => RelationshipStore.isBlockedOrIgnored(userId))) {
     return null;
   } else {
+    let tmp19Result;
     let bot;
     if (stateFromStores != null) {
       bot = stateFromStores.bot;
@@ -94,18 +116,14 @@ export default function ActivityStatus(guildId) {
     }
     if (null != tmp6) {
       let found;
+      const tmp19 = closure_10;
+      const tmp5Result = stateFromStores1(10340);
       if (stateFromStores1 != null) {
         found = stateFromStores1.find(tmp5(10345));
       }
-      const obj4 = { game: found, iconStyle: null, textStyle: null, maxFontSizeMultiplier: null, hideIcon: null, hideText: null };
-      const items4 = [tmp.icon, iconStyle];
-      obj4.iconStyle = items4;
-      obj4.textStyle = textStyle;
-      obj4.maxFontSizeMultiplier = maxFontSizeMultiplier;
-      obj4.hideIcon = tmp12;
-      obj4.hideText = tmp13;
-      let tmp18Result = closure_10(tmp5(10340), obj4);
-      const tmp5Result = tmp5(10340);
+      const obj3 = { game: found, iconStyle: items4, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
+      items4 = [tmp.icon, iconStyle];
+      tmp19Result = tmp19(tmp5Result, obj3);
     } else {
       let found1;
       if (stateFromStores1 != null) {
@@ -115,67 +133,58 @@ export default function ActivityStatus(guildId) {
         });
       }
       if (null != found1) {
-        const obj5 = { activity: found1, iconStyle: null, textStyle: null, maxFontSizeMultiplier: null, hideIcon: null, hideText: null };
-        const items5 = [tmp.icon, iconStyle];
-        obj5.iconStyle = items5;
-        obj5.textStyle = textStyle;
-        obj5.maxFontSizeMultiplier = maxFontSizeMultiplier;
-        obj5.hideIcon = tmp12;
-        obj5.hideText = tmp13;
-        tmp18Result = closure_10(tmp5(10346), obj5);
+        const obj4 = { activity: found1, iconStyle: items5, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
+        items5 = [tmp.icon, iconStyle];
+        tmp19Result = closure_10(tmp5(10346), obj4);
       } else {
-        tmp18Result = null;
+        tmp19Result = null;
         if (null != voiceChannel) {
-          const obj6 = { channel: voiceChannel, iconStyle: null, textStyle: null, maxFontSizeMultiplier: null, hideIcon: null, hideText: null };
-          const items6 = [tmp.icon, iconStyle];
-          obj6.iconStyle = items6;
-          obj6.textStyle = textStyle;
-          obj6.maxFontSizeMultiplier = maxFontSizeMultiplier;
-          obj6.hideIcon = tmp12;
-          obj6.hideText = tmp13;
-          tmp18Result = closure_10(tmp5(10351), obj6);
+          const obj5 = { channel: voiceChannel, iconStyle: items6, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
+          items6 = [tmp.icon, iconStyle];
+          tmp19Result = closure_10(tmp5(10351), obj5);
         }
       }
     }
-    let tmp21 = null;
+    let tmp22 = null;
     if (null != memo) {
-      let tmp23Result = null;
+      let tmp24Result = null;
       if (null != memo) {
-        let tmp25 = null != memo.emoji;
-        if (tmp25) {
-          tmp25 = !flag;
+        let tmp26 = null != memo.emoji;
+        const tmp24 = closure_12;
+        const tmp25 = closure_11;
+        if (tmp26) {
+          tmp26 = !flag;
         }
-        if (tmp25) {
-          const obj7 = { emoji: memo.emoji, size: emojiSize, animate, style: tmp.emoji };
-          tmp25 = closure_10(tmp5(10353), obj7);
+        if (tmp26) {
+          const obj6 = { emoji: memo.emoji, size: emojiSize, animate, style: tmp.emoji };
+          tmp26 = closure_10(tmp5(10353), obj6);
         }
-        const items7 = [tmp25, ];
-        let tmp27 = null != memo.state;
-        if (tmp27) {
-          const obj8 = { variant: "text-xs/normal", style: textStyle, maxFontSizeMultiplier, children: gameMentionsAsPlainText };
-          tmp27 = closure_10(tmp5(10344), obj8);
+        const items7 = [tmp26, ];
+        let tmp28 = null != memo.state;
+        if (tmp28) {
+          const obj7 = { variant: "text-xs/normal", style: textStyle, maxFontSizeMultiplier, children: gameMentionsAsPlainText };
+          tmp28 = closure_10(tmp5(10344), obj7);
         }
-        const obj9 = { children: null };
-        items7[1] = tmp27;
-        obj9.children = items7;
-        tmp23Result = closure_12(closure_11, obj9);
+        const obj8 = { children: items7 };
+        items7[1] = tmp28;
+        tmp24Result = tmp24(tmp25, obj8);
       }
-      tmp21 = tmp23Result;
+      tmp22 = tmp24Result;
     }
-    const obj10 = { style: tmp.container, children: null };
-    const items8 = [tmp18Result, , ];
-    let tmp31 = null != tmp18Result;
-    if (tmp31) {
-      tmp31 = null != tmp21;
+    const obj9 = { style: tmp.container, children: items8 };
+    items8 = [tmp19Result, , ];
+    let tmp32 = null != tmp19Result;
+    const tmp30 = closure_12;
+    const tmp31 = View;
+    if (tmp32) {
+      tmp32 = null != tmp22;
     }
-    if (tmp31) {
-      const obj11 = { variant: "text-xs/normal", style: textStyle, maxFontSizeMultiplier, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DOT_UNICODE };
-      tmp31 = closure_10(tmp5(10344), obj11);
+    if (tmp32) {
+      const obj10 = { variant: "text-xs/normal", style: textStyle, maxFontSizeMultiplier, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DOT_UNICODE };
+      tmp32 = closure_10(tmp5(10344), obj10);
     }
-    items8[1] = tmp31;
-    items8[2] = tmp21;
-    obj10.children = items8;
-    return closure_12(View, obj10);
+    items8[1] = tmp32;
+    items8[2] = tmp22;
+    return tmp30(tmp31, obj9);
   }
-  tmp2Result = tmp2(504);
 };

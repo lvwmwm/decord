@@ -5,28 +5,47 @@
 // Exports: createFriendInvite
 
 // Module 12785 (FriendInvite)
-import _mod17 from "module_17" /* 17 */;
-import util from "util" /* 1115 */;
+import react_native from "react-native" /* 17 */;
+import intl4 from "intl" /* 1115 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import UserUtilsDefault from "UserUtils" /* 4678 */;
 import Constants from "Constants" /* 7155 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7387 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import size from "module_2" /* 2 */;
 
-const Image = _mod17.Image;
+const Image = react_native.Image;
 const InviteTypes = Constants.InviteTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/FriendInvite.tsx");
 
 export const createFriendInvite = function createFriendInvite(inviter, arg1, arg2, arg3) {
+  let FRIEND;
+  let acceptLabelDisabledBackgroundColor;
+  let acceptLabelDisabledColor;
+  let acceptLabelGreenBackgroundColor;
+  let acceptLabelGreenColor;
+  let baseColors;
+  let colors;
+  let flag;
+  let formatted;
+  let name;
+  let str;
+  let stringResult;
+  let subtitleColor;
+  let tmp15;
+  let tmp6;
   ({ colors, baseColors } = getEmbedThemeColorsDefault(arg3));
-  const intl = util.intl;
+  getEmbedThemeColorsDefault(arg3);
+  const intl = intl4.intl;
   const string = intl.string;
-  const t = util.t;
-  if (arg1) {
-    let str = string(t.eQyu1F);
-    let tmp5 = tmp4;
+  const t = intl4.t;
+  const tmp5 = arg1;
+  if (tmp5) {
+    str = string(t.eQyu1F);
+    tmp6 = tmp4;
   } else {
     str = string(t.PYJHW6);
-    tmp5 = tmp4;
+    tmp6 = tmp4;
   }
   let str2 = "";
   if (null != inviter.inviter) {
@@ -34,22 +53,24 @@ export const createFriendInvite = function createFriendInvite(inviter, arg1, arg
   }
   let str3 = "";
   if (null != inviter.inviter) {
-    str3 = tmp(4678).getUserTag(inviter.inviter);
-    const tmpResult = tmp(4678);
+    const tmpResult = UserUtilsDefault;
+    str3 = tmpResult.getUserTag(inviter.inviter);
   }
   let isFriendResult = null != inviter.inviter;
   if (isFriendResult) {
     inviter = inviter.inviter;
     let id;
+    const isFriend = RelationshipStore.isFriend;
     if (inviter != null) {
       id = inviter.id;
     }
-    isFriendResult = RelationshipStore.isFriend(id);
+    isFriendResult = isFriend(id);
   }
   let str4 = "";
   if (null != inviter.inviter) {
-    str4 = Image.resolveAssetSource(tmp(1397).getUserAvatarSource(inviter.inviter)).uri;
-    const tmpResult2 = tmp(1397);
+    const resolveAssetSource = Image.resolveAssetSource;
+    const tmpResult2 = AvatarUtilsDefault;
+    str4 = resolveAssetSource(tmpResult2.getUserAvatarSource(inviter.inviter)).uri;
   }
   const inviter2 = inviter.inviter;
   let id1;
@@ -58,14 +79,14 @@ export const createFriendInvite = function createFriendInvite(inviter, arg1, arg
   }
   if (id1 === arg2) {
     ({ acceptLabelDisabledColor, acceptLabelDisabledBackgroundColor } = colors);
-    const intl3 = tmp5(1115).intl;
-    let stringResult = intl3.string(tmp5(1115).t.ib7Ng1);
-    let flag = false;
+    const intl3 = tmp6(1115).intl;
+    stringResult = intl3.string(tmp6(1115).t.ib7Ng1);
+    flag = false;
   } else {
     ({ acceptLabelGreenColor, acceptLabelGreenBackgroundColor } = colors);
-    const intl2 = tmp5(1115).intl;
+    const intl2 = tmp6(1115).intl;
     const string2 = intl2.string;
-    const t2 = tmp5(1115).t;
+    const t2 = tmp6(1115).t;
     if (isFriendResult) {
       stringResult = string2(t2.xhxnPn);
       flag = true;
@@ -78,45 +99,28 @@ export const createFriendInvite = function createFriendInvite(inviter, arg1, arg
       acceptLabelDisabledColor = acceptLabelGreenColor;
     }
   }
-  const obj = {};
+  const obj = { thumbnailCornerRadius: 25, headerText: formatted, headerColor: colors.headerColor, acceptLabelText: stringResult, channelIcon: undefined, titleText: str2, titleColor: colors.titleColor, thumbnailUrl: tmp15, subtitle: str3, subtitleColor, acceptLabelBackgroundColor: acceptLabelDisabledBackgroundColor, acceptLabelBorderColor: undefined, acceptLabelColor: acceptLabelDisabledColor, embedCanBeTapped: false, canBeAccepted: flag, channelName: name, type: FRIEND };
   const merged = Object.assign(baseColors);
-  obj.thumbnailCornerRadius = 25;
-  let formatted;
+  formatted = undefined;
   if (null != str) {
     formatted = str.toUpperCase();
   }
-  obj.headerText = formatted;
-  obj.headerColor = colors.headerColor;
-  obj.acceptLabelText = stringResult;
-  obj.channelIcon = undefined;
-  obj.titleText = str2;
-  obj.titleColor = colors.titleColor;
-  let tmp14;
+  tmp15 = undefined;
   if (null != str4) {
-    tmp14 = str4;
+    tmp15 = str4;
   }
-  obj.thumbnailUrl = tmp14;
-  obj.subtitle = str3;
-  let subtitleColor;
+  subtitleColor = undefined;
   if ("" !== str3) {
     subtitleColor = colors.subtitleColor;
   }
-  obj.subtitleColor = subtitleColor;
-  obj.acceptLabelBackgroundColor = acceptLabelDisabledBackgroundColor;
-  obj.acceptLabelBorderColor = undefined;
-  obj.acceptLabelColor = acceptLabelDisabledColor;
-  obj.embedCanBeTapped = false;
-  obj.canBeAccepted = flag;
   const channel = inviter.channel;
-  let name;
+  name = undefined;
   if (channel != null) {
     name = channel.name;
   }
-  obj.channelName = name;
-  let FRIEND = inviter.type;
+  FRIEND = inviter.type;
   if (FRIEND == null) {
     FRIEND = InviteTypes.FRIEND;
   }
-  obj.type = FRIEND;
   return obj;
 };

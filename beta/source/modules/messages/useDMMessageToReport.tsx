@@ -13,14 +13,17 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/messages/useDMMessageToReport.tsx");
 
 export const useDMMessageToReport = function useDMMessageToReport(channel, id, arg2) {
+  let error;
+  let loaded;
   let isRelationshipTypeSpamReportable = arg2;
+  const obj = useIsRelationshipTypeSpamReportable;
   if (!arg2) {
     isRelationshipTypeSpamReportable = obj.useIsRelationshipTypeSpamReportable(id);
   }
-  obj = useIsRelationshipTypeSpamReportable;
-  const longestChannelMessageBeforeReply = useLongestChannelMessageBeforeReply.useLongestChannelMessageBeforeReply(channel.id, id);
   const tmp2Result = useLongestChannelMessageBeforeReply;
-  const messageRequestPreview = useMessageRequestPreview.useMessageRequestPreview(channel, { enabled: isRelationshipTypeSpamReportable });
+  const longestChannelMessageBeforeReply = tmp2Result.useLongestChannelMessageBeforeReply(channel.id, id);
+  const tmp2Result2 = useMessageRequestPreview;
+  const messageRequestPreview = tmp2Result2.useMessageRequestPreview(channel, { enabled: isRelationshipTypeSpamReportable });
   const message = messageRequestPreview.message;
   let tmp6 = longestChannelMessageBeforeReply;
   ({ loaded, error } = messageRequestPreview);

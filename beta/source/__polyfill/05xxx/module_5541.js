@@ -5,22 +5,23 @@
 // Module 5541
 import _mod5526 from "module_5526" /* 5526 */;
 
-require = arg1;
-const dependencyMap = arg6;
-let c2 = 0;
-let c3 = "<?xpacket begin";
-
-export default {
+let obj = {
   isXMLFile(dataView) {
     let tmp = dataView;
     if (tmp) {
-      tmp = _mod5526.getStringFromDataView(dataView, c2, length.length) === length;
+      const obj = _mod5526;
+      tmp = obj.getStringFromDataView(dataView, c2, length.length) === length;
     }
     return tmp;
   },
   findOffsets(byteLength) {
     const xmpChunks = [];
-    xmpChunks.push({ dataOffset, length: byteLength.byteLength });
+    const obj = { dataOffset, length: byteLength.byteLength };
+    xmpChunks.push(obj);
     return { xmpChunks };
   }
 };
+let c2 = 0;
+let c3 = "<?xpacket begin";
+
+export default obj;

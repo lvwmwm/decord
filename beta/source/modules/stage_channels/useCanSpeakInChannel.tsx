@@ -5,18 +5,20 @@
 // Exports: default
 
 // Module 8861 (useCanSpeakInChannel)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4983 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import size from "module_2" /* 2 */;
 
 const useAudienceRequestToSpeakStateDefault = useAudienceRequestToSpeakState;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/useCanSpeakInChannel.tsx");
 
 export default function useCanCurrentUserSpeakInChannel(arg0) {
+  let id;
   const items = [AuthenticationStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => id.getId());
-  return useAudienceRequestToSpeakStateDefault(stateFromStores, arg0) === useAudienceRequestToSpeakState.RequestToSpeakStates.ON_STAGE;
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => id.getId());
+  const tmp2 = useAudienceRequestToSpeakStateDefault(stateFromStores, arg0);
+  return tmp2 === useAudienceRequestToSpeakState.RequestToSpeakStates.ON_STAGE;
 };

@@ -6,14 +6,14 @@
 
 // Module 6607 (useRoleIconProps)
 import RoleIconUtils from "RoleIconUtils" /* 6608 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/roles/useRoleIconProps.tsx");
 
 export const useRoleIconProps = function useRoleIconProps(guildId) {
@@ -25,19 +25,21 @@ export const useRoleIconProps = function useRoleIconProps(guildId) {
   }
   let role = guildId.role;
   let guild = guildId.guild;
+  let obj = guildId(roleId[3]);
   const items = [guild, role];
   const items1 = [guildId, roleId, role, guild];
-  const stateFromStores = guildId(roleId[3]).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let tmp3 = role;
+    const obj = GuildStore;
     if (GuildStore !== undefined) {
-      if (obj2 !== undefined) {
+      if (GuildRoleStore !== undefined) {
         if (guild == null) {
-          guild = GuildStore.getGuild(tmp);
+          guild = obj.getGuild(tmp);
         }
         if (tmp3 == null) {
           role = undefined;
-          if (null != tmp) {
-            if (null != tmp2) {
+          if (null != guildId) {
+            if (null != roleId) {
               role = obj2.getRole(tmp, tmp2);
             }
           }
@@ -46,10 +48,10 @@ export const useRoleIconProps = function useRoleIconProps(guildId) {
         let tmp7;
         if (null != guild) {
           if (null != tmp3) {
+            const obj3 = RoleIconUtils;
             if (obj3.canGuildUseRoleIcons(guild, tmp3)) {
               tmp7 = tmp3;
             }
-            obj3 = RoleIconUtils;
           }
         }
         return tmp7;
@@ -60,12 +62,11 @@ export const useRoleIconProps = function useRoleIconProps(guildId) {
   return num.useMemo(() => {
     let tmp3;
     if (null != stateFromStores) {
-      const roleIconData = RoleIconUtils.getRoleIconData(tmp, tmp2);
+      const obj = RoleIconUtils;
+      const roleIconData = obj.getRoleIconData(tmp, tmp2);
       if (null != roleIconData) {
-        const obj3 = { src: roleIconData.customIconSrc, name: null, roleId: null, size: null, unicodeEmoji: null };
-        ({ name: obj2.name, id: obj2.roleId } = tmp);
-        obj3.size = tmp2;
-        obj3.unicodeEmoji = roleIconData.unicodeEmoji;
+        const obj3 = { src: roleIconData.customIconSrc, name: null, roleId: null, size: num, unicodeEmoji: roleIconData.unicodeEmoji };
+        ({ name: obj2.name, id: obj2.roleId } = stateFromStores);
         tmp3 = obj3;
       }
     }
@@ -74,12 +75,11 @@ export const useRoleIconProps = function useRoleIconProps(guildId) {
 };
 export const getRoleIconProps = function getRoleIconProps(roleIconRole, size) {
   if (null != roleIconRole) {
-    const roleIconData = RoleIconUtils.getRoleIconData(roleIconRole, size);
+    const obj = RoleIconUtils;
+    const roleIconData = obj.getRoleIconData(roleIconRole, size);
     if (null != roleIconData) {
-      const obj3 = { src: roleIconData.customIconSrc, name: null, roleId: null, size: null, unicodeEmoji: null };
+      const obj3 = { src: roleIconData.customIconSrc, name: null, roleId: null, size, unicodeEmoji: roleIconData.unicodeEmoji };
       ({ name: obj2.name, id: obj2.roleId } = roleIconRole);
-      obj3.size = size;
-      obj3.unicodeEmoji = roleIconData.unicodeEmoji;
       return obj3;
     }
   }
@@ -87,14 +87,19 @@ export const getRoleIconProps = function getRoleIconProps(roleIconRole, size) {
 export const useRoleIconPropsForPreview = function useRoleIconPropsForPreview(guildId, role) {
   _require = guildId;
   dependencyMap = role;
+  let obj = require("get initialized");
   const items = [GuildStore, GuildRoleStore];
   const items1 = [guildId, role];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    ({ guildId, roleId, role, guild } = { guildId, role });
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let guild;
+    let roleId;
+    const obj = { guildId, role };
+    ({ guildId, roleId, role, guild } = obj);
+    const obj2 = GuildStore;
     if (GuildStore !== undefined) {
-      if (obj3 !== undefined) {
+      if (GuildRoleStore !== undefined) {
         if (guild == null) {
-          guild = GuildStore.getGuild(guildId);
+          guild = obj2.getGuild(guildId);
         }
         if (role == null) {
           let role1;
@@ -108,10 +113,10 @@ export const useRoleIconPropsForPreview = function useRoleIconPropsForPreview(gu
         let tmp3;
         if (null != guild) {
           if (null != role) {
+            const obj4 = RoleIconUtils;
             if (obj4.canGuildUseRoleIcons(guild, role)) {
               tmp3 = role;
             }
-            obj4 = RoleIconUtils;
           }
         }
         return tmp3;
@@ -122,11 +127,11 @@ export const useRoleIconPropsForPreview = function useRoleIconPropsForPreview(gu
   return stateFromStores.useMemo(() => {
     let tmp2;
     if (null != stateFromStores) {
-      const roleIconData = RoleIconUtils.getRoleIconData(tmp, undefined);
+      const obj = RoleIconUtils;
+      const roleIconData = obj.getRoleIconData(tmp, undefined);
       if (null != roleIconData) {
-        const obj3 = { src: roleIconData.customIconSrc, name: null, roleId: null, size: "Array", unicodeEmoji: 0 };
-        ({ name: obj2.name, id: obj2.roleId } = tmp);
-        obj3.unicodeEmoji = roleIconData.unicodeEmoji;
+        const obj3 = { src: roleIconData.customIconSrc, name: null, roleId: null, size: "Array", unicodeEmoji: roleIconData.unicodeEmoji };
+        ({ name: obj2.name, id: obj2.roleId } = stateFromStores);
         tmp2 = obj3;
       }
     }
@@ -134,6 +139,10 @@ export const useRoleIconPropsForPreview = function useRoleIconPropsForPreview(gu
   }, items2);
 };
 export const computeRoleIconRole = function computeRoleIconRole(arg0) {
+  let guild;
+  let guildId;
+  let role;
+  let roleId;
   ({ guildId, roleId, role, guild } = arg0);
   let obj = arg1;
   if (arg1 === undefined) {
@@ -157,10 +166,10 @@ export const computeRoleIconRole = function computeRoleIconRole(arg0) {
   }
   if (null != guild) {
     if (null != role) {
+      const obj3 = RoleIconUtils;
       if (obj3.canGuildUseRoleIcons(guild, role)) {
         return role;
       }
-      obj3 = RoleIconUtils;
     }
   }
 };

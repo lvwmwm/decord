@@ -5,30 +5,35 @@
 // Exports: useReferralIncentiveEligibility
 
 // Module 12979 (useReferralIncentiveEligibility)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 7500 */;
 import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 12977 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useReferralIncentiveEligibility.tsx");
 
 export const useReferralIncentiveEligibility = function useReferralIncentiveEligibility(preventFetch) {
+  let premiumTypeSubscription;
+  let referralRewardType;
+  let useAltReferralCardArt;
   let flag = preventFetch.preventFetch;
+  const _location = preventFetch.location;
   if (flag === undefined) {
     flag = true;
   }
-  const isEligibleSenderForReferralProgram = useIsEligibleSenderForReferralProgram.useIsEligibleSenderForReferralProgram(flag);
-  const premiumReferralIncentivesVariant = PremiumReferralIncentivesExperiment.usePremiumReferralIncentivesVariant(preventFetch.location);
+  const obj = useIsEligibleSenderForReferralProgram;
+  const isEligibleSenderForReferralProgram = obj.useIsEligibleSenderForReferralProgram(flag);
+  const obj2 = PremiumReferralIncentivesExperiment;
+  const premiumReferralIncentivesVariant = obj2.usePremiumReferralIncentivesVariant(_location);
   ({ referralRewardType, useAltReferralCardArt } = premiumReferralIncentivesVariant);
   const items = [SubscriptionStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  const obj3 = get_initialized;
+  const stateFromStores = obj3.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
   let tmp8 = true === isEligibleSenderForReferralProgram;
-  let isEligibleForIncentive = tmp8;
-  if (tmp8) {
-    isEligibleForIncentive = referralRewardType === tmp(12977).ReferralRewardType.ORBS;
-  }
+  const tmp6 = null != stateFromStores && !stateFromStores.isPurchasedExternally;
+  const tmp7 = null != stateFromStores && stateFromStores.hasPremiumNitroMonthly;
+  let isEligibleForIncentive = tmp8 && referralRewardType === tmp(12977).ReferralRewardType.ORBS;
   if (tmp8) {
     tmp8 = referralRewardType === tmp(12977).ReferralRewardType.DISCOUNT;
   }

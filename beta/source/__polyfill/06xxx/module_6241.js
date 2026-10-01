@@ -3,15 +3,19 @@
 // Dependencies: [19, 21, 6050, 1638, 6046, 6242]
 
 // Module 6241
-import jsxProd from "jsxProd" /* 21 */;
-import value22 from "value2" /* 6046 */;
-import _mod6242 from "module_6242" /* 6242 */;
-import noop_mod from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 6046 */;
+import react_native from "react-native" /* 6242 */;
+import react_mod from "react" /* 19 */;
 
-let noop = noop_mod;
-({ useCallback: c3, useMemo: closure_4, useRef: hasOwnProperty, memo } = noop);
-let noop = noop_mod;
-const jsx = jsxProd.jsx;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let memo;
+let react = react_mod;
+({ useCallback: c3, useMemo: closure_4, useRef: hasOwnProperty, memo } = react);
+react = react_mod;
+const jsx = Fragment.jsx;
 const __initData = { code: "function pnpm_BottomSheetFooterTsx1(){const{animatedFooterPosition,animatedKeyboardState,KEYBOARD_STATE,bottomInset}=this.__closure;let footerTranslateY=animatedFooterPosition.get();if(animatedKeyboardState.get()!==KEYBOARD_STATE.SHOWN){footerTranslateY=footerTranslateY-bottomInset;}return{transform:[{translateY:Math.max(0,footerTranslateY)}]};}" };
 const memoResult = memo(function BottomSheetFooterComponent(animatedFooterPosition) {
   animatedFooterPosition = animatedFooterPosition.animatedFooterPosition;
@@ -23,35 +27,35 @@ const memoResult = memo(function BottomSheetFooterComponent(animatedFooterPositi
   const children = animatedFooterPosition.children;
   let animatedStyle;
   const tmp = animatedStyle(null);
-  const bottomSheetInternal = animatedFooterPosition(style[2]).useBottomSheetInternal();
+  let obj = animatedFooterPosition(style[2]);
+  const bottomSheetInternal = obj.useBottomSheetInternal();
   const animatedFooterHeight = bottomSheetInternal.animatedFooterHeight;
   const animatedKeyboardState = bottomSheetInternal.animatedKeyboardState;
-  let obj = animatedFooterPosition(style[2]);
-  const tmp2 = style;
+  const obj2 = animatedFooterPosition(style[3]);
   const fn = function c() {
-    value = animatedFooterPosition.get();
-    value2 = animatedKeyboardState.get();
+    let items;
+    const value = animatedFooterPosition.get();
+    const value2 = animatedKeyboardState.get();
     let diff = value;
-    if (value2 !== value22.KEYBOARD_STATE.SHOWN) {
+    if (value2 !== GESTURE_SOURCE.KEYBOARD_STATE.SHOWN) {
       diff = value - num;
     }
-    const obj = { transform: null };
-    const items = [{ translateY: Math.max(0, diff) }];
-    obj.transform = items;
+    const obj = { transform: items };
+    items = [{ translateY: Math.max(0, diff) }];
+    ({ translateY: Math.max(0, diff) });
     return obj;
   };
-  const obj2 = animatedFooterPosition(style[3]);
   fn.__closure = { animatedFooterPosition, animatedKeyboardState, KEYBOARD_STATE: animatedFooterPosition(style[4]).KEYBOARD_STATE, bottomInset: num };
   fn.__workletHash = 5322275157644;
   fn.__initData = __initData;
   let items = [num, animatedKeyboardState, animatedFooterPosition];
+  ({ animatedFooterPosition, animatedKeyboardState, KEYBOARD_STATE: animatedFooterPosition(style[4]).KEYBOARD_STATE, bottomInset: num });
   animatedStyle = obj2.useAnimatedStyle(fn, items);
   const items1 = [style, animatedStyle];
   const items2 = [animatedFooterHeight];
-  const obj3 = { animatedFooterPosition, animatedKeyboardState, KEYBOARD_STATE: animatedFooterPosition(style[4]).KEYBOARD_STATE, bottomInset: num };
   const items3 = [animatedFooterHeight];
   const tmp5 = animatedKeyboardState(() => {
-    const items = [_mod6242.styles.container, style, animatedStyle];
+    const items = [react_native.styles.container, style, animatedStyle];
     return items;
   }, items1);
   const tmp6 = animatedFooterHeight((nativeEvent) => {
@@ -60,10 +64,11 @@ const memoResult = memo(function BottomSheetFooterComponent(animatedFooterPositi
   const tmp7 = animatedFooterHeight((height) => {
     const result = animatedFooterHeight.set(height.height);
   }, items3);
-  const boundingClientRect = animatedFooterPosition(style[2]).useBoundingClientRect(tmp, tmp7);
+  const obj4 = animatedFooterPosition(style[2]);
+  const boundingClientRect = obj4.useBoundingClientRect(tmp, tmp7);
   let tmp9 = null;
+  const tmp2 = style;
   if (null !== children) {
-    const obj5 = { ref: tmp, onLayout: tmp6, style: tmp5, children };
     tmp9 = jsx(num(tmp2[3]).View, { ref: tmp, onLayout: tmp6, style: tmp5, children });
   }
   return tmp9;

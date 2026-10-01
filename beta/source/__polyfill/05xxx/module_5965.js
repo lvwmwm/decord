@@ -6,8 +6,9 @@
 // Module 5965
 
 export const getHeaderTitle = function getHeaderTitle(options, name) {
+  let title;
   if (typeof options.headerTitle === "string") {
-    let title = options.headerTitle;
+    title = options.headerTitle;
   } else {
     title = name;
     if (undefined !== options.title) {

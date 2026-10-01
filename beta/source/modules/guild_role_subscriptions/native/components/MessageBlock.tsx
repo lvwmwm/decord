@@ -5,46 +5,43 @@
 // Exports: default
 
 // Module 11706 (MessageBlock)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
+const View = react_native.View;
+const jsx = Fragment.jsx;
 const MessageBlockColors = { RED: 0, [0]: "RED", YELLOW: 1, [1]: "YELLOW" };
-const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles((arg0) => {
+  let TEXT_FEEDBACK_WARNING;
+  let obj;
+  let obj4;
+  let tmp2;
   if (obj.RED === arg0) {
     obj = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL };
-    let tmp2 = obj;
-  } else if (tmp.YELLOW === arg0) {
+    tmp2 = obj;
+  } else if (obj.YELLOW === arg0) {
+    tmp2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
     const obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
-    tmp2 = obj2;
   }
-  const obj3 = { container: null, text: null };
-  const obj4 = {};
+  const obj3 = { container: obj4, text: { textAlign: "center", color: TEXT_FEEDBACK_WARNING } };
+  obj4 = { alignItems: "center", borderRadius: nativeDefault.radii.xs, borderWidth: 1, padding: 8, width: "100%" };
   const merged = Object.assign(tmp2);
-  obj4.alignItems = "center";
-  obj4.borderRadius = nativeDefault.radii.xs;
-  obj4.borderWidth = 1;
-  obj4.padding = 8;
-  obj4.width = "100%";
-  obj3.container = obj4;
   if (obj.RED === arg0) {
-    let TEXT_FEEDBACK_WARNING = tmp6(576).colors.TEXT_FEEDBACK_CRITICAL;
-  } else if (tmp.YELLOW === arg0) {
+    TEXT_FEEDBACK_WARNING = tmp6(576).colors.TEXT_FEEDBACK_CRITICAL;
+  } else if (obj.YELLOW === arg0) {
     TEXT_FEEDBACK_WARNING = tmp6(576).colors.TEXT_FEEDBACK_WARNING;
   }
-  obj3.text = { textAlign: "center", color: TEXT_FEEDBACK_WARNING };
   return obj3;
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/MessageBlock.tsx");
 
 export default function MessageBlock(children) {
+  children = children.children;
   const tmp = closure_6(children.color);
-  const obj = { style: tmp.container, children: jsx(native.LegacyText, { style: tmp.text, children: children.children }) };
-  return <View style={tmp.container}>{jsx(native.LegacyText, { style: tmp.text, children: arg0.children })}</View>;
+  return <View style={tmp.container}>{null}</View>;
 };
 export { MessageBlockColors };

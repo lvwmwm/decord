@@ -5,62 +5,78 @@
 // Exports: default
 
 // Module 17138 (NewMemberActionsCompletedModal)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { screen: { flex: 1, position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.8)", display: "flex", alignItems: "center", justifyContent: "center" }, text: { marginBottom: 16 }, progressBackground: null, progressForeground: null };
-let size = { borderRadius: nativeDefault.radii.round, height: 8, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, width: "60%" };
-obj2.progressBackground = size;
-obj2.progressForeground = { backgroundColor: nativeDefault.unsafe_rawColors.GREEN_330, borderRadius: nativeDefault.radii.round, height: 8 };
-let closure_7 = createStyles.createStyles(obj2);
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let size;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { screen: { flex: 1, position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.8)", display: "flex", alignItems: "center", justifyContent: "center" }, text: { marginBottom: 16 }, progressBackground: size, progressForeground: obj2 };
+size = { borderRadius: nativeDefault.radii.round, height: 8, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, width: "60%" };
+createStyles = createStyles.createStyles;
+obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.GREEN_330, borderRadius: nativeDefault.radii.round, height: 8 };
+let closure_7 = createStyles(obj);
 const __initData = { code: "function NewMemberActionsCompletedModalTsx1(){const{withDelay,withTiming,barWidth}=this.__closure;return{width:withDelay(500,withTiming(barWidth.get()*100+\"%\",{duration:700}))};}" };
-size = fn(2);
+size = size_mod;
 let result = size.fileFinishedImporting("modules/guild_onboarding_home/native/NewMemberActionsCompletedModal.tsx");
 
 export default function NewMemberActionsCompleted(arg0) {
+  let initialPercent;
+  let intl;
+  let items1;
+  let items2;
+  let numActions;
+  let obj7;
   let sharedValue;
   ({ initialPercent, numActions } = arg0);
   const tmp = closure_7();
-  sharedValue = sharedValue(4566).useSharedValue(initialPercent);
+  let obj = sharedValue(4566);
+  sharedValue = obj.useSharedValue(initialPercent);
   const items = [sharedValue];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj = sharedValue(4566);
+  let obj2 = sharedValue(4566);
   const fn = function b() {
-    const obj = { width: null };
-    const obj2 = ReanimatedRexport;
-    obj.width = obj2.withDelay(500, timing.withTiming(`${100 * sharedValue.get()}%`, { duration: 700 }));
+    let obj2;
+    let withDelay;
+    const obj = { width: withDelay(500, obj2.withTiming(`${100 * sharedValue.get()}%`, { duration: 700 })) };
+    withDelay = ReanimatedRexport.withDelay;
+    ReanimatedRexport;
+    obj2 = timing;
     return obj;
   };
-  let obj2 = sharedValue(4566);
   fn.__closure = { withDelay: sharedValue(4566).withDelay, withTiming: sharedValue(4837).withTiming, barWidth: sharedValue };
   fn.__workletHash = 7643178959760;
   fn.__initData = __initData;
+  ({ withDelay: sharedValue(4566).withDelay, withTiming: sharedValue(4837).withTiming, barWidth: sharedValue });
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  const effect1 = noop.useEffect(() => {
-    const timerId = setTimeout(() => closure_1_1(5039).popWithKey(sharedValue(11768).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY), 2500);
+  const effect1 = react.useEffect(() => {
+    const timerId = setTimeout(() => {
+      const obj = closure_1_1(closure_1_2[7]);
+      return obj.popWithKey(sharedValue(closure_1_2[8]).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY);
+    }, 2500);
   }, []);
-  const obj4 = { style: tmp.screen, children: null };
-  const obj5 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-overlay-light", children: null };
-  const intl = sharedValue(1115).intl;
-  obj5.children = intl.format(sharedValue(1115).t.pGj5u2, { count: numActions });
-  const items1 = [closure_5(sharedValue(4832).Text, obj5), ];
-  const obj6 = { style: tmp.progressBackground, children: null };
-  const obj7 = { style: null };
-  const items2 = [tmp.progressForeground, animatedStyle];
-  obj7.style = items2;
-  obj6.children = closure_5(ReanimatedRexportDefault.View, obj7);
+  const obj4 = { style: tmp.screen, children: items1 };
+  const obj5 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-overlay-light", children: intl.format(sharedValue(1115).t.pGj5u2, { count: numActions }) };
+  const Text = sharedValue(4832).Text;
+  intl = sharedValue(1115).intl;
+  items1 = [closure_5(Text, obj5), ];
+  const obj6 = { style: tmp.progressBackground, children: closure_5(ReanimatedRexportDefault.View, obj7) };
+  obj7 = { style: items2 };
+  items2 = [tmp.progressForeground, animatedStyle];
   items1[1] = closure_5(View, obj6);
-  obj4.children = items1;
   return closure_6(View, obj4);
 };

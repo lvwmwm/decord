@@ -3,26 +3,22 @@
 // Dependencies: [41, 42, 93, 95, 98, 9897, 9914]
 
 // Module 9913
-import Filter from "Filter" /* 9914 */;
+import EmptyDuration from "EmptyDuration" /* 9897 */;
+import _mod9914 from "module_9914" /* 9914 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const AbstractMergeDateRangeRefiner = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -32,33 +28,26 @@ function _isNativeReflectConstruct() {
 }
 class AbstractMergeDateRangeRefiner {
   constructor() {
-    self = this;
-    tmp = c2(this, AbstractMergeDateRangeRefiner);
-    tmp2 = closure_4;
-    obj = closure_4(AbstractMergeDateRangeRefiner);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, AbstractMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(AbstractMergeDateRangeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(AbstractMergeDateRangeRefiner, Filter.MergingRefiner);
+_inherits(AbstractMergeDateRangeRefiner, _mod9914.MergingRefiner);
 const entry = {
   key: "shouldMergeResults",
   value: function shouldMergeResults(str, end, end2) {
-    end = end.end;
-    let tmp = !end;
-    if (!end) {
-      tmp = !end2.end;
-    }
+    let tmp = !end.end && !end2.end;
     if (tmp) {
       const self = this;
       tmp = null != str.match(this.patternBetween());
@@ -71,7 +60,7 @@ let items = [
   {
     key: "mergeResults",
     value: function mergeResults(arg0, start, start2) {
-      closure_0 = start;
+      let closure_0 = start;
       let first = start2;
       start = start.start;
       let result = start.isOnlyWeekdayComponent();
@@ -84,8 +73,9 @@ let items = [
         const certainComponents = start3.getCertainComponents();
         const item = certainComponents.forEach((item) => {
           const start = closure_0.start;
+          const tmp = closure_0;
           if (!start.isCertain(item)) {
-            const start2 = closure_0.start;
+            const start2 = tmp.start;
             const start3 = first.start;
             start2.imply(item, start3.get(item));
           }
@@ -94,8 +84,9 @@ let items = [
         const certainComponents1 = start4.getCertainComponents();
         const item1 = certainComponents1.forEach((item) => {
           const start = first.start;
+          const tmp = first;
           if (!start.isCertain(item)) {
-            const start2 = first.start;
+            const start2 = tmp.start;
             const start3 = closure_0.start;
             start2.imply(item, start3.get(item));
           }
@@ -105,6 +96,7 @@ let items = [
       const start6 = start2.start;
       let tmp5 = start2;
       let obj = start;
+      const dateResult = start5.date();
       if (dateResult > start6.date()) {
         const start18 = start.start;
         const dateResult1 = start18.date();
@@ -112,7 +104,8 @@ let items = [
         const dateResult2 = start19.date();
         const start20 = start2.start;
         if (start20.isOnlyWeekdayComponent()) {
-          if (AbstractMergeDateRangeRefiner(9897).addDuration(dateResult2, { day: 7 }) > dateResult1) {
+          const tmp6 = require;
+          if (EmptyDuration.addDuration(dateResult2, { day: 7 }) > dateResult1) {
             const addDurationResult = tmp6(9897).addDuration(dateResult2, { day: 7 });
             const start15 = start2.start;
             start15.imply("day", addDurationResult.getDate());
@@ -123,11 +116,11 @@ let items = [
             tmp5 = start2;
             obj = start;
           }
-          tmp6 = AbstractMergeDateRangeRefiner;
         }
         const start7 = start.start;
         if (start7.isOnlyWeekdayComponent()) {
-          if (AbstractMergeDateRangeRefiner(9897).addDuration(dateResult1, { day: -7 }) < dateResult2) {
+          const tmp8 = require;
+          if (EmptyDuration.addDuration(dateResult1, { day: -7 }) < dateResult2) {
             const addDurationResult1 = tmp8(9897).addDuration(dateResult1, { day: -7 });
             const start12 = start.start;
             start12.imply("day", addDurationResult1.getDate());
@@ -138,29 +131,28 @@ let items = [
             tmp5 = start2;
             obj = start;
           }
-          tmp8 = AbstractMergeDateRangeRefiner;
         }
         const start8 = start2.start;
         if (start8.isDateWithUnknownYear()) {
-          if (AbstractMergeDateRangeRefiner(9897).addDuration(dateResult2, { year: 1 }) > dateResult1) {
+          const tmp10 = require;
+          if (EmptyDuration.addDuration(dateResult2, { year: 1 }) > dateResult1) {
             const start11 = start2.start;
-            start11.imply("year", tmp10(9897).addDuration(dateResult2, { year: 1 }).getFullYear());
+            const addDurationResult2 = tmp10(9897).addDuration(dateResult2, { year: 1 });
+            start11.imply("year", addDurationResult2.getFullYear());
             tmp5 = start2;
             obj = start;
-            const addDurationResult2 = tmp10(9897).addDuration(dateResult2, { year: 1 });
           }
-          tmp10 = AbstractMergeDateRangeRefiner;
         }
         const start9 = start.start;
         if (start9.isDateWithUnknownYear()) {
-          if (AbstractMergeDateRangeRefiner(9897).addDuration(dateResult1, { year: -1 }) < dateResult2) {
+          const tmp12 = require;
+          if (EmptyDuration.addDuration(dateResult1, { year: -1 }) < dateResult2) {
             const start10 = start.start;
-            start10.imply("year", tmp12(9897).addDuration(dateResult1, { year: -1 }).getFullYear());
+            const addDurationResult3 = tmp12(9897).addDuration(dateResult1, { year: -1 });
+            start10.imply("year", addDurationResult3.getFullYear());
             tmp5 = start2;
             obj = start;
-            const addDurationResult3 = tmp12(9897).addDuration(dateResult1, { year: -1 });
           }
-          tmp12 = AbstractMergeDateRangeRefiner;
         }
         const items = [start, start2];
         first = items[0];

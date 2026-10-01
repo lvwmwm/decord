@@ -6,18 +6,20 @@
 
 // Module 9380 (StageChannelParticipantUtils)
 import DurationsDefault from "Durations" /* 1091 */;
+import intl6 from "intl" /* 1115 */;
 import UserUtils from "UserUtils" /* 4678 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 const DAY = DurationsDefault.Millis.DAY;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/StageChannelParticipantUtils.tsx");
 
 export const participantMemberInfo = function participantMemberInfo(participant) {
+  const obj = UserUtils;
   if (obj.isNewUser(participant.user)) {
     const intl5 = tmp(1115).intl;
-    return intl5.string(tmp(1115).t.VaCdhQ);
+    return intl5.string(intl6.t.VaCdhQ);
   } else {
+    let stringResult;
     const member = participant.member;
     let joinedAt;
     if (member != null) {
@@ -25,7 +27,7 @@ export const participantMemberInfo = function participantMemberInfo(participant)
     }
     if (null == joinedAt) {
       const intl4 = tmp(1115).intl;
-      let stringResult = intl4.string(tmp(1115).t.CQmzib);
+      stringResult = intl4.string(tmp(1115).t.CQmzib);
     } else {
       if (null != participant.member) {
         if (participant.member.roles.length > 0) {
@@ -42,8 +44,10 @@ export const participantMemberInfo = function participantMemberInfo(participant)
         }
       }
       const _Date = Date;
-      const date = new Date();
+      const self = this;
+      const self2 = this;
       const _Date2 = Date;
+      const date = new Date();
       const time = date.getTime();
       if (time - Date.parse(joinedAt) < DAY) {
         const intl2 = tmp(1115).intl;
@@ -55,5 +59,4 @@ export const participantMemberInfo = function participantMemberInfo(participant)
     }
     return stringResult;
   }
-  obj = UserUtils;
 };

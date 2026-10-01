@@ -3,27 +3,28 @@
 // Dependencies: [13814, 13846, 13789, 13842]
 
 // Module 13845
+import _mod13789 from "module_13789" /* 13789 */;
 import _mod13814 from "module_13814" /* 13814 */;
+import defineProperty2 from "defineProperty2" /* 13842 */;
+import _mod13846 from "module_13846" /* 13846 */;
 
 
 export default (arg0, arg1, value, arg3) => {
-  let obj = arg3;
-  if (!arg3) {
-    obj = {};
-  }
+  const obj = arg3 || {};
   let flag = obj.enumerable;
   let name = arg1;
+  const tmp = arg1;
   if (undefined !== obj.name) {
     name = obj.name;
   }
   if (_mod13814(value)) {
-    tmp3(13846)(value, name, obj);
+    _mod13846(value, name, obj);
   }
   if (obj.global) {
     if (flag) {
       arg0[arg1] = value;
     } else {
-      tmp3(13789)(arg1, value);
+      _mod13789(arg1, value);
     }
   } else {
     try {
@@ -32,16 +33,17 @@ export default (arg0, arg1, value, arg3) => {
           flag = true;
         }
       } else {
-        delete tmp[tmp2];
-      }
-      if (flag) {
-        arg0[arg1] = value;
-      } else {
-        const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
-        tmp3(13842).f(arg0, arg1, obj2);
-        const tmp3Result = tmp3(13842);
+        delete tmp5[tmp];
       }
     } catch (err) {
+    }
+    const tmp6 = flag;
+    if (tmp6) {
+      arg0[arg1] = value;
+    } else {
+      const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
+      const tmp2Result = defineProperty2;
+      tmp2Result.f(arg0, arg1, obj2);
     }
   }
   return arg0;

@@ -5,30 +5,33 @@
 // Exports: default
 
 // Module 4306 (nextDay)
-import module_4066_mod from "module_4066" /* 4066 */;
-import module_4181_mod from "module_4181" /* 4181 */;
+import addDays_mod from "addDays" /* 4066 */;
+import getDay_mod from "getDay" /* 4181 */;
 import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
-let module_4066 = module_4066_mod;
-if (!module_4066) {
-  const obj = { default: module_4066 };
-  let tmp3 = obj;
+let tmp3;
+let tmp5;
+let tmp7;
+let addDays = addDays_mod;
+if (!addDays) {
+  tmp3 = { default: addDays };
+  const obj = { default: addDays };
 } else {
-  tmp3 = module_4066;
+  tmp3 = addDays;
 }
-module_4066 = tmp3;
-let module_4181 = module_4181_mod;
-if (!module_4181) {
-  const obj2 = { default: module_4181 };
-  let tmp5 = obj2;
+addDays = tmp3;
+let getDay = getDay_mod;
+if (!getDay) {
+  tmp5 = { default: getDay };
+  const obj2 = { default: getDay };
 } else {
-  tmp5 = module_4181;
+  tmp5 = getDay;
 }
-module_4181 = tmp5;
+getDay = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
+  tmp7 = { default: requiredArgs };
   const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
 } else {
   tmp7 = requiredArgs;
 }
@@ -36,11 +39,10 @@ requiredArgs = tmp7;
 
 export default function nextDay(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  const diff = arg1 - module_4181.default(arg0);
+  const diff = arg1 - getDay.default(arg0);
   let sum = diff;
   if (diff <= 0) {
     sum = diff + 7;
   }
-  return module_4066.default(arg0, sum);
+  return addDays.default(arg0, sum);
 };
-export default exports.default;

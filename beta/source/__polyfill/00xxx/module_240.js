@@ -3,8 +3,7 @@
 // Dependencies: []
 
 // Module 240
-
-export default {
+const obj = {
   setup() {
 
   },
@@ -21,3 +20,5 @@ export default {
 
   }
 };
+
+export default obj;

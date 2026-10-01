@@ -1,0 +1,10 @@
+// Module ID: 14979
+// Function ID: 14980
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 14979 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "6bf3cf5d375d7561cb3b9bf74212ed45", name: "en-GB", type: "png" });

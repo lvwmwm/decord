@@ -4,30 +4,40 @@
 // Dependencies: [19, 17, 21, 1177, 4836, 576, 12137, 11820, 2]
 
 // Module 12138 (ChatPlaceholderRow)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import native from "native" /* 1177 */;
 import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 11820 */;
-import noop from "module_19" /* 19 */;
+import getChatPlaceholderRowHeight from "getChatPlaceholderRowHeight" /* 12137 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const tmp3 = fn(1177).AVATAR_SIZE_MAP[fn(undefined, 1177).AvatarSizes.NORMAL];
-const createStyles = fn(4836);
-let obj = { row: { paddingLeft: nativeDefault.space.PX_12, paddingTop: fn(12137).CHAT_PLACEHOLDER_ROW_MARGIN_TOP, flexDirection: "row" }, rowInner: null, placeholderAvatar: null, placeholderText: null, placeholderBody: null };
-let obj3 = { paddingLeft: nativeDefault.space.PX_12, paddingTop: fn(12137).CHAT_PLACEHOLDER_ROW_MARGIN_TOP, flexDirection: "row" };
-obj.rowInner = { marginHorizontal: nativeDefault.space.PX_12, flex: 1 };
-let size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: tmp3, width: tmp3, borderRadius: nativeDefault.radii.round };
-obj.placeholderAvatar = size;
-const obj4 = { marginHorizontal: nativeDefault.space.PX_12, flex: 1 };
-obj.placeholderText = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: fn(12137).CHAT_PLACEHOLDER_ROW_LINE_HEIGHT, borderRadius: nativeDefault.radii.sm };
-let obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: fn(12137).CHAT_PLACEHOLDER_ROW_LINE_HEIGHT, borderRadius: nativeDefault.radii.sm };
-obj.placeholderBody = { marginTop: fn(12137).CHAT_PLACEHOLDER_ROW_LINE_MARGIN_TOP, width: "100%" };
-let closure_5 = createStyles.createStyles(obj);
-let obj6 = { marginTop: fn(12137).CHAT_PLACEHOLDER_ROW_LINE_MARGIN_TOP, width: "100%" };
-size = fn(2);
-const result = size.fileFinishedImporting("modules/chat/native/placeholder/ChatPlaceholderRow.tsx");
-
-export default noop.memo(function ChatPlaceholderRow(lines) {
+let c3;
+let closure_4;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let size;
+const View = react_native.View;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+const tmp3 = native.AVATAR_SIZE_MAP[native.AvatarSizes.NORMAL];
+let createStyles = createStyles_mod;
+let obj = { row: obj2, rowInner: obj3, placeholderAvatar: size, placeholderText: obj4, placeholderBody: obj5 };
+obj2 = { paddingLeft: nativeDefault.space.PX_12, paddingTop: getChatPlaceholderRowHeight.CHAT_PLACEHOLDER_ROW_MARGIN_TOP, flexDirection: "row" };
+createStyles = createStyles.createStyles;
+obj3 = { marginHorizontal: nativeDefault.space.PX_12, flex: 1 };
+size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: tmp3, width: tmp3, borderRadius: nativeDefault.radii.round };
+obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: getChatPlaceholderRowHeight.CHAT_PLACEHOLDER_ROW_LINE_HEIGHT, borderRadius: nativeDefault.radii.sm };
+obj5 = { marginTop: getChatPlaceholderRowHeight.CHAT_PLACEHOLDER_ROW_LINE_MARGIN_TOP, width: "100%" };
+let closure_5 = createStyles(obj);
+const memoResult = react.memo(function ChatPlaceholderRow(lines) {
+  let items1;
+  let items2;
+  let items3;
+  let items4;
   lines = lines.lines;
   const tmp = closure_5();
   const rounded = Math.floor(10 * Math.random());
@@ -36,26 +46,31 @@ export default noop.memo(function ChatPlaceholderRow(lines) {
   const sum = Math.floor(50 * Math.random()) + 10;
   if (0 < lines) {
     do {
-      let obj = { style: null };
-      let items1 = [tmp.placeholderText, tmp.placeholderBody, ];
-      let obj2 = { width: null };
+      let obj = { style: items1 };
+      items1 = [tmp.placeholderText, tmp.placeholderBody, ];
+      let obj2 = { width: "" + getChatPlaceholderRowWidthDefault(rounded + num) + "%" };
       let _HermesInternal = HermesInternal;
-      obj2.width = "" + getChatPlaceholderRowWidthDefault(rounded + num) + "%";
+      let push = items.push;
       items1[2] = obj2;
-      obj.style = items1;
-      let arr = items.push(React3(View, obj, num));
+      let arr = push(_false(View, obj, num));
       num = num + 1;
     } while (num < lines);
   }
-  const obj3 = { style: tmp.row, children: null };
-  const items2 = [React3(View, { style: tmp.placeholderAvatar }), ];
-  const obj5 = { style: tmp.rowInner, children: null };
-  const obj6 = { style: null };
-  const items3 = [tmp.placeholderText, { width: "" + sum + "%" }];
-  obj6.style = items3;
-  const items4 = [React3(View, obj6), items];
-  obj5.children = items4;
-  items2[1] = React4(View, obj5);
-  obj3.children = items2;
-  return React4(View, obj3);
+  const obj3 = { style: tmp.row, children: items2 };
+  items2 = [, ];
+  const obj4 = { style: tmp.placeholderAvatar };
+  items2[0] = _false(View, obj4);
+  const obj5 = { style: tmp.rowInner, children: items4 };
+  const obj6 = { style: items3 };
+  items3 = [tmp.placeholderText, { width: "" + sum + "%" }];
+  items4 = [, ];
+  ({ width: "" + sum + "%" });
+  items4[0] = _false(View, obj6);
+  items4[1] = items;
+  items2[1] = React3(View, obj5);
+  return React3(View, obj3);
 });
+size = size_mod;
+const result = size.fileFinishedImporting("modules/chat/native/placeholder/ChatPlaceholderRow.tsx");
+
+export default memoResult;

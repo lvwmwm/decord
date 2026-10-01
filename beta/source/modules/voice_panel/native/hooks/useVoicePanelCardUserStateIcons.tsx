@@ -5,25 +5,30 @@
 // Exports: default
 
 // Module 16931 (useVoicePanelCardUserStateIcons)
+import Fragment from "Fragment" /* 21 */;
+import CallConstants from "CallConstants" /* 4857 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9133 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9437 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 9477 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
 import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 16877 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap, importDefault;
 
-require = fn;
-const ParticipantTypes = fn(4857).ParticipantTypes;
-const jsx = fn(21).jsx;
+let tmp2;
+const MobileAudioOutputExperimentDefault = tmp2(9437);
+const useMuteAwareLocalVolumeDefault = tmp2(9477);
+const ParticipantTypes = CallConstants.ParticipantTypes;
+const jsx = Fragment.jsx;
 const VoicePanelCardUserStateIconType = { STREAM_ICON: "STREAM_ICON", USER_VIDEO_ICON: "USER_VIDEO_ICON", MUTE_DEAFEN_ICON: "MUTE_DEAFEN_ICON", USER_DISCONNECTED_ICON: "DISCONNECTED_ICON", SPEAKER_MUTE_ICON: "SPEAKER_MUTE_ICON" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelCardUserStateIcons.tsx");
 
 export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
+  let _null;
+  let closure_0;
   _require = arg0;
   importDefault = id;
   let tmp = arg3;
@@ -40,78 +45,96 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   let isRTCDisconnectedUIVisible;
   let callback;
   let callback1;
+  let obj = setShowFloatingCTA;
+  const tmp2 = importDefault;
+  const tmp3 = dependencyMap;
   setShowFloatingCTA = setShowFloatingCTA.useContext(VoicePanelStateContextDefault).setShowFloatingCTA;
-  let tmp6;
+  const tmp4 = _require;
+  let tmp5 = require("VoiceStateIconUtils");
+  let tmp7;
+  const useMuteDeafenIconState = tmp5.useMuteDeafenIconState;
   if (arg0 === stateFromStores.USER) {
-    tmp6 = id;
+    tmp7 = id;
   }
-  muteDeafenIconState = require("VoiceStateIconUtils").useMuteDeafenIconState(tmp6, guildId);
-  let obj2 = require("VoiceStateIconUtils");
-  let tmp8;
+  muteDeafenIconState = useMuteDeafenIconState(tmp7, guildId);
+  let tmp10;
+  const useVideoIconState = tmp4(9133).useVideoIconState;
+  tmp4(9133);
   if (arg0 === stateFromStores.USER) {
-    tmp8 = id;
+    tmp10 = id;
   }
-  videoIconState = require("VoiceStateIconUtils").useVideoIconState(tmp8, guildId);
-  const tmp4Result = require("VoiceStateIconUtils");
+  videoIconState = useVideoIconState(tmp10, guildId);
   let items = [muteDeafenIconState];
-  stateFromStores = require("useStateFromStores").useStateFromStores(items, () => muteDeafenIconState.isConnected());
-  const tmp4Result4 = require("useStateFromStores");
+  const tmp4Result4 = tmp4(563);
+  stateFromStores = tmp4Result4.useStateFromStores(items, () => muteDeafenIconState.isConnected());
   let items1 = [videoIconState];
   const items2 = [tmp, id];
-  stateFromStores1 = require("useStateFromStores").useStateFromStores(items1, () => {
+  const tmp4Result5 = tmp4(563);
+  stateFromStores1 = tmp4Result5.useStateFromStores(items1, () => {
     let voicePlatformForChannel = null;
     if (null != c2) {
       voicePlatformForChannel = null;
-      if (null != closure_1) {
+      if (null != id) {
         voicePlatformForChannel = VoiceStateStore.getVoicePlatformForChannel(tmp, tmp3);
       }
     }
     return voicePlatformForChannel;
   }, items2);
-  let tmp13;
-  const tmp4Result5 = require("useStateFromStores");
-  if (arg0 === stateFromStores.STREAM) {
-    tmp13 = id;
-  }
+  let tmp15;
   const tmp2Result = useMuteAwareLocalVolumeDefault;
-  showTileVolumeIndicator = MobileAudioOutputExperimentDefault.useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
-  if (showTileVolumeIndicator) {
-    showTileVolumeIndicator = 0 === tmp2Result(tmp13, tmp4(4891).MediaEngineContextTypes.STREAM).effectiveVolume;
+  if (arg0 === stateFromStores.STREAM) {
+    tmp15 = id;
   }
-  if (showTileVolumeIndicator) {
-    showTileVolumeIndicator = arg0 === tmp5.STREAM;
-  }
+  const effectiveVolume = tmp2Result(tmp15, tmp4(4891).MediaEngineContextTypes.STREAM).effectiveVolume;
   const tmp2Result2 = MobileAudioOutputExperimentDefault;
-  isRTCDisconnectedUIVisible = require("RTCConnectionDesyncHooks").useIsRTCDisconnectedUIVisible(tmp, id);
+  showTileVolumeIndicator = tmp2Result2.useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
+  if (showTileVolumeIndicator) {
+    showTileVolumeIndicator = 0 === effectiveVolume;
+  }
+  if (showTileVolumeIndicator) {
+    showTileVolumeIndicator = arg0 === tmp6.STREAM;
+  }
+  const tmp4Result6 = tmp4(15868);
+  isRTCDisconnectedUIVisible = tmp4Result6.useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {
     setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
   }, items3);
   callback1 = obj.useCallback(() => {
-    const obj2 = {
+    let intl;
+    let obj = {
       key: "user-disconnected-indicator",
       icon() {
-        return stateFromStores1(closure_1_0(6028).CircleErrorIcon, { size: "xs", color: id(576).colors.STATUS_WARNING });
+        const obj = { size: "xs", color: id(_null[15]).colors.STATUS_WARNING };
+        const CircleErrorIcon = closure_1_0(_null[14]).CircleErrorIcon;
+        return stateFromStores1(CircleErrorIcon, obj);
       },
-      content: null
+      content: intl.string(closure_0(_null[16]).t.HFwRpk)
     };
-    const intl = closure_0(_null[16]).intl;
-    obj2.content = intl.string(closure_0(_null[16]).t.HFwRpk);
-    id(_null[13]).open(obj2);
+    const open = id(_null[13]).open;
+    id(_null[13]);
+    intl = closure_0(_null[16]).intl;
+    open(obj);
   }, []);
   const items4 = [stateFromStores, arg0, videoIconState, muteDeafenIconState, isRTCDisconnectedUIVisible, stateFromStores1, callback, id, callback1, showTileVolumeIndicator];
-  return setShowFloatingCTA.useMemo(() => {
-    if (stateFromStores) {
+  return obj.useMemo(() => {
+    let obj;
+    let tmp15;
+    let tmp = stateFromStores;
+    if (tmp) {
       if (closure_0 === ParticipantTypes.STREAM) {
         const items = [];
-        if (showTileVolumeIndicator) {
+        const tmp20 = showTileVolumeIndicator;
+        if (tmp20) {
           let obj2 = {
             type: obj.SPEAKER_MUTE_ICON,
             onPress() {
-                    const obj2 = { key: "" + id + "-stream-status", content: null };
-                    const intl = closure_0(1115).intl;
-                    obj2.content = intl.string(closure_0(1115).t.Q8Uzof);
-                    closure_1(4528).open(obj2);
+                    let intl;
+                    const tmp = closure_1(c2[13]);
+                    const open = tmp.open;
+                    const obj = { key: "" + closure_1_1 + "-stream-status", content: intl.string(closure_0(c2[16]).t.Q8Uzof) };
+                    intl = closure_0(c2[16]).intl;
+                    open(obj);
                   }
           };
           items.push(obj2);
@@ -119,75 +142,74 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
         let obj3 = { type: obj.STREAM_ICON, voicePlatform: stateFromStores1 };
         items.push(obj3);
         return items;
-      } else if (tmp !== tmp2.USER) {
+      } else if (tmp2 !== tmp3.USER) {
         return [];
       } else {
         const items1 = [];
-        if (isRTCDisconnectedUIVisible) {
-          obj = { type: null, onPress: null };
-          obj.type = obj.USER_DISCONNECTED_ICON;
-          obj.onPress = callback1;
+        const tmp26 = isRTCDisconnectedUIVisible;
+        if (tmp26) {
+          obj = { type: obj.USER_DISCONNECTED_ICON, onPress: callback1 };
           items1.push(obj);
         }
-        let tmp8 = null != videoIconState;
-        if (tmp8) {
-          tmp8 = tmp6 !== VoiceStateIconUtils.VideoIconState.VIDEO_ACTIVE;
+        let tmp9 = null != videoIconState;
+        if (tmp9) {
+          tmp9 = tmp7 !== VoiceStateIconUtils.VideoIconState.VIDEO_ACTIVE;
         }
-        if (tmp8) {
-          let obj4 = { type: obj.USER_VIDEO_ICON, videoIconState: tmp6, onPress: null };
-          let tmp14;
-          if (tmp6 === VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO) {
-            tmp14 = callback;
+        if (tmp9) {
+          let obj4 = { type: obj.USER_VIDEO_ICON, videoIconState: tmp7, onPress: tmp15 };
+          const push = items1.push;
+          tmp15 = undefined;
+          if (videoIconState === VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO) {
+            tmp15 = callback;
           }
-          obj4.onPress = tmp14;
-          items1.push(obj4);
+          push(obj4);
         }
         if (null != muteDeafenIconState) {
           let obj5 = {
             type: obj.MUTE_DEAFEN_ICON,
-            muteDeafenIconState: tmp16,
+            muteDeafenIconState: tmp17,
             withLeftMargin: items1.length > 0,
             onPress() {
-                    if (closure_0(9133).MuteDeafenIconState.DEAFENED_SERVER === muteDeafenIconState) {
-                      const obj2 = { key: null, content: null };
+                    let intl;
+                    let intl2;
+                    let intl3;
+                    let intl4;
+                    let intl5;
+                    if (closure_0(c2[6]).MuteDeafenIconState.DEAFENED_SERVER === muteDeafenIconState) {
                       const _HermesInternal4 = HermesInternal;
-                      obj2.key = "" + id + "-status";
-                      const intl4 = tmp2(1115).intl;
-                      obj2.content = intl4.string(tmp2(1115).t.btxSdB);
-                      closure_1(4528).open(obj2);
-                      const obj7 = closure_1(4528);
-                    } else if (tmp2(9133).MuteDeafenIconState.DEAFENED === tmp) {
-                      const obj4 = { key: null, content: null };
+                      const obj2 = { key: "" + closure_1_1 + "-status", content: intl4.string(closure_0(c2[16]).t.btxSdB) };
+                      const open4 = closure_1(c2[13]).open;
+                      closure_1(c2[13]);
+                      intl4 = tmp2(tmp3[16]).intl;
+                      open4(obj2);
+                    } else if (closure_0(c2[6]).MuteDeafenIconState.DEAFENED === muteDeafenIconState) {
                       const _HermesInternal3 = HermesInternal;
-                      obj4.key = "" + id + "-status";
-                      const intl3 = tmp2(1115).intl;
-                      obj4.content = intl3.string(tmp2(1115).t.NjmiOL);
-                      closure_1(4528).open(obj4);
-                      const obj5 = closure_1(4528);
-                    } else if (tmp2(9133).MuteDeafenIconState.MUTED_SERVER === tmp) {
-                      const obj6 = { key: null, content: null };
+                      const obj3 = { key: "" + closure_1_1 + "-status", content: intl3.string(closure_0(c2[16]).t.NjmiOL) };
+                      const open3 = closure_1(c2[13]).open;
+                      closure_1(c2[13]);
+                      intl3 = tmp2(tmp3[16]).intl;
+                      open3(obj3);
+                    } else if (closure_0(c2[6]).MuteDeafenIconState.MUTED_SERVER === muteDeafenIconState) {
                       const _HermesInternal2 = HermesInternal;
-                      obj6.key = "" + id + "-status";
-                      const intl2 = tmp2(1115).intl;
-                      obj6.content = intl2.string(tmp2(1115).t.uLddbQ);
-                      closure_1(4528).open(obj6);
-                      const obj3 = closure_1(4528);
-                    } else if (tmp2(9133).MuteDeafenIconState.MUTED_LOCAL === tmp) {
-                      const obj8 = { key: null, content: null };
+                      const obj4 = { key: "" + closure_1_1 + "-status", content: intl2.string(closure_0(c2[16]).t.uLddbQ) };
+                      const open2 = closure_1(c2[13]).open;
+                      closure_1(c2[13]);
+                      intl2 = tmp2(tmp3[16]).intl;
+                      open2(obj4);
+                    } else if (closure_0(c2[6]).MuteDeafenIconState.MUTED_LOCAL === muteDeafenIconState) {
                       const _HermesInternal = HermesInternal;
-                      obj8.key = "" + id + "-status";
-                      const intl = tmp2(1115).intl;
-                      obj8.content = intl.string(tmp2(1115).t.Q8Uzof);
-                      closure_1(4528).open(obj8);
-                      const obj = closure_1(4528);
-                    } else if (tmp2(9133).MuteDeafenIconState.MUTED === tmp) {
-                      const obj10 = { key: null, content: null };
+                      const obj = { key: "" + closure_1_1 + "-status", content: intl.string(closure_0(c2[16]).t.Q8Uzof) };
+                      const open = closure_1(c2[13]).open;
+                      closure_1(c2[13]);
+                      intl = tmp2(tmp3[16]).intl;
+                      open(obj);
+                    } else if (closure_0(c2[6]).MuteDeafenIconState.MUTED === muteDeafenIconState) {
                       const _HermesInternal5 = HermesInternal;
-                      obj10.key = "" + id + "-status";
-                      const intl5 = tmp2(1115).intl;
-                      obj10.content = intl5.string(tmp2(1115).t.tjtv3P);
-                      closure_1(4528).open(obj10);
-                      const obj9 = closure_1(4528);
+                      const obj5 = { key: "" + closure_1_1 + "-status", content: intl5.string(closure_0(c2[16]).t.tjtv3P) };
+                      const open5 = closure_1(c2[13]).open;
+                      closure_1(c2[13]);
+                      intl5 = tmp2(tmp3[16]).intl;
+                      open5(obj5);
                     }
                   }
           };

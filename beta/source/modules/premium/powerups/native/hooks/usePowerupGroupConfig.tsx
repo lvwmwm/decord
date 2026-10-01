@@ -5,52 +5,58 @@
 // Exports: default
 
 // Module 12045 (usePowerupGroupConfig)
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import _modDef2519 from "module_2519" /* 2519 */;
 import GuildTagUtils from "GuildTagUtils" /* 7610 */;
 import _modDef12046 from "module_12046" /* 12046 */;
 import _modDef12047 from "module_12047" /* 12047 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/usePowerupGroupConfig.tsx");
 
 export default function usePowerupGroupConfig(arg0, arg1) {
+  let closure_0;
+  let stateFromStores;
   _require = arg0;
   const group = arg1;
+  let obj = require("get initialized");
   const items = [GuildStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     const guild = GuildStore.getGuild(closure_0);
     let guildSupportsTagsResult = null != guild;
     if (guildSupportsTagsResult) {
-      guildSupportsTagsResult = GuildTagUtils.guildSupportsTags(guild);
+      const obj = GuildTagUtils;
+      guildSupportsTagsResult = obj.guildSupportsTags(guild);
     }
     return guildSupportsTagsResult;
   });
   const items1 = [arg1, stateFromStores];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
+    let intl;
+    let intl2;
+    let obj3;
+    let stringResult;
     if ("guildTagsBadgePacks" === group.group) {
-      const obj2 = { title: null, description: null, image: null, disabledReason: null, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
-      const intl = util.intl;
-      obj2.title = intl.string(_modDef2519.KC9HRW);
-      const intl2 = util.intl;
-      obj2.description = intl2.string(_modDef2519.GJiSmP);
-      const obj3 = { staticUrl: _modDef12046, animatedUrl: _modDef12047 };
-      obj2.image = obj3;
-      let stringResult;
+      const obj2 = { title: intl.string(_modDef2519.KC9HRW), description: intl2.string(_modDef2519.GJiSmP), image: obj3, disabledReason: stringResult, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
+      intl = intl4.intl;
+      intl2 = intl4.intl;
+      stringResult = undefined;
+      obj3 = { staticUrl: _modDef12046, animatedUrl: _modDef12047 };
+      const tmp7 = importDefault;
       if (!stateFromStores) {
-        const intl3 = util.intl;
-        stringResult = intl3.string(_modDef2519.lvk1Gc);
+        const intl3 = intl4.intl;
+        stringResult = intl3.string(tmp7(2519).lvk1Gc);
       }
-      obj2.disabledReason = stringResult;
       return obj2;
     } else {
-      GlobalUtils.assertNever(tmp.group);
+      const obj = GlobalUtils;
+      obj.assertNever(tmp.group);
     }
   }, items1);
 };

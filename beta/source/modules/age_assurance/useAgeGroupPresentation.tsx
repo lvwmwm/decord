@@ -6,6 +6,7 @@
 
 // Module 14274 (useAgeGroupPresentation)
 import Constants from "Constants" /* 1074 */;
+import intl4 from "intl" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 5048 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
@@ -18,29 +19,37 @@ let result = size.fileFinishedImporting("modules/age_assurance/useAgeGroupPresen
 
 export { AgeGroupState };
 export const useAgeGroupState = function useAgeGroupState() {
+  let TEEN;
   const obj = AgeVerificationUtils;
   const isAgeVerified = obj.useIsAgeVerified();
+  const obj2 = AgeVerificationUtils;
   if (obj2.useIsVerifiedTeen()) {
-    let TEEN = tmp2.TEEN;
+    TEEN = tmp2.TEEN;
   } else {
     TEEN = isAgeVerified ? tmp2.ADULT : tmp2.UNVERIFIED;
   }
   return TEEN;
 };
 export const handleOpenAgeGatedContentArticle = function handleOpenAgeGatedContentArticle() {
-  const obj = AgeVerificationActionCreatorsDefault;
-  obj.openUrl(HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
+  const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
+  AgeVerificationActionCreatorsDefault;
+  const obj = HelpdeskUtilsDefault;
+  openUrl(obj.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
 };
 export const handleShowAgeVerification = function handleShowAgeVerification() {
   const obj = AgeVerificationActionCreatorsDefault;
-  const result = obj.showAgeVerificationGetStartedModal({ entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP });
+  const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+  const result = obj.showAgeVerificationGetStartedModal(obj2);
 };
 export const useAgeGroupValueLabel = function useAgeGroupValueLabel() {
+  let UNVERIFIED;
+  let tmp5;
   const obj = AgeVerificationUtils;
   const isAgeVerified = obj.useIsAgeVerified();
+  const obj2 = AgeVerificationUtils;
   if (obj2.useIsVerifiedTeen()) {
-    let UNVERIFIED = tmp4.TEEN;
-    let tmp5 = tmp4;
+    UNVERIFIED = tmp4.TEEN;
+    tmp5 = tmp4;
   } else if (isAgeVerified) {
     UNVERIFIED = tmp4.ADULT;
     tmp5 = tmp4;
@@ -50,13 +59,12 @@ export const useAgeGroupValueLabel = function useAgeGroupValueLabel() {
   }
   if (tmp5.ADULT === UNVERIFIED) {
     const intl3 = tmp(1115).intl;
-    return intl3.string(tmp(1115).t.XxRj7f);
+    return intl3.string(intl4.t.XxRj7f);
   } else if (tmp5.TEEN === UNVERIFIED) {
     const intl2 = tmp(1115).intl;
-    return intl2.string(tmp(1115).t.sK0dmH);
+    return intl2.string(intl4.t.sK0dmH);
   } else if (tmp5.UNVERIFIED === UNVERIFIED) {
     const intl = tmp(1115).intl;
-    return intl.string(tmp(1115).t.lKDPGA);
+    return intl.string(intl4.t.lKDPGA);
   }
-  obj2 = AgeVerificationUtils;
 };

@@ -9,27 +9,35 @@ import nativeDefault from "native" /* 576 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 4728 */;
 import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4743 */;
 import Tier048Px from "Tier048Px" /* 13047 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1074 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-const Constants = fn(1074);
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let size;
+({ View: c3, Image: closure_4 } = react_native);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: hasOwnProperty, BoostedGuildTiers: metroRequire } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { guildTierProgressCircle: { position: "relative", width: 70, height: 70 }, guildTierBackground: null, guildTierNoneIcon: null, guildTierIcon: null, guildTierName: null };
-let size = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, width: 64, height: 64, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xxl };
-obj2.guildTierBackground = size;
-obj2.guildTierNoneIcon = { width: 18, height: 30 };
-obj2.guildTierIcon = { width: 24, height: 24 };
-obj2.guildTierName = { lineHeight: 16, marginTop: 2 };
-let closure_9 = createStyles.createStyles(obj2);
-size = fn(2);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { guildTierProgressCircle: { position: "relative", width: 70, height: 70 }, guildTierBackground: size, guildTierNoneIcon: { width: 18, height: 30 }, guildTierIcon: { width: 24, height: 24 }, guildTierName: { lineHeight: 16, marginTop: 2 } };
+size = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, width: 64, height: 64, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xxl };
+let closure_9 = createStyles.createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/premium/native/BoostedGuildTierProgressCircle.tsx");
 
 export default function BoostedGuildTierProgressCircle(arg0) {
+  let guild;
+  let obj3;
+  let obj9;
+  let theme;
+  let tmp19Result;
   ({ guild, theme } = arg0);
   const tmp = closure_9();
   useGuildPowerupsBoostCountDefault;
@@ -37,12 +45,13 @@ export default function BoostedGuildTierProgressCircle(arg0) {
     const id = guild.id;
   }
   if (null == guild) {
-    const obj2 = { style: tmp.guildTierBackground, children: null };
-    const obj3 = { source: Tier048Px.getTier048PxSource(theme), style: tmp.guildTierNoneIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };
-    obj2.children = React5(React4, obj3);
-    return React5(React3, obj2);
+    const obj2 = { style: tmp.guildTierBackground, children: metroImportDefault(React3, obj3) };
+    obj3 = { source: obj9.getTier048PxSource(theme), style: tmp.guildTierNoneIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };
+    obj9 = Tier048Px;
+    return metroImportDefault(_false, obj2);
   } else {
-    const nextGuildTierFromGuild = GuildBoostingUtils.getNextGuildTierFromGuild(guild.id);
+    const obj10 = GuildBoostingUtils;
+    const nextGuildTierFromGuild = obj10.getNextGuildTierFromGuild(guild.id);
     let tmp7 = null;
     if (null != nextGuildTierFromGuild) {
       tmp7 = hasOwnProperty[nextGuildTierFromGuild];
@@ -57,25 +66,28 @@ export default function BoostedGuildTierProgressCircle(arg0) {
     const obj = { style: tmp.guildTierProgressCircle, percent: num2, children: null };
     const obj4 = { style: tmp.guildTierBackground, children: null };
     if (null != guild) {
-      if (guild.premiumTier !== constants.NONE) {
+      let tier048PxSource;
+      if (guild.premiumTier !== metroRequire.NONE) {
         const premiumTier = guild.premiumTier;
-        if (tmp13.TIER_1 === premiumTier) {
-          let tier048PxSource = tmp2(13051);
-        } else if (tmp13.TIER_2 === premiumTier) {
+        if (metroRequire.TIER_1 === premiumTier) {
+          tier048PxSource = tmp2(13051);
+        } else if (metroRequire.TIER_2 === premiumTier) {
           tier048PxSource = tmp2(13052);
-        } else if (tmp13.TIER_3 === premiumTier) {
+        } else if (metroRequire.TIER_3 === premiumTier) {
           tier048PxSource = tmp2(13053);
         }
       }
       const obj5 = { source: tier048PxSource, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };
-      const items = [tmp8(tmp12, obj5), ];
-      const obj6 = { style: tmp.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active", children: tmp19(4728).getTierName(guild.premiumTier) };
-      items[1] = tmp8(tmp19(4832).Text, obj6);
+      const items = [metroImportDefault(tmp12, obj5), ];
+      const obj6 = { style: tmp.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active", children: tmp19Result.getTierName(guild.premiumTier) };
+      const Text = tmp19(4832).Text;
+      tmp19Result = GuildBoostingUtils;
+      items[1] = metroImportDefault(Text, obj6);
       obj4.children = items;
       obj.children = tmp10(tmp11, obj4);
-      return tmp8(tmp9, obj);
+      return metroImportDefault(tmp9, obj);
     }
-    tier048PxSource = Tier048Px.getTier048PxSource(theme);
     const tmp19Result2 = Tier048Px;
+    tier048PxSource = tmp19Result2.getTier048PxSource(theme);
   }
 };

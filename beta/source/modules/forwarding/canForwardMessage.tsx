@@ -10,10 +10,17 @@ import GatedChannelStore from "GatedChannelStore" /* 2100 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
+let MessageFlags;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 function canForwardMessage(state, PermissionStore, GatedChannelStore, ChannelStore, GuildStore) {
   let obj = PermissionStore;
   if (PermissionStore === undefined) {
@@ -34,9 +41,9 @@ function canForwardMessage(state, PermissionStore, GatedChannelStore, ChannelSto
   if (null == state) {
     return false;
   } else {
-    let hasItem1 = state.state !== constants2.SEND_FAILED;
+    let hasItem1 = state.state !== metroImportDefault.SEND_FAILED;
     if (hasItem1) {
-      const FORWARDABLE = constants3.FORWARDABLE;
+      const FORWARDABLE = metroImportAll.FORWARDABLE;
       hasItem1 = FORWARDABLE.has(state.type);
     }
     if (hasItem1) {
@@ -55,7 +62,8 @@ function canForwardMessage(state, PermissionStore, GatedChannelStore, ChannelSto
       hasItem1 = null == state.activityInstance;
     }
     if (hasItem1) {
-      hasItem1 = 0 === FlagUtils.removeFlag(state.flags, closure_10);
+      const obj5 = FlagUtils;
+      hasItem1 = 0 === obj5.removeFlag(state.flags, closure_10);
     }
     if (hasItem1) {
       const channel = obj3.getChannel(state.channel_id);
@@ -76,7 +84,7 @@ function canForwardMessage(state, PermissionStore, GatedChannelStore, ChannelSto
         let hasItem;
         if (guild != null) {
           const features = guild.features;
-          hasItem = features.has(constants.FORWARDING_DISABLED);
+          hasItem = features.has(metroRequire.FORWARDING_DISABLED);
         }
         tmp8 = !hasItem;
       }
@@ -100,15 +108,14 @@ function canForwardMessage(state, PermissionStore, GatedChannelStore, ChannelSto
     }
   }
 }
-const Constants = fn(1074);
-({ GuildFeatures: metroRequire, MessageFlags, MessageStates: closure_7, MessageTypesSets: closure_8, Permissions: closure_9 } = Constants);
+({ GuildFeatures: metroRequire, MessageFlags, MessageStates: metroImportDefault, MessageTypesSets: metroImportAll, Permissions: c9 } = Constants);
 let closure_10 = MessageFlags.CROSSPOSTED | MessageFlags.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | MessageFlags.GUILD_FEED_HIDDEN | MessageFlags.HAS_SNAPSHOT | MessageFlags.HAS_THREAD | MessageFlags.IS_CROSSPOST | MessageFlags.IS_VOICE_MESSAGE | MessageFlags.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | MessageFlags.SUPPRESS_EMBEDS | MessageFlags.SUPPRESS_NOTIFICATIONS | MessageFlags.URGENT | MessageFlags.IS_COMPONENTS_V2 | MessageFlags.IS_GUILD_OFFICIAL | MessageFlags.IS_SCHEDULED;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/forwarding/canForwardMessage.tsx");
 
 export { canForwardMessage };
 export const useCanForwardMessage = function useCanForwardMessage(message) {
   _require = message;
   const items = [PermissionStore, GatedChannelStore, ChannelStore, GuildStore];
-  return require("initialize").useStateFromStores(items, () => canForwardMessage(closure_0, PermissionStore, GatedChannelStore, ChannelStore, GuildStore));
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => canForwardMessage(message, PermissionStore, GatedChannelStore, ChannelStore, GuildStore));
 };

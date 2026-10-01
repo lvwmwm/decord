@@ -1,16 +1,14 @@
 // Module ID: 15558
 // Function ID: 15559
-// Name: ScreenRecordingManager
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 15558 (ScreenRecordingManager)
-import _mod17 from "module_17" /* 17 */;
+// Module 15558 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const DCDScreenRecordingManager = _mod17.NativeModules.DCDScreenRecordingManager;
-const result = size.fileFinishedImporting("modules/screen_recording/native/ScreenRecordingManager.ios.tsx");
-
-export default {
+const DCDScreenRecordingManager = react_native.NativeModules.DCDScreenRecordingManager;
+const obj = {
   requestPermissions() {
     return DCDScreenRecordingManager.requestPermissions();
   },
@@ -33,3 +31,6 @@ export default {
     return DCDScreenRecordingManager.getRecordingQuality();
   }
 };
+const result = size.fileFinishedImporting("modules/screen_recording/native/ScreenRecordingManager.ios.tsx");
+
+export default obj;

@@ -5,19 +5,23 @@
 // Exports: default
 
 // Module 5233 (DelayedFreeze)
-import Suspender from "Suspender" /* 5234 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 5234 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-require = fn;
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 
-export default function DelayedFreeze(children) {
-  const freeze = children.freeze;
-  const tmp = _slicedToArray(noop.useState(false), 2);
-  closure_1 = tmp[1];
+export default function DelayedFreeze(freeze) {
+  let closure_1;
+  let first;
+  freeze = freeze.freeze;
+  closure_1 = undefined;
+  const children = freeze.children;
+  [first, closure_1] = react.useState(false);
   const items = [freeze];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let closure_0;
     const timeout = setTimeout(() => {
       closure_1_1(closure_0);
     }, 0);
@@ -25,9 +29,11 @@ export default function DelayedFreeze(children) {
       clearTimeout(closure_0);
     };
   }, items);
-  let freeze1 = freeze;
-  if (freeze1) {
-    freeze1 = tmp[0];
+  let freeze2 = freeze;
+  const Freeze = react2.Freeze;
+  const tmp4 = jsx;
+  if (freeze2) {
+    freeze2 = first;
   }
-  return jsx(Suspender.Freeze, { freeze: freeze1, children: children.children });
+  return tmp4(Freeze, { freeze: freeze2, children });
 };

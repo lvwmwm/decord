@@ -4,7 +4,9 @@
 // Dependencies: [19, 5775, 21, 8173, 9698, 4795, 8219, 9811, 9813, 8535, 9815, 9817, 8236, 8124, 8122, 2]
 
 // Module 9810 (EmojiPickerCategoryIcon)
+import Fragment from "Fragment" /* 21 */;
 import ClockIcon from "ClockIcon" /* 4795 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 5775 */;
 import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;
 import FlagIcon from "FlagIcon" /* 8124 */;
 import TrophyIcon from "TrophyIcon" /* 8173 */;
@@ -16,42 +18,42 @@ import NatureIcon from "NatureIcon" /* 9811 */;
 import FoodIcon from "FoodIcon" /* 9813 */;
 import BicycleIcon from "BicycleIcon" /* 9815 */;
 import ObjectIcon from "ObjectIcon" /* 9817 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const EmojiCategories = fn(5775).EmojiCategories;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoryIcon.tsx");
-
-export default noop.memo(function EmojiPickerCategoryIcon(id) {
+const EmojiCategories = EmojiPickerConstants.EmojiCategories;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function EmojiPickerCategoryIcon(id) {
   id = id.id;
   if (EmojiCategories.TOP_GUILD_EMOJI === id) {
     return jsx(TrophyIcon.TrophyIcon, {});
-  } else if (tmp.FAVORITES === id) {
+  } else if (EmojiCategories.FAVORITES === id) {
     return jsx(StarIcon.StarIcon, {});
-  } else if (tmp.RECENT === id) {
+  } else if (EmojiCategories.RECENT === id) {
     return jsx(ClockIcon.ClockIcon, {});
-  } else if (tmp.PEOPLE === id) {
+  } else if (EmojiCategories.PEOPLE === id) {
     return jsx(ReactionIcon.ReactionIcon, {});
-  } else if (tmp.NATURE === id) {
+  } else if (EmojiCategories.NATURE === id) {
     return jsx(NatureIcon.NatureIcon, {});
-  } else if (tmp.FOOD === id) {
+  } else if (EmojiCategories.FOOD === id) {
     return jsx(FoodIcon.FoodIcon, {});
-  } else if (tmp.ACTIVITY === id) {
+  } else if (EmojiCategories.ACTIVITY === id) {
     return jsx(GameControllerIcon.GameControllerIcon, {});
-  } else if (tmp.TRAVEL === id) {
+  } else if (EmojiCategories.TRAVEL === id) {
     return jsx(BicycleIcon.BicycleIcon, {});
-  } else if (tmp.OBJECTS === id) {
+  } else if (EmojiCategories.OBJECTS === id) {
     return jsx(ObjectIcon.ObjectIcon, {});
-  } else if (tmp.SYMBOLS === id) {
+  } else if (EmojiCategories.SYMBOLS === id) {
     return jsx(HeartIcon.HeartIcon, {});
-  } else if (tmp.FLAGS === id) {
+  } else if (EmojiCategories.FLAGS === id) {
     return jsx(FlagIcon.FlagIcon, {});
   } else {
-    if (tmp.CUSTOM !== id) {
+    if (EmojiCategories.CUSTOM !== id) {
       const PREMIUM_UPSELL = tmp.PREMIUM_UPSELL;
     }
     return jsx(NitroWheelIcon.NitroWheelIcon, {});
   }
 });
+const result = size.fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoryIcon.tsx");
+
+export default memoResult;

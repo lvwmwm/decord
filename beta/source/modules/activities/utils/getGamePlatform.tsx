@@ -9,6 +9,8 @@ import isOnXboxDefault from "isOnXbox" /* 12576 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
+let c2;
+let c3;
 ({ ActivityTypes: c2, ActivityGamePlatforms: c3 } = Constants);
 const result = size.fileFinishedImporting("modules/activities/utils/getGamePlatform.tsx");
 
@@ -19,13 +21,15 @@ export default function getGamePlatform(type) {
     if (null != type.type) {
       tmp = null;
       if (type.type === constants.PLAYING) {
+        let DESKTOP;
         if (isOnXboxDefault(type)) {
-          let DESKTOP = constants2.XBOX;
+          DESKTOP = constants2.XBOX;
         } else if (null != type.platform) {
           DESKTOP = type.platform;
         } else {
           DESKTOP = constants2.DESKTOP;
         }
+        tmp = DESKTOP;
       }
     }
   }

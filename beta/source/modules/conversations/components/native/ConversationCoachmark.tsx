@@ -5,70 +5,84 @@
 // Exports: ConversationCoachmark
 
 // Module 12833 (ConversationCoachmark)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap;
+
+let obj2;
+let obj3;
 function NewBadge() {
-  const obj = { style: closure_9().badge, children: null };
-  const obj2 = { variant: "text-sm/bold", color: "text-default", children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t.c2GSIl);
-  obj.children = jsx(Text_Text.Text, { variant: "text-sm/bold", color: "text-default", children: null });
+  let intl;
+  ({ variant: "text-sm/bold", color: "text-default", children: intl.string(intl3.t.c2GSIl) });
+  const Text = Text_Text.Text;
+  intl = intl3.intl;
   return <View style={closure_9().badge}>{null}</View>;
 }
-const View = fn(17).View;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsx = fn(21).jsx;
-const TOPICAL_NAVIGATION_HEADER_COACHMARK = fn(2029).DismissibleContent.TOPICAL_NAVIGATION_HEADER_COACHMARK;
+const View = react_native.View;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
+const TOPICAL_NAVIGATION_HEADER_COACHMARK = dismissible_content.DismissibleContent.TOPICAL_NAVIGATION_HEADER_COACHMARK;
 let items = [TOPICAL_NAVIGATION_HEADER_COACHMARK];
-const createStyles = fn(4836);
-let obj2 = { badge: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, paddingVertical: 2, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round }, coachmarkWrapper: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, paddingVertical: 2, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round };
-obj2.coachmarkWrapper = { marginRight: nativeDefault.space.PX_12 };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+let createStyles = createStyles_mod;
+let obj = { badge: obj2, coachmarkWrapper: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, paddingVertical: 2, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round };
+createStyles = createStyles.createStyles;
+obj3 = { marginRight: nativeDefault.space.PX_12 };
+let closure_9 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationCoachmark.tsx");
 
 export const ConversationCoachmark = function ConversationCoachmark(arg0) {
+  let children;
+  let closure_1;
+  let isLast;
   let first;
   ({ children, isLast } = arg0);
-  const ref = noop.useRef(null);
   const tmp = closure_9();
-  const tmp3 = _slicedToArray(first(6806).useSelectedDismissibleContent(items), 2);
+  const ref = react.useRef(null);
+  let obj = first(6806);
+  const tmp3 = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
   items = [tmp3[1], first];
-  const memo = noop.useMemo(() => {
-    const obj = { title: null, description: null, position: "bottom", visible: null, onDismiss: null, renderImgComponent: null };
-    const intl = util.intl;
-    obj.title = intl.string(util.t.UcQjDe);
-    const intl2 = util.intl;
-    obj.description = intl2.string(util.t.QeJIbA);
-    obj.visible = first === TOPICAL_NAVIGATION_HEADER_COACHMARK;
-    obj.onDismiss = function onDismiss() {
-      closure_1_1(constants.USER_DISMISS);
+  const memo = react.useMemo(() => {
+    let intl;
+    let intl2;
+    const obj = {
+      title: intl.string(intl3.t.UcQjDe),
+      description: intl2.string(intl3.t.QeJIbA),
+      position: "bottom",
+      visible: first === TOPICAL_NAVIGATION_HEADER_COACHMARK,
+      onDismiss() {
+        closure_1_1(constants.USER_DISMISS);
+      },
+      renderImgComponent() {
+        return closure_1_6(closure_1_10, {});
+      }
     };
-    obj.renderImgComponent = function renderImgComponent() {
-      return closure_1_6(closure_1_10, {});
-    };
+    intl = intl3.intl;
+    intl2 = intl3.intl;
     return obj;
   }, items);
-  let obj = first(6806);
-  const coachmark = first(10589).useCoachmark(ref, memo);
+  const obj2 = first(10589);
+  const coachmark = obj2.useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     closure_1(ContentDismissActionType.USER_DISMISS);
   }, items1);
   if (!isLast) {
     coachmarkWrapper = tmp.coachmarkWrapper;
   }
-  const obj3 = { style: coachmarkWrapper, children: null };
-  const obj2 = first(10589);
-  obj3.children = <View ref={ref}>{children(callback)}</View>;
+  ({ ref, children: children(callback) });
   return <View style={coachmarkWrapper}>{null}</View>;
 };

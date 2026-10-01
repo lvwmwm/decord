@@ -5,40 +5,46 @@
 // Exports: default
 
 // Module 14260 (SettingSearchBar)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
 import Tracking from "Tracking" /* 6418 */;
-import SearchField from "SearchField" /* 6471 */;
-import noop from "module_19" /* 19 */;
+import SearchField2 from "SearchField" /* 6471 */;
+import react from "react" /* 19 */;
 import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { container: { marginTop: nativeDefault.modules.mobile.SETTINGS_PADDING_TOP } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { marginTop: nativeDefault.modules.mobile.SETTINGS_PADDING_TOP };
+let closure_6 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/settings/native/search/SettingSearchBar.tsx");
 
 export default function SettingSearchBar() {
   const tmp = closure_6();
-  const callback = noop.useCallback(() => {
+  const ref = react.useRef(null);
+  const callback = react.useCallback(() => {
     UserSettingSearchStore.setState({ isActive: false, query: "", isFocused: false });
-    const result = KeyboardManagerUtils.dismissGlobalKeyboard();
+    const obj = KeyboardManagerUtils;
+    const result = obj.dismissGlobalKeyboard();
   }, []);
-  const callback1 = noop.useCallback(() => {
-    const result = Tracking.trackSettingSearchInputFocused();
+  const callback1 = react.useCallback(() => {
+    const obj = Tracking;
+    const result = obj.trackSettingSearchInputFocused();
     UserSettingSearchStore.setState({ isActive: true, isFocused: true });
   }, []);
-  const callback2 = noop.useCallback(() => {
+  const callback2 = react.useCallback(() => {
     UserSettingSearchStore.setState({ isFocused: false });
   }, []);
-  const obj = { style: tmp.container, children: null };
-  const callback3 = noop.useCallback((query) => {
-    UserSettingSearchStore.setState({ query });
+  const callback3 = react.useCallback((query) => {
+    const obj = { query };
+    UserSettingSearchStore.setState(obj);
   }, []);
-  const ref = noop.useRef(null);
-  obj.children = jsx(SearchField.SearchField, { ref: noop.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: UserSettingSearchStore.getField("query"), onChange: callback3 });
+  ({ ref, size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: UserSettingSearchStore.getField("query"), onChange: callback3 });
+  const SearchField = SearchField2.SearchField;
   return <View style={tmp.container}>{null}</View>;
 };

@@ -5,26 +5,29 @@
 // Exports: TableRowArrow
 
 // Module 5924 (TableRowArrow)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import Icon from "Icon" /* 5283 */;
-import _modDef5925 from "module_5925" /* 5925 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5925 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
 const IconDefault = Icon;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { icon: null, iconColor: null };
-let size = { width: nativeDefault.modules.mobile.TABLE_ROW_ARROW_WIDTH, height: 24, marginStart: nativeDefault.modules.mobile.TABLE_ROW_ARROW_MARGIN_START, marginEnd: nativeDefault.modules.mobile.TABLE_ROW_ARROW_MARGIN_END };
-obj2.icon = size;
-obj2.iconColor = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-let closure_4 = createStyles.createStyles(obj2);
-size = fn(2);
+let size;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+const obj = { icon: size, iconColor: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT } };
+size = { width: nativeDefault.modules.mobile.TABLE_ROW_ARROW_WIDTH, height: 24, marginStart: nativeDefault.modules.mobile.TABLE_ROW_ARROW_MARGIN_START, marginEnd: nativeDefault.modules.mobile.TABLE_ROW_ARROW_MARGIN_END };
+createStyles = createStyles.createStyles;
+({ color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
+let closure_4 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowArrow.native.tsx");
 
 export const TableRowArrow = function TableRowArrow() {
   const tmp = closure_4();
-  const obj = { style: tmp.icon, color: tmp.iconColor.color, source: _modDef5925, size: Icon.IconSizes.CUSTOM };
-  return jsx(IconDefault, { style: tmp.icon, color: tmp.iconColor.color, source: _modDef5925, size: Icon.IconSizes.CUSTOM });
+  IconDefault;
+  return <tmp2 style={tmp.icon} color={tmp.iconColor.color} source={AssetRegistryDefault} size={Icon.IconSizes.CUSTOM} />;
 };

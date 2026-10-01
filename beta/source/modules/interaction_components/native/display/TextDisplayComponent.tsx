@@ -5,92 +5,66 @@
 // Exports: default
 
 // Module 15316 (TextDisplayComponent)
+import Fragment from "Fragment" /* 21 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 4823 */;
 import renderMessageMarkup from "renderMessageMarkup" /* 7313 */;
+import InteractionComponentConstants from "InteractionComponentConstants" /* 7568 */;
 import handleMessagesTapLink from "handleMessagesTapLink" /* 11111 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_8 = fn(7568).TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let closure_8 = InteractionComponentConstants.TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS;
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/interaction_components/native/display/TextDisplayComponent.tsx");
 
 export default function TextDisplayComponent(type) {
+  let renderOptions;
+  let tmp6;
+  let tmp7;
+  const f101621 = () => {
+    const items = [, ];
+    ({ roleStyle: arr[0], alwaysShowLinkDecorations: arr[1] } = AccessibilityStore);
+    return items;
+  };
   type = type.type;
   const id = type.id;
   const content = type.content;
-  const componentContainerId = type(content[7]).useComponentContainerId();
+  let obj = type(content[7]);
+  const componentContainerId = obj.useComponentContainerId();
   const channelId = SelectedChannelStore.getChannelId();
   id(content[8])(null != channelId, "channelId not available in TextDisplayComponent");
   let items = [type, id, content, channelId];
-  const memo = noop.useMemo(() => {
-    const obj = { type, id, content: null };
-    const obj2 = MarkupUtilsDefault;
-    obj.content = obj2.parseToAST(content, true, renderMessageMarkup.getInitialParserState({ channelId, renderOptions }));
-    return JSON.stringify(obj);
+  const memo = react.useMemo(() => {
+    let obj2;
+    let obj3;
+    let parseToAST;
+    const obj = { type, id, content: parseToAST(content, true, obj2.getInitialParserState(obj3)) };
+    parseToAST = MarkupUtilsDefault.parseToAST;
+    MarkupUtilsDefault;
+    obj2 = renderMessageMarkup;
+    obj3 = { channelId, renderOptions };
+    return stringify(obj);
   }, items);
-  let obj = type(content[7]);
-  const items1 = [AccessibilityStore];
   let obj2 = type(content[11]);
-  [tmp6, tmp7] = channelId(type(content[11]).useStateFromStoresArray(items1, () => {
-    const items = [, ];
-    ({ roleStyle: arr[0], alwaysShowLinkDecorations: arr[1] } = AccessibilityStore);
-    return items;
-  }), 2);
+  const items1 = [AccessibilityStore];
+  [tmp6, tmp7] = channelId(obj2.useStateFromStoresArray(items1, f101621), 2);
+  channelId(obj2.useStateFromStoresArray(items1, f101621), 2);
   const AnimateEmoji = type(content[12]).AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
-  const tmp5 = channelId(type(content[11]).useStateFromStoresArray(items1, () => {
-    const items = [, ];
-    ({ roleStyle: arr[0], alwaysShowLinkDecorations: arr[1] } = AccessibilityStore);
-    return items;
-  }), 2);
+  let obj3 = type(content[11]);
   const items2 = [ChannelStore];
-  const stateFromStores = type(content[11]).useStateFromStores(items2, () => ChannelStore.getChannel(channelId));
-  const obj3 = type(content[11]);
-  const shouldDisplaySpoilerObscurity = type(content[13]).useShouldDisplaySpoilerObscurity(stateFromStores);
-  const obj5 = {
-    model: memo,
-    markdownTextRenderOptions: { containerId: componentContainerId, shouldAnimateEmoji: setting, shouldShowLinkDecorations: tmp7, shouldForceRevealSpoilers: !shouldDisplaySpoilerObscurity, shouldShowRoleDot: "dot" === tmp6, shouldShowRoleOnName: "username" === tmp6 },
-    onTapLink(nativeEvent) {
-      const result = handleMessagesTapLink.handleMessagesTapURLLink(nativeEvent.nativeEvent.data, channelId);
-    },
-    onLongPressLink: null,
-    onTapAttachmentLink: null,
-    onLongPressAttachmentLink: null,
-    onTapMention: null,
-    onTapTimestamp: null,
-    onTapInlineCode: null,
-    onTapEmoji: null,
-    style: null
-  };
+  const stateFromStores = obj3.useStateFromStores(items2, () => ChannelStore.getChannel(channelId));
   const obj4 = type(content[13]);
+  const shouldDisplaySpoilerObscurity = obj4.useShouldDisplaySpoilerObscurity(stateFromStores);
   const obj6 = { containerId: componentContainerId, shouldAnimateEmoji: setting, shouldShowLinkDecorations: tmp7, shouldForceRevealSpoilers: !shouldDisplaySpoilerObscurity, shouldShowRoleDot: "dot" === tmp6, shouldShowRoleOnName: "username" === tmp6 };
-  obj5.onLongPressLink = type(content[16]).contentHandlers.onLongPressLink;
-  obj5.onTapAttachmentLink = type(content[16]).contentHandlers.onTapAttachmentLink;
-  obj5.onLongPressAttachmentLink = type(content[16]).contentHandlers.onLongPressAttachmentLink;
-  obj5.onTapMention = type(content[16]).contentHandlers.onTapMention;
-  obj5.onTapTimestamp = type(content[16]).contentHandlers.onTapTimestamp;
-  obj5.onTapInlineCode = type(content[16]).contentHandlers.onTapInlineCode;
-  obj5.onTapEmoji = type(content[16]).contentHandlers.onTapEmoji;
-  obj5.style = { width: "100%" };
-  return jsx(id(content[14]), {
-    model: memo,
-    markdownTextRenderOptions: { containerId: componentContainerId, shouldAnimateEmoji: setting, shouldShowLinkDecorations: tmp7, shouldForceRevealSpoilers: !shouldDisplaySpoilerObscurity, shouldShowRoleDot: "dot" === tmp6, shouldShowRoleOnName: "username" === tmp6 },
-    onTapLink(nativeEvent) {
-      const result = handleMessagesTapLink.handleMessagesTapURLLink(nativeEvent.nativeEvent.data, channelId);
-    },
-    onLongPressLink: null,
-    onTapAttachmentLink: null,
-    onLongPressAttachmentLink: null,
-    onTapMention: null,
-    onTapTimestamp: null,
-    onTapInlineCode: null,
-    onTapEmoji: null,
-    style: null
-  });
+  id(content[14]);
+  return <tmp11 model={memo} markdownTextRenderOptions={obj6} onTapLink={function onTapLink(nativeEvent) {
+    const data = nativeEvent.nativeEvent.data;
+    const obj = handleMessagesTapLink;
+    const result = obj.handleMessagesTapURLLink(data, channelId);
+  }} onLongPressLink={type(content[16]).contentHandlers.onLongPressLink} onTapAttachmentLink={type(content[16]).contentHandlers.onTapAttachmentLink} onLongPressAttachmentLink={type(content[16]).contentHandlers.onLongPressAttachmentLink} onTapMention={type(content[16]).contentHandlers.onTapMention} onTapTimestamp={type(content[16]).contentHandlers.onTapTimestamp} onTapInlineCode={type(content[16]).contentHandlers.onTapInlineCode} onTapEmoji={type(content[16]).contentHandlers.onTapEmoji} style={{ width: "100%" }} />;
 };

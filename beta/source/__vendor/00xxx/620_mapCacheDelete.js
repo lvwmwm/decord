@@ -4,15 +4,19 @@
 // Dependencies: [621]
 
 // Module 620 (mapCacheDelete)
-import _mod621 from "module_621" /* 621 */;
+import getMapData from "getMapData" /* 621 */;
+
+let size;
 
 
 export default function mapCacheDelete(arg0) {
-  const deleteResult = _mod621(this, arg0).delete(arg0);
+  const obj = getMapData(this, arg0);
+  const deleteResult = obj.delete(arg0);
   let num = 0;
+  size = this.size;
   if (deleteResult) {
     num = 1;
   }
-  this.size = this.size - num;
+  this.size = size - num;
   return deleteResult;
 };

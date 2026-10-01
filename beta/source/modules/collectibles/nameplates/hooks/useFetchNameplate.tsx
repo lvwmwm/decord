@@ -13,9 +13,12 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/collectibles/nameplates/hooks/useFetchNameplate.tsx");
 
 export const useFetchNameplate = function useFetchNameplate(skuId) {
-  const fetchCollectiblesProduct = useFetchCollectiblesProduct.useFetchCollectiblesProduct(skuId);
+  let tmpResult;
+  const obj = useFetchCollectiblesProduct;
+  const fetchCollectiblesProduct = obj.useFetchCollectiblesProduct(skuId);
   const product = fetchCollectiblesProduct.product;
   let type;
+  const isFetching = fetchCollectiblesProduct.isFetching;
   if (product != null) {
     const first = product.items[0];
     if (first != null) {
@@ -26,8 +29,7 @@ export const useFetchNameplate = function useFetchNameplate(skuId) {
   if (type === CollectiblesItemType.CollectiblesItemType.NAMEPLATE) {
     first1 = product.items[0];
   }
-  const obj2 = { nameplateProduct: product, nameplateRecord: first1, nameplateData: null, isFetching: null };
-  obj2.nameplateData = utils.getNameplateData(first1);
-  obj2.isFetching = fetchCollectiblesProduct.isFetching;
+  const obj2 = { nameplateProduct: product, nameplateRecord: first1, nameplateData: tmpResult.getNameplateData(first1), isFetching };
+  tmpResult = utils;
   return obj2;
 };

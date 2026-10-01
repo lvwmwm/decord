@@ -12,7 +12,8 @@ const result = size.fileFinishedImporting("modules/guild_automod/ExperimentUtils
 
 export const isInMentionRaidExperiment = function isInMentionRaidExperiment(guildId) {
   const AutomodMentionRaidLimit = AutomodExperiment.AutomodMentionRaidLimit;
-  return AutomodMentionRaidLimit.getCurrentConfig({ guildId, location: "988d4e_3" }).enabled;
+  const obj = { guildId, location: "988d4e_3" };
+  return AutomodMentionRaidLimit.getCurrentConfig(obj).enabled;
 };
 export const useIsMentionRaidExperimentEnabled = function useIsMentionRaidExperimentEnabled(guildId, arg1) {
   let autoTrackExposure = arg1;
@@ -20,9 +21,11 @@ export const useIsMentionRaidExperimentEnabled = function useIsMentionRaidExperi
     autoTrackExposure = true;
   }
   const AutomodMentionRaidLimit = AutomodExperiment.AutomodMentionRaidLimit;
-  return AutomodMentionRaidLimit.useExperiment({ guildId, location: "988d4e_4" }, { autoTrackExposure }).enabled;
+  const obj = { guildId, location: "988d4e_4" };
+  return AutomodMentionRaidLimit.useExperiment(obj, { autoTrackExposure }).enabled;
 };
 export const useIsApplicationRuleEnabled = function useIsApplicationRuleEnabled(guildId) {
   const AutomodApplicationRules = AutomodExperiment.AutomodApplicationRules;
-  return AutomodApplicationRules.useConfig({ guildId, location: "automod_settings" }).enabled;
+  const obj = { guildId, location: "automod_settings" };
+  return AutomodApplicationRules.useConfig(obj).enabled;
 };

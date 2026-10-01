@@ -4,11 +4,10 @@
 // Exports: addTracingExtensions
 
 // Module 12343
-import errorCallback from "errorCallback" /* 12309 */;
+import _mod12309 from "module_12309" /* 12309 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const addTracingExtensions = function addTracingExtensions() {
-  const result = errorCallback.registerSpanErrorInstrumentation();
+  const obj = _mod12309;
+  const result = obj.registerSpanErrorInstrumentation();
 };

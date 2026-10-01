@@ -14,25 +14,29 @@ const obj2 = { NONE: 0, [0]: "NONE", LIGHT: 1, [1]: "LIGHT", MODERATE: 2, [2]: "
 const result = size.fileFinishedImporting("modules/device/useThermalState.tsx");
 
 export default function useThermalState() {
+  let UNHANDLED;
   const obj = ThermalUtilsDefault;
   const rawThermalState = obj.useRawThermalState();
   if (null == rawThermalState) {
-    let UNHANDLED = obj.UNHANDLED;
+    UNHANDLED = obj.UNHANDLED;
   } else {
     UNHANDLED = rawThermalState;
+    const obj3 = PlatformUtils;
+    const tmp11 = require;
     if (!obj3.isIOS()) {
+      const tmp11Result = tmp11(1364);
       if (tmp11Result.isAndroid()) {
         if (obj2.NONE === rawThermalState) {
           UNHANDLED = obj.NOMINAL;
         } else {
-          if (tmp4.LIGHT !== rawThermalState) {
-            if (tmp4.MODERATE !== rawThermalState) {
-              if (tmp4.SEVERE === rawThermalState) {
+          if (obj2.LIGHT !== rawThermalState) {
+            if (obj2.MODERATE !== rawThermalState) {
+              if (obj2.SEVERE === rawThermalState) {
                 UNHANDLED = obj.SERIOUS;
               } else {
-                if (tmp4.CRITICAL !== rawThermalState) {
-                  if (tmp4.EMERGENCY !== rawThermalState) {
-                    if (tmp4.SHUTDOWN !== rawThermalState) {
+                if (obj2.CRITICAL !== rawThermalState) {
+                  if (obj2.EMERGENCY !== rawThermalState) {
+                    if (obj2.SHUTDOWN !== rawThermalState) {
                       UNHANDLED = obj.UNHANDLED;
                     }
                   }
@@ -46,35 +50,36 @@ export default function useThermalState() {
       } else {
         UNHANDLED = obj.UNHANDLED;
       }
-      tmp11Result = tmp11(1364);
     }
-    obj3 = PlatformUtils;
-    tmp11 = require;
   }
   return UNHANDLED;
 };
 export { ThermalStates };
 export const AndroidThermalStates = obj2;
 export const getThermalState = function getThermalState() {
+  let UNHANDLED;
   const obj = ThermalUtilsDefault;
   const rawThermalState = obj.getRawThermalState();
   if (null == rawThermalState) {
-    let UNHANDLED = obj.UNHANDLED;
+    UNHANDLED = obj.UNHANDLED;
   } else {
     UNHANDLED = rawThermalState;
+    const obj3 = PlatformUtils;
+    const tmp11 = require;
     if (!obj3.isIOS()) {
+      const tmp11Result = tmp11(1364);
       if (tmp11Result.isAndroid()) {
         if (obj2.NONE === rawThermalState) {
           UNHANDLED = obj.NOMINAL;
         } else {
-          if (tmp4.LIGHT !== rawThermalState) {
-            if (tmp4.MODERATE !== rawThermalState) {
-              if (tmp4.SEVERE === rawThermalState) {
+          if (obj2.LIGHT !== rawThermalState) {
+            if (obj2.MODERATE !== rawThermalState) {
+              if (obj2.SEVERE === rawThermalState) {
                 UNHANDLED = obj.SERIOUS;
               } else {
-                if (tmp4.CRITICAL !== rawThermalState) {
-                  if (tmp4.EMERGENCY !== rawThermalState) {
-                    if (tmp4.SHUTDOWN !== rawThermalState) {
+                if (obj2.CRITICAL !== rawThermalState) {
+                  if (obj2.EMERGENCY !== rawThermalState) {
+                    if (obj2.SHUTDOWN !== rawThermalState) {
                       UNHANDLED = obj.UNHANDLED;
                     }
                   }
@@ -88,10 +93,7 @@ export const getThermalState = function getThermalState() {
       } else {
         UNHANDLED = obj.UNHANDLED;
       }
-      tmp11Result = tmp11(1364);
     }
-    obj3 = PlatformUtils;
-    tmp11 = require;
   }
   return UNHANDLED;
 };

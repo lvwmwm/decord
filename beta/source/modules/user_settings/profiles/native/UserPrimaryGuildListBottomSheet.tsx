@@ -6,125 +6,160 @@
 
 // Module 14199 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import GuildIconDefault from "GuildIcon" /* 5896 */;
+import GuildTagConstants from "GuildTagConstants" /* 7386 */;
 import Form from "Form" /* 8053 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const GuildTagBadgeSize = fn(7386).GuildTagBadgeSize;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { titleContainer: { paddingHorizontal: 16, flexDirection: "row", alignItems: "center", justifyContent: "center" }, guildIcon: { marginLeft: 4 }, tag: { padding: 2 }, tagStyles: null, divider: null, itemTrailingStyle: null };
-const PlatformUtils = fn(1364);
-let num = 18;
+let BottomSheet;
+
+let metroImportDefault;
+let metroRequire;
+let num;
+let obj2;
+let react = react_mod;
+const View = react_native.View;
+const GuildTagBadgeSize = GuildTagConstants.GuildTagBadgeSize;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { titleContainer: { paddingHorizontal: 16, flexDirection: "row", alignItems: "center", justifyContent: "center" }, guildIcon: { marginLeft: 4 }, tag: { padding: 2 }, tagStyles: { lineHeight: num }, divider: obj2, itemTrailingStyle: { flexDirection: "row", alignItems: "center", gap: 8, height: 20 } };
+createStyles = createStyles.createStyles;
+num = 18;
 if (PlatformUtils.isAndroid()) {
   num = 16;
 }
-obj.tagStyles = { lineHeight: num };
-obj.divider = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-obj.itemTrailingStyle = { flexDirection: "row", alignItems: "center", gap: 8, height: 20 };
-let closure_8 = createStyles.createStyles(obj);
-let closure_9 = noop.memo((item) => {
+obj2 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+let closure_8 = createStyles(obj);
+let closure_9 = react.memo((item) => {
+  let accessibilityRole;
+  let accessibilityState;
+  let end;
+  let items;
+  let name;
+  let obj4;
+  let profile;
+  let selected;
+  let start;
+  let tag;
+  let tmp11Result;
+  let tmp15;
+  let tmp16;
   item = item.item;
   ({ selected, onSelectGuild: importDefault } = item);
   ({ start, end } = item);
-  const tmp = closure_8();
+  let tmp = closure_8();
   if (item != null) {
-    const profile = item.profile;
+    profile = item.profile;
   }
   let guildTagBadgeUrl = null != item;
   if (guildTagBadgeUrl) {
     let badge;
+    const getGuildTagBadgeUrl = item(7610).getGuildTagBadgeUrl;
+    let id = item.id;
+    item(7610);
     if (profile != null) {
       badge = profile.badge;
     }
-    guildTagBadgeUrl = item(7610).getGuildTagBadgeUrl(item.id, badge, GuildTagBadgeSize.SIZE_24);
-    const obj = item(7610);
+    guildTagBadgeUrl = getGuildTagBadgeUrl(id, badge, GuildTagBadgeSize.SIZE_24);
   }
-  const radioA11yNative = item(4548).useRadioA11yNative({ selected });
+  let obj = item(4548);
+  const radioA11yNative = obj.useRadioA11yNative({ selected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const obj3 = {
+  const obj2 = {
     start,
     end,
     onPress() {
       let id;
+      const tmp = importDefault;
       if (item != null) {
         id = item.id;
       }
       if (id == null) {
         id = null;
       }
-      closure_1_1(id);
-      ActionSheetActionCreatorsDefault.hideActionSheet();
+      tmp(id);
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
     },
-    label: null,
-    icon: null,
-    accessibilityRole: null,
-    accessibilityState: null,
-    trailing: null
+    label: name,
+    icon: tmp11Result,
+    accessibilityRole,
+    accessibilityState,
+    trailing: tmp15(tmp16, obj4)
   };
+  const TableRow = item(5917).TableRow;
   if (null != item) {
-    let name = item.name;
+    name = item.name;
   } else {
-    const intl = tmp7(1115).intl;
-    name = intl.string(tmp7(1115).t.PoWNfe);
+    const intl = tmp8(1115).intl;
+    name = intl.string(tmp8(1115).t.PoWNfe);
   }
-  obj3.label = name;
-  let tmp10Result = null;
+  tmp11Result = null;
   if (null != item) {
-    const obj4 = { style: tmp.guildIcon, guild: item, size: tmp7(5896).GuildIconSizes.SMALL_32 };
-    tmp10Result = tmp10(GuildIconDefault, obj4);
+    const obj3 = { style: tmp.guildIcon, guild: item, size: item(5896).GuildIconSizes.SMALL_32 };
+    const tmp14 = GuildIconDefault;
+    tmp11Result = tmp11(tmp14, obj3);
   }
-  obj3.icon = tmp10Result;
-  obj3.accessibilityRole = accessibilityRole;
-  obj3.accessibilityState = accessibilityState;
-  const obj5 = { style: tmp.itemTrailingStyle, children: null };
-  let tmp10Result2 = null != item;
-  if (tmp10Result2) {
-    tmp10Result2 = null != profile;
+  let tmp11Result2 = null != item;
+  obj4 = { style: tmp.itemTrailingStyle, children: items };
+  tmp15 = closure_7;
+  tmp16 = View;
+  if (tmp11Result2) {
+    tmp11Result2 = null != profile;
   }
-  if (tmp10Result2) {
-    const obj10 = { containerStyles: null, textStyle: null, guildTag: null, guildBadge: null, badgeSize: null, textVariant: "heading-md/semibold", textColor: "text-strong" };
-    ({ tag: obj6.containerStyles, tagStyles: obj6.textStyle } = tmp);
-    const tag = profile.tag;
-    obj10.guildTag = tag;
-    obj10.guildBadge = guildTagBadgeUrl;
-    obj10.badgeSize = GuildTagBadgeSize.SIZE_16;
-    tmp10Result2 = tmp10(tmp7(9205).BaseGuildTagChiplet, obj10);
+  if (tmp11Result2) {
+    const obj9 = { containerStyles: null, textStyle: null, guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "heading-md/semibold", textColor: "text-strong" };
+    ({ tag: obj5.containerStyles, tagStyles: obj5.textStyle } = tmp);
+    tag = profile.tag;
+    const BaseGuildTagChiplet = tmp8(9205).BaseGuildTagChiplet;
+    tmp11Result2 = tmp11(BaseGuildTagChiplet, obj9);
   }
-  const items = [tmp10Result2, closure_6(item(6001).FormRadio, { selected })];
-  obj5.children = items;
-  obj3.trailing = closure_7(View, obj5);
-  return closure_6(item(5917).TableRow, obj3);
+  items = [tmp11Result2, closure_6(item(6001).FormRadio, { selected })];
+  return closure_6(TableRow, obj2);
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/UserPrimaryGuildListBottomSheet.tsx");
 
 export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
+  let Text;
+  let divider;
+  let intl;
+  let obj2;
+  let obj3;
+  let obj4;
+  let onSelectGuild;
   availableGuilds = availableGuilds.availableGuilds;
   ({ selectedGuildId: importDefault, onSelectGuild: dependencyMap } = availableGuilds);
-  const tmp = closure_8();
-  noop = tmp;
+  let tmp = closure_8();
+  react = tmp;
   let items = [availableGuilds];
-  const memo = noop.useMemo(() => {
-    const items = [null];
-    HermesBuiltin.arraySpread(_modDef12.sortBy(availableGuilds, (name) => name.name.toLowerCase()), 1);
+  const memo = react.useMemo(() => {
+    const items = [
+      null,
+      ..._modDef12.sortBy(availableGuilds, (name) => {
+        const str = name.name;
+        return str.toLowerCase();
+      })
+    ];
+    _modDef12;
     return items;
   }, items);
-  let obj = { scrollable: true, startExpanded: true, header: null, children: null };
-  const obj2 = { style: tmp.titleContainer, children: null };
-  const obj3 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
-  const intl = availableGuilds(1115).intl;
-  obj3.children = intl.string(availableGuilds(1115).t.Fo0g9x);
-  obj2.children = closure_6(availableGuilds(4832).Text, obj3);
-  obj.header = closure_6(memo, obj2);
-  obj.children = closure_6(availableGuilds(8179).BottomSheetFlashList, {
+  let obj = { scrollable: true, startExpanded: true, header: closure_6(memo, obj2), children: closure_6(availableGuilds(8179).BottomSheetFlashList, obj4) };
+  obj2 = { style: tmp.titleContainer, children: closure_6(Text, obj3) };
+  BottomSheet = availableGuilds(6571).BottomSheet;
+  obj3 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(availableGuilds(1115).t.Fo0g9x) };
+  Text = availableGuilds(4832).Text;
+  intl = availableGuilds(1115).intl;
+  obj4 = {
     ItemSeparatorComponent() {
-      return timestampProducer(Form.FormDivider, { iconPush: true, style: divider.divider });
+      const obj = { iconPush: true, style: divider.divider };
+      return metroRequire(Form.FormDivider, obj);
     },
     data: memo,
     contentContainerStyle: { padding: 16 },
@@ -136,23 +171,27 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
       return str;
     },
     renderItem(arg0) {
+      let id;
+      let index;
+      let item;
+      let tmp3;
       ({ item, index } = arg0);
-      const obj = { start: 0 === index, end: index === memo.length - 1, item, selected: null, onSelectGuild: null };
-      let tmp3 = importDefault;
+      const obj = { start: 0 === index, end: index === memo.length - 1, item, selected: tmp3 === id, onSelectGuild: dependencyMap };
+      tmp3 = importDefault;
+      const tmp = metroRequire;
+      const tmp2 = closure_9;
       if (importDefault == null) {
         tmp3 = null;
       }
-      let id;
+      id = undefined;
       if (item != null) {
         id = item.id;
       }
       if (id == null) {
         id = null;
       }
-      obj.selected = tmp3 === id;
-      obj.onSelectGuild = onSelectGuild;
-      return timestampProducer(closure_9, obj);
+      return tmp(tmp2, obj);
     }
-  });
-  return closure_6(availableGuilds(6571).BottomSheet, obj);
+  };
+  return closure_6(BottomSheet, obj);
 };

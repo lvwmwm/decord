@@ -8,18 +8,20 @@
 import resolveSelectedConversationDefault from "resolveSelectedConversation" /* 7350 */;
 import ConversationPreviewStore from "ConversationPreviewStore" /* 7014 */;
 import ConversationsStore from "ConversationsStore" /* 7018 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/conversations/useSelectedConversation.tsx");
 
 export default function useSelectedConversation(arg0) {
+  let closure_0;
   _require = arg0;
   const items = [ConversationsStore, ConversationPreviewStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     const selectedConversationId = ConversationsStore.getSelectedConversationId(closure_0);
     let tmp4;
     if (null != selectedConversationId) {

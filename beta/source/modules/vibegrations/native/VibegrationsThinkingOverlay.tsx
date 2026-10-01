@@ -6,63 +6,77 @@
 
 // Module 16397 (VibegrationsThinkingOverlay)
 import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import VibegrationsChatStore from "VibegrationsChatStore" /* 12643 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { root: null, opaque: null, body: null, header: null, panel: null };
-const rect = { position: "absolute", top: nativeDefault.space.PX_8, left: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8 };
-obj2.root = rect;
-obj2.opaque = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS };
-obj2.body = { gap: nativeDefault.space.PX_8 };
-let obj4 = { gap: nativeDefault.space.PX_8 };
-obj2.header = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj2.panel = { maxHeight: 240 };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let obj4;
+let rect;
+({ ScrollView: closure_4, View: hasOwnProperty } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { root: rect, opaque: obj2, body: obj3, header: obj4, panel: { maxHeight: 240 } };
+rect = { position: "absolute", top: nativeDefault.space.PX_8, left: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS };
+obj3 = { gap: nativeDefault.space.PX_8 };
+obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+let closure_9 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsThinkingOverlay.tsx");
 
 export default function VibegrationsThinkingOverlay(projectId) {
+  let Card;
+  let intl;
+  let intl2;
+  let items2;
+  let items3;
+  let obj11;
+  let obj3;
+  let obj9;
+  let tmp8Result;
   projectId = projectId.projectId;
   const tmp = closure_9();
-  const ref = noop.useRef(null);
+  const ref = react.useRef(null);
   const items = [VibegrationsChatStore];
   const items1 = [projectId];
-  const stateFromStores = projectId(504).useStateFromStores(items, () => VibegrationsChatStore.getThinkingActivity(projectId), items1);
   const obj = projectId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => VibegrationsChatStore.getThinkingActivity(projectId), items1);
   let str;
+  const useVibegrationsRevealedText = projectId(16346).useVibegrationsRevealedText;
+  projectId(16346);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
   if (str == null) {
     str = "";
   }
-  let tmp6 = null != stateFromStores;
-  if (tmp6) {
-    tmp6 = "end" !== stateFromStores.phase;
-  }
-  const text = projectId(16346).useVibegrationsRevealedText(str, { streaming: tmp6 }).text;
-  const obj3 = { style: tmp.root, children: null };
-  const obj4 = { style: tmp.opaque, children: null };
-  const obj5 = { style: tmp.body, children: null };
-  const obj6 = { style: tmp.header, children: null };
-  const obj2 = projectId(16346);
-  const tmp9 = closure_8;
-  const items2 = [closure_7(projectId(16057).LightbulbIcon, { size: "xs", color: ref(576).colors.TEXT_BRAND }), ];
-  const obj8 = { variant: "text-sm/semibold", color: "text-strong", children: null };
-  const intl = tmp3(1115).intl;
-  obj8.children = intl.string(ref(3715).ltkR4n);
-  items2[1] = closure_7(projectId(4832).Text, obj8);
-  obj6.children = items2;
-  const items3 = [closure_8(closure_5, obj6), ];
+  const tmp7 = null != stateFromStores && "end" !== stateFromStores.phase;
+  const text = useVibegrationsRevealedText(str, { streaming: tmp7 }).text;
+  const obj2 = { style: tmp.root, children: closure_7(closure_5, obj3) };
+  obj3 = { style: tmp.opaque, children: closure_7(Card, obj11) };
+  const obj4 = { style: tmp.body, children: items3 };
+  const obj5 = { style: tmp.header, children: items2 };
+  Card = tmp3(5919).Card;
+  const obj6 = { size: "xs", color: ref(576).colors.TEXT_BRAND };
+  const LightbulbIcon = tmp3(16057).LightbulbIcon;
+  items2 = [closure_7(LightbulbIcon, obj6), ];
+  const obj7 = { variant: "text-sm/semibold", color: "text-strong", children: intl.string(ref(3715).ltkR4n) };
+  const Text = tmp3(4832).Text;
+  intl = tmp3(1115).intl;
+  items2[1] = closure_7(Text, obj7);
+  items3 = [closure_8(closure_5, obj5), ];
+  const tmp10 = closure_8;
   if ("" !== text) {
-    const obj9 = {
+    const obj8 = {
       ref,
       style: tmp.panel,
       nestedScrollEnabled: true,
@@ -74,21 +88,17 @@ export default function VibegrationsThinkingOverlay(projectId) {
           }
           return scrollToEndResult;
         },
-      children: null
+      children: closure_7(ref(16344), obj9)
     };
-    const obj10 = { source: text };
-    obj9.children = tmp7(tmp10(16344), obj10);
-    let tmp7Result = tmp7(closure_4, obj9);
+    obj9 = { source: text };
+    tmp8Result = tmp8(closure_4, obj8);
   } else {
-    const obj11 = { variant: "text-sm/normal", color: "text-muted", children: null };
-    const intl2 = tmp3(1115).intl;
-    obj11.children = intl2.string(tmp10(3715).rXPcUx);
-    tmp7Result = tmp7(tmp3(4832).Text, obj11);
+    const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(ref(3715).rXPcUx) };
+    const Text2 = tmp3(4832).Text;
+    intl2 = tmp3(1115).intl;
+    tmp8Result = tmp8(Text2, obj10);
   }
-  const obj7 = { size: "xs", color: ref(576).colors.TEXT_BRAND };
-  items3[1] = tmp7Result;
-  obj5.children = items3;
-  obj4.children = closure_7(projectId(5919).Card, { variant: "primary", shadow: "high", children: tmp9(closure_5, obj5) });
-  obj3.children = closure_7(closure_5, obj4);
-  return closure_7(closure_5, obj3);
+  items3[1] = tmp8Result;
+  obj11 = { variant: "primary", shadow: "high", children: tmp10(closure_5, obj4) };
+  return closure_7(closure_5, obj2);
 };

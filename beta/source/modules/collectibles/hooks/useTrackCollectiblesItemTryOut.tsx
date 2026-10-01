@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 7608 (useTrackCollectiblesItemTryOut)
-import _mod19 from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
@@ -15,28 +15,37 @@ import PremiumConstants from "PremiumConstants" /* 1374 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, type;
 
-_mod19.useCallback;
+let AnalyticsPremiumFeatureNames;
+let metroRequire;
+const useCallback = react.useCallback;
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ AnalyticsPremiumFeatureNames, AnalyticsPremiumFeatureTiers: metroRequire } = PremiumConstants);
 let obj = { [CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION]: AnalyticsPremiumFeatureNames.AVATAR_DECORATION, [CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT]: AnalyticsPremiumFeatureNames.PROFILE_EFFECT, [CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME]: undefined, [CollectiblesItemType.CollectiblesItemType.NAMEPLATE]: undefined, [CollectiblesItemType.CollectiblesItemType.NONE]: undefined, [CollectiblesItemType.CollectiblesItemType.BUNDLE]: undefined, [CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP]: undefined, [CollectiblesItemType.CollectiblesItemType.EXTERNAL_SKU]: undefined };
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useTrackCollectiblesItemTryOut.tsx");
 
 export default function useTrackCollectiblesItemTryOut(location_stack) {
+  let products;
   _require = location_stack;
+  obj = require("useStateFromStores");
   const items = [CollectiblesCategoryStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => products.products);
+  const stateFromStores = obj.useStateFromStores(items, () => products.products);
   const items1 = [stateFromStores, location_stack];
-  return useCallback((skuId) => {
-    value = stateFromStores.get(skuId.skuId);
-    obj = AnalyticsUtilsDefault;
-    const obj2 = { feature_name: obj[skuId.type], feature_tier: CollectiblesUtils.isPremiumCollectiblesProduct(value) ? timestampProducer.FREE : timestampProducer.PREMIUM_STANDARD, feature_selection: null, location_stack: null };
+  return useCallback((type) => {
     let name;
+    let obj2;
+    type = type.type;
+    const value = stateFromStores.get(type.skuId);
+    obj = { feature_name: obj[type], feature_tier: obj2.isPremiumCollectiblesProduct(value) ? metroRequire.FREE : metroRequire.PREMIUM_STANDARD, feature_selection: name, location_stack };
+    const track = AnalyticsUtilsDefault.track;
+    const PREMIUM_FEATURE_TRY_OUT = AnalyticEvents.PREMIUM_FEATURE_TRY_OUT;
+    AnalyticsUtilsDefault;
+    name = undefined;
+    obj2 = CollectiblesUtils;
     if (value != null) {
       name = value.name;
     }
-    obj2.feature_selection = name;
-    obj2.location_stack = location_stack;
-    obj.track(AnalyticEvents.PREMIUM_FEATURE_TRY_OUT, obj2);
+    track(PREMIUM_FEATURE_TRY_OUT, obj);
   }, items1);
 };

@@ -4,29 +4,22 @@
 // Dependencies: [521, 4923, 545]
 
 // Module 4922 (baseKeysIn)
-import _mod521 from "module_521" /* 521 */;
+import isObject from "isObject" /* 521 */;
+import isPrototype from "isPrototype" /* 545 */;
+import nativeKeysIn from "nativeKeysIn" /* 4923 */;
 
 
 export default function baseKeysIn(obj) {
-  if (_mod521(obj)) {
-    const tmp3 = tmp(545)(obj);
+  if (isObject(obj)) {
     const items = [];
-    for (const key10017 in arg0) {
-      let tmp8 = "constructor" != key10017;
-      if (!tmp8) {
-        if (tmp3) {
-          tmp8 = !tmp3;
-        } else {
-          let tmp5 = hasOwnProperty;
-          let call = hasOwnProperty.call;
-          if (typeof call === "unknown") {
-            let callResult = tmp5(key10017);
-          } else {
-            callResult = call(arg0, key10017);
-          }
-        }
+    const tmp3 = isPrototype(obj);
+    for (const key10017 in obj) {
+      let tmp6 = "constructor" != key10017;
+      if (!tmp6) {
+        let callResult = !tmp3 && hasOwnProperty.call(obj, key10017);
+        tmp6 = callResult;
       }
-      if (!tmp8) {
+      if (!tmp6) {
         continue;
       } else {
         let arr = items.push(key10017);
@@ -36,6 +29,6 @@ export default function baseKeysIn(obj) {
     }
     return items;
   } else {
-    return tmp(4923)(obj);
+    return nativeKeysIn(obj);
   }
 };

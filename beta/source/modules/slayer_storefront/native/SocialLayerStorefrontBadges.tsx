@@ -5,36 +5,47 @@
 // Exports: ExclusiveBadge
 
 // Module 10277 (SocialLayerStorefrontBadges)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import ClydeIcon from "ClydeIcon" /* 10278 */;
-import noop from "module_19" /* 19 */;
+import ClydeIcon2 from "ClydeIcon" /* 10278 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-const obj2 = { exclusiveBadge: { flexDirection: "row", alignItems: "center", textAlignVertical: "center", alignSelf: "flex-start", gap: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.round, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, exclusiveBadgeText: null };
-const obj4 = { textTransform: "uppercase", fontSize: nativeDefault.space.PX_12, lineHeight: null };
-let PlatformUtils = fn(1364);
+let PlatformUtils;
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let obj3;
+let space;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { exclusiveBadge: obj2, exclusiveBadgeText: obj3 };
+obj2 = { flexDirection: "row", alignItems: "center", textAlignVertical: "center", alignSelf: "flex-start", gap: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.round, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+createStyles = createStyles.createStyles;
+obj3 = { textTransform: "uppercase", fontSize: nativeDefault.space.PX_12, lineHeight: PlatformUtils ? space.PX_12 : space.PX_16 };
+PlatformUtils = PlatformUtils_mod;
 PlatformUtils = PlatformUtils.isAndroid();
-const space = nativeDefault.space;
-obj4.lineHeight = PlatformUtils ? space.PX_12 : space.PX_16;
-obj2.exclusiveBadgeText = obj4;
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+space = nativeDefault.space;
+let closure_6 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontBadges.tsx");
 
 export const ExclusiveBadge = function ExclusiveBadge() {
+  let intl;
+  let items;
   const tmp = closure_6();
-  const obj = { style: tmp.exclusiveBadge, children: null };
-  const items = [React4(ClydeIcon.ClydeIcon, { size: "xs", color: nativeDefault.colors.WHITE }), ];
-  const obj3 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.exclusiveBadgeText, children: null };
-  const intl = util.intl;
-  obj3.children = intl.string(util.t.RiDMFz);
-  items[1] = React4(Text_Text.Text, obj3);
-  obj.children = items;
+  const obj = { style: tmp.exclusiveBadge, children: items };
+  const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
+  const ClydeIcon = ClydeIcon2.ClydeIcon;
+  items = [React3(ClydeIcon, obj2), ];
+  const obj3 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.exclusiveBadgeText, children: intl.string(intl2.t.RiDMFz) };
+  const Text = Text_Text.Text;
+  intl = intl2.intl;
+  items[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
 };

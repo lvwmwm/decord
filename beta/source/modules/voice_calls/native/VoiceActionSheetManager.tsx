@@ -8,39 +8,41 @@ import DispatcherDefault from "Dispatcher" /* 573 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 import LifecycleManager from "LifecycleManager" /* 1983 */;
+import size from "module_2" /* 2 */;
 
-let require = fn;
-class VoiceActionSheetManager extends tmp2 {
+class VoiceActionSheetManager extends LifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
     applyArgumentsResult.channel = null;
     applyArgumentsResult.handleOpenChannelCallModal = function handleOpenChannelCallModal() {
-      const channel = applyArgumentsResult.channel;
+      let obj = require;
+      const channel = require.channel;
       if (null != channel) {
-        DispatcherDefault.wait(() => {
-          const result = applyArgumentsResult(5043).dismissVoiceChannelScreens(channel);
-          const obj = applyArgumentsResult(5043);
-          applyArgumentsResult(5043).openChannelCallModal(channel);
+        let obj2 = DispatcherDefault;
+        obj2.wait(() => {
+          const obj = closure_2_0(closure_2_2[4]);
+          const result = obj.dismissVoiceChannelScreens(channel);
+          const obj2 = closure_2_0(closure_2_2[4]);
+          obj2.openChannelCallModal(channel);
         });
-        applyArgumentsResult.terminate();
+        obj.terminate();
       }
     };
     return applyArgumentsResult;
   }
+  _initialize(channel) {
+    this.channel = channel;
+    VoiceStateStore.addChangeListener(this.handleOpenChannelCallModal);
+    MediaEngineStore.addChangeListener(this.handleOpenChannelCallModal);
+  }
+  _terminate() {
+    VoiceStateStore.removeChangeListener(this.handleOpenChannelCallModal);
+    MediaEngineStore.removeChangeListener(this.handleOpenChannelCallModal);
+  }
 }
 const prototype = VoiceActionSheetManager.prototype;
-prototype["_initialize"] = function _initialize(channel) {
-  this.channel = channel;
-  VoiceStateStore.addChangeListener(this.handleOpenChannelCallModal);
-  MediaEngineStore.addChangeListener(this.handleOpenChannelCallModal);
-};
-prototype["_terminate"] = function _terminate() {
-  VoiceStateStore.removeChangeListener(this.handleOpenChannelCallModal);
-  MediaEngineStore.removeChangeListener(this.handleOpenChannelCallModal);
-};
 const voiceActionSheetManager = new VoiceActionSheetManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_calls/native/VoiceActionSheetManager.tsx");
 
 export default voiceActionSheetManager;

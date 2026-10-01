@@ -6,27 +6,30 @@
 
 // Module 14265 (useUsernameStatus)
 import useUsernameLiveCheck from "useUsernameLiveCheck" /* 14266 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/unique_usernames/useUsernameStatus.tsx");
 
 export const useUsernameStatus = (arg0, flag, flag2) => {
-  closure_0 = arg0;
+  let closure_3;
+  let first;
+  let closure_0 = arg0;
   if (flag === undefined) {
     flag = true;
   }
   if (flag2 === undefined) {
     flag2 = false;
   }
-  closure_1 = tmp;
-  const usernameLiveCheck = useUsernameLiveCheck.useUsernameLiveCheck(arg0, flag, flag2);
-  const tmp3 = _slicedToArray(noop.useState(undefined), 2);
-  closure_3 = tmp3[1];
-  const items = [usernameLiveCheck, arg0, arg3];
-  const effect = noop.useEffect(() => {
+  const tmp = arg3;
+  let closure_1 = tmp;
+  closure_3 = undefined;
+  const obj = useUsernameLiveCheck;
+  const usernameLiveCheck = obj.useUsernameLiveCheck(arg0, flag, flag2);
+  [first, closure_3] = react.useState(undefined);
+  const items = [usernameLiveCheck, arg0, tmp];
+  const effect = react.useEffect(() => {
     if ("" !== closure_0) {
       if (tmp !== closure_1) {
         if (null != usernameLiveCheck) {
@@ -36,5 +39,5 @@ export const useUsernameStatus = (arg0, flag, flag2) => {
     }
     closure_3(undefined);
   }, items);
-  return tmp3[0];
+  return first;
 };

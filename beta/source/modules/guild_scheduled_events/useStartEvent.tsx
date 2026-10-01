@@ -5,33 +5,37 @@
 // Exports: default
 
 // Module 9265 (useStartEvent)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let c6, c7, c8, closure_5;
+
 let closure_6 = {
   onSuccess() {
 
   },
   permissionOverwrites: []
 };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/useStartEvent.tsx");
 
 export default function useStartEvent() {
-  closure_2 = async function _startEvent(arg0, arg1, arg2) {
-    closure_0 = arg0;
-    closure_1 = arg1;
-    dependencyMap = arg2;
-    c7 = 0;
-    c8 = 0;
-    c6 = 0;
-    let iter = (async (arg0, value) => {
+  let closure_0;
+  let first;
+  let obj = function _startEvent() {
+    obj = _asyncToGenerator(async function(arg0, value) {
+      let obj11;
+      let obj2;
+      let obj5;
+      let obj8;
+      closure_0 = arg0;
+      closure_1 = value;
+      let closure_2 = arg2;
       if (c8 === 2) {
         c8 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -42,6 +46,9 @@ export default function useStartEvent() {
         }
       } else {
         try {
+          let onSuccess;
+          let permissionOverwrites;
+          let aPIError;
           c8 = 2;
           if (0 === c7) {
             if (arg0 === 1) {
@@ -52,32 +59,22 @@ export default function useStartEvent() {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              closure_4 = tmp3;
-              closure_3 = tmp7;
-              closure_131_2 = undefined;
-              closure_131_3 = undefined;
-              closure_131_0 = closure_0;
-              closure_131_1 = closure_1;
-              let tmp57 = dependencyMap;
-              if (dependencyMap === undefined) {
-                tmp57 = c6;
+              let closure_4 = tmp;
+              let closure_3 = tmp4;
+              onSuccess = undefined;
+              permissionOverwrites = undefined;
+              let tmp52 = closure_2;
+              if (closure_2 === undefined) {
+                tmp52 = c6;
               }
-              let onSuccess = tmp57.onSuccess;
-              if (onSuccess === undefined) {
-                onSuccess = c6.onSuccess;
-              }
-              closure_131_2 = onSuccess;
-              let permissionOverwrites = tmp57.permissionOverwrites;
-              if (permissionOverwrites === undefined) {
-                permissionOverwrites = c6.permissionOverwrites;
-              }
-              closure_131_3 = permissionOverwrites;
-              closure_131_4 = undefined;
+              onSuccess = tmp52.onSuccess ?? c6.onSuccess;
+              permissionOverwrites = tmp52.permissionOverwrites ?? c6.permissionOverwrites;
+              aPIError = undefined;
               c7 = 1;
               c8 = 1;
               return { value: "flex", done: true };
             }
-          } else if (1 === tmp7) {
+          } else if (1 === c7) {
             if (arg0 === 1) {
               c8 = 3;
               throw value;
@@ -90,20 +87,19 @@ export default function useStartEvent() {
               c6 = 1;
               c7 = 3;
               c8 = 1;
-              const obj7 = { value: closure_1(9266).preStartEventActions(closure_131_0, closure_131_3), done: false };
+              const obj7 = { value: obj11.preStartEventActions(closure_0, permissionOverwrites), done: false };
+              obj11 = closure_1(closure_2[3]);
               return obj7;
             }
           } else {
-            if (2 === tmp7) {
+            if (2 === c7) {
               c6 = 0;
-              closure_131_5 = closure_5;
-              const aPIError = new closure_0(4735).APIError(closure_131_5);
-              closure_131_4 = aPIError;
-              closure_132_1(closure_131_4);
+              const self = this;
+              const self2 = this;
+              aPIError = new closure_0(closure_2[5]).APIError(closure_5);
+              closure_132_1(aPIError);
               closure_132_0(false);
-              closure_132_0(false);
-              c8 = 3;
-            } else if (3 === tmp7) {
+            } else if (3 === c7) {
               if (arg0 === 1) {
                 c8 = 3;
                 throw value;
@@ -115,10 +111,11 @@ export default function useStartEvent() {
               } else {
                 c7 = 4;
                 c8 = 1;
-                const obj10 = { value: closure_1(9266).setEventAsActive(closure_131_0, closure_131_1), done: false };
+                const obj10 = { value: obj8.setEventAsActive(closure_0, closure_1), done: false };
+                obj8 = closure_1(closure_2[3]);
                 return obj10;
               }
-            } else if (4 === tmp7) {
+            } else if (4 === c7) {
               if (arg0 === 1) {
                 c8 = 3;
                 throw value;
@@ -130,10 +127,11 @@ export default function useStartEvent() {
               } else {
                 c7 = 5;
                 c8 = 1;
-                const obj13 = { value: closure_0(9267).navigateToEvent(closure_131_0, closure_131_2), done: false };
+                const obj13 = { value: obj5.navigateToEvent(closure_0, onSuccess), done: false };
+                obj5 = closure_0(closure_2[4]);
                 return obj13;
               }
-            } else if (5 === tmp7) {
+            } else if (5 === c7) {
               if (arg0 === 1) {
                 c8 = 3;
                 throw value;
@@ -145,51 +143,47 @@ export default function useStartEvent() {
               } else {
                 c7 = 6;
                 c8 = 1;
-                const obj15 = { value: closure_0(9267).postStartActions(closure_131_0, closure_131_2), done: false };
+                const obj15 = { value: obj2.postStartActions(closure_0, onSuccess), done: false };
+                obj2 = closure_0(closure_2[4]);
                 return obj15;
               }
             } else if (arg0 === 1) {
               c8 = 3;
               throw value;
-            } else if (arg0 !== 2) {
+            } else if (arg0 === 2) {
+              c6 = 0;
+              c8 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
               closure_132_0(false);
               c6 = 0;
             }
-            c6 = 0;
+            closure_132_0(false);
             c8 = 3;
-            const obj = { value, done: true };
-            return obj;
+            return { value: "HermesInternal", done: null };
           }
-        } catch (tmp60) {
-          closure_5 = tmp60;
-          if (tmp4 === c6) {
-            c8 = tmp2;
-            throw tmp60;
+        } catch (tmp55) {
+          closure_5 = tmp55;
+          if (0 === c6) {
+            c8 = 3;
+            throw tmp55;
           } else {
-            c7 = tmp;
+            c7 = 2;
           }
         }
       }
-    })();
-    iter.next();
-    return iter;
+    });
+    return obj(...arguments);
   };
-  const tmp = _slicedToArray(noop.useState(false), 2);
-  closure_0 = tmp[1];
-  const tmp2 = _slicedToArray(noop.useState(null), 2);
-  closure_1 = tmp2[1];
+  [first, closure_0] = react.useState(false);
+  const tmp3 = _slicedToArray(react.useState(null), 2);
+  let closure_1 = tmp3[1];
   const items = [
     function startEvent(arg0, arg1) {
-      const self = this;
-      const apply = closure_2.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+      return obj(...arguments);
     },
-    { loading: tmp[0], error: tmp2[0] }
+    { loading: first, error: tmp3[0] }
   ];
   return items;
 };

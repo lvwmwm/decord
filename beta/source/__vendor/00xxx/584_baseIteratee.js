@@ -10,20 +10,23 @@ import property from "property" /* 665 */;
 
 
 export default function baseIteratee(fn) {
-  if (typeof fn === "function") {
-    return tmp;
-  } else if (null == tmp) {
-  } else if (typeof tmp === "object") {
-    let tmp2 = require;
-    if (_mod514(tmp)) {
-      tmp2 = tmp2(585);
-      [tmp3, tmp] = tmp;
-      let tmp2Result = tmp2(tmp3, tmp);
+  let tmp = fn;
+  if (typeof fn !== "function") {
+    let tmp5;
+    if (null == fn) {
+      tmp5 = identity;
+    } else if (typeof fn === "object") {
+      let tmp4;
+      if (_mod514(fn)) {
+        tmp4 = tmp2(585)(fn[0], fn[1]);
+      } else {
+        tmp4 = tmp2(662)(fn);
+      }
+      tmp5 = tmp4;
     } else {
-      tmp2Result = tmp2(662)(tmp);
+      tmp5 = property(fn);
     }
-    tmp3 = dependencyMap;
-  } else {
-    const tmp8 = property(tmp);
+    tmp = tmp5;
   }
+  return tmp;
 };

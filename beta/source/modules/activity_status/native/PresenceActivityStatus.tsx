@@ -5,22 +5,31 @@
 // Exports: default
 
 // Module 10346 (PresenceActivityStatus)
+import Constants from "Constants" /* 1074 */;
 import AppsIcon2 from "AppsIcon" /* 5374 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7158 */;
 import GameControllerIcon from "GameControllerIcon" /* 8535 */;
 import MusicIcon from "MusicIcon" /* 9366 */;
 import TvIcon from "TvIcon" /* 10342 */;
 import getActivityStatusTextDefault from "getActivityStatusText" /* 10347 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ActivityTypes = fn(1074).ActivityTypes;
-const jsxProd = fn(21);
-({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+const ActivityTypes = Constants.ActivityTypes;
+({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const result = size.fileFinishedImporting("modules/activity_status/native/PresenceActivityStatus.tsx");
 
 export default function PresenceActivityStatus(hideText) {
+  let AppsIcon;
+  let activity;
+  let hideIcon;
+  let iconStyle;
+  let maxFontSizeMultiplier;
+  let textStyle;
   ({ activity, hideIcon } = hideText);
   ({ iconStyle, textStyle, maxFontSizeMultiplier } = hideText);
   if (hideIcon === undefined) {
@@ -35,17 +44,18 @@ export default function PresenceActivityStatus(hideText) {
       return null;
     }
   }
+  const text = getActivityStatusTextDefault(activity, true).text;
   if (isEmbeddedActivityDefault(activity)) {
-    let AppsIcon = AppsIcon2.AppsIcon;
+    AppsIcon = AppsIcon2.AppsIcon;
   } else if (activity.type === ActivityTypes.PLAYING) {
     AppsIcon = GameControllerIcon.GameControllerIcon;
-  } else if (activity.type === tmp3.LISTENING) {
+  } else if (activity.type === ActivityTypes.LISTENING) {
     AppsIcon = MusicIcon.MusicIcon;
   } else {
-    if (activity.type !== tmp3.WATCHING) {
-      if (activity.type !== tmp3.STREAMING) {
+    if (activity.type !== ActivityTypes.WATCHING) {
+      if (activity.type !== ActivityTypes.STREAMING) {
         AppsIcon = null;
-        if (activity.type === tmp3.COMPETING) {
+        if (activity.type === ActivityTypes.COMPETING) {
           AppsIcon = GameControllerIcon.GameControllerIcon;
         }
       }
@@ -53,19 +63,21 @@ export default function PresenceActivityStatus(hideText) {
     AppsIcon = TvIcon.TvIcon;
   }
   let tmp12 = !hideIcon;
+  const tmp10 = metroRequire;
+  const tmp11 = hasOwnProperty;
   if (!hideIcon) {
     tmp12 = null != AppsIcon;
   }
   if (tmp12) {
     const obj = { icon: AppsIcon, style: iconStyle };
-    tmp12 = React4(tmp(10341), obj);
+    tmp12 = React3(tmp(10341), obj);
   }
   const children = [tmp12, ];
   let tmp15 = !flag;
-  if (!flag) {
-    const obj2 = { style: textStyle, maxFontSizeMultiplier, children: getActivityStatusTextDefault(activity, true).text };
-    tmp15 = React4(tmp(10344), obj2);
+  if (tmp15) {
+    const obj2 = { style: textStyle, maxFontSizeMultiplier, children: text };
+    tmp15 = React3(tmp(10344), obj2);
   }
   children[1] = tmp15;
-  return timestampProducer(hasOwnProperty, { children });
+  return tmp10(tmp11, { children });
 };

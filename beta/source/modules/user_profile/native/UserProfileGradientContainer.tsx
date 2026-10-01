@@ -4,17 +4,24 @@
 // Dependencies: [19, 21, 7685, 5293, 2]
 
 // Module 10573 (UserProfileGradientContainer)
+import Fragment from "Fragment" /* 21 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
 import useUserProfileGradientColors from "useUserProfileGradientColors" /* 7685 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileGradientContainer.tsx");
-
-export default noop.memo((arg0) => {
+const jsx = Fragment.jsx;
+const memoResult = react.memo((arg0) => {
+  let children;
+  let containerStyle;
+  let fallbackBackground;
+  let primaryColor;
+  let secondaryColor;
   ({ primaryColor, secondaryColor, fallbackBackground, containerStyle, children } = arg0);
-  const colors = useUserProfileGradientColors.useUserProfileGradientColors(primaryColor, secondaryColor, fallbackBackground);
+  const obj = useUserProfileGradientColors;
+  const colors = obj.useUserProfileGradientColors(primaryColor, secondaryColor, fallbackBackground);
   return jsx(LinearGradientDefault, { colors, style, children });
 });
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileGradientContainer.tsx");
+
+export default memoResult;

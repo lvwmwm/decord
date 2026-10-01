@@ -5,19 +5,25 @@
 // Exports: default
 
 // Module 16489 (MediaGrid)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import SearchPlatformUtils from "SearchPlatformUtils" /* 11821 */;
 import MediaGridItemDefault from "MediaGridItem" /* 16485 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import SearchConstants from "SearchConstants" /* 7303 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const SearchConstants = fn(7303);
+let SEARCH_LIST_HORIZONTAL_PADDING;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+const View = react_native.View;
 ({ SEARCH_LIST_HORIZONTAL_PADDING, MEDIA_NUM_COLUMNS: hasOwnProperty, MEDIA_ITEM_GAP_WIDTH: metroRequire } = SearchConstants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
-const obj2 = { container: { paddingLeft: SEARCH_LIST_HORIZONTAL_PADDING - 2, paddingRight: SEARCH_LIST_HORIZONTAL_PADDING + 4 } };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+const jsx = Fragment.jsx;
+const obj = { container: obj2 };
+obj2 = { paddingLeft: SEARCH_LIST_HORIZONTAL_PADDING - 2, paddingRight: SEARCH_LIST_HORIZONTAL_PADDING + 4 };
+let closure_8 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/MediaGrid.tsx");
 
 export default function MediaGrid(media) {
@@ -26,14 +32,17 @@ export default function MediaGrid(media) {
   const onPress = media.onPress;
   const animate = media.animate;
   const items = [media.length, mediaSize, onPress, animate];
-  let obj = { style: closure_8().container, children: null };
+  const tmp = closure_8();
   const callback = animate.useCallback((arg0) => {
+    let index;
+    let item;
     ({ item, index } = arg0);
-    const obj = { animate, size: mediaSize, media: item, onPress, containerStyle: null };
-    obj.containerStyle = SearchPlatformUtils.getMediaGridItemStyles({ itemIndex: index, numItems: media.length, numColumns, spacing });
-    return <tmp animate={animate} size={mediaSize} media={item} onPress={onPress} containerStyle={null} />;
+    MediaGridItemDefault;
+    const obj2 = SearchPlatformUtils;
+    const obj3 = { itemIndex: index, numItems: media.length, numColumns: hasOwnProperty, spacing: metroRequire };
+    return <tmp animate={animate} size={mediaSize} media={item} onPress={onPress} containerStyle={obj2.getMediaGridItemStyles(obj3)} />;
   }, items);
-  let tmp = closure_8();
-  obj.children = jsx(media(onPress[7]).FlashList, { numColumns, data: media, renderItem: callback, ItemSeparatorComponent: media(onPress[8]).MediaVerticalSeparator, scrollEnabled: false });
-  return <View style={closure_8().container}>{null}</View>;
+  let obj2 = { numColumns, data: media, renderItem: callback, ItemSeparatorComponent: media(onPress[8]).MediaVerticalSeparator, scrollEnabled: false };
+  const FlashList = media(onPress[7]).FlashList;
+  return <View style={tmp.container}>{null}</View>;
 };

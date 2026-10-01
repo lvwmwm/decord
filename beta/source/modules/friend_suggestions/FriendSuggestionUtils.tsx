@@ -25,8 +25,8 @@ export const getSuggestedContactNameForSuggestion = function getSuggestedContact
       if (suggestedFriend != null) {
         const contactNames1 = suggestedFriend.contactNames;
         const substr = contactNames1.slice(0, 2);
-        trimmed = substr.join(" ").trim();
         const str2 = substr.join(" ");
+        trimmed = str2.trim();
       }
       tmp2 = trimmed;
     }

@@ -6,121 +6,146 @@
 
 // Module 12729 (OrbCheckoutModalComponents)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl3 from "intl" /* 1115 */;
 import shared from "shared" /* 4685 */;
 import useThemeDefault from "useTheme" /* 4767 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 6028 */;
 import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6662 */;
-import OrbsIcon from "OrbsIcon" /* 8298 */;
 import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 10476 */;
 import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 10478 */;
 import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 12728 */;
 import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 12730 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, ActivityIndicator: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { topRowWrapper: { width: "100%", marginBottom: 10 }, rowWrapper: { width: "100%", marginVertical: 10 }, rowDetailsContainer: { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, padding: nativeDefault.space.PX_16 }, orbPaymentSourceDetails: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, sectionTitle: null, spinner: null, disclaimer: null, errorCard: null };
-let obj3 = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, padding: nativeDefault.space.PX_16 };
-obj2.sectionTitle = { marginBottom: nativeDefault.space.PX_8 };
-let obj4 = { marginBottom: nativeDefault.space.PX_8 };
-obj2.spinner = { paddingVertical: nativeDefault.space.PX_16, alignItems: "center" };
-obj2.disclaimer = { opacity: 0.5 };
-const obj5 = { paddingVertical: nativeDefault.space.PX_16, alignItems: "center" };
-obj2.errorCard = { borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+({ View: closure_4, ActivityIndicator: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { topRowWrapper: { width: "100%", marginBottom: 10 }, rowWrapper: { width: "100%", marginVertical: 10 }, rowDetailsContainer: obj2, orbPaymentSourceDetails: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, sectionTitle: obj3, spinner: obj4, disclaimer: { opacity: 0.5 }, errorCard: { borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL } };
+obj2 = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, padding: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { marginBottom: nativeDefault.space.PX_8 };
+obj4 = { paddingVertical: nativeDefault.space.PX_16, alignItems: "center" };
+({ borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL });
+let closure_8 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/virtual_currency/checkout/native/OrbCheckoutModalComponents.tsx");
 
-export const OrbCheckoutErrorCard = function OrbCheckoutErrorCard(children) {
-  const obj = { style: closure_8().errorCard, children: null };
-  const obj2 = { direction: "horizontal", spacing: 8, align: "flex-start", children: null };
-  const items = [timestampProducer(CircleErrorIcon.CircleErrorIcon, { size: "sm", color: "mobile-text-heading-primary" }), timestampProducer(Text_Text.Text, { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: children.error })];
-  obj2.children = items;
-  obj.children = React5(Stack_Stack.Stack, obj2);
-  return timestampProducer(React4, obj);
+export const OrbCheckoutErrorCard = function OrbCheckoutErrorCard(error) {
+  let Stack;
+  let items;
+  let obj2;
+  error = error.error;
+  const obj = { style: closure_8().errorCard, children: metroImportDefault(Stack, obj2) };
+  obj2 = { direction: "horizontal", spacing: 8, align: "flex-start", children: items };
+  Stack = Stack_Stack.Stack;
+  items = [metroRequire(CircleErrorIcon.CircleErrorIcon, { size: "sm", color: "mobile-text-heading-primary" }), metroRequire(Text_Text.Text, { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: error })];
+  return metroRequire(React3, obj);
 };
 export const OrbCheckoutOrderSummary = function OrbCheckoutOrderSummary(product) {
+  let intl;
+  let items;
+  let items1;
+  let tmp5;
+  let tmp6;
   product = product.product;
   const tmp = closure_8();
   if (null == product) {
-    const obj2 = { style: null, children: null };
-    const items = [, ];
+    const obj2 = { style: items, children: metroRequire(hasOwnProperty, { size: "small" }) };
+    items = [, ];
     ({ rowDetailsContainer: arr[0], spinner: arr[1] } = tmp);
-    obj2.style = items;
-    obj2.children = timestampProducer(hasOwnProperty, { size: "small" });
-    let tmp5 = timestampProducer(React4, obj2);
-    let tmp6 = timestampProducer;
+    tmp5 = metroRequire(React3, obj2);
+    tmp6 = metroRequire;
   } else {
     const obj = { product, useOrbPrice: true };
-    tmp5 = timestampProducer(CollectiblesShopCheckoutDetailsDefault, obj);
-    tmp6 = timestampProducer;
+    tmp5 = metroRequire(CollectiblesShopCheckoutDetailsDefault, obj);
+    tmp6 = metroRequire;
   }
-  const obj3 = { style: tmp.topRowWrapper, children: null };
-  const obj4 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", style: tmp.sectionTitle, children: null };
-  const intl = util.intl;
-  obj4.children = intl.string(util.t.hws7bC);
-  const items1 = [tmp6(Text_Text.Text, obj4), tmp5];
-  obj3.children = items1;
-  return React5(React4, obj3);
+  const obj3 = { style: tmp.topRowWrapper, children: items1 };
+  const obj4 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", style: tmp.sectionTitle, children: intl.string(intl3.t.hws7bC) };
+  const Text = Text_Text.Text;
+  intl = intl3.intl;
+  items1 = [tmp6(Text, obj4), tmp5];
+  return metroImportDefault(React3, obj3);
 };
-export const OrbCheckoutPaymentSourceDetails = function OrbCheckoutPaymentSourceDetails(orbAmount) {
+export const OrbCheckoutPaymentSourceDetails = function OrbCheckoutPaymentSourceDetails(orbBalance) {
+  let intl;
+  let intl2;
+  let items;
+  let items1;
+  let items2;
+  orbBalance = orbBalance.orbBalance;
   const tmp = closure_8();
-  const obj = { style: tmp.rowWrapper, children: null };
-  const obj2 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", style: tmp.sectionTitle, children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t["zLch/S"]);
-  const items = [timestampProducer(Text_Text.Text, obj2), ];
-  const obj3 = { style: null, children: null };
-  const items1 = [, ];
+  const obj = { style: tmp.rowWrapper, children: items };
+  const obj2 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", style: tmp.sectionTitle, children: intl.string(intl3.t["zLch/S"]) };
+  const Text = Text_Text.Text;
+  intl = intl3.intl;
+  items = [metroRequire(Text, obj2), ];
+  const obj3 = { style: items1, children: items2 };
+  items1 = [, ];
   ({ rowDetailsContainer: arr2[0], orbPaymentSourceDetails: arr2[1] } = tmp);
-  obj3.style = items1;
-  const obj4 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
-  const intl2 = util.intl;
-  obj4.children = intl2.string(util.t.y0WGqP);
-  const items2 = [timestampProducer(Text_Text.Text, obj4), timestampProducer(OrbCheckoutAmountTagDefault, { orbAmount: orbAmount.orbBalance })];
-  obj3.children = items2;
-  items[1] = React5(React4, obj3);
-  obj.children = items;
-  return React5(React4, obj);
+  const obj4 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.y0WGqP) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl3.intl;
+  items2 = [metroRequire(Text2, obj4), metroRequire(OrbCheckoutAmountTagDefault, { orbAmount: orbBalance })];
+  items[1] = metroImportDefault(React3, obj3);
+  return metroImportDefault(React3, obj);
 };
 export const OrbCheckoutLegalFinePrint = function OrbCheckoutLegalFinePrint() {
+  let skuId;
   const tmp = closure_8();
-  skuId = skuId(12728).useOrbCheckoutModalContext().skuId;
+  let obj = skuId(12728);
+  skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
-  const memo = noop.useMemo(() => OrbCheckoutUtils.getOrbCheckoutDisclaimerMessage(skuId), items);
-  return closure_6(skuId(4832).Text, { style: tmp.disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: memo });
+  const memo = react.useMemo(() => {
+    const obj = OrbCheckoutUtils;
+    return obj.getOrbCheckoutDisclaimerMessage(skuId);
+  }, items);
+  const obj2 = { style: tmp.disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: memo };
+  return closure_6(skuId(4832).Text, obj2);
 };
 export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPress) {
+  let OrbsIcon;
+  let intl;
+  let isRedeeming;
+  let orbPriceAmount;
+  let orbProductContext;
+  let str2;
+  onPress = onPress.onPress;
   const tmp2 = useThemeDefault();
-  const orbCheckoutModalContext = OrbCheckoutModalContext.useOrbCheckoutModalContext();
+  const obj = OrbCheckoutModalContext;
+  const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
   ({ isRedeeming, orbProductContext } = orbCheckoutModalContext);
-  const virtualCurrencyBalance = useVirtualCurrencyBalance.useVirtualCurrencyBalance();
+  const obj2 = useVirtualCurrencyBalance;
+  const virtualCurrencyBalance = obj2.useVirtualCurrencyBalance();
   if (orbProductContext != null) {
-    const orbPriceAmount = orbProductContext.orbPriceAmount;
+    orbPriceAmount = orbProductContext.orbPriceAmount;
   }
+  const Button = tmp3(5281).Button;
   let str = "primary";
+  const tmp3Result = shared;
   if (tmp3Result.isThemeDark(tmp2)) {
     str = "primary-overlay";
   }
-  const obj3 = { variant: str, size: "lg", text: null, icon: null, iconPosition: "start", loading: null, onPress: null, disabled: null };
-  const intl = tmp3(1115).intl;
-  obj3.text = intl.string(util.t["zLch/S"]);
-  tmp3Result = shared;
-  let str2 = "control-primary-text-default";
+  const obj3 = { variant: str, size: "lg", text: intl.string(intl3.t["zLch/S"]), icon: metroRequire(OrbsIcon, { size: "md", color: str2 }), iconPosition: "start", loading: isRedeeming, onPress, disabled: isRedeeming };
+  intl = tmp3(1115).intl;
+  OrbsIcon = tmp3(8298).OrbsIcon;
+  str2 = "control-primary-text-default";
+  const tmp3Result2 = shared;
   if (tmp3Result2.isThemeDark(tmp2)) {
     str2 = "control-overlay-primary-text-default";
   }
-  obj3.icon = timestampProducer(OrbsIcon.OrbsIcon, { size: "md", color: str2 });
-  obj3.loading = isRedeeming;
-  obj3.onPress = onPress.onPress;
   if (!isRedeeming) {
     isRedeeming = null == orbPriceAmount;
   }
@@ -130,6 +155,5 @@ export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPr
   if (!isRedeeming) {
     isRedeeming = virtualCurrencyBalance < orbPriceAmount;
   }
-  obj3.disabled = isRedeeming;
-  return timestampProducer(components_Button_Button.Button, obj3);
+  return metroRequire(Button, obj3);
 };

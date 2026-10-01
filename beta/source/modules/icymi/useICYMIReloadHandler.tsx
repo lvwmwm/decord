@@ -5,21 +5,24 @@
 // Exports: useICYMIReloadHandler
 
 // Module 16126 (useICYMIReloadHandler)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
+let c1, c2;
+
 const result = size.fileFinishedImporting("modules/icymi/useICYMIReloadHandler.tsx");
 
 export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
-  closure_0 = showDot;
+  let closure_0 = showDot;
   const items = [showDot];
-  return noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
-    if (dependencyMap === 2) {
-      dependencyMap = 3;
+  return react.useCallback(_asyncToGenerator(async (arg0, value) => {
+    let closure_0;
+    let v3;
+    if (c2 === 2) {
+      c2 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -30,71 +33,76 @@ export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
       }
     } else {
       try {
-        dependencyMap = 2;
-        if (0 === v3) {
+        c2 = 2;
+        if (0 === c1) {
           if (arg0 === 1) {
-            dependencyMap = 3;
+            c2 = 3;
             throw value;
           } else if (arg0 === 2) {
-            dependencyMap = 3;
+            c2 = 3;
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            const ICYMIAnalytics = tmp2(7807).ICYMIAnalytics;
+            const ICYMIAnalytics = tmp(c2[2]).ICYMIAnalytics;
             let str = "NoDotShown";
-            if (tmp2) {
+            const trackFeedShown = ICYMIAnalytics.trackFeedShown;
+            if (tmp) {
               str = "DotShown";
             }
             const obj5 = { variant: str, homeSessionId: "gravity_refresh" };
-            ICYMIAnalytics.trackFeedShown(obj5);
-            v3 = 1;
-            dependencyMap = 1;
-            const obj7 = { value: v3(7799).fetchDehydrated({ isReloading: true }), done: false };
+            trackFeedShown(obj5);
+            const obj10 = c1(c2[3]);
+            c1 = 1;
+            c2 = 1;
+            const obj7 = { value: obj10.fetchDehydrated({ isReloading: true }), done: false };
             return obj7;
           }
-        } else if (1 === tmp5) {
+        } else if (1 === c1) {
           if (arg0 === 1) {
-            dependencyMap = 3;
+            c2 = 3;
             throw value;
           } else if (arg0 === 2) {
-            dependencyMap = 3;
+            c2 = 3;
             const obj8 = { value, done: true };
             return obj8;
           } else {
-            v3 = 2;
-            dependencyMap = 1;
-            const obj9 = { value: v3(7799).reloadICYMITab(), done: false };
+            const obj6 = c1(c2[3]);
+            c1 = 2;
+            c2 = 1;
+            const obj9 = { value: obj6.reloadICYMITab(), done: false };
             return obj9;
           }
-        } else if (2 === tmp5) {
+        } else if (2 === c1) {
           if (arg0 === 1) {
-            dependencyMap = 3;
+            c2 = 3;
             throw value;
           } else if (arg0 === 2) {
-            dependencyMap = 3;
+            c2 = 3;
             const obj11 = { value, done: true };
             return obj11;
           } else {
-            v3 = 3;
-            dependencyMap = 1;
-            const obj12 = { value: v3(7799).getGuildChannelScores(), done: false };
+            const obj3 = c1(c2[3]);
+            c1 = 3;
+            c2 = 1;
+            const obj12 = { value: obj3.getGuildChannelScores(), done: false };
             return obj12;
           }
         } else if (arg0 === 1) {
-          dependencyMap = 3;
+          c2 = 3;
           throw value;
         } else if (arg0 === 2) {
-          dependencyMap = 3;
+          c2 = 3;
           const obj13 = { value, done: true };
           return obj13;
         } else {
-          const recommendedGuilds = v3(7799).getRecommendedGuilds();
-          dependencyMap = 3;
+          const obj = c1(c2[3]);
+          const recommendedGuilds = obj.getRecommendedGuilds();
+          c2 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp19) {
-        dependencyMap = tmp;
-        throw tmp19;
+      } catch (tmp18) {
+        c2 = 3;
+        throw tmp18;
       }
     }
   }), items);

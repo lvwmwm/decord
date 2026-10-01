@@ -5,36 +5,27 @@
 
 // Module 15343 (InternalBuildActiveSetting)
 import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14378 */;
+import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 15112 */;
 import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 13885 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const obj2 = {
+let obj = {
   useTitle() {
     return "Internal Build Active";
   },
   parent: null,
-  IconComponent: fn(15112).MobilePhoneSettingsIcon,
+  IconComponent: MobilePhoneSettingsIcon.MobilePhoneSettingsIcon,
   useDescription: function useInternalBuildActiveDescription() {
     return "Build installed from builds.discord.tools";
   },
   usePredicate: function useHasCheckNativeUpdateSetting() {
-    return MobileNativeUpdateStore.hasUpdatesConfigured && useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
+    const obj = useIsStaffOrDeveloperSettingPredicate;
+    const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
+    return tmp;
   }
 };
-const size = fn(2);
+const createStaticResult = SettingBuilders.createStatic(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/InternalBuildActiveSetting.tsx");
 
-export default SettingBuilders.createStatic({
-  useTitle() {
-    return "Internal Build Active";
-  },
-  parent: null,
-  IconComponent: fn(15112).MobilePhoneSettingsIcon,
-  useDescription: function useInternalBuildActiveDescription() {
-    return "Build installed from builds.discord.tools";
-  },
-  usePredicate: function useHasCheckNativeUpdateSetting() {
-    return MobileNativeUpdateStore.hasUpdatesConfigured && useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
-  }
-});
+export default createStaticResult;

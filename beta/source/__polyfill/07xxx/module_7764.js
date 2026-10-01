@@ -3,8 +3,8 @@
 // Dependencies: [4663]
 
 // Module 7764
-import emptyFunction from "module_4663" /* 4663 */;
+import module_4663 from "module_4663" /* 4663 */;
 
-const rect = { top: emptyFunction.number, left: emptyFunction.number, bottom: emptyFunction.number, right: emptyFunction.number };
+const rect = { top: module_4663.number, left: module_4663.number, bottom: module_4663.number, right: module_4663.number };
 
-export default emptyFunction.shape(rect);
+export default module_4663.shape(rect);

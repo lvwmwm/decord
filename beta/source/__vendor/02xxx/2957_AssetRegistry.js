@@ -1,0 +1,10 @@
+// Module ID: 2957
+// Function ID: 2958
+// Name: AssetRegistry
+// Dependencies: [1121]
+
+// Module 2957 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1121 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX3NlcnZlcg==", scales: [1], hash: "74f582431688c0ee94f8fec3fe5b5937", name: "ko.messages.74f582431688c0ee94f8fec3fe5b5937.compiled.messages", type: "jsona" });

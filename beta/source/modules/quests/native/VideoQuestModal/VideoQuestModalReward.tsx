@@ -7,58 +7,75 @@
 import nativeDefault from "native" /* 576 */;
 import QuestUtils from "QuestUtils" /* 10678 */;
 import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 14662 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+let closure_4;
+let hasOwnProperty;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ questName: { textAlign: "center" } });
-let size = fn(2);
-let result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalReward.tsx");
-
-export default noop.memo(function VideoQuestModalReward(style) {
-  const withQuestName = style.withQuestName;
+const memoResult = react.memo(function VideoQuestModalReward(withQuestName) {
+  let intl;
+  let intl2;
+  let items1;
+  let items2;
+  let obj7;
+  let onTextBlockLayout;
+  let quest;
+  let withRewardTileAnimation;
+  withQuestName = withQuestName.withQuestName;
   let tmp = undefined === withQuestName;
+  const style = withQuestName.style;
   if (!tmp) {
     tmp = withQuestName;
   }
-  const withRewardAvailableCopy = style.withRewardAvailableCopy;
+  const withRewardAvailableCopy = withQuestName.withRewardAvailableCopy;
   let tmp9Result = undefined === withRewardAvailableCopy || withRewardAvailableCopy;
-  const size = style.size;
+  size = withQuestName.size;
   let str = "lg";
   if (undefined !== size) {
     str = size;
   }
-  ({ withRewardTileAnimation, onTextBlockLayout } = style);
-  quest = quest(14657).useVideoQuestModalContext().quest;
-  const obj = quest(14657);
+  ({ withRewardTileAnimation, onTextBlockLayout } = withQuestName);
+  let obj = quest(14657);
+  quest = obj.useVideoQuestModalContext().quest;
+  let obj2 = quest(10681);
   const items = [quest.id];
-  const questTaskDetails = quest(10681).useQuestTaskDetails(quest);
-  const callback = noop.useCallback(() => {
-    const result = QuestUtils.openRewardDetailsBottomSheet({ questId: quest.id });
+  const questTaskDetails = obj2.useQuestTaskDetails(quest);
+  const callback = react.useCallback(() => {
+    const obj = QuestUtils;
+    const obj2 = { questId: quest.id };
+    const result = obj.openRewardDetailsBottomSheet(obj2);
   }, items);
-  const obj2 = quest(10681);
-  const obj3 = { justify: "center", align: "center", spacing: nativeDefault.space.PX_24, style: style.style, children: null };
-  const items1 = [closure_4(QuestProgressIndicatorDefault, { hasConfetti: true, quest, size: str, progress: questTaskDetails.percentComplete, onPress: callback, withAnimation: withRewardTileAnimation }), ];
-  const obj5 = { align: "center", spacing: nativeDefault.space.PX_4, onLayout: onTextBlockLayout, children: null };
+  const obj3 = { justify: "center", align: "center", spacing: nativeDefault.space.PX_24, style, children: items1 };
+  const tmp7 = closure_6();
+  const Stack = quest(5279).Stack;
+  items1 = [, ];
+  const obj4 = { hasConfetti: true, quest, size: str, progress: questTaskDetails.percentComplete, onPress: callback, withAnimation: withRewardTileAnimation };
+  items1[0] = closure_4(QuestProgressIndicatorDefault, obj4);
+  const obj5 = { align: "center", spacing: nativeDefault.space.PX_4, onLayout: onTextBlockLayout, children: items2 };
+  const Stack2 = quest(5279).Stack;
   if (tmp) {
-    const obj6 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp7.questName, children: null };
-    const intl = tmp3(1115).intl;
-    const obj7 = { questName: quest.config.messages.questName };
-    obj6.children = intl.formatToPlainString(tmp3(1115).t.EAYZAr, obj7);
-    tmp = tmp9(tmp3(4832).Text, obj6);
+    const obj6 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp7.questName, children: intl.formatToPlainString(quest(1115).t.EAYZAr, obj7) };
+    const Text = tmp3(4832).Text;
+    intl = tmp3(1115).intl;
+    obj7 = { questName: quest.config.messages.questName };
+    tmp = tmp9(Text, obj6);
   }
-  const items2 = [tmp, ];
+  items2 = [tmp, ];
   if (tmp9Result) {
-    const obj8 = { variant: "heading-sm/medium", color: "text-subtle", children: null };
-    const intl2 = tmp3(1115).intl;
-    obj8.children = intl2.string(tmp3(1115).t["1Wvve2"]);
-    tmp9Result = tmp9(tmp3(4832).Text, obj8);
+    const obj8 = { variant: "heading-sm/medium", color: "text-subtle", children: intl2.string(quest(1115).t["1Wvve2"]) };
+    const Text2 = tmp3(4832).Text;
+    intl2 = tmp3(1115).intl;
+    tmp9Result = tmp9(Text2, obj8);
   }
   items2[1] = tmp9Result;
-  obj5.children = items2;
-  items1[1] = closure_5(quest(5279).Stack, obj5);
-  obj3.children = items1;
-  return closure_5(quest(5279).Stack, obj3);
+  items1[1] = closure_5(Stack2, obj5);
+  return closure_5(Stack, obj3);
 });
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalReward.tsx");
+
+export default memoResult;

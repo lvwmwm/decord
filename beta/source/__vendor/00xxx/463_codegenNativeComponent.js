@@ -5,12 +5,9 @@
 // Exports: default
 
 // Module 463 (codegenNativeComponent)
-import measureDefault from "measure" /* 68 */;
+import _modDef68 from "module_68" /* 68 */;
 import _modDef464 from "module_464" /* 464 */;
 
-const global = arg0;
-importDefault = arg2;
-const dependencyMap = arg6;
 
 export default function codegenNativeComponent(arg0, paperComponentName) {
   paperComponentName = arg0;
@@ -25,23 +22,26 @@ export default function codegenNativeComponent(arg0, paperComponentName) {
     paperComponentNameDeprecated = paperComponentName;
     if (null != paperComponentName.paperComponentNameDeprecated) {
       paperComponentNameDeprecated = arg0;
+      const obj2 = _modDef68;
+      const tmp5 = importDefault;
       if (!obj2.hasViewManagerConfig(arg0)) {
         if (null != paperComponentName.paperComponentNameDeprecated) {
-          if (tmp7Result.hasViewManagerConfig(paperComponentName.paperComponentNameDeprecated)) {
+          const tmp5Result = tmp5(68);
+          if (tmp5Result.hasViewManagerConfig(paperComponentName.paperComponentNameDeprecated)) {
             paperComponentNameDeprecated = paperComponentName.paperComponentNameDeprecated;
           }
-          tmp7Result = tmp7(68);
         }
         let str = paperComponentName.paperComponentNameDeprecated;
+        const _Error = Error;
         if (str == null) {
           str = "(unknown)";
         }
         const _HermesInternal = HermesInternal;
-        const error = new Error("Failed to find native component for either " + arg0 + " or " + str);
-        throw error;
+        const self = this;
+        const self2 = this;
+        const _Error1 = new _Error("Failed to find native component for either " + arg0 + " or " + str);
+        throw _Error1;
       }
-      obj2 = measureDefault;
-      tmp7 = importDefault;
     }
   }
   return _modDef464(paperComponentNameDeprecated);

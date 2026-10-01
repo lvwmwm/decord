@@ -9,153 +9,160 @@ import Server from "Server" /* 1979 */;
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8505 */;
 import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 8595 */;
 import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 8599 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 8591 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c4, c5, channel;
 
-require = fn;
-let closure_10 = async function _getPrimaryAppCommand(arg0, value) {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+let hasOwnProperty;
+let metroRequire;
+let obj = function _getPrimaryAppCommand() {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let closure_1;
+    let closure_0 = arg0;
+    applicationId = value;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c5 = 2;
-      if (0 === c4) {
-        if (arg0 === 1) {
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_3 = tmp4;
+            closure_0 = applicationId;
+            channel = undefined;
+            channel = channel.getChannel(closure_0);
+            value = undefined;
+            let tmp12 = null != channel;
+            if (tmp12) {
+              const obj4 = { channel, type: "channel" };
+              const tmp11 = queryForPrimaryAppCommand(obj4, applicationId);
+              value = tmp11;
+              tmp12 = null == tmp11;
+            }
+            if (tmp12) {
+              const obj5 = { type: "application", applicationId };
+              c4 = 1;
+              c5 = 1;
+              const obj6 = { value: hasOwnProperty(obj5), done: false };
+              return obj6;
+            }
+          }
+        } else if (arg0 === 1) {
           c5 = 3;
           throw value;
         } else if (arg0 === 2) {
           c5 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          const obj7 = { value, done: true };
+          return obj7;
         } else {
-          closure_3 = tmp5;
-          closure_2 = tmp2;
-          closure_130_0 = closure_1;
-          closure_130_1 = undefined;
-          closure_130_2 = undefined;
-          channel = channel.getChannel(closure_0);
-          closure_130_1 = channel;
-          closure_130_2 = undefined;
-          let tmp13 = null != channel;
-          if (tmp13) {
-            const obj4 = { channel, type: "channel" };
-            const tmp12 = queryForPrimaryAppCommand(obj4, tmp32);
-            closure_130_2 = tmp12;
-            tmp13 = null == tmp12;
-          }
-          if (tmp13) {
-            const obj5 = { type: "application", applicationId: tmp32 };
-            c4 = 1;
-            c5 = 1;
-            const obj6 = { value: hasOwnProperty(obj5), done: false };
-            return obj6;
-          }
+          obj = { channel, type: "channel" };
+          value = closure_131_11(obj, closure_0);
         }
-      } else if (arg0 === 1) {
+        if (null != value) {
+          c5 = 3;
+          const obj8 = { value, done: true };
+          return obj8;
+        } else {
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error = new Error(closure_131_8);
+          throw error;
+        }
+      } catch (tmp23) {
         c5 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 3;
-        const obj7 = { value, done: true };
-        return obj7;
-      } else {
-        const obj = { channel: closure_130_1, type: "channel" };
-        closure_130_2 = closure_131_11(obj, closure_130_0);
+        throw tmp23;
       }
-      if (null != closure_130_2) {
-        c5 = 3;
-        const obj8 = { value: closure_130_2, done: true };
-        return obj8;
-      } else {
-        const _Error = Error;
-        const error = new Error(closure_131_8);
-        throw error;
-      }
-    } catch (tmp26) {
-      c5 = tmp;
-      throw tmp26;
     }
-  }
+  });
+  return obj(...arguments);
 };
 function queryForPrimaryAppCommand(withAffinitySuggestions, id) {
-  const obj = { commandTypes: null };
+  const query = ApplicationCommandIndexStore.query;
+  obj = { commandTypes: items };
   items = [Server.ApplicationCommandType.PRIMARY_ENTRY_POINT];
-  obj.commandTypes = items;
-  return ApplicationCommandIndexStore.query(withAffinitySuggestions, obj, { placeholderCount: 1, scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true }).commands[0];
+  const obj2 = { placeholderCount: 1, scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true };
+  return query(withAffinitySuggestions, obj, obj2).commands[0];
 }
-let ApplicationCommandIndexStore = fn(8591);
-({ getOrFetchApplicationCommandIndexForTarget: hasOwnProperty, useQueryState: metroRequire } = ApplicationCommandIndexStore);
 let ApplicationCommandIndexStore = ApplicationCommandIndexStore_mod;
+({ getOrFetchApplicationCommandIndexForTarget: hasOwnProperty, useQueryState: metroRequire } = ApplicationCommandIndexStore);
+ApplicationCommandIndexStore = ApplicationCommandIndexStore_mod;
 let c8 = "no primary app command for application";
-let items = [fn(1979).ApplicationCommandType.PRIMARY_ENTRY_POINT];
-const size = fn(2);
+let items = [Server.ApplicationCommandType.PRIMARY_ENTRY_POINT];
 const result = size.fileFinishedImporting("modules/application_commands/getPrimaryAppCommand.tsx");
 
 export default function getPrimaryAppCommand() {
-  const self = this;
-  const apply = closure_10.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const NO_PRIMARY_APP_COMMAND_ERROR = "no primary app command for application";
 export { queryForPrimaryAppCommand };
 export const useGetPrimaryAppCommand = function useGetPrimaryAppCommand(context, id) {
+  let loading;
   _require = id;
-  const tmp = closure_6(context, { commandTypes: items }, { placeholderCount: 1, scoreMethod: require("ApplicationCommandQueryTypes").ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true });
+  obj = { commandTypes: items };
+  const obj2 = { placeholderCount: 1, scoreMethod: require("ApplicationCommandQueryTypes").ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true };
+  const tmp = closure_6(context, obj, obj2);
   loading = tmp.loading;
   const first = tmp.commands[0];
-  closure_2 = tmp3;
+  let closure_2 = tmp3;
   items = [id, null != first, loading];
-  const effect = noop.useEffect(() => {
-    let tmp = closure_2;
-    if (!closure_2) {
-      tmp = loading;
-    }
+  const effect = react.useEffect(() => {
+    const tmp = closure_2 || loading;
     if (!tmp) {
       const obj2 = { type: "application", applicationId };
-      const applicationCommandIndex = ApplicationCommandIndexActionCreators.requestApplicationCommandIndex(obj2);
+      obj = ApplicationCommandIndexActionCreators;
+      const applicationCommandIndex = obj.requestApplicationCommandIndex(obj2);
     }
   }, items);
   return first;
 };
 export const useQueryForPrimaryAppCommand = function useQueryForPrimaryAppCommand(arg0, applicationId) {
-  return timestampProducer(arg0, { commandTypes: items }, { placeholderCount: 1, scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true });
+  obj = { commandTypes: items };
+  const obj2 = { placeholderCount: 1, scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
+  return metroRequire(arg0, obj, obj2);
 };
 export const useIsPrimaryAppCommandUsableInAppDM = function useIsPrimaryAppCommandUsableInAppDM(applicationId) {
+  let botUserId;
+  let context;
   applicationId = applicationId.applicationId;
   let loading;
+  obj = { commandTypes: items };
+  let obj2 = { placeholderCount: 1, scoreMethod: applicationId(loading[5]).ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
+  let tmp = applicationId;
   ({ context, botUserId } = applicationId);
-  const tmp3 = closure_6(context, { commandTypes: items }, { placeholderCount: 1, scoreMethod: applicationId(loading[5]).ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true });
+  const tmp3 = closure_6(context, obj, obj2);
   loading = tmp3.loading;
   const first = tmp3.commands[0];
-  closure_2 = tmp5;
+  let closure_2 = tmp5;
   items = [applicationId, null != first, loading];
-  const effect = noop.useEffect(() => {
-    let tmp = closure_2;
-    if (!closure_2) {
-      tmp = loading;
-    }
+  const effect = react.useEffect(() => {
+    const tmp = closure_2 || loading;
     if (!tmp) {
       const obj2 = { type: "application", applicationId };
-      const applicationCommandIndex = ApplicationCommandIndexActionCreators.requestApplicationCommandIndex(obj2);
+      obj = ApplicationCommandIndexActionCreators;
+      const applicationCommandIndex = obj.requestApplicationCommandIndex(obj2);
     }
   }, items);
   let tmp7 = null != first;

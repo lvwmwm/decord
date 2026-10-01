@@ -5,34 +5,44 @@
 // Exports: IntlLink
 
 // Module 13675 (migration)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef1930 from "module_1930" /* 1930 */;
 import LinkingDefault from "Linking" /* 4525 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0) => {
-  const link = { color: nativeDefault.colors.TEXT_LINK, textDecorationLine: null };
-  let str = "none";
-  if (arg0) {
+  let str;
+  const link = { color: nativeDefault.colors.TEXT_LINK, textDecorationLine: str };
+  str = "none";
+  const tmp = arg0;
+  if (tmp) {
     str = "underline";
   }
-  link.textDecorationLine = str;
   return { link };
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("intl/native/migration.tsx");
 
-export const IntlLink = function IntlLink(children) {
-  const target = children.target;
+export const IntlLink = function IntlLink(target) {
+  let accessibilityRole;
+  let fn;
+  let onClick;
+  let str;
+  target = target.target;
+  const children = target.children;
+  const tmp = target;
+  const tmp3 = closure_5(react.useContext(target(4550).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
-    let fn = function k() {
-      const obj = LinkingDefault;
-      return obj.openURL(_modDef1930.sanitizeUrl(target));
+    fn = function k() {
+      const openURL = LinkingDefault.openURL;
+      LinkingDefault;
+      const obj = _modDef1930;
+      return openURL(obj.sanitizeUrl(target));
     };
-    let str = "link";
+    str = "link";
   } else {
     str = "link";
     fn = target;
@@ -49,7 +59,5 @@ export const IntlLink = function IntlLink(children) {
       }
     }
   }
-  const tmp = target;
-  const tmp3 = closure_5(noop.useContext(target(4550).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
-  return jsx(tmp(1177).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: closure_5(noop.useContext(target(4550).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
+  return jsx(tmp(1177).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
 };

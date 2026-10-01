@@ -6,26 +6,26 @@
 
 // Module 16052 (useGetOrFetchNotificationCenterItemApplications)
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6589 */;
-import noop from "module_19" /* 19 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7054 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-let items = [fn(7054).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, fn(7054).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, fn(7054).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, fn(7054).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED];
+let applicationId, importDefault;
+
+let items = [NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED];
 let set = new Set(items);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/notification_center/useGetOrFetchNotificationCenterItemApplications.tsx");
 
 export const useGetOrFetchNotificationCenterItemsApplications = function useGetOrFetchNotificationCenterItemsApplications(stateFromStores1) {
   importDefault = stateFromStores1;
   let items = [stateFromStores1];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     set = new Set();
     const items = [];
     const item = stateFromStores1.forEach((applicationId) => {
       applicationId = applicationId.applicationId;
       if (set.has(applicationId.type)) {
-        let hasItem = null == applicationId;
-        if (!hasItem) {
-          hasItem = set.has(applicationId);
-        }
+        const hasItem = null == applicationId || set.has(applicationId);
         if (!hasItem) {
           set.add(applicationId);
           items.push(applicationId);

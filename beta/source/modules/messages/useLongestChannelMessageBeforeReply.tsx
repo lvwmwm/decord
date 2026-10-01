@@ -6,11 +6,11 @@
 
 // Module 11943 (useLongestChannelMessageBeforeReply)
 import MessageStore from "MessageStore" /* 5056 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/useLongestChannelMessageBeforeReply.tsx");
 
 export const useLongestChannelMessageBeforeReply = function useLongestChannelMessageBeforeReply(id, recipientId) {
@@ -18,23 +18,25 @@ export const useLongestChannelMessageBeforeReply = function useLongestChannelMes
   dependencyMap = recipientId;
   const items = [MessageStore];
   const items1 = [id, recipientId];
-  return require("initialize").useStateFromStores(items, () => {
-    if (null != closure_1) {
-      const messages = MessageStore.getMessages(closure_0);
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    if (null != recipientId) {
+      const messages = MessageStore.getMessages(id);
       const findOldestResult = messages.findOldest((author) => author.author.id === recipientId);
       let tmp4 = findOldestResult;
       if (null != findOldestResult) {
         const toArrayResult = messages.toArray();
         for (const item10018 of toArrayResult) {
-          if (item10018.author.id !== closure_1) {
+          if (item10018.author.id !== recipientId) {
             obj2.return();
             break;
           } else {
-            let length;
+            let length1;
+            let length = tmp8.content.length;
             if (tmp4 != null) {
-              length = tmp4.content.length;
+              length1 = tmp4.content.length;
             }
-            if (tmp8.content.length > length) {
+            if (length > length1) {
               tmp4 = item10018;
             }
             continue;

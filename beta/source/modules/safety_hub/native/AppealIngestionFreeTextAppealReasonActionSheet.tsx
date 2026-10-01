@@ -5,62 +5,80 @@
 // Exports: default
 
 // Module 11381 (AppealIngestionFreeTextAppealReasonActionSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import SafetyHubStore from "SafetyHubStore" /* 7881 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { footerText: { textAlign: "center" }, textArea: { marginTop: -16, marginBottom: 36 }, separator: { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginHorizontal: -16 }, closeIcon: { alignSelf: "flex-end", flexDirection: "row", marginBottom: -26 } };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let BottomSheet;
+
+let metroImportDefault;
+let metroRequire;
+let obj2;
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let obj = { footerText: { textAlign: "center" }, textArea: { marginTop: -16, marginBottom: 36 }, separator: obj2, closeIcon: { alignSelf: "flex-end", flexDirection: "row", marginBottom: -26 } };
+obj2 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginHorizontal: -16 };
+let closure_8 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionFreeTextAppealReasonActionSheet.tsx");
 
-export default function AppealIngestionFreeTextAppealReasonActionSheet(onPress) {
-  const onSave = onPress.onSave;
+export default function AppealIngestionFreeTextAppealReasonActionSheet(onSave) {
+  let Stack;
+  let freeTextAppealReason;
+  let intl4;
+  let intl5;
+  let intl6;
+  let items1;
+  let obj3;
+  let stringResult;
+  let tmp7;
+  let value;
+  onSave = onSave.onSave;
   value = undefined;
+  const onClose = onSave.onClose;
   const tmp = closure_8();
   const items = [SafetyHubStore];
-  const stateFromStores = onSave(value[7]).useStateFromStores(items, () => freeTextAppealReason.getFreeTextAppealReason());
-  [value, obj5.onChange] = noop.useState(stateFromStores);
+  const obj = onSave(value[7]);
+  const stateFromStores = obj.useStateFromStores(items, () => freeTextAppealReason.getFreeTextAppealReason());
+  [value, tmp7] = react.useState(stateFromStores);
   if ("" === stateFromStores) {
     const intl2 = tmp2(tmp3[8]).intl;
-    let stringResult = intl2.string(tmp2(tmp3[8]).t.uoQFIp);
+    stringResult = intl2.string(tmp2(tmp3[8]).t.uoQFIp);
   } else {
     const intl = tmp2(tmp3[8]).intl;
     stringResult = intl.string(tmp2(tmp3[8]).t.tnE3bZ);
   }
   const intl3 = tmp2(tmp3[8]).intl;
-  const obj = onSave(value[7]);
-  const obj2 = { startExpanded: true, children: null };
-  const obj3 = { spacing: 16, children: null };
+  const obj2 = { startExpanded: true, children: closure_7(Stack, obj3) };
   const stringResult1 = intl3.string(onSave(value[8]).t["Rk+uJx"]);
-  const items1 = [closure_6(onSave(value[11]).PressableOpacity, { onPress: onPress.onClose, style: tmp.closeIcon, children: closure_6(onSave(value[12]).XSmallIcon, { size: "md" }) }), closure_6(onSave(value[13]).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), , , , ];
-  const obj5 = { maxLength: 1024, placeholder: null, containerStyle: null, value: null, onChange: null };
-  const intl4 = tmp2(tmp3[8]).intl;
-  obj5.placeholder = intl4.string(onSave(value[8]).t.bQrZIN);
-  obj5.containerStyle = tmp.textArea;
-  obj5.value = value;
-  items1[2] = closure_6(onSave(value[14]).TextArea, obj5);
-  items1[3] = closure_6(View, { style: tmp.separator });
-  const obj7 = { variant: "text-xs/medium", color: "text-default", style: tmp.footerText, children: null };
-  const intl5 = tmp2(tmp3[8]).intl;
-  obj7.children = intl5.string(onSave(value[8]).t.xfNY3L);
-  items1[4] = closure_6(onSave(value[15]).Text, obj7);
+  BottomSheet = tmp2(tmp3[9]).BottomSheet;
+  obj3 = { spacing: 16, children: items1 };
+  Stack = tmp2(tmp3[10]).Stack;
+  const obj4 = { onPress: onClose, style: tmp.closeIcon, children: closure_6(onSave(value[12]).XSmallIcon, { size: "md" }) };
+  const PressableOpacity = tmp2(tmp3[11]).PressableOpacity;
+  items1 = [closure_6(PressableOpacity, obj4), closure_6(onSave(value[13]).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), , , , ];
+  const obj5 = { maxLength: 1024, placeholder: intl4.string(onSave(value[8]).t.bQrZIN), containerStyle: tmp.textArea, value, onChange: tmp7 };
+  const TextArea = tmp2(tmp3[14]).TextArea;
+  intl4 = tmp2(tmp3[8]).intl;
+  items1[2] = closure_6(TextArea, obj5);
+  const obj6 = { style: tmp.separator };
+  items1[3] = closure_6(View, obj6);
+  const obj7 = { variant: "text-xs/medium", color: "text-default", style: tmp.footerText, children: intl5.string(onSave(value[8]).t.xfNY3L) };
+  const Text = tmp2(tmp3[15]).Text;
+  intl5 = tmp2(tmp3[8]).intl;
+  items1[4] = closure_6(Text, obj7);
   const obj8 = {
     onPress() {
       return onSave(first);
     },
-    text: null
+    text: intl6.string(onSave(value[8]).t["R3BPH+"])
   };
-  const intl6 = tmp2(tmp3[8]).intl;
-  obj8.text = intl6.string(onSave(value[8]).t["R3BPH+"]);
-  items1[5] = closure_6(onSave(value[16]).Button, obj8);
-  obj3.children = items1;
-  obj2.children = closure_7(onSave(value[10]).Stack, obj3);
-  return closure_6(onSave(value[9]).BottomSheet, obj2);
+  const Button = tmp2(tmp3[16]).Button;
+  intl6 = tmp2(tmp3[8]).intl;
+  items1[5] = closure_6(Button, obj8);
+  return closure_6(BottomSheet, obj2);
 };

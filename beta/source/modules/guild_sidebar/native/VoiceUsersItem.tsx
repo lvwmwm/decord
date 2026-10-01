@@ -5,19 +5,24 @@
 // Exports: default
 
 // Module 15761 (VoiceUsersItem)
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_2 = createStyles.createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { paddingRight: 0, flexDirection: "row", flexWrap: "wrap", alignItems: "center" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUsersItem.tsx");
 
-export default function VoiceUsersItem(children) {
-  let voiceStatesCollapsed = children.collapsed;
+export default function VoiceUsersItem(collapsed) {
+  let voiceStatesCollapsed = collapsed.collapsed;
+  const children = collapsed.children;
   const tmp = closure_2();
   let voiceStates = !voiceStatesCollapsed;
+  const tmp2 = jsx;
+  const tmp3 = View;
   if (!voiceStatesCollapsed) {
     voiceStates = tmp.voiceStates;
   }
@@ -26,5 +31,5 @@ export default function VoiceUsersItem(children) {
     voiceStatesCollapsed = tmp.voiceStatesCollapsed;
   }
   style[1] = voiceStatesCollapsed;
-  return <View style={style}>{arg0.children}</View>;
+  return tmp2(tmp3, { style, children });
 };

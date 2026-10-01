@@ -5,15 +5,18 @@
 // Exports: default
 
 // Module 6357 (FreeFormLabel)
+import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/void/Form/native/FreeFormLabel.tsx");
 
 export default function FreeFormLabel(arg0) {
+  let children;
+  let nativeID;
+  let style;
   ({ children, style, nativeID } = arg0);
   return jsx(Text_Text.Text, { style, variant: "text-sm/semibold", color: "text-muted", nativeID, children });
 };

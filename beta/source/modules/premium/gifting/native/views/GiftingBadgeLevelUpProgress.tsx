@@ -5,76 +5,90 @@
 // Exports: default
 
 // Module 10498 (GiftingBadgeLevelUpProgress)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef2583 from "module_2583" /* 2583 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
 import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10208 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10214 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-let closure_4 = fn(7637).getSingleRequirementThreshold;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { gap: nativeDefault.space.PX_4, width: "100%" }, barRow: null, progressBarTrack: null, progressBarFill: null, labels: null };
-let obj3 = { gap: nativeDefault.space.PX_4, width: "100%" };
-obj2.barRow = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-let obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj2.progressBarTrack = { flex: 1, height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-let obj5 = { flex: 1, height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-obj2.progressBarFill = { height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-obj2.labels = { flexDirection: "row", justifyContent: "flex-end" };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+const View = react_native.View;
+let closure_4 = BadgeDirectoryStore.getSingleRequirementThreshold;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, barRow: obj3, progressBarTrack: obj4, progressBarFill: obj5, labels: { flexDirection: "row", justifyContent: "flex-end" } };
+obj2 = { gap: nativeDefault.space.PX_4, width: "100%" };
+createStyles = createStyles.createStyles;
+obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+obj4 = { flex: 1, height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
+obj5 = { height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+let closure_7 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeLevelUpProgress.tsx");
 
 export default function GiftingBadgeLevelUpProgress(style) {
+  let Text;
+  let currentTier;
+  let intl;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let newTier;
+  let obj10;
+  let obj6;
+  let progress;
   ({ progress, currentTier, newTier } = style);
+  style = style.style;
   const tmp = closure_7();
-  const isGiftingBadgeComplexArtEnabled = GiftingBadgesUtils.useIsGiftingBadgeComplexArtEnabled("GiftingBadgeLevelUpProgress");
-  const giftingBadgeTierIconUrl = GiftingBadgesUtils.getGiftingBadgeTierIconUrl(currentTier, isGiftingBadgeComplexArtEnabled);
-  const giftingBadgeTierIconUrl1 = GiftingBadgesUtils.getGiftingBadgeTierIconUrl(newTier, isGiftingBadgeComplexArtEnabled);
-  const tmp7 = closure_4(newTier);
+  const obj = GiftingBadgesUtils;
+  const isGiftingBadgeComplexArtEnabled = obj.useIsGiftingBadgeComplexArtEnabled("GiftingBadgeLevelUpProgress");
+  const getGiftingBadgeTierIconUrl = GiftingBadgesUtils.getGiftingBadgeTierIconUrl;
+  GiftingBadgesUtils;
+  const giftingBadgeTierIconUrl = getGiftingBadgeTierIconUrl(currentTier, isGiftingBadgeComplexArtEnabled);
+  const tmp2Result = GiftingBadgesUtils;
+  const giftingBadgeTierIconUrl1 = tmp2Result.getGiftingBadgeTierIconUrl(newTier, isGiftingBadgeComplexArtEnabled);
+  const tmp8 = closure_4(newTier);
   let num = 100;
-  if (tmp7 > 0) {
+  if (tmp8 > 0) {
     const _Math = Math;
     const _Math2 = Math;
-    num = Math.min(Math.max(progress / tmp7 * 100, 0), 100);
+    num = Math.min(Math.max(progress / tmp8 * 100, 0), 100);
   }
-  const obj3 = { style: null, children: null };
-  const items = [tmp.container, style.style];
-  obj3.style = items;
-  const obj4 = { style: tmp.barRow, children: null };
-  let tmp11 = null != giftingBadgeTierIconUrl;
-  if (tmp11) {
-    const obj5 = { icon: giftingBadgeTierIconUrl, size: 24 };
-    tmp11 = hasOwnProperty(GiftingBadgeIconDefault, obj5);
+  const obj2 = { style: items, children: items3 };
+  items = [tmp.container, style];
+  let tmp12 = null != giftingBadgeTierIconUrl;
+  const obj3 = { style: tmp.barRow, children: items1 };
+  if (tmp12) {
+    const obj4 = { icon: giftingBadgeTierIconUrl, size: 24 };
+    tmp12 = hasOwnProperty(GiftingBadgeIconDefault, obj4);
   }
-  const items1 = [tmp11, , ];
-  const obj6 = { style: tmp.progressBarTrack, children: null };
-  const obj7 = { style: null };
-  const items2 = [tmp.progressBarFill, ];
-  const tmp2Result = GiftingBadgesUtils;
-  items2[1] = { width: "" + num + "%" };
-  obj7.style = items2;
-  obj6.children = hasOwnProperty(View, obj7);
-  items1[1] = hasOwnProperty(View, obj6);
-  let tmp14Result = null != giftingBadgeTierIconUrl1;
-  if (tmp14Result) {
-    const obj9 = { icon: giftingBadgeTierIconUrl1, size: 24 };
-    tmp14Result = tmp14(GiftingBadgeIconDefault, obj9);
+  items1 = [tmp12, , ];
+  const obj5 = { style: tmp.progressBarTrack, children: hasOwnProperty(View, obj6) };
+  obj6 = { style: items2 };
+  items2 = [tmp.progressBarFill, { width: "" + num + "%" }];
+  ({ width: "" + num + "%" });
+  items1[1] = hasOwnProperty(View, obj5);
+  let tmp15Result = null != giftingBadgeTierIconUrl1;
+  if (tmp15Result) {
+    const obj8 = { icon: giftingBadgeTierIconUrl1, size: 24 };
+    tmp15Result = tmp15(GiftingBadgeIconDefault, obj8);
   }
-  items1[2] = tmp14Result;
-  obj4.children = items1;
-  const items3 = [timestampProducer(View, obj4), ];
-  const obj10 = { style: tmp.labels, children: null };
-  const obj11 = { variant: "text-xs/normal", color: "text-muted", children: null };
-  const intl = tmp2(1115).intl;
-  obj11.children = intl.format(_modDef2583.iIpfQe, { count: progress, threshold: tmp7 });
-  obj10.children = hasOwnProperty(Text_Text.Text, obj11);
-  items3[1] = hasOwnProperty(View, obj10);
-  obj3.children = items3;
-  return timestampProducer(View, obj3);
+  items1[2] = tmp15Result;
+  items3 = [metroRequire(View, obj3), ];
+  const obj9 = { style: tmp.labels, children: hasOwnProperty(Text, obj10) };
+  obj10 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2583.iIpfQe, { count: progress, threshold: tmp8 }) };
+  Text = tmp2(4832).Text;
+  intl = tmp2(1115).intl;
+  items3[1] = hasOwnProperty(View, obj9);
+  return metroRequire(View, obj2);
 };

@@ -7,9 +7,11 @@
 // Module 12359 (memoBuilder)
 
 export const memoBuilder = function memoBuilder() {
-  closure_0 = typeof WeakSet === "function";
-  if (typeof WeakSet === "function") {
+  let closure_0 = typeof WeakSet === "function";
+  if (closure_0) {
     const _WeakSet = WeakSet;
+    const self = this;
+    const self2 = this;
     let weakSet = new WeakSet();
   } else {
     weakSet = [];
@@ -19,14 +21,14 @@ export const memoBuilder = function memoBuilder() {
       if (closure_0) {
         let flag3 = arr.has(arg0);
         if (!flag3) {
-          arr.add(arg0);
+          weakSet.add(arg0);
           flag3 = false;
         }
         return flag3;
       } else {
         let num = 0;
         let arr2 = arr;
-        if (0 < arr.length) {
+        if (0 < weakSet.length) {
           while (weakSet[num] !== arg0) {
             num = num + 1;
             arr2 = arr3;
@@ -39,10 +41,10 @@ export const memoBuilder = function memoBuilder() {
     },
     function unmemoize(arg0) {
       if (closure_0) {
-        arr.delete(arg0);
+        weakSet.delete(arg0);
       } else {
         let num = 0;
-        if (0 < arr.length) {
+        if (0 < weakSet.length) {
           while (weakSet[num] !== arg0) {
             num = num + 1;
           }

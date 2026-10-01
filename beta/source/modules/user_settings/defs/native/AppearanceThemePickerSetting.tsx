@@ -4,31 +4,40 @@
 // Dependencies: [1182, 7417, 1074, 504, 11006, 1115, 14806, 14813, 2]
 
 // Module 14812 (AppearanceThemePickerSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1074 */;
+import intl2 from "intl" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import AppearanceSetting from "AppearanceSetting" /* 14806 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const route = SettingBuilders.createRoute({
+const require = globalThis.__r;
+
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.Ksh3ik);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.Ksh3ik);
   },
-  parent: fn(7417).MobileUserSettings.APPEARANCE,
+  parent: MobileUserSettings.APPEARANCE,
   usePredicate: function useIsSingleThemePickerVisible() {
+    let sameAsDeviceThemeEnabled;
     const items = [ThemeStore];
-    return !initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
+    const obj = get_initialized;
+    return !obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
   },
-  useTrailing: fn(14806).useAppearanceSettingTrailing,
+  useTrailing: AppearanceSetting.useAppearanceSettingTrailing,
   screen: {
-    route: fn(1074).UserSettingsSections.APPEARANCE_THEME_PICKER,
+    route: UserSettingsSections.APPEARANCE_THEME_PICKER,
     getComponent() {
       return require("SettingsAppearanceThemePickerScreen").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AppearanceThemePickerSetting.tsx");
 
 export default route;

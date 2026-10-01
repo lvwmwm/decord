@@ -5,18 +5,20 @@
 // Exports: useNavigatorShouldCrossfade
 
 // Module 6422 (useNavigatorShouldCrossfade)
-import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4550 */;
-import noop from "module_19" /* 19 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import react2 from "react" /* 4550 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Navigator/native/useNavigatorShouldCrossfade.native.tsx");
 
 export const useNavigatorShouldCrossfade = function useNavigatorShouldCrossfade() {
-  const context = noop.useContext(AccessibilityPreferencesContext.AccessibilityPreferencesContext);
-  let enabled = context.prefersCrossfades;
+  const context = react.useContext(react2.AccessibilityPreferencesContext);
+  let prefersCrossfades = context.prefersCrossfades;
+  const enabled = context.reducedMotion.enabled;
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    enabled = context.reducedMotion.enabled;
+    prefersCrossfades = enabled;
   }
-  return enabled;
+  return prefersCrossfades;
 };

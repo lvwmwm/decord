@@ -9,20 +9,21 @@ import StickerSendability from "StickerSendability" /* 6755 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
 const result = size.fileFinishedImporting("modules/stickers/StickerCategoryUtils.tsx");
 
 export const isStickerCategoryNitroLocked = function isStickerCategoryNitroLocked(type, arg1, arg2) {
+  let closure_0;
+  let closure_1;
   _require = arg1;
   dependencyMap = arg2;
-  let everyResult = type.type === require("StickersTypes").StickerCategoryTypes.GUILD;
-  if (everyResult) {
-    everyResult = 0 !== type.stickers.length;
-  }
+  let everyResult = type.type === require("StickersTypes").StickerCategoryTypes.GUILD && 0 !== type.stickers.length;
   if (everyResult) {
     const stickers = type.stickers;
     everyResult = stickers.every((item) => {
-      const stickerSendability = StickerSendability.getStickerSendability(item, closure_0, closure_1);
+      const obj = StickerSendability;
+      const stickerSendability = obj.getStickerSendability(item, closure_0, closure_1);
       return stickerSendability === StickerSendability.StickerSendability.SENDABLE_WITH_PREMIUM;
     });
   }

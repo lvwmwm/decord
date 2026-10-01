@@ -8,26 +8,36 @@
 import useBountyVideoEndAppStoreOverlay from "useBountyVideoEndAppStoreOverlay" /* 14553 */;
 import useBountiesModalTiming from "useBountiesModalTiming" /* 14555 */;
 import useBountyPauseAppStoreSheet from "useBountyPauseAppStoreSheet" /* 14556 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountyAppStoreOverlayPlayback.tsx");
 
 export const getBountyVideoEndMode = function getBountyVideoEndMode(bounty) {
-  const result = useBountyVideoEndAppStoreOverlay.canUseBountyVideoEndAppStoreOverlay(bounty);
+  const obj = useBountyVideoEndAppStoreOverlay;
+  const result = obj.canUseBountyVideoEndAppStoreOverlay(bounty);
   const BountyVideoEndMode = useBountiesModalTiming.BountyVideoEndMode;
   return result ? BountyVideoEndMode.APP_STORE_LOOP : BountyVideoEndMode.END_CARD;
 };
 export const useBountyAppStoreOverlayPlayback = function useBountyAppStoreOverlayPlayback(handleVideoPaused) {
+  let bounty;
+  let callback2;
+  let endMode;
+  let handleVideoEnd;
+  let isActive;
+  let playerRef;
+  let showEndCard;
+  let sourceQuestContent;
   ({ bounty, sourceQuestContent, isActive, endMode, handleVideoEnd } = handleVideoPaused);
   handleVideoPaused = handleVideoPaused.handleVideoPaused;
   const handleVideoResumed = handleVideoPaused.handleVideoResumed;
   const onPaused = handleVideoPaused.onPaused;
   let handleVideoPausedForAppStore;
   ({ playerRef, showEndCard } = handleVideoPaused);
-  const onVideoEndForAppStore = useBountyVideoEndAppStoreOverlay.useBountyVideoEndAppStoreOverlay({ bounty, sourceQuestContent, isActive, endMode, onOverlayUnavailable: showEndCard }).onVideoEndForAppStore;
-  const bountyVideoEndAppStoreContext = useBountyVideoEndAppStoreOverlay.useBountyVideoEndAppStoreContext();
+  const obj = useBountyVideoEndAppStoreOverlay;
+  const onVideoEndForAppStore = obj.useBountyVideoEndAppStoreOverlay({ bounty, sourceQuestContent, isActive, endMode, onOverlayUnavailable: showEndCard }).onVideoEndForAppStore;
+  const obj2 = useBountyVideoEndAppStoreOverlay;
+  const bountyVideoEndAppStoreContext = obj2.useBountyVideoEndAppStoreContext();
   let flag;
   if (bountyVideoEndAppStoreContext != null) {
     flag = bountyVideoEndAppStoreContext.isVideoEndAppStoreOverlayVisible;
@@ -35,10 +45,11 @@ export const useBountyAppStoreOverlayPlayback = function useBountyAppStoreOverla
   if (flag == null) {
     flag = false;
   }
-  handleVideoPausedForAppStore = useBountyPauseAppStoreSheet.useBountyPauseAppStoreSheet({ bounty, sourceQuestContent, isActive, playerRef }).handleVideoPausedForAppStore;
+  const tmpResult = useBountyPauseAppStoreSheet;
+  handleVideoPausedForAppStore = tmpResult.useBountyPauseAppStoreSheet({ bounty, sourceQuestContent, isActive, playerRef }).handleVideoPausedForAppStore;
   const items = [handleVideoPaused, handleVideoPausedForAppStore, onPaused];
   const items1 = [handleVideoResumed];
-  const callback = noop.useCallback((arg0) => {
+  const callback = react.useCallback((arg0) => {
     handleVideoPaused(arg0);
     if (onPaused != null) {
       onPaused();
@@ -46,17 +57,13 @@ export const useBountyAppStoreOverlayPlayback = function useBountyAppStoreOverla
     handleVideoPausedForAppStore(arg0);
   }, items);
   const items2 = [handleVideoEnd, onVideoEndForAppStore];
-  const callback1 = noop.useCallback((arg0) => {
+  const callback1 = react.useCallback((arg0) => {
     handleVideoResumed(arg0);
   }, items1);
-  const obj3 = { isVideoEndAppStoreOverlayVisible: flag, shouldRepeatVideo: null, handlePaused: null, handleResumed: null, handleVideoEndWithAppStore: null };
-  const callback2 = noop.useCallback(() => {
+  const obj3 = { isVideoEndAppStoreOverlayVisible: flag, shouldRepeatVideo: endMode === useBountiesModalTiming.BountyVideoEndMode.APP_STORE_LOOP, handlePaused: callback, handleResumed: callback1, handleVideoEndWithAppStore: callback2 };
+  callback2 = react.useCallback(() => {
     handleVideoEnd();
     onVideoEndForAppStore();
   }, items2);
-  obj3.shouldRepeatVideo = endMode === useBountiesModalTiming.BountyVideoEndMode.APP_STORE_LOOP;
-  obj3.handlePaused = callback;
-  obj3.handleResumed = callback1;
-  obj3.handleVideoEndWithAppStore = callback2;
   return obj3;
 };

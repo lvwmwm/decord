@@ -5,27 +5,37 @@
 // Exports: useAutoTrackSearchTabCountsViewedAnalytics
 
 // Module 16550 (useAutoTrackSearchTabCountsViewedAnalytics)
+import SearchConstants from "SearchConstants" /* 7303 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const SearchTabs = fn(7303).SearchTabs;
-const size = fn(2);
+const SearchTabs = SearchConstants.SearchTabs;
 let result = size.fileFinishedImporting("modules/search/native/hooks/useAutoTrackSearchTabCountsViewedAnalytics.tsx");
 
 export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackSearchTabCountsViewedAnalytics(searchContext) {
   searchContext = searchContext.searchContext;
   const visibleTabCounts = searchContext.visibleTabCounts;
   const visibleTabs = searchContext.visibleTabs;
-  closure_3 = visibleTabs.useRef(visibleTabs);
+  let closure_3 = visibleTabs.useRef(visibleTabs);
   const items = [visibleTabs];
   const effect = visibleTabs.useEffect(() => {
     closure_3.current = visibleTabs;
   }, items);
   const items1 = [searchContext, visibleTabCounts];
   const effect1 = visibleTabs.useEffect(() => {
+    let tmp11;
+    let tmp14;
+    let tmp17;
+    let tmp20;
+    let tmp4;
+    let tmp5;
+    let tmp8;
+    const tmp = visibleTabCounts;
     if (null != visibleTabCounts) {
       const _Object = Object;
       const keys = Object.keys(tmp);
+      let num = 0;
       const reduced = keys.reduce((acc, item) => {
         let num = null;
         if (null != visibleTabCounts) {
@@ -42,9 +52,10 @@ export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackS
         return acc + num;
       }, 0);
       if (reduced > 0) {
-        const obj2 = { searchContext, searchResultTotalCount: reduced, numMemberTabReturnedResults: null, numChannelTabReturnedResults: null, numPeopleTabReturnedResults: null, numMessageTabReturnedResults: null, numMediaTabReturnedResults: null, numFileTabReturnedResults: null, numLinkTabReturnedResults: null };
         const MEMBERS = SearchTabs.MEMBERS;
-        let tmp4 = null;
+        const obj = { searchContext, searchResultTotalCount: reduced, numMemberTabReturnedResults: tmp4, numChannelTabReturnedResults: tmp5, numPeopleTabReturnedResults: tmp8, numMessageTabReturnedResults: tmp11, numMediaTabReturnedResults: tmp14, numFileTabReturnedResults: tmp17, numLinkTabReturnedResults: tmp20 };
+        tmp4 = null;
+        const trackSearchResultReturned = search_tracking_TrackingDefault.trackSearchResultReturned;
         if (null != tmp) {
           let current = ref.current;
           let tmp3 = null;
@@ -53,9 +64,8 @@ export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackS
           }
           tmp4 = tmp3;
         }
-        obj2.numMemberTabReturnedResults = tmp4;
-        const GUILD_CHANNELS = tmp29.GUILD_CHANNELS;
-        let tmp5 = null;
+        const GUILD_CHANNELS = tmp30.GUILD_CHANNELS;
+        tmp5 = null;
         if (null != tmp) {
           const current2 = ref.current;
           let tmp7 = null;
@@ -64,9 +74,8 @@ export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackS
           }
           tmp5 = tmp7;
         }
-        obj2.numChannelTabReturnedResults = tmp5;
-        const PEOPLE = tmp29.PEOPLE;
-        let tmp8 = null;
+        const PEOPLE = tmp30.PEOPLE;
+        tmp8 = null;
         if (null != tmp) {
           const current3 = ref.current;
           let tmp10 = null;
@@ -75,9 +84,8 @@ export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackS
           }
           tmp8 = tmp10;
         }
-        obj2.numPeopleTabReturnedResults = tmp8;
-        const MESSAGES = tmp29.MESSAGES;
-        let tmp11 = null;
+        const MESSAGES = tmp30.MESSAGES;
+        tmp11 = null;
         if (null != tmp) {
           const current4 = ref.current;
           let tmp13 = null;
@@ -86,9 +94,8 @@ export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackS
           }
           tmp11 = tmp13;
         }
-        obj2.numMessageTabReturnedResults = tmp11;
-        const MEDIA = tmp29.MEDIA;
-        let tmp14 = null;
+        const MEDIA = tmp30.MEDIA;
+        tmp14 = null;
         if (null != tmp) {
           const current5 = ref.current;
           let tmp16 = null;
@@ -97,9 +104,8 @@ export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackS
           }
           tmp14 = tmp16;
         }
-        obj2.numMediaTabReturnedResults = tmp14;
-        const FILES = tmp29.FILES;
-        let tmp17 = null;
+        const FILES = tmp30.FILES;
+        tmp17 = null;
         if (null != tmp) {
           const current6 = ref.current;
           let tmp19 = null;
@@ -108,9 +114,8 @@ export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackS
           }
           tmp17 = tmp19;
         }
-        obj2.numFileTabReturnedResults = tmp17;
-        const LINKS = tmp29.LINKS;
-        let tmp20 = null;
+        const LINKS = tmp30.LINKS;
+        tmp20 = null;
         if (null != tmp) {
           const current7 = ref.current;
           let tmp22 = null;
@@ -119,8 +124,7 @@ export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackS
           }
           tmp20 = tmp22;
         }
-        obj2.numLinkTabReturnedResults = tmp20;
-        const result = search_tracking_TrackingDefault.trackSearchResultReturned(obj2);
+        const result = trackSearchResultReturned(obj);
       }
     }
   }, items1);

@@ -5,21 +5,28 @@
 // Exports: SliderTrackMark
 
 // Module 7733 (SliderTrackMark)
-import _mod19 from "module_19" /* 19 */;
-import _mod7731 from "module_7731" /* 7731 */;
+import react2 from "react" /* 19 */;
+import styles from "styles" /* 7731 */;
 import module_7727 from "module_7727" /* 7727 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 
-const noop = module_7727(_mod19);
+const react = module_7727(react2);
 
 export const SliderTrackMark = function SliderTrackMark(arg0) {
+  let StepMarker;
+  let currentValue;
+  let index;
+  let isTrue;
+  let max;
+  let min;
+  let thumbImage;
   ({ isTrue, thumbImage, StepMarker } = arg0);
-  const obj2 = { style: _mod7731.styles.trackMarkContainer, children: null };
   ({ index, currentValue, min, max } = arg0);
+  const jsxs = Fragment.jsxs;
+  const View = react_native.View;
   let jsxResult = null;
   if (StepMarker) {
-    const range = { stepMarked: isTrue, index, currentValue, min, max };
     jsxResult = <StepMarker stepMarked={isTrue} index={index} currentValue={currentValue} min={min} max={max} />;
   }
   const items = [jsxResult, ];
@@ -27,13 +34,14 @@ export const SliderTrackMark = function SliderTrackMark(arg0) {
   if (thumbImage) {
     jsxResult1 = null;
     if (isTrue) {
-      const obj3 = { style: tmp2(7731).styles.thumbImageContainer, testID: "sliderTrackMark-thumbImage", children: null };
-      const obj4 = { source: thumbImage, style: tmp2(7731).styles.thumbImage };
-      obj3.children = <tmp.Image source={thumbImage} style={tmp2(7731).styles.thumbImage} />;
-      jsxResult1 = <tmp.View style={tmp2(7731).styles.thumbImageContainer} testID="sliderTrackMark-thumbImage">{null}</tmp.View>;
+      const jsx = obj.jsx;
+      const View2 = tmp.View;
+      const jsx2 = obj.jsx;
+      const Image = tmp.Image;
+      jsxResult1 = <View2 style={styles.styles.thumbImageContainer} testID="sliderTrackMark-thumbImage">{jsx2(Image, { source: thumbImage, style: styles.styles.thumbImage })}</View2>;
+      const obj4 = { source: thumbImage, style: styles.styles.thumbImage };
     }
   }
   items[1] = jsxResult1;
-  obj2.children = items;
-  return <get ActivityIndicator.View style={_mod7731.styles.trackMarkContainer}>{null}</get ActivityIndicator.View>;
+  return <View style={styles.styles.trackMarkContainer}>{items}</View>;
 };

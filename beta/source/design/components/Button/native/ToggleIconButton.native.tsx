@@ -4,17 +4,19 @@
 // Dependencies: [19, 21, 13976, 7364, 2]
 
 // Module 13977 (ToggleIconButton)
-import BaseIconButton from "BaseIconButton" /* 7364 */;
+import Fragment from "Fragment" /* 21 */;
 import useToggleButtonProps from "useToggleButtonProps" /* 13976 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const dependencyMap = { default: { off: "toggle-icon-default-off", on: "toggle-icon-default-on" }, critical: { off: "toggle-icon-critical-off", on: "toggle-icon-critical-on" }, "icon-only": { off: "toggle-icon-only-off", on: "toggle-icon-only-on" } };
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/Button/native/ToggleIconButton.native.tsx");
-
-export const ToggleIconButton = noop.forwardRef((pressed, ref) => {
+let tmp2;
+const BaseIconButton2 = tmp2(7364);
+const jsx = Fragment.jsx;
+let closure_3 = { default: { off: "toggle-icon-default-off", on: "toggle-icon-default-on" }, critical: { off: "toggle-icon-critical-off", on: "toggle-icon-critical-on" }, "icon-only": { off: "toggle-icon-only-off", on: "toggle-icon-only-on" } };
+const forwardRefResult = react.forwardRef((pressed, ref) => {
+  let obj3;
+  let selectedIcon;
+  let variant;
   let flag = pressed.pressed;
   if (flag === undefined) {
     flag = false;
@@ -25,21 +27,21 @@ export const ToggleIconButton = noop.forwardRef((pressed, ref) => {
   }
   const icon = pressed.icon;
   const merged = Object.assign(pressed, Object.assign({ pressed: 0, selectedIcon: 0, variant: 0, icon: 0 }));
-  const obj2 = {};
+  const obj = { icon: selectedIcon };
+  const useToggleIconButtonProps = useToggleButtonProps.useToggleIconButtonProps;
+  useToggleButtonProps;
   const merged1 = Object.assign(merged);
   if (selectedIcon == null) {
     selectedIcon = icon;
   }
-  const obj3 = { on: obj2, off: null };
-  obj2.icon = selectedIcon;
-  const obj4 = {};
+  const obj2 = { on: obj, off: obj3 };
+  obj3 = { icon };
   const merged2 = Object.assign(merged);
-  obj4.icon = icon;
-  obj3.off = obj4;
-  const toggleIconButtonProps = useToggleButtonProps.useToggleIconButtonProps(obj3, flag);
-  const obj5 = {};
+  const toggleIconButtonProps = useToggleIconButtonProps(obj2, flag);
+  const BaseIconButton = BaseIconButton2.BaseIconButton;
   const merged3 = Object.assign(toggleIconButtonProps);
-  obj5.ref = ref;
-  obj5.variant = flag ? dependencyMap[variant].on : dependencyMap[variant].off;
-  return jsx(BaseIconButton.BaseIconButton, {});
+  return <BaseIconButton ref={arg1} variant={flag ? closure_3[variant].on : closure_3[variant].off} />;
 });
+const result = size.fileFinishedImporting("design/components/Button/native/ToggleIconButton.native.tsx");
+
+export const ToggleIconButton = forwardRefResult;

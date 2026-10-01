@@ -4,7 +4,7 @@
 // Dependencies: [7417, 14328, 5203, 1115, 14241, 11006, 14242, 2]
 
 // Module 14327 (AccountRemove2faSetting)
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import MFAActionCreatorsDefault from "MFAActionCreators" /* 14241 */;
@@ -13,31 +13,41 @@ import account_MFAUtils from "account/MFAUtils" /* 14328 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
-const pressable = SettingBuilders.createPressable({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["D+aE7g"]);
+    const intl = intl4.intl;
+    return intl.string(intl4.t["D+aE7g"]);
   },
-  parent: SettingsConstants.MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   onPress: function remove2FA() {
-    const obj2 = { title: null, body: null, cancelText: null, onConfirm: null };
-    const intl = util.intl;
-    obj2.title = intl.string(util.t["D+aE7g"]);
-    const intl2 = util.intl;
-    obj2.body = intl2.string(util.t.EA4ZEk);
-    const intl3 = util.intl;
-    obj2.cancelText = intl3.string(util.t["ETE/oC"]);
-    obj2.onConfirm = function onConfirm() {
-      return MFAActionCreatorsDefault.disable();
+    let intl;
+    let intl2;
+    let intl3;
+    let obj = {
+      title: intl.string(intl4.t["D+aE7g"]),
+      body: intl2.string(intl4.t.EA4ZEk),
+      cancelText: intl3.string(intl4.t["ETE/oC"]),
+      onConfirm() {
+        const obj = MFAActionCreatorsDefault;
+        return obj.disable();
+      }
     };
-    AlertActionCreatorsDefault.show(obj2);
+    const show = AlertActionCreatorsDefault.show;
+    AlertActionCreatorsDefault;
+    intl = intl4.intl;
+    intl2 = intl4.intl;
+    intl3 = intl4.intl;
+    show(obj);
   },
   useIsDisabled() {
-    return null !== account_MFAUtils.use2FARemoveDisableReason();
+    const obj = account_MFAUtils;
+    return null !== obj.use2FARemoveDisableReason();
   },
   useDescription: account_MFAUtils.use2FARemoveDisableReason,
   usePredicate: SettingsAccountUtils.useIsTOTPEnabled
-});
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountRemove2faSetting.tsx");
 
 export default pressable;

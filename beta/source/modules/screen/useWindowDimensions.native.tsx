@@ -5,12 +5,12 @@
 // Exports: default, getWindowDimensions
 
 // Module 1479 (useWindowDimensions)
-import noop from "module_19" /* 19 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1482 */;
+import react from "react" /* 19 */;
 import DimensionsStore from "DimensionsStore" /* 1480 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
 let closure_4 = { ignoreKeyboard: false };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/screen/useWindowDimensions.native.tsx");
 
 export default function useWindowDimensions() {
@@ -23,14 +23,16 @@ export default function useWindowDimensions() {
     flag = false;
   }
   let appEntryKey;
+  const obj = AppEntryKeyContext;
   if (appEntryKey == null) {
     appEntryKey = obj.useAppEntryKey();
   }
   const items = [flag, appEntryKey];
-  return DimensionsStore(noop.useMemo(() => {
+  return DimensionsStore(react.useMemo(() => {
+    let fn;
     if (flag) {
-      closure_0 = tmp;
-      let fn = (arg0) => arg0.byAppEntry[closure_0].windowDimensionsIgnoringKeyboard;
+      let closure_0 = tmp;
+      fn = (arg0) => arg0.byAppEntry[closure_0].windowDimensionsIgnoringKeyboard;
     } else {
       closure_0 = tmp;
       fn = (arg0) => arg0.byAppEntry[closure_0].windowDimensions;

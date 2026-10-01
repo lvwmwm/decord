@@ -5,56 +5,63 @@
 // Exports: default
 
 // Module 4296 (lightFormat)
-import _typeof_mod from "module_3918" /* 3918 */;
-import M from "M" /* 4162 */;
-import module_4081_mod from "module_4081" /* 4081 */;
-import module_4100_mod from "module_4100" /* 4100 */;
+import toDate_mod from "toDate" /* 3918 */;
+import addLeadingZeros_mod from "addLeadingZeros" /* 4162 */;
+import getTimezoneOffsetInMilliseconds_mod from "getTimezoneOffsetInMilliseconds" /* 4081 */;
+import isValid_mod from "isValid" /* 4100 */;
 import subMilliseconds_mod from "subMilliseconds" /* 4151 */;
 import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
-  let tmp3 = obj;
+let tmp11;
+let tmp13;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+let toDate = toDate_mod;
+if (!toDate) {
+  tmp3 = { default: toDate };
+  const obj = { default: toDate };
 } else {
-  tmp3 = _typeof;
+  tmp3 = toDate;
 }
-_typeof = tmp3;
-if (!M) {
-  const obj2 = { default: M };
-  let tmp5 = obj2;
+toDate = tmp3;
+let addLeadingZeros = addLeadingZeros_mod;
+if (!addLeadingZeros) {
+  tmp5 = { default: addLeadingZeros };
+  const obj2 = { default: addLeadingZeros };
 } else {
-  tmp5 = M;
+  tmp5 = addLeadingZeros;
 }
-let closure_1 = tmp5;
-let module_4081 = module_4081_mod;
-if (!module_4081) {
-  const obj3 = { default: module_4081 };
-  let tmp7 = obj3;
+addLeadingZeros = tmp5;
+let getTimezoneOffsetInMilliseconds = getTimezoneOffsetInMilliseconds_mod;
+if (!getTimezoneOffsetInMilliseconds) {
+  tmp7 = { default: getTimezoneOffsetInMilliseconds };
+  const obj3 = { default: getTimezoneOffsetInMilliseconds };
 } else {
-  tmp7 = module_4081;
+  tmp7 = getTimezoneOffsetInMilliseconds;
 }
-module_4081 = tmp7;
-let module_4100 = module_4100_mod;
-if (!module_4100) {
-  const obj4 = { default: module_4100 };
-  let tmp9 = obj4;
+getTimezoneOffsetInMilliseconds = tmp7;
+let isValid = isValid_mod;
+if (!isValid) {
+  tmp9 = { default: isValid };
+  const obj4 = { default: isValid };
 } else {
-  tmp9 = module_4100;
+  tmp9 = isValid;
 }
-module_4100 = tmp9;
+isValid = tmp9;
 let subMilliseconds = subMilliseconds_mod;
 if (!subMilliseconds) {
+  tmp11 = { default: subMilliseconds };
   const obj5 = { default: subMilliseconds };
-  let tmp11 = obj5;
 } else {
   tmp11 = subMilliseconds;
 }
 subMilliseconds = tmp11;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
+  tmp13 = { default: requiredArgs };
   const obj6 = { default: requiredArgs };
-  let tmp13 = obj6;
 } else {
   tmp13 = requiredArgs;
 }
@@ -65,27 +72,31 @@ const re8 = /''/g;
 const re9 = /[a-zA-Z]/;
 
 export default function lightFormat(arg0, str) {
+  let closure_0;
   requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  if (module_4100.default(defaultResult1)) {
-    _typeof = subMilliseconds.default(defaultResult1, module_4081.default(defaultResult1));
+  const defaultResult1 = toDate.default(arg0);
+  if (isValid.default(defaultResult1)) {
+    toDate = subMilliseconds.default(defaultResult1, getTimezoneOffsetInMilliseconds.default(defaultResult1));
     let match = str.match(closure_6);
     let str3 = "";
     if (match) {
-      const mapped = match.map((item) => {
+      const mapped = match.map(function(item) {
         let str = item;
         if ("''" === item) {
           return "'";
         } else if ("'" === str[0]) {
           const match = str.match(re7);
           if (match) {
-            str = match[1].replace(re8, "'");
+            const str4 = match[1];
+            str = str4.replace(re8, "'");
           }
           return str;
-        } else if (closure_1.default[str6]) {
-          return tmp2(closure_0, str);
-        } else if (str6.match(re9)) {
+        } else if (addLeadingZeros.default[str[0]]) {
+          return addLeadingZeros.default[str[0]](closure_0, str);
+        } else if (str[0].match(re9)) {
           const _RangeError = RangeError;
+          const self = this;
+          const self2 = this;
           const rangeError = new RangeError("Format string contains an unescaped latin alphabet character `" + str6 + "`");
           throw rangeError;
         } else {
@@ -97,8 +108,10 @@ export default function lightFormat(arg0, str) {
     return str3;
   } else {
     let _RangeError = RangeError;
+    let self = this;
+    str = "Invalid time value";
+    let self2 = this;
     let rangeError = new RangeError("Invalid time value");
     throw rangeError;
   }
 };
-export default exports.default;

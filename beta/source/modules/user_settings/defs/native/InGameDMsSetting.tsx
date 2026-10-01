@@ -4,32 +4,34 @@
 // Dependencies: [19, 7417, 2021, 1186, 1115, 11006, 2]
 
 // Module 15506 (InGameDMsSetting)
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import noop from "module_19" /* 19 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import react from "react" /* 19 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11006);
-const radio = SettingBuilders.createRadio({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["ms+Tme"]);
+    const intl = intl4.intl;
+    return intl.string(intl4.t["ms+Tme"]);
   },
-  parent: fn(7417).MobileUserSettings.CONNECTED_GAMES,
+  parent: MobileUserSettings.CONNECTED_GAMES,
   useOptions: function useInGameDMsSettingOptions() {
-    return noop.useMemo(() => {
-      const obj = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL, label: null };
-      const intl = util.intl;
-      obj.label = intl.string(util.t.JIFnN9);
+    return react.useMemo(() => {
+      let intl;
+      let intl2;
+      let intl3;
+      const obj = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL, label: intl.string(intl4.t.JIFnN9) };
+      intl = intl4.intl;
       const items = [obj, , ];
-      const obj2 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME, label: null };
-      const intl2 = util.intl;
-      obj2.label = intl2.string(util.t.rRdsk1);
+      const obj2 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME, label: intl2.string(intl4.t.rRdsk1) };
+      intl2 = intl4.intl;
       items[1] = obj2;
-      const obj3 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE, label: null };
-      const intl3 = util.intl;
-      obj3.label = intl3.string(util.t.AolKwN);
+      const obj3 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE, label: intl3.string(intl4.t.AolKwN) };
+      intl3 = intl4.intl;
       items[2] = obj3;
       return items;
     }, []);
@@ -47,12 +49,12 @@ const radio = SettingBuilders.createRadio({
     SlayerSDKReceiveDMsInGame.updateSetting(Number(arg0));
   },
   useSearchTerms() {
-    const intl = util.intl;
-    const items = [intl.string(util.t.XpBObB)];
+    const intl = intl4.intl;
+    const items = [intl.string(intl4.t.XpBObB)];
     return items;
   }
-});
-const size = fn(2);
+};
+const radio = SettingBuilders.createRadio(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/InGameDMsSetting.tsx");
 
 export default radio;

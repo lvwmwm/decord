@@ -5,33 +5,42 @@
 // Exports: default
 
 // Module 16683 (SearchNavigatorPreviewScreen)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const ScrollView = fn(17).ScrollView;
-const SearchTypes = fn(1074).SearchTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let navigation;
+
+const ScrollView = react_native.ScrollView;
+const SearchTypes = Constants.SearchTypes;
+const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ container: { flex: 1 } });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorPreviewScreen.tsx");
 
 export default function SearchNavigatorPreviewScreen() {
-  const tmp = closure_7();
-  navigation = navigation(searchContext[5]).useNavigation();
-  const obj = navigation(searchContext[5]);
-  const route = navigation(searchContext[6]).useRoute();
+  let searchContext;
+  let tmp = closure_7();
+  let obj = navigation(searchContext[5]);
+  navigation = obj.useNavigation();
+  let obj2 = navigation(searchContext[6]);
+  const route = obj2.useRoute();
   const channelId = route.params.channelId;
   searchContext = route.params.searchContext;
   const onBeforeJumpToMessage = route.params.onBeforeJumpToMessage;
   const items = [searchContext, channelId, onBeforeJumpToMessage, navigation];
   const callback = onBeforeJumpToMessage.useCallback(() => {
-    const result = search_tracking_TrackingDefault.trackSearchJumpToMessage({ searchContext, channelId });
+    const obj = search_tracking_TrackingDefault;
+    const obj2 = { searchContext, channelId };
+    const result = obj.trackSearchJumpToMessage(obj2);
+    const tmp = searchContext;
     if (onBeforeJumpToMessage != null) {
       onBeforeJumpToMessage();
     }
-    const type = searchContext.type;
+    const type = tmp.type;
     const parent = navigation.getParent();
     if (null != parent) {
       parent.goBack();
@@ -40,10 +49,8 @@ export default function SearchNavigatorPreviewScreen() {
   let type = searchContext.type;
   if (SearchTypes.CHANNEL !== type) {
     if (SearchTypes.GUILD_CHANNEL !== type) {
-      const obj3 = { channelId, onBeforeJumpToMessage: callback };
-      return jsx(channelId(tmp2[8]), { channelId, onBeforeJumpToMessage: callback });
+      return jsx(channelId(searchContext[8]), { channelId, onBeforeJumpToMessage: callback });
     }
   }
-  const obj2 = navigation(searchContext[6]);
   return <ScrollView horizontal scrollEnabled={false} bounces={false} contentContainerStyle={tmp.container}>{jsx(channelId(searchContext[8]), { channelId, onBeforeJumpToMessage: callback })}</ScrollView>;
 };

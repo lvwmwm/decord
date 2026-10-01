@@ -6,13 +6,14 @@
 
 // Module 12137 (getChatPlaceholderRowHeight)
 import nativeDefault from "native" /* 576 */;
+import native from "native" /* 1177 */;
+import size from "module_2" /* 2 */;
 
 const PX_24 = nativeDefault.space.PX_24;
-const tmp2 = fn(1177).AVATAR_SIZE_MAP[fn(undefined, 1177).AvatarSizes.NORMAL];
+const tmp2 = native.AVATAR_SIZE_MAP[native.AvatarSizes.NORMAL];
 let closure_1 = tmp2;
 const PX_16 = nativeDefault.space.PX_16;
 const PX_12 = nativeDefault.space.PX_12;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat/native/placeholder/getChatPlaceholderRowHeight.tsx");
 
 export default function getChatPlaceholderRowHeight(arg0) {

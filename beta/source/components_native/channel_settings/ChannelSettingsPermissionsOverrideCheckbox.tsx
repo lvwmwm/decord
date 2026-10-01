@@ -4,138 +4,161 @@
 // Dependencies: [19, 17, 21, 576, 4836, 4474, 1115, 7371, 8258, 16658, 4548, 2]
 
 // Module 16657 (ChannelSettingsPermissionsOverrideCheckbox)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import PermissionUtils from "PermissionUtils" /* 4474 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c3;
+let closure_4;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
 function OverrideOption(type) {
+  let accessibilityState;
+  let colors;
+  let colors2;
+  let colors3;
+  let found;
+  let onPress;
+  let permissionTitle;
+  let stringResult;
+  let tmp4Result;
   type = type.type;
   const selected = type.selected;
   const styles = type.styles;
+  const tmp = type;
   ({ permissionTitle, onPress } = type);
-  const radioA11yNative = type(styles[10]).useRadioA11yNative({ selected });
-  const obj2 = { accessibilityRole: radioA11yNative.accessibilityRole, accessibilityLabel: null, accessibilityState: null, style: null, onPress: null, children: null };
+  const obj = type(styles[10]);
+  const radioA11yNative = obj.useRadioA11yNative({ selected });
+  const tmp4 = jsx;
   items = [permissionTitle, ];
+  const obj2 = {
+    accessibilityRole: radioA11yNative.accessibilityRole,
+    accessibilityLabel: found.join(", "),
+    accessibilityState,
+    style(pressed) {
+      let tmp7;
+      if (!selected) {
+        let iconWrapper;
+        if (!pressed.pressed) {
+          iconWrapper = styles.iconWrapper;
+        }
+        return iconWrapper;
+      }
+      if (PermissionUtils.DENY === type) {
+        tmp7 = tmp ? tmp4.denySelected : tmp4.denyActive;
+      } else if (PermissionUtils.ALLOW === type) {
+        tmp7 = tmp ? tmp4.allowSelected : tmp4.allowActive;
+      } else if (PermissionUtils.PASSTHROUGH === type) {
+        tmp7 = tmp ? tmp4.passthroughSelected : tmp4.passthroughActive;
+      }
+      items = [tmp7, styles.iconWrapper];
+      iconWrapper = items;
+    },
+    onPress,
+    children: tmp4Result
+  };
+  accessibilityState = radioA11yNative.accessibilityState;
+  const tmp5 = closure_3;
   if (type(styles[5]).DENY === type) {
     const intl2 = tmp(tmp2[6]).intl;
-    let stringResult = intl2.string(tmp(tmp2[6]).t["6639O5"]);
-  } else if (tmp(tmp2[5]).ALLOW === type) {
+    stringResult = intl2.string(tmp(tmp2[6]).t["6639O5"]);
+  } else if (tmp(styles[5]).ALLOW === type) {
     const intl = tmp(tmp2[6]).intl;
     stringResult = intl.string(tmp(tmp2[6]).t.RzDfSk);
-  } else if (tmp(tmp2[5]).PASSTHROUGH === type) {
+  } else if (tmp(styles[5]).PASSTHROUGH === type) {
     const intl3 = tmp(tmp2[6]).intl;
     stringResult = intl3.string(tmp(tmp2[6]).t.ujC3ZS);
   }
   items[1] = stringResult;
-  const found = items.filter(Boolean);
-  obj2.accessibilityLabel = found.join(", ");
-  obj2.accessibilityState = radioA11yNative.accessibilityState;
-  obj2.style = function style(pressed) {
-    items = selected;
-    if (!selected) {
-      if (!pressed.pressed) {
-        return styles.iconWrapper;
-      }
-    }
-    let iconWrapper = styles;
-    if (PermissionUtils.DENY !== type) {
-      if (tmp3(4474).ALLOW === tmp2) {
-        let tmp5 = items ? iconWrapper.allowSelected : iconWrapper.allowActive;
-      } else if (tmp3(4474).PASSTHROUGH === tmp2) {
-        tmp5 = items ? iconWrapper.passthroughSelected : iconWrapper.passthroughActive;
-      }
-      items = [tmp5, ];
-      iconWrapper = iconWrapper.iconWrapper;
-      items[1] = iconWrapper;
-    }
-  };
-  obj2.onPress = onPress;
-  if (type(styles[5]).DENY === type) {
-    const obj3 = { size: "sm", style: styles.icon, color: null };
-    const colors2 = selected(tmp2[3]).colors;
-    obj3.color = selected ? colors2.WHITE : colors2.ICON_FEEDBACK_CRITICAL;
-    tmp4(tmp(tmp2[7]).DenyIcon, obj3);
+  found = items.filter(Boolean);
+  if (tmp(styles[5]).DENY === type) {
+    const obj3 = { size: "sm", style: styles.icon, color: selected ? colors2.WHITE : colors2.ICON_FEEDBACK_CRITICAL };
+    const DenyIcon = tmp(tmp2[7]).DenyIcon;
+    colors2 = selected(tmp2[3]).colors;
+    tmp4Result = tmp4(DenyIcon, obj3);
+  } else if (tmp(styles[5]).ALLOW === type) {
+    const obj4 = { size: "sm", style: styles.icon, color: selected ? colors.WHITE : colors.ICON_FEEDBACK_POSITIVE };
+    const CheckmarkLargeBoldIcon = tmp(tmp2[8]).CheckmarkLargeBoldIcon;
+    colors = selected(tmp2[3]).colors;
+    tmp4Result = tmp4(CheckmarkLargeBoldIcon, obj4);
   } else {
-    if (tmp(tmp2[5]).ALLOW === type) {
-      const obj4 = { size: "sm", style: styles.icon, color: null };
-      const colors = selected(tmp2[3]).colors;
-      obj4.color = selected ? colors.WHITE : colors.ICON_FEEDBACK_POSITIVE;
-      let tmp4Result2 = tmp4(tmp(tmp2[8]).CheckmarkLargeBoldIcon, obj4);
-    } else {
-      tmp4Result2 = null;
-      if (tmp(tmp2[5]).PASSTHROUGH === type) {
-        const obj5 = { size: "sm", style: styles.icon, color: null };
-        const colors3 = selected(tmp2[3]).colors;
-        obj5.color = selected ? colors3.WHITE : colors3.INTERACTIVE_TEXT_DEFAULT;
-        tmp4Result2 = tmp4(tmp(tmp2[9]).SlashIcon, obj5);
-      }
+    tmp4Result = null;
+    if (tmp(styles[5]).PASSTHROUGH === type) {
+      const obj5 = { size: "sm", style: styles.icon, color: selected ? colors3.WHITE : colors3.INTERACTIVE_TEXT_DEFAULT };
+      const SlashIcon = tmp(tmp2[9]).SlashIcon;
+      colors3 = selected(tmp2[3]).colors;
+      tmp4Result = tmp4(SlashIcon, obj5);
     }
-    obj2.children = tmp4Result2;
-    return tmp4(closure_3, obj2);
   }
+  return tmp4(tmp5, obj2);
 }
-get_ActivityIndicator = fn(17);
-({ Pressable: c3, View: closure_4 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
+({ Pressable: c3, View: closure_4 } = react_native);
+const jsx = Fragment.jsx;
 const PX_4 = nativeDefault.space.PX_4;
 const md = nativeDefault.radii.md;
-const createStyles = fn(4836);
-let obj = { ternaryCheckBox: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: md, height: nativeDefault.space.PX_32, paddingVertical: PX_4, paddingHorizontal: PX_4 / 2, flexDirection: "row" }, iconWrapper: { borderRadius: md - PX_4, marginHorizontal: PX_4 / 2, justifyContent: "center", height: "100%" }, icon: null, denyActive: null, denySelected: null, allowActive: null, allowSelected: null, passthroughSelected: null, passthroughActive: null, disabled: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: md, height: nativeDefault.space.PX_32, paddingVertical: PX_4, paddingHorizontal: PX_4 / 2, flexDirection: "row" };
-obj.icon = { marginHorizontal: nativeDefault.space.PX_8 };
-let obj4 = { marginHorizontal: nativeDefault.space.PX_8 };
-obj.denyActive = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
-let obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
-obj.denySelected = { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm - 2 };
-const obj6 = { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm - 2 };
-obj.allowActive = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE };
-const obj7 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE };
-obj.allowSelected = { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-const obj8 = { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-obj.passthroughSelected = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED };
-const obj9 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED };
-obj.passthroughActive = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER };
-obj.disabled = { opacity: 0.3 };
-let closure_6 = createStyles.createStyles(obj);
-let items = [fn(4474).DENY, fn(4474).PASSTHROUGH, fn(4474).ALLOW];
-const obj10 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER };
-const size = fn(2);
-const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsPermissionsOverrideCheckbox.tsx");
-
-export default noop.memo(function ChannelSettingsPermissionsOverrideCheckbox(permissionTitle) {
+let createStyles = createStyles_mod;
+let obj = { ternaryCheckBox: obj2, iconWrapper: { borderRadius: md - PX_4, marginHorizontal: PX_4 / 2, justifyContent: "center", height: "100%" }, icon: obj3, denyActive: obj4, denySelected: obj5, allowActive: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE }, allowSelected: { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE }, passthroughSelected: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED }, passthroughActive: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER }, disabled: { opacity: 0.3 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: md, height: nativeDefault.space.PX_32, paddingVertical: PX_4, paddingHorizontal: PX_4 / 2, flexDirection: "row" };
+createStyles = createStyles.createStyles;
+obj3 = { marginHorizontal: nativeDefault.space.PX_8 };
+obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
+obj5 = { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm - 2 };
+({ backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE });
+({ backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE });
+({ backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED });
+({ backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER });
+let closure_6 = createStyles(obj);
+let items = [PermissionUtils.DENY, PermissionUtils.PASSTHROUGH, PermissionUtils.ALLOW];
+const memoResult = react.memo(function ChannelSettingsPermissionsOverrideCheckbox(permissionTitle) {
+  let disabled;
+  let str;
   permissionTitle = permissionTitle.permissionTitle;
   ({ value: importDefault, disabled } = permissionTitle);
   if (disabled === undefined) {
     disabled = false;
   }
   const onValueChange = permissionTitle.onValueChange;
-  const tmp = closure_6();
+  let tmp = closure_6();
   const styles = tmp;
   items = [tmp.ternaryCheckBox, ];
   let disabled2 = disabled;
+  let tmp2 = jsx;
+  const tmp3 = closure_4;
   if (disabled) {
     disabled2 = tmp.disabled;
   }
-  const obj = { style: items, pointerEvents: null, accessibilityRole: "radiogroup", accessibilityLabel: null, children: null };
   items[1] = disabled2;
-  let str = "auto";
+  const obj = {
+    style: items,
+    pointerEvents: str,
+    accessibilityRole: "radiogroup",
+    accessibilityLabel: permissionTitle,
+    children: items.map((type, index) => {
+      permissionTitle = type;
+      return <OverrideOption key={"checkbox-" + arg1} permissionTitle={permissionTitle} type={arg0} selected={closure_1 === arg0} styles={styles} onPress={function onPress() {
+        let tmp2 = null != onValueChange;
+        const tmp = onValueChange;
+        if (tmp2) {
+          tmp2 = importDefault !== type;
+        }
+        if (tmp2) {
+          tmp(type);
+        }
+      }} />;
+    })
+  };
+  str = "auto";
   if (disabled) {
     str = "none";
   }
-  obj.pointerEvents = str;
-  obj.accessibilityLabel = permissionTitle;
-  obj.children = items.map((type, index) => {
-    permissionTitle = type;
-    return <OverrideOption key={"checkbox-" + arg1} permissionTitle={permissionTitle} type={arg0} selected={closure_1 === arg0} styles={styles} onPress={function onPress() {
-      let tmp2 = null != onValueChange;
-      if (tmp2) {
-        tmp2 = importDefault !== closure_0;
-      }
-      if (tmp2) {
-        onValueChange(closure_0);
-      }
-    }} />;
-  });
-  return <closure_4 style={items} pointerEvents={null} accessibilityRole="radiogroup" accessibilityLabel={null}>{null}</closure_4>;
+  return tmp2(tmp3, obj);
 });
+const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsPermissionsOverrideCheckbox.tsx");
+
+export default memoResult;

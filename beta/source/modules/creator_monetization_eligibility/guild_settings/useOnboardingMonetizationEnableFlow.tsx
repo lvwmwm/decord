@@ -5,56 +5,75 @@
 // Exports: default
 
 // Module 17538 (useOnboardingMonetizationEnableFlow)
-import noop from "module_19" /* 19 */;
+import GuildRecord from "GuildRecord" /* 2063 */;
+import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const isGuildOwner = fn(2063).isGuildOwner;
-const Constants = fn(1074);
-({ GuildFeatures: metroRequire, HelpdeskArticles: closure_7, MarketingURLs: closure_8 } = Constants);
-const size = fn(2);
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+const isGuildOwner = GuildRecord.isGuildOwner;
+({ GuildFeatures: metroRequire, HelpdeskArticles: metroImportDefault, MarketingURLs: metroImportAll } = Constants);
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useOnboardingMonetizationEnableFlow.tsx");
 
 export default function useOnboardingMonetizationEnableFlow(features) {
+  let canApply;
+  let closure_2;
+  let createEnableRequest;
+  let eligibility;
+  let error;
+  let error2;
+  let formatResult2;
+  let hasItem;
+  let isApplicationRejected;
+  let loading;
+  let loading2;
+  let refresh;
+  let requestCooldownDuration;
+  let submittedRequest;
+  let tmp9Result4;
   _require = features;
-  let isExpeditedOnboardingGuild = require("CreatorMonetizationEligibilityExperimentUtils").useIsExpeditedOnboardingGuild(features);
+  let tmp = _require;
+  const tmp2 = dependencyMap;
+  const obj = require("CreatorMonetizationEligibilityExperimentUtils");
+  let isExpeditedOnboardingGuild = obj.useIsExpeditedOnboardingGuild(features);
   if (features != null) {
     features = features.features;
-    const hasItem = features.has(constants.CREATOR_MONETIZABLE_PROVISIONAL);
+    hasItem = features.has(constants.CREATOR_MONETIZABLE_PROVISIONAL);
   }
   if (features != null) {
     const features2 = features.features;
     const hasItem1 = features2.has(constants.CREATOR_MONETIZABLE);
   }
-  const obj = require("CreatorMonetizationEligibilityExperimentUtils");
   const items = [UserStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => {
-    let tmp3 = null != closure_0;
-    if (tmp3) {
-      tmp3 = isGuildOwner(tmp2, tmp);
-    }
+  const tmpResult = tmp(563);
+  const stateFromStores = tmpResult.useStateFromStores(items, () => {
+    const tmp3 = null != features && isGuildOwner(tmp2, tmp);
     return tmp3;
   });
   let id;
-  const tmpResult = require("useStateFromStores");
+  const tmp10 = refresh(17539);
   if (features != null) {
     id = features.id;
   }
-  const tmp10 = refresh(17539);
-  ({ submittedRequest, error, loading, createEnableRequest } = refresh(17539)(id));
+  ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
-  const tmp10Result = refresh(17539)(id);
+  tmp10(id);
+  const tmp9Result = refresh(17540);
   if (features != null) {
     id1 = features.id;
   }
-  const tmp9ResultResult = refresh(17540)(id1);
+  const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  const tmp9Result = refresh(17540);
   ({ isApplicationRejected, requestCooldownDuration } = refresh(17541)(eligibility));
   let hasItem2;
+  refresh(17541)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -68,90 +87,81 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     }
     tmp19 = true === hasItem3;
   }
-  const tmp16 = refresh(17541)(eligibility);
   let id2;
+  const useIsMonetizationReapplicationDisabled = tmp(6671).useIsMonetizationReapplicationDisabled;
+  tmp(6671);
   if (features != null) {
     id2 = features.id;
   }
-  let tmp23 = submittedRequest;
+  let tmp24 = submittedRequest;
+  const isMonetizationReapplicationDisabled = useIsMonetizationReapplicationDisabled(id2).isMonetizationReapplicationDisabled;
   if (!submittedRequest) {
     let isApplicationPending;
     if (eligibility != null) {
       isApplicationPending = eligibility.isApplicationPending;
     }
-    tmp23 = true === isApplicationPending;
+    tmp24 = true === isApplicationPending;
   }
-  let canApply;
   if (eligibility != null) {
     canApply = eligibility.canApply;
   }
   const intl = tmp(1115).intl;
-  const obj2 = { faqUrl: null };
-  const tmpResult3 = require("CreatorMonetizationRestrictionsHooks");
-  obj2.faqUrl = refresh(2111).getArticleURL(constants2.CREATOR_FAQ);
-  const tmp26 = constants2;
+  const aJUdOi = tmp(1115).t.aJUdOi;
   const tmp9Result3 = refresh(2111);
+  ({ faqUrl: null }.faqUrl) = tmp9Result3.getArticleURL(constants2.CREATOR_FAQ);
+  const tmp26 = constants2;
   if (isApplicationRejected) {
-    if (tmpResult3.useIsMonetizationReapplicationDisabled(id2).isMonetizationReapplicationDisabled) {
+    if (isMonetizationReapplicationDisabled) {
+      let formatResult;
       if (true === hasItem) {
         const intl4 = tmp(1115).intl;
-        const obj3 = { communityGuidelineUrl: constants3.GUIDELINES };
-        let formatResult1 = intl4.format(tmp(1115).t["0o1Q+t"], obj3);
+        const obj2 = { communityGuidelineUrl: constants3.GUIDELINES };
+        formatResult = intl4.format(tmp(1115).t["0o1Q+t"], obj2);
       } else {
         const intl3 = tmp(1115).intl;
-        const obj4 = { communityGuidelineUrl: constants3.GUIDELINES };
-        formatResult1 = intl3.format(tmp(1115).t.b6h59n, obj4);
+        const obj3 = { communityGuidelineUrl: constants3.GUIDELINES };
+        formatResult = intl3.format(tmp(1115).t.b6h59n, obj3);
+      }
+      formatResult2 = formatResult;
+    }
+    dependencyMap = tmp33;
+    if (isExpeditedOnboardingGuild) {
+      isExpeditedOnboardingGuild = false === hasItem;
+    }
+    let formatResult1;
+    const tmpResult4 = tmp(17542);
+    const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
+    if (isApplicationRejected) {
+      if (true === canApply) {
+        if (stateFromStores) {
+          const intl5 = tmp(1115).intl;
+          formatResult1 = intl5.format(tmp(1115).t.wbVIUB, {});
+        }
       }
     }
+    const items1 = [refresh, tmp33];
+    const effect = react.useEffect(() => {
+      const tmp = closure_2;
+      if (tmp) {
+        refresh();
+      }
+    }, items1);
+    const obj4 = { resubmittingEnableRequest: loading, resubmissionError: error, isGuildOwner: stateFromStores, createEnableRequest, resubmittedRequest: submittedRequest, eligibilityLoading: loading2, eligibilityError: error2, refreshEligibility: refresh, eligibility, eligibleForMonetization: true === canApply, isApplicationPending: tmp24, hasPreviousApplicationRejection: isApplicationRejected, requestRejectedNoticeText: formatResult2, reapplyNoticeText: formatResult1, showAcceptTermsFlow: isExpeditedOnboardingGuild, wasRejectedInV1: isExpeditedOnboardingGuild, requirementsFinePrintText: tmp27, acceptTermsCheckboxText: creatorMonetizationAcceptTermsCheckboxText };
+    if (isExpeditedOnboardingGuild) {
+      if (!tmp19) {
+        tmp19 = isApplicationRejected;
+      }
+      isExpeditedOnboardingGuild = tmp19;
+    }
+    return obj4;
   }
-  let tmp28 = isApplicationRejected;
-  if (isApplicationRejected) {
-    tmp28 = null != requestCooldownDuration;
-  }
-  let formatResult2;
+  const tmp28 = isApplicationRejected && null != requestCooldownDuration;
   if (tmp28) {
     const intl2 = tmp(1115).intl;
-    const obj5 = { requestCooldownDuration, creatorRevenuePolicyUrl: tmp9(2111).getArticleURL(tmp26.CREATOR_POLICY) };
-    formatResult2 = intl2.format(tmp(1115).t.TvX207, obj5);
-    const tmp9Result4 = tmp9(2111);
+    const format = intl2.format;
+    const obj5 = { requestCooldownDuration, creatorRevenuePolicyUrl: tmp9Result4.getArticleURL(tmp26.CREATOR_POLICY) };
+    const TvX207 = tmp(1115).t.TvX207;
+    tmp9Result4 = refresh(2111);
+    formatResult2 = format(TvX207, obj5);
   }
-  let tmp34 = isExpeditedOnboardingGuild;
-  if (isExpeditedOnboardingGuild) {
-    tmp34 = stateFromStores;
-  }
-  if (tmp34) {
-    tmp34 = false === hasItem1;
-  }
-  dependencyMap = tmp34;
-  if (isExpeditedOnboardingGuild) {
-    isExpeditedOnboardingGuild = false === hasItem;
-  }
-  const formatResult = intl.format(require("util").t.aJUdOi, obj2);
-  let formatResult3;
-  const creatorMonetizationAcceptTermsCheckboxText = require("CreatorMonetizationAcceptTermCheckboxText").getCreatorMonetizationAcceptTermsCheckboxText();
-  if (isApplicationRejected) {
-    if (tmp35) {
-      if (stateFromStores) {
-        const intl5 = tmp(1115).intl;
-        formatResult3 = intl5.format(tmp(1115).t.wbVIUB, {});
-      }
-    }
-  }
-  const items1 = [refresh, tmp34];
-  const effect = noop.useEffect(() => {
-    if (closure_2) {
-      refresh();
-    }
-  }, items1);
-  const obj6 = { resubmittingEnableRequest: loading, resubmissionError: error, isGuildOwner: stateFromStores, createEnableRequest, resubmittedRequest: submittedRequest, eligibilityLoading: loading2, eligibilityError: error2, refreshEligibility: refresh, eligibility, eligibleForMonetization: true === canApply, isApplicationPending: tmp23, hasPreviousApplicationRejection: isApplicationRejected, requestRejectedNoticeText: formatResult2, reapplyNoticeText: formatResult3, showAcceptTermsFlow: isExpeditedOnboardingGuild, wasRejectedInV1: null, requirementsFinePrintText: null, acceptTermsCheckboxText: null };
-  if (isExpeditedOnboardingGuild) {
-    if (!tmp19) {
-      tmp19 = isApplicationRejected;
-    }
-    isExpeditedOnboardingGuild = tmp19;
-  }
-  obj6.wasRejectedInV1 = isExpeditedOnboardingGuild;
-  obj6.requirementsFinePrintText = formatResult;
-  obj6.acceptTermsCheckboxText = creatorMonetizationAcceptTermsCheckboxText;
-  return obj6;
 };

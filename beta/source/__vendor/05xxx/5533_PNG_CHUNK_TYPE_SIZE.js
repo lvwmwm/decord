@@ -7,29 +7,12 @@
 import _mod5526 from "module_5526" /* 5526 */;
 import _modDef5529 from "module_5529" /* 5529 */;
 
-require = arg1;
-importDefault = arg2;
-const dependencyMap = arg6;
-let c3 = "\u0089PNG\r\n\u001A\n";
-let c4 = 4;
-let c5 = 4;
-let c6 = 0;
-let c7 = 4;
-let c8 = 8;
-let c9 = "XML:com.adobe.xmp\0";
-const tEXt = "tEXt";
-const iTXt = "iTXt";
-const zTXt = "zTXt";
-const pHYs = "pHYs";
-const tIME = "tIME";
-const eXIf = "eXIf";
-const iCCP = "iCCP";
-
-export default {
+let obj = {
   isPngFile(dataView) {
     let tmp = dataView;
     if (tmp) {
-      tmp = _mod5526.getStringFromDataView(dataView, 0, u0089PNGrnu001An.length) === u0089PNGrnu001An;
+      const obj = _mod5526;
+      tmp = obj.getStringFromDataView(dataView, 0, u0089PNGrnu001An.length) === u0089PNGrnu001An;
     }
     return tmp;
   },
@@ -86,8 +69,7 @@ export default {
             }
             if (undefined !== tmp46) {
               obj.hasAppMarkers = true;
-              let obj4 = { dataOffset: tmp46, length: null };
-              obj4.length = byteLength.getUint32(length + c6) - (tmp46 - (length + c8));
+              let obj4 = { dataOffset: tmp46, length: byteLength.getUint32(length + c6) - (tmp46 - (length + c8)) };
               let items = [obj4];
               obj.xmpChunks = items;
             }
@@ -114,11 +96,9 @@ export default {
             obj.pngTextChunks = [];
           }
           let pngTextChunks = obj.pngTextChunks;
-          let obj6 = { length: null, type: null, offset: null };
-          obj6.length = byteLength.getUint32(length + c6);
-          obj6.type = stringFromDataView1;
-          obj6.offset = length + c8;
-          let arr = pngTextChunks.push(obj6);
+          let obj6 = { length: byteLength.getUint32(length + c6), type: stringFromDataView1, offset: length + c8 };
+          let push = pngTextChunks.push;
+          let arr = push(obj6);
         } else {
           let tmp14Result5 = tmp14(5526);
           if (tmp14Result5.getStringFromDataView(byteLength, length + tmp15, tmp16) === eXIf) {
@@ -164,6 +144,22 @@ export default {
     return obj;
   }
 };
+let c3 = "\u0089PNG\r\n\u001A\n";
+let c4 = 4;
+let c5 = 4;
+let c6 = 0;
+let c7 = 4;
+let c8 = 8;
+let c9 = "XML:com.adobe.xmp\0";
+const tEXt = "tEXt";
+const iTXt = "iTXt";
+const zTXt = "zTXt";
+const pHYs = "pHYs";
+const tIME = "tIME";
+const eXIf = "eXIf";
+const iCCP = "iCCP";
+
+export default obj;
 export const PNG_CHUNK_TYPE_SIZE = 4;
 export const PNG_CHUNK_LENGTH_OFFSET = 0;
 export const PNG_CHUNK_TYPE_OFFSET = 4;

@@ -5,31 +5,34 @@
 // Exports: shouldShowAgeNotice, useShouldShowAgeNotice, useShouldShowAgeNoticePromo
 
 // Module 14276 (TinyBroncoNoticeVisibility)
+import get_initialized from "get initialized" /* 504 */;
 import Server from "Server" /* 1979 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5735 */;
 import AgeGatedFeature from "AgeGatedFeature" /* 5736 */;
 import UserStore from "UserStore" /* 1372 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/tiny_bronco/TinyBroncoNoticeVisibility.tsx");
 
 export const shouldShowAgeNotice = function shouldShowAgeNotice() {
-  let isFeatureAgeGatedResult = RegionalFeatureConfigUtils.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
+  const obj = RegionalFeatureConfigUtils;
+  let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
   if (isFeatureAgeGatedResult) {
     const currentUser = UserStore.getCurrentUser();
     let prop;
     if (currentUser != null) {
       prop = currentUser.ageVerificationStatus;
     }
-    isFeatureAgeGatedResult = null != prop && prop !== tmp(1979).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== tmp(1979).AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
-    const tmp8 = null != prop && prop !== tmp(1979).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== tmp(1979).AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
+    isFeatureAgeGatedResult = null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
+    null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
   }
   return isFeatureAgeGatedResult;
 };
 export const useShouldShowAgeNotice = function useShouldShowAgeNotice() {
-  let isFeatureAgeGated = RegionalFeatureConfigUtils.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
+  const obj = RegionalFeatureConfigUtils;
+  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
   const items = [UserStore];
+  const obj2 = get_initialized;
   if (isFeatureAgeGated) {
     isFeatureAgeGated = obj2.useStateFromStores(items, () => {
       currentUser = currentUser.getCurrentUser();
@@ -37,21 +40,17 @@ export const useShouldShowAgeNotice = function useShouldShowAgeNotice() {
       if (currentUser != null) {
         prop = currentUser.ageVerificationStatus;
       }
-      let tmp3 = null != prop;
-      if (tmp3) {
-        tmp3 = prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
-      }
-      if (tmp3) {
-        tmp3 = prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
-      }
+      const tmp3 = null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
       return tmp3;
     });
   }
   return isFeatureAgeGated;
 };
 export const useShouldShowAgeNoticePromo = function useShouldShowAgeNoticePromo() {
-  let isFeatureAgeGated = RegionalFeatureConfigUtils.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
+  const obj = RegionalFeatureConfigUtils;
+  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
   const items = [UserStore];
+  const obj2 = get_initialized;
   if (isFeatureAgeGated) {
     isFeatureAgeGated = obj2.useStateFromStores(items, () => {
       currentUser = currentUser.getCurrentUser();
@@ -59,16 +58,7 @@ export const useShouldShowAgeNoticePromo = function useShouldShowAgeNoticePromo(
       if (currentUser != null) {
         prop = currentUser.ageVerificationStatus;
       }
-      let tmp3 = null != prop;
-      if (tmp3) {
-        tmp3 = prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
-      }
-      if (tmp3) {
-        tmp3 = prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
-      }
-      if (tmp3) {
-        tmp3 = prop !== Server.AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
-      }
+      const tmp3 = null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN && prop !== Server.AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
       return tmp3;
     });
   }

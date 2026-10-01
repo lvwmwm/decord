@@ -4,106 +4,111 @@
 // Dependencies: [19, 1074, 21, 5903, 5904, 5905, 5906, 2059, 1177, 2]
 
 // Module 5902 (GuildBadge)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
 import native from "native" /* 1177 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import _modDef5903 from "module_5903" /* 5903 */;
-import _modDef5904 from "module_5904" /* 5904 */;
-import _modDef5905 from "module_5905" /* 5905 */;
-import _modDef5906 from "module_5906" /* 5906 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5903 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 5904 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 5905 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 5906 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let PARTNERED;
+let PARTNERED_BLACK;
+let VERIFIED;
+let VERIFIED_BLACK;
 function getGuildBadgeSource(guild, flag) {
-  let has = guild;
   let NONE = obj.NONE;
   const VERIFIED = GuildFeatures.VERIFIED;
-  if (null == guild) {
-    if (!tmp3) {
-      const PARTNERED = tmp2.PARTNERED;
-      if (null == has) {
-        if (tmp11) {
-          NONE = flag ? tmp.PARTNERED_BLACK : tmp.PARTNERED;
-        }
-        return obj2[NONE];
-      } else {
-        obj2 = GuildRecordUtils;
-        if (obj2.isGuildRecord(has)) {
-          const features6 = has.features;
-          has = features6.has;
-          let hasItem = has(PARTNERED);
-        } else {
-          const _Array2 = Array;
-          if (Array.isArray(has.features)) {
-            const features5 = has.features;
-            hasItem = features5.includes(PARTNERED);
-          } else {
-            const features4 = has.features;
-            let hasItem1;
-            if (features4 != null) {
-              hasItem1 = features4.has(PARTNERED);
-            }
-            hasItem = Boolean(hasItem1);
-          }
-        }
-      }
-    }
-  } else {
+  let tmp3 = null != guild;
+  const tmp2 = GuildFeatures;
+  if (tmp3) {
+    let hasItem;
     obj = GuildRecordUtils;
-    if (obj.isGuildRecord(has)) {
-      const features3 = has.features;
-      let hasItem2 = features3.has(VERIFIED);
+    if (obj.isGuildRecord(guild)) {
+      const features3 = guild.features;
+      hasItem = features3.has(VERIFIED);
     } else {
       const _Array = Array;
-      if (Array.isArray(has.features)) {
-        const features2 = has.features;
-        hasItem2 = features2.includes(VERIFIED);
+      if (Array.isArray(guild.features)) {
+        const features2 = guild.features;
+        hasItem = features2.includes(VERIFIED);
       } else {
-        const features = has.features;
-        let hasItem3;
+        const features = guild.features;
+        let hasItem1;
+        const _Boolean = Boolean;
         if (features != null) {
-          hasItem3 = features.has(VERIFIED);
+          hasItem1 = features.has(VERIFIED);
         }
-        hasItem2 = Boolean(hasItem3);
+        hasItem = _Boolean(hasItem1);
       }
     }
+    tmp3 = hasItem;
   }
+  if (tmp3) {
+    NONE = flag ? tmp.VERIFIED_BLACK : tmp.VERIFIED;
+  } else {
+    const PARTNERED = tmp2.PARTNERED;
+    let tmp9 = null != guild;
+    if (tmp9) {
+      let hasItem2;
+      obj2 = GuildRecordUtils;
+      if (obj2.isGuildRecord(guild)) {
+        const features6 = guild.features;
+        hasItem2 = features6.has(PARTNERED);
+      } else {
+        const _Array2 = Array;
+        if (Array.isArray(guild.features)) {
+          const features5 = guild.features;
+          hasItem2 = features5.includes(PARTNERED);
+        } else {
+          const features4 = guild.features;
+          let hasItem3;
+          const _Boolean2 = Boolean;
+          if (features4 != null) {
+            hasItem3 = features4.has(PARTNERED);
+          }
+          hasItem2 = _Boolean2(hasItem3);
+        }
+      }
+      tmp9 = hasItem2;
+    }
+    if (tmp9) {
+      NONE = flag ? tmp.PARTNERED_BLACK : tmp.PARTNERED;
+    }
+  }
+  return obj2[NONE];
 }
 class GuildBadge {
-  constructor(arg0) {
-    flag = global.monocolored;
+  constructor(monocolored) {
+    let flag = monocolored.monocolored;
+    const guild = monocolored.guild;
     if (flag === undefined) {
       flag = false;
     }
-    MEDIUM = global.size;
+    let MEDIUM = monocolored.size;
     if (MEDIUM === undefined) {
-      tmp = GuildBadge;
       MEDIUM = GuildBadge.Sizes.MEDIUM;
     }
-    tmp2 = null;
-    merged = Object.assign(global, Object.assign({ guild: 0, monocolored: 0, size: 0 }));
-    tmp4 = getGuildBadgeSource(global.guild, flag);
+    let tmp2 = null;
+    const merged = Object.assign(monocolored, Object.assign({ guild: 0, monocolored: 0, size: 0 }));
+    const tmp4 = getGuildBadgeSource(guild, flag);
     if (null != tmp4) {
-      tmp5 = jsx;
-      tmp6 = closure_0;
-      tmp7 = closure_1;
-      obj = {};
-      tmp8 = obj;
-      tmp9 = merged;
-      merged1 = Object.assign(merged);
-      obj.size = MEDIUM;
-      obj.source = tmp4;
-      tmp2 = jsx(closure_0(closure_1[8]).Icon, obj);
+      const Icon = native.Icon;
+      const merged1 = Object.assign(merged);
+      tmp2 = <Icon size={MEDIUM} source={tmp4} />;
     }
     return tmp2;
   }
 }
-const GuildFeatures = fn(1074).GuildFeatures;
-const jsx = fn(21).jsx;
+const GuildFeatures = Constants.GuildFeatures;
+const jsx = Fragment.jsx;
 let obj = { PARTNERED: 0, [0]: "PARTNERED", VERIFIED: 1, [1]: "VERIFIED", PARTNERED_BLACK: 2, [2]: "PARTNERED_BLACK", VERIFIED_BLACK: 3, [3]: "VERIFIED_BLACK", NONE: 4, [4]: "NONE" };
-let obj2 = { [VERIFIED]: _modDef5903, [PARTNERED]: _modDef5904, [VERIFIED_BLACK]: _modDef5905, [PARTNERED_BLACK]: _modDef5906, [obj.NONE]: null };
+let obj2 = { [VERIFIED]: AssetRegistryDefault, [PARTNERED]: AssetRegistryDefault2, [VERIFIED_BLACK]: AssetRegistryDefault3, [PARTNERED_BLACK]: AssetRegistryDefault4, [obj.NONE]: null };
 ({ VERIFIED, PARTNERED, VERIFIED_BLACK, PARTNERED_BLACK } = obj);
-GuildBadge.Sizes = fn(1177).Icon.Sizes;
-const size = fn(2);
+GuildBadge.Sizes = native.Icon.Sizes;
 const result = size.fileFinishedImporting("modules/guild/native/GuildBadge.tsx");
 
 export default GuildBadge;

@@ -5,19 +5,24 @@
 // Exports: default
 
 // Module 12542 (useMediaViewerClosePosition)
+import Constants from "Constants" /* 1074 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import getMediaViewerStateForScreenDefault from "getMediaViewerStateForScreen" /* 12539 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const NOOP = fn(1074).NOOP;
+let closure_5;
+
+let react = react_mod;
+const NOOP = Constants.NOOP;
 let closure_6 = { code: "function useMediaViewerClosePositionTsx1(){const{index}=this.__closure;return index.get();}" };
 const __initData = { code: "function useMediaViewerClosePositionTsx2(index){const{runOnJS,setClosePosition}=this.__closure;runOnJS(setClosePosition)(index);}" };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_viewer/native/useMediaViewerClosePosition.tsx");
 
 export default function useMediaViewerClosePosition(index) {
+  let callback;
+  let closure_4;
   index = index.index;
   const sources = index.sources;
   let onClose = index.onClose;
@@ -26,30 +31,36 @@ export default function useMediaViewerClosePosition(index) {
   }
   const windowHeight = index.windowHeight;
   const windowWidth = index.windowWidth;
-  const tmp = sources(windowHeight[4])(onClose);
-  noop = tmp;
-  const tmp2 = windowWidth(noop.useState(() => {
+  let tmp = sources(windowHeight[4])(onClose);
+  react = tmp;
+  const tmp2 = windowWidth(react.useState(() => {
+    let obj;
     const tmp3 = sources[index.get(index)];
+    const tmp = windowWidth;
     if (null != tmp3) {
-      let obj = getMediaViewerStateForScreenDefault(windowWidth, tmp2, tmp3);
+      obj = getMediaViewerStateForScreenDefault(tmp, tmp2, tmp3);
     } else {
-      obj = { height: tmp2 };
+      obj = { height: windowHeight };
     }
     return (windowHeight + obj.height) / 2;
   }), 2);
   closure_5 = tmp2[1];
   const items = [tmp, sources, windowHeight, windowWidth];
-  const setClosePosition = noop.useCallback((arg0) => {
+  const first = tmp2[0];
+  const setClosePosition = react.useCallback((arg0) => {
+    let obj;
     if (null == sources[arg0]) {
       closure_4();
     }
+    const tmp4 = closure_5;
     if (null != sources[arg0]) {
-      let obj = getMediaViewerStateForScreenDefault(tmp5, tmp6, tmp);
+      obj = getMediaViewerStateForScreenDefault(tmp5, tmp6, tmp);
     } else {
-      obj = { height: tmp6 };
+      obj = { height: windowHeight };
     }
-    closure_5((windowHeight + obj.height) / 2);
+    tmp4((windowHeight + obj.height) / 2);
   }, items);
+  let obj = index(windowHeight[5]);
   const fn = function h() {
     return index.get();
   };
@@ -57,16 +68,17 @@ export default function useMediaViewerClosePosition(index) {
   fn.__workletHash = 5031282724746;
   fn.__initData = setClosePosition;
   const fn2 = function f(arg0) {
-    ReanimatedRexport.runOnJS(callback)(arg0);
+    const obj = ReanimatedRexport;
+    obj.runOnJS(callback)(arg0);
   };
-  let obj = index(windowHeight[5]);
   fn2.__closure = { runOnJS: index(windowHeight[5]).runOnJS, setClosePosition };
   fn2.__workletHash = 2709880768438;
   fn2.__initData = __initData;
+  ({ runOnJS: index(windowHeight[5]).runOnJS, setClosePosition });
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
   const items1 = [setClosePosition, index];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     callback(index.get());
   }, items1);
-  return tmp2[0];
+  return first;
 };

@@ -4,25 +4,27 @@
 // Dependencies: [504, 573, 2]
 
 // Module 14024 (VibegrationsBuilderPreviewStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import size from "module_2" /* 2 */;
 
 let applicationId = null;
 let enabled = false;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class VibegrationsBuilderPreviewStore extends Store {
+  getBuilderPreviewApplicationId() {
+    return applicationId;
+  }
+  isBuilderPreviewMobile() {
+    return enabled;
+  }
 }
 const prototype = VibegrationsBuilderPreviewStore.prototype;
-prototype["getBuilderPreviewApplicationId"] = function getBuilderPreviewApplicationId() {
-  return applicationId;
-};
-prototype["isBuilderPreviewMobile"] = function isBuilderPreviewMobile() {
-  return enabled;
-};
-const vibegrationsBuilderPreviewStore = new VibegrationsBuilderPreviewStore(DispatcherDefault, {
+const obj = {
   LOGOUT: function handleLogout() {
     if (null == applicationId) {
-      if (!enabled) {
+      const tmp = enabled;
+      if (!tmp) {
         return false;
       }
     }
@@ -41,8 +43,8 @@ const vibegrationsBuilderPreviewStore = new VibegrationsBuilderPreviewStore(Disp
       return false;
     }
   }
-});
-const size = fn(2);
+};
+const vibegrationsBuilderPreviewStore = new VibegrationsBuilderPreviewStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/vibegrations/stores/VibegrationsBuilderPreviewStore.tsx");
 
 export default vibegrationsBuilderPreviewStore;

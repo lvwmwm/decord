@@ -5,30 +5,31 @@
 // Exports: useModalDismissGuardRefreshControl
 
 // Module 9782 (useModalDismissGuardRefreshControl)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import noop_mod from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function noop() {
 
 }
-let noop = noop_mod;
-const RefreshControl = fn(17).RefreshControl;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const RefreshControl = react_native.RefreshControl;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/keyboard/native/useModalDismissGuardRefreshControl.tsx");
 
 export const useModalDismissGuardRefreshControl = function useModalDismissGuardRefreshControl() {
-  isPortalKeyboardInModal = isPortalKeyboardInModal(9783).useIsPortalKeyboardInModal();
+  let isPortalKeyboardInModal;
+  let obj = isPortalKeyboardInModal(9783);
+  isPortalKeyboardInModal = obj.useIsPortalKeyboardInModal();
   const items = [isPortalKeyboardInModal];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     let tmp;
     if (isPortalKeyboardInModal) {
+      const obj = PlatformUtils;
       if (obj.isIOS()) {
-        const obj2 = { refreshing: false, onRefresh: noop, tintColor: "transparent" };
         tmp = <RefreshControl refreshing={false} onRefresh={noop} tintColor="transparent" />;
       }
-      obj = PlatformUtils;
     }
     return tmp;
   }, items);

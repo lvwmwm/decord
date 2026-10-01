@@ -5,19 +5,19 @@
 
 // Module 17679 (AVErrorCameraSendLowFPS)
 import DurationsDefault from "Durations" /* 1091 */;
+import AVError from "AVError" /* 8875 */;
+import AVErrorContext from "AVErrorContext" /* 17662 */;
 import AVErrorUtils from "AVErrorUtils" /* 17665 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 let closure_5 = 20 * DurationsDefault.Millis.SECOND;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorCameraSendLowFPS.tsx");
-
-export const AVErrorCameraSendLowFPSDefinition = {
+let obj = {
   getActiveErrors() {
     const rTCConnection = RTCConnectionStore.getRTCConnection();
+    const obj = RTCConnectionStore;
     if (null == rTCConnection) {
       return null;
     } else {
@@ -33,15 +33,18 @@ export const AVErrorCameraSendLowFPSDefinition = {
           }
         }
         if (rTCConnection.hasActiveRemoteWants()) {
-          const accumulatedStatsWithMinDatapoints = AVErrorUtils.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, AuthenticationStore.getId());
+          const obj3 = AVErrorUtils;
+          const accumulatedStatsWithMinDatapoints = obj3.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, AuthenticationStore.getId());
           let tmp7 = null;
+          const obj4 = AuthenticationStore;
           if (null != accumulatedStatsWithMinDatapoints) {
+            let tmp8;
             if (accumulatedStatsWithMinDatapoints.short.frameRate < 10) {
-              const obj2 = { type: tmp4(8875).AVError.CAMERA_SEND_LOW_FPS, userId: AuthenticationStore.getId() };
-              const merged = Object.assign(tmp4(17662).getVoiceChannelErrorContext());
+              const obj2 = { type: AVError.AVError.CAMERA_SEND_LOW_FPS, userId: obj4.getId() };
+              const tmp4Result = AVErrorContext;
+              const merged = Object.assign(tmp4Result.getVoiceChannelErrorContext());
               const items = [obj2];
-              const tmp4Result = tmp4(17662);
-              const tmp8 = items;
+              tmp8 = items;
             }
             tmp7 = tmp8;
           }
@@ -53,9 +56,11 @@ export const AVErrorCameraSendLowFPSDefinition = {
         return null;
       }
     }
-    obj = RTCConnectionStore;
   },
   makeErrorContextKey(mediaSessionId) {
     return "" + mediaSessionId.mediaSessionId;
   }
 };
+const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorCameraSendLowFPS.tsx");
+
+export const AVErrorCameraSendLowFPSDefinition = obj;

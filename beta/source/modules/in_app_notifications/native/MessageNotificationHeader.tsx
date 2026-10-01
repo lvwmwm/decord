@@ -5,110 +5,143 @@
 // Exports: SimpleNotificationHeader, default
 
 // Module 9632 (MessageNotificationHeader)
-import initialize from "initialize" /* 504 */;
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import ChannelTypes from "ChannelTypes" /* 1095 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useChannelName from "useChannelName" /* 4989 */;
-import noop from "module_19" /* 19 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
+import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
 function LocationText(channel) {
+  let _location;
+  let author;
+  let icon;
+  let items1;
   channel = channel.channel;
   const parentChannel = channel.parentChannel;
   let str;
   ({ author, location: _location } = channel);
   const tmp = closure_9();
-  noop = tmp;
+  react = tmp;
   if (str == null) {
     str = "text-muted";
   }
   const items = [channel, parentChannel, tmp.icon, str];
-  let obj = { style: tmp.secondaryTextContainer, children: null };
   let tmp5 = null != author;
-  const memo = noop.useMemo(() => {
-    let tmp3Result2 = dependencyMap;
+  const obj = { style: tmp.secondaryTextContainer, children: items1 };
+  const memo = react.useMemo(() => {
     const PRIVATE_CHANNEL = ChannelTypes.ChannelTypesSets.PRIVATE_CHANNEL;
-    if (PRIVATE_CHANNEL.has(channel.type)) {
-      let element = null;
-      if (null != undefined) {
-        const obj = { color: str, style: icon.icon };
-        element = noop.createElement(undefined, { color: str, style: icon.icon });
+    let tmp5;
+    if (!PRIVATE_CHANNEL.has(channel.type)) {
+      let simpleChannelIconComponent;
+      if (channel.type === ChannelTypes.ChannelTypes.PUBLIC_THREAD) {
+        if (null != parentChannel) {
+          let ThreadIcon;
+          if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
+            ThreadIcon = tmp3(5385).ChatIcon;
+          }
+          simpleChannelIconComponent = ThreadIcon;
+        }
+        ThreadIcon = tmp3(5387).ThreadIcon;
+      } else {
+        const tmp3Result = utils_ChannelUtils;
+        simpleChannelIconComponent = tmp3Result.getSimpleChannelIconComponent(tmp);
       }
-      return element;
-    } else {
-      if (tmp.type !== tmp3(1095).ChannelTypes.PUBLIC_THREAD) {
-        const simpleChannelIconComponent = tmp3(5335).getSimpleChannelIconComponent(tmp);
-        const tmp3Result = tmp3(5335);
-      }
-      if (null == tmp2) {
-        const ThreadIcon = tmp3(5387).ThreadIcon;
-      }
-      tmp3Result2 = tmp3(5385);
-      const ChatIcon = tmp3Result2.ChatIcon;
+      tmp5 = simpleChannelIconComponent;
     }
+    let element = null;
+    if (null != tmp5) {
+      element = <tmp5 color={str} style={icon.icon} />;
+    }
+    return element;
   }, items);
+  const tmp3 = closure_8;
+  const tmp4 = str;
   if (tmp5) {
     const obj2 = { variant: "text-md/bold", color: str, maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
     tmp5 = closure_7(channel(parentChannel[8]).Text, obj2);
   }
-  const items1 = [tmp5, memo, closure_7(channel(parentChannel[8]).Text, { variant: "text-md/semibold", color: str, lineClamp: 1, style: tmp.secondaryText, children: _location })];
-  obj.children = items1;
-  return closure_8(str, obj);
+  items1 = [tmp5, memo, ];
+  const obj3 = { variant: "text-md/semibold", color: str, lineClamp: 1, style: tmp.secondaryText, children: _location };
+  items1[2] = closure_7(channel(parentChannel[8]).Text, obj3);
+  return tmp3(tmp4, obj);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, headerContent: { flex: 1, flexDirection: "row", alignItems: "center" }, primaryText: { flexShrink: 1, marginRight: 2 }, secondaryTextContainer: { flexDirection: "row", alignItems: "center", gap: 2, flex: 1, overflow: "hidden" }, separator: { marginHorizontal: 2 }, icon: { width: 16, height: 16 }, secondaryText: { flex: 1 } };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
+let react = react_mod;
+const View = react_native.View;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { container: obj2, headerContent: { flex: 1, flexDirection: "row", alignItems: "center" }, primaryText: { flexShrink: 1, marginRight: 2 }, secondaryTextContainer: { flexDirection: "row", alignItems: "center", gap: 2, flex: 1, overflow: "hidden" }, separator: { marginHorizontal: 2 }, icon: { width: 16, height: 16 }, secondaryText: { flex: 1 } };
+obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+let closure_9 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/MessageNotificationHeader.tsx");
 
 export default function MessageNotificationHeader(locationTextColor) {
+  let author;
+  let channel;
+  let colorString;
+  let guild;
+  let items1;
+  let items2;
+  let obj4;
+  let parentChannel;
+  let roleStyle;
+  let tmp19;
+  let tmp6;
   ({ channel, parentChannel, guild, author } = locationTextColor);
+  locationTextColor = locationTextColor.locationTextColor;
   const tmp = closure_9();
   const items = [AccessibilityStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => roleStyle.roleStyle);
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => roleStyle.roleStyle);
   if (author != null) {
-    const colorString = author.colorString;
+    colorString = author.colorString;
   }
   let tmp5;
   if ("username" === stateFromStores) {
     tmp5 = colorString;
   }
   if (null != tmp5) {
-    const obj2 = { color: tmp5 };
-    const tmp6 = obj2;
+    tmp6 = { color: tmp5 };
   }
-  const channelName = useChannelName.computeChannelName(channel, UserStore, RelationshipStore);
+  const tmp2Result = useChannelName;
+  const channelName = tmp2Result.computeChannelName(channel, UserStore, RelationshipStore);
   const type = channel.type;
   let tmp10 = channelName;
+  const tmp7 = UserStore;
+  const tmp8 = RelationshipStore;
   if (ChannelTypes.ChannelTypes.GROUP_DM !== type) {
-    if (tmp2(1095).ChannelTypes.GUILD_FORUM !== type) {
-      if (tmp2(1095).ChannelTypes.GUILD_MEDIA !== type) {
-        if (tmp2(1095).ChannelTypes.GUILD_TEXT !== type) {
-          if (tmp2(1095).ChannelTypes.GUILD_ANNOUNCEMENT !== type) {
-            if (tmp2(1095).ChannelTypes.GUILD_APP !== type) {
-              if (tmp2(1095).ChannelTypes.GUILD_VOICE !== type) {
-                if (tmp2(1095).ChannelTypes.GUILD_STAGE_VOICE !== type) {
-                  if (tmp2(1095).ChannelTypes.ANNOUNCEMENT_THREAD !== type) {
-                    if (tmp2(1095).ChannelTypes.PUBLIC_THREAD !== type) {
-                      if (tmp2(1095).ChannelTypes.PRIVATE_THREAD !== type) {
-                        if (tmp2(1095).ChannelTypes.MEDIA_THREAD !== type) {
+    if (ChannelTypes.ChannelTypes.GUILD_FORUM !== type) {
+      if (ChannelTypes.ChannelTypes.GUILD_MEDIA !== type) {
+        if (ChannelTypes.ChannelTypes.GUILD_TEXT !== type) {
+          if (ChannelTypes.ChannelTypes.GUILD_ANNOUNCEMENT !== type) {
+            if (ChannelTypes.ChannelTypes.GUILD_APP !== type) {
+              if (ChannelTypes.ChannelTypes.GUILD_VOICE !== type) {
+                if (ChannelTypes.ChannelTypes.GUILD_STAGE_VOICE !== type) {
+                  let combined;
+                  if (ChannelTypes.ChannelTypes.ANNOUNCEMENT_THREAD !== type) {
+                    if (ChannelTypes.ChannelTypes.PUBLIC_THREAD !== type) {
+                      if (ChannelTypes.ChannelTypes.PRIVATE_THREAD !== type) {
+                        if (ChannelTypes.ChannelTypes.MEDIA_THREAD !== type) {
                           tmp10 = null;
-                          if (tmp2(1095).ChannelTypes.DM !== type) {
+                          if (ChannelTypes.ChannelTypes.DM !== type) {
                             tmp10 = null;
-                            if (tmp2(1095).ChannelTypes.GUILD_CATEGORY !== type) {
+                            if (ChannelTypes.ChannelTypes.GUILD_CATEGORY !== type) {
                               tmp10 = null;
-                              if (tmp2(1095).ChannelTypes.GUILD_STORE !== type) {
+                              if (ChannelTypes.ChannelTypes.GUILD_STORE !== type) {
                                 tmp10 = null;
-                                if (tmp2(1095).ChannelTypes.GUILD_DIRECTORY !== type) {
+                                if (ChannelTypes.ChannelTypes.GUILD_DIRECTORY !== type) {
                                   tmp10 = null;
-                                  if (tmp2(1095).ChannelTypes.GUILD_SPACE !== type) {
+                                  if (ChannelTypes.ChannelTypes.GUILD_SPACE !== type) {
                                     const UNKNOWN = tmp2(1095).ChannelTypes.UNKNOWN;
                                     tmp10 = null;
                                   }
@@ -122,12 +155,12 @@ export default function MessageNotificationHeader(locationTextColor) {
                   }
                   let channelName1 = null;
                   if (null != parentChannel) {
-                    channelName1 = tmp2(4989).computeChannelName(parentChannel, UserStore, RelationshipStore);
-                    const tmp2Result2 = tmp2(4989);
+                    const tmp2Result2 = useChannelName;
+                    channelName1 = tmp2Result2.computeChannelName(parentChannel, tmp7, tmp8);
                   }
                   if (null != channelName1) {
                     const _HermesInternal2 = HermesInternal;
-                    let combined = "" + channelName + ", " + channelName1;
+                    combined = "" + channelName + ", " + channelName1;
                   } else {
                     combined = channelName;
                     if (null != guild) {
@@ -150,47 +183,46 @@ export default function MessageNotificationHeader(locationTextColor) {
     }
     tmp10 = combined1;
   }
-  const obj3 = { style: tmp.container, children: null };
-  const obj4 = { style: tmp.headerContent, children: null };
+  const obj3 = { style: tmp.container, children: tmp19(View, obj4) };
   let tmp17Result = null != author;
+  obj4 = { style: tmp.headerContent, children: items2 };
+  tmp19 = metroImportAll;
   if (tmp17Result) {
-    const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: null };
-    const items1 = [tmp.primaryText, tmp6];
-    obj5.style = items1;
-    obj5.children = author.nick;
+    const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items1, children: author.nick };
+    items1 = [tmp.primaryText, tmp6];
     tmp17Result = tmp17(tmp2(4832).Text, obj5);
   }
-  const items2 = [tmp17Result, ];
+  items2 = [tmp17Result, ];
   let tmp17Result2 = null != tmp10;
   if (tmp17Result2) {
-    const obj6 = { location: tmp10, channel, parentChannel, author, color: locationTextColor.locationTextColor };
+    const obj6 = { location: tmp10, channel, parentChannel, author, color: locationTextColor };
     tmp17Result2 = tmp17(LocationText, obj6);
   }
   items2[1] = tmp17Result2;
-  obj4.children = items2;
-  obj3.children = React6(View, obj4);
-  return React5(View, obj3);
+  return metroImportDefault(View, obj3);
 };
 export const SimpleNotificationHeader = function SimpleNotificationHeader(secondaryText) {
+  let items;
+  let items1;
+  let items2;
+  let labelStyle;
+  let text;
   secondaryText = secondaryText.secondaryText;
   ({ text, labelStyle } = secondaryText);
   const tmp = closure_9();
-  const obj = { style: tmp.container, children: null };
-  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: text };
-  const items = [tmp.primaryText, labelStyle];
-  obj2.style = items;
-  const items1 = [React5(Text_Text.Text, obj2), ];
+  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items, children: text };
+  items = [tmp.primaryText, labelStyle];
+  const obj = { style: tmp.container, children: items1 };
+  items1 = [metroImportDefault(Text_Text.Text, obj2), ];
   let tmp2Result = null != secondaryText;
   if (tmp2Result) {
-    const obj3 = { style: tmp.secondaryTextContainer, children: null };
+    const obj3 = { style: tmp.secondaryTextContainer, children: items2 };
     const obj4 = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
-    const items2 = [tmp4(tmp5(4832).Text, obj4), ];
+    items2 = [metroImportDefault(Text_Text.Text, obj4), ];
     const obj5 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.secondaryText, children: secondaryText };
-    items2[1] = tmp4(tmp5(4832).Text, obj5);
-    obj3.children = items2;
+    items2[1] = metroImportDefault(Text_Text.Text, obj5);
     tmp2Result = tmp2(tmp3, obj3);
   }
   items1[1] = tmp2Result;
-  obj.children = items1;
-  return React6(View, obj);
+  return metroImportAll(View, obj);
 };

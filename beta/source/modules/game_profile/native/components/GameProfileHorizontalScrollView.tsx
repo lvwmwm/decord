@@ -4,22 +4,21 @@
 // Dependencies: [19, 17, 21, 6073, 2]
 
 // Module 8180 (GameProfileHorizontalScrollView)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ScrollView = fn(17).ScrollView;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const ScrollView = react_native.ScrollView;
+const jsx = Fragment.jsx;
+const forwardRefResult = react.forwardRef((arg0, ref) => {
+  const obj = LegacyBaseButton;
+  const nativeGesture = obj.useNativeGesture({ disallowInterruption: true });
+  const GestureDetector = LegacyBaseButton.GestureDetector;
+  const merged = Object.assign(arg0);
+  return <GestureDetector gesture={nativeGesture}>{null}</GestureDetector>;
+});
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileHorizontalScrollView.tsx");
 
-export default noop.forwardRef((arg0, ref) => {
-  const nativeGesture = LegacyBaseButton.useNativeGesture({ disallowInterruption: true });
-  const obj2 = { gesture: nativeGesture, children: null };
-  const obj3 = { ref };
-  const merged = Object.assign(arg0);
-  obj3.horizontal = true;
-  obj3.nestedScrollEnabled = true;
-  obj2.children = <ScrollView ref={arg1} />;
-  return jsx(LegacyBaseButton.GestureDetector, { gesture: nativeGesture, children: null });
-});
+export default forwardRefResult;

@@ -4,31 +4,33 @@
 // Dependencies: [2045, 2052, 6539, 6722, 2]
 
 // Module 17133 (ForumManager)
+import ChannelConstants from "ChannelConstants" /* 2052 */;
 import ForumPostDataLoader from "ForumPostDataLoader" /* 6722 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const isStaticChannelRoute = fn(2052).isStaticChannelRoute;
-class ForumManager extends tmp2 {
+const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
+class ForumManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.actions = { CHANNEL_PRELOAD: applyArgumentsResult.handleChannelPreload };
     return applyArgumentsResult;
   }
-}
-ForumManager.prototype["handleChannelPreload"] = function handleChannelPreload(channelId) {
-  channelId = channelId.channelId;
-  if (!isStaticChannelRoute(channelId)) {
-    const channel = ChannelStore.getChannel(channelId);
-    if (tmp3) {
-      ForumPostDataLoader.preloadForumThreads(channel);
+  handleChannelPreload(channelId) {
+    channelId = channelId.channelId;
+    if (!isStaticChannelRoute(channelId)) {
+      const channel = ChannelStore.getChannel(channelId);
+      const tmp3 = null != channel && channel.isForumLikeChannel();
+      if (tmp3) {
+        const obj2 = ForumPostDataLoader;
+        obj2.preloadForumThreads(channel);
+      }
     }
-    tmp3 = null != channel && channel.isForumLikeChannel();
   }
-};
+}
+const prototype = ForumManager.prototype;
 const forumManager = new ForumManager();
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/ForumManager.tsx");
 
 export default forumManager;

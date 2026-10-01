@@ -5,8 +5,10 @@
 // Exports: armNavigationTTIDebugFreeze, disarmNavigationTTIDebugFreeze, emitNavigationTTIDebugCheckpoint, getNavigationTTIDebugFreezeTarget, subscribeNavigationTTIDebugFreezeTarget
 
 // Module 16180 (NavigationTTIDebugFreeze)
-import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4699 */;
+import react_native from "react-native" /* 4699 */;
 import size from "module_2" /* 2 */;
+
+let _null;
 
 function notify() {
   for (const item10005 of set) {
@@ -29,7 +31,7 @@ export const getNavigationTTIDebugFreezeTarget = function getNavigationTTIDebugF
   return target;
 };
 export const subscribeNavigationTTIDebugFreezeTarget = function subscribeNavigationTTIDebugFreezeTarget(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   set.add(arg0);
   return () => set.delete(closure_0);
 };
@@ -46,7 +48,7 @@ export const armNavigationTTIDebugFreeze = function armNavigationTTIDebugFreeze(
   if (destinationKey === undefined) {
     destinationKey = null;
   }
-  c3 = { target: freeze, armedDuringTraceId, destinationKey };
+  let c3 = { target: freeze, armedDuringTraceId, destinationKey };
   notify();
 };
 export const disarmNavigationTTIDebugFreeze = function disarmNavigationTTIDebugFreeze() {
@@ -56,38 +58,39 @@ export const disarmNavigationTTIDebugFreeze = function disarmNavigationTTIDebugF
   }
 };
 export const emitNavigationTTIDebugCheckpoint = function emitNavigationTTIDebugCheckpoint(traceId, logActiveBundle) {
-  if (null != c3) {
-    let name2 = traceId;
-    if (traceId.traceId !== tmp.armedDuringTraceId) {
-      if (null == tmp.destinationKey) {
-        let name = tmp.target;
-        if (name.kind !== name2.kind) {
-          if (tmp2) {
-            const _default = NativeTTIManagerModule.default;
-            c3 = null;
-            notify();
-            if (runningTTIAutomationResult) {
-              let tmp11;
-              if (logActiveBundle != null) {
-                tmp11 = logActiveBundle();
-              }
-              if (null != tmp11) {
-                _default.logToDevice(tmp11);
-              }
-              const result = _default.freezeNavigationTTIDebuggerAfterNextFrame();
-              return true;
-            } else {
-              return false;
+  if (null != _null) {
+    if (traceId.traceId !== _null.armedDuringTraceId) {
+      if (null == _null.destinationKey) {
+        const target = tmp.target;
+        let tmp2 = target.kind === traceId.kind;
+        if (tmp2) {
+          if ("milestone" === target.kind) {
+            let tmp3;
+            if ("milestone" === traceId.kind) {
+              tmp3 = target.name === traceId.name;
             }
-            runningTTIAutomationResult = _default.runningTTIAutomation();
+            tmp2 = tmp3;
           }
-        } else {
-          if ("milestone" !== name.kind) {
-            let tmp3 = "component" === name.kind && "component" === name2.kind && name.spanComponent === name2.spanComponent;
+          tmp3 = "component" === target.kind && "component" === traceId.kind && target.spanComponent === traceId.spanComponent;
+        }
+        if (tmp2) {
+          const _default = react_native.default;
+          _null = null;
+          const runningTTIAutomationResult = _default.runningTTIAutomation();
+          notify();
+          if (runningTTIAutomationResult) {
+            let tmp10;
+            if (logActiveBundle != null) {
+              tmp10 = logActiveBundle();
+            }
+            if (null != tmp10) {
+              _default.logToDevice(tmp10);
+            }
+            const result = _default.freezeNavigationTTIDebuggerAfterNextFrame();
+            return true;
+          } else {
+            return false;
           }
-          name = name.name;
-          name2 = name2.name;
-          tmp3 = name === name2;
         }
       }
     }

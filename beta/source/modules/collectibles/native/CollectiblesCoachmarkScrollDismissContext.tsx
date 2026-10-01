@@ -5,51 +5,55 @@
 // Exports: CollectiblesCoachmarkScrollDismissProvider, useCollectiblesCoachmarkScrollDismissContext
 
 // Module 15432 (CollectiblesCoachmarkScrollDismissContext)
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1085 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const NOOP = fn(1085).NOOP;
-const jsx = fn(21).jsx;
-const redux = noop.createContext({
+const NOOP = Constants.NOOP;
+const jsx = Fragment.jsx;
+const obj = {
   registerDismiss() {
     return NOOP;
   },
   handleDismissCoachmarkOnScroll: "a"
-});
-const size = fn(2);
+};
+const redux = react.createContext(obj);
 const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx");
 
 export const useCollectiblesCoachmarkScrollDismissContext = function useCollectiblesCoachmarkScrollDismissContext() {
-  return noop.useContext(closure_3);
+  return react.useContext(redux);
 };
 export const CollectiblesCoachmarkScrollDismissProvider = function CollectiblesCoachmarkScrollDismissProvider(children) {
-  noop.useRef(null);
-  noop.useRef(null);
-  const registerDismiss = noop.useCallback((current) => {
+  children = children.children;
+  let closure_0 = react.useRef(null);
+  let closure_1 = react.useRef(null);
+  const callback = react.useCallback((current) => {
     current.current = current;
     closure_1.current = null;
     return () => {
-      if (ref.current === ref) {
+      if (current.current === current) {
         tmp.current = null;
-        closure_1.current = null;
+        ref2.current = null;
       }
     };
   }, []);
-  const callback1 = noop.useCallback((nativeEvent) => {
+  const callback1 = react.useCallback((nativeEvent) => {
     const current = ref.current;
     if (null != current) {
       const contentOffset = nativeEvent.nativeEvent.contentOffset;
       if (null != ref2.current) {
         const _Math = Math;
-        if (Math.abs(contentOffset.x - tmp3.current) >= 16) {
+        if (Math.abs(contentOffset.x - ref2.current) >= 16) {
           tmp.current = null;
-          tmp3.current = null;
+          ref2.current = null;
           current();
         }
       } else {
-        tmp3.current = contentOffset.x;
+        ref2.current = contentOffset.x;
       }
     }
   }, []);
-  const items = [registerDismiss, callback1];
-  return <redux.Provider value={noop.useMemo(() => ({ registerDismiss, handleDismissCoachmarkOnScroll: callback1 }), items)}>{arg0.children}</redux.Provider>;
+  const items = [callback, callback1];
+  return <redux.Provider value={react.useMemo(() => ({ registerDismiss, handleDismissCoachmarkOnScroll: callback1 }), items)}>{children}</redux.Provider>;
 };

@@ -6,20 +6,22 @@
 
 // Module 13341 (OngoingCallTimer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
+import Fragment from "Fragment" /* 21 */;
 import TimerDefault from "Timer" /* 13342 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import CallStore from "CallStore" /* 5590 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/voice_calls/native/components/OngoingCallTimer.tsx");
 
-export default function OnGoingCallTimer(style) {
-  const channelId = style.channelId;
+export default function OnGoingCallTimer(channelId) {
+  channelId = channelId.channelId;
+  const style = channelId.style;
   const items = [CallStore];
   const items1 = [channelId];
-  const stateFromStores = channelId(504).useStateFromStores(items, () => {
+  const obj = channelId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const call = CallStore.getCall(channelId);
     let messageId;
     if (call != null) {
@@ -29,7 +31,8 @@ export default function OnGoingCallTimer(style) {
   }, items1);
   let timestamp = 0;
   if (null != stateFromStores) {
-    timestamp = SnowflakeUtilsDefault.extractTimestamp(stateFromStores);
+    const obj2 = SnowflakeUtilsDefault;
+    timestamp = obj2.extractTimestamp(stateFromStores);
   }
-  return jsx(TimerDefault, { style: style.style, timestamp });
+  return jsx(TimerDefault, { style, timestamp });
 };

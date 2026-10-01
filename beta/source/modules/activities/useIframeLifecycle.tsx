@@ -5,12 +5,12 @@
 // Exports: default
 
 // Module 8924 (useIframeLifecycle)
+import Constants from "Constants" /* 1074 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ComponentActions = fn(1074).ComponentActions;
-const size = fn(2);
+const ComponentActions = Constants.ComponentActions;
 const result = size.fileFinishedImporting("modules/activities/useIframeLifecycle.tsx");
 
 export default function useIframeLifecycle(id) {
@@ -28,14 +28,14 @@ export default function useIframeLifecycle(id) {
   if (flag2 === undefined) {
     flag2 = true;
   }
-  onIframeUnmount.useRef(onIframeMount);
-  closure_6 = onIframeUnmount.useRef(onIframeUnmount);
-  onIframeUnmount.useRef(flag);
-  closure_8 = onIframeUnmount.useRef(flag2);
+  const ref = onIframeUnmount.useRef(onIframeMount);
+  let closure_6 = onIframeUnmount.useRef(onIframeUnmount);
+  const ref2 = onIframeUnmount.useRef(flag);
+  let closure_8 = onIframeUnmount.useRef(flag2);
   const effect = onIframeUnmount.useEffect(() => {
-    closure_5.current = onIframeMount;
+    ref.current = onIframeMount;
     closure_6.current = onIframeUnmount;
-    closure_7.current = flag;
+    ref2.current = flag;
     closure_8.current = flag2;
   });
   const items = [id];
@@ -43,12 +43,12 @@ export default function useIframeLifecycle(id) {
     if (ref2.current) {
       let ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
       let obj = { id };
+      let tmp4 = id;
       ComponentDispatch.dispatch(ComponentActions.IFRAME_MOUNT, obj);
       let current = ref.current;
       if (current != null) {
         current(tmp4);
       }
-      tmp4 = id;
     }
     return () => {
       if (ref2.current) {
@@ -56,10 +56,10 @@ export default function useIframeLifecycle(id) {
         const obj = { id };
         ComponentDispatch.dispatch(flag.IFRAME_UNMOUNT, obj);
         const current = ref.current;
+        const tmp4 = id;
         if (current != null) {
           current(tmp4);
         }
-        tmp4 = id;
       }
     };
   }, items);

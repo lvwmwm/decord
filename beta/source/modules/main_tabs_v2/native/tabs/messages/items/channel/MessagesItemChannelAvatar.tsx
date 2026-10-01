@@ -4,37 +4,48 @@
 // Dependencies: [19, 4825, 502, 4876, 11447, 1372, 9577, 21, 4836, 576, 1177, 504, 10371, 2]
 
 // Module 15667 (MessagesItemChannelAvatar)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 9577 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10371 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
 import TypingStore from "TypingStore" /* 11447 */;
 import UserStore from "UserStore" /* 1372 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const MUTED_OPACITY_CONTENT = fn(9577).MUTED_OPACITY_CONTENT;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let dependencyMap;
+
+const MUTED_OPACITY_CONTENT = RedesignChannelListConstants.MUTED_OPACITY_CONTENT;
+const jsx = Fragment.jsx;
 let closure_10 = createStyles.createStyles((arg0) => {
-  const avatar = { borderRadius: nativeDefault.radii.round, marginRight: nativeDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_MARGIN_END, width: nativeDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, height: nativeDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, opacity: null };
-  let num = 1;
-  if (arg0) {
+  let num;
+  const avatar = { borderRadius: nativeDefault.radii.round, marginRight: nativeDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_MARGIN_END, width: nativeDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, height: nativeDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, opacity: num };
+  num = 1;
+  const tmp = arg0;
+  if (tmp) {
     num = MUTED_OPACITY_CONTENT;
   }
-  avatar.opacity = num;
   return { avatar };
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelAvatar.tsx");
-
-export default noop.memo(function MessagesItemChannelAvatar(channel) {
+const memoResult = react.memo(function MessagesItemChannelAvatar(channel) {
+  let blocked;
+  let channelSelected;
+  let closure_2;
+  let isStreaming;
+  let muted;
+  let status;
+  let tmp11Result;
+  let tmp12;
   channel = channel.channel;
   ({ hasUnreadMessages: importDefault, muted, status } = channel);
   dependencyMap = undefined;
   let stateFromStores;
   ({ channelSelected, isStreaming, blocked } = channel);
+  let tmp = closure_10;
   if (!muted) {
     muted = channel.ignored;
   }
@@ -44,11 +55,13 @@ export default noop.memo(function MessagesItemChannelAvatar(channel) {
   if (muted) {
     muted = !channelSelected;
   }
-  const tmpResult = closure_10(muted);
+  const tmpResult = tmp(muted);
+  let tmp3 = channel;
   const REFRESH_MEDIUM_32 = channel(1177).AvatarSizes.REFRESH_MEDIUM_32;
   dependencyMap = AuthenticationStore.getId();
+  let obj = channel(504);
   const items = [TypingStore];
-  stateFromStores = channel(504).useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     const typingUsers = TypingStore.getTypingUsers(channel.id);
     for (const key10007 in typingUsers) {
       if (key10007 === closure_2) {
@@ -60,67 +73,63 @@ export default noop.memo(function MessagesItemChannelAvatar(channel) {
     }
     return false;
   });
-  const obj = channel(504);
-  let tmp3 = channel;
   const items1 = [stateFromStores];
-  const stateFromStores1 = channel(504).useStateFromStores(items1, () => {
-    const useReducedMotion = AccessibilityStore.useReducedMotion;
-    let tmp = !useReducedMotion;
-    if (!useReducedMotion) {
-      let tmp2 = stateFromStores;
-      if (!stateFromStores) {
-        tmp2 = importDefault;
-      }
-      tmp = tmp2;
+  const obj2 = channel(504);
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    let tmp = !AccessibilityStore.useReducedMotion;
+    if (tmp) {
+      tmp = stateFromStores || importDefault;
     }
     return tmp;
   });
-  const obj2 = channel(504);
   const items2 = [UserStore];
-  const stateFromStores2 = channel(504).useStateFromStores(items2, () => {
-    let recipientId;
-    if (true === channel.isDM()) {
-      recipientId = channel.getRecipientId();
-    }
-    return UserStore.getUser(recipientId);
-  });
   const obj3 = channel(504);
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => {
+    const getUser = UserStore.getUser;
+    let recipientId;
+    const obj = channel;
+    if (true === channel.isDM()) {
+      recipientId = obj.getRecipientId();
+    }
+    return getUser(recipientId);
+  });
   const items3 = [PresenceStore];
-  const stateFromStores3 = channel(504).useStateFromStores(items3, () => {
+  const obj5 = channel(504);
+  const stateFromStores3 = obj5.useStateFromStores(items3, () => {
     let isMobileOnlineResult = channel.isDM();
+    const obj = channel;
     if (isMobileOnlineResult) {
-      isMobileOnlineResult = PresenceStore.isMobileOnline(channel.getRecipientId());
+      isMobileOnlineResult = PresenceStore.isMobileOnline(obj.getRecipientId());
     }
     return isMobileOnlineResult;
   });
-  const obj5 = channel(504);
   const items4 = [PresenceStore];
-  const stateFromStores4 = channel(504).useStateFromStores(items4, () => {
+  const obj6 = channel(504);
+  const stateFromStores4 = obj6.useStateFromStores(items4, () => {
     let isVROnlineResult = channel.isDM();
+    const obj = channel;
     if (isVROnlineResult) {
-      isVROnlineResult = PresenceStore.isVROnline(channel.getRecipientId());
+      isVROnlineResult = PresenceStore.isVROnline(obj.getRecipientId());
     }
     return isVROnlineResult;
   });
   if (channel.isGroupDM()) {
-    const obj4 = { status, size: REFRESH_MEDIUM_32, channel, animate: stateFromStores1, style: tmpResult.avatar };
-    let tmp11Result = jsx(GroupDMAvatarDefault, { status, size: REFRESH_MEDIUM_32, channel, animate: stateFromStores1, style: tmpResult.avatar });
+    tmp11Result = jsx(GroupDMAvatarDefault, { status, size: REFRESH_MEDIUM_32, channel, animate: stateFromStores1, style: tmpResult.avatar });
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: null, streaming: "99914b932bd37a50b983c5e7c90ae93b", style: "CopyExperiments.compiled.messages", size: "jsona", animate: "active", typing: "md", autoStatusCutout: null };
-      let tmp12 = null;
+      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: tmp12, streaming: isStreaming, style: tmpResult.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: false };
+      const Avatar = tmp3(1177).Avatar;
+      tmp12 = null;
+      const tmp11 = jsx;
       if (!stateFromStores2.isSystemUser()) {
         tmp12 = status;
       }
-      obj7.status = tmp12;
-      obj7.streaming = isStreaming;
-      obj7.style = tmpResult.avatar;
-      obj7.size = REFRESH_MEDIUM_32;
-      obj7.animate = stateFromStores1;
-      obj7.typing = stateFromStores;
-      tmp11Result = jsx(tmp3(1177).Avatar, { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: null, streaming: "99914b932bd37a50b983c5e7c90ae93b", style: "CopyExperiments.compiled.messages", size: "jsona", animate: "active", typing: "md", autoStatusCutout: null });
+      tmp11Result = tmp11(Avatar, obj7);
     }
   }
   return tmp11Result;
 });
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelAvatar.tsx");
+
+export default memoResult;

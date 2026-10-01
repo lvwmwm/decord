@@ -5,7 +5,7 @@
 // Exports: renewalInvoiceChurnDiscountInfo, useActiveDiscountInfo, useFetchChurnUserDiscountOffer, useIsInPremiumOfferExperience, useIsNUXEligible, useShouldFetchChurnOffer
 
 // Module 7502 (PremiumSubscriptionOfferUtil)
-import initialize from "initialize" /* 504 */;
+import get_initialized from "get initialized" /* 504 */;
 import Server from "Server" /* 1979 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6867 */;
@@ -14,66 +14,71 @@ import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7504 */;
 import useDiscountOfferDefault from "useDiscountOffer" /* 7505 */;
 import UserOfferActionCreators from "UserOfferActionCreators" /* 7506 */;
 import ReverseTrialUtils from "ReverseTrialUtils" /* 7509 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
-require = fn;
+let c10;
+let c9;
+let closure_12;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_21;
+let map1;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let unpackModuleId;
+const f84579 = () => SubscriptionStore.getPremiumTypeSubscription();
 function getDiscountInfo(active_discount_id) {
-  if (closure_1_10 !== active_discount_id) {
-    if (closure_1_12 !== active_discount_id) {
-      if (closure_1_19 === active_discount_id) {
-        const obj2 = { duration: 1, percentage: 10, discountId: active_discount_id };
-        return obj2;
-      } else if (closure_1_20 === active_discount_id) {
-        const obj3 = { duration: 1, percentage: 50, discountId: active_discount_id };
-        return obj3;
+  if (authStore !== active_discount_id) {
+    if (closure_12 !== active_discount_id) {
+      if (closure_19 === active_discount_id) {
+        return { duration: 1, percentage: 10, discountId: active_discount_id };
+      } else if (closure_20 === active_discount_id) {
+        return { duration: 1, percentage: 50, discountId: active_discount_id };
       } else {
-        if (closure_1_11 !== active_discount_id) {
-          if (closure_1_14 !== active_discount_id) {
-            if (__initData !== active_discount_id) {
+        if (unpackModuleId !== active_discount_id) {
+          if (authStore2 !== active_discount_id) {
+            if (closure_15 !== active_discount_id) {
               if (map1 === active_discount_id) {
-                const obj4 = { duration: 1, percentage: 40, discountId: active_discount_id };
-                return obj4;
-              } else if (timestampProducer === active_discount_id) {
-                const obj5 = { duration: 1, percentage: 20, discountId: active_discount_id };
-                return obj5;
-              } else if (React5 === active_discount_id) {
-                const obj6 = { duration: 1, percentage: 25, discountId: active_discount_id };
-                return obj6;
-              } else if (React6 === active_discount_id) {
-                const obj7 = { duration: 12, percentage: 20, discountId: active_discount_id };
-                return obj7;
-              } else if (React7 === active_discount_id) {
-                const obj8 = { duration: 12, percentage: 30, discountId: active_discount_id };
-                return obj8;
-              } else if (value2 === active_discount_id) {
-                const obj9 = { duration: 1, percentage: 40, discountId: active_discount_id };
-                return obj9;
-              } else if (collapsedCategories === active_discount_id) {
-                const obj10 = { duration: 3, percentage: 30, discountId: active_discount_id };
-                return obj10;
-              } else if (closure_1_17 === active_discount_id) {
-                const obj = { duration: 1, percentage: 30, discountId: active_discount_id };
-                return obj;
+                return { duration: 1, percentage: 40, discountId: active_discount_id };
+              } else if (metroRequire === active_discount_id) {
+                return { duration: 1, percentage: 20, discountId: active_discount_id };
+              } else if (metroImportDefault === active_discount_id) {
+                return { duration: 1, percentage: 25, discountId: active_discount_id };
+              } else if (metroImportAll === active_discount_id) {
+                return { duration: 12, percentage: 20, discountId: active_discount_id };
+              } else if (React4 === active_discount_id) {
+                return { duration: 12, percentage: 30, discountId: active_discount_id };
+              } else if (authStore3 === active_discount_id) {
+                return { duration: 1, percentage: 40, discountId: active_discount_id };
+              } else if (authStore4 === active_discount_id) {
+                return { duration: 3, percentage: 30, discountId: active_discount_id };
+              } else if (closure_17 === active_discount_id) {
+                return { duration: 1, percentage: 30, discountId: active_discount_id };
               }
             }
           }
         }
-        const obj11 = { duration: 3, percentage: 30, discountId: active_discount_id };
-        return obj11;
+        return { duration: 3, percentage: 30, discountId: active_discount_id };
       }
     }
   }
   return { duration: 1, percentage: 30, discountId: active_discount_id };
 }
-const PremiumConstants = fn(1374);
-({ PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: metroRequire, PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: closure_7, PREMIUM_TIER_2_ANNUAL_V2_20_PERCENT_DISCOUNT_ID: closure_8, PREMIUM_TIER_2_ANNUAL_V2_30_PERCENT_DISCOUNT_ID: closure_9, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: c10, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: closure_11, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: closure_12, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: map1, PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: closure_14, PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: closure_15, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_16, PREMIUM_TIER_2_REFERRAL_INCENTIVE_DISCOUNT_ID: closure_17, PREMIUM_GROUP_30_PERCENT_3_MONTH_DISCOUNT_ID: closure_18, PREMIUM_TIER_2_CHURN_1_MONTH_10_PERCENT_DISCOUNT_ID: closure_19, PREMIUM_TIER_2_CHURN_1_MONTH_50_PERCENT_DISCOUNT_ID: closure_20, CHURN_DISCOUNT_IDS: closure_21 } = PremiumConstants);
+({ PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: metroRequire, PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: metroImportDefault, PREMIUM_TIER_2_ANNUAL_V2_20_PERCENT_DISCOUNT_ID: metroImportAll, PREMIUM_TIER_2_ANNUAL_V2_30_PERCENT_DISCOUNT_ID: c9, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: c10, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: unpackModuleId, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: closure_12, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: map1, PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: closure_14, PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: closure_15, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_16, PREMIUM_TIER_2_REFERRAL_INCENTIVE_DISCOUNT_ID: closure_17, PREMIUM_GROUP_30_PERCENT_3_MONTH_DISCOUNT_ID: closure_18, PREMIUM_TIER_2_CHURN_1_MONTH_10_PERCENT_DISCOUNT_ID: closure_19, PREMIUM_TIER_2_CHURN_1_MONTH_50_PERCENT_DISCOUNT_ID: closure_20, CHURN_DISCOUNT_IDS: closure_21 } = PremiumConstants);
 function useHasDiscountApplied() {
   const items = [SubscriptionStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => SubscriptionStore.getPremiumTypeSubscription());
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, f84579);
   let prop;
   if (stateFromStores != null) {
     const metadata = stateFromStores.metadata;
@@ -84,22 +89,26 @@ function useHasDiscountApplied() {
   let tmp4 = null != prop;
   if (tmp4) {
     const _Date = Date;
-    tmp4 = _modDef4421(Date.now()) <= _modDef4421(prop);
-    const tmp6Result = _modDef4421(Date.now());
+    const tmp6 = _modDef4421;
+    const tmp6Result = tmp6(Date.now());
+    tmp4 = tmp6Result <= _modDef4421(prop);
   }
   return tmp4;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/PremiumSubscriptionOfferUtil.tsx");
 
 export const useIsInPremiumOfferExperience = function useIsInPremiumOfferExperience() {
-  const premiumTrialOffer = usePremiumTrialOffer.usePremiumTrialOffer();
-  const hasActiveTrial = PremiumSubscriptionTrialUtil.useHasActiveTrial();
-  const premiumDiscountOffer = usePremiumDiscountOffer.usePremiumDiscountOffer();
+  const obj = usePremiumTrialOffer;
+  const premiumTrialOffer = obj.usePremiumTrialOffer();
+  const obj2 = PremiumSubscriptionTrialUtil;
+  const hasActiveTrial = obj2.useHasActiveTrial();
+  const obj3 = usePremiumDiscountOffer;
+  const premiumDiscountOffer = obj3.usePremiumDiscountOffer();
   usePremiumDiscountOffer;
   if (typeof useHasDiscountApplied === "function") {
     const items = [SubscriptionStore];
-    const stateFromStores = initialize.useStateFromStores(items, () => SubscriptionStore.getPremiumTypeSubscription());
+    const tmpResult = get_initialized;
+    const stateFromStores = tmpResult.useStateFromStores(items, f84579);
     let prop;
     if (stateFromStores != null) {
       const metadata = stateFromStores.metadata;
@@ -110,8 +119,9 @@ export const useIsInPremiumOfferExperience = function useIsInPremiumOfferExperie
     let tmp12 = null != prop;
     if (tmp12) {
       const _Date = Date;
-      tmp12 = _modDef4421(Date.now()) <= _modDef4421(prop);
-      const tmp14Result = _modDef4421(Date.now());
+      const tmp14 = _modDef4421;
+      const tmp14Result = tmp14(Date.now());
+      tmp12 = tmp14Result <= _modDef4421(prop);
     }
     return null != premiumTrialOffer || hasActiveTrial || null != premiumDiscountOffer || null != tmp7 || tmp12;
   } else {
@@ -121,8 +131,10 @@ export const useIsInPremiumOfferExperience = function useIsInPremiumOfferExperie
 export { useHasDiscountApplied };
 export { getDiscountInfo };
 export const useActiveDiscountInfo = function useActiveDiscountInfo() {
+  let premiumTypeSubscription;
   const items = [SubscriptionStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
   let active_discount_id;
   if (stateFromStores != null) {
     const metadata = stateFromStores.metadata;
@@ -133,16 +145,23 @@ export const useActiveDiscountInfo = function useActiveDiscountInfo() {
   return getDiscountInfo(active_discount_id);
 };
 export const useFetchChurnUserDiscountOffer = function useFetchChurnUserDiscountOffer(arg0) {
-  let tmp2 = useDiscountOfferDefault(closure_1_10);
-  const tmp3 = useDiscountOfferDefault(closure_1_19);
-  const tmp4 = useDiscountOfferDefault(closure_1_20);
-  const tmp5 = useDiscountOfferDefault(closure_1_11);
-  [tmp7, require] = noop.useState(false);
-  const tmp6 = _slicedToArray(noop.useState(false), 2);
-  [tmp9, tmp10] = noop.useState(false);
-  importDefault = tmp10;
-  const tmp8 = _slicedToArray(noop.useState(false), 2);
-  [tmp12, dependencyMap] = noop.useState(null);
+  let closure_129_0;
+  let closure_129_2;
+  let tmp10;
+  let tmp12;
+  let tmp7;
+  let tmp9;
+  let tmp2 = useDiscountOfferDefault(authStore);
+  const tmp3 = useDiscountOfferDefault(closure_19);
+  const tmp4 = useDiscountOfferDefault(closure_20);
+  const tmp5 = useDiscountOfferDefault(unpackModuleId);
+  [tmp7, closure_129_0] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  [tmp9, tmp10] = react.useState(false);
+  let closure_1 = tmp10;
+  _slicedToArray(react.useState(false), 2);
+  [tmp12, closure_129_2] = react.useState(null);
+  _slicedToArray(react.useState(null), 2);
   if (tmp2 == null) {
     tmp2 = tmp3;
   }
@@ -156,44 +175,40 @@ export const useFetchChurnUserDiscountOffer = function useFetchChurnUserDiscount
     tmp2 = null;
   }
   if (null != tmp2) {
-    const obj2 = { churnUserDiscountOffer: tmp2, isFetchingChurnDiscountOffer: false };
-    return obj2;
-  } else if (arg0) {
-    const obj3 = { churnUserDiscountOffer: tmp12, isFetchingChurnDiscountOffer: tmp9 };
-    return obj3;
+    return { churnUserDiscountOffer: tmp2, isFetchingChurnDiscountOffer: false };
   } else {
-    let tmp13 = tmp9;
-    if (!tmp9) {
-      tmp13 = tmp7;
+    const tmp17 = arg0;
+    if (tmp17) {
+      return { churnUserDiscountOffer: tmp12, isFetchingChurnDiscountOffer: tmp9 };
+    } else {
+      const tmp13 = tmp9 || tmp7;
+      if (!tmp13) {
+        tmp10(true);
+        const obj = UserOfferActionCreators;
+        const churnDiscountOffer = obj.fetchChurnDiscountOffer();
+        const nextPromise = churnDiscountOffer.then((result) => {
+          closure_1_2(result);
+          closure_1_0(true);
+          tmp10(false);
+        });
+        nextPromise.catch(() => {
+          closure_1_0(true);
+          tmp10(false);
+        });
+      }
+      return { churnUserDiscountOffer: tmp12, isFetchingChurnDiscountOffer: tmp9 };
     }
-    if (!tmp13) {
-      tmp10(true);
-      const churnDiscountOffer = UserOfferActionCreators.fetchChurnDiscountOffer();
-      churnDiscountOffer.then((result) => {
-        dependencyMap(result);
-        require(true);
-        tmp10(false);
-      }).catch(() => {
-        require(true);
-        tmp10(false);
-      });
-      const nextPromise = churnDiscountOffer.then((result) => {
-        dependencyMap(result);
-        require(true);
-        tmp10(false);
-      });
-    }
-    const obj4 = { churnUserDiscountOffer: tmp12, isFetchingChurnDiscountOffer: tmp9 };
-    return obj4;
   }
-  const tmp11 = _slicedToArray(noop.useState(null), 2);
 };
 export const useShouldFetchChurnOffer = function useShouldFetchChurnOffer() {
   const items = [SubscriptionStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => SubscriptionStore.getPremiumTypeSubscription());
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => SubscriptionStore.getPremiumTypeSubscription());
+  const tmp3 = SubscriptionStore;
   if (typeof useHasDiscountApplied === "function") {
     const items1 = [tmp3];
-    const stateFromStores1 = initialize.useStateFromStores(items1, () => SubscriptionStore.getPremiumTypeSubscription());
+    const tmpResult = get_initialized;
+    const stateFromStores1 = tmpResult.useStateFromStores(items1, f84579);
     let prop;
     if (stateFromStores1 != null) {
       const metadata = stateFromStores1.metadata;
@@ -204,8 +219,9 @@ export const useShouldFetchChurnOffer = function useShouldFetchChurnOffer() {
     let tmp8 = null != prop;
     if (tmp8) {
       const _Date = Date;
-      tmp8 = _modDef4421(Date.now()) <= _modDef4421(prop);
-      const tmp10Result = _modDef4421(Date.now());
+      const tmp10 = _modDef4421;
+      const tmp10Result = tmp10(Date.now());
+      tmp8 = tmp10Result <= _modDef4421(prop);
     }
     let tmp13 = null !== stateFromStores && stateFromStores.hasPremiumNitroMonthly && !tmp8;
     if (tmp13) {
@@ -219,7 +235,6 @@ export const useShouldFetchChurnOffer = function useShouldFetchChurnOffer() {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-  tmp3 = SubscriptionStore;
 };
 export const renewalInvoiceChurnDiscountInfo = function renewalInvoiceChurnDiscountInfo(arg0) {
   const iter = arg0.invoiceItems[Symbol.iterator]();
@@ -232,7 +247,7 @@ export const renewalInvoiceChurnDiscountInfo = function renewalInvoiceChurnDisco
       discount_id = found.discount_id;
     }
     if (null != discount_id) {
-      if (__initData.includes(tmp2.discount_id)) {
+      if (closure_21.includes(tmp2.discount_id)) {
         let tmp8 = getDiscountInfo(tmp2.discount_id);
         let duration;
         if (tmp8 != null) {
@@ -249,5 +264,6 @@ export const renewalInvoiceChurnDiscountInfo = function renewalInvoiceChurnDisco
   return null;
 };
 export const useIsNUXEligible = function useIsNUXEligible() {
-  return ReverseTrialUtils.useIsInReverseTrial();
+  const obj = ReverseTrialUtils;
+  return obj.useIsInReverseTrial();
 };

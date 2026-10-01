@@ -5,25 +5,35 @@
 // Exports: AIGlyphText
 
 // Module 13937 (AIGlyphText)
-import useToken from "useToken" /* 4531 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import useToken2 from "useToken" /* 4531 */;
 import AIGlyphFont from "AIGlyphFont" /* 13938 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import createStyles from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const Text = fn(17).Text;
-const jsx = fn(21).jsx;
+const Text = react_native.Text;
+const jsx = Fragment.jsx;
 let closure_4 = ReanimatedRexport.createAnimatedComponent(Text);
-const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles((fontSize, color) => {
   const obj = { glyph: { color, fontFamily: AIGlyphFont.AI_GLYPH_FONT_FAMILY_NATIVE, fontSize, lineHeight: fontSize, textAlign: "center", includeFontPadding: false } };
+  ({ color, fontFamily: AIGlyphFont.AI_GLYPH_FONT_FAMILY_NATIVE, fontSize, lineHeight: fontSize, textAlign: "center", includeFontPadding: false });
   return obj;
 });
-const size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("design/visual-identities/ai/AIGlyphText.native.tsx");
 
 export const AIGlyphText = function AIGlyphText(color) {
+  let allowFontScaling;
+  let animated;
+  let children;
+  let ellipsizeMode;
+  let numberOfLines;
+  let style;
   let str = color.color;
+  size = color.size;
   if (str === undefined) {
     str = "text-default";
   }
@@ -32,16 +42,12 @@ export const AIGlyphText = function AIGlyphText(color) {
     animated = false;
   }
   ({ numberOfLines, ellipsizeMode, style, children } = color);
-  let tmp;
+  let tmp2;
+  const useToken = useToken2.useToken;
+  useToken2;
   if ("none" !== str) {
-    tmp = str;
+    tmp2 = str;
   }
-  const obj2 = { style: null, allowFontScaling: null, numberOfLines: null, ellipsizeMode: null, children: null };
-  const items = [closure_5(color.size, useToken.useToken(tmp)).glyph, style];
-  obj2.style = items;
-  obj2.allowFontScaling = allowFontScaling;
-  obj2.numberOfLines = numberOfLines;
-  obj2.ellipsizeMode = ellipsizeMode;
-  obj2.children = children;
-  return jsx(animated ? closure_4 : Text, { style: null, allowFontScaling: null, numberOfLines: null, ellipsizeMode: null, children: null });
+  const items = [closure_5(size, useToken(tmp2)).glyph, style];
+  return jsx(animated ? closure_4 : Text, { style: items, allowFontScaling, numberOfLines, ellipsizeMode, children });
 };

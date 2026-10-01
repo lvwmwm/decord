@@ -9,12 +9,17 @@ import ReactionUtils from "ReactionUtils" /* 4481 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/conversations/ConversationMessageCacheUtils.tsx");
 
 export const applyHydratedMessages = function applyHydratedMessages(arg0) {
+  let fullyHydrated;
+  let messageReferences;
+  let messages;
+  let meta;
+  let upsertMessage;
+  let upsertReference;
   ({ meta, messages, fullyHydrated, messageReferences } = arg0);
   if (messageReferences === undefined) {
     messageReferences = [];
@@ -43,14 +48,14 @@ export const applyHydratedMessages = function applyHydratedMessages(arg0) {
   return true;
 };
 export const replaceHydratedMessage = function replaceHydratedMessage(peekResult, messageId, addReactionBatchResult) {
-  closure_0 = messageId;
+  let closure_0 = messageId;
   let hydratedMessages1;
   if (peekResult != null) {
     hydratedMessages1 = peekResult.hydratedMessages;
   }
   if (null != hydratedMessages1) {
     const hydratedMessages = peekResult.hydratedMessages;
-    const findIndexResult = hydratedMessages.findIndex((id) => id.id === closure_0);
+    const findIndexResult = hydratedMessages.findIndex((id) => id.id === messageId);
     if (-1 !== findIndexResult) {
       const hydratedMessages2 = peekResult.hydratedMessages;
       const substr = hydratedMessages2.slice();
@@ -60,34 +65,37 @@ export const replaceHydratedMessage = function replaceHydratedMessage(peekResult
   }
 };
 export const removeHydratedMessage = function removeHydratedMessage(peekResult, id) {
-  closure_0 = id;
+  let closure_0 = id;
   let hydratedMessages;
   if (peekResult != null) {
     hydratedMessages = peekResult.hydratedMessages;
   }
   if (null != hydratedMessages) {
     const hydratedMessages1 = peekResult.hydratedMessages;
-    peekResult.hydratedMessages = hydratedMessages1.filter((id) => id.id !== closure_0);
+    peekResult.hydratedMessages = hydratedMessages1.filter((id) => id.id !== id);
   }
 };
 export const applyRelationshipFlags = function applyRelationshipFlags(message) {
+  let result1;
   const isBlockedForMessageResult = RelationshipStore.isBlockedForMessage(message);
   const isIgnoredForMessageResult = RelationshipStore.isIgnoredForMessage(message);
   if (message.blocked !== isBlockedForMessageResult) {
     const result = message.set("blocked", isBlockedForMessageResult);
-    let result1 = result.set("ignored", isIgnoredForMessageResult);
+    result1 = result.set("ignored", isIgnoredForMessageResult);
   } else {
     result1 = null;
   }
   return result1;
 };
 export const applyReaction = function applyReaction(userId, message) {
+  const obj = ReactionUtils;
   if (obj.shouldApplyReaction(userId)) {
+    let addReactionResult;
     const tmp4 = AuthenticationStore.getId() === userId.userId;
     if ("MESSAGE_REACTION_ADD" === userId.type) {
-      ({ colors: obj2.colors, reactionType: obj2.reactionType } = userId);
-      let addReactionResult = message.addReaction(userId.emoji, tmp4, { colors: null, reactionType: null });
       const obj3 = { colors: null, reactionType: null };
+      ({ colors: obj2.colors, reactionType: obj2.reactionType } = userId);
+      addReactionResult = message.addReaction(userId.emoji, tmp4, obj3);
     } else {
       addReactionResult = message.removeReaction(userId.emoji, tmp4, userId.reactionType);
     }
@@ -95,5 +103,4 @@ export const applyReaction = function applyReaction(userId, message) {
   } else {
     return null;
   }
-  obj = ReactionUtils;
 };

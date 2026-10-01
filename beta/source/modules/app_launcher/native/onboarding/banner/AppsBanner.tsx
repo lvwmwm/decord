@@ -5,26 +5,22 @@
 // Exports: default
 
 // Module 11545 (AppsBanner)
-import util from "util" /* 1115 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
 import BannerBaseDefault from "BannerBase" /* 11543 */;
-import OnboardingAppsRocketDefault from "OnboardingAppsRocket" /* 11546 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ rocketIconContainer: { position: "absolute", top: -20 }, rocketIcon: { width: 90, height: 90 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppsBanner.tsx");
 
 export default function AppsBaner() {
   const tmp = closure_5();
-  const obj = { style: tmp.rocketIconContainer, children: jsx(OnboardingAppsRocketDefault, { style: tmp.rocketIcon }) };
-  const obj3 = { image: <View style={tmp.rocketIconContainer}>{jsx(OnboardingAppsRocketDefault, { style: tmp.rocketIcon })}</View>, text: null };
-  const obj2 = { style: tmp.rocketIcon };
-  const tmp2 = <View style={tmp.rocketIconContainer}>{jsx(OnboardingAppsRocketDefault, { style: tmp.rocketIcon })}</View>;
-  const intl = util.intl;
-  obj3.text = intl.string(util.t.sjRwMJ);
-  return jsx(BannerBaseDefault, { image: <View style={tmp.rocketIconContainer}>{jsx(OnboardingAppsRocketDefault, { style: tmp.rocketIcon })}</View>, text: null });
+  BannerBaseDefault;
+  const intl = intl2.intl;
+  return <tmp3 image={<View style={tmp.rocketIconContainer}>{null}</View>} text={intl.string(intl2.t.sjRwMJ)} />;
 };

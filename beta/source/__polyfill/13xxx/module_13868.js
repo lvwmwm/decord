@@ -5,7 +5,7 @@
 // Module 13868
 import Buffer from "Buffer" /* 1252 */;
 import _mod13867 from "module_13867" /* 13867 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
 function replaceByteInByteSequence(arr, arg1, arg2) {
   let index = arr.indexOf(43);
@@ -18,7 +18,8 @@ function replaceByteInByteSequence(arr, arg1, arg2) {
   return arr;
 }
 function percentEncode(arr) {
-  const formatted = arr.toString(16).toUpperCase();
+  const str = arr.toString(16);
+  const formatted = str.toUpperCase();
   let text = formatted;
   if (1 === formatted.length) {
     text = `0${arr}`;
@@ -69,20 +70,19 @@ function serializeUrlencodedByte(_Buffer) {
   while (iter !== undefined) {
     let tmp2 = nextResult;
     let str2 = "+";
-    if (32 === nextResult) {
-      str = `+`;
-      continue;
-    } else {
+    if (32 !== nextResult) {
       if (42 !== tmp2) {
         if (45 !== tmp2) {
           if (46 !== tmp2) {
             if (tmp2 < 48) {
               if (tmp2 < 65) {
+                let fromCodePointResult;
                 if (95 !== tmp2) {
                   if (tmp2 < 97) {
-                    let fromCodePointResult = percentEncode(tmp2);
+                    fromCodePointResult = percentEncode(tmp2);
                   }
                 }
+                str2 = fromCodePointResult;
               }
             }
           }
@@ -91,18 +91,17 @@ function serializeUrlencodedByte(_Buffer) {
       let _String = String;
       fromCodePointResult = String.fromCodePoint(tmp2);
     }
+    str = str + str2;
+    continue;
   }
   return str;
 }
-
-export default {
+let obj = {
   percentEncode,
   percentDecode,
   parseUrlencoded(arg0) {
-    let _Buffer = Buffer.Buffer;
-    return (function parseUrlencoded(_Buffer) {
-      let items = [];
-      const iter = (function strictlySplitByteSequence(arr, arg1) {
+    function parseUrlencoded(_Buffer) {
+      function strictlySplitByteSequence(arr, arg1) {
         const items = [];
         const index = arr.indexOf(38);
         let index1 = index;
@@ -121,18 +120,21 @@ export default {
           items.push(arr.slice(num2));
         }
         return items;
-      })(_Buffer, 38)[Symbol.iterator]();
+      }
+      let items = [];
+      const tmp = strictlySplitByteSequence(_Buffer, 38);
+      const iter = tmp[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         let arr3 = nextResult;
-        if (0 === nextResult.length) {
-          continue;
-        } else {
+        if (0 !== nextResult.length) {
+          let substr;
+          let substr1;
           let index = arr3.indexOf(61);
           let tmp23 = index;
           if (index >= 0) {
-            let substr = arr3.slice(0, tmp23);
-            let substr1 = arr3.slice(tmp23 + 1);
+            substr = arr3.slice(0, tmp23);
+            substr1 = arr3.slice(tmp23 + 1);
           } else {
             substr = nextResult;
             _Buffer = Buffer.Buffer;
@@ -144,23 +146,30 @@ export default {
           let _Buffer3 = Buffer.Buffer;
           let fromResult1 = _Buffer3.from(substr1);
           let tmp17 = replaceByteInByteSequence(fromResult1, 43, 32);
+          let push = items.push;
           let str = percentDecode(fromResult);
           let items1 = [str.toString(), ];
           let str2 = percentDecode(fromResult1);
           items1[1] = str2.toString();
-          let arr = items.push(items1);
+          let arr = push(items1);
         }
+        continue;
       }
       return items;
-    })(_Buffer.from(arg0));
+    }
+    let _Buffer = Buffer.Buffer;
+    return parseUrlencoded(_Buffer.from(arg0));
   },
   serializeUrlencoded(_list) {
+    let arr;
+    let tmp7;
     let str = "utf-8";
     if (undefined !== arg1) {
       str = tmp;
     }
     let str2 = "";
     const entries = _list.entries();
+    const tmp3 = entries[Symbol.iterator]();
     while (tmp3 !== undefined) {
       let tmp6 = _slicedToArray(tmp4, 2);
       [tmp7, arr] = tmp6;
@@ -196,3 +205,5 @@ export default {
     return str2;
   }
 };
+
+export default obj;

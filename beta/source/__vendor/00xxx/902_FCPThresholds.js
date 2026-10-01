@@ -10,11 +10,11 @@ import _mod909 from "module_909" /* 909 */;
 import observe from "observe" /* 911 */;
 
 const require = globalThis.__r;
+let _require, closure_0;
 
+let tmp;
 const bindReporter = tmp(912);
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const items = [1800, 3000];
 
 export const FCPThresholds = items;
@@ -24,11 +24,15 @@ export const onFCP = (arg0) => {
   if (arg1 === undefined) {
     obj = {};
   }
-  require("whenActivated").whenActivated(() => {
+  let obj2 = require("whenActivated");
+  obj2.whenActivated(() => {
+    let tmp2 = dependencyMap;
     obj = _mod905;
-    const firstHiddenTime = obj.getVisibilityWatcher();
-    const metric = _mod909.initMetric("FCP");
-    const observeResult = observe.observe("paint", (arg0) => {
+    const visibilityWatcher = obj.getVisibilityWatcher();
+    const obj2 = _mod909;
+    const metric = obj2.initMetric("FCP");
+    const obj3 = observe;
+    const observeResult = obj3.observe("paint", (arg0) => {
       const iter = arg0[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
@@ -37,8 +41,9 @@ export const onFCP = (arg0) => {
           let disconnectResult = observeResult.disconnect();
           if (tmp2.startTime < firstHiddenTime.firstHiddenTime) {
             let _Math = Math;
-            obj = closure_0(obj[3]);
-            metric.value = Math.max(tmp2.startTime - obj.getActivationStart(), 0);
+            let startTime = tmp2.startTime;
+            obj = closure_2_0(closure_2_1[3]);
+            metric.value = max(startTime - obj.getActivationStart(), 0);
             let entries = metric.entries;
             let arr = entries.push(tmp2);
             let tmp9 = closure_0(true);
@@ -47,9 +52,12 @@ export const onFCP = (arg0) => {
         continue;
       }
     });
-    closure_3 = observeResult;
     if (observeResult) {
       const tmpResult = bindReporter;
+      let tmp5 = closure_0;
+      let tmp6 = items;
+      let tmp8 = tmpResult;
+      let tmp9 = metric;
       closure_0 = tmpResult.bindReporter(closure_0, metric, items, obj.reportAllChanges);
     }
   });

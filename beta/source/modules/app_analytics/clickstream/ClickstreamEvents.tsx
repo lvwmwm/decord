@@ -8,6 +8,8 @@
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
+let timestamp;
+
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/app_analytics/clickstream/ClickstreamEvents.tsx");
 
@@ -24,7 +26,7 @@ export const getClickstreamDrainEvent = function getClickstreamDrainEvent(arg0, 
       guild_ids: arr.map((guild_id) => guild_id.guild_id)
     };
     return obj2;
-  } else if (tmp2.FRIENDS_LIST_VIEWED_CLICKSTREAM === arg0) {
+  } else if (AnalyticEvents.FRIENDS_LIST_VIEWED_CLICKSTREAM === arg0) {
     const obj3 = {
       time_minus: arr.map((timestamp) => {
           timestamp = timestamp.timestamp;
@@ -38,7 +40,7 @@ export const getClickstreamDrainEvent = function getClickstreamDrainEvent(arg0, 
       now_playing_num_cards: arr.map((now_playing_num_cards) => now_playing_num_cards.now_playing_num_cards)
     };
     return obj3;
-  } else if (tmp2.CHANNEL_OPENED_CLICKSTREAM === arg0) {
+  } else if (AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM === arg0) {
     const obj4 = {
       time_minus: arr.map((timestamp) => {
           timestamp = timestamp.timestamp;
@@ -50,7 +52,7 @@ export const getClickstreamDrainEvent = function getClickstreamDrainEvent(arg0, 
       channel_types: arr.map((channel_type) => channel_type.channel_type)
     };
     return obj4;
-  } else if (tmp2.CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM === arg0) {
+  } else if (AnalyticEvents.CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM === arg0) {
     const obj = {
       time_minus: arr.map((timestamp) => {
           timestamp = timestamp.timestamp;
@@ -66,6 +68,8 @@ export const getClickstreamDrainEvent = function getClickstreamDrainEvent(arg0, 
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
     const error = new Error("getClickstreamDrainEvent: Unknown event: " + arg0);
     throw error;
   }

@@ -5,18 +5,22 @@
 // Exports: default
 
 // Module 10903 (ChatViewWrapperBase)
-import LayerScope from "LayerScope" /* 6577 */;
+import Fragment from "Fragment" /* 21 */;
+import LayerScope2 from "LayerScope" /* 6577 */;
 import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10901 */;
-import StickyWrapper from "StickyWrapper" /* 10902 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/chat/native/ChatViewWrapperBase.tsx");
 
 export default function ChatViewWrapperBase(arg0) {
+  let channelId;
+  let children;
+  let stickyHeader;
+  let style;
   ({ channelId, children, stickyHeader, style } = arg0);
-  const tmp = useChatViewPointerEventsDefault(channelId);
-  return jsx(LayerScope.LayerScope, { children: jsx(StickyWrapper.StickyWrapper, { header: stickyHeader, style, pointerEvents: useChatViewPointerEventsDefault(channelId), children }) });
+  useChatViewPointerEventsDefault(channelId);
+  const LayerScope = LayerScope2.LayerScope;
+  return <LayerScope>{null}</LayerScope>;
 };

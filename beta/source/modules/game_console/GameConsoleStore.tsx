@@ -4,56 +4,58 @@
 // Dependencies: [4854, 4855, 504, 573, 2]
 
 // Module 4853 (GameConsoleStore)
-import initializeDefault from "initialize" /* 504 */;
+import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import SessionsStore from "SessionsStore" /* 4854 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import size from "module_2" /* 2 */;
 
 let c2 = null;
 let obj = null;
 const set = new Set();
-const dependencyMap = {};
+const hasOwnProperty = {};
+let obj2 = {};
 const set1 = new Set();
 let closure_8 = Object.freeze({});
-const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
+const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class GameConsoleStore extends DeviceSettingsStore {
+  initialize(lastSelectedDeviceByPlatform) {
+    this.waitFor(SessionsStore, VoiceStateStore);
+  }
+  getUserAgnosticState() {
+    return { lastSelectedDeviceByPlatform: obj2 };
+  }
+  getDevicesForPlatform(arg0) {
+    let tmp = closure_5[arg0];
+    if (tmp == null) {
+      tmp = closure_8;
+    }
+    return tmp;
+  }
+  getLastSelectedDeviceByPlatform(arg0) {
+    return obj2[arg0];
+  }
+  getDevice(arg0, arg1) {
+    let tmp2;
+    if (closure_5[arg0] != null) {
+      tmp2 = tmp[arg1];
+    }
+    return tmp2;
+  }
+  getFetchingDevices(arg0) {
+    return set1.has(arg0);
+  }
+  getPendingDeviceCommands() {
+    return set;
+  }
+  getRemoteSessionId() {
+    return c2;
+  }
+  getAwaitingRemoteSessionInfo() {
+    return obj;
+  }
 }
 const prototype = GameConsoleStore.prototype;
-prototype["initialize"] = function initialize(lastSelectedDeviceByPlatform) {
-  this.waitFor(SessionsStore, VoiceStateStore);
-};
-prototype["getUserAgnosticState"] = function getUserAgnosticState() {
-  return { lastSelectedDeviceByPlatform: obj2 };
-};
-prototype["getDevicesForPlatform"] = function getDevicesForPlatform(arg0) {
-  let tmp = dependencyMap[arg0];
-  if (tmp == null) {
-    tmp = closure_8;
-  }
-  return tmp;
-};
-prototype["getLastSelectedDeviceByPlatform"] = function getLastSelectedDeviceByPlatform(arg0) {
-  return obj2[arg0];
-};
-prototype["getDevice"] = function getDevice(arg0, arg1) {
-  let tmp2;
-  if (dependencyMap[arg0] != null) {
-    tmp2 = tmp[arg1];
-  }
-  return tmp2;
-};
-prototype["getFetchingDevices"] = function getFetchingDevices(arg0) {
-  return set1.has(arg0);
-};
-prototype["getPendingDeviceCommands"] = function getPendingDeviceCommands() {
-  return set;
-};
-prototype["getRemoteSessionId"] = function getRemoteSessionId() {
-  return c2;
-};
-prototype["getAwaitingRemoteSessionInfo"] = function getAwaitingRemoteSessionInfo() {
-  return obj;
-};
 GameConsoleStore.displayName = "GameConsoleStore";
 GameConsoleStore.persistKey = "GameConsoleStore";
 obj = {
@@ -64,6 +66,8 @@ obj = {
     c2 = null;
   },
   WAIT_FOR_REMOTE_SESSION: function handleWaitForRemoteSession(sessionType) {
+    let commandId;
+    let deviceId;
     obj = { type: sessionType.sessionType, nonce: sessionType.nonce, channelId: sessionType.channelId, startedAt: Date.now(), deviceId, commandId };
     ({ deviceId, commandId } = sessionType);
   },
@@ -71,6 +75,8 @@ obj = {
     set1.add(platform.platform);
   },
   GAME_CONSOLE_FETCH_DEVICES_SUCCESS: function handleFetchDevicesSuccess(arg0) {
+    let devices;
+    let platform;
     ({ platform, devices } = arg0);
     set1.delete(platform);
     obj = {};
@@ -92,7 +98,6 @@ obj = {
   }
 };
 const gameConsoleStore = new GameConsoleStore(DispatcherDefault, obj);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_console/GameConsoleStore.tsx");
 
 export default gameConsoleStore;

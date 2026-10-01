@@ -5,23 +5,23 @@
 // Exports: GhostInput
 
 // Module 13988 (GhostInput)
+import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4549 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import Input from "Input" /* 6025 */;
 import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6026 */;
 import useTextField from "useTextField" /* 6032 */;
 import InputFieldContainer from "InputFieldContainer" /* 6039 */;
-import NativeTextInput from "NativeTextInput" /* 6042 */;
-import propsForNativeTextInput from "propsForNativeTextInput" /* 6356 */;
+import _objectWithoutProperties2 from "_objectWithoutProperties" /* 6356 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 let closure_3 = ["labelId", "accessibilityLabel"];
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles(() => {
+  let TEXT_DEFAULT;
   let str = arg0;
   if (arg0 === undefined) {
     str = "lg";
@@ -30,63 +30,58 @@ let closure_6 = createStyles.createStyles(() => {
   if (arg1 === undefined) {
     str2 = "default";
   }
-  const input = {};
-  const merged = Object.assign({ md: Text_Text.TextStyleSheet["text-md/semibold"], lg: Text_Text.TextStyleSheet["text-lg/semibold"] }[str]);
+  const input = { color: TEXT_DEFAULT, minWidth: 48 };
+  const obj = { md: Text_Text.TextStyleSheet["text-md/semibold"], lg: Text_Text.TextStyleSheet["text-lg/semibold"] };
+  const merged = Object.assign(obj[str]);
   if ("error" === str2) {
-    let TEXT_DEFAULT = nativeDefault.colors.TEXT_FEEDBACK_CRITICAL;
+    TEXT_DEFAULT = nativeDefault.colors.TEXT_FEEDBACK_CRITICAL;
   } else {
     TEXT_DEFAULT = nativeDefault.colors.TEXT_DEFAULT;
   }
-  input.color = TEXT_DEFAULT;
-  input.minWidth = 48;
   return { input, centeredContainerStyle: { alignItems: "center" } };
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("design/components/TextInput/native/GhostInput.native.tsx");
 
 export const GhostInput = function GhostInput(size) {
-  const inputStyles = InputFieldContainer.useInputStyles({ size: size.size });
+  let innerRef;
+  let inputProps;
+  const obj = InputFieldContainer;
+  const obj2 = { size: size.size };
+  const inputStyles = obj.useInputStyles(obj2);
   const tmp4 = closure_6(size.size, size.status);
   const autoFocus = size.autoFocus;
   const centered = size.centered;
   let tmp6 = undefined === centered;
+  const required = size.required;
+  const tmp5 = undefined === autoFocus || autoFocus;
   if (!tmp6) {
     tmp6 = centered;
   }
-  const obj2 = { size: size.size };
-  const tmp5 = undefined === autoFocus || autoFocus;
-  const fieldLabelA11yNative = useFieldLabelA11yNative.useFieldLabelA11yNative(size);
-  const accessibilityLabel = fieldLabelA11yNative.accessibilityLabel;
   const tmpResult = useFieldLabelA11yNative;
+  const fieldLabelA11yNative = tmpResult.useFieldLabelA11yNative(size);
+  const accessibilityLabel = fieldLabelA11yNative.accessibilityLabel;
+  const labelId = fieldLabelA11yNative.labelId;
   const tmp8 = _objectWithoutProperties(fieldLabelA11yNative, closure_3);
-  const textField = useTextField.useTextField(size, undefined);
+  const tmpResult4 = useTextField;
+  const textField = tmpResult4.useTextField(size, undefined);
   ({ innerRef, inputProps } = textField);
-  const obj3 = {};
+  const Input = tmp(6025).Input;
   const merged = Object.assign(size);
-  obj3.labelId = fieldLabelA11yNative.labelId;
   const items = [size.containerStyle, ];
   let prop;
   if (tmp6) {
     prop = tmp4.centeredContainerStyle;
   }
   items[1] = prop;
-  obj3.containerStyle = items;
-  const obj4 = {};
-  const tmpResult4 = useTextField;
-  const merged1 = Object.assign(propsForNativeTextInput.propsForNativeTextInput(inputProps));
+  const NativeTextInput = tmp(6042).NativeTextInput;
+  const tmpResult5 = _objectWithoutProperties2;
+  const merged1 = Object.assign(tmpResult5.propsForNativeTextInput(inputProps));
   const merged2 = Object.assign(tmp8);
-  const tmpResult5 = propsForNativeTextInput;
-  let requiredFieldA11yName = getRequiredFieldA11yName.getRequiredFieldA11yName(accessibilityLabel, size.required);
+  const tmpResult6 = getRequiredFieldA11yName;
+  let requiredFieldA11yName = tmpResult6.getRequiredFieldA11yName(accessibilityLabel, required);
   if (requiredFieldA11yName == null) {
     requiredFieldA11yName = accessibilityLabel;
   }
-  obj4.accessibilityLabel = requiredFieldA11yName;
-  obj4.ref = innerRef;
   const items1 = [tmp4.input];
-  obj4.style = items1;
-  obj4.placeholderTextColor = inputStyles.placeholderText.color;
-  obj4.spellCheck = false;
-  obj4.autoFocus = tmp5;
-  obj3.children = jsx(NativeTextInput.NativeTextInput, {});
-  return jsx(Input.Input, {});
+  return <Input labelId={labelId} containerStyle={items}><NativeTextInput accessibilityLabel={requiredFieldA11yName} ref={innerRef} style={items1} placeholderTextColor={inputStyles.placeholderText.color} spellCheck={false} autoFocus={tmp5} /></Input>;
 };

@@ -8,114 +8,160 @@
 import nativeDefault from "native" /* 576 */;
 import useKeyboardDuration from "useKeyboardDuration" /* 5892 */;
 import ViewMeasureUtils from "ViewMeasureUtils" /* 10609 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_5 = async function _calculateScrollOffset(arg0, value) {
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c6 = 2;
-      if (0 === c5) {
+let c3, c4, inputInWindow, styles2;
+
+let obj = function _calculateScrollOffset() {
+  obj = _asyncToGenerator(async (arg0, arg1) => {
+    let extraOffset = arg0;
+    const styles = arg1;
+    let c5 = 0;
+    let c6 = 0;
+    return (async (arg0, value) => {
+      let obj5;
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c6 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c6 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          return { value, done: true };
         } else {
-          c4 = 0;
-          closure_3 = tmp2;
-          closure_131_0 = closure_0;
-          closure_131_1 = closure_1;
-          closure_131_2 = undefined;
-          closure_131_3 = undefined;
-          if (null == closure_0) {
-            c6 = 3;
-            const obj5 = { value: nativeDefault.space.PX_16, done: true };
-            return obj5;
-          } else {
-            const type = iter.type;
-            if ("toRef" === type) {
-              c5 = 1;
-              c6 = 1;
-              const obj6 = { value: ViewMeasureUtils.measureViewRefInWindow(iter.ref), done: false };
-              return obj6;
-            } else if ("toValue" === type) {
-              c6 = 3;
-              const obj7 = { value: iter.value, done: true };
-              return obj7;
-            } else if ("toBottom" === type) {
-              const _Number = Number;
-              c6 = 3;
-              const obj8 = { value: Number.MAX_SAFE_INTEGER, done: true };
-              return obj8;
-            } else {
-              c6 = 3;
-              return { value: "HermesInternal", done: null };
-            }
-          }
+          return { value: "HermesInternal", done: null };
         }
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c6 = 3;
-        const obj = { value, done: true };
-        return obj;
       } else {
-        closure_131_2 = value;
-        const extraOffset = closure_131_0.extraOffset;
-        c2 = extraOffset;
-        if (extraOffset == null) {
-          c2 = 0;
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              c4 = 0;
+              styles2 = undefined;
+              closure_3 = undefined;
+              if (null == extraOffset) {
+                c6 = 3;
+                const obj4 = { value: nativeDefault.space.PX_16, done: true };
+                return obj4;
+              } else {
+                const type = iter.type;
+                if ("toRef" === type) {
+                  c5 = 1;
+                  c6 = 1;
+                  const obj6 = { value: obj5.measureViewRefInWindow(extraOffset.ref), done: false };
+                  obj5 = ViewMeasureUtils;
+                  return obj6;
+                } else if ("toValue" === type) {
+                  c6 = 3;
+                  return { value: extraOffset.value, done: true };
+                } else if ("toBottom" === type) {
+                  const _Number = Number;
+                  c6 = 3;
+                  return { value: Number.MAX_SAFE_INTEGER, done: true };
+                } else {
+                  c6 = 3;
+                  return { value: "HermesInternal", done: null };
+                }
+              }
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            let sum;
+            styles2 = value;
+            extraOffset = extraOffset.extraOffset;
+            let c2 = extraOffset;
+            if (extraOffset == null) {
+              c2 = 0;
+            }
+            closure_3 = c2;
+            if (null == styles2) {
+              sum = closure_132_1(closure_132_2[3]).space.PX_16 + closure_3;
+            } else {
+              sum = styles2.y - (styles.y + styles.height) + styles2.height + closure_3;
+            }
+            c6 = 3;
+            return { value: sum, done: true };
+          }
+        } catch (tmp25) {
+          c6 = 3;
+          throw tmp25;
         }
-        closure_131_3 = c2;
-        if (null == closure_131_2) {
-          const sum = closure_132_1(closure_132_2[3]).space.PX_16 + closure_131_3;
-        } else {
-          const sum1 = closure_131_2.y - (closure_131_1.y + closure_131_1.height) + closure_131_2.height + closure_131_3;
-        }
-        c6 = 3;
       }
-    } catch (tmp27) {
-      c6 = tmp;
-      throw tmp27;
-    }
-  }
+    })();
+  });
+  return obj(...arguments);
 };
-const size = fn(2);
+let _asyncToGenerator = _asyncToGenerator_mod;
 const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaAvoidingInputs.native.tsx");
 
 export default function useSafeAreaAvoidingInputs(insets) {
+  let closure_3;
   insets = insets.insets;
   const inputs = insets.inputs;
   const scrollViewRef = insets.scrollViewRef;
   let onFocus;
-  asyncGeneratorStep = onFocus.useRef(inputs);
+  _asyncToGenerator = onFocus.useRef(inputs);
   const items = [inputs];
   const effect = onFocus.useEffect(() => {
     closure_3.current = inputs;
   }, items);
   const items1 = [insets, scrollViewRef];
-  onFocus = onFocus.useCallback(asyncGeneratorStep(async (arg0, value) => {
+  onFocus = onFocus.useCallback(_asyncToGenerator(async (arg0, value) => {
+    let closure_0;
+    function calculateScrollOffset() {
+      return scrollOffset(...arguments);
+    }
+    function calculateTargetScrollY(scrollView) {
+      const sum = scrollView.scrollView.y + scrollView.scrollView.height;
+      obj = closure_1_0(inputInWindow[2]);
+      const diff = obj.getWindowDimensions({ ignoreKeyboard: true }).height - scrollView.insets.bottom;
+      if (scrollView.inputInWindow.y + scrollView.inputInWindow.height + scrollView.scrollOffset > diff) {
+        const _Math = Math;
+        const diff1 = scrollView.scrollView.height - Math.max(0, sum - diff);
+        const sum1 = scrollView.inputInScrollView.y + scrollView.inputInScrollView.height + scrollView.scrollOffset;
+        if (sum1 > diff1) {
+          return sum1 - diff1;
+        }
+      }
+    }
+    function scrollToTargetY(current, y) {
+      current = current.current;
+      let scrollToResult;
+      if (current != null) {
+        const scrollTo = current.scrollTo;
+        if (scrollTo != null) {
+          const point = { x: 0, y, animated: true };
+          scrollToResult = scrollTo(point);
+        }
+      }
+      if (scrollToResult == null) {
+        const current2 = current.current;
+        if (current2 != null) {
+          const scrollToOffset = current2.scrollToOffset;
+          if (scrollToOffset != null) {
+            obj = { offset: y, animated: true };
+            scrollToOffset(obj);
+          }
+        }
+      }
+    }
     if (c3 === 2) {
       c3 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -126,8 +172,14 @@ export default function useSafeAreaAvoidingInputs(insets) {
       }
     } else {
       try {
+        let inputInScrollView;
+        let scrollView;
+        let scrollOffset;
+        let closure_6;
+        let current2;
+        let found;
         c3 = 2;
-        if (0 === dependencyMap) {
+        if (0 === inputInWindow) {
           if (arg0 === 1) {
             c3 = 3;
             throw value;
@@ -136,18 +188,15 @@ export default function useSafeAreaAvoidingInputs(insets) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_1 = tmp5;
-            closure_128_0 = undefined;
-            closure_128_1 = undefined;
-            closure_128_2 = undefined;
-            closure_128_3 = undefined;
-            closure_128_4 = undefined;
-            closure_128_5 = undefined;
-            closure_128_6 = undefined;
-            let current2 = scrollViewRef.current;
-            closure_128_0 = current2;
-            const current1 = ref.current;
-            const found = current1.find((ref) => {
+            let closure_1 = tmp4;
+            inputInWindow = undefined;
+            inputInScrollView = undefined;
+            scrollView = undefined;
+            scrollOffset = undefined;
+            closure_6 = undefined;
+            current2 = scrollViewRef.current;
+            const current1 = inputInScrollView.current;
+            found = current1.find((ref) => {
               const current = ref.ref.current;
               let isFocusedResult;
               if (current != null) {
@@ -155,17 +204,17 @@ export default function useSafeAreaAvoidingInputs(insets) {
               }
               return isFocusedResult;
             });
-            closure_128_1 = found;
             if (null != found) {
               if (null != current2) {
-                dependencyMap = 1;
+                const obj10 = tmp(inputInWindow[4]);
+                inputInWindow = 1;
                 c3 = 1;
-                const obj4 = { value: tmp2(10609).measureViewRefInWindow(found.ref), done: false };
+                const obj4 = { value: obj10.measureViewRefInWindow(found.ref), done: false };
                 return obj4;
               }
             }
           }
-        } else if (1 === tmp5) {
+        } else if (1 === inputInWindow) {
           if (arg0 === 1) {
             c3 = 3;
             throw value;
@@ -174,123 +223,83 @@ export default function useSafeAreaAvoidingInputs(insets) {
             const obj5 = { value, done: true };
             return obj5;
           } else {
-            closure_128_2 = value;
-            dependencyMap = 2;
+            inputInWindow = value;
+            const obj7 = tmp(inputInWindow[4]);
+            inputInWindow = 2;
             c3 = 1;
-            const obj6 = { value: tmp2(10609).measureViewRefInView(closure_128_1.ref, closure_128_0), done: false };
+            const obj6 = { value: obj7.measureViewRefInView(found.ref, current2), done: false };
             return obj6;
           }
-        } else {
-          if (2 === tmp5) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj8 = { value, done: true };
-              return obj8;
-            } else {
-              closure_128_3 = value;
-              if (null != closure_128_2) {
-                if (null != closure_128_3) {
-                  dependencyMap = 3;
-                  c3 = 1;
-                  const obj9 = { value: tmp2(10609).measureViewInWindow(closure_128_0), done: false };
-                  return obj9;
-                }
-              }
-            }
-          } else if (3 === tmp5) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj11 = { value, done: true };
-              return obj11;
-            } else {
-              closure_128_4 = value;
-              dependencyMap = 4;
-              c3 = 1;
-              const obj12 = {
-                value: (function calculateScrollOffset() {
-                            const self = this;
-                            const apply = closure_1_5.apply;
-                            if (typeof apply === "unknown") {
-                              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-                            } else {
-                              applyArgumentsResult = apply(self, arguments);
-                            }
-                            return applyArgumentsResult;
-                          })(closure_128_1.offset, closure_128_2),
-                done: false
-              };
-              return obj12;
-            }
-          } else if (arg0 === 1) {
+        } else if (2 === inputInWindow) {
+          if (arg0 === 1) {
             c3 = 3;
             throw value;
           } else if (arg0 === 2) {
             c3 = 3;
-            const obj13 = { value, done: true };
-            return obj13;
+            const obj8 = { value, done: true };
+            return obj8;
           } else {
-            closure_128_5 = value;
-            const _Number = Number;
-            if (closure_128_5 === Number.MAX_SAFE_INTEGER) {
-              let current = closure_129_2.current;
-              if (current != null) {
-                current.scrollToEnd({ animated: true });
+            inputInScrollView = value;
+            if (null != inputInWindow) {
+              if (null != inputInScrollView) {
+                const obj14 = tmp(inputInWindow[4]);
+                inputInWindow = 3;
+                c3 = 1;
+                const obj9 = { value: obj14.measureViewInWindow(current2), done: false };
+                return obj9;
               }
             }
           }
-          let obj = { insets: closure_129_0, inputInScrollView: closure_128_3, inputInWindow: closure_128_2, scrollOffset: closure_128_5, scrollView: closure_128_4 };
-          closure_128_6 = (function calculateTargetScrollY(scrollView) {
-            const sum = scrollView.scrollView.y + scrollView.scrollView.height;
-            const diff = closure_1_0(dependencyMap[2]).getWindowDimensions({ ignoreKeyboard: true }).height - scrollView.insets.bottom;
-            if (scrollView.inputInWindow.y + scrollView.inputInWindow.height + scrollView.scrollOffset > diff) {
-              const _Math = Math;
-              const diff1 = scrollView.scrollView.height - Math.max(0, sum - diff);
-              const sum1 = scrollView.inputInScrollView.y + scrollView.inputInScrollView.height + scrollView.scrollOffset;
-              if (sum1 > diff1) {
-                return sum1 - diff1;
-              }
+        } else if (3 === inputInWindow) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj11 = { value, done: true };
+            return obj11;
+          } else {
+            scrollView = value;
+            inputInWindow = 4;
+            c3 = 1;
+            const obj12 = { value: calculateScrollOffset(found.offset, inputInWindow), done: false };
+            return obj12;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj13 = { value, done: true };
+          return obj13;
+        } else {
+          scrollOffset = value;
+          const _Number = Number;
+          if (scrollOffset !== Number.MAX_SAFE_INTEGER) {
+            obj = { insets: closure_129_0, inputInScrollView, inputInWindow, scrollOffset, scrollView };
+            closure_6 = calculateTargetScrollY(obj);
+            if (null != closure_6) {
+              scrollToTargetY(closure_129_2, closure_6);
             }
-          })(obj);
-          if (null != closure_128_6) {
-            (function scrollToTargetY(current, y) {
-              current = current.current;
-              let scrollToResult;
-              if (current != null) {
-                const scrollTo = current.scrollTo;
-                if (scrollTo != null) {
-                  const point = { x: 0, y, animated: true };
-                  scrollToResult = scrollTo(point);
-                }
-              }
-              if (scrollToResult == null) {
-                const current2 = current.current;
-                if (current2 != null) {
-                  const scrollToOffset = current2.scrollToOffset;
-                  if (scrollToOffset != null) {
-                    const obj = { offset: y, animated: true };
-                    scrollToOffset(obj);
-                  }
-                }
-              }
-            })(closure_129_2, closure_128_6);
+          } else {
+            let current = closure_129_2.current;
+            if (current != null) {
+              current.scrollToEnd({ animated: true });
+            }
           }
         }
         c3 = 3;
-      } catch (tmp32) {
-        c3 = tmp;
-        throw tmp32;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp31) {
+        c3 = 3;
+        throw tmp31;
       }
     }
   }), items1);
   const items2 = [onFocus];
   const effect1 = onFocus.useEffect(() => {
-    const timeout = setTimeout(onFocus, useKeyboardDuration.getKeyboardDuration());
+    obj = useKeyboardDuration;
+    const timeout = setTimeout(onFocus, obj.getKeyboardDuration());
     return () => clearTimeout(closure_0);
   }, items2);
   return { onFocus };

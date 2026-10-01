@@ -5,20 +5,39 @@
 // Exports: default
 
 // Module 8067 (FormSwitchRow)
+import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import RedesignCompat from "RedesignCompat" /* 5998 */;
 import FormRowDefault from "FormRow" /* 6558 */;
 import FormLabelDefault from "FormLabel" /* 6560 */;
-import TableSwitchRow from "TableSwitchRow" /* 6621 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const Form_FormSwitchDefault = tmp13(8065);
-require = fn;
+let metroImportDefault;
+let metroRequire;
+let tmp;
+let tmp13;
+const TableSwitchRow2 = tmp(6621);
+const FormSwitchDefault = tmp13(8065);
 function FormSwitchRow(onValueChange) {
+  let accessibilityHint;
+  let closure_3;
+  let first;
+  let fn;
+  let items1;
+  let label;
+  let numberOfLines;
+  let obj3;
+  let obj4;
+  let subLabel;
+  let switchProps;
+  let tmp13Result;
+  let trailing;
   onValueChange = onValueChange.onValueChange;
-  value = onValueChange.value;
-  importDefault = value;
+  const value = onValueChange.value;
   let flag = onValueChange.disabled;
   if (flag === undefined) {
     flag = false;
@@ -28,12 +47,14 @@ function FormSwitchRow(onValueChange) {
     switchProps = {};
   }
   const merged = Object.assign(onValueChange, Object.assign({ onValueChange: 0, value: 0, disabled: 0, label: 0, subLabel: 0, accessibilityHint: 0, trailing: 0, numberOfLines: 0, switchProps: 0 }));
-  checked = undefined;
+  first = undefined;
   closure_3 = undefined;
   let tmp2 = closure_8();
-  [checked, closure_3] = noop.useState(value);
+  const obj = PlatformUtils;
+  const isAndroidResult = obj.isAndroid();
+  [first, closure_3] = react.useState(value);
   const items = [value];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     closure_3(value);
   }, items);
   let tmp8;
@@ -41,68 +62,69 @@ function FormSwitchRow(onValueChange) {
     tmp8 = label;
   }
   let sum = tmp8;
+  const tmp9 = null != tmp8 && typeof subLabel === "string";
   if (tmp9) {
     const _HermesInternal = HermesInternal;
     sum = tmp8 + " " + subLabel;
   }
-  const obj2 = {};
-  const isAndroidResult = PlatformUtils.isAndroid();
-  tmp9 = null != tmp8 && typeof subLabel === "string";
+  const obj2 = {
+    label: metroImportDefault(View, obj3),
+    subLabel,
+    disabled: flag,
+    onPress: fn,
+    accessible: true,
+    onAccessibilityTap() {
+      const tmp = closure_3(!first);
+      const timerId = setTimeout(() => {
+        if (onValueChange != null) {
+          tmp(!first);
+        }
+      });
+    },
+    accessibilityRole: "switch",
+    accessibilityLabel: sum,
+    accessibilityState: { disabled: flag, checked: first },
+    accessibilityHint,
+    trailing: metroRequire(tmp13Result, obj4)
+  };
+  const tmp14 = FormRowDefault;
   const merged1 = Object.assign(merged);
-  const obj3 = { style: tmp2.trailing, children: null };
-  const items1 = [timestampProducer(FormLabelDefault, { numberOfLines, text: label }), null != trailing && trailing];
-  obj3.children = items1;
-  obj2.label = React5(View, obj3);
-  obj2.subLabel = subLabel;
-  obj2.disabled = flag;
-  let fn;
+  obj3 = { style: tmp2.trailing, children: items1 };
+  items1 = [metroRequire(FormLabelDefault, { numberOfLines, text: label }), null != trailing && trailing];
+  fn = undefined;
   if (isAndroidResult) {
     fn = () => {
       let tmp2 = null != onValueChange;
+      const tmp = onValueChange;
       if (tmp2) {
         tmp2 = null != value;
       }
       if (tmp2) {
-        onValueChange(!value);
+        tmp(!value);
       }
     };
   }
-  obj2.onPress = fn;
-  obj2.accessible = true;
-  obj2.onAccessibilityTap = function onAccessibilityTap() {
-    closure_3(!first);
-    const timerId = setTimeout(() => {
-      if (onValueChange != null) {
-        tmp(!checked);
-      }
-    });
-  };
-  obj2.accessibilityRole = "switch";
-  obj2.accessibilityLabel = sum;
-  obj2.accessibilityState = { disabled: flag, checked };
-  obj2.accessibilityHint = accessibilityHint;
-  const obj4 = { disabled: flag, value, onValueChange };
-  const tmp14 = FormRowDefault;
+  obj4 = { disabled: flag, value, onValueChange };
+  tmp13Result = FormSwitchDefault;
   const merged2 = Object.assign(switchProps);
-  obj2.trailing = timestampProducer(Form_FormSwitchDefault, obj4);
-  return timestampProducer(tmp14, obj2);
+  return metroRequire(tmp14, obj2);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ trailing: { flex: 1, flexDirection: "row", width: "100%", alignItems: "center" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("design/void/Form/native/FormSwitchRow.tsx");
 
 export default function FormSwitchRowContainer(DEPRECATED_style) {
-  if (noop.useContext(RedesignCompat.RedesignCompatContext)) {
-    const obj2 = { style: DEPRECATED_style.DEPRECATED_style, children: null };
-    const obj5 = { value: null, onValueChange: null };
+  let TableSwitchRow;
+  let obj5;
+  let tmp3Result;
+  if (react.useContext(RedesignCompat.RedesignCompatContext)) {
+    const obj2 = { style: DEPRECATED_style.DEPRECATED_style, children: metroRequire(TableSwitchRow, obj5) };
+    obj5 = { value: null, onValueChange: null };
     ({ value: obj3.value, onValueChange: obj3.onValueChange } = DEPRECATED_style);
+    TableSwitchRow = TableSwitchRow2.TableSwitchRow;
     const merged = Object.assign(DEPRECATED_style);
-    obj2.children = tmp3(TableSwitchRow.TableSwitchRow, obj5);
-    let tmp3Result = tmp3(View, obj2);
+    tmp3Result = tmp3(View, obj2);
   } else {
     const obj = {};
     const merged1 = Object.assign(DEPRECATED_style);

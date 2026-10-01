@@ -5,67 +5,70 @@
 // Exports: default
 
 // Module 12570 (UserProfileTextButtonGroup)
+import react_native from "react-native" /* 17 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 6629 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const PROFILE_SIDE_PADDING = fn(6629).PROFILE_SIDE_PADDING;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
+let closure_4;
+let hasOwnProperty;
+const View = react_native.View;
+const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { flexDirection: "row", flexWrap: "wrap", gap: 12 }, buttonArea: { flexGrow: 1 } });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileTextButtonGroup.tsx");
 
 export default function UserProfileTextButtonGroup(arg0) {
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let maxWidth;
+  let primaryButton;
+  let secondaryButton;
+  let style;
+  let tmp5;
   ({ primaryButton, secondaryButton, maxWidth, style } = arg0);
-  let items = closure_6();
+  const tmp = closure_6();
   const width = useWindowDimensionsDefault().width;
-  let bound = width;
   if (null != maxWidth) {
     const _Math = Math;
-    bound = Math.min(width, maxWidth);
+    const bound = Math.min(width, maxWidth);
   }
-  const diff = bound - 2 * PROFILE_SIDE_PADDING;
-  if (null == primaryButton) {
-    if (null == secondaryButton) {
-      return null;
+  if (null != primaryButton) {
+    let tmp8;
+    if (null == primaryButton) {
+      const obj2 = { style: items, children: secondaryButton };
+      items = [tmp.container, style];
+      tmp8 = React3(View, obj2);
+    } else if (null == secondaryButton) {
+      const obj = { style: items1, children: primaryButton };
+      items1 = [tmp.container, style];
+      tmp8 = React3(View, obj);
+    } else {
+      const result = (tmp4 - 12) / 2;
+      const obj3 = { style: items2, children: items4 };
+      items2 = [tmp.container, style];
+      const obj4 = { style: items3, children: primaryButton };
+      items3 = [tmp.buttonArea, ];
+      const obj5 = { minWidth: result };
+      items3[1] = obj5;
+      items4 = [React3(View, obj4), ];
+      const obj6 = { style: items5, children: secondaryButton };
+      items5 = [tmp.buttonArea, ];
+      const obj7 = { minWidth: result };
+      items5[1] = obj7;
+      items4[1] = React3(View, obj6);
+      tmp8 = hasOwnProperty(View, obj3);
     }
-  }
-  if (null == primaryButton) {
-    const obj2 = { style: null, children: null };
-    items = [, ];
-    items[0] = items.container;
-    items[1] = style;
-    obj2.style = items;
-    obj2.children = secondaryButton;
-    React4(View, obj2);
-  } else if (null == secondaryButton) {
-    const obj = { style: null, children: null };
-    const items1 = [items.container, style];
-    obj.style = items1;
-    obj.children = primaryButton;
-    React4(View, obj);
+    tmp5 = tmp8;
   } else {
-    const result = (diff - 12) / 2;
-    const obj3 = { style: null, children: null };
-    const items2 = [items.container, style];
-    obj3.style = items2;
-    const obj4 = { style: null, children: null };
-    const items3 = [items.buttonArea, ];
-    const obj5 = { minWidth: result };
-    items3[1] = obj5;
-    obj4.style = items3;
-    obj4.children = primaryButton;
-    const items4 = [React4(View, obj4), ];
-    const obj6 = { style: null, children: null };
-    const items5 = [items.buttonArea, ];
-    const obj7 = { minWidth: result };
-    items5[1] = obj7;
-    obj6.style = items5;
-    obj6.children = secondaryButton;
-    items4[1] = React4(View, obj6);
-    obj3.children = items4;
-    hasOwnProperty(View, obj3);
+    tmp5 = null;
   }
+  return tmp5;
 };

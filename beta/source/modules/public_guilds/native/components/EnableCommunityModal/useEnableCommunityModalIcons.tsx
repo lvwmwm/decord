@@ -5,25 +5,30 @@
 // Exports: default
 
 // Module 17471 (useEnableCommunityModalIcons)
+import Constants from "Constants" /* 1085 */;
 import useThemeDefault from "useTheme" /* 4767 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const ThemeTypes = fn(1085).ThemeTypes;
+const require = globalThis.__r;
+
+const ThemeTypes = Constants.ThemeTypes;
 class EnableCommunityModalIcons {
-  constructor(arg0) {
-    merged = Object.assign({ theme: null });
+  constructor(theme) {
+    const merged = Object.assign({ theme: null });
     merged[0] = ThemeTypes.LIGHT;
-    merged.theme = global;
+    merged.theme = theme;
     return merged;
   }
 }
 const prototype = EnableCommunityModalIcons.prototype;
 Object.defineProperty(prototype, "safetyCheck", {
   get: function safetyCheck() {
+    let tmpResult;
+    const obj = require("shared");
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(17472);
+      tmpResult = tmp(17472);
     } else {
       tmpResult = tmp(17473);
     }
@@ -33,14 +38,17 @@ Object.defineProperty(prototype, "safetyCheck", {
 });
 Object.defineProperty(prototype, "channelSetup", {
   get: function channelSetup() {
-    return require("ChannelSetup").getChannelSetupSource(this.theme);
+    const obj = require("ChannelSetup");
+    return obj.getChannelSetupSource(this.theme);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "finishingTouches", {
   get: function finishingTouches() {
+    let tmpResult;
+    const obj = require("shared");
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(17478);
+      tmpResult = tmp(17478);
     } else {
       tmpResult = tmp(17479);
     }
@@ -50,16 +58,15 @@ Object.defineProperty(prototype, "finishingTouches", {
 });
 Object.defineProperty(prototype, "close", {
   get: function close() {
-    return require("module_6413");
+    return require("AssetRegistry");
   },
   set: undefined
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/useEnableCommunityModalIcons.tsx");
 
 export default function useEnableCommunityModalIcons() {
-  closure_0 = useThemeDefault();
-  return _slicedToArray(noop.useState(() => {
+  let closure_0 = useThemeDefault();
+  return _slicedToArray(react.useState(() => {
     if (typeof EnableCommunityModalIcons === "function") {
       const merged = Object.assign({ theme: null });
       merged[0] = ThemeTypes.LIGHT;

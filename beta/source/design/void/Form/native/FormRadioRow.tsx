@@ -5,18 +5,28 @@
 // Exports: default
 
 // Module 8068 (FormRadioRow)
-import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
+import Fragment from "Fragment" /* 21 */;
+import react_native from "react-native" /* 4548 */;
 import RedesignCompat from "RedesignCompat" /* 5998 */;
-import TableRadioRow from "TableRadioRow" /* 6000 */;
 import FormRowDefault from "FormRow" /* 6558 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let tmp2;
+const TableRadioRow2 = tmp2(6000);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/void/Form/native/FormRadioRow.tsx");
 
 export default function FormRadioRow(arg0) {
+  let align;
+  let leading;
+  let onPress;
+  let selected;
+  let style;
+  let tmp8Result;
+  let tmp8Result3;
+  let tmp8Result4;
+  let value;
   ({ selected, align } = arg0);
   if (align === undefined) {
     align = "left";
@@ -24,32 +34,29 @@ export default function FormRadioRow(arg0) {
   ({ leading, onPress } = arg0);
   ({ value, style } = arg0);
   const merged = Object.assign(arg0, Object.assign({ selected: 0, align: 0, leading: 0, value: 0, onPress: 0, style: 0 }));
-  const context = noop.useContext(RedesignCompat.RedesignCompatContext);
-  const radioA11yNative = useA11yRolesNative.useRadioA11yNative({ selected });
+  const context = react.useContext(RedesignCompat.RedesignCompatContext);
+  const obj = react_native;
+  const radioA11yNative = obj.useRadioA11yNative({ selected });
   if (context) {
     const obj2 = { icon: leading, value, legacyCompat_selected: selected, legacyCompat_onPress: onPress };
+    const TableRadioRow = TableRadioRow2.TableRadioRow;
     const merged1 = Object.assign(merged);
-    let tmp8Result = tmp8(TableRadioRow.TableRadioRow, obj2);
+    tmp8Result = tmp8(TableRadioRow, obj2);
   } else {
-    const obj3 = {};
+    const obj3 = { style, onPress, accessibilityRole: tmp6, accessibilityState: tmp7, trailing: tmp8Result3, leading: tmp8Result4 };
+    const tmp10 = FormRowDefault;
     const merged2 = Object.assign(merged);
-    obj3.style = style;
-    obj3.onPress = onPress;
-    obj3.accessibilityRole = tmp6;
-    obj3.accessibilityState = tmp7;
-    let tmp8Result3 = null;
+    tmp8Result3 = null;
     if ("right" === align) {
       const obj4 = { selected };
       tmp8Result3 = tmp8(tmp9(6564), obj4);
     }
-    obj3.trailing = tmp8Result3;
-    let tmp8Result4 = leading;
+    tmp8Result4 = leading;
     if ("left" === align) {
       const obj5 = { selected };
       tmp8Result4 = tmp8(tmp9(6564), obj5);
     }
-    obj3.leading = tmp8Result4;
-    tmp8Result = tmp8(FormRowDefault, obj3);
+    tmp8Result = tmp8(tmp10, obj3);
   }
   return tmp8Result;
 };

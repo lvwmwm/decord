@@ -6,27 +6,33 @@
 
 // Module 12651 (useUserProfileActivityTabContent)
 import LoggerDefault from "Logger" /* 3 */;
+import Constants from "Constants" /* 1074 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 7789 */;
 import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 12652 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8254 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const StatusTypes = fn(1074).StatusTypes;
-let closure_10 = new LoggerDefault("useUserProfileActivityTabContent");
-const size = fn(2);
+const StatusTypes = Constants.StatusTypes;
+let tmp2 = new LoggerDefault("useUserProfileActivityTabContent");
+let closure_10 = tmp2;
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useUserProfileActivityTabContent.tsx");
 
 export default function useUserProfileActivityTabContent(userId) {
+  let currentUserId;
+  let guildId;
+  let live;
+  let logger;
+  let recent;
   userId = userId.userId;
   recent = undefined;
   let voiceChannel;
   let voiceActivity;
-  closure_4 = undefined;
+  let closure_4;
   const items = [userId];
   ({ currentUserId, guildId } = userId);
   const effect = voiceActivity.useEffect(() => {
@@ -47,20 +53,23 @@ export default function useUserProfileActivityTabContent(userId) {
   const memo = voiceActivity.useMemo(() => recent.filter(ContentInventoryTypes.isRecentActivityEntry), items1);
   const items2 = [closure_4];
   closure_4 = tmp5;
-  const stateFromStores = userId(voiceChannel[12]).useStateFromStores(items2, () => ContentInventoryOutboxStore.isFetchingUserOutbox(userId));
   const obj = userId(voiceChannel[12]);
+  const stateFromStores = obj.useStateFromStores(items2, () => ContentInventoryOutboxStore.isFetchingUserOutbox(userId));
   const items3 = [SelfPresenceStore, PresenceStore];
-  const stateFromStores1 = userId(voiceChannel[12]).useStateFromStores(items3, () => {
-    if (closure_4) {
-      let status = SelfPresenceStore.getStatus();
+  const obj2 = userId(voiceChannel[12]);
+  const stateFromStores1 = obj2.useStateFromStores(items3, () => {
+    let status;
+    const tmp = closure_4;
+    if (tmp) {
+      status = SelfPresenceStore.getStatus();
     } else {
       status = PresenceStore.getStatus(userId);
     }
     return status === StatusTypes.OFFLINE || status === StatusTypes.INVISIBLE;
   });
-  const obj2 = userId(voiceChannel[12]);
   const items4 = [UserProfileStore];
-  const stateFromStores2 = userId(voiceChannel[12]).useStateFromStores(items4, () => {
+  const obj3 = userId(voiceChannel[12]);
+  const stateFromStores2 = obj3.useStateFromStores(items4, () => {
     const userProfile = UserProfileStore.getUserProfile(userId);
     let _private;
     if (userProfile != null) {
@@ -68,53 +77,31 @@ export default function useUserProfileActivityTabContent(userId) {
     }
     return true === _private;
   });
-  const obj3 = userId(voiceChannel[12]);
   const items5 = [VoiceStateStore];
   let found = live;
-  const stateFromStores3 = userId(voiceChannel[12]).useStateFromStores(items5, () => {
-    let isInChannelResult = null != voiceChannel;
-    if (isInChannelResult) {
-      isInChannelResult = VoiceStateStore.isInChannel(tmp.id);
-    }
+  const obj4 = userId(voiceChannel[12]);
+  const stateFromStores3 = obj4.useStateFromStores(items5, () => {
+    const isInChannelResult = null != voiceChannel && VoiceStateStore.isInChannel(tmp.id);
     return isInChannelResult;
   });
   if (null != voiceActivity) {
     found = live.filter((item) => item !== voiceActivity);
   }
-  let tmp9 = stateFromStores1;
-  if (!stateFromStores1) {
-    tmp9 = stateFromStores2;
-  }
-  if (tmp9) {
-    tmp9 = null != voiceChannel;
-  }
-  if (tmp9) {
-    tmp9 = stateFromStores3;
-  }
-  let tmp10 = !tmp9;
-  if (!tmp9) {
-    tmp10 = !stateFromStores1;
-  }
+  let tmp10 = !((stateFromStores1 || stateFromStores2) && null != voiceChannel && stateFromStores3) && !stateFromStores1;
   if (tmp10) {
     let tmp11 = found.length > 0;
     if (!tmp11) {
-      let tmp12 = !stateFromStores2;
-      if (!stateFromStores2) {
-        tmp12 = null != voiceChannel;
-      }
-      tmp11 = tmp12;
+      tmp11 = !stateFromStores2 && null != voiceChannel;
     }
     if (!tmp11) {
-      let tmp13 = !stateFromStores2;
-      if (!stateFromStores2) {
-        tmp13 = null != stream;
-      }
+      let tmp13 = !stateFromStores2 && null != stream;
       if (tmp13) {
         let id;
+        const channelId = stream.channelId;
         if (voiceChannel != null) {
           id = voiceChannel.id;
         }
-        tmp13 = stream.channelId !== id;
+        tmp13 = channelId !== id;
       }
       tmp11 = tmp13;
     }

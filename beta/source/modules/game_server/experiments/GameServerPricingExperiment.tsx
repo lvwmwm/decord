@@ -9,15 +9,17 @@ import GameServerExperiment from "GameServerExperiment" /* 4747 */;
 import createExperiment from "module_4748" /* 4748 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "guild", id: "2026-03_game_server_pricing", label: "Game Server Pricing", defaultConfig: { enabled: false }, treatments: null };
-const items = [{ id: 1, label: "Enable Game Server Pricing", config: { enabled: true } }];
-obj.treatments = items;
+let items;
+let obj = { kind: "guild", id: "2026-03_game_server_pricing", label: "Game Server Pricing", defaultConfig: { enabled: false }, treatments: items };
+items = [{ id: 1, label: "Enable Game Server Pricing", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment(obj);
 const result = size.fileFinishedImporting("modules/game_server/experiments/GameServerPricingExperiment.tsx");
 
 export const GameServerPricingExperiment = experiment;
 export const useIsGameServerPricingEnabled = function useIsGameServerPricingEnabled(guildId, useGuildPowerupsChannelListPopout) {
-  let enabled = GameServerExperiment.useGameServerEnabled(guildId, useGuildPowerupsChannelListPopout);
+  const obj = GameServerExperiment;
+  let enabled = obj.useGameServerEnabled(guildId, useGuildPowerupsChannelListPopout);
+  const obj2 = { guildId, location: useGuildPowerupsChannelListPopout };
   if (enabled) {
     enabled = experiment.useExperiment(obj2, { autoTrackExposure: false }).enabled;
   }

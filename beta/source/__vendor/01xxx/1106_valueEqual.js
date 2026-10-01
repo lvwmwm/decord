@@ -4,7 +4,7 @@
 // Dependencies: [1107]
 
 // Module 1106 (valueEqual)
-import _mod1107 from "module_1107" /* 1107 */;
+import valueEqual from "valueEqual" /* 1107 */;
 
 
-export default _mod1107;
+export default valueEqual;

@@ -6,30 +6,33 @@
 
 // Module 4292 (lastDayOfWeek)
 import _mod3923 from "module_3923" /* 3923 */;
-import _typeof_mod from "module_3918" /* 3918 */;
-import module_3922_mod from "module_3922" /* 3922 */;
+import toDate_mod from "toDate" /* 3918 */;
+import toInteger_mod from "toInteger" /* 3922 */;
 import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
-  let tmp3 = obj;
+let tmp3;
+let tmp5;
+let tmp7;
+let toDate = toDate_mod;
+if (!toDate) {
+  tmp3 = { default: toDate };
+  const obj = { default: toDate };
 } else {
-  tmp3 = _typeof;
+  tmp3 = toDate;
 }
-_typeof = tmp3;
-let module_3922 = module_3922_mod;
-if (!module_3922) {
-  const obj2 = { default: module_3922 };
-  let tmp5 = obj2;
+toDate = tmp3;
+let toInteger = toInteger_mod;
+if (!toInteger) {
+  tmp5 = { default: toInteger };
+  const obj2 = { default: toInteger };
 } else {
-  tmp5 = module_3922;
+  tmp5 = toInteger;
 }
-module_3922 = tmp5;
+toInteger = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
+  tmp7 = { default: requiredArgs };
   const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
 } else {
   tmp7 = requiredArgs;
 }
@@ -39,13 +42,14 @@ export default function lastDayOfWeek(arg0, weekStartsOn) {
   requiredArgs.default(1, arguments);
   const defaultOptions = _mod3923.getDefaultOptions();
   weekStartsOn = undefined;
+  const _default = toInteger.default;
   if (null != weekStartsOn) {
     weekStartsOn = weekStartsOn.weekStartsOn;
   }
   if (null === weekStartsOn) {
     let weekStartsOn1;
     if (null != weekStartsOn) {
-      locale = weekStartsOn.locale;
+      const locale = weekStartsOn.locale;
       if (null !== locale) {
         if (undefined !== locale) {
           const options = locale.options;
@@ -84,22 +88,21 @@ export default function lastDayOfWeek(arg0, weekStartsOn) {
       num = weekStartsOn;
     }
   }
-  const defaultResult1 = module_3922.default(num);
-  if (defaultResult1 >= 0) {
-    if (defaultResult1 <= 6) {
-      const defaultResult2 = _typeof.default(arg0);
-      const day = defaultResult2.getDay();
+  const _defaultResult = _default(num);
+  if (_defaultResult >= 0) {
+    if (_defaultResult <= 6) {
+      const defaultResult1 = toDate.default(arg0);
+      const day = defaultResult1.getDay();
       let num3 = 0;
-      if (day < defaultResult1) {
+      if (day < _defaultResult) {
         num3 = -7;
       }
-      const diff = 6 + num3 - (day - defaultResult1);
-      defaultResult2.setHours(0, 0, 0, 0);
-      defaultResult2.setDate(defaultResult2.getDate() + diff);
-      return defaultResult2;
+      const diff = 6 + num3 - (day - _defaultResult);
+      defaultResult1.setHours(0, 0, 0, 0);
+      defaultResult1.setDate(defaultResult1.getDate() + diff);
+      return defaultResult1;
     }
   }
   const rangeError = new RangeError("weekStartsOn must be between 0 and 6");
   throw rangeError;
 };
-export default exports.default;

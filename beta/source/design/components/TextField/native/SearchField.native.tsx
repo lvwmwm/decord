@@ -4,26 +4,20 @@
 // Dependencies: [19, 21, 6031, 1115, 6472, 2]
 
 // Module 6471 (SearchField)
-import util from "util" /* 1115 */;
-import TextField from "TextField" /* 6031 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
+import TextField2 from "TextField" /* 6031 */;
 import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6472 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
+const forwardRefResult = react.forwardRef((arg0, ref) => {
+  const TextField = TextField2.TextField;
+  const intl = intl2.intl;
+  const merged = Object.assign(arg0);
+  return <TextField placeholder={intl.string(intl2.t["5h0QOP"])} returnKeyType="search" ref={arg1} autoCorrect={false} autoCapitalize="none" accessibilityRole="search" leadingIcon={MagnifyingGlassIcon.MagnifyingGlassIcon} clearable />;
+});
 const result = size.fileFinishedImporting("design/components/TextField/native/SearchField.native.tsx");
 
-export const SearchField = noop.forwardRef((arg0, ref) => {
-  const obj = { placeholder: null, returnKeyType: "search", ref: null };
-  const intl = util.intl;
-  obj.placeholder = intl.string(util.t["5h0QOP"]);
-  obj.ref = ref;
-  const merged = Object.assign(arg0);
-  obj.autoCorrect = false;
-  obj.autoCapitalize = "none";
-  obj.accessibilityRole = "search";
-  obj.leadingIcon = MagnifyingGlassIcon.MagnifyingGlassIcon;
-  obj.clearable = true;
-  return jsx(TextField.TextField, { placeholder: null, returnKeyType: "search", ref: null });
-});
+export const SearchField = forwardRefResult;

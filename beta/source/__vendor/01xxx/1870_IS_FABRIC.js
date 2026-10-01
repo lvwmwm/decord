@@ -5,4 +5,4 @@
 
 // Module 1870 (IS_FABRIC)
 
-export const IS_FABRIC = "nativeFabricUIManager" in arg0;
+export const IS_FABRIC = "nativeFabricUIManager" in global;

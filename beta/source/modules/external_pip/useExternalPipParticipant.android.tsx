@@ -5,38 +5,58 @@
 // Exports: default
 
 // Module 16829 (useExternalPipParticipant)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import CallConstants from "CallConstants" /* 4857 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const CallConstants = fn(4857);
-({ isStreamParticipant: closure_8, ParticipantTypes: closure_9 } = CallConstants);
-const size = fn(2);
+let id, mediaEngine;
+
+let c9;
+let metroImportAll;
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+({ isStreamParticipant: metroImportAll, ParticipantTypes: c9 } = CallConstants);
 const result = size.fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");
 
 export default function useExternalPipParticipant() {
-  const items = [RTCConnectionStore];
-  channelId = channelId(stateFromStores1[7]).useStateFromStores(items, () => channelId.getChannelId());
+  let c3;
+  let channelId;
+  let focusedParticipantType;
+  let focusedParticipantUserId;
+  let ref;
+  let ref2;
+  let stateFromStores1;
+  let tmp7;
+  const tmp = channelId;
+  const tmp2 = stateFromStores1;
   let obj = channelId(stateFromStores1[7]);
+  const items = [RTCConnectionStore];
+  channelId = obj.useStateFromStores(items, () => channelId.getChannelId());
   const items1 = [AuthenticationStore];
-  stateFromStores1 = channelId(stateFromStores1[7]).useStateFromStores(items1, () => id.getId());
-  noop = undefined;
-  _slicedToArray = noop.useRef(undefined);
-  noop = noop.useRef(undefined);
-  const obj3 = noop;
-  const tmpResult = channelId(stateFromStores1[7]);
+  const tmpResult = tmp(tmp2[7]);
+  stateFromStores1 = tmpResult.useStateFromStores(items1, () => id.getId());
+  react = undefined;
+  _slicedToArray = react.useRef(undefined);
+  const obj3 = react;
+  react = react.useRef(undefined);
   const items2 = [ChannelRTCStore];
-  const stateFromStoresObject = channelId(stateFromStores1[7]).useStateFromStoresObject(items2, () => {
+  const tmpResult3 = tmp(tmp2[7]);
+  const stateFromStoresObject = tmpResult3.useStateFromStoresObject(items2, () => {
+    let obj;
+    let tmp17;
+    let tmp6;
+    let type3;
     let selectedParticipant = null;
     if (null != channelId) {
       selectedParticipant = ChannelRTCStore.getSelectedParticipant(tmp);
     }
-    if (!React6(selectedParticipant)) {
-      let tmp6 = selectedParticipant;
+    if (!metroImportAll(selectedParticipant)) {
+      tmp6 = selectedParticipant;
     } else {
       const user = selectedParticipant.user;
       id = undefined;
@@ -50,26 +70,29 @@ export default function useExternalPipParticipant() {
       if (tmp6 != null) {
         id1 = tmp6.id;
       }
-      tmp7.current = id1;
+      ref.current = id1;
       let type;
+      const tmp9 = ref2;
       if (tmp6 != null) {
         type = tmp6.type;
       }
-      ref2.current = type;
+      tmp9.current = type;
     }
     let id2;
+    const current = tmp7.current;
     if (tmp6 != null) {
       id2 = tmp6.id;
     }
-    if (ref.current !== id2) {
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "flex", focusedParticipantType: ref2.current };
-      let obj = obj2;
+    if (current !== id2) {
+      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "channel", focusedParticipantType: ref2.current };
+      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "channel", focusedParticipantType: ref2.current };
     } else {
       let type1;
       if (tmp6 != null) {
         type1 = tmp6.type;
       }
       let tmp14;
+      const tmp13 = constants;
       if (type1 !== constants.ACTIVITY) {
         let streamId;
         if (tmp6 != null) {
@@ -77,12 +100,12 @@ export default function useExternalPipParticipant() {
         }
         tmp14 = streamId;
       }
-      obj = { focusedParticipantStreamId: tmp14, focusedParticipantUserId: null, focusedParticipantType: null };
+      obj = { focusedParticipantStreamId: tmp14, focusedParticipantUserId: tmp17, focusedParticipantType: type3 };
       let type2;
       if (tmp6 != null) {
         type2 = tmp6.type;
       }
-      let tmp17;
+      tmp17 = undefined;
       if (type2 !== tmp13.ACTIVITY) {
         let id3;
         if (tmp6 != null) {
@@ -93,48 +116,73 @@ export default function useExternalPipParticipant() {
         }
         tmp17 = id3;
       }
-      obj.focusedParticipantUserId = tmp17;
-      let type3;
+      type3 = undefined;
       if (tmp6 != null) {
         type3 = tmp6.type;
       }
-      obj.focusedParticipantType = type3;
-      tmp13 = constants;
     }
     return obj;
   });
   const focusedParticipantStreamId = stateFromStoresObject.focusedParticipantStreamId;
-  closure_129_0 = channelId;
-  closure_129_1 = focusedParticipantStreamId;
-  closure_129_2 = stateFromStores1;
-  closure_129_3 = undefined;
+  c3 = undefined;
   ({ focusedParticipantUserId, focusedParticipantType } = stateFromStoresObject);
-  const tmpResult3 = channelId(stateFromStores1[7]);
-  [tmp7, closure_129_3] = noop.useState(0);
-  let tmp6 = _slicedToArray(noop.useState(0), 2);
+  let tmp6 = _slicedToArray(react.useState(0), 2);
+  [tmp7, c3] = tmp6;
   const items3 = [ChannelRTCStore];
   const items4 = [channelId, focusedParticipantStreamId, stateFromStores1, tmp7];
-  const selectedParticipantSpeaking = channelId(stateFromStores1[7]).useStateFromStoresObject(items3, () => {
+  const tmpResult4 = tmp(tmp2[7]);
+  const stateFromStoresObject1 = tmpResult4.useStateFromStoresObject(items3, () => {
+    let id1;
+    let streamId1;
     let tmp20;
     let tmp30;
     let tmp35;
+    function hasOnlySelfParticipant(participants, stateFromStores1) {
+      if (3 < participants.length) {
+        return false;
+      } else {
+        const iter = participants[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          if (nextResult.type !== constants.ACTIVITY) {
+            let user = tmp6.user;
+            id = undefined;
+            if (user != null) {
+              id = user.id;
+            }
+            if (id !== stateFromStores1) {
+              iter.return();
+              let flag = false;
+              return false;
+            }
+          }
+          continue;
+        }
+        return true;
+      }
+    }
     if (null != channelId) {
-      if (null == stateFromStores1) {
+      if (null == focusedParticipantStreamId) {
         const _Date = Date;
         let tmp24;
         const timestamp = Date.now();
-        const participants = ChannelRTCStore.getParticipants(tmp);
+        participants = participants.getParticipants(tmp);
+        const tmp53 = hasOnlySelfParticipant(participants, stateFromStores1);
         let iter = participants[Symbol.iterator]();
         let nextResult = iter.next();
         while (iter !== undefined) {
           let tmp5 = nextResult;
           if (!tmp53) {
+            let tmp6 = nextResult;
+            let tmp7 = constants;
             if (tmp5.type === constants.USER) {
+              let tmp8 = nextResult;
               let user = tmp5.user;
               id = undefined;
               if (user != null) {
                 id = user.id;
               }
+              let tmp10 = stateFromStores1;
             }
             continue;
           }
@@ -181,9 +229,9 @@ export default function useExternalPipParticipant() {
               tmp14 = null == tmp5.streamId;
             }
             if (!tmp14) {
-              let tmp17 = React6(tmp5);
+              let tmp17 = closure_2_8(tmp5);
               if (tmp17) {
-                tmp17 = tmp5.user.id === closure_2;
+                tmp17 = tmp5.user.id === stateFromStores1;
               }
               tmp14 = tmp17;
             }
@@ -192,8 +240,8 @@ export default function useExternalPipParticipant() {
             }
           }
         }
-        const obj = { selectedParticipantSpeaking: null != tmp24, selectedParticipantUserId: null, selectedStreamId: null };
-        let id1;
+        const obj = { selectedParticipantSpeaking: null != tmp24, selectedParticipantUserId: id1, selectedStreamId: streamId1 };
+        id1 = undefined;
         if (tmp24 != null) {
           const user2 = tmp24.user;
           if (user2 != null) {
@@ -220,10 +268,9 @@ export default function useExternalPipParticipant() {
           }
           id1 = id3;
         }
-        obj.selectedParticipantUserId = id1;
         if (null != tmp24) {
           const streamId = tmp24.streamId;
-          let streamId1 = streamId;
+          streamId1 = streamId;
         } else {
           streamId1 = undefined;
           if (tmp20 != null) {
@@ -237,46 +284,45 @@ export default function useExternalPipParticipant() {
             streamId1 = streamId2;
           }
         }
-        obj.selectedStreamId = streamId1;
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "disabled" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "paddingHorizontal" };
   }, items4);
-  closure_129_4 = selectedParticipantSpeaking;
-  const items5 = [selectedParticipantSpeaking.selectedParticipantSpeaking];
-  const effect = noop.useEffect(() => {
-    if (closure_4.selectedParticipantSpeaking) {
+  const items5 = [stateFromStoresObject1.selectedParticipantSpeaking];
+  const effect = react.useEffect(() => {
+    let closure_0;
+    if (stateFromStoresObject1.selectedParticipantSpeaking) {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
-        ref2((arg0) => arg0 + 1);
+        closure_1_3((arg0) => arg0 + 1);
       }, 3000);
       return () => {
         clearTimeout(closure_0);
       };
     }
   }, items5);
-  let selectedParticipantUserId = selectedParticipantSpeaking.selectedParticipantUserId;
+  let selectedParticipantUserId = stateFromStoresObject1.selectedParticipantUserId;
   let selectedParticipantStreamId = focusedParticipantStreamId;
+  const selectedParticipantSpeaking = stateFromStoresObject1.selectedParticipantSpeaking;
   if (focusedParticipantStreamId == null) {
-    selectedParticipantStreamId = selectedParticipantSpeaking.selectedStreamId;
+    selectedParticipantStreamId = stateFromStoresObject1.selectedStreamId;
   }
   if (null != focusedParticipantStreamId) {
     selectedParticipantUserId = focusedParticipantUserId;
   }
-  closure_130_0 = selectedParticipantStreamId;
   const items6 = [selectedParticipantStreamId];
   const effect1 = obj3.useEffect(() => {
-    closure_0 = channelId;
-    if (null != channelId) {
-      const useExternalPipParticipant = "useExternalPipParticipant";
-      mediaEngine = MediaEngineStore.getMediaEngine();
-      mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_0, true, useExternalPipParticipant));
+    let closure_0 = selectedParticipantStreamId;
+    if (null != selectedParticipantStreamId) {
+      const useExternalPipParticipant_str = "useExternalPipParticipant";
+      mediaEngine = mediaEngine.getMediaEngine();
+      mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_0, true, useExternalPipParticipant_str));
       return () => {
         mediaEngine = mediaEngine.getMediaEngine();
-        mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_1_0, false, useExternalPipParticipant));
+        mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_1_0, false, useExternalPipParticipant_str));
       };
     }
   }, items6);
-  return { channelId, selectedParticipantStreamId, selectedParticipantUserId, selectedParticipantSpeaking: selectedParticipantSpeaking.selectedParticipantSpeaking, focusedParticipantType };
+  return { channelId, selectedParticipantStreamId, selectedParticipantUserId, selectedParticipantSpeaking, focusedParticipantType };
 };

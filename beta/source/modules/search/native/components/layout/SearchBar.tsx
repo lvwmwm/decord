@@ -1,113 +1,121 @@
 // Module ID: 16442
 // Function ID: 16443
-// Name: layout/SearchBar
+// Name: SearchBar
 // Dependencies: [19, 17, 2045, 2067, 4479, 1372, 11822, 7303, 7302, 1074, 21, 4836, 1115, 4989, 504, 16439, 5288, 11821, 11844, 4541, 11841, 11824, 9036, 16443, 2]
 
-// Module 16442 (layout/SearchBar)
-import util from "util" /* 1115 */;
+// Module 16442 (SearchBar)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1074 */;
+import intl8 from "intl" /* 1115 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
-import useChannelName from "useChannelName" /* 4989 */;
+import TrackingConstants from "TrackingConstants" /* 7302 */;
 import SearchPlatformUtils from "SearchPlatformUtils" /* 11821 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11844 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 import SearchQueryStore from "SearchQueryStore" /* 11822 */;
+import SearchConstants from "SearchConstants" /* 7303 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
 const SearchPlatformUtilsDefault = SearchPlatformUtils;
+let channel, guild;
 
-require = fn;
-const View = fn(17).View;
-const SearchConstants = fn(7303);
-({ SEARCH_BAR_HEIGHT: c10, SearchQueryTagTypes: closure_11 } = SearchConstants);
-const SearchFilterAddLocations = fn(7302).SearchFilterAddLocations;
-const SearchTypes = fn(1074).SearchTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+let c10;
+let unpackModuleId;
+const View = react_native.View;
+({ SEARCH_BAR_HEIGHT: c10, SearchQueryTagTypes: unpackModuleId } = SearchConstants);
+const SearchFilterAddLocations = TrackingConstants.SearchFilterAddLocations;
+const SearchTypes = Constants.SearchTypes;
+const jsx = Fragment.jsx;
 let closure_15 = createStyles.createStyles((minHeight) => {
-  const obj = { searchBar: { minHeight: minHeight + 2 }, icon: { width: 32, minHeight, justifyContent: "center", zIndex: 10 } };
+  const obj = { searchBar: obj2, icon: { width: 32, minHeight, justifyContent: "center", zIndex: 10 } };
   return obj;
 });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/search/native/components/layout/SearchBar.tsx");
-
-export default noop.memo(noop.forwardRef((searchContext, ref) => {
+const memoResult = react.memo(react.forwardRef((searchContext, ref) => {
   searchContext = searchContext.searchContext;
   let stateFromStores;
   ref = undefined;
-  const setDismissed = searchContext(stateFromStores[15]).useSearchSuggestionsContext().setDismissed;
   let obj = searchContext(stateFromStores[15]);
-  let tmp = closure_15(closure_10 * Math.min(2, searchContext(stateFromStores[16]).useFontScale()));
+  const setDismissed = obj.useSearchSuggestionsContext().setDismissed;
   let obj2 = searchContext(stateFromStores[16]);
+  let tmp = closure_15(closure_10 * min(2, obj2.useFontScale()));
+  let obj3 = searchContext(stateFromStores[14]);
   const items = [SearchQueryStore];
   const items1 = [searchContext];
-  stateFromStores = searchContext(stateFromStores[14]).useStateFromStores(items, () => SearchQueryStore.getTags(searchContext), items1);
+  stateFromStores = obj3.useStateFromStores(items, () => SearchQueryStore.getTags(searchContext), items1);
   const items2 = [stateFromStores];
   const items3 = [stateFromStores];
   const memo = ref.useMemo(() => stateFromStores.map(SearchPlatformUtils.toSearchBarTag), items2);
   const memo1 = ref.useMemo(() => {
+    const arr = stateFromStores;
     if (0 !== stateFromStores.length) {
       const mapped = arr.map((text) => text.text);
       const joined = mapped.join(", ");
-      const intl = util.intl;
+      const intl = intl8.intl;
       const obj = { text: joined };
-      return intl.formatToPlainString(util.t["0zoRaK"], obj);
+      return intl.formatToPlainString(intl8.t["0zoRaK"], obj);
     }
-    arr = stateFromStores;
   }, items3);
   ref = ref.useRef(null);
-  closure_129_0 = searchContext;
-  let obj3 = searchContext(stateFromStores[14]);
+  let obj4 = searchContext(stateFromStores[14]);
   const items4 = [SearchQueryStore];
   const items5 = [searchContext];
-  const stateFromStores1 = searchContext(stateFromStores[14]).useStateFromStores(items4, () => {
+  const stateFromStores1 = obj4.useStateFromStores(items4, () => {
+    let stringResult2;
     const type = searchContext.type;
     const channelIds = SearchQueryStore.getChannelIds(searchContext);
-    if (SearchTypes.GUILD_CHANNEL !== type) {
-      if (tmp3.GUILD !== type) {
-        if (tmp3.CHANNEL === type) {
-          const channel = ChannelStore.getChannel(tmp.channelId);
+    if (constants.GUILD_CHANNEL !== type) {
+      if (constants.GUILD !== type) {
+        if (constants.CHANNEL === type) {
+          let stringResult;
+          channel = channel.getChannel(tmp.channelId);
           if (null == channel) {
-            const intl4 = util.intl;
-            let stringResult = intl4.string(util.t["5h0QOP"]);
+            const intl4 = searchContext(stateFromStores[12]).intl;
+            stringResult = intl4.string(searchContext(stateFromStores[12]).t["5h0QOP"]);
           } else {
-            const obj = useChannelName;
+            const obj = searchContext(stateFromStores[13]);
             const channelName = obj.computeChannelName(channel, UserStore, RelationshipStore, true);
-            const intl3 = util.intl;
+            const intl3 = searchContext(stateFromStores[12]).intl;
             const obj2 = { guildName: channelName };
-            stringResult = intl3.formatToPlainString(util.t.LDpotA, obj2);
+            stringResult = intl3.formatToPlainString(searchContext(stateFromStores[12]).t.LDpotA, obj2);
           }
           return stringResult;
-        } else if (tmp3.DMS === type) {
-          const intl2 = util.intl;
-          return intl2.string(util.t.m7OrlR);
+        } else if (constants.DMS === type) {
+          const intl2 = searchContext(stateFromStores[12]).intl;
+          return intl2.string(searchContext(stateFromStores[12]).t.m7OrlR);
         } else {
-          const intl = util.intl;
-          return intl.string(util.t["5h0QOP"]);
+          const intl = searchContext(stateFromStores[12]).intl;
+          return intl.string(searchContext(stateFromStores[12]).t["5h0QOP"]);
         }
       }
     }
     if (0 === channelIds.size) {
-      const guild = GuildStore.getGuild(tmp.guildId);
+      let stringResult1;
+      guild = guild.getGuild(tmp.guildId);
       let name;
       if (guild != null) {
         name = guild.name;
       }
       if (null == name) {
-        const intl7 = util.intl;
-        let stringResult1 = intl7.string(util.t["5h0QOP"]);
+        const intl7 = searchContext(stateFromStores[12]).intl;
+        stringResult1 = intl7.string(searchContext(stateFromStores[12]).t["5h0QOP"]);
       } else {
-        const intl6 = util.intl;
+        const intl6 = searchContext(stateFromStores[12]).intl;
         const obj3 = { guildName: name };
-        stringResult1 = intl6.formatToPlainString(util.t.LDpotA, obj3);
+        stringResult1 = intl6.formatToPlainString(searchContext(stateFromStores[12]).t.LDpotA, obj3);
       }
+      stringResult2 = stringResult1;
     } else {
-      const intl5 = util.intl;
-      return intl5.string(util.t["5h0QOP"]);
+      const intl5 = searchContext(stateFromStores[12]).intl;
+      stringResult2 = intl5.string(searchContext(stateFromStores[12]).t["5h0QOP"]);
     }
+    return stringResult2;
   }, items5);
   const imperativeHandle = ref.useImperativeHandle(ref, () => ({
     setText(arg0) {
@@ -182,62 +190,69 @@ export default noop.memo(noop.forwardRef((searchContext, ref) => {
     }
   }));
   const items6 = [searchContext];
-  const effect = ref.useEffect(() => SearchPlatformUtilsDefault.subscribeTextInputValue(searchContext, (arg0, arg1, arg2) => {
-    let tmp = arg2;
-    if (!arg2) {
-      tmp = null == arg0;
-    }
-    if (!tmp) {
-      const current = ref.current;
-      if (current != null) {
-        current.setText(arg0);
+  const effect = ref.useEffect(() => {
+    const obj = SearchPlatformUtilsDefault;
+    return obj.subscribeTextInputValue(searchContext, (arg0, arg1, arg2) => {
+      const tmp = arg2 || null == arg0;
+      if (!tmp) {
+        const current = ref.current;
+        if (current != null) {
+          current.setText(arg0);
+        }
       }
-    }
-  }), items6);
+    });
+  }, items6);
   const items7 = [searchContext];
   const items8 = [searchContext];
   const callback = ref.useCallback((arg0) => {
-    closure_0 = arg0;
+    let closure_0 = arg0;
     if (SearchQueryStore.getTextInputValue(searchContext) !== arg0) {
-      SearchPlatformActionCreatorsDefault.updateSearchQuery(tmp, (setTextInputValue) => {
+      const obj2 = SearchPlatformActionCreatorsDefault;
+      obj2.updateSearchQuery(searchContext, (setTextInputValue) => {
         setTextInputValue.setTextInputValue(closure_0, true);
       });
+      const obj3 = SearchPlatformUtilsDefault;
+      const result = obj3.syncAutocompleteDebounced(tmp);
       const tmp2 = importDefault;
-      const result = SearchPlatformUtilsDefault.syncAutocompleteDebounced(tmp);
-      if (!obj.isAutocompleteVisible(tmp)) {
+      if (!SearchQueryStore.isAutocompleteVisible(searchContext)) {
+        const isInitialSearchQueryResult = SearchQueryStore.isInitialSearchQuery(searchContext);
         const tmp2Result = tmp2(11821);
         if (isInitialSearchQueryResult) {
           const initialMessages = tmp2Result.fetchInitialMessages(tmp);
         } else {
           const initialMessagesDebounced = tmp2Result.fetchInitialMessagesDebounced(tmp);
         }
-        isInitialSearchQueryResult = obj.isInitialSearchQuery(tmp);
       }
     }
   }, items7);
   const items9 = [searchContext, setDismissed];
   const callback1 = ref.useCallback((arg0) => {
-    closure_0 = arg0;
+    let closure_0 = arg0;
     const tmp2 = SearchQueryStore.getTags(searchContext)[arg0];
-    const type = tmp2;
+    let closure_1 = tmp2;
     if (null != tmp2) {
       const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-      const intl = util.intl;
+      const announce = AccessibilityAnnouncer.announce;
+      const intl = intl8.intl;
       const obj3 = { text: tmp2.text };
-      AccessibilityAnnouncer.announce(intl.formatToPlainString(util.t.srlxB8, obj3));
-      if (tmp2.type === constants.COMPLETE) {
-        const obj6 = { searchContext: tmp, searchTokenType: tmp2.searchTokenType, isDefault: tmp2.location === SearchFilterAddLocations.CLIENT_AUTO_ADD };
-        let result = search_tracking_TrackingDefault.trackSearchFilterRemove(obj6);
+      announce(intl.formatToPlainString(intl8.t.srlxB8, obj3));
+      if (tmp2.type === unpackModuleId.COMPLETE) {
+        const obj6 = { searchContext, searchTokenType: tmp2.searchTokenType, isDefault: tmp2.location === SearchFilterAddLocations.CLIENT_AUTO_ADD };
+        const obj2 = search_tracking_TrackingDefault;
+        let result = obj2.trackSearchFilterRemove(obj6);
       }
-      SearchPlatformActionCreatorsDefault.updateSearchQuery(tmp, (removeTag) => {
+      const obj4 = SearchPlatformActionCreatorsDefault;
+      obj4.updateSearchQuery(searchContext, (removeTag) => {
         removeTag.removeTag(closure_0);
         if (type.type === constants.PREFIX) {
           const result = removeTag.restoreDraftTextInputValue();
         }
       });
-      const tmp6 = importDefault;
-      const result1 = SearchPlatformUtilsDefault.syncAutocompleteDebounced(tmp);
+      const obj5 = SearchPlatformUtilsDefault;
+      const result1 = obj5.syncAutocompleteDebounced(tmp);
       const queryString = obj.getQueryString(tmp);
+      const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
+      const tmp6 = importDefault;
       if (queryString !== searchResultsQuery) {
         const tmp6Result = tmp6(11821);
         if (tmp11) {
@@ -246,49 +261,44 @@ export default noop.memo(noop.forwardRef((searchContext, ref) => {
           const initialMessagesDebounced = tmp6Result.fetchInitialMessagesDebounced(tmp);
         }
       }
-      searchResultsQuery = obj.getSearchResultsQuery(tmp);
     }
   }, items8);
   const memo2 = ref.useMemo(() => () => {
     closure_1_1();
-    const prefixTag = SearchQueryStore.getPrefixTag(closure_1_0);
-    const trimmed = SearchQueryStore.getTextInputValue(closure_1_0).trim();
-    let result = null != prefixTag;
+    let obj = SearchQueryStore;
+    const prefixTag = SearchQueryStore.getPrefixTag(searchContext);
+    const str = SearchQueryStore.getTextInputValue(searchContext);
+    const trimmed = str.trim();
+    let result = null != prefixTag && "" !== trimmed;
     if (result) {
-      result = "" !== trimmed;
-    }
-    if (result) {
-      result = searchContext(stateFromStores[21]).isValidFilterAnswerForSubmit(prefixTag.searchTokenType, trimmed);
       const obj2 = searchContext(stateFromStores[21]);
+      result = obj2.isValidFilterAnswerForSubmit(prefixTag.searchTokenType, trimmed);
     }
     if (result) {
-      setDismissed(stateFromStores[18]).updateSearchQuery(tmp2, (setTextInputValue) => {
+      const obj3 = setDismissed(stateFromStores[18]);
+      obj3.updateSearchQuery(searchContext, (setTextInputValue) => {
         setTextInputValue.setTextInputValue("");
-        setTextInputValue.addTag({ type: constants.ANSWER, text: trimmed });
+        const obj = { type: constants.ANSWER, text: trimmed };
+        setTextInputValue.addTag(obj);
         const result = setTextInputValue.restoreDraftTextInputValue();
       });
-      const obj3 = setDismissed(stateFromStores[18]);
-      const obj8 = { searchContext: tmp2, searchTokenType: null, location: null };
+      const obj8 = { searchContext, searchTokenType: null, location: null };
       ({ searchTokenType: obj5.searchTokenType, location: obj5.location } = prefixTag);
-      setDismissed(stateFromStores[20]).trackSearchFilterAdd(obj8);
       const obj4 = setDismissed(stateFromStores[20]);
+      obj4.trackSearchFilterAdd(obj8);
     }
-    if (!SearchQueryStore.isQueryStringEmpty(closure_1_0)) {
-      setDismissed(stateFromStores[18]).updateSearchQuery(tmp2, (markExplicitSearchSubmitted) => markExplicitSearchSubmitted.markExplicitSearchSubmitted());
+    if (!obj.isQueryStringEmpty(searchContext)) {
       const obj6 = setDismissed(stateFromStores[18]);
-      const initialMessages = setDismissed(stateFromStores[17]).fetchInitialMessages(tmp2);
+      obj6.updateSearchQuery(searchContext, (markExplicitSearchSubmitted) => markExplicitSearchSubmitted.markExplicitSearchSubmitted());
       const obj7 = setDismissed(stateFromStores[17]);
+      const initialMessages = obj7.fetchInitialMessages(tmp2);
     }
   }, items9);
   const textInputValue = SearchQueryStore.getTextInputValue(searchContext);
-  let obj5 = { ref, accessibilityHint: memo1, autoFocus: true, defaultValue: textInputValue, style: tmp.searchBar, tags: memo, icon: null, onChangeText: null, onRemove: null, placeholder: null, onSubmitEditing: null, leadingFade: true, horizontal: true, autoClearInputOnTagAdd: false };
   let obj6 = { style: tmp.icon, children: null };
-  let obj4 = searchContext(stateFromStores[14]);
-  obj6.children = jsx(setDismissed(stateFromStores[23]), { searchContext });
-  obj5.icon = <View style={tmp.icon}>{null}</View>;
-  obj5.onChangeText = callback;
-  obj5.onRemove = callback1;
-  obj5.placeholder = stateFromStores1;
-  obj5.onSubmitEditing = memo2;
-  return jsx(setDismissed(stateFromStores[22]), { ref, accessibilityHint: memo1, autoFocus: true, defaultValue: textInputValue, style: tmp.searchBar, tags: memo, icon: null, onChangeText: null, onRemove: null, placeholder: null, onSubmitEditing: null, leadingFade: true, horizontal: true, autoClearInputOnTagAdd: false });
+  setDismissed(stateFromStores[22]);
+  return <tmp13 ref={ref} accessibilityHint={memo1} autoFocus defaultValue={textInputValue} style={tmp.searchBar} tags={memo} icon={null} onChangeText={callback} onRemove={callback1} placeholder={stateFromStores1} onSubmitEditing={memo2} leadingFade horizontal autoClearInputOnTagAdd={false} />;
 }));
+let result = size.fileFinishedImporting("modules/search/native/components/layout/SearchBar.tsx");
+
+export default memoResult;

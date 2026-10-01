@@ -5,85 +5,104 @@
 // Exports: default
 
 // Module 14229 (WebAuthnDeleteActionSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6014 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { content: { alignItems: "center" }, subtitle: { textAlign: "center", marginTop: nativeDefault.space.PX_16 }, sheetContent: null, sheetBody: null };
-const obj3 = { textAlign: "center", marginTop: nativeDefault.space.PX_16 };
-obj2.sheetContent = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
-let obj4 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
-obj2.sheetBody = { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let BottomSheet;
+
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let obj3;
+let obj4;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { content: { alignItems: "center" }, subtitle: obj2, sheetContent: obj3, sheetBody: obj4 };
+obj2 = { textAlign: "center", marginTop: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
+obj4 = { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
+let closure_6 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/webauthn/native/WebAuthnDeleteActionSheet.tsx");
 
 export default function WebAuthnDeleteActionSheet(credential) {
+  let Button;
+  let Button2;
+  let Text;
+  let deleting;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let obj3;
+  let obj5;
+  let obj7;
+  let obj9;
   credential = credential.credential;
   ({ deleting, setDeleting: importDefault } = credential);
   function handleClose() {
-    ActionSheetActionCreatorsDefault.hideActionSheet();
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideActionSheet();
   }
-  const tmp = closure_6();
-  let obj = { contentStyles: tmp.sheetContent, bodyStyles: tmp.sheetBody, children: null };
-  let obj2 = { title: null, trailing: null };
-  let intl = credential(1115).intl;
-  obj2.title = intl.formatToPlainString(credential(1115).t.mI3CoL, { keyName: credential.name });
-  obj2.trailing = closure_4(credential(6619).ActionSheetCloseButton, { onPress: handleClose });
-  const items = [closure_4(credential(6570).BottomSheetTitleHeader, obj2), , , ];
-  const obj4 = { style: tmp.content, children: null };
-  const obj5 = { variant: "heading-md/normal", style: tmp.subtitle, children: null };
-  const intl2 = credential(1115).intl;
-  obj5.children = intl2.string(credential(1115).t.IfTbc1);
-  obj4.children = closure_4(credential(4832).Text, obj5);
+  let tmp = closure_6();
+  let obj = { contentStyles: tmp.sheetContent, bodyStyles: tmp.sheetBody, children: items };
+  BottomSheet = credential(6571).BottomSheet;
+  let obj2 = { title: intl.formatToPlainString(credential(1115).t.mI3CoL, obj3), trailing: closure_4(credential(6619).ActionSheetCloseButton, { onPress: handleClose }) };
+  const BottomSheetTitleHeader = credential(6570).BottomSheetTitleHeader;
+  intl = credential(1115).intl;
+  obj3 = { keyName: credential.name };
+  items = [closure_4(BottomSheetTitleHeader, obj2), , , ];
+  const obj4 = { style: tmp.content, children: closure_4(Text, obj5) };
+  obj5 = { variant: "heading-md/normal", style: tmp.subtitle, children: intl2.string(credential(1115).t.IfTbc1) };
+  Text = credential(4832).Text;
+  intl2 = credential(1115).intl;
   items[1] = closure_4(View, obj4);
-  const obj6 = { children: null };
-  const obj7 = { text: null, onPress: null, variant: "primary", grow: true };
-  const intl3 = credential(1115).intl;
-  obj7.text = intl3.string(credential(1115).t["lqK//z"]);
-  obj7.onPress = handleClose;
-  obj6.children = closure_4(credential(5281).Button, obj7);
+  const obj6 = { children: closure_4(Button, obj7) };
+  obj7 = { text: intl3.string(credential(1115).t["lqK//z"]), onPress: handleClose, variant: "primary", grow: true };
+  Button = credential(5281).Button;
+  intl3 = credential(1115).intl;
   items[2] = closure_4(View, obj6);
-  const obj8 = { children: null };
-  const obj9 = { text: null, onPress: null, variant: "destructive", disabled: null, loading: null, grow: true };
-  const intl4 = credential(1115).intl;
-  obj9.text = intl4.string(credential(1115).t.zYOk0f);
-  obj9.onPress = function onPress() {
-    closure_1_1(true);
-    ActionSheetActionCreatorsDefault.hideActionSheet();
-    const result = WebAuthnActionCreators.deleteWebAuthnCredential(credential);
-    const nextPromise = result.then(() => {
-      const obj2 = { key: "WEBAUTHN_CREDENTIAL_DELETE_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
-      const intl = credential(1115).intl;
-      obj2.content = intl.string(credential(1115).t.ZnkeXs);
-      obj2.icon = closure_1_1(10115);
-      obj2.IconComponent = credential(4792).CircleCheckIcon;
-      closure_1_1(4528).open(obj2);
-    });
-    result.then(() => {
-      const obj2 = { key: "WEBAUTHN_CREDENTIAL_DELETE_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
-      const intl = credential(1115).intl;
-      obj2.content = intl.string(credential(1115).t.ZnkeXs);
-      obj2.icon = closure_1_1(10115);
-      obj2.IconComponent = credential(4792).CircleCheckIcon;
-      closure_1_1(4528).open(obj2);
-    }).catch((error) => {
-      const obj = closure_1_1(4528);
-      obj.open({ key: "WEBAUTHN_CREDENTIAL_DELETE_ERROR_TOAST_KEY", content: error.message, icon: closure_1_1(8905), IconComponent: credential(8048).WarningIcon, iconColor: "icon-feedback-critical" });
-    }).finally(() => {
-      closure_1_1(false);
-    });
+  const obj8 = { children: closure_4(Button2, obj9) };
+  obj9 = {
+    text: intl4.string(credential(1115).t.zYOk0f),
+    onPress() {
+      const tmp = importDefault(true);
+      let obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      let obj2 = WebAuthnActionCreators;
+      const result = obj2.deleteWebAuthnCredential(credential);
+      const nextPromise = result.then(() => {
+        let intl;
+        const obj = { key: "WEBAUTHN_CREDENTIAL_DELETE_SUCCESS_TOAST_KEY", content: intl.string(credential(closure_1_2[8]).t.ZnkeXs), icon: closure_1_1(closure_1_2[14]), IconComponent: credential(closure_1_2[15]).CircleCheckIcon, iconColor: "status-positive" };
+        const open = closure_1_1(closure_1_2[13]).open;
+        closure_1_1(closure_1_2[13]);
+        intl = credential(closure_1_2[8]).intl;
+        open(obj);
+      });
+      const catchPromise = nextPromise.catch((error) => {
+        const obj = closure_1_1(closure_1_2[13]);
+        const obj2 = { key: "WEBAUTHN_CREDENTIAL_DELETE_ERROR_TOAST_KEY", content: error.message, icon: closure_1_1(closure_1_2[16]), IconComponent: credential(closure_1_2[17]).WarningIcon, iconColor: "icon-feedback-critical" };
+        obj.open(obj2);
+      });
+      catchPromise.finally(() => {
+        closure_1_1(false);
+      });
+    },
+    variant: "destructive",
+    disabled: deleting,
+    loading: deleting,
+    grow: true
   };
-  obj9.disabled = deleting;
-  obj9.loading = deleting;
-  obj8.children = closure_4(credential(5281).Button, obj9);
+  Button2 = credential(5281).Button;
+  intl4 = credential(1115).intl;
   items[3] = closure_4(View, obj8);
-  obj.children = items;
-  return closure_5(credential(6571).BottomSheet, obj);
+  return closure_5(BottomSheet, obj);
 };

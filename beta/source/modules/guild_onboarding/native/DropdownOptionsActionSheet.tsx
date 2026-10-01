@@ -5,34 +5,56 @@
 // Exports: default
 
 // Module 6556 (DropdownOptionsActionSheet)
+import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
+import intl4 from "intl" /* 1115 */;
+import EmojiConstants from "EmojiConstants" /* 1375 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 5771 */;
 import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let BottomSheet;
+
+let c9;
+let metroImportAll;
 function DropdownOptionRow(option) {
+  let emojiURL;
+  let intl;
+  let items2;
+  let leading;
+  let obj4;
+  let onSelect;
+  let responses;
+  let str;
+  let tmp13;
   option = option.option;
   ({ responses, onSelect } = option);
   let selected;
-  const tmp = closure_10();
+  const canBeNew = option.canBeNew;
+  let tmp = closure_10();
   const items = [EmojiStore];
-  const stateFromStores = option(selected[7]).useStateFromStores(items, () => {
+  const obj = option(selected[7]);
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const emoji = option.emoji;
     let id;
+    const tmp = option;
     if (emoji != null) {
       id = emoji.id;
     }
     let usableCustomEmojiById = null;
     if (null != id) {
-      const emoji2 = option.emoji;
+      const emoji2 = tmp.emoji;
       let id1;
+      const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
       if (emoji2 != null) {
         id1 = emoji2.id;
       }
-      usableCustomEmojiById = EmojiStore.getUsableCustomEmojiById(id1);
+      usableCustomEmojiById = getUsableCustomEmojiById(id1);
     }
     return usableCustomEmojiById;
   });
@@ -40,38 +62,35 @@ function DropdownOptionRow(option) {
   const items1 = [onSelect, option, selected];
   let emoji = option.emoji;
   let id;
-  const onPress = noop.useCallback(() => {
+  const onPress = react.useCallback(() => {
     onSelect(option, !selected);
   }, items1);
   if (emoji != null) {
     id = emoji.id;
   }
   if (null != id) {
-    const obj2 = { style: { display: "flex", alignItems: "center" }, children: null };
-    const obj4 = { textEmojiStyle: null, fastImageStyle: null, src: null, name: null };
+    const obj2 = { style: { display: "flex", alignItems: "center" }, children: closure_8(tmp13, obj4) };
+    obj4 = { textEmojiStyle: null, fastImageStyle: null, src: emojiURL, name: str };
     ({ optionTextEmoji: obj3.textEmojiStyle, optionImageEmoji: obj3.fastImageStyle } = tmp);
-    let emojiURL;
+    emojiURL = undefined;
+    const tmp11 = View;
+    const tmp12 = onSelect;
+    tmp13 = onSelect(selected[8]);
     if (null != stateFromStores) {
-      const obj6 = { id: null, animated: null, size: null };
+      const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
       ({ id: obj5.id, animated: obj5.animated } = stateFromStores);
-      obj6.size = EMOJI_URL_BASE_SIZE;
-      emojiURL = tmp12(tmp3[9]).getEmojiURL(obj6);
-      const tmp12Result = tmp12(tmp3[9]);
+      const tmp12Result = tmp12(selected[9]);
+      emojiURL = tmp12Result.getEmojiURL(obj6);
     }
-    obj4.src = emojiURL;
     const emoji3 = option.emoji;
-    let str;
+    str = undefined;
     if (emoji3 != null) {
       str = emoji3.name;
     }
     if (str == null) {
       str = "";
     }
-    obj4.name = str;
-    obj2.children = closure_8(onSelect(tmp3[8]), obj4);
-    let leading = tmp10(View, obj2);
-    tmp12 = onSelect;
-    const tmp13 = onSelect(tmp3[8]);
+    leading = tmp10(tmp11, obj2);
   } else {
     let emoji2 = option.emoji;
     let name;
@@ -81,62 +100,79 @@ function DropdownOptionRow(option) {
     leading = null;
   }
   let trailing = null;
-  if (option.canBeNew) {
+  if (canBeNew) {
     trailing = null;
     if (option.isUnseen) {
-      const obj7 = { color: tmp2(tmp3[10]).BadgeColors.BRAND, text: null, textStyle: null };
-      const intl = tmp2(tmp3[11]).intl;
-      obj7.text = intl.string(tmp2(tmp3[11]).t.y2b7CA);
-      obj7.textStyle = tmp.newBadge;
-      trailing = closure_8(tmp2(tmp3[10]).TextBadge, obj7);
+      const obj7 = { color: option(selected[10]).BadgeColors.BRAND, text: intl.string(option(selected[11]).t.y2b7CA), textStyle: tmp.newBadge };
+      const TextBadge = tmp2(tmp3[10]).TextBadge;
+      intl = tmp2(tmp3[11]).intl;
+      trailing = closure_8(TextBadge, obj7);
     }
   }
-  const obj8 = { style: tmp.labelRow, children: null };
-  const items2 = [closure_8(option(selected[12]).Text, { variant: "text-md/normal", children: option.title }), trailing];
-  obj8.children = items2;
+  const obj8 = { style: tmp.labelRow, children: items2 };
+  items2 = [, ];
+  const obj14 = { variant: "text-md/normal", children: option.title };
+  items2[0] = closure_8(option(selected[12]).Text, obj14);
+  items2[1] = trailing;
   const label = closure_9(View, obj8);
   return closure_8(onSelect(selected[13]), { label, selected, leading, trailing, onPress });
 }
-const View = fn(17).View;
-const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4836);
+const View = react_native.View;
+const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ optionTextEmoji: { fontSize: 24, lineHeight: 24, paddingTop: 5 }, optionImageEmoji: { height: 24, width: 24 }, newBadge: { fontWeight: "bold" }, labelRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, closeButtonWrapper: { marginTop: 16, marginHorizontal: 16 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding/native/DropdownOptionsActionSheet.tsx");
 
 export default function DropdownOptionsActionSheet(arg0) {
-  ({ guildId: require, promptId: importDefault, canBeNew: dependencyMap, onSelect: noop } = arg0);
+  let BottomSheetScrollView;
+  let Button;
+  let intl;
+  let intl2;
+  let intl3;
+  let items2;
+  let obj5;
+  let obj6;
+  let obj9;
+  let onSelect;
+  let options;
+  ({ guildId: require, promptId: importDefault, canBeNew: dependencyMap, onSelect: react } = arg0);
   const tmp = closure_10();
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  let obj = useStateFromStores;
   const items = [GuildOnboardingPromptsStore];
-  const stateFromStores = useStateFromStores.useStateFromStores(items, () => GuildOnboardingPromptsStore.getOnboardingPrompt(importDefault));
+  const stateFromStores = obj.useStateFromStores(items, () => GuildOnboardingPromptsStore.getOnboardingPrompt(importDefault));
   const items1 = [GuildOnboardingPromptsStore];
-  const responses = useStateFromStores.useStateFromStoresArray(items1, () => GuildOnboardingPromptsStore.getOnboardingResponsesForPrompt(require, importDefault));
+  const obj2 = useStateFromStores;
+  const responses = obj2.useStateFromStoresArray(items1, () => GuildOnboardingPromptsStore.getOnboardingResponsesForPrompt(require, importDefault));
   if (null == stateFromStores) {
     return null;
   } else {
-    const obj3 = { title: null };
-    const intl = tmp3(1115).intl;
-    obj3.title = intl.string(tmp3(1115).t.E2ICbC);
-    const obj4 = { scrollable: true, header: closure_8(tmp3(6570).BottomSheetTitleHeader, obj3), children: null };
-    const obj5 = { contentContainerStyle: null, children: null };
-    const obj6 = { paddingBottom: useSafeAreaInsetsDefault().bottom };
-    obj5.contentContainerStyle = obj6;
-    const obj7 = { accessibilityRole: "radiogroup", accessibilityLabel: null, children: null };
-    const intl2 = tmp3(1115).intl;
-    obj7.accessibilityLabel = intl2.string(tmp3(1115).t.E2ICbC);
-    const options = stateFromStores.options;
-    obj7.children = options.map((option) => React6(DropdownOptionRow, { option, responses, onSelect, canBeNew: Boolean(dependencyMap) }, option.id));
-    const items2 = [closure_8(tmp3(1177).CardSection, obj7), ];
-    const obj8 = { style: tmp.closeButtonWrapper, children: null };
-    const obj9 = { onPress: tmp5, text: null, grow: true };
-    const intl3 = tmp3(1115).intl;
-    obj9.text = intl3.string(tmp3(1115).t.cpT0Cq);
-    obj8.children = closure_8(tmp3(5281).Button, obj9);
+    const obj3 = { title: intl.string(intl4.t.E2ICbC) };
+    const BottomSheetTitleHeader = tmp3(6570).BottomSheetTitleHeader;
+    intl = tmp3(1115).intl;
+    const obj4 = { scrollable: true, header: closure_8(BottomSheetTitleHeader, obj3), children: closure_9(BottomSheetScrollView, obj5) };
+    closure_8(BottomSheetTitleHeader, obj3);
+    BottomSheet = tmp3(6571).BottomSheet;
+    obj5 = { contentContainerStyle: obj6, children: items2 };
+    obj6 = { paddingBottom: bottom };
+    BottomSheetScrollView = tmp3(6045).BottomSheetScrollView;
+    const obj7 = {
+      accessibilityRole: "radiogroup",
+      accessibilityLabel: intl2.string(intl4.t.E2ICbC),
+      children: options.map((option) => {
+          const obj = { option, responses, onSelect: react, canBeNew: Boolean(dependencyMap) };
+          return metroImportAll(DropdownOptionRow, obj, option.id);
+        })
+    };
+    const CardSection = tmp3(1177).CardSection;
+    intl2 = tmp3(1115).intl;
+    options = stateFromStores.options;
+    items2 = [closure_8(CardSection, obj7), ];
+    const obj8 = { style: tmp.closeButtonWrapper, children: closure_8(Button, obj9) };
+    obj9 = { onPress: tmp5, text: intl3.string(intl4.t.cpT0Cq), grow: true };
+    Button = tmp3(5281).Button;
+    intl3 = tmp3(1115).intl;
     items2[1] = closure_8(responses, obj8);
-    obj5.children = items2;
-    obj4.children = closure_9(tmp3(6045).BottomSheetScrollView, obj5);
-    return closure_8(tmp3(6571).BottomSheet, obj4);
+    return closure_8(BottomSheet, obj4);
   }
 };

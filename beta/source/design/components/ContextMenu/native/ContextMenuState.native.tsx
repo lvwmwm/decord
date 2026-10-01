@@ -5,20 +5,24 @@
 // Exports: hideContextMenu, resetContextMenuState, showContextMenu, updateContextMenuState, useActiveContextMenu, useContextMenuState
 
 // Module 7359 (ContextMenuState)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
+import react_native from "react-native" /* 1248 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import module_560 from "module_560" /* 560 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const module_560 = fn(560);
-let obj2 = module_560.create(() => ({ menu: null }));
+const ContextMenuStore = module_560.create(() => ({ menu: null }));
 function updateContextMenuState(absoluteX, absoluteY, callback1) {
+  let activeIndex;
+  let itemMeasurements;
+  let pan;
   ({ pan, itemMeasurements, activeIndex } = callback1);
   const result = pan.set(absoluteY);
-  value = itemMeasurements.get();
+  const value = itemMeasurements.get();
   let num = 0;
   if (0 < value.length) {
     while (true) {
@@ -38,16 +42,17 @@ function updateContextMenuState(absoluteX, absoluteY, callback1) {
     const result1 = num / 4;
     if (activeIndex.get() !== result1) {
       const result2 = activeIndex.set(result1);
-      ReanimatedRexport.runOnJS(HapticUtils.triggerHapticFeedback)(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
-      const runOnJSResult = ReanimatedRexport.runOnJS(HapticUtils.triggerHapticFeedback);
+      const obj = ReanimatedRexport;
+      const runOnJSResult = obj.runOnJS(HapticUtils.triggerHapticFeedback);
+      runOnJSResult(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
     }
   }
   const result3 = activeIndex.set(-1);
 }
-updateContextMenuState.__closure = { INDEX_BOUNDS_WIDTH_OFFSET: 2, INDEX_BOUNDS_HEIGHT_OFFSET: 3, INDEX_BOUNDS_PAGE_Y_OFFSET: 1, INDEX_BOUNDS_PAGE_X_OFFSET: 0, INDEX_BOUNDS_OFFSET: 4, runOnJS: fn(4566).runOnJS, triggerHapticFeedback: fn(4801).triggerHapticFeedback, HapticFeedbackTypes: fn(4801).HapticFeedbackTypes };
+let obj2 = { INDEX_BOUNDS_WIDTH_OFFSET: 2, INDEX_BOUNDS_HEIGHT_OFFSET: 3, INDEX_BOUNDS_PAGE_Y_OFFSET: 1, INDEX_BOUNDS_PAGE_X_OFFSET: 0, INDEX_BOUNDS_OFFSET: 4, runOnJS: ReanimatedRexport.runOnJS, triggerHapticFeedback: HapticUtils.triggerHapticFeedback, HapticFeedbackTypes: HapticUtils.HapticFeedbackTypes };
+updateContextMenuState.__closure = obj2;
 updateContextMenuState.__workletHash = 10158111154044;
 updateContextMenuState.__initData = { code: "function updateContextMenuState_ContextMenuStateNativeTsx1(absoluteX,absoluteY,state){const{INDEX_BOUNDS_WIDTH_OFFSET,INDEX_BOUNDS_HEIGHT_OFFSET,INDEX_BOUNDS_PAGE_Y_OFFSET,INDEX_BOUNDS_PAGE_X_OFFSET,INDEX_BOUNDS_OFFSET,runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;const{pan:pan,itemMeasurements:itemMeasurements,activeIndex:activeIndex}=state;pan.set(absoluteY);const bounds=itemMeasurements.get();let offset=0;while(offset<bounds.length){const width=bounds[offset+INDEX_BOUNDS_WIDTH_OFFSET];const height=bounds[offset+INDEX_BOUNDS_HEIGHT_OFFSET];const pageY=bounds[offset+INDEX_BOUNDS_PAGE_Y_OFFSET];const pageX=bounds[offset+INDEX_BOUNDS_PAGE_X_OFFSET];const lowerY=pageY;const upperY=pageY+height;const lowerX=pageX;const upperX=pageX+width;if(absoluteY>=lowerY&&absoluteY<=upperY&&absoluteX>=lowerX&&absoluteX<=upperX){const index=offset/INDEX_BOUNDS_OFFSET;if(activeIndex.get()!==index){activeIndex.set(index);runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}return;}offset+=INDEX_BOUNDS_OFFSET;}activeIndex.set(-1);}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("design/components/ContextMenu/native/ContextMenuState.native.tsx");
 
 export const INDEX_BOUNDS_OFFSET = 4;
@@ -55,13 +60,20 @@ export const INDEX_BOUNDS_PAGE_X_OFFSET = 0;
 export const INDEX_BOUNDS_PAGE_Y_OFFSET = 1;
 export const INDEX_BOUNDS_WIDTH_OFFSET = 2;
 export const INDEX_BOUNDS_HEIGHT_OFFSET = 3;
-export const ContextMenuStore = obj2;
+export { ContextMenuStore };
 export const showContextMenu = function showContextMenu(size) {
+  let menu;
   _require = size;
-  require("ReactBatchUpdates").batchUpdates(() => obj2.setState({ menu }));
+  let obj = require("react-native");
+  obj.batchUpdates(() => {
+    const obj = { menu };
+    return obj.setState(obj);
+  });
 };
 export const hideContextMenu = function hideContextMenu() {
-  ReactBatchUpdates.batchUpdates(() => {
+  let state;
+  let obj = react_native;
+  obj.batchUpdates(() => {
     state.setState((menu) => {
       let obj = menu;
       if (null != menu.menu) {
@@ -72,17 +84,23 @@ export const hideContextMenu = function hideContextMenu() {
   });
 };
 export const useActiveContextMenu = function useActiveContextMenu() {
-  return obj2((menu) => menu.menu);
+  return obj((menu) => menu.menu);
 };
 export { updateContextMenuState };
 export const useContextMenuState = function useContextMenuState() {
-  const sharedValue = ReanimatedRexport.useSharedValue(-1);
-  const sharedValue1 = ReanimatedRexport.useSharedValue([]);
-  const sharedValue2 = ReanimatedRexport.useSharedValue(-1);
+  const obj = ReanimatedRexport;
+  const sharedValue = obj.useSharedValue(-1);
+  const obj2 = ReanimatedRexport;
+  const sharedValue1 = obj2.useSharedValue([]);
+  const obj3 = ReanimatedRexport;
+  const sharedValue2 = obj3.useSharedValue(-1);
   const items = [sharedValue, sharedValue1, sharedValue2];
-  return noop.useMemo(() => ({ pan: sharedValue, itemMeasurements: sharedValue1, activeIndex: sharedValue2 }), items);
+  return react.useMemo(() => ({ pan: sharedValue, itemMeasurements: sharedValue1, activeIndex: sharedValue2 }), items);
 };
 export const resetContextMenuState = function resetContextMenuState(contextMenuState) {
+  let activeIndex;
+  let itemMeasurements;
+  let pan;
   ({ activeIndex, pan, itemMeasurements } = contextMenuState);
   const result = activeIndex.set(-1);
   const result1 = pan.set(-1);

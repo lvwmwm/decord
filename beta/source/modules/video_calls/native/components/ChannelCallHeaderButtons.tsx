@@ -5,56 +5,59 @@
 // Exports: CameraButton, GridButton
 
 // Module 9494 (ChannelCallHeaderButtons)
-import initialize from "initialize" /* 504 */;
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1115 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 8831 */;
 import useSelectedParticipantDefault from "useSelectedParticipant" /* 8832 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
 import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 9381 */;
-import _modDef9495 from "module_9495" /* 9495 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9495 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9496 */;
+import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallHeaderButtons.tsx");
 
 export const CameraButton = function CameraButton() {
+  let obj = get_initialized;
   const items = [MediaEngineStore];
-  const stateFromStoresObject = initialize.useStateFromStoresObject(items, () => ({ isVideoEnabled: MediaEngineStore.isVideoEnabled(), videoDeviceId: MediaEngineStore.getVideoDeviceId(), videoDevices: MediaEngineStore.getVideoDevices() }));
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { isVideoEnabled: MediaEngineStore.isVideoEnabled(), videoDeviceId: MediaEngineStore.getVideoDeviceId(), videoDevices: MediaEngineStore.getVideoDevices() };
+    return obj;
+  });
   ({ videoDeviceId: require, videoDevices: importDefault } = stateFromStoresObject);
   let tmp4 = null;
   if (stateFromStoresObject.isVideoEnabled) {
-    const obj2 = { accessibilityLabel: null, source: null, onPress: null, disableBackground: true };
+    ChannelCallNavigatorIconDefault;
     const intl = tmp(1115).intl;
-    obj2.accessibilityLabel = intl.string(tmp(1115).t["t9eQ/g"]);
-    obj2.source = _modDef9495;
-    obj2.onPress = function onPress() {
-      const keys = Object.keys(closure_1_1);
+    tmp4 = <tmp7 accessibilityLabel={intl.string(intl2.t["t9eQ/g"])} source={AssetRegistryDefault} onPress={function onPress() {
+      const keys = Object.keys(importDefault);
       const found = keys.find((item) => item !== closure_1_0);
       if (null != found) {
-        AudioActionCreatorsDefault.setVideoDevice(found);
+        const obj = AudioActionCreatorsDefault;
+        obj.setVideoDevice(found);
       }
-    };
-    tmp4 = jsx(ChannelCallNavigatorIconDefault, { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
+    }} disableBackground />;
   }
   return tmp4;
 };
 export const GridButton = function GridButton(channel) {
   channel = channel.channel;
   let tmp4 = null;
+  const tmp3 = useIsPrivateAudioOnlyCallDefault(channel);
   if (null != useSelectedParticipantDefault(channel)) {
     tmp4 = null;
     if (!tmp3) {
-      const obj = { accessibilityLabel: null, source: null, onPress: null, disableBackground: true };
+      ChannelCallNavigatorIconDefault;
       const intl = channel(1115).intl;
-      obj.accessibilityLabel = intl.string(channel(1115).t.HK4JIu);
-      obj.source = tmp(9496);
-      obj.onPress = function onPress() {
-        return ChannelRTCActionCreatorsDefault.selectParticipant(channel.id, null);
-      };
-      tmp4 = jsx(tmp(9381), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
-      const tmpResult = tmp(9381);
+      tmp4 = <tmpResult accessibilityLabel={intl.string(channel(1115).t.HK4JIu)} source={AssetRegistryDefault2} onPress={function onPress() {
+        const obj = ChannelRTCActionCreatorsDefault;
+        return obj.selectParticipant(channel.id, null);
+      }} disableBackground />;
     }
   }
   return tmp4;

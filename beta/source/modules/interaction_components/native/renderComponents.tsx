@@ -4,6 +4,7 @@
 // Dependencies: [19, 21, 1979, 17160, 15312, 17161, 15315, 15316, 17162, 17163, 17165, 17166, 17167, 2]
 
 // Module 17159 (renderComponents)
+import Fragment from "Fragment" /* 21 */;
 import Server from "Server" /* 1979 */;
 import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 15312 */;
 import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 15315 */;
@@ -15,69 +16,66 @@ import FileUploadActionComponentDefault from "FileUploadActionComponent" /* 1716
 import RadioGroupActionComponentDefault from "RadioGroupActionComponent" /* 17165 */;
 import CheckboxGroupActionComponentDefault from "CheckboxGroupActionComponent" /* 17166 */;
 import CheckboxActionComponentDefault from "CheckboxActionComponent" /* 17167 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function renderComponents(components) {
   return components.map((item, index) => renderComponent(item, index.toString()));
 }
 function renderComponent(component, arg1) {
   const type = component.type;
   if (Server.ComponentType.ACTION_ROW === type) {
-    const obj2 = {};
+    ActionRowLayoutComponentDefault;
     const merged = Object.assign(component);
-    obj2.renderComponents = renderComponents;
-    return jsx(ActionRowLayoutComponentDefault, {}, arg1);
-  } else if (tmp(1979).ComponentType.STRING_SELECT === type) {
-    const obj3 = {};
+    return <tmp60 key={arg1} renderComponents={renderComponents} />;
+  } else if (Server.ComponentType.STRING_SELECT === type) {
+    StringSelectActionComponentDefault;
     const merged1 = Object.assign(component);
-    return jsx(StringSelectActionComponentDefault, {}, arg1);
-  } else if (tmp(1979).ComponentType.TEXT_INPUT === type) {
-    const obj4 = {};
+    return <tmp54 key={arg1} />;
+  } else if (Server.ComponentType.TEXT_INPUT === type) {
+    TextInputActionComponentDefault;
     const merged2 = Object.assign(component);
-    return jsx(TextInputActionComponentDefault, {}, arg1);
+    return <tmp48 key={arg1} />;
   } else {
-    if (tmp(1979).ComponentType.USER_SELECT !== type) {
-      if (tmp(1979).ComponentType.ROLE_SELECT !== type) {
-        if (tmp(1979).ComponentType.MENTIONABLE_SELECT !== type) {
-          if (tmp(1979).ComponentType.CHANNEL_SELECT !== type) {
-            if (tmp(1979).ComponentType.TEXT_DISPLAY === type) {
-              const obj5 = {};
+    if (Server.ComponentType.USER_SELECT !== type) {
+      if (Server.ComponentType.ROLE_SELECT !== type) {
+        if (Server.ComponentType.MENTIONABLE_SELECT !== type) {
+          if (Server.ComponentType.CHANNEL_SELECT !== type) {
+            if (Server.ComponentType.TEXT_DISPLAY === type) {
+              TextDisplayComponentDefault;
               const merged3 = Object.assign(component);
-              return jsx(TextDisplayComponentDefault, {}, arg1);
-            } else if (tmp(1979).ComponentType.LABEL === type) {
-              const obj6 = {};
+              return <tmp36 key={arg1} />;
+            } else if (Server.ComponentType.LABEL === type) {
+              LabelLayoutComponentDefault;
               const merged4 = Object.assign(component);
-              obj6.renderComponent = renderComponent;
-              return jsx(LabelLayoutComponentDefault, {}, arg1);
-            } else if (tmp(1979).ComponentType.FILE_UPLOAD === type) {
-              const obj7 = {};
+              return <tmp29 key={arg1} renderComponent={renderComponent} />;
+            } else if (Server.ComponentType.FILE_UPLOAD === type) {
+              FileUploadActionComponentDefault;
               const merged5 = Object.assign(component);
-              return jsx(FileUploadActionComponentDefault, {}, arg1);
-            } else if (tmp(1979).ComponentType.RADIO_GROUP === type) {
-              const obj8 = {};
+              return <tmp23 key={arg1} />;
+            } else if (Server.ComponentType.RADIO_GROUP === type) {
+              RadioGroupActionComponentDefault;
               const merged6 = Object.assign(component);
-              return jsx(RadioGroupActionComponentDefault, {}, arg1);
-            } else if (tmp(1979).ComponentType.CHECKBOX_GROUP === type) {
-              const obj9 = {};
+              return <tmp17 key={arg1} />;
+            } else if (Server.ComponentType.CHECKBOX_GROUP === type) {
+              CheckboxGroupActionComponentDefault;
               const merged7 = Object.assign(component);
-              return jsx(CheckboxGroupActionComponentDefault, {}, arg1);
-            } else if (tmp(1979).ComponentType.CHECKBOX === type) {
-              const obj = {};
+              return <tmp11 key={arg1} />;
+            } else if (Server.ComponentType.CHECKBOX === type) {
+              CheckboxActionComponentDefault;
               const merged8 = Object.assign(component);
-              return jsx(CheckboxActionComponentDefault, {}, arg1);
+              return <tmp5 key={arg1} />;
             }
           }
         }
       }
     }
-    const obj10 = {};
+    SearchableSelectActionComponentDefault;
     const merged9 = Object.assign(component);
-    return jsx(SearchableSelectActionComponentDefault, {}, arg1);
+    return <tmp42 key={arg1} />;
   }
 }
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/interaction_components/native/renderComponents.tsx");
 
 export { renderComponents };

@@ -7,10 +7,9 @@
 import _mod13732 from "module_13732" /* 13732 */;
 import BestAvailableLocale from "BestAvailableLocale" /* 13735 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const LookupSupportedLocales = function LookupSupportedLocales(arg0, arg1) {
+  let num;
   const items = [];
   for (let num = 0; num < arg1.length; num = num + 1) {
     let str = arg1[num];

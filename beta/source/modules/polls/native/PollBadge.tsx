@@ -5,33 +5,41 @@
 // Exports: default
 
 // Module 16492 (PollBadge)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
+import intl2 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import _modDef16493 from "module_16493" /* 16493 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16493 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4836);
-const obj2 = { container: { borderRadius: nativeDefault.radii.round, paddingHorizontal: 8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, color: nativeDefault.colors.TEXT_MUTED, flexDirection: "row", alignItems: "center" }, text: { marginLeft: 4, textTransform: "uppercase" } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let obj2;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { container: obj2, text: { marginLeft: 4, textTransform: "uppercase" } };
+obj2 = { borderRadius: nativeDefault.radii.round, paddingHorizontal: 8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, color: nativeDefault.colors.TEXT_MUTED, flexDirection: "row", alignItems: "center" };
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/polls/native/PollBadge.tsx");
 
 export default function PollBadge(style) {
+  let intl;
+  let items;
+  let items1;
+  style = style.style;
   const tmp = closure_6();
-  const obj = { style: null, children: null };
-  const items = [tmp.container, style.style];
-  obj.style = items;
-  const items1 = [React4(native.Icon, { size: native.IconSizes.EXTRA_SMALL_10, source: _modDef16493 }), ];
-  const obj3 = { style: tmp.text, variant: "text-xs/semibold", children: null };
-  const intl = util.intl;
-  obj3.children = intl.string(util.t.RgIi2B);
-  items1[1] = React4(Text_Text.Text, obj3);
-  obj.children = items1;
+  const obj = { style: items, children: items1 };
+  items = [tmp.container, style];
+  const obj2 = { size: native.IconSizes.EXTRA_SMALL_10, source: AssetRegistryDefault };
+  const Icon = native.Icon;
+  items1 = [React3(Icon, obj2), ];
+  const obj3 = { style: tmp.text, variant: "text-xs/semibold", children: intl.string(intl2.t.RgIi2B) };
+  const Text = Text_Text.Text;
+  intl = intl2.intl;
+  items1[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
 };

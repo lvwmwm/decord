@@ -9,170 +9,195 @@ import nativeDefault from "native" /* 576 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
 import PromotionUtils from "PromotionUtils" /* 12962 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: hasOwnProperty, View: metroRequire, Image: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4836);
-let obj2 = { loading: { marginVertical: 80 }, body: { alignItems: "center" }, title: { marginBottom: 8 }, errorTitle: { lineHeight: 24, marginBottom: 8 }, bodyText: { textAlign: "center", lineHeight: 20 }, copyInputContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginTop: 16, padding: 12, borderRadius: nativeDefault.radii.sm }, copyInputLabel: { lineHeight: 20, marginBottom: 8 }, copyInput: null, copyInputCopied: null, copyButton: null, promotionArt: null, errorArt: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginTop: 16, padding: 12, borderRadius: nativeDefault.radii.sm };
-obj2.copyInput = { borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, padding: 8, marginBottom: 8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-let obj4 = { borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, padding: 8, marginBottom: 8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-obj2.copyInputCopied = { borderColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-obj2.copyButton = { paddingHorizontal: 8, marginLeft: 8 };
-obj2.promotionArt = { width: 200, height: 100, marginBottom: 20 };
-obj2.errorArt = { width: 141, height: 99, marginBottom: 20 };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
+let c10;
+let c9;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let react = react_mod;
+({ ActivityIndicator: hasOwnProperty, View: metroRequire, Image: metroImportDefault, ScrollView: metroImportAll } = react_native);
+({ jsx: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { loading: { marginVertical: 80 }, body: { alignItems: "center" }, title: { marginBottom: 8 }, errorTitle: { lineHeight: 24, marginBottom: 8 }, bodyText: { textAlign: "center", lineHeight: 20 }, copyInputContainer: obj2, copyInputLabel: { lineHeight: 20, marginBottom: 8 }, copyInput: obj3, copyInputCopied: obj4, copyButton: { paddingHorizontal: 8, marginLeft: 8 }, promotionArt: { width: 200, height: 100, marginBottom: 20 }, errorArt: { width: 141, height: 99, marginBottom: 20 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginTop: 16, padding: 12, borderRadius: nativeDefault.radii.sm };
+createStyles = createStyles.createStyles;
+obj3 = { borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, padding: 8, marginBottom: 8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+obj4 = { borderColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
+let closure_11 = createStyles(obj);
 let result = size.fileFinishedImporting("components_native/premium/OutboundPromotionClaimAlert.tsx");
 
 export default function OutboundPromotionClaimAlert(onCancel) {
+  let Button;
+  let _undefined;
+  let c4;
+  let c5;
+  let intl;
+  let intl2;
+  let intl4;
+  let intl5;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let obj11;
+  let obj12;
+  let obj14;
+  let stringResult1;
+  let stringResult2;
+  let tmp11;
+  let tmp14Result;
+  let tmp3;
+  let tmp7;
   onCancel = onCancel.onCancel;
   const onClaim = onCancel.onClaim;
   const code = onCancel.code;
   const outboundPromotion = onCancel.outboundPromotion;
-  noop = undefined;
+  react = undefined;
   c5 = undefined;
-  const tmp = closure_11();
-  [tmp3, c4] = outboundPromotion(noop.useState(null), 2);
-  const tmp2 = outboundPromotion(noop.useState(null), 2);
+  let tmp = closure_11();
+  [tmp3, c4] = outboundPromotion(react.useState(null), 2);
+  const tmp2 = outboundPromotion(react.useState(null), 2);
   [tmp7, c5] = outboundPromotion(onClaim(code[6])(false, 2000), 2);
-  closure_6 = tmp8;
+  let closure_6 = tmp8;
   const tmp6 = outboundPromotion(onClaim(code[6])(false, 2000), 2);
-  const analyticsLocations = onClaim(code[7])(onClaim(code[8]).USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
-  const items = [null != code, , , , , ];
+  const tmp9 = onClaim(code[7]);
+  const analyticsLocations = tmp9(onClaim(code[8]).USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
+  const items = [tmp8, , , , , ];
   ({ id: arr[1], outboundTitle: arr[2], partnerId: arr[3] } = outboundPromotion);
   items[4] = onClaim;
   items[5] = analyticsLocations;
-  const effect = noop.useEffect(() => {
-    if (!closure_6) {
-      const obj3 = { promotionId: null, promotionTitle: null, partnerId: null, analyticsLocations: null };
+  const effect = react.useEffect(() => {
+    const tmp = closure_6;
+    if (!tmp) {
+      const obj3 = { promotionId: null, promotionTitle: null, partnerId: null, analyticsLocations };
       ({ id: obj2.promotionId, outboundTitle: obj2.promotionTitle, partnerId: obj2.partnerId } = outboundPromotion);
-      obj3.analyticsLocations = analyticsLocations;
-      const result = PromotionUtils.claimOutboundPromotion(obj3);
-      result.then((result) => onClaim(result)).catch((error) => closure_1_4(error));
+      const obj = PromotionUtils;
+      const result = obj.claimOutboundPromotion(obj3);
       const nextPromise = result.then((result) => onClaim(result));
+      nextPromise.catch((error) => closure_1_4(error));
     }
   }, items);
   if (null != code) {
-    let obj2 = { style: tmp.body, children: null };
+    let tmp19;
+    let stringResult;
+    let obj2 = { style: tmp.body, children: items1 };
     let obj3 = { source: tmp4(tmp5[10]), style: tmp.promotionArt };
-    const items1 = [closure_9(analyticsLocations, obj3), , , ];
-    let Text = onCancel;
-    const obj4 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
-    const intl = onCancel(tmp5[12]).intl;
-    obj4.children = intl.string(onCancel(tmp5[12]).t["23BfZh"]);
-    items1[1] = closure_9(onCancel(tmp5[11]).Heading, obj4);
+    items1 = [closure_9(analyticsLocations, obj3), , , ];
+    const obj4 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(onCancel(code[12]).t["23BfZh"]) };
+    const Heading = onCancel(tmp5[11]).Heading;
+    intl = onCancel(tmp5[12]).intl;
+    items1[1] = closure_9(Heading, obj4);
     const obj5 = { style: tmp.bodyText, variant: "text-md/medium", children: outboundPromotion.outboundRedemptionModalBody };
-    items1[2] = closure_9(onCancel(tmp5[11]).Text, obj5);
-    let obj6 = { style: tmp.copyInputContainer, children: null };
-    const obj7 = { style: tmp.copyInputLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
-    const intl2 = onCancel(tmp5[12]).intl;
-    obj7.children = intl2.string(onCancel(tmp5[12]).t.s9LFQh);
-    const items2 = [closure_9(onCancel(tmp5[11]).Text, obj7), , ];
+    items1[2] = closure_9(onCancel(code[11]).Text, obj5);
+    const obj6 = { style: tmp.copyInputContainer, children: items2 };
+    const obj7 = { style: tmp.copyInputLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(onCancel(code[12]).t.s9LFQh) };
+    const Text = onCancel(tmp5[11]).Text;
+    intl2 = onCancel(tmp5[12]).intl;
+    items2 = [closure_9(Text, obj7), , ];
     const copyInput = tmp.copyInput;
     if (tmp7) {
       const obj8 = {};
       const merged = Object.assign(copyInput);
       const merged1 = Object.assign(tmp.copyInputCopied);
-      let tmp18 = obj8;
+      tmp19 = obj8;
     } else {
-      tmp18 = copyInput;
+      tmp19 = copyInput;
     }
-    let obj9 = { style: tmp18, children: null };
-    const obj10 = { style: { flex: 1 }, horizontal: true, showsHorizontalScrollIndicator: false, children: null };
-    const obj11 = {
+    const obj9 = { style: tmp19, children: items3 };
+    const obj10 = { style: { flex: 1 }, horizontal: true, showsHorizontalScrollIndicator: false, children: closure_9(closure_6, obj11) };
+    obj11 = {
       onStartShouldSetResponderCapture() {
           return true;
         },
-      children: null
+      children: closure_9(onCancel(code[11]).Text, obj12)
     };
-    const obj12 = { lineClamp: 1, variant: "text-sm/medium", color: "interactive-text-active", children: code };
-    obj11.children = closure_9(Text(tmp5[11]).Text, obj12);
-    obj10.children = closure_9(closure_6, obj11);
-    const items3 = [closure_9(closure_8, obj10), ];
-    let obj13 = { style: tmp.copyButton, children: null };
-    const intl3 = Text(tmp5[12]).intl;
+    obj12 = { lineClamp: 1, variant: "text-sm/medium", color: "interactive-text-active", children: code };
+    items3 = [closure_9(closure_8, obj10), ];
+    const obj13 = { style: tmp.copyButton, children: closure_9(Button, obj14) };
+    Button = tmp18(tmp5[13]).Button;
+    const intl3 = tmp18(tmp5[12]).intl;
     const string = intl3.string;
-    let t = Text(tmp5[12]).t;
+    const t = tmp18(tmp5[12]).t;
     if (tmp7) {
-      let stringResult = string(t.t5VZ88);
+      stringResult = string(t.t5VZ88);
     } else {
       stringResult = string(t.OpuAlK);
     }
-    const obj14 = {
+    obj14 = {
       text: stringResult,
       size: "sm",
       onPress() {
-          ClipboardUtils.copy(code);
+          const obj = ClipboardUtils;
+          obj.copy(code);
           _undefined(true);
         }
     };
-    t = tmp16(Text(tmp5[13]).Button, obj14);
-    obj13.children = t;
-    obj13 = tmp16(tmp15, obj13);
-    items3[1] = obj13;
-    obj9.children = items3;
+    items3[1] = closure_9(closure_6, obj13);
     items2[1] = closure_10(closure_6, obj9);
-    Text = Text(tmp5[11]).Text;
-    obj9 = tmp16(Text, { variant: "text-sm/medium", color: "text-muted", children: "This code is included in your confirmation email" });
-    items2[2] = obj9;
-    obj6.children = items2;
-    obj6 = tmp14(tmp15, obj6);
-    items1[3] = obj6;
-    obj2.children = items1;
-    closure_10(closure_6, obj2);
+    items2[2] = closure_9(onCancel(code[11]).Text, { variant: "text-sm/medium", color: "text-muted", children: "This code is included in your confirmation email" });
+    items1[3] = closure_10(closure_6, obj6);
+    tmp14Result = tmp14(tmp15, obj2);
+    tmp11 = tmp16;
   } else {
+    tmp11 = closure_9;
     let obj = { style: tmp.loading };
-    let tmp13 = closure_9(c5, obj);
-    const obj15 = { style: tmp.body, children: null };
-    const obj16 = { source: tmp4(tmp5[15]), style: tmp.errorArt };
-    const items4 = [closure_9(analyticsLocations, obj16), , ];
-    const obj17 = { style: tmp.errorTitle, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: null };
-    const intl4 = onCancel(tmp5[12]).intl;
-    obj17.children = intl4.string(onCancel(tmp5[12]).t.iufib1);
-    items4[1] = closure_9(onCancel(tmp5[11]).Text, obj17);
-    const obj18 = { style: tmp.bodyText, variant: "text-md/medium", children: null };
-    const intl5 = onCancel(tmp5[12]).intl;
-    obj18.children = intl5.string(onCancel(tmp5[12]).t.eAn6z2);
-    items4[2] = closure_9(onCancel(tmp5[11]).Text, obj18);
-    obj15.children = items4;
-    const obj19 = { onCancel, confirmText: null, onConfirm: null, cancelText: null, noDefaultButtons: null, children: null };
-    const tmp32 = closure_10(closure_6, obj15);
-    if (null != tmp3) {
-      const intl7 = tmp31(tmp5[12]).intl;
-      let stringResult1 = intl7.string(tmp31(tmp5[12]).t.cpT0Cq);
-    } else {
-      const intl6 = tmp31(tmp5[12]).intl;
-      stringResult1 = intl6.string(tmp31(tmp5[12]).t["+zx47d"]);
-    }
-    obj19.confirmText = stringResult1;
-    obj19.onConfirm = function onConfirm() {
+    tmp14Result = closure_9(c5, obj);
+  }
+  const obj15 = { style: tmp.body, children: items4 };
+  items4 = [, , ];
+  const obj16 = { source: onClaim(code[15]), style: tmp.errorArt };
+  items4[0] = tmp11(analyticsLocations, obj16);
+  const obj17 = { style: tmp.errorTitle, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: intl4.string(onCancel(code[12]).t.iufib1) };
+  const Text2 = onCancel(tmp5[11]).Text;
+  intl4 = onCancel(tmp5[12]).intl;
+  items4[1] = tmp11(Text2, obj17);
+  const obj18 = { style: tmp.bodyText, variant: "text-md/medium", children: intl5.string(onCancel(code[12]).t.eAn6z2) };
+  const Text3 = onCancel(tmp5[11]).Text;
+  intl5 = onCancel(tmp5[12]).intl;
+  items4[2] = tmp11(Text3, obj18);
+  const obj19 = {
+    onCancel,
+    confirmText: stringResult1,
+    onConfirm() {
       if (null != code) {
-        const outboundPromotionRedemptionUrl = PromotionUtils.getOutboundPromotionRedemptionUrl(tmp, outboundPromotion);
-        LinkingDefault.openURL(outboundPromotionRedemptionUrl);
+        const obj = PromotionUtils;
+        const outboundPromotionRedemptionUrl = obj.getOutboundPromotionRedemptionUrl(tmp, outboundPromotion);
+        const obj2 = LinkingDefault;
+        obj2.openURL(outboundPromotionRedemptionUrl);
       }
       onCancel();
-    };
-    let stringResult2;
-    if (null == tmp3) {
-      const intl8 = tmp31(tmp5[12]).intl;
-      stringResult2 = intl8.string(tmp31(tmp5[12]).t.TulDPl);
-    }
-    obj19.cancelText = stringResult2;
-    let tmp36 = !tmp8;
-    if (!tmp8) {
-      tmp36 = null == tmp3;
-    }
-    obj19.noDefaultButtons = tmp36;
-    if (null != tmp3) {
-      tmp13 = tmp32;
-    }
-    obj19.children = tmp13;
-    return closure_9(tmp4(tmp5[16]), obj19);
+    },
+    cancelText: stringResult2,
+    noDefaultButtons: null == code && null == tmp3,
+    children: tmp14Result
+  };
+  const tmp28 = closure_10(closure_6, obj15);
+  const tmp4Result = onClaim(code[16]);
+  if (null != tmp3) {
+    const intl7 = tmp27(tmp5[12]).intl;
+    stringResult1 = intl7.string(tmp27(tmp5[12]).t.cpT0Cq);
+  } else {
+    const intl6 = tmp27(tmp5[12]).intl;
+    stringResult1 = intl6.string(tmp27(tmp5[12]).t["+zx47d"]);
   }
+  stringResult2 = undefined;
+  if (null == tmp3) {
+    const intl8 = tmp27(tmp5[12]).intl;
+    stringResult2 = intl8.string(tmp27(tmp5[12]).t.TulDPl);
+  }
+  if (null != tmp3) {
+    tmp14Result = tmp28;
+  }
+  return tmp11(tmp4Result, obj19);
 };

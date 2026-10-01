@@ -4,19 +4,21 @@
 // Dependencies: [521, 551]
 
 // Module 550 (throttle)
-import _mod521 from "module_521" /* 521 */;
-import debounce from "debounce" /* 551 */;
+import isObject from "isObject" /* 521 */;
 
 
 export default function throttle(fn, maxWait, leading) {
   if (typeof fn !== "function") {
     const _TypeError = TypeError;
+    const self = this;
+    const self2 = this;
     const typeError = new TypeError("Expected a function");
     throw typeError;
   } else {
     let flag3 = true;
     let flag4 = true;
-    if (_mod521(leading)) {
+    const tmp6 = require;
+    if (isObject(leading)) {
       let flag = true;
       if ("leading" in leading) {
         flag = leading.leading;
@@ -29,6 +31,6 @@ export default function throttle(fn, maxWait, leading) {
       flag4 = flag;
     }
     const obj = { leading: flag4, maxWait, trailing: flag3 };
-    return debounce(fn, maxWait, obj);
+    return tmp6(551)(fn, maxWait, obj);
   }
 };

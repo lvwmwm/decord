@@ -9,15 +9,18 @@ import Link from "Link" /* 1486 */;
 import size from "module_2" /* 2 */;
 
 function useNavigation() {
-  return Link.useNavigation();
+  const obj = Link;
+  return obj.useNavigation();
 }
 const result = size.fileFinishedImporting("design/components/Navigator/native/useNavigation.native.tsx");
 
 export { useNavigation };
 export const useNativeStackNavigation = function useNativeStackNavigation() {
-  return Link.useNavigation();
+  const obj = Link;
+  return obj.useNavigation();
 };
 export const useStackNavigation = useNavigation;
 export const useTabNavigation = function useTabNavigation() {
-  return Link.useNavigation();
+  const obj = Link;
+  return obj.useNavigation();
 };

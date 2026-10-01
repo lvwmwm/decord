@@ -1,103 +1,174 @@
 // Module ID: 7197
 // Function ID: 7198
 // Name: ApplicationCommandActionCreators
-// Dependencies: [502, 7198, 1074, 38, 6943, 573, 1271, 11, 1979, 2]
+// Dependencies: [502, 7198, 1074, 38, 6943, 573, 1271, 6941, 11, 1979, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
 // Module 7197 (ApplicationCommandActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 1074 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import Server from "Server" /* 1979 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7198 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Endpoints = fn(1074).Endpoints;
-const size = fn(2);
+const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandActionCreators.tsx");
 
 export const setActiveCommand = function setActiveCommand(command) {
+  let _location;
+  let channelId;
+  let commandOrigin;
+  let initialValues;
+  let query;
+  let queryLength;
+  let searchResultsPosition;
+  let section;
+  let sectionName;
+  let source;
+  let triggerSection;
   command = command.command;
   ({ channelId, section, location: _location, initialValues, triggerSection, queryLength, sectionName, query, searchResultsPosition, source, commandOrigin } = command);
   if (null != command) {
-    _modDef38(command.inputType !== ApplicationCommandTypes.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
+    const tmp3 = _modDef38;
+    tmp3(command.inputType !== ApplicationCommandTypes.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
   }
-  DispatcherDefault.dispatch({ type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", channelId, command, section, initialValues, location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source, commandOrigin });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", channelId, command, section, initialValues, location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source, commandOrigin });
 };
 export const setPreferredCommandId = function setPreferredCommandId(channelId, commandId) {
-  DispatcherDefault.dispatch({ type: "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", channelId, commandId });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", channelId, commandId };
+  obj.dispatch(obj2);
 };
 export const updateOptionStates = function updateOptionStates(id, changedOptionStates) {
-  DispatcherDefault.dispatch({ type: "APPLICATION_COMMAND_UPDATE_OPTIONS", channelId: id, changedOptionStates });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "APPLICATION_COMMAND_UPDATE_OPTIONS", channelId: id, changedOptionStates };
+  obj.dispatch(obj2);
 };
 export const updateOptionValidationStates = function updateOptionValidationStates(channelId, arg1) {
   const entries = Object.entries(arg1);
-  const fromEntriesResult = Object.fromEntries(entries.map((item) => {
+  const fromEntriesResult = fromEntries(entries.map((item) => {
+    let tmp;
+    let tmp2;
     [tmp, tmp2] = item;
     const items = [tmp, { lastValidationResult: tmp2 }];
     return items;
   }));
-  DispatcherDefault.dispatch({ type: "APPLICATION_COMMAND_UPDATE_OPTIONS", channelId, changedOptionStates: fromEntriesResult });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "APPLICATION_COMMAND_UPDATE_OPTIONS", channelId, changedOptionStates: fromEntriesResult };
+  obj.dispatch(obj2);
 };
 export const updateChannelState = function updateChannelState(arg0) {
+  let _location;
+  let changedOptionStates;
+  let channelId;
+  let command;
+  let preferredCommandId;
+  let section;
   ({ channelId, command, section, preferredCommandId, location: _location, changedOptionStates } = arg0);
-  DispatcherDefault.dispatch({ type: "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", channelId, command, section, preferredCommandId, location: _location, changedOptionStates });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", channelId, command, section, preferredCommandId, location: _location, changedOptionStates });
 };
 export const updateApplicationGuildCommandPermissions = function updateApplicationGuildCommandPermissions(arg0, arg1, arg2, permissions) {
+  let obj;
   const HTTP = HTTPUtils.HTTP;
-  const request = { body: { permissions }, url: Endpoints.APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS(arg0, arg1, arg2), rejectWithError: false };
+  const request = { body: obj, url: Endpoints.APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS(arg0, arg1, arg2), rejectWithError: false };
+  obj = { permissions };
   return HTTP.put(request);
 };
-export const performAutocomplete = function performAutocomplete(applicationId, autocomplete, data) {
-  _modDef38(null != autocomplete.autocomplete, "Missing autocomplete context");
-  ({ query, name } = autocomplete.autocomplete);
-  const fromTimestampResult = SnowflakeUtilsDefault.fromTimestamp(Date.now());
+export const performAutocomplete = function performAutocomplete(c0, c2, data) {
+  let id;
+  let name;
+  let obj4;
+  let query;
+  _modDef38(null != c2.autocomplete, "Missing autocomplete context");
+  ({ query, name } = c2.autocomplete);
+  let str = "";
+  let obj = ApplicationCommandUtils;
+  let interactionOptions = obj.extractInteractionDataProps(data).interactionOptions;
+  if (interactionOptions == null) {
+    interactionOptions = [];
+  }
+  const iter = interactionOptions[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let iter2 = nextResult;
+    let focused = "focused" in nextResult;
+    if (focused) {
+      focused = iter2.focused;
+    }
+    if (!focused) {
+      let name2 = iter2.name;
+      let _String = String;
+      let _HermesInternal = HermesInternal;
+      let str2 = "";
+      let str3 = "=";
+      let str4 = "\0";
+      str = str + "" + name2 + "=" + String(iter2.value) + "\0";
+    }
+    continue;
+  }
+  let obj2 = SnowflakeUtilsDefault;
+  const fromTimestampResult = obj2.fromTimestamp(Date.now());
   require = fromTimestampResult;
-  if (null != autocomplete.channel) {
-    const obj2 = { type: "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", nonce: fromTimestampResult, channelId: autocomplete.channel.id, query, name };
-    DispatcherDefault.dispatch(obj2);
-    if (null == ApplicationCommandAutocompleteStore.getAutocompleteChoices(autocomplete.channel.id, name, query)) {
+  if (null != c2.channel) {
+    const obj3 = { type: "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", nonce: fromTimestampResult, channelId: c2.channel.id, query, name, contextKey: str };
+    const tmp7Result = DispatcherDefault;
+    tmp7Result.dispatch(obj3);
+    if (null == ApplicationCommandAutocompleteStore.getAutocompleteChoices(c2.channel.id, name, query)) {
       const HTTP = HTTPUtils.HTTP;
-      const request = { url: Endpoints.INTERACTIONS, body: null, timeout: 3000, rejectWithError: true };
-      const obj3 = { type: Server.InteractionTypes.APPLICATION_COMMAND_AUTOCOMPLETE, application_id: applicationId.applicationId, guild_id: null, channel_id: null, session_id: null, data: null, nonce: null };
-      const guild = autocomplete.guild;
-      let id;
+      const request = { url: Endpoints.INTERACTIONS, body: obj4, timeout: 3000, rejectWithError: true };
+      const post = HTTP.post;
+      const guild = c2.guild;
+      obj4 = { type: Server.InteractionTypes.APPLICATION_COMMAND_AUTOCOMPLETE, application_id: c0.applicationId, guild_id: id, channel_id: c2.channel.id, session_id: AuthenticationStore.getSessionId(), data, nonce: fromTimestampResult };
+      id = undefined;
       if (guild != null) {
         id = guild.id;
       }
-      obj3.guild_id = id;
-      obj3.channel_id = autocomplete.channel.id;
-      obj3.session_id = AuthenticationStore.getSessionId();
-      obj3.data = data;
-      obj3.nonce = fromTimestampResult;
-      request.body = obj3;
-      HTTP.post(request).catch(() => {
-        DispatcherDefault.dispatch({ type: "INTERACTION_FAILURE", nonce: fromTimestampResult });
+      const postResult = post(request);
+      postResult.catch(() => {
+        const obj = DispatcherDefault;
+        const obj2 = { type: "INTERACTION_FAILURE", nonce: require };
+        obj.dispatch(obj2);
       });
-      const postResult = HTTP.post(request);
     }
-    const tmpResult = DispatcherDefault;
   }
 };
 export const fetchCommand = function fetchCommand(guildId, channelId, commandId) {
-  DispatcherDefault.dispatch({ type: "APPLICATION_COMMAND_FETCH", channelId, commandId, guildId });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "APPLICATION_COMMAND_FETCH", channelId, commandId, guildId };
+  obj.dispatch(obj2);
 };
 export const fetchCommands = function fetchCommands(guildId, channelId, commandIds) {
-  DispatcherDefault.dispatch({ type: "APPLICATION_COMMANDS_FETCH", channelId, commandIds, guildId });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "APPLICATION_COMMANDS_FETCH", channelId, commandIds, guildId };
+  obj.dispatch(obj2);
 };
 export const fetchCommandsForApplication = function fetchCommandsForApplication(arg0) {
+  let applicationId;
+  let channelId;
+  let guildId;
   ({ guildId, channelId, applicationId } = arg0);
-  DispatcherDefault.dispatch({ type: "APPLICATION_COMMANDS_FETCH_FOR_APPLICATION", channelId, guildId, applicationId });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "APPLICATION_COMMANDS_FETCH_FOR_APPLICATION", channelId, guildId, applicationId });
 };
 export const updateRegistry = function updateRegistry(commands, applications, channelId) {
-  DispatcherDefault.dispatch({ type: "APPLICATION_COMMAND_REGISTRY_UPDATE", applications, commands, channelId });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "APPLICATION_COMMAND_REGISTRY_UPDATE", applications, commands, channelId };
+  obj.dispatch(obj2);
 };
 export const setAppLauncherActiveCommand = function setAppLauncherActiveCommand(id, command) {
   if (null != command) {
-    _modDef38(command.inputType !== ApplicationCommandTypes.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
+    const tmp3 = _modDef38;
+    tmp3(command.inputType !== ApplicationCommandTypes.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
   }
-  DispatcherDefault.dispatch({ type: "APP_LAUNCHER_SET_ACTIVE_COMMAND", channelId: id, command });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "APP_LAUNCHER_SET_ACTIVE_COMMAND", channelId: id, command };
+  obj.dispatch(obj2);
 };

@@ -5,67 +5,85 @@
 // Exports: confirmExternalAppLaunchAlert
 
 // Module 8798 (confirmExternalAppLaunchAlert)
-import util from "util" /* 1115 */;
+import intl4 from "intl" /* 1115 */;
+import Constants from "Constants" /* 2005 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
-import _modDef8799 from "module_8799" /* 8799 */;
-import noop from "module_19" /* 19 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8799 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function ConfirmActivityGateContent(activityName) {
+let c3;
+let closure_4;
+let metroImportDefault;
+let metroRequire;
+function ConfirmActivityGateContent(application) {
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let obj5;
+  application = application.application;
   const tmp = closure_8();
-  const obj = { style: tmp.alertContainer, children: null };
-  const items = [timestampProducer(React3, { source: _modDef8799, style: tmp.announcementBirb }), , , ];
-  const obj3 = { style: tmp.alertEyebrowText, variant: "eyebrow", children: null };
-  const intl = util.intl;
-  obj3.children = intl.string(util.t["06YebE"]);
-  items[1] = timestampProducer(Text_Text.Text, obj3);
-  const obj4 = { style: tmp.alertTitleText, variant: "heading-lg/bold", children: null };
-  const intl2 = util.intl;
-  obj4.children = intl2.format(util.t["Z/eMDT"], { activityName: activityName.application.name });
-  items[2] = timestampProducer(Text_Text.Text, obj4);
-  const obj6 = { style: tmp.alertSubtitleText, variant: "text-sm/normal", children: null };
-  const intl3 = util.intl;
-  obj6.children = intl3.string(util.t.z81WwD);
-  items[3] = timestampProducer(Text_Text.Text, obj6);
-  obj.children = items;
-  return React5(React4, obj);
+  const obj = { style: tmp.alertContainer, children: items };
+  items = [, , , ];
+  const obj2 = { source: AssetRegistryDefault, style: tmp.announcementBirb };
+  items[0] = metroRequire(_false, obj2);
+  const obj3 = { style: tmp.alertEyebrowText, variant: "eyebrow", children: intl.string(intl4.t["06YebE"]) };
+  const Text = Text_Text.Text;
+  intl = intl4.intl;
+  items[1] = metroRequire(Text, obj3);
+  const obj4 = { style: tmp.alertTitleText, variant: "heading-lg/bold", children: intl2.format(intl4.t["Z/eMDT"], obj5) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl4.intl;
+  obj5 = { activityName: application.name };
+  items[2] = metroRequire(Text2, obj4);
+  const obj6 = { style: tmp.alertSubtitleText, variant: "text-sm/normal", children: intl3.string(intl4.t.z81WwD) };
+  const Text3 = Text_Text.Text;
+  intl3 = intl4.intl;
+  items[3] = metroRequire(Text3, obj6);
+  return metroImportDefault(React3, obj);
 }
 function LinkButton() {
-  const obj = { style: closure_8().linkWrapper, children: null };
-  const obj2 = {
+  let Button;
+  let intl;
+  let obj2;
+  let obj = { style: closure_8().linkWrapper, children: metroRequire(Button, obj2) };
+  obj2 = {
     variant: "secondary",
     size: "sm",
     onPress() {
-      LinkingDefault.openURL(PRIVATE_APPS_HELP_ARTICLE);
+      const obj = LinkingDefault;
+      obj.openURL(PRIVATE_APPS_HELP_ARTICLE);
     },
-    text: null
+    text: intl.string(intl4.t.E0gf5l)
   };
-  const intl = util.intl;
-  obj2.text = intl.string(util.t.E0gf5l);
-  obj.children = timestampProducer(components_Button_Button.Button, obj2);
-  return timestampProducer(React4, obj);
+  Button = components_Button_Button.Button;
+  intl = intl4.intl;
+  return metroRequire(React3, obj);
 }
-get_ActivityIndicator = fn(17);
-({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const PRIVATE_APPS_HELP_ARTICLE = fn(2005).PRIVATE_APPS_HELP_ARTICLE;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4836);
+({ Image: c3, View: closure_4 } = react_native);
+const PRIVATE_APPS_HELP_ARTICLE = Constants.PRIVATE_APPS_HELP_ARTICLE;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertEyebrowText: { marginTop: 40, textAlign: "center" }, alertTitleText: { marginTop: 16, textAlign: "center" }, alertSubtitleText: { marginTop: 16, textAlign: "center" }, announcementBirb: { width: 90, height: 100, position: "absolute", top: -66 }, linkWrapper: { marginTop: 8 } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/confirmExternalAppLaunchAlert.native.tsx");
 
 export const confirmExternalAppLaunchAlert = function confirmExternalAppLaunchAlert(arg0) {
+  let application;
+  let intl;
+  let intl2;
+  let onCancel;
+  let onConfirm;
   ({ application, onConfirm, onCancel } = arg0);
-  const obj2 = { title: "", children: timestampProducer(ConfirmActivityGateContent, { application }), onConfirm, confirmText: null, onCancel: null, cancelText: null, footer: null, isDismissable: false };
-  const intl = util.intl;
-  obj2.confirmText = intl.string(util.t["3PatSz"]);
-  obj2.onCancel = onCancel;
-  const intl2 = util.intl;
-  obj2.cancelText = intl2.string(util.t["ETE/oC"]);
-  obj2.footer = timestampProducer(LinkButton, {});
-  return Promise.resolve(AlertActionCreatorsDefault.show(obj2));
+  const tmp = AlertActionCreatorsDefault;
+  const show = tmp.show;
+  const obj = { title: "", children: metroRequire(ConfirmActivityGateContent, { application }), onConfirm, confirmText: intl.string(intl4.t["3PatSz"]), onCancel, cancelText: intl2.string(intl4.t["ETE/oC"]), footer: metroRequire(LinkButton, {}), isDismissable: false };
+  intl = intl4.intl;
+  intl2 = intl4.intl;
+  return resolve(show(obj));
 };

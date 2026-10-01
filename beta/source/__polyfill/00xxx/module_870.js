@@ -6,14 +6,14 @@
 // Module 870
 import _mod682 from "module_682" /* 682 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
 export const getSentryCarrier = () => {
-  const mainCarrier = _mod682.getMainCarrier();
+  const obj = _mod682;
+  const mainCarrier = obj.getMainCarrier();
   const tmp4 = mainCarrier.__SENTRY__ || {};
   mainCarrier.__SENTRY__ = tmp4;
+  const SDK_VERSION = tmp(682).SDK_VERSION;
   const tmp5 = tmp4[_mod682.SDK_VERSION] || {};
-  tmp4[_mod682.SDK_VERSION] = tmp5;
+  tmp4[SDK_VERSION] = tmp5;
   return tmp5;
 };

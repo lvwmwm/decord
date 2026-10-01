@@ -10,25 +10,24 @@ import ChatInputUtils from "ChatInputUtils" /* 4701 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
+let map, set, showJumpToPresentButtonChannelId, showingAutoComplete;
+
 let chatInputContainerHeight = "chatInputContainerHeight";
-let obj = module_560.create(() => {
-  obj = { chatInputContainerHeight: new Map(), showingAutoComplete: null, showJumpToPresentButtonChannelId: null, isAtBottom: null, smallSuggestionBarHeight: null };
-  const map = new Map();
-  obj.showingAutoComplete = new Map();
-  map1 = new Map();
-  obj.showJumpToPresentButtonChannelId = new Map();
-  const map2 = new Map();
-  obj.isAtBottom = new Map();
-  const map3 = new Map();
-  obj.smallSuggestionBarHeight = new Map();
+let __closure = module_560.create(() => {
+  const obj = { chatInputContainerHeight: new Map(), showingAutoComplete: new Map(), showJumpToPresentButtonChannelId: new Map(), isAtBottom: new Map(), smallSuggestionBarHeight: new Map() };
+  new Map();
+  new Map();
+  new Map();
+  new Map();
+  new Map();
   return obj;
 });
 let result = size.fileFinishedImporting("modules/chat_input/native/useChatBottomManagerUIStore.tsx");
 
-export default obj;
+export default __closure;
 export const updateChatInputContainerHeight = function updateChatInputContainerHeight(num, arg1) {
-  closure_0 = num;
-  closure_1 = arg1;
+  let closure_0 = num;
+  let closure_1 = arg1;
   if (typeof num === "number") {
     const Storage = Storage3.Storage;
     let result = Storage.set(chatInputContainerHeight, arg1);
@@ -40,8 +39,8 @@ export const updateChatInputContainerHeight = function updateChatInputContainerH
   });
 };
 export const updateShowingAutoComplete = function updateShowingAutoComplete(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   obj.setState((showingAutoComplete) => {
     showingAutoComplete = new Map(showingAutoComplete.showingAutoComplete);
     const result = showingAutoComplete.set(closure_0, closure_1);
@@ -49,24 +48,26 @@ export const updateShowingAutoComplete = function updateShowingAutoComplete(arg0
   });
 };
 export const updateShouldShowJumpToPresentButton = function updateShouldShowJumpToPresentButton(arg0, arg1, arg2) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  closure_2 = arg2;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
   obj.setState((showJumpToPresentButtonChannelId) => {
     showJumpToPresentButtonChannelId = new Map(showJumpToPresentButtonChannelId.showJumpToPresentButtonChannelId);
-    let tmp2;
+    let tmp3;
+    set = showJumpToPresentButtonChannelId.set;
+    const tmp2 = closure_1;
     if (closure_2) {
-      tmp2 = closure_0;
+      tmp3 = closure_0;
     }
-    const result = showJumpToPresentButtonChannelId.set(closure_1, tmp2);
+    const result = set(tmp2, tmp3);
     return { showJumpToPresentButtonChannelId };
   });
 };
 export const useChatInputContainerHeight = function useChatInputContainerHeight(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   return obj((chatInputContainerHeight) => {
     chatInputContainerHeight = chatInputContainerHeight.chatInputContainerHeight;
-    value = chatInputContainerHeight.get(closure_0);
+    let value = chatInputContainerHeight.get(closure_0);
     if (value == null) {
       const Storage = Storage3.Storage;
       let num2 = Storage.get(chatInputContainerHeight, 0);
@@ -79,24 +80,26 @@ export const useChatInputContainerHeight = function useChatInputContainerHeight(
   });
 };
 export const updateSmallSuggestionBarHeight = function updateSmallSuggestionBarHeight(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  obj.setState((smallSuggestionBarHeight) => {
+  let obj;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  obj.setState(function(smallSuggestionBarHeight) {
     smallSuggestionBarHeight = smallSuggestionBarHeight.smallSuggestionBarHeight;
-    if (smallSuggestionBarHeight.get(closure_0) === closure_1) {
+    const tmp = ref;
+    if (smallSuggestionBarHeight.get(ref) === closure_1) {
       return smallSuggestionBarHeight;
     } else {
       const _Map = Map;
-      const map = new Map(smallSuggestionBarHeight.smallSuggestionBarHeight);
+      const self = this;
+      const self2 = this;
+      map = new Map(smallSuggestionBarHeight.smallSuggestionBarHeight);
       const result = map.set(tmp, tmp2);
-      obj = { smallSuggestionBarHeight: map };
-      return obj;
+      return { smallSuggestionBarHeight: map };
     }
-    tmp = closure_0;
   });
 };
 export const useSmallSuggestionBarHeight = function useSmallSuggestionBarHeight(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   return obj((smallSuggestionBarHeight) => {
     smallSuggestionBarHeight = smallSuggestionBarHeight.smallSuggestionBarHeight;
     let num = smallSuggestionBarHeight.get(closure_0);
@@ -107,7 +110,7 @@ export const useSmallSuggestionBarHeight = function useSmallSuggestionBarHeight(
   });
 };
 export const useChatShowingAutoComplete = function useChatShowingAutoComplete(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   return obj((showingAutoComplete) => {
     showingAutoComplete = showingAutoComplete.showingAutoComplete;
     let flag = showingAutoComplete.get(closure_0);
@@ -118,24 +121,25 @@ export const useChatShowingAutoComplete = function useChatShowingAutoComplete(ar
   });
 };
 export const updateIsAtBottom = function updateIsAtBottom(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  obj.setState((isAtBottom) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  obj.setState(function(isAtBottom) {
     isAtBottom = isAtBottom.isAtBottom;
+    const tmp = closure_0;
     if (isAtBottom.get(closure_0) === closure_1) {
       return isAtBottom;
     } else {
       const _Map = Map;
-      const map = new Map(isAtBottom.isAtBottom);
+      const self = this;
+      const self2 = this;
+      map = new Map(isAtBottom.isAtBottom);
       const result = map.set(tmp, tmp2);
-      obj = { isAtBottom: map };
-      return obj;
+      return { isAtBottom: map };
     }
-    tmp = closure_0;
   });
 };
 export const useChatIsAtBottom = function useChatIsAtBottom(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   return obj((isAtBottom) => {
     isAtBottom = isAtBottom.isAtBottom;
     let flag = isAtBottom.get(closure_0);
@@ -146,8 +150,11 @@ export const useChatIsAtBottom = function useChatIsAtBottom(arg0) {
   });
 };
 export const useBestActiveChatInputContainerHeight = function useBestActiveChatInputContainerHeight() {
+  let obj;
   return obj((chatInputContainerHeight) => {
-    const highestActiveScreenIndex = ChatInputUtils.getHighestActiveScreenIndex();
+    let value;
+    const obj = ChatInputUtils;
+    const highestActiveScreenIndex = obj.getHighestActiveScreenIndex();
     if (null == highestActiveScreenIndex) {
       const Storage2 = tmp(tmp2[0]).Storage;
       let num4 = Storage2.get(closure_1_2, 0);

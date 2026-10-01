@@ -7,27 +7,32 @@
 // Module 12054 (useGetExpiringGuildPowerups)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 11989 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4723 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGetExpiringGuildPowerups.tsx");
 
 export default function useGetExpiringGuildPowerups(arg0) {
+  let closure_0;
+  let stateFromStores;
   _require = arg0;
+  let obj = require("get initialized");
   const items = [GuildPowerupsStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
+  stateFromStores = obj.useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
   const items1 = [stateFromStores];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     if (null == stateFromStores) {
       return [];
     } else {
       const allPowerups = tmp.allPowerups;
+      const unlockedPowerups = tmp.unlockedPowerups;
       const _Object = Object;
-      const expiringGuildEntitlements = getExpiringGuildEntitlements.getExpiringGuildEntitlements(Object.values(tmp.unlockedPowerups));
+      const obj = getExpiringGuildEntitlements;
+      const expiringGuildEntitlements = obj.getExpiringGuildEntitlements(Object.values(unlockedPowerups));
       const mapped = expiringGuildEntitlements.map((item) => allPowerups[item.sku_id]);
       return mapped.filter(GlobalUtils.isNotNullish);
     }

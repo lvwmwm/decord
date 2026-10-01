@@ -1,13 +1,13 @@
 // Module ID: 8752
 // Function ID: 8753
-// Name: NativeAppLifecycleModule
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 8752 (NativeAppLifecycleModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 8752 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAppLifecycleModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAppLifecycleModule.tsx");
 

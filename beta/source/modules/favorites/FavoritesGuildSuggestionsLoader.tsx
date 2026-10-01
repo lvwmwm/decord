@@ -4,42 +4,45 @@
 // Dependencies: [19, 15834, 21, 15910, 2]
 
 // Module 15909 (FavoritesGuildSuggestionsLoader)
+import Fragment from "Fragment" /* 21 */;
 import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 15910 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 15834 */;
+import size from "module_2" /* 2 */;
 
+let importDefault;
+
+let c3;
+let closure_4;
+let hasOwnProperty;
 function FavoritesGuildSuggestionsLoaderInner() {
+  let closure_0;
   const tmp = useFavoritesGuildSuggestionCandidatesDefault(4);
   importDefault = tmp;
   const items = [tmp];
-  const layoutEffect = noop.useLayoutEffect(() => {
-    React4(closure_0);
+  const layoutEffect = react.useLayoutEffect(() => {
+    React3(closure_0);
   }, items);
   return null;
 }
-const FavoritesGuildSuggestionsStore = fn(15834);
+let react = react_mod;
 ({ NO_SUGGESTIONS: c3, setFavoritesGuildSuggestions: closure_4, useFavoritesGuildSuggestionsVisibility: hasOwnProperty } = FavoritesGuildSuggestionsStore);
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/favorites/FavoritesGuildSuggestionsLoader.tsx");
-
-export default noop.memo(function FavoritesGuildSuggestionsLoader() {
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function FavoritesGuildSuggestionsLoader() {
+  let ref;
   const tmp = closure_5();
   const isEligible = tmp.isEligible;
   const isSelected = tmp.isSelected;
-  noop = noop.useRef(false);
+  react = react.useRef(false);
   const items = [isEligible, isSelected];
-  const layoutEffect = noop.useLayoutEffect(() => {
+  const layoutEffect = react.useLayoutEffect(() => {
     if (isSelected) {
-      tmp.current = true;
+      ref.current = true;
     } else {
-      const current = tmp.current;
-      let tmp2 = !current;
-      if (!current) {
-        tmp2 = isEligible;
-      }
+      const tmp2 = !ref.current && isEligible;
       if (!tmp2) {
-        tmp.current = false;
-        React4(React3);
+        ref.current = false;
+        React3(_false);
       }
     }
   }, items);
@@ -49,3 +52,6 @@ export default noop.memo(function FavoritesGuildSuggestionsLoader() {
   }
   return tmp3;
 });
+const result = size.fileFinishedImporting("modules/favorites/FavoritesGuildSuggestionsLoader.tsx");
+
+export default memoResult;

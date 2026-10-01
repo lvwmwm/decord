@@ -5,108 +5,117 @@
 // Exports: default
 
 // Module 4098 (differenceInBusinessDays)
-import module_4066_mod from "module_4066" /* 4066 */;
+import addDays_mod from "addDays" /* 4066 */;
 import differenceInCalendarDays_mod from "differenceInCalendarDays" /* 4080 */;
-import module_4099_mod from "module_4099" /* 4099 */;
-import module_4100_mod from "module_4100" /* 4100 */;
-import module_4069_mod from "module_4069" /* 4069 */;
-import _typeof_mod from "module_3918" /* 3918 */;
+import isSameDay_mod from "isSameDay" /* 4099 */;
+import isValid_mod from "isValid" /* 4100 */;
+import isWeekend_mod from "isWeekend" /* 4069 */;
+import toDate_mod from "toDate" /* 3918 */;
 import requiredArgs_mod from "requiredArgs" /* 3919 */;
-import module_3922_mod from "module_3922" /* 3922 */;
+import toInteger_mod from "toInteger" /* 3922 */;
 
-let module_4066 = module_4066_mod;
-if (!module_4066) {
-  const obj = { default: module_4066 };
-  let tmp3 = obj;
+let tmp11;
+let tmp13;
+let tmp15;
+let tmp17;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+let addDays = addDays_mod;
+if (!addDays) {
+  let obj = { default: addDays };
+  tmp3 = obj;
 } else {
-  tmp3 = module_4066;
+  tmp3 = addDays;
 }
-module_4066 = tmp3;
+addDays = tmp3;
 let differenceInCalendarDays = differenceInCalendarDays_mod;
 if (!differenceInCalendarDays) {
+  tmp5 = { default: differenceInCalendarDays };
   const obj2 = { default: differenceInCalendarDays };
-  let tmp5 = obj2;
 } else {
   tmp5 = differenceInCalendarDays;
 }
 differenceInCalendarDays = tmp5;
-let module_4099 = module_4099_mod;
-if (!module_4099) {
-  const obj3 = { default: module_4099 };
-  let tmp7 = obj3;
+let isSameDay = isSameDay_mod;
+if (!isSameDay) {
+  tmp7 = { default: isSameDay };
+  const obj3 = { default: isSameDay };
 } else {
-  tmp7 = module_4099;
+  tmp7 = isSameDay;
 }
-module_4099 = tmp7;
-let module_4100 = module_4100_mod;
-if (!module_4100) {
-  const obj4 = { default: module_4100 };
-  let tmp9 = obj4;
+isSameDay = tmp7;
+let isValid = isValid_mod;
+if (!isValid) {
+  tmp9 = { default: isValid };
+  const obj4 = { default: isValid };
 } else {
-  tmp9 = module_4100;
+  tmp9 = isValid;
 }
-module_4100 = tmp9;
-let module_4069 = module_4069_mod;
-if (!module_4069) {
-  const obj5 = { default: module_4069 };
-  let tmp11 = obj5;
+isValid = tmp9;
+let isWeekend = isWeekend_mod;
+if (!isWeekend) {
+  tmp11 = { default: isWeekend };
+  const obj5 = { default: isWeekend };
 } else {
-  tmp11 = module_4069;
+  tmp11 = isWeekend;
 }
-module_4069 = tmp11;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj6 = { default: _typeof };
-  let tmp13 = obj6;
+isWeekend = tmp11;
+let toDate = toDate_mod;
+if (!toDate) {
+  tmp13 = { default: toDate };
+  const obj6 = { default: toDate };
 } else {
-  tmp13 = _typeof;
+  tmp13 = toDate;
 }
-_typeof = tmp13;
+toDate = tmp13;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
+  tmp15 = { default: requiredArgs };
   const obj7 = { default: requiredArgs };
-  let tmp15 = obj7;
 } else {
   tmp15 = requiredArgs;
 }
 requiredArgs = tmp15;
-let module_3922 = module_3922_mod;
-if (!module_3922) {
-  const obj8 = { default: module_3922 };
-  let tmp17 = obj8;
+let toInteger = toInteger_mod;
+if (!toInteger) {
+  tmp17 = { default: toInteger };
+  const obj8 = { default: toInteger };
 } else {
-  tmp17 = module_3922;
+  tmp17 = toInteger;
 }
-module_3922 = tmp17;
+toInteger = tmp17;
 
 export default function differenceInBusinessDays(arg0, arg1) {
   let defaultResult6;
   requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const defaultResult2 = _typeof.default(arg1);
-  if (module_4100.default(defaultResult1)) {
-    if (module_4100.default(defaultResult2)) {
+  const defaultResult1 = toDate.default(arg0);
+  const defaultResult2 = toDate.default(arg1);
+  const obj = isValid;
+  if (isValid.default(defaultResult1)) {
+    if (obj.default(defaultResult2)) {
       const defaultResult3 = differenceInCalendarDays.default(defaultResult1, defaultResult2);
       let num2 = 1;
       if (defaultResult3 < 0) {
         num2 = -1;
       }
-      const defaultResult4 = module_3922.default(defaultResult3 / 7);
+      const defaultResult4 = toInteger.default(defaultResult3 / 7);
       const result = 5 * defaultResult4;
-      let defaultResult5 = module_4066.default(defaultResult2, 7 * defaultResult4);
+      let defaultResult5 = addDays.default(defaultResult2, 7 * defaultResult4);
       let sum = result;
       let tmp13 = result;
-      if (!module_4099.default(defaultResult1, defaultResult5)) {
+      if (!isSameDay.default(defaultResult1, defaultResult5)) {
         do {
           let num5 = 0;
-          if (!module_4069.default(defaultResult5)) {
+          if (!isWeekend.default(defaultResult5)) {
             num5 = num2;
           }
           sum = sum + num5;
-          defaultResult6 = module_4066.default(defaultResult5, num2);
+          defaultResult6 = addDays.default(defaultResult5, num2);
           defaultResult5 = defaultResult6;
           tmp13 = sum;
-        } while (!module_4099.default(defaultResult1, defaultResult6));
+        } while (!isSameDay.default(defaultResult1, defaultResult6));
       }
       let num6 = 0;
       if (0 !== tmp13) {
@@ -117,4 +126,3 @@ export default function differenceInBusinessDays(arg0, arg1) {
   }
   return NaN;
 };
-export default exports.default;

@@ -4,50 +4,60 @@
 // Dependencies: [19, 17, 21, 4836, 576, 5753, 11820, 2]
 
 // Module 11819 (GuildDirectoryPlaceholderRow)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 576 */;
+import LegacyTokens from "LegacyTokens" /* 5753 */;
 import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 11820 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4836 */;
+import size_mod from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4836);
-let obj = { row: { flexDirection: "row", padding: 16 }, rowInner: { flex: 1 }, placeholderAvatar: null, placeholderText: null, placeholderBody: null };
-let size = { width: 40, height: 40, borderRadius: nativeDefault.radii.sm, overflow: "hidden", marginRight: 16, backgroundColor: fn(5753).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
-obj.placeholderAvatar = size;
-obj.placeholderText = { height: 15, borderRadius: 5, backgroundColor: fn(5753).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
-obj.placeholderBody = { width: "100%", marginTop: 10 };
-let closure_5 = createStyles.createStyles(obj);
-let obj3 = { height: 15, borderRadius: 5, backgroundColor: fn(5753).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
-size = fn(2);
-const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryPlaceholderRow.tsx");
-
-export default noop.memo(() => {
+let c3;
+let closure_4;
+let obj2;
+let size;
+const View = react_native.View;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { row: { flexDirection: "row", padding: 16 }, rowInner: { flex: 1 }, placeholderAvatar: size, placeholderText: obj2, placeholderBody: { width: "100%", marginTop: 10 } };
+size = { width: 40, height: 40, borderRadius: nativeDefault.radii.sm, overflow: "hidden", marginRight: 16, backgroundColor: LegacyTokens.DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+createStyles = createStyles.createStyles;
+obj2 = { height: 15, borderRadius: 5, backgroundColor: LegacyTokens.DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+let closure_5 = createStyles(obj);
+const memoResult = react.memo(() => {
+  let items;
+  let items1;
+  let items2;
   const tmp = closure_5();
-  closure_0 = tmp;
+  let closure_0 = tmp;
   const sum = Math.floor(2 * Math.random()) + 2;
-  closure_1 = Math.floor(10 * Math.random());
-  let obj = { style: tmp.row, children: null };
-  const sum1 = Math.floor(50 * Math.random()) + 10;
-  let items = [closure_3(View, { style: tmp.placeholderAvatar }), ];
-  const obj3 = { style: tmp.rowInner, children: null };
-  const obj4 = { style: null };
-  const items1 = [tmp.placeholderText, { width: "" + sum1 + "%" }];
-  obj4.style = items1;
-  const items2 = [closure_3(View, obj4), ];
-  const array = new Array(sum);
+  let closure_1 = Math.floor(10 * Math.random());
+  let obj = { style: tmp.row, children: items };
   const obj2 = { style: tmp.placeholderAvatar };
-  const obj5 = { width: "" + sum1 + "%" };
-  items2[1] = array.fill(undefined).map((item, index) => {
-    const obj = { style: null };
-    const items = [, , ];
+  const sum1 = Math.floor(50 * Math.random()) + 10;
+  items = [closure_3(View, obj2), ];
+  const obj3 = { style: tmp.rowInner, children: items2 };
+  const obj4 = { style: items1 };
+  items1 = [tmp.placeholderText, { width: "" + sum1 + "%" }];
+  items2 = [, ];
+  ({ width: "" + sum1 + "%" });
+  items2[0] = closure_3(View, obj4);
+  const array = new Array(sum);
+  const fillResult = array.fill(undefined);
+  items2[1] = fillResult.map((item, index) => {
+    let items;
+    const obj = { style: items };
+    items = [, , ];
     ({ placeholderText: arr[0], placeholderBody: arr[1] } = closure_0);
     items[2] = { width: "" + getChatPlaceholderRowWidthDefault(closure_1 + index) + "%" };
-    obj.style = items;
-    return React3(View, obj, index);
+    ({ width: "" + getChatPlaceholderRowWidthDefault(closure_1 + index) + "%" });
+    return _false(View, obj, index);
   });
-  obj3.children = items2;
   items[1] = closure_4(View, obj3);
-  obj.children = items;
   return closure_4(View, obj);
 });
+size = size_mod;
+const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryPlaceholderRow.tsx");
+
+export default memoResult;

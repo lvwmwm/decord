@@ -5,25 +5,21 @@
 // Exports: default
 
 // Module 15598 (RegistrationBailoutButton)
-import util from "util" /* 1115 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1115 */;
 import native from "native" /* 1177 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4836 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4836);
+const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ bail: { marginBottom: 16, marginLeft: "auto", marginRight: "auto" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/RegistrationBailoutButton.tsx");
 
 export default function RegistrationBailoutButton(onBail) {
-  const obj = { shrink: true, text: null, size: null, look: null, color: null, style: null, onPress: null };
-  const intl = util.intl;
-  obj.text = intl.string(util.t.CZ7wvG);
-  obj.size = native.Button.Sizes.MEDIUM;
-  obj.look = native.ButtonLooks.LINK;
-  obj.color = native.ButtonColors.LINK;
-  obj.style = closure_3().bail;
-  obj.onPress = onBail.onBail;
-  return jsx(native.Button, { shrink: true, text: null, size: null, look: null, color: null, style: null, onPress: null });
+  onBail = onBail.onBail;
+  const tmp = closure_3();
+  const Button = native.Button;
+  const intl = intl2.intl;
+  return <Button shrink text={intl.string(intl2.t.CZ7wvG)} size={native.Button.Sizes.MEDIUM} look={native.ButtonLooks.LINK} color={native.ButtonColors.LINK} style={tmp.bail} onPress={onBail} />;
 };

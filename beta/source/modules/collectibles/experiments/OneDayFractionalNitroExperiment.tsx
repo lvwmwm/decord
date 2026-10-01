@@ -16,6 +16,7 @@ export default apexExperiment;
 export const useOneDayFractionalNitroEnabled = function useOneDayFractionalNitroEnabled(product_card) {
   const obj = { location: product_card };
   const obj2 = { location: product_card };
-  const tmp = PremiumGroupExperimentDefault({ location: product_card });
-  return apexExperiment.useConfig({ location: product_card }) && !PremiumGroupExperimentDefault({ location: product_card });
+  const tmp = PremiumGroupExperimentDefault(obj);
+  const tmp2 = apexExperiment.useConfig(obj2) && !tmp;
+  return tmp2;
 };
